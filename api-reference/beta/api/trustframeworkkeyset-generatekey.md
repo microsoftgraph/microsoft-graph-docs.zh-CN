@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c32501031d08e1b6d9dfc0fc78909e127a96b900
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: f82f6b17aa6155d8d49e02a4a3112f010c6279c2
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734556"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937562"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734556"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /trustFramework/keySets/{id}/generateKey
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
 | 改用 | string | 与**trustFrameworkKey**的**use**属性类似。 |
 | kty | string | 类似于**trustFrameworkKey**的**kty**属性。 |
@@ -63,6 +63,8 @@ POST /trustFramework/keySets/{id}/generateKey
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_generatekey"
@@ -79,6 +81,20 @@ Content-type: application/json
   "exp": 1508969811
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-generatekey-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-generatekey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-generatekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

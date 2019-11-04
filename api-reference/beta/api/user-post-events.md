@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: cc082819183841f23038d57ec59d540126e8df10
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 3594430181d374f70e618ac58e01a2dea004667c
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622487"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938167"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -180,6 +180,9 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting":true,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
@@ -367,6 +370,9 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "isOnlineMeeting":true,
+  "onlineMeetingProvider":"unknown",
+  "onlineMeeting":null,
   "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
@@ -563,6 +569,9 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting":true,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",

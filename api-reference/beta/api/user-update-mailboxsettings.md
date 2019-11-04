@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22cccaaff660c8350c69bc68ccadb28b90786a64
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 667770b069e1a190cebf3bb48133dae92e291da0
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822737"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938153"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -18,14 +18,15 @@ ms.locfileid: "36822737"
 
 启用、配置或禁用以下一个或多个设置作为用户的[mailboxSettings](../resources/mailboxsettings.md)的一部分：
 
-- [自动答复](../resources/automaticrepliessetting.md)（收到电子邮件后，自动通知人员）
+- [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
 - dateFormat
+- delegateMeetingMessageDeliveryOptions
 - [区域设置](../resources/localeinfo.md)（语言和国家/地区）
 - timeFormat
 - 时区
-- [working hours － 工作时间](../resources/workinghours.md)
+- [工作时间](../resources/workinghours.md)
 
-更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
+更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
 
 更新用户的首选时区时，在 Windows 或[Internet 分配的号码颁发机构（IANA）](https://www.iana.org/time-zones)的时区（也称为 "Olson 时区"）格式中指定它。 您还可以进一步自定义时区，如下面的[示例 2](#example-2)所示。
 
@@ -57,10 +58,11 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关属性的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。以下是可写/可更新的属性：
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
 |dateFormat|string|用户邮箱的日期格式。|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者，还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
@@ -88,7 +90,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxsettings_1"
@@ -120,7 +122,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -251,7 +253,6 @@ Content-type: application/json
     }
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

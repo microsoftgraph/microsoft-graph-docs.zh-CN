@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd1f2c6689176422fa35a500224c6f2a5f277851
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 71070d07e17c1662523e0930b4bff4d2944b0649
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633913"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937180"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -34,7 +34,7 @@ ms.locfileid: "36633913"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
 ```http
-POST /teams/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,14 +47,14 @@ POST /teams/{id}/channels/{id}/members/{id}
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |描述|
 |:---------------|:--------|:----------|
-|roles|字符串集合|该用户的角色。|
-|user|[用户](../resources/user.md)|要添加到频道的用户。|
+|角色|string 集合|该用户的角色。|
+|user|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[conversationMember](../resources/conversationmember.md)对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -62,7 +62,7 @@ POST /teams/{id}/channels/{id}/members/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member"
@@ -86,7 +86,7 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

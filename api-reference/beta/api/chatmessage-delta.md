@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55fd093150794ad23884ee130db7612046e7d068
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: bf4c0fa8333d05ad77397cb4d0bd8ad45e92539a
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439875"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936795"
 ---
 # <a name="chatmessages-delta"></a>chatMessages：delta
 
@@ -68,7 +68,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 此 API 支持以下[ OData 查询参数](/graph/query-parameters)：
 - `$top`，表示在调用中获取的最大消息数。 上限为 **50**。
 - `$skip`，表示列表开头要跳过的消息数。
-- `$filter`，允许返回满足特定条件的消息。 支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 和 **ge** 运算符。 例如，`../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z` 将提取指定日期时间后创建或更改的任何消息。
+- `$filter`，允许返回满足特定条件的消息。 支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 运算符。 例如，`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将提取指定日期时间后创建或更改的任何消息。
 
 ## <a name="request-headers"></a>请求头
 | 标头        | 值                     |
@@ -82,7 +82,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) 对象集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 ## <a name="examples"></a>示例
 

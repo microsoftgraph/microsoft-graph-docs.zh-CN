@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fef2dfa9f6a1540868b7f22365a489ea34516ee2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4c3b2f6a62427e3d30d9e157ba2deddcefa2a9c
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995844"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937432"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -25,12 +25,12 @@ ms.locfileid: "35995844"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/rows
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/rows
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -56,7 +56,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
   "name": "get_rows"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/rows 
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/rows 
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

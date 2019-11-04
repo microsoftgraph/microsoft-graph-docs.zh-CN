@@ -1,29 +1,29 @@
 ---
 title: preAuthorizedApplication 资源类型
-description: 表示应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。
+description: 列出预授权的客户端应用程序
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 7adaf4fe960b762b12f6b2cc8607e64c9813712e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: c741c303ee9ffaf18db5fc01181702f963e39ccc
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965813"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939780"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。
+列出使用指定权限预授权的客户端应用程序，以访问此应用程序的 Api。 用户无需同意任何预先授权的应用程序（针对指定的权限）。 但是，preAuthorizedApplications 中未列出的任何其他权限（例如，通过增量许可请求）将需要用户同意。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | 描述 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|permissionIds|String collection| 应用程序所需的[publishedPermissionScope](permissionscope.md)或[appRole](approle.md)的唯一标识符。 |
+|permissionIds|String collection| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3de58ada2a4dd91042785366566b8f1ca2c907dc
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 9f78bde00aee45dedc6d55d765aead8331605f0f
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734544"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938221"
 ---
 # <a name="update-trustframeworkkeyset"></a>更新 trustFrameworkKeySet
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734544"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ PUT /trustFramework/keySets/{id}
 ## <a name="request-body"></a>请求正文
 
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
 |标示|[trustFrameworkKey](../resources/trustframeworkkey.md)集合| 更新 Trustframeworkkeys 的集合|
 
@@ -59,6 +59,8 @@ PUT /trustFramework/keySets/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_trustframeworkkeyset"
@@ -93,6 +95,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-trustframeworkkeyset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-trustframeworkkeyset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-trustframeworkkeyset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

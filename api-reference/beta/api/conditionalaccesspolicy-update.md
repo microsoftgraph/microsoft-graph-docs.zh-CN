@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9ef732cbc58028a8665172cec87a2d079f55925a
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: c290faff53b98e28dc9876b9fd76abac8a813196
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638426"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936707"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "37638426"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | ConditionalAccess 和 Directory.accessasuser.all 的所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 >[!NOTE]
 >此 API 需要多个权限。 有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。
@@ -61,6 +61,8 @@ PATCH /conditionalAccess/policies/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conditionalaccesspolicy"
@@ -80,6 +82,20 @@ Content-type: application/json
     }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-conditionalaccesspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
