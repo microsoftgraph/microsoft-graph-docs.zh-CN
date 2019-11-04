@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9b6cd03a38e4e115befacb13909d1ba0040b3aff
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: fc55eb8f469a0abd4576ffc152d997fe293ad3ed
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734557"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938303"
 ---
 # <a name="create-trustframeworkkeyset"></a>创建 trustFrameworkKeySet
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734557"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet   |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet    |
+| Application                            | TrustFrameworkKeySet    |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,13 @@ POST /trustFramework/keySets
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-empty-keyset"></a>示例1：创建空键集
-此模式创建一个 enpty 键集，然后生成一个密钥，上载一个手动机密，并在大多数情况下上传证书或 PKCS12 密钥是足够的。 
+这是最有用的操作之一。 首先，创建一个空键集。 然后，在新的密钥集中，您可以生成密钥，上载手动机密，并上传证书或 PKCS12 密钥。 
 
 #### <a name="request"></a>请求
 
 下面为请求示例。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -72,6 +74,20 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

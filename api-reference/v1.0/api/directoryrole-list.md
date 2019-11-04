@@ -5,16 +5,21 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12b158f9ac69355e359040105fb3a389ad2c0f85
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 02a99d98c0f37654e6594b816e7d3d0596301ec7
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727010"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939121"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
 列出租户中激活的目录角色。
+
+此操作仅返回已激活的角色。 当管理员使用[激活 directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色即被激活。 最初并不激活所有内置角色。 
+
+使用 Azure 门户分配角色时，将代表管理员隐式完成角色激活步骤。 若要获取 Azure AD 中可用角色的完整列表，请使用[List directoryroletemplate](directoryroletemplate-list.md)。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,21 +38,21 @@ GET /directoryRoles
 此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[directoryRole](../resources/directoryrole.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directoryroles"
@@ -63,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryroles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryroles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

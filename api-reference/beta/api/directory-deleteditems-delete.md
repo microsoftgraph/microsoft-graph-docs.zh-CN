@@ -1,30 +1,51 @@
 ---
 title: 永久删除项目
-description: 永久删除已删除的项目中的项目
+description: 从已删除的项目中永久删除项目。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9fd7a6b8ff7b4a06e399ae5c05e4b5915a24b655
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7eb499efa6aca193ddcf4d641798c37f11c2d14b
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417524"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937096"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-永久删除[已删除的项目](../resources/directory.md)中的项目
+从[已删除的项目](../resources/directory.md)中永久删除项目。
 
-目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将**无法**还原。
+目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将**无法**还原。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 对于用户: Directory.accessasuser.all 的所有用户。
-* 对于组: Directory.accessasuser.all 和 all 的组
+对于应用程序：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
+
+对于用户：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
+|应用程序 | User.ReadWrite.All |
+
+对于组：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +69,7 @@ DELETE /directory/deleteditems/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directory"
@@ -64,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8462004fb515598c2469df95b19c71c39fc457e5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4f6be1027b99d7e79d181bd5f659614aae196e0f
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417534"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936844"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -18,15 +18,16 @@ ms.locfileid: "36417534"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。 如果意外删除项目，可完全还原该项目。
+目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。 如果意外删除项目，可完全还原该项目。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 对于用户: Directory.accessasuser.all 的所有用户。
-* 对于组: Directory.accessasuser.all 和 all 的组
+* 对于应用程序： Application.readwrite.ownedby、Directory.accessasuser.all、all、、all、。 All
+* 对于用户： Directory.accessasuser.all 的所有用户。
+* 对于组： Directory.accessasuser.all 和 all 的组
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +52,7 @@ POST /directory/deleteditems/{id}/restore
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directory"
@@ -67,7 +68,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

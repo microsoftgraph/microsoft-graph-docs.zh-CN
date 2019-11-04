@@ -5,18 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64bef7d69010f4d568d657bc3acd88622f85cfce
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5850de9653891e0eb4f8acac07d9bd6dd5ea6ada
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408249"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934933"
 ---
 # <a name="update-application"></a>更新应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 application 对象的属性。
+更新[application](../resources/application.md)对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,36 +38,37 @@ PATCH /applications/{id}
 | Authorization  | string  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| 指定应用程序是否可以充当公共客户端。 例如, 在移动设备上运行的已安装应用程序。 默认值为 *false*。 |
-|api|[apiApplication](../resources/apiapplication.md)| 指定 API 应用程序的设置。 |
-|appRoles|[appRole](../resources/approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 null。|
-|重|String 集合| 用于标识应用程序的 URI。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 Null。 |
-|createdDateTime|DateTimeOffset| 注册应用程序的日期和时间。 |
-|deletedDateTime|DateTimeOffset| 删除应用程序的日期和时间。 |
-|displayName|String|应用程序的显示名称。 |
-|id|String|应用程序的唯一标识符。 继承自 [directoryObject](../resources/directoryobject.md)。 键。 不可为 null。 只读。 |
-|info|[informationalUrl](../resources/informationalurl.md)| 应用程序的基本配置文件信息。 | 指定已安装客户端（如台式设备或移动设备）的设置。 |
-|keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与应用程序关联的密钥凭据集合，不可为 Null。 |
-|logo|Stream|应用程序的主徽标。 不可为 null。 |
-|orgRestrictions|String 集合| 应用程序受限制的组织 tenantIds。  如果集合为空, 则应用程序为多租户 (不受限制)。 如果集合包含 tenantIds, 则将应用程序限制为集合中的组织 tenantIds。 如果指定其他租户, 而不是在其中注册应用程序的 tenantId, 则意味着应用程序自身的 tenantId 将被间接包括在内。 |
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
-|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出了应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。 |
-|requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
-|标记|String collection| 可用于分类和标识应用程序的自定义字符串。 |
-|web|[webApplication](../resources/webapplication.md)| 指定 Web 应用程序的设置。 |
+| api | [apiApplication](../resources/apiapplication.md) | 指定实现 web API 的应用程序的设置。 |
+| appRoles | [appRole](../resources/approle.md) 集合 | 应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为空。 |
+| displayName | String | 应用程序的显示名称。 |
+| groupMembershipClaims | 字符串 | 配置在应用程序需要的用户或 OAuth 2.0 访问令牌中颁发的**组**声明。 若要设置此属性，请使用下列有效的字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：针对安全组和 Azure Active Directory （Azure AD）角色</li><li>`All`：这将获取已登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul> |
+| identifierUris | String 集合 | 用于标识其 Azure AD 租户内的应用程序的 Uri，或在已验证的自定义域中（如果应用程序是多租户）。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 NULL。 |
+| info | [informationalUrl](../resources/informationalurl.md) | 应用程序的基本配置文件信息，如应用程序的营销、支持、服务条款和隐私声明 Url。 服务条款和隐私声明通过用户同意体验向用户呈现。 有关详细信息，请参阅[为已注册的 AZURE AD 应用添加服务条款和隐私声明](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
+| isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值是`false`，这意味着回退应用程序类型是机密客户端，如 web app。 在某些情况下，Azure AD 无法确定客户端应用程序类型（例如，在未指定重定向 URI 的情况下配置它的[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流）。 在这些情况下，Azure AD 将根据此属性的值解释应用程序类型。|
+| keyCredentials | [keyCredential](../resources/keycredential.md) 集合 | 与应用程序关联的密钥凭据的集合。 不可为空。 |
+| logo | Stream | 应用程序的主徽标。 不可为空。 |
+| optionalClaims | optionalClaims | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以在 Microsoft 安全令牌服务向其应用程序发送令牌中指定要使用的声明。 有关详细信息，请参阅[可选声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims)。 |
+| parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |指定应用程序的家长控制设置。 |
+| passwordCredentials | [passwordCredential](../resources/passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
+| publicClient | [publicClientApplication](../resources/publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
+| requiredResourceAccess |[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户中使用 Microsoft 工作或学校帐户的用户（即单个租户）</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户中具有 Microsoft 工作或学校帐户的用户（即多租户）</li> <li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户的用户，或任何组织的 Azure AD 租户中的工作或学校帐户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+| 标记 |String collection| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
+| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公钥的密钥 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须使用匹配私钥来解密令牌，然后才能将其用于登录用户。|
+| web |[webApplication](../resources/webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`204 No Content`返回响应代码, 并且不会在响应正文中返回任何内容。
+如果成功，此方法将`204 No Content`返回响应代码，并且不会在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -78,7 +79,6 @@ Content-type: application/json
 Content-length: 72
 
 {
-  "allowPublicClient": false,
   "displayName": "New display name"
 }
 ```
@@ -90,14 +90,14 @@ Content-length: 72
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处显示的响应对象。 
+
 <!-- {
   "blockType": "response",
   "truncated": true,

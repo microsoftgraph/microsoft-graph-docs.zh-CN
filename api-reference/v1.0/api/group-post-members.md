@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621355"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934856"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
@@ -39,7 +39,7 @@ POST /groups/{id}/members/$ref
 | 标头       | 值 |
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Content-type   | appication/json。 必填。 |
+| Content-type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。

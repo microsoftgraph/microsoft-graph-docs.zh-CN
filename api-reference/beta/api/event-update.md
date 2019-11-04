@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a3fa733a2c5a4c8ea66db83505016af99d7e7cfd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ef2b53a9b907146c91bb66e269c6f604c2b26d57
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419858"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938686"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "36419858"
 
 更新 [event](../resources/event.md) 对象的属性。
 
-更新事件开始或结束时间的时区时, 请首先[查找支持的](outlookuser-supportedtimezones.md)时区, 以确保只设置已为用户的邮箱服务器配置的时区。 
+更新事件开始或结束时间的时区时，首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -65,14 +65,16 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。 |
 | importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 | isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+|isOnlineMeeting|Boolean| `True`如果此事件有联机会议信息， `false`否则为。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
 |位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可能的值为`teamsForBusiness`、 `skypeForBusiness`和`skypeForConsumer`。 可选。 |
 | recurrence|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
-| showAs|String|要显示的状态。 可能的值为`free` : `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`、。|
+| showAs|String|要显示的状态。 可能的值为`free` ： `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`、。|
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
 | subject|String|事件的主题行文本。|
 
@@ -92,7 +94,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_event"
@@ -112,6 +114,8 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
@@ -148,7 +152,14 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+    }
 }
 ```
 

@@ -1,28 +1,28 @@
 ---
 title: publicClientApplication 资源类型
-description: 指定非 Web 应用程序或 Web Api 的设置。 (例如, 移动或其他公共客户端, 如在桌面设备上运行的已安装应用程序)
+description: 指定非 Web 应用程序或 Web Api 的设置。 （例如，移动或其他公共客户端，如在桌面设备上运行的已安装应用程序）
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 4503e65777b41fc2f864cd818697b048e3c8e435
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: a9d54ed7f15f6bbcabd85ee50e8137b131399b22
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965542"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939381"
 ---
 # <a name="publicclientapplication-resource-type"></a>publicClientApplication 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定非 Web 应用程序或 Web Api 的设置。 (例如, 移动或其他公共客户端, 如在桌面设备上运行的已安装应用程序)
+指定非 web 应用或非 web API 的设置（例如，移动或其他公共客户端，如在桌面设备上运行的已安装应用程序）。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | 描述 |
 |:---------------|:--------|:----------|
-|redirectUris|String collection| 指定向其发送用户令牌以进行登录的 Url, 或向其发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
+|redirectUris|String collection| 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

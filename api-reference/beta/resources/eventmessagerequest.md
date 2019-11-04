@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 188da7f3c35a920953005cd7d228dea1e932d827
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: f7cf6d2a0c040053d03e74de1991b7db675ff977
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622374"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939409"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest 资源类型
 
@@ -92,14 +92,14 @@ ms.locfileid: "37622374"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| Boolean | `True`如果会议组织者允许被邀请者在响应时建议新时间， `false`否则为。 可选。 默认值为 `true`。 |
+|allowNewTimeProposals| 布尔值 | 如果会议组织者允许被邀请者在响应时建议新时间，则为`True`；否则为 `false`。 可选。 默认值为 `true`。 |
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。|
-|bodyPreview|String|邮件正文中的前 255 个字符。|
-|categories|String collection|与邮件关联的类别。|
+|bodyPreview|字符串|邮件正文中的前 255 个字符。|
+|类别|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|字符串|邮件的版本。|
-|conversationId|String|电子邮件所属对话的 ID。|
+|conversationId|字符串|电子邮件所属对话的 ID。|
 |conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
@@ -118,10 +118,10 @@ ms.locfileid: "37622374"
 |位置|[位置](location.md)|请求的会议的位置。|
 |meetingMessageType|String| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTentativelyAccepted`、`meetingDeclined`。|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|邮件中的提及的相关信息。处理 `GET` /messages 请求时，服务器会设置此属性并默认将其包含在响应中。若邮件中无提及，则服务器返回 NULL。可选。 |
-|parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
-|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的上一次结束时间。|
-|previousLocation|[位置](location.md)|所请求会议的上一个位置。|
-|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的上一次开始时间。|
+|parentFolderId|字符串|邮件的父 MailFolder 的唯一标识符。|
+|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| 如果会议更新更改了会议结束时间，则此属性指定上一个会议结束时间。|
+|previousLocation|[Location](location.md)| 如果会议更新更改了会议位置，则此属性指定上一个会议位置。|
+|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)| 如果会议更新更改了会议开始时间，则此属性指定上一个会议的开始时间。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
@@ -131,7 +131,7 @@ ms.locfileid: "37622374"
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|String|所需会议的类型： `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|字符串|所需会议的类型： `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |webLink|String|要在 Outlook Web App 中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook Web App 审阅窗格中显示邮件。<br><br>如果通过 Outlook Web App 登录邮箱，该邮件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br><br>可以从 iFrame 中访问此 URL。|
 
@@ -153,10 +153,10 @@ ms.locfileid: "37622374"
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。|
 |[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。|
-|[copy](../api/message-copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
-|[createForward](../api/message-createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReply](../api/message-createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReplyAll](../api/message-createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
+|[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
+|[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[转发](../api/message-forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
 |[移动](../api/message-move.md)|[message](message.md)|将邮件移到文件夹。此操作会在目标文件夹中新建邮件副本。|
 |[回复](../api/message-reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
@@ -165,7 +165,7 @@ ms.locfileid: "37622374"
 |[取消订阅](../api/message-unsubscribe.md)|无|使用 List-Unsubscribe 标头中的第一个 mailto 命令中指定的数据和地址发送邮件。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[添加附件](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取按名称标识的开放扩展。|

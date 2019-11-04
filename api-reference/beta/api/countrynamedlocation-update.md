@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d68138088ed39d8c4fe4dfbcec7abcb77aa11dd3
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: dd3dabf7e372ad7e1c8ea1914bb42c25577edf64
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653739"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937106"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -26,7 +26,7 @@ ms.locfileid: "37653739"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ConditionalAccess 和 Directory.accessasuser.all 的所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 >[!NOTE]
 >此 API 需要多个权限。 有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。
@@ -50,7 +50,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |displayName|String|位置的人可读名称。|
@@ -65,6 +65,8 @@ PATCH /conditionalAccess/namedLocations/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_countrynamedlocation"
@@ -84,6 +86,16 @@ Content-type: application/json
     "includeUnknownCountriesAndRegions": false
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-countrynamedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-countrynamedlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

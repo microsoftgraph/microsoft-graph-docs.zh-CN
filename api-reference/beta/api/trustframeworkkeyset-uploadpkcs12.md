@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0ca40056c2b7e5607afdb9ffb1ea2cb314c2bc8
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 9cb1ff03d392032ae99117991b0c8ff356621476
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734532"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938191"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet: uploadPkcs12
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734532"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,9 +47,9 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|Key|String|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的以64编码的版本。|
+|Key|字符串|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的以64编码的版本。|
 |密码|String|这是将密码发送给 PFX 内容的字段。|
 
 ## <a name="response"></a>响应
@@ -61,6 +61,8 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadpkcs12"
@@ -75,6 +77,20 @@ Content-type: application/json
   "password": "password-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadpkcs12-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadpkcs12-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadpkcs12-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

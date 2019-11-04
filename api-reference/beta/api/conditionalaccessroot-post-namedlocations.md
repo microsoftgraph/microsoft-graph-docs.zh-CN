@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d5d6962a9cae9eb3a49177ecaa4d17a0c4181881
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: a588dc58df43e818ab4b1c2c239cb81b3ec8b4e1
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653725"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936631"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -26,7 +26,7 @@ ms.locfileid: "37653725"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ConditionalAccess 和 Directory.accessasuser.all 的所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 >[!NOTE]
 >此 API 需要多个权限。 有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。
@@ -61,6 +61,8 @@ POST /conditionalAccess/namedLocations
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -86,6 +88,16 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

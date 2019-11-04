@@ -3,14 +3,68 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3eb7b2d73fa1e277c1db6762c9ac5c96326889aa
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: f2ccc1fa5a33871f8cdbe17fd9bb055c678d457e
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418277"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950484"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="september-2019-new-and-generally-available"></a>2019 年 9 月：新版本和正式版
+
+### <a name="calendar-mail-and-group"></a>日历、邮件和组
+[获取文件的原始内容或项目的 MIME 内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)，该项目已作为[附件](/graph/api/resources/attachment?view=graph-rest-1.0)添加到[事件](/graph/api/resources/event?view=graph-rest-1.0)、[邮件](/graph/api/resources/message?view=graph-rest-1.0)或组[帖子](/graph/api/resources/post?view=graph-rest-1.0)。
+
+### <a name="calendar-mail-outlook-task-personal-contact"></a>日历、邮件、Outlook 任务、个人联系人
+使用 [translateExchangeId](/graph/api/user-translateexchangeids?view=graph-rest-1.0) 函数在受支持的[格式](/graph/api/user-translateexchangeids?view=graph-rest-1.0#exchangeidformat-values)之间转换 Outlook 项目 ID，包括 Microsoft Graph 默认 ID 格式和不可变的 ID 格式。 
+
+以下资源支持 ID 格式转换：
+
+- [附件](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [联系人](/graph/api/resources/contact?view=graph-rest-1.0)
+- [事件](/graph/api/resources/event?view=graph-rest-1.0)
+- [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)
+- [邮件](/graph/api/resources/message?view=graph-rest-1.0)
+- [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0)
+
+### <a name="mail"></a>邮件
+[获取邮件的 MIME 内容](outlook-get-mime-message.md)。
+
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
+使用 [Microsoft Graph 工具包](toolkit/overview.md)开发生产应用，该应用提供一致的 Microsoft 365 外观，可以节省从 Microsoft Graph 进行身份验证和访问数据的时间。
+
+## <a name="september-2019-new-in-preview"></a>2019 年 9 月：预览版中的新增功能
+
+> [!IMPORTANT]
+> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在成品应用中使用它们。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [9 月](changelog.md#september-2019)更新
+
+### <a name="files"></a>文件
+- 增强的同步支持：
+
+  - 使用新的 **pendingOperations** 属性标识可能影响 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 的二进制内容的操作。
+  - [还原](/graph/api/driveitem-restore?view=graph-rest-beta)已删除的 **driveItem**。 
+- 使用安全哈希算法 (SHA-256) 增强[文件](/graph/api/resources/file?view=graph-rest-beta)数据安全性和完整性。
+- 获取或设置[照片](/graph/api/resources/photo?view=graph-rest-beta)的方向。 OneDrive 个人版上支持设置。
+
+### <a name="identity-and-access"></a>标识和访问
+- 使用新的 **identities** 属性并获取[用户](/graph/api/resources/user?view=graph-rest-beta)可用于登录帐户的标识。 这些标识可由组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供。
+- 用于在租户的云应用程序中[同步标识](/graph/api/resources/synchronization-overview?view=graph-rest-beta)的增强功能：
+
+  - 存储[同步作业](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)的设置
+  - 指定对同步作业施加[隔离](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta)的原因
+
+### <a name="teamwork"></a>团队合作
+使用[团队](/graph/api/resources/team?view=graph-rest-beta)的**常规**频道或自定义[成员设置](/graph/api/resources/teammembersettings?view=graph-rest-beta)，让团队成员在**团队**中创建专用频道。
+
+### <a name="users"></a>用户
+- 获取或更新[用户](/graph/api/resources/user?view=graph-rest-beta)用于登录帐户的标识。 这些标识可由商业组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供。
+- 获取或更新用户的[邮箱首选日期和时间格式设置](/graph/api/resources/mailboxsettings?view=graph-rest-beta)。
+
 
 ## <a name="august-2019-new-and-generally-available"></a>2019 年 8 月：新版本和正式版 
 

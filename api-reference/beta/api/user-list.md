@@ -5,20 +5,20 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4649cc8c0e3133553156725a1fc0455cf08cf36
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 92ad556051ddddaa767384e46c92b894e152883c
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37524523"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937467"
 ---
 # <a name="list-users"></a>列出用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 user 对象列表。
+检索 [user](../resources/user.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,6 +58,8 @@ GET /users
 
 #### <a name="request"></a>请求
 
+下面展示了示例请求。
+
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,8 +85,7 @@ GET https://graph.microsoft.com/beta/users
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 
-
+下面展示了示例响应。 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
@@ -128,6 +129,7 @@ Content-length: 608
 
 #### <a name="request"></a>请求
 
+下面展示了示例请求。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -154,8 +156,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 
-
+下面展示了示例响应。 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
@@ -174,6 +175,58 @@ Content-length: 108
     {
       "displayName": "John Smith",
       "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+    }
+  ]
+}
+```
+
+### <a name="example-3--list-users-including-their-last-sign-in-time"></a>示例3：列出用户（包括其上次登录时间）
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName, signInActivity
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-07-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
     }
   ]
 }

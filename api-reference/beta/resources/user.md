@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e96d55115338073b7a60ce3e47de004de64d0cf6
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: af4b6254f7ede23086fd3f5537d41bb5e0dcc30e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539279"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936578"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -148,12 +148,14 @@ ms.locfileid: "37539279"
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 `true`，否则为 `false`。 如果未设置，则将其视为 `true`。 对于通过邀请管理器邀请的用户，此属性将设置为 `false`。|
 |signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 此为只读属性。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 |skills|String collection|供用户枚举其技能的列表。|
+|signInActivity|[signInActivity](signinactivity.md)|获取指定用户登录的最后一个登录日期和请求 ID。<br><br>支持 $filter，但不支持任何其他的可筛选属性。 <br>仅在 $select 上返回。<br>只读。 |
 |state|String|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。支持 $filter。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。示例包括：“US”、“JP”和“GB”。不可为 null。支持 $filter。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
+
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
@@ -365,7 +367,8 @@ ms.locfileid: "37539279"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }
 ```
 

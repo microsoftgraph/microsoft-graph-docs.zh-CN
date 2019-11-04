@@ -1,16 +1,16 @@
 ---
 title: resourceAccess 资源类型
-description: 指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 RequiredResourceAccess 类型的**resourceAccess**属性是**resourceAccess**的集合。
+description: 指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 4c2a909fb2beafeb22f303ef42703b3d57c30854
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: d0d04ba99c0132a0f305bb0fdcaa5e32071d7554
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965409"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939262"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
@@ -41,8 +41,8 @@ ms.locfileid: "35965409"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|Guid|资源应用程序公开的[oAuth2Permission](oauth2permission.md)或[appRole](approle.md)实例之一的唯一标识符。|
-|type|String|指定**id**属性引用的是[oAuth2Permission](oauth2permission.md)还是[appRole](approle.md)。 可能的值为 "scope" 或 "role"。|
+|id|Guid|资源应用程序公开的[oauth2PermissionScopes](permissionscope.md)或[appRole](approle.md)实例之一的唯一标识符。|
+|type|字符串|指定**id**属性引用的是[oauth2PermissionScopes](permissionscope.md)还是[appRole](approle.md)。 可能的值为 "scope" 或 "role"。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

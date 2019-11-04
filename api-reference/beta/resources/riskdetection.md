@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 07a3a76f2ec2a4c3e1536f4b4d61e52417c2053c
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 78dac11af0168b6981e98688536064e9cbc5f528
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576464"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938728"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "35576464"
 
 Azure AD 会根据各种信号和机器学习持续评估[用户风险](riskyuser.md)和应用或用户[登录](signin.md)风险。 此 API 提供对 Azure AD 环境中所有风险检测的编程访问。
 
-有关风险事件的详细信息, 请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
+有关风险事件的详细信息，请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)。
 
 >[!NOTE]
->您必须具有 Azure AD 高级 P2 许可证才能使用风险检测 API。
+>您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
 
 ## <a name="methods"></a>方法
 
@@ -34,17 +34,17 @@ Azure AD 会根据各种信号和机器学习持续评估[用户风险](riskyuse
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|描述|
 |:---------------|:--------|:----------|
 |`id`|`string`|风险检测的唯一 ID。 |
-|`requestId`|`string`|与风险检测相关联的登录请求 ID。 如果风险检测未与登录相关联, 则此属性为 null。|
-|`correlationId`|`string`|与风险检测相关联的登录的相关 ID。 如果风险检测未与登录相关联, 则此属性为 null。 |
+|`requestId`|`string`|与风险检测相关联的登录请求 ID。 如果风险检测未与登录相关联，则此属性为 null。|
+|`correlationId`|`string`|与风险检测相关联的登录的相关 ID。 如果风险检测未与登录相关联，则此属性为 null。 |
 |`riskType`|`riskEventType`|检测到的风险事件的类型。 可能的值是 unlikelyTravel、anonymizedIPAddress、maliciousIPAddress、unfamiliarFeatures、malwareInfectedIPAddress、suspiciousIPAddress、leakedCredentials、investigationsThreatIntelligence、genericadminConfirmedUserCompromised、mcasImpossibleTravel、mcasSuspiciousInboxManipulationRules、investigationsThreatIntelligenceSigninLinked、maliciousIPAddressValidCredentialsBlockedIP 和向 unknownfuturevalue。 |
 |`riskState`|`riskState`|检测到的有风险的用户或登录的状态。 可能的值为 none、confirmedSafe、已修正、已消除、atRisk、confirmedCompromised 和向 unknownfuturevalue。 |
-|`riskLevel`|`riskLevel`|检测到的风险的级别。 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。 |
-|`riskDetail`|`riskDetail`|检测到的风险的详细信息。 可能的值为 none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、向 unknownfuturevalue。 |
-|`source`|`string`|风险检测的来源。 例如, "activeDirectory"。 |
-|`detectionTimingType`|`riskDetectionTimingType`|检测到的风险的时间段 (实时/脱机)。 可能的值包括 notDefined、实时、nearRealtime、offline 和向 unknownfuturevalue。 |
+|`riskLevel`|`riskLevel`|检测到的风险的级别。 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回`hidden`P1 客户。|
+|`riskDetail`|`riskDetail`|检测到的风险的详细信息。 可能的值为 none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、向 unknownfuturevalue。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回`hidden`P1 客户。|
+|`source`|`string`|风险检测的来源。 例如，"activeDirectory"。 |
+|`detectionTimingType`|`riskDetectionTimingType`|检测到的风险的时间段（实时/脱机）。 可能的值包括 notDefined、实时、nearRealtime、offline 和向 unknownfuturevalue。 |
 |`activity`|`activityType`|指示检测到的风险所链接到的活动类型。 可能的值为 "登录"、"用户"、"向 unknownfuturevalue"。 |
 |`tokenIssuerType`|`tokenIssuerType`|指示检测到的登录风险的令牌颁发者的类型。 可能的值是 AzureAD、ADFederationServices 和向 unknownfuturevalue。 |
 |`ipAddress`|`string`|提供从其发生风险的客户端的 IP 地址。 |

@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 006c1e42ae0530c3c50aa7e432b215a9da4c2ca4
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 456490645724063b862de06fd3b70fc72a4d4144
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622552"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934744"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -27,7 +27,7 @@ ms.locfileid: "37622552"
 
 ## <a name="user-property-differences"></a>用户属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br>property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br>property|备注|
 |---|---|---|
 | **appRoleAssignments** | &nbsp; - beta &nbsp; **appRoleAssignments** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
 | **creationType** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp;| |
@@ -50,46 +50,44 @@ ms.locfileid: "37622552"
 
 ## <a name="group-property-differences"></a>组属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **dirSyncEnabled** | &nbsp; -beta &nbsp; **onPremisesSyncEnabled** <br> &nbsp; **** v1.0 onPremisesSyncEnabled &nbsp; - | |
 | **immutableId** | &nbsp; -beta &nbsp; **onPremisesImmutableId** <br> &nbsp; **** v1.0 onPremisesImmutableId &nbsp; - | |
 | **lastDirSyncDateTime** | &nbsp;-beta&nbsp;**onPremisesLastSyncDateTime**<br>&nbsp; **** v1.0 onPremisesLastSyncDateTime &nbsp; - | |
-| **onPremisesDomainName** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 已计划，但尚不可用。 |
-| **onPremisesNetBiosName** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 已计划，但尚不可用。 |
-| **onPremisesSamAccountName** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 已计划，但尚不可用。 |
+| **onPremisesDomainName** | &nbsp; - beta &nbsp; 、onpremisesdomainname <br> &nbsp; - v1.0 &nbsp; 、onpremisesdomainname | |
+| **onPremisesNetBiosName** | &nbsp; - beta &nbsp; onPremisesNetBiosName <br> &nbsp; - v1.0 &nbsp; onPremisesNetBiosName | |
+| **onPremisesSamAccountName** | &nbsp; - beta &nbsp; onPremisesSamAccountName <br> &nbsp; - v1.0 &nbsp; onPremisesSamAccountName |  |
 | **provisioningErrors** | &nbsp; - beta &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。  但是，可以在**onPremisesProvisioningErrors**中找到描述任何 AD Connect 相关设置错误的新属性。 |
 
 ## <a name="application-property-differences"></a>应用程序属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **acceptMappedClaims**  | &nbsp; -beta &nbsp; **api/acceptMappedClaims** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | acceptMappedClaims 现在是新 api 资源的一部分。 |
-| **addIns** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp;  | |
+| **acceptMappedClaims**  | &nbsp; -beta &nbsp; **api/acceptMappedClaims** <br> v1.0 api **/acceptMappedClaims** &nbsp; - &nbsp; | acceptMappedClaims 现在是新 api 资源的一部分。 |
 | **applicationTemplateId** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
-| **命名** | &nbsp; - beta &nbsp; **signInAudience** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
+| **命名** | &nbsp; - beta &nbsp; **signInAudience** <br> &nbsp; **** v1.0 signInAudience &nbsp; - | |
 | **errorUrl**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **homepage**| &nbsp; -beta &nbsp; **web/主页** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 主页现在是新 web 资源的一部分。|
-| **informationalUrls**| &nbsp; -beta &nbsp;**信息** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
-| **knownClientApplications**| &nbsp;-beta&nbsp;**api/knownClientApplications** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | knownClientApplications 现在是新 api 资源的一部分。 |
-| **logoutUrl**| &nbsp; -beta &nbsp; **web/logoutUrl** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | logoutUrl 现在是 web 资源的一部分。 |
-| **logoUrl**| &nbsp; -beta &nbsp;**信息/logoUrl** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | logoUrl 现在是新的 info 资源的一部分。 |
-| **mainLogo**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **oauth2AllowIdTokenImplicitFlow** | &nbsp;-beta&nbsp;**web/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 尚_不可用_ &nbsp; - &nbsp; | 重命名，现在是新的 implicitGrantSettings 资源的一部分。 |
-| **oauth2AllowImplicitFlow**| &nbsp;-beta&nbsp;**web/oauth2AllowImplicitFlow**<br>v1.0 尚_不可用_ &nbsp; - &nbsp; | oauth2AllowImplicitFlow 现在是新 web 资源的一部分。 |
+| **首页**| &nbsp; -beta &nbsp; **web/homePageUrl** <br> v1.0 web **/homePageUrl** &nbsp; - &nbsp; | 主页现在是新 web 资源的一部分。|
+| **informationalUrls**| &nbsp; -beta &nbsp;**信息** <br> &nbsp; - 1.0 &nbsp;版**信息** | |
+| **knownClientApplications**| &nbsp;-beta&nbsp;**api/knownClientApplications** <br> v1.0 api **/knownClientApplications** &nbsp; - &nbsp; | knownClientApplications 现在是新 api 资源的一部分。 |
+| **logoutUrl**| &nbsp; -beta &nbsp; **web/logoutUrl** <br> v1.0 web **/logoutUrl** &nbsp; - &nbsp; | logoutUrl 现在是 web 资源的一部分。 |
+| **logoUrl**| &nbsp; -beta &nbsp;**信息/logoUrl** <br> v1.0 1.0 &nbsp; - &nbsp; **info/logoUrl** | logoUrl 现在是新的 info 资源的一部分。 |
+| **mainLogo**| &nbsp; -beta &nbsp;**徽标** <br> &nbsp; -1.0 &nbsp;版**徽标**   | |
+| **oauth2AllowIdTokenImplicitFlow** | &nbsp;-beta&nbsp;**web/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 web **/implicitGrantSettings/enableIdTokenIssuance** &nbsp; - &nbsp; | 重命名，现在是新的 implicitGrantSettings 资源的一部分。 |
+| **oauth2AllowImplicitFlow**| &nbsp;-beta&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 web **/implicitGrantSettings/enableAccessTokenIssuance** &nbsp; - &nbsp; | 重命名，现在是新的 implicitGrantSettings 资源的一部分。 |
 | **oauth2AllowUrlPathMatching**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **oauth2Permissions**| &nbsp;-beta&nbsp;**api/oauth2PermissionScopes**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 重命名，现在是新 api 资源的一部分。 |
-| **oauth2RequirePostResponse**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **publicClient**| &nbsp; - beta &nbsp; **isFallbackPublicClient** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 此属性现在具有一个新的&nbsp; - &nbsp;含义，它包含像 redirectUris 这样的公共客户端设置。 现在，使用 isFallbackPublicClient 属性处理一个不能自动确定的特殊情况，来确定应用是否为公用或机密客户端。|
+| **oauth2Permissions**| &nbsp;-beta&nbsp;**api/oauth2PermissionScopes**<br> v1.0 api **/oauth2PermissionScopes** &nbsp; - &nbsp; | 重命名，现在是新 api 资源的一部分。 |
+| **publicClient**| &nbsp; - beta &nbsp; **isFallbackPublicClient** <br> &nbsp; **** v1.0 isFallbackPublicClient &nbsp; - | 此属性现在具有一个新的&nbsp; - &nbsp;含义，它包含像 redirectUris 这样的公共客户端设置。 现在，使用 isFallbackPublicClient 属性处理一个不能自动确定的特殊情况，来确定应用是否为公用或机密客户端。|
 | **recordConsentConditions**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **replyUrls**| &nbsp;-beta&nbsp;**web/redirectUris**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 除了重命名，redirectUris 现在也是新的 web 资源的一部分。 | |
+| **replyUrls**| &nbsp;-beta&nbsp;**web/redirectUris**、 **publicclient 重命名/redirectUris**<br> &nbsp; **** **** v1.0 web/redirectUris、publicclient 重命名/redirectUris &nbsp; - | 除了重命名，redirectUris 现在也是新的 web 和 Publicclient 重命名资源的一部分。 这样，开发人员就可以使用其 web 和公共客户端的特定 Uri （例如，在桌面设备上安装的应用程序）。 | |
 | **samlMetadataUrl**| &nbsp; - beta &nbsp; _尚不可用_  <br> v1.0 尚_不可用_ &nbsp; - &nbsp;  | |
-| **extensionProperties**| &nbsp; -beta &nbsp; **extensionProperties** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
+| **extensionProperties**| &nbsp; -beta &nbsp; **extensionProperties** <br> &nbsp; **** v1.0 extensionProperties &nbsp; - | |
 | **serviceEndpoints**|  &nbsp; - beta &nbsp; _不可用_  <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_  | 此属性已弃用，但计划用于 servicePrincipal。|
 
 ## <a name="approleassignment-differences"></a>AppRoleAssignment 差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **creationTimestamp** | &nbsp; -beta &nbsp; **creationTimestamp** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 这将被重命名为 createdDateTime。|
 | **id** | &nbsp; -beta &nbsp; **appRoleId** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
@@ -98,7 +96,7 @@ ms.locfileid: "37622552"
 
 Azure AD Graph 联系人资源已重命名为 Microsoft Graph 中的 orgContact。  属性差异如下所示：
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **城市** | &nbsp;-beta&nbsp;**地址（城市）** <br> v1.0 地址 **（城市）** &nbsp; - &nbsp;  | City 属性是 "地址" 资源集合的一部分。 |
 | **country** | &nbsp;-beta&nbsp;**** 地址&nbsp;**（countryOrRegion）**<br> &nbsp;-1.0&nbsp;**** 版地址&nbsp;**（countryOrRegion）**  | CountryOrRegion 属性是 "地址" 资源集合的一部分。 |
@@ -115,13 +113,13 @@ Azure AD Graph 联系人资源已重命名为 Microsoft Graph 中的 orgContact�
 
 ## <a name="contract-property-differences"></a>协定属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **customerContextId** | &nbsp; -beta &nbsp; **customerId** <br> &nbsp; **** v1.0 customerId &nbsp; -  |  |
 
 ## <a name="device-property-differences"></a>设备属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **approximateLastLogonTimestamp** | &nbsp;-beta&nbsp;**approximateLastSignInDateTime** <br> &nbsp; **** v1.0 approximateLastSignInDateTime &nbsp; - |  |
 | **complianceExpiryTime** | &nbsp;-beta&nbsp;**complianceExpirationDateTime** <br> &nbsp; **** v1.0 complianceExpirationDateTime &nbsp; - |  |
@@ -137,13 +135,13 @@ Azure AD Graph 联系人资源已重命名为 Microsoft Graph 中的 orgContact�
 
 Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph 中的 directoryObjectPartnerReference。  属性差异如下所示：
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **externalContextId** | &nbsp;-beta&nbsp;**externalPartnerTenantId** <br> &nbsp; **** v1.0 externalPartnerTenantId &nbsp; - |  |
 
 ## <a name="domain-property-differences"></a>域属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **name** | &nbsp;-beta&nbsp;**id** <br> &nbsp; - 1.0 &nbsp;版**id** | 在 Microsoft Graph 中，唯一标识符（id）包含域名称;`name`属性不存在。 |
 | **forceDeleteState** |  &nbsp;-beta&nbsp;**状态** <br> &nbsp; - 1.0 &nbsp;版**状态** | 在 Azure AD Graph 中，存在单独的 forceDelete 和域状态属性。  在 Microsoft Graph 中，所有域的状态都由 state 属性处理。 |
@@ -151,7 +149,7 @@ Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph �
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>OAuth2PermissionsGrant 属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **expiryTime** | &nbsp;-beta&nbsp;**expiryTime** <br> &nbsp;_v1.0 尚&nbsp;不可用&nbsp;_ &nbsp;- | 此属性不使用，并且可能会在 Microsoft Graph 中被删除。 |
 | **startTime** | beta&nbsp;-&nbsp;版**startTime** <br> &nbsp;_v1.0 尚&nbsp;不可用&nbsp;_ &nbsp;-  | 此属性不使用，并且可能会在 Microsoft Graph 中被删除。 |
@@ -164,7 +162,7 @@ Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph �
 
 Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终结点。
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **性能** | &nbsp;-beta&nbsp;**功能**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
 | **serviceId** | &nbsp;-beta&nbsp;**providerId**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
@@ -174,7 +172,7 @@ Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终�
 
 ## <a name="serviceprincipal-property-differences"></a>ServicePrincipal 属性差异
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **applicationTemplateId** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
 | **appOwnerTenantId** | &nbsp;-beta&nbsp;**appOwnerOrganizationId** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
@@ -191,7 +189,7 @@ Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终�
 
 在 Microsoft Graph 中，Azure AD Graph TenantDetails 资源被重命名为 "组织"。  属性差异如下所示：
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **companyLastDirSyncTime** | &nbsp;-beta&nbsp;**onPremisesLastSyncDateTime** <br> &nbsp;**** v1.0 onPremisesLastSyncDateTime&nbsp;- |  |
 | **dirSyncEnabled** | &nbsp;-beta&nbsp;**onPremisesSyncEnabled** <br> &nbsp; **** v1.0 onPremisesSyncEnabled &nbsp; - |  |
@@ -206,7 +204,7 @@ Azure AD Graph TrustedCasForPasswordlessAuth 资源已重命名为[certificateBa
 
 将 Azure AD Graph CertificateAuthorityInformation 重命名为 Microsoft Graph 中的**certificateAuthority** 。 属性差异如下所示。
 
-|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|注释|
+|Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **authorityType** | &nbsp;-beta&nbsp;**isRootAuthority**<br> &nbsp; **** v1.0 isRootAuthority &nbsp; - | 此属性的类型也已更改为布尔值。 之前，必须将此属性设置为 "RootAuthority" 或 "IntermediateAuthority"。 将 new 属性设置为**true**等效于 "RootAuthority"。 |
 | **crlDistributionPoint** | &nbsp;-beta&nbsp;**certificateRevocationListUrl** <br> &nbsp;**** v1.0 certificateRevocationListUrl&nbsp;- | |

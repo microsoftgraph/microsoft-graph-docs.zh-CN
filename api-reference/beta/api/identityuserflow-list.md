@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32957546d058d9f7b6aafabd6d635de067266be4
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 585353891219f47666b980a532cd8a7d3dea3918
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734537"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938584"
 ---
 # <a name="list-userflows"></a>列出 userFlows
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734537"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | IdentityUserFlow、IdentityUserFlow 和所有  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | IdentityUserFlow、IdentityUserFlow 和所有 |
+| Application                            | IdentityUserFlow、IdentityUserFlow 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,14 +55,30 @@ GET /identity/userFlows
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userflows"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/userFlows
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userflows-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

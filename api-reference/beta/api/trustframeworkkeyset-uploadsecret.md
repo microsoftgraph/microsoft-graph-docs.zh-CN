@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d5a093541f1cd3cc322a4a161a425f6bf673f6f
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 13742cee46164eaf2e21c4eefa2e8655fa4a567e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734531"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937477"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734531"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,10 +47,10 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|改用|String|与**trustFrameworkKey**的**use**属性类似。|
-|kb|String|类似于**trustFrameworkKey**的**k**属性。 这是用于发送密码的字段。|
+|改用|字符串|与**trustFrameworkKey**的**use**属性类似。|
+|kb|字符串|类似于**trustFrameworkKey**的**k**属性。 这是用于发送密码的字段。|
 |nbf|Int64|类似于**trustFrameworkKey**的**nbf**属性。|
 |exp|Int64|与**trustFrameworkKey**的**exp**属性类似。|
 
@@ -63,6 +63,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadsecret"
@@ -79,6 +81,20 @@ Content-type: application/json
   "exp": 1508973711
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadsecret-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadsecret-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadsecret-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
