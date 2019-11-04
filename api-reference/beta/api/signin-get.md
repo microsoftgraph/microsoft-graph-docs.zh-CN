@@ -1,174 +1,304 @@
 ---
 title: 获取 signIn
 doc_type: apiPageType
-description: 检索租户的特定 Azure AD 用户登录事件。
+description: 获取一个登录对象，其中包含 Azure Active Directory 租户的所有登录。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ae597257544645ddf705be0156a10febcf272e29
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ed96154c2104dc0b06ee24f01080203a8bb61b15
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722361"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938370"
 ---
-# <a name="get-signin"></a><span data-ttu-id="39602-103">获取 signIn</span><span class="sxs-lookup"><span data-stu-id="39602-103">Get signIn</span></span>
+# <a name="get-signin"></a><span data-ttu-id="63f0e-103">获取 signIn</span><span class="sxs-lookup"><span data-stu-id="63f0e-103">Get signIn</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="39602-104">检索租户的特定 Azure AD 用户登录事件。</span><span class="sxs-lookup"><span data-stu-id="39602-104">Retrieve a specific Azure AD user sign-in event for your tenant.</span></span> <span data-ttu-id="39602-105">登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。</span><span class="sxs-lookup"><span data-stu-id="39602-105">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+<span data-ttu-id="63f0e-104">获取一个[登录](../resources/signin.md)对象，其中包含租户的特定用户登录事件。</span><span class="sxs-lookup"><span data-stu-id="63f0e-104">Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant.</span></span> <span data-ttu-id="63f0e-105">这包括要求用户输入用户名或密码以及会话令牌的登录。</span><span class="sxs-lookup"><span data-stu-id="63f0e-105">This includes sign-ins where a user is asked to enter a username or password, and session tokens.</span></span>
 
+## <a name="permissions"></a><span data-ttu-id="63f0e-106">权限</span><span class="sxs-lookup"><span data-stu-id="63f0e-106">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="39602-106">权限</span><span class="sxs-lookup"><span data-stu-id="39602-106">Permissions</span></span>
+<span data-ttu-id="63f0e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="63f0e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="39602-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="39602-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="39602-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="39602-109">Permission type</span></span>      | <span data-ttu-id="39602-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="39602-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="63f0e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="63f0e-109">Permission type</span></span>      | <span data-ttu-id="63f0e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="63f0e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="39602-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="39602-111">Delegated (work or school account)</span></span> | <span data-ttu-id="39602-112">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="39602-112">AuditLog.Read.All</span></span> |
-|<span data-ttu-id="39602-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="39602-113">Delegated (work or school account)</span></span> | <span data-ttu-id="39602-114">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="39602-114">Directory.Read.All</span></span> |
-|<span data-ttu-id="39602-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="39602-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39602-116">不支持</span><span class="sxs-lookup"><span data-stu-id="39602-116">Not supported</span></span>   |
-|<span data-ttu-id="39602-117">应用</span><span class="sxs-lookup"><span data-stu-id="39602-117">Application</span></span> | <span data-ttu-id="39602-118">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="39602-118">AuditLog.Read.All</span></span> | 
-|<span data-ttu-id="39602-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="39602-119">Application</span></span> | <span data-ttu-id="39602-120">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="39602-120">Directory.Read.All</span></span> | 
+| <span data-ttu-id="63f0e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="63f0e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="63f0e-112">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="63f0e-112">AuditLog.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="63f0e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="63f0e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63f0e-114">不支持</span><span class="sxs-lookup"><span data-stu-id="63f0e-114">Not supported</span></span> |
+| <span data-ttu-id="63f0e-115">应用</span><span class="sxs-lookup"><span data-stu-id="63f0e-115">Application</span></span> | <span data-ttu-id="63f0e-116">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="63f0e-116">AuditLog.Read.All, Directory.Read.All</span></span> | 
 
+<span data-ttu-id="63f0e-117">此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="63f0e-117">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-<span data-ttu-id="39602-121">此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="39602-121">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
-
-## <a name="http-request"></a><span data-ttu-id="39602-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="39602-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63f0e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="63f0e-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="39602-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="39602-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="63f0e-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="63f0e-119">Optional query parameters</span></span>
 
-<span data-ttu-id="39602-124">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="39602-124">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="39602-125">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="39602-125">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="63f0e-120">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="63f0e-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="63f0e-121">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="63f0e-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="39602-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="39602-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63f0e-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="63f0e-122">Request headers</span></span>
 
-| <span data-ttu-id="39602-127">名称</span><span class="sxs-lookup"><span data-stu-id="39602-127">Name</span></span>      |<span data-ttu-id="39602-128">说明</span><span class="sxs-lookup"><span data-stu-id="39602-128">Description</span></span>|
+| <span data-ttu-id="63f0e-123">名称</span><span class="sxs-lookup"><span data-stu-id="63f0e-123">Name</span></span>      |<span data-ttu-id="63f0e-124">说明</span><span class="sxs-lookup"><span data-stu-id="63f0e-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="39602-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="39602-129">Authorization</span></span>  | <span data-ttu-id="39602-130">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="39602-130">Bearer {code}</span></span>|
+| <span data-ttu-id="63f0e-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="63f0e-125">Authorization</span></span> | <span data-ttu-id="63f0e-126">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="63f0e-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="39602-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="39602-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63f0e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="63f0e-127">Request body</span></span>
 
-<span data-ttu-id="39602-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="39602-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="63f0e-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="63f0e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="39602-133">响应</span><span class="sxs-lookup"><span data-stu-id="39602-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63f0e-129">响应</span><span class="sxs-lookup"><span data-stu-id="63f0e-129">Response</span></span>
 
-<span data-ttu-id="39602-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="39602-134">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
+<span data-ttu-id="63f0e-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[登录](../resources/signin.md)对象。</span><span class="sxs-lookup"><span data-stu-id="63f0e-130">If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="39602-135">示例</span><span class="sxs-lookup"><span data-stu-id="39602-135">Example</span></span>
+## <a name="examples"></a><span data-ttu-id="63f0e-131">示例</span><span class="sxs-lookup"><span data-stu-id="63f0e-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="39602-136">请求</span><span class="sxs-lookup"><span data-stu-id="39602-136">Request</span></span>
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a><span data-ttu-id="63f0e-132">示例1：用户使用 MFA 登录，这是由条件访问策略触发的。</span><span class="sxs-lookup"><span data-stu-id="63f0e-132">Example 1: User signs in using MFA, which is triggered by a conditional access policy.</span></span> <span data-ttu-id="63f0e-133">主要身份验证是通过 FIDO。</span><span class="sxs-lookup"><span data-stu-id="63f0e-133">Primary authentication is through FIDO.</span></span>
 
-<span data-ttu-id="39602-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="39602-137">Here is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="63f0e-134">请求</span><span class="sxs-lookup"><span data-stu-id="63f0e-134">Request</span></span>
+
+<span data-ttu-id="63f0e-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="63f0e-135">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="39602-138">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="39602-138">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="63f0e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="63f0e-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin"
+  "name": "get_signin_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="39602-139">C#</span><span class="sxs-lookup"><span data-stu-id="39602-139">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="63f0e-137">C#</span><span class="sxs-lookup"><span data-stu-id="63f0e-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="39602-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="39602-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63f0e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63f0e-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="39602-141">目标-C</span><span class="sxs-lookup"><span data-stu-id="39602-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="63f0e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="63f0e-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### <a name="response"></a><span data-ttu-id="63f0e-140">响应</span><span class="sxs-lookup"><span data-stu-id="63f0e-140">Response</span></span>
 
-### <a name="response"></a><span data-ttu-id="39602-142">响应</span><span class="sxs-lookup"><span data-stu-id="39602-142">Response</span></span>
-
-<span data-ttu-id="39602-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="39602-143">Here is an example of the response.</span></span> 
+<span data-ttu-id="63f0e-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="63f0e-141">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.signIn"
 } -->
+
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
-```
 
-```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-    "value": [{
-        "id": "id",
-        "createdDateTime": "2018-01-09T21:17:21.5077253Z",
-        "userDisplayName": "Jamie Doe",
-        "userPrincipalName": "jdoe@contoso.com",
-        "userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
-        "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
-        "appDisplayName": "Azure",
-        "ipAddress": "127.0.0.1",
-        "status": {
-            "errorCode": 0,
-            "failureReason": null,
-            "additionalDetails": "SignIn Success & CA Success"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id":"b01b1726-0147-425e-a7f7-21f252050400",
+      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+      "userDisplayName":"Jon Doe",
+      "userPrincipalName":"jdoe@www.contoso.com",
+      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"207.254.19.10",
+      "clientAppUsed":"Browser",
+      "authenticationDetails": [ 
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+          "authenticationMethod":"FIDO2",
+          "authenticationMethodDetail":"1G54395783",
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"Primary authentication"
         },
-        "clientAppUsed": null,
-        "deviceDetail": {
-            "deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
-            "displayName": "DeviceName",
-            "operatingSystem": "Windows 10",
-            "browser": "Rich Client v3.14.1592.7",
-            "isCompliant": true,
-            "isManaged": true,
-            "trustType": ""
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
+          "authenticationMethod":"Claim in access token",
+          "authenticationMethodDetail":null,
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"MFA"
+        }
+      ],
+      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+      "conditionalAccessStatus":"applied",
+      "isInteractive":true,
+      "tokenIssuerName":null,
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":100,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringsignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "resourceDisplayName":"windows azure service management api",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "status":{},
+      "deviceDetail": {
+        "deviceId":null,
+        "displayName":null,
+        "operatingSystem":"Windows 7",
+        "browser":"Chrome 63.0.3239",
+        "isCompliant":null,
+        "isManaged":null,
+        "trustType":null
+      },
+      "location": {
+        "city":"Lithia Springs",
+        "state":"Georgia",
+        "countryOrRegion":"US",
+        "geoCoordinates": {
+          "altitude":null,
+          "latitude":33.7930908203125,
+          "longitude":-84.445358276367188
+        }
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+          "displayName":"MFA policy",
+          "enforcedGrantControls": [
+            "Mfa",
+            "RequireCompliantDevice"
+          ],
+          "enforcedSessionControls":[],
+          "result":"applied"
         },
-        "location": {
-            "city": "Redmond",
-            "state": "WA",
-            "countryOrRegion": "USA",
-            "geoCoordinates": {
-                "altitude": 41.589,
-                "latitude": 41.589,
-                "longitude": -93.6151
-            }
-        },
-        "mfaDetail": {
-            "mfaAuthMethod": "Phone Auth",
-            "mfaAuthDetail": null
-        },
-        "correlationId": "17c47d3c-593d-4d08-ac20-813892b87e42",
-        "conditionalAccessApplied": true,
-        "conditionalAccessPolicies": [{
-            "id": "26490ed6-52b3-4102-aeff-aad2292abacf",
-            "displayName": "capPolicy",
-            "enforcedAccessControls": ["MFA", "TOU"],
-            "enforcedSessionControls": ["CloudAppSecurity"],
-            "result": "success"
-        }],
-        "isRisky": false,
-        "riskLevel": "low"
-    }]
+        {
+          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+          "displayName":"PipelineTest4",
+          "enforcedGrantControls":[],
+          "enforcedSessionControls":[],
+          "result":"notEnabled"
+        }
+      ],
+      "authenticationProcessingDetails":[],
+      "networkLocationDetails":[]
+    }
+  ]
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a><span data-ttu-id="63f0e-142">示例2：用户仅使用主身份验证进行登录。</span><span class="sxs-lookup"><span data-stu-id="63f0e-142">Example 2: User signs in with only primary authentication.</span></span> <span data-ttu-id="63f0e-143">主要身份验证通过云密码。</span><span class="sxs-lookup"><span data-stu-id="63f0e-143">Primary authentication is through cloud password.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="63f0e-144">请求</span><span class="sxs-lookup"><span data-stu-id="63f0e-144">Request</span></span>
+
+<span data-ttu-id="63f0e-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="63f0e-145">The following is an example of the request.</span></span>
+
 <!-- {
-  "type": "#page.annotation",
-  "description": "Get signIn",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "blockType": "request",
+  "name": "get_signin_2"
 }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+```
+
+#### <a name="response"></a><span data-ttu-id="63f0e-146">响应</span><span class="sxs-lookup"><span data-stu-id="63f0e-146">Response</span></span>
+
+<span data-ttu-id="63f0e-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="63f0e-147">The following is an example of the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 211
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id":"b01b1726-0147-425e-a7f7-21f252050400",
+      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+      "userDisplayName":"Jon Doe",
+      "userPrincipalName":"jdoe@www.contoso.com",
+      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"207.254.19.10",
+      "clientAppUsed":"Browser",
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+          "authenticationMethod":"Password",
+          "authenticationMethodDetail":"Cloud password",
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"Primary authentication"
+        }
+      ],
+      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+      "conditionalAccessStatus":"applied",
+      "isInteractive":true,
+      "tokenIssuerName":null,
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":100,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringsignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "resourceDisplayName":"windows azure service management api",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "status":{},
+      "deviceDetail": {
+        "deviceId":null,
+        "displayName":null,
+        "operatingSystem":"Windows 7",
+        "browser":"Chrome 63.0.3239",
+        "isCompliant":null,
+        "isManaged":null,
+        "trustType":null
+      },
+      "location": {
+        "city":"Lithia Springs",
+        "state":"Georgia",
+        "countryOrRegion":"US",
+        "geoCoordinates": {
+          "altitude":null,
+          "latitude":33.7930908203125,
+          "longitude":-84.445358276367188
+        }
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+          "displayName":"MFA policy",
+          "enforcedGrantControls": [
+            "Mfa",
+            "RequireCompliantDevice"
+          ],
+          "enforcedSessionControls":[],
+          "result":"notApplied"
+        },
+        {
+          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+          "displayName":"PipelineTest4",
+          "enforcedGrantControls":[],
+          "enforcedSessionControls":[],
+          "result":"notEnabled"
+        }
+      ],
+      "authenticationProcessingDetails":[],
+      "networkLocationDetails":[]
+    }
+  ]
+}
+```
