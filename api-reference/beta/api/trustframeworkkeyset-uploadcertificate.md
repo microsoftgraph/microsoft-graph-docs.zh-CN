@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64e5354cb39f2c2ead70b32f46f06c64615dfca2
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 726e2d98ca1002f9e3a9e3d8a7bf705550767529
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734552"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937505"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734552"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,9 +47,9 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|Key|String| 这是用于发送证书内容的字段。 该值应为实际证书内容的以64编码的版本。 |
+|Key|字符串| 这是用于发送证书内容的字段。 该值应为实际证书内容的以64编码的版本。 |
 
 ## <a name="response"></a>响应
 
@@ -60,6 +60,8 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadcertificate"
@@ -73,6 +75,20 @@ Content-type: application/json
   "key": "key-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

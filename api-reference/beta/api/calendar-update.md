@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4335933614d55394491215c78281bb44d6e73ba5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f4817b4121f238246338d6a3ed6f66015ebc3a05
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419095"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936816"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -18,12 +18,12 @@ ms.locfileid: "36419095"
 
 更新 [calendar](../resources/calendar.md) 对象的属性。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
-根据事件所在的日历类型和请求的权限类型 (委派或应用程序), 需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
 
 | 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | 用户日历 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| 组 日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
+| 组日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -56,11 +56,11 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |isDefaultCalendar|Boolean|如果此日历是用户的默认日历，则值为 true，否则为 false。|
-|name|String|日历名称。|
+|name|字符串|日历名称。|
 
 ## <a name="response"></a>响应
 
@@ -69,7 +69,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ##### <a name="request"></a>请求
 下面的示例更新已登录用户的默认日历的名称。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -90,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,6 +121,12 @@ Content-type: application/json
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"

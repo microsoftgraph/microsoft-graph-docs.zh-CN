@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a40a0a096fa6f0616a8ff44e41e25791873fa82f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2ba1fce4492bfacb3a44f21a0fc55ddd8d37b068
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939318"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950435"
 ---
 # <a name="itemphone-resource-type"></a>itemPhone 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户在各种服务中关联的电话号码的详细信息。
+表示有关与各种服务中的用户关联的电话号码的详细信息。
 
 ## <a name="methods"></a>方法
 
@@ -30,8 +30,8 @@ ms.locfileid: "37939318"
 
 | 属性     | 类型        | 说明                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |字符串       | 包含电话号码的友好名称。                                                                                  |
-|number        |字符串       | 包含电话号码。                                                                                                       |
+|displayName   |String       | 包含电话号码的友好名称。                                                                                  |
+|number        |String       | 包含电话号码。                                                                                                       |
 |类型          |字符串       | 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="relationships"></a>关系

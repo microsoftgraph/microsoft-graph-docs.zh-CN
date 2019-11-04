@@ -309,20 +309,28 @@
                   href: api/user-post-manager.md
             - name: Outlook 设置
               items:
-                - name: Outlook 用户
-                  href: resources/outlookuser.md
-                - name: 获取语言选择
-                  href: api/outlookuser-supportedlanguages.md
-                - name: 获取时区选择
-                  href: api/outlookuser-supportedtimezones.md
-                - name: 获取邮箱设置
-                  href: api/user-get-mailboxsettings.md
-                - name: 更新邮箱设置
-                  href: api/user-update-mailboxsettings.md
-                - name: 列出类别
-                  href: api/outlookuser-list-mastercategories.md
-                - name: 创建类别
-                  href: api/outlookuser-post-mastercategories.md
+                - name: 邮箱设置
+                  expanded: true
+                  items:
+                    - name: 邮箱设置
+                      href: resources/mailboxsettings.md
+                    - name: 获取邮箱设置
+                      href: api/user-get-mailboxsettings.md
+                    - name: 更新邮箱设置
+                      href: api/user-update-mailboxsettings.md
+                - name: Outlook 用户服务
+                  expanded: true
+                  items:
+                    - name: Outlook 用户
+                      href: resources/outlookuser.md
+                    - name: 获取语言选择
+                      href: api/outlookuser-supportedlanguages.md
+                    - name: 获取时区选择
+                      href: api/outlookuser-supportedtimezones.md
+                    - name: 列出类别
+                      href: api/outlookuser-list-mastercategories.md
+                    - name: 创建类别
+                      href: api/outlookuser-post-mastercategories.md
                 - name: 转换 Id
                   href: api/user-translateexchangeids.md
             - name: Outlook 任务
@@ -9915,6 +9923,110 @@
                   href: api/profile-post-websites.md
                 - name: 列出网站
                   href: api/profile-list-websites.md
+                - name: 帐户信息
+                  href: resources/useraccountinformation.md
+                  items:
+                    - name: 获取
+                      href: api/useraccountinformation-get.md
+                - name: 周年
+                  href: resources/personanniversary.md
+                  items:
+                    - name: 获取
+                      href: api/personanniversary-get.md
+                    - name: 更新
+                      href: api/personanniversary-update.md
+                    - name: 删除
+                      href: api/personanniversary-delete.md
+                - name: 教育活动
+                  href: resources/educationalactivity.md
+                  items:
+                    - name: 获取
+                      href: api/educationalactivity-get.md
+                    - name: 更新
+                      href: api/educationalactivity-update.md
+                    - name: 删除
+                      href: api/educationalactivity-delete.md
+                - name: 电子邮件地址
+                  href: resources/itememail.md
+                  items:
+                    - name: 获取
+                      href: api/itememail-get.md
+                    - name: 更新
+                      href: api/itememail-update.md
+                    - name: 删除
+                      href: api/itememail-delete.md
+                - name: Interests
+                  href: resources/personinterest.md
+                  items:
+                    - name: 获取
+                      href: api/personinterest-get.md
+                    - name: 更新
+                      href: api/personinterest-update.md
+                    - name: 删除
+                      href: api/personinterest-delete.md
+                - name: 语言
+                  href: resources/languageproficiency.md
+                  items:
+                    - name: 获取
+                      href: api/languageproficiency-get.md
+                    - name: 更新
+                      href: api/languageproficiency-update.md
+                    - name: 删除
+                      href: api/languageproficiency-delete.md
+                - name: 手机
+                  href: resources/itemphone.md
+                  items:
+                    - name: 获取
+                      href: api/itemphone-get.md
+                    - name: 更新
+                      href: api/itemphone-update.md
+                    - name: 删除
+                      href: api/itemphone-delete.md
+                - name: Positions
+                  href: resources/workposition.md
+                  items:
+                    - name: 获取
+                      href: api/workposition-get.md
+                    - name: 更新
+                      href: api/workposition-update.md
+                    - name: 删除
+                      href: api/workposition-delete.md
+                - name: 项目
+                  href: resources/projectparticipation.md
+                  items:
+                    - name: 获取
+                      href: api/projectparticipation-get.md
+                    - name: 更新
+                      href: api/projectparticipation-update.md
+                    - name: 删除
+                      href: api/projectparticipation-delete.md
+                - name: Skills
+                  href: resources/skillproficiency.md
+                  items:
+                    - name: 获取
+                      href: api/skillproficiency-get.md
+                    - name: 更新
+                      href: api/skillproficiency-update.md
+                    - name: 删除
+                      href: api/skillproficiency-delete.md
+                - name: Web 帐户
+                  href: resources/webaccount.md
+                  items:
+                    - name: 获取
+                      href: api/webaccount-get.md
+                    - name: 更新
+                      href: api/webaccount-update.md
+                    - name: 删除
+                      href: api/webaccount-delete.md
+                - name: 网站
+                  href: resources/personwebsite.md
+                  items:
+                    - name: 获取
+                      href: api/personwebsite-get.md
+                    - name: 更新
+                      href: api/personwebsite-update.md
+                    - name: 删除
+                      href: api/personwebsite-delete.md
         - name: 任务和计划
           displayName: Planner
           items:
@@ -10333,13 +10445,13 @@
               items:
                 - name: 列出
                   href: api/outlookuser-list-taskgroups.md
-                - name: 创建
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: 获取
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md

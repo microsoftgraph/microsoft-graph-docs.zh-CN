@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e69a1b4cdc66e9c591d060bed6600c4383e14a63
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: d1cd959c4ee083ff6ec26914c5f99ccd3d8c3c8f
+ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936788"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "37942635"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
@@ -27,11 +27,21 @@ ms.locfileid: "37936788"
 
 ## <a name="http-request"></a>HTTP 请求
 
+更新用户的主日历的指定权限：
 <!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
+```
+
+更新组日历的指定权限：
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+更新包含已标识事件的用户日历的指定权限：
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -49,7 +59,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 |:-------------|:------------|:------------|
 |allowedRoles|string 集合| 日历的允许共享权限级别列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
 |emailAddress|[emailAddress](../resources/email.md)| 代表有权访问日历的 sharee。 对于 "My Organization" sharee， **address**属性为 null。 |
-|id|字符串| 共享日历的用户（sharee）的唯一标识符。 只读。|
+|id|String| 共享日历的用户（sharee）的唯一标识符。 只读。|
 |isInsideOrganization|Boolean| 如此如果上下文中的用户（sharee）与日历所有者在同一个组织中。|
 |isRemovable|Boolean| `True`如果可以从指定日历的 sharees 列表中删除用户， `false`否则为。 "我的组织" 用户决定了贵组织内的其他人对给定日历的权限。 您无法将 "我的组织" 作为 sharee 删除到日历中。|
 |role|calendarRoleType| 日历 sharee 的当前权限级别。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|

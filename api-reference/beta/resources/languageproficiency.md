@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4e2ea70eca4e830ef334e5bf61be724cb05f1cfc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3a022d9c255bbfee03ef7f1fec891bc0fa757480
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939290"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950456"
 ---
 # <a name="languageproficiency-resource-type"></a>languageProficiency 资源类型
 
@@ -34,11 +34,11 @@ ms.locfileid: "37939290"
 |:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |String       | 包含语言的长格式名称。                                                                                                   |
 |水平   |string       | 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
-|tag           |字符串       | 包含四个字符的语言的 BCP47 名称（en-us，无 NB，en-us）。                                                                                  |
+|tag           |String       | 包含四个字符的语言的 BCP47 名称（en-us，无 NB，en-us）。                                                                                  |
 
 ## <a name="relationships"></a>关系
 
-无
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

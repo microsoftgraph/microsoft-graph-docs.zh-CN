@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 229ec09241de019910781a3bf37fe2c39db2c399
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: faed6f47ca55650ce8294d56be242da9a314e3db
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734560"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938331"
 ---
 # <a name="list-keysets"></a>列出 keySets
 
@@ -26,7 +26,7 @@ ms.locfileid: "37734560"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
+| Application                            | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,14 +55,30 @@ GET /trustFramework/keySets
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_keysets"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-keysets-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-keysets-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-keysets-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

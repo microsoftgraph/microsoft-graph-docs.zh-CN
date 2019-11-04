@@ -1,22 +1,23 @@
 ---
 title: 列出所有者
-description: 检索 directoryObject 对象的列表。
+description: 检索应用程序的所有者列表（directoryObject 对象）。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 995d9441115e899081bba7b8ab984f3d50e7b272
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: bf1ac5d04668230db73658df720f5f2d1e5f637a
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719043"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934328"
 ---
 # <a name="list-owners"></a>列出所有者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 directoryObject 对象的列表。
+检索[directoryObject](../resources/directoryobject.md)对象的应用程序的所有者列表。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +50,7 @@ GET /applications/{id}/owners
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_get_owners"
@@ -65,7 +66,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-get-owners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-get-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
