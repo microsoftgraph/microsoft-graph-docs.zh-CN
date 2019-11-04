@@ -3,54 +3,39 @@ title: passwordCredential 资源类型
 description: 包含与应用程序或服务主体相关联的密码凭据。 ServicePrincipal 实体和 application 实体的**passwordCredentials**属性是**passwordCredential**的集合。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 72b07c92456ba8c1b1681b8d00b1dc5d512bc355
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 5cdb9543bed0cecf50428dc3461d4909977325dd
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009200"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934251"
 ---
-# <a name="passwordcredential-resource-type"></a><span data-ttu-id="962e9-104">passwordCredential 资源类型</span><span class="sxs-lookup"><span data-stu-id="962e9-104">passwordCredential resource type</span></span>
+# <a name="passwordcredential-resource-type"></a><span data-ttu-id="2e366-104">passwordCredential 资源类型</span><span class="sxs-lookup"><span data-stu-id="2e366-104">passwordCredential resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="962e9-105">包含与应用程序或服务主体相关联的密码凭据。</span><span class="sxs-lookup"><span data-stu-id="962e9-105">Contains a password credential associated with an application or a service principal.</span></span> <span data-ttu-id="962e9-106">[ServicePrincipal](serviceprincipal.md)实体和[Application](application.md)实体的**passwordCredentials**属性是**passwordCredential**的集合。</span><span class="sxs-lookup"><span data-stu-id="962e9-106">The **passwordCredentials** property of the [servicePrincipal](serviceprincipal.md) entity and of the [application](application.md) entity is a collection of **passwordCredential**.</span></span>
+<span data-ttu-id="2e366-105">表示与应用程序或服务主体相关联的密码凭据。</span><span class="sxs-lookup"><span data-stu-id="2e366-105">Represents a password credential associated with an application or a service principal.</span></span> <span data-ttu-id="2e366-106">[Application](application.md)和[ServicePrincipal](serviceprincipal.md) entitites 的**passwordCredentials**属性是**passwordCredential**对象的集合。</span><span class="sxs-lookup"><span data-stu-id="2e366-106">The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entitites is a collection of **passwordCredential** objects.</span></span>
+
+> <span data-ttu-id="2e366-107">注意：不支持使用修补程序更新 passwordCredentials。</span><span class="sxs-lookup"><span data-stu-id="2e366-107">Note: Using PATCH to update passwordCredentials is not supported.</span></span> <span data-ttu-id="2e366-108">使用 addPassword 和 removePassword 方法来更新应用程序或 servicePrincipal 的密码。</span><span class="sxs-lookup"><span data-stu-id="2e366-108">Use use the addPassword and removePassword methods to update the password for an application or a servicePrincipal.</span></span>
+>
+> - <span data-ttu-id="2e366-109">应用程序[addPassword](../api/application-addpassword.md)</span><span class="sxs-lookup"><span data-stu-id="2e366-109">application - [addPassword](../api/application-addpassword.md)</span></span>
+> - <span data-ttu-id="2e366-110">应用程序[removePassword](../api/application-removepassword.md)</span><span class="sxs-lookup"><span data-stu-id="2e366-110">application - [removePassword](../api/application-removepassword.md)</span></span>
+> - <span data-ttu-id="2e366-111">servicePrincipal- [addPassword](../api/serviceprincipal-addpassword.md)</span><span class="sxs-lookup"><span data-stu-id="2e366-111">servicePrincipal - [addPassword](../api/serviceprincipal-addpassword.md)</span></span>
+> - <span data-ttu-id="2e366-112">servicePrincipal- [removePassword](../api/serviceprincipal-removepassword.md)</span><span class="sxs-lookup"><span data-stu-id="2e366-112">servicePrincipal - [removePassword](../api/serviceprincipal-removepassword.md)</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="962e9-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="962e9-107">JSON representation</span></span>
-
-<span data-ttu-id="962e9-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="962e9-108">Here is a JSON representation of the resource</span></span>
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.passwordCredential"
-}-->
-
-```json
-{
-  "customKeyIdentifier": "binary",
-  "endDateTime": "String (timestamp)",
-  "keyId": "guid",
-  "startDateTime": "String (timestamp)",
-  "secretText": "string",
-  "hint": "string"
-}
-
-```
-## <a name="properties"></a><span data-ttu-id="962e9-109">属性</span><span class="sxs-lookup"><span data-stu-id="962e9-109">Properties</span></span>
-| <span data-ttu-id="962e9-110">属性</span><span class="sxs-lookup"><span data-stu-id="962e9-110">Property</span></span>     | <span data-ttu-id="962e9-111">类型</span><span class="sxs-lookup"><span data-stu-id="962e9-111">Type</span></span>   |<span data-ttu-id="962e9-112">说明</span><span class="sxs-lookup"><span data-stu-id="962e9-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2e366-113">属性</span><span class="sxs-lookup"><span data-stu-id="2e366-113">Properties</span></span>
+| <span data-ttu-id="2e366-114">属性</span><span class="sxs-lookup"><span data-stu-id="2e366-114">Property</span></span>     | <span data-ttu-id="2e366-115">类型</span><span class="sxs-lookup"><span data-stu-id="2e366-115">Type</span></span>   |<span data-ttu-id="2e366-116">描述</span><span class="sxs-lookup"><span data-stu-id="2e366-116">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="962e9-113">customKeyIdentifier</span><span class="sxs-lookup"><span data-stu-id="962e9-113">customKeyIdentifier</span></span>|<span data-ttu-id="962e9-114">Binary</span><span class="sxs-lookup"><span data-stu-id="962e9-114">Binary</span></span>|            |
-|<span data-ttu-id="962e9-115">endDateTime</span><span class="sxs-lookup"><span data-stu-id="962e9-115">endDateTime</span></span>|<span data-ttu-id="962e9-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="962e9-116">DateTimeOffset</span></span>|<span data-ttu-id="962e9-117">密码过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="962e9-117">The date and time at which the password expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="962e9-118">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="962e9-118">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="962e9-119">keyId</span><span class="sxs-lookup"><span data-stu-id="962e9-119">keyId</span></span>|<span data-ttu-id="962e9-120">Guid</span><span class="sxs-lookup"><span data-stu-id="962e9-120">Guid</span></span>|            |
-|<span data-ttu-id="962e9-121">startDateTime</span><span class="sxs-lookup"><span data-stu-id="962e9-121">startDateTime</span></span>|<span data-ttu-id="962e9-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="962e9-122">DateTimeOffset</span></span>|<span data-ttu-id="962e9-123">密码生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="962e9-123">The date and time at which the password becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="962e9-124">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="962e9-124">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="962e9-125">secretText</span><span class="sxs-lookup"><span data-stu-id="962e9-125">secretText</span></span>|<span data-ttu-id="962e9-126">String</span><span class="sxs-lookup"><span data-stu-id="962e9-126">String</span></span>| <span data-ttu-id="962e9-127">密码长度必须为16-64 个字符</span><span class="sxs-lookup"><span data-stu-id="962e9-127">The passwords must be 16-64 characters in length</span></span> |
-|<span data-ttu-id="962e9-128">提示</span><span class="sxs-lookup"><span data-stu-id="962e9-128">hint</span></span>|<span data-ttu-id="962e9-129">String</span><span class="sxs-lookup"><span data-stu-id="962e9-129">String</span></span>|  |
+| <span data-ttu-id="2e366-117">customKeyIdentifier</span><span class="sxs-lookup"><span data-stu-id="2e366-117">customKeyIdentifier</span></span> | <span data-ttu-id="2e366-118">Binary</span><span class="sxs-lookup"><span data-stu-id="2e366-118">Binary</span></span> | <span data-ttu-id="2e366-119">请勿使用。</span><span class="sxs-lookup"><span data-stu-id="2e366-119">Do not use.</span></span> |
+| <span data-ttu-id="2e366-120">displayName</span><span class="sxs-lookup"><span data-stu-id="2e366-120">displayName</span></span> | <span data-ttu-id="2e366-121">String</span><span class="sxs-lookup"><span data-stu-id="2e366-121">String</span></span> | <span data-ttu-id="2e366-122">密码的友好名称。</span><span class="sxs-lookup"><span data-stu-id="2e366-122">Friendly name for the password.</span></span> <span data-ttu-id="2e366-123">可选。</span><span class="sxs-lookup"><span data-stu-id="2e366-123">Optional.</span></span> |
+| <span data-ttu-id="2e366-124">endDateTime</span><span class="sxs-lookup"><span data-stu-id="2e366-124">endDateTime</span></span> | <span data-ttu-id="2e366-125">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2e366-125">DateTimeOffset</span></span> | <span data-ttu-id="2e366-126">密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="2e366-126">The date and time at which the password expires represented using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="2e366-127">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="2e366-127">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="2e366-128">可选。</span><span class="sxs-lookup"><span data-stu-id="2e366-128">Optional.</span></span> |
+| <span data-ttu-id="2e366-129">提示</span><span class="sxs-lookup"><span data-stu-id="2e366-129">hint</span></span> | <span data-ttu-id="2e366-130">字符串</span><span class="sxs-lookup"><span data-stu-id="2e366-130">String</span></span> | <span data-ttu-id="2e366-131">包含密码的前三个字符。</span><span class="sxs-lookup"><span data-stu-id="2e366-131">Contains the first three characters of the password.</span></span> <span data-ttu-id="2e366-132">只读。</span><span class="sxs-lookup"><span data-stu-id="2e366-132">Read-only.</span></span> |
+| <span data-ttu-id="2e366-133">keyId</span><span class="sxs-lookup"><span data-stu-id="2e366-133">keyId</span></span> | <span data-ttu-id="2e366-134">Guid</span><span class="sxs-lookup"><span data-stu-id="2e366-134">Guid</span></span> | <span data-ttu-id="2e366-135">密码的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="2e366-135">The unique identifier for the password.</span></span> |
+| <span data-ttu-id="2e366-136">secretText</span><span class="sxs-lookup"><span data-stu-id="2e366-136">secretText</span></span> | <span data-ttu-id="2e366-137">字符串</span><span class="sxs-lookup"><span data-stu-id="2e366-137">String</span></span> | <span data-ttu-id="2e366-138">只读;包含由 Azure AD 生成的强密码，其长度为16-64 个字符。</span><span class="sxs-lookup"><span data-stu-id="2e366-138">Read-only; Contains the strong passwords generated by Azure AD that are 16-64 characters in length.</span></span> <span data-ttu-id="2e366-139">生成的密码值仅在初始 POST 请求过程中返回到[addPassword](../api/application-addpassword.md)。</span><span class="sxs-lookup"><span data-stu-id="2e366-139">The generated password value is only returned during the initial POST request to [addPassword](../api/application-addpassword.md).</span></span> <span data-ttu-id="2e366-140">将来无法检索此密码。</span><span class="sxs-lookup"><span data-stu-id="2e366-140">There is no way to retrieve this password in the future.</span></span> |
+| <span data-ttu-id="2e366-141">startDateTime</span><span class="sxs-lookup"><span data-stu-id="2e366-141">startDateTime</span></span> | <span data-ttu-id="2e366-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2e366-142">DateTimeOffset</span></span> | <span data-ttu-id="2e366-143">密码生效的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="2e366-143">The date and time at which the password becomes valid.</span></span> <span data-ttu-id="2e366-144">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="2e366-144">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="2e366-145">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="2e366-145">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="2e366-146">可选。</span><span class="sxs-lookup"><span data-stu-id="2e366-146">Optional.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -64,3 +49,39 @@ ms.locfileid: "36009200"
   "suppressions": []
 }
 -->
+
+
+## <a name="json-representation"></a><span data-ttu-id="2e366-147">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2e366-147">JSON representation</span></span>
+
+<span data-ttu-id="2e366-148">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2e366-148">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.passwordCredential",
+  "baseType": null
+}-->
+
+```json
+{
+  "customKeyIdentifier": "Binary",
+  "displayName": "String",
+  "endDateTime": "String (timestamp)",
+  "hint": "String",
+  "keyId": "Guid",
+  "secretText": "String",
+  "startDateTime": "String (timestamp)"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "passwordCredential resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

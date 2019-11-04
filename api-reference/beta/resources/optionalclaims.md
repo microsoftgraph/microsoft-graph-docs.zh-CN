@@ -1,36 +1,42 @@
 ---
 title: optionalClaims 类型
-description: ''
+description: 声明应用程序请求的可选声明。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: f35a3852202e05015259bbe7693ad3ba078e004a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 08481118457188ded581d494a745c4eb51b61edf
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009284"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934272"
 ---
-# <a name="optionalclaims-resource-type"></a><span data-ttu-id="fbef8-102">optionalClaims 资源类型</span><span class="sxs-lookup"><span data-stu-id="fbef8-102">optionalClaims resource type</span></span>
+# <a name="optionalclaims-resource-type"></a><span data-ttu-id="19422-103">optionalClaims 资源类型</span><span class="sxs-lookup"><span data-stu-id="19422-103">optionalClaims resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="properties"></a><span data-ttu-id="fbef8-103">属性</span><span class="sxs-lookup"><span data-stu-id="fbef8-103">Properties</span></span>
-|<span data-ttu-id="fbef8-104">属性</span><span class="sxs-lookup"><span data-stu-id="fbef8-104">Property</span></span>|<span data-ttu-id="fbef8-105">类型</span><span class="sxs-lookup"><span data-stu-id="fbef8-105">Type</span></span>|<span data-ttu-id="fbef8-106">说明</span><span class="sxs-lookup"><span data-stu-id="fbef8-106">Description</span></span>|
-|:---|:---|:---|
+<span data-ttu-id="19422-104">声明应用程序请求的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-104">Declares the optional claims requested by an application.</span></span> <span data-ttu-id="19422-105">应用程序可以配置可从安全令牌服务接收的三种令牌（ID 令牌、访问令牌、SAML 2 令牌）每种类型中返回的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-105">An application can configure optional claims to be returned in each of three types of tokens (ID token, access token, SAML 2 token) it can receive from the security token service.</span></span> <span data-ttu-id="19422-106">应用程序可以配置要在每个令牌类型中返回的一组不同的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-106">An application can configure a different set of optional claims to be returned in each token type.</span></span> <span data-ttu-id="19422-107">[应用程序](application.md)的 optionalClaims 属性是一个**optionalClaims**对象。</span><span class="sxs-lookup"><span data-stu-id="19422-107">The optionalClaims property of the [application](application.md) is an **optionalClaims** object.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="fbef8-107">关系</span><span class="sxs-lookup"><span data-stu-id="fbef8-107">Relationships</span></span>
-<span data-ttu-id="fbef8-108">无</span><span class="sxs-lookup"><span data-stu-id="fbef8-108">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="fbef8-109">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fbef8-109">JSON Representation</span></span>
-<span data-ttu-id="fbef8-110">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fbef8-110">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="19422-108">应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以在 Microsoft 安全令牌服务向其应用程序发送令牌中指定要使用的声明。</span><span class="sxs-lookup"><span data-stu-id="19422-108">Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service.</span></span> <span data-ttu-id="19422-109">有关详细信息，请参阅向[AZURE AD 应用提供可选声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims)。</span><span class="sxs-lookup"><span data-stu-id="19422-109">See [provide optional claims to your Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) for more information.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="19422-110">属性</span><span class="sxs-lookup"><span data-stu-id="19422-110">Properties</span></span>
+| <span data-ttu-id="19422-111">属性</span><span class="sxs-lookup"><span data-stu-id="19422-111">Property</span></span>     | <span data-ttu-id="19422-112">类型</span><span class="sxs-lookup"><span data-stu-id="19422-112">Type</span></span>        | <span data-ttu-id="19422-113">描述</span><span class="sxs-lookup"><span data-stu-id="19422-113">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="19422-114">idToken</span><span class="sxs-lookup"><span data-stu-id="19422-114">idToken</span></span>|<span data-ttu-id="19422-115">[optionalClaim](optionalclaim.md)集合</span><span class="sxs-lookup"><span data-stu-id="19422-115">[optionalClaim](optionalclaim.md) collection</span></span>| <span data-ttu-id="19422-116">JWT ID 令牌中返回的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-116">The optional claims returned in the JWT ID token.</span></span> |
+|<span data-ttu-id="19422-117">accessToken</span><span class="sxs-lookup"><span data-stu-id="19422-117">accessToken</span></span>|<span data-ttu-id="19422-118">[optionalClaim](optionalclaim.md)集合</span><span class="sxs-lookup"><span data-stu-id="19422-118">[optionalClaim](optionalclaim.md) collection</span></span>| <span data-ttu-id="19422-119">JWT 访问令牌中返回的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-119">The optional claims returned in the JWT access token.</span></span> |
+|<span data-ttu-id="19422-120">saml2Token</span><span class="sxs-lookup"><span data-stu-id="19422-120">saml2Token</span></span>|<span data-ttu-id="19422-121">[optionalClaim](optionalclaim.md)集合</span><span class="sxs-lookup"><span data-stu-id="19422-121">[optionalClaim](optionalclaim.md) collection</span></span>| <span data-ttu-id="19422-122">SAML 令牌中返回的可选声明。</span><span class="sxs-lookup"><span data-stu-id="19422-122">The optional claims returned in the SAML token.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="19422-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="19422-123">JSON Representation</span></span>
+<span data-ttu-id="19422-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="19422-124">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.optionalClaims"
 }-->
 ``` json
 {
+  "idToken": [{"@odata.type": "microsoft.graph.optionalClaim"}],
+  "accessToken": [{"@odata.type": "microsoft.graph.optionalClaim"}],
+  "saml2Token": [{"@odata.type": "microsoft.graph.optionalClaim"}]
 }
 ```
-
-
-

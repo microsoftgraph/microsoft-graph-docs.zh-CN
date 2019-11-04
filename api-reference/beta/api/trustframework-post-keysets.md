@@ -5,30 +5,30 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9b6cd03a38e4e115befacb13909d1ba0040b3aff
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: fc55eb8f469a0abd4576ffc152d997fe293ad3ed
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734557"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938303"
 ---
-# <a name="create-trustframeworkkeyset"></a><span data-ttu-id="170b4-103">创建 trustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="170b4-103">Create trustFrameworkKeySet</span></span>
+# <a name="create-trustframeworkkeyset"></a><span data-ttu-id="b6089-103">创建 trustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="b6089-103">Create trustFrameworkKeySet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="170b4-104">创建新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。</span><span class="sxs-lookup"><span data-stu-id="170b4-104">Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="170b4-105">创建请求中应有**trustFrameworkKeySet**的 ID;但是，服务可以对其进行修改。</span><span class="sxs-lookup"><span data-stu-id="170b4-105">The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.</span></span> <span data-ttu-id="170b4-106">已修改的 ID 将出现在响应中和位置标头中。</span><span class="sxs-lookup"><span data-stu-id="170b4-106">The modified ID will be available in the response and in the location header.</span></span>
+<span data-ttu-id="b6089-104">创建新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。</span><span class="sxs-lookup"><span data-stu-id="b6089-104">Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="b6089-105">创建请求中应有**trustFrameworkKeySet**的 ID;但是，服务可以对其进行修改。</span><span class="sxs-lookup"><span data-stu-id="b6089-105">The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.</span></span> <span data-ttu-id="b6089-106">已修改的 ID 将出现在响应中和位置标头中。</span><span class="sxs-lookup"><span data-stu-id="b6089-106">The modified ID will be available in the response and in the location header.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="170b4-107">权限</span><span class="sxs-lookup"><span data-stu-id="170b4-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6089-107">权限</span><span class="sxs-lookup"><span data-stu-id="b6089-107">Permissions</span></span>
 
-<span data-ttu-id="170b4-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="170b4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b6089-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b6089-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="170b4-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="170b4-110">Permission type</span></span>                        | <span data-ttu-id="170b4-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="170b4-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b6089-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b6089-110">Permission type</span></span>                        | <span data-ttu-id="b6089-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b6089-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="170b4-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="170b4-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="170b4-113">TrustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="170b4-113">TrustFrameworkKeySet.ReadWrite.All</span></span>   |
-| <span data-ttu-id="170b4-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="170b4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="170b4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="170b4-115">Not supported.</span></span> |
-| <span data-ttu-id="170b4-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="170b4-116">Application</span></span>                            | <span data-ttu-id="170b4-117">TrustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="170b4-117">TrustFrameworkKeySet.ReadWrite.All</span></span>    |
+| <span data-ttu-id="b6089-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b6089-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b6089-113">TrustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="b6089-113">TrustFrameworkKeySet.ReadWrite.All</span></span>   |
+| <span data-ttu-id="b6089-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b6089-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6089-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b6089-115">Not supported.</span></span> |
+| <span data-ttu-id="b6089-116">Application</span><span class="sxs-lookup"><span data-stu-id="b6089-116">Application</span></span>                            | <span data-ttu-id="b6089-117">TrustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="b6089-117">TrustFrameworkKeySet.ReadWrite.All</span></span>    |
 
-## <a name="http-request"></a><span data-ttu-id="170b4-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="170b4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6089-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b6089-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +36,31 @@ ms.locfileid: "37734557"
 POST /trustFramework/keySets
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="170b4-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="170b4-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b6089-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="b6089-119">Request headers</span></span>
 
-| <span data-ttu-id="170b4-120">名称</span><span class="sxs-lookup"><span data-stu-id="170b4-120">Name</span></span>          | <span data-ttu-id="170b4-121">说明</span><span class="sxs-lookup"><span data-stu-id="170b4-121">Description</span></span>   |
+| <span data-ttu-id="b6089-120">名称</span><span class="sxs-lookup"><span data-stu-id="b6089-120">Name</span></span>          | <span data-ttu-id="b6089-121">说明</span><span class="sxs-lookup"><span data-stu-id="b6089-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="170b4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="170b4-122">Authorization</span></span> | <span data-ttu-id="170b4-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="170b4-p103">Bearer {token}. Required.</span></span> |
-|<span data-ttu-id="170b4-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="170b4-125">Content-type</span></span> | <span data-ttu-id="170b4-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="170b4-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="b6089-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6089-122">Authorization</span></span> | <span data-ttu-id="b6089-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b6089-p103">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="b6089-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="b6089-125">Content-type</span></span> | <span data-ttu-id="b6089-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b6089-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="170b4-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="170b4-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6089-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b6089-128">Request body</span></span>
 
-<span data-ttu-id="170b4-129">在请求正文中，提供[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="170b4-129">In the request body, supply a JSON representation of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.</span></span>
+<span data-ttu-id="b6089-129">在请求正文中，提供[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b6089-129">In the request body, supply a JSON representation of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="170b4-130">响应</span><span class="sxs-lookup"><span data-stu-id="170b4-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b6089-130">响应</span><span class="sxs-lookup"><span data-stu-id="b6089-130">Response</span></span>
 
-<span data-ttu-id="170b4-131">如果成功，此方法将在`201 Created`响应正文中返回响应代码、新创建的对象的位置标头和新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象。</span><span class="sxs-lookup"><span data-stu-id="170b4-131">If successful, this method returns a `201 Created` response code, a location header for the newly created object, and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
+<span data-ttu-id="b6089-131">如果成功，此方法将在`201 Created`响应正文中返回响应代码、新创建的对象的位置标头和新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b6089-131">If successful, this method returns a `201 Created` response code, a location header for the newly created object, and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="170b4-132">示例</span><span class="sxs-lookup"><span data-stu-id="170b4-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b6089-132">示例</span><span class="sxs-lookup"><span data-stu-id="b6089-132">Examples</span></span>
 
-### <a name="example-1-create-an-empty-keyset"></a><span data-ttu-id="170b4-133">示例1：创建空键集</span><span class="sxs-lookup"><span data-stu-id="170b4-133">Example 1: Create an empty keyset</span></span>
-<span data-ttu-id="170b4-134">此模式创建一个 enpty 键集，然后生成一个密钥，上载一个手动机密，并在大多数情况下上传证书或 PKCS12 密钥是足够的。</span><span class="sxs-lookup"><span data-stu-id="170b4-134">This pattern to create an enpty keyset and then generate a key, upload a manual secret, and upload a certificate or a PKCS12 key is sufficient for most scenarios.</span></span> 
+### <a name="example-1-create-an-empty-keyset"></a><span data-ttu-id="b6089-133">示例1：创建空键集</span><span class="sxs-lookup"><span data-stu-id="b6089-133">Example 1: Create an empty keyset</span></span>
+<span data-ttu-id="b6089-134">这是最有用的操作之一。</span><span class="sxs-lookup"><span data-stu-id="b6089-134">This is one of the most useful operations.</span></span> <span data-ttu-id="b6089-135">首先，创建一个空键集。</span><span class="sxs-lookup"><span data-stu-id="b6089-135">First, you create an empty keyset.</span></span> <span data-ttu-id="b6089-136">然后，在新的密钥集中，您可以生成密钥，上载手动机密，并上传证书或 PKCS12 密钥。</span><span class="sxs-lookup"><span data-stu-id="b6089-136">Then, in the new keyset, you can generate a key, upload a manual secret, and upload a certificate or a PKCS12 key.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="170b4-135">请求</span><span class="sxs-lookup"><span data-stu-id="170b4-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b6089-137">请求</span><span class="sxs-lookup"><span data-stu-id="b6089-137">Request</span></span>
 
-<span data-ttu-id="170b4-136">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="170b4-136">The following example shows the request.</span></span>
+<span data-ttu-id="b6089-138">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="b6089-138">The following example shows the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b6089-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6089-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -72,12 +74,26 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b6089-140">C#</span><span class="sxs-lookup"><span data-stu-id="b6089-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="170b4-137">响应</span><span class="sxs-lookup"><span data-stu-id="170b4-137">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b6089-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6089-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="170b4-138">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="170b4-138">The following example shows the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b6089-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6089-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="170b4-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="170b4-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+#### <a name="response"></a><span data-ttu-id="b6089-143">响应</span><span class="sxs-lookup"><span data-stu-id="b6089-143">Response</span></span>
+
+<span data-ttu-id="b6089-144">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="b6089-144">The following example shows the response.</span></span>
+
+> <span data-ttu-id="b6089-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b6089-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -96,13 +112,13 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### <a name="example-2-create-a-keyset-with-a-key"></a><span data-ttu-id="170b4-141">示例2：创建具有键的键集</span><span class="sxs-lookup"><span data-stu-id="170b4-141">Example 2: Create a keyset with a key</span></span>
+### <a name="example-2-create-a-keyset-with-a-key"></a><span data-ttu-id="b6089-147">示例2：创建具有键的键集</span><span class="sxs-lookup"><span data-stu-id="b6089-147">Example 2: Create a keyset with a key</span></span>
 
-<span data-ttu-id="170b4-142">这是一种高级方案，需要知道密钥的[RFC 7517](https://tools.ietf.org/html/rfc7517#section-5)兼容 JSON Web 密钥格式。</span><span class="sxs-lookup"><span data-stu-id="170b4-142">This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.</span></span>
+<span data-ttu-id="b6089-148">这是一种高级方案，需要知道密钥的[RFC 7517](https://tools.ietf.org/html/rfc7517#section-5)兼容 JSON Web 密钥格式。</span><span class="sxs-lookup"><span data-stu-id="b6089-148">This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="170b4-143">请求</span><span class="sxs-lookup"><span data-stu-id="170b4-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b6089-149">请求</span><span class="sxs-lookup"><span data-stu-id="b6089-149">Request</span></span>
 
-<span data-ttu-id="170b4-144">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="170b4-144">The following example shows the request.</span></span>
+<span data-ttu-id="b6089-150">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="b6089-150">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework"
@@ -139,11 +155,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="170b4-145">响应</span><span class="sxs-lookup"><span data-stu-id="170b4-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b6089-151">响应</span><span class="sxs-lookup"><span data-stu-id="b6089-151">Response</span></span>
 
-<span data-ttu-id="170b4-146">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="170b4-146">The following example shows the response.</span></span>
+<span data-ttu-id="b6089-152">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="b6089-152">The following example shows the response.</span></span>
 
-> <span data-ttu-id="170b4-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="170b4-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b6089-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b6089-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

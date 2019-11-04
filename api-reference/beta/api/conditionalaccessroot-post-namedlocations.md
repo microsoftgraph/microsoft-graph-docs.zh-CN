@@ -5,33 +5,33 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d5d6962a9cae9eb3a49177ecaa4d17a0c4181881
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: a588dc58df43e818ab4b1c2c239cb81b3ec8b4e1
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653725"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936631"
 ---
-# <a name="create-namedlocation"></a><span data-ttu-id="af293-103">创建 namedLocation</span><span class="sxs-lookup"><span data-stu-id="af293-103">Create namedLocation</span></span>
+# <a name="create-namedlocation"></a><span data-ttu-id="e9a8e-103">创建 namedLocation</span><span class="sxs-lookup"><span data-stu-id="e9a8e-103">Create namedLocation</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="af293-104">创建新的[namedLocation](../resources/namedlocation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="af293-104">Create a new [namedLocation](../resources/namedlocation.md) object.</span></span>
+<span data-ttu-id="e9a8e-104">创建新的[namedLocation](../resources/namedlocation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-104">Create a new [namedLocation](../resources/namedlocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="af293-105">权限</span><span class="sxs-lookup"><span data-stu-id="af293-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e9a8e-105">权限</span><span class="sxs-lookup"><span data-stu-id="e9a8e-105">Permissions</span></span>
 
-<span data-ttu-id="af293-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="af293-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e9a8e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="af293-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="af293-108">Permission type</span></span>                        | <span data-ttu-id="af293-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="af293-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e9a8e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9a8e-108">Permission type</span></span>                        | <span data-ttu-id="e9a8e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e9a8e-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="af293-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="af293-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="af293-111">ConditionalAccess 和 Directory.accessasuser.all 的所有</span><span class="sxs-lookup"><span data-stu-id="af293-111">Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="af293-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="af293-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af293-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="af293-113">Not supported.</span></span> |
-| <span data-ttu-id="af293-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="af293-114">Application</span></span>                            | <span data-ttu-id="af293-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="af293-115">Not supported.</span></span> |
+| <span data-ttu-id="e9a8e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9a8e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e9a8e-111">ConditionalAccess 和 Directory.accessasuser.all 的所有</span><span class="sxs-lookup"><span data-stu-id="e9a8e-111">Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="e9a8e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9a8e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9a8e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-113">Not supported.</span></span> |
+| <span data-ttu-id="e9a8e-114">Application</span><span class="sxs-lookup"><span data-stu-id="e9a8e-114">Application</span></span>                            | <span data-ttu-id="e9a8e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-115">Not supported.</span></span> |
 
 >[!NOTE]
-><span data-ttu-id="af293-116">此 API 需要多个权限。</span><span class="sxs-lookup"><span data-stu-id="af293-116">This API requires multiple permissions.</span></span> <span data-ttu-id="af293-117">有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。</span><span class="sxs-lookup"><span data-stu-id="af293-117">For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).</span></span>
+><span data-ttu-id="e9a8e-116">此 API 需要多个权限。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-116">This API requires multiple permissions.</span></span> <span data-ttu-id="e9a8e-117">有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-117">For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="af293-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="af293-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e9a8e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9a8e-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,28 +39,30 @@ ms.locfileid: "37653725"
 POST /conditionalAccess/namedLocations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="af293-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="af293-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e9a8e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e9a8e-119">Request headers</span></span>
 
-| <span data-ttu-id="af293-120">名称</span><span class="sxs-lookup"><span data-stu-id="af293-120">Name</span></span>          | <span data-ttu-id="af293-121">说明</span><span class="sxs-lookup"><span data-stu-id="af293-121">Description</span></span>   |
+| <span data-ttu-id="e9a8e-120">名称</span><span class="sxs-lookup"><span data-stu-id="e9a8e-120">Name</span></span>          | <span data-ttu-id="e9a8e-121">说明</span><span class="sxs-lookup"><span data-stu-id="e9a8e-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="af293-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="af293-122">Authorization</span></span> | <span data-ttu-id="af293-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="af293-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="af293-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="af293-125">Content-Type</span></span>  | <span data-ttu-id="af293-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="af293-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="e9a8e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9a8e-122">Authorization</span></span> | <span data-ttu-id="e9a8e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e9a8e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e9a8e-125">Content-Type</span></span>  | <span data-ttu-id="e9a8e-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="e9a8e-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="af293-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="af293-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e9a8e-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9a8e-128">Request body</span></span>
 
-<span data-ttu-id="af293-129">在请求正文中，提供[ipNamedLocation](../resources/ipnamedlocation.md)或[COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="af293-129">In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object.</span></span>
+<span data-ttu-id="e9a8e-129">在请求正文中，提供[ipNamedLocation](../resources/ipnamedlocation.md)或[COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-129">In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="af293-130">响应</span><span class="sxs-lookup"><span data-stu-id="af293-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e9a8e-130">响应</span><span class="sxs-lookup"><span data-stu-id="e9a8e-130">Response</span></span>
 
-<span data-ttu-id="af293-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[ipNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="af293-131">If successful, this method returns a `201 Created`response code and a new [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.</span></span>
+<span data-ttu-id="e9a8e-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[ipNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-131">If successful, this method returns a `201 Created`response code and a new [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="af293-132">示例</span><span class="sxs-lookup"><span data-stu-id="af293-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e9a8e-132">示例</span><span class="sxs-lookup"><span data-stu-id="e9a8e-132">Examples</span></span>
 
-### <a name="example-1-create-an-ipnamedlocation"></a><span data-ttu-id="af293-133">示例1：创建 ipNamedLocation</span><span class="sxs-lookup"><span data-stu-id="af293-133">Example 1: Create an ipNamedLocation</span></span>
+### <a name="example-1-create-an-ipnamedlocation"></a><span data-ttu-id="e9a8e-133">示例1：创建 ipNamedLocation</span><span class="sxs-lookup"><span data-stu-id="e9a8e-133">Example 1: Create an ipNamedLocation</span></span>
 
-#### <a name="request"></a><span data-ttu-id="af293-134">请求</span><span class="sxs-lookup"><span data-stu-id="af293-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e9a8e-134">请求</span><span class="sxs-lookup"><span data-stu-id="e9a8e-134">Request</span></span>
 
-<span data-ttu-id="af293-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="af293-135">The following is an example of the request.</span></span>
+<span data-ttu-id="e9a8e-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-135">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="e9a8e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9a8e-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -86,12 +88,22 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e9a8e-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9a8e-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="af293-136">响应</span><span class="sxs-lookup"><span data-stu-id="af293-136">Response</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e9a8e-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e9a8e-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="af293-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="af293-137">The following is an example of the response.</span></span>
+---
 
-> <span data-ttu-id="af293-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="af293-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+#### <a name="response"></a><span data-ttu-id="e9a8e-139">响应</span><span class="sxs-lookup"><span data-stu-id="e9a8e-139">Response</span></span>
+
+<span data-ttu-id="e9a8e-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-140">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="e9a8e-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,11 +135,11 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a><span data-ttu-id="af293-140">示例2：创建 countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="af293-140">Example 2: Create a countryNamedLocation</span></span>
+### <a name="example-2-create-a-countrynamedlocation"></a><span data-ttu-id="e9a8e-143">示例2：创建 countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="e9a8e-143">Example 2: Create a countryNamedLocation</span></span>
 
-#### <a name="request"></a><span data-ttu-id="af293-141">请求</span><span class="sxs-lookup"><span data-stu-id="af293-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e9a8e-144">请求</span><span class="sxs-lookup"><span data-stu-id="e9a8e-144">Request</span></span>
 
-<span data-ttu-id="af293-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="af293-142">The following is an example of the request.</span></span>
+<span data-ttu-id="e9a8e-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-145">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -148,11 +160,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="af293-143">响应</span><span class="sxs-lookup"><span data-stu-id="af293-143">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e9a8e-146">响应</span><span class="sxs-lookup"><span data-stu-id="e9a8e-146">Response</span></span>
 
-<span data-ttu-id="af293-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="af293-144">The following is an example of the response.</span></span>
+<span data-ttu-id="e9a8e-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-147">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="af293-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="af293-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e9a8e-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9a8e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
