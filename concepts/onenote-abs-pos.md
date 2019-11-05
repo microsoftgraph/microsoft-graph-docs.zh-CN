@@ -4,43 +4,43 @@ description: OneNote 页正文可以包含多个能在页面上独立定位的�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c68699df88f53cfc70bbbc5a97ed41acd97b60
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560928"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969338"
 ---
-# <a name="create-absolute-positioned-elements-in-onenote-pages"></a><span data-ttu-id="14767-103">在 OneNote 页中创建绝对定位元素</span><span class="sxs-lookup"><span data-stu-id="14767-103">Create absolute positioned elements in OneNote pages</span></span>
+# <a name="create-absolute-positioned-elements-in-onenote-pages"></a><span data-ttu-id="6faf5-103">在 OneNote 页中创建绝对定位元素</span><span class="sxs-lookup"><span data-stu-id="6faf5-103">Create absolute positioned elements in OneNote pages</span></span>
 
-<span data-ttu-id="14767-104">OneNote 页面的正文可以包含多个直接 `div`、`img` 和 `object` 子元素，可在页面上对其独立定位。</span><span class="sxs-lookup"><span data-stu-id="14767-104">The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.</span></span>
+<span data-ttu-id="6faf5-104">OneNote 页面的正文可以包含多个直接 `div`、`img` 和 `object` 子元素，可在页面上对其独立定位。</span><span class="sxs-lookup"><span data-stu-id="6faf5-104">The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.</span></span>
 
 <a name="attributes"></a>
 
-## <a name="attributes-and-positioning-behavior"></a><span data-ttu-id="14767-105">属性和定位行为</span><span class="sxs-lookup"><span data-stu-id="14767-105">Attributes and positioning behavior</span></span>
+## <a name="attributes-and-positioning-behavior"></a><span data-ttu-id="6faf5-105">属性和定位行为</span><span class="sxs-lookup"><span data-stu-id="6faf5-105">Attributes and positioning behavior</span></span>
 
-<span data-ttu-id="14767-106">使用 `data-absolute-enabled` 和 [`style`](#supported-css-style-attributes) 属性在页面上创建绝对定位的元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="14767-106">Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) attributes to create absolute positioned elements on a page, as follows:</span></span>
+<span data-ttu-id="6faf5-106">使用 `data-absolute-enabled` 和 [`style`](#supported-css-style-attributes) 属性在页面上创建绝对定位的元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6faf5-106">Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) attributes to create absolute positioned elements on a page, as follows:</span></span>
 
-- <span data-ttu-id="14767-107">正文元素必须指定 `data-absolute-enabled="true"`。</span><span class="sxs-lookup"><span data-stu-id="14767-107">The body element must specify `data-absolute-enabled="true"`.</span></span> <span data-ttu-id="14767-108">如果省略或设置为 `false`，则所有正文内容在 API 创建的 `_default` 绝对定位 div 内呈现，所有位置设置将被忽略。</span><span class="sxs-lookup"><span data-stu-id="14767-108">If omitted or set to `false`, all body content is rendered inside a `_default` absolute positioned div that the API creates, and all position settings are ignored.</span></span>
+- <span data-ttu-id="6faf5-107">正文元素必须指定 `data-absolute-enabled="true"`。</span><span class="sxs-lookup"><span data-stu-id="6faf5-107">The body element must specify `data-absolute-enabled="true"`.</span></span> <span data-ttu-id="6faf5-108">如果省略或设置为 `false`，则所有正文内容在 API 创建的 `_default` 绝对定位 div 内呈现，所有位置设置将被忽略。</span><span class="sxs-lookup"><span data-stu-id="6faf5-108">If omitted or set to `false`, all body content is rendered inside a `_default` absolute positioned div that the API creates, and all position settings are ignored.</span></span>
 
-- <span data-ttu-id="14767-109">只有 `div`、`img` 和 `object` 元素才能是绝对定位的元素。</span><span class="sxs-lookup"><span data-stu-id="14767-109">Only `div`, `img`, and `object` elements can be absolute positioned elements.</span></span> 
+- <span data-ttu-id="6faf5-109">只有 `div`、`img` 和 `object` 元素才能是绝对定位的元素。</span><span class="sxs-lookup"><span data-stu-id="6faf5-109">Only `div`, `img`, and `object` elements can be absolute positioned elements.</span></span> 
 
-- <span data-ttu-id="14767-110">绝对定位的元素必须指定 `style="position:absolute"`。</span><span class="sxs-lookup"><span data-stu-id="14767-110">Absolute positioned elements must specify `style="position:absolute"`.</span></span>
+- <span data-ttu-id="6faf5-110">绝对定位的元素必须指定 `style="position:absolute"`。</span><span class="sxs-lookup"><span data-stu-id="6faf5-110">Absolute positioned elements must specify `style="position:absolute"`.</span></span>
 
-- <span data-ttu-id="14767-111">绝对定位的元素必须是 `body` 元素的直接子级。</span><span class="sxs-lookup"><span data-stu-id="14767-111">Absolute positioned elements must be direct children of the `body` element.</span></span> <span data-ttu-id="14767-112">不是绝对定位的 `div`、`img` 或 `object` 元素正文的任何直接子级都将被呈现为绝对定位 `_default` div 内的静态内容。</span><span class="sxs-lookup"><span data-stu-id="14767-112">Any direct children of the body that aren't absolute positioned `div`, `img`, or `object` elements are rendered as static content inside the absolute positioned `_default` div.</span></span>
+- <span data-ttu-id="6faf5-111">绝对定位的元素必须是 `body` 元素的直接子级。</span><span class="sxs-lookup"><span data-stu-id="6faf5-111">Absolute positioned elements must be direct children of the `body` element.</span></span> <span data-ttu-id="6faf5-112">不是绝对定位的 `div`、`img` 或 `object` 元素正文的任何直接子级都将被呈现为绝对定位 `_default` div 内的静态内容。</span><span class="sxs-lookup"><span data-stu-id="6faf5-112">Any direct children of the body that aren't absolute positioned `div`, `img`, or `object` elements are rendered as static content inside the absolute positioned `_default` div.</span></span>
 
-- <span data-ttu-id="14767-113">绝对定位元素位于其指定的顶部和左侧坐标，与页面左上角（在标题区域上方）的 0:0 起始位置相关。</span><span class="sxs-lookup"><span data-stu-id="14767-113">Absolute positioned elements are positioned at their specified top and left coordinates, relative to the 0:0 starting position at the top, left corner of the page above the title area.</span></span>
+- <span data-ttu-id="6faf5-113">绝对定位元素位于其指定的顶部和左侧坐标，与页面左上角（在标题区域上方）的 0:0 起始位置相关。</span><span class="sxs-lookup"><span data-stu-id="6faf5-113">Absolute positioned elements are positioned at their specified top and left coordinates, relative to the 0:0 starting position at the top, left corner of the page above the title area.</span></span>
 
-- <span data-ttu-id="14767-114">如果绝对定位的元素省略了顶部或左侧坐标，则缺少的坐标将被设置为其默认值：`top:120px` 或 `left:48px`。</span><span class="sxs-lookup"><span data-stu-id="14767-114">If an absolute positioned element omits the top or left coordinate, the missing coordinate is set to its default value: `top:120px` or `left:48px`.</span></span> <span data-ttu-id="14767-115">这些默认坐标指定标题区域正下方的位置。</span><span class="sxs-lookup"><span data-stu-id="14767-115">These default coordinates specify a position just below the title area.</span></span> <span data-ttu-id="14767-116">请注意，省略坐标可能会导致元素彼此相互堆叠。</span><span class="sxs-lookup"><span data-stu-id="14767-116">Be aware that omitting coordinates can result in elements that are stacked on top of each other.</span></span>
+- <span data-ttu-id="6faf5-114">如果绝对定位的元素省略了顶部或左侧坐标，则缺少的坐标将被设置为其默认值：`top:120px` 或 `left:48px`。</span><span class="sxs-lookup"><span data-stu-id="6faf5-114">If an absolute positioned element omits the top or left coordinate, the missing coordinate is set to its default value: `top:120px` or `left:48px`.</span></span> <span data-ttu-id="6faf5-115">这些默认坐标指定标题区域正下方的位置。</span><span class="sxs-lookup"><span data-stu-id="6faf5-115">These default coordinates specify a position just below the title area.</span></span> <span data-ttu-id="6faf5-116">请注意，省略坐标可能会导致元素彼此相互堆叠。</span><span class="sxs-lookup"><span data-stu-id="6faf5-116">Be aware that omitting coordinates can result in elements that are stacked on top of each other.</span></span>
 
-- <span data-ttu-id="14767-117">绝对定位元素无法进行嵌套或无法包含定位的元素。</span><span class="sxs-lookup"><span data-stu-id="14767-117">Absolute positioned elements cannot be nested or contain positioned elements.</span></span> <span data-ttu-id="14767-118">API 忽略在绝对定位的 div 中嵌套元素上指定的任何位置设置，在绝对定位的父 div 中呈现此嵌套内容，并在响应中返回 **api.diagnostics** 属性中的警告。</span><span class="sxs-lookup"><span data-stu-id="14767-118">The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.</span></span>
+- <span data-ttu-id="6faf5-117">绝对定位元素无法进行嵌套或无法包含定位的元素。</span><span class="sxs-lookup"><span data-stu-id="6faf5-117">Absolute positioned elements cannot be nested or contain positioned elements.</span></span> <span data-ttu-id="6faf5-118">API 忽略在绝对定位的 div 中嵌套元素上指定的任何位置设置，在绝对定位的父 div 中呈现此嵌套内容，并在响应中返回 **api.diagnostics** 属性中的警告。</span><span class="sxs-lookup"><span data-stu-id="6faf5-118">The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.</span></span>
 
 
-### <a name="example"></a><span data-ttu-id="14767-119">示例</span><span class="sxs-lookup"><span data-stu-id="14767-119">Example</span></span>
+### <a name="example"></a><span data-ttu-id="6faf5-119">示例</span><span class="sxs-lookup"><span data-stu-id="6faf5-119">Example</span></span>
 
-<span data-ttu-id="14767-120">下面的示例包含直接 `p` 子级、绝对定位的 div 和非绝对定位的 div。</span><span class="sxs-lookup"><span data-stu-id="14767-120">The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.</span></span>
+<span data-ttu-id="6faf5-120">下面的示例包含直接 `p` 子级、绝对定位的 div 和非绝对定位的 div。</span><span class="sxs-lookup"><span data-stu-id="6faf5-120">The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.</span></span>
 
-#### <a name="input-html"></a><span data-ttu-id="14767-121">输入 HTML</span><span class="sxs-lookup"><span data-stu-id="14767-121">Input HTML</span></span>  
+#### <a name="input-html"></a><span data-ttu-id="6faf5-121">输入 HTML</span><span class="sxs-lookup"><span data-stu-id="6faf5-121">Input HTML</span></span>  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -54,9 +54,9 @@ ms.locfileid: "32560928"
    </body>
    ```
 
-<span data-ttu-id="14767-p105">API 在默认 div 中呈现非绝对定位 div。请注意，嵌套的 `<div>` 标记遭放弃，因为它们不定义任何语义信息（如 `data-id`）。</span><span class="sxs-lookup"><span data-stu-id="14767-p105">The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).</span></span>
+<span data-ttu-id="6faf5-p105">API 在默认 div 中呈现非绝对定位 div。请注意，嵌套的 `<div>` 标记遭放弃，因为它们不定义任何语义信息（如 `data-id`）。</span><span class="sxs-lookup"><span data-stu-id="6faf5-p105">The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).</span></span>
 
-#### <a name="output-html"></a><span data-ttu-id="14767-124">输出 HTML</span><span class="sxs-lookup"><span data-stu-id="14767-124">Output HTML</span></span> 
+#### <a name="output-html"></a><span data-ttu-id="6faf5-124">输出 HTML</span><span class="sxs-lookup"><span data-stu-id="6faf5-124">Output HTML</span></span> 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -70,12 +70,12 @@ ms.locfileid: "32560928"
    </body>
    ```
 
-### <a name="example"></a><span data-ttu-id="14767-125">示例</span><span class="sxs-lookup"><span data-stu-id="14767-125">Example</span></span>
+### <a name="example"></a><span data-ttu-id="6faf5-125">示例</span><span class="sxs-lookup"><span data-stu-id="6faf5-125">Example</span></span>
 
-<span data-ttu-id="14767-126">以下示例创建包含一个绝对定位的 div 和一个绝对定位的图像的页面。</span><span class="sxs-lookup"><span data-stu-id="14767-126">The following example creates a page that contains one absolute positioned div and one absolute positioned image.</span></span>
+<span data-ttu-id="6faf5-126">以下示例创建包含一个绝对定位的 div 和一个绝对定位的图像的页面。</span><span class="sxs-lookup"><span data-stu-id="6faf5-126">The following example creates a page that contains one absolute positioned div and one absolute positioned image.</span></span>
 
 
-#### <a name="input-html"></a><span data-ttu-id="14767-127">输入 HTML</span><span class="sxs-lookup"><span data-stu-id="14767-127">Input HTML</span></span>  
+#### <a name="input-html"></a><span data-ttu-id="6faf5-127">输入 HTML</span><span class="sxs-lookup"><span data-stu-id="6faf5-127">Input HTML</span></span>  
 
 ```html 
 <html>
@@ -85,86 +85,86 @@ ms.locfileid: "32560928"
     <body data-absolute-enabled="true">
         <div style="position:absolute;width:280px;top:120px;left:68px">
             <p>Some text</p>
-            <img style="width:120px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+            <img style="width:120px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
             <div>
                 <p>More text inside a regular, nested div</p>
             </div>
         </div>
-        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
     </body>
 </html>
 ```
  
-<span data-ttu-id="14767-128">OneNote API 评估输入 HTML 并保留所有语义内容和受 OneNote 支持的任何结构信息。</span><span class="sxs-lookup"><span data-stu-id="14767-128">The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote.</span></span> <span data-ttu-id="14767-129">呈现结果页面，如以下图像所示（但不呈现 div 和图像的可见边框）。</span><span class="sxs-lookup"><span data-stu-id="14767-129">The resulting page renders as shown in the following image (but without the visible borders for the div and image).</span></span> 
+<span data-ttu-id="6faf5-128">OneNote API 评估输入 HTML 并保留所有语义内容和受 OneNote 支持的任何结构信息。</span><span class="sxs-lookup"><span data-stu-id="6faf5-128">The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote.</span></span> <span data-ttu-id="6faf5-129">呈现结果页面，如以下图像所示（但不呈现 div 和图像的可见边框）。</span><span class="sxs-lookup"><span data-stu-id="6faf5-129">The resulting page renders as shown in the following image (but without the visible borders for the div and image).</span></span> 
 
 ![含有绝对定位的 div 和图像的结果页面](images/abs-pos.png)
 
-<span data-ttu-id="14767-131">请注意，对来自输入 HTML 的非贡献嵌套 div 所做的更改。</span><span class="sxs-lookup"><span data-stu-id="14767-131">Notice the changes to the non-contributing, nested div from the input HTML.</span></span> <span data-ttu-id="14767-132">API 保留 div 的内容，但丢弃 `<div>` 标记，因为 div 无法定义语义信息（如 `data-id`）。</span><span class="sxs-lookup"><span data-stu-id="14767-132">The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).</span></span>
+<span data-ttu-id="6faf5-131">请注意，对来自输入 HTML 的非贡献嵌套 div 所做的更改。</span><span class="sxs-lookup"><span data-stu-id="6faf5-131">Notice the changes to the non-contributing, nested div from the input HTML.</span></span> <span data-ttu-id="6faf5-132">API 保留 div 的内容，但丢弃 `<div>` 标记，因为 div 无法定义语义信息（如 `data-id`）。</span><span class="sxs-lookup"><span data-stu-id="6faf5-132">The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).</span></span>
 
-<span data-ttu-id="14767-133">有关 OneNote API 如何处理输入和输出 HTML 的详细信息，请参阅 [OneNote 页面的输入和输出 HTML](onenote-input-output-html.md)。</span><span class="sxs-lookup"><span data-stu-id="14767-133">For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote-input-output-html.md).</span></span>
+<span data-ttu-id="6faf5-133">有关 OneNote API 如何处理输入和输出 HTML 的详细信息，请参阅 [OneNote 页面的输入和输出 HTML](onenote-input-output-html.md)。</span><span class="sxs-lookup"><span data-stu-id="6faf5-133">For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote-input-output-html.md).</span></span>
 
 <a name="style-attributes"></a>
 
-## <a name="supported-css-style-attributes"></a><span data-ttu-id="14767-134">受支持的 CSS 样式属性</span><span class="sxs-lookup"><span data-stu-id="14767-134">Supported CSS style attributes</span></span>
+## <a name="supported-css-style-attributes"></a><span data-ttu-id="6faf5-134">受支持的 CSS 样式属性</span><span class="sxs-lookup"><span data-stu-id="6faf5-134">Supported CSS style attributes</span></span>
 
-<span data-ttu-id="14767-135">所有绝对定位的元素都可以指定顶部和左侧位置。</span><span class="sxs-lookup"><span data-stu-id="14767-135">All absolute positioned elements can specify top and left positions.</span></span> <span data-ttu-id="14767-136">div 和图像可以指定宽度，并且图像还可以指定高度。</span><span class="sxs-lookup"><span data-stu-id="14767-136">Divs and images can specify width, and images can also specify height.</span></span> <span data-ttu-id="14767-137">例如：</span><span class="sxs-lookup"><span data-stu-id="14767-137">For example:</span></span>
+<span data-ttu-id="6faf5-135">所有绝对定位的元素都可以指定顶部和左侧位置。</span><span class="sxs-lookup"><span data-stu-id="6faf5-135">All absolute positioned elements can specify top and left positions.</span></span> <span data-ttu-id="6faf5-136">div 和图像可以指定宽度，并且图像还可以指定高度。</span><span class="sxs-lookup"><span data-stu-id="6faf5-136">Divs and images can specify width, and images can also specify height.</span></span> <span data-ttu-id="6faf5-137">例如：</span><span class="sxs-lookup"><span data-stu-id="6faf5-137">For example:</span></span>
 
 ```html
 <img style="position:absolute;top:140px;left:95px;width:480px;height:665px" src="..." />
 ```
 
-| <span data-ttu-id="14767-138">属性</span><span class="sxs-lookup"><span data-stu-id="14767-138">Attribute</span></span> | <span data-ttu-id="14767-139">支持的元素</span><span class="sxs-lookup"><span data-stu-id="14767-139">Supported element</span></span> | <span data-ttu-id="14767-140">说明</span><span class="sxs-lookup"><span data-stu-id="14767-140">Description</span></span> |  
+| <span data-ttu-id="6faf5-138">属性</span><span class="sxs-lookup"><span data-stu-id="6faf5-138">Attribute</span></span> | <span data-ttu-id="6faf5-139">支持的元素</span><span class="sxs-lookup"><span data-stu-id="6faf5-139">Supported element</span></span> | <span data-ttu-id="6faf5-140">说明</span><span class="sxs-lookup"><span data-stu-id="6faf5-140">Description</span></span> |  
 |:------|:------|:------|  
-| <span data-ttu-id="14767-141">top</span><span class="sxs-lookup"><span data-stu-id="14767-141">top</span></span> | <span data-ttu-id="14767-142">div, img, object</span><span class="sxs-lookup"><span data-stu-id="14767-142">div, img, object</span></span> | <span data-ttu-id="14767-143">仅以像素为单位的元素顶部边框的 y 轴坐标。</span><span class="sxs-lookup"><span data-stu-id="14767-143">The y-axis coordinate of the element's top border, in pixels only.</span></span> <span data-ttu-id="14767-144">默认值为 120 个像素。</span><span class="sxs-lookup"><span data-stu-id="14767-144">Default is 120 pixels.</span></span><br/><br/><span data-ttu-id="14767-145">示例：`top:140px`</span><span class="sxs-lookup"><span data-stu-id="14767-145">Example: `top:140px`</span></span> |  
-| <span data-ttu-id="14767-146">left</span><span class="sxs-lookup"><span data-stu-id="14767-146">left</span></span> |  <span data-ttu-id="14767-147">div, img, object</span><span class="sxs-lookup"><span data-stu-id="14767-147">div, img, object</span></span>  | <span data-ttu-id="14767-148">仅以像素为单位的元素左边框的 x 轴坐标。</span><span class="sxs-lookup"><span data-stu-id="14767-148">The x-axis coordinate of the element's left border, in pixels only.</span></span> <span data-ttu-id="14767-149">默认值为 48 个像素。</span><span class="sxs-lookup"><span data-stu-id="14767-149">Default is 48 pixels.</span></span><br/><br/><span data-ttu-id="14767-150">示例：`left:95px`</span><span class="sxs-lookup"><span data-stu-id="14767-150">Example: `left:95px`</span></span> |  
-| <span data-ttu-id="14767-151">width</span><span class="sxs-lookup"><span data-stu-id="14767-151">width</span></span> |  <span data-ttu-id="14767-152">div, img</span><span class="sxs-lookup"><span data-stu-id="14767-152">div, img</span></span>  | <span data-ttu-id="14767-153">仅以像素为单位的元素的宽度。</span><span class="sxs-lookup"><span data-stu-id="14767-153">The width of the element, in pixels only.</span></span><br/><br/><span data-ttu-id="14767-154">示例：`width:480px`</span><span class="sxs-lookup"><span data-stu-id="14767-154">Example: `width:480px`</span></span> |  
-| <span data-ttu-id="14767-155">height</span><span class="sxs-lookup"><span data-stu-id="14767-155">height</span></span> | <span data-ttu-id="14767-156">img</span><span class="sxs-lookup"><span data-stu-id="14767-156">img</span></span> | <span data-ttu-id="14767-157">仅以像素为单位的元素的高度。</span><span class="sxs-lookup"><span data-stu-id="14767-157">The height of the element, in pixels only.</span></span> <span data-ttu-id="14767-158">对于 div，高度是在运行时计算的，且任何指定的高度值都将被忽略。</span><span class="sxs-lookup"><span data-stu-id="14767-158">For divs, height is calculated at runtime and any specified height value is ignored.</span></span><br/><br/><span data-ttu-id="14767-159">示例：`height:665px`</span><span class="sxs-lookup"><span data-stu-id="14767-159">Example: `height:665px`</span></span> |  
+| <span data-ttu-id="6faf5-141">top</span><span class="sxs-lookup"><span data-stu-id="6faf5-141">top</span></span> | <span data-ttu-id="6faf5-142">div, img, object</span><span class="sxs-lookup"><span data-stu-id="6faf5-142">div, img, object</span></span> | <span data-ttu-id="6faf5-143">仅以像素为单位的元素顶部边框的 y 轴坐标。</span><span class="sxs-lookup"><span data-stu-id="6faf5-143">The y-axis coordinate of the element's top border, in pixels only.</span></span> <span data-ttu-id="6faf5-144">默认值为 120 个像素。</span><span class="sxs-lookup"><span data-stu-id="6faf5-144">Default is 120 pixels.</span></span><br/><br/><span data-ttu-id="6faf5-145">示例：`top:140px`</span><span class="sxs-lookup"><span data-stu-id="6faf5-145">Example: `top:140px`</span></span> |  
+| <span data-ttu-id="6faf5-146">left</span><span class="sxs-lookup"><span data-stu-id="6faf5-146">left</span></span> |  <span data-ttu-id="6faf5-147">div, img, object</span><span class="sxs-lookup"><span data-stu-id="6faf5-147">div, img, object</span></span>  | <span data-ttu-id="6faf5-148">仅以像素为单位的元素左边框的 x 轴坐标。</span><span class="sxs-lookup"><span data-stu-id="6faf5-148">The x-axis coordinate of the element's left border, in pixels only.</span></span> <span data-ttu-id="6faf5-149">默认值为 48 个像素。</span><span class="sxs-lookup"><span data-stu-id="6faf5-149">Default is 48 pixels.</span></span><br/><br/><span data-ttu-id="6faf5-150">示例：`left:95px`</span><span class="sxs-lookup"><span data-stu-id="6faf5-150">Example: `left:95px`</span></span> |  
+| <span data-ttu-id="6faf5-151">width</span><span class="sxs-lookup"><span data-stu-id="6faf5-151">width</span></span> |  <span data-ttu-id="6faf5-152">div, img</span><span class="sxs-lookup"><span data-stu-id="6faf5-152">div, img</span></span>  | <span data-ttu-id="6faf5-153">仅以像素为单位的元素的宽度。</span><span class="sxs-lookup"><span data-stu-id="6faf5-153">The width of the element, in pixels only.</span></span><br/><br/><span data-ttu-id="6faf5-154">示例：`width:480px`</span><span class="sxs-lookup"><span data-stu-id="6faf5-154">Example: `width:480px`</span></span> |  
+| <span data-ttu-id="6faf5-155">height</span><span class="sxs-lookup"><span data-stu-id="6faf5-155">height</span></span> | <span data-ttu-id="6faf5-156">img</span><span class="sxs-lookup"><span data-stu-id="6faf5-156">img</span></span> | <span data-ttu-id="6faf5-157">仅以像素为单位的元素的高度。</span><span class="sxs-lookup"><span data-stu-id="6faf5-157">The height of the element, in pixels only.</span></span> <span data-ttu-id="6faf5-158">对于 div，高度是在运行时计算的，且任何指定的高度值都将被忽略。</span><span class="sxs-lookup"><span data-stu-id="6faf5-158">For divs, height is calculated at runtime and any specified height value is ignored.</span></span><br/><br/><span data-ttu-id="6faf5-159">示例：`height:665px`</span><span class="sxs-lookup"><span data-stu-id="6faf5-159">Example: `height:665px`</span></span> |  
  
-<span data-ttu-id="14767-160">其他位置属性（如 `z-index`）都将被忽略。</span><span class="sxs-lookup"><span data-stu-id="14767-160">Other position attributes, such as `z-index`, are ignored.</span></span> <span data-ttu-id="14767-161">绝对定位的图像可以使用 `data-render-src` 或 `src` 属性。</span><span class="sxs-lookup"><span data-stu-id="14767-161">Absolute positioned images can use either the `data-render-src` or `src` attribute.</span></span>
+<span data-ttu-id="6faf5-160">其他位置属性（如 `z-index`）都将被忽略。</span><span class="sxs-lookup"><span data-stu-id="6faf5-160">Other position attributes, such as `z-index`, are ignored.</span></span> <span data-ttu-id="6faf5-161">绝对定位的图像可以使用 `data-render-src` 或 `src` 属性。</span><span class="sxs-lookup"><span data-stu-id="6faf5-161">Absolute positioned images can use either the `data-render-src` or `src` attribute.</span></span>
 
 
 <a name="request-response-info"></a>
 
-## <a name="response-information"></a><span data-ttu-id="14767-162">响应信息</span><span class="sxs-lookup"><span data-stu-id="14767-162">Response information</span></span>
+## <a name="response-information"></a><span data-ttu-id="6faf5-162">响应信息</span><span class="sxs-lookup"><span data-stu-id="6faf5-162">Response information</span></span>
 
-<span data-ttu-id="14767-163">OneNote API 在响应中返回以下信息。</span><span class="sxs-lookup"><span data-stu-id="14767-163">The OneNote API returns the following information in the response.</span></span>
+<span data-ttu-id="6faf5-163">OneNote API 在响应中返回以下信息。</span><span class="sxs-lookup"><span data-stu-id="6faf5-163">The OneNote API returns the following information in the response.</span></span>
 
-| <span data-ttu-id="14767-164">响应数据</span><span class="sxs-lookup"><span data-stu-id="14767-164">Response data</span></span> | <span data-ttu-id="14767-165">说明</span><span class="sxs-lookup"><span data-stu-id="14767-165">Description</span></span> |  
+| <span data-ttu-id="6faf5-164">响应数据</span><span class="sxs-lookup"><span data-stu-id="6faf5-164">Response data</span></span> | <span data-ttu-id="6faf5-165">说明</span><span class="sxs-lookup"><span data-stu-id="6faf5-165">Description</span></span> |  
 |:------|:------|  
-| <span data-ttu-id="14767-166">成功代码</span><span class="sxs-lookup"><span data-stu-id="14767-166">Success code</span></span> | <span data-ttu-id="14767-167">成功的 POST 请求的 HTTP 状态代码为 201，成功的 PATCH 请求的 HTTP 状态代码为 204。</span><span class="sxs-lookup"><span data-stu-id="14767-167">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
-| <span data-ttu-id="14767-168">错误</span><span class="sxs-lookup"><span data-stu-id="14767-168">Errors</span></span> | <span data-ttu-id="14767-169">请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。</span><span class="sxs-lookup"><span data-stu-id="14767-169">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
+| <span data-ttu-id="6faf5-166">成功代码</span><span class="sxs-lookup"><span data-stu-id="6faf5-166">Success code</span></span> | <span data-ttu-id="6faf5-167">成功的 POST 请求的 HTTP 状态代码为 201，成功的 PATCH 请求的 HTTP 状态代码为 204。</span><span class="sxs-lookup"><span data-stu-id="6faf5-167">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
+| <span data-ttu-id="6faf5-168">错误</span><span class="sxs-lookup"><span data-stu-id="6faf5-168">Errors</span></span> | <span data-ttu-id="6faf5-169">请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。</span><span class="sxs-lookup"><span data-stu-id="6faf5-169">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
   
 
 
 <a name="permissions"></a>
 
-## <a name="permissions"></a><span data-ttu-id="14767-170">权限</span><span class="sxs-lookup"><span data-stu-id="14767-170">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6faf5-170">权限</span><span class="sxs-lookup"><span data-stu-id="6faf5-170">Permissions</span></span>
 
-<span data-ttu-id="14767-171">若要创建或更新 OneNote 页面，需要请求相应的权限。</span><span class="sxs-lookup"><span data-stu-id="14767-171">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="14767-172">选择应用运行所需的最低级别的权限。</span><span class="sxs-lookup"><span data-stu-id="14767-172">Choose the lowest level of permissions that your app needs to do its work.</span></span>
+<span data-ttu-id="6faf5-171">若要创建或更新 OneNote 页面，需要请求相应的权限。</span><span class="sxs-lookup"><span data-stu-id="6faf5-171">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="6faf5-172">选择应用运行所需的最低级别的权限。</span><span class="sxs-lookup"><span data-stu-id="6faf5-172">Choose the lowest level of permissions that your app needs to do its work.</span></span>
 
-#### <a name="permissions-for-post-pages"></a><span data-ttu-id="14767-173">POST 页面的权限</span><span class="sxs-lookup"><span data-stu-id="14767-173">Permissions for POST pages</span></span> 
+#### <a name="permissions-for-post-pages"></a><span data-ttu-id="6faf5-173">POST 页面的权限</span><span class="sxs-lookup"><span data-stu-id="6faf5-173">Permissions for POST pages</span></span> 
 
-- <span data-ttu-id="14767-174">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="14767-174">Notes.Create</span></span>
-- <span data-ttu-id="14767-175">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="14767-175">Notes.ReadWrite</span></span>
-- <span data-ttu-id="14767-176">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14767-176">Notes.ReadWrite.All</span></span>  
+- <span data-ttu-id="6faf5-174">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="6faf5-174">Notes.Create</span></span>
+- <span data-ttu-id="6faf5-175">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6faf5-175">Notes.ReadWrite</span></span>
+- <span data-ttu-id="6faf5-176">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6faf5-176">Notes.ReadWrite.All</span></span>  
 
 
-#### <a name="permissions-for-patch-pages"></a><span data-ttu-id="14767-177">PATCH 页面的权限</span><span class="sxs-lookup"><span data-stu-id="14767-177">Permissions for PATCH pages</span></span> 
+#### <a name="permissions-for-patch-pages"></a><span data-ttu-id="6faf5-177">PATCH 页面的权限</span><span class="sxs-lookup"><span data-stu-id="6faf5-177">Permissions for PATCH pages</span></span> 
 
-- <span data-ttu-id="14767-178">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="14767-178">Notes.ReadWrite</span></span>
-- <span data-ttu-id="14767-179">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14767-179">Notes.ReadWrite.All</span></span>
+- <span data-ttu-id="6faf5-178">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6faf5-178">Notes.ReadWrite</span></span>
+- <span data-ttu-id="6faf5-179">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6faf5-179">Notes.ReadWrite.All</span></span>
 
-<span data-ttu-id="14767-180">有关权限范围及其工作方式的详细信息，请参阅 [OneNote 权限范围](permissions-reference.md#notes-permissions)。</span><span class="sxs-lookup"><span data-stu-id="14767-180">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).</span></span>
+<span data-ttu-id="6faf5-180">有关权限范围及其工作方式的详细信息，请参阅 [OneNote 权限范围](permissions-reference.md#notes-permissions)。</span><span class="sxs-lookup"><span data-stu-id="6faf5-180">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).</span></span>
 
 
 <a name="see-also"></a>
 
-## <a name="see-also"></a><span data-ttu-id="14767-181">另请参阅</span><span class="sxs-lookup"><span data-stu-id="14767-181">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6faf5-181">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6faf5-181">See also</span></span>
 
-- [<span data-ttu-id="14767-182">创建 OneNote 页</span><span class="sxs-lookup"><span data-stu-id="14767-182">Create OneNote pages</span></span>](onenote-create-page.md)
-- [<span data-ttu-id="14767-183">更新 OneNote 页内容</span><span class="sxs-lookup"><span data-stu-id="14767-183">Update OneNote page content</span></span>](onenote-update-page.md)
-- [<span data-ttu-id="14767-184">与 OneNote 集成</span><span class="sxs-lookup"><span data-stu-id="14767-184">Integrate with OneNote</span></span>](integrate-with-onenote.md)
-- [<span data-ttu-id="14767-185">OneNote 开发者博客</span><span class="sxs-lookup"><span data-stu-id="14767-185">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [<span data-ttu-id="14767-186">关于 Stack Overflow 的 OneNote 开发问题</span><span class="sxs-lookup"><span data-stu-id="14767-186">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [<span data-ttu-id="14767-187">OneNote GitHub 存储库</span><span class="sxs-lookup"><span data-stu-id="14767-187">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [<span data-ttu-id="6faf5-182">创建 OneNote 页</span><span class="sxs-lookup"><span data-stu-id="6faf5-182">Create OneNote pages</span></span>](onenote-create-page.md)
+- [<span data-ttu-id="6faf5-183">更新 OneNote 页内容</span><span class="sxs-lookup"><span data-stu-id="6faf5-183">Update OneNote page content</span></span>](onenote-update-page.md)
+- [<span data-ttu-id="6faf5-184">与 OneNote 集成</span><span class="sxs-lookup"><span data-stu-id="6faf5-184">Integrate with OneNote</span></span>](integrate-with-onenote.md)
+- [<span data-ttu-id="6faf5-185">OneNote 开发者博客</span><span class="sxs-lookup"><span data-stu-id="6faf5-185">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [<span data-ttu-id="6faf5-186">关于 Stack Overflow 的 OneNote 开发问题</span><span class="sxs-lookup"><span data-stu-id="6faf5-186">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [<span data-ttu-id="6faf5-187">OneNote GitHub 存储库</span><span class="sxs-lookup"><span data-stu-id="6faf5-187">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

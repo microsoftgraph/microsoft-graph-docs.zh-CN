@@ -138,9 +138,12 @@ items:
       - name: Financials（预览版）
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
-      - name: 身份和访问控制
+      - name: 身份和访问
         href: azuread-identity-access-management-concept-overview.md
-        displayName: 'Azure AD, Microsoft identity platform'
+        displaName: 'Azure AD, Microsoft identity platform'
+        items:
+          - name: 信息保护
+            href: information-protection-overview.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
@@ -223,8 +226,28 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
-      - name: 报表
+      - name: 报告
         href: reportroot-concept-overview.md
+      - name: 搜索（预览版）
+        items:
+          - name: 概述
+            href: search-concept-overview.md
+          - name: 查询
+            items:
+              - name: 搜索邮件
+                href: search-concept-messages.md
+              - name: 搜索事件
+                href: search-concept-events.md
+              - name: 搜索文件
+                href: search-concept-files.md
+              - name: 搜索连接器
+                href: search-concept-custom-types.md
+          - name: 索引
+            items:
+              - name: 管理连接
+                href: search-index-manage-connections.md
+              - name: 管理项目
+                href: search-index-manage-items.md
       - name: 安全性
         items:
           - name: 概述
@@ -240,7 +263,7 @@ items:
       - name: 网站和列表
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: 社交和工作场所智能
+      - name: 人员和工作场所智能
         items:
           - name: 概述
             href: social-intel-concept-overview.md
