@@ -5,60 +5,60 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e99b1c20ce4666c945016190b7952b67b5c47fdb
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838763"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968991"
 ---
-# <a name="create-call"></a><span data-ttu-id="77436-103">创建调用</span><span class="sxs-lookup"><span data-stu-id="77436-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="f5ca3-103">创建调用</span><span class="sxs-lookup"><span data-stu-id="f5ca3-103">Create call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="77436-104">"创建[呼叫](../resources/call.md)" 使你的 bot 能够创建新的传出呼叫或加入现有会议。</span><span class="sxs-lookup"><span data-stu-id="77436-104">Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting.</span></span> <span data-ttu-id="77436-105">你需要[注册呼叫机器人](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。</span><span class="sxs-lookup"><span data-stu-id="77436-105">You will need to [register the calling bot](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.</span></span>
+<span data-ttu-id="f5ca3-104">"创建[呼叫](../resources/call.md)" 使你的 bot 能够创建新的传出呼叫或加入现有会议。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-104">Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting.</span></span> <span data-ttu-id="f5ca3-105">你需要[注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-105">You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="77436-106">权限</span><span class="sxs-lookup"><span data-stu-id="77436-106">Permissions</span></span>
-<span data-ttu-id="77436-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。</span><span class="sxs-lookup"><span data-stu-id="77436-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5ca3-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="f5ca3-106">Permissions</span></span>
+<span data-ttu-id="f5ca3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span></span>
 
-| <span data-ttu-id="77436-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="77436-109">Permission type</span></span>                        | <span data-ttu-id="77436-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="77436-110">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="f5ca3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f5ca3-109">Permission type</span></span>                        | <span data-ttu-id="f5ca3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f5ca3-110">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="77436-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="77436-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="77436-112">不支持</span><span class="sxs-lookup"><span data-stu-id="77436-112">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="77436-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="77436-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77436-114">不支持</span><span class="sxs-lookup"><span data-stu-id="77436-114">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="77436-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="77436-115">Application</span></span>                            | <span data-ttu-id="77436-116">JoinGroupCallsasGuest、JoinGroupCalls、calls、InitiateGroupCalls、All、和。</span><span class="sxs-lookup"><span data-stu-id="77436-116">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="f5ca3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f5ca3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f5ca3-112">不支持</span><span class="sxs-lookup"><span data-stu-id="f5ca3-112">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="f5ca3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f5ca3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5ca3-114">不支持</span><span class="sxs-lookup"><span data-stu-id="f5ca3-114">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="f5ca3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f5ca3-115">Application</span></span>                            | <span data-ttu-id="f5ca3-116">JoinGroupCallsasGuest、JoinGroupCalls、calls、InitiateGroupCalls、All、和。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-116">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="77436-117">**注意：** 此外，对于具有应用托管媒体的呼叫，您需要 AccessMedia 权限。</span><span class="sxs-lookup"><span data-stu-id="77436-117">**Note:** In addition, for a call with app hosted media, you need the Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="f5ca3-117">**注意：** 此外，对于具有应用托管媒体的呼叫，您需要 AccessMedia 权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-117">**Note:** In addition, for a call with app hosted media, you need the Calls.AccessMedia.All permission.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="77436-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="77436-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5ca3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="77436-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="77436-119">Request headers</span></span>
-| <span data-ttu-id="77436-120">名称</span><span class="sxs-lookup"><span data-stu-id="77436-120">Name</span></span>          | <span data-ttu-id="77436-121">说明</span><span class="sxs-lookup"><span data-stu-id="77436-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="f5ca3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f5ca3-119">Request headers</span></span>
+| <span data-ttu-id="f5ca3-120">名称</span><span class="sxs-lookup"><span data-stu-id="f5ca3-120">Name</span></span>          | <span data-ttu-id="f5ca3-121">说明</span><span class="sxs-lookup"><span data-stu-id="f5ca3-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="77436-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="77436-122">Authorization</span></span> | <span data-ttu-id="77436-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="77436-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f5ca3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5ca3-122">Authorization</span></span> | <span data-ttu-id="f5ca3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="77436-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="77436-125">Request body</span></span>
-<span data-ttu-id="77436-126">在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="77436-126">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5ca3-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="f5ca3-125">Request body</span></span>
+<span data-ttu-id="f5ca3-126">在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-126">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-> <span data-ttu-id="77436-127">**注意：** 在`Server generated` `app/calls`处理`POST`时，被标记为的属性将被忽略。</span><span class="sxs-lookup"><span data-stu-id="77436-127">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
+> <span data-ttu-id="f5ca3-127">**注意：** 在`Server generated` `app/calls`处理`POST`时，被标记为的属性将被忽略。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-127">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="77436-128">响应</span><span class="sxs-lookup"><span data-stu-id="77436-128">Response</span></span>
-<span data-ttu-id="77436-129">如果成功，此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。</span><span class="sxs-lookup"><span data-stu-id="77436-129">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f5ca3-128">响应</span><span class="sxs-lookup"><span data-stu-id="f5ca3-128">Response</span></span>
+<span data-ttu-id="f5ca3-129">如果成功，此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-129">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="77436-130">示例</span><span class="sxs-lookup"><span data-stu-id="77436-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f5ca3-130">示例</span><span class="sxs-lookup"><span data-stu-id="f5ca3-130">Examples</span></span>
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="77436-131">使用服务托管媒体创建对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="77436-131">Create peer to peer VOIP call with service hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="f5ca3-131">使用服务托管媒体创建对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="f5ca3-131">Create peer to peer VOIP call with service hosted media</span></span>
 
-> <span data-ttu-id="77436-132">**注意：** 此调用需要调用. Initiate。 All 权限。</span><span class="sxs-lookup"><span data-stu-id="77436-132">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="f5ca3-132">**注意：** 此调用需要调用. Initiate。 All 权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-132">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77436-133">请求</span><span class="sxs-lookup"><span data-stu-id="77436-133">Request</span></span>
-<span data-ttu-id="77436-134">以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。</span><span class="sxs-lookup"><span data-stu-id="77436-134">The following example shows the request which makes a peer to peer call between the bot and the specified user.</span></span> <span data-ttu-id="77436-135">在此示例中，媒体由服务托管。</span><span class="sxs-lookup"><span data-stu-id="77436-135">In this example the media is hosted by the service.</span></span> <span data-ttu-id="77436-136">必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="77436-136">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5ca3-133">请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-133">Request</span></span>
+<span data-ttu-id="f5ca3-134">以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-134">The following example shows the request which makes a peer to peer call between the bot and the specified user.</span></span> <span data-ttu-id="f5ca3-135">在此示例中，媒体由服务托管。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-135">In this example the media is hosted by the service.</span></span> <span data-ttu-id="f5ca3-136">必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-136">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="77436-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="77436-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f5ca3-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5ca3-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-from-application"
@@ -92,24 +92,24 @@ Authorization: Bearer <Token>
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="77436-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77436-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f5ca3-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5ca3-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="77436-139">C#</span><span class="sxs-lookup"><span data-stu-id="77436-139">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f5ca3-139">C#</span><span class="sxs-lookup"><span data-stu-id="f5ca3-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="77436-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="77436-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f5ca3-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5ca3-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="77436-141">响应</span><span class="sxs-lookup"><span data-stu-id="77436-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f5ca3-141">响应</span><span class="sxs-lookup"><span data-stu-id="f5ca3-141">Response</span></span>
 
-> <span data-ttu-id="77436-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="77436-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f5ca3-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -191,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="77436-144">通知-建立</span><span class="sxs-lookup"><span data-stu-id="77436-144">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="f5ca3-144">通知-建立</span><span class="sxs-lookup"><span data-stu-id="f5ca3-144">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -221,7 +221,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="77436-145">已建立通知</span><span class="sxs-lookup"><span data-stu-id="77436-145">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="f5ca3-145">已建立通知</span><span class="sxs-lookup"><span data-stu-id="f5ca3-145">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -254,12 +254,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="77436-146">使用应用程序托管媒体创建对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="77436-146">Create peer to peer VOIP call with application hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="f5ca3-146">使用应用程序托管媒体创建对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="f5ca3-146">Create peer to peer VOIP call with application hosted media</span></span>
 
-> <span data-ttu-id="77436-147">注意：需要调用. Initiate. All 和 AccessMedia 权限。</span><span class="sxs-lookup"><span data-stu-id="77436-147">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="f5ca3-147">注意：需要调用. Initiate. All 和 AccessMedia 权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-147">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77436-148">请求</span><span class="sxs-lookup"><span data-stu-id="77436-148">Request</span></span>
-<span data-ttu-id="77436-149">以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。</span><span class="sxs-lookup"><span data-stu-id="77436-149">The following example shows the request which makes a peer to peer call between the bot and the specified user.</span></span> <span data-ttu-id="77436-150">在此示例中，媒体由应用程序本地承载。</span><span class="sxs-lookup"><span data-stu-id="77436-150">In this example the media is hosted locally by the application.</span></span> <span data-ttu-id="77436-151">必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="77436-151">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5ca3-148">请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-148">Request</span></span>
+<span data-ttu-id="f5ca3-149">以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-149">The following example shows the request which makes a peer to peer call between the bot and the specified user.</span></span> <span data-ttu-id="f5ca3-150">在此示例中，媒体由应用程序本地承载。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-150">In this example the media is hosted locally by the application.</span></span> <span data-ttu-id="f5ca3-151">必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-151">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -297,23 +297,23 @@ Authorization: Bearer <Token>
   }
 }
 ```
-<span data-ttu-id="77436-152">`<Media Session Configuration>`是序列化的媒体会话配置，其中包含媒体堆栈的会话信息。</span><span class="sxs-lookup"><span data-stu-id="77436-152">`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack.</span></span> <span data-ttu-id="77436-153">应在此处传递有关音频、视频、VBSS ssession 信息的特定信息。</span><span class="sxs-lookup"><span data-stu-id="77436-153">Specific information about audio, video, VBSS ssession information should be passed here.</span></span>
+<span data-ttu-id="f5ca3-152">`<Media Session Configuration>`是序列化的媒体会话配置，其中包含媒体堆栈的会话信息。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-152">`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack.</span></span> <span data-ttu-id="f5ca3-153">应在此处传递有关音频、视频、VBSS ssession 信息的特定信息。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-153">Specific information about audio, video, VBSS ssession information should be passed here.</span></span>
 
-<span data-ttu-id="77436-154">示例音频媒体会话 blob 如下所示</span><span class="sxs-lookup"><span data-stu-id="77436-154">Sample audio media session blob is shown below</span></span>
+<span data-ttu-id="f5ca3-154">示例音频媒体会话 blob 如下所示</span><span class="sxs-lookup"><span data-stu-id="f5ca3-154">Sample audio media session blob is shown below</span></span>
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
-><span data-ttu-id="77436-155">**注意：** 对于点对点呼叫，预期的通知仅适用于呼叫状态更改。</span><span class="sxs-lookup"><span data-stu-id="77436-155">**Note:** For peer to peer calls, the expected notifications are for call state changes only.</span></span>
+><span data-ttu-id="f5ca3-155">**注意：** 对于点对点呼叫，预期的通知仅适用于呼叫状态更改。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-155">**Note:** For peer to peer calls, the expected notifications are for call state changes only.</span></span>
 
-### <a name="join-scheduled-meeting-with-service-hosted-media"></a><span data-ttu-id="77436-156">加入服务托管媒体的计划会议</span><span class="sxs-lookup"><span data-stu-id="77436-156">Join scheduled meeting with service hosted media</span></span>
-<span data-ttu-id="77436-157">若要加入计划的会议，我们需要获取线程 id、邮件 id、组织者 id 以及在其中安排会议的租户 id。</span><span class="sxs-lookup"><span data-stu-id="77436-157">To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.</span></span>
-<span data-ttu-id="77436-158">可以从[获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。</span><span class="sxs-lookup"><span data-stu-id="77436-158">This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
+### <a name="join-scheduled-meeting-with-service-hosted-media"></a><span data-ttu-id="f5ca3-156">加入服务托管媒体的计划会议</span><span class="sxs-lookup"><span data-stu-id="f5ca3-156">Join scheduled meeting with service hosted media</span></span>
+<span data-ttu-id="f5ca3-157">若要加入计划的会议，我们需要获取线程 id、邮件 id、组织者 id 以及在其中安排会议的租户 id。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-157">To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.</span></span>
+<span data-ttu-id="f5ca3-158">可以从[获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-158">This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
 
-<span data-ttu-id="77436-159">授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="77436-159">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
-> <span data-ttu-id="77436-160">**注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。</span><span class="sxs-lookup"><span data-stu-id="77436-160">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
+<span data-ttu-id="f5ca3-159">授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-159">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
+> <span data-ttu-id="f5ca3-160">**注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-160">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77436-161">请求</span><span class="sxs-lookup"><span data-stu-id="77436-161">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f5ca3-161">请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-161">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -365,7 +365,7 @@ Authorization: Bearer <Token>
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="77436-162">响应</span><span class="sxs-lookup"><span data-stu-id="77436-162">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f5ca3-162">响应</span><span class="sxs-lookup"><span data-stu-id="f5ca3-162">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -451,7 +451,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="77436-163">通知-建立</span><span class="sxs-lookup"><span data-stu-id="77436-163">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="f5ca3-163">通知-建立</span><span class="sxs-lookup"><span data-stu-id="f5ca3-163">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -500,7 +500,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---established"></a><span data-ttu-id="77436-164">已建立通知</span><span class="sxs-lookup"><span data-stu-id="77436-164">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="f5ca3-164">已建立通知</span><span class="sxs-lookup"><span data-stu-id="f5ca3-164">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -548,7 +548,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---roster"></a><span data-ttu-id="77436-165">通知-名单</span><span class="sxs-lookup"><span data-stu-id="77436-165">Notification - Roster</span></span>
+##### <a name="notification---roster"></a><span data-ttu-id="f5ca3-165">通知-名单</span><span class="sxs-lookup"><span data-stu-id="f5ca3-165">Notification - Roster</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -644,10 +644,10 @@ Content-Type: application/json
 }
 ```
 
-><span data-ttu-id="77436-166">**注意：** 除了呼叫状态通知之外，对于加入会议方案，我们会收到名单通知。</span><span class="sxs-lookup"><span data-stu-id="77436-166">**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.</span></span>
+><span data-ttu-id="f5ca3-166">**注意：** 除了呼叫状态通知之外，对于加入会议方案，我们会收到名单通知。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-166">**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.</span></span>
 
-### <a name="join-scheduled-meeting-with-app-hosted-media"></a><span data-ttu-id="77436-167">加入包含应用托管媒体的计划会议</span><span class="sxs-lookup"><span data-stu-id="77436-167">Join scheduled meeting with app hosted media</span></span>
-<span data-ttu-id="77436-168">若要使用应用程序托管媒体加入会议，请按照上面提供的示例中所示的[AppHostedMediaConfig](../resources/apphostedmediaconfig.md)更新媒体配置。</span><span class="sxs-lookup"><span data-stu-id="77436-168">To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.</span></span>
+### <a name="join-scheduled-meeting-with-app-hosted-media"></a><span data-ttu-id="f5ca3-167">加入包含应用托管媒体的计划会议</span><span class="sxs-lookup"><span data-stu-id="f5ca3-167">Join scheduled meeting with app hosted media</span></span>
+<span data-ttu-id="f5ca3-168">若要使用应用程序托管媒体加入会议，请按照上面提供的示例中所示的[AppHostedMediaConfig](../resources/apphostedmediaconfig.md)更新媒体配置。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-168">To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -693,14 +693,14 @@ Authorization: Bearer <Token>
 ```
 
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="77436-169">加入使用服务托管媒体的渠道会议</span><span class="sxs-lookup"><span data-stu-id="77436-169">Join channel meeting with service hosted media</span></span>
-<span data-ttu-id="77436-170">频道内的会议需要特定的详细信息，例如，可以使用[获取联机会议 API](../api/onlinemeeting-get.md)获取的线程 id、messageid 和组织者详细信息。</span><span class="sxs-lookup"><span data-stu-id="77436-170">Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
+### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="f5ca3-169">加入使用服务托管媒体的渠道会议</span><span class="sxs-lookup"><span data-stu-id="f5ca3-169">Join channel meeting with service hosted media</span></span>
+<span data-ttu-id="f5ca3-170">频道内的会议需要特定的详细信息，例如，可以使用[获取联机会议 API](../api/onlinemeeting-get.md)获取的线程 id、messageid 和组织者详细信息。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-170">Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
 
-<span data-ttu-id="77436-171">授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="77436-171">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
+<span data-ttu-id="f5ca3-171">授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-171">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
 
-> <span data-ttu-id="77436-172">**注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。</span><span class="sxs-lookup"><span data-stu-id="77436-172">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
+> <span data-ttu-id="f5ca3-172">**注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-172">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77436-173">请求</span><span class="sxs-lookup"><span data-stu-id="77436-173">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f5ca3-173">请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-173">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -753,13 +753,13 @@ Authorization: Bearer <Token>
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="77436-174">以具有服务托管媒体的来宾身份加入频道会议</span><span class="sxs-lookup"><span data-stu-id="77436-174">Join channel meeting as a guest with service hosted media</span></span>
-<span data-ttu-id="77436-175">若要将渠道会议作为来宾加入，您需要创建一个来宾[标识](../resources/identityset.md)，并将其添加为加入会议请求中的呼叫源。</span><span class="sxs-lookup"><span data-stu-id="77436-175">For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.</span></span>
-<span data-ttu-id="77436-176">显示名称是您希望在会议中为您的来宾标识显示的名称。</span><span class="sxs-lookup"><span data-stu-id="77436-176">The display name is the name you want to be displayed in the meeting for your guest identity.</span></span> <span data-ttu-id="77436-177">Id 可以是标识来宾标识的唯一 id。</span><span class="sxs-lookup"><span data-stu-id="77436-177">The id may be a unique id identifying the guest identity.</span></span>
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="f5ca3-174">以具有服务托管媒体的来宾身份加入频道会议</span><span class="sxs-lookup"><span data-stu-id="f5ca3-174">Join channel meeting as a guest with service hosted media</span></span>
+<span data-ttu-id="f5ca3-175">若要将渠道会议作为来宾加入，您需要创建一个来宾[标识](../resources/identityset.md)，并将其添加为加入会议请求中的呼叫源。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-175">For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.</span></span>
+<span data-ttu-id="f5ca3-176">显示名称是您希望在会议中为您的来宾标识显示的名称。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-176">The display name is the name you want to be displayed in the meeting for your guest identity.</span></span> <span data-ttu-id="f5ca3-177">Id 可以是标识来宾标识的唯一 id。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-177">The id may be a unique id identifying the guest identity.</span></span>
 
-> <span data-ttu-id="77436-178">**注意：** 此示例需要该`Calls.JoinGroupCallsAsGuest.All`权限。</span><span class="sxs-lookup"><span data-stu-id="77436-178">**Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.</span></span>
+> <span data-ttu-id="f5ca3-178">**注意：** 此示例需要该`Calls.JoinGroupCallsAsGuest.All`权限。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-178">**Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77436-179">请求</span><span class="sxs-lookup"><span data-stu-id="77436-179">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f5ca3-179">请求</span><span class="sxs-lookup"><span data-stu-id="f5ca3-179">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -822,9 +822,9 @@ Authorization: Bearer <Token>
   }
 }
 ```
-> <span data-ttu-id="77436-180">**注意：** 来宾加入取决于会议的租户设置。</span><span class="sxs-lookup"><span data-stu-id="77436-180">**Note:** The guest join depends on the tenant settings for meeting.</span></span> <span data-ttu-id="77436-181">应用程序可能放置在等待用户承认的大厅中。</span><span class="sxs-lookup"><span data-stu-id="77436-181">The application might be put in lobby waiting to be admitted by a user.</span></span> <span data-ttu-id="77436-182">此`isInLobby`属性由属性定义</span><span class="sxs-lookup"><span data-stu-id="77436-182">This is defined by the `isInLobby` property</span></span>
+> <span data-ttu-id="f5ca3-180">**注意：** 来宾加入取决于会议的租户设置。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-180">**Note:** The guest join depends on the tenant settings for meeting.</span></span> <span data-ttu-id="f5ca3-181">应用程序可能放置在等待用户承认的大厅中。</span><span class="sxs-lookup"><span data-stu-id="f5ca3-181">The application might be put in lobby waiting to be admitted by a user.</span></span> <span data-ttu-id="f5ca3-182">此`isInLobby`属性由属性定义</span><span class="sxs-lookup"><span data-stu-id="f5ca3-182">This is defined by the `isInLobby` property</span></span>
 
-##### <a name="notification---roster"></a><span data-ttu-id="77436-183">通知-名单</span><span class="sxs-lookup"><span data-stu-id="77436-183">Notification - Roster</span></span>
+##### <a name="notification---roster"></a><span data-ttu-id="f5ca3-183">通知-名单</span><span class="sxs-lookup"><span data-stu-id="f5ca3-183">Notification - Roster</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -878,7 +878,7 @@ Content-Type: application/json
   ]
 }
 ```
-> <span data-ttu-id="77436-184">**注意：** 应用程序将不会在会议厅中收到参与者的名单，除非其获准来自会议厅</span><span class="sxs-lookup"><span data-stu-id="77436-184">**Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby</span></span>
+> <span data-ttu-id="f5ca3-184">**注意：** 应用程序将不会在会议厅中收到参与者的名单，除非其获准来自会议厅</span><span class="sxs-lookup"><span data-stu-id="f5ca3-184">**Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby</span></span>
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
