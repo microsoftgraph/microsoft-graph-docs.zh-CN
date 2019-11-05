@@ -3,14 +3,14 @@ title: '利用 Microsoft Graph 通知实现以人为中心的通知体验 '
 description: Microsoft Graph 通知平台提供了一种以人为中心的方法，让你能够应对所有设备终结点中的应用。
 localization_priority: Priority
 ms.prod: notifications
-scenarios: getting-started
+ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: 04f12c6b431fa2353d665004680cba8b0e19c209
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3bba3a668a277d919942d09fc44d7e0733a575fd
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934370"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969501"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验
 

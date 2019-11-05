@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e8da555b062576c70a849280f83f713c2a627a0
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 3feca862395b693c63f3bad60ade95d7f71645e8
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621376"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939416"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "37621376"
 
 [用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
 
-**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/zh-CN/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -67,11 +67,14 @@ ms.locfileid: "37621376"
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
+  "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",
@@ -114,11 +117,14 @@ ms.locfileid: "37621376"
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
+|isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 |isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |位置|[位置](location.md)|事件的位置。|
 |位置|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 关于与会者如何加入联机会议的详细信息。 只读。|
+|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 |onlineMeetingUrl|String|联机会议的 URL。 仅当组织者将事件指定为联机会议（如 Skype）才会设置此属性。 只读。|
 |组织者|[收件人](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
@@ -134,7 +140,7 @@ ms.locfileid: "37621376"
 |start|[DateTimeTimeZone](datetimetimezone.md)|事件的开始日期、时间和时区。 默认情况下，开始时间使用 UTC 格式。|
 |subject|String|事件的主题行文本。|
 |type|String|事件类型。 可取值为：`singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读|
-|uid|String|由不同日历间的所有事件实例共享的唯一标识符。 **注释：** 此属性与 v1.0 终结点上的[事件资源](/graph/api/resources/event?view=graph-rest-1.0)的 `iCalUid` 属性相同，但不能保证拥有相同的值。|
+|uid|字符串|日历事件的唯一标识符。 对于定期事件，Series Master 及其所有事件（包括异常）的此值均相同。 此属性将替换[事件资源](/graph/api/resources/event?view=graph-rest-1.0)中定义的当前 iCalUid 属性（对于序列中各个实例而言各不相同）。|
 |webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 > [!NOTE]
@@ -156,7 +162,7 @@ ms.locfileid: "37621376"
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) 集合|事件的 [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。 导航属性。 只读。 可为 Null。|
 |日历|[Calendar](calendar.md)|包含 event. Navigation 属性的日历。只读。|
-|extensions|[扩展](extension.md)集合|为事件定义的开放扩展集合。 可为空。|
+|extensions|[Extension](extension.md) 集合|为事件定义的开放扩展集合。可为空。|
 |实例|[Event](event.md) 集合|事件的实例。导航属性。只读。可为空。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为空。|

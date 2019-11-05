@@ -1,25 +1,32 @@
 ---
 title: 使用 Microsoft Graph 的通知 REST API
-description: 你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 只需定位要向其发送通知的用户帐户，平台即可向所有设备终结点发送通知。 将通过委派权限和[通知权限]( /graph/permissions_reference)代表用户执行通知 API 请求，这两种权限可与 Microsoft 帐户或工作或学校帐户结合使用。
+description: 你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 。
 localization_priority: Priority
-ms.prod: project-rome
+ms.prod: notifications
 doc_type: conceptualPageType
-author: ''
-ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: merzink
+ms.openlocfilehash: e48259463377e14a84c3010e229ccd31c29ec6ec
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009585"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938896"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>使用 Microsoft Graph 的通知 REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 只需定位要向其发送通知的用户帐户，平台即可向所有设备终结点发送通知。 将通过[委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)和[通知权限]( /graph/permissions_reference)代表用户执行通知 API 请求，这两种权限可与 Microsoft 帐户或工作或学校帐户结合使用。
-此类以用户为中心的通知通过[通知](../resources/projectrome-notification.md)资源标识，存储在 Microsoft Graph 中。 随后可由发布应用程序通过[客户端 SDK API](https://github.com/Microsoft/project-rome) 访问和管理。 
+你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 只需向目标用户发布通知，平台即可向注册到该用户的所有设备终结点发送通知。 高级流如下所示：
+
+1. 用户登录到你的应用程序，从而创建包含 Microsoft Graph 通知服务的订阅。 将向调用应用程序返回特定用户通知订阅 ID 或 UNSID。
+2. 应用程序将此 UNSID 发送到应用程序服务。
+3. 准备好发送通知时，应用程序服务[通过 Microsoft 标识平台进行身份验证](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow)，并通过 Microsoft Graph 通知服务发布通知，提供验证码、目标用户的 UNSID 以及通知负载。
+4. Microsoft Graph 通知服务将通知扇出至具有活动订阅的用户的所有终结点。  
+
+此类以用户为中心的通知通过 [](../resources/projectrome-notification.md) 资源标识，存储在 Microsoft Graph 通知服务中。 随后可由客户端应用程序通过[客户端 SDK API](https://aka.ms/GNSDK) 访问和管理。 若不熟悉 Microsoft Graph 通知服务，请查看[通知概述](https://docs.microsoft.com/graph/notifications-concept-overview)部分了解详细信息。    
+
 
 ## <a name="next-steps"></a>后续步骤
 - 请参阅[通知资源](../resources/projectrome-notification.md)并创建通知，以与用户交互。 
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
-- 按照[集成概述](/graph/notifications-integration-e2e-overview)中列出的步骤开始客户端集成。
+- 按照[集成概述](/graph/notifications-integration-e2e-overview)主题中的步骤开始客户端集成。

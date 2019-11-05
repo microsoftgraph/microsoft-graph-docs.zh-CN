@@ -1,22 +1,22 @@
 ---
-title: 使用 Microsoft Graph API 在应用中集成社交和工作区智能
-description: Microsoft Graph 让用户能够访问有用的社交和工作区数据，还支持用户社交上下文中的社交手势。
+title: 使用 Microsoft Graph API 在应用中集成人员和工作区智能
+description: Microsoft Graph 让用户能够访问有用的人员和工作区数据，还支持用户社交上下文中的社交手势。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: f87f3032f58475eed95507b4e436735e5c484fc4
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450667"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939360"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成社交和工作区智能
+# <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 让用户能够访问社交和工作区数据，还支持用户社交上下文中的手势。
+Microsoft Graph 让用户能够访问人员和工作区数据，还支持用户社交上下文中的手势。
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>聚合并提取有关人员的特定信息
 
@@ -62,3 +62,9 @@ Include the next sentence when supporting events.
   - [获取邮件中的每个提及的详细信息](../api/message-get.md#request-2)
 
 - [删除邮件中的提及](../api/message-delete.md#request-2)
+
+## <a name="help-users-contextualize-others-in-their-organization"></a>帮助用户将组织内的其他用户置于上下文中考虑
+
+若要将组织内的其他人员置于上下文中考虑，通常会查看人员的个人资料或个人资料卡片。 
+
+[profile](../resources/profile.md) 资源是关于租户内人员的信息的丰富源，提供了用于存储和检索人员信息的轻型机制。 
