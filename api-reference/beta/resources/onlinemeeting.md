@@ -3,51 +3,59 @@ title: onlineMeeting 资源类型
 description: 捕获有关会议的信息，包括联接 URL、与会者列表和说明。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: microsoft-cloud communications
 doc_type: resourcePageType
-ms.openlocfilehash: 611731673d932d6c5135c0115d735e4d642b1bfe
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5cc62c4caa564aa071ffc6b206d5494814b0cb53
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792784"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969799"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-捕获有关会议的信息，包括联接 URL、与会者列表和说明。
+包含有关会议的信息，包括联接 URL、与会者列表和说明。
 
 ## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 onlineMeeting 对象的属性和关系。 |
+| [创建 onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
+| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 
 | 属性                  | 类型                                                   | 说明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | 控制联机会议的许可的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown`。 |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | 表示 onlineMeeting 的电话访问信息。 |
-| canceledDateTime          | 日期时间                                               | 取消会议的时间。 |
-| chatInfo                  | [chatInfo](chatinfo.md)                                | 与此会议关联的聊天。 |
-| creationDateTime          | 日期时间                                               | 会议的创建时间。 只读。
-| endDateTime               | 日期时间                                               | 会议的结束时间。 |
-| entryExitAnnouncement     | Boolean                                                | 联机会议的出席通知状态。 启用出席通知后，联机会议将通知通过音频加入会议的参与者的姓名。 |
-| expirationDateTime        | 日期时间                                               | 可在其后删除联机会议的绝对协调通用时间（UTC）日期和时间。 日期和时间必须在服务器上的当前日期和时间之后的一年前一年和之后10年。 |
-| id                        | 字符串                                                 | 与联机会议相关联的 ID。 在 GET HTTP 请求中用作 ID。 只读。 由服务器生成。 |
-| isCancelled               | Boolean                                                | 会议是否已被取消。 |
-| joinUrl                   | String                                                 | 从 web 加入联机会议时使用的 URL。 |
-| meetingType               | String                                                 | 可能的值为`meetNow`： `scheduled`、 `recurring`、 `broadcast` 、（注意： [create onlineMeeting](../api/application-post-onlinemeetings.md)仅`meetNow`支持）。 |
+| autoAdmittedUsers         | String                                                 | 指定将自动允许加入联机会议的参与者类型的设置。 只读。 可能的值为`everyone`： `everyoneInSameAndFederatedCompany`、 `everyoneInCompany`、 `invitedUsersInCompany`、`organizer`|
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | 联机会议的电话访问（拨入）信息。 只读。 |
+| canceledDateTime          | 日期时间                                               | 取消会议时的 UTC 时间（以 UTC 为单位）。 只读。 |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
+| creationDateTime          | 日期时间                                               | 以 UTC 表示的会议创建时间。 只读。 |
+| startDateTime             | 日期时间                                               | 以 UTC 表示的会议开始时间。 |
+| endDateTime               | 日期时间                                               | 以 UTC 表示的会议结束时间。 |
+| id                        | 字符串                                                 | 与联机会议关联的默认 ID。 只读。 |
+| isCanceled                | Boolean                                                | 指示是否已取消会议。 只读。 |
+| joinUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
+| isBroadcast               | Boolean                                                | 用于确定是否为广播会议的标志。 |
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime             | 日期时间                                               | 会议的开始时间。 |
 | subject                   | String                                                 | 联机会议的主题。 |
 | capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
-| videoTeleconferenceId     | String                                                 | 视频电话会议 id。 |
+| videoTeleconferenceId     | String                                                 | Videio 电话会议 ID。 只读。 |
+
+### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
+| 值 | Description  |
+| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认。  |
+| invitedUsersInCompany | 会议组织者和组织者邀请的同一家公司中的用户直接加入会议。  其他人在大厅等待，直到被许可。  |
+| everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。 联合匿名用户在大厅等待，直到被许可。  |
+| everyoneInSameAndFederatedCompany |  与组织者和联合公司在同一公司中的所有人都直接加入会议。  匿名用户在大厅等待，直到被许可。  |
+| 成员 | 允许任何用户。 任何人（包括匿名用户）都可以直接加入会议，而无需在会议厅中等待。  |
 
 ## <a name="relationships"></a>关系
-无
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -62,18 +70,16 @@ ms.locfileid: "36792784"
 }-->
 ```json
 {
-  "accessLevel": "everyone | invited | locked | sameEnterprise",
+  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCancelled": false,
+  "isCanceled": false,
   "joinUrl": "String",
-  "meetingType": "meetNow | scheduled | recurring | broadcast",
+  "isBroadcast": false,
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
@@ -81,3 +87,13 @@ ms.locfileid: "36792784"
   "videoTeleconferenceId": "String"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "onlineMeeting resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

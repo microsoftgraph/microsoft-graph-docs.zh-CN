@@ -5,22 +5,22 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e99b1c20ce4666c945016190b7952b67b5c47fdb
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838763"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968991"
 ---
 # <a name="create-call"></a>创建调用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"创建[呼叫](../resources/call.md)" 使你的 bot 能够创建新的传出呼叫或加入现有会议。 你需要[注册呼叫机器人](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。
+"创建[呼叫](../resources/call.md)" 使你的 bot 能够创建新的传出呼叫或加入现有会议。 你需要[注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。
 
 
-## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -58,7 +58,7 @@ POST /app/calls
 ##### <a name="request"></a>请求
 以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。 在此示例中，媒体由服务托管。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-from-application"
@@ -100,7 +100,7 @@ Authorization: Bearer <Token>
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
