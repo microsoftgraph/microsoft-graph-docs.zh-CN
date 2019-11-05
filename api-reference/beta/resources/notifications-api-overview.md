@@ -1,25 +1,32 @@
 ---
 title: 使用 Microsoft Graph 的通知 REST API
-description: 你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 只需定位要向其发送通知的用户帐户，平台即可向所有设备终结点发送通知。 将通过委派权限和[通知权限]( /graph/permissions_reference)代表用户执行通知 API 请求，这两种权限可与 Microsoft 帐户或工作或学校帐户结合使用。
+description: 你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 。
 localization_priority: Priority
-ms.prod: project-rome
+ms.prod: notifications
 doc_type: conceptualPageType
-author: ''
-ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: merzink
+ms.openlocfilehash: e48259463377e14a84c3010e229ccd31c29ec6ec
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009585"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938896"
 ---
-# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a><span data-ttu-id="15db9-105">使用 Microsoft Graph 的通知 REST API</span><span class="sxs-lookup"><span data-stu-id="15db9-105">Use the notifications REST API in Microsoft Graph</span></span>
+# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a><span data-ttu-id="3d433-104">使用 Microsoft Graph 的通知 REST API</span><span class="sxs-lookup"><span data-stu-id="3d433-104">Use the notifications REST API in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15db9-106">你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。</span><span class="sxs-lookup"><span data-stu-id="15db9-106">You can use the notifications API in Microsoft Graph to send push notifications to a user.</span></span> <span data-ttu-id="15db9-107">只需定位要向其发送通知的用户帐户，平台即可向所有设备终结点发送通知。</span><span class="sxs-lookup"><span data-stu-id="15db9-107">Simply target a user account to send a notification to, and the platform will deliver the notification to all device endpoints.</span></span> <span data-ttu-id="15db9-108">将通过[委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)和[通知权限]( /graph/permissions_reference)代表用户执行通知 API 请求，这两种权限可与 Microsoft 帐户或工作或学校帐户结合使用。</span><span class="sxs-lookup"><span data-stu-id="15db9-108">Notifications API requests are performed on behalf of a user via [delegated permissions](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) and the [notification permission]( /graph/permissions_reference), which can be used with either Microsoft accounts or work or school accounts.</span></span>
-<span data-ttu-id="15db9-109">此类以用户为中心的通知通过[通知](../resources/projectrome-notification.md)资源标识，存储在 Microsoft Graph 中。</span><span class="sxs-lookup"><span data-stu-id="15db9-109">This type of user-centric notification is represented by the [notification](../resources/projectrome-notification.md) resource and is stored in Microsoft Graph.</span></span> <span data-ttu-id="15db9-110">随后可由发布应用程序通过[客户端 SDK API](https://github.com/Microsoft/project-rome) 访问和管理。</span><span class="sxs-lookup"><span data-stu-id="15db9-110">It can then be accessed and managed by the publishing app via the [Project Rome SDK APIs](https://github.com/Microsoft/project-rome).</span></span> 
+<span data-ttu-id="3d433-105">你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。</span><span class="sxs-lookup"><span data-stu-id="3d433-105">You can use the notifications API in Microsoft Graph to send push notifications to a user.</span></span> <span data-ttu-id="3d433-106">只需向目标用户发布通知，平台即可向注册到该用户的所有设备终结点发送通知。</span><span class="sxs-lookup"><span data-stu-id="3d433-106">Simply post a notification to your target user, and the platform will deliver the notification to all device endpoints registered to that user.</span></span> <span data-ttu-id="3d433-107">高级流如下所示：</span><span class="sxs-lookup"><span data-stu-id="3d433-107">The high-level flow is as follows:</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="15db9-111">后续步骤</span><span class="sxs-lookup"><span data-stu-id="15db9-111">Next steps</span></span>
-- <span data-ttu-id="15db9-112">请参阅[通知资源](../resources/projectrome-notification.md)并创建通知，以与用户交互。</span><span class="sxs-lookup"><span data-stu-id="15db9-112">See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users.</span></span> 
-- <span data-ttu-id="15db9-113">在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。</span><span class="sxs-lookup"><span data-stu-id="15db9-113">Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-- <span data-ttu-id="15db9-114">按照[集成概述](/graph/notifications-integration-e2e-overview)中列出的步骤开始客户端集成。</span><span class="sxs-lookup"><span data-stu-id="15db9-114">Get started with client integration, following the steps outlined in the [integration overview](/graph/notifications-integration-e2e-overview).</span></span>
+1. <span data-ttu-id="3d433-108">用户登录到你的应用程序，从而创建包含 Microsoft Graph 通知服务的订阅。</span><span class="sxs-lookup"><span data-stu-id="3d433-108">User signs in to your application, which creates a subscription with the Microsoft Graph notification service.</span></span> <span data-ttu-id="3d433-109">将向调用应用程序返回特定用户通知订阅 ID 或 UNSID。</span><span class="sxs-lookup"><span data-stu-id="3d433-109">A specific user notification subscription ID or UNSID will be returned to the calling application.</span></span>
+2. <span data-ttu-id="3d433-110">应用程序将此 UNSID 发送到应用程序服务。</span><span class="sxs-lookup"><span data-stu-id="3d433-110">The application sends this UNSID to your application service.</span></span>
+3. <span data-ttu-id="3d433-111">准备好发送通知时，应用程序服务[通过 Microsoft 标识平台进行身份验证](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow)，并通过 Microsoft Graph 通知服务发布通知，提供验证码、目标用户的 UNSID 以及通知负载。</span><span class="sxs-lookup"><span data-stu-id="3d433-111">When ready to send a notification, your application service [authenticates with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow) and posts a notification via the Microsoft Graph notification service, providing the auth token, target user's UNSID, and notification payload.</span></span>
+4. <span data-ttu-id="3d433-112">Microsoft Graph 通知服务将通知扇出至具有活动订阅的用户的所有终结点。</span><span class="sxs-lookup"><span data-stu-id="3d433-112">The Microsoft Graph notification service fans-out notifications to all endpoints of the user with an active subscription.</span></span>  
+
+<span data-ttu-id="3d433-113">此类以用户为中心的通知通过 [](../resources/projectrome-notification.md) 资源标识，存储在 Microsoft Graph 通知服务中。</span><span class="sxs-lookup"><span data-stu-id="3d433-113">This type of user-centric notification is represented by the [notification](../resources/projectrome-notification.md) resource and is stored in Microsoft Graph.</span></span> <span data-ttu-id="3d433-114">随后可由客户端应用程序通过[客户端 SDK API](https://aka.ms/GNSDK) 访问和管理。</span><span class="sxs-lookup"><span data-stu-id="3d433-114">It can then be accessed and managed by the publishing app via the [client side SDK APIs](https://aka.ms/GNSDK).</span></span> <span data-ttu-id="3d433-115">若不熟悉 Microsoft Graph 通知服务，请查看[通知概述](https://docs.microsoft.com/graph/notifications-concept-overview)部分了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="3d433-115">If you're new to the Microsoft Graph notification service, check out the [notification overview](https://docs.microsoft.com/graph/notifications-concept-overview) section to learn more.</span></span>    
+
+
+## <a name="next-steps"></a><span data-ttu-id="3d433-116">后续步骤</span><span class="sxs-lookup"><span data-stu-id="3d433-116">Next steps</span></span>
+- <span data-ttu-id="3d433-117">请参阅[通知资源](../resources/projectrome-notification.md)并创建通知，以与用户交互。</span><span class="sxs-lookup"><span data-stu-id="3d433-117">See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users.</span></span> 
+- <span data-ttu-id="3d433-118">在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。</span><span class="sxs-lookup"><span data-stu-id="3d433-118">Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+- <span data-ttu-id="3d433-119">按照[集成概述](/graph/notifications-integration-e2e-overview)主题中的步骤开始客户端集成。</span><span class="sxs-lookup"><span data-stu-id="3d433-119">Get started with client integration, following the steps outlined in the [integration overview](/graph/notifications-integration-e2e-overview).</span></span>
