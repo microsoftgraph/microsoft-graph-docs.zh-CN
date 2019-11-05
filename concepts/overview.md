@@ -3,13 +3,13 @@ title: Microsoft Graph 概述
 description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。 Microsoft Graph 提供了统一的可编程性模型，通过该模型可利用 Office 365、企业移动性 + 安全性和 Windows 10 中的大量数据。
 author: angelgolfer-ms
 localization_priority: Priority
-scenarios: getting-started
-ms.openlocfilehash: 576393f0f273f4ed030df5ad8fa51367b1bb4716
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 9e00e45af4c429385fcb109a0017b2f986d95034
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792476"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969240"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -22,13 +22,13 @@ Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供
 在 Microsoft 365 平台中，这三大组件让数据访问和传输变得轻松：
 
 - Microsoft Graph API 提供了单个终结点 `https://graph.microsoft.com`，它让你能够访问作为 Microsoft 365 服务资源公开的、以人为中心的丰富数据和见解。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、安全性、标识、访问和设备管理等场景的应用。
+- [Microsoft Graph 连接器（预览版）](/microsoftsearch/connectors-overview)在传入的方向上工作，将 Microsoft 云外部的数据传递到 Microsoft Graph 服务和应用程序，以增强 Microsoft 搜索等 Microsoft 365 体验。
 - [Microsoft Graph 数据连接](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect)提供了一组工具，让你能向热门的 Azure 数据存储安全、可扩展性地交付 Microsoft Graph 数据。 此缓存数据充当 Azure 开发工具的数据源，可用于构建智能应用程序。
-- Microsoft Graph 连接器（个人预览版）在数据引入方向中发挥作用，它将外部数据传输到 Microsoft Graph 服务和应用程序中，并增强自定义体验。
 
-Microsoft Graph API、数据连接和连接器（个人预览版）三者结合，可为 Microsoft 365 平台助力。 借助可访问 Microsoft Graph 数据和其他见解来获得见解和分析结果的能力，你可扩展 Microsoft 365 体验，或构建唯一而智能的应用程序。
+Microsoft Graph API、连接器（预览版）和数据连接三者结合，可为 Microsoft 365 平台助力。 借助可访问 Microsoft Graph 数据和其他见解来获得见解和分析结果的能力，你可扩展 Microsoft 365 体验，或构建唯一而智能的应用程序。
 
 > [!NOTE]
-> Microsoft Graph 连接器现为个人预览版。 仅可受邀参与预览版计划。 有关连接器的详细信息，请参阅 [Build 2019 大会：Microsoft Graph 为 Microsoft 365 平台助力](https://aka.ms/microsoftgraphbuild2019)。
+> Microsoft Graph 连接器现为预览版。 若要了解有关预览版的详细信息，请参阅[连接器预览版](https://docs.microsoft.com/MicrosoftSearch/connectors-preview)。 若要加入预览版，必须先提交 [Microsoft Graph 连接器预览版注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="whats-in-microsoft-graph"></a>Microsoft Graph 提供了哪些内容？
 
@@ -97,9 +97,15 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 |   获取我常用的项目 | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
 |   获取我的笔记 | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
+## <a name="bring-data-from-an-external-content-source-to-microsoft-graph-preview"></a>将数据从外部内容源引入 Microsoft Graph（预览版）
+
+使用 Microsoft Graph _连接器_将 Microsoft 云外部的数据引入 Microsoft Graph。 此类数据的示例可以是组织的人力资源数据库或产品目录，它们在本地托管或在公有云或私有云中托管。 
+
+Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索引并将其作为外部自定义项和文件进行存储。 编制索引后，这些项将显示在 Microsoft 搜索中，并适用于使用 [Microsoft 搜索 API](search-concept-overview.md) 的应用。
+
 ## <a name="access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect"></a>通过 Microsoft Graph 数据连接大规模地访问 Microsoft Graph 数据
 
-Microsoft Graph 数据连接提供了一套工具来大规模地访问 Microsoft Graph 上的数据，同时让管理员能够精细地同意和全面掌控其 Microsoft Graph 数据。 通过数据连接，可更轻松地将此数据传递到 Microsoft Azure。
+使用 Microsoft Graph _数据连接_大规模地访问 Microsoft Graph 上的数据，同时让管理员能够精细地同意和全面掌控其 Microsoft Graph 数据。 通过数据连接，可更轻松地将此数据传递到 Microsoft Azure。
 
 之后，可使用 Azure 工具构建能实现以下功能的智能应用：
 

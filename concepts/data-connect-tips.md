@@ -4,12 +4,12 @@ description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7c887cf6a6407937c49d4e90b0c73800b13bee57
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4ca24d2752731b2de03cedf6a36fa7ed4b231ec2
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629878"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969170"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接的相关使用提示
 
@@ -25,9 +25,9 @@ ms.locfileid: "33629878"
 
 ## <a name="data-must-stay-within-the-organizations-subscription"></a>数据必须保留在组织的订阅中。
 
-数据连接管道由 Azure 数据工厂进行安排，后者是一项在 Azure 订阅中运行的数据集成服务。 Azure 订阅[与 Office 365 租户一对一关联](https://docs.microsoft.com/zh-CN/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。 这样的话，数据一开始必须传输到关联的 Azure 订阅。 在进一步最小化和聚合后，数据可在其他位置使用。
+数据连接管道由 Azure 数据工厂进行安排，后者是一项在 Azure 订阅中运行的数据集成服务。 Azure 订阅[与 Office 365 租户一对一关联](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。 这样的话，数据一开始必须传输到关联的 Azure 订阅。 在进一步最小化和聚合后，数据可在其他位置使用。
 
-如果想要构建供其他人用来提取其 Office 365 数据的应用，可将应用打包为 [Azure 托管应用](https://docs.microsoft.com/zh-CN/azure/managed-applications/overview)，再将其发布到 Azure 市场。 之后，其他人可在其自己的 Azure 订阅中部署你的应用，而该应用也能访问其租户中的数据。 
+如果想要构建供其他人用来提取其 Office 365 数据的应用，可将应用打包为 [Azure 托管应用](https://docs.microsoft.com/azure/managed-applications/overview)，再将其发布到 Azure 市场。 之后，其他人可在其自己的 Azure 订阅中部署你的应用，而该应用也能访问其租户中的数据。 
 
 ## <a name="use-of-service-principals"></a>服务主体的使用
 

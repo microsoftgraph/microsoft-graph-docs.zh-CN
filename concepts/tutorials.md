@@ -3,12 +3,12 @@ title: Microsoft Graph 教程
 description: Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure Active Directory 身份验证并通过 Microsoft Graph 访问数据的基本应用程序。
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: ee4fcaf224852d588bdb3f2d00d326a92d3f770d
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab51d3466ba7bec1db5edac1330e468f7992bd89
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275813"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968532"
 ---
 # <a name="microsoft-graph-tutorials"></a>Microsoft Graph 教程
 
@@ -42,8 +42,8 @@ Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Mic
 以下教程重点介绍使用 Microsoft Graph 的特定场景。
 
 
-- [使用带有查询参数的 Microsoft Graph 时优化数据使用](https://docs.microsoft.com/zh-CN/learn/modules/optimize-data-usage/)
-- [使用 Microsoft Graph 优化网络流量](https://docs.microsoft.com/zh-CN/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
+- [使用带有查询参数的 Microsoft Graph 时优化数据使用](https://docs.microsoft.com/learn/modules/optimize-data-usage/)
+- [使用 Microsoft Graph 优化网络流量](https://docs.microsoft.com/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [更改通知和 Delta 查询](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>另请参阅

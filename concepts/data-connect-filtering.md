@@ -4,12 +4,12 @@ description: 介绍了如何使用 Microsoft Graph 数据连接来选择用户�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 1d558c441a626a312d0097d143d194255aaed769
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0aab5ac3806eeda54364dff6ae0b6995098da953
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629836"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969191"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持用户选择和筛选
 
@@ -44,6 +44,6 @@ ms.locfileid: "33629836"
 
 ## <a name="next-steps"></a>后续步骤 
 
-有关如何修改选择的用户以在数据连接管道中进行提取和筛选的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](https://docs.microsoft.com/zh-CN/azure/data-factory/connector-office-365)。  
+有关如何修改选择的用户以在数据连接管道中进行提取和筛选的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](https://docs.microsoft.com/azure/data-factory/connector-office-365)。  
 
   

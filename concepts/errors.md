@@ -2,12 +2,12 @@
 title: Microsoft Graph 错误响应和资源类型
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb7ce8d2d0a7836842469406768ce8a6eb81e94c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526124"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969792"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "32526124"
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 错误的请求 (Bad Request)                     | 无法处理请求，因为格式有误或者不正确。                                                                       |
 | 401         | 未经授权 (Unauthorized)                    | 资源所需的身份验证信息缺少或无效。                                                   |
-| 403         | 禁止访问 (Forbidden)                       | 对所需资源的访问遭拒。用户权限可能不足。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件性访问开发人员指南](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | 禁止访问 (Forbidden)                       | 对所需资源的访问遭拒。用户权限可能不足。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件性访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | 未找到 (Not Found)                       | 所请求的资源不存在。                                                                                                  |
 | 405         | 方法不允许 (Method Not Allowed)              | 请求中的 HTTP 方法在资源上不允许。                                                                         |
 | 406         | 不接受 (Not Acceptable)                  | 该服务不支持“Accept”标头中请求的格式。                                                                |

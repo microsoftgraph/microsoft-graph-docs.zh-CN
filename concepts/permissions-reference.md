@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 549578ccec5d58c8da9e956e05733e81113be5aa
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 80c070f1146161b82a24f1086f63d5a121c923d7
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726459"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939836"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -509,9 +509,17 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 * _EduAssignments.ReadWriteBasic_：提交登录学生的作业 (`GET /education/classes/{id}/assignments/{id}submit`)
 * _EduRoster.ReadBasic_：登录用户听讲或教授的课程 (`GET /education/classes/{id}/members`)
 
-有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="entitlement-management-permissions"></a>权利管理权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限|显示字符串|说明|需经过管理员同意|
+|:----------|:--------------|:-----------|:-------|
+|_EntitlementManagement.ReadWrite.All_|读取和写入权利管理资源|允许应用代表已登录的用户请求访问和管理访问包及相关权利管理资源。|是|
 
 ## <a name="files-permissions"></a>文件权限
 
@@ -1230,6 +1238,35 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 - _RoleManagement.ReadWrite.Directory_：将管理单元范围的成员添加到目录角色 (`POST /directoryRoles/<id>/scopedMembers`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="search-permissions"></a>搜索权限
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalItem.ReadWrite.All_ | 读取和写入外部数据 | 允许应用将外部数据写入到索引 API。 | 是 | 否 |
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用读取通过 Microsoft 搜索索引 API 引入的外部数据| 是 | 否 |
+
+### <a name="remarks"></a>注解
+搜索权限仅对工作或学校帐户有效。
+
+此搜索权限仅适用于通过索引 API 引入的数据。
+
+通过搜索访问数据需要相应的权限。 示例：_Files.Read.All_ 用于通过搜索访问文件。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="application"></a>应用程序
+
+* _ExternalItem.Read.All__：通过[搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
 
 ---
 

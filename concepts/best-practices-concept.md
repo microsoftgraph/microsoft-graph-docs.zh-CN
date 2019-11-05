@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: ca8a087b85ad5fcfc71291aa771f5f14608931b3
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 9eb52f5b2a7c2453c0e99622077c6b37de47f58c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053793"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969317"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -27,7 +27,7 @@ ms.locfileid: "37053793"
 - HTTP *授权*请求头（作为一个*持有者*令牌）
 - Graph 客户端构造函数（当使用 Microsoft Graph 客户端库时）
 
-使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
+使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
 
 ## <a name="consent-and-authorization"></a>许可和授权
 
@@ -42,8 +42,8 @@ ms.locfileid: "37053793"
 - **在配置应用时请考虑周全**。 这会直接影响最终用户和管理体验，以及应用程序的采用和安全性。 例如：
 
   - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
-  - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes)。
-  - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
+  - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)。
+  - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
 
 - **请考虑多租户应用程序**。 预期客户有不同的应用程序和不同状态的同意控件。 例如：
 

@@ -3,12 +3,12 @@ title: 将 Android 应用与用户通知客户端 SDK 相集成
 description: 将 Android 应用与用户通知客户端 SDK 相集成
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: a0c3050d7f9c644c23696d9a2071e7427b6b565d
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 69edda814508d69e47f8d70bd81df9425621aa0a
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620302"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969536"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>将 Android 应用与用户通知客户端 SDK 相集成
 
@@ -116,7 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 客户端 SDK 构建在称为“连接设备平台”的基础结构之上。 在使用任何功能之前，必须在你的应用中初始化该平台。 应该通过主类 **OnCreate** 方法执行初始化步骤，因为在通知方案发生之前必须执行这些步骤。
 
-你必须通过实例化 [**ConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
+你必须通过实例化 [**ConnectedDevicesPlatform**](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);
@@ -377,6 +377,6 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

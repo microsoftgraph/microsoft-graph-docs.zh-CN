@@ -2,12 +2,12 @@
 title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 localization_priority: Priority
-ms.openlocfilehash: 8ac36dd12feb10eb545cea80cd8d59023b6d9783
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: e2a3cd66c3d03ce5c2569449d99830865cb1810b
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778696"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968480"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
 
@@ -15,7 +15,7 @@ ms.locfileid: "35778696"
 
 ## <a name="support-policy-and-deprecation-information"></a>支持策略和弃用信息
 
-Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.com/en-us/lifecycle)。
+Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.com/lifecycle)。
 
 由于已发布新版本的 Microsoft Graph REST API 和 Microsoft Graph SDK，之前的版本将停用。Microsoft 将在停用 API 或 SDK 之前至少 24 个月声明弃用的版本。
 
@@ -45,7 +45,7 @@ Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsof
 - 更改属性的顺序
 - 更改不透明字符串（如资源 ID）的长度或格式
 
->**注意：** 随着时间的推移，我们将更新向后兼容更改的列表。如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)的[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分中描述的指导。
+>**注意：** 随着时间的推移，我们将更新向后兼容更改的列表。如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)的[模型版本控制](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分中描述的指导。
 
 ## <a name="versions"></a>版本
 

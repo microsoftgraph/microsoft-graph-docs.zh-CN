@@ -4,12 +4,12 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: fee7daae0af6ee4a1dc3d887e09acd725a37ceb8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 05f60915fc3094bd2c095747c237a10590f90b03
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629843"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969198"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持的数据集、区域和接收器
 
@@ -23,21 +23,21 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 
 |数据集名称|说明|
 |-------------|-----------|
-|BasicDataSet_v0.Contact_v0|包含每个用户的通讯录中的联系信息。 这些实体的架构类似于 [Microsoft Graph 个人联系人架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact)。| 
-|BasicDataSet_v0.Event_v0|包含每个用户的日历中的事件。 这些实体的架构类似于 [Microsoft Graph 日历事件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event)。| 
-|BasicDataSet_v0.Message_v0|包含每个用户的邮箱中的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)。| 
-|BasicDataSet_v0.SentItem_v0|包含从每个用户的邮箱中发送的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)。| 
+|BasicDataSet_v0.Contact_v0|包含每个用户的通讯录中的联系信息。 这些实体的架构类似于 [Microsoft Graph 个人联系人架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact)。| 
+|BasicDataSet_v0.Event_v0|包含每个用户的日历中的事件。 这些实体的架构类似于 [Microsoft Graph 日历事件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event)。| 
+|BasicDataSet_v0.Message_v0|包含每个用户的邮箱中的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message)。| 
+|BasicDataSet_v0.SentItem_v0|包含从每个用户的邮箱中发送的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message)。| 
 |BasicDataSet_v0.User_v0|包含用户信息（显示名称、用户主体名称等）。| 
-|BasicDataSet_v0.MailboxSettings_v0|包含每个用户的邮箱设置。 这些实体的架构对应于 [Microsoft Graph 邮箱设置架构](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0)。| 
-|BasicDataSet_v0.MailFolder_v0|包含每个用户的邮箱中的邮件文件夹。 这些实体的架构对应于 [Microsoft Graph 邮件文件夹架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/mailfolder)。|
-|BasicDataSet_v0.Manager_v0|包含每个用户的经理的用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)。|
-|BasicDataSet_v0.DirectReport_v0|包含直接向每个用户报告的员工的相关用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)。|
-|BasicDataSet_v0.CalendarView_v0|包含事件。这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/events)。|
-|BasicDataSet_v0.User_v1|此表包含用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)。|
-|BasicDataSet_v0.Contact_v1|包含每个用户的通讯录中的联系信息。 这些实体的架构对应于 [Microsoft Graph 个人联系人架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact)。|
-|BasicDataSet_v0.Event_v1|包含每个用户的日历中的事件。 这些实体的架构对应于 [Microsoft Graph 日历事件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event)。|
-|BasicDataSet_v0.Message_v1|包含每个用户的邮箱中的邮件。 这些实体的架构对应于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)。|
-|BasicDataSet_v0.SentItem_v1|包含从每个用户的邮箱中发送的邮件。 这些实体的架构对应于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)。|
+|BasicDataSet_v0.MailboxSettings_v0|包含每个用户的邮箱设置。 这些实体的架构对应于 [Microsoft Graph 邮箱设置架构](https://docs.microsoft.com/graph/api/resources/mailboxsettings?view=graph-rest-1.0)。| 
+|BasicDataSet_v0.MailFolder_v0|包含每个用户的邮箱中的邮件文件夹。 这些实体的架构对应于 [Microsoft Graph 邮件文件夹架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/mailfolder)。|
+|BasicDataSet_v0.Manager_v0|包含每个用户的经理的用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user)。|
+|BasicDataSet_v0.DirectReport_v0|包含直接向每个用户报告的员工的相关用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user)。|
+|BasicDataSet_v0.CalendarView_v0|包含事件。这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/events)。|
+|BasicDataSet_v0.User_v1|此表包含用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user)。|
+|BasicDataSet_v0.Contact_v1|包含每个用户的通讯录中的联系信息。 这些实体的架构对应于 [Microsoft Graph 个人联系人架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact)。|
+|BasicDataSet_v0.Event_v1|包含每个用户的日历中的事件。 这些实体的架构对应于 [Microsoft Graph 日历事件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event)。|
+|BasicDataSet_v0.Message_v1|包含每个用户的邮箱中的邮件。 这些实体的架构对应于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message)。|
+|BasicDataSet_v0.SentItem_v1|包含从每个用户的邮箱中发送的邮件。 这些实体的架构对应于 [Microsoft Graph 邮件架构](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message)。|
 
 ## <a name="regions"></a>区域
 
@@ -66,4 +66,4 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关如何创建数据连接管道作为 Azure 数据工厂的一部分的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](https://docs.microsoft.com/zh-CN/azure/data-factory/connector-office-365)。  
+有关如何创建数据连接管道作为 Azure 数据工厂的一部分的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](https://docs.microsoft.com/azure/data-factory/connector-office-365)。  

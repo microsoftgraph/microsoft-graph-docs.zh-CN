@@ -3,14 +3,13 @@ title: 使用 Microsoft Graph API
 description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
 author: jackson-woods
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 394252d491bf065554cedead4f39035744d0ade1
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: 0e4bba173c234201c3f3002e8917eaa74176a583
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053912"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968546"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 

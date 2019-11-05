@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: af7fa42e18fa9d90d7f6f238cfeb86bd6efe7d4c
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 920744aea38ceacffafb68a285836468ecf85834
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734491"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938700"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -16,33 +16,29 @@ ms.locfileid: "37734491"
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
-## <a name="october-2019"></a>2019 年 10 月
+## <a name="november-2019"></a>2019 年 11 月
 
-### <a name="identity-and-access-azure-ad--conditional-access"></a>身份和访问 (Azure AD) | 条件访问
+### <a name="calendar---place"></a>日历 | 位置
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | beta | 添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
-| Addition | beta | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
+| 添加项        | Beta  | 增加了[更新会议室或会议室列表](/graph/api/resources/place-get?view=graph-rest-beta)的能力|
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 添加了新实体类型：[Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
-| 添加项 | Beta | 添加了新实体类型：[Identityuserflow] (/graph/api/resources/identityuserflow?view=graph-rest beta |
-| Addition | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
-| 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
-| 添加项 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
-| 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
-| 添加 | Beta | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-beta) 实体。 |
-| 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0)。 |
-| 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0)。 |
-| 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-v1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
+| 添加项 | v1.0 | 添加了新实体类型：[应用程序](/graph/resources/application?view=graph-rest-v1.0)。
+
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 添加了[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta) 和关联的方法。 |
+
+## <a name="october-2019"></a>2019 年 10 月
 
 ### <a name="calendar"></a>日历
-
-会议组织者可以允许会议时间提议，而被邀请者可以建议备选会议时间。
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -50,6 +46,14 @@ ms.locfileid: "37734491"
 | 添加项 | Beta | 将 **proposedNewTime** 可选参数添加到 **event** 的 [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-beta) 和 [decline](/graph/api/event-decline?view=graph-rest-beta) 方法中。 |
 | 添加项 | Beta | 添加了基于 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta) 的 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) 实体，此外，还包括 **proposedNewTime** 和 **responseType** 属性。 |
 | 添加项 | Beta | 向 [attendee](/graph/api/resources/attendee?view=graph-rest-beta) 复杂类型添加了 **proposedNewTime** 属性。 |
+|添加 | Beta | 添加了新实体 [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta)。 |
+|添加 | Beta | 添加了新的复杂类型 [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-beta)。 |
+|添加 | Beta | 添加了[获取](/graph/api/calendarpermission-get?view=graph-rest-beta)、[更新](/graph/api/calendarpermission-update?view=graph-rest-beta)和[删除](/graph/api/calendarpermission-delete?view=graph-rest-beta) API 来管理[日历](/graph/api/resources/calendar?view=graph-rest-beta)上的 [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) 资源。 |
+| 添加 | Beta | 向 [event](/graph/api/resources/event?view=graph-rest-beta) 实体添加了“isOnlineMeeting”****、“onlineMeetingProvider”**** 和“onlineMeeting”**** 属性。 “isOnlineMeeting”**** 和“onlineMeetingProvider”**** 是事件**** 的[创建](/graph/api/user-post-events?view=graph-rest-beta)和[更新](/graph/api/event-update?view=graph-rest-beta)方法。 |
+| 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“defaultOnlineMeetingProviders”**** 和“allowedOnlineMeetingProviders”**** 属性。 |
+| 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“isTallyingResponses”**** 属性。 |
+| 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“isRemovable”**** 属性。 |
+| 添加 | Beta | 向 [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-beta) 实体添加了“delegateMeetingMessageDeliveryOptions”**** 属性。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -134,14 +138,61 @@ ms.locfileid: "37734491"
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
-| 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
-| 添加项 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
+| 添加项 | Beta | 添加的新实体： <br/>[authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue.md?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail.md?view=graph-rest-beta)|
+| 添加 | Beta | 向 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 资源添加了“alternateSignInName”****、“ServicePrincipalId”****、“ServicePrincipalName”**** 和“authenticationProcessingDetails”**** 属性。 |
+| 删除 | Beta | 已将 [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) 的引用从 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 移动到 [authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta)。 |
+| 添加 | Beta | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 资源添加了“signInActivity”**** 属性。 |
+| 添加 | Beta | 添加了新实体类型：[Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
+| 添加项 | Beta | 添加了新实体类型：[Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
+| 添加 | Beta | 添加了新的 [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) 资源。 |
+| 添加 | Beta | 向 [application](/graph/resources/application?view=graph-rest-beta) 资源添加了 [removePassword](/graph/api/application-removepassword?view=graph-rest-beta) 方法。 |
+| 添加 | Beta | 向 [application](/graph/resources/application?view=graph-rest-beta) 添加了“addIns”**** 属性。 |
+| 添加 | Beta | 向 [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta) 资源添加了 [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) 和 [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) 方法。 |
+| 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了“onPremisesDomainName”****、“onPremisesNetBiosName”**** 和“onPremisesSamAccountName”**** 属性。 |
+| 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
 | 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
-| 添加 | Beta | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-beta) 实体。 |
+| 添加 | Beta 和 v1.0 | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-1.0) 实体。 |
+| 添加 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
+| 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
 | 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0)。 |
 | 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0)。 |
 | 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-v1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
+
+### <a name="identity-and-access-azure-ad--conditional-access"></a>身份和访问 (Azure AD) | 条件访问
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
+| 添加 | Beta | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
+| 添加 | Beta | 添加了 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta)，这表示 Azure AD 条件访问中的已命名位置。 |
+
+### <a name="identity-and-access--information-protection"></a>身份和访问 | 信息保护
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 更改          | beta          | 已将 **detectedSensitiveContent** 实体名称更改为 [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta)。  | 
+| 删除        | beta          | 已从 [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta) 删除“displayName”****、“uniqueCount”**** 和“matches”**** 属性。  | 
+| 更改          | beta          | 已将“ID”**** 更改为 [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta) 的“sensitiveTypeId”**** 属性。   | 
+| 更改          | beta          | 已将“confidence”**** 更改为 [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta) 的“confidenceLevel”**** 属性。   | 
+| 添加        | beta          | 向 [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta)/ 添加了“count”**** 属性。  | 
+| 删除        | beta          | 从 [labelingOptions](/graph/api/resources/labelingoptions.md?view=graph-rest-beta) 删除了“actionSource”**** 属性。 | 
+| 删除        | beta          | 删除了“auditInfo”**** 实体。 | 
+| 更改          | beta          | 已将“protectByDoNotForwardAction”**** 更改为 [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction.md?view=graph-rest-beta)。 | 
+| 添加        | beta          | 向 [addContentHeaderAction](/graph/api/resources/addcontentheaderaction.md?view=graph-rest-beta) 添加了“alignment”**** 属性。 | 
+| 更改          | beta          | 已将“labelId”**** 属性更改为 [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta) 中的“label”****。 |
+| 更改          | beta          | 已将“classificationIds”**** 属性更改为 [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta) 中的“responsibleSensitivityTypeIds”****。 |
+| 添加        | beta          | 向 [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta) 添加了“actionSource”**** 属性。 |
+| 更改          | beta          | 已将“labelId”**** 属性更改为 [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta) 中的“label”****。 |
+| 更改          | beta          | 已将“classificationIds”**** 属性更改为 [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta) 中的“responsibleSensitivityTypeIds”****。 |
+| 添加        | beta          | 向 [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta) 添加了“actionSource”**** 属性。 |
+| 更改          | beta          | 已将 [contentFormat](/graph/api/resources/enums.md?view=graph-rest-beta)) 枚举值“file”**** 更改为“default”****。 | 
+| 删除        | beta          | 已从 [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) 枚举中删除“mandatory”**** 值。 |
+| 更改          | beta          | 已将 [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) 枚举值“policyDefault”**** 删除到“default”****。 |
+| 删除        | beta          | 删除了“auditMetadataKey”****。 |
+| 更改          | beta          | 已将“applyLabel”**** API 更改为 [evaluateApplication](/graph/api/informationprotectionlabel-evaluateapplication.md?view=graph-rest-beta)。 |
+| 更改          | beta          | 已将“applyLabelFromClassification”**** API 更改为 [evaluateClassificationResults](/graph/api/informationprotectionlabel-evaluateclassificationresults.md?view=graph-rest-beta)。 |
+| 更改          | beta          | 已将“removeLabel”**** API 更改为 [evaluateRemoval](/graph/api/informationprotectionlabel-evaluateremoval.md?view=graph-rest-beta). |
+| 删除        | beta          | 已从 [extractLabel](/graph/api/informationprotectionlabel-extractlabel.md?view=graph-rest-beta) 删除“auditInfo”****。 |
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
@@ -151,6 +202,26 @@ ms.locfileid: "37734491"
 | 添加项        | Beta          | [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta) 复杂类型、[attachment](/graph/api/resources/attachment?view=graph-rest-beta) 实体的 [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) 操作和 **attachmentType** 枚举。 |
 | 更改项         | Beta          | 扩展了 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 所使用的现有 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) 实体，以使其也适用于 **attachment**。 |
 | 添加项        | v1.0          | 向[即时回复消息](/graph/api/message-reply?view=graph-rest-1.0)的方法添加了 **message** 参数。 |
+
+
+### <a name="notifications"></a>通知
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项      | Beta          |已添加[创建并发送通知](/graph/api/user-post-notifications?view=graph-rest-beta) API，以便无需管理代表令牌就可启用目标用户。 |
+| 添加        | Beta          | 在 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源上引入了“targetPolicy”**** 属性，以允许通过 webpush 定位 Web 终结点。 |
+| 添加      | Beta          |  已在 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源上添加了“fallbackPolicy”**** 属性，以便为高优先级通知启用 iOS 上的保证传递。 |
+
+### <a name="search"></a>搜索
+
+Microsoft Search 现在公开了在 Microsoft Graph 中搜索和索引数据的方式。
+
+| **更改类型** | **版本** | **说明**                              |
+|:----------------|:------------|:---------------------------------------------|
+| 添加项        | beta        | 添加了构成[查询](/graph/api/resource/search-api-overview?view=graph-rest-beta)和[索引](/graph/api/resource/indexing-api-overview?view=graph-rest-beta)功能的[搜索 API](search-concept-overview.md)。 |
+| 添加        | beta        | 添加了[查询](/graph/api/search-query?view=graph-rest-beta)操作。 |
+| 添加        | beta        | 添加了 [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta)、[searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta)、[searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta)、[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta)、[searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) 和 [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta) 复杂类型。 |
+| 添加        | beta        | 添加了 [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta)、[schema](/graph/api/resource/schema?view=graph-rest-beta)[externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) 和 [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) 实体以及这些实体公开的方法。 |
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
@@ -170,12 +241,6 @@ ms.locfileid: "37734491"
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | V1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
-
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项 | beta | 已添加 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta)，这表示 Azure AD 条件访问中的已命名位置。 |
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -343,7 +408,7 @@ ms.locfileid: "37734491"
 | 添加项 | beta | 向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加了新的属性 **grade**。|
 | 添加项 | beta | 添加了新的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源。|
 | 添加项 | beta | 添加了用于管理 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) 上的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源的 API。|
-| 添加项 | beta | 添加了新的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源。|
+| 添加 | beta | 添加了新的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源。|
 | 添加项 | beta | 添加了用于管理 [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta) 上的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源的 API。|
 | 添加项 | beta | 添加了新的 [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) 资源。|
 | 添加项    | beta    | 向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加了新的属性 **grade**。 |
@@ -1168,7 +1233,7 @@ ms.locfileid: "37734491"
 |Addition|v1.0|向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0) 实体添加了 **tenantLockdownRequireNetworkDuringOutOfBoxExperience** 属性|
 |添加项|v1.0|向 [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0) 复杂类型添加了 **v12_0** 属性|
 |添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **lastReportAggregationDateTime** 属性|
-|添加项|beta|添加了新实体：<br/>[intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta)<br/>|
+|添加|beta|添加了新实体：<br/>[intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta)<br/>|
 |添加项|beta|添加了新复杂类型：<br/>[deviceAndAppManagementAssignedRoleIds](/graph/api/resources/intune-rbac-deviceandappmanagementassignedroleids?view=graph-rest-beta)<br/>|
 |添加项|beta 版本|添加了新枚举类型：<br/>[applicationGuardEnabledOptions](/graph/api/resources/intune-deviceconfig-applicationguardenabledoptions?view=graph-rest-beta)<br/>[autoRestartNotificationDismissalMethod](/graph/api/resources/intune-deviceconfig-autorestartnotificationdismissalmethod?view=graph-rest-beta)<br/>[meteredConnectionLimitType](/graph/api/resources/intune-deviceconfig-meteredconnectionlimittype?view=graph-rest-beta)<br/>|
 |添加项|beta|在 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 上添加了 [enableLegacyPcManagement](/graph/api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement?view=graph-rest-beta) 操作 |
@@ -1372,7 +1437,7 @@ ms.locfileid: "37734491"
 
 ### <a name="notifications-project-rome"></a>通知 (Project Rome)
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **Version** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项          | Beta        | 添加了 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源类型。 |
 | 添加项          | Beta        | 添加了[创建和发布通知](/graph/api/projectrome_notification_post?view=graph-rest-beta) API。|
@@ -3678,7 +3743,7 @@ ms.locfileid: "37734491"
 
 ### <a name="personal-contacts-outlook"></a>个人联系人 (Outlook)
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **Version** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 将 _wellknownname_ 添加到 **contactFolder**实体。 |
 

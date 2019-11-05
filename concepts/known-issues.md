@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
-author: ''
+author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: e981530f3efa38f49655427085267a9fc0206835
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: f11f45086994fa855714950b079b5151ce348662
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638804"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950407"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -161,6 +161,8 @@ GET /me/calendars/{id}/events
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Microsoft Teams 的 onlineMeetingUrl 属性支持
 
 目前，Skype 会议[事件](/graph/api/resources/event?view=graph-rest-1.0)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
+
+Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过**事件**的 **** 属性，可以访问 **joinUrl**。
 
 ## <a name="calls-and-online-meetings"></a>呼叫和联机会议
 

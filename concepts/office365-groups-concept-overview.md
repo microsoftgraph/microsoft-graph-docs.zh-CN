@@ -4,13 +4,13 @@ description: 'Office 365 组为用户提供了基础成员身份服务，可用�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-scenarios: getting-started
-ms.openlocfilehash: 4142110f835cb12baa35e1746a536b71fb6635ea
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 376b693df7267732112ceb5967194760d8fda145
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791034"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969522"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Office 365 组概述
 

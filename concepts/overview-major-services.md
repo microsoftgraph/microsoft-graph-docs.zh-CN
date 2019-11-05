@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: a9b3c58b3cc76f7c61300faa6309e74a8ceacd1b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d1e91d2c644c787f50535722a2d634535b4401fa
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792462"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939850"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -69,13 +69,14 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |团队合作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
 
 
-## <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
+## <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 社交智能：人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的社交和工作场所智能](social-intel-concept-overview.md) |
-| 社交智能：文档见解（预览） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的社交和工作区智能](social-intel-concept-overview.md)  |
-| 社交和工作区智能：分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的社交和工作区智能](social-intel-concept-overview.md) |
+| 人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 文档见解（预览版） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md)  |
+| 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 个人资料卡（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 
 
 ## <a name="device-management"></a>设备管理

@@ -4,12 +4,12 @@ description: 你可以使用 Visual Studio 中的连接服务配置应用，从�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c8a6336a45f6c67281c865c47e299715b5497d93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7d47af5472a7c4bff8b8fae05c0cb87cc079cc29
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560744"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969529"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Office 365 服务
 
@@ -81,7 +81,7 @@ ms.locfileid: "32560744"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) - 对当前用户进行身份验证并初始化该示例的令牌缓存。
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用你自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](https://azure.microsoft.com/zh-CN/documentation/articles/guidance-multitenant-identity-token-cache/)。
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用你自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity-token-cache/)。
 
 - Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - 实现本地 IAuthProvider 接口，并获取访问令牌。 
 

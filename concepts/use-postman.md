@@ -1,14 +1,14 @@
 ---
 title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
-author: ''
+author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 2140dec07328b75f7b1729cd3e7cf7c86e65f738
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc47befc479b2236a7bda83515cfa0b61c2601b1
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038183"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969876"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 
@@ -16,7 +16,7 @@ ms.locfileid: "36038183"
 
 ![Postman 图像](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-本文介绍了如何快速掌握 Postman 和 Microsoft Graph。 此外，还可以使用 [Graph 管理器](https://developer.microsoft.com/en-us/graph/graph-explorer)直接在 Web 浏览器中浏览 Microsoft Graph API。
+本文介绍了如何快速掌握 Postman 和 Microsoft Graph。 此外，还可以使用 [Graph 管理器](https://developer.microsoft.com/graph/graph-explorer)直接在 Web 浏览器中浏览 Microsoft Graph API。
 
 ## <a name="accessing-the-collection"></a>访问集合
 可通过以下两种方法来访问 Postman 中的集合：使用集合或参与集合。 必须先在计算机上运行 [Postman](https://www.getpostman.com/)。
@@ -72,7 +72,7 @@ ms.locfileid: "36038183"
 2. 选择“Microsoft Graph 环境”****。
 3. 依次选择右侧的**眼睛**图标和“编辑”****。
 4. 在**当前**（而不是**初始**）变量中，输入你的 Microsoft 标识应用程序：**ClientID**、**ClientSecret** 和 **TenantID**。 
- 若要详细了解如何创建应用程序，以及如何让管理员同意仅限应用的流，请参阅[使用 Postman 执行 Microsoft Graph 调用](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/)博客文章。
+ 若要详细了解如何创建应用程序，以及如何让管理员同意仅限应用的流，请参阅[使用 Postman 执行 Microsoft Graph 调用](https://developer.microsoft.com/zh-CN/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/)博客文章。
 
 5. 选择“更新”****。 关闭“管理环境”**** 对话框。 在左侧的“MicrosoftGraph v1.0 | 应用程序”**** 集合中，选择“获取仅限应用的访问令牌”****。 然后，选择右侧的“发送”****。
 6. 依次展开“应用程序 | 用户”**** 文件夹，再选择“获取用户”****。 然后，选择“发送”****。

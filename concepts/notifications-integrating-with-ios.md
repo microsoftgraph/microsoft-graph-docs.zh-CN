@@ -3,12 +3,12 @@ title: 将 iOS 应用与用户通知客户端 SDK 相集成
 description: 将 iOS 应用与用户通知客户端 SDK 相集成。
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 1e0f809e5f6acea272268b76e69e0d86cc18bff0
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: d11acc2d0c83fc6298e5c4d25aff1563ebe6c2c1
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063263"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969862"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>将 iOS 应用与用户通知客户端 SDK 相集成
 
@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 客户端 SDK 构建在称为“连接设备平台”的基础结构之上。 在使用任何功能之前，必须在你的应用中初始化该平台。 应该通过 **AppDelegate** 方法执行初始化步骤，因为在通知方案发生之前必须执行这些步骤。
 
-你必须通过实例化 [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) 类来构建并初始化该平台。 在执行此操作之前，请确保挂接事件处理程序，如图所示，因为在启动平台后，事件可能会开始触发。  
+你必须通过实例化 [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) 类来构建并初始化该平台。 在执行此操作之前，请确保挂接事件处理程序，如图所示，因为在启动平台后，事件可能会开始触发。  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -251,6 +251,6 @@ SDK 成功提取数据更改之后，将会调用事件回调且应用客户端�
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
-- 适合于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications)。
+- [API 参考](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- 适用于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

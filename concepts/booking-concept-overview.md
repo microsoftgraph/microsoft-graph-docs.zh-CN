@@ -4,13 +4,13 @@ description: Microsoft Bookings 提供了联机移动应用，可便于小型企
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: bookings
-scenarios: getting-started
-ms.openlocfilehash: 83322a2b1343e71f43cd8196ed7484e463ec6ecd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 4eba867db964ae4fddf861e60866d1d97f7891e9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792945"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969310"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 
@@ -42,6 +42,6 @@ Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客�
 
 详细了解以下信息：
 
-- [Microsoft Bookings](https://support.office.com/zh-CN/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Office 365 商业版应用](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Office 365 商业版应用](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - 在 Microsoft Graph 中[使用 Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 

@@ -4,13 +4,13 @@ description: Microsoft Graph 数据连接将 Office 365 数据引入到 Microsof
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-scenarios: getting-started
-ms.openlocfilehash: 212f530ff8e2589dcd4c913d0e4b2c7684d18f8a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: f4e365c94761a6ea77b97aaf77f93152a53d8da9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792931"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969205"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接概述
 Microsoft Graph 包含有关工作人员及其工作区的丰富数据，包括有关人员如何工作以及他们如何沟通、协作和管理时间的信息。 Microsoft Graph 数据连接提供了一套工具来简化将此据传递到 Microsoft Azure 的过程，让你能够获取最佳的开发和托管工具来处理此数据。 这使客户能够受益于创新或行业特定的应用程序，这些应用程序可以提高他们的工作效率，同时他们又可以完全掌控其 Microsoft Graph 数据。 Microsoft 不断引入客户期望的更加安全的控件。

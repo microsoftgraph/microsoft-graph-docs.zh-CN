@@ -3,12 +3,13 @@ title: '与 Microsoft Graph 通知集成 '
 description: '通知是与应用程序用户再次交互的最有效的方式之一。 可以通过几个简单的步骤将应用程序与 Microsoft Graph 通知集成。  '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 2f3a126ade92ff1615848f9f4db846aebb62d5f7
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+author: merzink
+ms.openlocfilehash: 3cbeedfae4e47ac388b60d150505e247534ee68a
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063260"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939571"
 ---
 # <a name="integrate-with-microsoft-graph-notifications"></a>与 Microsoft Graph 通知集成
 
@@ -18,8 +19,11 @@ ms.locfileid: "34063260"
 
 1.  在 Microsoft Azure 门户中[注册](notifications-integration-app-registration.md)应用程序。
 
-2.  [载入](notifications-integration-cross-device-experiences-onboarding.md)到合作伙伴中心/Windows 开发人员中心，以获取跨平台应用程序标识和推送通知凭据。
+2. [载入](notifications-integration-cross-device-experiences-onboarding.md)到合作伙伴中心/Windows 开发人员中心，以获取 Windows、iOS 和 Android 的跨平台应用程序标识和推送通知凭据。
 
 3.  [将应用程序服务器](notifications-integrating-app-server.md)设置为通过 Microsoft Graph 发送通知。
 
-4.  [将](notifications-integrating-with-windows.md) [Microsoft Graph 通知客户端 SDK](https://github.com/microsoft/project-rome) 集成到 Windows、Android 或 iOS 应用程序客户端，以接收和管理通知。
+4.  [将](notifications-integrating-with-windows.md)新的[通知客户端 SDK](https://aka.ms/GNSDK) 集成到 Windows、iOS、Android 或 Web 客户端，以接收和管理通知。
+
+> [!NOTE]
+> 我们建议使用新增和改进的轻型[通知 SDK](https://aka.ms/GNSDK)，而不是跨设备 [Project Rome SDK](https://github.com/microsoft/project-rome)。

@@ -2,12 +2,12 @@
 title: 将 Office 365 帐户与 Azure AD 相关联以创建和管理应用
 description: '若要使用 Microsoft Azure Active Directory (Azure AD) 验证应用，必须在 Azure AD 中注册应用。这也是存储 Office 365 用户帐户和应用信息的位置。必须有 Microsoft Azure 订阅，才能通过 Azure 门户管理 Azure AD。可以使用 Microsoft Azure 门户管理用户、角色和应用。 '
 localization_priority: Normal
-ms.openlocfilehash: af77e9bbe87ba3a7c92c91967c8df87a16224d99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf369f1f289c435cbd488d4c51e558d75a5e080e
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951207"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969778"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>将 Office 365 帐户与 Azure AD 关联以创建和管理应用
 
@@ -23,8 +23,8 @@ ms.locfileid: "33951207"
 
 如果您没有现成的 Office 365 商业版帐户，则可以：
 
-- 注册上面列出的 [Office 365 商业版计划](https://products.office.com/en-us/business/compare-office-365-for-business-plans)，或
-- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
+- 注册[Office 365 for business plan](https://products.office.com/business/compare-office-365-for-business-plans) 
+- [加入 office 365 开发人员计划](https://aka.ms/devprogramsignup)并获取免费的为期一年的 office 365 订阅。
 
 **Microsoft Azure 订阅**
 
@@ -93,5 +93,5 @@ ms.locfileid: "33951207"
     你现在应该可以在 Azure 订阅中看到所有项目。它列出了包含 Office 365 租户名称的目录。
 
 ## <a name="see-also"></a>另请参阅
-- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)

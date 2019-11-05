@@ -4,13 +4,13 @@ description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-scenarios: getting-started
-ms.openlocfilehash: 9ed9857ccba80c416386a9cff0d36d8e9ca0ce8f
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 5b6ec62128b969c2015c01eba1020009031f7ee9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792980"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969331"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -44,7 +44,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ### <a name="manage-devices"></a>管理设备
 
-[管理组织中注册的设备](https://docs.microsoft.com/zh-CN/azure/active-directory/device-management-introduction)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
+[管理组织中注册的设备](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
 
 ### <a name="partner-tenant-management"></a>合作伙伴租户管理
 
@@ -87,6 +87,6 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 
 - 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)。
 - 使用 Azure AD 对 Microsoft Graph [进行身份验证](/graph/auth)。
-- 将 [Azure AD 登录](https://azure.microsoft.com/zh-CN/develop/identity/signin/)集成到应用或网站中。
+- 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

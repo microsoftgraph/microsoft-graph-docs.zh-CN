@@ -3,14 +3,13 @@ title: '在应用中对 Microsoft Graph 数据进行分页 '
 description: '响应中的 odata.nextLink` 属性，其中包含下一页结果的 URL。 '
 author: piotrci
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 5ac971cbb06bcf7309e1bdf51afecd3b172ca2b8
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: ecc0975372a1defe5b2648fa1bfd0b9e4a5e30a5
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622414"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969233"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>在应用中对 Microsoft Graph 数据进行分页 
 

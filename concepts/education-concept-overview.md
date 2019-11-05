@@ -4,13 +4,13 @@ description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-scenarios: getting-started
-ms.openlocfilehash: c5d00f5940c547a1f95381144f4a2af56f3ab125
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 90e8e2342b66a7768cecbc22c6e3a1591bc06a59
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726406"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969834"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -36,7 +36,7 @@ Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情�
 
 可使用作业 API 创建 Web 应用来管理课程作业，然后在新自定义选项卡上将应用集成到 Microsoft Teams。  
 
-Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
+Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
 
 对于教育版，Microsoft Teams 自定义选项卡应用在教育课堂（团队）上下文中打开，在此环境中，管理端到端作业流（从创建和分发到评分和反馈）别具意义。 这只是有关 Microsoft Teams 如何节省时间和简化日常后勤的一个示例，以便教育工作者可以更多地将重心放在他们的学生身上。
 

@@ -4,13 +4,13 @@ description: Outlook 联系人可让你存储个人联系人的数据，并且�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-scenarios: getting-started
-ms.openlocfilehash: 10b35252e48cd115e1c043037f68d7b0a91d4df7
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: c3203292b5aef990c6a50a0063e27353b520ddaa
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792987"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969806"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 

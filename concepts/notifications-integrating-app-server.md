@@ -3,32 +3,29 @@ title: 通过应用程序服务创建和发送通知
 description: '将应用程序服务设置为通过 Microsoft Graph 向不同客户端发送以用户为中心的通知。 '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: cf40087aff3956a88f79197482db8126bbe8d96c
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+author: merzink
+ms.openlocfilehash: d430622d05337cdb00f29de316d5d5cd948e1e05
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34683508"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934349"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
 
-可以使用 Microsoft Graph API 为用户创建和发送通知。 通知存储在活动源存储中，并发送到目标用户登录的所有设备上的所有应用客户端。 
+可以使用 Microsoft Graph API 为用户创建和发送通知。 通知存储在 Microsoft Graph 通知服务中，并发送到目标用户登录的所有设备上的所有应用客户端。 
 
-## <a name="authentication"></a>身份验证
-
-Microsoft Graph 通知要求你的应用程序服务使用代表 (OBO) 流向用户发布通知。 以下是身份验证流：
-
-1.  用户使用其 Microsoft 或工作或学校帐户登录至你的应用程序。 登录时，标识服务将为你提供一个访问令牌。
-
-2.  你将此访问令牌发送至应用程序服务。
-
-3.  应用程序服务对标识服务进行身份验证，并且需要 OBO 令牌才能发送 Microsoft Graph 通知。
-
-4.  标识服务返回基于 OBO 的令牌和刷新令牌。 应用程序服务可以使用此访问令牌向用户发布通知。
-
-若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 有关此流与 Microsoft Graph 通知如何搭配使用的详细信息，请参阅[应用程序服务示例](https://aka.ms/gnsample-appservice)。
+若要向你的用户发送通知，你的应用程序服务将：
+1. 向 Microsoft 标识平台[进行身份验证](/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow)。
+2. 使用身份验证令牌将通知发布到 Microsoft Graph API，并以[用户通知订阅 ID](/graph/api/notifications-post)（创建订阅时从应用客户端获取）定位用户。
 
 > [!NOTE]
-> Microsoft Graph 通知目前使用带有未来计划的 OBO 身份验证流，以此进一步简化此身份验证，并消除维护访问令牌和刷新令牌的需要。
+> 为获得简化的身份验证故事，建议使用客户端上新的和改进的轻型[通知 SDK](https://aka.ms/GNSDK) 以及用户通知订阅 ID 来接收通知和管理通知状态。 或者，你可以通过委派权限代表用户发布通知，你的应用服务将需要维护访问令牌和刷新令牌，但不建议这样做。 若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 
 
-有关 API 权限以及请求和响应标题的更多详细信息，请参阅 API 参考部分的[创建和发送通知](/graph/api/notifications-post)。 
+
+## <a name="guaranteed-delivery-on-ios"></a>iOS 上的保证传递
+
+在如 iOS 的平台上，在特定电源条件下，原始数据通知可能由于批处理而延迟传递，或者根本无法到达目标终结点。 为了向 iOS 上的用户传递高优先级通知，Microsoft Graph 通知平台允许你指定原始到可视 toast 通知“回退”选项，该选项会自动向目标 iOS 设备发送可视 toast 通知，从而确保你的用户近实时获得通知。 若要了解如何利用回退选项，请参阅[通知资源](/graph/api/resources/projectrome-notification.md)。  
+
+## <a name="getting-started"></a>入门
+若要了解你的应用服务如何开始向你的用户发送通知，请参阅[通知](/graph/api/resources/projectrome-notification)和我们的[应用服务示例](https://aka.ms/gnsample-appservice)。

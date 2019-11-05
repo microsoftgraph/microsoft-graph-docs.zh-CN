@@ -4,13 +4,13 @@ description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-scenarios: getting-started
-ms.openlocfilehash: 7b12653382f88a3b16c370044fc3cb770aa2ac36
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 10d142195e5b3520dc47cf52b4708a104e645e2d
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792966"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969890"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
