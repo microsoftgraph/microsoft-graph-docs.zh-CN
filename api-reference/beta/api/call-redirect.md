@@ -3,273 +3,406 @@ title: 呼叫：重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: db432612507c9ebafd595350575557f52450fe4f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792263"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005923"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="65daf-103">呼叫：重定向</span><span class="sxs-lookup"><span data-stu-id="65daf-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="f0ff5-103">呼叫：重定向</span><span class="sxs-lookup"><span data-stu-id="f0ff5-103">call: redirect</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="65daf-104">重定向传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="65daf-104">Redirect an incoming call.</span></span>
+<span data-ttu-id="f0ff5-104">重定向尚未[应答](./call-answer.md)或[拒绝](./call-reject.md)的传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-104">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="f0ff5-105">术语 "重定向" 和 "转发" 可交换使用呼叫。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-105">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="65daf-105">权限</span><span class="sxs-lookup"><span data-stu-id="65daf-105">Permissions</span></span>
-<span data-ttu-id="65daf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="65daf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f0ff5-106">在呼叫超时之前，机器人应重定向呼叫。当前超时值为15秒。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-106">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-| <span data-ttu-id="65daf-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="65daf-108">Permission type</span></span> | <span data-ttu-id="65daf-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="65daf-109">Permissions (from least to most privileged)</span></span>         |
+## <a name="permissions"></a><span data-ttu-id="f0ff5-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="f0ff5-107">Permissions</span></span>
+
+<span data-ttu-id="f0ff5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="f0ff5-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f0ff5-110">Permission type</span></span> | <span data-ttu-id="f0ff5-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f0ff5-111">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="65daf-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65daf-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="65daf-111">不支持</span><span class="sxs-lookup"><span data-stu-id="65daf-111">Not Supported</span></span>                |
-| <span data-ttu-id="65daf-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="65daf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65daf-113">不支持</span><span class="sxs-lookup"><span data-stu-id="65daf-113">Not Supported</span></span>                |
-| <span data-ttu-id="65daf-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="65daf-114">Application</span></span>     | <span data-ttu-id="65daf-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="65daf-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="f0ff5-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f0ff5-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="f0ff5-113">不支持</span><span class="sxs-lookup"><span data-stu-id="f0ff5-113">Not Supported</span></span>                |
+| <span data-ttu-id="f0ff5-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f0ff5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0ff5-115">不支持</span><span class="sxs-lookup"><span data-stu-id="f0ff5-115">Not Supported</span></span>                |
+| <span data-ttu-id="f0ff5-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f0ff5-116">Application</span></span>     | <span data-ttu-id="f0ff5-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="f0ff5-117">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="65daf-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65daf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0ff5-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f0ff5-118">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/redirect
-POST /applications/{id}/calls/{id}/redirect
+POST /communications/calls/{id}/redirect
+```
+> <span data-ttu-id="f0ff5-119">**注意：**`/app`路径已被弃用。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="f0ff5-120">接下来，请使用`/communications`路径。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-120">Going forward, use the `/communications` path.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="f0ff5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="f0ff5-121">Request headers</span></span>
+
+| <span data-ttu-id="f0ff5-122">名称</span><span class="sxs-lookup"><span data-stu-id="f0ff5-122">Name</span></span>          | <span data-ttu-id="f0ff5-123">说明</span><span class="sxs-lookup"><span data-stu-id="f0ff5-123">Description</span></span>               |
+|:--------------|:--------------------------|
+| <span data-ttu-id="f0ff5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0ff5-124">Authorization</span></span> | <span data-ttu-id="f0ff5-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-p104">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="f0ff5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f0ff5-127">Request body</span></span>
+
+<span data-ttu-id="f0ff5-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-128">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="f0ff5-129">参数</span><span class="sxs-lookup"><span data-stu-id="f0ff5-129">Parameter</span></span>      | <span data-ttu-id="f0ff5-130">类型</span><span class="sxs-lookup"><span data-stu-id="f0ff5-130">Type</span></span>    |<span data-ttu-id="f0ff5-131">说明</span><span class="sxs-lookup"><span data-stu-id="f0ff5-131">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="f0ff5-132">targets</span><span class="sxs-lookup"><span data-stu-id="f0ff5-132">targets</span></span>|<span data-ttu-id="f0ff5-133">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="f0ff5-133">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="f0ff5-134">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-134">The target participants of the redirect operation.</span></span> <span data-ttu-id="f0ff5-135">如果指定了多个目标，则为同时调用。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-135">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="f0ff5-136">这意味着将同时 rang 所有目标，并且只会连接所选取的第一个目标。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-136">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="f0ff5-137">对于同时，我们最高支持25个目标。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-137">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="f0ff5-138">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="f0ff5-138">targetDisposition</span></span>|<span data-ttu-id="f0ff5-139">String</span><span class="sxs-lookup"><span data-stu-id="f0ff5-139">String</span></span>|<span data-ttu-id="f0ff5-140">被可能的值为： `default` 、 `simultaneousRing` 、 `forward`。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-140">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="f0ff5-141">此参数已弃用，我们将自动确定它是在提供的目标数量中进行前向呼叫还是同时呼叫。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-141">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
+|<span data-ttu-id="f0ff5-142">timeout</span><span class="sxs-lookup"><span data-stu-id="f0ff5-142">timeout</span></span>|<span data-ttu-id="f0ff5-143">Int32</span><span class="sxs-lookup"><span data-stu-id="f0ff5-143">Int32</span></span>|<span data-ttu-id="f0ff5-144">重定向操作的超时（以秒为单位）。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-144">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="f0ff5-145">超时值的范围介于15和90秒之间（含这两个值）。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-145">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="f0ff5-146">对于多个目标，默认超时值为55秒，为多个目标为60秒（可能会发生更改）。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-146">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="f0ff5-147">maskCallee</span><span class="sxs-lookup"><span data-stu-id="f0ff5-147">maskCallee</span></span>|<span data-ttu-id="f0ff5-148">布尔</span><span class="sxs-lookup"><span data-stu-id="f0ff5-148">Boolean</span></span>|<span data-ttu-id="f0ff5-149">指示是否要在呼叫者中隐藏被叫方。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-149">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="f0ff5-150">如果为 true，则被叫方标识为 bot 标识。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-150">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="f0ff5-151">默认值： false。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-151">Default: false.</span></span>|
+|<span data-ttu-id="f0ff5-152">maskCaller</span><span class="sxs-lookup"><span data-stu-id="f0ff5-152">maskCaller</span></span>|<span data-ttu-id="f0ff5-153">布尔</span><span class="sxs-lookup"><span data-stu-id="f0ff5-153">Boolean</span></span>|<span data-ttu-id="f0ff5-154">指示是否对被呼叫方隐藏呼叫者。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-154">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="f0ff5-155">如果为 true，则呼叫者标识为 bot 标识。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-155">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="f0ff5-156">默认值： false。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-156">Default: false.</span></span>|
+|<span data-ttu-id="f0ff5-157">callbackUri</span><span class="sxs-lookup"><span data-stu-id="f0ff5-157">callbackUri</span></span>|<span data-ttu-id="f0ff5-158">String</span><span class="sxs-lookup"><span data-stu-id="f0ff5-158">String</span></span>|<span data-ttu-id="f0ff5-159">这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-159">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="f0ff5-160">如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-160">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="f0ff5-161">这必须是`https`。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-161">This must be `https`.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="f0ff5-162">响应</span><span class="sxs-lookup"><span data-stu-id="f0ff5-162">Response</span></span>
+<span data-ttu-id="f0ff5-163">如果成功，此方法返回 `202 Accepted` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-163">If successful, this method returns a `202 Accepted` response code.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="f0ff5-164">示例</span><span class="sxs-lookup"><span data-stu-id="f0ff5-164">Examples</span></span>
+<span data-ttu-id="f0ff5-165">这些示例将涵盖传入呼叫通知的工作流以及该呼叫将如何重定向。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-165">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+
+> <span data-ttu-id="f0ff5-166">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-166">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="f0ff5-167">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f0ff5-167">All the properties will be returned from an actual call.</span></span>
+
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="f0ff5-168">示例1：将呼叫转接到目标</span><span class="sxs-lookup"><span data-stu-id="f0ff5-168">Example 1: Forward a Call to a Target</span></span>
+
+##### <a name="notification---incoming"></a><span data-ttu-id="f0ff5-169">通知传入</span><span class="sxs-lookup"><span data-stu-id="f0ff5-169">Notification - incoming</span></span>
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="65daf-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="65daf-117">Request headers</span></span>
-| <span data-ttu-id="65daf-118">名称</span><span class="sxs-lookup"><span data-stu-id="65daf-118">Name</span></span>          | <span data-ttu-id="65daf-119">说明</span><span class="sxs-lookup"><span data-stu-id="65daf-119">Description</span></span>               |
-|:--------------|:--------------------------|
-| <span data-ttu-id="65daf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="65daf-120">Authorization</span></span> | <span data-ttu-id="65daf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="65daf-p102">Bearer {token}. Required.</span></span> |
+##### <a name="request"></a><span data-ttu-id="f0ff5-170">请求</span><span class="sxs-lookup"><span data-stu-id="f0ff5-170">Request</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="65daf-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="65daf-123">Request body</span></span>
-<span data-ttu-id="65daf-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="65daf-124">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="65daf-125">参数</span><span class="sxs-lookup"><span data-stu-id="65daf-125">Parameter</span></span>      | <span data-ttu-id="65daf-126">类型</span><span class="sxs-lookup"><span data-stu-id="65daf-126">Type</span></span>    |<span data-ttu-id="65daf-127">说明</span><span class="sxs-lookup"><span data-stu-id="65daf-127">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="65daf-128">targets</span><span class="sxs-lookup"><span data-stu-id="65daf-128">targets</span></span>|<span data-ttu-id="65daf-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="65daf-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="65daf-130">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="65daf-130">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="65daf-131">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="65daf-131">targetDisposition</span></span>|<span data-ttu-id="65daf-132">String</span><span class="sxs-lookup"><span data-stu-id="65daf-132">String</span></span>|<span data-ttu-id="65daf-133">可能的值为：`default`</span><span class="sxs-lookup"><span data-stu-id="65daf-133">The possible value is: `default`</span></span>|
-|<span data-ttu-id="65daf-134">timeout</span><span class="sxs-lookup"><span data-stu-id="65daf-134">timeout</span></span>|<span data-ttu-id="65daf-135">Int32</span><span class="sxs-lookup"><span data-stu-id="65daf-135">Int32</span></span>|<span data-ttu-id="65daf-136">重定向操作的超时时间（秒）。</span><span class="sxs-lookup"><span data-stu-id="65daf-136">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="65daf-137">maskCallee</span><span class="sxs-lookup"><span data-stu-id="65daf-137">maskCallee</span></span>|<span data-ttu-id="65daf-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="65daf-138">Boolean</span></span>|<span data-ttu-id="65daf-139">指示是否屏蔽被叫方。</span><span class="sxs-lookup"><span data-stu-id="65daf-139">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="65daf-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="65daf-140">maskCaller</span></span>|<span data-ttu-id="65daf-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="65daf-141">Boolean</span></span>|<span data-ttu-id="65daf-142">指示是否屏蔽调用方。</span><span class="sxs-lookup"><span data-stu-id="65daf-142">Indicates whether to mask the caller.</span></span>|
-|<span data-ttu-id="65daf-143">callbackUri</span><span class="sxs-lookup"><span data-stu-id="65daf-143">callbackUri</span></span>|<span data-ttu-id="65daf-144">String</span><span class="sxs-lookup"><span data-stu-id="65daf-144">String</span></span>|<span data-ttu-id="65daf-145">允许 bot 提供特定的回调 URI，在此 URI 中，重定向操作的结果将被发布。</span><span class="sxs-lookup"><span data-stu-id="65daf-145">Allows bots to provide a specific callback URI where the result of the Redirect action will be posted.</span></span> <span data-ttu-id="65daf-146">这允许将结果发送到触发重定向操作的相同特定 bot 实例。</span><span class="sxs-lookup"><span data-stu-id="65daf-146">This allows sending the result to the same specific bot instance that triggered the Redirect action.</span></span> <span data-ttu-id="65daf-147">如果未提供，则将使用 bot 的全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="65daf-147">If none is provided, the bot's global callback URI will be used.</span></span>|
-
-## <a name="response"></a><span data-ttu-id="65daf-148">响应</span><span class="sxs-lookup"><span data-stu-id="65daf-148">Response</span></span>
-<span data-ttu-id="65daf-149">返回`202 Accepted`响应代码</span><span class="sxs-lookup"><span data-stu-id="65daf-149">Returns `202 Accepted` response code</span></span>
-
-## <a name="examples"></a><span data-ttu-id="65daf-150">示例</span><span class="sxs-lookup"><span data-stu-id="65daf-150">Examples</span></span>
-
-### <a name="redirect-a-call"></a><span data-ttu-id="65daf-151">重定向呼叫</span><span class="sxs-lookup"><span data-stu-id="65daf-151">Redirect a call</span></span>
-
-##### <a name="request"></a><span data-ttu-id="65daf-152">请求</span><span class="sxs-lookup"><span data-stu-id="65daf-152">Request</span></span>
-<span data-ttu-id="65daf-153">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="65daf-153">The following example shows the request.</span></span>
-
-
-# <a name="httptabhttp"></a>[<span data-ttu-id="65daf-154">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="65daf-154">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f0ff5-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0ff5-171">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "request", 
   "name": "call-redirect"
-}-->
-```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
+} -->
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
 Content-Type: application/json
-Content-Length: 515
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+        "@odata.type": "#microsoft.graph.identitySet",
+        "application": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test bot 2",
+          "id": "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 99,
-  "maskCallee": false,
-  "maskCaller": false
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="65daf-155">C#</span><span class="sxs-lookup"><span data-stu-id="65daf-155">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f0ff5-172">C#</span><span class="sxs-lookup"><span data-stu-id="f0ff5-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="65daf-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65daf-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f0ff5-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0ff5-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="65daf-157">目标-C</span><span class="sxs-lookup"><span data-stu-id="65daf-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f0ff5-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f0ff5-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### <a name="response"></a><span data-ttu-id="65daf-158">响应</span><span class="sxs-lookup"><span data-stu-id="65daf-158">Response</span></span>
-
-> <span data-ttu-id="65daf-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="65daf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f0ff5-175">响应</span><span class="sxs-lookup"><span data-stu-id="f0ff5-175">Response</span></span>
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
+##### <a name="notification---terminated"></a><span data-ttu-id="f0ff5-176">通知终止</span><span class="sxs-lookup"><span data-stu-id="f0ff5-176">Notification - terminated</span></span>
 
-### <a name="forward-a-call"></a><span data-ttu-id="65daf-161">转接呼叫</span><span class="sxs-lookup"><span data-stu-id="65daf-161">Forward a call</span></span>
-
-##### <a name="notification---incoming"></a><span data-ttu-id="65daf-162">通知传入</span><span class="sxs-lookup"><span data-stu-id="65daf-162">Notification - incoming</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+``` json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
+        "state": "terminated",
         "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
         "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
             }
           },
-          "region": "westus",
-          "languageId": "en-US"
+          "region": "amer",
         },
         "targets": [
           {
+            "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
               "application": {
-                "displayName": "Test BOT",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
-        "requestedModalities": [ "audio", "video" ]
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
     }
   ]
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="65daf-163">请求</span><span class="sxs-lookup"><span data-stu-id="65daf-163">Request</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="f0ff5-177">示例2：通过同时响铃向多个目标转发呼叫</span><span class="sxs-lookup"><span data-stu-id="f0ff5-177">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-```http
-POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
-Authorization: Bearer <TOKEN>
+##### <a name="notification---incoming"></a><span data-ttu-id="f0ff5-178">通知传入</span><span class="sxs-lookup"><span data-stu-id="f0ff5-178">Notification - incoming</span></span>
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
+      }
+    }
+  ]
+}
+```
+
+##### <a name="request"></a><span data-ttu-id="f0ff5-179">请求</span><span class="sxs-lookup"><span data-stu-id="f0ff5-179">Request</span></span>
+
+<!-- {
+  "blockType": "request", 
+  "name": "call-redirect-simuring"
+} -->
+
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
 Content-Type: application/json
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b1253"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user 2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c9c3f3"
+        }
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 60,
-  "maskCallee": false,
-  "maskCaller": false
+  "routingPolicies": [
+    "disableForwarding"
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="65daf-164">响应</span><span class="sxs-lookup"><span data-stu-id="65daf-164">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f0ff5-180">响应</span><span class="sxs-lookup"><span data-stu-id="f0ff5-180">Response</span></span>
 
-```http
+<!-- {
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+
+``` http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="65daf-165">通知-重定向</span><span class="sxs-lookup"><span data-stu-id="65daf-165">Notification - redirecting</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="notification---terminated"></a><span data-ttu-id="f0ff5-181">通知终止</span><span class="sxs-lookup"><span data-stu-id="f0ff5-181">Notification - terminated</span></span>
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "redirecting"
-      }
-    }
-  ]
-}
-```
+} -->
 
-##### <a name="notification---terminated"></a><span data-ttu-id="65daf-166">通知终止</span><span class="sxs-lookup"><span data-stu-id="65daf-166">Notification - terminated</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "answeredBy": {
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User 2",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
             }
           }
-        },
-        "terminationReason": "AppRedirected"
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]

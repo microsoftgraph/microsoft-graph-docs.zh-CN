@@ -3,60 +3,60 @@ title: 调用： updateMetadata
 description: 更新与调用相关联的 appliation 的元数据。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e777dccdb1eb1925c1c8961c00efe79396f293fd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 0fa65e1764e5e696687ce55ba052b4d7932f3245
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792273"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005946"
 ---
-# <a name="call-updatemetadata"></a><span data-ttu-id="78a69-103">调用： updateMetadata</span><span class="sxs-lookup"><span data-stu-id="78a69-103">call: updateMetadata</span></span>
+# <a name="call-updatemetadata"></a><span data-ttu-id="a6baf-103">调用： updateMetadata</span><span class="sxs-lookup"><span data-stu-id="a6baf-103">call: updateMetadata</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78a69-104">更新与调用相关联的 appliation 的元数据。</span><span class="sxs-lookup"><span data-stu-id="78a69-104">Update the appliation's metadata associated with a call.</span></span>
+<span data-ttu-id="a6baf-104">更新与调用相关联的 appliation 的元数据。</span><span class="sxs-lookup"><span data-stu-id="a6baf-104">Update the appliation's metadata associated with a call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="78a69-105">权限</span><span class="sxs-lookup"><span data-stu-id="78a69-105">Permissions</span></span>
-<span data-ttu-id="78a69-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="78a69-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a6baf-105">Permissions</span><span class="sxs-lookup"><span data-stu-id="a6baf-105">Permissions</span></span>
+<span data-ttu-id="a6baf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a6baf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="78a69-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="78a69-108">Permission type</span></span>                        | <span data-ttu-id="78a69-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="78a69-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a6baf-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a6baf-108">Permission type</span></span>                        | <span data-ttu-id="a6baf-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a6baf-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="78a69-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="78a69-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="78a69-111">不支持</span><span class="sxs-lookup"><span data-stu-id="78a69-111">Not Supported</span></span>                               |
-| <span data-ttu-id="78a69-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="78a69-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78a69-113">不支持</span><span class="sxs-lookup"><span data-stu-id="78a69-113">Not Supported</span></span>                               |
-| <span data-ttu-id="78a69-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="78a69-114">Application</span></span>     | <span data-ttu-id="78a69-115">JoinGroupCallsasGuest、JoinGroupCalls、InitiateGroupCalls 和。 All</span><span class="sxs-lookup"><span data-stu-id="78a69-115">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="a6baf-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a6baf-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a6baf-111">不支持</span><span class="sxs-lookup"><span data-stu-id="a6baf-111">Not Supported</span></span>                               |
+| <span data-ttu-id="a6baf-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a6baf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6baf-113">不支持</span><span class="sxs-lookup"><span data-stu-id="a6baf-113">Not Supported</span></span>                               |
+| <span data-ttu-id="a6baf-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a6baf-114">Application</span></span>     | <span data-ttu-id="a6baf-115">JoinGroupCallsasGuest、JoinGroupCalls、InitiateGroupCalls 和。 All</span><span class="sxs-lookup"><span data-stu-id="a6baf-115">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78a69-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="78a69-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a6baf-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a6baf-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="78a69-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="78a69-117">Request headers</span></span>
-| <span data-ttu-id="78a69-118">名称</span><span class="sxs-lookup"><span data-stu-id="78a69-118">Name</span></span>          | <span data-ttu-id="78a69-119">说明</span><span class="sxs-lookup"><span data-stu-id="78a69-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a6baf-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a6baf-117">Request headers</span></span>
+| <span data-ttu-id="a6baf-118">名称</span><span class="sxs-lookup"><span data-stu-id="a6baf-118">Name</span></span>          | <span data-ttu-id="a6baf-119">说明</span><span class="sxs-lookup"><span data-stu-id="a6baf-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="78a69-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="78a69-120">Authorization</span></span> | <span data-ttu-id="78a69-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="78a69-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a6baf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6baf-120">Authorization</span></span> | <span data-ttu-id="a6baf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a6baf-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="78a69-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="78a69-123">Request body</span></span>
-<span data-ttu-id="78a69-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="78a69-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a6baf-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a6baf-123">Request body</span></span>
+<span data-ttu-id="a6baf-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a6baf-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="78a69-125">参数</span><span class="sxs-lookup"><span data-stu-id="78a69-125">Parameter</span></span>      | <span data-ttu-id="78a69-126">类型</span><span class="sxs-lookup"><span data-stu-id="78a69-126">Type</span></span>    |<span data-ttu-id="78a69-127">说明</span><span class="sxs-lookup"><span data-stu-id="78a69-127">Description</span></span>|
+| <span data-ttu-id="a6baf-125">参数</span><span class="sxs-lookup"><span data-stu-id="a6baf-125">Parameter</span></span>      | <span data-ttu-id="a6baf-126">类型</span><span class="sxs-lookup"><span data-stu-id="a6baf-126">Type</span></span>    |<span data-ttu-id="a6baf-127">说明</span><span class="sxs-lookup"><span data-stu-id="a6baf-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78a69-128">metadata</span><span class="sxs-lookup"><span data-stu-id="78a69-128">metadata</span></span>|<span data-ttu-id="78a69-129">String</span><span class="sxs-lookup"><span data-stu-id="78a69-129">String</span></span>|<span data-ttu-id="78a69-130">名单中参与者提供的数据的 blob。</span><span class="sxs-lookup"><span data-stu-id="78a69-130">A blob of data provided by the participant in the roster.</span></span>|
-|<span data-ttu-id="78a69-131">适用</span><span class="sxs-lookup"><span data-stu-id="78a69-131">clientContext</span></span>|<span data-ttu-id="78a69-132">String</span><span class="sxs-lookup"><span data-stu-id="78a69-132">String</span></span>|<span data-ttu-id="78a69-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="78a69-133">The client context.</span></span>|
+|<span data-ttu-id="a6baf-128">metadata</span><span class="sxs-lookup"><span data-stu-id="a6baf-128">metadata</span></span>|<span data-ttu-id="a6baf-129">String</span><span class="sxs-lookup"><span data-stu-id="a6baf-129">String</span></span>|<span data-ttu-id="a6baf-130">名单中参与者提供的数据的 blob。</span><span class="sxs-lookup"><span data-stu-id="a6baf-130">A blob of data provided by the participant in the roster.</span></span>|
+|<span data-ttu-id="a6baf-131">适用</span><span class="sxs-lookup"><span data-stu-id="a6baf-131">clientContext</span></span>|<span data-ttu-id="a6baf-132">String</span><span class="sxs-lookup"><span data-stu-id="a6baf-132">String</span></span>|<span data-ttu-id="a6baf-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="a6baf-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="78a69-134">响应</span><span class="sxs-lookup"><span data-stu-id="78a69-134">Response</span></span>
-<span data-ttu-id="78a69-135">返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。</span><span class="sxs-lookup"><span data-stu-id="78a69-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="a6baf-134">响应</span><span class="sxs-lookup"><span data-stu-id="a6baf-134">Response</span></span>
+<span data-ttu-id="a6baf-135">返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。</span><span class="sxs-lookup"><span data-stu-id="a6baf-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78a69-136">示例</span><span class="sxs-lookup"><span data-stu-id="78a69-136">Example</span></span>
-<span data-ttu-id="78a69-137">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="78a69-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="a6baf-136">示例</span><span class="sxs-lookup"><span data-stu-id="a6baf-136">Example</span></span>
+<span data-ttu-id="a6baf-137">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a6baf-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="78a69-138">请求</span><span class="sxs-lookup"><span data-stu-id="78a69-138">Request</span></span>
-<span data-ttu-id="78a69-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="78a69-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a6baf-138">请求</span><span class="sxs-lookup"><span data-stu-id="a6baf-138">Request</span></span>
+<span data-ttu-id="a6baf-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="a6baf-139">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="78a69-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="78a69-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a6baf-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="a6baf-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-updateMetadata"
@@ -71,24 +71,24 @@ Content-Length: 79
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="78a69-141">C#</span><span class="sxs-lookup"><span data-stu-id="78a69-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a6baf-141">C#</span><span class="sxs-lookup"><span data-stu-id="a6baf-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-updatemetadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78a69-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78a69-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a6baf-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a6baf-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-updatemetadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78a69-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="78a69-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a6baf-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a6baf-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updatemetadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="78a69-144">响应</span><span class="sxs-lookup"><span data-stu-id="78a69-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a6baf-144">响应</span><span class="sxs-lookup"><span data-stu-id="a6baf-144">Response</span></span>
 
-> <span data-ttu-id="78a69-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="78a69-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a6baf-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a6baf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

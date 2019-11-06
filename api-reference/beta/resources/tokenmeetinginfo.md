@@ -3,57 +3,43 @@ title: tokenMeetingInfo 资源类型
 description: TokenMeetingInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0df9a7a66420f20ff62677f54e617d64e9db0273
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5bb992d61ad34723266523d813fcd8e4e0f8e79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007541"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006527"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="88fb4-103">tokenMeetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="88fb4-103">tokenMeetingInfo resource type</span></span>
+# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="cd58f-103">tokenMeetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="cd58f-103">tokenMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88fb4-104">TokenMeetingInfo 类型。</span><span class="sxs-lookup"><span data-stu-id="88fb4-104">The tokenMeetingInfo type.</span></span>
+<span data-ttu-id="cd58f-104">这是允许你加入现有会议的令牌信息。</span><span class="sxs-lookup"><span data-stu-id="cd58f-104">This is the token information that allows you to join an existing meeting.</span></span> <span data-ttu-id="cd58f-105">这是作为传入呼叫通知的一部分获取的。</span><span class="sxs-lookup"><span data-stu-id="cd58f-105">This is obtained as part of the incoming call notification.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="88fb4-105">属性</span><span class="sxs-lookup"><span data-stu-id="88fb4-105">Properties</span></span>
+<span data-ttu-id="cd58f-106">在断开呼叫的情况下，此信息可以帮助您重新加入该呼叫。</span><span class="sxs-lookup"><span data-stu-id="cd58f-106">In the event that a call is disconnected, this information can help you rejoin that call.</span></span>
 
-| <span data-ttu-id="88fb4-106">属性</span><span class="sxs-lookup"><span data-stu-id="88fb4-106">Property</span></span>                     | <span data-ttu-id="88fb4-107">类型</span><span class="sxs-lookup"><span data-stu-id="88fb4-107">Type</span></span>    | <span data-ttu-id="88fb4-108">说明</span><span class="sxs-lookup"><span data-stu-id="88fb4-108">Description</span></span>                                                                    |
+## <a name="properties"></a><span data-ttu-id="cd58f-107">属性</span><span class="sxs-lookup"><span data-stu-id="cd58f-107">Properties</span></span>
+
+| <span data-ttu-id="cd58f-108">属性</span><span class="sxs-lookup"><span data-stu-id="cd58f-108">Property</span></span>                     | <span data-ttu-id="cd58f-109">类型</span><span class="sxs-lookup"><span data-stu-id="cd58f-109">Type</span></span>    | <span data-ttu-id="cd58f-110">说明</span><span class="sxs-lookup"><span data-stu-id="cd58f-110">Description</span></span>                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| <span data-ttu-id="88fb4-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="88fb4-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="88fb4-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="88fb4-110">Boolean</span></span> | <span data-ttu-id="88fb4-111">指示会话离开的主机后是否可以继续会话。</span><span class="sxs-lookup"><span data-stu-id="88fb4-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="88fb4-112">token</span><span class="sxs-lookup"><span data-stu-id="88fb4-112">token</span></span>                        | <span data-ttu-id="88fb4-113">String</span><span class="sxs-lookup"><span data-stu-id="88fb4-113">String</span></span>  | <span data-ttu-id="88fb4-114">要加入/激活会议的令牌。</span><span class="sxs-lookup"><span data-stu-id="88fb4-114">The token to join/activate the meeting.</span></span>                                        |
+| <span data-ttu-id="cd58f-111">令牌</span><span class="sxs-lookup"><span data-stu-id="cd58f-111">token</span></span>                        | <span data-ttu-id="cd58f-112">String</span><span class="sxs-lookup"><span data-stu-id="cd58f-112">String</span></span>  | <span data-ttu-id="cd58f-113">用于加入呼叫的令牌。</span><span class="sxs-lookup"><span data-stu-id="cd58f-113">The token used to join the call.</span></span>                                                 |
 
-## <a name="json-representation"></a><span data-ttu-id="88fb4-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="88fb4-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cd58f-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cd58f-114">JSON representation</span></span>
 
-<span data-ttu-id="88fb4-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="88fb4-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cd58f-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cd58f-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "token": "String"
-}
-```
-
-## <a name="example"></a><span data-ttu-id="88fb4-117">示例</span><span class="sxs-lookup"><span data-stu-id="88fb4-117">Example</span></span>
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.tokenMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "token": "ABCD123"
+    "token": "String"
 }
 ```
 

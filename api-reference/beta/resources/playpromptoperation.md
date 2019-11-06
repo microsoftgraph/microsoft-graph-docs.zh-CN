@@ -3,39 +3,37 @@ title: playPromptOperation 资源类型
 description: 用于获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b79fa774c112433b09d75eb04f16823f2dad9b6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b54fbce830f5b505decee7e2d25618700728b3
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008976"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006576"
 ---
-# <a name="playpromptoperation-resource-type"></a><span data-ttu-id="1df94-103">playPromptOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="1df94-103">playPromptOperation resource type</span></span>
+# <a name="playpromptoperation-resource-type"></a><span data-ttu-id="23431-103">playPromptOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="23431-103">playPromptOperation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1df94-104">用于获取 playPrompt 操作的结果的 playPrompt 操作。</span><span class="sxs-lookup"><span data-stu-id="1df94-104">The playPrompt operation to obtain the result of the playPrompt action.</span></span>
+<span data-ttu-id="23431-104">用于获取 playPrompt 操作的结果的 playPrompt 操作。</span><span class="sxs-lookup"><span data-stu-id="23431-104">The playPrompt operation to obtain the result of the playPrompt action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1df94-105">属性</span><span class="sxs-lookup"><span data-stu-id="1df94-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="23431-105">属性</span><span class="sxs-lookup"><span data-stu-id="23431-105">Properties</span></span>
 
-| <span data-ttu-id="1df94-106">属性</span><span class="sxs-lookup"><span data-stu-id="1df94-106">Property</span></span>            | <span data-ttu-id="1df94-107">类型</span><span class="sxs-lookup"><span data-stu-id="1df94-107">Type</span></span>                        | <span data-ttu-id="1df94-108">说明</span><span class="sxs-lookup"><span data-stu-id="1df94-108">Description</span></span>|
+| <span data-ttu-id="23431-106">属性</span><span class="sxs-lookup"><span data-stu-id="23431-106">Property</span></span>            | <span data-ttu-id="23431-107">类型</span><span class="sxs-lookup"><span data-stu-id="23431-107">Type</span></span>                        | <span data-ttu-id="23431-108">说明</span><span class="sxs-lookup"><span data-stu-id="23431-108">Description</span></span>|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| <span data-ttu-id="1df94-109">适用</span><span class="sxs-lookup"><span data-stu-id="1df94-109">clientContext</span></span>       | <span data-ttu-id="1df94-110">String</span><span class="sxs-lookup"><span data-stu-id="1df94-110">String</span></span>                      | <span data-ttu-id="1df94-111">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="1df94-111">The client context.</span></span>                                                                |
-| <span data-ttu-id="1df94-112">completionReason</span><span class="sxs-lookup"><span data-stu-id="1df94-112">completionReason</span></span>    | <span data-ttu-id="1df94-113">String</span><span class="sxs-lookup"><span data-stu-id="1df94-113">String</span></span>                      | <span data-ttu-id="1df94-114">可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。</span><span class="sxs-lookup"><span data-stu-id="1df94-114">Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`.</span></span> |
-| <span data-ttu-id="1df94-115">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1df94-115">createdDateTime</span></span>     | <span data-ttu-id="1df94-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1df94-116">DateTimeOffset</span></span>              | <span data-ttu-id="1df94-117">操作的开始时间。</span><span class="sxs-lookup"><span data-stu-id="1df94-117">The start time of the operation.</span></span>                                                   |
-| <span data-ttu-id="1df94-118">id</span><span class="sxs-lookup"><span data-stu-id="1df94-118">id</span></span>                  | <span data-ttu-id="1df94-119">String</span><span class="sxs-lookup"><span data-stu-id="1df94-119">String</span></span>                      | <span data-ttu-id="1df94-120">只读。</span><span class="sxs-lookup"><span data-stu-id="1df94-120">Read-only.</span></span>                                                                         |
-| <span data-ttu-id="1df94-121">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="1df94-121">lastActionDateTime</span></span>  | <span data-ttu-id="1df94-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1df94-122">DateTimeOffset</span></span>              | <span data-ttu-id="1df94-123">操作的上一操作的时间。</span><span class="sxs-lookup"><span data-stu-id="1df94-123">The time of the last action of the operation.</span></span>                                      |
-| <span data-ttu-id="1df94-124">resultInfo</span><span class="sxs-lookup"><span data-stu-id="1df94-124">resultInfo</span></span>          | [<span data-ttu-id="1df94-125">resultInfo</span><span class="sxs-lookup"><span data-stu-id="1df94-125">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="1df94-126">结果信息。</span><span class="sxs-lookup"><span data-stu-id="1df94-126">The result information.</span></span> <span data-ttu-id="1df94-127">只读。</span><span class="sxs-lookup"><span data-stu-id="1df94-127">Read-only.</span></span> <span data-ttu-id="1df94-128">由服务器生成。</span><span class="sxs-lookup"><span data-stu-id="1df94-128">Server generated.</span></span>                               |
-| <span data-ttu-id="1df94-129">status</span><span class="sxs-lookup"><span data-stu-id="1df94-129">status</span></span>              | <span data-ttu-id="1df94-130">String</span><span class="sxs-lookup"><span data-stu-id="1df94-130">String</span></span>                      | <span data-ttu-id="1df94-131">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="1df94-131">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span>               |
+| <span data-ttu-id="23431-109">适用</span><span class="sxs-lookup"><span data-stu-id="23431-109">clientContext</span></span>       | <span data-ttu-id="23431-110">String</span><span class="sxs-lookup"><span data-stu-id="23431-110">String</span></span>                      | <span data-ttu-id="23431-111">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="23431-111">Unique Client Context string.</span></span> <span data-ttu-id="23431-112">最大限制为256个字符。</span><span class="sxs-lookup"><span data-stu-id="23431-112">Max limit is 256 chars.</span></span>                              |
+| <span data-ttu-id="23431-113">completionReason</span><span class="sxs-lookup"><span data-stu-id="23431-113">completionReason</span></span>    | <span data-ttu-id="23431-114">String</span><span class="sxs-lookup"><span data-stu-id="23431-114">String</span></span>                      | <span data-ttu-id="23431-115">可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。</span><span class="sxs-lookup"><span data-stu-id="23431-115">Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`.</span></span> |
+| <span data-ttu-id="23431-116">id</span><span class="sxs-lookup"><span data-stu-id="23431-116">id</span></span>                  | <span data-ttu-id="23431-117">字符串</span><span class="sxs-lookup"><span data-stu-id="23431-117">String</span></span>                      | <span data-ttu-id="23431-118">只读。</span><span class="sxs-lookup"><span data-stu-id="23431-118">Read-only.</span></span>                                                                         |
+| <span data-ttu-id="23431-119">resultInfo</span><span class="sxs-lookup"><span data-stu-id="23431-119">resultInfo</span></span>          | [<span data-ttu-id="23431-120">resultInfo</span><span class="sxs-lookup"><span data-stu-id="23431-120">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="23431-121">结果信息。</span><span class="sxs-lookup"><span data-stu-id="23431-121">The result information.</span></span> <span data-ttu-id="23431-122">只读。</span><span class="sxs-lookup"><span data-stu-id="23431-122">Read-only.</span></span>                                |
+| <span data-ttu-id="23431-123">状态</span><span class="sxs-lookup"><span data-stu-id="23431-123">status</span></span>              | <span data-ttu-id="23431-124">String</span><span class="sxs-lookup"><span data-stu-id="23431-124">String</span></span>                      | <span data-ttu-id="23431-125">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="23431-125">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span>               |
 
-## <a name="relationships"></a><span data-ttu-id="1df94-132">关系</span><span class="sxs-lookup"><span data-stu-id="1df94-132">Relationships</span></span>
-<span data-ttu-id="1df94-133">无</span><span class="sxs-lookup"><span data-stu-id="1df94-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="23431-126">关系</span><span class="sxs-lookup"><span data-stu-id="23431-126">Relationships</span></span>
+<span data-ttu-id="23431-127">无</span><span class="sxs-lookup"><span data-stu-id="23431-127">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1df94-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1df94-134">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="23431-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="23431-128">JSON representation</span></span>
 
-<span data-ttu-id="1df94-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1df94-135">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="23431-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23431-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,9 +46,7 @@ ms.locfileid: "36008976"
 {
   "clientContext": "String",
   "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }

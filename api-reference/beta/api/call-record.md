@@ -1,78 +1,87 @@
 ---
 title: call： record
-description: 录制呼叫。
+description: 录制来自通话的短音频剪辑。 如果 bot 希望在出现提示后从呼叫者处捕获语音响应，这将非常有用。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd42f1099e922e79292cfddb667f38a9e8c9fb3d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: dc240c00e16db17e438c19ae792ce73425ed2350
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792259"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006058"
 ---
-# <a name="call-record"></a><span data-ttu-id="5f701-103">call： record</span><span class="sxs-lookup"><span data-stu-id="5f701-103">call: record</span></span>
+# <a name="call-record"></a><span data-ttu-id="30f79-104">call： record</span><span class="sxs-lookup"><span data-stu-id="30f79-104">call: record</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5f701-104">从呼叫中录制简短的音频剪辑。</span><span class="sxs-lookup"><span data-stu-id="5f701-104">Record a short audio clip from the call.</span></span> <span data-ttu-id="5f701-105">如果 bot 希望在发出提示后从呼叫者处捕获语音响应，这将非常有用。</span><span class="sxs-lookup"><span data-stu-id="5f701-105">This is useful if the bot wants to capture a voice response from the caller following a prompt.</span></span>
+<span data-ttu-id="30f79-105">从呼叫中录制简短的音频剪辑。</span><span class="sxs-lookup"><span data-stu-id="30f79-105">Record a short audio clip from a call.</span></span>
+<span data-ttu-id="30f79-106">在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。</span><span class="sxs-lookup"><span data-stu-id="30f79-106">A bot can utilize this to capture a voice response from a caller after they are prompted for a response.</span></span>
 
-> [!Note]
-> <span data-ttu-id="5f701-106">只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持 record 操作。</span><span class="sxs-lookup"><span data-stu-id="5f701-106">The record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span> <span data-ttu-id="5f701-107">此操作不会记录整个调用。</span><span class="sxs-lookup"><span data-stu-id="5f701-107">This action does not record the entire call.</span></span> <span data-ttu-id="5f701-108">录制的最大长度为5分钟。</span><span class="sxs-lookup"><span data-stu-id="5f701-108">The maximum length of the recording is 5 minutes.</span></span> <span data-ttu-id="5f701-109">录制不会由云通信平台 permamently 保存，在呼叫结束后不久将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="5f701-109">The recording is not saved permamently by the Cloud Communications Platform and is discarded shortly after the call ends.</span></span> <span data-ttu-id="5f701-110">在录制操作完成后，机器人必须立即下载录制（使用已完成通知中给出的**recordingLocation**值）。</span><span class="sxs-lookup"><span data-stu-id="5f701-110">The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.</span></span>
+<span data-ttu-id="30f79-107">有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsOperation.md)</span><span class="sxs-lookup"><span data-stu-id="30f79-107">For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)</span></span>
 
+><span data-ttu-id="30f79-108">**注意：** 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持这样做。</span><span class="sxs-lookup"><span data-stu-id="30f79-108">**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5f701-111">权限</span><span class="sxs-lookup"><span data-stu-id="5f701-111">Permissions</span></span>
-<span data-ttu-id="5f701-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5f701-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="30f79-109">此操作不用于记录整个调用。</span><span class="sxs-lookup"><span data-stu-id="30f79-109">This action is not intended to record the entire call.</span></span> <span data-ttu-id="30f79-110">录制的最大长度为5分钟。</span><span class="sxs-lookup"><span data-stu-id="30f79-110">The maximum length of recording is 5 minutes.</span></span> <span data-ttu-id="30f79-111">录制不会由云通信平台永久保存，并且在呼叫结束后不久将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="30f79-111">The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends.</span></span> <span data-ttu-id="30f79-112">在录制操作完成后，bot 必须使用已完成的通知中提供的 recordingLocation 值立即下载录制。</span><span class="sxs-lookup"><span data-stu-id="30f79-112">The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.</span></span>
 
-| <span data-ttu-id="5f701-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="5f701-114">Permission type</span></span> | <span data-ttu-id="5f701-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5f701-115">Permissions (from least to most privileged)</span></span> |
+><span data-ttu-id="30f79-113">**注意：** 任何收集的媒体都**不**会保留。</span><span class="sxs-lookup"><span data-stu-id="30f79-113">**Note:** Any media collected may **not** be persisted.</span></span> <span data-ttu-id="30f79-114">请确保在呼叫录音时遵守地区的法律和法规。</span><span class="sxs-lookup"><span data-stu-id="30f79-114">Make sure you are compliant with the laws and regulations of your area when it comes to call recording.</span></span> <span data-ttu-id="30f79-115">有关详细信息，请咨询法律顾问。</span><span class="sxs-lookup"><span data-stu-id="30f79-115">Please consult with a legal counsel for more information.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="30f79-116">Permissions</span><span class="sxs-lookup"><span data-stu-id="30f79-116">Permissions</span></span>
+<span data-ttu-id="30f79-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="30f79-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="30f79-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="30f79-119">Permission type</span></span> | <span data-ttu-id="30f79-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="30f79-120">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="5f701-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5f701-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="5f701-117">不支持</span><span class="sxs-lookup"><span data-stu-id="5f701-117">Not Supported</span></span>        |
-| <span data-ttu-id="5f701-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5f701-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f701-119">不支持</span><span class="sxs-lookup"><span data-stu-id="5f701-119">Not Supported</span></span>        |
-| <span data-ttu-id="5f701-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="5f701-120">Application</span></span>     | <span data-ttu-id="5f701-121">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="5f701-121">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="30f79-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="30f79-121">Delegated (work or school account)</span></span>     | <span data-ttu-id="30f79-122">不支持</span><span class="sxs-lookup"><span data-stu-id="30f79-122">Not Supported</span></span>        |
+| <span data-ttu-id="30f79-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="30f79-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30f79-124">不支持</span><span class="sxs-lookup"><span data-stu-id="30f79-124">Not Supported</span></span>        |
+| <span data-ttu-id="30f79-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="30f79-125">Application</span></span>     | <span data-ttu-id="30f79-126">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="30f79-126">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="5f701-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5f701-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="30f79-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="30f79-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
+POST /communications/calls/{id}/record
 ```
+> <span data-ttu-id="30f79-128">**注意：**`/app`路径已被弃用。</span><span class="sxs-lookup"><span data-stu-id="30f79-128">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="30f79-129">接下来，请使用`/communications`路径。</span><span class="sxs-lookup"><span data-stu-id="30f79-129">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5f701-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="5f701-123">Request headers</span></span>
-| <span data-ttu-id="5f701-124">名称</span><span class="sxs-lookup"><span data-stu-id="5f701-124">Name</span></span>          | <span data-ttu-id="5f701-125">说明</span><span class="sxs-lookup"><span data-stu-id="5f701-125">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="30f79-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="30f79-130">Request headers</span></span>
+| <span data-ttu-id="30f79-131">名称</span><span class="sxs-lookup"><span data-stu-id="30f79-131">Name</span></span>          | <span data-ttu-id="30f79-132">说明</span><span class="sxs-lookup"><span data-stu-id="30f79-132">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="5f701-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5f701-126">Authorization</span></span> | <span data-ttu-id="5f701-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5f701-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="30f79-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="30f79-133">Authorization</span></span> | <span data-ttu-id="30f79-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="30f79-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5f701-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="5f701-129">Request body</span></span>
-<span data-ttu-id="5f701-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="5f701-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="30f79-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="30f79-136">Request body</span></span>
+<span data-ttu-id="30f79-137">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="30f79-137">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="5f701-131">参数</span><span class="sxs-lookup"><span data-stu-id="5f701-131">Parameter</span></span>      | <span data-ttu-id="5f701-132">类型</span><span class="sxs-lookup"><span data-stu-id="5f701-132">Type</span></span>    |<span data-ttu-id="5f701-133">说明</span><span class="sxs-lookup"><span data-stu-id="5f701-133">Description</span></span>|
+| <span data-ttu-id="30f79-138">参数</span><span class="sxs-lookup"><span data-stu-id="30f79-138">Parameter</span></span>      | <span data-ttu-id="30f79-139">类型</span><span class="sxs-lookup"><span data-stu-id="30f79-139">Type</span></span>    |<span data-ttu-id="30f79-140">说明</span><span class="sxs-lookup"><span data-stu-id="30f79-140">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5f701-134">提示</span><span class="sxs-lookup"><span data-stu-id="5f701-134">prompts</span></span>|<span data-ttu-id="5f701-135">[mediaPrompt](../resources/mediaprompt.md)集合</span><span class="sxs-lookup"><span data-stu-id="5f701-135">[mediaPrompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="5f701-136">录制开始前要播放的提示集合（如果有）。</span><span class="sxs-lookup"><span data-stu-id="5f701-136">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="5f701-137">客户可以选择单独指定 "playPrompt" 操作，也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。</span><span class="sxs-lookup"><span data-stu-id="5f701-137">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt.</span></span> <span data-ttu-id="5f701-138">当前支持仅作为集合的一部分的单个提示。</span><span class="sxs-lookup"><span data-stu-id="5f701-138">Current support is only for a single prompt as part of the collection.</span></span> |
-|<span data-ttu-id="5f701-139">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="5f701-139">bargeInAllowed</span></span>|<span data-ttu-id="5f701-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="5f701-140">Boolean</span></span>| <span data-ttu-id="5f701-141">如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。</span><span class="sxs-lookup"><span data-stu-id="5f701-141">If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests.</span></span> <span data-ttu-id="5f701-142">默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="5f701-142">Default = false.</span></span> |
-|<span data-ttu-id="5f701-143">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="5f701-143">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="5f701-144">Int32</span><span class="sxs-lookup"><span data-stu-id="5f701-144">Int32</span></span>| <span data-ttu-id="5f701-145">在我们开始进行记录操作之前，可以从开始时开始的最大初始静音（用户无声），并使操作失败。</span><span class="sxs-lookup"><span data-stu-id="5f701-145">Maximum initial silence (user silence) allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="5f701-146">如果我们正在播放提示，则此计时器在提示完成后启动。</span><span class="sxs-lookup"><span data-stu-id="5f701-146">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> <span data-ttu-id="5f701-147">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒</span><span class="sxs-lookup"><span data-stu-id="5f701-147">Default = 5 seconds, Min = 1 second, Max = 300 seconds</span></span> |
-|<span data-ttu-id="5f701-148">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="5f701-148">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="5f701-149">Int32</span><span class="sxs-lookup"><span data-stu-id="5f701-149">Int32</span></span>| <span data-ttu-id="5f701-150">用户开始发言后允许的最大静音（暂停）时间。</span><span class="sxs-lookup"><span data-stu-id="5f701-150">Maximum silence (pause) time allowed after a user has started speaking.</span></span> <span data-ttu-id="5f701-151">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。</span><span class="sxs-lookup"><span data-stu-id="5f701-151">Default = 5 seconds, Min = 1 second, Max = 300 seconds.</span></span>|
-|<span data-ttu-id="5f701-152">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="5f701-152">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="5f701-153">Int32</span><span class="sxs-lookup"><span data-stu-id="5f701-153">Int32</span></span>| <span data-ttu-id="5f701-154">停止录制前的记录操作的最长持续时间。</span><span class="sxs-lookup"><span data-stu-id="5f701-154">Max duration for a record operation before stopping recording.</span></span> <span data-ttu-id="5f701-155">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。</span><span class="sxs-lookup"><span data-stu-id="5f701-155">Default = 5 seconds, Min = 1 second, Max = 300 seconds.</span></span>|
-|<span data-ttu-id="5f701-156">playBeep</span><span class="sxs-lookup"><span data-stu-id="5f701-156">playBeep</span></span>|<span data-ttu-id="5f701-157">Boolean</span><span class="sxs-lookup"><span data-stu-id="5f701-157">Boolean</span></span>| <span data-ttu-id="5f701-158">如果为 true，则会播放提示音，指示用户可以开始记录其邮件。</span><span class="sxs-lookup"><span data-stu-id="5f701-158">If true, plays a beep to indicate to the user that they can start recording their message.</span></span> <span data-ttu-id="5f701-159">默认值为 true。</span><span class="sxs-lookup"><span data-stu-id="5f701-159">Default = true.</span></span>|
-|<span data-ttu-id="5f701-160">stopTones</span><span class="sxs-lookup"><span data-stu-id="5f701-160">stopTones</span></span>|<span data-ttu-id="5f701-161">String collection</span><span class="sxs-lookup"><span data-stu-id="5f701-161">String collection</span></span>|<span data-ttu-id="5f701-162">指定结束录音的停止音。</span><span class="sxs-lookup"><span data-stu-id="5f701-162">Stop tones specified to end recording.</span></span>|
-|<span data-ttu-id="5f701-163">适用</span><span class="sxs-lookup"><span data-stu-id="5f701-163">clientContext</span></span>|<span data-ttu-id="5f701-164">String</span><span class="sxs-lookup"><span data-stu-id="5f701-164">String</span></span>|<span data-ttu-id="5f701-165">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="5f701-165">Unique Client Context string.</span></span> <span data-ttu-id="5f701-166">最多可以有256个字符。</span><span class="sxs-lookup"><span data-stu-id="5f701-166">Can have a maximum of 256 characters.</span></span>|
+|<span data-ttu-id="30f79-141">提示</span><span class="sxs-lookup"><span data-stu-id="30f79-141">prompts</span></span>|<span data-ttu-id="30f79-142">[mediaPrompt](../resources/mediaprompt.md)集合</span><span class="sxs-lookup"><span data-stu-id="30f79-142">[mediaPrompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="30f79-143">录制开始前要播放的提示集合（如果有）。</span><span class="sxs-lookup"><span data-stu-id="30f79-143">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="30f79-144">客户可以选择单独指定 "playPrompt" 操作，也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。</span><span class="sxs-lookup"><span data-stu-id="30f79-144">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt.</span></span> <span data-ttu-id="30f79-145">当前支持仅作为集合的一部分的单个提示。</span><span class="sxs-lookup"><span data-stu-id="30f79-145">Current support is only for a single prompt as part of the collection.</span></span> |
+|<span data-ttu-id="30f79-146">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="30f79-146">bargeInAllowed</span></span>|<span data-ttu-id="30f79-147">布尔</span><span class="sxs-lookup"><span data-stu-id="30f79-147">Boolean</span></span>| <span data-ttu-id="30f79-148">如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。</span><span class="sxs-lookup"><span data-stu-id="30f79-148">If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests.</span></span> <span data-ttu-id="30f79-149">默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="30f79-149">Default = false.</span></span> |
+|<span data-ttu-id="30f79-150">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="30f79-150">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="30f79-151">Int32</span><span class="sxs-lookup"><span data-stu-id="30f79-151">Int32</span></span>| <span data-ttu-id="30f79-152">在我们开始进行记录操作之前，可以从开始时开始的最大初始静音（用户无声），并使操作失败。</span><span class="sxs-lookup"><span data-stu-id="30f79-152">Maximum initial silence (user silence) allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="30f79-153">如果我们正在播放提示，则此计时器在提示完成后启动。</span><span class="sxs-lookup"><span data-stu-id="30f79-153">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> <span data-ttu-id="30f79-154">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒</span><span class="sxs-lookup"><span data-stu-id="30f79-154">Default = 5 seconds, Min = 1 second, Max = 300 seconds</span></span> |
+|<span data-ttu-id="30f79-155">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="30f79-155">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="30f79-156">Int32</span><span class="sxs-lookup"><span data-stu-id="30f79-156">Int32</span></span>| <span data-ttu-id="30f79-157">用户开始发言后允许的最大静音（暂停）时间。</span><span class="sxs-lookup"><span data-stu-id="30f79-157">Maximum silence (pause) time allowed after a user has started speaking.</span></span> <span data-ttu-id="30f79-158">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。</span><span class="sxs-lookup"><span data-stu-id="30f79-158">Default = 5 seconds, Min = 1 second, Max = 300 seconds.</span></span>|
+|<span data-ttu-id="30f79-159">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="30f79-159">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="30f79-160">Int32</span><span class="sxs-lookup"><span data-stu-id="30f79-160">Int32</span></span>| <span data-ttu-id="30f79-161">停止录制前的记录操作的最长持续时间。</span><span class="sxs-lookup"><span data-stu-id="30f79-161">Max duration for a record operation before stopping recording.</span></span> <span data-ttu-id="30f79-162">默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。</span><span class="sxs-lookup"><span data-stu-id="30f79-162">Default = 5 seconds, Min = 1 second, Max = 300 seconds.</span></span>|
+|<span data-ttu-id="30f79-163">playBeep</span><span class="sxs-lookup"><span data-stu-id="30f79-163">playBeep</span></span>|<span data-ttu-id="30f79-164">布尔</span><span class="sxs-lookup"><span data-stu-id="30f79-164">Boolean</span></span>| <span data-ttu-id="30f79-165">如果为 true，则会播放提示音，指示用户可以开始记录其邮件。</span><span class="sxs-lookup"><span data-stu-id="30f79-165">If true, plays a beep to indicate to the user that they can start recording their message.</span></span> <span data-ttu-id="30f79-166">默认值为 true。</span><span class="sxs-lookup"><span data-stu-id="30f79-166">Default = true.</span></span>|
+|<span data-ttu-id="30f79-167">stopTones</span><span class="sxs-lookup"><span data-stu-id="30f79-167">stopTones</span></span>|<span data-ttu-id="30f79-168">String 集合</span><span class="sxs-lookup"><span data-stu-id="30f79-168">String collection</span></span>|<span data-ttu-id="30f79-169">指定结束录音的停止音。</span><span class="sxs-lookup"><span data-stu-id="30f79-169">Stop tones specified to end recording.</span></span>|
+|<span data-ttu-id="30f79-170">适用</span><span class="sxs-lookup"><span data-stu-id="30f79-170">clientContext</span></span>|<span data-ttu-id="30f79-171">String</span><span class="sxs-lookup"><span data-stu-id="30f79-171">String</span></span>|<span data-ttu-id="30f79-172">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="30f79-172">Unique Client Context string.</span></span> <span data-ttu-id="30f79-173">最大限制为256个字符。</span><span class="sxs-lookup"><span data-stu-id="30f79-173">Max limit is 256 chars.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="5f701-167">响应</span><span class="sxs-lookup"><span data-stu-id="5f701-167">Response</span></span>
-<span data-ttu-id="5f701-168">此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。</span><span class="sxs-lookup"><span data-stu-id="5f701-168">This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="30f79-174">响应</span><span class="sxs-lookup"><span data-stu-id="30f79-174">Response</span></span>
+<span data-ttu-id="30f79-175">此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。</span><span class="sxs-lookup"><span data-stu-id="30f79-175">This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5f701-169">示例</span><span class="sxs-lookup"><span data-stu-id="5f701-169">Example</span></span>
-<span data-ttu-id="5f701-170">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="5f701-170">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="30f79-176">示例</span><span class="sxs-lookup"><span data-stu-id="30f79-176">Example</span></span>
+<span data-ttu-id="30f79-177">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="30f79-177">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5f701-171">请求</span><span class="sxs-lookup"><span data-stu-id="5f701-171">Request</span></span>
-<span data-ttu-id="5f701-172">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5f701-172">The following example shows the request.</span></span>
+### <a name="example-1-record-a-short-audio-clip-from-a-call"></a><span data-ttu-id="30f79-178">示例1：从呼叫中录制简短的音频剪辑</span><span class="sxs-lookup"><span data-stu-id="30f79-178">Example 1: Record a short audio clip from a call</span></span>
+
+##### <a name="request"></a><span data-ttu-id="30f79-179">请求</span><span class="sxs-lookup"><span data-stu-id="30f79-179">Request</span></span>
+<span data-ttu-id="30f79-180">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="30f79-180">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5f701-173">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="5f701-173">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="30f79-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="30f79-181">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-record"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/record
 Content-Type: application/json
 Content-Length: 394
 
@@ -95,17 +104,17 @@ Content-Length: 394
   "stopTones": [ "#", "1", "*" ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5f701-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5f701-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="30f79-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30f79-182">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5f701-175">响应</span><span class="sxs-lookup"><span data-stu-id="5f701-175">Response</span></span>
-<span data-ttu-id="5f701-176">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="5f701-176">The following example shows the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="30f79-183">响应</span><span class="sxs-lookup"><span data-stu-id="30f79-183">Response</span></span>
+<span data-ttu-id="30f79-184">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="30f79-184">The following example shows the response.</span></span>
 
-> <span data-ttu-id="5f701-p112">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5f701-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="30f79-p115">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="30f79-p115">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,13 +123,11 @@ Content-Length: 394
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
   "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
@@ -129,11 +136,10 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="5f701-179">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="5f701-179">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="30f79-187">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="30f79-187">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -143,13 +149,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.recordOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
@@ -162,28 +170,28 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="get-recording-file---request"></a><span data-ttu-id="5f701-180">获取录制文件-请求</span><span class="sxs-lookup"><span data-stu-id="5f701-180">Get recording file - Request</span></span>
-<span data-ttu-id="5f701-181">下面的示例展示了获取录制内容的请求。</span><span class="sxs-lookup"><span data-stu-id="5f701-181">The following example shows the request to get the content of the recording.</span></span>
+### <a name="example-2-retrieving-the-recording-file"></a><span data-ttu-id="30f79-188">示例2：检索录制文件</span><span class="sxs-lookup"><span data-stu-id="30f79-188">Example 2: Retrieving the recording file</span></span>
+
+> <span data-ttu-id="30f79-189">**注意：** 虽然您可以提取并处理录制，但您**必须**在以后将其删除。</span><span class="sxs-lookup"><span data-stu-id="30f79-189">**Note:** While you're able to fetch the recording and process it, you **must** delete it afterwards.</span></span> <span data-ttu-id="30f79-190">无法持久化媒体。</span><span class="sxs-lookup"><span data-stu-id="30f79-190">Media cannot be persisted.</span></span>
+
+##### <a name="request"></a><span data-ttu-id="30f79-191">请求</span><span class="sxs-lookup"><span data-stu-id="30f79-191">Request</span></span>
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
+  "blockType": "ignored"
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Authorization: Bearer <recordingAccessToken>
 ```
 
-##### <a name="get-recording-file---response"></a><span data-ttu-id="5f701-182">获取录制文件-响应</span><span class="sxs-lookup"><span data-stu-id="5f701-182">Get recording file - Response</span></span>
-<span data-ttu-id="5f701-183">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5f701-183">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="30f79-192">响应</span><span class="sxs-lookup"><span data-stu-id="30f79-192">Response</span></span>
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
-  "truncated": true
+  "blockType": "ignored"
 }-->
+
 ```http
-GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Date: Thu, 17 Jan 2019 01:46:37 GMT
 Content-Type: application/octet-stream

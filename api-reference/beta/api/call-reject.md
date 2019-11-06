@@ -1,71 +1,76 @@
 ---
 title: 呼叫：拒绝
-description: 拒绝传入呼叫。
+description: 启用机器人以拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e3befe394aa9451cbb51bd39ba41fb158b67b464
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: a083459a162117addba494f74e50842435a74516
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838832"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005904"
 ---
-# <a name="call-reject"></a><span data-ttu-id="aece6-103">呼叫：拒绝</span><span class="sxs-lookup"><span data-stu-id="aece6-103">call: reject</span></span>
+# <a name="call-reject"></a><span data-ttu-id="9900a-103">呼叫：拒绝</span><span class="sxs-lookup"><span data-stu-id="9900a-103">call: reject</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aece6-104">启用机器人以拒绝传入[呼叫](../resources/call.md)。</span><span class="sxs-lookup"><span data-stu-id="aece6-104">Enables the bot to reject an incoming [call](../resources/call.md).</span></span> <span data-ttu-id="aece6-105">传入呼叫请求可以是邀请参加会议或对等呼叫。</span><span class="sxs-lookup"><span data-stu-id="aece6-105">The incoming call request can be an invite to a meeting or a peer to peer call.</span></span> <span data-ttu-id="aece6-106">传入呼叫请求在15秒后超时。</span><span class="sxs-lookup"><span data-stu-id="aece6-106">The incoming call request times out after 15 seconds.</span></span> <span data-ttu-id="aece6-107">如果在此期间未发送任何响应，则会自动拒绝该呼叫。</span><span class="sxs-lookup"><span data-stu-id="aece6-107">If no response is sent during this time, the call is automatically rejected.</span></span>
+<span data-ttu-id="9900a-104">启用机器人以拒绝传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="9900a-104">Enable a bot to reject an incoming call.</span></span> <span data-ttu-id="9900a-105">传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。</span><span class="sxs-lookup"><span data-stu-id="9900a-105">The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.</span></span> <span data-ttu-id="9900a-106">如果收到某个组呼叫邀请，则通知将包含**chatInfo**和**meetingInfo**参数。</span><span class="sxs-lookup"><span data-stu-id="9900a-106">If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.</span></span>
 
-<span data-ttu-id="aece6-108">在 Azure 门户中使用有效的回调 URL 注册 bot 后，传入呼叫将作为[commsNotification](../resources/commsnotification.md)传递，其`changeType`设置为`created`。</span><span class="sxs-lookup"><span data-stu-id="aece6-108">Once the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`.</span></span> <span data-ttu-id="aece6-109">应将机器人`Answer`或`Reject`呼叫超时之前的时间。</span><span class="sxs-lookup"><span data-stu-id="aece6-109">The bot is expected to `Answer` or `Reject` the call before it times out.</span></span>
+<span data-ttu-id="9900a-107">在呼叫超时之前，机器人应应答或拒绝呼叫。当前超时值为15秒。</span><span class="sxs-lookup"><span data-stu-id="9900a-107">The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-> <span data-ttu-id="aece6-110">**注意：** 此 API 仅用于拒绝传入的呼叫。</span><span class="sxs-lookup"><span data-stu-id="aece6-110">**Note:** This API is only used to reject incoming calls.</span></span> <span data-ttu-id="aece6-111">若要终止现有呼叫，应改为使用 "[删除呼叫](../api/call-delete.md)"。</span><span class="sxs-lookup"><span data-stu-id="aece6-111">To terminate existing calls, [Delete Call](../api/call-delete.md) should be used instead.</span></span>
+<span data-ttu-id="9900a-108">此 API 不会结束已应答的现有呼叫。</span><span class="sxs-lookup"><span data-stu-id="9900a-108">This API does not end existing calls that have already been answered.</span></span> <span data-ttu-id="9900a-109">使用[删除呼叫](../api/call-delete.md)结束呼叫。</span><span class="sxs-lookup"><span data-stu-id="9900a-109">Use [delete call](../api/call-delete.md) to end a call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="aece6-112">权限</span><span class="sxs-lookup"><span data-stu-id="aece6-112">Permissions</span></span>
-<span data-ttu-id="aece6-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aece6-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="9900a-110">**注意：** 只能通过 VoIP 访问机器人。</span><span class="sxs-lookup"><span data-stu-id="9900a-110">**Note:** The bot can only be reached through VoIP.</span></span> <span data-ttu-id="9900a-111">尚不支持对 bot 的 PSTN 呼叫。</span><span class="sxs-lookup"><span data-stu-id="9900a-111">PSTN calling to bot is not yet supported.</span></span>
 
-| <span data-ttu-id="aece6-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="aece6-115">Permission type</span></span> | <span data-ttu-id="aece6-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aece6-116">Permissions (from least to most privileged)</span></span>                |
+## <a name="permissions"></a><span data-ttu-id="9900a-112">Permissions</span><span class="sxs-lookup"><span data-stu-id="9900a-112">Permissions</span></span>
+<span data-ttu-id="9900a-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9900a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="9900a-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="9900a-115">Permission type</span></span> | <span data-ttu-id="9900a-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9900a-116">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="aece6-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aece6-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="aece6-118">不支持</span><span class="sxs-lookup"><span data-stu-id="aece6-118">Not Supported</span></span>                       |
-| <span data-ttu-id="aece6-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aece6-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aece6-120">不支持</span><span class="sxs-lookup"><span data-stu-id="aece6-120">Not Supported</span></span>                       |
-| <span data-ttu-id="aece6-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="aece6-121">Application</span></span>     | <span data-ttu-id="aece6-122">无</span><span class="sxs-lookup"><span data-stu-id="aece6-122">None</span></span>                                                       |
+| <span data-ttu-id="9900a-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9900a-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="9900a-118">不支持</span><span class="sxs-lookup"><span data-stu-id="9900a-118">Not Supported</span></span>                       |
+| <span data-ttu-id="9900a-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9900a-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9900a-120">不支持</span><span class="sxs-lookup"><span data-stu-id="9900a-120">Not Supported</span></span>                       |
+| <span data-ttu-id="9900a-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="9900a-121">Application</span></span>     | <span data-ttu-id="9900a-122">无</span><span class="sxs-lookup"><span data-stu-id="9900a-122">None</span></span>                                                       |
 
-## <a name="http-request"></a><span data-ttu-id="aece6-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aece6-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9900a-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9900a-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
+POST /communications/calls/{id}/reject
 ```
+> <span data-ttu-id="9900a-124">**注意：**`/app`路径已被弃用。</span><span class="sxs-lookup"><span data-stu-id="9900a-124">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="9900a-125">接下来，请使用`/communications`路径。</span><span class="sxs-lookup"><span data-stu-id="9900a-125">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="aece6-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="aece6-124">Request headers</span></span>
-| <span data-ttu-id="aece6-125">名称</span><span class="sxs-lookup"><span data-stu-id="aece6-125">Name</span></span>          | <span data-ttu-id="aece6-126">说明</span><span class="sxs-lookup"><span data-stu-id="aece6-126">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="9900a-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="9900a-126">Request headers</span></span>
+| <span data-ttu-id="9900a-127">名称</span><span class="sxs-lookup"><span data-stu-id="9900a-127">Name</span></span>          | <span data-ttu-id="9900a-128">说明</span><span class="sxs-lookup"><span data-stu-id="9900a-128">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="aece6-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="aece6-127">Authorization</span></span> | <span data-ttu-id="aece6-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="aece6-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9900a-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="9900a-129">Authorization</span></span> | <span data-ttu-id="9900a-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9900a-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9900a-132">Content-type</span><span class="sxs-lookup"><span data-stu-id="9900a-132">Content-type</span></span>  | <span data-ttu-id="9900a-p107">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="9900a-p107">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="aece6-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="aece6-130">Request body</span></span>
-<span data-ttu-id="aece6-131">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="aece6-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9900a-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="9900a-135">Request body</span></span>
+<span data-ttu-id="9900a-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="9900a-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="aece6-132">参数</span><span class="sxs-lookup"><span data-stu-id="aece6-132">Parameter</span></span>      | <span data-ttu-id="aece6-133">类型</span><span class="sxs-lookup"><span data-stu-id="aece6-133">Type</span></span>    |<span data-ttu-id="aece6-134">说明</span><span class="sxs-lookup"><span data-stu-id="aece6-134">Description</span></span>|
+| <span data-ttu-id="9900a-137">参数</span><span class="sxs-lookup"><span data-stu-id="9900a-137">Parameter</span></span>      | <span data-ttu-id="9900a-138">类型</span><span class="sxs-lookup"><span data-stu-id="9900a-138">Type</span></span>    |<span data-ttu-id="9900a-139">说明</span><span class="sxs-lookup"><span data-stu-id="9900a-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="aece6-135">在于</span><span class="sxs-lookup"><span data-stu-id="aece6-135">reason</span></span>|<span data-ttu-id="aece6-136">String</span><span class="sxs-lookup"><span data-stu-id="aece6-136">String</span></span>|<span data-ttu-id="aece6-137">拒绝原因。</span><span class="sxs-lookup"><span data-stu-id="aece6-137">The rejection reason.</span></span> <span data-ttu-id="aece6-138">可能的值`None`为`Busy`和`Forbidden`</span><span class="sxs-lookup"><span data-stu-id="aece6-138">Possible values are `None`, `Busy` and `Forbidden`</span></span> |
-|<span data-ttu-id="aece6-139">callbackUri</span><span class="sxs-lookup"><span data-stu-id="aece6-139">callbackUri</span></span>|<span data-ttu-id="aece6-140">String</span><span class="sxs-lookup"><span data-stu-id="aece6-140">String</span></span>|<span data-ttu-id="aece6-141">允许 bot 提供特定的回调 URI，将在其中发布拒绝操作的结果。</span><span class="sxs-lookup"><span data-stu-id="aece6-141">Allows bots to provide a specific callback URI where the result of the Reject action will be posted.</span></span> <span data-ttu-id="aece6-142">这允许将结果发送到触发拒绝操作的相同特定 bot 实例。</span><span class="sxs-lookup"><span data-stu-id="aece6-142">This allows sending the result to the same specific bot instance that triggered the Reject action.</span></span> <span data-ttu-id="aece6-143">如果未提供，则将使用 bot 的全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="aece6-143">If none is provided, the bot's global callback URI will be used.</span></span>|
+|<span data-ttu-id="9900a-140">reason</span><span class="sxs-lookup"><span data-stu-id="9900a-140">reason</span></span>|<span data-ttu-id="9900a-141">String</span><span class="sxs-lookup"><span data-stu-id="9900a-141">String</span></span>|<span data-ttu-id="9900a-142">拒绝原因。</span><span class="sxs-lookup"><span data-stu-id="9900a-142">The rejection reason.</span></span> <span data-ttu-id="9900a-143">可能的值`None`为`Busy`和`Forbidden`</span><span class="sxs-lookup"><span data-stu-id="9900a-143">Possible values are `None`, `Busy` and `Forbidden`</span></span> |
+|<span data-ttu-id="9900a-144">callbackUri</span><span class="sxs-lookup"><span data-stu-id="9900a-144">callbackUri</span></span>|<span data-ttu-id="9900a-145">String</span><span class="sxs-lookup"><span data-stu-id="9900a-145">String</span></span>|<span data-ttu-id="9900a-146">这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。</span><span class="sxs-lookup"><span data-stu-id="9900a-146">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="9900a-147">如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="9900a-147">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="9900a-148">这必须是`https`。</span><span class="sxs-lookup"><span data-stu-id="9900a-148">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="aece6-144">响应</span><span class="sxs-lookup"><span data-stu-id="aece6-144">Response</span></span>
-<span data-ttu-id="aece6-p108">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="aece6-p108">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9900a-149">响应</span><span class="sxs-lookup"><span data-stu-id="9900a-149">Response</span></span>
+<span data-ttu-id="9900a-p110">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9900a-p110">If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="aece6-147">示例</span><span class="sxs-lookup"><span data-stu-id="aece6-147">Examples</span></span>
-<span data-ttu-id="aece6-148">下面的示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="aece6-148">The following examples shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="9900a-152">示例</span><span class="sxs-lookup"><span data-stu-id="9900a-152">Examples</span></span>
+<span data-ttu-id="9900a-153">下面的示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="9900a-153">The following examples show how to call this API.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="aece6-149">请求</span><span class="sxs-lookup"><span data-stu-id="aece6-149">Request</span></span>
-<span data-ttu-id="aece6-150">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="aece6-150">The following example shows the request.</span></span>
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a><span data-ttu-id="9900a-154">示例1：拒绝传入呼叫并使用 ' 占线 ' 原因</span><span class="sxs-lookup"><span data-stu-id="9900a-154">Example 1: Reject an incoming call with 'Busy' reason</span></span>
+#### <a name="request"></a><span data-ttu-id="9900a-155">请求</span><span class="sxs-lookup"><span data-stu-id="9900a-155">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="aece6-151">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="aece6-151">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9900a-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="9900a-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -73,23 +78,22 @@ Content-Length: 24
   "reason": "busy"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="aece6-152">C#</span><span class="sxs-lookup"><span data-stu-id="aece6-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9900a-157">C#</span><span class="sxs-lookup"><span data-stu-id="9900a-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aece6-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aece6-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9900a-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9900a-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="aece6-154">目标-C</span><span class="sxs-lookup"><span data-stu-id="aece6-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9900a-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9900a-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
 --- 
 
 
-##### <a name="response"></a><span data-ttu-id="aece6-155">响应</span><span class="sxs-lookup"><span data-stu-id="aece6-155">Response</span></span>
-<span data-ttu-id="aece6-156">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="aece6-156">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9900a-160">响应</span><span class="sxs-lookup"><span data-stu-id="9900a-160">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -100,13 +104,12 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="reject-an-incoming-call-with-none-reason"></a><span data-ttu-id="aece6-157">拒绝具有 "无" 原因的传入呼叫</span><span class="sxs-lookup"><span data-stu-id="aece6-157">Reject an incoming call with 'None' reason</span></span>
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a><span data-ttu-id="9900a-161">示例2：拒绝具有 "无" 原因的传入呼叫</span><span class="sxs-lookup"><span data-stu-id="9900a-161">Example 2: Reject an incoming call with 'None' reason</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="aece6-158">通知传入</span><span class="sxs-lookup"><span data-stu-id="aece6-158">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="9900a-162">通知传入</span><span class="sxs-lookup"><span data-stu-id="9900a-162">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/call
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,10 +124,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
         "state": "incoming",
         "direction": "incoming",
         "source": {
@@ -156,17 +159,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="aece6-159">请求</span><span class="sxs-lookup"><span data-stu-id="aece6-159">Request</span></span>
-<span data-ttu-id="aece6-160">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="aece6-160">The following example shows the request.</span></span>
-
-# <a name="httptabhttp"></a>[<span data-ttu-id="aece6-161">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="aece6-161">HTTP</span></span>](#tab/http)
+##### <a name="request"></a><span data-ttu-id="9900a-163">请求</span><span class="sxs-lookup"><span data-stu-id="9900a-163">Request</span></span>
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-reject"
+  "blockType": "request",
+  "name": "call-reject-none-reason"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -174,31 +174,21 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="aece6-162">C#</span><span class="sxs-lookup"><span data-stu-id="aece6-162">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aece6-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aece6-163">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="aece6-164">目标-C</span><span class="sxs-lookup"><span data-stu-id="aece6-164">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a><span data-ttu-id="aece6-165">响应</span><span class="sxs-lookup"><span data-stu-id="aece6-165">Response</span></span>
-
+##### <a name="response"></a><span data-ttu-id="9900a-164">响应</span><span class="sxs-lookup"><span data-stu-id="9900a-164">Response</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a><span data-ttu-id="aece6-166">通知-已删除</span><span class="sxs-lookup"><span data-stu-id="aece6-166">Notification - deleted</span></span>
+##### <a name="notification---deleted"></a><span data-ttu-id="9900a-165">通知-已删除</span><span class="sxs-lookup"><span data-stu-id="9900a-165">Notification - deleted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -213,10 +203,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896"
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896"
       }
     }
   ]

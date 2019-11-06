@@ -2,31 +2,31 @@
 title: callMediaState 资源类型
 description: 表示呼叫的媒体状态。
 author: VinodRavichandran
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 6b092598c50663ec9e7803a13332798d05fe095b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 29402e813f6816ebea02ad2bb86c403408c2ff81
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793019"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006745"
 ---
-# <a name="audioconferencing-resource-type"></a><span data-ttu-id="fcf63-103">audioConferencing 资源类型</span><span class="sxs-lookup"><span data-stu-id="fcf63-103">audioConferencing resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="d02c4-103">callMediaState 资源类型</span><span class="sxs-lookup"><span data-stu-id="d02c4-103">callMediaState resource type</span></span>
 
-> <span data-ttu-id="fcf63-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="fcf63-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fcf63-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fcf63-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fcf63-106">表示呼叫[呼叫](call.md)的媒体状态。</span><span class="sxs-lookup"><span data-stu-id="fcf63-106">Represents the media state for a call [call](call.md).</span></span>
+<span data-ttu-id="d02c4-104">表示[呼叫](call.md)的媒体状态。</span><span class="sxs-lookup"><span data-stu-id="d02c4-104">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fcf63-107">属性</span><span class="sxs-lookup"><span data-stu-id="fcf63-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d02c4-105">属性</span><span class="sxs-lookup"><span data-stu-id="d02c4-105">Properties</span></span>
 
-| <span data-ttu-id="fcf63-108">属性</span><span class="sxs-lookup"><span data-stu-id="fcf63-108">Property</span></span>            | <span data-ttu-id="fcf63-109">类型</span><span class="sxs-lookup"><span data-stu-id="fcf63-109">Type</span></span>    | <span data-ttu-id="fcf63-110">说明</span><span class="sxs-lookup"><span data-stu-id="fcf63-110">Description</span></span>                                                                    |
+| <span data-ttu-id="d02c4-106">属性</span><span class="sxs-lookup"><span data-stu-id="d02c4-106">Property</span></span>            | <span data-ttu-id="d02c4-107">类型</span><span class="sxs-lookup"><span data-stu-id="d02c4-107">Type</span></span>    | <span data-ttu-id="d02c4-108">说明</span><span class="sxs-lookup"><span data-stu-id="d02c4-108">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="fcf63-111">audio</span><span class="sxs-lookup"><span data-stu-id="fcf63-111">audio</span></span>           | <span data-ttu-id="fcf63-112">String</span><span class="sxs-lookup"><span data-stu-id="fcf63-112">String</span></span>  | <span data-ttu-id="fcf63-113">音频媒体状态。</span><span class="sxs-lookup"><span data-stu-id="fcf63-113">The audio media state.</span></span> <span data-ttu-id="fcf63-114">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="fcf63-114">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="d02c4-109">audio</span><span class="sxs-lookup"><span data-stu-id="d02c4-109">audio</span></span>           | <span data-ttu-id="d02c4-110">String</span><span class="sxs-lookup"><span data-stu-id="d02c4-110">String</span></span>  | <span data-ttu-id="d02c4-111">音频媒体状态。</span><span class="sxs-lookup"><span data-stu-id="d02c4-111">The audio media state.</span></span> <span data-ttu-id="d02c4-112">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="d02c4-112">Possible values are: `active`, `inactive`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="fcf63-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fcf63-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d02c4-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d02c4-113">JSON representation</span></span>
 
-<span data-ttu-id="fcf63-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fcf63-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d02c4-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d02c4-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
