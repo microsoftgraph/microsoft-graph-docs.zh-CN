@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d3b4b114cdb03b2c7733748115f13ebb9d37ce99
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 37c238052f20e46d82ecb4248936d44822b7377b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544183"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000172"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var call = new Call
 {
     CallbackUri = "https://bot.contoso.com/callback",
-    Targets = new List<ParticipantInfo>()
+    Targets = new List<InvitationParticipantInfo>()
     {
         new ParticipantInfo
         {
