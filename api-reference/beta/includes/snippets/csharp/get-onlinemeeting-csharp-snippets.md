@@ -1,18 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b7955e8f2d5839904a5d4b9f8a7829769b9c0c2b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: eca3dbe622e402ed16fd4c68f66f0bf7cccdcc80
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933836"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37998214"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var onlineMeeting = await graphClient.App.OnlineMeetings["{id}"]
+var onlineMeetings = await graphClient.Communications.OnlineMeetings
     .Request()
+    .Filter("VideoTeleconferenceId eq '123456789'")
     .GetAsync();
 
 ```
