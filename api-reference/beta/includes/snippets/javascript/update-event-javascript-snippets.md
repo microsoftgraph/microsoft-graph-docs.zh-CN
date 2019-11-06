@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: dff2ad1fafcb2082c3e0d914482043ae5db24b1b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f370e2e16ebe1b3050482e2a7f7ee19439079f74
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636507"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000167"
 ---
 ```javascript
 
@@ -25,6 +25,8 @@ const event = {
   recurrence: null,
   uid: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
+  isOnlineMeeting: true,
+  onlineMeetingProvider: "teamsForBusiness",
   isReminderOn: true
 };
 

@@ -3,14 +3,13 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 80c070f1146161b82a24f1086f63d5a121c923d7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: b7a2ac1f38c26ad2d6208d6b382625132018731f
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939836"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969226"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -173,12 +172,16 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | 读取应用程序 | 允许此应用代表已登录的用户读取应用程序和服务主体。 | 是 |
+| _Application.ReadWrite.All_ | 读取和写入所有应用 |  允许此应用代表已登录的用户创建、读取、更新和删除应用程序和服务主体。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | 读取应用程序 | 允许此应用在没有登录用户的情况下读取应用程序和服务主体。 | 是 |
 | _Application.ReadWrite.All_ | 读取和写入所有应用 | 允许调用应用在没有登录用户的情况下创建和管理（读取、更新、更新应用程序密码和删除）应用程序和服务主体。  不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
 | _Application.ReadWrite.OwnedBy_ | 管理此应用创建或拥有的应用 | 允许调用应用在没有登录用户的情况下创建其他应用程序和服务主体，以及完全管理这些应用程序和服务主体（读取、更新、更新应用程序密码和删除）。  它无法更新任何不是其所有者的应用程序。 不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
 
@@ -191,11 +194,12 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="delegated"></a>委派
 
-无。
+* _Application.Read.All_：列出所有应用程序 (`GET /beta/applications`)
+* _Application.ReadWrite.All_：更新服务主体 (`PATCH /beta/servicePrincipals/{id}`)
 
 #### <a name="application"></a>应用程序
 
-* _Application.ReadWrite.All_：列出所有应用程序 (`GET /beta/applications`)
+* _Application.Read.All_：列出所有应用程序 (`GET /beta/applications`)
 * _Application.ReadWrite.All_：删除服务主体 (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)

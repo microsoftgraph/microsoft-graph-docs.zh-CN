@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 66b16f590e48ee5c9c9bce0b5f79174eae968390
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ca8db5cabf2ee88649dec1ed12461f1477a82ad2
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710343"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000171"
 ---
 ```csharp
 
@@ -13,7 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var application = new Application
 {
-    AllowPublicClient = false,
     DisplayName = "New display name"
 };
 

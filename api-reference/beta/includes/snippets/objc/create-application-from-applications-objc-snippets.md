@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0480364e53308ab910557741d4f3de465c05647f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ad6c2420ad602b93e7cb2ff4279ba2842706343c
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711508"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000175"
 ---
 ```objc
 
@@ -17,7 +17,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphApplication *application = [[MSGraphApplication alloc] init];
-[application setAllowPublicClient: true];
 [application setDisplayName:@"Display name"];
 
 NSError *error;

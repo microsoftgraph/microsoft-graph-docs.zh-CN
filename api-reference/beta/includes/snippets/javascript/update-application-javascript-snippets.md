@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1c5c92a606d2877afdb7d99deb39740efaaa04ff
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 16b631e1ea6b47bb4d10a9542c976ae082b369ab
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636587"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000169"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 const application = {
-  allowPublicClient: false,
   displayName: "New display name"
 };
 
