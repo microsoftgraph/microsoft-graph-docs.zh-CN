@@ -1,18 +1,18 @@
 ---
-title: Microsoft Graph 中的社交和工作场所智能概述
+title: Microsoft Graph 中的人员和工作场所智能概述
 description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-scenarios: getting-started
-ms.openlocfilehash: e6bad0a172b10ba7699d3ecd4ff29fcc555bf615
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: e71f63872100dff532df7309585f0a6be2ed352c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792882"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969366"
 ---
-# <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的社交和工作场所智能概述
+# <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
 Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
@@ -92,16 +92,21 @@ GET /me/people/?$search="topic:beetle"
 
 ## <a name="why-integrate-with-myanalytics-preview"></a>为什么要与 MyAnalytics（预览版）集成？
 
-[MyAnalytics](https://docs.microsoft.com/zh-CN/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
+[MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
 
 借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
+
+## <a name="why-integrate-with-the-profile-api-preview"></a>为什么要与配置文件 API（预览版）集成？
+
+[配置文件](/graph/api/resources/profile?view=graph-rest-beta) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。 
 
 ## <a name="api-reference"></a>API 参考
 
 在查找这些服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的人员 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [使用 Microsoft Graph API 在应用中集成社交和工作区智能](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [人脉 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [人脉和工作区智能（预览版）](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [配置文件 API（预览版）](/graph/api/resources/profile?view=graph-rest-beta)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -109,3 +114,4 @@ GET /me/people/?$search="topic:beetle"
 * 了解有关[人员 API](people-example.md) 和[人员](/graph/api/resources/person?view=graph-rest-1.0)实体的详细信息。
 * 若要开始使用见解 API，请参阅[使用见解 API](/graph/api/resources/insights?view=graph-rest-beta)。
 * 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) 的详细信息。
+* 查找有关[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta) 的详细信息。
