@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3caef56676060c37c092aed63bf12a4939bd551e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4f9e521b8fb9c003a5850b80ac06088f10dff628
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938644"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994514"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -26,7 +26,7 @@ ms.locfileid: "37938644"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalItem |
+| 应用程序                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,11 +47,11 @@ PATCH /external/connections/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性      | 类型                                           | 描述 |
+| 属性      | 类型                                           | 说明 |
 |:--------------|:-----------------------------------------------|:------------|
 | 设置 | [configuration](../resources/configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 |
-| description   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
-| name          | 字符串                                         | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 |
+| 说明   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
+| name          | String                                         | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 |
 
 ## <a name="response"></a>响应
 
@@ -62,6 +62,8 @@ PATCH /external/connections/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connection"
@@ -76,6 +78,20 @@ Content-type: application/json
   "description": "Connection to index HR service tickets"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3a4b792803065dc7f2f9567873e81ec369a33f66
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 68d9c6d2499b3610361ab0fdc2b78c188853b65b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938083"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994753"
 ---
 # <a name="update-educationalactivity"></a>更新 educationalactivity
 
@@ -47,7 +47,7 @@ PATCH /me/profile/educationalActivities/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性           | 类型                                                                  | 描述                                                                |
+| 属性           | 类型                                                                  | 说明                                                                |
 |:-------------------|:----------------------------------------------------------------------|:---------------------------------------------------------------------------|
 |completionMonthYear |日期                                                                   | 用户逐步或完成活动的月份和年份。           |
 |endMonthYear        |日期                                                                   | 用户完成所引用的教育活动的月份和年份。 |
@@ -64,6 +64,8 @@ PATCH /me/profile/educationalActivities/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationalactivity"
@@ -104,6 +106,20 @@ Content-type: application/json
   "startMonthYear": "datetime-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

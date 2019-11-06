@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2c328000a775c6dc97fc74c454a21b6699acb390
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 36b4a9ee685678597e1ba809c163e93a3f77416f
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937880"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37998100"
 ---
 # <a name="update-personinterest"></a>更新 personinterest
 
@@ -47,10 +47,10 @@ PATCH /me/profile/interests/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型             | 描述                                                                         |
+| 属性     | 类型             | 说明                                                                         |
 |:-------------|:-----------------|:------------------------------------------------------------------------------------|
-|类别    |String collection | 包含用户与兴趣相关联的类别（例如： personal、recipies）|
-|description   |字符串            | 包含对利息的说明。                                             |
+|categories    |String 集合 | 包含用户与兴趣相关联的类别（例如： personal、recipies）|
+|说明   |字符串            | 包含对利息的说明。                                             |
 |displayName   |String            | 包含利息的友好名称。                                          |
 |webUrl        |String            | 包含指向有关该兴趣的信息源的链接。                        |
 
@@ -63,6 +63,8 @@ PATCH /me/profile/interests/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_personinterest"
@@ -81,6 +83,20 @@ Content-type: application/json
   "webUrl": "webUrl-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personinterest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personinterest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personinterest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

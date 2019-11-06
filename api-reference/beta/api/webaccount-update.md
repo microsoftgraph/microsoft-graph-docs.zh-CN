@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 93378ab41227ca43457fff2b41a27f7ed07bb0f1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: f13a7a350bb3fa2214061c3f8bc1c08a64267223
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938125"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37996133"
 ---
 # <a name="update-webaccount"></a>更新 webAccount
 
@@ -48,11 +48,11 @@ PATCH /me/profile/webAccounts/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型                                                    | 描述                                                                                     |
+| 属性     | 类型                                                    | 说明                                                                                     |
 |:-------------|:--------------------------------------------------------|:------------------------------------------------------------------------------------------------|
 |说明   |字符串                                                   | 包含用户为所引用服务上的帐户提供的说明。 |
 |service       |[serviceInformation](../resources/serviceinformation.md) | 表示有关用户提供的云服务的基本描述性数据。                   |
-|statusMessage |字符串                                                   | 包含来自云服务的状态邮件（如果提供或已同步）。                   |
+|statusMessage |String                                                   | 包含来自云服务的状态邮件（如果提供或已同步）。                   |
 |userId        |String                                                   | 为 webaccount 显示的用户名（例如，@kevinb）。                                       |
 |webUrl        |String                                                   | 包含一个指向云服务上的用户配置文件的链接（如果存在）。                        |
 
@@ -65,6 +65,8 @@ PATCH /me/profile/webAccounts/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_webaccount"
@@ -85,6 +87,20 @@ Content-type: application/json
   "webUrl": "webUrl-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-webaccount-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-webaccount-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-webaccount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13756f6a5c84b999b7322341b65030767535807c
-ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
+ms.openlocfilehash: e9d0483fd37f9b81b1808c1e2c33557fc2a17679
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "37942648"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994891"
 ---
 # <a name="delete-calendarpermission"></a>删除 calendarPermission
 
@@ -64,6 +64,8 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_calendarpermission"
@@ -72,6 +74,20 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

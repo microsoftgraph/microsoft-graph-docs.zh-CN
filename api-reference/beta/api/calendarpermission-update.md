@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1cd959c4ee083ff6ec26914c5f99ccd3d8c3c8f
-ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
+ms.openlocfilehash: 7aee071949fb5d7ded115f131e732b6d3626e6fd
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "37942635"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994835"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
@@ -55,12 +55,12 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |allowedRoles|string 集合| 日历的允许共享权限级别列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
 |emailAddress|[emailAddress](../resources/email.md)| 代表有权访问日历的 sharee。 对于 "My Organization" sharee， **address**属性为 null。 |
 |id|String| 共享日历的用户（sharee）的唯一标识符。 只读。|
-|isInsideOrganization|Boolean| 如此如果上下文中的用户（sharee）与日历所有者在同一个组织中。|
+|isInsideOrganization|布尔| 如此如果上下文中的用户（sharee）与日历所有者在同一个组织中。|
 |isRemovable|Boolean| `True`如果可以从指定日历的 sharees 列表中删除用户， `false`否则为。 "我的组织" 用户决定了贵组织内的其他人对给定日历的权限。 您无法将 "我的组织" 作为 sharee 删除到日历中。|
 |role|calendarRoleType| 日历 sharee 的当前权限级别。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
 
@@ -73,6 +73,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendarpermission"
@@ -99,6 +101,20 @@ Content-type: application/json
   "id": "RGVmYXVsdA=="
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

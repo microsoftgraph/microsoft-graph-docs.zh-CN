@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4fab9f8923c7ff4e03d3312d52af72aae01f2d14
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e2b279da894fcf47a778d194e833dfe5b1008f15
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937614"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37997657"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal： addPassword
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/addPassword
 
 在请求正文中，提供具有以下`passwordCredential`属性的可选对象。
 
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 |
@@ -64,6 +64,8 @@ POST /servicePrincipals/{id}/addPassword
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipal_addpassword"
@@ -79,6 +81,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addpassword-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

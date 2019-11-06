@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1135d889142b66e4ce980244a7f3e6020246228c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: edc1899554f56580dee387003fa7c55593db6f9f
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938637"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994482"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -26,7 +26,7 @@ ms.locfileid: "37938637"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalItem |
+| 应用程序                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 描述                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
 | item-id       | string | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 |
@@ -59,13 +59,13 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ### <a name="externalitem-properties"></a>externalItem 属性
 
-| 属性 | 类型                                  | 描述               |
+| 属性 | 类型                                  | 说明               |
 |:---------|:--------------------------------------|:--------------------------|
 | acl      | [acl](../resources/acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
 
 ### <a name="externalfile-properties"></a>externalFile 属性
 
-| 属性 | 类型                                  | 描述               |
+| 属性 | 类型                                  | 说明               |
 |:---------|:--------------------------------------|:--------------------------|
 | acl      | [acl](../resources/acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
 
@@ -78,6 +78,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalitem"
@@ -98,6 +100,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>响应

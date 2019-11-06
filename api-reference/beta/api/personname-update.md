@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 97a4497b88e7cb065ea5ad73229dc4acc8c45556
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: f288d73956b79c0ab5c47524239069f2c239791c
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937859"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37997208"
 ---
 # <a name="update-personname"></a>更新 contact.personname
 
@@ -47,18 +47,18 @@ PATCH /me/profile/names/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型                                            | 描述                                                                             | 
+| 属性     | 类型                                            | 说明                                                                             | 
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |String                                           | 提供名和姓的顺序呈现。                              |
-|前         |字符串                                           | 用户的名字。                                                                 |
+|前         |String                                           | 用户的名字。                                                                 |
 |initials      |String                                           | 用户的首字母缩写。                                                                   |
-|languageTag   |字符串                                           | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。   |
-|末          |字符串                                           | 用户的姓氏。                                                                  |
-|maiden        |字符串                                           | 用户的预 marriage 姓。                                                          |
-|中间        |字符串                                           | 用户的中间名。                                                                     |
-|昵称      |字符串                                           | 用户的昵称。                                                                        |
+|languageTag   |String                                           | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。   |
+|末          |String                                           | 用户的姓氏。                                                                  |
+|maiden        |String                                           | 用户的预 marriage 姓。                                                          |
+|中间        |String                                           | 用户的中间名。                                                                     |
+|昵称      |String                                           | 用户的昵称。                                                                        |
 |拼音 |[yomiPersonName](../resources/yomipersonname.md) | 包含有关用户姓名的读音的详细信息。                                 |
-|后缀        |字符串                                           | 在 users 名称之后使用的指示符。 （例如： PhD.）                                       |
+|后缀        |String                                           | 在 users 名称之后使用的指示符。 （例如： PhD.）                                       |
 |title         |字符串                                           | Honorifics 用于为用户名称加前缀。 （例如： Dr.、罗德、Madam、Mrs）                      |
 
 ## <a name="response"></a>响应
@@ -70,6 +70,8 @@ PATCH /me/profile/names/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_personname"
@@ -88,6 +90,20 @@ Content-type: application/json
   "maiden": "maiden-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

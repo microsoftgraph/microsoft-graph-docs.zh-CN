@@ -5,19 +5,19 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: c30df0bf19aeab48fab7655fd134dbc1cfe13195
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8eb35ea0ade2e7d471674d8d064ba0ac38b361cc
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938160"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37996262"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中，并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 您的应用程序服务不需要任何额外的权限即可向目标用户发布通知。  
 
 > [!IMPORTANT]
@@ -27,7 +27,7 @@ ms.locfileid: "37938160"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Notifications.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | Notifications.ReadWrite.CreatedByApp    |
-| Application                           | 不支持。 |
+| 应用程序                           | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -54,6 +54,8 @@ POST /me/notifications/
 ### <a name="request"></a>请求
 请求示例如下所示。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notification_from_user"
@@ -86,6 +88,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-notification-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
