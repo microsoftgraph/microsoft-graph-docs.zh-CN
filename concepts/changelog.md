@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5f28bf11489eab7b2230182af7f0288a2c47d320
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 1a60a2ae799ec955b184742b56741f5f14348152
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969855"
+ms.locfileid: "37998607"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -23,6 +23,12 @@ ms.locfileid: "37969855"
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 增加了[更新会议室或会议室列表](/graph/api/resources/place-get?view=graph-rest-beta)的能力。|
+
+### <a name="education"></a>教育
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 已将 [classSettings](/api-reference/beta/resources/teamclasssettings.md) 属性添加到[团队](/api-reference/beta/resources/team.md)资源，以允许调用方获取特定于班级类型的团队的设置。|
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
@@ -1022,7 +1028,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项        | Beta 和 v1.0 | 添加了 [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) 方法。 |
+| Addition        | Beta 和 v1.0 | 添加了 [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) 方法。 |
 
 ### <a name="security"></a>安全性
 
@@ -1792,7 +1798,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |删除|beta|在 [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta) 上删除了 unshareForSchoolDataSyncService 操作 |
 |删除|beta|在 [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta) 上删除了 exportMobileConfig](/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) 函数 |
 |添加项|beta|向 [androidEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-androideasemailprofileconfiguration?view=graph-rest-beta) 实体添加了 **userDomainNameSource** 和 **customDomainName** 属性|
-|添加项|beta|向 [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **workProfileBlockCamera** 和 **workProfileBlockCrossProfileContactsSearch** 属性|
+|Addition|beta|向 [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **workProfileBlockCamera** 和 **workProfileBlockCrossProfileContactsSearch** 属性|
 |添加项|beta|向 [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **workProfileBlockCamera** 和 **workProfileBlockCrossProfileContactsSearch** 属性|
 |添加项|beta|向 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体添加了 **thirdPartyKeyboardsBlocked** 和 **filterOpenInToOnlyManagedApps** 属性|
 |添加项|beta|向 [deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) 实体添加了 **conflictCount** 属性|
