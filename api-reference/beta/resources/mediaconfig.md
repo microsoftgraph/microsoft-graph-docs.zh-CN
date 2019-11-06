@@ -3,14 +3,14 @@ title: mediaConfig 资源类型
 description: 用于连接到呼叫的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4d00470d517c4d701a028a1911efe02a6f441639
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f42f83923922cdf868dfa39ea3618f7fed2a37c6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009774"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006674"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "36009774"
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | 布尔 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

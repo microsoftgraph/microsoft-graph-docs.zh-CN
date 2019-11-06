@@ -3,22 +3,25 @@ title: 呼叫：重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: db432612507c9ebafd595350575557f52450fe4f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792263"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005923"
 ---
 # <a name="call-redirect"></a>呼叫：重定向
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重定向传入呼叫。
+重定向尚未[应答](./call-answer.md)或[拒绝](./call-reject.md)的传入呼叫。 术语 "重定向" 和 "转发" 可交换使用呼叫。
 
-## <a name="permissions"></a>权限
+在呼叫超时之前，机器人应重定向呼叫。当前超时值为15秒。
+
+## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）         |
@@ -28,69 +31,122 @@ ms.locfileid: "36792263"
 | 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/redirect
-POST /applications/{id}/calls/{id}/redirect
+POST /communications/calls/{id}/redirect
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|String|可能的值为：`default`|
-|timeout|Int32|重定向操作的超时时间（秒）。|
-|maskCallee|Boolean|指示是否屏蔽被叫方。|
-|maskCaller|Boolean|指示是否屏蔽调用方。|
-|callbackUri|String|允许 bot 提供特定的回调 URI，在此 URI 中，重定向操作的结果将被发布。 这允许将结果发送到触发重定向操作的相同特定 bot 实例。 如果未提供，则将使用 bot 的全局回调 URI。|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。 如果指定了多个目标，则为同时调用。 这意味着将同时 rang 所有目标，并且只会连接所选取的第一个目标。 对于同时，我们最高支持25个目标。
+|targetDisposition|String|被可能的值为： `default` 、 `simultaneousRing` 、 `forward`。 此参数已弃用，我们将自动确定它是在提供的目标数量中进行前向呼叫还是同时呼叫。|
+|timeout|Int32|重定向操作的超时（以秒为单位）。 超时值的范围介于15和90秒之间（含这两个值）。 对于多个目标，默认超时值为55秒，为多个目标为60秒（可能会发生更改）。 |
+|maskCallee|布尔|指示是否要在呼叫者中隐藏被叫方。 如果为 true，则被叫方标识为 bot 标识。 默认值： false。|
+|maskCaller|布尔|指示是否对被呼叫方隐藏呼叫者。 如果为 true，则呼叫者标识为 bot 标识。 默认值： false。|
+|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码
+如果成功，此方法返回 `202 Accepted` 响应代码。
 
 ## <a name="examples"></a>示例
+这些示例将涵盖传入呼叫通知的工作流以及该呼叫将如何重定向。
 
-### <a name="redirect-a-call"></a>重定向呼叫
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
+### <a name="example-1-forward-a-call-to-a-target"></a>示例1：将呼叫转接到目标
+
+##### <a name="notification---incoming"></a>通知传入
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
 
 ##### <a name="request"></a>请求
-下面为请求示例。
 
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "request", 
   "name": "call-redirect"
-}-->
-```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
+} -->
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
 Content-Type: application/json
-Content-Length: 515
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+        "@odata.type": "#microsoft.graph.identitySet",
+        "application": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test bot 2",
+          "id": "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 99,
-  "maskCallee": false,
-  "maskCaller": false
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -101,75 +157,141 @@ Content-Length: 515
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
+##### <a name="notification---terminated"></a>通知终止
 
-### <a name="forward-a-call"></a>转接呼叫
-
-##### <a name="notification---incoming"></a>通知传入
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+``` json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
+        "state": "terminated",
         "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
         "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
             }
           },
-          "region": "westus",
-          "languageId": "en-US"
+          "region": "amer",
         },
         "targets": [
           {
+            "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
               "application": {
-                "displayName": "Test BOT",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
-        "requestedModalities": [ "audio", "video" ]
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>示例2：通过同时响铃向多个目标转发呼叫
+
+##### <a name="notification---incoming"></a>通知传入
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]
@@ -178,98 +300,109 @@ Content-Type: application/json
 
 ##### <a name="request"></a>请求
 
-```http
-POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "request", 
+  "name": "call-redirect-simuring"
+} -->
+
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
 Content-Type: application/json
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b1253"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user 2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c9c3f3"
+        }
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 60,
-  "maskCallee": false,
-  "maskCaller": false
+  "routingPolicies": [
+    "disableForwarding"
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 
 ##### <a name="response"></a>响应
 
-```http
-HTTP/1.1 202 Accepted
-```
-
-##### <a name="notification---redirecting"></a>通知-重定向
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "redirecting"
-      }
-    }
-  ]
-}
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+
+``` http
+HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="notification---terminated"></a>通知终止
 
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
+Content-Type: application/json
+
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "answeredBy": {
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User 2",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
             }
           }
-        },
-        "terminationReason": "AppRedirected"
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]

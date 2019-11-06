@@ -1,29 +1,30 @@
 ---
 title: organizerMeetingInfo 资源类型
-description: 包含会议组织者的会议信息。
+description: '包含有关会议组织者的详细信息。 '
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cdb23ebfe16822e4caa4374fbc8e21697533c7cc
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009270"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006604"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含会议组织者的会议信息。
+包含有关会议组织者的详细信息。 
+
+若要加入现有会议，必须提供 organizerMeetingInfo 和[chatInfo](./chatinfo.md)资源类型或[tokenMeetingInfo](./tokenmeetinginfo.md)资源类型的组合。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | 指示会话离开的主机后是否可以继续会话。 |
-| organizer － 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
+| 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -34,32 +35,11 @@ ms.locfileid: "36009270"
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.meetingInfo",
-   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.organizerMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "organizer": {
-    "user": {
-      "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-      "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-    }
-  }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 

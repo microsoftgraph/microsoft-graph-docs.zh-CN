@@ -3,14 +3,14 @@ title: 调用： cancelMediaProcessing
 description: 取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4cbadbafe054ceefc74e7bc057d6d5ef1218280e
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 1463489c82d1595e1bdcaa9629e5f306b95aa19f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792450"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006359"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792450"
 
 取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -31,7 +31,9 @@ ms.locfileid: "36792450"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/cancelMediaProcessing
+POST /communications/calls/{id}/cancelMediaProcessing
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -43,7 +45,7 @@ POST /app/calls/{id}/cancelMediaProcessing
 
 | 参数      | 类型    | 说明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| 各种            | Boolean | 指示是否停止所有操作或当前操作的标志。 |
+| 各种            | 布尔 | 指示是否停止所有操作或当前操作的标志。 |
 | 适用  | String  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
@@ -56,13 +58,13 @@ POST /app/calls/{id}/cancelMediaProcessing
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-cancelMediaProcessing"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing
+POST https://graph.microsoft.com/beta/communications/calls/{id}/cancelMediaProcessing
 Content-Type: application/json
 Content-Length: 62
 
@@ -79,7 +81,7 @@ Content-Length: 62
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-cancelmediaprocessing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-cancelmediaprocessing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,18 +95,25 @@ Content-Length: 62
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.cancelMediaProcessingOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
+
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -114,13 +123,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"

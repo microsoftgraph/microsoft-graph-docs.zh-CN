@@ -1,29 +1,29 @@
 ---
-title: '调用: playPrompt'
+title: 调用： playPrompt
 description: 在呼叫中播放提示。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4712af56948b880cabbc51c1b6a0e61dc20827b7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 465cd7a0695d7c8dee510b68a75c8b08b99cdc31
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317653"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005977"
 ---
-# <a name="call-playprompt"></a>调用: playPrompt
+# <a name="call-playprompt"></a>调用： playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在呼叫中播放提示。
 
-有关如何处理操作的详细信息, 请参阅[commsOperation](../resources/commsoperation.md)
+有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsoperation.md)
 
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**playPrompt**操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -37,7 +37,9 @@ ms.locfileid: "36317653"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
+POST /communications/calls/{id}/playPrompt
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -49,12 +51,12 @@ POST /app/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|MediaPrompt 集合| 目前, 仅支持单个提示符, 类型[MediaPrompt](../resources/mediaprompt.md) 。|
-|loop|Boolean| 循环值。 如果为 True, 则表示无限循环。 默认值为 false。 |
+|提示|MediaPrompt 集合| 目前，仅支持单个提示符，类型[MediaPrompt](../resources/mediaprompt.md) 。|
+|loop|布尔| 循环值。 如果为 True，则表示无限循环。 默认值为 false。 |
 |适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -63,13 +65,13 @@ POST /app/calls/{id}/playPrompt
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt
 Content-Type: application/json
 Content-Length: 166
 
@@ -107,14 +109,12 @@ Content-Length: 166
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
   "@odata.type": "#microsoft.graph.playPromptOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 
@@ -122,11 +122,10 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
 
- >**注意:** 如果发生无限循环, 则不会发送此通知。
+ >**注意：** 如果发生无限循环，则不会发送此通知。
  
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -141,10 +140,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.playPromptOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"

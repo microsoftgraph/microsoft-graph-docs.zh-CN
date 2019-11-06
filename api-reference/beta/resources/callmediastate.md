@@ -2,21 +2,21 @@
 title: callMediaState 资源类型
 description: 表示呼叫的媒体状态。
 author: VinodRavichandran
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 6b092598c50663ec9e7803a13332798d05fe095b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 29402e813f6816ebea02ad2bb86c403408c2ff81
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793019"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006745"
 ---
-# <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
+# <a name="callmediastate-resource-type"></a>callMediaState 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示呼叫[呼叫](call.md)的媒体状态。
+表示[呼叫](call.md)的媒体状态。
 
 ## <a name="properties"></a>属性
 

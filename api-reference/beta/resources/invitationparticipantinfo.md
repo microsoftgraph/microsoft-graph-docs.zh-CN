@@ -1,32 +1,32 @@
 ---
 title: invitationParticipantInfo 资源类型
-description: '**InvitationParticipant**用于表示与对话邀请关联的一组标识, 并提供其他邀请参数。'
+description: '**InvitationParticipant**用于表示与对话邀请关联的一组标识，并提供其他邀请参数。'
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e25e65fb87f664788b0649f188def29b62c13d2
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967152"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006689"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**InvitationParticipant**用于表示与对话邀请关联的一组标识, 并提供其他邀请参数。
+此资源用于表示与对话邀请关联的一组标识，并提供其他邀请参数。
 
 ## <a name="properties"></a>属性
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | 可取值为：`default`、`voicemail`。 |
+| endpointType                       | String                        | 终结点的类型。 可取值为：`default`、`voicemail`。 |
 | 窃取                           | [identitySet](identityset.md) | 与此邀请关联的[了解 identityset](identityset.md) 。                   |
 | languageId                         | String                        | 语言区域性字符串。                                                                                     |
 | 范围                             | String                        | 参与者的地区。                                                           |
-| replacesCallId                     | 字符串                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后, 将删除此呼叫。 |
+| replacesCallId                     | String                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后，将删除此呼叫。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

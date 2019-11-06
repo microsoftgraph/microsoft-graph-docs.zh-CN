@@ -3,14 +3,14 @@ title: 获取参与者
 description: 检索**参与者**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7e53db08d8c1726b5869ae2f68180c1f37417f0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 73ad70fa54104f973b59ae6f2f8c3b4196fe18e1
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792595"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006506"
 ---
 # <a name="get-participant"></a>获取参与者
 
@@ -18,8 +18,7 @@ ms.locfileid: "36792595"
 
 检索**参与者**对象的属性和关系。
 
-## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -31,7 +30,9 @@ ms.locfileid: "36792595"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
+GET /communications/calls/{id}/participants/{id}
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -52,13 +53,13 @@ GET /app/calls/{id}/participants/{id}
 ##### <a name="request"></a>请求
 下面为请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-participant"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
+```http
+GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
@@ -68,7 +69,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,47 +88,41 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
 
 {
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "isInLobby": true,
-  "isMuted": true,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "initiatedBy": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
+   "@odata.type":"#microsoft.graph.participant",
+   "info":{
+      "@odata.type":"#microsoft.graph.participantInfo",
+      "identity":{
+         "@odata.type":"#microsoft.graph.identitySet",
+         "application":{
+            "@odata.type":"#microsoft.graph.identity",
+            "displayName":"Display Name",
+            "id":"278405a3-f568-4b3e-b684-009193463064",
+            "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+         "user":null,
+         "device":null,
+         "phone":null
       },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    },
-    "status": "recordingCapable"
-  }
+      "id":null
+   },
+   "mediaStreams":[
+      {
+         "@odata.type":"#microsoft.graph.mediaStream",
+         "mediaType":"audio",
+         "sourceId":"1",
+         "direction":"sendReceive",
+         "serverMuted":false,
+         "label":null
+      }
+   ],
+   "isMuted":false,
+   "isInLobby":false,
+   "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
+   "metadata":null,
+   "recordingInfo":null
 }
 ```
 

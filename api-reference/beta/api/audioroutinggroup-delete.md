@@ -3,14 +3,14 @@ title: 删除音频路由组
 description: 删除指定的音频路由组。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2e1bea10e2aa19f1503ca96fa34ceac6c033d891
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 4155f02b6c4f6eda7366734bd3f13dd2313d907d
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792469"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006408"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792469"
 
 删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）  |
@@ -31,7 +31,9 @@ ms.locfileid: "36792469"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
+DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -50,13 +52,13 @@ DELETE /app/calls/{id}/audioRoutingGroups/{id}
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-audioRoutingGroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]
@@ -66,7 +68,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

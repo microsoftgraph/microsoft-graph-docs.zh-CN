@@ -1,28 +1,33 @@
 ---
 title: call： record
-description: 录制呼叫。
+description: 录制来自通话的短音频剪辑。 如果 bot 希望在出现提示后从呼叫者处捕获语音响应，这将非常有用。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd42f1099e922e79292cfddb667f38a9e8c9fb3d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: dc240c00e16db17e438c19ae792ce73425ed2350
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792259"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006058"
 ---
 # <a name="call-record"></a>call： record
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从呼叫中录制简短的音频剪辑。 如果 bot 希望在发出提示后从呼叫者处捕获语音响应，这将非常有用。
+从呼叫中录制简短的音频剪辑。
+在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。
 
-> [!Note]
-> 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持 record 操作。 此操作不会记录整个调用。 录制的最大长度为5分钟。 录制不会由云通信平台 permamently 保存，在呼叫结束后不久将被丢弃。 在录制操作完成后，机器人必须立即下载录制（使用已完成通知中给出的**recordingLocation**值）。
+有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsOperation.md)
 
+>**注意：** 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持这样做。
 
-## <a name="permissions"></a>权限
+此操作不用于记录整个调用。 录制的最大长度为5分钟。 录制不会由云通信平台永久保存，并且在呼叫结束后不久将被丢弃。 在录制操作完成后，bot 必须使用已完成的通知中提供的 recordingLocation 值立即下载录制。
+
+>**注意：** 任何收集的媒体都**不**会保留。 请确保在呼叫录音时遵守地区的法律和法规。 有关详细信息，请咨询法律顾问。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -35,7 +40,9 @@ ms.locfileid: "36792259"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
+POST /communications/calls/{id}/record
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -48,13 +55,13 @@ POST /app/calls/{id}/record
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合（如果有）。 客户可以选择单独指定 "playPrompt" 操作，也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。 当前支持仅作为集合的一部分的单个提示。 |
-|bargeInAllowed|Boolean| 如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|布尔| 如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录操作之前，可以从开始时开始的最大初始静音（用户无声），并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的记录操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
-|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String collection|指定结束录音的停止音。|
-|适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
+|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|String 集合|指定结束录音的停止音。|
+|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。
@@ -62,17 +69,19 @@ POST /app/calls/{id}/record
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 
+### <a name="example-1-record-a-short-audio-clip-from-a-call"></a>示例1：从呼叫中录制简短的音频剪辑
+
 ##### <a name="request"></a>请求
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-record"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/record
 Content-Type: application/json
 Content-Length: 394
 
@@ -114,13 +123,11 @@ Content-Length: 394
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
   "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
@@ -133,7 +140,6 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -143,13 +149,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.recordOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
@@ -162,28 +170,28 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="get-recording-file---request"></a>获取录制文件-请求
-下面的示例展示了获取录制内容的请求。
+### <a name="example-2-retrieving-the-recording-file"></a>示例2：检索录制文件
+
+> **注意：** 虽然您可以提取并处理录制，但您**必须**在以后将其删除。 无法持久化媒体。
+
+##### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
+  "blockType": "ignored"
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Authorization: Bearer <recordingAccessToken>
 ```
 
-##### <a name="get-recording-file---response"></a>获取录制文件-响应
-下面是一个响应示例。 
+##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
-  "truncated": true
+  "blockType": "ignored"
 }-->
+
 ```http
-GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Date: Thu, 17 Jan 2019 01:46:37 GMT
 Content-Type: application/octet-stream

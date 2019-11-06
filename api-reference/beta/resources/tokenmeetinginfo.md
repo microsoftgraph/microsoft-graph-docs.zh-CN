@@ -3,27 +3,28 @@ title: tokenMeetingInfo 资源类型
 description: TokenMeetingInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0df9a7a66420f20ff62677f54e617d64e9db0273
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5bb992d61ad34723266523d813fcd8e4e0f8e79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007541"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006527"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TokenMeetingInfo 类型。
+这是允许你加入现有会议的令牌信息。 这是作为传入呼叫通知的一部分获取的。 
+
+在断开呼叫的情况下，此信息可以帮助您重新加入该呼叫。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型    | 说明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | 指示会话离开的主机后是否可以继续会话。 |
-| token                        | String  | 要加入/激活会议的令牌。                                        |
+| 令牌                        | String  | 用于加入呼叫的令牌。                                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -34,26 +35,11 @@ TokenMeetingInfo 类型。
   "optionalProperties": [
 
   ],
-   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "token": "String"
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.tokenMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "token": "ABCD123"
+    "token": "String"
 }
 ```
 

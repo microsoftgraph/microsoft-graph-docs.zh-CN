@@ -3,14 +3,14 @@ title: 调用： subscribeToTone
 description: 订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a81c6440d320f74411f1ffefb94a6fea14945b14
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 50ff5f41c7637ebe79771db81889e89f982a0d92
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792525"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005935"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -21,7 +21,7 @@ ms.locfileid: "36792525"
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -34,7 +34,9 @@ ms.locfileid: "36792525"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
+POST /communications/calls/{id}/subscribeToTone
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -58,13 +60,13 @@ POST /app/calls/{id}/subscribeToTone
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-subscribeToTone"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone
+POST https://graph.microsoft.com/beta/communications/calls/{id}/subscribeToTone
 Content-Type: application/json
 Content-Length: 46
 
@@ -80,7 +82,7 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-subscribetotone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,12 +100,13 @@ Content-Length: 46
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
+Content-Type: application/json
+Content-Length: 259
 
 {
   "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
   "status": "completed",
-  "createdDateTime": "2019-07-18T19:52:30Z",
-  "lastActionDateTime": "2019-07-18T19:52:31Z",
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
 }
 ```
@@ -115,7 +118,6 @@ HTTP/1.1 200 OK
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -125,10 +127,12 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/421f1100-411f-4a29-8514-dbbb9caff45",
+      "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "established",

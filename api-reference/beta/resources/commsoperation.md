@@ -3,34 +3,35 @@ title: commsOperation 资源类型
 description: 某个长时间运行的操作的状态。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a10b652179a8a3d369c07d34cb2681c4986b3abf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07be6f3b5cf9e3d5e7a1a1300a94da9b5204a68a
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012896"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006696"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-某个长时间运行的操作的状态。
+表示某个长时间运行的操作的状态。
 
-## <a name="methods"></a>方法
-无
+此资源可以作为对操作的响应返回，也可以作为[commsNotification](commsNotification.md)的内容返回。  
+
+如果作为操作的响应返回，则状态指示是否会出现后续通知。 例如，如果返回状态为`completed`或`failed`的操作，则不会通过通知通道进行任何后续操作。 
+
+如果`null`操作或返回状态为`notStarted`或`running`的操作，后续更新将通过通知通道发出。
 
 ## <a name="properties"></a>属性
 
 | 属性           | 类型                        | 说明                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| 适用      | String                      | 客户端上下文。                                                             |
-| createdDateTime    | DateTimeOffset              | 操作的开始时间。                                                |
-| id                 | String                      | 操作 id。只读。 由服务器生成。                                  |
-| lastActionDateTime | DateTimeOffset              | 操作的上一操作的时间。                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。 由服务器生成。                            |
-| status             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| 适用      | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                           |
+| id                 | String                      | 操作 ID。 只读。                                                    |
+| resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。                                              |
+| 状态             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -49,31 +50,9 @@ ms.locfileid: "36012896"
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation"
-}-->
-```json
-{
-  "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
-    "code": "200"
-  },
-  "status": "completed"
 }
 ```
 

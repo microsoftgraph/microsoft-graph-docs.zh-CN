@@ -3,14 +3,14 @@ title: 更新音频路由组
 description: 修改 audioRoutingGroup 的源和接收器。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef5c5a3ff1a8b152f776f5d0adf5bf6a498d8593
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 993695ead1dc881a721ffc360cfb1e9abd75556d
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792434"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006373"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792434"
 
 修改[audioRoutingGroup](../resources/audioroutinggroup.md)的源和接收器。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                |
@@ -31,7 +31,9 @@ ms.locfileid: "36792434"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
+PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -43,9 +45,9 @@ PATCH /app/calls/{id}/audioRoutingGroups/{id}
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| 接收器 | String collection | AudioRoutingGroup 中的目标参与者。 |
+| 接收器 | String 集合 | AudioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |
-| 源 | String collection | AudioRoutingGroup 中的源参与者。 |
+| 源 | String 集合 | AudioRoutingGroup 中的源参与者。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
@@ -56,15 +58,14 @@ PATCH /app/calls/{id}/audioRoutingGroups/{id}
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update-audioRoutingGroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -86,7 +87,7 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +105,6 @@ Content-Length: 233
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",

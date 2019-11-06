@@ -3,14 +3,14 @@ title: recordOperation 资源类型
 description: RecordOperation 类型
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: 22b1fbd157b6b13d0b839a898440ee289aa2ec73
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36061996"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006555"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -22,15 +22,13 @@ RecordOperation 类型
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 客户端上下文。                                                                                                                               |
+| 适用                  | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
 | completionReason               | String                      | 可取值为：`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none`。 |
-| createdDateTime                | DateTimeOffset              | 创建录制的时间。                                                                                                          |
-| id                             | String                      | 服务器操作 id。只读。 由服务器生成。                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | 操作的上一操作的时间。                                                                                                     |
+| id                             | String                      | 服务器操作 id。只读。                                                                                              |
 | recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
 | recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。 由服务器生成。                                                                                             |
-| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 由服务器生成。                                                 |
+| resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 
 ## <a name="relationships"></a>关系
 无
@@ -50,30 +48,11 @@ RecordOperation 类型
 {
   "clientContext": "String",
   "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "recordingAccessToken": "String",
   "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.recordOperation",
-  "truncated": true
-}-->
-```json
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordingAccessToken": "<access-token>",
-  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "status": "completed"
 }
 ```
 

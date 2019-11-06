@@ -3,14 +3,14 @@ title: playPromptOperation 资源类型
 description: 用于获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b79fa774c112433b09d75eb04f16823f2dad9b6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b54fbce830f5b505decee7e2d25618700728b3
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008976"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006576"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 
@@ -22,13 +22,11 @@ ms.locfileid: "36008976"
 
 | 属性            | 类型                        | 说明|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| 适用       | String                      | 客户端上下文。                                                                |
+| 适用       | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                              |
 | completionReason    | String                      | 可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。 |
-| createdDateTime     | DateTimeOffset              | 操作的开始时间。                                                   |
-| id                  | String                      | 只读。                                                                         |
-| lastActionDateTime  | DateTimeOffset              | 操作的上一操作的时间。                                      |
-| resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。 由服务器生成。                               |
-| status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
+| id                  | 字符串                      | 只读。                                                                         |
+| resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                |
+| 状态              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系
 无
@@ -48,9 +46,7 @@ ms.locfileid: "36008976"
 {
   "clientContext": "String",
   "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }

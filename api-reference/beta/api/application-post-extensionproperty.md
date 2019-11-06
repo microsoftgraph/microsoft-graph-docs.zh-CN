@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f5bf4d0424d9cffd872671ffda027b38357fc7e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5194281dee925171f8834b7e8dde76cf60b17244
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935241"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006429"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "37935241"
 
 创建新的[extensionProperty](../resources/extensionproperty.md)定义。 您可以使用此操作将自定义属性值添加到 extensionProperty 中定义的目标对象类型，使用目标对象的标准创建和更新请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,11 +47,11 @@ POST /applications/{id}/extensionProperties
 在请求正文中，提供具有以下属性的[extensionProperty](../resources/extensionproperty.md)对象。
 
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
-|name|字符串| 扩展属性的名称。 不可为空。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
+|name|String| 扩展属性的名称。 不可为 null。 |
+|targetObjects|String 集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应
@@ -63,6 +63,8 @@ POST /applications/{id}/extensionProperties
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_extensionproperty_from_application"
@@ -80,6 +82,20 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-extensionproperty-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

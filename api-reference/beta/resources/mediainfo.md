@@ -3,14 +3,14 @@ title: mediaInfo 资源类型
 description: 在提示操作中使用的媒体信息。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a5e5677cb479839449a5e82323729b68201791a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef58bb2ca80ec18a1d11c0e3d2e976e6d7fa2bb9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966850"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006667"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "35966850"
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | 可选, 用于唯一标识资源。 如果传递了提示 uri, 则会将此 resourceId 作为密钥进行缓存。 |
-| url            | String  | 要播放的提示的路径。 目前仅支持带有 16000 (16KHz) 采样速率的波形文件 (.wav) 格式的单通道、16位样本。 |
+| resourceId     | String  | 可选，用于唯一标识资源。 如果传递了提示 uri，则会将此 resourceId 作为密钥进行缓存。 |
+| url            | String  | 要播放的提示的路径。 目前仅支持带有16000（16KHz）采样速率的波形文件（.wav）格式的单通道、16位样本。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -3,14 +3,14 @@ title: participantMixerLevel 资源类型
 description: 给定音频参与者的混音器级别配置
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 27ddc297f779d1a40350bd4cc24015a2c60dd9ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc305274d619a3686d4d391516947f1d06b92745
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966228"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006583"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "35966228"
 
 | 属性               | 类型                                                      | 说明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 此 partipant 自定义组合的其他源的 ducking (逐步淘汰 in 和 out) 配置。       |
+| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 此 partipant 自定义组合的其他源的 ducking （逐步淘汰 in 和 out）配置。       |
 | exclusiveMode          | boolean                                                   | 是否应从组合中删除没有显式源级别的源。                       |
 | 参与者            | String                                                    | 为其配置了混合器的参与者。                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md)集合        | 其他源的级别配置。                                                              |

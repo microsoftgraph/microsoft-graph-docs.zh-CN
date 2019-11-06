@@ -3,14 +3,14 @@ title: mediaStream 资源类型
 description: MediaStream 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63fad1d064c4ab967bba6df8bed6dbcdd20a3d69
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966823"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006653"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
@@ -25,7 +25,7 @@ MediaStream 类型。
 | direction   | String  | 方向。 可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | 媒体流标签。                                                                                       |
 | 群组   | String  | 媒体类型。 可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。        |
-| serverMuted | Boolean | 如果服务器已将媒体设为静音。                                                                          |
+| serverMuted | 布尔 | 如果服务器已将媒体设为静音。                                                                          |
 | sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -35,7 +35,8 @@ MediaStream 类型。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "serverMuted"
+    "serverMuted",
+    "label"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->

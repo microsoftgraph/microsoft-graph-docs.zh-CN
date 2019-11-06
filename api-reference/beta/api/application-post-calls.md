@@ -3,14 +3,14 @@ title: 创建调用
 description: 创建新呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fbc2fb015d7e57a05e1dc51429343ce38fc2b3e9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968991"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006443"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,8 +18,10 @@ ms.locfileid: "37968991"
 
 "创建[呼叫](../resources/call.md)" 使你的 bot 能够创建新的传出呼叫或加入现有会议。 你需要[注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。
 
+> **注意：** 目前，仅支持 VoIP 呼叫。 
 
 ## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                             |
@@ -28,45 +30,47 @@ ms.locfileid: "37968991"
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
 | 应用程序                            | JoinGroupCallsasGuest、JoinGroupCalls、calls、InitiateGroupCalls、All、和。 |
 
-> **注意：** 此外，对于具有应用托管媒体的呼叫，您需要 AccessMedia 权限。
+> **注意：** 对于具有应用程序托管媒体的呼叫，您需要 AccessMedia 具有上表中列出的权限之一的所有权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
+POST /communications/calls
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。
-
-> **注意：** 在`Server generated` `app/calls`处理`POST`时，被标记为的属性将被忽略。
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>使用服务托管媒体创建对等 VOIP 呼叫
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例1：使用服务托管媒体创建对等 VoIP 呼叫
 
 > **注意：** 此调用需要调用. Initiate。 All 权限。
 
 ##### <a name="request"></a>请求
-以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。 在此示例中，媒体由服务托管。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
+以下示例显示了在 bot 和指定用户之间进行对等呼叫的请求。 在此示例中，媒体由服务托管。 必须使用实际值替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，以使示例正常工作。
+
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-from-application"
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -109,7 +113,7 @@ Authorization: Bearer <Token>
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
@@ -118,9 +122,8 @@ Authorization: Bearer <Token>
 } -->
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
-
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -135,7 +138,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -195,7 +198,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -210,7 +212,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
+      "resourceUrl": "/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -225,7 +227,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -240,7 +241,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
+      "resourceUrl": "/communications/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -254,27 +255,38 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>使用应用程序托管媒体创建对等 VOIP 呼叫
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例2：使用应用程序托管媒体创建对等 VoIP 呼叫
 
-> 注意：需要调用. Initiate. All 和 AccessMedia 权限。
+> **注意**：此示例需要调用 AccessMedia 所有权限。
 
 ##### <a name="request"></a>请求
-以下示例显示了在 bot 和指定用户之间建立对等呼叫的请求。 在此示例中，媒体由应用程序本地承载。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
-
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
+以下示例显示了在 bot 和指定用户之间进行对等呼叫的请求。 在此示例中，媒体由应用程序本地承载。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
   "targets": [
     {
       "@odata.type": "#microsoft.graph.participantInfo",
@@ -293,7 +305,7 @@ Authorization: Bearer <Token>
   ],
  "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
+    "blob": "<Media Session Configuration>"
   }
 }
 ```
@@ -306,7 +318,212 @@ Authorization: Bearer <Token>
 
 >**注意：** 对于点对点呼叫，预期的通知仅适用于呼叫状态更改。
 
-### <a name="join-scheduled-meeting-with-service-hosted-media"></a>加入服务托管媒体的计划会议
+##### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例3：使用服务托管媒体创建组呼叫
+
+这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
+> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+
+##### <a name="request"></a>请求
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例4：使用应用程序托管媒体创建组调用
+
+这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
+> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+
+##### <a name="request"></a>请求
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例5：加入服务托管媒体的计划会议
 若要加入计划的会议，我们需要获取线程 id、邮件 id、组织者 id 以及在其中安排会议的租户 id。
 可以从[获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。
 
@@ -315,17 +532,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>请求
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -367,18 +582,16 @@ Authorization: Bearer <Token>
 ```
 ##### <a name="response"></a>响应
 
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
@@ -392,7 +605,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -455,7 +668,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -470,7 +682,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
         "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -504,7 +716,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -519,7 +730,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -552,7 +763,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -568,7 +778,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -646,19 +856,18 @@ Content-Type: application/json
 
 >**注意：** 除了呼叫状态通知之外，对于加入会议方案，我们会收到名单通知。
 
-### <a name="join-scheduled-meeting-with-app-hosted-media"></a>加入包含应用托管媒体的计划会议
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例6：加入带应用程序托管媒体的计划会议
 若要使用应用程序托管媒体加入会议，请按照上面提供的示例中所示的[AppHostedMediaConfig](../resources/apphostedmediaconfig.md)更新媒体配置。
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
 <!-- {
   "blockType": "example",
+  "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -693,7 +902,7 @@ Authorization: Bearer <Token>
 ```
 
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>加入使用服务托管媒体的渠道会议
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例7：加入使用服务托管媒体的渠道会议
 频道内的会议需要特定的详细信息，例如，可以使用[获取联机会议 API](../api/onlinemeeting-get.md)获取的线程 id、messageid 和组织者详细信息。
 
 授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。
@@ -702,17 +911,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>请求
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -753,7 +960,7 @@ Authorization: Bearer <Token>
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>以具有服务托管媒体的来宾身份加入频道会议
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例8：以具有服务托管媒体的来宾身份加入通道会议
 若要将渠道会议作为来宾加入，您需要创建一个来宾[标识](../resources/identityset.md)，并将其添加为加入会议请求中的呼叫源。
 显示名称是您希望在会议中为您的来宾标识显示的名称。 Id 可以是标识来宾标识的唯一 id。
 
@@ -761,17 +968,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>请求
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -828,7 +1033,6 @@ Authorization: Bearer <Token>
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -844,7 +1048,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -879,6 +1083,7 @@ Content-Type: application/json
 }
 ```
 > **注意：** 应用程序将不会在会议厅中收到参与者的名单，除非其获准来自会议厅
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -3,14 +3,14 @@ title: 列出音频路由组
 description: 检索**audioRoutingGroup**对象的列表。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 257b9674fda36ea2025dc190e1e30ec477566561
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: edb9b6caba0cca8e4788cafa6ce6ec1fd6f345ae
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792331"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006331"
 ---
 # <a name="list-audio-routing-groups"></a>列出音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792331"
 
 检索**audioRoutingGroup**对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -31,7 +31,9 @@ ms.locfileid: "36792331"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
+GET /communications/calls/{id}/audioRoutingGroups
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -53,13 +55,13 @@ GET /app/calls/{id}/audioRoutingGroups
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-audioRoutingGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
@@ -69,7 +71,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-audioroutinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-audioroutinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

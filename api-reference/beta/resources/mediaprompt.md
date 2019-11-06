@@ -3,14 +3,14 @@ title: mediaPrompt 资源类型
 description: MediaPrompt 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b8824a6fb2dcef69568821c251d0b44fa3d2edf7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1def44fbf2208f40ff432e943e9d6768718258c9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009781"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006660"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 

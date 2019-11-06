@@ -3,14 +3,14 @@ title: 呼叫：静音
 description: 允许应用程序将其本身设为静音。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7f1f101dfa6270143ce9cc2819776992643f2cb7
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d1c9093f6c86f11588b0758a80fdbe8682d6d216
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792325"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005969"
 ---
 # <a name="call-mute"></a>呼叫：静音
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792325"
 
 允许应用程序将其本身设为静音。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -31,7 +31,9 @@ ms.locfileid: "36792325"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/mute
+POST /communications/calls/{id}/mute
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -55,20 +57,20 @@ POST /app/calls/{id}/mute
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "call-mute"
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
+<!-- { 
+  "blockType": "request", 
+  "name": "call-mute" 
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/mute
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/mute
 Content-Type: application/json
-Content-Length: 46
 
 {
   "clientContext": "clientContext-value"
 }
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,7 +79,7 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-mute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,24 +88,82 @@ Content-Length: 46
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
-} -->
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。 
+ 
+<!-- { 
+  "blockType": "response", 
+  "truncated": true, 
+  "@odata.type": "microsoft.graph.commsOperation" 
+} --> 
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsOperation",
+  "truncated": true
+}-->
+```json
 {
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "clientContext": "clientContext-value"
+}
+```
+
+##### <a name="notification---roster-updated-with-participant-muted"></a>通知-名单在参与者静音时更新
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
+          "info": {
+            "identity": {
+              "user": {
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "audio",
+              "label": "main-audio",
+              "sourceId": "1",
+              "direction": "sendReceive"
+            }
+          ],
+          "isMuted": true, // will be set to true on mute
+          "isInLobby": false
+        }
+      ]
+    }
+  ]
 }
 ```
 

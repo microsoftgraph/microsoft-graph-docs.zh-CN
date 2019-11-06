@@ -1,28 +1,30 @@
 ---
 title: 呼叫：拒绝
-description: 拒绝传入呼叫。
+description: 启用机器人以拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e3befe394aa9451cbb51bd39ba41fb158b67b464
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: a083459a162117addba494f74e50842435a74516
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838832"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005904"
 ---
 # <a name="call-reject"></a>呼叫：拒绝
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启用机器人以拒绝传入[呼叫](../resources/call.md)。 传入呼叫请求可以是邀请参加会议或对等呼叫。 传入呼叫请求在15秒后超时。 如果在此期间未发送任何响应，则会自动拒绝该呼叫。
+启用机器人以拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含**chatInfo**和**meetingInfo**参数。
 
-在 Azure 门户中使用有效的回调 URL 注册 bot 后，传入呼叫将作为[commsNotification](../resources/commsnotification.md)传递，其`changeType`设置为`created`。 应将机器人`Answer`或`Reject`呼叫超时之前的时间。
+在呼叫超时之前，机器人应应答或拒绝呼叫。当前超时值为15秒。
 
-> **注意：** 此 API 仅用于拒绝传入的呼叫。 若要终止现有呼叫，应改为使用 "[删除呼叫](../api/call-delete.md)"。
+此 API 不会结束已应答的现有呼叫。 使用[删除呼叫](../api/call-delete.md)结束呼叫。
 
-## <a name="permissions"></a>权限
+> **注意：** 只能通过 VoIP 访问机器人。 尚不支持对 bot 的 PSTN 呼叫。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                |
@@ -35,20 +37,23 @@ ms.locfileid: "36838832"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
+POST /communications/calls/{id}/reject
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|在于|String|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
-|callbackUri|String|允许 bot 提供特定的回调 URI，将在其中发布拒绝操作的结果。 这允许将结果发送到触发拒绝操作的相同特定 bot 实例。 如果未提供，则将使用 bot 的全局回调 URI。|
+|reason|String|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
+|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
@@ -56,16 +61,16 @@ POST /app/calls/{id}/reject
 ## <a name="examples"></a>示例
 下面的示例演示如何调用此 API。
 
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>示例1：拒绝传入呼叫并使用 ' 占线 ' 原因
 #### <a name="request"></a>请求
-下面为请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -81,7 +86,7 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
@@ -89,7 +94,6 @@ Content-Length: 24
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",
@@ -100,13 +104,12 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="reject-an-incoming-call-with-none-reason"></a>拒绝具有 "无" 原因的传入呼叫
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>示例2：拒绝具有 "无" 原因的传入呼叫
 
 ##### <a name="notification---incoming"></a>通知传入
 
 ```http
 POST https://bot.contoso.com/api/call
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,10 +124,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
         "state": "incoming",
         "direction": "incoming",
         "source": {
@@ -157,16 +160,13 @@ Content-Type: application/json
 ```
 
 ##### <a name="request"></a>请求
-下面为请求示例。
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-reject"
+  "blockType": "request",
+  "name": "call-reject-none-reason"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -174,22 +174,13 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### <a name="response"></a>响应
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -198,7 +189,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -213,10 +203,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896"
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896"
       }
     }
   ]

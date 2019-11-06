@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fc2381e531401b517d1ba76442882121f3e08d48
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: fbb3ba929289da43aaa2dc22bc8dce799c1b63f8
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418291"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37998621"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -54,12 +54,13 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。 默认值为 Public。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
-|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/zh-CN/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
+|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |用于让他人配置团队可发现性的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
+|classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 
 ## <a name="relationships"></a>关系
 
@@ -71,11 +72,13 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
 |primaryChannel|[频道](channel.md)| 团队的常规频道。 | 
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
-|template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。 |
+|template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
+
+>**注意：** 如果团队属于班级类型，则会在团队上应用 **classSettings** 属性。
 
 <!-- {
   "blockType": "resource",
@@ -97,7 +100,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "description": "string",
   "classification": "string",
   "specialization": "string",
-  "visibility": "string"
+  "visibility": "string",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
 
 ```

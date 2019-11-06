@@ -3,14 +3,14 @@ title: serviceHostedMediaConfig 资源类型
 description: ServiceHostedMediaConfig 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f56928a7294fba1cb31f5061a2c7b8f7bb70f02a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edefba3e415a50322022e4549fbecbd37da6d1da
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965199"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006541"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
@@ -23,7 +23,7 @@ ServiceHostedMediaConfig 类型。
 | 属性                    | 类型                                                        | 说明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 预回迁的介质列表。                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | 从默认的音频组中删除自参与者。 |
+| removeFromDefaultAudioGroup | 布尔                                                     | 从默认的音频组中删除自参与者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,28 +41,6 @@ ServiceHostedMediaConfig 类型。
 {
   "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
-}-->
-```json
-{
-  "preFetchMedia": [
-    {
-      "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-    },
-    {
-      "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-    }
-  ],
-  "removeFromDefaultAudioGroup": false
 }
 ```
 

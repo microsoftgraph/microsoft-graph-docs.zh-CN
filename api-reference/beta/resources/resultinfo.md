@@ -3,14 +3,14 @@ title: resultInfo 资源类型
 description: ResultInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965367"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006548"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
@@ -22,9 +22,9 @@ ResultInfo 类型。
 
 | 属性 | 类型   | 说明          |
 | :------- | :----- | :------------------  |
-| code     | String | 结果代码。     |
+| code     | Int32 | 结果代码。     |
 | message  | String | 邮件。         |
-| subCode  | String | 结果子代码。 |
+| subcode  | Int32 | 结果子代码。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -39,51 +39,9 @@ ResultInfo 类型。
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
-}
-```
-
-## <a name="example-error-result"></a>示例错误结果
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "100",
-  "message": "Internal Server Error.",
-  "subCode": "20"
-}
-```
-
-## <a name="example-generic-success-result"></a>示例一般成功结果
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "0"
-}
-```
-
-## <a name="example-record-success-result"></a>记录成功结果的示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 0
 }
 ```
 

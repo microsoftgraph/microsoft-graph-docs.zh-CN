@@ -1,24 +1,24 @@
 ---
 title: 'tiIndicator: deleteTiIndicators'
-description: 在一个请求中 (而不是多个请求) 删除多个威胁情报 (TI) 指示器。
+description: 在一个请求中（而不是多个请求）删除多个威胁情报（TI）指示器。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fce36c917975ab59d2f99187029066b4d65f4720
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9af88f45503c7b2564e60aa7e69ce6ab15e01e6c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722165"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006492"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个请求中 (而不是多个请求) 删除多个威胁情报 (TI) 指示器。
+在一个请求中（而不是多个请求）删除多个威胁情报（TI）指示器。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,11 +48,11 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| 要删除的`id`tiIndicator 的集合。 |
+|值|String 集合| 要删除的`id`tiIndicator 的集合。 |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200, OK`响应正文中返回响应代码和[resultInfo](../resources/resultinfo.md)集合对象。 如果存在错误, 则此方法返回`206 Partial Content`响应代码。  有关详细信息, 请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
+如果成功，此方法在`200, OK`响应正文中返回响应代码和[resultInfo](../resources/resultinfo.md)集合对象。 如果存在错误，则此方法返回`206 Partial Content`响应代码。  有关详细信息，请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +62,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tiindicator_deletetiindicators"
@@ -87,7 +87,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-deletetiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-deletetiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -96,10 +96,10 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -115,7 +115,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "code": "code-value",
+      "code": 0,
       "message": "message-value",
       "subCode": "subCode-value"
     }

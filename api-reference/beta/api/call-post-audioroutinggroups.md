@@ -3,14 +3,14 @@ title: 创建音频路由组
 description: 创建新的**audioRoutingGroup**。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 853f41cc8a9865c877754f212bbe660c44cc5e47
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7b34bc058c116a9be78f491f8dc2e826ea09f0c6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792294"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005968"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792294"
 
 创建新的**audioRoutingGroup**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -31,7 +31,9 @@ ms.locfileid: "36792294"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
+POST /communications/calls/{id}/audioRoutingGroups
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -52,13 +54,13 @@ POST /app/calls/{id}/audioRoutingGroups
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 
@@ -81,7 +83,7 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,7 +123,7 @@ Content-Length: 233
 下面为请求示例。
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 ```

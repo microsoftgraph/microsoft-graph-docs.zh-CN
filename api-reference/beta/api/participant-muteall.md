@@ -3,14 +3,14 @@ title: 参与者： muteAll
 description: 将呼叫中的所有参与者设为静音。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cf7a3220e391b14cedabbb1c0536b959ad03117
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792546"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006464"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -18,7 +18,7 @@ ms.locfileid: "36792546"
 
 将呼叫中的所有参与者设为静音。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -31,7 +31,9 @@ ms.locfileid: "36792546"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
+POST /communications/calls/{id}/participants/muteAll
 ```
+> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -43,7 +45,7 @@ POST /app/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String collection|要静音的参与者。|
+|participants|String 集合|要静音的参与者。|
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
@@ -55,13 +57,13 @@ POST /app/calls/{id}/participants/muteAll
 ##### <a name="request"></a>请求
 下面为请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-muteAll"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/muteAll
 Content-Type: application/json
 Content-Length: 81
 
@@ -80,7 +82,7 @@ Content-Length: 81
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-muteall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-muteall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,14 +100,13 @@ Content-Length: 81
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 
 {
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```

@@ -1,24 +1,24 @@
 ---
 title: onlineMeeting 资源类型
-description: 捕获有关会议的信息，包括联接 URL、与会者列表和说明。
+description: 包含有关会议的信息，包括联接 URL、与会者列表和说明。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-cloud communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5cc62c4caa564aa071ffc6b206d5494814b0cb53
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.prod: cloud-communications
+ms.openlocfilehash: 64b2c1880edafe1241367ac91889440a513964d9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969799"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006611"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关会议的信息，包括联接 URL、与会者列表和说明。
+包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -37,29 +37,25 @@ ms.locfileid: "37969799"
 | startDateTime             | 日期时间                                               | 以 UTC 表示的会议开始时间。 |
 | endDateTime               | 日期时间                                               | 以 UTC 表示的会议结束时间。 |
 | id                        | 字符串                                                 | 与联机会议关联的默认 ID。 只读。 |
-| isCanceled                | Boolean                                                | 指示是否已取消会议。 只读。 |
+| isCanceled                | 布尔                                                | 指示是否已取消会议。 只读。 |
 | joinUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
-| isBroadcast               | Boolean                                                | 用于确定是否为广播会议的标志。 |
+| isBroadcast               | 布尔                                                | 指示会议是否为广播会议。 |
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | subject                   | String                                                 | 联机会议的主题。 |
-| capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
+| capabilities              | String 集合                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
 | videoTeleconferenceId     | String                                                 | Videio 电话会议 ID。 只读。 |
 
 ### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
-| 值 | Description  |
+| 值 | 说明  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认。  |
+| 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认  |
 | invitedUsersInCompany | 会议组织者和组织者邀请的同一家公司中的用户直接加入会议。  其他人在大厅等待，直到被许可。  |
-| everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。 联合匿名用户在大厅等待，直到被许可。  |
+| everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。  联合匿名用户在大厅等待，直到被许可。  |
 | everyoneInSameAndFederatedCompany |  与组织者和联合公司在同一公司中的所有人都直接加入会议。  匿名用户在大厅等待，直到被许可。  |
-| 成员 | 允许任何用户。 任何人（包括匿名用户）都可以直接加入会议，而无需在会议厅中等待。  |
+| 成员 | 任何用户都是允许的，这意味着每个人（包括匿名用户）都可以直接加入会议，而无需在会议厅中等待。  |
 
-## <a name="relationships"></a>关系
-无。
 
 ## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",

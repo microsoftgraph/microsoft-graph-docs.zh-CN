@@ -3,14 +3,14 @@ title: toneInfo 资源类型
 description: 单个 DTMF 事件。
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eaa4b4159ffd5e7455b1155a7f3cd82c89b19aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa0ef52126895e61300c1e2f7a258926e209866c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964247"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006520"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "35964247"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | 用于对 DTMF 事件进行排序的增量标识符。 |
-| 按键 | String | 可能的值是`tone0`: `tone1`、 `tone2`、 `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `flash`、、 `star`、、、、、、、、、、、、。 `pound` `a` `b` `c` `d` |
+| 按键 | String | 可能的值是`tone0`： `tone1`、 `tone2`、 `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `flash`、、 `star`、、、、、、、、、、、、。 `pound` `a` `b` `c` `d` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
