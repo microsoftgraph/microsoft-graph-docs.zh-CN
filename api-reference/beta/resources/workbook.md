@@ -1,39 +1,39 @@
 ---
 title: 工作簿资源类型
-description: 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
+description: 包含相关的工作簿对象，如工作表、表、范围等。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7653aecb9f10523ce838ec2832a6080f462291f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45b5cce5b6c79ef041d80a467f6663e7cdc670bb
+ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007345"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38023203"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
-工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
-
-## <a name="properties"></a>属性
-无
+包含相关的工作簿对象，如工作表、表、范围等。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
-|[Close Session](../api/workbook-closesession.md) | 无 |关闭现有会话。|
-|[Refresh Session](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
+|[创建会话](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
+|[关闭会话](../api/workbook-closesession.md) | 无 |关闭现有会话。|
+|[刷新会话](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
 
+## <a name="properties"></a>属性
+无。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |names|[workbookNamedItem](workbooknameditem.md)集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
 |表格|[workbookTable](workbooktable.md)集合 |表示与工作簿关联的表的集合。只读。|
-|Worksheets|[workbookWorksheet](workbookworksheet.md)集合 |表示与工作簿关联的工作表的集合。只读。|
+|Worksheets|[workbookWorksheet](workbookworksheet.md)集合 |表示与工作簿关联的工作表的集合。 只读。|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |表示管理工作簿的 Excel workbookApplication。|
 
 ## <a name="functions"></a>函数
 
@@ -136,7 +136,7 @@ content-type: application/json;odata.metadata
 }
 ```
 ## <a name="json-representation"></a>JSON 表示形式
-下面是资源的 JSON 表示形式。
+
 <!--{
   "blockType": "resource",
   "keyProperty": "id",

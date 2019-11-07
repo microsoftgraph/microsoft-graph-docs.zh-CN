@@ -1,20 +1,18 @@
 ---
 title: workbookApplication 资源类型
-description: 表示管理工作簿的 Excel workbookApplication。
+description: 表示用于管理工作簿的 Excel 应用程序。
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04b2d4ab31651fe34affe42ef4811c3802762581
+ms.openlocfilehash: a4f7d2cd6887598ac0a60522dc5bee1101dff9c9
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023196"
+ms.locfileid: "38023246"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示用于管理工作簿的 Excel 应用程序。
 
@@ -36,7 +34,6 @@ ms.locfileid: "38023196"
 
 
 ## <a name="json-representation"></a>JSON 表示形式
-
 
 <!-- {
   "blockType": "resource",

@@ -2,19 +2,17 @@
 title: workbookApplication：计算
 description: 重新计算 Excel 中当前打开的所有工作簿。
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d05767d03e10e0fb7785442fef6696b273f52424
+ms.openlocfilehash: 20adace4998c1538dafc4d99d6a888c5d7f3ad4f
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023182"
+ms.locfileid: "38023218"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication：计算
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 重新计算 Excel 中当前打开的所有工作簿。
 
@@ -23,7 +21,7 @@ ms.locfileid: "38023182"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Files.ReadWrite     |
+|委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -51,17 +49,16 @@ POST /workbook/application/calculate
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-
+下面是一个如何调用此 API 的示例。
 ### <a name="request"></a>请求
-请求示例如下所示。
+下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookApplication_calculate"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
 Content-length: 48
 
@@ -69,24 +66,10 @@ Content-length: 48
   "calculationType": "calculationType-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookapplication-calculate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookapplication-calculate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>响应
-以下示例显示了相应的响应。
-
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,
