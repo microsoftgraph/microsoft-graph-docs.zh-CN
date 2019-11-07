@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c43bded94b1c5fd683c2ca5ca72515a12ce2ec9b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934856"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37999407"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
@@ -18,9 +18,9 @@ ms.locfileid: "37934856"
 可以添加用户、组织联系人或其他组。 
 
 > [!IMPORTANT]
-> 仅能将用户添加到 Office 365 组。
+> 只能向通过云管理的安全组和 Office 365 组添加用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

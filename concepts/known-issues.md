@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f11f45086994fa855714950b079b5151ce348662
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: ed24a66fd267d3aab344166b81247b7ab334eedd
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950407"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006513"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -164,11 +164,10 @@ GET /me/calendars/{id}/events
 
 Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过**事件**的 **** 属性，可以访问 **joinUrl**。
 
-## <a name="calls-and-online-meetings"></a>呼叫和联机会议
+## <a name="cloud-communications-preview"></a>云通信（预览版）
 
-> **注意**：呼叫和联机会议暂处于预览阶段，仅适用于 Microsoft Graph beta 终结点。
-
-- 导航路径 `/applications/{id}` 不受支持。 禁止通过全局应用节点转到应用，即使是你自己的应用，也不例外。 请仅使用 `/app` 导航。
+> **注意**：云通信暂处于预览阶段，仅适用于 Microsoft Graph beta 终结点。
+对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
 
 ## <a name="contacts"></a>联系人
 

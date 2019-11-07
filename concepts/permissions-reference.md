@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b7a2ac1f38c26ad2d6208d6b382625132018731f
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 8ecaa74a375638f1dd732ea16b1df24a5c396f2c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969226"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006787"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -291,7 +291,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
 |_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体数据流（预览版）|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
 
-> \***重要提示：** 请勿使用 Microsoft.Graph.Calls.Media API 来记录或以其他方式保留机器人访问的通话或会议中的媒体内容。
+> \***重要提示：** 不能使用 Microsoft.Graph.Calls.Media API 来记录或以其他方式保留机器人访问的通话或会议中的媒体内容。
 
 <br/>
 
@@ -299,11 +299,11 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="application"></a>应用程序
 
-* _Calls.Initiate.All_：从应用程序向组织中的某个用户发起对等通话 (`POST /beta/app/calls`)。
-* _Calls.InitiateGroupCall.All_：从应用程序向组织中的一组用户发起组通话 (`POST /beta/app/calls`)。
-* _Calls.JoinGroupCall.All_：从应用程序加入组通话或联机会议 (`POST /beta/app/calls`)。
-* _Calls.JoinGroupCallasGuest.All_：从应用程序加入组通话或联机会议，但应用程序在会议中仅具有来宾特权 (`POST /beta/app/calls`)。
-* _Calls.AccessMedia.All_：创建或加入某个通话，且应用将能够直接访问该通话中的参与者媒体数据流 (`POST /beta/app/calls`)。
+* _Calls.Initiate.All_：从应用程序向组织中的某个用户发起对等通话 (`POST /beta/communications/calls`)。
+* _Calls.InitiateGroupCall.All_：从应用程序向组织中的一组用户发起组通话 (`POST /beta/communications/calls`)。
+* _Calls.JoinGroupCall.All_：从应用程序加入组通话或联机会议 (`POST /beta/communications/calls`)。
+* _Calls.JoinGroupCallasGuest.All_：从应用程序加入组通话或联机会议，但应用程序在会议中仅具有来宾特权 (`POST /beta/communications/calls`)。
+* _Calls.AccessMedia.All_：创建或加入某个通话，且应用将能够直接访问该通话中的参与者媒体数据流 (`POST /beta/communications/calls`)。
 
 > **注意：** 有关请求示例，请参阅[创建通话](/graph/api/application-post-calls?view=graph-rest-beta)。
 
@@ -951,7 +951,10 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 #### <a name="delegated-permissions"></a>委派权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_OnlineMeetings.Read_|读取联机会议。|允许应用代表已登录的用户读取联机会议的详细信息。|否|否|
+|_OnlineMeetings.ReadWrite_|读取和创建联机会议。|允许应用代表已登录的用户创建和读取联机会议。 |否|否|
 
 <br/>
 
@@ -959,19 +962,23 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息（预览版）|允许应用在没有登录用户的情况下读取组织中的联机会议详细信息。|是|
-|_OnlineMeetings.ReadWrite.All_|代表用户从应用读取和创建联机会议（预览版）|允许应用在没有登录用户的情况下代表用户创建组织中的联机会议。|是|
+|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息（预览版）|允许应用在没有登录用户的情况下读取组织中的 VTC 相关联机会议详细信息。|是|
+|_OnlineMeetings.ReadWrite.All_|代表用户从应用读取和创建联机会议（已弃用）|允许应用在没有登录用户的情况下代表用户创建组织中的联机会议。|是|
 
 <br/>
 
 ### <a name="example-usage"></a>用法示例
 
+#### <a name="delegated"></a>委派
+
+* _OnlineMeetings.Read_：检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/communications/onlinemeetings/{default id}`)。
+* _OnlineMeetings.ReadWrite_：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`)。
+
 #### <a name="application"></a>应用程序
 
-* _OnlineMeetings.Read.All_：检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/app/onlinemeetings/{id}`)。
-* _OnlineMeetings.ReadWrite.All_：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`)。
+* _OnlineMeetings.Read.All_：检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`)。
 
-> **注意**：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)时，会代表在请求正文中指定的用户创建一个会议，但不会在该用户的日历上显示该会议。
+> **注意**：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)时会代表用户创建一个会议，但不会在该用户的日历上显示该会议。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
