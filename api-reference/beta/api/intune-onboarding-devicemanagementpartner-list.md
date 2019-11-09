@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 282887968927b484020176f9021cafd351f20765
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d120ef678e4bcd33b52a3ed6723d2b43e7265bfb
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190531"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086618"
 ---
 # <a name="list-devicemanagementpartners"></a>列出 deviceManagementPartners
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性和关系。
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 794
+Content-Length: 1059
 
 {
   "value": [
@@ -79,11 +79,21 @@ Content-Length: 794
       "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
       "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
       "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-      "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+      "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+      "groupsRequiringPartnerEnrollment": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+          "target": {
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          }
+        }
+      ]
     }
   ]
 }
 ```
+
+
 
 
 

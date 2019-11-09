@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e31e19da1a9aad5a96ba8bdb3b87a2c2acc3add7
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b49e7bf01da35dd9d8280b87d1062ed0213b2e04
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37531040"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087550"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)对象。
 
@@ -35,14 +35,13 @@ ms.locfileid: "37531040"
 }
 -->
 ``` http
-POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +51,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
+|id|String|Device management script group 分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
@@ -65,7 +64,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 Content-type: application/json
 Content-length: 172
 

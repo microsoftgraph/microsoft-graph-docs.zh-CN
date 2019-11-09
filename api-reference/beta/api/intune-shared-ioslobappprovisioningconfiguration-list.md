@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cb6f5ccde71db36ac02bedb7847ed43b3d060dd
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2402f74ef8c3c1c58f2ca2e1fd68799b22c6f7ec
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538110"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085904"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>列出 iosLobAppProvisioningConfigurations
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象的属性和关系。
 
@@ -26,11 +26,11 @@ ms.locfileid: "37538110"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,7 +45,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -89,6 +89,9 @@ Content-Length: 632
   ]
 }
 ```
+
+
+
 
 
 

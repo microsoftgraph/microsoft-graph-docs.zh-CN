@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d8251112cb2c5e84345deeeebd5504c6e0fc4e6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bc1e0079e86bc480b11f1fe05a1a8cca4c17693e
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184197"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087080"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性。
 
@@ -54,6 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |说明|String|用户提供的资源对象的说明。|
+|roleScopeTagIds|String collection|配置的作用域标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -69,12 +70,15 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 Content-type: application/json
-Content-length: 145
+Content-length: 207
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -83,17 +87,22 @@ Content-length: 145
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

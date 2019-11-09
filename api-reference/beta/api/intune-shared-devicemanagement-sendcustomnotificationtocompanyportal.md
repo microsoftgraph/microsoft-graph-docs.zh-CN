@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca315bb06aadd054787d7a5e29d6b9161256a2a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b72f97ad6cb579fd907429cee0e5f73d4663fe84
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536152"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086037"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal 操作
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 ## <a name="prerequisites"></a>先决条件
@@ -25,10 +25,10 @@ ms.locfileid: "37536152"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
   "blockType": "ignored"
@@ -41,7 +41,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +49,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |notificationTitle|String|尚未记录|
 |notificationBody|String|尚未记录|
@@ -83,6 +83,9 @@ Content-length: 164
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

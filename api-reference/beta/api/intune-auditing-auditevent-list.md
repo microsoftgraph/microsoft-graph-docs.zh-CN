@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c185818865de6f1961933416a76f327498e52e9f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2c792c01919208488de4339ca201e4a89f69aacb
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534937"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085146"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性和关系。
 
@@ -41,7 +41,7 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1855
+Content-Length: 1873
 
 {
   "value": [
@@ -84,11 +84,11 @@ Content-Length: 1855
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
         "userId": "User Id value",
-        "scopeTags": [
+        "userRoleScopeTags": [
           {
-            "@odata.type": "microsoft.graph.scopeTagInfo",
-            "scopeTagName": "Scope Tag Name value",
-            "scopeTagId": "Scope Tag Id value"
+            "@odata.type": "microsoft.graph.roleScopeTagInfo",
+            "displayName": "Display Name value",
+            "roleScopeTagId": "Role Scope Tag Id value"
           }
         ]
       },

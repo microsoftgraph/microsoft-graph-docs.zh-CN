@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c626f82cb99d860d07ef997ca210980ea9f58483
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c260054415faab61efee551fb65386c18695d2b0
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190640"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086639"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。
 
@@ -62,6 +62,7 @@ POST /deviceManagement/deviceManagementPartners
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|PartnerDevices 将被标记为不符合时的 UTC 格式的日期/时间。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)集合|指定注册是否通过合作伙伴的用户组。|
 
 
 
@@ -75,7 +76,7 @@ POST /deviceManagement/deviceManagementPartners
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners
 Content-type: application/json
-Content-length: 664
+Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -88,7 +89,15 @@ Content-length: 664
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 
@@ -97,7 +106,7 @@ Content-length: 664
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 946
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -111,9 +120,19 @@ Content-Length: 713
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
+
+
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 308936a5ee39f8accd3675a2be9b95634643ad59
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 35d2d18ded6a4dc24a31fc59b2ac37a899c329a2
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538124"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085932"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象。
 
@@ -26,11 +26,11 @@ ms.locfileid: "37538124"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 下表显示创建 iosLobAppProvisioningConfiguration 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名（*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|String 集合|此 iOS LOB 应用设置配置实体的作用域标记列表。|
+|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
@@ -117,6 +117,9 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
+
 
 
 

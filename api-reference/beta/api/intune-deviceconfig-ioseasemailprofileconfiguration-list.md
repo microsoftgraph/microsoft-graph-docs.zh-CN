@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f22f39e724e7484f16f90003e63cf97cf5863988
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: ca2fa6386c2581efd3693cf77362dc5be98fe026
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37167807"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38083807"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>列出 iosEasEmailProfileConfigurations
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)对象的属性和关系。
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2486
+Content-Length: 2568
 
 {
   "value": [
@@ -112,6 +112,8 @@ Content-Length: 2486
       "blockSyncingRecentlyUsedEmailAddresses": true,
       "durationOfEmailToSync": "oneDay",
       "emailAddressSource": "primarySmtpAddress",
+      "easServices": "calendars",
+      "easServicesUserOverrideEnabled": true,
       "hostName": "Host Name value",
       "requireSmime": true,
       "smimeEnablePerMessageSwitch": true,
@@ -129,6 +131,8 @@ Content-Length: 2486
   ]
 }
 ```
+
+
 
 
 

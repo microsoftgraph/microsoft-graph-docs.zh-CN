@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5219010f35013281d91e51ead5451a87abba832
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d887a8b8e239ec3a36eb5739004a3bf285d7a1a2
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366579"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088208"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示与设备管理合作伙伴的连接的实体。
 
@@ -39,10 +39,11 @@ ms.locfileid: "36366579"
 |singleTenantAppId|String|合作伙伴单个租户应用 ID|
 |displayName|String|合作伙伴显示名称|
 |isConfigured|Boolean|是否配置了设备管理合作伙伴|
-|whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 时, UTC 格式的 DateTime。 这将很快变成 obselete。|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 时，UTC 格式的 DateTime。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|PartnerDevices 将被标记为不符合时的 UTC 格式的日期/时间。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)集合|指定注册是否通过合作伙伴的用户组。|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,7 +69,15 @@ ms.locfileid: "36366579"
   "whenPartnerDevicesWillBeRemoved": "String (timestamp)",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "String (timestamp)",
   "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 

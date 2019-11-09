@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7e49c1da6f3a976480df1c0f788b9bc3acfde39
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d03a6780e01b64c12def6bf3fbfc73e3fe243171
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537991"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085778"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -26,10 +26,10 @@ ms.locfileid: "37537991"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,16 +43,16 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|status|字符串|尚未记录|
+|状态|String|尚未记录|
 |count|Int64|尚未记录|
 
 
@@ -107,6 +107,9 @@ Content-Length: 1013
   ]
 }
 ```
+
+
+
 
 
 

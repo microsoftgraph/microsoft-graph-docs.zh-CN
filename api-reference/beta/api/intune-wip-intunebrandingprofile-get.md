@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3f0e967a9ce5bbbcd68a756bc4d16d7f91e2fa8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: dbfe8484bf7dc877fc6e0745c26768a3dd8963bf
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195277"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087956"
 ---
 # <a name="get-intunebrandingprofile"></a>获取 intuneBrandingProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性和关系。
 
@@ -39,7 +39,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{in
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1607
+Content-Length: 1913
 
 {
   "value": {
@@ -78,13 +78,6 @@ Content-Length: 1607
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
-    "contactITName": "Contact ITName value",
-    "contactITPhoneNumber": "Contact ITPhone Number value",
-    "contactITEmailAddress": "Contact ITEmail Address value",
-    "contactITNotes": "Contact ITNotes value",
-    "privacyUrl": "https://example.com/privacyUrl/",
-    "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-    "onlineSupportSiteName": "Online Support Site Name value",
     "themeColor": {
       "@odata.type": "microsoft.graph.rgbColor",
       "r": 1,
@@ -108,12 +101,31 @@ Content-Length: 1607
       "type": "Type value",
       "value": "dmFsdWU="
     },
+    "contactITName": "Contact ITName value",
+    "contactITPhoneNumber": "Contact ITPhone Number value",
+    "contactITEmailAddress": "Contact ITEmail Address value",
+    "contactITNotes": "Contact ITNotes value",
+    "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+    "onlineSupportSiteName": "Online Support Site Name value",
+    "privacyUrl": "https://example.com/privacyUrl/",
     "customPrivacyMessage": "Custom Privacy Message value",
     "isRemoveDeviceDisabled": true,
-    "isFactoryResetDisabled": true
+    "isFactoryResetDisabled": true,
+    "companyPortalBlockedActions": [
+      {
+        "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+        "platform": "androidForWork",
+        "ownerType": "company",
+        "action": "remove"
+      }
+    ],
+    "showAzureADEnterpriseApps": true,
+    "showOfficeWebApps": true
   }
 }
 ```
+
+
 
 
 

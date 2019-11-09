@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 121b6cf4d8d7f4656d331d017e981176604d00f1
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 9b8e58adf460d57908848b85f8c9fa0d36acd46b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537977"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085764"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileApp](../resources/intune-shared-mobileapp.md) 对象的属性和关系。
 
@@ -26,11 +26,11 @@ ms.locfileid: "37537977"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -101,6 +101,9 @@ Content-Length: 1013
   ]
 }
 ```
+
+
+
 
 
 

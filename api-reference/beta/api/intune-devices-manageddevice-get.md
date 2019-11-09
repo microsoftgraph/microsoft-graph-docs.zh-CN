@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78072ed6e315e64ee862da91fb0758a4420d3d3d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 55f4b02e6169624fab1888e4bed11d5a4257421b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529892"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087501"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。
 
@@ -43,12 +43,12 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7923
+Content-Length: 7980
 
 {
   "value": {
@@ -244,7 +244,8 @@ Content-Length: 7923
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
       "clientIdentifier": "Client Identifier value"
-    }
+    },
+    "ethernetMacAddress": "Ethernet Mac Address value"
   }
 }
 ```

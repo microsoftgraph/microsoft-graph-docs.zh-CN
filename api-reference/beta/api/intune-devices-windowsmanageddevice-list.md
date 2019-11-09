@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68de6be01a3bbe52b4ecbe337049aad48a25132a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 2fc0b5c6fbfa73d3fc39bd468fdf442fe9e3191b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188099"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087395"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性和关系。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8286
+Content-Length: 8345
 
 {
   "value": [
@@ -240,11 +240,14 @@ Content-Length: 8286
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
         "clientIdentifier": "Client Identifier value"
-      }
+      },
+      "ethernetMacAddress": "Ethernet Mac Address value"
     }
   ]
 }
 ```
+
+
 
 
 
