@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3baccd69901378ad1161b8798222579ca9745e40
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 1dc5508ac19e81017eb46a5e8e812d304802f736
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534930"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085139"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性。
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,17 +52,17 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
-|componentName|字符串|组件名称。|
+|displayName|String|事件显示名称。|
+|componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|字符串|活动的友好名称。|
+|activity|String|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|字符串|执行的活动类型。|
-|activityOperationType|字符串|活动的 HTTP 操作类型。|
+|activityType|String|执行的活动类型。|
+|activityOperationType|String|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|字符串|审核类别。|
+|“类别”|String|审核类别。|
 
 
 
@@ -76,7 +76,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1585
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -94,11 +94,11 @@ Content-length: 1585
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -133,7 +133,7 @@ Content-length: 1585
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -152,11 +152,11 @@ Content-Length: 1634
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },

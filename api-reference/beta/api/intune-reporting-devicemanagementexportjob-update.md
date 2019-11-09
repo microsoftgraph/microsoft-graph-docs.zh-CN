@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4951d458500a0d6863eebed807aa5e2120496376
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4076f54d8e92c409fa09e52e01a1e8965a51239b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537259"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086331"
 ---
 # <a name="update-devicemanagementexportjob"></a>更新 deviceManagementExportJob
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的属性。
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,14 +51,13 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符|
-|reportName|字符串|报告的名称|
-|filter|字符串|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|By|String 集合|报表中的列的排序|
+|id|String|此实体的唯一标识符|
+|reportName|String|报告的名称|
+|filter|String|在报表上应用的筛选器|
+|select|String collection|从报告中选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
-|snapshotId|字符串|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
+|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出的报告的时间|
 |expirationDateTime|DateTimeOffset|导出的报表到期的时间|
@@ -75,7 +74,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 Content-type: application/json
-Content-length: 448
+Content-length: 404
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -83,9 +82,6 @@ Content-length: 448
   "filter": "Filter value",
   "select": [
     "Select value"
-  ],
-  "orderBy": [
-    "Order By value"
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
@@ -101,7 +97,7 @@ Content-length: 448
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 497
+Content-Length: 453
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -110,9 +106,6 @@ Content-Length: 497
   "filter": "Filter value",
   "select": [
     "Select value"
-  ],
-  "orderBy": [
-    "Order By value"
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
