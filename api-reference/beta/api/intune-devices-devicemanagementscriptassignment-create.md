@@ -5,67 +5,66 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e31e19da1a9aad5a96ba8bdb3b87a2c2acc3add7
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b49e7bf01da35dd9d8280b87d1062ed0213b2e04
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37531040"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087550"
 ---
-# <a name="create-devicemanagementscriptassignment"></a><span data-ttu-id="66366-103">创建 deviceManagementScriptAssignment</span><span class="sxs-lookup"><span data-stu-id="66366-103">Create deviceManagementScriptAssignment</span></span>
+# <a name="create-devicemanagementscriptassignment"></a><span data-ttu-id="36dad-103">创建 deviceManagementScriptAssignment</span><span class="sxs-lookup"><span data-stu-id="36dad-103">Create deviceManagementScriptAssignment</span></span>
 
-> <span data-ttu-id="66366-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="66366-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="36dad-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="36dad-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="66366-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="66366-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="36dad-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="36dad-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="66366-106">创建新的[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="66366-106">Create a new [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object.</span></span>
+<span data-ttu-id="36dad-106">创建新的[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="36dad-106">Create a new [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="66366-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="66366-107">Prerequisites</span></span>
-<span data-ttu-id="66366-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="66366-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="36dad-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="36dad-107">Prerequisites</span></span>
+<span data-ttu-id="36dad-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="36dad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="66366-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="66366-110">Permission type</span></span>|<span data-ttu-id="66366-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="66366-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="36dad-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="36dad-110">Permission type</span></span>|<span data-ttu-id="36dad-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="36dad-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="66366-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="66366-112">Delegated (work or school account)</span></span>|<span data-ttu-id="66366-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="66366-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="66366-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="66366-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="66366-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="66366-115">Not supported.</span></span>|
-|<span data-ttu-id="66366-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="66366-116">Application</span></span>|<span data-ttu-id="66366-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="66366-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="36dad-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="36dad-112">Delegated (work or school account)</span></span>|<span data-ttu-id="36dad-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36dad-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="36dad-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="36dad-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="36dad-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="36dad-115">Not supported.</span></span>|
+|<span data-ttu-id="36dad-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="36dad-116">Application</span></span>|<span data-ttu-id="36dad-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36dad-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="66366-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="66366-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36dad-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="36dad-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="66366-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="66366-119">Request headers</span></span>
-|<span data-ttu-id="66366-120">标头</span><span class="sxs-lookup"><span data-stu-id="66366-120">Header</span></span>|<span data-ttu-id="66366-121">值</span><span class="sxs-lookup"><span data-stu-id="66366-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="36dad-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="36dad-119">Request headers</span></span>
+|<span data-ttu-id="36dad-120">标头</span><span class="sxs-lookup"><span data-stu-id="36dad-120">Header</span></span>|<span data-ttu-id="36dad-121">值</span><span class="sxs-lookup"><span data-stu-id="36dad-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="66366-122">授权</span><span class="sxs-lookup"><span data-stu-id="66366-122">Authorization</span></span>|<span data-ttu-id="66366-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="66366-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="66366-124">接受</span><span class="sxs-lookup"><span data-stu-id="66366-124">Accept</span></span>|<span data-ttu-id="66366-125">application/json</span><span class="sxs-lookup"><span data-stu-id="66366-125">application/json</span></span>|
+|<span data-ttu-id="36dad-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="36dad-122">Authorization</span></span>|<span data-ttu-id="36dad-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="36dad-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="36dad-124">接受</span><span class="sxs-lookup"><span data-stu-id="36dad-124">Accept</span></span>|<span data-ttu-id="36dad-125">application/json</span><span class="sxs-lookup"><span data-stu-id="36dad-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="66366-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="66366-126">Request body</span></span>
-<span data-ttu-id="66366-127">在请求正文中，提供 deviceManagementScriptAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="66366-127">In the request body, supply a JSON representation for the deviceManagementScriptAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="36dad-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="36dad-126">Request body</span></span>
+<span data-ttu-id="36dad-127">在请求正文中，提供 deviceManagementScriptAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="36dad-127">In the request body, supply a JSON representation for the deviceManagementScriptAssignment object.</span></span>
 
-<span data-ttu-id="66366-128">下表显示创建 deviceManagementScriptAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="66366-128">The following table shows the properties that are required when you create the deviceManagementScriptAssignment.</span></span>
+<span data-ttu-id="36dad-128">下表显示创建 deviceManagementScriptAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="36dad-128">The following table shows the properties that are required when you create the deviceManagementScriptAssignment.</span></span>
 
-|<span data-ttu-id="66366-129">属性</span><span class="sxs-lookup"><span data-stu-id="66366-129">Property</span></span>|<span data-ttu-id="66366-130">类型</span><span class="sxs-lookup"><span data-stu-id="66366-130">Type</span></span>|<span data-ttu-id="66366-131">说明</span><span class="sxs-lookup"><span data-stu-id="66366-131">Description</span></span>|
+|<span data-ttu-id="36dad-129">属性</span><span class="sxs-lookup"><span data-stu-id="36dad-129">Property</span></span>|<span data-ttu-id="36dad-130">类型</span><span class="sxs-lookup"><span data-stu-id="36dad-130">Type</span></span>|<span data-ttu-id="36dad-131">说明</span><span class="sxs-lookup"><span data-stu-id="36dad-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="66366-132">id</span><span class="sxs-lookup"><span data-stu-id="66366-132">id</span></span>|<span data-ttu-id="66366-133">字符串</span><span class="sxs-lookup"><span data-stu-id="66366-133">String</span></span>|<span data-ttu-id="66366-134">Device management script group 分配实体的键。</span><span class="sxs-lookup"><span data-stu-id="66366-134">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="66366-135">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="66366-135">This property is read-only.</span></span>|
-|<span data-ttu-id="66366-136">target</span><span class="sxs-lookup"><span data-stu-id="66366-136">target</span></span>|[<span data-ttu-id="66366-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="66366-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="66366-138">要作为脚本目标的 Azure Active Directory 组的 Id。</span><span class="sxs-lookup"><span data-stu-id="66366-138">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
+|<span data-ttu-id="36dad-132">id</span><span class="sxs-lookup"><span data-stu-id="36dad-132">id</span></span>|<span data-ttu-id="36dad-133">String</span><span class="sxs-lookup"><span data-stu-id="36dad-133">String</span></span>|<span data-ttu-id="36dad-134">Device management script group 分配实体的键。</span><span class="sxs-lookup"><span data-stu-id="36dad-134">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="36dad-135">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="36dad-135">This property is read-only.</span></span>|
+|<span data-ttu-id="36dad-136">target</span><span class="sxs-lookup"><span data-stu-id="36dad-136">target</span></span>|[<span data-ttu-id="36dad-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="36dad-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="36dad-138">要作为脚本目标的 Azure Active Directory 组的 Id。</span><span class="sxs-lookup"><span data-stu-id="36dad-138">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="66366-139">响应</span><span class="sxs-lookup"><span data-stu-id="66366-139">Response</span></span>
-<span data-ttu-id="66366-140">如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="66366-140">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="36dad-139">响应</span><span class="sxs-lookup"><span data-stu-id="36dad-139">Response</span></span>
+<span data-ttu-id="36dad-140">如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="36dad-140">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66366-141">示例</span><span class="sxs-lookup"><span data-stu-id="66366-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="36dad-141">示例</span><span class="sxs-lookup"><span data-stu-id="36dad-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="66366-142">请求</span><span class="sxs-lookup"><span data-stu-id="66366-142">Request</span></span>
-<span data-ttu-id="66366-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="66366-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="36dad-142">请求</span><span class="sxs-lookup"><span data-stu-id="36dad-142">Request</span></span>
+<span data-ttu-id="36dad-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="36dad-143">Here is an example of the request.</span></span>
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 Content-type: application/json
 Content-length: 172
 
@@ -77,8 +76,8 @@ Content-length: 172
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="66366-144">响应</span><span class="sxs-lookup"><span data-stu-id="66366-144">Response</span></span>
-<span data-ttu-id="66366-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="66366-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="36dad-144">响应</span><span class="sxs-lookup"><span data-stu-id="36dad-144">Response</span></span>
+<span data-ttu-id="36dad-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="36dad-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
