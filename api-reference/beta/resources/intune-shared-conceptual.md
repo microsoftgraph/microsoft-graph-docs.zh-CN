@@ -4,18 +4,18 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539167"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088271"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 这些终结点在多个 Microsoft Graph API for Intune 工作流中使用。  使用给定资源所需的意向、目的和权限因特定工作流和基础调用的上下文而异。  此外，特定工作流仅支持某些方法、属性和操作。
 
@@ -25,6 +25,8 @@ ms.locfileid: "37539167"
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
+- [公司门户操作](intune-shared-companyportalaction.md)
+- [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
 - [设备和应用程序管理分配源](intune-shared-deviceandappmanagementassignmentsource.md)
 - [设备和应用管理分配目标](intune-shared-deviceandappmanagementassignmenttarget.md)
@@ -64,6 +66,7 @@ ms.locfileid: "37539167"
 - [移动应用分配设置](intune-shared-mobileappassignmentsettings.md)
 - [移动应用安装时间设置](intune-shared-mobileappinstalltimesettings.md)
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
+- [所有者类型](intune-shared-ownertype.md)
 - [策略平台类型](intune-shared-policyplatformtype.md)
 - [代理域](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)

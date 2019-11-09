@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa9b0afc1ccb014cc56945e8e3ab450765f5dc63
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371906"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088026"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此实体包含在自定义公司门户应用程序的租户级别外观和最终用户 web 门户时使用的数据。
 
@@ -36,29 +36,32 @@ ms.locfileid: "36371906"
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|一个 Boolean 类型的值, 该值表示是否将配置文件用作默认配置文件|
+|isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
 |displayName|字符串|向最终用户显示的公司/组织名称|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
+|showLogo|Boolean|Boolean 类型的值，该值表示是否显示管理员提供的徽标图像|
+|showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值，该值表示是否在徽标图像旁边显示管理员提供的显示名称|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，其徽标后面有主题颜色背景|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，徽标后面有浅背景|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
 |contactITName|String|负责 IT 支持的人员/组织的名称|
 |contactITPhoneNumber|String|负责 IT 支持的个人/组织的电话号码|
 |contactITEmailAddress|String|负责 IT 支持的个人/组织的电子邮件地址|
 |contactITNotes|String|关于负责 IT 支持的人员/组织的文本注释|
-|privacyUrl|String|指向公司/组织的隐私策略的 URL|
 |onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
-|showLogo|Boolean|Boolean 类型的值, 该值表示是否显示管理员提供的徽标图像|
-|showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值, 该值表示是否在徽标图像旁边显示管理员提供的显示名称|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 其徽标后面有主题颜色背景|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 徽标后面有浅背景|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
+|privacyUrl|String|指向公司/组织的隐私策略的 URL|
 |customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
-|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
-|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
+|showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
+|showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)集合|品牌配置文件的组分配列表|
 
@@ -80,13 +83,6 @@ ms.locfileid: "36371906"
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -110,9 +106,26 @@ ms.locfileid: "36371906"
     "type": "String",
     "value": "binary"
   },
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String",
   "customPrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "String",
+      "ownerType": "String",
+      "action": "String"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 

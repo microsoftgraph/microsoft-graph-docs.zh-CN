@@ -4,18 +4,18 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538614"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088159"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
@@ -156,7 +156,6 @@ ms.locfileid: "37538614"
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
 - [操作系统版本计数](intune-devices-osversioncount.md)
-- [所有者类型](intune-devices-ownertype.md)
 - [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
@@ -165,8 +164,9 @@ ms.locfileid: "37538614"
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
+- [角色作用域标记信息](intune-auditing-rolescopetaginfo.md)
+- [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [运行计划](intune-devices-runschedule.md)
-- [范围标记信息](intune-auditing-scopetaginfo.md)
 - [安全基准类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)

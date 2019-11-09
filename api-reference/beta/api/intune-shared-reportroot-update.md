@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 930300d1d657ccb795597193ab414e4248500641
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4f6bdc28df5039f3631027c16f6110f7131f1f97
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537914"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085659"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [reportRoot](../resources/intune-shared-reportroot.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -44,7 +44,7 @@ PATCH /reports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /reports
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符。|
+|id|String|此实体的唯一标识符。|
 
 
 
@@ -84,6 +84,9 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
+
 
 
 

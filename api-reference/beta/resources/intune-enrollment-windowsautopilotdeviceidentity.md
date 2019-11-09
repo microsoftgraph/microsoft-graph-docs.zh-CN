@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b51f58e3d656f5a72238e03a3f2cdc5c3c9a0e55
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1e55ea60aacd7fef448e7fe9e51d50ddebb84af3
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196509"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088292"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 
@@ -30,6 +30,7 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |[更新 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|更新[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的属性。|
 |[assignUserToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|无|将用户分配给 Autopilot 设备。|
 |[unassignUserFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|无|将用户从 Autopilot 设备取消分配。|
+|[updateDeviceProperties 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|无|更新 Autopilot 设备上的属性。|
 |[assignResourceAccountToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|无|向 Autopilot 设备分配资源帐户。|
 |[unassignResourceAccountFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|无|取消分配 Autopilot 设备中的资源帐户。|
 
@@ -56,9 +57,10 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |systemFamily|String|系统系列|
 |azureActiveDirectoryDeviceId|String|AAD 设备 ID|
 |managedDeviceId|String|托管设备 ID|
+|displayName|String|显示名称|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|当前分配给 Windows autopilot 设备的部署配置文件。|
 |intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|准备分配给 Windows autopilot 设备的部署配置文件。|
@@ -93,7 +95,8 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "displayName": "String"
 }
 ```
 

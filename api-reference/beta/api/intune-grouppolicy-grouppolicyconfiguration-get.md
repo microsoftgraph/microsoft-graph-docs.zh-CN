@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4b5185c6f8cd13dab1b9e0fe591753200c8d4a5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 87e6eb62626c6d550692428c98c9bcfe7869461d
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184218"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087094"
 ---
 # <a name="get-grouppolicyconfiguration"></a>获取 groupPolicyConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性和关系。
 
@@ -39,7 +39,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 416
 
 {
   "value": {
@@ -74,11 +74,16 @@ Content-Length: 348
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "displayName": "Display Name value",
     "description": "Description value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
+
+
 
 
 

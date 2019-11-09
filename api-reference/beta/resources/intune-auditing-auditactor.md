@@ -5,33 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdb804dc293214fbcd7d937adb9ebdf959ea5fa
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c2aba128e4c781dab30f226e25f5240e1f95db17
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538516"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078334"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含审核主角的属性的类。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |type|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
-|applicationId|字符串|AAD 应用程序 ID。|
-|applicationDisplayName|字符串|应用程序的名称。|
+|applicationId|String|AAD 应用程序 ID。|
+|applicationDisplayName|String|应用程序的名称。|
 |userPrincipalName|字符串|用户主体名称 (UPN)。|
-|servicePrincipalName|字符串|服务主体名称 (SPN)。|
+|servicePrincipalName|String|服务主体名称 (SPN)。|
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
-|scopeTags|[scopeTagInfo](../resources/intune-auditing-scopetaginfo.md)集合|执行审核时的用户范围标记列表。|
+|userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)集合|执行审核时的用户范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -56,11 +56,11 @@ ms.locfileid: "37538516"
   "servicePrincipalName": "String",
   "ipAddress": "String",
   "userId": "String",
-  "scopeTags": [
+  "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.scopeTagInfo",
-      "scopeTagName": "String",
-      "scopeTagId": "String"
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
     }
   ]
 }

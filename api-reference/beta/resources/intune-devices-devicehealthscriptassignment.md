@@ -5,33 +5,37 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a37d36fd5b36384d62ef656b9d36a7ed870e3586
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3d6704afe5e105491e2be35bda1e68dd446f3c88
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539090"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088299"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>deviceHealthScriptAssignment 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于将设备管理脚本分配给组的属性。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-无
+|[列出 deviceHealthScriptAssignments](../api/intune-devices-devicehealthscriptassignment-list.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)集合|列出[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象的属性和关系。|
+|[获取 deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-get.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|读取[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象的属性和关系。|
+|[创建 deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-create.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|创建新的[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。|
+|[删除 deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-delete.md)|无|删除[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)。|
+|[更新 deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-update.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|更新[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本分配实体的键|
+|id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
 |runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|将脚本设定为的 Azure Active Directory 组|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|
 
 ## <a name="relationships"></a>关系
 无
@@ -53,7 +57,7 @@ ms.locfileid: "37539090"
   },
   "runRemediationScript": true,
   "runSchedule": {
-      "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.runSchedule"
   }
 }
 ```

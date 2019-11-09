@@ -4,18 +4,18 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538621"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078355"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
 
@@ -198,6 +198,7 @@ ms.locfileid: "37538621"
 - [EAP 类型](intune-deviceconfig-eaptype.md)
 - [EAS 身份验证方法](intune-deviceconfig-easauthenticationmethod.md)
 - [EAS 电子邮件配置文件配置基准](intune-deviceconfig-easemailprofileconfigurationbase.md)
+- [EAS 服务](intune-deviceconfig-easservices.md)
 - [Edge cookie 策略](intune-deviceconfig-edgecookiepolicy.md)
 - [Edge 主页按钮配置](intune-deviceconfig-edgehomebuttonconfiguration.md)
 - [Edge 主页按钮隐藏](intune-deviceconfig-edgehomebuttonhidden.md)
@@ -314,6 +315,7 @@ ms.locfileid: "37538621"
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
+- [macOS 自定义应用配置](intune-deviceconfig-macoscustomappconfiguration.md)
 - [macOS 自定义配置](intune-deviceconfig-macoscustomconfiguration.md)
 - [macOS 设备功能配置](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [macOS Endpoint Protection 配置](intune-deviceconfig-macosendpointprotectionconfiguration.md)
@@ -332,6 +334,7 @@ ms.locfileid: "37538621"
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 配置](intune-deviceconfig-macoswificonfiguration.md)
+- [macOS 有线网络配置](intune-deviceconfig-macoswirednetworkconfiguration.md)
 - [托管所有设备证书状态](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [受管理的设备证书状态](intune-deviceconfig-manageddevicecertificatestate.md)
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
@@ -533,5 +536,4 @@ ms.locfileid: "37538621"
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-
-
+- [有线网络接口](intune-deviceconfig-wirednetworkinterface.md)

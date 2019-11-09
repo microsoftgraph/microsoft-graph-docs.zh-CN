@@ -4,18 +4,18 @@ description: 列出与租户组织的移动应用管理（MAM）相关的适用�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: edef17e5b77ac407b97bb51e2988d0993840f11e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7fff482595831282abca3f88a0d9c72fff258c07
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539006"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088236"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
@@ -54,6 +54,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管的应用修正操作](intune-mam-managedappremediationaction.md)
 - [托管应用状态](intune-mam-managedappstatus.md)
 - [托管应用原始状态](intune-mam-managedappstatusraw.md)
+- [托管浏览器类型](intune-mam-managedbrowsertype.md)
 - [托管移动应用](intune-mam-managedmobileapp.md)
 - [移动应用标识符](intune-mam-mobileappidentifier.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
