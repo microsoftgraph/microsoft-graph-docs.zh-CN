@@ -3,44 +3,38 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9ebdbcccff19f5c5a099efa3c0228392276a3cc3
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7d7d48b807c484bcdc237bf78124fec10ce0a54f
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968463"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303144"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
-你是否知道 Microsoft Graph 中的一些新功能来源于开发人员社区的热门请求？ 
+查看 Microsoft Graph 中的新增功能要点，并查看你可如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 更新的完整列表，请参阅 API 更改日志的 [11 月](changelog.md#november-2019)和 [10 月](changelog.md#october-2019)部分。 
 
-Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
-
-1. 处于**_预览_** 状态的 Debut。 任何相关的 REST API 更新都在 beta 终结点 (`https://graph.microsoft.com/beta`) 中。  
-
-2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
-
-在下面查看 Microsoft Graph 中新增功能要点，并查看你可如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 更新的完整列表，请参阅 API 更改日志的 [11 月](changelog.md#november-2019)和 [10 月](changelog.md#october-2019)部分。 
+> [!IMPORTANT]
+> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
 
 ## <a name="november-2019-new-and-generally-available"></a>2019 年 11 月：新版本和正式版
 
 ### <a name="identity-and-access"></a>身份和访问
 
-注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。
+注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。 根据需要使用委派的[权限](/graph/permissions-reference#application-resource-permissions)（即 Application.Read.All 和 Application.ReadWrite.All）或应用程序权限（即 Application.Read.All）。
 
 
 ## <a name="november-2019-new-in-preview"></a>2019 年 11 月：预览版中的新增功能
-
-> [!IMPORTANT]
-> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在生产应用中使用它们。
 
 ### <a name="calendar"></a>日历
 
 [为](/graph/api/place-update?view=graph-rest-beta)[会议室](/graph/api/resources/room?view=graph-rest-beta)和[会议室列表](/graph/api/resources/roomlist?view=graph-rest-beta)的丰富位置类型设置属性。
 
+### <a name="devices-and-apps"></a>设备和应用
+Intune [11 月](changelog.md#november-2019)更新
 
-### <a name="people-and-workplace-intelligence"></a>人脉和工作区智能
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
 首次推出的[配置文件](/graph/api/resources/profile?view=graph-rest-beta)资源，这是 Microsoft 服务中下一代人脉实体的丰富表示形式。 此资源与常见和切实可行的人脉属性有关，包括任何有意义的日期（如[周年纪念日](/graph/api/resources/personanniversary?view=graph-rest-beta)）的信息、[教育](/graph/api/resources/educationalactivity?view=graph-rest-beta)、[就业岗位](/graph/api/resources/workposition?view=graph-rest-beta)、[兴趣](/graph/api/resources/personinterest?view=graph-rest-beta)、[语言](/graph/api/resources/languageproficiency?view=graph-rest-beta)和[技能](/graph/api/resources/skillproficiency?view=graph-rest-beta)熟练程度、[项目参与](/graph/api/resources/projectparticipation?view=graph-rest-beta)、[网站关联](/graph/api/resources/personwebsite?view=graph-rest-beta)以及其他[帐户](/graph/api/resources/useraccountinformation?view=graph-rest-beta)和联系人信息。
 
@@ -73,9 +67,6 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 
 ## <a name="october-2019-new-in-preview"></a>2019 年 10 月：预览版中的新增功能
 
-> [!IMPORTANT]
-> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在生产应用中使用它们。
-
 ### <a name="calendar"></a>日历
 - 会议组织者可以[允许被邀请者提议备选会议时间](outlook-calendar-meeting-proposals.md)。 当收到包含建议的备选时间的会议响应时，组织者可以决定接受该建议并[更新](/graph/api/event-update?view=graph-rest-beta)会议时间。
 - 编程日历共享与 Outlook 用户体验的奇偶校验更加接近。 除了跟踪日历的当前用户权限和共享状态之外：
@@ -87,7 +78,7 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
   - 具体来说，使用**事件**的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的[已知问题](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams)的解决方法。
 
 ### <a name="devices-and-apps"></a>设备和应用
-Intune [10 月](changelog.md#october-2019)更新特定方案的访问规则
+Intune [10 月](changelog.md#october-2019)更新
 
 ### <a name="graph-explorer"></a>Graph 浏览器
 尝试使用[下一版本的 Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/preview)，并在新的“权限”****、“身份验证”**** 和“代码片段”**** 选项卡中查看权限、访问令牌和 SDK 代码片段等便捷的上下文信息。 使用“预览”**** 滑块在[生产](https://developer.microsoft.com/graph/graph-explorer)和 Graph Explorer 的新预览版本之间切换。
@@ -124,7 +115,15 @@ Intune [10 月](changelog.md#october-2019)更新特定方案的访问规则
 开发人员和 IT 专业人员会注意到推出了 [Microsoft Graph Powershell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell)，该 SDK 将生成包含用于发出 Microsoft Graph REST API 请求的 cmdlet 的模块。
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
+
+我们可以通过以下方式进行参与：
+
 - 是否有希望 Microsoft Graph 支持的方案？ 在 [Microsoft Graph 用户心声](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)中建议新功能并进行投票。
+    某些新功能来源于开发人员社区的热门请求。 Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
+
+    1. 处于**_预览_** 状态的 Debut。 任何相关的 REST API 更新都在 beta 终结点 (`https://graph.microsoft.com/beta`) 中。  
+
+    2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
 - 成为 Microsoft Graph 社区中的活跃成员! [参与](https://aka.ms/microsoftgraphcall)Microsoft Graph 社区每月通话。
 - 注册 [office 365 开发人员计划](https://developer.microsoft.com/office/dev-program)，免费订阅 Office 365, 然后开始开发! 
 

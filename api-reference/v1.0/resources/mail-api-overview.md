@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b9485845ab97daf9c55f58f4b4f09e84ed5302a
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 7a9c191f9bbdd8d7fb857ffca7ebe1895ec62ed6
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036394"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302969"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -22,7 +22,8 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 
 电子邮件由[邮件](../resources/message.md)资源表示，放在 [mailFolder](../resources/mailfolder.md) 中。邮件和邮件文件夹由其 **id** 属性标识，可通过 `GET` 操作获取。
 
->**注意：** 通常，请不要假定邮箱内的**邮件**和 **mailFolder** 具有唯一且不可变的 ID。在执行如复制、移动或发送等某些操作后，它们可能会发生更改。
+>[!IMPORTANT] 
+> 通常，请不要假设邮箱内的**邮件**和 **mailfolder** ID 是唯一的且始终保持不变。 在执行复制或移动等某些操作后，它们可能会发生更改。 只要邮件保留在同一个邮箱中，你就可以选择使用[不可变 ID](/graph/outlook-immutable-id) 来保留相同的 ID（_除了发送草稿邮件和一些其他场景外_）。 有关详细信息，请参阅[不可变 ID 生存期](/graph/outlook-immutable-id#lifetime-of-immutable-ids)。
 
 邮件正文可以是 HTML 格式或文本格式。
 
