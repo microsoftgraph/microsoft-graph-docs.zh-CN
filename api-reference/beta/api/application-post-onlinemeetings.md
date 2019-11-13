@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7a2646ddb1caf4f4e5f4a18823441936f75eb2da
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 61d49c44699de01432ec8cb9cc1075316decafb4
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006415"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302133"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
