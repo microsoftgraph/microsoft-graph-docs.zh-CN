@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c0050ea875ae9e0a8adc1037deb927071e76875
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: ff5c75db50f9321465d61edb156ad26ffc714c03
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006452"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302395"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006452"
 
 在呼叫中检索参与者对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -34,7 +34,7 @@ ms.locfileid: "38006452"
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -64,7 +64,7 @@ GET /communications/calls/{id}/participants
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

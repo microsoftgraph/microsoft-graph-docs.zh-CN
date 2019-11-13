@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a4440a28956977483167f6eed422928895f589c3
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 939b0adbe022a6043d2f92ead156f661d3b2888c
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933826"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302695"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const muteParticipantOperation = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/mute')
+let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/mute')
     .version('beta')
     .post(muteParticipantOperation);
 

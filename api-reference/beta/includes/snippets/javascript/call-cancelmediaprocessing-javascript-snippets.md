@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 62ba0d30ac12d06d585324c732f9bd0c29ce89a0
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 302cdf706e7cbb750e0f1a23cf9ea99eac776666
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933803"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302751"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const cancelMediaProcessingOperation = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/cancelMediaProcessing')
+let res = await client.api('/communications/calls/{id}/cancelMediaProcessing')
     .version('beta')
     .post(cancelMediaProcessingOperation);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: de3a18d367cb0b02b70a43ef338abc34acc0e076
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d33d4a4bcaae50dca5e2b8c12172dced9f92059d
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36174699"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302704"
 ---
 ```javascript
 
@@ -30,7 +30,7 @@ const playPromptOperation = {
   loop: false
 };
 
-let res = await client.api('/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt')
+let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt')
     .version('beta')
     .post(playPromptOperation);
 

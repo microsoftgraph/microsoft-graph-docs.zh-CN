@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ebcc192d9edb2fd9a611c70290be363e9f661eb5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8cb9012ec78244fed5cb442ab2584e715b8cb47a
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708956"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302242"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/app/calls/{id}')
+let res = await client.api('/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92')
     .version('beta')
     .get();
 

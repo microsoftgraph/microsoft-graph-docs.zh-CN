@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6bc043e0c7999fa01e2368a0303b050ac79fa6e5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6426900bcae37c7932365d20a3016255d7b71e1f
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708979"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302557"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const changeScreenSharingRole = {
   role: "viewer"
 };
 
-let res = await client.api('/app/calls/{id}/changeScreenSharingRole')
+let res = await client.api('/communications/calls/{id}/changeScreenSharingRole')
     .version('beta')
     .post(changeScreenSharingRole);
 

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c9b506b8fc10bcec48e503e394b813e79f8ad82
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d1892a7f6f0331cad2b0ef74adfba857dd21b2b2
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006366"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302355"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -22,7 +22,7 @@ ms.locfileid: "38006366"
 
 > **注意：** 自动程序只能通过 VoIP 访问机器人。 不支持 PSTN 呼叫。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
@@ -39,7 +39,7 @@ ms.locfileid: "38006366"
 POST /app/calls/{id}/answer
 POST /communications/calls/{id}/answer
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -52,8 +52,8 @@ POST /communications/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。    |
-|acceptedModalities|String 集合                         |接受形式的列表。 可能的值为`audio`： `video`、 `videoBasedScreenSharing`、。 应答呼叫的必选。 |
+|callbackUri       |字符串                                    |这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。    |
+|acceptedModalities|String collection                         |接受形式的列表。 可能的值为`audio`： `video`、 `videoBasedScreenSharing`、。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。 需要                                                                                                            |
 
 ## <a name="response"></a>响应
@@ -190,7 +190,7 @@ Content-Type: application/json
 ##### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "call-answer-service-hosted-media"
 }-->
 ```http
@@ -346,6 +346,8 @@ Content-Type: application/json
 
 ##### <a name="request"></a>请求
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
@@ -363,6 +365,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 

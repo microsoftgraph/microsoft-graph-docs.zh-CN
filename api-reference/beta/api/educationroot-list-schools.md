@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 53913b3c194100b7484faf62081d1be6180b5aec
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: ac9e0e8d493ca9b4ea6d2c7a86bac274e9243896
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37724655"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302976"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -26,7 +26,7 @@ ms.locfileid: "37724655"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
+| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -70,17 +70,14 @@ GET https://graph.microsoft.com/beta/education/schools
 ```
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
