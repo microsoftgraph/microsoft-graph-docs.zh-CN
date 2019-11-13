@@ -4,22 +4,24 @@ description: Microsoft Search API 允许应用搜索电子邮件中的信息，�
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: f78ad8af81a7d2b72ab61914cc441db279913dc1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 985da47e5a7b96cead416e8e5cda32dae0357adb
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939542"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303130"
 ---
 # <a name="search-messages"></a>搜索邮件
 
-Microsoft Search API 允许应用搜索电子邮件中的信息，返回相关性排名的邮件，并呈现专用搜索体验。 搜索适用于用户自己的邮箱中邮件的正文和附件。 
+Microsoft Search API 允许应用搜索电子邮件中的信息，返回相关性排名的邮件，并呈现专用搜索体验。 搜索适用于用户自己的邮箱中邮件的正文和附件。
 
 搜索查询可以包含最终用户在 Outlook 的 "**搜索**" 文本框中输入的[筛选器](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da)。
 
 邮件搜索结果按**receivedDateTime**降序排列。
 
-目前，邮件搜索仅适用于用户自己的个人帐户，但不适用于工作或学校帐户，而不是委派的邮箱。 请参阅下面的[已知限制](#known-limitations)。
+邮件搜索适用于工作或学校帐户。 用户可以搜索其自己的邮箱，但不能搜索委派邮箱中的邮箱。 请参阅下面的[已知限制](#known-limitations)。
+
+邮件搜索还会查找附件。 [附件支持的文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)与 SharePoint Online 中的文件类型相同。
 
 ## <a name="examples"></a>示例
 

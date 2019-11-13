@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6dfcd0d9186d3e02a581742fe4cbaead3b9e91d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2bd875c4824296c1b5ccfc6bd3969010a00b4f3b
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553920"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303102"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationSchool 属性
 
@@ -47,14 +47,14 @@ PATCH /education/schools/{id}
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | 字符串                                             | 学校的显示名称         |
-| 说明         | String                                             | 学校描述          |
-| principalEmail      | String                                             | 主体的电子邮件地址     |
-| principalName       | String                                             | 主体名称              |
-| externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
-| highestGrade        | String                                             | 教授的最高年级。              |
-| lowestGrade         | String                                             | 教授的最低年级。               |
-| schoolNumber        | String                                             | 学校编号。                     |
-| externalId          | String                                             | 同步系统中学校的 ID。    |
+| 说明         | 字符串                                             | 学校描述          |
+| principalEmail      | 字符串                                             | 主体的电子邮件地址     |
+| principalName       | 字符串                                             | 主体名称              |
+| externalPrincipalId | 字符串                                             | 同步系统中主体的 ID。 |
+| highestGrade        | 字符串                                             | 教授的最高年级。              |
+| lowestGrade         | 字符串                                             | 教授的最低年级。               |
+| schoolNumber        | 字符串                                             | 学校编号。                     |
+| externalId          | 字符串                                             | 同步系统中学校的 ID。    |
 | phone               | String                                             | 学校电话号码。            |
 | address             | [physicalAddress](../resources/physicaladdress.md) | 学校地址。             |
 | createdBy           | [identitySet](../resources/identityset.md)         | 创建了学校的实体。     |
@@ -87,22 +87,18 @@ Content-length: 292
 ```
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
