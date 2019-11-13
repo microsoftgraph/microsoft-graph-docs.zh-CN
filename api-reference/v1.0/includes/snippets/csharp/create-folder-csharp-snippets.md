@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4d98b01bceb2afa08c9f6c84ae8f531c0d4f104d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3c1e2bca2fe9b76d26cb1eee22ac545f8fbd5d8d
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730663"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302637"
 ---
 ```csharp
 
@@ -17,7 +17,10 @@ var driveItem = new DriveItem
     Folder = new Folder
     {
     },
-    @microsoft.graph.conflictBehavior = "rename"
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@microsoft.graph.conflictBehavior","rename"}
+    }
 };
 
 await graphClient.Me.Drive.Root.Children
