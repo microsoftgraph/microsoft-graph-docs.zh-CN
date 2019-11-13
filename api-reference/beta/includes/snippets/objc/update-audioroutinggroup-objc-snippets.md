@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 16f122a44bff5cd0fe4345997fecb732b82d47c6
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2516bd7f06fc05cf51549447f1b57b9340380d86
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933798"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302896"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/audioRoutingGroups/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/audioRoutingGroups/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

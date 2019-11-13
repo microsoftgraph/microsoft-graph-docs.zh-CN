@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7d0f87d621356c71a2daeda99565cabc7ce57b22
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: f91c9f0f767ce046c433aaa2afd2d91930119635
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544176"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302353"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var callbackUri = "callbackUri-value";
 
 var mediaConfig = new AppHostedMediaConfig
 {
-    Blob = "<media config blob>"
+    Blob = "<Media Session Configuration Blob>"
 };
 
 var acceptedModalities = new List<Modality>()
@@ -23,7 +23,7 @@ var acceptedModalities = new List<Modality>()
     Modality.Audio
 };
 
-await graphClient.App.Calls["{id}"]
+await graphClient.Communications.Calls["{id}"]
     .Answer(callbackUri,mediaConfig,acceptedModalities)
     .Request()
     .PostAsync();

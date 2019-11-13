@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a523035e3b4778a6529fb35a785c3579d4c4ec54
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 16d48fff794dc19c4b70d5ee3e1badc9281d9de7
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708915"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302398"
 ---
 ```javascript
 
@@ -15,9 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants')
+let res = await client.api('/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants')
     .version('beta')
-    .header('Authorization','Bearer <TOKEN>')
     .get();
 
 ```

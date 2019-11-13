@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 66b832600d7ce9a27d5b882ce3de47b86bb2e3e4
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 31982cb502ac21808d32048bebf5fc724a9501d9
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932685"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302622"
 ---
 ```csharp
 
@@ -14,7 +14,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
     Name = "My Day at the Beach",
-    @name.conflictBehavior = "rename",
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@name.conflictBehavior","rename"}
+    },
     Bundle = new Bundle
     {
         Album = new Album

@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 75e71d963c3838cf876333b018f626a8c9044c6b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 125902363543ab6f50b7b7c7fbed06745fe9b2b3
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933832"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302568"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/changeScreenSharingRole"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/changeScreenSharingRole"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

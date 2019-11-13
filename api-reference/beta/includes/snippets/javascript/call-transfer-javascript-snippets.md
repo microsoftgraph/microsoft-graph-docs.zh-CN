@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 11fc657409b34dec6d4b3e8e7a341270729c3a72
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8857f3e247ef196cd7650c6c7f75b1f51d424cab
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708798"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302834"
 ---
 ```javascript
 
@@ -29,10 +29,10 @@ const transfer = {
     region: "region-value",
     replacesCallId: "replacesCallId-value"
   },
-  clientContext: "clientContext-value"
+  clientContext: "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 };
 
-let res = await client.api('/app/calls/{id}/transfer')
+let res = await client.api('/communications/calls/{id}/transfer')
     .version('beta')
     .post(transfer);
 

@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ad514f228b7c395b194143dc533ee6c696af207a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3d73aee81403cf61e81c9fb1488e232447e25589
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709040"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302350"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/answer"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/answer"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -22,7 +22,7 @@ NSString *callbackUri = @"callbackUri-value";
 payloadDictionary[@"callbackUri"] = callbackUri;
 
 MSGraphMediaConfig *mediaConfig = [[MSGraphMediaConfig alloc] init];
-[mediaConfig setBlob:@"<media config blob>"];
+[mediaConfig setBlob:@"<Media Session Configuration Blob>"];
 payloadDictionary[@"mediaConfig"] = mediaConfig;
 
 NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];

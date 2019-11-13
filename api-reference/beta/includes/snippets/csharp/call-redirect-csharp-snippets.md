@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b7d47aa4f14c39efe5cf4034b19449b161aaacb2
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6a5e49d3092198931b174c2a4ab205af4acadd26
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402310"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302869"
 ---
 ```csharp
 
@@ -15,31 +15,21 @@ var targets = new List<InvitationParticipantInfo>()
 {
     new InvitationParticipantInfo
     {
-        EndpointType = EndpointType.Default,
         Identity = new IdentitySet
         {
-            User = new Identity
+            Application = new Identity
             {
-                Id = "550fae72-d251-43ec-868c-373732c2704f",
-                TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47",
-                DisplayName = "Heidi Steen"
+                DisplayName = "test bot 2",
+                Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
             }
-        },
-        LanguageId = "en-US",
-        Region = "westus"
+        }
     }
 };
 
-var targetDisposition = CallDisposition.Default;
+var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
 
-var timeout = 99;
-
-var maskCallee = false;
-
-var maskCaller = false;
-
-await graphClient.App.Calls["{id}"]
-    .Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller,null)
+await graphClient.Communications.Calls["491f0b00-ffff-4bc9-a43e-b226498ec22a"]
+    .Redirect(targets,null,null,null,null,callbackUri)
     .Request()
     .PostAsync();
 

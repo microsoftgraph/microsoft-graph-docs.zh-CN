@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 541eec9aed56a598c54cb4f1c2b2e51c49ef0a2d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a9b653e500ac84dff4db8f75368a427bfe5f56d1
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709020"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302864"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/cancelMediaProcessing"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/cancelMediaProcessing"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

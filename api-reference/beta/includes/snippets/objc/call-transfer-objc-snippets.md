@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: aef0225a1690321dbdc964447ba1127f272f4d7c
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fd337e23fff5e927d56f2764a9cc98087da73813
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933820"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302591"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/transfer"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/transfer"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -32,7 +32,7 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [transferTarget setReplacesCallId:@"replacesCallId-value"];
 payloadDictionary[@"transferTarget"] = transferTarget;
 
-NSString *clientContext = @"clientContext-value";
+NSString *clientContext = @"9e90d1c1-f61e-43e7-9f75-d420159aae08";
 payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
