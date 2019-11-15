@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58757c5887cc43741dcbe8e2a19c2607c0c5b2e4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8d044c4e158986a8154c0c118973edcc6ee84a1b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421086"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657820"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -26,9 +26,9 @@ ms.locfileid: "36421086"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.readbasic.all 和 group. all、user. read 和 Group. all、Group. all、all、Directory.accessasuser.all、all 和 Group。 all,。 all, all,。 all 的所有子目录。 |
+| 委派（工作或学校帐户）     | User.readbasic.all、GroupMember 和 GroupMember，all，user. all 和 group。 read. all、user. read 和 Group。 read. all、user. read. all 和 group。 Read. all、read. all 和 group。 Read. all、read. all 和 group。 Read. all，Directory. all，Directory.accessasuser.all 的所有子目录。 |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            | Read. All 和 Group. all, 目录。 all, All, All            |
+| 应用程序                            | "GroupMember"、"all" 和 "Group"、"all" 和 "Group"、"全部"、"全部"、"全部"、"所有"            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmembergroups"
@@ -89,7 +89,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

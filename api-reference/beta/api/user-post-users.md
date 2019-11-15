@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e1a3e1a74d4ddf66017f36fa3f373d910dcdf793
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538424"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657898"
 ---
 # <a name="create-user"></a>创建用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新[用户](../resources/user.md)。请求正文包含要创建的用户。必须至少为用户指定所需的属性。您可以选择指定任何其他可写属性。
+创建新[用户](../resources/user.md)。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。
 
 >[!NOTE]
 >若要创建外部用户，请使用[邀请 API](invitation-post.md)。
@@ -46,18 +46,18 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表列出了创建用户时所需的属性。 如果您正在创建的用户包含一个**标识**属性，则不需要列出所有属性。 对于[B2C 本地帐户标识](../resources/objectidentity.md)，只有**passwordProfile**是必需的。 对于社会标识，不需要任何属性。
+下表列出了创建用户时所需的属性。 如果您正在创建的用户包含一个**标识**属性，则不需要列出所有属性。 对于[B2C 本地帐户标识](../resources/objectidentity.md)，只有**passwordProfile**是必需的，并且必须将**passwordPolicy**设置为`DisablePasswordExpiration`。 对于社会标识，不需要任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
-|displayName |字符串 |要在用户的通讯簿中显示的名称。|
+|displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用`POST`操作，并在创建用户实例时将自己的数据添加到用户实例中的自定义属性。
+由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
 默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
@@ -144,7 +144,10 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>示例2：创建具有社交和本地帐户标识的用户
 
-使用具有登录名的本地帐户标识和社交标识创建新用户。 此示例通常用于迁移方案。
+使用具有登录名的本地帐户标识、电子邮件地址（登录）和社交身份来创建新用户。 此示例通常用于 B2C 租户中的迁移方案。  
+
+[!NOTE] 
+对于本地帐户标识，必须禁用密码过期，并且必须同时禁用 "在下次登录时强制更改密码"。
 
 #### <a name="request"></a>请求
 
@@ -168,15 +171,20 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
     "password": "password-value"
-  }
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -220,15 +228,17 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": null
-  }
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 

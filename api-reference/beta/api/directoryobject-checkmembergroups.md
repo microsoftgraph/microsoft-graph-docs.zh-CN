@@ -1,22 +1,22 @@
 ---
 title: 检查成员组
-description: 检查指定组列表中的成员身份, 并从该列表返回这些组
+description: 检查指定组列表中的成员身份，并从该列表返回这些组
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b95804c63e26dd28eaf5eb9537959b8cb826f32
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 188ef3bfee8f8f0b57844d922a1e73596cbe9474
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417499"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657777"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份, 并从该列表返回指定用户、组、服务主体或目录对象所属的组。 此函数是可传递的。
+检查指定组列表中的成员身份，并从该列表返回指定用户、组、服务主体或目录对象所属的组。 此函数是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,16 +24,16 @@ ms.locfileid: "36417499"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all 和 group. all、User. all 和 Group。 all, read. All, All    |
+|委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 Group.Read.All、Directory.Read.All |
+|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
 
-使用下面的方案指南可帮助确定要使用的权限类型:
-- 使用 User. Read 和 Group。所有权限, 用于检查登录用户的组成员身份。
-- 使用 User.readbasic.all 和 Group。 read. all 和 Group。 Read。所有权限, 用于检查任何用户的组成员身份。
-- 使用 Group. Read。检查组的组成员身份的所有权限。
-- 使用的是, All 和 Group。读取。检查服务主体的组成员身份的所有权限。
-- 使用目录。查看目录对象的组成员身份的所有权限。
+使用下面的方案指南可帮助确定要使用的权限类型：
+- 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。
+- 使用 User.readbasic.all 和 GroupMember、GroupMember、、all 和、all 和 group。 read. all 和 Group。 Read。获取任何用户的组成员身份的所有权限的权限的详细权限的概述。
+- 使用 GroupMember 或 Group。读取。获取组的组成员身份的所有权限。
+- 使用 GroupMember 和 Group. all 和 Group。 Read。获取服务主体的组成员身份的所有权限的权限。
+- 使用目录读取。获取目录对象的组成员身份的所有权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -90,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

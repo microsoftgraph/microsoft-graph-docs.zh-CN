@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4fee17b7f01299c6f35eb056fb1a8bc8b4ce4a85
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2253c8470a8fd71614f937a6aa66c5545f07e51d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409168"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657827"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -26,9 +26,9 @@ ms.locfileid: "36409168"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.readbasic.all 和 group. all、User. all 和 group. all、all 和 group。 all, Directory.accessasuser.all, all,。 all,。 all,。 All 的所有子目录。 |
+| 委派（工作或学校帐户）     | User.readbasic.all、GroupMember 和 GroupMember、、和 Group. all、user. all 和 group。 read. all，user; all 和 group。 Read. all、user. ReadWrite 和 group。 Read. all、user. all 和 Group。 Read. all：，"全部"： "Directory.accessasuser.all"、"所有" |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
-| 应用程序                            | User. all 和 Group. all, User. ReadWrite, all 和 Group. all, All, 全部为. 所有 |
+| Application                            | GroupMember、user. all 和 Group. all、user. all 和 group. all、all 和 Group。 all，all，Read. all，all，all，all： all，all： all，all： all |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_checkmembergroups"
@@ -91,7 +91,7 @@ Content-length: 44
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

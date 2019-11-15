@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e0295e9874be0150ee33a30bdf06d0719866d61
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 5169d2b2c54fc8055effcf1984c6279168a84072
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994461"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657870"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -21,16 +21,16 @@ ms.locfileid: "37994461"
 可以添加用户或其他组。 
 
 > [!Important]
-> 只能向通过云管理的安全和 Office 365 组添加用户。
+> 只能向通过云管理的安全组和 Office 365 组添加用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | GroupMember，all，all，Directory.accessasuser.all，all，。 "所有"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | GroupMember、Group 写全部、所有的 ReadWrite。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

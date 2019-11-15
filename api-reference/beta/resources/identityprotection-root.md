@@ -1,50 +1,35 @@
 ---
-title: 使用 Azure AD 标识保护 API (预览)
-description: 您可以使用 Microsoft Graph 查询由 Azure AD Identity Protection 检测到的每种风险事件类型的 identityRiskEvent 资源。 这些事件对使用 Azure AD 高级 P2 的客户可用。 具有 Azure AD 高级 P1 的客户可以使用事件子集。
+title: 使用 Azure AD 标识保护 Api （预览）
+description: 您可以使用 Microsoft Graph 来查询标识保护 Api，以接收 Azure AD Identity Protection 检测到的风险的相关信息。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d43f3a54e8ec8aebd0c8018cea9986c0c161a073
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ba2dc0a19944f373032619390f9cebaf32dc0e3
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005819"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658875"
 ---
-# <a name="use-the-azure-ad-identity-protection-api-preview"></a>使用 Azure AD 标识保护 API (预览)
+# <a name="use-the-azure-ad-identity-protection-api-preview"></a>使用 Azure AD 标识保护 API （预览）
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以使用 Microsoft Graph 查询由[AZURE AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)检测到的每种风险事件类型的[identityRiskEvent](identityriskevent.md)资源。 这些事件对使用 Azure AD 高级 P2 的客户可用。 具有 Azure AD 高级 P1 的客户可以使用事件子集。
+标识保护是一种工具，使组织能够在其环境中发现、调查和修正基于标识的风险。 您可以使用以下 Microsoft Graph Api 来查询由身份保护检测到的风险： 
 
-* [来自匿名 IP 地址的登录](anonymousipriskevent.md)
-* [来自受恶意软件感染的设备的登录](malwareriskevent.md)
-* [无法移动到非常规位置](impossibletravelriskevent.md)
-* [凭据泄露的用户](leakedcredentialsriskevent.md)
-* [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)
+* [riskDetection](riskdetection.md) -查询 Microsoft Graph，以获取用户和登录相关的风险检测以及有关检测的相关信息的列表。 Azure AD 标识保护中的风险检测包括与目录中的用户帐户相关的任何已确定的可疑操作。
 
-使用以下操作获取这些事件和相关信息:
+* [riskyUsers](riskyuser.md) -查询 Microsoft Graph，以获取标识保护检测为有风险的用户的信息。 用户风险表示给定标识或帐户受到危害的可能性。 这些风险是使用 Microsoft 的内部和外部威胁智能源（包括安全研究人员、执法人员、Microsoft 安全团队以及其他受信任的来源）进行脱机计算的。
 
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[列出 identityRiskEvent](../api/identityriskevent-get.md) |[identityRiskEvent](identityriskevent.md)| 获取 identityRiskEvent 集合。 |
-|[获取 identityRiskEvent](../api/identityriskevent-get.md) |[identityRiskEvent](identityriskevent.md)| 获取 identityRiskEvent 对象。 |
-|[列出 anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| 获取 anonymousIpRiskEvent 集合。 |
-|[获取 anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| 获取 anonymousIpRiskEvent 对象。 |
-|[列出 impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| 获取 impossibleTravelRiskEvent 集合。 |
-|[获取 impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| 获取 impossibleTravelRiskEvent 对象。 |
-|[列出 leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md)| 获取 leakedCredentialsRiskEvent 集合。 |
-|[获取 leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md)| 获取 leakedCredentialsRiskEvent 对象。 |
-|[列出 malwareRiskEvent](../api/malwareriskevent-get.md) |[malwareRiskEvent](malwareriskevent.md)| 获取 malwareRiskEvent 集合。 |
-|[获取 malwareRiskEvent](../api/malwareriskevent-get.md) |[malwareRiskEvent](malwareriskevent.md)| 获取 malwareRiskEvent 对象。 |
-|[列出 suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[suspiciousIpRiskEvent](suspiciousipriskevent.md)| 获取 suspiciousIpRiskEvent 集合。 |
-|[获取 suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[suspiciousIpRiskEvent](suspiciousipriskevent.md)| 获取 suspiciousIpRiskEvent 对象。 |
-|[列出 unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md)| 获取 unfamiliarLocationRiskEvent 集合。 |
-|[获取 unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md)| 获取 unfamiliarLocationRiskEvent 对象。 |
+* [登录](signin.md)查询 Microsoft Graph，以获取有关具有与风险状态、详细信息和级别相关的特定属性的 Azure AD 登录信息。 登录风险表示标识所有者未授权给定的身份验证请求的可能性。 可以使用 Microsoft 的内部和外部威胁智能来源实时计算或计算这些风险，包括安全研究人员、执法人员、Microsoft 安全团队以及其他受信任的来源。
 
-# <a name="see-also"></a>另请参阅
+* [identityRiskEvents](identityriskevent.md) -查询 Microsoft Graph 以获取风险检测和相关信息的列表。 此 API 已弃用;我们建议您改为使用**riskDetections** 。
 
-* [关于 Azure Active Directory 标识保护](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
-* [Azure Active Directory 标识保护和 Microsoft Graph 入门](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+
+## <a name="see-also"></a>另请参阅
+
+* [关于 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+* [Azure Active Directory 标识保护和 Microsoft Graph 入门](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

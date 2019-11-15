@@ -8983,6 +8983,14 @@
                   href: api/serviceprincipal-removepassword.md
                 - name: 检查 member 对象
                   href: api/serviceprincipal-checkmemberobjects.md
+                - name: 创建密码单一登录凭据
+                  href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                - name: 获取密码单一登录凭据
+                  href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                - name: 更新密码单一登录凭据
+                  href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                - name: 删除密码单一登录凭据
+                  href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
             - name: 订阅的 SKU
               href: resources/subscribedsku.md
               items:
