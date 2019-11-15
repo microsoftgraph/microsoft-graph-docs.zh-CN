@@ -5,77 +5,77 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e1a3e1a74d4ddf66017f36fa3f373d910dcdf793
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538424"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657898"
 ---
-# <a name="create-user"></a><span data-ttu-id="0f5a1-103">创建用户</span><span class="sxs-lookup"><span data-stu-id="0f5a1-103">Create user</span></span>
+# <a name="create-user"></a><span data-ttu-id="879bd-103">创建用户</span><span class="sxs-lookup"><span data-stu-id="879bd-103">Create user</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0f5a1-p101">创建新[用户](../resources/user.md)。请求正文包含要创建的用户。必须至少为用户指定所需的属性。您可以选择指定任何其他可写属性。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-p101">Create a new [user](../resources/user.md). The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
+<span data-ttu-id="879bd-p101">创建新[用户](../resources/user.md)。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。</span><span class="sxs-lookup"><span data-stu-id="879bd-p101">Create a new [user](../resources/user.md). The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="0f5a1-108">若要创建外部用户，请使用[邀请 API](invitation-post.md)。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-108">To create external users, use the [invitation API](invitation-post.md).</span></span>
+><span data-ttu-id="879bd-108">若要创建外部用户，请使用[邀请 API](invitation-post.md)。</span><span class="sxs-lookup"><span data-stu-id="879bd-108">To create external users, use the [invitation API](invitation-post.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0f5a1-109">权限</span><span class="sxs-lookup"><span data-stu-id="0f5a1-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="879bd-109">权限</span><span class="sxs-lookup"><span data-stu-id="879bd-109">Permissions</span></span>
 
-<span data-ttu-id="0f5a1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="879bd-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="879bd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0f5a1-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="0f5a1-112">Permission type</span></span>      | <span data-ttu-id="0f5a1-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0f5a1-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="879bd-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="879bd-112">Permission type</span></span>      | <span data-ttu-id="879bd-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="879bd-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f5a1-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0f5a1-114">Delegated (work or school account)</span></span> | <span data-ttu-id="0f5a1-115">User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0f5a1-115">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0f5a1-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0f5a1-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f5a1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-117">Not supported.</span></span>    |
-|<span data-ttu-id="0f5a1-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="0f5a1-118">Application</span></span> | <span data-ttu-id="0f5a1-119">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f5a1-119">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="879bd-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="879bd-114">Delegated (work or school account)</span></span> | <span data-ttu-id="879bd-115">User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="879bd-115">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="879bd-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="879bd-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="879bd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="879bd-117">Not supported.</span></span>    |
+|<span data-ttu-id="879bd-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="879bd-118">Application</span></span> | <span data-ttu-id="879bd-119">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="879bd-119">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f5a1-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0f5a1-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="879bd-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="879bd-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users
 ```
-## <a name="request-headers"></a><span data-ttu-id="0f5a1-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="0f5a1-121">Request headers</span></span>
-| <span data-ttu-id="0f5a1-122">标头</span><span class="sxs-lookup"><span data-stu-id="0f5a1-122">Header</span></span>       | <span data-ttu-id="0f5a1-123">值</span><span class="sxs-lookup"><span data-stu-id="0f5a1-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="879bd-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="879bd-121">Request headers</span></span>
+| <span data-ttu-id="879bd-122">标头</span><span class="sxs-lookup"><span data-stu-id="879bd-122">Header</span></span>       | <span data-ttu-id="879bd-123">值</span><span class="sxs-lookup"><span data-stu-id="879bd-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0f5a1-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f5a1-124">Authorization</span></span>  | <span data-ttu-id="0f5a1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0f5a1-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0f5a1-127">Content-Type</span></span>  | <span data-ttu-id="0f5a1-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0f5a1-128">application/json</span></span>  |
+| <span data-ttu-id="879bd-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="879bd-124">Authorization</span></span>  | <span data-ttu-id="879bd-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="879bd-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="879bd-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="879bd-127">Content-Type</span></span>  | <span data-ttu-id="879bd-128">application/json</span><span class="sxs-lookup"><span data-stu-id="879bd-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0f5a1-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="0f5a1-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="879bd-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="879bd-129">Request body</span></span>
 
-<span data-ttu-id="0f5a1-130">在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-130">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="879bd-130">在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="879bd-130">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
 
-<span data-ttu-id="0f5a1-131">下表列出了创建用户时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-131">The following table lists the properties that are required when you create a user.</span></span> <span data-ttu-id="0f5a1-132">如果您正在创建的用户包含一个**标识**属性，则不需要列出所有属性。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-132">If you're including an **identities** property for the user you're creating, not all the properties listed are required.</span></span> <span data-ttu-id="0f5a1-133">对于[B2C 本地帐户标识](../resources/objectidentity.md)，只有**passwordProfile**是必需的。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-133">For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required.</span></span> <span data-ttu-id="0f5a1-134">对于社会标识，不需要任何属性。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-134">For a social identity, none of the properties are required.</span></span>
+<span data-ttu-id="879bd-131">下表列出了创建用户时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="879bd-131">The following table lists the properties that are required when you create a user.</span></span> <span data-ttu-id="879bd-132">如果您正在创建的用户包含一个**标识**属性，则不需要列出所有属性。</span><span class="sxs-lookup"><span data-stu-id="879bd-132">If you're including an **identities** property for the user you're creating, not all the properties listed are required.</span></span> <span data-ttu-id="879bd-133">对于[B2C 本地帐户标识](../resources/objectidentity.md)，只有**passwordProfile**是必需的，并且必须将**passwordPolicy**设置为`DisablePasswordExpiration`。</span><span class="sxs-lookup"><span data-stu-id="879bd-133">For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`.</span></span> <span data-ttu-id="879bd-134">对于社会标识，不需要任何属性。</span><span class="sxs-lookup"><span data-stu-id="879bd-134">For a social identity, none of the properties are required.</span></span>
 
-| <span data-ttu-id="0f5a1-135">参数</span><span class="sxs-lookup"><span data-stu-id="0f5a1-135">Parameter</span></span> | <span data-ttu-id="0f5a1-136">类型</span><span class="sxs-lookup"><span data-stu-id="0f5a1-136">Type</span></span> | <span data-ttu-id="0f5a1-137">说明</span><span class="sxs-lookup"><span data-stu-id="0f5a1-137">Description</span></span>|
+| <span data-ttu-id="879bd-135">参数</span><span class="sxs-lookup"><span data-stu-id="879bd-135">Parameter</span></span> | <span data-ttu-id="879bd-136">类型</span><span class="sxs-lookup"><span data-stu-id="879bd-136">Type</span></span> | <span data-ttu-id="879bd-137">说明</span><span class="sxs-lookup"><span data-stu-id="879bd-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0f5a1-138">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="0f5a1-138">accountEnabled</span></span> |<span data-ttu-id="0f5a1-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="0f5a1-139">Boolean</span></span> |<span data-ttu-id="0f5a1-140">如果帐户已启用，则为 True;否则为 false。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-140">True if the account is enabled; otherwise, false.</span></span>|
-|<span data-ttu-id="0f5a1-141">displayName</span><span class="sxs-lookup"><span data-stu-id="0f5a1-141">displayName</span></span> |<span data-ttu-id="0f5a1-142">字符串</span><span class="sxs-lookup"><span data-stu-id="0f5a1-142">string</span></span> |<span data-ttu-id="0f5a1-143">要在用户的通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-143">The name to display in the address book for the user.</span></span>|
-|<span data-ttu-id="0f5a1-144">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="0f5a1-144">onPremisesImmutableId</span></span> |<span data-ttu-id="0f5a1-145">string</span><span class="sxs-lookup"><span data-stu-id="0f5a1-145">string</span></span> |<span data-ttu-id="0f5a1-146">如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-146">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
-|<span data-ttu-id="0f5a1-147">mailNickname</span><span class="sxs-lookup"><span data-stu-id="0f5a1-147">mailNickname</span></span> |<span data-ttu-id="0f5a1-148">string</span><span class="sxs-lookup"><span data-stu-id="0f5a1-148">string</span></span> |<span data-ttu-id="0f5a1-149">用户的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-149">The mail alias for the user.</span></span>|
-|<span data-ttu-id="0f5a1-150">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="0f5a1-150">passwordProfile</span></span>|[<span data-ttu-id="0f5a1-151">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="0f5a1-151">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="0f5a1-152">用户的密码配置文件。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-152">The password profile for the user.</span></span>|
-|<span data-ttu-id="0f5a1-153">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="0f5a1-153">userPrincipalName</span></span> |<span data-ttu-id="0f5a1-154">string</span><span class="sxs-lookup"><span data-stu-id="0f5a1-154">string</span></span> |<span data-ttu-id="0f5a1-155">用户主体名称 (someuser@contoso.com)。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-155">The user principal name (someuser@contoso.com).</span></span>|
+|<span data-ttu-id="879bd-138">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="879bd-138">accountEnabled</span></span> |<span data-ttu-id="879bd-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="879bd-139">Boolean</span></span> |<span data-ttu-id="879bd-140">如果帐户已启用，则为 True;否则为 false。</span><span class="sxs-lookup"><span data-stu-id="879bd-140">True if the account is enabled; otherwise, false.</span></span>|
+|<span data-ttu-id="879bd-141">displayName</span><span class="sxs-lookup"><span data-stu-id="879bd-141">displayName</span></span> |<span data-ttu-id="879bd-142">string</span><span class="sxs-lookup"><span data-stu-id="879bd-142">string</span></span> |<span data-ttu-id="879bd-143">要在用户的通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="879bd-143">The name to display in the address book for the user.</span></span>|
+|<span data-ttu-id="879bd-144">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="879bd-144">onPremisesImmutableId</span></span> |<span data-ttu-id="879bd-145">string</span><span class="sxs-lookup"><span data-stu-id="879bd-145">string</span></span> |<span data-ttu-id="879bd-146">如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。</span><span class="sxs-lookup"><span data-stu-id="879bd-146">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
+|<span data-ttu-id="879bd-147">mailNickname</span><span class="sxs-lookup"><span data-stu-id="879bd-147">mailNickname</span></span> |<span data-ttu-id="879bd-148">string</span><span class="sxs-lookup"><span data-stu-id="879bd-148">string</span></span> |<span data-ttu-id="879bd-149">用户的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="879bd-149">The mail alias for the user.</span></span>|
+|<span data-ttu-id="879bd-150">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="879bd-150">passwordProfile</span></span>|[<span data-ttu-id="879bd-151">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="879bd-151">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="879bd-152">用户的密码配置文件。</span><span class="sxs-lookup"><span data-stu-id="879bd-152">The password profile for the user.</span></span>|
+|<span data-ttu-id="879bd-153">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="879bd-153">userPrincipalName</span></span> |<span data-ttu-id="879bd-154">string</span><span class="sxs-lookup"><span data-stu-id="879bd-154">string</span></span> |<span data-ttu-id="879bd-155">用户主体名称 (someuser@contoso.com)。</span><span class="sxs-lookup"><span data-stu-id="879bd-155">The user principal name (someuser@contoso.com).</span></span>|
 
-<span data-ttu-id="0f5a1-156">由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用`POST`操作，并在创建用户实例时将自己的数据添加到用户实例中的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-156">Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.</span></span>
+<span data-ttu-id="879bd-156">由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="879bd-156">Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.</span></span>
 
-<span data-ttu-id="0f5a1-157">默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-157">Federated users created via this API will be forced to sign in every 12 hours by default.</span></span> <span data-ttu-id="0f5a1-158">有关如何更改此操作的信息，请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-158">For information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
+<span data-ttu-id="879bd-157">默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。</span><span class="sxs-lookup"><span data-stu-id="879bd-157">Federated users created via this API will be forced to sign in every 12 hours by default.</span></span> <span data-ttu-id="879bd-158">有关如何更改此操作的信息，请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。</span><span class="sxs-lookup"><span data-stu-id="879bd-158">For information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="0f5a1-159">不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有的**user**对象，除非该**用户**对象已包含本地帐户标识。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-159">Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.</span></span>
+><span data-ttu-id="879bd-159">不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有的**user**对象，除非该**用户**对象已包含本地帐户标识。</span><span class="sxs-lookup"><span data-stu-id="879bd-159">Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0f5a1-160">响应</span><span class="sxs-lookup"><span data-stu-id="0f5a1-160">Response</span></span>
+## <a name="response"></a><span data-ttu-id="879bd-160">响应</span><span class="sxs-lookup"><span data-stu-id="879bd-160">Response</span></span>
 
-<span data-ttu-id="0f5a1-161">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-161">If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="879bd-161">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="879bd-161">If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0f5a1-162">示例</span><span class="sxs-lookup"><span data-stu-id="0f5a1-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="879bd-162">示例</span><span class="sxs-lookup"><span data-stu-id="879bd-162">Example</span></span>
 
-### <a name="example-1-create-a-user"></a><span data-ttu-id="0f5a1-163">示例1：创建用户</span><span class="sxs-lookup"><span data-stu-id="0f5a1-163">Example 1: Create a user</span></span>
+### <a name="example-1-create-a-user"></a><span data-ttu-id="879bd-163">示例1：创建用户</span><span class="sxs-lookup"><span data-stu-id="879bd-163">Example 1: Create a user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0f5a1-164">请求</span><span class="sxs-lookup"><span data-stu-id="0f5a1-164">Request</span></span>
-<span data-ttu-id="0f5a1-165">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-165">Here is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="879bd-164">请求</span><span class="sxs-lookup"><span data-stu-id="879bd-164">Request</span></span>
+<span data-ttu-id="879bd-165">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="879bd-165">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0f5a1-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f5a1-166">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="879bd-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="879bd-166">HTTP</span></span>](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_2"    
@@ -96,26 +96,26 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0f5a1-167">C#</span><span class="sxs-lookup"><span data-stu-id="0f5a1-167">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="879bd-167">C#</span><span class="sxs-lookup"><span data-stu-id="879bd-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0f5a1-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f5a1-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="879bd-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="879bd-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0f5a1-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f5a1-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="879bd-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="879bd-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="0f5a1-170">在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-170">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="0f5a1-171">响应</span><span class="sxs-lookup"><span data-stu-id="0f5a1-171">Response</span></span>
-<span data-ttu-id="0f5a1-172">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-172">Here is an example of the response.</span></span> 
+<span data-ttu-id="879bd-170">在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="879bd-170">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="879bd-171">响应</span><span class="sxs-lookup"><span data-stu-id="879bd-171">Response</span></span>
+<span data-ttu-id="879bd-172">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="879bd-172">Here is an example of the response.</span></span> 
 
 [!NOTE]
-<span data-ttu-id="0f5a1-173">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-173">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0f5a1-174">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-174">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="879bd-173">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="879bd-173">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="879bd-174">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="879bd-174">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,14 +142,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a><span data-ttu-id="0f5a1-175">示例2：创建具有社交和本地帐户标识的用户</span><span class="sxs-lookup"><span data-stu-id="0f5a1-175">Example 2: Create a user with social and local account identities</span></span>
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a><span data-ttu-id="879bd-175">示例2：创建具有社交和本地帐户标识的用户</span><span class="sxs-lookup"><span data-stu-id="879bd-175">Example 2: Create a user with social and local account identities</span></span>
 
-<span data-ttu-id="0f5a1-176">使用具有登录名的本地帐户标识和社交标识创建新用户。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-176">Create a new user, with a local account identity with a sign-in name, and with a social identity.</span></span> <span data-ttu-id="0f5a1-177">此示例通常用于迁移方案。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-177">This example is typically used for migration scenarios.</span></span>
+<span data-ttu-id="879bd-176">使用具有登录名的本地帐户标识、电子邮件地址（登录）和社交身份来创建新用户。</span><span class="sxs-lookup"><span data-stu-id="879bd-176">Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity.</span></span> <span data-ttu-id="879bd-177">此示例通常用于 B2C 租户中的迁移方案。</span><span class="sxs-lookup"><span data-stu-id="879bd-177">This example is typically used for migration scenarios in B2C tenants.</span></span>  
 
-#### <a name="request"></a><span data-ttu-id="0f5a1-178">请求</span><span class="sxs-lookup"><span data-stu-id="0f5a1-178">Request</span></span>
+[!NOTE] 
+<span data-ttu-id="879bd-178">对于本地帐户标识，必须禁用密码过期，并且必须同时禁用 "在下次登录时强制更改密码"。</span><span class="sxs-lookup"><span data-stu-id="879bd-178">For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="879bd-179">请求</span><span class="sxs-lookup"><span data-stu-id="879bd-179">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0f5a1-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f5a1-179">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="879bd-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="879bd-180">HTTP</span></span>](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_identities"   
@@ -168,37 +171,42 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
     "password": "password-value"
-  }
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0f5a1-180">C#</span><span class="sxs-lookup"><span data-stu-id="0f5a1-180">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="879bd-181">C#</span><span class="sxs-lookup"><span data-stu-id="879bd-181">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0f5a1-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f5a1-181">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="879bd-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="879bd-182">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0f5a1-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f5a1-182">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="879bd-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="879bd-183">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="0f5a1-183">响应</span><span class="sxs-lookup"><span data-stu-id="0f5a1-183">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="879bd-184">响应</span><span class="sxs-lookup"><span data-stu-id="879bd-184">Response</span></span>
 
-<span data-ttu-id="0f5a1-184">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-184">Here is an example of the response.</span></span> 
+<span data-ttu-id="879bd-185">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="879bd-185">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="0f5a1-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0f5a1-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="879bd-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="879bd-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -220,23 +228,25 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": null
-  }
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="0f5a1-187">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0f5a1-187">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="879bd-188">另请参阅</span><span class="sxs-lookup"><span data-stu-id="879bd-188">See also</span></span>
 
-- [<span data-ttu-id="0f5a1-188">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="0f5a1-188">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="0f5a1-189">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="0f5a1-189">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="0f5a1-190">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="0f5a1-190">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="879bd-189">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="879bd-189">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="879bd-190">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="879bd-190">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="879bd-191">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="879bd-191">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
