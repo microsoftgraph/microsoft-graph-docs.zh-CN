@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 456490645724063b862de06fd3b70fc72a4d4144
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 67f911224b48bf3b4b630336f0fc8184f64790f4
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934744"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656520"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -82,7 +82,6 @@ ms.locfileid: "37934744"
 | **recordConsentConditions**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
 | **replyUrls**| &nbsp;-beta&nbsp;**web/redirectUris**、 **publicclient 重命名/redirectUris**<br> &nbsp; **** **** v1.0 web/redirectUris、publicclient 重命名/redirectUris &nbsp; - | 除了重命名，redirectUris 现在也是新的 web 和 Publicclient 重命名资源的一部分。 这样，开发人员就可以使用其 web 和公共客户端的特定 Uri （例如，在桌面设备上安装的应用程序）。 | |
 | **samlMetadataUrl**| &nbsp; - beta &nbsp; _尚不可用_  <br> v1.0 尚_不可用_ &nbsp; - &nbsp;  | |
-| **extensionProperties**| &nbsp; -beta &nbsp; **extensionProperties** <br> &nbsp; **** v1.0 extensionProperties &nbsp; - | |
 | **serviceEndpoints**|  &nbsp; - beta &nbsp; _不可用_  <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_  | 此属性已弃用，但计划用于 servicePrincipal。|
 
 ## <a name="approleassignment-differences"></a>AppRoleAssignment 差异

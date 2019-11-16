@@ -2,15 +2,15 @@
 title: itemBody 资源类型
 description: 表示项目正文的属性，例如邮件、事件或组帖子。
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: grangeryy
+ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 406a753ef8b58ba5ff19f7669239c3d9abb860c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6cf87c803ec957b42cc55cf1523a708b145af117
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036552"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657486"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "36036552"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |内容|String|项目的内容。|
-|contentType|Office.mailboxenums.bodytype|内容的类型。 可能的值为 `text` 和 `HTML`。|
+|contentType|Office.mailboxenums.bodytype|内容的类型。 可能的值为 `text` 和 `html`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

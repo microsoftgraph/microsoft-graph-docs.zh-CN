@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 中的资源与 Microsoft Graph 中的资�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 925faf5aa27adcdef3d0ade88f9c3d5d8a911c75
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fb46ea7d4a1a5b66925b18beb131e912a7e89767
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934737"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656513"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的资源类型差异
 
@@ -19,14 +19,12 @@ ms.locfileid: "37934737"
 
 下表重点介绍了 Azure AD Graph 和 Microsoft Graph 资源之间的差异。  它显示具有不同名称或不可用的资源。它还突出显示了 Microsoft Graph beta 版中的可用资源，而不是在 v1.0 版本中。
 
-如果某个资源未显示在此列表中，则它已在第[1.0 版](/graph/api/overview?view=graph-rest-1.0)Microsoft Graph 中可用，与 Azure AD Graph 中的名称相同。
+如果某个资源未**显示在**此列表中，则它已在第[1.0 版](/graph/api/overview?view=graph-rest-1.0)Microsoft Graph 中可用，与 Azure AD Graph 中的名称相同。
 
 > **注意**： Azure AD Graph 中的资源类型名称是 pascal 大小写形式的，而在 Microsoft Graph 中，它们的大小写混合。
 
 |Azure AD Graph <br>（1.60 1.6）资源 |Microsoft Graph<br>resource|备注|
 |---|---|---|
-| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[应用程序](/graph/api/resources/application?view=graph-rest-beta)<br>v1.0-[应用程序](/graph/api/resources/application?view=graph-rest-1.0) ||
-| [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [appRole](/graph/api/resources/approle?view=graph-rest-beta)<br>v1.0- [appRole](/graph/api/resources/appRole?view=graph-rest-1.0) | |
 | [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v1.0-_尚不可用_ | |
 | [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>&nbsp;[](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) v1.0 certificateAuthority&nbsp;- | |
 | [联系人](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v1.0- [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
@@ -41,7 +39,7 @@ ms.locfileid: "37934737"
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta 版-_尚不可用_ <br> v1.0-_尚不可用_ | 用于登录到用户帐户（称为**identityObject**，但尚不可用）的标识符的新建模。 支持 Azure AD B2C 方案。 |
 | [TenantDetail](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[组织](/graph/api/resources/organization?view=graph-rest-beta) <br> v1.0-[组织](/graph/api/resources/organization?view=graph-rest-v1.0) | |
 | [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> &nbsp;[](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) v1.0 certificateBasedAuthConfiguration&nbsp;- | |
-| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta 版-_尚不可用_ <br> v1.0-_尚不可用_ |  用于登录到用户帐户（称为**identityObject**，但尚不可用）的标识符的新建模。 支持 Azure AD B2C 方案。 |
+| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta) <br> v1.0-_尚不可用_ |  用于登录到用户帐户（称为 " **objectIdentity**"）的标识符的新建模。 支持 Azure AD B2C 方案。 |
 
 ## <a name="next-steps"></a>后续步骤
 
