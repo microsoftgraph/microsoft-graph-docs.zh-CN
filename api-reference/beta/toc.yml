@@ -10360,7 +10360,7 @@
                   href: api/user-delete-teamsappinstallation.md
                 - name: 为用户升级安装的应用程序
                   href: api/user-upgrade-teamsappinstallation.md
-            - name: Tab
+            - name: 选项卡
               href: resources/teamstab.md
               items:
                 - name: 列出选项卡
