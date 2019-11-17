@@ -28,7 +28,7 @@ ms.locfileid: "35973474"
 |contentUrl|string|附件内容的 URL。 支持的协议: http、https、文件和数据。|
 |content|string|附件的内容。 如果附件是一个丰富的卡片, 请将该属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
 |name|string|附件的名称。|
-|thumbnailUrl| string |如果通道支持使用替代的较小的内容或 contentUrl 的缩略图图像的 URL。 例如, 如果将 contentType 设置为 application/word 并将 contentUrl 设置为 Word 文档的位置, 则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时, 通道将打开文档。|
+|thumbnailUrl| string |如果频道支持使用替代的较小的内容或 contentUrl 的缩略图图像的 URL。 例如, 如果将 contentType 设置为 application/word 并将 contentUrl 设置为 Word 文档的位置, 则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时, 频道将打开文档。|
 
 ## <a name="json-representation"></a>JSON 表示形式
  下面是资源的 JSON 表示形式

@@ -53,7 +53,7 @@ POST /teams/{id}/channels
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-standard-channel"></a>示例1：创建标准通道
+### <a name="example-1-create-a-standard-channel"></a>示例1：创建标准频道
 
 #### <a name="request"></a>请求
 
@@ -111,11 +111,11 @@ Content-length: 201
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例2：代表用户创建专用通道
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例2：代表用户创建专用频道
 
 #### <a name="request"></a>请求
 
-下面的示例演示了创建专用通道并将用户添加为团队所有者的请求。
+下面的示例演示了创建专用频道并将用户添加为团队所有者的请求。
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)

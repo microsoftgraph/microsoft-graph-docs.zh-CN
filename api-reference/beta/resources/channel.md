@@ -26,7 +26,7 @@ ms.locfileid: "36677125"
 |[创建频道](../api/channel-post.md) | [频道](channel.md) | 通过包含显示名称和描述来新建频道。|
 |[获取频道](../api/channel-get.md) | [频道](channel.md) | 读取频道的属性和关系。|
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
-|[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
+|[删除频道](../api/channel-delete.md) | 无 | 删除频道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
 |[列出频道成员](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) 集合| 列出频道的成员。 |

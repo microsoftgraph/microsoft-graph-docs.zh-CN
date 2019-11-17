@@ -20,7 +20,7 @@ ms.locfileid: "36024278"
 您可以指定要克隆的团队部分:
 
 - **应用**-复制团队中安装的 Microsoft 团队应用。 
-- **频道**–复制通道结构 (而不是通道中的邮件)。
+- **频道**–复制频道结构 (而不是频道中的邮件)。
 - **members** –复制组的成员和所有者。
 - **设置**–复制团队内的所有设置以及关键组设置。
 - **选项卡**–复制频道中的选项卡。
@@ -60,7 +60,7 @@ POST /teams/{id}/clone
 |说明|String (可选)|可选的组说明。 如果未指定此属性, 则它将保留为空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性, 则将从 displayName 计算。 已知问题: 此属性当前被忽略。|
-|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、通道、成员"。|
+|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、频道、成员"。|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)optional| 指定组的可见性。 可能的值为: **Private**、 **Public**。 如果未指定可见性, 将从原始团队/组复制可见性。 如果克隆的团队是**educationClass**团队, 则忽略 visibility 参数, 新组的可见性将设置为 HiddenMembership。|
 
 ## <a name="response"></a>响应

@@ -25,7 +25,7 @@ ms.locfileid: "36033012"
 |[创建频道](../api/channel-post.md) | [频道](channel.md) | 通过包含显示名称和描述来新建频道。|
 |[获取频道](../api/channel-get.md) | [频道](channel.md) | 读取频道的属性和关系。|
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
-|[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
+|[删除频道](../api/channel-delete.md) | 无 | 删除频道。|
 |[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[获取选项卡](../api/teamstab-get.md) | [teamsTab](teamstab.md) | 读取固定到频道的选项卡。|
 |[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|

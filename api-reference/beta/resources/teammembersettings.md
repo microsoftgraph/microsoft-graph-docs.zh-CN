@@ -22,7 +22,7 @@ ms.locfileid: "37196257"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Boolean|如果设置为 true，则成员可以添加和更新任何频道。|
-|allowCreatePrivateChannels|Boolean|如果设置为 true，则成员可以添加和更新专用通道。|
+|allowCreatePrivateChannels|Boolean|如果设置为 true，则成员可以添加和更新专用频道。|
 |allowDeleteChannels|Boolean|如果设置为 true，则成员可以删除频道。|
 |allowAddRemoveApps|Boolean|如果设置为 true，则成员可以添加和删除应用。|
 |allowCreateUpdateRemoveTabs|Boolean|如果设置为 true，则成员可以添加、更新和删除选项卡。 |

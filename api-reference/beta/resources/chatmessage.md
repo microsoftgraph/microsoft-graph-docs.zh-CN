@@ -23,7 +23,7 @@ ms.locfileid: "37333363"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出频道了 chatmessage](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根聊天邮件的列表。|
-|[在频道 delta 中获取 Chatmessages 集合](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取通道中的增量聊天消息。 |
+|[在频道 delta 中获取 Chatmessages 集合](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量聊天消息。 |
 |[获取频道了 chatmessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 从频道中获取单个根聊天消息。|
 |[列出对了 chatmessage 的答复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 频道中对聊天消息的所有回复的列表。|
 |[获取对了 chatmessage 的答复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取频道中的聊天消息的单个答复。|
@@ -40,7 +40,7 @@ ms.locfileid: "37333363"
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 邮件的唯一 Id。|
-|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。 （仅适用于通道中不聊天的聊天邮件） |
+|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。 （仅适用于频道中不聊天的聊天邮件） |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|chatMessageType|聊天消息的类型。 可能的值是： `message`。|
