@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c43bded94b1c5fd683c2ca5ca72515a12ce2ec9b
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b6f6461689d4150c81acde3374008b46b5c340ee
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37999407"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658833"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
@@ -25,9 +25,9 @@ ms.locfileid: "37999407"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All 和 Directory.ReadWrite.All |
+|应用程序 | GroupMember.ReadWrite.All、Group.ReadWrite.All 和 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

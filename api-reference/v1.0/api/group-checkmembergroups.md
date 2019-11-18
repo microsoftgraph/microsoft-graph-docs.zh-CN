@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90c524ecb447b6020e350ae7c8879c939d2421cd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 39bfad874a41d1c59bf7464afe7c398f84bd103c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337557"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658847"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -24,9 +24,9 @@ ms.locfileid: "36337557"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| Application                            | Group.Read.All、Directory.Read.All。 Directory.ReadWrite.All                               |
+| 应用程序                            | GroupMember.Read.All、Group.Read.All、Directory.Read.All。 Directory.ReadWrite.All                               |
 
 
 

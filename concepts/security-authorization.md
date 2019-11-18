@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 238ab0a575fe79a18bb691ec8de0816744a95a86
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 1911a454b5d4e9c131b2854ff71a81c6e0afeeda
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969373"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656499"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -123,18 +123,17 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 ## <a name="assign-azure-ad-roles-to-users"></a>向用户分配 Azure AD 角色
 
-应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得已授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者**角色。 有关详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和[为用户分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)。
+应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者**角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
 >**注意：** 必须是租户管理员才能执行此步骤。
 
-若要为用户分配角色：
+向用户分配角色：
 
-- 登录到 [Azure 门户](https://portal.azure.com) (https://portal.azure.com)。
-- 在菜单中，选择“**Azure Active Directory**” > “**用户**”。
-- 选择用户名称。
-- 选择“**管理**” > “**目录角色**”。
-- 选择“**有限管理员**”，然后选中“**安全读者**”复选框。
-- 选择“**保存**”。
+1. 登录到 [Azure 门户](https://portal.azure.com) (https://portal.azure.com)。
+2. 单击左上角的图标以展开 Azure 门户菜单。 选择“**Azure Active Directory**” > “**用户**”。
+3. 单击相应用户的姓名。
+4. 选择“**分配的角色**”，然后选择“**添加分配**”。
+5. 选择“**安全读取者**”，然后单击“**添加**”。
 
 ## <a name="create-an-authentication-code"></a>创建身份验证代码
 

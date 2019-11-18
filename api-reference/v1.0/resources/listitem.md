@@ -2,20 +2,20 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 title: listItem 资源
-description: 此资源表示 SharePoint 列表中的项目。
+description: 表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 883e7257b55826abf5cf60197c7854161f568fa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036468"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657479"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
-此资源表示 SharePoint **[list][]** 中的项目。
+表示 SharePoint **[列表][]** 中的项目。
 该列表中的列值可通过 `fieldValueSet` 字典获得。
 
 ## <a name="methods"></a>方法
@@ -25,7 +25,7 @@ ms.locfileid: "36036468"
 
 | 方法                    | 返回类型 | 说明
 |:-------------------------------|:-------------------|:------
-| [Get][]                   | lisItem| 获取列表中的项。
+| [获取][]                   | listItem| 获取列表中的项。
 | [获取列值][Get]       | listItem | 从 listItem 获取列的值。
 | [获取分析结果][]              | [itemAnalytics][]| 对此资源可获取分析。 
 | [按间隔获取活动][] | [itemActivityStat][]| 在指定的时间间隔内获取 itemActivityStats 的集合。

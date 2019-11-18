@@ -4,12 +4,12 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 856f427e864eb4fa6a16c1ea758288523ae23c52
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969764"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656541"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -116,9 +116,9 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为[目录架构扩展](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。虽然必须使用 [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) 创建并管理目录架构扩展的定义，但是可以使用 Microsoft Graph API 添加、获取、更新和删除这些扩展的属性中的_数据_。
+Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为[目录架构扩展](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理[扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的_数据_。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 还需要对特定资源执行读取或写入操作所需的相同[权限](./permissions-reference.md)，才能对相应资源上的任意扩展数据执行读取或写入操作。 例如，必须向应用授予 *User.ReadWrite.All* 权限，应用才能使用自定义应用数据更新登录用户配置文件。
 

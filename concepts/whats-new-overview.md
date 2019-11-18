@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7d7d48b807c484bcdc237bf78124fec10ce0a54f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f1fe26cf74a99e0b94bdb8adf9c0ae36d24621c2
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303144"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656492"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -33,6 +33,9 @@ ms.locfileid: "38303144"
 
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [11 月](changelog.md#november-2019)更新
+
+### <a name="notifications"></a>通知
+使用新的轻量级通知 [Web SDK](https://aka.ms/GNSDK) 代替 [Project Rome SDK](https://github.com/Microsoft/project-rome)，以利用改进的身份验证模型和对使用 Web 推送的 Web 应用的支持。 
 
 ### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
@@ -109,7 +112,7 @@ Intune [10 月](changelog.md#october-2019)更新
 - [创建通知并将其发送给用户登录的所有设备终结点上的所有应用程序客户端](/graph/api/user-post-notifications?view=graph-rest-beta)，而无需管理用户委派的权限。
 - 在用户[通知](/graph/api/resources/notification?view=graph-rest-beta)上使用[目标策略终结点](/graph/api/resources/targetpolicyendpoints?view=graph-rest-beta)，以便专门针对 Windows、iOS、Android 或 WebPush 平台投放通知。
 - 在 iOS 终结点的通知上指定[回退策略](/graph/api/resources/fallbackpolicy?view=graph-rest-beta)，以便发送由于平台特定的限制（如节电模式）而可能无法传递到设备的高优先级原始通知。
-- 使用新的适用于 Windows、iOS、Android 和 JavaScript 的轻量级通知 SDK 代替 [Project Rome SDK](https://github.com/Microsoft/project-rome)，以利用改进的身份验证模型并支持使用 Web 推送的 Web 应用。
+
  
 ### <a name="powershell-sdk"></a>PowerShell SDK 
 开发人员和 IT 专业人员会注意到推出了 [Microsoft Graph Powershell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell)，该 SDK 将生成包含用于发出 Microsoft Graph REST API 请求的 cmdlet 的模块。
