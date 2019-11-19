@@ -6,12 +6,12 @@ description: 表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.openlocfilehash: e9a9010e8700d7e6ebd6a2e3d030fba7cab79f83
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657479"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703761"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
