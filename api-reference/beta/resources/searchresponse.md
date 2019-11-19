@@ -5,29 +5,31 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 7e68eae7c31486646c4b3d135881fd04fa8c7222
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6b433e5aba652a9f68d017975e0651edac4e2ffb
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938756"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703993"
 ---
-# <a name="searchresponse-resource-type"></a><span data-ttu-id="23261-103">searchResponse 资源类型</span><span class="sxs-lookup"><span data-stu-id="23261-103">searchResponse resource type</span></span>
+# <a name="searchresponse-resource-type"></a><span data-ttu-id="1441a-103">searchResponse 资源类型</span><span class="sxs-lookup"><span data-stu-id="1441a-103">searchResponse resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23261-104">SearchResponse 包含搜索查询中的结果。</span><span class="sxs-lookup"><span data-stu-id="23261-104">The searchResponse contains the results from the search query.</span></span>
+<span data-ttu-id="1441a-104">SearchResponse 包含搜索查询中的结果。</span><span class="sxs-lookup"><span data-stu-id="1441a-104">The searchResponse contains the results from the search query.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="23261-105">属性</span><span class="sxs-lookup"><span data-stu-id="23261-105">Properties</span></span>
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-| <span data-ttu-id="23261-106">属性</span><span class="sxs-lookup"><span data-stu-id="23261-106">Property</span></span>     | <span data-ttu-id="23261-107">类型</span><span class="sxs-lookup"><span data-stu-id="23261-107">Type</span></span>        | <span data-ttu-id="23261-108">描述</span><span class="sxs-lookup"><span data-stu-id="23261-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="1441a-105">属性</span><span class="sxs-lookup"><span data-stu-id="1441a-105">Properties</span></span>
+
+| <span data-ttu-id="1441a-106">属性</span><span class="sxs-lookup"><span data-stu-id="1441a-106">Property</span></span>     | <span data-ttu-id="1441a-107">类型</span><span class="sxs-lookup"><span data-stu-id="1441a-107">Type</span></span>        | <span data-ttu-id="1441a-108">说明</span><span class="sxs-lookup"><span data-stu-id="1441a-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="23261-109">hitsContainers</span><span class="sxs-lookup"><span data-stu-id="23261-109">hitsContainers</span></span>|<span data-ttu-id="23261-110">[searchHitsContainer](searchhitscontainer.md)集合</span><span class="sxs-lookup"><span data-stu-id="23261-110">[searchHitsContainer](searchhitscontainer.md) collection</span></span>|<span data-ttu-id="23261-111">搜索结果的集合。</span><span class="sxs-lookup"><span data-stu-id="23261-111">A collection of search results.</span></span>|
-|<span data-ttu-id="23261-112">searchTerms</span><span class="sxs-lookup"><span data-stu-id="23261-112">searchTerms</span></span>|<span data-ttu-id="23261-113">String collection</span><span class="sxs-lookup"><span data-stu-id="23261-113">String collection</span></span>|<span data-ttu-id="23261-114">包含在初始搜索查询中发送的搜索词。</span><span class="sxs-lookup"><span data-stu-id="23261-114">Contains the search terms sent in the initial search query.</span></span>|
+|<span data-ttu-id="1441a-109">hitsContainers</span><span class="sxs-lookup"><span data-stu-id="1441a-109">hitsContainers</span></span>|<span data-ttu-id="1441a-110">[searchHitsContainer](searchhitscontainer.md)集合</span><span class="sxs-lookup"><span data-stu-id="1441a-110">[searchHitsContainer](searchhitscontainer.md) collection</span></span>|<span data-ttu-id="1441a-111">搜索结果的集合。</span><span class="sxs-lookup"><span data-stu-id="1441a-111">A collection of search results.</span></span>|
+|<span data-ttu-id="1441a-112">searchTerms</span><span class="sxs-lookup"><span data-stu-id="1441a-112">searchTerms</span></span>|<span data-ttu-id="1441a-113">String collection</span><span class="sxs-lookup"><span data-stu-id="1441a-113">String collection</span></span>|<span data-ttu-id="1441a-114">包含在初始搜索查询中发送的搜索词。</span><span class="sxs-lookup"><span data-stu-id="1441a-114">Contains the search terms sent in the initial search query.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="23261-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="23261-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1441a-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1441a-115">JSON representation</span></span>
 
-<span data-ttu-id="23261-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23261-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1441a-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1441a-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
