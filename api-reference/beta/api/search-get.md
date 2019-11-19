@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d7b84fdad96530f88f09c7da7b00a6013b19017e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 90db18f6dddeff1f3bf57b0f2c756928564d54f6
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938384"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703712"
 ---
 # <a name="search"></a>搜索
 
@@ -18,7 +18,9 @@ ms.locfileid: "37938384"
 
 搜索资源是表示搜索终结点的顶级对象。 它不像 Graph 中的任何其他资源一样工作，而是用作搜索操作（查询）的定位。 图表中没有资源表示形式。
 
-## <a name="permissions"></a>权限
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +28,7 @@ ms.locfileid: "37938384"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 阅读文章、文件、读取、ExternalItem、阅读、全部 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

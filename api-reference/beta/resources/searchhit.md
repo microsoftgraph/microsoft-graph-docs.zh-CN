@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce5671933589f6066698df3e082390207474b49
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 787ecfeaefc7e5b140dc6338195af7d58e1a8ccd
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939864"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703917"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "37939864"
 
 表示搜索结果列表中的单个结果。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|_id|字符串|项的内部标识符。|
+|_id|String|项的内部标识符。|
 |_score|Int32|结果的分数或顺序。|
-|_sortField|字符串|使用的排序顺序。 它可以是 DateTime 或相关性。|
-|_summary|字符串|结果的摘要（如果摘要可用）。|
+|_sortField|String|使用的排序顺序。 它可以是 DateTime 或相关性。|
+|_summary|String|结果的摘要（如果摘要可用）。|
 |_source|[实体](entity.md)|搜索结果的基础图形表示形式。|
 
 ## <a name="json-representation"></a>JSON 表示形式

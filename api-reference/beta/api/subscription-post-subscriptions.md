@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序, 以在 Microsoft Graph 资源的数据发生更改时接收通知。
+description: 订阅侦听器应用程序，以在 Microsoft Graph 资源的数据发生更改时接收通知。
 localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 729917161a57f9ef09e91cadc715846ba1b07f13
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c7b9b91dfd909014ebbd505c2dbca3ad1b24ac3d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409858"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702543"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -32,7 +32,7 @@ ms.locfileid: "36409858"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -71,9 +71,9 @@ POST /subscriptions
 在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
 `clientState` 字段是可选的。
 
-此示例请求创建一个订阅, 用于通知当前登录用户接收到的新邮件。
+此示例请求创建一个订阅，用于通知当前登录用户接收到的新邮件。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -99,14 +99,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-以下是 resource 属性的有效值:
+以下是 resource 属性的有效值：
 
 | 资源类型 | 示例 |
 |:------ |:----- |

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f0a94b2ed115bf9d0652934cb00f31cd291dc2c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 45348dfd910224f215ee9c2e41fd2f2ee700a946
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341779"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703986"
 ---
 # <a name="update-subscription"></a>更新订阅
 
 通过延长到期时间续订订阅。
 
-订阅将在因资源类型而异的一段时间后过期。 为了避免丢失通知, 应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度, 请参阅[订阅](../resources/subscription.md)。
+订阅将在因资源类型而异的一段时间后过期。 为了避免丢失通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅[订阅](../resources/subscription.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "36341779"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -69,7 +69,7 @@ PATCH /subscriptions/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -91,7 +91,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,16 +5,18 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b8840f382442319d49e3db72503e02ddbdadfd57
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 9f80df09f982d91a4034c6b2af8e03ea8643cc03
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950414"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704384"
 ---
 # <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>概述在 Microsoft Graph 上扩展应用的 Microsoft 搜索体验（预览版）
 
 Microsoft 搜索是一种企业搜索引擎，它为组织提高了生产力并提供相关搜索结果。 它控制组织的总体知识和生产力，并显示相关内容，使最终用户了解最新状态。 Microsoft 搜索可以在多种体验中获得，包括 Office、SharePoint、Delve、Windows 和必应。
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## <a name="why-use-the-microsoft-search-api"></a>为什么使用 Microsoft 搜索 API？

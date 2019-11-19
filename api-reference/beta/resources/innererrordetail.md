@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5b85f17b87343766a4edb00c6d620c185ecaf5
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6b3dfb2ec4caf8ae2b8ec9a279a6d001ad3aaae7
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939654"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703775"
 ---
 # <a name="innererrordetail-resource-type"></a>innerErrorDetail 资源类型
 
@@ -18,12 +18,14 @@ ms.locfileid: "37939654"
 
 包含在[errorDetail](errordetail.md)对象中的内部错误。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 描述                                  |
 |:---------|:-------|:---------------------------------------------|
 | message  | String | 人类可读错误消息。 只读。 |
-| source   | 字符串 | 错误的来源。 只读。          |
+| source   | String | 错误的来源。 只读。          |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

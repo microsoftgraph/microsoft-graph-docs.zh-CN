@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 89c689bfc161d9c99c0155a30410ec2a06b45368
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 381c816685129a7cfe7dda88050a96a9a78dca8b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36409889"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703698"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -30,7 +30,7 @@ ms.locfileid: "36409889"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

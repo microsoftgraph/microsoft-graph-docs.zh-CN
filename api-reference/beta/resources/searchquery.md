@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3cb46a41b0c46fe5f70d94a64a91489c9c2e7d43
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e9501831ef2e83d23aa4a5587b9afd8eaa7f5ee8
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936585"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703903"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 
@@ -18,9 +18,11 @@ ms.locfileid: "37936585"
 
 表示包含搜索词和可选筛选器的搜索查询。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |query_string|[searchQueryString](searchquerystring.md)|包含搜索词的搜索查询。|
 

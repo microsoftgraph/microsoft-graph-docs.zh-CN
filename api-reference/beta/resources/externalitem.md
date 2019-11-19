@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ffcc69cd71d2508a2ceae568d767dc991af063d6
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 900cf61536204ff5924aea0de268befad6626b37
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938974"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704169"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过 Microsoft Search[连接](externalconnection.md)编制索引的项目。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>方法
 
@@ -28,12 +30,12 @@ ms.locfileid: "37938974"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型                     | 描述                          |
+| 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必填。 |
+| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
 | 内容    | String                   | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | 字符串                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必填。 |
-| properties | 对象                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必填。 |
+| id         | String                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
+| properties | 对象                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: cc0e750f34af4bc6013d5e4bfbae4b007347b270
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b5da13640d2c62eb8258ca1a154ddcb8c2e1b353
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937621"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703705"
 ---
 # <a name="search-query"></a>搜索：查询
 
@@ -18,7 +18,9 @@ ms.locfileid: "37937621"
 
 执行请求正文中指定的查询。 搜索结果在响应中提供。
 
-## <a name="permissions"></a>权限
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +28,7 @@ ms.locfileid: "37937621"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 阅读文章、文件、读取、ExternalItem、阅读、全部 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +46,7 @@ POST /search/query
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 描述 |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md)集合|要发送到 JSON blob 中格式化的查询终结点的搜索请求。 它包含响应中的预期实体类型、基础源、分页参数、请求的字段和实际搜索查询。|
 
@@ -64,6 +66,8 @@ POST /search/query
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_query"
@@ -97,6 +101,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

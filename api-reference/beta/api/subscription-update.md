@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 31636d6b40fd952cb629f2fe309eec887bc22e30
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8df27c24839467543323fcab583b36f825d8193e
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409833"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702550"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -18,7 +18,7 @@ ms.locfileid: "36409833"
 
 通过延长到期时间续订订阅。
 
-订阅将在因资源类型而异的一段时间后过期。 为了避免丢失通知, 应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度, 请参阅[订阅](../resources/subscription.md)。
+订阅将在因资源类型而异的一段时间后过期。 为了避免丢失通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅[订阅](../resources/subscription.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "36409833"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -70,7 +70,7 @@ PATCH /subscriptions/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -92,7 +92,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

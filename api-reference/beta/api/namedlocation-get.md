@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8185fe10edf844df0858b0310af4cd3a7a17197c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 90a4efbe68dda34995d73242f033d84013ef1620
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937932"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703726"
 ---
 # <a name="get-namedlocation"></a>获取 namedLocation
 
@@ -18,7 +18,7 @@ ms.locfileid: "37937932"
 
 检索[namedLocation](../resources/namedlocation.md)对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "37937932"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

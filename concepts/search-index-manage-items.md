@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 522566fb59771dc9a4efab305a271dc89a4843af
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c5017943f966792e0246d3764a1c3e373718c63c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939521"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704334"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-search-service-index"></a>创建、更新和删除应用程序在 Microsoft 搜索服务索引中添加的项目
 
 应用程序添加到 Microsoft 搜索服务的项目由 Microsoft Graph 中的 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 和 [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) 资源表示。
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 “externalItem”**** 资源表示自定义类型。 当添加到索引的项使用“externalFile”**** 资源未表示的自定义架构时，应使用此方法。 例如，支持人员票证或产品清单。
 

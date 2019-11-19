@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 657d71dc6b1671b2af6011778c0b14bb299e3cf9
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9ced1c9bd00e3e865c3663ed6ade936747b9dded
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938882"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704141"
 ---
 # <a name="connectionoperation-resource-type"></a>connectionOperation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 描述用于创建 Microsoft Search 连接[架构](schema.md)的异步请求的状态。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>方法
 
@@ -26,7 +28,7 @@ ms.locfileid: "37938882"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型                          | 描述                       |
+| 属性 | 类型                          | 说明                       |
 |:---------|:------------------------------|:----------------------------------|
 | error    | [errorDetail](errordetail.md) | 如果`status`为`failed`，则提供有关导致失败的错误的详细信息。 |
 | id       | String                        | ConnectionOperation 的唯一标识符。 只读。 |

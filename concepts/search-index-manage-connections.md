@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b1f599a4610ce4cb939c7733949eac4c0ddba371
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939528"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704377"
 ---
 # <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a>创建、更新和删除与 Microsoft 搜索服务的连接
 
 外部服务与 Microsoft 搜索服务的连接由 Microsoft Graph 中的 [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) 资源表示。
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 通过连接，你的应用程序可以为要编入索引的项目[定义架构](/graph/api/externalconnection-post-schema?view=graph-rest-beta)，并为服务提供终结点，以便[在索引中添加、更新或删除项目](search-index-manage-items.md)。 创建连接是应用程序将项目添加到搜索索引的第一步。
 

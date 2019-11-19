@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7bc36dc49a944de4a12decbf3b0b77a3c203eb21
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938714"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703910"
 ---
 # <a name="searchhitscontainer-resource-type"></a>searchHitsContainer 资源类型
 
@@ -18,9 +18,11 @@ ms.locfileid: "37938714"
 
 表示搜索结果的列表。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |影响|[searchHit](searchhit.md)集合|Encasulate 搜索结果。|
 |moreResultsAvailable|Boolean|如果有更多结果可用，则提供信息。 在这种情况下，您可以增加 "from" 和 "to" 偏移量。|

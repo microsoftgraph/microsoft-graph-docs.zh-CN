@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: cac6d8e9d399e13554e9a9ef44fe8d869c0ad70d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e6afa7be0f1bf7dbda0561f8bd0e89ce8b0a3e4d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938946"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703782"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
@@ -19,6 +19,8 @@ ms.locfileid: "37938946"
 借助 Microsoft Graph，应用可以将自定义项或外部文件添加到 [Microsoft 搜索](/microsoftsearch/overview-microsoft-search)体验的搜索结果中。
 
 在无已登录用户的情况下，以应用程序的身份请求为数据编制索引，并使用[包含应用程序权限的访问令牌](/graph/auth-v2-service)进行标识。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="common-use-cases"></a>常见用例
 

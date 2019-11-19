@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8b9fdb03a8f162857c22ff00187d9db717c76d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0dd6392a8bee5ec4e38984d1a2cbd90126205eeb
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728774"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702508"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -18,15 +18,15 @@ ms.locfileid: "36728774"
 
 对邮箱的邮件文件夹的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用[状态令牌](/graph/delta-query-overview)来查询邮件文件夹中的增量更改。通过此功能，你可以维护和同步本地存储的用户邮件文件夹，而无需每次都从服务器中获取该邮箱的所有邮件文件夹。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
+|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
+|应用程序 | User.readbasic.all、邮件、读取、封写 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ GET /users/{id}/mailFolders/delta
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
 | Content-Type  | 字符串  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
@@ -68,7 +68,7 @@ GET /users/{id}/mailFolders/delta
 你可以找到一个类似的示例，演示如何使用状态令牌跟踪邮件文件夹中的邮件更改：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪邮件文件夹和跟踪文件夹中的邮件之间的主要区别在于，增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_delta"

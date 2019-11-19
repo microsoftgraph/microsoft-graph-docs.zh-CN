@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1a3e1a74d4ddf66017f36fa3f373d910dcdf793
+ms.openlocfilehash: 5b4a34190fd2ec6d61cdfb03e004e7673d60cddb
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657898"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703740"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -51,7 +51,7 @@ POST /users
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
-|displayName |string |要在用户的通讯簿中显示的名称。|
+|displayName |字符串 |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
@@ -223,7 +223,7 @@ Content-type: application/json
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

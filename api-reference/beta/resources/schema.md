@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8bd5d47f444d7054aecbf7b0a63e57643837a340
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938784"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704134"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -18,18 +18,20 @@ ms.locfileid: "37938784"
 
 介绍内容的类型，以及如何在 Microsoft Search[连接](externalconnection.md)中对项目中的每个属性编制索引。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="methods"></a>方法
 
 | 方法                                                    | 返回类型                   | 说明 |
 |:----------------------------------------------------------|:------------------------------|:--|
 | [创建架构](../api/externalconnection-post-schema.md) | 无*或*[架构](schema.md) | 注册连接架构。 |
-| [获取架构](../api/schema-get.md)                        | [架构](schema.md)           | 读取架构对象的属性。 |
+| [获取架构](../api/schema-get.md)                        | [schema](schema.md)           | 读取架构对象的属性。 |
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型                               | 描述                |
+| 属性   | 类型                               | 说明                |
 |:-----------|:-----------------------------------|:---------------------------|
-| #c1   | 字符串                             | 可能的值为 `microsoft.graph.externalItem` 和 `microsoft.graph.externalFile`。 必填。 |
+| #c1   | String                             | 可能的值为 `microsoft.graph.externalItem` 和 `microsoft.graph.externalFile`。 必需。 |
 | properties | [属性](property.md)集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为64。 在设置`baseType`为`microsoft.graph.externalItem`时所需的。 当设置`baseType`为时， `microsoft.graph.externalFile`将忽略。 |
 
 ## <a name="relationships"></a>关系

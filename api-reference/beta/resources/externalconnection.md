@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3e56b40a4ce91fa1b70aa01060c7ad5272fc1087
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 78752e2fe3375c10dcce57e3ba23e890b0ab66b5
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939058"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704176"
 ---
 # <a name="externalconnection-resource-type"></a>externalConnection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从外部源到 Microsoft 搜索的连接。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>方法
 
@@ -33,20 +35,20 @@ ms.locfileid: "37939058"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                              | 描述 |
+| 属性      | 类型                              | 说明 |
 |:--------------|:----------------------------------|:------------|
 | 设置 | [configuration](configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 可选。 |
-| description   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
-| id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以`Microsoft`下列值开头，也不能为`None`下列`Directory`值`Exchange`之一`ExchangeArchive`： `LinkedIn`、 `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer`、、、、、、 `Connectors`、、、。 必填。 |
-| name          | 字符串                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必填。 |
+| 说明   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
+| id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以`Microsoft`下列值开头，也不能为`None`下列`Directory`值`Exchange`之一`ExchangeArchive`： `LinkedIn`、 `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer`、、、、、、 `Connectors`、、、。 必需。 |
+| name          | String                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必需。 |
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型                                                     | 描述 |
+| 关系 | 类型                                                     | 说明 |
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [externalItem](externalitem.md)集合               | 只读。可为空。 |
 | operations   | [connectionOperation](connectionoperation.md)集合 | 只读。 可为 Null。 |
-| 架构       | [架构](schema.md)                                      | 只读。可为空。 |
+| 架构       | [schema](schema.md)                                      | 只读。可为空。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

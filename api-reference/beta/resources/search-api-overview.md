@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 871ad982eea98f45823376e993422a371b87612c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: afbb9ba469dad7751422902ea4a9876b6ca6b904
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938777"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704127"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -20,12 +20,13 @@ ms.locfileid: "37938777"
 
 搜索请求在登录用户的上下文中执行，并使用[包含委派权限的访问令牌](/graph/auth-v2-user)进行标识。
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="common-use-cases"></a>常见用例
 
 搜索 API 提供了[查询](../api/search-query.md)方法，可在 Microsoft 搜索中跨数据搜索。 本部分列出了常见用例，具体取决于在**查询**请求正文中设置的属性。
 
 代表用户执行搜索请求。 削减搜索结果以强制执行应用到项目的任何访问控制。  例如，在文件的上下文中，将在搜索请求过程中评估对文件的权限。 用户可以访问搜索中的项目数少于可以通过枚举 API 访问的项目数。
-
 
 | 用例 | 要在查询请求正文中定义的属性 |
 |:------------------|:---------|
@@ -42,11 +43,11 @@ ms.locfileid: "37938777"
 使用**查询**请求有效负载中的 **entityTypes** 属性定义搜索请求的范围。
 下面是支持的实体类型：
 
- - [event](event.md)
- - [message](message.md)
- - [driveItem](driveitem.md)
- - [externalFile](externalfile.md)
- - [externalItem](externalitem.md)
+- [event](event.md)
+- [message](message.md)
+- [driveItem](driveitem.md)
+- [externalFile](externalfile.md)
+- [externalItem](externalitem.md)
 
 ### <a name="page-search-results"></a>页面搜索结果
 
@@ -74,7 +75,6 @@ ms.locfileid: "37938777"
     | 2    | 25 | 50 |
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
-
 
 ### <a name="get-the-most-relevant-emails"></a>获取最相关的电子邮件
 
