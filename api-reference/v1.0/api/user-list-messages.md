@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: 80b1db383e27d1b4a71eb2d45ba047026707fee3
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113938"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702494"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -32,9 +32,9 @@ ms.locfileid: "37113938"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+|委派（工作或学校帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 

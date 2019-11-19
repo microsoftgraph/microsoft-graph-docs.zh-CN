@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1bd8a4f49d329cb4123f0ffcde142b2591c60132
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9a37f7ad648d68382ff2a4cd6b37d0fa511d0952
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728739"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702466"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -27,9 +27,9 @@ ms.locfileid: "36728739"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+|委派（工作或学校帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
