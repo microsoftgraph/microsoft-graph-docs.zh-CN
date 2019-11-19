@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6cf8a7be504ea554cefc7f424f7d908856de8014
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 71428b732183885192cc7fe73750251529c212c6
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633249"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38710285"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/accessReviews')
     .version('beta')
-    .filter('businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'')
+    .filter('businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'')
     .get();
 
 ```
