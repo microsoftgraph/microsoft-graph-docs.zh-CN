@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c9a0ec61c99a265e99c8c9f2d55864793e8486f2
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3d3d0f4a33eb8a6386d3b479a17233534f61da12
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936735"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747572"
 ---
-# <a name="get-conditionalaccesspolicy"></a><span data-ttu-id="8df6e-103">获取 conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="8df6e-103">Get conditionalAccessPolicy</span></span>
+# <a name="get-conditionalaccesspolicy"></a><span data-ttu-id="5d779-103">获取 conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="5d779-103">Get conditionalAccessPolicy</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8df6e-104">检索[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="8df6e-104">Retrieve the properties and relationships of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.</span></span>
+<span data-ttu-id="5d779-104">检索[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5d779-104">Retrieve the properties and relationships of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8df6e-105">权限</span><span class="sxs-lookup"><span data-stu-id="8df6e-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d779-105">权限</span><span class="sxs-lookup"><span data-stu-id="5d779-105">Permissions</span></span>
 
-<span data-ttu-id="8df6e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8df6e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5d779-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5d779-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8df6e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8df6e-108">Permission type</span></span>                        | <span data-ttu-id="8df6e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8df6e-109">Permissions (from least to most privileged)</span></span>                                       |
+|<span data-ttu-id="5d779-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5d779-108">Permission type</span></span>                        | <span data-ttu-id="5d779-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5d779-109">Permissions (from least to most privileged)</span></span>                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|<span data-ttu-id="8df6e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8df6e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="8df6e-111">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="8df6e-111">Policy.Read.All</span></span> |
-|<span data-ttu-id="8df6e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8df6e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8df6e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8df6e-113">Not supported.</span></span> |
-|<span data-ttu-id="8df6e-114">Application</span><span class="sxs-lookup"><span data-stu-id="8df6e-114">Application</span></span>                            | <span data-ttu-id="8df6e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8df6e-115">Not supported.</span></span> |
+|<span data-ttu-id="5d779-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5d779-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5d779-111">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d779-111">Policy.Read.All</span></span> |
+|<span data-ttu-id="5d779-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5d779-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d779-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="5d779-113">Not supported.</span></span> |
+|<span data-ttu-id="5d779-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5d779-114">Application</span></span>                            | <span data-ttu-id="5d779-115">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d779-115">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8df6e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8df6e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d779-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5d779-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "37936735"
 GET /conditionalAccess/policies/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8df6e-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="8df6e-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5d779-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5d779-117">Optional query parameters</span></span>
 
-<span data-ttu-id="8df6e-118">此方法支持`$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="8df6e-118">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="8df6e-119">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="8df6e-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="5d779-118">此方法支持`$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5d779-118">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="5d779-119">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="5d779-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8df6e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="8df6e-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5d779-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5d779-120">Request headers</span></span>
 
-| <span data-ttu-id="8df6e-121">名称</span><span class="sxs-lookup"><span data-stu-id="8df6e-121">Name</span></span>      |<span data-ttu-id="8df6e-122">说明</span><span class="sxs-lookup"><span data-stu-id="8df6e-122">Description</span></span>|
+| <span data-ttu-id="5d779-121">名称</span><span class="sxs-lookup"><span data-stu-id="5d779-121">Name</span></span>      |<span data-ttu-id="5d779-122">说明</span><span class="sxs-lookup"><span data-stu-id="5d779-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8df6e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8df6e-123">Authorization</span></span> | <span data-ttu-id="8df6e-124">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="8df6e-124">Bearer {token}</span></span> |
+| <span data-ttu-id="5d779-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d779-123">Authorization</span></span> | <span data-ttu-id="5d779-124">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="5d779-124">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8df6e-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="8df6e-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d779-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5d779-125">Request body</span></span>
 
-<span data-ttu-id="8df6e-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8df6e-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5d779-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5d779-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8df6e-127">响应</span><span class="sxs-lookup"><span data-stu-id="8df6e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5d779-127">响应</span><span class="sxs-lookup"><span data-stu-id="5d779-127">Response</span></span>
 
-<span data-ttu-id="8df6e-128">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8df6e-128">If successful, this method returns a `200 OK` response code and the requested [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.</span></span>
+<span data-ttu-id="5d779-128">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5d779-128">If successful, this method returns a `200 OK` response code and the requested [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8df6e-129">示例</span><span class="sxs-lookup"><span data-stu-id="8df6e-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5d779-129">示例</span><span class="sxs-lookup"><span data-stu-id="5d779-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8df6e-130">请求</span><span class="sxs-lookup"><span data-stu-id="8df6e-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5d779-130">请求</span><span class="sxs-lookup"><span data-stu-id="5d779-130">Request</span></span>
 
-<span data-ttu-id="8df6e-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8df6e-131">The following is an example of the request.</span></span>
+<span data-ttu-id="5d779-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5d779-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8df6e-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="8df6e-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5d779-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d779-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conditionalaccesspolicy"
@@ -69,26 +69,26 @@ GET /conditionalAccess/policies/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8df6e-133">C#</span><span class="sxs-lookup"><span data-stu-id="8df6e-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5d779-133">C#</span><span class="sxs-lookup"><span data-stu-id="5d779-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8df6e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8df6e-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5d779-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5d779-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-conditionalaccesspolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8df6e-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8df6e-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5d779-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5d779-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conditionalaccesspolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8df6e-136">响应</span><span class="sxs-lookup"><span data-stu-id="8df6e-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5d779-136">响应</span><span class="sxs-lookup"><span data-stu-id="5d779-136">Response</span></span>
 
-<span data-ttu-id="8df6e-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8df6e-137">The following is an example of the response.</span></span>
+<span data-ttu-id="5d779-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5d779-137">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8df6e-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8df6e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5d779-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5d779-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
