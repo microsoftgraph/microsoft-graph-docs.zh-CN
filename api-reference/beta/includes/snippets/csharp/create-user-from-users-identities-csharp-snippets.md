@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66487d83b5ff08c6d394383448310eb131852af7
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 76326bd35c5f0013596c423a58942a92f8af9792
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538422"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38751769"
 ---
 ```csharp
 
@@ -24,6 +24,12 @@ var user = new User
         },
         new ObjectIdentity
         {
+            SignInType = "emailAddress",
+            Issuer = "contoso.onmicrosoft.com",
+            IssuerAssignedId = "jsmith@yahoo.com"
+        },
+        new ObjectIdentity
+        {
             SignInType = "federated",
             Issuer = "facebook.com",
             IssuerAssignedId = "5eecb0cd"
@@ -31,9 +37,9 @@ var user = new User
     },
     PasswordProfile = new PasswordProfile
     {
-        ForceChangePasswordNextSignIn = true,
         Password = "password-value"
-    }
+    },
+    PasswordPolicies = "DisablePasswordExpiration"
 };
 
 await graphClient.Users

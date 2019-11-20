@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ebf022b5de86f9783e75a18b1cab8d61367dd1f4
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 592da1e75bb04cc7378663b3a670928518d03085
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538423"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38751770"
 ---
 ```javascript
 
@@ -24,15 +24,20 @@ const user = {
       issuerAssignedId: "johnsmith"
     },
     {
+      signInType: "emailAddress",
+      issuer: "contoso.onmicrosoft.com",
+      issuerAssignedId: "jsmith@yahoo.com"
+    },
+    {
       signInType: "federated",
       issuer: "facebook.com",
       issuerAssignedId: "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    forceChangePasswordNextSignIn: true,
     password: "password-value"
-  }
+  },
+  passwordPolicies: "DisablePasswordExpiration"
 };
 
 let res = await client.api('/users')
