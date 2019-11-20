@@ -5,12 +5,12 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5e8af42e62003b8aed9000efd2fa6de635c8bb67
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c6221f32d36b0fa58b6e400745f949f460462b55
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658826"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747920"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal： createPasswordSingleSignOnCredentials
 
@@ -52,7 +52,7 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md)集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应
@@ -64,6 +64,8 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 ### <a name="request"></a>请求
 
 请求示例如下所示。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_createpasswordsinglesignoncredentials"
@@ -89,6 +91,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-createpasswordsinglesignoncredentials-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-createpasswordsinglesignoncredentials-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-createpasswordsinglesignoncredentials-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

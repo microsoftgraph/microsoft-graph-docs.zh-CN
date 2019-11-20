@@ -5,23 +5,23 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b126358a8ab8574d4dcbf7c1f22e412eda41d61f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 88cf36813a6ed7102807917caf0bca3e46744f5f
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367054"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748460"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 网络代理服务器策略。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|address|String|代理服务器的地址。 按照以下格式指定地址：<server>\[“:”<port>\]|
+|address|String|代理服务器的地址。 在 "\>\[服务器：\<端口" \<格式中指定地址\>\]|
 |exceptions|String 集合|不应使用代理服务器的地址。 系统无法将代理服务器用于以本节点中指定的内容开头的地址。|
 |useForLocalAddresses|Boolean|指定是否应将代理服务器用于本地 (Intranet) 地址。|
 

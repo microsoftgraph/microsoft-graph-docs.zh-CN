@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7397727a4e2e0c4ce1f9c3746b4deab4edc8d5c8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b7db4460f6006430b8853a60cc53c1de3b2c5695
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994639"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747197"
 ---
 # <a name="list-connections"></a>列出连接
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[externalConnections](../resources/externalconnection.md)的列表。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>权限
 

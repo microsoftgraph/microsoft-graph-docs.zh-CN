@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a4f544b42ed6c102a43aaf6e5e5cacc1e5a2471
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 8dc7ce7bd7a253f0a9696d9987062bc5ceaa7ce6
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994723"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747189"
 ---
 # <a name="create-connection"></a>创建连接
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的[externalConnection](../resources/externalconnection.md)。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>权限
 

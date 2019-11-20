@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cbf65ee703e22895e25ae18b2a94c4a1740527f2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006499"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747978"
 ---
 # <a name="participant-mute"></a>参与者：静音
 
@@ -20,11 +20,11 @@ ms.locfileid: "38006499"
 
 这是一种服务器静音，这意味着服务器将丢弃此参与者的所有音频数据包，即使参与者继续传输音频也是如此。
 
-有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsOperation.md)。
+有关如何处理静音操作的详细信息，请参阅[muteParticipantOperation](../resources/muteParticipantoperation.md)。
 
-> **注意：** 这仅对组调用受支持。
+> **注意：** 仅组调用支持此方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -38,7 +38,7 @@ ms.locfileid: "38006499"
 POST /app/calls/{id}/participants/{id}/mute
 POST /communications/calls/{id}/participants/{id}/mute
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -54,7 +54,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
 
 >**注意：** Whem 此 API 返回成功的响应，所有参与者都将收到名单更新。
 

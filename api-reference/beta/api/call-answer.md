@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1892a7f6f0331cad2b0ef74adfba857dd21b2b2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 344aa48fd3b816e5d72141a5388fd1abdce50406
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302355"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747593"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -29,9 +29,9 @@ ms.locfileid: "38302355"
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                        |
 | 委派（个人 Microsoft 帐户） | 不支持                        |
-| 应用程序     | JoinGroupCalls 或 JoinGroupCallsasGuest 的所有请求。                                                         |
+| 应用程序     | JoinGroupCalls 或 JoinGroupCallsasGuest 的所有请求。 |
 
-> **注意：** 对于使用应用程序托管媒体的呼叫，您还需要 AccessMedia 权限。                                                   |
+> **注意：** 对于使用应用程序托管媒体的呼叫，您还需要 AccessMedia 权限。 您必须至少具有以下权限之一，才能确保传入呼叫通知中`source`的解密： AccessMedia、InitiateGroupCall、Calls、JoinGroupCall、、、、、、JoinGroupCallAsGuest 等。 `source`是传入呼叫通知中的呼叫者信息。 如果至少缺少其中一个权限，则`source`将保持加密。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {"blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |字符串                                    |这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。    |
+|callbackUri       |String                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。    |
 |acceptedModalities|String collection                         |接受形式的列表。 可能的值为`audio`： `video`、 `videoBasedScreenSharing`、。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。 需要                                                                                                            |
 

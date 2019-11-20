@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b515fb45ad0329059a85102d42243b3e6fa7c202
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e5a2fd02e7cf078aee3898b881d4754169ef0d6a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934312"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747627"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -33,7 +33,7 @@ ms.locfileid: "37934312"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|

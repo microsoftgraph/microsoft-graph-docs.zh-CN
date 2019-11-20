@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 13c794fc7d03fa607bc61d57d731bdf2d3d04f71
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 10adfc916f2c4f30f19944188b1b375080c6e5bf
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994547"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747211"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -19,6 +19,8 @@ ms.locfileid: "37994547"
 创建新的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)。
 
 此 API 可用于创建自定义项或文件。 通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。 包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>权限
 
@@ -42,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
+| connection-id | 字符串 | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | 字符串 | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -147,7 +149,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 <!-- markdownlint-enable MD024 -->
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",

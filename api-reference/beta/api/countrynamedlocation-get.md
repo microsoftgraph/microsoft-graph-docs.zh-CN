@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cda2dfe66858157be397ecf75e68c7a3b5743bb0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: bd6ec395532124daa94dc60f895f22a6c2951a4b
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937127"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747758"
 ---
 # <a name="get-countrynamedlocation"></a>获取 countryNamedLocation
 
@@ -26,7 +26,7 @@ ms.locfileid: "37937127"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: a4f5157e4441269258ed578a26a6ea700b8e4e0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006464"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747964"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -18,7 +18,10 @@ ms.locfileid: "38006464"
 
 将呼叫中的所有参与者设为静音。
 
-## <a name="permissions"></a>Permissions
+> **注意：** 此 API 已弃用，将在2020年3月15日之前删除。 若要使单个参与者静音，请参阅[参与者：静音](participant-mute.md)。
+
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -33,23 +36,24 @@ ms.locfileid: "38006464"
 POST /app/calls/{id}/participants/muteAll
 POST /communications/calls/{id}/participants/muteAll
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String 集合|要静音的参与者。|
+|participants|String collection|要静音的参与者。|
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

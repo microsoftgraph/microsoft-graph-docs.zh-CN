@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1c9093f6c86f11588b0758a80fdbe8682d6d216
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 246eb11fbcffb8c86c7d50cd186eec9473d6028e
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005969"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747586"
 ---
 # <a name="call-mute"></a>呼叫：静音
 
@@ -18,7 +18,13 @@ ms.locfileid: "38005969"
 
 允许应用程序将其本身设为静音。
 
-## <a name="permissions"></a>Permissions
+这是一种服务器静音，这意味着服务器将丢弃此参与者的所有音频数据包，即使参与者继续传输音频也是如此。
+
+有关如何处理静音操作的更多详细信息，请参阅[muteParticipantOperation](../resources/muteparticipantoperation.md)
+
+> **注意：** 仅组调用支持此方法。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -33,12 +39,13 @@ ms.locfileid: "38005969"
 POST /app/calls/{id}/mute
 POST /communications/calls/{id}/mute
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
@@ -48,7 +55,9 @@ POST /communications/calls/{id}/mute
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
+
+> **注意：** 此操作返回成功响应后，所有参与者都将收到名单更新
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -93,7 +102,7 @@ Content-Type: application/json
 <!-- { 
   "blockType": "response", 
   "truncated": true, 
-  "@odata.type": "microsoft.graph.commsOperation" 
+  "@odata.type": "microsoft.graph.muteParticipantOperation" 
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -104,13 +113,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"
