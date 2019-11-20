@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5c920bfb332445688ab327d424b6f9abb8e4e8
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006752"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747995"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -24,32 +24,32 @@ ms.locfileid: "38006752"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                            | 返回类型                                       | 说明                                  |
-|:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Get call](../api/call-get.md)                                    | [call](call.md)                                   | 读取 **call** 对象的属性。      |
-| [Delete](../api/call-delete.md)                                   |                                                   | 删除或挂断活动**呼叫**。        |
-| **Call Handling**                                                 |                                                   |                                              |
-| [Answer](../api/call-answer.md)                                   |                                                   | 应答传入呼叫。                     |
-| [Reject](../api/call-reject.md)                                   |                                                   | 拒绝传入呼叫。                     |
-| [Redirect](../api/call-redirect.md)                               |                                                   | 重定向传入呼叫。                   |
-| [Transfer](../api/call-transfer.md)                               |                                                   | 转接呼叫                              |
-| **群组呼叫**                                                   |                                                   |                                              |
-| [List participants](../api/call-list-participants.md)             | [participant](participant.md) 集合          | 获取参与者对象集合。         |
-| [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | 邀请参与者加入活动呼叫。      |
-| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | 将呼叫中的所有参与者设为静音。           |
-| [参与者静音](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | 群组通话中参与者静音。        |
-| [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | 在多方对话中配置音频。  |
-| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | 通过发布到 audioRoutingGroups 集合创建一个新的 audioRoutingGroup。 |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) 集合|获取 audioRoutingGroup 对象集合。  |
-| **Interactive-Voice-Response**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | 在呼叫中播放提示。                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 录制来自通话的短音频剪辑。     |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | 取消媒体处理。                     |
-| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | 订阅 DTMF 音。                     |
-| **Self Participant Operations**                                   |                                                   |                                              |
-| [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | 在呼叫中将自己设为静音。                       |
-| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | 在呼叫中将自己取消静音。                     |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | 在呼叫中开始和停止共享屏幕。   |
+| 方法                                                             | 返回类型                                                 | 说明                                                                     |
+|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Get](../api/call-get.md)                                     | [call](call.md)                                             | 读取 **call** 对象的属性。                                         |
+| [删除](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动**呼叫**。                                           |
+| **Call Handling**                                                  |                                                        |                                                                                 |
+| [Answer](../api/call-answer.md)                                    | 无                                                            | 应答传入呼叫。                                                        |
+| [Reject](../api/call-reject.md)                                    | 无                                                            | 拒绝传入呼叫。                                                        |
+| [重定向](../api/call-redirect.md)                                | 无                                                            | 重定向传入呼叫。                                                      |
+| [Transfer](../api/call-transfer.md)                                | 无                                                            | 转接呼叫                                                                 |
+| **群组呼叫**                                                    |                                                             |                                                                                 |
+| [List participants](../api/call-list-participants.md)              | [participant](participant.md) 集合                    | 获取参与者对象集合。                                            |
+| [邀请参与者](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | 邀请参与者加入活动呼叫。                                         |
+| [所有参与者静音](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | 将呼叫中的所有参与者设为静音。                                              |
+| [参与者静音](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | 群组通话中参与者静音。                                           |
+| [配置 Audio Mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | 在多方对话中配置音频。                                     |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | 通过发布到 audioRoutingGroups 集合创建一个新的 audioRoutingGroup。 |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) 集合        | 获取 audioRoutingGroup 对象集合。                                      |
+| **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
+| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | 在呼叫中播放提示。                                                        |
+| [Record](../api/call-record.md)                                    | [recordOperation](recordoperation.md)                       | 录制来自通话的短音频剪辑。                                        |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | 取消媒体处理。                                                        |
+| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | 订阅 DTMF 音。                                                        |
+| **Self Participant Operations**                                    |                                                             |                                                                                 |
+| [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在呼叫中将自己设为静音。                                                          |
+| [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | 在呼叫中将自己取消静音。                                                        |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                            | 在呼叫中开始和停止共享屏幕。                                      |
 
 ## <a name="properties"></a>属性
 
