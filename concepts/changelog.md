@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f6a5eebba2e68cfa0b9deb248ec6abb5bc185358
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702473"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748508"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -23,6 +23,13 @@ ms.locfileid: "38702473"
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 增加了[更新会议室或会议室列表](/graph/api/resources/place-get?view=graph-rest-beta)的能力。|
+
+### <a name="cloud-communications-calls-and-online-meetings"></a>云通信（电话和网络会议）
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 更改        | Beta        | 已将[静音](/graph/api/call-mute?view=graph-rest-beta)和[参与者静音](/graph/api/participant-mute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta)。 | 
+| 更改        | Beta        | 已将[取消静音](/graph/api/call-unmute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta)。 | 
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -394,7 +401,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 添加了 [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) 和 [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) 资源。 **pendingOperations** 资源适用于 [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) 资源。 |
-| 添加项 | Beta | 向 [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) 资源添加了 [restore](/graph/api/driveitem-restore?view=graph-rest-beta) 操作。 |
+| 添加 | Beta | 向 [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) 资源添加了 [restore](/graph/api/driveitem-restore?view=graph-rest-beta) 操作。 |
 | Addition | Beta | 向 [photo](/graph/api/resources/photo?view=graph-rest-beta) 资源添加了 **orientation** 属性。 |
 | 添加项 | Beta | 向 [hashes](/graph/api/resources/hashes?view=graph-rest-beta) 资源添加了 **sha256Hash** 属性。 |
 
@@ -623,14 +630,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemCount** 属性。|
-| 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemSizeInBytes** 属性。|
+| 添加        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemSizeInBytes** 属性。|
 | 添加项        | Beta  | 向 [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) 实体添加了 **groupId** 属性。|
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加 | beta | 添加了对[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)，[获取频道消息](/graph/api/channel-get-message?view=graph-rest-beta)，[列出消息回复](/graph/api/channel-list-messagereplies?view=graph-rest-beta)，以及[获取消息回复](/graph/api/channel-get-messagereply?view=graph-rest-beta)的应用程序权限的支持。 |
+| 添加项 | beta | 添加了对[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)，[获取频道消息](/graph/api/channel-get-message?view=graph-rest-beta)，[列出消息回复](/graph/api/channel-list-messagereplies?view=graph-rest-beta)，以及[获取消息回复](/graph/api/channel-get-messagereply?view=graph-rest-beta)的应用程序权限的支持。 |
 | 添加项 | beta | 添加了对[在聊天中列出消息](/graph/api/chatmessage-list?view=graph-rest-beta)和[在聊天中获取消息](/graph/api/chatmessage-get?view=graph-rest-beta)的应用程序权限的支持。 |
 | 添加项 | beta | 已将**installedApps**属性添加到[聊天](/graph/api/resources/chat?view=graph-rest-beta)资源。|
 | 添加项 | beta | 已添加**用户** 资源的"[聊天](/graph/api/resources/user?view=graph-rest-beta)"属性的导航绑定。|
@@ -2308,7 +2315,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [shutDown](/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [recoverPasscode](/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [cleanWindowsDevice](/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0) 操作 |
-|Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) 操作 |
+|添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) 操作 |
 |添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) 操作 |
@@ -4011,7 +4018,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 修补程序             | v1.0 和 beta | 修复了使用 $filter 表达式多次指定同一属性，会出现以下 500 错误的请求：已添加具有相同键的项目。 |
 | 修补程序             | v1.0 和 beta | 修复了对操作参数名称和值不区分大小写的错误。 |
 | 修补程序             | v1.0 和 beta | 修复了对包含某些嵌入复杂属性的 null 值的有效负载的请求处理出现 null 引用异常的问题。 |
-| Addition        | v1.0 和 beta | 添加了对复杂类型属性进行排序和筛选的支持。 |
+| 添加        | v1.0 和 beta | 添加了对复杂类型属性进行排序和筛选的支持。 |
 | 添加项        | v1.0 和 beta | 在 401 响应上的 www-authenticate 标头中添加了 authorization_uri 属性。该 URL 可用于启动令牌获取流。 |
 | 添加项        | v1.0 和 beta | 改进了用户和组中的错误消息。 |
 

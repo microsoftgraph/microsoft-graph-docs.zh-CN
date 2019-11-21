@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ce7cfcf8e438f948a2c17232b391271f17144a59
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 01ef8d7a09f34070fe16619ae24d6c202a847453
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704155"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748515"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -808,7 +808,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 必需
-| _Mail.ReadBasic_ |    读取用户基本邮件 | 让应用能够读取已登录用户的邮箱，但不读取正文、previewBody、附件和所有扩展属性。 不包含邮件搜索权限。 | 否 | 是
+| _Mail.ReadBasic_ |    读取用户基本邮件 | 让应用能够读取已登录用户的邮箱，但不读取 Body、BodyPreview、UniqueBody、Attachments, ExtendedProperties 和 Extensions。 不包含邮件搜索权限。 | 否 | 是
 | _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
 | _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
@@ -822,7 +822,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    读取所有邮箱中的邮件 | 允许应用在没有登录用户的情况下读取所有邮箱中的邮件。| 是 |
-| _Mail.ReadBasic.All_ |    读取所有用户基本邮件 | 让应用能够读取所有用户的邮箱，但不读取正文、previewBody、附件和所有扩展属性。 不包含邮件搜索权限。 | 是 | 否
+| _Mail.ReadBasic.All_ |    读取所有用户基本邮件 | 让应用能够读取所有用户的邮箱，但不读取 Body、BodyPreview、UniqueBody、Attachments, ExtendedProperties 和 Extensions。 不包含邮件搜索权限。 | 是 | 否
 | _Mail.ReadWrite_ |    读取和写入所有邮箱中的邮件 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。 | 是 |
 | _Mail.Send_ |    以任意用户身份发送邮件 | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。 | 是 |
 | _MailboxSettings.Read_ |  读取用户的所有邮箱设置 | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。 | 否 |

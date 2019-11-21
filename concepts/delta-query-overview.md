@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4ea9156f89ac1e979c0f6c83e3b6ae828333fbbd
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 224ef601bf089ed24eac39a7061f0453c8fd6e3e
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333344"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748494"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -58,7 +58,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 对于用户和组，在使用某些查询参数时受到限制：
 
 - 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
-- 对于用户和组，分别只有 `manager` 和 `members` 导航属性支持 `$expand`。
+- `$select` 还支持用户和组的 `manager` 和 `members` 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
 
 - 借助范围筛选器，可按对象 ID 跟踪一个或多个特定用户或组的更改。 例如，以下请求会返回与查询筛选器中指定的 ID 相匹配的组的更改。 
 
@@ -78,7 +78,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - 用户和组的关系表示为对标准资源表示形式的注释。这些注释使用格式 `propertyName@delta`。注释包含在初始 delta 查询请求的响应内。
 
-删除的实例使用其 **id** 和 `@removed` 对象表示。`@removed` 对象可能包含有关为何删除该实例的其他信息。例如，"@removed": {"reason": “changed”}。
+删除的实例使用其 **id** 和 `@removed` 对象表示。 `@removed` 对象可能包含有关为何删除该实例的其他信息。 例如，"@removed": {"reason": "changed"}。
 
 可能的 @removed 原因可以是*已更改*或*已删除*。
 
