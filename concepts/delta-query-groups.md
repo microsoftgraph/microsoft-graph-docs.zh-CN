@@ -4,12 +4,12 @@ description: 使用 delta 查询，可通过一系列 delta 函数调用来查�
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fac0aaf0e895c0bdd44434174cf2cc24b99fd5c6
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 71647e5f5aa37fb7d7c5e6d63668c2b8f50f4e6c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053919"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748501"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -40,18 +40,18 @@ ms.locfileid: "37053919"
 请注意以下几点：
 
 - 请求中包含可选的 `$select` 查询参数，以演示如何在以后的请求中自动包含查询参数。
-- 包括可选的 `$expand` 查询参数，以显示如何一起检索组成员和组对象。 这允许跟踪成员身份变更，例如当用户被添加到组或从组中删除时。
+- 可选的 `$select` 查询参数还用于显示如何一起检索组成员和组对象。 这允许跟踪成员身份变更，例如当用户被添加到组或从组中删除时。
 - 初始请求不包括状态令牌。状态令牌将用于后续请求中。
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 ## <a name="initial-response"></a>初始响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](/graph/api/resources/group?view=graph-rest-1.0)集合对象。 如果整个组集过大而无法适应一个响应，那么还将包括一个包含状态令牌的 `nextLink`。
 
-此示例中包含 `nextLink`；原始 `$select` 和 `$expand` 查询参数则在状态令牌中进行了编码。
+此示例中包含 `nextLink`；原始 `$select` 查询参数则在状态令牌中进行了编码。
 
 ```http
 HTTP/1.1 200 OK
@@ -89,7 +89,7 @@ Content-type: application/json
 
 ## <a name="nextlink-request"></a>nextLink 请求
 
-第二个请求使用上一个响应中的 `nextLink`，其中包含 `skipToken`。 请注意，`$select` 和 `$expand` 参数都不显式出现，因为它们在令牌中编码。
+第二个请求使用上一个响应中的 `nextLink`，其中包含 `skipToken`。 请注意，`$select` 参数不显式出现，因为它在令牌中编码。
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
@@ -230,9 +230,9 @@ Content-type: application/json
 }
 ```
 
-关于上述示例响应需注意的一些事项：
+上面示例响应的一些注意事项如下：
 
-- 这些对象连同一组相同的属性一起返回，这些属性最初通过 `$select` 和 `$expand` 查询参数指定。
+- 这些对象连同一组相同的属性一起返回，这些属性最初通过 `$select` 查询参数指定。
 
 - 同时包括更改和未更改的属性。 在上述示例中，`description` 属性具有新值，而 `displayName` 属性未发生更改。
 
@@ -244,14 +244,14 @@ Content-type: application/json
 
 ## <a name="paging-through-members-in-a-large-group"></a>逐页查看大型组中的成员
 
-当未指定 `$select` 查询参数，或已显式指定 `$expand=members` 参数时，`members@delta` 属性默认包含在组对象中。 对于包含许多成员的组来说，可能所有成员都无法适应单个响应；在本节中，我们将介绍为处理这种情况所应实现的模式。
+当未指定 `$select` 查询参数，或已显式指定 `$select=members` 参数时，`members@delta` 属性默认包含在组对象中。 对于包含许多成员的组来说，可能所有成员都无法适应单个响应；在本节中，我们将介绍为处理这种情况所应实现的模式。
 
 >**注意：** 此模式既适用于组状态的初始检索，也适用于后续调用，以获取增量更改。
 
 假定正在执行以下增量查询 - 要捕获组的初始完整状态，或要在稍后获取增量更改：
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 1. Microsoft Graph 可能返回一个仅包含一个组对象的响应，其中 `members@delta` 属性中有一个大型成员列表：
@@ -290,7 +290,7 @@ Content-type: application/json
 }
 ```
 
-2. 如果按照 `nextLink` 操作，可能会再次收到包含同一组对象的响应。 将返回相同的属性值，但扩展的 `members@delta` 属性现在包含不同的用户列表。
+2. 如果按照 `nextLink` 操作，可能会再次收到包含同一组对象的响应。 将返回相同的属性值，但 `members@delta` 属性现在包含不同的用户列表。
 
 **第二页**
 
