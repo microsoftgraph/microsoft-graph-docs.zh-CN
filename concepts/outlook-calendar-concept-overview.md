@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e5e8ff0c1b3eb15fd2a8cd68de11c9995cf693b9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969813"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756775"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -73,6 +73,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - 如 Outlook 中的一个示例所示，客户可以组织一场会议，并包括从西雅图会议室、巴黎咖啡店和中国家庭办公室加入的与会者。 通过编程方式，事件 **locations** 属性（[location](/graph/api/resources/location?view=graph-rest-1.0) 对象集合）可反映每个 **location** 的 **displayName** 和 **locationType** 中此级别的详细信息。 请参阅[示例](/graph/api/event-get?view=graph-rest-1.0#request-2)。
 - Outlook 为客户提供了组织事件和针对每个事件的开始和结束时间指定一个时区的灵活性。 为了支持这种灵活性，默认情况下，日历 API 会以 UTC 格式返回**事件**的**开始**和**结束**时间，并提供 **originalStartTimeZone** 和 **originalEndTimeZone** 属性，以记录创建事件时使用的时区。
 - 或者，可以指定 `Prefer: outlook.timezone="{time zone name}"` 标头，以便 GET 事件操作返回指定时区的**开始**和**结束**时间。 时区名称可以是 Windows 支持的任何名称，也可以是此[列表](/graph/api/resources/datetimetimezone?view=graph-rest-1.0)上的这些名称。 请参阅使用中的 `Prefer` 标头[示例](/graph/api/event-get?view=graph-rest-1.0#request-1)
+- 仅在测试版预览中可用：支持在线会议提供程序的组织可以设置 Outlook 日历以使用这些提供程序。 可方便地[组织或以在线会议的形式参加这些日历中的事件](outlook-calendar-online-meetings.md)。
 
 ## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>构建具有位置感知功能的应用并提供智能上下文（预览）
 
@@ -104,8 +105,9 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - 了解以下信息：
   - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
   - [获取用户和资源的忙/闲日程安排](outlook-get-free-busy-schedule.md)
+  - [在 Outlook 日历中建议会议时间（预览）](outlook-calendar-meeting-proposals.md)
+  - [使用 Outlook 组织或参加在线会议（预览）](outlook-calendar-online-meetings.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
-  - [在 Outlook 日历中建议会议时间](outlook-calendar-meeting-proposals.md)
   - [获取共享事件](outlook-get-shared-events-calendars.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
 - 查看 Outlook [日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 参考。
