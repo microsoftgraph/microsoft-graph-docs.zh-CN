@@ -217,6 +217,8 @@
             - name: 目录对象
               href: resources/directoryobject.md
               items:
+                - name: 检查 member 对象
+                  href: api/user-checkmemberobjects.md
                 - name: 列出拥有的设备
                   href: api/user-list-owneddevices.md
                 - name: 列出注册的设备
@@ -350,6 +352,8 @@
                   href: api/group-post-owners.md
                 - name: 检查成员组
                   href: api/group-checkmembergroups.md
+                - name: 检查 member 对象
+                  href: api/group-checkmemberobjects.md
                 - name: 创建组
                   href: api/group-post-groups.md
                 - name: 删除组
@@ -847,7 +851,7 @@
                 - name: iOS 应用商店应用
                   href: resources/intune-apps-iosstoreapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-iosstoreapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosstoreapp-get.md
@@ -862,7 +866,7 @@
                 - name: iOS VPP 应用
                   href: resources/intune-apps-iosvppapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-iosvppapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosvppapp-get.md
@@ -1499,7 +1503,7 @@
                 - name: 设备符合性策略设置状态摘要
                   href: resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
@@ -1512,7 +1516,7 @@
                 - name: 适用于规则的设备符合性计划操作
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -2135,7 +2139,7 @@
                 - name: Windows Phone 8.1 常规配置
                   href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
@@ -2156,7 +2160,7 @@
                 - name: 适用于企业的 Windows 更新配置
                   href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2781,7 +2785,7 @@
                 - name: 设备管理合作伙伴
                   href: resources/intune-onboarding-devicemanagementpartner.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-devicemanagementpartner-list.md
                     - name: 获取
                       href: api/intune-onboarding-devicemanagementpartner-get.md
@@ -2800,7 +2804,7 @@
                 - name: 注册配置分配
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -3208,15 +3212,15 @@
                   href: api/directory-deleteditems-list.md
                 - name: 获取已删除的应用程序
                   href: api/directory-deleteditems-get.md
-                - name: Permanently delete application
+                - name: 永久删除应用程序
                   href: api/directory-deleteditems-delete.md
                 - name: 还原已删除的应用程序
                   href: api/directory-deleteditems-restore.md
                 - name: 添加密码
                   href: api/application-addpassword.md
-                - name: Remove password
+                - name: 删除密码
                   href: api/application-removepassword.md
-                - name: Create extension
+                - name: 创建扩展
                   href: api/application-post-extensionproperty.md
                 - name: 列出扩展
                   href: api/application-list-extensionproperty.md
@@ -3294,10 +3298,8 @@
                   href: api/device-update.md
                 - name: 删除设备
                   href: api/device-delete.md
-                - name: 列出注册的所有者
-                  href: api/device-list-registeredowners.md
-                - name: 列出注册的用户
-                  href: api/device-list-registeredusers.md
+                - name: 检查 member 对象
+                  href: api/device-checkmemberobjects.md
                 - name: 创建注册的所有者
                   href: api/device-post-registeredowners.md
                 - name: 创建注册的用户
@@ -3306,6 +3308,10 @@
                   href: api/device-list-memberof.md
                 - name: 列出设备可传递组
                   href: api/device-list-transitivememberof.md
+                - name: 列出注册的所有者
+                  href: api/device-list-registeredowners.md
+                - name: 列出注册的用户
+                  href: api/device-list-registeredusers.md
             - name: 目录对象
               href: resources/directoryobject.md
               items:

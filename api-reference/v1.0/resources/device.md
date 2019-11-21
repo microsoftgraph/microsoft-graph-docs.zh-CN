@@ -1,16 +1,16 @@
 ---
 title: 设备资源类型
-description: 表示在组织中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
+description: 表示在组织中注册的设备。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 350cb39b83df678623f20db802d57fd65b43f2fa
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8d460aa4c35fd99ab50f28f8ec7d6fd60fda1f81
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939822"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756782"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "37939822"
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员的组。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
+|[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
@@ -39,7 +40,7 @@ ms.locfileid: "37939822"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。必需。|
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。必需。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
@@ -48,7 +49,7 @@ ms.locfileid: "37939822"
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|字符串|设备显示名称。必需。 |
 |id|String|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|isCompliant|布尔|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
@@ -68,8 +69,8 @@ ms.locfileid: "37939822"
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
-|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。 |
-|registeredUsers|[directoryObject](directoryobject.md) 集合|设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
+|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 NULL。 |
+|registeredUsers|[directoryObject](directoryobject.md) 集合|设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
