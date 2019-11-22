@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3feca862395b693c63f3bad60ade95d7f71645e8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939416"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757129"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -117,15 +117,15 @@ ms.locfileid: "37939416"
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
-|isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
+|isOnlineMeeting|Boolean| 若此事件包含联机会议信息（即 **onlineMeeting** 指向 [onlineMeetingInfo](onlinemeetinginfo.md) 资源）则为 `True`，反之则为 `false`。 默认值为 `false`（**onlineMeeting** 为 `null`）。 可选。 <br> 将 **isOnlineMeeting** 设置为 `true` 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，Outlook 将忽略对 **isOnlineMeeting** 的任何进一步更改，并且会议仍保持联机。 |
 |isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |位置|[位置](location.md)|事件的位置。|
 |位置|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 关于与会者如何加入联机会议的详细信息。 只读。|
-|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
-|onlineMeetingUrl|String|联机会议的 URL。 仅当组织者将事件指定为联机会议（如 Skype）才会设置此属性。 只读。|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 关于与会者如何加入联机会议的详细信息。 默认值为 Null。 只读。 <br>设置 **isOnlineMeeting** 和 **onlineMeetingProvider** 属性以启用联机会议后，Microsoft Graph 将初始化 **onlineMeeting**。 设置后，会议仍保持联机，并且不能再次更改 **isOnlineMeeting**、**onlineMeetingProvider** 和 **onlneMeeting** 属性。|
+|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 默认情况下，**onlineMeetingProvider** 为 `unknown`。 可取值为：`unknown`、`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 <br> 设置 **isOnlineMeeting** 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，你不能再次更改 **onlineMeetingProvider**，并且会议仍保持联机。 |
+|onlineMeetingUrl|String|联机会议的 URL。 仅当组织者在 Outlook 中将事件指定为联机会议（如 Skype）才会设置此属性。 只读。<br>若要访问 URL 参加联机会议，请使用通过 **event** 的 **onlineMeeting** 属性公开的 **joinUrl**。 未来即将弃用 **onlineMeetingUrl** 属性。 |
 |组织者|[收件人](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
