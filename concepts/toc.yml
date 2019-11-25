@@ -86,6 +86,8 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: 建议新的会议时间（预览版）
             href: outlook-calendar-meeting-proposals.md
+          - name: 组织或参加联机会议（预览版）
+            href: outlook-calendar-online-meetings.md
           - name: 安排定期事件
             href: outlook-schedule-recurring-events.md
           - name: 获取共享事件

@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: f9901df5724cc701bcaab0138ab15fc20cf9c563
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748508"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756875"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -83,6 +83,15 @@ ms.locfileid: "38748508"
 | Addition | v1.0 | 添加了新的委派和应用程序权限 [GroupMember.Read.All](permissions-reference.md#group-permissions) 和 [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions) ，以获取和更新 [组](/graph/api/resources/group?view=graph-rest-1.0) 资源。
 | 添加项 | v1.0 | 添加了新的应用程序权限 [Group.Create](permissions-reference.md#group-permissions)，以创建**组** 资源。
 | 添加 | Beta 和 v1.0 | 向[用户](/graph/api/resources/user?view=graph-rest-1.0)资源添加了 **creationType** 属性。|
+| 添加 | v1.0 | 添加了[设备](/graph/api/resources/device?view=graph-rest-1.0)资源的 [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) 操作。 |
+| 添加项 | v1.0 | 添加了[组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) 操作。 |
+| 添加 | v1.0 | 为[用户](/graph/api/resources/user?view=graph-rest-1.0)资源添加了 [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) 操作。 |
+
+### <a name="identity-and-access-information-protection"></a>身份和访问（信息保护）
+
+| **更改类型** | **版本** | **说明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | beta        | 向读取和写入威胁评估请求添加了新的委托和应用程序权限 [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) 和 [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) |
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
@@ -4009,7 +4018,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 向个人联系人实体集添加了 mobilePhone 属性。 |
+| 添加        | Beta        | 向个人联系人实体集添加了 mobilePhone 属性。 |
 
 ### <a name="general"></a>常规
 
