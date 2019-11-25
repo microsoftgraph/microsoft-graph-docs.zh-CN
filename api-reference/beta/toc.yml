@@ -365,6 +365,13 @@
                   href: api/planneruser-list-recentplans.md
                 - name: 列出分配到用户的任务
                   href: api/planneruser-list-tasks.md
+            - name: 配置文件
+              href: resources/profile.md
+              items:
+                - name: 获取用户的配置文件
+                  href: api/profile-get.md
+                - name: 删除用户的配置文件
+                  href: api/profile-delete.md
             - name: 团队合作
               items:
                 - name: 安装的应用
@@ -1052,7 +1059,7 @@
                 - name: Android for Work 应用配置架构
                   href: resources/intune-androidforwork-androidforworkappconfigurationschema.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-androidforwork-androidforworkappconfigurationschema-list.md
                     - name: 获取
                       href: api/intune-androidforwork-androidforworkappconfigurationschema-get.md
@@ -1071,7 +1078,7 @@
                 - name: Android for Work 注册配置文件
                   href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                     - name: 获取
                       href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
@@ -3427,7 +3434,7 @@
                 - name: 设备配置分配
                   href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -3440,7 +3447,7 @@
                 - name: 设备配置冲突摘要
                   href: resources/intune-deviceconfig-deviceconfigurationconflictsummary.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md
@@ -3856,7 +3863,7 @@
                 - name: 组策略演示文稿值列表
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluelist.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md
@@ -3869,7 +3876,7 @@
                 - name: 组策略演示文稿值长小数位数
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-get.md
@@ -6195,7 +6202,7 @@
                 - name: 管理条件
                   href: resources/intune-fencing-managementcondition.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-fencing-managementcondition-list.md
                     - name: 获取
                       href: api/intune-fencing-managementcondition-get.md
@@ -6210,7 +6217,7 @@
                 - name: 管理条件语句
                   href: resources/intune-fencing-managementconditionstatement.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-fencing-managementconditionstatement-list.md
                     - name: 获取
                       href: api/intune-fencing-managementconditionstatement-get.md
@@ -6627,7 +6634,7 @@
                 - name: 默认受管理的应用保护
                   href: resources/intune-mam-defaultmanagedappprotection.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-defaultmanagedappprotection-list.md
                     - name: 获取
                       href: api/intune-mam-defaultmanagedappprotection-get.md
@@ -6640,7 +6647,7 @@
                 - name: Intune 品牌打造配置文件
                   href: resources/intune-wip-intunebrandingprofile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-wip-intunebrandingprofile-list.md
                     - name: 获取
                       href: api/intune-wip-intunebrandingprofile-get.md
@@ -7048,7 +7055,7 @@
                 - name: 移动威胁防护连接器
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: 获取
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -7070,7 +7077,7 @@
                 - name: 组织
                   href: resources/intune-onboarding-organization.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-organization-list.md
                     - name: 获取
                       href: api/intune-onboarding-organization-get.md
@@ -8361,7 +8368,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: 列表
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Create
+                    - name: 创建
                       href: api/conditionalaccessroot-post-policies.md
                     - name: 获取
                       href: api/conditionalaccesspolicy-get.md
@@ -9893,6 +9900,176 @@
               items:
                 - name: 列出人员
                   href: api/user-list-people.md
+            - name: 配置文件（预览）
+              href: resources/profile.md
+              items:
+                - name: 获取用户的配置文件
+                  href: api/profile-get.md
+                - name: 删除用户的配置文件
+                  href: api/profile-delete.md
+                - name: 帐户信息
+                  href: resources/useraccountinformation.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-account.md
+                    - name: 获取
+                      href: api/useraccountinformation-get.md
+                - name: 周年
+                  href: resources/personanniversary.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-anniversaries.md
+                    - name: 创建
+                      href: api/profile-post-anniversaries.md
+                    - name: 获取
+                      href: api/personanniversary-get.md
+                    - name: 更新
+                      href: api/personanniversary-update.md
+                    - name: 删除
+                      href: api/personanniversary-delete.md
+                - name: 教育活动
+                  href: resources/educationalactivity.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-educationalactivities.md
+                    - name: 创建
+                      href: api/profile-post-educationalactivities.md
+                    - name: 获取
+                      href: api/educationalactivity-get.md
+                    - name: 更新
+                      href: api/educationalactivity-update.md
+                    - name: 删除
+                      href: api/educationalactivity-delete.md
+                - name: 电子邮件地址
+                  href: resources/itememail.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-emails.md
+                    - name: 创建
+                      href: api/profile-post-emails.md
+                    - name: 获取
+                      href: api/itememail-get.md
+                    - name: 更新
+                      href: api/itememail-update.md
+                    - name: 删除
+                      href: api/itememail-delete.md
+                - name: Interests
+                  href: resources/personinterest.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-interests.md
+                    - name: 创建
+                      href: api/profile-post-interests.md
+                    - name: 获取
+                      href: api/personinterest-get.md
+                    - name: 更新
+                      href: api/personinterest-update.md
+                    - name: 删除
+                      href: api/personinterest-delete.md
+                - name: 语言
+                  href: resources/languageproficiency.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-languages.md
+                    - name: 创建
+                      href: api/profile-post-languages.md
+                    - name: 获取
+                      href: api/languageproficiency-get.md
+                    - name: 更新
+                      href: api/languageproficiency-update.md
+                    - name: 删除
+                      href: api/languageproficiency-delete.md
+                - name: Names
+                  href: resources/personname.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-names.md
+                    - name: 创建
+                      href: api/profile-post-names.md
+                    - name: 获取
+                      href: api/personname-get.md
+                    - name: 更新
+                      href: api/personname-update.md
+                    - name: 删除
+                      href: api/personname-delete.md
+                - name: 手机
+                  href: resources/itemphone.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-phones.md
+                    - name: 创建
+                      href: api/profile-post-phones.md
+                    - name: 获取
+                      href: api/itemphone-get.md
+                    - name: 更新
+                      href: api/itemphone-update.md
+                    - name: 删除
+                      href: api/itemphone-delete.md
+                - name: Positions
+                  href: resources/workposition.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-positions.md
+                    - name: 创建
+                      href: api/profile-post-positions.md
+                    - name: 获取
+                      href: api/workposition-get.md
+                    - name: 更新
+                      href: api/workposition-update.md
+                    - name: 删除
+                      href: api/workposition-delete.md
+                - name: 项目
+                  href: resources/projectparticipation.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-projects.md
+                    - name: 创建
+                      href: api/profile-post-projects.md
+                    - name: 获取
+                      href: api/projectparticipation-get.md
+                    - name: 更新
+                      href: api/projectparticipation-update.md
+                    - name: 删除
+                      href: api/projectparticipation-delete.md
+                - name: Skills
+                  href: resources/skillproficiency.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-skills.md
+                    - name: 创建
+                      href: api/profile-post-skills.md
+                    - name: 获取
+                      href: api/skillproficiency-get.md
+                    - name: 更新
+                      href: api/skillproficiency-update.md
+                    - name: 删除
+                      href: api/skillproficiency-delete.md
+                - name: Web 帐户
+                  href: resources/webaccount.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-webaccounts.md
+                    - name: 创建
+                      href: api/profile-post-webaccounts.md
+                    - name: 获取
+                      href: api/webaccount-get.md
+                    - name: 更新
+                      href: api/webaccount-update.md
+                    - name: 删除
+                      href: api/webaccount-delete.md
+                - name: 网站
+                  href: resources/personwebsite.md
+                  items:
+                    - name: 列表
+                      href: api/profile-list-websites.md
+                    - name: 创建
+                      href: api/profile-post-websites.md
+                    - name: 获取
+                      href: api/personwebsite-get.md
+                    - name: 更新
+                      href: api/personwebsite-update.md
+                    - name: 删除
+                      href: api/personwebsite-delete.md
             - name: 见解
               href: resources/officegraphinsights.md
               items:
@@ -9911,7 +10088,9 @@
                   items:
                     - name: 共享的列表
                       href: api/insights-list-shared.md
-            - name: 分析
+            - name: 提及（预览）
+              href: resources/mention.md
+            - name: 分析（预览版）
               href: resources/useranalytics.md
               items:
                 - name: Settings
@@ -9938,171 +10117,6 @@
                       href: api/activitystatistics-list.md
                     - name: 获取活动统计信息
                       href: api/activitystatistics-get.md
-            - name: 有关记录
-              href: resources/mention.md
-            - name: 配置文件
-              href: resources/profile.md
-              items:
-                - name: 获取配置文件
-                  href: api/profile-get.md
-                - name: 删除配置文件
-                  href: api/profile-delete.md
-                - name: 列表帐户
-                  href: api/profile-list-account.md
-                - name: 列出 anniversariles
-                  href: api/profile-list-anniversaries.md
-                - name: 创建周年纪念
-                  href: api/profile-post-anniversaries.md
-                - name: 列出教育活动
-                  href: api/profile-list-educationalactivities.md
-                - name: 创建教育活动
-                  href: api/profile-post-educationalactivities.md
-                - name: 创建电子邮件地址
-                  href: api/profile-post-emails.md
-                - name: 列出电子邮件地址
-                  href: api/profile-list-emails.md
-                - name: 创建利息
-                  href: api/profile-post-interests.md
-                - name: 列出兴趣
-                  href: api/profile-list-interests.md
-                - name: 创建语言
-                  href: api/profile-post-languages.md
-                - name: 列出语言
-                  href: api/profile-list-languages.md
-                - name: 创建名称
-                  href: api/profile-post-names.md
-                - name: 列出名称
-                  href: api/profile-list-names.md
-                - name: 列出网站
-                  href: api/profile-list-websites.md
-                - name: 创建电话号码
-                  href: api/profile-post-phones.md
-                - name: 列出电话号码
-                  href: api/profile-list-phones.md
-                - name: 创建位置
-                  href: api/profile-post-positions.md
-                - name: 列表位置
-                  href: api/profile-list-positions.md
-                - name: 创建项目
-                  href: api/profile-post-projects.md
-                - name: 列出项目
-                  href: api/profile-list-projects.md
-                - name: 创建技能
-                  href: api/profile-post-skills.md
-                - name: 列表技能
-                  href: api/profile-list-skills.md
-                - name: 创建 web 帐户
-                  href: api/profile-post-webaccounts.md
-                - name: 列出 web 帐户
-                  href: api/profile-list-webaccounts.md
-                - name: 创建网站
-                  href: api/profile-post-websites.md
-                - name: 列出网站
-                  href: api/profile-list-websites.md
-                - name: 帐户信息
-                  href: resources/useraccountinformation.md
-                  items:
-                    - name: 获取
-                      href: api/useraccountinformation-get.md
-                - name: 周年
-                  href: resources/personanniversary.md
-                  items:
-                    - name: 获取
-                      href: api/personanniversary-get.md
-                    - name: 更新
-                      href: api/personanniversary-update.md
-                    - name: 删除
-                      href: api/personanniversary-delete.md
-                - name: 教育活动
-                  href: resources/educationalactivity.md
-                  items:
-                    - name: 获取
-                      href: api/educationalactivity-get.md
-                    - name: 更新
-                      href: api/educationalactivity-update.md
-                    - name: 删除
-                      href: api/educationalactivity-delete.md
-                - name: 电子邮件地址
-                  href: resources/itememail.md
-                  items:
-                    - name: 获取
-                      href: api/itememail-get.md
-                    - name: 更新
-                      href: api/itememail-update.md
-                    - name: 删除
-                      href: api/itememail-delete.md
-                - name: Interests
-                  href: resources/personinterest.md
-                  items:
-                    - name: 获取
-                      href: api/personinterest-get.md
-                    - name: 更新
-                      href: api/personinterest-update.md
-                    - name: 删除
-                      href: api/personinterest-delete.md
-                - name: 语言
-                  href: resources/languageproficiency.md
-                  items:
-                    - name: 获取
-                      href: api/languageproficiency-get.md
-                    - name: 更新
-                      href: api/languageproficiency-update.md
-                    - name: 删除
-                      href: api/languageproficiency-delete.md
-                - name: 手机
-                  href: resources/itemphone.md
-                  items:
-                    - name: 获取
-                      href: api/itemphone-get.md
-                    - name: 更新
-                      href: api/itemphone-update.md
-                    - name: 删除
-                      href: api/itemphone-delete.md
-                - name: Positions
-                  href: resources/workposition.md
-                  items:
-                    - name: 获取
-                      href: api/workposition-get.md
-                    - name: 更新
-                      href: api/workposition-update.md
-                    - name: 删除
-                      href: api/workposition-delete.md
-                - name: 项目
-                  href: resources/projectparticipation.md
-                  items:
-                    - name: 获取
-                      href: api/projectparticipation-get.md
-                    - name: 更新
-                      href: api/projectparticipation-update.md
-                    - name: 删除
-                      href: api/projectparticipation-delete.md
-                - name: Skills
-                  href: resources/skillproficiency.md
-                  items:
-                    - name: 获取
-                      href: api/skillproficiency-get.md
-                    - name: 更新
-                      href: api/skillproficiency-update.md
-                    - name: 删除
-                      href: api/skillproficiency-delete.md
-                - name: Web 帐户
-                  href: resources/webaccount.md
-                  items:
-                    - name: 获取
-                      href: api/webaccount-get.md
-                    - name: 更新
-                      href: api/webaccount-update.md
-                    - name: 删除
-                      href: api/webaccount-delete.md
-                - name: 网站
-                  href: resources/personwebsite.md
-                  items:
-                    - name: 获取
-                      href: api/personwebsite-get.md
-                    - name: 更新
-                      href: api/personwebsite-update.md
-                    - name: 删除
-                      href: api/personwebsite-delete.md
         - name: 任务和计划
           displayName: Planner
           items:
