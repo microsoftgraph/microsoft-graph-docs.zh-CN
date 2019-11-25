@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 800814e1b8d342e4d0d118101dccf65007250514
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 13d1a5c35f177771886598629e3f6f27ff91931e
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998016"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250647"
 ---
-# <a name="list-account"></a>列表帐户
+# <a name="list-accounts"></a>列表帐户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从[配置文件](../resources/profile.md)中检索与用户帐户相关的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /me/profile/account
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|名称            |值    |说明                                                                                                                                                                 |
+|名称            |值    |Description                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby*参数更改响应的顺序。|

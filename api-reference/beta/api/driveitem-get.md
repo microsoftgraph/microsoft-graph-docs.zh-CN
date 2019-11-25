@@ -6,12 +6,12 @@ title: 获取文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 1a7e4af2e31e3f3ec6f279b5e9f6646bc4c6ed60
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333211"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250640"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -25,9 +25,11 @@ ms.locfileid: "37333211"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All </br>Group.Read.All、Group.ReadWrite.All </br>Sites.Read.All、Sites.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
-|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+|应用程序 | Files.Read.All、Files.ReadWrite.All </br>Group.Read.All、Group.ReadWrite.All </br>Sites.Read.All、Sites.ReadWrite.All |
+
+> 注意： `/teams`终结点需要使用 Group。 Read. All 或 Group. 所有权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,6 +40,7 @@ GET /drives/{drive-id}/items/{item-id}
 GET /drives/{drive-id}/root:/{item-path}
 GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
+GET /teams/{teamId}/channels/{channelId}/files
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
 GET /sites/{siteId}/drive/items/{itemId}
@@ -72,7 +75,6 @@ GET /users/{userId}/drive/root:/{item-path}
 
 下面是用户的 OneDrive 的根文件夹请求示例。
 
-
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
@@ -92,7 +94,6 @@ GET /me/drive/root
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## <a name="response"></a>响应
 
@@ -130,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>说明
 
 请参阅[错误响应][error-response]，详细了解错误返回方式。
 
