@@ -13,6 +13,7 @@ items:
       - name: Microsoft Graph 中的服务
         href: overview-major-services.md
       - name: 最近更新
+        expanded: true
         items:
           - name: 新增功能亮点
             href: whats-new-overview.md
