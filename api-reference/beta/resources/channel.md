@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: ff2b3fbd679022880728f482c2c2eb7555325c99
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677125"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250727"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "36677125"
 |[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
 |[删除选项卡](../api/teamstab-delete.md) | 无 | 将选项卡添加（固定）到频道。|
 |[更新选项卡](../api/teamstab-update.md) | [teamsTab](teamstab.md) | 更新选项卡属性。|
+|[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
 
 ## <a name="properties"></a>属性
 
@@ -61,6 +62,7 @@ ms.locfileid: "36677125"
 |messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为空。 此 API 目前仅支持读取消息，但最终也会支持写入消息。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
 |成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
+|driveItem|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
