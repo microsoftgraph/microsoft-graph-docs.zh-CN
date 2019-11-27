@@ -4,40 +4,56 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: cfe3cdd7d328194d21141c532d26659e8a8508b1
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: b1d3a4d5d4f68e3ac28a695d7e832dfed6f1a4d7
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757341"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621619"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online-preview"></a><span data-ttu-id="4f98d-103">使用 Outlook 组织或参加联机会议（预览版）</span><span class="sxs-lookup"><span data-stu-id="4f98d-103">Use Outlook to organize or attend meetings online (preview)</span></span>
+# <a name="use-outlook-to-organize-or-attend-meetings-online-preview"></a><span data-ttu-id="f315a-103">使用 Outlook 组织或参加联机会议（预览版）</span><span class="sxs-lookup"><span data-stu-id="f315a-103">Use Outlook to organize or attend meetings online (preview)</span></span>
 
-<span data-ttu-id="4f98d-104">在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-104">In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider.</span></span> <span data-ttu-id="4f98d-105">可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event?view=graph-rest-beta)，并允许与会者使用支持的提供程序加入联机会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-105">You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider.</span></span> <span data-ttu-id="4f98d-106">你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)\*\*\*\*，包括用于加入会议的 URL。</span><span class="sxs-lookup"><span data-stu-id="4f98d-106">You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting.</span></span> 
+<span data-ttu-id="f315a-104">在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-104">In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider.</span></span> <span data-ttu-id="f315a-105">可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event?view=graph-rest-beta)，并允许与会者使用支持的提供程序加入联机会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-105">You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider.</span></span> <span data-ttu-id="f315a-106">你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)\*\*\*\*，包括用于加入会议的 URL。</span><span class="sxs-lookup"><span data-stu-id="f315a-106">You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting.</span></span> 
 
-## <a name="calendars-and-online-meeting-providers"></a><span data-ttu-id="4f98d-107">日历和联机会议提供程序</span><span class="sxs-lookup"><span data-stu-id="4f98d-107">Calendars and online meeting providers</span></span>
+## <a name="calendars-and-online-meeting-providers"></a><span data-ttu-id="f315a-107">日历和联机会议提供程序</span><span class="sxs-lookup"><span data-stu-id="f315a-107">Calendars and online meeting providers</span></span>
 
-<span data-ttu-id="4f98d-108">支持以下任何联机会议提供程序的机构可设置 Outlook 日历并支持组织联机会议：</span><span class="sxs-lookup"><span data-stu-id="4f98d-108">An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:</span></span>
+<span data-ttu-id="f315a-108">支持以下任何联机会议提供程序的机构可设置 Outlook 日历并支持组织联机会议：</span><span class="sxs-lookup"><span data-stu-id="f315a-108">An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:</span></span>
 
-- <span data-ttu-id="4f98d-109">Microsoft Teams，作为 Office 365 商业版或企业版套件的一部分获得</span><span class="sxs-lookup"><span data-stu-id="4f98d-109">Microsoft Teams, acquired as part of an Office 365 business or enterprise suite</span></span>
-- <span data-ttu-id="4f98d-110">Skype</span><span class="sxs-lookup"><span data-stu-id="4f98d-110">Skype</span></span>
-- <span data-ttu-id="4f98d-111">Skype for Business</span><span class="sxs-lookup"><span data-stu-id="4f98d-111">Skype for Business</span></span>
+- <span data-ttu-id="f315a-109">Microsoft Teams，作为 Office 365 商业版或企业版套件的一部分获得</span><span class="sxs-lookup"><span data-stu-id="f315a-109">Microsoft Teams, acquired as part of an Office 365 business or enterprise suite</span></span>
+- <span data-ttu-id="f315a-110">Skype</span><span class="sxs-lookup"><span data-stu-id="f315a-110">Skype</span></span>
+- <span data-ttu-id="f315a-111">Skype for Business</span><span class="sxs-lookup"><span data-stu-id="f315a-111">Skype for Business</span></span>
 
-<span data-ttu-id="4f98d-112">查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar?view=graph-rest-beta)是否支持任何联机会议提供程序。</span><span class="sxs-lookup"><span data-stu-id="4f98d-112">Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers.</span></span> <span data-ttu-id="4f98d-113">下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。</span><span class="sxs-lookup"><span data-stu-id="4f98d-113">The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider.</span></span> 
+<span data-ttu-id="f315a-112">查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar?view=graph-rest-beta)是否支持任何联机会议提供程序。</span><span class="sxs-lookup"><span data-stu-id="f315a-112">Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers.</span></span> <span data-ttu-id="f315a-113">下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。</span><span class="sxs-lookup"><span data-stu-id="f315a-113">The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider.</span></span> 
 
-### <a name="example-find-whether-a-calendar-supports-any-online-meeting-provider"></a><span data-ttu-id="4f98d-114">示例：查找日历是否支持任何联机会议提供程序</span><span class="sxs-lookup"><span data-stu-id="4f98d-114">Example: Find whether a calendar supports any online meeting provider</span></span>
+### <a name="example-find-whether-a-calendar-supports-any-online-meeting-provider"></a><span data-ttu-id="f315a-114">示例：查找日历是否支持任何联机会议提供程序</span><span class="sxs-lookup"><span data-stu-id="f315a-114">Example: Find whether a calendar supports any online meeting provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4f98d-115">请求</span><span class="sxs-lookup"><span data-stu-id="4f98d-115">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f315a-115">请求</span><span class="sxs-lookup"><span data-stu-id="f315a-115">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f315a-116">HTTP</span><span class="sxs-lookup"><span data-stu-id="f315a-116">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_support_for_online_meeting_providers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f315a-117">C#</span><span class="sxs-lookup"><span data-stu-id="f315a-117">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="4f98d-116">响应</span><span class="sxs-lookup"><span data-stu-id="4f98d-116">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f315a-118">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f315a-118">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-support-for-online-meeting-providers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f315a-119">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f315a-119">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-support-for-online-meeting-providers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="f315a-120">响应</span><span class="sxs-lookup"><span data-stu-id="f315a-120">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_calendar_support_for_online_meeting_providers",
@@ -75,16 +91,18 @@ Content-type: application/json
 }
 ```
 
-## <a name="create-and-enable-a-meeting-online"></a><span data-ttu-id="4f98d-117">创建和启用联机会议</span><span class="sxs-lookup"><span data-stu-id="4f98d-117">Create and enable a meeting online</span></span>
+## <a name="create-and-enable-a-meeting-online"></a><span data-ttu-id="f315a-121">创建和启用联机会议</span><span class="sxs-lookup"><span data-stu-id="f315a-121">Create and enable a meeting online</span></span>
 
-<span data-ttu-id="4f98d-118">可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的提供程序之一，创建会议并允许与会者加入联机会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-118">You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar.</span></span> <span data-ttu-id="4f98d-119">下面的示例在已登录用户的默认日历中创建了一个会议，并允许与会者通过 Microsoft Teams 加入会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-119">The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams.</span></span> <span data-ttu-id="4f98d-120">该响应包括一个带有 **onlineMeeting** 属性中指定的联机会议信息的**事件**。</span><span class="sxs-lookup"><span data-stu-id="4f98d-120">The response includes an **event** with online meeting information specified in the **onlineMeeting** property.</span></span>
+<span data-ttu-id="f315a-122">可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的提供程序之一，创建会议并允许与会者加入联机会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-122">You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar.</span></span> <span data-ttu-id="f315a-123">下面的示例在已登录用户的默认日历中创建了一个会议，并允许与会者通过 Microsoft Teams 加入会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-123">The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams.</span></span> <span data-ttu-id="f315a-124">该响应包括一个带有 **onlineMeeting** 属性中指定的联机会议信息的**事件**。</span><span class="sxs-lookup"><span data-stu-id="f315a-124">The response includes an **event** with online meeting information specified in the **onlineMeeting** property.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4f98d-121">一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。</span><span class="sxs-lookup"><span data-stu-id="4f98d-121">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="4f98d-122">随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-122">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
+> <span data-ttu-id="f315a-125">一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。</span><span class="sxs-lookup"><span data-stu-id="f315a-125">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="f315a-126">随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-126">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
 
-### <a name="example-create-and-make-meeting-available-as-an-online-meeting"></a><span data-ttu-id="4f98d-123">示例：创建会议并使会议成为联机会议</span><span class="sxs-lookup"><span data-stu-id="4f98d-123">Example: Create and make meeting available as an online meeting</span></span>
+### <a name="example-create-and-make-meeting-available-as-an-online-meeting"></a><span data-ttu-id="f315a-127">示例：创建会议并使会议成为联机会议</span><span class="sxs-lookup"><span data-stu-id="f315a-127">Example: Create and make meeting available as an online meeting</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4f98d-124">请求</span><span class="sxs-lookup"><span data-stu-id="4f98d-124">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f315a-128">请求</span><span class="sxs-lookup"><span data-stu-id="f315a-128">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f315a-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="f315a-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_meeting_enable_online"
@@ -126,8 +144,22 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f315a-130">C#</span><span class="sxs-lookup"><span data-stu-id="f315a-130">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-meeting-enable-online-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="4f98d-125">响应</span><span class="sxs-lookup"><span data-stu-id="4f98d-125">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f315a-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f315a-131">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-meeting-enable-online-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f315a-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f315a-132">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-meeting-enable-online-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="f315a-133">响应</span><span class="sxs-lookup"><span data-stu-id="f315a-133">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_meeting_enable_online",
@@ -226,26 +258,42 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-information-to-join-meeting-online"></a><span data-ttu-id="4f98d-126">获取有关加入联机会议的信息</span><span class="sxs-lookup"><span data-stu-id="4f98d-126">Get information to join meeting online</span></span>
+## <a name="get-information-to-join-meeting-online"></a><span data-ttu-id="f315a-134">获取有关加入联机会议的信息</span><span class="sxs-lookup"><span data-stu-id="f315a-134">Get information to join meeting online</span></span>
 
-<span data-ttu-id="4f98d-127">与会者和组织者可以使用 \*\*isOnlineMeeting \*\*" 属性验证是否已启用[事件](/graph/api/resources/event?view=graph-rest-beta)以进行联机参与。</span><span class="sxs-lookup"><span data-stu-id="4f98d-127">Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation.</span></span> <span data-ttu-id="4f98d-128">他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。</span><span class="sxs-lookup"><span data-stu-id="4f98d-128">They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including **joinUrl**.</span></span> 
+<span data-ttu-id="f315a-135">与会者和组织者可以使用 \*\*isOnlineMeeting \*\*" 属性验证是否已启用[事件](/graph/api/resources/event?view=graph-rest-beta)以进行联机参与。</span><span class="sxs-lookup"><span data-stu-id="f315a-135">Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation.</span></span> <span data-ttu-id="f315a-136">他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。</span><span class="sxs-lookup"><span data-stu-id="f315a-136">They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including **joinUrl**.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="4f98d-129">使用通过**事件**的 **onlineMeeting** 属性提供的 **joinUrl** 访问 URL 以加入会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-129">Access the URL to join a meeting using **joinUrl**, available via the **onlineMeeting** property of the **event**.</span></span> <span data-ttu-id="4f98d-130">不要使用**事件**的 **onlineMeetingUrl** 属性，因为 **onlineMeetingUrl** 即将过时。</span><span class="sxs-lookup"><span data-stu-id="4f98d-130">Do not use the **onlineMeetingUrl** property of the **event** because **onlineMeetingUrl** will soon be deprecated.</span></span>
+> <span data-ttu-id="f315a-137">使用通过**事件**的 **onlineMeeting** 属性提供的 **joinUrl** 访问 URL 以加入会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-137">Access the URL to join a meeting using **joinUrl**, available via the **onlineMeeting** property of the **event**.</span></span> <span data-ttu-id="f315a-138">不要使用**事件**的 **onlineMeetingUrl** 属性，因为 **onlineMeetingUrl** 即将过时。</span><span class="sxs-lookup"><span data-stu-id="f315a-138">Do not use the **onlineMeetingUrl** property of the **event** because **onlineMeetingUrl** will soon be deprecated.</span></span>
 
-### <a name="example-get-online-meeting-information"></a><span data-ttu-id="4f98d-131">示例：获取联机会议信息</span><span class="sxs-lookup"><span data-stu-id="4f98d-131">Example: Get online meeting information</span></span>
+### <a name="example-get-online-meeting-information"></a><span data-ttu-id="f315a-139">示例：获取联机会议信息</span><span class="sxs-lookup"><span data-stu-id="f315a-139">Example: Get online meeting information</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4f98d-132">请求</span><span class="sxs-lookup"><span data-stu-id="4f98d-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f315a-140">请求</span><span class="sxs-lookup"><span data-stu-id="f315a-140">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f315a-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f315a-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_online_meeting_info"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f315a-142">C#</span><span class="sxs-lookup"><span data-stu-id="f315a-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="4f98d-133">响应</span><span class="sxs-lookup"><span data-stu-id="4f98d-133">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f315a-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f315a-143">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-online-meeting-info-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f315a-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f315a-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-event-online-meeting-info-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="f315a-145">响应</span><span class="sxs-lookup"><span data-stu-id="f315a-145">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_online_meeting_info",
@@ -271,15 +319,17 @@ Content-type: application/json
 ```
 
 
-## <a name="update-a-meeting-to-enable-it-online"></a><span data-ttu-id="4f98d-134">更新会议以使其联机</span><span class="sxs-lookup"><span data-stu-id="4f98d-134">Update a meeting to enable it online</span></span>
-<span data-ttu-id="4f98d-135">可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的联机会议提供程序之一，更改现有**事件**并使其成为联机会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-135">You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar.</span></span> <span data-ttu-id="4f98d-136">该响应包括使用 **onlineMeeting** 属性中指定的相应联机会议信息更新的**事件**。</span><span class="sxs-lookup"><span data-stu-id="4f98d-136">The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.</span></span>
+## <a name="update-a-meeting-to-enable-it-online"></a><span data-ttu-id="f315a-146">更新会议以使其联机</span><span class="sxs-lookup"><span data-stu-id="f315a-146">Update a meeting to enable it online</span></span>
+<span data-ttu-id="f315a-147">可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的联机会议提供程序之一，更改现有**事件**并使其成为联机会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-147">You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar.</span></span> <span data-ttu-id="f315a-148">该响应包括使用 **onlineMeeting** 属性中指定的相应联机会议信息更新的**事件**。</span><span class="sxs-lookup"><span data-stu-id="f315a-148">The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4f98d-137">一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。</span><span class="sxs-lookup"><span data-stu-id="4f98d-137">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="4f98d-138">随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。</span><span class="sxs-lookup"><span data-stu-id="4f98d-138">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
+> <span data-ttu-id="f315a-149">一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。</span><span class="sxs-lookup"><span data-stu-id="f315a-149">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="f315a-150">随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。</span><span class="sxs-lookup"><span data-stu-id="f315a-150">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
 
-### <a name="example-update-a-meeting-to-make-it-available-as-an-online-meeting"></a><span data-ttu-id="4f98d-139">示例：更新会议以使其成为联机会议</span><span class="sxs-lookup"><span data-stu-id="4f98d-139">Example: Update a meeting to make it available as an online meeting</span></span>
+### <a name="example-update-a-meeting-to-make-it-available-as-an-online-meeting"></a><span data-ttu-id="f315a-151">示例：更新会议以使其成为联机会议</span><span class="sxs-lookup"><span data-stu-id="f315a-151">Example: Update a meeting to make it available as an online meeting</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4f98d-140">请求</span><span class="sxs-lookup"><span data-stu-id="4f98d-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f315a-152">请求</span><span class="sxs-lookup"><span data-stu-id="f315a-152">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f315a-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="f315a-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_meeting_online"
@@ -293,8 +343,22 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f315a-154">C#</span><span class="sxs-lookup"><span data-stu-id="f315a-154">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-meeting-online-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="4f98d-141">响应</span><span class="sxs-lookup"><span data-stu-id="4f98d-141">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f315a-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f315a-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-meeting-online-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f315a-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f315a-156">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-meeting-online-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="f315a-157">响应</span><span class="sxs-lookup"><span data-stu-id="f315a-157">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "update_meeting_online",
@@ -426,9 +490,9 @@ Content-type: application/json
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4f98d-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4f98d-142">See also</span></span>
-- <span data-ttu-id="4f98d-143">有关 Microsoft Teams 与 Office 365 的互操作性的详细信息，请参阅[共存和升级设置](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings)。</span><span class="sxs-lookup"><span data-stu-id="4f98d-143">For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).</span></span>
-- [<span data-ttu-id="4f98d-144">在 Outlook 日历中查找可能会议时间</span><span class="sxs-lookup"><span data-stu-id="4f98d-144">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
-- [<span data-ttu-id="4f98d-145">获取用户和资源的忙/闲日程安排</span><span class="sxs-lookup"><span data-stu-id="4f98d-145">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
-- [<span data-ttu-id="4f98d-146">在 Outlook 日历中建议会议时间（预览）</span><span class="sxs-lookup"><span data-stu-id="4f98d-146">Propose meeting times in an Outlook calendar</span></span>](outlook-calendar-meeting-proposals.md)
-- [<span data-ttu-id="4f98d-147">在 Outlook 中将重复约会安排为定期事件</span><span class="sxs-lookup"><span data-stu-id="4f98d-147">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
+## <a name="see-also"></a><span data-ttu-id="f315a-158">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f315a-158">See also</span></span>
+- <span data-ttu-id="f315a-159">有关 Microsoft Teams 与 Office 365 的互操作性的详细信息，请参阅[共存和升级设置](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings)。</span><span class="sxs-lookup"><span data-stu-id="f315a-159">For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).</span></span>
+- [<span data-ttu-id="f315a-160">在 Outlook 日历中查找可能会议时间</span><span class="sxs-lookup"><span data-stu-id="f315a-160">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
+- [<span data-ttu-id="f315a-161">获取用户和资源的忙/闲日程安排</span><span class="sxs-lookup"><span data-stu-id="f315a-161">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
+- [<span data-ttu-id="f315a-162">在 Outlook 日历中建议会议时间（预览）</span><span class="sxs-lookup"><span data-stu-id="f315a-162">Propose meeting times in an Outlook calendar (preview)</span></span>](outlook-calendar-meeting-proposals.md)
+- [<span data-ttu-id="f315a-163">在 Outlook 中将重复约会安排为定期事件</span><span class="sxs-lookup"><span data-stu-id="f315a-163">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
