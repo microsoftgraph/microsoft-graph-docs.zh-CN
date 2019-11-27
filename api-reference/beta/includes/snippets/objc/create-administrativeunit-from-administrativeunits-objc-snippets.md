@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8adeb1f850bf08d951b7c1bee76ca3dba71ce03c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 919ee91e8e47ca0e807217ab3919c874f9467fc8
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710644"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621593"
 ---
 ```objc
 
@@ -19,7 +19,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphAdministrativeUnit *administrativeUnit = [[MSGraphAdministrativeUnit alloc] init];
 [administrativeUnit setDisplayName:@"Seattle District Technical Schools"];
 [administrativeUnit setDescription:@"Seattle district technical schools administration"];
-[administrativeUnit setVisibility:@"true"];
+[administrativeUnit setVisibility:@"HiddenMembership"];
 
 NSError *error;
 NSData *administrativeUnitData = [administrativeUnit getSerializedDataWithError:&error];
