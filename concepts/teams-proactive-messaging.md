@@ -4,12 +4,12 @@ description: 通过先使用 Microsoft Graph 安装机器人，向 Microsoft 团
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1cdd206d7cc6db97340ec41727ce9ea64c86510
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: e8222931709ab504106c86209ec186140b4a2087
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839197"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621647"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>使用 Microsoft 团队中的 bot 的主动消息传递
 
@@ -75,7 +75,7 @@ POST /users/{user-id}/teamwork/installedApps
 如果您丢失了`chatThreadId`，可以通过调用以下命令再次找到它：
 
 ```http
-GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}'
+GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')
 ```
 
 结果的**id**属性是 chatThread id。
