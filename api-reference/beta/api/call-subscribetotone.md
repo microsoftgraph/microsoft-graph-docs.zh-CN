@@ -5,62 +5,62 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 50ff5f41c7637ebe79771db81889e89f982a0d92
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 390a8a92b321541c3cf3dc53a181dce70afb505d
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005935"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636678"
 ---
-# <a name="call-subscribetotone"></a><span data-ttu-id="cbe12-104">调用： subscribeToTone</span><span class="sxs-lookup"><span data-stu-id="cbe12-104">call: subscribeToTone</span></span>
+# <a name="call-subscribetotone"></a><span data-ttu-id="74c3b-104">调用： subscribeToTone</span><span class="sxs-lookup"><span data-stu-id="74c3b-104">call: subscribeToTone</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cbe12-105">订阅 DTMF （双音多频信号）。</span><span class="sxs-lookup"><span data-stu-id="cbe12-105">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="cbe12-106">这样，您就可以在用户按 "Dialpad" 上的键时收到通知。</span><span class="sxs-lookup"><span data-stu-id="cbe12-106">This allows you to be notified when the user presses keys on a "Dialpad".</span></span>
+<span data-ttu-id="74c3b-105">订阅 DTMF （双音多频信号）。</span><span class="sxs-lookup"><span data-stu-id="74c3b-105">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="74c3b-106">这样，您就可以在用户按 "Dialpad" 上的键时收到通知。</span><span class="sxs-lookup"><span data-stu-id="74c3b-106">This allows you to be notified when the user presses keys on a "Dialpad".</span></span>
 
 > [!Note]
-> <span data-ttu-id="cbe12-107">仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。</span><span class="sxs-lookup"><span data-stu-id="cbe12-107">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
+> <span data-ttu-id="74c3b-107">仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。</span><span class="sxs-lookup"><span data-stu-id="74c3b-107">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cbe12-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="cbe12-108">Permissions</span></span>
-<span data-ttu-id="cbe12-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cbe12-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="74c3b-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="74c3b-108">Permissions</span></span>
+<span data-ttu-id="74c3b-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="74c3b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="cbe12-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cbe12-111">Permission type</span></span> | <span data-ttu-id="cbe12-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cbe12-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="74c3b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="74c3b-111">Permission type</span></span> | <span data-ttu-id="74c3b-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="74c3b-112">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="cbe12-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cbe12-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="cbe12-114">不支持</span><span class="sxs-lookup"><span data-stu-id="cbe12-114">Not Supported</span></span>        |
-| <span data-ttu-id="cbe12-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cbe12-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbe12-116">不支持</span><span class="sxs-lookup"><span data-stu-id="cbe12-116">Not Supported</span></span>        |
-| <span data-ttu-id="cbe12-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cbe12-117">Application</span></span>     | <span data-ttu-id="cbe12-118">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="cbe12-118">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="74c3b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="74c3b-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="74c3b-114">不支持</span><span class="sxs-lookup"><span data-stu-id="74c3b-114">Not Supported</span></span>        |
+| <span data-ttu-id="74c3b-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="74c3b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74c3b-116">不支持</span><span class="sxs-lookup"><span data-stu-id="74c3b-116">Not Supported</span></span>        |
+| <span data-ttu-id="74c3b-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="74c3b-117">Application</span></span>     | <span data-ttu-id="74c3b-118">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="74c3b-118">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="cbe12-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cbe12-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74c3b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="74c3b-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
 POST /communications/calls/{id}/subscribeToTone
 ```
-> <span data-ttu-id="cbe12-120">**注意：**`/app`路径已被弃用。</span><span class="sxs-lookup"><span data-stu-id="cbe12-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="cbe12-121">接下来，请使用`/communications`路径。</span><span class="sxs-lookup"><span data-stu-id="cbe12-121">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="74c3b-120">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="74c3b-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="74c3b-121">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="74c3b-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cbe12-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="cbe12-122">Request headers</span></span>
-| <span data-ttu-id="cbe12-123">名称</span><span class="sxs-lookup"><span data-stu-id="cbe12-123">Name</span></span>          | <span data-ttu-id="cbe12-124">说明</span><span class="sxs-lookup"><span data-stu-id="cbe12-124">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="74c3b-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="74c3b-122">Request headers</span></span>
+| <span data-ttu-id="74c3b-123">名称</span><span class="sxs-lookup"><span data-stu-id="74c3b-123">Name</span></span>          | <span data-ttu-id="74c3b-124">说明</span><span class="sxs-lookup"><span data-stu-id="74c3b-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="cbe12-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbe12-125">Authorization</span></span> | <span data-ttu-id="cbe12-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cbe12-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="74c3b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="74c3b-125">Authorization</span></span> | <span data-ttu-id="74c3b-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="74c3b-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cbe12-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="cbe12-128">Request body</span></span>
-<span data-ttu-id="cbe12-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="cbe12-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="74c3b-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="74c3b-128">Request body</span></span>
+<span data-ttu-id="74c3b-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="74c3b-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cbe12-130">参数</span><span class="sxs-lookup"><span data-stu-id="cbe12-130">Parameter</span></span>      | <span data-ttu-id="cbe12-131">类型</span><span class="sxs-lookup"><span data-stu-id="cbe12-131">Type</span></span>    | <span data-ttu-id="cbe12-132">说明</span><span class="sxs-lookup"><span data-stu-id="cbe12-132">Description</span></span> |
+| <span data-ttu-id="74c3b-130">参数</span><span class="sxs-lookup"><span data-stu-id="74c3b-130">Parameter</span></span>      | <span data-ttu-id="74c3b-131">类型</span><span class="sxs-lookup"><span data-stu-id="74c3b-131">Type</span></span>    | <span data-ttu-id="74c3b-132">说明</span><span class="sxs-lookup"><span data-stu-id="74c3b-132">Description</span></span> |
 |:---------------|:--------|:------------|
-| <span data-ttu-id="cbe12-133">适用</span><span class="sxs-lookup"><span data-stu-id="cbe12-133">clientContext</span></span>  | <span data-ttu-id="cbe12-134">String</span><span class="sxs-lookup"><span data-stu-id="cbe12-134">String</span></span>  | <span data-ttu-id="cbe12-135">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="cbe12-135">Unique client context string.</span></span> <span data-ttu-id="cbe12-136">最多可以有256个字符。</span><span class="sxs-lookup"><span data-stu-id="cbe12-136">Can have a maximum of 256 characters.</span></span> |
+| <span data-ttu-id="74c3b-133">适用</span><span class="sxs-lookup"><span data-stu-id="74c3b-133">clientContext</span></span>  | <span data-ttu-id="74c3b-134">String</span><span class="sxs-lookup"><span data-stu-id="74c3b-134">String</span></span>  | <span data-ttu-id="74c3b-135">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="74c3b-135">Unique client context string.</span></span> <span data-ttu-id="74c3b-136">最多可以有256个字符。</span><span class="sxs-lookup"><span data-stu-id="74c3b-136">Can have a maximum of 256 characters.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="cbe12-137">响应</span><span class="sxs-lookup"><span data-stu-id="cbe12-137">Response</span></span>
-<span data-ttu-id="cbe12-138">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="cbe12-138">If successful, this method returns `200 OK` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="74c3b-137">响应</span><span class="sxs-lookup"><span data-stu-id="74c3b-137">Response</span></span>
+<span data-ttu-id="74c3b-138">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="74c3b-138">If successful, this method returns `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cbe12-139">示例</span><span class="sxs-lookup"><span data-stu-id="cbe12-139">Example</span></span>
-<span data-ttu-id="cbe12-140">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="cbe12-140">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="74c3b-139">示例</span><span class="sxs-lookup"><span data-stu-id="74c3b-139">Example</span></span>
+<span data-ttu-id="74c3b-140">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="74c3b-140">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="cbe12-141">请求</span><span class="sxs-lookup"><span data-stu-id="cbe12-141">Request</span></span>
-<span data-ttu-id="cbe12-142">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="cbe12-142">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="74c3b-141">请求</span><span class="sxs-lookup"><span data-stu-id="74c3b-141">Request</span></span>
+<span data-ttu-id="74c3b-142">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="74c3b-142">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cbe12-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="cbe12-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="74c3b-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="74c3b-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-subscribeToTone"
@@ -74,47 +74,48 @@ Content-Length: 46
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cbe12-144">C#</span><span class="sxs-lookup"><span data-stu-id="cbe12-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="74c3b-144">C#</span><span class="sxs-lookup"><span data-stu-id="74c3b-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-subscribetotone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cbe12-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cbe12-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74c3b-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="74c3b-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-subscribetotone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cbe12-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cbe12-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="74c3b-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="74c3b-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="cbe12-147">响应</span><span class="sxs-lookup"><span data-stu-id="cbe12-147">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="74c3b-147">响应</span><span class="sxs-lookup"><span data-stu-id="74c3b-147">Response</span></span>
 
-> <span data-ttu-id="cbe12-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="cbe12-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="74c3b-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="74c3b-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
+  "name": "call-subscribeToTone",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.subscribeToToneOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
-Content-Type: application/json
-Content-Length: 259
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
-  "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
-  "status": "completed",
-  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
+  "@odata.type": "#microsoft.graph.subscribeToToneOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed"
 }
 ```
 
 
-##### <a name="notification---tone-notification"></a><span data-ttu-id="cbe12-150">通知-音调通知</span><span class="sxs-lookup"><span data-stu-id="cbe12-150">Notification - tone notification</span></span>
+##### <a name="notification---tone-notification"></a><span data-ttu-id="74c3b-150">通知-音调通知</span><span class="sxs-lookup"><span data-stu-id="74c3b-150">Notification - tone notification</span></span>
 
-<span data-ttu-id="cbe12-151">通知包含[toneinfo](../resources/toneinfo.md)资源中所按音调的信息。</span><span class="sxs-lookup"><span data-stu-id="cbe12-151">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
+<span data-ttu-id="74c3b-151">通知包含[toneinfo](../resources/toneinfo.md)资源中所按音调的信息。</span><span class="sxs-lookup"><span data-stu-id="74c3b-151">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +133,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "established",

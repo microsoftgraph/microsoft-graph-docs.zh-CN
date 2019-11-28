@@ -5,29 +5,29 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2da0dd44ca1dc7ffd8d6ee13b1289e75c87f7cd6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d9e9a17a9afb197333e677547f3fa5dca22df9b2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006562"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637043"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="64db3-103">recordingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="64db3-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="245f0-103">recordingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="245f0-103">recordingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64db3-104">记录参与者的信息。</span><span class="sxs-lookup"><span data-stu-id="64db3-104">Recording information for a participant.</span></span>
+<span data-ttu-id="245f0-104">记录参与者的信息。</span><span class="sxs-lookup"><span data-stu-id="245f0-104">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="64db3-105">属性</span><span class="sxs-lookup"><span data-stu-id="64db3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="245f0-105">属性</span><span class="sxs-lookup"><span data-stu-id="245f0-105">Properties</span></span>
 
-| <span data-ttu-id="64db3-106">属性</span><span class="sxs-lookup"><span data-stu-id="64db3-106">Property</span></span>       | <span data-ttu-id="64db3-107">类型</span><span class="sxs-lookup"><span data-stu-id="64db3-107">Type</span></span>    | <span data-ttu-id="64db3-108">说明</span><span class="sxs-lookup"><span data-stu-id="64db3-108">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="64db3-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="64db3-109">initiatedBy</span></span> | [<span data-ttu-id="64db3-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="64db3-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="64db3-111">启动录制的参与者。</span><span class="sxs-lookup"><span data-stu-id="64db3-111">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="64db3-112">状态</span><span class="sxs-lookup"><span data-stu-id="64db3-112">status</span></span> | <span data-ttu-id="64db3-113">String</span><span class="sxs-lookup"><span data-stu-id="64db3-113">String</span></span> | <span data-ttu-id="64db3-114">可取值为：`recordingCapable`、`notRecording`、`startedRecording`。</span><span class="sxs-lookup"><span data-stu-id="64db3-114">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
+| <span data-ttu-id="245f0-106">属性</span><span class="sxs-lookup"><span data-stu-id="245f0-106">Property</span></span>        | <span data-ttu-id="245f0-107">类型</span><span class="sxs-lookup"><span data-stu-id="245f0-107">Type</span></span>    | <span data-ttu-id="245f0-108">说明</span><span class="sxs-lookup"><span data-stu-id="245f0-108">Description</span></span>|
+|:----------------|:--------|:----------|
+| <span data-ttu-id="245f0-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="245f0-109">initiatedBy</span></span>     | [<span data-ttu-id="245f0-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="245f0-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="245f0-111">启动录制的参与者。</span><span class="sxs-lookup"><span data-stu-id="245f0-111">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="245f0-112">recordingStatus</span><span class="sxs-lookup"><span data-stu-id="245f0-112">recordingStatus</span></span> | <span data-ttu-id="245f0-113">String</span><span class="sxs-lookup"><span data-stu-id="245f0-113">String</span></span> | <span data-ttu-id="245f0-114">可能的值包括`unknown`： `notRecording`、 `recording`、或`failed`。</span><span class="sxs-lookup"><span data-stu-id="245f0-114">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="64db3-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="64db3-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="245f0-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="245f0-115">JSON representation</span></span>
 
-<span data-ttu-id="64db3-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="64db3-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="245f0-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="245f0-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +39,7 @@ ms.locfileid: "38006562"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```
 
