@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ac344e868d4341ae9a15bf60bd5e2a3e6076d0a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1723cdf1997586cf1342c79112174e8754ec45f
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032548"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636910"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "36032548"
 
 如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。 
 
-若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以以编程方式代表与会者响应事件, 即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
+若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以以编程方式代表与会者响应事件，即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
 
-除了会议请求外, 可以在与会者的收件箱文件夹中找到**eventMessage**实例, 因为事件组织者取消会议, 或者由于与会者响应会议请求而在组织者的收件箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
+除了会议请求外，可以在与会者的收件箱文件夹中找到**eventMessage**实例，因为事件组织者取消会议，或者由于与会者响应会议请求而在组织者的收件箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 
 ## <a name="methods"></a>方法
 
@@ -61,14 +61,15 @@ ms.locfileid: "36032548"
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|字符串|邮件的版本。|
-|conversationId|String|电子邮件所属的对话的 ID。|
+|conversationId|String|电子邮件所属对话的 ID。|
+|conversationIndex|Edm.Binary|指示邮件在对话中的位置。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字符串|事件消息的唯一标识符 (请注意, 如果移动或更改了邮件, 此值可能会更改)|
+|id|字符串|事件消息的唯一标识符（请注意，如果移动或更改了邮件，此值可能会更改）|
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
-|inferenceClassification|String| 可能的值为: `focused`、 `other`。|
+|inferenceClassification|String| 可能的值为： `focused`、 `other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
@@ -134,6 +135,7 @@ ms.locfileid: "36032548"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "DateTimeOffset",
   "event": { "@odata.type": "microsoft.graph.event" },
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2da0dd44ca1dc7ffd8d6ee13b1289e75c87f7cd6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d9e9a17a9afb197333e677547f3fa5dca22df9b2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006562"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637043"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "38006562"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
-|:---------------|:--------|:----------|
-| initiatedBy | [participantInfo](participantinfo.md) | 启动录制的参与者。 |
-| 状态 | String | 可取值为：`recordingCapable`、`notRecording`、`startedRecording`。 |
+| 属性        | 类型    | 说明|
+|:----------------|:--------|:----------|
+| initiatedBy     | [participantInfo](participantinfo.md) | 启动录制的参与者。 |
+| recordingStatus | String | 可能的值包括`unknown`： `notRecording`、 `recording`、或`failed`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -39,7 +39,7 @@ ms.locfileid: "38006562"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```
 

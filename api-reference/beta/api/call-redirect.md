@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db432612507c9ebafd595350575557f52450fe4f
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 51db3a87dbbfae18bb3b1651d34dc9cf1ca28725
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005923"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636692"
 ---
 # <a name="call-redirect"></a>呼叫：重定向
 
@@ -38,7 +38,7 @@ ms.locfileid: "38005923"
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,8 +55,8 @@ POST /communications/calls/{id}/redirect
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。 如果指定了多个目标，则为同时调用。 这意味着将同时 rang 所有目标，并且只会连接所选取的第一个目标。 对于同时，我们最高支持25个目标。
 |targetDisposition|String|被可能的值为： `default` 、 `simultaneousRing` 、 `forward`。 此参数已弃用，我们将自动确定它是在提供的目标数量中进行前向呼叫还是同时呼叫。|
 |timeout|Int32|重定向操作的超时（以秒为单位）。 超时值的范围介于15和90秒之间（含这两个值）。 对于多个目标，默认超时值为55秒，为多个目标为60秒（可能会发生更改）。 |
-|maskCallee|布尔|指示是否要在呼叫者中隐藏被叫方。 如果为 true，则被叫方标识为 bot 标识。 默认值： false。|
-|maskCaller|布尔|指示是否对被呼叫方隐藏呼叫者。 如果为 true，则呼叫者标识为 bot 标识。 默认值： false。|
+|maskCallee|Boolean|指示是否要在呼叫者中隐藏被叫方。 如果为 true，则被叫方标识为 bot 标识。 默认值： false。|
+|maskCaller|Boolean|指示是否对被呼叫方隐藏呼叫者。 如果为 true，则呼叫者标识为 bot 标识。 默认值： false。|
 |callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
@@ -301,7 +301,7 @@ Content-Type: application/json
 ##### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "request", 
+  "blockType": "ignored", 
   "name": "call-redirect-simuring"
 } -->
 

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7e25e65fb87f664788b0649f188def29b62c13d2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 762e5dc75c03cda78581b90b54c3fea27a7f12f2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006689"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636665"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -24,8 +24,6 @@ ms.locfileid: "38006689"
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 终结点的类型。 可取值为：`default`、`voicemail`。 |
 | 窃取                           | [identitySet](identityset.md) | 与此邀请关联的[了解 identityset](identityset.md) 。                   |
-| languageId                         | String                        | 语言区域性字符串。                                                                                     |
-| 范围                             | String                        | 参与者的地区。                                                           |
 | replacesCallId                     | String                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后，将删除此呼叫。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -35,7 +33,8 @@ ms.locfileid: "38006689"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "endpointType",
+    "replacesCallId"
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
@@ -43,8 +42,6 @@ ms.locfileid: "38006689"
 {
   "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "languageId": "String",
-  "region": "String",
   "replacesCallId": "String"
 }
 ```

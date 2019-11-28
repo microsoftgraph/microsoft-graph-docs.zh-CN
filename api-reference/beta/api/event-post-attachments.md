@@ -5,20 +5,22 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81eeab8beb45f292483033a9120b8a8a3c424bc7
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: e382b778819c7c1c68d445ee9691a0206bbd76e5
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37637369"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636818"
 ---
-# <a name="add-attachment"></a>Add attachment
+# <a name="add-attachment"></a>添加附件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将 [附件](../resources/attachment.md) 添加到事件。 此操作将限制可添加到 4 MB 以下的附件的大小。
+使用此 API 可将[附件](../resources/attachment.md)添加到现有[事件](../resources/event.md)中。 此操作将限制可添加到 4 MB 以下的附件的大小。
 
-## <a name="permissions"></a>权限
+如果组织者将附件添加到会议事件中，则组织者随后可以[更新](event-update.md)事件以发送附件并为每个与会者同时更新事件。
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

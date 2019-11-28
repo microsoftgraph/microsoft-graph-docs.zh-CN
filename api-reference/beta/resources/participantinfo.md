@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4cffe361b63ddc6d54d2ad16c29d2de8836044fc
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: eea85cd861524ca947359918fd130c0dd221e146
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006590"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637064"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -20,11 +20,13 @@ ms.locfileid: "38006590"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 说明  |
-|:---------------|:------------------------------|:-------------|
-| 窃取       | [identitySet](identityset.md) | 与此参与者关联的[了解 identityset](identityset.md) 。 |
-| languageId     | String                        | 语言区域性字符串。 |
-| 范围         | String                        | 参与者的地区。 |
+| 属性       | 类型                          | 说明                                                                                                                                                |
+|:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| countryCode    | String                        | 呼叫开始时参与者最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
+| endpointType   | String                        | 参与者正在使用的终结点的类型。 可能的值包括`default`： `skypeForBusiness`、或`skypeForBusinessVoipPhone`。 只读。              |
+| 窃取       | [identitySet](identityset.md) | 与此参与者关联的[了解 identityset](identityset.md) 。 只读。                                                                             |
+| languageId     | String                        | 语言区域性字符串。 只读。                                                                                                                    |
+| 范围         | String                        | 参与者的家乡区域。 它可以是国家/地区、一个洲或更大的地理区域。 这不会根据参与者的当前物理位置而变化，这与 countryCode 不同。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,13 +35,18 @@ ms.locfileid: "38006590"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "languageId", "region"
+    "countryCode",
+    "endpointType",
+    "languageId",
+    "region"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
 ```json
 {
+  "countryCode": "String",
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
+  "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
   "region": "String"
 }

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 344aa48fd3b816e5d72141a5388fd1abdce50406
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: ff9de522e96ea6cec614d8673d8f85987ac88908
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747593"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636720"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -22,7 +22,7 @@ ms.locfileid: "38747593"
 
 > **注意：** 自动程序只能通过 VoIP 访问机器人。 不支持 PSTN 呼叫。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
@@ -326,7 +326,7 @@ Content-Type: application/json
         },
         "targets": [
           {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "application": {
                 "displayName": "Test BOT",

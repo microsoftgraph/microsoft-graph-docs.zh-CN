@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dc240c00e16db17e438c19ae792ce73425ed2350
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 2961bacfa9092aa580801e42e44aa1d2adbfaa97
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006058"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636699"
 ---
 # <a name="call-record"></a>call： record
 
@@ -42,7 +42,7 @@ ms.locfileid: "38006058"
 POST /app/calls/{id}/record
 POST /communications/calls/{id}/record
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -55,12 +55,12 @@ POST /communications/calls/{id}/record
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合（如果有）。 客户可以选择单独指定 "playPrompt" 操作，也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。 当前支持仅作为集合的一部分的单个提示。 |
-|bargeInAllowed|布尔| 如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|Boolean| 如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录操作之前，可以从开始时开始的最大初始静音（用户无声），并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的记录操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
-|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String 集合|指定结束录音的停止音。|
+|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|String collection|指定结束录音的停止音。|
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
@@ -127,13 +127,13 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "status": "running",
   "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
-
 ```
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
@@ -159,6 +159,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
         "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",

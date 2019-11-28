@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c290faff53b98e28dc9876b9fd76abac8a813196
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b55e492f7fae576c9026588205eae2bafa99c178
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936707"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636762"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -18,18 +18,15 @@ ms.locfileid: "37936707"
 
 更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | ConditionalAccess 和 Directory.accessasuser.all 的所有 |
+|委派（工作或学校帐户）     | ConditionalAccess 和应用程序的读取。 All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
-
->[!NOTE]
->此 API 需要多个权限。 有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。
+|应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

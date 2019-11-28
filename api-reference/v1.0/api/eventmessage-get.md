@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
-description: 在**事件**导航属性中展开参数, 以在与会者的日历中获取关联的事件。
+description: 在**事件**导航属性中展开参数，以在与会者的日历中获取关联的事件。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64b9b3bd26c8e740995e9bf4dc762d2518694774
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d95d648318b2c8d1997d6d948ebff3ffc66fcd61
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720919"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636783"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "36720919"
 
 此操作暂返回纯 HTML 格式的事件邮件正文。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ##### <a name="request-1"></a>请求 1
 第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAImV_lAAA="],
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,6 +112,7 @@ Content-type: application/json
     "importance":"normal",
     "parentFolderId":"AQMkADYAAAIBDAAAAA==",
     "conversationId":"AAQkADYCipTiRjXQORU=",
+    "conversationIndex":"AdN/Xdgnql4N9FlrT0KKlOJGNdA5FQ==",
     "isDeliveryReceiptRequested":null,
     "isReadReceiptRequested":false,
     "isRead":false,
@@ -158,7 +159,7 @@ Content-type: application/json
 ##### <a name="request-2"></a>请求 2
 第二个示例展示了如何获取与事件消息关联的事件。 它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAImV_jAAA="],
@@ -175,7 +176,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -215,8 +216,9 @@ Content-type: application/json
    "subject":"Kick off planning",
    "bodyPreview":"Let's collect opinions from our teams and organize action items.",
    "importance":"normal",
-    "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
-    "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
+   "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "conversationIndex":"AdN/XVP4JG598HfAOU+f9F4VlqsjrQ==",
    "isDeliveryReceiptRequested":null,
    "isReadReceiptRequested":false,
    "isRead":false,

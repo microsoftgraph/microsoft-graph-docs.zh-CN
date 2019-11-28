@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0fa65e1764e5e696687ce55ba052b4d7932f3245
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: e681ebf65ebed550d4180788eb5d534723981463
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005946"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636685"
 ---
 # <a name="call-updatemetadata"></a>调用： updateMetadata
 
@@ -31,7 +31,9 @@ ms.locfileid: "38005946"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
+POST /communications/calls/{id}/updateMetadata
 ```
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -62,7 +64,7 @@ POST /app/calls/{id}/updateMetadata
   "name": "call-updateMetadata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata
+POST https://graph.microsoft.com/beta/communications/calls/{id}/updateMetadata
 Content-Type: application/json
 Content-Length: 79
 
@@ -92,12 +94,21 @@ Content-Length: 79
 
 <!-- {
   "blockType": "response",
+  "name": "call-updateMetadata",
   "truncated": true,
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
