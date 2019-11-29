@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3712986635b3f1b3e4b33eb627eea09f697c92dd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 683162f831ea76d62bc736a8208fef70d2b7b3cb
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372613"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636860"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -129,6 +129,7 @@ Content-type: application/json
     "importance":"low",
     "parentFolderId":"AAMkADNlNWAAAAAAEPAAA=",
     "conversationId":"AAQkADNlNFdXGBnqtY=",
+    "conversationIndex":"AQHTe7/VAniOJVgCxEmtF1z6ZY1rFQ==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":true,

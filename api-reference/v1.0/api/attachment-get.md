@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d3d6c3c67b1fdb927714dc7f1848a512770a450
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: d8e0dd72d66f02c7f7e4466c771aa6418d2c8055
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638762"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636902"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -340,6 +340,7 @@ Content-type: application/json
     "subject":"Reminder - please bring laptop",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":false,

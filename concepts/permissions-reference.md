@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 01ef8d7a09f34070fe16619ae24d6c202a847453
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 8c6bfaaed12dfcda3c730890e598253230b4cfeb
+ms.sourcegitcommit: 719eb06b263a10739190e4460b7ffdf0f1a50484
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748515"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191473"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -291,7 +291,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
 |_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体数据流（预览版）|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
 
-> \***重要提示：** 不能使用 Microsoft.Graph.Calls.Media API 来记录或以其他方式保留机器人访问的通话或会议中的媒体内容。
+> \***重要说明：** 不得使用云通信 API 进行记录，否则保留来自应用程序访问的通话或会议的媒体内容，或派生自该媒体内容的数据。 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 <br/>
 
@@ -607,7 +607,7 @@ Microsoft 个人帐户不支持组功能。
 
 在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_ 权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta)。
 
-组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。 不支持 Microsoft 个人帐户。
+组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。不支持 Microsoft 个人帐户。
 
 组权限也用于控制对 [Microsoft Planner](/graph/api/resources/planner-overview) 资源和 API 的访问权限。Microsoft Planner API 仅支持委派权限，不支持应用程序权限。不支持 Microsoft 个人帐户。
 
@@ -808,7 +808,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 必需
-| _Mail.ReadBasic_ |    读取用户基本邮件 | 让应用能够读取已登录用户的邮箱，但不读取 Body、BodyPreview、UniqueBody、Attachments, ExtendedProperties 和 Extensions。 不包含邮件搜索权限。 | 否 | 是
+| _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户的邮箱，但不读取 **body**、**bodyPreview**、**uniqueBody**、**attachments**、**extensions** 和任何扩展属性。 不包含邮件搜索权限。 | 否 | 是
 | _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
 | _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
@@ -969,7 +969,6 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息（预览版）|允许应用在没有登录用户的情况下读取组织中的 VTC 相关联机会议详细信息。|是|
-|_OnlineMeetings.ReadWrite.All_|代表用户从应用读取和创建联机会议（已弃用）|允许应用在没有登录用户的情况下代表用户创建组织中的联机会议。|是|
 
 <br/>
 
@@ -1422,6 +1421,36 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ---
 
+## <a name="threat-assessment-permissions"></a>威胁评估权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatAssessment.ReadWrite.All_ | 读取和写入威胁评估请求 | 允许应用代表已登录用户读取组织的威胁评估请求。 还允许应用创建新请求来代表已登录用户评估组织收到的威胁。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatAssessment.Read.All_ | 读取威胁评估请求 | 允许应用在无需用户登录的情况下读取组织的威胁评估请求。 | 是 |
+
+### <a name="remarks"></a>备注
+
+威胁评估权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _ThreatAssessment.ReadWrite.All_：读取和写入评估请求 (`POST /informationProtection/threatAssessmentRequests`)
+
+#### <a name="application"></a>应用程序
+
+* _ThreatAssessment.Read.All_：读取威胁评估请求 (`GET /informationProtection/threatAssessmentRequests`)
+
+---
+
 ## <a name="user-permissions"></a>用户权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1444,7 +1473,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _User.Read.All_ |    读取所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取组织中其他用户的整套个人资料属性、组成员身份、下属和经理。| 是 |
 | _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 可访问 |
-| _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 可访问 |
+| _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 是 |
 
 ### <a name="remarks"></a>说明
 

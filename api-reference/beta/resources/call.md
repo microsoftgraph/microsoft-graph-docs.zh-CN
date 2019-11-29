@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 01e3441e64c6b9f37bacbe00bf2c639439a03fb1
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747995"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636667"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -49,7 +49,9 @@ ms.locfileid: "38747995"
 | **Self Participant Operations**                                    |                                                             |                                                                                 |
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在呼叫中将自己设为静音。                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | 在呼叫中将自己取消静音。                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                            | 在呼叫中开始和停止共享屏幕。                                      |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                        | 在呼叫中开始和停止共享屏幕。                                      |
+| **记录操作**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | 更新记录状态。                      |
 
 ## <a name="properties"></a>属性
 
@@ -62,6 +64,7 @@ ms.locfileid: "38747995"
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 会议情境所需的信息。                                                                                                                                |
 | direction           | String                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | 与来电相关的上下文。 只读。 由服务器生成。                                                                                                                                |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。 创建对等呼叫或加入会议所需的信息。                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。 只读。                                                                                                       |
@@ -74,7 +77,7 @@ ms.locfileid: "38747995"
 | source              | [participantInfo](participantinfo.md)                                                                  | 呼叫的发起方。                                                                                                                                                                         |
 | state               | String                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。                          |
 | subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
-| targets             | [participantInfo](participantinfo.md) 集合                                                       | 呼叫的目标。 创建对等呼叫所需的信息。                                                                                                            |
+| targets             | [invitationParticipantInfo](participantinfo.md) 集合                                             | 呼叫的目标。 创建对等呼叫所需的信息。                                                                                                            |
 | tenantId            | 字符串                                                                                                 | 只读。 `tenantId` 在 Azure Active Directory 中。                                                                                                                        |
 | terminationReason   | String                                                                                                 | 只读。                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。                                                                                                                                                                        |
@@ -100,6 +103,7 @@ ms.locfileid: "38747995"
     "chatInfo",
     "direction",
     "id",
+    "incomingContext",
     "mediaState",
     "meetingCapability",
     "meetingInfo",
@@ -128,6 +132,7 @@ ms.locfileid: "38747995"
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
+  "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
@@ -141,7 +146,7 @@ ms.locfileid: "38747995"
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
