@@ -33,7 +33,7 @@ TeamsTab 是固定 (附加) 到[团队](team.md)中的[频道](channel.md)的[�
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|  id              |   字符串                  |  唯一标识 "通道" 选项卡的特定实例的标识符。只读。     |
+|  id              |   字符串                  |  唯一标识 "频道" 选项卡的特定实例的标识符。只读。     |
 |  displayName            |   string                  |  选项卡的名称。     |
 |  WebUrl          |   string                  |  选项卡实例的深层链接 url。 只读。     |
 |  设置        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后, 才会认为选项卡已配置。     |

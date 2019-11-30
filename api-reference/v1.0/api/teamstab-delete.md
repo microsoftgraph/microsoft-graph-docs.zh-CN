@@ -1,6 +1,6 @@
 ---
 title: 从频道中删除选项卡
-description: '从团队中的指定通道中删除 (unpins) 选项卡。 '
+description: '从团队中的指定频道中删除 (unpins) 选项卡。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -16,7 +16,7 @@ ms.locfileid: "36027207"
 
 
 
-从[团队](../resources/team.md)中的指定[通道](../resources/channel.md)中删除 (unpins) 选项卡。 
+从[团队](../resources/team.md)中的指定[频道](../resources/channel.md)中删除 (unpins) 选项卡。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

@@ -1,6 +1,6 @@
 ---
-title: 修补程序通道
-description: 更新指定通道的属性。
+title: 修补程序频道
+description: 更新指定频道的属性。
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -12,9 +12,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/21/2019
 ms.locfileid: "36633823"
 ---
-# <a name="patch-channel"></a>修补程序通道
+# <a name="patch-channel"></a>修补程序频道
 
-更新指定[通道](../resources/channel.md)的属性。
+更新指定[频道](../resources/channel.md)的属性。
 
 ## <a name="permissions"></a>权限
 

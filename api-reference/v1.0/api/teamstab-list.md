@@ -1,6 +1,6 @@
 ---
-title: 通道中的列表选项卡
-description: '检索团队中指定通道中的选项卡列表。 '
+title: 频道中的列表选项卡
+description: '检索团队中指定频道中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -12,10 +12,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/31/2019
 ms.locfileid: "36027186"
 ---
-# <a name="list-tabs-in-channel"></a>通道中的列表选项卡
+# <a name="list-tabs-in-channel"></a>频道中的列表选项卡
 
 
-检索[团队](../resources/team.md)中指定[通道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
+检索[团队](../resources/team.md)中指定[频道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

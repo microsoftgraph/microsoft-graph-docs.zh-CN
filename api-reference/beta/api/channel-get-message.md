@@ -1,6 +1,6 @@
 ---
-title: 获取通道消息
-description: 检索团队通道中的单个消息（不包括其回复）。
+title: 获取频道消息
+description: 检索团队频道中的单个消息（不包括其回复）。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
@@ -12,11 +12,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/04/2019
 ms.locfileid: "36720037"
 ---
-# <a name="get-channel-message"></a>获取通道消息
+# <a name="get-channel-message"></a>获取频道消息
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索团队[通道](../resources/channel.md)中的单个[消息](../resources/chatmessage.md)（不包括其回复）。
+检索团队[频道](../resources/channel.md)中的单个[消息](../resources/chatmessage.md)（不包括其回复）。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。

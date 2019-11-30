@@ -33,14 +33,14 @@ ms.locfileid: "36012959"
 
 第二个提及的`id`属性为 1, 与第二个实例的**id**属性相匹配, 即1。
 
-有关此示例的更完整上下文, 请参阅[列出通道邮件答复](../api/channel-list-messagereplies.md#example)。
+有关此示例的更完整上下文, 请参阅[列出频道邮件答复](../api/channel-list-messagereplies.md#example)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|Int32|在指定的**了 chatmessage**中提到的实体的索引。 与邮件正文中对应`<at id="{index}">`的标记中的 {index} 值相匹配。|
 |mentionText|string|用于表示提及的字符串。 例如, 用户的显示名称 (团队名称)。|
-|所|[identitySet](identityset.md)|提到的实体 (用户、应用程序、团队或通道)。  如果它是 @mentioned 的频道或团队, 则了解 identityset 包含一个**会话**属性, 该属性提供团队/通道的 ID 和代表团队或频道的**conversationIdentityType**属性。|
+|所|[identitySet](identityset.md)|提到的实体 (用户、应用程序、团队或频道)。  如果它是 @mentioned 的频道或团队, 则了解 identityset 包含一个**会话**属性, 该属性提供团队/频道的 ID 和代表团队或频道的**conversationIdentityType**属性。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -20,7 +20,7 @@ ms.locfileid: "36422183"
 
 > **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
-> **注意**: 已删除频道中的数据将继续存储几周, 以允许团队所有者恢复已删除的频道。 在这段时间内, 可能不会创建具有相同 displayName 的新通道。
+> **注意**: 已删除频道中的数据将继续存储几周, 以允许团队所有者恢复已删除的频道。 在这段时间内, 可能不会创建具有相同 displayName 的新频道。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
