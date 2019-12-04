@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 600fbcc0f2fbf83b67c0871fb5bf98f746f0cf8a
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: bfd4a174fa10f99167b3f9ef37bb36db6a56cb96
+ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39672857"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -112,6 +112,7 @@ ms.locfileid: "38756868"
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
+|deletedDateTime|DateTimeOffset| 对于某些 Azure Active Directory 对象（用户、组、应用程序），如果该对象被删除，先逻辑删除，随后该属性随着对象删除的日期和时间更新。 否则此属性为空。 如果对象已还原，则此属性会更新为空。 |
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
 |displayName|String|组的显示名称。 此属性是在创建组时所必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。 |
 |groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
