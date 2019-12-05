@@ -4,18 +4,18 @@ description: 可以使用以下语法调用任何工作簿函数：`POST /workbo
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 868695eb6f3ab4ddd7354512477d4abcf0708d8d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 38acd639e5364c28292d71aab54de6a89b0058ac
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526298"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37969771"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 使用 Excel 工作簿函数
 
 可以使用以下语法调用任何工作簿函数：`POST /workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
 
-受支持函数的完整列表在[此处](https://support.office.com/zh-CN/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
+受支持函数的完整列表在 [此处](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_：
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  
@@ -34,7 +34,7 @@ _重要说明_：
 
 =VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)
 
-（请参阅 [VLOOKUP Excel 函数](https://support.office.com/zh-CN/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）
+（请参阅 [VLOOKUP Excel 函数](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）
 
 
 ##### <a name="request"></a>请求:
@@ -77,10 +77,10 @@ content-type: application/json;odata.metadata
 
 =MEDIAN(A2:A6)
 
-（请参阅 [MEDIAN Excel 函数](https://support.office.com/zh-CN/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
+（请参阅 [MEDIAN Excel 函数](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
 
 ##### <a name="request"></a>请求
-下面的示例展示了如何使用 Excel REST API 调用 `median` 函数和一个或多个输入区域。
+下面的示例展示了如何使用 Excel `median` REST API 调用函数和一个或多个输入区域。
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median

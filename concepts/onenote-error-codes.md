@@ -4,12 +4,12 @@ description: 本文介绍当通过 API 发送的请求失败时，Microsoft Grap
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 316097c01cbd1888b63304727e442f14b2d7c51b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558375"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37969820"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -63,7 +63,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
 
 ### <a name="10012"></a>10012
-无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/zh-CN/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
+无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
 
 可从库中删除签出要求，也可以移动笔记本。
 
@@ -343,7 +343,7 @@ OData 查询无效。
 用户的帐户有问题。
 
 ### <a name="30101"></a>30101
-用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/en-us/)。
+用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/)。
 
 ### <a name="30102"></a>30102
 不能再向请求的节添加任何内容，因为它已经达到其最大大小。
