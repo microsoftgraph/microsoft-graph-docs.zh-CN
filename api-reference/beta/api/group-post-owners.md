@@ -5,51 +5,52 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c1870b3e772c82e4e62abc83dee16530988e35cb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3c1b7e139fde7edc3707b661e113063f5fcf3c2c
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420075"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843873"
 ---
-# <a name="add-group-owner"></a><span data-ttu-id="03261-104">添加组所有者</span><span class="sxs-lookup"><span data-stu-id="03261-104">Add group owner</span></span>
+# <a name="add-group-owner"></a><span data-ttu-id="42707-104">添加组所有者</span><span class="sxs-lookup"><span data-stu-id="42707-104">Add group owner</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03261-p102">将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。</span><span class="sxs-lookup"><span data-stu-id="03261-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
+<span data-ttu-id="42707-p102">将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。</span><span class="sxs-lookup"><span data-stu-id="42707-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
 
-><span data-ttu-id="03261-107">**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。</span><span class="sxs-lookup"><span data-stu-id="03261-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="03261-108">此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。</span><span class="sxs-lookup"><span data-stu-id="03261-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
+><span data-ttu-id="42707-107">**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。</span><span class="sxs-lookup"><span data-stu-id="42707-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="42707-108">此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。</span><span class="sxs-lookup"><span data-stu-id="42707-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="03261-109">权限</span><span class="sxs-lookup"><span data-stu-id="03261-109">Permissions</span></span>
-<span data-ttu-id="03261-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="03261-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="42707-109">权限</span><span class="sxs-lookup"><span data-stu-id="42707-109">Permissions</span></span>
+<span data-ttu-id="42707-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="42707-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="03261-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="03261-112">Permission type</span></span>      | <span data-ttu-id="03261-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="03261-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42707-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="42707-112">Permission type</span></span>      | <span data-ttu-id="42707-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="42707-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="03261-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="03261-114">Delegated (work or school account)</span></span> | <span data-ttu-id="03261-115">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="03261-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="03261-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="03261-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03261-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="03261-117">Not supported.</span></span>    |
-|<span data-ttu-id="03261-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="03261-118">Application</span></span> | <span data-ttu-id="03261-119">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03261-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="42707-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="42707-114">Delegated (work or school account)</span></span> | <span data-ttu-id="42707-115">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="42707-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="42707-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="42707-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42707-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="42707-117">Not supported.</span></span>    |
+|<span data-ttu-id="42707-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="42707-118">Application</span></span> | <span data-ttu-id="42707-119">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42707-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="03261-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="03261-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42707-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="42707-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/owners/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="03261-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="03261-121">Request headers</span></span>
-| <span data-ttu-id="03261-122">名称</span><span class="sxs-lookup"><span data-stu-id="03261-122">Name</span></span>       | <span data-ttu-id="03261-123">类型</span><span class="sxs-lookup"><span data-stu-id="03261-123">Type</span></span> | <span data-ttu-id="03261-124">说明</span><span class="sxs-lookup"><span data-stu-id="03261-124">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="03261-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="03261-125">Authorization</span></span>  | <span data-ttu-id="03261-126">string</span><span class="sxs-lookup"><span data-stu-id="03261-126">string</span></span>  | <span data-ttu-id="03261-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="03261-p105">Bearer {token}. Required.</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="42707-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="42707-121">Request headers</span></span>
+| <span data-ttu-id="42707-122">名称</span><span class="sxs-lookup"><span data-stu-id="42707-122">Name</span></span>       | <span data-ttu-id="42707-123">说明</span><span class="sxs-lookup"><span data-stu-id="42707-123">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="42707-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="42707-124">Authorization</span></span>  | <span data-ttu-id="42707-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="42707-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42707-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="42707-127">Content-type</span></span> | <span data-ttu-id="42707-p106">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="42707-p106">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="03261-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="03261-129">Request body</span></span>
-<span data-ttu-id="03261-130">在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="03261-130">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42707-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="42707-130">Request body</span></span>
+<span data-ttu-id="42707-131">在请求正文中，提供要添加的[user](../resources/user.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="42707-131">In the request body, supply a JSON representation of the [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="03261-131">响应</span><span class="sxs-lookup"><span data-stu-id="03261-131">Response</span></span>
-<span data-ttu-id="03261-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="03261-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="42707-132">响应</span><span class="sxs-lookup"><span data-stu-id="42707-132">Response</span></span>
+<span data-ttu-id="42707-p107">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="42707-p107">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="03261-134">示例</span><span class="sxs-lookup"><span data-stu-id="03261-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="03261-135">请求</span><span class="sxs-lookup"><span data-stu-id="03261-135">Request</span></span>
-<span data-ttu-id="03261-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="03261-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="42707-135">示例</span><span class="sxs-lookup"><span data-stu-id="42707-135">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="42707-136">请求</span><span class="sxs-lookup"><span data-stu-id="42707-136">Request</span></span>
+<span data-ttu-id="42707-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="42707-137">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="03261-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="03261-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="42707-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="42707-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_owner_from_group"
@@ -63,25 +64,25 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="03261-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="03261-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42707-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="42707-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="03261-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="03261-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="42707-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="42707-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="03261-140">C#</span><span class="sxs-lookup"><span data-stu-id="03261-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="42707-141">C#</span><span class="sxs-lookup"><span data-stu-id="42707-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="03261-141">在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="03261-141">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+<span data-ttu-id="42707-142">在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="42707-142">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="03261-142">响应</span><span class="sxs-lookup"><span data-stu-id="03261-142">Response</span></span>
-<span data-ttu-id="03261-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="03261-143">The following is an example of the response.</span></span>
-><span data-ttu-id="03261-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="03261-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="03261-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="03261-145">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="42707-143">响应</span><span class="sxs-lookup"><span data-stu-id="42707-143">Response</span></span>
+<span data-ttu-id="42707-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="42707-144">The following is an example of the response.</span></span>
+><span data-ttu-id="42707-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="42707-145">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="42707-146">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="42707-146">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -169,10 +169,10 @@
               items:
                 - name: 列出用户
                   href: api/user-list.md
-                - name: 获取用户
-                  href: api/user-get.md
                 - name: 创建用户
                   href: api/user-post-users.md
+                - name: 获取用户
+                  href: api/user-get.md
                 - name: 更新用户
                   href: api/user-update.md
                 - name: 删除用户
@@ -183,62 +183,66 @@
               href: resources/calendar.md
               displayName: 'Outlook, Outlook calendar'
               items:
-                - name: 列出事件
-                  href: api/user-list-events.md
-                - name: 创建事件
-                  href: api/user-post-events.md
-                - name: 列出日历
-                  href: api/user-list-calendars.md
                 - name: 创建日历
                   href: api/user-post-calendars.md
-                - name: 列出日历组
-                  href: api/user-list-calendargroups.md
                 - name: 创建日历组
                   href: api/user-post-calendargroups.md
-                - name: 列出日历视图
-                  href: api/user-list-calendarview.md
-                - name: 提醒视图
-                  href: api/user-reminderview.md
-                - name: 获取忙/闲日程安排
-                  href: api/calendar-getschedule.md
+                - name: 创建事件
+                  href: api/user-post-events.md
                 - name: 查找会议时间
                   href: api/user-findmeetingtimes.md
+                - name: 获取忙/闲日程安排
+                  href: api/calendar-getschedule.md
+                - name: 列出日历
+                  href: api/user-list-calendars.md
+                - name: 列出日历组
+                  href: api/user-list-calendargroups.md
+                - name: 列出日历视图
+                  href: api/user-list-calendarview.md
+                - name: 列出事件
+                  href: api/user-list-events.md
+                - name: 提醒视图
+                  href: api/user-reminderview.md
             - name: 联系人
               href: resources/contact.md
               items:
-                - name: 列出联系人
-                  href: api/user-list-contacts.md
                 - name: 创建联系人
                   href: api/user-post-contacts.md
-                - name: 列出联系人文件夹
-                  href: api/user-list-contactfolders.md
                 - name: 创建联系人文件夹
                   href: api/user-post-contactfolders.md
+                - name: 列出联系人
+                  href: api/user-list-contacts.md
+                - name: 列出联系人文件夹
+                  href: api/user-list-contactfolders.md
             - name: 目录对象
               href: resources/directoryobject.md
               items:
-                - name: 检查 member 对象
-                  href: api/user-checkmemberobjects.md
-                - name: 列出拥有的设备
-                  href: api/user-list-owneddevices.md
-                - name: 列出注册的设备
-                  href: api/user-list-registereddevices.md
-                - name: 列出拥有的对象
-                  href: api/user-list-ownedobjects.md
-                - name: 列出创建的对象
-                  href: api/user-list-createdobjects.md
                 - name: 分配许可证
                   href: api/user-assignlicense.md
+                - name: 检查成员组
+                  href: api/user-checkmembergroups.md
+                - name: 检查 member 对象
+                  href: api/user-checkmemberobjects.md
+                - name: 导出个人数据
+                  href: api/user-exportpersonaldata.md
                 - name: 获取成员对象
                   href: api/user-getmemberobjects.md
                 - name: 获取成员组
                   href: api/user-getmembergroups.md
-                - name: 检查成员组
-                  href: api/user-checkmembergroups.md
                 - name: 按 ID 获取对象
                   href: api/directoryobject-getbyids.md
-                - name: 导出个人数据
-                  href: api/user-exportpersonaldata.md
+                - name: 列出创建的对象
+                  href: api/user-list-createdobjects.md
+                - name: 列出许可证详细信息
+                  href: api/user-list-licensedetails.md
+                - name: 列出拥有的设备
+                  href: api/user-list-owneddevices.md
+                - name: 列出拥有的对象
+                  href: api/user-list-ownedobjects.md
+                - name: 列出注册的设备
+                  href: api/user-list-registereddevices.md
+                - name: 撤消登录会话
+                  href: api/user-revokesigninsessions.md
             - name: 驱动器
               href: resources/drive.md
               items:
@@ -249,40 +253,60 @@
             - name: 组
               href: resources/group.md
               items:
+                - name: 列出加入的团队
+                  href: api/user-list-joinedteams.md
                 - name: 列出隶属于
                   href: api/user-list-memberof.md
                 - name: 列出的可传递成员
                   href: api/user-list-transitivememberof.md
+            - name: 见解
+              items:
+                - name: Office Graph 见解
+                  href: resources/officegraphinsights.md
+                  items:
+                    - name: 共享的列表
+                      href: api/insights-list-shared.md
+                    - name: 列出趋势
+                      href: api/insights-list-trending.md
+                    - name: 使用的列表
+                      href: api/insights-list-used.md
+                - name: 内容发现用户设置
+                  href: resources/usersettings.md
+                  items:
+                    - name: 获取设置
+                      href: api/usersettings-get.md
+                    - name: 更新设置
+                      href: api/usersettings-update.md
             - name: 邮件
               href: resources/message.md
               items:
-                - name: 列出邮件
-                  href: api/user-list-messages.md
-                - name: 创建邮件
-                  href: api/user-post-messages.md
-                - name: 列出替代
-                  href: api/inferenceclassification-list-overrides.md
-                - name: 创建替代
-                  href: api/inferenceclassification-post-overrides.md
-                - name: 列出邮件文件夹
-                  href: api/user-list-mailfolders.md
                 - name: 创建邮件文件夹
                   href: api/user-post-mailfolders.md
-                - name: 发送邮件
-                  href: api/user-sendmail.md
-                - name: 列出规则
-                  href: api/mailfolder-list-messagerules.md
-                - name: 创建规则
+                - name: 创建邮件
+                  href: api/user-post-messages.md
+                - name: 创建邮件规则
                   href: api/mailfolder-post-messagerules.md
+                - name: 创建替代
+                  href: api/inferenceclassification-post-overrides.md
                 - name: 获取邮件提示
                   href: api/user-getmailtips.md
-            - name: 注释
+                - name: 列出邮件文件夹
+                  href: api/user-list-mailfolders.md
+                - name: 列出邮件
+                  href: api/user-list-messages.md
+                - name: 列出替代
+                  href: api/inferenceclassification-list-overrides.md
+                - name: 列出规则
+                  href: api/mailfolder-list-messagerules.md
+                - name: 发送邮件
+                  href: api/user-sendmail.md
+            - name: 笔记
               href: resources/onenote.md
               items:
-                - name: 列出笔记本
-                  href: api/onenote-list-notebooks.md
                 - name: 创建笔记本
                   href: api/onenote-post-notebooks.md
+                - name: 列出笔记本
+                  href: api/onenote-list-notebooks.md
             - name: 组织层次结构
               href: resources/organization.md
               items:
@@ -308,14 +332,14 @@
                   items:
                     - name: Outlook 用户
                       href: resources/outlookuser.md
+                    - name: 创建类别
+                      href: api/outlookuser-post-mastercategories.md
                     - name: 获取语言选择
                       href: api/outlookuser-supportedlanguages.md
                     - name: 获取时区选择
                       href: api/outlookuser-supportedtimezones.md
                     - name: 列出类别
                       href: api/outlookuser-list-mastercategories.md
-                    - name: 创建类别
-                      href: api/outlookuser-post-mastercategories.md
                 - name: 转换 Id
                   href: api/user-translateexchangeids.md
             - name: Photo
@@ -330,13 +354,6 @@
               items:
                 - name: 列出任务
                   href: api/planneruser-list-tasks.md
-            - name: 用户设置
-              href: resources/user-settings.md
-              items:
-                - name: 获取设置
-                  href: api/user-get-settings.md
-                - name: 更新设置
-                  href: api/user-update-settings.md
         - name: 组
           items:
             - name: 概述
@@ -838,7 +855,7 @@
                 - name: iOS 移动应用配置
                   href: resources/intune-apps-iosmobileappconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-iosmobileappconfiguration-list.md
                     - name: 获取
                       href: api/intune-apps-iosmobileappconfiguration-get.md
@@ -851,7 +868,7 @@
                 - name: iOS 应用商店应用
                   href: resources/intune-apps-iosstoreapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-iosstoreapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosstoreapp-get.md
@@ -1052,7 +1069,7 @@
                 - name: 托管的 iOS 应用商店应用
                   href: resources/intune-apps-managediosstoreapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-managediosstoreapp-list.md
                     - name: 获取
                       href: api/intune-apps-managediosstoreapp-get.md
@@ -1074,7 +1091,7 @@
                 - name: 适用于企业的 Microsoft Store 应用
                   href: resources/intune-apps-microsoftstoreforbusinessapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                     - name: 获取
                       href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -1481,7 +1498,7 @@
                 - name: 设备符合性策略分配
                   href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
@@ -1503,7 +1520,7 @@
                 - name: 设备符合性策略设置状态摘要
                   href: resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
@@ -1705,7 +1722,7 @@
                 - name: iOS 设备功能配置
                   href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
@@ -1718,7 +1735,7 @@
                 - name: iOS 常规设备配置
                   href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -1911,7 +1928,7 @@
                 - name: 设置状态设备摘要
                   href: resources/intune-deviceconfig-settingstatedevicesummary.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -1930,7 +1947,7 @@
                 - name: 共享电脑配置
                   href: resources/intune-deviceconfig-sharedpcconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-sharedpcconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-sharedpcconfiguration-get.md
@@ -2126,7 +2143,7 @@
                 - name: Windows Phone 8.1 自定义配置
                   href: resources/intune-deviceconfig-windowsphone81customconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
@@ -2139,7 +2156,7 @@
                 - name: Windows Phone 8.1 常规配置
                   href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
@@ -2562,7 +2579,7 @@
                 - name: 托管移动应用
                   href: resources/intune-mam-managedmobileapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-managedmobileapp-list.md
                     - name: 获取
                       href: api/intune-mam-managedmobileapp-get.md
@@ -2575,7 +2592,7 @@
                 - name: MDM Windows 信息保护策略
                   href: resources/intune-mam-mdmwindowsinformationprotectionpolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
                     - name: 获取
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
@@ -2764,7 +2781,7 @@
                 - name: 设备管理 Exchange 连接器
                   href: resources/intune-onboarding-devicemanagementexchangeconnector.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
                     - name: 获取
                       href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
@@ -2785,7 +2802,7 @@
                 - name: 设备管理合作伙伴
                   href: resources/intune-onboarding-devicemanagementpartner.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-devicemanagementpartner-list.md
                     - name: 获取
                       href: api/intune-onboarding-devicemanagementpartner-get.md
@@ -2973,7 +2990,7 @@
                 - name: 设备类别
                   href: resources/intune-shared-devicecategory.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-shared-devicecategory-list.md
                     - name: 获取
                       href: api/intune-shared-devicecategory-get.md
@@ -3016,7 +3033,7 @@
                 - name: 用户
                   href: resources/intune-shared-user.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-shared-user-list.md
                     - name: 获取
                       href: api/intune-shared-user-get.md
@@ -4033,7 +4050,7 @@
                   href: api/listitem-list-versions.md
                 - name: 获取项分析
                   href: api/itemanalytics-get.md
-        - name: 人员和工作场所智能
+        - name: 人员智能
           items:
             - name: 概述
               href: resources/social-overview.md
@@ -4042,6 +4059,24 @@
               items:
                 - name: 列出人员
                   href: api/user-list-people.md
+            - name: 见解
+              href: resources/officegraphinsights.md
+              items:
+                - name: 趋势
+                  href: resources/insights-trending.md
+                  items:
+                    - name: 列出趋势
+                      href: api/insights-list-trending.md
+                - name: 使用的内容
+                  href: resources/insights-used.md
+                  items:
+                    - name: 使用的列表
+                      href: api/insights-list-used.md
+                - name: 共享的内容
+                  href: resources/insights-shared.md
+                  items:
+                    - name: 共享的列表
+                      href: api/insights-list-shared.md
         - name: 任务和计划
           displayName: Planner
           items:

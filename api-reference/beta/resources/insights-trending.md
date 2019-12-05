@@ -1,47 +1,47 @@
 ---
 title: 趋势资源类型
-description: 将用户连接到在用户周围进行趋势分析的文档 (与用户相关) 的丰富关系。 OneDrive 文件和存储在 SharePoint 团队网站上的文件可围绕用户进行趋势。
+description: 将用户连接到在用户周围进行趋势分析的文档（与用户相关）的丰富关系。 OneDrive 文件和存储在 SharePoint 团队网站上的文件可围绕用户进行趋势。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 7963a3c518fd4fc946da4f6714a3aa52aa4b87eb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b631554cc8cd2ed0c9a76f4c132d36c4b08e0cd
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006218"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844307"
 ---
-# <a name="trending-resource-type"></a><span data-ttu-id="e5762-104">趋势资源类型</span><span class="sxs-lookup"><span data-stu-id="e5762-104">trending resource type</span></span>
+# <a name="trending-resource-type"></a><span data-ttu-id="c86b9-104">趋势资源类型</span><span class="sxs-lookup"><span data-stu-id="c86b9-104">trending resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5762-105">将用户连接到在用户周围进行趋势分析的文档 (与用户相关) 的丰富关系。</span><span class="sxs-lookup"><span data-stu-id="e5762-105">Rich relationship connecting a user to documents that are trending around the user (are relevant to the user).</span></span> <span data-ttu-id="e5762-106">OneDrive 文件和存储在 SharePoint 团队网站上的文件可围绕用户进行趋势。</span><span class="sxs-lookup"><span data-stu-id="e5762-106">OneDrive files, and files stored on SharePoint team sites can trend around the user.</span></span>
+<span data-ttu-id="c86b9-105">将用户连接到在用户周围进行趋势分析的文档（与用户相关）的丰富关系。</span><span class="sxs-lookup"><span data-stu-id="c86b9-105">Rich relationship connecting a user to documents that are trending around the user (are relevant to the user).</span></span> <span data-ttu-id="c86b9-106">OneDrive 文件和存储在 SharePoint 团队网站上的文件可围绕用户进行趋势。</span><span class="sxs-lookup"><span data-stu-id="c86b9-106">OneDrive files, and files stored on SharePoint team sites can trend around the user.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e5762-107">方法</span><span class="sxs-lookup"><span data-stu-id="e5762-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="c86b9-107">方法</span><span class="sxs-lookup"><span data-stu-id="c86b9-107">Methods</span></span>
 
-| <span data-ttu-id="e5762-108">方法</span><span class="sxs-lookup"><span data-stu-id="e5762-108">Method</span></span>       | <span data-ttu-id="e5762-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="e5762-109">Return Type</span></span>  |<span data-ttu-id="e5762-110">说明</span><span class="sxs-lookup"><span data-stu-id="e5762-110">Description</span></span>|
+| <span data-ttu-id="c86b9-108">方法</span><span class="sxs-lookup"><span data-stu-id="c86b9-108">Method</span></span>       | <span data-ttu-id="c86b9-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="c86b9-109">Return Type</span></span>  |<span data-ttu-id="c86b9-110">说明</span><span class="sxs-lookup"><span data-stu-id="c86b9-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="e5762-111">列出趋势</span><span class="sxs-lookup"><span data-stu-id="e5762-111">List trending</span></span>](../api/insights-list-trending.md) |<span data-ttu-id="e5762-112">[insights_trending](insights-trending.md)集合</span><span class="sxs-lookup"><span data-stu-id="e5762-112">[insights_trending](insights-trending.md) collection</span></span>| <span data-ttu-id="e5762-113">获取趋势文件的列表。</span><span class="sxs-lookup"><span data-stu-id="e5762-113">Get a list of trending files.</span></span>|
+|[<span data-ttu-id="c86b9-111">列出趋势</span><span class="sxs-lookup"><span data-stu-id="c86b9-111">List trending</span></span>](../api/insights-list-trending.md) |<span data-ttu-id="c86b9-112">[trending](insights-trending.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c86b9-112">[trending](insights-trending.md) collection</span></span>| <span data-ttu-id="c86b9-113">获取趋势文件的列表。</span><span class="sxs-lookup"><span data-stu-id="c86b9-113">Get a list of trending files.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="e5762-114">属性</span><span class="sxs-lookup"><span data-stu-id="e5762-114">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c86b9-114">属性</span><span class="sxs-lookup"><span data-stu-id="c86b9-114">Properties</span></span>
 
-| <span data-ttu-id="e5762-115">属性</span><span class="sxs-lookup"><span data-stu-id="e5762-115">Property</span></span>      | <span data-ttu-id="e5762-116">类型</span><span class="sxs-lookup"><span data-stu-id="e5762-116">Type</span></span>                              | <span data-ttu-id="e5762-117">说明</span><span class="sxs-lookup"><span data-stu-id="e5762-117">Description</span></span>  |
+| <span data-ttu-id="c86b9-115">属性</span><span class="sxs-lookup"><span data-stu-id="c86b9-115">Property</span></span>      | <span data-ttu-id="c86b9-116">类型</span><span class="sxs-lookup"><span data-stu-id="c86b9-116">Type</span></span>                              | <span data-ttu-id="c86b9-117">说明</span><span class="sxs-lookup"><span data-stu-id="c86b9-117">Description</span></span>  |
 | ------------- |---------------                    | -------------|
-| <span data-ttu-id="e5762-118">id</span><span class="sxs-lookup"><span data-stu-id="e5762-118">id</span></span>                    | <span data-ttu-id="e5762-119">String</span><span class="sxs-lookup"><span data-stu-id="e5762-119">String</span></span>                    | <span data-ttu-id="e5762-120">关系的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="e5762-120">Unique identifier of the relationship.</span></span> <span data-ttu-id="e5762-121">只读。</span><span class="sxs-lookup"><span data-stu-id="e5762-121">Read only.</span></span>        |
-| <span data-ttu-id="e5762-122">weight</span><span class="sxs-lookup"><span data-stu-id="e5762-122">weight</span></span>                | <span data-ttu-id="e5762-123">双精度</span><span class="sxs-lookup"><span data-stu-id="e5762-123">Double</span></span>                    | <span data-ttu-id="e5762-124">值, 该值指示文档当前正在进行趋势计算的程度。</span><span class="sxs-lookup"><span data-stu-id="e5762-124">Value indicating how much the document is currently trending.</span></span> <span data-ttu-id="e5762-125">数字越大, 文档当前在用户周围的趋势分析越多 (相关性越好)。</span><span class="sxs-lookup"><span data-stu-id="e5762-125">The larger the number, the more the document is currently trending around the user (the more relevant it is).</span></span> <span data-ttu-id="e5762-126">返回的文档按此值进行排序。</span><span class="sxs-lookup"><span data-stu-id="e5762-126">Returned documents are sorted by this value.</span></span>  |
-| <span data-ttu-id="e5762-127">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="e5762-127">resourceVisualization</span></span> | [<span data-ttu-id="e5762-128">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="e5762-128">resourceVisualization</span></span>](insights-resourcevisualization.md)    | <span data-ttu-id="e5762-129">可用于在体验中可视化文档的属性。</span><span class="sxs-lookup"><span data-stu-id="e5762-129">Properties that you can use to visualize the document in your experience.</span></span> |
-| <span data-ttu-id="e5762-130">resourceReference</span><span class="sxs-lookup"><span data-stu-id="e5762-130">resourceReference</span></span>     | [<span data-ttu-id="e5762-131">resourceReference</span><span class="sxs-lookup"><span data-stu-id="e5762-131">resourceReference</span></span>](insights-resourcereference.md)        | <span data-ttu-id="e5762-132">参考趋势文档的属性, 例如文档的 url 和类型。</span><span class="sxs-lookup"><span data-stu-id="e5762-132">Reference properties of the trending document, such as the url and type of the document.</span></span> |
-| <span data-ttu-id="e5762-133">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e5762-133">lastModifiedDateTime</span></span>  | <span data-ttu-id="e5762-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e5762-134">DateTimeOffset</span></span>            | |
-## <a name="relationships"></a><span data-ttu-id="e5762-135">关系</span><span class="sxs-lookup"><span data-stu-id="e5762-135">Relationships</span></span>
+| <span data-ttu-id="c86b9-118">id</span><span class="sxs-lookup"><span data-stu-id="c86b9-118">id</span></span>                    | <span data-ttu-id="c86b9-119">String</span><span class="sxs-lookup"><span data-stu-id="c86b9-119">String</span></span>                    | <span data-ttu-id="c86b9-120">关系的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="c86b9-120">Unique identifier of the relationship.</span></span> <span data-ttu-id="c86b9-121">只读。</span><span class="sxs-lookup"><span data-stu-id="c86b9-121">Read only.</span></span>        |
+| <span data-ttu-id="c86b9-122">weight</span><span class="sxs-lookup"><span data-stu-id="c86b9-122">weight</span></span>                | <span data-ttu-id="c86b9-123">双精度</span><span class="sxs-lookup"><span data-stu-id="c86b9-123">Double</span></span>                    | <span data-ttu-id="c86b9-124">值，该值指示文档当前正在进行趋势计算的程度。</span><span class="sxs-lookup"><span data-stu-id="c86b9-124">Value indicating how much the document is currently trending.</span></span> <span data-ttu-id="c86b9-125">数字越大，文档当前在用户周围的趋势分析越多（相关性越好）。</span><span class="sxs-lookup"><span data-stu-id="c86b9-125">The larger the number, the more the document is currently trending around the user (the more relevant it is).</span></span> <span data-ttu-id="c86b9-126">返回的文档按此值进行排序。</span><span class="sxs-lookup"><span data-stu-id="c86b9-126">Returned documents are sorted by this value.</span></span>  |
+| <span data-ttu-id="c86b9-127">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="c86b9-127">resourceVisualization</span></span> | [<span data-ttu-id="c86b9-128">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="c86b9-128">resourceVisualization</span></span>](insights-resourcevisualization.md)    | <span data-ttu-id="c86b9-129">可用于在体验中可视化文档的属性。</span><span class="sxs-lookup"><span data-stu-id="c86b9-129">Properties that you can use to visualize the document in your experience.</span></span> |
+| <span data-ttu-id="c86b9-130">resourceReference</span><span class="sxs-lookup"><span data-stu-id="c86b9-130">resourceReference</span></span>     | [<span data-ttu-id="c86b9-131">resourceReference</span><span class="sxs-lookup"><span data-stu-id="c86b9-131">resourceReference</span></span>](insights-resourcereference.md)        | <span data-ttu-id="c86b9-132">参考趋势文档的属性，例如文档的 url 和类型。</span><span class="sxs-lookup"><span data-stu-id="c86b9-132">Reference properties of the trending document, such as the url and type of the document.</span></span> |
+| <span data-ttu-id="c86b9-133">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c86b9-133">lastModifiedDateTime</span></span>  | <span data-ttu-id="c86b9-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c86b9-134">DateTimeOffset</span></span>            | |
+## <a name="relationships"></a><span data-ttu-id="c86b9-135">关系</span><span class="sxs-lookup"><span data-stu-id="c86b9-135">Relationships</span></span>
 
-| <span data-ttu-id="e5762-136">属性</span><span class="sxs-lookup"><span data-stu-id="e5762-136">Property</span></span>      | <span data-ttu-id="e5762-137">类型</span><span class="sxs-lookup"><span data-stu-id="e5762-137">Type</span></span>          | <span data-ttu-id="e5762-138">说明</span><span class="sxs-lookup"><span data-stu-id="e5762-138">Description</span></span>  |
+| <span data-ttu-id="c86b9-136">属性</span><span class="sxs-lookup"><span data-stu-id="c86b9-136">Property</span></span>      | <span data-ttu-id="c86b9-137">类型</span><span class="sxs-lookup"><span data-stu-id="c86b9-137">Type</span></span>          | <span data-ttu-id="c86b9-138">说明</span><span class="sxs-lookup"><span data-stu-id="c86b9-138">Description</span></span>  |
 | ------------- |---------------| -------------|
-| <span data-ttu-id="e5762-139">资源</span><span class="sxs-lookup"><span data-stu-id="e5762-139">resource</span></span>      | <span data-ttu-id="e5762-140">属性</span><span class="sxs-lookup"><span data-stu-id="e5762-140">entity</span></span>        | <span data-ttu-id="e5762-141">用于导航到趋势文档。</span><span class="sxs-lookup"><span data-stu-id="e5762-141">Used for navigating to the trending document.</span></span> |
+| <span data-ttu-id="c86b9-139">资源</span><span class="sxs-lookup"><span data-stu-id="c86b9-139">resource</span></span>      | <span data-ttu-id="c86b9-140">属性</span><span class="sxs-lookup"><span data-stu-id="c86b9-140">entity</span></span>        | <span data-ttu-id="c86b9-141">用于导航到趋势文档。</span><span class="sxs-lookup"><span data-stu-id="c86b9-141">Used for navigating to the trending document.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="e5762-142">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e5762-142">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c86b9-142">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c86b9-142">JSON representation</span></span>
 
-<span data-ttu-id="e5762-143">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e5762-143">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="c86b9-143">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c86b9-143">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
