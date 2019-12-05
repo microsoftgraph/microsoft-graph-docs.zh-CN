@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8c6bfaaed12dfcda3c730890e598253230b4cfeb
-ms.sourcegitcommit: 719eb06b263a10739190e4460b7ffdf0f1a50484
+ms.openlocfilehash: 6c2f309ac7b66d3d698e54c2280b49b0bb5912a4
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191473"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844286"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1122,7 +1122,8 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |读取所有公司位置 |允许应用读取日历事件和其他应用程序的公司位置（会议室和房间列表）。 |否 | 否 |
+| _Place.Read.All_ |允许应用读取在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
+| _Place.ReadWrite.All_ |允许应用读取和写入在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1163,6 +1164,23 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="presence-permissions"></a>状态权限
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
+| _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
+
+### <a name="example-usage"></a>用法示例
+
+* _Presence.Read_：如果你已登录，则检索你自己的状态信息 (`GET /me/presence`)
+* _Presence.Read.All_：检索其他用户的状态信息 (`GET /users/{id}/presence`)
+* _Presence.Read.All_：检索多个用户的状态信息 (`POST /communications/getPresencesByUserId`)
 
 ---
 

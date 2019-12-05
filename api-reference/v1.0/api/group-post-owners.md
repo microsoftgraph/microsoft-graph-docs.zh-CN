@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0f46e67de69762ebf26600726dd58e74fbcbe5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9095ca1c8f26f9a5925b3d1ad9fc95533df0365e
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337139"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844949"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
@@ -32,9 +32,10 @@ ms.locfileid: "36337139"
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。

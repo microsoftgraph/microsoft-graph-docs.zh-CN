@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c0a3cff4895f8e2e3f4e874e9a8a264c277b91aa
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 2711a2d48b83f597903b45c2e8af4a024f91e99b
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302122"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39856741"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const call = {
   callbackUri: "https://bot.contoso.com/callback",
   targets: [
     {
-      @odata.type: "#microsoft.graph.participantInfo",
+      @odata.type: "#microsoft.graph.invitationParticipantInfo",
       identity: {
         @odata.type: "#microsoft.graph.identitySet",
         user: {

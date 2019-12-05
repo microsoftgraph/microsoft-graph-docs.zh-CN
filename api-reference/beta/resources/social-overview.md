@@ -1,22 +1,22 @@
 ---
 title: 使用 Microsoft Graph API 在应用中集成人员和工作区智能
-description: Microsoft Graph 让用户能够访问有用的人员和工作区数据，还支持用户社交上下文中的社交手势。
+description: Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与之交互的文档和工作模式，并支持用户社交环境中的手势。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 06d27d69aae008bb1bfe772a02a5951a33a4f0bd
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 9085db75d70932fe3364b5739a33fc480f30032a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250734"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844258"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 让用户能够访问人员和工作区数据，还支持用户社交上下文中的手势。
+Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与之交互的文档和工作模式，并支持用户社交环境中的手势。
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>聚合并提取有关人员的特定信息
 
