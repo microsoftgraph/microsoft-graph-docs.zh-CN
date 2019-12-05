@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b49ce2c0fb0c1d2ab167ffbb033bf11b0171a20f
+ms.openlocfilehash: 39810868e779f9de62535e4b463f477f12739e85
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844489"
+ms.locfileid: "39845019"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含[officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
 
@@ -81,7 +79,7 @@ ms.locfileid: "39844489"
 -   Folder
 -   Other
 
-示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+示例查询：`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>containerType 属性值
 根据[officeGraphInsights](officegraphinsights.md)返回文件的容器，受支持的类型可能有所不同。 例如，仅[sharedInsight](insights-shared.md)真知灼见将从 "收存箱"、"Box" 和 "GDrive" 返回文件。
@@ -93,4 +91,4 @@ ms.locfileid: "39844489"
 -   Box
 -   GDrive
 
-示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+示例查询：`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`

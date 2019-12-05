@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fdfd17870841c260347a46984c16d96be11c1182
+ms.openlocfilehash: f82601867e890d9a733932fab66ab18235c780e4
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844209"
+ms.locfileid: "39845005"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含[sharedInsight](insights-shared.md)项目的属性的复杂类型。 
 

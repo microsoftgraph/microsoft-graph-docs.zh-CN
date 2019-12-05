@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: 通过创建上载会话，使应用程序可以上载最大大小的文件。
+description: 通过创建上传会话，使应用可以上传最大大小的文件。
 ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333204"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843950"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
   "fileSize": 1234,
   "name": "filename.txt"
@@ -92,7 +92,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关要上载的文件的数据
-| deferCommit          | Boolean                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
+| deferCommit          | 布尔                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
 
 ### <a name="request"></a>请求
 

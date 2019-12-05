@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 010c2809d4679c2cfdc8090f7c3291ddc8981bfd
+ms.openlocfilehash: 8aa3267de5373e0f75f73851c4d995cbb29cd8bf
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843824"
+ms.locfileid: "39844347"
 ---
 # <a name="list-shared"></a>共享的列表
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 计算的洞察力，包括与用户共享的文档列表。
 
@@ -47,13 +45,13 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 您可以使用`$filter`查询参数筛选共享项目。 例如，基于**类型**：
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
 您还可以检索由特定用户共享的文件。 例如，通过指定`lastshared/sharedby/address`属性：
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
 请参阅[sharingDetail](../resources/insights-sharingdetail.md)复杂类型。
 
@@ -76,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 下面是一个请求示例。
 ```http
-GET https://graph.microsoft.com/beta/me/insights/shared
+GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
 ##### <a name="response"></a>响应

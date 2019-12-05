@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c15720ac3f2bda673d495fbe32dc6bae8d5898d7
+ms.openlocfilehash: c75eab84dea4e0f9134185fd9679770369073bf4
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844496"
+ms.locfileid: "39844355"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含[officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
 

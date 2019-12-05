@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 8f37e7cfbfe206cfb932661335c78dc370180bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c951e83348134ee2a5b85e5091377d55a5fd1027
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964129"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844244"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -28,6 +28,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 - Office 365 组[对话][]
 - 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
 - OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
+- [chatMessage][]
 - 安全[警报][]
 
 ## <a name="permissions"></a>权限
@@ -38,7 +39,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
 | 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[事件][]、[邮件][]                                        |
-| 应用程序                            | [警报][]、[联系人][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
+| 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [event][]、 [group][]、 [message][]、 [user][]、[了 chatmessage][]|
 
 ## <a name="see-also"></a>另请参阅
 
@@ -49,6 +50,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 - [更新订阅](../api/subscription-update.md)
 - [删除订阅](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [联系人]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e89dc031802ea420079bbbbbf5dd46f4fe181fc
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 3e2e517d0a20384c8aaaa24e9f385cf5560c411e
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949501"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844188"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -26,25 +26,26 @@ ms.locfileid: "37949501"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 将读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持 |
+| Application                            | 不支持 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /places/{id}
+PATCH /places/{id | emailAddress}
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 描述|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 值|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源（**会议室**或**roomList**）的实例。 在请求正文中，使用`@odata.type`指定位置的类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -57,11 +58,11 @@ PATCH /places/{id}
 | floorLabel             | String                                            | 指定会议室所在的楼层号。 |
 | floorNumber            | Int32                                             | 指定会议室所在的楼层号。 |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 指定纬度、经度和海拔高度坐标（可选）中的会议室或 roomlist 位置。 |
-| isWheelchairAccessible | Boolean                                           | 指定会议室是否 wheelchair 可访问。 |
+| isWheelchairAccessible | 布尔                                           | 指定会议室是否 wheelchair 可访问。 |
 | label                  | String                                            | 指定聊天室的描述性标签，例如数字或名称。 |
 | 昵称               | String                                            | 指定聊天室的昵称，例如 "会议室"。 |
 | phone                  | String                                            | 会议室或 roomlist 的电话号码。 |
-| 标记                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
+| 标记                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定聊天室中视频设备的名称。 |
 
 ## <a name="response"></a>响应
@@ -77,6 +78,8 @@ PATCH /places/{id}
 下面展示了示例请求。
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -95,6 +98,20 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -127,8 +144,8 @@ Content-type: application/json
       "countryOrRegion": "USA"
     },
     "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
+      "latitude": 47.0,
+      "longitude": -122.0
     },
     "phone": "555-555-0100",
     "nickname": "Conf Room",
@@ -156,6 +173,8 @@ Content-type: application/json
 下面展示了示例请求。
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -167,9 +186,37 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
-  "phone":"555-555-0100"
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -200,7 +247,13 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }

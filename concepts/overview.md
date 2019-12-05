@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。 Mi
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b5325af0619d1f1ad7d212b69d82d63b32978a0f
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 8857d73de24cd5b6d5ee939b2ac7bd5acd1a81db
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263259"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844230"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -65,7 +65,7 @@ Microsoft Graph 公开了 REST API 和客户端库，它们可访问以下 Micro
 然后，可顺着人际关系导航到其他联系人：
 
 - 通过[上下级关系](/graph/api/user-list-manager?view=graph-rest-1.0)与其经理联系。
-- 获取宝贵的见解和智能，包括在该用户身上发现的常用文件[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)。
+- 获取宝贵的见解和智能，包括在该用户身上发现的常用文件[趋势](/graph/api/resources/insights-trending?view=graph-rest-1.0)。
 - 获取与该用户[关联性最大的人员](/graph/api/user-list-people?view=graph-rest-beta)。
 - 将该场景进行扩展，通过[所属](/graph/api/user-list-memberof?view=graph-rest-1.0)关系了解该用户加入的组。
 - [接触每个组中的其他成员](/graph/api/group-list-members?view=graph-rest-1.0)。
@@ -94,7 +94,7 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 |   获取我组织中的用户  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   获取我组织中的组 | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   获取与我相关的人员 | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   获取我常用的项目 | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
+|   获取我常用的项目 | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
 |   获取我的笔记 | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## <a name="bring-data-from-an-external-content-source-to-microsoft-graph-preview"></a>将数据从外部内容源引入 Microsoft Graph（预览版）

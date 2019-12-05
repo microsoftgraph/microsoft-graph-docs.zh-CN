@@ -1,22 +1,22 @@
 ---
 title: 使用的列表
-description: 计算出的洞察力, 可返回用户使用的文件列表。
+description: 计算得出的见解，可返回用户使用的文件列表。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 31115a845c3b5af80aaba700e55e0ede05d922b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bd97a9c727a88cd4677de359880c79ed8a85e39
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953071"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843859"
 ---
 # <a name="list-used"></a>使用的列表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算出的洞察力, 可返回用户使用的文件列表。
+计算的洞察力，包括用户修改的文档列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,22 +28,35 @@ ms.locfileid: "35953071"
 |应用程序 | Sites.Read.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+获取已登录用户已修改的文档列表：
+
 ```http
 GET /me/insights/used
 ```
-请求其他用户的已用文档返回按 "lastModifiedDateTime" 和 "lastAccessedDateTime" 排序的结果设置为 "lastModifiedDateTime"。
+
+获取指定用户已修改的文档列表。
+
+>**注意**：请求其他用户的已**使用**文档返回按**lastModifiedDateTime**排序的结果。 然后，将**lastAccessedDateTime**设置为**lastModifiedDateTime**。
 ```http
 GET /users/{id | userPrincipalName}/insights/used
 ```
 
+扩展**使用**的洞察力引用的资源：
+
+```http
+GET /me/insights/used/{id}/resource
+GET /users/{id | userPrincipalName}/insights/used/{id}/resource
+```
+
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$filter`查询参数筛选已使用的项目。 例如, 基于类型:
+您可以使用`$filter`查询参数筛选已使用的项目。 例如，基于**类型**：
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-或基于容器类型:
+或基于**containerType**：
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -61,7 +74,7 @@ GET /users/{id | userPrincipalName}/insights/used
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和已[使用](../resources/insights-used.md)项的列表。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和已[使用](../resources/insights-used.md)项的列表。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
@@ -103,8 +116,3 @@ GET https://graph.microsoft.com/beta/me/insights/used
 }
 ```
 
-### <a name="expanding-resource"></a>扩展资源
-可以扩展已使用的洞察力引用的资源。
-```http
-GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
-```

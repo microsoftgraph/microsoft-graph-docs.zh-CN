@@ -1,22 +1,22 @@
 ---
 title: 邀请资源类型
-description: 表示用于向组织添加外部用户的邀请。
+description: 表示用于将外部用户添加到组织的邀请。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 3eeeadf3ed27087051c7bf6945920466d60b9469
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450639"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844991"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于向组织添加外部用户的邀请。 
+表示用于将外部用户添加到组织的邀请。 
 
 邀请进程使用以下流程：
 
@@ -39,18 +39,18 @@ ms.locfileid: "36450639"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
-|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。必填。|
+|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必填。 电子邮件地址中不允许以下特殊字符：<br><ul><li>波形符（~）</li><li>感叹号（`!`）</li><li>At 符号（`@`）</li><li>数字记号（`#`）</li><li>美元符号（`$`）</li><li>百分比（`%`）</li><li>扬抑`^`符（）</li><li>与号 (`&`)</li><li>星号（`*`）</li><li>括号（`( )`）</li><li>连字符`-`（）</li><li>加号（`+`）</li><li>等号（`=`）</li><li>括号（`[ ]`）</li><li>大括号`{ }`（）</li><li>反斜杠`\`（）</li><li>斜杠标记（`/`）</li><li>管道（`|`）</li><li>分号（`;`）</li><li>冒号（`:`）</li><li>引号（`"`）</li><li>尖括号（`< >`）</li><li>问号（`?`）</li><li>逗号（`,`）</li></ul><br>但是，以下例外情况适用：<br><ul><li>除了名称的`.`开头或结尾之外，`-`用户名称中的任何位置都允许使用句点（）或连字符（）。</li><li>用户名中的`_`任何位置都允许有下划线（）。 这包括在名称的开头或结尾。</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|status|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

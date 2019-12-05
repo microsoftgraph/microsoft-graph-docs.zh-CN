@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0d11230402d95009e414c16962a2eb9b5dce1f58
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 895425cd7c5b83661fb55be53cd17cefb0a73103
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333363"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844237"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -22,16 +22,22 @@ ms.locfileid: "37333363"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
+|**通道邮件**| | |
 |[列出频道了 chatmessage](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根聊天邮件的列表。|
 |[在频道 delta 中获取 Chatmessages 集合](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取通道中的增量聊天消息。 |
+|[为新的频道消息创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和编辑的频道消息以及对它们的反应。 |
 |[获取频道了 chatmessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 从频道中获取单个根聊天消息。|
+|**频道邮件答复**| | |
 |[列出对了 chatmessage 的答复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 频道中对聊天消息的所有回复的列表。|
 |[获取对了 chatmessage 的答复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取频道中的聊天消息的单个答复。|
-|[在频道中创建了 chatmessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
+|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
 |[答复频道中的了 chatmessage](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在频道中答复现有聊天邮件。|
+|**1:1 和分组聊天消息**| | |
 |[在聊天中创建了 chatmessage](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|
 |[在聊天中列出 Chatmessages 集合](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 列出1:1 或组聊天中的聊天消息。 |
+|[创建新聊天邮件的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和已编辑的聊天消息以及对它们的反应。 |
 |[在聊天中获取了 chatmessage](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取单个聊天消息。 |
+|**托管内容**| | |
 |[列出所有已承载的内容](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md)集合| 获取聊天消息中的所有托管内容。|
 |[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 从聊天消息中获取托管的内容。|
 
@@ -39,7 +45,7 @@ ms.locfileid: "37333363"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 邮件的唯一 Id。|
+|id|字符串| 只读。 邮件的唯一 Id。|
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。 （仅适用于通道中不聊天的聊天邮件） |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |

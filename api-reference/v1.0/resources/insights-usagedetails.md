@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fb4c1c07d008c37475927d490b49bbb19c1e69d5
+ms.openlocfilehash: 9d30f09195867635ec10b8aac5413c1d89a73b46
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844300"
+ms.locfileid: "39844942"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含已[使用](insights-used.md)项的属性的复杂类型。 有关用户上次访问（查看）和修改（编辑）资源的时间的信息。
 
