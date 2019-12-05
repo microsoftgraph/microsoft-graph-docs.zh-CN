@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab0a296f89b882030f476a739b8991568c79e28
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672871"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843939"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -106,8 +106,8 @@ ms.locfileid: "39672871"
 |**架构扩展**| | |
 | [添加架构扩展值](/graph/extensibility-schema-groups) | 无 | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。 |
 | **用户设置** |||
-| [获取设置](../api/user-get-settings.md) | [设置](user-settings.md) | 阅读用户和组织设置对象。 |
-| [更新设置](../api/user-update-settings.md) | [设置](user-settings.md) | 更新 settings 对象的属性。 |
+| [获取设置](../api/usersettings-get.md) | [userSettings](usersettings.md) | 阅读用户和组织设置对象。 |
+| [更新设置](../api/usersettings-update.md) | [userSettings](usersettings.md) | 更新 settings 对象的属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -236,6 +236,7 @@ ms.locfileid: "39672871"
 |活动|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
+|insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为空。|
 |licenseDetails|[licenseDetails](licensedetails.md) 集合|此用户许可证详细信息的集合。 只读。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|

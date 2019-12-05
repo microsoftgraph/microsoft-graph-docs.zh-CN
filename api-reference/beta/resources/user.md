@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c4ca85a37f2bd1f40daed09dd6ba2b4616e2b81f
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 9252825eb0e970f5c8d7da0d9eb4275574dd564a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672829"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843957"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "39672829"
 | [checkMemberGroups](../api/user-checkmembergroups.md) | String collection|检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
+| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。 |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
@@ -69,7 +69,7 @@ ms.locfileid: "39672829"
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
 | **Drive** |||
-| [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索 Drive 资源的属性和关系。 |
+| [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索驱动器资源的属性和关系。 |
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
 | **组** |||
 | [List joinedTeams](../api/user-list-joinedteams.md) | [团队](team.md) 集合 | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。 |
@@ -133,8 +133,8 @@ ms.locfileid: "39672829"
 | [升级应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 将指定用户的个人范围内的应用安装升级到该应用的最新版本。
 | [为用户卸载应用](../api/user-delete-teamsappinstallation.md) | 无 | 卸载指定用户的个人范围内的应用。 |
 | **用户设置** |||
-| [获取设置](../api/user-get-settings.md) | [settings](user-settings.md) | 读取用户和组织 settings 对象。 |
-| 更新设置 | [settings](user-settings.md) | 更新 settings 对象的属性。 |
+| [获取设置](../api/usersettings-get.md) | [userSettings](usersettings.md) | 阅读用户和组织设置对象。 |
+| [更新设置](../api/usersettings-update.md) | [userSettings](usersettings.md) | 更新 settings 对象的属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -287,7 +287,7 @@ ms.locfileid: "39672829"
 |photos|[photo](photo.md) 集合| 只读。可为 Null。|
 |planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为空。 |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 只读。 可为 Null。|
-|settings|[userSettings](user-settings.md) | 只读。可为 Null。|
+|settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -349,6 +349,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: 缺少 Outlook 通知（预览版）
                 href: webhooks-outlook-authz.md
+              - name: 与资源数据有关的通知（预览版）
+                href: webhooks-with-resource-data.md
           - name: 跟踪更改
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:
