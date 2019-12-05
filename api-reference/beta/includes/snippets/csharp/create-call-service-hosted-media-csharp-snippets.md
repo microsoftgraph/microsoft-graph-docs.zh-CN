@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5e0cb399c747c2f4fac36f1171bc02e14e3a36d6
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f84e9ddd29ba565ea8399b82b178619e0e97f2f6
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302121"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39856743"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var call = new Call
     CallbackUri = "https://bot.contoso.com/callback",
     Targets = new List<InvitationParticipantInfo>()
     {
-        new ParticipantInfo
+        new InvitationParticipantInfo
         {
             Identity = new IdentitySet
             {

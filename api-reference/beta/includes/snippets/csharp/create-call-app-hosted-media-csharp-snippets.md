@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 834fb4bdac4348c81a3a61bc4c87ee08173414ff
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 6dd0a007134c5c27e315beebdce6537bb07491a0
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302120"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39856730"
 ---
 ```csharp
 
@@ -29,7 +29,7 @@ var call = new Call
     },
     Targets = new List<InvitationParticipantInfo>()
     {
-        new ParticipantInfo
+        new InvitationParticipantInfo
         {
             Identity = new IdentitySet
             {
