@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e71f63872100dff532df7309585f0a6be2ed352c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a71eecadd1d39c37c7778a283bf7a25686da23c
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969366"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844475"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -60,13 +60,13 @@ GET /me/people/?$search="topic:beetle"
 在主题数据索引中进行的模糊搜索返回了表示甲壳虫昆虫、标志性大众甲壳虫汽车、披头士乐队和其他定义的实例。
 
 
-## <a name="why-integrate-with-document-based-insights-preview"></a>为什么与基于文档的见解（预览版）集成？
+## <a name="why-integrate-with-document-based-insights"></a>为什么与基于文档的见解集成？
 
 ### <a name="use-intelligence-to-improve-collaboration"></a>使用智能来提升协作
 
 在平时的工作日中，用户通常会与存储在多个文档中的大量信息进行交互，并以多种不同的方式与其他用户协作。 当他们需要任何信息时，即可随时找到所需的信息，这一点很重要。
 
-你可以使用见解 API（其中包含[热门](/graph/api/resources/insights-trending?view=graph-rest-beta)、[共享](/graph/api/resources/insights-shared?view=graph-rest-beta)和[使用](/graph/api/resources/insights-used?view=graph-rest-beta) API），根据用户的当前上下文和需求跨 Office 365 处理文件，使用户工作更为高效并提升组织中的协作。
+你可以使用见解 API（其中包含[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)和[使用](/graph/api/resources/insights-used?view=graph-rest-1.0) API），根据用户的当前上下文和需求跨 Office 365 处理文件，使用户工作更为高效并提升组织中的协作。
 
 在应用中呈现见解 API 中的结果很简单。 每个结果都附带了一组常用可视化属性，例如，预览图像 URL 或预览文本。
 
@@ -74,7 +74,7 @@ GET /me/people/?$search="topic:beetle"
 
 在 Office 365 中，Delve 使用_热门_见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
 
-通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-beta)实体为应用客户提供类似体验。 使用****“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-beta)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
+通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)实体为应用客户提供类似体验。 使用****“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-1.0)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
 
 **图 1. Office 365 中的 Delve 为用户显示热门文档**
 
@@ -84,7 +84,7 @@ GET /me/people/?$search="topic:beetle"
 
 新的 Office 365 人员卡片融入了“使用”__ 和__“共享”见解，以连接人员和知识单元之间的点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
 
-见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-beta)和[共享](/graph/api/resources/insights-shared?view=graph-rest-beta)实体类似的功能。 它们返回用户最近最常查看或使用的内容，或同事最近在 Office 365 中与用户共享的内容。
+见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近最常查看或使用的内容，或同事最近在 Office 365 中与用户共享的内容。
 
 **图 2. Outlook 网页版显示用户的人员卡片**
 
@@ -105,13 +105,13 @@ GET /me/people/?$search="topic:beetle"
 在查找这些服务的 API 参考？
 
 - [人脉 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [人脉和工作区智能（预览版）](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [人员和工作场所智能](/graph/api/resources/social-overview?view=graph-rest-1.0)
 - [配置文件 API（预览版）](/graph/api/resources/profile?view=graph-rest-beta)。
 
 ## <a name="next-steps"></a>后续步骤
 
-* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解(beta)”**** 和“分析”****。
+* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解”**** 和“分析”****。
 * 了解有关[人员 API](people-example.md) 和[人员](/graph/api/resources/person?view=graph-rest-1.0)实体的详细信息。
-* 若要开始使用见解 API，请参阅[使用见解 API](/graph/api/resources/insights?view=graph-rest-beta)。
+* 若要开始使用见解 API，请参阅 [Office Graph 数据解析](/graph/api/resources/officegraphinsights?view=graph-rest-1.0)。
 * 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) 的详细信息。
 * 查找有关[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta) 的详细信息。
