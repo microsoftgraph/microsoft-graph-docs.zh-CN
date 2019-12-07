@@ -278,9 +278,10 @@
                       href: api/insights-list-trending.md
                     - name: 使用的列表
                       href: api/insights-list-used.md
-                - name: 内容发现用户设置
-                  href: resources/usersettings.md
+                - name: 内容发现设置
                   items:
+                    - name: 用户设置
+                      href: resources/usersettings.md
                     - name: 获取设置
                       href: api/usersettings-get.md
                     - name: 更新设置
@@ -308,7 +309,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 笔记
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -1489,7 +1490,7 @@
                 - name: macOS VPP 应用
                   href: resources/intune-apps-macosvppapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-macosvppapp-list.md
                     - name: 获取
                       href: api/intune-apps-macosvppapp-get.md
@@ -1502,7 +1503,7 @@
                 - name: macOS VPP 应用分配的许可证
                   href: resources/intune-apps-macosvppappassignedlicense.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-macosvppappassignedlicense-list.md
                     - name: 获取
                       href: api/intune-apps-macosvppappassignedlicense-get.md
@@ -2138,7 +2139,7 @@
                 - name: Windows Universal APPX
                   href: resources/intune-apps-windowsuniversalappx.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-windowsuniversalappx-list.md
                     - name: 获取
                       href: api/intune-apps-windowsuniversalappx-get.md
@@ -2151,7 +2152,7 @@
                 - name: Windows Universal APPX 包含的应用
                   href: resources/intune-apps-windowsuniversalappxcontainedapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-windowsuniversalappxcontainedapp-list.md
                     - name: 获取
                       href: api/intune-apps-windowsuniversalappxcontainedapp-get.md
@@ -2351,7 +2352,7 @@
                 - name: 注册配置文件
                   href: resources/intune-enrollment-enrollmentprofile.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-enrollment-enrollmentprofile-list.md
                     - name: 获取
                       href: api/intune-enrollment-enrollmentprofile-get.md
@@ -2368,7 +2369,7 @@
                 - name: 已导入的 Apple 设备标识
                   href: resources/intune-enrollment-importedappledeviceidentity.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-enrollment-importedappledeviceidentity-list.md
                     - name: 获取
                       href: api/intune-enrollment-importedappledeviceidentity-get.md
@@ -2787,7 +2788,7 @@
                 - name: Android for Work 常规设备配置
                   href: resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
@@ -2800,7 +2801,7 @@
                 - name: Android for Work Gmail EAS 配置
                   href: resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
@@ -3420,7 +3421,7 @@
                 - name: 设备符合性设置状态
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -3440,7 +3441,7 @@
                 - name: 设备合规性用户状态
                   href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -3856,7 +3857,7 @@
                 - name: 组策略演示文稿值布尔值
                   href: resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-get.md
@@ -3869,7 +3870,7 @@
                 - name: 组策略演示文稿值小数位数
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-get.md
@@ -4273,7 +4274,7 @@
                 - name: macOS 符合性策略
                   href: resources/intune-deviceconfig-macoscompliancepolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -4299,7 +4300,7 @@
                 - name: macOS 自定义配置
                   href: resources/intune-deviceconfig-macoscustomconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -7055,7 +7056,7 @@
                 - name: 注册配置分配
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7074,7 +7075,7 @@
                 - name: 移动威胁防护连接器
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: 获取
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -10112,9 +10113,9 @@
             - name: 分析（预览版）
               href: resources/useranalytics.md
               items:
-                - name: Settings
+                - name: 设置
                   items:
-                    - name: Settings
+                    - name: 设置
                       href: resources/settings.md
                     - name: 获取设置
                       href: api/useranalytics-get-settings.md
@@ -10543,7 +10544,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md
