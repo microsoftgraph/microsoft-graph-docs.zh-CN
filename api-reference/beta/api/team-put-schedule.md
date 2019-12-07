@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd5b047e184d636f8938e9c820082ae62bda3d99
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f12fd0bbca9e321d6332ce9994ae1566c1f30ca2
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409352"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895285"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换计划
 
@@ -18,10 +18,10 @@ ms.locfileid: "36409352"
 
 创建或替换[schedule](../resources/schedule.md)对象。
 
-计划创建过程符合[基于资源的长时间运行的操作 (RELO) 的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
-当客户端使用 PUT 方法时, 如果设置了计划, 则操作将替换计划;否则, 该操作将在后台启动计划设置过程。
+计划创建过程符合[基于资源的长时间运行的操作（RELO）的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
+当客户端使用 PUT 方法时，如果设置了计划，则操作将替换计划;否则，该操作将在后台启动计划设置过程。
 
-在计划设置过程中, 客户端可以使用[get 方法](schedule-get.md)获取计划, 并查看设置`provisionStatus`的当前状态的属性。 如果设置失败, 客户端可以从`provisionStatusCode`属性获取其他信息。
+在计划设置过程中，客户端可以使用[get 方法](schedule-get.md)获取计划，并查看设置`provisionStatus`的当前状态的属性。 如果设置失败，客户端可以从`provisionStatusCode`属性获取其他信息。
 
 客户端也可以检查计划的配置。
 
@@ -55,11 +55,11 @@ PUT /teams/{teamId}/schedule
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[schedule](../resources/schedule.md)对象的 JSON 表示形式。
+在请求正文中，提供[schedule](../resources/schedule.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schedule](../resources/schedule.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[schedule](../resources/schedule.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -67,7 +67,7 @@ PUT /teams/{teamId}/schedule
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
@@ -89,7 +89,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,7 +117,12 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
 

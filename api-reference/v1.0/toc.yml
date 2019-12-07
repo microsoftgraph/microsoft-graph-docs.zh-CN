@@ -270,9 +270,10 @@
                       href: api/insights-list-trending.md
                     - name: 使用的列表
                       href: api/insights-list-used.md
-                - name: 内容发现用户设置
-                  href: resources/usersettings.md
+                - name: 内容发现设置
                   items:
+                    - name: 用户设置
+                      href: resources/usersettings.md
                     - name: 获取设置
                       href: api/usersettings-get.md
                     - name: 更新设置
@@ -300,7 +301,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 笔记
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本

@@ -6,12 +6,12 @@ title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 33bd220fcacaa513495a277108d68f19f901d053
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843950"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895355"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -92,7 +92,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关要上载的文件的数据
-| deferCommit          | 布尔                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
+| deferCommit          | Boolean                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
 
 ### <a name="request"></a>请求
 
