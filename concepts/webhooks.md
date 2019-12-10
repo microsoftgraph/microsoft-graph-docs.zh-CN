@@ -2,14 +2,15 @@
 title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
+ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 26afa7c71708f617038f8d66c64a7f2a65a1c8d9
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: e4bd9809524b5891f1883f62b8ef5c6fbaa5d01f
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113875"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39845026"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -22,6 +23,10 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
  
 > [!div class="nextstepaction"]
 > [使用 .NET Core 生成 Webhook 应用](/graph/tutorials/change-notifications)
+
+默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用**用户**资源作为使用通知的示例。
+
+应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。 此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。 将来会有更多资源类型支持此类型的通知。 有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知（预览版）](webhooks-with-resource-data.md)。
 
 ## <a name="supported-resources"></a>支持的资源
 
