@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8d00517d6c8c3eb7e669f50a44293e457793e0d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0d8449b70311c5eb4f4ca65c62378af23dca3d98
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172770"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39935938"
 ---
-# <a name="update-microsoftstoreforbusinesscontainedapp"></a><span data-ttu-id="72da7-103">更新 microsoftStoreForBusinessContainedApp</span><span class="sxs-lookup"><span data-stu-id="72da7-103">Update microsoftStoreForBusinessContainedApp</span></span>
+# <a name="update-microsoftstoreforbusinesscontainedapp"></a><span data-ttu-id="8d18d-103">更新 microsoftStoreForBusinessContainedApp</span><span class="sxs-lookup"><span data-stu-id="8d18d-103">Update microsoftStoreForBusinessContainedApp</span></span>
 
-> <span data-ttu-id="72da7-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="72da7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8d18d-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8d18d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="72da7-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="72da7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8d18d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8d18d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="72da7-106">更新[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="72da7-106">Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.</span></span>
+<span data-ttu-id="8d18d-106">更新[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8d18d-106">Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="72da7-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="72da7-107">Prerequisites</span></span>
-<span data-ttu-id="72da7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="72da7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8d18d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8d18d-107">Prerequisites</span></span>
+<span data-ttu-id="8d18d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8d18d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="72da7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="72da7-110">Permission type</span></span>|<span data-ttu-id="72da7-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="72da7-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8d18d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8d18d-110">Permission type</span></span>|<span data-ttu-id="8d18d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8d18d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="72da7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="72da7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="72da7-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72da7-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="72da7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="72da7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="72da7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="72da7-115">Not supported.</span></span>|
-|<span data-ttu-id="72da7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="72da7-116">Application</span></span>|<span data-ttu-id="72da7-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72da7-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d18d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8d18d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8d18d-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d18d-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d18d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8d18d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8d18d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8d18d-115">Not supported.</span></span>|
+|<span data-ttu-id="8d18d-116">Application</span><span class="sxs-lookup"><span data-stu-id="8d18d-116">Application</span></span>|<span data-ttu-id="8d18d-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d18d-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="72da7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="72da7-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d18d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8d18d-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.microsoftSto
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniversalAppX/committedContainedApps/{mobileContainedAppId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="72da7-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="72da7-119">Request headers</span></span>
-|<span data-ttu-id="72da7-120">标头</span><span class="sxs-lookup"><span data-stu-id="72da7-120">Header</span></span>|<span data-ttu-id="72da7-121">值</span><span class="sxs-lookup"><span data-stu-id="72da7-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d18d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8d18d-119">Request headers</span></span>
+|<span data-ttu-id="8d18d-120">标头</span><span class="sxs-lookup"><span data-stu-id="8d18d-120">Header</span></span>|<span data-ttu-id="8d18d-121">值</span><span class="sxs-lookup"><span data-stu-id="8d18d-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="72da7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="72da7-122">Authorization</span></span>|<span data-ttu-id="72da7-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="72da7-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="72da7-124">接受</span><span class="sxs-lookup"><span data-stu-id="72da7-124">Accept</span></span>|<span data-ttu-id="72da7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="72da7-125">application/json</span></span>|
+|<span data-ttu-id="8d18d-122">授权</span><span class="sxs-lookup"><span data-stu-id="8d18d-122">Authorization</span></span>|<span data-ttu-id="8d18d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8d18d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8d18d-124">接受</span><span class="sxs-lookup"><span data-stu-id="8d18d-124">Accept</span></span>|<span data-ttu-id="8d18d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8d18d-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="72da7-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="72da7-126">Request body</span></span>
-<span data-ttu-id="72da7-127">在请求正文中，提供[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="72da7-127">In the request body, supply a JSON representation for the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d18d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8d18d-126">Request body</span></span>
+<span data-ttu-id="8d18d-127">在请求正文中，提供[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8d18d-127">In the request body, supply a JSON representation for the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.</span></span>
 
-<span data-ttu-id="72da7-128">下表显示创建[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="72da7-128">The following table shows the properties that are required when you create the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).</span></span>
+<span data-ttu-id="8d18d-128">下表显示创建[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8d18d-128">The following table shows the properties that are required when you create the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).</span></span>
 
-|<span data-ttu-id="72da7-129">属性</span><span class="sxs-lookup"><span data-stu-id="72da7-129">Property</span></span>|<span data-ttu-id="72da7-130">类型</span><span class="sxs-lookup"><span data-stu-id="72da7-130">Type</span></span>|<span data-ttu-id="72da7-131">说明</span><span class="sxs-lookup"><span data-stu-id="72da7-131">Description</span></span>|
+|<span data-ttu-id="8d18d-129">属性</span><span class="sxs-lookup"><span data-stu-id="8d18d-129">Property</span></span>|<span data-ttu-id="8d18d-130">类型</span><span class="sxs-lookup"><span data-stu-id="8d18d-130">Type</span></span>|<span data-ttu-id="8d18d-131">说明</span><span class="sxs-lookup"><span data-stu-id="8d18d-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="72da7-132">id</span><span class="sxs-lookup"><span data-stu-id="72da7-132">id</span></span>|<span data-ttu-id="72da7-133">String</span><span class="sxs-lookup"><span data-stu-id="72da7-133">String</span></span>|<span data-ttu-id="72da7-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="72da7-134">Key of the entity.</span></span> <span data-ttu-id="72da7-135">继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span><span class="sxs-lookup"><span data-stu-id="72da7-135">Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span></span>|
-|<span data-ttu-id="72da7-136">appUserModelId</span><span class="sxs-lookup"><span data-stu-id="72da7-136">appUserModelId</span></span>|<span data-ttu-id="72da7-137">String</span><span class="sxs-lookup"><span data-stu-id="72da7-137">String</span></span>|<span data-ttu-id="72da7-138">MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。</span><span class="sxs-lookup"><span data-stu-id="72da7-138">The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.</span></span>|
+|<span data-ttu-id="8d18d-132">id</span><span class="sxs-lookup"><span data-stu-id="8d18d-132">id</span></span>|<span data-ttu-id="8d18d-133">字符串</span><span class="sxs-lookup"><span data-stu-id="8d18d-133">String</span></span>|<span data-ttu-id="8d18d-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="8d18d-134">Key of the entity.</span></span> <span data-ttu-id="8d18d-135">继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span><span class="sxs-lookup"><span data-stu-id="8d18d-135">Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span></span>|
+|<span data-ttu-id="8d18d-136">appUserModelId</span><span class="sxs-lookup"><span data-stu-id="8d18d-136">appUserModelId</span></span>|<span data-ttu-id="8d18d-137">字符串</span><span class="sxs-lookup"><span data-stu-id="8d18d-137">String</span></span>|<span data-ttu-id="8d18d-138">MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。</span><span class="sxs-lookup"><span data-stu-id="8d18d-138">The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="72da7-139">响应</span><span class="sxs-lookup"><span data-stu-id="72da7-139">Response</span></span>
-<span data-ttu-id="72da7-140">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象。</span><span class="sxs-lookup"><span data-stu-id="72da7-140">If successful, this method returns a `200 OK` response code and an updated [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8d18d-139">响应</span><span class="sxs-lookup"><span data-stu-id="8d18d-139">Response</span></span>
+<span data-ttu-id="8d18d-140">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8d18d-140">If successful, this method returns a `200 OK` response code and an updated [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="72da7-141">示例</span><span class="sxs-lookup"><span data-stu-id="72da7-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8d18d-141">示例</span><span class="sxs-lookup"><span data-stu-id="8d18d-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="72da7-142">请求</span><span class="sxs-lookup"><span data-stu-id="72da7-142">Request</span></span>
-<span data-ttu-id="72da7-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="72da7-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8d18d-142">请求</span><span class="sxs-lookup"><span data-stu-id="8d18d-142">Request</span></span>
+<span data-ttu-id="8d18d-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8d18d-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId}
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 127
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="72da7-144">响应</span><span class="sxs-lookup"><span data-stu-id="72da7-144">Response</span></span>
-<span data-ttu-id="72da7-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="72da7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8d18d-144">响应</span><span class="sxs-lookup"><span data-stu-id="8d18d-144">Response</span></span>
+<span data-ttu-id="8d18d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8d18d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -89,6 +89,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

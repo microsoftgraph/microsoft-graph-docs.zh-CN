@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c792c01919208488de4339ca201e4a89f69aacb
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8954f5ae6c9c4fd66721f9b3c7aa1c4fec515f75
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085146"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932052"
 ---
-# <a name="list-auditevents"></a><span data-ttu-id="4bfc9-103">列出 auditEvents</span><span class="sxs-lookup"><span data-stu-id="4bfc9-103">List auditEvents</span></span>
+# <a name="list-auditevents"></a><span data-ttu-id="23011-103">列出 auditEvents</span><span class="sxs-lookup"><span data-stu-id="23011-103">List auditEvents</span></span>
 
-> <span data-ttu-id="4bfc9-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="23011-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="23011-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4bfc9-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="23011-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="23011-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4bfc9-106">列出 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-106">List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.</span></span>
+<span data-ttu-id="23011-106">列出 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="23011-106">List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4bfc9-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4bfc9-107">Prerequisites</span></span>
-<span data-ttu-id="4bfc9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="23011-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="23011-107">Prerequisites</span></span>
+<span data-ttu-id="23011-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="23011-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4bfc9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4bfc9-110">Permission type</span></span>|<span data-ttu-id="4bfc9-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4bfc9-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="23011-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="23011-110">Permission type</span></span>|<span data-ttu-id="23011-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="23011-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4bfc9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4bfc9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4bfc9-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="4bfc9-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="4bfc9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4bfc9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4bfc9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-115">Not supported.</span></span>|
-|<span data-ttu-id="4bfc9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4bfc9-116">Application</span></span>|<span data-ttu-id="4bfc9-117">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="4bfc9-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="23011-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="23011-112">Delegated (work or school account)</span></span>|<span data-ttu-id="23011-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="23011-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="23011-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="23011-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="23011-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="23011-115">Not supported.</span></span>|
+|<span data-ttu-id="23011-116">Application</span><span class="sxs-lookup"><span data-stu-id="23011-116">Application</span></span>|<span data-ttu-id="23011-117">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="23011-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4bfc9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4bfc9-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23011-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="23011-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ ms.locfileid: "38085146"
 GET /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4bfc9-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4bfc9-119">Request headers</span></span>
-|<span data-ttu-id="4bfc9-120">标头</span><span class="sxs-lookup"><span data-stu-id="4bfc9-120">Header</span></span>|<span data-ttu-id="4bfc9-121">值</span><span class="sxs-lookup"><span data-stu-id="4bfc9-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="23011-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="23011-119">Request headers</span></span>
+|<span data-ttu-id="23011-120">标头</span><span class="sxs-lookup"><span data-stu-id="23011-120">Header</span></span>|<span data-ttu-id="23011-121">值</span><span class="sxs-lookup"><span data-stu-id="23011-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4bfc9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4bfc9-122">Authorization</span></span>|<span data-ttu-id="4bfc9-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4bfc9-124">接受</span><span class="sxs-lookup"><span data-stu-id="4bfc9-124">Accept</span></span>|<span data-ttu-id="4bfc9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4bfc9-125">application/json</span></span>|
+|<span data-ttu-id="23011-122">授权</span><span class="sxs-lookup"><span data-stu-id="23011-122">Authorization</span></span>|<span data-ttu-id="23011-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="23011-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="23011-124">接受</span><span class="sxs-lookup"><span data-stu-id="23011-124">Accept</span></span>|<span data-ttu-id="23011-125">application/json</span><span class="sxs-lookup"><span data-stu-id="23011-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4bfc9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4bfc9-126">Request body</span></span>
-<span data-ttu-id="4bfc9-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="23011-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="23011-126">Request body</span></span>
+<span data-ttu-id="23011-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="23011-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4bfc9-128">响应</span><span class="sxs-lookup"><span data-stu-id="4bfc9-128">Response</span></span>
-<span data-ttu-id="4bfc9-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [auditEvent](../resources/intune-auditing-auditevent.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-129">If successful, this method returns a `200 OK` response code and a collection of [auditEvent](../resources/intune-auditing-auditevent.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="23011-128">响应</span><span class="sxs-lookup"><span data-stu-id="23011-128">Response</span></span>
+<span data-ttu-id="23011-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [auditEvent](../resources/intune-auditing-auditevent.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="23011-129">If successful, this method returns a `200 OK` response code and a collection of [auditEvent](../resources/intune-auditing-auditevent.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4bfc9-130">示例</span><span class="sxs-lookup"><span data-stu-id="4bfc9-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="23011-130">示例</span><span class="sxs-lookup"><span data-stu-id="23011-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4bfc9-131">请求</span><span class="sxs-lookup"><span data-stu-id="4bfc9-131">Request</span></span>
-<span data-ttu-id="4bfc9-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="23011-131">请求</span><span class="sxs-lookup"><span data-stu-id="23011-131">Request</span></span>
+<span data-ttu-id="23011-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="23011-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ```
 
-### <a name="response"></a><span data-ttu-id="4bfc9-133">响应</span><span class="sxs-lookup"><span data-stu-id="4bfc9-133">Response</span></span>
-<span data-ttu-id="4bfc9-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4bfc9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="23011-133">响应</span><span class="sxs-lookup"><span data-stu-id="23011-133">Response</span></span>
+<span data-ttu-id="23011-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="23011-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -119,7 +119,6 @@ Content-Length: 1873
   ]
 }
 ```
-
 
 
 
