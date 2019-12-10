@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90c10d60b6a43241db9882d814c49d42abc69012
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 0cb1b464056b72481efcc4d86c30a28a764ca63c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085442"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939337"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
@@ -29,7 +29,7 @@ ms.locfileid: "38085442"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|这是实体的 Id。|
-|deviceId|String|设备的 id。|
+|deviceId|字符串|设备的 id。|
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|字符串|用户主体名称。|
 |状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|设备的质量更新版本。|
-|featureUpdateVersion|String|设备的当前功能更新版本。|
+|qualityUpdateVersion|字符串|设备的质量更新版本。|
+|featureUpdateVersion|字符串|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 
@@ -115,7 +115,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 
