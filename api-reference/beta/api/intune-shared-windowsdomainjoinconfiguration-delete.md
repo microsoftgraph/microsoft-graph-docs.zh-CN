@@ -5,32 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1eca5a066e08931567d6f65071161028364207e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: bca34e9723df4150e3f0da5183162c385572006f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085470"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939379"
 ---
-# <a name="delete-windowsdomainjoinconfiguration"></a><span data-ttu-id="a0a2d-103">删除 windowsDomainJoinConfiguration</span><span class="sxs-lookup"><span data-stu-id="a0a2d-103">Delete windowsDomainJoinConfiguration</span></span>
+# <a name="delete-windowsdomainjoinconfiguration"></a><span data-ttu-id="c62d2-103">删除 windowsDomainJoinConfiguration</span><span class="sxs-lookup"><span data-stu-id="c62d2-103">Delete windowsDomainJoinConfiguration</span></span>
 
-> <span data-ttu-id="a0a2d-104">**重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a0a2d-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c62d2-104">**重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="c62d2-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c62d2-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="c62d2-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a0a2d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c62d2-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c62d2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a0a2d-107">删除[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-107">Deletes a [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="a0a2d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="a0a2d-108">Prerequisites</span></span>
-<span data-ttu-id="a0a2d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c62d2-107">删除[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)。</span><span class="sxs-lookup"><span data-stu-id="c62d2-107">Deletes a [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c62d2-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="c62d2-108">Prerequisites</span></span>
+<span data-ttu-id="c62d2-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c62d2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0a2d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0a2d-111">Permission type</span></span>|<span data-ttu-id="a0a2d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a0a2d-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c62d2-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c62d2-111">Permission type</span></span>|<span data-ttu-id="c62d2-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c62d2-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0a2d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0a2d-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="a0a2d-114">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="a0a2d-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="a0a2d-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0a2d-115">DeviceManagementConfiguration.ReadWrite.All</span></span> |
-|<span data-ttu-id="a0a2d-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0a2d-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a0a2d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-117">Not supported.</span></span>|
-|<span data-ttu-id="a0a2d-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0a2d-118">Application</span></span>||
-| <span data-ttu-id="a0a2d-119">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="a0a2d-119">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="a0a2d-120">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0a2d-120">DeviceManagementConfiguration.ReadWrite.All</span></span> |
+|<span data-ttu-id="c62d2-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c62d2-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="c62d2-114">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="c62d2-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="c62d2-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c62d2-115">DeviceManagementConfiguration.ReadWrite.All</span></span> |
+|<span data-ttu-id="c62d2-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c62d2-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c62d2-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c62d2-117">Not supported.</span></span>|
+|<span data-ttu-id="c62d2-118">Application</span><span class="sxs-lookup"><span data-stu-id="c62d2-118">Application</span></span>||
+| <span data-ttu-id="c62d2-119">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="c62d2-119">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="c62d2-120">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c62d2-120">DeviceManagementConfiguration.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0a2d-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0a2d-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c62d2-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c62d2-121">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,31 +41,30 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssig
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a0a2d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0a2d-122">Request headers</span></span>
-|<span data-ttu-id="a0a2d-123">标头</span><span class="sxs-lookup"><span data-stu-id="a0a2d-123">Header</span></span>|<span data-ttu-id="a0a2d-124">值</span><span class="sxs-lookup"><span data-stu-id="a0a2d-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c62d2-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="c62d2-122">Request headers</span></span>
+|<span data-ttu-id="c62d2-123">标头</span><span class="sxs-lookup"><span data-stu-id="c62d2-123">Header</span></span>|<span data-ttu-id="c62d2-124">值</span><span class="sxs-lookup"><span data-stu-id="c62d2-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0a2d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0a2d-125">Authorization</span></span>|<span data-ttu-id="a0a2d-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a0a2d-127">接受</span><span class="sxs-lookup"><span data-stu-id="a0a2d-127">Accept</span></span>|<span data-ttu-id="a0a2d-128">application/json</span><span class="sxs-lookup"><span data-stu-id="a0a2d-128">application/json</span></span>|
+|<span data-ttu-id="c62d2-125">授权</span><span class="sxs-lookup"><span data-stu-id="c62d2-125">Authorization</span></span>|<span data-ttu-id="c62d2-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c62d2-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c62d2-127">接受</span><span class="sxs-lookup"><span data-stu-id="c62d2-127">Accept</span></span>|<span data-ttu-id="c62d2-128">application/json</span><span class="sxs-lookup"><span data-stu-id="c62d2-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a0a2d-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0a2d-129">Request body</span></span>
-<span data-ttu-id="a0a2d-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c62d2-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="c62d2-129">Request body</span></span>
+<span data-ttu-id="c62d2-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c62d2-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a0a2d-131">响应</span><span class="sxs-lookup"><span data-stu-id="a0a2d-131">Response</span></span>
-<span data-ttu-id="a0a2d-132">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-132">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="c62d2-131">响应</span><span class="sxs-lookup"><span data-stu-id="c62d2-131">Response</span></span>
+<span data-ttu-id="c62d2-132">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="c62d2-132">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0a2d-133">示例</span><span class="sxs-lookup"><span data-stu-id="a0a2d-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="a0a2d-134">请求</span><span class="sxs-lookup"><span data-stu-id="a0a2d-134">Request</span></span>
-<span data-ttu-id="a0a2d-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c62d2-133">示例</span><span class="sxs-lookup"><span data-stu-id="c62d2-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="c62d2-134">请求</span><span class="sxs-lookup"><span data-stu-id="c62d2-134">Request</span></span>
+<span data-ttu-id="c62d2-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c62d2-135">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="a0a2d-136">响应</span><span class="sxs-lookup"><span data-stu-id="a0a2d-136">Response</span></span>
-<span data-ttu-id="a0a2d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a0a2d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c62d2-136">响应</span><span class="sxs-lookup"><span data-stu-id="c62d2-136">Response</span></span>
+<span data-ttu-id="c62d2-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c62d2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
