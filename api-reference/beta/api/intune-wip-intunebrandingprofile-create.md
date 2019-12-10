@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b94ac2c27b48c867380cd402002e217aad430a68
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 2e2a293d4e111e8f6fd578a250ef095c4bd6509e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087963"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938500"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "38087963"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,9 +51,9 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|配置文件键|
-|profileName|String|配置文件的名称|
-|profileDescription|String|配置文件的说明|
+|id|字符串|配置文件键|
+|profileName|字符串|配置文件的名称|
+|profileDescription|字符串|配置文件的说明|
 |isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
@@ -64,14 +64,14 @@ POST /deviceManagement/intuneBrandingProfiles
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，其徽标后面有主题颜色背景|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，徽标后面有浅背景|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
-|contactITName|String|负责 IT 支持的人员/组织的名称|
-|contactITPhoneNumber|String|负责 IT 支持的个人/组织的电话号码|
-|contactITEmailAddress|String|负责 IT 支持的个人/组织的电子邮件地址|
-|contactITNotes|String|关于负责 IT 支持的人员/组织的文本注释|
-|onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
+|contactITName|字符串|负责 IT 支持的人员/组织的名称|
+|contactITPhoneNumber|字符串|负责 IT 支持的个人/组织的电话号码|
+|contactITEmailAddress|字符串|负责 IT 支持的个人/组织的电子邮件地址|
+|contactITNotes|字符串|关于负责 IT 支持的人员/组织的文本注释|
+|onlineSupportSiteUrl|字符串|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
-|privacyUrl|String|指向公司/组织的隐私策略的 URL|
-|customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
+|privacyUrl|字符串|指向公司/组织的隐私策略的 URL|
+|customPrivacyMessage|字符串|有关管理员在设备上有权访问的内容的文本注释|
 |isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
 |isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
@@ -205,7 +205,6 @@ Content-Length: 1792
   "showOfficeWebApps": true
 }
 ```
-
 
 
 

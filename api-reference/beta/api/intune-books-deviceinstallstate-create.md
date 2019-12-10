@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9831913e308ac04553bb6ecd9cc342aecbcd92a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b6363af3c96923a1d2a91815e0c257ff496fcda4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171384"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932024"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37171384"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,14 +52,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|deviceName|String|设备名称。|
-|deviceId|String|设备 ID。|
+|id|字符串|实体的键。|
+|deviceName|字符串|设备名称。|
+|deviceId|字符串|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|String|安装失败的错误代码。|
-|osVersion|String|操作系统版本。|
-|osDescription|String|操作系统说明。|
+|errorCode|字符串|安装失败的错误代码。|
+|osVersion|字符串|操作系统版本。|
+|osDescription|字符串|操作系统说明。|
 |userName|String|设备用户名。|
 
 
@@ -109,6 +109,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 
