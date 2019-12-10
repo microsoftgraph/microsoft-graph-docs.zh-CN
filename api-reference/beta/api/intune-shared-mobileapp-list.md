@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b8e58adf460d57908848b85f8c9fa0d36acd46b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4d36d0f8a431ccf65467f6a11b30990065cabb5f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085764"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939681"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "38085764"
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -101,7 +101,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35700ade5c9589a943a8560268179cb1d10ab95e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3dcf16f2d35b0f7968906c38e61cf49fc6c0ca70
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087073"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943191"
 ---
 # <a name="updatedefinitionvalues-action"></a>updateDefinitionValues 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "38087073"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/up
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +49,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/up
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |添加内容|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)集合|尚未记录|
 |updated|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)集合|尚未记录|
@@ -102,7 +102,6 @@ Content-length: 759
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

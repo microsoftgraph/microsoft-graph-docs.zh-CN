@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b41a7a98bb5a9f7f42215fd127914246c132784
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6d4ca7f17ba5dd98605f4e1ea1f5db1b54c96d69
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086240"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940164"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "38086240"
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceCategories
 
 下表显示创建 deviceCategory 时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**Obboarding**|
@@ -99,7 +99,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58fb4ea963c19c3d5428e4dc1c6d64b47fa124e5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 56fed3deec707ef7627d73fcc8f8e20937593a07
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085750"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939667"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>创建 mobileAppTroubleshootingEvent
 
@@ -29,7 +29,7 @@ ms.locfileid: "38085750"
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -46,7 +46,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,10 +59,10 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |id|字符串|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
-|applicationId|String|Intune 应用程序标识符。|
-|correlationId|String|用于跟踪服务中的故障的 ID。 |
+|applicationId|字符串|Intune 应用程序标识符。|
+|correlationId|字符串|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|名|String|与疑难解答事件对应的事件名称。 可选。|
+|名|字符串|与疑难解答事件对应的事件名称。 可选。|
 |日志|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)集合|Intune 移动应用程序故障排除历史记录项|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |
@@ -97,7 +97,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

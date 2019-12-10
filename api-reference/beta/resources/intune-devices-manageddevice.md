@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13706b8cd58649ceb99bcdb863c5d2afd2554a10
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 9e17880fa913a6e5fd2fc2e5cc068277bfd84f4c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088089"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39924617"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -26,40 +26,40 @@ ms.locfileid: "38088089"
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
 |[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。|
 |[executeAction 操作](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|尚未记录|
-|[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|无|启用丢失模式|
-|[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|无|远程锁定|
-|[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|无|设置设备的设备名称。|
-|[rotateFileVaultKey 操作](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|无|尚未记录|
+|[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|None|启用丢失模式|
+|[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|None|远程锁定|
+|[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|None|设置设备的设备名称。|
+|[rotateFileVaultKey 操作](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|尚未记录|
 |[getFileVaultKey 函数](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|尚未记录|
-|[retire 操作](../api/intune-devices-manageddevice-retire.md)|无|停用设备|
-|[wipe 操作](../api/intune-devices-manageddevice-wipe.md)|无|擦除设备|
-|[resetPasscode 操作](../api/intune-devices-manageddevice-resetpasscode.md)|无|重置密码|
-|[remoteLock 操作](../api/intune-devices-manageddevice-remotelock.md)|无|远程锁定|
-|[requestRemoteAssistance 操作](../api/intune-devices-manageddevice-requestremoteassistance.md)|无|请求远程协助|
-|[disableLostMode 操作](../api/intune-devices-manageddevice-disablelostmode.md)|无|禁用丢失模式|
-|[locateDevice 操作](../api/intune-devices-manageddevice-locatedevice.md)|无|查找设备|
-|[bypassActivationLock 操作](../api/intune-devices-manageddevice-bypassactivationlock.md)|无|跳过激活锁|
-|[rebootNow 操作](../api/intune-devices-manageddevice-rebootnow.md)|无|重新启动设备|
-|[shutDown 操作](../api/intune-devices-manageddevice-shutdown.md)|无|关闭设备|
-|[recoverPasscode 操作](../api/intune-devices-manageddevice-recoverpasscode.md)|无|恢复密码|
-|[cleanWindowsDevice 操作](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|无|干净的 Windows 设备|
-|[logoutSharedAppleDeviceActiveUser 操作](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|无|注销共享 Apple 设备活动用户|
+|[retire 操作](../api/intune-devices-manageddevice-retire.md)|None|停用设备|
+|[wipe 操作](../api/intune-devices-manageddevice-wipe.md)|None|擦除设备|
+|[resetPasscode 操作](../api/intune-devices-manageddevice-resetpasscode.md)|None|重置密码|
+|[remoteLock 操作](../api/intune-devices-manageddevice-remotelock.md)|None|远程锁定|
+|[requestRemoteAssistance 操作](../api/intune-devices-manageddevice-requestremoteassistance.md)|None|请求远程协助|
+|[disableLostMode 操作](../api/intune-devices-manageddevice-disablelostmode.md)|None|禁用丢失模式|
+|[locateDevice 操作](../api/intune-devices-manageddevice-locatedevice.md)|None|查找设备|
+|[bypassActivationLock 操作](../api/intune-devices-manageddevice-bypassactivationlock.md)|None|跳过激活锁|
+|[rebootNow 操作](../api/intune-devices-manageddevice-rebootnow.md)|None|重新启动设备|
+|[shutDown 操作](../api/intune-devices-manageddevice-shutdown.md)|None|关闭设备|
+|[recoverPasscode 操作](../api/intune-devices-manageddevice-recoverpasscode.md)|None|恢复密码|
+|[cleanWindowsDevice 操作](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|None|干净的 Windows 设备|
+|[logoutSharedAppleDeviceActiveUser 操作](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|None|注销共享 Apple 设备活动用户|
 |[deleteUserFromSharedAppleDevice 操作](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|无|从共享 Apple 设备中删除用户|
-|[syncDevice 操作](../api/intune-devices-manageddevice-syncdevice.md)|无|尚未记录|
-|[windowsDefenderScan 操作](../api/intune-devices-manageddevice-windowsdefenderscan.md)|无|尚未记录|
-|[windowsDefenderUpdateSignatures 操作](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|无|尚未记录|
+|[syncDevice 操作](../api/intune-devices-manageddevice-syncdevice.md)|None|尚未记录|
+|[windowsDefenderScan 操作](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|尚未记录|
+|[windowsDefenderUpdateSignatures 操作](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|尚未记录|
 |[updateWindowsDeviceAccount 操作](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|无|尚未记录|
-|[revokeAppleVppLicenses 操作](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|无|吊销设备的所有 Apple Vpp 许可证|
-|[rotateBitLockerKeys 操作](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|无|旋转 BitLockerKeys|
-|[sendCustomNotificationToCompanyPortal 操作](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
-|[triggerConfigurationManagerAction 操作](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|无|ConfigurationManager 客户端上的触发操作|
+|[revokeAppleVppLicenses 操作](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|None|吊销设备的所有 Apple Vpp 许可证|
+|[rotateBitLockerKeys 操作](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|None|旋转 BitLockerKeys|
+|[sendCustomNotificationToCompanyPortal 操作](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|尚未记录|
+|[triggerConfigurationManagerAction 操作](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|ConfigurationManager 客户端上的触发操作|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备的唯一标识符。 此属性是只读的。|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
-|deviceName|String|设备的名称。 此属性是只读的。|
+|deviceName|字符串|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。|
 |所有者|[所有者](../resources/intune-shared-ownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -68,46 +68,46 @@ ms.locfileid: "38088089"
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的机箱类型。 此属性是只读的。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
+|operatingSystem|字符串|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 此属性是只读的。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `palm` `unknown`、、、、、、、、、、、、、、、、、、、。 `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry`|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
-|jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
-|osVersion|String|设备的操作系统版本。 此属性是只读的。|
+|jailBroken|字符串|设备是否已越狱或取得 root 权限。 此属性是只读的。|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
+|osVersion|字符串|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
-|easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
+|easDeviceId|字符串|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 此属性是只读的。 可取值为：`disabled`、`enabled`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
-|emailAddress|String|与设备关联的用户的电子邮件。 此属性是只读的。|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
-|azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
+|emailAddress|字符串|与设备关联的用户的电子邮件。 此属性是只读的。|
+|azureActiveDirectoryDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
+|azureADDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 此属性是只读的。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
-|deviceCategoryDisplayName|String|设备类别显示名称。 此属性是只读的。|
+|deviceCategoryDisplayName|字符串|设备类别显示名称。 此属性是只读的。|
 |isSupervised|Boolean|设备监督状态。 此属性是只读的。|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 此属性是只读的。|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 此属性是只读的。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 此属性是只读的。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
-|remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
+|remoteAssistanceSessionUrl|字符串|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。|
 |userPrincipalName|字符串|设备用户主体名称。 此属性是只读的。|
-|model|String|设备的模型。 此属性是只读的。|
-|manufacturer|String|设备的制造商。 此属性是只读的。|
-|imei|String|IMEI. 此属性是只读的。|
+|model|字符串|设备的模型。 此属性是只读的。|
+|manufacturer|字符串|设备的制造商。 此属性是只读的。|
+|imei|字符串|IMEI. 此属性是只读的。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的日期时间。 此属性是只读的。|
 |serialNumber|字符串|SerialNumber. 此属性是只读的。|
-|phoneNumber|String|设备的电话号码。 此属性是只读的。|
-|androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
+|phoneNumber|字符串|设备的电话号码。 此属性是只读的。|
+|androidSecurityPatchLevel|字符串|Android 安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能。 此属性是只读的。|
-|wiFiMacAddress|String|Wi-fi MAC。 此属性是只读的。|
+|wiFiMacAddress|字符串|Wi-fi MAC。 此属性是只读的。|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。|
 |subscriberCarrier|String|订阅者运营商。 此属性是只读的。|
-|meid|String|MEID. 此属性是只读的。|
+|meid|字符串|MEID. 此属性是只读的。|
 |totalStorageSpaceInBytes|Int64|总存储量（以字节为单位）。 此属性是只读的。|
 |freeStorageSpaceInBytes|Int64|以字节为单位的可用存储空间。 此属性是只读的。|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
@@ -118,18 +118,20 @@ ms.locfileid: "38088089"
 |autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
 |requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
+|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
+|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
 |roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
-|notes|String|IT 管理员创建的设备上的注释|
+|notes|字符串|IT 管理员创建的设备上的注释|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager 客户端运行状况状态，仅对由 MDM/ConfigMgr 代理管理的设备有效|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager 客户端信息，仅对受 ConfigMgr 代理管理、duel 管理或三方管理的设备有效|
-|ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
+|ethernetMacAddress|字符串|以太网 MAC。 此属性是只读的。|
+|physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
+|processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|设备上当前安装的所有应用程序|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|设备类别|
@@ -317,7 +319,9 @@ ms.locfileid: "38088089"
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "String"
   },
-  "ethernetMacAddress": "String"
+  "ethernetMacAddress": "String",
+  "physicalMemoryInBytes": 1024,
+  "processorArchitecture": "String"
 }
 ```
 

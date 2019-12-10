@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d47918819089cb4b58f7d37041affb14d40befc6
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 5cac3be06db06eb13fc371c41fe832dabefd36dd
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537196"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940262"
 ---
 # <a name="create-devicemanagementreportschedule"></a>创建 deviceManagementReportSchedule
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37537196"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
+|Application|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,15 +54,15 @@ POST /deviceManagement/reports/reportSchedules
 |id|字符串|此实体的唯一标识符|
 |reportScheduleName|字符串|计划的名称|
 |subject|String|已传递的计划报告的主题|
-|电子邮件|String 集合|计划报告传递到的电子邮件|
+|电子邮件|String collection|计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
 |reportName|字符串|报告的名称|
 |filter|字符串|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|By|String 集合|报表中的列的排序|
+|select|String collection|从报告中选择的列|
+|By|String collection|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
 
 
@@ -132,7 +132,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

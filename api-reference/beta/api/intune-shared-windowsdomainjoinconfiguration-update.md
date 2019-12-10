@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a06baf4e60d13634c6192f3436aed18f9857bb62
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: cadf31d0d7ada9b8e94ea17f326e102d8404c00e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085449"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939344"
 ---
 # <a name="update-windowsdomainjoinconfiguration"></a>更新 windowsDomainJoinConfiguration
 
@@ -28,7 +28,7 @@ ms.locfileid: "38085449"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All|
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,18 +65,18 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 下表显示创建[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |**设备配置**|
-|activeDirectoryDomainName|String|要加入的 Active Directory 域名称。|
-|computerNameStaticPrefix|String|要用于计算机名称的固定前缀。|
+|activeDirectoryDomainName|字符串|要加入的 Active Directory 域名称。|
+|computerNameStaticPrefix|字符串|要用于计算机名称的固定前缀。|
 |computerNameSuffixRandomCharCount|Int32|作为计算机名称的后缀使用的动态生成字符。 有效的值3至14|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|organizationalUnit|String|将在其中创建计算机帐户的组织单位（OU）。 如果此参数为 NULL，则已知的计算机对象容器将被用作域中的已发布。|
+|organizationalUnit|字符串|将在其中创建计算机帐户的组织单位（OU）。 如果此参数为 NULL，则已知的计算机对象容器将被用作域中的已发布。|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -127,7 +127,6 @@ Content-Length: 521
   "activeDirectoryDomainName": "Active Directory Domain Name value"
 }
 ```
-
 
 
 

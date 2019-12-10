@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d009095914c931c6b4b2409b53d82f7e68a2495f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 01d3c247d968baa2c309c81e0138c287e6f18d74
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086030"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939954"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -38,7 +38,7 @@ ms.locfileid: "38086030"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -50,7 +50,7 @@ ms.locfileid: "38086030"
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
-| 应用程序 ||
+| Application ||
 | &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -60,7 +60,7 @@ ms.locfileid: "38086030"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -85,7 +85,7 @@ PATCH /deviceManagement
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -96,7 +96,7 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一标识符。|
+|id|字符串|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -189,7 +189,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

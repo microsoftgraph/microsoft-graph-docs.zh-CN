@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a2d85b203471064cc1fb1bba2f4a1c32fa8aee
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 5519ae01e8091b7f7b55b15b90495d8167ab0c36
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086009"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939933"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>获取 deviceManagementDerivedCredentialSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "38086009"
 |&nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **资源访问策略** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 |&nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **资源访问策略** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-
 
 
 

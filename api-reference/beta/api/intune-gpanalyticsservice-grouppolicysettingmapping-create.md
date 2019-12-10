@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efa2f00c5bdc11e46e88e43aa6244bc2120fe5f1
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b8e6a557bebac11004b5548bc90d931356ba852d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535770"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943268"
 ---
 # <a name="create-grouppolicysettingmapping"></a>创建 groupPolicySettingMapping
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37535770"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |:---|:---|:---|
 |id|字符串|尚未记录|
 |parentId|字符串|组策略设置的父 Id。|
-|childIdList|String 集合|组策略设置的子 Id 列表。|
+|childIdList|String collection|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
 |settingValue|字符串|此组策略设置的值。|
 |settingValueType|字符串|此组策略设置的值类型。|
@@ -65,10 +65,11 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |mdmCspName|字符串|将此组策略设置映射到的 CSP 名称。|
 |mdmSettingUri|字符串|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`。|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
 |isMdmSupported|Boolean|指示此设置是否由 Intune 支持|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
 
 
 
@@ -82,7 +83,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings
 Content-type: application/json
-Content-length: 850
+Content-length: 887
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -103,6 +104,7 @@ Content-length: 850
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
@@ -115,7 +117,7 @@ Content-length: 850
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 899
+Content-Length: 936
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -137,13 +139,13 @@ Content-Length: 899
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ]
 }
 ```
-
 
 
 

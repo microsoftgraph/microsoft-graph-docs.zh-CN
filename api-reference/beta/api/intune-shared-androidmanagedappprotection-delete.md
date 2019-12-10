@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b58cf88d348ed3c57cffbe64dd02e9b9692bcb42
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1332d8ab8fb46638f52b9017876011a11784167b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086296"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940220"
 ---
 # <a name="delete-androidmanagedappprotection"></a>删除 androidManagedAppProtection
 
@@ -29,7 +29,7 @@ ms.locfileid: "38086296"
 | &nbsp; &nbsp; **移动应用管理 (MAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **移动应用管理 (MAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

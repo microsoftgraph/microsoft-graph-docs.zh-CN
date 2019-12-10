@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d03a6780e01b64c12def6bf3fbfc73e3fe243171
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4a60604a82223911ace665e74a44d71e49416f99
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085778"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939695"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
 
@@ -28,7 +28,7 @@ ms.locfileid: "38085778"
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,16 +43,16 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|状态|String|尚未记录|
+|状态|字符串|尚未记录|
 |count|Int64|尚未记录|
 
 
@@ -107,7 +107,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

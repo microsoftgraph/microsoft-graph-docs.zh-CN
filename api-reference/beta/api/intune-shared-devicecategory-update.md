@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec56692e81ca705cf652e2b5c67c734013d2afb
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8986a64ffb06898c0935c3e07c9cb78641c58f4e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086212"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940136"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -30,7 +30,7 @@ ms.locfileid: "38086212"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -69,7 +69,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 下表显示创建 [deviceCategory](../resources/intune-shared-devicecategory.md) 时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
@@ -115,7 +115,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

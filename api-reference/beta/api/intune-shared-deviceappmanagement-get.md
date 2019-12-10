@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f4ce05f838b88bbe2f930557b4e2384347be4ac
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 25c3ec7df96fa1d60419f76200fc660bf4f1735b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086261"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940185"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -30,7 +30,7 @@ ms.locfileid: "38086261"
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| |
+|Application| |
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 
@@ -51,7 +51,7 @@ GET /deviceAppManagement
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -88,7 +88,6 @@ Content-Length: 133
   }
 }
 ```
-
 
 
 
