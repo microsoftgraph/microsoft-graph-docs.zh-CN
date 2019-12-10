@@ -3229,8 +3229,6 @@
                   href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                 - name: BitLocker 恢复选项
                   href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-                - name: BitLocker 恢复密码旋转类型
-                  href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                 - name: BitLocker 可移动驱动器策略
                   href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
                 - name: BitLocker 系统驱动器策略
@@ -3297,6 +3295,8 @@
                   href: resources/intune-deviceconfig-defenderpromptforsamplesubmission.md
                 - name: Defender 保护类型
                   href: resources/intune-deviceconfig-defenderprotectiontype.md
+                - name: Defender 实时扫描方向
+                  href: resources/intune-deviceconfig-defenderrealtimescandirection.md
                 - name: Defender 扫描类型
                   href: resources/intune-deviceconfig-defenderscantype.md
                 - name: Defender 安全中心 IT 联系人显示类型
@@ -4230,20 +4230,10 @@
                       href: api/intune-deviceconfig-iosikev2vpnconfiguration-update.md
                 - name: Kerberos 单一登录扩展
                   href: resources/intune-deviceconfig-kerberossinglesignonextension.md
-                - name: 关键字布尔值对
-                  href: resources/intune-deviceconfig-keybooleanvaluepair.md
-                - name: 键整数值对
-                  href: resources/intune-deviceconfig-keyintegervaluepair.md
-                - name: 关键实数值对
-                  href: resources/intune-deviceconfig-keyrealvaluepair.md
                 - name: 密钥大小
                   href: resources/intune-deviceconfig-keysize.md
                 - name: 密钥存储提供程序选项
                   href: resources/intune-deviceconfig-keystorageprovideroption.md
-                - name: 键字符串值对
-                  href: resources/intune-deviceconfig-keystringvaluepair.md
-                - name: 键类型值对
-                  href: resources/intune-deviceconfig-keytypedvaluepair.md
                 - name: 密钥使用情况
                   href: resources/intune-deviceconfig-keyusages.md
                 - name: 密钥值
@@ -4274,7 +4264,7 @@
                 - name: macOS 符合性策略
                   href: resources/intune-deviceconfig-macoscompliancepolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -4300,7 +4290,7 @@
                 - name: macOS 自定义配置
                   href: resources/intune-deviceconfig-macoscustomconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -4624,6 +4614,8 @@
                   href: resources/intune-deviceconfig-ratingunitedstatesmoviestype.md
                 - name: 分级美国电视类型
                   href: resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md
+                - name: 重定向单一登录扩展
+                  href: resources/intune-deviceconfig-redirectsinglesignonextension.md
                 - name: 所需密码类型
                   href: resources/intune-deviceconfig-requiredpasswordtype.md
                 - name: 受限的应用状态
@@ -4641,8 +4633,12 @@
                       href: api/intune-deviceconfig-restrictedappsviolation-delete.md
                     - name: 更新
                       href: api/intune-deviceconfig-restrictedappsviolation-update.md
+                - name: 停用计划的托管设备
+                  href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
                 - name: 安全搜索筛选器类型
                   href: resources/intune-deviceconfig-safesearchfiltertype.md
+                - name: 计划的停用状态
+                  href: resources/intune-deviceconfig-scheduledretirestate.md
                 - name: 安全评估帐户类型
                   href: resources/intune-deviceconfig-secureassessmentaccounttype.md
                 - name: 使用 d m 的安全引导一种类型
@@ -5956,6 +5952,8 @@
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
                 - name: 设备管理设置依赖性
                   href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+                - name: 设备管理设置文件约束
+                  href: resources/intune-deviceintent-devicemanagementsettingfileconstraint.md
                 - name: 设备管理设置实例
                   href: resources/intune-deviceintent-devicemanagementsettinginstance.md
                   items:
@@ -5965,6 +5963,8 @@
                       href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
                 - name: 设备管理设置 integer 约束
                   href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+                - name: 设备管理设置配置文件约束
+                  href: resources/intune-deviceintent-devicemanagementsettingprofileconstraint.md
                 - name: 设备管理设置 regex 约束
                   href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
                 - name: 设备管理设置字符串长度约束
@@ -6043,6 +6043,19 @@
                   href: resources/intune-devices-deviceprotectionoverview.md
                 - name: 设备注册状态
                   href: resources/intune-devices-deviceregistrationstate.md
+                - name: 设备命令行管理程序脚本
+                  href: resources/intune-devices-deviceshellscript.md
+                  items:
+                    - name: 列表
+                      href: api/intune-devices-deviceshellscript-list.md
+                    - name: 获取
+                      href: api/intune-devices-deviceshellscript-get.md
+                    - name: 创建
+                      href: api/intune-devices-deviceshellscript-create.md
+                    - name: 删除
+                      href: api/intune-devices-deviceshellscript-delete.md
+                    - name: 更新
+                      href: api/intune-devices-deviceshellscript-update.md
                 - name: 磁盘类型
                   href: resources/intune-devices-disktype.md
                 - name: 嵌入式 SIM 卡激活代码
@@ -6202,6 +6215,8 @@
                       href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
                     - name: triggerConfigurationManagerAction 操作
                       href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
+                - name: 托管设备体系结构
+                  href: resources/intune-devices-manageddevicearchitecture.md
                 - name: 托管设备清理设置
                   href: resources/intune-devices-manageddevicecleanupsettings.md
                 - name: 托管设备型号和制造商
@@ -6217,8 +6232,6 @@
                   href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
                 - name: 托管设备远程操作
                   href: resources/intune-devices-manageddeviceremoteaction.md
-                - name: 管理代理类型
-                  href: resources/intune-devices-managementagenttype.md
                 - name: 管理条件
                   href: resources/intune-fencing-managementcondition.md
                   items:
@@ -6612,7 +6625,7 @@
                 - name: Windows 管理应用运行状况状态
                   href: resources/intune-devices-windowsmanagementapphealthstate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-devices-windowsmanagementapphealthstate-list.md
                     - name: 获取
                       href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -6635,7 +6648,7 @@
                 - name: Android 管理的应用注册
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-androidmanagedappregistration-list.md
                     - name: 获取
                       href: api/intune-mam-androidmanagedappregistration-get.md
@@ -6714,6 +6727,8 @@
                       href: api/intune-mam-managedappconfiguration-get.md
                 - name: 受管理应用的数据加密类型
                   href: resources/intune-mam-managedappdataencryptiontype.md
+                - name: 托管应用数据摄取位置
+                  href: resources/intune-mam-managedappdataingestionlocation.md
                 - name: 受管理应用的数据存储位置
                   href: resources/intune-mam-managedappdatastoragelocation.md
                 - name: 受管理应用的数据传输级别
@@ -6842,7 +6857,7 @@
                 - name: Windows 信息保护应用学习摘要
                   href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                     - name: 获取
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -6855,7 +6870,7 @@
                 - name: Windows 信息保护应用锁定程序文件
                   href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                     - name: 获取
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -7193,6 +7208,13 @@
                       href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                     - name: 更新
                       href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+                - name: Rbac 应用程序多个
+                  href: resources/intune-rbac-rbacapplicationmultiple.md
+                  items:
+                    - name: 获取
+                      href: api/intune-rbac-rbacapplicationmultiple-get.md
+                    - name: 更新
+                      href: api/intune-rbac-rbacapplicationmultiple-update.md
                 - name: 资源操作
                   href: resources/intune-rbac-resourceaction.md
                 - name: 资源操作
@@ -7236,6 +7258,13 @@
                       href: api/intune-rbac-roledefinition-delete.md
                     - name: 更新
                       href: api/intune-rbac-roledefinition-update.md
+                - name: 角色管理
+                  href: resources/intune-rbac-rolemanagement.md
+                  items:
+                    - name: 获取
+                      href: api/intune-rbac-rolemanagement-get.md
+                    - name: 更新
+                      href: api/intune-rbac-rolemanagement-update.md
                 - name: 角色权限
                   href: resources/intune-rbac-rolepermission.md
                 - name: 角色范围标记
@@ -7294,6 +7323,8 @@
                       href: api/intune-shared-androidmanagedappprotection-update.md
                     - name: hasPayloadLinks 操作
                       href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
+                - name: BitLocker 恢复密码旋转类型
+                  href: resources/intune-shared-bitlockerrecoverypasswordrotationtype.md
                 - name: 公司门户操作
                   href: resources/intune-shared-companyportalaction.md
                 - name: 公司门户阻止的操作
@@ -7472,12 +7503,24 @@
                   href: resources/intune-shared-ipv4range.md
                 - name: IPv6 范围
                   href: resources/intune-shared-ipv6range.md
+                - name: 关键字布尔值对
+                  href: resources/intune-shared-keybooleanvaluepair.md
+                - name: 键整数值对
+                  href: resources/intune-shared-keyintegervaluepair.md
+                - name: 关键实数值对
+                  href: resources/intune-shared-keyrealvaluepair.md
+                - name: 键字符串值对
+                  href: resources/intune-shared-keystringvaluepair.md
+                - name: 键类型值对
+                  href: resources/intune-shared-keytypedvaluepair.md
                 - name: 键/值对
                   href: resources/intune-shared-keyvaluepair.md
                 - name: macOS VPP 应用分配设置
                   href: resources/intune-shared-macosvppappassignmentsettings.md
                 - name: 托管的设备所有者类型
                   href: resources/intune-shared-manageddeviceownertype.md
+                - name: 管理代理类型
+                  href: resources/intune-shared-managementagenttype.md
                 - name: MDM Windows 信息保护策略
                   href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                   items:
@@ -8572,7 +8615,7 @@
                   items:
                     - name: 列表
                       href: api/accesspackage-list.md
-                    - name: Create
+                    - name: 创建
                       href: api/accesspackage-post.md
                     - name: 获取
                       href: api/accesspackage-get.md
@@ -10067,7 +10110,7 @@
                 - name: Web 帐户
                   href: resources/webaccount.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-webaccounts.md
                     - name: 创建
                       href: api/profile-post-webaccounts.md
@@ -10080,7 +10123,7 @@
                 - name: 网站
                   href: resources/personwebsite.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-websites.md
                     - name: 创建
                       href: api/profile-post-websites.md
@@ -10519,13 +10562,13 @@
               items:
                 - name: 列表
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-tasks.md
                 - name: 获取
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -10538,7 +10581,7 @@
               items:
                 - name: 列表
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-taskfolders.md
                 - name: 获取
                   href: api/outlooktaskfolder-get.md

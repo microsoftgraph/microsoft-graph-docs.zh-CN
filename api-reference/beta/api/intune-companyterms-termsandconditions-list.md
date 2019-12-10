@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed9334354354d29c050087d617a7e9cebea560aa
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 20bc59caecb2d795071195682002fcc2176575bc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534909"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39929931"
 ---
 # <a name="list-termsandconditionses"></a>列出 termsAndConditionses
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37534909"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,7 +86,6 @@ Content-Length: 656
   ]
 }
 ```
-
 
 
 

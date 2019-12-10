@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e80069c3c2b8a7068c16f2c919c9e1e367e5a161
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7ebc0c6324e552ddecea9e2a9b8ed2f89163729c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535567"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39923586"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37535567"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -130,6 +130,8 @@ Content-Length: 799
   ]
 }
 ```
+
+
 
 
 

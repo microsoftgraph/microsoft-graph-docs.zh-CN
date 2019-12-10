@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b85c98d5df93c9f7caee38eac17cb15e75d75fbf
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c11562dd40022eb1a3f797dfc72655e8b3c3990b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535469"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39921989"
 ---
 # <a name="list-androidmanagedstorewebapps"></a>列出 androidManagedStoreWebApps
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性和关系。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37535469"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -105,7 +105,6 @@ Content-Length: 1324
   ]
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a9726794d88dfb742077b9a5b94fc226265b1b4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b56b4737151c8cfa07ab9dc9975ea9d00a3f6f39
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170691"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930385"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>创建 windowsOfficeClientSecurityConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37170691"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,8 +52,8 @@ POST /officeConfiguration/clientConfigurations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|流|首选项设置 JSON string 二进制格式，则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|流|策略设置 JSON string 二进制格式，用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式，则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|策略设置 JSON string 二进制格式，用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |说明|String|管理员提供的 office 客户端配置策略的说明。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|管理员提供的 office 客户端配置策略的名称。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|策略的组分配列表。。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
@@ -146,6 +146,7 @@ Content-Length: 1077
   ]
 }
 ```
+
 
 
 

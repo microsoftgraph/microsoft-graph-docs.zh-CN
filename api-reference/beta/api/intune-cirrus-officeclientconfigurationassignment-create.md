@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3833115c1b652794e8d6b0557824389ebb974dd2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d59815ac16f05e62f31158ad2e34051d859a9d90
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170854"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930749"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>创建 officeClientConfigurationAssignment
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 将目标组添加到现有策略中。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37170854"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|OfficeConfigurationAssignment 的 Id。|
+|id|字符串|OfficeConfigurationAssignment 的 Id。|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|由管理员定义的目标分配。|
 
 
@@ -91,6 +91,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b953e04a58ae0d7aad1890c0f873a32b5de283bf
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 774f44ccae5355ac9e1c997293989f3a9ff92475
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170705"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930378"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>获取 windowsOfficeClientSecurityConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 获取特定的安全策略[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37170705"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
+|Application|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -101,6 +101,7 @@ Content-Length: 1152
   }
 }
 ```
+
 
 
 
