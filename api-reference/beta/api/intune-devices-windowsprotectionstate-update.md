@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74824bbc5c066d0e3df398786e5163642b64707a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4c64d51e88bc4e4bcff7baf5214f61e094b7ff53
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187981"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944200"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的属性。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37187981"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
+|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
 |malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态（如清理或挂起完全扫描或等待重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
 |realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
@@ -62,13 +62,13 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |signatureUpdateOverdue|Boolean|签名是否已过期？|
 |rebootRequired|Boolean|是否需要重新启动？|
 |fullScanRequired|Boolean|需要完全扫描吗？|
-|engineVersion|String|当前 endpoint protection 引擎的版本|
-|signatureVersion|String|当前恶意软件定义版本|
-|antiMalwareVersion|String|当前反恶意软件版本|
+|engineVersion|字符串|当前 endpoint protection 引擎的版本|
+|signatureVersion|字符串|当前恶意软件定义版本|
+|antiMalwareVersion|字符串|当前反恶意软件版本|
 |lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期时间|
 |lastFullScanDateTime|DateTimeOffset|上次快速扫描日期时间|
-|lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
-|lastFullScanSignatureVersion|String|上次完全扫描签名版本|
+|lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
+|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
 
 
@@ -136,6 +136,7 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

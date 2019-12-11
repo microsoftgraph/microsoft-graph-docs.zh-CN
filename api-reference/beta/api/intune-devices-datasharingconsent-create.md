@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 873f0d5c91a571e71fc6f8d754742ecb51f9d049
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: ec6408f8f87e186112344db5ad5db41ddb85cc87
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180683"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945226"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37180683"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,13 +51,13 @@ POST /deviceManagement/dataSharingConsents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|数据共享同意 Id|
-|serviceDisplayName|String|服务工作流的显示名称|
-|termsUrl|String|数据共享同意的 TermsUrl|
+|id|字符串|数据共享同意 Id|
+|serviceDisplayName|字符串|服务工作流的显示名称|
+|termsUrl|字符串|数据共享同意的 TermsUrl|
 |granted|Boolean|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|String|授予此帐户同意的用户的 Upn|
-|grantedByUserId|String|授予此帐户同意的用户的用户 Id|
+|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
+|grantedByUserId|字符串|授予此帐户同意的用户的用户 Id|
 
 
 
@@ -102,6 +102,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0137f38e73c9038d012e9123b3c6a8d160c65e0d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ae6e8b7c7fe90656d69e66e62d6fe09e366b5f7a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37531495"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945121"
 ---
 # <a name="update-devicehealthscript"></a>更新 deviceHealthScript
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37531495"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
 
 
 
@@ -122,7 +122,6 @@ Content-Length: 655
   ]
 }
 ```
-
 
 
 

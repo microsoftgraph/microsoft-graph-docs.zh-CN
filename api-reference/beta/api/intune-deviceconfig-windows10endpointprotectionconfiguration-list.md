@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c075cf95945c635486fb3be0a13a2d97294e1bf9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4ac0fa1308c19b3ff394d8f33398a3430175b4b4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533212"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947496"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>列出 windows10EndpointProtectionConfigurations
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性和关系。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533212"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31513
+Content-Length: 33552
 
 {
   "value": [
@@ -748,12 +748,55 @@ Content-Length: 31513
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
       },
-      "bitLockerRecoveryPasswordRotation": "disabled"
+      "bitLockerRecoveryPasswordRotation": "disabled",
+      "defenderDisableScanArchiveFiles": true,
+      "defenderDisableBehaviorMonitoring": true,
+      "defenderDisableCloudProtection": true,
+      "defenderEnableScanIncomingMail": true,
+      "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderDisableScanRemovableDrivesDuringFullScan": true,
+      "defenderDisableScanDownloads": true,
+      "defenderDisableIntrusionPreventionSystem": true,
+      "defenderDisableOnAccessProtection": true,
+      "defenderDisableRealTimeMonitoring": true,
+      "defenderDisableScanNetworkFiles": true,
+      "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+      "defenderBlockEndUserAccess": true,
+      "defenderScanMaxCpuPercentage": 12,
+      "defenderCheckForSignaturesBeforeRunningScan": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderCloudExtendedTimeoutInSeconds": 5,
+      "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderDisableCatchupFullScan": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderEnableLowCpuPriority": true,
+      "defenderFileExtensionsToExclude": [
+        "Defender File Extensions To Exclude value"
+      ],
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
+      "defenderProcessesToExclude": [
+        "Defender Processes To Exclude value"
+      ],
+      "defenderPotentiallyUnwantedAppAction": "enable",
+      "defenderScanDirection": "monitorIncomingFilesOnly",
+      "defenderScanType": "disabled",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScheduledScanDay": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderSubmitSamplesConsentType": "alwaysPrompt",
+      "defenderDetectedMalwareActions": {
+        "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+        "lowSeverity": "clean",
+        "moderateSeverity": "clean",
+        "highSeverity": "clean",
+        "severeSeverity": "clean"
+      }
     }
   ]
 }
 ```
-
 
 
 

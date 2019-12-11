@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f6634c979df85c2eb5e66680c86402a6bb3f504
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8690f583bff395f54f31b56e3480e29e1815e462
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188890"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945289"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188890"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,13 +51,13 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|证书的唯一标识符|
-|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
+|id|字符串|证书的唯一标识符|
+|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|String|证书上载状态。|
-|certificateUploadFailureReason|String|证书上传失败的原因。|
+|certificateUploadStatus|字符串|证书上载状态。|
+|certificateUploadFailureReason|字符串|证书上传失败的原因。|
 |证书|String|尚未记录|
 
 
@@ -104,6 +104,7 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
+
 
 
 

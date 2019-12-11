@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5d3132006f13fff0a055fd6ec0bb783a00b57c3
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 533aa951d58e1325ab0395d01c0ec5f5d9955b90
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533184"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947447"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533184"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -81,8 +81,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |authenticationWebSignIn|[启用](../resources/intune-shared-enablement.md)|指示是否将启用 Web 凭据提供程序。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |authenticationPreferredAzureADTenantDomainName|字符串|指定 Azure AD 租户中可用域之间的首选域。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是否允许或禁止联邦信息处理标准（FIPS）策略。|
-|displayAppListWithGdiDPIScalingTurnedOn|String 集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
-|displayAppListWithGdiDPIScalingTurnedOff|String 集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|启用了 GDI DPI 缩放的旧版应用程序的列表。|
 |enterpriseCloudPrintDiscoveryEndPoint|字符串|发现云打印机的终结点。|
 |enterpriseCloudPrintOAuthAuthority|字符串|获取 OAuth 令牌的身份验证终结点。|
 |enterpriseCloudPrintOAuthClientIdentifier|字符串|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
@@ -93,7 +93,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |messagingBlockSync|Boolean|指示是否在所有位置阻止短信备份和还原和消息传递。|
 |messagingBlockMMS|Boolean|指示是否阻止设备上的 MMS 发送/接收功能。|
 |messagingBlockRichCommunicationServices|Boolean|指示是否阻止设备上的 RCS 发送/接收功能。|
-|printerNames|String 集合|根据打印机的名称（网络主机名称）自动预配打印机。|
+|printerNames|String collection|根据打印机的名称（网络主机名称）自动预配打印机。|
 |printerDefaultName|字符串|已安装的打印机的名称（网络主机名称）。|
 |printerBlockAddition|Boolean|阻止用户安装来自打印机设置的其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
@@ -146,7 +146,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeHomeButtonConfigurationEnabled|Boolean|启用 "主页" 按钮配置。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
 |edgeBlockSideloadingExtensions|Boolean|指示用户是否可以旁加载扩展。|
-|edgeRequiredExtensionPackageFamilyNames|String 集合|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
+|edgeRequiredExtensionPackageFamilyNames|String collection|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
 |edgeBlockPrinting|Boolean|将 Edge 配置为允许或阻止打印。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|获取或设置一个值，该值指定是否将收藏夹栏设置为始终在任何页面上都可见或隐藏。 可取值为：`notConfigured`、`hide`、`show`。|
 |edgeBlockSavingHistory|Boolean|将 Edge 配置为允许保存浏览历史记录或从不保存浏览历史记录。|
@@ -166,8 +166,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
-|defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
-|defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
+|defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置要对可能有害的应用程序（PUA）执行的 Defender 操作，其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时，Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`deviceDefault`、`block`、`audit`。|
@@ -340,7 +340,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常仅供系统管理员使用的安装选项。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|此策略设置指示 Windows Installer 在系统上安装任何程序时使用提升的权限。|
 |dataProtectionBlockDirectMemoryAccess|Boolean|通过此策略设置，您可以阻止所有热插拔 PCI 下游端口的直接内存访问（DMA），直到用户登录 Windows。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String 集合|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
+|uninstallBuiltInApps|Boolean|指示是否卸载内置 Windows 应用的固定列表。|
 
 
 
@@ -354,7 +355,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 14855
+Content-length: 14888
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -705,7 +706,8 @@ Content-length: 14855
   "dataProtectionBlockDirectMemoryAccess": true,
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
-  ]
+  ],
+  "uninstallBuiltInApps": true
 }
 ```
 
@@ -714,7 +716,7 @@ Content-length: 14855
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 15027
+Content-Length: 15060
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -1068,10 +1070,10 @@ Content-Length: 15027
   "dataProtectionBlockDirectMemoryAccess": true,
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
-  ]
+  ],
+  "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

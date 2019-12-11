@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21464085633ace88d3321ffd5c80e8e30bde9ce6
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 5330720aac87f6a538b01b756ad0ce927e610a36
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533226"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947517"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533226"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -206,7 +206,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|一个值，该值指示是否应从电子邮件（web 邮件/邮件客户端）中删除可执行内容（exe、dll、ps、js、vbs 等）的执行。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|指示使用针对 ransomeware 的高级防护的值。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值，该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification`。|
-|defenderGuardedFoldersAllowedAppPaths|String 集合|允许访问受保护文件夹的 exe 路径列表|
+|defenderGuardedFoldersAllowedAppPaths|String collection|允许访问受保护文件夹的 exe 路径列表|
 |defenderAdditionalGuardedFolders|String 集合|要添加到受保护文件夹列表的文件夹路径列表|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值，该值指示 NetworkProtection 的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderExploitProtectionXml|Binary|包含有关 Exploit Protection 详细信息的 xml 内容。|
@@ -240,7 +240,39 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker 系统驱动器策略。|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker 固定驱动器策略。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker 可移动驱动器策略。|
-|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|此设置在操作系统驱动器恢复后启动客户端驱动的恢复密码轮替（使用 bootmgr 或 WinRE）。 可取值为：`notConfigured`、`disabled`、`enabledForAzureAd`、`enabledForAzureAdAndHybrid`。|
+|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-shared-bitlockerrecoverypasswordrotationtype.md)|此设置在操作系统驱动器恢复后启动客户端驱动的恢复密码轮替（使用 bootmgr 或 WinRE）。 可取值为：`notConfigured`、`disabled`、`enabledForAzureAd`、`enabledForAzureAdAndHybrid`。|
+|defenderDisableScanArchiveFiles|Boolean|允许或禁止扫描存档。|
+|defenderDisableBehaviorMonitoring|Boolean|允许或禁止 Windows Defender 行为监控功能。|
+|defenderDisableCloudProtection|Boolean|为最大限度地保护你的电脑，Windows Defender 将向 Microsoft 发送有关发现的任何问题的信息。 Microsoft 将分析该信息，详细了解影响您和其他客户的问题，并提供改进的解决方案。|
+|defenderEnableScanIncomingMail|Boolean|允许或禁止扫描电子邮件。|
+|defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|允许或禁止对映射的网络驱动器进行完全扫描。|
+|defenderDisableScanRemovableDrivesDuringFullScan|Boolean|允许或禁止对可移动驱动器进行完全扫描。 在快速扫描过程中，可能仍会扫描可移动驱动器。|
+|defenderDisableScanDownloads|Boolean|允许或禁止 Windows Defender IOAVP 保护功能。|
+|defenderDisableIntrusionPreventionSystem|Boolean|允许或禁止 Windows Defender 入侵防护功能。|
+|defenderDisableOnAccessProtection|Boolean|允许或禁止 Windows Defender 访问保护功能。|
+|defenderDisableRealTimeMonitoring|Boolean|允许或禁止 Windows Defender 实时监视功能。|
+|defenderDisableScanNetworkFiles|Boolean|允许或禁止扫描网络文件。|
+|defenderDisableScanScriptsLoadedInInternetExplorer|Boolean|允许或禁止 Windows Defender 脚本扫描功能。|
+|defenderBlockEndUserAccess|Boolean|允许或禁止用户访问 Windows Defender UI。 如果不允许，将同时禁止显示所有 Windows Defender 通知。|
+|defenderScanMaxCpuPercentage|Int32|表示 Windows Defender 扫描的平均 CPU 负载因子（以百分比为单位）。 默认值为 50。 有效值为 0 至 100|
+|defenderCheckForSignaturesBeforeRunningScan|Boolean|通过此策略设置，您可以管理在运行扫描前是否检查新病毒和间谍软件定义。|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|在 Windows 10 版本1709中添加。 此策略设置确定 Windows Defender 防病毒在阻止和扫描可疑文件时的积极程度。 值类型为 integer。 此功能需要启用 "加入 Microsoft MAPS" 设置，才能正常运行。 可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
+|defenderCloudExtendedTimeoutInSeconds|Int32|在 Windows 10 版本1709中添加。 此功能允许 Windows Defender 防病毒阻止可疑文件长达60秒，并在云中对其进行扫描以确保其安全。 值类型为 integer，范围为 0-50。 此功能依赖于其他三个映射设置必须全部启用-"配置 ' 在首次看到时阻止 '" 功能; "加入 Microsoft MAPS ";"需要进一步分析时发送文件示例"。 有效值为 0 至 50|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|隔离项目将存储在系统上的时间段（以天为单位）。 有效值为 0 至 90|
+|defenderDisableCatchupFullScan|Boolean|通过此策略设置，您可以配置计划完全扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
+|defenderDisableCatchupQuickScan|Boolean|通过此策略设置，您可以配置计划快速扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
+|defenderEnableLowCpuPriority|Boolean|通过此策略设置，您可以启用或禁用计划扫描的 CPU 低优先级。|
+|defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
+|defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
+|defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|已添加到 Windows 10 版本 1607 中。 指定对可能有害的应用程序（PUAs）的检测级别。 Windows Defender 会在下载可能不需要的软件或尝试在你的计算机上安装自己时向你发出警告。 可取值为：`userDefined`、`enable`、`auditMode`。|
+|defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|控制应监视的文件集。 可取值为：`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|选择是否执行快速扫描或完全扫描。 可取值为：`userDefined`、`disabled`、`quick`、`full`。|
+|defenderScheduledQuickScanTime|TimeOfDay|选择 Windows Defender 快速扫描应在一天的哪一时间运行。 例如，值为 0 = 12：00AM，值为 60 = 1：00AM，值 120 = 2：00，等等，最高为 1380 = 11：00PM 的值。 默认值为120|
+|defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|选择 Windows Defender 扫描应运行的日期。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
+|defenderScheduledScanTime|TimeOfDay|选择 Windows Defender 扫描应在一天的哪一时间运行。|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查 Windows Defender 中的用户同意级别以发送数据。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|允许管理员指定任何有效的威胁严重级别和相应的默认操作 ID 进行。|
 
 
 
@@ -254,7 +286,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28588
+Content-length: 30451
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -933,7 +965,51 @@ Content-length: 28588
     "requireEncryptionForWriteAccess": true,
     "blockCrossOrganizationWriteAccess": true
   },
-  "bitLockerRecoveryPasswordRotation": "disabled"
+  "bitLockerRecoveryPasswordRotation": "disabled",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 12,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "Defender File Extensions To Exclude value"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
+  "defenderProcessesToExclude": [
+    "Defender Processes To Exclude value"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "enable",
+  "defenderScanDirection": "monitorIncomingFilesOnly",
+  "defenderScanType": "disabled",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScheduledScanDay": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "clean",
+    "moderateSeverity": "clean",
+    "highSeverity": "clean",
+    "severeSeverity": "clean"
+  }
 }
 ```
 
@@ -942,7 +1018,7 @@ Content-length: 28588
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 28760
+Content-Length: 30623
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1624,10 +1700,53 @@ Content-Length: 28760
     "requireEncryptionForWriteAccess": true,
     "blockCrossOrganizationWriteAccess": true
   },
-  "bitLockerRecoveryPasswordRotation": "disabled"
+  "bitLockerRecoveryPasswordRotation": "disabled",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 12,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "Defender File Extensions To Exclude value"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
+  "defenderProcessesToExclude": [
+    "Defender Processes To Exclude value"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "enable",
+  "defenderScanDirection": "monitorIncomingFilesOnly",
+  "defenderScanType": "disabled",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScheduledScanDay": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "clean",
+    "moderateSeverity": "clean",
+    "highSeverity": "clean",
+    "severeSeverity": "clean"
+  }
 }
 ```
-
 
 
 
