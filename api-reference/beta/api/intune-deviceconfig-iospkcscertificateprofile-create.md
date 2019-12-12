@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 139226b5d02ed114778d59131b13172c1c5ea78d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bb43ccc1c38f2bfdff616d15a70ee3717466cffc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533775"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948786"
 ---
 # <a name="create-iospkcscertificateprofile"></a>创建 iosPkcsCertificateProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533775"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -72,6 +72,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |certificationAuthorityName|字符串|PKCS 证书颁发机构名称。|
 |certificateTemplateName|字符串|PKCS 证书模板名称。|
 |subjectAlternativeNameFormatString|字符串|定义 AAD 属性的自定义字符串。|
+|subjectNameFormatString|字符串|要与 SubjectNameFormat = Custom 一起使用的自定义格式。 示例： CN = {{EmailAddress}}，E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation，L = Redmond，ST = WA，C = US|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)集合|自定义主题备用名称设置。 该集合最多可包含 500 个元素。|
 
 
 
@@ -85,7 +88,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1534
+Content-length: 1824
 
 {
   "@odata.type": "#microsoft.graph.iosPkcsCertificateProfile",
@@ -125,7 +128,16 @@ Content-length: 1534
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "subjectNameFormatString": "Subject Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
 
@@ -134,7 +146,7 @@ Content-length: 1534
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1706
+Content-Length: 1996
 
 {
   "@odata.type": "#microsoft.graph.iosPkcsCertificateProfile",
@@ -177,10 +189,18 @@ Content-Length: 1706
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "subjectNameFormatString": "Subject Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
-
 
 
 

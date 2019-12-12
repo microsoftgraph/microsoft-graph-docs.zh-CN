@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15253174e2f18bfce583b7aa7df1fd168206d917
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 0fd6568aa8d2b0869c9b901b89f617231277d875
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084291"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948492"
 ---
 # <a name="create-macoscustomappconfiguration"></a>创建 macOSCustomAppConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "38084291"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 下表显示创建 macOSCustomAppConfiguration 时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |bundleId|String|目标的捆绑包 id。|
-|fileName|String|配置文件名（* plist | *.xml)。|
+|fileName|字符串|配置文件名（* plist | *.xml)。|
 |configurationXml|Binary|配置 xml。 （UTF8 编码的字节数组）|
 
 
@@ -162,7 +162,6 @@ Content-Length: 1321
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

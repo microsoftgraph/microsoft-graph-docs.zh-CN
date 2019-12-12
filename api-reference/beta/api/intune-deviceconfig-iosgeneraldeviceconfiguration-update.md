@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efa75691212d0f94a30d86e3dd1ba731d45c1aa9
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 2e4d7fbba1da916607a3509f80786d983d983cd8
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084340"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948863"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>更新 iosGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "38084340"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 下表显示创建 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -152,8 +152,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockVolumeButtons。|
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
-|kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
-|kioskModeBuiltInAppId|String|用于展台模式的内置应用程序的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
+|kioskModeAppStoreUrl|字符串|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
+|kioskModeBuiltInAppId|字符串|用于展台模式的内置应用程序的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
 |kioskModeRequireAssistiveTouch|Boolean|指示在展台模式下是否要求辅助触摸。|
 |kioskModeRequireColorInversion|Boolean|指示在展台模式下是否要求颜色反转。|
 |kioskModeRequireMonoAudio|Boolean|指示在展台模式下是否要求单声道音频。|
@@ -841,7 +841,6 @@ Content-Length: 10652
   "iTunesBlocked": true
 }
 ```
-
 
 
 
