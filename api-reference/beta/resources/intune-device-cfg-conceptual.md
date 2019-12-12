@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078355"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955727"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -116,7 +116,6 @@ ms.locfileid: "38078355"
 - [BitLocker 固定驱动器策略](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [BitLocker 恢复信息类型](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [BitLocker 恢复选项](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [BitLocker 恢复密码旋转类型](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [BitLocker 可移动驱动器策略](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
@@ -296,13 +295,8 @@ ms.locfileid: "38078355"
 - [iOS Wi-Fi 配置](intune-deviceconfig-ioswificonfiguration.md)
 - [iOSik ev2 VPN 配置](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Kerberos 单一登录扩展](intune-deviceconfig-kerberossinglesignonextension.md)
-- [关键字布尔值对](intune-deviceconfig-keybooleanvaluepair.md)
-- [键整数值对](intune-deviceconfig-keyintegervaluepair.md)
-- [关键实数值对](intune-deviceconfig-keyrealvaluepair.md)
 - [密钥大小](intune-deviceconfig-keysize.md)
 - [密钥存储提供程序选项](intune-deviceconfig-keystorageprovideroption.md)
-- [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
-- [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥使用情况](intune-deviceconfig-keyusages.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
