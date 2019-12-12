@@ -1,33 +1,33 @@
 ---
-title: rebootNow 操作
-description: 重新启动设备
+title: 删除 deviceShellScript
+description: 删除 deviceShellScript。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77ad14160d3c896c1b195b304ab237a1c4c4829a
+ms.openlocfilehash: a904b9742b5384b90ebb9dddd424b17922a870ff
 ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944755"
+ms.locfileid: "39944867"
 ---
-# <a name="rebootnow-action"></a>rebootNow 操作
+# <a name="delete-deviceshellscript"></a>删除 deviceShellScript
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-重新启动设备
+删除[deviceShellScript](../resources/intune-devices-deviceshellscript.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -35,11 +35,7 @@ ms.locfileid: "39944755"
 }
 -->
 ``` http
-POST /deviceManagement/managedDevices/{managedDeviceId}/rebootNow
-POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/rebootNow
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/rebootNow
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/rebootNow
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/rebootNow
+DELETE /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,14 +48,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/rebootNow
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ```
 
 ### <a name="response"></a>响应

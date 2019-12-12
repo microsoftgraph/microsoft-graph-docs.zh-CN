@@ -1,24 +1,24 @@
 ---
-title: 获取 userExperienceAnalyticsBaseline
-description: 读取 userExperienceAnalyticsBaseline 对象的属性和关系。
+title: 获取 deviceShellScript
+description: 读取 deviceShellScript 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ef301413d4e233b2898dbf8cc6666ad39be5a92
+ms.openlocfilehash: b4ea088a38627ec95dd779cc264dd3538d4d1e97
 ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944545"
+ms.locfileid: "39944853"
 ---
-# <a name="get-userexperienceanalyticsbaseline"></a>获取 userExperienceAnalyticsBaseline
+# <a name="get-deviceshellscript"></a>获取 deviceShellScript
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象的属性和关系。
+读取[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "39944545"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -51,14 +51,14 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ```
 
 ### <a name="response"></a>响应
@@ -66,16 +66,22 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBas
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 297
+Content-Length: 520
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
-    "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
+    "@odata.type": "#microsoft.graph.deviceShellScript",
+    "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
     "displayName": "Display Name value",
-    "overallScore": 12,
-    "isBuiltIn": true,
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
+    "description": "Description value",
+    "scriptContent": "c2NyaXB0Q29udGVudA==",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "runAsAccount": "user",
+    "fileName": "File Name value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

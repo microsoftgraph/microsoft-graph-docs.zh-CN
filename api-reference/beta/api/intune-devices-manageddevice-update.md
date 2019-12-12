@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ca3ddcaa1df8bd7aff9c9933dcad14ec8f67c81
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: ba4ae0e36abe36b92cbc177ab1b7c1eabf46c6e0
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087494"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944657"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -27,7 +27,7 @@ ms.locfileid: "38087494"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |:---|:---|:---|
 |id|字符串|设备的唯一标识符。 此属性是只读的。|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
-|deviceName|String|设备的名称。 此属性是只读的。|
+|deviceName|字符串|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。|
 |所有者|[所有者](../resources/intune-shared-ownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -66,12 +66,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的机箱类型。 此属性是只读的。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
+|operatingSystem|字符串|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 此属性是只读的。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `palm` `unknown`、、、、、、、、、、、、、、、、、、、。 `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry`|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
-|jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
-|osVersion|String|设备的操作系统版本。 此属性是只读的。|
+|jailBroken|字符串|设备是否已越狱或取得 root 权限。 此属性是只读的。|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
+|osVersion|字符串|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
@@ -79,33 +79,33 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 此属性是只读的。 可取值为：`disabled`、`enabled`。|
-|activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
-|emailAddress|String|与设备关联的用户的电子邮件。 此属性是只读的。|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
-|azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
+|activationLockBypassCode|字符串|允许绕过设备上的激活锁的代码。 此属性是只读的。|
+|emailAddress|字符串|与设备关联的用户的电子邮件。 此属性是只读的。|
+|azureActiveDirectoryDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
+|azureADDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 此属性是只读的。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
-|deviceCategoryDisplayName|String|设备类别显示名称。 此属性是只读的。|
+|deviceCategoryDisplayName|字符串|设备类别显示名称。 此属性是只读的。|
 |isSupervised|Boolean|设备监督状态。 此属性是只读的。|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 此属性是只读的。|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 此属性是只读的。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 此属性是只读的。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
-|remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
+|remoteAssistanceSessionUrl|字符串|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。|
-|userPrincipalName|String|设备用户主体名称。 此属性是只读的。|
-|model|String|设备的模型。 此属性是只读的。|
-|manufacturer|String|设备的制造商。 此属性是只读的。|
-|imei|String|IMEI. 此属性是只读的。|
+|userPrincipalName|字符串|设备用户主体名称。 此属性是只读的。|
+|model|字符串|设备的模型。 此属性是只读的。|
+|manufacturer|字符串|设备的制造商。 此属性是只读的。|
+|imei|字符串|IMEI. 此属性是只读的。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的日期时间。 此属性是只读的。|
 |serialNumber|字符串|SerialNumber. 此属性是只读的。|
-|phoneNumber|String|设备的电话号码。 此属性是只读的。|
+|phoneNumber|字符串|设备的电话号码。 此属性是只读的。|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能。 此属性是只读的。|
-|wiFiMacAddress|String|Wi-fi MAC。 此属性是只读的。|
+|wiFiMacAddress|字符串|Wi-fi MAC。 此属性是只读的。|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。|
-|subscriberCarrier|String|订阅者运营商。 此属性是只读的。|
-|meid|String|MEID. 此属性是只读的。|
+|subscriberCarrier|字符串|订阅者运营商。 此属性是只读的。|
+|meid|字符串|MEID. 此属性是只读的。|
 |totalStorageSpaceInBytes|Int64|总存储量（以字节为单位）。 此属性是只读的。|
 |freeStorageSpaceInBytes|Int64|以字节为单位的可用存储空间。 此属性是只读的。|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
@@ -116,15 +116,17 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
 |requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
+|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
+|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
 |roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
-|notes|String|IT 管理员创建的设备上的注释|
+|notes|字符串|IT 管理员创建的设备上的注释|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager 客户端运行状况状态，仅对由 MDM/ConfigMgr 代理管理的设备有效|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager 客户端信息，仅对受 ConfigMgr 代理管理、duel 管理或三方管理的设备有效|
-|ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
+|ethernetMacAddress|字符串|以太网 MAC。 此属性是只读的。|
+|physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
+|processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 
 
 
@@ -138,7 +140,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7568
+Content-length: 7634
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -311,7 +313,9 @@ Content-length: 7568
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value"
   },
-  "ethernetMacAddress": "Ethernet Mac Address value"
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5,
+  "processorArchitecture": "x86"
 }
 ```
 
@@ -320,7 +324,7 @@ Content-length: 7568
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7617
+Content-Length: 7683
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -494,10 +498,11 @@ Content-Length: 7617
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value"
   },
-  "ethernetMacAddress": "Ethernet Mac Address value"
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5,
+  "processorArchitecture": "x86"
 }
 ```
-
 
 
 

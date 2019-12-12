@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b49e7bf01da35dd9d8280b87d1062ed0213b2e04
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: ce87e66064d5aaf5e3f27fb1292c71352767ac62
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087550"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945028"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "38087550"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -35,13 +35,14 @@ ms.locfileid: "38087550"
 }
 -->
 ``` http
+POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
@@ -64,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 Content-type: application/json
 Content-length: 172
 
@@ -91,7 +92,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

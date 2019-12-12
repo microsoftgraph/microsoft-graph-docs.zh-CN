@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 55f4b02e6169624fab1888e4bed11d5a4257421b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 9df6cdd137e2253ea677f6e3b17386bd1a27b74f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087501"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944874"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 
@@ -27,7 +27,7 @@ ms.locfileid: "38087501"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7980
+Content-Length: 8050
 
 {
   "value": {
@@ -245,11 +245,12 @@ Content-Length: 7980
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
       "clientIdentifier": "Client Identifier value"
     },
-    "ethernetMacAddress": "Ethernet Mac Address value"
+    "ethernetMacAddress": "Ethernet Mac Address value",
+    "physicalMemoryInBytes": 5,
+    "processorArchitecture": "x86"
   }
 }
 ```
-
 
 
 

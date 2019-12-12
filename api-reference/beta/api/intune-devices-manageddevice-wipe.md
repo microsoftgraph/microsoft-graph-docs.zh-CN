@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f2337e0fc023563e37af611f6a591f976b0b425
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 0a918466c49a5dbfdd8083d054dbc270a11fd78d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37528008"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944615"
 ---
 # <a name="wipe-action"></a>擦除操作
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 擦除设备
 
@@ -27,7 +27,7 @@ ms.locfileid: "37528008"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
+|Application|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,6 +58,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |keepEnrollmentData|Boolean|尚未记录|
 |keepUserData|Boolean|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
+|useProtectedWipe|Boolean|尚未记录|
 
 
 
@@ -72,12 +73,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 109
+Content-length: 138
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value",
+  "useProtectedWipe": true
 }
 ```
 
@@ -86,7 +88,6 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

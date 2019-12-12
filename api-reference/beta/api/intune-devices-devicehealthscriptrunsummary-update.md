@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47364fad3d582f576818d69dac8aed9714d5bcf9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 5a102b6624a2bedf70708ac4fedb03c523c34511
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37531061"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945037"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)对象的属性。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37531061"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -61,6 +61,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 |issueReoccurredDeviceCount|Int32|已成功执行修正脚本但未能解决检测到的问题的设备数量|
 |remediationScriptErrorDeviceCount|Int32|修正脚本执行时遇到错误且未完成的设备数量|
 |lastScriptRunDateTime|DateTimeOffset|在所有设备上的脚本的上次运行时间|
+|issueRemediatedCumulativeDeviceCount|Int32|最近30天内修正的设备数量|
 
 
 
@@ -74,7 +75,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 448
+Content-length: 494
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -86,7 +87,8 @@ Content-length: 448
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 448
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 497
+Content-Length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -108,10 +110,10 @@ Content-Length: 497
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d36442808380f408998b8dedaf5d89d45acb0982
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 07905b1aaae394c8b366949bc657cb15679ae7fb
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529198"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944468"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37529198"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -62,6 +62,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
 |isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
+|operatingSystemVersion|字符串|User experience analytics 设备启动记录的操作系统版本。|
 
 
 
@@ -75,7 +77,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 407
+Content-length: 498
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -88,7 +90,9 @@ Content-length: 407
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
   "totalLoginTimeInMs": 2,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "Operating System Version value"
 }
 ```
 
@@ -97,7 +101,7 @@ Content-length: 407
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 456
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -111,10 +115,11 @@ Content-Length: 456
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
   "totalLoginTimeInMs": 2,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 
