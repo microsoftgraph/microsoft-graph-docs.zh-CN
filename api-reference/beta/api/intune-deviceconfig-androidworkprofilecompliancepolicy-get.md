@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1ff51799d43d7813360e910914f94f42f4e235e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: b8fa915a116acf129f80324dca673e121227fa8d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084732"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954634"
 ---
-# <a name="get-androidworkprofilecompliancepolicy"></a><span data-ttu-id="b9eb4-103">获取 androidWorkProfileCompliancePolicy</span><span class="sxs-lookup"><span data-stu-id="b9eb4-103">Get androidWorkProfileCompliancePolicy</span></span>
+# <a name="get-androidworkprofilecompliancepolicy"></a><span data-ttu-id="72422-103">获取 androidWorkProfileCompliancePolicy</span><span class="sxs-lookup"><span data-stu-id="72422-103">Get androidWorkProfileCompliancePolicy</span></span>
 
-> <span data-ttu-id="b9eb4-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="72422-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="72422-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b9eb4-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="72422-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="72422-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b9eb4-106">读取[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-106">Read properties and relationships of the [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object.</span></span>
+<span data-ttu-id="72422-106">读取[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="72422-106">Read properties and relationships of the [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b9eb4-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="b9eb4-107">Prerequisites</span></span>
-<span data-ttu-id="b9eb4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="72422-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="72422-107">Prerequisites</span></span>
+<span data-ttu-id="72422-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="72422-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9eb4-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9eb4-110">Permission type</span></span>|<span data-ttu-id="b9eb4-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b9eb4-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="72422-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="72422-110">Permission type</span></span>|<span data-ttu-id="72422-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="72422-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b9eb4-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9eb4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b9eb4-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="b9eb4-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="b9eb4-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9eb4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b9eb4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-115">Not supported.</span></span>|
-|<span data-ttu-id="b9eb4-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9eb4-116">Application</span></span>|<span data-ttu-id="b9eb4-117">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="b9eb4-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="72422-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="72422-112">Delegated (work or school account)</span></span>|<span data-ttu-id="72422-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="72422-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="72422-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="72422-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="72422-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="72422-115">Not supported.</span></span>|
+|<span data-ttu-id="72422-116">Application</span><span class="sxs-lookup"><span data-stu-id="72422-116">Application</span></span>|<span data-ttu-id="72422-117">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="72422-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b9eb4-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9eb4-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72422-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="72422-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ ms.locfileid: "38084732"
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b9eb4-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b9eb4-119">Optional query parameters</span></span>
-<span data-ttu-id="b9eb4-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="72422-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="72422-119">Optional query parameters</span></span>
+<span data-ttu-id="72422-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="72422-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b9eb4-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="b9eb4-121">Request headers</span></span>
-|<span data-ttu-id="b9eb4-122">标头</span><span class="sxs-lookup"><span data-stu-id="b9eb4-122">Header</span></span>|<span data-ttu-id="b9eb4-123">值</span><span class="sxs-lookup"><span data-stu-id="b9eb4-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="72422-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="72422-121">Request headers</span></span>
+|<span data-ttu-id="72422-122">标头</span><span class="sxs-lookup"><span data-stu-id="72422-122">Header</span></span>|<span data-ttu-id="72422-123">值</span><span class="sxs-lookup"><span data-stu-id="72422-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b9eb4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9eb4-124">Authorization</span></span>|<span data-ttu-id="b9eb4-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b9eb4-126">接受</span><span class="sxs-lookup"><span data-stu-id="b9eb4-126">Accept</span></span>|<span data-ttu-id="b9eb4-127">application/json</span><span class="sxs-lookup"><span data-stu-id="b9eb4-127">application/json</span></span>|
+|<span data-ttu-id="72422-124">授权</span><span class="sxs-lookup"><span data-stu-id="72422-124">Authorization</span></span>|<span data-ttu-id="72422-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="72422-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="72422-126">接受</span><span class="sxs-lookup"><span data-stu-id="72422-126">Accept</span></span>|<span data-ttu-id="72422-127">application/json</span><span class="sxs-lookup"><span data-stu-id="72422-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b9eb4-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9eb4-128">Request body</span></span>
-<span data-ttu-id="b9eb4-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="72422-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="72422-128">Request body</span></span>
+<span data-ttu-id="72422-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="72422-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9eb4-130">响应</span><span class="sxs-lookup"><span data-stu-id="b9eb4-130">Response</span></span>
-<span data-ttu-id="b9eb4-131">如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="72422-130">响应</span><span class="sxs-lookup"><span data-stu-id="72422-130">Response</span></span>
+<span data-ttu-id="72422-131">如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="72422-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b9eb4-132">示例</span><span class="sxs-lookup"><span data-stu-id="b9eb4-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="72422-132">示例</span><span class="sxs-lookup"><span data-stu-id="72422-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b9eb4-133">请求</span><span class="sxs-lookup"><span data-stu-id="b9eb4-133">Request</span></span>
-<span data-ttu-id="b9eb4-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="72422-133">请求</span><span class="sxs-lookup"><span data-stu-id="72422-133">Request</span></span>
+<span data-ttu-id="72422-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="72422-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-### <a name="response"></a><span data-ttu-id="b9eb4-135">响应</span><span class="sxs-lookup"><span data-stu-id="b9eb4-135">Response</span></span>
-<span data-ttu-id="b9eb4-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b9eb4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="72422-135">响应</span><span class="sxs-lookup"><span data-stu-id="72422-135">Response</span></span>
+<span data-ttu-id="72422-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="72422-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1542
+Content-Length: 1607
 
 {
   "value": {
@@ -92,6 +92,7 @@ Content-Length: 1542
     "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
@@ -105,7 +106,6 @@ Content-Length: 1542
   }
 }
 ```
-
 
 
 
