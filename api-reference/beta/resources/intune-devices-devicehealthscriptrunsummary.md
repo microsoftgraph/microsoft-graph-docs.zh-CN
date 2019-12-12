@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3e96083cdbc1c59b9e77d18bbf1b2e1a081ff37
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 8f17e7725802879f639ce6803f9f6c12dca21e5f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539076"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955481"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的运行摘要的属性。
 
@@ -39,6 +39,7 @@ ms.locfileid: "37539076"
 |issueReoccurredDeviceCount|Int32|已成功执行修正脚本但未能解决检测到的问题的设备数量|
 |remediationScriptErrorDeviceCount|Int32|修正脚本执行时遇到错误且未完成的设备数量|
 |lastScriptRunDateTime|DateTimeOffset|在所有设备上的脚本的上次运行时间|
+|issueRemediatedCumulativeDeviceCount|Int32|最近30天内修正的设备数量|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,7 +64,8 @@ ms.locfileid: "37539076"
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,
   "remediationScriptErrorDeviceCount": 1024,
-  "lastScriptRunDateTime": "String (timestamp)"
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: baa200daf05a13c472ee763235ad794a0d93b55f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bfbf3491db4e30d7f8e2fdf91085feb9e97a9e7e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538579"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955580"
 ---
 # <a name="macosmicrosoftedgeapp-resource-type"></a>macOSMicrosoftEdgeApp 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 MacOS Microsoft Edge 应用的属性和继承的属性。
 
@@ -29,7 +29,7 @@ ms.locfileid: "37538579"
 |[列出 macOSMicrosoftEdgeApps](../api/intune-apps-macosmicrosoftedgeapp-list.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)集合|列出[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)对象的属性和关系。|
 |[获取 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-get.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)|读取[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)对象的属性和关系。|
 |[创建 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-create.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)|创建新的[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)对象。|
-|[删除 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-delete.md)|无|删除[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)。|
+|[删除 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-delete.md)|None|删除[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)。|
 |[更新 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-update.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)|更新[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -51,8 +51,9 @@ ms.locfileid: "37538579"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|信道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -98,7 +99,8 @@ ms.locfileid: "37538579"
   "roleScopeTagIds": [
     "String"
   ],
-  "dependentAppCount": 1024
+  "dependentAppCount": 1024,
+  "channel": "String"
 }
 ```
 

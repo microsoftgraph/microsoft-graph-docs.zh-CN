@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cacc4a03a8c8b974eec91bc0100ddb4d56c0cfbd
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 1b36a644ab9aa09e8de65f1d8a0d5ee95b6385bf
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539188"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955671"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 MDM/Intune 映射的组策略设置。
 
@@ -26,7 +26,7 @@ MDM/Intune 映射的组策略设置。
 |[列出 groupPolicySettingMappings](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)集合|列出[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[获取 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-get.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|读取[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[创建 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-create.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|创建新的[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象。|
-|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|无|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
+|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|None|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
 |[更新 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-update.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|更新[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -34,7 +34,7 @@ MDM/Intune 映射的组策略设置。
 |:---|:---|:---|
 |id|字符串|尚未记录|
 |parentId|字符串|组策略设置的父 Id。|
-|childIdList|String 集合|组策略设置的子 Id 列表。|
+|childIdList|String collection|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
 |settingValue|字符串|此组策略设置的值。|
 |settingValueType|字符串|此组策略设置的值类型。|
@@ -46,10 +46,11 @@ MDM/Intune 映射的组策略设置。
 |mdmCspName|字符串|将此组策略设置映射到的 CSP 名称。|
 |mdmSettingUri|字符串|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`。|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
 |isMdmSupported|Boolean|指示此设置是否由 Intune 支持|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
 
 ## <a name="relationships"></a>关系
 无
@@ -83,6 +84,7 @@ MDM/Intune 映射的组策略设置。
   "mdmMinimumOSVersion": 1024,
   "settingType": "String",
   "isMdmSupported": true,
+  "mdmSupportedState": "String",
   "settingScope": "String",
   "intuneSettingUriList": [
     "String"

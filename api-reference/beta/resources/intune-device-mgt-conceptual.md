@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088159"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955573"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -132,7 +132,6 @@ ms.locfileid: "38088159"
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
-- [管理代理类型](intune-devices-managementagenttype.md)
 - [管理条件](intune-fencing-managementcondition.md)
 - [管理条件表达式](intune-fencing-managementconditionexpression.md)
 - [管理条件表达式模型](intune-fencing-managementconditionexpressionmodel.md)

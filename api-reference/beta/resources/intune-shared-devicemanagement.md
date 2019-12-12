@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f800c9a2eed631c5cfef07d042c2393366468007
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538754"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955334"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DeviceManagement 资源代表其内容因工作流而异的容器，包括：  
 
@@ -119,12 +119,13 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |意向|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)集合|设备管理意向|
 |settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)集合|设备管理意向设置定义|
 |模版|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|可用模板|
-|类别|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
+|categories|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
 |**设备管理**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple 推送通知证书。|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)集合|数据共享同意。|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|检测到与设备关联的应用的列表。|
 |deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)集合|与租户关联的设备管理脚本的列表。|
+|deviceShellScripts|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)集合|与租户关联的设备命令行管理程序脚本列表。|
 |deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)集合|与租户关联的设备运行状况脚本的列表。|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|设备概述|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|托管设备列表。|

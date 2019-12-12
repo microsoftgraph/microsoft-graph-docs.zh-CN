@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b731e570eb64a13004ffb71f3b7bae0c6826e33
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d7b00cc7aa0d221d07685f4256ed046b2827f5f1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37197384"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955488"
 ---
 # <a name="windows10pkcscertificateprofile-resource-type"></a>windows10PkcsCertificateProfile 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 10 桌面版和移动前 PKCS 证书配置文件
 
@@ -29,7 +29,7 @@ Windows 10 桌面版和移动前 PKCS 证书配置文件
 |[列出 windows10PkcsCertificateProfiles](../api/intune-deviceconfig-windows10pkcscertificateprofile-list.md)|[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)集合|列出[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象的属性和关系。|
 |[获取 windows10PkcsCertificateProfile](../api/intune-deviceconfig-windows10pkcscertificateprofile-get.md)|[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)|读取[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象的属性和关系。|
 |[创建 windows10PkcsCertificateProfile](../api/intune-deviceconfig-windows10pkcscertificateprofile-create.md)|[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)|创建新的[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象。|
-|[删除 windows10PkcsCertificateProfile](../api/intune-deviceconfig-windows10pkcscertificateprofile-delete.md)|无|删除[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)。|
+|[删除 windows10PkcsCertificateProfile](../api/intune-deviceconfig-windows10pkcscertificateprofile-delete.md)|None|删除[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)。|
 |[更新 windows10PkcsCertificateProfile](../api/intune-deviceconfig-windows10pkcscertificateprofile-update.md)|[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)|更新[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -52,11 +52,14 @@ Windows 10 桌面版和移动前 PKCS 证书配置文件
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|证书使用者备用名称类型继承自[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
 |certificateValidityPeriodValue|Int32|继承自[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)的证书有效期限的值|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|从[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)继承的证书有效期限的小数位数。 可取值为：`days`、`months`、`years`。|
-|certificationAuthority|String|PKCS 证书颁发机构|
-|certificationAuthorityName|String|PKCS 证书颁发机构名称|
-|certificateTemplateName|String|PKCS 证书模板名称|
-|subjectAlternativeNameFormatString|String|定义 AAD 属性的自定义字符串。|
+|certificationAuthority|字符串|PKCS 证书颁发机构|
+|certificationAuthorityName|字符串|PKCS 证书颁发机构名称|
+|certificateTemplateName|字符串|PKCS 证书模板名称|
+|subjectAlternativeNameFormatString|字符串|定义 AAD 属性的自定义字符串。|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)集合|扩展密钥用法（EKU）设置。 该集合最多可包含 500 个元素。|
+|subjectNameFormatString|字符串|要与 SubjectNameFormat = Custom 一起使用的自定义格式。 示例： CN = {{EmailAddress}}，E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation，L = Redmond，ST = WA，C = US|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)集合|自定义主题备用名称设置。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -127,6 +130,15 @@ Windows 10 桌面版和移动前 PKCS 证书配置文件
       "@odata.type": "microsoft.graph.extendedKeyUsage",
       "name": "String",
       "objectIdentifier": "String"
+    }
+  ],
+  "subjectNameFormatString": "String",
+  "certificateStore": "String",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "String",
+      "name": "String"
     }
   ]
 }

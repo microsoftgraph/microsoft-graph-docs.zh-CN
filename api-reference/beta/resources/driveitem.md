@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: cd3b7cd4271f631526a9ba098cd1f6a09f79fe6f
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: a056a79b0ed5dc24e2a9a48a79141ba79f8d49c3
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333302"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955629"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -37,7 +37,8 @@ ms.locfileid: "37333302"
 
 下面是 **driveItem** 资源的 JSON 表示形式。
 
-**driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
+
+            **driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
@@ -109,10 +110,10 @@ ms.locfileid: "37333302"
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
-| cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
+| cTag                 | 字符串             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
 | description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
-| eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
+| eTag                 | 字符串             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
@@ -170,6 +171,8 @@ ms.locfileid: "37333302"
 此 URL 在失效前只能使用很短的时间（1 小时）。
 删除用户的文件权限可能不会立即使 URL 无效。
 
+>**注意：**@Microsoft 的参数应包括在 URL 中，而不是请求的正文中。
+
 ## <a name="methods"></a>方法
 
 | 方法                                                   | REST 路径
@@ -184,7 +187,7 @@ ms.locfileid: "37333302"
 | [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
+| [下载特定文件格式][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
 | [还原项目](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
@@ -197,7 +200,7 @@ ms.locfileid: "37333302"
 | [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md
