@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: d77c6578d79edb60fbba08200dc033f032b39282
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 22ad36715dd0405d44214901a0adf90bb717b167
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275843"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955882"
 ---
 # <a name="people-picker-component"></a>人员-选取器组件
 
@@ -32,15 +32,40 @@ ms.locfileid: "37275843"
 
 | 属性 | 属性 | 说明                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-max  | 一个指示要显示的最大用户数的数字值。 默认值为6。                                                                                             |
+| show-max | showMax   | 一个指示要显示的最大用户数的数字值。 默认值为6。                                                                                             |
 | people   | people    | 获取或设置组件呈现的人员列表的人员数组。 使用此属性可访问组件加载的人员。 设置此值可加载自己的人员。 |
 | group    | group     | 一个 string 值，属于 Microsoft Graph 定义的组，用于进一步筛选搜索结果。                                                                            |
+|  选定-人员  | selectedPeople     | 一个类型`person`的数组，表示在组件中选定的人员。 将此值设置为 "默认情况下选择所选人员"。|
 
-示例如下。
+下面是一个`show-max`示例。
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
+
+## <a name="selected-people"></a>选定人员
+
+组件的 "选定人员" 部分将呈现由开发人员或用户选择的每个人。 
+
+![组织-人员-选取器](./images/selected-people.png)
+
+您可以通过执行下列操作之一来填充所选的人员数据：
+
+- 直接设置`selectedPeople`属性，如下面的示例所示。  
+
+    ```javascript
+    // personObject = User or Person from Microsoft Graph
+    document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
+    ```
+
+- 使用此`selectUsersById()`方法可接受 Microsoft graph[用户 id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0)的数组，以查找有关所选内容的相关用户详细信息。
+
+     >**注意：** 如果找不到用户，则`id`不会为其呈现任何数据`id`。
+
+    ```javascript
+    // id = Mirosoft graph User "id"
+    document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
@@ -53,14 +78,35 @@ mgt-people-picker {
 }
 ```
 
+## <a name="templates"></a>模板
+
+ `mgt-people-picker`支持多个模板，这些[模板](../templates.md)可用于替换组件的某些部分。 若要指定模板，请在`<template>`组件内添加一个元素，并`data-type`将值设置为下列值之一。
+
+| 数据类型 | 数据上下文 | 说明 |
+| --- | --- | --- |
+| 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
+| error | null：无数据| 用户搜索不返回用户时使用的模板。 |
+| 选定的人员 |人员：人员详细信息对象| 呈现所选人员的模板。 |
+| person | 人员：人员详细信息对象| 用于在下拉列表中呈现人员的模板。 |
+
+下面的示例演示如何使用`error`模板。
+
+```html
+<mgt-people-picker>
+  <template data-type="error">
+    <p>Sorry, no people were found</p>
+  </template>
+</mgt-people-picker>
+```
+
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
 此组件使用以下 Microsoft Graph Api 和权限。
 
 | API                                                                                                              | 权限  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/groups/\${groupId}/members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## <a name="authentication"></a>身份验证
 

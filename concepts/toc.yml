@@ -441,8 +441,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: 人员选取器
                 href: toolkit/components/people-picker.md
-              - name: 人员卡片
+              - name: 个人卡片
                 href: toolkit/components/person-card.md
+              - name: 获取
+                href: toolkit/components/get.md
           - name: 提供程序
             items:
               - name: 使用提供程序
@@ -453,6 +455,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams 提供程序
                 href: toolkit/providers/teams.md
+              - name: 代理服务器提供商
+                href: toolkit/providers/proxy.md
               - name: 自定义提供程序
                 href: toolkit/providers/custom.md
           - name: 对组件进行样式设置

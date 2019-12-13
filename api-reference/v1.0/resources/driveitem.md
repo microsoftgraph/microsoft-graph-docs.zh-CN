@@ -6,12 +6,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7c36dabf1fe894dcf5ee7e97d00916bcce433aea
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029370"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955860"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -101,6 +101,8 @@ ms.locfileid: "36029370"
 **注意：**@microsoft.graph.downloadUrl 值是一个短期 URL，不能缓存。
 此 URL 在失效前只能使用很短的时间（1 小时）。
 删除用户的文件权限可能不会立即使 URL 无效。
+
+>**注意：** 参数 @microsoft.graph.conflictBehavior 应包含在 URL 中，而不是请求正文中。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

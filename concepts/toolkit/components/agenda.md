@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "议程" 组件
 description: "\"管理中心议程\" web 组件用于表示用户或组日历中的事件。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0afe3546541e38349404b80abac48073b90f7eb4
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 7f46602396ab794593101505d56c14b675db235f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275731"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955895"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "议程" 组件
 
@@ -32,11 +32,11 @@ ms.locfileid: "37275731"
 | --- | --- | --- |
 | date | date | 一个字符串，表示要从 Microsoft Graph 中提取的事件的开始日期。 值应采用可由[日期构造函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)进行分析的格式，如果`event-query`设置了属性，则值不起作用。 |
 | 之前 | 之前 | 从 Microsoft Graph 提取的天数-默认值为3。如果`event-query`设置了属性，则此值不起作用。 |
-| showMax | show-max | 一个数字，用于指示要显示的最大事件数。 未设置默认值（无最大值）。 |
-| groupId | 组 id | 要使用的组日历的字符串 ID，而不是当前登录的用户日历。 |
-| eventQuery | 事件查询 | 一个字符串，表示从 Microsoft Graph 提取事件时要使用的替代查询。 （可选）通过将委派作用域与`|` （`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`）分隔来将其添加到字符串的末尾。 |
+| show-max | showMax | 一个数字，用于指示要显示的最大事件数。 未设置默认值（无最大值）。 |
+| 组 id | groupId | 要使用的组日历的字符串 ID，而不是当前登录的用户日历。 |
+| 事件查询 | eventQuery | 一个字符串，表示从 Microsoft Graph 提取事件时要使用的替代查询。 （可选）通过将委派作用域与`|` （`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`）分隔来将其添加到字符串的末尾。 |
 | 活动 | 活动 | 一个事件数组，用于获取或设置组件呈现的事件的列表-使用此属性可访问组件加载的事件。 将此值设置为加载您自己的事件-如果值是由开发人员`date`设置`days`的， `event-query`则、或属性不起作用。 |
-| groupByDay | 逐天分组 | 按天对事件分组的布尔值不按默认事件进行分组。 |
+| 逐天分组 | groupByDay | 按天对事件分组的布尔值不按默认事件进行分组。 |
 
 下面的示例更改组件的行为，以获取特定日期的数据，最长为三天。
 
@@ -122,13 +122,22 @@ mgt-agenda {
 
 若要了解详细信息，请参阅[模板](../templates.md)。
 
+## <a name="events"></a>事件
+
+从控件触发以下事件。
+
+| 事件 | 说明 |
+| --- | --- |
+| eventClick | 用户单击或点击事件。|
+
+
 ## <a name="graph-scopes"></a>图表范围
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
 | resource | 权限/范围 |
 | - | - |
-| [/me/calendarview](https://docs.microsoft.com/en-us/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](https://docs.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
 
 组件允许您指定要调用的其他 Microsoft Graph 查询（例如`/groups/{id}/calendar/calendarView`）。 在这种情况下，将作用域追加到字符串的末尾，并将其分隔`|`
 

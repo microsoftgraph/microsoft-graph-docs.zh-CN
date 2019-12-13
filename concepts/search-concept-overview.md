@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 6d18decc6e704f5190dd832d78eabf8809a2ca1e
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 4196a2b01576e11f2b9db28a4ea1f89d76f467c5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263252"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955909"
 ---
 # <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>概述在 Microsoft Graph 上扩展应用的 Microsoft 搜索体验（预览版）
 
@@ -69,4 +69,4 @@ Microsoft 搜索支持在 Microsoft 云中搜索内容：
 
 与社区互动：
 
-- [在 StackOverflow 上讨论](https://stackoverflow.com/questions/tagged/microsoft-search)
+- [在 StackOverflow 上讨论](https://stackoverflow.com/questions/tagged/microsoft-graph-search)

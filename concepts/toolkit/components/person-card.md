@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的个人卡片组件
 description: "\"个人卡片\" 组件是显示与某个人相关的详细信息的组件。"
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: f4d8c975fe91d91658f512cea708ee104d4fd906
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275855"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955867"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的个人卡片组件
 
@@ -26,11 +26,11 @@ ms.locfileid: "37275855"
 
 组件使用 Microsoft Graph 提供有关用户的其他详细信息。 若要定义用户，必须使用的`mgt-person`**人员查询**属性。
 
-| 属性         | type                     | 说明                                                                           |
+| 属性         | 类型                     | 说明                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | 人员-详细信息 | MicrosoftGraph <br> MicrosoftGraph <br> MicrosoftGraph。联系人 | 由 Microsoft Graph 定义的 Person 对象，包含与用户相关的详细信息。 |
 | 人员-图像   | png/jpg/svg                    | 与卡片中显示的人员相关的图像。                                   |
-
+| 继承-详细信息   | 无。                  | 允许人员卡片遍历父树 for `mgt-person` component 以使用相同`person-details`和`person-image`数据。                      |
 
 
 ## <a name="templates"></a>模板
@@ -39,16 +39,15 @@ ms.locfileid: "37275855"
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| 设置 | 人员：人员详细信息对象 <br> personImage：图像的 URL | 默认模板会将整个组件替换为您自己的组件。 |
-| 其他详细信息 | 人员：人员详细信息对象 <br> personImage：图像的 URL | 用于向卡片中添加其他内容的模板。 |
+| 设置 | `person`： Person details 对象 <br> `personImage`：图像的 URL | 默认模板会将整个组件替换为您自己的组件。 |
+| 其他详细信息 | `person`： Person details 对象 <br> `personImage`：图像的 URL | 用于向卡片中添加其他内容的模板。 |
 
 例如，可以使用模板自定义附加到`mgt-person`组件的组件和模板，以在卡片中添加其他详细信息。 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
       <template data-type="person-card">
-        <mgt-person-card person-details="{{person}}" 
-            person-image="{{personImage}}">
+        <mgt-person-card inherit-details>
           <template data-type="additional-details">
             <h3>Stuffed Animal Friends:</h3>
             <ul>

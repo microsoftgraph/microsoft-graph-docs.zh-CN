@@ -1,16 +1,16 @@
 ---
-title: Microsoft 团队提供商
+title: Microsoft Teams 提供程序
 description: 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 57d53d19507e3ad6d53810538eff62a0e20740bd
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 335673ba2faa04916c2f8548999077a68202bbf0
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275694"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955755"
 ---
-# <a name="microsoft-teams-provider"></a>Microsoft 团队提供商
+# <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 
@@ -18,7 +18,7 @@ ms.locfileid: "37275694"
 
 ## <a name="get-started"></a>入门
 
-在使用团队提供程序之前，您需要确保您已在页面中引用[Microsoft 团队 SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) 。
+在使用团队提供程序之前，您需要确保您已在页面中引用[Microsoft 团队 SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) 。
 
 ### <a name="via-script-tag"></a>via script 标记
 下面的示例使用 HTML （通过 CDN）中的提供程序。
@@ -83,13 +83,13 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ## <a name="configure-your-teams-app"></a>配置团队应用程序
 
-如果只是开始使用团队应用程序，请参阅[将选项卡添加到 Microsoft 团队应用](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用[应用程序 Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio)快速开发您的应用程序清单。
+如果只是开始使用团队应用程序，请参阅[将选项卡添加到 Microsoft 团队应用](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用[应用程序 Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio)快速开发您的应用程序清单。
 
 使用选项卡安装您的应用程序并准备好使用组件时，需要确保您的应用程序具有访问 Microsoft Graph 的适当权限。 若要使用所需的权限配置应用程序，请执行以下操作：
 
-1. [检索你的域名](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [创建新的应用注册](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [授予应用程序权限](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [检索你的域名](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [创建新的应用注册](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [授予应用程序权限](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 在 "**添加 API 访问" 页**上添加正确的权限非常重要。 你将需要管理员添加和批准权限，具体取决于所需的组件。
 

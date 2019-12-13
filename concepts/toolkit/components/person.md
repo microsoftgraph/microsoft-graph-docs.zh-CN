@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4664cf545c858dbb2d49ad5191ab7cf5118092e
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275701"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955853"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -51,10 +51,10 @@ ms.locfileid: "37275701"
 
 您可以使用多个属性来自定义组件。
 
-| 属性    | 属性    | 说明                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| showName  | 显示-名称  | 设置用于显示人员显示名称的标志-默认`false`为。 |
-| showEmail | 显示-电子邮件 | 设置用于显示个人电子邮件的标志- `false`默认为。        |
+| 属性    | 属性   | 说明                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| 显示-名称    | showName   | 设置用于显示人员显示名称的标志-默认`false`为。 |
+| 显示-电子邮件   | showEmail  | 设置用于显示个人电子邮件的标志- `false`默认为。        |
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
@@ -112,9 +112,9 @@ mgt-person {
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| 属性     | 属性     | 说明                                                                     |
+| 属性    |  属性     | 说明                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| personCard | 人员-卡片 | 一个枚举，用于确定激活浮出式面板- `hover`或`click`的必需用户操作。 默认值为`none` |
+| 人员-卡片 | personCard | 一个枚举，用于确定激活浮出式面板- `hover`或`click`的必需用户操作。 默认值为`none` |
 
 
 有关模板化、样式和属性的详细信息，请参阅[人员卡片组件](./person-card.md)。
@@ -123,13 +123,13 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| 资源                                                                                                    | 权限     |
+| Resource                                                                                                    | 权限     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/？ $search =](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/？ $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **注意：** 若要访问`*/photo/$value`个人 Microsoft 帐户的资源，请使用 Microsoft Graph beta 终结点。
 

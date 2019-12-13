@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包提供程序
 description: Microsoft Graph 工具包提供程序为所有组件启用身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 221258b49d9a5217829633c7882b9dd4f9d2a221
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275722"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955783"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph 工具包提供程序
 
@@ -29,13 +29,14 @@ Providers.globalProvider = new MsalProvider({
 - [MsalProvider](./providers/msal.md)
 - [SharePointProvider](./providers/sharepoint.md)
 - [TeamsProvider](./providers/teams.md)
-- Office 外接程序提供程序（即将推出）
-
-## <a name="get-started"></a>入门
+- [ProxyProvider](./providers/proxy.md)
+- [SimpleProvider](./providers/custom.md)
 
 您可以随时创建提供程序。 我们建议您先创建提供程序，然后再使用任何组件。 本节介绍如何初始化提供程序。
 
-`Providers`全局变量公开以下属性和函数
+## <a name="providers-namespace"></a>提供程序命名空间
+
+`Providers`命名空间公开以下属性和函数：
 
 - `globalProvider : IProvider`
 
@@ -49,10 +50,10 @@ Providers.globalProvider = new MsalProvider({
 
 该工具包提供了两种创建新的提供程序的方法：
 
-- 通过传入获取`SimpleProvider`访问令牌的函数来创建新的
-- 扩展`IProvider`抽象类
+- 通过传入获取`SimpleProvider`访问令牌的函数来创建新的。
+- 扩展`IProvider`抽象类。
 
-有关详细信息，请参阅[自定义提供程序](./providers/custom.md)文档中的每一个。
+有关每个的详细信息，请参阅[自定义提供程序](./providers/custom.md)。
 
 ## <a name="using-multiple-providers"></a>使用多个提供程序
 
@@ -82,7 +83,7 @@ if (TeamsProvider.isAvailable) {
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>对 Microsoft Graph 进行自己的调用
 
-只要您初始化提供程序（如上一节中所述），所有组件都可以访问 Microsoft Graph，而无需进行任何自定义。 若要获取对组件使用的同一 Microsoft Graph SDK 的引用，请首先获取对全局 IProvider 的引用，然后使用该`Graph`对象，如图所示。
+只要您初始化提供程序（如上一节中所述），所有组件都可以访问 Microsoft Graph，而无需进行任何自定义。 若要获取对组件使用的同一 Microsoft Graph SDK 的引用，请首先获取对全局 IProvider 的引用，然后使用该`Graph`对象，如下所示：
 
 ```js
 import { Providers } from '@microsoft/mgt';

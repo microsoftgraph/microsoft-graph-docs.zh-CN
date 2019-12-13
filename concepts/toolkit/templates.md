@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的模板
 description: 使用自定义模板修改组件的内容。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b9ef4b9422d84886fa4df76618b6cdf14def2378
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 59dbda5b18e1c8cb0c858c073a25f4a76b121fe6
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275708"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955748"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的模板
 
@@ -67,6 +67,29 @@ ms.locfileid: "37275708"
 ```
 
 > **注意：** 您还可以展开诸如等对象`{{event}}` ，它们将呈现为 JSON 字符串。 这在开发模板时可能很有用。
+
+## <a name="data-context-helper-properties"></a>数据上下文帮助程序属性
+
+下列属性也可以与模板中的数据上下文对象一起使用。
+
+| 属性 |  说明 |
+| --- | --- | --- |
+| $index | 循环使用`data-for`时呈现的项的数字索引。 |
+| $parent | 如果模板呈现在另一个模板中，则此属性允许您访问父数据上下文。 |
+
+下面的示例演示如何在数据 for `$index`循环中使用该属性。
+
+```html
+<mgt-person>
+  <mgt-person-card>
+    <template data-type="additional-details">
+      <span data-for="language in languages">
+        {{ language.displayName }}<span data-if="$index < languages.length - 1">, </span>
+      </span>
+    </template>
+  </mgt-person-card>
+</mgt-person>
+```
 
 ## <a name="conditional-rendering"></a>条件呈现
 
