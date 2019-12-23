@@ -64,10 +64,10 @@ GET /users/{userId}/drive/root/delta
 
 除了 DriveItems 集合，此响应还包括以下属性之一：
 
-| 名称                 | 值  | Description                                                                                                                                      |
+| 名称                 | 值  | 说明                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
-| **\@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **\@odata.nextLink**。 用于在将来读取下一组更改。  |
+| **\@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的一个 URL。                                        |
+| **\@odata.deltaLink** | url    | 在当前所有更改返回后返回一个 URL，而不是 **\@odata.nextLink**。 用于在将来读取下一组更改。  |
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 
@@ -136,7 +136,7 @@ Content-type: application/json
 ```
 
 此响应包含第一页的更改，**\@odata.nextLink** 属性指示当前的项目集中有更多项目。
-在检索完所有项目页之前，你的应用程序应继续请求 **\@odata.nextLink** 的 URL 值。
+你的应用程序应继续请求 **\@odata.nextLink** 的 URL 值，直至检索完所有项目页。
 
 ## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
 
