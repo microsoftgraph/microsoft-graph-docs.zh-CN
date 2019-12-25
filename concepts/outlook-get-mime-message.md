@@ -4,63 +4,63 @@ description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 2eadf89007e1127ffbbf9e40506c37b47778da7c
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 4e0ffb77d7e06fb72be2a4d965465e438d054c43
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036380"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868539"
 ---
-# <a name="get-mime-content-of-a-message"></a><span data-ttu-id="8f1ac-104">获取邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="8f1ac-104">Get MIME content of a message</span></span>
+# <a name="get-mime-content-of-a-message"></a><span data-ttu-id="c324e-104">获取邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="c324e-104">Get MIME content of a message</span></span>
 
-<span data-ttu-id="8f1ac-105">MIME 是一种行业电子邮件标准。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-105">MIME is an industry email standard.</span></span> <span data-ttu-id="8f1ac-106">许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-106">Many email applications create messages in MIME format and save them in files with the .EML extension.</span></span> 
+<span data-ttu-id="c324e-105">MIME 是一种行业电子邮件标准。</span><span class="sxs-lookup"><span data-stu-id="c324e-105">MIME is an industry email standard.</span></span> <span data-ttu-id="c324e-106">许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。</span><span class="sxs-lookup"><span data-stu-id="c324e-106">Many email applications create messages in MIME format and save them in files with the .EML extension.</span></span> 
 
-<span data-ttu-id="8f1ac-107">即使 Outlook _不_以 MIME 格式保存邮件，也有两种方法可以获得 MIME 格式的 Outlook 邮件正文：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-107">Even though Outlook _does not save_ messages in MIME format, there are two ways you can get an Outlook message body in MIME format:</span></span>
+<span data-ttu-id="c324e-107">即使 Outlook _不_以 MIME 格式保存邮件，也有两种方法可以获得 MIME 格式的 Outlook 邮件正文：</span><span class="sxs-lookup"><span data-stu-id="c324e-107">Even though Outlook _does not save_ messages in MIME format, there are two ways you can get an Outlook message body in MIME format:</span></span>
 
-- <span data-ttu-id="8f1ac-108">你可以将 `$value` 段附加到该邮件的 get-message 操作。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-108">You can append a `$value` segment to a get-message operation on that message.</span></span>
-- <span data-ttu-id="8f1ac-109">如果邮件附加到 Outlook 项目或组帖子，则可以将 `$value` 段附加到该项目或组帖子的 get-attachment 操作。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-109">If the message is attached to an Outlook item or group post, you can append a `$value` segment to a get-attachment operation on that item or group post.</span></span>
+- <span data-ttu-id="c324e-108">你可以将 `$value` 段附加到该邮件的 get-message 操作。</span><span class="sxs-lookup"><span data-stu-id="c324e-108">You can append a `$value` segment to a get-message operation on that message.</span></span>
+- <span data-ttu-id="c324e-109">如果邮件附加到 Outlook 项目或组帖子，则可以将 `$value` 段附加到该项目或组帖子的 get-attachment 操作。</span><span class="sxs-lookup"><span data-stu-id="c324e-109">If the message is attached to an Outlook item or group post, you can append a `$value` segment to a get-attachment operation on that item or group post.</span></span>
 
-<span data-ttu-id="8f1ac-110">在任何一种情况下，你的应用都必须具有访问 Outlook 项目或组帖子的相应[权限](permissions-reference.md#mail-permissions)才能应用 get-message 或 get-attachment 操作。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-110">In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation.</span></span> 
+<span data-ttu-id="c324e-110">在任何一种情况下，你的应用都必须具有访问 Outlook 项目或组帖子的相应[权限](permissions-reference.md#mail-permissions)才能应用 get-message 或 get-attachment 操作。</span><span class="sxs-lookup"><span data-stu-id="c324e-110">In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation.</span></span> 
 
-<span data-ttu-id="8f1ac-111">然后，你可以将邮件正文内容保存在 .EML 文件中，并将该文件附加到企业系统中的记录，例如 CRM、ERP 和错误跟踪的记录。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-111">You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking.</span></span> 
+<span data-ttu-id="c324e-111">然后，你可以将邮件正文内容保存在 .EML 文件中，并将该文件附加到企业系统中的记录，例如 CRM、ERP 和错误跟踪的记录。</span><span class="sxs-lookup"><span data-stu-id="c324e-111">You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking.</span></span> 
 
 
-## <a name="what-is-mime"></a><span data-ttu-id="8f1ac-112">什么是 MIME？</span><span class="sxs-lookup"><span data-stu-id="8f1ac-112">What is MIME?</span></span>
+## <a name="what-is-mime"></a><span data-ttu-id="c324e-112">什么是 MIME？</span><span class="sxs-lookup"><span data-stu-id="c324e-112">What is MIME?</span></span>
 
-<span data-ttu-id="8f1ac-113">MIME 是 Internet 电子邮件用于通过 SMTP 传输以下类型内容的标准：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-113">MIME is a standard used by internet email to transmit the following types of content via SMTP:</span></span> 
+<span data-ttu-id="c324e-113">MIME 是 Internet 电子邮件用于通过 SMTP 传输以下类型内容的标准：</span><span class="sxs-lookup"><span data-stu-id="c324e-113">MIME is a standard used by internet email to transmit the following types of content via SMTP:</span></span> 
 
-- <span data-ttu-id="8f1ac-114">纯文本邮件</span><span class="sxs-lookup"><span data-stu-id="8f1ac-114">Plain text message</span></span>
-- <span data-ttu-id="8f1ac-115">带有可选内容（即，纯文本和 HTML）邮件</span><span class="sxs-lookup"><span data-stu-id="8f1ac-115">Message with alternative content (i.e., in both plain text and HTML)</span></span>
-- <span data-ttu-id="8f1ac-116">回复邮件附上原始邮件</span><span class="sxs-lookup"><span data-stu-id="8f1ac-116">Reply message with the original message attached</span></span>
-- <span data-ttu-id="8f1ac-117">带有图像、音频、视频或应用程序文件附件的文本邮件</span><span class="sxs-lookup"><span data-stu-id="8f1ac-117">Text message with attachments of image, audio, video, or application files</span></span>  
-- <span data-ttu-id="8f1ac-118">其他邮件构造</span><span class="sxs-lookup"><span data-stu-id="8f1ac-118">Other message constructs</span></span>
+- <span data-ttu-id="c324e-114">纯文本邮件</span><span class="sxs-lookup"><span data-stu-id="c324e-114">Plain text message</span></span>
+- <span data-ttu-id="c324e-115">带有可选内容（即，纯文本和 HTML）邮件</span><span class="sxs-lookup"><span data-stu-id="c324e-115">Message with alternative content (i.e., in both plain text and HTML)</span></span>
+- <span data-ttu-id="c324e-116">回复邮件附上原始邮件</span><span class="sxs-lookup"><span data-stu-id="c324e-116">Reply message with the original message attached</span></span>
+- <span data-ttu-id="c324e-117">带有图像、音频、视频或应用程序文件附件的文本邮件</span><span class="sxs-lookup"><span data-stu-id="c324e-117">Text message with attachments of image, audio, video, or application files</span></span>  
+- <span data-ttu-id="c324e-118">其他邮件构造</span><span class="sxs-lookup"><span data-stu-id="c324e-118">Other message constructs</span></span>
 
-<span data-ttu-id="8f1ac-119">以下是邮件中的典型 MIME 标头。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-119">The following are typical MIME headers in a message.</span></span> <span data-ttu-id="8f1ac-120">有关详细信息，请参阅 [RFC 2045](https://tools.ietf.org/html/rfc2045)。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-120">For more information, see [RFC 2045](https://tools.ietf.org/html/rfc2045).</span></span>
+<span data-ttu-id="c324e-119">以下是邮件中的典型 MIME 标头。</span><span class="sxs-lookup"><span data-stu-id="c324e-119">The following are typical MIME headers in a message.</span></span> <span data-ttu-id="c324e-120">有关详细信息，请参阅 [RFC 2045](https://tools.ietf.org/html/rfc2045)。</span><span class="sxs-lookup"><span data-stu-id="c324e-120">For more information, see [RFC 2045](https://tools.ietf.org/html/rfc2045).</span></span>
 
-- <span data-ttu-id="8f1ac-121">`MIME-Version` - 指示邮件是 MIME 格式的。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-121">`MIME-Version` - Indicates the message is MIME-formatted.</span></span>
-- <span data-ttu-id="8f1ac-122">`Content-Type` - 指示邮件或邮件的一部分的媒体类型，由*类型*和*子类型*表示。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-122">`Content-Type` - Indicates the media type of the message or a part of the message, represented by a *type* and *subtype*.</span></span> <span data-ttu-id="8f1ac-123">它还包括一个 `boundary` 字段，该字段将字符串指定为 MIME 边界或封装边界，具体取决于 `Content-Type` 的位置。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-123">It also includes a `boundary` field which specifies a string as the MIME boundary or as the encapsulation boundary, depending on the location of `Content-Type`.</span></span> 
-- <span data-ttu-id="8f1ac-124">`Content-Disposition` - 提供附件的详细信息，例如其演示样式（`inline` 或 `attachment`）、文件名、创建日期和上次修改日期。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-124">`Content-Disposition` - Provides details of an attachment such as its presentation style (`inline` or `attachment`), filenames, and creation and last modification dates.</span></span>
-- <span data-ttu-id="8f1ac-125">`Content-Transfer-Encoding` - 指定表示二进制数据的编码方法。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-125">`Content-Transfer-Encoding` - Specifies the encoding method to represent binary data.</span></span>
+- <span data-ttu-id="c324e-121">`MIME-Version` - 指示邮件是 MIME 格式的。</span><span class="sxs-lookup"><span data-stu-id="c324e-121">`MIME-Version` - Indicates the message is MIME-formatted.</span></span>
+- <span data-ttu-id="c324e-122">`Content-Type` - 指示邮件或邮件的一部分的媒体类型，由*类型*和*子类型*表示。</span><span class="sxs-lookup"><span data-stu-id="c324e-122">`Content-Type` - Indicates the media type of the message or a part of the message, represented by a *type* and *subtype*.</span></span> <span data-ttu-id="c324e-123">它还包括一个 `boundary` 字段，该字段将字符串指定为 MIME 边界或封装边界，具体取决于 `Content-Type` 的位置。</span><span class="sxs-lookup"><span data-stu-id="c324e-123">It also includes a `boundary` field which specifies a string as the MIME boundary or as the encapsulation boundary, depending on the location of `Content-Type`.</span></span> 
+- <span data-ttu-id="c324e-124">`Content-Disposition` - 提供附件的详细信息，例如其演示样式（`inline` 或 `attachment`）、文件名、创建日期和上次修改日期。</span><span class="sxs-lookup"><span data-stu-id="c324e-124">`Content-Disposition` - Provides details of an attachment such as its presentation style (`inline` or `attachment`), filenames, and creation and last modification dates.</span></span>
+- <span data-ttu-id="c324e-125">`Content-Transfer-Encoding` - 指定表示二进制数据的编码方法。</span><span class="sxs-lookup"><span data-stu-id="c324e-125">`Content-Transfer-Encoding` - Specifies the encoding method to represent binary data.</span></span>
 
-## <a name="get-mime-content-of-an-outlook-message"></a><span data-ttu-id="8f1ac-126">获取 Outlook 邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="8f1ac-126">Get MIME content of an Outlook message</span></span>
+## <a name="get-mime-content-of-an-outlook-message"></a><span data-ttu-id="c324e-126">获取 Outlook 邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="c324e-126">Get MIME content of an Outlook message</span></span>
 
-<span data-ttu-id="8f1ac-127">你可以通过在[获取邮件](/graph/api/message-get?view=graph-rest-1.0)时附加 `$value` 段来获取邮件的 MIME 表示：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-127">You can get the MIME representation of a message by appending the `$value` segment when [getting the message](/graph/api/message-get?view=graph-rest-1.0):</span></span> 
+<span data-ttu-id="c324e-127">你可以通过在[获取邮件](/graph/api/message-get?view=graph-rest-1.0)时附加 `$value` 段来获取邮件的 MIME 表示：</span><span class="sxs-lookup"><span data-stu-id="c324e-127">You can get the MIME representation of a message by appending the `$value` segment when [getting the message](/graph/api/message-get?view=graph-rest-1.0):</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/messages/{id}/$value
 ```
 
-### <a name="example"></a><span data-ttu-id="8f1ac-128">示例</span><span class="sxs-lookup"><span data-stu-id="8f1ac-128">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c324e-128">示例</span><span class="sxs-lookup"><span data-stu-id="c324e-128">Example</span></span>
 
-<span data-ttu-id="8f1ac-129">以下是请求使用其 MIME 内容返回登录用户邮箱中的邮件的示例。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-129">The following is an example that requests a message in the signed-in user's mailbox to be returned with its MIME content.</span></span>
+<span data-ttu-id="c324e-129">以下是请求使用其 MIME 内容返回登录用户邮箱中的邮件的示例。</span><span class="sxs-lookup"><span data-stu-id="c324e-129">The following is an example that requests a message in the signed-in user's mailbox to be returned with its MIME content.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/4aade2547798441eab5188a7a2436bc1/$value
+GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
-<span data-ttu-id="8f1ac-130">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-130">The following is the response.</span></span> <span data-ttu-id="8f1ac-131">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-131">The MIME content begins with the `MIME-Version` header.</span></span> 
+<span data-ttu-id="c324e-130">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="c324e-130">The following is the response.</span></span> <span data-ttu-id="c324e-131">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="c324e-131">The MIME content begins with the `MIME-Version` header.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -152,48 +152,48 @@ YW5vdGhlciBtYWlsLg0K
 --_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
 ```
 
-## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a><span data-ttu-id="8f1ac-132">获取附加到 Outlook 项目或组帖子的 Outlook 邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="8f1ac-132">Get MIME content of an Outlook message attached to an Outlook item or group post</span></span>
+## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a><span data-ttu-id="c324e-132">获取附加到 Outlook 项目或组帖子的 Outlook 邮件的 MIME 内容</span><span class="sxs-lookup"><span data-stu-id="c324e-132">Get MIME content of an Outlook message attached to an Outlook item or group post</span></span>
 
-<span data-ttu-id="8f1ac-133">你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event?view=graph-rest-1.0)、[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[任务](/graph/api/resources/outlooktask?view=graph-rest-beta)或组[帖子](/graph/api/resources/post?view=graph-rest-1.0)，你的应用程序可以访问。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-133">You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [task](/graph/api/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/api/resources/post?view=graph-rest-1.0) that your app can access.</span></span>
+<span data-ttu-id="c324e-133">你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event?view=graph-rest-1.0)、[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[任务](/graph/api/resources/outlooktask?view=graph-rest-beta)或组[帖子](/graph/api/resources/post?view=graph-rest-1.0)，你的应用程序可以访问。</span><span class="sxs-lookup"><span data-stu-id="c324e-133">You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [task](/graph/api/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/api/resources/post?view=graph-rest-1.0) that your app can access.</span></span>
 
-<span data-ttu-id="8f1ac-134">为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-)时附加 `$value` 段。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-134">To do that, identify the message attachment, and append the `$value` segment when [getting that attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-).</span></span> <span data-ttu-id="8f1ac-135">以下显示了访问附件的一些常用方法。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-135">The following shows a few common ways to access an attachment.</span></span> <span data-ttu-id="8f1ac-136">有关详细信息，请参阅[获取附件](/graph/api/attachment-get?view=graph-rest-1.0#http-request)。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-136">See [get attachment](/graph/api/attachment-get?view=graph-rest-1.0#http-request) for more information.</span></span>
+<span data-ttu-id="c324e-134">为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
+)时附加 `$value` 段。</span><span class="sxs-lookup"><span data-stu-id="c324e-134">To do that, identify the message attachment, and append the `$value` segment when [getting that attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
+).</span></span> <span data-ttu-id="c324e-135">以下显示了访问附件的一些常用方法。</span><span class="sxs-lookup"><span data-stu-id="c324e-135">The following shows a few common ways to access an attachment.</span></span> <span data-ttu-id="c324e-136">有关详细信息，请参阅[获取附件](/graph/api/attachment-get?view=graph-rest-1.0#http-request)。</span><span class="sxs-lookup"><span data-stu-id="c324e-136">See [get attachment](/graph/api/attachment-get?view=graph-rest-1.0#http-request) for more information.</span></span>
 
-<span data-ttu-id="8f1ac-137">如果邮件附加到用户默认日历中的事件：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-137">If the message is attached to an event in the user's default calendar:</span></span>
+<span data-ttu-id="c324e-137">如果邮件附加到用户默认日历中的事件：</span><span class="sxs-lookup"><span data-stu-id="c324e-137">If the message is attached to an event in the user's default calendar:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="8f1ac-138">如果邮件附加到用户邮箱中的其他邮件：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-138">If the message is attached to another message in the user's mailbox:</span></span>
+<span data-ttu-id="c324e-138">如果邮件附加到用户邮箱中的其他邮件：</span><span class="sxs-lookup"><span data-stu-id="c324e-138">If the message is attached to another message in the user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="8f1ac-139">如果邮件附加到用户默认任务文件夹中的 Outlook 任务：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-139">If the message is attached to an Outlook task in the user's default task folder:</span></span>
+<span data-ttu-id="c324e-139">如果邮件附加到用户默认任务文件夹中的 Outlook 任务：</span><span class="sxs-lookup"><span data-stu-id="c324e-139">If the message is attached to an Outlook task in the user's default task folder:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="8f1ac-140">如果邮件附加到指定的组帖子：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-140">If the message is attached to the specified group post:</span></span>
+<span data-ttu-id="c324e-140">如果邮件附加到指定的组帖子：</span><span class="sxs-lookup"><span data-stu-id="c324e-140">If the message is attached to the specified group post:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
-### <a name="example"></a><span data-ttu-id="8f1ac-141">示例</span><span class="sxs-lookup"><span data-stu-id="8f1ac-141">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c324e-141">示例</span><span class="sxs-lookup"><span data-stu-id="c324e-141">Example</span></span>
 
-<span data-ttu-id="8f1ac-142">以下是获取已附加到另一封邮件的邮件，并以 MIME 格式返回正文的示例。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-142">The following is an example that gets a message that has been attached to another message, and returns the body in MIME format.</span></span>
+<span data-ttu-id="c324e-142">以下是获取已附加到另一封邮件的邮件，并以 MIME 格式返回正文的示例。</span><span class="sxs-lookup"><span data-stu-id="c324e-142">The following is an example that gets a message that has been attached to another message, and returns the body in MIME format.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
 ```
 
-<span data-ttu-id="8f1ac-143">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-143">The following is the response.</span></span> <span data-ttu-id="8f1ac-144">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="8f1ac-144">The MIME content begins with the `MIME-Version` header.</span></span> 
+<span data-ttu-id="c324e-143">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="c324e-143">The following is the response.</span></span> <span data-ttu-id="c324e-144">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="c324e-144">The MIME content begins with the `MIME-Version` header.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -275,10 +275,10 @@ e.</p>
 --_000_MWHPR22MB100769D1513B3DC0F007B2ECD4220MWHPR22MB1007namp_--
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="8f1ac-145">后续步骤</span><span class="sxs-lookup"><span data-stu-id="8f1ac-145">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c324e-145">后续步骤</span><span class="sxs-lookup"><span data-stu-id="c324e-145">Next steps</span></span>
 
-<span data-ttu-id="8f1ac-146">详细了解以下信息：</span><span class="sxs-lookup"><span data-stu-id="8f1ac-146">Find out more about:</span></span>
+<span data-ttu-id="c324e-146">详细了解以下信息：</span><span class="sxs-lookup"><span data-stu-id="c324e-146">Find out more about:</span></span>
 
-- <span data-ttu-id="8f1ac-147">获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)</span><span class="sxs-lookup"><span data-stu-id="8f1ac-147">[Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post</span></span>
-- [<span data-ttu-id="8f1ac-148">为什么与 Outlook 邮件集成</span><span class="sxs-lookup"><span data-stu-id="8f1ac-148">Why integrate with Outlook mail</span></span>](outlook-mail-concept-overview.md)
-- <span data-ttu-id="8f1ac-149">[使用功能邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)</span><span class="sxs-lookup"><span data-stu-id="8f1ac-149">[Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.</span></span>
+- <span data-ttu-id="c324e-147">获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)</span><span class="sxs-lookup"><span data-stu-id="c324e-147">[Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post</span></span>
+- [<span data-ttu-id="c324e-148">为什么与 Outlook 邮件集成</span><span class="sxs-lookup"><span data-stu-id="c324e-148">Why integrate with Outlook mail</span></span>](outlook-mail-concept-overview.md)
+- <span data-ttu-id="c324e-149">[使用功能邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)</span><span class="sxs-lookup"><span data-stu-id="c324e-149">[Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0</span></span>

@@ -5,36 +5,36 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 627ced59fa87a8e950af96173a807da4d500f428
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f820e0b3111a73f0f88be5d01a37d7891e48ac42
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032744"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863905"
 ---
-# <a name="directory-resource-type-deleted-items"></a><span data-ttu-id="62668-105">目录资源类型（已删除的项目）</span><span class="sxs-lookup"><span data-stu-id="62668-105">directory resource type (deleted items)</span></span>
+# <a name="directory-resource-type-deleted-items"></a><span data-ttu-id="23ad3-105">目录资源类型（已删除的项目）</span><span class="sxs-lookup"><span data-stu-id="23ad3-105">directory resource type (deleted items)</span></span>
 
-<span data-ttu-id="62668-106">表示目录中已删除的项目。</span><span class="sxs-lookup"><span data-stu-id="62668-106">Represents a deleted item in the directory.</span></span> <span data-ttu-id="62668-107">删除某个项目后，它会被添加到已删除项目“容器”中。</span><span class="sxs-lookup"><span data-stu-id="62668-107">When an item is deleted, it is added to the deleted items "container".</span></span> <span data-ttu-id="62668-108">已删除的项目将保留最多 30 天的还原时间。</span><span class="sxs-lookup"><span data-stu-id="62668-108">Deleted items will remain available to restore for up to 30 days.</span></span> <span data-ttu-id="62668-109">30 天后，这些项目将永久删除。</span><span class="sxs-lookup"><span data-stu-id="62668-109">After 30 days, the items are permanently deleted.</span></span>
+<span data-ttu-id="23ad3-106">表示目录中已删除的项目。</span><span class="sxs-lookup"><span data-stu-id="23ad3-106">Represents a deleted item in the directory.</span></span> <span data-ttu-id="23ad3-107">删除某个项目后，它会被添加到已删除项目“容器”中。</span><span class="sxs-lookup"><span data-stu-id="23ad3-107">When an item is deleted, it is added to the deleted items "container".</span></span> <span data-ttu-id="23ad3-108">已删除的项目将保留最多 30 天的还原时间。</span><span class="sxs-lookup"><span data-stu-id="23ad3-108">Deleted items will remain available to restore for up to 30 days.</span></span> <span data-ttu-id="23ad3-109">30 天后，这些项目将永久删除。</span><span class="sxs-lookup"><span data-stu-id="23ad3-109">After 30 days, the items are permanently deleted.</span></span>
 
-<span data-ttu-id="62668-110">目前，已删除的项目功能仅支持用于 Office 365 [groups](group.md) 和 [users](users.md)。</span><span class="sxs-lookup"><span data-stu-id="62668-110">Currently, deleted items functionality is only supported for Office 365 [groups](group.md) and [users](users.md).</span></span>
+<span data-ttu-id="23ad3-110">目前，仅支持[应用程序](application.md)、[组](group.md)和[用户](user.md)资源的 "已删除邮件" 功能。</span><span class="sxs-lookup"><span data-stu-id="23ad3-110">Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md) and [user](user.md) resources.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="62668-111">方法</span><span class="sxs-lookup"><span data-stu-id="62668-111">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="23ad3-111">方法</span><span class="sxs-lookup"><span data-stu-id="23ad3-111">Methods</span></span>
 
-| <span data-ttu-id="62668-112">方法</span><span class="sxs-lookup"><span data-stu-id="62668-112">Method</span></span>         | <span data-ttu-id="62668-113">返回类型</span><span class="sxs-lookup"><span data-stu-id="62668-113">Return Type</span></span> | <span data-ttu-id="62668-114">说明</span><span class="sxs-lookup"><span data-stu-id="62668-114">Description</span></span> |
+| <span data-ttu-id="23ad3-112">方法</span><span class="sxs-lookup"><span data-stu-id="23ad3-112">Method</span></span>         | <span data-ttu-id="23ad3-113">返回类型</span><span class="sxs-lookup"><span data-stu-id="23ad3-113">Return Type</span></span> | <span data-ttu-id="23ad3-114">说明</span><span class="sxs-lookup"><span data-stu-id="23ad3-114">Description</span></span> |
 |:---------------|:------------|:------------|
-|[<span data-ttu-id="62668-115">Get deleted item</span><span class="sxs-lookup"><span data-stu-id="62668-115">Get deleted item</span></span>](../api/directory-deleteditems-get.md) | [<span data-ttu-id="62668-116">directoryObject</span><span class="sxs-lookup"><span data-stu-id="62668-116">directoryObject</span></span>](directoryobject.md) | <span data-ttu-id="62668-117">获取已删除项目的属性。</span><span class="sxs-lookup"><span data-stu-id="62668-117">Gets the properties of a deleted item.</span></span> |
-|[<span data-ttu-id="62668-118">Restore deleted item</span><span class="sxs-lookup"><span data-stu-id="62668-118">Restore deleted item</span></span>](../api/directory-deleteditems-restore.md) |[<span data-ttu-id="62668-119">directoryObject</span><span class="sxs-lookup"><span data-stu-id="62668-119">directoryObject</span></span>](directoryobject.md)| <span data-ttu-id="62668-120">还原最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="62668-120">Restores a recently deleted item.</span></span> |
-|[<span data-ttu-id="62668-121">List deleted items</span><span class="sxs-lookup"><span data-stu-id="62668-121">List deleted items</span></span>](../api/directory-deleteditems-list.md) |<span data-ttu-id="62668-122">[directoryObject](directoryobject.md) 集合</span><span class="sxs-lookup"><span data-stu-id="62668-122">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="62668-123">获取最近删除的项目列表。</span><span class="sxs-lookup"><span data-stu-id="62668-123">Gets a list of recently deleted items.</span></span> |
-|[<span data-ttu-id="62668-124">Permanently delete an item</span><span class="sxs-lookup"><span data-stu-id="62668-124">Permanently delete an item</span></span>](../api/directory-deleteditems-delete.md) | <span data-ttu-id="62668-125">无</span><span class="sxs-lookup"><span data-stu-id="62668-125">None</span></span> | <span data-ttu-id="62668-126">永久删除项目。</span><span class="sxs-lookup"><span data-stu-id="62668-126">Permanently deletes an item.</span></span> |
-|[<span data-ttu-id="62668-127">列出用户拥有的已删除项目</span><span class="sxs-lookup"><span data-stu-id="62668-127">List deleted items owned by a user</span></span>](../api/directory-deleteditems-user-owned.md) | <span data-ttu-id="62668-128">[directoryObject](directoryobject.md) collection</span><span class="sxs-lookup"><span data-stu-id="62668-128">[directoryObject](directoryobject.md) collection</span></span> | <span data-ttu-id="62668-129">列出用户拥有的目录项。</span><span class="sxs-lookup"><span data-stu-id="62668-129">Lists directory items owned by a user.</span></span> |
+|[<span data-ttu-id="23ad3-115">Get deleted item</span><span class="sxs-lookup"><span data-stu-id="23ad3-115">Get deleted item</span></span>](../api/directory-deleteditems-get.md) | [<span data-ttu-id="23ad3-116">directoryObject</span><span class="sxs-lookup"><span data-stu-id="23ad3-116">directoryObject</span></span>](directoryobject.md) | <span data-ttu-id="23ad3-117">获取已删除项目的属性。</span><span class="sxs-lookup"><span data-stu-id="23ad3-117">Gets the properties of a deleted item.</span></span> |
+|[<span data-ttu-id="23ad3-118">Restore deleted item</span><span class="sxs-lookup"><span data-stu-id="23ad3-118">Restore deleted item</span></span>](../api/directory-deleteditems-restore.md) |[<span data-ttu-id="23ad3-119">directoryObject</span><span class="sxs-lookup"><span data-stu-id="23ad3-119">directoryObject</span></span>](directoryobject.md)| <span data-ttu-id="23ad3-120">还原最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="23ad3-120">Restores a recently deleted item.</span></span> |
+|[<span data-ttu-id="23ad3-121">List deleted items</span><span class="sxs-lookup"><span data-stu-id="23ad3-121">List deleted items</span></span>](../api/directory-deleteditems-list.md) |<span data-ttu-id="23ad3-122">[directoryObject](directoryobject.md) 集合</span><span class="sxs-lookup"><span data-stu-id="23ad3-122">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="23ad3-123">获取最近删除的项目列表。</span><span class="sxs-lookup"><span data-stu-id="23ad3-123">Gets a list of recently deleted items.</span></span> |
+|[<span data-ttu-id="23ad3-124">Permanently delete an item</span><span class="sxs-lookup"><span data-stu-id="23ad3-124">Permanently delete an item</span></span>](../api/directory-deleteditems-delete.md) | <span data-ttu-id="23ad3-125">无</span><span class="sxs-lookup"><span data-stu-id="23ad3-125">None</span></span> | <span data-ttu-id="23ad3-126">永久删除项目。</span><span class="sxs-lookup"><span data-stu-id="23ad3-126">Permanently deletes an item.</span></span> |
+|[<span data-ttu-id="23ad3-127">列出用户拥有的已删除项目</span><span class="sxs-lookup"><span data-stu-id="23ad3-127">List deleted items owned by a user</span></span>](../api/directory-deleteditems-user-owned.md) | <span data-ttu-id="23ad3-128">[directoryObject](directoryobject.md) collection</span><span class="sxs-lookup"><span data-stu-id="23ad3-128">[directoryObject](directoryobject.md) collection</span></span> | <span data-ttu-id="23ad3-129">列出用户拥有的目录项。</span><span class="sxs-lookup"><span data-stu-id="23ad3-129">Lists directory items owned by a user.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="62668-130">关系</span><span class="sxs-lookup"><span data-stu-id="62668-130">Relationships</span></span>
-| <span data-ttu-id="62668-131">关系</span><span class="sxs-lookup"><span data-stu-id="62668-131">Relationship</span></span> | <span data-ttu-id="62668-132">类型</span><span class="sxs-lookup"><span data-stu-id="62668-132">Type</span></span>   |<span data-ttu-id="62668-133">说明</span><span class="sxs-lookup"><span data-stu-id="62668-133">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="23ad3-130">关系</span><span class="sxs-lookup"><span data-stu-id="23ad3-130">Relationships</span></span>
+| <span data-ttu-id="23ad3-131">关系</span><span class="sxs-lookup"><span data-stu-id="23ad3-131">Relationship</span></span> | <span data-ttu-id="23ad3-132">类型</span><span class="sxs-lookup"><span data-stu-id="23ad3-132">Type</span></span>   |<span data-ttu-id="23ad3-133">说明</span><span class="sxs-lookup"><span data-stu-id="23ad3-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62668-134">deletedItems</span><span class="sxs-lookup"><span data-stu-id="62668-134">deletedItems</span></span>|<span data-ttu-id="62668-135">[directoryObject](directoryobject.md) 集合</span><span class="sxs-lookup"><span data-stu-id="62668-135">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="62668-136">最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="62668-136">Recently deleted items.</span></span> <span data-ttu-id="62668-137">只读。</span><span class="sxs-lookup"><span data-stu-id="62668-137">Read-only.</span></span> <span data-ttu-id="62668-138">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="62668-138">Nullable.</span></span>|
+|<span data-ttu-id="23ad3-134">deletedItems</span><span class="sxs-lookup"><span data-stu-id="23ad3-134">deletedItems</span></span>|<span data-ttu-id="23ad3-135">[directoryObject](directoryobject.md) 集合</span><span class="sxs-lookup"><span data-stu-id="23ad3-135">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="23ad3-136">最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="23ad3-136">Recently deleted items.</span></span> <span data-ttu-id="23ad3-137">只读。</span><span class="sxs-lookup"><span data-stu-id="23ad3-137">Read-only.</span></span> <span data-ttu-id="23ad3-138">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="23ad3-138">Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="62668-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="62668-139">JSON representation</span></span>
-<span data-ttu-id="62668-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="62668-140">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="23ad3-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="23ad3-139">JSON representation</span></span>
+<span data-ttu-id="23ad3-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23ad3-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -47,7 +47,7 @@ ms.locfileid: "36032744"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="62668-141">示例</span><span class="sxs-lookup"><span data-stu-id="62668-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="23ad3-141">示例</span><span class="sxs-lookup"><span data-stu-id="23ad3-141">Example</span></span>
 
 <!--{"blockType": "request"}-->
 ```http

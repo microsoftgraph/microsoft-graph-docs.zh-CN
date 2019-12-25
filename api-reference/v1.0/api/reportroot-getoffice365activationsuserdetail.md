@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: e3171ed3e6e62758828cc37a1e2f2e494a22b8a9
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e403643b01315741cc28c19b32c1aed0b2409e6c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729712"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865417"
 ---
-# <a name="reportroot-getoffice365activationsuserdetail"></a><span data-ttu-id="d2d5e-103">reportRoot: getOffice365ActivationsUserDetail</span><span class="sxs-lookup"><span data-stu-id="d2d5e-103">reportRoot: getOffice365ActivationsUserDetail</span></span>
+# <a name="reportroot-getoffice365activationsuserdetail"></a><span data-ttu-id="e98ab-103">reportRoot: getOffice365ActivationsUserDetail</span><span class="sxs-lookup"><span data-stu-id="e98ab-103">reportRoot: getOffice365ActivationsUserDetail</span></span>
 
-<span data-ttu-id="d2d5e-104">获取已激活 Office 365 的用户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-104">Get details about users who have activated Office 365.</span></span>
+<span data-ttu-id="e98ab-104">获取已激活 Office 365 的用户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="e98ab-104">Get details about users who have activated Office 365.</span></span>
 
-> <span data-ttu-id="d2d5e-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-105">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
+> <span data-ttu-id="e98ab-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。</span><span class="sxs-lookup"><span data-stu-id="e98ab-105">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d2d5e-106">权限</span><span class="sxs-lookup"><span data-stu-id="d2d5e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e98ab-106">权限</span><span class="sxs-lookup"><span data-stu-id="e98ab-106">Permissions</span></span>
 
-<span data-ttu-id="d2d5e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e98ab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e98ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d2d5e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="d2d5e-109">Permission type</span></span>                        | <span data-ttu-id="d2d5e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d2d5e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e98ab-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e98ab-109">Permission type</span></span>                        | <span data-ttu-id="e98ab-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e98ab-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="d2d5e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d2d5e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d2d5e-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2d5e-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="d2d5e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d2d5e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2d5e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-114">Not supported.</span></span>                           |
-| <span data-ttu-id="d2d5e-115">应用</span><span class="sxs-lookup"><span data-stu-id="d2d5e-115">Application</span></span>                            | <span data-ttu-id="d2d5e-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2d5e-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e98ab-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e98ab-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e98ab-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e98ab-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e98ab-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e98ab-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e98ab-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e98ab-114">Not supported.</span></span>                           |
+| <span data-ttu-id="e98ab-115">应用</span><span class="sxs-lookup"><span data-stu-id="e98ab-115">Application</span></span>                            | <span data-ttu-id="e98ab-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e98ab-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="d2d5e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d2d5e-117">HTTP request</span></span>
+<span data-ttu-id="e98ab-117">**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。</span><span class="sxs-lookup"><span data-stu-id="e98ab-117">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="e98ab-118">有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。</span><span class="sxs-lookup"><span data-stu-id="e98ab-118">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="e98ab-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e98ab-119">HTTP request</span></span>
 
 
 <!-- { "blockType": "ignored" } --> 
@@ -37,41 +39,41 @@ ms.locfileid: "36729712"
 GET /reports/getOffice365ActivationsUserDetail
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d2d5e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="d2d5e-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e98ab-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e98ab-120">Request headers</span></span>
 
-| <span data-ttu-id="d2d5e-119">名称</span><span class="sxs-lookup"><span data-stu-id="d2d5e-119">Name</span></span>          | <span data-ttu-id="d2d5e-120">说明</span><span class="sxs-lookup"><span data-stu-id="d2d5e-120">Description</span></span>                              |
+| <span data-ttu-id="e98ab-121">名称</span><span class="sxs-lookup"><span data-stu-id="e98ab-121">Name</span></span>          | <span data-ttu-id="e98ab-122">说明</span><span class="sxs-lookup"><span data-stu-id="e98ab-122">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="d2d5e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2d5e-121">Authorization</span></span> | <span data-ttu-id="d2d5e-p102">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-p102">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="d2d5e-124">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="d2d5e-124">If-None-Match</span></span> | <span data-ttu-id="d2d5e-125">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-125">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="d2d5e-126">可选。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-126">Optional.</span></span> |
+| <span data-ttu-id="e98ab-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e98ab-123">Authorization</span></span> | <span data-ttu-id="e98ab-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="e98ab-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="e98ab-126">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="e98ab-126">If-None-Match</span></span> | <span data-ttu-id="e98ab-127">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="e98ab-127">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="e98ab-128">可选。</span><span class="sxs-lookup"><span data-stu-id="e98ab-128">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d2d5e-127">响应</span><span class="sxs-lookup"><span data-stu-id="d2d5e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e98ab-129">响应</span><span class="sxs-lookup"><span data-stu-id="e98ab-129">Response</span></span>
 
-<span data-ttu-id="d2d5e-128">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-128">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="d2d5e-129">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-129">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="e98ab-130">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="e98ab-130">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="e98ab-131">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="e98ab-131">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="d2d5e-130">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-130">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="e98ab-132">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="e98ab-132">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="d2d5e-131">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-131">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="e98ab-133">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="e98ab-133">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="d2d5e-132">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="d2d5e-132">Report Refresh Date</span></span>
-- <span data-ttu-id="d2d5e-133">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="d2d5e-133">User Principal Name</span></span>
-- <span data-ttu-id="d2d5e-134">显示名称</span><span class="sxs-lookup"><span data-stu-id="d2d5e-134">Display Name</span></span>
-- <span data-ttu-id="d2d5e-135">产品类型</span><span class="sxs-lookup"><span data-stu-id="d2d5e-135">Product Type</span></span>
-- <span data-ttu-id="d2d5e-136">上次激活日期</span><span class="sxs-lookup"><span data-stu-id="d2d5e-136">Last Activated Date</span></span>
-- <span data-ttu-id="d2d5e-137">Windows</span><span class="sxs-lookup"><span data-stu-id="d2d5e-137">Windows</span></span>
-- <span data-ttu-id="d2d5e-138">Mac</span><span class="sxs-lookup"><span data-stu-id="d2d5e-138">Mac</span></span>
-- <span data-ttu-id="d2d5e-139">Windows 10 移动版</span><span class="sxs-lookup"><span data-stu-id="d2d5e-139">Windows 10 Mobile</span></span>
-- <span data-ttu-id="d2d5e-140">iOS</span><span class="sxs-lookup"><span data-stu-id="d2d5e-140">iOS</span></span>
-- <span data-ttu-id="d2d5e-141">Android</span><span class="sxs-lookup"><span data-stu-id="d2d5e-141">Android</span></span>
-- <span data-ttu-id="d2d5e-142">在共享计算机上激活</span><span class="sxs-lookup"><span data-stu-id="d2d5e-142">Activated On Shared Computer</span></span>
+- <span data-ttu-id="e98ab-134">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="e98ab-134">Report Refresh Date</span></span>
+- <span data-ttu-id="e98ab-135">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="e98ab-135">User Principal Name</span></span>
+- <span data-ttu-id="e98ab-136">显示名称</span><span class="sxs-lookup"><span data-stu-id="e98ab-136">Display Name</span></span>
+- <span data-ttu-id="e98ab-137">产品类型</span><span class="sxs-lookup"><span data-stu-id="e98ab-137">Product Type</span></span>
+- <span data-ttu-id="e98ab-138">上次激活日期</span><span class="sxs-lookup"><span data-stu-id="e98ab-138">Last Activated Date</span></span>
+- <span data-ttu-id="e98ab-139">Windows</span><span class="sxs-lookup"><span data-stu-id="e98ab-139">Windows</span></span>
+- <span data-ttu-id="e98ab-140">Mac</span><span class="sxs-lookup"><span data-stu-id="e98ab-140">Mac</span></span>
+- <span data-ttu-id="e98ab-141">Windows 10 移动版</span><span class="sxs-lookup"><span data-stu-id="e98ab-141">Windows 10 Mobile</span></span>
+- <span data-ttu-id="e98ab-142">iOS</span><span class="sxs-lookup"><span data-stu-id="e98ab-142">iOS</span></span>
+- <span data-ttu-id="e98ab-143">Android</span><span class="sxs-lookup"><span data-stu-id="e98ab-143">Android</span></span>
+- <span data-ttu-id="e98ab-144">在共享计算机上激活</span><span class="sxs-lookup"><span data-stu-id="e98ab-144">Activated On Shared Computer</span></span>
 
-## <a name="example"></a><span data-ttu-id="d2d5e-143">示例</span><span class="sxs-lookup"><span data-stu-id="d2d5e-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e98ab-145">示例</span><span class="sxs-lookup"><span data-stu-id="e98ab-145">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d2d5e-144">请求</span><span class="sxs-lookup"><span data-stu-id="d2d5e-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e98ab-146">请求</span><span class="sxs-lookup"><span data-stu-id="e98ab-146">Request</span></span>
 
-<span data-ttu-id="d2d5e-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-145">The following is an example of the request.</span></span>
+<span data-ttu-id="e98ab-147">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e98ab-147">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d2d5e-146">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d2d5e-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e98ab-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="e98ab-148">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -81,28 +83,28 @@ GET /reports/getOffice365ActivationsUserDetail
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserDetail
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d2d5e-147">C#</span><span class="sxs-lookup"><span data-stu-id="d2d5e-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e98ab-149">C#</span><span class="sxs-lookup"><span data-stu-id="e98ab-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activationsuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d2d5e-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2d5e-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e98ab-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e98ab-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activationsuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d2d5e-149">目标-C</span><span class="sxs-lookup"><span data-stu-id="d2d5e-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e98ab-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e98ab-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationsuserdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="d2d5e-150">Java</span><span class="sxs-lookup"><span data-stu-id="d2d5e-150">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e98ab-152">Java</span><span class="sxs-lookup"><span data-stu-id="e98ab-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationsuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d2d5e-151">响应</span><span class="sxs-lookup"><span data-stu-id="d2d5e-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e98ab-153">响应</span><span class="sxs-lookup"><span data-stu-id="e98ab-153">Response</span></span>
 
-<span data-ttu-id="d2d5e-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-152">The following is an example of the response.</span></span>
+<span data-ttu-id="e98ab-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e98ab-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -116,7 +118,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="d2d5e-153">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="d2d5e-153">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="e98ab-155">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="e98ab-155">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
