@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a8abced56ccc8bfe3361b006b2457459db0498a8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6b618cd8b5f2cb9ec84c2ea1f57086ff7b6d526f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894316"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864120"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Subscription subscription = new Subscription();
-subscription.changeType = "created,updated";
+subscription.changeType = "updated";
 subscription.notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient";
 subscription.resource = "me/mailFolders('Inbox')/messages";
 subscription.expirationDateTime = "2016-11-20T18:23:45.9356913Z";
