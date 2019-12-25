@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 0cdad541948ff1ab98c62600bc846036fdb85c42
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 3d795b1fc43d4c43aaf06dcce5811a03751148d5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633837"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863898"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -38,7 +38,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
 
 ### <a name="group-in-outlook-example"></a>Outlook 中的组示例
 
-下面是 Outlook 中组的 JSON 表示形式。 
+下面是 Outlook 中组的 JSON 表示形式。
 
 ```http
 
@@ -66,17 +66,17 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
     "visibility": "Public"
 }
 ```
-若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/zh-CN/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>安全组和启用邮件的安全组
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/zh-CN/library/bb123521%28v=exchg.160%29.aspx)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx)。
 
 ### <a name="security-group-example"></a>安全组示例
 
-下面是安全组的 JSON 表示形式。 
+下面是安全组的 JSON 表示形式。
 
 ```http
 {
@@ -96,9 +96,9 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
     "securityEnabled": true
 }
 ```
-## <a name="dynamic-membership"></a>动态成员资格 
+## <a name="dynamic-membership"></a>动态成员资格
 
-所有类型的组都可以有成员资格规则，用于根据用户属性自动在组中添加或删除成员。 例如，“市场营销部员工”组包含所有 department 属性设置为“Marketing”的用户，这样可以将新入职的市场营销部员工自动添加到组中，并自动在组中删除从市场营销部离职的员工。 在组创建期间，可以在“membershipRule”字段中将此规则指定为 `"membershipRule": 'user.department -eq "Marketing"'`。 GroupType 还必须包括 `"DynamicMembership"`。 下面的请求为市场营销部员工新建 Office 365 组： 
+所有类型的组都可以有成员资格规则，用于根据用户属性自动在组中添加或删除成员。 例如，“市场营销部员工”组包含所有 department 属性设置为“Marketing”的用户，这样可以将新入职的市场营销部员工自动添加到组中，并自动在组中删除从市场营销部离职的员工。 在组创建期间，可以在“membershipRule”字段中将此规则指定为 `"membershipRule": 'user.department -eq "Marketing"'`。 GroupType 还必须包括 `"DynamicMembership"`。 下面的请求为市场营销部员工新建 Office 365 组：
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -117,15 +117,15 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
+若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
-> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/zh-CN/pricing/details/active-directory/) 或更高层拥有许可证。
+> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/pricing/details/active-directory/) 或更高层拥有许可证。
 
 ## <a name="other-types-of-groups"></a>其他类型的组
 
 Yammer 中的 office 365 组用于通过 Yammer 帖子促进用户协作。 可以通过读取请求返回这种类型的组，但无法通过 API 访问它们的帖子。 如果对组启用了 Yammer 帖子和对话源，将会禁用默认的 Office 365 组对话。 若要了解详细信息，请参阅 [Yammer 开发人员 API 文档](https://developer.yammer.com/docs)。
 
-## <a name="group-based-licensing"></a>基于组的许可 
+## <a name="group-based-licensing"></a>基于组的许可
 
 可以使用基于组的许可将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 功能只能与安全组和有 `securityEnabled=TRUE` 的 Office 365 组一起使用。 若要了解基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中基于组的许可？](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 

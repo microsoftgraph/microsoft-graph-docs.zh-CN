@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: fc47befc479b2236a7bda83515cfa0b61c2601b1
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e548fed509bcf26ce7c733354a5ab3c52ab551c1
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969876"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868483"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 
@@ -33,7 +33,7 @@ ms.locfileid: "37969876"
 3. 复制并粘贴下面的 URL，再选择“导入”****。
  
     ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
     ```
 
 现在，应该会在右上角的环境下拉列表中看到“Microsoft Graph 环境”****（以眼睛图标为标识）。 现在需要[创建环境](#using-the-collection)。
@@ -53,18 +53,18 @@ ms.locfileid: "37969876"
 4. 粘贴以下两个 URL，再选择每个 URL 后面的“导入”****。
 
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json
       
     ```
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
 
     ```
 
-现在，应该会在“集合”**** 窗格中看到“Microsoft Graph v1.0”**** 集合。
+现在，应该会在“**集合**”窗格中看到“**Microsoft Graph**”集合。
 
 ## <a name="using-the-collection"></a>使用集合
-在 Postman 中创建 **Microsoft Graph v1.0** 集合和 **Microsoftr Graph 环境**后，请按照以下步骤操作。
+在 Postman 中创建 **Microsoft Graph** 集合和 **Microsoftr Graph 环境**后，请按照以下步骤操作。
 
 ### <a name="set-up-application-api-calls"></a>设置应用程序 API 调用
 
@@ -74,10 +74,10 @@ ms.locfileid: "37969876"
 4. 在**当前**（而不是**初始**）变量中，输入你的 Microsoft 标识应用程序：**ClientID**、**ClientSecret** 和 **TenantID**。 
  若要详细了解如何创建应用程序，以及如何让管理员同意仅限应用的流，请参阅[使用 Postman 执行 Microsoft Graph 调用](https://developer.microsoft.com/zh-CN/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/)博客文章。
 
-5. 选择“更新”****。 关闭“管理环境”**** 对话框。 在左侧的“MicrosoftGraph v1.0 | 应用程序”**** 集合中，选择“获取仅限应用的访问令牌”****。 然后，选择右侧的“发送”****。
+5. 选择“更新”****。 关闭“管理环境”**** 对话框。 在左侧的“**MicrosoftGraph | 应用程序**”集合中，选择“**获取仅限应用的访问令牌**”。 然后，选择右侧的“发送”****。
 6. 依次展开“应用程序 | 用户”**** 文件夹，再选择“获取用户”****。 然后，选择“发送”****。
 
-现在，你已快速掌握 Microsoft Graph v1.0 集合。
+现在，你可以开始使用 Microsoft Graph 集合了。
 
 >**注意：** 若要在集合中运行其他 API，需要同意应用程序拥有必需权限。
 

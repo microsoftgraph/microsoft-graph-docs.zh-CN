@@ -5,18 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ad5c50d1210d32304ec20f75afe2928e577f3c17
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 68cd814afae41f89a8101af4e08bc635aec4ab24
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37204003"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863884"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
 [用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
 
-**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/zh-CN/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -104,7 +104,7 @@ ms.locfileid: "37204003"
 >
 > * 对于 Microsoft 帐户：`https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> 要在 Outlook 网页版的当前版本中打开事件，请将 URL 转换为下述格式之一，并使用该 URL 打开事件： 
+> 要在 Outlook 网页版的当前版本中打开事件，请将 URL 转换为下述格式之一，并使用该 URL 打开事件：
 >
 > * 对于工作或学校帐户：`https://outlook.office365.com/calendar/item/{event-id}`
 >

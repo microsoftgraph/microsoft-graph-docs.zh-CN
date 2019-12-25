@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 64b1f80a323df5290dc9d24e8f3ec4fbfcebdef0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 253863ce5e513d4cda090e79a87d082e0f7907b7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39923593"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868049"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,26 @@ ms.locfileid: "39923593"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="december-2019"></a>2019 年 12 月
+
+### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 增加了对包含资源数据的通知订阅的支持。 目前支持的资源是 Microsoft Teams 频道和聊天中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源。 订阅应用必须实施其他授权和解密代码才能使用此功能。 有关详细信息，请参阅[设置聊天消息（包括消息属性）的更改通知（预览版）](webhooks-with-resource-data.md)。|
+
+### <a name="cloud-communications"></a>云通信
+
+在 beta 版中引入了状态并在 v1.0 中添加了云通信。
+
+| **更改类型** | **版本**   | **说明**                          |
+|:---|:---|:---|
+|添加项|beta|添加[状态](/graph/api/resources/presence?view=graph-rest-beta)资源和关联的方法，并引入了 Presence.Read 和 Presence.Read.All 权限。|
+|添加项|v1.0|添加了以下 API：[创建呼叫](/graph/api/application-post-calls?view=graph-rest-1.0)、[呼叫应答](/graph/api/call-answer?view=graph-rest-1.0)、[呼叫拒接](/graph/api/call-reject?view=graph-rest-1.0)、[呼叫获取](/graph/api/call-get?view=graph-rest-1.0)、[呼叫删除](/graph/api/call-delete?view=graph-rest-1.0)、[呼叫静音](/graph/api/call-mute?view=graph-rest-1.0)、[呼叫取消静音](/graph/api/call-unmute?view=graph-rest-1.0)、[呼叫更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-1.0)、[呼叫转移](/graph/api/call-transfer?view=graph-rest-1.0)、[呼叫重定向](/graph/api/call-redirect?view=graph-rest-1.0)、[播放提示](/graph/api/call-playprompt?view=graph-rest-1.0)、[记录回复](/graph/api/call-recordresponse?view=graph-rest-1.0)、[订阅铃声](/graph/api/call-subscribetotone?view=graph-rest-1.0)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-1.0)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-1.0)、[获取参与者](/graph/api/participant-get?view=graph-rest-1.0)、[使参与者静音](/graph/api/participant-mute?view=graph-rest-1.0)、[创建联机会议](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0)、[获取联机会议](/graph/api/onlinemeeting-get?view=graph-rest-1.0)以及[呼叫保持活动](/graph/api/call-keepalive?view=graph-rest-1.0)。|
+|添加项|v1.0|添加了以下资源：[call](/graph/api/resouces/call?view=graph-rest-1.0)、[participant](/graph/api/resouces/participant?view=graph-rest-1.0) 和 [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0)。|
+| 更改        | Beta        | 已将 IVR API 记录重命名为 [recordResponse](/graph/api/call-record?view=graph-rest-beta)。 | 
+| 更改        | Beta        | 删除了 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 对象属性 **isCanceled**、**canceledDateTime** 和 **entryExitAnnouncement**。 已将属性 **joinUrl** 重命名为 **joinWebUrl**。 | 
+| 添加项        | Beta 和 v1.0       | 添加了 [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) 操作。|
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -51,11 +71,23 @@ ms.locfileid: "39923593"
 |添加|beta|向 [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta) 枚举类型添加了 **securityOptions**、**userRightsAssignment**、**auditSetting** 和 **windowsFirewallSettings**成员|
 |添加项|beta|向 [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) 枚举类型添加了 **contentDownloaded** 成员|
 
-### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+### <a name="education"></a>教育
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 增加了对包含资源数据的通知订阅的支持。 目前支持的资源是 Microsoft Teams 频道和聊天中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源。 订阅应用必须实施其他授权和解密代码才能使用此功能。 有关详细信息，请参阅[设置聊天消息（包括消息属性）的更改通知（预览版）](webhooks-with-resource-data.md)。|
+| 添加项 | v1.0 | 已将 [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) 属性添加到[团队](/graph/api/resources/team?view=graph-rest-1.0)资源，以允许调用方获取特定于班级类型的团队的设置。|
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+| **更改类型** | **版本**   | **说明**                          |
+|:---|:---|:---|
+|更改 | beta |更新了 [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) 中的 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为以返回记录的角色。 **appRoleAssignments** 返回向服务主体授予的应用程序角色，而 **appRoleAssignedTo** 返回向服务主体授予应用程序角色的主体。|
+|添加项|beta、v1.0|添加了以下支持：当应用程序无法访问响应集中的某些类型时，返回有限的信息。 有关更多详细信息，请参阅[为不可访问的成员对象返回有限的信息](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>身份和访问 (Azure AD) | 信息保护
+
+| **更改类型** | **版本** | **说明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | beta        | 添加了 [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta)、[get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) 和 [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) API 以管理 [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) 资源。|
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
 
@@ -84,11 +116,25 @@ ms.locfileid: "39923593"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 | Insights API 现在提供  v1.0 版。 这包括[officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0)、[trending](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0)和 [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0)资源，以及相关类型和方法。 查看[为什么与基于文档的见解集成？](social-intel-concept-overview.md#why-integrate-with-document-based-insights)了解更多信息。 |
 
+### <a name="reports--office-365-usage-reports"></a>报告 | Office 365 使用率报告
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 更改          | Beta 和 v1.0  | 若要获得委派权限以允许应用代表用户读取 Office 365 服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。|
+
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
  
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 为新的和编辑过的频道消息和聊天消息添加了[通知](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。
+| 更改 | beta | 更新了执行班次资源（包括 [schedule](/graph/api/resources/schedule?view=graph-rest-beta)、[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)、[shift](/graph/api/resources/shift?view=graph-rest-beta)、[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)、[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)、[timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta)、[swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta) 和 [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta)）读写操作所需的应用程序权限。 **注意：** 应用程序权限当前为个人预览版，不可用于公共用途。|
+
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 添加了新的实体类型 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)。 |
 
 ## <a name="november-2019"></a>2019 年 11 月
 
@@ -102,8 +148,9 @@ ms.locfileid: "39923593"
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 更改        | Beta        | 已将[静音](/graph/api/call-mute?view=graph-rest-beta)和[参与者静音](/graph/api/participant-mute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta)。 | 
-| 更改        | Beta        | 已将[取消静音](/graph/api/call-unmute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta)。 | 
+| 更改        | Beta        | 已将[静音](/graph/api/call-mute?view=graph-rest-beta)和[参与者静音](/graph/api/participant-mute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta)。 |
+| 更改        | Beta        | 已将[取消静音](/graph/api/call-unmute?view=graph-rest-beta)方法的返回类型从 [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) 更改为 [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta)。 |
+| 添加项        | Beta        | 向 [call](/api-reference/beta/resources/call.md) 实体添加了 [keepAlive](/api-reference/beta/api/call-keepalive.md) 操作。 |
 
 ### <a name="cloud-communications--recording"></a>云通信 | 录制
 
@@ -212,15 +259,15 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:----------------|:------------|:---------------------------------------------|
 | 添加项        | beta        | 添加了构成[查询](/graph/api/search-query?view=graph-rest-beta)和[索引](/graph/api/resource/indexing-api-overview?view=graph-rest-beta)功能的[Microsoft 搜索 API](search-concept-overview.md)。 |
 | 添加项        | beta        | 添加了[查询](/graph/api/search-query?view=graph-rest-beta)操作。 |
-| 添加        | beta        | 添加了 [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta)、[searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta)、[searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta)、[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta)、[searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) 和 [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta) 复杂类型。 |
-| 添加        | beta        | 添加了 [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta)、[schema](/graph/api/resource/schema?view=graph-rest-beta)[externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) 和 [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) 实体以及这些实体公开的方法。 |
+| 添加        | beta        | 添加了 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta)、[searchQuery](/graph/api/resources/searchquery?view=graph-rest-beta)、[searchQueryString](/graph/api/resources/searchquerystring?view=graph-rest-beta)、[searchResponse](/graph/api/resources/searchresponse?view=graph-rest-beta)、[searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) 和 [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) 复杂类型。 |
+| 添加        | beta        | 添加了 [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta)、[schema](/graph/api/resources/schema?view=graph-rest-beta)[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 和 [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) 实体以及这些实体公开的方法。 |
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | Beta | 增加了 [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta)、[openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta)、[swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta)，以及 [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) 资源和关联的方法。|
-| 添加项 | Beta | 添加了 **timeClockEnabled**、**openShiftsEnabled**、**swapShiftsRequestsEnabled**、**offerShiftRequestsEnabled**、 **timeOffRequestsEnabled** 属性至 [日程安排](/graph/api/beta/resources/schedule?view=graph-rest-beta)资源。|
+| 添加项 | Beta | 增加了 [openshift](/graph/api/resources/openshift?view=graph-rest-beta)、[openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta)、[swapShiftChangeRequest](/graph/api/resources/swapShiftChangeRequest?view=graph-rest-beta)，以及 [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta) 资源和关联的方法。|
+| 添加项 | Beta | 添加了 **timeClockEnabled**、**openShiftsEnabled**、**swapShiftsRequestsEnabled**、**offerShiftRequestsEnabled**、 **timeOffRequestsEnabled** 属性至 [日程安排](/graph/api/resources/schedule?view=graph-rest-beta)资源。|
 | 添加项        | Beta          | 添加了其他路由以使用团队和频道 ID [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta) 检索 [driveItem]。 |
 
 ## <a name="october-2019"></a>2019 年 10 月
@@ -357,22 +404,22 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 更改          | beta          | 已将 **detectedSensitiveContent** 实体名称更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)。  | 
-| 删除        | beta          | 已从 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 删除“displayName”****、“uniqueCount”**** 和“matches”**** 属性。  | 
-| 更改          | beta          | 已将“ID”**** 更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 的“sensitiveTypeId”**** 属性。   | 
-| 更改          | beta          | 已将“confidence”**** 更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 的“confidenceLevel”**** 属性。   | 
-| 添加        | beta          | 向 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/ 添加了“count”**** 属性。  | 
-| 删除        | beta          | 从 [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta) 删除了“actionSource”**** 属性。 | 
-| 删除        | beta          | 删除了“auditInfo”**** 实体。 | 
-| 更改          | beta          | 已将“protectByDoNotForwardAction”**** 更改为 [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta)。 | 
-| 添加        | beta          | 向 [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta) 添加了“alignment”**** 属性。 | 
+| 更改          | beta          | 已将 **detectedSensitiveContent** 实体名称更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)。  |
+| 删除        | beta          | 已从 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 删除“displayName”****、“uniqueCount”**** 和“matches”**** 属性。  |
+| 更改          | beta          | 已将“ID”**** 更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 的“sensitiveTypeId”**** 属性。   |
+| 更改          | beta          | 已将“confidence”**** 更改为 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) 的“confidenceLevel”**** 属性。   |
+| 添加        | beta          | 向 [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/ 添加了“count”**** 属性。  |
+| 删除        | beta          | 从 [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta) 删除了“actionSource”**** 属性。 |
+| 删除        | beta          | 删除了“auditInfo”**** 实体。 |
+| 更改          | beta          | 已将“protectByDoNotForwardAction”**** 更改为 [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta)。 |
+| 添加        | beta          | 向 [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta) 添加了“alignment”**** 属性。 |
 | 更改          | beta          | 已将“labelId”**** 属性更改为 [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta) 中的“label”****。 |
 | 更改          | beta          | 已将“classificationIds”**** 属性更改为 [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta) 中的“responsibleSensitivityTypeIds”****。 |
 | 添加        | beta          | 向 [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta) 添加了“actionSource”**** 属性。 |
 | 更改          | beta          | 已将“labelId”**** 属性更改为 [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta) 中的“label”****。 |
 | 更改          | beta          | 已将“classificationIds”**** 属性更改为 [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta) 中的“responsibleSensitivityTypeIds”****。 |
 | 添加        | beta          | 向 [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta) 添加了“actionSource”**** 属性。 |
-| 更改          | beta          | 已将 [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) 枚举值“file”**** 更改为“default”****。 | 
+| 更改          | beta          | 已将 [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) 枚举值“file”**** 更改为“default”****。 |
 | 删除        | beta          | 已从 [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) 枚举中删除“mandatory”**** 值。 |
 | 更改          | beta          | 已将 [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) 枚举值“policyDefault”**** 删除到“default”****。 |
 | 删除        | beta          | 删除了“auditMetadataKey”****。 |
@@ -503,7 +550,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 将属性 **isBroadcast** 添加至资源 [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta)。 |
 | 更改        | Beta        | 在资源 [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) 上将**资源**属性重命名为 **resourceUrl**。 |
 | 更改          | Beta        | 在资源 [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) 上，将属性**code**和**subCode**的类型从字符串更改为 Int32。 |
-| 更改        | Beta        | 在资源 [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) 上将属性 **subcode** 重命名为 **subCode**。 | 
+| 更改        | Beta        | 在资源 [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) 上将属性 **subcode** 重命名为 **subCode**。 |
 
 ### <a name="files-onedrive-for-business-and-onedrive-personal"></a>文件（OneDrive for Business 和 OneDrive 个人版）
 
@@ -1619,7 +1666,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
-| **更改类型** | **版本**   | **说明**                          |
+| **更改类型** | **Version**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | [message](/graph/api/resources/message?view=graph-rest-1.0) 实体的 **** 属性现在消息创建上可写。 |
 
@@ -3925,7 +3972,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **Version** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向**message**实体添加了_inferenceClassification_和_扩展_。 |
 

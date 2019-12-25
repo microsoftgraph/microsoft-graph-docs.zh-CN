@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3eaf72c234dddc8531e9ba427e5bf1c9042b2f58
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 87ef4a7a8db8eaad8c99972bed5113f847bb3a25
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720009"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868189"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -43,6 +43,8 @@ GET /teams/{id}/channels/{id}/messages
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
+
+> **请注意：**[GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) 支持按日期进行筛选，此时得到的数据与使用 GET /teams/{id}/channels/{id}/messages 时类似。
 
 ## <a name="request-headers"></a>请求标头
 

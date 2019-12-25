@@ -5,12 +5,12 @@ localization_priority: Priority
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c9926e294abb7ef616c90fafe6b8756228c55de6
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 396a7cf7dae5d72bb104d06a1461cdd790136ffc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703796"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864123"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -80,7 +80,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "created,updated",
+   "changeType": "updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -143,7 +143,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "created,updated",
+  "changeType": "updated",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",

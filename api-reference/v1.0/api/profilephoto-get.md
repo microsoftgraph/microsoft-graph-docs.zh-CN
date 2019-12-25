@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ae531d0e5bd8aa759f0c72a1fc3ac420467127e1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 471c5bbdb69f1bb67e05c271aaf7f67a977cb89d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022297"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865466"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -34,9 +34,9 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 |委派（个人 Microsoft 帐户） | 不支持 |
 |应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
-> **注意：** 当前有一个[已知问题](https://docs.microsoft.com/zh-CN/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
-## <a name="http-request"></a>HTTP 请求 
+## <a name="http-request"></a>HTTP 请求
 
 ### <a name="get-the-photo"></a>获取照片
 <!-- { "blockType": "ignored" } -->
@@ -103,7 +103,7 @@ GET /groups/{id}/photos/{size}
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>响应 
+##### <a name="response"></a>响应
 包含所请求照片的二进制数据。 HTTP 响应代码为 200。
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>示例 2：为已登录用户获取 48x48 的照片
@@ -130,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 
 ##### <a name="response"></a>响应
 
-以下响应数据显示照片的元数据。 
+以下响应数据显示照片的元数据。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

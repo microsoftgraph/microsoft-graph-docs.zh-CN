@@ -5,28 +5,28 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: afbb9ba469dad7751422902ea4a9876b6ca6b904
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: db10ddaf3e1cb7984ddfe16854f60c3d68dbb7ae
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704127"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866621"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 Microsoft 搜索 API，应用可以查询 Office 365 数据。
+可使用 Microsoft 搜索 API 来查询应用中的 Office 365 数据。
 
-搜索请求在登录用户的上下文中执行，并使用[包含委派权限的访问令牌](/graph/auth-v2-user)进行标识。
+搜索请求在登录用户的上下文中运行，并使用[包含委派权限的访问令牌](/graph/auth-v2-user)进行标识。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="common-use-cases"></a>常见用例
 
-搜索 API 提供了[查询](../api/search-query.md)方法，可在 Microsoft 搜索中跨数据搜索。 本部分列出了常见用例，具体取决于在**查询**请求正文中设置的属性。
+Microsoft 搜索 API 提供了[查询](../api/search-query.md)方法，可在 Microsoft 搜索中跨数据搜索。 本部分列出了常见用例，具体取决于在**查询**请求正文中设置的属性。
 
-代表用户执行搜索请求。 削减搜索结果以强制执行应用到项目的任何访问控制。  例如，在文件的上下文中，将在搜索请求过程中评估对文件的权限。 用户可以访问搜索中的项目数少于可以通过枚举 API 访问的项目数。
+代表用户运行搜索请求。 设定搜索结果范围，以强制执行应用到项目的任何访问控制。  例如，在文件的上下文中，将在搜索请求过程中评估对文件的权限。 用户在搜索中可访问的项目数不得多于其可通过枚举 API 调用的项目数。
 
 | 用例 | 要在查询请求正文中定义的属性 |
 |:------------------|:---------|
@@ -53,9 +53,9 @@ ms.locfileid: "38704127"
 
 通过在**查询**请求正文中指定以下两个属性来控制搜索结果的分页：
 
-- **起始数量**，该值是从 0 开始的整数，在页面上列出搜索结果。 默认值为 0。
+- **起始数量** - 一个整数，它表示从 0 开始的起始数，在页面上列出搜索结果。 默认值为 0。
 
-- **大小**，该值是指示要为页面返回的结果数的整数。 默认值为 25。
+- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25。
 
 如果你正在搜索 **event** 或 **message** 实体，则注意以下限制：
 
@@ -84,16 +84,16 @@ ms.locfileid: "38704127"
 
 搜索 **externalItem** 实体时，使用 **stored_fields** 属性指定要在响应中返回的字段。
 
-**stored_fields** 中指定的名称应为可检索的托管属性。 已针对 Microsoft 搜索的租户管理中的连接配置了这些属性名称。
+**stored_fields** 中指定的字段应为可检索的托管属性，且它们已通过 Microsoft 搜索租户管理针对连接进行了配置。
 
 ### <a name="keyword-query-language-kql-support"></a>关键字查询语言 (KQL) 支持
 
 在实际搜索查询字符串（**查询**请求正文的**查询**属性）中的 KQL 语法中，指定自由文本关键字、运算符（例如 `AND`、`OR`）和属性限制。 语法和命令取决于在同一**查询**请求主体中指向的实体类型（在 **entityTypes** 属性中）。
 
-可搜索的属性各不相同，具体取决于实体类型：
+可搜索的属性各不相同，具体取决于实体类型。 有关详细信息，请参阅：
 
-- [邮件属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
-- [driveItem 属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+- [电子邮件属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
+- [站点属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
 ## <a name="error-handling"></a>错误处理
 

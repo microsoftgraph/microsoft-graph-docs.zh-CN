@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ef5da57a90a4e6c8727f18c146759a309d97161
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 699c2b634bf477bf9f797aab4eb290013a57d801
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396784"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865620"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|表示响应中 **availabilityView** 中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值为 1440。 可选。|
+|availabilityViewInterval|Int32|表示响应中 **availabilityView** 中的时间段的持续时间。 默认值为 30 分钟，最小值为 5，最大值为 1440。 可选。|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段结束的日期、时间和时区。|
 |schedules|String 集合|要获取忙/闲状态信息的用户、通讯组列表或资源的 SMTP 地址集合。|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段开始的日期、时间和时区。|

@@ -1,22 +1,22 @@
 ---
-title: 创建联机会议
+title: 创建 onlineMeeting
 description: 代表请求正文中指定的用户创建联机会议。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 61d49c44699de01432ec8cb9cc1075316decafb4
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 96b52984c199c1f66688752c34ebca4094cd1d39
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302133"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868406"
 ---
-# <a name="create-online-meeting"></a>创建联机会议
+# <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表用户使用用户令牌中的对象 ID (oid) 创建联机会议。
+代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。
 
 > **注意**：会议不会显示在用户的日历上。
 
@@ -27,8 +27,7 @@ ms.locfileid: "38302133"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | OnlineMeetings.ReadWrite.All                |
-
+| 应用程序                            | 不支持                |
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,13 +49,14 @@ POST /me/onlineMeetings
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-online-meeting-with-application-token"></a>示例 1：使用应用程序令牌创建联机会议
 
 #### <a name="request"></a>请求
 
->**注意：** 使用应用程序令牌创建联机会议的过程已弃用。 今后，将 /me 路径与用户令牌结合使用来创建联机会议。
+> [!Note]
+> 使用应用程序令牌创建联机会议的过程已弃用。 今后，将 /me 路径与用户令牌结合使用来创建联机会议。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -68,7 +68,6 @@ POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
 
 {
-  "isBroadcast": "false",
   "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
   "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
   "subject":"Application Token Meeting",
@@ -122,7 +121,6 @@ Content-Type: application/json
     "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
@@ -132,9 +130,7 @@ Content-Type: application/json
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
   "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-  "isCanceled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "isBroadcast": false,
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
       "identity": {
@@ -201,14 +197,12 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
-  "accessLevel": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
     "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
@@ -217,12 +211,8 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2019-09-14T18:37:29.1973954Z",
   "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-  "isCanceled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "isBroadcast": false,
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
       "identity": {
@@ -273,14 +263,12 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
-  "accessLevel": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
     "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
     "messageId": "1563302249053",
@@ -289,12 +277,8 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2018-03-19T09:46:02Z",
   "id": "550fae72-d251-43ec-868c-373732c2704f_19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
-  "isCanceled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "isBroadcast": false,
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
       "identity": {

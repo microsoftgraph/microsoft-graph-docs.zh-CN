@@ -4,12 +4,12 @@ description: '列出所有团队 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 847af7e9b2ff9f725ca2ebd2d7a1e82916e33c27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5161abd3e21a394ebe5872efc9a75c103d75041d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580986"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868518"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 
@@ -58,7 +58,7 @@ Content-length: xxx
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **注意**：$filter on /groups 只能通过 beta 终结点使用。 resourceProvisioningOptions 在 v1.0 和 beta 中可用。
+> **注意**：仅可通过 beta 端点按 resourceProvisioningOptions 对组进行筛选。 resourceProvisioningOptions 在 v1.0 和 beta 中可用。
 
 > **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
 

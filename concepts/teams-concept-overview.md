@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c374adf6369790c92cfc8261367bfa233276c82a
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 4214d2d250f45d8f57a6ac3235575aa5327eb1e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969163"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866901"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -92,5 +92,5 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 - 深入了解[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源的方法、属性和关系。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 - 阅读更多有关 [Microsoft Teams 编程模型](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview)的信息。
-- 探索[通话和联机会议 API](/graph/api/resources/calls-api-overview?view=graph-rest-beta)。
+- 了解[云通信 API](/graph/api/resources/communications-api-overview?view=graph-rest-beta)。
 - 立即开始使用示例代码：[Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

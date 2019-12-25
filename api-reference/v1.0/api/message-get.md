@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d15d1a148f56cb07b7526b6735385e4530abce41
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ab57e15b88cef2ba1749c19a1b00d3521136f274
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703810"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865564"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -36,6 +36,8 @@ ms.locfileid: "38703810"
 |应用程序 | Mail.ReadBasic.All、Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
+
+要获取指定的邮件：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -43,8 +45,20 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
+
+要获取指定邮件的 MIME 内容：
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+使用 `$value` 参数获取邮件的 MIME 内容。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -57,6 +71,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
+
+如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是**邮件**资源。
 
 
 ## <a name="examples"></a>示例
@@ -297,6 +313,114 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
+
+### <a name="example-4"></a>示例 4
+#### <a name="request"></a>请求
+第 4 个示例获取已登录用户的邮箱中邮件的 MIME 内容。
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
+```
+
+#### <a name="response"></a>响应
+以下是答复。 MIME 内容以 `MIME-Version` 标头开头。 
+<!-- {
+  "blockType": "ignored"
+} -->
+```http
+HTTP/1.1 200 OK
+
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox 
+Transport; Mon, 4 Sep 2017 03:00:08 -0700 
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
+2017 03:00:07 -0700 
+Received: from contoso.com 
+(fe80::5bf:5059:4ca0:5017) by contoso.com 
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
+03:00:01 -0700 
+From: Administrator <admin@contoso.com> 
+To: Administrator <admin@contoso.com> 
+Subject: This email has attachment. 
+Thread-Topic: This email has attachment. 
+Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ== 
+Date: Mon, 4 Sep 2017 10:00:00 +0000 
+Message-ID: 
+                <4aade2547798441eab5188a7a2436bc1@contoso.com> 
+Accept-Language: en-US 
+Content-Language: en-US 
+X-MS-Exchange-Organization-AuthAs: Internal 
+X-MS-Exchange-Organization-AuthMechanism: 04 
+X-MS-Exchange-Organization-AuthSource: 
+                contoso.com 
+X-MS-Has-Attach: yes 
+X-MS-Exchange-Organization-Network-Message-Id: 
+                0ffdb402-ec03-42c8-5d32-08d4f37bb517 
+X-MS-Exchange-Organization-SCL: -1 
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0 
+x-ms-publictraffictype: Emai
+
+```http
+MIME-Version: 1.0 
+Content-Type: multipart/mixed; 
+                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: multipart/alternative; 
+                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/plain; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+The attachment is an email. 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/html; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+<html> 
+<head> 
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
+1"> 
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi= 
+n-bottom:0;} --></style> 
+</head> 
+<body dir=3D"ltr"> 
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font= 
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr"> 
+<p>The attachment is an email.</p> 
+</div> 
+</body> 
+</html> 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: application/octet-stream; name="Attachment email.eml" 
+Content-Description: Attachment email.eml 
+Content-Disposition: attachment; filename="Attachment email.eml"; size=408; 
+                creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
+                modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
+Content-Transfer-Encoding: base64 
+ 
+RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
+b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
+U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
+YW5vdGhlciBtYWlsLg0K 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

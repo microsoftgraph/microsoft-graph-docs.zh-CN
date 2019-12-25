@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e265e6de20491e44ba7756ffd02f4dc4d09d0b31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 429f9b7d273b83b78580650ee323ea35343cdfaf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029538"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869834"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "36029538"
 |dateTime|字符串|日期和时间组合表示形式的单个时间点（`{date}T{time}`；例如 `2017-08-29T04:00:00.0000000`）。|
 |timeZone|String|表示时区，例如“太平洋标准时间”。 有关更多可能的值，请参见下文。|
 
-通常，**timeZone** 属性_可以_ 设置为 [Windows 当前支持的任意时区](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones)，以及[日历 API 支持的其他时区](#additional-time-zones)。 
+通常，**timeZone** 属性_可以_ 设置为 [Windows 当前支持的任意时区](/windows-hardware/manufacture/desktop/default-time-zones)，以及[日历 API 支持的其他时区](#additional-time-zones)。
 
 将 **dateTimeTimeZone** 与某一方法（例如[创建](../api/user-post-events.md)或[更新](../api/event-update.md)事件）结合使用时，请注意支持的实际时区，这可能是一个较小的子集。
 

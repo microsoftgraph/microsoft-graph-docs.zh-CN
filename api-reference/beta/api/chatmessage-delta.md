@@ -5,18 +5,20 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf4c0fa8333d05ad77397cb4d0bd8ad45e92539a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a843044238a954d0c03136860c4f5289497797b1
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936795"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868119"
 ---
 # <a name="chatmessages-delta"></a>chatMessages：delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。 通过使用增量查询，可以获取频道中新的或更新的消息。
+
+> **请注意：** 增量查询将仅返回过去 8 个月内的邮件。 要检索时间更早的邮件，可使用 [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md)。
 
 增量查询既支持可检索指定频道中的所有消息的完全同步，也支持可检索自上次同步后频道中添加或发生变化的消息的增量同步。 通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。
 

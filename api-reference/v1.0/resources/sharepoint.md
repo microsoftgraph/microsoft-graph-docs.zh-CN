@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b276193418573cd93baa8459564d22dde73e8bf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 963d117bbba945a3acd4bb2ac78928c6eade2506
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034270"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863790"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
@@ -116,7 +116,13 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname}
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
-[网站]: site.md
+仅使用 siteCollection (`SPSite`) ID 构造的 URL 将指向给定网站集中的根网站 (`SPWeb`)。
+
+```http
+GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
+```
+
+[site]: site.md
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md

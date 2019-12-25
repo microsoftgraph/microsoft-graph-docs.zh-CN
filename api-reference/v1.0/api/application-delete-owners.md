@@ -6,17 +6,17 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 84728c7c4e7c37eb49b4f0cd02087e80b77dbf00
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "37999074"
 ---
 # <a name="remove-owner"></a>删除所有者
 
 从[应用程序](../resources/application.md)中删除所有者。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

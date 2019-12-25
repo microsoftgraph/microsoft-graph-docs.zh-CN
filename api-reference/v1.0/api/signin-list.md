@@ -6,17 +6,17 @@ author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 0e619f0d5577ffe4db91142eccc257d9fa93e643
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "36729250"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 检索租户的 Azure AD 用户登录信息。 在性质（用户名/密码作为身份验证令牌的一部分传递）和成功的联合登录中当前包括在登录日志中的登录登录。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "36729250"
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 

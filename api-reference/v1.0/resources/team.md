@@ -5,18 +5,19 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f5694c2708a02e3e6d4d766e9af403dcaefac335
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9cefea7168e48fa4d22e8a2dd1f7770143e49e90
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033906"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863762"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
 
 
-Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
+Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
+频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
 每个团队与一个[组](../resources/group.md)相关联。
 该组具有与团队相同的 ID，例如 /groups/{id}/team 与 /teams/{id} 相同。
@@ -45,11 +46,12 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
-|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
+|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
+|classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 
 ## <a name="relationships"></a>关系
 
@@ -62,6 +64,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 下面是资源的 JSON 表示形式。
 
+>**注意：** 如果团队属于班级类型，则会在团队上应用 **classSettings** 属性。
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.team",
@@ -69,14 +73,15 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "internalId": "string",
   "isArchived": false,
-  "webUrl": "string (URL)"
+  "webUrl": "string (URL)",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
 
 ```

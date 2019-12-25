@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6c2f309ac7b66d3d698e54c2280b49b0bb5912a4
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 0f6c8ba4e08112860b74a0ed932fc11895ed13dd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844286"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870895"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -43,6 +43,51 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 如果登录用户是来宾用户，应用程序可以读取特定用户或组的配置文件（例如，`https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`），具体视应用程序获得的授权而定；不过，不能对可能返回多个资源的 `/users` 或 `/groups` 资源集执行查询。
 
 借助授予的适当权限，应用程序可以读取用户或组的配置文件，具体是通过导航属性中的链接获取；例如，`/users/{id}/directReports` 或 `/groups/{id}/members`。
+
+## <a name="limited-information-returned-for-inaccessible-member-objects"></a>为不可访问的成员对象返回有限的信息
+容器对象（例如组）支持各种类型的成员（例如用户和设备）。 当应用程序查询容器对象的成员身份，但无读取特定类型的权限时，将返回该类型的成员，但信息有限。  应用程序将收到 200 响应和一个对象集合。  对于应用程序有权读取的对象类型，返回完整信息。  对于应用程序没有读取权限的对象类型，仅返回对象类型和 ID。
+
+这适用于 [directoryObject](/graph/api/resources/directoryobject) 类型的所有关系（而不仅仅是成员链接）。 示例包括 `/groups/{id}/members`、`/users/{id}/memberOf` 或 `me/ownedObjects`。
+
+例如，假设一个应用程序具有 Microsoft Graph 的 [User.Read.All](#user-permissions) 和 [Group.Read.All](#group-permissions) 权限。  当前已创建一个组，且该组包含用户、组和设备。  应用程序调用[列出组成员](/graph/api/group-list-members)。  应用程序可以访问组中的用户和组对象，而不能访问设备对象。  在响应中，将返回用户和组对象的所有选定属性。 但是对于设备对象，仅返回有限的信息。  返回内容包括设备的数据类型和对象 ID，但所有其他属性的值均为 *null*。 没有权限的应用将不能使用 ID 获取实际对象。
+
+```http
+GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
+```
+
+以下是 JSON 响应：
+
+```json
+{
+"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl)",
+    "value":[
+        {
+            "@odata.type":"#microsoft.graph.user",
+            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
+            "displayName":"Jane Dane",
+            "createdDateTime":"2019-09-18T09:06:51Z",
+            "deletedDateTime":null
+        },
+        {
+            "@odata.type":"#microsoft.graph.group",
+            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
+            "displayName":"Group 1",
+            "description":null,
+            "createdDateTime":"2019-10-24T01:34:35Z",
+            "deletedDateTime":null
+        },
+        {
+            "@odata.type":"#microsoft.graph.device",
+            "id": "d282309e-f91d-43b6-badb-9e68aa4b4fc8",
+            "accountEnabled":null,
+            "deviceId":null,
+            "displayName":null,
+            "operatingSystem":null,
+            "operatingSystemVersion":null
+        }
+    ]
+}
+```
 
 ---
 
@@ -1169,7 +1214,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 ## <a name="presence-permissions"></a>状态权限
 
-#### <a name="application-permissions"></a>应用程序权限
+#### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -1215,7 +1260,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 | 否 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用代表已登录的用户读取所有服务使用情况报告。 提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1224,7 +1269,8 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 |
 
 ### <a name="remarks"></a>注解
-这些报告权限仅对工作或学校帐户有效。
+- 这些报告权限仅对工作或学校帐户有效。
+- 若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1274,6 +1320,15 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="schedule-management-permissions"></a>计划管理权限
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Schedule.ReadWrite.All_ | 读写班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读写班次应用程序中的计划、计划组、班次和关联的实体。 此权限当前仅为个人预览版，不可用于公共用途。| 是 | 否 |
+| _Schedule.Read.All_ | 读取班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读取班次应用程序中的计划、计划组、班次和关联的实体。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
 
 ## <a name="search-permissions"></a>搜索权限
 

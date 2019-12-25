@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9cd1122a39fbe99e62c578486d863af8e13b96b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c9329e3eb23a347748e463947ab97b90e7c6c52
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033808"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863748"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "36033808"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
-| externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
-| displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
+| id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
+| externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
+| displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
 | distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
@@ -69,7 +69,7 @@ ms.locfileid: "36033808"
 }
 ```
 
-# <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

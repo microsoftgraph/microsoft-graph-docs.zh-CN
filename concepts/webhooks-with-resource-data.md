@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: piotrci
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: c8f4132958fe3fded70735e2b04bf79a1a07a4e3
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 2284e416ca50769098e4682c251326840229d60f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844984"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866859"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
@@ -34,9 +34,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 目前，Microsoft 团队 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) （预览版）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
-- 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/allMessages`
-- 指定团队频道中的新增或已更改消息： `/teams/{id}/channels/{id}/messages`
-- 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/allMessages`
+- 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
 - 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
 
 含有通知中所有已更改实例属性的 **chatMessage** 支持。 它不支持只返回指定实例属性。 
@@ -72,7 +70,7 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages",
+  "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -90,7 +88,7 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages",
+  "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
   "encryptionCertificateThumbprint": "{thumbprint from the certificate}",

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 77bcab1728cede1721f28b38aaa5fec075816684
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e1a57d5c2c8a1fbd3dec4a4cce61b026bd93a245
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729705"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865403"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot：getOffice365ActiveUserDetail
 
@@ -27,6 +27,8 @@ ms.locfileid: "36729705"
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
+
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅 [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 

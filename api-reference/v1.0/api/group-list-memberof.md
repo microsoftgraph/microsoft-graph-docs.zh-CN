@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 01f6bb81ec7e46911fb1a5e3dbdd55f69f92b6c8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8ef4fb2e1f785ba814ec0a3c82f8f8f668d81ced
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658714"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864752"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 获取直接成员组构成的组集合。 
@@ -25,6 +25,8 @@ ms.locfileid: "38658714"
 |委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | GroupMember.Read.All、Group.Read.All、Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
