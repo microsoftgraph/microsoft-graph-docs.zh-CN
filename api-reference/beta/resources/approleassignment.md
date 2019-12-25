@@ -3,14 +3,14 @@ title: appRoleAssignment 资源类型
 description: 用于记录用户或组何时被分配到应用程序。 在这种情况下，角色分配会导致用户应用访问面板上显示应用程序磁贴。 此实体还可用于授予其他应用程序（建模为服务主体）以特定角色访问资源应用程序的权限。 您可以创建、读取、更新和删除角色分配。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 471927eb3aaf0dc26a3a70b0dffae7e15c812787
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 34b9875efe231d734cd7ff3a8143d882ec3a87fb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974323"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870384"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 

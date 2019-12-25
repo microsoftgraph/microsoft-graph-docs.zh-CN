@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 620219473eae66c7f219e2ba44d263fefd38aa5d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 04fa3770f079cf47be9abece1396139c0c056175
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37997036"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40871992"
 ---
 ```csharp
 
@@ -14,7 +14,23 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var place = new Roomlist
 {
     DisplayName = "Building 1",
-    Phone = "555-555-0100"
+    Phone = "555-555-0100",
+    Address = new PhysicalAddress
+    {
+        Street = "4567 Main Street",
+        City = "Buffalo",
+        State = "NY",
+        PostalCode = "98052",
+        CountryOrRegion = "USA"
+    },
+    GeoCoordinates = new OutlookGeoCoordinates
+    {
+        Altitude = null,
+        Latitude = 47,
+        Longitude = -122,
+        Accuracy = null,
+        AltitudeAccuracy = null
+    }
 };
 
 await graphClient.Places["Building1RroomList@contoso.onmicrosoft.com"]

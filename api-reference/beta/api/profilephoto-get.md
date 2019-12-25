@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5b4fd73fa14c459cf49f4b52a064ad52e400550d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5aec9f4cd1868948d750a8320da9d054ab29558
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978642"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869302"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -38,9 +38,9 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 |委派（个人 Microsoft 帐户）  <br /> **注意**：不支持元数据操作。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 |Application                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
-> **注意：** 当前有一个[已知问题](https://docs.microsoft.com/zh-CN/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
-## <a name="http-request"></a>HTTP 请求 
+## <a name="http-request"></a>HTTP 请求
 
 ### <a name="get-the-photo"></a>获取照片
 <!-- { "blockType": "ignored" } -->
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/me/photo
 ```
 
 ##### <a name="response"></a>响应
-以下响应数据显示照片的元数据。 
+以下响应数据显示照片的元数据。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -161,7 +161,7 @@ Content-type: application/json
 }
 ```
 
-以下响应数据显示还没有为用户上传照片时的响应内容。 
+以下响应数据显示还没有为用户上传照片时的响应内容。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

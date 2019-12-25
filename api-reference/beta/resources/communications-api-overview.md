@@ -5,12 +5,12 @@ author: VinodRavichandran
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 99f79861ae4641f29784ebad44c14408a69821d9
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: dbad2e21d5e3dbdae37ab30b02d2a96970722040
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843936"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870342"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -23,7 +23,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 
 ## <a name="authorization"></a>授权
 
-需要以下[权限](https://docs.microsoft.com/graph/permissions-reference#calls-permissions) 之一才能访问通信 API。 需要由管理员授予这些权限。
+需要以下[权限](/graph/permissions-reference#calls-permissions) 之一才能访问通信 API。 需要由管理员授予这些权限。
 
 | 方案                 | 权限                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -37,19 +37,19 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 
 | 用例                         | REST 资源                                 | 另请参阅  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| 创建并键入一对一通话和群组通话   | [通话](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta)| [通话方法](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#methods)| 
-|IVR 通话   |     | [IVR 方法](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
-| 通话控制（参与者） | [参与者](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta)   ||
-|会议|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [会议方法](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+| 创建并键入一对一通话和群组通话   | [通话](/graph/api/resources/call?view=graph-rest-beta)| [通话方法](/graph/api/resources/call?view=graph-rest-beta#methods)|
+|IVR 通话   |     | [IVR 方法](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
+| 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-beta)   ||
+|会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 |状态 | [状态](/graph/api/resources/presence) | [出席方式](/graph/api/resources/presence#methods) |
 
 ## <a name="common-properties"></a>通用属性
 
 | 资源                | 属性                             |
 |:------------------------------------|:---------------------------------------------|
-| 通话                               | [通话属性](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| 参与者                         | [参与者属性](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta#properties) |
-| onlineMeeting                            | [onlineMeeting 属性](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| 通话                               | [通话属性](/graph/api/resources/call?view=graph-rest-beta#properties)  |
+| 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-beta#properties) |
+| onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | 状态 | [状态属性](/graph/api/resources/presence#properties) |
 
 ## <a name="see-also"></a>另请参阅

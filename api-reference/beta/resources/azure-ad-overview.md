@@ -5,31 +5,31 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 83c9f8b9c1d95139ed2b170dd3df4964add15b1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5102a9e445c7aeadefdf37df41dc7325f2a8ed5e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013162"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870377"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了应用可使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。 
+借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了应用可使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。
 
 > **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
 
 
 ## <a name="authorization"></a>Authorization
- 
-若要对 Azure AD 资源调用 Microsoft Graph API，应用必须拥有适当的权限。许多已对 Azure AD 资源公开的 API 需要拥有 [_Directory_ 权限](/graph/permissions-reference#directory-permissions)之一。Directory 具有很多特权，始终需要征得管理员同意。 
+
+若要对 Azure AD 资源调用 Microsoft Graph API，应用必须拥有适当的权限。许多已对 Azure AD 资源公开的 API 需要拥有 [_Directory_ 权限](/graph/permissions-reference#directory-permissions)之一。Directory 具有很多特权，始终需要征得管理员同意。
 
 如果应用要代表用户（委派权限）执行操作，用户可能需要是相应的[管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)的成员，应用才能成功调用许多 Azure AD API。
 
-有关委派权限和应用程序权限等权限的详细信息，请参阅[权限](/graph/permissions-reference)。 
+有关委派权限和应用程序权限等权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-## <a name="common-use-cases"></a>常见用例 
+## <a name="common-use-cases"></a>常见用例
 
 下表列出了一些 Azure AD 资源的常见用例。
 
@@ -44,7 +44,7 @@ ms.locfileid: "36013162"
 | 将 Azure AD 策略应用到应用程序、服务主体、组或整个组织。 目前，支持令牌生存期和主领域发现策略。  | [策略](../resources/policy.md) | 不适用 |
 | **保护至 Azure AD 的特权访问** | | |
 | 利用 Privileged Identity Management (PIM) 为管理员和 IT 专业人员管理和监控至目录和 Azure 资源的具有时间限定的特权访问。 | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [什么是 Azure AD Privileged Identity Management？](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| 监视身份风险事件，如用户从被恶意感染的设备或从不熟悉的位置登录。 | [Identity Protection 服务 API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-reporting-risk-events) |
+| 监视身份风险事件，如用户从被恶意感染的设备或从不熟悉的位置登录。 | [Identity Protection 服务 API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](/azure/active-directory/active-directory-reporting-risk-events) |
 | **管理设备** | | |
 | 管理组织中的注册设备。设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。条件访问策略使用它们进行多重身份验证。 | [设备](../resources/device.md) | [Azure Active Directory 设备注册入门](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[什么是 InTune？](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[在 Intune 中注册设备以进行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **应用管理** | | |
@@ -60,9 +60,9 @@ ms.locfileid: "36013162"
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
 | 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **访问审查** | | |
-| 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>后续步骤
-目录资源和 API 提供了使用 Microsoft Graph 与用户交互及管理用户体验的新方式。若要了解更多： 
+目录资源和 API 提供了使用 Microsoft Graph 与用户交互及管理用户体验的新方式。若要了解更多：
 
 - 深入了解对方案最有帮助的资源的方法和属性。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。

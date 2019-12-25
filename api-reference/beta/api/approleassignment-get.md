@@ -3,14 +3,14 @@ title: 获取 appRoleAssignment
 description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6f711bf8c3b2d977e4702435e862c764014e5cac
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: b66aad32ea1821316290c3ecf2abd593428f1a73
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718952"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868370"
 ---
 # <a name="get-approleassignment"></a>获取 appRoleAssignment
 
@@ -30,8 +30,9 @@ ms.locfileid: "36718952"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/appRoleAssignments/{id}
-GET /servicePrincipals/{id}/appRoleAssignedTo
 GET /groups/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -57,7 +58,7 @@ GET /groups/{id}/appRoleAssignments/{id}
   "name": "get_approleassignment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]

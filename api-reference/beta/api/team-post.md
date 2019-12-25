@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5e8d6307999ab6db7b614e12ea6117245f473c29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e38393f0c6c30daae7ba46d1e14033dea3078ec6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990839"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864948"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -112,7 +112,7 @@ Content-Location: /teams/{teamId}
 
 ### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。
 
-下面是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。 
+下面是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
 
 #### <a name="request"></a>请求
 
@@ -139,7 +139,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams"
+                        "contentUrl": "/microsoftteams/microsoft-teams"
                     }
                 },
                 {
@@ -217,7 +217,7 @@ Content-Location: /teams/{teamId}
 
 此调用需注意以下几点：
 
-* 要创建团队，从中创建团队的组必须至少有一名所有者。 
+* 要创建团队，从中创建团队的组必须至少有一名所有者。
 * 所创建的团队将始终从组的显示名称、可见性、规范和所有者继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **owners@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
 
@@ -248,7 +248,7 @@ Content-Location: /teams/{teamId}
 
 下列请求会对具有扩展属性的现有组进行转换，这将创建安装了应用且带有固定选项卡和多个频道的团队。
 
-若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。
+若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。
 
 #### <a name="request"></a>请求
 
@@ -303,7 +303,7 @@ Content-Location: /teams/{teamId}
 
 若要从非标准基本模板创建团队，你要将请求正文中的 `template@odata.bind` 属性从 `standard` 更改为指向你要创建的特定基本模板。
 
-若要了解有关受支持的基本模板类型的更多信息，请参阅 [Teams 模板入门](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。
+若要了解有关受支持的基本模板类型的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。
 
 #### <a name="request"></a>请求
 
@@ -332,7 +332,7 @@ Content-Location: /teams/{teamId}
 
 基本模板类型可以使用其他属性进行扩展，使你可以使用其他团队设置、渠道、应用或选项卡构建现有基本模板。
 
-若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。
+若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。
 
 #### <a name="request"></a>请求
 
@@ -384,7 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>另请参阅
 
-- [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
+- [可用模板](/MicrosoftTeams/get-started-with-teams-templates)
 - [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)

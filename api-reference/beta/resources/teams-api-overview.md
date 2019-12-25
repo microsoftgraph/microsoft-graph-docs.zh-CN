@@ -5,18 +5,18 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 9ac012d6de0e6ef191b008c8e2569b0fa0654574
-ms.sourcegitcommit: 99cbeac2ca652632d2946c4740133c9b82c8e992
+ms.openlocfilehash: 0e07a4e658486d0075e34911cad4daaf17a07401
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "37477050"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866530"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。 
+Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。
 
 ## <a name="key-resources-in-microsoft-teams"></a>Microsoft Teams 中的重要资源
 
@@ -41,7 +41,7 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 
 在 Microsoft Graph 中，Microsoft Teams 由[组](../resources/group.md)资源表示。 Microsoft Teams 和 Office 365 组均可满足组协作的各种需求。 几乎所有基于组的功能都适用于 Microsoft Teams 和 Office 365 组，例如组日历、文件、笔记、照片、计划等。 [团队](team.md)与 Office 365 组之间的主要区别在于成员之间的通信模式。 团队成员的通信方式是在特定团队的上下文中进行持久聊天。 Office 365 组成员通过组对话进行通信，它们是在 Outlook 的组上下文中发生的电子邮件对话。
 
-具有团队的任何组都具有 **resourceProvisioningOptions** 属性，它包含“团队”。 
+具有团队的任何组都具有 **resourceProvisioningOptions** 属性，它包含“团队”。
 
 >**注释：** 可以更改 **Group.resourceProvisioningOptions** 属性。
 请不要在该集合中添加或删除“团队”；否则，当你列出所有团队时，你将获得错误结果。
@@ -49,7 +49,7 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 以下是团队和组之间的 API 级别的区别：
 
 - 持久聊天仅适用于 Microsoft Teams。 此功能由[频道](../resources/channel.md)和 [chatMessage](../resources/chatmessage.md) 资源按层次结构表示。
-- 组对话仅适用于 Office 365 组。 此功能由[对话](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md) 和[帖子](../resources/post.md)资源按层次结构表示。 
+- 组对话仅适用于 Office 365 组。 此功能由[对话](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md) 和[帖子](../resources/post.md)资源按层次结构表示。
 - [列出加入的团队](../api/user-list-joinedteams.md)方法仅适用于 Microsoft Teams。
 - [呼叫和在线会议 API](./communications-api-overview.md) 仅适用于 Microsoft Teams。
 - 另请参阅[已知问题](/graph/known-issues)以了解这些 API。
@@ -68,28 +68,32 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 | [移除所有者](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
 | [更新团队](../api/team-update.md)  | PATCH     | /teams/{id} |
 
-我们建议你在添加所有者时，还将该用户添加为成员。 如果团队的所有者不是其成员，则所有权和成员身份更改可能不会立即显示在 Microsoft Teams 中。 此外，不同的应用程序和 API 将以不同的方式进行处理。 例如，Microsoft Teams 将显示用户是其成员或所有者的团队，而 Microsoft Teams PowerShell cmdlet 和 /me/joinedTeams API 仅显示用户是其成员的团队。 为了避免混淆，请也将全部所有者添加到成员列表中。 
+我们建议你在添加所有者时，还将该用户添加为成员。
+如果团队的所有者不是其成员，则所有权和成员身份更改可能不会立即显示在 Microsoft Teams 中。
+此外，不同的应用程序和 API 将以不同的方式进行处理。
+例如，Microsoft Teams 将显示用户是其成员或所有者的团队，而 Microsoft Teams PowerShell cmdlet 和 /me/joinedTeams API 仅显示用户是其成员的团队。
+为了避免混淆，请也将全部所有者添加到成员列表中。
 
 已知问题：当调用 DELETE /groups/{id}/owners 时，也会从 /groups/{id}/members list 中移除用户。 若要解决此问题，我们建议你从所有者和成员中移除用户，等待 10 秒后，将其添加回成员。
 
 在添加和移除成员和所有者时，请勿在 ID 两边添加大括号 { }。
 
-| 速度 | 语法 | 
+| 速度 | 语法 |
 | ------ | ----- |
-| 快速 | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
-| 慢速 | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
+| 快速 | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
+| 慢速 | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
 
 同样，如果 URL 或有效负载中的 `userId` 显示为 UPN 而不是 GUID，则性能会变慢。
 
-| 速度 | 语法 | 
+| 速度 | 语法 |
 | ------ | ----- |
-| 快速 | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
-| 慢速 | john@example.com | 
+| 快速 | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
+| 慢速 | john@example.com |
 
 当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
 如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
 
-> [!Note] 
+> [!Note]
 > 租户来宾始终通过慢速路径进行处理。
 
 ## <a name="see-also"></a>另请参阅
