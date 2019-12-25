@@ -6,10 +6,10 @@ author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 3584d7e0b5bcf7d73838da08f502d681f4f4276c
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "37995592"
 ---
 # <a name="application-addpassword"></a>应用程序： addPassword

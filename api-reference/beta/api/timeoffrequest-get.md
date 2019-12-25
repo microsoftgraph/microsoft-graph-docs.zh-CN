@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29c2ac88bf1253d3a00a395d990f1974bda50815
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 2f8cfce33bd0945cd06c573d9182ed49b943640a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895576"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863556"
 ---
 # <a name="get-timeoffrequest"></a>获取 timeOffRequest
 
@@ -26,7 +26,9 @@ ms.locfileid: "39895576"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+|应用程序 | Schedule. All *、schedule、all*  |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +38,7 @@ ms.locfileid: "39895576"
 GET /teams/{id}/schedule/timeOffRequests
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
@@ -44,7 +46,7 @@ GET /teams/{id}/schedule/timeOffRequests
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,14 +61,30 @@ GET /teams/{id}/schedule/timeOffRequests
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_timeoffrequest"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-timeoffrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-timeoffrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

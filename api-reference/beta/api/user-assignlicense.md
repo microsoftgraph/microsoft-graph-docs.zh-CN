@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 18fc553403faf29a9f99186afc001fdd87a33dbb
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ea0274bff7f8d2d5c3bb0e8dd8c0a7fae8305332
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37524527"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863512"
 ---
 # <a name="user-assignlicense"></a>用户： assignLicense
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此[Technet 文章](https://technet.microsoft.com/en-us/library/mt765146.aspx)。
+添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此[Technet 文章](https://technet.microsoft.com/library/mt765146.aspx)。
 
 若要获取目录中可用的订阅，请执行[Get subscribedsku 请求](subscribedsku-list.md)。 
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性来禁用与许可证关联的 servicePlans。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性来禁用与许可证关联的 servicePlans。|
 |removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 的集合。|
 
 ## <a name="response"></a>响应

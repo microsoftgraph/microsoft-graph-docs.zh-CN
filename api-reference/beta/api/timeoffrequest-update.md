@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e961a197620f27de11397952c2d868dcec848c3
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 2197e0e4e2f9c78337a6d5ae06d6c1e106f77afa
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895580"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863527"
 ---
 # <a name="update-timeoffrequest"></a>更新 timeoffrequest
 
@@ -26,7 +26,9 @@ ms.locfileid: "39895580"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +42,8 @@ PATCH /teams/{id}/schedule/timeOffRequests
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +53,7 @@ PATCH /teams/{id}/schedule/timeOffRequests
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014年1月1日午夜 UTC 将如下所示： ' 2014-01-01T00：00： 00Z '|
 |startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014年1月1日午夜 UTC 将如下所示： ' 2014-01-01T00：00： 00Z '|
-|timeOffReasonId|字符串|请求的时间关的原因。|
+|timeOffReasonId|String|请求的时间关的原因。|
 
 ## <a name="response"></a>响应
 
@@ -61,6 +64,8 @@ PATCH /teams/{id}/schedule/timeOffRequests
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_timeoffrequest"
@@ -76,6 +81,20 @@ Content-type: application/json
   "timeOffReasonId": "timeOffReasonId-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-timeoffrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-timeoffrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-timeoffrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

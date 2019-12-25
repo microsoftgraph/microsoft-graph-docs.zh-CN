@@ -5,16 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b12bc0520bfa285b654b615cfb74582683b04c49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2404e2ae44482b8380a85caef7fcb642a75bde8c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987899"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863499"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>列出 unfamiliarLocationRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 unfamiliarlocationriskevent 对象的列表。
 ## <a name="permissions"></a>权限
@@ -42,7 +45,7 @@ GET /unfamiliarLocationRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

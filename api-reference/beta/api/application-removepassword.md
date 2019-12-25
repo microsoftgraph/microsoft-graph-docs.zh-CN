@@ -6,10 +6,10 @@ author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 6a83c1e128d319f76a4e52fad91a59193811b390
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "37994950"
 ---
 # <a name="application-removepassword"></a>应用程序： removePassword
