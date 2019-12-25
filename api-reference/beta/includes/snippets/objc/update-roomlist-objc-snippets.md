@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 883ec1f2f74a0fee79686b4522a5c158ca543e07
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 5e09e27fa4591aa7ebe257903622b12e357c6b56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37997037"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40871983"
 ---
 ```objc
 
@@ -19,6 +19,20 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphPlace *place = [[MSGraphPlace alloc] init];
 [place setDisplayName:@"Building 1"];
 [place setPhone:@"555-555-0100"];
+MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
+[address setStreet:@"4567 Main Street"];
+[address setCity:@"Buffalo"];
+[address setState:@"NY"];
+[address setPostalCode:@"98052"];
+[address setCountryOrRegion:@"USA"];
+[place setAddress:address];
+MSGraphOutlookGeoCoordinates *geoCoordinates = [[MSGraphOutlookGeoCoordinates alloc] init];
+[geoCoordinates setAltitude: null];
+[geoCoordinates setLatitude: 47.0];
+[geoCoordinates setLongitude: -122.0];
+[geoCoordinates setAccuracy: null];
+[geoCoordinates setAltitudeAccuracy: null];
+[place setGeoCoordinates:geoCoordinates];
 
 NSError *error;
 NSData *placeData = [place getSerializedDataWithError:&error];

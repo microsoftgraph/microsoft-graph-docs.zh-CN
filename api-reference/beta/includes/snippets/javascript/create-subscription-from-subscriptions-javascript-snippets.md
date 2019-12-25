@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9f6a2ed5a3f0dd60358319abff2e680cc8da21bd
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6f67d33068a3f9b545acd4cc8774a8c8e77c2e0e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636678"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870821"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const subscription = {
-   changeType: "created,updated",
+   changeType: "updated",
    notificationUrl: "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    resource: "me/mailFolders('Inbox')/messages",
    expirationDateTime:"2016-11-20T18:23:45.9356913Z",
