@@ -1,0 +1,5 @@
+
+<!-- markdownlint-disable MD041-->
+
+<span data-ttu-id="51ac5-101">当应用程序查询一个返回 directoryObject 类型集合的关系时，如果它没有读取某个派生类型（如设备）的权限，则返回该类型的成员，但不包含有限的信息。</span><span class="sxs-lookup"><span data-stu-id="51ac5-101">When an application queries a relationship that returns a directoryObject type collection, if it does not have permission to read a certain derived type (like device), members of that type are returned but with limited information.</span></span> <span data-ttu-id="51ac5-102">使用此行为，应用程序可以请求所需的最少特权权限，而不是依赖于目录集。 \* 权限。</span><span class="sxs-lookup"><span data-stu-id="51ac5-102">With this behaviour applications can request the least privileged permissions they need, rather than rely on the set of Directory.\* permissions.</span></span> <span data-ttu-id="51ac5-103">有关详细信息，请参阅[为不可访问的成员对象返回的受限制的信息](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects)。</span><span class="sxs-lookup"><span data-stu-id="51ac5-103">For details, see [Limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).</span></span>
+
