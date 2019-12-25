@@ -3,16 +3,16 @@ title: Microsoft Graph 工具包中的 "议程" 组件
 description: "\"管理中心议程\" web 组件用于表示用户或组日历中的事件。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7f46602396ab794593101505d56c14b675db235f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 0676c7ab66e899aa4af3dea0f623f301ce9b9f4e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955895"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866887"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "议程" 组件
 
-`mgt-agenda` Web 组件表示用户或组日历中的事件。 默认情况下，日历会在当前日期的用户事件中显示当前登录的用户事件。 组件还可以使用从 Microsoft Graph 返回事件的任何终结点。 
+`mgt-agenda` Web 组件表示用户或组日历中的事件。 默认情况下，日历会在当前日期的用户事件中显示当前登录的用户事件。 组件还可以使用从 Microsoft Graph 返回事件的任何终结点。
 
 ## <a name="example"></a>示例
 
@@ -122,7 +122,7 @@ mgt-agenda {
 
 若要了解详细信息，请参阅[模板](../templates.md)。
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从控件触发以下事件。
 
@@ -137,11 +137,11 @@ mgt-agenda {
 
 | resource | 权限/范围 |
 | - | - |
-| [/me/calendarview](https://docs.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
 
 组件允许您指定要调用的其他 Microsoft Graph 查询（例如`/groups/{id}/calendar/calendarView`）。 在这种情况下，将作用域追加到字符串的末尾，并将其分隔`|`
 
 ## <a name="authentication"></a>身份验证
 
-登录控件利用[身份验证文档](./../providers.md)中所述的全局验证提供程序。 
+登录控件利用[身份验证文档](./../providers.md)中所述的全局验证提供程序。
 

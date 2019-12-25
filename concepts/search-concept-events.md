@@ -1,19 +1,19 @@
 ---
-title: 搜索日历事件
+title: 在 Microsoft Graph 中使用 Microsoft Search API 搜索日历事件
 description: 您可以在用户自己的日历中进行搜索。
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 2db61462670a553376467cf2329d26cbb339c452
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: b7ea957419801c6e100412e5f46d2e1757387b3b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703972"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868525"
 ---
-# <a name="search-calendar-events"></a>搜索日历事件
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索日历事件
 
-您的应用程序可以在用户自己的主日历中。 用于搜索的用户标识基于授权令牌。
+您可以使用 Microsoft 搜索 API 在用户的主日历中搜索事件。 搜索的用户标识基于身份验证令牌。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "38703972"
 
 ### <a name="request"></a>请求
 
-本示例将在用户的日历中搜索关键字 "contoso"，并检索最大25个结果。
+本示例将在用户的日历中搜索关键字 "contoso"，并返回最大25个结果。
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -49,10 +49,8 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-您只能访问用户自己的日历。 共享日历，不支持委派访问权限。
+您只能访问用户自己的日历。 不支持共享日历和委派访问 schenarios。
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
-
-- [使用搜索 API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta)

@@ -1,19 +1,19 @@
 ---
-title: 搜索自定义类型
-description: 利用查询 API，您可以通过索引 API 在自定义类型引入中进行搜索。
+title: 在 Microsoft Graph 中使用 Microsoft Search API 搜索自定义类型
+description: 您可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta)资源导入外部数据，并对此外部内容运行搜索查询。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 53203d300fd3cf42fd5e6993fe8ba016de06669a
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 9d00ddbbedd775a6efb59971da10fbc9ee8854a6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703979"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866908"
 ---
-# <a name="search-custom-types-externalitem"></a>搜索自定义类型 (externalItem)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索自定义类型
 
-Microsoft 搜索 API 允许您通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta)资源导入外部数据，并对此外部内容运行搜索查询。
+您可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta)资源导入外部数据，并对此外部内容运行搜索查询。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,7 @@ Microsoft 搜索 API 允许您通过[externalItem](/graph/api/resources/external
 
 - **ContentSources**属性，以包含在连接器安装过程中分配的连接 ID
 
-- **EntityType**属性作为`externalItem`
+- **EntityTypes**属性用作`externalItem`
 
 - **Stored_fields**属性，以包含要检索的外部项中的字段
 
@@ -62,8 +62,6 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
-
-响应
 
 ```json
 {
@@ -117,10 +115,8 @@ Content-Type: application/json
 
 - 自定义类型不支持跨多个源进行搜索（在**contentSources**中指定）。 一次只能搜索一个连接。
 
-- 您必须指定**stored_fields**属性，否则不会返回搜索结果。
+- 您必须指定**stored_fields**属性;否则，不会返回搜索结果。
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
-
-- [使用搜索 API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta)

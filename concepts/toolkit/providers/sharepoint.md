@@ -3,12 +3,12 @@ title: SharePoint 提供程序
 description: 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e9cf69d26f68da0393f1ef1ecd92683cb9efdd39
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 74605fa4c2acc2919a73f7b6bef1460480883c34
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955762"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868546"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
@@ -52,7 +52,7 @@ public render(): void {
 
 如果只是开始使用 SharePoint web 部件，可以按照[生成第一个 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)指南操作。
 
-在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅[在 SharePoint 框架中使用 Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/spfx/use-aad-tutorial)。
+在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅[在 SharePoint 框架中使用 Microsoft Graph](/sharepoint/dev/spfx/use-aad-tutorial)。
 
 简言之，向添加适当的权限非常重要`package-solution.json`。 您需要将 web 部件包上传到 SharePoint，并让管理员批准请求的权限。
 

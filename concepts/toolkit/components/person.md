@@ -3,16 +3,16 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955853"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866873"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
-"人员" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。 
+"人员" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。
 
 "人员" 组件还使用 "管理员-[卡片](./person-card.md)" 显示带有有关用户的其他信息的飞出卡片。 有关详细信息，请参阅 "[人员卡片](#person-card)" 部分。
 
@@ -29,7 +29,7 @@ ms.locfileid: "39955853"
 
 您可以使用三个属性来设置人员详细信息。 每个实例仅使用下列属性之一：
 
-* 通过使用`user-id`其 ID `userId`将属性或属性设置为从 Microsoft Graph 获取用户。  
+* 通过使用`user-id`其 ID `userId`将属性或属性设置为从 Microsoft Graph 获取用户。
 
 * 将`person-query`属性或`personQuery`属性设置为在 Microsoft Graph 中搜索给定人员。 它将选择第一个可用的人员并获取人员详细信息。 电子邮件最适用于确保查询的是正确的人员，但名称也有效。
 
@@ -123,13 +123,13 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| Resource                                                                                                    | 权限     |
+| 资源                                                                                                    | 权限     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/？ $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/？ $search =](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **注意：** 若要访问`*/photo/$value`个人 Microsoft 帐户的资源，请使用 Microsoft Graph beta 终结点。
 

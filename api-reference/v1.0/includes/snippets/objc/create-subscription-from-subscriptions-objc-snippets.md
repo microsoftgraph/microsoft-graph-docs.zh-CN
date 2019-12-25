@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d849d07c748c1c1bab8cd44e6784c80143635fa0
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: c5bd876eaf685d70386b4ad1f83651d5a1370347
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "35738338"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864122"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphSubscription *subscription = [[MSGraphSubscription alloc] init];
-[subscription setChangeType:@"created,updated"];
+[subscription setChangeType:@"updated"];
 [subscription setNotificationUrl:@"https://webhook.azurewebsites.net/api/send/myNotifyClient"];
 [subscription setResource:@"me/mailFolders('Inbox')/messages"];
 [subscription setExpirationDateTime: "2016-11-20T18:23:45.9356913Z"];

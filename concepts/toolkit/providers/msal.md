@@ -3,12 +3,12 @@ title: MSAL 提供程序
 description: MSAL 提供程序使用 MSAL 来登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: aa3eecb6bd9f2adae7ff689f30ab69539e1d27f1
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 95dfae9954ff098ae9e777c3c330c5f334b8b0aa
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955776"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868490"
 ---
 # <a name="msal-provider"></a>MSAL 提供程序
 
@@ -68,6 +68,6 @@ interface MsalConfig {
 
 ## <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 
-有关如何注册应用并获取客户端 ID 的详细信息，请参阅[注册应用程序快速入门](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+有关如何注册应用并获取客户端 ID 的详细信息，请参阅[注册应用程序快速入门](/azure/active-directory/develop/quickstart-register-app)。
 
 >**注意：** MSAL 仅支持 OAuth 的隐式流。 请确保在 Azure 门户中的应用程序中启用隐式流（默认情况下不启用）。 在 "**身份验证**" 下，找到 "**隐式授予**" 部分，然后选择 "**访问令牌**" 和**ID 令牌**的复选框。

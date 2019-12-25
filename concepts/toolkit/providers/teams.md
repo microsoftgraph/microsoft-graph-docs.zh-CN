@@ -3,12 +3,12 @@ title: Microsoft Teams 提供程序
 description: 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 335673ba2faa04916c2f8548999077a68202bbf0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 08fe1e2e33ddc31ee88ed32dc4d57fdefac0c8fc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955755"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866866"
 ---
 # <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "39955755"
 
 ## <a name="get-started"></a>入门
 
-在使用团队提供程序之前，您需要确保您已在页面中引用[Microsoft 团队 SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) 。
+在使用团队提供程序之前，您需要确保您已在页面中引用[Microsoft 团队 SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) 。
 
 ### <a name="via-script-tag"></a>via script 标记
 下面的示例使用 HTML （通过 CDN）中的提供程序。
@@ -41,7 +41,7 @@ ms.locfileid: "39955755"
 | scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。 |
 | 取决于 | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。 |
 
-### <a name="via-npm"></a>via NPM 
+### <a name="via-npm"></a>via NPM
 下面的示例使用 JS 模块（通过 NPM）中的提供程序。
 
 请务必同时安装工具包和 Microsoft 团队 SDK。
@@ -54,7 +54,7 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ```ts
 import '@microsoft/teams-js';
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
@@ -73,7 +73,7 @@ export interface TeamsConfig {
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
@@ -83,13 +83,13 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ## <a name="configure-your-teams-app"></a>配置团队应用程序
 
-如果只是开始使用团队应用程序，请参阅[将选项卡添加到 Microsoft 团队应用](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用[应用程序 Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio)快速开发您的应用程序清单。
+如果只是开始使用团队应用程序，请参阅[将选项卡添加到 Microsoft 团队应用](/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用[应用程序 Studio](/microsoftteams/platform/get-started/get-started-app-studio)快速开发您的应用程序清单。
 
 使用选项卡安装您的应用程序并准备好使用组件时，需要确保您的应用程序具有访问 Microsoft Graph 的适当权限。 若要使用所需的权限配置应用程序，请执行以下操作：
 
-1. [检索你的域名](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [创建新的应用注册](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [授予应用程序权限](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [检索你的域名](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [创建新的应用注册](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [授予应用程序权限](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 在 "**添加 API 访问" 页**上添加正确的权限非常重要。 你将需要管理员添加和批准权限，具体取决于所需的组件。
 
@@ -107,7 +107,7 @@ Providers.globalProvider = new TeamsProvider(config);
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
 
-<script>        
+<script>
   mgt.TeamsProvider.handleAuth();
 </script>
 ```
@@ -116,7 +116,7 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 TeamsProvider.handleAuth();
