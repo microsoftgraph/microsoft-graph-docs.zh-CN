@@ -5,12 +5,12 @@ author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23c051caceff6be68e3b550c06f50c397a5c5d97
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: cf4087675804b3bd873699634c527db9038ffe8e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621643"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869883"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -27,6 +27,8 @@ ms.locfileid: "37621643"
 |应用程序 | Read. All，User. All |
 
 >**注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -90,8 +92,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

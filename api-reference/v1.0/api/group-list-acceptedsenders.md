@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51564c0519d02aa1cd9fcf3dee53cea23839f38c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: dfa1ecbaa247ed78b2d6577e6383c25678dfe10e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726800"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869904"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 获取此组的“接受的发件人”列表中的用户或组列表。
@@ -25,6 +25,8 @@ ms.locfileid: "36726800"
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ GET /groups/{id}/acceptedSenders
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_acceptedsenders"
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-acceptedsenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

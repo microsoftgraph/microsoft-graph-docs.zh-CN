@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c29f3912280faef09753d89be148c9f93e350053
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: f64cbbe4f540537be79fb0ff8a32a96dd378f7fc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37633992"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864626"
 ---
 # <a name="get-manager"></a>获取管理器
 
@@ -25,6 +25,8 @@ ms.locfileid: "37633992"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | OrgContact 和 Group. all、Read. All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +35,7 @@ ms.locfileid: "37633992"
 GET /contacts/{id}/manager
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
@@ -81,8 +83,8 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,25 +5,25 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 108c17618d8042057263912d015f8a0fa6d2e7ce
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 3e92a4f29c1eb32b7dec8885cc27b174aa54d4bc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036205"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869827"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
 |成员|值|说明|
 |:---|:---|:---|
 |母语|0|用户的父级。|
-|彼此|1| 用户的相对路径。|
-|aide|双面| 用户的 aide。|
-|dr.|第三章| 用户的医生。|
-|监护|4| 用户的监护人。|
-|该子|5| 用户的子级。|
-|相互|型| 与用户的未指定关系。|
-|向 unknownfuturevalue|步| 用于将来兼容性的标记值。|
+|彼此|1 | 用户的相对路径。|
+|aide|2 | 用户的 aide。|
+|dr.|3 | 用户的医生。|
+|监护|4 | 用户的监护人。|
+|该子|5 | 用户的子级。|
+|相互|6 | 与用户的未指定关系。|
+|向 unknownfuturevalue|7 | 用于将来兼容性的标记值。|
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
@@ -38,10 +38,10 @@ ms.locfileid: "37036205"
 | 成员            |值
 |:------------------|:-------
 | 任意              | 0
-| 暂         | 1
-| 空闲              | 双面
-| oof               | 第三章
-| workingElsewhere  | 4
+| 暂         | 1 
+| 空闲              | 2 
+| oof               | 3 
+| workingElsewhere  | 4 
 | unknown           | -1
 
 
@@ -78,15 +78,15 @@ ms.locfileid: "37036205"
 |:-----------|:----------
 | 自动       | -1
 | lightBlue  | 0
-| lightGreen | 1
-| lightOrange| 双面
-| lightGray  | 第三章
-| lightYellow| 4
-| lightTeal  | 5
-| lightPink  | 型
-| lightBrown | 步
-| lightRed   | utf-8
-| maxColor   | 第
+| lightGreen | 1 
+| lightOrange| 2 
+| lightGray  | 3 
+| lightYellow| 4 
+| lightTeal  | 5 
+| lightPink  | 6 
+| lightBrown | 7 
+| lightRed   | 8 
+| maxColor   | 9 
 
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource 值
@@ -202,7 +202,7 @@ ms.locfileid: "37036205"
 | Member
 |:---------
 | text
-| Html
+| html
 
 
 ### <a name="locationtype-values"></a>locationType 值
@@ -236,14 +236,14 @@ ms.locfileid: "37036205"
 | Member
 |:-------------------------
 | 任意
-| call
+| 通话
 | doNotForward
 | 努力
 | 仅供参考
-| 前后
+| 转发
 | noResponseNecessary
 | 自述
-| 响应
+| 回复
 | replyToAll
 | 概述
 
@@ -252,9 +252,9 @@ ms.locfileid: "37036205"
 
 | 成员      | 值
 |:------------|:------------
-| Owner       | 0
-| 参与者 | 1
-| 读者      | 双面
+| 所有者       | 0
+| 参与者 | 1 
+| 读者      | 2 
 | 无        | -1
 
 
@@ -263,7 +263,7 @@ ms.locfileid: "37036205"
 | Member
 |:-----------------
 | NotStarted
-| 运行
+| 正在运行
 | Completed
 | Failed
 
@@ -272,7 +272,7 @@ ms.locfileid: "37036205"
 
 | Member
 |:-------------------------
-| Replace
+| 替换
 | Append
 | 删除
 | Insert
@@ -309,7 +309,7 @@ ms.locfileid: "37036205"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | reference
 
 
@@ -382,7 +382,7 @@ ms.locfileid: "37036205"
 | Member
 |:-------------------------
 | 无
-| organizer － 组织者
+| 组织者
 | tentativelyAccepted
 | 接受
 | 邀请
@@ -416,24 +416,24 @@ ms.locfileid: "37036205"
 |:---------|:--------
 | 无     | -1
 | preset0  | 0
-| preset1  | 1
-| preset2  | 双面
-| preset3  | 第三章
-| preset4  | 4
-| preset5  | 5
-| preset6  | 型
-| preset7  | 步
-| preset8  | utf-8
-| preset9  | 第
+| preset1  | 1 
+| preset2  | 2 
+| preset3  | 3 
+| preset4  | 4 
+| preset5  | 5 
+| preset6  | 6 
+| preset7  | 7 
+| preset8  | 8 
+| preset9  | 9 
 | preset10 | 10 
-| preset11 | 11x17
-| preset12 | 12
-| preset13 | 13
-| preset14 | 日
-| preset15 | 个
-| preset16 | 位
-| preset17 | ×
-| preset18 | 18
+| preset11 | 11 
+| preset12 | 12 
+| preset13 | 13 
+| preset14 | 14 
+| preset15 | 15 
+| preset16 | 16 
+| preset17 | 17 
+| preset18 | 18 
 | preset19 | 合
 | preset20 | 20
 | preset21 | 不足
@@ -448,9 +448,9 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|truePositive|1|警报为 true-肯定。|
-|falsePositive|双面| 警报为 false-肯定。|
-|benignPositive|第三章| 警报为良性-肯定。|
+|truePositive|1 |警报为 true-肯定。|
+|falsePositive|2 | 警报为 false-肯定。|
+|benignPositive|3 | 警报为良性-肯定。|
 
 ### <a name="filehashtype-values"></a>fileHashType 值
 
@@ -459,14 +459,14 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知类型。|
-|sha1|1|SHA1 哈希类型。|
-|sha256|双面| SHA256 哈希类型。|
-|md5|第三章| MD5 哈希类型。|
-|authenticodeHash256|4| AuthenticodeHash256 哈希类型。|
-|lsHash|5| LsHash 哈希类型。|
-|ctph|型| CTPH 哈希类型。|
-|peSha1|步| PESHA1 哈希类型。|
-|peSha256|utf-8| PESHA256 哈希类型。|
+|sha1|1 |SHA1 哈希类型。|
+|sha256|2 | SHA256 哈希类型。|
+|md5|3 | MD5 哈希类型。|
+|authenticodeHash256|4 | AuthenticodeHash256 哈希类型。|
+|lsHash|5 | LsHash 哈希类型。|
+|ctph|6 | CTPH 哈希类型。|
+|peSha1|7 | PESHA1 哈希类型。|
+|peSha256|8 | PESHA256 哈希类型。|
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
@@ -475,8 +475,8 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的连接。|
-|进货|1|入站连接。|
-|出站|双面| 出站连接。|
+|进货|1 |入站连接。|
+|出站|2 | 出站连接。|
 
 ### <a name="connectionstatus-values"></a>connectionStatus 值
 
@@ -485,10 +485,10 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
-|尝试|1|已尝试连接。|
-|完成|双面| 连接成功。|
-|堵塞|第三章| 连接被阻止。|
-|未能|4| 连接失败。|
+|尝试|1 |已尝试连接。|
+|完成|2 | 连接成功。|
+|堵塞|3 | 连接被阻止。|
+|未能|4 | 连接失败。|
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
@@ -505,17 +505,17 @@ ms.locfileid: "37036205"
 
 ### <a name="registryhive-values"></a>registryHive 值
 
-由定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)注册表配置单元的枚举。
+由[/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives)定义的注册表配置单元的枚举。
 
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知配置单元。|
-|currentConfig|1|HKEY_CURRENT_CONFIG 配置单元。|
-|currentUser|双面| HKEY_CURRENT_USER 配置单元。|
-|localMachineSam|第三章| HKEY_LOCAL_MACHINE\SAM 配置单元。|
-|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software 配置单元。|
-|localMachineSystem|5| HKEY_LOCAL_MACHINE\System 配置单元。|
-|usersDefault|型| HKEY_USERS\\。默认配置单元。|
+|currentConfig|1 |HKEY_CURRENT_CONFIG 配置单元。|
+|currentUser|2 | HKEY_CURRENT_USER 配置单元。|
+|localMachineSam|3 | HKEY_LOCAL_MACHINE \SAM 配置单元。|
+|localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE \Software 配置单元。|
+|localMachineSystem|5 | HKEY_LOCAL_MACHINE \System 配置单元。|
+|usersDefault|6 | HKEY_USERS\\。默认配置单元。|
 
 ### <a name="registryoperation-values"></a>registryOperation 值
 
@@ -524,28 +524,28 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
-|create|1|创建注册表。|
-|modify|双面|修改注册表。|
-|delete|第三章|删除注册表。|
+|create|1 |创建注册表。|
+|modify|2 |修改注册表。|
+|delete|3 |删除注册表。|
 
 ### <a name="registryvaluetype-values"></a>registryValueType 值
 
-由定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)注册表值类型的枚举。
+由[/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types)定义的注册表值类型的枚举。
 
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
-|数字|1|REG_BINARY 注册表值类型。|
-|值|双面| REG_DWORD 注册表值类型。|
-|dwordLittleEndian|第三章| REG_DWORD_LITTLE_ENDIAN 注册表值类型。|
-|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN 注册表值类型。|
-|expandSz|5| REG_EXPAND_SZ 注册表值类型。|
-|link|型| REG_LINK 注册表值类型。|
-|multiSz|步| REG_MULTI_SZ 注册表值类型。|
-|无|utf-8| REG_NONE 注册表值类型。|
-|qword|第| REG_QWORD 注册表值类型。|
+|数字|1 |REG_BINARY 注册表值类型。|
+|值|2 | REG_DWORD 注册表值类型。|
+|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN 注册表值类型。|
+|dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN 注册表值类型。|
+|expandSz|5 | REG_EXPAND_SZ 注册表值类型。|
+|link|6 | REG_LINK 注册表值类型。|
+|multiSz|7 | REG_MULTI_SZ 注册表值类型。|
+|无|8 | REG_NONE 注册表值类型。|
+|qword|9 | REG_QWORD 注册表值类型。|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
-|sz|11x17| REG_SZ 注册表值类型。|
+|sz|11 | REG_SZ 注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -554,10 +554,10 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|严重度未知。|
-|之|1|严重性仅适用于信息。|
-|降低|双面| 严重性为低。|
-|中等|第三章| 严重性为 "中"。|
-|高效|4| 严重性为高。|
+|之|1 |严重性仅适用于信息。|
+|降低|2 | 严重性为低。|
+|中等|3 | 严重性为 "中"。|
+|高效|4 | 严重性为高。|
 
 ### <a name="alertstatus-values"></a>alertStatus 值
 
@@ -576,8 +576,8 @@ ms.locfileid: "37036205"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知角色。|
-|sender|1|电子邮件的发件人。|
-|recipient|双面|电子邮件的收件人。|
+|sender|1 |电子邮件的发件人。|
+|recipient|2 |电子邮件的收件人。|
 
 ### <a name="logontype-values"></a>logonType 值
 
@@ -587,10 +587,10 @@ ms.locfileid: "37036205"
 |:---|:---|:---|
 |unknown|-1|陌生.|
 |式|0|登录是交互式的。|
-|remoteInteractive|1| 登录是远程交互的。|
-|network|双面| 登录为网络。|
-|batch|第三章| 登录是批处理。|
-|service|4| 登录为 "服务"。|
+|remoteInteractive|1 | 登录是远程交互的。|
+|network|2 | 登录为网络。|
+|batch|3 | 登录是批处理。|
+|service|4 | 登录为 "服务"。|
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
@@ -600,8 +600,8 @@ ms.locfileid: "37036205"
 |:---|:---|:---|
 |unknown|-1|陌生.|
 |普通|0|"标准用户" 组的成员。|
-|能力|1| Power Users 组的成员。|
-|联系|双面| Administrators 组的成员。|
+|能力|1 | Power Users 组的成员。|
+|联系|2 | Administrators 组的成员。|
 
 ### <a name="riskdetail-values"></a>riskDetail 值
 

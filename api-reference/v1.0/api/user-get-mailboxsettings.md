@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d4cb9e9a665ea6e1a06162ddc6cee3067f0e21d1
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 185e10b8c6e5826ca8d200df2b964496ededd9b9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427758"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864045"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -25,11 +25,11 @@ ms.locfileid: "37427758"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
+用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
 
-通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。 管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。 Windows 时区是默认格式。 
+通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。 管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。 Windows 时区是默认格式。
 
-此 `GET` 操作以管理员设置的格式返回用户的首选时区。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。 
+此 `GET` 操作以管理员设置的格式返回用户的首选时区。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -94,7 +94,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-#### <a name="request"></a>请求 
+#### <a name="request"></a>请求
 第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。
 
 <!-- {
@@ -106,7 +106,8 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
 #### <a name="response"></a>响应
-该响应包括已登录用户的所有邮箱设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+该响应包括已登录用户的所有邮箱设置。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -227,7 +228,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
 #### <a name="response"></a>响应
-该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

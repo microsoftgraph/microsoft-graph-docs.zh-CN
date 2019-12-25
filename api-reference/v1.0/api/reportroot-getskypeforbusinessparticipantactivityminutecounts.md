@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 6c85ddecb5b40e103c7c5e0638f7879ac5595a9d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 820f302f45bddce4dd0c594c89f23837b2637313
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727962"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864255"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 
@@ -27,6 +27,8 @@ ms.locfileid: "36727962"
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
+
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +74,7 @@ CSV 文件包含下面的列标题。
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActiv
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessparticipantactivityminutecounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessparticipantactivityminutecounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

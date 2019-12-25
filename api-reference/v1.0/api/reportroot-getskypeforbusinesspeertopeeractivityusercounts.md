@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c558378e9d01d2e96882007c92c7e008f106c6fa
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 65fa7bdc5f15d348368982096b31f5a3dfacc917
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368370"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864234"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
@@ -27,6 +27,8 @@ ms.locfileid: "37368370"
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
+
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 

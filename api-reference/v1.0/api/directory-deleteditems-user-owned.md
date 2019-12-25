@@ -1,24 +1,24 @@
 ---
-title: 权限
+title: 列出用户拥有的已删除项目
 description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0a863964f553bedeb4e47c81afefc3aa4f7d39b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 168667566f880ecc2b2aafea63d95179e8c5c6a4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016935"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869947"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a>**列出用户拥有的已删除项目**
+# <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 
 检索指定用户拥有的最近删除的项目的列表。  
 
-目前, 列出已删除项目仅支持用户拥有的[组](../resources/group.md)资源的功能。
+目前，列出已删除项目仅支持用户拥有的[应用程序](../resources/application.md)和[组](../resources/group.md)资源的功能。
 
-这是一个服务操作, 这意味着它不支持分页。  API 返回最大为1000个已删除的对象, 这些对象归用户所有, 按 ID 排序。
+这是一个服务操作，这意味着它不支持分页。  API 返回最大为1000个已删除的对象，这些对象归用户所有，按 ID 排序。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-请求正文需要以下参数:
+请求正文需要以下参数：
 
 | 参数    | 类型 |说明|
 |:---------------|:--------|:----------|
@@ -61,7 +61,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="response"></a>响应
 
-成功的请求`200 OK`返回响应代码;response 对象包括[目录 (已删除项目)](../resources/directory.md)属性。
+成功的请求`200 OK`返回响应代码;response 对象包括[目录（已删除项目）](../resources/directory.md)属性。
 
 ## <a name="example"></a>示例
 
@@ -83,7 +83,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>响应
 
-下面是一个响应示例。 注意: 为简洁起见, 可能会截断此响应对象。 所有受支持的属性都从实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此响应对象。 所有受支持的属性都从实际调用返回。
 
 ``` http
 HTTP/1.1 200

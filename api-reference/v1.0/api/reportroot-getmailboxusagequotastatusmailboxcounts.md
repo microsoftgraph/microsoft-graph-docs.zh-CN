@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: f682f374e1aa1b7d36a8a49768423e3a64c84dc5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8144dc1df42f7528cb96362ff2bdbb870c97f2bc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729761"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865445"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -27,6 +27,8 @@ ms.locfileid: "36729761"
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
+
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,7 +78,7 @@ CSV 文件包含下面的列标题。
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageQuotaStatusMailboxCo
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagequotastatusmailboxcounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagequotastatusmailboxcounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

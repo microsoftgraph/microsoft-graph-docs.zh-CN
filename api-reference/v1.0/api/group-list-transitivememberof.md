@@ -1,20 +1,20 @@
 ---
 title: 列表组可传递的 memberOf
-description: 获取组所属的组。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
+description: 获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c66aa31dbd8f561b343d65247bb7394e71c6d6e1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 039fcc07b0c8f261153f168ef2590ea35ed84b3e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720779"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864731"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 
-获取组所属的组。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
+获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
 
 ## <a name="permissions"></a>权限
 
@@ -25,6 +25,8 @@ ms.locfileid: "36720779"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ GET /groups/{id}/transitiveMemberOf
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_transitivememberof"
@@ -68,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 931d1f06b968a2a8da68245d16eb0de5fec768f5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c91523265c988265dd8706677ba82ecd4634e250
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721276"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864829"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -24,6 +24,8 @@ ms.locfileid: "36721276"
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ GET /directoryRoles/{id}/members
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members"
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: 列出设备可传递组
-description: 获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
+description: 获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 73b838e1b187fcdabd46b069f75c7606d35f1063
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2dc4d74335548ade4b61c27a936961e946910ed0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727059"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869982"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 
-获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
+获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -25,6 +25,8 @@ ms.locfileid: "36727059"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +61,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_devices_transitivememberof"
@@ -76,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

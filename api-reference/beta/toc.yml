@@ -309,7 +309,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 注释
+            - name: 备注
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -845,7 +845,7 @@
               items:
                 - name: 创建
                   href: api/application-post-calls.md
-                - name: 获取呼叫
+                - name: 获取
                   href: api/call-get.md
                 - name: 删除/挂断
                   href: api/call-delete.md
@@ -857,6 +857,8 @@
                   href: api/call-redirect.md
                 - name: 转接
                   href: api/call-transfer.md
+                - name: 保持活动
+                  href: api/call-keepalive.md
                 - name: IVR 方案
                   href: resources/calls-api-ivr-overview.md
                   items:
@@ -871,16 +873,16 @@
                 - name: 参与者
                   href: resources/participant.md
                   items:
-                    - name: 获取参与者
+                    - name: 获取
                       href: api/participant-get.md
+                    - name: 列表
+                      href: api/call-list-participants.md
                     - name: 配置 Mixer
                       href: api/participant-configuremixer.md
                     - name: 参与者静音
                       href: api/participant-mute.md
                     - name: 所有参与者静音
                       href: api/participant-muteall.md
-                    - name: 列出参与者
-                      href: api/call-list-participants.md
                     - name: 邀请参与者
                       href: api/participant-invite.md
                 - name: 更改屏幕共享角色
@@ -896,21 +898,23 @@
                 - name: 音频路由组
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: 创建音频路由组
+                    - name: Create
                       href: api/call-post-audioroutinggroups.md
-                    - name: 获取音频路由组
+                    - name: 获取
                       href: api/audioroutinggroup-get.md
-                    - name: 更新音频路由组
+                    - name: 更新
                       href: api/audioroutinggroup-update.md
-                    - name: 删除音频路由组
+                    - name: 删除
                       href: api/audioroutinggroup-delete.md
             - name: 在线会议
               href: resources/onlinemeeting.md
               items:
-                - name: 创建在线会议
+                - name: Create
                   href: api/application-post-onlinemeetings.md
-                - name: 获取在线会议
+                - name: 获取
                   href: api/onlinemeeting-get.md
+                - name: 删除
+                  href: api/onlinemeeting-delete.md
             - name: 状态
               href: resources/presence.md
               items:
@@ -1266,7 +1270,7 @@
                 - name: 设备安装状态
                   href: resources/intune-books-deviceinstallstate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-books-deviceinstallstate-list.md
                     - name: 获取
                       href: api/intune-books-deviceinstallstate-get.md
@@ -1286,7 +1290,7 @@
                 - name: 企业代码签名证书
                   href: resources/intune-apps-enterprisecodesigningcertificate.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-enterprisecodesigningcertificate-list.md
                     - name: 获取
                       href: api/intune-apps-enterprisecodesigningcertificate-get.md
@@ -1922,7 +1926,7 @@
                 - name: 用户安装状态摘要
                   href: resources/intune-books-userinstallstatesummary.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-books-userinstallstatesummary-list.md
                     - name: 获取
                       href: api/intune-books-userinstallstatesummary-get.md
@@ -1937,7 +1941,7 @@
                 - name: Web 应用
                   href: resources/intune-apps-webapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-webapp-list.md
                     - name: 获取
                       href: api/intune-apps-webapp-get.md
@@ -6846,7 +6850,7 @@
                 - name: Windows 信息保护
                   href: resources/intune-mam-windowsinformationprotection.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-windowsinformationprotection-list.md
                     - name: 获取
                       href: api/intune-mam-windowsinformationprotection-get.md
@@ -6857,7 +6861,7 @@
                 - name: Windows 信息保护应用学习摘要
                   href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                     - name: 获取
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -7052,7 +7056,7 @@
                 - name: 设备管理合作伙伴
                   href: resources/intune-onboarding-devicemanagementpartner.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-devicemanagementpartner-list.md
                     - name: 获取
                       href: api/intune-onboarding-devicemanagementpartner-get.md
@@ -7071,7 +7075,7 @@
                 - name: 注册配置分配
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7426,7 +7430,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: 列表
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: Delete
+                    - name: 删除
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: 设备管理脚本
                   href: resources/intune-shared-devicemanagementscript.md
@@ -8651,6 +8655,8 @@
                   items:
                     - name: 列表
                       href: api/accesspackageassignmentresourcerole-list.md
+                    - name: 获取
+                      href: api/accesspackageassignmentresourcerole-get.md
                 - name: 访问包目录
                   href: resources/accesspackagecatalog.md
                   items:
@@ -8664,6 +8670,22 @@
                       href: api/accesspackagecatalog-delete.md
                     - name: 列出资源
                       href: api/accesspackagecatalog-list-accesspackageresources.md
+                    - name: 列出资源角色
+                      href: api/accesspackagecatalog-list-accesspackageresourceroles.md
+                - name: 访问包资源请求
+                  href: resources/accesspackageresourcerequest.md
+                  items:
+                    - name: 列表
+                      href: api/accesspackageresourcerequest-list.md
+                    - name: Create
+                      href: api/accesspackageresourcerequest-post.md
+                - name: 访问包资源角色作用域
+                  href: resources/accesspackageresourcerequest.md
+                  items:
+                    - name: 列表
+                      href: api/accesspackage-list-accesspackageresourcerolescopes.md
+                    - name: Create
+                      href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
               items:
@@ -8765,6 +8787,26 @@
                       href: api/informationprotectionlabel-evaluateremoval.md
                     - name: 提取标签
                       href: api/informationprotectionlabel-extractlabel.md
+                - name: 威胁评估
+                  items:
+                    - name: 概述
+                      href: resources/threatassessment-api-overview.md
+                    - name: 威胁评估请求
+                      href: resources/threatassessmentrequest.md
+                    - name: 邮件评估请求
+                      href: resources/mailassessmentrequest.md
+                    - name: 电子邮件文件评估请求
+                      href: resources/emailfileassessmentrequest.md
+                    - name: 文件评估请求
+                      href: resources/fileAssessmentRequest.md
+                    - name: Url 评估请求
+                      href: resources/urlassessmentrequest.md
+                    - name: 列表
+                      href: api/informationprotection-list-threatassessmentrequests.md
+                    - name: 创建
+                      href: api/informationprotection-post-threatassessmentrequests.md
+                    - name: 获取
+                      href: api/threatassessmentrequest-get.md
             - name: 邀请管理器
               href: resources/invitation.md
               items:
@@ -8974,7 +9016,7 @@
                     - name: 角色定义
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/governanceroledefinition-list.md
                         - name: 获取
                           href: api/governanceroledefinition-get.md
@@ -9135,7 +9177,7 @@
             - name: 信任框架策略
               href: resources/trustframeworkpolicy.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: 创建
                   href: api/trustframework-post-trustframeworkpolicy.md
@@ -9148,9 +9190,7 @@
             - name: 信任框架键集
               href: resources/trustframeworkkeyset.md
               items:
-                - name: 信任框架密钥
-                  href: resources/trustframeworkkey.md
-                - name: 列出
+                - name: 列表
                   href: api/trustframework-list-keysets.md
                 - name: 创建
                   href: api/trustframework-post-keysets.md
@@ -9173,7 +9213,7 @@
             - name: 用户流
               href: resources/identityuserflow.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/identityuserflow-list.md
                 - name: 创建
                   href: api/identityuserflow-post-userflows.md
@@ -10071,7 +10111,7 @@
                 - name: Positions
                   href: resources/workposition.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-positions.md
                     - name: 创建
                       href: api/profile-post-positions.md
@@ -10084,7 +10124,7 @@
                 - name: 项目
                   href: resources/projectparticipation.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-projects.md
                     - name: 创建
                       href: api/profile-post-projects.md
@@ -10097,7 +10137,7 @@
                 - name: Skills
                   href: resources/skillproficiency.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-skills.md
                     - name: 创建
                       href: api/profile-post-skills.md
@@ -10364,6 +10404,8 @@
                   href: api/channel-get.md
                 - name: '更新频道 '
                   href: api/channel-patch.md
+                - name: 删除频道
+                  href: api/channel-delete.md
                 - name: 列出频道消息
                   href: api/channel-list-messages.md
                 - name: 获取通道消息 delta
@@ -10473,67 +10515,126 @@
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
                   href: api/opentypeextension-get.md
-            - name: 计划
-              href: resources/schedule.md
+            - name: 发生
               items:
-                - name: 创建或替换
-                  href: api/team-put-schedule.md
-                - name: 获取
-                  href: api/schedule-get.md
-                - name: 共享
-                  href: api/schedule-share.md
-            - name: 计划组
-              href: resources/schedulinggroup.md
-              items:
-                - name: 创建
-                  href: api/schedule-post-schedulinggroups.md
-                - name: 列出
-                  href: api/schedule-list-schedulinggroups.md
-                - name: 获取
-                  href: api/schedulinggroup-get.md
-                - name: 替换
-                  href: api/schedulinggroup-put.md
-                - name: 删除
-                  href: api/schedulinggroup-delete.md
-            - name: 调班
-              href: resources/shift.md
-              items:
-                - name: 创建
-                  href: api/schedule-post-shifts.md
-                - name: 列出
-                  href: api/schedule-list-shifts.md
-                - name: 获取
-                  href: api/shift-get.md
-                - name: 替换
-                  href: api/shift-put.md
-                - name: 删除
-                  href: api/shift-delete.md
-            - name: 休假
-              href: resources/timeoff.md
-              items:
-                - name: 创建
-                  href: api/schedule-post-timesoff.md
-                - name: 列出
-                  href: api/schedule-list-timesoff.md
-                - name: 获取
-                  href: api/timeoff-get.md
-                - name: 替换
-                  href: api/timeoff-put.md
-                - name: 删除
-                  href: api/timeoff-delete.md
-            - name: 休假原因
-              href: resources/timeoffreason.md
-              items:
-                - name: 创建
-                  href: api/schedule-post-timeoffreasons.md
-                - name: 列出
-                  href: api/schedule-list-timeoffreasons.md
-                - name: 获取
-                  href: api/timeoffreason-get.md
-                - name: 替换
-                  href: api/timeoffreason-put.md
-                - name: 删除
-                  href: api/timeoffreason-delete.md
+                - name: Shift
+                  href: resources/shift.md
+                  items:
+                    - name: 列出
+                      href: api/schedule-list-shifts.md
+                    - name: 创建
+                      href: api/schedule-post-shifts.md
+                    - name: 获取
+                      href: api/shift-get.md
+                    - name: 替换
+                      href: api/shift-put.md
+                    - name: 删除
+                      href: api/shift-delete.md
+                - name: 计划
+                  href: resources/schedule.md
+                  items:
+                    - name: 创建或替换
+                      href: api/team-put-schedule.md
+                    - name: 获取
+                      href: api/schedule-get.md
+                    - name: 共享
+                      href: api/schedule-share.md
+                - name: 计划组
+                  href: resources/schedulinggroup.md
+                  items:
+                    - name: 列出
+                      href: api/schedule-list-schedulinggroups.md
+                    - name: 创建
+                      href: api/schedule-post-schedulinggroups.md
+                    - name: 获取
+                      href: api/schedulinggroup-get.md
+                    - name: 替换
+                      href: api/schedulinggroup-put.md
+                    - name: 删除
+                      href: api/schedulinggroup-delete.md
+                - name: 打开班次
+                  href: resources/openshift.md
+                  items:
+                    - name: 获取
+                      href: api/openshift-get.md
+                    - name: 更新
+                      href: api/openshift-update.md
+                    - name: 删除
+                      href: api/openshift-delete.md
+                - name: 打开班次轮换更改请求
+                  href: resources/openshiftchangerequest.md
+                  items:
+                    - name: 获取
+                      href: api/openshiftchangerequest-get.md
+                    - name: 更新
+                      href: api/openshiftchangerequest-update.md
+                    - name: 删除
+                      href: api/openshiftchangerequest-delete.md
+                    - name: 批准
+                      href: api/openshiftchangerequest-approve.md
+                    - name: 拒绝
+                      href: api/openshiftchangerequest-decline.md
+                - name: 交换班次更改请求
+                  href: resources/swapshiftschangerequest.md
+                  items:
+                    - name: 获取
+                      href: api/swapshiftschangerequest-get.md
+                    - name: 更新
+                      href: api/swapshiftschangerequest-update.md
+                    - name: 删除
+                      href: api/swapshiftschangerequest-delete.md
+                - name: 休假
+                  href: resources/timeoff.md
+                  items:
+                    - name: 列出
+                      href: api/schedule-list-timesoff.md
+                    - name: 创建
+                      href: api/schedule-post-timesoff.md
+                    - name: 获取
+                      href: api/timeoff-get.md
+                    - name: 替换
+                      href: api/timeoff-put.md
+                    - name: 删除
+                      href: api/timeoff-delete.md
+                - name: 休假原因
+                  href: resources/timeoffreason.md
+                  items:
+                    - name: 列出
+                      href: api/schedule-list-timeoffreasons.md
+                    - name: 创建
+                      href: api/schedule-post-timeoffreasons.md
+                    - name: 获取
+                      href: api/timeoffreason-get.md
+                    - name: 替换
+                      href: api/timeoffreason-put.md
+                    - name: 删除
+                      href: api/timeoffreason-delete.md
+                - name: 休息时间请求
+                  href: resources/timeoffrequest.md
+                  items:
+                    - name: 获取
+                      href: api/timeoffrequest-get.md
+                    - name: 更新
+                      href: api/timeoffrequest-update.md
+                    - name: 删除
+                      href: api/timeoffrequest-delete.md
+                    - name: 批准
+                      href: api/timeoffrequest-approve.md
+                    - name: 拒绝
+                      href: api/timeoffrequest-decline.md
+                - name: 劳动力集成
+                  href: resources/workforceintegration.md
+                  items:
+                    - name: 列出
+                      href: api/workforceintegration-list.md
+                    - name: 创建
+                      href: api/workforceintegration-post.md
+                    - name: 获取
+                      href: api/workforceintegration-get.md
+                    - name: 更新
+                      href: api/workforceintegration-update.md
+                    - name: 删除
+                      href: api/workforceintegration-delete.md
             - name: Drive
               href: resources/drive.md
               items:
@@ -10560,7 +10661,7 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-tasks.md
                 - name: 创建
                   href: api/outlookuser-post-tasks.md
@@ -10579,7 +10680,7 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-taskfolders.md
                 - name: 创建
                   href: api/outlookuser-post-taskfolders.md

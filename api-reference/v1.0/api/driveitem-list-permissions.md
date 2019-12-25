@@ -5,25 +5,25 @@ ms.date: 09/10/2017
 title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
-description: 列出 DriveItem 中的有效共享权限。
+description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e1348a36e71a8ecc694f2a61f5056b12efd02399
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721096"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864780"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
+# <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
 
-列出 [DriveItem](../resources/driveitem.md) 中的有效共享权限。
+列出[driveItem](../resources/driveitem.md)上的有效共享权限。
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 
-权限集合包括潜在的敏感信息，不可能适用于每个调用方。
+权限集合包括潜在的敏感信息，未必适用于所有调用方。
 
 * 对于该项目的所有者，将返回所有共享权限。 这包括共有者。
-* 对于非所有者的调用方，仅返回应用于调用方的共享权限。
+* 对于非所有者的调用方，仅返回适用于调用方的共享权限。
 * 对于能够创建共享权限的调用方，仅返回包含机密信息（例如 `shareId` 和 `webUrl`）的共享权限属性。
 
 ## <a name="permissions"></a>权限
@@ -61,7 +61,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Permission](../resources/permission.md) 资源集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [权限](../resources/permission.md) 资源集合。
 
 DriveItem 的有效共享权限可能有两个来源：
 
@@ -70,14 +70,13 @@ DriveItem 的有效共享权限可能有两个来源：
 
 调用方可以通过检查 **inheritedFrom** 属性来区分是否为继承权限。此属性是引用从中继承该权限的上级的 [**itemReference**](../resources/itemreference.md) 资源。
 
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)。
+对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/library/cc721640.aspx#section1)。
 
 ## <a name="example"></a>示例
 
 本示例检索登录用户驱动器中某个项的权限集合。
 
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
@@ -91,7 +90,7 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +103,7 @@ GET /me/drive/items/{item-id}/permissions
 
 ### <a name="response"></a>响应
 
-此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。
+此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹且用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 
@@ -152,7 +151,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的**权限**关系。必须直接访问权限属性。
 

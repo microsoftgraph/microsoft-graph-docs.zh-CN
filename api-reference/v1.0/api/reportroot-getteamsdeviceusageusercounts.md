@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 25c3570d6b330070bd7786aef5a47ca6b4e805cd
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 806f931c69e08451195317ca84eebc2bb990f613
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727913"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865237"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -25,6 +25,8 @@ ms.locfileid: "36727913"
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
+
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -73,7 +75,7 @@ CSV 文件包含下面的列标题：
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getteamsdeviceusageusercounts"
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserCounts(perio
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsdeviceusageusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getteamsdeviceusageusercounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

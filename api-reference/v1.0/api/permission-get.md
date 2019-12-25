@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 367330a2ba1c4f592b8b04a3ab0df7e7f7b94950
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8f2aa1e4e8345b2d84831ebbc8ec1044ad99b3a9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728557"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865515"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -22,7 +22,7 @@ ms.locfileid: "36728557"
 
 调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemreference.md) 资源。
 
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)。
+对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/library/cc721640.aspx#section1)。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持 [$select 查询参数](/graph/query-parameters)塑造响应。
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 下面是请求访问某个文件夹权限的示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
@@ -75,7 +75,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

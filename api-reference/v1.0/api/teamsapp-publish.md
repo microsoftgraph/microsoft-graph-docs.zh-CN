@@ -5,24 +5,25 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e5254d5d75ac2dbb2efa1882845bbfbd40fa291
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e4f5ce3867be2bc7109ae3069e7737ee6be2498
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021156"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865172"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>将应用程序发布到你的组织的应用程序目录
 
 
 
-将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队应用程序目录。 具体而言, 此 API 会将应用程序发布到您的组织的目录 (租户应用程序目录);创建的资源将具有`distributionMethod`  =  `organization`。
+将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队应用程序目录。
+具体而言，此 API 会将应用程序发布到您的组织的目录（租户应用程序目录）;创建的资源将具有`distributionMethod`  =  `organization`。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
->**注意:** 只有全局管理员才能调用此 API。 
+>**注意：** 只有全局管理员才能调用此 API。
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
@@ -45,11 +46,13 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-body"></a>请求正文
 
-团队 Zip 清单有效负载。 对于 "团队应用程序 zip 文件",[请参阅创建应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。 您不能为与该组织中的另一个应用程序具有相同清单 ID 的组织创建应用程序。
+团队 Zip 清单有效负载。
+对于 "团队应用程序 zip 文件"，[请参阅创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。
+您不能为与该组织中的另一个应用程序具有相同清单 ID 的组织创建应用程序。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`200 OK`返回响应代码和[teamsCatalogApp](../resources/teamsapp.md)对象。
+如果成功，此方法将`200 OK`返回响应代码和[teamsCatalogApp](../resources/teamsapp.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -63,7 +66,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-有关如何创建 Microsoft 团队应用程序 zip 文件的信息, 请参阅[创建应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。 
+有关如何创建 Microsoft 团队应用程序 zip 文件的信息，请参阅[创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。
 
 ### <a name="response"></a>响应
 

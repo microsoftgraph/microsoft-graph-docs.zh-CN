@@ -5,27 +5,28 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d657b8f022395c24d27df56442c164731215a04e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c1485bbc43588b8144cbe1cc7cb189f9b8c9fdc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033850"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863776"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
 
 
-用于配置成员是否可以在[团队](team.md)中执行某些操作 (例如, 创建频道和添加 bot) 的设置。
+用于配置成员是否可以在[团队](team.md)中执行某些操作（例如，创建频道和添加 bot）的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|如果设置为 true, 则成员可以添加和更新频道。|
-|allowDeleteChannels|Boolean|如果设置为 true, 则成员可以删除频道。|
-|allowAddRemoveApps|Boolean|如果设置为 true, 则成员可以添加和删除应用。|
-|allowCreateUpdateRemoveTabs|Boolean|如果设置为 true, 则成员可以添加、更新和删除选项卡。 |
-|allowCreateUpdateRemoveConnectors|Boolean|如果设置为 true, 则成员可以添加、更新和删除连接器。|
+|allowCreatePrivateChannels|Boolean|如果设置为 true，则成员可以添加和更新专用通道。|
+|allowCreateUpdateChannels|Boolean|如果设置为 true，则成员可以添加和更新频道。|
+|allowDeleteChannels|Boolean|如果设置为 true，则成员可以删除频道。|
+|allowAddRemoveApps|Boolean|如果设置为 true，则成员可以添加和删除应用。|
+|allowCreateUpdateRemoveTabs|Boolean|如果设置为 true，则成员可以添加、更新和删除选项卡。 |
+|allowCreateUpdateRemoveConnectors|Boolean|如果设置为 true，则成员可以添加、更新和删除连接器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,6 +39,7 @@ ms.locfileid: "36033850"
 
 ```json
 {
+  "allowCreatePrivateChannels": true,
   "allowCreateUpdateChannels": true,
   "allowDeleteChannels": true,
   "allowAddRemoveApps": true,

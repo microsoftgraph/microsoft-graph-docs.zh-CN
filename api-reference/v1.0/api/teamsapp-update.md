@@ -5,24 +5,26 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a963b2f91c149cef6fd5c291888aa2f6a8bb1ad2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a1c66f2d189d3c85316277ee6c23b6c798d610f3
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027305"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864087"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>更新发布到组织的应用程序目录的应用程序
 
 
 
-更新之前发布到 Microsoft 团队应用程序目录的[应用程序](../resources/teamsapp.md)。 此 API 专门更新发布到您的组织的应用程序目录 (租户应用程序目录) 的应用程序。 若要发布到您的组织的应用程序`organization`目录, 请在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
+更新之前发布到 Microsoft 团队应用程序目录的[应用程序](../resources/teamsapp.md)。
+此 API 专门更新发布到您的组织的应用程序目录（租户应用程序目录）的应用程序。
+若要发布到您的组织的应用程序`organization`目录，请在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
->**注意:** 只有全局管理员才能调用此 API。
+>**注意：** 只有全局管理员才能调用此 API。
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
@@ -45,9 +47,10 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>请求正文
 
-团队 Zip 清单有效负载: 对于团队应用程序 Zip 文件,[请参阅创建应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+团队 Zip 清单有效负载：对于团队应用程序 Zip 文件，[请参阅创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)
 
->**注意:** 使用从[列表已发布的应用程序](./teamsapp-list.md)调用中返回的 ID 引用要更新的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
+>**注意：** 使用从[列表已发布的应用程序](./teamsapp-list.md)调用中返回的 ID 引用要更新的应用程序。
+请勿使用 zip 应用程序包清单中的 ID。
 
 ## <a name="response"></a>响应
 
@@ -67,7 +70,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-对于团队应用程序 zip 文件,[请参阅创建应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+对于团队应用程序 zip 文件，[请参阅创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)
 
 ### <a name="response"></a>响应
 

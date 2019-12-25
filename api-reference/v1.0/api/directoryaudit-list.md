@@ -1,20 +1,20 @@
 ---
 title: 列出 directoryAudits
-description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体) 的列表方法。
+description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的列表方法。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82e281567c919ec6a1ada62c3f506893a435fb9a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7733cd1a29640331ecd4ab766bc3563fa29600b7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727052"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869956"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志, 包括用户、应用、设备和组管理、特权标识管理 (PIM)、访问查看、使用条款、身份保护、密码管理 (自助服务和管理员)密码重置) 和自助服务组管理等。
+获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问查看、使用条款、身份保护、密码管理（自助服务和管理员）密码重置）和自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "36727052"
 GET /auditLogs/directoryaudits
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
@@ -56,9 +56,9 @@ GET /auditLogs/directoryaudits
 | initiatedBy/user/userPrincipalName                           | eq、startswith      |
 | initiatedBy/app/appId                                        | eq                  |
 | initiatedBy/app/appDisplayName                               | eq                  |
-| targetResources/any (t: t/id eq "{value}")                    | eq                  |
-| targetResources/any (t: t/displayName eq ' {value} ')            | eq                  |
-| targetResources/any (x: startswith (x/displayName, "{value}")) | startswith          |
+| targetResources/any （t： t/id eq "{value}"）                    | eq                  |
+| targetResources/any （t： t/displayName eq ' {value} '）            | eq                  |
+| targetResources/any （x： startswith （x/displayName，"{value}"）） | startswith          |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -72,7 +72,7 @@ GET /auditLogs/directoryaudits
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directoryAudit](../resources/directoryaudit.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[directoryAudit](../resources/directoryaudit.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -81,7 +81,7 @@ GET /auditLogs/directoryaudits
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudit"
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,8 +160,8 @@ Content-length: 271
                 "oldValue": null,
                 "newValue": "DirectorySync"}],
             "groupType": "unifiedGroups"
-            }],
-        }, {
+            }, 
+            {
             "id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
             "displayName": null,
             "Type": "User",

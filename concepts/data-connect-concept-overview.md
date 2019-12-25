@@ -5,12 +5,12 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4e365c94761a6ea77b97aaf77f93152a53d8da9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: adbc84b0d032c4c2cfb32d0c448bac5bfcae607f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969205"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868021"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接概述
 Microsoft Graph 包含有关工作人员及其工作区的丰富数据，包括有关人员如何工作以及他们如何沟通、协作和管理时间的信息。 Microsoft Graph 数据连接提供了一套工具来简化将此据传递到 Microsoft Azure 的过程，让你能够获取最佳的开发和托管工具来处理此数据。 这使客户能够受益于创新或行业特定的应用程序，这些应用程序可以提高他们的工作效率，同时他们又可以完全掌控其 Microsoft Graph 数据。 Microsoft 不断引入客户期望的更加安全的控件。
@@ -27,9 +27,6 @@ Microsoft 正在促使 Microsoft Graph 和 Azure 之间就客户数据状态进�
 
 ### <a name="get-access-to-data-at-scale"></a>大规模访问数据
 丰富的应用程序需要访问大量数据，通常来自于组织中许多用户同时进行访问。 使用传统的事务性数据模型，你需要生成复杂的基础结构并进行数千次 API 调用以协调此数据交付。 Microsoft Graph 数据连接使用 Azure 数据工厂的强大功能，通过几个简单的步骤，以可重复的日程安排将组织中的 Office 365 数据传递给应用程序。
-
-## <a name="api-reference"></a>API 参考
-在查找此服务的 API 参考？
 
 ## <a name="next-steps"></a>后续步骤
 要开始使用，请参阅 [Microsoft Graph 数据连接入门](data-connect-get-started.md)。

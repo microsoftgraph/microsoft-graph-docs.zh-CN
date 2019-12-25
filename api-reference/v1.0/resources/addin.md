@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: ad65d0a9a3bed59bcb630082807004a7ca89ba5f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3671ad561fde44aac90d20284c7acbfedba6b0c3
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938995"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863933"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
-定义使用服务可用于调用特定上下文中的应用程序的自定义行为。 例如，可以呈现文件流的应用程序[可能会](https://docs.microsoft.com/en-us/onedrive/developer/file-handlers/?view=odsp-graph-online)为其 "FileHandler" 功能配置 addIns。 这将允许 Office 365 等服务在用户正在使用的文档的上下文中调用应用程序。
+定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序[可能会](/onedrive/developer/file-handlers/?view=odsp-graph-online)为其 "FileHandler" 功能配置 addIns。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

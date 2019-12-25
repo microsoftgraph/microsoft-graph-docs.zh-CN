@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d26efae5860b918563a265bde12dbfafe68b21fe
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 392ed9a0b2042eadcac035a93f2e667dbb1a9747
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427961"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863963"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -23,11 +23,11 @@ ms.locfileid: "37427961"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
+更新用户的首选日期或时间格式时，请分别指定[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。
 
 更新用户的首选时区时，在 Windows 或[Internet 分配的号码颁发机构（IANA）](https://www.iana.org/time-zones)的时区（也称为 "Olson 时区"）格式中指定它。 您还可以进一步自定义时区，如下面的[示例 2](#example-2)所示。
 
-> [!TIP] 
+> [!TIP]
 > 您不能创建或删除任何邮箱设置。
 
 ## <a name="permissions"></a>权限
@@ -58,9 +58,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
-|dateFormat|字符串|用户邮箱的日期格式。|
+|dateFormat|string|用户邮箱的日期格式。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
-|timeFormat|字符串|用户邮箱的时间格式。|
+|timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
 
@@ -82,7 +82,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 ## <a name="examples"></a>示例
 ### <a name="example-1"></a>示例 1
-#### <a name="request"></a>请求 
+#### <a name="request"></a>请求
 第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。
 
 

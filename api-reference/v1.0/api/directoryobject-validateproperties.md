@@ -1,27 +1,27 @@
 ---
-title: 'directoryObject: validateProperties'
-description: 验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。
+title: directoryObject： validateProperties
+description: 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ec6de5605093683018ec6504a93108fb387c1036
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7fb7424d07ca82191705cb020a33e03fc69481f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371824"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864836"
 ---
-# <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
+# <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
-验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试[创建](group-post-groups.md)Office 365 组之前, 客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性, 请使用[group: validateProperties](group-validateproperties.md)函数。
+验证 Office 365 组的显示名称或邮件别名是否符合命名策略。  在尝试[创建](group-post-groups.md)Office 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用[group： validateProperties](group-validateproperties.md)函数。
 
-将为显示名称和邮件昵称属性执行以下策略验证: 
+将为显示名称和邮件昵称属性执行以下策略验证：
 1. 验证前缀和后缀命名策略
 2. 验证 "自定义禁止的词语" 策略
 3. 验证邮件昵称是否唯一
 
-此 API 仅返回遇到的第一个验证失败。 如果属性失败多次验证, 则仅返回第一个验证失败。 但是, 如果仅验证前缀和后缀命名策略, 则可以验证邮件别名和显示名称, 并接收验证错误的集合。 若要了解有关配置命名策略的详细信息, 请参阅[Configure 命名策略](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
+此 API 仅返回遇到的第一个验证失败。 如果属性失败多次验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。 若要了解有关配置命名策略的详细信息，请参阅[Configure 命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,26 +51,26 @@ POST /directoryObjects/validateProperties
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |entityType|String| Group 是唯一受支持的实体类型。 |
-|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是, 至少需要一个属性 (**displayName**或**mailNickname**)。 |
-|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是, 至少需要一个属性 (**displayName**或**mailNickname**)。 |
+|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
+|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
 |onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的 ID。 验证结果针对的是**onBehalfOfUserId 的**属性和角色。 |
 
 ## <a name="response"></a>响应
 
-如果成功且没有验证错误, 则该方法返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
 
-如果请求无效, 该方法将返回`400 Bad Request`响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
+如果请求无效，该方法将返回`400 Bad Request`响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
 
-如果存在验证错误, 该方法将返回`422 Unprocessable Entity`响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
+如果存在验证错误，该方法将返回`422 Unprocessable Entity`响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-successful-validation-request"></a>示例 1: 成功的验证请求
+### <a name="example-1-successful-validation-request"></a>示例1：成功的验证请求
 这是一个成功的验证请求的示例。
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_validateproperties"
@@ -95,7 +95,7 @@ Content-length: 164
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,7 +116,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-### <a name="example-2-request-with-validation-errors"></a>示例 2: 包含验证错误的请求
+### <a name="example-2-request-with-validation-errors"></a>示例2：包含验证错误的请求
 这是包含验证错误的请求的示例。
 
 #### <a name="request"></a>请求
@@ -135,7 +135,7 @@ Content-length: 164
 
 #### <a name="response"></a>响应
 ```http
-HTTP/1.1 422 
+HTTP/1.1 422
 Content-Type: application/json
 
 {
