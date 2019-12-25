@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2738959b356faba1d6d27ae48fa94dcf6f28dbe9
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 92da94aa2b2b58bbea3af0ed47582d1532793349
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895579"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870528"
 ---
 # <a name="get-workforceintegration"></a>获取 workforceIntegration
 
@@ -36,7 +36,7 @@ ms.locfileid: "39895579"
 GET /teamwork/workforceIntegrations
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
@@ -59,14 +59,30 @@ GET /teamwork/workforceIntegrations
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workforceintegration"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceintegrationid}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-workforceintegration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-workforceintegration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -1,24 +1,24 @@
 ---
-title: 在频道中创建了 chatmessage
+title: 在频道中创建 chatMessage
 description: 在指定的频道中创建新的了 chatmessage。
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26d35bae2eb5dd85989660e243355ea3099bf54d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418699"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868182"
 ---
-# <a name="create-chatmessage-in-a-channel"></a>在频道中创建了 chatmessage
+# <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
 
-> **注意**: 我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
 ## <a name="permissions"></a>权限
 
@@ -46,22 +46,22 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的, 其他属性是可选的。
+在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
-> 注意: 不支持发送包含附件和图像的邮件。
+> 注意：不支持发送包含附件和图像的邮件。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-hello-world"></a>示例 1: Hello World
+### <a name="example-1-hello-world"></a>示例1： Hello World
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -85,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -97,7 +97,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -144,7 +144,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a>示例 2: @mentions
+### <a name="example-2-mentions"></a>示例2： @mentions
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -239,10 +239,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a>示例 3: 卡片
+### <a name="example-3-cards"></a>示例3：卡片
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
+
+> 注意：附件的 ID 必须是唯一的，并且可以是一个新的随机生成的 GUID。 但是，在_正文_和_附件_元素中，附件的 ID 必须相同。
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -328,7 +331,7 @@ Content-length: 160
 
 ## <a name="see-also"></a>另请参阅
 
-- [卡片参考](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [卡片参考](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

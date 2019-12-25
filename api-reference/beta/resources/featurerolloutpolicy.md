@@ -5,41 +5,41 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 50d54ae046ef5a0283f5eb2e474fd0faab781687
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: 958e6750c9b6a0749613d3a380b43a7d1ab282c2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062116"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870248"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与目录对象相关联的功能展示策略。 创建功能展示策略可帮助租户管理员在为整个组织启用功能之前, 使用特定组试点 Azure AD 的功能。 这将最大限度地减少影响并帮助管理员逐步测试和部署与身份验证相关的功能。
+表示与目录对象相关联的功能展示策略。 创建功能展示策略可帮助租户管理员在为整个组织启用功能之前，使用特定组试点 Azure AD 的功能。 这将最大限度地减少影响并帮助管理员逐步测试和部署与身份验证相关的功能。
 
-以下是功能展示的限制:
+以下是功能展示的限制：
 
 - 每个功能最多支持10个组。
 - **AppliesTo**字段仅支持组。
 - 不支持动态组和嵌套组。
 
-对于当前只有为使用此首展策略进行展示的每项功能, 以下是必备组件。
+对于当前只有为使用此首展策略进行展示的每项功能，以下是必备组件。
 
 ### <a name="passthrough-authentication"></a>传递身份验证
 
-* 确定运行 Windows Server 2012 R2 或更高版本的服务器 (要在其中运行[PassthroughAuthentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)代理) 的服务器。确保服务器已加入域, 可以使用 Active Directory 对所选用户进行身份验证, 并且可以在出站端口/Url 上与 Azure AD 进行通信。
+* 确定运行 Windows Server 2012 R2 或更高版本的服务器（要在其中运行[PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta)代理）的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/Url 上与 Azure AD 进行通信。
 * [下载](https://aka.ms/getauthagent)& 在服务器上安装 MICROSOFT Azure AD Connect 身份验证代理。
-* 若要启用高可用性, 请在其他服务器上安装其他身份[](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)验证代理, 如下所述。
-* 确保您已正确配置了[智能锁定](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout)设置。 这是为了确保用户的本地 Active Directory 帐户不会被不良参与者锁定。
+* 若要启用高可用性，请在其他服务器上安装其他身份验证代理[，如下所述。](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
+* 确保您已正确配置了[智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout)设置。 这是为了确保用户的本地 Active Directory 帐户不会被不良参与者锁定。
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
-* 根据[这些](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature)说明为 AD 林启用[SeamlessSso](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso) 。
+* 根据[这些](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature)说明为 AD 林启用[SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) 。
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* 从 Azure AD Connect 中的 "可选功能" 页启用 [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs) 。
+* 从 Azure AD Connect 中的 "可选功能" 页启用 [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) 。
 
 ## <a name="methods"></a>方法
 
@@ -60,7 +60,7 @@ ms.locfileid: "36062116"
 |说明|String|此功能展示策略的说明。|
 |displayName|String|此功能展示策略的显示名称。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 

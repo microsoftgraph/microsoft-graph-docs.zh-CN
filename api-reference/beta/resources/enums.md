@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 7fb6fb1751f830515cf5cab77abe83f3984de4ab
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 8cf41b6a69c0154eda59068e39a4d5d6d4cd80d2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895341"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870279"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -426,7 +426,7 @@ ms.locfileid: "39895341"
 | NotStarted
 | 正在运行
 | Completed
-| 已失败
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType 值
@@ -435,7 +435,7 @@ ms.locfileid: "39895341"
 |:-------------------------
 | 替换
 | Append
-| Delete
+| 删除
 | Insert
 | 计算
 
@@ -470,7 +470,7 @@ ms.locfileid: "39895341"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | reference
 
 
@@ -587,10 +587,10 @@ ms.locfileid: "39895341"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11x17    |
-| preset12 | 12    |
-| preset13 | 13    |
-| preset14 | 日    |
+| preset11 | 11     |
+| preset12 | 12     |
+| preset13 | 13     |
+| preset14 | 14     |
 | preset15 | 15     |
 | preset16 | 16     |
 | preset17 | 17     |
@@ -698,7 +698,7 @@ ms.locfileid: "39895341"
 | 无              | 8      | REG_NONE 注册表值类型。                |
 | qword             | 9      | REG_QWORD 注册表值类型。               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
-| sz                | 11x17    | REG_SZ 注册表值类型。                  |
+| sz                | 11     | REG_SZ 注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -1103,3 +1103,77 @@ ms.locfileid: "39895341"
 |高|1 |
 |低|2 |
 
+### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
+
+| 成员 | 值 | 说明             |
+|:-------|:------|:------------------------|
+| mail   | 1      | 邮件威胁。            |
+| url    | 2      | URL 威胁。             |
+| file   | 3      | 附件文件威胁。 |
+
+### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
+
+| 成员  | 值 | 说明                       |
+|:--------|:------|:----------------------------------|
+| 数据   | 1      | 应阻止该威胁。     |
+| 阻塞 | 2      | 不应阻止该威胁。 |
+
+### <a name="threatcategory-values"></a>threatCategory 值
+
+| 成员             | 值 | 说明        |
+|:-------------------|:------|:-------------------|
+| 垃圾邮件               | 1      | 垃圾邮件威胁。       |
+| 骗术           | 2      | 网络钓鱼威胁。   |
+| 受到            | 3      | 恶意软件威胁。    |
+| 向 unknownfuturevalue | 4      | 一个 sentinel 成员。 |
+
+### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
+
+| 成员    | 值 | 说明                              |
+|:----------|:------|:-----------------------------------------|
+| 决   | 1      | 威胁评估仍在进行中。 |
+| 后 | 2      | 威胁评估已完成。         |
+
+### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
+
+| 成员        | 值 | 说明              |
+|:--------------|:------|:-------------------------|
+| 取消     | 0     | 尚不知道。            |
+| user          | 1      | 用户提交。         |
+| 联系 | 2      | 租户管理员提交。 |
+
+### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
+
+| 成员             | 值 | 说明                                          |
+|:-------------------|:------|:-----------------------------------------------------|
+| checkPolicy        | 1      | 策略检查结果，仅用于`mail`评估。 |
+| 重新扫描             | 2      | 重新扫描结果。                                   |
+| 向 unknownfuturevalue | 3      | 一个 sentinel 成员。                                   |
+
+### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
+
+| 成员                | 值 | 说明                         |
+|:----------------------|:------|:------------------------------------|
+| 无                  | 0     | 尚不知道。                       |
+| mailFlowRule          | 1      | Exchange 传输规则。            |
+| safeSender            | 2      | 安全发件人列表。                   |
+| blockedSender         | 3      | 阻止发件人列表。                |
+| advancedSpamFiltering | 4      | 高级垃圾邮件 flitering 选项。     |
+| domainAllowList       | 5      | 发件人域允许列表。           |
+| domainBlockList       | 6      | 发件人域阻止列表。           |
+| notInAddressBook      | 7      | 将发件人排除在通讯簿之外。 |
+| firstTimeSender       | 8      | 由于第一次发件人而被阻止。   |
+| autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
+| autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
+| autoPurgeToDeleted    | 11     | TimeTravel 将邮件移动到 "已删除"。 |
+| 出站              | 12     | 出站邮件。                      |
+| notJunk               | 13     | 由于非垃圾邮件而启用。              |
+| 可疑                  | 14     | 由于垃圾邮件而被阻止。                |
+| 向 unknownfuturevalue    | 15     | 一个 sentinel 成员。                  |
+
+### <a name="threatassessmentrequestpivotproperty-values"></a>threatAssessmentRequestPivotProperty 值
+
+| 成员                       | 值 | 说明                                                            |
+|:-----------------------------|:------|:-----------------------------------------------------------------------|
+| threatCategory               | 1      | 的`threatCategory`聚合威胁评估请求。               |
+| mailDestinationRoutingReason | 2      | 的`mailDestinationRoutingReason`聚合威胁评估请求。 |

@@ -3,14 +3,14 @@ title: externalConnection 资源类型
 description: 从外部源到 Microsoft 搜索的连接。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 78752e2fe3375c10dcce57e3ba23e890b0ab66b5
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 4a77afc0aeef6c68d7bd58e554848068f25e1142
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704176"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866838"
 ---
 # <a name="externalconnection-resource-type"></a>externalConnection 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "38704176"
 | 属性      | 类型                              | 说明 |
 |:--------------|:----------------------------------|:------------|
 | 设置 | [configuration](configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 可选。 |
-| 说明   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
+| description   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
 | id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以`Microsoft`下列值开头，也不能为`None`下列`Directory`值`Exchange`之一`ExchangeArchive`： `LinkedIn`、 `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer`、、、、、、 `Connectors`、、、。 必需。 |
 | name          | String                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必需。 |
 

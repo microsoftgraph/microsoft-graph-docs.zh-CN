@@ -1,22 +1,25 @@
 ---
 title: impossibleTravelRiskEvent 资源类型
-description: Azure Active Directory 标识保护检测到的风险事件, 其中两个帐户登录从用户的非典型位置发生, 并且在登录之间的持续时间之间无法进行移动。有关详细信息, 请参阅可在 Azure AD Identity Protection 文档中找到风险事件。
+description: Azure Active Directory 标识保护检测到的风险事件，其中两个帐户登录从用户的非典型位置发生，并且在登录之间的持续时间之间无法进行移动。有关详细信息，请参阅可在 Azure AD Identity Protection 文档中找到风险事件。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2b66755924022b4fa30637cc8e97c4f944ad2d79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be2b5db09a20264525e783e05771f6d1da2783e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005770"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866782"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>impossibleTravelRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件, 其中两个帐户登录从用户的非典型位置发生, 并且在登录之间的持续时间之间无法进行移动。完成有关风险事件的信息可以在[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)中找到。
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+
+[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的风险事件，其中两个帐户登录从用户的非典型位置发生，并且在登录之间的持续时间之间无法移动。有关风险事件的完整信息，请参阅[Azure AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法
@@ -50,7 +53,7 @@ ms.locfileid: "36005770"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

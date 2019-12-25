@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 390a8a92b321541c3cf3dc53a181dce70afb505d
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 362ac1c998b08a36569a152b273992111b4e6898
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636678"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868249"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -21,7 +21,7 @@ ms.locfileid: "39636678"
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -30,6 +30,7 @@ ms.locfileid: "39636678"
 | 委派（个人 Microsoft 帐户） | 不支持        |
 | 应用程序     | Calls.AccessMedia.All                       |
 
+>**注意：** 提供的任何音调数据不能持久化。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

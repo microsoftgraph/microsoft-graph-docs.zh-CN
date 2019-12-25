@@ -1,22 +1,27 @@
 ---
 title: resultInfo 资源类型
-description: ResultInfo 类型。
+description: 包含成功和失败的特定结果信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 5cb59cb63ff7c50ba14b972991d54806eabc4f54
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006548"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866628"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ResultInfo 类型。
+包含成功和失败的特定结果信息。 
+
+该代码指定结果是否为一般性成功或失败。 
+
+子代码提供与成功或失败类型相关的补充信息（例如，呼叫转移成功）。
+
 
 ## <a name="properties"></a>属性
 

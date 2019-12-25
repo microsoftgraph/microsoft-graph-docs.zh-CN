@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2191102e62cacadddcbbbb270b6afe16af93ff9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4d74380ab35e90002af2919b67b63b4a50fb7dcd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356231"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869625"
 ---
 # <a name="list-group-members"></a>列出组成员
 
@@ -29,6 +29,8 @@ ms.locfileid: "37356231"
 |应用程序 | Group.Read.All、Directory.Read.All |
 
 > 注意：若要列出隐藏的成员资格组的成员，则需要使用 Read。隐藏权限是必需的。
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

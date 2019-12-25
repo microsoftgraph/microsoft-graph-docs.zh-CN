@@ -1,26 +1,25 @@
 ---
 title: 列出成员
-description: 使用此 API 获取管理单元中的成员列表 (用户和组)。
+description: 使用此 API 获取管理单元中的成员列表（用户和组）。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8d63d87110fe168f718c3fb489a328d72540686
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ea63ffd44d82809e5d07111713bea0d403b5ae4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945786"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868448"
 ---
 # <a name="list-members"></a>列出成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 获取管理单元中的成员列表 (用户和组)。
+使用此 API 获取管理单元中的成员列表（用户和组）。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
-
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,7 +27,9 @@ ms.locfileid: "35945786"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
 
-> 注意: 若要在管理单元中列出隐藏成员身份的成员, 则需要使用 Read. Hidden 权限是必需的。
+> 注意：若要在管理单元中列出隐藏成员身份的成员，则需要使用 Read. Hidden 权限是必需的。
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,11 +47,11 @@ GET /administrativeUnits/{id}/members/$ref
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[user](../resources/user.md)和/或[group](../resources/group.md)对象的集合。  相反, 如果放`$ref`在请求的末尾, 则响应将包含成员的链接/url 的`@odata.id`集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[user](../resources/user.md)和/或[group](../resources/group.md)对象的集合。  相反，如果放`$ref`在请求的末尾，则响应将包含成员的链接/url 的`@odata.id`集合。
 
 ## <a name="examples"></a>示例
 ##### <a name="list-member-objects"></a>列出成员对象
-以下请求将列出管理单元的成员, 并返回用户和/或组的集合。
+以下请求将列出管理单元的成员，并返回用户和/或组的集合。
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -84,7 +85,7 @@ Content-length: 100
 ```
 
 ##### <a name="list-member-references"></a>列出成员引用
-下面的请求将列出管理单元的成员引用, 并返回对成员的`@odata.id`引用集合。
+下面的请求将列出管理单元的成员引用，并返回对成员的`@odata.id`引用集合。
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```

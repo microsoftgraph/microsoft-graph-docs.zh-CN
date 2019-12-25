@@ -5,28 +5,28 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 8c7d792b834125bdfb8a109c85b2c1f45b18230b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64ef8a07d3190ad2a54e9e3e5c68f3ffb0335acc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007653"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866523"
 ---
 # <a name="timeoff-resource-type"></a>timeOff 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计划中的非工作单位。
+计划中非工作的单位。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[创建 timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | 创建一个新的 `timeOff` 对象。|
-|[列出 timeOffs](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md)集合 | 获取此计划中`timeOff`的对象列表。|
-|[获取 timeOff](../api/timeoff-get.md) | [timeOff](timeoff.md) | 按 ID 获取 `timeOff`。|
-|[替换 timeOff](../api/timeoff-put.md) | [timeOff](timeoff.md) | 更换 `timeOff`。|
-|[删除 timeOff](../api/timeoff-delete.md) | 无 | `timeOff`从计划中删除。|
+|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | 创建新的**timeOff**对象。|
+|[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md)集合 | 获取此计划中的**timeOff**对象的列表。|
+|[获取（.。。/api/timeoff-get.md) | [timeOff](timeoff.md) | 按 ID 获取**timeOff**对象。|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | 替换**timeOff**对象。|
+|[删除](../api/timeoff-delete.md) | 无 | 从计划中删除**timeOff**对象。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                                                                      |

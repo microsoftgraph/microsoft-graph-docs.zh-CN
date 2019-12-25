@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 040c90fb7b2158481379444bbf2699301681e448
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 527576eb416c4459ac8c1e5612d1a33c77c4204c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722641"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868882"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>列出 credentialUserRegistrationDetails
 
@@ -36,19 +36,19 @@ ms.locfileid: "36722641"
 GET /reports/credentialUserRegistrationDetails
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此函数支持可选的 OData 查询参数 **$filter**。 您可以对[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)资源的以下一个或多个属性应用 **$filter** 。
 
 | 属性 | 说明和示例 |
 | --------- | ----------------------- |
-| userDisplayName | 按用户名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符: `startswith()`和。 支持不区分大小写。 |
-| userPrincipalName | 按用户主体名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`: 和。 支持不区分大小写。 |
-| authMethods | 按注册过程中使用的身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器`eq`运算符:。 |
-| isRegistered | 筛选已注册自助密码重置 (SSPR) 的用户。 例如：`/reports/userCredentialUsageDetails?$filter=isRegistered eq true`。 支持的筛选器`eq`运算符:。 |
-| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/userCredentialUsageDetails?$filter=isEnabled eq true`。 支持的 filtter 运算符`eq`:。 |
-| isCapable | 筛选已准备好执行密码重置或多重身份验证 (MFA) 的用户。 例如：`/reports/userCredentialUsageDetails?$filter=isCapable eq true`。 支持的筛选器运算符:`eq` |
-| isMfaRegistered | 筛选已注册进行 MFA 的用户。 例如：`/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`。 支持的筛选器`eq`运算符:。 |
+| userDisplayName | 按用户名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符： `startswith()`和。 支持不区分大小写。 |
+| userPrincipalName | 按用户主体名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
+| authMethods | 按注册过程中使用的身份验证方法进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器`eq`运算符：。 |
+| isRegistered | 筛选已注册自助密码重置（SSPR）的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`。 支持的筛选器`eq`运算符：。 |
+| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`。 支持的 filtter 运算符`eq`：。 |
+| isCapable | 筛选已准备好执行密码重置或多重身份验证（MFA）的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`。 支持的筛选器运算符：`eq` |
+| isMfaRegistered | 筛选已注册进行 MFA 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`。 支持的筛选器`eq`运算符：。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,7 +63,7 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +73,7 @@ GET /reports/credentialUserRegistrationDetails
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_credentialuserregistrationdetails"
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-credentialuserregistrationdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-credentialuserregistrationdetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

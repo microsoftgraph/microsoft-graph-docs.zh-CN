@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5303c39584822a68afa559eb99c9fa579121e515
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844118"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868096"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -23,9 +23,9 @@ ms.locfileid: "39844118"
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委派（工作或学校帐户）     | 状态：已读。所有                         |
+| 委派（工作或学校帐户）     | Presence.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| Application                            | 不支持。                                  |
+| 应用程序                            | 不支持。                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,6 +58,8 @@ POST /communications/getPresencesByUserId
 ### <a name="request"></a>请求
 以下示例显示了一个请求。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -71,6 +73,20 @@ Content-Type: application/json
     "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>响应
 以下示例显示了相应的响应。
 

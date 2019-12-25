@@ -1,22 +1,22 @@
 ---
 title: mediaStream 资源类型
-description: MediaStream 类型。
+description: 包含媒体通道的相关信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 63fad1d064c4ab967bba6df8bed6dbcdd20a3d69
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: de5c90453d9adb657c2df5ee761d847056664037
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006653"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870178"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaStream 类型。
+包含媒体通道的相关信息。
 
 ## <a name="properties"></a>属性
 
@@ -25,7 +25,7 @@ MediaStream 类型。
 | direction   | String  | 方向。 可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | 媒体流标签。                                                                                       |
 | 群组   | String  | 媒体类型。 可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。        |
-| serverMuted | 布尔 | 如果服务器已将媒体设为静音。                                                                          |
+| serverMuted | Boolean | 指示服务器是否静音媒体。                                                                          |
 | sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -47,22 +47,6 @@ MediaStream 类型。
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## <a name="example"></a>示例
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 

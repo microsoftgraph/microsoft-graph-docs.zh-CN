@@ -1,22 +1,22 @@
 ---
 title: invitationParticipantInfo 资源类型
-description: '**InvitationParticipant**用于表示与对话邀请关联的一组标识，并提供其他邀请参数。'
+description: 表示受邀加入组呼叫的实体。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 762e5dc75c03cda78581b90b54c3fea27a7f12f2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: bddce0358bfa0ec46d8231958817002cb4ca8c20
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636665"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870220"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此资源用于表示与对话邀请关联的一组标识，并提供其他邀请参数。
+表示受邀加入组呼叫的实体。 
 
 ## <a name="properties"></a>属性
 

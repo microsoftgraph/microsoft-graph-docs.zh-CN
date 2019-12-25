@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3d1b56dc8266eea42c773596c8e78e9e0ece5b6b
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: fa059a7399762444d73a13305b5bec722830a1c0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844181"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867690"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -23,9 +23,9 @@ ms.locfileid: "39844181"
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委派（工作或学校帐户）     | "状态"： "已读"、"状态"。                         |
+| 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| Application                            | 不支持。                                  |
+| 应用程序                            | 不支持。                                  |
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,6 +55,8 @@ GET /users/{id}/presence
 
 #### <a name="request"></a>请求
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-your-presence"
@@ -63,6 +65,20 @@ GET /users/{id}/presence
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/presence
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-your-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -89,13 +105,29 @@ Content-Length: 1574
 下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
 
 #### <a name="request"></a>请求
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presence"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

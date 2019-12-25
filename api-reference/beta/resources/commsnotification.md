@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9901c1390d1813413cdd95949debea95d54c286b
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 1752bbe46ee7795bd71df2089dadf6a975ccae26
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006703"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870923"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "38006703"
 | changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
 | resourceUrl       | String  | 已更改的资源的 URI。                      |
 
-> **注意：** `resourceData`可用作其他数据。 它是一个实体或集合（实体），具体取决于通知中打包的更改的数量。
+> **注意：** `resourceData`可用作其他数据。 它可以是实体，也可以是实体集合，具体取决于通知中打包的更改数。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

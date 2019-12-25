@@ -5,16 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 881790553d016c6a9c3863611cdc3b1ccd5fdbb7
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: dd97464336dda8846cb34baef0a03f1490cfae3a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721493"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869554"
 ---
 # <a name="get-identityriskevent"></a>获取 identityRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 identityriskevent 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -42,12 +45,12 @@ GET /identityRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[identityRiskEvent](../resources/identityriskevent.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[identityRiskEvent](../resources/identityriskevent.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -63,7 +66,7 @@ GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityriskevent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityriskevent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

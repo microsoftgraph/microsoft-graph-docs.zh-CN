@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 07e6c8be79d105a15de1e7f0f052ebdc21df3406
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 8e0179a2aac9eeaac17a859bf0b19805582c731b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37581250"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866852"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "37581250"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 默认值为 true。|
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
@@ -63,7 +63,7 @@ ms.locfileid: "37581250"
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice** （默认）<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
 |systemLabels|String collection| 系统应用于设备的标签列表。 |
-|trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
 |名称| String | 设备的友好名称。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |状态 | String| 设备处于联机或脱机状态。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |平台 |String|设备平台。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。|
@@ -75,8 +75,8 @@ ms.locfileid: "37581250"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。|
-|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 NULL。|
+|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 Null。|
+|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 此为只读属性。 可为 NULL。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 Null。|
 |registeredOwners|[directoryObject](directoryobject.md) collection|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb8f4254f5cf110e5cc7f98b121886937274fc2d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f9a075bbcb7365c6e7d915cac6f2c902ad7d674a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410681"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867904"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 
@@ -26,7 +26,9 @@ ms.locfileid: "36410681"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -43,11 +45,11 @@ POST /teams/{teamId}/schedule/timesOff
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -55,7 +57,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-post"
@@ -88,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

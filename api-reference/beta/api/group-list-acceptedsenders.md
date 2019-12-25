@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8979e2c9b3582a1e7fc1a1e210405750edcf6883
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3f11952420f93ae5c356a6d606a8beed4fa52366
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720583"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869673"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -28,6 +28,8 @@ ms.locfileid: "36720583"
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +55,7 @@ GET /groups/{id}/acceptedSenders
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_acceptedsenders"
@@ -69,7 +71,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-acceptedsenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4f11aa458382a6d23459eec40eb68b8845c5cc43
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7b1d5494559311908009e7f6e60e47aca1dbead9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36360909"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869309"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -27,13 +27,13 @@ ms.locfileid: "36360909"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | 已登录**用户**的个人资料照片:<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|委派（工作或学校帐户）     | 已登录**用户**的个人资料照片：<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
 > **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
 
-> **注意:** 目前存在使用应用程序权限访问组照片的[已知问题](https://docs.microsoft.com/en-us/graph/known-issues#groups)。
+> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +62,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilephoto"

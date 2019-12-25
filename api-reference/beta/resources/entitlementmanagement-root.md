@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 24c4ddc92f96b09d173623f056052f35e8b1bc81
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6eada39751a6ed107fb1b74d61100aa1a3469c83
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939640"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870286"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -28,19 +28,22 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 - [accessPackageAssignment](accesspackageassignment.md)：对特定主题的访问包分配在一段时间内。
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)：指示通过访问包分配为主题分配的特定于资源的角色。
 - [accessPackageCatalog](accesspackagecatalog.md)：访问包的容器。
+- [accessPackageResourceRequest](accesspackageresourcerequest.md)：将资源添加到访问包目录的请求。
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 下表列出了可用于与与权限管理相关的资源进行交互的方法。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-| [列出 accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md)集合 | 检索 accesspackage 对象的列表。 |
-| [创建 accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | 创建新的 accessPackage 对象。 |
-| [获取 accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | 读取 accessPackage 对象的属性和关系。 |
+| [列出 accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md)集合 | 检索**accessPackage**对象的列表。 |
+| [创建 accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | 创建新的**accessPackage**对象。 |
+| [获取 accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | 读取**accessPackage**对象的属性和关系。 |
 | [删除 accessPackage](../api/accesspackage-delete.md) | | 删除**accessPackage**。 |
+| [列出 accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md)集合 | 检索访问包的**accessPackageResourceRoleScope**对象的列表。 |
+| [创建 accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | 为 access 包创建一个新的**accessPackageResourceRoleScope**对象。 |
 | [列出 accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)集合 | 检索**accessPackageAssignmentPolicy**对象的列表。 |
 | [创建 accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 创建新的**accessPackageAssignmentPolicy**对象。 |
 | [获取 accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | 读取**accessPackageAssignmentPolicy**对象的属性和关系。 |
@@ -50,11 +53,15 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 | [获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 读取**accessPackageAssignmentRequest**对象的属性和关系。 |
 | [列出 accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md)集合 | 检索**accessPackageAssignment**对象的列表。 |
 | [列出 accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)集合 | 检索**accessPackageAssignmentResourceRole**对象的列表。 |
+| [获取 accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | 检索**accessPackageAssignmentResourceRole**对象。 |
 | [列出 accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md)集合 | 检索**accessPackageCatalogs**对象的列表。 |
 | [创建 accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | 创建新的**accessPackageCatalog**对象。 |
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取**accessPackageCatalog**对象的属性和关系。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除**accessPackageCatalog**。 |
 | [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索**accessPackageResource**对象的列表。 |
+| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索**accessPackageResourceRole**对象的列表。 |
+| [列出 accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md)集合 | 读取**accessPackageResourceRequest**对象的属性和关系。 |
+| [创建 accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | 创建新的**accessPackageResourceRequest**对象。 |
 
 ## <a name="see-also"></a>另请参阅
 

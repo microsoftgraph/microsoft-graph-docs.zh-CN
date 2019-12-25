@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 502faabe5a2484e491b530e186a3a07d7ff6ab0a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d92293e3daba5ba86d18ecdea347d70782e13170
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725302"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867552"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -30,6 +30,8 @@ ms.locfileid: "36725302"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } --> 
@@ -46,7 +48,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -75,16 +77,16 @@ CSV 文件包含下面的列标题：
 - 报表日期
 - 报表周期
 
-由世纪互联运营的 Microsoft Graph 中国不支持以下各列:
+由世纪互联运营的 Microsoft Graph 中国不支持以下各列：
 
 - Yammer
 - Teams
 
 ### <a name="json"></a>JSON
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
 
-由世纪互联运营的 Microsoft Graph 中国不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性:
+由世纪互联运营的 Microsoft Graph 中国不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
 
 - yammer
 - 协作
@@ -100,7 +102,7 @@ CSV 文件包含下面的列标题：
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365activeusercounts_csv"
@@ -117,7 +119,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activeusercounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activeusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,7 +162,7 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365activeusercounts_json"
@@ -177,7 +179,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activeusercounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activeusercounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

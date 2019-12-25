@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 006801d123a90fe3f3dc2cad3593df662325902d
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: aac32dcabca25c3c57606799dfadabc227925172
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895611"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869354"
 ---
 # <a name="delete-openshift"></a>删除 openShift
 
@@ -55,6 +55,8 @@ DELETE /teams/{id}/schedule/openShifts
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_openshift"
@@ -63,6 +65,20 @@ DELETE /teams/{id}/schedule/openShifts
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

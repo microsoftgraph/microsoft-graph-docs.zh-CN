@@ -1,22 +1,22 @@
 ---
 title: 列表组可传递的 memberOf
-description: 获取组所属的组和管理单元。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
+description: 获取组所属的组和管理单元。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 066bbccf7b7cca6cc0c38d34131f1400b386ab24
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 24821a004a8ead881d71c49f43c774632db7ab4a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720499"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869610"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组所属的组和管理单元。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
+获取组所属的组和管理单元。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
 
 ## <a name="permissions"></a>权限
 
@@ -27,6 +27,8 @@ ms.locfileid: "36720499"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +55,7 @@ GET /groups/{id}/transitiveMemberOf
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_transitivememberof"
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

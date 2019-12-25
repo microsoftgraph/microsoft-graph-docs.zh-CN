@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ae53f154189bf1c7ab0afe2acaa7568805b3c3f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4a617f2196571fcc890276cea4ff27fb6e0cecb2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722560"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866950"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 
@@ -26,7 +26,9 @@ ms.locfileid: "36722560"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -43,14 +45,13 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -58,7 +59,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-get-schedulinggroups"
@@ -74,7 +75,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{s
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-get-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

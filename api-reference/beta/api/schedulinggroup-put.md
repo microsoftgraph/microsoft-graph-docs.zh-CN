@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2cc22b11fdba3f4b0dfdf7d3e0289e1a9fbcc161
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9db93957bc6897a2c865aa07a524e189c9d6cba5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410645"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866943"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "36410645"
 
 替换现有的[schedulingGroup](../resources/schedulinggroup.md)。
 
-如果指定的[schedulingGroup](../resources/schedulinggroup.md)不存在, 则此方法`404 Not found`返回。
+如果指定的[schedulingGroup](../resources/schedulinggroup.md)不存在，则此方法`404 Not found`返回。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,9 @@ ms.locfileid: "36410645"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 *  |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -45,15 +47,15 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[schedulingGroup](../resources/schedulinggroup.md)对象的 JSON 表示形式。
+在请求正文中，提供[schedulingGroup](../resources/schedulinggroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -61,7 +63,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-put-schedulinggroups"
@@ -88,7 +90,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-put-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-put-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

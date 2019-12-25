@@ -3,14 +3,14 @@ title: 更新 externalConnection
 description: 更新 externalConnection 的属性。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 33dd46c03056026337713b35197be5a65ed17485
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 3ae9e9171cf153b84d8678cec25965779d8c1398
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747200"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869736"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -52,7 +52,7 @@ PATCH /external/connections/{id}
 | 属性      | 类型                                           | 说明 |
 |:--------------|:-----------------------------------------------|:------------|
 | 设置 | [configuration](../resources/configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 |
-| 说明   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
+| description   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
 | name          | String                                         | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 |
 
 ## <a name="response"></a>响应

@@ -1,22 +1,22 @@
 ---
 title: recordOperation 资源类型
-description: RecordOperation 类型
+description: 包含与音频录音相关的信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 22b1fbd157b6b13d0b839a898440ee289aa2ec73
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 837540c55bb6573828efe87ee0c7ae333335ea11
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006555"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870136"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RecordOperation 类型
+包含与音频录音相关的信息。
 
 ## <a name="properties"></a>属性
 
@@ -24,14 +24,14 @@ RecordOperation 类型
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 适用                  | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
 | completionReason               | String                      | 可取值为：`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none`。 |
-| id                             | String                      | 服务器操作 id。只读。                                                                                              |
+| id                             | String                      | 服务器操作 ID。 只读。                                                                                              |
 | recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
 | recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
 | 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 
 ## <a name="relationships"></a>关系
-无
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

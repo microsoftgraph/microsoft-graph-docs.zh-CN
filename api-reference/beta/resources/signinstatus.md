@@ -1,19 +1,19 @@
 ---
 title: signInStatus 资源类型
-description: 提供登录的登录状态 (成功或失败)
+description: 提供登录的登录状态（成功或失败）
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f86c7026fc487e48388bd3d20e973e7a0cf7e41
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008304"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866607"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
-提供登录的登录状态 (成功或失败)
+提供登录的登录状态（成功或失败）
 
 
 
@@ -21,8 +21,8 @@ ms.locfileid: "36008304"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |additionalDetails|String|提供有关登录活动的其他详细信息|
-|errorCode|Int32|提供在登录失败过程中生成的 5-6digit 错误代码。 查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
-|failureReason|String|为相应的登录活动提供错误消息或失败原因。 查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
+|errorCode|Int32|提供在登录失败过程中生成的 5-6digit 错误代码。 查看[错误代码和消息的列表](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
+|failureReason|String|为相应的登录活动提供错误消息或失败原因。 查看[错误代码和消息的列表](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

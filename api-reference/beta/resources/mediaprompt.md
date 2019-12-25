@@ -1,28 +1,28 @@
 ---
 title: mediaPrompt 资源类型
-description: MediaPrompt 类型。
+description: 包含有关要播放的音频文件和其他其他设置的信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1def44fbf2208f40ff432e943e9d6768718258c9
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: ba04bda06fa4adfe158046e5e0b251e770e5ee38
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006660"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866705"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaPrompt 类型。
+包含有关要播放的音频文件和其他其他设置的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型                      | 说明                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| mediaInfo   | [mediaInfo](mediainfo.md) | 媒体信息                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | 媒体信息。                                                          |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

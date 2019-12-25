@@ -1,24 +1,24 @@
 ---
 title: 调用： cancelMediaProcessing
-description: 取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
+description: 取消对任何正在进行的 PlayPrompt 或 RecordResponse 操作的媒体处理。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1463489c82d1595e1bdcaa9629e5f306b95aa19f
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cf5b6da2bf657fb999a5c9e4df06e1a8841b7942
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006359"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868280"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
+取消对任何正在进行的[播放提示](./call-playprompt.md)或[记录响应](./call-record.md)操作的处理。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -33,23 +33,23 @@ ms.locfileid: "38006359"
 POST /app/calls/{id}/cancelMediaProcessing
 POST /communications/calls/{id}/cancelMediaProcessing
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数      | 类型    | 说明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| 各种            | 布尔 | 指示是否停止所有操作或当前操作的标志。 |
 | 适用  | String  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+如果成功，此方法将返回`200 OK`一个 HTTP 响应代码和一个位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -69,7 +69,6 @@ Content-Type: application/json
 Content-Length: 62
 
 {
-  "all": true,
   "clientContext": "clientContext-value"
 }
 ```
@@ -104,13 +103,14 @@ Content-Type: application/json
 Content-Length: 259
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5"
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知-操作已完成
+##### <a name="notification---operation-canceled-for-recordresponse"></a>通知-已取消对 recordResponse 的操作
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -130,11 +130,21 @@ Content-Type: application/json
       "changeType": "deleted",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "status": "failed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 400,
+          "subcode": 8508,
+          "message": "Action falied, the operation was cancelled."
+        },
+        "recordingLocation": "",
+        "recordingAccessToken": "",
+        "completionReason": "operationCanceled"
       }
     }
   ]

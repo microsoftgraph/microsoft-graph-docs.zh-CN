@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9288ed6db5111b99f4cf0f7488d81626678f90dc
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: eabdfe2eb57cf5b2a4dd3917df756a8e144f3a71
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895289"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863660"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -28,7 +28,9 @@ ms.locfileid: "39895289"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 *  |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -45,7 +47,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 

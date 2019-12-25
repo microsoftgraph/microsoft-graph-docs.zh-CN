@@ -5,18 +5,18 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8e1f4cb365f86df32e32ed568aa3a96d1c090f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 0c34c083a4cfee63db724228d9390c7452ca5a92
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35147897"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870944"
 ---
 # <a name="applicationtemplate-resource-type"></a>applicationTemplate 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[AZURE AD 应用程序库](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list)中的应用程序。
+表示[AZURE AD 应用程序库](/azure/active-directory/saas-apps/tutorial-list)中的应用程序。
 
 ## <a name="methods"></a>方法
 
@@ -31,8 +31,8 @@ ms.locfileid: "35147897"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|categories|String collection|应用程序的类别列表。 受支持的值可以`Collaboration`是`Business Management`: `Consumer`、`Content management`、 `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` `IT infrastructure`、、、、、、、、、、、、、、、、 `Mail` `Management` `Marketing` `Media` `Productivity`、 `Project management`、 `Telecommunications` `Tools, Travel`、和`Web design & hosting`。|
-|说明|String|应用程序的说明。|
+|categories|String collection|应用程序的类别列表。 受支持的值可以`Collaboration`是`Business Management`： `Consumer`、`Content management`、 `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Web design & hosting`、、、、、、、、、、、、、、、、、、、、和。 `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`|
+|description|String|应用程序的说明。|
 |displayName|字符串|应用程序名。|
 |homePageUrl|String|应用程序的主页 URL。|
 |id|字符串| 应用程序的唯一标识符。 只读。|

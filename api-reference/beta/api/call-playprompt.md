@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 465cd7a0695d7c8dee510b68a75c8b08b99cdc31
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 2c62afeac5870d288c546aa3761b60a270d85219
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005977"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868266"
 ---
 # <a name="call-playprompt"></a>调用： playPrompt
 
@@ -23,7 +23,7 @@ ms.locfileid: "38005977"
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**playPrompt**操作。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -39,7 +39,7 @@ ms.locfileid: "38005977"
 POST /app/calls/{id}/playPrompt
 POST /communications/calls/{id}/playPrompt
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -51,8 +51,8 @@ POST /communications/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|MediaPrompt 集合| 目前，仅支持单个提示符，类型[MediaPrompt](../resources/mediaprompt.md) 。|
-|loop|布尔| 循环值。 如果为 True，则表示无限循环。 默认值为 false。 |
+|提示|[MediaPrompt](../resources/mediaprompt.md)集合| 要播放的提示。 支持的最大 mediaPrompt 集合大小为20。|
+|loop|Boolean| 循环值。 如果为 True，则表示无限循环。 默认值为 false。 |
 |适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应

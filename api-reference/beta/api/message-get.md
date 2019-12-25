@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0746cddf987c6fed21fb27c2e0fffb09b596c520
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 20a68ed4448c8762217ba0d37d368af63d58c8e9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036170"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869463"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -20,7 +20,7 @@ ms.locfileid: "37036170"
 
 例如，您可以收到一条消息，并在邮件中展开所有[提及](../resources/mention.md)的实例。
 
-您可以使用`$value`参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
+可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -35,9 +35,9 @@ ms.locfileid: "37036170"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、Mail. Read    |
-|委派（个人 Microsoft 帐户） | User.readbasic.all、Mail. Read    |
-|应用程序 | User.readbasic.all，Mail. Read |
+|委派（工作或学校帐户） | Mail.ReadBasic、Mail.Read    |
+|委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read    |
+|应用程序 | Mail.ReadBasic.All、Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -90,12 +90,14 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
 
+指定`$value`参数将返回 MIME 格式的邮件内容，而不是**邮件**资源。
+
 ## <a name="examples"></a>示例
 ### <a name="example-1"></a>示例 1
 #### <a name="request"></a>请求
 第一个示例获取指定的邮件。 它不指定任何标头以指示要返回的正文的所需格式。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -112,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -153,7 +155,7 @@ Content-length: 523
 #### <a name="request"></a>请求
 在下一个示例中，登录用户是 Dana Swope。 此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -170,7 +172,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mentions-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -277,10 +279,10 @@ Content-length: 2248
 ### <a name="example-3"></a>示例 3
 #### <a name="request"></a>请求
 
-第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定邮件的**正文**和**uniqueBody** 。
+第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -299,7 +301,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -308,7 +310,7 @@ Prefer: outlook.body-content-type="text"
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：响应包括用于确认`Preference-Applied: outlook.body-content-type` `Prefer: outlook.body-content-type`请求标头的标头。
+下面是一个响应示例。 注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -341,7 +343,7 @@ Preference-Applied: outlook.body-content-type="text"
 第四个示例演示如何获取特定邮件的 Internet 邮件头。  
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEz"],
@@ -359,7 +361,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-internet-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -408,6 +410,115 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### <a name="example-5"></a>示例 5
+#### <a name="request"></a>请求
+第五个示例获取已登录用户的邮箱中的邮件的 MIME 内容。
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
+```
+
+#### <a name="response"></a>响应
+以下是答复。 MIME 内容以 `MIME-Version` 标头开头。 
+<!-- {
+  "blockType": "ignored"
+} -->
+```http
+HTTP/1.1 200 OK
+
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox 
+Transport; Mon, 4 Sep 2017 03:00:08 -0700 
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
+2017 03:00:07 -0700 
+Received: from contoso.com 
+(fe80::5bf:5059:4ca0:5017) by contoso.com 
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
+03:00:01 -0700 
+From: Administrator <admin@contoso.com> 
+To: Administrator <admin@contoso.com> 
+Subject: This email has attachment. 
+Thread-Topic: This email has attachment. 
+Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ== 
+Date: Mon, 4 Sep 2017 10:00:00 +0000 
+Message-ID: 
+                <4aade2547798441eab5188a7a2436bc1@contoso.com> 
+Accept-Language: en-US 
+Content-Language: en-US 
+X-MS-Exchange-Organization-AuthAs: Internal 
+X-MS-Exchange-Organization-AuthMechanism: 04 
+X-MS-Exchange-Organization-AuthSource: 
+                contoso.com 
+X-MS-Has-Attach: yes 
+X-MS-Exchange-Organization-Network-Message-Id: 
+                0ffdb402-ec03-42c8-5d32-08d4f37bb517 
+X-MS-Exchange-Organization-SCL: -1 
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0 
+x-ms-publictraffictype: Emai
+
+```http
+MIME-Version: 1.0 
+Content-Type: multipart/mixed; 
+                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: multipart/alternative; 
+                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/plain; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+The attachment is an email. 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/html; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+<html> 
+<head> 
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
+1"> 
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi= 
+n-bottom:0;} --></style> 
+</head> 
+<body dir=3D"ltr"> 
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font= 
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr"> 
+<p>The attachment is an email.</p> 
+</div> 
+</body> 
+</html> 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: application/octet-stream; name="Attachment email.eml" 
+Content-Description: Attachment email.eml 
+Content-Disposition: attachment; filename="Attachment email.eml"; size=408; 
+                creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
+                modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
+Content-Transfer-Encoding: base64 
+ 
+RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
+b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
+U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
+YW5vdGhlciBtYWlsLg0K 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

@@ -3,14 +3,14 @@ title: 删除 externalConnection
 description: 删除 externalConnection。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: cd3b6e70a5385ba0ad03e3fe79270dd6ad8a2804
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: ab69d1c90b0f3e0767c339dd1d0e4b44020ce4b0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747207"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869778"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 

@@ -1,22 +1,25 @@
 ---
 title: leakedCredentialsRiskEvent 资源类型
-description: Azure Active Directory 标识保护检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息, 请参阅 Azure AD Identity Protection 文档。
+description: Azure Active Directory 标识保护检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息，请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 3c6ae090a4b9359883dfbadacb09bc3ebcc11817
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f12131d1dafcd8bc33d026ef4c56d220eae2799
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010005"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870213"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+
+[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法
@@ -42,7 +45,7 @@ ms.locfileid: "36010005"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

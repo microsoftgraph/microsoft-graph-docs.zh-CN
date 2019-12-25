@@ -1,24 +1,24 @@
 ---
-title: '日程安排: 共享'
+title: 日程安排：共享
 description: 与 schedule 成员共享计划时间范围。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a369955d42af111034e83f76e5eb7d0bd27f9079
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5a650b4ac6cab35dcbb9d4dce488201418752f55
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410682"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866957"
 ---
-# <a name="schedule-share"></a>日程安排: 共享
+# <a name="schedule-share"></a>日程安排：共享
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 与 schedule 成员共享[计划](../resources/schedule.md)时间范围。
-在指定的团队成员 (包括员工和经理) 可查看的[日程安排](../resources/schedule.md)的指定时间范围内, 创建[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)项目的集合。
-[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看, 并且共享版本可供员工和经理查看。 对于在指定时间范围内的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例, 共享操作将从草稿版本更新共享版本, 因此, 除了经理之外, 员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
+在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)项目的集合。
+[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于在指定时间范围内的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,9 @@ ms.locfileid: "36410682"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -45,7 +47,7 @@ POST /teams/{teamId}/schedule/share
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -53,7 +55,7 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知, 或仅获取已分配有班次的员工。 必需。       |
+| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必需。       |
 | startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必需。   |
 | endDateTime           |`DateTimeOffset`   | 在日程上共享班次的结束时间。   |
 
@@ -67,7 +69,7 @@ POST /teams/{teamId}/schedule/share
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-share"
@@ -90,7 +92,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-share-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0c73a983094ffae12980eeda9a12681ec9e90cb
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 69dce3ef9a9486e204eca58421aff606b56385aa
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895577"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863618"
 ---
 # <a name="timeoffrequest-decline"></a>timeOffRequest：拒绝
 
@@ -26,7 +26,9 @@ ms.locfileid: "39895577"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+|应用程序 | 计划的所有写。 *  |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,6 +64,8 @@ POST /teams/{id}/schedule/timeOffRequests/decline
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequest_decline"
@@ -75,6 +79,16 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequest-decline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoffrequest-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

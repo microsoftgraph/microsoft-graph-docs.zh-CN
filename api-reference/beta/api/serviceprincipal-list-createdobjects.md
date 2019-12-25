@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: List createdObjects'
+title: servicePrincipal： List createdObjects
 description: 检索 directoryobject 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 34a21301f1f5962486f53e561b9c24f7c5f8faf4
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e45c5447fe6c054a2d3446c14bc44771955f9be0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722445"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867839"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal： List createdObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ ms.locfileid: "36722445"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +52,7 @@ GET /servicePrincipals/{id}/createdObjects
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipals_get_createdobjects"
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-get-createdobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-get-createdobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

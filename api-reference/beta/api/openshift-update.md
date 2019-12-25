@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5863b3a52eb195fed205788480cf1e5eda1237eb
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 821ad6579d7e77959263aab91511e71e0352e364
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895609"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867787"
 ---
 # <a name="update-openshift"></a>更新 openShift
 
@@ -50,7 +50,7 @@ PATCH /teams/{id}/schedule/openShifts
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|未发布的打开班次。|
-|schedulingGroupId|字符串| 计划组 id。 |
+|schedulingGroupId|String| 计划组 id。 |
 |sharedOpenShift|openShiftItem|已发布的打开班次。|
 
 ## <a name="response"></a>响应
@@ -62,6 +62,8 @@ PATCH /teams/{id}/schedule/openShifts
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift"
@@ -81,6 +83,20 @@ Content-type: application/json
   "schedulingGroupId": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0de38298311932aa0efd73b2d777ec1e739dbd48
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f7b4f0f187c767d2c70f4b261b202cd99e623f2c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414943"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869449"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -58,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为空。|
 |replyTo|收件人集合|在答复时使用的电子邮件地址。 仅当 isDraft = true 时可以更新。|
-|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
+|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
 |subject|String|邮件的主题。 仅当 isDraft = true 时可以更新。|
 |toRecipients|收件人集合|邮件的收件人。 |
@@ -72,7 +72,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_message"

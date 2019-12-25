@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70e2baaec1e727f78a0cbde21e5149979ea4224a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bf06455a0501054097cbf9f3b5e2bf3b4aa8d965
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996201"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870706"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -26,6 +26,8 @@ ms.locfileid: "35996201"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,7 +36,7 @@ GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |

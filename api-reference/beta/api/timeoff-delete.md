@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83945eb840925f01af977774d81be40cbf4be472
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5e5108b7fe46c1bcf7699e9216a5a3228f77d438
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421237"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864913"
 ---
 # <a name="delete-timeoff"></a>删除 timeOff
 
@@ -26,7 +26,9 @@ ms.locfileid: "36421237"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -43,7 +45,6 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -58,7 +59,7 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-delete"
@@ -74,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOf
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-delete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-delete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

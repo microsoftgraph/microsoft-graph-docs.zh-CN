@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ed838b01364e5616db6ed8b2236dc0b5593d9ff
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fa93152cdd390093ceeedb061649af018c28808a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935256"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868028"
 ---
 # <a name="list-accesspackageassignments"></a>列出 accessPackageAssignments
 
@@ -24,9 +24,9 @@ ms.locfileid: "37935256"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |  EntitlementManagement |
+| 委派（工作或学校帐户）     |  EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,16 +36,17 @@ ms.locfileid: "37935256"
 GET /identityGovernance/entitlementManagement/accessPackageAssignments
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索已传递的工作分配，可以包含`$filter=assignmentState eq 'Delivered'`查询。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索已传递的工作分配，可以包含`$filter=assignmentState eq 'Delivered'`查询。 若要仅检索特定用户的工作分配，可以包含一个查询，该查询具有针对该用户`$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`的对象 ID 的工作分配。
+
 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,14 +61,30 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

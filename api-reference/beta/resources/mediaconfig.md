@@ -1,28 +1,28 @@
 ---
 title: mediaConfig 资源类型
-description: 用于连接到呼叫的媒体配置。
+description: 包含用于连接到呼叫的媒体配置的抽象基类。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f42f83923922cdf868dfa39ea3618f7fed2a37c6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 0f47ac0986107af16640208d64190da6138805d5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006674"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866712"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于连接到呼叫的媒体配置。
+包含用于连接到呼叫的媒体配置的抽象基类。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | 布尔 |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

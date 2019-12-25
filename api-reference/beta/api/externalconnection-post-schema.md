@@ -3,14 +3,14 @@ title: 创建架构
 description: 为 Microsoft Search 连接创建架构。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 201f2c474dd0ecdd38b14cbb6af3cb009b51fa82
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 560fc240439ed204e349bb09a44f398925007182
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747238"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869743"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -18,7 +18,7 @@ ms.locfileid: "38747238"
 
 为 Microsoft Search[连接](../resources/externalconnection.md)创建架构。
 
-支持以下两种架构类型：自定义项和文件。
+支持两种架构类型：自定义项和文件。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -63,7 +63,7 @@ POST /external/connections/{id}/schema
 如果在`Prefer: respond-async`请求中不包含标头，则此方法在响应正文`201 Created`中返回响应代码和新[架构](../resources/schema.md)对象。
 
 > [!NOTE]
-> 创建架构是一个容易导致网关超时的长时间运行的过程。 `Prefer: respond-async`建议使用，以避免超时错误。
+> 创建架构是一个容易导致网关超时的长时间运行的过程。 我们建议使用`Prefer: respond-async`标头以避免超时错误。
 
 ## <a name="examples"></a>示例
 

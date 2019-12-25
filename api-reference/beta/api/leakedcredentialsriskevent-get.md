@@ -5,16 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: ae53a9ee3f9687a9bc4f248804c2e4c9060953f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7b3abf4a0cee4f2d81a36fba9b27690e4411e6cf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979097"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867825"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>获取 leakedCredentialsRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 leakedcredentialsriskevent 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -42,7 +45,7 @@ GET /leakedCredentialsRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

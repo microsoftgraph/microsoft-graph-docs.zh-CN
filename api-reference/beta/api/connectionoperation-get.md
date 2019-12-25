@@ -3,14 +3,14 @@ title: 获取 connectionOperation
 description: 检索 connectionOperation 的属性。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b09a9ac40cd79a8f543fcb910385d09a3d598dcb
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 99bd074aed8c24a6d1990c753c8ea5ffe537097f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747521"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868063"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 

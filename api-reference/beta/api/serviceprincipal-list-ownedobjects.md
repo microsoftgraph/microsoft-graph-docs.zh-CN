@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipals: List ownedObjects'
+title: servicePrincipals： List ownedObjects
 description: 检索 servicePrincipal 拥有的对象的列表。  这可能包括应用程序或组。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 53bb8f5cb14dd33b62e53983e16e660fca14387b
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e2392b0aabb04feff19c36672fbebb25fad73392
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724587"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868833"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: List ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： List ownedObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ ms.locfileid: "36724587"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +52,7 @@ GET /servicePrincipals/{id}/ownedObjects
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_ownedobjects"
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-ownedobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-ownedobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

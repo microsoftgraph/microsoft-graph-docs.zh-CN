@@ -5,16 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 51618f9d90771aaa8364828872bb5c15b8efa291
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b91ccb4af5d81a5c64fed916fff9663d99dc57a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953134"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869498"
 ---
 # <a name="list-impossibletravelriskevents"></a>列出 impossibleTravelRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 impossibletravelriskevent 对象的列表。
 ## <a name="permissions"></a>权限
@@ -42,7 +45,7 @@ GET /impossibleTravelRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

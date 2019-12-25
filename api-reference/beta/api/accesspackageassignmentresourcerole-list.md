@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageAssignmentResourceRoles
-description: 检索 accessPackageAssignmentResourceRrole 对象的列表。
+description: 检索 accessPackageAssignmentResourceRole 对象的列表。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 07fc724591b99bb18d1a1540e7e3ec3da4f767ac
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 63ece8b5abcf6014e6ccbc293a773ea3dab8f462
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994297"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868007"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>列出 accessPackageAssignmentResourceRoles
 
@@ -36,7 +36,7 @@ ms.locfileid: "37994297"
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
@@ -44,7 +44,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 141b011ab1dbca436c39e9e48f8312fea77ec6f0
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: b0955428ce82f585bbdb085e0d6d2f2f6023f92f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895595"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870786"
 ---
 # <a name="update-swapshiftschangerequest"></a>更新 swapShiftsChangeRequest
 
@@ -26,7 +26,9 @@ ms.locfileid: "39895595"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+|应用程序 | 计划的所有写。 * |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +51,7 @@ PATCH /teams/{id}/schedule/swapShiftsChangeRequests
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|recipientShiftId|字符串|交换请求的收件人的 ID。 这是请求与之交换的用户。|
+|recipientShiftId|String|交换请求的收件人的 ID。 这是请求与之交换的用户。|
 
 ## <a name="response"></a>响应
 
@@ -60,6 +62,8 @@ PATCH /teams/{id}/schedule/swapShiftsChangeRequests
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_swapshiftschangerequest"
@@ -73,6 +77,20 @@ Content-type: application/json
   "recipientShiftId": "recipientShiftId-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-swapshiftschangerequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-swapshiftschangerequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-swapshiftschangerequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

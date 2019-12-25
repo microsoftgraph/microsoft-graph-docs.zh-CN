@@ -3,14 +3,14 @@ title: 更新 externalitem
 description: 更新 externalitem 的属性。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 05eef675ccb6b79e3919fae9a50e90b2d9a31326
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 18830968484e9103ab751261293226105fcef112
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747195"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869722"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -42,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | 字符串 | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | 字符串 | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 |
+| connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | string | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 |
 
 ## <a name="request-headers"></a>请求标头
 

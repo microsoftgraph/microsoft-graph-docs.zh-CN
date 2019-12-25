@@ -1,24 +1,24 @@
 ---
 title: 配置与目录扩展属性的同步
-description: '你可以自定义同步架构以包含 Azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。 在这种情况下, 您已将 Azure AD Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active Directory 到 Azure AD。 '
+description: '你可以自定义同步架构以包含 Azure Active Directory （Azure AD）目录扩展属性。 本文介绍如何使用目录扩展属性（**extension_9d98asdfl15980a_Nickname**）填充 Salesforce 中 CommunityNickname 的值。 在这种情况下，您已将 Azure AD Connect 设置为设置多个目录扩展属性，从本地 Windows Server Active Directory 到 Azure AD。 '
 localization_priority: Normal
 doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f33249ddbc5a539ed5f05c7971d14b6b9b594200
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 63aaf0312242b2275dc2ce29ee88bf3efb385fcd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726282"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866579"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-你可以自定义同步架构以包含 Azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。 在这种情况下, 您已将 Azure AD Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active Directory 到 Azure AD。 
+你可以自定义同步架构以包含 Azure Active Directory （Azure AD）目录扩展属性。 本文介绍如何使用目录扩展属性（**extension_9d98asdfl15980a_Nickname**）填充 Salesforce 中 CommunityNickname 的值。 在这种情况下，您已将 Azure AD Connect 设置为设置多个目录扩展属性，从本地 Windows Server Active Directory 到 Azure AD。 
 
-本文假定您已添加了一个应用程序, 该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户, 您知道应用程序显示名称, 并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息, 请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+本文假定您已添加了一个应用程序，该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -56,7 +56,7 @@ Authorization: Bearer {Token}
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>在服务主体的上下文中列出同步作业 
 
-下面的示例演示如何获取需要使用`jobId`的。 通常情况下, 响应仅返回一个作业。
+下面的示例演示如何获取需要使用`jobId`的。 通常情况下，响应仅返回一个作业。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -81,9 +81,9 @@ Authorization: Bearer {Token}
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>查找所需的目录扩展属性的名称
 
-您需要扩展属性的完整名称。 如果您不知道完整名称 (应类似于**extension_9d98asdfl15980a_Nickname**), 请参阅以下有关目录扩展属性的信息, 以及如何检查它们: 
+您需要扩展属性的完整名称。 如果您不知道完整名称（应类似于**extension_9d98asdfl15980a_Nickname**），请参阅以下有关目录扩展属性的信息，以及如何检查它们： 
 
-* [使用自定义属性扩展 Azure AD directory 架构](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [使用自定义属性扩展 Azure AD directory 架构](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
 * [目录架构扩展 |图形 API 概念](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
@@ -91,7 +91,7 @@ Authorization: Bearer {Token}
 下面的示例演示如何获取同步架构。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
@@ -108,7 +108,7 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -215,18 +215,18 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>为目录扩展属性添加定义以及属性之间的映射
 
-使用您选择的纯文本编辑器 (例如,[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)) 执行以下操作:
+使用您选择的纯文本编辑器（例如，[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)）执行以下操作：
 
 1. 为`extension_9d98asdfl15980a_Nickname`属性添加[属性定义](synchronization-attributedefinition.md)。 
 
-    - 在 "目录" 下, 查找名称为 "Azure Active Directory" 的目录, 并在对象的阵列中查找名为**User**的一个。
-    - 将新属性添加到列表中, 并指定名称和类型, 如下面的示例所示。
+    - 在 "目录" 下，查找名称为 "Azure Active Directory" 的目录，并在对象的阵列中查找名为**User**的一个。
+    - 将新属性添加到列表中，并指定名称和类型，如下面的示例所示。
 
 2. 在 extension_9d98asdfl15980a_Nickname 和 CommunityNickname 之间添加[属性映射](synchronization-attributemapping.md)。
 
-    - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下, 找到指定 Azure AD 作为 "源目录" 的规则, 将 "Salesforce.com`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`" 指定为目标目录 ()。
-    - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中, 查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" ()。
-    - 在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中, 添加一个新项, 如下面的示例所示。
+    - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下，找到指定 Azure AD 作为 "源目录" 的规则，将 "Salesforce.com`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`" 指定为目标目录（）。
+    - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中，查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" （）。
+    - 在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中，添加一个新项，如下面的示例所示。
 
     ```json
     {
@@ -279,7 +279,7 @@ Content-Type: application/json
 
 ## <a name="save-the-modified-synchronization-schema"></a>保存修改后的同步架构
 
-保存更新后的同步架构时, 请确保包含整个架构, 包括未修改的部分。 此请求将使用您提供的架构替换现有架构。
+保存更新后的同步架构时，请确保包含整个架构，包括未修改的部分。 此请求将使用您提供的架构替换现有架构。
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -292,7 +292,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-如果架构已成功保存, 则在同步作业的下一次迭代中, 它将开始重新处理 Azure AD 中的所有帐户, 并且新的映射将应用于所有已设置的帐户。
+如果架构已成功保存，则在同步作业的下一次迭代中，它将开始重新处理 Azure AD 中的所有帐户，并且新的映射将应用于所有已设置的帐户。
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

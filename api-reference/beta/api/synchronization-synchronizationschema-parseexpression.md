@@ -1,24 +1,24 @@
 ---
 title: 'synchronizationSchema: parseExpression'
-description: '(../resources/synchronization_attributemappingsource.md) 对象。 '
+description: '(../resources/synchronization_attributemappingsource）对象。 '
 localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 97463376adb97d60834609499ce9c95be374f191
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409672"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865011"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将给定的字符串表达式解析为 [attributeMappingSource | (.。。/resources/synchronization_attributemappingsource.md) 对象。 
+将给定的字符串表达式解析为 [attributeMappingSource | （.。。/resources/synchronization_attributemappingsource）对象。
 
-有关表达式的详细信息, 请参阅[在 Azure Active Directory 中编写属性映射的表达式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
+有关表达式的详细信息，请参阅[在 Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "36409672"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。| 
+|应用程序                            |不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,14 +51,14 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -125,7 +125,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,7 +133,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

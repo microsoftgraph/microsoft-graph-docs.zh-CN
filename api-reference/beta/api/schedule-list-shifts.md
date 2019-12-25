@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd4723ad1b0a7b4c22887b2482cd431c2370b5a3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e8d0d09af0693e3cc4c72137c22ac054ad9371ee
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724748"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867986"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -25,7 +25,9 @@ ms.locfileid: "36724748"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Schedule. All *、schedule、all* |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -37,7 +39,7 @@ ms.locfileid: "36724748"
 GET /teams/{teamId}/schedule/shifts
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 此方法支持 $filter [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
@@ -45,22 +47,21 @@ GET /teams/{teamId}/schedule/shifts
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象集合。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面是一个请求的示例, 该请求获取具有共享版本的所有**shift**对象和在2019年3月18日之间的草稿版本。
+下面是一个请求的示例，该请求获取具有共享版本的所有**shift**对象和在2019年3月18日之间的草稿版本。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-list-shifts"
@@ -76,7 +77,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-shifts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-shifts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

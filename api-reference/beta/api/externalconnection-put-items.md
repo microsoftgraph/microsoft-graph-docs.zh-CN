@@ -3,14 +3,14 @@ title: 创建 externalItem
 description: 创建新的 externalItem。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 10adfc916f2c4f30f19944188b1b375080c6e5bf
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 298a5bc01b3891831e1a8fd6774d721dc977b940
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747211"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869777"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -44,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | 字符串 | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | 字符串 | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
+| connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | string | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 

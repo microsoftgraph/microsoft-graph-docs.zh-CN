@@ -1,22 +1,22 @@
 ---
 title: 列出设备可传递组
-description: 获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
+description: 获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 829e2a91c3289901843b6fe211e48eac3ce9688b
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7fa76e01aa6e60681ba0873d7d0285e493dd3573
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718273"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868679"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
+获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -27,6 +27,9 @@ ms.locfileid: "36718273"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +64,7 @@ GET /devices/{id}/transitiveMemberOf
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_devices_transitivememberof"
@@ -78,7 +81,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

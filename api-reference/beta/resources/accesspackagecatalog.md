@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d95037bdf1e377f8981f99a06670957d838a2c92
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3c8fde3b6ead60cada5e663b2150ba463187b22b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938931"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870413"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
@@ -27,27 +27,28 @@ ms.locfileid: "37938931"
 | [创建 accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | 创建新的 accessPackageCatalog 对象。 |
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取 accessPackageCatalog 对象的属性和关系。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除 accessPackageCatalog。 |
-| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索 accessPackageResource 对象的列表。 |
+| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索目录中的 accessPackageResource 对象的列表。 |
+| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索目录中资源的 accessPackageResourceRole 对象的列表。 |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|catalogStatus|字符串|如果访问包`Published`可用于管理，则具有值。|
-|catalogType|字符串|一个`UserManaged`或`ServiceDefault`。 |
-|createdBy|字符串|创建此资源的用户的 UPN。 只读。|
+|catalogStatus|String|如果访问包`Published`可用于管理，则具有值。|
+|catalogType|String|一个`UserManaged`或`ServiceDefault`。 |
+|createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |说明|String|访问包目录的说明。|
 |displayName|String|访问包目录的显示名称。|
 |id|字符串| 只读。|
 |isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问程序包。|
-|modifiedBy|字符串|上次修改此资源的用户的 UPN。 只读。|
+|modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 描述 |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackages|[accessPackage](accesspackage.md)集合| 此目录中的访问包。 此为只读属性。 可为 Null。|
 |accessPackageResources|[accessPackageResource](accesspackageresource.md)集合| 只读。可为空。|

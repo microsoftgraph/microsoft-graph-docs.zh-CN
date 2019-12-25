@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b35c2c56c7033cd668b311c17169f5c719e5948
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: fb03e368a8a9c5cf929f314714a3a5d2fdee4b93
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062080"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866845"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -18,7 +18,7 @@ ms.locfileid: "36062080"
 
 表示目录中已删除的项目。 删除某个项目后，它会被添加到已删除项目“容器”中。 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 
-目前，已删除的项目功能仅支持用于 Office 365 [groups](group.md) 和 [users](users.md)。
+目前，仅支持[应用程序](application.md)、[组](group.md)和[用户](user.md)资源的 "已删除邮件" 功能。
 
 ## <a name="methods"></a>方法
 

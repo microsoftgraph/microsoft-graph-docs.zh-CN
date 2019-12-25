@@ -5,18 +5,18 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bd4e1eefeae819d37630a7faf4fbb1f6d1a5124c
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 0af20398852e92c69b253dc457c06a954b5e9761
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437816"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870122"
 ---
 # <a name="rolemanagement-resource-type"></a>roleManagement 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft 365 RBAC 角色管理实体。 提供对在 RBAC 提供程序中呈现的角色定义和角色分配的访问权限。 目前, 仅支持目录提供程序。 有关详细信息, 请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+Microsoft 365 RBAC 角色管理实体。 提供对在 RBAC 提供程序中呈现的角色定义和角色分配的访问权限。 目前，仅支持目录提供程序。 有关详细信息，请参阅[Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 ## <a name="methods"></a>方法
 

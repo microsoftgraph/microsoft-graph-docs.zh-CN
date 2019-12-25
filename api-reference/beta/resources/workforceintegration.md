@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa604c7d087d3231dd6ed1c6903a87f80298904b
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 631f2cc52b9327d77edd6fc5ad48292cf044570f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895618"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866488"
 ---
 # <a name="workforceintegration-resource-type"></a>workforceIntegration 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Workforceforce 与倒班的集成实例。
+员工的一个实例与倒班的集成。
 
 ## <a name="methods"></a>方法
 
@@ -24,7 +24,7 @@ Workforceforce 与倒班的集成实例。
 |:-------------|:------------|:------------|
 | [获取](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | 读取**workforceIntegration**对象的属性和关系。 |
 | [更新](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | 更新**workforceIntegration**对象。 |
-| [删除](../api/workforceintegration-delete.md) | None | 删除**workforceIntegration**对象。 |
+| [删除](../api/workforceintegration-delete.md) | 无 | 删除**workforceIntegration**对象。 |
 
 ## <a name="properties"></a>属性
 

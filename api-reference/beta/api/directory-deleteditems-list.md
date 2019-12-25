@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b6c0e92b0286f1efdddc962f478cfc277d08c493
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 00cbb0cd135b68df4d567f343a18f72a2dcb64a5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936851"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868665"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
@@ -21,6 +21,7 @@ ms.locfileid: "37936851"
 目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
@@ -29,7 +30,7 @@ ms.locfileid: "37936851"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Application.ReadWrite.All、Directory.Read.All |
+|应用程序 | Application.ReadWrite.All、Directory.Read.All |
 
 ### <a name="for-users"></a>对于用户：
 
@@ -45,7 +46,7 @@ ms.locfileid: "37936851"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
+|应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

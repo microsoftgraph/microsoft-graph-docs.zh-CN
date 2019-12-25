@@ -1,22 +1,25 @@
 ---
 title: identityRiskEvent 资源类型
-description: 'Azure Active Directory 标识保护检测到的风险事件。 它是每个特定风险事件类型的基本类型:'
+description: Azure Active Directory 标识保护检测到的风险事件。 它是每个特定风险事件类型的基本类型：
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7ea0a11931021e828660cc7b03991b8ea96ef1f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47b8b7590be2d4b235bb04fe079b58cf65cb4ae7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005798"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866789"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 它是每个特定风险事件类型的基本类型:
+>[!NOTE]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+
+[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 它是每个特定风险事件类型的基本类型：
 
 | 事件类型         | 说明|
 |:---------------|:-----------|
@@ -27,7 +30,7 @@ ms.locfileid: "36005798"
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | 来自可疑 IP 地址的登录。 |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | 来自不熟悉位置的登录。 |
 
-有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)。
+有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](/azure/active-directory/active-directory-reporting-risk-events)。
 
 ## <a name="methods"></a>方法
 
@@ -52,11 +55,11 @@ ms.locfileid: "36005798"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。 
+下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",

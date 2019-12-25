@@ -3,14 +3,14 @@ title: externalItem 资源类型
 description: 通过 Microsoft Search 连接编制索引的项目。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 900cf61536204ff5924aea0de268befad6626b37
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 5a396d41ffaf0e602a586635296586cbdce42f50
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704169"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866824"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 

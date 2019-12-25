@@ -6,12 +6,12 @@ title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ddedd4932e0c2061bcfe3bfac6a52879a3f2b73
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977865"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870883"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中创建页面
 
@@ -39,16 +39,18 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供要创建的[sitePage][]资源的 JSON 表示形式。
+在请求正文中，提供要创建的[sitePage][]资源的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 
 下面的示例展示了如何创建新页面。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST /sites/{site-id}/page
+POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
@@ -99,10 +101,16 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在创建的页面的响应正文中返回[sitePage][] 。
+如果成功，此方法在创建的页面的响应正文中返回[sitePage][] 。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

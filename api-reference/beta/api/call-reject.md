@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2d14cff71b161b780726c2937b1c008323a9cc5
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: ad223a862330f9d137761685b68e119ad10abb56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302202"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868245"
 ---
 # <a name="call-reject"></a>呼叫：拒绝
 
@@ -21,8 +21,6 @@ ms.locfileid: "38302202"
 在呼叫超时之前，机器人应应答或拒绝呼叫。当前超时值为15秒。
 
 此 API 不会结束已应答的现有呼叫。 使用[删除呼叫](../api/call-delete.md)结束呼叫。
-
-> **注意：** 只能通过 VoIP 访问机器人。 尚不支持对 bot 的 PSTN 呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,8 +50,8 @@ POST /communications/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|reason|字符串|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
-|callbackUri|字符串|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
+|reason|String|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
+|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。

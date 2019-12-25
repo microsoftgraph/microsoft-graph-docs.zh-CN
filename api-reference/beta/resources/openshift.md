@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3eff83475c4a36ec1c294c62b9e1b87673926d8d
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: fa87acd2065a3a56f15016bb7708e73cebe63a31
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895626"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870157"
 ---
 # <a name="openshift-resource-type"></a>openShift 资源类型
 
@@ -22,16 +22,16 @@ ms.locfileid: "39895626"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/openshift-get.md) | [openShift](openshift.md) | 读取 openShift 对象的属性和关系。 |
-| [更新](../api/openshift-update.md) | [openShift](openshift.md) | 更新 openShift 对象。 |
-| [删除](../api/openshift-delete.md) | None | 删除 openShift 对象。 |
+| [获取](../api/openshift-get.md) | [openShift](openshift.md) | 读取**openShift**对象的属性和关系。 |
+| [更新](../api/openshift-update.md) | [openShift](openshift.md) | 更新**openShift**对象。 |
+| [删除](../api/openshift-delete.md) | 无 | 删除**openShift**对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |draftOpenShift|[openShiftItem](openshiftitem.md)|未发布的打开班次。|
-|schedulingGroupId|字符串|打开的班次所属的计划组的 ID。|
+|schedulingGroupId|String|打开的班次所属的计划组的 ID。|
 |sharedOpenShift|[openShiftItem](openshiftitem.md)|已发布的打开班次。|
 
 ## <a name="relationships"></a>关系

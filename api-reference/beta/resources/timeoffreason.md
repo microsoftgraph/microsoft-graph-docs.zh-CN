@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 62943670a0c87d34fd849e988ef5bf827aa6d72a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 514ca74bb9826546e95f225e394e8fc07a0f674f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964279"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866516"
 ---
 # <a name="timeoffreason-resource-type"></a>timeOffReason 资源类型
 
@@ -22,18 +22,18 @@ ms.locfileid: "35964279"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[创建 timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | 新建 `timeOffReason`。|
-|[列出 timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md)集合 | 获取计划中 `timeOffReasons` 的列表。|
-|[获取 timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | 按 ID 获取 `timeOffReason`。|
-|[替换 timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | 更换 `timeOffReason`。|
-|[删除 timeOffReason](../api/timeoffreason-delete.md) | 无 | 将 `timeOffReason` 标记为非活动状态。|
+|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | 创建新的**timeOffReason**。|
+|[List](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md)集合 | 获取计划中的**timeOffReason**列表。|
+|[获取](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | 按 ID 获取**timeOffReason** 。|
+|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | 替换**timeOffReason**。|
+|[删除](../api/timeoffreason-delete.md) | 无 | 将**timeOffReason**标记为非活动状态。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOffReason` 的 ID。|
 | displayName               | `string`                  | 的名称`timeOffReason`。 必需。 |
-| iconType | `timeOffReasonIconType`   | 支持的图标类型: 无;car式运行planefirstAid;dr.notWorking;构造juryDuty;投放cup of电话气候防护piggyBank;监控桩trafficCone;针sunny. 必需。 |
+| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car式运行planefirstAid;dr.notWorking;构造juryDuty;投放cup of电话气候防护piggyBank;监控桩trafficCone;针sunny. 必需。 |
 | isActive          |`Boolean`      | 指示在新建实体或更新现有实体时是否可以使用 `timeOffReason`。 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次在其上创建`timeOffReason`此项的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
 | lastModifiedDateTime      |`DateTimeOffset`         |对其最后更新的`timeOffReason`时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |

@@ -5,43 +5,43 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e964a8ce2e9bd4165a29037a56ec4f95fe969422
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0567ca9347b560b14ae96da4914a8801f9183019
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938924"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870972"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源是对与目录关联的资源的引用。可在一个或多个访问包中使用的角色。
+在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源是对与访问包目录关联的资源（可在一个或多个访问包中使用的角色）的引用。  若要请求将资源与访问包目录相关联，请创建一个[accessPackageResourceRequest](accesspackageresourcerequest.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索 accesspackageresource 对象的列表。 |
+| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索目录中的 accessPackageResource 对象的列表。 |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|addedBy|字符串|只读。|
+|addedBy|String|只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |description|String|资源的说明。|
 |displayName|字符串|资源的显示名称，例如应用程序名称、组名称或网站名称。|
 |id|字符串| 只读。|
 |isPendingOnboarding|Boolean|如果资源尚不可用于工作分配，则为 True。|
-|originId|字符串|源系统中资源的唯一标识符。 |
-|originSystem|字符串|源系统中资源的类型。|
-|resourceType|字符串|资源的类型，例如， `Application`如果是 Azure AD 连接的应用程序。|
+|originId|String|源系统中资源的唯一标识符。 在 Azure AD 组的情况下，这是组的标识符。 |
+|originSystem|String|源系统中资源的类型，例如`SharePointOnline`或。 `AadGroup`|
+|resourceType|String|资源的类型，例如`Application` ，它是 Azure AD 连接的应用程序，或者`SharePoint Online Site`是 SharePoint Online 网站的类型。|
 |url|String|资源的唯一资源定位器，例如用于将用户签名到应用程序的 URL。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 描述 |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md)集合| 只读。 可为 Null。|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md)集合| 只读。可为空。|

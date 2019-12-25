@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2299c31b0981599567cd154d7366d7ed1b3e3705
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 5688643403e8d7088f39bae422df700bb03f830f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722389"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868770"
 ---
 # <a name="get-shift"></a>获取 shift
 
@@ -25,8 +25,10 @@ ms.locfileid: "36722389"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    |s
+|应用程序 | Schedule. All *、schedule、all* |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -43,14 +45,13 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -58,7 +59,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-get"
@@ -74,7 +75,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

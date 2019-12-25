@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 190b80b1c707d1bffc87288a09356eff794d38c0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 90be20dd3513fed4cfd3652c7bd30a82d814b74b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415342"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869470"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
@@ -18,9 +18,9 @@ ms.locfileid: "36415342"
 
 删除指定的[mailFolder](../resources/mailfolder.md)。 文件夹可以是[mailSearchFolder](../resources/mailsearchfolder.md)。
 
-可以按文件夹 ID 或[已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹 (如果存在)。 
+可以按文件夹 ID 或[已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹（如果存在）。
 
->**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目 (由已知文件夹名称`recoverableitemsdeletions`表示)。 有关详细信息, 请参阅[已删除邮件保留](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
+>**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目（由已知文件夹名称`recoverableitemsdeletions`表示）。 有关详细信息，请参阅[已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
@@ -68,7 +68,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

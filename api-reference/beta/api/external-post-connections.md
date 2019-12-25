@@ -3,14 +3,14 @@ title: 创建连接
 description: 使用此 API 创建新的 externalConnection。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8dc7ce7bd7a253f0a9696d9987062bc5ceaa7ce6
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: b69cf68f178a3a8a3ad21928ca4ccbf6dc5b59fb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747189"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869772"
 ---
 # <a name="create-connection"></a>创建连接
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 05fff64d4b1cae63522265329995afb1ea929146
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 18542fc96fbb706201c4398296e3fa1017dc062f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722816"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868987"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 
@@ -30,6 +30,8 @@ ms.locfileid: "36722816"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } --> 
@@ -46,7 +48,7 @@ GET /reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='{period_
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -71,7 +73,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
@@ -84,7 +86,7 @@ CSV 文件包含下面的列标题。
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessparticipantactivityminutecounts_csv"
@@ -101,7 +103,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActiv
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -144,7 +146,7 @@ Report Refresh Date,Report Date,Report Period,Audio/Video
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessparticipantactivityminutecounts_json"
@@ -161,7 +163,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActiv
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

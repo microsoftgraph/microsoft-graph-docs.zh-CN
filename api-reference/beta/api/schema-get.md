@@ -3,14 +3,14 @@ title: 获取架构
 description: 检索 externalConnection 架构的属性。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: da42ecae79e7e0a81a77edf510a082bb8d3990c2
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 073f2a7cb533b3cd87b4dcd345b2b9fe656103ea
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703719"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868854"
 ---
 # <a name="get-schema"></a>获取架构
 
@@ -20,7 +20,7 @@ ms.locfileid: "38703719"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "38703719"
 GET /external/connections/{id}/schema
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 

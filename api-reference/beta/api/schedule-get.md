@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 16ac01a7ca9d05e9e5c3c08b16b938fb73abada6
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 1c658ff9df1dab5f4a751c524dedb1f2fa8b3ac4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895290"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868857"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -33,7 +33,9 @@ ms.locfileid: "39895290"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Schedule. All *、schedule、all* |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -50,7 +52,7 @@ GET /teams/{teamId}/schedule
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

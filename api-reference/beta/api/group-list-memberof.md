@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 08e49605d0f28537f54f651f476da6c8473cea97
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2aeba54d794c8316f1a6e5d0df6795ab7be8d3af
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658700"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869638"
 ---
 # <a name="list-group-memberof"></a>列出组 memberOf
 
@@ -26,9 +26,11 @@ ms.locfileid: "38658700"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | GroupMember、Group. all、Directory.accessasuser.all、、all、all、all 和。 All    |
+|委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember、Group. all、Read. all、All、All、All |
+|应用程序 | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

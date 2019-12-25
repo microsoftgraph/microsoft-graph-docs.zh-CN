@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipals: 列出所有者'
+title: servicePrincipals：列出所有者
 description: 检索 servicePrincipal 的所有者列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4551f2c95c5793cb0eb9a2e8b759a85505130bd9
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c1940ceb63572c862455f5f76cb939a74b7ec36e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722411"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868826"
 ---
-# <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
+# <a name="serviceprincipals-list-owners"></a>servicePrincipals：列出所有者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ ms.locfileid: "36722411"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +52,7 @@ GET /servicePrincipals/{id}/owners
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_get_owners"
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-owners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-get-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

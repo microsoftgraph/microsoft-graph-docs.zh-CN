@@ -1,16 +1,16 @@
 ---
 title: directoryAudit 资源类型
-description: 介绍了 Microsoft Graph API (REST) 的 directoryAudit 资源 (实体), 它可帮助审核目录 (租户) 活动 (测试版)。
+description: 介绍了 Microsoft Graph API （REST）的 directoryAudit 资源（实体），它可帮助审核目录（租户）活动（测试版）。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ede14029cf20c909d1cc735c18e23eb7556eea53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fbd3789ca6a33a16f214d5d961986ef4e1b6c016
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973127"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870328"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "35973127"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
+|activityDisplayName|String|指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
 |additionalDetails|[keyValue](keyvalue.md) 集合|指示活动的其他详细信息。|
 |category|String|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
 |correlationId|GUID|指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|

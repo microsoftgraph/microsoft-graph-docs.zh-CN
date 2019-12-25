@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 64b2c1880edafe1241367ac91889440a513964d9
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: e7cae71f220a2a519908e3af890029a2da555577
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006611"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866684"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006611"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -29,21 +29,18 @@ ms.locfileid: "38006611"
 
 | 属性                  | 类型                                                   | 说明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | 指定将自动允许加入联机会议的参与者类型的设置。 只读。 可能的值为`everyone`： `everyoneInSameAndFederatedCompany`、 `everyoneInCompany`、 `invitedUsersInCompany`、`organizer`|
+| autoAdmittedUsers         | String                                                 | 指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | 联机会议的电话访问（拨入）信息。 只读。 |
-| canceledDateTime          | 日期时间                                               | 取消会议时的 UTC 时间（以 UTC 为单位）。 只读。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
 | creationDateTime          | 日期时间                                               | 以 UTC 表示的会议创建时间。 只读。 |
 | startDateTime             | 日期时间                                               | 以 UTC 表示的会议开始时间。 |
 | endDateTime               | 日期时间                                               | 以 UTC 表示的会议结束时间。 |
 | id                        | 字符串                                                 | 与联机会议关联的默认 ID。 只读。 |
-| isCanceled                | 布尔                                                | 指示是否已取消会议。 只读。 |
-| joinUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
-| isBroadcast               | 布尔                                                | 指示会议是否为广播会议。 |
+| joinWebUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | subject                   | String                                                 | 联机会议的主题。 |
-| capabilities              | String 集合                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
-| videoTeleconferenceId     | String                                                 | Videio 电话会议 ID。 只读。 |
+| capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
+| videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
 
 ### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
 | 值 | 说明  |
@@ -68,14 +65,11 @@ ms.locfileid: "38006611"
 {
   "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCanceled": false,
-  "joinUrl": "String",
-  "isBroadcast": false,
+  "joinWebUrl": "String",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",

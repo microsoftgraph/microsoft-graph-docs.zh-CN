@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7ff45d17a039b1c1295dea1410acff7ed1c73612
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c85735029ab7220da828c1c7bd09e2cab23a515f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720541"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869626"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -26,6 +26,8 @@ ms.locfileid: "36720541"
 |委派（工作或学校帐户） | Group.Read.All 和 User.ReadBasic.All、Group.Read.All 和 User.Read.All、Group.Read.All 和 User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All 和 User.Read.All、Group.Read.All 和User.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ GET /groups/{id}/owners
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_owners"
@@ -67,7 +69,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-owners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

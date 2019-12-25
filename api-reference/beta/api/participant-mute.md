@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 1c720ce79b4c31b2895e6d953ab0e36cbb2450be
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747978"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869323"
 ---
 # <a name="participant-mute"></a>参与者：静音
 
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
 
->**注意：** Whem 此 API 返回成功的响应，所有参与者都将收到名单更新。
+>**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
 ## <a name="example---mute-specific-participant"></a>示例-特定参与者的静音
 以下示例演示如何调用此 API。

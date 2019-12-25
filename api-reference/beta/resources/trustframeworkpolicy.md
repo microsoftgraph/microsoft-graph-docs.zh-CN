@@ -5,25 +5,25 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f573b331b587db50019e71468ec98d0e746e3963
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83b4a747007ed0ba55cc0fec37b9cf45debf1f47
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964184"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866502"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustFrameworkPolicy 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-表示[Azure Active DIRECTORY B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview)中的[信任框架](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略 (也称为[自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom))。 信任框架策略提供了对用户旅程的完全控制权限。 使用它可以执行以下操作:
+表示[Azure Active DIRECTORY B2C](/azure/active-directory-b2c/active-directory-b2c-overview)中的[信任框架](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略（也称为[自定义策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)）。 信任框架策略提供了对用户旅程的完全控制权限。 使用它可以执行以下操作：
 
 * 完全自定义注册和登录体验。
 * 联合任何 SAML、Open ID Connect 或 OAuth2 identity provider。
 * 通过调用 REST 终结点与其他系统或用户数据存储集成。
 * 转换声明并自定义颁发给信赖方应用程序的令牌。
 
-有关详细信息, 请参阅[Azure Active DIRECTORY B2C 中的自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
+有关详细信息，请参阅[Azure Active DIRECTORY B2C 中的自定义策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
 
 ## <a name="methods"></a>方法
 
@@ -62,5 +62,5 @@ ms.locfileid: "35964184"
 
 ## <a name="see-also"></a>另请参阅
 
-- [trustFrameworkPolicy 架构](https://docs.microsoft.com/en-us/azure/active-directory-b2c/trustframeworkpolicy), 以了解有关架构元素的信息。  
+- [trustFrameworkPolicy 架构](/azure/active-directory-b2c/trustframeworkpolicy)，以了解有关架构元素的信息。
 - [trustFrameworkPolicy](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)

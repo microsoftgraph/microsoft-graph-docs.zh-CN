@@ -1,22 +1,22 @@
 ---
 title: 协议资源类型
-description: 表示租户的可自定义使用条款协议, 它是使用 Azure Active Directory (Azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理 Azure Active Directory 使用条款功能。
+description: 表示租户的可自定义使用条款协议，它是使用 Azure Active Directory （Azure AD）创建和管理的。 您可以根据您的方案使用以下方法来创建和管理 Azure Active Directory 使用条款功能。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 31c25211efbca8ae0f52a9348ad0531ea818397f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974515"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870951"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户的可自定义使用条款协议, 它是使用 Azure Active Directory (Azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)。
+表示租户的可自定义使用条款协议，它是使用 Azure Active Directory （Azure AD）创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](/azure/active-directory/active-directory-tou)。
 
 ## <a name="methods"></a>方法
 

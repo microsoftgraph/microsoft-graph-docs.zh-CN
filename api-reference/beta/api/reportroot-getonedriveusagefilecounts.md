@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 605eceb59aa96337a05c96b09fb743b8d2efcd94
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 990a33b4d8a02132241cb2047426d7ecc8ca5687
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722979"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867475"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 
@@ -30,6 +30,8 @@ ms.locfileid: "36722979"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
+**注意**：对于允许应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Office 365 使用情况报告](/graph/reportroot-authorization)。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } --> 
@@ -46,7 +48,7 @@ GET /reports/getOneDriveUsageFileCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -73,7 +75,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[oneDriveUsageFileCounts](../resources/onedriveusagefilecounts.md)** 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**[oneDriveUsageFileCounts](../resources/onedriveusagefilecounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +88,7 @@ CSV 文件包含下面的列标题。
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getonedriveusagefilecounts_csv"
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageFileCounts(period='
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveusagefilecounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveusagefilecounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -146,7 +148,7 @@ Report Refresh Date,Site Type,Total,Active,Report Date,Report Period
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getonedriveusagefilecounts_json"
@@ -163,7 +165,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageFileCounts(period='
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveusagefilecounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveusagefilecounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

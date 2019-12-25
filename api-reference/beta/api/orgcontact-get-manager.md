@@ -1,18 +1,18 @@
 ---
-title: 'orgContact: 获取管理器'
+title: orgContact：获取管理器
 description: 获取联系人的经理
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 24990cd8a93373d98171445754af3b619c453b7b
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1acea9392c96a9def70d04e23429ac2b91fb2133
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723747"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869344"
 ---
-# <a name="orgcontact-get-manager"></a>orgContact: 获取管理器
+# <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ ms.locfileid: "36723747"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +55,7 @@ GET /contacts/{id}/manager
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

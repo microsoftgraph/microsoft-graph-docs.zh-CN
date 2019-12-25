@@ -3,14 +3,14 @@ title: 架构资源类型
 description: 介绍内容的类型，以及如何在 Microsoft Search 连接中对项目中的每个属性编制索引。
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2a13d797ff3b695250f7dd5cfef3bc077afe505b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704134"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870115"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 

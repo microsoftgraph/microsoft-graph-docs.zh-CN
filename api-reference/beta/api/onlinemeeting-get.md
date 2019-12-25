@@ -1,18 +1,18 @@
 ---
-title: 获取联机会议
+title: 获取 onlineMeeting
 description: 检索**联机会议**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 07b1a13a4ad08b6a6478fa82e2d04599a3f5746a
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 42906632b4a8161966a04473fe7492049484d620
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303081"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869400"
 ---
-# <a name="get-online-meeting"></a>获取联机会议
+# <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "38303081"
 |:---------------------------------------|:------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                                        |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings、OnlineMeetings 和所有 |
+| 应用程序                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[onlineMeeting](../resources/onlinemeeting.md)对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面为请求示例。
 
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -104,7 +104,6 @@ Content-Length: 1574
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
-  "canceledDateTime": "0001-01-01T08:00:00Z",
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
     "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
@@ -113,9 +112,7 @@ Content-Length: 1574
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-  "isCanceled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
-  "isBroadcast": false,
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
   "participants": {
     "attendees": [
       {

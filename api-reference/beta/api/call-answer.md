@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ff9de522e96ea6cec614d8673d8f85987ac88908
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: ab0380bca750f53e4f89c32c072843fd53849675
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636720"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868287"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -18,11 +18,9 @@ ms.locfileid: "39636720"
 
 使机器人能够应答传入[呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含[chatInfo](../resources/chatinfo.md)和[meetingInfo](../resources/meetinginfo.md)参数。
 
-在呼叫超时之前，机器人应应答或[拒绝](./call-reject.md)呼叫。当前超时值为15秒。
+在呼叫超时之前，机器人应应答、[拒绝](./call-reject.md)或[重定向](./call-redirect.md)呼叫。当前超时值为15秒。
 
-> **注意：** 自动程序只能通过 VoIP 访问机器人。 不支持 PSTN 呼叫。
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |

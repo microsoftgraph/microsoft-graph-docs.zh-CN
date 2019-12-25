@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 28f9956c065e59a0db1ffbd0b82175546d3e5139
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c1bae369b71744e69753b9e7b38e5b193db00a7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973111"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870335"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "35973111"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|dateTime|字符串|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如, "2019-04-16T09:00:00"。|
-|timeZone|字符串|表示时区, 例如 "太平洋标准时间"。 有关可能值, 请参阅下文。|
+|dateTime|字符串|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如，"2019-04-16T09：00： 00"。|
+|timeZone|String|表示时区，例如“太平洋标准时间”。 有关可能值，请参阅下文。|
 
-通常情况下,_可以_将**时区**属性设置为[Windows 当前支持](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones)的任意时区, 以及[日历 API 支持](#additional-time-zones)的其他时区。 
+通常，**timeZone** 属性_可以_ 设置为 [Windows 当前支持的任意时区](/windows-hardware/manufacture/desktop/default-time-zones)，以及[日历 API 支持的其他时区](#additional-time-zones)。
 
-结合使用**datetimetimezone type**和方法 (如[创建](../api/user-post-events.md)或[更新](../api/event-update.md)事件) 时, 请注意受支持的实际时区, 它可以是一个较小的子集。
+将 **dateTimeTimeZone** 与某一方法（例如[创建](../api/user-post-events.md)或[更新](../api/event-update.md)事件）结合使用时，请注意支持的实际时区，这可能是一个较小的子集。
 
 ### <a name="additional-time-zones"></a>其他时区
 
