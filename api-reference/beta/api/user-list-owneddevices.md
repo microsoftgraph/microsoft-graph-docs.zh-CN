@@ -5,51 +5,53 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83eaf380ced92569ab25166868016265bcb6edae
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1641bef934890ea74176965df0f6af7313951799
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721913"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870692"
 ---
-# <a name="list-owneddevices"></a><span data-ttu-id="2ed2b-103">List ownedDevices</span><span class="sxs-lookup"><span data-stu-id="2ed2b-103">List ownedDevices</span></span>
+# <a name="list-owneddevices"></a><span data-ttu-id="06d20-103">List ownedDevices</span><span class="sxs-lookup"><span data-stu-id="06d20-103">List ownedDevices</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2ed2b-104">获取用户拥有的设备列表。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-104">Get the list of devices that are owned by the user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="2ed2b-105">权限</span><span class="sxs-lookup"><span data-stu-id="2ed2b-105">Permissions</span></span>
-<span data-ttu-id="2ed2b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="06d20-104">获取用户拥有的设备列表。</span><span class="sxs-lookup"><span data-stu-id="06d20-104">Get the list of devices that are owned by the user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="06d20-105">权限</span><span class="sxs-lookup"><span data-stu-id="06d20-105">Permissions</span></span>
+<span data-ttu-id="06d20-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06d20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2ed2b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2ed2b-108">Permission type</span></span>      | <span data-ttu-id="2ed2b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2ed2b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="06d20-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="06d20-108">Permission type</span></span>      | <span data-ttu-id="06d20-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="06d20-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2ed2b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2ed2b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2ed2b-111">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2ed2b-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="2ed2b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2ed2b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ed2b-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-113">Not supported.</span></span>    |
-|<span data-ttu-id="2ed2b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2ed2b-114">Application</span></span> | <span data-ttu-id="2ed2b-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ed2b-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="06d20-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06d20-110">Delegated (work or school account)</span></span> | <span data-ttu-id="06d20-111">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="06d20-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="06d20-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06d20-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06d20-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="06d20-113">Not supported.</span></span>    |
+|<span data-ttu-id="06d20-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="06d20-114">Application</span></span> | <span data-ttu-id="06d20-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d20-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2ed2b-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2ed2b-116">HTTP request</span></span>
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+## <a name="http-request"></a><span data-ttu-id="06d20-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06d20-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2ed2b-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2ed2b-117">Optional query parameters</span></span>
-<span data-ttu-id="2ed2b-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="2ed2b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2ed2b-119">Request headers</span></span>
-| <span data-ttu-id="2ed2b-120">标头</span><span class="sxs-lookup"><span data-stu-id="2ed2b-120">Header</span></span>       | <span data-ttu-id="2ed2b-121">值</span><span class="sxs-lookup"><span data-stu-id="2ed2b-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="06d20-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="06d20-117">Optional query parameters</span></span>
+<span data-ttu-id="06d20-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="06d20-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="06d20-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="06d20-119">Request headers</span></span>
+| <span data-ttu-id="06d20-120">标头</span><span class="sxs-lookup"><span data-stu-id="06d20-120">Header</span></span>       | <span data-ttu-id="06d20-121">值</span><span class="sxs-lookup"><span data-stu-id="06d20-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2ed2b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2ed2b-122">Authorization</span></span>  | <span data-ttu-id="2ed2b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2ed2b-125">接受</span><span class="sxs-lookup"><span data-stu-id="2ed2b-125">Accept</span></span>  | <span data-ttu-id="2ed2b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2ed2b-126">application/json</span></span>|
+| <span data-ttu-id="06d20-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="06d20-122">Authorization</span></span>  | <span data-ttu-id="06d20-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="06d20-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="06d20-125">接受</span><span class="sxs-lookup"><span data-stu-id="06d20-125">Accept</span></span>  | <span data-ttu-id="06d20-126">application/json</span><span class="sxs-lookup"><span data-stu-id="06d20-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2ed2b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2ed2b-127">Request body</span></span>
-<span data-ttu-id="2ed2b-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="06d20-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="06d20-127">Request body</span></span>
+<span data-ttu-id="06d20-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="06d20-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2ed2b-129">响应</span><span class="sxs-lookup"><span data-stu-id="2ed2b-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="06d20-129">响应</span><span class="sxs-lookup"><span data-stu-id="06d20-129">Response</span></span>
 
-<span data-ttu-id="2ed2b-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2ed2b-131">示例</span><span class="sxs-lookup"><span data-stu-id="2ed2b-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2ed2b-132">请求</span><span class="sxs-lookup"><span data-stu-id="2ed2b-132">Request</span></span>
-<span data-ttu-id="2ed2b-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-133">Here is an example of the request.</span></span>
+<span data-ttu-id="06d20-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="06d20-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="06d20-131">示例</span><span class="sxs-lookup"><span data-stu-id="06d20-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="06d20-132">请求</span><span class="sxs-lookup"><span data-stu-id="06d20-132">Request</span></span>
+<span data-ttu-id="06d20-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06d20-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2ed2b-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2ed2b-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="06d20-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="06d20-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_owneddevices"
@@ -57,22 +59,22 @@ GET /users/{id | userPrincipalName}/ownedDevices
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/ownedDevices
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2ed2b-135">C#</span><span class="sxs-lookup"><span data-stu-id="2ed2b-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="06d20-135">C#</span><span class="sxs-lookup"><span data-stu-id="06d20-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-owneddevices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2ed2b-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2ed2b-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="06d20-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06d20-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-owneddevices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2ed2b-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="2ed2b-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="06d20-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06d20-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-owneddevices-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2ed2b-138">响应</span><span class="sxs-lookup"><span data-stu-id="2ed2b-138">Response</span></span>
-<span data-ttu-id="2ed2b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2ed2b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="06d20-138">响应</span><span class="sxs-lookup"><span data-stu-id="06d20-138">Response</span></span>
+<span data-ttu-id="06d20-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="06d20-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

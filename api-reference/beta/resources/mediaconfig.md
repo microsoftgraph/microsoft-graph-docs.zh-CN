@@ -1,32 +1,32 @@
 ---
 title: mediaConfig 资源类型
-description: 用于连接到呼叫的媒体配置。
+description: 包含用于连接到呼叫的媒体配置的抽象基类。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f42f83923922cdf868dfa39ea3618f7fed2a37c6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 0f47ac0986107af16640208d64190da6138805d5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006674"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866712"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="18f4a-103">mediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="18f4a-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="13a0c-103">mediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="13a0c-103">mediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18f4a-104">用于连接到呼叫的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="18f4a-104">The media configuration used to connect to a call.</span></span>
+<span data-ttu-id="13a0c-104">包含用于连接到呼叫的媒体配置的抽象基类。</span><span class="sxs-lookup"><span data-stu-id="13a0c-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="18f4a-105">属性</span><span class="sxs-lookup"><span data-stu-id="18f4a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="13a0c-105">属性</span><span class="sxs-lookup"><span data-stu-id="13a0c-105">Properties</span></span>
 
-| <span data-ttu-id="18f4a-106">属性</span><span class="sxs-lookup"><span data-stu-id="18f4a-106">Property</span></span>       | <span data-ttu-id="18f4a-107">类型</span><span class="sxs-lookup"><span data-stu-id="18f4a-107">Type</span></span>    | <span data-ttu-id="18f4a-108">说明</span><span class="sxs-lookup"><span data-stu-id="18f4a-108">Description</span></span>|
+| <span data-ttu-id="13a0c-106">属性</span><span class="sxs-lookup"><span data-stu-id="13a0c-106">Property</span></span>       | <span data-ttu-id="13a0c-107">类型</span><span class="sxs-lookup"><span data-stu-id="13a0c-107">Type</span></span>    | <span data-ttu-id="13a0c-108">说明</span><span class="sxs-lookup"><span data-stu-id="13a0c-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="18f4a-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="18f4a-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="18f4a-110">布尔</span><span class="sxs-lookup"><span data-stu-id="18f4a-110">Boolean</span></span> |  |
+| <span data-ttu-id="13a0c-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="13a0c-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="13a0c-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="13a0c-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="18f4a-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="18f4a-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="13a0c-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="13a0c-111">JSON representation</span></span>
 
-<span data-ttu-id="18f4a-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="18f4a-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="13a0c-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="13a0c-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

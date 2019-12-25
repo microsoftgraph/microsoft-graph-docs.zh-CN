@@ -1,33 +1,33 @@
 ---
 title: serviceHostedMediaConfig 资源类型
-description: ServiceHostedMediaConfig 类型。
+description: 远程承载的媒体。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: edefba3e415a50322022e4549fbecbd37da6d1da
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 405f6b40260908d7492a3b02c8535588c8475ca8
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006541"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870087"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="20393-103">serviceHostedMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="20393-103">serviceHostedMediaConfig resource type</span></span>
+# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="1b2ba-103">serviceHostedMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="1b2ba-103">serviceHostedMediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="20393-104">ServiceHostedMediaConfig 类型。</span><span class="sxs-lookup"><span data-stu-id="20393-104">The serviceHostedMediaConfig type.</span></span>
+<span data-ttu-id="1b2ba-104">远程承载的媒体。</span><span class="sxs-lookup"><span data-stu-id="1b2ba-104">The media that's hosted remotely.</span></span> <span data-ttu-id="1b2ba-105">这是从[mediaConfig](mediaconfig.md)继承的。</span><span class="sxs-lookup"><span data-stu-id="1b2ba-105">This is inherited from [mediaConfig](mediaconfig.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="20393-105">属性</span><span class="sxs-lookup"><span data-stu-id="20393-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1b2ba-106">属性</span><span class="sxs-lookup"><span data-stu-id="1b2ba-106">Properties</span></span>
 
-| <span data-ttu-id="20393-106">属性</span><span class="sxs-lookup"><span data-stu-id="20393-106">Property</span></span>                    | <span data-ttu-id="20393-107">类型</span><span class="sxs-lookup"><span data-stu-id="20393-107">Type</span></span>                                                        | <span data-ttu-id="20393-108">说明</span><span class="sxs-lookup"><span data-stu-id="20393-108">Description</span></span>                                       |
+| <span data-ttu-id="1b2ba-107">属性</span><span class="sxs-lookup"><span data-stu-id="1b2ba-107">Property</span></span>                    | <span data-ttu-id="1b2ba-108">类型</span><span class="sxs-lookup"><span data-stu-id="1b2ba-108">Type</span></span>                                                        | <span data-ttu-id="1b2ba-109">说明</span><span class="sxs-lookup"><span data-stu-id="1b2ba-109">Description</span></span>                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| <span data-ttu-id="20393-109">preFetchMedia</span><span class="sxs-lookup"><span data-stu-id="20393-109">preFetchMedia</span></span>               | <span data-ttu-id="20393-110">[mediaInfo](mediainfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="20393-110">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="20393-111">预回迁的介质列表。</span><span class="sxs-lookup"><span data-stu-id="20393-111">The list of media to pre-fetch.</span></span>                   |
-| <span data-ttu-id="20393-112">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="20393-112">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="20393-113">布尔</span><span class="sxs-lookup"><span data-stu-id="20393-113">Boolean</span></span>                                                     | <span data-ttu-id="20393-114">从默认的音频组中删除自参与者。</span><span class="sxs-lookup"><span data-stu-id="20393-114">Remove self participant from default audio group.</span></span> |
+| <span data-ttu-id="1b2ba-110">preFetchMedia</span><span class="sxs-lookup"><span data-stu-id="1b2ba-110">preFetchMedia</span></span>               | <span data-ttu-id="1b2ba-111">[mediaInfo](mediainfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="1b2ba-111">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="1b2ba-112">预回迁的介质列表。</span><span class="sxs-lookup"><span data-stu-id="1b2ba-112">The list of media to pre-fetch.</span></span>                   |
+| <span data-ttu-id="1b2ba-113">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="1b2ba-113">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="1b2ba-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="1b2ba-114">Boolean</span></span>                                                     | <span data-ttu-id="1b2ba-115">从默认的音频组中删除自参与者。</span><span class="sxs-lookup"><span data-stu-id="1b2ba-115">Remove self participant from default audio group.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="20393-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="20393-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1b2ba-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1b2ba-116">JSON representation</span></span>
 
-<span data-ttu-id="20393-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="20393-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1b2ba-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1b2ba-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
