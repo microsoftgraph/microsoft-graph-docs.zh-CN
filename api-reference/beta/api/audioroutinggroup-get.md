@@ -1,61 +1,61 @@
 ---
 title: 获取音频路由组
 description: 检索 audioRoutingGroup 对象的属性和关系。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 316447ce183e47d187af5948af300ead83377e64
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 0a93108e557804a4d6c1ad5b1da608a51cbc7d07
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006380"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911774"
 ---
-# <a name="get-audio-routing-group"></a><span data-ttu-id="ca4e7-103">获取音频路由组</span><span class="sxs-lookup"><span data-stu-id="ca4e7-103">Get audio routing group</span></span>
+# <a name="get-audio-routing-group"></a><span data-ttu-id="14dce-103">获取音频路由组</span><span class="sxs-lookup"><span data-stu-id="14dce-103">Get audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ca4e7-104">检索[audioRoutingGroup](../resources/audioroutinggroup.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-104">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="14dce-104">检索[audioRoutingGroup](../resources/audioroutinggroup.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="14dce-104">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ca4e7-105">Permissions</span><span class="sxs-lookup"><span data-stu-id="ca4e7-105">Permissions</span></span>
-<span data-ttu-id="ca4e7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="14dce-105">权限</span><span class="sxs-lookup"><span data-stu-id="14dce-105">Permissions</span></span>
+<span data-ttu-id="14dce-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="14dce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ca4e7-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ca4e7-108">Permission type</span></span>                        | <span data-ttu-id="ca4e7-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ca4e7-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="14dce-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="14dce-108">Permission type</span></span>                        | <span data-ttu-id="14dce-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="14dce-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ca4e7-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ca4e7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ca4e7-111">不支持</span><span class="sxs-lookup"><span data-stu-id="ca4e7-111">Not Supported</span></span>                               |
-| <span data-ttu-id="ca4e7-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ca4e7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca4e7-113">不支持</span><span class="sxs-lookup"><span data-stu-id="ca4e7-113">Not Supported</span></span>                               |
-| <span data-ttu-id="ca4e7-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ca4e7-114">Application</span></span>                            | <span data-ttu-id="ca4e7-115">JoinGroupCalls、InitiateGroupCalls 和所有调用</span><span class="sxs-lookup"><span data-stu-id="ca4e7-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="14dce-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="14dce-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="14dce-111">不支持</span><span class="sxs-lookup"><span data-stu-id="14dce-111">Not Supported</span></span>                               |
+| <span data-ttu-id="14dce-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="14dce-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14dce-113">不支持</span><span class="sxs-lookup"><span data-stu-id="14dce-113">Not Supported</span></span>                               |
+| <span data-ttu-id="14dce-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="14dce-114">Application</span></span>                            | <span data-ttu-id="14dce-115">JoinGroupCalls、InitiateGroupCalls 和所有调用</span><span class="sxs-lookup"><span data-stu-id="14dce-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ca4e7-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ca4e7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14dce-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="14dce-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
 GET /communications/calls/{id}/audioRoutingGroups/{id}
 ```
-> <span data-ttu-id="ca4e7-117">**注意：**`/app`路径已被弃用。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-117">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="ca4e7-118">接下来，请使用`/communications`路径。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-118">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="14dce-117">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="14dce-117">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="14dce-118">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="14dce-118">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ca4e7-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ca4e7-119">Optional query parameters</span></span>
-<span data-ttu-id="ca4e7-120">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="14dce-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="14dce-119">Optional query parameters</span></span>
+<span data-ttu-id="14dce-120">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="14dce-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ca4e7-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="ca4e7-121">Request headers</span></span>
-| <span data-ttu-id="ca4e7-122">名称</span><span class="sxs-lookup"><span data-stu-id="ca4e7-122">Name</span></span>          | <span data-ttu-id="ca4e7-123">说明</span><span class="sxs-lookup"><span data-stu-id="ca4e7-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="14dce-121">请求头</span><span class="sxs-lookup"><span data-stu-id="14dce-121">Request headers</span></span>
+| <span data-ttu-id="14dce-122">名称</span><span class="sxs-lookup"><span data-stu-id="14dce-122">Name</span></span>          | <span data-ttu-id="14dce-123">说明</span><span class="sxs-lookup"><span data-stu-id="14dce-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="ca4e7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ca4e7-124">Authorization</span></span> | <span data-ttu-id="ca4e7-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="14dce-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="14dce-124">Authorization</span></span> | <span data-ttu-id="14dce-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="14dce-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ca4e7-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ca4e7-127">Request body</span></span>
-<span data-ttu-id="ca4e7-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="14dce-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="14dce-127">Request body</span></span>
+<span data-ttu-id="14dce-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="14dce-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca4e7-129">响应</span><span class="sxs-lookup"><span data-stu-id="ca4e7-129">Response</span></span>
-<span data-ttu-id="ca4e7-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="14dce-129">响应</span><span class="sxs-lookup"><span data-stu-id="14dce-129">Response</span></span>
+<span data-ttu-id="14dce-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="14dce-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca4e7-131">示例</span><span class="sxs-lookup"><span data-stu-id="ca4e7-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="14dce-131">示例</span><span class="sxs-lookup"><span data-stu-id="14dce-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ca4e7-132">请求</span><span class="sxs-lookup"><span data-stu-id="ca4e7-132">Request</span></span>
-<span data-ttu-id="ca4e7-133">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-133">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="14dce-132">请求</span><span class="sxs-lookup"><span data-stu-id="14dce-132">Request</span></span>
+<span data-ttu-id="14dce-133">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="14dce-133">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ca4e7-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ca4e7-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="14dce-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="14dce-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-audioRoutingGroup"
@@ -63,24 +63,24 @@ GET /communications/calls/{id}/audioRoutingGroups/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ca4e7-135">C#</span><span class="sxs-lookup"><span data-stu-id="ca4e7-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="14dce-135">C#</span><span class="sxs-lookup"><span data-stu-id="14dce-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ca4e7-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ca4e7-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14dce-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14dce-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ca4e7-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ca4e7-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14dce-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="14dce-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ca4e7-138">响应</span><span class="sxs-lookup"><span data-stu-id="ca4e7-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="14dce-138">响应</span><span class="sxs-lookup"><span data-stu-id="14dce-138">Response</span></span>
 
-> <span data-ttu-id="ca4e7-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ca4e7-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="14dce-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="14dce-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
