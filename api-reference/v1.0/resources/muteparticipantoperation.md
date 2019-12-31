@@ -1,16 +1,16 @@
 ---
 title: MuteParticipantOperation 资源类型
 description: 描述呼叫参与者静音操作的响应格式。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 016fc70bf6422ecf255a15991e1d749e3b2dcce0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 291af6799d744fc717f15dcbdcddcbdc98518d34
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865773"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913210"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>MuteParticipantOperation 资源类型
 

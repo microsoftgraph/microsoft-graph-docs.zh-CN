@@ -1,16 +1,16 @@
 ---
 title: SubscribeToToneOperation 资源类型
 description: 描述用于接收 DTMF 声音的订阅的创建响应格式。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e1251e4d62c9c1fb7f4806f6a0ec1e0ea0bf13a8
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6d1e42d375dd53fcb71ae049622c59d2d31b3406
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865759"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913539"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>SubscribeToToneOperation 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 onlineMeeting
 description: 代表请求正文中指定的用户创建联机会议。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a4c044dccf07a20cf697912fc0e135ea5951fca1
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2a5cf7961795dc4f41a8258c5121c584d5cd921d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865862"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913609"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 

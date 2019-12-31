@@ -1,16 +1,16 @@
 ---
 title: 参与者：邀请
 description: 邀请参与者加入活动呼叫。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72889e4e6071e8b9a6386ebe892e8d65c30bbf3f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 421bc523c8d2a1cc9dd48477277ad609d0f9573f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865812"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913427"
 ---
 # <a name="participant-invite"></a>参与者：邀请
 
@@ -27,7 +27,7 @@ ms.locfileid: "40865812"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | InitiateGroupCalls                               |
+| 应用     | InitiateGroupCalls                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

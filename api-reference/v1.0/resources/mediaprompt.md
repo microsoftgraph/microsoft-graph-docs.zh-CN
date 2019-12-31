@@ -1,16 +1,16 @@
 ---
 title: mediaPrompt 资源类型
 description: 此资源类型包含有关要播放的音频文件和其他其他设置的信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f981559ce5bac9bb597e49ff1b9d31e48413454b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0ef83d9645ac4277893ff8c769ecb6e092e3e84d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871074"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913196"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 参与者资源类型
 description: 参与者类型。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f20bd68cbd4669c002edb37c2ab5fb0a7340dba4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3f9e861cc5427243b18ff920facab7544d6315ad
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865772"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913735"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: commsNotifications 资源类型
 description: 通信服务器用于在一个批处理中发送多个通知的通知列表。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4c41a8657ebc144a7247a5e40984866c71d66154
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b5cbd2e2e2875a3e2ab207925a11fa258ad117f2
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871080"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913238"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
 

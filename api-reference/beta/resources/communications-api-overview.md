@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 通信 API
 description: Microsoft Graph 通信 API 通过启用语音和视频功能，为应用和服务与用户的互动方式添加了新的维度。
-author: VinodRavichandran
+author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: dbad2e21d5e3dbdae37ab30b02d2a96970722040
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7bbe0ba0387ebbbb6669d463dba7073f571efbf9
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870342"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913336"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 

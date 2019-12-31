@@ -1,16 +1,16 @@
 ---
 title: serviceHostedMediaConfig 资源类型
 description: ServiceHostedMediaConfig 类型。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 590eef4c572695188e609133f5bc852fd90c51f7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 35d5754071aa388e300042b9977fd759a38a6b74
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865765"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912949"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: inviteParticipantsOperation 资源类型
 description: 表示长时间运行的参与者邀请操作的状态，通过调用参与者-邀请 API 触发。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d0198ae992dc3e741c2962ed4e2c9534f5a76757
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c49876cbb56e3630e357ad54a57682958151a9f7
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865780"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913714"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>inviteParticipantsOperation 资源类型
 

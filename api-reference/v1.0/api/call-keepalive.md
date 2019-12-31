@@ -1,16 +1,16 @@
 ---
 title: call： keepAlive
 description: 每15至45分钟向此 API 发出一次请求，以确保正在进行的呼叫保持活动状态。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 32de1b3a24c6b37640376cdf7b60289ced5f90f3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c3d5f6affe86cdcffe84f4bb261a84221c3dcd52
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865856"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913378"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 

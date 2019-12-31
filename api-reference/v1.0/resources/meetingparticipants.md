@@ -1,16 +1,16 @@
 ---
 title: meetingParticipants 资源类型
 description: 会议中的参与者。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ce312f3dab1151c18389e6b88a848bb2b700472c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3bcce64ab900dae7c7f13d7da0c3d34d164fd35d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871070"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913518"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "40871070"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md)集合 |  |
-| 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| organizer － 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

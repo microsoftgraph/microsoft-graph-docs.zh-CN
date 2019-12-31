@@ -1,16 +1,16 @@
 ---
 title: chatInfo 资源类型
 description: 有关 Microsoft 团队中的邮件的信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b7cd56e21997daf4b88f25acc570f5c062959fa2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: de48737299a940db545e46daabd129ee7443c60a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871081"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913252"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 

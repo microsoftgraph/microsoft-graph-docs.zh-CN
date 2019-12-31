@@ -1,20 +1,20 @@
 ---
 title: 调用： recordResponse
-description: 记录来自呼叫者的简短音频响应。 如果 bot 希望在出现提示后从呼叫者处捕获语音响应，这将非常有用。
-author: VinodRavichandran
+description: 录制来自呼叫方的简短音频回复。 如果 bot 希望在出现提示后从呼叫者处捕获语音响应，这将非常有用。
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 29fd70983ab72f1499be0e980c955fac39e5941b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 530cab8a11344959df32f7acc41bb706162ccab1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865845"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913259"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
-记录来自呼叫者的简短音频响应。
+录制来自呼叫方的简短音频回复。
 在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。
 
 有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsOperation.md)

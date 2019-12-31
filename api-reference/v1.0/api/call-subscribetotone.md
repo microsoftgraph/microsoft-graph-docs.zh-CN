@@ -1,16 +1,16 @@
 ---
 title: 调用： subscribeToTone
 description: 订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 67f77d3413b53d2f26bb60be934a188239bd8234
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6a79f3f5395261bf3ceb5ab9d9dd55666b394bce
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871098"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913693"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 

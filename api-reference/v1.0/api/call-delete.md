@@ -1,16 +1,16 @@
 ---
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: def11fd1f30cbba8a1bef7f85821d7901dc7f379
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 708ff1466b86be842e751c3a79cf17dbf1ad64bd
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871123"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913602"
 ---
 # <a name="delete-call"></a>删除呼叫
 

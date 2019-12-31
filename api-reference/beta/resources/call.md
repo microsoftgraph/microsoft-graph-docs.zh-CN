@@ -1,16 +1,16 @@
 ---
 title: call 资源类型
 description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 27dd2a866bf7fdf9df44060276bb3256f22be02a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7b151edb116fbdd0d3d7be7506ca6e3f3790bd47
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870363"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913329"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 

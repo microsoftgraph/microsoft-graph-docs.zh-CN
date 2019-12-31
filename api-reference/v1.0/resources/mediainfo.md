@@ -1,16 +1,16 @@
 ---
 title: mediaInfo 资源类型
 description: 在提示操作中使用的媒体信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9d9b8f4709d3379afda8e30fec2b7db64a474a0e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 20134131dba64ad48effa1c95e5d81ab81102805
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865779"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913203"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 

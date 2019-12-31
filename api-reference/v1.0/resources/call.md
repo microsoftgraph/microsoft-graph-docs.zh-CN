@@ -1,16 +1,16 @@
 ---
 title: call 资源类型
 description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c2745f0a4c30dde99eac465cb2043de2d493cb02
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f97360875af2241df3d78108d9c7447bfa6b6975
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871089"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913469"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -29,14 +29,14 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhL
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                                                 | 说明                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | 读取 **call** 对象的属性。                                         |
 | [删除](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动**呼叫**。                                           |
 | [KeepAlive](../api/call-keepalive.md)                             | 无                                                  | 确保通话不中断。
-| **Call Handling**                                                  |                                                        |                                                                                 |
+| **呼叫处理**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | 无                                                            | 应答传入呼叫。                                                        |
 | [Reject](../api/call-reject.md)                                    | 无                                                            | 拒绝传入呼叫。                                                        |
 | [重定向](../api/call-redirect.md)                                | 无                                                            | 重定向传入呼叫。                                                      |

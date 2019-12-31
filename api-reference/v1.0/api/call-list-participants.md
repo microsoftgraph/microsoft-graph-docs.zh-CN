@@ -1,16 +1,16 @@
 ---
 title: 列出参与者
 description: 在呼叫中检索参与者对象的列表。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 26ff72167cf783eb96ab4c7ec258172581134172
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 94f7ebd36cbbabd6ab9bc41e32124c72da8d16c8
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871115"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913595"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -36,7 +36,7 @@ GET /communications/calls/{id}/participants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|

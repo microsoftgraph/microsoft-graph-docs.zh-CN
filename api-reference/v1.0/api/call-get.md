@@ -1,16 +1,16 @@
 ---
 title: 获取呼叫
 description: 检索 call 对象的属性和关系。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 219f80aa9bafcd5b5da30c3d03ef6c9c258fc598
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 62233a3c0a6d05d3dd8607129502930be376c090
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871118"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913560"
 ---
 # <a name="get-call"></a>获取呼叫
 
@@ -34,7 +34,7 @@ GET /communications/calls/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
