@@ -1,16 +1,16 @@
 ---
 title: 获取状态
 description: 获取用户的状态信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: fa059a7399762444d73a13305b5bec722830a1c0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cdb211e85f3e995801bb7583a8aa043cb2d6a133
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867690"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913084"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -25,7 +25,7 @@ ms.locfileid: "40867690"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 不支持。                                  |
+| 应用                            | 不支持。                                  |
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

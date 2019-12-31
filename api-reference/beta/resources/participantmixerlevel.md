@@ -1,16 +1,16 @@
 ---
 title: participantMixerLevel 资源类型
 description: 给定音频参与者的混音器级别配置
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cc305274d619a3686d4d391516947f1d06b92745
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 7cf7ba49c21dfecdc867577975952d380378927c
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006583"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913574"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 

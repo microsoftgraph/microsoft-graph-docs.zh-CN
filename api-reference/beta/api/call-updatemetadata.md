@@ -1,16 +1,16 @@
 ---
 title: 调用： updateMetadata
 description: 更新与调用相关联的 appliation 的元数据。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e681ebf65ebed550d4180788eb5d534723981463
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: b4d4b0fc986952f7bcfdbaff09aee60609337da1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636685"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912795"
 ---
 # <a name="call-updatemetadata"></a>调用： updateMetadata
 
@@ -18,7 +18,7 @@ ms.locfileid: "39636685"
 
 更新与调用相关联的 appliation 的元数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |

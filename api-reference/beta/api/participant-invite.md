@@ -1,16 +1,16 @@
 ---
 title: 参与者：邀请
 description: 邀请参与者加入活动呼叫。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c95bf23ca3e96f7ba8950e816117866456b64d2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: d6bd74f8bf1a7b8eb410f84a6a05040ae65166f3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302992"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913112"
 ---
 # <a name="participant-invite"></a>参与者：邀请
 
@@ -29,7 +29,7 @@ ms.locfileid: "38302992"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | InitiateGroupCalls                               |
+| 应用     | InitiateGroupCalls                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,8 +50,8 @@ POST /communications/calls/{id}/participants/invite
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 要邀请的参与者。|
-|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合| 要邀请的参与者。|
+|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 如果 succsessful，此方法将返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)的 URI。 响应正文包含创建的[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。

@@ -1,16 +1,16 @@
 ---
 title: mediaConfig 资源类型
 description: 包含用于连接到呼叫的媒体配置的抽象基类。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f47ac0986107af16640208d64190da6138805d5
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 61fe1dfcc4c2c9b686a61d22e55ddae3c80661be
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866712"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913301"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 

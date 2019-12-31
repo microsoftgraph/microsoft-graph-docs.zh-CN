@@ -1,16 +1,16 @@
 ---
 title: 呼叫：应答
 description: 应答传入呼叫。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ab0380bca750f53e4f89c32c072843fd53849675
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 723c9fff75e3e25d29468faf3bfbdf5cc2db064b
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868287"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912781"
 ---
 # <a name="call-answer"></a>呼叫：应答
 

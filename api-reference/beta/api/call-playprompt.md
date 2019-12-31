@@ -1,16 +1,16 @@
 ---
 title: 调用： playPrompt
 description: 在呼叫中播放提示。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c62afeac5870d288c546aa3761b60a270d85219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6b3d7c8ee072ac347ec25b2ac0edebdb80a2a92d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868266"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912830"
 ---
 # <a name="call-playprompt"></a>调用： playPrompt
 

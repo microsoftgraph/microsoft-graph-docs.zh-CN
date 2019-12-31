@@ -1,16 +1,16 @@
 ---
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3daec6791d183ee2443d6af694b6dd6c39470155
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 227a4cbb3b0056e06fa5abc96fcf6604352fb1de
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006345"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912892"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006345"
 
 删除或挂断活动呼叫。 对于组呼叫，这只会删除您的呼叫线路，基础组呼叫仍将继续进行。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
@@ -32,7 +32,7 @@ ms.locfileid: "38006345"
 DELETE /app/calls/{id}
 DELETE /communications/calls/{id}
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |

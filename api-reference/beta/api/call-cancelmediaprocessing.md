@@ -1,16 +1,16 @@
 ---
 title: 调用： cancelMediaProcessing
 description: 取消对任何正在进行的 PlayPrompt 或 RecordResponse 操作的媒体处理。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf5b6da2bf657fb999a5c9e4df06e1a8841b7942
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a11b42affaa2cc4c21dd50e2d2474f3e2ffa77d1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868280"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912918"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 

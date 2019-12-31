@@ -1,16 +1,16 @@
 ---
 title: 调用： changeScreenSharingRole
 description: 允许应用程序与组呼叫的参与者共享屏幕内容。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d670e2b1be4450b33e57ca0834aecd1f6427603d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 333a9a2ebb6fa5b3c43ccee47f0256ef5ba6dee3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006352"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912767"
 ---
 # <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
 
@@ -20,7 +20,7 @@ ms.locfileid: "38006352"
 
 > **注意：** 只有使用应用程序托管媒体的组调用才支持这种情况。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -35,7 +35,7 @@ ms.locfileid: "38006352"
 POST /app/calls/{id}/changeScreenSharingRole
 POST /communications/calls/{id}/changeScreenSharingRole
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |

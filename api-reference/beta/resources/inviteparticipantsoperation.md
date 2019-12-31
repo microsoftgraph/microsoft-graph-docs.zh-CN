@@ -1,16 +1,16 @@
 ---
 title: inviteParticipantsOperation 资源类型
 description: 表示长时间运行的参与者邀请操作的状态，通过调用参与者-邀请 API 触发。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5802f5a8a63c971007cb6cda11f16823e6140298
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 1f0d53b9e0921b7d53df1499964ddfe84eaf7df7
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006681"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913448"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>inviteParticipantsOperation 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "38006681"
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 适用                  | String                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 id。只读。                                                                                              |
-| participants | [invitationParticipantInfo](invitationParticipantInfo.md)集合 | 要邀请的参与者。 |
+| participants | [invitationParticipantInfo](invitationParticipantInfo.md) 集合 | 要邀请的参与者。 |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                             |
 | 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
 

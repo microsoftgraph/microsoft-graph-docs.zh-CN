@@ -1,16 +1,16 @@
 ---
 title: meetingInfo 资源类型
 description: 指定用于创建或加入会议的会议信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ef9c2b86c9eb745ae6282a5d3cbce8a76dc31139
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: b6ed682e063ce1f9b2d780a547a8de1856c6dbd0
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006639"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913392"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 

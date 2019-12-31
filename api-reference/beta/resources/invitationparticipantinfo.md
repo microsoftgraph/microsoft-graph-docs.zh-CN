@@ -1,16 +1,16 @@
 ---
 title: invitationParticipantInfo 资源类型
 description: 表示受邀加入组呼叫的实体。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bddce0358bfa0ec46d8231958817002cb4ca8c20
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7250f51b39d1e046b06eb94e1cd8e01ec5fd6bfe
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870220"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913532"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 

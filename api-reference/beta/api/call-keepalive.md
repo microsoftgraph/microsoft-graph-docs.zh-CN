@@ -1,16 +1,16 @@
 ---
 title: call： keepAlive
 description: 每15至45分钟向此 API 发出一次请求，以确保正在进行的呼叫仍处于活动状态。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 50eec71f674f9f2dfaef1e405b7261c47199f5e6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7dd3e803fd86eb874cc742bdffffa4dab8a7ebfe
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871755"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912861"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
@@ -54,6 +54,8 @@ POST /communications/calls/{id}/keepAlive
 ### <a name="request"></a>请求
 请求示例如下所示。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "keep-alive"
@@ -62,6 +64,20 @@ POST /communications/calls/{id}/keepAlive
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab/keepAlive
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/keep-alive-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/keep-alive-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/keep-alive-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 以下示例显示了相应的响应。

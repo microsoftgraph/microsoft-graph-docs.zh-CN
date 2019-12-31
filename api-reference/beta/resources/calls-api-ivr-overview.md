@@ -1,16 +1,16 @@
 ---
 title: 调用中的 IVR 方案
 description: 以下是 Microsoft Graph 中的调用 Api 支持的交互语音响应（IVR）方案：
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ebb278981ef066aae409d3cc276046a04f79806
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 561f0097eae74ca3f5d36fc18ec62aef8bcca3d6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870930"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913504"
 ---
 # <a name="ivr-scenarios-in-calls"></a>调用中的 IVR 方案
 

@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting 资源类型
 description: 包含有关会议的信息，包括联接 URL、与会者列表和说明。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: e7cae71f220a2a519908e3af890029a2da555577
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5d86df3bde56e242559e224cc27921d162be7bf4
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866684"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913413"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "40866684"
 ### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
 | 值 | 说明  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认  |
+| organizer － 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认  |
 | invitedUsersInCompany | 会议组织者和组织者邀请的同一家公司中的用户直接加入会议。  其他人在大厅等待，直到被许可。  |
 | everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。  联合匿名用户在大厅等待，直到被许可。  |
 | everyoneInSameAndFederatedCompany |  与组织者和联合公司在同一公司中的所有人都直接加入会议。  匿名用户在大厅等待，直到被许可。  |

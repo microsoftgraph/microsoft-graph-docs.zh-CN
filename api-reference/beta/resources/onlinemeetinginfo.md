@@ -1,31 +1,31 @@
 ---
 title: onlineMeetingInfo 资源类型
-description: 用于联机加入会议的与会者的详细信息。
+description: 关于与会者如何加入联机会议的详细信息。
 localization_priority: Normal
-author: VinodRavichandran
+author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7ed8543be8b1d22c797d0033dcd0d41ba6308888
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 52bfe4fd46443c826838153cc2a40ea57712182b
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939388"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913154"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>onlineMeetingInfo 资源类型
 
-用于联机加入会议的与会者的详细信息。
+关于与会者如何加入联机会议的详细信息。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|conferenceId|字符串| 会议的 ID。|
-|joinUrl|字符串| 启动联机会议的外部链接。 这是客户端将启动到浏览器并将重定向用户加入会议的 URL。|
+|conferenceId|String| 会议的 ID。|
+|joinUrl|String| 启动联机会议的外部链接。 这是客户端将启动到浏览器并将重定向用户加入会议的 URL。|
 |phones|[phone](phone.md) collection| 与此会议关联的所有电话号码。|
-|quickDial|字符串| 此调用的预格式化的 quickdial。|
+|quickDial|String| 此调用的预格式化的 quickdial。|
 |tollFreeNumbers|String collection| 可用于加入会议的免费电话号码。|
-|tollNumber|字符串| 可用于加入会议的收费号码。|
+|tollNumber|String| 可用于加入会议的收费号码。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

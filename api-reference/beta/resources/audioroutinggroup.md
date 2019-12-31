@@ -1,16 +1,16 @@
 ---
 title: audioRoutingGroup 资源类型
 description: 音频路由组在多方对话中的参与者之间存储专用音频路由。 源是参与者本身，而接收器是多方对话中的其他参与者的子集。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 827f67239be572bbc2b20b8900ea33b9b0294412
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cb96e83f6c80a3b3c50b37612731272ca329e3cc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006759"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913749"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "38006759"
 
 > **注意：** [ConfigureMixer](../api/participant-configuremixer.md)不涉及任何路由，而是用于设置源接收器组合的音量级别的整个调用。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                  | 返回类型                               | 说明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|

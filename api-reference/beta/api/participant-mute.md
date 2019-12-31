@@ -1,16 +1,16 @@
 ---
 title: 参与者：静音
 description: 将呼叫中的特定参与者静音。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1c720ce79b4c31b2895e6d953ab0e36cbb2450be
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7d8dd61b4179fc488a34b405128e9f0f755cf037
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869323"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913105"
 ---
 # <a name="participant-mute"></a>参与者：静音
 

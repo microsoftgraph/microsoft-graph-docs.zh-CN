@@ -1,16 +1,16 @@
 ---
 title: 呼叫：静音
 description: 允许应用程序将其本身设为静音。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 246eb11fbcffb8c86c7d50cd186eec9473d6028e
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 6e9a4f10924292eb48145846efa5352f19f2ca54
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747586"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912753"
 ---
 # <a name="call-mute"></a>呼叫：静音
 

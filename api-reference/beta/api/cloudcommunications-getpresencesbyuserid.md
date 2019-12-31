@@ -1,16 +1,16 @@
 ---
 title: 'cloudCommunications: getPresencesByUserId'
 description: 获取多个用户的状态信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 256fdbbe86eb667fa06ca411aad050bf5e8013dc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868096"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912725"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -25,7 +25,7 @@ ms.locfileid: "40868096"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | Presence.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 不支持。                                  |
+| 应用                            | 不支持。                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

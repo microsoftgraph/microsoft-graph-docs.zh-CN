@@ -1,16 +1,16 @@
 ---
 title: 呼叫：取消静音
 description: 允许应用程序自行取消静音。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: de47162a9a2c3b4baf31f8b3b11f50100730d3b9
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: c13d3811678b7dc6f3b0f38eb0aaf98727c8b6bc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747579"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912739"
 ---
 # <a name="call-unmute"></a>呼叫：取消静音
 

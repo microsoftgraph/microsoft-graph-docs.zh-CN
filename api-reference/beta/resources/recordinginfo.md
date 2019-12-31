@@ -1,16 +1,16 @@
 ---
 title: recordingInfo 资源类型
 description: 记录参与者的信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d9e9a17a9afb197333e677547f3fa5dca22df9b2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: e924ea98bb0f9ac8e0b610a4672cbed83d83d0bc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637043"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913441"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 

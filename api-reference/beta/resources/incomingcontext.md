@@ -1,22 +1,22 @@
 ---
 title: incomingContext 资源类型
-description: 与传入呼叫相关联的上下文。
-author: VinodRavichandran
+description: 与来电相关的上下文。
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0afe972be631a2048b2a1970b1fda41e8cb72920
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 4ade91c621dabdb7867ff5a4586276265d73ca81
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636895"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913525"
 ---
 # <a name="incomingcontext-resource-type"></a>incomingContext 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-与传入呼叫相关联的上下文。
+与来电相关的上下文。
 
 ## <a name="properties"></a>属性
 

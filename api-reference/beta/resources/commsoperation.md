@@ -1,16 +1,16 @@
 ---
 title: commsOperation 资源类型
 description: 某个长时间运行的操作的状态。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 07be6f3b5cf9e3d5e7a1a1300a94da9b5204a68a
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: f0b10fc1871f4991f339ff643f450dbfefa3b85c
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006696"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913343"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: tokenMeetingInfo 资源类型
 description: TokenMeetingInfo 类型。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d5bb992d61ad34723266523d813fcd8e4e0f8e79
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 2c22ac4fceda8e1ce801ee17f132b8dd888d230a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006527"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913056"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 

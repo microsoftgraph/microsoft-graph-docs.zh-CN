@@ -1,16 +1,16 @@
 ---
 title: 参与者： configureMixer
 description: 为多方对话中的不同参与者配置音频的混合方式。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f1a7650ea3195cdb28af6d49a71983129e0e322a
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: d1aa61efeafe26dde904787bf723c8352594c424
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636832"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913126"
 ---
 # <a name="participant-configuremixer"></a>参与者： configureMixer
 
@@ -18,7 +18,7 @@ ms.locfileid: "39636832"
 
 为多方对话中的不同参与者配置音频的混合方式。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |

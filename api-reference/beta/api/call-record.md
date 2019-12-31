@@ -1,16 +1,16 @@
 ---
 title: 调用： recordResponse
 description: 记录来自呼叫者的简短音频响应。 如果 bot 希望在发出提示后从呼叫者处捕获语音响应，这将非常有用。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fac72a4f0436980fd143d9a9011a6bd73c2c3c76
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0e3aab1564d6007924d696a8d07a86c5cc4854b0
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868259"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912838"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
@@ -109,7 +109,7 @@ Content-Length: 394
 }
 ```
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

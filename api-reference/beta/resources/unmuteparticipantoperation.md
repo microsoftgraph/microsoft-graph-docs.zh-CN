@@ -1,16 +1,16 @@
 ---
 title: unmuteParticipantOperation 资源类型
 description: 描述呼叫参与者取消静音操作的响应格式。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d3c843ffcf46d8816f4ad3853d42cb5d0fa34422
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 5c8f5b0fee2b0c9c3319feff856d18c49b95509a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748046"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913287"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>unmuteParticipantOperation 资源类型
 

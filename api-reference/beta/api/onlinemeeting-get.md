@@ -1,16 +1,16 @@
 ---
 title: 获取 onlineMeeting
 description: 检索**联机会议**对象的属性和关系。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 42906632b4a8161966a04473fe7492049484d620
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 649c6d658206f684efde8d5bc82b26e7d0ef6216
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869400"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913091"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -28,7 +28,7 @@ ms.locfileid: "40869400"
 |:---------------------------------------|:------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                                        |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All                               |
+| 应用                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |

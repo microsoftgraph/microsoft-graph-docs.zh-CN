@@ -1,16 +1,16 @@
 ---
 title: resultInfo 资源类型
 description: 包含成功和失败的特定结果信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5cb59cb63ff7c50ba14b972991d54806eabc4f54
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 43a7dba5d758f8884285e7238e4e4fab0763409f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866628"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913721"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 

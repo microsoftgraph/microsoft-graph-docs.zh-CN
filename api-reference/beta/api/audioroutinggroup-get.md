@@ -1,16 +1,16 @@
 ---
 title: 获取音频路由组
 description: 检索 audioRoutingGroup 对象的属性和关系。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 316447ce183e47d187af5948af300ead83377e64
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 0a93108e557804a4d6c1ad5b1da608a51cbc7d07
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006380"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911774"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006380"
 
 检索[audioRoutingGroup](../resources/audioroutinggroup.md)对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -33,12 +33,12 @@ ms.locfileid: "38006380"
 GET /app/calls/{id}/audioRoutingGroups/{id}
 GET /communications/calls/{id}/audioRoutingGroups/{id}
 ```
-> **注意：**`/app`路径已被弃用。 接下来，请使用`/communications`路径。
+> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |

@@ -1,16 +1,16 @@
 ---
 title: mediaStream 资源类型
 description: 包含媒体通道的相关信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: de5c90453d9adb657c2df5ee761d847056664037
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0274cdb1c35307e91e31c0b357ecf9a16e2d3f19
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870178"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913077"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 参与者： muteAll
 description: 将呼叫中的所有参与者设为静音。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b1e4555c77a843cfccd420ef0c17a09dba20a383
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 2ccf39562f3fe2e9ad3755388aa37e9264b7a486
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636823"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913098"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -21,7 +21,7 @@ ms.locfileid: "39636823"
 > **注意：** 此 API 已弃用，将在2020年3月15日之前删除。 若要使单个参与者静音，请参阅[参与者：静音](participant-mute.md)。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |

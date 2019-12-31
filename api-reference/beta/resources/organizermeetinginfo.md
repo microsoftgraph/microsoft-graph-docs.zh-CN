@@ -1,16 +1,16 @@
 ---
 title: organizerMeetingInfo 资源类型
 description: '包含有关会议组织者的详细信息。 '
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cdb23ebfe16822e4caa4374fbc8e21697533c7cc
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 3f011870422abb255c895b389a959554cd44ddfa
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006604"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913511"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "38006604"
 
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
+| organizer － 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

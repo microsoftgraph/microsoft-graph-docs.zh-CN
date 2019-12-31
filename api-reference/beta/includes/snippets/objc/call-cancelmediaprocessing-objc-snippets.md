@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a9b653e500ac84dff4db8f75368a427bfe5f56d1
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: af4b49aaacb51a29b210fea064d7eda6afdd2c8a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302864"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912919"
 ---
 ```objc
 
@@ -17,9 +17,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
-
-BOOL all = YES;
-payloadDictionary[@"all"] = all;
 
 NSString *clientContext = @"clientContext-value";
 payloadDictionary[@"clientContext"] = clientContext;

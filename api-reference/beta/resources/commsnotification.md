@@ -1,16 +1,16 @@
 ---
 title: commsNotification 资源类型
 description: 通信服务器发布的用于通知更改的通信通知基类型。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1752bbe46ee7795bd71df2089dadf6a975ccae26
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 05a800d4732ae54dd6c8b1ce76074b64625b9c16
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870923"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913357"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 

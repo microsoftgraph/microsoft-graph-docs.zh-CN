@@ -1,16 +1,16 @@
 ---
 title: noMediaConfig 资源类型
 description: 用于指示无媒体的媒体配置。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 97d2ac01b434e211eb8836f04343ef65b9f0ea1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e916c0498a3a8fffd09dd4b86d7b7ec3ab4b9a08
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966662"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913672"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 

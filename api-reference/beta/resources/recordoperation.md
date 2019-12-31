@@ -1,16 +1,16 @@
 ---
 title: recordOperation 资源类型
 description: 包含与音频录音相关的信息。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 837540c55bb6573828efe87ee0c7ae333335ea11
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: aece896ffba60ca6b42a05569406a0646748039d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870136"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912942"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
