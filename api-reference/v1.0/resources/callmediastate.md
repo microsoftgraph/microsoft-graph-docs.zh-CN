@@ -1,31 +1,31 @@
 ---
 title: callMediaState 资源类型
 description: 表示呼叫的媒体状态。
-author: VinodRavichandran
+author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 01e2e8017d89ddf96997d1d5bef729f9e9dc439d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871082"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913462"
 ---
-# <a name="callmediastate-resource-type"></a><span data-ttu-id="440c5-103">callMediaState 资源类型</span><span class="sxs-lookup"><span data-stu-id="440c5-103">callMediaState resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="068af-103">callMediaState 资源类型</span><span class="sxs-lookup"><span data-stu-id="068af-103">callMediaState resource type</span></span>
 
 
-<span data-ttu-id="440c5-104">表示[呼叫](call.md)的媒体状态。</span><span class="sxs-lookup"><span data-stu-id="440c5-104">Represents the media state for a [call](call.md).</span></span>
+<span data-ttu-id="068af-104">表示[呼叫](call.md)的媒体状态。</span><span class="sxs-lookup"><span data-stu-id="068af-104">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="440c5-105">属性</span><span class="sxs-lookup"><span data-stu-id="440c5-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="068af-105">属性</span><span class="sxs-lookup"><span data-stu-id="068af-105">Properties</span></span>
 
-| <span data-ttu-id="440c5-106">属性</span><span class="sxs-lookup"><span data-stu-id="440c5-106">Property</span></span>            | <span data-ttu-id="440c5-107">类型</span><span class="sxs-lookup"><span data-stu-id="440c5-107">Type</span></span>    | <span data-ttu-id="440c5-108">说明</span><span class="sxs-lookup"><span data-stu-id="440c5-108">Description</span></span>                                                                    |
+| <span data-ttu-id="068af-106">属性</span><span class="sxs-lookup"><span data-stu-id="068af-106">Property</span></span>            | <span data-ttu-id="068af-107">类型</span><span class="sxs-lookup"><span data-stu-id="068af-107">Type</span></span>    | <span data-ttu-id="068af-108">说明</span><span class="sxs-lookup"><span data-stu-id="068af-108">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="440c5-109">audio</span><span class="sxs-lookup"><span data-stu-id="440c5-109">audio</span></span>           | <span data-ttu-id="440c5-110">String</span><span class="sxs-lookup"><span data-stu-id="440c5-110">String</span></span>  | <span data-ttu-id="440c5-111">音频媒体状态。</span><span class="sxs-lookup"><span data-stu-id="440c5-111">The audio media state.</span></span> <span data-ttu-id="440c5-112">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="440c5-112">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="068af-109">audio</span><span class="sxs-lookup"><span data-stu-id="068af-109">audio</span></span>           | <span data-ttu-id="068af-110">String</span><span class="sxs-lookup"><span data-stu-id="068af-110">String</span></span>  | <span data-ttu-id="068af-111">音频媒体状态。</span><span class="sxs-lookup"><span data-stu-id="068af-111">The audio media state.</span></span> <span data-ttu-id="068af-112">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="068af-112">Possible values are: `active`, `inactive`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="440c5-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="440c5-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="068af-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="068af-113">JSON representation</span></span>
 
-<span data-ttu-id="440c5-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="440c5-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="068af-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="068af-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
