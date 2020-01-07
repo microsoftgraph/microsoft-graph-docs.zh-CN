@@ -309,7 +309,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 备注
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -9007,7 +9007,7 @@
                     - name: 托管的资源
                       href: resources/governanceresource.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/governanceresource-list.md
                         - name: 获取
                           href: api/governanceresource-get.md
@@ -9016,7 +9016,7 @@
                     - name: 角色定义
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/governanceroledefinition-list.md
                         - name: 获取
                           href: api/governanceroledefinition-get.md
@@ -10552,9 +10552,26 @@
                       href: api/schedulinggroup-put.md
                     - name: 删除
                       href: api/schedulinggroup-delete.md
+                - name: 提供班次
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: 创建
+                      href: api/offershiftrequest-post.md
+                    - name: 获取
+                      href: api/offershiftrequest-get.md
+                    - name: 列表
+                      href: api/offershiftrequest-list.md
+                    - name: 批准
+                      href: api/offershiftrequest-approve.md
+                    - name: 拒绝
+                      href: api/offershiftrequest-decline.md
                 - name: 打开班次
                   href: resources/openshift.md
                   items:
+                    - name: 列出
+                      href: api/openshift-list.md
+                    - name: 创建
+                      href: api/openshift-post.md
                     - name: 获取
                       href: api/openshift-get.md
                     - name: 更新
@@ -10564,25 +10581,32 @@
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
                   items:
+                    - name: 列出
+                      href: api/openshiftchangerequest-list.md
+                    - name: 创建
+                      href: api/openshiftchangerequest-post.md
                     - name: 获取
                       href: api/openshiftchangerequest-get.md
-                    - name: 更新
-                      href: api/openshiftchangerequest-update.md
-                    - name: 删除
-                      href: api/openshiftchangerequest-delete.md
                     - name: 批准
                       href: api/openshiftchangerequest-approve.md
                     - name: 拒绝
                       href: api/openshiftchangerequest-decline.md
+                - name: Shift 首选项
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: 获取
+                      href: api/shiftpreferences-get.md
+                    - name: 更新
+                      href: api/shiftpreferences-put.md
                 - name: 交换班次更改请求
                   href: resources/swapshiftschangerequest.md
                   items:
+                    - name: 列出
+                      href: api/swapshiftschangerequest-list.md
+                    - name: 创建
+                      href: api/swapshiftschangerequest-post.md
                     - name: 获取
                       href: api/swapshiftschangerequest-get.md
-                    - name: 更新
-                      href: api/swapshiftschangerequest-update.md
-                    - name: 删除
-                      href: api/swapshiftschangerequest-delete.md
                 - name: 休假
                   href: resources/timeoff.md
                   items:
