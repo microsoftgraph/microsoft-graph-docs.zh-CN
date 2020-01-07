@@ -1,22 +1,22 @@
 ---
 title: onlineMeeting 资源类型
 description: 包含有关会议的信息，包括联接 URL、与会者列表和说明。
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 105c9f3ffa594dd457b40124070aef0dbb96689a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7b82170b606334c6db8fa07c3f9b2f95f16c0082
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871069"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951963"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -26,7 +26,7 @@ ms.locfileid: "40871069"
 
 ## <a name="properties"></a>属性
 
-| 属性                  | 类型                                                   | 说明                                                                                                                |
+| 属性                  | 类型                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | 联机会议的电话访问（拨入）信息。 只读。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
@@ -37,7 +37,7 @@ ms.locfileid: "40871069"
 | joinWebUrl                | String                                                 | 联机会议的加入 URL。 只读。|
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | subject                   | String                                                 | 联机会议的主题。 |
-| videoTeleconferenceId     | String                                                 | Videio 电话会议 ID。 只读。 |
+| videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

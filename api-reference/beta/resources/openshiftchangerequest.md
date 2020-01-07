@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 400444ccccc13d103420cc95c522a6ed0aa1afa6
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 69663b876e98bfe9f5c633890d02a6abd3b72f32
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895625"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951928"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>openShiftChangeRequest 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "39895625"
 
 表示在[计划](../resources/schedule.md)中对[openshift](../resources/openshift.md)进行声明的班次请求的类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | 读取**openShiftChangeRequest**对象的属性和关系。 |
-| [更新](../api/openshiftchangerequest-update.md) | [openShiftChangeRequest](openshiftchangerequest.md) | 更新**openShiftChangeRequest**对象。 |
-| [删除](../api/openshiftchangerequest-delete.md) | None | 删除**openShiftChangeRequest**对象。 |
-|[批准](../api/openshiftchangerequest-approve.md)|None|批准打开的班次更改请求。|
-|[拒绝](../api/openshiftchangerequest-decline.md)|None| 拒绝打开的班次更改请求。|
+| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | 创建 openshiftchangerequest 对象的实例。 |
+| [List](../api/openshiftchangerequest-list.md) | [Openshiftchangerequest](openshiftchangerequest.md)的集合 | 列出团队中的**openShiftChangeRequest**对象的属性和关系。 |
+| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | 读取**openShiftChangeRequest**对象的属性和关系。 |
+|[批准](../api/openshiftchangerequest-approve.md)|无|批准打开的班次更改请求。|
+|[拒绝](../api/openshiftchangerequest-decline.md)|无| 拒绝打开的班次更改请求。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|openShiftId|字符串| 打开的班次的 ID。|
+|openShiftId|String| 打开的班次的 ID。|
 
 ## <a name="relationships"></a>关系
 

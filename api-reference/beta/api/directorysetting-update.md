@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 35005bf047145a44d66777dbc947ef4fb7df5caa
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e37c5b6886b5432395a9d70344d50251f1689ee5
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417166"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951659"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -18,9 +18,9 @@ ms.locfileid: "36417166"
 
 更新特定目录设置对象的属性。
 
-> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*更新 groupSettings*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*更新 groupSettings*。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | 值 | [settingValue](../resources/settingvalue.md)集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 
@@ -56,7 +56,7 @@ PATCH /groups/{id}/settings/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_directorysetting"
@@ -83,7 +83,7 @@ Content-length: 178
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-directorysetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

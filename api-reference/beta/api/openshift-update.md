@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 821ad6579d7e77959263aab91511e71e0352e364
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: aeb686da646a7665cb262761ead92bb182ef12ee
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867787"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951894"
 ---
 # <a name="update-openshift"></a>更新 openShift
 
@@ -18,7 +18,7 @@ ms.locfileid: "40867787"
 
 更新[openShift](../resources/openshift.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "40867787"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{id}/schedule/openShifts
+PUT /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,7 +47,7 @@ PATCH /teams/{id}/schedule/openShifts
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|未发布的打开班次。|
 |schedulingGroupId|String| 计划组 id。 |
@@ -70,17 +70,29 @@ PATCH /teams/{id}/schedule/openShifts
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
 Content-type: application/json
 
 {
-  "sharedOpenShift": {
-    "openSlotCount": 99
-  },
-  "draftOpenShift": {
-    "openSlotCount": 99
-  },
-  "schedulingGroupId": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
+"schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+"sharedOpenShift": {
+"notes": "Inventory Management",
+"openSlotCount":5,
+"displayName": "Field shift",
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T09:50:45.332Z",
+"theme": "white",
+"activities": [
+{
+"isPaid": true,
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T01:58:45.340Z",
+"code": "",
+"displayName": "Lunch"
+}
+]
+},
+"draftOpenShift": null
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -115,13 +127,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
+  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
   "sharedOpenShift": {
-    "openSlotCount": 99
+  "notes": "Inventory Management",
+  "openSlotCount":5,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T09:50:45.332Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T01:58:45.340Z",
+  "code": "",
+  "displayName": "Lunch"
+  }
+  ]
   },
-  "draftOpenShift": {
-    "openSlotCount": 99
-  },
-  "schedulingGroupId": "schedulingGroupId-value"
+  "draftOpenShift": null,
+  "createdDateTime": "2019-03-14T04:32:51.451Z",
+  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+  "lastModifiedBy": {
+  "application": null,
+  "device": null,
+  "conversation": null,
+  "user": {
+  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+  "displayName": "John Doe"
+  }
+  }
 }
 ```
 

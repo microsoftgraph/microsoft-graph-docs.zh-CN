@@ -1,48 +1,65 @@
 ---
 title: changeTrackedEntity 资源类型
-description: ''
+description: 表示用于跟踪对任何受支持的班次资源所做更改的实体
 localization_priority: Normal
+author: akumar39
+ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 3815b22c7bd76a894df0e98415e0c30bb77decd1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a167f6409ba972b66f23a3608047b4e72c036846
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974051"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951977"
 ---
 # <a name="changetrackedentity-resource-type"></a>changeTrackedEntity 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+表示用于跟踪对任何受支持的[日程安排](schedule.md)和关联资源所做更改的实体。
+
 ## <a name="properties"></a>属性
-|属性|类型|说明|
-|:---|:---|:---|
-|createdDateTime| DateTimeOffset| |
-|lastModifiedDateTime| DateTimeOffset| |
-|lastModifiedBy| [identitySet](identityset.md) | |
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|id|String| 只读。|
+|lastModifiedBy|[identitySet](identityset.md)|上次修改实体的人员的标识。|
+|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>关系
-无
+
+无。
+
 ## <a name="json-representation"></a>JSON 表示形式
+
 下面是资源的 JSON 表示形式。
-<!--{
+
+<!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
   "@odata.type": "microsoft.graph.changeTrackedEntity",
-  "baseType":"microsoft.graph.entity",
-  "abstract":true
+  "baseType": "microsoft.graph.entity",
+  "keyProperty": "id"
 }-->
 
-``` json
+```json
 {
-    "createdDateTime":"String (timestamp)",
-    "lastModifiedDateTime" :"String (timestamp)",
-    "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
-
-
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "changeTrackedEntity resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

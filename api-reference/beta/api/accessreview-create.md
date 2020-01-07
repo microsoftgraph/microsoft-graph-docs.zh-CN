@@ -1,38 +1,39 @@
 ---
 title: 创建 accessReview
-description: 在 "Azure AD access 评论" 功能中, 创建一个新的 accessReview 对象。
+description: 在 "Azure AD access 评论" 功能中，创建一个新的 accessReview 对象。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1e0030ac26cde8aa1ea3d1d0b4574243926be620
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e4bf6715f5c762ffc1b04d29d655cc170d3313cc
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408863"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951631"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 创建一个新的[accessReview](../resources/accessreview.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[accessReview](../resources/accessreview.md)对象。
 
-在发出此请求之前, 呼叫者必须先[检索业务流模板列表](businessflowtemplate-list.md), 才能将值`businessFlowTemplateId`包含在请求中。
+在发出此请求之前，呼叫者必须先[检索业务流模板列表](businessflowtemplate-list.md)，才能将值`businessFlowTemplateId`包含在请求中。
 
-发出此请求后, 调用方应[创建一个 programControl](programcontrol-create.md), 以将访问审核链接到某个程序。  
+发出此请求后，调用方应[创建一个 programControl](programcontrol-create.md)，以将访问审核链接到某个程序。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview 的成员资格 |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
-调用方还应具有 ProgramControl 权限, 以便在创建访问审核之后, 调用方可以创建[ProgramControl](../resources/programcontrol.md)。
-此外, 登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
+调用方还应具有 ProgramControl 权限，以便在创建访问审核之后，调用方可以创建[ProgramControl](../resources/programcontrol.md)。
+此外，登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息，请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,45 +41,44 @@ ms.locfileid: "36408863"
 POST /accessReviews
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称         | 类型        | 说明 |
-|:-------------|:------------|:------------|
-| Authorization | string | 持有者 \{token\}。必需。 |
+| 名称         | 说明 |
+|:-------------|:------------|
+| Authorization | 持有者 \{token\}。 必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
+在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
 
 下表显示创建 accessReview 时所需的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 计划开始评审时的日期时间。  这必须是将来的日期。   |
 | `endDateTime`             |`DateTimeOffset`                                                | 计划结束评审时的日期/时间。 此时间必须至少为一个晚于开始日期的一天。   |
 | `description`             |`String`                                                        | 要向审阅者显示的说明。 |
 | `businessFlowTemplateId`  |`String`                                                        | 从[businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流模板标识符。  |
-| `reviewerType`            |`String`                                                        | 审阅者的关系类型: 审阅的对象的访问权限、 `self` `delegated`、或。 `entityOwners` | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其创建访问审核的对象, 例如组的成员身份或向应用程序分配的用户。 | 
+| `reviewerType`            |`String`                                                        | 审阅者的关系类型：审阅的对象的访问权限、 `self` `delegated`、或。 `entityOwners` | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其创建访问审核的对象，例如组的成员身份或向应用程序分配的用户。 | 
 
 
-如果要提供的 reviewerType 具有值`delegated`, 则调用方还必须包括该`reviewers`属性, 其中包含审阅人的[userIdentity](../resources/useridentity.md)的集合。
+如果要提供的 reviewerType 具有值`delegated`，则调用方还必须包括该`reviewers`属性，其中包含审阅人的[userIdentity](../resources/useridentity.md)的集合。
 
-如果您的应用程序在没有登录用户的情况下调用此 API, 则呼叫者还必须包含**createdBy**属性, 其值是将被标识为审阅的创建者的用户的[userIdentity](../resources/useridentity.md) 。
+如果您的应用程序在没有登录用户的情况下调用此 API，则呼叫者还必须包含**createdBy**属性，其值是将被标识为审阅的创建者的用户的[userIdentity](../resources/useridentity.md) 。
 
-此外, 呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。 特别是, 若要创建定期检查, 呼叫者必须在 " `accessReviewRecurrenceSettings`访问审核设置" 中包含 "",
+此外，呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。 特别是，若要创建定期检查，呼叫者必须在 " `accessReviewRecurrenceSettings`访问审核设置" 中包含 ""，
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201, Created`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。
+如果成功，此方法在响应`201, Created`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。
 
 ## <a name="example"></a>示例
 
-下面的示例演示了如何创建一次性 (非定期) 访问审核, 并将两个用户显式指定为审阅者。
+下面的示例演示了如何创建一次性（非定期）访问审核，并将两个用户显式指定为审阅者。
 
-##### <a name="request"></a>请求
-在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
+### <a name="request"></a>请求
+在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
 
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
@@ -127,22 +127,8 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",

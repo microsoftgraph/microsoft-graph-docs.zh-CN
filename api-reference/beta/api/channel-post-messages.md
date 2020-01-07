@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ee5bcd763a065873fe795a1638c33b4610ded2
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868182"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951665"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "40868182"
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,6 @@ POST /teams/{id}/channels/{id}/messages
 
 在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
-> 注意：不支持发送包含附件和图像的邮件。
 
 ## <a name="response"></a>响应
 
@@ -94,7 +93,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -179,7 +178,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -275,7 +274,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

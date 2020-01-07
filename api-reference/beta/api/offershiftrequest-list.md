@@ -1,22 +1,22 @@
 ---
-title: 获取 openShift
-description: 检索 openshift 对象的属性和关系。
+title: 列出 offerShiftRequest
+description: 检索团队中所有 offerShiftRequest 对象的属性和关系。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ef127e1262b070c421b159aaea55b74156956c2
+ms.openlocfilehash: fec40c5f7afb2cd14196aa3824878da5345c4b78
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951907"
+ms.locfileid: "40952144"
 ---
-# <a name="get-openshift"></a>获取 openShift
+# <a name="list-offershiftrequest"></a>列出 offerShiftRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[openshift](../resources/openshift.md)对象的属性和关系。
+检索团队中所有[offerShiftRequest](../resources/offershiftrequest.md)对象的属性和关系。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,20 +26,22 @@ ms.locfileid: "40951907"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | Schedule. All *、schedule、all* |
+
+>\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShifts/{openShiftId}
+GET /teams/schedule/offerShiftRequests
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
-  
+
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
@@ -52,7 +54,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[openShift](../resources/openshift.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[offerShiftRequest](../resources/offershiftrequest.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -61,11 +63,11 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "get_offershiftrequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
+GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
 ```
 
 ### <a name="response"></a>响应
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShift"
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 } -->
 
 ```http
@@ -85,53 +87,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "sharedOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":2,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T09:50:45.332Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T01:58:45.340Z",
-  "code": "",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "draftOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":3,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.332Z",
-  "endDateTime": "2018-10-04T08:58:45.340Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T07:58:45.332Z",
-  "code": "Break",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-  "application": null,
-  "device": null,
-  "conversation": null,
-  "user": {
-  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-  "displayName": "John Doe"
-  }
-  }
+  "recipientActionMessage": "recipientActionMessage-value",
+  "recipientActionDateTime": "datetime-value",
+  "senderShiftId": "senderShiftId-value",
+  "recipientUserId": "recipientUserId-value"
 }
 ```
 
@@ -139,7 +98,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShift",
+  "description": "Get offerShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

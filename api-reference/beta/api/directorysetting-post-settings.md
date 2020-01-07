@@ -1,29 +1,29 @@
 ---
 title: 创建目录设置
-description: 根据 directorySettingTemplates 中可用的模板, 使用此 API 创建新的设置。 这些设置可以是租户级别, 也可以是对象级别 (当前仅适用于组)。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置, 仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来, 一旦能够将来宾用户添加到组中, 就可以控制此行为。
+description: 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别（当前仅适用于组）。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b44b8a8d21210f22f2431fb6d83fca94355bd60
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 65fcc45b8d5100d0982d1cfb8d514ee40dffc40e
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417162"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951624"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据 directorySettingTemplates 中可用的模板, 使用此 API 创建新的设置。 这些设置可以是租户级别, 也可以是对象级别 (当前仅适用于组)。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置, 仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来, 一旦能够将来宾用户添加到组中, 就可以控制此行为。
+根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别（当前仅适用于组）。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
 
-> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Create groupSettings*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Create groupSettings*。
 
-若要获取在 beta 版中支持的模板及其属性的列表, 请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 (对于 v1.0 终结点, 请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。)
+若要获取在 beta 版中支持的模板及其属性的列表，请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 （对于 v1.0 终结点，请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。）
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,17 +44,17 @@ POST /groups/{id}/settings
 | Authorization  | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。  但是, 将根据引用的设置模板名称设置设置的显示名称。
+在请求正文中，提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。  但是，将根据引用的设置模板名称设置设置的显示名称。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[directorySetting](../resources/directorysetting.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[directorySetting](../resources/directorysetting.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_settings"
@@ -82,13 +82,13 @@ Content-length: 222
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-settings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directorysetting-from-settings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-在请求正文中, 提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。
+在请求正文中，提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
