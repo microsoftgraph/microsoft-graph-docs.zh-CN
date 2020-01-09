@@ -5,17 +5,17 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9c9f796d0005e4991bdc6a736ce788cdaba3f5b6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8204b6d7acc716b3f410b97b7019bfbe89efb7aa
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37633815"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995012"
 ---
 # <a name="list-tasks"></a>列出任务
 
 检索与 [plannerBucket](../resources/plannerbucket.md) 对象关联的 **plannerTask** 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -54,7 +54,7 @@ GET /planner/buckets/{id}/tasks
   "name": "plannerbucket_get_tasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucket-get-tasks-csharp-snippets.md)]
