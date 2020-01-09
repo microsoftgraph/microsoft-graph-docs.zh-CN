@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4bf6715f5c762ffc1b04d29d655cc170d3313cc
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: a0fcc6b5514e2416ad61757d0e18473eccc9d36a
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951631"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994791"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -51,7 +51,7 @@ POST /accessReviews
 
 下表显示创建 accessReview 时所需的属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 计划开始评审时的日期时间。  这必须是将来的日期。   |
@@ -79,6 +79,8 @@ POST /accessReviews
 ### <a name="request"></a>请求
 在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
@@ -127,6 +129,20 @@ Content-type: application/json
     }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。

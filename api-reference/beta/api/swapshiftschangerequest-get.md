@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5203f7902a5c25683e173c4647b7cb776655e05c
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 0af7f10eb0b19f8f899b5921d1b884eca56ac108
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951750"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994803"
 ---
 # <a name="get-swapshiftschangerequest"></a>获取 swapShiftsChangeRequest
 
@@ -61,14 +61,30 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_swapshiftschangerequest"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

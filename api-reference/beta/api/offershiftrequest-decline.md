@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 960532d3d278bc01ae89bc74a8624030c96c6d96
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 92a085bb089c549bf4860dcbce135cd4f887ea48
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952172"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994928"
 ---
 # <a name="offershiftrequest-decline"></a>offerShiftRequest：拒绝
 
@@ -62,6 +62,8 @@ POST /teams/schedule/offerShiftRequests/decline
 ### <a name="request"></a>请求
 
 以下示例显示了一个请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_decline"
@@ -75,6 +77,12 @@ Content-type: application/json
   "message": "Sorry, you can't offer this shift."
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

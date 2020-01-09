@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 0ab32470a7ecf5e00d10ccada984096d16537f1b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c0f257a9bdcf6c149b4f6374e2011cebb437603
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37632673"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994962"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -19,6 +19,8 @@ ms.locfileid: "37632673"
 可以使用附件的形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或组[帖子](../resources/post.md)添加相关内容。 
 
 组日历中的事件不支持附件。
+
+Outlook 任务不支持引用附件。
 
 **附件**是以下附件派生类型的基础资源：
 
@@ -38,13 +40,13 @@ ms.locfileid: "37632673"
 |:---------------|:--------|:----------|
 |[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性、关系或原始内容。|
 |[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
-|[将附件添加到邮件中](../api/message-post-attachments.md) | [attachment](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将限制可添加到 4 MB 以下的附件的大小。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将限制可添加到 4 MB 以下的附件的大小。|
 |[创建会话以附加大型文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的**邮件**。 文件大小必须介于3MB 和150MB 之间。|
-|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
-|[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
+|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件或项目附件添加到 Outlook 任务中。|
+|[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到组帖子。|
 |[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
+|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md)集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、邮件、Outlook 任务或帖子上的附件。 |
 
@@ -59,7 +61,7 @@ ms.locfileid: "37632673"
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |名称|字符串|附件的显示名称。 这不必是实际的文件名。|
-|大小|Int32|附件大小，以字节为单位。|
+|size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
 无

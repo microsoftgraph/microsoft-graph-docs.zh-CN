@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 72662c2077a24b9bb253f26e1a314165792c43d4
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: d1c7bfc627c6a8ff52fe78807783e0c4b88dc90e
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952179"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994942"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest：批准
 
@@ -62,6 +62,8 @@ POST /teams/schedule/offerShiftRequests/approve
 ### <a name="request"></a>请求
 
 以下示例显示了一个请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_approve"
@@ -75,6 +77,12 @@ Content-type: application/json
   "message": "Approved!"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
