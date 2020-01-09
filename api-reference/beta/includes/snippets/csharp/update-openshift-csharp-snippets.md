@@ -1,31 +1,44 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 124feffaa45acece50e0d4ef64f7cee6fc43902e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5c2efe96f87fbca1ba07f21b206ce5bbabfe8721
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867788"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995365"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var openShifts = new OpenShift
+var openShift = new OpenShift
 {
+    SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
     SharedOpenShift = new OpenShiftItem
     {
-        OpenSlotCount = 99
+        Notes = "Inventory Management",
+        OpenSlotCount = 5,
+        DisplayName = "Field shift",
+        StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
+        EndDateTime = DateTimeOffset.Parse("2018-10-04T09:50:45.332Z"),
+        Theme = ScheduleEntityTheme.White,
+        Activities = new List<ShiftActivity>()
+        {
+            new ShiftActivity
+            {
+                IsPaid = true,
+                StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
+                EndDateTime = DateTimeOffset.Parse("2018-10-04T01:58:45.34Z"),
+                Code = "",
+                DisplayName = "Lunch"
+            }
+        }
     },
-    DraftOpenShift = new OpenShiftItem
-    {
-        OpenSlotCount = 99
-    },
-    SchedulingGroupId = "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
+    DraftOpenShift = null
 };
 
-await graphClient.Teams["{id}"].Schedule.OpenShifts
+await graphClient.Teams["{id}"].Schedule.OpenShifts["{openShiftId}"]
     .Request()
-    .UpdateAsync(openShifts);
+    .PutAsync(openShift);
 
 ```
