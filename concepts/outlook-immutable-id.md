@@ -4,16 +4,19 @@ description: 借助不可变标识符，应用程序可为 Outlook 项获取在�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ca07e359f710d8538fe51f221895eca1beb08ec2
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: ba38d0aba0063b66c0a51e235c193a57741e9988
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37439939"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994955"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
 Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
+
+> [!NOTE]
+> 不可变标识符（如 Microsoft Graph 中的所有标识符）区分大小写。 如果要比较 ID，请记住这一点。
 
 ## <a name="how-it-works"></a>运作方式
 
