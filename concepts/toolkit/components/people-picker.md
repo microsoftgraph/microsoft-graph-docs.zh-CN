@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 715ef4552a3d87ecb59a1925d1a3e52c7d8ed4ea
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866880"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023122"
 ---
 # <a name="people-picker-component"></a>人员-选取器组件
 
@@ -82,7 +82,7 @@ mgt-people-picker {
 
  `mgt-people-picker`支持多个模板，这些[模板](../templates.md)可用于替换组件的某些部分。 若要指定模板，请在`<template>`组件内添加一个元素，并`data-type`将值设置为下列值之一。
 
-| 数据类型 | 数据上下文 | 说明 |
+| 数据类型 | 数据上下文 | Description |
 | --- | --- | --- |
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
 | error | null：无数据| 用户搜索不返回用户时使用的模板。 |
@@ -105,8 +105,9 @@ mgt-people-picker {
 
 | API                                                                                                              | 权限  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
+| [/users/$ {userPrincipleName}](/graph/api/user-list-people?view=graph-rest-1.0)  | User.readbasic.all |
 
 ## <a name="authentication"></a>身份验证
 

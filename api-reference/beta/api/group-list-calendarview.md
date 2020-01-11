@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4a5a2ec56c69edbeb8a879809aaed91f8c65dfbd
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: bc13de3a3c94f821ebe38f04845dcfb00e0ccb8b
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721619"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023052"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -18,7 +18,7 @@ ms.locfileid: "36721619"
 
 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -36,18 +36,20 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 ## <a name="query-parameters"></a>查询参数
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
+| 参数     | 类型   | 说明                                                                                                            |
+|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| startDateTime | String | 时间范围的开始日期和时间以 ISO 8601 格式表示。 例如，"2019-11-08T19：00： 00-08： 00"。 |
+| endDateTime   | String | 时间范围的结束日期和时间以 ISO 8601 格式表示。 例如，"2019-11-08T20：00： 00-08： 00"。   |
 
-此方法还支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+`startDateTime`和的值使用`endDateTime`值中指定的时区偏移量进行解释，如果存在，则不受`Prefer: outlook.timezone`标头值的影响。 如果值中不包含任何时区偏移量，则它将被解释为 UTC。
 
-> [!NOTE] 
-> [事件](../resources/event.md)的`$select` **createdDateTime**和**lastModifiedDateTime**属性不支持。 若要获取它们的值, 只**** 需查询 calendarView `$select`而无需应用。
+此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+> [!NOTE]
+> [事件](../resources/event.md)的 **createdDateTime** 和 **lastModifiedDateTime** 属性不支持 `$select`。 若要获取它们的值，只需在 **calendarView** 上进行查询，而不应用 `$select`。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明 |
+| 名称       | 类型 | Description |
 |:---------------|:--------|:--------|
 | Authorization  | 字符串 | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
@@ -63,13 +65,13 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 #### <a name="request"></a>请求
 下面的示例展示了如何请求采用文本格式返回事件主体。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_calendarviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-10-01T19:00:00.00
+GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -80,7 +82,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarviews-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarviews-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b4a34190fd2ec6d61cdfb03e004e7673d60cddb
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0719415786a00b07485761c72985abcc47106dd0
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703740"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023101"
 ---
 # <a name="create-user"></a>创建用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新[用户](../resources/user.md)。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。
+
+此操作默认情况下仅返回每个用户的属性子集。 这些默认属性将记录在[属性](../resources/user.md#properties)部分中。 若要获取非默认返回的属性，请执行 [GET 操作](user-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
 >[!NOTE]
 >若要创建外部用户，请使用[邀请 API](invitation-post.md)。
@@ -51,7 +53,7 @@ POST /users
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
-|displayName |字符串 |要在用户的通讯簿中显示的名称。|
+|displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
