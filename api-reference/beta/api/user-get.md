@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2632dfa8395d7ad68ae280e448eb095582827dd2
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 6e330ce8d12430e8c1bbfa70dd8dc8541f602ecd
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538530"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023108"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -18,9 +18,9 @@ ms.locfileid: "37538530"
 
 检索用户对象的属性和关系。
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**用户**实例中的自定义属性和扩展数据。
+默认情况下，此操作仅返回每位用户较常用属性中的一部分。 这些_默认_属性将记录在[属性](../resources/user.md#properties)部分中。 要获取_非_默认返回的属性，请对用户执行 [GET](user-get.md) 操作，并在 `$select` OData 查询选项中指定这些属性。 由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**用户**实例中的自定义属性和扩展数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

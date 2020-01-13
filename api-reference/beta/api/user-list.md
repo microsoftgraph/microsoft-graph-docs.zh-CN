@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 92ad556051ddddaa767384e46c92b894e152883c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4b151a097f733064e250e3df631671bc1ec4fc5e
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937467"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023094"
 ---
 # <a name="list-users"></a>列出用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [user](../resources/user.md) 对象列表。
+
+默认情况下，此操作仅返回每位用户较常用属性中的一部分。 这些_默认_属性将记录在[属性](../resources/user.md#properties)部分中。 要获取_非_默认返回的属性，请对用户执行 [GET](user-get.md) 操作，并在 `$select` OData 查询选项中指定这些属性。
 
 ## <a name="permissions"></a>Permissions
 
@@ -186,6 +188,8 @@ Content-length: 108
 
 下面展示了示例请求。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
@@ -193,6 +197,20 @@ Content-length: 108
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName, signInActivity
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 069abbd4287139ef4c97fa1ce981a0053b161c7f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: f75d0b10a2ace16335e68957d31acfbcd030c1cd
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726520"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023080"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -56,14 +56,16 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
+| 参数     | 类型   | 说明                                                                                                            |
+|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| startDateTime | String | 时间范围的开始日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T19:00:00-08:00”。 |
+| endDateTime   | String | 时间范围的结束日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T20:00:00-08:00”。   |
+
+`startDateTime` 和 `endDateTime` 的值使用值中指定的时区偏移量进行解释，并且不受 `Prefer: outlook.timezone` 标头（若有）的值影响。 如果值中未包含时区偏移量，则将其解释为 UTC。
 
 此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-> [!NOTE] 
+> [!NOTE]
 > [事件](../resources/event.md)的 **createdDateTime** 和 **lastModifiedDateTime** 属性不支持 `$select`。 若要获取它们的值，只需在 **calendarView** 上进行查询，而不应用 `$select`。
 
 ## <a name="request-headers"></a>请求标头
@@ -88,7 +90,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
   "name": "get_calendarview"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000
+GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-01-07T19:00:00-08:00
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-csharp-snippets.md)]

@@ -3,18 +3,26 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9fccee5ed68b8df21a58506d7a3745a439256673
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 8d1f8eeb909e307dca7e8208177741818764cf92
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951970"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023129"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph API 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="january-2020"></a>2020 年 1 月
+
+### <a name="security"></a>安全性 
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 更改 | Beta 和 v1.0 | [更新警报](/graph/api/alert-update?view=graph-rest-1.0&tabs=http)方法现仅使用以下值更新**批注**字段： <br/> `Closed in IPC`，`Closed in MCAS`。|
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -634,7 +642,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [iosVppAppAssignmentSettings](/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta) 复杂类型添加了 **uninstallOnDeviceRemoval** 属性|
 |添加项|beta|向 [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) 枚举类型添加了 **customTextNotification** 成员|
 |添加项|beta|向 [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta) 枚举类型添加了 **setDeviceName** 成员|
-|添加项|beta|向 [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) 枚举类型添加了 **error** 和 **pending** 成员|
+|Addition|beta|向 [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) 枚举类型添加了 **error** 和 **pending** 成员|
 |添加项|beta|向 [weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta) 枚举类型添加了 **noScheduledScan** 成员|
 |添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) 实体添加了 **derivedCredentials** 导航属性|
 
