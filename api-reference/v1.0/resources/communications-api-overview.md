@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b70006aad978ce05c63f62354a3ac7f27105e4f9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b17dc07431bfe579125d162754c4f4ad4110e73f
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913224"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023073"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -37,7 +37,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 创建并键入一对一通话和群组通话   | [通话](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [通话方法](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
 |IVR 通话   |     | [IVR 方法](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
 | 通话控制（参与者） | [参与者](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|会议|[onlineMeeting](https://docs.microsoft.comgraph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [会议方法](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+|会议|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [会议方法](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 
 ## <a name="common-properties"></a>通用属性
 
