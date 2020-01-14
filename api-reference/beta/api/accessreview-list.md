@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa164aba8d59b2695ff39652e1ea12a587426321
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: e1e138f7b255053797bc671adcad7ce20ed99480
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747144"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119515"
 ---
 # <a name="list-accessreviews"></a>列出 accessReviews
 
@@ -21,7 +21,12 @@ ms.locfileid: "38747144"
 >[!NOTE]
 > 如果与筛选器匹配的任何访问评审是定期访问审核，则将返回一个**accessReview**对象，以将每个定期系列表示为一个整体。 例如，如果每月定期访问 a 组的来宾成员、组 B 的来宾成员的定期访问审核以及组 C 的来宾成员的一次性访问审核，并且呼叫者查询与业务流的访问审核对组的来宾成员审阅的模板，将返回三个对象。 若要检索定期访问审核实例或为特定月份或季度计划的访问评审实例，调用方可以随后导航到定期**accessReview**对象的**实例**关系。 指向当前或过去的定期访问审核实例的**accessReview**对象的**实例**关系。
 
-## <a name="permissions"></a>权限
+如果许多访问评审与筛选器匹配，则要提高效率并避免超时，请在页面中检索结果集，方法`$top`是将查询参数包含页面大小（例如，100）和`$skip=0`请求中的查询参数。 即使您不预计请求将跨多个页面，也可以包含这些参数。 当结果集跨多个页面时，Microsoft Graph 将返回该页面`@odata.nextLink` ，其中包含响应中包含指向下一页结果的 URL 的属性。 如果存在该属性，请继续在每个响应中`@odata.nextLink`对 URL 进行额外请求，直到返回所有结果，如您的应用程序中的 " [Microsoft Graph 数据分页](/graph/paging.md)" 中所述。
+
+此 API 返回的**accessReview**对象将不包含嵌套的结构属性（如**设置**或关系）。  若要检索访问审核设置或关系，请使用[Get accessReview](accessreview-get.md) API。
+
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -35,7 +40,7 @@ ms.locfileid: "38747144"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}
+GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$top={pagesize}&$skip=0
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -46,7 +51,7 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}
 请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象的数组。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象的数组。
 
 ## <a name="examples"></a>示例
 ##### <a name="request"></a>请求
@@ -58,7 +63,7 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}
   "name": "get_accessReviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'
+GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'&$top=100&$skip=0
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviews-csharp-snippets.md)]

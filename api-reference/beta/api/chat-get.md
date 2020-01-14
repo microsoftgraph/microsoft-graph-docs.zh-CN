@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66b894b272f9b57e41869cb95f4acebb5dd6a399
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 683e6b1c488beccb75e6e008b52b132bf091ec62
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535637"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119723"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -76,15 +76,15 @@ GET /chats/{id}
 GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

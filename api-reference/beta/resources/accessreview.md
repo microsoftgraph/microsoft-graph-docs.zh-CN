@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 337d31a49dbbe170100ca7532b111a230a753076
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: aa78e466326ac523afabccd1d2dd39c805b06772
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702529"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119803"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "38702529"
 在 Azure AD [access 评论](accessreviews-root.md)功能中， `accessReview`表示访问评审。  
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -39,7 +39,7 @@ ms.locfileid: "38702529"
 |[应用 accessReview 决策](../api/accessreview-apply.md) |     无。   |   从已完成的 accessReview 应用决策。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 用于访问评审的功能分配的唯一标识符。 |
 | `displayName`             |`String`                                                        | 访问审阅名称。 创建时为必需项。 |
@@ -60,7 +60,7 @@ ms.locfileid: "38702529"
 
 
 
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 | `reviewers`               |[userIdentity](useridentity.md)集合                     | 访问评审的审阅者的集合（如果 access 评审 reviewerType 的类型`delegate`为）。 |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md)集合 | 此访问评审的决策集合。 |
@@ -71,9 +71,9 @@ ms.locfileid: "38702529"
 
 | 方案 | 是否有审阅者？ | 是否有决策和 myDecisions？ | 有实例吗？ |
 |:---------|:---------------|:---------------|:---------------|
-|一次性访问审核|是 | 是，启动后 | 否 |
-| 定期访问审核 | 是 | 否 | 是 |
-| 定期访问审核实例 | 是 | 是，启动后 | 否 |
+|一次性访问审核|是 | 是，启动后 | No |
+| 定期访问审核 | 是 | No | 是 |
+| 定期访问审核实例 | 是 | 是，启动后 | No |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -110,7 +110,7 @@ ms.locfileid: "38702529"
 
 在`accessReviewSettings`创建访问评审时提供其他设置，以在启动访问评审时控制功能行为。  此类型具有以下属性： 
 
-| 属性                     | 类型                      | 说明 |
+| 属性                     | 类型                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | 指示是否已启用向审阅者发送邮件和审阅创建者的标志。                |
 | `remindersEnabled`|`Boolean`       | 指示是否启用了向审阅者发送提醒电子邮件的标志。       |
@@ -126,7 +126,7 @@ ms.locfileid: "38702529"
 
 `autoReviewSettings`嵌入访问审阅设置中，并指定访问评审完成时的功能行为。  类型具有一个属性`notReviewedResult`。
 
-| 属性                     | 类型     | 说明                          |
+| 属性                     | 类型     | Description                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | 必须为 `Approve`、`Deny` 或 `Recommendation` 的其中一个。 |
 
@@ -135,10 +135,10 @@ ms.locfileid: "38702529"
 
 嵌入`accessReviewRecurrenceSettings`到 access 评审设置中，并指定以固定间隔重复进行访问评审。  此类型具有以下属性：
 
-| 属性                     | 类型                                                                                                          | 说明 |
+| 属性                     | 类型                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | 定期`onetime`间隔，必须为、 `weekly`、 `monthly` `quarterly`、或`annual`的其中一个。                                                                   |
-| `recurrenceEndType`|`String` | 重复周期的结束方式。 如果是`Never`，则不会出现定期系列的显式结束。 如果是`endBy`，则重复周期将在特定日期结束。 如果是`occurrences`，则在审阅的实例完成`recurrentCount`后，该系列将结束。 |
+| `recurrenceEndType`|`String` | 重复周期的结束方式。 如果是`never`，则不会出现定期系列的显式结束。 如果是`endBy`，则重复周期将在特定日期结束。 如果是`occurrences`，则在审阅的实例完成`recurrenceCount`后，该系列将结束。 |
 | `durationInDays`|`Int32`     | 定期的持续时间（以天为单位）。                                                                              |
 | `recurrenceCount`|`Int32`    | 如果值`recurrenceEndType`为，则为`occurrences`定期计数，否则为0。                                                        |
 

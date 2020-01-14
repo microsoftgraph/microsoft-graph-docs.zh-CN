@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c2efaa8b1c58d02d615af1f1dd63ddf9402954f0
+ms.openlocfilehash: 3fac72fb98be0a82a0e2480ad3efd5d76ba79c5e
 ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119514"
+ms.locfileid: "41119716"
 ---
 ```javascript
 
@@ -15,11 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/accessReviews')
+let res = await client.api('/users/{id}/chats/{id}')
     .version('beta')
-    .filter('businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68',')
-    .skip(0)
-    .top(100)
     .get();
 
 ```

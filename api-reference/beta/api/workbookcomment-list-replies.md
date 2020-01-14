@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0179d8c3c25e156790be5ad9ba90c0ce34d3b7d8
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 4ea84e6481e3c13da01d39e138a5acd32b0ec330
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838872"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119691"
 ---
 # <a name="list-workbookcommentreplies"></a>列出 workbookCommentReplies
 
 检索[workbookCommentReply](../resources/workbookcommentreply.md)对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,14 +54,14 @@ GET /workbook/comments/{id}/replies
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_replies"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies
+GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
