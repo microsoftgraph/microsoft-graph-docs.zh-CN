@@ -5,30 +5,30 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c4f9386e680bb344055c62063232d5a8603fe42f
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: ce0be79110f1718e320ddbfb237f2a8a58b40cb7
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994706"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119704"
 ---
-# <a name="create-attachment"></a><span data-ttu-id="4dfac-103">创建附件</span><span class="sxs-lookup"><span data-stu-id="4dfac-103">Create attachment</span></span>
+# <a name="create-attachment"></a><span data-ttu-id="73f69-103">创建附件</span><span class="sxs-lookup"><span data-stu-id="73f69-103">Create attachment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4dfac-104">使用此 API 可将[附件](../resources/attachment.md)添加到[outlookTask](../resources/outlooktask.md)。</span><span class="sxs-lookup"><span data-stu-id="4dfac-104">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span> <span data-ttu-id="4dfac-105">附件可以是文件（ [fileAttachment](../resources/fileattachment.md)类型）或 Outlook 项目（[itemAttachment](../resources/itemattachment.md)类型）。</span><span class="sxs-lookup"><span data-stu-id="4dfac-105">The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).</span></span>
+<span data-ttu-id="73f69-104">使用此 API 可将[附件](../resources/attachment.md)添加到[outlookTask](../resources/outlooktask.md)。</span><span class="sxs-lookup"><span data-stu-id="73f69-104">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span> <span data-ttu-id="73f69-105">附件可以是文件（ [fileAttachment](../resources/fileattachment.md)类型）或 Outlook 项目（[itemAttachment](../resources/itemattachment.md)类型）。</span><span class="sxs-lookup"><span data-stu-id="73f69-105">The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4dfac-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="4dfac-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="73f69-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="73f69-106">Permissions</span></span>
 
-<span data-ttu-id="4dfac-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4dfac-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="73f69-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="73f69-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4dfac-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4dfac-109">Permission type</span></span>      | <span data-ttu-id="4dfac-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4dfac-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="73f69-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="73f69-109">Permission type</span></span>      | <span data-ttu-id="73f69-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="73f69-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4dfac-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4dfac-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4dfac-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4dfac-112">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="4dfac-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4dfac-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4dfac-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4dfac-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="4dfac-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4dfac-115">Application</span></span> | <span data-ttu-id="4dfac-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4dfac-116">Not supported.</span></span> |
+|<span data-ttu-id="73f69-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="73f69-111">Delegated (work or school account)</span></span> | <span data-ttu-id="73f69-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="73f69-112">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="73f69-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="73f69-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73f69-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="73f69-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="73f69-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="73f69-115">Application</span></span> | <span data-ttu-id="73f69-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="73f69-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4dfac-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4dfac-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="73f69-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="73f69-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,29 +37,31 @@ POST /me/outlook/tasks/{id}/attachments
 POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4dfac-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4dfac-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="73f69-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="73f69-118">Request headers</span></span>
 
-| <span data-ttu-id="4dfac-119">名称</span><span class="sxs-lookup"><span data-stu-id="4dfac-119">Name</span></span>       | <span data-ttu-id="4dfac-120">说明</span><span class="sxs-lookup"><span data-stu-id="4dfac-120">Description</span></span>|
+| <span data-ttu-id="73f69-119">名称</span><span class="sxs-lookup"><span data-stu-id="73f69-119">Name</span></span>       | <span data-ttu-id="73f69-120">说明</span><span class="sxs-lookup"><span data-stu-id="73f69-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4dfac-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4dfac-121">Authorization</span></span>  | <span data-ttu-id="4dfac-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4dfac-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4dfac-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4dfac-124">Content-Type</span></span> | <span data-ttu-id="4dfac-125">一个字符串，表示实体的正文中的数据类型。</span><span class="sxs-lookup"><span data-stu-id="4dfac-125">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="4dfac-126">必需。</span><span class="sxs-lookup"><span data-stu-id="4dfac-126">Required.</span></span> |
+| <span data-ttu-id="73f69-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="73f69-121">Authorization</span></span>  | <span data-ttu-id="73f69-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="73f69-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="73f69-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="73f69-124">Content-Type</span></span> | <span data-ttu-id="73f69-125">一个字符串，表示实体的正文中的数据类型。</span><span class="sxs-lookup"><span data-stu-id="73f69-125">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="73f69-126">必需。</span><span class="sxs-lookup"><span data-stu-id="73f69-126">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4dfac-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4dfac-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="73f69-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="73f69-127">Request body</span></span>
 
-<span data-ttu-id="4dfac-128">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4dfac-128">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="73f69-128">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="73f69-128">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4dfac-129">响应</span><span class="sxs-lookup"><span data-stu-id="4dfac-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="73f69-129">响应</span><span class="sxs-lookup"><span data-stu-id="73f69-129">Response</span></span>
 
-<span data-ttu-id="4dfac-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4dfac-130">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="73f69-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="73f69-130">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4dfac-131">示例</span><span class="sxs-lookup"><span data-stu-id="4dfac-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="73f69-131">示例</span><span class="sxs-lookup"><span data-stu-id="73f69-131">Examples</span></span>
 
-### <a name="example-1-add-file-attachment"></a><span data-ttu-id="4dfac-132">示例1：添加文件附件</span><span class="sxs-lookup"><span data-stu-id="4dfac-132">Example 1: Add file attachment</span></span> 
+### <a name="example-1-add-file-attachment"></a><span data-ttu-id="73f69-132">示例1：添加文件附件</span><span class="sxs-lookup"><span data-stu-id="73f69-132">Example 1: Add file attachment</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="4dfac-133">请求</span><span class="sxs-lookup"><span data-stu-id="4dfac-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="73f69-133">请求</span><span class="sxs-lookup"><span data-stu-id="73f69-133">Request</span></span>
 
-<span data-ttu-id="4dfac-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4dfac-134">Here is an example of the request.</span></span>
+<span data-ttu-id="73f69-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="73f69-134">Here is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="73f69-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="73f69-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_file_attachment_to_task"
@@ -75,10 +77,24 @@ Content-type: application/json
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="73f69-136">C#</span><span class="sxs-lookup"><span data-stu-id="73f69-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-file-attachment-to-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="4dfac-135">响应</span><span class="sxs-lookup"><span data-stu-id="4dfac-135">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="73f69-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="73f69-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-file-attachment-to-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="4dfac-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4dfac-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="73f69-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="73f69-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-file-attachment-to-task-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="73f69-139">响应</span><span class="sxs-lookup"><span data-stu-id="73f69-139">Response</span></span>
+
+<span data-ttu-id="73f69-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="73f69-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -105,11 +121,11 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a><span data-ttu-id="4dfac-139">示例2：添加项目附件</span><span class="sxs-lookup"><span data-stu-id="4dfac-139">Example 2: Add item attachment</span></span>
+### <a name="example-2-add-item-attachment"></a><span data-ttu-id="73f69-143">示例2：添加项目附件</span><span class="sxs-lookup"><span data-stu-id="73f69-143">Example 2: Add item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4dfac-140">请求</span><span class="sxs-lookup"><span data-stu-id="4dfac-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="73f69-144">请求</span><span class="sxs-lookup"><span data-stu-id="73f69-144">Request</span></span>
 
-<span data-ttu-id="4dfac-141">下面将一个事件附加到另一个事件作为项目附件的示例。</span><span class="sxs-lookup"><span data-stu-id="4dfac-141">Here is an example which attaches an event with another event as an item attachment.</span></span>
+<span data-ttu-id="73f69-145">下面将一个事件附加到另一个事件作为项目附件的示例。</span><span class="sxs-lookup"><span data-stu-id="73f69-145">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -143,9 +159,9 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="4dfac-142">响应</span><span class="sxs-lookup"><span data-stu-id="4dfac-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="73f69-146">响应</span><span class="sxs-lookup"><span data-stu-id="73f69-146">Response</span></span>
 
-<span data-ttu-id="4dfac-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4dfac-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="73f69-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="73f69-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "add_item_attachment_to_task",
