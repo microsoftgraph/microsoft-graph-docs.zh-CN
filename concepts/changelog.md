@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8d1f8eeb909e307dca7e8208177741818764cf92
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: d65312934ddea65aa23b5953608019e5a6ddb128
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023129"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119810"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -88,8 +88,10 @@ ms.locfileid: "41023129"
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
-|更改 | beta |更新了 [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) 中的 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为以返回记录的角色。 **appRoleAssignments** 返回向服务主体授予的应用程序角色，而 **appRoleAssignedTo** 返回向服务主体授予应用程序角色的主体。|
+|更改 | beta |更新了 [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) 中的 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为以返回记录的角色。 **appRoleAssignments** 返回向服务主体授予的应用程序角色，而 **appRoleAssignedTo** 返回向服务主体授予应用程序角色的主体。|
+| 添加项 | beta | 添加了新的实体类型 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)。 |
 |添加项|beta、v1.0|添加了以下支持：当应用程序无法访问响应集中的某些类型时，返回有限的信息。 有关更多详细信息，请参阅[为不可访问的成员对象返回有限的信息](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。|
+
 
 ### <a name="identity-and-access-azure-ad--information-protection"></a>身份和访问 (Azure AD) | 信息保护
 
@@ -118,7 +120,7 @@ ms.locfileid: "41023129"
 | 修补程序        | 不适用         | [Bug 修复和改进](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0)。 |
 
 
-### <a name="people-intelligence--insights"></a>人脉智能 | Insights
+### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -139,12 +141,6 @@ ms.locfileid: "41023129"
 | 添加项 | Beta | 向 [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta) 实体添加了新的关系 `shiftPreferences`。 |
 | 更改 | Beta | 更新了执行班次资源（包括 [schedule](/graph/api/resources/schedule?view=graph-rest-beta)、[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)、[shift](/graph/api/resources/shift?view=graph-rest-beta)、[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)、[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)、[timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta)、[swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta) 和 [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta)）读写操作所需的应用程序权限。 **注意：** 应用程序权限当前为个人预览版，不可用于公共用途。|
 
-
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 添加了新的实体类型 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)。 |
 
 ## <a name="november-2019"></a>2019 年 11 月
 
