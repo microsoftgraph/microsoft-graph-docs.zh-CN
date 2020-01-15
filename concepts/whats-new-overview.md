@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ae0ec1d070a163cbb093dfabfb36edf2b034f441
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: ae6cd9109faf46aa9ab2b55c0015f846f494a619
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895491"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119782"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,77 +17,55 @@ ms.locfileid: "39895491"
 > [!IMPORTANT]
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+## <a name="january-2020-new-and-generally-available"></a>2020 年 1 月：新版本和正式版
+
+### <a name="security"></a>安全性
+作为客户警报管理的一部分，请使用 [update alert](/graph/api/alert-update?view=graph-rest-1.0) 方法并将“**注释**”字段更新为 `Closed in IPC` 或 `Closed in MCAS`。
+
+## <a name="december-2019-new-and-generally-available"></a>2019 年 12 月：新版本和正式版
+
+### <a name="cloud-communications"></a>云通信
+云通信 API 已正式发布，适用于[呼叫](/graph/api/resources/call?view=graph-rest-1.0)和[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-1.0)的 API [在 v1.0 中可用](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)。
+
+### <a name="education"></a>教育
+使用 **classSettings** 属性管理课程专属设置，例如启用发送每周作业摘要的操作。 当团队表示[教育课程](/graph/api/resources/educationclass?view=graph-rest-1.0)时，此属性可在[团队](/graph/api/resources/team?view=graph-rest-1.0)资源中使用。
+
+### <a name="identity-and-access"></a>标识和访问 
+[尝试使用有限权限获取容器对象会返回部分数据](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。 例如，与[用户](/graph/api/resources/user?view=graph-rest-1.0)、另一个**组**和[设备](/graph/api/resources/device?view=graph-rest-1.0)关联的[组](/graph/api/resources/group?view=graph-rest-1.0)实例。 只有 User.Read.All 和 Group.Read.All 权限且正在尝试访问此**组**实例的应用将获取**用户**和**组**实例，但获得的**设备**对象数据有限（仅限数据类型和对象 ID，不包括属性值）。
+
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+见解 API 已正式发布。 在生产应用中使用此 API 确定具有以下特征的相关文档：
+
+- 用户的[常用文档](/graph/api/insights-list-trending?view=graph-rest-1.0)
+- 用户[使用的](/graph/api/insights-list-used?view=graph-rest-1.0)文档
+- [与用户共享由用户共享的](/graph/api/insights-list-shared?view=graph-rest-1.0)文档
+
+### <a name="reports"></a>报告
+要使用用户委派的权限获取 Office 365 使用情况报告，管理员必须向该用户分配 Azure AD 受限管理员角色。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。 有关详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。
+
+### <a name="toolkit"></a>工具包
+Microsoft Graph 工具包 v1.1 已发布。 有关增强功能和 bug 修复的列表，请参阅更改日历的[“2019 年 12 月”部分](changelog.md#december-2019)。
 
 ## <a name="december-2019-new-in-preview"></a>2019年12月：预览版新增功能
+
+### <a name="cloud-communications"></a>云通信
+- 使用新的[状态](/graph/api/resources/presence?view=graph-rest-beta)资源了解一名或多名用户的忙闲状态和当前活动。
+- [删除](/graph/api/onlinemeeting-delete?view=graph-rest-beta)[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)资源的实例。
+- 要重命名和删除[呼叫](/graph/api/resources/call?view=graph-rest-beta)和[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)资源的几个成员以便与这些资源的 v1 版本一致，请参阅更改日志的[“2019 年 12 月”部分](changelog.md#december-2019)。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [12 月](changelog.md#december-2019)更新
+
+### <a name="identity-and-access"></a>标识和访问 
+- 修复了 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 上 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为。
+- 使用 [Azure AD 权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)中的 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) 来请求将资源添加到 [目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)中，以便可在[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta)中使用该资源的角色。
+- 使用[威胁评估 API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta) 帮助管理员报告可疑电子邮件、网络钓鱼 URL、电子邮件附件或其他文件。 然后，线程扫描判定会通知他们相应地调整组织策略。
 
 ### <a name="teamwork"></a>团队合作
 - 针对[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)资源在 Microsoft 团队频道和聊天中[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 - 针对新的或已更改的[频道消息或聊天消息](/graph/api/resources/chatmessage?view=graph-rest-beta)[订阅通知](/graph/api/resources/subscription?view=graph-rest-beta)。
+- 借助 [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) 资源，可在[日程安排](/graph/api/resources/schedule?view=graph-rest-beta)中将用户的忙线状态指定为“已分配排班”。 作为用户的[设置](/graph/api/resources/usersettings?view=graph-rest-beta)的一部分获取或设置此信息。
 
-## <a name="november-2019-new-and-generally-available"></a>2019 年 11 月：新版本和正式版
-
-### <a name="groups"></a>组
-- 使用委派或应用程序权限GroupMember.Read.All和GroupMember.ReadWrite.Al，来列出组、读取基本组属性，读取（并更新，如有读写权限）能够访问应用程序组的成员身份。
-- 使用应用程序权限Group.Create，创建不含已登录用户的组。
-- 对于指定的 [组](/graph/api/resources/group?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/group-checkmemberobjects?view=graph-rest-1.0)。
-
-### <a name="identity-and-access"></a>身份和访问
-- 注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。 根据需要使用委派的[权限](/graph/permissions-reference#application-resource-permissions)（即 Application.Read.All 和 Application.ReadWrite.All）或应用程序权限（即 Application.Read.All）。
-- 对于指定的 [设备](/graph/api/resources/device?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/device-checkmemberobjects?view=graph-rest-1.0)。
-
-### <a name="mail"></a>邮件
-- 使用 **conversationIndex** 属性可获取邮件在 Outlook 电子邮件对话中的位置。
-- 使用委派权限Mail.ReadBasic和应用程序权限Mail.ReadBasic.All，来获取[邮件](/graph/api/resources/message?view=graph-rest-1.0)或[邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源，跟踪更改，并针对邮件的更改通知管理[订阅](/graph/api/resources/subscription?view=graph-rest-1.0)。
-
-### <a name="users"></a>用户
-- 针对指定的[用户](/graph/api/resources/user?view=graph-rest-1.0)，[检查组成员身份](/graph/api/user-checkmemberobjects?view=graph-rest-1.0)。
-- 使用 **creationType** 属性查找用户帐户的创建方式，例如，是将帐户创建为普通学校或工作帐户还是作为外部帐户等。
-
-## <a name="november-2019-new-in-preview"></a>2019 年 11 月：预览版中的新增功能
-
-### <a name="calendar"></a>日历
-- [使用 Outlook 组织或参加联机会议](outlook-calendar-online-meetings.md)。
-- [为](/graph/api/place-update?view=graph-rest-beta)[会议室](/graph/api/resources/room?view=graph-rest-beta)和[会议室列表](/graph/api/resources/roomlist?view=graph-rest-beta)的丰富位置类型设置属性。
-
-### <a name="cloud-communication"></a>云通信
-[呼叫](/graph/api/resources/call?view=graph-rest-beta) 资源类型支持以下附加功能：
-
-- [传入呼叫上下文](/graph/api/resources/incomingcontext?view=graph-rest-beta)
-- 参与者的终结点类型，例如语音邮件或Skype for Business
-- [更新](/graph/api/call-updaterecordingstatus?view=graph-rest-beta)[参与者](/graph/api/resources/participant?view=graph-rest-beta)[录制](/graph/api/resources/recordinginfo?view=graph-rest-beta)信息的能力
-
-### <a name="devices-and-apps"></a>设备和应用
-Intune [11 月](changelog.md#november-2019)更新
-
-### <a name="education"></a>教育
-管理员能够通过与[类](/graph/api/resources/educationclass?view=graph-rest-beta)相关的[团队](/graph/api/resources/team?view=graph-rest-beta)  **classSettings** 属性启用全类设置。 .当前没有关于向监护人通知每周分配的设置。
-
-### <a name="identity-and-access"></a>身份和访问
-- 使用应用程序权限Policy.Read.All 读取组织的条件访问策略和命名位置，无需登录用户存在。
-- 允许 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) 处于仅报告状态，`enabledForReportingButNotEnforced`。
-- 使用委派权限ThreatAssessment.ReadWrite.All 或应用程序权限ThreatAssessment.Read.All，来读取（或创建，如果有读写权限）组织威胁存取请求。
-
-### <a name="mail"></a>邮件
-使用委派权限Mail.ReadBasic和应用程序权限Mail.ReadBasic.All，来管理更改[消息](/graph/api/resources/message?view=graph-rest-beta)资源更改通知的[订阅](/graph/api/resources/subscription?view=graph-rest-beta) 。
-
-### <a name="notifications"></a>通知
-使用新的轻量级通知 [Web SDK](https://aka.ms/GNSDK) 代替 [Project Rome SDK](https://github.com/Microsoft/project-rome)，以利用改进的身份验证模型和对使用 Web 推送的 Web 应用的支持。 
-
-### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
-首次推出的[配置文件](/graph/api/resources/profile?view=graph-rest-beta)资源，这是 Microsoft 服务中下一代人脉实体的丰富表示形式。 此资源与常见和切实可行的人脉属性有关，包括任何有意义的日期（如[周年纪念日](/graph/api/resources/personanniversary?view=graph-rest-beta)）的信息、[教育](/graph/api/resources/educationalactivity?view=graph-rest-beta)、[就业岗位](/graph/api/resources/workposition?view=graph-rest-beta)、[兴趣](/graph/api/resources/personinterest?view=graph-rest-beta)、[语言](/graph/api/resources/languageproficiency?view=graph-rest-beta)和[技能](/graph/api/resources/skillproficiency?view=graph-rest-beta)熟练程度、[项目参与](/graph/api/resources/projectparticipation?view=graph-rest-beta)、[网站关联](/graph/api/resources/personwebsite?view=graph-rest-beta)以及其他[帐户](/graph/api/resources/useraccountinformation?view=graph-rest-beta)和联系人信息。
-
-### <a name="search"></a>搜索
-首次推出的 [Microsoft 搜索 API](search-concept-overview.md)，它使应用用户可以获得由 Microsoft Graph 支持的更多最新、个性化和相关的搜索结果。 使用[查询](/graph/api/search-query?view=graph-rest-beta)功能，该功能默认情况下在 Microsoft 云中搜索 Outlook 邮件和事件以及 OneDrive 和 SharePoint 文件。 使用 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)中的[连接器](/microsoftsearch/connectors-overview)，将搜索数据包括在 Microsoft 云外部。 或者，[生成自己的连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases)、索引外部自定义项目和文件以及查询特定外部数据源。
-
-### <a name="teamwork"></a>团队合作
-使用以下 HTTP 请求语法获取与[团队](/graph/api/resources/team?view=graph-rest-beta)和[频道](/graph/api/resources/channel?view=graph-rest-beta)相关的[文件](/graph/api/resources/driveitem?view=graph-rest-beta)资源：
-
-```http
-GET /teams/{teamId}/channels/{channelId}/filesFolder
-```
-
-### <a name="users"></a>用户
-使用 **creationType** 属性查找用户帐户的创建方式，例如，是将帐户创建为普通学校或工作帐户还是作为外部帐户等。
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
 
