@@ -236,6 +236,12 @@ items:
                 href: notifications-integrating-with-android.md
               - name: iOS 应用集成
                 href: notifications-integrating-with-ios.md
+      - name: 人员和工作场所智能
+        items:
+          - name: 概述
+            href: social-intel-concept-overview.md
+          - name: 获取相关人员的信息
+            href: people-example.md
       - name: 个人联系人
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
@@ -286,12 +292,6 @@ items:
       - name: 网站和列表
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: 人员和工作场所智能
-        items:
-          - name: 概述
-            href: social-intel-concept-overview.md
-          - name: 获取相关人员的信息
-            href: people-example.md
       - name: 任务和计划
         href: planner-concept-overview.md
         displayName: Planner

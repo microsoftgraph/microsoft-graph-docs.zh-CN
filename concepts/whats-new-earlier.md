@@ -3,14 +3,80 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e178eeeae1c4dfd4b8dc6b09f33de95cc036dc5a
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 87dcbc3bef9998498f14b32d06eecc6aac1e9ed5
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895498"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119796"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="november-2019-new-and-generally-available"></a>2019 年 11 月：新版本和正式版
+
+### <a name="groups"></a>组
+- 使用委派或应用程序权限GroupMember.Read.All和GroupMember.ReadWrite.Al，来列出组、读取基本组属性，读取（并更新，如有读写权限）能够访问应用程序组的成员身份。
+- 使用应用程序权限Group.Create，创建不含已登录用户的组。
+- 对于指定的 [组](/graph/api/resources/group?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/group-checkmemberobjects?view=graph-rest-1.0)。
+
+### <a name="identity-and-access"></a>身份和访问
+- 注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。 根据需要使用委派的[权限](/graph/permissions-reference#application-resource-permissions)（即 Application.Read.All 和 Application.ReadWrite.All）或应用程序权限（即 Application.Read.All）。
+- 对于指定的 [设备](/graph/api/resources/device?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/device-checkmemberobjects?view=graph-rest-1.0)。
+
+### <a name="mail"></a>邮件
+- 使用 **conversationIndex** 属性可获取邮件在 Outlook 电子邮件对话中的位置。
+- 使用委派权限Mail.ReadBasic和应用程序权限Mail.ReadBasic.All，来获取[邮件](/graph/api/resources/message?view=graph-rest-1.0)或[邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源，跟踪更改，并针对邮件的更改通知管理[订阅](/graph/api/resources/subscription?view=graph-rest-1.0)。
+
+### <a name="users"></a>用户
+- 针对指定的[用户](/graph/api/resources/user?view=graph-rest-1.0)，[检查组成员身份](/graph/api/user-checkmemberobjects?view=graph-rest-1.0)。
+- 使用 **creationType** 属性查找用户帐户的创建方式，例如，是将帐户创建为普通学校或工作帐户还是作为外部帐户等。
+
+## <a name="november-2019-new-in-preview"></a>2019 年 11 月：预览版中的新增功能
+
+### <a name="calendar"></a>日历
+- [使用 Outlook 组织或参加联机会议](outlook-calendar-online-meetings.md)。
+- [为](/graph/api/place-update?view=graph-rest-beta)[会议室](/graph/api/resources/room?view=graph-rest-beta)和[会议室列表](/graph/api/resources/roomlist?view=graph-rest-beta)的丰富位置类型设置属性。
+
+### <a name="cloud-communication"></a>云通信
+[呼叫](/graph/api/resources/call?view=graph-rest-beta) 资源类型支持以下附加功能：
+
+- [传入呼叫上下文](/graph/api/resources/incomingcontext?view=graph-rest-beta)
+- 参与者的终结点类型，例如语音邮件或Skype for Business
+- [更新](/graph/api/call-updaterecordingstatus?view=graph-rest-beta)[参与者](/graph/api/resources/participant?view=graph-rest-beta)[录制](/graph/api/resources/recordinginfo?view=graph-rest-beta)信息的能力
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [11 月](changelog.md#november-2019)更新
+
+### <a name="education"></a>教育
+管理员能够通过与[类](/graph/api/resources/educationclass?view=graph-rest-beta)相关的[团队](/graph/api/resources/team?view=graph-rest-beta)  **classSettings** 属性启用全类设置。 .当前没有关于向监护人通知每周分配的设置。
+
+### <a name="identity-and-access"></a>身份和访问
+- 使用应用程序权限Policy.Read.All 读取组织的条件访问策略和命名位置，无需登录用户存在。
+- 允许 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) 处于仅报告状态，`enabledForReportingButNotEnforced`。
+- 使用委派权限ThreatAssessment.ReadWrite.All 或应用程序权限ThreatAssessment.Read.All，来读取（或创建，如果有读写权限）组织威胁存取请求。
+
+### <a name="mail"></a>邮件
+使用委派权限Mail.ReadBasic和应用程序权限Mail.ReadBasic.All，来管理更改[消息](/graph/api/resources/message?view=graph-rest-beta)资源更改通知的[订阅](/graph/api/resources/subscription?view=graph-rest-beta) 。
+
+### <a name="notifications"></a>通知
+使用新的轻量级通知 [Web SDK](https://aka.ms/GNSDK) 代替 [Project Rome SDK](https://github.com/Microsoft/project-rome)，以利用改进的身份验证模型和对使用 Web 推送的 Web 应用的支持。 
+
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+首次推出的[配置文件](/graph/api/resources/profile?view=graph-rest-beta)资源，这是 Microsoft 服务中下一代人脉实体的丰富表示形式。 此资源与常见和切实可行的人脉属性有关，包括任何有意义的日期（如[周年纪念日](/graph/api/resources/personanniversary?view=graph-rest-beta)）的信息、[教育](/graph/api/resources/educationalactivity?view=graph-rest-beta)、[就业岗位](/graph/api/resources/workposition?view=graph-rest-beta)、[兴趣](/graph/api/resources/personinterest?view=graph-rest-beta)、[语言](/graph/api/resources/languageproficiency?view=graph-rest-beta)和[技能](/graph/api/resources/skillproficiency?view=graph-rest-beta)熟练程度、[项目参与](/graph/api/resources/projectparticipation?view=graph-rest-beta)、[网站关联](/graph/api/resources/personwebsite?view=graph-rest-beta)以及其他[帐户](/graph/api/resources/useraccountinformation?view=graph-rest-beta)和联系人信息。
+
+### <a name="search"></a>搜索
+首次推出的 [Microsoft 搜索 API](search-concept-overview.md)，它使应用用户可以获得由 Microsoft Graph 支持的更多最新、个性化和相关的搜索结果。 使用[查询](/graph/api/search-query?view=graph-rest-beta)功能，该功能默认情况下在 Microsoft 云中搜索 Outlook 邮件和事件以及 OneDrive 和 SharePoint 文件。 使用 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)中的[连接器](/microsoftsearch/connectors-overview)，将搜索数据包括在 Microsoft 云外部。 或者，[生成自己的连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases)、索引外部自定义项目和文件以及查询特定外部数据源。
+
+### <a name="teamwork"></a>团队合作
+使用以下 HTTP 请求语法获取与[团队](/graph/api/resources/team?view=graph-rest-beta)和[频道](/graph/api/resources/channel?view=graph-rest-beta)相关的[文件](/graph/api/resources/driveitem?view=graph-rest-beta)资源：
+
+```http
+GET /teams/{teamId}/channels/{channelId}/filesFolder
+```
+
+### <a name="users"></a>用户
+使用 **creationType** 属性查找用户帐户的创建方式，例如，是将帐户创建为普通学校或工作帐户还是作为外部帐户等。
+
 
 ## <a name="october-2019-new-and-generally-available"></a>2019 年 10 月：新版本和正式版
 
@@ -170,7 +236,7 @@ Intune [8 月](changelog.md#august-2019)更新
 - 管理员可以[列出访问审查](/graph/api/accessreview-list?view=graph-rest-beta)，以高效地审核组成员身份、企业应用程序访问权限和角色分配。 定期访问审查可确保只有相应的人员才能继续以特定方式访问资源。
 
 ### <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
-最终用户可以使用 Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) 应用获取与管理时间、工作协作和工作生活平衡有关的见解。 现在，你可以使用[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) 整合与工作活动（如呼叫、聊天和电子邮件）所花时间相关的数据、以帮助提高用户的工作效率和幸福感。 
+最终用户可以使用 Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) 应用获取与管理时间、工作协作和工作生活平衡有关的见解。 现在，你可以使用[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) 整合与工作活动（如呼叫、聊天和电子邮件）所花时间相关的数据、以帮助提高用户的工作效率和幸福感。 
 
 
 ## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月：新版本和正式版 

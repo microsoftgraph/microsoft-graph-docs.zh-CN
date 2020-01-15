@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f2843f068bf8abb7612afdc0a21b68234324e52b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 0574908475bd5f20ae67e106dc727fb6f21bdd53
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538663"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119775"
 ---
 # <a name="list-workbookcommentreplies"></a>列出 workbookCommentReplies
 
@@ -61,7 +61,7 @@ GET /workbook/comments/{id}/replies
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
+GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/replies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]

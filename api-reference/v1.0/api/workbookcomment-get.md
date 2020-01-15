@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d67bd8f09658f64bcceded821dcc9564892275c5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: f4fb64993431200c4689f11d41eec58b2781f856
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538747"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119789"
 ---
 # <a name="get-workbookcomment"></a>获取 workbookComment
 
@@ -61,7 +61,7 @@ GET workbook/comments/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}
+GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcomment-csharp-snippets.md)]
