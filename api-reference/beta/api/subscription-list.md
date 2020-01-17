@@ -1,22 +1,22 @@
 ---
 title: 列出订阅
-description: " 有关详细信息, 请参阅以下方案。"
+description: " 有关详细信息，请参阅以下方案。"
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 97fed1e7271ab39bad64f1bb56ac1696e351b4cf
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d69d19cd51eb1bbb2ae7cd2ff25eef331e399a10
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722291"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216720"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 webhook 订阅的列表。 响应的内容取决于在其中调用应用程序的上下文。有关详细信息, 请参阅以下方案。
+检索 webhook 订阅的列表。 响应的内容取决于在其中调用应用程序的上下文。有关详细信息，请参阅以下方案。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "36722291"
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user)(工作或学校帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
-| [委派](/graph/auth-v2-user)(个人 Microsoft 帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
-| [Application](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
+| [委派](/graph/auth-v2-user)（工作或学校帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
+| [委派](/graph/auth-v2-user)（个人 Microsoft 帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
+| [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
 响应结果基于调用应用的上下文。 以下是常见方案的摘要：
 
@@ -80,7 +80,7 @@ GET /subscriptions
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_subscriptions"
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意: 为简洁起见, 可能会截断此处显示的响应。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

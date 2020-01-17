@@ -2,15 +2,15 @@
 title: 订阅资源类型
 description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 70af093b6ed782ba7bf447c339e5187439849970
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 39ca29e8f2cbe9ad2c861fc83856fe83c2164675
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844265"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216845"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "39844265"
 | id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | 布尔 | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
+| includeResourceData | Boolean | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
 | encryptionCertificate | string | 具有用于在通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
 

@@ -2,15 +2,15 @@
 title: 获取订阅
 description: 检索订阅的属性和关系。
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: db5e61329d5b8ce874e7748423e621740c5f8354
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 3afcdd042840f5955ad2a74055afc4e589f6a0bb
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703691"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216761"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -30,7 +30,7 @@ ms.locfileid: "38703691"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
+|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

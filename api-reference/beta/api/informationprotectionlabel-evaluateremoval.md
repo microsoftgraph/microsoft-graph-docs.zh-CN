@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca1a27b30152debe51add8f0b418d3983c13b746
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: acea1f8ba7021e76d069f8da60c7b5cb9bbe9604
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995933"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216713"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -47,19 +47,20 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}。必需。   |
-| Content-type  | application/json. Required. |
+| 名称          | 说明                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}。必需。                                                                                                                                                         |
+| Content-type  | application/json. Required.                                                                                                                                                       |
+| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数              | 类型                                                             | 说明                                                                                                                                                                                                   |
-| :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 参数              | 类型                                                             | 说明                                                                                                                         |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。 |
-| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | 必须由用户或应用程序逻辑提供的理由。                                                                                                                                         |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | 必须由用户或应用程序逻辑提供的理由。                                                               |
 
 
 ## <a name="response"></a>响应
@@ -83,6 +84,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

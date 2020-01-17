@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e4f2025d899cd5f6686eb6a3800d15ac8bf8526
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9c4b923279004c91b3e9d4e185d87f9ee15457ed
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995645"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216678"
 ---
 # <a name="get-informationprotectionlabel"></a>获取 informationProtectionLabel
 
@@ -43,9 +43,10 @@ GET /informationprotection/policy/labels
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}。必需。   |
+| 名称          | 说明                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}。必需。                                                                                                                                                         |
+| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -100,6 +101,7 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",

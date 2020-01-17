@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06031fd4887b417fe12858ca5d3f1622f58a4f96
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9f1012e7516ee635d9b44d1ae8a1277480aff6c8
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995617"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216671"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -56,10 +56,11 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}。必需。   |
-| Content-type  | application/json. Required. |
+| 名称          | 说明                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}。必需。                                                                                                                                             |
+| Content-type  | application/json. Required.                                                                                                                                           |
+| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -67,7 +68,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。                                                                         |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。                                                                                                                                                   |
 | classificationResults | [classificationResult](../resources/classificationresult.md)集合 | 包含由数据分类终结点返回的一组分类结果。 Classificaiton 信息用于根据 Office 365 安全与合规中心中的 Microsoft 信息保护策略标签配置确定适当的标签。 |
 
 ## <a name="response"></a>响应
@@ -91,6 +92,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

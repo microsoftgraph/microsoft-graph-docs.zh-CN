@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20a68ed4448c8762217ba0d37d368af63d58c8e9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d0676f1d9558e92fe5d033c44a48bcfad140b0f
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869463"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216768"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -41,7 +41,7 @@ ms.locfileid: "40869463"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取指定的邮件：
+要获取指定的邮件：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -50,7 +50,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-若要获取指定邮件的 MIME 内容，请执行以下操作：
+要获取指定邮件的 MIME 内容：
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用`$value`参数获取邮件的 MIME 内容。
+使用 `$value` 参数获取邮件的 MIME 内容。
 
 使用 " `$expand` **提及**" 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
 
@@ -90,7 +90,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
 
-指定`$value`参数将返回 MIME 格式的邮件内容，而不是**邮件**资源。
+如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是**邮件**资源。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1"></a>示例 1
@@ -125,6 +125,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 注意：为简洁起见，此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -182,6 +183,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -313,6 +315,7 @@ Prefer: outlook.body-content-type="text"
 下面是一个响应示例。 注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -374,6 +377,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -417,8 +421,10 @@ Content-type: application/json
 第五个示例获取已登录用户的邮箱中的邮件的 MIME 内容。
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
@@ -426,10 +432,14 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 #### <a name="response"></a>响应
 以下是答复。 MIME 内容以 `MIME-Version` 标头开头。 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -465,9 +475,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

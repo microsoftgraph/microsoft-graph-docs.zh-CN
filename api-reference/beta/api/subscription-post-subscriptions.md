@@ -2,15 +2,15 @@
 title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 资源的数据发生更改时接收通知。
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 487be3c7a50dcd5b09ece599f69b74248965eacf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 67e8aad098084bb3c33f412c44b1600c8c7f59d5
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870824"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216754"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -38,7 +38,7 @@ ms.locfileid: "40870824"
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意：** 在2020年1月，了 chatmessage 订阅将需要[加密](/graph/webhooks-with-resource-data)，如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。
+> **注意：** 了 chatmessage 订阅需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。
 
 > **注意：** 对 OneDrive 和 Outlook 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
 

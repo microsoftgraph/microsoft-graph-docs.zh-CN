@@ -2,15 +2,15 @@
 title: 获取订阅
 description: 检索订阅的属性和关系。
 localization_priority: Priority
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: fdd850b5965e20b4de2602368c3ece3fe47b65b5
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: a7d62e307505a78cb26328f925d578995d4f0592
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703803"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216248"
 ---
 # <a name="get-subscription"></a>获取订阅
 

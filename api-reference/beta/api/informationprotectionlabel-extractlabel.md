@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 043b82820418915f4e38aab1839fee6113b423ec
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: c04849feac987eefef82eb3e069645406218ff1f
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994408"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216304"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -41,17 +41,18 @@ POST /informationprotection/policy/labels/extractLabel
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明                    |
-| :------------ | :----------------------------- |
-| Authorization | Bearer {token}。必需。                 |
-| Content-type  | Content-type： application/json。 必填。 |
+| 名称          | 说明                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}。必需。                                                                                                                                                         |
+| Content-type  | Content-type： application/json。 必需。                                                                                                                                         |
+| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数   | 类型                                       | 说明                                                                                                                                                                                                   |
-| :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 参数   | 类型                                       | 说明                                                                                                                         |
+| :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo | [contentInfo](../resources/contentinfo.md) | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。 |
 
 ## <a name="response"></a>响应
@@ -75,6 +76,7 @@ POST /informationprotection/policy/labels/extractLabel
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
     "contentInfo": {

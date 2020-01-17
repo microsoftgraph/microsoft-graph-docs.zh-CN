@@ -2,15 +2,15 @@
 title: 更新订阅
 description: 通过延长到期时间续订订阅。
 localization_priority: Normal
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 45348dfd910224f215ee9c2e41fd2f2ee700a946
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ca6b1a813f7a4046e09ce0329f40897384473ebd
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703986"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216222"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -30,7 +30,7 @@ ms.locfileid: "38703986"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read | User.readbasic.all、Mail. Read |
+|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
