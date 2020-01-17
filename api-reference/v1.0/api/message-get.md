@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab57e15b88cef2ba1749c19a1b00d3521136f274
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cc45adb31d22502878cc7c8cad2c9d85eed3f91e
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865564"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216880"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -111,6 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -217,6 +218,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 下面是一个响应示例。 注意：为简洁起见，将截断响应对象中的邮件标头集。 所有标头都将通过实际调用返回。
 <!-- {
   "blockType": "response",
+  "name": "get_message_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -289,6 +291,7 @@ Prefer: outlook.body-content-type="text"
 下面是一个响应示例。 注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -319,19 +322,26 @@ Preference-Applied: outlook.body-content-type="text"
 第 4 个示例获取已登录用户的邮箱中邮件的 MIME 内容。
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
 #### <a name="response"></a>响应
 以下是答复。 MIME 内容以 `MIME-Version` 标头开头。 
+
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -367,9 +377,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

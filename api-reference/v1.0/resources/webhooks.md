@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph API 获取更改通知
 description: Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端。 客户端是一个 Web 服务，用于配置自身的 URL 以接收通知。 客户端应用使用通知在更改时更新其状态。 有关详细信息（包括如何订阅和处理传入通知），请参阅“设置用户数据更改的通知”。
 localization_priority: Priority
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 1722f888cc7e29e958a84720f8e714f2379db7da
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d951c7c188a9202b550092b0c51624cc4d0284ce
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033402"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216873"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 

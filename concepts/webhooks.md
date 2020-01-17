@@ -1,16 +1,16 @@
 ---
 title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
-author: piotrci
+author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e4bd9809524b5891f1883f62b8ef5c6fbaa5d01f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845026"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216831"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -53,7 +53,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 或 SharePoint/OneDrive for Business 驱动器根文件夹的订阅：`/drive/root`
 
-或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq 'newAlert'`、`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 

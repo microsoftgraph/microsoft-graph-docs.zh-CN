@@ -2,15 +2,15 @@
 title: 订阅资源类型
 description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 localization_priority: Priority
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 60219f50b78cf5c636fab1b24aa75922893002fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a37d4b6b9e30bc7f0d61bbe3fa92bf6c51ff3547
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033963"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216817"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 

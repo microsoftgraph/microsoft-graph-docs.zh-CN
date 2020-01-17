@@ -1,15 +1,15 @@
 ---
 title: 设置包含资源数据的更改通知（预览版）
 description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户端。 通知中可以包含资源属性。
-author: piotrci
+author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 2284e416ca50769098e4682c251326840229d60f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1a84035cd0e1e596e88124a5f75fdcbd1326defe
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866859"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216866"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
