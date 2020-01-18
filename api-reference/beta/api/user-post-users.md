@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0719415786a00b07485761c72985abcc47106dd0
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: e09525eaa1889a195d3a0d1c05793e6148d40ef1
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023101"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232040"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -116,8 +116,8 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
-[!NOTE]
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>[!NOTE]
+>为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -148,8 +148,8 @@ Content-type: application/json
 
 使用具有登录名的本地帐户标识、电子邮件地址（登录）和社交身份来创建新用户。 此示例通常用于 B2C 租户中的迁移方案。  
 
-[!NOTE] 
-对于本地帐户标识，必须禁用密码过期，并且必须同时禁用 "在下次登录时强制更改密码"。
+>[!NOTE] 
+>对于本地帐户标识，必须禁用密码过期，并且必须同时禁用 "在下次登录时强制更改密码"。
 
 #### <a name="request"></a>请求
 
