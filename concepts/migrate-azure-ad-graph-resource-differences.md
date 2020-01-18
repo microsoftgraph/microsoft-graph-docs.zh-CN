@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 中的资源与 Microsoft Graph 中的资�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb46ea7d4a1a5b66925b18beb131e912a7e89767
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fafdf2f5a32b1d0331249f0ea18ae2ff79591e0d
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656513"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234045"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的资源类型差异
 
@@ -32,7 +32,7 @@ ms.locfileid: "38656513"
 | [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> v1.0- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
 | [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> v1.0-_尚不可用_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [passwordProfile](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> v1.0-PasswordProfile ||
-| [策略](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[策略](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _（可能会更改）_ <br> v1.0-_尚不可用_ | 每个策略都将具有唯一的类型名称和结构。|
+| [策略](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[策略](/graph/api/resources/policy-overview?view=graph-rest-beta) <br> v1.0-_尚不可用_ | 每种类型的策略在 Microsoft Graph 中的**策略**URL 路径段下都有一个唯一的类型名称和结构。 在 Azure AD Graph 中，这是一种策略类型。 |
 | [ProvisioningError](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;_不可用_ <br> v1.0 1.0&nbsp;-&nbsp;_不可用_ | 此资源已被弃用。  但是，可以在[onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0)中找到描述任何 AD Connect 相关设置错误的新资源。 |
 | [ServiceEndpoint](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[终结点](/graph/api/resources/endpoint?view=graph-rest-beta) <br> v1.0-终结点_尚不可用_ | [终结点](/graph/api/resources/endpoint?view=graph-rest-beta)仅可用作[组](/graph/api/resources/group?view=graph-rest-beta)资源的一部分。|
 | [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> v1.0-_尚不可用_ | |

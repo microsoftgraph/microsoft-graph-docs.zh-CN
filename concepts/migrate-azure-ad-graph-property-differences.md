@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67f911224b48bf3b4b630336f0fc8184f64790f4
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2294956bd24a6fc984032b68ab1d2a7298a87e74
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656520"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233947"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -30,7 +30,6 @@ ms.locfileid: "38656520"
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br>property|备注|
 |---|---|---|
 | **appRoleAssignments** | &nbsp; - beta &nbsp; **appRoleAssignments** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
-| **creationType** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp;| |
 | **deletedTimestamp**| &nbsp; - beta &nbsp; **deletedDateTime** <br> &nbsp; **** v1.0 deletedDateTime &nbsp; - | |
 | **dirSyncEnabled** | &nbsp; -beta &nbsp; **onPremisesSyncEnabled** <br> &nbsp; **** v1.0 onPremisesSyncEnabled &nbsp; - | |
 | **facsimileTelephoneNumber** | &nbsp; - beta &nbsp; **faxNumber** <br> &nbsp; **** v1.0 faxNumber &nbsp; - | |
@@ -41,10 +40,10 @@ ms.locfileid: "38656520"
 | **oAuth2PermissionGrants** | &nbsp; - beta &nbsp; **oAuth2PermissionGrants** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; ||
 | **provisioningErrors** | &nbsp; - beta &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。  但是，可以在**onPremisesProvisioningErrors**中找到描述任何 AD Connect 相关设置错误的新属性。 |
 | **refreshTokensValidFromDateTime** | &nbsp;-beta&nbsp;**signinSessionsValidFromDateTime**<br>v1.0 尚_不可用_&nbsp;-&nbsp; | |
-| **signinNames** | &nbsp; - beta &nbsp; **标识/signInType** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 此属性现在是[objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta)资源的一部分。|
+| **signinNames** | &nbsp; - beta &nbsp; **标识/signInType** <br> &nbsp; - 1.0 &nbsp;版**标识/signInType** | 此属性现在是[objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0)资源的一部分。|
 | **telephoneNumber** | &nbsp; - beta &nbsp; **businessPhones** <br> &nbsp; **** v1.0 businessPhones &nbsp; - | |
 | **thumbnailPhoto** | &nbsp; - beta &nbsp; **照片**、照片 <br> v1.0 照片，照片**** &nbsp; - &nbsp; | Azure AD 缩略图照片在 Microsoft Graph 中不可用。  改为使用[照片 API](/graph/api/resources/profilephoto?view=graph-rest-1.0) 。 |
-| **userIdentities** | &nbsp; - beta &nbsp; **标识** <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
+| **userIdentities** | &nbsp; - beta &nbsp; **标识** <br> &nbsp; - 1.0 &nbsp;版**标识** | 有关更多详细信息，请参阅[objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0)资源类型。|
 | **userState** | &nbsp; - beta &nbsp; **externalUserState** <br> &nbsp; **** v1.0 externalUserState &nbsp; - | |
 | **userStateChangedOn** | &nbsp;-beta&nbsp;**externalUserStateChangeDateTime**<br>&nbsp;**** v1.0 externalUserStateChangeDateTime&nbsp;- | |
 
@@ -68,7 +67,7 @@ ms.locfileid: "38656520"
 | **applicationTemplateId** | &nbsp; - beta &nbsp; _尚不可用_ <br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
 | **命名** | &nbsp; - beta &nbsp; **signInAudience** <br> &nbsp; **** v1.0 signInAudience &nbsp; - | |
 | **errorUrl**| &nbsp; -beta &nbsp;_不可用_ <br> v1.0 1.0 &nbsp; - &nbsp;_不可用_   | 此属性已被弃用。|
-| **首页**| &nbsp; -beta &nbsp; **web/homePageUrl** <br> v1.0 web **/homePageUrl** &nbsp; - &nbsp; | 主页现在是新 web 资源的一部分。|
+| **homepage**| &nbsp; -beta &nbsp; **web/homePageUrl** <br> v1.0 web **/homePageUrl** &nbsp; - &nbsp; | 主页现在是新 web 资源的一部分。|
 | **informationalUrls**| &nbsp; -beta &nbsp;**信息** <br> &nbsp; - 1.0 &nbsp;版**信息** | |
 | **knownClientApplications**| &nbsp;-beta&nbsp;**api/knownClientApplications** <br> v1.0 api **/knownClientApplications** &nbsp; - &nbsp; | knownClientApplications 现在是新 api 资源的一部分。 |
 | **logoutUrl**| &nbsp; -beta &nbsp; **web/logoutUrl** <br> v1.0 web **/logoutUrl** &nbsp; - &nbsp; | logoutUrl 现在是 web 资源的一部分。 |
@@ -155,7 +154,7 @@ Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph �
 
 ## <a name="policy-property-differences"></a>策略属性差异
 
-目前，Microsoft Graph 中的策略资源（仅在预览中可用）与 Azure AD Graph 非常相似。  但是，它会发生更改，以便有命名的策略类型（如 tokenIssuancePolicy 或 tokenLifetimePolicy），而不是通用策略资源类型。
+在 Microsoft Graph 中，有命名的策略类型（如 tokenIssuancePolicy 或 tokenLifetimePolicy），而不是通用策略资源类型。 [策略概述](/graph/api/resources/policy-overview?view=graph-rest-beta)中提供了更多详细信息。 在1.0 版中，策略尚不可用。
 
 ## <a name="serviceendpoint-property-differences"></a>ServiceEndpoint 属性差异
 
