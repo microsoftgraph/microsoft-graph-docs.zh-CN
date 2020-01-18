@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: b8295c91f3c291389ca85fe18719c7249d11a03c
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843939"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232005"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -125,6 +125,7 @@ ms.locfileid: "39843939"
 |consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。 |
+|creationType|字符串|指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 只读。|
 |department|String|用户工作部门的名称。支持 $filter。|
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |employeeId|String|由组织分配给该用户的员工标识符。 支持 $filter。|
@@ -132,6 +133,7 @@ ms.locfileid: "39843939"
 |givenName|String|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
+|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br>支持 $filter。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|Boolean| 如果用户是资源帐户，则为 **true**，否则为 **false**。 Null 值应视为 **false**。|
@@ -425,6 +427,8 @@ ms.locfileid: "39843939"
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "String (timestamp)",
+  "creationType": "string",
   "department": "string",
   "displayName": "string",
   "employeeId": "string",
@@ -432,6 +436,7 @@ ms.locfileid: "39843939"
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "imAddresses": ["string"],
   "interests": ["string"],
   "isResourceAccount": false,
