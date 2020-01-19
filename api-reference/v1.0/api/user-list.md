@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f413e41b7b2a35bfd16fa16841fa68c10330660
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: f9648b505700b05b05a64f977cb94bbd7d92f6e0
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727416"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232033"
 ---
 # <a name="list-users"></a>列出用户
 
-检索 user 对象列表。
+检索 [user](../resources/user.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,6 @@ GET /users
 | 标头        | 值                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token}（必需）  |
-| Content-Type  | application/json           |
 
 ## <a name="request-body"></a>请求正文
 
@@ -163,7 +162,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalC
 
 ##### <a name="response"></a>响应
 
-注意：为简洁起见，可能会截断此处展示的响应对象。
+注意：为简洁起见，可能会截断此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -181,6 +180,53 @@ Content-length: 159
       "displayName": "displayName-value",
       "givenName": "givenName-value",
       "postalCode": "postalCode-value"
+    }
+  ]
+}
+```
+
+### <a name="example-3-find-a-user-account-using-a-sign-in-name"></a>示例 3：使用登录名查找用户帐户
+
+使用登录名（也称为本地帐户）在 B2C 租户中查找用户帐户。 此请求可由技术支持人员用于在 B2C 租户中查找客户的用户帐户（此示例中，B2C 租户是 contoso.onmicrosoft.com）。
+
+>[!NOTE]
+>根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+---
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }
