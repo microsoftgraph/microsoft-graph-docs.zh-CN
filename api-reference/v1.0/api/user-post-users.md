@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54c4ce8f21a2e62311d3931915f682f8f2366bfc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aebd847d9bb922867b7293d6f06f0ae65f23c8cb
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372549"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232026"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -46,7 +46,7 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表显示创建用户时所需的属性。
+下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -68,7 +68,9 @@ POST /users
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="example-1-create-a-user"></a>示例 1：创建用户
+
+#### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -114,7 +116,7 @@ Content-type: application/json
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -143,6 +145,95 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>示例 2：创建具有社交和本地帐户标识的用户
+
+创建一个新用户，该用户具有本地帐户标识（以登录名和电子邮件地址为登录凭据），并且具有社交标识。 此示例通常用于 B2C 租户中的迁移方案。  
+
+>[!NOTE] 
+>对于本地帐户标识，必须禁用密码过期，并且还必须禁用下次登录时强制更改密码。
+
+#### <a name="request"></a>请求
+
+<!-- {  
+  "blockType": "request",   
+  "name": "create_user_from_users_identities"   
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "password": "password-value"
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+
+---
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
