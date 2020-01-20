@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a2394d7e24ed1d7ab69f6dcf1f094f5d1661e14
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 979f680c36342e33e8e93e416c2357662978f4c6
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870391"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234031"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -41,7 +41,9 @@ ms.locfileid: "40870391"
 | [创建扩展](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
 | [列出扩展](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
 | [删除扩展](../api/application-delete-extensionproperty.md) | 无 | 从应用程序对象删除扩展属性。 |
-|[列出已分配策略](../api/policy-list-assigned.md)| [policy](policy.md) 集合| 获取已分配至此对象的所有策略。|
+|[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
+|[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
+|[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
 |[列出所有者](../api/application-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
 |[添加所有者](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到所有者集合添加所有者。|
 |[删除所有者](../api/application-delete-owners.md) |无| 从应用程序删除所有者。|
@@ -89,7 +91,7 @@ ms.locfileid: "40870391"
 |extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为空。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 Null。|
-|policy|[policy](policy.md) 集合|已分配至此应用程序的策略。|
+|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

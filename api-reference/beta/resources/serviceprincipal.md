@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 030f989badb50e6f05203a3681e132d1f3f79deb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 37a4311fe59498a8d210b3ccf6d7184e1263bfb5
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870094"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234024"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -31,7 +31,15 @@ ms.locfileid: "40870094"
 |[列出 createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
 |[列出 memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 从 memberOf 导航属性中获取此服务主体是其直接成员的组。|
 |[列出 transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出此服务主体所属的组。 此操作是可传递的，并包括此服务主体以嵌套方式所属的组。 |
-|[列出已分配策略](../api/policy-list-assigned.md)| [policy](policy.md) 集合| 获取已分配至此对象的所有策略。|
+|[分配 claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 向此对象分配 claimsMappingPolicy。|
+|[列出 claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 为此对象分配的 claimsMappingPolicies。|
+|[删除 claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
+|[分配 homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 向此对象分配 homeRealmDiscoveryPolicy。|
+|[列出 homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 为此对象分配的 homeRealmDiscoveryPolicies。|
+|[删除 homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 从此对象中删除 homeRealmDiscoveryPolicy。|
+|[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
+|[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
+|[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合| 获取 oAuth2PermissionGrant 对象集合。|
 |[列出 ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
 |[添加所有者](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到所有者集合创建新的所有者。|
@@ -74,14 +82,16 @@ ms.locfileid: "40870094"
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|为服务主体分配的应用程序。|
-|createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 NULL。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|为服务主体分配的应用程序。 只读。 可为 Null。|
+|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。|
+|createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 Null。|
+|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homeRealmDiscoveryPolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|与此服务主体关联的用户模拟授权。 只读。 可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
 |所有者|[directoryObject](directoryobject.md) 集合|拥有此服务主体的目录对象。 所有者是一组允许修改此对象的非管理员用户。 只读。 可为 Null。|
-|policy|[policy](policy.md) 集合|为此服务主体分配的策略。|
+|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
