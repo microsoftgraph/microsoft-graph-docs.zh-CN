@@ -4,12 +4,12 @@ description: 可选择两种方法中的一种来将文件附加到邮件，具�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 62d5496ba3e7a1ccb28af45922a254a6d10c6519
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 4b6aaa2e10ac1fc718d306921dab60b771c8b9e4
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726513"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216852"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>将大文件作为附件附加到 Outlook 邮件（预览）
 
@@ -26,7 +26,7 @@ ms.locfileid: "37726513"
 
 成功的操作返回 `HTTP 201 Created` 和新的 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) 实例，其中包含可在后续 `PUT` 操作中用于上传文件各部分的非跳转 URL。 **uploadSession** 提供一个临时存储位置，在此位置保存文件字节数，直到完整文件上传完毕。 
 
-**uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
+请务必请求 `Mail.ReadWrite` 权限以创建 **uploadSession**。 新的 **uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
 
 响应中的 **uploadSession** 对象还包含 **nextExpectedRanges** 属性，这指示初始上传开始位置应该为 0 字节。
 

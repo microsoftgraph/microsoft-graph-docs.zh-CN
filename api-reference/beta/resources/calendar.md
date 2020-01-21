@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 37e3bd6f4772e9df110af005f8a5e469a06a9fba
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 23b15d39d7f4ce7b0f0fe56bbf6c293c3f7854e3
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939430"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216692"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "37939430"
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
 |hexColor|字符串|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
-|id|String|组的唯一标识符。只读。|
+|id|String|日历的唯一标识符。只读。|
 |isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
 |isShared |Boolean |如果用户已与其他用户共享日历，则值为 true，否则为 false。 由于只有创建日历的用户才能共享日历，因此同一用户的 **isShared** 和 **isSharedWithMe** 不能为 true。 |

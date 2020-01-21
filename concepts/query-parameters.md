@@ -1,15 +1,15 @@
 ---
 title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
-author: piotrci
+author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 634d97a3947a4829bfe1eb9f4a0505b05d0a7bb6
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fc0bd9d650309159f60b5ad3dfaf618d58de3fc1
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969219"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216887"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -425,3 +425,8 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
+
+
+## <a name="see-also"></a>另请参阅
+
+- [查询参数限制](known-issues.md#query-parameter-limitations)

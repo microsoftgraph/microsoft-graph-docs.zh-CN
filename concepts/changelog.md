@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d65312934ddea65aa23b5953608019e5a6ddb128
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 98e11c3f2ca2746d4ade30ccb7b8661638b75f69
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119810"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216810"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -31,6 +31,7 @@ ms.locfileid: "41119810"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 增加了对包含资源数据的通知订阅的支持。 目前支持的资源是 Microsoft Teams 频道和聊天中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源。 订阅应用必须实施其他授权和解密代码才能使用此功能。 有关详细信息，请参阅[设置聊天消息（包括消息属性）的更改通知（预览版）](webhooks-with-resource-data.md)。|
+
 
 ### <a name="cloud-communications"></a>云通信
 
@@ -98,6 +99,7 @@ ms.locfileid: "41119810"
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | beta        | 添加了 [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta)、[get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) 和 [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) API 以管理 [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) 资源。|
+| 添加项        | beta        | 向 [evaluate application](/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)、[evaluate classification](/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)、[evaluate removal](/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta)、[extract label](/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)、[list label](/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta) 和 [get label](/graph/api/informationprotectionlabel-get?view=graph-rest-beta) 添加了可选请求标头 User-Agent。
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
 
@@ -119,7 +121,6 @@ ms.locfileid: "41119810"
 | 添加项        | 不适用          | 向[人员组件](/graph/toolkit/components/people)添加了 `user-ids` 属性。 |
 | 修补程序        | 不适用         | [Bug 修复和改进](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0)。 |
 
-
 ### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
 
 | **更改类型** | **版本**   | **说明**                          |
@@ -136,7 +137,7 @@ ms.locfileid: "41119810"
  
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | Beta | 为新的和编辑过的频道消息和聊天消息添加了[通知](/graph/api/subscription-post- subscriptions?view=graph-rest-beta)。 |
+| 添加项 | Beta | 为新的和编辑过的频道消息和聊天消息添加了[通知](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。 |
 | 添加项 | Beta | 添加了 [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) 资源及相关方法。|
 | 添加项 | Beta | 向 [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta) 实体添加了新的关系 `shiftPreferences`。 |
 | 更改 | Beta | 更新了执行班次资源（包括 [schedule](/graph/api/resources/schedule?view=graph-rest-beta)、[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)、[shift](/graph/api/resources/shift?view=graph-rest-beta)、[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)、[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)、[timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta)、[swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta) 和 [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta)）读写操作所需的应用程序权限。 **注意：** 应用程序权限当前为个人预览版，不可用于公共用途。|
@@ -2243,7 +2244,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 对象的集合。 |
-| Addition        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 实体。 |
+| 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 实体。 |
 | 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 的以下 CRUD 操作：[创建](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)、[获取](/graph/api/outlookcategory-get?view=graph-rest-1.0)、[更新](/graph/api/outlookcategory-update?view=graph-rest-1.0)和[删除](/graph/api/outlookcategory-delete?view=graph-rest-1.0)。 |
 | 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) 函数。 |
 | Addition        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) 函数。 |

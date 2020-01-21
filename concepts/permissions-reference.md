@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0f6c8ba4e08112860b74a0ed932fc11895ed13dd
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cb5dfc24011c07724b7116d2edb50397ddc74a2c
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870895"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216894"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1013,8 +1013,8 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息（预览版）|允许应用在没有登录用户的情况下读取组织中的 VTC 相关联机会议详细信息。|是|
-
+|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息 |允许应用在没有登录用户的情况下读取组织中的 VTC 相关联机会议详细信息。|是|
+|_OnlineMeetings.ReadWrite.All_|从应用阅读联机会议详细信息（已弃用）|**已弃用。请勿使用。** 使应用在无登录用户的情况下创建，阅读在线会议。|是|
 <br/>
 
 ### <a name="example-usage"></a>用法示例
@@ -1167,8 +1167,8 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |允许应用读取在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
-| _Place.ReadWrite.All_ |允许应用读取和写入在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
+| _Place.Read.All_ |   读取所有公司位置 | 允许应用读取在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
+| _Place.ReadWrite.All_ |   读取并写入所有公司位置 | 允许应用读取和写入在 Exchange Online 中为租户设置的公司位置（会议室和房间列表）。 |是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
