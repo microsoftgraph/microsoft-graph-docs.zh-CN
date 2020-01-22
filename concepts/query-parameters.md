@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc0bd9d650309159f60b5ad3dfaf618d58de3fc1
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: f5cee8933c13ea9f92ae14ae664e9c1492267ea1
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216887"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41251897"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -47,6 +47,15 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `/users?$skiptoken=X%274453707402000100000017...`|
+
+## <a name="other-odata-url-capabilities"></a>其他 OData URL 功能
+
+下列 OData 4.0 功能是 URL 区段，不是查询参数。
+
+| 名称                     | 说明 | 示例 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | 更新实体成员身份至集合。 | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | 检索或更新项的二进制值。 | `GET /me/photo/$value` |
 
 ## <a name="encoding-query-parameters"></a>对查询参数进行编码
 
