@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6f645cfdadbf529e2ed1e296232fe8ef3c8fd750
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 53f0c7b3d583d57438e6b6aef15c8606dd123452
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994411"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41495721"
 ---
 ```csharp
 
@@ -65,6 +65,7 @@ var contentInfo = new ContentInfo
 await graphClient.Informationprotection.Policy.Labels
     .ExtractLabel(contentInfo)
     .Request()
+    .Header("User-Agent","ContosoLOBApp/1.0")
     .PostAsync();
 
 ```

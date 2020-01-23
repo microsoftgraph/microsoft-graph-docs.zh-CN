@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1ad958cb2fb697a647ac5ad9d3eae7ff1e7c41ed
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 5bb1b530e11fddd848afdca3271cdc269d1f17f8
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35727260"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494818"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *office365GroupsActivityStorageList = [[NSMutableArray alloc] init];
-        office365GroupsActivityStorageList = [jsonFinal valueForKey:@"value"];
-        MSGraphOffice365GroupsActivityStorage *office365GroupsActivityStorage = [[MSGraphOffice365GroupsActivityStorage alloc] initWithDictionary:[office365GroupsActivityStorageList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphOffice365GroupsActivityStorage *office365GroupsActivityStorage = [[MSGraphOffice365GroupsActivityStorage alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

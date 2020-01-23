@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ca7244c033b2e0fc40840b036cf6e1b53e52f17c
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d1208a2ef112a943f25001c328bd00a02e87b4ea
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838867"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41493494"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var replies = await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies
+var replies = await graphClient.Drive.Items["{id}"].Workbook.Comments["{id}"].Replies
     .Request()
     .GetAsync();
 

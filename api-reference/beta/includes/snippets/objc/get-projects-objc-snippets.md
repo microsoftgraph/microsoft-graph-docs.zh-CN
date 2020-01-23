@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: da3149092fe7d3ddd84d368aaed3383a02cd7eee
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41493484"
 ---
-
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
@@ -11,13 +16,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *projectParticipationList = [[NSMutableArray alloc] init];
-		projectParticipationList = [jsonFinal valueForKey:@"value"];
-		MSGraphProjectParticipation *projectParticipation = [[MSGraphProjectParticipation alloc] initWithDictionary:[projectParticipationList objectAtIndex: 0] error:&nserror];
+        NSError *jsonError = nil;
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphProjectParticipation *projectParticipation = [[MSGraphProjectParticipation alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

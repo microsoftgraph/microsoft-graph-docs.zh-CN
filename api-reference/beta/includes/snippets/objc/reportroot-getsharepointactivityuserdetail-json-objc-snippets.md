@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 52824b78851b72d79b061b729f89991cb45da55f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2a0b1917f1ce0df95c2d91badbf56ad5b4894b67
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35727051"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494281"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *sharePointActivityUserDetailList = [[NSMutableArray alloc] init];
-        sharePointActivityUserDetailList = [jsonFinal valueForKey:@"value"];
-        MSGraphSharePointActivityUserDetail *sharePointActivityUserDetail = [[MSGraphSharePointActivityUserDetail alloc] initWithDictionary:[sharePointActivityUserDetailList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphSharePointActivityUserDetail *sharePointActivityUserDetail = [[MSGraphSharePointActivityUserDetail alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1a89ad157aa4ffc8826519d27cfda0fe63f188e1
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 98908fa9420cf72ef8357d192cd9e89551130424
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997872"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494543"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *personWebsiteList = [[NSMutableArray alloc] init];
-        personWebsiteList = [jsonFinal valueForKey:@"value"];
-        MSGraphPersonWebsite *personWebsite = [[MSGraphPersonWebsite alloc] initWithDictionary:[personWebsiteList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphPersonWebsite *personWebsite = [[MSGraphPersonWebsite alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

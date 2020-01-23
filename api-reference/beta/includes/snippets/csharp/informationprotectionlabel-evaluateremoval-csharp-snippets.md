@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42e34a29538f57a9e0a9922a4aad6c7a4988d6d5
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b0f52418266a43e6ca114dca34124205e489f359
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995934"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494883"
 ---
 ```csharp
 
@@ -71,6 +71,7 @@ var downgradeJustification = new DowngradeJustification
 await graphClient.Informationprotection.Policy.Labels
     .EvaluateRemoval(contentInfo,downgradeJustification)
     .Request()
+    .Header("User-Agent","ContosoLOBApp/1.0")
     .PostAsync();
 
 ```
