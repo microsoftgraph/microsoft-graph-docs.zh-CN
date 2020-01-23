@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 747a75c13143933273fad76a86429342a72feae9
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: d8da4afac67140886bc2758072aa16706d01ab0b
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234170"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41475743"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>更新 homerealmdiscoverypolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "41234170"
 
 更新[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,9 +49,9 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
+|displayName|String| 此策略的显示名称。 必填。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
@@ -63,6 +63,8 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_homerealmdiscoverypolicy"
@@ -81,6 +83,12 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-homerealmdiscoverypolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
