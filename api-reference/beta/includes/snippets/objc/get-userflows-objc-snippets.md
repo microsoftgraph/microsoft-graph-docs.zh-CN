@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9cc8d8224a32fc58726b1daf03a56e6f04bfacd7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: d1b0a5917a5bb6d7cba1b9c029ed58aef3aa1812
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938587"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494479"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *identityUserFlowList = [[NSMutableArray alloc] init];
-        identityUserFlowList = [jsonFinal valueForKey:@"value"];
-        MSGraphIdentityUserFlow *identityUserFlow = [[MSGraphIdentityUserFlow alloc] initWithDictionary:[identityUserFlowList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphIdentityUserFlow *identityUserFlow = [[MSGraphIdentityUserFlow alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

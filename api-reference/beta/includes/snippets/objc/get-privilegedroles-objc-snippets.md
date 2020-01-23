@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c8b93dda33b3011c18049426771d0cc1827de077
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: efa9313232278e0f4df84e1fbc822b14827719c3
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728552"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41498007"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *privilegedRoleList = [[NSMutableArray alloc] init];
-        privilegedRoleList = [jsonFinal valueForKey:@"value"];
-        MSGraphPrivilegedRole *privilegedRole = [[MSGraphPrivilegedRole alloc] initWithDictionary:[privilegedRoleList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphPrivilegedRole *privilegedRole = [[MSGraphPrivilegedRole alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
