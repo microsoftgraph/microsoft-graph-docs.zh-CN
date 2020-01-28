@@ -2,15 +2,15 @@
 title: 在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 description: 'Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。 '
 ms.date: 4/9/2019
-author: simonhult
+author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 402c3810d3f772f8bf6fa89b265bce13575217cb
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793008"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41477107"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
@@ -475,7 +475,12 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="types-of-results-included"></a>包含的结果类型
+默认情况下，Microsoft Graph 提供仅限邮箱的结果，不包括目录/组织结果。 要检索目录结果，请如下所示指定 HTTP 标头。
 
+```
+"X-PeopleQuery-QuerySources: Mailbox,Directory”
+```
 ### <a name="select-the-fields-to-return"></a>选择要返回的字段
 
 可以使用 *$select* 参数选择一个或多个字段，限制从服务器返回的数据量。始终会返回 `@odata.id` 字段。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7733cd1a29640331ecd4ab766bc3563fa29600b7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 91f4c33f7f44fc3d0254fc799c2c5b9e756b7386
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869956"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558786"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -34,11 +34,11 @@ ms.locfileid: "40869956"
 GET /auditLogs/directoryaudits
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
-| 名称                                                       | 说明                                                                   | 示例                                                                     |
+| 参数                                                       | 说明                                                                   | 示例                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [\$筛选器](/graph/query_parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
 | [\$返回页首](/graph/query_parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
@@ -46,7 +46,7 @@ GET /auditLogs/directoryaudits
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Filter 参数支持\$的属性
 
-| 属性名                                               | 支持的运算符 |
+| 属性                                                    | 支持的运算符 |
 | :----------------------------------------------------------- | :------------------ |
 | activityDisplayName                                          | eq、startswith      |
 | activityDateTime                                             | eq、ge、le          |

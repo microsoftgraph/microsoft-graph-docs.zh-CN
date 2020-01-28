@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fbb3ba929289da43aaa2dc22bc8dce799c1b63f8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 584e7016e74d7aeef8093af8e62e216a8f2870aa
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998621"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559052"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -36,12 +36,6 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
 |[更新团队照片](../api/team-update-photo.md) | 无 | 更新团队的照片（图片）。 |
-|[将应用发布到你的组织](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 创建仅对你的组织可见的 Teams 应用。 |
-|[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
-|[将选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将选项卡添加（安装）到团队的频道。|
-|[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [获取频道中的消息](../api/channel-list-messages.md) |
-|[在频道中创建 chatMessage](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
-|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。 |
 
 ## <a name="properties"></a>属性
 

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2dd382e21a92662615535f69edc3ca2c99c0d7b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9aa86509fdbcdaa49d07987eacbfe763b848408a
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964478"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559045"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -24,18 +24,18 @@ ms.locfileid: "35964478"
 |:---------------|:--------|:----------|
 |[列出团队中安装的应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用程序。|
 |[将应用添加到团队](../api/teamsappinstallation-add.md) |无 | 将应用添加（安装）到团队。|
-|[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除 (卸载) 应用程序。|
-|[升级在团队中安装的应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到最新版本的应用程序。|
-|[列出为用户安装的应用程序](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
-|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 在用户的个人作用域中添加 (安装) 应用程序。|
-|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除 (卸载) 用户个人作用域中的应用程序。|
-|[为用户安装的升级应用程序](../api/user-upgrade-teamsappinstallation.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
+|[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除（卸载）应用程序。|
+|[升级在团队中安装的应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到团队中安装的应用程序的最新版本。|
+|[列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
+|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 在用户的个人作用域中添加（安装）应用程序。|
+|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除（卸载）用户个人作用域中的应用程序。|
+|[升级为用户安装的应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一的 ID (而不是团队的 ap ID)。 |
+| id                  | string   | 唯一的 ID （而不是团队的 ap ID）。 |
 
 ## <a name="relationships"></a>关系
 
@@ -58,7 +58,7 @@ ms.locfileid: "35964478"
 }
 ```
 
-# <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

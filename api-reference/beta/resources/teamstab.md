@@ -1,22 +1,22 @@
 ---
 title: teamsTab 资源类型
-description: 'TeamsTab 是固定 (附加) 到团队中的频道的选项卡。 '
+description: 'TeamsTab 是固定（附加）到团队中的频道的选项卡。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 318e3df2d643011537c5d1d9597910fc6b045362
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d4b8bf73499bc2cca2a7497e57e3cce6c8cbe5b9
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007646"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559038"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TeamsTab 是固定 (附加) 到[团队](team.md)中的[频道](channel.md)的[选项卡](../resources/teamstab.md)。 
+TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[选项卡](../resources/teamstab.md)。 
 
 ## <a name="methods"></a>方法
 
@@ -36,10 +36,10 @@ TeamsTab 是固定 (附加) 到[团队](team.md)中的[频道](channel.md)的[�
 |  id              |   字符串                  |  唯一标识 "通道" 选项卡的特定实例的标识符。只读。     |
 |  displayName            |   string                  |  选项卡的名称。     |
 |  name            |   string                  |  被选项卡的名称。     |
-|  teamsAppId           |   string             |  选项卡的应用程序定义标识符。创建选项卡后, 不能更改此值。     |
+|  teamsAppId           |   string             |  选项卡的应用程序定义标识符。创建选项卡后，不能更改此值。     |
 |  sortOrderIndex  |   string                  |  用于对选项卡进行排序的顺序的索引。     |
-|  WebUrl          |   string                  |  选项卡实例的深层链接 url。 只读。     |
-|  设置        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后, 才会认为选项卡已配置。     |
+|  webUrl          |   string                  |  选项卡实例的深层链接 url。 只读。     |
+|  设置        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
 
 ## <a name="relationships"></a>关系
 

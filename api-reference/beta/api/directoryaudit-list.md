@@ -1,22 +1,22 @@
 ---
 title: 列出 directoryAudits
-description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体) 的列表方法 (beta 版本)。
+description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的列表方法（beta 版本）。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 811dd2d8739cb77c9b12db9226428e0c5901232d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 99a40b7b8f4446385632c3274924c733a20da24e
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718245"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558772"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志, 包括用户、应用、设备和组管理、特权标识管理 (PIM)、访问权限、使用条款、身份保护、密码管理 (SSPR 和管理员密码)重置) 和自助服务组管理。
+获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问权限、使用条款、身份保护、密码管理（SSPR 和管理员密码）重置）和自助服务组管理。
 
 ## <a name="permissions"></a>权限
 
@@ -39,9 +39,9 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息, 请参阅[OData 查询参数](/graph/query_parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅[OData 查询参数](/graph/query_parameters)。
 
-|名称     |说明                            |示例|
+|参数     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/directoryAudits?$top=1`|
@@ -49,7 +49,7 @@ GET /auditLogs/directoryAudits
 
 ### <a name="attributes-supported-by-filter-parameter"></a>$filter 参数支持的属性
 
-|属性名 |支持的运算符|
+|属性        |支持的运算符|
 |:----------------|:------|
 |activityDisplayName| eq、startswith|
 |activityDateTime| eq、ge、le|
@@ -82,7 +82,7 @@ GET /auditLogs/directoryAudits
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudits"
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
