@@ -10378,6 +10378,8 @@
                   href: api/team-get.md
                 - name: 更新团队
                   href: api/team-update.md
+                - name: 删除团队
+                  href: api/group-delete.md
                 - name: 存档团队
                   href: api/team-archive.md
                 - name: 解档团队
@@ -10475,14 +10477,14 @@
                   href: api/chat-list.md
                 - name: 获取聊天
                   href: api/chat-get.md
+                - name: 列出聊天成员
+                  href: api/conversationmember-list.md
+                - name: 获取聊天成员
+                  href: api/conversationmember-get.md
                 - name: 列出聊天中的消息
                   href: api/chatmessage-list.md
                 - name: 获取聊天中的消息
                   href: api/chatmessage-get.md
-                - name: 获取聊天中的成员
-                  href: api/conversationmember-list.md
-                - name: 获取聊天中的一个成员
-                  href: api/conversationmember-get.md
             - name: 聊天消息
               href: resources/chatmessage.md
               items:
