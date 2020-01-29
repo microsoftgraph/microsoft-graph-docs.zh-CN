@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 926f0a26a8d534bef199ddff72a07af4e455002d
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 1f9be33d5a4932951ca2a12a2a0bbad01a9f5b2c
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672843"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559024"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -37,7 +37,8 @@ ms.locfileid: "39672843"
 |[Get group](../api/group-get.md) | [group](group.md) |读取 group 对象的属性和关系。|
 |[Update group](../api/group-update.md) | 无 |更新 group 对象的属性。 |
 |[删除组](../api/group-delete.md) | 无 |删除组对象。 |
-|[增量](../api/group-delta.md)|组集合| 获取组的增量更改。 |
+|[List groups](../api/group-list.md) |[group](group.md)|读取所有 group 对象的属性和关系。|
+|[delta](../api/group-delta.md)|组集合| 获取组的增量更改。 |
 |[列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合| 列出组生命周期策略。 |
 |[List owners](../api/group-list-owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
 |[Add owner](../api/group-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。|

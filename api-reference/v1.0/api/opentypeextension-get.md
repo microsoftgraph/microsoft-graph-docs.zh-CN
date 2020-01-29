@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4639426918198622897e91fc945d107be0a26855
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0678c741172d34d6558aa56724378d18811432ee
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730174"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558779"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -112,11 +112,11 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
-|Name|值|说明|
+|参数|说明|示例|
 |:---------------|:--------|:-------|
-|$filter|string|返回其 **id** 与 `extensionId` 参数值匹配的扩展。|
-|具有 **any** 运算符的 $filter|string|返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。|
-|$expand|string|展开资源实例以包含扩展。 |
+|$filter|返回其 **id** 与 `extensionId` 参数值匹配的扩展。|[请求 3](#request-3)|
+|具有 **any** 运算符的 $filter|返回一个资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。|[请求 5](#request-5)|
+|$expand|展开资源实例以包含扩展。 |[请求 3](#request-3) 和[请求 5](#request-5)|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ff2b3fbd679022880728f482c2c2eb7555325c99
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: b9255dfc6b20f2fe2028c173a7704941249a15fb
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250727"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559031"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -36,11 +36,6 @@ ms.locfileid: "39250727"
 |[删除频道成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道的成员。 仅支持用于 `private` 的 `channelType`。|
 |[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
 |[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
-|[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
-|[获取选项卡](../api/teamstab-get.md) | [teamsTab](teamstab.md) | 读取固定到频道的选项卡。|
-|[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
-|[删除选项卡](../api/teamstab-delete.md) | 无 | 将选项卡添加（固定）到频道。|
-|[更新选项卡](../api/teamstab-update.md) | [teamsTab](teamstab.md) | 更新选项卡属性。|
 |[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
 
 ## <a name="properties"></a>属性
@@ -62,7 +57,7 @@ ms.locfileid: "39250727"
 |messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为空。 此 API 目前仅支持读取消息，但最终也会支持写入消息。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
 |成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
-|driveItem|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
+|filesFolder|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
