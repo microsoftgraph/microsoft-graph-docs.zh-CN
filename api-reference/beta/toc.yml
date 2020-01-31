@@ -8913,66 +8913,24 @@
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
             - name: Policy
-              href: resources/policy-overview.md
+              href: resources/policy.md
               items:
-                - name: 基于活动的超时策略
-                  href: resources/activitybasedtimeoutpolicy.md
-                  items:
-                    - name: 创建
-                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-                    - name: 列出
-                      href: api/activitybasedtimeoutpolicy-list.md
-                    - name: 获取
-                      href: api/activitybasedtimeoutpolicy-get.md
-                    - name: 更新
-                      href: api/activitybasedtimeoutpolicy-update.md
-                    - name: 删除
-                      href: api/activitybasedtimeoutpolicy-delete.md
-                - name: 声明映射策略
-                  href: resources/claimsmappingpolicy.md
-                  items:
-                    - name: 创建
-                      href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                    - name: 列出
-                      href: api/claimsmappingpolicy-list.md
-                    - name: 获取
-                      href: api/claimsmappingpolicy-get.md
-                    - name: 更新
-                      href: api/claimsmappingpolicy-update.md
-                    - name: 删除
-                      href: api/claimsmappingpolicy-delete.md
-                    - name: 列出已应用到应用程序的策略
-                      href: api/claimsmappingpolicy-list-appliesto.md
-                - name: 主页领域发现策略
-                  href: resources/homerealmdiscoverypolicy.md
-                  items:
-                    - name: 创建
-                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                    - name: 列出
-                      href: api/homerealmdiscoverypolicy-list.md
-                    - name: 获取
-                      href: api/homerealmdiscoverypolicy-get.md
-                    - name: 更新
-                      href: api/homerealmdiscoverypolicy-update.md
-                    - name: 删除
-                      href: api/homerealmdiscoverypolicy-delete.md
-                    - name: 列出已应用到应用程序的策略
-                      href: api/homerealmdiscoverypolicy-list-appliesto.md
-                - name: 令牌生存期策略
-                  href: resources/tokenlifetimepolicy.md
-                  items:
-                    - name: 创建
-                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                    - name: 列出
-                      href: api/tokenlifetimepolicy-list.md
-                    - name: 获取
-                      href: api/tokenlifetimepolicy-get.md
-                    - name: 更新
-                      href: api/tokenlifetimepolicy-update.md
-                    - name: 删除
-                      href: api/tokenlifetimepolicy-delete.md
-                    - name: 列出已应用到应用程序的策略
-                      href: api/tokenlifetimepolicy-list-appliesto.md
+                - name: 列出策略
+                  href: api/policy-list.md
+                - name: 创建策略
+                  href: api/policy-post.md
+                - name: 获取策略
+                  href: api/policy-get.md
+                - name: 更新策略
+                  href: api/policy-update.md
+                - name: 删除策略
+                  href: api/policy-delete.md
+                - name: 分配策略
+                  href: api/policy-assign.md
+                - name: 列出已分配策略
+                  href: api/policy-list-assigned.md
+                - name: 列出已应用到应用程序的策略
+                  href: api/policy-list-appliesto.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -9049,7 +9007,7 @@
                     - name: 托管的资源
                       href: resources/governanceresource.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/governanceresource-list.md
                         - name: 获取
                           href: api/governanceresource-get.md
@@ -9255,7 +9213,7 @@
             - name: 用户流
               href: resources/identityuserflow.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/identityuserflow-list.md
                 - name: 创建
                   href: api/identityuserflow-post-userflows.md
@@ -9677,7 +9635,7 @@
                 - name: Skills
                   href: resources/skillproficiency.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/profile-list-skills.md
                     - name: 创建
                       href: api/profile-post-skills.md
@@ -9690,7 +9648,7 @@
                 - name: Web 帐户
                   href: resources/webaccount.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/profile-list-webaccounts.md
                     - name: 创建
                       href: api/profile-post-webaccounts.md
@@ -9703,7 +9661,7 @@
                 - name: 网站
                   href: resources/personwebsite.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/profile-list-websites.md
                     - name: 创建
                       href: api/profile-post-websites.md
