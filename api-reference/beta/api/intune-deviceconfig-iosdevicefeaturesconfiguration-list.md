@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0475eb86a43fa8653af2e1c319e5ba499eaa88b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b882b952a2c1ac41440e26d57626bea668629e2e
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949045"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635956"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>列出 iosDeviceFeaturesConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "39949045"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6472
+Content-Length: 7737
 
 {
   "value": [
@@ -214,6 +214,36 @@ Content-Length: 6472
         "value": "dmFsdWU="
       },
       "singleSignOnExtension": {
+        "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+        "realm": "Realm value",
+        "domains": [
+          "Domains value"
+        ],
+        "blockAutomaticLogin": true,
+        "cacheName": "Cache Name value",
+        "credentialBundleIdAccessControlList": [
+          "Credential Bundle Id Access Control List value"
+        ],
+        "domainRealms": [
+          "Domain Realms value"
+        ],
+        "isDefaultRealm": true,
+        "passwordBlockModification": true,
+        "passwordExpirationDays": 6,
+        "passwordExpirationNotificationDays": 2,
+        "userPrincipalName": "User Principal Name value",
+        "passwordRequireActiveDirectoryComplexity": true,
+        "passwordPreviousPasswordBlockCount": 2,
+        "passwordMinimumLength": 5,
+        "passwordMinimumAgeDays": 6,
+        "passwordRequirementsDescription": "Password Requirements Description value",
+        "requireUserPresence": true,
+        "activeDirectorySiteCode": "Active Directory Site Code value",
+        "passwordEnableLocalSync": true,
+        "blockActiveDirectorySiteAutoDiscovery": true,
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      },
+      "iosSingleSignOnExtension": {
         "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
         "realm": "Realm value",
         "domains": [

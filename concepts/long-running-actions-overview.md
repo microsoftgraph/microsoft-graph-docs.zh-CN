@@ -3,19 +3,19 @@ title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 08584750feba670b0041f50696b75b3f7e6910b5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 470ef7ea7fd3597bec7c22b5d97cff38a5ef5a75
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730314"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635087"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 
 
 某些 API 响应完成所需的时间不确定。
 Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。
-此模式可让应用等待轮询长时间运行操作的状态更新，而无需任何等待操作完成的请求。
+此模式为您的应用程序提供了一种在长时间运行的操作上轮询状态更新的方法，而无需等待该操作完成任何请求。
 
 常规模式包括以下步骤：
 
@@ -31,7 +31,7 @@ Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操�
 因为数据量较大，所以此请求可能需要几秒钟才能完成。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
 ```http
@@ -53,7 +53,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,7 +132,7 @@ Content-type: application/json
 可以使用 resourceId 处理此新项，例如：
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lro-copy-item-example-complete",
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

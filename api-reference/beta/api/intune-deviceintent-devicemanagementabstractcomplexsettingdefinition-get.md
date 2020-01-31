@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ad7be8acec8d943357db1471d33cec910442c9e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 728ed25ed5fa71ca95229a9038a6fc5e7f2bdedb
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946236"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635752"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>获取 deviceManagementAbstractComplexSettingDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "39946236"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 928
+Content-Length: 1142
 
 {
   "value": {
@@ -79,13 +79,17 @@ Content-Length: 928
     "displayName": "Display Name value",
     "isTopLevel": true,
     "description": "Description value",
+    "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
     "keywords": [
       "Keywords value"
     ],
     "constraints": [
       {
-        "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+        "supportedTypes": [
+          "Supported Types value"
+        ]
       }
     ],
     "dependencies": [
@@ -94,7 +98,10 @@ Content-Length: 928
         "definitionId": "Definition Id value",
         "constraints": [
           {
-            "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+            "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+            "supportedTypes": [
+              "Supported Types value"
+            ]
           }
         ]
       }

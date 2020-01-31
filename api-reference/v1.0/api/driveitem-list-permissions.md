@@ -7,16 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: e1348a36e71a8ecc694f2a61f5056b12efd02399
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 668ec3bf50c54bfb922438eb5ceb042cf2f1c36f
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864780"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636831"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
 
-列出[driveItem](../resources/driveitem.md)上的有效共享权限。
+列出[driveItem](../resources/driveitem.md)的有效共享权限。
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 

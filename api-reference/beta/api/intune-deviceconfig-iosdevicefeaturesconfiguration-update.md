@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f1efaa1912b6c95398ca9fcff31e47730a5b034
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2ec6e7b11d3b3672efc2b49dcb3fe8a5ecc325d4
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949038"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635949"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>更新 iosDeviceFeaturesConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "39949038"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +51,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 下表显示创建 [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -74,7 +74,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Kerberos 登录设置，使接收设备上的应用能够顺利进行身份验证。|
 |wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|壁纸显示位置说明符。 可取值为：`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens`。|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|墙纸图像必须是 PNG 或 JPEG 格式。 它需要具有 iOS 8 或更高版本的受监督的设备。|
-|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。|
+|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 弃用：改用 IOSSingleSignOnExtension。|
+|iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|
 
 
 
@@ -88,7 +89,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5571
+Content-length: 6716
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -261,6 +262,36 @@ Content-length: 5571
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+  },
+  "iosSingleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
@@ -270,7 +301,7 @@ Content-length: 5571
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5743
+Content-Length: 6888
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -418,6 +449,36 @@ Content-Length: 5743
     "value": "dmFsdWU="
   },
   "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+  },
+  "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
     "realm": "Realm value",
     "domains": [

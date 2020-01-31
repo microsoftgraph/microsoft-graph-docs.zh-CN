@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955727"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636586"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -39,6 +39,7 @@ ms.locfileid: "39955727"
 - [Android 设备所有者全局代理](intune-deviceconfig-androiddeviceownerglobalproxy.md)
 - [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Android 设备所有者全局代理直接](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
+- [Android 设备所有者导入的 PFX 证书配置文件](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者 SCEP 证书配置文件](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -105,6 +106,7 @@ ms.locfileid: "39955727"
 - [应用保险箱应用程序控制类型](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Apple 设备功能配置基础](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Apple 使用者名称格式](intune-deviceconfig-applesubjectnameformat.md)
+- [Apple VPN 始终启用配置](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Apple VPN 配置](intune-deviceconfig-applevpnconfiguration.md)
 - [Apple VPN 连接类型](intune-deviceconfig-applevpnconnectiontype.md)
 - [应用程序防护阻止剪贴板共享类型](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
@@ -138,6 +140,7 @@ ms.locfileid: "39955727"
 - [Defender 可能不需要的应用操作](intune-deviceconfig-defenderpotentiallyunwantedappaction.md)
 - [Defender 示例提交提示](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Defender 保护类型](intune-deviceconfig-defenderprotectiontype.md)
+- [Defender 实时扫描方向](intune-deviceconfig-defenderrealtimescandirection.md)
 - [Defender 扫描类型](intune-deviceconfig-defenderscantype.md)
 - [Defender 安全中心 IT 联系人显示类型](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [应用类型中的 Defender 安全中心通知](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
@@ -260,6 +263,7 @@ ms.locfileid: "39955727"
 - [iOS 证书配置文件](intune-deviceconfig-ioscertificateprofile.md)
 - [iOS 证书配置文件基准](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS 合规性策略](intune-deviceconfig-ioscompliancepolicy.md)
+- [iOS 凭据单一登录扩展](intune-deviceconfig-ioscredentialsinglesignonextension.md)
 - [iOS 自定义配置](intune-deviceconfig-ioscustomconfiguration.md)
 - [iOS 派生的凭据身份验证配置](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS 设备功能配置](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
@@ -276,11 +280,14 @@ ms.locfileid: "39955727"
 - [iOS 主屏幕页](intune-deviceconfig-ioshomescreenpage.md)
 - [iOS 导入的 PFX 证书配置文件](intune-deviceconfig-iosimportedpfxcertificateprofile.md)
 - [iOS kerberos 单一登录扩展](intune-deviceconfig-ioskerberossinglesignonextension.md)
+- [iOS 展台模式应用程序类型](intune-deviceconfig-ioskioskmodeapptype.md)
 - [iOS 网络使用规则](intune-deviceconfig-iosnetworkusagerule.md)
 - [iOS 通知警报类型](intune-deviceconfig-iosnotificationalerttype.md)
 - [iOS 通知设置](intune-deviceconfig-iosnotificationsettings.md)
 - [iOS PKCS 证书配置文件](intune-deviceconfig-iospkcscertificateprofile.md)
+- [iOS 重定向单一登录扩展](intune-deviceconfig-iosredirectsinglesignonextension.md)
 - [iOS SCEP 证书配置文件](intune-deviceconfig-iosscepcertificateprofile.md)
+- [iOS 单一登录扩展](intune-deviceconfig-iossinglesignonextension.md)
 - [iOS 单一登录设置](intune-deviceconfig-iossinglesignonsettings.md)
 - [iOS 信任的根证书](intune-deviceconfig-iostrustedrootcertificate.md)
 - [iOS 更新配置](intune-deviceconfig-iosupdateconfiguration.md)
@@ -309,6 +316,7 @@ ms.locfileid: "39955727"
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
+- [macOS 凭据单一登录扩展](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [macOS 自定义应用配置](intune-deviceconfig-macoscustomappconfiguration.md)
 - [macOS 自定义配置](intune-deviceconfig-macoscustomconfiguration.md)
 - [macOS 设备功能配置](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
@@ -324,7 +332,9 @@ ms.locfileid: "39955727"
 - [macOS 内核扩展](intune-deviceconfig-macoskernelextension.md)
 - [macOS 启动项目](intune-deviceconfig-macoslaunchitem.md)
 - [macOS PKCS 证书配置文件](intune-deviceconfig-macospkcscertificateprofile.md)
+- [macOS 重定向单一登录扩展](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
+- [macOS 单一登录扩展](intune-deviceconfig-macossinglesignonextension.md)
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 配置](intune-deviceconfig-macoswificonfiguration.md)
@@ -332,6 +342,8 @@ ms.locfileid: "39955727"
 - [托管所有设备证书状态](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [受管理的设备证书状态](intune-deviceconfig-manageddevicecertificatestate.md)
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
+- [托管设备移动应用配置设置状态](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
+- [托管设备移动应用配置状态](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [托管设备报告的应用](intune-deviceconfig-manageddevicereportedapp.md)
 - [媒体内容分级（澳大利亚）](intune-deviceconfig-mediacontentratingaustralia.md)
 - [媒体内容分级（加拿大）](intune-deviceconfig-mediacontentratingcanada.md)
@@ -380,10 +392,13 @@ ms.locfileid: "39955727"
 - [分级英国电视类型](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [分级美国电影类型](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [分级美国电视类型](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
+- [重定向单一登录扩展](intune-deviceconfig-redirectsinglesignonextension.md)
 - [所需密码类型](intune-deviceconfig-requiredpasswordtype.md)
 - [受限的应用状态](intune-deviceconfig-restrictedappsstate.md)
 - [受限的应用冲突](intune-deviceconfig-restrictedappsviolation.md)
+- [停用计划的托管设备](intune-deviceconfig-retirescheduledmanageddevice.md)
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)
+- [计划的停用状态](intune-deviceconfig-scheduledretirestate.md)
 - [安全评估帐户类型](intune-deviceconfig-secureassessmentaccounttype.md)
 - [使用 d m 的安全引导一种类型](intune-deviceconfig-securebootwithdmatype.md)
 - [服务启动类型](intune-deviceconfig-servicestarttype.md)
@@ -397,6 +412,7 @@ ms.locfileid: "39955727"
 - [单一登录扩展](intune-deviceconfig-singlesignonextension.md)
 - [网站安全级别](intune-deviceconfig-sitesecuritylevel.md)
 - [软件更新状态摘要](intune-deviceconfig-softwareupdatestatussummary.md)
+- [指定的固定网络插件](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [状态管理设置](intune-deviceconfig-statemanagementsetting.md)
 - [使用者可选名称类型](intune-deviceconfig-subjectalternativenametype.md)
 - [使用者名称格式](intune-deviceconfig-subjectnameformat.md)
@@ -425,9 +441,11 @@ ms.locfileid: "39955727"
 - [VPN 路由](intune-deviceconfig-vpnroute.md)
 - [VPN 服务器](intune-deviceconfig-vpnserver.md)
 - [VPN 服务器证书类型](intune-deviceconfig-vpnservercertificatetype.md)
+- [VPN 服务异常操作](intune-deviceconfig-vpnserviceexceptionaction.md)
 - [VPN 流量规则](intune-deviceconfig-vpntrafficrule.md)
 - [VPN 流量规则应用类型](intune-deviceconfig-vpntrafficruleapptype.md)
 - [VPN 流量规则路由策略类型](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
+- [VPN 隧道配置类型](intune-deviceconfig-vpntunnelconfigurationtype.md)
 - [Web 浏览器 cookie 设置](intune-deviceconfig-webbrowsercookiesettings.md)
 - [每周计划](intune-deviceconfig-weeklyschedule.md)
 - [欢迎屏幕会议信息](intune-deviceconfig-welcomescreenmeetinginformation.md)

@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955573"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636544"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -34,6 +34,7 @@ ms.locfileid: "39955573"
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
+- [联合管理符合条件类型](intune-devices-comanagementeligibletype.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器操作](intune-devices-configurationmanageraction.md)
 - [Configuration manager 操作类型](intune-devices-configurationmanageractiontype.md)
@@ -78,6 +79,7 @@ ms.locfileid: "39955573"
 - [设备管理意向设备状态](intune-deviceintent-devicemanagementintentdevicestate.md)
 - [设备管理意向设备状态摘要](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
 - [设备管理意向设置类别](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [设备管理意向设置秘密约束](intune-deviceintent-devicemanagementintentsettingsecretconstraint.md)
 - [设备管理意向用户状态](intune-deviceintent-devicemanagementintentuserstate.md)
 - [设备管理意向用户状态摘要](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [设备管理脚本分配](intune-devices-devicemanagementscriptassignment.md)
@@ -85,14 +87,20 @@ ms.locfileid: "39955573"
 - [设备管理脚本组分配](intune-devices-devicemanagementscriptgroupassignment.md)
 - [设备管理脚本运行摘要](intune-devices-devicemanagementscriptrunsummary.md)
 - [设备管理脚本用户状态](intune-devices-devicemanagementscriptuserstate.md)
+- [设备管理设置应用程序约束](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [设备管理设置布尔约束](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [设备管理设置类别](intune-deviceintent-devicemanagementsettingcategory.md)
+- [设备管理设置集合约束](intune-deviceintent-devicemanagementsettingcollectionconstraint.md)
 - [设备管理设置比较](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [设备管理设置定义](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [设备管理设置依赖性](intune-deviceintent-devicemanagementsettingdependency.md)
+- [设备管理设置注册类型约束](intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md)
+- [设备管理设置文件约束](intune-deviceintent-devicemanagementsettingfileconstraint.md)
 - [设备管理设置实例](intune-deviceintent-devicemanagementsettinginstance.md)
 - [设备管理设置 integer 约束](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [设备管理设置配置文件约束](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [设备管理设置 regex 约束](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [设备管理设置所需的约束](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
 - [设备管理设置字符串长度约束](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [设备管理设置 xml 约束](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [设备管理字符串设置实例](intune-deviceintent-devicemanagementstringsettinginstance.md)
@@ -108,6 +116,7 @@ ms.locfileid: "39955573"
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
 - [设备保护概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
+- [设备命令行管理程序脚本](intune-devices-deviceshellscript.md)
 - [磁盘类型](intune-devices-disktype.md)
 - [嵌入式 SIM 卡激活代码](intune-esim-embeddedsimactivationcode.md)
 - [嵌入式 SIM 卡激活代码池](intune-esim-embeddedsimactivationcodepool.md)
@@ -127,6 +136,7 @@ ms.locfileid: "39955573"
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
 - [托管设备](intune-devices-manageddevice.md)
+- [托管设备体系结构](intune-devices-manageddevicearchitecture.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
 - [托管设备型号和制造商](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [托管设备概述](intune-devices-manageddeviceoverview.md)

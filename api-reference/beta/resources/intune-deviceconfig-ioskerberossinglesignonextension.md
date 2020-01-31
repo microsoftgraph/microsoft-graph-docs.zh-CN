@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcc8b8eecbee0794699736929c68bb4b28de0bed
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2719d46f6a80d8f3dc97a60be0e97e6cc8a043bd
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955538"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636558"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>iosKerberosSingleSignOnExtension 资源类型
 
@@ -21,32 +21,32 @@ ms.locfileid: "39955538"
 表示 iOS 设备的 Kerberos 类型单一登录扩展配置文件。
 
 
-继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)
+继承自[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|型|字符串|获取或设置此配置文件的区分大小写的领域名称。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|域|String collection|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|blockAutomaticLogin|Boolean|启用或禁用密钥链用法。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|cacheName|字符串|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|credentialBundleIdAccessControlList|String collection|获取或设置允许访问 Kerberos 票证授予票证的应用捆绑包 Id 的列表。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|domainRealms|String collection|获取或设置自定义域领域映射的领域列表。 领域区分大小写。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|isDefaultRealm|Boolean|如果为 true，则将选择此配置文件的领域作为默认领域。 如果配置了多个 Kerberos 类型配置文件，则必须执行此步骤。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordBlockModification|Boolean|启用或禁用密码更改。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordExpirationDays|Int32|替代默认密码到期天数（天）。 对于大多数域，此值是自动计算的。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期的天数（默认值为15）。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|userPrincipalName|字符串|获取或设置要用于此配置文件的原理用户名。 不需要包含领域名称。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordRequireActiveDirectoryComplexity|Boolean|启用或禁用密码是否必须符合 Active Directory 的复杂性要求。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordPreviousPasswordBlockCount|Int32|获取或设置要阻止的以前密码的数目。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordMinimumLength|Int32|获取或设置密码的最小长度。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordMinimumAgeDays|Int32|获取或设置用户可以再次更改密码之前的最小天数。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordRequirementsDescription|字符串|获取或设置密码复杂性要求的说明。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|requireUserPresence|Boolean|获取或设置是否需要通过触摸 ID、面孔 ID 或密码进行身份验证以访问密钥链条目。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|activeDirectorySiteCode|字符串|获取或设置 Active Directory 站点。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordEnableLocalSync|Boolean|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|blockActiveDirectorySiteAutoDiscovery|Boolean|启用或禁用 Kerberos 扩展是否可以自动确定其站点名称。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
-|passwordChangeUrl|字符串|获取或设置用户启动密码更改时将发送到的 URL。 继承自[kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
+|型|字符串|获取或设置此配置文件的区分大小写的领域名称。|
+|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
+|blockAutomaticLogin|Boolean|启用或禁用密钥链用法。|
+|cacheName|字符串|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
+|credentialBundleIdAccessControlList|String 集合|获取或设置允许访问 Kerberos 票证授予票证的应用捆绑包 Id 的列表。|
+|domainRealms|String 集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
+|isDefaultRealm|Boolean|如果为 true，则将选择此配置文件的领域作为默认领域。 如果配置了多个 Kerberos 类型配置文件，则必须执行此步骤。|
+|passwordBlockModification|Boolean|启用或禁用密码更改。|
+|passwordExpirationDays|Int32|替代默认密码到期天数（天）。 对于大多数域，此值是自动计算的。|
+|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期的天数（默认值为15）。|
+|userPrincipalName|字符串|获取或设置要用于此配置文件的原理用户名。 不需要包含领域名称。|
+|passwordRequireActiveDirectoryComplexity|Boolean|启用或禁用密码是否必须符合 Active Directory 的复杂性要求。|
+|passwordPreviousPasswordBlockCount|Int32|获取或设置要阻止的以前密码的数目。|
+|passwordMinimumLength|Int32|获取或设置密码的最小长度。|
+|passwordMinimumAgeDays|Int32|获取或设置用户可以再次更改密码之前的最小天数。|
+|passwordRequirementsDescription|字符串|获取或设置密码复杂性要求的说明。|
+|requireUserPresence|Boolean|获取或设置是否需要通过触摸 ID、面孔 ID 或密码进行身份验证以访问密钥链条目。|
+|activeDirectorySiteCode|字符串|获取或设置 Active Directory 站点。|
+|passwordEnableLocalSync|Boolean|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
+|blockActiveDirectorySiteAutoDiscovery|Boolean|启用或禁用 Kerberos 扩展是否可以自动确定其站点名称。|
+|passwordChangeUrl|字符串|获取或设置用户启动密码更改时将发送到的 URL。|
 
 ## <a name="relationships"></a>关系
 无

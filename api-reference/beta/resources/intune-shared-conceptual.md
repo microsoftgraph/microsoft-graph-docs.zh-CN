@@ -4,12 +4,12 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088271"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636824"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -25,6 +25,7 @@ ms.locfileid: "38088271"
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
+- [BitLocker 恢复密码旋转类型](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [公司门户操作](intune-shared-companyportalaction.md)
 - [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
@@ -56,9 +57,15 @@ ms.locfileid: "38088271"
 - [IP 范围](intune-shared-iprange.md)
 - [IPv4 范围](intune-shared-ipv4range.md)
 - [IPv6 范围](intune-shared-ipv6range.md)
+- [关键字布尔值对](intune-shared-keybooleanvaluepair.md)
+- [键整数值对](intune-shared-keyintegervaluepair.md)
+- [关键实数值对](intune-shared-keyrealvaluepair.md)
+- [键字符串值对](intune-shared-keystringvaluepair.md)
+- [键类型值对](intune-shared-keytypedvaluepair.md)
 - [键/值对](intune-shared-keyvaluepair.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
+- [管理代理类型](intune-shared-managementagenttype.md)
 - [MDM Windows 信息保护策略](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [适用于企业的 Microsoft 应用商店分配设置](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [MIME 内容](intune-shared-mimecontent.md)
