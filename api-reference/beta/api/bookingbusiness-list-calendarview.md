@@ -1,22 +1,22 @@
 ---
 title: 列出 Bookings 日历视图
-description: 获取 bookingBusiness 的 bookingAppointment 对象的集合, 该集合在指定的日期范围内发生。
+description: 获取 bookingBusiness 的 bookingAppointment 对象的集合，该集合在指定的日期范围内发生。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 272df1dbcf64531a3fcce88778465511022ec6e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3eb5cee33c29af782bd3ae9719efe2d75a7bb68c
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720247"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651972"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合, 该集合在指定的日期范围内发生。
+获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合，该集合在指定的日期范围内发生。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,36 +25,44 @@ ms.locfileid: "36720247"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
-
 ```
+
+## <a name="query-parameters"></a>查询参数
+
+在请求 URL 中，提供以下必要查询参数的值。
+
+| 参数    | 类型   |描述|
+|:---------------|:--------|:----------|
+|start|DateTimeOffset|时间范围的开始日期和时间，以 ISO 8601 格式表示，如 UTC 或 UTC 时差。 例如，2018年1月1日午夜 UTC 将如下所示： ' 2018-01-01T00：00： 00Z '，PST 的相同时间如下所示： ' 2017-12-31T16：00： 00-08： 00 '。|
+|end|DateTimeOffset|时间范围的结束日期和时间，以 ISO 8601 格式表示，即 UTC 或 UTC 时差。 例如，2018年1月1日的 3am UTC 如下所示： ' 2018-01-01T03：00： 00Z '，PST 中的相同时间如下所示： ' 2017-12-31T19：00： 00-08： 00 '。|
+
+和的值使用其对应的值中指定的时区偏移量进行解释，如果存在，则不受`Prefer: outlook.timezone`标头值的影响。 `end` `start`
+
+此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求 URL 中，提供以下查询参数（含值）。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|start|DateTimeOffset|时间范围的开始日期和时间, 以 ISO 8601 格式表示, 如 UTC 或 UTC 时差。 例如, 2018 年1月1日午夜 UTC 将如下所示: ' 2018-01-01T00:00: 00Z ', PST 的相同时间如下所示: ' 2017-12-31T16:00:00-08:00 '。|
-|end|DateTimeOffset|时间范围的结束日期和时间, 以 ISO 8601 格式表示, 即 UTC 或 UTC 时差。 例如, 2018 年1月1日的 3am UTC 如下所示: ' 2018-01-01T03:00: 00Z ', PST 中的相同时间如下所示: ' 2017-12-31T19:00:00-08:00 '。|
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。
+如果成功，此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
@@ -70,7 +78,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

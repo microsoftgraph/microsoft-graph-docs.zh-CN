@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f7cf6d2a0c040053d03e74de1991b7db675ff977
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: be7304f603cac5de8256f540b5df31f897c4f1ad
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939409"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652205"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest 资源类型
 
@@ -96,14 +96,14 @@ ms.locfileid: "37939409"
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。|
 |bodyPreview|字符串|邮件正文中的前 255 个字符。|
-|类别|String collection|与邮件关联的类别。|
+|categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|字符串|邮件的版本。|
 |conversationId|字符串|电子邮件所属对话的 ID。|
 |conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
-|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
+|发件人|[recipient](recipient.md)|要从其发送邮件的邮箱的所有者。 在大多数情况下，此值与**发件人**属性相同，但共享或委派方案除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
 |id|字符串|只读。|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
@@ -120,13 +120,13 @@ ms.locfileid: "37939409"
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|邮件中的提及的相关信息。处理 `GET` /messages 请求时，服务器会设置此属性并默认将其包含在响应中。若邮件中无提及，则服务器返回 NULL。可选。 |
 |parentFolderId|字符串|邮件的父 MailFolder 的唯一标识符。|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| 如果会议更新更改了会议结束时间，则此属性指定上一个会议结束时间。|
-|previousLocation|[Location](location.md)| 如果会议更新更改了会议位置，则此属性指定上一个会议位置。|
+|previousLocation|[位置](location.md)| 如果会议更新更改了会议位置，则此属性指定上一个会议位置。|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)| 如果会议更新更改了会议开始时间，则此属性指定上一个会议的开始时间。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
 |responseRequested|Boolean|如果发件人希望被邀请者将响应发送给请求的会议，则设置为 true。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)、[共享日历或代理](/graph/outlook-share-delegate-calendar.md)发送邮件时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
@@ -138,7 +138,7 @@ ms.locfileid: "37939409"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|
@@ -165,7 +165,7 @@ ms.locfileid: "37939409"
 |[取消订阅](../api/message-unsubscribe.md)|无|使用 List-Unsubscribe 标头中的第一个 mailto 命令中指定的数据和地址发送邮件。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[添加附件](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取按名称标识的开放扩展。|

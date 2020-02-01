@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd79c6f23b87ebcaa9f766f4beab901d6b97d4d8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 605b4fa7a890d1f2a74b44fe00eb3e978a2ee5dd
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724314"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652035"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -26,7 +26,7 @@ ms.locfileid: "36724314"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。  |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -90,7 +90,7 @@ GET /users/delta
 - 如果之前从未设置属性，则它不会包括在响应中。
 
 
-> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外, delta 响应由于包含所有属性值 (如[示例 2](#example-2-selecting-three-properties)中所示), 因此变大。
+> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外，Delta 响应往往过大，因为它们包含所有属性值，如[示例 2](#example-2-selecting-three-properties) 所示。
 
 ### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
 
@@ -103,13 +103,13 @@ GET /users/delta
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-default-properties"></a>示例 1: 默认属性
+### <a name="example-1-default-properties"></a>示例 1：默认属性
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 没有 `$select` 参数，因为将跟踪并返回默认的属性集。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/users/delta
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -173,13 +173,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-selecting-three-properties"></a>示例 2: 选择三个属性
+### <a name="example-2-selecting-three-properties"></a>示例 2：选择三个属性
 
 #### <a name="request"></a>请求
 
-下一个示例显示了使用默认响应行为选择三个更改跟踪属性的初始请求。
+下一个示例所示为通过默认响应行为选择三种更改跟踪属性时的初始请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta_select"
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -205,7 +205,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 #### <a name="response"></a>响应
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意, 所有这三个属性都包含在响应中, 并且不知道是在获取之后`deltaLink`更改的。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，所有三种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后哪些属性发生了更改。
 
 <!-- {
   "blockType": "response",
@@ -231,13 +231,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-alternative-minimal-response-behavior"></a>示例 3: 替代最小响应行为
+### <a name="example-3-alternative-minimal-response-behavior"></a>示例 3：备用最小响应行为
 
 #### <a name="request"></a>请求
 
-下一个示例显示了使用可选的最小响应行为选择三个更改跟踪属性的初始请求。
+下一个示例所示为通过备用最小响应行为选择三种更改跟踪属性时的初始请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta_minimal"
@@ -255,7 +255,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

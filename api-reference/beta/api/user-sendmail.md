@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fe255a3f4e314d6624948a28c504236a589e81a3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 34c2b0e9c06bbafdf9a384d24ea9472af2b7d1e8
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421825"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652177"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "36421825"
 
 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
 
-在同一**sendMail**操作调用中, 可以执行以下操作:
+在同一**sendMail**操作调用中，可以执行以下操作：
 
 - 包含[附件](../resources/attachment.md)
 - 在新邮件中使用[提及](../resources/mention.md)调用其他用户
@@ -48,15 +48,15 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
 |邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
-如果要使用**提及**在新邮件中呼叫其他用户, 请执行以下操作:
+如果要使用**提及**在新邮件中呼叫其他用户，请执行以下操作：
 
 - 在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。
-- 对于**提及**属性中的每个提及, 您必须指定**提到**的属性。
+- 对于**提及**属性中的每个提及，您必须指定**提到**的属性。
 
 ## <a name="response"></a>响应
 
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ##### <a name="request-1"></a>请求 1
 下面的示例展示了在即时创建和发送邮件的请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -110,7 +110,7 @@ Content-length: 512
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -129,9 +129,9 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例显示了登录用户 Samantha 展台的邮件。 此外, 该消息还包括其他用户 Dana Swope。
+下一个示例显示了登录用户 Samantha 展台的邮件。 此外，该消息还包括其他用户 Dana Swope。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -171,7 +171,7 @@ Content-length: 344
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-mentions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -191,7 +191,7 @@ HTTP/1.1 202 Accepted
 ##### <a name="request-3"></a>请求 3
 以下示例将创建一个带 Internet 消息标头的消息并进行发送。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -235,7 +235,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -248,6 +248,57 @@ Content-type: application/json
   "blockType": "response",
   "truncated": true
 } -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-4"></a>请求 4
+
+下一个示例将创建带有文件附件的邮件，并发送邮件。
+
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_attachment"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "Meet for lunch?",
+    "body": {
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "meganb@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "attachment.txt",
+        "contentType": "text/plain",
+        "contentBytes": "SGVsbG8gV29ybGQh"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-4"></a>响应 4
+
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

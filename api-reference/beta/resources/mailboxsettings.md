@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0df39f5fb94f648e8d5c5a8b0ff9a10c7a9a7efa
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6d966ecb599d98c92bf1e70eca1f61fb665e359d
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939283"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652042"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "37939283"
 |archiveFolder|string|用户存档文件夹的文件夹 ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。|
 |dateFormat|string|用户邮箱的日期格式。|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者，还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者，还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。 默认值为`sendToDelegateOnly`。|
 |语言|[localeInfo](localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
