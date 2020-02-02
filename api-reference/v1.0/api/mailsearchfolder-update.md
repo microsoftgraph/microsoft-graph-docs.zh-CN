@@ -5,18 +5,18 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 600f1ba5c384b6b895eb992e55cb17e45e659e77
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8a572b19e076bf2436a0083cf46a54457d3a34b6
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374897"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652184"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
 更新[mailSearchFolder](../resources/mailsearchfolder.md)对象的可写属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,18 +44,18 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
-| filterQuery | String | 用于筛选邮件的 OData 查询。 |
+| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索，而不是`false`指应改为进行浅表搜索。 |
+| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[mailFolder](../resources/mailfolder.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[mailFolder](../resources/mailfolder.md)对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面是一个更新搜索文件夹的**filterQuery**属性的示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEzM"],
@@ -78,7 +78,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +109,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 0,
   "totalItemCount": 0,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -129,7 +128,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    
+
   ]
 }
 -->

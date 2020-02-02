@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a37f7ad648d68382ff2a4cd6b37d0fa511d0952
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ce68a5c04b75eb457cd7efe92f09ca35d6bfa4ab
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702466"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651993"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -109,8 +109,7 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "totalItemCount": 60
 }
 ```
 
@@ -174,7 +173,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

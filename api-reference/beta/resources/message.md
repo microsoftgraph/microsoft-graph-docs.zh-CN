@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 361b1c6eee1c4015bb543677a20af4e955e4f042
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ac78388695817fc286cb99a53debbd99c930f12b
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870171"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651944"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -106,7 +106,7 @@ ms.locfileid: "40870171"
 |conversationIndex|Edm.Binary|指出消息在对话中的位置。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
-|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
+|发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。 |
 |id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
@@ -122,7 +122,7 @@ ms.locfileid: "40870171"
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件时，可以将此属性设置为其他值，[对于共享日历，或设置为代理人](/graph/outlook-share-delegate-calendar.md)。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|

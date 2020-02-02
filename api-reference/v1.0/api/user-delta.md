@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23cdad3959502c71aac1edf19cfb2e8d6342c2db
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7623e9fd7cddcddd3e806fab9d1b886ed96b0413
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727570"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651979"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -24,7 +24,7 @@ ms.locfileid: "36727570"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求

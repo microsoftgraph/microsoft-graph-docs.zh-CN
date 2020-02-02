@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 68cd814afae41f89a8101af4e08bc635aec4ab24
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 74bf8d6071bcd043983df7244c18fd69988c6407
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863884"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652170"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -75,7 +75,7 @@ ms.locfileid: "40863884"
 |importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
-|isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
+|isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|

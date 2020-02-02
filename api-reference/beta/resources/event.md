@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: a89ae11fe89421763241313989aab8d6a839e03d
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757129"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652219"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -118,7 +118,7 @@ ms.locfileid: "38757129"
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息（即 **onlineMeeting** 指向 [onlineMeetingInfo](onlinemeetinginfo.md) 资源）则为 `True`，反之则为 `false`。 默认值为 `false`（**onlineMeeting** 为 `null`）。 可选。 <br> 将 **isOnlineMeeting** 设置为 `true` 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，Outlook 将忽略对 **isOnlineMeeting** 的任何进一步更改，并且会议仍保持联机。 |
-|isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
+|isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |位置|[位置](location.md)|事件的位置。|
