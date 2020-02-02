@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3e02b245010ddcd7243d3859fd1192ab8c6a0bf4
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 45c0d34fbbf04d8203092a33c4f4d499b1f7bdb4
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216747"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651769"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -61,6 +61,11 @@ ms.locfileid: "41216747"
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://msdn.microsoft.com/library/office/dn589798.aspx)。
+
+> [!NOTE]
+> 如果响应未提供 `Retry-After` 标头，我们建议实施指数退避重试策略。 构建大型应用程序时，还可以实现[更高级的模式](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)。 
+> 
+> Microsoft Graph SDK 已实施依赖于 `Retry-After` 标头或默认为指数退避重试策略的处理程序。
 
 ## <a name="service-specific-limits"></a>服务特定限制
 
