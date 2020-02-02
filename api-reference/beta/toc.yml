@@ -41,6 +41,8 @@
               href: /graph/tutorials/change-notifications
             - name: 缺少 Outlook 通知（预览版）
               href: /graph/webhooks-outlook-authz?context=graph/api/beta
+            - name: 与资源数据有关的通知（预览版）
+              href: /graph/webhooks-with-resource-data?context=graph/api/beta
         - name: 跟踪更改
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
@@ -898,7 +900,7 @@
                 - name: 音频路由组
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: 创建
+                    - name: Create
                       href: api/call-post-audioroutinggroups.md
                     - name: 获取
                       href: api/audioroutinggroup-get.md
@@ -909,7 +911,7 @@
             - name: 在线会议
               href: resources/onlinemeeting.md
               items:
-                - name: 创建
+                - name: Create
                   href: api/application-post-onlinemeetings.md
                 - name: 获取
                   href: api/onlinemeeting-get.md
@@ -966,7 +968,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: 获取
                   href: api/bookingbusiness-get.md
@@ -1007,7 +1009,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-customers.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-customers.md
                 - name: 获取
                   href: api/bookingcustomer-get.md
@@ -1020,7 +1022,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-services.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-services.md
                 - name: 获取
                   href: api/bookingservice-get.md
@@ -1033,7 +1035,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: 获取
                   href: api/bookingstaffmember-get.md
@@ -8499,7 +8501,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: 列表
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: 创建
+                    - name: Create
                       href: api/conditionalaccessroot-post-policies.md
                     - name: 获取
                       href: api/conditionalaccesspolicy-get.md
@@ -8525,7 +8527,7 @@
                           href: resources/countrynamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/countrynamedlocation-get.md
@@ -8539,7 +8541,7 @@
                           href: resources/ipnamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/ipnamedlocation-get.md
@@ -8741,14 +8743,14 @@
                   items:
                     - name: 列表
                       href: api/accesspackageresourcerequest-list.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
                   href: resources/accesspackageresourcerequest.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
@@ -9758,9 +9760,9 @@
             - name: 分析（预览版）
               href: resources/useranalytics.md
               items:
-                - name: 设置
+                - name: Settings
                   items:
-                    - name: 设置
+                    - name: Settings
                       href: resources/settings.md
                     - name: 获取设置
                       href: api/useranalytics-get-settings.md
