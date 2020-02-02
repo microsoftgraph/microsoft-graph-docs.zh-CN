@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b0897fe2ba6b22fad7f0bf1febf8ad51c86fffe6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b63f1e8b455f300ee438f6568cf4d499fc072f41
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732276"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636821"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders')
-    .post({mailFolder : mailFolder});
+    .post(mailFolder);
 
 ```
