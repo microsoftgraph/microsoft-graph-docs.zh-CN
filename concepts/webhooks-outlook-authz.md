@@ -4,12 +4,12 @@ description: 由于用户密码重置等安全事件，Outlook 可能会暂停�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 481dbee58a5ee761816e05c88d44e115da736035
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: ad690749db14bdb8994e1bfe85b0b312029657a2
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216838"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651776"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>减少 Outlook 资源丢失订阅和通知（预览版） 
 
@@ -37,6 +37,8 @@ Outlook 中的某些事件可能导致订阅被删除。 这些事件包括：
 创建订阅时，你可以使用 **lifecycleNotificationUrl** 属性指定单独的通知终结点。 如果指定终结点，所有当前和未来类型的生命周期通知都将传递到那里。 否则，`subscriptionRemoved` 和 `missed` 通知都将传递到所有现有订阅的现有 **notificationUrl**。
 
 > **注意：** 只能使用 Microsoft Graph beta API 设置或读取 **lifecycleNotificationUrl** 属性。 但是，使用 beta API 创建的订阅与使用 v1.0 创建的订阅存储在同一个生产环境中，因此除了使用 v1.0 API 创建的订阅外，还可以实现新 Outlook 流程。
+
+> 通过 v1.0 API 创建的订阅将收到生命周期通知。 
 
 ### <a name="subscription-request-example"></a>订阅请求示例
 

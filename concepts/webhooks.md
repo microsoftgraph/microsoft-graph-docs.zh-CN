@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 54775b566c26f0b6bc99fd1a8482fe5b12c5d1fa
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216831"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651762"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -197,6 +197,7 @@ notification 对象具有以下属性：
 | changeType | string | 引发通知的事件类型。 例如，邮件接收时为 `created`，或将邮件标记为已读时为 `updated`。 |
 | resource | string | 资源相对于 `https://graph.microsoft.com` 的 URI。 |
 | resourceData | object | 此属性的内容取决于要订阅资源的类型。 |
+| tenantId | string | 发出通知的租户的 ID。 |
 
 例如，对于 Outlook 资源，`resourceData` 包含以下字段：
 
@@ -222,6 +223,7 @@ notification 对象具有以下属性：
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -267,6 +269,7 @@ notification 对象具有以下属性：
 - [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
 - [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [更改通知教程](/graph/tutorials/change-notifications)
+- [生命周期通知（预览版）](/graph/concepts/webhooks-outlook-authz.md)
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0
 [对话]: /graph/api/resources/conversation?view=graph-rest-1.0

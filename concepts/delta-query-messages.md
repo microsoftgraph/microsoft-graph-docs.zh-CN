@@ -4,12 +4,12 @@ description: Delta 查询可通过一系列的查询文件夹中查询邮件的�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 383c7a1bc0a2e129d859b17101f80ee1638d22fa
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: c51c1e79e96068805ca37630d28cae0854f414dd
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578834"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 
@@ -42,6 +42,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 - 对于邮件，Delta 查询支持 `$select`、`$top` 和 `$expand`。
 - 提供对 `$filter` 和 `$orderby` 的有限支持：
   - 唯一支持的 `$filter` 表达式是 `$filter=receivedDateTime+ge+{value}` 或 `$filter=receivedDateTime+gt+{value}`。
+  - 在增量查询中应用 `$filter` 最多仅返回 5000 个邮件。
   - 唯一支持的 `$orderby` 表达式是 `$orderby=receivedDateTime+desc`。如果不包含 `$orderby` 表达式，则不能保证返回顺序。
 - 不支持 `$search`。
 
