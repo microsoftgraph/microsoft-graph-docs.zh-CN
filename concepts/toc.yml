@@ -91,8 +91,12 @@ items:
             href: outlook-calendar-online-meetings.md
           - name: 安排定期事件
             href: outlook-schedule-recurring-events.md
+          - name: 共享或委托日历（预览版）
+            href: outlook-share-or-delegate-calendar.md
           - name: 获取共享事件
             href: outlook-get-shared-events-calendars.md
+          - name: 创建共享事件
+            href: outlook-create-event-in-shared-delegated-calendar.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
       - name: 云通信
