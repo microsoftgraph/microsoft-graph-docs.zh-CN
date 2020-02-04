@@ -1,19 +1,19 @@
 ---
 title: 'group: delta'
-description: 获取新创建、更新或删除的组, 包括组成员身份更改, 而无需对整个组集合执行完全读取。 有关详细信息, 请参阅 Using Delta Query。
+description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 Using Delta Query。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 68e2d68715f488433d2185656ea325f80b50575d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1205e975599a2c185ed2a54adf1f219b8bfd053d
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720905"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711715"
 ---
 # <a name="group-delta"></a>group: delta
-获取新创建、更新或删除的组, 包括组成员身份更改, 而无需对整个组集合执行完全读取。 有关详细信息, 请参阅[Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -21,9 +21,9 @@ ms.locfileid: "36720905"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group. All、Directory.accessasuser.all、Group、all、all、all、all 和 all。 All  |
+|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group. All、Read. all、Group、All、All、All |
+|应用程序 | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /groups/delta
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用`$expand=members`获取成员身份更改。
+- 您可以使用`$select=members`获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -71,7 +71,7 @@ GET /groups/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌, 它可以是`nextLink` url, 也`deltaLink`可以是 url。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是`nextLink` url，也`deltaLink`可以是 url。
 
 - 如果返回 `nextLink`URL：
   - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -107,7 +107,7 @@ GET /groups/delta
 
 下面展示了示例请求。 没有 `$select` 参数，因为将跟踪并返回默认的属性集。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -141,7 +141,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 >
-> 请注意*成员 @ delta*属性的存在, 其中包括组中 member 对象的 id。
+> 请注意， *members@delta*属性的存在，其中包括组中 member 对象的 id。
 
 <!-- {
   "blockType": "response",
@@ -185,7 +185,7 @@ Content-type: application/json
 
 下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta_with_select"
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -245,7 +245,7 @@ Content-type: application/json
 
 下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta_minimal"
@@ -263,7 +263,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

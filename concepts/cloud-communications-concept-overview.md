@@ -4,12 +4,12 @@ description: Microsoft Graph 中的云通信 Api 为您的应用和服务如何�
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 9c4bd2e4ca327e9d5a482ac5dddd3f6bd41a4652
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f2b85634d27d566fc57a57a1e9b6db0366bb9481
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871580"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711708"
 ---
 # <a name="cloud-communications-api-overview"></a>云通信 API 概述
 Microsoft Graph 中的云通信 Api 为您的应用和服务如何通过各种通信相关功能（如呼叫和联机会议）与用户进行交互，从而添加了一个新的维度。 通过加快您对客户需求的响应方式以及员工相互协作的方式来扩大业务。
@@ -93,7 +93,7 @@ Microsoft Graph 中的云通信 Api 为您的应用和服务如何通过各种�
 在查找此服务的 API 参考？
 
 - [Microsoft Graph 中的云通信 Api （v1.0）](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
-- [Microsoft Graph 中的云通信 Api （测试版）](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+- [Microsoft Graph 中的云通信 Api （测试版）](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 
