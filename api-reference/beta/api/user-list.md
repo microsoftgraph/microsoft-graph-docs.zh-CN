@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c96f252e8098e1a8dc7d2fe49ab9d98cbb67744
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 5c56bb12953c756099d7c66d913658739e32ee71
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232019"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711722"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -194,7 +194,7 @@ Content-length: 108
   "name": "get_signin_last_time"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName, signInActivity
+GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName,signInActivity
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
