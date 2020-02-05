@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 67e8aad098084bb3c33f412c44b1600c8c7f59d5
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: fff6dd2d707ba75db352837e77089f97e58cb325
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216754"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774385"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -73,7 +73,7 @@ POST /subscriptions
 ### <a name="request"></a>请求
 
 在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
-`clientState` 字段是可选的。
+" `clientState` " `latestSupportedTlsVersion`和 "" 字段是可选的。
 
 此请求创建一个订阅，用于通知当前登录用户接收到的新邮件。
 
@@ -92,7 +92,8 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "secretClientValue"
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -148,7 +149,8 @@ Content-length: 252
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

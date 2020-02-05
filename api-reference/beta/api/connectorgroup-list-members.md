@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8bb95fbae074cda735168450c31e2fecf7ea28fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbf53796a30578209bbce2f4a674c7da6cf82b35
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943447"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774329"
 ---
 # <a name="list-members"></a>列出成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与 connectorGroup 相关联的连接器对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,13 +44,13 @@ GET /connectorGroups/{id}/members
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象的集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_connectorgroup_members"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members

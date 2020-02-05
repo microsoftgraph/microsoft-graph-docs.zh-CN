@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: d69d19cd51eb1bbb2ae7cd2ff25eef331e399a10
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 2f179eaa7f6af016376ca5ca7907a36783cb30ce
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216720"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774602"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -26,7 +26,7 @@ ms.locfileid: "41216720"
 |:---------------- |:-------------------------------------------- |
 | [委派](/graph/auth-v2-user)（工作或学校帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
 | [委派](/graph/auth-v2-user)（个人 Microsoft 帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
-| [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
+| [Application](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
 响应结果基于调用应用的上下文。 以下是常见方案的摘要：
 
@@ -131,7 +131,8 @@ Content-length: 586
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
-      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+      "latestSupportedTlsVersion": "v1_2"
     }
   ]
 }

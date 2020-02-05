@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 40ad9e1fc2abe9608134e1f5f4cad9295806d2c7
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: a0c83b0b892c92aebb6e7038dd4049a93565af8d
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216699"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774473"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -121,7 +121,8 @@ Content-length: 252
   "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 
