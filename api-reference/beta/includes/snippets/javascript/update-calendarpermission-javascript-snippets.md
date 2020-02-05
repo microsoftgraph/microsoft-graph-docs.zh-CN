@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 835accaa80091ea19293b05e8ac221cf55f962c9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 2ae9e43ccce07abc1773a5db781eb3ebb11089ac
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994836"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41778024"
 ---
 ```javascript
 
@@ -16,23 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const calendarPermission = {
-  emailAddress: {
-    name: "My Organization",
-  },
-  isRemovable: true,
-  isInsideOrganization: true,
-  role: "write",
-  allowedRoles: [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  id: "RGVmYXVsdA=="
+  role: "write"
 };
 
-let res = await client.api('/users/{id}/calendar/calendarPermissions/{id}')
+let res = await client.api('/users/{id}/calendar/calendarPermissions/RGVmYXVsdA==')
     .version('beta')
     .update(calendarPermission);
 

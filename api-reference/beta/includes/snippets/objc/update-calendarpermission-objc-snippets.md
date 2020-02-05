@@ -1,36 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7a796053068c7084183a0b1f3a22c3d86843cc99
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: d0ffb6d85c2da531a97e98d933e32b2a9b55227e
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994837"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41778008"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}/calendar/calendarPermissions/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}/calendar/calendarPermissions/RGVmYXVsdA=="]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCalendarPermission *calendarPermission = [[MSGraphCalendarPermission alloc] init];
-MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
-[emailAddress setName:@"My Organization"];
-[calendarPermission setEmailAddress:emailAddress];
-[calendarPermission setIsRemovable: true];
-[calendarPermission setIsInsideOrganization: true];
 [calendarPermission setRole: [MSGraphCalendarRoleType write]];
-NSMutableArray *allowedRolesList = [[NSMutableArray alloc] init];
-[allowedRolesList addObject: @"none"];
-[allowedRolesList addObject: @"freeBusyRead"];
-[allowedRolesList addObject: @"limitedRead"];
-[allowedRolesList addObject: @"read"];
-[allowedRolesList addObject: @"write"];
-[calendarPermission setAllowedRoles:allowedRolesList];
-[calendarPermission setId:@"RGVmYXVsdA=="];
 
 NSError *error;
 NSData *calendarPermissionData = [calendarPermission getSerializedDataWithError:&error];
