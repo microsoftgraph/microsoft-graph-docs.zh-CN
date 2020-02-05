@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9f221ae830abe79338d74ef5bf4fdade0ad24532
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: a6da481dff5a46e6723d163ca8d7f0ae02cbf103
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994838"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41778038"
 ---
 ```csharp
 
@@ -13,25 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendarPermission = new CalendarPermission
 {
-    EmailAddress = new EmailAddress
-    {
-        Name = "My Organization"
-    },
-    IsRemovable = true,
-    IsInsideOrganization = true,
-    Role = CalendarRoleType.Write,
-    AllowedRoles = new List<CalendarRoleType>()
-    {
-        CalendarRoleType.None,
-        CalendarRoleType.FreeBusyRead,
-        CalendarRoleType.LimitedRead,
-        CalendarRoleType.Read,
-        CalendarRoleType.Write
-    },
-    Id = "RGVmYXVsdA=="
+    Role = CalendarRoleType.Write
 };
 
-await graphClient.Users["{id}"].Calendar.CalendarPermissions["{id}"]
+await graphClient.Users["{id}"].Calendar.CalendarPermissions["RGVmYXVsdA=="]
     .Request()
     .UpdateAsync(calendarPermission);
 
