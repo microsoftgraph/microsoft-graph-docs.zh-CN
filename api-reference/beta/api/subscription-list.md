@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2f179eaa7f6af016376ca5ca7907a36783cb30ce
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 4dd666da0fdcfd747cd4c80fd0aaa430cbacb776
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774602"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839995"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -151,5 +151,7 @@ Content-length: 586
   ]
 }
 -->
+
+> **注意：** 出于`clientState`安全考虑，不会返回属性值。  
 
 当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。  若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。

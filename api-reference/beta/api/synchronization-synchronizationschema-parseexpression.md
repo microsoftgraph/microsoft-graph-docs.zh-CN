@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 08f33169af606fdaa5824b8a98f770094897814a
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865011"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839960"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将给定的字符串表达式解析为 [attributeMappingSource | （.。。/resources/synchronization_attributemappingsource）对象。
+将给定的字符串表达式分析为[attributeMappingSource](../resources/synchronization-attributemappingsource.md)对象。
 
 有关表达式的详细信息，请参阅[在 Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
 
@@ -46,7 +46,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|表达式               |String               |要分析的表达式。|
+|表达式               |字符串               |要分析的表达式。|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|要对表达式进行求值的测试数据对象。 可选。|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
