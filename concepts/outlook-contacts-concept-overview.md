@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c3203292b5aef990c6a50a0063e27353b520ddaa
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: d1888b740315e94ea0bb39a664f5390085e1d2f2
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969806"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839917"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
@@ -43,6 +43,10 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 - **contact** 实体支持与存储在 Exchange Online 或 Azure Active Directory 中的用户照片相同的 [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0) 实体实现的联系人照片。 这消除了在联系人与用户个人资料照片之间进行转换的开销。
 - 你可以通过订阅[更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0)和[跟踪对联系人和联系人文件夹所做的更改](delta-query-overview.md)，使应用本地存储保持同步。
 - 可以将联系人实例中的应用存储扩展为[开放扩展](extensibility-overview.md#open-extensions)，或者将强类型化的自定义数据添加到联系人架构中作为[架构扩展](extensibility-overview.md#schema-extensions)。
+
+## <a name="where-is-the-data"></a>数据在什么位置？
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>API 参考
 

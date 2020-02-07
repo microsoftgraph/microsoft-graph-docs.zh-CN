@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7b151edb116fbdd0d3d7be7506ca6e3f3790bd47
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 266611a9b4e89f2edec53a50efbd996da41ac372
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913329"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839988"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -45,8 +45,25 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Reject](../api/call-reject.md)                                    | 无                                                            | 拒绝传入呼叫。                                                        |
 | [重定向](../api/call-redirect.md)                                | 无                                                            | 重定向传入呼叫。                                                      |
 | [Transfer](../api/call-transfer.md)                                | 无                                                            | 转接呼叫                                                                 |
-
-| **群组通话**                                                    |                                                             |                                                                                 | | [列出参与者](../api/call-list-participants.md)              | [参与者](participant.md)集合                    | 获取参与者对象集合。                                            | | [邀请参与者](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | 邀请参与者加入正在进行的通话。                                         | | [将参与者静音](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | 将通话中的所有参与者静音。                                              | | [将参与者静音](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | 将群组通话中的参与者静音。                                           | | [配置混音器](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | 配置多方对话中的音频。                                     | | [创建 audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | 通过发布到 audioRoutingGroups 集合创建新的 audioRoutingGroup。 | | [列出 audioRoutingGroup](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | 获取 audioRoutingGroup 对象集合。                                      | | **交互式语音回复**                                     |                                                             |                                                                                 | | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | 在通话中播放提示音。                                                        | | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | 录制来自呼叫方的简短音频回复。                                        | | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | 取消媒体处理。                                                        | | [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | 订阅 DTMF 音调。                                                        | | **自助式参与操作**                                    |                                                             |                                                                                 | | [静音](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在通话中将自身静音。                                                          | | [取消静音](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | 在呼叫中将自己取消静音。                                                        | | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                        | 在通话中启动和停止共享屏幕。                                      | | **录制操作**                                           |                                                             |                                              | | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | 更新录制状态。                      |
+| **群组呼叫**                                                    |                                                             |                                                                            |
+| [List participants](../api/call-list-participants.md)              | [participant](participant.md) 集合                    | 获取参与者对象集合。                                            |
+| [邀请参与者](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | 邀请参与者加入活动呼叫。                                         |
+| [所有参与者静音](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | 将呼叫中的所有参与者设为静音。                                              |
+| [参与者静音](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | 群组通话中参与者静音。                                           |
+| [配置 Audio Mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | 在多方对话中配置音频。                                     |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | 通过发布到 audioRoutingGroups 集合创建一个新的 audioRoutingGroup。 |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) 集合        | 获取 audioRoutingGroup 对象集合。                                      |
+| **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
+| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | 在呼叫中播放提示。                                                        |
+| [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | 录制来自呼叫方的简短音频回复。                                        |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | 取消媒体处理。                                                        |
+| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | 订阅 DTMF 音。                                                        |
+| **Self Participant Operations**                                    |                                                             |                                                                                 |
+| [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在呼叫中将自己设为静音。                                                          |
+| [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | 在呼叫中将自己取消静音。                                                        |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                        | 在呼叫中开始和停止共享屏幕。                                      |
+| **记录操作**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | 更新记录状态。                      |
 
 ## <a name="properties"></a>属性
 

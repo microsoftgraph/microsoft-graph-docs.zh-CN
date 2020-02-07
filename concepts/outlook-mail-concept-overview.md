@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a9c54486098d615d43734fc09d315e797671df7
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 70538917e54ff24be9513bb0d1e912d1918c1a59
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969254"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839939"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -56,6 +56,10 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 大部分情况下，应用需要将数据存储在外部数据存储中，并承担数据管理和访问开销。 借助 Microsoft Graph，可以在[创建](/graph/api/user-post-messages?view=graph-rest-1.0#request-2)或[发送](/graph/api/user-sendmail?view=graph-rest-1.0#request-2)新邮件或邮件回复时，直接将应用数据添加为 Internet 邮件头。
 
 如果需要添加并随后更新自定义数据，可以[在各个资源实例中存储数据](extensibility-overview.md#open-extensions)。 也可以在适当情况下扩展架构、添加自定义属性，并在 Microsoft Graph 资源中存储类型化数据。 可以让此类[架构扩展](extensibility-overview.md#schema-extensions)可供发现和共享。
+
+## <a name="where-is-the-data"></a>数据在什么位置？
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？

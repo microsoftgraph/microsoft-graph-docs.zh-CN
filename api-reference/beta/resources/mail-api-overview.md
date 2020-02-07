@@ -5,18 +5,20 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: c7bfb550cfacc9ad87114400ca9ae6c24e5d4406
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 77a685f4bda0005f27f7acf74eec0f2a3780aee8
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303088"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839981"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中的用户的 Outlook 邮件数据。使用[适当的委派或应用程序权限](/graph/permissions-reference)，你的应用程序可以访问已登录用户或租户中任何用户的邮件数据。邮件数据可以位于 Exchange Online 上的云中，作为 Office 365 的一部分，或位于[混合部署](/graph/hybrid-rest-support)中的 Exchange 内部部署上。
+Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中的用户的 Outlook 邮件数据。使用[适当的委托权限或应用程序权限](/graph/permissions-reference)，你的应用可以访问已登录用户或租户中任何用户的邮件数据。 
+
+[!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="using-the-mail-rest-api"></a>使用邮件 REST API
 

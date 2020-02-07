@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756775"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840002"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -91,6 +91,10 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 使用 Microsoft Graph 中的[人员 API](people-example.md) 连接到[人员数据](/graph/api/resources/person?view=graph-rest-1.0)，这基于用户的通信和协作模式以及业务关系。 你可以实现诸如人员选取器等控件，并在代表用户组织会议时建议与用户相关的人员。
 
 节省在外部数据存储中存储和管理应用数据的开销。 使用 Microsoft Graph，可以在各个资源实例中将自定义应用数据存储为[开放扩展](extensibility-overview.md#open-extensions)。 如果需要键入数据，或者希望能够共享类型化架构，可以将自定义应用数据存储在[架构扩展](extensibility-overview.md#schema-extensions)中。
+
+## <a name="where-is-the-data"></a>数据在什么位置？
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>API 参考
 
