@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b8295c91f3c291389ca85fe18719c7249d11a03c
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 7ccdc9b10d4fb0015829cf289aeae3d210b9c4c9
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232005"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865807"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -61,6 +61,7 @@ ms.locfileid: "41232005"
 | [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | 从 ownedDevices 导航属性中获取此用户所拥有的设备。 |
 | [List ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。 |
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
+| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 |
 **驱动器** |||
 | [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索驱动器资源的属性和关系。 |

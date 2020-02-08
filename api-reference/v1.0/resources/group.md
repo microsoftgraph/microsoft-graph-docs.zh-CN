@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bfd4a174fa10f99167b3f9ef37bb36db6a56cb96
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 4c505ca57406b5ff6554f015c74ae702044e7e01
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672857"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865737"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -58,6 +58,7 @@ ms.locfileid: "39672857"
 |[更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
 |[删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
 |[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+|[assignLicense](../api/group-assignlicense.md)|[组](group.md)| 为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。 |
 |**Calendar**| | |
 |[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
 |[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|

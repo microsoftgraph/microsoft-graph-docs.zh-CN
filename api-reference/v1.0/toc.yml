@@ -241,6 +241,8 @@
                   href: api/user-list-ownedobjects.md
                 - name: 列出注册的设备
                   href: api/user-list-registereddevices.md
+                - name: 重新处理许可证分配
+                  href: api/user-reprocesslicenseassignment.md
                 - name: 撤消登录会话
                   href: api/user-revokesigninsessions.md
             - name: 驱动器
@@ -301,7 +303,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 注释
+            - name: 备注
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -368,6 +370,8 @@
                   href: api/group-post-members.md
                 - name: 添加所有者
                   href: api/group-post-owners.md
+                - name: 分配许可证
+                  href: api/group-assignlicense.md
                 - name: 检查成员组
                   href: api/group-checkmembergroups.md
                 - name: 检查 member 对象
@@ -842,7 +846,7 @@
                 - name: Android LOB 应用
                   href: resources/intune-apps-androidlobapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-androidlobapp-list.md
                     - name: 获取
                       href: api/intune-apps-androidlobapp-get.md
@@ -857,7 +861,7 @@
                 - name: Android 应用商店应用
                   href: resources/intune-apps-androidstoreapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-androidstoreapp-list.md
                     - name: 获取
                       href: api/intune-apps-androidstoreapp-get.md
@@ -1054,7 +1058,7 @@
                 - name: 托管设备移动应用配置设备状态
                   href: resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
                     - name: 获取
                       href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
@@ -1074,7 +1078,7 @@
                 - name: 托管设备移动应用配置用户状态
                   href: resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
                     - name: 获取
                       href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
@@ -3001,7 +3005,7 @@
                 - name: 角色分配
                   href: resources/intune-rbac-roleassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-rbac-roleassignment-list.md
                     - name: 获取
                       href: api/intune-rbac-roleassignment-get.md
@@ -3014,7 +3018,7 @@
                 - name: 角色定义
                   href: resources/intune-rbac-roledefinition.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-rbac-roledefinition-list.md
                     - name: 获取
                       href: api/intune-rbac-roledefinition-get.md
