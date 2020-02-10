@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f36915f0932f71d4f35215294f3ac4645d4f59d8
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 33b7c7cf7d298de82cef0c46b2a8d56ad61576e7
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774756"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865800"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,10 +18,24 @@ ms.locfileid: "41774756"
 
 ## <a name="february-2020"></a>2020 年 2 月
 
+### <a name="groups"></a>组
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 添加了 [group: assignLicense API](../api-reference/v1.0/api/group-assignlicense.md)，它可用于为[组](../api-reference/v1.0/resources/group.md)分配许可证。 |
+
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
 | 添加项 | Beta 和 v1.0 | 向 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 实体中添加了 **latestSupportedTlsVersion** 属性。 指定通知终结点支持的最新 TLS 版本。 允许订阅者在有限的时间段内使用过时的 TLS 版本。 有关详细信息，请参阅 [Microsoft Graph 订阅 - 弃用 TLS 1.0 和 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)。 |
+
+### <a name="users"></a>用户
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项 | v1.0 | 添加了 [user: reprocessLicenseAssignment API](../api-reference/v1.0/api/user-reprocesslicenseassignment.md)，它可用于重新处理[用户](../api-reference/v1.0/resources/user.md)的所有基于组的许可证分配。 |
+| Addition | v1.0 | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **identities** 属性。 此属性表示此用户可用于登录的标识集（如本地帐户和社交帐户）。|
 
 ## <a name="january-2020"></a>2020 年 1 月
 
@@ -1070,7 +1084,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|添加的新实体：<br/>[androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)<br/><br/>[macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)<br/><br/>[mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta)<br/><br/>[mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta)<br/><br/>|
-|添加项|beta|新增了复杂类型：<br/>[macOSKernelExtension](/graph/api/resources/intune-deviceconfig-macoskernelextension?view=graph-rest-beta)<br/><br/>[macOSLaunchItem](/graph/api/resources/intune-deviceconfig-macoslaunchitem?view=graph-rest-beta)<br/><br/>[mobileAppRelationshipState](/graph/api/resources/intune-apps-mobileapprelationshipstate?view=graph-rest-beta)<br/><br/>[win32LobAppFileSystemRequirement](/graph/api/resources/intune-apps-win32lobappfilesystemrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptRequirement](/graph/api/resources/intune-apps-win32lobapppowershellscriptrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRegistryRequirement](/graph/api/resources/intune-apps-win32lobappregistryrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRequirement](/graph/api/resources/intune-apps-win32lobapprequirement?view=graph-rest-beta)<br/><br/>|
+|Addition|beta|新增了复杂类型：<br/>[macOSKernelExtension](/graph/api/resources/intune-deviceconfig-macoskernelextension?view=graph-rest-beta)<br/><br/>[macOSLaunchItem](/graph/api/resources/intune-deviceconfig-macoslaunchitem?view=graph-rest-beta)<br/><br/>[mobileAppRelationshipState](/graph/api/resources/intune-apps-mobileapprelationshipstate?view=graph-rest-beta)<br/><br/>[win32LobAppFileSystemRequirement](/graph/api/resources/intune-apps-win32lobappfilesystemrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptRequirement](/graph/api/resources/intune-apps-win32lobapppowershellscriptrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRegistryRequirement](/graph/api/resources/intune-apps-win32lobappregistryrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRequirement](/graph/api/resources/intune-apps-win32lobapprequirement?view=graph-rest-beta)<br/><br/>|
 |Addition|beta 版本|添加的新枚举类型：<br/>[androidDeviceOwnerPlayStoreMode](/graph/api/resources/intune-deviceconfig-androiddeviceownerplaystoremode?view=graph-rest-beta)<br/><br/>[mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptDetectionType](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetectiontype?view=graph-rest-beta)<br/><br/>|
 |Addition|beta|添加了 [updateRelationships](/graph/api/intune-apps-mobileapp-updaterelationships?view=graph-rest-beta)<br/> 操作（针对 [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)）<br/> |
 |添加|beta|针对 [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta) 集合添加了**导入**<br/> 操作 |
@@ -1842,7 +1856,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta) 枚举类型添加了 **zscalerPrivateAccess**、**f5Access2018**、**citrixSso** 和 **paloAltoGlobalProtectV2** 成员|
 |添加项|beta|向 [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta) 枚举类型添加了 **userAbandonment** 成员|
 |添加项|beta|向 [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta) 枚举类型添加了 **blocked** 成员|
-|添加项|beta|向 [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta) 枚举类型添加了 **microsoft365ManagedMdm** 成员|
+|Addition|beta|向 [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta) 枚举类型添加了 **microsoft365ManagedMdm** 成员|
 |添加项|beta|向 [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta) 枚举类型添加了 **domainNameService** 成员|
 |添加项|beta|向 [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) 枚举类型添加了 **wpa2Personal** 和 **wpa2Enterprise** 成员|
 |加|beta|向 [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) 枚举类型添加了 **enterpriseUnwantedSoftware**、**ransom** 和 **hipsRule** 成员|
@@ -3898,7 +3912,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0        | 在 SharePoint 中的项目上添加了用于跟踪 SharePoint ID 的属性 (**sharepointIds**) 以及用于标识根文件夹的属性 (**root**)。 |
 | 添加项        | v1.0        | 添加了 **Shares** 根集合，可与 shareId 或共享链接一起使用来访问 OneDrive 和 SharePoint 中的共享项。它可返回新类型，即 sharedDriveItem。 |
 | 添加项        | v1.0        | 在 driveItem 上添加了 **Invite** 方法，可允许向项目添加权限。 |
-| 添加项        | v1.0        | 在驱动器上添加了 **Search** 方法，可允许搜索驱动器中的项目和共享项目。 |
+| Addition        | v1.0        | 在驱动器上添加了 **Search** 方法，可允许搜索驱动器中的项目和共享项目。 |
 | 添加项        | v1.0        | 在哈希复杂类型上的文件复杂类型 quickXorHash 属性上添加了 **processingMetadata** 属性。 |
 | 添加项        | v1.0        | 在哈希复杂类型上添加了 **quickXorHash** 属性 |
 

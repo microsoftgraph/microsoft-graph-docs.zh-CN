@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ae6cd9109faf46aa9ab2b55c0015f846f494a619
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 5e56d74e35bf55caade6c0137619d0d24ecc7323
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119782"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865849"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,54 +17,40 @@ ms.locfileid: "41119782"
 > [!IMPORTANT]
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+## <a name="february-2020-new-and-generally-available"></a>2020 年 2 月：新版本和正式版
+
+### <a name="calendar"></a>日历
+浏览“[在共享或委派日历中创建事件](outlook-create-event-in-shared-delegated-calendar.md)”示例，或浏览可用于此流程期间的代理人、受邀者和日历所有者的操作与属性。
+
+### <a name="security"></a>安全性
+为了提升在订阅“[更改用户通知](webhooks.md)”的安全性，强制在通知流程中使用的客户端和网站服务器上[强制执行传输层安全性（TLS）1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)或更高。 新要求自 2020 年 2 月 15 日起分阶段推出。 到 2020 年 5 月 15 日，所有通知端点必须符合新的 TLS 要求。 [找出推出阶段](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)，如有必要，请使用新的 **latestSupportedTlsVersion** 属性作为临时解决方法，以避免订阅失败，然后再完成 TLS 升级。
+
+## <a name="february-2020-new-in-preview"></a>2020 年 2 月：预览版新增功能
+
+### <a name="calendar"></a>日历
+参看“[管理日历共享和委派的预览版 API 所支持的任务](outlook-share-or-delegate-calendar.md)”。
+
+
 ## <a name="january-2020-new-and-generally-available"></a>2020 年 1 月：新版本和正式版
 
 ### <a name="security"></a>安全性
 作为客户警报管理的一部分，请使用 [update alert](/graph/api/alert-update?view=graph-rest-1.0) 方法并将“**注释**”字段更新为 `Closed in IPC` 或 `Closed in MCAS`。
 
-## <a name="december-2019-new-and-generally-available"></a>2019 年 12 月：新版本和正式版
+### <a name="teamwork"></a>团队合作
+使用“[团队](/graph/api/resources/team?view=graph-rest-1.0)”的 **primaryChannel** 导航属性来访问默认频道，“**常规**”。
 
-### <a name="cloud-communications"></a>云通信
-云通信 API 已正式发布，适用于[呼叫](/graph/api/resources/call?view=graph-rest-1.0)和[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-1.0)的 API [在 v1.0 中可用](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)。
+### <a name="users"></a>用户
+使用“**标识**”属性访问[用户](/graph/api/resources/user?view=graph-rest-1.0)可用于登录至 Azure AD 用户账户的一个或多个标识。 这些标识可由 Microsoft，组织或 Facebook、Google 或 Microsoft 等社交标识提供商提供。 此属性允许用户使用任一这些身份登录至用户账户。
 
-### <a name="education"></a>教育
-使用 **classSettings** 属性管理课程专属设置，例如启用发送每周作业摘要的操作。 当团队表示[教育课程](/graph/api/resources/educationclass?view=graph-rest-1.0)时，此属性可在[团队](/graph/api/resources/team?view=graph-rest-1.0)资源中使用。
-
-### <a name="identity-and-access"></a>标识和访问 
-[尝试使用有限权限获取容器对象会返回部分数据](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。 例如，与[用户](/graph/api/resources/user?view=graph-rest-1.0)、另一个**组**和[设备](/graph/api/resources/device?view=graph-rest-1.0)关联的[组](/graph/api/resources/group?view=graph-rest-1.0)实例。 只有 User.Read.All 和 Group.Read.All 权限且正在尝试访问此**组**实例的应用将获取**用户**和**组**实例，但获得的**设备**对象数据有限（仅限数据类型和对象 ID，不包括属性值）。
-
-### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
-见解 API 已正式发布。 在生产应用中使用此 API 确定具有以下特征的相关文档：
-
-- 用户的[常用文档](/graph/api/insights-list-trending?view=graph-rest-1.0)
-- 用户[使用的](/graph/api/insights-list-used?view=graph-rest-1.0)文档
-- [与用户共享由用户共享的](/graph/api/insights-list-shared?view=graph-rest-1.0)文档
-
-### <a name="reports"></a>报告
-要使用用户委派的权限获取 Office 365 使用情况报告，管理员必须向该用户分配 Azure AD 受限管理员角色。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。 有关详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。
-
-### <a name="toolkit"></a>工具包
-Microsoft Graph 工具包 v1.1 已发布。 有关增强功能和 bug 修复的列表，请参阅更改日历的[“2019 年 12 月”部分](changelog.md#december-2019)。
-
-## <a name="december-2019-new-in-preview"></a>2019年12月：预览版新增功能
-
-### <a name="cloud-communications"></a>云通信
-- 使用新的[状态](/graph/api/resources/presence?view=graph-rest-beta)资源了解一名或多名用户的忙闲状态和当前活动。
-- [删除](/graph/api/onlinemeeting-delete?view=graph-rest-beta)[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)资源的实例。
-- 要重命名和删除[呼叫](/graph/api/resources/call?view=graph-rest-beta)和[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)资源的几个成员以便与这些资源的 v1 版本一致，请参阅更改日志的[“2019 年 12 月”部分](changelog.md#december-2019)。
+## <a name="january-2020-new-in-preview"></a>2020 年 1 月：预览版新增功能
 
 ### <a name="devices-and-apps"></a>设备和应用
-Intune [12 月](changelog.md#december-2019)更新
+Intune [1 月](changelog.md#january-2020)更新。
 
-### <a name="identity-and-access"></a>标识和访问 
-- 修复了 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 上 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为。
-- 使用 [Azure AD 权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)中的 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) 来请求将资源添加到 [目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)中，以便可在[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta)中使用该资源的角色。
-- 使用[威胁评估 API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta) 帮助管理员报告可疑电子邮件、网络钓鱼 URL、电子邮件附件或其他文件。 然后，线程扫描判定会通知他们相应地调整组织策略。
-
-### <a name="teamwork"></a>团队合作
-- 针对[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)资源在 Microsoft 团队频道和聊天中[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
-- 针对新的或已更改的[频道消息或聊天消息](/graph/api/resources/chatmessage?view=graph-rest-beta)[订阅通知](/graph/api/resources/subscription?view=graph-rest-beta)。
-- 借助 [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) 资源，可在[日程安排](/graph/api/resources/schedule?view=graph-rest-beta)中将用户的忙线状态指定为“已分配排班”。 作为用户的[设置](/graph/api/resources/usersettings?view=graph-rest-beta)的一部分获取或设置此信息。
+<!--
+### Identity and access
+Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), and [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta).
+-->
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
