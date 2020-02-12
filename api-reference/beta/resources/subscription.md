@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d16e312037b79e550f4cf7b5c2e9aa4806e049d2
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: e4283d8a66894d4d67a0d1ee9e7e3b1a2c744441
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774490"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953615"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -39,11 +39,11 @@ ms.locfileid: "41774490"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
-| notificationUrl | string | 接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 |
+| changeType | string | 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必需。 <br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
+| notificationUrl | string | 接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必需。 |
 | lifecycleNotificationUrl | string | 接收生命周期通知（包括`subscriptionRemoved`和`missed`通知）的终结点的 URL。 如果未提供，这些通知将传递给**notificationUrl**。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-outlook-authz)有关 Outlook 资源如何使用生命周期通知的详细信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 必填。 |
-| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 必需。 |
+| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必需。 |
 | clientState | string | 指定每个通知中由服务发送的**clientState**属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的**clientState**属性的值与每个通知收到的**clientState**属性的值进行比较，来检查该通知是否来自服务。 可选。 |
 | id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
@@ -51,11 +51,11 @@ ms.locfileid: "41774490"
 | includeResourceData | Boolean | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
 | encryptionCertificate | string | 具有用于在通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
-| latestSupportedTlsVersion | String | 指定通知终结点支持的最新 TLS 版本。 允许订阅者在有限的时间段内使用已弃用的 TLS 版本。 可能的值： **v1_0**、 **v1_1**、 **v1_2**、 **v1_3**。 可选，默认值为 v1_2。 如果客户端终结点支持 TLS 1.2 或更高，则此属性不是必需的。 如果客户端终结点仅支持 TLS 1.0 或1.1，则应将此属性设置为相应的版本，否则操作将失败。 |
+| latestSupportedTlsVersion | 字符串 | 指定由**notificationUrl**指定的通知终结点支持的传输层安全性（TLS）的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于其通知终结点支持低于当前建议版本（TLS 1.2）的版本的订阅服务器，通过设置的[时间线](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)指定此属性，可以在完成升级到 TLS 1.2 之前临时使用其弃用的 TLS 版本。 对于这些订阅者，在每个时间线上不设置此属性将导致订阅操作失败。 </br></br>对于其通知终结点已支持 TLS 1.2 的订阅服务器，设置此属性是可选的。 在这种情况下，Microsoft Graph 将默认`v1_2`属性设置为。 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
-| 资源            | 最长过期时间  |
+| Resource            | 最大过期时间  |
 |:--------------------|:-------------------------|
 | 安全**警报**     | 43200分钟（不到 30 天）  |
 | 团队**了 chatmessage**    | 60分钟（1小时）  |
@@ -101,7 +101,7 @@ ms.locfileid: "41774490"
 }
 ```
 
-[联系人]: ./contact.md
+[contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
 [事件]: ./event.md

@@ -6,12 +6,12 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d92a78ff73854d465ba8363b7bddff66be6bffc4
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965045"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953611"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -23,7 +23,7 @@ ms.locfileid: "35965045"
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
 以下任务可用于**sitePage**资源。
-下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`, 例如:。
+下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`，例如：。
 
 | 常见任务                     | HTTP 方法
 |:--------------------------------|:------------------------------
@@ -81,7 +81,7 @@ ms.locfileid: "35965045"
 
 **SitePage**资源具有以下属性。
 
-| 属性名    | 类型                         | 说明
+| 属性名称    | 类型                         | 说明
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | 页面的内容类型。
 
@@ -89,17 +89,17 @@ ms.locfileid: "35965045"
 
 **SitePage**资源具有以下内容字段。
 
-| 属性名      | 类型                       | 说明
+| 属性名称      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
-| pageLayout         | string                     | 页面的页面布局的名称。
+| 页面布局         | string                     | 页面的页面布局的名称。
 | 部件           | [.Webpart][]                | 页面上的 web 部件。
 
 ## <a name="authoring-metadata"></a>创作元数据
 
-**SitePage**资源具有以下与创作相关的元数据。 PublishingState 属性将反映页面创作状态 (如 "已签出" 或 "已发布")。
+**SitePage**资源具有以下与创作相关的元数据。 PublishingState 属性将反映页面创作状态（如 "已签出" 或 "已发布"）。
 
-| 属性名          | 类型                   | 说明
+| 属性名称          | 类型                   | 说明
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 页面的发布状态和 MM.mm 版本。
 
@@ -113,8 +113,8 @@ ms.locfileid: "35965045"
 | eTag                 | 字符串            | 该项目的 ETag。只读。
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
-| parentReference      | [itemReference][] | 上次修改项目的日期和时间。只读。
-| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
+| parentReference      | [itemReference][] | 父信息（如果此项具有父级）。 只读。
+| webUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
@@ -129,7 +129,7 @@ ms.locfileid: "35965045"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[网站]: site.md
+[site]: site.md
 [.Webpart]: webpart.md
 
 <!--
