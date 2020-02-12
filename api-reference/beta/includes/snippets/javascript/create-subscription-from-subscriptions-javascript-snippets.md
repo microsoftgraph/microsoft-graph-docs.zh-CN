@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6f67d33068a3f9b545acd4cc8774a8c8e77c2e0e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fe32bd481019c428ad7ace409bff6e1d82f8ce18
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870821"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41956421"
 ---
 ```javascript
 
@@ -20,7 +20,8 @@ const subscription = {
    notificationUrl: "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    resource: "me/mailFolders('Inbox')/messages",
    expirationDateTime:"2016-11-20T18:23:45.9356913Z",
-   clientState: "secretClientValue"
+   clientState: "secretClientValue",
+   latestSupportedTlsVersion: "v1_2"
 };
 
 let res = await client.api('/subscriptions')
