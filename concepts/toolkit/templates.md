@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的模板
 description: 使用自定义模板修改组件的内容。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 59dbda5b18e1c8cb0c858c073a25f4a76b121fe6
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a69460b788a2e3ef7558ba8e0f0630557943d463
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955748"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953597"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的模板
 
@@ -177,7 +177,7 @@ agenda.addEventListener('templateRendered', (e) => {
   let dataContext = e.detail.context;
   let element = e.detail.element;
 
-  if (type === 'event') {
+  if (templateType === 'event') {
     element.querySelector('.some-button').addEventListener('click', () => {});
   }
 });
