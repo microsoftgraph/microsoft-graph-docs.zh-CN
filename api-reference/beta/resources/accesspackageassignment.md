@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 234aad48e11a2b6c5c2a47c494216fa15fbc139b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7147378e308faac7ca1fea931a465e1ea54f22ef
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939213"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108446"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
 
@@ -24,25 +24,25 @@ ms.locfileid: "37939213"
 |:-------------|:------------|:------------|
 | [列出 accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md)集合 | 检索**accesspackageassignment**对象的列表。 |
 
->**注意：** 不能使用方法创建访问包分配。 相反，要请求用户的访问包分配的客户端可以[创建 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md)。
+>**注意：** 不能使用方法来创建或删除访问包分配。 相反，要为用户请求访问包分配或从用户中删除访问包分配的客户端，可以[创建 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md)。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageId|字符串|访问包的标识符。 只读。|
-|assignmentPolicyId|字符串|访问包分配策略的标识符。 只读。|
-|assignmentState|字符串|只读。|
-|assignmentStatus|字符串|只读。|
-|catalogId|字符串|包含访问包的目录的标识符。 只读。|
+|accessPackageId|String|访问包的标识符。 只读。|
+|assignmentPolicyId|String|访问包分配策略的标识符。 只读。|
+|assignmentState|String|访问程序包的状态。 可能的值`Delivered`为`Expired`或。 只读。|
+|assignmentStatus|String|只读。|
+|catalogId|String|包含访问包的目录的标识符。 只读。|
 |expiredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |isExtended|Boolean|指示访问包分配是否已扩展。 只读。|
-|targetId|字符串| 包含工作分配的主题的 ID。 只读。|
+|targetId|String| 包含工作分配的主题的 ID。 只读。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 描述 |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| 此为只读属性。 可为 Null。|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 此为只读属性。 可为 Null。|

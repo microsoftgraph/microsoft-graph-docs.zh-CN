@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: list 资源表示 site 中的列表。
+description: ”列表”资源代表网站中的列表。
 ms.date: 09/11/2017
 title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b79172049278758c77ac620f00c391d52633792b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df869eeba7b66dad0bddef48b7d5686d8899702
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009991"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108460"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -31,6 +31,7 @@ ms.locfileid: "36009991"
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
 | [获取列表][]              | GET /lists/{list-id}
+| [创建列表][]           | POST/lists
 | [枚举列表项][]  | GET /lists/{list-id}/items
 | [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
@@ -38,6 +39,7 @@ ms.locfileid: "36009991"
 | [获取最近的活动][] | GET /lists/{list-id}/activities
 
 [获取列表]: ../api/list-get.md
+[创建列表]: ../api/list-create.md
 [枚举列表项]: ../api/listitem-list.md
 [更新列表项]: ../api/listitem-update.md
 [删除列表项]: ../api/listitem-delete.md
@@ -95,7 +97,7 @@ ms.locfileid: "36009991"
 
 以下属性继承自 ** [baseItem][]**。
 
-| 属性名            | 类型             | 说明
+| 属性名称            | 类型             | 说明
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | 项的唯一标识符。只读。
 | **名称**                 | string           | 项目名称。
@@ -113,8 +115,8 @@ ms.locfileid: "36009991"
 | 关系名称 | 类型                        | 说明
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
-| **驱动器**         | [drive][]                   | 仅存在于文档库中。 允许访问作为具有 [driveItems][driveItem] 的 [drive][] 资源的列表。
-| **items**         | Collection([listItem][])    | 列表中包含的所有项。
+| **drive**         | [drive][]                   | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
+| **项目**         | Collection([listItem][])    | 列表中包含的所有项。
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
