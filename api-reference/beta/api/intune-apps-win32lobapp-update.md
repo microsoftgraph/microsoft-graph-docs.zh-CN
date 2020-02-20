@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd9ffb4702821b45f87cf69427ed71aba820b14
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 952f906a414bc6c7ef2d838d0ac0c29927479938
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39933921"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160317"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "39933921"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,28 +54,28 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|字符串|要安装此应用程序的命令行|
-|uninstallCommandLine|字符串|要卸载此应用程序的命令行|
+|installCommandLine|String|要安装此应用程序的命令行|
+|uninstallCommandLine|String|要卸载此应用程序的命令行|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
 |minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
@@ -87,7 +87,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
-|setupFilePath|字符串|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
+|setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
+|installLanguage|String|尚未记录|
 
 
 
@@ -101,7 +102,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 2817
+Content-length: 2865
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -192,7 +193,8 @@ Content-length: 2817
     "productName": "Product Name value",
     "publisher": "Publisher value"
   },
-  "setupFilePath": "Setup File Path value"
+  "setupFilePath": "Setup File Path value",
+  "installLanguage": "Install Language value"
 }
 ```
 
@@ -201,7 +203,7 @@ Content-length: 2817
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2989
+Content-Length: 3037
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -295,7 +297,8 @@ Content-Length: 2989
     "productName": "Product Name value",
     "publisher": "Publisher value"
   },
-  "setupFilePath": "Setup File Path value"
+  "setupFilePath": "Setup File Path value",
+  "installLanguage": "Install Language value"
 }
 ```
 

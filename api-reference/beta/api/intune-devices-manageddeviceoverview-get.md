@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7b11b734a6cfd64497a5cb54c5d00e499de91c2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f24b3183eb93f9da0d91cec15a9c5a69d17ee413
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944608"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162083"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944608"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1286
+Content-Length: 1320
 
 {
   "value": {
@@ -86,7 +86,8 @@ Content-Length: 1286
       "androidDedicatedCount": 5,
       "androidDeviceAdminCount": 7,
       "androidFullyManagedCount": 8,
-      "androidWorkProfileCount": 7
+      "androidWorkProfileCount": 7,
+      "configMgrDeviceCount": 4
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

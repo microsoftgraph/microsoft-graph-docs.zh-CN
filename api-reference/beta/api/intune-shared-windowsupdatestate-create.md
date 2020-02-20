@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cb1b464056b72481efcc4d86c30a28a764ca63c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4b6ad2081039a6bc6cf21259e2e6ffb4418637cd
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939337"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159883"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
@@ -29,7 +29,7 @@ ms.locfileid: "39939337"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|这是实体的 Id。|
-|deviceId|字符串|设备的 id。|
+|deviceId|String|设备的 id。|
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|字符串|用户主体名称。|
-|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|字符串|设备的质量更新版本。|
-|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|status|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|设备的质量更新版本。|
+|featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 

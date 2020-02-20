@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3469116930c5d831788a73367c21bf0e2e16b1c7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 04bcd38f4363dcea2ea37e24f14745ee3d3045d7
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939919"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161535"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>更新 deviceManagementDerivedCredentialSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "39939919"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **资源访问策略** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **资源访问策略** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,12 +60,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|派生凭据的唯一标识符|
+|id|String|派生凭据的唯一标识符|
 |**RA 策略**|
-|helpUrl|字符串|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
+|helpUrl|String|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
 |displayName|String|配置文件的显示名称。|
-|常用|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
+|常用|deviceManagementDerivedCredentialIssuer|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
+|notificationType|deviceManagementDerivedCredentialNotificationType|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
 
 
 ## <a name="response"></a>响应

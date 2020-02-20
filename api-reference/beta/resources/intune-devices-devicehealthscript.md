@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83d3f8e084b824baa40c41ace5045fd814e38592
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c9b375299db9fa52be494dca185ba9370627e3cb
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088103"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159477"
 ---
 # <a name="devicehealthscript-resource-type"></a>deviceHealthScript 资源类型
 
@@ -29,9 +29,13 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |[删除 deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|无|删除[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)。|
 |[更新 deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|更新[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性。|
 |[分配操作](../api/intune-devices-devicehealthscript-assign.md)|无|尚未记录|
+|[updateGlobalScript 操作](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|更新专用设备运行状况脚本|
+|[getGlobalScriptHighestAvailableVersion 操作](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|更新专用设备运行状况脚本|
+|[enableGlobalScripts 操作](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|无|尚未记录|
+|[areGlobalScriptsAvailable 函数](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|尚未记录|
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
 |发布者|String|设备运行状况脚本发布者的名称|
@@ -46,9 +50,11 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
 |roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)集合|设备运行状况脚本的组分配列表|
 |runSummary|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|设备运行状况脚本的高级别运行摘要。|
@@ -79,7 +85,9 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "String"
 }
 ```
 

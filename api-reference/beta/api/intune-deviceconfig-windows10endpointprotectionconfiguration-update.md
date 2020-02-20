@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0e0d1f9cae4c31586fdff7a3749da886dde16a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7b9e87dfbcd5f136ec221fbd6cb771f1c805352a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947482"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162349"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "39947482"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -103,9 +103,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|阻止用户向此计算机添加新的 Microsoft 帐户。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
 |localSecurityOptionsDisableAdministratorAccount|Boolean|确定是否启用或禁用本地管理员帐户。|
-|localSecurityOptionsAdministratorAccountName|字符串|定义要与帐户 "管理员" 的安全标识符（SID）相关联的不同帐户名称。|
+|localSecurityOptionsAdministratorAccountName|String|定义要与帐户 "管理员" 的安全标识符（SID）相关联的不同帐户名称。|
 |localSecurityOptionsDisableGuestAccount|Boolean|确定来宾帐户是否已启用或已禁用。|
-|localSecurityOptionsGuestAccountName|字符串|定义要与帐户 "来宾" 的安全标识符（SID）相关联的不同帐户名称。|
+|localSecurityOptionsGuestAccountName|String|定义要与帐户 "来宾" 的安全标识符（SID）相关联的不同帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|阻止便携式计算机在无需登录的情况下被移除。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|仅在将打印机驱动程序连接到共享打印机时，才将其限制为仅供管理员安装。|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|如果启用此设置，则仅允许交互式登录用户访问 CD-ROM 媒体。|
@@ -115,11 +115,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|要求用户在登录前按 CTRL + ALT + DEL。|
 |localSecurityOptionsHideLastSignedInUser|Boolean|不显示上次在此设备上登录的用户的用户名。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|在输入凭据后以及显示设备桌面之前，请勿显示登录此设备的人员的用户名。|
-|localSecurityOptionsLogOnMessageTitle|字符串|为尝试登录的用户设置消息标题。|
-|localSecurityOptionsLogOnMessageText|字符串|为尝试登录的用户设置消息文本。|
+|localSecurityOptionsLogOnMessageTitle|String|为尝试登录的用户设置消息标题。|
+|localSecurityOptionsLogOnMessageText|String|为尝试登录的用户设置消息文本。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|阻止 PKU2U 对此设备的身份验证请求，以使用联机标识。|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定用于网络登录的质询/响应身份验证协议。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
@@ -161,10 +161,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterDisableSecureBootUI|Boolean|用于在 "设备安全性" 下禁用安全引导区域的显示。|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
-|defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示的公司名称。|
-|defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
-|defenderSecurityCenterHelpPhone|字符串|向用户显示的电话号码或 Skype ID。|
-|defenderSecurityCenterHelpURL|字符串|"帮助" 门户 URL 将向用户显示。|
+|defenderSecurityCenterOrganizationDisplayName|String|向用户显示的公司名称。|
+|defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
+|defenderSecurityCenterHelpPhone|String|向用户显示的电话号码或 Skype ID。|
+|defenderSecurityCenterHelpURL|String|"帮助" 门户 URL 将向用户显示。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|配置 windows defender TamperProtection 设置。 可取值为：`notConfigured`、`enable`、`disable`。|
@@ -241,7 +241,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker 系统驱动器策略。|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker 固定驱动器策略。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker 可移动驱动器策略。|
-|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-shared-bitlockerrecoverypasswordrotationtype.md)|此设置在操作系统驱动器恢复后启动客户端驱动的恢复密码轮替（使用 bootmgr 或 WinRE）。 可取值为：`notConfigured`、`disabled`、`enabledForAzureAd`、`enabledForAzureAdAndHybrid`。|
+|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|此设置在操作系统驱动器恢复后启动客户端驱动的恢复密码轮替（使用 bootmgr 或 WinRE）。 可取值为：`notConfigured`、`disabled`、`enabledForAzureAd`、`enabledForAzureAdAndHybrid`。|
 |defenderDisableScanArchiveFiles|Boolean|允许或禁止扫描存档。|
 |defenderDisableBehaviorMonitoring|Boolean|允许或禁止 Windows Defender 行为监控功能。|
 |defenderDisableCloudProtection|Boolean|为最大限度地保护你的电脑，Windows Defender 将向 Microsoft 发送有关发现的任何问题的信息。 Microsoft 将分析该信息，详细了解影响您和其他客户的问题，并提供改进的解决方案。|

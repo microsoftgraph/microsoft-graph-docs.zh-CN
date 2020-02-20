@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c30d958cb56c102df455a18b511969e37391efb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8fe89f7499f58fabe6896a1d9e6afc49d431a214
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39929932"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159449"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "39929932"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,10 +51,11 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
+|userPrincipalName|字符串|接受术语的用户的 userPrincipalName。|
 
 
 
@@ -68,13 +69,14 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
 Content-type: application/json
-Content-length: 211
+Content-length: 264
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -83,14 +85,15 @@ Content-length: 211
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 313
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

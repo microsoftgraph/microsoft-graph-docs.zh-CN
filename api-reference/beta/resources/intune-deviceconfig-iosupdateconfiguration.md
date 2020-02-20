@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95d87279f65431a976115740360fbd3c8a0f7a26
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 05ea72be3e36010043841637bdcc478fc7bcc4c4
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636537"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162419"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 
@@ -33,11 +33,11 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
 |[Update iosUpdateConfiguration](../api/intune-deviceconfig-iosupdateconfiguration-update.md)|[iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md)|更新 [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -49,13 +49,15 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
 |isEnabled|Boolean|在 UI 中是否启用了设置|
 |activeHoursStart|TimeOfDay|使用时段开始时间（使用时段表示不应发生更新安装的时间范围）|
 |activeHoursEnd|TimeOfDay|使用时段结束时间（使用时段表示不应发生更新安装的时间范围）|
-|desiredOsVersion|字符串|如果未指定，设备将更新到最新版本的操作系统。|
+|desiredOsVersion|String|如果未指定，设备将更新到最新版本的操作系统。|
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)集合|配置为使用时段所对应的一周的某一天。 该集合最多可包含 7 个元素。|
 |utcTimeOffsetInMinutes|Int32|UTC 时间偏移，用分钟表示|
 |enforcedSoftwareUpdateDelayInDays|Int32|软件更新在 iOS 设备中可见的天数，范围从0到90（含0到）|
+|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|更新计划类型。 可取值为：`updateOutsideOfActiveHours`、`alwaysUpdate`、`updateDuringTimeWindows`、`updateOutsideOfTimeWindows`。|
+|customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md)集合|如果将 "更新计划类型" 设置为 "使用时间窗口计划"，则将计划更新的自定义时间窗口。 此集合最多可包含20个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -115,7 +117,17 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
     "String"
   ],
   "utcTimeOffsetInMinutes": 1024,
-  "enforcedSoftwareUpdateDelayInDays": 1024
+  "enforcedSoftwareUpdateDelayInDays": 1024,
+  "updateScheduleType": "String",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "String",
+      "endDay": "String",
+      "startTime": "String (time of day)",
+      "endTime": "String (time of day)"
+    }
+  ]
 }
 ```
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fe4799e2be8d87a2c4d79a8552870e37d051ef9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4d9cbc0f535ae54758164f8a1f7545ee1607bb1a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371283"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163708"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 移动应用故障排除事件中包含的历史记录项。
 
@@ -27,6 +27,7 @@ ms.locfileid: "36371283"
 |属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 
 ## <a name="relationships"></a>关系
 无
@@ -41,7 +42,21 @@ ms.locfileid: "36371283"
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppTroubleshootingDeviceCheckinHistory",
-  "occurrenceDateTime": "String (timestamp)"
+  "occurrenceDateTime": "String (timestamp)",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "String",
+    "failure": "String",
+    "failureDetails": "String",
+    "remediation": "String",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "String",
+        "link": "String"
+      }
+    ]
+  }
 }
 ```
 

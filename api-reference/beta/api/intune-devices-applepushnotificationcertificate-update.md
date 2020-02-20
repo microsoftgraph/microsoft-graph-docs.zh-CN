@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8690f583bff395f54f31b56e3480e29e1815e462
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9730ba7ff6d2b876533fda89232749064354d5f6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945289"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162251"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "39945289"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,13 +51,14 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
-|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
+|id|String|证书的唯一标识符|
+|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|字符串|证书上载状态。|
-|certificateUploadFailureReason|字符串|证书上传失败的原因。|
+|certificateUploadStatus|String|证书上载状态。|
+|certificateUploadFailureReason|String|证书上传失败的原因。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 
@@ -72,7 +73,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 416
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -81,6 +82,7 @@ Content-length: 416
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -90,7 +92,7 @@ Content-length: 416
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 529
+Content-Length: 594
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -101,6 +103,7 @@ Content-Length: 529
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```

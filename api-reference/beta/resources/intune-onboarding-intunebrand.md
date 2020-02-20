@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 478f087b4a7998a8c90bd429e0a0d3173d9b8e3c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1b6b913f115ee73566a688a90355377a7ff495eb
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088033"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160345"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -31,6 +31,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
+|roleScopeTagIds|String collection|分配给默认品牌配置文件的作用域标记列表|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
 |contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
 |contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
@@ -44,6 +45,8 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
 |showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
 |showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -83,6 +86,9 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
     "value": "binary"
   },
   "showDisplayNameNextToLogo": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "contactITName": "String",
   "contactITPhoneNumber": "String",
   "contactITEmailAddress": "String",
@@ -102,7 +108,9 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "String"
 }
 ```
 

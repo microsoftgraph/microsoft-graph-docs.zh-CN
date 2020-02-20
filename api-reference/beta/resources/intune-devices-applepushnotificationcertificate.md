@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90e7ede759d9df4197aa193495d8aea26996766e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 63e4b858404242d84597a7f650bae6c0870f5b76
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319277"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162503"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Apple 推送通知证书。
 
@@ -37,6 +37,7 @@ Apple 推送通知证书。
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
 |certificateUploadStatus|String|证书上载状态。|
 |certificateUploadFailureReason|String|证书上传失败的原因。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -60,6 +61,7 @@ Apple 推送通知证书。
   "expirationDateTime": "String (timestamp)",
   "certificateUploadStatus": "String",
   "certificateUploadFailureReason": "String",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```

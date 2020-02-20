@@ -1,25 +1,25 @@
 ---
 title: networkIPv6ConfigurationManagementCondition 资源类型
-description: 可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时, 才会将 IP 配置管理条件视为 TRUE。 IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone) 不会将此信息暴露给自然身份验证服务。
+description: 可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时，才会将 IP 配置管理条件视为 TRUE。 IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows （circa Redstone）不会将此信息暴露给自然身份验证服务。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: af88fed8b76c85b69275d78d17113119baf3baff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bd11eef3e6afe25bedf37fd08e7fbfc688952b7c
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331600"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159568"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时, 才会将 IP 配置管理条件视为 TRUE。
-IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone) 不会将此信息暴露给自然身份验证服务。
+可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时，才会将 IP 配置管理条件视为 TRUE。
+IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows （circa Redstone）不会将此信息暴露给自然身份验证服务。
 
 
 继承自[networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)
@@ -44,8 +44,8 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV6Prefix|String|要连接到的 IPv6 子网。 例如 2001: db8::/32|
-|ipV6Gateway|String|IPv6 网关地址。 例如 2001: db8:: 1|
+|ipV6Prefix|String|要连接到的 IPv6 子网。 例如2001： db8：：/32|
+|ipV6Gateway|String|IPv6 网关地址。 例如2001： db8：：1|
 |ipV6DNSServerList|String collection|为适配器配置的 IPv6 DNS 服务器。|
 |dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 

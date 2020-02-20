@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 23e0eaae9becb1d15f26607a9bda67a27d6c2386
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636544"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163673"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -124,6 +124,7 @@ ms.locfileid: "41636544"
 - [嵌入式 SIM 卡设备状态](intune-esim-embeddedsimdevicestate.md)
 - [嵌入式 SIM 卡设备状态值](intune-esim-embeddedsimdevicestatevalue.md)
 - [注册疑难解答事件](intune-troubleshooting-enrollmenttroubleshootingevent.md)
+- [全局设备运行状况脚本状态](intune-devices-globaldevicehealthscriptstate.md)
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
 - [每小时计划](intune-devices-hourlyschedule.md)
@@ -132,7 +133,6 @@ ms.locfileid: "41636544"
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
-- [日志级别](intune-troubleshooting-loglevel.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
 - [托管设备](intune-devices-manageddevice.md)
@@ -142,6 +142,7 @@ ms.locfileid: "41636544"
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
+- [托管设备摘要应用程序状态](intune-troubleshooting-manageddevicesummarizedappstate.md)
 - [管理条件](intune-fencing-managementcondition.md)
 - [管理条件表达式](intune-fencing-managementconditionexpression.md)
 - [管理条件表达式模型](intune-fencing-managementconditionexpressionmodel.md)
@@ -182,6 +183,7 @@ ms.locfileid: "41636544"
 - [安全基准状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基准模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
+- [Collection_1 操作 type_ 的执行 Tuple_2](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -189,6 +191,8 @@ ms.locfileid: "41636544"
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
 - [User experience analytics 设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [User experience analytics 设备启动历史记录](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
+- [User experience analytics 设备启动过程](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
+- [User experience analytics 设备启动过程性能](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
 - [User experience analytics 运行状况状态](intune-devices-userexperienceanalyticshealthstate.md)
 - [用户体验分析洞察力](intune-devices-userexperienceanalyticsinsight.md)
 - [用户体验分析真知灼见严重程度](intune-devices-userexperienceanalyticsinsightseverity.md)
@@ -196,6 +200,7 @@ ms.locfileid: "41636544"
 - [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [用户体验分析回归概况摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [用户体验分析启动分数历史记录](intune-devices-userexperienceanalyticsstartupscorehistory.md)
 - [用户体验分析汇总者](intune-devices-userexperienceanalyticssummarizedby.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)

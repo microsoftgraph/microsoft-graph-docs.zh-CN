@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e55ea60aacd7fef448e7fe9e51d50ddebb84af3
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: a77be043a962a302f28256f123c3e9843c49350d
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088292"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163918"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -39,7 +39,7 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Windows autopilot 设备的配置文件设置时间。|
 |orderIdentifier|String|Windows autopilot 设备的顺序标识符-已弃用|
 |groupTag|String|Windows autopilot 设备的 Group 标记。|
@@ -60,7 +60,7 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |displayName|String|显示名称|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|当前分配给 Windows autopilot 设备的部署配置文件。|
 |intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|准备分配给 Windows autopilot 设备的部署配置文件。|

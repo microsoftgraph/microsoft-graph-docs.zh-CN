@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: debb09cb12191f025a70a2dde5d4b476b6cd4592
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2622a418d39e01f1d5e965de28fc5a8ef8922391
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944601"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162076"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944601"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|摘要的唯一标识符|
+|id|String|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1082
+Content-length: 1114
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -90,7 +90,8 @@ Content-length: 1082
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -117,7 +118,7 @@ Content-length: 1082
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1195
+Content-Length: 1227
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -136,7 +137,8 @@ Content-Length: 1195
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

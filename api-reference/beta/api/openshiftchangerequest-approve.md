@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ad2b3acd52bd62a6c16c70708aa2f4b5809b0b09
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: e3190a92312fe0482bb327f266ebd46d70cbd850
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895608"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159575"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：批准
 
@@ -33,7 +33,7 @@ ms.locfileid: "39895608"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/approve
+POST /teams/{teamId}/schedule/openShiftsChangeRequests/{openShiftRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -68,7 +68,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/approve
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/openShiftsChangeRequests/{openShiftRequestId}/approve
 Content-type: application/json
 
 {

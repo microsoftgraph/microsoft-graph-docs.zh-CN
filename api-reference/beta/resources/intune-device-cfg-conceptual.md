@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 2ee75dfc57e68f8074500996fca4f5306884d841
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636586"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163680"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -51,6 +51,7 @@ ms.locfileid: "41636586"
 - [Android 设备所有者 Wi-Fi 安全类型](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Android EAP 类型](intune-deviceconfig-androideaptype.md)
 - [Android EAS 电子邮件配置文件配置](intune-deviceconfig-androideasemailprofileconfiguration.md)
+- [Android 企业版 alwayson VPN 包类型](intune-deviceconfig-androidenterprisealwaysonvpnpackagetype.md)
 - [Android 企业 Wi-Fi 配置](intune-deviceconfig-androidenterprisewificonfiguration.md)
 - [Android for Work 证书配置文件基础](intune-deviceconfig-androidforworkcertificateprofilebase.md)
 - [Android for Work 符合性策略](intune-deviceconfig-androidforworkcompliancepolicy.md)
@@ -118,6 +119,7 @@ ms.locfileid: "41636586"
 - [BitLocker 固定驱动器策略](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [BitLocker 恢复信息类型](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [BitLocker 恢复选项](intune-deviceconfig-bitlockerrecoveryoptions.md)
+- [BitLocker 恢复密码旋转类型](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [BitLocker 可移动驱动器策略](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
@@ -131,6 +133,7 @@ ms.locfileid: "41636586"
 - [配置用法](intune-deviceconfig-configurationusage.md)
 - [凭据单一登录扩展](intune-deviceconfig-credentialsinglesignonextension.md)
 - [自定义主题替代名称](intune-deviceconfig-customsubjectalternativename.md)
+- [自定义更新时间窗口](intune-deviceconfig-customupdatetimewindow.md)
 - [星期几](intune-deviceconfig-dayofweek.md)
 - [默认的设备符合性策略](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Defender 攻击面类型](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -254,6 +257,8 @@ ms.locfileid: "41636586"
 - [组策略演示文稿值多文本](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [组策略演示文稿值文本](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [组策略类型](intune-grouppolicy-grouppolicytype.md)
+- [组策略已上传定义](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [组策略上传的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [哈希算法](intune-deviceconfig-hashalgorithms.md)
 - [墨迹访问设置](intune-deviceconfig-inkaccesssetting.md)
 - [预期用途](intune-deviceconfig-intendedpurpose.md)
@@ -289,6 +294,7 @@ ms.locfileid: "41636586"
 - [iOS SCEP 证书配置文件](intune-deviceconfig-iosscepcertificateprofile.md)
 - [iOS 单一登录扩展](intune-deviceconfig-iossinglesignonextension.md)
 - [iOS 单一登录设置](intune-deviceconfig-iossinglesignonsettings.md)
+- [iOS 软件更新计划类型](intune-deviceconfig-iossoftwareupdatescheduletype.md)
 - [iOS 信任的根证书](intune-deviceconfig-iostrustedrootcertificate.md)
 - [iOS 更新配置](intune-deviceconfig-iosupdateconfiguration.md)
 - [iOS 更新设备状态](intune-deviceconfig-iosupdatedevicestatus.md)
@@ -302,8 +308,13 @@ ms.locfileid: "41636586"
 - [iOS Wi-Fi 配置](intune-deviceconfig-ioswificonfiguration.md)
 - [iOSik ev2 VPN 配置](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Kerberos 单一登录扩展](intune-deviceconfig-kerberossinglesignonextension.md)
+- [关键字布尔值对](intune-deviceconfig-keybooleanvaluepair.md)
+- [键整数值对](intune-deviceconfig-keyintegervaluepair.md)
+- [关键实数值对](intune-deviceconfig-keyrealvaluepair.md)
 - [密钥大小](intune-deviceconfig-keysize.md)
 - [密钥存储提供程序选项](intune-deviceconfig-keystorageprovideroption.md)
+- [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
+- [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥使用情况](intune-deviceconfig-keyusages.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
@@ -343,7 +354,6 @@ ms.locfileid: "41636586"
 - [受管理的设备证书状态](intune-deviceconfig-manageddevicecertificatestate.md)
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [托管设备移动应用配置设置状态](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
-- [托管设备移动应用配置状态](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [托管设备报告的应用](intune-deviceconfig-manageddevicereportedapp.md)
 - [媒体内容分级（澳大利亚）](intune-deviceconfig-mediacontentratingaustralia.md)
 - [媒体内容分级（加拿大）](intune-deviceconfig-mediacontentratingcanada.md)
@@ -370,7 +380,10 @@ ms.locfileid: "41636586"
 - [OMA 设置整数](intune-deviceconfig-omasettinginteger.md)
 - [OMA 设置字符串](intune-deviceconfig-omasettingstring.md)
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
+- [在本地加密有效负载](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
+- [Pfx recryption 请求](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
 - [电源操作类型](intune-deviceconfig-poweractiontype.md)
 - [预发布功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)
@@ -542,6 +555,7 @@ ms.locfileid: "41636586"
 - [Windows 更新安装计划类型](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Windows 更新通知显示选项](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Windows 更新状态](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)
 - [Windows 用户帐户控制设置](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Windows VPN 配置](intune-deviceconfig-windowsvpnconfiguration.md)

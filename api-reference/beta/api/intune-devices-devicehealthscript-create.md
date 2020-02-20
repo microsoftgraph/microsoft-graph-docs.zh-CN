@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02fe74bf70c5961b510bfd74ba732c81839e575a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 61881d1ed9073f214e8d5c1763bd5236b37bd894
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945156"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162230"
 ---
 # <a name="create-devicehealthscript"></a>创建 deviceHealthScript
 
@@ -25,9 +25,9 @@ ms.locfileid: "39945156"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceHealthScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceHealthScripts
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
-|发布者|字符串|设备运行状况脚本发布者的名称|
+|发布者|String|设备运行状况脚本发布者的名称|
 |version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
 |说明|String|设备运行状况脚本的说明|
@@ -64,6 +64,8 @@ POST /deviceManagement/deviceHealthScripts
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
 |roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 
 
@@ -77,7 +79,7 @@ POST /deviceManagement/deviceHealthScripts
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
-Content-length: 483
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -92,7 +94,9 @@ Content-length: 483
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-length: 483
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 747
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -119,7 +123,9 @@ Content-Length: 655
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 

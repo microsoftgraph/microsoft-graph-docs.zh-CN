@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: db4722b3bb4e648d276c2e4e9b642d68a1caa5a9
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 4518e8055137e6b8d23fd4e3cbdb178f77457a9a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37723760"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160030"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
@@ -26,22 +26,22 @@ ms.locfileid: "37723760"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Analytics.Read |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/analytics/activitystatistics 
-GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+GET /me/analytics/activitystatistics
+GET /users/{id|userPrincipalName}/analytics/activitystatistics
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法不支持用于自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -61,7 +61,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 
 以下是已登录用户的所有相关活动统计信息的请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -71,15 +71,15 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activitystatistics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

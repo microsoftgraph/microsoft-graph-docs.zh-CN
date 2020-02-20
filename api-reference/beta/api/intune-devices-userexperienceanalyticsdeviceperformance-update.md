@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f125ce0beeb76bd8d3a6ef098b8a70e280c6b1a9
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 57a4954c08a98931420cd9aa70d906de959f847b
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944475"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162041"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>更新 userExperienceAnalyticsDevicePerformance
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944475"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,12 +51,12 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动性能设备的唯一标识符。|
-|deviceName|字符串|User experience analytics 设备名称。|
-|model|字符串|User experience analytics 设备模型。|
+|id|String|User experience analytics 设备启动性能设备的唯一标识符。|
+|deviceName|String|User experience analytics 设备名称。|
+|model|String|User experience analytics 设备模型。|
 |manufacturer|String|User experience analytics 设备制造商。|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|User experience analytics 设备磁盘类型。 可取值为：`unkown`、`hdd`、`ssd`。|
-|operatingSystemVersion|字符串|User experience analytics 设备操作系统版本。|
+|operatingSystemVersion|String|User experience analytics 设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动得分。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|User experience analytics device group policy boot time （以毫秒为单位）。|
@@ -65,6 +65,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|User experience analytics 设备组策略登录时间（以毫秒为单位）。|
 |deviceCount|Int64|用户体验分析汇总了设备计数。|
+|responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 
 
 
@@ -78,7 +79,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 494
+Content-length: 529
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -94,7 +95,8 @@ Content-length: 494
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 
@@ -103,7 +105,7 @@ Content-length: 494
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 578
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -120,7 +122,8 @@ Content-Length: 543
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 

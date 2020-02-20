@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a102b6624a2bedf70708ac4fedb03c523c34511
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 503a12fb6d7039540e35696b9bd4bdc274440da2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945037"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162097"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
 
@@ -25,9 +25,9 @@ ms.locfileid: "39945037"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
+|id|String|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
 |noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数|
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量|

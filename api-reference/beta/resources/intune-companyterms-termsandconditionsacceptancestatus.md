@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d478222376883c77e05f31fac286eb6418ce569
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 321bb950edb934cb8a9a24f0da68b05ac41fcf8e
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335058"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163519"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条件 (T&C) 策略的接受状态。 用户必须接受最新版本的条款，才能保留对公司门户的访问权限。
 
@@ -32,10 +32,11 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
+|userPrincipalName|字符串|接受术语的用户的 userPrincipalName。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -56,7 +57,8 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
   "id": "String (identifier)",
   "userDisplayName": "String",
   "acceptedVersion": 1024,
-  "acceptedDateTime": "String (timestamp)"
+  "acceptedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

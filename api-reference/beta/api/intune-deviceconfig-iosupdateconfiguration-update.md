@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 847190c77e408fb08204ca4cd3f5101efaf360e7
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: c196d35d76890256b973d68a8b1d10bcb487280b
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635865"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162363"
 ---
 # <a name="update-iosupdateconfiguration"></a>更新 iosUpdateConfiguration
 
@@ -51,11 +51,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 下表显示创建 [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -67,10 +67,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |isEnabled|Boolean|在 UI 中是否启用了设置|
 |activeHoursStart|TimeOfDay|使用时段开始时间（使用时段表示不应发生更新安装的时间范围）|
 |activeHoursEnd|TimeOfDay|使用时段结束时间（使用时段表示不应发生更新安装的时间范围）|
-|desiredOsVersion|字符串|如果未指定，设备将更新到最新版本的操作系统。|
+|desiredOsVersion|String|如果未指定，设备将更新到最新版本的操作系统。|
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)集合|配置为使用时段所对应的一周的某一天。 该集合最多可包含 7 个元素。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |utcTimeOffsetInMinutes|Int32|UTC 时间偏移，用分钟表示|
 |enforcedSoftwareUpdateDelayInDays|Int32|软件更新在 iOS 设备中可见的天数，范围从0到90（含0到）|
+|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|更新计划类型。 可取值为：`updateOutsideOfActiveHours`、`alwaysUpdate`、`updateDuringTimeWindows`、`updateOutsideOfTimeWindows`。|
+|customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md)集合|如果将 "更新计划类型" 设置为 "使用时间窗口计划"，则将计划更新的自定义时间窗口。 此集合最多可包含20个元素。|
 
 
 
@@ -84,7 +86,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1306
+Content-length: 1596
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -124,7 +126,17 @@ Content-length: 1306
     "monday"
   ],
   "utcTimeOffsetInMinutes": 6,
-  "enforcedSoftwareUpdateDelayInDays": 1
+  "enforcedSoftwareUpdateDelayInDays": 1,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "monday",
+      "endDay": "monday",
+      "startTime": "12:03:30.2730000",
+      "endTime": "12:03:02.3740000"
+    }
+  ]
 }
 ```
 
@@ -133,7 +145,7 @@ Content-length: 1306
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1478
+Content-Length: 1768
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -176,7 +188,17 @@ Content-Length: 1478
     "monday"
   ],
   "utcTimeOffsetInMinutes": 6,
-  "enforcedSoftwareUpdateDelayInDays": 1
+  "enforcedSoftwareUpdateDelayInDays": 1,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "monday",
+      "endDay": "monday",
+      "startTime": "12:03:30.2730000",
+      "endTime": "12:03:02.3740000"
+    }
+  ]
 }
 ```
 

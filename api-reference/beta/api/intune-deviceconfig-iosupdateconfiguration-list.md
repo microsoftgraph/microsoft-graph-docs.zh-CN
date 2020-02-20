@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1ccded1a4c2eeb4b0e12bf264ac6e9edd2cb7a8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9979d60fdf44d311a8370b600d36f88d03c63e8a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635872"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162370"
 ---
 # <a name="list-iosupdateconfigurations"></a>列出 iosUpdateConfigurations
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1675
+Content-Length: 2005
 
 {
   "value": [
@@ -109,7 +109,17 @@ Content-Length: 1675
         "monday"
       ],
       "utcTimeOffsetInMinutes": 6,
-      "enforcedSoftwareUpdateDelayInDays": 1
+      "enforcedSoftwareUpdateDelayInDays": 1,
+      "updateScheduleType": "alwaysUpdate",
+      "customUpdateTimeWindows": [
+        {
+          "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+          "startDay": "monday",
+          "endDay": "monday",
+          "startTime": "12:03:30.2730000",
+          "endTime": "12:03:02.3740000"
+        }
+      ]
     }
   ]
 }

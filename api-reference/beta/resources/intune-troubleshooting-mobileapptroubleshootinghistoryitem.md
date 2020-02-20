@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b75ba857cce7798ee68fecaefe65b5251a80317
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c04239119d475f1dc3763ddbcd811afe7783efc2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371941"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163715"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 移动应用故障排除事件中包含的历史记录项。
 
@@ -24,6 +24,7 @@ ms.locfileid: "36371941"
 |属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|
 
 ## <a name="relationships"></a>关系
 无
@@ -38,7 +39,21 @@ ms.locfileid: "36371941"
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppTroubleshootingHistoryItem",
-  "occurrenceDateTime": "String (timestamp)"
+  "occurrenceDateTime": "String (timestamp)",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "String",
+    "failure": "String",
+    "failureDetails": "String",
+    "remediation": "String",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "String",
+        "link": "String"
+      }
+    ]
+  }
 }
 ```
 

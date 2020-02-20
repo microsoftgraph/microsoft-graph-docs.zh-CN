@@ -4,12 +4,12 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9a5a6ee1a9111f85d041821e8e5917c0b007698d
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636824"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160338"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -25,7 +25,6 @@ ms.locfileid: "41636824"
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
-- [BitLocker 恢复密码旋转类型](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [公司门户操作](intune-shared-companyportalaction.md)
 - [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
@@ -38,13 +37,12 @@ ms.locfileid: "41636824"
 - [设备注册配置](intune-shared-deviceenrollmentconfiguration.md)
 - [设备注册类型](intune-shared-deviceenrollmenttype.md)
 - [设备管理](intune-shared-devicemanagement.md)
-- [设备管理派生的凭据颁发者](intune-shared-devicemanagementderivedcredentialissuer.md)
-- [设备管理派生凭据通知类型](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
 - [设备管理派生的凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [设备管理脚本](intune-shared-devicemanagementscript.md)
 - [设备平台类型](intune-shared-deviceplatformtype.md)
 - [设备类型](intune-shared-devicetype.md)
 - [支持](intune-shared-enablement.md)
+- [注册可用性选项](intune-shared-enrollmentavailabilityoptions.md)
 - [注册状态](intune-shared-enrollmentstate.md)
 - [排除组分配目标](intune-shared-exclusiongroupassignmenttarget.md)
 - [组分配目标](intune-shared-groupassignmenttarget.md)
@@ -57,11 +55,6 @@ ms.locfileid: "41636824"
 - [IP 范围](intune-shared-iprange.md)
 - [IPv4 范围](intune-shared-ipv4range.md)
 - [IPv6 范围](intune-shared-ipv6range.md)
-- [关键字布尔值对](intune-shared-keybooleanvaluepair.md)
-- [键整数值对](intune-shared-keyintegervaluepair.md)
-- [关键实数值对](intune-shared-keyrealvaluepair.md)
-- [键字符串值对](intune-shared-keystringvaluepair.md)
-- [键类型值对](intune-shared-keytypedvaluepair.md)
 - [键/值对](intune-shared-keyvaluepair.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
@@ -96,5 +89,4 @@ ms.locfileid: "41636824"
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows 更新状态](intune-shared-windowsupdatestate.md)
-- [Windows 更新状态](intune-shared-windowsupdatestatus.md)
 

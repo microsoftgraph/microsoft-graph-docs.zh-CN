@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3a763cb6e3d2b4253ae820a057c14f4fe6ca38f7
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6e1822c1f528d58a825abcecb5aecfdc05213fee
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996279"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161500"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -86,7 +86,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 #### <a name="request"></a>请求
 下面是一个请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -125,15 +125,15 @@ Content-type: application/json
   "allowNewTimeProposals": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,7 +142,7 @@ Content-type: application/json
 在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -247,7 +247,7 @@ Content-length: 2197
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -317,15 +317,15 @@ Content-length: 1390
   "allowNewTimeProposals": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-multiple-locations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -334,7 +334,7 @@ Content-length: 1390
 
 #### <a name="response"></a>响应
 以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -466,12 +466,12 @@ Content-length: 2985
 ```
 
 
-### <a name="example-3-create-a-recurring-event"></a>示例3：创建定期事件
+### <a name="example-3-create-a-weekly-recurring-event"></a>示例3：创建每周定期事件
 
 #### <a name="request"></a>请求
-第三个示例展示了如何创建定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
+第三个示例演示如何创建每周一次发生一次的定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -520,15 +520,15 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -652,12 +652,181 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-and-enable-an-event-as-an-online-meeting"></a>示例4：创建和启用作为联机会议的事件
+### <a name="example-4-create-a-daily-recurring-event"></a>示例4：创建每日定期事件
+
+#### <a name="request"></a>请求
+第四个示例演示如何创建每日定期事件。 该事件从12：00pm 到2：00pm，每天从2020年2月25日开始，共发生两次。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring_daily"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon work for you?"
+  },
+  "start": {
+      "dateTime": "2020-02-25T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2020-02-25T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AlexW@contoso.OnMicrosoft.com",
+        "name": "Alex Wilbur"
+      },
+      "type": "required"
+    }
+  ],
+  "recurrence": {
+    "pattern": {
+      "type": "daily",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": "2020-02-25",
+      "numberOfOccurrences": 2
+    }
+  }
+}
+```
+
+
+在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+#### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring_daily",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
+    "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLSg==\"",
+    "id": "AAMkADU5NWAAA=",
+    "createdDateTime": "2020-02-18T22:13:47.2967773Z",
+    "lastModifiedDateTime": "2020-02-18T22:13:47.7398267Z",
+    "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLSg==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "uid": "040000008200E00074C5B7101A82E0080000000027B6D5B0A8E6D50100000000000000001000000065CD4D206C79D44CBF53D42B6E79CE55",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does noon work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "seriesMaster",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADU5NWAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "allowNewTimeProposals": true,
+    "onlineMeeting": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes noon work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2020-02-25T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2020-02-25T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "recurrence": {
+        "pattern": {
+            "type": "daily",
+            "interval": 1,
+            "month": 0,
+            "dayOfMonth": 0,
+            "firstDayOfWeek": "sunday",
+            "index": "first"
+        },
+        "range": {
+            "type": "numbered",
+            "startDate": "2020-02-25",
+            "endDate": "0001-01-01",
+            "recurrenceTimeZone": "Pacific Standard Time",
+            "numberOfOccurrences": 2
+        }
+    },
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Adele Vance",
+            "address": "AdeleV@contoso.OnMicrosoft.com"
+        }
+    }
+}
+```
+
+
+### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>示例5：创建和启用作为联机会议的事件
 
 #### <a name="request"></a>请求
 下面的示例展示了创建事件并使其成为联机会议的请求。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_with_online_meeting"
@@ -698,15 +867,15 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -820,6 +989,7 @@ Content-length: 2197
 
 ## <a name="see-also"></a>另请参阅
 
+- [在 Outlook 中将重复约会安排为定期事件](/graph/outlook-schedule-recurring-events)
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
 - [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 - [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)

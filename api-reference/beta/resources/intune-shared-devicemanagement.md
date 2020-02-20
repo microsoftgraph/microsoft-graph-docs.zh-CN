@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d498bf40347a43bf15f339952f05e37c711f7921
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955334"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159470"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -62,7 +62,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|与设备关联的唯一标识符。|
+|id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -132,12 +132,15 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)集合|租户中受影响的恶意软件的列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)集合|MobileAppTroubleshootingEvent 的集合属性。|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|用户体验分析概述|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)集合|用户体验分析基线|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)集合|用户体验分析类别|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)集合|User experience analytics 设备性能|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|用户体验分析回归概况摘要|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)集合|User experience analytics 设备启动历史记录|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|用户体验分析概述|
+|userExperienceAnalyticsBaselines|userExperienceAnalyticsBaseline 集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|userExperienceAnalyticsCategory 集合|用户体验分析类别|
+|userExperienceAnalyticsDevicePerformance|userExperienceAnalyticsDevicePerformance 集合|User experience analytics 设备性能|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|用户体验分析回归概况摘要|
+|userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory 集合|User experience analytics 设备启动历史记录|
+|userExperienceAnalyticsDeviceStartupProcesses|userExperienceAnalyticsDeviceStartupProcess 集合|用户体验分析设备启动过程|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|userExperienceAnalyticsDeviceStartupProcessPerformance 集合|User experience analytics 设备启动过程性能|
+|userExperienceAnalyticsStartupScoreHistory|userExperienceAnalyticsStartupScoreHistory 集合|用户体验分析设备启动分数历史记录|
 |**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|导入的设备标识。|

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5289305dff1490796278ad95c57f89eb8bffb461
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 57e9b377eff54d5cd4db87f50d14146b22b21e2a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199898"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159085"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -37,7 +37,7 @@ ms.locfileid: "37199898"
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|字符串|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|status|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
 |qualityUpdateVersion|String|设备的质量更新版本。|
 |featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 2a93e0e25a426fec3d7ab1e10a51953c286da0ab
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: a2389044671be071cf1d43dcd788519ee49d6363
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216241"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159022"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -20,16 +20,20 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 使用 Microsoft Graph API，应用可以订阅以下资源的更改：
 
-- Outlook [邮件][]
-- Outlook [事件][]
-- Outlook 个人[联系人][]
-- [用户][]
-- [组][]
-- Office 365 组[对话][]
-- 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
-- OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
-- [chatMessage][]
-- 安全[警报][]
+| **资源** | **支持的资源路径** | **资源数据可以包含在通知中**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Outlook [邮件][] | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | 否 |
+| Outlook [事件][] | `/users/{id}/events` | 否 |
+| Outlook 个人[联系人][] | `/users/{id}/contacts` | 否 |
+| [用户][] | `/users`（对所有用户的更改）<br>`/users/{id}`（对特定用户的更改） | 否 |
+| [组][] | `/groups`（对所有组的更改）<br>`/groups/{id}`（对特定组所做的更改） | 否 |
+| Office 365 组[对话][] | `groups/{id}/conversations` | 否 |
+| 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容 | `/me/drive/root` | 否 |
+| OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容 | `/drives/{id}/root`<br> `/me/drive/root` | 否 |
+| 安全[警报][] | `/security/alerts/{id}`（对特定警报的更改） <br> `/security/alerts/?$filter`（更改已筛选的通知）| 否 |
+| 团队[了 chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages`（所有团队中所有频道中的邮件）<br>`/teams/{id}/channels/{id}/messages`（特定频道中的邮件）<br>`/chats/allMessages`（所有聊天中的邮件）<br>`/chats/{id}/messages`（特定聊天中的邮件） | 是 |
+
+> **注意**：开头的`/users/{id}`任何资源路径也都可以接受`/me`引用已登录用户。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +55,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 - [删除订阅](../api/subscription-delete.md)
 
 [chatMessage]: ./chatmessage.md
-[联系人]: ./contact.md
+[contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
 [事件]: ./event.md

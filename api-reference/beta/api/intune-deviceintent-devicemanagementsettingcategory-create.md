@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9359c8d9336920618c2094711dca1862fae5c422
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 26b33ef95c628674d66d27f3b610670d2cc37507
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945625"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162314"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>创建 deviceManagementSettingCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "39945625"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,9 @@ POST /deviceManagement/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|类别 ID|
+|id|String|类别 ID|
 |displayName|String|类别名称|
+|hasRequiredSetting|Boolean|类别包含 "必需顶级" 设置|
 
 
 
@@ -66,11 +67,12 @@ POST /deviceManagement/categories
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/categories
 Content-type: application/json
-Content-length: 113
+Content-length: 144
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -79,12 +81,13 @@ Content-length: 113
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 162
+Content-Length: 193
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 

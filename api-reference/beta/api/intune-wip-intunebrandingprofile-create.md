@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e2a293d4e111e8f6fd578a250ef095c4bd6509e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 309583e48610d414866871c69cc2141f1f02c535
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938500"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161528"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "39938500"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,9 +51,9 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|配置文件键|
-|profileName|字符串|配置文件的名称|
-|profileDescription|字符串|配置文件的说明|
+|id|String|配置文件键|
+|profileName|String|配置文件的名称|
+|profileDescription|String|配置文件的说明|
 |isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
@@ -64,19 +64,22 @@ POST /deviceManagement/intuneBrandingProfiles
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，其徽标后面有主题颜色背景|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，徽标后面有浅背景|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
-|contactITName|字符串|负责 IT 支持的人员/组织的名称|
-|contactITPhoneNumber|字符串|负责 IT 支持的个人/组织的电话号码|
-|contactITEmailAddress|字符串|负责 IT 支持的个人/组织的电子邮件地址|
-|contactITNotes|字符串|关于负责 IT 支持的人员/组织的文本注释|
-|onlineSupportSiteUrl|字符串|指向公司/组织的 IT 支持人员网站的 URL|
+|contactITName|String|负责 IT 支持的人员/组织的名称|
+|contactITPhoneNumber|String|负责 IT 支持的个人/组织的电话号码|
+|contactITEmailAddress|String|负责 IT 支持的个人/组织的电子邮件地址|
+|contactITNotes|String|关于负责 IT 支持的人员/组织的文本注释|
+|onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
-|privacyUrl|字符串|指向公司/组织的隐私策略的 URL|
-|customPrivacyMessage|字符串|有关管理员在设备上有权访问的内容的文本注释|
+|privacyUrl|String|指向公司/组织的隐私策略的 URL|
+|customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
 |isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
 |isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
 |showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
 |showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
+|roleScopeTagIds|String collection|分配给品牌配置文件的作用域标记列表|
 
 
 
@@ -90,7 +93,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1620
+Content-length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -140,7 +143,12 @@ Content-length: 1620
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -149,7 +157,7 @@ Content-length: 1620
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1792
+Content-Length: 1964
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -202,7 +210,12 @@ Content-Length: 1792
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

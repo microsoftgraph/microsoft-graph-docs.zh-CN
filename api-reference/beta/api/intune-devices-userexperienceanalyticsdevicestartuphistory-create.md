@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07905b1aaae394c8b366949bc657cb15679ae7fb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dec1a8c5848e2646674390ff38ff645e88ec2b6a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944468"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162034"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944468"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -60,10 +60,11 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |totalBootTimeInMs|Int32|User experience analytics 设备总启动时间（以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|User experience analytics 设备组策略登录时间（以毫秒为单位）。|
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
+|responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
 |isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
 |isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
-|operatingSystemVersion|字符串|User experience analytics 设备启动记录的操作系统版本。|
+|operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
 
 
 
@@ -77,7 +78,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 498
+Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -89,6 +90,7 @@ Content-length: 498
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
@@ -101,7 +103,7 @@ Content-length: 498
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 582
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -114,6 +116,7 @@ Content-Length: 547
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

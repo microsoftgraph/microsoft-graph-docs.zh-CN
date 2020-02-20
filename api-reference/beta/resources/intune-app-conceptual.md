@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 1ad7e658999579d32dcbf9e6cee701e976419ded
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 81f77cd59c3d8fce9af9521c6d75ca1aaaf3f111
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088173"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163778"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -73,6 +73,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)
 - [macOS LOB 子应用](intune-apps-macoslobchildapp.md)
+- [macOS mdatp 应用程序](intune-apps-macosmdatpapp.md)
 - [microsoft edge 应用的 macOS](intune-apps-macosmicrosoftedgeapp.md)
 - [macOS 最低操作系统版本](intune-apps-macosminimumoperatingsystem.md)
 - [macOS Office 套件应用](intune-apps-macosofficesuiteapp.md)

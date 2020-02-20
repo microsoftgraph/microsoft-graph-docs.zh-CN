@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d57798baa5e2b8bdf99e911b5baf42d34213f82
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3cc165fed3f08d961b34bccd436e87d6b82dc8cc
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529065"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162475"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>userExperienceAnalyticsDevicePerformance 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 User experience analytics device performance entity 包含设备启动性能详细信息。
 
@@ -33,12 +33,12 @@ User experience analytics device performance entity 包含设备启动性能详�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动性能设备的唯一标识符。|
-|deviceName|字符串|User experience analytics 设备名称。|
-|model|字符串|User experience analytics 设备模型。|
+|id|String|User experience analytics 设备启动性能设备的唯一标识符。|
+|deviceName|String|User experience analytics 设备名称。|
+|model|String|User experience analytics 设备模型。|
 |manufacturer|String|User experience analytics 设备制造商。|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|User experience analytics 设备磁盘类型。 可取值为：`unkown`、`hdd`、`ssd`。|
-|operatingSystemVersion|字符串|User experience analytics 设备操作系统版本。|
+|operatingSystemVersion|String|User experience analytics 设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动得分。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|User experience analytics device group policy boot time （以毫秒为单位）。|
@@ -47,6 +47,7 @@ User experience analytics device performance entity 包含设备启动性能详�
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|User experience analytics 设备组策略登录时间（以毫秒为单位）。|
 |deviceCount|Int64|用户体验分析汇总了设备计数。|
+|responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 
 ## <a name="relationships"></a>关系
 无
@@ -75,7 +76,8 @@ User experience analytics device performance entity 包含设备启动性能详�
   "loginScore": 1024,
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "responsiveDesktopTimeInMs": 1024
 }
 ```
 

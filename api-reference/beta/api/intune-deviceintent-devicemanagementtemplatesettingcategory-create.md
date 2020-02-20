@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce87bc6dbde6eb2e905f39e8968e024ed01c0a75
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f81c3c859dcfd14f60a0874e2c9c23445c6f6fdf
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945457"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162286"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>创建 deviceManagementTemplateSettingCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "39945457"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
+|id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
 |displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
+|hasRequiredSetting|Boolean|类别包含继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的顶级 "必需" 设置|
 
 
 
@@ -66,11 +67,12 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/categories
 Content-type: application/json
-Content-length: 121
+Content-length: 152
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -79,12 +81,13 @@ Content-length: 121
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 170
+Content-Length: 201
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
   "id": "cd213562-3562-cd21-6235-21cd623521cd",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 

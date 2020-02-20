@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa9b0afc1ccb014cc56945e8e3ab450765f5dc63
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f161b0354e9fd2a4e8cf7a5e5936d2cf2719a407
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088026"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163701"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
@@ -59,9 +59,12 @@ ms.locfileid: "38088026"
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
 |showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
 |showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
+|roleScopeTagIds|String collection|分配给品牌配置文件的作用域标记列表|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)集合|品牌配置文件的组分配列表|
 
@@ -125,7 +128,12 @@ ms.locfileid: "38088026"
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 140e1a9a0f59601c42bf3ccf172855f1cd4229c5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 262b1a0006c01ac2613a5322d162855497873df0
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39929895"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159442"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>获取 termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "39929895"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsA
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 289
+Content-Length: 344
 
 {
   "value": {
@@ -74,7 +74,8 @@ Content-Length: 289
     "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
     "userDisplayName": "User Display Name value",
     "acceptedVersion": 15,
-    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```

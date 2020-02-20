@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6288edcd5c81e359ebb77335aa64e6f53ac71ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 569c71d80411d4ec75086d47dcd9f74c5e4ef9e9
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364731"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163479"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>deviceManagementSettingCategory 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示设置类别的实体
 
@@ -34,6 +34,7 @@ ms.locfileid: "36364731"
 |:---|:---|:---|
 |id|String|类别 ID|
 |displayName|String|类别名称|
+|hasRequiredSetting|Boolean|类别包含 "必需顶级" 设置|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -52,7 +53,8 @@ ms.locfileid: "36364731"
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0685518e76ac28ba304bedfedd7bdbf4d416e5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 13924843321c3eced7a05022177b2f07edf27d23
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945086"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162139"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>创建 deviceHealthScriptDeviceState
 
@@ -25,9 +25,9 @@ ms.locfileid: "39945086"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,16 +51,16 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|应在何时执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|字符串|修正前的检测脚本输出|
-|preRemediationDetectionScriptError|字符串|修正前的检测脚本中的错误|
-|remediationScriptError|字符串|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|字符串|修正后的检测脚本输出|
-|postRemediationDetectionScriptError|字符串|更正后来自检测脚本的错误|
+|preRemediationDetectionScriptOutput|String|修正前的检测脚本输出|
+|preRemediationDetectionScriptError|String|修正前的检测脚本中的错误|
+|remediationScriptError|String|修正脚本的错误输出|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
+|postRemediationDetectionScriptError|String|更正后来自检测脚本的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|来自 lastest 设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3cf8db0894d1fa909cf3cc2c16be36f1652b176
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: fa8fd4ee7849d099394266fbe35c7241354fbedb
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945100"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162146"
 ---
 # <a name="update-devicehealthscriptassignment"></a>更新 deviceHealthScriptAssignment
 
@@ -25,9 +25,9 @@ ms.locfileid: "39945100"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本分配实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
 |runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|

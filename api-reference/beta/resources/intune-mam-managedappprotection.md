@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f60377aa8c324abf18e816196d9671b72950280
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b65728f80a4e54b4633d0cc950e3a604efbef1ad
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955446"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159484"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -62,12 +62,12 @@ ms.locfileid: "39955446"
 |printBlocked|Boolean|指示是否允许从托管应用进行打印。|
 |fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
 |disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 pin，是否需要使用应用 pin。|
-|minimumRequiredOsVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
-|minimumWarningOsVersion|字符串|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
-|minimumRequiredAppVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
+|minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
-|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
-|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true，则定义在设备为根或已越狱时的托管应用行为（阻止或擦除）。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为，即阻止或擦除。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin （而不是无生物识别密码）超时|
@@ -79,6 +79,7 @@ ms.locfileid: "39955446"
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据导入到组织文档中。|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)集合|用户可能存储托管数据的数据存储位置。|
+|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果设置，则它将指定在用户因其身份验证令牌无效而无法签入的情况下要执行的操作。 当用户在 AAD 中被删除或禁用时，会发生这种情况。 可取值为：`block`、`wipe`、`warn`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -145,7 +146,8 @@ ms.locfileid: "39955446"
   "blockDataIngestionIntoOrganizationDocuments": true,
   "allowedDataIngestionLocations": [
     "String"
-  ]
+  ],
+  "appActionIfUnableToAuthenticateUser": "String"
 }
 ```
 

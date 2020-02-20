@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d29f63aa634f43a8057d3fa9afbd3070d4d2d9f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: abf6f649953e95e56538089ead674a7b5fbba91a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955439"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160240"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection 资源类型
 
@@ -62,12 +62,12 @@ ms.locfileid: "39955439"
 |printBlocked|Boolean|指示是否允许从托管应用进行打印。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 PIN，是否需要使用应用 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumRequiredOsVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWarningOsVersion|字符串|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumRequiredAppVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true，则定义在设备为根或已越狱时的托管应用行为（阻止或擦除）。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为，即阻止或擦除。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin （而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码）超时|
@@ -79,6 +79,7 @@ ms.locfileid: "39955439"
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据导入到组织文档中。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)集合|用户可能存储托管数据的数据存储位置。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果设置，则它将指定在用户因其身份验证令牌无效而无法签入的情况下要执行的操作。 当用户在 AAD 中被删除或禁用时，会发生这种情况。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|此策略的预期应用管理级别。 可取值为：`unspecified`、`unmanaged`、`mdm`、`androidEnterprise`。|
 
@@ -150,6 +151,7 @@ ms.locfileid: "39955439"
   "allowedDataIngestionLocations": [
     "String"
   ],
+  "appActionIfUnableToAuthenticateUser": "String",
   "isAssigned": true,
   "targetedAppManagementLevels": "String"
 }

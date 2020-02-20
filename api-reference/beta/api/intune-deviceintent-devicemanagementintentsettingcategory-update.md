@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7373b3821de0767363a87bb0e30dbec9df3f182
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 19a9aa8c06428eae5487c896189380047abf238d
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945681"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162412"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>更新 deviceManagementIntentSettingCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "39945681"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,9 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
+|id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
 |displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
+|hasRequiredSetting|Boolean|类别包含继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的顶级 "必需" 设置|
 
 
 
@@ -66,11 +67,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}
 Content-type: application/json
-Content-length: 119
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -79,12 +81,13 @@ Content-length: 119
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 168
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
   "id": "39bf2a82-2a82-39bf-822a-bf39822abf39",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 

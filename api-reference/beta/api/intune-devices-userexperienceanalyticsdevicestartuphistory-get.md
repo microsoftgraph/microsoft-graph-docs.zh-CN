@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3102c607b131fd08d9a47db04f417e5dfb504c83
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ae1dcea3fafefa4ba1bf763ee745e068b2ad6fe6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944454"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162027"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>获取 userExperienceAnalyticsDeviceStartupHistory
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944454"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 631
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 594
     "totalBootTimeInMs": 1,
     "groupPolicyLoginTimeInMs": 8,
     "coreLoginTimeInMs": 1,
+    "responsiveDesktopTimeInMs": 9,
     "totalLoginTimeInMs": 2,
     "isFirstLogin": true,
     "isFeatureUpdate": true,

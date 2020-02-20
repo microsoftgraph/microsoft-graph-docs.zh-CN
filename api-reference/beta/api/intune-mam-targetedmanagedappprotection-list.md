@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b5c6c941881453545cb29011a819df3eba560fd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 261d792b7cc268188a7cb8a9e579d779b4065907
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942203"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159911"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 
@@ -27,7 +27,7 @@ ms.locfileid: "39942203"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2621
+Content-Length: 2675
 
 {
   "value": [
@@ -123,6 +123,7 @@ Content-Length: 2621
       "allowedDataIngestionLocations": [
         "sharePoint"
       ],
+      "appActionIfUnableToAuthenticateUser": "wipe",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }

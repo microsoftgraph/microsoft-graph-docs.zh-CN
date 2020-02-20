@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb18fa2f8ec1545530dca13a7ed9d59be5a7504
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 59d49f6862f8ab8df1baad1db5458131067514b4
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539097"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162489"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备操作系统摘要。
 
@@ -33,6 +33,7 @@ ms.locfileid: "37539097"
 |androidDeviceAdminCount|Int32|设备管理 Android 设备的数量。|
 |androidFullyManagedCount|Int32|完全管理的 Android 设备的数量。|
 |androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
+|configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
 
 ## <a name="relationships"></a>关系
 无
@@ -56,7 +57,8 @@ ms.locfileid: "37539097"
   "androidDedicatedCount": 1024,
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
-  "androidWorkProfileCount": 1024
+  "androidWorkProfileCount": 1024,
+  "configMgrDeviceCount": 1024
 }
 ```
 

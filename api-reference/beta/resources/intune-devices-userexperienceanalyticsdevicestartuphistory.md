@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf156461bdb4c988e4c6750831c7493a00678bdf
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dfec7c1433dcad1748a039281f214d8da7b315f9
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955474"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162468"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>userExperienceAnalyticsDeviceStartupHistory 资源类型
 
@@ -26,13 +26,13 @@ User experience analytics 设备启动历史记录实体包含设备启动性能
 |[列出 userExperienceAnalyticsDeviceStartupHistories](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)集合|列出[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的属性和关系。|
 |[获取 userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|读取[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的属性和关系。|
 |[创建 userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-create.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|创建新的[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象。|
-|[删除 userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md)|None|删除[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)。|
+|[删除 userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md)|无|删除[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)。|
 |[更新 userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-update.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|更新[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -41,10 +41,11 @@ User experience analytics 设备启动历史记录实体包含设备启动性能
 |totalBootTimeInMs|Int32|User experience analytics 设备总启动时间（以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|User experience analytics 设备组策略登录时间（以毫秒为单位）。|
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
+|responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
 |isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
 |isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
-|operatingSystemVersion|字符串|User experience analytics 设备启动记录的操作系统版本。|
+|operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -69,6 +70,7 @@ User experience analytics 设备启动历史记录实体包含设备启动性能
   "totalBootTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "coreLoginTimeInMs": 1024,
+  "responsiveDesktopTimeInMs": 1024,
   "totalLoginTimeInMs": 1024,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

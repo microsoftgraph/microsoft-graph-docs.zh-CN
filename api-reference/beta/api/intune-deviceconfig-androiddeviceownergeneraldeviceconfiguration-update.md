@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b36648a0868a8ccead0ea2e1d09bcad91fc0deab
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dbd3350a23f805caddb7b9ce22f0b812a4efd9e2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39953836"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160261"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>更新 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "39953836"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -81,13 +81,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|代理是与主机、端口和已排除的主机直接建立的。|
 |googleAccountsBlocked|Boolean|指示是否将阻止 google 帐户。|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|是否启用屏幕保护程序模式或不启用展台模式。|
-|kioskModeScreenSaverImageUrl|字符串|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
+|kioskModeScreenSaverImageUrl|String|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|设备将在展台模式下显示屏幕保护程序的秒数。 有效值为0至9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|在 Kiosk 模式下显示屏幕保护程序之前设备需要保持非活动状态的秒数。 有效值为1至9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Boolean|如果音频/视频在展台模式下播放，则设备屏幕是否应显示屏幕保护程序。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
-|kioskModeWallpaperUrl|字符串|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
-|kioskModeExitCode|字符串|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
+|kioskModeWallpaperUrl|String|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
+|kioskModeExitCode|String|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟 home 按钮是否为向上轻扫主页按钮或浮动主页按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|是否允许用户在展台模式下配置蓝牙设置。|
@@ -128,8 +128,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |usersBlockAdd|Boolean|指示是否禁用添加用户和配置文件。|
 |usersBlockRemove|Boolean|指示是否禁用从设备中删除其他用户。|
 |volumeBlockAdjustment|Boolean|指示是否禁用了调整主音量。|
-|vpnAlwaysOnPackageIdentifier|字符串|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
 |vpnAlwaysOnLockdownMode|Boolean|如果指定了 always on VPN 包名称，则在断开 VPN 连接时是否锁定网络流量。|
+|vpnAlwaysOnPackageIdentifier|String|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
 |wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|指示是否阻止用户仅编辑策略定义的网络。|
 
@@ -258,8 +258,8 @@ Content-length: 4374
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
-  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnAlwaysOnLockdownMode": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
@@ -386,8 +386,8 @@ Content-Length: 4546
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
-  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnAlwaysOnLockdownMode": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
