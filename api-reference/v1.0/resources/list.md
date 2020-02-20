@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036405"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108481"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -30,12 +30,14 @@ ms.locfileid: "36036405"
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
 | [获取列表][]              | GET /lists/{list-id}
+| [创建列表][]           | POST /列表
 | [枚举列表项][]  | GET /lists/{list-id}/items
 | [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
 
 [获取列表]: ../api/list-get.md
+[创建列表]: ../api/list-create.md
 [枚举列表项]: ../api/listitem-list.md
 [更新列表项]: ../api/listitem-update.md
 [删除列表项]: ../api/listitem-delete.md
