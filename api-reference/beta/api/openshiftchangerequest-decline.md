@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9fa98977d06d2eb3e1f2993779f2390bc364780c
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 3b59bd65a79c7a8185749639ef725504c80424ee
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895600"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219655"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest：拒绝
 
@@ -18,7 +18,7 @@ ms.locfileid: "39895600"
 
 拒绝[openshiftchangerequest](../resources/openshiftchangerequest.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "39895600"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/decline
+POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -67,7 +67,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/decline
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

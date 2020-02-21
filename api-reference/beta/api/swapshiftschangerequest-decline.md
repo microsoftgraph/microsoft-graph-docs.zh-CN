@@ -1,22 +1,22 @@
 ---
-title: swapShiftsChangeRequest：批准
-description: 批准交换转换请求。
+title: swapShiftsChangeRequest：拒绝
+description: 拒绝交换转换请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0a6ff400b787efbfd59e0d2f9aa614e85652be66
+ms.openlocfilehash: 35d7d9d83dc32d7598815ed8d98e7f6f828d8b1f
 ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219732"
+ms.locfileid: "42219789"
 ---
-# <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：批准
+# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest：拒绝
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-批准[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
+拒绝[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
 
 ## <a name="permissions"></a>Permissions
 
@@ -33,7 +33,7 @@ ms.locfileid: "42219732"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +49,7 @@ POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/ap
 
 | 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|message|String|自定义审批邮件。|
+|message|String|自定义拒绝邮件。|
 
 ## <a name="response"></a>响应
 
@@ -64,11 +64,11 @@ POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/ap
 请求示例如下所示。
 <!-- {
   "blockType": "request",
-  "name": "swapshiftchangerequest_approve"
+  "name": "swapshiftchangerequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 Content-type: application/json
 
 {
@@ -93,7 +93,7 @@ HTTP/1.1 204 NO CONTENT
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "swapShiftChangeRequest: approve",
+  "description": "swapShiftChangeRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

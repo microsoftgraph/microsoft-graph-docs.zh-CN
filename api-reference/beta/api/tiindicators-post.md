@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 46af7c54c5af55ad44e04a961171530cc4a74fa3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4e9d66da03aa6ff4d07de13fb8f00eb37ba004da
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409245"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219697"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
 
@@ -18,7 +18,7 @@ ms.locfileid: "36409245"
 
 创建新的[tiIndicator](../resources/tiindicator.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,11 +44,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式。
+在请求正文中，提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，并提供以下必需字段`action`： `description`、 `expirationDateTime`、 `targetProduct`、 `threatType`、 `tlpLevel`、。 
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -56,7 +56,7 @@ POST /security/tiIndicators
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tiindicator_from_security"
@@ -84,15 +84,15 @@ Content-type: application/json
   "tlpLevel": "green"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tiindicator-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tiindicator-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tiindicator-from-security-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +104,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

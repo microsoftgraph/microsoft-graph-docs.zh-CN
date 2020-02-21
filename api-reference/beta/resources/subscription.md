@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: cab4c5185061958bfdc080ba743364da8743b081
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 3e8d060f6c33de32b7697b2fbcfc4ac7e99222a8
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163477"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219641"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "42163477"
 - Outlook 中的[消息][]、[事件][]或[联系人][]
 - Azure Active Directory 中的[用户][]或[组][]
 
-[概述文章](webhooks.md)中记录了每个可在订阅的**resource**属性中使用的每个资源都支持的资源路径表达式。
+请参阅[使用 Microsoft GRAPH API 获取](webhooks.md)每个受支持资源的可能资源路径值的更改通知。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
@@ -44,7 +44,7 @@ ms.locfileid: "42163477"
 | changeType | string | 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 |
 | lifecycleNotificationUrl | string | 接收生命周期通知（包括`subscriptionRemoved`和`missed`通知）的终结点的 URL。 如果未提供，这些通知将传递给**notificationUrl**。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-outlook-authz)有关 Outlook 资源如何使用生命周期通知的详细信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 必填。 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 有关每个受支持的资源，请参阅可能的资源路径[值](webhooks.md)。 必填。 |
 | expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
 | clientState | string | 指定每个通知中由服务发送的**clientState**属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的**clientState**属性的值与每个通知收到的**clientState**属性的值进行比较，来检查该通知是否来自服务。 可选。 |
 | id | 字符串 | 订阅的唯一标识符。只读。 |

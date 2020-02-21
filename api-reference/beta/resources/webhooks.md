@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: a2389044671be071cf1d43dcd788519ee49d6363
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: e14227ad1e64aaea6bf2cfb15f9ba76d0ffeb12b
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159022"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219648"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -22,16 +22,16 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | **资源** | **支持的资源路径** | **资源数据可以包含在通知中**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Outlook [邮件][] | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | 否 |
-| Outlook [事件][] | `/users/{id}/events` | 否 |
-| Outlook 个人[联系人][] | `/users/{id}/contacts` | 否 |
-| [用户][] | `/users`（对所有用户的更改）<br>`/users/{id}`（对特定用户的更改） | 否 |
-| [组][] | `/groups`（对所有组的更改）<br>`/groups/{id}`（对特定组所做的更改） | 否 |
-| Office 365 组[对话][] | `groups/{id}/conversations` | 否 |
-| 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容 | `/me/drive/root` | 否 |
-| OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容 | `/drives/{id}/root`<br> `/me/drive/root` | 否 |
-| 安全[警报][] | `/security/alerts/{id}`（对特定警报的更改） <br> `/security/alerts/?$filter`（更改已筛选的通知）| 否 |
-| 团队[了 chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages`（所有团队中所有频道中的邮件）<br>`/teams/{id}/channels/{id}/messages`（特定频道中的邮件）<br>`/chats/allMessages`（所有聊天中的邮件）<br>`/chats/{id}/messages`（特定聊天中的邮件） | 是 |
+| Outlook [邮件][] | 对用户邮箱中的所有邮件所做的更改： <br>`/users/{id}/messages`<br>对用户收件箱中的邮件所做的更改：<br>`/users/{id}/mailFolders('inbox')/messages` | 否 |
+| Outlook [事件][] | 对用户邮箱中的所有事件所做的更改：<br>`/users/{id}/events` | 否 |
+| Outlook 个人[联系人][] | 对用户邮箱中的所有个人联系人所做的更改：<br>`/users/{id}/contacts` | 否 |
+| [用户][] | 对所有用户所做的更改：<br>`/users` <br>对特定用户的更改：<br>`/users/{id}`| 否 |
+| [组][] | 对所有组所做的更改：<br>`/groups` <br>对特定组的更改：<br>`/groups/{id}` | 否 |
+| Office 365 组[对话][] | 对组的对话所做的更改：<br>`groups/{id}/conversations` | 否 |
+| OneDrive （个人版）上的[driveItem][] | 对_任意文件夹_层次结构中的内容所做的更改：<br>`/users/{id}/drive/root` | 否 |
+| OneDrive for Business 上的[driveItem][] | 对_根文件夹_层次结构中的内容所做的更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
+| 安全[警报][] | 对特定警报的更改：<br>`/security/alerts/{id}` <br>对已筛选警报的更改：<br> `/security/alerts/?$filter`| 否 |
+| 团队[了 chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | 对所有团队中的所有频道中的聊天消息的更改：<br>`/teams/allMessages` <br>对特定频道中聊天邮件的更改：<br>`/teams/{id}/channels/{id}/messages`<br>在所有聊天中对聊天消息进行的更改：<br>`/chats/allMessages` <br>在特定聊天中对聊天消息进行的更改：<br>`/chats/{id}/messages` | 是 |
 
 > **注意**：开头的`/users/{id}`任何资源路径也都可以接受`/me`引用已登录用户。
 
