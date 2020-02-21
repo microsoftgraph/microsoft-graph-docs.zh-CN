@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 02f06d9de4a3e40c06208502b8b08fbc2ab06bd2
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: cda3163cd7538c418338e5d2c6d1ab0a076b33ff
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953590"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159134"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -21,6 +21,8 @@ ms.locfileid: "41953590"
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
 - Azure Active Directory 中的[用户][]或[组][]
 - Microsoft Graph 安全性 API 中的[警报][]
+
+有关每项资源支持的资源路径表达式（可在订阅的 **resource** 属性中使用），可查看[概述文章](webhooks.md)。
 
 ## <a name="methods"></a>方法
 

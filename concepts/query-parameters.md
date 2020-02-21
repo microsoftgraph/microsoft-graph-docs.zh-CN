@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f5cee8933c13ea9f92ae14ae664e9c1492267ea1
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 6aafefce824a9d37522415b785f00a43efe40c0f
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41251897"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160226"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -369,6 +369,8 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 使用 `$top` 查询参数指定结果集的页面大小。 
 
 如果结果集中还剩余多个项目，则响应正文将包含 `@odata.nextLink` 参数。 此参数包含可用于获取下一页结果的 URL。 若要了解详细信息，请参阅[分页](./paging.md)。 
+
+$top 接受的最小值为 1，接受的最大值为 999。  
 
 例如，以下请求返回用户邮箱中的前 5 封邮件：
 

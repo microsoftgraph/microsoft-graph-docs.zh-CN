@@ -4,12 +4,12 @@ description: Delta 查询可通过调用一系列 delta 函数查询用户的添
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: ef3a310dc4ccaf4ea1d858dfe913d626855b24d8
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: c41185f7c8679dc2df06ae6a47a55c2f904012be
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652028"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163687"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## <a name="deltalink-response"></a>deltaLink 响应
 
-如果未发生更改，则会返回同一 `deltaToken` 且无返回结果。
+如果未发生更改，则会返回不同 `deltatoken` 且不返回结果。
 
 ```http
 HTTP/1.1 200 OK
@@ -171,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-如果发生更改，便会返回相同的 `deltaToken`，其中包括已更改用户的集合。
+如果发生更改，则返回不同的 `deltatoken`，其中包括已更改用户的集合。
 
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: 定期事件是 Outlook 日历的重要组成部分。 无论是与
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8730ca8ad7694782afafcabbc7d02f138f8fbb22
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570346"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162524"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>在 Outlook 中将重复约会安排为定期事件
 
@@ -358,4 +358,8 @@ ms.locfileid: "32570346"
 
 ## <a name="next-steps"></a>后续步骤
     
-了解更多关于[与 Outlook 日历集成](outlook-calendar-concept-overview.md)的信息。
+- 了解更多关于[与 Outlook 日历集成](outlook-calendar-concept-overview.md)的信息。
+- 在日历 API 参考中查看其他定期事件示例：
+  - [创建每周发生一次的定期事件](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
+  - [创建每日定期事件](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+
