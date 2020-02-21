@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cb5dfc24011c07724b7116d2edb50397ddc74a2c
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 4a43b65c7419a6072018d9ee1d4f2572eedcdb87
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216894"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108488"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -122,31 +122,6 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_ 和 _AccessReview.ReadWri
 
 ---
 
-## <a name="analytics-resource-permissions"></a>分析资源权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   读取所有用户活动统计信息。 | 允许应用在没有登录用户的情况下读取用户活动统计信息。 | 是 |
-
-#### <a name="application-permissions"></a>应用程序权限
-
-无。
-
-### <a name="example-usage"></a>用法示例
-
-#### <a name="delegated"></a>委派
-
-* _Analytics.Read_：[列出用户的相关设置](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
-* _Analytics.Read_：[获取用户的活动统计信息](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-
-#### <a name="application"></a>应用程序
-
-无。
-
----
-
 ## <a name="administrative-units-permissions"></a>管理单元权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -180,6 +155,30 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 - _AdministrativeUnit.ReadWrite.All_：将成员添加到管理单元 (`POST /beta/administrativeUnits/<id>/members`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="analytics-resource-permissions"></a>分析资源权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   读取所有用户活动统计信息。 | 允许应用在没有登录用户的情况下读取用户活动统计信息。 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _Analytics.Read_：[列出用户的相关设置](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+
+#### <a name="application"></a>应用程序
+
+无。
 
 ---
 
@@ -746,17 +745,19 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息  | 允许应用代表登录用户读取组织中所有用户的标识用户风险信息。 | 是 | 否 |
+| _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息  | 允许应用代表登录用户读取和更新组织中所有用户的标识用户风险信息。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息 | 允许应用在没有登录用户的情况下读取组织中所有用户的标识用户风险信息。 | 是 |
+| _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息 | 允许应用在没有登录用户的情况下读取和更新组织中所有用户的标识用户风险信息。 | 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
-_IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1463,6 +1464,22 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="teams-activity-permissions"></a>Teams 活动权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read_ | 读取用户的团队合作活动源 | 允许应用读取登录用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 否 | 否 |
+| _TeamsActivity.Send_ | 以用户身份发送团队合作活动 | 允许用户代表登录用户在用户的团队合作活动源中创建新活动，并将新活动发送给其他用户的活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 否 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read.All_ | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+| _TeamsActivity.Send_ | 向任何用户发送团队合作活动。 | 允许应用在没有登录用户的情况下将新活动发送给任何用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
 
 ## <a name="terms-of-use-permissions"></a>使用条款权限
 
