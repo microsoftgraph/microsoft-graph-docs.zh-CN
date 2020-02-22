@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例，这些实例限制在特定国家/地区的地理边界内，并由当地人员运营。
-ms.openlocfilehash: 4da5570719cf64ba8fc329039e4ba4fcef7348b5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: ba7ecccddadb65bcd2e1a3050be404256bf587e2
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969841"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219767"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -71,9 +71,9 @@ ms.locfileid: "37969841"
 | 个人联系人 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
-| 报表  |➖| ✔ |➖|
+| 报告  |➖| ✔ |➖|
 | 更改通知（Webhook）  | ➖|✔* |✔* |
-| Delta 查询 | ➖ | ➖| ➖ |
+| Delta 查询 | ➖ | ✔ | ➖ |
 | 目录架构扩展 |➖|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
@@ -96,4 +96,4 @@ ms.locfileid: "37969841"
 - [Office 365 德国版](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure 政府](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure 中国世纪互联](https://docs.microsoft.com/azure/china/)
-- [Azure 德国](https://docs.microsoft.com/azure/germany/)
+- [Azure Germany](https://docs.microsoft.com/azure/germany/)
