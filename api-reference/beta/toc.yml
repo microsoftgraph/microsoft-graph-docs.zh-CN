@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 备注
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -10777,6 +10777,10 @@
                       href: api/swapshiftschangerequest-post.md
                     - name: 获取
                       href: api/swapshiftschangerequest-get.md
+                    - name: 批准
+                      href: api/swapshiftschangerequest-approve.md
+                    - name: 拒绝
+                      href: api/swapshiftschangerequest-decline.md
                 - name: 休假
                   href: resources/timeoff.md
                   items:
