@@ -5,24 +5,24 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cda3163cd7538c418338e5d2c6d1ab0a076b33ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: e036c357d65c7f01c1596095569f8dfe5b863007
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159134"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219669"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 
-- Outlook 中的[消息][]、[事件][]或[联系人][]
+- Microsoft Graph 安全性 API 中的[警报][]
 - Office 365 组的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
+- Outlook 中的[邮件][]、[事件][]或[联系人][]
 - Azure Active Directory 中的[用户][]或[组][]
-- Microsoft Graph 安全性 API 中的[警报][]
 
-有关每项资源支持的资源路径表达式（可在订阅的 **resource** 属性中使用），可查看[概述文章](webhooks.md)。
+查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
 ## <a name="methods"></a>方法
 
@@ -40,7 +40,7 @@ ms.locfileid: "42159134"
 |:---------|:-----|:------------|
 | changeType | string | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 必需。 将接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 |
-| resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 |
+| resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
 | clientState | 字符串 | 可选。 指定服务为每个通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
 | id | string | 订阅的唯一标识符。只读。 |
