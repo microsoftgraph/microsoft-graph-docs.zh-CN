@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 1a84035cd0e1e596e88124a5f75fdcbd1326defe
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 4f0db665cd2fd61a677d8e9bd80900068154b8d7
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216866"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229890"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
@@ -321,6 +321,37 @@ Content-Type: application/json
   "tid": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
   "uti": "-KoJHevhgEGnN4kwuixpAA",
   "ver": "1.0"
+}
+```
+
+### <a name="example-verifying-validation-tokens"></a>示例：对验证令牌进行验证
+
+```csharp
+// add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
+public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
+{
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var openIdConfig = await configurationManager.GetConfigurationAsync();
+    var handler = new JwtSecurityTokenHandler();
+    try
+    {
+    handler.ValidateToken(token, new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateIssuerSigningKey = true,
+        ValidateLifetime = true,
+        ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+        ValidAudiences = appIds,
+        IssuerSigningKeys = openIdConfig.SigningKeys
+    }, out _);
+    return true;
+    }
+    catch (Exception ex)
+    {
+    Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+    return false;
+    }
 }
 ```
 

@@ -4,19 +4,21 @@ description: 可选择两种方法中的一种来将文件附加到邮件，具�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 74cc6ad4af5d649ca480c7b708b0716062e8d36a
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953604"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229750"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>将大文件作为附件附加到 Outlook 邮件（预览）
 
 可选择两种方法中的一种来将文件附加到[邮件](/graph/api/resources/message?view=graph-rest-beta)，具体取决于文件的大小：
 
-- 如果文件大小小于 4 MB，则可以[针对邮件的附件导航属性执行单个 POST](/graph/api/message-post-attachments?view=graph-rest-beta)。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
-- 如果文件大小介于 3MB 和 150MB 之间，则创建一个上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整的文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。
+- 如果文件大小小于 3 MB，则可以[针对邮件的附件导航属性执行单个 POST](/graph/api/message-post-attachments?view=graph-rest-beta)。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
+- 如果文件大小介于 3MB 和 150MB 之间，则创建一个上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整的文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。 
+
+若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加。
 
 本文使用一个示例来阐释第二种方法。 该示例创建并使用上传会话，将大文件附件（大小超过 3MB）添加到特定邮件。 成功上传整个文件时，它会获取一个 URL，其中包含文件附件的 ID，可用于执行其他操作，如获取文件附件元数据。
 
@@ -32,7 +34,7 @@ ms.locfileid: "41953604"
 
 ### <a name="example-request-create-an-upload-session"></a>示例请求：创建上传会话
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession",
@@ -50,15 +52,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -255,5 +257,9 @@ DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626f
 ```http
 HTTP/1.1 204 No content
 ```
+## <a name="errors"></a>错误
 
+### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
+
+尝试[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-beta)以附加小于 3 MB 的文件时返回此错误。 如果文件大小小于 3 MB，则应该[针对邮件的附件导航属性执行单个 POST](/graph/api/message-post-attachments?view=graph-rest-beta)。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
 

@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 59fb8610dfbcb6689a25850f1104f1fc88233baf
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: a9578943a5afb5381e16e8c4a986d0f5ff3617cd
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160233"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219781"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1477,6 +1477,22 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsActivity.Read.All_ | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
 | _TeamsActivity.Send_ | 向任何用户发送团队合作活动。 | 允许应用在没有登录用户的情况下将新活动发送给任何用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+
+## <a name="teams-app-permissions"></a>Teams 应用权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。   | 是 | 否 |
+| _TeamsApp.ReadWrite.All_ | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。    | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+| _TeamsApp.ReadWrite.All_ | 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
 
 ## <a name="terms-of-use-permissions"></a>使用条款权限
 

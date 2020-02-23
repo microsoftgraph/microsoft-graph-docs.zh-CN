@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 10d142195e5b3520dc47cf52b4708a104e645e2d
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: a3dd8232233d328b254d2b7668fb923694ce770c
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969890"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219760"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -87,4 +87,5 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 ## <a name="next-steps"></a>后续步骤
 
 - [使用 Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- 浏览 [Microsoft Graph 安全 API 示例](https://aka.ms/graphsecurityapicode)
 - 想要成为安全提供程序？ 请联系 [graphsecfeedback](mailto:graphsecfeedback@microsoft.com)。

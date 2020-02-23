@@ -4,12 +4,12 @@ description: 可使用本文中描述的任一选项与 Microsoft Graph 安全�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 362dde5c75180bfe1edbf42f49bcbe009af9015a
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: a3f5a2dc137a37012c4d7787d8c57c1045970be3
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484406"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219606"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API 实现安全解决方案集成
 
@@ -23,7 +23,7 @@ ms.locfileid: "36484406"
 
 | 解决方案类型 | 名称 | 连接器 | 公告 |
 |:-----|:--------|:--------|:----------|
-| SIEM |Splunk |[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon) | [博客文章](https://aka.ms/graphsecuritysplunkaddonblogpost) |
+| SIEM |Splunk Enterprise 和 Splunk Cloud|[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon) | [博客文章](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Splunk on Cloud 博客文章](https://aka.ms/graphsecuritysplunkcloudblogpost)|
 | SOAR | Azure 逻辑应用/Microsoft Flow | [适用于 Azure 逻辑应用、Microsoft Flow 和 PowerApps 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecurityconnectors) | [博客文章](https://aka.ms/graphsecurityconnectorsblogpost) |
 | 自动化 | PowerShell 模块 | [Microsoft Graph 安全性 PowerShell 模块](https://aka.ms/graphsecuritypowershellmodule) | [博客文章](https://aka.ms/graphsecuritypowershellmodulepost) |
 | 报告 | Power BI | [适用于 Power BI 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecuritypowerbiconnectordoc) | [博客文章](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |
