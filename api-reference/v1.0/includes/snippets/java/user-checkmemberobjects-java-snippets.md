@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 08511c7e6ab9fbc723fbc7db6c38858232dd50ed
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636927"
 ---
-
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
@@ -13,8 +18,8 @@ idsList.add("86a64f51-3a64-4cc6-a8c8-6b8f000c0f52");
 idsList.add("ac38546e-ddf3-437a-ac5c-27a94cd7a0f1");
 
 graphClient.me()
-	.checkMemberObjects(idsList)
-	.buildRequest()
-	.post();
+    .checkMemberObjects(idsList)
+    .buildRequest()
+    .post();
 
 ```
