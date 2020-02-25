@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f03db0d590546e6967524745d39ae021ea7596d7
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 1e45926ee17ecec717595ad1eb2b1a9b2f8161b0
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036149"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268380"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -24,7 +24,7 @@ ms.locfileid: "37036149"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:----------------|:--------------------------------------------|
-| 委派（工作或学校帐户） | User.readbasic.all，user. User.readbasic.all，user. all，All，user. all，All： all |
+| 委派（工作或学校帐户） | User.readbasic.all，User.readbasic.all，user. all，user. all，All，All，All，All。 all |
 | 委派（个人 Microsoft 帐户） | User.readbasic.all、用户读取、用户读写 |
 | 应用程序 | User.Read.All、User.ReadWrite.All |
 
@@ -80,7 +80,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_translateexchangeids"
@@ -99,15 +99,15 @@ Content-Type: application/json
   "targetIdType": "restImmutableEntryId"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-translateexchangeids-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-translateexchangeids-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

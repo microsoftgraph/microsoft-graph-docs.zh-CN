@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef2b53a9b907146c91bb66e269c6f604c2b26d57
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 847bb4f25cfdadecc3983ac7365eff8146200094
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938686"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268388"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -64,15 +64,15 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | categories|String|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。 |
 | importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-| isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
-|isOnlineMeeting|Boolean| `True`如果此事件有联机会议信息， `false`否则为。 默认为 false。 可选。|
+| isAllDay|Boolean|如果事件持续一整天，则设置为 true。 如果为 true，无论它是一天还是多天事件，开始和结束时间都必须设置为午夜，并且必须在相同的时区内。|
+|isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
 |位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可能的值为`teamsForBusiness`、 `skypeForBusiness`和`skypeForConsumer`。 可选。 |
+|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 | recurrence|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-| responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+| responseRequested|布尔值|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 | showAs|String|要显示的状态。 可能的值为`free` ： `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`、。|
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
@@ -94,7 +94,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_event"
@@ -119,11 +119,11 @@ Content-length: 285
   "isReminderOn": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

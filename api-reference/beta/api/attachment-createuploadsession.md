@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116efc7583b0344cc1845f698210f760e3843d9b
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968921"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268363"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37968921"
 
 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的[邮件](../resources/message.md)。
 
-使用此方法可将大小为 3 MB 和 150 MB 的文件附加到**邮件**中。 若要在 4 MB 下附加大小的文件，只需[在 "附件" 导航属性上进行发布](message-post-attachments.md)即可。 
+当文件大小介于 3 MB 和 150 MB 之间时，使用此方法可将文件附加到**邮件**。 若要附加小于 3 MB 的文件，请[在 "附件" 导航属性上进行发布](message-post-attachments.md)。 
 
 作为响应的一部分，此操作将返回可在后续顺序`PUT`查询中使用的上载 URL。 每个`PUT`操作的请求标头允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
 
@@ -34,7 +34,7 @@ ms.locfileid: "37968921"
 > [!TIP]
 > Exchange Online 允许管理员自定义 Office 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -69,7 +69,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201, Created`响应正文中返回响应代码和新的[uploadSession](../resources/uploadsession.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[uploadSession](../resources/uploadsession.md)对象。
 
 >**注意**： 
 >
@@ -82,13 +82,11 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ## <a name="examples"></a>示例
 
-下面是一个如何调用此 API 的示例。
+下面的示例演示如何创建可在后续文件上载操作中使用的上载会话。
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -107,15 +105,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -123,8 +121,6 @@ Content-type: application/json
 
 
 ### <a name="response"></a>响应
-
-下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e1822c1f528d58a825abcecb5aecfdc05213fee
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 27919e11c29d5003ba3be4a0fe25f531b5206c5d
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161500"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268407"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -81,10 +81,10 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-event"></a>示例1：创建事件
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例1：在指定时区中创建事件，并为该事件分配一个可选的 transactionId 值
 
 #### <a name="request"></a>请求
-下面是一个请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
+下面是一个请求示例。 它使用 "首选： outlook. 时区请求" 标头指定响应中的开始和结束时间的时区。 它还会设置 transactionId 属性，以减少服务器上不必要的重试次数。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,7 +122,8 @@ Content-type: application/json
       "type": "required"
     }
   ],
-  "allowNewTimeProposals": true
+  "allowNewTimeProposals": true,
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -179,6 +180,7 @@ Content-length: 2197
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs":"busy",
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",

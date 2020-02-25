@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e924ea98bb0f9ac8e0b610a4672cbed83d83d0bc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913441"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268316"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "40913441"
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | 启动录制的参与者。 |
 | recordingStatus | String | 可能的值包括`unknown`： `notRecording`、 `recording`、或`failed`。 |
+| initiator | [identitySet](identitySet.md) | 记录发起方的标识。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -39,7 +40,8 @@ ms.locfileid: "40913441"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "recordingStatus": "unknown | notRecording | recording | failed"
+  "recordingStatus": "unknown | notRecording | recording | failed",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 
