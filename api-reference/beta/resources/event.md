@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a89ae11fe89421763241313989aab8d6a839e03d
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: b9d64e03039588a318e865bf8524bbf1274b5a34
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652219"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268358"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -115,7 +115,7 @@ ms.locfileid: "41652219"
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+|isAllDay|Boolean|如果事件持续一整天，则设置为 true。 如果为 true，无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息（即 **onlineMeeting** 指向 [onlineMeetingInfo](onlinemeetinginfo.md) 资源）则为 `True`，反之则为 `false`。 默认值为 `false`（**onlineMeeting** 为 `null`）。 可选。 <br> 将 **isOnlineMeeting** 设置为 `true` 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，Outlook 将忽略对 **isOnlineMeeting** 的任何进一步更改，并且会议仍保持联机。 |
 |isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
@@ -139,6 +139,7 @@ ms.locfileid: "41652219"
 |showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[DateTimeTimeZone](datetimetimezone.md)|事件的开始日期、时间和时区。 默认情况下，开始时间使用 UTC 格式。|
 |subject|String|事件的主题行文本。|
+|transactionId|字符串|客户端应用为服务器指定的自定义标识符，用于避免因客户端重试创建相同事件而导致冗余的 [POST](../api/calendar-post-events.md) 操作。 当低网络连接性导致客户端在从服务器中收到客户端先前创建事件请求的响应之前超时时，此功能很有用。 你在创建事件时设置 **transactionId**，之后不能在后续更新中更改 **transactionId**。 如果应用已设置此属性，则仅在响应有效负载中返回此属性。 可选。|
 |type|String|事件类型。 可取值为：`singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读|
 |uid|字符串|日历事件的唯一标识符。 对于定期事件，Series Master 及其所有事件（包括异常）的此值均相同。 此属性将替换[事件资源](/graph/api/resources/event?view=graph-rest-1.0)中定义的当前 iCalUid 属性（对于序列中各个实例而言各不相同）。|
 |webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>可以从 iFrame 中访问此 URL。|

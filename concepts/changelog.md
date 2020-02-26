@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5a8f89b2c31480b8cd0b11374c7dc7d74cd3653c
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: d2bdd53f05611bac7b9fef76bfada081517ef738
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219599"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268417"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,12 @@ ms.locfileid: "42219599"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="february-2020"></a>2020 年 2 月
+
+### <a name="cloud-communications--recording"></a>云通信 | 录制
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项|beta|向 [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta) 复杂类型新增了“ **发起程序**”属性。
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 

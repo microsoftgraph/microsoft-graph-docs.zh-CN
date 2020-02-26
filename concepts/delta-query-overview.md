@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5644505562bdd50be22ff421e3082f7a0dd5ebcd
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 3ec98035d3d5e0de6a7ddd316446f3bd226930cf
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651986"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268429"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -62,6 +62,8 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 对于[用户](/graph/api/resources/user?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源，在使用某些查询参数时受到限制：
 
+- 不支持 `$top`。
+- 不支持 `$orderby`。
 - 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
 - `$select` 还支持用户和组的 `manager` 和 `members` 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
 

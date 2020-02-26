@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 57e2590ca33bdbad46fafbc526fb8251ac0f7243
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: a3e1ef3ae7d63dc3393bcf8641f1d598f549c2fe
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113929"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280622"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -52,7 +52,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ##### <a name="request"></a>请求
 请求示例如下所示。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
@@ -60,15 +60,15 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +109,18 @@ Content-length: 2577
         "lastSuccessfulExecutionWithExports": null,
         "steadyStateFirstAchievedTime": "0001-01-01T00:00:00Z",
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
-        "quarantine": null,
+        "quarantine": {
+            "currentBegan": "",
+            "nextAttempt": "",
+            "reason": "",
+            "seriesBegan": "",
+            "seriesCount": 2,
+            "error": {
+                "code": "SalesforceInvalidCredentials",
+                "message": "Your Salesforce.com credentials are invalid.  Please obtain a current Salesforce.com administrative user name, password and security token, and enter those in the screen for configuring user provisioning",
+                "tenantActionable": true
+            }
+        },
         "troubleshootingUrl": null
     },
     "synchronizationJobSettings": [

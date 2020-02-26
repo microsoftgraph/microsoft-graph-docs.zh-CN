@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 18d675b38dd3155b5a06c67fc3164fd315d7c0b2
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 3d2e626535d579b77c27125500d7247401f26915
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162496"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280615"
 ---
 # <a name="activitystatistics-resource-type"></a>activityStatistics 资源类型
 
@@ -40,18 +40,18 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | 在最后一个完整的星期检索用户的活动统计信息集合的属性。|
+| [列出 activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | 在最后一个完整的星期检索用户的活动统计信息集合的属性。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|activity|analyticsActivityType| 返回其统计信息的活动的类型。 可能的值为： `call`、 `chat`、 `email` `focus`、和`meeting`。|
-|duration|持续时间|活动所用的总小时数。 值以 ISO 8601 格式表示，持续时间。|
-|endDate|Date|活动结束的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
-|id|String| 活动的只读 ID，表示`{activity}_{startdate}_{enddate}`为。|
-|startDate|日期|活动启动的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
-|timeZoneUsed|String|用户在 Microsoft Outlook 中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
+|activity |analyticsActivityType |返回其统计信息的活动的类型。 可能的值为： `call`、 `chat`、 `email` `focus`、和`meeting`。 |
+|duration |持续时间 |活动所用的总小时数。 值以 ISO 8601 格式表示，持续时间。 |
+|endDate |Date |活动结束的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。 |
+|id |String |活动的只读 ID。 请勿为您的方案分析或自定义值。 |
+|startDate |日期 |活动启动的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。 |
+|timeZoneUsed |String |用户在 Microsoft Outlook 中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。 |
 
 ## <a name="relationships"></a>关系
 
