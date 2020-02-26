@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1647f7839bcf48c5ec9e870d79fed4db91186b28
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: fa80b35a196a1fd95ce4b98cf17f456708962ddb
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636945"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42281547"
 ---
 ```csharp
 
@@ -45,7 +45,8 @@ var @event = new Event
             Type = AttendeeType.Required
         }
     },
-    AllowNewTimeProposals = true
+    AllowNewTimeProposals = true,
+    TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 await graphClient.Me.Events
