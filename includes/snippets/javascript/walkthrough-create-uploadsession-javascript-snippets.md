@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42d70e72167723a4cad7e4b9598daf7adcdcc6f9
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: efcb757d5e0a77ef77a70708a30421ae7e48af9f
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638786"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42281513"
 ---
 ```javascript
 
@@ -18,7 +18,7 @@ const client = Client.init(options);
 const uploadSession = {
   AttachmentItem: {
     attachmentType: "file",
-    name: "flower", 
+    name: "flower",
     size: 3483322
   }
 };
