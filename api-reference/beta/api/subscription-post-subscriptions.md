@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: fff6dd2d707ba75db352837e77089f97e58cb325
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: e5276d8cf4e0a096e1ce98c9247d0c46e9f515c9
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774385"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42287987"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -27,7 +27,9 @@ ms.locfileid: "41774385"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[了 chatmessage](../resources/chatmessage.md) （/teams/{id}/channels/{id}/messages） | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) （/teams/allMessages--组织中的所有频道邮件） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[了 chatmessage](../resources/chatmessage.md) （/chats/{id}/messages） | 不支持 | 不支持 | Chat.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) （/chats/allMessages--组织中的所有聊天邮件） | 不支持 | 不支持 | Chat.Read.All  |
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
@@ -38,13 +40,23 @@ ms.locfileid: "41774385"
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意：** 了 chatmessage 订阅需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。
+### <a name="chatmessage-microsoft-teams"></a>了 chatmessage （Microsoft 团队）
 
-> **注意：** 对 OneDrive 和 Outlook 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
+**了 chatmessage**订阅需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+> **注意：** `/teams/allMessages`和`/chats/allMessages`当前处于预览阶段。 在预览过程中，可以在不付费的情况下使用此 API，这取决于[Microsoft Api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 但是，使用 API 的应用程序的用户可能需要订阅特定 Microsoft 365 产品。 在正式发行时，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外费用。
 
-- 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
+### <a name="driveitem-onedrive"></a>driveItem （OneDrive）
+
+对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
+
+在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+
+### <a name="contact-event-and-message-outlook"></a>联系人、事件和邮件（Outlook）
+
+对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
+
+- 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
@@ -73,11 +85,11 @@ POST /subscriptions
 ### <a name="request"></a>请求
 
 在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
-" `clientState` " `latestSupportedTlsVersion`和 "" 字段是可选的。
+`clientState` 和 `latestSupportedTlsVersion` 是可选字段。
 
 此请求创建一个订阅，用于通知当前登录用户接收到的新邮件。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -96,15 +108,15 @@ Content-type: application/json
    "latestSupportedTlsVersion": "v1_2"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
