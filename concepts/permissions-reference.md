@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 15409e92e94b0553cf7393e5fc59798a4cdb532c
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 137857094346ac44679fb95c66ca5e522bd69b9b
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280629"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42287973"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -357,7 +357,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
-## <a name="channelmessage-permissions"></a>ChannelMessage 权限
+## <a name="channel-message-permissions"></a>频道消息权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
@@ -368,7 +368,8 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Read.All_ |读取所有频道消息  |允许应用在没有登录的用户的情况下读取 Microsoft Teams 中的频道消息。 |是 | 否 |
-|_ChannelMessage.UpdatePolicyViolation.All_ | 标记违反策略的频道消息 |允许应用更新 Microsoft Teams 频道消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
+|_ChannelMessage.Send_ |发送频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中发送频道消息。 |是 | 否 |
+|_ChannelMessage.UpdatePolicyViolation.All_ |标记违反策略的频道消息 |允许应用更新 Microsoft Teams 频道消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
 
 > **注意：** 另请参阅 [Group.Read.All](#group-permissions)。
 
@@ -388,7 +389,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_Chat.Read.All_ |读取所有聊天消息  |允许应用在没有登录的用户的情况下读取 Microsoft Teams 中的一对一或群组聊天消息。 |是 | 否 |
 |_Chat.UpdatePolicyViolation.All_ |标记违反策略的聊天消息 |允许应用更新 Microsoft Teams 一对一聊天或群组聊天消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
 
-> **注意：** 对于频道中的消息，请参阅 [ChannelMessage 权限](#channelmessage-permissions)。
+> **注意：** 对于频道中的消息，请参阅 [ChannelMessage 权限](#channel-message-permissions)。
 
 ## <a name="contacts-permissions"></a>联系人权限
 
@@ -1371,7 +1372,8 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
 | _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
 | _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
-| _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 |允许应用代表已登录的用户创建威胁指标和完全管理这些威胁指标（阅读、更新和删除）。  | 是  | 否 |
+| _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1382,6 +1384,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _SecurityActions.Read.All_        |  读取组织的安全事件 | 允许应用读取组织的安全措施。 | 是  |
 | _SecurityActions.ReadWrite.All_   | 创建和读取组织的安全措施 | 允许应用读取或创建安全措施，无需已登录用户。 | 是  |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 | 允许应用创建威胁指标，并完全管理这些威胁指标（阅读、更新和删除），无需已登录用户。  它无法删除其不拥有的任何威胁指标。 | 是  |
+| _ThreatIndicators.Read.All_   | 管理此应用创建或拥有的威胁指标 | 允许应用在没有登录用户的情况下读取组织的所有指示器。 | 是  |
 
 ### <a name="remarks"></a>说明
 
@@ -1466,37 +1469,55 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ---
 
-## <a name="teams-activity-permissions"></a>Teams 活动权限
+## <a name="teams-activity-permissions-private-preview"></a>Teams 活动权限（[个人预览版](#permissions-availability-status)）
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ | 读取用户的团队合作活动源 | 允许应用读取登录用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 否 | 否 |
-| _TeamsActivity.Send_ | 以用户身份发送团队合作活动 | 允许用户代表登录用户在用户的团队合作活动源中创建新活动，并将新活动发送给其他用户的活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 否 | 否 |
+| _TeamsActivity.Read_（个人预览版）| 读取用户的团队合作活动源 | 允许应用读取登录用户的团队合作活动源。  | 否 | 否 |
+| _TeamsActivity.Send_（个人预览版）| 以用户身份发送团队合作活动 | 允许用户代表登录用户在用户的团队合作活动源中创建新活动，并将新活动发送给其他用户的活动源。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
-| _TeamsActivity.Send_ | 向任何用户发送团队合作活动。 | 允许应用在没有登录用户的情况下将新活动发送给任何用户的团队合作活动源。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+| _TeamsActivity.Read.All_（个人预览版） | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 | 是 | 否 |
+| _TeamsActivity.Send_（个人预览版）| 向任何用户发送团队合作活动。 | 允许应用在没有登录用户的情况下将新活动发送给任何用户的团队合作活动源。 | 是 | 否 |
 
-## <a name="teams-app-permissions"></a>Teams 应用权限
+## <a name="teams-app-permissions-private-preview"></a>Teams 应用权限（[个人预览版](#permissions-availability-status)）
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。   | 是 | 否 |
-| _TeamsApp.ReadWrite.All_ | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。    | 是 | 否 |
+| _TeamsApp.Read.All_（个人预览版）| 读取所有安装的 Teams 应用 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
+| _TeamsApp.ReadWrite.All_（个人预览版）| 管理所有 Teams 应用 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
-| _TeamsApp.ReadWrite.All_ | 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+| _TeamsApp.Read.All_（个人预览版）| 读取所有用户已安装的 Teams 应用 | 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
+| _TeamsApp.ReadWrite.All_（个人预览版）| 管理所有用户的 Teams 应用  | 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。  | 是 | 否 |
+
+## <a name="teams-tab-permissions-private-preview"></a>Teams 选项卡权限（[个人预览版](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsTab.Read.All_（个人预览版）| 读取 Microsoft Teams 中的选项卡。 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。    | 是 | 否 |
+| _TeamsTab.ReadWrite.All_（个人预览版）| 读取和写入 Microsoft Teams 中的选项卡。 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。   | 是 | 否 |
+| _TeamsTab.Create_（个人预览版）| 在Microsoft Teams 中创建选项卡。 | 允许应用代表已登录的用户在 Microsoft Teams 中的任何团队内创建选项卡。 这不会授予在选项卡创建后读取、修改或删除这些选项卡的权限，也不会授予访问选项卡中的内容的权限。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsTab.Read.All_（个人预览版）| 读取 Microsoft Teams 中的选项卡。 | 在没有登录用户的情况下，读取 Microsoft Teams 中任何团队内的选项卡的名称和设置。 这不会授予访问选项卡中的内容的权限。    | 是 | 否 |
+| _TeamsTab.ReadWrite.All_（个人预览版）| 读取和写入 Microsoft Teams 中的选项卡。 | 在没有登录用户的情况下读取和写入 Microsoft Teams 中任何团队内的选项卡。 这不会授予访问选项卡中的内容的权限。 | 是 | 否 |
+| _TeamsTab.Create_（个人预览版）| 在Microsoft Teams 中创建选项卡。 | 允许用户在没有登录用户的情况下在 Microsoft Teams 中的任何团队内创建选项卡。 这不会授予在选项卡创建后读取、修改或删除这些选项卡的权限，也不会授予访问选项卡中的内容的权限。 | 是 | 否 |
 
 ## <a name="terms-of-use-permissions"></a>使用条款权限
 
