@@ -3209,7 +3209,7 @@
                 - name: Android 工作配置文件 Wi-Fi 配置
                   href: resources/intune-deviceconfig-androidworkprofilewificonfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
@@ -3230,7 +3230,7 @@
                 - name: Apple 设备功能配置基础
                   href: resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
@@ -4496,7 +4496,7 @@
                 - name: macOS SCEP 证书配置文件
                   href: resources/intune-deviceconfig-macosscepcertificateprofile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
@@ -4511,7 +4511,7 @@
                 - name: macOS 信任的根证书
                   href: resources/intune-deviceconfig-macostrustedrootcertificate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-macostrustedrootcertificate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-macostrustedrootcertificate-get.md
@@ -6829,7 +6829,7 @@
                 - name: Windows 管理应用运行状况状态
                   href: resources/intune-devices-windowsmanagementapphealthstate.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-devices-windowsmanagementapphealthstate-list.md
                     - name: 获取
                       href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -6852,7 +6852,7 @@
                 - name: Android 管理的应用注册
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-androidmanagedappregistration-list.md
                     - name: 获取
                       href: api/intune-mam-androidmanagedappregistration-get.md
@@ -7610,7 +7610,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: 列表
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: 删除
+                    - name: Delete
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: 设备管理脚本
                   href: resources/intune-shared-devicemanagementscript.md
@@ -9083,24 +9083,66 @@
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
             - name: Policy
-              href: resources/policy.md
+              href: resources/policy-overview.md
               items:
-                - name: 列出策略
-                  href: api/policy-list.md
-                - name: 创建策略
-                  href: api/policy-post.md
-                - name: 获取策略
-                  href: api/policy-get.md
-                - name: 更新策略
-                  href: api/policy-update.md
-                - name: 删除策略
-                  href: api/policy-delete.md
-                - name: 分配策略
-                  href: api/policy-assign.md
-                - name: 列出已分配策略
-                  href: api/policy-list-assigned.md
-                - name: 列出已应用到应用程序的策略
-                  href: api/policy-list-appliesto.md
+                - name: 基于活动的超时策略
+                  href: resources/activitybasedtimeoutpolicy.md
+                  items:
+                    - name: 创建
+                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                    - name: 列出
+                      href: api/activitybasedtimeoutpolicy-list.md
+                    - name: 获取
+                      href: api/activitybasedtimeoutpolicy-get.md
+                    - name: 更新
+                      href: api/activitybasedtimeoutpolicy-update.md
+                    - name: 删除
+                      href: api/activitybasedtimeoutpolicy-delete.md
+                - name: 声明映射策略
+                  href: resources/claimsmappingpolicy.md
+                  items:
+                    - name: 创建
+                      href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                    - name: 列出
+                      href: api/claimsmappingpolicy-list.md
+                    - name: 获取
+                      href: api/claimsmappingpolicy-get.md
+                    - name: 更新
+                      href: api/claimsmappingpolicy-update.md
+                    - name: 删除
+                      href: api/claimsmappingpolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/claimsmappingpolicy-list-appliesto.md
+                - name: 主页领域发现策略
+                  href: resources/homerealmdiscoverypolicy.md
+                  items:
+                    - name: 创建
+                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                    - name: 列出
+                      href: api/homerealmdiscoverypolicy-list.md
+                    - name: 获取
+                      href: api/homerealmdiscoverypolicy-get.md
+                    - name: 更新
+                      href: api/homerealmdiscoverypolicy-update.md
+                    - name: 删除
+                      href: api/homerealmdiscoverypolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: 令牌生存期策略
+                  href: resources/tokenlifetimepolicy.md
+                  items:
+                    - name: 创建
+                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                    - name: 列出
+                      href: api/tokenlifetimepolicy-list.md
+                    - name: 获取
+                      href: api/tokenlifetimepolicy-get.md
+                    - name: 更新
+                      href: api/tokenlifetimepolicy-update.md
+                    - name: 删除
+                      href: api/tokenlifetimepolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/tokenlifetimepolicy-list-appliesto.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -9347,7 +9389,7 @@
             - name: 信任框架策略
               href: resources/trustframeworkpolicy.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: 创建
                   href: api/trustframework-post-trustframeworkpolicy.md
@@ -9360,7 +9402,7 @@
             - name: 信任框架键集
               href: resources/trustframeworkkeyset.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/trustframework-list-keysets.md
                 - name: 创建
                   href: api/trustframework-post-keysets.md
@@ -9383,7 +9425,7 @@
             - name: 用户流
               href: resources/identityuserflow.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/identityuserflow-list.md
                 - name: 创建
                   href: api/identityuserflow-post-userflows.md
@@ -10746,7 +10788,7 @@
                       href: api/openshift-get.md
                     - name: 更新
                       href: api/openshift-update.md
-                    - name: 删除
+                    - name: Delete
                       href: api/openshift-delete.md
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
@@ -10814,7 +10856,7 @@
                       href: api/timeoffrequest-get.md
                     - name: 更新
                       href: api/timeoffrequest-update.md
-                    - name: 删除
+                    - name: Delete
                       href: api/timeoffrequest-delete.md
                     - name: 批准
                       href: api/timeoffrequest-approve.md
@@ -10867,7 +10909,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -10886,7 +10928,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md
@@ -10903,7 +10945,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md
