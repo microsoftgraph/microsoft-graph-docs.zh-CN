@@ -5,21 +5,21 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0fd9f5ea9cd15abac7eea693b2af5c595b145ac7
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: c2440dfc7e798ea5b0a197f60b62acce4199b4ca
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108439"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331267"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。
+在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。  Azure AD 还会自动创建访问包分配请求，以用于跟踪访问删除。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,11 +34,11 @@ ms.locfileid: "42108439"
 |completedDate|DateTimeOffset|请求的处理结束日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |id|String| 只读。|
-|isValidationOnly|Boolean|如果请求不处理工作分配，则为 True。|
+|isValidationOnly|布尔值|如果请求不处理工作分配，则为 True。|
 |合理化|String|请求者提供的理由。|
-|requestState|String|、 `Denied` `Delivered`、 `PartiallyDelivered`或`Submitted`中的一个。 只读。|
+|requestState|String|、 `Denied` `Delivered` `Submitted` 、或`Scheduled`的其中`PartiallyDelivered`一个。 只读。|
 |requestStatus|String|有关请求处理状态的详细信息。 只读。|
-|requestType|String|、 `UserAdd` `UserRemove`、 `AdminAdd`或`AdminRemove`中的一个。 只读。|
+|requestType|String|、 `UserAdd` `UserRemove` `AdminRemove` 、或`SystemRemove`的其中`AdminAdd`一个。 只读。|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 请求创建的访问包分配。|
 
 ## <a name="relationships"></a>关系

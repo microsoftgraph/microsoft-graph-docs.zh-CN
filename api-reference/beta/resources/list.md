@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4df869eeba7b66dad0bddef48b7d5686d8899702
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 634ac31e5fa5de3700c238b4a931e5b43455e801
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108460"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331239"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -31,12 +31,13 @@ ms.locfileid: "42108460"
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
 | [获取列表][]              | GET /lists/{list-id}
-| [创建列表][]           | POST/lists
+| [创建列表][]           | POST /列表
 | [枚举列表项][]  | GET /lists/{list-id}/items
 | [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
 | [获取最近的活动][] | GET /lists/{list-id}/activities
+| [获取 WebSocket 频道][] | 获取/lists/{list-id}/subscriptions/socketIo
 
 [获取列表]: ../api/list-get.md
 [创建列表]: ../api/list-create.md
@@ -45,6 +46,7 @@ ms.locfileid: "42108460"
 [删除列表项]: ../api/listitem-delete.md
 [创建列表项]: ../api/listitem-create.md
 [获取最近的活动]: ../api/activities-list.md
+[获取 WebSocket 频道]: ../api/driveitem-subscriptions-socketio.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -69,6 +71,7 @@ ms.locfileid: "42108460"
     "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -117,6 +120,7 @@ ms.locfileid: "42108460"
 | **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
 | **drive**         | [drive][]                   | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
 | **项目**         | Collection([listItem][])    | 列表中包含的所有项。
+| 订阅      | [订阅][]集合 | 列表上的一组订阅。
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -129,6 +133,7 @@ ms.locfileid: "42108460"
 [listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[订阅]: subscription.md
 
 <!--
 {

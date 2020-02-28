@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 280a532c2d0047fecb0085f88b73c92c30a4867f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ffa1b1ac1519c933e9ca352ec90b45a5161d2a43
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935249"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331183"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -24,9 +24,9 @@ ms.locfileid: "37935249"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement  |
+| 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,6 +56,8 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies"
@@ -69,9 +71,36 @@ Content-type: application/json
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
   "description": "direct assignments by administrator",
-  "isEnabled": true
+  "isDenyPolicy": false,
+  "accessReviewSettings": null,
+  "requestorSettings": {
+    "scopeType": "NoSubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -94,7 +123,7 @@ Content-type: application/json
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
   "description": "direct assignments by administrator",
-  "isEnabled": true
+  "isDenyPolicy": false
 }
 ```
 

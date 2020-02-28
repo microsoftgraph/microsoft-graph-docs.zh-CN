@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d1d8aaf8a0138195e737cdd26f288f7aca8ba3e5
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b09aa4957cd1dfcdc5566f318725ad234169f944
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994240"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331176"
 ---
 # <a name="list-accesspackagecatalogs"></a>列出 accessPackageCatalogs
 
@@ -38,7 +38,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。  例如，若要检索每个目录中的访问包， `$expand=accessPackages`请在查询中加入。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。  例如，若要检索每个目录中的访问包， `$expand=accessPackages`请在查询中加入。 若要搜索具有特定名称的 access 程序包目录，请`$filter=contains(tolower(displayName),'staff')`在查询中包含筛选器。  有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,7 +60,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackagecatalogs"
@@ -69,15 +69,15 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackagecatalogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackagecatalogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackagecatalogs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

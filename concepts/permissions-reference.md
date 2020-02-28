@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a9578943a5afb5381e16e8c4a986d0f5ff3617cd
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 15409e92e94b0553cf7393e5fc59798a4cdb532c
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219781"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280629"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -35,6 +35,10 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft 帐户和工作或学校帐户
 
 并非所有权限都适用于 Microsoft 帐户和工作或学校帐户。 你可以检查每个权限组的**支持的 Microsoft 帐户**列，以确定特定权限是否对 Microsoft 帐户和/或工作或学校帐户有效。
+
+## <a name="permissions-availability-status"></a>权限可用性状态
+
+[Azure 门户](https://portal.azure.com/)中的 Microsoft Graph 权限通常可用，并且处于 GA 状态，可供所有应用程序使用，除了少数处于预览或个人预览状态的集。 预览中的权限对公众可用；它们可能会更改，并且可能无法升级到 GA 状态。 个人预览状态中的权限不可用，并且永远不会对公众可用。 不要在生产应用中使用预览或个人预览状态中的权限。
 
 ## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的用户和组搜索限制
 
@@ -1319,14 +1323,14 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 ---
 
-## <a name="schedule-management-permissions"></a>计划管理权限
+## <a name="schedule-management-permissions-private-preview"></a>计划管理权限（[个人预览版](#permissions-availability-status)）
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Schedule.ReadWrite.All_ | 读写班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读写班次应用程序中的计划、计划组、班次和关联的实体。 此权限当前仅为个人预览版，不可用于公共用途。| 是 | 否 |
-| _Schedule.Read.All_ | 读取班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读取班次应用程序中的计划、计划组、班次和关联的实体。 此权限当前仅为个人预览版，不可用于公共用途。 | 是 | 否 |
+| _Schedule.ReadWrite.All_（个人预览版）| 读写班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读写班次应用程序中的计划、计划组、班次和关联的实体。| 是 | 否 |
+| _Schedule.Read.All_（个人预览版）| 读取班次服务 (Teams) 数据 | 允许应用在用户未登录的情况下读取班次应用程序中的计划、计划组、班次和关联的实体。  | 是 | 否 |
 
 ## <a name="search-permissions"></a>搜索权限
 
@@ -1669,6 +1673,34 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
 
 ---
+
+## <a name="user-authentication-method-permissions-private-preview"></a>用户身份验证方法权限（[个人预览版](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限                              |显示字符串                        |说明        |需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_UserAuthenticationMethod.Read_（个人预览版）        |读取自己的身份验证方法       |允许该应用读取已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
+|_UserAuthenticationMethod.Read.All_（个人预览版）    |读取用户的身份验证方法    |允许此应用读取已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
+|_UserAuthenticationMethod.ReadWrite_（个人预览版）   |管理自己的身份验证方法     |允许该应用读取和写入已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
+|_UserAuthenticationMethod.ReadWrite.All_（个人预览版）|管理用户的身份验证方法  |允许此应用读取和写入已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限                              |显示字符串                        |说明        |需经过管理员同意 |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_UserAuthenticationMethod.Read.All_（个人预览版）   |读取用户的身份验证方法    |允许此应用读取组织中所有用户的身份验证方法，无已登录用户。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|
+|_UserAuthenticationMethod.ReadWrite.All_（个人预览版）|管理用户的身份验证方法  |允许此应用程序读取和写入组织中所有用户的身份验证方法，无已登录用户。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|
+
+### <a name="remarks"></a>说明
+
+用户身份验证方法权限用于管理用户的身份验证方法。 借助这些权限，委派的用户或应用程序可以注册用户的新身份验证方法，读取用户已注册的身份验证方法，更新这些身份验证方法，以及从用户中删除它们。
+
+借助这些权限，可以读取和管理用户的所有身份验证方法。 这包括用于以下操作的方法：
+
+* 主要身份验证（密码）
+* 多重身份验证/MFA（电话号码）的第二因素
+* 自助密码重置/SSPR（电子邮件地址）
 
 ## <a name="permission-scenarios"></a>权限方案
 

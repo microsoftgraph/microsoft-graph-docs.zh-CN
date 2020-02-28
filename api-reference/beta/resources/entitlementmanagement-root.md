@@ -4,13 +4,13 @@ description: 通过 Azure AD 权限管理控制对资源（包括组、应用和
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
-doc_type: resourcePageType
-ms.openlocfilehash: 6eada39751a6ed107fb1b74d61100aa1a3469c83
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e255a68d46e810d22e26d167dbe3ef5a6714496
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870286"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331316"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -32,7 +32,7 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与与权限管理相关的资源进行交互的方法。
 

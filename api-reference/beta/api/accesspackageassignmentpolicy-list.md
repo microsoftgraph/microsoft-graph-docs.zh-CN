@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2e823980dc9966a5f3e85eef82d00c606e5c180
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1a56b7b9c86c7717421719569815009a27fcde37
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935250"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331197"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
 
@@ -24,9 +24,9 @@ ms.locfileid: "37935250"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement |
+| 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,14 +59,30 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignmentpolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -92,9 +108,10 @@ Content-type: application/json
       "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
       "displayName": "All Users",
       "description": "All users can request for access to the directory.",
-      "isEnabled": false,
+      "isDenyPolicy": false,
       "canExtend": false,
-      "durationInDays": 365
+      "durationInDays": 365,
+      "accessReviewSettings": null
     }
   ]
 }

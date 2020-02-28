@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 73b349146dfc60190672c7c5dd003ca5f5c6a186
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 2a2c4bcfe5c3a87673fb02a8a7198d81d71feb84
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774469"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331281"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -30,6 +30,7 @@ ms.locfileid: "41774469"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
+|[list](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -76,7 +77,7 @@ GET /subscriptions/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -85,15 +86,15 @@ GET /subscriptions/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

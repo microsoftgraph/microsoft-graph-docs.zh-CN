@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 3e8d060f6c33de32b7697b2fbcfc4ac7e99222a8
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 11f57518433267a85e78ab06f70ffaa5c1e5fa34
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219641"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331178"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -20,14 +20,15 @@ ms.locfileid: "42219641"
 
 - Microsoft Graph 安全性 API 中的[警报][]
 - 通过 Microsoft 团队中的团队或频道发送的[了 chatmessage][]
-- Office 365 组中的[对话][]
+- Office 365 组的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
-- Outlook 中的[消息][]、[事件][]或[联系人][]
+- SharePoint[网站][]下的[列表][]
+- Outlook 中的[邮件][]、[事件][]或[联系人][]
 - Azure Active Directory 中的[用户][]或[组][]
 
-请参阅[使用 Microsoft GRAPH API 获取](webhooks.md)每个受支持资源的可能资源路径值的更改通知。
+查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
@@ -41,16 +42,16 @@ ms.locfileid: "42219641"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
+| changeType | string | 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项和列表通知仅支持`updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 |
 | lifecycleNotificationUrl | string | 接收生命周期通知（包括`subscriptionRemoved`和`missed`通知）的终结点的 URL。 如果未提供，这些通知将传递给**notificationUrl**。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-outlook-authz)有关 Outlook 资源如何使用生命周期通知的详细信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 有关每个受支持的资源，请参阅可能的资源路径[值](webhooks.md)。 必填。 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 |
 | expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
 | clientState | string | 指定每个通知中由服务发送的**clientState**属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的**clientState**属性的值与每个通知收到的**clientState**属性的值进行比较，来检查该通知是否来自服务。 可选。 |
 | id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | Boolean | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
+| includeResourceData | 布尔值 | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
 | encryptionCertificate | string | 具有用于在通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
@@ -63,6 +64,7 @@ ms.locfileid: "42219641"
 | 团队**了 chatmessage**    | 60分钟（1小时）  |
 | 组**对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
+| SharePoint**列表**    | 4230 分钟（不到 3 天）    |
 | Outlook**邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 
@@ -106,6 +108,8 @@ ms.locfileid: "42219641"
 [contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[网站]: ./site.md
 [事件]: ./event.md
 [组]: ./group.md
 [邮件]: ./message.md

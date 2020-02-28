@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: a0c83b0b892c92aebb6e7038dd4049a93565af8d
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: f440451ff18468c4f053eec11a62215cc551f654
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774473"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331288"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -32,6 +32,7 @@ ms.locfileid: "41774473"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
+|[list](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -70,7 +71,7 @@ PATCH /subscriptions/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -84,15 +85,15 @@ Content-type: application/json
    "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
