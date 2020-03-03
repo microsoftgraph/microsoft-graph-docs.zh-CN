@@ -1,176 +1,117 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Hub
 title: Microsoft Graph 文档
+brand: m365
 metadata:
   title: Microsoft Graph 文档
-  description: 了解如何使用 Microsoft Graph 为组织和消费者生成应用，与数百万用户的数据进行交互。
-  services: active-directory
-  author: CelesteDG
-  manager: mtillman
-  ms.tgt_pltfrm: na
-  ms.devlang: na
-  ms.topic: landing-page
-  ms.date: 03/20/2019
-  ms.author: celested
-abstract:
   description: Microsoft Graph API 提供有统一的可编程性模型，你可将其用于为组织和消费者生成应用，与数百万用户的数据进行交互。 你可以使用 Microsoft Graph REST API 访问 Azure Active Directory、Office 365 服务、企业移动性和安全性服务、Windows 10 服务、Dynamics 365 等中的数据。 阅读我们的文档，详细了解如何使用 Microsoft Graph API。
-  aside:
-    image:
-      alt: null
-      height: 110
-      src: ./images/index/whatsnew-video.png
-      width: 250
-    title: 'Microsoft Graph 概述 (4:46)'
-    href: 'https://youtu.be/PI9NO5rayiY'
-    width: 250
-sections:
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /graph/overview
-            html: <p>了解 Microsoft Graph 的功能并查看常见的 API 用例。</p>
-            image:
-              src: ./images/index/i_get-started.svg
-            title: Microsoft Graph 概述
-          - href: /graph/overview-major-services
-            html: <p>熟悉 Microsoft Graph 中提供的主要服务和功能。</p>
-            image:
-              src: ./images/index/i_overview.svg
-            title: 服务和功能
-          - href: 'https://developer.microsoft.com/graph/graph-explorer/'
-            html: <p>通过 Microsoft Graph 提出请求并查看响应。</p>
-            image:
-              src: ./images/index/i_queries.svg
-            title: Graph 浏览器
-          - href: /graph/use-the-api
-            html: <p>了解如何开始使用 Microsoft Graph API 访问 Microsoft 云服务资源。</p>
-            image:
-              src: ./images/index/i_code-edit.svg
-            title: 使用 API
-          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-            html: <p>使用 Microsoft Graph REST API v1.0 满足你的特定生产需求。</p>
-            image:
-              src: ./images/index/i_api-reference.svg
-            title: Microsoft Graph REST API v1.0
-          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-            html: <p>试用 Microsoft Graph beta 终结点。</p>
-            image:
-              src: ./images/index/i_api.svg
-            title: Microsoft Graph REST API Beta
-  - title: 支持的平台
-    items:
-      - type: paragraph
-        text: 查找 SDK 并进行平台特定的分步培训练习，指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure AD 身份验证并通过 Microsoft Graph 访问数据的简单应用程序。
-      - type: table
-        style: dataMatrix
-        columns:
-          - image:
-              src: ./images/index/logo_NETcore.svg
-            title: .NET
-          - image:
-              src: ./images/index/logo_NET.svg
-            title: .NET
-          - image:
-              src: ./images/index/logo_android.svg
-            title: Android
-          - image:
-              src: ./images/index/angular.svg
-            title: Angular
-          - image:
-              src: ./images/index/logo_ios.svg
-            title: iOS
-          - image:
-              src: ./images/index/logo_java.svg
-            title: Java
-          - image:
-              src: ./images/index/logo_js.svg
-            title: JavaScript
-          - image:
-              src: ./images/index/logo_nodejs.svg
-            title: Node.js
-          - image:
-              src: ./images/index/logo_php.svg
-            title: PHP
-          - image:
-              src: ./images/index/logo_python.svg
-            title: Python
-          - image:
-              src: ./images/index/logo_ruby.svg
-            title: Ruby
-          - image:
-              src: ./images/index/logo_windows.svg
-            title: UWP
-          - image:
-              src: ./images/index/logo_xamarin.svg
-            title: Xamarin
-        rows:
-          - title: 快速入门
-            values:
-              - href: null
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-dotnet'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-android'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-angular'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift'
-              - href: null
-              - href: null
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-node'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-php'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-Python'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ruby'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-xamarin'
-          - title: 教程
-            values:
-              - href: /graph/tutorials/aspnet
-              - href: /graph/tutorials/aspnet
-              - href: /graph/tutorials/android
-              - href: /graph/tutorials/angular
-              - href: null
-              - href: null
-              - href: null
-              - href: /graph/tutorials/node
-              - href: /graph/tutorials/php
-              - href: /graph/tutorials/python
-              - href: /graph/tutorials/ruby
-              - href: /graph/tutorials/uwp
-              - href: /graph/tutorials/xamarin
-          - title: SDK
-            values:
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-android'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-objc'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-java'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-php'
-              - href: null
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-ruby'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+  ms.topic: hub-page
+  ms.prod: ms-graph
+  author: CelesteDG
+  ms.author: celested
+  ms.date: 02/28/2020
+  featureFlags:
+  - clicktale
+  ms.openlocfilehash: 550a74bb18bc7604824c87fe7520a56a8a8c3a81
+  ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/03/2020
+  ms.locfileid: "42394496"
+highlightedContent:
+  items:
+  - title: Microsoft Graph 概述
+    itemType: overview
+    url: /graph/overview
+  - title: 服务和功能
+    itemType: concept
+    url: /graph/overview-major-services
+  - title: Graph 浏览器
+    itemType: deploy
+    url: https://developer.microsoft.com/graph/graph-explorer/
+  - title: 使用 API
+    itemType: overview
+    url: /graph/use-the-api
+  - title: Microsoft Graph REST API v1.0
+    itemType: reference
+    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+  - title: Microsoft Graph REST API Beta
+    itemType: reference
+    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+conceptualContent:
+  items:
+  - title: 浏览
+    links:
+    - url: /graph/whats-new-overview
+      itemType: overview
+      text: Microsoft Graph 新增功能
+    - url: /graph/users-you-can-reach
+      itemType: concept
+      text: 可访问的用户
+    - url: /graph/data-connect-overview
+      itemType: concept
+      text: Microsoft Graph 数据连接
+    - url: https://developer.microsoft.com/graph/quick-start
+      itemType: quickstart
+      text: Quickstarts
+    - url: /graph/tutorials
+      itemType: tutorial
+      text: 教程
+  - title: 学习
+    links:
+    - url: /graph/azuread-users-concept-overview
+      itemType: overview
+      text: 用户
+    - url: /graph/teams-concept-overview
+      itemType: overview
+      text: 团队合作
+    - url: /graph/onedrive-concept-overview
+      itemType: overview
+      text: 文件
+    - url: /graph/outlook-calendar-concept-overview
+      itemType: overview
+      text: 日历
+    - url: /graph/outlook-mail-concept-overview
+      itemType: overview
+      text: 邮件
+    - url: /graph/azuread-identity-access-management-concept-overview
+      itemType: overview
+      text: 身份和访问
+  - title: 开发
+    links:
+    - url: /graph/auth/auth-concepts
+      itemType: concept
+      text: 获取身份验证令牌
+    - url: https://docs.microsoft.com/en-us/graph/use-the-api
+      itemType: overview
+      text: 使用 API
+    - url: /graph/migrate-azure-ad-graph-overview
+      itemType: overview
+      text: 迁移
+    - url: /graph/sdks/sdks-overview
+      itemType: overview
+      text: 使用 Sdk
+    - url: /graph/toolkit/overview
+      itemType: overview
+      text: 使用工具包（预览版）
+additionalContent:
+  sections:
   - title: 资源
     items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /graph/changelog
-            html: <p>了解 v1.0 和 beta 版 Microsoft Graph API 中的更改内容。</p>
-            image:
-              src: ./images/index/i_backlog.svg
-            title: 更改日志
-          - href: 'https://developer.microsoft.com/graph/blogs/'
-            html: <p>阅读博客，获取与新 API、重大更改等相关的最新消息。</p>
-            image:
-              src: ./images/index/i_blog.svg
-            title: Microsoft Graph API
-          - href: /graph/known-issues
-            html: <p>了解与 Microsoft Graph 相关的已知问题。</p>
-            image:
-              src: ./images/index/i_investigate.svg
-            title: 已知问题
+    - title: 更改日志
+      summary: 了解 v1.0 和 beta 版 Microsoft Graph API 中的更改内容。
+      url: /graph/changelog
+    - title: 已知问题
+      summary: 了解与 Microsoft Graph 相关的已知问题。
+      url: /graph/known-issues
+    - title: 支持
+      summary: 提出问题或提供有关我们的 Api 或文档的反馈。
+      url: https://developer.microsoft.com/graph/support
+    - title: Microsoft Graph API
+      summary: 阅读博客，获取与新 API、重大更改等相关的最新消息。
+      url: https://developer.microsoft.com/graph/blogs/
+    - title: 月度社区呼叫
+      summary: 加入每月呼叫或追赶以前的录制。
+      url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
+    - title: 视频和播客
+      summary: 查看我们的视频系列和播客以了解有关 Microsoft Graph Api 的详细信息。
+      url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
