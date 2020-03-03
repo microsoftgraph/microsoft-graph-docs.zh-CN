@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 11f57518433267a85e78ab06f70ffaa5c1e5fa34
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: fb2dd66e9e18e4951005bcda2b249235e99cd829
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331178"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394440"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -19,6 +19,7 @@ ms.locfileid: "42331178"
 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 
 - Microsoft Graph 安全性 API 中的[警报][]
+- Microsoft 团队中的呼叫或会议之后生成的[callRecord][]
 - 通过 Microsoft 团队中的团队或频道发送的[了 chatmessage][]
 - Office 365 组的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
@@ -51,7 +52,7 @@ ms.locfileid: "42331178"
 | id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | 布尔值 | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
+| includeResourceData | 布尔 | 当设置为`true`时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
 | encryptionCertificate | string | 具有用于在通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
@@ -61,6 +62,7 @@ ms.locfileid: "42331178"
 | Resource            | 最大过期时间  |
 |:--------------------|:-------------------------|
 | 安全**警报**     | 43200分钟（不到 30 天）  |
+| 团队**callRecord**    | 4230 分钟（不到 3 天）  |
 | 团队**了 chatmessage**    | 60分钟（1小时）  |
 | 组**对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
@@ -116,6 +118,7 @@ ms.locfileid: "42331178"
 [用户]: ./user.md
 [警报]: ./alert.md
 [chatMessage]: ./chatmessage.md
+[callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

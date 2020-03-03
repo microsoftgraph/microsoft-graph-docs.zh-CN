@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 550cec423d03c2fc1bf4e589675dcfeb126c39d8
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 6bb11e36b2a5f11f94cea7294e77e6d23aa8dd54
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331274"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394472"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -26,6 +26,7 @@ ms.locfileid: "42331274"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) （/communications/callRecords） | 不支持 | 不支持 | CallRecords  |
 |[了 chatmessage](../resources/chatmessage.md) （/teams/{id}/channels/{id}/messages） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[了 chatmessage](../resources/chatmessage.md) （/teams/allMessages--组织中的所有频道邮件） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[了 chatmessage](../resources/chatmessage.md) （/chats/{id}/messages） | 不支持 | 不支持 | Chat.Read.All  |
@@ -137,6 +138,7 @@ Content-type: application/json
 |驱动器|me/drive/root|
 |列表|site/{site-id}/lists/{list-id}|
 |安全警报|security/alerts?$filter=status eq ‘New’|
+|呼叫记录|通信/callRecords|
 
 ### <a name="response"></a>响应
 

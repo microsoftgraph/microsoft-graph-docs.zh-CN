@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 512c942b6353e722e0de5ca7fe32e33305091ca5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ce9ccfe4c5181b51f8ed006be6e5b32dcf56fe34
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723348"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394450"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在你的租户中发生的所有设置事件, 例如, 删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。 
+获取在你的租户中发生的所有设置事件，例如，删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,35 +38,37 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 请注意, 除了状态之外, 筛选器都是区分大小写的。 
+此方法支持以下 OData 查询参数来帮助自定义响应。 请注意，除了状态之外，筛选器都是区分大小写的。 
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
-有关一般信息, 请参阅[OData 查询参数](/graph/query_parameters)。
+有关一般信息，请参阅[OData 查询参数](/graph/query_parameters)。
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
 
 |属性名 |支持的运算符|
 |:----------------|:------|
-|id| eq, 包含|
+|id| eq，包含|
 |activityDateTime| eq|
-|tenantid|eq, 包含|
-|jobid|eq, 包含|
-|changeid|eq, 包含|
-|cycleid|eq, 包含|
-|action|eq, 包含|
-|statusInfo/状态|eq, 包含|
-|sourceSystem/displayName|eq, 包含|
-|targetSystem/displayName|eq, 包含|
-|sourceIdentity/identityType|eq, 包含|
-|targetIdentity/identityType|eq, 包含|
-|sourceIdentity/id|eq, 包含|
-|targetIdentity/id|eq, 包含|
-|sourceIdentity/displayName|eq, 包含|
-|targetIdentity/displayName|eq, 包含|
-|initiatedBy/displayName|eq, 包含|
+|tenantid|eq，包含|
+|jobid|eq，包含|
+|changeid|eq，包含|
+|cycleid|eq，包含|
+|action|eq，包含|
+|statusInfo/状态|eq，包含|
+|sourceSystem/displayName|eq，包含|
+|targetSystem/displayName|eq，包含|
+|sourceIdentity/identityType|eq，包含|
+|targetIdentity/identityType|eq，包含|
+|sourceIdentity/id|eq，包含|
+|servicePrincipal/id|eq|
+|servicePrincipal/名称|eq|
+|targetIdentity/id|eq，包含|
+|sourceIdentity/displayName|eq，包含|
+|targetIdentity/displayName|eq，包含|
+|initiatedBy/displayName|eq，包含|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -80,17 +82,17 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[provisioningObjectSummary](../resources/provisioningobjectsummary.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[provisioningObjectSummary](../resources/provisioningobjectsummary.md)对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-successful-request"></a>示例 1: 成功请求
+### <a name="example-1-successful-request"></a>示例1：成功请求
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -99,15 +101,15 @@ GET /auditLogs/provisioning
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -152,7 +154,7 @@ Content-type: application/json
                     "name": "EntryImport",
                     "provisioningStepType": "Import",
                     "status": "success",
-                    "description": "Retrieved RolesCompound '10a7a801-7101-4c69-ae00-ce9f75f8460a' from Amazon Web Services",
+                    "description": "Retrieved RolesCompound '10a7a801-7101-4c69-ae00-ce9f75f8460a' from Contoso",
                     "details": {}
                 },
                 {
@@ -184,17 +186,21 @@ Content-type: application/json
                 {
                     "displayName": "displayName",
                     "oldValue": null,
-                    "newValue": "Amazon Web Services (AWS)"
+                    "newValue": "Contoso"
                 },
                 {
                     "displayName": "homepage",
                     "oldValue": null,
-                    "newValue": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z"
+                    "newValue": "https://signin.contoso.com/saml?metadata=contoso|ISV9.1|primary|z"
                 },
             ],
+            "servicePrincipal": {
+                "id": "6cc35b93-185a-4485-a519-50c09549g3ad",
+                "displayName": "Contoso"
+            },
             "sourceSystem": {
                 "id": "d1e090e1-f2f4-4678-be44-6442ffff0621",
-                "displayName": "Amazon Web Services",
+                "displayName": "Contoso",
                 "details": {}
             },
             "targetSystem": {
@@ -203,7 +209,7 @@ Content-type: application/json
                 "details": {
                     "ApplicationId": "bcf4d658-ac9f-408d-bf04-e86dc10328fb",
                     "ServicePrincipalId": "6nn35b93-185a-4485-a519-50c09549f3ad",
-                    "ServicePrincipalDisplayName": "Amazon Web Services (AWS)"
+                    "ServicePrincipalDisplayName": "Contoso"
                 }
             },
             "initiatedBy": {
@@ -228,13 +234,13 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>示例 2: 错误响应
+### <a name="example-2-error-reponse"></a>示例2：错误响应
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary_error"
@@ -243,15 +249,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -282,7 +288,7 @@ Content-type: application/json
             "id": "gc532ff9-r265-ec76-861e-42e2970a8218",
             "activityDateTime": "2019-06-24T20:53:08Z",
             "tenantId": "7928d5b5-7442-4a97-ne2d-66f9j9972ecn",
-            "jobId": "BoxOutDelta.7928d5b574424a97ne2d66f9j9972ecn",
+            "jobId": "ContosoOutDelta.7928d5b574424a97ne2d66f9j9972ecn",
             "cycleId": "44576n58-v14b-70fj-8404-3d22tt46ed93",
             "changeId": "eaad2f8b-e6e3-409b-83bd-e4e2e57177d5",
             "action": "Create",
@@ -294,17 +300,21 @@ Content-type: application/json
             },
             "targetSystem": {
                 "id": "cd22f60b-5f2d-1adg-adb4-76ef31db996b",
-                "displayName": "Box",
+                "displayName": "Contoso",
                 "details": {
                     "ApplicationId": "f2764360-e0ec-5676-711e-cd6fc0d4dd61",
                     "ServicePrincipalId": "chc46a42-966b-47d7-9774-576b1c8bd0b8",
-                    "ServicePrincipalDisplayName": "Box"
+                    "ServicePrincipalDisplayName": "Contoso"
                 }
             },
             "initiatedBy": {
                 "id": "",
                 "displayName": "Azure AD Provisioning Service",
                 "initiatorType": "system"
+            },
+            "servicePrincipal": {
+                "id": "chc46a42-966b-47d7-9774-576b1c8bd0b8",
+                "displayName": "Contoso"
             },
             "sourceIdentity": {
                 "id": "5e6c9rae-ab4d-5239-8ad0-174391d110eb",
@@ -321,8 +331,8 @@ Content-type: application/json
             "statusInfo": {
                 "@odata.type": "#microsoft.graph.statusDetails",
                 "status": "failure",
-                "errorCode": "BoxEntryConflict",
-                "reason": "Message: Box returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Box via the Box administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Box application in Azure Active Directory or adding a scoping filter to exclude the user.",
+                "errorCode": "ContosoEntryConflict",
+                "reason": "Message: Contoso returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Contoso via the Contoso administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Contoso application in Azure Active Directory or adding a scoping filter to exclude the user.",
                 "additionalDetails": null,
                 "errorCategory": "NonServiceFailure",
                 "recommendedAction": null
@@ -339,14 +349,14 @@ Content-type: application/json
                     "name": "EntrySynchronizationAdd",
                     "provisioningStepType": "matching",
                     "status": "success",
-                    "description": "Group 'Self-service Pilot' will be created in Box (Group is active and assigned in Azure Active Directory, but no matching Group was found in Box)",
+                    "description": "Group 'Self-service Pilot' will be created in Contoso (Group is active and assigned in Azure Active Directory, but no matching Group was found in Contoso)",
                     "details": {}
                 },
                 {
                     "name": "EntryExportAdd",
                     "provisioningStepType": "export",
                     "status": "failure",
-                    "description": "Failed to create Group 'Self-service Pilot' in Box",
+                    "description": "Failed to create Group 'Self-service Pilot' in Contoso",
                     "details": {
                         "ReportableIdentifier": "Self-service Pilot"
                     }

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 7ff9d85f1befec3e96a76002a10788d7068bf8ab
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 3328291435e3d6ce067b21a604d76ce46ee5ea2e
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331295"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394465"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -24,6 +24,7 @@ ms.locfileid: "42331295"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords  |
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |

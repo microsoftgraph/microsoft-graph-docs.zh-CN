@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 26c217720692b0d36cfa0acf7537b757c92399ac
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: c9eabbb0c0cd1cd692ad6ebc5a346c46473161b1
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349342"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394594"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>provisioningObjectSummary 资源类型
 
@@ -29,16 +29,17 @@ ms.locfileid: "35349342"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|String|指示活动名称或操作名称 (例如, "创建用户"、"将成员添加到组")。 有关已记录活动的列表, 请参阅 Azure AD 活动列表。|
+|action|String|指示活动名称或操作名称（例如，"创建用户"、"将成员添加到组"）。 有关已记录活动的列表，请参阅 Azure AD 活动列表。|
 |activityDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |changeId|String|此周期中的此更改的唯一 ID。|
 |cycleId|String|每个作业迭代的唯一 ID。|
 |durationInMilliseconds|Int32|指示此设置操作完成所花的时间。 以毫秒为单位。|
 |id|String| 指示活动的唯一 ID。 这是只读的 GUID。|
-|initiatedBy|[启动](initiator.md)|启动此预配的参与者的详细信息。|
+|initiatedBy|[initiator](initiator.md)|启动此预配的参与者的详细信息。|
 |jobId|String|整个设置作业的唯一 ID。|
 |ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|此对象上此设置操作中修改的每个属性的详细信息。|
 |provisioningSteps|[provisioningStep](provisioningstep.md)集合|设置中的每个步骤的详细信息。|
+|servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于设置的服务主体。|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|正在预配的源对象的详细信息。|
 |sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|正在预配的对象的源系统的详细信息。|
 |statusInfo|[statusBase](statusbase.md)|设置状态的详细信息。|
@@ -76,6 +77,7 @@ ms.locfileid: "35349342"
   "jobId": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
+  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
   "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
