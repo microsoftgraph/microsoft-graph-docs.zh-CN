@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 7bbe0ba0387ebbbb6669d463dba7073f571efbf9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7869ac59f84f266542254fd0c8fc8ea97ee4815d
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913336"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394580"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -30,6 +30,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 通话                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | 会议                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | 状态                 | 状态.阅读，状态.阅读.全部 |
+| 通话记录             | CallRecords.Read.All |
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -42,6 +43,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-beta)   ||
 |会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 |状态 | [状态](/graph/api/resources/presence) | [出席方式](/graph/api/resources/presence#methods) |
+| 检索通话记录 | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) | [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-beta) |
 
 ## <a name="common-properties"></a>通用属性
 
@@ -51,6 +53,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-beta#properties) |
 | onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | 状态 | [状态属性](/graph/api/resources/presence#properties) |
+| callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## <a name="see-also"></a>另请参阅
 

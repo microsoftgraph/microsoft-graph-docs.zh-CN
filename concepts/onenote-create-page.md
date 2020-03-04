@@ -4,12 +4,12 @@ description: " Office 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: af4aefed112177a119be20c408ad6feac978ecae
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 25ea6350bf8f31192b12eea8047c914f0e2f52ef
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969883"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394489"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
@@ -223,7 +223,7 @@ Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRL
 |------|------|  
 | 成功代码 | 201 HTTP 状态代码。 |  
 | 响应正文 | 采用 JSON 格式的新页的 OData 表示形式。 |  
-| 错误 | 如果请求失败，API 将在响应正文的 **@api.diagnostics** 对象中返回错误。 |  
+| 错误 | 如果请求失败，API 将在响应正文的 **\@api.diagnostics** 对象中返回错误。 |  
 | 位置标头 | 新页的资源 URL。 |  
 | X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 
@@ -240,6 +240,14 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 
 为当前用户可以访问的 OneNote 内容（拥有和共享）使用 `me`。 为指定用户已与当前用户共享的 OneNote 内容（此 URL 中）使用 `users/{id}`。 使用 [Microsoft Graph](https://graph.microsoft.com/v1.0/users) 获取用户 ID。 
 
+<a name="limitations"></a>
+
+## <a name="onenote-section-size-limitations"></a>OneNote 分区大小限制
+对可使用 OneNote API 添加到分区的页面数量有一些限制。 当某个分区达到此限制并尝试在该分区中创建新页面时，你将看到 HTTP 状态代码为 `507` 的响应，并显示消息“已超出每个分区允许的最大页面数”。 有关此错误代码的详细信息，请参阅 [OneNote 错误代码](onenote-error-codes.md)。
+
+可以使用下列解决办法之一：
+- 创建新分区并从中添加新页面。
+- 删除已达到页面限制的现有分区的未使用页面。
 
 <a name="permissions"></a>
 

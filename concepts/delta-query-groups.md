@@ -4,12 +4,12 @@ description: 使用 delta 查询，可通过一系列 delta 函数调用来查�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: adff47b66af366dc98bd6471a272c369cb4a7a7b
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216796"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394598"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## <a name="nextlink-response"></a>nextLink 响应
 
-该响应包含另一个带新 `skipToken` 值的 `nextLink`，表示存在更多可用的组。 继续使用 `nextLink` URL 发出请求，直到最终响应中返回 `deltaLink` URL。
+该响应包含另一个带新 `skipToken` 值的 `nextLink`，它表示存在更多可用的组。 应使用 `nextLink` URL 继续发出请求，直到在最终响应中返回 `deltaLink` URL，即使该值为空数组（在某些情况下可能会出现此情况）。
 
 ```http
 HTTP/1.1 200 OK

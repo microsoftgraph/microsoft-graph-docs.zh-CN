@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 54775b566c26f0b6bc99fd1a8482fe5b12c5d1fa
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: ea8e56a657e32a5de1057f8199d27d256ab44168
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651762"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394622"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -41,6 +41,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
 - OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
 - 安全[警报][]
+- Teams [callRecord][]（预览版）
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
@@ -279,3 +280,4 @@ notification 对象具有以下属性：
 [邮件]: /graph/api/resources/message?view=graph-rest-1.0
 [用户]: /graph/api/resources/user?view=graph-rest-1.0
 [警报]: /graph/api/resources/alert?view=graph-rest-1.0
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta

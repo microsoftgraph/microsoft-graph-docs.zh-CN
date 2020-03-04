@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 137857094346ac44679fb95c66ca5e522bd69b9b
-ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
+ms.openlocfilehash: 39b2ead5bc41866eb13ee045e507181157a4cb58
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42287973"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394629"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -357,6 +357,35 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
+## <a name="call-records-permissions"></a>通话记录权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+无。
+
+<br/>
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_CallRecords.Read.All_|读取所有通话记录|允许应用在没有用户登录的情况下读取所有通话和联机会议的通话记录。|是|
+
+> **重要说明：** 应谨慎为应用程序授予此权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予此权限，以满足你的数据保护要求。
+
+> **重要说明：** 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+
+<br/>
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="application"></a>应用程序
+
+* _CallRecords.Read.All_：检索通话记录 (`GET /beta/communications/callRecords/{id}`)。
+* _CallRecords.Read.All_：订阅新的通话记录 (`POST /beta/subscriptions`)。
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
 ## <a name="channel-message-permissions"></a>频道消息权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -372,6 +401,22 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_ChannelMessage.UpdatePolicyViolation.All_ |标记违反策略的频道消息 |允许应用更新 Microsoft Teams 频道消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
 
 > **注意：** 另请参阅 [Group.Read.All](#group-permissions)。
+
+## <a name="channel-member-permissions-private-preview"></a>频道成员权限（[个人预览版](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMember.Read.All_（个人预览版） |读取频道的成员。 |代表已登录的用户读取频道的成员。 |是 | 否 |
+|_ChannelMember.ReadWrite.All_（个人预览版）| 从频道中添加和删除成员。 | 代表已登录用户从频道中添加和删除成员。 还允许更改成员的角色，例如从所有者到非所有者。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMember.Read.All_（个人预览版）|读取所有频道的成员。 |在没有用户登录的情况下读取所有频道的成员。 |是 | 否 |
+|_ChannelMember.ReadWrite.All_（个人预览版）| 从所有频道中添加和删除成员。 |在没有用户登录的情况下从所有频道中添加和删除成员。 还允许更改成员的角色，例如从所有者到非所有者。 | 是 | 否 |
 
 ## <a name="chats-permissions"></a>聊天权限
 
@@ -1500,6 +1545,22 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsApp.Read.All_（个人预览版）| 读取所有用户已安装的 Teams 应用 | 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
 | _TeamsApp.ReadWrite.All_（个人预览版）| 管理所有用户的 Teams 应用  | 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。  | 是 | 否 |
+
+## <a name="team-member-permissions-private-preview"></a>团队成员权限（[个人预览版](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamMember.Read.All_（个人预览版）| 读取团队的成员。 | 代表已登录的用户读取团队的成员。 | 是 | 否 |
+| _TeamMember.ReadWrite.All_（个人预览版）| 从团队中添加和删除成员。 | 代表已登录用户从团队中添加和删除成员。 还允许更改成员的角色，例如从所有者到非所有者。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamMember.Read.All_（个人预览版）| 读取所有团队的成员。 | 在没有用户登录的情况下读取所有团队的成员。    | 是 | 否 |
+| _TeamMember.ReadWrite.All_（个人预览版）| 从所有团队中添加和删除成员。 | 在没有用户登录的情况下从所有团队中添加和删除成员。 还允许更改团队成员的角色，例如从所有者到非所有者。 | 是 | 否 |
 
 ## <a name="teams-tab-permissions-private-preview"></a>Teams 选项卡权限（[个人预览版](#permissions-availability-status)）
 

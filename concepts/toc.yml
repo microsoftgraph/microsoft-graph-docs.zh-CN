@@ -111,6 +111,8 @@ items:
             href: cloud-communications-media.md
           - name: 联机会议
             href: cloud-communications-online-meetings.md
+          - name: 通话记录（预览版）
+            href: cloud-communications-callrecords.md
           - name: 管理机器人的电话号码
             href: cloud-communications-phone-number.md
           - name: 限制

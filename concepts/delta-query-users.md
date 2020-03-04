@@ -4,12 +4,12 @@ description: Delta 查询可通过调用一系列 delta 函数查询用户的添
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: c41185f7c8679dc2df06ae6a47a55c2f904012be
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 473e4b949d9b3cb62827dbf05922d6dbf9a62766
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163687"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394587"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## <a name="nextlink-response"></a>nextLink 响应
 
-该响应包含 `nextLink` 和另一个 `skipToken`，表示存在更多可用的用户。继续使用 nextLink URL 发出请求，直到响应中返回 deltaLink URL。
+该响应包含另一个带新 `skipToken` 值的 `nextLink`，它表示存在更多可用的组。 应使用 `nextLink` URL 继续发出请求，直到在最终响应中返回 `deltaLink` URL，即使该值为空数组（在某些情况下可能会出现此情况）。
 
 ```http
 HTTP/1.1 200 OK
