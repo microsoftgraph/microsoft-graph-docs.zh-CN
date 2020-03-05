@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 4a1c777d51dd1ba706af85f431162cda16b5d25b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd990ea9778ada7d43c9b8192d77cf8af618909b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012602"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504634"
 ---
 # <a name="customerpayments-resource-type"></a>customerPayments 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 Dynamics 365 Business Central 中的客户付款。 客户付款作为客户付款日志中的一条线路输入。
 
 ## <a name="methods"></a>方法
@@ -33,16 +38,16 @@ ms.locfileid: "36012602"
 |journalDisplayName|string|付款记录所在的行的客户付款日志。|
 |lineNumber|integer|客户付款的编号。|
 |customerId|GUID|与付款相关的客户的唯一 ID。|
-|customerNumber|字符串, 最大大小为20|与付款相关的客户的编号。|
-|contactId|字符串, 最大大小为250|给定客户的 exchange 联系人 id。 如果未指定客户 id, 我们将使用联系人 id 来查找它。|
+|customerNumber|字符串，最大大小为20|与付款相关的客户的编号。|
+|contactId|字符串，最大大小为250|给定客户的 exchange 联系人 id。 如果未指定客户 id，我们将使用联系人 id 来查找它。|
 |postingDate|date|客户付款的过帐日期。|
-|documentNumber|字符串, 最大大小为20|指定客户付款的文档编号。|
-|externalDocumentNumber|字符串, 最大大小为20|指定客户付款的外部文档编号。|
-|量|数位|指定客户付款包含的总金额 (包括 VAT)。|
+|documentNumber|字符串，最大大小为20|指定客户付款的文档编号。|
+|externalDocumentNumber|字符串，最大大小为20|指定客户付款的外部文档编号。|
+|量|数位|指定客户付款包含的总金额（包括 VAT）。|
 |appliesToInvoiceId|GUID|与付款相关的发票的唯一 ID。|
-|appliesToInvoiceNumber|字符串, 最大大小为20|与付款相关的发票的编号。|
-|说明|字符串, 最大大小为50|客户付款的说明, 由用户或 autocreated 提供。|
-|注释|字符串, 最大大小为250|用户在客户付款上指定的注释。|
+|appliesToInvoiceNumber|字符串，最大大小为20|与付款相关的发票的编号。|
+|说明|字符串，最大大小为50|客户付款的说明，由用户或 autocreated 提供。|
+|comment|字符串，最大大小为250|用户在客户付款上指定的注释。|
 |lastModifiedDateTime|datetime|客户付款修改后的最后一个日期/时间。 只读。|
 
 
@@ -51,9 +56,9 @@ ms.locfileid: "36012602"
 
 客户付款可以是维行的 "父实体"。
 
-客户 (customerId) 必须存在于 Customers 表中。
+客户（customerId）必须存在于 Customers 表中。
 
-发票 (appliesToInvoiceId) 必须存在于 "销售发票" 表中。
+发票（appliesToInvoiceId）必须存在于 "销售发票" 表中。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54a6d742e31dba6861bed55d26179e1936fa8c5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3158e081586cbcb822d385cbb357b017ac7239ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507021"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35973818"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |说明|String| 返回的对象的说明。 只读。 |
-|displayName|字符串| 返回的目录对象的名称, 如 group 或 application。 只读。 |
+|displayName|字符串| 返回的目录对象的名称，如 group 或 application。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
 |id|字符串| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 只读。 |
 |objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |

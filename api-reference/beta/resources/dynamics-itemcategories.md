@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 18017c580637bb53a70b5f7a331ff7be1dc7a07c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0a751fe076c76fcb703c4d910ac35d3d0593b15
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972920"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503843"
 ---
 # <a name="itemcategories-resource-type"></a>itemCategories 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 Dynamics 365 Business Central 中的大量项目的类别。
 
 ## <a name="methods"></a>方法

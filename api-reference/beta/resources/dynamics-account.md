@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af6c1eccfc30259f2b86fb5a65b81d95802b67f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012686"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505278"
 ---
 # <a name="accounts-resource-type"></a>帐户资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的 account 对象。
 
 ## <a name="methods"></a>方法
@@ -27,11 +32,11 @@ ms.locfileid: "36012686"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|帐户的唯一 ID。|
-|number|字符串, 最大大小为20|指定 G/L 帐号的号码。|
-|displayName|字符串, 最大大小为50|指定 G/L 帐户的名称。|
-|“类别”|字符串, 最大大小为20|指定 G/L 帐户的类别。|
-|子类别|字符串, 最大大小为80|指定 G/L 帐户的帐户类别的子类别。|
-|堵塞|boolean|指定无法将条目投递到 G/L 帐户。 **如果为 True** , 则表示帐户被阻止, 不允许进行发布。|
+|number|字符串，最大大小为20|指定 G/L 帐号的号码。|
+|displayName|字符串，最大大小为50|指定 G/L 帐户的名称。|
+|“类别”|字符串，最大大小为20|指定 G/L 帐户的类别。|
+|子类别|字符串，最大大小为80|指定 G/L 帐户的帐户类别的子类别。|
+|堵塞|boolean|指定无法将条目投递到 G/L 帐户。 **如果为 True** ，则表示帐户被阻止，不允许进行发布。|
 |lastModifiedDateTime|datetime|帐户修改后的最后一个日期/时间。|
 
 

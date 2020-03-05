@@ -1,22 +1,24 @@
 ---
 title: educationSubmissionResource 资源类型
-description: '资源周围的包装, 用于提交。 如果从分配中复制了该包装, 则包装将添加指向该工作分配资源的指针。  '
+description: '资源周围的包装，用于提交。 如果从分配中复制了该包装，则包装将添加指向该工作分配资源的指针。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 48f4549354603346e39b5e1f6f387b207e2f14ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 876a490c3dfcf69eb993d1ba18868e2fc5a62fa8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500637"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-资源周围的包装, 用于提交。 如果从分配中复制了该包装, 则包装将添加指向该工作分配资源的指针。  
+资源周围的包装，用于提交。 如果从分配中复制了该包装，则包装将添加指向该工作分配资源的指针。  
 
 
 ## <a name="methods"></a>方法
@@ -29,7 +31,7 @@ ms.locfileid: "35972479"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|指向从其复制此资源的工作分配的指针。 如果为 null, 则学生上传了资源。|
+|assignmentResourceUrl|String|指向从其复制此资源的工作分配的指针。 如果为 null，则学生上传了资源。|
 |id|String| 只读。|
 |resource|[educationResource](educationresource.md)|Resource 对象。|
 

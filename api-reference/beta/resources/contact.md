@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb692a3671672b82891a66531c64df1fcaa0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 256a8e63b5ff331bdc770ed690998c98c1e92098
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012882"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507462"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -100,7 +102,7 @@ ms.locfileid: "36012882"
 |gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|字符串| 联系人的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]只读。 |
+|id|字符串| 联系人的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -111,8 +113,8 @@ ms.locfileid: "36012882"
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](phone.md) collection |与联系人关联的电话号码, 例如, 家庭电话、移动电话和商务电话。 |
-|postalAddresses |[physicalAddress](physicaladdress.md)集合 |与联系人关联的地址, 例如家庭地址和公司地址。 |
+|phones |[phone](phone.md) collection |与联系人关联的电话号码，例如，家庭电话、移动电话和商务电话。 |
+|postalAddresses |[physicalAddress](physicaladdress.md)集合 |与联系人关联的地址，例如家庭地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|

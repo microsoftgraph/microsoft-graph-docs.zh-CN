@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6a036435cb7cc1a4ef70960b09feb600fe7f39f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4fda7cc98c8041aad45a0ef8453affc9af34edc5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501225"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +29,9 @@ ms.locfileid: "35972591"
 | **connectionUrl** | String | 指向 PowerSchool 实例的连接 URL。 |
 | **clientId** | String |  用于连接到 PowerSchool 的客户端 ID。 |
 | **clientSecret** | String |  用于对与 PowerSchool 实例的连接进行身份验证的客户端密码。 |
-| **schoolsIds** | String collection |  要同步的学校列表。 |
+| **schoolsIds** | String 集合 |  要同步的学校列表。 |
 | **schoolYear** | String |  要同步的学校年。 |
-| **allowTeachersInMultipleSchools** | Boolean |  指示源是否具有单个学生或教师的多个标识符。 |
+| **allowTeachersInMultipleSchools** | 布尔 |  指示源是否具有单个学生或教师的多个标识符。 |
 | **操作** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 要应用于同步配置文件的可选自定义项。|
 
 ## <a name="json-representation"></a>JSON 表示形式

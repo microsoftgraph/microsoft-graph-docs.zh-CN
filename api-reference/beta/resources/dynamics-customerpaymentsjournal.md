@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 0791fe2b8c36bdff535f7fc56dea54abe1632647
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b909676a3cce34ac15481e9ce05746e972d7f8d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504578"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>customerPaymentsJournals 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的客户付款日志。
 
 ## <a name="methods"></a>方法
@@ -30,8 +35,8 @@ ms.locfileid: "35973630"
 | 属性           | 类型                  |说明                                                             |
 |:-------------------|:----------------------|:-----------------------------------------------------------------------|
 |id                  |GUID                   |客户付款日志的唯一 ID。 不可编辑。           |
-|code                |字符串, 最大值为10| 客户付款日志的代码。                             |
-|displayName         |字符串, 最大大小为50| 客户付款日志的显示名称。                     |
+|code                |字符串，最大值为10| 客户付款日志的代码。                             |
+|displayName         |字符串，最大大小为50| 客户付款日志的显示名称。                     |
 |lastModifiedDateTime|datetime               |上次修改客户付款日志的日期/时间。 只读。|
 
 ## <a name="relationships"></a>关系

@@ -1,29 +1,31 @@
 ---
 title: educationAssignmentIndividualRecipient 资源类型
-description: '在 assignTo 属性中使用。 当设置为 "单个收件人列表" 时, 课程中的 "选定学生" 将 '
+description: '在 assignTo 属性中使用。 当设置为 "单个收件人列表" 时，课程中的 "选定学生" 将 '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7408382cadcb53d857bb36b06702f7857d64a8f4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5bccdf98bbba4c0965daf5d5aba93cf1a34b758
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502548"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[assignTo](educationassignment.md)属性中使用。 如果设置为 "单个收件人列表", 则在发布工作分配时, 类中的所选学生将收到提交对象。
+在[assignTo](educationassignment.md)属性中使用。 如果设置为 "单个收件人列表"，则在发布工作分配时，类中的所选学生将收到提交对象。
 
 此资源是[educationAssignmentRecipient](educationassignmentrecipient.md)的子类。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|recipients|String collection|收件人的 id 的集合。|
+|recipients|String 集合|收件人的 id 的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7cb413aab72abe401152b67b985f023350f80f30
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: 0adfe767c23a8f6fda5d44a2520ee307c0499bd1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653669"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507371"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,11 +36,11 @@ ms.locfileid: "37653669"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String 集合|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的人可读名称。 继承自[namedLocation](../resources/namedLocation.md)。|
 |id|String|NamedLocation 对象的标识符。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|Boolean|如此如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|includeUnknownCountriesAndRegions|布尔|如此如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示上次修改的位置使用 ISO 8601 格式的日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系

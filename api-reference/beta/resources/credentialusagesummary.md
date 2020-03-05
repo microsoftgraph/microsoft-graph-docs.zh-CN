@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 46fc3f90b7a7f286d61a324e7b5f439d467a4978
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 17fc4535e5132b6bf6c2f6eab4a94b5a58ef9bb1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35520768"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507350"
 ---
 # <a name="credentialusagesummary-resource-type"></a>credentialUsageSummary 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +30,9 @@ ms.locfileid: "35520768"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| authMethod | string | 表示用户使用的身份验证方法。 可能的值是`email`: `mobileSMS`、 `mobileCall`、 `officePhone`、 `securityQuestion` 、(仅用于自助密码重置)、 `appNotification` `appCode`、和`alternateMobileCall` (仅支持注册)。 |
+| authMethod | string | 表示用户使用的身份验证方法。 可能的值是`email`： `mobileSMS`、 `mobileCall`、 `officePhone`、 `securityQuestion` 、（仅用于自助密码重置）、 `appNotification` `appCode`、和`alternateMobileCall` （仅支持注册）。 |
 | failureActivityCount | Int64 | 提供失败重置或注册数据的计数。 |
-| 功能 | string | 定义要报告的功能。 可能的值为`registration` : `reset`和。 |
+| 功能 | string | 定义要报告的功能。 可能的值为`registration` ： `reset`和。 |
 | id | String | 活动的唯一标识符。 只读。 |
 | successfulActivityCount | Int64 | 提供成功注册或重置的次数。 |
 

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ebca7ecd2ba49c3a14973bbc6060980c07927d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973186"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507455"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +47,7 @@ ms.locfileid: "35973186"
 |displayName|String|文件夹的显示名称。|
 |id|字符串|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|文件夹的名称 (如果文件夹是可识别的文件夹)。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|string|文件夹的名称（如果文件夹是可识别的文件夹）。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

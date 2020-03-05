@@ -6,14 +6,16 @@ title: DateTimeColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e0e69e4019530031966cde9f782c2f017ba976fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c2a90a67a8a283dbc1da497c5824e4eb7ecbc85
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973882"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507301"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

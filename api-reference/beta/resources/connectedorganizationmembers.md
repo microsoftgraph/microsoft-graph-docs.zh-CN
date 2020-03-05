@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2a3b55e3fab41f0fe08fcf844a6d143b12d7146
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 20f4477998547d6e98572fd8409f69e811c2198d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331391"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507490"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers 复杂类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "42331391"
 | :--------------------------- | :------------------------ | :---------- |
 | id |字符串 | 在 "权限管理" 中连接的组织的 ID。 |
 | 说明 |String | 连接的组织的名称。 只读。 |
-| isBackup | 布尔值 | 目前未使用。 |
+| isBackup | 布尔 | 目前未使用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

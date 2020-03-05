@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 378d8c1d773eacb3339eba35d5d60cc7ef5f2400
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c8f244b9c3601aaeb315b09bb51d21275a63f6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006603"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503255"
 ---
 # <a name="taxgroups-resource-type"></a>taxGroups 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 Dynamics 365 Business Central 中的 taxGroups 资源类型。
 
 ## <a name="methods"></a>方法

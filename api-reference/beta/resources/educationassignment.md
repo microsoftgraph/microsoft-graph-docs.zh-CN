@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e70d8f0bc62e3c7d38432634f51cc15295e2bb33
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: d7e614ac3f706886d893cc3f9cbb61d81d5db3cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418326"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502814"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,8 +46,8 @@ ms.locfileid: "37418326"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
-|allowLateSubmissions|Boolean| 确定学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则该属性的默认值为 true。 |
-|allowStudentsToAddResourcesToSubmission|Boolean| 确定学生是否可以将自己的资源添加到提交中，或者是否只能修改教师添加的资源。 |
+|allowLateSubmissions|布尔| 确定学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则该属性的默认值为 true。 |
+|allowStudentsToAddResourcesToSubmission|布尔| 确定学生是否可以将自己的资源添加到提交中，或者是否只能修改教师添加的资源。 |
 |assignDateTime|DateTimeOffset|工作分配应变为活动状态的日期。  如果将来，在此日期之前，不会向学生显示工作分配。  **时间戳**类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 发布工作分配后，哪些用户或整个类应接收提交对象。 |
 |assignedDateTime|DateTimeOffset|将工作分配发布给学生和工作分配的时间显示在学生日程表上。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -64,9 +66,9 @@ ms.locfileid: "37418326"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为空。|
-|提交|[educationSubmission](educationsubmission.md)集合| 发布后，每个学生都有一个提交对象代表其工作和评分。  只读。 可为空。|
-|类别|[educationCategory](educationcategory.md)集合| 设置后，用户可以轻松地找到给定类型的工作分配。  只读。 可为空。|
+|resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为 NULL。|
+|提交|[educationSubmission](educationsubmission.md)集合| 发布后，每个学生都有一个提交对象代表其工作和评分。  只读。 可为 NULL。|
+|categories|[educationCategory](educationcategory.md)集合| 设置后，用户可以轻松地找到给定类型的工作分配。  只读。 可为 NULL。|
 |rubric|[educationRubric](educationrubric.md)|设置时，评分 rubric 附加到此工作分配。|
 
 ## <a name="json-representation"></a>JSON 表示形式

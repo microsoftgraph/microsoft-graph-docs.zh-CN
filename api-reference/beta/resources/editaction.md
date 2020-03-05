@@ -6,14 +6,16 @@ title: EditAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 374b4f7374ba91360bdaa97e5bc36fb0f5aabbae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b7ab5e77b62d3f02ee04a5927cb2294f5c3b5a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006505"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502849"
 ---
 # <a name="editaction-resource-type"></a>EditAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3b23249d7c0b898344113c5bcfe950c207891250
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c7638c08214002a58328378967c024af871cb734
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658882"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507357"
 ---
 # <a name="credential-resource-type"></a>credential 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "38658882"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|fieldId|字符串|此凭据的字段名称。 例如，username、password 或 phoneNumber。 这是由应用程序定义的。 必须与 singleSignOnSettings/password 对象上的 html 字段中的内容相匹配。|
-|type|字符串|此凭据的类型。 有效值： username、password 或其他值。|
+|fieldId|String|此凭据的字段名称。 例如，username、password 或 phoneNumber。 这是由应用程序定义的。 必须与 singleSignOnSettings/password 对象上的 html 字段中的内容相匹配。|
+|type|String|此凭据的类型。 有效值： username、password 或其他值。|
 |value|String|此凭据的值。 例如，mysuperhiddenpassword。 注意：密码的值是只写的，该值永远不能读回。|
 
 ## <a name="json-representation"></a>JSON 表示形式

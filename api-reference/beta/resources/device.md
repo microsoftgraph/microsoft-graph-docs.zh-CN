@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8e0179a2aac9eeaac17a859bf0b19805582c731b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 293fb5c217b7b3433b1272d727029734b9314239
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866852"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507252"
 ---
 # <a name="device-resource-type"></a>设备资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,8 +31,8 @@ ms.locfileid: "40866852"
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员的组。 |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
-|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备所属的组。 此操作是可传递的。 |
+|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
 |**开放扩展**| | |
@@ -42,7 +44,7 @@ ms.locfileid: "40866852"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
@@ -51,7 +53,7 @@ ms.locfileid: "40866852"
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|字符串| 设备显示名称。必需。 |
 |id|String|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|isCompliant|布尔|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
@@ -62,7 +64,7 @@ ms.locfileid: "40866852"
 |operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice** （默认）<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
-|systemLabels|String collection| 系统应用于设备的标签列表。 |
+|systemLabels|String 集合| 系统应用于设备的标签列表。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
 |名称| String | 设备的友好名称。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |状态 | String| 设备处于联机或脱机状态。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
@@ -75,10 +77,10 @@ ms.locfileid: "40866852"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 Null。|
+|registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 此为只读属性。 可为 NULL。|
-|extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 Null。|
-|registeredOwners|[directoryObject](directoryobject.md) collection|是设备注册所有者的用户。只读。可为 NULL。|
+|extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 NULL。|
+|registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
 | 命令 | [命令](command.md)集合 | 发送到此设备的一组命令|
 

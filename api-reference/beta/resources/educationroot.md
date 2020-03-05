@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8084b1aae61ffb9e9982fbf8b5f4b8e430a85da1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14e152fa5aa24366eade56b632d96e2c4e4bfcc8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501057"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,9 +37,9 @@ ms.locfileid: "35972563"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 只读。 可为 Null。|
-|me|[educationUser](educationuser.md)| 只读。 可为 Null。|
-|schools|[educationSchool](educationschool.md) 集合| 只读。 可为 Null。|
+|classes|[educationClass](educationclass.md) 集合| 只读。 可为 NULL。|
+|me|[educationUser](educationuser.md)| 只读。 可为 NULL。|
+|schools|[educationSchool](educationschool.md) 集合| 只读。 可为 NULL。|
 |users|[educationUser](educationuser.md) 集合| 只读。可为 NULL。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

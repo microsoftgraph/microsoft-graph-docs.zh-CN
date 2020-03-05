@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: d4f9cd2e8608a29a34ccd0c8bdf54fafa77fee33
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: f2bd2d84d6f7dbc18fc5e37079eebc4289dd2ee2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622612"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499594"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>emailActivityStatistics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,14 +25,14 @@ ms.locfileid: "36622612"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 返回其统计信息的电子邮件活动。|
-|duration|持续时间|在电子邮件上花费的总小时数。 值以 ISO 8601 格式表示, 持续时间。|
-|endDate|Date|电子邮件活动结束的日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-04", 它遵循 YYYY-MM-DD 格式。|
+|duration|持续时间|在电子邮件上花费的总小时数。 值以 ISO 8601 格式表示，持续时间。|
+|endDate|Date|电子邮件活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 电子邮件活动的只读 ID。|
-|startDate|日期|电子邮件活动的开始日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-03", 它遵循 YYYY-MM-DD 格式。|
-|timeZoneUsed|String|用户在 Outlook 日历中设置的时区用于计算。 例如, 属性值可以是 "太平洋标准时间"。|
-|afterHours|持续时间|在工作时间之外的电子邮件上花费的总小时数, 基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示, 持续时间。 |
-|readEmail|持续时间|阅读电子邮件所用的总小时数。 值以 ISO 8601 格式表示, 持续时间。|
-|sentEmail|持续时间|撰写和发送电子邮件所用的总小时数。 值以 ISO 8601 格式表示, 持续时间。|
+|startDate|日期|电子邮件活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
+|timeZoneUsed|String|用户在 Outlook 日历中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
+|afterHours|持续时间|在工作时间之外的电子邮件上花费的总小时数，基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示，持续时间。 |
+|readEmail|持续时间|阅读电子邮件所用的总小时数。 值以 ISO 8601 格式表示，持续时间。|
+|sentEmail|持续时间|撰写和发送电子邮件所用的总小时数。 值以 ISO 8601 格式表示，持续时间。|
 
 ## <a name="relationships"></a>关系
 

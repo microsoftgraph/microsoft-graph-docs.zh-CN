@@ -1,22 +1,24 @@
 ---
 title: educationAssignmentPointsGrade 资源类型
-description: 当工作分配设置为 "点" 评分类型时, 每个提交都将具有与 "**提交. 年级**" 属性相关联的此对象。 这将从 educationAssignmentGrade 中创建一个子类,
+description: 当工作分配设置为 "点" 评分类型时，每个提交都将具有与 "**提交. 年级**" 属性相关联的此对象。 这将从 educationAssignmentGrade 中创建一个子类，
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5476d84e156ae0294fc3502d6de6d808644574c7
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: c2ef014c3e9e2954dba5fb759fcf3f86b3681b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173074"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502506"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当工作分配设置为 "点" 评分类型时, 每个提交都将具有与 "**提交. 年级**" 属性相关联的此对象。 这将从[educationAssignmentGrade](educationassignmentgrade.md)创建一个子类, 该子类将向此属性添加数据。 最大分数存储在**工作分配. 评分**属性中。
+当工作分配设置为 "点" 评分类型时，每个提交都将具有与 "**提交. 年级**" 属性相关联的此对象。 这将从[educationAssignmentGrade](educationassignmentgrade.md)创建一个子类，该子类将向此属性添加数据。 最大分数存储在**工作分配. 评分**属性中。
 
 
 ## <a name="properties"></a>属性

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4640daa1bb93945463cffc9dcf54d4db23b84da1
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 93e6585a6963a6f31c2613e2f2e12cce7246b7d8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173256"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501008"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>educationRubricOutcome 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,11 +31,11 @@ ms.locfileid: "36173256"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |lastModifiedBy|[identitySet](identityset.md)|修改资源的最后一个用户。|
-|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)集合|在向学生发布评分时所做的 rubricQualityFeedback 属性的副本。|
 |publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)集合|在向学生发布评分时所做的 rubricQualitySelectedLevels 属性的副本。|
 |rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)集合|针对此 rubric 的每种质量的特定反馈的集合。|
-|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)集合|为此工作分配评分的同时, 教师为每种质量选择的级别。|
+|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)集合|为此工作分配评分的同时，教师为每种质量选择的级别。|
 
 ## <a name="relationships"></a>关系
 

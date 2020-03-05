@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e61538a62a1bb267b0a13b98b17e9b69a8ceed92
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 3dd9dd01c19306d66ac91578a5430ff26667b0e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502128"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>educationFeedbackOutcome 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

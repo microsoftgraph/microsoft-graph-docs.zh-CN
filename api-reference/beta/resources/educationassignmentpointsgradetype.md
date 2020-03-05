@@ -5,20 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ef866debcf2c70862aae30048f68bd026c4e5250
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 2e233faa1ab550c5f970018b6d4bf6879ba99c8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172792"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502471"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 与**工作分配. 评分**属性一起使用。 这是[educationAssignmentGradeType](educationassignmentgradetype.md)的子类。
 
-这表示将对工作分配进行评分, 并存储每个学生可在此工作项上实现的最大分数数。 在工作分配上设置此设置后, 每个提交都将获取一个[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)属性, 该属性与每个学生的点数相关联。
+这表示将对工作分配进行评分，并存储每个学生可在此工作项上实现的最大分数数。 在工作分配上设置此设置后，每个提交都将获取一个[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)属性，该属性与每个学生的点数相关联。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

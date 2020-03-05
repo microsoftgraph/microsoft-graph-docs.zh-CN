@@ -5,22 +5,24 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 89e448d828f1f7caef73b14586b06d1df238f100
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f718e197e690d3779870e5996161461fe8f60915
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973931"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507413"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore 资源类型
+
+命名空间： microsoft. graph
 
 此资源包含单个控件的租户分数和说明。
 
 |名称 |类型 |说明 |
 |:--|:--|:--|
 |   controlName |   String  |   控件唯一名称 |
-|   score   |   双精度  |  租户实现的控制得分 (根据控件上的租户操作, 每天变化)。 |
-|   controlCategory |   String  |  控制措施类别 (标识、数据、设备、应用程序、基础结构)。 |
+|   score   |   双精度  |  租户实现的控制得分（根据控件上的租户操作，每天变化）。 |
+|   controlCategory |   String  |  控制措施类别（标识、数据、设备、应用程序、基础结构）。 |
 |   说明 |   String  |  控件的说明。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

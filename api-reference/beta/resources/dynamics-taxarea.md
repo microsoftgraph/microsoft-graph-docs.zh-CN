@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2c4f007c23ae32fb79255a0a8f1509589740a70
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972892"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503430"
 ---
 # <a name="taxareas-resource-type"></a>taxAreas 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的税务区域资源类型。
 
 ## <a name="methods"></a>方法
@@ -29,8 +34,8 @@ ms.locfileid: "35972892"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|税务区域的唯一 ID。 不可编辑。|
-|code|字符串, 最大大小为20| 税务区域的代码。|
-|displayName|字符串, 最大大小为50| 税务区域的显示名称。|
+|code|字符串，最大大小为20| 税务区域的代码。|
+|displayName|字符串，最大大小为50| 税务区域的显示名称。|
 |taxType|string|税务区域的税金类型。|
 |lastModifiedDateTime|datetime|税区域的最后修改日期时间。 只读。|
 

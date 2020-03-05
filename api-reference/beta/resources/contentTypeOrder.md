@@ -6,14 +6,16 @@ title: ContentTypeOrder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 464ac5978f505e74ca99226080c35574917fd550
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7198e6f17fc77c73c5b2334bc6d1e7b7262f5dcd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507441"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

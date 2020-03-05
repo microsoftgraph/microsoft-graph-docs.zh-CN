@@ -7,15 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 08cfc864ee670a799a5f1672fa96cf8167ef1423
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d72ac6ec655e15ad6f3c824dc2d5e9c3e09db0c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006582"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503647"
 ---
 # <a name="paymentmethods-resource-type"></a>paymentMethods 资源类型
-代表 Dynamics 365 Business Central 中的付款方式, 如 PayPal、信用卡和银行帐户。
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+代表 Dynamics 365 Business Central 中的付款方式，如 PayPal、信用卡和银行帐户。
 
 ## <a name="methods"></a>方法
 

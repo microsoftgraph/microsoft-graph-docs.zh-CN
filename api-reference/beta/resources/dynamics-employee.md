@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 96d44856ad52c983e61181fc64b93477fbe79e6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84fccbcb9d60c97a2ce0079a9ba773a8400a8069
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972948"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504081"
 ---
 # <a name="employees-resource-type"></a>员工资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的员工。
 
 ## <a name="methods"></a>方法

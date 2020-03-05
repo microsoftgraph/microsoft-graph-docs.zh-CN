@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c8a2c7203de55e4436a4b17f144357ae3c1e8f10
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 4eb36c4d57826dab8e2da83eeab2bfaf577008c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41476971"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506293"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "41476971"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 分配给此实体的唯一标识符。 不可为 null，只读。|
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置此记录，才能使 Microsoft Online Services 在域中正常运行。 |
+|isOptional|布尔| 如果为 false，则客户必须在 DNS 主机上配置此记录，才能使 Microsoft Online Services 在域中正常运行。 |
 |label|String| 在 DNS 主机上配置 DNS 记录名称时使用的值。 |
 |recordType|String| 指示此实体表示的 DNS 记录的类型。</br></br>此值可以是下列值之一： *CName*、 *Mx*、 *Srv*、 *Txt*</br></br>键 |
 |supportedService|String| 对此 DNS 记录具有依赖项的 Microsoft Online 服务或功能。</br></br>可以是下列值之一： **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*|

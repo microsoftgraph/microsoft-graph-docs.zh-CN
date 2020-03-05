@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e282a9701eaae04aae33d9fd9efc9b86f7df3635
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ffa1bbcd3f96c86818c68d350236086d0975187
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972675"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501792"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>educationIdentitySynchronizationConfiguration 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "35972675"
 ## <a name="derived-types"></a>派生类型
 | 类型 | 说明 |
 |:-|:-|
-| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | 使用此类型可匹配 Azure Active Directory (Azure AD) 中的现有用户帐户。 |
+| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | 使用此类型可匹配 Azure Active Directory （Azure AD）中的现有用户帐户。 |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | 使用此类型在 Azure AD 中创建新用户帐户。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

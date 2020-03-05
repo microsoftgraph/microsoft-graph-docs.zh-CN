@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 02e4f039411c992cd1d7335fc2463d660b8ff181
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7d3fee76df5f60c47639183f7d3e7ce54164f81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972871"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503213"
 ---
 # <a name="trialbalance-resource-type"></a>trialBalance 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的试算平衡表。
 
 ## <a name="methods"></a>方法

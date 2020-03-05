@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 6720a8959ddba79d1face9c91325900c3a35a95c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13bc765f873bc893925ffbddc82b2f0685376cf6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973728"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505138"
 ---
 # <a name="companies-resource-type"></a>公司资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 "Dynamics 365 Business Central 中的公司" 资源类型。 
 
 ## <a name="methods"></a>方法

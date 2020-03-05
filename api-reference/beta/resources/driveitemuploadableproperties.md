@@ -5,14 +5,16 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f8511bba850c1d165fe9b7082b7df51900b17962
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: a68180476910051dc3633ee5dce7363c77eb60ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333396"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505558"
 ---
 # <a name="driveitemuploadableproperties-resource-type"></a>driveItemUploadableProperties 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

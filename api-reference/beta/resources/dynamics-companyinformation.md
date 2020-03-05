@@ -7,15 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 2e23660775ba96b3f898840b0bad2b53eff9584a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce982e7d03e4b2e5947381173d57706f6cf8f41e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012665"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505124"
 ---
 # <a name="companyinformation-resource-type"></a>companyInformation 资源类型
-表示为 Dynamics 365 Business Central 中的当前公司指定的信息, 例如名称、地址、电子邮件地址和网站地址。
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+表示为 Dynamics 365 Business Central 中的当前公司指定的信息，例如名称、地址、电子邮件地址和网站地址。
 
 ## <a name="methods"></a>方法
 

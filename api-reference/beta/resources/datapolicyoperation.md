@@ -1,20 +1,22 @@
 ---
 title: dataPolicyOperation 资源类型
-description: 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如, 公司管理员可以提交数据策略操作请求以导出员工的公司数据, 然后再跟踪该请求。
+description: 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e0d8916cb13c91a52d7df66fe907d611e78d908
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6f78a666d5e3785c6e02b9f5622f5d0529c61a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973165"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507308"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
-表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如, 公司管理员可以提交数据策略操作请求以导出员工的公司数据, 然后再跟踪该请求。
+命名空间： microsoft. graph
+
+表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
 
 ## <a name="methods"></a>方法
 
@@ -24,16 +26,16 @@ ms.locfileid: "35973165"
 
 ## <a name="properties"></a>属性
 
-> **注意:** 此资源的所有属性都是只读的。
+> **注意：** 此资源的所有属性都是只读的。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|表示在 UTC 时间内使用 ISO 8601 格式完成此数据策略操作的请求的时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 空, 直到操作完成。|
+|completedDateTime|DateTimeOffset|表示在 UTC 时间内使用 ISO 8601 格式完成此数据策略操作的请求的时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 空，直到操作完成。|
 |id|String| 此操作的唯一键。 |
 |状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
 |storageLocation|String|要为导出请求导出的数据的 URL 位置。|
 |userId|String|对其执行操作的用户的 id。|
-|submittedDateTime|DateTimeOffset|表示在 UTC 时间内提交此数据操作的请求 (使用 ISO 8601 格式)。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|表示在 UTC 时间内提交此数据操作的请求（使用 ISO 8601 格式）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |progress|双精度|指定操作的进度。|
 
 ## <a name="relationships"></a>关系

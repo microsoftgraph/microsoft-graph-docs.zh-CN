@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 325eb9772e350848dbf35f9832282cb92a7fda86
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 077188c3ca30837cad6adcffa2204750753cd1cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726385"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500735"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ ms.locfileid: "37726385"
 |releasedDateTime|DateTimeOffset|提交发布的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|将此提交的状态移动到 "已返回" 的用户。|
 |returnedDateTime|DateTimeOffset|返回提交的时间点。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|字符串|需要存储此提交的所有文件资源的文件夹。|
+|resourcesFolderUrl|String|需要存储此提交的所有文件资源的文件夹。|
 |状态|string| 只读。 可取值为：`working`、`submitted`、`released`、`returned`。|
 |submittedBy|[identitySet](identityset.md)|将资源移动到已提交状态的用户。|
 |submittedDateTime|DateTimeOffset|将提交状态移至提交状态的时间点。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -51,8 +53,8 @@ ms.locfileid: "37726385"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
-|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。 可为 Null。|
+|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 NULL。|
+|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。 可为 NULL。|
 |成果|[educationOutcome](educationOutcome.md)集合。 保留教师为此提交分配的成绩、反馈和/或 rubrics 信息|读写。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

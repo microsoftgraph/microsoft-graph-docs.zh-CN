@@ -7,15 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: a135627804e2d6c5be4203c0ee0c229642c70c65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a8dc7eed4bdbcc39a04f55996e11b6d9dc6da1f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973742"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505166"
 ---
 # <a name="agedaccountspayable-resource-type"></a>agedAccountsPayable 资源类型
-代表 Dynamics 365 Business Central 中的 agedAccountsPayable 对象, 它显示供应商帐户的帐龄。
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+代表 Dynamics 365 Business Central 中的 agedAccountsPayable 对象，它显示供应商帐户的帐龄。
 
 ## <a name="methods"></a>方法
 
@@ -36,7 +41,7 @@ ms.locfileid: "35973742"
 |period2Amount  |位数   |指定第二个帐龄期间的余额。|
 |period3Amount  |位数   |指定第三个帐龄期间的余额。|
 |agedAsOfDate   |date|指定用于计算帐龄期间的时间段起始日期。|
-|periodLengthFilter|string |指定时间段的长度。 可接受的时间单位值为: D、WD、W、M、Q 或 Y (即基于日期的当前时间单位) 可以指定为时间单位的前缀。|
+|periodLengthFilter|string |指定时间段的长度。 可接受的时间单位值为： D、WD、W、M、Q 或 Y （即基于日期的当前时间单位）可以指定为时间单位的前缀。|
 
 
 ## <a name="relationships"></a>关系

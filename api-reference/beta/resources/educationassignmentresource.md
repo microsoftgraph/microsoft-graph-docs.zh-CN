@@ -1,22 +1,24 @@
 ---
 title: educationAssignmentResource 资源类型
-description: 一个包装对象, 该对象存储与工作分配相关联的资源。 该包装添加了**distributeForStudentWork**属性, 并指示该资源将
+description: 一个包装对象，该对象存储与工作分配相关联的资源。 该包装添加了**distributeForStudentWork**属性，并指示该资源将
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006428"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502422"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个包装对象, 该对象存储与工作分配相关联的资源。 该包装将添加**distributeForStudentWork**属性, 并指示该资源将被复制到学生提交。  如果不复制该对象, 则每个学生都将看到该工作分配的资源的链接。 学生将不能更新此资源。 这是教师向学生提供的讲义, 无需将其打开。 如果分配资源, 每个学生都会在其提交的资源列表中收到此资源的副本。 每个学生都可以修改其副本并将其提交到评分。
+一个包装对象，该对象存储与工作分配相关联的资源。 该包装将添加**distributeForStudentWork**属性，并指示该资源将被复制到学生提交。  如果不复制该对象，则每个学生都将看到该工作分配的资源的链接。 学生将不能更新此资源。 这是教师向学生提供的讲义，无需将其打开。 如果分配资源，每个学生都会在其提交的资源列表中收到此资源的副本。 每个学生都可以修改其副本并将其提交到评分。
 
 
 ## <a name="methods"></a>方法
@@ -30,7 +32,7 @@ ms.locfileid: "36006428"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|指示是否应将此资源复制到每个提交的学生进行修改和提交。|
+|distributeForStudentWork|布尔|指示是否应将此资源复制到每个提交的学生进行修改和提交。|
 |id|String| 此资源的 ID。 只读。|
 |resource|[educationResource](educationresource.md)|与此工作分配相关联的资源对象。|
 

@@ -1,26 +1,28 @@
 ---
 title: educationSynchronizationCustomizations 资源类型
-description: 包含要同步的实体的列表及其自定义项 (如果有)。
+description: 包含要同步的实体的列表及其自定义项（如果有）。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d31be9bd808f411c1e208ab953784fdefd65fdda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2ff93d6a91d522c5d1140035e278e9832332321
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500448"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>educationSynchronizationCustomizations 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含要同步的实体的列表及其[自定义项](educationsynchronizationcustomization.md)(如果有)。
+包含要同步的实体的列表及其[自定义项](educationsynchronizationcustomization.md)（如果有）。
 
-> **注意:** 要同步的属性的自定义不应用于**studentEnrollment**和**teacherRoster**实体。
+> **注意：** 要同步的属性的自定义不应用于**studentEnrollment**和**teacherRoster**实体。
 
-此资源是以下数据提供程序的成员:
+此资源是以下数据提供程序的成员：
 
 * [educationCsvDataProvider](educationcsvdataprovider.md)
 * [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)

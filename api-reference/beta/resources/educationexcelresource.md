@@ -5,20 +5,22 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ef85a92b2629e8a652ce59210018725d6afecb9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b533d5072ab9a4e880b14b64e96f4791db399e09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972741"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502163"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [EducationResource](educationresource.md)的子类。 此资源类型代表一个 Excel 文档。  
  
->**注意:** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。
+>**注意：** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。
 
 
 ## <a name="properties"></a>属性

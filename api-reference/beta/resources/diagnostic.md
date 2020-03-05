@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4ac591640e647a1caa5230bd8e7e8c64ad2314af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f0d5e6a938c454ca2efeda0dd7628c15269d6311
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973141"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507238"
 ---
 # <a name="diagnostic-resource-type"></a>诊断资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ ms.locfileid: "35973141"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|message|字符串|描述触发错误或警告的条件的消息。|
+|message|String|描述触发错误或警告的条件的消息。|
 |url|String|有关此问题的文档的链接。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

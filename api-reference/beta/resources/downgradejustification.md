@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aacc32ac86df4eda087f49dbb3dca05a356e8080
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 91bcb5a8e12a159bf2c6586a0e3dc49a540a69f2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939423"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505789"
 ---
 # <a name="downgradejustification-resource-type"></a>downgradeJustification 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,10 +22,10 @@ ms.locfileid: "37939423"
 
 ## <a name="properties"></a>属性
 
-| 属性             | 类型    | 描述                                                                                          |
+| 属性             | 类型    | 说明                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Boolean | 指示降级是还是未两端对齐。                                              |
-| justificationMessage | 字符串  | 指示降级的原因的消息。 该邮件将显示在 "管理日志" 中。 |
+| isDowngradeJustified | 布尔 | 指示降级是还是未两端对齐。                                              |
+| justificationMessage | String  | 指示降级的原因的消息。 该邮件将显示在 "管理日志" 中。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,22 +1,24 @@
 ---
 title: educationSubmissionIndividualRecipient 资源类型
-description: 'EducationSubmissionRecipient 的一个子类, 该子类指示向班级中的个人分配提交。  '
+description: 'EducationSubmissionRecipient 的一个子类，该子类指示向班级中的个人分配提交。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2eecdc7e7ddd30ecad9a520b42cd11df9565fa71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2954e511cee6929a66bb593c4f449f7410852c7f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972507"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500721"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationSubmissionRecipient](educationsubmissionrecipient.md)的一个子类, 该子类指示向班级中的个人分配提交。  
+[EducationSubmissionRecipient](educationsubmissionrecipient.md)的一个子类，该子类指示向班级中的个人分配提交。  
 
 
 ## <a name="properties"></a>属性

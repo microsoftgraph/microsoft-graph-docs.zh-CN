@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 67baa3f5a57e968b53ae3f51a6c49b3743be25a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553934"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500938"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "37553934"
 
 | 方法                                                                     | 返回类型                                      | 说明                                                                                 |
 | :------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Get](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | 读取 **educationSchool** 对象的属性和关系。                         |
+| [获取](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | 读取 **educationSchool** 对象的属性和关系。                         |
 | [Add class](../api/educationschool-post-classes.md)                        | [educationClass](educationclass.md)              | 通过发布到课程导航属性，为学校添加一个新的 **educationClass**。  |
 | [List classes](../api/educationschool-list-classes.md)                     | [educationClass](educationclass.md) 集合   | 获取 **educationClass** 对象集合。                                               |
 | [Remove class](../api/educationschool-delete-classes.md)                   | [educationClass](educationclass.md)              | 通过课程导航属性从学校删除 **educationClass**。       |
@@ -46,14 +48,14 @@ ms.locfileid: "37553934"
 | 说明         | String                                | 学校描述。                         |
 | displayName         | 字符串                                | 学校的显示名称。                        |
 | externalId          | String                                | 同步系统中学校的 ID。                    |
-| externalPrincipalId | 字符串                                | 同步系统中主体的 ID。                 |
+| externalPrincipalId | String                                | 同步系统中主体的 ID。                 |
 | externalSource      | string                                | 只读。 可能的值是：`sis` 或 `manual`。 |
-| highestGrade        | 字符串                                | 教授的最高年级。                              |
-| lowestGrade         | 字符串                                | 教授的最低年级。                               |
+| highestGrade        | String                                | 教授的最高年级。                              |
+| lowestGrade         | String                                | 教授的最低年级。                               |
 | phone               | String                                | 学校电话号码。                            |
-| principalEmail      | 字符串                                | 主体的电子邮件地址。                    |
-| principalName       | 字符串                                | 主体名称。                             |
-| schoolNumber        | 字符串                                | 学校编号。                                     |
+| principalEmail      | String                                | 主体的电子邮件地址。                    |
+| principalName       | String                                | 主体名称。                             |
+| schoolNumber        | String                                | 学校编号。                                     |
 
 ## <a name="relationships"></a>关系
 

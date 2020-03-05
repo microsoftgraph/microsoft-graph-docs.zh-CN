@@ -1,24 +1,26 @@
 ---
 title: directorySetting 资源类型
-description: 可以基于可用的 directorySettingTemplates 创建目录设置, 并将其更改为预设的默认值。 这些设置可以控制实体或功能行为, 既可以在租户范围级别, 也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置, 则特定实体级别设置可能会从租户范围设置中退出。  例如, 租户范围内的设置可能会允许来宾受到现有组成员的邀请, 但特定的组设置可能会退出, 而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
+description: 可以基于可用的 directorySettingTemplates 创建目录设置，并将其更改为预设的默认值。 这些设置可以控制实体或功能行为，既可以在租户范围级别，也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置，则特定实体级别设置可能会从租户范围设置中退出。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但特定的组设置可能会退出，而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fdef82ef7585d3b59510b491f6b10396afbf6763
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d42e46d39e28357d6839111a5e6a865b421cf87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973823"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506629"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以基于可用的[directorySettingTemplates](directorysettingtemplate.md)创建目录设置, 并将其更改为预设的默认值。 这些设置可以控制实体或功能行为, 既可以在租户范围级别, 也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置, 则特定实体级别设置可能会从租户范围设置中退出。  例如, 租户范围内的设置可能会允许来宾受到现有组成员的邀请, 但特定的组设置可能会退出, 而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
+可以基于可用的[directorySettingTemplates](directorysettingtemplate.md)创建目录设置，并将其更改为预设的默认值。 这些设置可以控制实体或功能行为，既可以在租户范围级别，也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置，则特定实体级别设置可能会从租户范围设置中退出。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但特定的组设置可能会退出，而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
 
-> **注意**: directorySetting 资源类型的/beta 版本仅适用于组。 /V1.0 版本已重命名为 groupSetting。
+> **注意**： directorySetting 资源类型的/beta 版本仅适用于组。 /V1.0 版本已重命名为 groupSetting。
 
 ## <a name="methods"></a>方法
 

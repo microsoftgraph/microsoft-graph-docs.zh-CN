@@ -6,14 +6,16 @@ title: DeleteAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c5617c61f3221351930ab8d4bf940eaf1efa0629
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 453be9ad3764081207cfa51e56b69111186ff87b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973837"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507273"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ ms.locfileid: "35973837"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | 已删除的项的名称。
-| objectType    | string | `File`或`Folder`, 具体取决于已删除项目的类型。
+| objectType    | string | `File`或`Folder`，具体取决于已删除项目的类型。
 
 ## <a name="remarks"></a>注解
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: cd78b80d97a6dfcaa4c7b97085e89daa4f8a8523
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c664cb4a381cf2ebe3de9bd9ca53719786b94405
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972199"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499566"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>emailActivityUserDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -21,13 +23,13 @@ ms.locfileid: "35972199"
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | Boolean           |
+| isDeleted         | 布尔           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | String collection |
+| assignedProducts  | String 集合 |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

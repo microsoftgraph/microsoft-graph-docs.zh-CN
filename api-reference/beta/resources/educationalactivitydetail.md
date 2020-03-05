@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: e8e79ac7831698bf22d5785b83ebaa71961e19df
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ccacf02184bbf54e49949d7671d34dde93b3859f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502821"
 ---
 # <a name="educationalactivitydetail-resource-type"></a>educationalActivityDetail 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,15 +22,15 @@ ms.locfileid: "37935266"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述                                                   |
+| 属性     | 类型        | 说明                                                   |
 |:-------------|:------------|:--------------------------------------------------------------|
-|缩写  |字符串       |缩短学位或程序的名称（示例： PhD、MBA）    |
-|activities    |字符串       |课外与程序一起开展的活动。   |
-|奖励        |字符串       |与该计划相关的任何奖项或荣誉。              |
-|description   |字符串       |用户提供的程序的简短说明。         |
+|缩写  |String       |缩短学位或程序的名称（示例： PhD、MBA）    |
+|activities    |String       |课外与程序一起开展的活动。   |
+|奖励        |String       |与该计划相关的任何奖项或荣誉。              |
+|说明   |字符串       |用户提供的程序的简短说明。         |
 |displayName   |字符串       |用户提供的程序的长格式名称。      |
-|fieldsOfStudy |字符串       |与程序关联的 Majors 和未成年人。 （如果适用） |
-|grade         |字符串       |最终成绩、类、GPA 或分数。                          |
+|fieldsOfStudy |String       |与程序关联的 Majors 和未成年人。 （如果适用） |
+|grade         |String       |最终成绩、类、GPA 或分数。                          |
 |notes         |String       |用户提供的其他笔记。                        |
 |webUrl        |String       |指向 "度" 或 "程序" 页面的链接。                            |
 

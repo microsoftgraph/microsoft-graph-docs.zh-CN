@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed81e1e9e74ad311e4102963649ff4a4015bb093
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972717"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501960"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35972717"
 |:---------------|:--------|:----------|
 |originalFormId|String|表单的原始 id。|
 |formId|String|表单的 Id。|
-|isGroupForm|Boolean|表单是否属于类组。|
+|isGroupForm|布尔|表单是否属于类组。|
 |viewUrl|String|表单的学生 URL。|
 |viewUrl|String|表单的学生 URL。|
 |editUrl|String|表单的教师 URL。|

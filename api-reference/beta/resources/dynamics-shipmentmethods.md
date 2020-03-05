@@ -7,15 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e8d25294b219815c8aa569c7a8c7fab7ec68830c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 94ebd10ef87946b5333ec5a06d5edccadc298158
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006610"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503570"
 ---
 # <a name="shipmentmethods-resource-type"></a>shipmentMethods 资源类型
-代表 Dynamics 365 Business Central 中的送货方法, 如 UPS、Fedex 和 DHL。
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+代表 Dynamics 365 Business Central 中的送货方法，如 UPS、Fedex 和 DHL。
 
 ## <a name="methods"></a>方法
 

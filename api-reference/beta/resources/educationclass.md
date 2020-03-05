@@ -5,18 +5,20 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633704"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502275"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 365 体验正常工作, 教师必须是教师和成员集合的成员。
+表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 365 体验正常工作，教师必须是教师和成员集合的成员。
 
 ## <a name="methods"></a>方法
 
@@ -32,7 +34,7 @@ ms.locfileid: "36633704"
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | 通过教师导航属性从课程删除 **educationUser**。      |
 | [创建 educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | 通过发布到工作分配集合创建新的**educationAssignment** 。            |
 | [列出作业](../api/educationclass-list-assignments.md)           | [educationAssignment]集合                | 获取**educationAssignment**对象集合。                                         |
-| [Get group](../api/educationclass-get-group.md)                         | [组]                                        | 获得与此 **educationClass** 对应的 Office 365 **group**。                 |
+| [获取组](../api/educationclass-get-group.md)                         | [组]                                        | 获得与此 **educationClass** 对应的 Office 365 **group**。                 |
 | [创建 educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | 为此类创建新的**educationCategory** 。                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory]集合                 | 获取属于此类的**educationCategory**对象的列表。                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | 更新 **educationClass** 对象。                                                         |
@@ -61,8 +63,8 @@ ms.locfileid: "36633704"
 | 关系 | 类型                             | 说明                                               |
 | :----------- | :------------------------------- | :-------------------------------------------------------- |
 | assignments  | [educationAssignment]集合 | 与此类关联的所有工作分配。 可为 Null。     |
-| members      | [educationUser] 集合       | 课程中的所有用户。 可为 Null。                         |
-| schools      | [educationSchool] 集合     | 与此课程相关的所有学校。 可为 Null。 |
+| members      | [educationUser] 集合       | 课程中的所有用户。 可为 NULL。                         |
+| schools      | [educationSchool] 集合     | 与此课程相关的所有学校。 可为 NULL。 |
 | teachers     | [educationUser] 集合       | 课程中的所有教师。 可为 NULL。                      |
 
 ## <a name="json-representation"></a>JSON 表示形式

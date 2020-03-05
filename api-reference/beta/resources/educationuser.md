@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 230b0f9d417fb910a379cd3c4d713c9b08ab0008
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 90bb579534a6abb9234075cf768539f087ef1cc5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439925"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499972"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ ms.locfileid: "37439925"
 | 属性          | 类型                                                  | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :---------------- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                | 字符串                                                | 用户的唯一标识符。继承自 [directoryObject]。键。不可为 null。只读。                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| accountEnabled    | Boolean                                               | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持\$筛选器。                                                                                                                                                                                                                                                                                                                                                                                                   |
+| accountEnabled    | 布尔                                               | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持\$筛选器。                                                                                                                                                                                                                                                                                                                                                                                                   |
 | assignedLicenses  | [assignedLicense] collection                          | 分配给该用户的许可证。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | assignedPlans     | [assignedPlan] collection                             | 分配给该用户的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones    | String collection                                     | 用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -153,5 +155,5 @@ ms.locfileid: "37439925"
 [了解 identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[user]: user.md
+[用户]: user.md
 [directoryobject]: directoryobject.md

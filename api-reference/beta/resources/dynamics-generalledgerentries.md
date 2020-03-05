@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 500c78d0e29d83c68c2b7247a9787b977cc8a7b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1dc4ec7bb3fa30f7dc6362c850893953c4aa6aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973602"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503976"
 ---
 # <a name="generalledgerentries-resource-type"></a>generalLedgerEntries 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 Dynamics 365 Business Central 中的 generalLedgerEntry 对象。
 
 ## <a name="methods"></a>方法
@@ -28,11 +33,11 @@ ms.locfileid: "35973602"
 |:-------------------|:----------------------|:--------------------------------------------|
 |id                  |位数                |G/L 条目的唯一 ID。              |
 |postingDate         |date                   |指定 G/L 条目的过帐日期。 |
-|documentNumber      |字符串, 最大大小为20|指定 G/L 条目的文档编号。|
+|documentNumber      |字符串，最大大小为20|指定 G/L 条目的文档编号。|
 |documentType        |string                 |指定 G/L 项的文档类型。|
 |accountId           |GUID                   |指定 G/L 条目的 accountId。    |
-|accountNumber       |字符串, 最大大小为20|指定 G/L 条目的 accountNumber。|
-|说明         |字符串, 最大大小为50|指定 G/L 条目的说明。  |
+|accountNumber       |字符串，最大大小为20|指定 G/L 条目的 accountNumber。|
+|说明         |字符串，最大大小为50|指定 G/L 条目的说明。  |
 |debitAmount         |位数                |指定 G/L 条目的 debitAmount。  |
 |creditAmount        |位数                |指定 G/L 条目的 creditAmount。 |
 |lastModifiedDateTime|datetime               |修改了 G/L 条目的最后一个日期/时间。|

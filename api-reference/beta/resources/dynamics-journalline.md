@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cb9b20d7d88159dbddd2a18caa6db7fe52e5a601
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8285a64b931ab18dac51cc20224877bbac74be90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972913"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503654"
 ---
 # <a name="journallines-resource-type"></a>journalLines 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表 Dynamics 365 Business Central 中的日记中的一条线。
 
 ## <a name="methods"></a>方法
@@ -30,16 +35,16 @@ ms.locfileid: "35972913"
 | 属性             | 类型                   |说明                                                        |
 |:---------------------|:-----------------------|:------------------------------------------------------------------|
 |id                    |GUID                    |日记行的唯一 ID。 不可编辑。                   |
-|journalDisplayName    |字符串, 最大值为10 |此行所属的日记的显示名称。 只读。|
+|journalDisplayName    |字符串，最大值为10 |此行所属的日记的显示名称。 只读。|
 |lineNumber            |integer                 |日志行的编号。                                    |
 |accountId             |GUID                    |与日志行相关的帐户的唯一 ID。  |
-|accountNumber         |字符串, 最大大小为20 |与日志行相关的帐户的编号。     |
+|accountNumber         |字符串，最大大小为20 |与日志行相关的帐户的编号。     |
 |postingDate           |date                    |日志行的过帐日期。                          |
-|documentNumber        |字符串, 最大大小为20 |指定日记行的文档编号。                  |
-|externalDocumentNumber|字符串, 最大大小为20 |指定日记行的外部文档编号。        |
-|量                |数位                 |指定日记行所包含的总金额 (包括 VAT)。|
-|说明           |字符串, 最大大小为50 |日记行的说明, 由用户或 autocreated 提供。|
-|注释               |字符串, 最大大小为250|用户在日志行上指定的注释。                      |
+|documentNumber        |字符串，最大大小为20 |指定日记行的文档编号。                  |
+|externalDocumentNumber|字符串，最大大小为20 |指定日记行的外部文档编号。        |
+|量                |数位                 |指定日记行所包含的总金额（包括 VAT）。|
+|说明           |字符串，最大大小为50 |日记行的说明，由用户或 autocreated 提供。|
+|comment               |字符串，最大大小为250|用户在日志行上指定的注释。                      |
 |lastModifiedDateTime  |datetime                |修改日记行的最后一个日期/时间。 只读。        |
 
 ## <a name="relationships"></a>关系
@@ -47,7 +52,7 @@ ms.locfileid: "35972913"
 
 日志行可以是维行的 "父实体"。
 
-帐户 (accountId) 必须存在于 "帐户" 表中。
+帐户（accountId）必须存在于 "帐户" 表中。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

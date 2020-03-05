@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbd3789ca6a33a16f214d5d961986ef4e1b6c016
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bffdf7e806d3f78cc07f4d0d04dfea84987dfb27
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507042"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "40870328"
 |activityDateTime|DateTimeOffset|指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
 |additionalDetails|[keyValue](keyvalue.md) 集合|指示活动的其他详细信息。|
-|category|String|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
+|category|字符串|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
 |correlationId|GUID|指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|
 |id|String| 指示活动的唯一 ID。 这是 GUID。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|指示有关启动活动的用户或应用的信息。|

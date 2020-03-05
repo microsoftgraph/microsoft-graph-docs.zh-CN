@@ -7,15 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 3658c4c510194d3cc950094ec9e46db31589bc03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b0774f24109f40684039bd8ac98188903f28c3d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972864"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503010"
 ---
 # <a name="unitsofmeasure-resource-type"></a>unitsOfMeasure 资源类型
-表示一个度量单位, 它是量的标准度量单位, 在 Dynamics 365 Business Central 中。
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+表示一个度量单位，它是量的标准度量单位，在 Dynamics 365 Business Central 中。
 
 ## <a name="methods"></a>方法
 
@@ -32,7 +37,7 @@ ms.locfileid: "35972864"
 |id|GUID|UnitsOfMeasure 的唯一 ID。 不可编辑。|
 |code|string|指定度量单位的代码。|
 |displayName|string|指定度量单位的显示名称。|
-|internationalStandardCode|string|根据与电子发送销售文档的连接的 UNECE Rec20 标准, 指定度量单位代码 (表示)。|
+|internationalStandardCode|string|根据与电子发送销售文档的连接的 UNECE Rec20 标准，指定度量单位代码（表示）。|
 |lastModifiedDateTime|datetime|最后一个 datetime 的度量单位已修改。 只读。|  
 
 

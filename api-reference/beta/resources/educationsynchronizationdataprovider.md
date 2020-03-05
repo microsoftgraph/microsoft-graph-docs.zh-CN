@@ -1,24 +1,26 @@
 ---
 title: educationSynchronizationDataProvider 资源类型
-description: '代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 Azure Active Directory (Azure AD) 架构。 '
+description: '代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 Azure Active Directory （Azure AD）架构。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c28238cf35858745979a4d9659b1f649dbab7061
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26a702440ffde361982b8a3ce7cb66aea45a5412
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972423"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500343"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>educationSynchronizationDataProvider 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 Azure Active Directory (Azure AD) 架构。
+代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 Azure Active Directory （Azure AD）架构。
 
-> **注意:** 此复杂类型是抽象的。 请参阅列出的特定类型的数据提供程序。
+> **注意：** 此复杂类型是抽象的。 请参阅列出的特定类型的数据提供程序。
 
 ## <a name="derived-types"></a>派生类型
 | 类型 | 说明 |

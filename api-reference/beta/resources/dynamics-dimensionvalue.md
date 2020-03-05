@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: af7ba3b49051a4e89fcdf2a4a408a1f72fc547ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 368fc28f7bd46d8d5385b6e6041cd82255e0271f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973613"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504137"
 ---
 # <a name="dimensionvalues-resource-type"></a>dimensionValues 资源类型
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Dynamics 365 Business Central 中的维度值。
 
 ## <a name="methods"></a>方法
@@ -28,7 +33,7 @@ ms.locfileid: "35973613"
 | 属性           | 类型                  |说明                                        |
 |:-------------------|:----------------------|:--------------------------------------------------|
 |id                  |GUID                   |项目的唯一 ID。                         |
-|code                |字符串, 最大大小为20|维度值代码。                          |
+|code                |字符串，最大大小为20|维度值代码。                          |
 |displayName         |string                 |指定维度值的名称。 此名称将显示在使用维度值的位置。|
 |lastModifiedDateTime|datetime               |修改了维度值的最后一个日期/时间。|  
 
