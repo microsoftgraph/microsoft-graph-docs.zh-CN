@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7d59d8c5a173f614473a7443fc7db97a4e3f6618
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7210ec04f8161c1fbf564bae9af3b1d2fa28f179
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457018"
 ---
 # <a name="create-rule"></a>创建规则
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,9 +49,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 
 | 参数       | 类型|说明|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
+|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必填。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必需。|
+|displayName| String  | 规则的显示名称。 必填。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|
@@ -61,7 +63,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_messagerule_from_mailfolder"
@@ -93,15 +95,15 @@ Content-type: application/json
 }
 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-messagerule-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

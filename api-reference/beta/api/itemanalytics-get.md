@@ -6,22 +6,24 @@ title: 获取分析结果
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 9dc2fa1360c488b802510395a18364fe45c4c50c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3b8c423037acd0af5c82bc350f8e859d00c4069a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457270"
 ---
 # <a name="get-analytics"></a>获取分析结果
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取有关在此资源下发生的视图的[itemAnalytics][] 。
 **ItemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
-对于自定义时间范围或时间间隔, 请使用[getActivitiesByInterval][] API。
+对于自定义时间范围或时间间隔，请使用[getActivitiesByInterval][] API。
 
->**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -51,21 +53,21 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

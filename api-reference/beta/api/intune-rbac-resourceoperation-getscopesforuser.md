@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87215d423d796e8c02789f02f51633b454fb16f7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ad3136187fa773348fa3e6da3753934a2bc1730f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940534"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459791"
 ---
 # <a name="getscopesforuser-function"></a>getScopesForUser 函数
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39940534"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
+|应用程序|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

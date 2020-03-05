@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 782db18c559915ab849a1b8d260760eb3a6386a4
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: e22dc814c50b63ae788789e21897b17fd92d4c7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939849"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458439"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "39939849"
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
@@ -45,7 +47,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

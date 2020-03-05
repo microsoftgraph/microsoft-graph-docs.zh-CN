@@ -5,15 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 6aa436a7c2283cad0eba7b1840e120a38ccf2632
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 1828f72bfcedb701597ce4b0d55e274a25fcf834
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456682"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+命名空间： microsoft. graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中，并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  
 
@@ -27,7 +28,7 @@ ms.locfileid: "39844195"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Notifications.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | Notifications.ReadWrite.CreatedByApp    |
-|Application | 不支持。|
+|应用程序 | 不支持。|
 
 
 
@@ -41,7 +42,7 @@ POST /me/notifications/
 ## <a name="request-headers"></a>请求标头
 |名称 | 说明|
 |:----|:-----------|
-|Authorization | 授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必需。 |
+|Authorization | 授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必填。 |
 |X-UNS-ID | Microsoft Graph 通知服务在创建订阅后返回的 UserNotificationSubscriptionId，并用于面向特定用户。 必需。 |
 |Content-type | application/json. Required.|
 

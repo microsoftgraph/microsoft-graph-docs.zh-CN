@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3373d221e72db189aa35b94105be5ea926f58962
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e954b1e9c8548c57d19c0827b1b7f465b801eeca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937992"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457214"
 ---
 # <a name="get-languageproficiency"></a>获取 languageProficiency
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "37937992"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +42,7 @@ GET /me/profile/languages/{id}
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|名称            |值    |说明                                                                                                                                                                 |
+|Name            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby*参数更改响应的顺序。|
@@ -67,14 +69,30 @@ GET /me/profile/languages/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_languageproficiency"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/languages/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-languageproficiency-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-languageproficiency-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-languageproficiency-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

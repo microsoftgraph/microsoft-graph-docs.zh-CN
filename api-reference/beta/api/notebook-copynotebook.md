@@ -1,24 +1,26 @@
 ---
-title: '笔记本: copyNotebook'
-description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。 如果文件夹不存在, 则创建该文件夹。
+title: 笔记本： copyNotebook
+description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。 如果文件夹不存在，则创建该文件夹。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 85c056c254d6000a6936700cb1b4a0b1a1dcbb12
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1e41a4893661a7995f57b81ec953ae0c42518ee5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414794"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456756"
 ---
-# <a name="notebook-copynotebook"></a>笔记本: copyNotebook
+# <a name="notebook-copynotebook"></a>笔记本： copyNotebook
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将笔记本复制到目标文档库中的 "笔记本" 文件夹。 如果文件夹不存在, 则创建该文件夹。
+将笔记本复制到目标文档库中的 "笔记本" 文件夹。 如果文件夹不存在，则创建该文件夹。
 
-对于复制操作, 请遵循异步调用模式: 首先调用复制操作, 然后轮询操作终结点以获取结果。
+对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +46,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供一个 JSON 对象, 其中包含您的操作所需的参数。 如果无需, 可以发送空正文。
+在请求正文中，提供一个 JSON 对象，其中包含您的操作所需的参数。 如果无需，可以发送空正文。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -55,14 +57,14 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "notebook_copynotebook"
@@ -77,15 +79,15 @@ Content-length: 108
   "renameAs": "renameAs-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-copynotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-copynotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/notebook-copynotebook-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

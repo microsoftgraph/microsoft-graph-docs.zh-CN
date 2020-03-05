@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5bdcf853850507cbd2a0bfb45a2227a044c4da07
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ec9b2e89dacf80c24c9036ed0d8d932856eac4d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723992"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457051"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +26,9 @@ ms.locfileid: "36723992"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:------------------------------------|
-| 委派（工作或学校帐户）     | User.readbasic.all、邮件、读取、封写           |
-| 委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写           |
-| 应用程序                            | User.readbasic.all、邮件、读取、封写           |
+| 委派（工作或学校帐户）     | Mail.ReadBasic、Mail.Read、Mail.ReadWrite           |
+| 委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite           |
+| 应用程序                            | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,18 +55,18 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[mailFolder](../resources/mailfolder.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-mail-folders"></a>示例 1: 列出邮件文件夹
+### <a name="example-1-list-mail-folders"></a>示例1：列出邮件文件夹
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_childfolders"
@@ -73,15 +75,15 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -140,14 +142,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>示例 2: 列出邮件搜索文件夹
+### <a name="example-2-list-mail-search-folders"></a>示例2：列出邮件搜索文件夹
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
@@ -156,15 +158,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-of-searchfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-of-searchfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-of-searchfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

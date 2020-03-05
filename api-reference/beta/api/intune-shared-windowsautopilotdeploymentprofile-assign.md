@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76ce4b52ca8f608d63c1c7f06c90ded5966e2502
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ac96be5ea0f3e3afd9a43f06fe8cd08d5a883beb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939407"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457984"
 ---
 # <a name="assign-action"></a>分配操作
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "39939407"
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All|
 
@@ -47,7 +49,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

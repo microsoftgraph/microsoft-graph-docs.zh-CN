@@ -5,20 +5,22 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1301a975dcf858ff1d6f65beb1665d3ca5933de6
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 0a088e12c41d349806ad142013dd01c40c00f080
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219683"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456395"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：批准
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 批准[openshiftchangerequest](../resources/openshiftchangerequest.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

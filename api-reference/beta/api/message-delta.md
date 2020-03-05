@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60f3808d779cd42ca4a4bb4b5bf7b15a72d568e9
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5b8a443087f4842c76c171beb77e415c8b4d05f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456931"
 ---
 # <a name="message-delta"></a>message: delta
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +27,9 @@ ms.locfileid: "36792630"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
-|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
-|应用程序 | User.readbasic.all、邮件、读取、封写 |
+|委派（工作或学校帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +60,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required. |
+| Content-Type  | 字符串  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
@@ -72,7 +74,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 若要跟踪文件夹中的邮件更改，要执行一次或多次 **delta** 函数调用来获取上一次增量查询后的增量更改集。若要获取演示一组增量查询调用的示例，请参阅[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。
  
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_delta"
@@ -82,11 +84,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6b886b9a8b2b4ef87ee29b6fb728afb34f55018
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9524480c41d3e915e4767ce958052b1ebb45bd7c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941447"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42461569"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>更新 windows10EnrollmentCompletionPageConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39941447"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,16 +60,16 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
-|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
-|customErrorMessage|字符串|设置自定义错误消息以在安装失败时显示|
+|showInstallationProgress|布尔|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|布尔|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
+|customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
-|trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户后期注册的安装进度|
+|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
+|trackInstallProgressForAutopilotOnly|布尔|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|布尔|仅显示第一个用户后期注册的安装进度|
 
 
 

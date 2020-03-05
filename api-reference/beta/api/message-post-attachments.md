@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d25d3a39d6a59d8dd00afccd47cc484480e1ceae
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 7fb569124683ac20a442c75cdb002be6ae2615c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268393"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456924"
 ---
-# <a name="add-attachment"></a>Add attachment
+# <a name="add-attachment"></a>添加附件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

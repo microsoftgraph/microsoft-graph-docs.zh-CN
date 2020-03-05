@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7bdf72ee1499f28a220461093fc26ae64e070878
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a0d65971de615c788073938819cdfd0d0fb352d8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938441"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457230"
 ---
 # <a name="update-itememail"></a>更新 itememail
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,10 +49,10 @@ PATCH /me/profile/emails/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 描述                                                              |
+| 属性     | 类型        | 说明                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
 |address       |String       | 电子邮件地址本身。                                                | 
-|displayName   |字符串       | 用户与特定电子邮件地址相关联的名称或标签。 |
+|displayName   |String       | 用户与特定电子邮件地址相关联的名称或标签。 |
 |类型          |字符串       | 可取值为：`unknown`、`work`、`personal`、`main`、`other`。     |
 
 ## <a name="response"></a>响应
@@ -62,6 +64,8 @@ PATCH /me/profile/emails/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itememail"
@@ -77,6 +81,20 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-itememail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-itememail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-itememail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

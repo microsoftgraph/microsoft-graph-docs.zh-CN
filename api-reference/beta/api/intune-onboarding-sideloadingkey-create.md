@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c42ee43eeeb68a3a0298c777eea65fa33d41d01d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3517b299f2a6d97bba08f49a88dbefa7c393c78f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941566"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42461835"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39941566"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +58,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
 |说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|字符串|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 
 

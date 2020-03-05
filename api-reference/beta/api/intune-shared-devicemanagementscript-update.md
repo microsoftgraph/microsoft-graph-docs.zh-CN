@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfdfc4523bf7698eb2eee483845e0bc446f8f2df
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f16d40792835086b8c87bf3a3636138deba794d7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939870"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458460"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "39939870"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -45,7 +47,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,10 +65,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
-|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|runAs32Bit|布尔|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 

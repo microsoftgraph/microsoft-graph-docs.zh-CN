@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60f43f9827a323aaf090ec594bbad892940c254c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7c979bb141166544f374dd3fb38b765e46d0bcba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940775"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42460071"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39940775"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,16 +54,16 @@ POST /deviceManagement/userPfxCertificates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|PFX 证书的唯一标识符。|
-|为|字符串|SHA-1 PFX 证书的指纹。|
+|为|String|SHA-1 PFX 证书的指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|字符串|PFX 证书的用户主体名称。|
+|userPrincipalName|String|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|字符串|用于加密此 blob 的加密提供程序。|
-|名|字符串|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
+|providerName|String|用于加密此 blob 的加密提供程序。|
+|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|字符串|加密的 PFX 密码。|
+|encryptedPfxPassword|String|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 

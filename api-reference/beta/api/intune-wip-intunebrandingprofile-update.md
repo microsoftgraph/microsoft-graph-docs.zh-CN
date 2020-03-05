@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2a582557c84d98b7e1e5e691734e35999fa9a86
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1a2bb95404c3976b8702e752b5d9d17ad3872191
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457424"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,12 +56,12 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
+|isDefaultProfile|布尔|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
 |displayName|字符串|向最终用户显示的公司/组织名称|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
-|showLogo|Boolean|Boolean 类型的值，该值表示是否显示管理员提供的徽标图像|
+|showLogo|布尔|Boolean 类型的值，该值表示是否显示管理员提供的徽标图像|
 |showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值，该值表示是否在徽标图像旁边显示管理员提供的显示名称|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，其徽标后面有主题颜色背景|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，徽标后面有浅背景|
@@ -72,14 +74,14 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
 |privacyUrl|String|指向公司/组织的隐私策略的 URL|
 |customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
-|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
-|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|isRemoveDeviceDisabled|布尔|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|布尔|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
-|showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
-|showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
-|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|showAzureADEnterpriseApps|布尔|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
+|showOfficeWebApps|布尔|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|布尔|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|roleScopeTagIds|String collection|分配给品牌配置文件的作用域标记列表|
+|roleScopeTagIds|String 集合|分配给品牌配置文件的作用域标记列表|
 
 
 

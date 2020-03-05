@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25c3ec7df96fa1d60419f76200fc660bf4f1735b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 319051f54c341d87a962bf353aac12959b8d81e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458901"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -30,7 +32,7 @@ ms.locfileid: "39940185"
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| |
+|应用程序| |
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 
@@ -51,7 +53,7 @@ GET /deviceAppManagement
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

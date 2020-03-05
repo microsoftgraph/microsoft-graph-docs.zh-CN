@@ -1,30 +1,32 @@
 ---
-title: '邮件: 取消订阅'
-description: 代表已登录用户提交电子邮件请求, 以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
+title: 邮件：取消订阅
+description: 代表已登录用户提交电子邮件请求，以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f1ca7cf2e3e51a65044935b64001109df1863d9d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e3f3378f813bce61f5ecef5b6003fb10fc680d59
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414957"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456865"
 ---
-# <a name="message-unsubscribe"></a>邮件: 取消订阅
+# <a name="message-unsubscribe"></a>邮件：取消订阅
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表已登录用户提交电子邮件请求, 以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
+代表已登录用户提交电子邮件请求，以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
 
-邮件发件人可以通过包含一个用于选择收件人的选项, 以用户友好的方式使用邮寄列表。可以通过在[RFC-2369](https://www.faqs.org/rfcs/rfc2369.html)之后`List-Unsubscribe`的每封邮件中指定标头来执行此操作。
+邮件发件人可以通过包含一个用于选择收件人的选项，以用户友好的方式使用邮寄列表。可以通过在[RFC-2369](https://www.faqs.org/rfcs/rfc2369.html)之后`List-Unsubscribe`的每封邮件中指定标头来执行此操作。
 
-**注释**特别是, 要使**取消订阅**操作正常运行, 发件人`mailto:`必须指定而不是基于 URL 的取消订阅信息。
+**注释**特别是，要使**取消订阅**操作正常运行，发件人`mailto:`必须指定而不是基于 URL 的取消订阅信息。
 
-设置该标头也会将[消息](../resources/message.md)实例的**unsubscribeEnabled**属性设置为`true`, 并将**unsubscribeData**属性设置为标头数据。
+设置该标头也会将[消息](../resources/message.md)实例的**unsubscribeEnabled**属性设置为`true`，并将**unsubscribeData**属性设置为标头数据。
 
-如果邮件的**unsubscribeEnabled**属性为`true`, 则可以使用 "**取消订阅**" 操作从邮件发件人托管的类似的未来邮件中取消订阅用户。
+如果邮件的**unsubscribeEnabled**属性为`true`，则可以使用 "**取消订阅**" 操作从邮件发件人托管的类似的未来邮件中取消订阅用户。
 
 成功的**取消订阅**操作将邮件移动到 "**已删除邮件**" 文件夹。 用户从将来的邮件分发中实际排除的用户由发件人管理。
 
@@ -59,7 +61,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_unsubscribe"
@@ -67,15 +69,15 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-unsubscribe-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-unsubscribe-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-unsubscribe-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

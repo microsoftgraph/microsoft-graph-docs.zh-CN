@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cbec6a78934849b6c7cb7e30bfc8c4d094f6b224
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a6542c54c8b83073f10063d27f77b30bc0abdaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989061"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456717"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61096e905093b76399fc6ca4342c0cfd32585f59
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 5028d035d689c98873277c6215957fbb19a86bf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458558"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 函数
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39939968"
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -42,7 +44,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

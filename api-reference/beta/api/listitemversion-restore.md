@@ -6,14 +6,16 @@ title: 还原 SharePoint 列表项的以前版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 22e00628b10e268ef8eada5be6cb195ca62cc454
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25e244c9dee5adb3b756f2c4bae38b292dc16679
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993016"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457088"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>还原 ListItem 的以前版本
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

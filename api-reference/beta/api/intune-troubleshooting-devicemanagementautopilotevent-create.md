@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1db911f6f1386c4244703c4fb422ecfeb44e0232
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8fc6a38851497e68861a788083c23fd9936e9fe7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939041"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457739"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>创建 deviceManagementAutopilotEvent
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39939041"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/autopilotEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,14 +58,14 @@ POST /deviceManagement/autopilotEvents
 |deviceRegisteredDateTime|DateTimeOffset|设备注册日期。|
 |enrollmentStartDateTime|DateTimeOffset|设备注册开始日期。|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
-|deviceSerialNumber|字符串|设备序列号。|
+|deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|字符串|用于注册设备的用户主体名称。|
-|windowsAutopilotDeploymentProfileDisplayName|字符串|Autopilot 配置文件名称。|
+|userPrincipalName|String|用于注册设备的用户主体名称。|
+|windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如 "已注册"，失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|字符串|注册状态页面配置文件名称|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|部署状态，如成功、失败、InProgress、SuccessWithTimeout。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`。|
-|osVersion|字符串|设备操作系统版本。|
+|osVersion|String|设备操作系统版本。|
 |deploymentDuration|持续时间|包含注册的 Autopilot 部署持续时间。|
 |deploymentTotalDuration|持续时间|从注册到桌面屏幕的总部署持续时间。|
 |devicePreparationDuration|持续时间|在设备注册中花费的时间。|
@@ -73,7 +75,7 @@ POST /deviceManagement/autopilotEvents
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序的计数。|
 |targetedPolicyCount|Int32|目标策略的计数。|
-|enrollmentFailureDetails|字符串|注册失败详细信息。|
+|enrollmentFailureDetails|String|注册失败详细信息。|
 
 
 

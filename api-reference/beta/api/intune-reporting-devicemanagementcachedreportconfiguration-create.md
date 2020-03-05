@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 240ca89d363f60eff21cc1d299b5b96c5523cbbc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 10c326a7862bcd0670ec55976f459736665c6afa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955075"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459300"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>创建 deviceManagementCachedReportConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39955075"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
+|应用程序|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/reports/cachedReportConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,12 +53,12 @@ POST /deviceManagement/reports/cachedReportConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符|
-|reportName|字符串|报告的名称|
-|filter|字符串|在创建报表时应用的筛选器。|
-|select|String collection|从报告中选择的列|
-|By|String collection|报表中的列的排序|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|id|String|此实体的唯一标识符|
+|reportName|String|报告的名称|
+|filter|String|在创建报表时应用的筛选器。|
+|select|String 集合|从报告中选择的列|
+|By|String 集合|报表中的列的排序|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存的报告的时间|
 |expirationDateTime|DateTimeOffset|缓存的报表到期的时间|
 

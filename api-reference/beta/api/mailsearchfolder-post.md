@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e34d79450468c19bc5e4f008547430e56dc6de96
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e20ea13a21c497efcf278d762cca184b0dd7adf5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415181"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457039"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,13 +56,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | 布尔 | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[mailSearchFolder](../resources/mailsearchfolder.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[mailSearchFolder](../resources/mailsearchfolder.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 以下是请求的示例-它将创建包含主题中的字符串 "每周摘要" 的邮件的搜索文件夹。 搜索文件夹在应用指定的筛选器查询的同一文件夹下。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
@@ -88,15 +90,15 @@ Content-length: 159
   "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

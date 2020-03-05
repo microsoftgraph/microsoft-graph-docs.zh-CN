@@ -5,21 +5,23 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1d59903635a6aaaa4460d90de71c3aa6a9bc86c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f30b10cefc0ca4ff8f4f59c2b25cb5e91637e453
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415075"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456906"
 ---
 # <a name="message-forward"></a>邮件：转发
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 转发邮件、添加注释或修改任何可更新的属性  
 一个**正向**调用中的全部。 邮件保存在已发送邮件文件夹中。
 
-或者, 您可以先[创建一个草稿转发邮件](../api/message-createforward.md), 以包含注释或更新任何邮件属性, 然后[发送](../api/message-send.md)草稿邮件。
+或者，您可以先[创建一个草稿转发邮件](../api/message-createforward.md)，以包含注释或更新任何邮件属性，然后[发送](../api/message-send.md)草稿邮件。
 
 **注意**
 
@@ -63,11 +65,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面的示例将**isDeliveryReceiptRequested**属性设置为 true, 添加注释并转发邮件。
+下面的示例将**isDeliveryReceiptRequested**属性设置为 true，添加注释并转发邮件。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_forward"
@@ -91,15 +93,15 @@ Content-Type: application/json
   "comment": "Dana, just want to make sure you get this." 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

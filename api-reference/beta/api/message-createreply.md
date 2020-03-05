@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 80a8a81f226ab1990d784e4c82e665c54affee32
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6a5d9923b087310a3dd89792516593c51166da71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415125"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456950"
 ---
 # <a name="message-createreply"></a>message: createReply
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "36415125"
 **注意**
 
 - 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了**replyTo** (根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))), 则应将答复发送给**replyTo**中的收件人, 而不是**发件**人中的收件人。 
+- 如果在原始邮件中指定了**replyTo** （根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给**replyTo**中的收件人，而不是**发件**人中的收件人。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -59,11 +61,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
-下面的示例创建一个 "答复草稿", 在请求正文中添加注释和收件人。
+下面的示例创建一个 "答复草稿"，在请求正文中添加注释和收件人。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_createreply"
@@ -92,15 +94,15 @@ Content-Type: application/json
   "comment": "Samantha, Randi, would you name the group if the project is approved, please?" 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createreply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createreply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

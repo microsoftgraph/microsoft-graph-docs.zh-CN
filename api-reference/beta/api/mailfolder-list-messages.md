@@ -1,31 +1,33 @@
 ---
 title: 列出邮件
-description: 列出登录用户的邮箱中的所有邮件, 或邮箱或驱动器中指定文件夹中的邮件。
+description: 列出登录用户的邮箱中的所有邮件，或邮箱或驱动器中指定文件夹中的邮件。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 09e01c0c0c44f994b185fc3ae9aab9ea80083c23
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 994e5a8a6f1584847a2a5146a72d02c48fd5b661
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723985"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457028"
 ---
 # <a name="list-messages"></a>列出邮件
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出指定用户的邮箱中的所有邮件, 或邮箱中指定文件夹中的邮件。
+列出指定用户的邮箱中的所有邮件，或邮箱中指定文件夹中的邮件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
-|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
-|应用程序 | User.readbasic.all、邮件、读取、封写 |
+|委派（工作或学校帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Mail.ReadBasic、Mail.Read、Mail.ReadWrite    |
+|应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_messages"
@@ -60,15 +62,15 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

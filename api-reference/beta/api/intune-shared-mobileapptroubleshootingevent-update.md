@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5666fe1799161aeb864e5d4e65044c22cb2f493f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c0c592bd2ac23543333601c030a3aa28dcc3d848
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939632"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458222"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -27,11 +29,11 @@ ms.locfileid: "39939632"
 |:---|:---|
 |委派（工作或学校帐户）||
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +48,7 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,10 +61,10 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |id|字符串|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
-|applicationId|字符串|Intune 应用程序标识符。|
-|correlationId|字符串|用于跟踪服务中的故障的 ID。 |
+|applicationId|String|Intune 应用程序标识符。|
+|correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|名|字符串|与疑难解答事件对应的事件名称。 可选。|
+|名|String|与疑难解答事件对应的事件名称。 可选。|
 |日志|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)集合|Intune 移动应用程序故障排除历史记录项。|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |

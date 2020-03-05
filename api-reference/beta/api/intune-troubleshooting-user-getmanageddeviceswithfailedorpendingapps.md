@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47b0f41dfd0430a4b6674a126c7d8cedc58ef400
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: d0edc4507607ebad9614209289fe9705a3f2e290
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160897"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457599"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>getManagedDevicesWithFailedOrPendingApps 函数
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

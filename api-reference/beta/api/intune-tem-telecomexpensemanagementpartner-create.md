@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4641c959095c677121310cfdb66561fc21af5d95
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 77e4adf3c4d95b8faffed39cf04c93f3bfd525dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457809"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39939118"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +53,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|TEM 合作伙伴的唯一标识符。|
+|id|String|TEM 合作伙伴的唯一标识符。|
 |displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|

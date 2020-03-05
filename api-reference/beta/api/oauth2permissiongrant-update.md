@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: af8780e9e943e6585ff4f46baab289d9f6f99dd6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 056b1491de7044efac3a51612590766949fd7a96
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414663"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456612"
 ---
 # <a name="update-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|scope|String| 指定在 OAuth 2.0 访问令牌中, 资源应用程序应预期的范围声明的值。 |
+|scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。 |
 
 ## <a name="response"></a>响应
 
@@ -56,7 +58,7 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_oAuth2Permissiongrant"
@@ -70,15 +72,15 @@ Content-length: 30
   "scope": "scope-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

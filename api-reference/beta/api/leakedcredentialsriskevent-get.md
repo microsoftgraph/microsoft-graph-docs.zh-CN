@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 7b3abf4a0cee4f2d81a36fba9b27690e4411e6cf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 17344fbe24c5e75b1d8347e788cb91f1d503f012
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867825"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457179"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>获取 leakedCredentialsRiskEvent
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

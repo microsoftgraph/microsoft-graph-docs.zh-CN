@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f91327c1211b08128339c834f90a4dd6783341ea
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c9da27e5f3d5b5cf0c52d4d9de44fbaa5b1b8754
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940206"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458950"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +30,7 @@ ms.locfileid: "39940206"
 |委派（工作或学校帐户）||
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,7 +45,7 @@ POST /deviceAppManagement/androidManagedAppProtections/hasPayloadLinks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

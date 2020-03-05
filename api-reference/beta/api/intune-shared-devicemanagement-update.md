@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01d3c247d968baa2c309c81e0138c287e6f18d74
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 22fbd9585297f8b47b9a4e99255eb1a7229c6230
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458544"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -50,7 +52,7 @@ ms.locfileid: "39939954"
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
-| Application ||
+| 应用程序 ||
 | &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -85,7 +87,7 @@ PATCH /deviceManagement
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -96,10 +98,10 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一标识符。|
+|id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|

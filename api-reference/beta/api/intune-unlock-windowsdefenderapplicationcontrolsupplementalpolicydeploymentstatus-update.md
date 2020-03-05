@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a16cd0541aea74ffa683a6a8cdf5f7779a993778
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ab3520c70898d893eaa3c836f8663fd0ed5ce813
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938696"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457480"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39938696"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,14 +55,14 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |:---|:---|:---|
 |id|String|实体的键。|
 |deviceName|String|设备名称。|
-|deviceId|字符串|设备 ID。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间。|
-|osVersion|字符串|Windows OS 版本。|
-|osDescription|字符串|Windows OS 版本说明。|
+|osVersion|String|Windows OS 版本。|
+|osDescription|String|Windows OS 版本说明。|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|策略的部署状态。 可取值为：`unknown`、`success`、`tokenError`、`notAuthorizedByToken`、`policyNotFound`。|
 |userName|String|此设备的用户的名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|policyVersion|字符串|WindowsDefenderApplicationControl 补充策略的人工可读版本。|
+|userPrincipalName|String|用户主体名称。|
+|policyVersion|String|WindowsDefenderApplicationControl 补充策略的人工可读版本。|
 
 
 

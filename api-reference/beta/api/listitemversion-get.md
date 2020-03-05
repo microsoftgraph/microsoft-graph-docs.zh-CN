@@ -6,14 +6,16 @@ title: 获取列表项的以前版本 - SharePoint API
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 752287ac5e004688e1dd1747f3689c5f460dc946
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85dda18768463398244fc648b77d92e20ca82786
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457102"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>获取 ListItemVersion 资源（预览）
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

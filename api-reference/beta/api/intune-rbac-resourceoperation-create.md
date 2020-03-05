@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 994f1d99f25facb663d4730eaae89c774f8e727e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 92e1026e18c00978da8a1ac115e5d524adde75e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940528"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459784"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39940528"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,11 +54,11 @@ POST /deviceManagement/resourceOperations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|资源操作的键。 只读，且自动生成。|
-|resource|字符串|此操作所属的资源类别。|
+|resource|String|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否针对按角色分配定义的作用域验证权限。|
+|enabledForScopeValidation|布尔|确定是否针对按角色分配定义的作用域验证权限。|
 
 
 

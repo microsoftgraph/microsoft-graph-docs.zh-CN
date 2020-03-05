@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b4d2eac82b47549633b03c39465e4107e4fcd8b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e08645e9e1f68b57eec4bfb0e33bdfaf7ac2d5d5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414497"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456437"
 ---
 # <a name="update-onpremisespublishingprofile"></a>更新 onPremisesPublishingProfile
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36414497"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:--------------------------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户）     | OnPremisesPublishingProfiles |
+| 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -44,7 +46,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -56,7 +58,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>示例 1: 更新 hybridAgentUpdaterConfiguration 中的 updateWindow
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>示例1：更新 hybridAgentUpdaterConfiguration 中的 updateWindow
 
 下面的示例更新**hybridAgentUpdaterConfiguration**中的**updateWindow** 。
 
@@ -64,7 +66,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -82,15 +84,15 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +111,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>示例 2: 更新 hybridAgentUpdaterConfiguration 中的 deferUpdate 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>示例2：更新 hybridAgentUpdaterConfiguration 中的 deferUpdate 
 
 下面的示例更新**hybridAgentUpdaterConfiguration**中的**deferUpdate** 。
 
@@ -142,7 +144,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>示例 3: 更新 hybridAgentUpdaterConfiguration 中的 allowUpdateConfigurationOverride
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>示例3：更新 hybridAgentUpdaterConfiguration 中的 allowUpdateConfigurationOverride
 
 下面的示例更新**hybridAgentUpdaterConfiguration**中的**allowUpdateConfigurationOverride** 。
 

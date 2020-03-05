@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f7b4f0f187c767d2c70f4b261b202cd99e623f2c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5c087c9ecb423d305681567b68bfb8726dbe3e2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456878"
 ---
 # <a name="update-message"></a>更新邮件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |flag|[followupFlag](../resources/followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|收件人|邮箱所有者和邮件发件人。 必须对应于使用的实际邮箱。 |
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
+|inferenceClassification | 字符串 | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 仅当 isDraft = true 时可以更新。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
@@ -72,7 +74,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_message"
@@ -91,11 +93,11 @@ Content-length: 248
   "inferenceClassification": "other"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

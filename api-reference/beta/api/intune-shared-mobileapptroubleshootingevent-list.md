@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 193acfac3a4b4376cc39909e82fff799c7843dc2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 04197f9a6364cbd25816d4f860c2d57d94360fee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458229"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>列出 mobileAppTroubleshootingEvents
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -27,11 +29,11 @@ ms.locfileid: "39939646"
 |:---|:---|
 |委派（工作或学校帐户）||
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 |&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +48,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6abcaec953c07e6974d3a421ff26612710d390b2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: e03b6936d17297159115193a287bc96999c83d71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458929"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -28,7 +30,7 @@ ms.locfileid: "39940171"
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | |
+| 应用程序 | |
 | &nbsp;&nbsp; **应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 
@@ -44,7 +46,7 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +56,7 @@ PATCH /deviceAppManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |**入职**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|帐户是否已启用从适用于企业的 Microsoft Store 同步应用程序。|
 |microsoftStoreForBusinessLanguage|String|用于从适用于企业的 Microsoft Store 同步应用程序的区域设置信息。 特定于国家/地区的区域性。 这些区域性的名称遵循 RFC 4646（Windows Vista 和更高版本）。 格式为 <languagecode2>-<country/regioncode2>，其中 <languagecode2> 是从 ISO 639-1 派生的两个小写字母组成的代码，<country/regioncode2> 是从 ISO 3166 派生的两个大写字母组成的代码。 例如，“en-US”（“英语(美国)）是一个特定的区域性。|
