@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ddf46f3a110a0aecfd7a5ee9b17bd4ff6f53ae40
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6fafeac65f297ee0764ee358411869ef51b93424
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333924"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527098"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>applicationGuardEnabledOptions 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 ApplicationGuardEnabledOptions 的可能值
 
@@ -24,9 +26,9 @@ ApplicationGuardEnabledOptions 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|enabledForEdge|1|启用边缘|
-|enabledForOffice|双面|为 Office 启用|
-|enabledForEdgeAndOffice|第三章|为边缘和办公室启用|
+|enabledForEdge|1 |启用边缘|
+|enabledForOffice|2 |为 Office 启用|
+|enabledForEdgeAndOffice|3 |为边缘和办公室启用|
 
 
 

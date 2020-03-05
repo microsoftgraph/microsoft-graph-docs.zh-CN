@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c93dc42fe5ceb694a8b69602c64a52a5138df240
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2000bc0b52c1f4a98e3d3fbab3e9548e6329a7c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331404"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528071"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>groupPolicyPresentationComboBox 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 代表 ADMX comboBox 元素和 ADMX 文本元素。
 
@@ -39,9 +41,9 @@ ms.locfileid: "36331404"
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|组合框中显示的本地化默认字符串。 默认值为空白。|
-|推荐|String collection|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
-|maxLength|Int64|一个无符号整数, 指定参数的最大文本字符数。 默认值为1023。|
+|推荐|String 集合|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
+|必需|布尔|指定是否必须为参数指定值。 默认值为 false。|
+|maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为1023。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

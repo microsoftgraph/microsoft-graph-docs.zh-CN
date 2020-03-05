@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 391e911eb32639b9f814e8ad00aa9948e9f9e0e3
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 6dddb69c9559fbf7472615216c4498e5db65d69a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528587"
 ---
 # <a name="deviceshellscript-resource-type"></a>deviceShellScript 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +33,7 @@ Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管�
 |[分配操作](../api/intune-devices-deviceshellscript-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
@@ -44,7 +46,7 @@ Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管�
 |roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)集合|设备管理脚本的组分配的列表。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)集合|设备管理脚本的组分配的列表。|

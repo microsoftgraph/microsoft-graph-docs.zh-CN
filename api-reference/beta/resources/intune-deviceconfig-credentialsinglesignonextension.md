@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9289416c33eaea89a24ffd01a1fb46026d1e7ef9
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 745a45d259230eb6ab7ec038a552f5c062ff651a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955699"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526946"
 ---
 # <a name="credentialsinglesignonextension-resource-type"></a>credentialSingleSignOnExtension 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,11 +28,11 @@ ms.locfileid: "39955699"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|extensionIdentifier|字符串|获取或设置对指定 Url 执行 SSO 的应用扩展的捆绑包 ID。|
-|teamIdentifier|字符串|获取或设置为指定的 Url 执行 SSO 的应用程序扩展的团队 ID。|
-|域|String collection|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
-|型|字符串|获取或设置此配置文件的区分大小写的领域名称。|
-|配置|[keyTypedValuePair](../resources/intune-shared-keytypedvaluepair.md)集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
+|extensionIdentifier|String|获取或设置对指定 Url 执行 SSO 的应用扩展的捆绑包 ID。|
+|teamIdentifier|String|获取或设置为指定的 Url 执行 SSO 的应用程序扩展的团队 ID。|
+|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
+|型|String|获取或设置此配置文件的区分大小写的领域名称。|
+|配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 无

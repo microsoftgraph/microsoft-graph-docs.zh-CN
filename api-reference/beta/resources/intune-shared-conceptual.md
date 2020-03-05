@@ -4,14 +4,16 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 9a5a6ee1a9111f85d041821e8e5917c0b007698d
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: db7746504a7bd31df99941ffc7bc85065eb5d56a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527480"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

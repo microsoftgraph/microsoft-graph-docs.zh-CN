@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bf4ac6aa9de235b1e4117b47c6a5eafc5c011a5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a4e935781bf0524f5fb5df2a8a9ecd868767bfed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530118"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示用于用户权限设置的本地用户或组的信息。
 
@@ -25,7 +27,7 @@ ms.locfileid: "36332748"
 |:---|:---|:---|
 |name|String|此本地用户或组的名称。|
 |说明|String|管理员对此本地用户或组的说明。|
-|securityIdentifier|String|此本地用户或组的安全标识符 (例如 * S-1-5-32-544)。|
+|securityIdentifier|字符串|此本地用户或组的安全标识符（例如 * S-1-5-32-544）。|
 
 ## <a name="relationships"></a>关系
 无

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ecc0571d3e4a2f5bed6ab5882dacc69e5c4cf96
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7e20a340fa07dd32e948cf8eb00df5622b1481b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955552"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526875"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,8 +26,8 @@ Defender PUA Protection 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|设备默认值，无意向。|
-|启用|1|阻止功能。|
-|auditMode|双面|允许功能，但生成日志。|
+|启用|1 |阻止功能。|
+|auditMode|2 |允许功能，但生成日志。|
 
 
 

@@ -4,14 +4,16 @@ description: 列出与租户组织的移动应用管理（MAM）相关的适用�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: aca9bd987b45a60d99038637e51434e2e6426a78
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ad33549186663bbbc25d55c2cc0b4add4c89ad20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636817"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527979"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

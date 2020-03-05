@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ea4dee71a18a6ddca4519d8b421d2097fc7907b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7455e6a3f3d9887a36dd49e9c66a207da950c785
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367643"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529299"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 每应用 VPN 的提供程序类型。
 
@@ -24,8 +26,8 @@ ms.locfileid: "36367643"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未显式配置隧道通信。|
-|appProxy|1|应用程序层的隧道流量。|
-|packetTunnel|双面|IP 层的隧道流量。|
+|appProxy|1 |应用程序层的隧道流量。|
+|packetTunnel|2 |IP 层的隧道流量。|
 
 
 

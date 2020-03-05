@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f4113bd82c6afa6570ccdb2be77dd65584f01a5
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 00418943b8f10888f4517879907ad0bddfac47cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163554"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527584"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,9 +26,9 @@ ms.locfileid: "42163554"
 |成员|值|说明|
 |:---|:---|:---|
 |取消|0|未分配角色/用法。|
-|smimeEncryption|1|对 S/MIME 加密有效。|
-|smimeSigning|双面|对 S/MIME 签名有效。|
-|vpn|4|在 VPN 中使用时有效。|
+|smimeEncryption|1 |对 S/MIME 加密有效。|
+|smimeSigning|2 |对 S/MIME 签名有效。|
+|vpn|4 |在 VPN 中使用时有效。|
 |wifi|8 |在 WiFi 中使用时有效。|
 
 

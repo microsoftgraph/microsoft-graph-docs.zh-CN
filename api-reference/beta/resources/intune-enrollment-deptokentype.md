@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d50aa4f0cfd2be2908ef2101da7492860fe6923
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0cadc497b9d90885cc02d3eeecc77e63119f2c73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328009"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528314"
 ---
 # <a name="deptokentype-enum-type"></a>depTokenType 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -24,8 +26,8 @@ ms.locfileid: "36328009"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|令牌类型为无|
-|保护|1|令牌类型为 Dep。|
-|appleSchoolManager|双面|令牌类型为 Apple 学校管理器|
+|保护|1 |令牌类型为 Dep。|
+|appleSchoolManager|2 |令牌类型为 Apple 学校管理器|
 
 
 

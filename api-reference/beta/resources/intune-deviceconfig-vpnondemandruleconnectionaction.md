@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4824dd4989e31d931ee55c4749c177536219659a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ed2243b393595adeb39f84137f4096e6d0e2812b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367678"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529308"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>vpnOnDemandRuleConnectionAction 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 VPN 按需规则连接操作。
 
@@ -24,9 +26,9 @@ VPN 按需规则连接操作。
 |成员|值|说明|
 |:---|:---|:---|
 |connect|0|连接.|
-|evaluateConnection|1|评估连接。|
-|忽略|双面|忽略.|
-|disconnect|第三章|卸下.|
+|evaluateConnection|1 |评估连接。|
+|忽略|2 |忽略.|
+|disconnect|3 |卸下.|
 
 
 

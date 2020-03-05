@@ -1,24 +1,26 @@
 ---
 title: managementCondition 资源类型
-description: 管理条件是可以动态触发的事件, 如地域时限、时限和网络时限。
+description: 管理条件是可以动态触发的事件，如地域时限、时限和网络时限。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 582af8906fe9948b87a5526ca53a1c2592a0d083
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2e5cef389cd6349f11f5e5554146d220608a368a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331684"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528183"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-管理条件是可以动态触发的事件, 如地域时限、时限和网络时限。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+管理条件是可以动态触发的事件，如地域时限、时限和网络时限。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

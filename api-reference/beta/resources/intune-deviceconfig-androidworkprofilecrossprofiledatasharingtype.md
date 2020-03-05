@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c22cd85964e4f0866ba2f151c32f8ad1cb255ad
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eb5566d6a326f802f3259e1515b7a64223dce771
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334240"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527235"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 工作配置文件跨配置文件数据共享类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值, 无意向。|
-|preventAny|1|阻止任何共享。|
-|allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
-|noRestrictions|第三章|共享没有限制。|
+|deviceDefault|0|设备默认值，无意向。|
+|preventAny|1 |阻止任何共享。|
+|allowPersonalToWork|2 |允许从个人配置文件到工作配置文件的数据共享请求。|
+|noRestrictions|3 |共享没有限制。|
 
 
 

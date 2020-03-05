@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e616881d8d0a4035d0950d611b869cef36eb356e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce55c18c31cffeb0d63e23ef4e97412d4bbef66c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331313"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528060"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 ADMX multiTextBox 元素和 ADMX multiText 元素。
 
@@ -38,9 +40,9 @@ ms.locfileid: "36331313"
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
-|maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
-|maxStrings|Int64|一个无符号整数, 指定最大字符串数。 默认值为 0 。|
+|必需|布尔|要求在文本框中输入值。 默认值为 false。|
+|maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为1023。|
+|maxStrings|Int64|一个无符号整数，指定最大字符串数。 默认值为 0 。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

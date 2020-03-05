@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d828b57e6ae76e3a0babcc2b27a009e60f7a6407
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 4b044565f0ec87570bbf9584b37217c0f4881839
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636071"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529651"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,17 +23,17 @@ ms.locfileid: "41636071"
 给定设备的托管设备移动应用配置设置状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|setting|字符串|报告的设置|
-|settingName|字符串|报告的本地化/用户友好设置名称|
-|instanceDisplayName|字符串|报告的设置实例的名称。|
+|setting|String|报告的设置|
+|settingName|String|报告的本地化/用户友好设置名称|
+|instanceDisplayName|String|报告的设置实例的名称。|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
-|errorDescription|字符串|错误说明|
+|errorDescription|String|错误说明|
 |userId|String|UserId|
-|userName|字符串|UserName|
-|userEmail|字符串|UserEmail|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
 |userPrincipalName|字符串|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|

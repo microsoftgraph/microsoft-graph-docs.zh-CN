@@ -4,14 +4,16 @@ description: 列出用于为租户组织进行板载（配置和初始化）设�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: b07c93901feb565b9f6816b5d8d5ae4580825b21
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f32518db3843cdaf20c2af163c1fd01b40b6b58a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088040"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527780"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
+
+命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

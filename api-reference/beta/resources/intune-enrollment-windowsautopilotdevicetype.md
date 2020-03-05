@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 66c7a129e4db54b14b21ffc1c9b29c706e39cb69
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: c4ba7144144bd59ab1eb0256951574581c7ec97e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528250"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>windowsAutopilotDeviceType 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "41636607"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |windowsPc|0|Windows 电脑|
 |surfaceHub2|1 |Surface Hub 2|

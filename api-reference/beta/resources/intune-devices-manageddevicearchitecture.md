@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c421420bd287fc49d4806d02db833ad76dc4049c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: efbb507dc4efd9e94ca894ff53e48be0644fdf91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39924554"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528539"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>managedDeviceArchitecture 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,9 +26,9 @@ ms.locfileid: "39924554"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知体系结构|
-|系列|1|系列|
-|x64|双面|X64|
-|整理|第三章|整理|
+|系列|1 |系列|
+|x64|2 |X64|
+|整理|3 |整理|
 |arM64|4 |ARM64|
 
 

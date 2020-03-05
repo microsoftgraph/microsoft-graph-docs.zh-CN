@@ -1,24 +1,26 @@
 ---
 title: circularGeofenceManagementCondition 资源类型
-description: 包含用于定义圆形地域防护管理条件 (要监视的感兴趣的区域) 的信息。
+description: 包含用于定义圆形地域防护管理条件（要监视的感兴趣的区域）的信息。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1287cef3aa01957eb63119c61a171dbd97f10494
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 18c1feae929fcb943b91dfd7663ee7e034d3f7d8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326686"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528195"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-包含用于定义圆形地域防护管理条件 (要监视的感兴趣的区域) 的信息。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+包含用于定义圆形地域防护管理条件（要监视的感兴趣的区域）的信息。
 
 
 继承自[locationManagementCondition](../resources/intune-fencing-locationmanagementcondition.md)
@@ -43,8 +45,8 @@ ms.locfileid: "36326686"
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|latitude|双精度|以度为单位的纬度, 介于-90 和 + 90 之间 (含)。|
-|longitude|Double|以度为单位的经度, 介于-180 和 + 180 之间 (含)。|
+|latitude|双精度|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
+|longitude|Double|以度为单位的经度，介于-180 和 + 180 之间（含）。|
 |radiusInMeters|单精度|以米为单位的半径。|
 
 ## <a name="relationships"></a>关系

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b36a644ab9aa09e8de65f1d8a0d5ee95b6385bf
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d6d513f16debcec4c636101591e966eef58cd260
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955671"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528136"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,31 +28,31 @@ MDM/Intune 映射的组策略设置。
 |[列出 groupPolicySettingMappings](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)集合|列出[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[获取 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-get.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|读取[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[创建 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-create.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|创建新的[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象。|
-|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|None|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
+|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|无|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
 |[更新 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-update.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|更新[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
-|parentId|字符串|组策略设置的父 Id。|
-|childIdList|String collection|组策略设置的子 Id 列表。|
+|id|String|尚未记录|
+|parentId|String|组策略设置的父 Id。|
+|childIdList|String 集合|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
-|settingValue|字符串|此组策略设置的值。|
-|settingValueType|字符串|此组策略设置的值类型。|
-|settingDisplayName|字符串|此组策略设置的显示名称。|
-|settingDisplayValue|字符串|此组策略设置的显示值。|
-|settingDisplayValueType|字符串|此组策略设置的显示值类型。|
-|settingValueDisplayUnits|字符串|此组策略设置值的显示单位|
-|settingCategory|字符串|组策略设置所属的类别。|
-|mdmCspName|字符串|将此组策略设置映射到的 CSP 名称。|
-|mdmSettingUri|字符串|将此组策略设置映射到的 MDM CSP URI。|
+|settingValue|String|此组策略设置的值。|
+|settingValueType|String|此组策略设置的值类型。|
+|settingDisplayName|String|此组策略设置的显示名称。|
+|settingDisplayValue|String|此组策略设置的显示值。|
+|settingDisplayValueType|String|此组策略设置的显示值类型。|
+|settingValueDisplayUnits|String|此组策略设置值的显示单位|
+|settingCategory|String|组策略设置所属的类别。|
+|mdmCspName|String|将此组策略设置映射到的 CSP 名称。|
+|mdmSettingUri|String|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
-|isMdmSupported|Boolean|指示此设置是否由 Intune 支持|
+|isMdmSupported|布尔|指示此设置是否由 Intune 支持|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
 
 ## <a name="relationships"></a>关系
 无

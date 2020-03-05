@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b3679139f004298ac28dbcbe03eb9e626b4d7f7
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: e801b8d2e981f3695b3afe8710c21e6050b18632
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636642"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527116"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "41636642"
 Apple VPN 连接类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
 |pulseSecure|1 |脉冲安全。|
@@ -33,7 +35,7 @@ Apple VPN 连接类型。
 |citrix|7 |Citrix.|
 |ciscoAnyConnectV2|8 |Cisco AnyConnect V2。|
 |paloAltoGlobalProtect|9 |Palo Alto 网络 GlobalProtect。|
-|zscalerPrivateAccess|10  |Zscaler 私有访问。|
+|zscalerPrivateAccess|10 |Zscaler 私有访问。|
 |f5Access2018|11 |F5 访问2018。|
 |citrixSso|12 |Citrix Sso。|
 |paloAltoGlobalProtectV2|13 |Palo Alto 网络 GlobalProtect V2。|

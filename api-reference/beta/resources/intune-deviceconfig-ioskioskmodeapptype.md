@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bc92978d9d5f54395d8580598008a4bb3140666d
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 03e5d1c20f64a816160e2d9fa4292388d49bb50b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636684"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529888"
 ---
 # <a name="ioskioskmodeapptype-enum-type"></a>iosKioskModeAppType 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "41636684"
 IOS 展台模式的应用程序源选项。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，无意向。|
 |appStoreApp|1 |要运行的应用程序来自应用商店。|

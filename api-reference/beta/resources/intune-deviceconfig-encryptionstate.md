@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fef0adc73fb1d1925630a4620bb32d5c584e4e7e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9b85e4aa9f7e307f4fb63ec6c8c8d2ecaf82845f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530008"
 ---
 # <a name="encryptionstate-enum-type"></a>encryptionState 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 加密状态
 
@@ -24,7 +26,7 @@ ms.locfileid: "36325601"
 |成员|值|说明|
 |:---|:---|:---|
 |notEncrypted|0|未加密|
-|加密|1|加密|
+|加密|1 |加密|
 
 
 

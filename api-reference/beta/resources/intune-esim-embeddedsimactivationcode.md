@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42183531a1e6e3b110f25d948a830c5ed3af1f7c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf6d853e6b78baba1a5a03e4a5065dbb574dea6a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326728"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528221"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 移动运营商提供的嵌入的 SIM 激活代码。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|String|由移动运营商提供的此嵌入的 SIM 激活代码的集成电路卡标识符 (ICCID)。
-输入必须与以下正则表达式匹配: ' ^\[0-9\]{19}\[0-9\]？ $ '。|
-|matchingIdentifier|String|GSMA Association SGP RSP 技术规范部分中指定的 MatchingIdentifier (MatchingID) 4.1。
-输入必须与以下正则表达式匹配: ' ^\[Z0-9\-\]* $ '。|
+|integratedCircuitCardIdentifier|String|由移动运营商提供的此嵌入的 SIM 激活代码的集成电路卡标识符（ICCID）。
+输入必须与以下正则表达式匹配： ' ^\[0-9\]{19}\[0-9\]？ $ '。|
+|matchingIdentifier|String|GSMA Association SGP RSP 技术规范部分中指定的 MatchingIdentifier （MatchingID）4.1。
+输入必须与以下正则表达式匹配： ' ^\[Z0-9\-\]* $ '。|
 |smdpPlusServerAddress|String|在 GSM 关联 SPG .22 RSP 技术规范中指定的 SM + 服务器的完全限定域名。
-输入必须与以下正则表达式匹配: "^ (\[Z0-9\]+ (\[-a-Z0-9\]+) *\.) +\[-za-Z\]{2,}$"。|
+输入必须与以下正则表达式匹配： "^ （\[Z0-9\]+ （\[-a-Z0-9\]+） *\.） +\[-za-Z\]{2,}$"。|
 
 ## <a name="relationships"></a>关系
 无
