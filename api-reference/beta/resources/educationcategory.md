@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4732bab700ab23869e0463437288b1aa8897aa0e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14a399e09c74e439b64a273695b65e5a96cd25f8
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972785"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534389"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,6 +25,7 @@ ms.locfileid: "35972785"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
+|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的**educationCategory**。|
 |[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的**educationCategory**。|
 |[删除类别](../api/educationcategory-delete.md) | 无 | 删除**educationCategory**。|
 

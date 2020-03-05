@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2ece0d3fa62976e106ab4ea183443562ea7dd724
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7520db351be8d9b78506354e14988bd479fda92
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427611"
+ms.locfileid: "42534413"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment： getResourcesFolderUrl
 
@@ -33,7 +33,7 @@ ms.locfileid: "42427611"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
+GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -57,7 +57,7 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
   "name": "educationassignment_publish"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
+GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]

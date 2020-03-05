@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: c5c565e81ed9218d3d04f15585236b87a362d5e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036359"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447638"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
+
+命名空间：microsoft.graph
 
 附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的联系人、事件或邮件。  
 

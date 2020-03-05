@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f88f940541bee75a6898ac638fe80e44fc368320
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c7b932bf7f0747ff6b5050f7e19accf871c1b1a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036293"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447512"
 ---
-# <a name="mailbox-usage-reports"></a>邮箱使用情况报告
+# <a name="mailbox-usage-reports"></a>邮箱使用情况报表
+
+命名空间：microsoft.graph
 
 邮箱使用情况报表可用于获取使用邮箱的用户及其活动级别（主要是以发送和接收的电子邮件数为依据）。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
 

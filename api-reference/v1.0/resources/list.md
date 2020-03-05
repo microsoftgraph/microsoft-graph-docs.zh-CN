@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108481"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447582"
 ---
 # <a name="list-resource"></a>List 资源
+
+命名空间：microsoft.graph
 
 **list** 资源表示 [site][] 中的列表。
 此资源包含列表的顶级属性，其中包括模板和字段定义。

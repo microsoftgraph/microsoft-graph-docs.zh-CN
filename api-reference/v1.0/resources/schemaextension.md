@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0bf49bc0de24cda47e309fdbfb1c4e75b42283
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38bb2d34347f253d114d549b32d6db98c12aa831
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034613"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446952"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
+
+命名空间：microsoft.graph
 
 可以通过架构扩展定义架构来扩展强类型的自定义数据并将其添加到资源类型。自定义数据在扩展资源上作为复杂类型显示。 
 

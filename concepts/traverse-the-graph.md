@@ -3,12 +3,12 @@ title: 通过导航 Microsoft Graph 访问数据和方法
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cf71da309cd123895dfb0666c8fe3e60e3f65e23
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: c00179e5ea39f5be40308e400774bb1316ff8c3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969508"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448534"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>通过导航 Microsoft Graph 访问数据和方法
 
@@ -29,7 +29,9 @@ ms.locfileid: "37969508"
     https://graph.microsoft.com/beta/$metadata
 ```
 
-元数据允许你查看并了解 Microsoft Graph 数据模型，包括实体类型、复杂类型、组成在请求和响应数据包中表示的资源的枚举。
+元数据允许你查看并了解 Microsoft Graph 数据模型，包括实体类型、复杂类型、组成在请求和响应数据包中表示的资源的枚举。 
+
+元数据还支持在相应的 OData 命名空间中定义类型、方法和枚举。 大多数 Microsoft Graph API 在 OData 命名空间 `microsoft.graph` 中定义。
 
 可以使用元数据了解 Microsoft Graph 中实体之间的关系，并建立可在这些实体间导航的 URL。
 

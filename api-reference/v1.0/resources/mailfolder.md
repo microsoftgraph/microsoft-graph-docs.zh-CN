@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e829929df46208ee321f56ae2d9f0144c320d4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0de32560e154eaa732e596040525025ad0676926
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448016"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
+
+命名空间：microsoft.graph
 
 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 

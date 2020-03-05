@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e8dff7029614f509eaa52d0af27601772c2f9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adde0eecbfe468b5eac45bf0c0d496d430947284
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036083"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447386"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Microsoft Teams 用户活动报告
+
+命名空间：microsoft.graph
 
 使用 Microsoft Teams 活动报告了解组织中的 Microsoft Teams 用户活动。
 

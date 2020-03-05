@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6a7acaa5ef4e6b6c60e2cfdff254601773258da6
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 328ac0423ae21b3d8eee096422b4b46b460d48fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652007"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447400"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
+
+命名空间：microsoft.graph
 
 mailFolder 中的邮件。
 

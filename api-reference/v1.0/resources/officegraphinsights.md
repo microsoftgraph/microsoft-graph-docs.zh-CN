@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 1ef2aa97cf9ba5d834a44fc5f338ff933330f491
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8ac5019909a2f5ebe808be695ed7d516738c21e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844202"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447337"
 ---
 # <a name="officegraphinsights-resource-type"></a>officeGraphInsights 资源类型
+
+命名空间：microsoft.graph
 
 Insights 是使用高级分析和机器学习技术计算的关系。 例如，你可以标识与用户有关的 OneDrive 文档趋势。
 

@@ -4,12 +4,12 @@ description: 可选择两种方法中的一种来将文件附加到邮件，具�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 5f6f54adf38c0f2827b587e6646df4cb3549a204
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229750"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448569"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>将大文件作为附件附加到 Outlook 邮件（预览）
 
@@ -21,6 +21,9 @@ ms.locfileid: "42229750"
 若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加。
 
 本文使用一个示例来阐释第二种方法。 该示例创建并使用上传会话，将大文件附件（大小超过 3MB）添加到特定邮件。 成功上传整个文件时，它会获取一个 URL，其中包含文件附件的 ID，可用于执行其他操作，如获取文件附件元数据。
+
+> [!IMPORTANT] 
+> 如果要将大文件附加到共享或委派邮箱中的邮件，请注意一个[已知问题](known-issues.md#attaching-large-files-to-messages)。
 
 ## <a name="step-1-create-an-upload-session"></a>第 1 步：创建上传会话
 

@@ -6,14 +6,16 @@ description: 表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e9a9010e8700d7e6ebd6a2e3d030fba7cab79f83
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 96c61daea047f969f88352429a46fc7efb8b776d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703761"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447561"
 ---
 # <a name="listitem-resource"></a>listItem 资源
+
+命名空间：microsoft.graph
 
 表示 SharePoint **[列表][]** 中的项目。
 该列表中的列值可通过 `fieldValueSet` 字典获得。

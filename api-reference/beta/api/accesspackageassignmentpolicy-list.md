@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1a56b7b9c86c7717421719569815009a27fcde37
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 3eeff42ac2de58e2197da4f349b4abf5a9b72c2a
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331197"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534408"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +110,6 @@ Content-type: application/json
       "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
       "displayName": "All Users",
       "description": "All users can request for access to the directory.",
-      "isDenyPolicy": false,
       "canExtend": false,
       "durationInDays": 365,
       "accessReviewSettings": null

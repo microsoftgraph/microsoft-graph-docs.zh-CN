@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 08fcefafe9a354a57415a7d05bee1ec57ffdc138
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: dd70512db17df29685c4af2d8aa4c410a78642b0
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534444"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>accessPackageAssignmentPolicy 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "42331302"
 若要将用户分配到访问包，请[创建一个](../api/accesspackageassignmentrequest-post.md)引用访问包和访问包分配策略的 accessPackageAssignmentRequest。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -36,7 +38,7 @@ ms.locfileid: "42331302"
 |:-------------|:------------|:------------|
 |accessPackageId|String|访问包的 ID。|
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|必须对此策略中的访问包的分配以及这些工作分配的频率。 如果不需要进行审核，则此属性为 null。|
-|canExtend|布尔值|指示用户是否可以在批准后扩展访问包分配的持续时间。|
+|canExtend|布尔|指示用户是否可以在批准后扩展访问包分配的持续时间。|
 |createdBy|String|只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |说明|String|策略的说明。|
@@ -44,7 +46,6 @@ ms.locfileid: "42331302"
 |durationInDays|Int32|此策略中的工作分配在过期之前持续的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|字符串| 只读。|
-|isDenyPolicy|布尔值|如果为 true，策略将不允许访问。 只读。|
 |modifiedBy|String|只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|必须在此策略中批准访问包的请求。|
