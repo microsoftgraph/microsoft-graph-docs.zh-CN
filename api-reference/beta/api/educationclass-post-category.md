@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16f7f4bf6ea58aa5d29ae63b95f4b104d0dd1d93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db552b9b452453c3efed72c7d94fc14fa1cbe6c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955365"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426421"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +42,11 @@ POST /education/classes/{id}/assignmentCategories
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[educationCategory](../resources/educationcategory.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationCategory](../resources/educationcategory.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationCategory](../resources/educationcategory.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[educationCategory](../resources/educationcategory.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -62,7 +64,7 @@ Content-length: 33
   "displayName": "Quizzes"
 }
 ```
-在请求正文中, 提供[educationCategory](../resources/educationcategory.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationCategory](../resources/educationcategory.md)对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。 

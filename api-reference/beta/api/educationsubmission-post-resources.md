@@ -1,22 +1,24 @@
 ---
 title: 创建 educationSubmissionResource
-description: '将资源添加到 "资源" 列表中。 此操作只能由分配了此提交的学生完成。 如果未将**allowStudentsToAddResources**标志设置为 true, 则此操作将不会成功。 如果调用方要创建新的基于文件的资源, 则必须将该文件上载到与提交相关联的 "资源" 文件夹中。 如果文件不存在或不在该文件夹中, 则 POST 请求将失败。 '
+description: '将资源添加到 "资源" 列表中。 此操作只能由分配了此提交的学生完成。 如果未将**allowStudentsToAddResources**标志设置为 true，则此操作将不会成功。 如果调用方要创建新的基于文件的资源，则必须将该文件上载到与提交相关联的 "资源" 文件夹中。 如果文件不存在或不在该文件夹中，则 POST 请求将失败。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 36b7f0432577dacb716c0eaa2ee232cc3e49a40e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b8c92e3e26d588a79c7af460124fe56b3f708a8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425028"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将资源添加到 "资源" 列表中。 此操作只能由分配了此提交的学生完成。 如果未将**allowStudentsToAddResources**标志设置为 true, 则此操作将不会成功。 如果调用方要创建新的基于文件的资源, 则必须将该文件上载到与提交相关联的 "资源" 文件夹中。 如果文件不存在或不在该文件夹中, 则 POST 请求将失败。 
+将资源添加到 "资源" 列表中。 此操作只能由分配了此提交的学生完成。 如果未将**allowStudentsToAddResources**标志设置为 true，则此操作将不会成功。 如果调用方要创建新的基于文件的资源，则必须将该文件上载到与提交相关联的 "资源" 文件夹中。 如果文件不存在或不在该文件夹中，则 POST 请求将失败。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,11 +42,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

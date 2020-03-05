@@ -5,28 +5,30 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 15b0d28cd076dc99e0863bae57ca0e6b3b84165f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 463560883f91b3ad92d6fa5e4ca621263b1566ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720317"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425154"
 ---
 # <a name="list-outcomes"></a>列表结果
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[educationOutcome](../resources/educationoutcome.md)对象的列表。  有三种类型的结果: **educationPointsOutcome**、 **educationFeedbackOutcome**和**educationRubricOutcome**。
+检索[educationOutcome](../resources/educationoutcome.md)对象的列表。  有三种类型的结果： **educationPointsOutcome**、 **educationFeedbackOutcome**和**educationRubricOutcome**。
 
-对信用卡分配 (没有点值, 没有 rubric 的人) 的提交将具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)。 (它可能还会返回[educationPointsOutcome](../resources/educationpointsoutcome.md), 但忽略该结果。)
+对信用卡分配（没有点值，没有 rubric 的人）的提交将具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)。 （它可能还会返回[educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。）
 
-为 "点" 分配 (分配了 "点" 值) 进行提交时, 将同时具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)和[educationPointsOutcome](../resources/educationpointsoutcome.md)。
+为 "点" 分配（分配了 "点" 值）进行提交时，将同时具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)和[educationPointsOutcome](../resources/educationpointsoutcome.md)。
 
-包含附加 rubric 的工作分配的提交, 如果 rubric 是信用 rubric (没有点), 将具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)和[educationRubricOutcome](../resources/educationrubricoutcome.md)。 (它可能还会返回[educationPointsOutcome](../resources/educationpointsoutcome.md), 但忽略该结果。)
+包含附加 rubric 的工作分配的提交，如果 rubric 是信用 rubric （没有点），将具有[educationFeedbackOutcome](../resources/educationpointsoutcome.md)和[educationRubricOutcome](../resources/educationrubricoutcome.md)。 （它可能还会返回[educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。）
 
-提交包含附加 rubric 的工作分配, 如果 rubric 是一个点 rubric, 则会有一个[educationFeedbackOutcome](../resources/educationpointsoutcome.md), [educationPointsOutcome] (.。。/resources/educationpointsoutcome.md 和[educationRubricOutcome](../resources/educationrubricoutcome.md)。
+提交包含附加 rubric 的工作分配，如果 rubric 是一个点 rubric，则会有一个[educationFeedbackOutcome](../resources/educationpointsoutcome.md)，[educationPointsOutcome] （.。。/resources/educationpointsoutcome.md 和[educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
-所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如,**点**和**publishedPoints**、**反馈**和**publishedFeedback**。  常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。
+所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如，**点**和**publishedPoints**、**反馈**和**publishedFeedback**。  常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +60,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationOutcome](../resources/educationoutcome.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationOutcome](../resources/educationoutcome.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -66,7 +68,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outcomes"
@@ -75,15 +77,15 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outcomes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-outcomes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outcomes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

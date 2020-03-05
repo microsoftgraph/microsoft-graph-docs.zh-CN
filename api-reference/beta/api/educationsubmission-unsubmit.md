@@ -1,22 +1,24 @@
 ---
-title: 'educationSubmission: unsubmit'
-description: '一个操作, 指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 '
+title: educationSubmission： unsubmit
+description: '一个操作，指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 864da1f6820abdb8eb61332a5ba25221c6e75966
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 17be34a014e83b43bf7494758933ecaa10f4068f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416056"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424734"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
+# <a name="educationsubmission-unsubmit"></a>educationSubmission： unsubmit
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个操作, 指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 这会将提交的状态从 "已提交" 更改为 "正在运行"。 在提交过程中, 所有资源都将从 submittedResources 复制到 workingResources 存储桶。 教师将查看用于评分的工作资源列表。
+一个操作，指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 这会将提交的状态从 "已提交" 更改为 "正在运行"。 在提交过程中，所有资源都将从 submittedResources 复制到 workingResources 存储桶。 教师将查看用于评分的工作资源列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_unsubmit"
@@ -57,15 +59,15 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/unsubmit
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-unsubmit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-unsubmit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-unsubmit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

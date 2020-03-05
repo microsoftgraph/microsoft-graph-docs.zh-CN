@@ -5,20 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4a42c07859a01db350722eb4e7f35ce02d1e4f63
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e4825a0da4d03b42f85a5dd1582fa9bbe7521b97
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720394"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425791"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[educationRubric](../resources/educationrubric.md)对象的属性和关系。
 
-请注意, 在获取工作分配的 rubric (`GET /education/me/assignments/{id}/rubric`) 时, 返回的内容是存在于下`/education/users/{id}/rubrics`的原始 rubric 的不可变副本。 副本与该特定工作分配相关联。
+请注意，在获取工作分配的 rubric （`GET /education/me/assignments/{id}/rubric`）时，返回的内容是存在于下`/education/users/{id}/rubrics`的原始 rubric 的不可变副本。 副本与该特定工作分配相关联。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +52,7 @@ GET /education/me/rubrics/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和请求的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[educationRubric](../resources/educationrubric.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -58,7 +60,7 @@ GET /education/me/rubrics/{id}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationrubric"
@@ -67,15 +69,15 @@ GET /education/me/rubrics/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationrubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationrubric-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +89,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

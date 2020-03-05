@@ -5,20 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d45d5c90366aa0bf5e165cc640890d4b4247d7b7
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: fced432aba9e0127651e1af751baa86354464847
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460966"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425784"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新[educationRubric](../resources/educationrubric.md)对象的属性。
 
-仅在发布工作分配之前可以更新`PATCH /education/me/assignments/{id}/rubric`附加到工作分配的 rubric (), 而更新的内容实际上是`/education/users/{id}/rubrics`中存在的原始 rubric。 发布工作分配后, 将创建一个 rubric 的不可变副本, 该副本将附加到该特定工作分配。 可以使用[GET/education/me/assignments/{id}/rubric](educationrubric-get.md)检索 rubric, 但不能对其进行更新。
+仅在发布工作分配之前可以更新`PATCH /education/me/assignments/{id}/rubric`附加到工作分配的 rubric （），而更新的内容实际上是`/education/users/{id}/rubrics`中存在的原始 rubric。 发布工作分配后，将创建一个 rubric 的不可变副本，该副本将附加到该特定工作分配。 可以使用[GET/education/me/assignments/{id}/rubric](educationrubric-get.md)检索 rubric，但不能对其进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -59,7 +61,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationRubric](../resources/educationrubric.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +69,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationrubric"
@@ -81,15 +83,15 @@ Content-type: application/json
   "displayName": "Example Credit Rubric after display name patch"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationrubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationrubric-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

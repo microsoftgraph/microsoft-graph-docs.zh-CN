@@ -1,22 +1,24 @@
 ---
-title: 'educationAssignment: 发布'
-description: 此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时, 学生将看不到该工作分配, 也不会有任何提交对象。 调用此 API 时, 将创建提交对象, 并且该工作分配将显示在学生的列表中。
+title: educationAssignment：发布
+description: 此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时，学生将看不到该工作分配，也不会有任何提交对象。 调用此 API 时，将创建提交对象，并且该工作分配将显示在学生的列表中。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b9885696c0985ee7eade0b0ba1763e67d5943e1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b5421840ada4484a0dda12bd4f7bb5959bcebbcb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416525"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427359"
 ---
-# <a name="educationassignment-publish"></a>educationAssignment: 发布
+# <a name="educationassignment-publish"></a>educationAssignment：发布
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时, 学生将看不到该工作分配, 也不会有任何提交对象。 调用此 API 时, 将创建提交对象, 并且该工作分配将显示在学生的列表中。
+此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时，学生将看不到该工作分配，也不会有任何提交对象。 调用此 API 时，将创建提交对象，并且该工作分配将显示在学生的列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 ##### <a name="request"></a>请求
 请求示例如下所示。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -57,15 +59,15 @@ POST /education/classes/{id}/assignments/{id}/publish
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/publish
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

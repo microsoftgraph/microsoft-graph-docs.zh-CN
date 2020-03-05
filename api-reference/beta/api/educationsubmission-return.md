@@ -1,22 +1,24 @@
 ---
-title: 'educationSubmission: 返回'
+title: educationSubmission：返回
 description: 此操作使与此提交相关联的评分和反馈可供学生使用。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f785fab77f6da9c8d9c8dff1f20eb568191ca3db
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d04c954f239ba1999f2ca838d14e52b7920f4bc0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416084"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424825"
 ---
-# <a name="educationsubmission-return"></a>educationSubmission: 返回
+# <a name="educationsubmission-return"></a>educationSubmission：返回
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作使与此提交相关联的评分和反馈可供学生使用。 这会将提交的状态从 "已提交" 更改为 "已返回", 并指示反馈已提供或已完成评分。 此操作仅可由教师完成。
+此操作使与此提交相关联的评分和反馈可供学生使用。 这会将提交的状态从 "已提交" 更改为 "已返回"，并指示反馈已提供或已完成评分。 此操作仅可由教师完成。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_return"
@@ -58,15 +60,15 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/return
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-return-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-return-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-return-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

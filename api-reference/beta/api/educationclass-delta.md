@@ -1,22 +1,24 @@
 ---
-title: 'educationClass: delta'
-description: 获取新创建的或更新的类 (包括成员身份更改), 而无需对整个类集合执行完全读取。
+title: educationClass： delta
+description: 获取新创建的或更新的类（包括成员身份更改），而无需对整个类集合执行完全读取。
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 03a026a479c9502e00b86e41936619613013b9af
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 874898b68bcdb1d4bfc450668ebff89030859a02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34764733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426876"
 ---
-# <a name="educationclass-delta"></a>educationClass: delta
+# <a name="educationclass-delta"></a>educationClass： delta
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建的或更新的类 (包括成员身份更改), 而无需对整个类集合执行完全读取。 有关详细信息, 请参阅[使用 delta 查询](/graph/delta-query-overview)。
+获取新创建的或更新的类（包括成员身份更改），而无需对整个类集合执行完全读取。 有关详细信息，请参阅[使用 delta 查询](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +51,7 @@ POST /education/me/classes/{id}/delta
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationClass](../resources/educationclass.md)集合对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationClass](../resources/educationclass.md)集合对象。
 
 ## <a name="example"></a>示例
 

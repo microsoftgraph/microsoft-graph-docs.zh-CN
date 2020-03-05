@@ -1,24 +1,26 @@
 ---
-title: '事件: 前进'
+title: 事件：前进
 description: '此操作允许会议事件的组织者或与会者转发 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3911cff64c6535278c9d7a18832894809613e690
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 139d88c083269d92077da57eca1a730dfe314081
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419564"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42422977"
 ---
-# <a name="event-forward"></a>事件: 前进
+# <a name="event-forward"></a>事件：前进
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此操作允许会议[事件](../resources/event.md)的组织者或与会者将会议请求转发给新的收件人。 
 
-如果将会议事件从与会者的 Office 365 邮箱转发给另一个收件人, 此操作还会发送一封邮件, 通知组织者转发, 并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时, 此便利功能不可用。
+如果将会议事件从与会者的 Office 365 邮箱转发给另一个收件人，此操作还会发送一封邮件，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时，此便利功能不可用。
 
 
 ## <a name="permissions"></a>权限
@@ -61,7 +63,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Comment|String|要包含的注释。可以为空字符串。|
+|评论|字符串|要包含的注释。可以为空字符串。|
 |ToRecipients|[recipient](../resources/recipient.md) collection|要将事件转发到的收件人列表。|
 
 ## <a name="response"></a>响应
@@ -73,7 +75,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_forward"
@@ -96,15 +98,15 @@ Content-length: 56
 }
 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

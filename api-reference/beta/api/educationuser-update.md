@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6be8a60248290ab1a96b499000b6b548925974e4
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 11c0b59f5ee79c18e8920a8979db23fe3769f60c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423516"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,8 +56,8 @@ PATCH /education/users/{id}
 | surname          | 字符串                                               | 用户的姓                                                                                                                                  |
 | mail             | String                                               | 电子邮件地址                                                                                                                                    |
 | mobilePhone      | String                                               | 用户的移动电话号码                                                                                                                            |
-| externalSource   | 字符串                                               | 可取值为：`sis`、`manual`、`enum_sentinel`。                                                                                           |
-| externalSource   | 字符串                                               | 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。                                                        |
+| externalSource   | string                                               | 可取值为：`sis`、`manual`、`enum_sentinel`。                                                                                           |
+| externalSource   | string                                               | 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。                                                        |
 | mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | 用户的邮件地址。                                                                                                                            |
 | residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | 用户所在的地址。                                                                                                                        |
 | primaryRole      | string                                               | 用户的默认角色。  用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 |
@@ -72,7 +74,7 @@ PATCH /education/users/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -89,15 +91,15 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

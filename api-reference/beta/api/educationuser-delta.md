@@ -1,22 +1,24 @@
 ---
-title: 'educationUser: delta'
-description: 获取新创建或更新的用户, 而无需对整个用户集执行完全读取。
+title: educationUser： delta
+description: 获取新创建或更新的用户，而无需对整个用户集执行完全读取。
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c89c065d5e4bd8510d6821a3c7a13bd106ce9eb8
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 37dc85ae1c907aaa1cf43428e7ad19188e7c053d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34764734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423922"
 ---
-# <a name="educationuser-delta"></a>educationUser: delta
+# <a name="educationuser-delta"></a>educationUser： delta
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建或更新的[educationUser](../resources/educationuser.md) , 而无需对整个集合执行完全读取。 有关详细信息, 请参阅[使用 delta 查询](/graph/delta-query-overview)。
+获取新创建或更新的[educationUser](../resources/educationuser.md) ，而无需对整个集合执行完全读取。 有关详细信息，请参阅[使用 delta 查询](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +52,7 @@ POST /education/schools/{id}/users/{id}/delta
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationUser](../resources/educationuser.md)集合对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationUser](../resources/educationuser.md)集合对象。
 
 ## <a name="example"></a>示例
 

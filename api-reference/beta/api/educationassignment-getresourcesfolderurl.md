@@ -1,23 +1,25 @@
 ---
-title: 'educationAssignment: getResourcesFolderUrl'
-description: '此函数返回您应上载所有基于文件的资源 (Word、Excel 等) 的 OneDrive URL。  '
+title: educationAssignment： getResourcesFolderUrl
+description: '此函数返回您应上载所有基于文件的资源（Word、Excel 等）的 OneDrive URL。  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 46e1cb800abd25c0322606d82e92363a3b2d4b45
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2ece0d3fa62976e106ab4ea183443562ea7dd724
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427611"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
+# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment： getResourcesFolderUrl
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此函数返回您应上载所有基于文件的资源 (Word、Excel 等) 的 OneDrive URL。  
-请注意, 文件必须位于此文件夹中才能作为资源添加。 只有课堂中的老师可以确定要上载的文件。 
+此函数返回您应上载所有基于文件的资源（Word、Excel 等）的 OneDrive URL。  
+请注意，文件必须位于此文件夹中才能作为资源添加。 只有课堂中的老师可以确定要上载的文件。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ##### <a name="request"></a>请求
 请求示例如下所示。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -57,15 +59,15 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

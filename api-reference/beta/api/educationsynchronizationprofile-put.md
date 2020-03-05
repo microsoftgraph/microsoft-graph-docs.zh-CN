@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9535da9fa454b9a416779e5157200a178b647d37
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b0fb92a89ffb169b3a907c103fd3f393c730812d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954810"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424419"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35954810"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -40,10 +42,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
+在请求正文中，提供[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`202, Accepted`正文中返回响应代码和[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
+如果成功，此方法在响应`202, Accepted`正文中返回响应代码和[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,24 +1,26 @@
 ---
 title: 将文件上传到 educationSynchronizationProfile 后开始同步
-description: 验证是否已将文件上载到租户中的特定学校数据同步配置文件。 如果验证成功, 将在配置文件上启动同步。 否则, 响应中将包含错误和警告。 如果响应中包含错误, 同步将不会启动。 如果响应仅包含警告, 将启动同步。
+description: 验证是否已将文件上载到租户中的特定学校数据同步配置文件。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f8b9c5c69cc30220e7f008c092c36498ea229968
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 94f93a038504c00e8bf9b7d616516ade668d2642
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424279"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-验证是否已将文件上载到租户中的特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证成功, 将在配置文件上启动同步。 否则, 响应中将包含错误和警告。 如果响应中包含错误, 同步将不会启动。 如果响应仅包含警告, 将启动同步。
+验证是否已将文件上载到租户中的特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
 
-> **注意:** 仅当数据提供程序的类型为[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时, 才可使用此方法。 此外, 还需要先设置配置文件的 state 属性, 然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
+> **注意：** 仅当数据提供程序的类型为[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，才可使用此方法。 此外，还需要先设置配置文件的 state 属性，然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +28,7 @@ ms.locfileid: "36415951"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,13 +45,13 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果不成功, 则返回`400 Bad Request`。 如果发现任何错误或警告, 响应将包含[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合作为响应正文的一部分。
+如果成功，此方法返回 `200 OK` 响应代码。 如果不成功，则返回`400 Bad Request`。 如果发现任何错误或警告，响应将包含[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_educationSynchronizationProfile_start"
@@ -57,15 +59,15 @@ POST /synchronizationProfiles/{id}/start
 ```http
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/start
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-educationsynchronizationprofile-start-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-educationsynchronizationprofile-start-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-start-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

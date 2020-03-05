@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb210affa5d98bdbc9a5cd012adc20a5c4ac49ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427086"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,11 +45,11 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
+|distributeForStudentWork|布尔| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
 |resource|educationResource| Resource 对象。 |
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

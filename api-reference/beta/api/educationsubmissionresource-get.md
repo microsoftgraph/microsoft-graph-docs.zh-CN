@@ -1,22 +1,24 @@
 ---
 title: 获取 educationSubmissionResource
-description: 检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中, 应将其视为学生在处理过程中工作。 如果从分配中复制了此资源, 则会将该资源的可能指针返回到分配资源。
+description: 检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中，应将其视为学生在处理过程中工作。 如果从分配中复制了此资源，则会将该资源的可能指针返回到分配资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9c4362080907ae3425dd68ab3fc5653ba4d57807
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7417d906c85e4ed50de6926ead29073614a6df0f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954933"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424685"
 ---
 # <a name="get-educationsubmissionresource"></a>获取 educationSubmissionResource
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中, 应将其视为学生在处理过程中工作。 如果从分配中复制了此资源, 则会将该资源的可能指针返回到分配资源。
+检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中，应将其视为学生在处理过程中工作。 如果从分配中复制了此资源，则会将该资源的可能指针返回到分配资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

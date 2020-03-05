@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 591f9cbdc4d1d83af74dddca34102ad23e6d31a5
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 043268b4822c8f43a332d8a6908a3d6a3c407634
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427268"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,8 +45,8 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| 提交在截止日期之后是否可以提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|布尔| 提交在截止日期之后是否可以提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
 |closeDateTime|DateTimeOffset| 将为提交关闭工作分配的日期。 这是可选字段，如果工作分配不 allowLateSubmissions 或 closeDateTime 与 dueDateTime 相同，则可以为 null，但如果指定，则它必须大于或等于 dueDateTime。|
@@ -59,7 +61,7 @@ PATCH /education/classes/{id}/assignments/{id}
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignment"
@@ -78,15 +80,15 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

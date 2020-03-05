@@ -1,22 +1,24 @@
 ---
 title: 创建 educationAssignmentResource
-description: odata。键入以指示要创建的资源的类型。 请注意, 必须首先将基于文件的资源上载到工作分配**resourceFolder**。
+description: odata。键入以指示要创建的资源的类型。 请注意，必须首先将基于文件的资源上载到工作分配**resourceFolder**。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 86cf738f7558814a76d07e7a7eb5ffd22d988d29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54ea709bea62269814a65138ae0cf1e665199a55
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955653"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427366"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建[工作分配资源](../resources/educationassignmentresource.md)。 资源本身有一个 @odata。若要指示正在创建的资源的类型, 请键入。 请注意, 必须首先将基于文件的资源上载到工作分配**resourceFolder**。
+创建[工作分配资源](../resources/educationassignmentresource.md)。 资源本身有一个 @odata。若要指示正在创建的资源的类型，请键入。 请注意，必须首先将基于文件的资源上载到工作分配**resourceFolder**。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,11 +41,11 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[educationAssignmentResource](../resources/educationassignmentresource.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationAssignmentResource](../resources/educationassignmentresource.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -67,7 +69,7 @@ Content-length: 212
 }
 
 ```
-在请求正文中, 提供[educationAssignmentResource](../resources/educationassignmentresource.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationAssignmentResource](../resources/educationassignmentresource.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 

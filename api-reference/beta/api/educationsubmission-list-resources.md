@@ -1,22 +1,24 @@
 ---
 title: 列出资源
-description: 列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针 (如果这是在分配过程中从分配中复制的)。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
+description: 列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4df1f8eb2789b575d4482a6ba613b2b950fb2323
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 61c887d507e52da0883b127b3c6123c073de04e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955117"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425140"
 ---
 # <a name="list-resources"></a>列出资源
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针 (如果这是在分配过程中从分配中复制的)。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
+列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +53,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
 
 ## <a name="example"></a>示例
 

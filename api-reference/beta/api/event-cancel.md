@@ -1,28 +1,30 @@
 ---
-title: '事件: 取消'
+title: 事件：取消
 description: '此操作允许会议组织者发送取消邮件并取消事件。 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 30febd68e4aa348352ba387ff549304934049350
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 0558bc37421391cd565e197e76365840aa8a97a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415783"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423390"
 ---
-# <a name="event-cancel"></a>事件: 取消
+# <a name="event-cancel"></a>事件：取消
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此操作允许会议组织者发送取消邮件并取消事件。 
 
-该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将收到错误 (HTTP 400 错误请求), 并提供以下错误消息:
+该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将收到错误（HTTP 400 错误请求），并提供以下错误消息：
 
 无法完成您的请求。 您必须是组织者才能取消会议。 "
 
-此操作与中的 "删除" 不同, "**取消**" 中的 "[删除](event-delete.md)" 仅对组织者可用, 并允许组织者向与会者发送有关取消的自定义消息。
+此操作与中的 "删除" 不同，"**取消**" 中的 "[删除](event-delete.md)" 仅对组织者可用，并允许组织者向与会者发送有关取消的自定义消息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -75,7 +77,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_cancel"
@@ -88,15 +90,15 @@ Content-type: application/json
   "Comment": "Cancelling for this week due to all hands"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-cancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-cancel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

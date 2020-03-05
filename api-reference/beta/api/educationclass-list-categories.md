@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6757f64942ee87d4e13b577964645f9a35839477
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f647c0b5241dc7ab98d0fda5f3ccce8233a6b557
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955423"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426694"
 ---
 # <a name="list-educationcategories"></a>列出 educationCategories
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ GET /education/classes/{id}/assignmentCategories
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationCategory](../resources/educationcategory.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationCategory](../resources/educationcategory.md)对象集合。
 
 ## <a name="example"></a>示例
 

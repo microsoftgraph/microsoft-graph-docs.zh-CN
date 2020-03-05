@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 52d40288237b417138d7ad54a290fc4529f3e10f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c294ab025c148d851ee679c8b64c69608a470f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424482"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35954857"
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration、EduAdministration |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序| EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -41,7 +43,7 @@ GET /synchronizationProfiles/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,22 +1,24 @@
 ---
 title: 获取 educationSubmittedSubmissionResource
-description: 返回已提交的资源。 这在学生提交后将对教师可用, 并将在教师发布提交后供学生使用。  请注意, 教师可以在某些资源中留下笔记。
+description: 返回已提交的资源。 这在学生提交后将对教师可用，并将在教师发布提交后供学生使用。  请注意，教师可以在某些资源中留下笔记。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f3703de6176af8cc475e83408d77d4880e2ef77b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e670022a2d8eb87313952e2429b720bd4a535cf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954919"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424636"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回已提交的资源。 这在学生提交后将对教师可用, 并将在教师发布提交后供学生使用。  请注意, 教师可以在某些资源中留下笔记。
+返回已提交的资源。 这在学生提交后将对教师可用，并将在教师发布提交后供学生使用。  请注意，教师可以在某些资源中留下笔记。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

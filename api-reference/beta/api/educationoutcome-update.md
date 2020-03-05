@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ec9ebc02c10794d6e022de33e12a77cac66620e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: a02098f65bdf9357bcc944d667d7657871895e1e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461113"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426190"
 ---
 # <a name="update-educationoutcome"></a>更新 educationoutcome
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,23 +48,23 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-EducationOutcome 对象将为以下派生类型之一: **educationPointsOutcome**、 **educationFeedbackOutcome**或**educationRubricOutcome**。 提供与要修补的结果类型相关的特定属性。
+EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome**、 **educationFeedbackOutcome**或**educationRubricOutcome**。 提供与要修补的结果类型相关的特定属性。
 
-所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如,**点**和**publishedPoints**、**反馈**和**publishedFeedback**。 不更新 "已发布" 属性;它仅供内部使用。 例如, 若要向**educationPointsOutcome**分配点, 请更新**points**属性, 但不要更新**publishedPoints**。
+所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如，**点**和**publishedPoints**、**反馈**和**publishedFeedback**。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向**educationPointsOutcome**分配点，请更新**points**属性，但不要更新**publishedPoints**。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationOutcome](../resources/educationoutcome.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationOutcome](../resources/educationoutcome.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-feedback-outcome"></a>示例 1: 更新反馈结果
+### <a name="example-1-update-a-feedback-outcome"></a>示例1：更新反馈结果
 
 #### <a name="request"></a>请求
 
 下面是更新反馈结果的请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -82,7 +84,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -128,13 +130,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a>示例 2: 更新点结果
+### <a name="example-2-update-a-points-outcome"></a>示例2：更新点结果
 
 #### <a name="request"></a>请求
 
 下面是更新点结果的请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -152,7 +154,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,13 +197,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a>示例 3: 更新 Rubric 结果
+### <a name="example-3-update-a-rubric-outcome"></a>示例3：更新 Rubric 结果
 
 #### <a name="request"></a>请求
 
 下面是更新 rubric 结果的请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -241,7 +243,7 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,22 +1,24 @@
 ---
 title: 列出 submittedResources
-description: 列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装, 如果此资源是从工作分配复制的, 则可以包含指向实际工作分配资源的指针。
+description: 列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装，如果此资源是从工作分配复制的，则可以包含指向实际工作分配资源的指针。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 371302640df794465764755492088ec2015278ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e5b51f7ecebe3c7525154d19ef66d622633b55d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955116"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425091"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装, 如果此资源是从工作分配复制的, 则可以包含指向实际工作分配资源的指针。
+列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装，如果此资源是从工作分配复制的，则可以包含指向实际工作分配资源的指针。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

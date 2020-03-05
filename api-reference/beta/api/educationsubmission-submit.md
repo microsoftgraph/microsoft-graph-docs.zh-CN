@@ -1,22 +1,24 @@
 ---
-title: 'educationSubmission: 提交'
+title: educationSubmission：提交
 description: 指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 016c5c6d3b6866a69c88c5beb50b3bf22b922534
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 58ddcd99c1e93696fbca037cea89ed51bd633283
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416063"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424741"
 ---
-# <a name="educationsubmission-submit"></a>educationSubmission: 提交
+# <a name="educationsubmission-submit"></a>educationSubmission：提交
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。 这会将提交状态从 "正在运行" 更改为 "已提交"。 在提交过程中, 所有资源都将复制到 submittedResources 存储桶中。 教师将在 "已提交的资源" 列表中查找评分。
+指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。 这会将提交状态从 "正在运行" 更改为 "已提交"。 在提交过程中，所有资源都将复制到 submittedResources 存储桶中。 教师将在 "已提交的资源" 列表中查找评分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_submit"
@@ -57,15 +59,15 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submit
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-submit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-submit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-submit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
