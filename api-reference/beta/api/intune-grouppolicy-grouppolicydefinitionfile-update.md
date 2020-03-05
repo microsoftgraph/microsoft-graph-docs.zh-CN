@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10cd3947e0fca3cc243e6f93459cec57f5b47512
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: e25862f0005a4ec87dfae46ace5eddfde7f5dd93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943128"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465056"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39943128"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +56,11 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
 |说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
-|targetPrefix|字符串|指定在 ADMX 文件中引用命名空间的逻辑名称。|
-|targetNamespace|字符串|指定用于标识 ADMX 文件中的命名空间的 URI。|
+|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
+|targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
+|targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|a01|字符串|与文件关联的修订版本。|
+|a01|String|与文件关联的修订版本。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

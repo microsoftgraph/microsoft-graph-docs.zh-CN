@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aef328d9917f0ca587811839aa2dcca82bd98c72
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: f8d5cb20fbf72888c9b03526b389d283c6af3052
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636502"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42463144"
 ---
 # <a name="getmanagedappblockedusers-function"></a>getManagedAppBlockedUsers 函数
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

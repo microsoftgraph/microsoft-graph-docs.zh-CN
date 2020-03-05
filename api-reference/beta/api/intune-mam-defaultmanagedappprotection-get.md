@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b8c295856c8e05842802f8747a1b9f59f17f840
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: cbdb6fe2b45280481e061752e4fa220e7dabb850
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161695"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42463648"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

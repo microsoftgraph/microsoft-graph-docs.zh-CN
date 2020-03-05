@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79d1591dd810327b96f1c244e874136f5e79e444
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 554dd2ccc5076c96f8ca0e239a3405e4509d474c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462402"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>创建 deviceEnrollmentPlatformRestrictionsConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -49,7 +51,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 下表显示创建 deviceEnrollmentPlatformRestrictionsConfiguration 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
 |displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|

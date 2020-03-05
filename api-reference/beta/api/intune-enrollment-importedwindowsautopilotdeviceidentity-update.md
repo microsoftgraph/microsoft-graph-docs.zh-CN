@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86d767375059ae774080151a8cc22b9a0640f30c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f696e68b445bc965e7b22ab6b4831a5072b5b0fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943759"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42466412"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Update importedWindowsAutopilotDeviceIdentity
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39943759"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,15 +53,15 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |orderIdentifier|String|Windows autopilot 设备订单 Id。 -弃用|
-|groupTag|字符串|Windows autopilot 设备的 Group 标记。|
-|serialNumber|字符串|Windows autopilot 设备序列号。|
+|groupTag|String|Windows autopilot 设备的 Group 标记。|
+|serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
-|importId|字符串|Windows autopilot 设备的导入 Id。|
+|importId|String|Windows autopilot 设备的导入 Id。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
-|assignedUserPrincipalName|字符串|将为设备分配的用户的 UPN|
+|assignedUserPrincipalName|String|将为设备分配的用户的 UPN|
 
 
 

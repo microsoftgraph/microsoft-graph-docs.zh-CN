@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9abf9fbb618c76960e0ffecde8d61ccb6ce1afd7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 971702dfab6c4782bfe314d4061fd5cbaccc3794
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943927"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42467135"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39943927"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,19 +53,19 @@ POST /deviceManagement/depOnboardingSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |appleIdentifier|String|用于获取当前令牌的 Apple ID。|
 |tokenExpirationDateTime|DateTimeOffset|令牌将到期的时间。|
 |lastModifiedDateTime|DateTimeOffset|在载入服务时。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|Boolean|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|shareTokenWithSchoolDataSyncService|布尔|是否启用了与学校数据同步服务的 Dep 令牌共享。|
 |lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|字符串|Dep 令牌的友好名称|
+|tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|Boolean|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|布尔|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 

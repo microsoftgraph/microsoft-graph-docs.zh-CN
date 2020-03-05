@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a904455a59ff2587d6d4cb3c6849e7854bf402c8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 465829b268ead5ff2ab91e2af975cb4622e70808
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943198"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465238"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39943198"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String collection|配置的作用域标记列表。|
+|roleScopeTagIds|String 集合|配置的作用域标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

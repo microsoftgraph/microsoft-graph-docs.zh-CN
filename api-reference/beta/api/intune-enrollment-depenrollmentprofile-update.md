@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfc8bd930f29f669a41163c8e32763972f33f5a6
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8a19bb28cd69f4a23735238a2c9f1114cad6d333
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42467254"
 ---
 # <a name="update-depenrollmentprofile"></a>更新 depEnrollmentProfile
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39944004"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,34 +56,34 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |id|字符串|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
 |displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
 |说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
-|requiresUserAuthentication|Boolean|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
-|configurationEndpointUrl|字符串|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
+|requiresUserAuthentication|布尔|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
+|configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
+|enableAuthenticationViaCompanyPortal|布尔|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否为默认配置文件|
-|supervisedModeEnabled|Boolean|监督模式，如果启用，则为 True，否则为 false。 有关https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息，请参阅。|
-|supportDepartment|字符串|支持部门信息|
-|passCodeDisabled|Boolean|指示是否禁用密码设置窗格|
-|isMandatory|Boolean|指示配置文件是否是必需的|
-|locationDisabled|Boolean|指示是否禁用位置服务设置窗格|
-|supportPhoneNumber|字符串|支持电话号码|
+|supervisedModeEnabled|布尔|监督模式，如果启用，则为 True，否则为 false。 有关https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息，请参阅。|
+|supportDepartment|String|支持部门信息|
+|passCodeDisabled|布尔|指示是否禁用密码设置窗格|
+|isMandatory|布尔|指示配置文件是否是必需的|
+|locationDisabled|布尔|指示是否禁用位置服务设置窗格|
+|supportPhoneNumber|String|支持电话号码|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
-|profileRemovalDisabled|Boolean|指示是否禁用了配置文件删除选项|
+|profileRemovalDisabled|布尔|指示是否禁用了配置文件删除选项|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)集合|Apple 配置器的管理证书|
-|restoreBlocked|Boolean|指示是否阻止还原安装程序窗格|
-|restoreFromAndroidDisabled|Boolean|指示是否禁用从 Android 还原|
-|appleIdDisabled|Boolean|指示是否禁用 Apple id 设置窗格|
-|termsAndConditionsDisabled|Boolean|指示是否已禁用 "条款和条件" 安装窗格|
-|touchIdDisabled|Boolean|指示是否禁用了触控 id 设置窗格|
-|applePayDisabled|Boolean|指示是否禁用 Apple 付费设置窗格|
-|zoomDisabled|Boolean|指示是否禁用缩放设置窗格|
-|siriDisabled|Boolean|指示是否禁用 siri 安装程序窗格|
-|diagnosticsDisabled|Boolean|指示是否禁用诊断设置窗格|
-|macOSRegistrationDisabled|Boolean|指示是否禁用 Mac OS 注册|
-|macOSFileVaultDisabled|Boolean|指示是否禁用 Mac OS 文件保管库|
-|awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待已配置的确认|
+|restoreBlocked|布尔|指示是否阻止还原安装程序窗格|
+|restoreFromAndroidDisabled|布尔|指示是否禁用从 Android 还原|
+|appleIdDisabled|布尔|指示是否禁用 Apple id 设置窗格|
+|termsAndConditionsDisabled|布尔|指示是否已禁用 "条款和条件" 安装窗格|
+|touchIdDisabled|布尔|指示是否禁用了触控 id 设置窗格|
+|applePayDisabled|布尔|指示是否禁用 Apple 付费设置窗格|
+|zoomDisabled|布尔|指示是否禁用缩放设置窗格|
+|siriDisabled|布尔|指示是否禁用 siri 安装程序窗格|
+|diagnosticsDisabled|布尔|指示是否禁用诊断设置窗格|
+|macOSRegistrationDisabled|布尔|指示是否禁用 Mac OS 注册|
+|macOSFileVaultDisabled|布尔|指示是否禁用 Mac OS 文件保管库|
+|awaitDeviceConfiguredConfirmation|布尔|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
-|enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
+|enableSharedIPad|布尔|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
 
 
 

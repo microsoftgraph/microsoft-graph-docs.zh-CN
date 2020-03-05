@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec14e961c46ae7ea1aad2af17ef0c8f7a143cc3
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c6b2affdcc0b8c0157bc90d1d59a7f7b3bd63d13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161716"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42463768"
 ---
 # <a name="get-grouppolicyuploadedpresentation"></a>获取 groupPolicyUploadedPresentation
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

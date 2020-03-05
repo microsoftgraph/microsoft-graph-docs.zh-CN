@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36443dc8702781b8429265b4e00ea510f6532e5a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 12bc8b52a857e70b3bda358365399f398d19c10d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941923"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462542"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>更新 deviceManagementDomainJoinConnector
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39941923"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +53,7 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|代表连接器的唯一标识符。|
+|id|String|代表连接器的唯一标识符。|
 |displayName|字符串|连接器显示名称。|
 |lastConnectionDateTime|DateTimeOffset|上次联系 Intune 的时间连接器。|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|连接器状态。 可取值为：`active`、`error`、`inactive`。|

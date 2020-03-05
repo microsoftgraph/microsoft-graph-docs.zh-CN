@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe37b0ed8bfb8d0f4b12c0b05d69ea6a13834fe
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3fd6c029efc52acc594c51f37700388231c08260
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462969"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>创建 windowsInformationProtectionDeviceRegistration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39942140"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +58,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型，例如，Windows 便携式计算机 VS Windows phone。|
-|deviceMacAddress|字符串|设备 Mac 地址。|
+|deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 

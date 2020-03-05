@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fbe8cf278607269e1e70d11c305604a414f02cc2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8bffa30178e881ccb30cefab218d53df5e0cd639
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942063"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462808"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>创建 windowsInformationProtectionWipeAction
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39942063"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,12 +53,12 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|targetedUserId|字符串|此擦除操作针对的用户 Id。|
-|targetedDeviceRegistrationId|字符串|此擦除操作针对的 DeviceRegistrationId。|
-|targetedDeviceName|字符串|目标设备名称。|
-|targetedDeviceMacAddress|字符串|目标设备 Mac 地址。|
+|id|String|实体的键。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|targetedUserId|String|此擦除操作针对的用户 Id。|
+|targetedDeviceRegistrationId|String|此擦除操作针对的 DeviceRegistrationId。|
+|targetedDeviceName|String|目标设备名称。|
+|targetedDeviceMacAddress|String|目标设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|此擦除操作所针对的设备的上次签入时间。|
 
 

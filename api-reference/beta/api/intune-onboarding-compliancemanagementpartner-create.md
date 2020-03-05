@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cbdc27b37794627aaf444138e92bb751c41c2780
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1f449556df216643ff8d3e72797d105d39934e37
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941916"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462528"
 ---
 # <a name="create-compliancemanagementpartner"></a>创建 complianceManagementPartner
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39941916"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/complianceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,14 +53,14 @@ POST /deviceManagement/complianceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的 Id|
+|id|String|实体的 Id|
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|Boolean|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|布尔|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|布尔|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|布尔|适用于 ios 设备的合作伙伴载入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Android 设备的用户组。|
