@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 7faa48557cb9a275df710dec699c964df9a8b9a7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fa37b5e39ebf77642871f34f1a09f621633099bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868469"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441583"
 ---
 # <a name="list-anonymousipriskevents"></a>列出 anonymousIpRiskEvents
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

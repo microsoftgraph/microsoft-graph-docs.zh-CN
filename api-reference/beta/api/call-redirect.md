@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d0512b808e0ac89cb94e8a429599b27781822f6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7eeddd2bbecb82ee0c5b90232a6e0b64de050f9d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440764"
 ---
 # <a name="call-redirect"></a>呼叫：重定向
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,8 +57,8 @@ POST /communications/calls/{id}/redirect
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则为同时调用。 这意味着将同时 rang 所有目标，并且只会连接所选取的第一个目标。 对于同时，我们最高支持25个目标。
 |targetDisposition|String|被可能的值为： `default` 、 `simultaneousRing` 、 `forward`。 此参数已弃用，我们将自动确定它是在提供的目标数量中进行前向呼叫还是同时呼叫。|
 |timeout|Int32|重定向操作的超时（以秒为单位）。 超时值的范围介于15和90秒之间（含这两个值）。 对于多个目标，默认超时值为55秒，为多个目标为60秒（可能会发生更改）。 |
-|maskCallee|Boolean|指示是否要在呼叫者中隐藏被叫方。 如果为 true，则被叫方标识为 bot 标识。 默认值： false。|
-|maskCaller|Boolean|指示是否对被呼叫方隐藏呼叫者。 如果为 true，则呼叫者标识为 bot 标识。 默认值： false。|
+|maskCallee|布尔|指示是否要在呼叫者中隐藏被叫方。 如果为 true，则被叫方标识为 bot 标识。 默认值： false。|
+|maskCaller|布尔|指示是否对被呼叫方隐藏呼叫者。 如果为 true，则呼叫者标识为 bot 标识。 默认值： false。|
 |callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
@@ -123,7 +125,7 @@ POST /communications/calls/{id}/redirect
 
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -149,15 +151,15 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

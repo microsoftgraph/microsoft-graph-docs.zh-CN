@@ -6,18 +6,20 @@ description: 列出用户驱动器中的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 99e4ab374f26e6dcd9a5bf40d2fcbba04de9c178
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 52d03febbb44448081c1a9f69066254e639d361b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720177"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441044"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户驱动器中所有捆绑[][包]的列表。
+获取用户驱动器中[所有捆绑][包]的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +49,7 @@ GET /drive/bundles
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,34 +57,34 @@ GET /drive/bundles
 
 ## <a name="response"></a>响应
 
-如果成功, 此请求将返回为驱动器定义的捆绑包项的列表。
+如果成功，此请求将返回为驱动器定义的捆绑包项的列表。
 
-阅读 "[错误响应][error-response]" 主题, 了解有关如何返回错误的详细信息。
+阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-bundles-in-a-drive"></a>示例 1: 列出驱动器中的所有捆绑包
+### <a name="example-1-list-all-bundles-in-a-drive"></a>示例1：列出驱动器中的所有捆绑包
 
-若要请求对驱动器中定义的所有绑定的枚举, 可以向不带任何参数的**束**集合发出请求。
+若要请求对驱动器中定义的所有绑定的枚举，可以向不带任何参数的**束**集合发出请求。
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-all-bundles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-all-bundles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -119,31 +121,31 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 
-### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例 2: 列出驱动器中的所有相册
+### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例2：列出驱动器中的所有相册
 
-若要筛选从请求返回到捆绑包集合的捆绑包列表, 可以使用`filter`查询字符串参数指定要返回的捆绑包的类型, 方法是检查捆绑包中是否存在某一 facet:
+若要筛选从请求返回到捆绑包集合的捆绑包列表，可以使用`filter`查询字符串参数指定要返回的捆绑包的类型，方法是检查捆绑包中是否存在某一 facet：
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-album-bundles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-album-bundles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -153,7 +155,7 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 #### <a name="response"></a>响应
 
 对绑定终结点的 GET 响应是具有[捆绑包][]的[driveItem][]资源的数组。
-由于所有捆绑包都是项目, 因此可以对其使用所有的标准项操作。
+由于所有捆绑包都是项目，因此可以对其使用所有的标准项操作。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
@@ -189,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

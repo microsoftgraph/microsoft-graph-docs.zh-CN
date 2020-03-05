@@ -1,22 +1,24 @@
 ---
 title: 获取成员
-description: 使用此 API 获取管理单元中的特定成员 (用户或组)。
+description: 使用此 API 获取管理单元中的特定成员（用户或组）。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81a1165148dbaa81740cdc4d7b9dbf65f7d8cd4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a40542dff19460bf166753dcfbeb401bb22b0b53
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441751"
 ---
 # <a name="get-a-member"></a>获取成员
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 获取管理单元中的特定成员 (用户或组)。
+使用此 API 获取管理单元中的特定成员（用户或组）。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +45,7 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[user](../resources/user.md)或[group](../resources/group.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[user](../resources/user.md)或[group](../resources/group.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

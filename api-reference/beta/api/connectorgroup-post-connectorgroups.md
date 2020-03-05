@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2b99d52303547bd94deb8c3866e4e62745f5b2d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21cdb4ec3da098ed787c13a4b8c4c24244dd6c8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437306"
 ---
 # <a name="create-connectorgroup"></a>创建 connectorGroup
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,11 +40,11 @@ POST /connectorGroups
 | Authorization  | 负载. Requried|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -62,7 +64,7 @@ Content-length: 99
   "isDefault": false
 }
 ```
-在请求正文中, 提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

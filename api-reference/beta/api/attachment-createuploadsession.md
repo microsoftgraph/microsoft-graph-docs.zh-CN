@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 41f971e51099c00b93ae5e083103a869e0bfd403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268363"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441352"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,6 +35,10 @@ ms.locfileid: "42268363"
 
 > [!TIP]
 > Exchange Online 允许管理员自定义 Office 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
+
+> [!IMPORTANT] 
+> 如果要附加到共享或委派邮箱中的邮件，请注意[已知问题](/graph/known-issues#attaching-large-files-to-messages)。
+
 
 ## <a name="permissions"></a>权限
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b09aa4957cd1dfcdc5566f318725ad234169f944
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: dc077feab9f235fd2ed59fc939ade331a8fc8bd9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331176"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441968"
 ---
 # <a name="list-accesspackagecatalogs"></a>列出 accessPackageCatalogs
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

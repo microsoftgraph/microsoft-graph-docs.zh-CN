@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 7650da72a4de2488c5f7f44644785cdeca43babe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8e8fc8bc23726c31244c989dc2821e56bb36908
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943538"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437789"
 ---
 # <a name="get-connector"></a>获取连接器
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,7 @@ GET /connectorGroups/{id}/members/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

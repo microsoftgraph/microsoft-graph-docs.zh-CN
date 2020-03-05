@@ -6,22 +6,24 @@ description: 更新 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a68aedbec838b0c74c1750acdee73a0f20880933
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 18c04ff7760505901ded5adb6e291fadc7481b35
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419193"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441016"
 ---
 # <a name="update-bundle"></a>更新捆绑包
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 按 ID 更新[driveitem][driveItem]的[捆绑][]的元数据。
-您只能更新以下元数据:
+您只能更新以下元数据：
 
 * 捆绑包名称
-* 唱片`coverImageItemId`集 (如果适用)
+* 唱片`coverImageItemId`集（如果适用）
 
 任何其他更改请求都将被忽略。
 
@@ -48,7 +50,7 @@ PATCH /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag. 可选。 如果包含此请求标头, 且提供的 eTag 与 buncle 上的当前 eTag 不匹配, 则`412 Precondition Failed`返回响应。
+| if-match      | eTag. 可选。 如果包含此请求标头，且提供的 eTag 与 buncle 上的当前 eTag 不匹配，则`412 Precondition Failed`返回响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -56,9 +58,9 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将返回一个[driveItem][]资源, 该资源表示响应正文中更新的捆绑包。
+如果成功，此方法将返回一个[driveItem][]资源，该资源表示响应正文中更新的捆绑包。
 
-阅读 "[错误响应][error-response]" 主题, 了解有关如何返回错误的详细信息。
+阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="example"></a>示例
 
@@ -67,7 +69,7 @@ PATCH /drive/items/{bundle-id}
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```json
@@ -78,15 +80,15 @@ Content-Type: application/json
   "name": "Shared legal agreements"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,7 +112,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

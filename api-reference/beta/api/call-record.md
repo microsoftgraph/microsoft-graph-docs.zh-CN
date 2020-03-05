@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0e3aab1564d6007924d696a8d07a86c5cc4854b0
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d5dfce0736cf44e386c5ff2ec1f343ae1aa324c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440771"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,12 +59,12 @@ POST /communications/calls/{id}/recordResponse
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[MediaPrompt](../resources/mediaprompt.md)集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
-|bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|布尔| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录响应操作并使操作失败之前，允许的最大初始静音（用户静默）。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String collection|指定结束录音的停止音。|
+|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|String 集合|指定结束录音的停止音。|
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 > **注意：** 最长录制时间从5分钟减少到2分钟。
@@ -79,7 +81,7 @@ POST /communications/calls/{id}/recordResponse
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-recordResponse"
@@ -108,7 +110,7 @@ Content-Length: 394
   "stopTones": [ "#", "1", "*" ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

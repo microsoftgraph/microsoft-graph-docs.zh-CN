@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6fcd4701b2c9161582b9bd951f35bf0c8ba09821
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 980f2bdc9d43d5d8e854c92a016d9c40b68d3745
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945562"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441569"
 ---
 # <a name="add-application-password"></a>添加应用程序密码
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和 password 对象。 Azure AD 生成通过`secretText`属性返回的强密码。 将来无法检索此密码。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和 password 对象。 Azure AD 生成通过`secretText`属性返回的强密码。 将来无法检索此密码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

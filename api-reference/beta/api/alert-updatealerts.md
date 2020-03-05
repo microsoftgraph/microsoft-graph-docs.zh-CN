@@ -1,22 +1,24 @@
 ---
-title: '警报: updateAlerts'
-description: 更新一个请求中的多个警报, 而不是多个请求。
+title: 警报： updateAlerts
+description: 更新一个请求中的多个警报，而不是多个请求。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0772912e23ea9bf48addfc7e8d986fdf9915a5e2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 684c96aeb0f297c783343001a1ab00bc82f9da63
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408382"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441632"
 ---
-# <a name="alert-updatealerts"></a>警报: updateAlerts
+# <a name="alert-updatealerts"></a>警报： updateAlerts
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新一个请求中的多个警报, 而不是多个请求。
+更新一个请求中的多个警报，而不是多个请求。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +46,7 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 每个实体都必须具有**id**和**vendorInformation**属性。 有关可更新的属性的详细信息, 请参阅[更新警报](alert-update.md)。
+在请求正文中，提供具有以下参数的 JSON 对象。 每个实体都必须具有**id**和**vendorInformation**属性。 有关可更新的属性的详细信息，请参阅[更新警报](alert-update.md)。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,7 +54,7 @@ POST /security/alerts/updateAlerts
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200, OK`响应正文中返回响应代码和[警报](../resources/alert.md)集合对象。
+如果成功，此方法在`200, OK`响应正文中返回响应代码和[警报](../resources/alert.md)集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +64,7 @@ POST /security/alerts/updateAlerts
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "alert_updatealerts",
@@ -92,15 +94,15 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/alert-updatealerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/alert-updatealerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,7 +114,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83c67824726e294ed6b60bb32fae7452bf60a3bf
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1383b7bd0b9406cd87e3beedd64609498330aa5b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417590"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42435645"
 ---
 # <a name="create-device"></a>创建设备
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ POST /devices
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。
 
-由于**设备**资源支持[扩展](/graph/extensibility-overview), 因此可以在创建设备`POST`实例时使用该操作并向其添加包含自己的数据的自定义属性。
+由于**设备**资源支持[扩展](/graph/extensibility-overview)，因此可以在创建设备`POST`实例时使用该操作并向其添加包含自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
@@ -51,7 +53,7 @@ POST /devices
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -76,15 +78,15 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-device-from-devices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-device-from-devices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-device-from-devices-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

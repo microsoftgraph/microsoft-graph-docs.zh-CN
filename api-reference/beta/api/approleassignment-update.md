@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 34f01f3cf8d03158df41dfd74e17fd8f767244b8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4f1f499cb54ac135f5393e795e24cea6c7962685
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408162"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441359"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,19 +48,19 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |creationTimestamp|DateTimeOffset|创建授予的时间。|
 |id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
 |principalDisplayName|String|已授权访问权限的主体的显示名称。|
-|principalId|Guid|要向其授予访问权限的主体的唯一标识符 (**objectId**)。                            **备注**: 必需。            |
+|principalId|Guid|要向其授予访问权限的主体的唯一标识符（**objectId**）。                            **备注**：必需。            |
 |principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
 |resourceDisplayName|String|已对其进行分配的资源的显示名称。|
-|resourceId|Guid|为其进行了分配的目标资源 (服务主体) 的唯一标识符 (**objectId**)。|
+|resourceId|Guid|为其进行了分配的目标资源（服务主体）的唯一标识符（**objectId**）。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[appRoleAssignment](../resources/approleassignment.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_approleassignment"
@@ -76,15 +78,15 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

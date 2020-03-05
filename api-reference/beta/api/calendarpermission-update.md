@@ -5,14 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 98deef23a65fd4bfa9fc2ae6f112d97e38cf9bf5
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 970edd0479798fc07e505476b24796b890221396
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651965"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440890"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
+
+命名空间： microsoft. graph
 
 通过日历的相应[calendarPermission](../resources/calendarpermission.md)对象更新分配给现有 sharee 或代理的权限。
 
@@ -55,7 +57,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| 为日历 sharee 或代理人更改的权限级别。 |
 
@@ -69,7 +71,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 下面的示例将 sharee、Adele、的权限级别更改为`write`。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["RGVmYXVsdA=="],
@@ -84,15 +86,15 @@ Content-type: application/json
   "role": "write"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

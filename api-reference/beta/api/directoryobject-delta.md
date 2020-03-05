@@ -1,22 +1,24 @@
 ---
-title: 'directoryObject: delta'
-description: '在单个增量查询中获取以下类型的新创建、更新或删除的目录对象: 用户、组和组织联系人。 有关详细信息，请参阅“跟踪更改”。'
+title: directoryObject： delta
+description: 在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：用户、组和组织联系人。 有关详细信息，请参阅“跟踪更改”。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f3c547d9589c2b94e261113fafca8adc2f70f688
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 96b3597be4a9027d1aa787f76ee52e39aa5f1107
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42434973"
 ---
-# <a name="directoryobject-delta"></a>directoryObject: delta
+# <a name="directoryobject-delta"></a>directoryObject： delta
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在单个增量查询中获取以下类型的新创建、更新或删除的目录对象:[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
+在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +32,7 @@ ms.locfileid: "36718224"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改, 请在 directoryObjects 资源上发出包含 delta 函数的请求。
+若要开始跟踪更改，请在 directoryObjects 资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -55,8 +57,8 @@ GET /directoryObjects/delta
 
 此方法支持可选 OData 查询参数来帮助自定义响应。
 
-- 您可以与`$filter`特殊`isOf`运算符一起使用, 以筛选从 directoryObject 派生的类型的子集。
-  - 您可以将多个表达式与`or`结合使用, 这样您就可以让单个增量查询跟踪多个类型。 有关详细信息, 请参阅[第三个示例](#request-3)。
+- 您可以与`$filter`特殊`isOf`运算符一起使用，以筛选从 directoryObject 派生的类型的子集。
+  - 您可以将多个表达式与`or`结合使用，这样您就可以让单个增量查询跟踪多个类型。 有关详细信息，请参阅[第三个示例](#request-3)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -91,7 +93,7 @@ GET /directoryObjects/delta
 - 如果之前从未设置属性，则它不会包括在响应中。
 
 
-> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外, 增量响应往往很大, 因为它们包含所有属性值。
+> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外，增量响应往往很大，因为它们包含所有属性值。
 
 #### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
 
@@ -108,7 +110,7 @@ GET /directoryObjects/delta
 
 下面展示了示例请求。 没有 `$select` 参数，因为将跟踪并返回默认的属性集。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directory_object_delta"
@@ -117,15 +119,15 @@ GET /directoryObjects/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directory-object-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directory-object-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directory-object-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,7 +136,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>响应 1
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 未`isOf`使用任何筛选器, 因此将返回从 directoryObject 派生的所有类型。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 未`isOf`使用任何筛选器，因此将返回从 directoryObject 派生的所有类型。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
@@ -196,9 +198,9 @@ Content-type: application/json
 
 ### <a name="request-2"></a>请求 2
 
-下面的示例展示了如何使用替代的最小响应行为:
+下面的示例展示了如何使用替代的最小响应行为：
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryObject_delta"
@@ -208,15 +210,15 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -264,9 +266,9 @@ Content-type: application/json
 
 ### <a name="request-3"></a>请求 3
 
-下一个示例显示使用`isOf`运算符筛选出仅用户和组实体的初始请求:
+下一个示例显示使用`isOf`运算符筛选出仅用户和组实体的初始请求：
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_delta"
@@ -275,15 +277,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -292,7 +294,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 ### <a name="response-3"></a>响应 3
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意, 仅返回 user 和 group 对象:
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，仅返回 user 和 group 对象：
 
 <!-- {
   "blockType": "response",

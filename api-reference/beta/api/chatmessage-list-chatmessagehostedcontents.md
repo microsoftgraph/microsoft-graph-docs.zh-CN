@@ -5,14 +5,16 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cc43513ea215f9e4a0d037c39fb9e9fe560e0bb3
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 0be0b5668b4e583b855ae4e4e85fdb7bc4169705
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42438370"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +26,12 @@ ms.locfileid: "37439868"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>聊天、阅读和读写<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
+|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 对于**用户**或**聊天**资源：<br/>"聊天室"、"所有"、"全部聊天"<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
+|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，您必须请求访问权限。 有关详细信息，请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,9 +43,9 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents
 GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此操作不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -65,7 +67,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hostedcontents"
@@ -74,15 +76,15 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontents-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

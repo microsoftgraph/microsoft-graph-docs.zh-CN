@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a43cda1f55516d61383f6a31c1742d87eb5c42d2
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: f9a6eb580d7a4873cf9e909308243f22ac2b935a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036128"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441345"
 ---
 # <a name="get-attachment"></a>获取附件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,13 +23,13 @@ ms.locfileid: "37036128"
 附件可以是下列类型之一：
 
 * 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
-* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。 您可以使用`$expand`来进一步获取该项目的属性。 请参阅[示例](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message)。
+* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。 可使用 `$expand` 来进一步获取该项的属性。 请参阅[示例](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message)。
 * 指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
-您可以追加路径段`/$value`以获取文件或项目附件的原始内容。 
+你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
 
 对于文件附件，内容类型基于其原始内容类型。 请参阅以下[示例](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
 
@@ -35,11 +37,11 @@ ms.locfileid: "37036128"
 
 | 项目附件类型  | 返回的原始内容 |
 |:-----------|:----------|
-| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html)MIME 格式。 请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
+| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
 | **事件** | iCal MIME 格式。 请参阅[示例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
 | **邮件** | MIME 格式。 请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
 
-尝试获取引用附件`$value`的尝试返回 HTTP 405。
+尝试获取参考附件的 `$value` 时返回 HTTP 405。
 
 ## <a name="permissions"></a>权限
 
@@ -59,7 +61,7 @@ ms.locfileid: "37036128"
 本节显示支持附件的每个实体（[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)和[文章](../resources/post.md)）的 HTTP GET 请求语法：
 
 - 若要获取附件的属性和关系，请将附件 ID 指定为附加到指定[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[post](../resources/post.md)实例的**附件**集合中的索引。
-- 如果附件是文件或 Outlook 项目（联系人、事件或邮件），您可以通过将路径段`/$value`追加到请求 URL 来进一步获取附件的原始内容。
+- 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
 [事件](../resources/event.md)的附件：
 
@@ -146,20 +148,20 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 如果成功，GET 方法将返回`200 OK`响应代码。 
 
-如果要获取附件的属性和关系，响应正文包含[附件](../resources/attachment.md)对象。
-将返回该类型的附件的属性： [fileAttachment](../resources/fileattachment.md)、 [itemAttachment](../resources/itemattachment.md)或[referenceAttachment](../resources/referenceattachment.md)。
+如果要获取附件的属性和关系，则响应正文应包含 [attachment](../resources/attachment.md) 对象。
+返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceattachment.md)。
 
-如果要获取文件或项目附件的原始内容，响应正文将包含附件的原始值。
+如果要获取文件或项目附件的原始内容，则响应正文应包含附件的原始值。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a>示例1：获取文件附件的属性
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a>示例 1：获取文件附件的属性
 
 #### <a name="request"></a>请求
 
 下面的示例展示了获取邮件的文件附件属性的请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -169,15 +171,15 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -213,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a>示例2：获取项目附件的属性
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a>示例 2：获取项目附件的属性
 
 #### <a name="request"></a>请求
 
-下一个示例展示了如何获取邮件的项目附件。 返回**itemAttachment**的属性。
+下一个示例演示如何在邮件上获取项目附件。 返回 **itemAttachment** 的属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -229,15 +231,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -269,12 +271,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>示例3：展开和获取附加到邮件的项目的属性
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>示例 3：展开并获取附加到邮件的项目的属性
 #### <a name="request"></a>请求
 
-下一个示例演示如何使用`$expand`获取附加到邮件的项目（联系人、事件或邮件）的属性。 在此示例中，该项目是一条消息;此外，还将返回该附加邮件的属性。
+下一个示例演示如何使用 `$expand` 来获取附加到该邮件的项目（联系人、事件或邮件）的属性。 在此示例中，该项目是一封邮件；还会返回该附加邮件的属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -284,15 +286,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -379,13 +381,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>示例4：获取引用附件的属性
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>示例 4：获取参考附件的属性
 
 #### <a name="request"></a>请求
 
 下面的示例展示了用于获取事件的参考附件的请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -395,15 +397,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -442,11 +444,11 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>示例5：获取邮件的文件附件的原始内容
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>示例 5：获取邮件上的文件附件的原始内容
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取已附加到邮件的 Word 文件的原始内容的请求。
+下面是请求获取已附加到邮件的 Word 文件原始内容的示例。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -458,7 +460,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 实际的响应正文包括文件附件的原始字节，在这里可缩写为简洁。
+下面是一个响应示例。 实际响应正文包含文件附件的原始字节，为简洁起见，此处为缩写。
 
 <!-- {
   "blockType": "ignored",
@@ -473,11 +475,11 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>示例6：获取邮件的联系人附件的 MIME 原始内容
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>示例 6：获取邮件上的联系人附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取已附加到邮件的联系人项目的原始内容的请求。 
+下面是请求获取已附加到邮件的联系人项目原始内容的示例。 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -522,11 +524,11 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例7：获取邮件的事件附件的 MIME 原始内容
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例 7：获取邮件上的事件附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取已附加到邮件的事件的原始内容的请求。 
+下面是请求获取已附加到邮件的事件原始内容的示例。 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -602,11 +604,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例8：获取邮件上会议邀请项目附件的 MIME 原始内容
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例 8：获取邮件上的会议邀请项目附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取已附加到邮件的会议邀请（ [eventMessage](../resources/eventmessage.md)类型）的原始内容的请求。 **EventMessage**实体基于**邮件**类型。
+下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。 **eventMessage** 实体基于**邮件**类型。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -620,7 +622,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 #### <a name="response"></a>响应
 下面是一个响应示例。 
 
-响应正文包含 MIME 格式的**eventMessage**附件。 为简洁起见， **eventMessage**的正文将被截断。 实际调用会返回完整的邮件正文。
+响应正文包含 MIME 格式的 **eventMessage** 附件。 为简洁起见，已截断 **eventMessage** 的正文。 可通过实际调用返回完整的邮件正文。
 
 <!-- {
   "blockType": "ignored",

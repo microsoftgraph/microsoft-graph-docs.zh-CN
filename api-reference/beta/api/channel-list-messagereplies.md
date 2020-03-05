@@ -5,32 +5,34 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bbc1df4dc8f7c439049b722d2f6c5c10941ec1f4
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 6dd782e937e4709a899a22f9bbc49af0f0ed6548
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440309"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在团队的[频道](../resources/channel.md)中列出[邮件](../resources/chatmessage.md)的所有答复。
 
-此方法仅列出指定邮件的答复 (如果有)。 若要获取邮件本身, 只需调用[get 信道消息](channel-get-message.md)即可。
+此方法仅列出指定邮件的答复（如果有）。 若要获取邮件本身，只需调用[get 信道消息](channel-get-message.md)即可。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
+|委派（工作或学校帐户）| ChannelMessage、Group、group、Group。 All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| Group.Read.All、Group.ReadWrite.All|
+|应用程序| ChannelMessage、Group、group、Group。 All|
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前, 您必须请求访问权限。 有关详细信息, 请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,9 +56,9 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/channel.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在此示例中, 指定的邮件有两个答复。 每个答复都有一个或多个[chatMessageMention](../resources/chatmessagemention.md)对象。
+在此示例中，指定的邮件有两个答复。 每个答复都有一个或多个[chatMessageMention](../resources/chatmessagemention.md)对象。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
@@ -65,15 +67,15 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-replies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

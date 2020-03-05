@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e495929ad2a927abc837683e6007daea1f8246ad
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: dc2ed04abef450415cc4ee9802cceed687dc324b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417561"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42435197"
 ---
 # <a name="create-featurerolloutpolicy"></a>创建 featureRolloutPolicy
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36417561"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | FeatureRollout |
+| 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -44,7 +46,7 @@ POST /directory/featureRolloutPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 JSON 表示形式。
 
 下表显示创建[featureRolloutPolicy](../resources/featurerolloutpolicy.md)时所需的属性。
 
@@ -56,7 +58,7 @@ POST /directory/featureRolloutPolicies
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -64,7 +66,7 @@ POST /directory/featureRolloutPolicies
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_featurerolloutpolicy_from_directory"
@@ -82,15 +84,15 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-featurerolloutpolicy-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-featurerolloutpolicy-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-featurerolloutpolicy-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

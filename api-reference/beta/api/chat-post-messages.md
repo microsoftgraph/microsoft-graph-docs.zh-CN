@@ -5,18 +5,20 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 96099cf2628b31a03013ae680439e97a55f952c5
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 66e73ac2c3523c7c374c78143a91fc7a5e846778
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42438566"
 ---
 # <a name="create-chatmessage"></a>创建了 chatmessage
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[聊天](../resources/chat.md)中创建新[邮件](../resources/chatmessage.md)。 此 API 无法创建新聊天, 在创建聊天消息之前, 必须使用 "[列表聊天](chat-list.md)" 方法检索现有聊天的 Id。
+在指定的[聊天](../resources/chat.md)中创建新[邮件](../resources/chatmessage.md)。 此 API 无法创建新聊天，在创建聊天消息之前，必须使用 "[列表聊天](chat-list.md)" 方法检索现有聊天的 Id。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +26,7 @@ ms.locfileid: "36460820"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 聊天读 |
+| 委派（工作或学校帐户）     | Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -45,11 +47,11 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。
+在请求正文中，提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -57,7 +59,7 @@ POST /users/{id}/chats/{id}/messages
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_chat"
@@ -73,15 +75,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

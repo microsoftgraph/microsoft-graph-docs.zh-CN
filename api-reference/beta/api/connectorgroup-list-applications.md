@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 772dc51a25595de71dec9a760cceb1281347ea8e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 350bc05c94bf177a350ee681e83cc16323f26046
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943461"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437467"
 ---
 # <a name="list-applications"></a>列出应用程序
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,7 @@ GET /connectorGroups/{id}/applications
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[application](../resources/application.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[application](../resources/application.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

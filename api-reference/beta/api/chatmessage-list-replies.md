@@ -5,14 +5,16 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5a781b6f6c4e3aeea7941ed956b99f182dc3110
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: d8e3332a7ed50dd7c1ba383b247cd5016af5a768
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113861"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42438356"
 ---
 # <a name="list-replies"></a>列表答复
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +26,12 @@ ms.locfileid: "37113861"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 聊天、阅读和读写 |
+| 委派（工作或学校帐户）     | Chat.Read、Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Chat.Read.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，您必须请求访问权限。 有关详细信息，请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +43,7 @@ GET /chats/{id}/messages/{id}/replies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此操作不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,7 +65,7 @@ GET /chats/{id}/messages/{id}/replies
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_replies"
@@ -72,15 +74,15 @@ GET /chats/{id}/messages/{id}/replies
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

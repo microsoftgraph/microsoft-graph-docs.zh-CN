@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d3bef033cdd609982f7edf6c178d9393b06dd0a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3d9021a07e028561c45e196bbca62291a5e532e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951174"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42435043"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ ms.locfileid: "35951174"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-**注意：** 用户、组和联系人是 directory 对象的类型。 因此, 如果需要删除用户, 可以且应使用以下权限: User. ReadWrite。 All
+**注意：** 用户、组和联系人是 directory 对象的类型。 因此，如果需要删除用户，可以且应使用以下权限： User. ReadWrite。 All
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

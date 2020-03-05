@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c8b428ca6c724ce37116430cbae56587866c13eb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dce30f90f35bb373be845aaa9390c9da8c54d02f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943384"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437180"
 ---
 # <a name="add-connector-to-connectorgroup"></a>将连接器添加到 connectorGroup
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,11 +39,11 @@ POST /connectorGroups/{id}/members/$ref
 | Authorization  | 负载. 必需|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。
+在请求正文中，提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[连接器](../resources/connector.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[连接器](../resources/connector.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -59,7 +61,7 @@ Content-length: 104
   "@odata.id": "https://graph.microsoft.com/{ver}/connector/{id}"
 }
 ```
-在请求正文中, 提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。
+在请求正文中，提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

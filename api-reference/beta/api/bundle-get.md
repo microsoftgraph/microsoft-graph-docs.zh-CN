@@ -6,14 +6,16 @@ description: 获取 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 495b4b5487ce413c682bbe81589f920132755c64
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 191157efb35b50ecff358d7902a7a6c42a6fb7a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718791"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441030"
 ---
 # <a name="get-bundle"></a>获取捆绑包
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-由于捆绑包是项, 因此可以使用**items**集合返回有关捆绑包的元数据。
+由于捆绑包是项，因此可以使用**items**集合返回有关捆绑包的元数据。
 你也可以使用**捆绑包**集合来确保你在响应时获得捆绑包。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -55,32 +57,32 @@ GET /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应正文中返回[driveItem][driveItem] resource with the [bundle][bundle] 。
+如果成功，此方法在响应正文中返回[driveItem][driveItem] resource with the [bundle][bundle] 。
 
-阅读 "[错误响应][error-response]" 主题, 了解有关如何返回错误的详细信息。
+阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-bundle"></a>示例 1: 获取捆绑包
+### <a name="example-1-get-a-bundle"></a>示例1：获取捆绑包
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,30 +115,30 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例 2: 在单个调用中获取捆绑包及其子项
+### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例2：在单个调用中获取捆绑包及其子项
 
 您可以使用[`expand`](/graph/query-parameters)查询字符串参数在与检索捆绑的元数据的相同调用中添加捆绑包的子项。
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-and-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -146,9 +148,9 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 #### <a name="response"></a>响应
 
 此调用将返回捆绑包元数据和捆绑的子项列表。
-如果捆绑包没有任何子级, 则将返回一个空集合。
+如果捆绑包没有任何子级，则将返回一个空集合。
 
-如果捆绑包中的子项数量大于默认页面大小, 则将使用可用于请求捆绑中的下一页子页面的 URL 返回**子级 @ nextLink**属性。
+如果捆绑包中的子项数量大于默认页面大小，则将使用可用于请求捆绑中的下一页子页面的 URL 返回**children@odata 的 nextLink**属性。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -167,7 +169,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

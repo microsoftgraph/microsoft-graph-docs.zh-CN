@@ -5,22 +5,24 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 026e732a1206a2f984bca16ad24069c2a8074c2e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fade418332f3e914a2a24d0e17bca515b77c9f6b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441220"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
+
+命名空间： microsoft. graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取已为租户创建的[bookingbusiness](../resources/bookingbusiness.md)对象的集合。
 
-此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑, 它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
+此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
 
-您还可以通过在`query`参数中指定字符串以执行租户的业务中的子字符串匹配, 从而查询预订业务。 请参阅以下[示例](#request-2)。
+您还可以通过在`query`参数中指定字符串以执行租户的业务中的子字符串匹配，从而查询预订业务。 请参阅以下[示例](#request-2)。
 
 
 ## <a name="permissions"></a>权限
@@ -51,12 +53,12 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
 下面的示例获取租户中的预订企业。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
@@ -64,15 +66,15 @@ GET /bookingBusinesses
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +111,7 @@ Content-type: application/json
 ##### <a name="request-2"></a>请求 2
 下面的示例演示如何使用`query`参数在租户中获取一个或多个匹配的预订企业。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query_bookingbusinesses"
@@ -117,15 +119,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/query-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/query-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/query-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
