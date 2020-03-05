@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 874059757ccd2cc21094d1a71d1c26f9f715a0ef
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a1b786000ca5fecdebc2e31b82f2de19deaf3e61
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39931940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444593"
 ---
-# <a name="update-deviceinstallstate"></a><span data-ttu-id="699e0-103">更新 deviceInstallState</span><span class="sxs-lookup"><span data-stu-id="699e0-103">Update deviceInstallState</span></span>
+# <a name="update-deviceinstallstate"></a><span data-ttu-id="4f3ef-103">更新 deviceInstallState</span><span class="sxs-lookup"><span data-stu-id="4f3ef-103">Update deviceInstallState</span></span>
 
-> <span data-ttu-id="699e0-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="699e0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4f3ef-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="4f3ef-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="699e0-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="699e0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4f3ef-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="699e0-106">更新 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="699e0-106">Update the properties of a [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.</span></span>
+> <span data-ttu-id="4f3ef-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="699e0-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="699e0-107">Prerequisites</span></span>
-<span data-ttu-id="699e0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="699e0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4f3ef-107">更新 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-107">Update the properties of a [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.</span></span>
 
-|<span data-ttu-id="699e0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="699e0-110">Permission type</span></span>|<span data-ttu-id="699e0-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="699e0-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="4f3ef-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="4f3ef-108">Prerequisites</span></span>
+<span data-ttu-id="4f3ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="4f3ef-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4f3ef-111">Permission type</span></span>|<span data-ttu-id="4f3ef-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4f3ef-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="699e0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="699e0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="699e0-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="699e0-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="699e0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="699e0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="699e0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="699e0-115">Not supported.</span></span>|
-|<span data-ttu-id="699e0-116">Application</span><span class="sxs-lookup"><span data-stu-id="699e0-116">Application</span></span>|<span data-ttu-id="699e0-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="699e0-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f3ef-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4f3ef-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4f3ef-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f3ef-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f3ef-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4f3ef-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4f3ef-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-116">Not supported.</span></span>|
+|<span data-ttu-id="4f3ef-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4f3ef-117">Application</span></span>|<span data-ttu-id="4f3ef-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f3ef-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="699e0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="699e0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f3ef-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4f3ef-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,38 +41,38 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceIn
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/{deviceInstallStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="699e0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="699e0-119">Request headers</span></span>
-|<span data-ttu-id="699e0-120">标头</span><span class="sxs-lookup"><span data-stu-id="699e0-120">Header</span></span>|<span data-ttu-id="699e0-121">值</span><span class="sxs-lookup"><span data-stu-id="699e0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f3ef-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4f3ef-120">Request headers</span></span>
+|<span data-ttu-id="4f3ef-121">标头</span><span class="sxs-lookup"><span data-stu-id="4f3ef-121">Header</span></span>|<span data-ttu-id="4f3ef-122">值</span><span class="sxs-lookup"><span data-stu-id="4f3ef-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="699e0-122">授权</span><span class="sxs-lookup"><span data-stu-id="699e0-122">Authorization</span></span>|<span data-ttu-id="699e0-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="699e0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="699e0-124">接受</span><span class="sxs-lookup"><span data-stu-id="699e0-124">Accept</span></span>|<span data-ttu-id="699e0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="699e0-125">application/json</span></span>|
+|<span data-ttu-id="4f3ef-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f3ef-123">Authorization</span></span>|<span data-ttu-id="4f3ef-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4f3ef-125">接受</span><span class="sxs-lookup"><span data-stu-id="4f3ef-125">Accept</span></span>|<span data-ttu-id="4f3ef-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4f3ef-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="699e0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="699e0-126">Request body</span></span>
-<span data-ttu-id="699e0-127">在请求正文中，提供 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="699e0-127">In the request body, supply a JSON representation for the [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f3ef-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4f3ef-127">Request body</span></span>
+<span data-ttu-id="4f3ef-128">在请求正文中，提供 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-128">In the request body, supply a JSON representation for the [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.</span></span>
 
-<span data-ttu-id="699e0-128">下表显示创建 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="699e0-128">The following table shows the properties that are required when you create the [deviceInstallState](../resources/intune-books-deviceinstallstate.md).</span></span>
+<span data-ttu-id="4f3ef-129">下表显示创建 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-129">The following table shows the properties that are required when you create the [deviceInstallState](../resources/intune-books-deviceinstallstate.md).</span></span>
 
-|<span data-ttu-id="699e0-129">属性</span><span class="sxs-lookup"><span data-stu-id="699e0-129">Property</span></span>|<span data-ttu-id="699e0-130">类型</span><span class="sxs-lookup"><span data-stu-id="699e0-130">Type</span></span>|<span data-ttu-id="699e0-131">说明</span><span class="sxs-lookup"><span data-stu-id="699e0-131">Description</span></span>|
+|<span data-ttu-id="4f3ef-130">属性</span><span class="sxs-lookup"><span data-stu-id="4f3ef-130">Property</span></span>|<span data-ttu-id="4f3ef-131">类型</span><span class="sxs-lookup"><span data-stu-id="4f3ef-131">Type</span></span>|<span data-ttu-id="4f3ef-132">说明</span><span class="sxs-lookup"><span data-stu-id="4f3ef-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="699e0-132">id</span><span class="sxs-lookup"><span data-stu-id="699e0-132">id</span></span>|<span data-ttu-id="699e0-133">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-133">String</span></span>|<span data-ttu-id="699e0-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="699e0-134">Key of the entity.</span></span>|
-|<span data-ttu-id="699e0-135">deviceName</span><span class="sxs-lookup"><span data-stu-id="699e0-135">deviceName</span></span>|<span data-ttu-id="699e0-136">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-136">String</span></span>|<span data-ttu-id="699e0-137">设备名称。</span><span class="sxs-lookup"><span data-stu-id="699e0-137">Device name.</span></span>|
-|<span data-ttu-id="699e0-138">deviceId</span><span class="sxs-lookup"><span data-stu-id="699e0-138">deviceId</span></span>|<span data-ttu-id="699e0-139">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-139">String</span></span>|<span data-ttu-id="699e0-140">设备 ID。</span><span class="sxs-lookup"><span data-stu-id="699e0-140">Device Id.</span></span>|
-|<span data-ttu-id="699e0-141">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="699e0-141">lastSyncDateTime</span></span>|<span data-ttu-id="699e0-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="699e0-142">DateTimeOffset</span></span>|<span data-ttu-id="699e0-143">上次同步日期和时间。</span><span class="sxs-lookup"><span data-stu-id="699e0-143">Last sync date and time.</span></span>|
-|<span data-ttu-id="699e0-144">installState</span><span class="sxs-lookup"><span data-stu-id="699e0-144">installState</span></span>|[<span data-ttu-id="699e0-145">installState</span><span class="sxs-lookup"><span data-stu-id="699e0-145">installState</span></span>](../resources/intune-books-installstate.md)|<span data-ttu-id="699e0-146">电子图书的安装状态。</span><span class="sxs-lookup"><span data-stu-id="699e0-146">The install state of the eBook.</span></span> <span data-ttu-id="699e0-147">可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="699e0-147">Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.</span></span>|
-|<span data-ttu-id="699e0-148">errorCode</span><span class="sxs-lookup"><span data-stu-id="699e0-148">errorCode</span></span>|<span data-ttu-id="699e0-149">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-149">String</span></span>|<span data-ttu-id="699e0-150">安装失败的错误代码。</span><span class="sxs-lookup"><span data-stu-id="699e0-150">The error code for install failures.</span></span>|
-|<span data-ttu-id="699e0-151">osVersion</span><span class="sxs-lookup"><span data-stu-id="699e0-151">osVersion</span></span>|<span data-ttu-id="699e0-152">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-152">String</span></span>|<span data-ttu-id="699e0-153">操作系统版本。</span><span class="sxs-lookup"><span data-stu-id="699e0-153">OS Version.</span></span>|
-|<span data-ttu-id="699e0-154">osDescription</span><span class="sxs-lookup"><span data-stu-id="699e0-154">osDescription</span></span>|<span data-ttu-id="699e0-155">字符串</span><span class="sxs-lookup"><span data-stu-id="699e0-155">String</span></span>|<span data-ttu-id="699e0-156">操作系统说明。</span><span class="sxs-lookup"><span data-stu-id="699e0-156">OS Description.</span></span>|
-|<span data-ttu-id="699e0-157">userName</span><span class="sxs-lookup"><span data-stu-id="699e0-157">userName</span></span>|<span data-ttu-id="699e0-158">String</span><span class="sxs-lookup"><span data-stu-id="699e0-158">String</span></span>|<span data-ttu-id="699e0-159">设备用户名。</span><span class="sxs-lookup"><span data-stu-id="699e0-159">Device User Name.</span></span>|
+|<span data-ttu-id="4f3ef-133">id</span><span class="sxs-lookup"><span data-stu-id="4f3ef-133">id</span></span>|<span data-ttu-id="4f3ef-134">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-134">String</span></span>|<span data-ttu-id="4f3ef-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-135">Key of the entity.</span></span>|
+|<span data-ttu-id="4f3ef-136">deviceName</span><span class="sxs-lookup"><span data-stu-id="4f3ef-136">deviceName</span></span>|<span data-ttu-id="4f3ef-137">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-137">String</span></span>|<span data-ttu-id="4f3ef-138">设备名称。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-138">Device name.</span></span>|
+|<span data-ttu-id="4f3ef-139">deviceId</span><span class="sxs-lookup"><span data-stu-id="4f3ef-139">deviceId</span></span>|<span data-ttu-id="4f3ef-140">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-140">String</span></span>|<span data-ttu-id="4f3ef-141">设备 ID。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-141">Device Id.</span></span>|
+|<span data-ttu-id="4f3ef-142">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="4f3ef-142">lastSyncDateTime</span></span>|<span data-ttu-id="4f3ef-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f3ef-143">DateTimeOffset</span></span>|<span data-ttu-id="4f3ef-144">上次同步日期和时间。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-144">Last sync date and time.</span></span>|
+|<span data-ttu-id="4f3ef-145">installState</span><span class="sxs-lookup"><span data-stu-id="4f3ef-145">installState</span></span>|[<span data-ttu-id="4f3ef-146">installState</span><span class="sxs-lookup"><span data-stu-id="4f3ef-146">installState</span></span>](../resources/intune-books-installstate.md)|<span data-ttu-id="4f3ef-147">电子图书的安装状态。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-147">The install state of the eBook.</span></span> <span data-ttu-id="4f3ef-148">可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-148">Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.</span></span>|
+|<span data-ttu-id="4f3ef-149">errorCode</span><span class="sxs-lookup"><span data-stu-id="4f3ef-149">errorCode</span></span>|<span data-ttu-id="4f3ef-150">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-150">String</span></span>|<span data-ttu-id="4f3ef-151">安装失败的错误代码。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-151">The error code for install failures.</span></span>|
+|<span data-ttu-id="4f3ef-152">osVersion</span><span class="sxs-lookup"><span data-stu-id="4f3ef-152">osVersion</span></span>|<span data-ttu-id="4f3ef-153">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-153">String</span></span>|<span data-ttu-id="4f3ef-154">操作系统版本。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-154">OS Version.</span></span>|
+|<span data-ttu-id="4f3ef-155">osDescription</span><span class="sxs-lookup"><span data-stu-id="4f3ef-155">osDescription</span></span>|<span data-ttu-id="4f3ef-156">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-156">String</span></span>|<span data-ttu-id="4f3ef-157">操作系统说明。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-157">OS Description.</span></span>|
+|<span data-ttu-id="4f3ef-158">userName</span><span class="sxs-lookup"><span data-stu-id="4f3ef-158">userName</span></span>|<span data-ttu-id="4f3ef-159">String</span><span class="sxs-lookup"><span data-stu-id="4f3ef-159">String</span></span>|<span data-ttu-id="4f3ef-160">设备用户名。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-160">Device User Name.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="699e0-160">响应</span><span class="sxs-lookup"><span data-stu-id="699e0-160">Response</span></span>
-<span data-ttu-id="699e0-161">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="699e0-161">If successful, this method returns a `200 OK` response code and an updated [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4f3ef-161">响应</span><span class="sxs-lookup"><span data-stu-id="4f3ef-161">Response</span></span>
+<span data-ttu-id="4f3ef-162">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-162">If successful, this method returns a `200 OK` response code and an updated [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="699e0-162">示例</span><span class="sxs-lookup"><span data-stu-id="699e0-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f3ef-163">示例</span><span class="sxs-lookup"><span data-stu-id="4f3ef-163">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="699e0-163">请求</span><span class="sxs-lookup"><span data-stu-id="699e0-163">Request</span></span>
-<span data-ttu-id="699e0-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="699e0-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4f3ef-164">请求</span><span class="sxs-lookup"><span data-stu-id="4f3ef-164">Request</span></span>
+<span data-ttu-id="4f3ef-165">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-165">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
@@ -89,8 +91,8 @@ Content-length: 374
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="699e0-165">响应</span><span class="sxs-lookup"><span data-stu-id="699e0-165">Response</span></span>
-<span data-ttu-id="699e0-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="699e0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4f3ef-166">响应</span><span class="sxs-lookup"><span data-stu-id="4f3ef-166">Response</span></span>
+<span data-ttu-id="4f3ef-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4f3ef-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
