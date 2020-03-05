@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b9104302f2a5ecf14207811e37debf5cef2c834
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 00d28920633f4f8aa205c77a99d70fb26639148d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529902"
 ---
-# <a name="ioshomescreenpage-resource-type"></a><span data-ttu-id="82d03-103">iosHomeScreenPage 资源类型</span><span class="sxs-lookup"><span data-stu-id="82d03-103">iosHomeScreenPage resource type</span></span>
+# <a name="ioshomescreenpage-resource-type"></a><span data-ttu-id="c83e0-103">iosHomeScreenPage 资源类型</span><span class="sxs-lookup"><span data-stu-id="c83e0-103">iosHomeScreenPage resource type</span></span>
 
-> <span data-ttu-id="82d03-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="82d03-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="c83e0-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c83e0-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="82d03-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="82d03-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c83e0-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c83e0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="82d03-106">包含主屏幕上的应用和文件夹的页面</span><span class="sxs-lookup"><span data-stu-id="82d03-106">A page containing apps and folders on the Home Screen</span></span>
+> <span data-ttu-id="c83e0-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c83e0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="82d03-107">属性</span><span class="sxs-lookup"><span data-stu-id="82d03-107">Properties</span></span>
-|<span data-ttu-id="82d03-108">属性</span><span class="sxs-lookup"><span data-stu-id="82d03-108">Property</span></span>|<span data-ttu-id="82d03-109">类型</span><span class="sxs-lookup"><span data-stu-id="82d03-109">Type</span></span>|<span data-ttu-id="82d03-110">说明</span><span class="sxs-lookup"><span data-stu-id="82d03-110">Description</span></span>|
+<span data-ttu-id="c83e0-107">包含主屏幕上的应用和文件夹的页面</span><span class="sxs-lookup"><span data-stu-id="c83e0-107">A page containing apps and folders on the Home Screen</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c83e0-108">属性</span><span class="sxs-lookup"><span data-stu-id="c83e0-108">Properties</span></span>
+|<span data-ttu-id="c83e0-109">属性</span><span class="sxs-lookup"><span data-stu-id="c83e0-109">Property</span></span>|<span data-ttu-id="c83e0-110">类型</span><span class="sxs-lookup"><span data-stu-id="c83e0-110">Type</span></span>|<span data-ttu-id="c83e0-111">说明</span><span class="sxs-lookup"><span data-stu-id="c83e0-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="82d03-111">displayName</span><span class="sxs-lookup"><span data-stu-id="82d03-111">displayName</span></span>|<span data-ttu-id="82d03-112">String</span><span class="sxs-lookup"><span data-stu-id="82d03-112">String</span></span>|<span data-ttu-id="82d03-113">页面的名称</span><span class="sxs-lookup"><span data-stu-id="82d03-113">Name of the page</span></span>|
-|<span data-ttu-id="82d03-114">图标</span><span class="sxs-lookup"><span data-stu-id="82d03-114">icons</span></span>|<span data-ttu-id="82d03-115">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="82d03-115">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection</span></span>|<span data-ttu-id="82d03-116">要在页面上显示的应用和文件夹的列表。</span><span class="sxs-lookup"><span data-stu-id="82d03-116">A list of apps and folders to appear on a page.</span></span> <span data-ttu-id="82d03-117">该集合最多可包含 500 个元素。</span><span class="sxs-lookup"><span data-stu-id="82d03-117">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="c83e0-112">displayName</span><span class="sxs-lookup"><span data-stu-id="c83e0-112">displayName</span></span>|<span data-ttu-id="c83e0-113">String</span><span class="sxs-lookup"><span data-stu-id="c83e0-113">String</span></span>|<span data-ttu-id="c83e0-114">页面的名称</span><span class="sxs-lookup"><span data-stu-id="c83e0-114">Name of the page</span></span>|
+|<span data-ttu-id="c83e0-115">图标</span><span class="sxs-lookup"><span data-stu-id="c83e0-115">icons</span></span>|<span data-ttu-id="c83e0-116">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c83e0-116">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection</span></span>|<span data-ttu-id="c83e0-117">要在页面上显示的应用和文件夹的列表。</span><span class="sxs-lookup"><span data-stu-id="c83e0-117">A list of apps and folders to appear on a page.</span></span> <span data-ttu-id="c83e0-118">该集合最多可包含 500 个元素。</span><span class="sxs-lookup"><span data-stu-id="c83e0-118">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="82d03-118">关系</span><span class="sxs-lookup"><span data-stu-id="82d03-118">Relationships</span></span>
-<span data-ttu-id="82d03-119">无</span><span class="sxs-lookup"><span data-stu-id="82d03-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c83e0-119">关系</span><span class="sxs-lookup"><span data-stu-id="c83e0-119">Relationships</span></span>
+<span data-ttu-id="c83e0-120">无</span><span class="sxs-lookup"><span data-stu-id="c83e0-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="82d03-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="82d03-120">JSON Representation</span></span>
-<span data-ttu-id="82d03-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="82d03-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c83e0-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c83e0-121">JSON Representation</span></span>
+<span data-ttu-id="c83e0-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c83e0-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"

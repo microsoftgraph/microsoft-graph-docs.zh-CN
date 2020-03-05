@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f839e1464bd765c1d7bf6cfd9e2aecea92acfbd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f967a92ca4d6a430ffc5ac7066afd823ea19746
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527270"
 ---
-# <a name="androidvpnconnectiontype-enum-type"></a><span data-ttu-id="fd262-103">androidVpnConnectionType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="fd262-103">androidVpnConnectionType enum type</span></span>
+# <a name="androidvpnconnectiontype-enum-type"></a><span data-ttu-id="1aa0c-103">androidVpnConnectionType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="1aa0c-103">androidVpnConnectionType enum type</span></span>
 
-> <span data-ttu-id="fd262-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fd262-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="1aa0c-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="1aa0c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fd262-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fd262-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1aa0c-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fd262-106">Android VPN 连接类型。</span><span class="sxs-lookup"><span data-stu-id="fd262-106">Android VPN connection type.</span></span>
+> <span data-ttu-id="1aa0c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="fd262-107">成员</span><span class="sxs-lookup"><span data-stu-id="fd262-107">Members</span></span>
-|<span data-ttu-id="fd262-108">成员</span><span class="sxs-lookup"><span data-stu-id="fd262-108">Member</span></span>|<span data-ttu-id="fd262-109">值</span><span class="sxs-lookup"><span data-stu-id="fd262-109">Value</span></span>|<span data-ttu-id="fd262-110">说明</span><span class="sxs-lookup"><span data-stu-id="fd262-110">Description</span></span>|
+<span data-ttu-id="1aa0c-107">Android VPN 连接类型。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-107">Android VPN connection type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="1aa0c-108">成员</span><span class="sxs-lookup"><span data-stu-id="1aa0c-108">Members</span></span>
+|<span data-ttu-id="1aa0c-109">成员</span><span class="sxs-lookup"><span data-stu-id="1aa0c-109">Member</span></span>|<span data-ttu-id="1aa0c-110">值</span><span class="sxs-lookup"><span data-stu-id="1aa0c-110">Value</span></span>|<span data-ttu-id="1aa0c-111">说明</span><span class="sxs-lookup"><span data-stu-id="1aa0c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fd262-111">ciscoAnyConnect</span><span class="sxs-lookup"><span data-stu-id="fd262-111">ciscoAnyConnect</span></span>|<span data-ttu-id="fd262-112">0</span><span class="sxs-lookup"><span data-stu-id="fd262-112">0</span></span>|<span data-ttu-id="fd262-113">Cisco AnyConnect。</span><span class="sxs-lookup"><span data-stu-id="fd262-113">Cisco AnyConnect.</span></span>|
-|<span data-ttu-id="fd262-114">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="fd262-114">pulseSecure</span></span>|<span data-ttu-id="fd262-115">1</span><span class="sxs-lookup"><span data-stu-id="fd262-115">1</span></span>|<span data-ttu-id="fd262-116">脉冲安全。</span><span class="sxs-lookup"><span data-stu-id="fd262-116">Pulse Secure.</span></span>|
-|<span data-ttu-id="fd262-117">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="fd262-117">f5EdgeClient</span></span>|<span data-ttu-id="fd262-118">双面</span><span class="sxs-lookup"><span data-stu-id="fd262-118">2</span></span>|<span data-ttu-id="fd262-119">F5 边缘客户端。</span><span class="sxs-lookup"><span data-stu-id="fd262-119">F5 Edge Client.</span></span>|
-|<span data-ttu-id="fd262-120">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="fd262-120">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="fd262-121">第三章</span><span class="sxs-lookup"><span data-stu-id="fd262-121">3</span></span>|<span data-ttu-id="fd262-122">戴尔 SonicWALL 移动连接。</span><span class="sxs-lookup"><span data-stu-id="fd262-122">Dell SonicWALL Mobile Connection.</span></span>|
-|<span data-ttu-id="fd262-123">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="fd262-123">checkPointCapsuleVpn</span></span>|<span data-ttu-id="fd262-124">4</span><span class="sxs-lookup"><span data-stu-id="fd262-124">4</span></span>|<span data-ttu-id="fd262-125">检查点胶囊 VPN。</span><span class="sxs-lookup"><span data-stu-id="fd262-125">Check Point Capsule VPN.</span></span>|
-|<span data-ttu-id="fd262-126">citrix</span><span class="sxs-lookup"><span data-stu-id="fd262-126">citrix</span></span>|<span data-ttu-id="fd262-127">5</span><span class="sxs-lookup"><span data-stu-id="fd262-127">5</span></span>|<span data-ttu-id="fd262-128">Citrix</span><span class="sxs-lookup"><span data-stu-id="fd262-128">Citrix</span></span>|
+|<span data-ttu-id="1aa0c-112">ciscoAnyConnect</span><span class="sxs-lookup"><span data-stu-id="1aa0c-112">ciscoAnyConnect</span></span>|<span data-ttu-id="1aa0c-113">0</span><span class="sxs-lookup"><span data-stu-id="1aa0c-113">0</span></span>|<span data-ttu-id="1aa0c-114">Cisco AnyConnect。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-114">Cisco AnyConnect.</span></span>|
+|<span data-ttu-id="1aa0c-115">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="1aa0c-115">pulseSecure</span></span>|<span data-ttu-id="1aa0c-116">1 </span><span class="sxs-lookup"><span data-stu-id="1aa0c-116">1</span></span>|<span data-ttu-id="1aa0c-117">脉冲安全。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-117">Pulse Secure.</span></span>|
+|<span data-ttu-id="1aa0c-118">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="1aa0c-118">f5EdgeClient</span></span>|<span data-ttu-id="1aa0c-119">2 </span><span class="sxs-lookup"><span data-stu-id="1aa0c-119">2</span></span>|<span data-ttu-id="1aa0c-120">F5 边缘客户端。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-120">F5 Edge Client.</span></span>|
+|<span data-ttu-id="1aa0c-121">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="1aa0c-121">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="1aa0c-122">3 </span><span class="sxs-lookup"><span data-stu-id="1aa0c-122">3</span></span>|<span data-ttu-id="1aa0c-123">戴尔 SonicWALL 移动连接。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-123">Dell SonicWALL Mobile Connection.</span></span>|
+|<span data-ttu-id="1aa0c-124">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="1aa0c-124">checkPointCapsuleVpn</span></span>|<span data-ttu-id="1aa0c-125">4 </span><span class="sxs-lookup"><span data-stu-id="1aa0c-125">4</span></span>|<span data-ttu-id="1aa0c-126">检查点胶囊 VPN。</span><span class="sxs-lookup"><span data-stu-id="1aa0c-126">Check Point Capsule VPN.</span></span>|
+|<span data-ttu-id="1aa0c-127">citrix</span><span class="sxs-lookup"><span data-stu-id="1aa0c-127">citrix</span></span>|<span data-ttu-id="1aa0c-128">5 </span><span class="sxs-lookup"><span data-stu-id="1aa0c-128">5</span></span>|<span data-ttu-id="1aa0c-129">Citrix</span><span class="sxs-lookup"><span data-stu-id="1aa0c-129">Citrix</span></span>|
 
 
 

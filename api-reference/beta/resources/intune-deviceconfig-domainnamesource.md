@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcd30a4ab2dea5dbdd4d452799aa18a5dca799ff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1c3ad51aa2c657cc4544f1fdef5d93297beca092
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332671"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530096"
 ---
-# <a name="domainnamesource-enum-type"></a><span data-ttu-id="56b15-103">domainNameSource 枚举类型</span><span class="sxs-lookup"><span data-stu-id="56b15-103">domainNameSource enum type</span></span>
+# <a name="domainnamesource-enum-type"></a><span data-ttu-id="e7f4c-103">domainNameSource 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e7f4c-103">domainNameSource enum type</span></span>
 
-> <span data-ttu-id="56b15-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="56b15-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e7f4c-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e7f4c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="56b15-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="56b15-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e7f4c-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e7f4c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="56b15-106">Domainname 源。</span><span class="sxs-lookup"><span data-stu-id="56b15-106">Domainname source.</span></span>
+> <span data-ttu-id="e7f4c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e7f4c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="56b15-107">成员</span><span class="sxs-lookup"><span data-stu-id="56b15-107">Members</span></span>
-|<span data-ttu-id="56b15-108">成员</span><span class="sxs-lookup"><span data-stu-id="56b15-108">Member</span></span>|<span data-ttu-id="56b15-109">值</span><span class="sxs-lookup"><span data-stu-id="56b15-109">Value</span></span>|<span data-ttu-id="56b15-110">说明</span><span class="sxs-lookup"><span data-stu-id="56b15-110">Description</span></span>|
+<span data-ttu-id="e7f4c-107">Domainname 源。</span><span class="sxs-lookup"><span data-stu-id="e7f4c-107">Domainname source.</span></span>
+
+## <a name="members"></a><span data-ttu-id="e7f4c-108">成员</span><span class="sxs-lookup"><span data-stu-id="e7f4c-108">Members</span></span>
+|<span data-ttu-id="e7f4c-109">成员</span><span class="sxs-lookup"><span data-stu-id="e7f4c-109">Member</span></span>|<span data-ttu-id="e7f4c-110">值</span><span class="sxs-lookup"><span data-stu-id="e7f4c-110">Value</span></span>|<span data-ttu-id="e7f4c-111">说明</span><span class="sxs-lookup"><span data-stu-id="e7f4c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="56b15-111">fullDomainName</span><span class="sxs-lookup"><span data-stu-id="56b15-111">fullDomainName</span></span>|<span data-ttu-id="56b15-112">0</span><span class="sxs-lookup"><span data-stu-id="56b15-112">0</span></span>|<span data-ttu-id="56b15-113">完整的域名称。</span><span class="sxs-lookup"><span data-stu-id="56b15-113">Full domain name.</span></span>|
-|<span data-ttu-id="56b15-114">netBiosDomainName</span><span class="sxs-lookup"><span data-stu-id="56b15-114">netBiosDomainName</span></span>|<span data-ttu-id="56b15-115">1</span><span class="sxs-lookup"><span data-stu-id="56b15-115">1</span></span>|<span data-ttu-id="56b15-116">net bios 域名称。</span><span class="sxs-lookup"><span data-stu-id="56b15-116">net bios domain name.</span></span>|
+|<span data-ttu-id="e7f4c-112">fullDomainName</span><span class="sxs-lookup"><span data-stu-id="e7f4c-112">fullDomainName</span></span>|<span data-ttu-id="e7f4c-113">0</span><span class="sxs-lookup"><span data-stu-id="e7f4c-113">0</span></span>|<span data-ttu-id="e7f4c-114">完整的域名称。</span><span class="sxs-lookup"><span data-stu-id="e7f4c-114">Full domain name.</span></span>|
+|<span data-ttu-id="e7f4c-115">netBiosDomainName</span><span class="sxs-lookup"><span data-stu-id="e7f4c-115">netBiosDomainName</span></span>|<span data-ttu-id="e7f4c-116">1 </span><span class="sxs-lookup"><span data-stu-id="e7f4c-116">1</span></span>|<span data-ttu-id="e7f4c-117">net bios 域名称。</span><span class="sxs-lookup"><span data-stu-id="e7f4c-117">net bios domain name.</span></span>|
 
 
 

@@ -5,37 +5,39 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f556b8e0f3bd634ce0e8bfe855d6615d9e58d623
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3758dd850a5c98ea2c0ddad4d261fc9a7388ac3c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327666"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528230"
 ---
-# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="79825-103">windowsEnrollmentStatusScreenSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="79825-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
+# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="15c86-103">windowsEnrollmentStatusScreenSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="15c86-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
 
-> <span data-ttu-id="79825-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="79825-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="15c86-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="15c86-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="79825-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="79825-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="15c86-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="15c86-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="79825-106">注册状态屏幕设置</span><span class="sxs-lookup"><span data-stu-id="79825-106">Enrollment status screen setting</span></span>
+> <span data-ttu-id="15c86-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="15c86-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="79825-107">属性</span><span class="sxs-lookup"><span data-stu-id="79825-107">Properties</span></span>
-|<span data-ttu-id="79825-108">属性</span><span class="sxs-lookup"><span data-stu-id="79825-108">Property</span></span>|<span data-ttu-id="79825-109">类型</span><span class="sxs-lookup"><span data-stu-id="79825-109">Type</span></span>|<span data-ttu-id="79825-110">说明</span><span class="sxs-lookup"><span data-stu-id="79825-110">Description</span></span>|
+<span data-ttu-id="15c86-107">注册状态屏幕设置</span><span class="sxs-lookup"><span data-stu-id="15c86-107">Enrollment status screen setting</span></span>
+
+## <a name="properties"></a><span data-ttu-id="15c86-108">属性</span><span class="sxs-lookup"><span data-stu-id="15c86-108">Properties</span></span>
+|<span data-ttu-id="15c86-109">属性</span><span class="sxs-lookup"><span data-stu-id="15c86-109">Property</span></span>|<span data-ttu-id="15c86-110">类型</span><span class="sxs-lookup"><span data-stu-id="15c86-110">Type</span></span>|<span data-ttu-id="15c86-111">说明</span><span class="sxs-lookup"><span data-stu-id="15c86-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="79825-111">hideInstallationProgress</span><span class="sxs-lookup"><span data-stu-id="79825-111">hideInstallationProgress</span></span>|<span data-ttu-id="79825-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="79825-112">Boolean</span></span>|<span data-ttu-id="79825-113">显示或隐藏用户的安装进度</span><span class="sxs-lookup"><span data-stu-id="79825-113">Show or hide installation progress to user</span></span>|
-|<span data-ttu-id="79825-114">allowDeviceUseBeforeProfileAndAppInstallComplete</span><span class="sxs-lookup"><span data-stu-id="79825-114">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="79825-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="79825-115">Boolean</span></span>|<span data-ttu-id="79825-116">在配置文件和应用安装完成之前允许或阻止用户使用设备</span><span class="sxs-lookup"><span data-stu-id="79825-116">Allow or block user to use device before profile and app installation complete</span></span>|
-|<span data-ttu-id="79825-117">blockDeviceSetupRetryByUser</span><span class="sxs-lookup"><span data-stu-id="79825-117">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="79825-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="79825-118">Boolean</span></span>|<span data-ttu-id="79825-119">允许用户在安装失败时重试安装程序</span><span class="sxs-lookup"><span data-stu-id="79825-119">Allow the user to retry the setup on installation failure</span></span>|
-|<span data-ttu-id="79825-120">allowLogCollectionOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="79825-120">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="79825-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="79825-121">Boolean</span></span>|<span data-ttu-id="79825-122">在安装失败时允许或阻止日志集合</span><span class="sxs-lookup"><span data-stu-id="79825-122">Allow or block log collection on installation failure</span></span>|
-|<span data-ttu-id="79825-123">customErrorMessage</span><span class="sxs-lookup"><span data-stu-id="79825-123">customErrorMessage</span></span>|<span data-ttu-id="79825-124">String</span><span class="sxs-lookup"><span data-stu-id="79825-124">String</span></span>|<span data-ttu-id="79825-125">设置自定义错误消息以在安装失败时显示</span><span class="sxs-lookup"><span data-stu-id="79825-125">Set custom error message to show upon installation failure</span></span>|
-|<span data-ttu-id="79825-126">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="79825-126">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="79825-127">Int32</span><span class="sxs-lookup"><span data-stu-id="79825-127">Int32</span></span>|<span data-ttu-id="79825-128">设置安装进度超时 (分钟)</span><span class="sxs-lookup"><span data-stu-id="79825-128">Set installation progress timeout in minutes</span></span>|
-|<span data-ttu-id="79825-129">allowDeviceUseOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="79825-129">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="79825-130">Boolean</span><span class="sxs-lookup"><span data-stu-id="79825-130">Boolean</span></span>|<span data-ttu-id="79825-131">允许用户在安装失败时继续使用设备</span><span class="sxs-lookup"><span data-stu-id="79825-131">Allow the user to continue using the device on installation failure</span></span>|
+|<span data-ttu-id="15c86-112">hideInstallationProgress</span><span class="sxs-lookup"><span data-stu-id="15c86-112">hideInstallationProgress</span></span>|<span data-ttu-id="15c86-113">布尔</span><span class="sxs-lookup"><span data-stu-id="15c86-113">Boolean</span></span>|<span data-ttu-id="15c86-114">显示或隐藏用户的安装进度</span><span class="sxs-lookup"><span data-stu-id="15c86-114">Show or hide installation progress to user</span></span>|
+|<span data-ttu-id="15c86-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span><span class="sxs-lookup"><span data-stu-id="15c86-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="15c86-116">布尔</span><span class="sxs-lookup"><span data-stu-id="15c86-116">Boolean</span></span>|<span data-ttu-id="15c86-117">在配置文件和应用安装完成之前允许或阻止用户使用设备</span><span class="sxs-lookup"><span data-stu-id="15c86-117">Allow or block user to use device before profile and app installation complete</span></span>|
+|<span data-ttu-id="15c86-118">blockDeviceSetupRetryByUser</span><span class="sxs-lookup"><span data-stu-id="15c86-118">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="15c86-119">布尔</span><span class="sxs-lookup"><span data-stu-id="15c86-119">Boolean</span></span>|<span data-ttu-id="15c86-120">允许用户在安装失败时重试安装程序</span><span class="sxs-lookup"><span data-stu-id="15c86-120">Allow the user to retry the setup on installation failure</span></span>|
+|<span data-ttu-id="15c86-121">allowLogCollectionOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="15c86-121">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="15c86-122">布尔</span><span class="sxs-lookup"><span data-stu-id="15c86-122">Boolean</span></span>|<span data-ttu-id="15c86-123">在安装失败时允许或阻止日志集合</span><span class="sxs-lookup"><span data-stu-id="15c86-123">Allow or block log collection on installation failure</span></span>|
+|<span data-ttu-id="15c86-124">customErrorMessage</span><span class="sxs-lookup"><span data-stu-id="15c86-124">customErrorMessage</span></span>|<span data-ttu-id="15c86-125">String</span><span class="sxs-lookup"><span data-stu-id="15c86-125">String</span></span>|<span data-ttu-id="15c86-126">设置自定义错误消息以在安装失败时显示</span><span class="sxs-lookup"><span data-stu-id="15c86-126">Set custom error message to show upon installation failure</span></span>|
+|<span data-ttu-id="15c86-127">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="15c86-127">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="15c86-128">Int32</span><span class="sxs-lookup"><span data-stu-id="15c86-128">Int32</span></span>|<span data-ttu-id="15c86-129">设置安装进度超时（分钟）</span><span class="sxs-lookup"><span data-stu-id="15c86-129">Set installation progress timeout in minutes</span></span>|
+|<span data-ttu-id="15c86-130">allowDeviceUseOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="15c86-130">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="15c86-131">布尔</span><span class="sxs-lookup"><span data-stu-id="15c86-131">Boolean</span></span>|<span data-ttu-id="15c86-132">允许用户在安装失败时继续使用设备</span><span class="sxs-lookup"><span data-stu-id="15c86-132">Allow the user to continue using the device on installation failure</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="79825-132">关系</span><span class="sxs-lookup"><span data-stu-id="79825-132">Relationships</span></span>
-<span data-ttu-id="79825-133">无</span><span class="sxs-lookup"><span data-stu-id="79825-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="15c86-133">关系</span><span class="sxs-lookup"><span data-stu-id="15c86-133">Relationships</span></span>
+<span data-ttu-id="15c86-134">无</span><span class="sxs-lookup"><span data-stu-id="15c86-134">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="79825-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="79825-134">JSON Representation</span></span>
-<span data-ttu-id="79825-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="79825-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="15c86-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="15c86-135">JSON Representation</span></span>
+<span data-ttu-id="15c86-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="15c86-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings"
