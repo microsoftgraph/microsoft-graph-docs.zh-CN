@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02634eae28feadfdeba7046588429e856a3dd3b0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 5a59e89f01723fe1555641c9a00678fbdfa0a0ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947055"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42477194"
 ---
 # <a name="update-windows81generalconfiguration"></a>更新 windows81GeneralConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39947055"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,8 +57,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -64,28 +66,28 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
-|applyOnlyToWindows81|Boolean|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。|
-|browserBlockAutofill|Boolean|指示是否阻止自动填充。|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|指示是否阻止自动检测 Intranet 站点。|
-|browserBlockEnterpriseModeAccess|Boolean|指示是否阻止企业模式访问。|
-|browserBlockJavaScript|Boolean|指示是否阻止用户使用 JavaScript。|
-|browserBlockPlugins|Boolean|指示是否阻止插件。|
-|browserBlockPopups|Boolean|指示是否阻止弹出窗口。|
-|browserBlockSendingDoNotTrackHeader|Boolean|指示是否阻止用户发送 Do Not Track 标头。|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|指示是否阻止在 Intranet 站点上使用单字条目。|
+|accountsBlockAddingNonMicrosoftAccountEmail|布尔|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
+|applyOnlyToWindows81|布尔|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。|
+|browserBlockAutofill|布尔|指示是否阻止自动填充。|
+|browserBlockAutomaticDetectionOfIntranetSites|布尔|指示是否阻止自动检测 Intranet 站点。|
+|browserBlockEnterpriseModeAccess|布尔|指示是否阻止企业模式访问。|
+|browserBlockJavaScript|布尔|指示是否阻止用户使用 JavaScript。|
+|browserBlockPlugins|布尔|指示是否阻止插件。|
+|browserBlockPopups|布尔|指示是否阻止弹出窗口。|
+|browserBlockSendingDoNotTrackHeader|布尔|指示是否阻止用户发送 Do Not Track 标头。|
+|browserBlockSingleWordEntryOnIntranetSites|布尔|指示是否阻止在 Intranet 站点上使用单字条目。|
 |browserRequireSmartScreen|Boolean|指示是否要求用户使用智能屏幕筛选器。|
 |browserEnterpriseModeSiteListLocation|String|企业模式网站列表位置。 可能是本地文件、本地网络或 http 位置。|
 |browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Internet 安全级别。 可取值为：`userDefined`、`medium`、`mediumHigh`、`high`。|
 |browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|Intranet 安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
-|browserLoggingReportLocation|字符串|日志记录报表位置。|
-|browserRequireHighSecurityForRestrictedSites|Boolean|指示是否要求受限站点具有高安全性。|
-|browserRequireFirewall|Boolean|指示是否需要防火墙。|
-|browserRequireFraudWarning|Boolean|指示是否需要诈骗警告。|
+|browserLoggingReportLocation|String|日志记录报表位置。|
+|browserRequireHighSecurityForRestrictedSites|布尔|指示是否要求受限站点具有高安全性。|
+|browserRequireFirewall|布尔|指示是否需要防火墙。|
+|browserRequireFraudWarning|布尔|指示是否需要诈骗警告。|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|受信任的站点安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
-|cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
-|diagnosticsBlockDataSubmission|Boolean|指示是否阻止诊断数据提交。|
-|passwordBlockPicturePasswordAndPin|Boolean|指示是否阻止用户使用图片密码和 PIN。|
+|cellularBlockDataRoaming|布尔|指示是否阻止数据漫游。|
+|diagnosticsBlockDataSubmission|布尔|指示是否阻止诊断数据提交。|
+|passwordBlockPicturePasswordAndPin|布尔|指示是否阻止用户使用图片密码和 PIN。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
@@ -93,7 +95,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前登录失败的次数。|
-|storageRequireDeviceEncryption|Boolean|指示是否要求对移动设备加密。|
+|storageRequireDeviceEncryption|布尔|指示是否要求对移动设备加密。|
 |minimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|自动安装的最小更新分类。 可取值为：`userDefined`、`recommendedAndImportant`、`important`、`none`。|
 |updatesMinimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|自动安装的最小更新分类。 可取值为：`userDefined`、`recommendedAndImportant`、`important`、`none`。|
 |updatesRequireAutomaticUpdates|Boolean|指示是否需要自动更新。|

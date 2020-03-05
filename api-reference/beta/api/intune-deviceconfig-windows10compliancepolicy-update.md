@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 065537d70dc46978508a4e85d9570ebf9ab6d7b7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a333bfe10ded7168b873cd226fe3aa9d7111cc15
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42481836"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39947629"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,44 +53,44 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
-|passwordBlockSimple|Boolean|指示是否阻止简单密码。|
-|passwordRequiredToUnlockFromIdle|Boolean|需要密码才可解锁空闲设备。|
+|passwordRequired|布尔|需要密码才可解锁 Windows 设备。|
+|passwordBlockSimple|布尔|指示是否阻止简单密码。|
+|passwordRequiredToUnlockFromIdle|布尔|需要密码才可解锁空闲设备。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
-|requireHealthyDeviceReport|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
-|osMinimumVersion|字符串|最低 Windows 10 版本。|
-|osMaximumVersion|字符串|最高 Windows 10 版本。|
-|mobileOsMinimumVersion|字符串|最低 Windows Phone 版本。|
+|requireHealthyDeviceReport|布尔|要求设备由 Windows 设备运行状况证明报告为正常。|
+|osMinimumVersion|String|最低 Windows 10 版本。|
+|osMaximumVersion|String|最高 Windows 10 版本。|
+|mobileOsMinimumVersion|String|最低 Windows Phone 版本。|
 |mobileOsMaximumVersion|String|最高 Windows Phone 版本。|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
-|bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
-|secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
+|earlyLaunchAntiMalwareDriverEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
+|bitLockerEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
+|secureBootEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|Boolean|在 Windows 设备上需要活动防火墙。|
-|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
-|defenderVersion|字符串|在 Windows 设备上要求 Windows Defender 反恶意软件的最低版本。|
-|signatureOutOfDate|Boolean|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
-|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
-|antivirusRequired|Boolean|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控（例如，Symantec、Windows Defender）。|
-|antiSpywareRequired|Boolean|要求在 Windows Decurity Center 中注册的任何反间谍软件解决方案都处于启用和监控（例如，Symantec、Windows Defender）。|
+|activeFirewallRequired|布尔|在 Windows 设备上需要活动防火墙。|
+|defenderEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件。|
+|defenderVersion|String|在 Windows 设备上要求 Windows Defender 反恶意软件的最低版本。|
+|signatureOutOfDate|布尔|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
+|rtpEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
+|antivirusRequired|布尔|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控（例如，Symantec、Windows Defender）。|
+|antiSpywareRequired|布尔|要求在 Windows Decurity Center 中注册的任何反间谍软件解决方案都处于启用和监控（例如，Symantec、Windows Defender）。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|Windows 设备上的有效操作系统内部版本范围。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|Boolean|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
-|tpmRequired|Boolean|要求存在受信任的平台模块（TPM）。|
+|configurationManagerComplianceRequired|布尔|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
+|tpmRequired|布尔|要求存在受信任的平台模块（TPM）。|
 
 
 

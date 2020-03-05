@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f22eab88654d2b2bc4c781013264a823c832e72c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 47329f56537c2435dc74ee20992d0b276949f017
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198770"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42485483"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>androidForWorkCompliancePolicy 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含适用于 Android 的工作的合规性设置。
 
@@ -35,34 +37,34 @@ ms.locfileid: "37198770"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁设备。|
+|passwordRequired|布尔|需要密码才可解锁设备。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|在恢复出厂设置之前允许的登录失败次数。 有效值为1至16|
-|securityPreventInstallAppsFromUnknownSources|Boolean|要求设备不允许安装来自未知源的应用。|
-|securityDisableUsbDebugging|Boolean|在 Android 设备上禁用 USB 调试。|
-|securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|securityPreventInstallAppsFromUnknownSources|布尔|要求设备不允许安装来自未知源的应用。|
+|securityDisableUsbDebugging|布尔|在 Android 设备上禁用 USB 调试。|
+|securityRequireVerifyApps|布尔|要求启用 Android 验证应用功能。|
+|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
+|securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
 |osMinimumVersion|String|最低 Android 版本。|
 |osMaximumVersion|String|最高 Android 版本。|
 |minAndroidSecurityPatchLevel|String|最低 Android 安全修补程序级别。|
 |storageRequireEncryption|Boolean|要求对 Android 设备加密。|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|要求设备传递 SafetyNet 基本完整性检查。|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|要求设备传递 SafetyNet 认证设备检查。|
-|securityRequireGooglePlayServices|Boolean|要求在设备上安装并启用 Google Play Services。|
-|securityRequireUpToDateSecurityProviders|Boolean|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
+|securityRequireSafetyNetAttestationBasicIntegrity|布尔|要求设备传递 SafetyNet 基本完整性检查。|
+|securityRequireSafetyNetAttestationCertifiedDevice|布尔|要求设备传递 SafetyNet 认证设备检查。|
+|securityRequireGooglePlayServices|布尔|要求在设备上安装并启用 Google Play Services。|
+|securityRequireUpToDateSecurityProviders|布尔|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|要求设备传递公司门户客户端应用运行时完整性检查。|
 
 ## <a name="relationships"></a>关系

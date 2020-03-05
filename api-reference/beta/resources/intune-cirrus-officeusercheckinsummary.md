@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c364fe1a6da382ed8947b4b2bf63d2bce203d6ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3daa7fd8691fe6c6894a2305e9f5c1533f597b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004797"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488066"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 描述租户签入统计信息的实体。
 

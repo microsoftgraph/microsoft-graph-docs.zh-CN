@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8e359e5df1ae55fdc50c42d98c2c5f44f8ea7dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 99693cbdfa77895e0116ac5228fdf58d95afeacb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487359"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 AirPrint 目标。
 
@@ -24,9 +26,9 @@ ms.locfileid: "36334939"
 |属性|类型|说明|
 |:---|:---|:---|
 |ipAddress|String|AirPrint 目标的 IP 地址。|
-|resourcePath|String|与打印机关联的资源路径。 这对应于 _ipps Bonjour 记录的 rp 参数。 例如: printers/Canon_MG5300_series、printers/Xerox_Phaser_7600、ipp/print、Epson_IPP_Printer。|
-|端口|Int32|AirPrint 目标的侦听端口。 如果未指定此项, AirPrint 将使用默认端口。 在 iOS 11.0 和更高版本中可用。|
-|forceTls|Boolean|如果为 true, 则 AirPrint 连接通过传输层安全性 (TLS) 进行保护。 默认为 false。 在 iOS 11.0 和更高版本中可用。|
+|resourcePath|String|与打印机关联的资源路径。 这对应于 _ipps tcp Bonjour record 的 rp 参数。 例如： printers/Canon_MG5300_series、printers/Xerox_Phaser_7600、ipp/print、Epson_IPP_Printer。|
+|端口|Int32|AirPrint 目标的侦听端口。 如果未指定此项，AirPrint 将使用默认端口。 在 iOS 11.0 和更高版本中可用。|
+|forceTls|布尔|如果为 true，则 AirPrint 连接通过传输层安全性（TLS）进行保护。 默认为 false。 在 iOS 11.0 和更高版本中可用。|
 
 ## <a name="relationships"></a>关系
 无

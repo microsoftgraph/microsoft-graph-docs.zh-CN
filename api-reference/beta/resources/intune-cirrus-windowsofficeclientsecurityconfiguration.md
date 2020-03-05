@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 412ed7f8a7d68daf7e4cff8cc384a113c337ad4e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f219671b32b85d967058ffdbddbbf70754f62467
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004769"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487982"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>windowsOfficeClientSecurityConfiguration 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -35,11 +37,11 @@ ms.locfileid: "36004769"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|流|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|流|策略设置 JSON string 二进制格式, 用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式，则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|策略设置 JSON string 二进制格式，用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |说明|String|管理员提供的 office 客户端配置策略的说明。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|管理员提供的 office 客户端配置策略的名称。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|priority|Int32|对于租户下的每个策略, 优先级值应为唯一值, 并将用于冲突解决, 较低值意味着优先级较高。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|priority|Int32|对于租户下的每个策略，优先级值应为唯一值，并将用于冲突解决，较低值意味着优先级较高。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |lastModifiedDateTime|日期时间|策略的上次修改日期时间戳。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|策略的用户签入摘要。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端签入状态的列表。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

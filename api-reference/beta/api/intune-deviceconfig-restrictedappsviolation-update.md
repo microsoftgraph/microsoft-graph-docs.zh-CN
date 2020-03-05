@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2acc4245d07ddffe90bc87c70c116c8666af98c2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 96e8bb3a7fc2b5f9f349f948f0f5d473f8288aff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947825"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42483656"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39947825"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +56,10 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
 |userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
-|deviceName|字符串|设备名称|
-|deviceConfigurationId|字符串|设备配置文件唯一标识符，必须为 Guid|
-|deviceConfigurationName|字符串|设备配置文件名称|
+|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
+|deviceName|String|设备名称|
+|deviceConfigurationId|String|设备配置文件唯一标识符，必须为 Guid|
+|deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合|违反受限制的应用程序的列表|

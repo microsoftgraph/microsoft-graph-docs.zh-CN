@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbe4329aacdfb151e0bb5b73f8b24b624010c327
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 58e95490fa3fd7adaec6e6b8f01c43566b1c289a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538642"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42486547"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>androidDeviceOwnerGlobalProxyDirect 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 设备所有者全局代理 Direct。
 
@@ -26,7 +28,7 @@ Android 设备所有者全局代理 Direct。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|host|字符串|主机名|
+|host|String|主机名|
 |端口|Int32|端口|
 |excludedHosts|String 集合|已排除的主机|
 

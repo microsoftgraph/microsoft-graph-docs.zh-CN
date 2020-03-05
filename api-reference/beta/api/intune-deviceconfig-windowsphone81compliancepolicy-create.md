@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2dc9e514acaf37ae70943c4ab4bdf61eecd6bb3
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7ab0e2331d9f5538f88fa0f83e33ea92a7bd94f2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946698"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42475507"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>创建 windowsPhone81CompliancePolicy
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39946698"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +53,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -65,8 +67,8 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordRequired|Boolean|是否需要密码。|
-|osMinimumVersion|字符串|最低 Windows Phone 版本。|
+|passwordRequired|布尔|是否需要密码。|
+|osMinimumVersion|String|最低 Windows Phone 版本。|
 |osMaximumVersion|String|最高 Windows Phone 版本。|
 |storageRequireEncryption|Boolean|要求对 Windows Phone 设备加密。|
 

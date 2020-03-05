@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5d587e802545d5365b6fdda4dfb344b4ba4889
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 063d12b4198208095b168772d824365cb3624168
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636663"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42484069"
 ---
 # <a name="androidworkprofileenterprisewificonfiguration-resource-type"></a>androidWorkProfileEnterpriseWiFiConfiguration 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -33,12 +35,12 @@ ms.locfileid: "41636663"
 |[更新 androidWorkProfileEnterpriseWiFiConfiguration](../api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-update.md)|[androidWorkProfileEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md)|更新[androidWorkProfileEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md)对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -46,21 +48,21 @@ ms.locfileid: "41636663"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|networkName|字符串|从[AndroidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)继承的网络名称|
-|ssid|字符串|这是广播到所有设备的 Wi-fi 网络的名称。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
-|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示，并自动将设备连接到 Wlan 网络。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|当设置为 true 时，此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
+|networkName|String|从[AndroidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)继承的网络名称|
+|ssid|String|这是广播到所有设备的 Wi-fi 网络的名称。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
+|connectAutomatically|布尔|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示，并自动将设备连接到 Wlan 网络。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|布尔|当设置为 true 时，此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|指示 Wi-fi 终结点是否使用基于 EAP 的安全类型。 继承自[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)。 可取值为：`open`、`wpaEnterprise`、`wpa2Enterprise`。|
 |eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|指示 Wi-fi 终结点（路由器）上的 EAP 协议集的类型。 可取值为：`eapTls`、`eapTtls`、`peap`。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|指示在将 EAP 类型配置为 PEAP 或 EAP-TTLS 时，客户端（设备）需要使用的身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|EAP 类型为 EAP 时，用于身份验证的非 EAP 方法（内部标识）-TTLS 和 Authenticationmethod 为用户名和密码。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
 |innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|当 EAP 类型为 PEAP 且 Authenticationmethod 为用户名和密码时，用于身份验证的非 EAP 方法（内部标识）。 可取值为：`none`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|字符串|将 EAP 类型配置为 EAP-TTLS 或 PEAP 时启用标识隐私（外部标识）。 此处提供的字符串用于在用户尝试连接到 Wlan 网络时屏蔽各个用户的用户名。|
+|outerIdentityPrivacyTemporaryValue|String|将 EAP 类型配置为 EAP-TTLS 或 PEAP 时启用标识隐私（外部标识）。 此处提供的字符串用于在用户尝试连接到 Wlan 网络时屏蔽各个用户的用户名。|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此 Wlan 连接的代理类型。 可取值为：`none`、`manual`、`automatic`。|
-|proxyAutomaticConfigurationUrl|字符串|选择 "自动配置" 时代理服务器的 "自动配置" 脚本的 URL。 此 URL 通常是 PAC （代理自动配置）文件的位置。|
+|proxyAutomaticConfigurationUrl|String|选择 "自动配置" 时代理服务器的 "自动配置" 脚本的 URL。 此 URL 通常是 PAC （代理自动配置）文件的位置。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

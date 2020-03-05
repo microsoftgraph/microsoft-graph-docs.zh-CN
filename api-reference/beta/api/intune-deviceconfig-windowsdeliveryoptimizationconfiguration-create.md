@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1bf6c1d5ce6c14c8a957eb2e938511bacfa8028
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1817a1dd9b943af863824e4e89313cd8fa5a8c17
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946852"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42476263"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>创建 windowsDeliveryOptimizationConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39946852"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +56,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -79,11 +81,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 推荐值： 1 MB 到 100000 MB。 有效值为1至100000|
 |minimumBatteryPercentageAllowedToUpload|Int32|指定允许设备上传数据的最小电池百分比（0-100）。 有效值为 0 至 100
 默认值为 0。 值为0（零）表示 "不受限制"，将使用云服务默认值。 有效值为 0 至 100|
-|modifyCacheLocation|字符串|指定传递优化应用于其缓存的驱动器。|
+|modifyCacheLocation|String|指定传递优化应用于其缓存的驱动器。|
 |maximumCacheAgeInDays|Int32|指定在成功下载后，每个文件保留在传递优化缓存中的最长时间（以天为单位）（0-3650）。 有效值为0至3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|指定传递优化的最大缓存大小（以百分比或 GB 为单位）。|
 |vpnPeerCaching|[启用](../resources/intune-shared-enablement.md)|指定是否允许设备在通过 VPN 连接到域网络时参与对等缓存。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|cacheServerHostNames|String collection|指定缓存服务器的主机名。|
+|cacheServerHostNames|String 集合|指定缓存服务器的主机名。|
 |cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|指定前台下载延迟从缓存服务器回退到 HTTP 源的秒数。 有效的值为0到2592000。|
 |cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|指定从缓存服务器回退到用于后台下载的 HTTP 源的秒数。 有效的值为0到2592000。|
 

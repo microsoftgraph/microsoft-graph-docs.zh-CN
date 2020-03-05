@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3688503cf19d8cebe51b4afe7abd1563257f9192
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fabc35866aafbbb4052ce5eab3f0de977ec6adb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004757"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488535"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Office 客户端配置。
 
@@ -32,12 +34,12 @@ Office 客户端配置。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。|
-|userPreferencePayload|流|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。|
-|policyPayload|流|策略设置 JSON string 二进制格式, 用户不能更改这些值。|
+|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式，则用户可以重写这些值。|
+|policyPayload|Stream|策略设置 JSON string 二进制格式，用户不能更改这些值。|
 |说明|String|尚未记录|
 |displayName|String|管理员提供的 office 客户端配置策略的说明。|
 |lastModifiedDateTime|日期时间|策略的上次修改日期时间戳。|
-|priority|Int32|对于租户下的每个策略, 优先级值应为唯一值, 并将用于冲突解决, 较低值意味着优先级较高。|
+|priority|Int32|对于租户下的每个策略，优先级值应为唯一值，并将用于冲突解决，较低值意味着优先级较高。|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|策略的用户签入摘要。|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端签入状态的列表。|
 

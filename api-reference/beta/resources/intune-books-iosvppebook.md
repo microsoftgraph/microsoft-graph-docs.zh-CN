@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 74ba065abb4ffdee5c0e7967fee55156011381bf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 29c3f6de1d698989d91e132000e18d6dacc29968
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335163"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488899"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS Vpp eBook的属性的类。
 
@@ -53,7 +55,7 @@ ms.locfileid: "36335163"
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 788c128540d20effeaafcb254019e6b1a76c709a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1f93c85c1ff8b60f4021d5fbf5ed9078baa5edfc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487870"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
 
@@ -42,7 +44,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

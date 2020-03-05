@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 321bb950edb934cb8a9a24f0da68b05ac41fcf8e
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 232f7277479d1e6fa558deb0b365ca90d9522675
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163519"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487779"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

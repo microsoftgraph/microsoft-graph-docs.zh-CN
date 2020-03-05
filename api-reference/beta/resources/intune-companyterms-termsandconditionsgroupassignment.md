@@ -1,24 +1,26 @@
 ---
 title: termsAndConditionsGroupAssignment 资源类型
-description: TermsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
+description: TermsAndConditionsGroupAssignment 实体表示将给定条款和条件（T&C）策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 121ac9d46450e88d826aa59ffde0216a7aac5231
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b156b05809990b84d2fdddf71f9e307586cfc699
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335003"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487548"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-TermsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+TermsAndConditionsGroupAssignment 实体表示将给定条款和条件（T&C）策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

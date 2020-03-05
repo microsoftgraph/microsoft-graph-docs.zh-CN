@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9afe19ebcc162b7508cf5f69ba1324c1f94acabb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 958bdab01f1984a94e0ec849e22356f5ffaa80cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946859"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42476270"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>更新 windowsDefenderAdvancedThreatProtectionConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39946859"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,8 +57,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -64,13 +66,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|advancedThreatProtectionOnboardingBlob|字符串|Windows Defender 高级威胁防护载入 Blob。|
-|advancedThreatProtectionOnboardingFilename|字符串|从中获取 AdvancedThreatProtectionOnboardingBlob 的文件的名称。|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|通过从高级威胁防护服务以编程方式自动填充载入 blob|
-|allowSampleSharing|Boolean|Windows Defender 高级威胁防护“允许示例共享”规则|
+|advancedThreatProtectionOnboardingBlob|String|Windows Defender 高级威胁防护载入 Blob。|
+|advancedThreatProtectionOnboardingFilename|String|从中获取 AdvancedThreatProtectionOnboardingBlob 的文件的名称。|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|布尔|通过从高级威胁防护服务以编程方式自动填充载入 blob|
+|allowSampleSharing|布尔|Windows Defender 高级威胁防护“允许示例共享”规则|
 |enableExpeditedTelemetryReporting|Boolean|加速 Windows Defender 高级威胁防护遥测报告的频率。|
-|advancedThreatProtectionOffboardingBlob|字符串|Windows Defender 高级威胁防护脱离 Blob。|
-|advancedThreatProtectionOffboardingFilename|字符串|从中获取 AdvancedThreatProtectionOffboardingBlob 的文件的名称。|
+|advancedThreatProtectionOffboardingBlob|String|Windows Defender 高级威胁防护脱离 Blob。|
+|advancedThreatProtectionOffboardingFilename|String|从中获取 AdvancedThreatProtectionOffboardingBlob 的文件的名称。|
 
 
 
