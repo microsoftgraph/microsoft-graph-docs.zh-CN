@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f614aacc307f1d7ad83317ebd5dc4356acf6d10
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6eff15c44d9768ac0ff9fec4593e52c5ce8ce90e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945219"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469879"
 ---
-# <a name="list-datasharingconsents"></a><span data-ttu-id="37206-103">列出 dataSharingConsents</span><span class="sxs-lookup"><span data-stu-id="37206-103">List dataSharingConsents</span></span>
+# <a name="list-datasharingconsents"></a><span data-ttu-id="f8fe5-103">列出 dataSharingConsents</span><span class="sxs-lookup"><span data-stu-id="f8fe5-103">List dataSharingConsents</span></span>
 
-> <span data-ttu-id="37206-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="37206-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="f8fe5-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f8fe5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="37206-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="37206-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f8fe5-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="37206-106">列出[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="37206-106">List properties and relationships of the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) objects.</span></span>
+> <span data-ttu-id="f8fe5-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="37206-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="37206-107">Prerequisites</span></span>
-<span data-ttu-id="37206-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="37206-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f8fe5-107">列出[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-107">List properties and relationships of the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) objects.</span></span>
 
-|<span data-ttu-id="37206-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="37206-110">Permission type</span></span>|<span data-ttu-id="37206-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="37206-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="f8fe5-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="f8fe5-108">Prerequisites</span></span>
+<span data-ttu-id="f8fe5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f8fe5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f8fe5-111">Permission type</span></span>|<span data-ttu-id="f8fe5-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f8fe5-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="37206-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="37206-112">Delegated (work or school account)</span></span>|<span data-ttu-id="37206-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37206-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="37206-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="37206-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="37206-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="37206-115">Not supported.</span></span>|
-|<span data-ttu-id="37206-116">Application</span><span class="sxs-lookup"><span data-stu-id="37206-116">Application</span></span>|<span data-ttu-id="37206-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37206-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f8fe5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f8fe5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f8fe5-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8fe5-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f8fe5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f8fe5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f8fe5-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-116">Not supported.</span></span>|
+|<span data-ttu-id="f8fe5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f8fe5-117">Application</span></span>|<span data-ttu-id="f8fe5-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8fe5-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="37206-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="37206-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8fe5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f8fe5-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +40,28 @@ ms.locfileid: "39945219"
 GET /deviceManagement/dataSharingConsents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="37206-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="37206-119">Request headers</span></span>
-|<span data-ttu-id="37206-120">标头</span><span class="sxs-lookup"><span data-stu-id="37206-120">Header</span></span>|<span data-ttu-id="37206-121">值</span><span class="sxs-lookup"><span data-stu-id="37206-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8fe5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f8fe5-120">Request headers</span></span>
+|<span data-ttu-id="f8fe5-121">标头</span><span class="sxs-lookup"><span data-stu-id="f8fe5-121">Header</span></span>|<span data-ttu-id="f8fe5-122">值</span><span class="sxs-lookup"><span data-stu-id="f8fe5-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="37206-122">授权</span><span class="sxs-lookup"><span data-stu-id="37206-122">Authorization</span></span>|<span data-ttu-id="37206-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="37206-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="37206-124">接受</span><span class="sxs-lookup"><span data-stu-id="37206-124">Accept</span></span>|<span data-ttu-id="37206-125">application/json</span><span class="sxs-lookup"><span data-stu-id="37206-125">application/json</span></span>|
+|<span data-ttu-id="f8fe5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f8fe5-123">Authorization</span></span>|<span data-ttu-id="f8fe5-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f8fe5-125">接受</span><span class="sxs-lookup"><span data-stu-id="f8fe5-125">Accept</span></span>|<span data-ttu-id="f8fe5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f8fe5-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="37206-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="37206-126">Request body</span></span>
-<span data-ttu-id="37206-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="37206-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8fe5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f8fe5-127">Request body</span></span>
+<span data-ttu-id="f8fe5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="37206-128">响应</span><span class="sxs-lookup"><span data-stu-id="37206-128">Response</span></span>
-<span data-ttu-id="37206-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="37206-129">If successful, this method returns a `200 OK` response code and a collection of [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f8fe5-129">响应</span><span class="sxs-lookup"><span data-stu-id="f8fe5-129">Response</span></span>
+<span data-ttu-id="f8fe5-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-130">If successful, this method returns a `200 OK` response code and a collection of [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="37206-130">示例</span><span class="sxs-lookup"><span data-stu-id="37206-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f8fe5-131">示例</span><span class="sxs-lookup"><span data-stu-id="f8fe5-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="37206-131">请求</span><span class="sxs-lookup"><span data-stu-id="37206-131">Request</span></span>
-<span data-ttu-id="37206-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="37206-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f8fe5-132">请求</span><span class="sxs-lookup"><span data-stu-id="f8fe5-132">Request</span></span>
+<span data-ttu-id="f8fe5-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents
 ```
 
-### <a name="response"></a><span data-ttu-id="37206-133">响应</span><span class="sxs-lookup"><span data-stu-id="37206-133">Response</span></span>
-<span data-ttu-id="37206-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="37206-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f8fe5-134">响应</span><span class="sxs-lookup"><span data-stu-id="f8fe5-134">Response</span></span>
+<span data-ttu-id="f8fe5-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f8fe5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
