@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e012df2ca7c9f88b38582de46ebc1dd341cfa44b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1a0853e83cc1b694d39935ebc1a684c6ef653c4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443137"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39949544"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,15 +55,15 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |:---|:---|:---|
 |id|String|实体的键|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台类型。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `palm` `unknown`、、、、、、、、、、、、、、、、、、、。 `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry`|
-|setting|字符串|设置类名和属性名。|
-|settingName|字符串|报告的设置名称|
-|deviceId|字符串|报告的设备 ID|
-|deviceName|字符串|报告的设备名称|
+|setting|String|设置类名和属性名。|
+|settingName|String|报告的设置名称|
+|deviceId|String|报告的设备 ID|
+|deviceName|String|报告的设备名称|
 |userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
-|userName|字符串|报告的用户名|
+|userName|String|报告的用户名|
 |userPrincipalName|字符串|报告的用户主体名称|
-|deviceModel|字符串|报告的设备模型|
+|deviceModel|String|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 

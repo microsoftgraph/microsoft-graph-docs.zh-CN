@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97b16113f9b963e39814eec405471a8884c2c334
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d2ddbe69e6723e39add8a841e7ad4bcd792f7016
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954256"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444271"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39954256"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,38 +53,38 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁设备。|
+|passwordRequired|布尔|需要密码才可解锁设备。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|在恢复出厂设置之前允许的登录失败次数。 有效值为1至16|
-|securityPreventInstallAppsFromUnknownSources|Boolean|要求设备不允许安装来自未知源的应用。|
-|securityDisableUsbDebugging|Boolean|在 Android 设备上禁用 USB 调试。|
-|securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|securityPreventInstallAppsFromUnknownSources|布尔|要求设备不允许安装来自未知源的应用。|
+|securityDisableUsbDebugging|布尔|在 Android 设备上禁用 USB 调试。|
+|securityRequireVerifyApps|布尔|要求启用 Android 验证应用功能。|
+|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP 要求移动威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|securityBlockDeviceAdministratorManagedDevices|Boolean|阻止设备管理员管理的设备。|
-|osMinimumVersion|字符串|最低 Android 版本。|
-|osMaximumVersion|字符串|最高 Android 版本。|
+|securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
+|securityBlockDeviceAdministratorManagedDevices|布尔|阻止设备管理员管理的设备。|
+|osMinimumVersion|String|最低 Android 版本。|
+|osMaximumVersion|String|最高 Android 版本。|
 |minAndroidSecurityPatchLevel|String|最低 Android 安全修补程序级别。|
 |storageRequireEncryption|Boolean|要求对 Android 设备加密。|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|要求设备传递 SafetyNet 基本完整性检查。|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|要求设备传递 SafetyNet 认证设备检查。|
-|securityRequireGooglePlayServices|Boolean|要求在设备上安装并启用 Google Play Services。|
-|securityRequireUpToDateSecurityProviders|Boolean|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
+|securityRequireSafetyNetAttestationBasicIntegrity|布尔|要求设备传递 SafetyNet 基本完整性检查。|
+|securityRequireSafetyNetAttestationCertifiedDevice|布尔|要求设备传递 SafetyNet 认证设备检查。|
+|securityRequireGooglePlayServices|布尔|要求在设备上安装并启用 Google Play Services。|
+|securityRequireUpToDateSecurityProviders|布尔|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|要求设备传递公司门户客户端应用运行时完整性检查。|
-|conditionStatementId|字符串|条件语句 id。|
+|conditionStatementId|String|条件语句 id。|
 |restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备未安装指定的应用程序。 此集合最多可包含100个元素。|
 
 

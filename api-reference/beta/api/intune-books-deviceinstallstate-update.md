@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 874059757ccd2cc21094d1a71d1c26f9f715a0ef
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a1b786000ca5fecdebc2e31b82f2de19deaf3e61
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39931940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444593"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39931940"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +44,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,14 +54,14 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|deviceName|字符串|设备名称。|
-|deviceId|字符串|设备 ID。|
+|id|String|实体的键。|
+|deviceName|String|设备名称。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|字符串|安装失败的错误代码。|
-|osVersion|字符串|操作系统版本。|
-|osDescription|字符串|操作系统说明。|
+|errorCode|String|安装失败的错误代码。|
+|osVersion|String|操作系统版本。|
+|osDescription|String|操作系统说明。|
 |userName|String|设备用户名。|
 
 

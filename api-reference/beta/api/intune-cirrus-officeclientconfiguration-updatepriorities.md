@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 695ef53c26d2eabf119c88084f9698a8db3bd3b2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c22edf12c6e88b32356cfcbfe9fd32ca05908e3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39930770"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444453"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39930770"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +53,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |属性|类型|说明|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|String collection|Office 配置策略 id 列表|
+|officeConfigurationPolicyIds|String 集合|Office 配置策略 id 列表|
 |officeConfigurationPriorities|Int32 集合|Office 配置优先级列表|
 
 

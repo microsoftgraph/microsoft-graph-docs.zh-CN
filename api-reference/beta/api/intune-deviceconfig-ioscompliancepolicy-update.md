@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aaa534fd8aa3c75cdcb80031ec32ef3ed0656bc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 03f8f542b65c4af370bb1e00a86880ffbeae5f95
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42442934"
 ---
 # <a name="update-ioscompliancepolicy"></a>更新 iosCompliancePolicy
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39949144"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,14 +53,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
+|passcodeBlockSimple|布尔|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passcodeMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|需要密码之前的不活动分钟数。|
@@ -66,13 +68,13 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passcodeRequired|Boolean|指示是否需要密码。|
-|osMinimumVersion|字符串|最低 IOS 版本。|
+|passcodeRequired|布尔|指示是否需要密码。|
+|osMinimumVersion|String|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
-|osMinimumBuildVersion|字符串|最低 IOS 内部版本。|
-|osMaximumBuildVersion|字符串|最大 IOS 内部版本。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|osMinimumBuildVersion|String|最低 IOS 内部版本。|
+|osMaximumBuildVersion|String|最大 IOS 内部版本。|
+|securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
+|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
 |restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备未安装指定的应用程序。 此集合最多可包含100个元素。|

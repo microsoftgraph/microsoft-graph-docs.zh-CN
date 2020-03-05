@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ab1bf20404ae716f16d981aa6304c8df5701db4
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: d04aff02f9d25dba831bfe77328d96db5d3be741
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635451"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443508"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>列出 androidWorkProfileEnterpriseWiFiConfigurations
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fe89f7499f58fabe6896a1d9e6afc49d431a214
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 8f2d7b06bdf9f2d5accf91ec11cff21b40a1ef8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444348"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

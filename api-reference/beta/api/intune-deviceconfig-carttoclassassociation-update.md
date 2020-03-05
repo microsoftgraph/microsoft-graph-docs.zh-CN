@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 497038aad85c9fa9df2b29184a729b46af42602a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 35b53c2d5bdb00b35b3b351ad83ff513ae950cec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443305"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39954480"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,8 +59,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
 |说明|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
+|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
 
 
 
