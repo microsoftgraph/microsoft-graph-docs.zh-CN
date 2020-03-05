@@ -5,25 +5,27 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5af649da3e34336e1e8a1d45d70ab391c300ab35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9af962149f0cb9458567a67e4411a273c5fe770f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972829"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502737"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="40f8c-104">educationAssignmentGradeType 资源类型</span><span class="sxs-lookup"><span data-stu-id="40f8c-104">educationAssignmentGradeType resource type</span></span>
+# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="bcd37-104">educationAssignmentGradeType 资源类型</span><span class="sxs-lookup"><span data-stu-id="bcd37-104">educationAssignmentGradeType resource type</span></span>
+
+<span data-ttu-id="bcd37-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="bcd37-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="40f8c-105">表示将对工作分配进行评分的方式。</span><span class="sxs-lookup"><span data-stu-id="40f8c-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="40f8c-106">这在**工作分配. 评分**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="40f8c-106">This is used within the **assignments.grading** property.</span></span>
+<span data-ttu-id="bcd37-106">表示将对工作分配进行评分的方式。</span><span class="sxs-lookup"><span data-stu-id="bcd37-106">Represents how an assignment will be graded.</span></span> <span data-ttu-id="bcd37-107">这在**工作分配. 评分**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="bcd37-107">This is used within the **assignments.grading** property.</span></span>
 
-<span data-ttu-id="40f8c-107">此超类不能直接在工作分配属性中使用。</span><span class="sxs-lookup"><span data-stu-id="40f8c-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="40f8c-108">它的用途是允许多种不同的工作分配评分。</span><span class="sxs-lookup"><span data-stu-id="40f8c-108">It exists to allow for multiple different ways to grade assignments.</span></span>
+<span data-ttu-id="bcd37-108">此超类不能直接在工作分配属性中使用。</span><span class="sxs-lookup"><span data-stu-id="bcd37-108">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="bcd37-109">它的用途是允许多种不同的工作分配评分。</span><span class="sxs-lookup"><span data-stu-id="bcd37-109">It exists to allow for multiple different ways to grade assignments.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="40f8c-109">属性</span><span class="sxs-lookup"><span data-stu-id="40f8c-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bcd37-110">属性</span><span class="sxs-lookup"><span data-stu-id="bcd37-110">Properties</span></span>
 
-<span data-ttu-id="40f8c-110">无。</span><span class="sxs-lookup"><span data-stu-id="40f8c-110">None.</span></span>
+<span data-ttu-id="bcd37-111">无。</span><span class="sxs-lookup"><span data-stu-id="bcd37-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",

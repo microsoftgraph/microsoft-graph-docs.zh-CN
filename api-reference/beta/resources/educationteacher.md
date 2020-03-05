@@ -5,29 +5,31 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2a94eb2c6a1d145c51fef8c35b3b2f9083cf598a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad01c29313198b0feab2b4258c9eaafcb9a4f727
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972321"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500014"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="1d5e0-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="1d5e0-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="9668e-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="9668e-103">educationTeacher resource type</span></span>
+
+<span data-ttu-id="9668e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9668e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1d5e0-104">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="1d5e0-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="9668e-105">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="9668e-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="1d5e0-105">属性</span><span class="sxs-lookup"><span data-stu-id="1d5e0-105">Properties</span></span>
-| <span data-ttu-id="1d5e0-106">属性</span><span class="sxs-lookup"><span data-stu-id="1d5e0-106">Property</span></span>     | <span data-ttu-id="1d5e0-107">类型</span><span class="sxs-lookup"><span data-stu-id="1d5e0-107">Type</span></span>   |<span data-ttu-id="1d5e0-108">说明</span><span class="sxs-lookup"><span data-stu-id="1d5e0-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9668e-106">属性</span><span class="sxs-lookup"><span data-stu-id="9668e-106">Properties</span></span>
+| <span data-ttu-id="9668e-107">属性</span><span class="sxs-lookup"><span data-stu-id="9668e-107">Property</span></span>     | <span data-ttu-id="9668e-108">类型</span><span class="sxs-lookup"><span data-stu-id="9668e-108">Type</span></span>   |<span data-ttu-id="9668e-109">说明</span><span class="sxs-lookup"><span data-stu-id="9668e-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1d5e0-109">externalId</span><span class="sxs-lookup"><span data-stu-id="1d5e0-109">externalId</span></span>|<span data-ttu-id="1d5e0-110">String</span><span class="sxs-lookup"><span data-stu-id="1d5e0-110">String</span></span>| <span data-ttu-id="1d5e0-111">源系统中教师的 ID。</span><span class="sxs-lookup"><span data-stu-id="1d5e0-111">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="1d5e0-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="1d5e0-112">teacherNumber</span></span>|<span data-ttu-id="1d5e0-113">String</span><span class="sxs-lookup"><span data-stu-id="1d5e0-113">String</span></span>|<span data-ttu-id="1d5e0-114">教师编号。</span><span class="sxs-lookup"><span data-stu-id="1d5e0-114">Teacher number.</span></span>|
+|<span data-ttu-id="9668e-110">externalId</span><span class="sxs-lookup"><span data-stu-id="9668e-110">externalId</span></span>|<span data-ttu-id="9668e-111">String</span><span class="sxs-lookup"><span data-stu-id="9668e-111">String</span></span>| <span data-ttu-id="9668e-112">源系统中教师的 ID。</span><span class="sxs-lookup"><span data-stu-id="9668e-112">ID of the teacher in the source system.</span></span>|
+|<span data-ttu-id="9668e-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="9668e-113">teacherNumber</span></span>|<span data-ttu-id="9668e-114">String</span><span class="sxs-lookup"><span data-stu-id="9668e-114">String</span></span>|<span data-ttu-id="9668e-115">教师编号。</span><span class="sxs-lookup"><span data-stu-id="9668e-115">Teacher number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1d5e0-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1d5e0-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9668e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9668e-116">JSON representation</span></span>
 
-<span data-ttu-id="1d5e0-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1d5e0-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9668e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9668e-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

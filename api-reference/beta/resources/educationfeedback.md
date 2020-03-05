@@ -5,30 +5,32 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7300c5f2d46a3a60a104288d8ee9559e6cf5fd2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aac921b1e9f70bc22db2b91833a6b6d348a935db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006414"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502142"
 ---
-# <a name="educationfeedback-resource-type"></a><span data-ttu-id="148db-104">educationFeedback 资源类型</span><span class="sxs-lookup"><span data-stu-id="148db-104">educationFeedback resource type</span></span>
+# <a name="educationfeedback-resource-type"></a><span data-ttu-id="ef54a-104">educationFeedback 资源类型</span><span class="sxs-lookup"><span data-stu-id="ef54a-104">educationFeedback resource type</span></span>
+
+<span data-ttu-id="ef54a-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="ef54a-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="148db-105">从教师到学生的反馈。</span><span class="sxs-lookup"><span data-stu-id="148db-105">Feedback from a teacher to a student.</span></span> <span data-ttu-id="148db-106">此属性表示反馈的文本部分以及发件人数。</span><span class="sxs-lookup"><span data-stu-id="148db-106">This property represents both the text part of the feedback along with the who.</span></span>
+<span data-ttu-id="ef54a-106">从教师到学生的反馈。</span><span class="sxs-lookup"><span data-stu-id="ef54a-106">Feedback from a teacher to a student.</span></span> <span data-ttu-id="ef54a-107">此属性表示反馈的文本部分以及发件人数。</span><span class="sxs-lookup"><span data-stu-id="ef54a-107">This property represents both the text part of the feedback along with the who.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="148db-107">属性</span><span class="sxs-lookup"><span data-stu-id="148db-107">Properties</span></span>
-| <span data-ttu-id="148db-108">属性</span><span class="sxs-lookup"><span data-stu-id="148db-108">Property</span></span>     | <span data-ttu-id="148db-109">类型</span><span class="sxs-lookup"><span data-stu-id="148db-109">Type</span></span>   |<span data-ttu-id="148db-110">说明</span><span class="sxs-lookup"><span data-stu-id="148db-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ef54a-108">属性</span><span class="sxs-lookup"><span data-stu-id="ef54a-108">Properties</span></span>
+| <span data-ttu-id="ef54a-109">属性</span><span class="sxs-lookup"><span data-stu-id="ef54a-109">Property</span></span>     | <span data-ttu-id="ef54a-110">类型</span><span class="sxs-lookup"><span data-stu-id="ef54a-110">Type</span></span>   |<span data-ttu-id="ef54a-111">说明</span><span class="sxs-lookup"><span data-stu-id="ef54a-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="148db-111">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="148db-111">feedbackBy</span></span>|[<span data-ttu-id="148db-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="148db-112">identitySet</span></span>](identityset.md)|<span data-ttu-id="148db-113">创建了反馈的用户。</span><span class="sxs-lookup"><span data-stu-id="148db-113">User who created the feedback.</span></span>|
-|<span data-ttu-id="148db-114">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="148db-114">feedbackDateTime</span></span>|<span data-ttu-id="148db-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="148db-115">DateTimeOffset</span></span>|<span data-ttu-id="148db-116">提供反馈的时间点。</span><span class="sxs-lookup"><span data-stu-id="148db-116">Moment in time when the feedback was given.</span></span> <span data-ttu-id="148db-117">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="148db-117">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="148db-118">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="148db-118">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="148db-119">text</span><span class="sxs-lookup"><span data-stu-id="148db-119">text</span></span>|[<span data-ttu-id="148db-120">itemBody</span><span class="sxs-lookup"><span data-stu-id="148db-120">itemBody</span></span>](itembody.md)|<span data-ttu-id="148db-121">征求.</span><span class="sxs-lookup"><span data-stu-id="148db-121">Feedback.</span></span>|
+|<span data-ttu-id="ef54a-112">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="ef54a-112">feedbackBy</span></span>|[<span data-ttu-id="ef54a-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="ef54a-113">identitySet</span></span>](identityset.md)|<span data-ttu-id="ef54a-114">创建了反馈的用户。</span><span class="sxs-lookup"><span data-stu-id="ef54a-114">User who created the feedback.</span></span>|
+|<span data-ttu-id="ef54a-115">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="ef54a-115">feedbackDateTime</span></span>|<span data-ttu-id="ef54a-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ef54a-116">DateTimeOffset</span></span>|<span data-ttu-id="ef54a-117">提供反馈的时间点。</span><span class="sxs-lookup"><span data-stu-id="ef54a-117">Moment in time when the feedback was given.</span></span> <span data-ttu-id="ef54a-118">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="ef54a-118">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="ef54a-119">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="ef54a-119">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="ef54a-120">text</span><span class="sxs-lookup"><span data-stu-id="ef54a-120">text</span></span>|[<span data-ttu-id="ef54a-121">itemBody</span><span class="sxs-lookup"><span data-stu-id="ef54a-121">itemBody</span></span>](itembody.md)|<span data-ttu-id="ef54a-122">征求.</span><span class="sxs-lookup"><span data-stu-id="ef54a-122">Feedback.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="148db-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="148db-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ef54a-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ef54a-123">JSON representation</span></span>
 
-<span data-ttu-id="148db-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="148db-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ef54a-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ef54a-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

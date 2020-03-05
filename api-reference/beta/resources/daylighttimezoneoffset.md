@@ -5,43 +5,45 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2d82db78d97dc12086ec3e4d59cea468eefddf38
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c31225868b463b8ea3dd719d451726f59a087f99
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973861"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507287"
 ---
-# <a name="daylighttimezoneoffset-resource-type"></a><span data-ttu-id="b47ef-103">daylightTimeZoneOffset 资源类型</span><span class="sxs-lookup"><span data-stu-id="b47ef-103">daylightTimeZoneOffset resource type</span></span>
+# <a name="daylighttimezoneoffset-resource-type"></a><span data-ttu-id="3f6ad-103">daylightTimeZoneOffset 资源类型</span><span class="sxs-lookup"><span data-stu-id="3f6ad-103">daylightTimeZoneOffset resource type</span></span>
+
+<span data-ttu-id="3f6ad-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="3f6ad-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b47ef-104">指定时区何时从标准时间切换到夏令时。</span><span class="sxs-lookup"><span data-stu-id="b47ef-104">Specifies when a time zone switches from standard time to daylight saving time.</span></span>
+<span data-ttu-id="3f6ad-105">指定时区何时从标准时间切换到夏令时。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-105">Specifies when a time zone switches from standard time to daylight saving time.</span></span>
 
-<span data-ttu-id="b47ef-105">例如，如果为一个时区指定了以下属性：</span><span class="sxs-lookup"><span data-stu-id="b47ef-105">For example, if a time zone is specified with the following properties:</span></span>
+<span data-ttu-id="3f6ad-106">例如，如果为一个时区指定了以下属性：</span><span class="sxs-lookup"><span data-stu-id="3f6ad-106">For example, if a time zone is specified with the following properties:</span></span>
 
-- <span data-ttu-id="b47ef-106">**bias** 为 300</span><span class="sxs-lookup"><span data-stu-id="b47ef-106">**bias** is 300</span></span>
-- <span data-ttu-id="b47ef-107">**daylightBias** 为 -100</span><span class="sxs-lookup"><span data-stu-id="b47ef-107">**daylightBias** is -100</span></span>
-- <span data-ttu-id="b47ef-108">**dayOccurrence** 为 4</span><span class="sxs-lookup"><span data-stu-id="b47ef-108">**dayOccurrence** is 4</span></span>
-- <span data-ttu-id="b47ef-109">**dayOfWeek** 为“sunday”</span><span class="sxs-lookup"><span data-stu-id="b47ef-109">**dayOfWeek** is "sunday"</span></span>
-- <span data-ttu-id="b47ef-110">**month** 为 5</span><span class="sxs-lookup"><span data-stu-id="b47ef-110">**month** is 5</span></span>
-- <span data-ttu-id="b47ef-111">**time** 为 02:00:00 _ **year** 为 0，意味着夏令时的时长比 UTC 早 +300-100=200 分钟。</span><span class="sxs-lookup"><span data-stu-id="b47ef-111">**time** is 02:00:00 _ **year** is 0 That means the time during daylight saving time is +300-100=200 minutes ahead of UTC.</span></span> <span data-ttu-id="b47ef-112">从夏令时到标准时间的时区切换出现在每年五月第四个星期日的早上 2 点。</span><span class="sxs-lookup"><span data-stu-id="b47ef-112">The time zone transition from daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, every year.</span></span>
+- <span data-ttu-id="3f6ad-107">**bias** 为 300</span><span class="sxs-lookup"><span data-stu-id="3f6ad-107">**bias** is 300</span></span>
+- <span data-ttu-id="3f6ad-108">**daylightBias** 为 -100</span><span class="sxs-lookup"><span data-stu-id="3f6ad-108">**daylightBias** is -100</span></span>
+- <span data-ttu-id="3f6ad-109">**dayOccurrence** 为 4</span><span class="sxs-lookup"><span data-stu-id="3f6ad-109">**dayOccurrence** is 4</span></span>
+- <span data-ttu-id="3f6ad-110">**dayOfWeek** 为“sunday”</span><span class="sxs-lookup"><span data-stu-id="3f6ad-110">**dayOfWeek** is "sunday"</span></span>
+- <span data-ttu-id="3f6ad-111">**month** 为 5</span><span class="sxs-lookup"><span data-stu-id="3f6ad-111">**month** is 5</span></span>
+- <span data-ttu-id="3f6ad-112">**time** 为 02:00:00 _ **year** 为 0，意味着夏令时的时长比 UTC 早 +300-100=200 分钟。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-112">**time** is 02:00:00 _ **year** is 0 That means the time during daylight saving time is +300-100=200 minutes ahead of UTC.</span></span> <span data-ttu-id="3f6ad-113">从夏令时到标准时间的时区切换出现在每年五月第四个星期日的早上 2 点。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-113">The time zone transition from daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, every year.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b47ef-113">属性</span><span class="sxs-lookup"><span data-stu-id="b47ef-113">Properties</span></span>
-| <span data-ttu-id="b47ef-114">属性</span><span class="sxs-lookup"><span data-stu-id="b47ef-114">Property</span></span>     | <span data-ttu-id="b47ef-115">类型</span><span class="sxs-lookup"><span data-stu-id="b47ef-115">Type</span></span>   |<span data-ttu-id="b47ef-116">说明</span><span class="sxs-lookup"><span data-stu-id="b47ef-116">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3f6ad-114">属性</span><span class="sxs-lookup"><span data-stu-id="3f6ad-114">Properties</span></span>
+| <span data-ttu-id="3f6ad-115">属性</span><span class="sxs-lookup"><span data-stu-id="3f6ad-115">Property</span></span>     | <span data-ttu-id="3f6ad-116">类型</span><span class="sxs-lookup"><span data-stu-id="3f6ad-116">Type</span></span>   |<span data-ttu-id="3f6ad-117">说明</span><span class="sxs-lookup"><span data-stu-id="3f6ad-117">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b47ef-117">daylightBias</span><span class="sxs-lookup"><span data-stu-id="b47ef-117">daylightBias</span></span> | <span data-ttu-id="b47ef-118">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b47ef-118">Edm.Int32</span></span> | <span data-ttu-id="b47ef-119">夏时制与协调世界时 (UTC) 的时间偏移量。</span><span class="sxs-lookup"><span data-stu-id="b47ef-119">The time offset from Coordinated Universal Time (UTC) for daylight saving time.</span></span> <span data-ttu-id="b47ef-120">此值以分钟为单位。</span><span class="sxs-lookup"><span data-stu-id="b47ef-120">This value is in minutes.</span></span>  |
-| <span data-ttu-id="b47ef-121">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="b47ef-121">dayOccurrence</span></span> | <span data-ttu-id="b47ef-122">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b47ef-122">Edm.Int32</span></span> | <span data-ttu-id="b47ef-123">表示从标准时间到夏令时的切换在一周的具体某天出现的次数。</span><span class="sxs-lookup"><span data-stu-id="b47ef-123">Represents the nth occurrence of the day of week that the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="b47ef-124">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="b47ef-124">dayOfWeek</span></span> | <span data-ttu-id="b47ef-125">string</span><span class="sxs-lookup"><span data-stu-id="b47ef-125">string</span></span> | <span data-ttu-id="b47ef-126">表示从标准时间到夏令时的切换出现时一周的具体某日。</span><span class="sxs-lookup"><span data-stu-id="b47ef-126">Represents the day of the week when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="b47ef-127">month</span><span class="sxs-lookup"><span data-stu-id="b47ef-127">month</span></span> | <span data-ttu-id="b47ef-128">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b47ef-128">Edm.Int32</span></span> | <span data-ttu-id="b47ef-129">表示从标准时间到夏令时的切换出现时一年的具体月份。</span><span class="sxs-lookup"><span data-stu-id="b47ef-129">Represents the month of the year when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="b47ef-130">time</span><span class="sxs-lookup"><span data-stu-id="b47ef-130">time</span></span> | <span data-ttu-id="b47ef-131">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b47ef-131">Edm.TimeOfDay</span></span> | <span data-ttu-id="b47ef-132">表示从标准时间到夏令时的切换出现时某日的具体时间。</span><span class="sxs-lookup"><span data-stu-id="b47ef-132">Represents the time of day when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="b47ef-133">year</span><span class="sxs-lookup"><span data-stu-id="b47ef-133">year</span></span> | <span data-ttu-id="b47ef-134">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b47ef-134">Edm.Int32</span></span> | <span data-ttu-id="b47ef-135">表示从标准时间到夏令时的变更出现时的年度频率。</span><span class="sxs-lookup"><span data-stu-id="b47ef-135">Represents how frequently in terms of years the change from standard time to daylight saving time occurs.</span></span> <span data-ttu-id="b47ef-136">例如，值为 0 意味着每年。</span><span class="sxs-lookup"><span data-stu-id="b47ef-136">For example, a value of 0 means every year.</span></span>|
+| <span data-ttu-id="3f6ad-118">daylightBias</span><span class="sxs-lookup"><span data-stu-id="3f6ad-118">daylightBias</span></span> | <span data-ttu-id="3f6ad-119">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="3f6ad-119">Edm.Int32</span></span> | <span data-ttu-id="3f6ad-120">夏时制与协调世界时 (UTC) 的时间偏移量。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-120">The time offset from Coordinated Universal Time (UTC) for daylight saving time.</span></span> <span data-ttu-id="3f6ad-121">此值以分钟为单位。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-121">This value is in minutes.</span></span>  |
+| <span data-ttu-id="3f6ad-122">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="3f6ad-122">dayOccurrence</span></span> | <span data-ttu-id="3f6ad-123">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="3f6ad-123">Edm.Int32</span></span> | <span data-ttu-id="3f6ad-124">表示从标准时间到夏令时的切换在一周的具体某天出现的次数。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-124">Represents the nth occurrence of the day of week that the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="3f6ad-125">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="3f6ad-125">dayOfWeek</span></span> | <span data-ttu-id="3f6ad-126">string</span><span class="sxs-lookup"><span data-stu-id="3f6ad-126">string</span></span> | <span data-ttu-id="3f6ad-127">表示从标准时间到夏令时的切换出现时一周的具体某日。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-127">Represents the day of the week when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="3f6ad-128">month</span><span class="sxs-lookup"><span data-stu-id="3f6ad-128">month</span></span> | <span data-ttu-id="3f6ad-129">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="3f6ad-129">Edm.Int32</span></span> | <span data-ttu-id="3f6ad-130">表示从标准时间到夏令时的切换出现时一年的具体月份。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-130">Represents the month of the year when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="3f6ad-131">time</span><span class="sxs-lookup"><span data-stu-id="3f6ad-131">time</span></span> | <span data-ttu-id="3f6ad-132">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="3f6ad-132">Edm.TimeOfDay</span></span> | <span data-ttu-id="3f6ad-133">表示从标准时间到夏令时的切换出现时某日的具体时间。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-133">Represents the time of day when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="3f6ad-134">year</span><span class="sxs-lookup"><span data-stu-id="3f6ad-134">year</span></span> | <span data-ttu-id="3f6ad-135">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="3f6ad-135">Edm.Int32</span></span> | <span data-ttu-id="3f6ad-136">表示从标准时间到夏令时的变更出现时的年度频率。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-136">Represents how frequently in terms of years the change from standard time to daylight saving time occurs.</span></span> <span data-ttu-id="3f6ad-137">例如，值为 0 意味着每年。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-137">For example, a value of 0 means every year.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="b47ef-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b47ef-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3f6ad-138">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3f6ad-138">JSON representation</span></span>
 
-<span data-ttu-id="b47ef-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b47ef-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3f6ad-139">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3f6ad-139">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

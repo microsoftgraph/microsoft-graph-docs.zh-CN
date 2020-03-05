@@ -1,33 +1,35 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
-description: 如果要使用 OAuth2 客户端凭据授予连接到数据提供程序, 则此连接设置类型应用于设置配置文件。
+description: 如果要使用 OAuth2 客户端凭据授予连接到数据提供程序，则此连接设置类型应用于设置配置文件。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ffc3af93a90ba0d6991007a64d24b9fb776e8bc8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d38853e40d8f88bf4aa8323395848185793cc42c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972367"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500091"
 ---
-# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a><span data-ttu-id="ea098-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源</span><span class="sxs-lookup"><span data-stu-id="ea098-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource</span></span>
+# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a><span data-ttu-id="3051a-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源</span><span class="sxs-lookup"><span data-stu-id="3051a-103">educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource</span></span>
+
+<span data-ttu-id="3051a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="3051a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea098-104">如果要使用[OAuth2 客户端凭据授予](https://tools.ietf.org/html/rfc6749#section-4.4)连接到数据提供程序, 则此连接设置类型应用于设置配置文件。</span><span class="sxs-lookup"><span data-stu-id="ea098-104">When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
+<span data-ttu-id="3051a-105">如果要使用[OAuth2 客户端凭据授予](https://tools.ietf.org/html/rfc6749#section-4.4)连接到数据提供程序，则此连接设置类型应用于设置配置文件。</span><span class="sxs-lookup"><span data-stu-id="3051a-105">When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
 
-<span data-ttu-id="ea098-105">派生自[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="ea098-105">Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
+<span data-ttu-id="3051a-106">派生自[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="3051a-106">Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ea098-106">属性</span><span class="sxs-lookup"><span data-stu-id="ea098-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3051a-107">属性</span><span class="sxs-lookup"><span data-stu-id="3051a-107">Properties</span></span>
 
-| <span data-ttu-id="ea098-107">属性</span><span class="sxs-lookup"><span data-stu-id="ea098-107">Property</span></span> | <span data-ttu-id="ea098-108">类型</span><span class="sxs-lookup"><span data-stu-id="ea098-108">Type</span></span> | <span data-ttu-id="ea098-109">说明</span><span class="sxs-lookup"><span data-stu-id="ea098-109">Description</span></span> |
+| <span data-ttu-id="3051a-108">属性</span><span class="sxs-lookup"><span data-stu-id="3051a-108">Property</span></span> | <span data-ttu-id="3051a-109">类型</span><span class="sxs-lookup"><span data-stu-id="3051a-109">Type</span></span> | <span data-ttu-id="3051a-110">说明</span><span class="sxs-lookup"><span data-stu-id="3051a-110">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="ea098-110">**tokenUrl**</span><span class="sxs-lookup"><span data-stu-id="ea098-110">**tokenUrl**</span></span> | <span data-ttu-id="ea098-111">String</span><span class="sxs-lookup"><span data-stu-id="ea098-111">String</span></span> | <span data-ttu-id="ea098-112">用于获取数据提供程序的访问令牌的 URL。</span><span class="sxs-lookup"><span data-stu-id="ea098-112">The URL to get access tokens for the data provider.</span></span> |
-| <span data-ttu-id="ea098-113">**scope**</span><span class="sxs-lookup"><span data-stu-id="ea098-113">**scope**</span></span> | <span data-ttu-id="ea098-114">String</span><span class="sxs-lookup"><span data-stu-id="ea098-114">String</span></span> | <span data-ttu-id="ea098-115">[访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。</span><span class="sxs-lookup"><span data-stu-id="ea098-115">[The scope of the access request](https://tools.ietf.org/html/rfc6749#section-3.3).</span></span> |
+| <span data-ttu-id="3051a-111">**tokenUrl**</span><span class="sxs-lookup"><span data-stu-id="3051a-111">**tokenUrl**</span></span> | <span data-ttu-id="3051a-112">String</span><span class="sxs-lookup"><span data-stu-id="3051a-112">String</span></span> | <span data-ttu-id="3051a-113">用于获取数据提供程序的访问令牌的 URL。</span><span class="sxs-lookup"><span data-stu-id="3051a-113">The URL to get access tokens for the data provider.</span></span> |
+| <span data-ttu-id="3051a-114">**scope**</span><span class="sxs-lookup"><span data-stu-id="3051a-114">**scope**</span></span> | <span data-ttu-id="3051a-115">String</span><span class="sxs-lookup"><span data-stu-id="3051a-115">String</span></span> | <span data-ttu-id="3051a-116">[访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。</span><span class="sxs-lookup"><span data-stu-id="3051a-116">[The scope of the access request](https://tools.ietf.org/html/rfc6749#section-3.3).</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="ea098-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ea098-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3051a-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3051a-117">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"

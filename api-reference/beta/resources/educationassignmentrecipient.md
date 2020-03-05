@@ -1,28 +1,30 @@
 ---
 title: educationAssignmentRecipient 资源类型
-description: 在**assignTo**属性中使用。 此超类是抽象的, 无法
+description: 在**assignTo**属性中使用。 此超类是抽象的，无法
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b47a9de683c62986054e6ed2b5926af03bbd4ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e341e7136697614b579773cbe113591a46bf2f91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972780"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502443"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="0fe2a-104">educationAssignmentRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="0fe2a-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="f3a27-104">educationAssignmentRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="f3a27-104">educationAssignmentRecipient resource type</span></span>
+
+<span data-ttu-id="f3a27-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f3a27-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0fe2a-105">在**assignTo**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="0fe2a-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="0fe2a-106">此超类是抽象的, 不能将赋值中的属性设置为此值。</span><span class="sxs-lookup"><span data-stu-id="0fe2a-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="0fe2a-107">此超类别表示在发布工作分配时应将分配分配给谁。</span><span class="sxs-lookup"><span data-stu-id="0fe2a-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="f3a27-106">在**assignTo**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="f3a27-106">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="f3a27-107">此超类是抽象的，不能将赋值中的属性设置为此值。</span><span class="sxs-lookup"><span data-stu-id="f3a27-107">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="f3a27-108">此超类别表示在发布工作分配时应将分配分配给谁。</span><span class="sxs-lookup"><span data-stu-id="f3a27-108">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="0fe2a-108">[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。</span><span class="sxs-lookup"><span data-stu-id="0fe2a-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="f3a27-109">[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。</span><span class="sxs-lookup"><span data-stu-id="f3a27-109">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0fe2a-109">属性</span><span class="sxs-lookup"><span data-stu-id="0fe2a-109">Properties</span></span>
-<span data-ttu-id="0fe2a-110">无。</span><span class="sxs-lookup"><span data-stu-id="0fe2a-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="f3a27-110">属性</span><span class="sxs-lookup"><span data-stu-id="f3a27-110">Properties</span></span>
+<span data-ttu-id="f3a27-111">无。</span><span class="sxs-lookup"><span data-stu-id="f3a27-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",

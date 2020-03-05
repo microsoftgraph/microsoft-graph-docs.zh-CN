@@ -1,33 +1,35 @@
 ---
 title: educationAssignmentIndividualRecipient 资源类型
-description: '在 assignTo 属性中使用。 当设置为 "单个收件人列表" 时, 课程中的 "选定学生" 将 '
+description: '在 assignTo 属性中使用。 当设置为 "单个收件人列表" 时，课程中的 "选定学生" 将 '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7408382cadcb53d857bb36b06702f7857d64a8f4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5bccdf98bbba4c0965daf5d5aba93cf1a34b758
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502548"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="62ffc-104">educationAssignmentIndividualRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="62ffc-104">educationAssignmentIndividualRecipient resource type</span></span>
+# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="d30a5-104">educationAssignmentIndividualRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="d30a5-104">educationAssignmentIndividualRecipient resource type</span></span>
+
+<span data-ttu-id="d30a5-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="d30a5-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62ffc-105">在[assignTo](educationassignment.md)属性中使用。</span><span class="sxs-lookup"><span data-stu-id="62ffc-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="62ffc-106">如果设置为 "单个收件人列表", 则在发布工作分配时, 类中的所选学生将收到提交对象。</span><span class="sxs-lookup"><span data-stu-id="62ffc-106">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="d30a5-106">在[assignTo](educationassignment.md)属性中使用。</span><span class="sxs-lookup"><span data-stu-id="d30a5-106">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="d30a5-107">如果设置为 "单个收件人列表"，则在发布工作分配时，类中的所选学生将收到提交对象。</span><span class="sxs-lookup"><span data-stu-id="d30a5-107">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="62ffc-107">此资源是[educationAssignmentRecipient](educationassignmentrecipient.md)的子类。</span><span class="sxs-lookup"><span data-stu-id="62ffc-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="d30a5-108">此资源是[educationAssignmentRecipient](educationassignmentrecipient.md)的子类。</span><span class="sxs-lookup"><span data-stu-id="d30a5-108">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="62ffc-108">属性</span><span class="sxs-lookup"><span data-stu-id="62ffc-108">Properties</span></span>
-| <span data-ttu-id="62ffc-109">属性</span><span class="sxs-lookup"><span data-stu-id="62ffc-109">Property</span></span>     | <span data-ttu-id="62ffc-110">类型</span><span class="sxs-lookup"><span data-stu-id="62ffc-110">Type</span></span>   |<span data-ttu-id="62ffc-111">说明</span><span class="sxs-lookup"><span data-stu-id="62ffc-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d30a5-109">属性</span><span class="sxs-lookup"><span data-stu-id="d30a5-109">Properties</span></span>
+| <span data-ttu-id="d30a5-110">属性</span><span class="sxs-lookup"><span data-stu-id="d30a5-110">Property</span></span>     | <span data-ttu-id="d30a5-111">类型</span><span class="sxs-lookup"><span data-stu-id="d30a5-111">Type</span></span>   |<span data-ttu-id="d30a5-112">说明</span><span class="sxs-lookup"><span data-stu-id="d30a5-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62ffc-112">recipients</span><span class="sxs-lookup"><span data-stu-id="62ffc-112">recipients</span></span>|<span data-ttu-id="62ffc-113">String collection</span><span class="sxs-lookup"><span data-stu-id="62ffc-113">String collection</span></span>|<span data-ttu-id="62ffc-114">收件人的 id 的集合。</span><span class="sxs-lookup"><span data-stu-id="62ffc-114">A collection of ids of the recipients.</span></span>|
+|<span data-ttu-id="d30a5-113">recipients</span><span class="sxs-lookup"><span data-stu-id="d30a5-113">recipients</span></span>|<span data-ttu-id="d30a5-114">String 集合</span><span class="sxs-lookup"><span data-stu-id="d30a5-114">String collection</span></span>|<span data-ttu-id="d30a5-115">收件人的 id 的集合。</span><span class="sxs-lookup"><span data-stu-id="d30a5-115">A collection of ids of the recipients.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="62ffc-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="62ffc-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d30a5-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d30a5-116">JSON representation</span></span>
 
-<span data-ttu-id="62ffc-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="62ffc-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d30a5-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d30a5-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

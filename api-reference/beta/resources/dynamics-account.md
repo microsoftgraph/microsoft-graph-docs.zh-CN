@@ -7,40 +7,45 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af6c1eccfc30259f2b86fb5a65b81d95802b67f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012686"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505278"
 ---
-# <a name="accounts-resource-type"></a><span data-ttu-id="a46e3-103">帐户资源类型</span><span class="sxs-lookup"><span data-stu-id="a46e3-103">accounts resource type</span></span>
-<span data-ttu-id="a46e3-104">表示 Dynamics 365 Business Central 中的 account 对象。</span><span class="sxs-lookup"><span data-stu-id="a46e3-104">Represents an account object in Dynamics 365 Business Central.</span></span>
+# <a name="accounts-resource-type"></a><span data-ttu-id="97ae3-103">帐户资源类型</span><span class="sxs-lookup"><span data-stu-id="97ae3-103">accounts resource type</span></span>
 
-## <a name="methods"></a><span data-ttu-id="a46e3-105">方法</span><span class="sxs-lookup"><span data-stu-id="a46e3-105">Methods</span></span>
+<span data-ttu-id="97ae3-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="97ae3-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="a46e3-106">方法</span><span class="sxs-lookup"><span data-stu-id="a46e3-106">Method</span></span>       | <span data-ttu-id="a46e3-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="a46e3-107">Return Type</span></span>  |<span data-ttu-id="a46e3-108">说明</span><span class="sxs-lookup"><span data-stu-id="a46e3-108">Description</span></span>|
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="97ae3-105">表示 Dynamics 365 Business Central 中的 account 对象。</span><span class="sxs-lookup"><span data-stu-id="97ae3-105">Represents an account object in Dynamics 365 Business Central.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="97ae3-106">方法</span><span class="sxs-lookup"><span data-stu-id="97ae3-106">Methods</span></span>
+
+| <span data-ttu-id="97ae3-107">方法</span><span class="sxs-lookup"><span data-stu-id="97ae3-107">Method</span></span>       | <span data-ttu-id="97ae3-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="97ae3-108">Return Type</span></span>  |<span data-ttu-id="97ae3-109">说明</span><span class="sxs-lookup"><span data-stu-id="97ae3-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="a46e3-109">获取帐户</span><span class="sxs-lookup"><span data-stu-id="a46e3-109">Get accounts</span></span>](../api/dynamics-account-get.md)|<span data-ttu-id="a46e3-110">accounts</span><span class="sxs-lookup"><span data-stu-id="a46e3-110">accounts</span></span>|<span data-ttu-id="a46e3-111">获取帐户对象。</span><span class="sxs-lookup"><span data-stu-id="a46e3-111">Get accounts object.</span></span>|
+|[<span data-ttu-id="97ae3-110">获取帐户</span><span class="sxs-lookup"><span data-stu-id="97ae3-110">Get accounts</span></span>](../api/dynamics-account-get.md)|<span data-ttu-id="97ae3-111">accounts</span><span class="sxs-lookup"><span data-stu-id="97ae3-111">accounts</span></span>|<span data-ttu-id="97ae3-112">获取帐户对象。</span><span class="sxs-lookup"><span data-stu-id="97ae3-112">Get accounts object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="a46e3-112">属性</span><span class="sxs-lookup"><span data-stu-id="a46e3-112">Properties</span></span>
-| <span data-ttu-id="a46e3-113">属性</span><span class="sxs-lookup"><span data-stu-id="a46e3-113">Property</span></span>     | <span data-ttu-id="a46e3-114">类型</span><span class="sxs-lookup"><span data-stu-id="a46e3-114">Type</span></span>   |<span data-ttu-id="a46e3-115">说明</span><span class="sxs-lookup"><span data-stu-id="a46e3-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="97ae3-113">属性</span><span class="sxs-lookup"><span data-stu-id="97ae3-113">Properties</span></span>
+| <span data-ttu-id="97ae3-114">属性</span><span class="sxs-lookup"><span data-stu-id="97ae3-114">Property</span></span>     | <span data-ttu-id="97ae3-115">类型</span><span class="sxs-lookup"><span data-stu-id="97ae3-115">Type</span></span>   |<span data-ttu-id="97ae3-116">说明</span><span class="sxs-lookup"><span data-stu-id="97ae3-116">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a46e3-116">id</span><span class="sxs-lookup"><span data-stu-id="a46e3-116">id</span></span>|<span data-ttu-id="a46e3-117">GUID</span><span class="sxs-lookup"><span data-stu-id="a46e3-117">GUID</span></span>|<span data-ttu-id="a46e3-118">帐户的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="a46e3-118">The unique ID of the account.</span></span>|
-|<span data-ttu-id="a46e3-119">number</span><span class="sxs-lookup"><span data-stu-id="a46e3-119">number</span></span>|<span data-ttu-id="a46e3-120">字符串, 最大大小为20</span><span class="sxs-lookup"><span data-stu-id="a46e3-120">string, maximum size 20</span></span>|<span data-ttu-id="a46e3-121">指定 G/L 帐号的号码。</span><span class="sxs-lookup"><span data-stu-id="a46e3-121">Specifies the number of the G/L account.</span></span>|
-|<span data-ttu-id="a46e3-122">displayName</span><span class="sxs-lookup"><span data-stu-id="a46e3-122">displayName</span></span>|<span data-ttu-id="a46e3-123">字符串, 最大大小为50</span><span class="sxs-lookup"><span data-stu-id="a46e3-123">string, maximum size 50</span></span>|<span data-ttu-id="a46e3-124">指定 G/L 帐户的名称。</span><span class="sxs-lookup"><span data-stu-id="a46e3-124">Specifies the name of the G/L account.</span></span>|
-|<span data-ttu-id="a46e3-125">“类别”</span><span class="sxs-lookup"><span data-stu-id="a46e3-125">category</span></span>|<span data-ttu-id="a46e3-126">字符串, 最大大小为20</span><span class="sxs-lookup"><span data-stu-id="a46e3-126">string, maximum size 20</span></span>|<span data-ttu-id="a46e3-127">指定 G/L 帐户的类别。</span><span class="sxs-lookup"><span data-stu-id="a46e3-127">Specifies the category of the G/L account.</span></span>|
-|<span data-ttu-id="a46e3-128">子类别</span><span class="sxs-lookup"><span data-stu-id="a46e3-128">subCategory</span></span>|<span data-ttu-id="a46e3-129">字符串, 最大大小为80</span><span class="sxs-lookup"><span data-stu-id="a46e3-129">string, maximum size 80</span></span>|<span data-ttu-id="a46e3-130">指定 G/L 帐户的帐户类别的子类别。</span><span class="sxs-lookup"><span data-stu-id="a46e3-130">Specifies the subcategory of the account category of the G/L account.</span></span>|
-|<span data-ttu-id="a46e3-131">堵塞</span><span class="sxs-lookup"><span data-stu-id="a46e3-131">blocked</span></span>|<span data-ttu-id="a46e3-132">boolean</span><span class="sxs-lookup"><span data-stu-id="a46e3-132">boolean</span></span>|<span data-ttu-id="a46e3-133">指定无法将条目投递到 G/L 帐户。</span><span class="sxs-lookup"><span data-stu-id="a46e3-133">Specifies that entries cannot be posted to the G/L account.</span></span> <span data-ttu-id="a46e3-134">**如果为 True** , 则表示帐户被阻止, 不允许进行发布。</span><span class="sxs-lookup"><span data-stu-id="a46e3-134">**True** indicates account is blocked and posting is not allowed.</span></span>|
-|<span data-ttu-id="a46e3-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a46e3-135">lastModifiedDateTime</span></span>|<span data-ttu-id="a46e3-136">datetime</span><span class="sxs-lookup"><span data-stu-id="a46e3-136">datetime</span></span>|<span data-ttu-id="a46e3-137">帐户修改后的最后一个日期/时间。</span><span class="sxs-lookup"><span data-stu-id="a46e3-137">The last datetime the account was modified.</span></span>|
+|<span data-ttu-id="97ae3-117">id</span><span class="sxs-lookup"><span data-stu-id="97ae3-117">id</span></span>|<span data-ttu-id="97ae3-118">GUID</span><span class="sxs-lookup"><span data-stu-id="97ae3-118">GUID</span></span>|<span data-ttu-id="97ae3-119">帐户的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="97ae3-119">The unique ID of the account.</span></span>|
+|<span data-ttu-id="97ae3-120">number</span><span class="sxs-lookup"><span data-stu-id="97ae3-120">number</span></span>|<span data-ttu-id="97ae3-121">字符串，最大大小为20</span><span class="sxs-lookup"><span data-stu-id="97ae3-121">string, maximum size 20</span></span>|<span data-ttu-id="97ae3-122">指定 G/L 帐号的号码。</span><span class="sxs-lookup"><span data-stu-id="97ae3-122">Specifies the number of the G/L account.</span></span>|
+|<span data-ttu-id="97ae3-123">displayName</span><span class="sxs-lookup"><span data-stu-id="97ae3-123">displayName</span></span>|<span data-ttu-id="97ae3-124">字符串，最大大小为50</span><span class="sxs-lookup"><span data-stu-id="97ae3-124">string, maximum size 50</span></span>|<span data-ttu-id="97ae3-125">指定 G/L 帐户的名称。</span><span class="sxs-lookup"><span data-stu-id="97ae3-125">Specifies the name of the G/L account.</span></span>|
+|<span data-ttu-id="97ae3-126">“类别”</span><span class="sxs-lookup"><span data-stu-id="97ae3-126">category</span></span>|<span data-ttu-id="97ae3-127">字符串，最大大小为20</span><span class="sxs-lookup"><span data-stu-id="97ae3-127">string, maximum size 20</span></span>|<span data-ttu-id="97ae3-128">指定 G/L 帐户的类别。</span><span class="sxs-lookup"><span data-stu-id="97ae3-128">Specifies the category of the G/L account.</span></span>|
+|<span data-ttu-id="97ae3-129">子类别</span><span class="sxs-lookup"><span data-stu-id="97ae3-129">subCategory</span></span>|<span data-ttu-id="97ae3-130">字符串，最大大小为80</span><span class="sxs-lookup"><span data-stu-id="97ae3-130">string, maximum size 80</span></span>|<span data-ttu-id="97ae3-131">指定 G/L 帐户的帐户类别的子类别。</span><span class="sxs-lookup"><span data-stu-id="97ae3-131">Specifies the subcategory of the account category of the G/L account.</span></span>|
+|<span data-ttu-id="97ae3-132">堵塞</span><span class="sxs-lookup"><span data-stu-id="97ae3-132">blocked</span></span>|<span data-ttu-id="97ae3-133">boolean</span><span class="sxs-lookup"><span data-stu-id="97ae3-133">boolean</span></span>|<span data-ttu-id="97ae3-134">指定无法将条目投递到 G/L 帐户。</span><span class="sxs-lookup"><span data-stu-id="97ae3-134">Specifies that entries cannot be posted to the G/L account.</span></span> <span data-ttu-id="97ae3-135">**如果为 True** ，则表示帐户被阻止，不允许进行发布。</span><span class="sxs-lookup"><span data-stu-id="97ae3-135">**True** indicates account is blocked and posting is not allowed.</span></span>|
+|<span data-ttu-id="97ae3-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="97ae3-136">lastModifiedDateTime</span></span>|<span data-ttu-id="97ae3-137">datetime</span><span class="sxs-lookup"><span data-stu-id="97ae3-137">datetime</span></span>|<span data-ttu-id="97ae3-138">帐户修改后的最后一个日期/时间。</span><span class="sxs-lookup"><span data-stu-id="97ae3-138">The last datetime the account was modified.</span></span>|
 
 
-## <a name="relationships"></a><span data-ttu-id="a46e3-138">关系</span><span class="sxs-lookup"><span data-stu-id="a46e3-138">Relationships</span></span>
-<span data-ttu-id="a46e3-139">无</span><span class="sxs-lookup"><span data-stu-id="a46e3-139">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="97ae3-139">关系</span><span class="sxs-lookup"><span data-stu-id="97ae3-139">Relationships</span></span>
+<span data-ttu-id="97ae3-140">无</span><span class="sxs-lookup"><span data-stu-id="97ae3-140">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a46e3-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a46e3-140">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="97ae3-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="97ae3-141">JSON representation</span></span>
 
-<span data-ttu-id="a46e3-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a46e3-141">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="97ae3-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="97ae3-142">Here is a JSON representation of the resource.</span></span>
 
 
 ```json

@@ -5,29 +5,31 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 64c9468d79a93b6f82fff0f04206a0fb6e95e4fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dd30bb496cb6591b3bde11d1c0c38b4099175891
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972220"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499587"
 ---
-# <a name="emailactivitysummary-resource-type"></a><span data-ttu-id="5f15f-103">emailActivitySummary 资源类型</span><span class="sxs-lookup"><span data-stu-id="5f15f-103">emailActivitySummary resource type</span></span>
+# <a name="emailactivitysummary-resource-type"></a><span data-ttu-id="d099d-103">emailActivitySummary 资源类型</span><span class="sxs-lookup"><span data-stu-id="d099d-103">emailActivitySummary resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5f15f-104">属性</span><span class="sxs-lookup"><span data-stu-id="5f15f-104">Properties</span></span>
+<span data-ttu-id="d099d-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="d099d-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="5f15f-105">属性</span><span class="sxs-lookup"><span data-stu-id="5f15f-105">Property</span></span>          | <span data-ttu-id="5f15f-106">类型</span><span class="sxs-lookup"><span data-stu-id="5f15f-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="d099d-105">属性</span><span class="sxs-lookup"><span data-stu-id="d099d-105">Properties</span></span>
+
+| <span data-ttu-id="d099d-106">属性</span><span class="sxs-lookup"><span data-stu-id="d099d-106">Property</span></span>          | <span data-ttu-id="d099d-107">类型</span><span class="sxs-lookup"><span data-stu-id="d099d-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="5f15f-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="5f15f-107">reportRefreshDate</span></span> | <span data-ttu-id="5f15f-108">日期</span><span class="sxs-lookup"><span data-stu-id="5f15f-108">Date</span></span>   |
-| <span data-ttu-id="5f15f-109">发送</span><span class="sxs-lookup"><span data-stu-id="5f15f-109">send</span></span>              | <span data-ttu-id="5f15f-110">Int64</span><span class="sxs-lookup"><span data-stu-id="5f15f-110">Int64</span></span>  |
-| <span data-ttu-id="5f15f-111">享受</span><span class="sxs-lookup"><span data-stu-id="5f15f-111">receive</span></span>           | <span data-ttu-id="5f15f-112">Int64</span><span class="sxs-lookup"><span data-stu-id="5f15f-112">Int64</span></span>  |
-| <span data-ttu-id="5f15f-113">自述</span><span class="sxs-lookup"><span data-stu-id="5f15f-113">read</span></span>              | <span data-ttu-id="5f15f-114">Int64</span><span class="sxs-lookup"><span data-stu-id="5f15f-114">Int64</span></span>  |
-| <span data-ttu-id="5f15f-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="5f15f-115">reportDate</span></span>        | <span data-ttu-id="5f15f-116">日期</span><span class="sxs-lookup"><span data-stu-id="5f15f-116">Date</span></span>   |
-| <span data-ttu-id="5f15f-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="5f15f-117">reportPeriod</span></span>      | <span data-ttu-id="5f15f-118">String</span><span class="sxs-lookup"><span data-stu-id="5f15f-118">String</span></span> |
+| <span data-ttu-id="d099d-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="d099d-108">reportRefreshDate</span></span> | <span data-ttu-id="d099d-109">日期</span><span class="sxs-lookup"><span data-stu-id="d099d-109">Date</span></span>   |
+| <span data-ttu-id="d099d-110">发送</span><span class="sxs-lookup"><span data-stu-id="d099d-110">send</span></span>              | <span data-ttu-id="d099d-111">Int64</span><span class="sxs-lookup"><span data-stu-id="d099d-111">Int64</span></span>  |
+| <span data-ttu-id="d099d-112">享受</span><span class="sxs-lookup"><span data-stu-id="d099d-112">receive</span></span>           | <span data-ttu-id="d099d-113">Int64</span><span class="sxs-lookup"><span data-stu-id="d099d-113">Int64</span></span>  |
+| <span data-ttu-id="d099d-114">自述</span><span class="sxs-lookup"><span data-stu-id="d099d-114">read</span></span>              | <span data-ttu-id="d099d-115">Int64</span><span class="sxs-lookup"><span data-stu-id="d099d-115">Int64</span></span>  |
+| <span data-ttu-id="d099d-116">reportDate</span><span class="sxs-lookup"><span data-stu-id="d099d-116">reportDate</span></span>        | <span data-ttu-id="d099d-117">日期</span><span class="sxs-lookup"><span data-stu-id="d099d-117">Date</span></span>   |
+| <span data-ttu-id="d099d-118">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="d099d-118">reportPeriod</span></span>      | <span data-ttu-id="d099d-119">String</span><span class="sxs-lookup"><span data-stu-id="d099d-119">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="5f15f-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5f15f-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d099d-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d099d-120">JSON representation</span></span>
 
-<span data-ttu-id="5f15f-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f15f-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d099d-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d099d-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
