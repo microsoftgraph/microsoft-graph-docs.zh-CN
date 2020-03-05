@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7592e3407a02839e0603bd8fc005c8327379eccd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2605d91282787f113c8fe007dcf7eebe23c5597f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39931709"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450354"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39931709"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,22 +56,22 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |id|字符串|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|字符串|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|字符串|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|电子图书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|详细信息 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|Vpp 令牌 ID。|
-|appleId|字符串|与 Vpp 令牌关联的 Apple ID。|
-|vppOrganizationName|字符串|Vpp 令牌的组织名称。|
+|appleId|String|与 Vpp 令牌关联的 Apple ID。|
+|vppOrganizationName|String|Vpp 令牌的组织名称。|
 |genres|String 集合|流派。|
-|language|字符串|语言。|
+|language|String|语言。|
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 

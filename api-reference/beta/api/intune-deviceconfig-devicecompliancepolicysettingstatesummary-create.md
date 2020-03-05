@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35ad4dc3762356f89732fb59fb00cfb9dd39c3ae
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c407f4a20e6209edf4f8d501596919a0575fe4c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949649"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449283"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39949649"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +53,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|setting|字符串|设置类名和属性名。|
+|id|String|实体的键。|
+|setting|String|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|

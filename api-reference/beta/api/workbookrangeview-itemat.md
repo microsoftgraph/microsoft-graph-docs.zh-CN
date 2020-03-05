@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0e944a1ad0c0840fd0cc450226ddb78b312e2ece
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5d6423e8899d9bc07038cf72ef453a87c44f53ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451327"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "37938118"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +42,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|Int32|要返回的项的索引。|
 

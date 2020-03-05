@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f02164caad5a3ddb74953482c39b5983422e804e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7b241ad1d748b4f6fc990119c583294b4032b323
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37992883"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448446"
 ---
 ```objc
 
@@ -20,7 +20,22 @@ MSGraphAccessPackageAssignmentPolicy *accessPackageAssignmentPolicy = [[MSGraphA
 [accessPackageAssignmentPolicy setAccessPackageId:@"56ff43fd-6b05-48df-9634-956a777fce6d"];
 [accessPackageAssignmentPolicy setDisplayName:@"direct"];
 [accessPackageAssignmentPolicy setDescription:@"direct assignments by administrator"];
-[accessPackageAssignmentPolicy setIsEnabled: true];
+[accessPackageAssignmentPolicy setIsDenyPolicy: false];
+[accessPackageAssignmentPolicy setAccessReviewSettings: null];
+MSGraphRequestorSettings *requestorSettings = [[MSGraphRequestorSettings alloc] init];
+[requestorSettings setScopeType:@"NoSubjects"];
+[requestorSettings setAcceptRequests: true];
+NSMutableArray *allowedRequestorsList = [[NSMutableArray alloc] init];
+[requestorSettings setAllowedRequestors:allowedRequestorsList];
+[accessPackageAssignmentPolicy setRequestorSettings:requestorSettings];
+MSGraphApprovalSettings *requestApprovalSettings = [[MSGraphApprovalSettings alloc] init];
+[requestApprovalSettings setIsApprovalRequired: false];
+[requestApprovalSettings setIsApprovalRequiredForExtension: false];
+[requestApprovalSettings setIsRequestorJustificationRequired: false];
+[requestApprovalSettings setApprovalMode:@"NoApproval"];
+NSMutableArray *approvalStagesList = [[NSMutableArray alloc] init];
+[requestApprovalSettings setApprovalStages:approvalStagesList];
+[accessPackageAssignmentPolicy setRequestApprovalSettings:requestApprovalSettings];
 
 NSError *error;
 NSData *accessPackageAssignmentPolicyData = [accessPackageAssignmentPolicy getSerializedDataWithError:&error];

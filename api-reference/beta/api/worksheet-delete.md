@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b282e0f657f2e2adfb98dbff43f1b20f4875bd41
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6086f15429a083f937ed0f6118074c6c3018bf7d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995830"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451212"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

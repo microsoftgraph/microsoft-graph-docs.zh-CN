@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f3e86964684f0b1e913b74aaad7ab587aad65e70
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1ae99c18b065e2b40259a84ae869bf0d1d6008f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448625"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>更新 managedAllDeviceCertificateState
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39947958"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,15 +55,15 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 |:---|:---|:---|
 |id|String|实体的键。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|managedDeviceDisplayName|字符串|设备显示名称|
-|userPrincipalName|字符串|用户主体名称|
+|managedDeviceDisplayName|String|设备显示名称|
+|userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
-|certificateIssuerName|字符串|颁发者|
-|certificateThumbprint|字符串|为|
-|certificateSerialNumber|字符串|序列号|
-|certificateSubjectName|字符串|证书主题名称|
+|certificateIssuerName|String|颁发者|
+|certificateThumbprint|String|为|
+|certificateSerialNumber|String|序列号|
+|certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
-|certificateExtendedKeyUsages|字符串|增强型密钥使用|
+|certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 
 

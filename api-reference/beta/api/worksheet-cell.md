@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 553a09f0619fb16d0e9ee7c1ac9fe8dfac4a3b14
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0cf070f9e6b4a7df176eb68e616f339ae36a125
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987304"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451226"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
 ```
 
 ## <a name="function-parameters"></a>函数参数
-在请求路径中, 提供以下参数。
+在请求路径中，提供以下参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e9e332a3ec35dcb5177021ae4057f8f61cf1434c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5736bdb977f49860ae338779400248e042f69d8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995907"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451341"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

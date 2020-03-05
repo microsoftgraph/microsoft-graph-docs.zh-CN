@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc2933f3a6c6408a9f5edbe5a97d1bcf579ecbc8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 1ce2abd418d96598f617897c112c36ac70093d3b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449052"
 ---
 # <a name="create-ioscompliancepolicy"></a>创建 iosCompliancePolicy
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -49,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示了创建 iosCompliancePolicy 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -58,7 +60,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
+|passcodeBlockSimple|布尔|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passcodeMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|需要密码之前的不活动分钟数。|
@@ -66,13 +68,13 @@ POST /deviceManagement/deviceCompliancePolicies
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passcodeRequired|Boolean|指示是否需要密码。|
-|osMinimumVersion|字符串|最低 IOS 版本。|
+|passcodeRequired|布尔|指示是否需要密码。|
+|osMinimumVersion|String|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
-|osMinimumBuildVersion|字符串|最低 IOS 内部版本。|
-|osMaximumBuildVersion|字符串|最大 IOS 内部版本。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|osMinimumBuildVersion|String|最低 IOS 内部版本。|
+|osMaximumBuildVersion|String|最大 IOS 内部版本。|
+|securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
+|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
 |restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备未安装指定的应用程序。 此集合最多可包含100个元素。|

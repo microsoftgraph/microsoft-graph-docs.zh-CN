@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3deb92ec056c63f493edd4785085885dcfc5ab5b
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 716575fa1e5cc98ca2642e15cd8cd1912be93738
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448982"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

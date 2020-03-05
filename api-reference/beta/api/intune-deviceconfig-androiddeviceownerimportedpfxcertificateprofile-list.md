@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf62e9d0d97b5c6817384cfa119a2571d3332841
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9870a8c438d40a7a60f741ae9fb97d0dd12e09cf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450039"
 ---
 # <a name="list-androiddeviceownerimportedpfxcertificateprofiles"></a>列出 androidDeviceOwnerImportedPFXCertificateProfiles
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 774f44ccae5355ac9e1c997293989f3a9ff92475
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 0ca47941d16edb1ac7ebfaaf569ea0468a6d6759
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39930378"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450235"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>获取 windowsOfficeClientSecurityConfiguration
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39930378"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
+|应用程序|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +46,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 671583780cbd4a1340c5c39a1d2472a9c0d2dc02
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: a9af750d8d0e1431e00fafdfc6fa8326f9569f0f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635794"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448618"
 ---
 # <a name="delete-manageddevicecertificatestate"></a>删除 managedDeviceCertificateState
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7071325ca86334f3c937b3019a81f1038fbcd703
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f1ba144064304de8e20a949c4c9a32c5de87157f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085273"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450998"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>获取 managedDeviceMobileAppConfigurationDeviceSummary
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +86,6 @@ Content-Length: 450
   }
 }
 ```
-
 
 
 

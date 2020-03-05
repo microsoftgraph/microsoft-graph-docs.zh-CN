@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95b26f142e183c34533796e06ff6eb4ba4c83196
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 40f63e70c0d58b622fadda00a361154f418e15ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39936092"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450872"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>创建 microsoftStoreForBusinessContainedApp
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39936092"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +55,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|字符串|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
+|id|String|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
 
 
 

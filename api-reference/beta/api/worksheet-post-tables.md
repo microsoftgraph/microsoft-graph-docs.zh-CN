@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 93f8951df02bf8fd52673af717c2a250703d1f9e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ea88fc2fdd0d5514cbcf4211ff8452d0fd51eb4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420971"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451180"
 ---
 # <a name="create-table"></a>创建表
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,18 +45,18 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | 参数       | 类型|说明|
 |:---------------|:----------|:----------|
-| Address  | string| 区域地址。 如果要从`worksheets/{id|name}/tables/add`路径调用此 API, 则无需支持地址中的工作表名称前缀。 但是, 如果要调用此`workbook/tables/add`路径 off, 请提供需要在其上创建表的工作表名称 (示例:) `sheet1!A1:D4`|
+| Address  | string| 区域地址。 如果要从`worksheets/{id|name}/tables/add`路径调用此 API，则无需支持地址中的工作表名称前缀。 但是，如果要调用此`workbook/tables/add`路径 off，请提供需要在其上创建表的工作表名称（示例：） `sheet1!A1:D4`|
 | hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_table_from_worksheet"
@@ -69,15 +71,15 @@ Content-length: 109
   "hasHeaders": false
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-table-from-worksheet-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-table-from-worksheet-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-table-from-worksheet-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

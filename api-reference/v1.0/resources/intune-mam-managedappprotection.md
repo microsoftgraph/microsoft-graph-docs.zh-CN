@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 765f23c4ef805d2e2b5567c265be79c97227ded4
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 940811c054da8f1fe30266516b7eda8dfdf0f9d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367789"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448352"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间： microsoft. graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于为指定的一组应用配置详细管理设置的策略
 
@@ -41,22 +43,22 @@ ms.locfileid: "37367789"
 |periodOnlineBeforeAccessCheck|持续时间|设备连接到 Internet 时在该时间段后检查访问权限。|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许传输其中的数据的源。 可取值为：`allApps`、`managedApps`、`none`。|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许向其传输数据的目标。 可取值为：`allApps`、`managedApps`、`none`。|
-|organizationalCredentialsRequired|Boolean|指示是否需要组织凭据才能使用应用。|
+|organizationalCredentialsRequired|布尔|指示是否需要组织凭据才能使用应用。|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
-|dataBackupBlocked|Boolean|指示是否阻止备份托管应用的数据。|
-|deviceComplianceRequired|Boolean|指示是否需要设备合规性。|
-|managedBrowserToOpenLinksRequired|Boolean|指示是否应在托管浏览器应用中打开 Internet 链接。|
-|saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
+|dataBackupBlocked|布尔|指示是否阻止备份托管应用的数据。|
+|deviceComplianceRequired|布尔|指示是否需要设备合规性。|
+|managedBrowserToOpenLinksRequired|布尔|指示是否应在托管浏览器应用中打开 Internet 链接。|
+|saveAsBlocked|布尔|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
 |periodOfflineBeforeWipeIsEnforced|持续时间|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
-|pinRequired|Boolean|指示是否需要应用级 pin。|
+|pinRequired|布尔|指示是否需要应用级 pin。|
 |maximumPinRetries|Int32|在阻止或擦除托管应用之前，不正确 pin 重试的最大次数。|
-|simplePinBlocked|Boolean|指示是否阻止 simplePin。|
+|simplePinBlocked|布尔|指示是否阻止 simplePin。|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 pin 所需的最小 pin 长度。|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 pin 的字符集。 可取值为：`numeric`、`alphanumericAndSymbol`。|
 |periodBeforePinReset|Duration|TimePeriod，如果 PinRequired 设置为 True，必须在此之前重置所有级别的 pin。|
 |allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md)集合|用户可能存储托管数据的数据存储位置。|
-|contactSyncBlocked|Boolean|指示联系人是否可以同步到用户的设备。|
-|printBlocked|Boolean|指示是否允许从托管应用进行打印。|
+|contactSyncBlocked|布尔|指示联系人是否可以同步到用户的设备。|
+|printBlocked|布尔|指示是否允许从托管应用进行打印。|
 |fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
 |disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 pin，是否需要使用应用 pin。|
 |minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|

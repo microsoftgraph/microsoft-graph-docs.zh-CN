@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ccf9c96f92077ddba6b59105d5dbea3d2910505
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 91dd753ec6a40539e1b85b1aa30635a2497014ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39931092"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450277"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39931092"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +44,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +54,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|电子书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 ManagedEBookCategory 的日期和时间。|
 

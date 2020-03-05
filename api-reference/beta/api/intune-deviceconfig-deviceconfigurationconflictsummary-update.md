@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 720b642388fd9d090af3f1a9e602ee19821a711c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6fa8081bd0aefd0d789f812e9d134d1865ba911e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949425"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449245"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>更新 deviceConfigurationConflictSummary
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39949425"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,8 +54,8 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |属性|类型|说明|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置发生冲突的策略集|
-|id|字符串|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id，以字典顺序分隔，由下划线分隔。|
-|contributingSettings|String collection|与给定策略发生冲突的设置集|
+|id|String|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id，以字典顺序分隔，由下划线分隔。|
+|contributingSettings|String 集合|与给定策略发生冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入次数|
 
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4ad6344b4b6b80e9d713af407fee7230a67c930
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 2054699cc4b8dbb56b1ff9d2e49bf54d2db1922c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636083"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450046"
 ---
 # <a name="delete-androiddeviceownerimportedpfxcertificateprofile"></a>删除 androidDeviceOwnerImportedPFXCertificateProfile
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

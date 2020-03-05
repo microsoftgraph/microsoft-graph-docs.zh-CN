@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: be937879fa6e3d28d7e09538716f3562fc272f56
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 964850f0b4a8cbd2ceed152460385eb4fadf037b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367768"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448338"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间： microsoft. graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。

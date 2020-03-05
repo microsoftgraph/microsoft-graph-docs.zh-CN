@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3e73cf0b0dbe0b54b9ac3af5a5378503f336e6a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4c87031c5d8957e4014f491f671c05b7a10b4934
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451264"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceintegration
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ PATCH /teamwork/workforceIntegrations
 |apiVersion|Int32|回调 url 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
-|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
+|isActive|布尔|指示此劳动力集成当前是否处于活动状态且可用。|
 |支持|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 url，用于从班次服务进行回调。 |
 
@@ -65,7 +67,7 @@ PATCH /teamwork/workforceIntegrations
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -87,15 +89,15 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

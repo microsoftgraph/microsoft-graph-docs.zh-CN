@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 100ba93f87bd210a7e1dcc6a22816e7b3e27f7de
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6ebcaabb809a0feaf95cd2baafcf56b48d7d3e69
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39935377"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450725"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "39935377"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,14 +57,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|字符串|文件名称。|
+|name|String|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|Boolean|一个指示文件是否为框架文件的值。|
-|isDependency|Boolean|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|布尔|一个指示文件是否为框架文件的值。|
+|isDependency|布尔|内容文件是否依赖于主要内容文件。|
 
 
 
