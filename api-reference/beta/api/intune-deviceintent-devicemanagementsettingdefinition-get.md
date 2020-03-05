@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87048a87c89d6b82cd5ec0aa281571ef5c0afca8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 152bc49402029253929a24ed72a2ff934afa6805
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635998"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42470593"
 ---
 # <a name="get-devicemanagementsettingdefinition"></a>获取 deviceManagementSettingDefinition
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

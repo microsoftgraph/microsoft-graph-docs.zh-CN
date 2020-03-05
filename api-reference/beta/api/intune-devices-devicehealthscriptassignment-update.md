@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fa8fd4ee7849d099394266fbe35c7241354fbedb
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: b6668338ec7980ef34ff4fe20f480e1a16556d58
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162146"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469585"
 ---
 # <a name="update-devicehealthscriptassignment"></a>更新 deviceHealthScriptAssignment
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|布尔|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|
 
 
