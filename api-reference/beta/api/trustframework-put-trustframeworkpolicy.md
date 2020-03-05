@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ade1f27b65b5149a0847fb39ab7efd16042e018
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: f018ae555990f4d5ba8eefe564ddb2230ae84dc6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734477"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452132"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>更新或创建 trustFrameworkPolicy
+
+命名空间： microsoft. graph
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

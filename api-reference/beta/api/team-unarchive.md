@@ -1,24 +1,26 @@
 ---
 title: 解档团队
-description: 还原存档的团队。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用存档 API 存档团队。
+description: 还原存档的团队。 这将恢复用户发送邮件和编辑团队的能力，abiding 受租户和团队设置的支持。 使用存档 API 存档团队。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 022dc489b02da8881e7e6e4dbeaa665511dccfd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc443242432199217c91d018e2a891fd21eb235c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452559"
 ---
 # <a name="unarchive-team"></a>解档团队
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
+还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力，abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
 
-Unarchiving 是一种异步操作。 异步操作成功完成后, 团队即为 unarchived, 这可能会在此 API 的响应之后发生。
+Unarchiving 是一种异步操作。 异步操作成功完成后，团队即为 unarchived，这可能会在此 API 的响应之后发生。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +49,7 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>响应
 
-如果 unarchiving 成功启动, 此方法将`202 Accepted`返回响应代码。 该响应还将包含一个`Location`标头, 其中包含为处理团队的 unarchiving 而创建的[teamsAsyncOperation](../resources/teamsasyncoperation.md)的位置。 通过向此位置发出 GET 请求, 检查 unarchiving 操作的状态。
+如果 unarchiving 成功启动，此方法将`202 Accepted`返回响应代码。 该响应还将包含一个`Location`标头，其中包含为处理团队的 unarchiving 而创建的[teamsAsyncOperation](../resources/teamsasyncoperation.md)的位置。 通过向此位置发出 GET 请求，检查 unarchiving 操作的状态。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

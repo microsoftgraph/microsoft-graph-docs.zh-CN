@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 43d698e300cb4a9f2d9b6b094250fcbcd33d2821
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df7643f08c7ee15c46a84119b37af01a2875abcd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977462"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452389"
 ---
 # <a name="update-tab"></a>更新选项卡
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
+在请求正文中，提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

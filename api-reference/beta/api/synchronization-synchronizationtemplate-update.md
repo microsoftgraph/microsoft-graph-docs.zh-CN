@@ -1,22 +1,24 @@
 ---
 title: 更新 synchronizationTemplate
-description: Update (override) 与给定应用程序关联的同步模板。
+description: Update （override）与给定应用程序关联的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 132bc669122cae84acbd85163c80bb035520a8a8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4327da9f4eb54c0e740370338806dc4078f2672c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409614"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452874"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update (override) 与给定应用程序关联的同步模板。
+Update （override）与给定应用程序关联的同步模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,7 +43,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象以替换现有模板。 请确保提供所有属性。 缺少的属性将被清除。
+在请求正文中，提供[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象以替换现有模板。 请确保提供所有属性。 缺少的属性将被清除。
 
 ### <a name="response"></a>响应
 
@@ -52,9 +54,9 @@ PUT application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>请求
 请求示例如下所示。 
 
->**注意:** 为了提高可读性, 此处显示的请求对象已缩短。 在实际调用中包括所有属性。
+>**注意：** 为了提高可读性，此处显示的请求对象已缩短。 在实际调用中包括所有属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -70,15 +72,15 @@ Content-type: application/json
     "factoryTag": "CustomSCIM"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

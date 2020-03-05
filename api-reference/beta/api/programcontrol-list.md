@@ -1,22 +1,24 @@
 ---
 title: 列出 programControls
-description: 在 Azure AD access 评论功能中, 列出租户中的所有程序中的所有 programControl 对象。
+description: 在 Azure AD access 评论功能中，列出租户中的所有程序中的所有 programControl 对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: aa6b71a96b4ba78bf8ef3805a806b22694654498
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e486e99fb3607d7cd093a269331ec75f5146d583
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723334"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454953"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](../resources/accessreviews-root.md)功能中, 列出租户中的所有程序中的所有[programControl](../resources/programcontrol.md)对象。
+在 Azure AD [access 评论](../resources/accessreviews-root.md)功能中，列出租户中的所有程序中的所有[programControl](../resources/programcontrol.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,13 +44,13 @@ GET /programControls
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。
+如果成功，此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_programControl"
@@ -56,15 +58,15 @@ GET /programControls
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/programControls
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-programcontrol-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-programcontrol-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

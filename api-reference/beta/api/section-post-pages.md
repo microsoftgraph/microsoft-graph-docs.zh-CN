@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2606399489042820d62d7efcb503a5b7835782ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 73c58b9855d73d7b7809f4d8e0503f28fbe110e1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978033"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453651"
 ---
 # <a name="create-page"></a>创建页面
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和新的[onenotePage](../resources/onenotepage.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[onenotePage](../resources/onenotepage.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

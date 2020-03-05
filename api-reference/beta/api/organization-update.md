@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69c1467aed702918692b8e354ad661a949ca2638
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414355"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456327"
 ---
 # <a name="update-organization"></a>更新组织
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新当前经过身份验证的组织的属性。 在这种情况`organization`下, 将定义为恰好一个记录的集合, 因此必须在请求中指定其**ID** 。  该**ID**也称为组织的**tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况`organization`下，将定义为恰好一个记录的集合，因此必须在请求中指定其**ID** 。  该**ID**也称为组织的**tenantId** 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +28,7 @@ ms.locfileid: "36414355"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.accessasuser.all、All、All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 组织关系。 All |
+|应用程序 | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,13 +52,13 @@ PATCH /organization/{id}
 
 | 属性  | 类型 |说明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
+|marketingNotificationEmails|String 集合|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String 集合||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 
@@ -66,7 +68,7 @@ PATCH /organization/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -89,15 +91,15 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 0f09a4b74c3203e92fada0a31e971b930f560276
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 29f0d03d81fdce540480ad17f4acf02025d6ea5c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863496"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452093"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>获取 unfamiliarLocationRiskEvent
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

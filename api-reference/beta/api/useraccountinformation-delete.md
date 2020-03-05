@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 090df364dd86f2ab47b02259ff81acc36ad0aa6d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1cd1130b89104f1154425e94443a45e375012a61
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938146"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451579"
 ---
 # <a name="delete-useraccountinformation"></a>删除 userAccountInformation
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "37938146"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | 不支持。                              |
+| 应用程序                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 

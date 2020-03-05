@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0be0c119d1a0d0a38030dcc9cfacbff16561c997
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f164e795feee5172827a8bec9e058b1f05a7f9a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409600"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452889"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,18 +43,18 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供要创建的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 和属性是必需的`id` `applicationId` `factoryTag` 如果模板`schema`未提供, 则将使用与该`factoryTag`属性相关联的默认架构。
+在请求正文中，提供要创建的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 和属性是必需的`id` `applicationId` `factoryTag` 如果模板`schema`未提供，则将使用与该`factoryTag`属性相关联的默认架构。
 
 ### <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
 
 ### <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
 请求示例如下所示。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationtemplate_from_synchronization"
@@ -67,15 +69,15 @@ Content-type: application/json
     "factoryTag": "CustomSCIM"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationtemplate-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationtemplate-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationtemplate-from-synchronization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

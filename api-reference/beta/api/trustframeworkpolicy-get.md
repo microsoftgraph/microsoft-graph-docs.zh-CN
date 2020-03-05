@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 697218f1ff488b935b401406fbd30ddd9f5ebf65
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: b8a7c2a9d38d5da3ef38d2a724b3fa1b015a4efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734386"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452066"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
+
+命名空间： microsoft. graph
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -24,9 +26,9 @@ ms.locfileid: "37734386"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）| Policy.Read.All|
+|委派（工作或学校帐户）| Policy： Read. All，TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy.Read.All|
+|应用程序|Policy： Read. All，TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 

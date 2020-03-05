@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a6064a78accbbbd2364485c2c22fc679bc415a5a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b6729a0cff736c7a2f7975150efaa1343a1292e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412605"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455269"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,28 +41,28 @@ POST /privilegedRoleAssignmentRequests
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
+在请求正文中，提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: Administrators 将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
-|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|在于|String|需要为角色分配请求提供审核和审阅目的的原因。|
+|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`： Administrators 将用户添加到角色;`UserAdd`：用户添加角色分配。 必填。|
+|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必填。|
+|reason|String|需要为角色分配请求提供审核和审阅目的的原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回该标准 HTTP 错误代码。 此外, 它还可以返回下表中列出的错误代码。
+此 API 返回该标准 HTTP 错误代码。 此外，它还可以返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | RoleAssignmentRequest 属性为 NULL |
 | 400 BadRequest | 无法反序列化 roleAssignmentRequest 对象。 |
 | 400 BadRequest | RoleId 是必需的。 |
-| 400 BadRequest | 必须指定计划开始日期, 并且该日期应晚于现在。 |
+| 400 BadRequest | 必须指定计划开始日期，并且该日期应晚于现在。 |
 | 400 BadRequest | 此用户、角色和计划类型的计划已存在。 |
 | 400 BadRequest | 此用户、角色和审批类型已存在待批准的审批。 |
 | 400 BadRequest | 请求者原因缺失。 |
@@ -68,7 +70,7 @@ POST /privilegedRoleAssignmentRequests
 | 400 BadRequest | 提升持续时间必须介于0.5 和 {from setting} 之间。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
 | 400 BadRequest | 角色已激活。 |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting 信息是必需的, 并且在激活过程中不提供。 |
+| 400 BadRequest | GenericElevateUserToRoleAssignments： Tickting 信息是必需的，并且在激活过程中不提供。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
 | 403未经授权 | 提升需要多因素身份验证。 |
 | 403未经授权 | 代表提升是不允许的。 |
@@ -77,7 +79,7 @@ POST /privilegedRoleAssignmentRequests
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_privilegedroleassignmentrequest"
@@ -100,15 +102,15 @@ Content-type: application/json
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-privilegedroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-privilegedroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-privilegedroleassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

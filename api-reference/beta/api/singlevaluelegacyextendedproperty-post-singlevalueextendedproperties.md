@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f1fdb6a9b329f16c7973a5c60e645d525a8bd913
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d72eb4c6e42daff4d7336b22e7c6c6aeee306448
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453234"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,11 +40,11 @@ ms.locfileid: "35982786"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要在其中创建扩展属性的资源以及所请求的权限类型 (委派或应用程序), 在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据您要在其中创建扩展属性的资源以及所请求的权限类型（委派或应用程序），在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -58,7 +60,7 @@ ms.locfileid: "35982786"
 可以在新建或现有的资源实例中创建扩展属性。
 
 若要在_新的_资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的_扩展属性_。
-注意，一些资源支持以多种方式创建。 有关创建这些资源实例的详细信息, 请参阅创建[邮件](../resources/message.md)的相应主题[mailFolder](../api/user-post-mailfolders.md)、[事件](../api/user-post-events.md)、[日历](../api/user-post-calendars.md)、[联系人](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)、 [Outlook 任务](../resources/outlooktask.md)、 [Outlook 任务文件夹](../resources/outlooktaskfolder.md)、[组事件](../api/group-post-events.md)和[组帖子](../resources/post.md)。 
+注意，一些资源支持以多种方式创建。 有关创建这些资源实例的详细信息，请参阅创建[邮件](../resources/message.md)的相应主题： [mailFolder](../api/user-post-mailfolders.md)、 [event](../api/user-post-events.md)、 [calendar](../api/user-post-calendars.md)、 [contact](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)、 [outlook task](../resources/outlooktask.md)、 [outlook task folder](../resources/outlooktaskfolder.md)、 [group event](../api/group-post-events.md)和[group post](../resources/post.md)。 
  
 以下是请求的语法。 
 

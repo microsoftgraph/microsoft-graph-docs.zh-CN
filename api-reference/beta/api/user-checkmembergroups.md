@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2253c8470a8fd71614f937a6aa66c5545f07e51d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 4c403e3339638921b9db602947c69e05d044a1bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657827"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452034"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +28,9 @@ ms.locfileid: "38657827"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.readbasic.all、GroupMember 和 GroupMember、、和 Group. all、user. all 和 group。 read. all，user; all 和 group。 Read. all、user. ReadWrite 和 group。 Read. all、user. all 和 Group。 Read. all：，"全部"： "Directory.accessasuser.all"、"所有" |
+| 委派（工作或学校帐户）     | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、User.ReadWrite.All 和 GroupMember.Read.All、User.ReadWrite.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
-| Application                            | GroupMember、user. all 和 Group. all、user. all 和 group. all、all 和 Group。 all，all，Read. all，all，all，all： all，all： all，all： all |
+| 应用程序                            | GroupMember、user. all 和 Group. all、user. all 和 group. all、all 和 Group。 all，all，Read. all，all，all，all： all，all： all，all： all |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +68,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_checkmembergroups"
@@ -83,15 +85,15 @@ Content-length: 44
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

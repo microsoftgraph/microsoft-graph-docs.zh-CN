@@ -1,18 +1,20 @@
 ---
-title: 列出为用户安装的应用程序
-description: 检索在指定用户的个人作用域中安装的应用程序的列表。
+title: 列出为用户安装的应用
+description: 检索在指定用户的个人范围内安装的应用列表。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6737e8e1c9bb1f119c2f9a37266330c254b6e885
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b9329a8ddb76708e4936664c66bb93909f0373f4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724146"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451761"
 ---
-# <a name="list-apps-installed-for-user"></a>列出为用户安装的应用程序
+# <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,17 +54,17 @@ GET /users/{id}/teamwork/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[teamsAppInstallation](../resources/teamsappinstallation.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[teamsAppInstallation](../resources/teamsappinstallation.md)对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-apps-installed-for-the-specified-user"></a>示例 1: 列出为指定用户安装的应用程序
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a>示例1：列出为指定用户安装的应用程序
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
@@ -70,15 +72,15 @@ GET /users/{id}/teamwork/installedApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +111,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>示例 2: 获取为用户安装的应用程序的名称和其他详细信息
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>示例2：获取为用户安装的应用程序的名称和其他详细信息
 
 #### <a name="request"></a>请求
 

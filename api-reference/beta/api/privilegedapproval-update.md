@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d8160074fdf8f034ccf2c5b6836a066c44173034
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ec30559cf24edc5ba8e35077cd8af868aacc42ca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412829"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455408"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,9 +56,9 @@ PATCH /privilegedApproval/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`204 No Content`返回响应代码
+如果成功，此方法将`204 No Content`返回响应代码
 
-请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
+请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

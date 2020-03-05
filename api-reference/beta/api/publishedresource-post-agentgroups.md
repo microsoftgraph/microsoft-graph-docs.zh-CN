@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9ec20b1208906129e5559307fc347e9d39c6dd7e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: ba2c351ffb511ecb83d87d7b4d151da1528a2387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840966"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454830"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>将 publishedResource 分配给 onPremisesAgentGroup
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35840966"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:--------------------------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户）     | OnPremisesPublishingProfiles |
+| 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -44,11 +46,11 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: f72755f6410e3c1b04cf39ba8315b3c5162550ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d7f6d7888ba8a14f16e3756c4c01c3a16c3d73a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978507"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454872"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,11 +49,11 @@ Id 必须是 GUID。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
+在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
+如果成功，此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
 
 ## <a name="example"></a>示例
 

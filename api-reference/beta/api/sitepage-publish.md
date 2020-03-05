@@ -1,23 +1,25 @@
 ---
 author: rahmit
-description: 发布 sitePage 资源的最新版本, 使页面的版本可供所有用户使用。 如果该页面已签出, 请签入该页面并发布它。 如果页面已签出到此 API 的调用方, 则会自动签入并发布该页面。
+description: 发布 sitePage 资源的最新版本，使页面的版本可供所有用户使用。 如果该页面已签出，请签入该页面并发布它。 如果页面已签出到此 API 的调用方，则会自动签入并发布该页面。
 ms.date: 09/10/2018
 title: 发布页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5f4404b33a54979271750d4074a9c6da235966ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90d08b3f8fae2ed186d1809b4318eec7ef9cf5dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991210"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453166"
 ---
-# <a name="sitepage-publish"></a>sitePage: 发布
+# <a name="sitepage-publish"></a>sitePage：发布
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发布[sitePage][]资源的最新版本, 使页面的版本可供所有用户使用。 如果该页面已签出, 请签入该页面并发布它。 如果页面已签出到此 API 的调用方, 则会自动签入并发布该页面。
+发布[sitePage][]资源的最新版本，使页面的版本可供所有用户使用。 如果该页面已签出，请签入该页面并发布它。 如果页面已签出到此 API 的调用方，则会自动签入并发布该页面。
 
 [sitePage]: ../resources/sitepage.md
 

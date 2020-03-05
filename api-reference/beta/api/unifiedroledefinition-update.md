@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3be16446147e3e0dd9d4c2a481b5fdae63312f6a
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: ee564c893473231cddf68e804b767c2f8142137a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461603"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452049"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,17 +52,17 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |:-------------|:------------|:------------|
 |说明|String| 角色定义的说明。 当 isBuiltIn 为 true 时为只读。 |
 |displayName|字符串| 角色定义的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| 角色定义的唯一标识符。 键, 不可为 null, 只读。 |
+|id|字符串| 角色定义的唯一标识符。 键，不可为 null，只读。 |
 |isBuiltIn|布尔值| 指示角色定义是否是产品或自定义的默认设置的一部分的标志。 只读。 |
-|isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false, 则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
+|isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 |
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的, 则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必填。 |
+|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
 |version|String| 指示角色定义的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +70,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition"
@@ -92,15 +94,15 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

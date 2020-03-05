@@ -1,22 +1,24 @@
 ---
 title: 更新程序
-description: 在 "Azure AD access 评论" 功能中, 更新现有的程序对象。
+description: 在 "Azure AD access 评论" 功能中，更新现有的程序对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c1f50f81d4c87283ce686da5626b5482055ec5fd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 43ff1f8881e358a6476539d81cddc55a49a6f88c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454969"
 ---
 # <a name="update-program"></a>更新程序
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 更新现有的[程序](../resources/program.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，更新现有的[程序](../resources/program.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +41,7 @@ PATCH /programs('{programId}')
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[程序](../resources/program.md)对象的 JSON 表示形式。
+在请求正文中，提供[程序](../resources/program.md)对象的 JSON 表示形式。
 
 下表显示了在更新程序时可以提供的属性。
 
@@ -50,14 +52,14 @@ PATCH /programs('{programId}')
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`204, Accepted`正文中返回响应代码和[程序](../resources/program.md)对象。
+如果成功，此方法在响应`204, Accepted`正文中返回响应代码和[程序](../resources/program.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中, 提供要更改的[program](../resources/program.md)对象参数的 JSON 表示形式。
+在请求正文中，提供要更改的[program](../resources/program.md)对象参数的 JSON 表示形式。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_program"
@@ -70,15 +72,15 @@ Content-type: application/json
     "displayName": "testprogram3 new name"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-program-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-program-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-program-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 040790c57e5e8bcf5b8e6efd9da0a7dabe5da62b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 358f83996eeced51694816290579a800d6209aae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870811"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453081"
 ---
 # <a name="get-suspiciousipriskevent"></a>获取 suspiciousIpRiskEvent
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

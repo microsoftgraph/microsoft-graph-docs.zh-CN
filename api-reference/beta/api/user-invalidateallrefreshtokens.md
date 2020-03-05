@@ -1,30 +1,32 @@
 ---
-title: '用户: invalidateAllRefreshTokens'
-description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效 (以及用户浏览器中的会话 cookie)。 通常, 如果用户有丢失或被盗的设备, 则执行此操作 (由用户或管理员执行)。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据, 而用户首次无需再次登录。 实际上, 此操作会强制用户再次登录到他们之前同意的所有应用程序, 而不依赖于设备。
+title: 用户： invalidateAllRefreshTokens
+description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效（以及用户浏览器中的会话 cookie）。 通常，如果用户有丢失或被盗的设备，则执行此操作（由用户或管理员执行）。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据，而用户首次无需再次登录。 实际上，此操作会强制用户再次登录到他们之前同意的所有应用程序，而不依赖于设备。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4efc33f3c0cb0f0ec4f4ef4026598d6d2f8a581
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f6eae0438acecf204b2b3076522548cf4035a43
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421083"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451922"
 ---
-# <a name="user-invalidateallrefreshtokens"></a>用户: invalidateAllRefreshTokens
+# <a name="user-invalidateallrefreshtokens"></a>用户： invalidateAllRefreshTokens
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效 (以及用户浏览器中的会话 cookie)。 通常, 如果用户有丢失或被盗的设备, 则执行此操作 (由用户或管理员执行)。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据, 而用户首次无需再次登录。 实际上, 此操作会强制用户再次登录到他们之前同意的所有应用程序, 而不依赖于设备。
+通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效（以及用户浏览器中的会话 cookie）。 通常，如果用户有丢失或被盗的设备，则执行此操作（由用户或管理员执行）。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据，而用户首次无需再次登录。 实际上，此操作会强制用户再次登录到他们之前同意的所有应用程序，而不依赖于设备。
 
-对于开发人员, 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌, 应用程序将收到错误。 如果发生这种情况, 应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌, 这将强制用户登录。
+对于开发人员，如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-+ 对于允许已登录用户使已登录的应用程序无效的应用程序, 请执行以下操作: User. ReadWrite、Directory.accessasuser.all
-+ 对于允许管理员使用户同意的应用程序无效的应用程序, 请执行以下操作: Directory.accessasuser.all
++ 对于允许已登录用户使已登录的应用程序无效的应用程序，请执行以下操作： User. ReadWrite、Directory.accessasuser.all
++ 对于允许管理员使用户同意的应用程序无效的应用程序，请执行以下操作： Directory.accessasuser.all
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_invalidateallrefreshtokens"
@@ -57,15 +59,15 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ```http
 POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-invalidateallrefreshtokens-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-invalidateallrefreshtokens-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-invalidateallrefreshtokens-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

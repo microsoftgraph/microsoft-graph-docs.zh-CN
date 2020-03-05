@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74a67f090d37fe6eff0b4910862eabafcfcd27c7
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: ed5059aaab1e89ddc1ce89a78c21efaaa9a34ad6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461259"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454492"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,19 +46,19 @@ POST /roleManagement/directory/roleDefinitions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的 JSON 表示形式。
+在请求正文中，提供[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的 JSON 表示形式。
 
 下表显示创建 roleDefinition 时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |displayName |string |角色定义的显示名称。|
-|isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false, 则该角色不可用于分配。|
+|isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。|
 |rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md)集合 |角色中包含的权限的列表。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +66,7 @@ POST /roleManagement/directory/roleDefinitions
 
 下面是创建自定义角色的示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroledefinition_from_rbacapplication"
@@ -89,15 +91,15 @@ Content-type: application/json
     "isEnabled" : "true"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroledefinition-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroledefinition-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

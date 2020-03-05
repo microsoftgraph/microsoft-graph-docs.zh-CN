@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ca8b2f2d98c577fb053f95110a11f5c3c7b875ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e13ef2bdcf424d68d94d97412487708022386cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455499"
 ---
 # <a name="create-policy"></a>创建策略
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过指定显示名称、策略类型和策略说明来创建新的[policy](../resources/policy.md)对象。
 
->注意: 将在存储策略详细信息之前对其进行验证。 如果它未通过验证, 将返回400个错误的请求。
+>注意：将在存储策略详细信息之前对其进行验证。 如果它未通过验证，将返回400个错误的请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,7 +43,7 @@ POST /policies
 | Content-Type | application/json  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[policy](../resources/policy.md)对象的 JSON 表示形式。
+在请求正文中，提供[policy](../resources/policy.md)对象的 JSON 表示形式。
 
 下表显示创建策略时所需的属性。
 
@@ -53,10 +55,10 @@ POST /policies
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。  
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。  
 
 ## <a name="example"></a>示例
-下面的示例创建一个新的令牌生存期策略。 请注意, 字符串定义参数中包含转义双引号。
+下面的示例创建一个新的令牌生存期策略。 请注意，字符串定义参数中包含转义双引号。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

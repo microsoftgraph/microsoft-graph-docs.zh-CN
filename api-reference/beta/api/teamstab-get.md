@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a2408bb63d3f4cb1e6cb44a303e689ae77416af5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f9da609507bc5a5341995578fc2f4b06fef8d9ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977468"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452405"
 ---
 # <a name="get-tab"></a>获取选项卡
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[tab](../resources/teamstab.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[tab](../resources/teamstab.md)对象。
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。

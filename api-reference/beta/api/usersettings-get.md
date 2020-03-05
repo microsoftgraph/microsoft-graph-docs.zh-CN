@@ -5,19 +5,21 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82d6897f0637090db704a5ca174f75f04446ba13
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: fa1856d6c30e11eee3f3b3379e6d9e8164f56d08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844167"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451558"
 ---
 # <a name="get-settings"></a>获取设置
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 user 和 organization [userSettings](../resources/usersettings.md)对象。
-若要了解如何更新[userSettings](../resources/usersettings.md)对象的属性，请参阅[更新用户设置](usersettings-update.md)。
+读取用户和组织 [userSettings](../resources/usersettings.md) 对象。
+若要了解如何更新 [userSettings](../resources/usersettings.md) 对象的属性，请参阅[更新用户设置](usersettings-update.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +49,7 @@ GET /users/{id | userPrincipalName}/settings/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userSettings](../resources/usersettings.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [userSettings](../resources/usersettings.md) 对象。
 
 ## <a name="example"></a>示例
 

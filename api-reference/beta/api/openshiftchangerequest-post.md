@@ -5,19 +5,21 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb37f5c65ba04547aebd273df8ada78271a68108
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: b7b26d660c432a7d9946bec716031e1ba5ee228a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456360"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象的实例。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 587a9e34db293a738e1242b3d41406bb15990834
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd962184bc655a9df36d6a9b24876a9c1651bcac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451729"
 ---
 # <a name="list-workingwith"></a>列出 workingWith
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应正文中返回 200 OK 响应代码和[User](../resources/user.md)对象集合。
+如果成功，此方法在响应正文中返回 200 OK 响应代码和[User](../resources/user.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

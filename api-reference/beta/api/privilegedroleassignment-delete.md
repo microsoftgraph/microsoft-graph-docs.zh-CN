@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 38500f75e52d8ebeddd1dc5875bb6746c26d5a39
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e5940dd45d318d2537bf00f647779381ad53b2a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412756"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455383"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +37,7 @@ ms.locfileid: "36412756"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-``{id}``请注意, 格式为 "userId_roleId", 其中 UserId 是 azure AD 用户 ID 的 guid 字符串, RoleId 是 azure 管理员角色 ID 的 guid 字符串。
+``{id}``请注意，格式为 "userId_roleId"，其中 UserId 是 azure AD 用户 ID 的 guid 字符串，RoleId 是 azure 管理员角色 ID 的 guid 字符串。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -49,12 +51,12 @@ DELETE /privilegedRoleAssignments/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
+请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_privilegedroleassignment"
@@ -62,15 +64,15 @@ DELETE /privilegedRoleAssignments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-privilegedroleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-privilegedroleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-privilegedroleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

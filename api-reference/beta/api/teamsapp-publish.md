@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b528ce517bc5cd3df627c01ffc247f5aeef19015
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0083a0006028198bd15d4abb50aaf27a16b26d40
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864934"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452520"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>将应用程序发布到你的组织的应用程序目录
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

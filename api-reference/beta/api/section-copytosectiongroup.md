@@ -1,24 +1,26 @@
 ---
-title: '部分: copyToSectionGroup'
+title: 部分： copyToSectionGroup
 description: 将分区复制到特定分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 1e530889fce9616ca59f1a562a4a394ce1c924f7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f905cf3dfa0b8fffc9be3ffff9f9a60086cfcbb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453686"
 ---
-# <a name="section-copytosectiongroup"></a>部分: copyToSectionGroup
+# <a name="section-copytosectiongroup"></a>部分： copyToSectionGroup
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将分区复制到特定分区组。
 
-对于复制操作, 请遵循异步调用模式: 首先调用复制操作, 然后轮询操作终结点以获取结果。
+对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,14 +46,14 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供一个 JSON 对象, 其中包含您的操作所需的参数。
+在请求正文中，提供一个 JSON 对象，其中包含您的操作所需的参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
-|id|String|必需。 目标分区组的 id。 |
+|id|String|必填。 目标分区组的 id。 |
 |renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 <!--groupId missing-->
@@ -60,14 +62,14 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "section_copytosectiongroup"
@@ -83,15 +85,15 @@ Content-length: 84
   "renameAs": "renameAs-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytosectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytosectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytosectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

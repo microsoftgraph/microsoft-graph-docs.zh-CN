@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 0f237992cc24dd854aefcc516a876da168174307
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 12e252067c7f7c8672543292a65b8650a43d45c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036156"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455513"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>为应用程序或服务主体分配的列表策略
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

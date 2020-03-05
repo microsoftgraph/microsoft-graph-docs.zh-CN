@@ -1,18 +1,20 @@
 ---
-title: 'reportRoot: getCredentialUsageSummary'
+title: reportRoot： getCredentialUsageSummary
 description: 报告贵组织中的用户数使用自助密码重置功能的当前状态。
 localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 05eb1ecbc8ceb8474cdc1af3d7dabcb6a75aa44a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 5d1488051a423d044c5cc203e8c8421d485ef232
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454535"
 ---
-# <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
+# <a name="reportroot-getcredentialusagesummary"></a>reportRoot： getCredentialUsageSummary
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ GET /reports/getCredentialUsageSummary
 
 | 参数 | 类型 | 说明 |
 |:--------- |:---- |:----------- |
-| period | String | 指定需要使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的期间`D1`: `D7`、和`D30`。 Period 不区分大小写。 |
+| period | String | 指定需要使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的期间`D1`： `D7`、和`D30`。 Period 不区分大小写。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -50,7 +52,7 @@ GET /reports/getCredentialUsageSummary
 
 | 属性 | 说明和示例 |
 |:---- |:----------- |
-| 功能 | 指定所需的使用率数据的类型 (注册与重置)。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器`eq`运算符:。 |
+| 功能 | 指定所需的使用率数据的类型（注册与重置）。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器`eq`运算符：。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -65,7 +67,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和新的[credentialUsageSummary](../resources/credentialusagesummary.md)集合对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[credentialUsageSummary](../resources/credentialusagesummary.md)集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -75,7 +77,7 @@ GET /reports/getCredentialUsageSummary
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getcredentialusagesummary"
@@ -84,15 +86,15 @@ GET /reports/getCredentialUsageSummary
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getcredentialusagesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getcredentialusagesummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialusagesummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

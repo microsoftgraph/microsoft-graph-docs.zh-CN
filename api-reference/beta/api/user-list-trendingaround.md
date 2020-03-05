@@ -1,24 +1,26 @@
 ---
 title: 列出 trendingAround
-description: 计算出的真知灼见, 可返回围绕用户的项目趋势的列表。
+description: 计算出的真知灼见，可返回围绕用户的项目趋势的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc7b6176fe4fceeeeea78d63c6b7140568ff6875
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6b1da05001da565e03cdcc06fc46459e971cf660
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996187"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451740"
 ---
 # <a name="list-trendingaround"></a>列出 trendingAround
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算出的真知灼见, 可返回围绕用户的项目趋势的列表。
+计算出的真知灼见，可返回围绕用户的项目趋势的列表。
 
-**注意:** 此 API 将被弃用, 并将替换为[趋势 api](../resources/insights-trending.md)。
+**注意：** 此 API 将被弃用，并将替换为[趋势 api](../resources/insights-trending.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +52,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应正文中返回 200 OK 响应代码和[driveItem](../resources/driveitem.md)对象集合。
+如果成功，此方法在响应正文中返回 200 OK 响应代码和[driveItem](../resources/driveitem.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

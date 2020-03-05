@@ -1,24 +1,26 @@
 ---
-title: '用户: getMailTips'
+title: 用户： getMailTips
 description: 获取一个或多个收件人对登录用户可用的邮件提示。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 72ad644e842ff4c1c02dcbdbc28d132333751bf3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f22dd0cca9a76c864e77b0643bfd9aade3b04578
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409019"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451937"
 ---
-# <a name="user-getmailtips"></a>用户: getMailTips
+# <a name="user-getmailtips"></a>用户： getMailTips
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取一个或多个收件人对登录[用户](../resources/user.md)可用的邮件提示。
 
-请注意, 通过`POST`调用`getMailTips`操作, 您可以请求一次为多个收件人返回特定类型的邮件提示。 在[邮件](../resources/mailtips.md)提示集合中返回请求的邮件提示。
+请注意，通过`POST`调用`getMailTips`操作，您可以请求一次为多个收件人返回特定类型的邮件提示。 在[邮件](../resources/mailtips.md)提示集合中返回请求的邮件提示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,18 +50,18 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`: `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
+|EmailAddresses|String 集合|要获取其邮件提示的收件人的 SMTP 地址集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`： `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[邮件](../resources/mailtips.md)提示对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[邮件](../resources/mailtips.md)提示对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取指定收件人的邮件提示, 以获取自动答复设置和邮箱完整状态。
+下面的示例获取指定收件人的邮件提示，以获取自动答复设置和邮箱完整状态。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
@@ -76,15 +78,15 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

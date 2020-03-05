@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: eb984bb532d19e3e0cacd5827a9027e4aa4c0533
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f9f7c351d0d5fd64c2c4b40870e5df1ed9194387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412773"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455376"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 激活分配给请求者的角色。
 
->**注意:** 12月2018日生效, 此 API 将不再受支持且不应使用。 请改用[Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
+>**注意：** 12月2018日生效，此 API 将不再受支持且不应使用。 请改用[Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
 
 
 ## <a name="permissions"></a>权限
@@ -39,7 +41,7 @@ ms.locfileid: "36412773"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-请注意``{id}`` , 它是目标角色 ID。
+请注意``{id}`` ，它是目标角色 ID。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -50,22 +52,22 @@ POST /privilegedRoles/{id}/selfActivate
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|在于|字符串|可选。 有关此角色激活原因的说明。|
-|duration|字符串|可选。 有效值可以是```min``` (最小激活持续时间) ```default``` 、(角色的默认激活持续时间) 或双精度值来指定激活的小时数。 指定的持续时间不能长于角色设置中角色的激活持续时间。 |
-|ticketNumber|字符串|可选。 用于跟踪此角色激活的票证编号。|
-|ticketSystem|字符串|可选。 票证系统。|
+|reason|string|可选。 有关此角色激活原因的说明。|
+|duration|string|可选。 有效值可以是```min``` （最小激活持续时间） ```default``` 、（角色的默认激活持续时间）或双精度值来指定激活的小时数。 指定的持续时间不能长于角色设置中角色的激活持续时间。 |
+|ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
+|ticketSystem|string|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象。
 
-请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
+请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -82,15 +84,15 @@ Content-length: 142
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfactivate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

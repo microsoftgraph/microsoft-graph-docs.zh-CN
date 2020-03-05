@@ -5,20 +5,22 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db808f972c712b13a157c8b55a32985a57143b9d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: a9348a216508cc22493a9b6ea5bbf49fbd15169c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536628"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456326"
 ---
 # <a name="get-organization"></a>获取组织
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取当前经过身份验证的组织的属性和关系。
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您还可以使用操作`GET`来获取**组织**实例中的自定义属性和扩展数据。
+由于 **organization** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -26,11 +28,11 @@ ms.locfileid: "37536628"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 读取、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、读写。所有 |
+|委派（工作或学校帐户） | User.Read、Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、读写。 |
+|应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：授予用户的应用程序。读取权限只能读取组织的**id**、 **displayName**和**verifiedDomains**属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用组织关系。
+> **注意**：授予 User.Read 权限的应用程序仅能读取组织的 **id**, **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -64,7 +66,7 @@ GET /organization
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -73,15 +75,15 @@ GET /organization
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

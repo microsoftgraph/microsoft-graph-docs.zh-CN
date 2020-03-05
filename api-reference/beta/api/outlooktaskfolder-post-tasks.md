@@ -5,20 +5,22 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a6e26dc9640baaf5c6f7a81bda29ba5b1c035a51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9054dbc262c9350bb3efcc17193d66f27ae5904
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35988690"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456143"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定的任务文件夹中创建一个 Outlook 任务。
 
-POST 方法始终忽略请求正文中**startDateTime**和**dueDateTime**的时间部分, 并假定指定时区中的时间始终为午夜。
+POST 方法始终忽略请求正文中**startDateTime**和**dueDateTime**的时间部分，并假定指定时区中的时间始终为午夜。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,14 +43,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区 (如果未指定此标头, 则采用 UTC 格式表示)。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
+在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -74,9 +76,9 @@ Content-length: 376
   }
 }
 ```
-在请求正文中, 提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
+在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中的时间部分, 并假定指定时区 (PST) 中的时间始终为午夜。 然后, 在默认情况下, POST 方法将在响应中转换并显示 UTC 格式的所有日期相关属性。
+POST 方法忽略请求正文中的时间部分，并假定指定时区（PST）中的时间始终为午夜。 然后，在默认情况下，POST 方法将在响应中转换并显示 UTC 格式的所有日期相关属性。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9881087aae28a2f55663a7ec78cd79a77cdedc7d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 47edf467e3c66313a33f238497b5e9b917edd382
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421167"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451978"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,11 +52,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 **"类型**" 属性`required`中`optional` , 指定人员的`resource`或, 为会议室和资源 (如会议室) 指定或。 如果未指定, **** 则 findMeetingTimes `required`将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
+|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 **"类型**" 属性`required`中`optional` ，指定人员的`resource`或，为会议室和资源（如会议室）指定或。 如果未指定， **** 则 findMeetingTimes `required`将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。|
 |maxCandidates|Edm.Int32|要返回的会议时间建议数量上限。可选。|
-|meetingDuration|Edm.Duration|会议的长度, 以[ISO 8601](https://www.iso.org/iso/iso8601)格式表示。 例如, 1 小时表示为 "PT1H", 其中 ' P ' 是持续时间指示器, ' t ' 是时间指示器, ' H ' 是小时指示符。 使用 M 指示持续时间的分钟数;例如, 2 小时零30分钟是 "PT2H30M"。 如果未指定会议持续时间，**findMeetingTimes** 使用默认值 30 分钟。 可选。|
+|meetingDuration|Edm.Duration|会议的长度，以[ISO 8601](https://www.iso.org/iso/iso8601)格式表示。 例如，1小时表示为 "PT1H"，其中 ' P ' 是持续时间指示器，' t ' 是时间指示器，' H ' 是小时指示符。 使用 M 指示持续时间的分钟数;例如，2小时零30分钟是 "PT2H30M"。 如果未指定会议持续时间，**findMeetingTimes** 使用默认值 30 分钟。 可选。|
 |minimumAttendeePercentage|Edm.Double| 在响应中返回时间段所需的最低 [confidence](#the-confidence-of-a-meeting-suggestion)。这是一个介于 0 到 100 之间的百分比值。可选。|
 |returnSuggestionReasons|Edm.Boolean|指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。|
@@ -121,7 +123,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
@@ -172,15 +174,15 @@ Content-Type: application/json
   "minimumAttendeePercentage": "100"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-findmeetingtimes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-findmeetingtimes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

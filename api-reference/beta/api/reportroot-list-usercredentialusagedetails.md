@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 39ff2172ecaaa7f51c16961aef1630e0ddb0e70c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 17e273395e9ae2aa7dd46611f9843359f8456aa3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724804"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453913"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,12 +44,12 @@ GET /reports/userCredentialUsageDetails
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
-| 功能 | 按所需的使用情况数据类型进行筛选 (注册与重置)。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符:`eq` |
-| userDisplayName | 按用户显示名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`: 和。 支持不区分大小写。 |
-| userPrincipalName  | 按用户主体名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器`eq`运算符`startswith()`: 和。 支持不区分大小写。 |
-| isSuccess | 按活动状态进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器`eq`运算符`orderby`: 和。 |
-| authMethod  | 在注册过程中使用身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器`eq`运算符:。 |
-| failureReason | 按失败原因筛选 (如果活动已失败)。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`: 和。 支持不区分大小写。 |
+| 功能 | 按所需的使用情况数据类型进行筛选（注册与重置）。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符：`eq` |
+| userDisplayName | 按用户显示名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
+| userPrincipalName  | 按用户主体名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
+| isSuccess | 按活动状态进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器`eq`运算符`orderby`：和。 |
+| authMethod  | 在注册过程中使用身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器`eq`运算符：。 |
+| failureReason | 按失败原因筛选（如果活动已失败）。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
 
 
 ## <a name="request-headers"></a>请求标头
@@ -63,7 +65,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userCredentialUsageDetails](../resources/usercredentialusagedetails.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[userCredentialUsageDetails](../resources/usercredentialusagedetails.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +75,7 @@ GET /reports/userCredentialUsageDetails
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_usercredentialusagedetails"
@@ -82,15 +84,15 @@ GET /reports/userCredentialUsageDetails
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-usercredentialusagedetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-usercredentialusagedetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-usercredentialusagedetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

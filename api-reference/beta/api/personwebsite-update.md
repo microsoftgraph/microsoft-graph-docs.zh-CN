@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b782981d52f2092aff2d1f99d749e879910289bb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b93d1ea6fa1449bf6491d3ed574e709ff2c883c5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455863"
 ---
 # <a name="update-personwebsite"></a>更新 personwebsite
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,10 +49,10 @@ PATCH /me/profile/websites/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型            | 描述                                                                         |
+| 属性     | 类型            | 说明                                                                         |
 |:-------------|:----------------|:------------------------------------------------------------------------------------|
-|类别    |String collection| 包含用户与网站相关联的类别（例如：个人、食谱）  |
-|description   |字符串           | 包含网站的说明。                                              |
+|categories    |String 集合| 包含用户与网站相关联的类别（例如：个人、食谱）  |
+|说明   |字符串           | 包含网站的说明。                                              |
 |displayName   |String           | 包含网站的友好名称。                                           |
 |webUrl        |String           | 包含指向网站本身的链接。                                              |
 

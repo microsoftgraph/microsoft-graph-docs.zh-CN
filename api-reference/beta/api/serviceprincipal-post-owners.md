@@ -1,18 +1,20 @@
 ---
-title: 'servicePrincipal: 添加所有者'
+title: servicePrincipal：添加所有者
 description: 使用此 API 添加服务主体的所有者。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1975465f126f9978f1d35707c9e1977c456caf28
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7379c07d7ba3704fc2e44f2a46744418be54b4af
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363891"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453345"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipal: 添加所有者
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ POST /servicePrincipals/{id}/owners
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_serviceprincipal"
@@ -64,7 +66,7 @@ Content-length: 30
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

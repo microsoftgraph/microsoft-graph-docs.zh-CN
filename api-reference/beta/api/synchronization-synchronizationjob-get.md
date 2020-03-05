@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3e1ef3ae7d63dc3393bcf8641f1d598f549c2fe
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: b7f08a5af94c2d03e21230430d58952fa81cc6bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453012"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

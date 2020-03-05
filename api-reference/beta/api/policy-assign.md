@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: af128019d35838dd5873de713f011fd5b7f1c6ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f005973677ca3e430706a7fced22e5fbf51bcd0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978887"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455532"
 ---
 # <a name="assign-policy"></a>分配策略
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[策略](../resources/policy.md)分配给应用程序或服务主体。
 
->注意: 目前, 策略分配仅适用于令牌生存期策略。 [策略](../resources/policy.md)中介绍了这种类型的策略。
+>注意：目前，策略分配仅适用于令牌生存期策略。 [策略](../resources/policy.md)中介绍了这种类型的策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +38,7 @@ POST /applications/{id}/policies/$ref
 POST /serviceprincipals/{id}/policies/$ref
 ```
 
-> 注意: 请求中的 "id" 是应用程序或服务主体的 "id" 属性, 而不是 "appid" 属性。
+> 注意：请求中的 "id" 是应用程序或服务主体的 "id" 属性，而不是 "appid" 属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -45,7 +47,7 @@ POST /serviceprincipals/{id}/policies/$ref
 | Content-Type | application/json  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供要添加的策略对象的 JSON 表示形式。
+在请求正文中，提供要添加的策略对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: caddc1274c38149b323b4f72567ca8f6c47e3f86
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b49464051913e62fd0e78e11414356ca55289803
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410551"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453721"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "36410551"
 
 更新适用于扩展的**targetTypes**属性中包含的所有资源。 这些资源是[支持资源类型](/graph/extensibility-overview#supported-resources)中的一种。
 
-只有创建了架构扩展 (所有者应用程序) 的应用程序可以在扩展处于**InDevelopment**或**可用**状态时对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是, 该应用程序可以更改扩展的说明。
+只有创建了架构扩展（所有者应用程序）的应用程序可以在扩展处于**InDevelopment**或**可用**状态时对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是，该应用程序可以更改扩展的说明。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +57,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
-|status|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**, 并**可供****弃用**。|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行累加性更改。|
 
 ## <a name="response"></a>响应
@@ -67,7 +69,7 @@ PATCH /schemaExtensions/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -90,15 +92,15 @@ Content-length: 201
   ],
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

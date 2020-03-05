@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fb3bce87f6dfc6f134a940f9b2683b83f6b3999
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0cda3125b8f984ac5660840252ea886b8c25c6e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36360790"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454638"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,14 +51,14 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookRangeBorder](../resources/workbookrangeborder.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookRangeBorder](../resources/workbookrangeborder.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rangebordercollection_itemat"
@@ -71,7 +73,7 @@ Content-length: 20
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangebordercollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

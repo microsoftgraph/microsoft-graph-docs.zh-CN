@@ -1,22 +1,24 @@
 ---
 title: 列出程序的 programControls
-description: 在 "Azure AD access 评论" 功能中, 列出链接到特定程序的所有 programControl 对象。
+description: 在 "Azure AD access 评论" 功能中，列出链接到特定程序的所有 programControl 对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 03696e4d2250a207783901ded0b59844019622d9
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 776c7681eb893c9a38a88a5370a8a7a6a4acdacf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723341"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454967"
 ---
 # <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 列出链接到特定程序的所有[programControl](../resources/programcontrol.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，列出链接到特定程序的所有[programControl](../resources/programcontrol.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,13 +44,13 @@ GET /programs('{programId}')/controls
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。
+如果成功，此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_programControl_from_program"
@@ -56,15 +58,15 @@ GET /programs('{programId}')/controls
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-programcontrol-from-program-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-programcontrol-from-program-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-from-program-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

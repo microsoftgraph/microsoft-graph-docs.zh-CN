@@ -5,14 +5,16 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e33e7e9906697df70cab845a8372e9adfb0c6078
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5eaec23451dd7e2d47264b1214464c37dc10ff09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410001"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453252"
 ---
 # <a name="follow-site"></a>关注网站 
+
+命名空间： microsoft. graph
 
 关注用户的[网站](../resources/site.md)或多个网站。
 
@@ -36,18 +38,18 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供包含下表中所述的 id 参数的 JSON 对象的数组。 
+在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。 
 
 
-| 名称                 | 值  | 说明                                                            |
+| Name                 | 值  | 说明                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | 项的[唯一标识符](../resources/site.md#id-property)。 |
 
 
 ## <a name="response"></a>响应 
 
-* 如果请求成功, 此方法将返回已遵循的网站数组。  
-* 如果在执行任何指定的网站时出现错误, 则此方法将返回`207`状态代码, 并且响应正文将包含包含[Error](/graph/errors)对象和 siteIds 的条目的数组, 这些条目指示无法遵循哪些网站。
+* 如果请求成功，此方法将返回已遵循的网站数组。  
+* 如果在执行任何指定的网站时出现错误，则此方法将返回`207`状态代码，并且响应正文将包含包含[Error](/graph/errors)对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。
 
 ## <a name="example"></a>示例
 
@@ -56,7 +58,7 @@ POST /users/{user-id}/followedSites/add
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -75,15 +77,15 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,7 +93,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功, 它将返回以下 JSON 响应。 
+如果成功，它将返回以下 JSON 响应。 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -131,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-如果发生错误, 它将返回以下 JSON 响应 
+如果发生错误，它将返回以下 JSON 响应 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

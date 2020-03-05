@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f112c7d3253a0a0801b7542f492c6f3f1f675c81
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: a7516798c18ec00f770d5632f3ed3faee1830e64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453511"
 ---
 # <a name="send-device-command"></a>发送设备命令
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -81,7 +83,7 @@ HTTP/1.1 201 OK
 ```
 ### <a name="command-properties"></a>命令属性 
 
-|**名称**|**Type**|**说明**|
+|**名称**|**类型**|**说明**|
 |:----|:------|:------|
 |payload | microsoft. json| 要发送到应用程序服务或启动设备上的 URI 的有效负载。 |
 |responsePayload | microsoft. json| 从目标设备返回的有效负载。 |
@@ -148,7 +150,7 @@ HTTP/1.1 201 OK
 
 下面的示例演示如何在设备上查询应用服务。 若要使用应用服务，必须使用设备 ID （通过执行 GET 呼叫获取`me/devices`）执行 POST 调用。 若要使用以下示例，必须在目标设备上安装[罗马应用程序](https://aka.ms/romanapp)。
 
-必须在调用中设置多个附加属性。 *Type*必须设置为*AppService*， *AppServiceName*必须设置为应用程序中定义的应用服务的名称， *PackageFamilyName*必须设置为应用程序清单中定义的程序包系列名称和*有效负载*保留您在目标应用程序中调用的服务的键和值。
+必须在调用中设置多个附加属性。 *Type*必须设置为*AppService*， *AppServiceName*必须设置为应用程序中定义的应用服务的名称， *PackageFamilyName*必须设置为应用程序清单中定义的程序包系列名称，*有效负载*将保留您在目标应用程序中调用的服务的键和值。
 
 #### <a name="request"></a>请求
 

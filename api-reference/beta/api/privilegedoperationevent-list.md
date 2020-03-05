@@ -5,24 +5,26 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d7eb411a7cdd134ae1f2bfaaaf691ec900a4fb46
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9314bf4f547b03db4c50dda0628aab7723dc7e72
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992057"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455401"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的列表, 这些对象表示由角色操作的特权标识管理生成的审核事件。 有关审核事件的详细信息, 请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果, 请使用标准 OData ``$filter``表达式。
+检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的列表，这些对象表示由角色操作的特权标识管理生成的审核事件。 有关审核事件的详细信息，请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData ``$filter``表达式。
 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一:_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
+请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
 
  
 
@@ -50,21 +52,21 @@ GET /privilegedOperationEvents
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象集合。
 
-请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
+请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="examples"></a>示例
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>获取角色分配操作的审核事件
 ##### <a name="request"></a>请求
-以下示例显示了获取角色分配操作的审核事件的请求。 在这种情况``requestType``下, ``Assign``value 为。
+以下示例显示了获取角色分配操作的审核事件的请求。 在这种情况``requestType``下， ``Assign``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,14 +119,14 @@ Content-length: 547
 ```
 ### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>获取自我角色激活和 makePermanent 操作的审核事件
 ##### <a name="request"></a>请求
-下面的示例演示获取获取自我角色激活和 makePermanent 操作的审核事件的请求。 在这种情况``requestType``下, ``Activate``value 为。
+下面的示例演示获取获取自我角色激活和 makePermanent 操作的审核事件的请求。 在这种情况``requestType``下， ``Activate``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -178,14 +180,14 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取角色分配停用的审核事件
 ##### <a name="request"></a>请求
-下面的示例演示获取获取角色分配停用的审核事件的请求。 在这种情况``requestType``下, ``Deactivate``value 为。
+下面的示例演示获取获取角色分配停用的审核事件的请求。 在这种情况``requestType``下， ``Deactivate``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 11166c6c8e61fcb905fa3f9fe847b1bfa39c37ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13a4953c2ffa94ef85a836a3796f88a6cee149c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983577"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456006"
 ---
 # <a name="get-page"></a>获取页面
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "35983577"
 
 **获取页面信息**
 
-按页面标识符访问页面的元数据:
+按页面标识符访问页面的元数据：
 
 ```
 GET /me/onenote/pages/{id}
@@ -28,7 +30,7 @@ GET /me/onenote/pages/{id}
 
 **获取页面内容**
 
-您可以使用页面的`content`终结点获取页面的 HTML 内容:
+您可以使用页面的`content`终结点获取页面的 HTML 内容：
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
@@ -42,8 +44,8 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
+|委派（工作或学校帐户） | 请参阅 "注意，"、"注释"、"全部"、"全部"、"写"    |
+|委派（个人 Microsoft 帐户） | 注意： Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -70,7 +72,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onenotePage](../resources/onenotepage.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[onenotePage](../resources/onenotepage.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -79,7 +81,7 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意: 为简洁起见, 此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81c9d429ba3a74d854a9d091f6e40af7993916f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978859"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455490"
 ---
 # <a name="update-policy"></a>更新策略
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,13 +41,13 @@ PATCH /policies/{id}
 | Content-Type | application/json  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供具有需要更新的参数的 JSON 对象。 下表显示了可能的参数。
+在请求正文中，提供具有需要更新的参数的 JSON 对象。 下表显示了可能的参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |定义|String|[Policy](../resources/policy.md)对象的字符串化版本。|
 |displayName|String|策略的自定义名称。|
-|isOrganizationDefault|Boolean|指定默认情况下是否应用此策略。|
+|isOrganizationDefault|布尔|指定默认情况下是否应用此策略。|
 |type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
 
 ## <a name="response"></a>响应
@@ -53,7 +55,7 @@ PATCH /policies/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
-下面的示例更新令牌生存期策略的定义, 并将其设置为组织的默认值。
+下面的示例更新令牌生存期策略的定义，并将其设置为组织的默认值。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

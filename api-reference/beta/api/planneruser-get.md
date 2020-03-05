@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bf4c0bdc613795294e9657a30e27aa42732e1085
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f87a84d9297fbbde1d5fb9d6045dadae10e6bd72
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455576"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ GET /users/{id}/planner
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerUser](../resources/planneruser.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerUser](../resources/planneruser.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

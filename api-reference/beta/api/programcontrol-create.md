@@ -1,28 +1,30 @@
 ---
 title: 创建 programControl
-description: 在 "Azure AD access 评论" 功能中, 创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
+description: 在 "Azure AD access 评论" 功能中，创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5c6bcd95469407af0b72a7aff628b8d457f4660e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f752a3fb9bfb302a0d3c63b3edec2ef93735510
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454981"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 创建一个新的[programControl](../resources/programcontrol.md)对象。  这会将访问审核链接到某个程序。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[programControl](../resources/programcontrol.md)对象。  这会将访问审核链接到某个程序。
 
-在发出此请求之前, 呼叫者必须先
+在发出此请求之前，呼叫者必须先
 
-- [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md), 以使`programId`其值包含在请求中,
-- [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md), 以在请求中包含`controlId`的值, 以及
-- [检索了程序控制类型的列表](programcontroltype-list.md), 以将值`controlTypeId`包含在请求中。
+- [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md)，以使`programId`其值包含在请求中，
+- [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md)，以在请求中包含`controlId`的值，以及
+- [检索了程序控制类型的列表](programcontroltype-list.md)，以将值`controlTypeId`包含在请求中。
 
 
 ## <a name="permissions"></a>权限
@@ -47,26 +49,26 @@ POST /programControls
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
 下表显示创建程序控件时所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | 此控件将要成为的程序的 programId。                             |
-| `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 |
+| `controlId`              |`String`                | 控件的 controlId，特别是 access 评审的标识符。                                                |
+| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。 |
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。
+如果成功，此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。
 
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中, 提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_programControl_from_programControls"
@@ -81,15 +83,15 @@ Content-type: application/json
     "programId": "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-programcontrol-from-programcontrols-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-programcontrol-from-programcontrols-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-programcontrol-from-programcontrols-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

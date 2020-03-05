@@ -5,14 +5,16 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e45926ee17ecec717595ad1eb2b1a9b2f8161b0
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: ae26f5b5a5a109145daa132837890943a98c8c0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268380"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451624"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
+| inputIds | String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
 | sourceIdType | exchangeIdFormat | `InputIds`参数中标识符的 ID 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
 

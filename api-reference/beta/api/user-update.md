@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1662290791eb996d74f045a032d5f1b581121205
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 60be070916577de5b4f285c7711b15f37541f96f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451621"
 ---
 # <a name="update-user"></a>更新用户
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +30,8 @@ ms.locfileid: "37203968"
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
 >[!NOTE]
-> - 更新**passwordProfile**属性时，需要以下权限： directory.accessasuser.all。
-> - 仅允许非管理员用户或分配了以下角色之一的用户更新另一个用户的**businessPhones**、 **mobilePhone**或**OtherMails**属性：目录读取器、来宾邀请者、消息中心读取器和报告读取器。 有关更多详细信息，请参阅[AZURE AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  对于授予了 User. ReadWrite、All 或 Directory 的所有委派或应用程序权限的应用程序，情况也是如此。
+> - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
+> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 
 >[!NOTE]
 >更新**标识**属性需要用户 ManageIdentities 权限。 此外，不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有**user**对象，除非该**用户**对象已包含本地帐户标识。
@@ -52,7 +54,7 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones| 字符串集合 | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
@@ -63,8 +65,8 @@ PATCH /users/{id | userPrincipalName}
 |employeeId|String|由组织分配给该用户的员工标识符。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|身份|[objectIdentity](../resources/objectidentity.md)集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或社会身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 对**标识**的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType**标识。|
-|interests|String collection|用户介绍自身兴趣的列表。|
+|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对**标识**的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType**标识。|
+|interests|String 集合|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
@@ -77,7 +79,7 @@ PATCH /users/{id | userPrincipalName}
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
-|responsibilities|String collection|供用户枚举其职责的列表。|
+|responsibilities|String 集合|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |skills|String collection|供用户枚举其技能的列表。|
 |state|String|用户地址中的省/市/自治区或省。|
@@ -95,13 +97,13 @@ PATCH /users/{id | userPrincipalName}
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-update-properties-of-the-signed-in-user"></a>示例1：更新已登录用户的属性
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>示例 1：更新已登录用户的属性
 
 #### <a name="request"></a>请求
 
-下面的示例演示了一个请求。
+以下示例显示了一个请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -117,15 +119,15 @@ Content-type: application/json
   "officeLocation": "city-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -143,14 +145,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-properties-of-the-specified-user"></a>示例2：更新指定用户的属性
+### <a name="example-2-update-properties-of-the-specified-user"></a>示例 2：更新指定用户的属性
 
 #### <a name="request"></a>请求
 
-下面的示例演示了一个请求。
+以下示例显示了一个请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_other_user"
@@ -166,15 +168,15 @@ Content-type: application/json
   "officeLocation": "city-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-other-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-other-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-other-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

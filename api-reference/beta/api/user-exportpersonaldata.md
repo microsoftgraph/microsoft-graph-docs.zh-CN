@@ -1,20 +1,22 @@
 ---
-title: '用户: exportPersonalData'
-description: 提交数据策略操作请求, 由公司管理员进行导出以导出组织用户的数据。
+title: 用户： exportPersonalData
+description: 提交数据策略操作请求，由公司管理员进行导出以导出组织用户的数据。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f7b690ec1d09cb7a756508700c4aaaaa9b0ecba
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9b453899973f9a296d333abb62e48093412f0b93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409040"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451985"
 ---
-# <a name="user-exportpersonaldata"></a>用户: exportPersonalData
+# <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
-提交数据策略操作请求, 由公司管理员进行导出以导出组织用户的数据。
+命名空间： microsoft. graph
+
+提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +27,7 @@ ms.locfileid: "36409040"
 |委派（个人 Microsoft 帐户） |  不适用  |
 |应用程序 | Export. All 和 User. All |
 
->**注意:** 仅当使用委派的权限时, 公司管理员才能执行导出。
+>**注意：** 仅当使用委派的权限时，公司管理员才能执行导出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明 |
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。|
+|storageLocation|String|这是 Azure 存储帐户的共享访问签名（SAS） URL，应导出数据的位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下标头。
@@ -51,13 +53,13 @@ POST /users/{id}/exportPersonalData
 | 名称       | 说明 |
 |:---------------|:----------|
 | Location  | 用于检查请求状态的 URL。 |
-| 重试-After  | 以秒为单位的时间段。 在提交请求以检查状态后, 请求生成器应等待这长时间。 |
+| 重试-After  | 以秒为单位的时间段。 在提交请求以检查状态后，请求生成器应等待这长时间。 |
 
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -71,15 +73,15 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,22 +1,24 @@
 ---
 title: 列出人员
-description: 检索按其与用户的相关性排序的人员对象列表, 该列表由用户的通信和协作模式以及业务关系决定。
+description: 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 4823ce3659b9f2e5e96e8265c7e256d2a19dfd21
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 81ae85775e05128b198eea648f447468f2fdc9b6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721899"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451783"
 ---
 # <a name="list-people"></a>列出人员
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索按其与[用户](../resources/user.md)的相关性排序的[人员](../resources/person.md)对象列表, 该列表由用户的通信和协作模式以及业务关系决定。
+检索按其与[用户](../resources/user.md)的相关性排序的[人员](../resources/person.md)对象列表，该列表由用户的通信和协作模式以及业务关系决定。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +43,7 @@ GET /users/{id | userPrincipalName}/people
 
 此方法支持以下 OData 查询参数来帮助自定义响应。
 
-|名称|值|说明|
+|Name|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
@@ -63,13 +65,13 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[person](../resources/person.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[person](../resources/person.md)对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="browse"></a>定位
 
-本节中的请求将根据通信、协作和业务关系获取与登录用户最`/me`相关的人员 ()。
+本节中的请求将根据通信、协作和业务关系获取与登录用户最`/me`相关的人员（）。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要人员读取权限。
 
@@ -77,7 +79,7 @@ GET /users/{id | userPrincipalName}/people
 
 以下是默认请求的示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_person_collection_beta"
@@ -86,15 +88,15 @@ GET /users/{id | userPrincipalName}/people
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/people
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-person-collection-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -252,7 +254,7 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 
 ### <a name="search-people"></a>搜索人员
 
-此部分中的请求还可以获取与登录用户最相关的人员 (`/me`)。 搜索请求需要人员读取权限。
+此部分中的请求还可以获取与登录用户最相关的人员（`/me`）。 搜索请求需要人员读取权限。
 
 #### <a name="using-search-to-select-people"></a>使用 "搜索" 选择人员
 
@@ -266,7 +268,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 
 #### <a name="using-search-to-specify-a-relevant-topic"></a>使用搜索来指定相关主题
 
-以下请求返回相关人员, `/me`其名称包含 "ma", 以及与 "功能计划" 有关联的人员。
+以下请求返回相关人员， `/me`其名称包含 "ma"，以及与 "功能计划" 有关联的人员。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
@@ -274,7 +276,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature plann
 
 #### <a name="performing-a-fuzzy-search"></a>执行模糊搜索
 
-下面的请求搜索名为 "Hermaini 厅" 的人。 由于存在与登录用户相关的名为 "所以凸" 的人员, 因此返回 "所以凸" 的信息。
+下面的请求搜索名为 "Hermaini 厅" 的人。 由于存在与登录用户相关的名为 "所以凸" 的人员，因此返回 "所以凸" 的信息。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
@@ -282,7 +284,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>相关人员
 
-以下请求获取与用户组织中的其他人最相关的人员。 此请求需要 User.readbasic.all 的所有人。读取。 All 权限。 在此示例中, 将显示 Nestor Kellum 的相关人员。
+以下请求获取与用户组织中的其他人最相关的人员。 此请求需要 User.readbasic.all 的所有人。读取。 All 权限。 在此示例中，将显示 Nestor Kellum 的相关人员。
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/

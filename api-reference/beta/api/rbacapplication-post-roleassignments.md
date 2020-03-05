@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 42a747377ab8e5ae21c87b0fe529e92028d1a013
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 672eac457659c3af05f0a3e1fc92ec0fe283746e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461273"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454515"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,19 +46,19 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。
+在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意, 使用 roleTemplateId 进行 roleDefinitionId。 roleDefinitionId 可以是服务范围的模板 Id, 也可以是特定于目录的 roleDefinitionId。
+下面展示了示例请求。 请注意，使用 roleTemplateId 进行 roleDefinitionId。 roleDefinitionId 可以是服务范围的模板 Id，也可以是特定于目录的 roleDefinitionId。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_from_rbacapplication"
@@ -72,15 +74,15 @@ Content-type: application/json
     "resourceScope":"/"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

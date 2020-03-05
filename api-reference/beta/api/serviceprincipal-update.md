@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 852ea0467779ba0dab80eb0c571f39b1cf60ed9b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b48477c319aaaa72a4427b31f23bf4624c869b38
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410123"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453336"
 ---
 # <a name="update-serviceprincipal"></a>更新 serviceprincipal
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,33 +43,33 @@ PATCH /servicePrincipals/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                如果服务主体帐户已启用，则为 **true**；否则，为 **false**。            |
+|accountEnabled|布尔|                如果服务主体帐户已启用，则为 **true**；否则，为 **false**。            |
 |appDisplayName|String|关联应用程序公开的显示名称。|
 |appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
-|appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
-|appRoles|appRole|关联应用程序公开的应用程序角色。 有关详细信息, 请参阅 application entity **Notes**上的**appRoles**属性定义: 需要版本1.5 或更高版本, 不可为 null。            |
+|appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。                            **注释**：需要版本1.5 或更高版本，不可为 null。            |
+|appRoles|appRole|关联应用程序公开的应用程序角色。 有关详细信息，请参阅 application entity **Notes**上的**appRoles**属性定义：需要版本1.5 或更高版本，不可为 null。            |
 |displayName|字符串|服务主体的显示名称。|
 |errorUrl|String|            |
 |homepage|String|关联应用程序的主页的 URL。|
 |keyCredentials|keyCredential|与服务帐户关联的密钥凭据集合。                            **注意：** 不可为 null。            |
 |logoutUrl|String| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。 |
-|oauth2Permissions|oAuth2Permission|关联应用程序的 OAuth 2.0 权限。 有关详细信息，请参阅应用程序实体上的 **oauth2Permissions** 属性定义。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
+|oauth2Permissions|oAuth2Permission|关联应用程序的 OAuth 2.0 权限。 有关详细信息，请参阅应用程序实体上的 **oauth2Permissions** 属性定义。                            **注释**：需要版本1.5 或更高版本，不可为 null。            |
 |passwordCredentials|passwordCredential|与服务帐户关联的密码凭据集合。                            **注意：** 不可为 null。            |
-|preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。                            **备注**: 需要1.5 版或更高版本。            |
+|preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。                            **备注**：需要1.5 版或更高版本。            |
 |publisherName|String|在其中指定关联应用程序的租户的显示名称。|
 |replyUrls|String|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。                            **注意：** 不可为 null。            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**: 不可为 null, 多值属性上的筛选表达式需要**any**运算符;有关详细信息, 请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
-|tags|String|                                        **注意：** 不可为 null。            |
+|servicePrincipalNames|String|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**：不可为 null，多值属性上的筛选表达式需要**any**运算符;有关详细信息，请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
+|标记|String|                                        **注意：** 不可为 null。            |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[servicePrincipal](../resources/serviceprincipal.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[servicePrincipal](../resources/serviceprincipal.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_serviceprincipal"
@@ -97,15 +99,15 @@ Content-length: 391
   "appRoleAssignmentRequired": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
