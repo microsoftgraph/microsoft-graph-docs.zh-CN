@@ -5,30 +5,32 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b59bd65a79c7a8185749639ef725504c80424ee
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 902b552a8fc6e178c3cef120ace4ea66d954812f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456383"
 ---
-# <a name="openshiftchangerequest-decline"></a><span data-ttu-id="1a039-103">openShiftChangeRequest：拒绝</span><span class="sxs-lookup"><span data-stu-id="1a039-103">openShiftChangeRequest: decline</span></span>
+# <a name="openshiftchangerequest-decline"></a><span data-ttu-id="24b27-103">openShiftChangeRequest：拒绝</span><span class="sxs-lookup"><span data-stu-id="24b27-103">openShiftChangeRequest: decline</span></span>
+
+<span data-ttu-id="24b27-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="24b27-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a039-104">拒绝[openshiftchangerequest](../resources/openshiftchangerequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1a039-104">Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.</span></span>
+<span data-ttu-id="24b27-105">拒绝[openshiftchangerequest](../resources/openshiftchangerequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="24b27-105">Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a039-105">Permissions</span><span class="sxs-lookup"><span data-stu-id="1a039-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="24b27-106">权限</span><span class="sxs-lookup"><span data-stu-id="24b27-106">Permissions</span></span>
 
-<span data-ttu-id="1a039-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1a039-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="24b27-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="24b27-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1a039-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1a039-108">Permission type</span></span>                        | <span data-ttu-id="1a039-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1a039-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="24b27-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="24b27-109">Permission type</span></span>                        | <span data-ttu-id="24b27-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="24b27-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="1a039-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1a039-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1a039-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a039-111">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="1a039-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1a039-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a039-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="1a039-113">Not supported.</span></span> |
-| <span data-ttu-id="1a039-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="1a039-114">Application</span></span>                            | <span data-ttu-id="1a039-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="1a039-115">Not supported.</span></span> |
+| <span data-ttu-id="24b27-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="24b27-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="24b27-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24b27-112">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="24b27-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="24b27-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24b27-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="24b27-114">Not supported.</span></span> |
+| <span data-ttu-id="24b27-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="24b27-115">Application</span></span>                            | <span data-ttu-id="24b27-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="24b27-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a039-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1a039-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24b27-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="24b27-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +38,31 @@ ms.locfileid: "42219655"
 POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a039-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="1a039-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="24b27-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="24b27-118">Request headers</span></span>
 
-| <span data-ttu-id="1a039-118">名称</span><span class="sxs-lookup"><span data-stu-id="1a039-118">Name</span></span>          | <span data-ttu-id="1a039-119">说明</span><span class="sxs-lookup"><span data-stu-id="1a039-119">Description</span></span>   |
+| <span data-ttu-id="24b27-119">名称</span><span class="sxs-lookup"><span data-stu-id="24b27-119">Name</span></span>          | <span data-ttu-id="24b27-120">说明</span><span class="sxs-lookup"><span data-stu-id="24b27-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="1a039-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a039-120">Authorization</span></span> | <span data-ttu-id="1a039-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1a039-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="24b27-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="24b27-121">Authorization</span></span> | <span data-ttu-id="24b27-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="24b27-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a039-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="1a039-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="24b27-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="24b27-124">Request body</span></span>
 
-<span data-ttu-id="1a039-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="1a039-124">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="24b27-125">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="24b27-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1a039-125">参数</span><span class="sxs-lookup"><span data-stu-id="1a039-125">Parameter</span></span>    | <span data-ttu-id="1a039-126">类型</span><span class="sxs-lookup"><span data-stu-id="1a039-126">Type</span></span>        | <span data-ttu-id="1a039-127">描述</span><span class="sxs-lookup"><span data-stu-id="1a039-127">Description</span></span> |
+| <span data-ttu-id="24b27-126">参数</span><span class="sxs-lookup"><span data-stu-id="24b27-126">Parameter</span></span>    | <span data-ttu-id="24b27-127">类型</span><span class="sxs-lookup"><span data-stu-id="24b27-127">Type</span></span>        | <span data-ttu-id="24b27-128">描述</span><span class="sxs-lookup"><span data-stu-id="24b27-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1a039-128">message</span><span class="sxs-lookup"><span data-stu-id="1a039-128">message</span></span>|<span data-ttu-id="1a039-129">String</span><span class="sxs-lookup"><span data-stu-id="1a039-129">String</span></span>|<span data-ttu-id="1a039-130">自定义拒绝邮件。</span><span class="sxs-lookup"><span data-stu-id="1a039-130">A custom decline message.</span></span>|
+|<span data-ttu-id="24b27-129">message</span><span class="sxs-lookup"><span data-stu-id="24b27-129">message</span></span>|<span data-ttu-id="24b27-130">String</span><span class="sxs-lookup"><span data-stu-id="24b27-130">String</span></span>|<span data-ttu-id="24b27-131">自定义拒绝邮件。</span><span class="sxs-lookup"><span data-stu-id="24b27-131">A custom decline message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1a039-131">响应</span><span class="sxs-lookup"><span data-stu-id="1a039-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="24b27-132">响应</span><span class="sxs-lookup"><span data-stu-id="24b27-132">Response</span></span>
 
-<span data-ttu-id="1a039-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1a039-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="24b27-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="24b27-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1a039-134">示例</span><span class="sxs-lookup"><span data-stu-id="1a039-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="24b27-135">示例</span><span class="sxs-lookup"><span data-stu-id="24b27-135">Examples</span></span>
 
-<span data-ttu-id="1a039-135">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="1a039-135">The following example shows how to call this API.</span></span>
+<span data-ttu-id="24b27-136">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="24b27-136">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="1a039-136">请求</span><span class="sxs-lookup"><span data-stu-id="1a039-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="24b27-137">请求</span><span class="sxs-lookup"><span data-stu-id="24b27-137">Request</span></span>
 
-<span data-ttu-id="1a039-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1a039-137">The following is an example of the request.</span></span>
+<span data-ttu-id="24b27-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="24b27-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequest_decline"
@@ -75,9 +77,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1a039-138">响应</span><span class="sxs-lookup"><span data-stu-id="1a039-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="24b27-139">响应</span><span class="sxs-lookup"><span data-stu-id="24b27-139">Response</span></span>
 
-<span data-ttu-id="1a039-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1a039-139">The following is an example of the response.</span></span>
+<span data-ttu-id="24b27-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="24b27-140">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

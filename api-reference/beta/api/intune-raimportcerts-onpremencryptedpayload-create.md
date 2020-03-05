@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c86aed4b4994258d0e2f44f574d3126e1aa2079e
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 5c5a045a517fe5fc2b7d33ccf052be169114df89
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160913"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42460176"
 ---
-# <a name="create-onpremencryptedpayload"></a><span data-ttu-id="09ab6-103">创建 onPremEncryptedPayload</span><span class="sxs-lookup"><span data-stu-id="09ab6-103">Create onPremEncryptedPayload</span></span>
+# <a name="create-onpremencryptedpayload"></a><span data-ttu-id="74ffd-103">创建 onPremEncryptedPayload</span><span class="sxs-lookup"><span data-stu-id="74ffd-103">Create onPremEncryptedPayload</span></span>
 
-> <span data-ttu-id="09ab6-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="09ab6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="74ffd-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="74ffd-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="09ab6-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="09ab6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="74ffd-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="74ffd-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="09ab6-106">创建新的[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象。</span><span class="sxs-lookup"><span data-stu-id="09ab6-106">Create a new [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.</span></span>
+> <span data-ttu-id="74ffd-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="74ffd-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="09ab6-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="09ab6-107">Prerequisites</span></span>
-<span data-ttu-id="09ab6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="09ab6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="74ffd-107">创建新的[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象。</span><span class="sxs-lookup"><span data-stu-id="74ffd-107">Create a new [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.</span></span>
 
-|<span data-ttu-id="09ab6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="09ab6-110">Permission type</span></span>|<span data-ttu-id="09ab6-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="09ab6-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="74ffd-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="74ffd-108">Prerequisites</span></span>
+<span data-ttu-id="74ffd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="74ffd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="74ffd-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="74ffd-111">Permission type</span></span>|<span data-ttu-id="74ffd-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="74ffd-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="09ab6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="09ab6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="09ab6-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09ab6-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="09ab6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="09ab6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="09ab6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="09ab6-115">Not supported.</span></span>|
-|<span data-ttu-id="09ab6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="09ab6-116">Application</span></span>|<span data-ttu-id="09ab6-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09ab6-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="74ffd-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="74ffd-113">Delegated (work or school account)</span></span>|<span data-ttu-id="74ffd-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74ffd-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="74ffd-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="74ffd-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="74ffd-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="74ffd-116">Not supported.</span></span>|
+|<span data-ttu-id="74ffd-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="74ffd-117">Application</span></span>|<span data-ttu-id="74ffd-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74ffd-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="09ab6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="09ab6-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74ffd-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="74ffd-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,45 +40,45 @@ ms.locfileid: "42160913"
 POST /onPremEncryptedPayloads
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="09ab6-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="09ab6-119">Request headers</span></span>
-|<span data-ttu-id="09ab6-120">标头</span><span class="sxs-lookup"><span data-stu-id="09ab6-120">Header</span></span>|<span data-ttu-id="09ab6-121">值</span><span class="sxs-lookup"><span data-stu-id="09ab6-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="74ffd-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="74ffd-120">Request headers</span></span>
+|<span data-ttu-id="74ffd-121">标头</span><span class="sxs-lookup"><span data-stu-id="74ffd-121">Header</span></span>|<span data-ttu-id="74ffd-122">值</span><span class="sxs-lookup"><span data-stu-id="74ffd-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="09ab6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="09ab6-122">Authorization</span></span>|<span data-ttu-id="09ab6-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="09ab6-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="09ab6-124">接受</span><span class="sxs-lookup"><span data-stu-id="09ab6-124">Accept</span></span>|<span data-ttu-id="09ab6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="09ab6-125">application/json</span></span>|
+|<span data-ttu-id="74ffd-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="74ffd-123">Authorization</span></span>|<span data-ttu-id="74ffd-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="74ffd-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="74ffd-125">接受</span><span class="sxs-lookup"><span data-stu-id="74ffd-125">Accept</span></span>|<span data-ttu-id="74ffd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="74ffd-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="09ab6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="09ab6-126">Request body</span></span>
-<span data-ttu-id="09ab6-127">在请求正文中，提供 onPremEncryptedPayload 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="09ab6-127">In the request body, supply a JSON representation for the onPremEncryptedPayload object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="74ffd-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="74ffd-127">Request body</span></span>
+<span data-ttu-id="74ffd-128">在请求正文中，提供 onPremEncryptedPayload 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="74ffd-128">In the request body, supply a JSON representation for the onPremEncryptedPayload object.</span></span>
 
-<span data-ttu-id="09ab6-128">下表显示创建 onPremEncryptedPayload 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="09ab6-128">The following table shows the properties that are required when you create the onPremEncryptedPayload.</span></span>
+<span data-ttu-id="74ffd-129">下表显示创建 onPremEncryptedPayload 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="74ffd-129">The following table shows the properties that are required when you create the onPremEncryptedPayload.</span></span>
 
-|<span data-ttu-id="09ab6-129">属性</span><span class="sxs-lookup"><span data-stu-id="09ab6-129">Property</span></span>|<span data-ttu-id="09ab6-130">类型</span><span class="sxs-lookup"><span data-stu-id="09ab6-130">Type</span></span>|<span data-ttu-id="09ab6-131">说明</span><span class="sxs-lookup"><span data-stu-id="09ab6-131">Description</span></span>|
+|<span data-ttu-id="74ffd-130">属性</span><span class="sxs-lookup"><span data-stu-id="74ffd-130">Property</span></span>|<span data-ttu-id="74ffd-131">类型</span><span class="sxs-lookup"><span data-stu-id="74ffd-131">Type</span></span>|<span data-ttu-id="74ffd-132">说明</span><span class="sxs-lookup"><span data-stu-id="74ffd-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="09ab6-132">tenantId</span><span class="sxs-lookup"><span data-stu-id="09ab6-132">tenantId</span></span>|<span data-ttu-id="09ab6-133">Guid</span><span class="sxs-lookup"><span data-stu-id="09ab6-133">Guid</span></span>|<span data-ttu-id="09ab6-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-134">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-135">userId</span><span class="sxs-lookup"><span data-stu-id="09ab6-135">userId</span></span>|<span data-ttu-id="09ab6-136">Guid</span><span class="sxs-lookup"><span data-stu-id="09ab6-136">Guid</span></span>|<span data-ttu-id="09ab6-137">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-137">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-138">deviceId</span><span class="sxs-lookup"><span data-stu-id="09ab6-138">deviceId</span></span>|<span data-ttu-id="09ab6-139">Guid</span><span class="sxs-lookup"><span data-stu-id="09ab6-139">Guid</span></span>|<span data-ttu-id="09ab6-140">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-140">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-141">payloadId</span><span class="sxs-lookup"><span data-stu-id="09ab6-141">payloadId</span></span>|<span data-ttu-id="09ab6-142">Guid</span><span class="sxs-lookup"><span data-stu-id="09ab6-142">Guid</span></span>|<span data-ttu-id="09ab6-143">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-143">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-144">deviceKeyThumbprint</span><span class="sxs-lookup"><span data-stu-id="09ab6-144">deviceKeyThumbprint</span></span>|<span data-ttu-id="09ab6-145">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-145">String</span></span>|<span data-ttu-id="09ab6-146">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-146">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-147">cert1PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="09ab6-147">cert1PayloadUUID</span></span>|<span data-ttu-id="09ab6-148">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-148">String</span></span>|<span data-ttu-id="09ab6-149">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-149">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-150">cert2PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="09ab6-150">cert2PayloadUUID</span></span>|<span data-ttu-id="09ab6-151">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-151">String</span></span>|<span data-ttu-id="09ab6-152">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-152">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-153">cert3PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="09ab6-153">cert3PayloadUUID</span></span>|<span data-ttu-id="09ab6-154">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-154">String</span></span>|<span data-ttu-id="09ab6-155">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-155">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-156">plistTemplate</span><span class="sxs-lookup"><span data-stu-id="09ab6-156">plistTemplate</span></span>|<span data-ttu-id="09ab6-157">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-157">String</span></span>|<span data-ttu-id="09ab6-158">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-158">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-159">encryptedBlob</span><span class="sxs-lookup"><span data-stu-id="09ab6-159">encryptedBlob</span></span>|<span data-ttu-id="09ab6-160">Binary</span><span class="sxs-lookup"><span data-stu-id="09ab6-160">Binary</span></span>|<span data-ttu-id="09ab6-161">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-161">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-162">payloadVersion</span><span class="sxs-lookup"><span data-stu-id="09ab6-162">payloadVersion</span></span>|<span data-ttu-id="09ab6-163">Int32</span><span class="sxs-lookup"><span data-stu-id="09ab6-163">Int32</span></span>|<span data-ttu-id="09ab6-164">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-164">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-165">status</span><span class="sxs-lookup"><span data-stu-id="09ab6-165">status</span></span>|<span data-ttu-id="09ab6-166">Int32</span><span class="sxs-lookup"><span data-stu-id="09ab6-166">Int32</span></span>|<span data-ttu-id="09ab6-167">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-167">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-168">createdTime</span><span class="sxs-lookup"><span data-stu-id="09ab6-168">createdTime</span></span>|<span data-ttu-id="09ab6-169">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="09ab6-169">DateTimeOffset</span></span>|<span data-ttu-id="09ab6-170">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-170">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-171">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="09ab6-171">lastModifiedTime</span></span>|<span data-ttu-id="09ab6-172">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="09ab6-172">DateTimeOffset</span></span>|<span data-ttu-id="09ab6-173">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-173">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-174">eTag</span><span class="sxs-lookup"><span data-stu-id="09ab6-174">eTag</span></span>|<span data-ttu-id="09ab6-175">String</span><span class="sxs-lookup"><span data-stu-id="09ab6-175">String</span></span>|<span data-ttu-id="09ab6-176">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-176">Not yet documented</span></span>|
-|<span data-ttu-id="09ab6-177">isDeleted</span><span class="sxs-lookup"><span data-stu-id="09ab6-177">isDeleted</span></span>|<span data-ttu-id="09ab6-178">Boolean</span><span class="sxs-lookup"><span data-stu-id="09ab6-178">Boolean</span></span>|<span data-ttu-id="09ab6-179">尚未记录</span><span class="sxs-lookup"><span data-stu-id="09ab6-179">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-133">tenantId</span><span class="sxs-lookup"><span data-stu-id="74ffd-133">tenantId</span></span>|<span data-ttu-id="74ffd-134">Guid</span><span class="sxs-lookup"><span data-stu-id="74ffd-134">Guid</span></span>|<span data-ttu-id="74ffd-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-135">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-136">userId</span><span class="sxs-lookup"><span data-stu-id="74ffd-136">userId</span></span>|<span data-ttu-id="74ffd-137">Guid</span><span class="sxs-lookup"><span data-stu-id="74ffd-137">Guid</span></span>|<span data-ttu-id="74ffd-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-138">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-139">deviceId</span><span class="sxs-lookup"><span data-stu-id="74ffd-139">deviceId</span></span>|<span data-ttu-id="74ffd-140">Guid</span><span class="sxs-lookup"><span data-stu-id="74ffd-140">Guid</span></span>|<span data-ttu-id="74ffd-141">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-141">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-142">payloadId</span><span class="sxs-lookup"><span data-stu-id="74ffd-142">payloadId</span></span>|<span data-ttu-id="74ffd-143">Guid</span><span class="sxs-lookup"><span data-stu-id="74ffd-143">Guid</span></span>|<span data-ttu-id="74ffd-144">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-144">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-145">deviceKeyThumbprint</span><span class="sxs-lookup"><span data-stu-id="74ffd-145">deviceKeyThumbprint</span></span>|<span data-ttu-id="74ffd-146">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-146">String</span></span>|<span data-ttu-id="74ffd-147">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-147">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-148">cert1PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="74ffd-148">cert1PayloadUUID</span></span>|<span data-ttu-id="74ffd-149">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-149">String</span></span>|<span data-ttu-id="74ffd-150">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-150">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-151">cert2PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="74ffd-151">cert2PayloadUUID</span></span>|<span data-ttu-id="74ffd-152">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-152">String</span></span>|<span data-ttu-id="74ffd-153">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-153">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-154">cert3PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="74ffd-154">cert3PayloadUUID</span></span>|<span data-ttu-id="74ffd-155">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-155">String</span></span>|<span data-ttu-id="74ffd-156">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-156">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-157">plistTemplate</span><span class="sxs-lookup"><span data-stu-id="74ffd-157">plistTemplate</span></span>|<span data-ttu-id="74ffd-158">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-158">String</span></span>|<span data-ttu-id="74ffd-159">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-159">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-160">encryptedBlob</span><span class="sxs-lookup"><span data-stu-id="74ffd-160">encryptedBlob</span></span>|<span data-ttu-id="74ffd-161">Binary</span><span class="sxs-lookup"><span data-stu-id="74ffd-161">Binary</span></span>|<span data-ttu-id="74ffd-162">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-162">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-163">payloadVersion</span><span class="sxs-lookup"><span data-stu-id="74ffd-163">payloadVersion</span></span>|<span data-ttu-id="74ffd-164">Int32</span><span class="sxs-lookup"><span data-stu-id="74ffd-164">Int32</span></span>|<span data-ttu-id="74ffd-165">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-165">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-166">status</span><span class="sxs-lookup"><span data-stu-id="74ffd-166">status</span></span>|<span data-ttu-id="74ffd-167">Int32</span><span class="sxs-lookup"><span data-stu-id="74ffd-167">Int32</span></span>|<span data-ttu-id="74ffd-168">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-168">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-169">createdTime</span><span class="sxs-lookup"><span data-stu-id="74ffd-169">createdTime</span></span>|<span data-ttu-id="74ffd-170">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="74ffd-170">DateTimeOffset</span></span>|<span data-ttu-id="74ffd-171">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-171">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-172">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="74ffd-172">lastModifiedTime</span></span>|<span data-ttu-id="74ffd-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="74ffd-173">DateTimeOffset</span></span>|<span data-ttu-id="74ffd-174">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-174">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-175">eTag</span><span class="sxs-lookup"><span data-stu-id="74ffd-175">eTag</span></span>|<span data-ttu-id="74ffd-176">String</span><span class="sxs-lookup"><span data-stu-id="74ffd-176">String</span></span>|<span data-ttu-id="74ffd-177">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-177">Not yet documented</span></span>|
+|<span data-ttu-id="74ffd-178">isDeleted</span><span class="sxs-lookup"><span data-stu-id="74ffd-178">isDeleted</span></span>|<span data-ttu-id="74ffd-179">Boolean</span><span class="sxs-lookup"><span data-stu-id="74ffd-179">Boolean</span></span>|<span data-ttu-id="74ffd-180">尚未记录</span><span class="sxs-lookup"><span data-stu-id="74ffd-180">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="09ab6-180">响应</span><span class="sxs-lookup"><span data-stu-id="09ab6-180">Response</span></span>
-<span data-ttu-id="09ab6-181">如果成功，此方法在响应`201 Created`正文中返回响应代码和[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象。</span><span class="sxs-lookup"><span data-stu-id="09ab6-181">If successful, this method returns a `201 Created` response code and a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="74ffd-181">响应</span><span class="sxs-lookup"><span data-stu-id="74ffd-181">Response</span></span>
+<span data-ttu-id="74ffd-182">如果成功，此方法在响应`201 Created`正文中返回响应代码和[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象。</span><span class="sxs-lookup"><span data-stu-id="74ffd-182">If successful, this method returns a `201 Created` response code and a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09ab6-182">示例</span><span class="sxs-lookup"><span data-stu-id="09ab6-182">Example</span></span>
+## <a name="example"></a><span data-ttu-id="74ffd-183">示例</span><span class="sxs-lookup"><span data-stu-id="74ffd-183">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="09ab6-183">请求</span><span class="sxs-lookup"><span data-stu-id="09ab6-183">Request</span></span>
-<span data-ttu-id="09ab6-184">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="09ab6-184">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="74ffd-184">请求</span><span class="sxs-lookup"><span data-stu-id="74ffd-184">Request</span></span>
+<span data-ttu-id="74ffd-185">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="74ffd-185">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/onPremEncryptedPayloads
 Content-type: application/json
@@ -103,8 +105,8 @@ Content-length: 781
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="09ab6-185">响应</span><span class="sxs-lookup"><span data-stu-id="09ab6-185">Response</span></span>
-<span data-ttu-id="09ab6-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="09ab6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="74ffd-186">响应</span><span class="sxs-lookup"><span data-stu-id="74ffd-186">Response</span></span>
+<span data-ttu-id="74ffd-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="74ffd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

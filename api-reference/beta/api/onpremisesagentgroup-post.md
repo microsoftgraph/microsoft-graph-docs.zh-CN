@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2fe83a3a282c000f7181c9d40272415c4a3e1be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9deb0589ee8b0dd11e09b9a1eb0e80f0f82562e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456463"
 ---
-# <a name="create-onpremisesagentgroup"></a><span data-ttu-id="f1512-103">创建 onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="f1512-103">Create onPremisesAgentGroup</span></span>
+# <a name="create-onpremisesagentgroup"></a><span data-ttu-id="c8853-103">创建 onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="c8853-103">Create onPremisesAgentGroup</span></span>
+
+<span data-ttu-id="c8853-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c8853-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f1512-104">创建新的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f1512-104">Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="c8853-105">创建新的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c8853-105">Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f1512-105">权限</span><span class="sxs-lookup"><span data-stu-id="f1512-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8853-106">权限</span><span class="sxs-lookup"><span data-stu-id="c8853-106">Permissions</span></span>
 
-<span data-ttu-id="f1512-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1512-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c8853-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c8853-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f1512-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1512-108">Permission type</span></span>                        | <span data-ttu-id="f1512-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1512-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c8853-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c8853-109">Permission type</span></span>                        | <span data-ttu-id="c8853-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c8853-110">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f1512-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1512-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f1512-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="f1512-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="f1512-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1512-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1512-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1512-113">Not supported.</span></span> |
-| <span data-ttu-id="f1512-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1512-114">Application</span></span>                            | <span data-ttu-id="f1512-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1512-115">Not supported.</span></span> |
+|<span data-ttu-id="c8853-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c8853-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c8853-112">OnPremisesPublishingProfiles.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c8853-112">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="c8853-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c8853-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8853-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8853-114">Not supported.</span></span> |
+| <span data-ttu-id="c8853-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c8853-115">Application</span></span>                            | <span data-ttu-id="c8853-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8853-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f1512-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1512-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8853-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c8853-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,15 +38,15 @@ ms.locfileid: "36342591"
 POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f1512-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f1512-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c8853-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="c8853-118">Request headers</span></span>
 
-| <span data-ttu-id="f1512-118">名称</span><span class="sxs-lookup"><span data-stu-id="f1512-118">Name</span></span>          | <span data-ttu-id="f1512-119">说明</span><span class="sxs-lookup"><span data-stu-id="f1512-119">Description</span></span>   |
+| <span data-ttu-id="c8853-119">名称</span><span class="sxs-lookup"><span data-stu-id="c8853-119">Name</span></span>          | <span data-ttu-id="c8853-120">说明</span><span class="sxs-lookup"><span data-stu-id="c8853-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f1512-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1512-120">Authorization</span></span> | <span data-ttu-id="f1512-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="f1512-121">Bearer {token}</span></span> |
+| <span data-ttu-id="c8853-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c8853-121">Authorization</span></span> | <span data-ttu-id="c8853-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="c8853-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f1512-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="f1512-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8853-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="c8853-123">Request body</span></span>
 
-<span data-ttu-id="f1512-123">在请求正文中, 提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f1512-123">In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="c8853-124">在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c8853-124">In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
 ```json
 {
@@ -52,17 +54,17 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="f1512-124">响应</span><span class="sxs-lookup"><span data-stu-id="f1512-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c8853-125">响应</span><span class="sxs-lookup"><span data-stu-id="c8853-125">Response</span></span>
 
-<span data-ttu-id="f1512-125">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f1512-125">If successful, this method returns a `201 Created` response code and an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
+<span data-ttu-id="c8853-126">如果成功，此方法在响应`201 Created`正文中返回响应代码和[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c8853-126">If successful, this method returns a `201 Created` response code and an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f1512-126">示例</span><span class="sxs-lookup"><span data-stu-id="f1512-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c8853-127">示例</span><span class="sxs-lookup"><span data-stu-id="c8853-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f1512-127">请求</span><span class="sxs-lookup"><span data-stu-id="f1512-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c8853-128">请求</span><span class="sxs-lookup"><span data-stu-id="c8853-128">Request</span></span>
 
-<span data-ttu-id="f1512-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f1512-128">The following is an example of the request.</span></span>
+<span data-ttu-id="c8853-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c8853-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f1512-129">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f1512-129">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8853-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8853-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagent_from_onpremisesagentgroup"
@@ -71,18 +73,18 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f1512-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f1512-130">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8853-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8853-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagent-from-onpremisesagentgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f1512-131">目标-C</span><span class="sxs-lookup"><span data-stu-id="f1512-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8853-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8853-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagent-from-onpremisesagentgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="f1512-132">在请求正文中, 提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f1512-132">In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="c8853-133">在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c8853-133">In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
 ```json
 {
@@ -90,11 +92,11 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f1512-133">响应</span><span class="sxs-lookup"><span data-stu-id="f1512-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c8853-134">响应</span><span class="sxs-lookup"><span data-stu-id="c8853-134">Response</span></span>
 
-<span data-ttu-id="f1512-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f1512-134">The following is an example of the response.</span></span>
+<span data-ttu-id="c8853-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c8853-135">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f1512-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f1512-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c8853-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c8853-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

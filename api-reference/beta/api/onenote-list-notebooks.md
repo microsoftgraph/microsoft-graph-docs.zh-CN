@@ -5,28 +5,30 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f887e5767212fe756b99a5020f36ec8b63d2613a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 730dbf052a0633fd61392d8542f4c321ac3c9b19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723866"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456570"
 ---
-# <a name="list-notebooks"></a><span data-ttu-id="4bbe4-103">列出笔记本</span><span class="sxs-lookup"><span data-stu-id="4bbe4-103">List notebooks</span></span>
+# <a name="list-notebooks"></a><span data-ttu-id="6122a-103">列出笔记本</span><span class="sxs-lookup"><span data-stu-id="6122a-103">List notebooks</span></span>
+
+<span data-ttu-id="6122a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="6122a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4bbe4-104">检索 [notebook](../resources/notebook.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-104">Retrieve a list of [notebook](../resources/notebook.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4bbe4-105">权限</span><span class="sxs-lookup"><span data-stu-id="4bbe4-105">Permissions</span></span>
-<span data-ttu-id="4bbe4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6122a-105">检索 [notebook](../resources/notebook.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="6122a-105">Retrieve a list of [notebook](../resources/notebook.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6122a-106">权限</span><span class="sxs-lookup"><span data-stu-id="6122a-106">Permissions</span></span>
+<span data-ttu-id="6122a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6122a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4bbe4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4bbe4-108">Permission type</span></span>      | <span data-ttu-id="4bbe4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4bbe4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6122a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6122a-109">Permission type</span></span>      | <span data-ttu-id="6122a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6122a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4bbe4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4bbe4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4bbe4-111">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4bbe4-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4bbe4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4bbe4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4bbe4-113">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4bbe4-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="4bbe4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4bbe4-114">Application</span></span> | <span data-ttu-id="4bbe4-115">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4bbe4-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="6122a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6122a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6122a-112">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6122a-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6122a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6122a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6122a-114">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6122a-114">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="6122a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6122a-115">Application</span></span> | <span data-ttu-id="6122a-116">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6122a-116">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4bbe4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4bbe4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6122a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6122a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks
@@ -34,30 +36,30 @@ GET /users/{id | userPrincipalName}/onenote/notebooks
 GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4bbe4-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4bbe4-117">Optional query parameters</span></span>
-<span data-ttu-id="4bbe4-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6122a-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6122a-118">Optional query parameters</span></span>
+<span data-ttu-id="6122a-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6122a-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="4bbe4-119">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-119">The default sort order is `name asc`.</span></span> 
+<span data-ttu-id="6122a-120">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="6122a-120">The default sort order is `name asc`.</span></span> 
 
-<span data-ttu-id="4bbe4-120">笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-120">Valid `expand` values for notebooks are `sections` and `sectionGroups`.</span></span>
+<span data-ttu-id="6122a-121">笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。</span><span class="sxs-lookup"><span data-stu-id="6122a-121">Valid `expand` values for notebooks are `sections` and `sectionGroups`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4bbe4-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4bbe4-121">Request headers</span></span>
-| <span data-ttu-id="4bbe4-122">名称</span><span class="sxs-lookup"><span data-stu-id="4bbe4-122">Name</span></span>       | <span data-ttu-id="4bbe4-123">类型</span><span class="sxs-lookup"><span data-stu-id="4bbe4-123">Type</span></span> | <span data-ttu-id="4bbe4-124">说明</span><span class="sxs-lookup"><span data-stu-id="4bbe4-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6122a-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="6122a-122">Request headers</span></span>
+| <span data-ttu-id="6122a-123">名称</span><span class="sxs-lookup"><span data-stu-id="6122a-123">Name</span></span>       | <span data-ttu-id="6122a-124">类型</span><span class="sxs-lookup"><span data-stu-id="6122a-124">Type</span></span> | <span data-ttu-id="6122a-125">说明</span><span class="sxs-lookup"><span data-stu-id="6122a-125">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="4bbe4-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4bbe4-125">Authorization</span></span>  | <span data-ttu-id="4bbe4-126">string</span><span class="sxs-lookup"><span data-stu-id="4bbe4-126">string</span></span>  | <span data-ttu-id="4bbe4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4bbe4-129">接受</span><span class="sxs-lookup"><span data-stu-id="4bbe4-129">Accept</span></span> | <span data-ttu-id="4bbe4-130">string</span><span class="sxs-lookup"><span data-stu-id="4bbe4-130">string</span></span> | `application/json` |
+| <span data-ttu-id="6122a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6122a-126">Authorization</span></span>  | <span data-ttu-id="6122a-127">string</span><span class="sxs-lookup"><span data-stu-id="6122a-127">string</span></span>  | <span data-ttu-id="6122a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6122a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6122a-130">接受</span><span class="sxs-lookup"><span data-stu-id="6122a-130">Accept</span></span> | <span data-ttu-id="6122a-131">string</span><span class="sxs-lookup"><span data-stu-id="6122a-131">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="4bbe4-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="4bbe4-131">Request body</span></span>
-<span data-ttu-id="4bbe4-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6122a-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="6122a-132">Request body</span></span>
+<span data-ttu-id="6122a-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6122a-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4bbe4-133">响应</span><span class="sxs-lookup"><span data-stu-id="4bbe4-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6122a-134">响应</span><span class="sxs-lookup"><span data-stu-id="6122a-134">Response</span></span>
 
-<span data-ttu-id="4bbe4-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [notebook](../resources/notebook.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-134">If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4bbe4-135">示例</span><span class="sxs-lookup"><span data-stu-id="4bbe4-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4bbe4-136">请求</span><span class="sxs-lookup"><span data-stu-id="4bbe4-136">Request</span></span>
-<span data-ttu-id="4bbe4-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-137">Here is an example of the request.</span></span>
+<span data-ttu-id="6122a-135">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [notebook](../resources/notebook.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="6122a-135">If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6122a-136">示例</span><span class="sxs-lookup"><span data-stu-id="6122a-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6122a-137">请求</span><span class="sxs-lookup"><span data-stu-id="6122a-137">Request</span></span>
+<span data-ttu-id="6122a-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6122a-138">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4bbe4-138">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="4bbe4-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6122a-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="6122a-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_notebooks"
@@ -65,22 +67,22 @@ GET /sites/{id}/onenote/notebooks
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4bbe4-139">C#</span><span class="sxs-lookup"><span data-stu-id="4bbe4-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6122a-140">C#</span><span class="sxs-lookup"><span data-stu-id="6122a-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebooks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4bbe4-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4bbe4-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6122a-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6122a-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebooks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4bbe4-141">目标-C</span><span class="sxs-lookup"><span data-stu-id="4bbe4-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6122a-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6122a-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-notebooks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="4bbe4-142">响应</span><span class="sxs-lookup"><span data-stu-id="4bbe4-142">Response</span></span>
-<span data-ttu-id="4bbe4-p103">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4bbe4-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6122a-143">响应</span><span class="sxs-lookup"><span data-stu-id="6122a-143">Response</span></span>
+<span data-ttu-id="6122a-p103">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6122a-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,35 +5,37 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da9c288a9dd678719bacfc6c9599f81d1cf509c2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 054bde1cc3f59d33898eada01ba3cd740beaa9c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939323"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457914"
 ---
-# <a name="get-windowsupdatestate"></a><span data-ttu-id="5ddef-103">获取 windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="5ddef-103">Get windowsUpdateState</span></span>
+# <a name="get-windowsupdatestate"></a><span data-ttu-id="17481-103">获取 windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="17481-103">Get windowsUpdateState</span></span>
 
-> <span data-ttu-id="5ddef-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5ddef-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="17481-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="17481-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5ddef-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5ddef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="17481-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="17481-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5ddef-106">读取[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5ddef-106">Read properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
+> <span data-ttu-id="17481-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="17481-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5ddef-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="5ddef-107">Prerequisites</span></span>
-<span data-ttu-id="5ddef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ddef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="17481-107">读取[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="17481-107">Read properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
 
-|<span data-ttu-id="5ddef-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ddef-110">Permission type</span></span>|<span data-ttu-id="5ddef-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5ddef-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="17481-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="17481-108">Prerequisites</span></span>
+<span data-ttu-id="17481-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17481-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="17481-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="17481-111">Permission type</span></span>|<span data-ttu-id="17481-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="17481-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ddef-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ddef-112">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="5ddef-113">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="5ddef-113">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="5ddef-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5ddef-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-| <span data-ttu-id="5ddef-115">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="5ddef-115">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="5ddef-116">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5ddef-116">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="5ddef-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ddef-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5ddef-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ddef-118">Not supported.</span></span>|
-|<span data-ttu-id="5ddef-119">Application</span><span class="sxs-lookup"><span data-stu-id="5ddef-119">Application</span></span>||
-| <span data-ttu-id="5ddef-120">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="5ddef-120">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="5ddef-121">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5ddef-121">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-| <span data-ttu-id="5ddef-122">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="5ddef-122">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="5ddef-123">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5ddef-123">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="17481-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17481-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="17481-114">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="17481-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="17481-115">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="17481-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+| <span data-ttu-id="17481-116">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="17481-116">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="17481-117">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="17481-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="17481-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17481-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="17481-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="17481-119">Not supported.</span></span>|
+|<span data-ttu-id="17481-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="17481-120">Application</span></span>||
+| <span data-ttu-id="17481-121">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="17481-121">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="17481-122">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="17481-122">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+| <span data-ttu-id="17481-123">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="17481-123">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="17481-124">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="17481-124">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5ddef-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ddef-124">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17481-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17481-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,31 +44,31 @@ ms.locfileid: "39939323"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates/{windowsUpdateStateId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5ddef-125">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5ddef-125">Optional query parameters</span></span>
-<span data-ttu-id="5ddef-126">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5ddef-126">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="17481-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="17481-126">Optional query parameters</span></span>
+<span data-ttu-id="17481-127">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="17481-127">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5ddef-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ddef-127">Request headers</span></span>
-|<span data-ttu-id="5ddef-128">标头</span><span class="sxs-lookup"><span data-stu-id="5ddef-128">Header</span></span>|<span data-ttu-id="5ddef-129">值</span><span class="sxs-lookup"><span data-stu-id="5ddef-129">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="17481-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="17481-128">Request headers</span></span>
+|<span data-ttu-id="17481-129">标头</span><span class="sxs-lookup"><span data-stu-id="17481-129">Header</span></span>|<span data-ttu-id="17481-130">值</span><span class="sxs-lookup"><span data-stu-id="17481-130">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ddef-130">授权</span><span class="sxs-lookup"><span data-stu-id="5ddef-130">Authorization</span></span>|<span data-ttu-id="5ddef-131">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5ddef-131">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5ddef-132">接受</span><span class="sxs-lookup"><span data-stu-id="5ddef-132">Accept</span></span>|<span data-ttu-id="5ddef-133">application/json</span><span class="sxs-lookup"><span data-stu-id="5ddef-133">application/json</span></span>|
+|<span data-ttu-id="17481-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="17481-131">Authorization</span></span>|<span data-ttu-id="17481-132">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="17481-132">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="17481-133">接受</span><span class="sxs-lookup"><span data-stu-id="17481-133">Accept</span></span>|<span data-ttu-id="17481-134">application/json</span><span class="sxs-lookup"><span data-stu-id="17481-134">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5ddef-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ddef-134">Request body</span></span>
-<span data-ttu-id="5ddef-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5ddef-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17481-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="17481-135">Request body</span></span>
+<span data-ttu-id="17481-136">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17481-136">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5ddef-136">响应</span><span class="sxs-lookup"><span data-stu-id="5ddef-136">Response</span></span>
-<span data-ttu-id="5ddef-137">如果成功，此方法在响应`200 OK`正文中返回响应代码和[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5ddef-137">If successful, this method returns a `200 OK` response code and [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="17481-137">响应</span><span class="sxs-lookup"><span data-stu-id="17481-137">Response</span></span>
+<span data-ttu-id="17481-138">如果成功，此方法在响应`200 OK`正文中返回响应代码和[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="17481-138">If successful, this method returns a `200 OK` response code and [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5ddef-138">示例</span><span class="sxs-lookup"><span data-stu-id="5ddef-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="17481-139">示例</span><span class="sxs-lookup"><span data-stu-id="17481-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5ddef-139">请求</span><span class="sxs-lookup"><span data-stu-id="5ddef-139">Request</span></span>
-<span data-ttu-id="5ddef-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ddef-140">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="17481-140">请求</span><span class="sxs-lookup"><span data-stu-id="17481-140">Request</span></span>
+<span data-ttu-id="17481-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="17481-141">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates/{windowsUpdateStateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="5ddef-141">响应</span><span class="sxs-lookup"><span data-stu-id="5ddef-141">Response</span></span>
-<span data-ttu-id="5ddef-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5ddef-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="17481-142">响应</span><span class="sxs-lookup"><span data-stu-id="17481-142">Response</span></span>
+<span data-ttu-id="17481-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="17481-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

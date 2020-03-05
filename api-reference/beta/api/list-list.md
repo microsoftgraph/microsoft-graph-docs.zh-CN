@@ -6,65 +6,67 @@ title: 列出网站中的 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0e365b1ee5a1f9bed585f2de557f24279c044b86
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 296070a5a41172c256f103d5223c6d118ce5a498
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457134"
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="bdd5f-103">枚举网站中的列表</span><span class="sxs-lookup"><span data-stu-id="bdd5f-103">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="566bd-103">枚举网站中的列表</span><span class="sxs-lookup"><span data-stu-id="566bd-103">Enumerate lists in a site</span></span>
+
+<span data-ttu-id="566bd-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="566bd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bdd5f-104">获取 [site][] 的 [lists][] 的集合。</span><span class="sxs-lookup"><span data-stu-id="bdd5f-104">Get the collection of [lists][] for a [site][].</span></span>
+<span data-ttu-id="566bd-105">获取 [site][] 的 [lists][] 的集合。</span><span class="sxs-lookup"><span data-stu-id="566bd-105">Get the collection of [lists][] for a [site][].</span></span>
 
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="bdd5f-107">权限</span><span class="sxs-lookup"><span data-stu-id="bdd5f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="566bd-108">权限</span><span class="sxs-lookup"><span data-stu-id="566bd-108">Permissions</span></span>
 
-<span data-ttu-id="bdd5f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bdd5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="566bd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="566bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bdd5f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdd5f-110">Permission type</span></span>      | <span data-ttu-id="bdd5f-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdd5f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="566bd-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="566bd-111">Permission type</span></span>      | <span data-ttu-id="566bd-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="566bd-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bdd5f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdd5f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bdd5f-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd5f-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bdd5f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdd5f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdd5f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdd5f-115">Not supported.</span></span>    |
-|<span data-ttu-id="bdd5f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdd5f-116">Application</span></span> | <span data-ttu-id="bdd5f-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd5f-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="566bd-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="566bd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="566bd-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="566bd-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="566bd-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="566bd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="566bd-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="566bd-116">Not supported.</span></span>    |
+|<span data-ttu-id="566bd-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="566bd-117">Application</span></span> | <span data-ttu-id="566bd-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="566bd-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bdd5f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bdd5f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="566bd-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="566bd-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/lists
 ```
 
-## <a name="example"></a><span data-ttu-id="bdd5f-119">示例</span><span class="sxs-lookup"><span data-stu-id="bdd5f-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="566bd-120">示例</span><span class="sxs-lookup"><span data-stu-id="566bd-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bdd5f-120">请求</span><span class="sxs-lookup"><span data-stu-id="bdd5f-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="566bd-121">请求</span><span class="sxs-lookup"><span data-stu-id="566bd-121">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="bdd5f-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="bdd5f-121">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="566bd-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="566bd-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="bdd5f-122">C#</span><span class="sxs-lookup"><span data-stu-id="bdd5f-122">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="566bd-123">C#</span><span class="sxs-lookup"><span data-stu-id="566bd-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bdd5f-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bdd5f-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="566bd-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="566bd-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bdd5f-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bdd5f-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="566bd-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="566bd-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="bdd5f-125">响应</span><span class="sxs-lookup"><span data-stu-id="bdd5f-125">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="566bd-126">响应</span><span class="sxs-lookup"><span data-stu-id="566bd-126">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -98,10 +100,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="bdd5f-126">注解</span><span class="sxs-lookup"><span data-stu-id="bdd5f-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="566bd-127">注解</span><span class="sxs-lookup"><span data-stu-id="566bd-127">Remarks</span></span>
 
-<span data-ttu-id="bdd5f-127">默认情况下，将隐藏包含 [system][] Facet 的列表。</span><span class="sxs-lookup"><span data-stu-id="bdd5f-127">Lists with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="bdd5f-128">若要列出它们，请在 `$select` 语句中添加 `system`。</span><span class="sxs-lookup"><span data-stu-id="bdd5f-128">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="566bd-128">默认情况下，将隐藏包含 [system][] Facet 的列表。</span><span class="sxs-lookup"><span data-stu-id="566bd-128">Lists with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="566bd-129">若要列出它们，请在 `$select` 语句中添加 `system`。</span><span class="sxs-lookup"><span data-stu-id="566bd-129">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 

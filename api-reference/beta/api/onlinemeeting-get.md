@@ -5,60 +5,62 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 649c6d658206f684efde8d5bc82b26e7d0ef6216
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 58c995a9ca6be7029b1a5510023160c97cadb735
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913091"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456502"
 ---
-# <a name="get-onlinemeeting"></a><span data-ttu-id="1e7ea-103">获取 onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="1e7ea-103">Get onlineMeeting</span></span>
+# <a name="get-onlinemeeting"></a><span data-ttu-id="5501a-103">获取 onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="5501a-103">Get onlineMeeting</span></span>
+
+<span data-ttu-id="5501a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5501a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e7ea-104">检索[onlineMeeting](../resources/onlinemeeting.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-104">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="5501a-105">检索[onlineMeeting](../resources/onlinemeeting.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5501a-105">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-> <span data-ttu-id="1e7ea-105">**注意：** 目前`GET`仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-105">**Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
+> <span data-ttu-id="5501a-106">**注意：** 目前`GET`仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。</span><span class="sxs-lookup"><span data-stu-id="5501a-106">**Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1e7ea-106">权限</span><span class="sxs-lookup"><span data-stu-id="1e7ea-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5501a-107">权限</span><span class="sxs-lookup"><span data-stu-id="5501a-107">Permissions</span></span>
 
-<span data-ttu-id="1e7ea-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5501a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5501a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1e7ea-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1e7ea-109">Permission type</span></span>                        | <span data-ttu-id="1e7ea-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1e7ea-110">Permissions (from least to most privileged)</span></span>           |
+| <span data-ttu-id="5501a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5501a-110">Permission type</span></span>                        | <span data-ttu-id="5501a-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5501a-111">Permissions (from least to most privileged)</span></span>           |
 |:---------------------------------------|:------------------------------------------------------|
-| <span data-ttu-id="1e7ea-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1e7ea-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1e7ea-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-112">Not Supported.</span></span>                                        |
-| <span data-ttu-id="1e7ea-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1e7ea-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e7ea-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-114">Not Supported.</span></span>                                        |
-| <span data-ttu-id="1e7ea-115">应用</span><span class="sxs-lookup"><span data-stu-id="1e7ea-115">Application</span></span>                            | <span data-ttu-id="1e7ea-116">OnlineMeetings.Read.All</span><span class="sxs-lookup"><span data-stu-id="1e7ea-116">OnlineMeetings.Read.All</span></span>                               |
+| <span data-ttu-id="5501a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5501a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="5501a-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="5501a-113">Not Supported.</span></span>                                        |
+| <span data-ttu-id="5501a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5501a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5501a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="5501a-115">Not Supported.</span></span>                                        |
+| <span data-ttu-id="5501a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="5501a-116">Application</span></span>                            | <span data-ttu-id="5501a-117">OnlineMeetings.Read.All</span><span class="sxs-lookup"><span data-stu-id="5501a-117">OnlineMeetings.Read.All</span></span>                               |
 
-## <a name="http-request"></a><span data-ttu-id="1e7ea-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1e7ea-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5501a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5501a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ```
-> <span data-ttu-id="1e7ea-118">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-118">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="1e7ea-119">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-119">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="5501a-119">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="5501a-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="5501a-120">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="5501a-120">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1e7ea-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1e7ea-120">Optional query parameters</span></span>
-<span data-ttu-id="1e7ea-121">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-121">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5501a-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5501a-121">Optional query parameters</span></span>
+<span data-ttu-id="5501a-122">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5501a-122">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1e7ea-122">请求头</span><span class="sxs-lookup"><span data-stu-id="1e7ea-122">Request headers</span></span>
-| <span data-ttu-id="1e7ea-123">名称</span><span class="sxs-lookup"><span data-stu-id="1e7ea-123">Name</span></span>          | <span data-ttu-id="1e7ea-124">说明</span><span class="sxs-lookup"><span data-stu-id="1e7ea-124">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="5501a-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="5501a-123">Request headers</span></span>
+| <span data-ttu-id="5501a-124">名称</span><span class="sxs-lookup"><span data-stu-id="5501a-124">Name</span></span>          | <span data-ttu-id="5501a-125">说明</span><span class="sxs-lookup"><span data-stu-id="5501a-125">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="1e7ea-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e7ea-125">Authorization</span></span> | <span data-ttu-id="1e7ea-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5501a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5501a-126">Authorization</span></span> | <span data-ttu-id="5501a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5501a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1e7ea-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="1e7ea-128">Request body</span></span>
-<span data-ttu-id="1e7ea-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5501a-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="5501a-129">Request body</span></span>
+<span data-ttu-id="5501a-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5501a-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e7ea-130">响应</span><span class="sxs-lookup"><span data-stu-id="1e7ea-130">Response</span></span>
-<span data-ttu-id="1e7ea-131">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-131">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5501a-131">响应</span><span class="sxs-lookup"><span data-stu-id="5501a-131">Response</span></span>
+<span data-ttu-id="5501a-132">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5501a-132">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1e7ea-132">示例</span><span class="sxs-lookup"><span data-stu-id="1e7ea-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5501a-133">示例</span><span class="sxs-lookup"><span data-stu-id="5501a-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1e7ea-133">请求</span><span class="sxs-lookup"><span data-stu-id="1e7ea-133">Request</span></span>
-<span data-ttu-id="1e7ea-134">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-134">The following example shows the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5501a-134">请求</span><span class="sxs-lookup"><span data-stu-id="5501a-134">Request</span></span>
+<span data-ttu-id="5501a-135">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5501a-135">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1e7ea-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="1e7ea-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5501a-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="5501a-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
@@ -66,24 +68,24 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1e7ea-136">C#</span><span class="sxs-lookup"><span data-stu-id="1e7ea-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5501a-137">C#</span><span class="sxs-lookup"><span data-stu-id="5501a-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1e7ea-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1e7ea-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5501a-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5501a-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1e7ea-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1e7ea-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5501a-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5501a-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1e7ea-139">响应</span><span class="sxs-lookup"><span data-stu-id="1e7ea-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5501a-140">响应</span><span class="sxs-lookup"><span data-stu-id="5501a-140">Response</span></span>
 
-> <span data-ttu-id="1e7ea-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5501a-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5501a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
