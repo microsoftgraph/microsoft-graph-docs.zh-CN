@@ -6,14 +6,16 @@ title: 上传小文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 31f5c5b472ffa17e643bd118a0111915ab2bf67a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d2b8ec57487d5ffe165645c5046a0edbc5347b9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320943"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432416"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 DriveItem 的内容
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +80,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>响应
 
-如果成功, 此方法在响应正文中返回新创建或更新的文件的[driveItem][item-resource]资源。
+如果成功，此方法在响应正文中返回新创建或更新的文件的[driveItem][item-resource]资源。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -99,7 +101,7 @@ Content-Type: application/json
 此示例将文件的内容替换为已知 ID。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -108,11 +110,11 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

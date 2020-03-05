@@ -6,20 +6,22 @@ title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 495a8907eec8040e4a9690835aa6068c025988ec
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d24688e5ecd5affa938dc2acc52112783d7f2181
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36717989"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432290"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[driveItem](../resources/driveitem.md)的特定版本的内容。 
 
->**注意:** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
+>**注意：** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -59,21 +61,21 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -96,7 +98,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当您的应用程序检索文件的可用版本列表时, 将返回[driveItemVersion](../resources/driveitemversion.md)资源, 它提供有关特定版本的可用信息。
+当您的应用程序检索文件的可用版本列表时，将返回[driveItemVersion](../resources/driveitemversion.md)资源，它提供有关特定版本的可用信息。
 
 <!--
 {

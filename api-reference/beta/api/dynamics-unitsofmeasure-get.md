@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0752262adbeae619bf24e8056e3c8f369654ea1b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7e8ff96f93d14659970bebd66f018e50aea3ab12
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791181"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428143"
 ---
 # <a name="get-unitsofmeasure"></a>获取 unitsOfMeasure
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索 Dynamics 365 Business Central 的度量单位对象的属性和关系。
 
 ## <a name="permissions"></a>权限
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{i
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

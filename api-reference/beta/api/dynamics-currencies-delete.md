@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6c2b5235cdc8f841ad7fb11c5319d236f727d4da
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 8900330ed7f7f62aa9f2ba3de05aef01044cbbeb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791839"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431041"
 ---
 # <a name="delete-currencies"></a>删除货币
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除货币对象。
 
 ## <a name="permissions"></a>权限
@@ -39,7 +44,7 @@ DELETE /financials/companies/{id}/currencies/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**货币**中的当前标记不匹配，则**货币**将不会
+|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**货币**中的当前标记不匹配，则**货币**将不会
  updated. |
 
 ## <a name="request-body"></a>请求正文

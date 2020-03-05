@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b5395ab656d0a5e44b4f3a45f7c136009c5bcc61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93dee23d306ccada8d46d5bd91738344f5bd6bf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955790"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427842"
 ---
 # <a name="add-educationcategories"></a>添加 educationCategories
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供要添加到此工作分配的现有[educationCategory](../resources/educationcategory.md)对象的 odata.id。
+在请求正文中，提供要添加到此工作分配的现有[educationCategory](../resources/educationcategory.md)对象的 odata.id。
 
 
 ## <a name="response"></a>响应
@@ -62,7 +64,7 @@ Content-length: 212
 }
 
 ```
-在请求正文中, 提供要添加到此工作分配的现有[educationCategory](../resources/educationcategory.md)对象的 odata.id。
+在请求正文中，提供要添加到此工作分配的现有[educationCategory](../resources/educationcategory.md)对象的 odata.id。
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 

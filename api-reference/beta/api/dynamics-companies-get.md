@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4555335d4f66dc86dec09debdce54396ce2a238f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 161c4c3d295437d3a62f1cb2e97c64b3efa99aa6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431968"
 ---
 # <a name="get-companies"></a>获取公司
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索 Dynamics 365 Business Central 的 "公司" 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
@@ -23,7 +28,7 @@ ms.locfileid: "35956833"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -42,7 +47,7 @@ GET /financials/companies
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**公司**对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**公司**对象。
 
 ## <a name="example"></a>示例
 
@@ -57,7 +62,7 @@ GET https://graph.microsoft.com/beta/financials/companies
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

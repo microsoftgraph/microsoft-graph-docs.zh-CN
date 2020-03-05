@@ -6,14 +6,16 @@ title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1e9c1f2ffaa5b50b95a49d4be03ce543f12a476b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8263c675fae86a664c12f7d49967eef50c3a11cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416827"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432801"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,8 +56,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
 |类型               | string | 要创建的共享链接的类型。 "查看"、"编辑" 或 "嵌入"。                                    |
 |password           | string | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。         |
-|expirationDateTime | string | 格式为 Yyyy-mm-ddthh: MM: ssZ 的字符串表示该权限的过期时间。 |
-|scope              | 字符串 | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
+|expirationDateTime | string | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
+|scope              | string | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
 
 
 ### <a name="link-types"></a>链接类型
@@ -75,8 +77,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
-| 匿名    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。 管理员可能禁用了匿名链接支持。
-| 组织 | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
+| 匿名    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
+| 组织 | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
 
 
 ## <a name="response"></a>响应
@@ -93,7 +95,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "item_createlink"
@@ -109,15 +111,15 @@ Content-type: application/json
   "scope": "anonymous"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -157,7 +159,7 @@ OneDrive for Business 和 SharePoint 都支持公司可共享的链接。
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
 
 ```http
@@ -169,15 +171,15 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -216,7 +218,7 @@ Content-Type: application/json
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
 
 ```http
@@ -227,15 +229,15 @@ Content-Type: application/json
   "type": "embed"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

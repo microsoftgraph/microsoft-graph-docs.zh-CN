@@ -6,14 +6,16 @@ title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 914f6b5d847c6b8af5439c4b5e83f3d9f281aa65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 03bb884e8dde82c99d0aadfa2a6e925b0d6552a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432654"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,10 +48,10 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | 值 | 说明                        | 支持的源扩展名
 |:------|:-----------------------------------|---------------------------------
-| glb   | 将项目转换为 GLB 格式  | 酷、fbx、obj、往返和 stl、3mf
-| Html  | 将项目转换为 HTML 格式 | .eml、md、msg
-| .jpg   | 将项目转换为 JPG 格式  | 3g2、3gp、3gp2、3gpp、3mf、ai、arw、asf、avi、bas、bash、bat 和 cbl、bmp、c、、cmd、cr2、、crw、cs、css、csv、当前、dcm、dcm30、home.dic、dicm、dicom、dng、、、、、epi、epsf、epsi、epub、erf、fbx、fppx、glb、gif、、、、heic、heif、htm、html、.ico、icon、java、jfif、jpeg、jpg、js、json、key、log、m2ts、m4a、m4v、markdown、md、mef、mov、电影、mp3、、mp4v、mrw、msg、mts、nef、nrw、、、、、ogg、orf、pages、全景、pdf、pef、php、pict、pl、、.png、、potm、.potx、pps、ppsx、ppsxm、ppt、.pptm、.pptx、ps、ps1、psb、psd、py、raw、rb、rtf、rw1、rw2、sh、素描、sql、、、、xml、sr2、webm、xbm、xcf、、xml、
-| pdf   | 将项目转换为 PDF 格式  | doc、.docx、epub、.eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、.pptx、rtf、tif、tiff、xls、xlsm、.xlsx
+| glb   | 将项转换为 GLB 格式  | cool、fbx、obj、ply、stl、3mf
+| html  | 将项转换为 HTML 格式 | eml、md、msg
+| jpg   | 将项转换为 JPG 格式  | 3g2、3gp、3gp2、3gpp、3mf、ai、arw、asf、avi、bas、bash、bat、bmp、c、cbl、cmd、cool、cpp、cr2、crw、cs、css、csv、cur、dcm、dcm30、dic、dicm、dicom、dng、doc、docx、dwg、eml、epi、eps、epsf、epsi、epub、erf、fbx、fppx、gif、glb、h、hcp、heic、heif、htm、html、ico、icon、java、jfif、jpeg、jpg、js、json、key、log、m2ts、m4a、m4v、markdown、md、mef、mov、movie、mp3、mp4、mp4v、mrw、msg、mts、nef、nrw、numbers、obj、odp、odt、ogg、orf、pages、pano、pdf、pef、php、pict、pl、ply、png、pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、pptx、ps、ps1、psb、psd、py、raw、rb、rtf、rw1、rw2、sh、sketch、sql、sr2、stl、tif、tiff、ts、txt、vb、webm、wma、wmv、xaml、xbm、xcf、xd、xml、xpm、yaml、yml
+| pdf   | 将项转换为 PDF 格式  | doc、docx、epub、eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、pptx、rtf、tif、tiff、xls、xlsm、xlsx
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
@@ -60,21 +62,21 @@ GET /drive/root:/{path and filename}:/content?format={format}
 ## <a name="example"></a>示例
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

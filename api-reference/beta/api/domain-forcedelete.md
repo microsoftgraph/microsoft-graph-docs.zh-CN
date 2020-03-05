@@ -1,24 +1,26 @@
 ---
-title: '域: forceDelete'
+title: 域： forceDelete
 description: 使用异步操作删除域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04e0471828dd4800d978eb9460198de2fa1548ba
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 341e80864d6d0ac09f51c22a09cdec78fcea023f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417099"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433690"
 ---
-# <a name="domain-forcedelete"></a>域: forceDelete
+# <a name="domain-forcedelete"></a>域： forceDelete
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用异步操作删除域。
 
-在此操作过程中, 将执行以下操作:
+在此操作过程中，将执行以下操作：
 
 * 使用对已删除域的引用重命名用户的 UPN、EmailAddress 和 ProxyAddress。
 
@@ -26,11 +28,11 @@ ms.locfileid: "36417099"
 
 * 将应用程序的 identifierUris 重命名为对已删除的域的引用。
 
-* 如果要重命名的对象的数量大于 1000, 则返回错误。
+* 如果要重命名的对象的数量大于1000，则返回错误。
 
-* 如果要重命名的某个应用程序是多租户应用程序, 则会返回错误。
+* 如果要重命名的某个应用程序是多租户应用程序，则会返回错误。
 
-域删除完成后, 已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证域的删除, 可以执行[获取域](domain-get.md)。 如果已成功删除域, 响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证域的删除，可以执行[获取域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
 
 ## <a name="permissions"></a>权限
 
@@ -65,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用, 则不允许用户登录。<br>*True*(默认值)-已禁用作为此操作的一部分重命名的用户帐户。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|布尔| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* （默认值）-在此操作中重命名的用户帐户将被禁用。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 
@@ -74,7 +76,7 @@ POST /domains/{id}/forceDelete
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_forcedelete"
@@ -88,15 +90,15 @@ Content-length: 33
   "disableUserAccounts": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

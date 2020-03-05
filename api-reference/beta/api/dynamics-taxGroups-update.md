@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 81ed62902af155ab82a7a0671c5ec6a66cc92b7b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b6604a7e3406113276ab1f247e276c1d33d537d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791300"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428381"
 ---
 # <a name="update-taxgroups"></a>更新 taxGroups
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新 Dynamics 365 Business Central 的税务组对象的属性。
 
 ## <a name="permissions"></a>权限
@@ -39,7 +44,7 @@ PATCH /financials/companies/{id}/taxGroups/{id}
 |------|-----|
 |Authorization |Bearer {token}。必需。|
 |Content-Type  |application/json|
-|If-Match      |必需。 如果包含此请求标头，且提供的 eTag 与**taxGroups**上的当前标记不匹配，则不会更新**taxGroups** 。 |
+|If-Match      |必填。 如果包含此请求标头，且提供的 eTag 与**taxGroups**上的当前标记不匹配，则不会更新**taxGroups** 。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -65,7 +70,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 200 OK

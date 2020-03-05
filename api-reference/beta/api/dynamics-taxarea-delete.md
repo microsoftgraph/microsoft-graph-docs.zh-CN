@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4eaa4a67a644b1670c0848b304cd65c3c4344642
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d5e5f83b1d7cc900e8ac791af18c3e5c28b321eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791314"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428332"
 ---
 # <a name="delete-taxareas"></a>删除 taxAreas
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除税务区域对象。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/taxAreas/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**taxAreas**上的当前标记不匹配，则不会更新**taxAreas** 。 |
+|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**taxAreas**上的当前标记不匹配，则不会更新**taxAreas** 。 |
 
 ## <a name="request-body"></a>请求正文
 

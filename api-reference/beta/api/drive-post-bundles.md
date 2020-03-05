@@ -6,14 +6,16 @@ description: 创建 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1b3a06965e5613777f7793017e2cef9147d4fd9b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 254c0b445c8eed6d92a1b577029ff29f86039769
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416931"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433179"
 ---
 # <a name="create-bundle"></a>创建捆绑包
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,30 +45,30 @@ POST /drive/bundles
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供要创建的捆绑包的 JSON 表示形式。
+在请求正文中，提供要创建的捆绑包的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果请求成功, 则返回表示新创建的捆绑包的[driveItem](../resources/driveitem.md) 。
+如果请求成功，则返回表示新创建的捆绑包的[driveItem](../resources/driveitem.md) 。
 
-阅读 "[错误响应][error-response]" 主题, 了解有关如何返回错误的详细信息。
+阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-bundle"></a>示例 1: 创建捆绑包
+### <a name="example-1-create-a-bundle"></a>示例1：创建捆绑包
 
 下面的示例展示了如何创建基本的新包。
-此请求将创建一个名为`Just some files`的新包, 并向捆绑包中添加两个现有项。
-此捆绑包可用于与其他用户共享文件集合, 而不共享存储这些项目的文件夹。
+此请求将创建一个名为`Just some files`的新包，并向捆绑包中添加两个现有项。
+此捆绑包可用于与其他用户共享文件集合，而不共享存储这些项目的文件夹。
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
 ```json
@@ -83,15 +85,15 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,16 +117,16 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-2-create-an-album"></a>示例 2: 创建相册
+### <a name="example-2-create-an-album"></a>示例2：创建相册
 
-创建新相册的请求与此类似, 尽管在捆绑包 facet 中, 唱集属性设置为非 null 值。
+创建新相册的请求与此类似，尽管在捆绑包 facet 中，唱集属性设置为非 null 值。
 
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
 ```json
@@ -140,15 +142,15 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-album-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-album-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-album-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -173,13 +175,13 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-@Microsoft 如果将_conflictBehavior_设置为**rename** , 并且已存在具有相同名称的捆绑, 则新的捆绑名称将更新为唯一。
+@Microsoft 如果将_conflictBehavior_设置为**rename** ，并且已存在具有相同名称的捆绑，则新的捆绑名称将更新为唯一。
 OneDrive 会将一个号码追加到捆绑包名称的末尾。
 
 例如，将把 `My Day at the Beach` 重命名为 `My Day at the Beach 1`。
-如果`My Day at the Beach 1`执行此操作, 则该数字将再次递增, 直到发现唯一的捆绑名称。
+如果`My Day at the Beach 1`执行此操作，则该数字将再次递增，直到发现唯一的捆绑名称。
 
 
 [error-response]: /graph/errors

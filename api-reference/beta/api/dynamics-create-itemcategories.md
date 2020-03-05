@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cf44a683f79192d02ffe87f57b0a9d5d92bc0f27
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 3ecf5df6dbd03014ba026ba8673c9a4b2fffd5b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791993"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431478"
 ---
 # <a name="create-itemcategories"></a>创建 itemCategories
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 创建项目类别对象 Dynamics 365 Business Central。
 
 ## <a name="permissions"></a>权限
@@ -66,7 +71,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 201 Created

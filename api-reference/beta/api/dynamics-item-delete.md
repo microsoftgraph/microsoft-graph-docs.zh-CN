@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cc99d713a239ee6c5859f438045c3b5a45ccd6ed
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 62b2662400507de668b5444c57f93a137231689e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791580"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429928"
 ---
 # <a name="delete-items"></a>删除项目
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除项。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/items/{id}
 |标头       |值                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}。必需。|
-|If-Match     |必需。 如果包含此请求标头，且提供的 eTag 与**项**的当前标记不匹配，则不会更新这些**项**。 |
+|If-Match     |必填。 如果包含此请求标头，且提供的 eTag 与**项**的当前标记不匹配，则不会更新这些**项**。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

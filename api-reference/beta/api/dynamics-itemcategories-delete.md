@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f422685568c08590a0ba7c8cc7a5fe578f50d9a6
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 2d81ba9287184fbdb2328afd54b01a56a84c52ab
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791559"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429396"
 ---
 # <a name="delete-itemcategories"></a>删除 itemCategories
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除 itemCategory。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/itemCategories/{id}
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**itemCategories**上的当前标记不匹配，则不会更新**itemCategories** 。 |
+|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**itemCategories**上的当前标记不匹配，则不会更新**itemCategories** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

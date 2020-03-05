@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5a60bca82ca5bf4faa0bb69e53f154d145670219
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 3c90808de4f07e45ded7c215577fff6916a59978
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791965"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431429"
 ---
 # <a name="create-journals"></a>创建日记
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 在 Dynamics 365 Business Central 中创建日记。 
 
 ## <a name="permissions"></a>权限

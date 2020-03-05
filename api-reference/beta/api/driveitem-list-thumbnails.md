@@ -6,14 +6,16 @@ title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2bed97e65a57c4a7d46336e9dcd845780e9e8d30
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: be3c85dd72410b84b7fac49fe1e8794d56beab05
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333225"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432521"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -70,21 +72,21 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 下面是检索当前用户的 OneDrive 中某个项的可用缩略图的请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-item-thumbnails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-item-thumbnails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-item-thumbnails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,26 +120,26 @@ Content-type: application/json
 
 ## <a name="get-a-single-thumbnail"></a>获取单个缩略图
 
-通过直接在请求中对其进行寻址来检索单个缩略图和大小的元数据。
+通过在请求中直接解决来检索单个缩略图和大小的元数据。
 
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-one-thumbnail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-one-thumbnail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-one-thumbnail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -149,8 +151,8 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | 名称         | 类型   | 说明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
-| **thumb-id** | 数字 | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
-| **size**     | string | 请求获取的缩略图的大小。 可取值为下面列出的标准大小之一或自定义大小。 |
+| **thumb-id** | number | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
+| **size**     | string | 请求获取的缩略图的尺寸。 可取值为下面列出的标准大小之一或自定义大小。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -172,21 +174,21 @@ Content-Type: application/json
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,7 +197,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 
 ### <a name="response"></a>响应
 
-本服务用到缩略图 URL 的重定向进行响应。
+本服务通过到缩略图 URL 的重定向进行响应。
 
 <!-- { "blockType": "response" } -->
 
@@ -207,7 +209,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 缩略图 URL 具有缓存安全性。 如果在项发生更改后需要生成新的缩略图，URL 将会更改。
 
 
-## <a name="getting-thumbnails-while-listing-driveitems"></a>列出 DriveItem 时获取缩略图
+## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem
 
 如果检索要显示的 DriveItem 资源的列表，可以使用_ $expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
 这使你的应用可以通过一个请求同时检索缩略图和项，而不是发出多个请求。
@@ -215,21 +217,21 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-while-listing-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-while-listing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-while-listing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -280,36 +282,37 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 分辨率  | 纵横比 | 说明                                                          |
+| 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
-| `medium`       | 176 longest | 原始大小     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
-| `large`        | 800 longest | Original     | 最长边重设为 800 像素的缩略图。               |
+| `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
+| `large`        | 800 longest
+ | Original     | 最长边重设为 800 像素的缩略图。               |
 | `smallSquare`  | 96x96       | 方形裁剪  | 小方形缩略图                                               |
 | `mediumSquare` | 176x176     | 方形裁剪  | 小方形缩略图                                               |
 | `largeSquare`  | 800x800     | 方形裁剪  | 大方形缩略图                                               |
 
 ## <a name="requesting-custom-thumbnail-sizes"></a>请求自定义缩略图的大小
 
-除了定义大小外，应用还可以指定前缀为 `c` 的缩略图大小，从而请求获取自定义缩略图大小。
+除了定义尺寸外，应用还可以指定前缀为 `c` 的缩略图尺寸，从而请求获取自定义缩略图尺寸。
 例如，如果你的应用需要 300x400 的缩略图，可以按如下所示请求获取此大小：
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-custom-size-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-custom-size-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -346,7 +349,7 @@ Content-Type: application/json
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 **注意** 在 OneDrive for Business 和 SharePoint 中：
 

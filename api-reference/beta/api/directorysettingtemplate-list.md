@@ -1,24 +1,26 @@
 ---
 title: 列出 directorySettingTemplates
-description: 目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
+description: 目录设置模板代表目录设置的一组模板，在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8fbb63327a191ed733c6c2903fb28bde9683e1c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3ff5c102652d0c04bf37c3545b50fe320071be07
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718161"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433830"
 ---
 # <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
+目录设置模板代表目录设置的一组模板，在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
 
-> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,12 +49,12 @@ GET /directorySettingTemplates
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplates"
@@ -60,15 +62,15 @@ GET /directorySettingTemplates
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysettingtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 51d475ba655ff08369c1bda931ea3c18ce6dc460
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7aa2dc4c8d8de267deee22a9e3934817adb02fe7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791349"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428486"
 ---
 # <a name="update-paymentterms"></a>更新 paymentTerms
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新 Dynamics 365 Business Central 的付款条款对象的属性。
 
 ## <a name="permissions"></a>权限
@@ -39,7 +44,7 @@ PATCH /financials/companies/{id}/paymentTerms/{id}
 |--------------|-------------------------|
 |Authorization |Bearer {token}。必需。|
 |Content-Type  |application/json         |
-|If-Match      |必需。 如果包含此请求标头，且提供的 eTag 与**paymentTerms**上的当前标记不匹配，则不会更新**paymentTerms** 。 |
+|If-Match      |必填。 如果包含此请求标头，且提供的 eTag 与**paymentTerms**上的当前标记不匹配，则不会更新**paymentTerms** 。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -66,7 +71,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 200 OK

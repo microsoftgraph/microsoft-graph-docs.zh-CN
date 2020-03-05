@@ -5,20 +5,22 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8cfc6e0215c4d4a1a4ffc5f74246423cd2f4edf0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 11639e4562e2e2b6a41e3f261d7ff2c320084c70
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416994"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433431"
 ---
 # <a name="update-domain"></a>更新域
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新域对象的属性。
 
-> **重要说明:** 仅已验证的域可以进行更新。
+> **重要说明：** 仅已验证的域可以进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -48,17 +50,17 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供要更新的相关字段的值。 未包含在请求正文中的现有属性将保留其以前的值, 或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能, 仅包含更改的值。
+在请求正文中，提供要更新的相关字段的值。 未包含在请求正文中的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能，仅包含更改的值。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`204 No Content`返回响应代码, 不返回任何响应正文。
+如果成功，此方法将`204 No Content`返回响应代码，不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_domain"
@@ -75,15 +77,15 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

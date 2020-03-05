@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 006553f673aec026a73d3f6f9ff4ea0e7e8b2266
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b1c4a5069f192a481b9f4814115e3d6fcee6fc55
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427898"
 ---
 # <a name="delete-educationalactivity"></a>删除 educationalActivity
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

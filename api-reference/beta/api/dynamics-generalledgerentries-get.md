@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b75a8d70b2692fb5add39e12e388aa364e8ea585
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 67d95e18f16fd7a556ef78f13dbb1e09f1eb6b8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429942"
 ---
 # <a name="get-generalledgerentries"></a>获取 generalLedgerEntries
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索 Dynamics 365 Business Central 的总帐条目对象的属性和关系。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>请求标头
 |标头       |值             |
 |-------------|------------------|
-|Authorization|负载. 必需。 |
+|Authorization|负载. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntr
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

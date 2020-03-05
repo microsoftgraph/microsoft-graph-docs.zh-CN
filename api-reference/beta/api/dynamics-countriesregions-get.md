@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2fd0cf37d37e2e9e903f842a1a61c5c19b905372
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d916ed3e1de5643983808c3bd410a2746d64c2b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792049"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431898"
 ---
 # <a name="get-countriesregions"></a>获取 countriesRegions
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索 countriesRegions 对象的属性和关系，以实现 Dynamics 365 Business Central。
 
 ## <a name="permissions"></a>权限
@@ -58,7 +63,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

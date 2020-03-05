@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7daa5c7f2a682eb783e7b5a41a18ba5d063f8524
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 63844cd7b18201c47a2ed27480fe9db2bc5bc107
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791713"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430544"
 ---
 # <a name="get-customerpaymentjournals"></a>获取 customerPaymentJournals
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索 Dynamics 365 Business Central 的客户付款日记对象的属性和关系。
 
 ## <a name="permissions"></a>权限
@@ -60,7 +65,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJo
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

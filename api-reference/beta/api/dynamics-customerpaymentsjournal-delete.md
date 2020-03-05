@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0ddd675b617c679258b0f5de5363922b1e3e6d8d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7844d1caab27cb1cc5e4fd171a79d5c585a16a49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791727"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430572"
 ---
 # <a name="delete-customerpaymentjournals"></a>删除 customerPaymentJournals
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除客户付款日记对象。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 |标头       |值                     |
 |-------------|--------------------------|
 |Authorization|Bearer {token}。必需。 |
-|If-Match     |必需。 如果包含此请求标头，且提供的 eTag 与**customerPaymentJournals**上的当前标记不匹配，则不会更新**customerPaymentJournals** 。 |
+|If-Match     |必填。 如果包含此请求标头，且提供的 eTag 与**customerPaymentJournals**上的当前标记不匹配，则不会更新**customerPaymentJournals** 。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -1,22 +1,24 @@
 ---
-title: 'directoryRole: delta'
-description: 获取新创建、更新或删除的目录角色, 而无需对整个资源集合执行完全读取。 有关详细信息, 请参阅 Using Delta Query。
+title: directoryRole： delta
+description: 获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅 Using Delta Query。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48c7811bd6c0ee59bca122a0bf8de88253553205
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: be1e8e96cae225680c439d580cf4dfc2437aa5b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42434502"
 ---
-# <a name="directoryrole-delta"></a>directoryRole: delta
+# <a name="directoryrole-delta"></a>directoryRole： delta
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建、更新或删除的目录角色, 而无需对整个资源集合执行完全读取。 有关详细信息, 请参阅[Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +32,7 @@ ms.locfileid: "36719568"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改, 请在 directoryRole 资源上发出包含 delta 函数的请求。
+若要开始跟踪更改，请在 directoryRole 资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -45,8 +47,8 @@ GET /directoryRoles/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示该往返一轮的更改。 在此集合的下`deltaLink`一轮变更跟踪请求中, 保存并应用整个 URL (包括此令牌)。|
-| $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示同一个资源集合中有进一步的更改需要跟踪。 |
+| $deltatoken | string | 为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个资源集合中有进一步的更改需要跟踪。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -55,7 +57,7 @@ GET /directoryRoles/delta
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
 - 提供对 `$filter` 的有限支持：
-  * 唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改, 其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`: 或。 您可以指定的 id 数受最大 URL 长度的限制。
+  * 唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改，其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`：或。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -69,11 +71,11 @@ GET /directoryRoles/delta
 
 ### <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。 该响应还包括一个 nextLink URL 或 deltaLink URL。 
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。 该响应还包括一个 nextLink URL 或 deltaLink URL。 
 
-- 如果返回`nextLink` URL, 则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+- 如果返回`nextLink` URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
 
-- 如果返回`deltaLink` URL, 则没有有关要返回的资源的现有状态的更多数据。 保留并使用`deltaLink` URL 了解将来对资源所做的更改。
+- 如果返回`deltaLink` URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用`deltaLink` URL 了解将来对资源所做的更改。
 
 请参阅：</br>
 - [使用增量查询](/graph/delta-query-overview)了解更多详细信息</br>
@@ -82,7 +84,7 @@ GET /directoryRoles/delta
 ### <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryRole_delta"
@@ -90,15 +92,15 @@ GET /directoryRoles/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/delta
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryrole-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryrole-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryrole-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

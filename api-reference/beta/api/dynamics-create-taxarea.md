@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9dc553ac9fbd0bbbbe45e7775ffd91f2f4cdb881
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: c3d2061a4e1c3d78f6ee305bfe87ca82f992ac8e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791895"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431209"
 ---
 # <a name="create-taxareas"></a>创建 taxAreas
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 在 Dynamics 365 Business Central 中创建税务区域对象。
 
 ## <a name="permissions"></a>权限

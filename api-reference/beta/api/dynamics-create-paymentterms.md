@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 40f39f94f0249e2fa9947d8b3f828fc344a1ed39
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 6d604f11bb5300e659102ec6301c7b6509d1244b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791916"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431321"
 ---
 # <a name="create-paymentterms"></a>创建 paymentTerms
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 在 Dynamics 365 Business Central 中创建付款条款对象。
 
 ## <a name="permissions"></a>权限
@@ -70,7 +75,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 201 Created

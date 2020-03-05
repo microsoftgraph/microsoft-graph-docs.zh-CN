@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6374936502929a3a7be3c6822d9145eb0034957c
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 960e33b108ec49618126f9e9d77a92dc80be26d7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428276"
 ---
 # <a name="delete-taxgroups"></a>删除 taxGroups
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除税务组对象。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/taxGroups/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**taxGroups**上的当前标记不匹配，则不会更新**taxGroups** 。 |
+|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**taxGroups**上的当前标记不匹配，则不会更新**taxGroups** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

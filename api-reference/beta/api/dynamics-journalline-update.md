@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9b7a60418d1a322b3d2997c1889f7280acd7810d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 58932fcc23eb78c2715b79e57f100508f50b66a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791419"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428759"
 ---
 # <a name="update-journallines"></a>更新 journalLines
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新 Dynamics 365 Business Central 的日记行对象的属性。
 
 ## <a name="permissions"></a>权限
@@ -40,7 +45,7 @@ PATCH /financials/companies/{id}/journals/{id}/journalLines/{id}
 |--------------|--------------------------|
 |Authorization |Bearer {token}。必需。 |
 |Content-Type  |application/json          |
-|If-Match      |必需。 如果包含此请求标头，且提供的 eTag 与**journalLines**上的当前标记不匹配，则不会更新**journalLines** 。 |
+|If-Match      |必填。 如果包含此请求标头，且提供的 eTag 与**journalLines**上的当前标记不匹配，则不会更新**journalLines** 。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。

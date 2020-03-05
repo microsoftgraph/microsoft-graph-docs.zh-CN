@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: dbd3f6308920c4f334cabe08a347d55ae4039d28
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 64de86b424bed9a1592ceb7ae5194c42d9233352
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791461"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428927"
 ---
 # <a name="delete-journallines"></a>删除 journalLines
+
+命名空间： microsoft. graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 从 Dynamics 365 Business Central 中删除日记行对象。
 
 ## <a name="permissions"></a>权限
@@ -38,7 +43,7 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 |标头          |值                     |
 |----------------|--------------------------|
 |Authorization   |Bearer {token}。必需。 |
-|If-Match        |必需。 如果包含此请求标头，且提供的 eTag 与**journalLines**上的当前标记不匹配，则不会更新**journalLines** 。 |
+|If-Match        |必填。 如果包含此请求标头，且提供的 eTag 与**journalLines**上的当前标记不匹配，则不会更新**journalLines** 。 |
 
 ## <a name="request-body"></a>请求正文
 

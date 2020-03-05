@@ -1,24 +1,26 @@
 ---
 title: 获取 websocket 终结点
-description: 在生产应用程序中不支持使用这些 API。
+description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 5e87cb25be7ddf41bdf8097f55326bc2bb20a65d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fb971eca24ae0852ea8cec7397a9a7c8cdde0d2a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433025"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-在生产应用程序中不支持使用这些 API。
+不支持在生产应用程序中使用这些 API。
 
 允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
+Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅[socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
@@ -30,7 +32,7 @@ Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件. ReadWrite, 全部文件。
+| 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,20 +51,20 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
 ```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -71,7 +73,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
 
 <!-- {
   "blockType": "response",
@@ -89,8 +91,8 @@ Content-type: application/json
 ```
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
-若要将它与 socket.io 客户端一起使用, 请拆分`/callback?`令牌上的字符串。
-之前`/callback?`的字符串部分是 socket.io 终结点 URL, 后面的字符串部分是必须向库提供的不透明查询字符串。
+若要将它与 socket.io 客户端一起使用，请拆分`/callback?`令牌上的字符串。
+之前`/callback?`的字符串部分是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。
 
 下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。
 

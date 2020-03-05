@@ -6,14 +6,16 @@ title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7aa6f9bf8e624b7b973bf5ed8553f5e2b1944f48
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 889f5551368fb92f8ef830f0c255616c2d8d7176
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719346"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432563"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,21 +63,21 @@ GET /users/{user-id}/drive/items/{item-id}/children
 若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/root/children
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,21 +90,21 @@ GET /me/drive/root/children
 若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,7 +144,7 @@ Content-type: application/json
 }
 ```
 
-**注意:** 如果集合超过默认页面大小 (200 个项目), ** \@** 则在响应中返回 nextLink 属性以指示有更多的可用项目, 并提供下一页项目的请求 URL。
+**注意：** 如果集合超出默认页面大小（200 项），则在响应中返回 **\@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
 
 可以通过[可选的查询字符串参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)控制页面大小
 
