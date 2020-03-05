@@ -5,40 +5,42 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 036c09c1d5e4dfec043e6a1dc612aa728d6588f4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c574ceefd33131562a0df504fad26bb225056ce7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497816"
 ---
-# <a name="formatprotection-resource-type"></a><span data-ttu-id="32fe0-103">FormatProtection 资源类型</span><span class="sxs-lookup"><span data-stu-id="32fe0-103">FormatProtection resource type</span></span>
+# <a name="formatprotection-resource-type"></a><span data-ttu-id="3ab6d-103">FormatProtection 资源类型</span><span class="sxs-lookup"><span data-stu-id="3ab6d-103">FormatProtection resource type</span></span>
+
+<span data-ttu-id="3ab6d-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="3ab6d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="32fe0-104">表示对范围对象的格式保护。</span><span class="sxs-lookup"><span data-stu-id="32fe0-104">Represents the format protection of a range object.</span></span>
+<span data-ttu-id="3ab6d-105">表示对范围对象的格式保护。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-105">Represents the format protection of a range object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="32fe0-105">方法</span><span class="sxs-lookup"><span data-stu-id="32fe0-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="3ab6d-106">方法</span><span class="sxs-lookup"><span data-stu-id="3ab6d-106">Methods</span></span>
 
-| <span data-ttu-id="32fe0-106">方法</span><span class="sxs-lookup"><span data-stu-id="32fe0-106">Method</span></span>           | <span data-ttu-id="32fe0-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="32fe0-107">Return Type</span></span>    |<span data-ttu-id="32fe0-108">说明</span><span class="sxs-lookup"><span data-stu-id="32fe0-108">Description</span></span>|
+| <span data-ttu-id="3ab6d-107">方法</span><span class="sxs-lookup"><span data-stu-id="3ab6d-107">Method</span></span>           | <span data-ttu-id="3ab6d-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="3ab6d-108">Return Type</span></span>    |<span data-ttu-id="3ab6d-109">说明</span><span class="sxs-lookup"><span data-stu-id="3ab6d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="32fe0-109">获取 FormatProtection</span><span class="sxs-lookup"><span data-stu-id="32fe0-109">Get FormatProtection</span></span>](../api/formatprotection-get.md) | [<span data-ttu-id="32fe0-110">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="32fe0-110">FormatProtection</span></span>](formatprotection.md) |<span data-ttu-id="32fe0-111">读取 formatProtection 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="32fe0-111">Read properties and relationships of formatProtection object.</span></span>|
-|[<span data-ttu-id="32fe0-112">更新</span><span class="sxs-lookup"><span data-stu-id="32fe0-112">Update</span></span>](../api/formatprotection-update.md) | [<span data-ttu-id="32fe0-113">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="32fe0-113">FormatProtection</span></span>](formatprotection.md)  |<span data-ttu-id="32fe0-114">更新 FormatProtection 对象。</span><span class="sxs-lookup"><span data-stu-id="32fe0-114">Update FormatProtection object.</span></span> |
+|[<span data-ttu-id="3ab6d-110">获取 FormatProtection</span><span class="sxs-lookup"><span data-stu-id="3ab6d-110">Get FormatProtection</span></span>](../api/formatprotection-get.md) | [<span data-ttu-id="3ab6d-111">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="3ab6d-111">FormatProtection</span></span>](formatprotection.md) |<span data-ttu-id="3ab6d-112">读取 formatProtection 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-112">Read properties and relationships of formatProtection object.</span></span>|
+|[<span data-ttu-id="3ab6d-113">更新</span><span class="sxs-lookup"><span data-stu-id="3ab6d-113">Update</span></span>](../api/formatprotection-update.md) | [<span data-ttu-id="3ab6d-114">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="3ab6d-114">FormatProtection</span></span>](formatprotection.md)  |<span data-ttu-id="3ab6d-115">更新 FormatProtection 对象。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-115">Update FormatProtection object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="32fe0-115">属性</span><span class="sxs-lookup"><span data-stu-id="32fe0-115">Properties</span></span>
-| <span data-ttu-id="32fe0-116">属性</span><span class="sxs-lookup"><span data-stu-id="32fe0-116">Property</span></span>     | <span data-ttu-id="32fe0-117">类型</span><span class="sxs-lookup"><span data-stu-id="32fe0-117">Type</span></span>   |<span data-ttu-id="32fe0-118">说明</span><span class="sxs-lookup"><span data-stu-id="32fe0-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3ab6d-116">属性</span><span class="sxs-lookup"><span data-stu-id="3ab6d-116">Properties</span></span>
+| <span data-ttu-id="3ab6d-117">属性</span><span class="sxs-lookup"><span data-stu-id="3ab6d-117">Property</span></span>     | <span data-ttu-id="3ab6d-118">类型</span><span class="sxs-lookup"><span data-stu-id="3ab6d-118">Type</span></span>   |<span data-ttu-id="3ab6d-119">说明</span><span class="sxs-lookup"><span data-stu-id="3ab6d-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="32fe0-119">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="32fe0-119">formulaHidden</span></span>|<span data-ttu-id="32fe0-120">boolean</span><span class="sxs-lookup"><span data-stu-id="32fe0-120">boolean</span></span>|<span data-ttu-id="32fe0-p101">表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。</span><span class="sxs-lookup"><span data-stu-id="32fe0-p101">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
-|<span data-ttu-id="32fe0-123">已锁定</span><span class="sxs-lookup"><span data-stu-id="32fe0-123">locked</span></span>|<span data-ttu-id="32fe0-124">boolean</span><span class="sxs-lookup"><span data-stu-id="32fe0-124">boolean</span></span>|<span data-ttu-id="32fe0-p102">指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。</span><span class="sxs-lookup"><span data-stu-id="32fe0-p102">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
+|<span data-ttu-id="3ab6d-120">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="3ab6d-120">formulaHidden</span></span>|<span data-ttu-id="3ab6d-121">boolean</span><span class="sxs-lookup"><span data-stu-id="3ab6d-121">boolean</span></span>|<span data-ttu-id="3ab6d-p101">表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p101">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
+|<span data-ttu-id="3ab6d-124">已锁定</span><span class="sxs-lookup"><span data-stu-id="3ab6d-124">locked</span></span>|<span data-ttu-id="3ab6d-125">boolean</span><span class="sxs-lookup"><span data-stu-id="3ab6d-125">boolean</span></span>|<span data-ttu-id="3ab6d-p102">指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p102">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="32fe0-127">关系</span><span class="sxs-lookup"><span data-stu-id="32fe0-127">Relationships</span></span>
-<span data-ttu-id="32fe0-128">无</span><span class="sxs-lookup"><span data-stu-id="32fe0-128">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3ab6d-128">关系</span><span class="sxs-lookup"><span data-stu-id="3ab6d-128">Relationships</span></span>
+<span data-ttu-id="3ab6d-129">无</span><span class="sxs-lookup"><span data-stu-id="3ab6d-129">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="32fe0-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="32fe0-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ab6d-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3ab6d-130">JSON representation</span></span>
 
-<span data-ttu-id="32fe0-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="32fe0-130">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ab6d-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3ab6d-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

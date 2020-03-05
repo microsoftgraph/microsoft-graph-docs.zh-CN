@@ -5,28 +5,30 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a14a6821d06dc566aa355f77100ef75cc8394f6e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 03e73fe63e7624b2ab9d549c3b9ccd1526301a9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498607"
 ---
-# <a name="externalsponsors-complex-type"></a><span data-ttu-id="4c3c9-103">externalSponsors 复杂类型</span><span class="sxs-lookup"><span data-stu-id="4c3c9-103">externalSponsors complex type</span></span>
+# <a name="externalsponsors-complex-type"></a><span data-ttu-id="52dfd-103">externalSponsors 复杂类型</span><span class="sxs-lookup"><span data-stu-id="52dfd-103">externalSponsors complex type</span></span>
+
+<span data-ttu-id="52dfd-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="52dfd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4c3c9-104">在[访问包分配策略](accesspackageassignmentpolicy.md)的审批阶段中使用。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-104">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="4c3c9-105">它是[userSet](userset.md)的一个子类型，其中`@odata.type`值`#microsoft.graph.externalSponsors`表示请求用户的已连接组织的外部发起人是审批者。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-105">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver.</span></span> <span data-ttu-id="4c3c9-106">此审批者仅适用于来自属于已连接组织的用户的请求。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-106">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="4c3c9-107">在使用 externalSponsors 创建访问包分配策略审批阶段时，还应包括另一个审批者（如单个用户或组成员），以防所连接的组织没有外部发起人。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-107">When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an external sponsor.</span></span>
+<span data-ttu-id="52dfd-105">在[访问包分配策略](accesspackageassignmentpolicy.md)的审批阶段中使用。</span><span class="sxs-lookup"><span data-stu-id="52dfd-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="52dfd-106">它是[userSet](userset.md)的一个子类型，其中`@odata.type`值`#microsoft.graph.externalSponsors`表示请求用户的已连接组织的外部发起人是审批者。</span><span class="sxs-lookup"><span data-stu-id="52dfd-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver.</span></span> <span data-ttu-id="52dfd-107">此审批者仅适用于来自属于已连接组织的用户的请求。</span><span class="sxs-lookup"><span data-stu-id="52dfd-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="52dfd-108">在使用 externalSponsors 创建访问包分配策略审批阶段时，还应包括另一个审批者（如单个用户或组成员），以防所连接的组织没有外部发起人。</span><span class="sxs-lookup"><span data-stu-id="52dfd-108">When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an external sponsor.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4c3c9-108">属性</span><span class="sxs-lookup"><span data-stu-id="4c3c9-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="52dfd-109">属性</span><span class="sxs-lookup"><span data-stu-id="52dfd-109">Properties</span></span>
 
-| <span data-ttu-id="4c3c9-109">属性</span><span class="sxs-lookup"><span data-stu-id="4c3c9-109">Property</span></span>                     | <span data-ttu-id="4c3c9-110">类型</span><span class="sxs-lookup"><span data-stu-id="4c3c9-110">Type</span></span>                      | <span data-ttu-id="4c3c9-111">说明</span><span class="sxs-lookup"><span data-stu-id="4c3c9-111">Description</span></span> |
+| <span data-ttu-id="52dfd-110">属性</span><span class="sxs-lookup"><span data-stu-id="52dfd-110">Property</span></span>                     | <span data-ttu-id="52dfd-111">类型</span><span class="sxs-lookup"><span data-stu-id="52dfd-111">Type</span></span>                      | <span data-ttu-id="52dfd-112">说明</span><span class="sxs-lookup"><span data-stu-id="52dfd-112">Description</span></span> |
 | :--------------------------- | :------------------------ | :---------- |
-| <span data-ttu-id="4c3c9-112">isBackup</span><span class="sxs-lookup"><span data-stu-id="4c3c9-112">isBackup</span></span> | <span data-ttu-id="4c3c9-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="4c3c9-113">Boolean</span></span> | <span data-ttu-id="4c3c9-114">指示发起人是否为备份回退审批者。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-114">Indicates whether the sponsor is a backup fallback approver.</span></span> |
+| <span data-ttu-id="52dfd-113">isBackup</span><span class="sxs-lookup"><span data-stu-id="52dfd-113">isBackup</span></span> | <span data-ttu-id="52dfd-114">布尔</span><span class="sxs-lookup"><span data-stu-id="52dfd-114">Boolean</span></span> | <span data-ttu-id="52dfd-115">指示发起人是否为备份回退审批者。</span><span class="sxs-lookup"><span data-stu-id="52dfd-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="4c3c9-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4c3c9-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="52dfd-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="52dfd-116">JSON representation</span></span>
 
-<span data-ttu-id="4c3c9-116">以下是此类型的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4c3c9-116">The following is a JSON representation of this type.</span></span>
+<span data-ttu-id="52dfd-117">以下是此类型的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="52dfd-117">The following is a JSON representation of this type.</span></span>
 
 <!-- {
   "blockType": "resource",

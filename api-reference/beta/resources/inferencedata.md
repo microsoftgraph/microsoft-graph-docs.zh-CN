@@ -5,29 +5,31 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: profile
 doc_type: resourcePageType
-ms.openlocfilehash: 43d6585243eed560a6a8f77268305b7d7f5824a8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2097dc14de984f3d1517b4d17e8043f38411b89a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938847"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496171"
 ---
-# <a name="inferencedata-resource-type"></a><span data-ttu-id="06d2e-103">inferenceData 资源类型</span><span class="sxs-lookup"><span data-stu-id="06d2e-103">inferenceData resource type</span></span>
+# <a name="inferencedata-resource-type"></a><span data-ttu-id="ba662-103">inferenceData 资源类型</span><span class="sxs-lookup"><span data-stu-id="ba662-103">inferenceData resource type</span></span>
+
+<span data-ttu-id="ba662-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="ba662-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="06d2e-104">[InferenceData](inferencedata.md)资源类型提供了有关通过推断用户信息创建的实体的附加详细信息。</span><span class="sxs-lookup"><span data-stu-id="06d2e-104">The [inferenceData](inferencedata.md) resource type provides additional detail about an entity which has been created through inferring information about the user.</span></span> <span data-ttu-id="06d2e-105">只要特定实体中的数据是由机器学习或其他系统进程对数据进行迭代时，就会出现此信息。</span><span class="sxs-lookup"><span data-stu-id="06d2e-105">This information will be present whenever the data within a particular entity was derived from a machine learning or other system process iterating over data.</span></span>
+<span data-ttu-id="ba662-105">[InferenceData](inferencedata.md)资源类型提供了有关通过推断用户信息创建的实体的附加详细信息。</span><span class="sxs-lookup"><span data-stu-id="ba662-105">The [inferenceData](inferencedata.md) resource type provides additional detail about an entity which has been created through inferring information about the user.</span></span> <span data-ttu-id="ba662-106">只要特定实体中的数据是由机器学习或其他系统进程对数据进行迭代时，就会出现此信息。</span><span class="sxs-lookup"><span data-stu-id="ba662-106">This information will be present whenever the data within a particular entity was derived from a machine learning or other system process iterating over data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="06d2e-106">属性</span><span class="sxs-lookup"><span data-stu-id="06d2e-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ba662-107">属性</span><span class="sxs-lookup"><span data-stu-id="ba662-107">Properties</span></span>
 
-| <span data-ttu-id="06d2e-107">属性</span><span class="sxs-lookup"><span data-stu-id="06d2e-107">Property</span></span>              | <span data-ttu-id="06d2e-108">类型</span><span class="sxs-lookup"><span data-stu-id="06d2e-108">Type</span></span>        | <span data-ttu-id="06d2e-109">描述</span><span class="sxs-lookup"><span data-stu-id="06d2e-109">Description</span></span>                                                                     |
+| <span data-ttu-id="ba662-108">属性</span><span class="sxs-lookup"><span data-stu-id="ba662-108">Property</span></span>              | <span data-ttu-id="ba662-109">类型</span><span class="sxs-lookup"><span data-stu-id="ba662-109">Type</span></span>        | <span data-ttu-id="ba662-110">说明</span><span class="sxs-lookup"><span data-stu-id="ba662-110">Description</span></span>                                                                     |
 |:----------------------|:------------|:--------------------------------------------------------------------------------|
-|<span data-ttu-id="06d2e-110">confidenceScore</span><span class="sxs-lookup"><span data-stu-id="06d2e-110">confidenceScore</span></span>        |<span data-ttu-id="06d2e-111">双精度</span><span class="sxs-lookup"><span data-stu-id="06d2e-111">Double</span></span>       | <span data-ttu-id="06d2e-112">反映有关用户推断的数据准确性的置信度分数。</span><span class="sxs-lookup"><span data-stu-id="06d2e-112">Confidence score reflecting the accuracy of the data inferred about the user.</span></span>   |
-|<span data-ttu-id="06d2e-113">userHasVerifiedAccuracy</span><span class="sxs-lookup"><span data-stu-id="06d2e-113">userHasVerifiedAccuracy</span></span>|<span data-ttu-id="06d2e-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="06d2e-114">Boolean</span></span>      | <span data-ttu-id="06d2e-115">如果用户已确认此推理为 True 或 False，则为记录。</span><span class="sxs-lookup"><span data-stu-id="06d2e-115">Records if the user has confirmed this inference as being True or False.</span></span>        |
+|<span data-ttu-id="ba662-111">confidenceScore</span><span class="sxs-lookup"><span data-stu-id="ba662-111">confidenceScore</span></span>        |<span data-ttu-id="ba662-112">双精度</span><span class="sxs-lookup"><span data-stu-id="ba662-112">Double</span></span>       | <span data-ttu-id="ba662-113">反映有关用户推断的数据准确性的置信度分数。</span><span class="sxs-lookup"><span data-stu-id="ba662-113">Confidence score reflecting the accuracy of the data inferred about the user.</span></span>   |
+|<span data-ttu-id="ba662-114">userHasVerifiedAccuracy</span><span class="sxs-lookup"><span data-stu-id="ba662-114">userHasVerifiedAccuracy</span></span>|<span data-ttu-id="ba662-115">布尔</span><span class="sxs-lookup"><span data-stu-id="ba662-115">Boolean</span></span>      | <span data-ttu-id="ba662-116">如果用户已确认此推理为 True 或 False，则为记录。</span><span class="sxs-lookup"><span data-stu-id="ba662-116">Records if the user has confirmed this inference as being True or False.</span></span>        |
 
-## <a name="json-representation"></a><span data-ttu-id="06d2e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="06d2e-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ba662-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ba662-117">JSON representation</span></span>
 
-<span data-ttu-id="06d2e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="06d2e-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ba662-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ba662-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

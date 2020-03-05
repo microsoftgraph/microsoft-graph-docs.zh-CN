@@ -5,30 +5,32 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ca61e5e3ef5456889eafcef3914f16fc072dfb6b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 287f9f6ab7b1442ebdd517edbb27175fc36e6108
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497403"
 ---
-# <a name="governanceroleassignmentrequeststatus-resource-type"></a><span data-ttu-id="7df19-103">governanceRoleAssignmentRequestStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="7df19-103">governanceRoleAssignmentRequestStatus resource type</span></span>
+# <a name="governanceroleassignmentrequeststatus-resource-type"></a><span data-ttu-id="9e418-103">governanceRoleAssignmentRequestStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="9e418-103">governanceRoleAssignmentRequestStatus resource type</span></span>
+
+<span data-ttu-id="9e418-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9e418-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7df19-104">表示[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。</span><span class="sxs-lookup"><span data-stu-id="7df19-104">Represents the status of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
+<span data-ttu-id="9e418-105">表示[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。</span><span class="sxs-lookup"><span data-stu-id="9e418-105">Represents the status of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="7df19-105">属性</span><span class="sxs-lookup"><span data-stu-id="7df19-105">Properties</span></span>
-<span data-ttu-id="7df19-106">属性</span><span class="sxs-lookup"><span data-stu-id="7df19-106">Property</span></span>       | <span data-ttu-id="7df19-107">类型</span><span class="sxs-lookup"><span data-stu-id="7df19-107">Type</span></span> |<span data-ttu-id="7df19-108">说明</span><span class="sxs-lookup"><span data-stu-id="7df19-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9e418-106">属性</span><span class="sxs-lookup"><span data-stu-id="9e418-106">Properties</span></span>
+<span data-ttu-id="9e418-107">属性</span><span class="sxs-lookup"><span data-stu-id="9e418-107">Property</span></span>       | <span data-ttu-id="9e418-108">类型</span><span class="sxs-lookup"><span data-stu-id="9e418-108">Type</span></span> |<span data-ttu-id="9e418-109">说明</span><span class="sxs-lookup"><span data-stu-id="9e418-109">Description</span></span>|
 |:----|:-------------|:-----|
-|<span data-ttu-id="7df19-109">status</span><span class="sxs-lookup"><span data-stu-id="7df19-109">status</span></span> |<span data-ttu-id="7df19-110">String</span><span class="sxs-lookup"><span data-stu-id="7df19-110">String</span></span>| <span data-ttu-id="7df19-111">角色分配请求的状态。</span><span class="sxs-lookup"><span data-stu-id="7df19-111">The status of the role assignment request.</span></span> <span data-ttu-id="7df19-112">值可以是`InProgress`或`Closed`。</span><span class="sxs-lookup"><span data-stu-id="7df19-112">The value can be `InProgress` or `Closed`.</span></span>|
-|<span data-ttu-id="7df19-113">状态值</span><span class="sxs-lookup"><span data-stu-id="7df19-113">subStatus</span></span> |<span data-ttu-id="7df19-114">String</span><span class="sxs-lookup"><span data-stu-id="7df19-114">String</span></span>| <span data-ttu-id="7df19-115">角色分配请求的子状态。</span><span class="sxs-lookup"><span data-stu-id="7df19-115">The sub status of the role assignment request.</span></span> <span data-ttu-id="7df19-116">值可以是`Accepted`、 `PendingEvaluation`、 `Granted` `Denied` `PendingProvisioning` `Provisioned` `ProvisioningStarted`、、、、、、、、和。 `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning`</span><span class="sxs-lookup"><span data-stu-id="7df19-116">The values can be `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, and `ProvisioningStarted`.</span></span>|
-|<span data-ttu-id="7df19-117">statusDetails</span><span class="sxs-lookup"><span data-stu-id="7df19-117">statusDetails</span></span>       |<span data-ttu-id="7df19-118">[keyValue](../resources/keyvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7df19-118">[keyValue](../resources/keyvalue.md) collection</span></span>| <span data-ttu-id="7df19-119">角色分配请求状态的详细信息。</span><span class="sxs-lookup"><span data-stu-id="7df19-119">The details of the status of the role assignment request.</span></span> <span data-ttu-id="7df19-120">它表示不同规则的评估结果。</span><span class="sxs-lookup"><span data-stu-id="7df19-120">It represents the evaluation results of different rules.</span></span> |
+|<span data-ttu-id="9e418-110">status</span><span class="sxs-lookup"><span data-stu-id="9e418-110">status</span></span> |<span data-ttu-id="9e418-111">String</span><span class="sxs-lookup"><span data-stu-id="9e418-111">String</span></span>| <span data-ttu-id="9e418-112">角色分配请求的状态。</span><span class="sxs-lookup"><span data-stu-id="9e418-112">The status of the role assignment request.</span></span> <span data-ttu-id="9e418-113">值可以是`InProgress`或`Closed`。</span><span class="sxs-lookup"><span data-stu-id="9e418-113">The value can be `InProgress` or `Closed`.</span></span>|
+|<span data-ttu-id="9e418-114">状态值</span><span class="sxs-lookup"><span data-stu-id="9e418-114">subStatus</span></span> |<span data-ttu-id="9e418-115">String</span><span class="sxs-lookup"><span data-stu-id="9e418-115">String</span></span>| <span data-ttu-id="9e418-116">角色分配请求的子状态。</span><span class="sxs-lookup"><span data-stu-id="9e418-116">The sub status of the role assignment request.</span></span> <span data-ttu-id="9e418-117">值可以是`Accepted`、 `PendingEvaluation`、 `Granted` `Denied` `PendingProvisioning` `Provisioned` `ProvisioningStarted`、、、、、、、、和。 `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning`</span><span class="sxs-lookup"><span data-stu-id="9e418-117">The values can be `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, and `ProvisioningStarted`.</span></span>|
+|<span data-ttu-id="9e418-118">statusDetails</span><span class="sxs-lookup"><span data-stu-id="9e418-118">statusDetails</span></span>       |<span data-ttu-id="9e418-119">[keyValue](../resources/keyvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="9e418-119">[keyValue](../resources/keyvalue.md) collection</span></span>| <span data-ttu-id="9e418-120">角色分配请求状态的详细信息。</span><span class="sxs-lookup"><span data-stu-id="9e418-120">The details of the status of the role assignment request.</span></span> <span data-ttu-id="9e418-121">它表示不同规则的评估结果。</span><span class="sxs-lookup"><span data-stu-id="9e418-121">It represents the evaluation results of different rules.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="7df19-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7df19-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9e418-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9e418-122">JSON representation</span></span>
 
-<span data-ttu-id="7df19-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7df19-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9e418-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9e418-123">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
