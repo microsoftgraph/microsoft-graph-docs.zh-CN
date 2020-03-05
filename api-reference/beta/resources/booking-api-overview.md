@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 171f75d35812176202263659185bd4dca94e06de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6159d830656ed898de1e91a4866c74f145cfa0a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974197"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508022"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Microsoft Bookings 可让小型企业所有者以最少量的设置管理客户预订和信息。 企业所有者可以创建一个或多个企业，每个企业都提供一组服务。 所有者可以设置员工，并指定每名员工执行的服务。 客户可以通过在线或移动应用预约该企业中的特定服务。 Bookings 可确保为企业、员工和相关客户保持最新的约会时间。
 
@@ -29,7 +29,7 @@ Microsoft Bookings 可让小型企业所有者以最少量的设置管理客户�
 
 第一次客户预约之前，请完成以下步骤。 确保为相应的操作提供适当的[访问令牌](/graph/auth-overview)。
 
-1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/en-us/business/office-365-business-premium)订阅。
+1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/zh-CN/business/office-365-business-premium)订阅。
 2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：
 <!-- { "blockType": "ignored" } -->
 ```http
