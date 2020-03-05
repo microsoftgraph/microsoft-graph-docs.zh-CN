@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39c8340e5f215382f4c18f2797906ab87d1b179b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 485213d59e42793301acfe637554c08d9325b7ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368679"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526018"
 ---
-# <a name="mediacontentratingunitedkingdom-resource-type"></a><span data-ttu-id="9e420-103">mediaContentRatingUnitedKingdom 资源类型</span><span class="sxs-lookup"><span data-stu-id="9e420-103">mediaContentRatingUnitedKingdom resource type</span></span>
+# <a name="mediacontentratingunitedkingdom-resource-type"></a><span data-ttu-id="9fb3f-103">mediaContentRatingUnitedKingdom 资源类型</span><span class="sxs-lookup"><span data-stu-id="9fb3f-103">mediaContentRatingUnitedKingdom resource type</span></span>
 
-> <span data-ttu-id="9e420-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9e420-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="9fb3f-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9fb3f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9e420-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9e420-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9fb3f-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="9e420-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="9e420-106">Not yet documented</span></span>
+> <span data-ttu-id="9fb3f-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9e420-107">属性</span><span class="sxs-lookup"><span data-stu-id="9e420-107">Properties</span></span>
-|<span data-ttu-id="9e420-108">属性</span><span class="sxs-lookup"><span data-stu-id="9e420-108">Property</span></span>|<span data-ttu-id="9e420-109">类型</span><span class="sxs-lookup"><span data-stu-id="9e420-109">Type</span></span>|<span data-ttu-id="9e420-110">说明</span><span class="sxs-lookup"><span data-stu-id="9e420-110">Description</span></span>|
+<span data-ttu-id="9fb3f-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="9fb3f-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="9fb3f-108">属性</span><span class="sxs-lookup"><span data-stu-id="9fb3f-108">Properties</span></span>
+|<span data-ttu-id="9fb3f-109">属性</span><span class="sxs-lookup"><span data-stu-id="9fb3f-109">Property</span></span>|<span data-ttu-id="9fb3f-110">类型</span><span class="sxs-lookup"><span data-stu-id="9fb3f-110">Type</span></span>|<span data-ttu-id="9fb3f-111">说明</span><span class="sxs-lookup"><span data-stu-id="9fb3f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9e420-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="9e420-111">movieRating</span></span>|[<span data-ttu-id="9e420-112">ratingUnitedKingdomMoviesType</span><span class="sxs-lookup"><span data-stu-id="9e420-112">ratingUnitedKingdomMoviesType</span></span>](../resources/intune-deviceconfig-ratingunitedkingdommoviestype.md)|<span data-ttu-id="9e420-113">为英国选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="9e420-113">Movies rating selected for United Kingdom.</span></span> <span data-ttu-id="9e420-114">可取值为：`allAllowed`、`allBlocked`、`general`、`universalChildren`、`parentalGuidance`、`agesAbove12Video`、`agesAbove12Cinema`、`agesAbove15`、`adults`。</span><span class="sxs-lookup"><span data-stu-id="9e420-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.</span></span>|
-|<span data-ttu-id="9e420-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="9e420-115">tvRating</span></span>|[<span data-ttu-id="9e420-116">ratingUnitedKingdomTelevisionType</span><span class="sxs-lookup"><span data-stu-id="9e420-116">ratingUnitedKingdomTelevisionType</span></span>](../resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)|<span data-ttu-id="9e420-117">为英国选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="9e420-117">TV rating selected for United Kingdom.</span></span> <span data-ttu-id="9e420-118">可取值为：`allAllowed`、`allBlocked`、`caution`。</span><span class="sxs-lookup"><span data-stu-id="9e420-118">Possible values are: `allAllowed`, `allBlocked`, `caution`.</span></span>|
+|<span data-ttu-id="9fb3f-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="9fb3f-112">movieRating</span></span>|[<span data-ttu-id="9fb3f-113">ratingUnitedKingdomMoviesType</span><span class="sxs-lookup"><span data-stu-id="9fb3f-113">ratingUnitedKingdomMoviesType</span></span>](../resources/intune-deviceconfig-ratingunitedkingdommoviestype.md)|<span data-ttu-id="9fb3f-114">为英国选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-114">Movies rating selected for United Kingdom.</span></span> <span data-ttu-id="9fb3f-115">可取值为：`allAllowed`、`allBlocked`、`general`、`universalChildren`、`parentalGuidance`、`agesAbove12Video`、`agesAbove12Cinema`、`agesAbove15`、`adults`。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.</span></span>|
+|<span data-ttu-id="9fb3f-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="9fb3f-116">tvRating</span></span>|[<span data-ttu-id="9fb3f-117">ratingUnitedKingdomTelevisionType</span><span class="sxs-lookup"><span data-stu-id="9fb3f-117">ratingUnitedKingdomTelevisionType</span></span>](../resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)|<span data-ttu-id="9fb3f-118">为英国选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-118">TV rating selected for United Kingdom.</span></span> <span data-ttu-id="9fb3f-119">可取值为：`allAllowed`、`allBlocked`、`caution`。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-119">Possible values are: `allAllowed`, `allBlocked`, `caution`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9e420-119">关系</span><span class="sxs-lookup"><span data-stu-id="9e420-119">Relationships</span></span>
-<span data-ttu-id="9e420-120">无</span><span class="sxs-lookup"><span data-stu-id="9e420-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9fb3f-120">关系</span><span class="sxs-lookup"><span data-stu-id="9fb3f-120">Relationships</span></span>
+<span data-ttu-id="9fb3f-121">无</span><span class="sxs-lookup"><span data-stu-id="9fb3f-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9e420-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9e420-121">JSON Representation</span></span>
-<span data-ttu-id="9e420-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9e420-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9fb3f-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9fb3f-122">JSON Representation</span></span>
+<span data-ttu-id="9fb3f-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9fb3f-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom"
