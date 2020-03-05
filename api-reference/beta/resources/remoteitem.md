@@ -6,14 +6,16 @@ title: RemoteItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 05da43fb3d7b1e2adec01f707eeed61df4623f04
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb4d937d7b2feab6589ddd965eb6a6524162b7fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008703"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521164"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bd17deab26b061f48f762bf8ffeb5f8289b2a51f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f838d6eefc761849c37cd0646744233cef5a28b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008192"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520427"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -48,10 +50,10 @@ ms.locfileid: "36008192"
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | 日期              |
 | userPrincipalName                        | String            |
-| isDeleted                                | Boolean           |
+| isDeleted                                | 布尔           |
 | deletedDate                              | 日期              |
 | lastActivityDate                         | 日期              |
-| assignedProducts                         | String collection |
+| assignedProducts                         | String 集合 |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

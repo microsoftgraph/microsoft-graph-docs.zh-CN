@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b84cf9c7654354446fb7c6a5005befe3d17a0fa4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 582c3483d4292f634385461508bf579834dfd12e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964912"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520406"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>skypeForBusinessDeviceUsageUserDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -21,11 +23,11 @@ ms.locfileid: "35964912"
 | reportRefreshDate | 日期    |
 | userPrincipalName | String  |
 | lastActivityDate  | 日期    |
-| usedWindows       | Boolean |
-| usedWindowsPhone  | Boolean |
-| usedAndroidPhone  | Boolean |
-| usediPhone        | Boolean |
-| usediPad          | Boolean |
+| usedWindows       | 布尔 |
+| usedWindowsPhone  | 布尔 |
+| usedAndroidPhone  | 布尔 |
+| usediPhone        | 布尔 |
+| usediPad          | 布尔 |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式

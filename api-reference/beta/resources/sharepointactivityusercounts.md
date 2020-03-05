@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 97fbcb8c611bd497a7bf6613a5bde53738aff5e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21690f1fa42da4bfa0e2a9c2df48691f00a9595c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008451"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520700"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>sharePointActivityUserCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

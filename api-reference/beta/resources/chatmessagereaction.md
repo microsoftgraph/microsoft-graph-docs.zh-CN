@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e1193e65697187f705f2758c2c195e5519326dc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb26a46a3669b721184399036fa80e4a6b291ec8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507689"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示对[了 chatmessage](chatmessage.md)实体的反应。 
 
-作为[了 chatmessage](chatmessage.md)实体的`chatMessageReaction`一部分, 类型的实体作为[Get 信道消息](../api/channel-get-message.md)API 的一部分返回。
+作为[了 chatmessage](chatmessage.md)实体的`chatMessageReaction`一部分，类型的实体作为[Get 信道消息](../api/channel-get-message.md)API 的一部分返回。
 
 ## <a name="properties"></a>属性
 

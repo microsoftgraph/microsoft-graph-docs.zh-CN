@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 414e3f491736f51ee670390519241110bc81f66e
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: ceb282dbcf0370e5eca2001b582660bdcaa1f1aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950353"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519447"
 ---
 # <a name="webaccount-resource-type"></a>webAccount 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

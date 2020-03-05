@@ -1,22 +1,24 @@
 ---
 title: person 资源类型
-description: 有关来自邮件、联系人和社交网络的人员的信息聚合。 用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信 (例如电子邮件和 Skype) 的人员。
+description: 有关来自邮件、联系人和社交网络的人员的信息聚合。用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信（例如电子邮件和 Skype）的人员。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 762d3bf04c891c9a2388368ca90a90ce904dc6e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966158"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521937"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-有关来自邮件、联系人和社交网络的人员的信息聚合。 用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信 (例如电子邮件和 Skype) 的人员。
+有关来自邮件、联系人和社交网络的人员的信息聚合。 用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信（例如电子邮件和 Skype）的人员。
 
 ## <a name="methods"></a>方法
 
@@ -34,16 +36,16 @@ ms.locfileid: "35966158"
 |displayName|string|人员的显示名称。|
 |emailAddresses|[rankedEmailAddress](rankedemailaddress.md)集合|人员的电子邮件地址。|
 |givenName|string|人员的名字。|
-|id|string|人员的唯一标识符。只读。|
+|id|string|人员的唯一标识符。 只读。|
 |isFavorite|boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
 |mailboxType|string|由个人的电子邮件地址表示的邮箱类型。|
 |officeLocation|string|人员的办公室位置。|
 |personNotes|string|用户对此人员所做的自由格式备注。|
-|personType|string|人员类型, 例如通讯组列表。|
+|personType|string|人员类型，例如通讯组列表。|
 |phones|[phone](phone.md) collection|人员的电话号码。|
 |postalAddresses|[location](location.md) collection|人员的地址。|
 |profession|string|人员的职业。|
-|源|[personDataSource](persondatasource.md)集合|用户数据来自的源, 例如目录或 Outlook 联系人。|
+|源|[personDataSource](persondatasource.md)集合|用户数据来自的源，例如目录或 Outlook 联系人。|
 |surname|string|人员的姓氏。|
 |title|string|人员的职务。|
 |userPrincipalName|string|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|

@@ -5,29 +5,31 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 083b0ad81ffee25d8a03bf5ff38815d2ca0155a8
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 75084cba71946d8b14ab080ac5872359bf0ceb12
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952270"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520609"
 ---
 # <a name="shiftpreferences-resource-type"></a>shiftPreferences 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示[计划](schedule.md)中用户的已分配班次的可用性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取**shiftPreferences**对象的属性和关系。 |
+| [获取](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取**shiftPreferences**对象的属性和关系。 |
 | [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新**shiftPreferences**对象。 |
 
 ## <a name="properties"></a>属性
 
-|属性          |类型           |Description                                                                                                                                      |
+|属性          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id | `Edm.String` | 实体的标识符。 |
 | @odata.etag | `Edm.String` | 实体的更改键。 |

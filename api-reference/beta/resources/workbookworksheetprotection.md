@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ed6f52074836368eade8851ea32f1e8ef64e493e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab5d3101b1b9cabf8843d3726f036de74bf3a258
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007037"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519097"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>workbookWorksheetProtection 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

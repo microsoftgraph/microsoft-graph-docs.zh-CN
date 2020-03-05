@@ -5,14 +5,16 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 895425cd7c5b83661fb55be53cd17cefb0a73103
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 5443f88005f46a07353d6d24ed07bea11df7b30b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844237"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507717"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,10 +29,10 @@ ms.locfileid: "39844237"
 |[在频道 delta 中获取 Chatmessages 集合](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取通道中的增量聊天消息。 |
 |[为新的频道消息创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和编辑的频道消息以及对它们的反应。 |
 |[获取频道了 chatmessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 从频道中获取单个根聊天消息。|
+|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
 |**频道邮件答复**| | |
 |[列出对了 chatmessage 的答复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 频道中对聊天消息的所有回复的列表。|
 |[获取对了 chatmessage 的答复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取频道中的聊天消息的单个答复。|
-|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
 |[答复频道中的了 chatmessage](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在频道中答复现有聊天邮件。|
 |**1:1 和分组聊天消息**| | |
 |[在聊天中创建了 chatmessage](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7e2e9304aa8c7e7c8d59602a5710596b14e74636
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: d46ffa5cc3f0eee423b4800ee13f19677bf7c41f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638608"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521944"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

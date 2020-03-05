@@ -1,22 +1,24 @@
 ---
 title: privilegedAccess 资源类型
-description: " 例如, `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。"
+description: " 例如， `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 7f59f8420be6ff97511415e944d154cb5d59950f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c8388c8ba9fd79b44e0d037496313cf67774bdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965787"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521556"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由特权标识管理 (PIM) 服务提供的一组功能。 表示由 PIM `privilegedAccess`管理的不同提供程序的不同实例;例如, `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。
+表示由特权标识管理（PIM）服务提供的一组功能。 表示由 PIM `privilegedAccess`管理的不同提供程序的不同实例;例如， `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。
 
 
 `privilegedAccess`目前为只读。 `privilegedAccess`实体`POST`集`PUT`上`PATCH`不支持`DELETE` 、、或操作。

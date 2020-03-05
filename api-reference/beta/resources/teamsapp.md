@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b3ee13166a81fad96e577efd6721983714ca17b4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f4f13bf13b34c41c7c15c3356cc67636e6f441c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870059"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519923"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,8 +45,8 @@ ms.locfileid: "40870059"
 |成员|值|说明|
 |:---|:---|:---|
 |商店|0| 应用适用于 Microsoft Teams 应用商店中的所有租户。|
-|组织|1|应用仅适用于此租户。|
-|旁加载|2|应用仅适用于安装它的用户/团队。|
+|组织|1 |应用仅适用于此租户。|
+|旁加载|2 |应用仅适用于安装它的用户/团队。|
 
 ## <a name="relationships"></a>关系
 

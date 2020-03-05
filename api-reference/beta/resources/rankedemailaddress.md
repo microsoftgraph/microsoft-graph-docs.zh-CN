@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e29d5b2f2116050f9cea036df35ed6cc012c0e36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bdba5af83357737c77e3b5c441703e404f971587
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965521"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521276"
 ---
 # <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35965521"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|电子邮件地址。|
-|排名|double|电子邮件地址的排名。 Rank 用作排序关键字, 相对于其他返回的结果。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
+|排名|double|电子邮件地址的排名。 Rank 用作排序关键字，相对于其他返回的结果。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

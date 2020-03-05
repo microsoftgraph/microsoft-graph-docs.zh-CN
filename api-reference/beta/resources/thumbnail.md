@@ -6,14 +6,16 @@ title: 缩略图
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 752d46f1c8a769f9f571fd13d940586fda653a58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53001d2459af4dc382501e33930bc8aca55a26b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007660"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519762"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

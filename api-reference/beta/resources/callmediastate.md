@@ -5,14 +5,16 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 14342a6657392dcfd16d32d1b6ce8d5bbf46ddf7
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: c9c55908f62214c386aacee34be76bb11fc318b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913322"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507808"
 ---
 # <a name="callmediastate-resource-type"></a>callMediaState 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

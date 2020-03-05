@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2be415a127f7bcef030407be737bb9b48c8a116f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a754b03379d1e40ba7310283a0efdd94ff30631
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964667"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520077"
 ---
 # <a name="synchronizationerror-resource-type"></a>synchronizationError 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "35964667"
 |:---------------|:--------|:----------|
 |code|String||
 |message|String||
-|tenantActionable|Boolean||
+|tenantActionable|布尔||
 
 ## <a name="json-representation"></a>JSON 表示形式
 

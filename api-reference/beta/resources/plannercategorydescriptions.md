@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: a8d80be1768cae3383b07c6fbb7dac1e042cc0bd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11b52b58aea908e00d4a6149cca0bb9c9dba5fd0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966021"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521774"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

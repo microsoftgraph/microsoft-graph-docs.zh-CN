@@ -1,27 +1,29 @@
 ---
 title: filterGroup 资源类型
-description: 定义要在范围中考虑对象必须满足的一组子句。 仅当组的所有子句都计算为`true` `true`时, 才会在组的作用域中考虑对象 (组的计算结果为)。
+description: 定义要在范围中考虑对象必须满足的一组子句。 仅当组的所有子句都计算为`true` `true`时，才会在组的作用域中考虑对象（组的计算结果为）。
 localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd2b30c8ffa07eab87949bf53eaa98e6d88851c1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 433528d9d663a3dc19cecaa5c2dad68e362dc882
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520182"
 ---
 # <a name="filtergroup-resource-type"></a>filterGroup 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义要在范围中考虑对象必须满足的一组子句。 仅当组的所有子句都计算为`true` `true`时, 才会在组的作用域中考虑对象 (组的计算结果为)。
+定义要在范围中考虑对象必须满足的一组子句。 仅当组的所有子句都计算为`true` `true`时，才会在组的作用域中考虑对象（组的计算结果为）。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|and|[filterClause](synchronization-filterclause.md)集合|此组的筛选子句 (条件)。 必须满足组中的所有子句, 筛选器组才能进行计算`true`。|
+|and|[filterClause](synchronization-filterclause.md)集合|此组的筛选子句（条件）。 必须满足组中的所有子句，筛选器组才能进行计算`true`。|
 |name|String|易于阅读的筛选器组名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式

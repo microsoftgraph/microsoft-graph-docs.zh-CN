@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 48574baf0969077add921d6b4c9d52dd2d5d4906
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 797ddac8bc582cd5e5d4d51e0e1ad94645c3c1e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913567"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521570"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
+
+命名空间： microsoft. graph
 
 包含有关用户状态的信息，包括用户的可用性和用户活动。
 

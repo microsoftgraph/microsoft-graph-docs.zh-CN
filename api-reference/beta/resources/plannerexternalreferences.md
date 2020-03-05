@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 65eb2deb04f44bd08be14cf1c0c6d61807552efa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c8ebcd74404da1ce612c33697e0ce3ca14bbce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521746"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "35966018"
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 在这种情况下, 客户端必须提供基于**HTTP/HTTPS**协议的**有效 url**作为属性, 并且它们的值必须是[externalReference](plannerexternalreference.md)对象。 根据 OData, 开放式类型中的属性名称不能包含以下字符: `.`, `:`, `%`因此需要对它们进行编码。 示例如下所示。 若要删除引用, 请将属性的值设置为`null`。
+可由客户端定义打开类型的属性。 在这种情况下，客户端必须提供基于**HTTP/HTTPS**协议的**有效 url**作为属性，并且它们的值必须是[externalReference](plannerexternalreference.md)对象。 根据 OData，开放式类型中的属性名称不能包含以下字符： `.`， `:`， `%`因此需要对它们进行编码。 示例如下所示。 若要删除引用，请将属性的值设置为`null`。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

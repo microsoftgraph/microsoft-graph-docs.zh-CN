@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6fd6ff5d9def23a6a6fb180c8d12398437e5dce0
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 9c8b6264a0373fb5b388cd95771d9360b867feb9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520989"
 ---
 # <a name="rubricqualityselectedcolumnmodel-resource-type"></a>rubricQualitySelectedColumnModel 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c109c2c28a9c4c9248adfbad4c94c9c50268f28f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 74cc7815d4df22c1914f525ed0451b778c7777d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871782"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508518"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>accessPackageResourceRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "40871782"
 |catalogId|String|访问包目录的唯一 ID。|
 |expirationDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
-|isValidationOnly|Boolean|如果设置，则不添加资源。|
+|isValidationOnly|布尔|如果设置，则不添加资源。|
 |合理化|String|请求者的添加资源的理由。|
 |requestState|String| 服务是否能够将资源添加到目录的结果。  值为`Delivered`是否添加了资源。 只读。|
 |requestStatus|String|只读。|
@@ -42,7 +44,7 @@ ms.locfileid: "40871782"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResource|[accessPackageResource](accesspackageresource.md)| 可为 Null。|
+|accessPackageResource|[accessPackageResource](accesspackageresource.md)| 可为 NULL。|
 |请求程序|[accessPackageSubject](accesspackagesubject.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

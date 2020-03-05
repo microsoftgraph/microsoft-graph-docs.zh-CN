@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ffbc327d40edb071c70336032506b5f97c9e083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc34a596af9b8f1270462b7c180e62ffde0cf0f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964625"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520042"
 ---
 # <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

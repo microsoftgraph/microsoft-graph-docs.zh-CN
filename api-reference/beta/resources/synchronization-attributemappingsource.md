@@ -1,30 +1,32 @@
 ---
 title: attributeMappingSource 资源类型
-description: '定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 '
+description: '定义应如何从源对象提取（或转换）值。 例如，它可以是从源对象的给定属性中获取的简单值，也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 '
 localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e2f0e3b3d5ce3ca0c1fef55f81aa454b149e5a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 969f262f76f976c13f5c0a26ae53d67751b8820b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520231"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 
+定义应如何从源对象提取（或转换）值。 例如，它可以是从源对象的给定属性中获取的简单值，也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 
 
 ## <a name="properties"></a>属性
 
 | 属性              | 类型                      | 说明               |
 |:----------------------|:--------------------------|:--------------------------|
 |表达式             |String                     |此**attributeMappingSource**对象的等效表达式表示形式。|
-|name                   |String                     |映射源的 Name 参数。 根据**type**属性值, 这可以是函数的名称、源属性的名称或要使用的常数值。 |
-|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果此对象代表函数, 则列出函数参数。 参数由**attributeMappingSource**对象本身组成, 从而允许复杂的表达式。 如果**type**不`Function`是, 则此属性将为 null/空数组。 |
+|name                   |String                     |映射源的 Name 参数。 根据**type**属性值，这可以是函数的名称、源属性的名称或要使用的常数值。 |
+|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果此对象代表函数，则列出函数参数。 参数由**attributeMappingSource**对象本身组成，从而允许复杂的表达式。 如果**type**不`Function`是，则此属性将为 null/空数组。 |
 |type                   | String                    |此属性映射源的类型。 可取值为：`Attribute`、`Constant`、`Function`。 默认值为 `Attribute`。| 
 
 ## <a name="json-representation"></a>JSON 表示形式

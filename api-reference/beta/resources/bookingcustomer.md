@@ -1,18 +1,20 @@
 ---
 title: bookingCustomer 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 864635014b3e215dabd11896922ca9e73a5e8cb9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af64f8686b1779030c0ace93b4805845c6ed3c81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974167"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507994"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer 资源类型
+
+命名空间： microsoft. graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

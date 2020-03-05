@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fc7911b3a225f226edc74dc9b194a2522b7c4251
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a2e30856aed08cd27916d43c79e52548657023d6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939143"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508252"
 ---
 # <a name="applylabelaction-resource-type"></a>applyLabelAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "37939143"
 
 ## <a name="properties"></a>属性
 
-| 属性                    | 类型                                                                     | 描述                                                                                                                                                                                       |
+| 属性                    | 类型                                                                     | 说明                                                                                                                                                                                       |
 | :-------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | actionSource                | String                                                                   | 可能的值是：`manual`、`automatic`、`recommended`、`default`。                                                                                                                             |
 | actions                     | [informationProtectionAction](informationprotectionaction.md)集合 | 使用应用程序标记文档应采取的特定操作的集合。 有关完整列表，请参阅[informationProtectionAction](informationprotectionaction.md) 。 |

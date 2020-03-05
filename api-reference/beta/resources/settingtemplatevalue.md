@@ -1,22 +1,24 @@
 ---
 title: settingTemplateValue 资源类型
-description: 表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
+description: 表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9a49dd291bd9cc7baa31d90ba8e247ac984b1906
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cbd53a704e37b6f0cfa15cc875d5de000627b76c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520757"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
+表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
 
 
 ## <a name="properties"></a>属性

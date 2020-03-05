@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 561f0097eae74ca3f5d36fc18ec62aef8bcca3d6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 62872c07dcf8072a9a5e471c53950a0b77b96814
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913504"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507787"
 ---
 # <a name="ivr-scenarios-in-calls"></a>调用中的 IVR 方案
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

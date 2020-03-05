@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 56125d94e94033646251edf5d53d2f8b141af29c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c381f3507df9b979fd409add56975ac79db008a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966067"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521833"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35966067"
 
 由此服务计算所有排序提示值。 客户端可通过指定项目的排序提示为项目重新排序，而在两个项目之间移动此项目可通过将排序提示设为以下值实现：`<previous order hint> <next order hint>!`，其中，在所需的新位置前出现的项目的排序提示会替换 `<previous order hint>`，而在所需的新位置后出现的项目的排序提示会替换 `<next order hint>`。 这些排序提示值之间有空格字符，整个值以 `!` 为后缀。 如果任何一项不存在，应使用空字符串代替。 此值由之前的计算构成，可以在客户端中使用，为像服务返回的排序提示这样的项目排序。 一旦客户端在更新中发送这些值，服务将计算在所需位置排序的短型值。
 
-> **注意:** 在下面的示例中, 实际的 order 提示值将括在单引号字符 (`'`) 中, 以清楚起见, 但这些值不是数据的一部分, 并且不得发送到服务。
+> **注意：** 在下面的示例中，实际的 order 提示值将括在单引号字符（`'`）中，以清楚起见，但这些值不是数据的一部分，并且不得发送到服务。
  
 例如，请考虑以下按排序提示顺序排列的列表：
 
@@ -53,7 +55,7 @@ ms.locfileid: "35966067"
 4. 第 2 项（排序提示：`'adhg'`）
 5. 第 1 项（排序提示：`'adhg ! !'`）
 
-如果将对 order 提示值所做的更改发送到 patch 请求中的服务, 则该服务将计算保留客户端预期顺序的正确值。 如果在`Prefer: return=representation` `PATCH`请求中指定了首选项头, 则客户端可以立即获取这些值。 适用于上述情况的值可能类似于以下内容（实际值可能有所不同）。 
+如果将对 order 提示值所做的更改发送到 patch 请求中的服务，则该服务将计算保留客户端预期顺序的正确值。 如果在`Prefer: return=representation` `PATCH`请求中指定了首选项头，则客户端可以立即获取这些值。 适用于上述情况的值可能类似于以下内容（实际值可能有所不同）。 
 
 1. 第 3 项（排序提示：`'432b'`）
 2. 第 5 项（排序提示：`'6F"#'`）

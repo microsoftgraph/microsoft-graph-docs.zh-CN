@@ -1,22 +1,24 @@
 ---
 title: privilegedRole 资源类型
-description: 表示 Azure AD 管理员角色, 例如:**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
+description: 表示 Azure AD 管理员角色，例如：**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 98e5cd2c53b398339e8db65bec520a16f72d8f39
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef4e8ba8c8b362a0f91b4a5179eb0c7a209bf994
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965745"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521514"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 管理员角色, 例如:**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
+表示 Azure AD 管理员角色，例如：**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
 
 
 ## <a name="methods"></a>方法
@@ -32,14 +34,14 @@ ms.locfileid: "35965745"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|string|管理员角色的唯一标识符。 它是一个 GUID 字符串, 与给定角色的 Azure AD 中的角色模板 id 具有相同的值。 只读。|
+|id|string|管理员角色的唯一标识符。 它是一个 GUID 字符串，与给定角色的 Azure AD 中的角色模板 id 具有相同的值。 只读。|
 |name|string|角色名称。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 此为只读属性。 可为 Null。|
-|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 此为只读属性。 可为 Null。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 此为只读属性。 可为 NULL。|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 此为只读属性。 可为 NULL。|
 |摘要|[privilegedRoleSummary](privilegedrolesummary.md)| 此角色的摘要信息。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

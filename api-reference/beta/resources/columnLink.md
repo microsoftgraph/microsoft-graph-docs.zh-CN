@@ -6,14 +6,16 @@ title: ColumnLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4add6ac0edc401815d8072371ce0faca48d5852b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c4da6165a33caa50de38788a927c4bb0c54fd90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507633"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ ms.locfileid: "36012942"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | **id**        | string | 列的唯一标识符。
-| **name**      | string | 此内容类型中的列的名称。
+| **名称**      | string | 此内容类型中的列的名称。
 
 <!--
 {

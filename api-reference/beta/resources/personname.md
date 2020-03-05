@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: aad97177a06933d2dd98c5cc94744450197f7dcb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6212721774b9b7bc47a4e312d438f1b001a90bef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939598"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521902"
 ---
 # <a name="personname-resource-type"></a>Contact.personname 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "37939598"
 | 方法                                     | 返回类型                 | 说明                                             |
 |:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [获取 Contact.personname](../api/personname-get.md) | [Contact.personname](personname.md) | 读取 Contact.personname 对象的属性和关系。 |
-| [Update](../api/personname-update.md)      | [Contact.personname](personname.md) | 更新 Contact.personname 对象。                               |
+| [更新](../api/personname-update.md)      | [Contact.personname](personname.md) | 更新 Contact.personname 对象。                               |
 | [删除](../api/personname-delete.md)      | 无                        | 删除 Contact.personname 对象。                               |
 
 ## <a name="properties"></a>属性
@@ -33,15 +35,15 @@ ms.locfileid: "37939598"
 | 属性     | 类型                              | 说明 |
 |:-------------|:----------------------------------|:------------|
 |displayName   |String                             | 根据用户或其设备的区域设置，提供 firstName 和 lastName 的顺序呈现。 |
-|前         |字符串                             | 用户的名字。                                                                                      |
+|前         |String                             | 用户的名字。                                                                                      |
 |initials      |String                             | 用户的首字母缩写。                                                                                        |
-|languageTag   |字符串                             | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。                        |
-|末          |字符串                             | 用户的姓氏。                                                                                       |
-|maiden        |字符串                             | Maiden 用户的名称。                                                                                     |
-|中间        |字符串                             | Middlie 用户的名称。                                                                                    | 
-|昵称      |字符串                             | 用户的昵称。                                                                                        |
+|languageTag   |String                             | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。                        |
+|末          |String                             | 用户的姓氏。                                                                                       |
+|maiden        |String                             | Maiden 用户的名称。                                                                                     |
+|中间        |String                             | Middlie 用户的名称。                                                                                    | 
+|昵称      |String                             | 用户的昵称。                                                                                        |
 |拼音 |[yomiPersonName](yomipersonname.md)| 有关如何对用户名称进行发音的指南。                                                                 |
-|后缀        |字符串                             | Users 名称之后使用的指示符（例如：博士）。                                                             |
+|后缀        |String                             | Users 名称之后使用的指示符（例如：博士）。                                                             |
 |title         |字符串                             | Honorifics 用于为用户名称加前缀（例如： Dr.、罗德、Madam、Mrs）                                            |
 
 ## <a name="relationships"></a>关系

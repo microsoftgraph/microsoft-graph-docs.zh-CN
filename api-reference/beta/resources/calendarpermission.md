@@ -5,14 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 80c704dbb3e50d3f4d0ba586a40f06f74f032321
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: c038ccd69cefa66c4fd57f4b09273662320f2640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507836"
 ---
 # <a name="calendarpermission-resource-type"></a>calendarPermission 资源类型
+
+命名空间： microsoft. graph
 
 在 Outlook 客户端中共享或委派了日历的用户的权限。
 
@@ -32,12 +34,12 @@ ms.locfileid: "41651734"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |allowedRoles|[calendarRoleType](#calendarroletype-values)集合| 允许共享或委派日历权限级别的列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
 |emailAddress|[emailAddress](emailaddress.md)| 代表有权访问日历的 sharee 或代理人。 对于 "My Organization" sharee， **address**属性为 null。 只读。 |
-|id|字符串| 为其共享日历的用户（sharee 或代理人）的唯一标识符。 只读。|
-|isInsideOrganization|Boolean| 如此如果上下文中的用户（sharee 或代理人）与日历所有者在同一个组织中。|
+|id|String| 为其共享日历的用户（sharee 或代理人）的唯一标识符。 只读。|
+|isInsideOrganization|布尔| 如此如果上下文中的用户（sharee 或代理人）与日历所有者在同一个组织中。|
 |isRemovable|Boolean| `True`如果可以从指定日历的 sharees 或代理列表中删除用户， `false`否则为。 "我的组织" 用户决定了贵组织内的其他人对给定日历的权限。 您无法将 "我的组织" 作为 sharee 删除到日历中。|
 |role|[calendarRoleType](#calendarroletype-values)| 日历 sharee 或代理人的当前权限级别。 |
 

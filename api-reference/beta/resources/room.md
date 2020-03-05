@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: cfa1d87093c7f843dd9a8294a253751726b3d34b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e23d8a873abb0de5a086350b3748f9e40d7e12ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938721"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521038"
 ---
 # <a name="room-resource-type"></a>会议室资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,32 +31,32 @@ ms.locfileid: "37938721"
 
 ## <a name="properties"></a>属性
 
-| 属性               | 类型                                              | 描述 |
+| 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | 会议室的街道地址。 |
-| audioDeviceName        | 字符串                                            | 指定会议室中音频设备的名称。 |
+| audioDeviceName        | String                                            | 指定会议室中音频设备的名称。 |
 | bookingType            | [bookingType](#bookingtype-values)                | 会议室的类型。 可能的值`standard`为和`reserved`。 |
-| 幢               | 字符串                                            | 指定聊天室所在的建筑物名称或楼号。 |
-| 能够               | 字符串                                            | 指定会议室的容量。 |
+| 幢               | String                                            | 指定聊天室所在的建筑物名称或楼号。 |
+| 能够               | String                                            | 指定会议室的容量。 |
 | displayName            | 字符串                                            | 与聊天室关联的名称。 |
-| displayDeviceName      | 字符串                                            | 指定聊天室中显示设备的名称。 |
+| displayDeviceName      | String                                            | 指定聊天室中显示设备的名称。 |
 | emailAddress           | String                                            | 聊天室的电子邮件地址。 |
-| floorLabel             | 字符串                                            | 指定基底的描述性标签，例如 P。 |
+| floorLabel             | String                                            | 指定基底的描述性标签，例如 P。 |
 | floorNumber            | Int32                                             | 指定会议室所在的楼层号。 |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | 指定纬度、经度和（可选）海拔坐标中的会议室位置。 |
-| id                     | 字符串                                            | 聊天室的唯一标识符。 只读。 |
-| isWheelchairAccessible | Boolean                                           | 指定会议室是否 wheelchair 可访问。 |
-| label                  | 字符串                                            | 指定聊天室的描述性标签，例如数字或名称。 |
-| 昵称               | 字符串                                            | 指定聊天室的昵称，例如 "会议室"。 |
-| phone                  | 字符串                                            | 会议室的电话号码。 |
-| 标记                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
-| videoDeviceName        | 字符串                                            | 指定聊天室中视频设备的名称。 |
+| id                     | String                                            | 聊天室的唯一标识符。 只读。 |
+| isWheelchairAccessible | 布尔                                           | 指定会议室是否 wheelchair 可访问。 |
+| label                  | String                                            | 指定聊天室的描述性标签，例如数字或名称。 |
+| 昵称               | String                                            | 指定聊天室的昵称，例如 "会议室"。 |
+| phone                  | String                                            | 会议室的电话号码。 |
+| 标记                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
+| videoDeviceName        | String                                            | 指定聊天室中视频设备的名称。 |
 
 ### <a name="bookingtype-values"></a>bookingType 值
 
 | 值    | 说明                                               |
 |:---------|:----------------------------------------------------------|
-| 普通 | 可以根据此 cmdlet 中的其他设置保留该会议室。 所有者、作者和网站所有者仍可以访问此项目。 |
+| 普通 | 可以根据此 cmdlet 中的其他设置保留该会议室。 此值为默认值。 |
 | 保留 | 会议室仅在首次推出时才可用。 无法保留。|
 
 ## <a name="relationships"></a>关系

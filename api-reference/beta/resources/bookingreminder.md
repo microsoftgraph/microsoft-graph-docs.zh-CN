@@ -1,18 +1,20 @@
 ---
 title: bookingReminder 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: a87f504824136fc1f3e3639361e22f78c6719dba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 685f4136b5b16c09d8fa53c385d75312a9337870
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974134"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507913"
 ---
 # <a name="bookingreminder-resource-type"></a>bookingReminder 资源类型
+
+命名空间： microsoft. graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

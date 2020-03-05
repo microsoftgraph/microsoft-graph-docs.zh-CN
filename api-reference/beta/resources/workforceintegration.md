@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 631f2cc52b9327d77edd6fc5ad48292cf044570f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1e836a4346fe5e31f39c1f6383acbf78530ae9e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866488"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519083"
 ---
 # <a name="workforceintegration-resource-type"></a>workforceIntegration 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +35,7 @@ ms.locfileid: "40866488"
 |apiVersion|Int32|回调 URL 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
 |技术|[workforceIntegrationEncryption](workforceintegrationencryption.md)|劳动力集成加密资源。|
-|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
+|isActive|布尔|指示此劳动力集成当前是否处于活动状态且可用。|
 |支持|string| 可能的值为`none`： `shift`、 `swapRequest`、 `openshift` `openShiftRequest`、、`userShiftPreferences`|
 |url|String| 劳动力集成 URL，用于从班次服务进行回调。|
 

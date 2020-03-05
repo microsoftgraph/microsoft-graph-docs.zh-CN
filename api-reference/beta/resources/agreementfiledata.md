@@ -1,22 +1,24 @@
 ---
 title: agreementFileData 资源类型
-description: 表示 Azure Active Directory (Azure AD) 使用条款协议文件的 blob。
+description: 表示 Azure Active Directory （Azure AD）使用条款协议文件的 blob。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: da4e600480e6ddd65112323b22f7a905b3ba29db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8758de3282bb59220423632be0be9c6e035c18b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013421"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508364"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory (Azure AD) 使用条款协议文件的 blob。
+表示 Azure Active Directory （Azure AD）使用条款协议文件的 blob。
 
 ## <a name="properties"></a>属性
 | 方法       | 返回类型 | 说明 |

@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520315"
 ---
 # <a name="statusdetails-resource-type"></a>statusDetails 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述设置事件的状态和关联的错误。 它是从[statusBase](/graph/api/resources/statusbase?view=graph-rest-beta)继承的, 仅在将状态设置为 "失败" 时使用。  
+描述设置事件的状态和关联的错误。 它是从[statusBase](/graph/api/resources/statusbase?view=graph-rest-beta)继承的，仅在将状态设置为 "失败" 时使用。  
 
 ## <a name="properties"></a>属性
 
@@ -26,7 +28,7 @@ ms.locfileid: "35455180"
 |additionalDetails|String|发生错误时的其他详细信息。|
 |errorCategory|String|对错误代码进行分类。|
 |errorCode|String|出现的唯一错误代码。|
-|在于|String|概述状态并介绍状态发生的原因。|
+|reason|String|概述状态并介绍状态发生的原因。|
 |recommendedAction|String|提供对应错误的解决方案。|
 
 ## <a name="json-representation"></a>JSON 表示形式

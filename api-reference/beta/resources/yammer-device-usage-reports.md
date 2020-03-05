@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: f36ed78805bc664adfbbd4ced9bc86b1444ab262
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02d5f3bcb71b343b0406536d77d80d477cc71223
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007002"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519048"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer 设备使用情况报表
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,6 @@ Yammer 设备使用情况报表可用于了解用户使用什么设备在 Yammer
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getyammerdeviceusageuserdetail.md) | 流          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | 获取用户的 Yammer 设备使用情况的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | 获取用户的 Yammer 设备使用情况的详细信息。 |
 | [获取分发用户数](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md) | 按设备类型获取用户数。  |
 | [获取用户数](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream          | [yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md) | 按设备类型获取每日用户数。 |

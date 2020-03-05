@@ -6,14 +6,16 @@ title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 647916e53409be47ebd3547a8712778bb6ba9f54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4ecce871115e92bfe91d5e6229c3ddd1a3c0472
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520336"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,11 +57,11 @@ ms.locfileid: "36008073"
 
 | 名称        | 文件夹 ID    | 说明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| 应用根目录    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
+| App Root    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
 | 本机照片 | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
-| 文档   | `documents`  | 文档文件夹。                                                    |
+| Documents   | `documents`  | “文档”文件夹。                                                    |
 | 音乐       | `music`      | 音乐文件夹。不适用于 OneDrive for Business。                |
-| 照片      | `photos`     | 照片文件夹。                                                       |
+| Photos      | `photos`     | “照片”文件夹。                                                       |
 
 ## <a name="remarks"></a>注解 
 

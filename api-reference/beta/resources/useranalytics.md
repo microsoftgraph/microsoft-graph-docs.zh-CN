@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51e72d21cfb0e26e46a7d247f4ede59b112893ea
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450713"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519538"
 ---
 # <a name="useranalytics-resource-type"></a>userAnalytics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +24,13 @@ ms.locfileid: "36450713"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-[获取设置](../api/useranalytics-get-settings.md) | [settings](settings.md) | 获取用户使用分析 API 的设置。|
+[获取设置](../api/useranalytics-get-settings.md) | [设置](settings.md) | 获取用户使用分析 API 的设置。|
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|settings|[settings](settings.md)|用户使用分析 API 的当前设置。|
+|设置|[设置](settings.md)|用户使用分析 API 的当前设置。|
 
 ## <a name="relationships"></a>关系
 

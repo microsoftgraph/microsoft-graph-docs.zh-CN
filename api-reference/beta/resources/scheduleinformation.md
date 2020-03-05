@@ -5,23 +5,25 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: ''
-ms.openlocfilehash: 3d6ede4e1085a8be3f78b714f690b79b836abbcb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e43bd0fc88cd8b7cdcb793deca8940ccaae9461f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965304"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520975"
 ---
 # <a name="scheduleinformation-resource-type"></a>scheduleInformation 资源类型
 
+命名空间： microsoft. graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示用户、通讯组列表或资源 (会议室或设备) 在指定时间段的可用性。
+表示用户、通讯组列表或资源（会议室或设备）在指定时间段的可用性。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityView |String |表示中`scheduleItems`所有项的可用性的合并视图。 视图由时间段组成。 在每个时间段内的可用性表示`0`为: = `1`free、= `2`暂定、= `3`忙碌、= 外出, `4`= 在其他地方工作。|
+|availabilityView |String |表示中`scheduleItems`所有项的可用性的合并视图。 视图由时间段组成。 在每个时间段内的可用性表示`0`为： = `1`free、= `2`暂定、= `3`忙碌、= 外出， `4`= 在其他地方工作。|
 |error |[freeBusyError](freebusyerror.md) |有关尝试获取用户、通讯组列表或资源的可用性的错误信息。 |
 |scheduleId |String |标识**scheduleInformation**实例的用户、通讯组列表或资源的 SMTP 地址。 |
 |scheduleItems |[scheduleItem](scheduleitem.md)集合 |包含描述用户或资源可用性的项。 |

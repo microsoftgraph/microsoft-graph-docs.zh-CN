@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ab4eaa619117aa350dcb28be9afd43e1aa2fbc8a
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: e13a5d46b6dfcd24b24f93e9e9870fbe89f2ee84
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638776"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520588"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

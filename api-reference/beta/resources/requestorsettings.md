@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ad3205a6ef07c5cf09d8faeb07d19d760872d1e6
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: b52f3276185f819ccd0e7149dbd5420b4f6e1781
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331351"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521115"
 ---
 # <a name="requestorsettings-resource-type"></a>requestorSettings 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "42331351"
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |谁可以请求。 、、 `NoSubjects`、 `SpecificDirectorySubjects`、 `SpecificConnectedOrganizationSubjects` `AllExistingDirectorySubjects`或`AllExistingConnectedOrganizationSubjects` `AllExternalSubjects`中`AllExistingDirectoryMemberUsers`的一个。  |
-| acceptRequests | 布尔值 | 指示是否在此策略上接受新的请求。 |
+| acceptRequests | 布尔 | 指示是否在此策略上接受新的请求。 |
 | allowedRequestors | [userSet](userset.md)集合| 允许对此策略提出请求的用户，可以是[singleUser](singleuser.md)、 [groupMembers](groupmembers.md)和[connectedOrganizationMembers](connectedorganizationmembers.md)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

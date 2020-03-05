@@ -5,14 +5,16 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 39939d9d61d992e5fd77fd21360ab05e8f83dbd4
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: a34e09b233a60858e23155f87808e40d080867f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507703"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>chatMessageHostedContent 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

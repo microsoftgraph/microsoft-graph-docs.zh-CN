@@ -6,14 +6,16 @@ title: TextColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6681875328695d2e67cc10508f47183fcedb0df4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6167a81c0898b2de1c5878926633f8dbd0baa2d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519790"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

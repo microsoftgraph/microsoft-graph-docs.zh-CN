@@ -1,28 +1,30 @@
 ---
 title: 使用身份验证方法使用情况报告 API
-description: 身份验证方法使用报告可帮助组织了解其最终用户使用的是自服务密码重置和多重身份验证 (MFA) 等 Azure Active Directory 功能的方式。
+description: 身份验证方法使用报告可帮助组织了解其最终用户使用的是自服务密码重置和多重身份验证（MFA）等 Azure Active Directory 功能的方式。
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 4f8886333d5067abc42a583084726c58ec67a659
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f20c633d1cfcbadd50a1c892cf6370211e0acb7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013197"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508078"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-身份验证方法使用情况报告可帮助您了解组织中的用户如何使用 Azure Active Directory (Azure AD) 功能, 如自助密码 rest 和多重身份验证 (MFA)。
+身份验证方法使用情况报告可帮助您了解组织中的用户如何使用 Azure Active Directory （Azure AD）功能，如自助密码 rest 和多重身份验证（MFA）。
 
-这些报告提供如下信息:
+这些报告提供如下信息：
 
 - 您的组织更成功的身份验证方法。 
 - 最终用户正在运行的错误类型。
-- 您需要运行什么市场活动, 以帮助最终用户采用自助密码 rest 和 MFA 的使用。
+- 您需要运行什么市场活动，以帮助最终用户采用自助密码 rest 和 MFA 的使用。
 
 ## <a name="common-requests"></a>常见请求
 

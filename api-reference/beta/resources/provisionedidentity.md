@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb535bbba827f93b597c5e41efb128f2ad610ef2
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 86363bdf77f83e6903c86362c2797c51d1215073
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349339"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521353"
 ---
 # <a name="provisionedidentity-resource-type"></a>provisionedIdentity 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "35349339"
 |详细信息|[detailsInfo](detailsinfo.md)|标识的详细信息。|
 |displayName|String|标识的显示名称。 |
 |id|String|唯一标识标识。|
-|identityType|String|已设置的标识类型, 如 "user" 或 "group"。|
+|identityType|String|已设置的标识类型，如 "user" 或 "group"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

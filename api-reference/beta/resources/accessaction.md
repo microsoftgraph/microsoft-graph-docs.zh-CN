@@ -6,20 +6,22 @@ title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ff8489cea29f5ee249266f36b784b3bd246daab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81be9565ad926eb3498228ced9098578168734db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974522"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508574"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [**ItemActivity**][activity]上的**accessAction**资源是否存在指示活动访问了某个项目。
 
->**注意:** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。
+>**注意：** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。
 
 [activity]: itemactivity.md
 

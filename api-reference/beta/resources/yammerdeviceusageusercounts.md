@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 6832d4c1829c6fd7ce679fe12511b694cc999b95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca8a1eaee94f7f125e2d2eb039561286737d58c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963778"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519006"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>yammerDeviceUsageUserCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

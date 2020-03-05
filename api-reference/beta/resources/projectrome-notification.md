@@ -5,15 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 8b1207007e113d42291ac07f1c5220f74e168261
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2b72c55d7159f44fbc368acda9c431ef96be3905
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939346"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521402"
 ---
 # <a name="notification-resource-type"></a>通知资源类型
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+命名空间： microsoft. graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示由面向指定用户的应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中，并分发给用户拥有的不同设备终结点。 
 
@@ -30,11 +31,11 @@ ms.locfileid: "37939346"
 |[创建通知](../api/user-post-notifications.md) | [通告](projectrome-notification.md) |创建并发送通知。 |
 
 ## <a name="properties"></a>属性
-|名称 | 类型 | 描述|
+|名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-| targetHostName | 字符串 | 表示呼叫服务要为其发布通知的应用程序的主机名（针对给定用户）。 如果将 web 终结点作为目标（请参阅**targetPolicy**），请确保**targetHostName**与在应用程序 JSON 属性中的客户端创建订阅时使用的名称相同。 |
-| appNotificationId | 字符串 | 通知的应用程序服务器设置的唯一 ID，用于标识和定位单个通知。 |
-| 名 | 字符串 | 此通知所属的组的名称。 它由开发人员设置，用于将通知分组在一起。 |
+| targetHostName | String | 表示呼叫服务要为其发布通知的应用程序的主机名（针对给定用户）。 如果将 web 终结点作为目标（请参阅**targetPolicy**），请确保**targetHostName**与在应用程序 JSON 属性中的客户端创建订阅时使用的名称相同。 |
+| appNotificationId | String | 通知的应用程序服务器设置的唯一 ID，用于标识和定位单个通知。 |
+| 名 | String | 此通知所属的组的名称。 它由开发人员设置，用于将通知分组在一起。 |
 | targetPolicy | [targetPolicyEndpoints](targetpolicyendpoints.md) | 目标策略对象处理应针对的终结点类型（Windows、iOS、Android 和 WebPush）的通知传递策略（针对给定用户）。 |
 | payload | [payloadTypes](payloadtypes.md)| 这是原始或直观的用户通知的数据内容，这些通知将传递给应用客户端接收此通知并由其使用。 |
 | displayTimeToLive | Int32 | 设置此通知内容将在每个平台的通知查看器中保留多长时间（以秒为单位）。 例如，将通知传递给 Windows 设备时，此属性的值将传递给 ToastNotification，以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。 |

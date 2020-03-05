@@ -6,14 +6,16 @@ title: 视频
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e93fd4bbd348df3ad31d1be6aa2b1dc73593327a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b80d36ce35a950fa20424124b20cba34c19307c3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007359"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519468"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

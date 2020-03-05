@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 14be19389d7c84c3e1a212239f2ba9e414927254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d4415c6ece2fc9095070eb888ad4bd7bba583d54
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964827"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520238"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "35964827"
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |给定参数可多次提供 (例如, `Concatenate(string,string,...)`函数中的多个输入字符串)。 |
+|allowMultipleOccurrences    |布尔                   |给定参数可多次提供（例如， `Concatenate(string,string,...)`函数中的多个输入字符串）。 |
 |name                        |String                    |参数名称。 |
-|必需                    |Boolean                   |`true`如果参数是必需的;否则`false`为。 |
+|必需                    |布尔                   |`true`如果参数是必需的;否则`false`为。 |
 |type                        |String                    |可取值为：`Boolean`、`Binary`、`Reference`、`Integer` 或 `String`。 默认值为 `String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

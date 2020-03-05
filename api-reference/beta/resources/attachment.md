@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 0c0f257a9bdcf6c149b4f6374e2011cebb437603
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: 7aebce941e9af369dc8e04c41f75142479f42d4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994962"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508162"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ Outlook 任务不支持引用附件。
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到组帖子。|
 |[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md)集合 | 获取 Outlook 任务的附件列表。 |
+|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、邮件、Outlook 任务或帖子上的附件。 |
 

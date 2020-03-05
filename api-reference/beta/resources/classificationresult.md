@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 51b03cf4a579ccab642fe9bdce2e71becebba4be
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5281156752ceb290772daf841530b4ddb80350d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938763"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507661"
 ---
 # <a name="classificationresult-resource-type"></a>classificationResult 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "37938763"
 
 ## <a name="properties"></a>属性
 
-| 属性        | 类型  | 描述                                                            |
+| 属性        | 类型  | 说明                                                            |
 | :-------------- | :---- | :--------------------------------------------------------------------- |
 | confidenceLevel | Int32 | 结果的置信度（0到100）。                         |
 | count           | Int32 | 输入中特定信息类型的实例数。 |

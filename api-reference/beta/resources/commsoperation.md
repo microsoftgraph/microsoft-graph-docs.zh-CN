@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f0b10fc1871f4991f339ff643f450dbfefa3b85c
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7a73777ae8477275e9071645ce092ca1a4187527
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913343"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507588"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +33,7 @@ ms.locfileid: "40913343"
 | 适用      | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                           |
 | id                 | String                      | 操作 ID。 只读。                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。                                              |
-| 状态             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| status             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 无

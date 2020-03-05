@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d4db47278051dd79b697dc352549b95b872e4aa
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 13792bcffabbc9dceb272cd1cf156fbf9a5a5a10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520567"
 ---
 # <a name="singleuser-complex-type"></a>singleUser 复杂类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "42331352"
 | :--------------------------- | :------------------------ | :---------- |
 | id |字符串 | Azure AD 中用户的 ID。 |
 | 说明 |String | Azure AD 中的用户的名称。 只读。 |
-| isBackup | 布尔值 | 对于审批阶段的**singleUser** ，指示用户是否为备份回退审批者。 |
+| isBackup | 布尔 | 对于审批阶段的**singleUser** ，指示用户是否为备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

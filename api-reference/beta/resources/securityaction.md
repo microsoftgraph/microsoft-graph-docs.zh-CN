@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d1f8603659d665291576ce804a0bd80c75a853df
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48c00d99ade3601e051d074272793d6aa0f2c66b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520827"
 ---
 # <a name="securityaction-resource-type"></a>securityAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,19 +36,19 @@ ms.locfileid: "36008514"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |actionReason|String|调用此操作的原因。|
-|appId|String|提交 (POST) 操作的调用应用程序的应用程序 ID。 应从身份验证令牌中提取 appId, 并且调用应用程序不手动输入该 appId。|
-|azureTenantId|字符串|用于确定实体所属的租户的实体的 Azure 租户 ID (多租户支持)。 应从 auth 令牌中提取 azureTenantId, 而不是通过调用应用程序手动输入。|
-|completedDateTime|DateTimeOffset|操作完成时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|createdDateTime|DateTimeOffset|创建操作时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|appId|String|提交（POST）操作的调用应用程序的应用程序 ID。 应从身份验证令牌中提取 appId，并且调用应用程序不手动输入该 appId。|
+|azureTenantId|字符串|用于确定实体所属的租户的实体的 Azure 租户 ID （多租户支持）。 应从 auth 令牌中提取 azureTenantId，而不是通过调用应用程序手动输入。|
+|completedDateTime|DateTimeOffset|操作完成时的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|创建操作时的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |errorInfo|[resultInfo](resultinfo.md)| 操作失败时的错误消息。|
 |id|String| 当操作为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
-|lastActionDateTime|DateTimeOffset| 上次更新此操作时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastActionDateTime|DateTimeOffset| 上次更新此操作时的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |name|字符串| 操作名称。|
-|parameters|[keyValuePair](keyvaluepair.md) 集合| 调用操作所必需的参数 (键值对) 集合, 例如 URL 或 fileHash to block 等。 **Required**|
-|市|[securityActionState](securityactionstate.md)集合|SecurityActionState 的集合, 以保留操作的历史记录。|
+|parameters|[keyValuePair](keyvaluepair.md) 集合| 调用操作所必需的参数（键值对）集合，例如 URL 或 fileHash to block 等。 **Required**|
+|市|[securityActionState](securityactionstate.md)集合|SecurityActionState 的集合，以保留操作的历史记录。|
 |状态|string| 操作的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
-|user|String| 已提交 (POST) 操作的已登录用户的用户主体名称。 应从身份验证令牌中提取用户, 而不是通过调用应用程序手动输入。|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和子提供商的详细信息的复杂类型 (例如, 供应商 = Microsoft; 提供商 = Windows Defender ATP; 子提供程序 = AppLocker)。|
+|user|String| 已提交（POST）操作的已登录用户的用户主体名称。 应从身份验证令牌中提取用户，而不是通过调用应用程序手动输入。|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和子提供商的详细信息的复杂类型（例如，供应商 = Microsoft; 提供商 = Windows Defender ATP; 子提供程序 = AppLocker）。|
 
 ## <a name="relationships"></a>关系
 

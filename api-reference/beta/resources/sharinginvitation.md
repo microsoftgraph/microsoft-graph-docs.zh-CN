@@ -6,14 +6,16 @@ title: SharingInvitation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: eebfa17a08918ec3ac08700577921b1037761086
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6bbe39603ed4daad9c354b1c14ed6a68b3638c6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520651"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ ms.locfileid: "36008332"
 
 ## <a name="properties"></a>属性
 
-| 属性名称  | 类型                          | 说明                                                                                                                   |
+| 属性名  | 类型                          | 说明                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | String                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                          |
 | invitedBy      | [identitySet](identityset.md) | 提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。 |

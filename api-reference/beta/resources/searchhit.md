@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 787ecfeaefc7e5b140dc6338195af7d58e1a8ccd
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 722641b42a403565afcf7baa9de42af2b36a9dec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703917"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520926"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: df012df0ec563a29f15e40d3fefbcd1535dc5211
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ea8999a500f937e5863819554562ffc84bbdad7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008341"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520616"
 ---
 # <a name="shiftitem-resource-type"></a>shiftItem 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "36008341"
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | 注释               | string                  | 的备注`shiftItem`。      |
 | displayName               | string                  | 的名称`shiftItem`。 |
-| startDateTime               | DateTimeOffset                  | 的开始日期和时间`shiftItem`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
-| endDateTime               | DateTimeOffset                 | 的结束日期和时间`shiftItem`。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| theme | scheduleEntityTheme   |  支持的颜色: 白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow. |
-| activities    | [shiftActivity](shiftactivity.md)集合   | 班次的增量部分, 可包含员工在班次中的时间和地点的详细信息。 例如, 工作分配或计划工间休息或午餐。 此为必需属性。 |
+| startDateTime               | DateTimeOffset                  | 的开始日期和时间`shiftItem`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必填。 |
+| endDateTime               | DateTimeOffset                 | 的结束日期和时间`shiftItem`。 必填。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
+| theme | scheduleEntityTheme   |  支持的颜色：白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow. |
+| activities    | [shiftActivity](shiftactivity.md)集合   | 班次的增量部分，可包含员工在班次中的时间和地点的详细信息。 例如，工作分配或计划工间休息或午餐。 此为必需属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,23 +1,25 @@
 ---
 author: rahmit
-description: SitePageData 资源表示 Web 部件的属性。 由于这些属性因 web 部件而异, 这是没有固定属性的 OpenType。
+description: SitePageData 资源表示 Web 部件的属性。 由于这些属性因 web 部件而异，这是没有固定属性的 OpenType。
 ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 873be3af107295e844b6eb513444d0128cf778dc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56729f4409b58f993dd6e5faa9ea70d7f54fb1a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008234"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520525"
 ---
 # <a name="sitepagedata-resource"></a>sitePageData 资源
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SitePageData**资源表示[web 部件][]的属性。 由于这些属性因 web 部件而异, 这是没有固定属性的 OpenType。
+**SitePageData**资源表示[web 部件][]的属性。 由于这些属性因 web 部件而异，这是没有固定属性的 OpenType。
 
 [.Webpart]: webpart.md
 
@@ -36,7 +38,7 @@ ms.locfileid: "36008234"
 ```
 
 ## <a name="properties"></a>属性
-此资源没有固定属性, 但它是包含定义 web 部件所需的所有属性的 OpenType。
+此资源没有固定属性，但它是包含定义 web 部件所需的所有属性的 OpenType。
 
 <!--
 {

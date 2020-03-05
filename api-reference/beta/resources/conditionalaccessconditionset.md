@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e81e8b2748a7dc3b6a9ca028472c1f6ab153b0e
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: dee80ebdacfda6c0b633f1aec1dd085d80eb22e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638510"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507560"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +26,11 @@ ms.locfileid: "37638510"
 |:-------------|:------------|:------------|
 |来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必填。 |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必填。 |
-|clientAppTypes|String collection| 策略中包含的客户端应用程序类型。 可取值为：`browser`、`modern`、`easSupported`、`easUnsupported`、`other`。|
+|clientAppTypes|String 集合| 策略中包含的客户端应用程序类型。 可取值为：`browser`、`modern`、`easSupported`、`easUnsupported`、`other`。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
+|位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
-|signInRiskLevels|String collection| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|signInRiskLevels|String 集合| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
 
 ## <a name="relationships"></a>关系
 

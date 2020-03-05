@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 3b74ddbb26e61dd1c97342a61b30a3fff9ee1851
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 069c42031b1738a3dcb5da77544a33d88ca998e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520778"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36008479"
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
-|provisioningStatus|String|服务计划的预配状态。 可能的值：<br/>"成功"-服务已完全预配。<br/>"已禁用"-服务已禁用。<br/>"PendingInput"-服务尚未预配;等待服务确认。<br/>"PendingActivation"-服务已预配, 但需要管理员显式激活 (例如, Intune_O365 Service plan)。<br/>"PendingProvisioning"-Microsoft 已向产品 SKU 添加了新服务, 但尚未在租户中激活。|
+|provisioningStatus|String|服务计划的预配状态。 可能的值：<br/>"成功"-服务已完全预配。<br/>"已禁用"-服务已禁用。<br/>"PendingInput"-服务尚未预配;等待服务确认。<br/>"PendingActivation"-服务已预配，但需要管理员显式激活（例如，Intune_O365 Service plan）。<br/>"PendingProvisioning"-Microsoft 已向产品 SKU 添加了新服务，但尚未在租户中激活。|
 |appliesTo|String|可将服务计划分配到的对象。 可能的值：<br/>"User"-服务计划可分配给单个用户。<br/>"Company"-服务计划可分配给整个租户。|
 
 ## <a name="json-representation"></a>JSON 表示形式

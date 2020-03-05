@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d45be38338554a1bf5181e4f7a3624b3d928127
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508385"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "40870951"
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
 |id|String| 只读。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
+|isViewingBeforeAcceptanceRequired|布尔|指示用户是否必须在接受前展开并查看协议。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |

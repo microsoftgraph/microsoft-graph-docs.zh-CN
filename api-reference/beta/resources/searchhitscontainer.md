@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703910"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520919"
 ---
 # <a name="searchhitscontainer-resource-type"></a>searchHitsContainer 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "38703910"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |影响|[searchHit](searchhit.md)集合|Encasulate 搜索结果。|
-|moreResultsAvailable|Boolean|如果有更多结果可用，则提供信息。 在这种情况下，您可以增加 "from" 和 "to" 偏移量。|
+|moreResultsAvailable|布尔|如果有更多结果可用，则提供信息。 在这种情况下，您可以增加 "from" 和 "to" 偏移量。|
 |total|Int32|总结果数。 注释这不是页面结果中的数值，而是满足查询的结果总数。|
 
 ## <a name="json-representation"></a>JSON 表示形式

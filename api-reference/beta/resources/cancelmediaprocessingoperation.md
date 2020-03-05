@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 20da55c068f6e0f0a69b876cfd23181eac1391a4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 700c63b2b620117f25df876544aeb6fb0e6d0230
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913497"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507780"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>CancelMediaProcessingOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +24,11 @@ ms.locfileid: "40913497"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 各种                            | Boolean                     | 指示是否停止所有操作或当前操作。                                                                                    |
+| 各种                            | 布尔                     | 指示是否停止所有操作或当前操作。                                                                                    |
 | 适用                  | String                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                              |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
 
 ## <a name="relationships"></a>关系
 无

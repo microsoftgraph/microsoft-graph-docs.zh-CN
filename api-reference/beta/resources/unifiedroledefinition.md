@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: be1b8a0b1a623c6cf322d5cf7997f04b87875c51
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 9f9b45885219a081bad8d7f34a49f81d8062d212
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437746"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519608"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-UnifiedRoleDefinition 是列出可执行的操作 (如读取、写入和删除) 的权限的集合。
+UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除）的权限的集合。
 
 ## <a name="methods"></a>方法
 
@@ -34,12 +36,12 @@ UnifiedRoleDefinition 是列出可执行的操作 (如读取、写入和删除) 
 |:-------------|:------------|:------------|
 |说明|String| UnifiedRoleDefinition 的说明。 当 isBuiltIn 为 true 时为只读。 |
 |displayName|字符串| UnifiedRoleDefinition 的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| UnifiedRoleDefinition 的唯一标识符。 键, 不可为 null, 只读。 |
+|id|字符串| UnifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。 |
 |isBuiltIn|布尔值| 指示 unifiedRoleDefinition 是否是产品或自定义的默认设置的一部分的标志。 只读。 |
-|isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false, 则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
+|isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 |
-|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的, 则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必填。 |
+|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="relationships"></a>关系

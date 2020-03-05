@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5a26004cf20a5f8c5c032eeade8f657fdf8bd93c
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: a957feaffe36e76a36958ef7855376bcfe58484e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508448"
 ---
 # <a name="acl-resource-type"></a>acl 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

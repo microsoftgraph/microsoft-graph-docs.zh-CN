@@ -6,14 +6,16 @@ title: RestoreAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 88adfd244e2f8460d6749333cc64a80bf4d47361
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec2456105c7ae1844f97e80601fe2df3bf38d028
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008689"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521087"
 ---
 # <a name="restoreaction-resource-type"></a>RestoreAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

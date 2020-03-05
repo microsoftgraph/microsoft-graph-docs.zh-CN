@@ -1,24 +1,26 @@
 ---
 title: profilePhoto 资源类型
-description: 用户、组或从 Exchange Online 或 Azure Active Directory (AAD) 访问的 Outlook 联系人的个人资料照片。 它是不以 base-64 编码的二进制数据。
+description: 用户、组或从 Exchange Online 或 Azure Active Directory （AAD）访问的 Outlook 联系人的个人资料照片。二进制数据未在 base-64 中进行编码。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: eee47378343aef1b0a471ac186099d4598124862
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f7d582c64e600846a17654623ca233d0132e6bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965675"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521458"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用户、组或从 Exchange Online 或 Azure Active Directory (AAD) 访问的 Outlook 联系人的个人资料照片。 它是不以 base-64 编码的二进制数据。
+用户、组或从 Exchange Online 或 Azure Active Directory （AAD）访问的 Outlook 联系人的个人资料照片。 它是不以 base-64 编码的二进制数据。
 
-Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504' 和 '648x648'。 在 AAD 上, 照片可以是任何维度。
+Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504' 和 '648x648'。 在 AAD 上，照片可以是任何维度。
 
 ## <a name="methods"></a>方法
 

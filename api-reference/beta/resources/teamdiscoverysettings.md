@@ -1,18 +1,20 @@
 ---
 title: teamDiscoverySettings 资源类型
-description: 用于配置他人的团队可发现性的设置。
+description: 用于让他人配置团队可发现性的设置。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6dd1c3728d91be88689f72e020b773f7875807a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a668c9d3b234fede0ad5c151e1dbbc95fc93516
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964569"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519958"
 ---
 # <a name="teamdiscoverysettings-resource-type"></a>teamDiscoverySettings 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "35964569"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|showInTeamsSearchAndSuggestions|Boolean|如果设置为 true, 则可以通过搜索和团队客户端的建议查看团队。|
+|showInTeamsSearchAndSuggestions|布尔|如果设置为 true，则可以通过搜索和团队客户端的建议查看团队。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,18 +1,20 @@
 ---
-title: Members
+title: 成员
 description: '介绍团队的可见性。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 0983d62ddf884df4997ad02bdc9d574bbeafdcae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0e043fa05b6f1f3717d8ec2d83d62f3ec3437fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007667"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519804"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 枚举类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,5 +24,5 @@ ms.locfileid: "36007667"
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
-|private|0|任何人都可以看到团队, 但只有所有者可以向团队添加用户。|
-|公开|1|任何人都可以加入团队。|
+|private|0|任何人都可以看到团队，但只有所有者可以向团队添加用户。|
+|公开|1 |任何人都可以加入团队。|

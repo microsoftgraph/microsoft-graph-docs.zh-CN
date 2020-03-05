@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 35826dabd9052023abdc9d8c83ac9640ef550061
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53b1e18bd1e7b78e7afb479cac3c5f6cc7ecff88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966111"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521874"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +24,13 @@ ms.locfileid: "35966111"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|String|城市。|
+|城市|String|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
 |postalCode|String|邮政编码。|
 |postOfficeBox|String|邮局编号。|
 |state|String|省/市/自治区。|
 |street|String|街道。|
-|type|: Physicaladdresstype|地址类型。 可取值为：`unknown`、`home`、`business`、`other`。|
+|type|： Physicaladdresstype|地址类型。 可取值为：`unknown`、`home`、`business`、`other`。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

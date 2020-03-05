@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: fb2dd66e9e18e4951005bcda2b249235e99cd829
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: b724ee1f2dec3821983682f893a15b7b9db25655
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394440"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520280"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

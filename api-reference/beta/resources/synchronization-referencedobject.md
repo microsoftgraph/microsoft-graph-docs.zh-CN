@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c1c7e1554764031efbfa3a5d1c1280f4b72bc160
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c27830b1ee9762b52a7f24a0785e1b19010181d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520119"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "36007856"
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:--------------------------|:---------------|
 |referencedObjectName        |String                     |引用的对象的名称。 必须与[目录定义](synchronization-directorydefinition.md)中的一个对象相匹配。|
-|referencedProperty          |String                     |**目前不支持**。 引用的对象中属性的名称, 其值将用作引用。|
+|referencedProperty          |String                     |**目前不支持**。 引用的对象中属性的名称，其值将用作引用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

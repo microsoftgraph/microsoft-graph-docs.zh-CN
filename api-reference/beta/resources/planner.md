@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 2ef94a7507558279e5295239588e2a8eda512882
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45dc3ee05f5cee36ac1eecc99aff03f71b93c515
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009130"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521826"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,9 +37,9 @@ ms.locfileid: "36009130"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| 只读。 可为 Null。 返回指定的存储桶的集合|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回指定计划的集合|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 返回指定任务的集合|
+|buckets|[plannerBucket](plannerbucket.md) collection| 只读。 可为 NULL。 返回指定的存储桶的集合|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回指定计划的集合|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回指定任务的集合|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

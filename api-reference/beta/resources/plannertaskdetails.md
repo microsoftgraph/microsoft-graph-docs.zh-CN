@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6eaeaf65271309270d7ecfd042ed75e5c32451a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00d1360435f38cdf22547e5f509b46c931cb50b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965850"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521641"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +33,7 @@ ms.locfileid: "35965850"
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|任务上的检查表项目集合。|
 |说明|String|任务描述|
-|id|String| 只读。 任务详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
+|id|字符串| 只读。 任务详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|任务上的引用集合。|
 

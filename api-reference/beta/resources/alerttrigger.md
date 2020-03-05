@@ -1,29 +1,31 @@
 ---
 title: alertTrigger 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 682ff7952b39cd71399441014c528eaba32ac4b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013388"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508336"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 
+命名空间： microsoft. graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关触发检测的属性 (警报实体中存在属性) 的信息。
+包含有关触发检测的属性（警报实体中存在属性）的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |name|字符串|充当检测触发器的属性的名称。|
-|type|String|用于解释的键: 值对中的属性的类型。 例如, String、Boolean 等。|
+|type|String|用于解释的键：值对中的属性的类型。 例如，String、Boolean 等。|
 |value|String|充当检测触发器的属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

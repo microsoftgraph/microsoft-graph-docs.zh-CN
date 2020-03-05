@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007114"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519209"
 ---
 # <a name="workbooknameditem-resource-type"></a>workbookNamedItem 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "36007114"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|对象的名称。只读。|
-|注释|string|表示与此名称相关联的注释。|
+|comment|string|表示与此名称相关联的注释。|
 |scope|string|指明是否将 name 限定到工作簿或特定工作表。只读。|
 |类型|字符串|指示与名称相关的引用类型。可能的值是：`String`、`Integer`、`Double`、`Boolean`、`Range`。只读。|
 |value|string|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|

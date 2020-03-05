@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3829a4018c9b904b058329d52149e98337ebfae6
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: c439cf8f53a6ce7a9be146e02888ba4a819101ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234209"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521612"
 ---
 # <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

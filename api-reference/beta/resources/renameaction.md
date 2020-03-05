@@ -6,14 +6,16 @@ title: RenameAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d62d3f7f836ece716bdc3e616e1943de8c040652
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6745f932c0a2d9b92273f45e147439cfbd2ed911
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965415"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521129"
 ---
 # <a name="renameaction-resource-type"></a>RenameAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

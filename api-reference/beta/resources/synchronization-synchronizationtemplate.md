@@ -1,30 +1,32 @@
 ---
 title: synchronizationTemplate 资源类型
-description: " 任何人都可以检索模板以查看默认设置, 包括同步架构。"
+description: " 任何人都可以检索模板以查看默认设置，包括同步架构。"
 localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9176c092d62b4ee43d15d29884a3882fd3c627e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9952b06276efa712068091ecd8b7b5dc5e6769d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520014"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为特定应用程序提供预先配置的同步设置。 默认情况下, 将对基于该模板的任何[同步作业](synchronization-synchronizationjob.md)使用这些设置。 应用程序开发人员指定模板;任何人都可以检索模板以查看默认设置, 包括[同步架构](synchronization-synchronizationschema.md)。
+为特定应用程序提供预先配置的同步设置。 默认情况下，将对基于该模板的任何[同步作业](synchronization-synchronizationjob.md)使用这些设置。 应用程序开发人员指定模板;任何人都可以检索模板以查看默认设置，包括[同步架构](synchronization-synchronizationschema.md)。
 
-您可以为应用程序提供多个模板, 并指定一个默认模板。 如果有多个模板可用于您感兴趣的应用程序, 请查找特定于应用程序的指南, 以确定哪一个模板最符合您的需求。
+您可以为应用程序提供多个模板，并指定一个默认模板。 如果有多个模板可用于您感兴趣的应用程序，请查找特定于应用程序的指南，以确定哪一个模板最符合您的需求。
 
 ## <a name="methods"></a>方法
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)集合  |列出可用于应用程序实例或应用程序实例 (服务主体) 的模板。|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)集合  |列出可用于应用程序实例或应用程序实例（服务主体）的模板。|
 |[获取](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |读取**synchronizationTemplate**对象的属性和关系。|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
@@ -37,11 +39,11 @@ ms.locfileid: "35964597"
 |:--------------|:--------------------------|:-----------------------------|
 |id             |字符串                     |唯一的模板标识符。|
 |applicationId  |String                     |此模板所属应用程序的标识符。|
-|设置        |Boolean                    |`true`如果建议将此模板作为应用程序的默认模板。|
+|设置        |布尔                    |`true`如果建议将此模板作为应用程序的默认模板。|
 |说明    |String                     |模板的说明。|
-|被   |String                     |`true`如果此模板应显示在可用于应用程序实例 (服务主体) 的模板集合中。|
+|被   |String                     |`true`如果此模板应显示在可用于应用程序实例（服务主体）的模板集合中。|
 |factoryTag     |String                     |同步引擎支持的已知工厂标记之一。 **FactoryTag**告知同步引擎在处理基于此模板的作业时要使用的实现。|
-|metadata       |metadataEntry 集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
+|metadata       |metadataEntry 集合   |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
 
 ## <a name="relationships"></a>关系
 | 关系      | 类型      |说明|

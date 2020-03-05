@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b5c90db3ec241017781d52bbb623d728a7959445
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7b6639b810507d7bee0c0a54f98cefae8d51677
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520420"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>skypeForBusinessDeviceUsageDistributionUserCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9c3d968c4d36b8220d505edb6b7503a2b1206416
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e947fa02624f2c24ea6433dc2e62eb0da218308
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519279"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>workbookChartPointFormat 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

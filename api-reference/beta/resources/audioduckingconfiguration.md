@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0305f076c4952c2e5d29df85d65f5f8d6c86232f
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 99aa202e0048b328d97453f57d249df749f7bce5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913756"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508113"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

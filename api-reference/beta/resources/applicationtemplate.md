@@ -5,14 +5,16 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c34c083a4cfee63db724228d9390c7452ca5a92
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c707a9010103f4226e62782a83891ff880a245e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870944"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508259"
 ---
 # <a name="applicationtemplate-resource-type"></a>applicationTemplate 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,15 +33,15 @@ ms.locfileid: "40870944"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|categories|String collection|应用程序的类别列表。 受支持的值可以`Collaboration`是`Business Management`： `Consumer`、`Content management`、 `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Web design & hosting`、、、、、、、、、、、、、、、、、、、、和。 `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`|
-|description|String|应用程序的说明。|
+|categories|String 集合|应用程序的类别列表。 受支持的值可以`Collaboration`是`Business Management`： `Consumer`、`Content management`、 `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Web design & hosting`、、、、、、、、、、、、、、、、、、、、和。 `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`|
+|说明|String|应用程序的说明。|
 |displayName|字符串|应用程序名。|
 |homePageUrl|String|应用程序的主页 URL。|
 |id|字符串| 应用程序的唯一标识符。 只读。|
 |logoUrl|String|用于获取此应用程序徽标的 URL。|
 |发布者|String|此应用程序的发布者的名称。|
-|supportedProvisioningTypes|String collection|此应用程序支持的预配模式的列表。 唯一有效的值为`sync`。|
-|supportedSingleSignOnModes|String collection|此应用程序支持的单一登录模式列表。 受支持的值`password`为`saml`、 `external`、和`oidc`。|
+|supportedProvisioningTypes|String 集合|此应用程序支持的预配模式的列表。 唯一有效的值为`sync`。|
+|supportedSingleSignOnModes|String 集合|此应用程序支持的单一登录模式列表。 受支持的值`password`为`saml`、 `external`、和`oidc`。|
 
 ## <a name="relationships"></a>关系
 

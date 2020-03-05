@@ -1,31 +1,33 @@
 ---
-title: teamsTabConfiguration 资源类型 (开放式类型)
+title: teamsTabConfiguration 资源类型（开放式类型）
 description: 确定选项卡内容的设置。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c53fdc0b21a00c5eae43b8c170a1512e55d496b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec8192d486194132e71f8f1fff493e081f8192e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964425"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519839"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration 资源类型 (开放式类型)
+# <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration 资源类型（开放式类型）
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-确定[选项卡](teamstab.md)内容的设置。以交互方式配置选项卡时, 选项卡提供程序应用程序将设置此信息。
-除了以下属性之外, 一些选项卡提供程序应用程序还指定其他自定义属性。
+确定[选项卡](teamstab.md)内容的设置。以交互方式配置选项卡时，选项卡提供程序应用程序将设置此信息。
+除了以下属性之外，一些选项卡提供程序应用程序还指定其他自定义属性。
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |-|-|-|
 |  entityId   |   string |  由选项卡提供程序承载的实体的标识符。     |
-|  contentUrl |   string |  用于在团队中呈现选项卡内容的 Url。 必需。    |
-|  removeUrl  |   string |  使用团队客户端删除选项卡时, 由团队客户端调用的 Url。     |
+|  contentUrl |   string |  用于在团队中呈现选项卡内容的 Url。 必填。    |
+|  removeUrl  |   string |  使用团队客户端删除选项卡时，由团队客户端调用的 Url。     |
 |  websiteUrl |   string |  用于显示团队外部的选项卡内容的 Url。     |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: a0ff737b196cc486aa01d5e0f5a34c30edc7c8bf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ab1be049ea50dd377cb0f5bc76c2e86578f88a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964422"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519853"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "35964422"
 
 | 成员             | 值 | 说明                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| 无               | 0     | 团队的默认类型, 可提供标准团队体验。          |
-| educationStandard  | 1     | 由教育用户创建的团队。 教育用户创建的所有团队都属于 Edu 类型。 |
-| educationClass     | 双面     | 针对某个类进行了优化的团队体验。 这样可以跨 O365 分段功能。 |
-| educationProfessionalLearningCommunity | 第三章 | 为 PLC 优化的团队体验。 [在此处](https://en.wikipedia.org/wiki/Professional_learning_community)了解有关 PLC 的详细信息。 |
-| educationStaff     | 4     |  对于组织中员工的优化体验的团队类型, 员工主管 (如主体) 是管理员, 而教师是一个专门的笔记本提供的团队成员。 有关更多详细信息, 请参阅[OneNote 教职员工笔记本教育](https://www.onenote.com/staffnotebookedu)版。 |
-| 向 unknownfuturevalue | 步     | 将 Sentinel 值保留为占位符, 以便将来扩展枚举。 |
+| 无               | 0     | 团队的默认类型，可提供标准团队体验。          |
+| educationStandard  | 1      | 由教育用户创建的团队。 教育用户创建的所有团队都属于 Edu 类型。 |
+| educationClass     | 2      | 针对某个类进行了优化的团队体验。 这样可以跨 O365 分段功能。 |
+| educationProfessionalLearningCommunity | 3  | 为 PLC 优化的团队体验。 [在此处](https://en.wikipedia.org/wiki/Professional_learning_community)了解有关 PLC 的详细信息。 |
+| educationStaff     | 4      |  对于组织中员工的优化体验的团队类型，员工主管（如主体）是管理员，而教师是一个专门的笔记本提供的团队成员。 有关更多详细信息，请参阅[OneNote 教职员工笔记本教育](https://www.onenote.com/staffnotebookedu)版。 |
+| 向 unknownfuturevalue | 7      | 将 Sentinel 值保留为占位符，以便将来扩展枚举。 |

@@ -6,14 +6,16 @@ title: 共享的内容
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d4337341245d355d85d8d4ba74171ed95863e06a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a737f3cbdcaf848e999bcf7ca09775b28ca016b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008465"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520736"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 559acf5727f34a05fdfa2f3cbad7669c40182622
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83bd3689ca7dc695ac538a7d87e0d44ce561f9dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013407"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508350"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,17 +36,17 @@ ms.locfileid: "36013407"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |activityGroupName|String|此警报归因于的活动组（攻击者）的名称或别名。|
-|assignedTo|字符串|分配警报的分析员名称，用于分类、调查或修复（支持[更新](../api/alert-update.md)）。|
-|azureSubscriptionId|字符串|Azure 订阅 ID，如果此警报与 Azure 资源相关时显示。|
+|assignedTo|String|分配警报的分析员名称，用于分类、调查或修复（支持[更新](../api/alert-update.md)）。|
+|azureSubscriptionId|String|Azure 订阅 ID，如果此警报与 Azure 资源相关时显示。|
 |azureTenantId |String|Azure Active Directory 租户 ID。 必需。 |
 |“类别”|字符串|警报的类别（例如，credentialTheft、ransomware 等）。|
 |closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`（支持 [更新](../api/alert-update.md)）。|
 |cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md) 集合|提供程序生成的与此警报相关的云应用程序的安全相关状态信息。|
-|comments|String collection|客户提供的警报评论（用于客户警报管理）（支持[更新](../api/alert-update.md)）。|
+|comments|String 集合|客户提供的警报评论（用于客户警报管理）（支持[更新](../api/alert-update.md)）。|
 |confidence|Int32|检测逻辑的可信度（1-100 之间的百分比）。|
-|createdDateTime |DateTimeOffset|警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
-|description|String|警报说明。|
-|detectionIds|String collection|与此警报实体相关的警报集（每个警报作为单独的记录推送到 SIEM）。|
+|createdDateTime |DateTimeOffset|警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必填。|
+|description|字符串|警报说明。|
+|detectionIds|字符串集合|与此警报实体相关的警报集（每个警报作为单独的记录推送到 SIEM）。|
 |eventDateTime |DateTimeOffset|发生用作生成警报触发器的事件的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
 |反馈|alertFeedback|分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 （支持[更新](../api/alert-update.md)）|
 |fileStates|[fileSecurityState](filesecuritystate.md) 集合|提供程序生成的与此警报相关的文件的安全相关状态信息。|
@@ -55,11 +57,11 @@ ms.locfileid: "36013407"
 |malwareStates|[malwareState](malwarestate.md) 集合|威胁智能，属于与此警报相关的恶意软件。|
 |networkConnections|[networkConnection](networkconnection.md) 集合|提供程序生成的与此警报相关的网络连接的安全相关状态信息。|
 |processes|[process](process.md) 集合|提供程序生成的与此警报相关的流程的安全相关状态信息。|
-|recommendedActions|String collection|供应商/提供程序建议对警报采取的措施（例如，隔离计算机、enforce2FA、重新映像主机）。|
+|recommendedActions|String 集合|供应商/提供程序建议对警报采取的措施（例如，隔离计算机、enforce2FA、重新映像主机）。|
 |registryKeyStates|[registryKeyState](registrykeystate.md) 集合|提供程序生成的与此警报相关的注册表项的安全相关状态信息。|
-|severity |alertSeverity|警报严重性 - 由供应商/提供程序设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
+|severity |alertSeverity|警报严重性 - 由供应商/提供程序设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必填。|
 |sourceMaterials|字符串集合|与警报相关的源材料的超链接 (URI)，例如，提供程序的警报或日志搜索的用户界面等。|
-|status |alertStatus|警告生命周期的状态（阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 （支持[更新](../api/alert-update.md)）。 必需。|
+|status |alertStatus|警告生命周期的状态（阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 （支持[更新](../api/alert-update.md)）。 必填。|
 |标记|String collection|用户可定义的标签，可应用于警报并可用作筛选条件（例如“HVA”、“SAW”等）（支持[更新](../api/alert-update.md)）。|
 |title |String|警报标题。 必需。|
 |触发器|[alertTrigger](alerttrigger.md) 集合|有关触发警报的特定属性的安全相关信息（警报中显示的属性）。 警报可能包含有关多个用户、主机、文件、ip 地址的信息。 此字段指示哪些属性触发警报生成。|

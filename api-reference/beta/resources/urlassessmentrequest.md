@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e728e172ec8870082f6b7d668f1f19f29f22dc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2eb3372b92a3665129bb0b4eb4d0f27bc77884f3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867161"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519566"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>urlAssessmentRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "40867161"
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|来自 ubmitter 的预期评估。 可能的值是：`block`、`unblock`。|
 |id|String|威胁评估请求 ID 是一个全局唯一标识符（GUID）。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估过程状态。 可取值为：`pending`、`completed`。|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估过程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 

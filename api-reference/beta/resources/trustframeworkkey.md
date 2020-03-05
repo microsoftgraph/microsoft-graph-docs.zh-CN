@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d61548707d9530d30f81b61ad88dd29ae2576c8
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: a9b94075b7a81fdb596038afac21fbf6cbc68f42
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519650"
 ---
 # <a name="trustframeworkkey-resource-type"></a>trustFrameworkKey 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

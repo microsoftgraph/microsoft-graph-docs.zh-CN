@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9de2bfec6bab126577fa0013a58caac83ad031f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ba7eaaed5918635ab6a8744d2b9136475e83ec3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521584"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +70,7 @@ ms.locfileid: "36008983"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
-|categories|String collection|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
+|categories|String 集合|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
 |changeKey|字符串|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|字符串|对话线程的唯一 ID。只读。|
@@ -76,7 +78,7 @@ ms.locfileid: "36008983"
 |发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
-|importance | String | 组帖子的重要性: `low`、 `normal`、。 `high` |
+|importance | String | 组帖子的重要性： `low`、 `normal`、。 `high` |
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
 |receivedDateTime|DateTimeOffset|接收到帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
@@ -85,8 +87,8 @@ ms.locfileid: "36008983"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|张贴内容的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 此为只读属性。 可为 Null。|
-|extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
+|attachments|[附件](attachment.md) 集合|张贴内容的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 此为只读属性。 可为 NULL。|
+|extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[Post](post.md)|此文章在[conversationThread](conversationthread.md)中答复的早期帖子。 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|

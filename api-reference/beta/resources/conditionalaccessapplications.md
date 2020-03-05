@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e163d8f958a400c9c478b0aca865bdfa077c8d60
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 4e66618a8dbf6d5d29ca3b5c08a9b7bd10e05ded
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638587"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507567"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "37638587"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| includeApplications | String collection | 策略应用于的应用程序 Id 列表，除非明确排除（在 excludeApplications 中）。 也可以将设置为`All`。 |
-| excludeApplications | String collection | 从策略中显式排除的应用程序 Id 的列表。 |
-| includeUserActions | String collection | 要包括的用户操作（例如`urn:user:registersecurityinfo`） |
+| includeApplications | String 集合 | 策略应用于的应用程序 Id 列表，除非明确排除（在 excludeApplications 中）。 也可以将设置为`All`。 |
+| excludeApplications | String 集合 | 从策略中显式排除的应用程序 Id 的列表。 |
+| includeUserActions | String 集合 | 要包括的用户操作（例如`urn:user:registersecurityinfo`） |
 
 ## <a name="relationships"></a>关系
 

@@ -1,22 +1,24 @@
 ---
 title: programControl 资源类型
-description: 在 Azure AD access 评论功能中, program control 对象表示一个控件, 将访问权限链接到某个程序。
+description: 在 Azure AD access 评论功能中，program control 对象表示一个控件，将访问权限链接到某个程序。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 16824c2ed0c053f0cc4f3a0a2903324ff1a2bf5e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ee374108cdebca2e6ae06ee18a245f5c9eeebf74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965633"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521444"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md)功能中, program control 对象表示一个控件, 将访问权限链接到某个程序。
+在 Azure AD [access 评论](accessreviews-root.md)功能中，program control 对象表示一个控件，将访问权限链接到某个程序。
 
 
 ## <a name="methods"></a>方法
@@ -32,8 +34,8 @@ ms.locfileid: "35965633"
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 程序和控件之间的链接的功能分配的标识符                                      |
 | `programId`              |`String`                | 此控件所属程序的 programId。 创建时为必需项。                            |
-| `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。 创建时为必需项。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 创建时为必需项。 |
+| `controlId`              |`String`                | 控件的 controlId，特别是 access 评审的标识符。 创建时为必需项。                                                |
+| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。 创建时为必需项。 |
 | `displayName`            |`String`                | 控件的名称。                                                             |
 | `status`                 |`String`                | 控件的生命周期状态。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 程序控件的创建日期和时间。                                        |
@@ -83,11 +85,11 @@ ms.locfileid: "35965633"
 
 程序控制对象中包含的程序资源是对作为访问评审目标的对象的引用的表示形式。
 
-此类型将从`microsoft.graph.identity`继承并包含一个附加属性:
+此类型将从`microsoft.graph.identity`继承并包含一个附加属性：
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| `type`               |`String`  | 资源的类型, 指示它是一个组还是一个应用程序。 |     
+| `type`               |`String`  | 资源的类型，指示它是一个组还是一个应用程序。 |     
 
 ## <a name="json-representation"></a>JSON 表示形式
 

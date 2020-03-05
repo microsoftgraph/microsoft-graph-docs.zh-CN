@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 7f19b9a14e1f6f4016e53a4a0ff1f62ae27e1cfd
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fe3117eae0e514bea979281220da12820574cb4a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703754"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520897"
 ---
 # <a name="searchrequest-resource-type"></a>searchRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,13 +26,13 @@ ms.locfileid: "38703754"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|stored_fields|String collection |包含要为搜索 _so urces 对象返回的字段。 注释仅当在响应中指定了`externalItem` entityType = 时，这才适用。|
-|contentSources|String collection|包含要设定的连接。 <br>遵循以下格式：在`/external/connections/connectionid`连接器`connectionid`管理中定义 ConnectionId 的位置。 <br> 注释 contentSource 仅当 entityType =`externalItem`时适用。 |
-|enableTopResults|Boolean|这将触发邮件的混合排序：前3个邮件最相关<br> 这仅适用于 entityType =`message`。|
+|stored_fields|String 集合 |包含要为搜索 _so urces 对象返回的字段。 注释仅当在响应中指定了`externalItem` entityType = 时，这才适用。|
+|contentSources|String 集合|包含要设定的连接。 <br>遵循以下格式：在`/external/connections/connectionid`连接器`connectionid`管理中定义 ConnectionId 的位置。 <br> 注释 contentSource 仅当 entityType =`externalItem`时适用。 |
+|enableTopResults|布尔|这将触发邮件的混合排序：前3个邮件最相关<br> 这仅适用于 entityType =`message`。|
 |entityTypes|`entityType` 集合| 可取值为：`event`、`message`、`driveItem`、`externalFile`、`externalItem`。|
-|起始数量|Int32|指定搜索结果的偏移量。 偏移量0返回的第一个结果。|
+|发件人|Int32|指定搜索结果的偏移量。 偏移量0返回的第一个结果。|
 |查询|[searchQuery](searchquery.md)|包含查询词。|
-|大小|Int32|要检索的页面的大小。|
+|size|Int32|要检索的页面的大小。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

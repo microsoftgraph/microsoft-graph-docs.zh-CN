@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 61c23e32d455dd18af639dad31806d54d9e8bd07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fa6952640a1986d0139007ba863275aef2bc6aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974022"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507738"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35974022"
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [聊天](channel.md)收藏 | 获取用户所属的聊天列表。|
 |[获取聊天](../api/chat-get.md) | [参与](channel.md) | 读取聊天的属性和关系。|
-|[列出聊天成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md)集合 | 获取聊天中所有用户的列表。|
+|[列出聊天成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。|
 |[获取聊天成员](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | 获取聊天中的单个用户。|
 |[列出聊天中的消息](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
@@ -43,7 +45,7 @@ ms.locfileid: "35974022"
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) 集合 | 聊天中所有应用的集合。 可为 Null。 |
-| members | [conversationMember](conversationmember.md)集合 | 聊天中所有人员的集合。 可为 Null。 |
+| members | [conversationMember](conversationmember.md) 集合 | 聊天中所有人员的集合。 可为 NULL。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有邮件的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8fe6ca32e606829f12400a03a70c9fb783f32f77
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 44f5f52c7cf09f3a18faf9c24b1ef5a8d25557b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234206"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507668"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>claimsMappingPolicy 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,17 +37,17 @@ ms.locfileid: "41234206"
 | [列出 claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | 读取 claimsMappingPolicies 对象的属性和关系。 |
 | [更新 claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | 无 | 更新 claimsMappingPolicy 对象。 |
 | [删除 claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | 无 | 删除 claimsMappingPolicy 对象。 |
-| [列出 appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | 获取已应用此策略的 directoryObjects 的列表。 |
+| [列出 appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) 集合 | 获取已应用此策略的 directoryObjects 的列表。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|Boolean|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|
+|displayName|String| 此策略的显示名称。 必填。|
+|isOrganizationDefault|布尔|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>声明映射策略定义的属性
 
@@ -94,8 +96,8 @@ ms.locfileid: "41234206"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|版本|整数|将值设置为1。 必需。|
-|IncludeBasicClaimSet|Boolean|如果设置为 true，则在受策略影响的令牌中发出基本声明集中的所有声明。 如果设置为 false，则基本声明集中的声明不在令牌中，除非它们单独添加到同一策略的 ClaimsSchema 属性中。|
+|版本|整数|将值设置为1。 必填。|
+|IncludeBasicClaimSet|布尔|如果设置为 true，则在受策略影响的令牌中发出基本声明集中的所有声明。 如果设置为 false，则基本声明集中的声明不在令牌中，除非它们单独添加到同一策略的 ClaimsSchema 属性中。|
 |ClaimsSchema|JSON 对象|定义受策略影响的令牌中存在的声明，以及基本声明集和核心声明集。 对于在此属性中定义的每个声明架构条目，需要特定信息。 指定数据的来源（"值" 或 "源/ID 对"），以及将数据作为（声明类型）发出的声明。 [ClaimsSchema 定义](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)中提供了更多详细信息。|
 |ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 [ClaimsTransformation 定义](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)中提供了更多详细信息。|
 
@@ -104,7 +106,7 @@ ms.locfileid: "41234206"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

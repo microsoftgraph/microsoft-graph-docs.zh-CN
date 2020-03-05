@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 62ce735d5719ef05c5f96de546adcd5518a72786
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268316"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521227"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

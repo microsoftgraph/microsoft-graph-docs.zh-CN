@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04b2d4ab31651fe34affe42ef4811c3802762581
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: 6357d43093b590a42b4a1f6583f46ff7c2fc2d14
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023196"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519412"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

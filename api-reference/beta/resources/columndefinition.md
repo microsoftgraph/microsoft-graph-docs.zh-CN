@@ -6,14 +6,16 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507626"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,9 +61,9 @@ ms.locfileid: "35973291"
 
 列可以包含各种类型的数据。
 以下属性表示列存储的数据类型以及该数据的其他设置。
-与类型相关的属性 (boolean、计算、choice、currency、dateTime、lookup、number、personOrGroup、text) 是相互排斥的--一个列只能有一个指定的属性。
+与类型相关的属性（boolean、计算、choice、currency、dateTime、lookup、number、personOrGroup、text）是相互排斥的--一个列只能有一个指定的属性。
 
-| 属性名           | 类型    | 说明
+| 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
 | **说明**         | string  | 面向用户的列描述。
@@ -70,7 +72,7 @@ ms.locfileid: "35973291"
 | **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
 | **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **名称**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
 | **boolean**       | [booleanColumn][]       | 此列存储布尔值。
@@ -85,8 +87,8 @@ ms.locfileid: "35973291"
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
->**注意:** 这些属性对应于 SharePoint 的[SPFieldType][]枚举。
-虽然在上表中表示的是最常见的字段类型, 但此 beta API 仍缺少一些。
+>**注意：** 这些属性对应于 SharePoint 的[SPFieldType][]枚举。
+虽然在上表中表示的是最常见的字段类型，但此 beta API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注

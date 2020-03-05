@@ -6,14 +6,16 @@ title: ShareAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 10eb5b870a5ecd80f4a064d1dca496f216bf241d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 94bf1b519308043f3421dc211eac006cfc4fd601
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520743"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

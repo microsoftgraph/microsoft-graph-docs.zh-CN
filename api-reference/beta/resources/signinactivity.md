@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d93ff4f3b395d9b0820865c3293a419471ab6473
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8144a681f93df45827c8b304d507eea820adcca2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520595"
 ---
 # <a name="signinactivity-resource-type"></a>signInActivity 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,10 +22,10 @@ ms.locfileid: "37939241"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |lastSignInDateTime|DateTimeOffset|特定用户的上次登录日期。 您可以使用此字段来计算用户上次登录目录的时间。 此字段可用于生成报表，如非活动用户。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|lastSignInRequestId|字符串|此用户执行的最后一个登录的请求 ID。|
+|lastSignInRequestId|String|此用户执行的最后一个登录的请求 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

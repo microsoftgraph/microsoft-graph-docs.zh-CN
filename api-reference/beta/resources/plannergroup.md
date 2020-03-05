@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 308c64e7eb086f48859581cf2d66aae07269fe6e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d20a6d5c4918f729189e95a27bad18d9f872c8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965955"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521725"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "35965955"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回组所拥有的[plannerPlans](plannerplan.md) 。|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回组所拥有的[plannerPlans](plannerplan.md) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

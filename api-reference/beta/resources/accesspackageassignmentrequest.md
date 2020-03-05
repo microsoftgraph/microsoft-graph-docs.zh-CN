@@ -5,21 +5,23 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c2440dfc7e798ea5b0a197f60b62acce4199b4ca
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 7d7fcf663abf15478b0c2745e9c60e1021d1ee7b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331267"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508546"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。  Azure AD 还会自动创建访问包分配请求，以用于跟踪访问删除。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,7 +36,7 @@ ms.locfileid: "42331267"
 |completedDate|DateTimeOffset|请求的处理结束日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |id|String| 只读。|
-|isValidationOnly|布尔值|如果请求不处理工作分配，则为 True。|
+|isValidationOnly|布尔|如果请求不处理工作分配，则为 True。|
 |合理化|String|请求者提供的理由。|
 |requestState|String|、 `Denied` `Delivered` `Submitted` 、或`Scheduled`的其中`PartiallyDelivered`一个。 只读。|
 |requestStatus|String|有关请求处理状态的详细信息。 只读。|

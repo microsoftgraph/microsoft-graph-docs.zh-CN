@@ -6,14 +6,16 @@ title: SharedDriveItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7d5af60c4ba5c67046909f6998d298444fa06d51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f310d35c6126573f022a13934faf911de1122606
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965157"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520729"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,7 +66,7 @@ ms.locfileid: "35965157"
 | **list**          | [**簿**][list]           | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]   | 用于访问基础 **listItem**
 | **权限**    | [**拒绝**][permission] | 用于访问代表基础共享链接的**权限**
-| **网站**          | [**网站**][site]           | 用于访问基础 **site**
+| **site**          | [**网站**][site]           | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 

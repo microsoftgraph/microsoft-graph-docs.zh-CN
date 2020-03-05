@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbf73623ddd51cc1172e5610e84cc7861657489
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c9eddff042af5b2cd724e87e3438f398e8d68c19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939192"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508539"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>accessPackageAssignmentResourceRole 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,18 +30,18 @@ ms.locfileid: "37939192"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 只读。|
-|originId|字符串|相对于源系统的唯一标识符。 |
-|originSystem|字符串|要为访问包分配创建角色分配的系统。|
-|状态|字符串|值是`Fulfilled`访问包分配已传递到原始系统。|
+|id|String| 只读。|
+|originId|String|相对于源系统的唯一标识符。 |
+|originSystem|String|要为访问包分配创建角色分配的系统。|
+|status|String|值是`Fulfilled`访问包分配已传递到原始系统。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 描述 |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md)集合| 此角色分配导致的访问包分配。 只读。 可为 Null。|
-|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 Null。|
-|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。 可为 Null。|
+|accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md)集合| 此角色分配导致的访问包分配。 只读。 可为 NULL。|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 NULL。|
+|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。 可为 NULL。|
 |accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| 只读。可为空。|
 
 

@@ -5,20 +5,22 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 07803375ca31162f0f7e392d81edb83ab2bd6da3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1bb7cb2ac675d558054523e38ba6bde44378568
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009067"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521739"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerFavoritePlanReference**资源类型代表对已标记为用户收藏的[plannerPlan](plannerplan.md)的引用。 客户端应注意, **plannerFavoritePlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
+**PlannerFavoritePlanReference**资源类型代表对已标记为用户收藏的[plannerPlan](plannerplan.md)的引用。 客户端应注意， **plannerFavoritePlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
 
-我们建议客户端在存在差异时通知用户, 并将这些条目保持为最新。
+我们建议客户端在存在差异时通知用户，并将这些条目保持为最新。
 
 
 ## <a name="properties"></a>属性

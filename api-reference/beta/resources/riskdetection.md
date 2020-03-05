@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 78dac11af0168b6981e98688536064e9cbc5f528
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9f8e3c2144bebe042040384b70e8ae91a9a4770d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938728"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521073"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ Azure AD 会根据各种信号和机器学习持续评估[用户风险](riskyuse
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|描述|
+| 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |`id`|`string`|风险检测的唯一 ID。 |
 |`requestId`|`string`|与风险检测相关联的登录请求 ID。 如果风险检测未与登录相关联，则此属性为 null。|

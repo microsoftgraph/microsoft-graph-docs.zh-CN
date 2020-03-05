@@ -5,22 +5,24 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3548be0439eaa5335d710a35f51fdbaecb19060c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008724"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521059"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 
-有关风险事件的详细信息, 请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
+有关风险事件的详细信息，请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
 
->**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
 ## <a name="methods"></a>方法
 
@@ -37,8 +39,8 @@ ms.locfileid: "36008724"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |`id`|`string`|用户面临风险的唯一 id|
-|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括`true`:、`false`|
-|`isGuest`|`bool`|指示用户是否为来宾用户。 可取值为：`true`、`false`。 如此如果用户的标识位于租户外部, 请考虑。 此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。 假如果用户的标识位于租户内部, 则考虑|
+|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括`true`：、`false`|
+|`isGuest`|`bool`|指示用户是否为来宾用户。 可取值为：`true`、`false`。 如此如果用户的标识位于租户外部，请考虑。 此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。 假如果用户的标识位于租户内部，则考虑|
 |`isProcessing`|`bool`|指示后端正在处理用户的危险状态 wehther|
 |`riskLastUpdatedDateTime`|`datetime`|上次更新有风险的用户的日期和时间|
 |`riskLevel`|`riskLevel`| 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。  |
@@ -50,7 +52,7 @@ ms.locfileid: "36008724"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|日志|[riskyUserHistoryItem](riskyuserhistoryitem.md)集合|表示 azure AD 用户的风险历史记录, 由 Azure AD Identity Protection 确定。 |
+|日志|[riskyUserHistoryItem](riskyuserhistoryitem.md)集合|表示 azure AD 用户的风险历史记录，由 Azure AD Identity Protection 确定。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

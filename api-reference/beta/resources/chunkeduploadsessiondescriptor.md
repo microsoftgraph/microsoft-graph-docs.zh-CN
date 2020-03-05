@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9df47d6bc2ac99d36f87e2af3734f25462371a29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b77583a54722822212fccc45014cdcdff1aba834
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973441"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507675"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>chunkedUploadSessionDescriptor 资源类型
+
+命名空间： microsoft. graph
 
 
 ## <a name="properties"></a>属性

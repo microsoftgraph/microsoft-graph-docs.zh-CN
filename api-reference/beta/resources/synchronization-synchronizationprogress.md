@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd1292d34abdc745075e030609d3f28a17b2431a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4fb5fb9482a9b8523f1967928a4243a5b104f6a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964639"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520056"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35964639"
 | 属性                              | 类型      | 说明    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|进度比率的分子;已处理的更改的单位数。|
-|progressObservationDateTime|DateTimeOffset|进度观察的时间, 作为从 UTC 的偏移量 (以分钟为单位)。|
+|progressObservationDateTime|DateTimeOffset|进度观察的时间，作为从 UTC 的偏移量（以分钟为单位）。|
 |totalUnits|Int32|进度比率的分母;要处理的用于完成同步的更改的多个单元。|
 |units|String|单位的可选说明。|
 

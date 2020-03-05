@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 00408fee6217fd53bb82c61da7ea1e4db8dc1a1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a7493f24a46251ce5515eafa6f27bedd13ae63d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007716"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519986"
 ---
 # <a name="targetresourceapp-resource-type"></a>targetResourceApp 资源类型
-指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自[targetResource](targetresource.md)资源。
+
+命名空间： microsoft. graph 指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自[targetResource](targetresource.md)资源。
 
 
 

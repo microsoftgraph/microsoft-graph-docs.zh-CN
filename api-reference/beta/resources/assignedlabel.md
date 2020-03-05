@@ -5,14 +5,16 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7e8390ec1773061d447e7526f55e67b87e51531b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4f4f1fd854885668160b46f2b1ee9396dcf954fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870937"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508217"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

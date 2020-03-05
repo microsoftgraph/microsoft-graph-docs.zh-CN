@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7e54c5b018331952776b36a0ab3c07be88c2be7c
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 269fe0552c69773fa62b97cf9803b3e0127f655b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638475"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507504"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>conditionalAccessUsers 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ ms.locfileid: "37638475"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeUsers | String collection | 策略作用域中的用户 Id，除非明确排除`None`或`All`或`GuestsOrExternalUsers`或。 |
-| excludeUsers | String collection | 从策略作用域和/或`GuestsOrExternalUsers`中排除的用户 id。 |
-| includeGroups | String collection | 除非明确排除或`All`，否则策略作用域中的组 id。 |
-| excludeGroups | String collection | 从策略作用域中排除的组 Id。 |
-| includeRoles | String collection | 策略作用域中的角色 Id，除非明确排除`All`或。 |
-| excludeRoles | String collection | 从策略范围中排除的角色 Id。 |
+| includeUsers | String 集合 | 策略作用域中的用户 Id，除非明确排除`None`或`All`或`GuestsOrExternalUsers`或。 |
+| excludeUsers | String 集合 | 从策略作用域和/或`GuestsOrExternalUsers`中排除的用户 id。 |
+| includeGroups | String 集合 | 除非明确排除或`All`，否则策略作用域中的组 id。 |
+| excludeGroups | String 集合 | 从策略作用域中排除的组 Id。 |
+| includeRoles | String 集合 | 策略作用域中的角色 Id，除非明确排除`All`或。 |
+| excludeRoles | String 集合 | 从策略范围中排除的角色 Id。 |
 
 ## <a name="relationships"></a>关系
 

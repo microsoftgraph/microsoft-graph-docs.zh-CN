@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3d2e626535d579b77c27125500d7247401f26915
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 69b90ae911ca956dedf3a7675d7666c7faa4b906
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508427"
 ---
 # <a name="activitystatistics-resource-type"></a>activityStatistics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,8 +22,8 @@ ms.locfileid: "42280615"
 
 以下类型的统计信息派生自**activityStatistics**：
 
-* [Call](callactivitystatistics.md)
-* [参与](chatactivitystatistics.md)
+* [通话](callactivitystatistics.md)
+* [聊天](chatactivitystatistics.md)
 * [电子邮件](emailactivitystatistics.md)
 * [焦点](focusactivitystatistics.md)
 * [要求](meetingactivitystatistics.md)

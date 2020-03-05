@@ -5,14 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: f03563549cc1b2f42a274032dab7b310511c70c7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1678f560fa003c1884a9fa673ee85b7473e36c88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939178"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519461"
 ---
 # <a name="visualproperties-resource-type"></a>visualProperties 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "37939178"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |title|String|可视用户通知的标题。 此字段对于 visual 通知负载来说是必需的。 |
-|body|字符串|可视化用户通知的正文。 正文是可选的。|
+|body|String|可视化用户通知的正文。 正文是可选的。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

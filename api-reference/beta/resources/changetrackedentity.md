@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a167f6409ba972b66f23a3608047b4e72c036846
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: e488fec2119f4ebf1baf5f29f62c58e7fda2789f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951977"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507752"
 ---
 # <a name="changetrackedentity-resource-type"></a>changeTrackedEntity 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

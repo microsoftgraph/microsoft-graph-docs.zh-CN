@@ -5,14 +5,16 @@ title: uploadSession 资源类型
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 9bf40360d841c88413cb4f08b603432f86e1d8aa
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 43086486175add54a7fe809eb9dffb8b3747c92a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621390"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519573"
 ---
 # <a name="uploadsession-resource-type"></a>uploadSession 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

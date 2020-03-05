@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 34859dedd5e5e740aa776cdf78bb742399523fa2
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 271058e3ae56b2ded72c577f453d2af920d3ef0c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939269"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521136"
 ---
 # <a name="removewatermarkaction-resource-type"></a>removeWatermarkAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,9 +22,9 @@ ms.locfileid: "37939269"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型              | 描述                           |
+| 属性       | 类型              | 说明                           |
 | :------------- | :---------------- | :------------------------------------ |
-| uiElementNames | String collection | 要删除的页脚的 UI 元素的名称。 |
+| uiElementNames | String 集合 | 要删除的页脚的 UI 元素的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 32ebcbb4b4d0c8721b5cd1d1a421edb37d836821
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726709"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519125"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

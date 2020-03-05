@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: finsharp
-ms.openlocfilehash: 95f61a34f7dc2eb610f8be7812e3c38b86979b1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f61d3cf4c80a03e2cc29372b1ce4013b90b234bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973284"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507619"
 ---
 # <a name="command-resource-type"></a>command 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

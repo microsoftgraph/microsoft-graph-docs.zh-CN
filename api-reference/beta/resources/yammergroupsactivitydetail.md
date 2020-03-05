@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f16eda3f28556a18c47c68d532ace4244edfad19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9363bd711900cc6211e995c112581d3a91e08a04
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963750"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518985"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -20,11 +22,11 @@ ms.locfileid: "35963750"
 | :----------------- | :------ |
 | reportRefreshDate  | 日期    |
 | groupDisplayName   | String  |
-| isDeleted          | Boolean |
+| isDeleted          | 布尔 |
 | ownerPrincipalName | String  |
 | lastActivityDate   | 日期    |
 | groupType          | String  |
-| office365Connected | Boolean |
+| office365Connected | 布尔 |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |

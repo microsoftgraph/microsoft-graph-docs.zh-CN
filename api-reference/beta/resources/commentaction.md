@@ -6,14 +6,16 @@ title: CommentAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26b521bbc6ccb94abd2e5a494fae9de10cfacedf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973256"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507609"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

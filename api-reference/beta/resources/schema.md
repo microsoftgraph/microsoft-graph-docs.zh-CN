@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2a13d797ff3b695250f7dd5cfef3bc077afe505b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 40c31536f8d53c46563fda4205d34deee0501beb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870115"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520954"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +33,7 @@ ms.locfileid: "40870115"
 
 | 属性   | 类型                               | 说明                |
 |:-----------|:-----------------------------------|:---------------------------|
-| #c1   | String                             | 可能的值为 `microsoft.graph.externalItem` 和 `microsoft.graph.externalFile`。 必需。 |
+| #c1   | String                             | 可能的值为 `microsoft.graph.externalItem` 和 `microsoft.graph.externalFile`。 必填。 |
 | properties | [属性](property.md)集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为64。 在设置`baseType`为`microsoft.graph.externalItem`时所需的。 当设置`baseType`为时， `microsoft.graph.externalFile`将忽略。 |
 
 ## <a name="relationships"></a>关系

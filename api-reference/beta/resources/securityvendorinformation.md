@@ -1,31 +1,33 @@
 ---
 title: securityVendorInformation 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: e6f543a85ac2974f9b3e99d4290fb9d93a8cc025
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 517213e3e2266681eee0f6bdca53b0b9ce5a0bb3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965213"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520806"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
+命名空间： microsoft. graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subProvider = AppLocker)。
+包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息（例如，供应商 = Microsoft; provider = Windows Defender ATP; subProvider = AppLocker）。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|provider |String|特定提供商 (产品/服务-非供应商公司);例如, WindowsDefenderATP。|
-|providerVersion|String|提供程序或 subprovider 的版本 (如果存在), 它将生成警报。 **Required**|
-|subProvider|String|特定 subprovider (在聚合提供程序下);例如, WindowsDefenderATP。|
-|提供 |String|通知供应商的名称 (例如, Microsoft、Dell、FireEye)。 **Required**|
+|provider |String|特定提供商（产品/服务-非供应商公司）;例如，WindowsDefenderATP。|
+|providerVersion|String|提供程序或 subprovider 的版本（如果存在），它将生成警报。 **Required**|
+|subProvider|String|特定 subprovider （在聚合提供程序下）;例如，WindowsDefenderATP。|
+|提供 |String|通知供应商的名称（例如，Microsoft、Dell、FireEye）。 **Required**|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

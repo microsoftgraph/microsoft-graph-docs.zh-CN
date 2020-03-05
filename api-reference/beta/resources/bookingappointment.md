@@ -1,18 +1,20 @@
 ---
 title: bookingAppointment 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 1956ddac829a2921aba6ebf438ae4815ca56b8d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3cd4be5fc83614fe81e0df4453623a7d4bd7d8b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013127"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508015"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
+
+命名空间： microsoft. graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -34,12 +36,12 @@ ms.locfileid: "36013127"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String|预订约会的[bookingCustomer](bookingcustomer.md)的 SMTP 地址。|
-|customerId|String|此约会的[bookingCustomer](bookingcustomer.md)的 ID。 如果创建约会时未指定 ID, 则会创建一个新的**bookingCustomer**对象。 设置后, 应考虑**customerId**不可变。|
-|customerLocation|[location](location.md)|表示预订约会的[bookingCustomer](bookingcustomer.md)的位置信息。|
+|customerId|String|此约会的[bookingCustomer](bookingcustomer.md)的 ID。 如果创建约会时未指定 ID，则会创建一个新的**bookingCustomer**对象。 设置后，应考虑**customerId**不可变。|
+|customerLocation|[位置](location.md)|表示预订约会的[bookingCustomer](bookingcustomer.md)的位置信息。|
 |customerName|String|客户的名称。|
-|customerNotes|String|来自与此约会相关联的客户的注释。 仅当按 ID 读取此**bookingAppointment**时, 才能获取该值。 <br> 只有在最初创建新客户的约会时, 才能设置该属性。 然后, 将从**customerId**表示的客户计算该值。|
+|customerNotes|String|来自与此约会相关联的客户的注释。 仅当按 ID 读取此**bookingAppointment**时，才能获取该值。 <br> 只有在最初创建新客户的约会时，才能设置该属性。 然后，将从**customerId**表示的客户计算该值。|
 |customerPhone|String|客户的电话号码。|
-|duration|持续时间|约会的长度, 以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
+|duration|持续时间|约会的长度，以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|约会结束的日期、时间和时区。|
 |id|String| **BookingAppointment**的 ID。 只读。|
 |invoiceAmount|双精度|发票上的计费金额。|
@@ -47,18 +49,18 @@ ms.locfileid: "36013127"
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft 预订中发票的 URL。|
-|optOutOfCustomerEmail|Boolean|如果为 True, 则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
-|postBuffer|持续时间|在约会结束后保留的时间长度, 例如, 进行清理。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
-|preBuffer|持续时间|在约会开始之前保留的时间量 (以供准备) 为例。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
+|optOutOfCustomerEmail|布尔|如果为 True，则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
+|postBuffer|持续时间|在约会结束后保留的时间长度，例如，进行清理。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
+|preBuffer|持续时间|在约会开始之前保留的时间量（以供准备）为例。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
 |特价|双精度|指定[bookingService](bookingservice.md)的约会的常规价格。|
-|priceType|string| 一种设置, 可为服务的定价结构提供灵活性。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|priceType|string| 一种设置，可为服务的定价结构提供灵活性。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |提醒|[bookingReminder](bookingreminder.md)集合|为此约会发送的客户提醒的集合。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
-|selfServiceAppointmentId|String|约会的其他跟踪 ID, 如果约会是由客户在日程安排页面上直接创建的, 而不是代表客户由教职员工成员创建的。|
+|selfServiceAppointmentId|String|约会的其他跟踪 ID，如果约会是由客户在日程安排页面上直接创建的，而不是代表客户由教职员工成员创建的。|
 |服务 Id|String|与此约会相关联的[bookingService](bookingservice.md)的 ID。|
-|serviceLocation|[location](location.md)|服务的传递位置。|
-|serviceName|String|与此约会相关联的**bookingService**的名称。<br>创建新约会时, 此属性是可选的。 如果未指定, 则通过**serviceId**属性从与约会关联的服务计算。|
+|serviceLocation|[位置](location.md)|服务的传递位置。|
+|serviceName|String|与此约会相关联的**bookingService**的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过**serviceId**属性从与约会关联的服务计算。|
 |serviceNotes|String|来自[bookingStaffMember](bookingstaffmember.md)的注释。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
-|staffMemberIds|String collection|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
+|staffMemberIds|String 集合|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 ## <a name="relationships"></a>关系

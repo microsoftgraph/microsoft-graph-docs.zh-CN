@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 091bb8e6c1a14f6c173d18acf68679feb6c88eaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63e1f2af238aa05fbe5918ff3fc54b5a292aef21
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964218"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519482"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35964218"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |capabilities|String|例如，“Email”、“OfficeCommunicationsOnline”。|
-|isDefault|Boolean|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
+|isDefault|布尔|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
 |isInitial|Boolean|如果这是与租户关联的初始域，则为 **true**；否则为 **false**|
 |name|String|域名；例如，“contoso.onmicrosoft.com”|
 |type|String|例如，“Managed”。|

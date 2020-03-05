@@ -1,22 +1,24 @@
 ---
 title: agreementAcceptance 资源类型
-description: 表示在受 Azure Active Directory (Azure AD) 支持的公司自定义使用条款的范围内的用户的当前状态。
+description: 表示在受 Azure Active Directory （Azure AD）支持的公司自定义使用条款的范围内的用户的当前状态。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 58ed332429d7976b75929b433d57bd77536b9e70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28f3c0adccb853ac8daddca9aaad70a2c0b35e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508378"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在受 Azure Active Directory (Azure AD) 支持的公司自定义使用条款的范围内的用户的当前状态。
+表示在受 Azure Active Directory （Azure AD）支持的公司自定义使用条款的范围内的用户的当前状态。
 
 <!--
 ## Methods

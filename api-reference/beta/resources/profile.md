@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 367a2c556b560056bcab44e6c20ae7851e493e48
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: c5c7d7765d546dad5f6de39f72f092b3bf9daee6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950477"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521465"
 ---
 # <a name="profile-resource-type"></a>配置文件资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37950477"
 
 | 方法                                                                     | 返回类型                                                    | 说明                                                                          |
 |:---------------------------------------------------------------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [获取配置文件](../api/profile-get.md)                                       | [profile](profile.md)                                          | 读取 profile 对象的属性和关系。                                 |
-| [删除配置文件](../api/profile-delete.md)                                         | 无                                                           | 删除**配置文件**对象。                                                               |
+| [获取个人资料](../api/profile-get.md)                                       | [profile](profile.md)                                          | 读取 profile 对象的属性和关系。                                 |
+| [删除个人资料](../api/profile-delete.md)                                         | 无                                                           | 删除**配置文件**对象。                                                               |
 | [列表帐户](../api/profile-list-account.md)                             | [userAccountInformation](useraccountinformation.md)集合 | 获取**userAccountInformation**对象集合。                                      |
 | [创建 personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | 通过发布到周年纪念集合创建新的**personAnniversary** 。           |
 | [列出周年纪念](../api/profile-list-anniversaries.md)                 | [personAnniversary](personanniversary.md)集合           | 获取**personAnniversary**对象集合。                                           |
@@ -59,20 +61,20 @@ ms.locfileid: "37950477"
 
 ## <a name="relationships"></a>关系
 
-| 关系          | 类型                                                         | 描述         |
+| 关系          | 类型                                                         | 说明         |
 |:----------------------|:-------------------------------------------------------------|:--------------------|
-|上级                |[userAccountInformation](useraccountinformation.md)集合| 表示特定绑定到用户帐户的信息。 只读。 可为 Null。|
-|周年          |[personAnniversary](personanniversary.md)集合          | 代表与人员关联的有意义的日期的详细信息。 只读。 可为 Null。|
-|educationalActivities  |[educationalActivity](educationalactivity.md)集合      | 表示用户已提供与 undergraduate、毕业、postgraduate 或其他教学活动相关的数据。 只读。 可为 Null。|
-|电子邮件                 |[itemEmail](itememail.md)集合                          | 表示有关与用户相关联的电子邮件地址的详细信息。 只读。 可为 Null。|
-|interests              |[personInterest](personinterest.md)集合                | 提供有关用户在各种服务中与其自身关联的兴趣的详细信息。 只读。 可为 Null。|
-|languages              |[languageProficiency](languageproficiency.md)集合      | 表示有关用户已添加到其配置文件中的语言的详细信息。 只读。 可为 Null。|
-|phones                 |[itemPhone](itemphone.md)集合                          | 表示有关与各种服务中的用户关联的电话号码的详细信息。 只读。 可为 Null。|
-|位置              |[workPosition](workposition.md)集合                    | 表示有关与用户配置文件相关联的工作职位的详细信息。 只读。 可为 Null。|
-|projects               |[projectParticipation](projectparticipation.md)集合    | 表示有关与用户关联的项目的详细信息。 只读。 可为 Null。|
-|skills                 |[skillProficiency](skillproficiency.md)集合            | 表示有关与各种服务中的用户相关的技能的详细信息。 只读。 可为 Null。|
-|webAccounts            |[webAccount](webaccount.md)集合                        | 表示用户已将其添加到其用户配置文件中的 web 帐户。 只读。 可为 Null。|
-|websites               |[personWebsite](personwebsite.md)集合                  | 表示有关与各种服务中的用户相关联的网站的详细信息。 只读。 可为 Null。|
+|上级                |[userAccountInformation](useraccountinformation.md)集合| 表示特定绑定到用户帐户的信息。 此为只读属性。 可为 NULL。|
+|周年          |[personAnniversary](personanniversary.md)集合          | 代表与人员关联的有意义的日期的详细信息。 此为只读属性。 可为 NULL。|
+|educationalActivities  |[educationalActivity](educationalactivity.md)集合      | 表示用户已提供与 undergraduate、毕业、postgraduate 或其他教学活动相关的数据。 此为只读属性。 可为 NULL。|
+|电子邮件                 |[itemEmail](itememail.md)集合                          | 表示有关与用户相关联的电子邮件地址的详细信息。 此为只读属性。 可为 NULL。|
+|interests              |[personInterest](personinterest.md)集合                | 提供有关用户在各种服务中与其自身关联的兴趣的详细信息。 此为只读属性。 可为 NULL。|
+|languages              |[languageProficiency](languageproficiency.md)集合      | 表示有关用户已添加到其配置文件中的语言的详细信息。 此为只读属性。 可为 NULL。|
+|phones                 |[itemPhone](itemphone.md)集合                          | 表示有关与各种服务中的用户关联的电话号码的详细信息。 此为只读属性。 可为 NULL。|
+|位置              |[workPosition](workposition.md)集合                    | 表示有关与用户配置文件相关联的工作职位的详细信息。 此为只读属性。 可为 NULL。|
+|projects               |[projectParticipation](projectparticipation.md)集合    | 表示有关与用户关联的项目的详细信息。 此为只读属性。 可为 NULL。|
+|skills                 |[skillProficiency](skillproficiency.md)集合            | 表示有关与各种服务中的用户相关的技能的详细信息。 此为只读属性。 可为 NULL。|
+|webAccounts            |[webAccount](webaccount.md)集合                        | 表示用户已将其添加到其用户配置文件中的 web 帐户。 此为只读属性。 可为 NULL。|
+|websites               |[personWebsite](personwebsite.md)集合                  | 表示有关与各种服务中的用户相关联的网站的详细信息。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

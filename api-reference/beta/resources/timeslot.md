@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8843b8418bff068564e5716d715a9ad11579f01b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff02706768feed52eaf6b85294e496211d9d711f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007534"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519699"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8117dd71947fea41508ccbe7d50d49a4f78b335d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0a598c4b5e999b03aeb7201c6eae3a230d3160a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939766"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518971"
 ---
 # <a name="yomipersonname-resource-type"></a>yomiPersonName 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "37939766"
 | 属性     | 类型        | 说明                                             |
 |:-------------|:------------|:--------------------------------------------------------|
 |displayName   |String       | 姓和名的发音参考线组合。  |
-|前         |字符串       | 用户名字的发音指南。     |
-|末          |字符串       | 用户姓氏的发音指南。      |
-|maiden        |字符串       | 用户的 maiden 名称的发音指南。    |
-|中间        |字符串       | 用户中间名的发音指南。    |
+|前         |String       | 用户名字的发音指南。     |
+|末          |String       | 用户姓氏的发音指南。      |
+|maiden        |String       | 用户的 maiden 名称的发音指南。    |
+|中间        |String       | 用户中间名的发音指南。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

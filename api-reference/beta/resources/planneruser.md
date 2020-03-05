@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 2229020f00331e761eceeadf0739c84995e5bbdb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70ca7596cfb809a16b76f684a85c97b0c3e43a50
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008990"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521634"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,14 +36,14 @@ ms.locfileid: "36008990"
 |:---------------|:--------|:----------|
 |id|String| 只读。 PlannerUser 的标识符|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| 包含对用户已标记为收藏夹的计划引用的集合。|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| 包含对计划的引用的集合, 该用户最近在支持最近计划的应用程序中查看了这些计划。|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| 包含对计划的引用的集合，该用户最近在支持最近计划的应用程序中查看了这些计划。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 返回分配给用户的[plannerTasks](plannertask.md) 。|
-|favoritePlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回用户标记为收藏夹的[plannerPlans](plannerplan.md) 。|
-|recentPlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回用户最近在支持最近计划的应用程序中查看的[plannerPlans](plannerplan.md) 。 |
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回分配给用户的[plannerTasks](plannertask.md) 。|
+|favoritePlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户标记为收藏夹的[plannerPlans](plannerplan.md) 。|
+|recentPlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户最近在支持最近计划的应用程序中查看的[plannerPlans](plannerplan.md) 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

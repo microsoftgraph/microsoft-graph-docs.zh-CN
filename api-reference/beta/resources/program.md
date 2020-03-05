@@ -1,24 +1,26 @@
 ---
 title: 程序资源类型
-description: '在 Azure AD access 评论功能中, 程序是容器, 保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序, 以便更轻松地找到相关的访问评审。  '
+description: '在 Azure AD access 评论功能中，程序是容器，保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序，以便更轻松地找到相关的访问评审。  '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c6a978ef4bb68c09b2f5659e255d16681c9c805d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a44c084b6f6d2da23290d3e962e2868f0c4c7ac0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965668"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521451"
 ---
 # <a name="program-resource-type"></a>程序资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md)功能中, 程序是容器, 保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序, 以便更轻松地找到相关的访问评审。  
+在 Azure AD [access 评论](accessreviews-root.md)功能中，程序是容器，保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序，以便更轻松地找到相关的访问评审。  
 
-每个具有 boarded Azure AD access 评审的租户都有一个程序`Default program`。  全局管理员可以创建其他程序, 例如表示合规性计划。 
+每个具有 boarded Azure AD access 评审的租户都有一个程序`Default program`。  全局管理员可以创建其他程序，例如表示合规性计划。 
 
 
 ## <a name="methods"></a>方法

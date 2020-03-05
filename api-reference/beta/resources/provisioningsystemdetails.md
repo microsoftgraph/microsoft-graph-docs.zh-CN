@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e84af77ac7d2b14fb25ce07939bc1a542102fb19
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 286ae448cbbaee428820d274d11d8584a9150393
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349351"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521318"
 ---
 # <a name="provisioningsystemdetails-resource-type"></a>provisioningSystemDetails 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用户预配或来自的系统。 例如, 在将用户从 Azure Active Directory (Azure AD) 设置为 ServiceNow 时, 源系统为 Azure AD, 目标系统为 ServiceNow。
+表示用户预配或来自的系统。 例如，在将用户从 Azure Active Directory （Azure AD）设置为 ServiceNow 时，源系统为 Azure AD，目标系统为 ServiceNow。
 
 ## <a name="properties"></a>属性
 

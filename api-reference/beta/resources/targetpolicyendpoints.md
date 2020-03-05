@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 9c1911900f4945d6f4b75d62c62457791fbb5c6a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 92ff6d0748e24fd58154f596188f25c51bdc6403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939465"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520000"
 ---
 # <a name="targetpolicyendpoints-resource-type"></a>targetPolicyEndpoints 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,9 +23,9 @@ ms.locfileid: "37939465"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|platformTypes|String collection|使用将通知分发筛选到特定平台或平台。 有效值为`Windows`、 `iOS` `Android`和。 `WebPush` 默认情况下，将启用所有推送终结点类型（Windows、iOS、Android 和 WebPush）。 |
+|platformTypes|String 集合|使用将通知分发筛选到特定平台或平台。 有效值为`Windows`、 `iOS` `Android`和。 `WebPush` 默认情况下，将启用所有推送终结点类型（Windows、iOS、Android 和 WebPush）。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

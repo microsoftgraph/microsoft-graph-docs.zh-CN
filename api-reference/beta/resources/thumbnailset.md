@@ -6,14 +6,16 @@ title: ThumbnailSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: bb8c286cd8c3827317edc9a24e4d14dbe963a05d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd6e3326eaa0ea0bea407429e89d361575f20916
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964343"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519755"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

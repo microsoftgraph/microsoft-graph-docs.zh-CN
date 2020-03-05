@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 2a0d742d289cefac825155a2e8917365c0bb97af
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 086273e54d923054ce8e71ef1c67fb2bb4f7002a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950463"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519062"
 ---
 # <a name="workposition-resource-type"></a>workPosition 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "37950463"
 
 ## <a name="properties"></a>属性
 
-| 属性             | 类型                               | 描述                                                                                                |
+| 属性             | 类型                               | 说明                                                                                                |
 |:---------------------|:-----------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|类别            |String collection                   | 包含用户与位置相关联的类别（例如，数字转换、人员）。 |
+|categories            |String 集合                   | 包含用户与位置相关联的类别（例如，数字转换、人员）。 |
 |介绍                |[positionDetail](positiondetail.md) | 包含有关用户的当前和前一个雇用职位的详细信息。                                 |
 
 ## <a name="relationships"></a>关系

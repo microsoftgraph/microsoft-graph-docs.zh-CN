@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: f5980cb2db52a5c418d69b8c786a5b6f51123e3b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 92bdc9948920e39b8f7e889fccaafe4211dd1eee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870108"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520834"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>使用 Microsoft Graph API 进行安全威胁检测和保护（预览）
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ed9ef208f888026224293ff86a36b62a3486d48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 868ecf1e57deb624ab8b276d3f10cd39176efa5b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007891"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520168"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "36007891"
 |源语言                       |String          |运算符的 Arity。 可取值为：`Binary`、`Unary`。 默认值为`Binary`。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`表示所有值都必须满足条件。 `Any`表示必须至少有一个值满足条件。 默认值为`All`。|
 |name                        |String                     |运算符名称。 |
-|supportedAttributeTypes     |String collection         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
+|supportedAttributeTypes     |String 集合         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

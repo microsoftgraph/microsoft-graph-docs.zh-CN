@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 975effa01ce60799a647bc051a0518d87afcda9e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ea1736e0215b411673f8c458f79c57181312a25a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521840"
 ---
 # <a name="place-resource-type"></a>放置资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
 | address        | [physicalAddress](physicaladdress.md)             | 地点的街道地址。 |
 | displayName    | 字符串                                            | 与位置关联的名称。 |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 指定纬度、经度和（可选）海拔高度坐标中的位置。 |
-| id             | 字符串                                            | 位置的唯一标识符。 只读。 |
+| id             | String                                            | 位置的唯一标识符。 只读。 |
 | phone          | String                                            | 地点的电话号码。 |
 
 ## <a name="relationships"></a>关系

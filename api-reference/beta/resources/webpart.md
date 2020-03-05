@@ -6,14 +6,16 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 71626440abe9eb63af3419b3e65c4351ae442dea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: efcf6aa1db31246af607cda85aa799fcc6804a34
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519433"
 ---
 # <a name="webpart-resource"></a>webPart 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "36007352"
 | 属性                | 类型             | 说明
 |:------------------------|:-----------------|:----------------------------------
 | **类型**                | String           | 指定 Web 部件类型的唯一标识符。 只读。
-| **data**                | [sitePageData][] | Web 部件的必需属性 (因 Web 部件而异)
+| **data**                | [sitePageData][] | Web 部件的必需属性（因 Web 部件而异）
 
 [sitePageData]: sitepagedata.md
 
@@ -47,7 +49,7 @@ ms.locfileid: "36007352"
 
 Web 部件可以在**data**下定义自己的必需属性。
 
-有关页面的详细信息, 请参阅[sitePage](sitepage.md)。
+有关页面的详细信息，请参阅[sitePage](sitepage.md)。
 <!--
 {
   "type": "#page.annotation",

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c4849afe745a8554243bd37d85cb82d831e00a64
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3c40433a1be214141dff8eda99142a96be0a003
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007702"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519916"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "36007702"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 id (而不是团队 appid)。 |
+| id                  | string   | 唯一 id （而不是团队 appid）。 |
 | teamsAppId          | string   | 团队应用程序清单中的 id。 |
 | displayName         | string   | 应用程序开发人员提供的应用程序的名称。 |
 | version             | string   | 应用程序的版本号。 |

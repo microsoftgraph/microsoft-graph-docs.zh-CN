@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 59dd514ff818ee37b462d8f21f3dce02d213eb20
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: fde8f4d41c7e2788c306fe0e0591b9ddb8ba031d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394681"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521332"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>provisioningServicePrincipal 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

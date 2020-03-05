@@ -1,22 +1,24 @@
 ---
 title: plannerExternalReference 资源类型
-description: '**PlannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是 externalReferences 对象中的属性-值对的值。'
+description: '**PlannerExternalReference**资源表示引用的元数据（如文件、URL）。 它是 externalReferences 对象中的属性-值对的值。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 2ac2b6bef3f2e4e24bfc6e789536f4952d89bb6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04ea5aa373cc0828386f56b8ec80b07faef40f06
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965999"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521753"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是[externalReferences 对象](plannerexternalreferences.md)中的属性-值对的值。
+**PlannerExternalReference**资源表示引用的元数据（如文件、URL）。 它是[externalReferences 对象](plannerexternalreferences.md)中的属性-值对的值。
 
 
 
@@ -25,9 +27,9 @@ ms.locfileid: "35965999"
 |:---------------|:--------|:----------|
 |alias|String|用于描述引用的名称别名。|
 |lastModifiedBy|[identitySet](identityset.md)|只读。 上次修改此 ID 的用户 ID。|
-|lastModifiedDateTime|DateTimeOffset|只读。 上次修改的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|只读。 上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |previewPriority|String|用于设置引用将显示为任务预览的相对优先级顺序。|
-|type|String|用于描述引用的类型。 类型包括: `PowerPoint`、 `Word`、 `Excel`、 `Other`。|
+|type|String|用于描述引用的类型。 类型包括： `PowerPoint`、 `Word`、 `Excel`、 `Other`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

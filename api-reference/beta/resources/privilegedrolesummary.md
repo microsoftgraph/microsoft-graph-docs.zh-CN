@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 30c9cfb93f8d20d30ad86d0f36019e87eae0ab65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47ab49c6f91684924dab02d590427a875c1baa01
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965715"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521486"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "35965715"
 |id|string| 角色的唯一标识符。 只读。|
 |managedCount|int32|已分配角色但角色被停用的用户数量。|
 |mfaEnabled|boolean|**如此**如果角色激活需要进行 MFA。 **假**如果角色激活不需要进行 MFA。|
-|状态|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值, `ok`则返回。 否则, `bad`将返回。|
+|状态|string| 可取值为：`ok`、`bad`。 值取决于（managedCount/usersCount）的比率。 如果该比率小于预定义的阈值， `ok`则返回。 否则， `bad`将返回。|
 |usersCount|int32|为角色分配的用户数。|
 
 ## <a name="relationships"></a>关系

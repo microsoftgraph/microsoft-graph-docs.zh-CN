@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c7808d014ee2ab19fda9eceb6064375cf5904d52
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: be4fa7bd8f4b44842bd6dbc9876d0dd19fe466fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704148"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507497"
 ---
 # <a name="configuration-resource-type"></a>配置资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "38704148"
 
 | 属性       | 类型              | 说明 |
 |:---------------|:------------------|:------------|
-| authorizedApps | String collection | 允许管理 externalConnection 和索引 externalConnection 中的内容的注册的 Azure Active Directory 应用程序的应用程序 Id 的集合。 |
+| authorizedApps | String 集合 | 允许管理 externalConnection 和索引 externalConnection 中的内容的注册的 Azure Active Directory 应用程序的应用程序 Id 的集合。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

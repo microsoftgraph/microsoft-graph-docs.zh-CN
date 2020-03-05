@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1ad4c5a1792ee0e75a31f165b0a8eebf6f0d2130
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 7dad5536eb78b2d7119ace63eb0f7ce16880e85f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949515"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521923"
 ---
 # <a name="personanniversary-resource-type"></a>personAnniversary 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,12 +27,12 @@ ms.locfileid: "37949515"
 | 方法                                                   | 返回类型                               | 说明                                                    |
 |:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
 | [获取 personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | 读取**personAnniversary**对象的属性和关系。 |
-| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | 更新**personAnniversary**对象。                               |
+| [更新](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | 更新**personAnniversary**对象。                               |
 | [删除](../api/personanniversary-delete.md)             | 无                                      | 删除**personAnniversary**对象。                               |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述                                                      |
+| 属性     | 类型        | 说明                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
 |date          |Date         | 包含与周年纪念类型相关联的日期。         |
 |类型          |string       | 可取值为：`birthday`、`wedding`、`unknownFutureValue`。|

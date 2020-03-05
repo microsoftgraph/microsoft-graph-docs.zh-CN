@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a19ec9e2b8747737895bed89b1a92ec4c5d134a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 2db679b651d1140940b0ce532b858606c4d13f63
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234194"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519671"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,17 +33,17 @@ ms.locfileid: "41234194"
 | [列出 tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | 读取 tokenLifetimePolicies 对象的属性和关系。 |
 | [更新 tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | 无 | 更新 tokenLifetimePolicy 对象。 |
 | [删除 tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | 无 | 删除 tokenLifetimePolicy 对象。 |
-| [列出 appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | 获取已应用此策略的 directoryObjects 的列表。 |
+| [列出 appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) 集合 | 获取已应用此策略的 directoryObjects 的列表。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|displayName|String| 此策略的显示名称。 必填。|
+|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>令牌生存期策略定义的属性
@@ -62,14 +64,14 @@ ms.locfileid: "41234194"
 
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 hour|
-|版本|整数|将值设置为1。 必需。|无|无|无|
+|AccessTokenLifetime|String|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
+|版本|整数|将值设置为1。 必填。|无|无|无|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -6,14 +6,16 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 24daf2ffd48e7647c898031aee634e8a84e05ee0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b7901b52bcd877df16f5507c450425484ada703
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966151"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521930"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

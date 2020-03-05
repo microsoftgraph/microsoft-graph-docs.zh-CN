@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 22dc12070a801988d814ba73c6bffe1414bb5218
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bafd2c9d66c0d696649944f88e4fcfbdea4bcca6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012994"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507759"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl 资源类型
+
+命名空间： microsoft. graph
 
 包含与安全得分控制相关联的合规性认证数据。
 

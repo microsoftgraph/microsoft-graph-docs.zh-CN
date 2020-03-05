@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cf31ab740a40b68025bafdf253fe2cd562cd1714
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5e90c574ba5c89dc527f5cee236d721514834875
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871778"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519769"
 ---
 # <a name="threatassessmentresult-resource-type"></a>threatAssessmentResult 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

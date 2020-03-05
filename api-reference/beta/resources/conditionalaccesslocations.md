@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6997664eb131664bcaaf571398ed393fb13c987c
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 5a3b6affa1dccdf9065061bec855fb8a2000d387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638566"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507539"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37638566"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | 除非明确排除、 `All`或`AllTrusted`，否则策略范围中的位置 id。 |
-| excludeLocations | String collection | 从策略范围中排除的位置 Id。 |
+| includeLocations | String 集合 | 除非明确排除、 `All`或`AllTrusted`，否则策略范围中的位置 id。 |
+| excludeLocations | String 集合 | 从策略范围中排除的位置 Id。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

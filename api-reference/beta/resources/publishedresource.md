@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54a2b1b610f30ec3ce7d9853916aad345142cbf0
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 7b6f81f9e3a6b399f7e029e21330fe83b533af87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521290"
 ---
 # <a name="publishedresource-resource-type"></a>publishedResource 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示本地发布的资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。可以将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理请求特定的已发布资源。
+表示本地发布的资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。可以将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的已发布资源的请求。
 
 ## <a name="methods"></a>方法
 

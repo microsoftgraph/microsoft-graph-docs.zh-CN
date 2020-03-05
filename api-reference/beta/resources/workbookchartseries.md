@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7f7c8108ac17e6705b8bf5f69b0e87f0dc96b31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f93eb5ccf8b3acda9113312f4dbbb9063bdfcef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007247"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519272"
 ---
 # <a name="workbookchartseries-resource-type"></a>workbookChartSeries 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: afcef3766e4df80a3856ab59684ba826c3a78d14
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 3fd03ed6bb8f3e5e3548781c29d5d9fe16fcba23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437823"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521269"
 ---
 # <a name="rbacapplication-resource-type"></a>rbacApplication 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "36437823"
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [创建 unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | 通过发布到 roleAssignments 集合创建新的 unifiedRoleAssignment。 |
-| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md)集合 | 获取 unifiedRoleAssignment 对象集合。 通过在 unifiedRoleDefitionId 或 principalId 上进行筛选, 只能查询特定的实例。 |
+| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md)集合 | 获取 unifiedRoleAssignment 对象集合。 通过在 unifiedRoleDefitionId 或 principalId 上进行筛选，只能查询特定的实例。 |
 | [创建 unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 通过发布到 roleDefinitions 集合创建新的 unifiedRoleDefinition。 |
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md)集合 | 获取 unifiedRoleDefinition 对象集合。 |
 

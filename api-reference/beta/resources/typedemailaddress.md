@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c5ece5d1ad1c5c38253d73353b05b94727855fd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d6c064e7a87b0e9c776a5691f24b48dfff56422
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007569"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519629"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36007569"
 |:---------------|:--------|:----------|
 |address|String|联系人的电子邮件地址。|
 |name|字符串|联系人的显示名称。|
-|type |String |电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。 默认值为`unknown`, 表示尚未将**地址**设置为特定类型。 |
-|otherLabel |String  |若要指定自定义类型的电子邮件地址**** , 请`other`将 "类型" 设置为, 并将**otherLabel**分配给自定义字符串。 例如, 您可以对志愿者活动使用特定的电子邮件地址。 将**** "类型`other`" 设置为, 并将**otherLabel**设置为自`Volunteer work`定义字符串, 例如。 |
+|type |String |电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。 默认值为`unknown`，表示尚未将**地址**设置为特定类型。 |
+|otherLabel |String  |若要指定自定义类型的电子邮件地址**** ，请`other`将 "类型" 设置为，并将**otherLabel**分配给自定义字符串。 例如，您可以对志愿者活动使用特定的电子邮件地址。 将**** "类型`other`" 设置为，并将**otherLabel**设置为自`Volunteer work`定义字符串，例如。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

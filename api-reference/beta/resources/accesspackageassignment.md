@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7147378e308faac7ca1fea931a465e1ea54f22ef
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508560"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,16 +39,16 @@ ms.locfileid: "42108446"
 |catalogId|String|包含访问包的目录的标识符。 只读。|
 |expiredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
-|isExtended|Boolean|指示访问包分配是否已扩展。 只读。|
+|isExtended|布尔|指示访问包分配是否已扩展。 只读。|
 |targetId|String| 包含工作分配的主题的 ID。 只读。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| 此为只读属性。 可为 Null。|
-|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 此为只读属性。 可为 Null。|
-|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)集合| 此为只读属性。 可为 Null。|
+|accessPackage|[accessPackage](accesspackage.md)| 此为只读属性。 可为 NULL。|
+|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 此为只读属性。 可为 NULL。|
+|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)集合| 此为只读属性。 可为 NULL。|
 |target|[accessPackageSubject](accesspackagesubject.md)| 访问包分配的主题。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

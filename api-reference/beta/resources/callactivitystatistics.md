@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: dfd75ac3cec0b4580bff58555754585274977c2d
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 03625811beec7df8cd679455e9853ea49edf0ed6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622619"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507815"
 ---
 # <a name="callactivitystatistics-resource-type"></a>callActivityStatistics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +25,12 @@ ms.locfileid: "36622619"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 返回其统计信息的呼叫活动。|
-|duration|持续时间|对呼叫花费的总小时数。 值以 ISO 8601 格式表示, 持续时间。|
-|endDate|Date|呼叫活动结束的日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-04", 它遵循 YYYY-MM-DD 格式。|
+|duration|持续时间|对呼叫花费的总小时数。 值以 ISO 8601 格式表示，持续时间。|
+|endDate|Date|呼叫活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 呼叫活动的只读 ID。|
-|startDate|日期|呼叫活动的开始日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-03", 它遵循 YYYY-MM-DD 格式。|
-|timeZoneUsed|String|用户在 Microsoft Outlook 日历中设置的时区用于计算。 例如, 属性值可以是 "太平洋标准时间"。|
-|afterHours|持续时间|在工作时间之外的呼叫上花费的时间, 基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示, 持续时间。 |
+|startDate|日期|呼叫活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
+|timeZoneUsed|String|用户在 Microsoft Outlook 日历中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
+|afterHours|持续时间|在工作时间之外的呼叫上花费的时间，基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示，持续时间。 |
 
 ## <a name="relationships"></a>关系
 

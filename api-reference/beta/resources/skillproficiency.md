@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb63903b5a3eb0eeed8683463b9927537180f53
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 6662ab205e390ae72d283d5015aa346c4b6fc2b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950421"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520504"
 ---
 # <a name="skillproficiency-resource-type"></a>skillProficiency 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "37950421"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型             | 描述                                                                                                                        |
+| 属性     | 类型             | 说明                                                                                                                        |
 |:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|类别    |String collection | 包含用户与技能相关联的类别（例如，个人、职业、爱好）。                                       |
+|categories    |String 集合 | 包含用户与技能相关联的类别（例如，个人、职业、爱好）。                                       |
 |displayName   |String            | 包含技能的友好名称。                                                                                            |      
 |水平   |string            | 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
 |webUrl        |String            | 包含指向有关技能的信息源的链接。                                                                          |

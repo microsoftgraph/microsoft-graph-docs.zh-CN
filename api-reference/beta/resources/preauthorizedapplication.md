@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: c741c303ee9ffaf18db5fc01181702f963e39ccc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b84e9a49d293978754a06bdae229806f529690ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939780"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521577"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,10 +22,10 @@ ms.locfileid: "37939780"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 描述 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|permissionIds|String collection| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
+|permissionIds|String 集合| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

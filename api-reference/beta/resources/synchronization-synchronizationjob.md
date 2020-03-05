@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8d9cad16e33b022fa7c9d4e97a4d28e89436041
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: cac54f10a3109be5596a62a84271a485a5f70449
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113901"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520070"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "37113901"
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md)集合  |列出给定应用程序实例（服务主体）的现有作业。|
 |[获取 synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |读取 synchronizationJob 对象的属性和关系。|
 |[创建](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
-|[Start](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业处于暂停状态，则它将从作业暂停的点继续。 如果作业处于隔离状态，则隔离状态为 "已清除"。|
+|[开始](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业处于暂停状态，则它将从作业暂停的点继续。 如果作业处于隔离状态，则隔离状态为 "已清除"。|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |无   |强制作业重新启动并重新处理目录中的所有对象。|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |无   |临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。|
 |[删除](../api/synchronization-synchronizationjob-delete.md)        |无   |停止同步，并永久删除与作业关联的所有状态。|

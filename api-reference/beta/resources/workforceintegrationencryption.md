@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52fb72380ce74acad429aa3da6f9ad4e60102e06
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: c2d24371a0a999069d80a9ad86afd48ac9e68d38
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895616"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519076"
 ---
 # <a name="workforceintegrationencryption-resource-type"></a>workforceIntegrationEncryption 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "39895616"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |协议|String| 可取值为：`sharedSecret`、`unknownFutureValue`。|
-|私钥|字符串|加密共享密钥。|
+|私钥|String|加密共享密钥。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

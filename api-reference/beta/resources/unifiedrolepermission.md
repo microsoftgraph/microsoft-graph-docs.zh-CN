@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d15e2709c429be3c6400b59db5174093892d3009
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: d496273d844f1754e45b156422aad3e0927e0656
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437858"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519601"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>unifiedRolePermission 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示允许的资源操作的集合, 以及操作有效时必须满足的条件。 资源操作是可在资源上 perfomed 的任务。 例如, 应用程序资源支持创建、更新、删除和重置密码资源操作。
+表示允许的资源操作的集合，以及操作有效时必须满足的条件。 资源操作是可在资源上 perfomed 的任务。 例如，应用程序资源支持创建、更新、删除和重置密码资源操作。
 
 ## <a name="properties"></a>属性
 
@@ -27,31 +29,31 @@ ms.locfileid: "36437858"
 
 ### <a name="allowedresourceactions-property"></a>allowedResourceActions 属性
 
-以下是资源操作的架构: 
+以下是资源操作的架构： 
 
 ```
 <Namespace>/<Entity>/<PropertySet>/<Action>  
 ```
 例如：`microsoft.directory/applications/credentials/update`。  
 
-- 命名空间-公开任务的服务。 例如, Azure Active Directory 中的所有任务都使用命名空间 "microsoft."。  
-- Entity-Microsoft Graph 中的服务公开的逻辑功能或组件。 例如, 应用程序、服务主体或组。
-- PropertySet-要为其授予访问权限的实体的特定属性或方面。 例如, `microsoft.directory/applications/authentication/read`向 Azure AD 中的**application**对象授予读取回复 URL、注销 url 和隐式流属性的功能。 以下是常用属性集的保留名称:  
-  - allProperties-指定实体的所有属性, 包括特权属性。 示例包括`microsoft.directory/applications/allProperties/read`和`microsoft.directory/applications/allProperties/update`。
-  - basic-指定常见的读取属性, 但不包括特权。 例如, `microsoft.directory/applications/basic/update`包括更新显示名称等标准属性的功能。
-  - standard-指定通用更新属性, 但不包括特权文件。 例如，`microsoft.directory/applications/standard/read`。
-- 操作-要授予的操作。 在大多数情况下, 应根据 CRUD 或 allTasks 表示权限。 操作包括:
+- 命名空间-公开任务的服务。 例如，Azure Active Directory 中的所有任务都使用命名空间 "microsoft."。  
+- Entity-Microsoft Graph 中的服务公开的逻辑功能或组件。 例如，应用程序、服务主体或组。
+- PropertySet-要为其授予访问权限的实体的特定属性或方面。 例如， `microsoft.directory/applications/authentication/read`向 Azure AD 中的**application**对象授予读取回复 URL、注销 url 和隐式流属性的功能。 以下是常用属性集的保留名称：  
+  - allProperties-指定实体的所有属性，包括特权属性。 示例包括`microsoft.directory/applications/allProperties/read`和`microsoft.directory/applications/allProperties/update`。
+  - basic-指定常见的读取属性，但不包括特权。 例如， `microsoft.directory/applications/basic/update`包括更新显示名称等标准属性的功能。
+  - standard-指定通用更新属性，但不包括特权文件。 例如，`microsoft.directory/applications/standard/read`。
+- 操作-要授予的操作。 在大多数情况下，应根据 CRUD 或 allTasks 表示权限。 操作包括：
   - 创建-创建实体的新实例的功能。
-  - Read-读取给定属性集的功能 (包括 allProperties)。
-  - Update-更新给定属性集的能力 (包括 allProperties)。
+  - Read-读取给定属性集的功能（包括 allProperties）。
+  - Update-更新给定属性集的能力（包括 allProperties）。
   - 删除-删除给定实体的功能。
-  - AllTasks-表示所有 CRUD 操作 (创建、读取、更新和删除)。 
+  - AllTasks-表示所有 CRUD 操作（创建、读取、更新和删除）。 
 
 ### <a name="condition-property"></a>condition 属性
-条件定义必须满足的约束。 例如, 要求主体是目标的 "所有者"。 以下是受支持的条件:
+条件定义必须满足的约束。 例如，要求主体是目标的 "所有者"。 以下是受支持的条件：
 
-- Self: "@Subject = = @Resource objectId"
-- Owner: "@Subject @Resource" Any_of "
+- Self： "@Subject = = @Resource objectId"
+- Owner： "@Subject Any_of @Resource 所有者"
 
 下面是具有条件的角色权限的一个示例。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0567ca9347b560b14ae96da4914a8801f9183019
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8f862972b1c061d2c95267af19b26da300978288
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870972"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508525"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,10 +32,10 @@ ms.locfileid: "40870972"
 |:-------------|:------------|:------------|
 |addedBy|String|只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|description|String|资源的说明。|
+|说明|String|资源的说明。|
 |displayName|字符串|资源的显示名称，例如应用程序名称、组名称或网站名称。|
 |id|字符串| 只读。|
-|isPendingOnboarding|Boolean|如果资源尚不可用于工作分配，则为 True。|
+|isPendingOnboarding|布尔|如果资源尚不可用于工作分配，则为 True。|
 |originId|String|源系统中资源的唯一标识符。 在 Azure AD 组的情况下，这是组的标识符。 |
 |originSystem|String|源系统中资源的类型，例如`SharePointOnline`或。 `AadGroup`|
 |resourceType|String|资源的类型，例如`Application` ，它是 Azure AD 连接的应用程序，或者`SharePoint Online Site`是 SharePoint Online 网站的类型。|
@@ -43,7 +45,7 @@ ms.locfileid: "40870972"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md)集合| 只读。 可为 Null。|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md)集合| 只读。 可为 NULL。|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md)集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

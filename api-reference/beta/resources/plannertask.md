@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9ced498b9bc56d8f21f96ede67d1a9a6501ddb21
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: be85587206d9f340699729190af7edd0392d80d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677174"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521648"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,10 +45,10 @@ ms.locfileid: "36677174"
 |createdDateTime|DateTimeOffset|只读。创建任务的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolean|只读。如果任务的 details 对象具有非空的说明，则值为 `true`，否则为 `false`。|
-|id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
-|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
+|id|字符串|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
+|orderHint|字符串|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
-|priority|Int32|任务的优先级。 值的有效范围介于和`0` ( `10`含) 之间, 并且值越低, 优先级越`0`低 (具有最高`10`优先级, 优先级最低)。  目前, 规划者将`0`值`1`和 "紧急", `2` `3` `4` `5`以及 "重要"、、 `6` `7` 、、和 "低" 的`8` `9` `10`值解释为 "中"。  目前, 规划器将设置`1` "紧急"、 `3` "重要" `5` 、"中" 和`9` "低" 的值。|
+|priority|Int32|任务的优先级。 值的有效范围介于和`0` （ `10`含）之间，并且值越低，优先级越`0`低（具有最高`10`优先级，优先级最低）。  目前，规划者将`0`值`1`和 "紧急"， `2` `3` `4` `5`以及 "重要"、、 `6` `7` 、、和 "低" 的`8` `9` `10`值解释为 "中"。  目前，规划器将设置`1` "紧急"、 `3` "重要" `5` 、"中" 和`9` "低" 的值。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|

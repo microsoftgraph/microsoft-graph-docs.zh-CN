@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3aff109b152be328e6923f6fdb36f116e63a9c16
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 1bc49a3fbf494e378ec695af1f53c0ca4ea313ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913308"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521619"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "40913308"
 | completionReason    | String                      | 可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。 |
 | id                  | 字符串                      | 只读。                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                |
-| 状态              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
+| status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系
 无

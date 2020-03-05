@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7e2e64f72c52a6f571b8b97cde643441d8837eda
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 62c127b632277a93312afd7682939049b1e9de68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520140"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

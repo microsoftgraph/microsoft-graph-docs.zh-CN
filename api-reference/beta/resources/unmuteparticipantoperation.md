@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5c8f5b0fee2b0c9c3319feff856d18c49b95509a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d9ebb8d749f8cbe6ce01711ca6a0c36b134e8369
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913287"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519594"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>unmuteParticipantOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "40913287"
 | 适用                  | String                      | 唯一的客户端上下文字符串。 最多可以有256个字符。                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                            |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 
 ## <a name="relationships"></a>关系
 无。

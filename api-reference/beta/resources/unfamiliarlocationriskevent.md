@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 72a114fb42d24bd61aef3bff5cd3fba8d2de93a0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c6f46c1440ccc83dac7e57044e3758f6faf96cee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866509"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519622"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "40866509"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -6,14 +6,16 @@ title: 音频
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 539afcd93ed2f8d9d5b1a136edefa5a69fd2e4bd
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 944ad03a3ab70be5131e64f7d96c2a14ffea06ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508127"
 ---
 # <a name="audio-facet"></a>Audio Facet
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

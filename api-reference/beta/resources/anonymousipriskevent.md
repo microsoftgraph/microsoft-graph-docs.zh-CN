@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 205659f4ebc301824798cd39506cd73853c167ca
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c1fdfbfde3c1246034c885a1c8b1047408136a13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508322"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>anonymousIpRiskEvent 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "40870398"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

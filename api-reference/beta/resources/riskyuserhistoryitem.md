@@ -5,17 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 586fdb046adc8977550cc386a27284752cf487c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 519e2a7fdb6662496cdb660095ec63ce81b849f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521052"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>riskyUserHistoryItem 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-表示 azure AD 用户的风险历史记录, 由 Azure AD Identity Protection 确定。 
+表示 azure AD 用户的风险历史记录，由 Azure AD Identity Protection 确定。 
 
 ## <a name="methods"></a>方法
 

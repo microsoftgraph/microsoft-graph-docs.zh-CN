@@ -5,20 +5,22 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b0fbc0f392a6efa1b0a0ba5f1568451a6fe7d1cf
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 96589309cbeb2880e533b5607dc05beec78894ed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219753"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520266"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>swapShiftsChangeRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示将[班次](../resources/shift.md)与[团队](../resources/team.md)中的其他用户交换的班次请求类型。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

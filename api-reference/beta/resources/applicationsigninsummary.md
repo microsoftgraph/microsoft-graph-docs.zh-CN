@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType_
-ms.openlocfilehash: d169755679cd60285808c1c93cb31810b1d1939d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed491c9bce61bdc7f9ae3821360832dd8cbe04e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013335"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508266"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>applicationSignInSummary 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

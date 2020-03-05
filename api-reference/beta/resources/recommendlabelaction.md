@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54f2a872c0aa64eb79e0b8755ddc6b3788f14055
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2a4da2900ec12233e680238fb294c38a9e17ebbe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939374"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521234"
 ---
 # <a name="recommendlabelaction-resource-type"></a>recommendLabelAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "37939374"
 
 ## <a name="properties"></a>属性
 
-| 属性                    | 类型                                                                     | 描述                                                           |
+| 属性                    | 类型                                                                     | 说明                                                           |
 | :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
 | actionSource                | String                                                                   | 可能的值是：`manual`、`automatic`、`recommended`、`default`。 |
 | actions                     | [informationProtectionAction](informationprotectionaction.md)集合 | 用户接受标签时要执行的操作。                                                                       |

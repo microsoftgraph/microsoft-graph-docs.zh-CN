@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 465a45a2ba8a607d0537e66b96207b3d60626517
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 1aa9188f40175ba0f52f143081004d8c3cbc4797
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950470"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521430"
 ---
 # <a name="projectparticipation-resource-type"></a>projectParticipation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "37950470"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型                                        | 描述                                                                                      |
+| 属性     | 类型                                        | 说明                                                                                      |
 |:-------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------|
-|类别    | String collection                           | 包含用户与项目相关联的类别（例如，数字转换、石油远程测试机组）。 |
+|categories    | String 集合                           | 包含用户与项目相关联的类别（例如，数字转换、石油远程测试机组）。 |
 |客户端        |[companyDetail](companydetail.md)            | 包含有关项目所针对的客户端的详细信息。                              |
 |征求    |[relatedPerson](relatedperson.md)集合 | 列出也在项目中工作的人员。                                                          |
 |介绍        |[positionDetail](positiondetail.md)          | 包含有关用户在项目上的角色的详细信息。                                             |

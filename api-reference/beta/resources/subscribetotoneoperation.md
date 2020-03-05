@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0b10062ed51aae20d6d4268da349b9b429d6c528
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: e35b3fe674c9f92b7dab723325d658facf13962f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913686"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520287"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>SubscribeToToneOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "40913686"
 | 适用                  | String                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                             |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 
 ## <a name="relationships"></a>关系
 无

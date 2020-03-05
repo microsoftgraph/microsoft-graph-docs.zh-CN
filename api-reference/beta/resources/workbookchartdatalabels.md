@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c5e469f5d95065fa3b5a161d510ca023e17f807a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e276a3d4e6f958930add9095e8c6c67972bed4f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007289"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519342"
 ---
 # <a name="workbookchartdatalabels-resource-type"></a>workbookChartDataLabels 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +31,7 @@ ms.locfileid: "36007289"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为: `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
+|position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为： `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|

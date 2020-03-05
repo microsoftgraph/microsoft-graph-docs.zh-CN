@@ -6,14 +6,16 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0989306be8fa8e456d2718079aec069097cab035
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 240f0b804e8b87c0dc3aae1e03a46be3527bed22
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008290"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520539"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "36008290"
 |:---------------------|:---------|:---------------------------------------------------
 | **主机名称**         | string   | 网站集的主机名称。只读。
 | **dataLocationCode** | string   | 此网站集所在位置的地理区域代码。 只读。
-| **根**             | [根][] | 如果存在, 则表示这是 SharePoint 中的根网站集。 只读。
+| **根**             | [根][] | 如果存在，则表示这是 SharePoint 中的根网站集。 只读。
 
 [root]: root.md
 

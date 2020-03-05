@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1418e2cb21a1023e864d842b760006e05f3afb03
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 242c90e9d0e506dbeb6576975305d0a0f8397f86
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870962"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508497"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>accessPackageResourceScope 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ ms.locfileid: "40870962"
 |说明|String|作用域的说明。|
 |displayName|字符串|作用域的显示名称。|
 |id|字符串| 只读。|
-|isRootScope|Boolean|如此如果作用域在层次结构中排列，这是资源的顶部或根作用域。|
+|isRootScope|布尔|如此如果作用域在层次结构中排列，这是资源的顶部或根作用域。|
 |originId|String|在源系统中定义的资源中的范围的唯一标识符。|
 |originSystem|String|作用域的源系统。|
 |roleOriginId|String|角色的原始系统（如果不同）。|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a944309d59383b8c1501495c12d937acb13adbbb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bc08a1b92ccb8404a20cd5013be74d37f7659a5f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870979"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508567"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,8 +44,8 @@ ms.locfileid: "40870979"
 |说明|String|访问包的说明。|
 |displayName|String|访问包的显示名称。|
 |id|字符串| 只读。|
-|isHidden|Boolean|访问包是否在请求程序中是隐藏的。|
-|isRoleScopesVisible|Boolean|指示角色范围是否可见。|
+|isHidden|布尔|访问包是否在请求程序中是隐藏的。|
+|isRoleScopesVisible|布尔|指示角色范围是否可见。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 
@@ -51,8 +53,8 @@ ms.locfileid: "40870979"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)集合| 此为只读属性。 可为 Null。|
-|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| 此为只读属性。 可为 Null。|
+|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)集合| 此为只读属性。 可为 NULL。|
+|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| 此为只读属性。 可为 NULL。|
 |accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](accesspackageresourcerolescope.md)集合| 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

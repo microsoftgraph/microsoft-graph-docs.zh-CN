@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e248e47cf94e2c26e80b505cbaead450e03561d4
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 23227bd4f363748bade73999a4004747d691a364
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331387"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508231"
 ---
 # <a name="approvalsettings-complex-type"></a>approvalSettings 复杂类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "42331387"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isApprovalRequired | 布尔值 | 如果为 false，则此策略中的请求不需要审批。 |
-| isApprovalRequiredForExtension | 布尔值| 如果为 false，则已有分配扩展其工作分配的用户不需要进行审批。 |
-| isRequestorJustificationRequired | 布尔值 | 指示请求者是否需要提供其请求中的理由。 |
+| isApprovalRequired | 布尔 | 如果为 false，则此策略中的请求不需要审批。 |
+| isApprovalRequiredForExtension | 布尔| 如果为 false，则已有分配扩展其工作分配的用户不需要进行审批。 |
+| isRequestorJustificationRequired | 布尔 | 指示请求者是否需要提供其请求中的理由。 |
 | approvalMode| String | 或`Serial`中`NoApproval` `SingleStage`的一个。 时`NoApproval` `isApprovalRequired`使用的是 false。 |
 | approvalStages | [approvalStage](approvalstage.md)集合| 如果需要审批，则此集合的一个或两个元素将定义每个审批阶段。 如果不需要审批，则为空数组。  |
 

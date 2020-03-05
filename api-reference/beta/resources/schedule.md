@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 6bc92b18bd0529066ef9ade2df9c6ccee9628add
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: d2d6a1e9890e5aea8e23185281c171f7356e8a7d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895376"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520982"
 ---
 # <a name="schedule-resource-type"></a>计划资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,21 +26,21 @@ ms.locfileid: "39895376"
 |:---------------|:--------|:----------|
 |[创建或替换计划](../api/team-put-schedule.md) | [日程安排](schedule.md) | 创建或替换计划。|
 |[获取日程安排](../api/schedule-get.md) | [日程安排](schedule.md) | 获取日程安排。|
-|[共享](../api/schedule-share.md) | None | 与 schedule 成员共享计划时间范围。|
+|[共享](../api/schedule-share.md) | 无 | 与 schedule 成员共享计划时间范围。|
 
 ## <a name="properties"></a>属性
 |名称                   |类型           |说明                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                    |string  |计划的 ID。|
-| enabled               |Boolean    | 指示是否为团队启用了计划。 必需。|
-| timeZone              |string  | 指示使用 tz 数据库格式的日程安排团队的时区。 必需。|
+| enabled               |Boolean    | 指示是否为团队启用了计划。 必填。|
+| timeZone              |string  | 指示使用 tz 数据库格式的日程安排团队的时区。 必填。|
 | provisionStatus       |operationStatus    | 调度设置的状态。 可能的值为`notStarted`、 `running`、 `completed`、 `failed`。 |
 | provisionStatusCode   |string  | 有关计划设置失败原因的其他信息。 |
-| timeClockEnabled                  |Boolean  | 指示是否为计划启用了时间时钟。             |
-| openShiftsEnabled                 |Boolean  | 指示是否为计划启用打开的班次。             | 
-| swapShiftsRequestsEnabled                 |Boolean| 指示是否为计划启用交换倒班请求。             |
-| offerShiftRequestsEnabled                 |Boolean  | 指示是否为计划启用了提供倒班请求。             | 
-| timeOffRequestsEnabled                    |Boolean | 指示是否为计划启用时间关请求。             | 
+| timeClockEnabled                  |布尔  | 指示是否为计划启用了时间时钟。             |
+| openShiftsEnabled                 |布尔  | 指示是否为计划启用打开的班次。             | 
+| swapShiftsRequestsEnabled                 |布尔| 指示是否为计划启用交换倒班请求。             |
+| offerShiftRequestsEnabled                 |布尔  | 指示是否为计划启用了提供倒班请求。             | 
+| timeOffRequestsEnabled                    |布尔 | 指示是否为计划启用时间关请求。             | 
 
 
 

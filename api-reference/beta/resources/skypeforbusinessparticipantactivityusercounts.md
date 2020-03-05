@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f6feb87de8b62dcf4f958a5c2bc6aaeda3ef454d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3a7ac37aeeb68d240ffa2c0cdec81e7b2d07ddc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008108"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520364"
 ---
 # <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>skypeForBusinessParticipantActivityUserCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

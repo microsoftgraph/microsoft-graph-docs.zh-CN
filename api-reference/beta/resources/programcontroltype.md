@@ -1,24 +1,26 @@
 ---
 title: programControlType 资源类型
-description: '在 Azure AD access 评论功能中, 将控件与程序关联时使用程序控件类型, 以指示控件所针对的访问评审的类型。  '
+description: '在 Azure AD access 评论功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c7b4360ffa22711c9af9961fbb9f48cee7d29424
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e6f8f13e72374278212b0f1389d38b018099099
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521437"
 ---
 # <a name="programcontroltype-resource-type"></a>programControlType 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md)功能中, 将控件与程序关联时使用程序控件类型, 以指示控件所针对的访问评审的类型。  
+在 Azure AD [access 评论](accessreviews-root.md)功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  
 
-当全局管理员 onboards 租户使用访问评论功能时, 将自动生成程序控制类型对象。  无法创建其他程序控件类型。
+当全局管理员 onboards 租户使用访问评论功能时，将自动生成程序控制类型对象。  无法创建其他程序控件类型。
 
 
 ## <a name="methods"></a>方法
