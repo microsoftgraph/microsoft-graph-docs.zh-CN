@@ -5,29 +5,31 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 27b012374882e98da1669ac0921416bc1a9d1c63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 440927da1dc01116d0a3fa93b1915fe81f7a1a0f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966039"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521802"
 ---
-# <a name="plannerassignment-resource-type"></a><span data-ttu-id="2183e-104">plannerAssignment 资源类型</span><span class="sxs-lookup"><span data-stu-id="2183e-104">plannerAssignment resource type</span></span>
+# <a name="plannerassignment-resource-type"></a><span data-ttu-id="5f616-104">plannerAssignment 资源类型</span><span class="sxs-lookup"><span data-stu-id="5f616-104">plannerAssignment resource type</span></span>
+
+<span data-ttu-id="5f616-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5f616-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2183e-105">**PlannerAssignment**资源表示将任务分配给用户。</span><span class="sxs-lookup"><span data-stu-id="2183e-105">The **plannerAssignment** resource represents the assignment of a task to a user.</span></span> <span data-ttu-id="2183e-106">在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。</span><span class="sxs-lookup"><span data-stu-id="2183e-106">This type is used in the open type [plannerAssignments](plannerassignments.md).</span></span>
+<span data-ttu-id="5f616-106">**PlannerAssignment**资源表示将任务分配给用户。</span><span class="sxs-lookup"><span data-stu-id="5f616-106">The **plannerAssignment** resource represents the assignment of a task to a user.</span></span> <span data-ttu-id="5f616-107">在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。</span><span class="sxs-lookup"><span data-stu-id="5f616-107">This type is used in the open type [plannerAssignments](plannerassignments.md).</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="2183e-107">属性</span><span class="sxs-lookup"><span data-stu-id="2183e-107">Properties</span></span>
-| <span data-ttu-id="2183e-108">属性</span><span class="sxs-lookup"><span data-stu-id="2183e-108">Property</span></span>     | <span data-ttu-id="2183e-109">类型</span><span class="sxs-lookup"><span data-stu-id="2183e-109">Type</span></span>   |<span data-ttu-id="2183e-110">说明</span><span class="sxs-lookup"><span data-stu-id="2183e-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5f616-108">属性</span><span class="sxs-lookup"><span data-stu-id="5f616-108">Properties</span></span>
+| <span data-ttu-id="5f616-109">属性</span><span class="sxs-lookup"><span data-stu-id="5f616-109">Property</span></span>     | <span data-ttu-id="5f616-110">类型</span><span class="sxs-lookup"><span data-stu-id="5f616-110">Type</span></span>   |<span data-ttu-id="5f616-111">说明</span><span class="sxs-lookup"><span data-stu-id="5f616-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2183e-111">assignedBy</span><span class="sxs-lookup"><span data-stu-id="2183e-111">assignedBy</span></span>|[<span data-ttu-id="2183e-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="2183e-112">identitySet</span></span>](identityset.md)|<span data-ttu-id="2183e-113">执行任务分配的用户的标识, 即 assignor。</span><span class="sxs-lookup"><span data-stu-id="2183e-113">The identity of the user that performed the assignment of the task, i.e. the assignor.</span></span>|
-|<span data-ttu-id="2183e-114">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="2183e-114">assignedDateTime</span></span>|<span data-ttu-id="2183e-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2183e-115">DateTimeOffset</span></span>|<span data-ttu-id="2183e-116">任务分配的时间。</span><span class="sxs-lookup"><span data-stu-id="2183e-116">The time at which the task was assigned.</span></span> <span data-ttu-id="2183e-117">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="2183e-117">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="2183e-118">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="2183e-118">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="2183e-119">orderHint</span><span class="sxs-lookup"><span data-stu-id="2183e-119">orderHint</span></span>|<span data-ttu-id="2183e-120">String</span><span class="sxs-lookup"><span data-stu-id="2183e-120">String</span></span>|<span data-ttu-id="2183e-121">用于对任务中的工作负责人进行排序的提示。</span><span class="sxs-lookup"><span data-stu-id="2183e-121">Hint used to order assignees in a task.</span></span> <span data-ttu-id="2183e-122">格式定义如下所示。 [](planner-order-hint-format.md)</span><span class="sxs-lookup"><span data-stu-id="2183e-122">The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="5f616-112">assignedBy</span><span class="sxs-lookup"><span data-stu-id="5f616-112">assignedBy</span></span>|[<span data-ttu-id="5f616-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="5f616-113">identitySet</span></span>](identityset.md)|<span data-ttu-id="5f616-114">执行任务分配的用户的标识，即 assignor。</span><span class="sxs-lookup"><span data-stu-id="5f616-114">The identity of the user that performed the assignment of the task, i.e. the assignor.</span></span>|
+|<span data-ttu-id="5f616-115">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="5f616-115">assignedDateTime</span></span>|<span data-ttu-id="5f616-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5f616-116">DateTimeOffset</span></span>|<span data-ttu-id="5f616-117">任务分配的时间。</span><span class="sxs-lookup"><span data-stu-id="5f616-117">The time at which the task was assigned.</span></span> <span data-ttu-id="5f616-118">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="5f616-118">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="5f616-119">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="5f616-119">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="5f616-120">orderHint</span><span class="sxs-lookup"><span data-stu-id="5f616-120">orderHint</span></span>|<span data-ttu-id="5f616-121">String</span><span class="sxs-lookup"><span data-stu-id="5f616-121">String</span></span>|<span data-ttu-id="5f616-122">用于对任务中的工作负责人进行排序的提示。</span><span class="sxs-lookup"><span data-stu-id="5f616-122">Hint used to order assignees in a task.</span></span> <span data-ttu-id="5f616-123">格式[定义如下所示。](planner-order-hint-format.md)</span><span class="sxs-lookup"><span data-stu-id="5f616-123">The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2183e-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2183e-123">JSON representation</span></span>
-<span data-ttu-id="2183e-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2183e-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5f616-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5f616-124">JSON representation</span></span>
+<span data-ttu-id="5f616-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f616-125">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

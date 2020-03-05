@@ -5,28 +5,30 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2d6e10ccde127e2318ad9c2f3015f5d911574513
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be38d577d52e0086059f9a5627c670fb537941ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964555"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519944"
 ---
-# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="44c7c-103">teamGuestSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="44c7c-103">teamGuestSettings resource type</span></span>
+# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="7e128-103">teamGuestSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="7e128-103">teamGuestSettings resource type</span></span>
+
+<span data-ttu-id="7e128-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="7e128-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="44c7c-104">用于配置来宾是否可以在[团队](team.md)中创建、更新或删除频道的设置。</span><span class="sxs-lookup"><span data-stu-id="44c7c-104">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
+<span data-ttu-id="7e128-105">用于配置来宾是否可以在[团队](team.md)中创建、更新或删除频道的设置。</span><span class="sxs-lookup"><span data-stu-id="7e128-105">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="44c7c-105">属性</span><span class="sxs-lookup"><span data-stu-id="44c7c-105">Properties</span></span>
-| <span data-ttu-id="44c7c-106">属性</span><span class="sxs-lookup"><span data-stu-id="44c7c-106">Property</span></span>     | <span data-ttu-id="44c7c-107">类型</span><span class="sxs-lookup"><span data-stu-id="44c7c-107">Type</span></span>   |<span data-ttu-id="44c7c-108">说明</span><span class="sxs-lookup"><span data-stu-id="44c7c-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7e128-106">属性</span><span class="sxs-lookup"><span data-stu-id="7e128-106">Properties</span></span>
+| <span data-ttu-id="7e128-107">属性</span><span class="sxs-lookup"><span data-stu-id="7e128-107">Property</span></span>     | <span data-ttu-id="7e128-108">类型</span><span class="sxs-lookup"><span data-stu-id="7e128-108">Type</span></span>   |<span data-ttu-id="7e128-109">说明</span><span class="sxs-lookup"><span data-stu-id="7e128-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="44c7c-109">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="44c7c-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="44c7c-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="44c7c-110">Boolean</span></span>|<span data-ttu-id="44c7c-111">如果设置为 true, 则来宾可以添加和更新频道。</span><span class="sxs-lookup"><span data-stu-id="44c7c-111">If set to true, guests can add and update channels.</span></span>|
-|<span data-ttu-id="44c7c-112">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="44c7c-112">allowDeleteChannels</span></span>|<span data-ttu-id="44c7c-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="44c7c-113">Boolean</span></span>|<span data-ttu-id="44c7c-114">如果设置为 true, 则来宾可以删除频道。</span><span class="sxs-lookup"><span data-stu-id="44c7c-114">If set to true, guests can delete channels.</span></span>|
+|<span data-ttu-id="7e128-110">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="7e128-110">allowCreateUpdateChannels</span></span>|<span data-ttu-id="7e128-111">布尔</span><span class="sxs-lookup"><span data-stu-id="7e128-111">Boolean</span></span>|<span data-ttu-id="7e128-112">如果设置为 true，则来宾可以添加和更新频道。</span><span class="sxs-lookup"><span data-stu-id="7e128-112">If set to true, guests can add and update channels.</span></span>|
+|<span data-ttu-id="7e128-113">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="7e128-113">allowDeleteChannels</span></span>|<span data-ttu-id="7e128-114">布尔</span><span class="sxs-lookup"><span data-stu-id="7e128-114">Boolean</span></span>|<span data-ttu-id="7e128-115">如果设置为 true，则来宾可以删除频道。</span><span class="sxs-lookup"><span data-stu-id="7e128-115">If set to true, guests can delete channels.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="44c7c-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="44c7c-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7e128-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7e128-116">JSON representation</span></span>
 
-<span data-ttu-id="44c7c-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="44c7c-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7e128-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e128-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

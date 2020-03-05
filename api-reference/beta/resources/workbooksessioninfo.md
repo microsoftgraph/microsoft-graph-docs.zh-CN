@@ -5,23 +5,25 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3b2d52b6389c6fc00eb0bf3b3b6d81774f6f882a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d0565edea02d0333f6aa3b97b376ea3c7f32c68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963911"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519146"
 ---
-# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="86b0e-103">workbookSessionInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="86b0e-103">workbookSessionInfo resource type</span></span>
+# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="a493b-103">workbookSessionInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="a493b-103">workbookSessionInfo resource type</span></span>
+
+<span data-ttu-id="a493b-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="a493b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="86b0e-104">提供有关工作簿会话的信息。</span><span class="sxs-lookup"><span data-stu-id="86b0e-104">Provides information about workbook session.</span></span>
+<span data-ttu-id="a493b-105">提供有关工作簿会话的信息。</span><span class="sxs-lookup"><span data-stu-id="a493b-105">Provides information about workbook session.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="86b0e-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="86b0e-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a493b-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a493b-106">JSON representation</span></span>
 
-<span data-ttu-id="86b0e-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="86b0e-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a493b-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a493b-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,12 +38,12 @@ ms.locfileid: "35963911"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="86b0e-107">属性</span><span class="sxs-lookup"><span data-stu-id="86b0e-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a493b-108">属性</span><span class="sxs-lookup"><span data-stu-id="a493b-108">Properties</span></span>
 
-| <span data-ttu-id="86b0e-108">属性</span><span class="sxs-lookup"><span data-stu-id="86b0e-108">Property</span></span> | <span data-ttu-id="86b0e-109">类型</span><span class="sxs-lookup"><span data-stu-id="86b0e-109">Type</span></span>  | <span data-ttu-id="86b0e-110">说明</span><span class="sxs-lookup"><span data-stu-id="86b0e-110">Description</span></span>                               |
+| <span data-ttu-id="a493b-109">属性</span><span class="sxs-lookup"><span data-stu-id="a493b-109">Property</span></span> | <span data-ttu-id="a493b-110">类型</span><span class="sxs-lookup"><span data-stu-id="a493b-110">Type</span></span>  | <span data-ttu-id="a493b-111">说明</span><span class="sxs-lookup"><span data-stu-id="a493b-111">Description</span></span>                               |
 |:---------|:------|:------------------------------------------|
-| <span data-ttu-id="86b0e-111">id</span><span class="sxs-lookup"><span data-stu-id="86b0e-111">id</span></span>  | <span data-ttu-id="86b0e-112">string</span><span class="sxs-lookup"><span data-stu-id="86b0e-112">string</span></span> | <span data-ttu-id="86b0e-113">工作簿会话 的 ID。</span><span class="sxs-lookup"><span data-stu-id="86b0e-113">Id of the workbook session.</span></span> |
-| <span data-ttu-id="86b0e-114">persistChanges</span><span class="sxs-lookup"><span data-stu-id="86b0e-114">persistChanges</span></span> | <span data-ttu-id="86b0e-115">string</span><span class="sxs-lookup"><span data-stu-id="86b0e-115">string</span></span> |  <span data-ttu-id="86b0e-116">对于持续会话，值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="86b0e-116">`true` for persistent session.</span></span> <span data-ttu-id="86b0e-117">对于非持续会话（视图模式），值为 `false`。</span><span class="sxs-lookup"><span data-stu-id="86b0e-117">`false` for non-persistent session (view mode)</span></span> |
+| <span data-ttu-id="a493b-112">id</span><span class="sxs-lookup"><span data-stu-id="a493b-112">id</span></span>  | <span data-ttu-id="a493b-113">string</span><span class="sxs-lookup"><span data-stu-id="a493b-113">string</span></span> | <span data-ttu-id="a493b-114">工作簿会话 的 ID。</span><span class="sxs-lookup"><span data-stu-id="a493b-114">Id of the workbook session.</span></span> |
+| <span data-ttu-id="a493b-115">persistChanges</span><span class="sxs-lookup"><span data-stu-id="a493b-115">persistChanges</span></span> | <span data-ttu-id="a493b-116">string</span><span class="sxs-lookup"><span data-stu-id="a493b-116">string</span></span> |  <span data-ttu-id="a493b-117">对于持续会话，值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="a493b-117">`true` for persistent session.</span></span> <span data-ttu-id="a493b-118">对于非持续会话（视图模式），值为 `false`。</span><span class="sxs-lookup"><span data-stu-id="a493b-118">`false` for non-persistent session (view mode)</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

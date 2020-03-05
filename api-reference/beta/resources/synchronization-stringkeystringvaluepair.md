@@ -1,32 +1,34 @@
 ---
 title: stringKeyStringValuePair 资源类型
-description: 表示键值对, 其中键是字符串, 值是字符串。
+description: 表示键值对，其中键是字符串，值是字符串。
 localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 697985c2258c8535aaa076e578501b15944d5687
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67bd7d5ae3c4528589633a89376f5c8de0b5dd30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007835"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520084"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="66e06-103">stringKeyStringValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="66e06-103">stringKeyStringValuePair resource type</span></span>
+# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="2d046-103">stringKeyStringValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="2d046-103">stringKeyStringValuePair resource type</span></span>
+
+<span data-ttu-id="2d046-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="2d046-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="66e06-104">表示键值对, 其中键是字符串, 值是字符串。</span><span class="sxs-lookup"><span data-stu-id="66e06-104">Represents a key-value pair where the key is a string and the value is a string.</span></span>
+<span data-ttu-id="2d046-105">表示键值对，其中键是字符串，值是字符串。</span><span class="sxs-lookup"><span data-stu-id="2d046-105">Represents a key-value pair where the key is a string and the value is a string.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="66e06-105">属性</span><span class="sxs-lookup"><span data-stu-id="66e06-105">Properties</span></span>
-| <span data-ttu-id="66e06-106">属性</span><span class="sxs-lookup"><span data-stu-id="66e06-106">Property</span></span>     | <span data-ttu-id="66e06-107">类型</span><span class="sxs-lookup"><span data-stu-id="66e06-107">Type</span></span>   |<span data-ttu-id="66e06-108">说明</span><span class="sxs-lookup"><span data-stu-id="66e06-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2d046-106">属性</span><span class="sxs-lookup"><span data-stu-id="2d046-106">Properties</span></span>
+| <span data-ttu-id="2d046-107">属性</span><span class="sxs-lookup"><span data-stu-id="2d046-107">Property</span></span>     | <span data-ttu-id="2d046-108">类型</span><span class="sxs-lookup"><span data-stu-id="2d046-108">Type</span></span>   |<span data-ttu-id="2d046-109">说明</span><span class="sxs-lookup"><span data-stu-id="2d046-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="66e06-109">Key</span><span class="sxs-lookup"><span data-stu-id="66e06-109">key</span></span>|<span data-ttu-id="66e06-110">String</span><span class="sxs-lookup"><span data-stu-id="66e06-110">String</span></span>|<span data-ttu-id="66e06-111">键。</span><span class="sxs-lookup"><span data-stu-id="66e06-111">Key.</span></span>|
-|<span data-ttu-id="66e06-112">value</span><span class="sxs-lookup"><span data-stu-id="66e06-112">value</span></span>|<span data-ttu-id="66e06-113">String</span><span class="sxs-lookup"><span data-stu-id="66e06-113">String</span></span>|<span data-ttu-id="66e06-114">值。</span><span class="sxs-lookup"><span data-stu-id="66e06-114">Value.</span></span>|
+|<span data-ttu-id="2d046-110">Key</span><span class="sxs-lookup"><span data-stu-id="2d046-110">key</span></span>|<span data-ttu-id="2d046-111">String</span><span class="sxs-lookup"><span data-stu-id="2d046-111">String</span></span>|<span data-ttu-id="2d046-112">键。</span><span class="sxs-lookup"><span data-stu-id="2d046-112">Key.</span></span>|
+|<span data-ttu-id="2d046-113">value</span><span class="sxs-lookup"><span data-stu-id="2d046-113">value</span></span>|<span data-ttu-id="2d046-114">String</span><span class="sxs-lookup"><span data-stu-id="2d046-114">String</span></span>|<span data-ttu-id="2d046-115">值。</span><span class="sxs-lookup"><span data-stu-id="2d046-115">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="66e06-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="66e06-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2d046-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2d046-116">JSON representation</span></span>
 
-<span data-ttu-id="66e06-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="66e06-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2d046-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2d046-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

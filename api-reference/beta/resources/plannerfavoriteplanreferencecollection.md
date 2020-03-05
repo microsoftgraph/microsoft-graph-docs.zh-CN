@@ -5,27 +5,29 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 67149f0ccf8ec04fe702a0d77b1fb2f5f6020365
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32c0cecc402570491c0025c0b4e0c88b74ed40fb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965945"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521732"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="6ef7f-103">plannerFavoritePlanReferenceCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="6ef7f-103">plannerFavoritePlanReferenceCollection resource type</span></span>
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="65b24-103">plannerFavoritePlanReferenceCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="65b24-103">plannerFavoritePlanReferenceCollection resource type</span></span>
+
+<span data-ttu-id="65b24-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="65b24-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ef7f-104">**PlannerFavoritePlanReferenceCollection**资源表示对计划的引用的集合, 这些计划被用户标记为收藏。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-104">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="6ef7f-105">此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-105">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="6ef7f-106">属性值对中的属性名称是对应计划的 ID;值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-106">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
+<span data-ttu-id="65b24-105">**PlannerFavoritePlanReferenceCollection**资源表示对计划的引用的集合，这些计划被用户标记为收藏。</span><span class="sxs-lookup"><span data-stu-id="65b24-105">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="65b24-106">此资源是打开的类型，并且是[plannerUser](planneruser.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="65b24-106">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="65b24-107">属性值对中的属性名称是对应计划的 ID;值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="65b24-107">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6ef7f-107">属性</span><span class="sxs-lookup"><span data-stu-id="6ef7f-107">Properties</span></span>
-<span data-ttu-id="6ef7f-108">您可以定义此开放类型的属性。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-108">You can define the properties of this open type.</span></span> <span data-ttu-id="6ef7f-109">属性名称是`id` [plannerPlan](plannerplan.md)资源的值, 它们的值必须是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-109">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="6ef7f-110">若要删除收藏夹列表中的项, 请将该属性的值设置`null`为。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-110">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="65b24-108">属性</span><span class="sxs-lookup"><span data-stu-id="65b24-108">Properties</span></span>
+<span data-ttu-id="65b24-109">您可以定义此开放类型的属性。</span><span class="sxs-lookup"><span data-stu-id="65b24-109">You can define the properties of this open type.</span></span> <span data-ttu-id="65b24-110">属性名称是`id` [plannerPlan](plannerplan.md)资源的值，它们的值必须是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="65b24-110">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="65b24-111">若要删除收藏夹列表中的项，请将该属性的值设置`null`为。</span><span class="sxs-lookup"><span data-stu-id="65b24-111">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="6ef7f-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6ef7f-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="65b24-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="65b24-112">JSON representation</span></span>
 
-<span data-ttu-id="6ef7f-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6ef7f-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="65b24-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="65b24-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

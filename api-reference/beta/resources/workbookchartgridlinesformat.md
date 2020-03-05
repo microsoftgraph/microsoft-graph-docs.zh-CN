@@ -5,34 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6d32e916b3156082b45cbcaa105fd55e1c377b2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bdd676f1271c0fdfd0273d3a5064c46127b73fd3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007275"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519314"
 ---
-# <a name="workbookchartgridlinesformat-resource-type"></a><span data-ttu-id="c8216-103">workbookChartGridlinesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="c8216-103">workbookChartGridlinesFormat resource type</span></span>
+# <a name="workbookchartgridlinesformat-resource-type"></a><span data-ttu-id="9e166-103">workbookChartGridlinesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="9e166-103">workbookChartGridlinesFormat resource type</span></span>
+
+<span data-ttu-id="9e166-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9e166-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8216-104">封装图表网格线的格式属性。</span><span class="sxs-lookup"><span data-stu-id="c8216-104">Encapsulates the format properties for chart gridlines.</span></span>
+<span data-ttu-id="9e166-105">封装图表网格线的格式属性。</span><span class="sxs-lookup"><span data-stu-id="9e166-105">Encapsulates the format properties for chart gridlines.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="c8216-105">方法</span><span class="sxs-lookup"><span data-stu-id="c8216-105">Methods</span></span>
-<span data-ttu-id="c8216-106">无</span><span class="sxs-lookup"><span data-stu-id="c8216-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="9e166-106">方法</span><span class="sxs-lookup"><span data-stu-id="9e166-106">Methods</span></span>
+<span data-ttu-id="9e166-107">无</span><span class="sxs-lookup"><span data-stu-id="9e166-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c8216-107">属性</span><span class="sxs-lookup"><span data-stu-id="c8216-107">Properties</span></span>
-<span data-ttu-id="c8216-108">无</span><span class="sxs-lookup"><span data-stu-id="c8216-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="9e166-108">属性</span><span class="sxs-lookup"><span data-stu-id="9e166-108">Properties</span></span>
+<span data-ttu-id="9e166-109">无</span><span class="sxs-lookup"><span data-stu-id="9e166-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="c8216-109">关系</span><span class="sxs-lookup"><span data-stu-id="c8216-109">Relationships</span></span>
-| <span data-ttu-id="c8216-110">关系</span><span class="sxs-lookup"><span data-stu-id="c8216-110">Relationship</span></span> | <span data-ttu-id="c8216-111">类型</span><span class="sxs-lookup"><span data-stu-id="c8216-111">Type</span></span>   |<span data-ttu-id="c8216-112">说明</span><span class="sxs-lookup"><span data-stu-id="c8216-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="9e166-110">关系</span><span class="sxs-lookup"><span data-stu-id="9e166-110">Relationships</span></span>
+| <span data-ttu-id="9e166-111">关系</span><span class="sxs-lookup"><span data-stu-id="9e166-111">Relationship</span></span> | <span data-ttu-id="9e166-112">类型</span><span class="sxs-lookup"><span data-stu-id="9e166-112">Type</span></span>   |<span data-ttu-id="9e166-113">说明</span><span class="sxs-lookup"><span data-stu-id="9e166-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c8216-113">line</span><span class="sxs-lookup"><span data-stu-id="c8216-113">line</span></span>|[<span data-ttu-id="c8216-114">workbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="c8216-114">workbookChartLineFormat</span></span>](workbookchartlineformat.md)|<span data-ttu-id="c8216-115">表示图表线条格式。</span><span class="sxs-lookup"><span data-stu-id="c8216-115">Represents chart line formatting.</span></span> <span data-ttu-id="c8216-116">只读。</span><span class="sxs-lookup"><span data-stu-id="c8216-116">Read-only.</span></span>|
+|<span data-ttu-id="9e166-114">line</span><span class="sxs-lookup"><span data-stu-id="9e166-114">line</span></span>|[<span data-ttu-id="9e166-115">workbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="9e166-115">workbookChartLineFormat</span></span>](workbookchartlineformat.md)|<span data-ttu-id="9e166-116">表示图表线条格式。</span><span class="sxs-lookup"><span data-stu-id="9e166-116">Represents chart line formatting.</span></span> <span data-ttu-id="9e166-117">只读。</span><span class="sxs-lookup"><span data-stu-id="9e166-117">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="c8216-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c8216-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9e166-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9e166-118">JSON representation</span></span>
 
-<span data-ttu-id="c8216-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c8216-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9e166-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9e166-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

@@ -5,36 +5,38 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: ''
-ms.openlocfilehash: 2c51d94b3143d9929c03093cfb1a6625d6a9e3db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21915811da771bd0eebdb5fb2c16df5cfbdea096
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974519"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508455"
 ---
-# <a name="accessreviewsettings-resource-type"></a><span data-ttu-id="89c47-102">accessReviewSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="89c47-102">accessReviewSettings resource type</span></span>
+# <a name="accessreviewsettings-resource-type"></a><span data-ttu-id="07ee4-102">accessReviewSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="07ee4-102">accessReviewSettings resource type</span></span>
+
+<span data-ttu-id="07ee4-103">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="07ee4-103">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="89c47-103">属性</span><span class="sxs-lookup"><span data-stu-id="89c47-103">Properties</span></span>
-|<span data-ttu-id="89c47-104">属性</span><span class="sxs-lookup"><span data-stu-id="89c47-104">Property</span></span>|<span data-ttu-id="89c47-105">类型</span><span class="sxs-lookup"><span data-stu-id="89c47-105">Type</span></span>|<span data-ttu-id="89c47-106">说明</span><span class="sxs-lookup"><span data-stu-id="89c47-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="07ee4-104">属性</span><span class="sxs-lookup"><span data-stu-id="07ee4-104">Properties</span></span>
+|<span data-ttu-id="07ee4-105">属性</span><span class="sxs-lookup"><span data-stu-id="07ee4-105">Property</span></span>|<span data-ttu-id="07ee4-106">类型</span><span class="sxs-lookup"><span data-stu-id="07ee4-106">Type</span></span>|<span data-ttu-id="07ee4-107">说明</span><span class="sxs-lookup"><span data-stu-id="07ee4-107">Description</span></span>|
 |:---|:---|:---|
-| <span data-ttu-id="89c47-107">mailNotificationsEnabled</span><span class="sxs-lookup"><span data-stu-id="89c47-107">mailNotificationsEnabled</span></span> | <span data-ttu-id="89c47-108">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-108">boolean</span></span> |  |
-| <span data-ttu-id="89c47-109">remindersEnabled</span><span class="sxs-lookup"><span data-stu-id="89c47-109">remindersEnabled</span></span> | <span data-ttu-id="89c47-110">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-110">boolean</span></span> |  |
-| <span data-ttu-id="89c47-111">justificationRequiredOnApproval</span><span class="sxs-lookup"><span data-stu-id="89c47-111">justificationRequiredOnApproval</span></span> | <span data-ttu-id="89c47-112">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-112">boolean</span></span> |  |
-| <span data-ttu-id="89c47-113">recurrenceSettings</span><span class="sxs-lookup"><span data-stu-id="89c47-113">recurrenceSettings</span></span> | <span data-ttu-id="89c47-114">accessReviewRecurrenceSettings</span><span class="sxs-lookup"><span data-stu-id="89c47-114">accessReviewRecurrenceSettings</span></span> |  |
-| <span data-ttu-id="89c47-115">autoReviewEnabled</span><span class="sxs-lookup"><span data-stu-id="89c47-115">autoReviewEnabled</span></span> | <span data-ttu-id="89c47-116">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-116">boolean</span></span> |  |
-| <span data-ttu-id="89c47-117">activityDurationInDays</span><span class="sxs-lookup"><span data-stu-id="89c47-117">activityDurationInDays</span></span> | <span data-ttu-id="89c47-118">Int32</span><span class="sxs-lookup"><span data-stu-id="89c47-118">Int32</span></span> |  |
-| <span data-ttu-id="89c47-119">autoReviewSettings</span><span class="sxs-lookup"><span data-stu-id="89c47-119">autoReviewSettings</span></span> | <span data-ttu-id="89c47-120">autoReviewSettings</span><span class="sxs-lookup"><span data-stu-id="89c47-120">autoReviewSettings</span></span> |  |
-| <span data-ttu-id="89c47-121">autoApplyReviewResultsEnabled</span><span class="sxs-lookup"><span data-stu-id="89c47-121">autoApplyReviewResultsEnabled</span></span> | <span data-ttu-id="89c47-122">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-122">boolean</span></span> |  |
-| <span data-ttu-id="89c47-123">accessRecommendationsEnabled</span><span class="sxs-lookup"><span data-stu-id="89c47-123">accessRecommendationsEnabled</span></span> | <span data-ttu-id="89c47-124">boolean</span><span class="sxs-lookup"><span data-stu-id="89c47-124">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-108">mailNotificationsEnabled</span><span class="sxs-lookup"><span data-stu-id="07ee4-108">mailNotificationsEnabled</span></span> | <span data-ttu-id="07ee4-109">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-109">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-110">remindersEnabled</span><span class="sxs-lookup"><span data-stu-id="07ee4-110">remindersEnabled</span></span> | <span data-ttu-id="07ee4-111">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-111">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-112">justificationRequiredOnApproval</span><span class="sxs-lookup"><span data-stu-id="07ee4-112">justificationRequiredOnApproval</span></span> | <span data-ttu-id="07ee4-113">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-113">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-114">recurrenceSettings</span><span class="sxs-lookup"><span data-stu-id="07ee4-114">recurrenceSettings</span></span> | <span data-ttu-id="07ee4-115">accessReviewRecurrenceSettings</span><span class="sxs-lookup"><span data-stu-id="07ee4-115">accessReviewRecurrenceSettings</span></span> |  |
+| <span data-ttu-id="07ee4-116">autoReviewEnabled</span><span class="sxs-lookup"><span data-stu-id="07ee4-116">autoReviewEnabled</span></span> | <span data-ttu-id="07ee4-117">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-117">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-118">activityDurationInDays</span><span class="sxs-lookup"><span data-stu-id="07ee4-118">activityDurationInDays</span></span> | <span data-ttu-id="07ee4-119">Int32</span><span class="sxs-lookup"><span data-stu-id="07ee4-119">Int32</span></span> |  |
+| <span data-ttu-id="07ee4-120">autoReviewSettings</span><span class="sxs-lookup"><span data-stu-id="07ee4-120">autoReviewSettings</span></span> | <span data-ttu-id="07ee4-121">autoReviewSettings</span><span class="sxs-lookup"><span data-stu-id="07ee4-121">autoReviewSettings</span></span> |  |
+| <span data-ttu-id="07ee4-122">autoApplyReviewResultsEnabled</span><span class="sxs-lookup"><span data-stu-id="07ee4-122">autoApplyReviewResultsEnabled</span></span> | <span data-ttu-id="07ee4-123">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-123">boolean</span></span> |  |
+| <span data-ttu-id="07ee4-124">accessRecommendationsEnabled</span><span class="sxs-lookup"><span data-stu-id="07ee4-124">accessRecommendationsEnabled</span></span> | <span data-ttu-id="07ee4-125">boolean</span><span class="sxs-lookup"><span data-stu-id="07ee4-125">boolean</span></span> |  |
 
 
-## <a name="relationships"></a><span data-ttu-id="89c47-125">关系</span><span class="sxs-lookup"><span data-stu-id="89c47-125">Relationships</span></span>
-<span data-ttu-id="89c47-126">无</span><span class="sxs-lookup"><span data-stu-id="89c47-126">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="89c47-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="89c47-127">JSON Representation</span></span>
-<span data-ttu-id="89c47-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="89c47-128">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="07ee4-126">关系</span><span class="sxs-lookup"><span data-stu-id="07ee4-126">Relationships</span></span>
+<span data-ttu-id="07ee4-127">无</span><span class="sxs-lookup"><span data-stu-id="07ee4-127">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="07ee4-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="07ee4-128">JSON Representation</span></span>
+<span data-ttu-id="07ee4-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="07ee4-129">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewSettings"

@@ -5,32 +5,34 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8967eb083ad2bd413277c42b688c2d0c48d8244b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f77bc80a5723e3e00675aeaab05f2dd7ea180f76
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519937"
 ---
-# <a name="teammembersettings-resource-type"></a><span data-ttu-id="863e6-103">teamMemberSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="863e6-103">teamMemberSettings resource type</span></span>
+# <a name="teammembersettings-resource-type"></a><span data-ttu-id="eba12-103">teamMemberSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="eba12-103">teamMemberSettings resource type</span></span>
+
+<span data-ttu-id="eba12-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="eba12-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="863e6-104">用于配置成员是否可以在[团队](team.md)中执行某些操作（例如，创建频道和添加 bot）的设置。</span><span class="sxs-lookup"><span data-stu-id="863e6-104">Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the [team](team.md).</span></span>
+<span data-ttu-id="eba12-105">用于配置成员是否可以在[团队](team.md)中执行某些操作（例如，创建频道和添加 bot）的设置。</span><span class="sxs-lookup"><span data-stu-id="eba12-105">Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="863e6-105">属性</span><span class="sxs-lookup"><span data-stu-id="863e6-105">Properties</span></span>
-| <span data-ttu-id="863e6-106">属性</span><span class="sxs-lookup"><span data-stu-id="863e6-106">Property</span></span>     | <span data-ttu-id="863e6-107">类型</span><span class="sxs-lookup"><span data-stu-id="863e6-107">Type</span></span>   |<span data-ttu-id="863e6-108">说明</span><span class="sxs-lookup"><span data-stu-id="863e6-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="eba12-106">属性</span><span class="sxs-lookup"><span data-stu-id="eba12-106">Properties</span></span>
+| <span data-ttu-id="eba12-107">属性</span><span class="sxs-lookup"><span data-stu-id="eba12-107">Property</span></span>     | <span data-ttu-id="eba12-108">类型</span><span class="sxs-lookup"><span data-stu-id="eba12-108">Type</span></span>   |<span data-ttu-id="eba12-109">说明</span><span class="sxs-lookup"><span data-stu-id="eba12-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="863e6-109">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="863e6-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="863e6-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-110">Boolean</span></span>|<span data-ttu-id="863e6-111">如果设置为 true，则成员可以添加和更新任何频道。</span><span class="sxs-lookup"><span data-stu-id="863e6-111">If set to true, members can add and update any channels.</span></span>|
-|<span data-ttu-id="863e6-112">allowCreatePrivateChannels</span><span class="sxs-lookup"><span data-stu-id="863e6-112">allowCreatePrivateChannels</span></span>|<span data-ttu-id="863e6-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-113">Boolean</span></span>|<span data-ttu-id="863e6-114">如果设置为 true，则成员可以添加和更新专用通道。</span><span class="sxs-lookup"><span data-stu-id="863e6-114">If set to true, members can add and update private channels.</span></span>|
-|<span data-ttu-id="863e6-115">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="863e6-115">allowDeleteChannels</span></span>|<span data-ttu-id="863e6-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-116">Boolean</span></span>|<span data-ttu-id="863e6-117">如果设置为 true，则成员可以删除频道。</span><span class="sxs-lookup"><span data-stu-id="863e6-117">If set to true, members can delete channels.</span></span>|
-|<span data-ttu-id="863e6-118">allowAddRemoveApps</span><span class="sxs-lookup"><span data-stu-id="863e6-118">allowAddRemoveApps</span></span>|<span data-ttu-id="863e6-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-119">Boolean</span></span>|<span data-ttu-id="863e6-120">如果设置为 true，则成员可以添加和删除应用。</span><span class="sxs-lookup"><span data-stu-id="863e6-120">If set to true, members can add and remove apps.</span></span>|
-|<span data-ttu-id="863e6-121">allowCreateUpdateRemoveTabs</span><span class="sxs-lookup"><span data-stu-id="863e6-121">allowCreateUpdateRemoveTabs</span></span>|<span data-ttu-id="863e6-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-122">Boolean</span></span>|<span data-ttu-id="863e6-123">如果设置为 true，则成员可以添加、更新和删除选项卡。</span><span class="sxs-lookup"><span data-stu-id="863e6-123">If set to true, members can add, update, and remove tabs.</span></span> |
-|<span data-ttu-id="863e6-124">allowCreateUpdateRemoveConnectors</span><span class="sxs-lookup"><span data-stu-id="863e6-124">allowCreateUpdateRemoveConnectors</span></span>|<span data-ttu-id="863e6-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="863e6-125">Boolean</span></span>|<span data-ttu-id="863e6-126">如果设置为 true，则成员可以添加、更新和删除连接器。</span><span class="sxs-lookup"><span data-stu-id="863e6-126">If set to true, members can add, update, and remove connectors.</span></span>|
+|<span data-ttu-id="eba12-110">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="eba12-110">allowCreateUpdateChannels</span></span>|<span data-ttu-id="eba12-111">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-111">Boolean</span></span>|<span data-ttu-id="eba12-112">如果设置为 true，则成员可以添加和更新任何频道。</span><span class="sxs-lookup"><span data-stu-id="eba12-112">If set to true, members can add and update any channels.</span></span>|
+|<span data-ttu-id="eba12-113">allowCreatePrivateChannels</span><span class="sxs-lookup"><span data-stu-id="eba12-113">allowCreatePrivateChannels</span></span>|<span data-ttu-id="eba12-114">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-114">Boolean</span></span>|<span data-ttu-id="eba12-115">如果设置为 true，则成员可以添加和更新专用通道。</span><span class="sxs-lookup"><span data-stu-id="eba12-115">If set to true, members can add and update private channels.</span></span>|
+|<span data-ttu-id="eba12-116">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="eba12-116">allowDeleteChannels</span></span>|<span data-ttu-id="eba12-117">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-117">Boolean</span></span>|<span data-ttu-id="eba12-118">如果设置为 true，则成员可以删除频道。</span><span class="sxs-lookup"><span data-stu-id="eba12-118">If set to true, members can delete channels.</span></span>|
+|<span data-ttu-id="eba12-119">allowAddRemoveApps</span><span class="sxs-lookup"><span data-stu-id="eba12-119">allowAddRemoveApps</span></span>|<span data-ttu-id="eba12-120">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-120">Boolean</span></span>|<span data-ttu-id="eba12-121">如果设置为 true，则成员可以添加和删除应用。</span><span class="sxs-lookup"><span data-stu-id="eba12-121">If set to true, members can add and remove apps.</span></span>|
+|<span data-ttu-id="eba12-122">allowCreateUpdateRemoveTabs</span><span class="sxs-lookup"><span data-stu-id="eba12-122">allowCreateUpdateRemoveTabs</span></span>|<span data-ttu-id="eba12-123">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-123">Boolean</span></span>|<span data-ttu-id="eba12-124">如果设置为 true，则成员可以添加、更新和删除选项卡。</span><span class="sxs-lookup"><span data-stu-id="eba12-124">If set to true, members can add, update, and remove tabs.</span></span> |
+|<span data-ttu-id="eba12-125">allowCreateUpdateRemoveConnectors</span><span class="sxs-lookup"><span data-stu-id="eba12-125">allowCreateUpdateRemoveConnectors</span></span>|<span data-ttu-id="eba12-126">布尔</span><span class="sxs-lookup"><span data-stu-id="eba12-126">Boolean</span></span>|<span data-ttu-id="eba12-127">如果设置为 true，则成员可以添加、更新和删除连接器。</span><span class="sxs-lookup"><span data-stu-id="eba12-127">If set to true, members can add, update, and remove connectors.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="863e6-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="863e6-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eba12-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="eba12-128">JSON representation</span></span>
 
-<span data-ttu-id="863e6-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="863e6-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="eba12-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="eba12-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

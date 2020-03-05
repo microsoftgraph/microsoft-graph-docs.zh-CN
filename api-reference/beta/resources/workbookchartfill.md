@@ -5,34 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 65427e495ed506ffb970487ffcce1235ec0e7541
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ae51a05d1eeec55e3e6e0080a43e454712092fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007268"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519335"
 ---
-# <a name="workbookchartfill-resource-type"></a><span data-ttu-id="84bc1-103">workbookChartFill 资源类型</span><span class="sxs-lookup"><span data-stu-id="84bc1-103">workbookChartFill resource type</span></span>
+# <a name="workbookchartfill-resource-type"></a><span data-ttu-id="0ecc6-103">workbookChartFill 资源类型</span><span class="sxs-lookup"><span data-stu-id="0ecc6-103">workbookChartFill resource type</span></span>
+
+<span data-ttu-id="0ecc6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="0ecc6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="84bc1-104">表示图表元素的格式填充。</span><span class="sxs-lookup"><span data-stu-id="84bc1-104">Represents the fill formatting for a chart element.</span></span>
+<span data-ttu-id="0ecc6-105">表示图表元素的格式填充。</span><span class="sxs-lookup"><span data-stu-id="0ecc6-105">Represents the fill formatting for a chart element.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="84bc1-105">方法</span><span class="sxs-lookup"><span data-stu-id="84bc1-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="0ecc6-106">方法</span><span class="sxs-lookup"><span data-stu-id="0ecc6-106">Methods</span></span>
 
-| <span data-ttu-id="84bc1-106">方法</span><span class="sxs-lookup"><span data-stu-id="84bc1-106">Method</span></span>           | <span data-ttu-id="84bc1-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="84bc1-107">Return Type</span></span>    |<span data-ttu-id="84bc1-108">说明</span><span class="sxs-lookup"><span data-stu-id="84bc1-108">Description</span></span>|
+| <span data-ttu-id="0ecc6-107">方法</span><span class="sxs-lookup"><span data-stu-id="0ecc6-107">Method</span></span>           | <span data-ttu-id="0ecc6-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="0ecc6-108">Return Type</span></span>    |<span data-ttu-id="0ecc6-109">说明</span><span class="sxs-lookup"><span data-stu-id="0ecc6-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="84bc1-109">清除</span><span class="sxs-lookup"><span data-stu-id="84bc1-109">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="84bc1-110">None</span><span class="sxs-lookup"><span data-stu-id="84bc1-110">None</span></span>|<span data-ttu-id="84bc1-111">清除图表元素的填充颜色。</span><span class="sxs-lookup"><span data-stu-id="84bc1-111">Clear the fill color of a chart element.</span></span>|
-|[<span data-ttu-id="84bc1-112">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="84bc1-112">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="84bc1-113">无</span><span class="sxs-lookup"><span data-stu-id="84bc1-113">None</span></span>|<span data-ttu-id="84bc1-114">将图表元素的填充格式设置为统一颜色。</span><span class="sxs-lookup"><span data-stu-id="84bc1-114">Sets the fill formatting of a chart element to a uniform color.</span></span>|
+|[<span data-ttu-id="0ecc6-110">清除</span><span class="sxs-lookup"><span data-stu-id="0ecc6-110">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="0ecc6-111">None</span><span class="sxs-lookup"><span data-stu-id="0ecc6-111">None</span></span>|<span data-ttu-id="0ecc6-112">清除图表元素的填充颜色。</span><span class="sxs-lookup"><span data-stu-id="0ecc6-112">Clear the fill color of a chart element.</span></span>|
+|[<span data-ttu-id="0ecc6-113">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="0ecc6-113">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="0ecc6-114">无</span><span class="sxs-lookup"><span data-stu-id="0ecc6-114">None</span></span>|<span data-ttu-id="0ecc6-115">将图表元素的填充格式设置为统一颜色。</span><span class="sxs-lookup"><span data-stu-id="0ecc6-115">Sets the fill formatting of a chart element to a uniform color.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="84bc1-115">属性</span><span class="sxs-lookup"><span data-stu-id="84bc1-115">Properties</span></span>
-<span data-ttu-id="84bc1-116">无</span><span class="sxs-lookup"><span data-stu-id="84bc1-116">None</span></span>
+## <a name="properties"></a><span data-ttu-id="0ecc6-116">属性</span><span class="sxs-lookup"><span data-stu-id="0ecc6-116">Properties</span></span>
+<span data-ttu-id="0ecc6-117">无</span><span class="sxs-lookup"><span data-stu-id="0ecc6-117">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="84bc1-117">关系</span><span class="sxs-lookup"><span data-stu-id="84bc1-117">Relationships</span></span>
-<span data-ttu-id="84bc1-118">无</span><span class="sxs-lookup"><span data-stu-id="84bc1-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0ecc6-118">关系</span><span class="sxs-lookup"><span data-stu-id="0ecc6-118">Relationships</span></span>
+<span data-ttu-id="0ecc6-119">无</span><span class="sxs-lookup"><span data-stu-id="0ecc6-119">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="84bc1-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="84bc1-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0ecc6-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0ecc6-120">JSON representation</span></span>
 
 <!--{
   "blockType": "resource",

@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 35997bfcae7f33cc9bf8e62121c5dc2a724c95be
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: beb67d906c5f159f94ab8f64863eb383286489b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913742"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508099"
 ---
-# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="30620-103">audioSourceLevel 资源类型</span><span class="sxs-lookup"><span data-stu-id="30620-103">audioSourceLevel resource type</span></span>
+# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="84e39-103">audioSourceLevel 资源类型</span><span class="sxs-lookup"><span data-stu-id="84e39-103">audioSourceLevel resource type</span></span>
+
+<span data-ttu-id="84e39-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="84e39-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30620-104">其他源的级别配置。</span><span class="sxs-lookup"><span data-stu-id="30620-104">Level configuration for other sources.</span></span>
+<span data-ttu-id="84e39-105">其他源的级别配置。</span><span class="sxs-lookup"><span data-stu-id="84e39-105">Level configuration for other sources.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="30620-105">属性</span><span class="sxs-lookup"><span data-stu-id="30620-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="84e39-106">属性</span><span class="sxs-lookup"><span data-stu-id="84e39-106">Properties</span></span>
 
-| <span data-ttu-id="30620-106">属性</span><span class="sxs-lookup"><span data-stu-id="30620-106">Property</span></span>               | <span data-ttu-id="30620-107">类型</span><span class="sxs-lookup"><span data-stu-id="30620-107">Type</span></span>    | <span data-ttu-id="30620-108">说明</span><span class="sxs-lookup"><span data-stu-id="30620-108">Description</span></span>                                                                                         |
+| <span data-ttu-id="84e39-107">属性</span><span class="sxs-lookup"><span data-stu-id="84e39-107">Property</span></span>               | <span data-ttu-id="84e39-108">类型</span><span class="sxs-lookup"><span data-stu-id="84e39-108">Type</span></span>    | <span data-ttu-id="84e39-109">说明</span><span class="sxs-lookup"><span data-stu-id="84e39-109">Description</span></span>                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="30620-109">duckOthers</span><span class="sxs-lookup"><span data-stu-id="30620-109">duckOthers</span></span>             | <span data-ttu-id="30620-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="30620-110">Boolean</span></span> | <span data-ttu-id="30620-111">允许此源在活动时有其他源。</span><span class="sxs-lookup"><span data-stu-id="30620-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="30620-112">如果设置为 true，则必须设置 ducking 级别。</span><span class="sxs-lookup"><span data-stu-id="30620-112">If set to true, ducking level has to be set.</span></span>|
-| <span data-ttu-id="30620-113">块级</span><span class="sxs-lookup"><span data-stu-id="30620-113">level</span></span>                  | <span data-ttu-id="30620-114">Int64</span><span class="sxs-lookup"><span data-stu-id="30620-114">Int64</span></span>   | <span data-ttu-id="30620-115">源的 Ducking 级别（如果`duckOthers`设置为`true`）。</span><span class="sxs-lookup"><span data-stu-id="30620-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
-| <span data-ttu-id="30620-116">参与者</span><span class="sxs-lookup"><span data-stu-id="30620-116">participant</span></span>            | <span data-ttu-id="30620-117">String</span><span class="sxs-lookup"><span data-stu-id="30620-117">String</span></span>  | <span data-ttu-id="30620-118">源参与者音频流。</span><span class="sxs-lookup"><span data-stu-id="30620-118">The source participant audio stream.</span></span>                                                                |
+| <span data-ttu-id="84e39-110">duckOthers</span><span class="sxs-lookup"><span data-stu-id="84e39-110">duckOthers</span></span>             | <span data-ttu-id="84e39-111">布尔</span><span class="sxs-lookup"><span data-stu-id="84e39-111">Boolean</span></span> | <span data-ttu-id="84e39-112">允许此源在活动时有其他源。</span><span class="sxs-lookup"><span data-stu-id="84e39-112">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="84e39-113">如果设置为 true，则必须设置 ducking 级别。</span><span class="sxs-lookup"><span data-stu-id="84e39-113">If set to true, ducking level has to be set.</span></span>|
+| <span data-ttu-id="84e39-114">块级</span><span class="sxs-lookup"><span data-stu-id="84e39-114">level</span></span>                  | <span data-ttu-id="84e39-115">Int64</span><span class="sxs-lookup"><span data-stu-id="84e39-115">Int64</span></span>   | <span data-ttu-id="84e39-116">源的 Ducking 级别（如果`duckOthers`设置为`true`）。</span><span class="sxs-lookup"><span data-stu-id="84e39-116">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
+| <span data-ttu-id="84e39-117">参与者</span><span class="sxs-lookup"><span data-stu-id="84e39-117">participant</span></span>            | <span data-ttu-id="84e39-118">String</span><span class="sxs-lookup"><span data-stu-id="84e39-118">String</span></span>  | <span data-ttu-id="84e39-119">源参与者音频流。</span><span class="sxs-lookup"><span data-stu-id="84e39-119">The source participant audio stream.</span></span>                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="30620-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="30620-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="84e39-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="84e39-120">JSON representation</span></span>
 
-<span data-ttu-id="30620-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="30620-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="84e39-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="84e39-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

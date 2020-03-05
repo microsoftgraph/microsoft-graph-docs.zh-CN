@@ -5,30 +5,32 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e9501831ef2e83d23aa4a5587b9afd8eaa7f5ee8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: b5c46353d0533fb2c032765527ed5ccf7107e1b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703903"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520912"
 ---
-# <a name="searchquery-resource-type"></a><span data-ttu-id="00b8e-103">searchQuery 资源类型</span><span class="sxs-lookup"><span data-stu-id="00b8e-103">searchQuery resource type</span></span>
+# <a name="searchquery-resource-type"></a><span data-ttu-id="39f2f-103">searchQuery 资源类型</span><span class="sxs-lookup"><span data-stu-id="39f2f-103">searchQuery resource type</span></span>
+
+<span data-ttu-id="39f2f-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="39f2f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00b8e-104">表示包含搜索词和可选筛选器的搜索查询。</span><span class="sxs-lookup"><span data-stu-id="00b8e-104">Represents a search query that contains search terms and optional filters.</span></span>
+<span data-ttu-id="39f2f-105">表示包含搜索词和可选筛选器的搜索查询。</span><span class="sxs-lookup"><span data-stu-id="39f2f-105">Represents a search query that contains search terms and optional filters.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="00b8e-105">属性</span><span class="sxs-lookup"><span data-stu-id="00b8e-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="39f2f-106">属性</span><span class="sxs-lookup"><span data-stu-id="39f2f-106">Properties</span></span>
 
-| <span data-ttu-id="00b8e-106">属性</span><span class="sxs-lookup"><span data-stu-id="00b8e-106">Property</span></span>     | <span data-ttu-id="00b8e-107">类型</span><span class="sxs-lookup"><span data-stu-id="00b8e-107">Type</span></span>        | <span data-ttu-id="00b8e-108">说明</span><span class="sxs-lookup"><span data-stu-id="00b8e-108">Description</span></span> |
+| <span data-ttu-id="39f2f-107">属性</span><span class="sxs-lookup"><span data-stu-id="39f2f-107">Property</span></span>     | <span data-ttu-id="39f2f-108">类型</span><span class="sxs-lookup"><span data-stu-id="39f2f-108">Type</span></span>        | <span data-ttu-id="39f2f-109">说明</span><span class="sxs-lookup"><span data-stu-id="39f2f-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="00b8e-109">query_string</span><span class="sxs-lookup"><span data-stu-id="00b8e-109">query_string</span></span>|[<span data-ttu-id="00b8e-110">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="00b8e-110">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="00b8e-111">包含搜索词的搜索查询。</span><span class="sxs-lookup"><span data-stu-id="00b8e-111">The search query containing the search terms.</span></span>|
+|<span data-ttu-id="39f2f-110">query_string</span><span class="sxs-lookup"><span data-stu-id="39f2f-110">query_string</span></span>|[<span data-ttu-id="39f2f-111">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="39f2f-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="39f2f-112">包含搜索词的搜索查询。</span><span class="sxs-lookup"><span data-stu-id="39f2f-112">The search query containing the search terms.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="00b8e-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="00b8e-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="39f2f-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="39f2f-113">JSON representation</span></span>
 
-<span data-ttu-id="00b8e-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="00b8e-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="39f2f-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="39f2f-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

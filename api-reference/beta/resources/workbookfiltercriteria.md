@@ -5,22 +5,24 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 6e0b2b09ab464c0a04bf97ed666f3fd3a687e912
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d63e42f8efee5652edb48604e5d1831e436a4e01
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964019"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519223"
 ---
-# <a name="workbookfiltercriteria-resource-type"></a><span data-ttu-id="2ac50-103">workbookFilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="2ac50-103">workbookFilterCriteria resource type</span></span>
+# <a name="workbookfiltercriteria-resource-type"></a><span data-ttu-id="c4c79-103">workbookFilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="c4c79-103">workbookFilterCriteria resource type</span></span>
+
+<span data-ttu-id="c4c79-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c4c79-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2ac50-104">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="2ac50-104">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="c4c79-105">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="c4c79-105">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2ac50-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2ac50-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c4c79-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c4c79-106">JSON representation</span></span>
 
-<span data-ttu-id="2ac50-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2ac50-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c4c79-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c4c79-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,36 +1,38 @@
 ---
 title: targetResource 资源复杂类型-Microsoft Graph API
-description: 定义支持审核日志报告组织 (租户) 活动的 Microsoft Graph API 的 targetResource 实体资源复杂类型。
+description: 定义支持审核日志报告组织（租户）活动的 Microsoft Graph API 的 targetResource 实体资源复杂类型。
 author: davidmu1
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: azure-ad
-ms.openlocfilehash: a67cfbccf9d05872ec0d9207ac54c51cda222053
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 751ac6af11b8fdb5709dad816ad2e4c7f2cb53db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964576"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519993"
 ---
-# <a name="targetresource-resource-type"></a><span data-ttu-id="b6258-103">targetResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="b6258-103">targetResource resource type</span></span>
+# <a name="targetresource-resource-type"></a><span data-ttu-id="614d6-103">targetResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="614d6-103">targetResource resource type</span></span>
 
-<span data-ttu-id="b6258-104">表示与审核活动相关联的目标资源类型。</span><span class="sxs-lookup"><span data-stu-id="b6258-104">Represents target resource types associated with audit activity.</span></span> 
+<span data-ttu-id="614d6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="614d6-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="614d6-105">表示与审核活动相关联的目标资源类型。</span><span class="sxs-lookup"><span data-stu-id="614d6-105">Represents target resource types associated with audit activity.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="b6258-105">属性</span><span class="sxs-lookup"><span data-stu-id="b6258-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="614d6-106">属性</span><span class="sxs-lookup"><span data-stu-id="614d6-106">Properties</span></span>
 
-| <span data-ttu-id="b6258-106">属性</span><span class="sxs-lookup"><span data-stu-id="b6258-106">Property</span></span>     | <span data-ttu-id="b6258-107">类型</span><span class="sxs-lookup"><span data-stu-id="b6258-107">Type</span></span>   |<span data-ttu-id="b6258-108">说明</span><span class="sxs-lookup"><span data-stu-id="b6258-108">Description</span></span>|
+| <span data-ttu-id="614d6-107">属性</span><span class="sxs-lookup"><span data-stu-id="614d6-107">Property</span></span>     | <span data-ttu-id="614d6-108">类型</span><span class="sxs-lookup"><span data-stu-id="614d6-108">Type</span></span>   |<span data-ttu-id="614d6-109">说明</span><span class="sxs-lookup"><span data-stu-id="614d6-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b6258-109">id</span><span class="sxs-lookup"><span data-stu-id="b6258-109">id</span></span>|<span data-ttu-id="b6258-110">String</span><span class="sxs-lookup"><span data-stu-id="b6258-110">String</span></span>|<span data-ttu-id="b6258-111">指示资源的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="b6258-111">Indicates the unique ID of the resource.</span></span>|
-|<span data-ttu-id="b6258-112">displayName</span><span class="sxs-lookup"><span data-stu-id="b6258-112">displayName</span></span>|<span data-ttu-id="b6258-113">String</span><span class="sxs-lookup"><span data-stu-id="b6258-113">String</span></span>|<span data-ttu-id="b6258-114">指示为资源定义的可见名称。</span><span class="sxs-lookup"><span data-stu-id="b6258-114">Indicates the visible name defined for the resource.</span></span> <span data-ttu-id="b6258-115">通常是在创建资源时指定的。</span><span class="sxs-lookup"><span data-stu-id="b6258-115">Typically specified when the resource is created.</span></span>|
-|<span data-ttu-id="b6258-116">type</span><span class="sxs-lookup"><span data-stu-id="b6258-116">type</span></span>|<span data-ttu-id="b6258-117">String</span><span class="sxs-lookup"><span data-stu-id="b6258-117">String</span></span>|<span data-ttu-id="b6258-118">描述资源类型。</span><span class="sxs-lookup"><span data-stu-id="b6258-118">Describes the resource type.</span></span>  <span data-ttu-id="b6258-119">示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。</span><span class="sxs-lookup"><span data-stu-id="b6258-119">Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.</span></span>|
-|<span data-ttu-id="b6258-120">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b6258-120">userPrincipalName</span></span>|<span data-ttu-id="b6258-121">字符串</span><span class="sxs-lookup"><span data-stu-id="b6258-121">String</span></span>|<span data-ttu-id="b6258-122">当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。</span><span class="sxs-lookup"><span data-stu-id="b6258-122">When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.</span></span>|
-|<span data-ttu-id="b6258-123">groupType</span><span class="sxs-lookup"><span data-stu-id="b6258-123">groupType</span></span>|<span data-ttu-id="b6258-124">String</span><span class="sxs-lookup"><span data-stu-id="b6258-124">String</span></span>|<span data-ttu-id="b6258-125">当 "**类型**" 设置`Group`为时, 这表示组类型。</span><span class="sxs-lookup"><span data-stu-id="b6258-125">When **type** is set to `Group`, this indicates the group type.</span></span>|
-|<span data-ttu-id="b6258-126">ModifiedProperties</span><span class="sxs-lookup"><span data-stu-id="b6258-126">modifiedProperties</span></span>|<span data-ttu-id="b6258-127">[modifiedProperty](modifiedproperty.md)集合</span><span class="sxs-lookup"><span data-stu-id="b6258-127">[modifiedProperty](modifiedproperty.md) collection</span></span>|<span data-ttu-id="b6258-128">指示已更改的每个属性的名称、旧值和新值。</span><span class="sxs-lookup"><span data-stu-id="b6258-128">Indicates name, old value and new value of each attribute that changed.</span></span> <span data-ttu-id="b6258-129">属性值取决于操作**类型**。</span><span class="sxs-lookup"><span data-stu-id="b6258-129">Property values depend on the operation **type**.</span></span>|
+|<span data-ttu-id="614d6-110">id</span><span class="sxs-lookup"><span data-stu-id="614d6-110">id</span></span>|<span data-ttu-id="614d6-111">String</span><span class="sxs-lookup"><span data-stu-id="614d6-111">String</span></span>|<span data-ttu-id="614d6-112">指示资源的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="614d6-112">Indicates the unique ID of the resource.</span></span>|
+|<span data-ttu-id="614d6-113">displayName</span><span class="sxs-lookup"><span data-stu-id="614d6-113">displayName</span></span>|<span data-ttu-id="614d6-114">String</span><span class="sxs-lookup"><span data-stu-id="614d6-114">String</span></span>|<span data-ttu-id="614d6-115">指示为资源定义的可见名称。</span><span class="sxs-lookup"><span data-stu-id="614d6-115">Indicates the visible name defined for the resource.</span></span> <span data-ttu-id="614d6-116">通常是在创建资源时指定的。</span><span class="sxs-lookup"><span data-stu-id="614d6-116">Typically specified when the resource is created.</span></span>|
+|<span data-ttu-id="614d6-117">type</span><span class="sxs-lookup"><span data-stu-id="614d6-117">type</span></span>|<span data-ttu-id="614d6-118">String</span><span class="sxs-lookup"><span data-stu-id="614d6-118">String</span></span>|<span data-ttu-id="614d6-119">描述资源类型。</span><span class="sxs-lookup"><span data-stu-id="614d6-119">Describes the resource type.</span></span>  <span data-ttu-id="614d6-120">示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。</span><span class="sxs-lookup"><span data-stu-id="614d6-120">Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.</span></span>|
+|<span data-ttu-id="614d6-121">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="614d6-121">userPrincipalName</span></span>|<span data-ttu-id="614d6-122">字符串</span><span class="sxs-lookup"><span data-stu-id="614d6-122">String</span></span>|<span data-ttu-id="614d6-123">当 "**类型**" 设置`User`为时，这包括启动操作的用户名;`null`对于其他类型。</span><span class="sxs-lookup"><span data-stu-id="614d6-123">When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.</span></span>|
+|<span data-ttu-id="614d6-124">groupType</span><span class="sxs-lookup"><span data-stu-id="614d6-124">groupType</span></span>|<span data-ttu-id="614d6-125">String</span><span class="sxs-lookup"><span data-stu-id="614d6-125">String</span></span>|<span data-ttu-id="614d6-126">当 "**类型**" 设置`Group`为时，这表示组类型。</span><span class="sxs-lookup"><span data-stu-id="614d6-126">When **type** is set to `Group`, this indicates the group type.</span></span>|
+|<span data-ttu-id="614d6-127">ModifiedProperties</span><span class="sxs-lookup"><span data-stu-id="614d6-127">modifiedProperties</span></span>|<span data-ttu-id="614d6-128">[modifiedProperty](modifiedproperty.md)集合</span><span class="sxs-lookup"><span data-stu-id="614d6-128">[modifiedProperty](modifiedproperty.md) collection</span></span>|<span data-ttu-id="614d6-129">指示已更改的每个属性的名称、旧值和新值。</span><span class="sxs-lookup"><span data-stu-id="614d6-129">Indicates name, old value and new value of each attribute that changed.</span></span> <span data-ttu-id="614d6-130">属性值取决于操作**类型**。</span><span class="sxs-lookup"><span data-stu-id="614d6-130">Property values depend on the operation **type**.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b6258-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b6258-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="614d6-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="614d6-131">JSON representation</span></span>
 
-<span data-ttu-id="b6258-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b6258-131">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="614d6-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="614d6-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

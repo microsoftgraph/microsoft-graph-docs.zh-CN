@@ -5,41 +5,43 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 685ed8ce049fda8cdba12d4bc9171156b458e443
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 543a13042f4245f90b799f6298a3f29c6368ea8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007296"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519363"
 ---
-# <a name="workbookchartaxistitle-resource-type"></a><span data-ttu-id="3eab4-103">workbookChartAxisTitle 资源类型</span><span class="sxs-lookup"><span data-stu-id="3eab4-103">workbookChartAxisTitle resource type</span></span>
+# <a name="workbookchartaxistitle-resource-type"></a><span data-ttu-id="5ef49-103">workbookChartAxisTitle 资源类型</span><span class="sxs-lookup"><span data-stu-id="5ef49-103">workbookChartAxisTitle resource type</span></span>
+
+<span data-ttu-id="5ef49-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5ef49-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3eab4-104">表示图表坐标轴的标题。</span><span class="sxs-lookup"><span data-stu-id="3eab4-104">Represents the title of a chart axis.</span></span>
+<span data-ttu-id="5ef49-105">表示图表坐标轴的标题。</span><span class="sxs-lookup"><span data-stu-id="5ef49-105">Represents the title of a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="3eab4-105">方法</span><span class="sxs-lookup"><span data-stu-id="3eab4-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="5ef49-106">方法</span><span class="sxs-lookup"><span data-stu-id="5ef49-106">Methods</span></span>
 
-| <span data-ttu-id="3eab4-106">方法</span><span class="sxs-lookup"><span data-stu-id="3eab4-106">Method</span></span>           | <span data-ttu-id="3eab4-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="3eab4-107">Return Type</span></span>    |<span data-ttu-id="3eab4-108">说明</span><span class="sxs-lookup"><span data-stu-id="3eab4-108">Description</span></span>|
+| <span data-ttu-id="5ef49-107">方法</span><span class="sxs-lookup"><span data-stu-id="5ef49-107">Method</span></span>           | <span data-ttu-id="5ef49-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="5ef49-108">Return Type</span></span>    |<span data-ttu-id="5ef49-109">说明</span><span class="sxs-lookup"><span data-stu-id="5ef49-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="3eab4-109">获取 ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="3eab4-109">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="3eab4-110">workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="3eab4-110">workbookChartAxisTitle</span></span>](workbookchartaxistitle.md) |<span data-ttu-id="3eab4-111">读取 chartAxisTitle 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3eab4-111">Read properties and relationships of chartAxisTitle object.</span></span>|
-|[<span data-ttu-id="3eab4-112">更新</span><span class="sxs-lookup"><span data-stu-id="3eab4-112">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="3eab4-113">workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="3eab4-113">workbookChartAxisTitle</span></span>](workbookchartaxistitle.md)    |<span data-ttu-id="3eab4-114">更新 ChartAxisTitle 对象</span><span class="sxs-lookup"><span data-stu-id="3eab4-114">Update ChartAxisTitle object.</span></span> |
+|[<span data-ttu-id="5ef49-110">获取 ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="5ef49-110">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="5ef49-111">workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="5ef49-111">workbookChartAxisTitle</span></span>](workbookchartaxistitle.md) |<span data-ttu-id="5ef49-112">读取 chartAxisTitle 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5ef49-112">Read properties and relationships of chartAxisTitle object.</span></span>|
+|[<span data-ttu-id="5ef49-113">更新</span><span class="sxs-lookup"><span data-stu-id="5ef49-113">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="5ef49-114">workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="5ef49-114">workbookChartAxisTitle</span></span>](workbookchartaxistitle.md)    |<span data-ttu-id="5ef49-115">更新 ChartAxisTitle 对象</span><span class="sxs-lookup"><span data-stu-id="5ef49-115">Update ChartAxisTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="3eab4-115">属性</span><span class="sxs-lookup"><span data-stu-id="3eab4-115">Properties</span></span>
-| <span data-ttu-id="3eab4-116">属性</span><span class="sxs-lookup"><span data-stu-id="3eab4-116">Property</span></span>     | <span data-ttu-id="3eab4-117">类型</span><span class="sxs-lookup"><span data-stu-id="3eab4-117">Type</span></span>   |<span data-ttu-id="3eab4-118">说明</span><span class="sxs-lookup"><span data-stu-id="3eab4-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ef49-116">属性</span><span class="sxs-lookup"><span data-stu-id="5ef49-116">Properties</span></span>
+| <span data-ttu-id="5ef49-117">属性</span><span class="sxs-lookup"><span data-stu-id="5ef49-117">Property</span></span>     | <span data-ttu-id="5ef49-118">类型</span><span class="sxs-lookup"><span data-stu-id="5ef49-118">Type</span></span>   |<span data-ttu-id="5ef49-119">说明</span><span class="sxs-lookup"><span data-stu-id="5ef49-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3eab4-119">text</span><span class="sxs-lookup"><span data-stu-id="3eab4-119">text</span></span>|<span data-ttu-id="3eab4-120">string</span><span class="sxs-lookup"><span data-stu-id="3eab4-120">string</span></span>|<span data-ttu-id="3eab4-121">表示坐标轴标题。</span><span class="sxs-lookup"><span data-stu-id="3eab4-121">Represents the axis title.</span></span>|
-|<span data-ttu-id="3eab4-122">visible</span><span class="sxs-lookup"><span data-stu-id="3eab4-122">visible</span></span>|<span data-ttu-id="3eab4-123">布尔</span><span class="sxs-lookup"><span data-stu-id="3eab4-123">boolean</span></span>|<span data-ttu-id="3eab4-124">指定坐标轴标题可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="3eab4-124">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="5ef49-120">text</span><span class="sxs-lookup"><span data-stu-id="5ef49-120">text</span></span>|<span data-ttu-id="5ef49-121">string</span><span class="sxs-lookup"><span data-stu-id="5ef49-121">string</span></span>|<span data-ttu-id="5ef49-122">表示坐标轴标题。</span><span class="sxs-lookup"><span data-stu-id="5ef49-122">Represents the axis title.</span></span>|
+|<span data-ttu-id="5ef49-123">visible</span><span class="sxs-lookup"><span data-stu-id="5ef49-123">visible</span></span>|<span data-ttu-id="5ef49-124">布尔</span><span class="sxs-lookup"><span data-stu-id="5ef49-124">boolean</span></span>|<span data-ttu-id="5ef49-125">指定坐标轴标题可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="5ef49-125">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3eab4-125">关系</span><span class="sxs-lookup"><span data-stu-id="3eab4-125">Relationships</span></span>
-| <span data-ttu-id="3eab4-126">关系</span><span class="sxs-lookup"><span data-stu-id="3eab4-126">Relationship</span></span> | <span data-ttu-id="3eab4-127">类型</span><span class="sxs-lookup"><span data-stu-id="3eab4-127">Type</span></span>   |<span data-ttu-id="3eab4-128">说明</span><span class="sxs-lookup"><span data-stu-id="3eab4-128">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="5ef49-126">关系</span><span class="sxs-lookup"><span data-stu-id="5ef49-126">Relationships</span></span>
+| <span data-ttu-id="5ef49-127">关系</span><span class="sxs-lookup"><span data-stu-id="5ef49-127">Relationship</span></span> | <span data-ttu-id="5ef49-128">类型</span><span class="sxs-lookup"><span data-stu-id="5ef49-128">Type</span></span>   |<span data-ttu-id="5ef49-129">说明</span><span class="sxs-lookup"><span data-stu-id="5ef49-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3eab4-129">format</span><span class="sxs-lookup"><span data-stu-id="3eab4-129">format</span></span>|[<span data-ttu-id="3eab4-130">workbookChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="3eab4-130">workbookChartAxisTitleFormat</span></span>](workbookchartaxistitleformat.md)|<span data-ttu-id="3eab4-131">表示图表坐标轴标题的格式。</span><span class="sxs-lookup"><span data-stu-id="3eab4-131">Represents the formatting of chart axis title.</span></span> <span data-ttu-id="3eab4-132">只读。</span><span class="sxs-lookup"><span data-stu-id="3eab4-132">Read-only.</span></span>|
+|<span data-ttu-id="5ef49-130">format</span><span class="sxs-lookup"><span data-stu-id="5ef49-130">format</span></span>|[<span data-ttu-id="5ef49-131">workbookChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="5ef49-131">workbookChartAxisTitleFormat</span></span>](workbookchartaxistitleformat.md)|<span data-ttu-id="5ef49-132">表示图表坐标轴标题的格式。</span><span class="sxs-lookup"><span data-stu-id="5ef49-132">Represents the formatting of chart axis title.</span></span> <span data-ttu-id="5ef49-133">只读。</span><span class="sxs-lookup"><span data-stu-id="5ef49-133">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3eab4-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3eab4-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ef49-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5ef49-134">JSON representation</span></span>
 
-<span data-ttu-id="3eab4-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3eab4-134">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5ef49-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5ef49-135">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

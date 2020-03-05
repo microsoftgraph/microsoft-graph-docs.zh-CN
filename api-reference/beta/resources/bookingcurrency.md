@@ -1,45 +1,47 @@
 ---
 title: bookingCurrency 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: f7b12f8ac48457ed0ea36c2fec2aa39be2ff7a01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1d56dde0c239245f6724040229df7d417a79613
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013113"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508001"
 ---
-# <a name="bookingcurrency-resource-type"></a><span data-ttu-id="32c58-104">bookingCurrency 资源类型</span><span class="sxs-lookup"><span data-stu-id="32c58-104">bookingCurrency resource type</span></span>
+# <a name="bookingcurrency-resource-type"></a><span data-ttu-id="8a76c-104">bookingCurrency 资源类型</span><span class="sxs-lookup"><span data-stu-id="8a76c-104">bookingCurrency resource type</span></span>
+
+<span data-ttu-id="8a76c-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="8a76c-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="32c58-105">表示[bookingBusiness](bookingbusiness.md)支持的货币货币。</span><span class="sxs-lookup"><span data-stu-id="32c58-105">Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).</span></span>
+<span data-ttu-id="8a76c-106">表示[bookingBusiness](bookingbusiness.md)支持的货币货币。</span><span class="sxs-lookup"><span data-stu-id="8a76c-106">Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="32c58-106">方法</span><span class="sxs-lookup"><span data-stu-id="32c58-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="8a76c-107">方法</span><span class="sxs-lookup"><span data-stu-id="8a76c-107">Methods</span></span>
 
-| <span data-ttu-id="32c58-107">方法</span><span class="sxs-lookup"><span data-stu-id="32c58-107">Method</span></span>           | <span data-ttu-id="32c58-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="32c58-108">Return Type</span></span>    |<span data-ttu-id="32c58-109">说明</span><span class="sxs-lookup"><span data-stu-id="32c58-109">Description</span></span>|
+| <span data-ttu-id="8a76c-108">方法</span><span class="sxs-lookup"><span data-stu-id="8a76c-108">Method</span></span>           | <span data-ttu-id="8a76c-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="8a76c-109">Return Type</span></span>    |<span data-ttu-id="8a76c-110">说明</span><span class="sxs-lookup"><span data-stu-id="8a76c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="32c58-110">列出 bookingCurrencies</span><span class="sxs-lookup"><span data-stu-id="32c58-110">List bookingCurrencies</span></span>](../api/bookingcurrency-list.md) | <span data-ttu-id="32c58-111">[bookingCurrency](bookingcurrency.md)集合</span><span class="sxs-lookup"><span data-stu-id="32c58-111">[bookingCurrency](bookingcurrency.md) collection</span></span> |<span data-ttu-id="32c58-112">获取可用于 Microsoft 预订业务的**bookingCurrency**对象的列表。</span><span class="sxs-lookup"><span data-stu-id="32c58-112">Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.</span></span>|
-|[<span data-ttu-id="32c58-113">获取 bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="32c58-113">Get bookingCurrency</span></span>](../api/bookingcurrency-get.md) | [<span data-ttu-id="32c58-114">bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="32c58-114">bookingCurrency</span></span>](bookingcurrency.md) |<span data-ttu-id="32c58-115">获取**bookingCurrency**对象的属性。</span><span class="sxs-lookup"><span data-stu-id="32c58-115">Get the properties of a **bookingCurrency** object.</span></span>|
+|[<span data-ttu-id="8a76c-111">列出 bookingCurrencies</span><span class="sxs-lookup"><span data-stu-id="8a76c-111">List bookingCurrencies</span></span>](../api/bookingcurrency-list.md) | <span data-ttu-id="8a76c-112">[bookingCurrency](bookingcurrency.md)集合</span><span class="sxs-lookup"><span data-stu-id="8a76c-112">[bookingCurrency](bookingcurrency.md) collection</span></span> |<span data-ttu-id="8a76c-113">获取可用于 Microsoft 预订业务的**bookingCurrency**对象的列表。</span><span class="sxs-lookup"><span data-stu-id="8a76c-113">Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.</span></span>|
+|[<span data-ttu-id="8a76c-114">获取 bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="8a76c-114">Get bookingCurrency</span></span>](../api/bookingcurrency-get.md) | [<span data-ttu-id="8a76c-115">bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="8a76c-115">bookingCurrency</span></span>](bookingcurrency.md) |<span data-ttu-id="8a76c-116">获取**bookingCurrency**对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8a76c-116">Get the properties of a **bookingCurrency** object.</span></span>|
 
 
-## <a name="properties"></a><span data-ttu-id="32c58-116">属性</span><span class="sxs-lookup"><span data-stu-id="32c58-116">Properties</span></span>
-| <span data-ttu-id="32c58-117">属性</span><span class="sxs-lookup"><span data-stu-id="32c58-117">Property</span></span>     | <span data-ttu-id="32c58-118">类型</span><span class="sxs-lookup"><span data-stu-id="32c58-118">Type</span></span>   |<span data-ttu-id="32c58-119">说明</span><span class="sxs-lookup"><span data-stu-id="32c58-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8a76c-117">属性</span><span class="sxs-lookup"><span data-stu-id="8a76c-117">Properties</span></span>
+| <span data-ttu-id="8a76c-118">属性</span><span class="sxs-lookup"><span data-stu-id="8a76c-118">Property</span></span>     | <span data-ttu-id="8a76c-119">类型</span><span class="sxs-lookup"><span data-stu-id="8a76c-119">Type</span></span>   |<span data-ttu-id="8a76c-120">说明</span><span class="sxs-lookup"><span data-stu-id="8a76c-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="32c58-120">id</span><span class="sxs-lookup"><span data-stu-id="32c58-120">id</span></span>|<span data-ttu-id="32c58-121">String</span><span class="sxs-lookup"><span data-stu-id="32c58-121">String</span></span>| <span data-ttu-id="32c58-122">基于[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)的3个字符的货币代码。</span><span class="sxs-lookup"><span data-stu-id="32c58-122">A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span></span> <span data-ttu-id="32c58-123">例如, 美元的货币代码是 USD, 而澳大利亚美元是 AUD。</span><span class="sxs-lookup"><span data-stu-id="32c58-123">For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD.</span></span> <span data-ttu-id="32c58-124">只读。</span><span class="sxs-lookup"><span data-stu-id="32c58-124">Read-only.</span></span>|
-|<span data-ttu-id="32c58-125">符号</span><span class="sxs-lookup"><span data-stu-id="32c58-125">symbol</span></span>|<span data-ttu-id="32c58-126">String</span><span class="sxs-lookup"><span data-stu-id="32c58-126">String</span></span>| <span data-ttu-id="32c58-127">货币符号。</span><span class="sxs-lookup"><span data-stu-id="32c58-127">The currency symbol.</span></span> <span data-ttu-id="32c58-128">例如, 美元的货币符号和澳大利亚美元为美元。</span><span class="sxs-lookup"><span data-stu-id="32c58-128">For example, the currency symbol for the US dollar and for the Australian dollar is $.</span></span>  |
+|<span data-ttu-id="8a76c-121">id</span><span class="sxs-lookup"><span data-stu-id="8a76c-121">id</span></span>|<span data-ttu-id="8a76c-122">String</span><span class="sxs-lookup"><span data-stu-id="8a76c-122">String</span></span>| <span data-ttu-id="8a76c-123">基于[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)的3个字符的货币代码。</span><span class="sxs-lookup"><span data-stu-id="8a76c-123">A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span></span> <span data-ttu-id="8a76c-124">例如，美元的货币代码是 USD，而澳大利亚美元是 AUD。</span><span class="sxs-lookup"><span data-stu-id="8a76c-124">For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD.</span></span> <span data-ttu-id="8a76c-125">只读。</span><span class="sxs-lookup"><span data-stu-id="8a76c-125">Read-only.</span></span>|
+|<span data-ttu-id="8a76c-126">符号</span><span class="sxs-lookup"><span data-stu-id="8a76c-126">symbol</span></span>|<span data-ttu-id="8a76c-127">String</span><span class="sxs-lookup"><span data-stu-id="8a76c-127">String</span></span>| <span data-ttu-id="8a76c-128">货币符号。</span><span class="sxs-lookup"><span data-stu-id="8a76c-128">The currency symbol.</span></span> <span data-ttu-id="8a76c-129">例如，美元的货币符号和澳大利亚美元为美元。</span><span class="sxs-lookup"><span data-stu-id="8a76c-129">For example, the currency symbol for the US dollar and for the Australian dollar is $.</span></span>  |
 
-## <a name="relationships"></a><span data-ttu-id="32c58-129">关系</span><span class="sxs-lookup"><span data-stu-id="32c58-129">Relationships</span></span>
-<span data-ttu-id="32c58-130">无</span><span class="sxs-lookup"><span data-stu-id="32c58-130">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8a76c-130">关系</span><span class="sxs-lookup"><span data-stu-id="8a76c-130">Relationships</span></span>
+<span data-ttu-id="8a76c-131">无</span><span class="sxs-lookup"><span data-stu-id="8a76c-131">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="32c58-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="32c58-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8a76c-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8a76c-132">JSON representation</span></span>
 
-<span data-ttu-id="32c58-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="32c58-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8a76c-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8a76c-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

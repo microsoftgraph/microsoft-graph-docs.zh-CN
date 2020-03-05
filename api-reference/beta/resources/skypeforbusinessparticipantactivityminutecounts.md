@@ -5,27 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4e732b9358eec99d73152f7f50f38eb3cb767e4c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a6e177ecc6417ff8f5c6da389e40bab6078d82f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964877"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520371"
 ---
-# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="99c01-103">skypeForBusinessParticipantActivityMinuteCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="99c01-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
+# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="5865b-103">skypeForBusinessParticipantActivityMinuteCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="5865b-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="99c01-104">属性</span><span class="sxs-lookup"><span data-stu-id="99c01-104">Properties</span></span>
+<span data-ttu-id="5865b-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5865b-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="99c01-105">属性</span><span class="sxs-lookup"><span data-stu-id="99c01-105">Property</span></span>          | <span data-ttu-id="99c01-106">类型</span><span class="sxs-lookup"><span data-stu-id="99c01-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="5865b-105">属性</span><span class="sxs-lookup"><span data-stu-id="5865b-105">Properties</span></span>
+
+| <span data-ttu-id="5865b-106">属性</span><span class="sxs-lookup"><span data-stu-id="5865b-106">Property</span></span>          | <span data-ttu-id="5865b-107">类型</span><span class="sxs-lookup"><span data-stu-id="5865b-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="99c01-107">audioVideo</span><span class="sxs-lookup"><span data-stu-id="99c01-107">audioVideo</span></span>        | <span data-ttu-id="99c01-108">Int64</span><span class="sxs-lookup"><span data-stu-id="99c01-108">Int64</span></span>  |
-| <span data-ttu-id="99c01-109">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="99c01-109">reportRefreshDate</span></span> | <span data-ttu-id="99c01-110">日期</span><span class="sxs-lookup"><span data-stu-id="99c01-110">Date</span></span>   |
-| <span data-ttu-id="99c01-111">reportDate</span><span class="sxs-lookup"><span data-stu-id="99c01-111">reportDate</span></span>        | <span data-ttu-id="99c01-112">日期</span><span class="sxs-lookup"><span data-stu-id="99c01-112">Date</span></span>   |
-| <span data-ttu-id="99c01-113">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="99c01-113">reportPeriod</span></span>      | <span data-ttu-id="99c01-114">String</span><span class="sxs-lookup"><span data-stu-id="99c01-114">String</span></span> |
+| <span data-ttu-id="5865b-108">audioVideo</span><span class="sxs-lookup"><span data-stu-id="5865b-108">audioVideo</span></span>        | <span data-ttu-id="5865b-109">Int64</span><span class="sxs-lookup"><span data-stu-id="5865b-109">Int64</span></span>  |
+| <span data-ttu-id="5865b-110">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="5865b-110">reportRefreshDate</span></span> | <span data-ttu-id="5865b-111">日期</span><span class="sxs-lookup"><span data-stu-id="5865b-111">Date</span></span>   |
+| <span data-ttu-id="5865b-112">reportDate</span><span class="sxs-lookup"><span data-stu-id="5865b-112">reportDate</span></span>        | <span data-ttu-id="5865b-113">日期</span><span class="sxs-lookup"><span data-stu-id="5865b-113">Date</span></span>   |
+| <span data-ttu-id="5865b-114">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="5865b-114">reportPeriod</span></span>      | <span data-ttu-id="5865b-115">String</span><span class="sxs-lookup"><span data-stu-id="5865b-115">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="99c01-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="99c01-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5865b-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5865b-116">JSON representation</span></span>
 
-<span data-ttu-id="99c01-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="99c01-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5865b-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5865b-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

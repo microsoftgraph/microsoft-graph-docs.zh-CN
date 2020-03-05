@@ -6,32 +6,34 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d92a78ff73854d465ba8363b7bddff66be6bffc4
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 6b7ce7bc14ce95ec4573fb7660cb584703d4a54e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520532"
 ---
-# <a name="sitepage-resource"></a><span data-ttu-id="bc3bb-103">sitePage 资源</span><span class="sxs-lookup"><span data-stu-id="bc3bb-103">sitePage resource</span></span>
+# <a name="sitepage-resource"></a><span data-ttu-id="5054e-103">sitePage 资源</span><span class="sxs-lookup"><span data-stu-id="5054e-103">sitePage resource</span></span>
+
+<span data-ttu-id="5054e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5054e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bc3bb-104">此资源表示 "SitePages"[列表][]中的页面。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-104">This resource represents a page in the SitePages [list][].</span></span>
-<span data-ttu-id="bc3bb-105">它包含[Web 部件][]s 的标题、布局和集合。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-105">It contains the title, layout, and a collection of [webPart][]s.</span></span>
+<span data-ttu-id="5054e-105">此资源表示 "SitePages"[列表][]中的页面。</span><span class="sxs-lookup"><span data-stu-id="5054e-105">This resource represents a page in the SitePages [list][].</span></span>
+<span data-ttu-id="5054e-106">它包含[Web 部件][]s 的标题、布局和集合。</span><span class="sxs-lookup"><span data-stu-id="5054e-106">It contains the title, layout, and a collection of [webPart][]s.</span></span>
 
-## <a name="tasks-on-a-page"></a><span data-ttu-id="bc3bb-106">页面上的任务</span><span class="sxs-lookup"><span data-stu-id="bc3bb-106">Tasks on a page</span></span>
+## <a name="tasks-on-a-page"></a><span data-ttu-id="5054e-107">页面上的任务</span><span class="sxs-lookup"><span data-stu-id="5054e-107">Tasks on a page</span></span>
 
-<span data-ttu-id="bc3bb-107">以下任务可用于**sitePage**资源。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-107">The following tasks are available for **sitePage** resources.</span></span>
-<span data-ttu-id="bc3bb-108">下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`，例如：。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-108">All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.</span></span>
+<span data-ttu-id="5054e-108">以下任务可用于**sitePage**资源。</span><span class="sxs-lookup"><span data-stu-id="5054e-108">The following tasks are available for **sitePage** resources.</span></span>
+<span data-ttu-id="5054e-109">下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`，例如：。</span><span class="sxs-lookup"><span data-stu-id="5054e-109">All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.</span></span>
 
-| <span data-ttu-id="bc3bb-109">常见任务</span><span class="sxs-lookup"><span data-stu-id="bc3bb-109">Common task</span></span>                     | <span data-ttu-id="bc3bb-110">HTTP 方法</span><span class="sxs-lookup"><span data-stu-id="bc3bb-110">HTTP method</span></span>
+| <span data-ttu-id="5054e-110">常见任务</span><span class="sxs-lookup"><span data-stu-id="5054e-110">Common task</span></span>                     | <span data-ttu-id="5054e-111">HTTP 方法</span><span class="sxs-lookup"><span data-stu-id="5054e-111">HTTP method</span></span>
 |:--------------------------------|:------------------------------
-| <span data-ttu-id="bc3bb-111">[列出页面][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-111">[List pages][]</span></span>                  | <span data-ttu-id="bc3bb-112">获取/pages</span><span class="sxs-lookup"><span data-stu-id="bc3bb-112">GET /pages</span></span>
-| <span data-ttu-id="bc3bb-113">[获取页面][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-113">[Get page][]</span></span>                    | <span data-ttu-id="bc3bb-114">获取/pages/{page-id}</span><span class="sxs-lookup"><span data-stu-id="bc3bb-114">GET /pages/{page-id}</span></span>
-| <span data-ttu-id="bc3bb-115">[创建][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-115">[Create][]</span></span>                      | <span data-ttu-id="bc3bb-116">POST/pages</span><span class="sxs-lookup"><span data-stu-id="bc3bb-116">POST /pages</span></span>
-| <span data-ttu-id="bc3bb-117">[删除][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-117">[Delete][]</span></span>                      | <span data-ttu-id="bc3bb-118">删除/pages/{page-id}</span><span class="sxs-lookup"><span data-stu-id="bc3bb-118">DELETE /pages/{page-id}</span></span>
-| <span data-ttu-id="bc3bb-119">[发布][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-119">[Publish][]</span></span>                     | <span data-ttu-id="bc3bb-120">POST/pages/{page-id}/publish</span><span class="sxs-lookup"><span data-stu-id="bc3bb-120">POST /pages/{page-id}/publish</span></span>
+| <span data-ttu-id="5054e-112">[列出页面][]</span><span class="sxs-lookup"><span data-stu-id="5054e-112">[List pages][]</span></span>                  | <span data-ttu-id="5054e-113">获取/pages</span><span class="sxs-lookup"><span data-stu-id="5054e-113">GET /pages</span></span>
+| <span data-ttu-id="5054e-114">[获取页面][]</span><span class="sxs-lookup"><span data-stu-id="5054e-114">[Get page][]</span></span>                    | <span data-ttu-id="5054e-115">获取/pages/{page-id}</span><span class="sxs-lookup"><span data-stu-id="5054e-115">GET /pages/{page-id}</span></span>
+| <span data-ttu-id="5054e-116">[创建][]</span><span class="sxs-lookup"><span data-stu-id="5054e-116">[Create][]</span></span>                      | <span data-ttu-id="5054e-117">POST/pages</span><span class="sxs-lookup"><span data-stu-id="5054e-117">POST /pages</span></span>
+| <span data-ttu-id="5054e-118">[删除][]</span><span class="sxs-lookup"><span data-stu-id="5054e-118">[Delete][]</span></span>                      | <span data-ttu-id="5054e-119">删除/pages/{page-id}</span><span class="sxs-lookup"><span data-stu-id="5054e-119">DELETE /pages/{page-id}</span></span>
+| <span data-ttu-id="5054e-120">[发布][]</span><span class="sxs-lookup"><span data-stu-id="5054e-120">[Publish][]</span></span>                     | <span data-ttu-id="5054e-121">POST/pages/{page-id}/publish</span><span class="sxs-lookup"><span data-stu-id="5054e-121">POST /pages/{page-id}/publish</span></span>
 
 [列出页面]: ../api/sitepage-list.md
 [List pages]: ../api/sitepage-list.md
@@ -44,9 +46,9 @@ ms.locfileid: "41953611"
 [发布]: ../api/sitepage-publish.md
 [Publish]: ../api/sitepage-publish.md
 
-## <a name="json-representation"></a><span data-ttu-id="bc3bb-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bc3bb-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5054e-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5054e-127">JSON representation</span></span>
 
-<span data-ttu-id="bc3bb-127">下面是**sitePage**资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-127">Here is a JSON representation of a **sitePage** resource.</span></span>
+<span data-ttu-id="5054e-128">下面是**sitePage**资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5054e-128">Here is a JSON representation of a **sitePage** resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -82,48 +84,48 @@ ms.locfileid: "41953611"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="bc3bb-128">属性</span><span class="sxs-lookup"><span data-stu-id="bc3bb-128">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5054e-129">属性</span><span class="sxs-lookup"><span data-stu-id="5054e-129">Properties</span></span>
 
-<span data-ttu-id="bc3bb-129">**SitePage**资源具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-129">The **sitePage** resource has the following properties.</span></span>
+<span data-ttu-id="5054e-130">**SitePage**资源具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="5054e-130">The **sitePage** resource has the following properties.</span></span>
 
-| <span data-ttu-id="bc3bb-130">属性名称</span><span class="sxs-lookup"><span data-stu-id="bc3bb-130">Property name</span></span>    | <span data-ttu-id="bc3bb-131">类型</span><span class="sxs-lookup"><span data-stu-id="bc3bb-131">Type</span></span>                         | <span data-ttu-id="bc3bb-132">说明</span><span class="sxs-lookup"><span data-stu-id="bc3bb-132">Description</span></span>
+| <span data-ttu-id="5054e-131">属性名称</span><span class="sxs-lookup"><span data-stu-id="5054e-131">Property name</span></span>    | <span data-ttu-id="5054e-132">类型</span><span class="sxs-lookup"><span data-stu-id="5054e-132">Type</span></span>                         | <span data-ttu-id="5054e-133">说明</span><span class="sxs-lookup"><span data-stu-id="5054e-133">Description</span></span>
 |:-----------------|:-----------------------------|:---------------------------
-| <span data-ttu-id="bc3bb-133">contentType</span><span class="sxs-lookup"><span data-stu-id="bc3bb-133">contentType</span></span>      | <span data-ttu-id="bc3bb-134">[contentTypeInfo][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-134">[contentTypeInfo][]</span></span>          | <span data-ttu-id="bc3bb-135">页面的内容类型。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-135">The content type of the page.</span></span>
+| <span data-ttu-id="5054e-134">contentType</span><span class="sxs-lookup"><span data-stu-id="5054e-134">contentType</span></span>      | <span data-ttu-id="5054e-135">[contentTypeInfo][]</span><span class="sxs-lookup"><span data-stu-id="5054e-135">[contentTypeInfo][]</span></span>          | <span data-ttu-id="5054e-136">页面的内容类型。</span><span class="sxs-lookup"><span data-stu-id="5054e-136">The content type of the page.</span></span>
 
-## <a name="page-content"></a><span data-ttu-id="bc3bb-136">页面内容</span><span class="sxs-lookup"><span data-stu-id="bc3bb-136">Page Content</span></span>
+## <a name="page-content"></a><span data-ttu-id="5054e-137">页面内容</span><span class="sxs-lookup"><span data-stu-id="5054e-137">Page Content</span></span>
 
-<span data-ttu-id="bc3bb-137">**SitePage**资源具有以下内容字段。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-137">The **sitePage** resource has the following content fields.</span></span>
+<span data-ttu-id="5054e-138">**SitePage**资源具有以下内容字段。</span><span class="sxs-lookup"><span data-stu-id="5054e-138">The **sitePage** resource has the following content fields.</span></span>
 
-| <span data-ttu-id="bc3bb-138">属性名称</span><span class="sxs-lookup"><span data-stu-id="bc3bb-138">Property name</span></span>      | <span data-ttu-id="bc3bb-139">类型</span><span class="sxs-lookup"><span data-stu-id="bc3bb-139">Type</span></span>                       | <span data-ttu-id="bc3bb-140">说明</span><span class="sxs-lookup"><span data-stu-id="bc3bb-140">Description</span></span>
+| <span data-ttu-id="5054e-139">属性名称</span><span class="sxs-lookup"><span data-stu-id="5054e-139">Property name</span></span>      | <span data-ttu-id="5054e-140">类型</span><span class="sxs-lookup"><span data-stu-id="5054e-140">Type</span></span>                       | <span data-ttu-id="5054e-141">说明</span><span class="sxs-lookup"><span data-stu-id="5054e-141">Description</span></span>
 |:-------------------|:---------------------------|:---------------------------
-| <span data-ttu-id="bc3bb-141">title</span><span class="sxs-lookup"><span data-stu-id="bc3bb-141">title</span></span>              | <span data-ttu-id="bc3bb-142">字符串</span><span class="sxs-lookup"><span data-stu-id="bc3bb-142">string</span></span>                     | <span data-ttu-id="bc3bb-143">页面的标题。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-143">The title of the page.</span></span>
-| <span data-ttu-id="bc3bb-144">页面布局</span><span class="sxs-lookup"><span data-stu-id="bc3bb-144">pageLayout</span></span>         | <span data-ttu-id="bc3bb-145">string</span><span class="sxs-lookup"><span data-stu-id="bc3bb-145">string</span></span>                     | <span data-ttu-id="bc3bb-146">页面的页面布局的名称。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-146">The name of the page layout of the page.</span></span>
-| <span data-ttu-id="bc3bb-147">部件</span><span class="sxs-lookup"><span data-stu-id="bc3bb-147">webParts</span></span>           | <span data-ttu-id="bc3bb-148">[.Webpart][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-148">[webPart][]</span></span>                | <span data-ttu-id="bc3bb-149">页面上的 web 部件。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-149">The web parts on the page.</span></span>
+| <span data-ttu-id="5054e-142">title</span><span class="sxs-lookup"><span data-stu-id="5054e-142">title</span></span>              | <span data-ttu-id="5054e-143">字符串</span><span class="sxs-lookup"><span data-stu-id="5054e-143">string</span></span>                     | <span data-ttu-id="5054e-144">页面的标题。</span><span class="sxs-lookup"><span data-stu-id="5054e-144">The title of the page.</span></span>
+| <span data-ttu-id="5054e-145">页面布局</span><span class="sxs-lookup"><span data-stu-id="5054e-145">pageLayout</span></span>         | <span data-ttu-id="5054e-146">string</span><span class="sxs-lookup"><span data-stu-id="5054e-146">string</span></span>                     | <span data-ttu-id="5054e-147">页面的页面布局的名称。</span><span class="sxs-lookup"><span data-stu-id="5054e-147">The name of the page layout of the page.</span></span>
+| <span data-ttu-id="5054e-148">部件</span><span class="sxs-lookup"><span data-stu-id="5054e-148">webParts</span></span>           | <span data-ttu-id="5054e-149">[.Webpart][]</span><span class="sxs-lookup"><span data-stu-id="5054e-149">[webPart][]</span></span>                | <span data-ttu-id="5054e-150">页面上的 web 部件。</span><span class="sxs-lookup"><span data-stu-id="5054e-150">The web parts on the page.</span></span>
 
-## <a name="authoring-metadata"></a><span data-ttu-id="bc3bb-150">创作元数据</span><span class="sxs-lookup"><span data-stu-id="bc3bb-150">Authoring Metadata</span></span>
+## <a name="authoring-metadata"></a><span data-ttu-id="5054e-151">创作元数据</span><span class="sxs-lookup"><span data-stu-id="5054e-151">Authoring Metadata</span></span>
 
-<span data-ttu-id="bc3bb-151">**SitePage**资源具有以下与创作相关的元数据。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-151">The **sitePage** resource has the following authoring-related metadata.</span></span> <span data-ttu-id="bc3bb-152">PublishingState 属性将反映页面创作状态（如 "已签出" 或 "已发布"）。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-152">The publishingState property will reflect the page authoring state like checked out or published.</span></span>
+<span data-ttu-id="5054e-152">**SitePage**资源具有以下与创作相关的元数据。</span><span class="sxs-lookup"><span data-stu-id="5054e-152">The **sitePage** resource has the following authoring-related metadata.</span></span> <span data-ttu-id="5054e-153">PublishingState 属性将反映页面创作状态（如 "已签出" 或 "已发布"）。</span><span class="sxs-lookup"><span data-stu-id="5054e-153">The publishingState property will reflect the page authoring state like checked out or published.</span></span>
 
-| <span data-ttu-id="bc3bb-153">属性名称</span><span class="sxs-lookup"><span data-stu-id="bc3bb-153">Property name</span></span>          | <span data-ttu-id="bc3bb-154">类型</span><span class="sxs-lookup"><span data-stu-id="bc3bb-154">Type</span></span>                   | <span data-ttu-id="bc3bb-155">说明</span><span class="sxs-lookup"><span data-stu-id="bc3bb-155">Description</span></span>
+| <span data-ttu-id="5054e-154">属性名称</span><span class="sxs-lookup"><span data-stu-id="5054e-154">Property name</span></span>          | <span data-ttu-id="5054e-155">类型</span><span class="sxs-lookup"><span data-stu-id="5054e-155">Type</span></span>                   | <span data-ttu-id="5054e-156">说明</span><span class="sxs-lookup"><span data-stu-id="5054e-156">Description</span></span>
 |:-----------------------|:-----------------------|:---------------------------
-| <span data-ttu-id="bc3bb-156">publishingState</span><span class="sxs-lookup"><span data-stu-id="bc3bb-156">publishingState</span></span>        | <span data-ttu-id="bc3bb-157">[publicationFacet][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-157">[publicationFacet][]</span></span>   | <span data-ttu-id="bc3bb-158">页面的发布状态和 MM.mm 版本。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-158">The publishing status and the MM.mm version of the page.</span></span>
+| <span data-ttu-id="5054e-157">publishingState</span><span class="sxs-lookup"><span data-stu-id="5054e-157">publishingState</span></span>        | <span data-ttu-id="5054e-158">[publicationFacet][]</span><span class="sxs-lookup"><span data-stu-id="5054e-158">[publicationFacet][]</span></span>   | <span data-ttu-id="5054e-159">页面的发布状态和 MM.mm 版本。</span><span class="sxs-lookup"><span data-stu-id="5054e-159">The publishing status and the MM.mm version of the page.</span></span>
 
-<span data-ttu-id="bc3bb-159">以下属性继承自 \*\* [baseItem][]\*\*。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-159">The following properties are inherited from **[baseItem][]**.</span></span>
+<span data-ttu-id="5054e-160">以下属性继承自 \*\* [baseItem][]\*\*。</span><span class="sxs-lookup"><span data-stu-id="5054e-160">The following properties are inherited from **[baseItem][]**.</span></span>
 
-| <span data-ttu-id="bc3bb-160">属性名称</span><span class="sxs-lookup"><span data-stu-id="bc3bb-160">Property name</span></span>        | <span data-ttu-id="bc3bb-161">类型</span><span class="sxs-lookup"><span data-stu-id="bc3bb-161">Type</span></span>              | <span data-ttu-id="bc3bb-162">说明</span><span class="sxs-lookup"><span data-stu-id="bc3bb-162">Description</span></span>
+| <span data-ttu-id="5054e-161">属性名称</span><span class="sxs-lookup"><span data-stu-id="5054e-161">Property name</span></span>        | <span data-ttu-id="5054e-162">类型</span><span class="sxs-lookup"><span data-stu-id="5054e-162">Type</span></span>              | <span data-ttu-id="5054e-163">说明</span><span class="sxs-lookup"><span data-stu-id="5054e-163">Description</span></span>
 |:---------------------|:------------------|:----------------------------------
-| <span data-ttu-id="bc3bb-163">id</span><span class="sxs-lookup"><span data-stu-id="bc3bb-163">id</span></span>                   | <span data-ttu-id="bc3bb-164">string</span><span class="sxs-lookup"><span data-stu-id="bc3bb-164">string</span></span>            | <span data-ttu-id="bc3bb-p104">项的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-p104">The unique identifier of the item. Read-only.</span></span>
-| <span data-ttu-id="bc3bb-167">name</span><span class="sxs-lookup"><span data-stu-id="bc3bb-167">name</span></span>                 | <span data-ttu-id="bc3bb-168">string</span><span class="sxs-lookup"><span data-stu-id="bc3bb-168">string</span></span>            | <span data-ttu-id="bc3bb-169">项目名称/标题。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-169">The name / title of the item.</span></span>
-| <span data-ttu-id="bc3bb-170">createdBy</span><span class="sxs-lookup"><span data-stu-id="bc3bb-170">createdBy</span></span>            | <span data-ttu-id="bc3bb-171">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-171">[identitySet][]</span></span>   | <span data-ttu-id="bc3bb-172">此项的创建者的标识。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-172">Identity of the creator of this item.</span></span> <span data-ttu-id="bc3bb-173">只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-173">Read-only.</span></span>
-| <span data-ttu-id="bc3bb-174">eTag</span><span class="sxs-lookup"><span data-stu-id="bc3bb-174">eTag</span></span>                 | <span data-ttu-id="bc3bb-175">字符串</span><span class="sxs-lookup"><span data-stu-id="bc3bb-175">string</span></span>            | <span data-ttu-id="bc3bb-p106">该项目的 ETag。只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-p106">ETag for the item. Read-only.</span></span>
-| <span data-ttu-id="bc3bb-178">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="bc3bb-178">lastModifiedBy</span></span>       | <span data-ttu-id="bc3bb-179">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-179">[identitySet][]</span></span>   | <span data-ttu-id="bc3bb-180">此项的最后一个修饰符的标识。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-180">Identity of the last modifier of this item.</span></span> <span data-ttu-id="bc3bb-181">只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-181">Read-only.</span></span>
-| <span data-ttu-id="bc3bb-182">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="bc3bb-182">lastModifiedDateTime</span></span> | <span data-ttu-id="bc3bb-183">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bc3bb-183">DateTimeOffset</span></span>    | <span data-ttu-id="bc3bb-p108">上次修改项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-p108">The date and time the item was last modified. Read-only.</span></span>
-| <span data-ttu-id="bc3bb-186">parentReference</span><span class="sxs-lookup"><span data-stu-id="bc3bb-186">parentReference</span></span>      | <span data-ttu-id="bc3bb-187">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="bc3bb-187">[itemReference][]</span></span> | <span data-ttu-id="bc3bb-188">父信息（如果此项具有父级）。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-188">Parent information, if the item has a parent.</span></span> <span data-ttu-id="bc3bb-189">只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-189">Read-only.</span></span>
-| <span data-ttu-id="bc3bb-190">webUrl</span><span class="sxs-lookup"><span data-stu-id="bc3bb-190">webUrl</span></span>               | <span data-ttu-id="bc3bb-191">string (url)</span><span class="sxs-lookup"><span data-stu-id="bc3bb-191">string (url)</span></span>      | <span data-ttu-id="bc3bb-p110">在浏览器中显示此项目的 URL。只读。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-p110">URL that displays the item in the browser. Read-only.</span></span>
+| <span data-ttu-id="5054e-164">id</span><span class="sxs-lookup"><span data-stu-id="5054e-164">id</span></span>                   | <span data-ttu-id="5054e-165">string</span><span class="sxs-lookup"><span data-stu-id="5054e-165">string</span></span>            | <span data-ttu-id="5054e-p104">项的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-p104">The unique identifier of the item. Read-only.</span></span>
+| <span data-ttu-id="5054e-168">name</span><span class="sxs-lookup"><span data-stu-id="5054e-168">name</span></span>                 | <span data-ttu-id="5054e-169">string</span><span class="sxs-lookup"><span data-stu-id="5054e-169">string</span></span>            | <span data-ttu-id="5054e-170">项目名称/标题。</span><span class="sxs-lookup"><span data-stu-id="5054e-170">The name / title of the item.</span></span>
+| <span data-ttu-id="5054e-171">createdBy</span><span class="sxs-lookup"><span data-stu-id="5054e-171">createdBy</span></span>            | <span data-ttu-id="5054e-172">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="5054e-172">[identitySet][]</span></span>   | <span data-ttu-id="5054e-173">此项的创建者的标识。</span><span class="sxs-lookup"><span data-stu-id="5054e-173">Identity of the creator of this item.</span></span> <span data-ttu-id="5054e-174">只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-174">Read-only.</span></span>
+| <span data-ttu-id="5054e-175">eTag</span><span class="sxs-lookup"><span data-stu-id="5054e-175">eTag</span></span>                 | <span data-ttu-id="5054e-176">字符串</span><span class="sxs-lookup"><span data-stu-id="5054e-176">string</span></span>            | <span data-ttu-id="5054e-p106">该项目的 ETag。只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-p106">ETag for the item. Read-only.</span></span>
+| <span data-ttu-id="5054e-179">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="5054e-179">lastModifiedBy</span></span>       | <span data-ttu-id="5054e-180">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="5054e-180">[identitySet][]</span></span>   | <span data-ttu-id="5054e-181">此项的最后一个修饰符的标识。</span><span class="sxs-lookup"><span data-stu-id="5054e-181">Identity of the last modifier of this item.</span></span> <span data-ttu-id="5054e-182">只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-182">Read-only.</span></span>
+| <span data-ttu-id="5054e-183">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5054e-183">lastModifiedDateTime</span></span> | <span data-ttu-id="5054e-184">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5054e-184">DateTimeOffset</span></span>    | <span data-ttu-id="5054e-p108">上次修改项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-p108">The date and time the item was last modified. Read-only.</span></span>
+| <span data-ttu-id="5054e-187">parentReference</span><span class="sxs-lookup"><span data-stu-id="5054e-187">parentReference</span></span>      | <span data-ttu-id="5054e-188">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="5054e-188">[itemReference][]</span></span> | <span data-ttu-id="5054e-189">父信息（如果此项具有父级）。</span><span class="sxs-lookup"><span data-stu-id="5054e-189">Parent information, if the item has a parent.</span></span> <span data-ttu-id="5054e-190">只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-190">Read-only.</span></span>
+| <span data-ttu-id="5054e-191">webUrl</span><span class="sxs-lookup"><span data-stu-id="5054e-191">webUrl</span></span>               | <span data-ttu-id="5054e-192">string (url)</span><span class="sxs-lookup"><span data-stu-id="5054e-192">string (url)</span></span>      | <span data-ttu-id="5054e-p110">在浏览器中显示此项目的 URL。只读。</span><span class="sxs-lookup"><span data-stu-id="5054e-p110">URL that displays the item in the browser. Read-only.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="bc3bb-194">关系</span><span class="sxs-lookup"><span data-stu-id="bc3bb-194">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="5054e-195">关系</span><span class="sxs-lookup"><span data-stu-id="5054e-195">Relationships</span></span>
 
-<span data-ttu-id="bc3bb-195">**SitePage**资源不具有与其他资源的关系。</span><span class="sxs-lookup"><span data-stu-id="bc3bb-195">The **sitePage** resource does not have relationships to other resources.</span></span>
+<span data-ttu-id="5054e-196">**SitePage**资源不具有与其他资源的关系。</span><span class="sxs-lookup"><span data-stu-id="5054e-196">The **sitePage** resource does not have relationships to other resources.</span></span>
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

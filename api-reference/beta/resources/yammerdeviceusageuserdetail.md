@@ -5,36 +5,38 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 083ace4b10b24e8e5de5d287ddf418d93658c879
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 982ebfc0de39bd956a4223e7bb0665ac73c42402
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006976"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518999"
 ---
-# <a name="yammerdeviceusageuserdetail-resource-type"></a><span data-ttu-id="7ba69-103">yammerDeviceUsageUserDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="7ba69-103">yammerDeviceUsageUserDetail resource type</span></span>
+# <a name="yammerdeviceusageuserdetail-resource-type"></a><span data-ttu-id="383db-103">yammerDeviceUsageUserDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="383db-103">yammerDeviceUsageUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7ba69-104">属性</span><span class="sxs-lookup"><span data-stu-id="7ba69-104">Properties</span></span>
+<span data-ttu-id="383db-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="383db-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="7ba69-105">属性</span><span class="sxs-lookup"><span data-stu-id="7ba69-105">Property</span></span>          | <span data-ttu-id="7ba69-106">类型</span><span class="sxs-lookup"><span data-stu-id="7ba69-106">Type</span></span>    |
+## <a name="properties"></a><span data-ttu-id="383db-105">属性</span><span class="sxs-lookup"><span data-stu-id="383db-105">Properties</span></span>
+
+| <span data-ttu-id="383db-106">属性</span><span class="sxs-lookup"><span data-stu-id="383db-106">Property</span></span>          | <span data-ttu-id="383db-107">类型</span><span class="sxs-lookup"><span data-stu-id="383db-107">Type</span></span>    |
 | :---------------- | :------ |
-| <span data-ttu-id="7ba69-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="7ba69-107">reportRefreshDate</span></span> | <span data-ttu-id="7ba69-108">日期</span><span class="sxs-lookup"><span data-stu-id="7ba69-108">Date</span></span>    |
-| <span data-ttu-id="7ba69-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="7ba69-109">userPrincipalName</span></span> | <span data-ttu-id="7ba69-110">String</span><span class="sxs-lookup"><span data-stu-id="7ba69-110">String</span></span>  |
-| <span data-ttu-id="7ba69-111">displayName</span><span class="sxs-lookup"><span data-stu-id="7ba69-111">displayName</span></span>       | <span data-ttu-id="7ba69-112">String</span><span class="sxs-lookup"><span data-stu-id="7ba69-112">String</span></span>  |
-| <span data-ttu-id="7ba69-113">userState</span><span class="sxs-lookup"><span data-stu-id="7ba69-113">userState</span></span>         | <span data-ttu-id="7ba69-114">String</span><span class="sxs-lookup"><span data-stu-id="7ba69-114">String</span></span>  |
-| <span data-ttu-id="7ba69-115">stateChangeDate</span><span class="sxs-lookup"><span data-stu-id="7ba69-115">stateChangeDate</span></span>   | <span data-ttu-id="7ba69-116">日期</span><span class="sxs-lookup"><span data-stu-id="7ba69-116">Date</span></span>    |
-| <span data-ttu-id="7ba69-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="7ba69-117">lastActivityDate</span></span>  | <span data-ttu-id="7ba69-118">日期</span><span class="sxs-lookup"><span data-stu-id="7ba69-118">Date</span></span>    |
-| <span data-ttu-id="7ba69-119">usedWeb</span><span class="sxs-lookup"><span data-stu-id="7ba69-119">usedWeb</span></span>           | <span data-ttu-id="7ba69-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-120">Boolean</span></span> |
-| <span data-ttu-id="7ba69-121">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="7ba69-121">usedWindowsPhone</span></span>  | <span data-ttu-id="7ba69-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-122">Boolean</span></span> |
-| <span data-ttu-id="7ba69-123">usedAndroidPhone</span><span class="sxs-lookup"><span data-stu-id="7ba69-123">usedAndroidPhone</span></span>  | <span data-ttu-id="7ba69-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-124">Boolean</span></span> |
-| <span data-ttu-id="7ba69-125">usediPhone</span><span class="sxs-lookup"><span data-stu-id="7ba69-125">usediPhone</span></span>        | <span data-ttu-id="7ba69-126">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-126">Boolean</span></span> |
-| <span data-ttu-id="7ba69-127">usediPad</span><span class="sxs-lookup"><span data-stu-id="7ba69-127">usediPad</span></span>          | <span data-ttu-id="7ba69-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-128">Boolean</span></span> |
-| <span data-ttu-id="7ba69-129">usedOthers</span><span class="sxs-lookup"><span data-stu-id="7ba69-129">usedOthers</span></span>        | <span data-ttu-id="7ba69-130">Boolean</span><span class="sxs-lookup"><span data-stu-id="7ba69-130">Boolean</span></span> |
-| <span data-ttu-id="7ba69-131">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="7ba69-131">reportPeriod</span></span>      | <span data-ttu-id="7ba69-132">String</span><span class="sxs-lookup"><span data-stu-id="7ba69-132">String</span></span>  |
+| <span data-ttu-id="383db-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="383db-108">reportRefreshDate</span></span> | <span data-ttu-id="383db-109">日期</span><span class="sxs-lookup"><span data-stu-id="383db-109">Date</span></span>    |
+| <span data-ttu-id="383db-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="383db-110">userPrincipalName</span></span> | <span data-ttu-id="383db-111">String</span><span class="sxs-lookup"><span data-stu-id="383db-111">String</span></span>  |
+| <span data-ttu-id="383db-112">displayName</span><span class="sxs-lookup"><span data-stu-id="383db-112">displayName</span></span>       | <span data-ttu-id="383db-113">String</span><span class="sxs-lookup"><span data-stu-id="383db-113">String</span></span>  |
+| <span data-ttu-id="383db-114">userState</span><span class="sxs-lookup"><span data-stu-id="383db-114">userState</span></span>         | <span data-ttu-id="383db-115">String</span><span class="sxs-lookup"><span data-stu-id="383db-115">String</span></span>  |
+| <span data-ttu-id="383db-116">stateChangeDate</span><span class="sxs-lookup"><span data-stu-id="383db-116">stateChangeDate</span></span>   | <span data-ttu-id="383db-117">日期</span><span class="sxs-lookup"><span data-stu-id="383db-117">Date</span></span>    |
+| <span data-ttu-id="383db-118">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="383db-118">lastActivityDate</span></span>  | <span data-ttu-id="383db-119">日期</span><span class="sxs-lookup"><span data-stu-id="383db-119">Date</span></span>    |
+| <span data-ttu-id="383db-120">usedWeb</span><span class="sxs-lookup"><span data-stu-id="383db-120">usedWeb</span></span>           | <span data-ttu-id="383db-121">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-121">Boolean</span></span> |
+| <span data-ttu-id="383db-122">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="383db-122">usedWindowsPhone</span></span>  | <span data-ttu-id="383db-123">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-123">Boolean</span></span> |
+| <span data-ttu-id="383db-124">usedAndroidPhone</span><span class="sxs-lookup"><span data-stu-id="383db-124">usedAndroidPhone</span></span>  | <span data-ttu-id="383db-125">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-125">Boolean</span></span> |
+| <span data-ttu-id="383db-126">usediPhone</span><span class="sxs-lookup"><span data-stu-id="383db-126">usediPhone</span></span>        | <span data-ttu-id="383db-127">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-127">Boolean</span></span> |
+| <span data-ttu-id="383db-128">usediPad</span><span class="sxs-lookup"><span data-stu-id="383db-128">usediPad</span></span>          | <span data-ttu-id="383db-129">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-129">Boolean</span></span> |
+| <span data-ttu-id="383db-130">usedOthers</span><span class="sxs-lookup"><span data-stu-id="383db-130">usedOthers</span></span>        | <span data-ttu-id="383db-131">布尔</span><span class="sxs-lookup"><span data-stu-id="383db-131">Boolean</span></span> |
+| <span data-ttu-id="383db-132">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="383db-132">reportPeriod</span></span>      | <span data-ttu-id="383db-133">String</span><span class="sxs-lookup"><span data-stu-id="383db-133">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="7ba69-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7ba69-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="383db-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="383db-134">JSON representation</span></span>
 
-<span data-ttu-id="7ba69-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7ba69-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="383db-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="383db-135">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

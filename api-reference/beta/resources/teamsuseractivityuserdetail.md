@@ -5,35 +5,37 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cbe6297388907f28f8841e0a1dcb2ec3ae788844
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 237cfc933cbabd628320131866f7bf24ba0195c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519811"
 ---
-# <a name="teamsuseractivityuserdetail-resource-type"></a><span data-ttu-id="9d30c-103">teamsUserActivityUserDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="9d30c-103">teamsUserActivityUserDetail resource type</span></span>
+# <a name="teamsuseractivityuserdetail-resource-type"></a><span data-ttu-id="70da1-103">teamsUserActivityUserDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="70da1-103">teamsUserActivityUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9d30c-104">属性</span><span class="sxs-lookup"><span data-stu-id="9d30c-104">Properties</span></span>
+<span data-ttu-id="70da1-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="70da1-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="9d30c-105">属性</span><span class="sxs-lookup"><span data-stu-id="9d30c-105">Property</span></span>                | <span data-ttu-id="9d30c-106">类型</span><span class="sxs-lookup"><span data-stu-id="9d30c-106">Type</span></span>              |
+## <a name="properties"></a><span data-ttu-id="70da1-105">属性</span><span class="sxs-lookup"><span data-stu-id="70da1-105">Properties</span></span>
+
+| <span data-ttu-id="70da1-106">属性</span><span class="sxs-lookup"><span data-stu-id="70da1-106">Property</span></span>                | <span data-ttu-id="70da1-107">类型</span><span class="sxs-lookup"><span data-stu-id="70da1-107">Type</span></span>              |
 | :---------------------- | :---------------- |
-| <span data-ttu-id="9d30c-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="9d30c-107">reportRefreshDate</span></span>       | <span data-ttu-id="9d30c-108">日期</span><span class="sxs-lookup"><span data-stu-id="9d30c-108">Date</span></span>              |
-| <span data-ttu-id="9d30c-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="9d30c-109">userPrincipalName</span></span>       | <span data-ttu-id="9d30c-110">String</span><span class="sxs-lookup"><span data-stu-id="9d30c-110">String</span></span>            |
-| <span data-ttu-id="9d30c-111">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="9d30c-111">lastActivityDate</span></span>        | <span data-ttu-id="9d30c-112">日期</span><span class="sxs-lookup"><span data-stu-id="9d30c-112">Date</span></span>              |
-| <span data-ttu-id="9d30c-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="9d30c-113">isDeleted</span></span>               | <span data-ttu-id="9d30c-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="9d30c-114">Boolean</span></span>           |
-| <span data-ttu-id="9d30c-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="9d30c-115">deletedDate</span></span>             | <span data-ttu-id="9d30c-116">日期</span><span class="sxs-lookup"><span data-stu-id="9d30c-116">Date</span></span>              |
-| <span data-ttu-id="9d30c-117">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="9d30c-117">assignedProducts</span></span>        | <span data-ttu-id="9d30c-118">String collection</span><span class="sxs-lookup"><span data-stu-id="9d30c-118">String collection</span></span> |
-| <span data-ttu-id="9d30c-119">teamChatMessageCount</span><span class="sxs-lookup"><span data-stu-id="9d30c-119">teamChatMessageCount</span></span>    | <span data-ttu-id="9d30c-120">Int64</span><span class="sxs-lookup"><span data-stu-id="9d30c-120">Int64</span></span>             |
-| <span data-ttu-id="9d30c-121">privateChatMessageCount</span><span class="sxs-lookup"><span data-stu-id="9d30c-121">privateChatMessageCount</span></span> | <span data-ttu-id="9d30c-122">Int64</span><span class="sxs-lookup"><span data-stu-id="9d30c-122">Int64</span></span>             |
-| <span data-ttu-id="9d30c-123">callCount</span><span class="sxs-lookup"><span data-stu-id="9d30c-123">callCount</span></span>               | <span data-ttu-id="9d30c-124">Int64</span><span class="sxs-lookup"><span data-stu-id="9d30c-124">Int64</span></span>             |
-| <span data-ttu-id="9d30c-125">meetingCount</span><span class="sxs-lookup"><span data-stu-id="9d30c-125">meetingCount</span></span>            | <span data-ttu-id="9d30c-126">Int64</span><span class="sxs-lookup"><span data-stu-id="9d30c-126">Int64</span></span>             |
-| <span data-ttu-id="9d30c-127">hasOtherAction</span><span class="sxs-lookup"><span data-stu-id="9d30c-127">hasOtherAction</span></span>          | <span data-ttu-id="9d30c-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="9d30c-128">Boolean</span></span>           |
-| <span data-ttu-id="9d30c-129">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="9d30c-129">reportPeriod</span></span>            | <span data-ttu-id="9d30c-130">String</span><span class="sxs-lookup"><span data-stu-id="9d30c-130">String</span></span>            |
+| <span data-ttu-id="70da1-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="70da1-108">reportRefreshDate</span></span>       | <span data-ttu-id="70da1-109">日期</span><span class="sxs-lookup"><span data-stu-id="70da1-109">Date</span></span>              |
+| <span data-ttu-id="70da1-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="70da1-110">userPrincipalName</span></span>       | <span data-ttu-id="70da1-111">String</span><span class="sxs-lookup"><span data-stu-id="70da1-111">String</span></span>            |
+| <span data-ttu-id="70da1-112">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="70da1-112">lastActivityDate</span></span>        | <span data-ttu-id="70da1-113">日期</span><span class="sxs-lookup"><span data-stu-id="70da1-113">Date</span></span>              |
+| <span data-ttu-id="70da1-114">isDeleted</span><span class="sxs-lookup"><span data-stu-id="70da1-114">isDeleted</span></span>               | <span data-ttu-id="70da1-115">布尔</span><span class="sxs-lookup"><span data-stu-id="70da1-115">Boolean</span></span>           |
+| <span data-ttu-id="70da1-116">deletedDate</span><span class="sxs-lookup"><span data-stu-id="70da1-116">deletedDate</span></span>             | <span data-ttu-id="70da1-117">日期</span><span class="sxs-lookup"><span data-stu-id="70da1-117">Date</span></span>              |
+| <span data-ttu-id="70da1-118">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="70da1-118">assignedProducts</span></span>        | <span data-ttu-id="70da1-119">String 集合</span><span class="sxs-lookup"><span data-stu-id="70da1-119">String collection</span></span> |
+| <span data-ttu-id="70da1-120">teamChatMessageCount</span><span class="sxs-lookup"><span data-stu-id="70da1-120">teamChatMessageCount</span></span>    | <span data-ttu-id="70da1-121">Int64</span><span class="sxs-lookup"><span data-stu-id="70da1-121">Int64</span></span>             |
+| <span data-ttu-id="70da1-122">privateChatMessageCount</span><span class="sxs-lookup"><span data-stu-id="70da1-122">privateChatMessageCount</span></span> | <span data-ttu-id="70da1-123">Int64</span><span class="sxs-lookup"><span data-stu-id="70da1-123">Int64</span></span>             |
+| <span data-ttu-id="70da1-124">callCount</span><span class="sxs-lookup"><span data-stu-id="70da1-124">callCount</span></span>               | <span data-ttu-id="70da1-125">Int64</span><span class="sxs-lookup"><span data-stu-id="70da1-125">Int64</span></span>             |
+| <span data-ttu-id="70da1-126">meetingCount</span><span class="sxs-lookup"><span data-stu-id="70da1-126">meetingCount</span></span>            | <span data-ttu-id="70da1-127">Int64</span><span class="sxs-lookup"><span data-stu-id="70da1-127">Int64</span></span>             |
+| <span data-ttu-id="70da1-128">hasOtherAction</span><span class="sxs-lookup"><span data-stu-id="70da1-128">hasOtherAction</span></span>          | <span data-ttu-id="70da1-129">布尔</span><span class="sxs-lookup"><span data-stu-id="70da1-129">Boolean</span></span>           |
+| <span data-ttu-id="70da1-130">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="70da1-130">reportPeriod</span></span>            | <span data-ttu-id="70da1-131">String</span><span class="sxs-lookup"><span data-stu-id="70da1-131">String</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="9d30c-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9d30c-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="70da1-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="70da1-132">JSON representation</span></span>
 
-<span data-ttu-id="9d30c-132">下面是资源的 JSON representaion。</span><span class="sxs-lookup"><span data-stu-id="9d30c-132">The following is a JSON representaion of the resource.</span></span>
+<span data-ttu-id="70da1-133">下面是资源的 JSON representaion。</span><span class="sxs-lookup"><span data-stu-id="70da1-133">The following is a JSON representaion of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

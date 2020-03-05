@@ -5,33 +5,35 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520315"
 ---
-# <a name="statusdetails-resource-type"></a><span data-ttu-id="a1af6-103">statusDetails 资源类型</span><span class="sxs-lookup"><span data-stu-id="a1af6-103">statusDetails resource type</span></span>
+# <a name="statusdetails-resource-type"></a><span data-ttu-id="65aca-103">statusDetails 资源类型</span><span class="sxs-lookup"><span data-stu-id="65aca-103">statusDetails resource type</span></span>
+
+<span data-ttu-id="65aca-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="65aca-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a1af6-104">描述设置事件的状态和关联的错误。</span><span class="sxs-lookup"><span data-stu-id="a1af6-104">Describes the status of the provisioning event and the associated errors.</span></span> <span data-ttu-id="a1af6-105">它是从[statusBase](/graph/api/resources/statusbase?view=graph-rest-beta)继承的, 仅在将状态设置为 "失败" 时使用。</span><span class="sxs-lookup"><span data-stu-id="a1af6-105">It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.</span></span>  
+<span data-ttu-id="65aca-105">描述设置事件的状态和关联的错误。</span><span class="sxs-lookup"><span data-stu-id="65aca-105">Describes the status of the provisioning event and the associated errors.</span></span> <span data-ttu-id="65aca-106">它是从[statusBase](/graph/api/resources/statusbase?view=graph-rest-beta)继承的，仅在将状态设置为 "失败" 时使用。</span><span class="sxs-lookup"><span data-stu-id="65aca-106">It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="a1af6-106">属性</span><span class="sxs-lookup"><span data-stu-id="a1af6-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="65aca-107">属性</span><span class="sxs-lookup"><span data-stu-id="65aca-107">Properties</span></span>
 
-| <span data-ttu-id="a1af6-107">属性</span><span class="sxs-lookup"><span data-stu-id="a1af6-107">Property</span></span>     | <span data-ttu-id="a1af6-108">类型</span><span class="sxs-lookup"><span data-stu-id="a1af6-108">Type</span></span>        | <span data-ttu-id="a1af6-109">说明</span><span class="sxs-lookup"><span data-stu-id="a1af6-109">Description</span></span> |
+| <span data-ttu-id="65aca-108">属性</span><span class="sxs-lookup"><span data-stu-id="65aca-108">Property</span></span>     | <span data-ttu-id="65aca-109">类型</span><span class="sxs-lookup"><span data-stu-id="65aca-109">Type</span></span>        | <span data-ttu-id="65aca-110">说明</span><span class="sxs-lookup"><span data-stu-id="65aca-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a1af6-110">status</span><span class="sxs-lookup"><span data-stu-id="a1af6-110">status</span></span>|<span data-ttu-id="a1af6-111">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-111">String</span></span>|<span data-ttu-id="a1af6-112">可能的值是：`success`、`failure`、`skipped`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="a1af6-112">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span> <span data-ttu-id="a1af6-113">继承自 statusBase。</span><span class="sxs-lookup"><span data-stu-id="a1af6-113">Inherited from statusBase.</span></span>|
-|<span data-ttu-id="a1af6-114">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="a1af6-114">additionalDetails</span></span>|<span data-ttu-id="a1af6-115">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-115">String</span></span>|<span data-ttu-id="a1af6-116">发生错误时的其他详细信息。</span><span class="sxs-lookup"><span data-stu-id="a1af6-116">Additional details in case of error.</span></span>|
-|<span data-ttu-id="a1af6-117">errorCategory</span><span class="sxs-lookup"><span data-stu-id="a1af6-117">errorCategory</span></span>|<span data-ttu-id="a1af6-118">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-118">String</span></span>|<span data-ttu-id="a1af6-119">对错误代码进行分类。</span><span class="sxs-lookup"><span data-stu-id="a1af6-119">Categorizes the error code.</span></span>|
-|<span data-ttu-id="a1af6-120">errorCode</span><span class="sxs-lookup"><span data-stu-id="a1af6-120">errorCode</span></span>|<span data-ttu-id="a1af6-121">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-121">String</span></span>|<span data-ttu-id="a1af6-122">出现的唯一错误代码。</span><span class="sxs-lookup"><span data-stu-id="a1af6-122">Unique error code if any occurred.</span></span>|
-|<span data-ttu-id="a1af6-123">在于</span><span class="sxs-lookup"><span data-stu-id="a1af6-123">reason</span></span>|<span data-ttu-id="a1af6-124">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-124">String</span></span>|<span data-ttu-id="a1af6-125">概述状态并介绍状态发生的原因。</span><span class="sxs-lookup"><span data-stu-id="a1af6-125">Summarizes the status and describes why the status happened.</span></span>|
-|<span data-ttu-id="a1af6-126">recommendedAction</span><span class="sxs-lookup"><span data-stu-id="a1af6-126">recommendedAction</span></span>|<span data-ttu-id="a1af6-127">String</span><span class="sxs-lookup"><span data-stu-id="a1af6-127">String</span></span>|<span data-ttu-id="a1af6-128">提供对应错误的解决方案。</span><span class="sxs-lookup"><span data-stu-id="a1af6-128">Provides the resolution for the corresponding error.</span></span>|
+|<span data-ttu-id="65aca-111">status</span><span class="sxs-lookup"><span data-stu-id="65aca-111">status</span></span>|<span data-ttu-id="65aca-112">String</span><span class="sxs-lookup"><span data-stu-id="65aca-112">String</span></span>|<span data-ttu-id="65aca-113">可能的值是：`success`、`failure`、`skipped`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="65aca-113">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span> <span data-ttu-id="65aca-114">继承自 statusBase。</span><span class="sxs-lookup"><span data-stu-id="65aca-114">Inherited from statusBase.</span></span>|
+|<span data-ttu-id="65aca-115">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="65aca-115">additionalDetails</span></span>|<span data-ttu-id="65aca-116">String</span><span class="sxs-lookup"><span data-stu-id="65aca-116">String</span></span>|<span data-ttu-id="65aca-117">发生错误时的其他详细信息。</span><span class="sxs-lookup"><span data-stu-id="65aca-117">Additional details in case of error.</span></span>|
+|<span data-ttu-id="65aca-118">errorCategory</span><span class="sxs-lookup"><span data-stu-id="65aca-118">errorCategory</span></span>|<span data-ttu-id="65aca-119">String</span><span class="sxs-lookup"><span data-stu-id="65aca-119">String</span></span>|<span data-ttu-id="65aca-120">对错误代码进行分类。</span><span class="sxs-lookup"><span data-stu-id="65aca-120">Categorizes the error code.</span></span>|
+|<span data-ttu-id="65aca-121">errorCode</span><span class="sxs-lookup"><span data-stu-id="65aca-121">errorCode</span></span>|<span data-ttu-id="65aca-122">String</span><span class="sxs-lookup"><span data-stu-id="65aca-122">String</span></span>|<span data-ttu-id="65aca-123">出现的唯一错误代码。</span><span class="sxs-lookup"><span data-stu-id="65aca-123">Unique error code if any occurred.</span></span>|
+|<span data-ttu-id="65aca-124">reason</span><span class="sxs-lookup"><span data-stu-id="65aca-124">reason</span></span>|<span data-ttu-id="65aca-125">String</span><span class="sxs-lookup"><span data-stu-id="65aca-125">String</span></span>|<span data-ttu-id="65aca-126">概述状态并介绍状态发生的原因。</span><span class="sxs-lookup"><span data-stu-id="65aca-126">Summarizes the status and describes why the status happened.</span></span>|
+|<span data-ttu-id="65aca-127">recommendedAction</span><span class="sxs-lookup"><span data-stu-id="65aca-127">recommendedAction</span></span>|<span data-ttu-id="65aca-128">String</span><span class="sxs-lookup"><span data-stu-id="65aca-128">String</span></span>|<span data-ttu-id="65aca-129">提供对应错误的解决方案。</span><span class="sxs-lookup"><span data-stu-id="65aca-129">Provides the resolution for the corresponding error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a1af6-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a1af6-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="65aca-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="65aca-130">JSON representation</span></span>
 
-<span data-ttu-id="a1af6-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a1af6-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="65aca-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="65aca-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

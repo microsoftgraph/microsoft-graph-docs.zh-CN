@@ -5,35 +5,37 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0222a01f2bcea819624d1dcb9f53da7ea0b86b25
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 195f8e11737d2f9ae48675cdb7a7046869090e19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007989"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520245"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="e4fcc-103">attributeMappingFunctionSchema 资源类型</span><span class="sxs-lookup"><span data-stu-id="e4fcc-103">attributeMappingFunctionSchema resource type</span></span>
+# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="f0512-103">attributeMappingFunctionSchema 资源类型</span><span class="sxs-lookup"><span data-stu-id="f0512-103">attributeMappingFunctionSchema resource type</span></span>
+
+<span data-ttu-id="f0512-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f0512-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e4fcc-104">介绍可在[属性映射](synchronization-attributemapping.md)中用于在同步期间转换值的函数。</span><span class="sxs-lookup"><span data-stu-id="e4fcc-104">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
+<span data-ttu-id="f0512-105">介绍可在[属性映射](synchronization-attributemapping.md)中用于在同步期间转换值的函数。</span><span class="sxs-lookup"><span data-stu-id="f0512-105">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e4fcc-105">方法</span><span class="sxs-lookup"><span data-stu-id="e4fcc-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="f0512-106">方法</span><span class="sxs-lookup"><span data-stu-id="f0512-106">Methods</span></span>
 
-| <span data-ttu-id="e4fcc-106">方法</span><span class="sxs-lookup"><span data-stu-id="e4fcc-106">Method</span></span>           | <span data-ttu-id="e4fcc-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="e4fcc-107">Return Type</span></span>    |<span data-ttu-id="e4fcc-108">说明</span><span class="sxs-lookup"><span data-stu-id="e4fcc-108">Description</span></span>|
+| <span data-ttu-id="f0512-107">方法</span><span class="sxs-lookup"><span data-stu-id="f0512-107">Method</span></span>           | <span data-ttu-id="f0512-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="f0512-108">Return Type</span></span>    |<span data-ttu-id="f0512-109">说明</span><span class="sxs-lookup"><span data-stu-id="f0512-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="e4fcc-109">List</span><span class="sxs-lookup"><span data-stu-id="e4fcc-109">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="e4fcc-110">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="e4fcc-110">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="e4fcc-111">列出受支持的属性映射函数。</span><span class="sxs-lookup"><span data-stu-id="e4fcc-111">List supported attribute mapping functions.</span></span>|
+|[<span data-ttu-id="f0512-110">List</span><span class="sxs-lookup"><span data-stu-id="f0512-110">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="f0512-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="f0512-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="f0512-112">列出受支持的属性映射函数。</span><span class="sxs-lookup"><span data-stu-id="f0512-112">List supported attribute mapping functions.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="e4fcc-112">属性</span><span class="sxs-lookup"><span data-stu-id="e4fcc-112">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f0512-113">属性</span><span class="sxs-lookup"><span data-stu-id="f0512-113">Properties</span></span>
 
-| <span data-ttu-id="e4fcc-113">属性</span><span class="sxs-lookup"><span data-stu-id="e4fcc-113">Property</span></span>                   | <span data-ttu-id="e4fcc-114">类型</span><span class="sxs-lookup"><span data-stu-id="e4fcc-114">Type</span></span>                      | <span data-ttu-id="e4fcc-115">说明</span><span class="sxs-lookup"><span data-stu-id="e4fcc-115">Description</span></span>    |
+| <span data-ttu-id="f0512-114">属性</span><span class="sxs-lookup"><span data-stu-id="f0512-114">Property</span></span>                   | <span data-ttu-id="f0512-115">类型</span><span class="sxs-lookup"><span data-stu-id="f0512-115">Type</span></span>                      | <span data-ttu-id="f0512-116">说明</span><span class="sxs-lookup"><span data-stu-id="f0512-116">Description</span></span>    |
 |:---------------------------|:-------------------------|:---------------|
-|<span data-ttu-id="e4fcc-116">name</span><span class="sxs-lookup"><span data-stu-id="e4fcc-116">name</span></span>                        |<span data-ttu-id="e4fcc-117">String</span><span class="sxs-lookup"><span data-stu-id="e4fcc-117">String</span></span>                    |<span data-ttu-id="e4fcc-118">运算符名称。</span><span class="sxs-lookup"><span data-stu-id="e4fcc-118">Operator name.</span></span> |
-|<span data-ttu-id="e4fcc-119">parameters</span><span class="sxs-lookup"><span data-stu-id="e4fcc-119">parameters</span></span>                  |<span data-ttu-id="e4fcc-120">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="e4fcc-120">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="e4fcc-121">函数参数的集合。</span><span class="sxs-lookup"><span data-stu-id="e4fcc-121">Collection of function parameters.</span></span>|
+|<span data-ttu-id="f0512-117">name</span><span class="sxs-lookup"><span data-stu-id="f0512-117">name</span></span>                        |<span data-ttu-id="f0512-118">String</span><span class="sxs-lookup"><span data-stu-id="f0512-118">String</span></span>                    |<span data-ttu-id="f0512-119">运算符名称。</span><span class="sxs-lookup"><span data-stu-id="f0512-119">Operator name.</span></span> |
+|<span data-ttu-id="f0512-120">parameters</span><span class="sxs-lookup"><span data-stu-id="f0512-120">parameters</span></span>                  |<span data-ttu-id="f0512-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="f0512-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="f0512-122">函数参数的集合。</span><span class="sxs-lookup"><span data-stu-id="f0512-122">Collection of function parameters.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e4fcc-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e4fcc-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0512-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f0512-123">JSON representation</span></span>
 
-<span data-ttu-id="e4fcc-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e4fcc-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f0512-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0512-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

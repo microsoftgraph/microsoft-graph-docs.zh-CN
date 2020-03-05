@@ -5,31 +5,33 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dd8e67cbf4ba8994e03d683665928f9e62608d8e
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 24af9e9be6dc9b63934a02193958e0267dde8dea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173333"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521010"
 ---
-# <a name="rubriclevel-resource-type"></a><span data-ttu-id="5ee99-103">rubricLevel 资源类型</span><span class="sxs-lookup"><span data-stu-id="5ee99-103">rubricLevel resource type</span></span>
+# <a name="rubriclevel-resource-type"></a><span data-ttu-id="f5ff6-103">rubricLevel 资源类型</span><span class="sxs-lookup"><span data-stu-id="f5ff6-103">rubricLevel resource type</span></span>
+
+<span data-ttu-id="f5ff6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f5ff6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5ee99-104">Rubric 的级别。</span><span class="sxs-lookup"><span data-stu-id="5ee99-104">A level of a rubric.</span></span> <span data-ttu-id="5ee99-105">有关 rubric*质量*、*级别*和*条件*之间的关系的说明, 请参阅[educationRubric](educationrubric.md) 。</span><span class="sxs-lookup"><span data-stu-id="5ee99-105">See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.</span></span>
+<span data-ttu-id="f5ff6-105">Rubric 的级别。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-105">A level of a rubric.</span></span> <span data-ttu-id="f5ff6-106">有关 rubric*质量*、*级别*和*条件*之间的关系的说明，请参阅[educationRubric](educationrubric.md) 。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-106">See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5ee99-106">属性</span><span class="sxs-lookup"><span data-stu-id="5ee99-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f5ff6-107">属性</span><span class="sxs-lookup"><span data-stu-id="f5ff6-107">Properties</span></span>
 
-| <span data-ttu-id="5ee99-107">属性</span><span class="sxs-lookup"><span data-stu-id="5ee99-107">Property</span></span>     | <span data-ttu-id="5ee99-108">类型</span><span class="sxs-lookup"><span data-stu-id="5ee99-108">Type</span></span>        | <span data-ttu-id="5ee99-109">说明</span><span class="sxs-lookup"><span data-stu-id="5ee99-109">Description</span></span> |
+| <span data-ttu-id="f5ff6-108">属性</span><span class="sxs-lookup"><span data-stu-id="f5ff6-108">Property</span></span>     | <span data-ttu-id="f5ff6-109">类型</span><span class="sxs-lookup"><span data-stu-id="f5ff6-109">Type</span></span>        | <span data-ttu-id="f5ff6-110">说明</span><span class="sxs-lookup"><span data-stu-id="f5ff6-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="5ee99-110">说明</span><span class="sxs-lookup"><span data-stu-id="5ee99-110">description</span></span>|[<span data-ttu-id="5ee99-111">itemBody</span><span class="sxs-lookup"><span data-stu-id="5ee99-111">itemBody</span></span>](itembody.md)|<span data-ttu-id="5ee99-112">此 rubric 级别的说明。</span><span class="sxs-lookup"><span data-stu-id="5ee99-112">The description of this rubric level.</span></span>|
-|<span data-ttu-id="5ee99-113">displayName</span><span class="sxs-lookup"><span data-stu-id="5ee99-113">displayName</span></span>|<span data-ttu-id="5ee99-114">String</span><span class="sxs-lookup"><span data-stu-id="5ee99-114">String</span></span>|<span data-ttu-id="5ee99-115">此 rubric 级别的名称。</span><span class="sxs-lookup"><span data-stu-id="5ee99-115">The name of this rubric level.</span></span>|
-|<span data-ttu-id="5ee99-116">评分</span><span class="sxs-lookup"><span data-stu-id="5ee99-116">grading</span></span>|[<span data-ttu-id="5ee99-117">educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="5ee99-117">educationAssignmentGradeType</span></span>](educationassignmentgradetype.md)|<span data-ttu-id="5ee99-118">如果这是一个无点的 rubric, 则为 Null;[educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md)如果是点 rubric。</span><span class="sxs-lookup"><span data-stu-id="5ee99-118">Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.</span></span>|
-|<span data-ttu-id="5ee99-119">levelId</span><span class="sxs-lookup"><span data-stu-id="5ee99-119">levelId</span></span>|<span data-ttu-id="5ee99-120">String</span><span class="sxs-lookup"><span data-stu-id="5ee99-120">String</span></span>|<span data-ttu-id="5ee99-121">此资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="5ee99-121">The ID of this resource.</span></span>|
+|<span data-ttu-id="f5ff6-111">说明</span><span class="sxs-lookup"><span data-stu-id="f5ff6-111">description</span></span>|[<span data-ttu-id="f5ff6-112">itemBody</span><span class="sxs-lookup"><span data-stu-id="f5ff6-112">itemBody</span></span>](itembody.md)|<span data-ttu-id="f5ff6-113">此 rubric 级别的说明。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-113">The description of this rubric level.</span></span>|
+|<span data-ttu-id="f5ff6-114">displayName</span><span class="sxs-lookup"><span data-stu-id="f5ff6-114">displayName</span></span>|<span data-ttu-id="f5ff6-115">String</span><span class="sxs-lookup"><span data-stu-id="f5ff6-115">String</span></span>|<span data-ttu-id="f5ff6-116">此 rubric 级别的名称。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-116">The name of this rubric level.</span></span>|
+|<span data-ttu-id="f5ff6-117">评分</span><span class="sxs-lookup"><span data-stu-id="f5ff6-117">grading</span></span>|[<span data-ttu-id="f5ff6-118">educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="f5ff6-118">educationAssignmentGradeType</span></span>](educationassignmentgradetype.md)|<span data-ttu-id="f5ff6-119">如果这是一个无点的 rubric，则为 Null;[educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md)如果是点 rubric。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-119">Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.</span></span>|
+|<span data-ttu-id="f5ff6-120">levelId</span><span class="sxs-lookup"><span data-stu-id="f5ff6-120">levelId</span></span>|<span data-ttu-id="f5ff6-121">String</span><span class="sxs-lookup"><span data-stu-id="f5ff6-121">String</span></span>|<span data-ttu-id="f5ff6-122">此资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-122">The ID of this resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5ee99-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5ee99-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5ff6-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f5ff6-123">JSON representation</span></span>
 
-<span data-ttu-id="5ee99-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5ee99-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f5ff6-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f5ff6-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

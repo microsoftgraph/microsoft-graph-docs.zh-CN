@@ -6,21 +6,23 @@ title: BaseItemVersion
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47865e388616763b60ce3cd45195bf9919c7acf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974232"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508036"
 ---
-# <a name="baseitemversion-resource-type"></a><span data-ttu-id="656ef-103">BaseItemVersion 资源类型</span><span class="sxs-lookup"><span data-stu-id="656ef-103">BaseItemVersion resource type</span></span>
+# <a name="baseitemversion-resource-type"></a><span data-ttu-id="fa7b8-103">BaseItemVersion 资源类型</span><span class="sxs-lookup"><span data-stu-id="fa7b8-103">BaseItemVersion resource type</span></span>
+
+<span data-ttu-id="fa7b8-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="fa7b8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="656ef-104">**baseItemVersion** 资源表示项或实体的以前版本。</span><span class="sxs-lookup"><span data-stu-id="656ef-104">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
+<span data-ttu-id="fa7b8-105">**baseItemVersion** 资源表示项或实体的以前版本。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-105">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="656ef-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="656ef-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa7b8-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fa7b8-106">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
@@ -34,14 +36,14 @@ ms.locfileid: "35974232"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="656ef-106">属性</span><span class="sxs-lookup"><span data-stu-id="656ef-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fa7b8-107">属性</span><span class="sxs-lookup"><span data-stu-id="fa7b8-107">Properties</span></span>
 
-|      <span data-ttu-id="656ef-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="656ef-107">Property name</span></span>       |                         <span data-ttu-id="656ef-108">类型</span><span class="sxs-lookup"><span data-stu-id="656ef-108">Type</span></span>                         |                               <span data-ttu-id="656ef-109">说明</span><span class="sxs-lookup"><span data-stu-id="656ef-109">Description</span></span>                               |
+|      <span data-ttu-id="fa7b8-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="fa7b8-108">Property name</span></span>       |                         <span data-ttu-id="fa7b8-109">类型</span><span class="sxs-lookup"><span data-stu-id="fa7b8-109">Type</span></span>                         |                               <span data-ttu-id="fa7b8-110">说明</span><span class="sxs-lookup"><span data-stu-id="fa7b8-110">Description</span></span>                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| <span data-ttu-id="656ef-110">**id**</span><span class="sxs-lookup"><span data-stu-id="656ef-110">**id**</span></span>                   | <span data-ttu-id="656ef-111">string</span><span class="sxs-lookup"><span data-stu-id="656ef-111">string</span></span>                                               | <span data-ttu-id="656ef-112">版本 ID。</span><span class="sxs-lookup"><span data-stu-id="656ef-112">The ID of the version.</span></span> <span data-ttu-id="656ef-113">只读。</span><span class="sxs-lookup"><span data-stu-id="656ef-113">Read-only.</span></span>                                       |
-| <span data-ttu-id="656ef-114">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="656ef-114">**lastModifiedBy**</span></span>       | [<span data-ttu-id="656ef-115">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="656ef-115">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="656ef-116">上次修改版本的用户的标识。</span><span class="sxs-lookup"><span data-stu-id="656ef-116">Identity of the user which last modified the version.</span></span> <span data-ttu-id="656ef-117">只读。</span><span class="sxs-lookup"><span data-stu-id="656ef-117">Read-only.</span></span>        |
-| <span data-ttu-id="656ef-118">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="656ef-118">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="656ef-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="656ef-119">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="656ef-120">上次修改版本的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="656ef-120">Date and time the version was last modified.</span></span> <span data-ttu-id="656ef-121">只读。</span><span class="sxs-lookup"><span data-stu-id="656ef-121">Read-only.</span></span>                 |
-| <span data-ttu-id="656ef-122">**publication**</span><span class="sxs-lookup"><span data-stu-id="656ef-122">**publication**</span></span>          | [<span data-ttu-id="656ef-123">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="656ef-123">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="656ef-124">指示此特定版本的发布状态。</span><span class="sxs-lookup"><span data-stu-id="656ef-124">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="656ef-125">只读。</span><span class="sxs-lookup"><span data-stu-id="656ef-125">Read-only.</span></span> |
+| <span data-ttu-id="fa7b8-111">**id**</span><span class="sxs-lookup"><span data-stu-id="fa7b8-111">**id**</span></span>                   | <span data-ttu-id="fa7b8-112">string</span><span class="sxs-lookup"><span data-stu-id="fa7b8-112">string</span></span>                                               | <span data-ttu-id="fa7b8-113">版本 ID。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-113">The ID of the version.</span></span> <span data-ttu-id="fa7b8-114">只读。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-114">Read-only.</span></span>                                       |
+| <span data-ttu-id="fa7b8-115">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="fa7b8-115">**lastModifiedBy**</span></span>       | [<span data-ttu-id="fa7b8-116">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="fa7b8-116">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="fa7b8-117">上次修改版本的用户的标识。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-117">Identity of the user which last modified the version.</span></span> <span data-ttu-id="fa7b8-118">只读。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-118">Read-only.</span></span>        |
+| <span data-ttu-id="fa7b8-119">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="fa7b8-119">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="fa7b8-120">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa7b8-120">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="fa7b8-121">上次修改版本的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-121">Date and time the version was last modified.</span></span> <span data-ttu-id="fa7b8-122">只读。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-122">Read-only.</span></span>                 |
+| <span data-ttu-id="fa7b8-123">**publication**</span><span class="sxs-lookup"><span data-stu-id="fa7b8-123">**publication**</span></span>          | [<span data-ttu-id="fa7b8-124">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="fa7b8-124">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="fa7b8-125">指示此特定版本的发布状态。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-125">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="fa7b8-126">只读。</span><span class="sxs-lookup"><span data-stu-id="fa7b8-126">Read-only.</span></span> |
 
 
 <!--

@@ -5,44 +5,46 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 28be6904b64b89c6386bd25a4ced71f76fdc4088
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 73fa72d403bd20e6a966b01a0529d09689e5ed66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895620"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519713"
 ---
-# <a name="timeoffrequest-resource-type"></a><span data-ttu-id="b8202-103">timeOffRequest 资源类型</span><span class="sxs-lookup"><span data-stu-id="b8202-103">timeOffRequest resource type</span></span>
+# <a name="timeoffrequest-resource-type"></a><span data-ttu-id="c4159-103">timeOffRequest 资源类型</span><span class="sxs-lookup"><span data-stu-id="c4159-103">timeOffRequest resource type</span></span>
+
+<span data-ttu-id="c4159-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c4159-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b8202-104">表示要采用[timeoff](../resources/timeoff.md)的班次请求的类型。</span><span class="sxs-lookup"><span data-stu-id="b8202-104">Represents a type of shift request to take [timeoff](../resources/timeoff.md).</span></span>
+<span data-ttu-id="c4159-105">表示要采用[timeoff](../resources/timeoff.md)的班次请求的类型。</span><span class="sxs-lookup"><span data-stu-id="c4159-105">Represents a type of shift request to take [timeoff](../resources/timeoff.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="b8202-105">方法</span><span class="sxs-lookup"><span data-stu-id="b8202-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="c4159-106">方法</span><span class="sxs-lookup"><span data-stu-id="c4159-106">Methods</span></span>
 
-| <span data-ttu-id="b8202-106">方法</span><span class="sxs-lookup"><span data-stu-id="b8202-106">Method</span></span>       | <span data-ttu-id="b8202-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="b8202-107">Return Type</span></span> | <span data-ttu-id="b8202-108">说明</span><span class="sxs-lookup"><span data-stu-id="b8202-108">Description</span></span> |
+| <span data-ttu-id="c4159-107">方法</span><span class="sxs-lookup"><span data-stu-id="c4159-107">Method</span></span>       | <span data-ttu-id="c4159-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="c4159-108">Return Type</span></span> | <span data-ttu-id="c4159-109">说明</span><span class="sxs-lookup"><span data-stu-id="c4159-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="b8202-109">获取</span><span class="sxs-lookup"><span data-stu-id="b8202-109">Get</span></span>](../api/timeoffrequest-get.md) | [<span data-ttu-id="b8202-110">timeOffRequest</span><span class="sxs-lookup"><span data-stu-id="b8202-110">timeOffRequest</span></span>](timeoffrequest.md) | <span data-ttu-id="b8202-111">读取**timeOffRequest**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="b8202-111">Read the properties and relationships of a **timeOffRequest** object.</span></span> |
-| [<span data-ttu-id="b8202-112">更新</span><span class="sxs-lookup"><span data-stu-id="b8202-112">Update</span></span>](../api/timeoffrequest-update.md) | [<span data-ttu-id="b8202-113">timeOffRequest</span><span class="sxs-lookup"><span data-stu-id="b8202-113">timeOffRequest</span></span>](timeoffrequest.md) | <span data-ttu-id="b8202-114">更新**timeOffRequest**对象。</span><span class="sxs-lookup"><span data-stu-id="b8202-114">Update a **timeOffRequest** object.</span></span> |
-| [<span data-ttu-id="b8202-115">删除</span><span class="sxs-lookup"><span data-stu-id="b8202-115">Delete</span></span>](../api/timeoffrequest-delete.md) | <span data-ttu-id="b8202-116">None</span><span class="sxs-lookup"><span data-stu-id="b8202-116">None</span></span> | <span data-ttu-id="b8202-117">删除**timeOffRequest**对象。</span><span class="sxs-lookup"><span data-stu-id="b8202-117">Delete a **timeOffRequest** object.</span></span> |
-|[<span data-ttu-id="b8202-118">批准</span><span class="sxs-lookup"><span data-stu-id="b8202-118">Approve</span></span>](../api/timeoffrequest-approve.md)|<span data-ttu-id="b8202-119">None</span><span class="sxs-lookup"><span data-stu-id="b8202-119">None</span></span>|<span data-ttu-id="b8202-120">批准请假时间请求。</span><span class="sxs-lookup"><span data-stu-id="b8202-120">Approve a time off request.</span></span>|
-|[<span data-ttu-id="b8202-121">拒绝</span><span class="sxs-lookup"><span data-stu-id="b8202-121">Decline</span></span>](../api/timeoffrequest-decline.md)|<span data-ttu-id="b8202-122">None</span><span class="sxs-lookup"><span data-stu-id="b8202-122">None</span></span>|<span data-ttu-id="b8202-123">拒绝休息时间请求。</span><span class="sxs-lookup"><span data-stu-id="b8202-123">Decline a time off request.</span></span>|
+| [<span data-ttu-id="c4159-110">获取</span><span class="sxs-lookup"><span data-stu-id="c4159-110">Get</span></span>](../api/timeoffrequest-get.md) | [<span data-ttu-id="c4159-111">timeOffRequest</span><span class="sxs-lookup"><span data-stu-id="c4159-111">timeOffRequest</span></span>](timeoffrequest.md) | <span data-ttu-id="c4159-112">读取**timeOffRequest**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c4159-112">Read the properties and relationships of a **timeOffRequest** object.</span></span> |
+| [<span data-ttu-id="c4159-113">更新</span><span class="sxs-lookup"><span data-stu-id="c4159-113">Update</span></span>](../api/timeoffrequest-update.md) | [<span data-ttu-id="c4159-114">timeOffRequest</span><span class="sxs-lookup"><span data-stu-id="c4159-114">timeOffRequest</span></span>](timeoffrequest.md) | <span data-ttu-id="c4159-115">更新**timeOffRequest**对象。</span><span class="sxs-lookup"><span data-stu-id="c4159-115">Update a **timeOffRequest** object.</span></span> |
+| [<span data-ttu-id="c4159-116">删除</span><span class="sxs-lookup"><span data-stu-id="c4159-116">Delete</span></span>](../api/timeoffrequest-delete.md) | <span data-ttu-id="c4159-117">无</span><span class="sxs-lookup"><span data-stu-id="c4159-117">None</span></span> | <span data-ttu-id="c4159-118">删除**timeOffRequest**对象。</span><span class="sxs-lookup"><span data-stu-id="c4159-118">Delete a **timeOffRequest** object.</span></span> |
+|[<span data-ttu-id="c4159-119">批准</span><span class="sxs-lookup"><span data-stu-id="c4159-119">Approve</span></span>](../api/timeoffrequest-approve.md)|<span data-ttu-id="c4159-120">无</span><span class="sxs-lookup"><span data-stu-id="c4159-120">None</span></span>|<span data-ttu-id="c4159-121">批准请假时间请求。</span><span class="sxs-lookup"><span data-stu-id="c4159-121">Approve a time off request.</span></span>|
+|[<span data-ttu-id="c4159-122">拒绝</span><span class="sxs-lookup"><span data-stu-id="c4159-122">Decline</span></span>](../api/timeoffrequest-decline.md)|<span data-ttu-id="c4159-123">无</span><span class="sxs-lookup"><span data-stu-id="c4159-123">None</span></span>|<span data-ttu-id="c4159-124">拒绝休息时间请求。</span><span class="sxs-lookup"><span data-stu-id="c4159-124">Decline a time off request.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="b8202-124">属性</span><span class="sxs-lookup"><span data-stu-id="b8202-124">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c4159-125">属性</span><span class="sxs-lookup"><span data-stu-id="c4159-125">Properties</span></span>
 
-| <span data-ttu-id="b8202-125">属性</span><span class="sxs-lookup"><span data-stu-id="b8202-125">Property</span></span>     | <span data-ttu-id="b8202-126">类型</span><span class="sxs-lookup"><span data-stu-id="b8202-126">Type</span></span>        | <span data-ttu-id="b8202-127">说明</span><span class="sxs-lookup"><span data-stu-id="b8202-127">Description</span></span> |
+| <span data-ttu-id="c4159-126">属性</span><span class="sxs-lookup"><span data-stu-id="c4159-126">Property</span></span>     | <span data-ttu-id="c4159-127">类型</span><span class="sxs-lookup"><span data-stu-id="c4159-127">Type</span></span>        | <span data-ttu-id="c4159-128">说明</span><span class="sxs-lookup"><span data-stu-id="c4159-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="b8202-128">endDateTime</span><span class="sxs-lookup"><span data-stu-id="b8202-128">endDateTime</span></span>|<span data-ttu-id="b8202-129">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b8202-129">DateTimeOffset</span></span>|<span data-ttu-id="b8202-p101">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="b8202-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="b8202-132">startDateTime</span><span class="sxs-lookup"><span data-stu-id="b8202-132">startDateTime</span></span>|<span data-ttu-id="b8202-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b8202-133">DateTimeOffset</span></span>|<span data-ttu-id="b8202-p102">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="b8202-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="b8202-136">timeOffReasonId</span><span class="sxs-lookup"><span data-stu-id="b8202-136">timeOffReasonId</span></span>|<span data-ttu-id="b8202-137">字符串</span><span class="sxs-lookup"><span data-stu-id="b8202-137">String</span></span>|<span data-ttu-id="b8202-138">休息时间的原因。</span><span class="sxs-lookup"><span data-stu-id="b8202-138">The reason for the time off.</span></span>|
+|<span data-ttu-id="c4159-129">endDateTime</span><span class="sxs-lookup"><span data-stu-id="c4159-129">endDateTime</span></span>|<span data-ttu-id="c4159-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c4159-130">DateTimeOffset</span></span>|<span data-ttu-id="c4159-p101">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c4159-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c4159-133">startDateTime</span><span class="sxs-lookup"><span data-stu-id="c4159-133">startDateTime</span></span>|<span data-ttu-id="c4159-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c4159-134">DateTimeOffset</span></span>|<span data-ttu-id="c4159-p102">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c4159-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c4159-137">timeOffReasonId</span><span class="sxs-lookup"><span data-stu-id="c4159-137">timeOffReasonId</span></span>|<span data-ttu-id="c4159-138">String</span><span class="sxs-lookup"><span data-stu-id="c4159-138">String</span></span>|<span data-ttu-id="c4159-139">休息时间的原因。</span><span class="sxs-lookup"><span data-stu-id="c4159-139">The reason for the time off.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b8202-139">关系</span><span class="sxs-lookup"><span data-stu-id="b8202-139">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="c4159-140">关系</span><span class="sxs-lookup"><span data-stu-id="c4159-140">Relationships</span></span>
 
-<span data-ttu-id="b8202-140">无。</span><span class="sxs-lookup"><span data-stu-id="b8202-140">None.</span></span>
+<span data-ttu-id="c4159-141">无。</span><span class="sxs-lookup"><span data-stu-id="c4159-141">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b8202-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b8202-141">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c4159-142">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c4159-142">JSON representation</span></span>
 
-<span data-ttu-id="b8202-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b8202-142">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c4159-143">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c4159-143">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

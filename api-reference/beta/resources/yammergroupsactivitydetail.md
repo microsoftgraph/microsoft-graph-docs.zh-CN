@@ -5,35 +5,37 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f16eda3f28556a18c47c68d532ace4244edfad19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9363bd711900cc6211e995c112581d3a91e08a04
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963750"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518985"
 ---
-# <a name="yammergroupsactivitydetail-resource-type"></a><span data-ttu-id="bcc94-103">yammerGroupsActivityDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="bcc94-103">yammerGroupsActivityDetail resource type</span></span>
+# <a name="yammergroupsactivitydetail-resource-type"></a><span data-ttu-id="36748-103">yammerGroupsActivityDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="36748-103">yammerGroupsActivityDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bcc94-104">属性</span><span class="sxs-lookup"><span data-stu-id="bcc94-104">Properties</span></span>
+<span data-ttu-id="36748-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="36748-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="bcc94-105">属性</span><span class="sxs-lookup"><span data-stu-id="bcc94-105">Property</span></span>           | <span data-ttu-id="bcc94-106">类型</span><span class="sxs-lookup"><span data-stu-id="bcc94-106">Type</span></span>    |
+## <a name="properties"></a><span data-ttu-id="36748-105">属性</span><span class="sxs-lookup"><span data-stu-id="36748-105">Properties</span></span>
+
+| <span data-ttu-id="36748-106">属性</span><span class="sxs-lookup"><span data-stu-id="36748-106">Property</span></span>           | <span data-ttu-id="36748-107">类型</span><span class="sxs-lookup"><span data-stu-id="36748-107">Type</span></span>    |
 | :----------------- | :------ |
-| <span data-ttu-id="bcc94-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="bcc94-107">reportRefreshDate</span></span>  | <span data-ttu-id="bcc94-108">日期</span><span class="sxs-lookup"><span data-stu-id="bcc94-108">Date</span></span>    |
-| <span data-ttu-id="bcc94-109">groupDisplayName</span><span class="sxs-lookup"><span data-stu-id="bcc94-109">groupDisplayName</span></span>   | <span data-ttu-id="bcc94-110">String</span><span class="sxs-lookup"><span data-stu-id="bcc94-110">String</span></span>  |
-| <span data-ttu-id="bcc94-111">isDeleted</span><span class="sxs-lookup"><span data-stu-id="bcc94-111">isDeleted</span></span>          | <span data-ttu-id="bcc94-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="bcc94-112">Boolean</span></span> |
-| <span data-ttu-id="bcc94-113">ownerPrincipalName</span><span class="sxs-lookup"><span data-stu-id="bcc94-113">ownerPrincipalName</span></span> | <span data-ttu-id="bcc94-114">String</span><span class="sxs-lookup"><span data-stu-id="bcc94-114">String</span></span>  |
-| <span data-ttu-id="bcc94-115">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="bcc94-115">lastActivityDate</span></span>   | <span data-ttu-id="bcc94-116">日期</span><span class="sxs-lookup"><span data-stu-id="bcc94-116">Date</span></span>    |
-| <span data-ttu-id="bcc94-117">groupType</span><span class="sxs-lookup"><span data-stu-id="bcc94-117">groupType</span></span>          | <span data-ttu-id="bcc94-118">String</span><span class="sxs-lookup"><span data-stu-id="bcc94-118">String</span></span>  |
-| <span data-ttu-id="bcc94-119">office365Connected</span><span class="sxs-lookup"><span data-stu-id="bcc94-119">office365Connected</span></span> | <span data-ttu-id="bcc94-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="bcc94-120">Boolean</span></span> |
-| <span data-ttu-id="bcc94-121">memberCount</span><span class="sxs-lookup"><span data-stu-id="bcc94-121">memberCount</span></span>        | <span data-ttu-id="bcc94-122">Int64</span><span class="sxs-lookup"><span data-stu-id="bcc94-122">Int64</span></span>   |
-| <span data-ttu-id="bcc94-123">postedCount</span><span class="sxs-lookup"><span data-stu-id="bcc94-123">postedCount</span></span>        | <span data-ttu-id="bcc94-124">Int64</span><span class="sxs-lookup"><span data-stu-id="bcc94-124">Int64</span></span>   |
-| <span data-ttu-id="bcc94-125">readCount</span><span class="sxs-lookup"><span data-stu-id="bcc94-125">readCount</span></span>          | <span data-ttu-id="bcc94-126">Int64</span><span class="sxs-lookup"><span data-stu-id="bcc94-126">Int64</span></span>   |
-| <span data-ttu-id="bcc94-127">likedCount</span><span class="sxs-lookup"><span data-stu-id="bcc94-127">likedCount</span></span>         | <span data-ttu-id="bcc94-128">Int64</span><span class="sxs-lookup"><span data-stu-id="bcc94-128">Int64</span></span>   |
-| <span data-ttu-id="bcc94-129">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="bcc94-129">reportPeriod</span></span>       | <span data-ttu-id="bcc94-130">String</span><span class="sxs-lookup"><span data-stu-id="bcc94-130">String</span></span>  |
+| <span data-ttu-id="36748-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="36748-108">reportRefreshDate</span></span>  | <span data-ttu-id="36748-109">日期</span><span class="sxs-lookup"><span data-stu-id="36748-109">Date</span></span>    |
+| <span data-ttu-id="36748-110">groupDisplayName</span><span class="sxs-lookup"><span data-stu-id="36748-110">groupDisplayName</span></span>   | <span data-ttu-id="36748-111">String</span><span class="sxs-lookup"><span data-stu-id="36748-111">String</span></span>  |
+| <span data-ttu-id="36748-112">isDeleted</span><span class="sxs-lookup"><span data-stu-id="36748-112">isDeleted</span></span>          | <span data-ttu-id="36748-113">布尔</span><span class="sxs-lookup"><span data-stu-id="36748-113">Boolean</span></span> |
+| <span data-ttu-id="36748-114">ownerPrincipalName</span><span class="sxs-lookup"><span data-stu-id="36748-114">ownerPrincipalName</span></span> | <span data-ttu-id="36748-115">String</span><span class="sxs-lookup"><span data-stu-id="36748-115">String</span></span>  |
+| <span data-ttu-id="36748-116">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="36748-116">lastActivityDate</span></span>   | <span data-ttu-id="36748-117">日期</span><span class="sxs-lookup"><span data-stu-id="36748-117">Date</span></span>    |
+| <span data-ttu-id="36748-118">groupType</span><span class="sxs-lookup"><span data-stu-id="36748-118">groupType</span></span>          | <span data-ttu-id="36748-119">String</span><span class="sxs-lookup"><span data-stu-id="36748-119">String</span></span>  |
+| <span data-ttu-id="36748-120">office365Connected</span><span class="sxs-lookup"><span data-stu-id="36748-120">office365Connected</span></span> | <span data-ttu-id="36748-121">布尔</span><span class="sxs-lookup"><span data-stu-id="36748-121">Boolean</span></span> |
+| <span data-ttu-id="36748-122">memberCount</span><span class="sxs-lookup"><span data-stu-id="36748-122">memberCount</span></span>        | <span data-ttu-id="36748-123">Int64</span><span class="sxs-lookup"><span data-stu-id="36748-123">Int64</span></span>   |
+| <span data-ttu-id="36748-124">postedCount</span><span class="sxs-lookup"><span data-stu-id="36748-124">postedCount</span></span>        | <span data-ttu-id="36748-125">Int64</span><span class="sxs-lookup"><span data-stu-id="36748-125">Int64</span></span>   |
+| <span data-ttu-id="36748-126">readCount</span><span class="sxs-lookup"><span data-stu-id="36748-126">readCount</span></span>          | <span data-ttu-id="36748-127">Int64</span><span class="sxs-lookup"><span data-stu-id="36748-127">Int64</span></span>   |
+| <span data-ttu-id="36748-128">likedCount</span><span class="sxs-lookup"><span data-stu-id="36748-128">likedCount</span></span>         | <span data-ttu-id="36748-129">Int64</span><span class="sxs-lookup"><span data-stu-id="36748-129">Int64</span></span>   |
+| <span data-ttu-id="36748-130">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="36748-130">reportPeriod</span></span>       | <span data-ttu-id="36748-131">String</span><span class="sxs-lookup"><span data-stu-id="36748-131">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="bcc94-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bcc94-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="36748-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="36748-132">JSON representation</span></span>
 
-<span data-ttu-id="bcc94-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcc94-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="36748-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="36748-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

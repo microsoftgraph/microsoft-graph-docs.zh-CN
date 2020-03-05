@@ -5,37 +5,39 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0b37d91ad5669a0a87cef91893babf392f2f309b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0f71b23e48c818747a2b70b52ec8b4baa53bf118
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939402"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508490"
 ---
-# <a name="accesspackagesubject-resource-type"></a><span data-ttu-id="64cea-103">accessPackageSubject 资源类型</span><span class="sxs-lookup"><span data-stu-id="64cea-103">accessPackageSubject resource type</span></span>
+# <a name="accesspackagesubject-resource-type"></a><span data-ttu-id="39562-103">accessPackageSubject 资源类型</span><span class="sxs-lookup"><span data-stu-id="39562-103">accessPackageSubject resource type</span></span>
+
+<span data-ttu-id="39562-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="39562-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64cea-104">在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包主题是可以配置为请求或分配访问包的用户、服务主体或其他实体。</span><span class="sxs-lookup"><span data-stu-id="64cea-104">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.</span></span>
+<span data-ttu-id="39562-105">在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包主题是可以配置为请求或分配访问包的用户、服务主体或其他实体。</span><span class="sxs-lookup"><span data-stu-id="39562-105">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="64cea-105">属性</span><span class="sxs-lookup"><span data-stu-id="64cea-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="39562-106">属性</span><span class="sxs-lookup"><span data-stu-id="39562-106">Properties</span></span>
 
-| <span data-ttu-id="64cea-106">属性</span><span class="sxs-lookup"><span data-stu-id="64cea-106">Property</span></span>     | <span data-ttu-id="64cea-107">类型</span><span class="sxs-lookup"><span data-stu-id="64cea-107">Type</span></span>        | <span data-ttu-id="64cea-108">说明</span><span class="sxs-lookup"><span data-stu-id="64cea-108">Description</span></span> |
+| <span data-ttu-id="39562-107">属性</span><span class="sxs-lookup"><span data-stu-id="39562-107">Property</span></span>     | <span data-ttu-id="39562-108">类型</span><span class="sxs-lookup"><span data-stu-id="39562-108">Type</span></span>        | <span data-ttu-id="39562-109">说明</span><span class="sxs-lookup"><span data-stu-id="39562-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="64cea-109">displayName</span><span class="sxs-lookup"><span data-stu-id="64cea-109">displayName</span></span>|<span data-ttu-id="64cea-110">字符串</span><span class="sxs-lookup"><span data-stu-id="64cea-110">String</span></span>|<span data-ttu-id="64cea-111">主题的显示名称。</span><span class="sxs-lookup"><span data-stu-id="64cea-111">The display name of the subject.</span></span>|
-|<span data-ttu-id="64cea-112">email</span><span class="sxs-lookup"><span data-stu-id="64cea-112">email</span></span>|<span data-ttu-id="64cea-113">String</span><span class="sxs-lookup"><span data-stu-id="64cea-113">String</span></span>|<span data-ttu-id="64cea-114">主题的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="64cea-114">The email address of the subject.</span></span>|
-|<span data-ttu-id="64cea-115">id</span><span class="sxs-lookup"><span data-stu-id="64cea-115">id</span></span>|<span data-ttu-id="64cea-116">字符串</span><span class="sxs-lookup"><span data-stu-id="64cea-116">String</span></span>| <span data-ttu-id="64cea-117">只读。</span><span class="sxs-lookup"><span data-stu-id="64cea-117">Read-only.</span></span>|
-|<span data-ttu-id="64cea-118">objectId</span><span class="sxs-lookup"><span data-stu-id="64cea-118">objectId</span></span>|<span data-ttu-id="64cea-119">字符串</span><span class="sxs-lookup"><span data-stu-id="64cea-119">String</span></span>|<span data-ttu-id="64cea-120">主题的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="64cea-120">The object ID of the subject.</span></span>|
-|<span data-ttu-id="64cea-121">principalName</span><span class="sxs-lookup"><span data-stu-id="64cea-121">principalName</span></span>|<span data-ttu-id="64cea-122">String</span><span class="sxs-lookup"><span data-stu-id="64cea-122">String</span></span>|<span data-ttu-id="64cea-123">主题的主体名称（如果已知）。</span><span class="sxs-lookup"><span data-stu-id="64cea-123">The principal name, if known, of the subject.</span></span>|
-|<span data-ttu-id="64cea-124">type</span><span class="sxs-lookup"><span data-stu-id="64cea-124">type</span></span>|<span data-ttu-id="64cea-125">字符串</span><span class="sxs-lookup"><span data-stu-id="64cea-125">String</span></span>|<span data-ttu-id="64cea-126">主题的资源类型。</span><span class="sxs-lookup"><span data-stu-id="64cea-126">The resource type of the subject.</span></span>|
+|<span data-ttu-id="39562-110">displayName</span><span class="sxs-lookup"><span data-stu-id="39562-110">displayName</span></span>|<span data-ttu-id="39562-111">字符串</span><span class="sxs-lookup"><span data-stu-id="39562-111">String</span></span>|<span data-ttu-id="39562-112">主题的显示名称。</span><span class="sxs-lookup"><span data-stu-id="39562-112">The display name of the subject.</span></span>|
+|<span data-ttu-id="39562-113">email</span><span class="sxs-lookup"><span data-stu-id="39562-113">email</span></span>|<span data-ttu-id="39562-114">String</span><span class="sxs-lookup"><span data-stu-id="39562-114">String</span></span>|<span data-ttu-id="39562-115">主题的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="39562-115">The email address of the subject.</span></span>|
+|<span data-ttu-id="39562-116">id</span><span class="sxs-lookup"><span data-stu-id="39562-116">id</span></span>|<span data-ttu-id="39562-117">String</span><span class="sxs-lookup"><span data-stu-id="39562-117">String</span></span>| <span data-ttu-id="39562-118">只读。</span><span class="sxs-lookup"><span data-stu-id="39562-118">Read-only.</span></span>|
+|<span data-ttu-id="39562-119">objectId</span><span class="sxs-lookup"><span data-stu-id="39562-119">objectId</span></span>|<span data-ttu-id="39562-120">String</span><span class="sxs-lookup"><span data-stu-id="39562-120">String</span></span>|<span data-ttu-id="39562-121">主题的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="39562-121">The object ID of the subject.</span></span>|
+|<span data-ttu-id="39562-122">principalName</span><span class="sxs-lookup"><span data-stu-id="39562-122">principalName</span></span>|<span data-ttu-id="39562-123">String</span><span class="sxs-lookup"><span data-stu-id="39562-123">String</span></span>|<span data-ttu-id="39562-124">主题的主体名称（如果已知）。</span><span class="sxs-lookup"><span data-stu-id="39562-124">The principal name, if known, of the subject.</span></span>|
+|<span data-ttu-id="39562-125">type</span><span class="sxs-lookup"><span data-stu-id="39562-125">type</span></span>|<span data-ttu-id="39562-126">字符串</span><span class="sxs-lookup"><span data-stu-id="39562-126">String</span></span>|<span data-ttu-id="39562-127">主题的资源类型。</span><span class="sxs-lookup"><span data-stu-id="39562-127">The resource type of the subject.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="64cea-127">关系</span><span class="sxs-lookup"><span data-stu-id="64cea-127">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="39562-128">关系</span><span class="sxs-lookup"><span data-stu-id="39562-128">Relationships</span></span>
 
-<span data-ttu-id="64cea-128">无。</span><span class="sxs-lookup"><span data-stu-id="64cea-128">None.</span></span>
+<span data-ttu-id="39562-129">无。</span><span class="sxs-lookup"><span data-stu-id="39562-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="64cea-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="64cea-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="39562-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="39562-130">JSON representation</span></span>
 
-<span data-ttu-id="64cea-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="64cea-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="39562-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="39562-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
