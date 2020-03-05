@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 897152e79c0d2ad2c44e680ebe566da0f3b4f93c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf9c2d655f1d88ad67f1dd92ee6e6d1789adaa33
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368021"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525871"
 ---
-# <a name="settingsource-resource-type"></a><span data-ttu-id="23c7c-103">settingSource 资源类型</span><span class="sxs-lookup"><span data-stu-id="23c7c-103">settingSource resource type</span></span>
+# <a name="settingsource-resource-type"></a><span data-ttu-id="fe69a-103">settingSource 资源类型</span><span class="sxs-lookup"><span data-stu-id="fe69a-103">settingSource resource type</span></span>
 
-> <span data-ttu-id="23c7c-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="23c7c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="fe69a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="fe69a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="23c7c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="23c7c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fe69a-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fe69a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="23c7c-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="23c7c-106">Not yet documented</span></span>
+> <span data-ttu-id="fe69a-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fe69a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="23c7c-107">属性</span><span class="sxs-lookup"><span data-stu-id="23c7c-107">Properties</span></span>
-|<span data-ttu-id="23c7c-108">属性</span><span class="sxs-lookup"><span data-stu-id="23c7c-108">Property</span></span>|<span data-ttu-id="23c7c-109">类型</span><span class="sxs-lookup"><span data-stu-id="23c7c-109">Type</span></span>|<span data-ttu-id="23c7c-110">说明</span><span class="sxs-lookup"><span data-stu-id="23c7c-110">Description</span></span>|
+<span data-ttu-id="fe69a-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fe69a-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fe69a-108">属性</span><span class="sxs-lookup"><span data-stu-id="fe69a-108">Properties</span></span>
+|<span data-ttu-id="fe69a-109">属性</span><span class="sxs-lookup"><span data-stu-id="fe69a-109">Property</span></span>|<span data-ttu-id="fe69a-110">类型</span><span class="sxs-lookup"><span data-stu-id="fe69a-110">Type</span></span>|<span data-ttu-id="fe69a-111">说明</span><span class="sxs-lookup"><span data-stu-id="fe69a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="23c7c-111">id</span><span class="sxs-lookup"><span data-stu-id="23c7c-111">id</span></span>|<span data-ttu-id="23c7c-112">String</span><span class="sxs-lookup"><span data-stu-id="23c7c-112">String</span></span>|<span data-ttu-id="23c7c-113">尚未记录</span><span class="sxs-lookup"><span data-stu-id="23c7c-113">Not yet documented</span></span>|
-|<span data-ttu-id="23c7c-114">displayName</span><span class="sxs-lookup"><span data-stu-id="23c7c-114">displayName</span></span>|<span data-ttu-id="23c7c-115">String</span><span class="sxs-lookup"><span data-stu-id="23c7c-115">String</span></span>|<span data-ttu-id="23c7c-116">尚未记录</span><span class="sxs-lookup"><span data-stu-id="23c7c-116">Not yet documented</span></span>|
+|<span data-ttu-id="fe69a-112">id</span><span class="sxs-lookup"><span data-stu-id="fe69a-112">id</span></span>|<span data-ttu-id="fe69a-113">String</span><span class="sxs-lookup"><span data-stu-id="fe69a-113">String</span></span>|<span data-ttu-id="fe69a-114">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fe69a-114">Not yet documented</span></span>|
+|<span data-ttu-id="fe69a-115">displayName</span><span class="sxs-lookup"><span data-stu-id="fe69a-115">displayName</span></span>|<span data-ttu-id="fe69a-116">String</span><span class="sxs-lookup"><span data-stu-id="fe69a-116">String</span></span>|<span data-ttu-id="fe69a-117">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fe69a-117">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="23c7c-117">关系</span><span class="sxs-lookup"><span data-stu-id="23c7c-117">Relationships</span></span>
-<span data-ttu-id="23c7c-118">无</span><span class="sxs-lookup"><span data-stu-id="23c7c-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="fe69a-118">关系</span><span class="sxs-lookup"><span data-stu-id="fe69a-118">Relationships</span></span>
+<span data-ttu-id="fe69a-119">无</span><span class="sxs-lookup"><span data-stu-id="fe69a-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="23c7c-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="23c7c-119">JSON Representation</span></span>
-<span data-ttu-id="23c7c-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23c7c-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fe69a-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fe69a-120">JSON Representation</span></span>
+<span data-ttu-id="fe69a-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fe69a-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.settingSource"

@@ -5,29 +5,31 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d17117880cf736870d2728a9666af689a4296d04
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: db672c21aafceab08cf1825199686f9c9a1070e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913294"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522769"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="3c51a-103">mediaInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="3c51a-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="201c1-103">mediaInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="201c1-103">mediaInfo resource type</span></span>
+
+<span data-ttu-id="201c1-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="201c1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3c51a-104">在提示操作中使用的媒体信息。</span><span class="sxs-lookup"><span data-stu-id="3c51a-104">The media information used in actions for prompts.</span></span>
+<span data-ttu-id="201c1-105">在提示操作中使用的媒体信息。</span><span class="sxs-lookup"><span data-stu-id="201c1-105">The media information used in actions for prompts.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3c51a-105">属性</span><span class="sxs-lookup"><span data-stu-id="3c51a-105">Properties</span></span>
-| <span data-ttu-id="3c51a-106">属性</span><span class="sxs-lookup"><span data-stu-id="3c51a-106">Property</span></span>       | <span data-ttu-id="3c51a-107">类型</span><span class="sxs-lookup"><span data-stu-id="3c51a-107">Type</span></span>    | <span data-ttu-id="3c51a-108">说明</span><span class="sxs-lookup"><span data-stu-id="3c51a-108">Description</span></span>                      |
+## <a name="properties"></a><span data-ttu-id="201c1-106">属性</span><span class="sxs-lookup"><span data-stu-id="201c1-106">Properties</span></span>
+| <span data-ttu-id="201c1-107">属性</span><span class="sxs-lookup"><span data-stu-id="201c1-107">Property</span></span>       | <span data-ttu-id="201c1-108">类型</span><span class="sxs-lookup"><span data-stu-id="201c1-108">Type</span></span>    | <span data-ttu-id="201c1-109">说明</span><span class="sxs-lookup"><span data-stu-id="201c1-109">Description</span></span>                      |
 |:---------------|:--------|:---------------------------------|
-| <span data-ttu-id="3c51a-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="3c51a-109">resourceId</span></span>     | <span data-ttu-id="3c51a-110">String</span><span class="sxs-lookup"><span data-stu-id="3c51a-110">String</span></span>  | <span data-ttu-id="3c51a-111">可选，用于唯一标识资源。</span><span class="sxs-lookup"><span data-stu-id="3c51a-111">Optional, used to uniquely identity the resource.</span></span> <span data-ttu-id="3c51a-112">如果传递了提示 uri，则会将此 resourceId 作为密钥进行缓存。</span><span class="sxs-lookup"><span data-stu-id="3c51a-112">If passed the prompt uri will be cached against this resourceId as key.</span></span> |
-| <span data-ttu-id="3c51a-113">url</span><span class="sxs-lookup"><span data-stu-id="3c51a-113">uri</span></span>            | <span data-ttu-id="3c51a-114">String</span><span class="sxs-lookup"><span data-stu-id="3c51a-114">String</span></span>  | <span data-ttu-id="3c51a-115">要播放的提示的路径。</span><span class="sxs-lookup"><span data-stu-id="3c51a-115">Path to the prompt to be played.</span></span> <span data-ttu-id="3c51a-116">目前仅支持带有16000（16KHz）采样速率的波形文件（.wav）格式的单通道、16位样本。</span><span class="sxs-lookup"><span data-stu-id="3c51a-116">Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate is only supported.</span></span> |
+| <span data-ttu-id="201c1-110">resourceId</span><span class="sxs-lookup"><span data-stu-id="201c1-110">resourceId</span></span>     | <span data-ttu-id="201c1-111">String</span><span class="sxs-lookup"><span data-stu-id="201c1-111">String</span></span>  | <span data-ttu-id="201c1-112">可选，用于唯一标识资源。</span><span class="sxs-lookup"><span data-stu-id="201c1-112">Optional, used to uniquely identity the resource.</span></span> <span data-ttu-id="201c1-113">如果传递了提示 uri，则会将此 resourceId 作为密钥进行缓存。</span><span class="sxs-lookup"><span data-stu-id="201c1-113">If passed the prompt uri will be cached against this resourceId as key.</span></span> |
+| <span data-ttu-id="201c1-114">url</span><span class="sxs-lookup"><span data-stu-id="201c1-114">uri</span></span>            | <span data-ttu-id="201c1-115">String</span><span class="sxs-lookup"><span data-stu-id="201c1-115">String</span></span>  | <span data-ttu-id="201c1-116">要播放的提示的路径。</span><span class="sxs-lookup"><span data-stu-id="201c1-116">Path to the prompt to be played.</span></span> <span data-ttu-id="201c1-117">目前仅支持带有16000（16KHz）采样速率的波形文件（.wav）格式的单通道、16位样本。</span><span class="sxs-lookup"><span data-stu-id="201c1-117">Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate is only supported.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="3c51a-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3c51a-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="201c1-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="201c1-118">JSON representation</span></span>
 
-<span data-ttu-id="3c51a-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3c51a-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="201c1-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="201c1-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

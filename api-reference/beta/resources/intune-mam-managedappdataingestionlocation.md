@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3bc5d531910af33af5c45d913c6f2ee827b0bd8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 64b8adf3aa82575db53472f047f8f4145ce32535
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524334"
 ---
-# <a name="managedappdataingestionlocation-enum-type"></a><span data-ttu-id="30242-103">managedAppDataIngestionLocation 枚举类型</span><span class="sxs-lookup"><span data-stu-id="30242-103">managedAppDataIngestionLocation enum type</span></span>
+# <a name="managedappdataingestionlocation-enum-type"></a><span data-ttu-id="e0cae-103">managedAppDataIngestionLocation 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e0cae-103">managedAppDataIngestionLocation enum type</span></span>
 
-> <span data-ttu-id="30242-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="30242-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e0cae-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e0cae-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="30242-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="30242-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e0cae-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e0cae-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="30242-106">可用于将数据导入到组织文档中的位置</span><span class="sxs-lookup"><span data-stu-id="30242-106">Locations which can be used to bring data into organization documents</span></span>
+> <span data-ttu-id="e0cae-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e0cae-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="30242-107">成员</span><span class="sxs-lookup"><span data-stu-id="30242-107">Members</span></span>
-|<span data-ttu-id="30242-108">成员</span><span class="sxs-lookup"><span data-stu-id="30242-108">Member</span></span>|<span data-ttu-id="30242-109">值</span><span class="sxs-lookup"><span data-stu-id="30242-109">Value</span></span>|<span data-ttu-id="30242-110">说明</span><span class="sxs-lookup"><span data-stu-id="30242-110">Description</span></span>|
+<span data-ttu-id="e0cae-107">可用于将数据导入到组织文档中的位置</span><span class="sxs-lookup"><span data-stu-id="e0cae-107">Locations which can be used to bring data into organization documents</span></span>
+
+## <a name="members"></a><span data-ttu-id="e0cae-108">成员</span><span class="sxs-lookup"><span data-stu-id="e0cae-108">Members</span></span>
+|<span data-ttu-id="e0cae-109">成员</span><span class="sxs-lookup"><span data-stu-id="e0cae-109">Member</span></span>|<span data-ttu-id="e0cae-110">值</span><span class="sxs-lookup"><span data-stu-id="e0cae-110">Value</span></span>|<span data-ttu-id="e0cae-111">说明</span><span class="sxs-lookup"><span data-stu-id="e0cae-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="30242-111">oneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="30242-111">oneDriveForBusiness</span></span>|<span data-ttu-id="30242-112">1</span><span class="sxs-lookup"><span data-stu-id="30242-112">1</span></span>|<span data-ttu-id="30242-113">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="30242-113">OneDrive for business</span></span>|
-|<span data-ttu-id="30242-114">sharePoint</span><span class="sxs-lookup"><span data-stu-id="30242-114">sharePoint</span></span>|<span data-ttu-id="30242-115">双面</span><span class="sxs-lookup"><span data-stu-id="30242-115">2</span></span>|<span data-ttu-id="30242-116">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="30242-116">SharePoint Online</span></span>|
-|<span data-ttu-id="30242-117">拍照</span><span class="sxs-lookup"><span data-stu-id="30242-117">camera</span></span>|<span data-ttu-id="30242-118">第三章</span><span class="sxs-lookup"><span data-stu-id="30242-118">3</span></span>|<span data-ttu-id="30242-119">设备的照相机</span><span class="sxs-lookup"><span data-stu-id="30242-119">The device's camera</span></span>|
+|<span data-ttu-id="e0cae-112">oneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="e0cae-112">oneDriveForBusiness</span></span>|<span data-ttu-id="e0cae-113">1 </span><span class="sxs-lookup"><span data-stu-id="e0cae-113">1</span></span>|<span data-ttu-id="e0cae-114">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="e0cae-114">OneDrive for business</span></span>|
+|<span data-ttu-id="e0cae-115">sharePoint</span><span class="sxs-lookup"><span data-stu-id="e0cae-115">sharePoint</span></span>|<span data-ttu-id="e0cae-116">2 </span><span class="sxs-lookup"><span data-stu-id="e0cae-116">2</span></span>|<span data-ttu-id="e0cae-117">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="e0cae-117">SharePoint Online</span></span>|
+|<span data-ttu-id="e0cae-118">拍照</span><span class="sxs-lookup"><span data-stu-id="e0cae-118">camera</span></span>|<span data-ttu-id="e0cae-119">3 </span><span class="sxs-lookup"><span data-stu-id="e0cae-119">3</span></span>|<span data-ttu-id="e0cae-120">设备的照相机</span><span class="sxs-lookup"><span data-stu-id="e0cae-120">The device's camera</span></span>|
 
 
 

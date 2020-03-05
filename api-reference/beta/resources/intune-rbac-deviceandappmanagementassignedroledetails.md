@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89f864da336045622af0e59a94fb14d0132872db
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 17a2313b60d4cf843e5b048821a58748c8eb27ca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308188"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523912"
 ---
-# <a name="deviceandappmanagementassignedroledetails-resource-type"></a><span data-ttu-id="887db-103">deviceAndAppManagementAssignedRoleDetails 资源类型</span><span class="sxs-lookup"><span data-stu-id="887db-103">deviceAndAppManagementAssignedRoleDetails resource type</span></span>
+# <a name="deviceandappmanagementassignedroledetails-resource-type"></a><span data-ttu-id="4fa18-103">deviceAndAppManagementAssignedRoleDetails 资源类型</span><span class="sxs-lookup"><span data-stu-id="4fa18-103">deviceAndAppManagementAssignedRoleDetails resource type</span></span>
 
-> <span data-ttu-id="887db-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="887db-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4fa18-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="4fa18-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="887db-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="887db-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4fa18-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4fa18-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="887db-106">分配给用户的角色定义和角色分配的集合。</span><span class="sxs-lookup"><span data-stu-id="887db-106">The set of Role Definitions and Role Assignments assigned to a user.</span></span>
+> <span data-ttu-id="4fa18-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4fa18-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="887db-107">属性</span><span class="sxs-lookup"><span data-stu-id="887db-107">Properties</span></span>
-|<span data-ttu-id="887db-108">属性</span><span class="sxs-lookup"><span data-stu-id="887db-108">Property</span></span>|<span data-ttu-id="887db-109">类型</span><span class="sxs-lookup"><span data-stu-id="887db-109">Type</span></span>|<span data-ttu-id="887db-110">说明</span><span class="sxs-lookup"><span data-stu-id="887db-110">Description</span></span>|
+<span data-ttu-id="4fa18-107">分配给用户的角色定义和角色分配的集合。</span><span class="sxs-lookup"><span data-stu-id="4fa18-107">The set of Role Definitions and Role Assignments assigned to a user.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="4fa18-108">属性</span><span class="sxs-lookup"><span data-stu-id="4fa18-108">Properties</span></span>
+|<span data-ttu-id="4fa18-109">属性</span><span class="sxs-lookup"><span data-stu-id="4fa18-109">Property</span></span>|<span data-ttu-id="4fa18-110">类型</span><span class="sxs-lookup"><span data-stu-id="4fa18-110">Type</span></span>|<span data-ttu-id="4fa18-111">说明</span><span class="sxs-lookup"><span data-stu-id="4fa18-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="887db-111">roleDefinitionIds</span><span class="sxs-lookup"><span data-stu-id="887db-111">roleDefinitionIds</span></span>|<span data-ttu-id="887db-112">String collection</span><span class="sxs-lookup"><span data-stu-id="887db-112">String collection</span></span>|<span data-ttu-id="887db-113">分配给用户的表列角色定义的角色定义 Id。</span><span class="sxs-lookup"><span data-stu-id="887db-113">Role Definition IDs for the specifc Role Definitions assigned to a user.</span></span>|
-|<span data-ttu-id="887db-114">roleAssignmentIds</span><span class="sxs-lookup"><span data-stu-id="887db-114">roleAssignmentIds</span></span>|<span data-ttu-id="887db-115">String collection</span><span class="sxs-lookup"><span data-stu-id="887db-115">String collection</span></span>|<span data-ttu-id="887db-116">分配给用户的表列角色分配的角色分配 Id。</span><span class="sxs-lookup"><span data-stu-id="887db-116">Role Assignment IDs for the specifc Role Assignments assigned to a user.</span></span>|
+|<span data-ttu-id="4fa18-112">roleDefinitionIds</span><span class="sxs-lookup"><span data-stu-id="4fa18-112">roleDefinitionIds</span></span>|<span data-ttu-id="4fa18-113">String 集合</span><span class="sxs-lookup"><span data-stu-id="4fa18-113">String collection</span></span>|<span data-ttu-id="4fa18-114">分配给用户的表列角色定义的角色定义 Id。</span><span class="sxs-lookup"><span data-stu-id="4fa18-114">Role Definition IDs for the specifc Role Definitions assigned to a user.</span></span>|
+|<span data-ttu-id="4fa18-115">roleAssignmentIds</span><span class="sxs-lookup"><span data-stu-id="4fa18-115">roleAssignmentIds</span></span>|<span data-ttu-id="4fa18-116">String 集合</span><span class="sxs-lookup"><span data-stu-id="4fa18-116">String collection</span></span>|<span data-ttu-id="4fa18-117">分配给用户的表列角色分配的角色分配 Id。</span><span class="sxs-lookup"><span data-stu-id="4fa18-117">Role Assignment IDs for the specifc Role Assignments assigned to a user.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="887db-117">关系</span><span class="sxs-lookup"><span data-stu-id="887db-117">Relationships</span></span>
-<span data-ttu-id="887db-118">无</span><span class="sxs-lookup"><span data-stu-id="887db-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4fa18-118">关系</span><span class="sxs-lookup"><span data-stu-id="4fa18-118">Relationships</span></span>
+<span data-ttu-id="4fa18-119">无</span><span class="sxs-lookup"><span data-stu-id="4fa18-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="887db-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="887db-119">JSON Representation</span></span>
-<span data-ttu-id="887db-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="887db-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4fa18-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4fa18-120">JSON Representation</span></span>
+<span data-ttu-id="4fa18-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4fa18-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignedRoleDetails"

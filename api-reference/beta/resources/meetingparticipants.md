@@ -5,31 +5,33 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 66bb521ae9a2222b5ea60709ac3687da930161d6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 38071e4ab18127ca8f49b4ef4befdfafbf4c7e04
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913553"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522720"
 ---
-# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="3dbf5-103">meetingParticipants 资源类型</span><span class="sxs-lookup"><span data-stu-id="3dbf5-103">meetingParticipants resource type</span></span>
+# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="e60ce-103">meetingParticipants 资源类型</span><span class="sxs-lookup"><span data-stu-id="e60ce-103">meetingParticipants resource type</span></span>
+
+<span data-ttu-id="e60ce-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e60ce-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3dbf5-104">会议中的参与者。</span><span class="sxs-lookup"><span data-stu-id="3dbf5-104">Participants in a meeting.</span></span>
+<span data-ttu-id="e60ce-105">会议中的参与者。</span><span class="sxs-lookup"><span data-stu-id="e60ce-105">Participants in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3dbf5-105">属性</span><span class="sxs-lookup"><span data-stu-id="3dbf5-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e60ce-106">属性</span><span class="sxs-lookup"><span data-stu-id="e60ce-106">Properties</span></span>
 
-| <span data-ttu-id="3dbf5-106">属性</span><span class="sxs-lookup"><span data-stu-id="3dbf5-106">Property</span></span>       | <span data-ttu-id="3dbf5-107">类型</span><span class="sxs-lookup"><span data-stu-id="3dbf5-107">Type</span></span>    | <span data-ttu-id="3dbf5-108">说明</span><span class="sxs-lookup"><span data-stu-id="3dbf5-108">Description</span></span>|
+| <span data-ttu-id="e60ce-107">属性</span><span class="sxs-lookup"><span data-stu-id="e60ce-107">Property</span></span>       | <span data-ttu-id="e60ce-108">类型</span><span class="sxs-lookup"><span data-stu-id="e60ce-108">Type</span></span>    | <span data-ttu-id="e60ce-109">说明</span><span class="sxs-lookup"><span data-stu-id="e60ce-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3dbf5-109">attendees</span><span class="sxs-lookup"><span data-stu-id="3dbf5-109">attendees</span></span> | <span data-ttu-id="3dbf5-110">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="3dbf5-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
-| <span data-ttu-id="3dbf5-111">organizer － 组织者</span><span class="sxs-lookup"><span data-stu-id="3dbf5-111">organizer</span></span> | [<span data-ttu-id="3dbf5-112">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="3dbf5-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
-| <span data-ttu-id="3dbf5-113">创建器</span><span class="sxs-lookup"><span data-stu-id="3dbf5-113">producers</span></span> | <span data-ttu-id="3dbf5-114">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="3dbf5-114">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="3dbf5-115">仅适用于广播会议。</span><span class="sxs-lookup"><span data-stu-id="3dbf5-115">For broadcast meeting only.</span></span> |
-| <span data-ttu-id="3dbf5-116">参与者</span><span class="sxs-lookup"><span data-stu-id="3dbf5-116">contributors</span></span> | <span data-ttu-id="3dbf5-117">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="3dbf5-117">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="3dbf5-118">仅适用于广播会议。</span><span class="sxs-lookup"><span data-stu-id="3dbf5-118">For broadcast meeting only.</span></span> |
+| <span data-ttu-id="e60ce-110">attendees</span><span class="sxs-lookup"><span data-stu-id="e60ce-110">attendees</span></span> | <span data-ttu-id="e60ce-111">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="e60ce-111">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
+| <span data-ttu-id="e60ce-112">组织者</span><span class="sxs-lookup"><span data-stu-id="e60ce-112">organizer</span></span> | [<span data-ttu-id="e60ce-113">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="e60ce-113">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
+| <span data-ttu-id="e60ce-114">创建器</span><span class="sxs-lookup"><span data-stu-id="e60ce-114">producers</span></span> | <span data-ttu-id="e60ce-115">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="e60ce-115">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="e60ce-116">仅适用于广播会议。</span><span class="sxs-lookup"><span data-stu-id="e60ce-116">For broadcast meeting only.</span></span> |
+| <span data-ttu-id="e60ce-117">参与者</span><span class="sxs-lookup"><span data-stu-id="e60ce-117">contributors</span></span> | <span data-ttu-id="e60ce-118">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="e60ce-118">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="e60ce-119">仅适用于广播会议。</span><span class="sxs-lookup"><span data-stu-id="e60ce-119">For broadcast meeting only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3dbf5-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3dbf5-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e60ce-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e60ce-120">JSON representation</span></span>
 
-<span data-ttu-id="3dbf5-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3dbf5-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e60ce-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e60ce-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

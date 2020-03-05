@@ -5,33 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b00d3df68ad0d6cf13d9b4f4a5cff541aa33893a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 20a52b813de13b51fcf94a93fa440337e7123f02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368427"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525955"
 ---
-# <a name="operatingsystemversionrange-resource-type"></a><span data-ttu-id="c9064-103">operatingSystemVersionRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="c9064-103">operatingSystemVersionRange resource type</span></span>
+# <a name="operatingsystemversionrange-resource-type"></a><span data-ttu-id="8e096-103">operatingSystemVersionRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="8e096-103">operatingSystemVersionRange resource type</span></span>
 
-> <span data-ttu-id="c9064-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c9064-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="8e096-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="8e096-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c9064-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c9064-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8e096-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8e096-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="c9064-106">操作系统版本范围。</span><span class="sxs-lookup"><span data-stu-id="c9064-106">Operating System version range.</span></span>
+> <span data-ttu-id="8e096-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8e096-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c9064-107">属性</span><span class="sxs-lookup"><span data-stu-id="c9064-107">Properties</span></span>
-|<span data-ttu-id="c9064-108">属性</span><span class="sxs-lookup"><span data-stu-id="c9064-108">Property</span></span>|<span data-ttu-id="c9064-109">类型</span><span class="sxs-lookup"><span data-stu-id="c9064-109">Type</span></span>|<span data-ttu-id="c9064-110">说明</span><span class="sxs-lookup"><span data-stu-id="c9064-110">Description</span></span>|
+<span data-ttu-id="8e096-107">操作系统版本范围。</span><span class="sxs-lookup"><span data-stu-id="8e096-107">Operating System version range.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="8e096-108">属性</span><span class="sxs-lookup"><span data-stu-id="8e096-108">Properties</span></span>
+|<span data-ttu-id="8e096-109">属性</span><span class="sxs-lookup"><span data-stu-id="8e096-109">Property</span></span>|<span data-ttu-id="8e096-110">类型</span><span class="sxs-lookup"><span data-stu-id="8e096-110">Type</span></span>|<span data-ttu-id="8e096-111">说明</span><span class="sxs-lookup"><span data-stu-id="8e096-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c9064-111">说明</span><span class="sxs-lookup"><span data-stu-id="c9064-111">description</span></span>|<span data-ttu-id="c9064-112">String</span><span class="sxs-lookup"><span data-stu-id="c9064-112">String</span></span>|<span data-ttu-id="c9064-113">此范围的说明 (例如, 有效的1702版本)</span><span class="sxs-lookup"><span data-stu-id="c9064-113">The description of this range (e.g. Valid 1702 builds)</span></span>|
-|<span data-ttu-id="c9064-114">lowestVersion</span><span class="sxs-lookup"><span data-stu-id="c9064-114">lowestVersion</span></span>|<span data-ttu-id="c9064-115">String</span><span class="sxs-lookup"><span data-stu-id="c9064-115">String</span></span>|<span data-ttu-id="c9064-116">此范围包含的最低包含版本。</span><span class="sxs-lookup"><span data-stu-id="c9064-116">The lowest inclusive version that this range contains.</span></span>|
-|<span data-ttu-id="c9064-117">highestVersion</span><span class="sxs-lookup"><span data-stu-id="c9064-117">highestVersion</span></span>|<span data-ttu-id="c9064-118">String</span><span class="sxs-lookup"><span data-stu-id="c9064-118">String</span></span>|<span data-ttu-id="c9064-119">此范围包含的最高包含版本。</span><span class="sxs-lookup"><span data-stu-id="c9064-119">The highest inclusive version that this range contains.</span></span>|
+|<span data-ttu-id="8e096-112">说明</span><span class="sxs-lookup"><span data-stu-id="8e096-112">description</span></span>|<span data-ttu-id="8e096-113">String</span><span class="sxs-lookup"><span data-stu-id="8e096-113">String</span></span>|<span data-ttu-id="8e096-114">此范围的说明（例如，有效的1702版本）</span><span class="sxs-lookup"><span data-stu-id="8e096-114">The description of this range (e.g. Valid 1702 builds)</span></span>|
+|<span data-ttu-id="8e096-115">lowestVersion</span><span class="sxs-lookup"><span data-stu-id="8e096-115">lowestVersion</span></span>|<span data-ttu-id="8e096-116">String</span><span class="sxs-lookup"><span data-stu-id="8e096-116">String</span></span>|<span data-ttu-id="8e096-117">此范围包含的最低包含版本。</span><span class="sxs-lookup"><span data-stu-id="8e096-117">The lowest inclusive version that this range contains.</span></span>|
+|<span data-ttu-id="8e096-118">highestVersion</span><span class="sxs-lookup"><span data-stu-id="8e096-118">highestVersion</span></span>|<span data-ttu-id="8e096-119">String</span><span class="sxs-lookup"><span data-stu-id="8e096-119">String</span></span>|<span data-ttu-id="8e096-120">此范围包含的最高包含版本。</span><span class="sxs-lookup"><span data-stu-id="8e096-120">The highest inclusive version that this range contains.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c9064-120">关系</span><span class="sxs-lookup"><span data-stu-id="c9064-120">Relationships</span></span>
-<span data-ttu-id="c9064-121">无</span><span class="sxs-lookup"><span data-stu-id="c9064-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8e096-121">关系</span><span class="sxs-lookup"><span data-stu-id="8e096-121">Relationships</span></span>
+<span data-ttu-id="8e096-122">无</span><span class="sxs-lookup"><span data-stu-id="8e096-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c9064-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c9064-122">JSON Representation</span></span>
-<span data-ttu-id="c9064-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c9064-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8e096-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8e096-123">JSON Representation</span></span>
+<span data-ttu-id="8e096-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8e096-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.operatingSystemVersionRange"

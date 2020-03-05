@@ -5,33 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab1b47ac9371c0a0806ff03e18bf9cc7eed577f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b672eedb8b8efad168f59d54938322f81ef11977
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369463"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525136"
 ---
-# <a name="configurationmanagerclienthealthstate-resource-type"></a><span data-ttu-id="cafeb-103">configurationManagerClientHealthState 资源类型</span><span class="sxs-lookup"><span data-stu-id="cafeb-103">configurationManagerClientHealthState resource type</span></span>
+# <a name="configurationmanagerclienthealthstate-resource-type"></a><span data-ttu-id="c14be-103">configurationManagerClientHealthState 资源类型</span><span class="sxs-lookup"><span data-stu-id="c14be-103">configurationManagerClientHealthState resource type</span></span>
 
-> <span data-ttu-id="cafeb-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cafeb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="c14be-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c14be-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="cafeb-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cafeb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c14be-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c14be-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="cafeb-106">配置管理器客户端运行状况</span><span class="sxs-lookup"><span data-stu-id="cafeb-106">Configuration manager client health state</span></span>
+> <span data-ttu-id="c14be-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c14be-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cafeb-107">属性</span><span class="sxs-lookup"><span data-stu-id="cafeb-107">Properties</span></span>
-|<span data-ttu-id="cafeb-108">属性</span><span class="sxs-lookup"><span data-stu-id="cafeb-108">Property</span></span>|<span data-ttu-id="cafeb-109">类型</span><span class="sxs-lookup"><span data-stu-id="cafeb-109">Type</span></span>|<span data-ttu-id="cafeb-110">说明</span><span class="sxs-lookup"><span data-stu-id="cafeb-110">Description</span></span>|
+<span data-ttu-id="c14be-107">配置管理器客户端运行状况</span><span class="sxs-lookup"><span data-stu-id="c14be-107">Configuration manager client health state</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c14be-108">属性</span><span class="sxs-lookup"><span data-stu-id="c14be-108">Properties</span></span>
+|<span data-ttu-id="c14be-109">属性</span><span class="sxs-lookup"><span data-stu-id="c14be-109">Property</span></span>|<span data-ttu-id="c14be-110">类型</span><span class="sxs-lookup"><span data-stu-id="c14be-110">Type</span></span>|<span data-ttu-id="c14be-111">说明</span><span class="sxs-lookup"><span data-stu-id="c14be-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cafeb-111">state</span><span class="sxs-lookup"><span data-stu-id="cafeb-111">state</span></span>|[<span data-ttu-id="cafeb-112">configurationManagerClientState</span><span class="sxs-lookup"><span data-stu-id="cafeb-112">configurationManagerClientState</span></span>](../resources/intune-devices-configurationmanagerclientstate.md)|<span data-ttu-id="cafeb-113">当前配置管理器客户端状态。</span><span class="sxs-lookup"><span data-stu-id="cafeb-113">Current configuration manager client state.</span></span> <span data-ttu-id="cafeb-114">可取值为：`unknown`、`installed`、`healthy`、`installFailed`、`updateFailed`、`communicationError`。</span><span class="sxs-lookup"><span data-stu-id="cafeb-114">Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.</span></span>|
-|<span data-ttu-id="cafeb-115">errorCode</span><span class="sxs-lookup"><span data-stu-id="cafeb-115">errorCode</span></span>|<span data-ttu-id="cafeb-116">Int32</span><span class="sxs-lookup"><span data-stu-id="cafeb-116">Int32</span></span>|<span data-ttu-id="cafeb-117">失败状态的错误代码。</span><span class="sxs-lookup"><span data-stu-id="cafeb-117">Error code for failed state.</span></span>|
-|<span data-ttu-id="cafeb-118">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="cafeb-118">lastSyncDateTime</span></span>|<span data-ttu-id="cafeb-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cafeb-119">DateTimeOffset</span></span>|<span data-ttu-id="cafeb-120">上次与 configuration manager 管理点同步的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="cafeb-120">Datetime fo last sync with configuration manager management point.</span></span>|
+|<span data-ttu-id="c14be-112">state</span><span class="sxs-lookup"><span data-stu-id="c14be-112">state</span></span>|[<span data-ttu-id="c14be-113">configurationManagerClientState</span><span class="sxs-lookup"><span data-stu-id="c14be-113">configurationManagerClientState</span></span>](../resources/intune-devices-configurationmanagerclientstate.md)|<span data-ttu-id="c14be-114">当前配置管理器客户端状态。</span><span class="sxs-lookup"><span data-stu-id="c14be-114">Current configuration manager client state.</span></span> <span data-ttu-id="c14be-115">可取值为：`unknown`、`installed`、`healthy`、`installFailed`、`updateFailed`、`communicationError`。</span><span class="sxs-lookup"><span data-stu-id="c14be-115">Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.</span></span>|
+|<span data-ttu-id="c14be-116">errorCode</span><span class="sxs-lookup"><span data-stu-id="c14be-116">errorCode</span></span>|<span data-ttu-id="c14be-117">Int32</span><span class="sxs-lookup"><span data-stu-id="c14be-117">Int32</span></span>|<span data-ttu-id="c14be-118">失败状态的错误代码。</span><span class="sxs-lookup"><span data-stu-id="c14be-118">Error code for failed state.</span></span>|
+|<span data-ttu-id="c14be-119">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="c14be-119">lastSyncDateTime</span></span>|<span data-ttu-id="c14be-120">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c14be-120">DateTimeOffset</span></span>|<span data-ttu-id="c14be-121">上次与 configuration manager 管理点同步的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="c14be-121">Datetime fo last sync with configuration manager management point.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="cafeb-121">关系</span><span class="sxs-lookup"><span data-stu-id="cafeb-121">Relationships</span></span>
-<span data-ttu-id="cafeb-122">无</span><span class="sxs-lookup"><span data-stu-id="cafeb-122">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c14be-122">关系</span><span class="sxs-lookup"><span data-stu-id="c14be-122">Relationships</span></span>
+<span data-ttu-id="c14be-123">无</span><span class="sxs-lookup"><span data-stu-id="c14be-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cafeb-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cafeb-123">JSON Representation</span></span>
-<span data-ttu-id="cafeb-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cafeb-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c14be-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c14be-124">JSON Representation</span></span>
+<span data-ttu-id="c14be-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c14be-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerClientHealthState"

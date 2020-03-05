@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eb16e39eff186ad8adae88532aef0b626ace2128
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3aac973d2a24cc0c96b3d05a762ef0373eb995ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337928"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525696"
 ---
-# <a name="windows10appsupdaterecurrence-enum-type"></a><span data-ttu-id="e978d-103">windows10AppsUpdateRecurrence 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e978d-103">windows10AppsUpdateRecurrence enum type</span></span>
+# <a name="windows10appsupdaterecurrence-enum-type"></a><span data-ttu-id="aa753-103">windows10AppsUpdateRecurrence 枚举类型</span><span class="sxs-lookup"><span data-stu-id="aa753-103">windows10AppsUpdateRecurrence enum type</span></span>
 
-> <span data-ttu-id="e978d-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e978d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="aa753-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="aa753-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e978d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e978d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aa753-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="aa753-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="e978d-106">Windows10 定期应用更新的可能值。</span><span class="sxs-lookup"><span data-stu-id="e978d-106">Possible values for App update on Windows10 recurrence.</span></span>
+> <span data-ttu-id="aa753-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="aa753-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e978d-107">成员</span><span class="sxs-lookup"><span data-stu-id="e978d-107">Members</span></span>
-|<span data-ttu-id="e978d-108">成员</span><span class="sxs-lookup"><span data-stu-id="e978d-108">Member</span></span>|<span data-ttu-id="e978d-109">值</span><span class="sxs-lookup"><span data-stu-id="e978d-109">Value</span></span>|<span data-ttu-id="e978d-110">说明</span><span class="sxs-lookup"><span data-stu-id="e978d-110">Description</span></span>|
+<span data-ttu-id="aa753-107">Windows10 定期应用更新的可能值。</span><span class="sxs-lookup"><span data-stu-id="aa753-107">Possible values for App update on Windows10 recurrence.</span></span>
+
+## <a name="members"></a><span data-ttu-id="aa753-108">成员</span><span class="sxs-lookup"><span data-stu-id="aa753-108">Members</span></span>
+|<span data-ttu-id="aa753-109">成员</span><span class="sxs-lookup"><span data-stu-id="aa753-109">Member</span></span>|<span data-ttu-id="aa753-110">值</span><span class="sxs-lookup"><span data-stu-id="aa753-110">Value</span></span>|<span data-ttu-id="aa753-111">说明</span><span class="sxs-lookup"><span data-stu-id="aa753-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e978d-111">无</span><span class="sxs-lookup"><span data-stu-id="e978d-111">none</span></span>|<span data-ttu-id="e978d-112">0</span><span class="sxs-lookup"><span data-stu-id="e978d-112">0</span></span>|<span data-ttu-id="e978d-113">默认值指定单个事件。</span><span class="sxs-lookup"><span data-stu-id="e978d-113">Default value, specifies a single occurence.</span></span>|
-|<span data-ttu-id="e978d-114">每日</span><span class="sxs-lookup"><span data-stu-id="e978d-114">daily</span></span>|<span data-ttu-id="e978d-115">1</span><span class="sxs-lookup"><span data-stu-id="e978d-115">1</span></span>|<span data-ttu-id="e978d-116">每日.</span><span class="sxs-lookup"><span data-stu-id="e978d-116">Daily.</span></span>|
-|<span data-ttu-id="e978d-117">周历</span><span class="sxs-lookup"><span data-stu-id="e978d-117">weekly</span></span>|<span data-ttu-id="e978d-118">双面</span><span class="sxs-lookup"><span data-stu-id="e978d-118">2</span></span>|<span data-ttu-id="e978d-119">周历.</span><span class="sxs-lookup"><span data-stu-id="e978d-119">Weekly.</span></span>|
-|<span data-ttu-id="e978d-120">还</span><span class="sxs-lookup"><span data-stu-id="e978d-120">monthly</span></span>|<span data-ttu-id="e978d-121">第三章</span><span class="sxs-lookup"><span data-stu-id="e978d-121">3</span></span>|<span data-ttu-id="e978d-122">还.</span><span class="sxs-lookup"><span data-stu-id="e978d-122">Monthly.</span></span>|
+|<span data-ttu-id="aa753-112">无</span><span class="sxs-lookup"><span data-stu-id="aa753-112">none</span></span>|<span data-ttu-id="aa753-113">0</span><span class="sxs-lookup"><span data-stu-id="aa753-113">0</span></span>|<span data-ttu-id="aa753-114">默认值指定单个事件。</span><span class="sxs-lookup"><span data-stu-id="aa753-114">Default value, specifies a single occurence.</span></span>|
+|<span data-ttu-id="aa753-115">每日</span><span class="sxs-lookup"><span data-stu-id="aa753-115">daily</span></span>|<span data-ttu-id="aa753-116">1 </span><span class="sxs-lookup"><span data-stu-id="aa753-116">1</span></span>|<span data-ttu-id="aa753-117">每日.</span><span class="sxs-lookup"><span data-stu-id="aa753-117">Daily.</span></span>|
+|<span data-ttu-id="aa753-118">周历</span><span class="sxs-lookup"><span data-stu-id="aa753-118">weekly</span></span>|<span data-ttu-id="aa753-119">2 </span><span class="sxs-lookup"><span data-stu-id="aa753-119">2</span></span>|<span data-ttu-id="aa753-120">周历.</span><span class="sxs-lookup"><span data-stu-id="aa753-120">Weekly.</span></span>|
+|<span data-ttu-id="aa753-121">还</span><span class="sxs-lookup"><span data-stu-id="aa753-121">monthly</span></span>|<span data-ttu-id="aa753-122">3 </span><span class="sxs-lookup"><span data-stu-id="aa753-122">3</span></span>|<span data-ttu-id="aa753-123">还.</span><span class="sxs-lookup"><span data-stu-id="aa753-123">Monthly.</span></span>|
 
 
 
