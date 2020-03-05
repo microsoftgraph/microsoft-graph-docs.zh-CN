@@ -5,54 +5,56 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e87c059ff519cf7c8ce81cf7bc15d2472233f9a6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 56f7678231c4aacaf941667364facf0b863632e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723397"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455245"
 ---
-# <a name="get-privilegedrolesummary"></a><span data-ttu-id="3ab20-103">获取 privilegedRoleSummary</span><span class="sxs-lookup"><span data-stu-id="3ab20-103">Get privilegedRoleSummary</span></span>
+# <a name="get-privilegedrolesummary"></a><span data-ttu-id="f2bf1-103">获取 privilegedRoleSummary</span><span class="sxs-lookup"><span data-stu-id="f2bf1-103">Get privilegedRoleSummary</span></span>
+
+<span data-ttu-id="f2bf1-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f2bf1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3ab20-104">检索[privilegedRoleSummary](../resources/privilegedrolesummary.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3ab20-104">Retrieve the properties and relationships of [privilegedRoleSummary](../resources/privilegedrolesummary.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="3ab20-105">权限</span><span class="sxs-lookup"><span data-stu-id="3ab20-105">Permissions</span></span>
-<span data-ttu-id="3ab20-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3ab20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f2bf1-105">检索[privilegedRoleSummary](../resources/privilegedrolesummary.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-105">Retrieve the properties and relationships of [privilegedRoleSummary](../resources/privilegedrolesummary.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2bf1-106">权限</span><span class="sxs-lookup"><span data-stu-id="f2bf1-106">Permissions</span></span>
+<span data-ttu-id="f2bf1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="3ab20-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3ab20-108">Permission type</span></span>      | <span data-ttu-id="3ab20-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3ab20-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f2bf1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2bf1-109">Permission type</span></span>      | <span data-ttu-id="f2bf1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2bf1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3ab20-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3ab20-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3ab20-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3ab20-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="3ab20-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3ab20-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ab20-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="3ab20-113">Not supported.</span></span>    |
-|<span data-ttu-id="3ab20-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3ab20-114">Application</span></span> | <span data-ttu-id="3ab20-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3ab20-115">Not supported.</span></span> |
+|<span data-ttu-id="f2bf1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2bf1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f2bf1-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f2bf1-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f2bf1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2bf1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2bf1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-114">Not supported.</span></span>    |
+|<span data-ttu-id="f2bf1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f2bf1-115">Application</span></span> | <span data-ttu-id="f2bf1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3ab20-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3ab20-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2bf1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2bf1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoles/{id}?$expand=summary
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="3ab20-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3ab20-117">Optional query parameters</span></span>
-<span data-ttu-id="3ab20-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3ab20-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f2bf1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f2bf1-118">Optional query parameters</span></span>
+<span data-ttu-id="f2bf1-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3ab20-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3ab20-119">Request headers</span></span>
-| <span data-ttu-id="3ab20-120">名称</span><span class="sxs-lookup"><span data-stu-id="3ab20-120">Name</span></span>      |<span data-ttu-id="3ab20-121">说明</span><span class="sxs-lookup"><span data-stu-id="3ab20-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f2bf1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2bf1-120">Request headers</span></span>
+| <span data-ttu-id="f2bf1-121">名称</span><span class="sxs-lookup"><span data-stu-id="f2bf1-121">Name</span></span>      |<span data-ttu-id="f2bf1-122">说明</span><span class="sxs-lookup"><span data-stu-id="f2bf1-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3ab20-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ab20-122">Authorization</span></span>  | <span data-ttu-id="3ab20-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3ab20-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f2bf1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2bf1-123">Authorization</span></span>  | <span data-ttu-id="f2bf1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3ab20-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="3ab20-125">Request body</span></span>
-<span data-ttu-id="3ab20-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3ab20-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2bf1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f2bf1-126">Request body</span></span>
+<span data-ttu-id="f2bf1-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3ab20-127">响应</span><span class="sxs-lookup"><span data-stu-id="3ab20-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2bf1-128">响应</span><span class="sxs-lookup"><span data-stu-id="f2bf1-128">Response</span></span>
 
-<span data-ttu-id="3ab20-128">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleSummary](../resources/privilegedrolesummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="3ab20-128">If successful, this method returns a `200 OK` response code and [privilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.</span></span>
+<span data-ttu-id="f2bf1-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleSummary](../resources/privilegedrolesummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-129">If successful, this method returns a `200 OK` response code and [privilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.</span></span>
 
-<span data-ttu-id="3ab20-129">请注意, 需要将租户注册到 PIM。</span><span class="sxs-lookup"><span data-stu-id="3ab20-129">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="3ab20-130">否则, 将返回 HTTP 403 禁止的状态代码。</span><span class="sxs-lookup"><span data-stu-id="3ab20-130">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="3ab20-131">示例</span><span class="sxs-lookup"><span data-stu-id="3ab20-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3ab20-132">请求</span><span class="sxs-lookup"><span data-stu-id="3ab20-132">Request</span></span>
-<span data-ttu-id="3ab20-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3ab20-133">Here is an example of the request.</span></span>
+<span data-ttu-id="f2bf1-130">请注意，需要将租户注册到 PIM。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="f2bf1-131">否则，将返回 HTTP 403 禁止的状态代码。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="f2bf1-132">示例</span><span class="sxs-lookup"><span data-stu-id="f2bf1-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f2bf1-133">请求</span><span class="sxs-lookup"><span data-stu-id="f2bf1-133">Request</span></span>
+<span data-ttu-id="f2bf1-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3ab20-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3ab20-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f2bf1-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2bf1-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedrolesummary"
@@ -60,22 +62,22 @@ GET /privilegedRoles/{id}?$expand=summary
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3ab20-135">C#</span><span class="sxs-lookup"><span data-stu-id="3ab20-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f2bf1-136">C#</span><span class="sxs-lookup"><span data-stu-id="f2bf1-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedrolesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3ab20-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ab20-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f2bf1-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2bf1-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedrolesummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3ab20-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="3ab20-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f2bf1-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2bf1-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedrolesummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="3ab20-138">响应</span><span class="sxs-lookup"><span data-stu-id="3ab20-138">Response</span></span>
-<span data-ttu-id="3ab20-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3ab20-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f2bf1-139">响应</span><span class="sxs-lookup"><span data-stu-id="f2bf1-139">Response</span></span>
+<span data-ttu-id="f2bf1-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f2bf1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,28 +5,30 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2f0755416fd36a76c938b3a45cc1534011a2dbd8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 93d7418ad370347cd272f251bfbb9ce69c370799
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454799"
 ---
-# <a name="range-clear"></a><span data-ttu-id="631ef-103">Range: clear</span><span class="sxs-lookup"><span data-stu-id="631ef-103">Range: clear</span></span>
+# <a name="range-clear"></a><span data-ttu-id="2efa0-103">Range: clear</span><span class="sxs-lookup"><span data-stu-id="2efa0-103">Range: clear</span></span>
+
+<span data-ttu-id="2efa0-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="2efa0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="631ef-104">清除范围值、格式、填充、边框等。</span><span class="sxs-lookup"><span data-stu-id="631ef-104">Clear range values, format, fill, border, etc.</span></span>
-## <a name="permissions"></a><span data-ttu-id="631ef-105">权限</span><span class="sxs-lookup"><span data-stu-id="631ef-105">Permissions</span></span>
-<span data-ttu-id="631ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="631ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2efa0-105">清除范围值、格式、填充、边框等。</span><span class="sxs-lookup"><span data-stu-id="2efa0-105">Clear range values, format, fill, border, etc.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2efa0-106">权限</span><span class="sxs-lookup"><span data-stu-id="2efa0-106">Permissions</span></span>
+<span data-ttu-id="2efa0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2efa0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="631ef-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="631ef-108">Permission type</span></span>      | <span data-ttu-id="631ef-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="631ef-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2efa0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2efa0-109">Permission type</span></span>      | <span data-ttu-id="2efa0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2efa0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="631ef-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="631ef-110">Delegated (work or school account)</span></span> | <span data-ttu-id="631ef-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="631ef-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="631ef-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="631ef-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="631ef-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="631ef-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="631ef-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="631ef-114">Application</span></span> | <span data-ttu-id="631ef-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="631ef-115">Not supported.</span></span> |
+|<span data-ttu-id="2efa0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2efa0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2efa0-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2efa0-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2efa0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2efa0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2efa0-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2efa0-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2efa0-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2efa0-115">Application</span></span> | <span data-ttu-id="2efa0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2efa0-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="631ef-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="631ef-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2efa0-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2efa0-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/clear
@@ -34,29 +36,29 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="631ef-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="631ef-117">Request headers</span></span>
-| <span data-ttu-id="631ef-118">名称</span><span class="sxs-lookup"><span data-stu-id="631ef-118">Name</span></span>       | <span data-ttu-id="631ef-119">说明</span><span class="sxs-lookup"><span data-stu-id="631ef-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2efa0-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="2efa0-118">Request headers</span></span>
+| <span data-ttu-id="2efa0-119">名称</span><span class="sxs-lookup"><span data-stu-id="2efa0-119">Name</span></span>       | <span data-ttu-id="2efa0-120">说明</span><span class="sxs-lookup"><span data-stu-id="2efa0-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="631ef-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="631ef-120">Authorization</span></span>  | <span data-ttu-id="631ef-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="631ef-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="631ef-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="631ef-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="631ef-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="631ef-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2efa0-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2efa0-121">Authorization</span></span>  | <span data-ttu-id="2efa0-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2efa0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2efa0-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2efa0-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="2efa0-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="2efa0-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="631ef-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="631ef-126">Request body</span></span>
-<span data-ttu-id="631ef-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="631ef-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2efa0-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2efa0-127">Request body</span></span>
+<span data-ttu-id="2efa0-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="2efa0-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="631ef-128">参数</span><span class="sxs-lookup"><span data-stu-id="631ef-128">Parameter</span></span>    | <span data-ttu-id="631ef-129">类型</span><span class="sxs-lookup"><span data-stu-id="631ef-129">Type</span></span>   |<span data-ttu-id="631ef-130">说明</span><span class="sxs-lookup"><span data-stu-id="631ef-130">Description</span></span>|
+| <span data-ttu-id="2efa0-129">参数</span><span class="sxs-lookup"><span data-stu-id="2efa0-129">Parameter</span></span>    | <span data-ttu-id="2efa0-130">类型</span><span class="sxs-lookup"><span data-stu-id="2efa0-130">Type</span></span>   |<span data-ttu-id="2efa0-131">说明</span><span class="sxs-lookup"><span data-stu-id="2efa0-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="631ef-131">applyTo</span><span class="sxs-lookup"><span data-stu-id="631ef-131">applyTo</span></span>|<span data-ttu-id="631ef-132">string</span><span class="sxs-lookup"><span data-stu-id="631ef-132">string</span></span>|<span data-ttu-id="631ef-p104">可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。</span><span class="sxs-lookup"><span data-stu-id="631ef-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
+|<span data-ttu-id="2efa0-132">applyTo</span><span class="sxs-lookup"><span data-stu-id="2efa0-132">applyTo</span></span>|<span data-ttu-id="2efa0-133">string</span><span class="sxs-lookup"><span data-stu-id="2efa0-133">string</span></span>|<span data-ttu-id="2efa0-p104">可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。</span><span class="sxs-lookup"><span data-stu-id="2efa0-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="631ef-136">响应</span><span class="sxs-lookup"><span data-stu-id="631ef-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2efa0-137">响应</span><span class="sxs-lookup"><span data-stu-id="2efa0-137">Response</span></span>
 
-<span data-ttu-id="631ef-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="631ef-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2efa0-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2efa0-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="631ef-139">示例</span><span class="sxs-lookup"><span data-stu-id="631ef-139">Example</span></span>
-<span data-ttu-id="631ef-140">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="631ef-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="631ef-141">请求</span><span class="sxs-lookup"><span data-stu-id="631ef-141">Request</span></span>
-<span data-ttu-id="631ef-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="631ef-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2efa0-140">示例</span><span class="sxs-lookup"><span data-stu-id="2efa0-140">Example</span></span>
+<span data-ttu-id="2efa0-141">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="2efa0-141">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2efa0-142">请求</span><span class="sxs-lookup"><span data-stu-id="2efa0-142">Request</span></span>
+<span data-ttu-id="2efa0-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2efa0-143">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="631ef-143">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="631ef-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2efa0-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="2efa0-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -70,23 +72,23 @@ Content-length: 32
   "applyTo": "applyTo-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="631ef-144">C#</span><span class="sxs-lookup"><span data-stu-id="631ef-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2efa0-145">C#</span><span class="sxs-lookup"><span data-stu-id="2efa0-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="631ef-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="631ef-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2efa0-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2efa0-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="631ef-146">目标-C</span><span class="sxs-lookup"><span data-stu-id="631ef-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2efa0-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2efa0-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="631ef-147">响应</span><span class="sxs-lookup"><span data-stu-id="631ef-147">Response</span></span>
-<span data-ttu-id="631ef-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="631ef-148">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2efa0-148">响应</span><span class="sxs-lookup"><span data-stu-id="2efa0-148">Response</span></span>
+<span data-ttu-id="2efa0-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2efa0-149">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,57 +5,59 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 2158c1183bcbf036c7b4b429675d70b0a0b175de
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 7959f8b286f1068de454f6d0d36a182f190efafd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036135"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455520"
 ---
-# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a><span data-ttu-id="a3c03-103">列出分配了特定策略的应用程序和服务主体</span><span class="sxs-lookup"><span data-stu-id="a3c03-103">List applications and service principals with specific policy assigned</span></span>
+# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a><span data-ttu-id="ff97e-103">列出分配了特定策略的应用程序和服务主体</span><span class="sxs-lookup"><span data-stu-id="ff97e-103">List applications and service principals with specific policy assigned</span></span>
+
+<span data-ttu-id="ff97e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="ff97e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a3c03-104">获取分配了指定策略的[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a3c03-104">Get the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.</span></span>
+<span data-ttu-id="ff97e-105">获取分配了指定策略的[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ff97e-105">Get the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a3c03-105">权限</span><span class="sxs-lookup"><span data-stu-id="a3c03-105">Permissions</span></span>
-<span data-ttu-id="a3c03-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a3c03-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff97e-106">权限</span><span class="sxs-lookup"><span data-stu-id="ff97e-106">Permissions</span></span>
+<span data-ttu-id="ff97e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ff97e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3c03-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a3c03-108">Permission type</span></span>      | <span data-ttu-id="a3c03-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a3c03-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ff97e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ff97e-109">Permission type</span></span>      | <span data-ttu-id="ff97e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ff97e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a3c03-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a3c03-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a3c03-111">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a3c03-111">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a3c03-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a3c03-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3c03-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a3c03-113">Not supported.</span></span>    |
-|<span data-ttu-id="a3c03-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a3c03-114">Application</span></span> | <span data-ttu-id="a3c03-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="a3c03-115">Directory.Read.All</span></span> |
+|<span data-ttu-id="ff97e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ff97e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ff97e-112">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ff97e-112">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ff97e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ff97e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff97e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ff97e-114">Not supported.</span></span>    |
+|<span data-ttu-id="ff97e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ff97e-115">Application</span></span> | <span data-ttu-id="ff97e-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ff97e-116">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a3c03-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a3c03-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff97e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ff97e-117">HTTP request</span></span>
 ```http
 GET /policies/{id}/appliesTo
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3c03-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a3c03-117">Request headers</span></span>
-| <span data-ttu-id="a3c03-118">名称</span><span class="sxs-lookup"><span data-stu-id="a3c03-118">Name</span></span>       | <span data-ttu-id="a3c03-119">类型</span><span class="sxs-lookup"><span data-stu-id="a3c03-119">Type</span></span> | <span data-ttu-id="a3c03-120">说明</span><span class="sxs-lookup"><span data-stu-id="a3c03-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ff97e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="ff97e-118">Request headers</span></span>
+| <span data-ttu-id="ff97e-119">名称</span><span class="sxs-lookup"><span data-stu-id="ff97e-119">Name</span></span>       | <span data-ttu-id="ff97e-120">类型</span><span class="sxs-lookup"><span data-stu-id="ff97e-120">Type</span></span> | <span data-ttu-id="ff97e-121">说明</span><span class="sxs-lookup"><span data-stu-id="ff97e-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a3c03-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3c03-121">Authorization</span></span>  | <span data-ttu-id="a3c03-122">string</span><span class="sxs-lookup"><span data-stu-id="a3c03-122">string</span></span>  | <span data-ttu-id="a3c03-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a3c03-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ff97e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff97e-122">Authorization</span></span>  | <span data-ttu-id="ff97e-123">string</span><span class="sxs-lookup"><span data-stu-id="ff97e-123">string</span></span>  | <span data-ttu-id="ff97e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ff97e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a3c03-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="a3c03-125">Request body</span></span>
-<span data-ttu-id="a3c03-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a3c03-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ff97e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ff97e-126">Request body</span></span>
+<span data-ttu-id="ff97e-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ff97e-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a3c03-127">响应</span><span class="sxs-lookup"><span data-stu-id="a3c03-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ff97e-128">响应</span><span class="sxs-lookup"><span data-stu-id="ff97e-128">Response</span></span>
 
-<span data-ttu-id="a3c03-128">如果成功，此方法在`200 OK`响应正文中返回响应代码和[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a3c03-128">If successful, this method returns `200 OK` response code and [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span> <span data-ttu-id="a3c03-129">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="a3c03-129">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="ff97e-129">如果成功，此方法在`200 OK`响应正文中返回响应代码和[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ff97e-129">If successful, this method returns `200 OK` response code and [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span> <span data-ttu-id="ff97e-130">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="ff97e-130">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a3c03-130">示例</span><span class="sxs-lookup"><span data-stu-id="a3c03-130">Example</span></span>
-<span data-ttu-id="a3c03-131">下面的示例检索分配了特定策略的应用程序和服务主体。</span><span class="sxs-lookup"><span data-stu-id="a3c03-131">The following example retrieves the applications and service principals with a specific policy assigned.</span></span>
+## <a name="example"></a><span data-ttu-id="ff97e-131">示例</span><span class="sxs-lookup"><span data-stu-id="ff97e-131">Example</span></span>
+<span data-ttu-id="ff97e-132">下面的示例检索分配了特定策略的应用程序和服务主体。</span><span class="sxs-lookup"><span data-stu-id="ff97e-132">The following example retrieves the applications and service principals with a specific policy assigned.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a3c03-132">请求</span><span class="sxs-lookup"><span data-stu-id="a3c03-132">Request</span></span>
-<span data-ttu-id="a3c03-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a3c03-133">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ff97e-133">请求</span><span class="sxs-lookup"><span data-stu-id="ff97e-133">Request</span></span>
+<span data-ttu-id="ff97e-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ff97e-134">Here is an example of the request.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/policies/{id}/appliesTo
 ```
 
-##### <a name="response"></a><span data-ttu-id="a3c03-134">响应</span><span class="sxs-lookup"><span data-stu-id="a3c03-134">Response</span></span>
-<span data-ttu-id="a3c03-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a3c03-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ff97e-135">响应</span><span class="sxs-lookup"><span data-stu-id="ff97e-135">Response</span></span>
+<span data-ttu-id="ff97e-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ff97e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK

@@ -5,50 +5,52 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 569b084a149308d1ea5d3bc8311e2e6d13634eaa
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 793e4697d7d692f9cf982a9114d8dd54b0280f07
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792802"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454960"
 ---
-# <a name="delete-programcontrol"></a><span data-ttu-id="359f6-104">删除 programControl</span><span class="sxs-lookup"><span data-stu-id="359f6-104">Delete programControl</span></span>
+# <a name="delete-programcontrol"></a><span data-ttu-id="2d488-104">删除 programControl</span><span class="sxs-lookup"><span data-stu-id="2d488-104">Delete programControl</span></span>
+
+<span data-ttu-id="2d488-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="2d488-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="359f6-105">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="359f6-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="359f6-106">这会断开某个程序的访问评审。</span><span class="sxs-lookup"><span data-stu-id="359f6-106">This unlinks an access review from a program.</span></span>
-## <a name="permissions"></a><span data-ttu-id="359f6-107">权限</span><span class="sxs-lookup"><span data-stu-id="359f6-107">Permissions</span></span>
-<span data-ttu-id="359f6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="359f6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2d488-106">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2d488-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="2d488-107">这会断开某个程序的访问评审。</span><span class="sxs-lookup"><span data-stu-id="2d488-107">This unlinks an access review from a program.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d488-108">权限</span><span class="sxs-lookup"><span data-stu-id="2d488-108">Permissions</span></span>
+<span data-ttu-id="2d488-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d488-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="359f6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="359f6-110">Permission type</span></span>                        | <span data-ttu-id="359f6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="359f6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2d488-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d488-111">Permission type</span></span>                        | <span data-ttu-id="2d488-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d488-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="359f6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="359f6-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="359f6-113">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="359f6-113">ProgramControl.ReadWrite.All</span></span>   |
-|<span data-ttu-id="359f6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="359f6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="359f6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="359f6-115">Not supported.</span></span> |
-|<span data-ttu-id="359f6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="359f6-116">Application</span></span>                            | <span data-ttu-id="359f6-117">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="359f6-117">ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="2d488-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d488-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="2d488-114">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d488-114">ProgramControl.ReadWrite.All</span></span>   |
+|<span data-ttu-id="2d488-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d488-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d488-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d488-116">Not supported.</span></span> |
+|<span data-ttu-id="2d488-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d488-117">Application</span></span>                            | <span data-ttu-id="2d488-118">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d488-118">ProgramControl.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="359f6-118">登录用户还必须位于允许他们删除的`programControl`目录角色中。</span><span class="sxs-lookup"><span data-stu-id="359f6-118">The signed in user must also be in a directory role that permits them to delete a `programControl`.</span></span>
+<span data-ttu-id="2d488-119">登录用户还必须位于允许他们删除的`programControl`目录角色中。</span><span class="sxs-lookup"><span data-stu-id="2d488-119">The signed in user must also be in a directory role that permits them to delete a `programControl`.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="359f6-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="359f6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d488-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d488-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /programControls/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="359f6-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="359f6-120">Request headers</span></span>
-| <span data-ttu-id="359f6-121">名称</span><span class="sxs-lookup"><span data-stu-id="359f6-121">Name</span></span>         | <span data-ttu-id="359f6-122">类型</span><span class="sxs-lookup"><span data-stu-id="359f6-122">Type</span></span>        | <span data-ttu-id="359f6-123">说明</span><span class="sxs-lookup"><span data-stu-id="359f6-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2d488-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d488-121">Request headers</span></span>
+| <span data-ttu-id="2d488-122">名称</span><span class="sxs-lookup"><span data-stu-id="2d488-122">Name</span></span>         | <span data-ttu-id="2d488-123">类型</span><span class="sxs-lookup"><span data-stu-id="2d488-123">Type</span></span>        | <span data-ttu-id="2d488-124">说明</span><span class="sxs-lookup"><span data-stu-id="2d488-124">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="359f6-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="359f6-124">Authorization</span></span> | <span data-ttu-id="359f6-125">string</span><span class="sxs-lookup"><span data-stu-id="359f6-125">string</span></span> | <span data-ttu-id="359f6-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="359f6-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="2d488-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d488-125">Authorization</span></span> | <span data-ttu-id="2d488-126">string</span><span class="sxs-lookup"><span data-stu-id="2d488-126">string</span></span> | <span data-ttu-id="2d488-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="2d488-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="359f6-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="359f6-128">Request body</span></span>
-<span data-ttu-id="359f6-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="359f6-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d488-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d488-129">Request body</span></span>
+<span data-ttu-id="2d488-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2d488-130">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="359f6-130">响应</span><span class="sxs-lookup"><span data-stu-id="359f6-130">Response</span></span>
-<span data-ttu-id="359f6-p105">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="359f6-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2d488-131">响应</span><span class="sxs-lookup"><span data-stu-id="2d488-131">Response</span></span>
+<span data-ttu-id="2d488-p105">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2d488-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="359f6-133">示例</span><span class="sxs-lookup"><span data-stu-id="359f6-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="359f6-134">请求</span><span class="sxs-lookup"><span data-stu-id="359f6-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="2d488-134">示例</span><span class="sxs-lookup"><span data-stu-id="2d488-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2d488-135">请求</span><span class="sxs-lookup"><span data-stu-id="2d488-135">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="359f6-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="359f6-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d488-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d488-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_programControl"
@@ -56,22 +58,22 @@ DELETE /programControls/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="359f6-136">C#</span><span class="sxs-lookup"><span data-stu-id="359f6-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d488-137">C#</span><span class="sxs-lookup"><span data-stu-id="2d488-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-programcontrol-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="359f6-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="359f6-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d488-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d488-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-programcontrol-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="359f6-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="359f6-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d488-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d488-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-programcontrol-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="359f6-139">响应</span><span class="sxs-lookup"><span data-stu-id="359f6-139">Response</span></span>
-><span data-ttu-id="359f6-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="359f6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2d488-140">响应</span><span class="sxs-lookup"><span data-stu-id="2d488-140">Response</span></span>
+><span data-ttu-id="2d488-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2d488-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

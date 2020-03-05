@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2b279da894fcf47a778d194e833dfe5b1008f15
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 11a8d6e6a54941e6ecee10878c01ed0e5f5e91da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453525"
 ---
-# <a name="serviceprincipal-addpassword"></a><span data-ttu-id="ab757-103">servicePrincipal： addPassword</span><span class="sxs-lookup"><span data-stu-id="ab757-103">servicePrincipal: addPassword</span></span>
+# <a name="serviceprincipal-addpassword"></a><span data-ttu-id="f0b3a-103">servicePrincipal： addPassword</span><span class="sxs-lookup"><span data-stu-id="f0b3a-103">servicePrincipal: addPassword</span></span>
+
+<span data-ttu-id="f0b3a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f0b3a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ab757-104">将强密码添加到[servicePrincipal](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ab757-104">Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
+<span data-ttu-id="f0b3a-105">将强密码添加到[servicePrincipal](../resources/serviceprincipal.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-105">Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ab757-105">权限</span><span class="sxs-lookup"><span data-stu-id="ab757-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0b3a-106">权限</span><span class="sxs-lookup"><span data-stu-id="f0b3a-106">Permissions</span></span>
 
-<span data-ttu-id="ab757-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ab757-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f0b3a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ab757-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ab757-108">Permission type</span></span>                        | <span data-ttu-id="ab757-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ab757-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f0b3a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f0b3a-109">Permission type</span></span>                        | <span data-ttu-id="f0b3a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f0b3a-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ab757-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ab757-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ab757-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ab757-111">Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="ab757-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ab757-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab757-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ab757-113">Not supported.</span></span> |
-| <span data-ttu-id="ab757-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ab757-114">Application</span></span>                            | <span data-ttu-id="ab757-115">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ab757-115">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="f0b3a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f0b3a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f0b3a-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f0b3a-112">Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="f0b3a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f0b3a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0b3a-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-114">Not supported.</span></span> |
+| <span data-ttu-id="f0b3a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f0b3a-115">Application</span></span>                            | <span data-ttu-id="f0b3a-116">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f0b3a-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ab757-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ab757-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0b3a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f0b3a-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,36 +38,36 @@ ms.locfileid: "37997657"
 POST /servicePrincipals/{id}/addPassword
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ab757-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ab757-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f0b3a-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="f0b3a-118">Request headers</span></span>
 
-| <span data-ttu-id="ab757-118">名称</span><span class="sxs-lookup"><span data-stu-id="ab757-118">Name</span></span>           | <span data-ttu-id="ab757-119">说明</span><span class="sxs-lookup"><span data-stu-id="ab757-119">Description</span></span>                |
+| <span data-ttu-id="f0b3a-119">名称</span><span class="sxs-lookup"><span data-stu-id="f0b3a-119">Name</span></span>           | <span data-ttu-id="f0b3a-120">说明</span><span class="sxs-lookup"><span data-stu-id="f0b3a-120">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="ab757-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab757-120">Authorization</span></span>  | <span data-ttu-id="ab757-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ab757-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ab757-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="ab757-123">Content-type</span></span>   | <span data-ttu-id="ab757-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="ab757-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="f0b3a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0b3a-121">Authorization</span></span>  | <span data-ttu-id="f0b3a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f0b3a-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="f0b3a-124">Content-type</span></span>   | <span data-ttu-id="f0b3a-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="f0b3a-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ab757-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ab757-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f0b3a-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f0b3a-127">Request body</span></span>
 
-<span data-ttu-id="ab757-127">在请求正文中，提供具有以下`passwordCredential`属性的可选对象。</span><span class="sxs-lookup"><span data-stu-id="ab757-127">In the request body, provide an optional `passwordCredential` object with the following properties.</span></span>
+<span data-ttu-id="f0b3a-128">在请求正文中，提供具有以下`passwordCredential`属性的可选对象。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-128">In the request body, provide an optional `passwordCredential` object with the following properties.</span></span>
 
-| <span data-ttu-id="ab757-128">属性</span><span class="sxs-lookup"><span data-stu-id="ab757-128">Property</span></span>     | <span data-ttu-id="ab757-129">类型</span><span class="sxs-lookup"><span data-stu-id="ab757-129">Type</span></span>   |<span data-ttu-id="ab757-130">说明</span><span class="sxs-lookup"><span data-stu-id="ab757-130">Description</span></span>|
+| <span data-ttu-id="f0b3a-129">属性</span><span class="sxs-lookup"><span data-stu-id="f0b3a-129">Property</span></span>     | <span data-ttu-id="f0b3a-130">类型</span><span class="sxs-lookup"><span data-stu-id="f0b3a-130">Type</span></span>   |<span data-ttu-id="f0b3a-131">说明</span><span class="sxs-lookup"><span data-stu-id="f0b3a-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ab757-131">displayName</span><span class="sxs-lookup"><span data-stu-id="ab757-131">displayName</span></span> | <span data-ttu-id="ab757-132">String</span><span class="sxs-lookup"><span data-stu-id="ab757-132">String</span></span> | <span data-ttu-id="ab757-133">密码的友好名称。</span><span class="sxs-lookup"><span data-stu-id="ab757-133">Friendly name for the password.</span></span> <span data-ttu-id="ab757-134">可选。</span><span class="sxs-lookup"><span data-stu-id="ab757-134">Optional.</span></span> |
-| <span data-ttu-id="ab757-135">endDateTime</span><span class="sxs-lookup"><span data-stu-id="ab757-135">endDateTime</span></span> | <span data-ttu-id="ab757-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ab757-136">DateTimeOffset</span></span> | <span data-ttu-id="ab757-137">密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="ab757-137">The date and time at which the password expires represented using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="ab757-138">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="ab757-138">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="ab757-139">可选。</span><span class="sxs-lookup"><span data-stu-id="ab757-139">Optional.</span></span> |
-| <span data-ttu-id="ab757-140">startDateTime</span><span class="sxs-lookup"><span data-stu-id="ab757-140">startDateTime</span></span> | <span data-ttu-id="ab757-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ab757-141">DateTimeOffset</span></span> | <span data-ttu-id="ab757-142">密码生效的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="ab757-142">The date and time at which the password becomes valid.</span></span> <span data-ttu-id="ab757-143">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="ab757-143">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="ab757-144">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="ab757-144">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="ab757-145">可选。</span><span class="sxs-lookup"><span data-stu-id="ab757-145">Optional.</span></span> |
+| <span data-ttu-id="f0b3a-132">displayName</span><span class="sxs-lookup"><span data-stu-id="f0b3a-132">displayName</span></span> | <span data-ttu-id="f0b3a-133">String</span><span class="sxs-lookup"><span data-stu-id="f0b3a-133">String</span></span> | <span data-ttu-id="f0b3a-134">密码的友好名称。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-134">Friendly name for the password.</span></span> <span data-ttu-id="f0b3a-135">可选。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-135">Optional.</span></span> |
+| <span data-ttu-id="f0b3a-136">endDateTime</span><span class="sxs-lookup"><span data-stu-id="f0b3a-136">endDateTime</span></span> | <span data-ttu-id="f0b3a-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0b3a-137">DateTimeOffset</span></span> | <span data-ttu-id="f0b3a-138">密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-138">The date and time at which the password expires represented using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="f0b3a-139">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-139">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="f0b3a-140">可选。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-140">Optional.</span></span> |
+| <span data-ttu-id="f0b3a-141">startDateTime</span><span class="sxs-lookup"><span data-stu-id="f0b3a-141">startDateTime</span></span> | <span data-ttu-id="f0b3a-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0b3a-142">DateTimeOffset</span></span> | <span data-ttu-id="f0b3a-143">密码生效的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-143">The date and time at which the password becomes valid.</span></span> <span data-ttu-id="f0b3a-144">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-144">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="f0b3a-145">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-145">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="f0b3a-146">可选。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-146">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="ab757-146">响应</span><span class="sxs-lookup"><span data-stu-id="ab757-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f0b3a-147">响应</span><span class="sxs-lookup"><span data-stu-id="f0b3a-147">Response</span></span>
 
-<span data-ttu-id="ab757-147">如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ab757-147">If successful, this method returns a `200 OK` response code and a new [passwordCredential](../resources/passwordcredential.md) object in the response body.</span></span> <span data-ttu-id="ab757-148">Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。</span><span class="sxs-lookup"><span data-stu-id="ab757-148">The **secretText** property in the response object contains the strong passwords generated by Azure Active Directory that are 16-64 characters in length.</span></span> <span data-ttu-id="ab757-149">将来无法检索此密码。</span><span class="sxs-lookup"><span data-stu-id="ab757-149">There is no way to retrieve this password in the future.</span></span>
+<span data-ttu-id="f0b3a-148">如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-148">If successful, this method returns a `200 OK` response code and a new [passwordCredential](../resources/passwordcredential.md) object in the response body.</span></span> <span data-ttu-id="f0b3a-149">Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-149">The **secretText** property in the response object contains the strong passwords generated by Azure Active Directory that are 16-64 characters in length.</span></span> <span data-ttu-id="f0b3a-150">将来无法检索此密码。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-150">There is no way to retrieve this password in the future.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ab757-150">示例</span><span class="sxs-lookup"><span data-stu-id="ab757-150">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f0b3a-151">示例</span><span class="sxs-lookup"><span data-stu-id="f0b3a-151">Examples</span></span>
 
-<span data-ttu-id="ab757-151">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="ab757-151">The following example shows how to call this API.</span></span>
+<span data-ttu-id="f0b3a-152">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-152">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="ab757-152">请求</span><span class="sxs-lookup"><span data-stu-id="ab757-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f0b3a-153">请求</span><span class="sxs-lookup"><span data-stu-id="f0b3a-153">Request</span></span>
 
-<span data-ttu-id="ab757-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ab757-153">The following is an example of the request.</span></span>
+<span data-ttu-id="f0b3a-154">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-154">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ab757-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="ab757-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f0b3a-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0b3a-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipal_addpassword"
@@ -81,16 +83,16 @@ Content-type: application/json
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ab757-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ab757-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f0b3a-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0b3a-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addpassword-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ab757-156">响应</span><span class="sxs-lookup"><span data-stu-id="ab757-156">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f0b3a-157">响应</span><span class="sxs-lookup"><span data-stu-id="f0b3a-157">Response</span></span>
 
-<span data-ttu-id="ab757-157">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ab757-157">The following is an example of the response.</span></span>
+<span data-ttu-id="f0b3a-158">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f0b3a-158">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

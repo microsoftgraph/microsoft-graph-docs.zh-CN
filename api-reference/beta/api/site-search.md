@@ -6,59 +6,61 @@ title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 89b55be4ab81d59be37e2b3d20ff84a51f75991b
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: c41f49f217e669a35ef77872161394186ec4b392
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726232"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453203"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="dce47-103">搜索网站</span><span class="sxs-lookup"><span data-stu-id="dce47-103">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="ad127-103">搜索网站</span><span class="sxs-lookup"><span data-stu-id="ad127-103">Search for sites</span></span>
+
+<span data-ttu-id="ad127-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="ad127-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dce47-104">在 SharePoint 租户中搜索与所提供的关键字匹配的[网站][]。</span><span class="sxs-lookup"><span data-stu-id="dce47-104">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="ad127-105">在 SharePoint 租户中搜索与所提供的关键字匹配的[网站][]。</span><span class="sxs-lookup"><span data-stu-id="ad127-105">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [网站]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="dce47-106">权限</span><span class="sxs-lookup"><span data-stu-id="dce47-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad127-107">权限</span><span class="sxs-lookup"><span data-stu-id="ad127-107">Permissions</span></span>
 
-<span data-ttu-id="dce47-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dce47-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad127-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ad127-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dce47-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="dce47-109">Permission type</span></span>                        | <span data-ttu-id="dce47-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dce47-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="ad127-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ad127-110">Permission type</span></span>                        | <span data-ttu-id="ad127-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ad127-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="dce47-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dce47-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="dce47-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dce47-112">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="dce47-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dce47-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dce47-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="dce47-114">Not supported.</span></span>
-|<span data-ttu-id="dce47-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="dce47-115">Application</span></span>                            | <span data-ttu-id="dce47-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dce47-116">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="ad127-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ad127-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ad127-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad127-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="ad127-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ad127-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad127-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ad127-115">Not supported.</span></span>
+|<span data-ttu-id="ad127-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ad127-116">Application</span></span>                            | <span data-ttu-id="ad127-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad127-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="dce47-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dce47-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad127-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ad127-118">HTTP request</span></span>
 ```http
 GET /sites?$search={query}
 ```
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dce47-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="dce47-118">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ad127-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad127-119">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?$search={query}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dce47-119">C#</span><span class="sxs-lookup"><span data-stu-id="dce47-119">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ad127-120">C#</span><span class="sxs-lookup"><span data-stu-id="ad127-120">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dce47-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dce47-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ad127-121">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad127-121">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dce47-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dce47-121">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ad127-122">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad127-122">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="dce47-122">响应</span><span class="sxs-lookup"><span data-stu-id="dce47-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad127-123">响应</span><span class="sxs-lookup"><span data-stu-id="ad127-123">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -87,7 +89,7 @@ Content-type: application/json
   ]
 }
 ```
-><span data-ttu-id="dce47-123">**注意：** 用于排序的唯一属性是**createdDateTime**。</span><span class="sxs-lookup"><span data-stu-id="dce47-123">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="dce47-124">搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。</span><span class="sxs-lookup"><span data-stu-id="dce47-124">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+><span data-ttu-id="ad127-124">**注意：** 用于排序的唯一属性是**createdDateTime**。</span><span class="sxs-lookup"><span data-stu-id="ad127-124">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="ad127-125">搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。</span><span class="sxs-lookup"><span data-stu-id="ad127-125">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!--
 {

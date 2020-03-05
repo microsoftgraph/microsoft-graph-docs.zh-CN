@@ -6,60 +6,62 @@ title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 47bde7b24508665035130a7f7e5c2fed94a4ee6f
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 6aaed76ed3fc571d0af534943febc1decaca0f43
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726276"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453225"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="fb4bf-103">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="fb4bf-103">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="04558-103">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="04558-103">Enumerate subsites</span></span>
+
+<span data-ttu-id="04558-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="04558-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fb4bf-104">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="fb4bf-104">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="04558-105">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="04558-105">Get a collection of subsites defined for a [site][].</span></span>
 
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="fb4bf-106">权限</span><span class="sxs-lookup"><span data-stu-id="fb4bf-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="04558-107">权限</span><span class="sxs-lookup"><span data-stu-id="04558-107">Permissions</span></span>
 
-<span data-ttu-id="fb4bf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fb4bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="04558-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="04558-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fb4bf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fb4bf-109">Permission type</span></span>      | <span data-ttu-id="fb4bf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fb4bf-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="04558-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="04558-110">Permission type</span></span>      | <span data-ttu-id="04558-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="04558-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fb4bf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fb4bf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fb4bf-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb4bf-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fb4bf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fb4bf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb4bf-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fb4bf-114">Not supported.</span></span>    |
-|<span data-ttu-id="fb4bf-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fb4bf-115">Application</span></span> | <span data-ttu-id="fb4bf-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb4bf-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="04558-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="04558-112">Delegated (work or school account)</span></span> | <span data-ttu-id="04558-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04558-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="04558-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="04558-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04558-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="04558-115">Not supported.</span></span>    |
+|<span data-ttu-id="04558-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="04558-116">Application</span></span> | <span data-ttu-id="04558-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04558-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fb4bf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fb4bf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="04558-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="04558-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/sites
 ```
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fb4bf-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="fb4bf-118">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="04558-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="04558-119">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fb4bf-119">C#</span><span class="sxs-lookup"><span data-stu-id="fb4bf-119">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="04558-120">C#</span><span class="sxs-lookup"><span data-stu-id="04558-120">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-subsites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb4bf-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fb4bf-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="04558-121">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04558-121">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-subsites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fb4bf-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fb4bf-121">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="04558-122">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04558-122">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="fb4bf-122">响应</span><span class="sxs-lookup"><span data-stu-id="fb4bf-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="04558-123">响应</span><span class="sxs-lookup"><span data-stu-id="04558-123">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

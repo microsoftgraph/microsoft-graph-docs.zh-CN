@@ -5,30 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 78d890a00916c72b8c48e5b41a1c84e1e2e2ffb8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 429e26ef14ed461c61f00072cdad878f59d5870f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938139"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451596"
 ---
-# <a name="update-useraccountinformation"></a><span data-ttu-id="f4863-103">更新 useraccountinformation</span><span class="sxs-lookup"><span data-stu-id="f4863-103">Update useraccountinformation</span></span>
+# <a name="update-useraccountinformation"></a><span data-ttu-id="8cb83-103">更新 useraccountinformation</span><span class="sxs-lookup"><span data-stu-id="8cb83-103">Update useraccountinformation</span></span>
+
+<span data-ttu-id="8cb83-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="8cb83-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4863-104">更新用户的[配置文件](../resources/profile.md)中的[userAccountInformation](../resources/useraccountinformation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f4863-104">Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="8cb83-105">更新用户的[配置文件](../resources/profile.md)中的[userAccountInformation](../resources/useraccountinformation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8cb83-105">Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4863-105">权限</span><span class="sxs-lookup"><span data-stu-id="f4863-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8cb83-106">权限</span><span class="sxs-lookup"><span data-stu-id="8cb83-106">Permissions</span></span>
 
-<span data-ttu-id="f4863-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4863-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8cb83-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8cb83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f4863-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4863-108">Permission type</span></span>                        | <span data-ttu-id="f4863-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4863-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8cb83-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8cb83-109">Permission type</span></span>                        | <span data-ttu-id="8cb83-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8cb83-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f4863-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4863-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4863-111">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="f4863-111">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="f4863-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4863-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4863-113">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="f4863-113">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="f4863-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4863-114">Application</span></span>                            | <span data-ttu-id="f4863-115">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f4863-115">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="8cb83-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8cb83-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8cb83-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="8cb83-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="8cb83-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8cb83-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8cb83-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="8cb83-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="8cb83-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8cb83-115">Application</span></span>                            | <span data-ttu-id="8cb83-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8cb83-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="f4863-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4863-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8cb83-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8cb83-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,33 +38,35 @@ ms.locfileid: "37938139"
 PATCH /me/profile/account/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f4863-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4863-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8cb83-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8cb83-118">Request headers</span></span>
 
-| <span data-ttu-id="f4863-118">名称</span><span class="sxs-lookup"><span data-stu-id="f4863-118">Name</span></span>           |<span data-ttu-id="f4863-119">说明</span><span class="sxs-lookup"><span data-stu-id="f4863-119">Description</span></span>                 |
+| <span data-ttu-id="8cb83-119">名称</span><span class="sxs-lookup"><span data-stu-id="8cb83-119">Name</span></span>           |<span data-ttu-id="8cb83-120">说明</span><span class="sxs-lookup"><span data-stu-id="8cb83-120">Description</span></span>                 |
 |:---------------|:---------------------------|
-| <span data-ttu-id="f4863-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4863-120">Authorization</span></span>  | <span data-ttu-id="f4863-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4863-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f4863-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f4863-123">Content-Type</span></span>   | <span data-ttu-id="f4863-124">application/json.</span><span class="sxs-lookup"><span data-stu-id="f4863-124">application/json.</span></span> <span data-ttu-id="f4863-125">必需</span><span class="sxs-lookup"><span data-stu-id="f4863-125">Required</span></span> |
+| <span data-ttu-id="8cb83-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8cb83-121">Authorization</span></span>  | <span data-ttu-id="8cb83-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8cb83-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8cb83-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8cb83-124">Content-Type</span></span>   | <span data-ttu-id="8cb83-125">application/json.</span><span class="sxs-lookup"><span data-stu-id="8cb83-125">application/json.</span></span> <span data-ttu-id="8cb83-126">必需</span><span class="sxs-lookup"><span data-stu-id="8cb83-126">Required</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4863-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4863-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8cb83-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="8cb83-127">Request body</span></span>
 
-<span data-ttu-id="f4863-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="f4863-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="f4863-128">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="f4863-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="f4863-129">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="f4863-129">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="8cb83-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="8cb83-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8cb83-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="8cb83-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8cb83-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="8cb83-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f4863-130">属性</span><span class="sxs-lookup"><span data-stu-id="f4863-130">Property</span></span>            | <span data-ttu-id="f4863-131">类型</span><span class="sxs-lookup"><span data-stu-id="f4863-131">Type</span></span>                                    | <span data-ttu-id="f4863-132">描述</span><span class="sxs-lookup"><span data-stu-id="f4863-132">Description</span></span>                                                                                    |
+| <span data-ttu-id="8cb83-131">属性</span><span class="sxs-lookup"><span data-stu-id="8cb83-131">Property</span></span>            | <span data-ttu-id="8cb83-132">类型</span><span class="sxs-lookup"><span data-stu-id="8cb83-132">Type</span></span>                                    | <span data-ttu-id="8cb83-133">说明</span><span class="sxs-lookup"><span data-stu-id="8cb83-133">Description</span></span>                                                                                    |
 |:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
-|<span data-ttu-id="f4863-133">ageGroup</span><span class="sxs-lookup"><span data-stu-id="f4863-133">ageGroup</span></span>             |<span data-ttu-id="f4863-134">String</span><span class="sxs-lookup"><span data-stu-id="f4863-134">String</span></span>                                   |<span data-ttu-id="f4863-135">显示用户的年龄组。</span><span class="sxs-lookup"><span data-stu-id="f4863-135">Shows the age group of user.</span></span> <span data-ttu-id="f4863-136">允许的`null`值`minor`、 `notAdult`和`adult`。</span><span class="sxs-lookup"><span data-stu-id="f4863-136">Allowed values `null`, `minor`, `notAdult` and `adult`.</span></span> <span data-ttu-id="f4863-137">只读。</span><span class="sxs-lookup"><span data-stu-id="f4863-137">Read Only.</span></span> |
-|<span data-ttu-id="f4863-138">countryCode</span><span class="sxs-lookup"><span data-stu-id="f4863-138">countryCode</span></span>          |<span data-ttu-id="f4863-139">字符串</span><span class="sxs-lookup"><span data-stu-id="f4863-139">String</span></span>                                   |<span data-ttu-id="f4863-140">包含与用户帐户关联的双字符 countryCode。</span><span class="sxs-lookup"><span data-stu-id="f4863-140">Contains the two-character countryCode associated with the users account.</span></span>                       |
-|<span data-ttu-id="f4863-141">preferredLanguageTag</span><span class="sxs-lookup"><span data-stu-id="f4863-141">preferredLanguageTag</span></span> |[<span data-ttu-id="f4863-142">localeInfo</span><span class="sxs-lookup"><span data-stu-id="f4863-142">localeInfo</span></span>](../resources/localeinfo.md) |<span data-ttu-id="f4863-143">包含用户与帐户相关的首选语言。</span><span class="sxs-lookup"><span data-stu-id="f4863-143">Contains the language the user has associated as preferred for the account.</span></span>                     |
-|<span data-ttu-id="f4863-144">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f4863-144">userPrincipalName</span></span>    |<span data-ttu-id="f4863-145">字符串</span><span class="sxs-lookup"><span data-stu-id="f4863-145">String</span></span>                                   |<span data-ttu-id="f4863-146">与帐户关联的用户的用户主体名称（UPN）。</span><span class="sxs-lookup"><span data-stu-id="f4863-146">The user principal name (UPN) of the user associated with the account.</span></span>                          |
+|<span data-ttu-id="8cb83-134">ageGroup</span><span class="sxs-lookup"><span data-stu-id="8cb83-134">ageGroup</span></span>             |<span data-ttu-id="8cb83-135">String</span><span class="sxs-lookup"><span data-stu-id="8cb83-135">String</span></span>                                   |<span data-ttu-id="8cb83-136">显示用户的年龄组。</span><span class="sxs-lookup"><span data-stu-id="8cb83-136">Shows the age group of user.</span></span> <span data-ttu-id="8cb83-137">允许的`null`值`minor`、 `notAdult`和`adult`。</span><span class="sxs-lookup"><span data-stu-id="8cb83-137">Allowed values `null`, `minor`, `notAdult` and `adult`.</span></span> <span data-ttu-id="8cb83-138">只读。</span><span class="sxs-lookup"><span data-stu-id="8cb83-138">Read Only.</span></span> |
+|<span data-ttu-id="8cb83-139">countryCode</span><span class="sxs-lookup"><span data-stu-id="8cb83-139">countryCode</span></span>          |<span data-ttu-id="8cb83-140">String</span><span class="sxs-lookup"><span data-stu-id="8cb83-140">String</span></span>                                   |<span data-ttu-id="8cb83-141">包含与用户帐户关联的双字符 countryCode。</span><span class="sxs-lookup"><span data-stu-id="8cb83-141">Contains the two-character countryCode associated with the users account.</span></span>                       |
+|<span data-ttu-id="8cb83-142">preferredLanguageTag</span><span class="sxs-lookup"><span data-stu-id="8cb83-142">preferredLanguageTag</span></span> |[<span data-ttu-id="8cb83-143">localeInfo</span><span class="sxs-lookup"><span data-stu-id="8cb83-143">localeInfo</span></span>](../resources/localeinfo.md) |<span data-ttu-id="8cb83-144">包含用户与帐户相关的首选语言。</span><span class="sxs-lookup"><span data-stu-id="8cb83-144">Contains the language the user has associated as preferred for the account.</span></span>                     |
+|<span data-ttu-id="8cb83-145">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="8cb83-145">userPrincipalName</span></span>    |<span data-ttu-id="8cb83-146">String</span><span class="sxs-lookup"><span data-stu-id="8cb83-146">String</span></span>                                   |<span data-ttu-id="8cb83-147">与帐户关联的用户的用户主体名称（UPN）。</span><span class="sxs-lookup"><span data-stu-id="8cb83-147">The user principal name (UPN) of the user associated with the account.</span></span>                          |
 
-## <a name="response"></a><span data-ttu-id="f4863-147">响应</span><span class="sxs-lookup"><span data-stu-id="f4863-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8cb83-148">响应</span><span class="sxs-lookup"><span data-stu-id="8cb83-148">Response</span></span>
 
-<span data-ttu-id="f4863-148">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userAccountInformation](../resources/useraccountinformation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f4863-148">If successful, this method returns a `200 OK` response code and an updated [userAccountInformation](../resources/useraccountinformation.md) object in the response body.</span></span>
+<span data-ttu-id="8cb83-149">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userAccountInformation](../resources/useraccountinformation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8cb83-149">If successful, this method returns a `200 OK` response code and an updated [userAccountInformation](../resources/useraccountinformation.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f4863-149">示例</span><span class="sxs-lookup"><span data-stu-id="f4863-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="8cb83-150">示例</span><span class="sxs-lookup"><span data-stu-id="8cb83-150">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f4863-150">请求</span><span class="sxs-lookup"><span data-stu-id="f4863-150">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8cb83-151">请求</span><span class="sxs-lookup"><span data-stu-id="8cb83-151">Request</span></span>
 
-<span data-ttu-id="f4863-151">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f4863-151">The following is an example of the request.</span></span>
+<span data-ttu-id="8cb83-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8cb83-152">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="8cb83-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="8cb83-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_useraccountinformation"
@@ -82,12 +86,26 @@ Content-type: application/json
   "userPrincipalName": "userPrincipalName-value"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="8cb83-154">C#</span><span class="sxs-lookup"><span data-stu-id="8cb83-154">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-useraccountinformation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="f4863-152">响应</span><span class="sxs-lookup"><span data-stu-id="f4863-152">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="8cb83-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8cb83-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-useraccountinformation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f4863-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f4863-153">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="8cb83-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8cb83-156">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="f4863-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f4863-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="8cb83-157">响应</span><span class="sxs-lookup"><span data-stu-id="8cb83-157">Response</span></span>
+
+<span data-ttu-id="8cb83-158">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8cb83-158">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="8cb83-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8cb83-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
