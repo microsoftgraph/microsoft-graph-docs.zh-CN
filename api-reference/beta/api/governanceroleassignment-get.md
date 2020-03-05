@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 80bf665931e31a86de973fdf22757b18a3489fdc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78042d16d736f644cddc70fe5665ef04defb01de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954205"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421156"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35954205"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -31,7 +33,7 @@ ms.locfileid: "35954205"
 <!-- { "blockType": "ignored" } -->
 1. 获取资源的[governanceRoleAssignment](../resources/governanceroleassignment.md)
 
-    *注意: 除了权限范围之外, 要求请求者至少具有对资源的一个角色分配。* 
+    *注意：除了权限范围之外，要求请求者至少具有对资源的一个角色分配。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
@@ -42,7 +44,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不**** 支持除之外`$filter`的[OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法不**支持除**之外`$filter`的[OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -52,7 +54,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",

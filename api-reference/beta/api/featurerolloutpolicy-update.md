@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dbdbe19a401f10acead10884f02de5d380465e0a
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: e93dbcbdc7d4a4d40b929a801dae4b673100a274
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062107"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421709"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36062107"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | FeatureRollout |
+| 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -50,12 +52,12 @@ PATCH /directory/featureRolloutPolicies/{id}
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
 |displayName|String|此策略的显示名称。|
-|isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
+|isAppliedToOrganization|布尔|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
 
 ## <a name="examples"></a>示例
 

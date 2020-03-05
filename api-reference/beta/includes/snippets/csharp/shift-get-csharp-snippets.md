@@ -1,18 +1,53 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4c9d17e1931bcfe80229c5ca8fe641d2009ba139
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7eda37c5bd3b31e5d7acd5aaecbde0c29d399d01
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717653"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994754"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var shift = await graphClient.Teams["{teamId}"].Schedule.Shifts["{shiftId}"]
+var shiftPreferences = new ShiftPreferences
+{
+    Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.etag","1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
+    },
+    Availability = new List<ShiftAvailability>()
+    {
+        new ShiftAvailability
+        {
+            Recurrence = new PatternedRecurrence
+            {
+                Pattern = new RecurrencePattern
+                {
+                    Type = RecurrencePatternType.Weekly,
+                    DaysOfWeek = new List<DayOfWeek>()
+                    {
+                        DayOfWeek.Monday,
+                        DayOfWeek.Wednesday,
+                        DayOfWeek.Friday
+                    },
+                    Interval = 1
+                },
+                Range = new RecurrenceRange
+                {
+                    Type = RecurrenceRangeType.NoEnd
+                }
+            },
+            TimeZone = "Pacific Standard Time",
+            TimeSlots = null
+        }
+    }
+};
+
+await graphClient.Users["871dbd5c-3a6a-4392-bfe1-042452793a50"].Settings.ShiftPreferences
     .Request()
-    .GetAsync();
+    .PutAsync(shiftPreferences);
 
 ```

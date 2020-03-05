@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 95b8b4dad1777775660aea8b2a2d137f1564c9bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b8d45a3d4f5f89ed35fd2defaf733d2d03af097
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954107"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42420890"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+命名空间： microsoft. graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取资源的[governanceRoleDefinitions](../resources/governanceroledefinition.md)集合。
 
@@ -22,11 +23,11 @@ ms.locfileid: "35954107"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
+除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +46,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleDefinition](../resources/governanceroledefinition.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleDefinition](../resources/governanceroledefinition.md)对象集合。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",

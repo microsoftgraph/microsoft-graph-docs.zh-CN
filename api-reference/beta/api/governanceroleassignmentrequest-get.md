@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 6ad57ac8f330a28de6f5684f0e0fa07a34878c7f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86edec1ad26b703da07541411342832b95aea568
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954219"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421114"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ ms.locfileid: "35954219"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-除了权限范围之外, 还需要请求程序 
+除了权限范围之外，还需要请求程序 
 *   对资源至少有一个角色分配;和
 *   是[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
 
@@ -48,7 +50,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
 
 ## <a name="example"></a>示例
 获取角色分配请求

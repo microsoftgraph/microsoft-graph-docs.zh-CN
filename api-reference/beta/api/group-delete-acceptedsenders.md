@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 341f887de0252dd6ae1ebc9f899263c67716658f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f4b82ccaef290efa0bec00785e5f1ad3a30f516f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954020"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42420575"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +47,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>示例 1: 从组的接受-发件人列表中删除用户。
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>示例1：从组的接受-发件人列表中删除用户。
 #### <a name="request"></a>请求
 
 <!-- {
@@ -68,7 +70,7 @@ DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>示例 2: 从组的 "接受-发件人" 列表中删除组。
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>示例2：从组的 "接受-发件人" 列表中删除组。
 #### <a name="request"></a>请求
 
 <!-- {

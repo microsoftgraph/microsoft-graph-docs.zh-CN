@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 096ef64c786c35d9b82a45ac4fba75904b743536
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69dddf7e6073412c2398769165e52c530a3a68e1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954184"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421058"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35954184"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -31,7 +33,7 @@ ms.locfileid: "35954184"
 <!-- { "blockType": "ignored" } -->
 列出资源上的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
     
->**注意:** 除了权限范围之外, 该请求还要求请求者在资源上至少有一个角色分配。
+>**注意：** 除了权限范围之外，该请求还要求请求者在资源上至少有一个角色分配。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
@@ -45,7 +47,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 
 列出作为等待管理员决策的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
     
->**注意:** 除了权限范围之外, 此请求还要求请求者在资源上至少`Active`有一个管理员角色`owner`分配`user access administrator`(或)。
+>**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少`Active`有一个管理员角色`owner`分配`user access administrator`（或）。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -63,7 +65,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象集合。
 
 ## <a name="example"></a>示例
 <!-- {

@@ -1,22 +1,24 @@
 ---
 title: 获取设备命令状态
-description: 获取设备上命令的状态。 有关状态代码的完整列表, 请参阅 actionStatus 的列表。
+description: 获取设备上命令的状态。 有关状态代码的完整列表，请参阅 actionStatus 的列表。
 localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 74104859b0621e51c0af9eced15912632fe5b9fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fee9b291145bce2e5cca4bc54405a833e95ec053
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954303"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421436"
 ---
 # <a name="get-device-command-status"></a>获取设备命令状态
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取设备上命令的状态。 有关状态代码的完整列表, 请参阅[actionStatus 的列表](#list-of-actionstatus)。
+获取设备上命令的状态。 有关状态代码的完整列表，请参阅[actionStatus 的列表](#list-of-actionstatus)。
 
 ## <a name="permissions"></a>权限
 
@@ -68,24 +70,24 @@ HTTP/1.1 200 OK
 
 ## <a name="list-of-actionstatus"></a>ActionStatus 列表
 
-- 请求、//命令已创建, 正在等待处理
+- 请求、//命令已创建，正在等待处理
 - 已将 sentToTarget、//命令发送到目标设备
 - 正在执行、//目标设备确认了命令的接收并正在执行该命令
-- 已完成,//命令执行已完成
-- failedToSend,//服务无法将命令发送到目标设备
-- executionFailed,//命令执行失败
+- 已完成，//命令执行已完成
+- failedToSend，//服务无法将命令发送到目标设备
+- executionFailed，//命令执行失败
 - commandDropped、//设备处于 ConnectedStandby 状态时由客户端丢弃的命令
 - 取消、//取消命令
 - 取消、//取消命令
-- 已取消,//命令已取消
-- 重试,//服务正在重试将命令发送到目标
-- 已过期,//命令处理超过了过期时间
-- 处理命令时出现错误,//内部错误
+- 已取消，//命令已取消
+- 重试，//服务正在重试将命令发送到目标
+- 已过期，//命令处理超过了过期时间
+- 处理命令时出现错误，//内部错误
 - 自定义//自定义状态
 
 ## <a name="example"></a>示例
 
-在此示例中, 将需要设备的 ID 以及已颁发给设备的命令的 ID。 在发出对`/me/devices`的 GET 呼叫时, 将返回设备 ID, 并且在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
+在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在发出对`/me/devices`的 GET 呼叫时，将返回设备 ID，并且在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
 
 #### <a name="request"></a>请求
 
@@ -132,7 +134,7 @@ HTTP/1.1 200 OK
 
 ## <a name="get-command-payload"></a>获取命令有效负载
 
-获取设备上特定操作的响应负载。 在查询应用程序服务以传送数据时, 将使用响应负载。
+获取设备上特定操作的响应负载。 在查询应用程序服务以传送数据时，将使用响应负载。
 
 
 ### <a name="permissions"></a>权限
@@ -179,7 +181,7 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>示例
 
-在此示例中, 将需要设备的 ID 以及已颁发给设备的命令的 ID。 在`/me/devices`发出 GET 呼叫时, 将返回设备 ID, 并在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
+在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在`/me/devices`发出 GET 呼叫时，将返回设备 ID，并在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
 
 #### <a name="request"></a>请求
 

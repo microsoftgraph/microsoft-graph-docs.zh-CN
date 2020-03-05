@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 4c9b58480f0b1033a997721b257054be1519ac27
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e700b5ceef33a50bd1521e8ff355c0f30460b9d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954100"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42420869"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ ms.locfileid: "35954100"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
+除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +48,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleSetting](../resources/governancerolesetting.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleSetting](../resources/governancerolesetting.md)对象集合。
 
 ## <a name="example"></a>示例
 本示例显示管理员如何列出资源 Wingtip 玩具-生产的角色设置。 

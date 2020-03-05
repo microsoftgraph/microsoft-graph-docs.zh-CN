@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: cc725dd55c3a4bbc5c541f4c34f30ff1c8935d8c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e471cd147c36414df7eb983b9824383af2dc502c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954310"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421380"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ ms.locfileid: "35954310"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
+除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,10 +48,10 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象。
 
 ## <a name="example"></a>示例
-本示例演示如何获取订阅 Wingtip 玩具-生产 (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
+本示例演示如何获取订阅 Wingtip 玩具-生产（e5e7d29d-5465-45ac-885f-4716a5ee74b5）的详细信息。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

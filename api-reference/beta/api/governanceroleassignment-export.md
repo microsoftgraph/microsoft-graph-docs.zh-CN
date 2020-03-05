@@ -1,29 +1,31 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合, 可以在浏览器中将其解析为 .csv 文件。
+description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合，可以在浏览器中将其解析为 .csv 文件。
 localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 227968ab265c117e5fa297d8fd8d8a988ddd0028
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 616a6a7132d900fc57c2243bf86a372a23d37e77
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954282"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421289"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-以格式`application/octet-stream`检索[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合, 可以在浏览器中将其解析为 .csv 文件。
+以格式`application/octet-stream`检索[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合，可以在浏览器中将其解析为 .csv 文件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -32,7 +34,7 @@ ms.locfileid: "35954282"
 <!-- { "blockType": "ignored" } -->
 导出资源的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
     
->**注意:** 除了权限范围之外, 此请求还要求请求者在资源上至少有一个角色分配。 
+>**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个角色分配。 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
@@ -54,7 +56,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法将`200 OK`返回响应代码和类型`application/octet-stream`的内容。
+如果成功，此方法将`200 OK`返回响应代码和类型`application/octet-stream`的内容。
 
 ## <a name="example"></a>示例
 本示例将所有角色分配作为 .csv 文件保存在订阅 Wingtip 玩具-生产中。 
