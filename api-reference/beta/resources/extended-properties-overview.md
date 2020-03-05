@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1b6364fd42b72e175a58bfcd28c0bdacc5e9629e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d6e4cd91e8195530f6138bdd068907988b42c237
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866831"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499013"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

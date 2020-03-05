@@ -1,22 +1,24 @@
 ---
 title: emailAddress 资源类型
-description: 表示实体实例的名称和 SMTP 地址, 例如, 邮件收件人或日历所有者。
+description: 表示实体实例的名称和 SMTP 地址，例如，邮件收件人或日历所有者。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4f0b36d84ffba5c5a8e39bd7603f92c815cda008
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e0df635fb930816fa29b0d7f75a2075759a4c54d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972213"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499559"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示实体实例的名称和 SMTP 地址, 例如, 邮件收件人或日历所有者。
+表示实体实例的名称和 SMTP 地址，例如，邮件收件人或日历所有者。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

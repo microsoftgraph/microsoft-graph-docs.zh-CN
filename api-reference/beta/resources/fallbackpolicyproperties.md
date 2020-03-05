@@ -5,14 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: a3ce59a23b5aec6dd43b370c3b67e9439b11937e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3922fc08bf30dde7daa7e01d1f810cb3e45d5d81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938960"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498537"
 ---
 # <a name="fallbackpolicyproperties-resource-type"></a>fallbackPolicyProperties 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,9 +22,9 @@ ms.locfileid: "37938960"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| platformTypes | String collection | 指定开发人员想要对其启用原始 toast 通知回退的平台。 目前，如果指定了**fallbackPolicy** ，则**targetPolicy**必须包含`iOS`和可选的其他平台。 此外， **fallbackPolicy**是必需的，并且当前`iOS`仅支持 platformTypes 平台。 |
+| platformTypes | String 集合 | 指定开发人员想要对其启用原始 toast 通知回退的平台。 目前，如果指定了**fallbackPolicy** ，则**targetPolicy**必须包含`iOS`和可选的其他平台。 此外， **fallbackPolicy**是必需的，并且当前`iOS`仅支持 platformTypes 平台。 |
 | fallbackDelayInSeconds | Int32 | 此延迟表示将直接 toast 通知发送到不提取原始通知的每个用户 iOS 设备订阅之前传递的时间量（以秒为单位）。 该值必须介于60和600之间。 |
 | visualContent | [visualProperties](visualproperties.md)|在 iOS 上回退启动的原始到可视用户通知的可视内容。 |
  

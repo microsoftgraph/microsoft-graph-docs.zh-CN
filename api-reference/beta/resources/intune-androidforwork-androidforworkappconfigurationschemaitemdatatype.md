@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: edc854d1e347c15d406a527c047a5bc3f2f43438
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5a5379b4e3e3b3baec47271d518fb240133e3a66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42494988"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android for Work 应用程序的自定义配置架构内的配置项目的数据类型
 
@@ -24,13 +26,13 @@ Android for Work 应用程序的自定义配置架构内的配置项目的数据
 |成员|值|说明|
 |:---|:---|:---|
 |布尔值|0|尚未记录|
-|integer|1|尚未记录|
-|string|双面|尚未记录|
-|决定|第三章|尚未记录|
-|multiselect|4|尚未记录|
-|bundle|5|尚未记录|
-|bundleArray|型|尚未记录|
-|hidden|步|尚未记录|
+|integer|1 |尚未记录|
+|string|2 |尚未记录|
+|决定|3 |尚未记录|
+|multiselect|4 |尚未记录|
+|bundle|5 |尚未记录|
+|bundleArray|6 |尚未记录|
+|hidden|7 |尚未记录|
 
 
 

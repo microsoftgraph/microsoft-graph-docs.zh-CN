@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 470d29844470df6f5cd81ba0d40156492c1fd635
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 30e9451d67a5438a8739879747e301d016e0520a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971807"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496661"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon 或 LinkedIn。
 
-在 Azure AD B2C 租户中配置标识提供程序可实现以下功能:
+在 Azure AD B2C 租户中配置标识提供程序可实现以下功能：
 
 * 用户使用使用者应用程序中的社交帐户进行注册并登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户注册服务。
 * 用户将现有本地帐户链接到使用者应用程序中的社交帐户。 例如，用户已在应用程序中创建用户名和密码（本地帐户）。 之后，用户决定将现有本地帐户链接到其 Facebook 帐户，以便能使用 Facebook 进行登录。
@@ -43,7 +45,7 @@ ms.locfileid: "35971807"
 |clientSecret|字符串|是|No|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
 |id|字符串|否|否|标识提供程序的 ID。|
 |name|字符串|否|否|标识提供程序的显示名称。|
-|type|String|是|否|标识提供程序类型。 它必须是下列值之一: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
+|type|String|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

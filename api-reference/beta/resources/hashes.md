@@ -2,18 +2,20 @@
 author: JeremyKelley
 description: 哈希资源将可用哈希分组到项的单个结构中。
 ms.date: 09/10/2017
-title: 希
+title: 哈希
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b620170cf05e8e04cb4368874ea20d29c5440298
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 985efa857fdf9aaa254884e04bfccf1d780d5b8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496927"
 ---
 # <a name="hashes-resource-type"></a>哈希资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

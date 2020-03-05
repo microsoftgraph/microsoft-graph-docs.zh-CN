@@ -1,20 +1,22 @@
 ---
 title: fileHash 资源类型
-description: 包含有关文件哈希 (加密和位置敏感) 的状态信息。
+description: 包含有关文件哈希（加密和位置敏感）的状态信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 532389671cacb907c7e85862a621b936ec1691a0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a163a89e1e7ca7cb2a6bdf4c65945a601323d8fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973532"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498236"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
-包含有关文件哈希 (加密和位置敏感) 的状态信息。
+命名空间： microsoft. graph
+
+包含有关文件哈希（加密和位置敏感）的状态信息。
 
 ## <a name="properties"></a>属性
 

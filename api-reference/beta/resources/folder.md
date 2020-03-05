@@ -6,14 +6,16 @@ title: Folder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f9cbbba6ae20c56800a5f6f492319f47b7d8017c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7950008a3bcd310e90f604becb865d130781b34
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971989"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497893"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

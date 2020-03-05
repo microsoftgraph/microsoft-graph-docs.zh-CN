@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bfc3bb7895a3ec66a32456b48901fc456d3c3b2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32be4465ffcd710bbfdaf8f3c60b3813a0b7d3be
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971866"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497319"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35971866"
 |属性      | 类型         |说明|
 |:-------------|:-------------|:----------|
 |ruleIdentifier|String        |规则的 id。 例如``ExpirationRule``和``MfaRule``。|
-|setting       |String        |规则的设置。 该值是一个包含 Parameter_Name: Parameter_Value 格式的对列表的 JSON 字符串。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|setting       |String        |规则的设置。 此值是一个 JSON 字符串，其格式为 Parameter_Name： Parameter_Value 的一对列表。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

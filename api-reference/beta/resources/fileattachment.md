@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036219"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498299"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +37,7 @@ ms.locfileid: "37036219"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contentBytes|Edm|文件的 Base64 编码内容。|
+|contentBytes|Edm.Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|
 |contentLocation|String|请勿使用此属性，因为它不受支持。|
 |contentType|String|附件的内容类型。|

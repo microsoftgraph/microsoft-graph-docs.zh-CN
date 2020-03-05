@@ -6,14 +6,16 @@ title: 了解 identityset
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c43981c1f7e79567afe901217030a0b5abed6f53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08986af20ae7591798a222e68d9b9bee5244e273
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006288"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496605"
 ---
 # <a name="identityset-resource-type"></a>了解 identityset 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +70,7 @@ ms.locfileid: "36006288"
 
 ## <a name="remarks"></a>注解 
 
-有关**了解 identityset**资源的使用情况, 请参阅[Call](call.md) 。
+有关**了解 identityset**资源的使用情况，请参阅[Call](call.md) 。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

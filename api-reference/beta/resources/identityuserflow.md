@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5410b65dfdb0841aa997022b43dc04d0a4627008
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: d4fa3064d19d96a2a8297f72de6a625ee36c8db3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734540"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496549"
 ---
 # <a name="userflow-resource-type"></a>UserFlow 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37734540"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md) | 列出 UserFlows。 |
-| [创建](../api/identityuserflow-post-userflows.md) | 无 | 创建 UserFlow 对象。 |
+| [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md)集合 | 列出 UserFlows。 |
+| [创建](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | 创建 UserFlow 对象。 |
 | [获取](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | 读取 UserFlow 对象的属性和关系。 |
 | [删除](../api/identityuserflow-delete.md) | 无 | 删除 UserFlow 对象。 |
 

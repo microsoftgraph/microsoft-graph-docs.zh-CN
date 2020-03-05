@@ -6,14 +6,16 @@ title: FileSystemInfo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ec51199ce30326c47288aa0f9b5916a035c4cee3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9acae81dd9f6034c1919a1079ac4ce52535ec0c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498131"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

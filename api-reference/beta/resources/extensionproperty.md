@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f42ac98e0e13d8482f025e8b86886b1658d80d1d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5c71eade005bc76b5e0ebe3c23d3482d63e3712f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939065"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498999"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,19 +31,19 @@ ms.locfileid: "37939065"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列表扩展](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md)集合 | 列出应用程序对象上的扩展属性。 |
-| [创建扩展](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在 application 对象上创建扩展属性。 |
-| [删除扩展](../api/application-delete-extensionproperty.md) | 无 | 从 application 对象中删除扩展属性。 |
+| [列出扩展](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
+| [创建扩展](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
+| [删除扩展](../api/application-delete-extensionproperty.md) | 无 | 从应用程序对象删除扩展属性。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |appDisplayName|String| 在其上定义此扩展属性的 application 对象的显示名称。 只读。 |
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
-|isSyncedFromOnPremises|Boolean| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
-|name|字符串| 扩展属性的名称。 不可为空。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
+|isSyncedFromOnPremises|布尔| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
+|name|字符串| 扩展属性的名称。 不可为 null。 |
+|targetObjects|String 集合| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>关系
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4a77afc0aeef6c68d7bd58e554848068f25e1142
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 49e268f894b6733eb3f44d36fa34bc7c80df0ded
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498915"
 ---
 # <a name="externalconnection-resource-type"></a>externalConnection 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,16 +40,16 @@ ms.locfileid: "40866838"
 | 属性      | 类型                              | 说明 |
 |:--------------|:----------------------------------|:------------|
 | 设置 | [configuration](configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 可选。 |
-| description   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
-| id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以`Microsoft`下列值开头，也不能为`None`下列`Directory`值`Exchange`之一`ExchangeArchive`： `LinkedIn`、 `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer`、、、、、、 `Connectors`、、、。 必需。 |
-| name          | String                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必需。 |
+| 说明   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
+| id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以`Microsoft`下列值开头，也不能为`None`下列`Directory`值`Exchange`之一`ExchangeArchive`： `LinkedIn`、 `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer`、、、、、、 `Connectors`、、、。 必填。 |
+| name          | String                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必填。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型                                                     | 说明 |
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [externalItem](externalitem.md)集合               | 只读。可为空。 |
-| operations   | [connectionOperation](connectionoperation.md)集合 | 只读。 可为 Null。 |
+| operations   | [connectionOperation](connectionoperation.md)集合 | 只读。 可为 NULL。 |
 | 架构       | [schema](schema.md)                                      | 只读。可为空。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

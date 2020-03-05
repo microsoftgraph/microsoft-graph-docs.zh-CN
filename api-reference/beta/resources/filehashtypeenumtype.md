@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d377d530bf3b9dbdef37178ff6290ba4b63e6ad4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8f2b733363ecbd79a885a0b76c170f076664590
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972024"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498215"
 ---
 # <a name="filehashtype-enum"></a>fileHashType 枚举
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ ms.locfileid: "35972024"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知类型。|
-|sha1|1|SHA1 哈希类型。|
-|sha256|双面| SHA256 哈希类型。|
-|md5|第三章| MD5 哈希类型。|
-|authenticodeHash256|4| AuthenticodeHash256 哈希类型。|
-|lsHash|5| LsHash 哈希类型。|
-|ctph|型| CTPH 哈希类型。|
-|peSha1|步| PESHA1 哈希类型。|
-|peSha256|utf-8| PESHA256 哈希类型。|
+|sha1|1 |SHA1 哈希类型。|
+|sha256|2 | SHA256 哈希类型。|
+|md5|3 | MD5 哈希类型。|
+|authenticodeHash256|4 | AuthenticodeHash256 哈希类型。|
+|lsHash|5 | LsHash 哈希类型。|
+|ctph|6 | CTPH 哈希类型。|
+|peSha1|7 | PESHA1 哈希类型。|
+|peSha256|8 | PESHA256 哈希类型。|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ae0409124569f4318df94f97729402a91d4b8e45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 700ef4b222860d19ef3ba78ae583a50e8cf8d0cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972143"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499482"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -21,18 +23,18 @@ ms.locfileid: "35972143"
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | Boolean           |
+| isDeleted         | 布尔           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
-| mailForMac        | String collection |
-| outlookForMac     | String collection |
-| outlookForWindows | String collection |
-| outlookForMobile  | String collection |
-| otherForMobile    | String collection |
-| outlookForWeb     | String collection |
-| pop3App           | String collection |
-| imap4App          | String collection |
-| smtpApp           | String collection |
+| mailForMac        | String 集合 |
+| outlookForMac     | String 集合 |
+| outlookForWindows | String 集合 |
+| outlookForMobile  | String 集合 |
+| otherForMobile    | String 集合 |
+| outlookForWeb     | String 集合 |
+| pop3App           | String 集合 |
+| imap4App          | String 集合 |
+| smtpApp           | String 集合 |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

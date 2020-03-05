@@ -6,14 +6,16 @@ title: 标识
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: cb05aa4a8ddf9d4e641bcebdff3f5984ddd34d61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ebfc032008bf478c3c66883aceb802992704f46d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971821"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496801"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,8 +39,8 @@ ms.locfileid: "35971821"
 | 属性            | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
-| id                  | 字符串 | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | 租户的唯一标识 (可选)。                                                                                                                                                                                                                                                                             |
+| id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
+| tenantId            | String | 租户的唯一标识（可选）。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
 

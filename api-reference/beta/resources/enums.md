@@ -5,14 +5,16 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 8cf41b6a69c0154eda59068e39a4d5d6d4cd80d2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3218bf404665e9e4889fae77e5b1efbbd6f2dc9f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499188"
 ---
 # <a name="enum-values"></a>枚举值
+
+命名空间： microsoft. graph
 
 ### <a name="attachmenttype-values"></a>attachmentType 值
 
@@ -92,7 +94,7 @@ ms.locfileid: "40870279"
 |:---|
 |无|
 |car|
-|calendar|
+|日历|
 |运行|
 |plane|
 |firstAid|
@@ -404,7 +406,7 @@ ms.locfileid: "40870279"
 | 转发
 | noResponseNecessary
 | 自述
-| 回复
+| 响应
 | replyToAll
 | 概述
 
@@ -470,7 +472,7 @@ ms.locfileid: "40870279"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | reference
 
 

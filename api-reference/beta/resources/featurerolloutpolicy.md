@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 958e6750c9b6a0749613d3a380b43a7d1ab282c2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498481"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,14 +63,14 @@ ms.locfileid: "40870248"
 |displayName|String|此功能展示策略的显示名称。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
 |id|字符串| 只读。|
-|isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
+|isAppliedToOrganization|布尔|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 可为 Null。 指定为其启用功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定为其启用功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -6,14 +6,16 @@ title: GeolocationColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1bb749ebf38709fee04a0009fea2174297a173ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973518"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497627"
 ---
 # <a name="geolocationcolumn-resource-type"></a>geolocationColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -6,14 +6,16 @@ title: 图像
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c41925443820b96098c03de00f4c3741da0cec95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 06d9c5b22c4786fc92e8156dbfea066c77d219f3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973511"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496535"
 ---
 # <a name="image-resource-type"></a>图像资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

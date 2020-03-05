@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b49ce2c0fb0c1d2ab167ffbb033bf11b0171a20f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: cb782ff0090c5e89e4a87f86af75f3fb51bb8251
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844489"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495653"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,7 +66,7 @@ ms.locfileid: "39844489"
 -   InfoPath
 -   Visio
 -   Publisher
--   项目
+-   Project
 -   Access
 -   邮件
 -   Csv
@@ -79,7 +81,7 @@ ms.locfileid: "39844489"
 -   Story
 -   ExternalContent
 -   Folder
--   Other
+-   其他
 
 示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -87,7 +89,7 @@ ms.locfileid: "39844489"
 根据[officeGraphInsights](officegraphinsights.md)返回文件的容器，受支持的类型可能有所不同。 例如，仅[sharedInsight](insights-shared.md)真知灼见将从 "收存箱"、"Box" 和 "GDrive" 返回文件。
 
 -   OneDriveBusiness
--   Site
+-   站点
 -   邮件
 -   箱
 -   Box

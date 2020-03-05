@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b665391a4e7832feea72302db9ffb49c98f69964
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2b358101630b5accbd048f52fc829a9ed56953c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365914"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42493172"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含捆绑包包中的 MacOS LOB 应用程序的属性
 
@@ -24,8 +26,8 @@ ms.locfileid: "36365914"
 |属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|标识名称。|
-|buildNumber|String|MacOS 业务线 (LoB) 应用的内部版本号。|
-|versionNumber|String|MacOS 业务线 (LoB) 应用的版本号。|
+|buildNumber|String|MacOS 业务线（LoB）应用的内部版本号。|
+|versionNumber|String|MacOS 业务线（LoB）应用的版本号。|
 
 ## <a name="relationships"></a>关系
 无

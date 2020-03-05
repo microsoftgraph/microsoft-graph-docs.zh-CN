@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7ca1b7b0a2ae4021dc2def637e0326044ab8749e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 5b4170a3baf186d907340bc1c490c508644ec30a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331375"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496934"
 ---
 # <a name="groupmembers-complex-type"></a>groupMembers 复杂类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "42331375"
 | :--------------------------- | :------------------------ | :---------- |
 | id |字符串 | Azure AD 中的组 ID。 |
 | 说明 |String | Azure AD 中的组的名称。 只读。 |
-| isBackup | 布尔值 | 对于审批阶段中的**groupMembers** ，此属性指示组成员是备份回退审批者。 |
+| isBackup | 布尔 | 对于审批阶段中的**groupMembers** ，此属性指示组成员是备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

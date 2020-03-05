@@ -6,14 +6,16 @@ title: FieldValueSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: dab7c315174342f68c6fcb045e46d7da9d32f06a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5c7f741fe5f1dd46b4ffe7572d2bd982aea4853
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972045"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498418"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

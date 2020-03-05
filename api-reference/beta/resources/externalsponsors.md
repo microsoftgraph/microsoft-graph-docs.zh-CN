@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a14a6821d06dc566aa355f77100ef75cc8394f6e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 03e73fe63e7624b2ab9d549c3b9ccd1526301a9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498607"
 ---
 # <a name="externalsponsors-complex-type"></a>externalSponsors 复杂类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "42331356"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isBackup | 布尔值 | 指示发起人是否为备份回退审批者。 |
+| isBackup | 布尔 | 指示发起人是否为备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

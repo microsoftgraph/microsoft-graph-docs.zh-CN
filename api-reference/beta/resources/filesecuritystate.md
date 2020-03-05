@@ -1,31 +1,33 @@
 ---
 title: fileSecurityState 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f061ca71bcd16c16e0292673338e2cb8d915e845
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3827562407b0c253c1d5a16ff26071e8500010bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972010"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498166"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
+命名空间： microsoft. graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关与警报相关的文件 (不处理) 的信息。
+包含有关与警报相关的文件（不处理）的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|包含文件哈希 (加密和位置敏感) 的复杂类型。|
-|name|String|文件名 (不含路径)。|
+|fileHash|[fileHash](filehash.md)|包含文件哈希（加密和位置敏感）的复杂类型。|
+|name|String|文件名（不含路径）。|
 |路径|String|文件/imageFile 的完整文件路径。|
-|riskScore|String|通知文件的提供程序生成/计算风险分数。 建议的值范围为 0-1, 这相当于一个百分比。|
+|riskScore|String|通知文件的提供程序生成/计算风险分数。 建议的值范围为0-1，这相当于一个百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

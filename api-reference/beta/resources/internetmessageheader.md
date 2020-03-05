@@ -1,18 +1,20 @@
 ---
 title: internetMessageHeader 资源类型
-description: '表示 Internet 邮件头 (由 RFC5322 定义) 的键/值对, 可提供 '
+description: '表示 Internet 邮件头（由 RFC5322 定义）的键/值对，可提供 '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f6efe9bf24e97df62bd3dc572e36f6ded4417cec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 91d4bc74bd71a20e6bcc1f03c1855f8654d9e899
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971793"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495401"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
