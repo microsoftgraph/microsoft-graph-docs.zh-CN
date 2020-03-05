@@ -6,14 +6,16 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 962fc4928bac69489cf2ae2a4c77f3b72169ce0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a066505348b1a1014b27ca3c83e0ee2f97f41a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522951"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,7 @@ ms.locfileid: "35966942"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | 如果为 `true`，则表明已为此列表启用内容类型。
+| **contentTypesEnabled** | 布尔 | 如果为 `true`，则表明已为此列表启用内容类型。
 | **hidden**              | Boolean | 如果为 `true`，则表明该列表通常在 SharePoint 用户体验中不可见。
 | **template**            | String  | 一个枚举值，表示创建列表时使用的基本列表模板。 可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。
 

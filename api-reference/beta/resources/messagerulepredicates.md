@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e36cabc34e1374d666e8a9c34d72dd570a0eb2f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4afb1d0d12ffb49bbba8bd7c012ca36656085ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522657"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,35 +23,35 @@ ms.locfileid: "35966725"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| bodyContains | String collection | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
-| bodyOrSubjectContains | String collection | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
-| categories | String collection | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
+| bodyContains | String 集合 | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
+| bodyOrSubjectContains | String 集合 | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
+| categories | String 集合 | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
 | fromAddresses | [recipient](recipient.md) collection | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
 | hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
-| headerContains | String collection | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
+| headerContains | String 集合 | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | importance | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
-| isApprovalRequest | Boolean | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
-| isAutomaticForward | Boolean | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
-| isAutomaticReply | Boolean | 指示传入的邮件是否必须自动答复，以便条件或例外情况适用。 |
-| isEncrypted | Boolean | 指示传入的邮件是否必须加密，以便条件或例外情况适用。 |
-| isMeetingRequest | Boolean | 指示传入的邮件是否必须为会议请求，以便条件或例外情况适用。 |
-| isMeetingResponse | Boolean | 指示传入的邮件是否必须为会议响应，以便条件或例外情况适用。 |
-| isNonDeliveryReport | Boolean | 指示传入的邮件是否必须为未送达报告，以便条件或例外情况适用。 |
-| isPermissionControlled | Boolean | 指示传入的邮件是否必须受权限控制（受 RMS 保护），以便条件或例外情况适用。 |
-| isReadReceipt | Boolean | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
-| isSigned | Boolean | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
-| isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
-| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为: `any`、 `call`、 `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply`、、、、、、、、 `review` `replyToAll`。 |
-| notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
-| recipientContains | String collection | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
-| senderContains | String collection | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
+| isApprovalRequest | 布尔 | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
+| isAutomaticForward | 布尔 | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
+| isAutomaticReply | 布尔 | 指示传入的邮件是否必须自动答复，以便条件或例外情况适用。 |
+| isEncrypted | 布尔 | 指示传入的邮件是否必须加密，以便条件或例外情况适用。 |
+| isMeetingRequest | 布尔 | 指示传入的邮件是否必须为会议请求，以便条件或例外情况适用。 |
+| isMeetingResponse | 布尔 | 指示传入的邮件是否必须为会议响应，以便条件或例外情况适用。 |
+| isNonDeliveryReport | 布尔 | 指示传入的邮件是否必须为未送达报告，以便条件或例外情况适用。 |
+| isPermissionControlled | 布尔 | 指示传入的邮件是否必须受权限控制（受 RMS 保护），以便条件或例外情况适用。 |
+| isReadReceipt | 布尔 | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
+| isSigned | 布尔 | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
+| isVoicemail | 布尔 | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
+| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为： `any`、 `call`、 `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply`、、、、、、、、 `review` `replyToAll`。 |
+| notSentToMe | 布尔 | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
+| recipientContains | String 集合 | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
+| senderContains | String 集合 | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
 | sensitivity | 敏感度 | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可能的值包括 `normal`、`personal`、`private`、`confidential`。 |
-| sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
-| sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
+| sentCcMe | 布尔 | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
+| sentOnlyToMe | 布尔 | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
 | sentToAddresses | [recipient](recipient.md) collection | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
-| sentToMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
+| sentToMe | 布尔 | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
 | sentToOrCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中，以便条件或异常情况适用。 |
-| subjectContains | String collection | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
+| subjectContains | String 集合 | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
 | withinSizeRange | [sizeRange](sizerange.md) | 表示传入邮件必须介于其中的最小大小和最大大小（以千字节为单位），以便条件或例外情况适用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

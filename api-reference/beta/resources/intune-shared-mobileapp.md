@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9688f0b4223fe0e1ec2e355c54f0efcbffdc2573
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ca889aadfe5ce3a2bdbb7c2409db0b2ddec451af
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538719"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523623"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Intune 移动应用基属性的抽象类。
 
@@ -38,17 +40,17 @@ ms.locfileid: "37538719"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。|
-|displayName|字符串|管理员提供或导入的应用标题。|
+|displayName|String|管理员提供或导入的应用标题。|
 |说明|字符串|应用的说明。|
-|publisher|字符串|应用的发布者。|
+|publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
-|privacyInformationUrl|字符串|隐私声明 Url。|
-|informationUrl|字符串|详细信息 Url。|
+|privacyInformationUrl|String|隐私声明 Url。|
+|informationUrl|String|详细信息 Url。|
 |owner|String|应用的所有者。|
-|developer|字符串|应用的开发者。|
+|developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |uploadState|Int32|上载状态。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|

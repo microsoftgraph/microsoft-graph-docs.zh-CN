@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: cc80110a2f8f755ef984b2f993ea660798a86743
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21bc509fd2364365e29d1e35bcbe78d67fdc40c8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966466"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522377"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>oneDriveUsageAccountDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -22,7 +24,7 @@ ms.locfileid: "35966466"
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | Boolean |
+| isDeleted               | 布尔 |
 | lastActivityDate        | 日期    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |

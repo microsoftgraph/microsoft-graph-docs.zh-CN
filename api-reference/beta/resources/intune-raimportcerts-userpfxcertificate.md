@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5207ebe54ad6dd7f6f5273bfd9062852c4de24f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b252b4bc420b3643b313dd5b226d0458af892de3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523933"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 封装用户的 PFX 证书所需的所有信息的实体。
 
@@ -39,7 +41,7 @@ ms.locfileid: "36308140"
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
+|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|

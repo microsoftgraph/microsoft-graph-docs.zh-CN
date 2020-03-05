@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1c9fffd2edec48fb528dcb2f6c5a751dd4f32d30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f52a68cd2e6803943ac1f76fd2df12ae01f88071
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010103"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523175"
 ---
 # <a name="configuring-the-invitation-message"></a>配置邀请邮件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36010103"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |ccRecipients|[recipient](recipient.md) collection|应将邀请邮件发送到的其他收件人。 目前仅支持1个额外的收件人。|
-|customizedMessageBody|String|如果不需要默认邮件, 则为要发送的自定义邮件正文。|
-|messageLanguage|String|要在其中发送默认邮件的语言。 如果指定了 customizedMessageBody, 则忽略此属性, 并使用 customizedMessageBody 发送邮件。 语言格式应为 ISO 639。 默认值为 en-us。|
+|customizedMessageBody|String|如果不需要默认邮件，则为要发送的自定义邮件正文。|
+|messageLanguage|String|要在其中发送默认邮件的语言。 如果指定了 customizedMessageBody，则忽略此属性，并使用 customizedMessageBody 发送邮件。 语言格式应为 ISO 639。 默认值为 en-us。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

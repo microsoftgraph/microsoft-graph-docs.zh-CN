@@ -1,24 +1,26 @@
 ---
 title: sideLoadingKey 资源类型
-description: 对于租户, Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
+description: 对于租户，Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d812862af014d9e33674c495688223bc5b32d5c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1be5f4db6876ff18d17305fe657c9852c01fd15f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375413"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524081"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-对于租户, Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+对于租户，Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -33,7 +35,7 @@ ms.locfileid: "36375413"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|侧加载密钥唯一 Id。|
-|value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
+|value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
 |说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|

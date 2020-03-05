@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f2ff99f6f7548e9176358219d70cd55e1232a05
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cf031459004e0c0d56b5b09145ed897a9f960142
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523007"
 ---
 # <a name="labeldetails-resource-type"></a>labelDetails 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,15 +22,15 @@ ms.locfileid: "37939171"
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型    | 描述                                                                                                  |
+| 属性    | 类型    | 说明                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
 | color       | String  | 用户界面针对标签应显示的颜色（如果已配置）。                               |
-| description | String  | 管理员定义的标签说明。                                                                 |
+| 说明 | String  | 管理员定义的标签说明。                                                                 |
 | id          | String  | 标签 ID 是一个全局唯一标识符（GUID）。                                                          |
-| isActive    | Boolean | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
+| isActive    | 布尔 | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
 | name        | 字符串  | 标签的纯文本名称。                                                                             |
 | sensitivity | Int32   | 标签的敏感度值，其中较小的是不敏感的。                                           |
-| tooltip     | 字符串  | 应为用户界面中的标签显示的工具提示。                                      |
+| tooltip     | String  | 应为用户界面中的标签显示的工具提示。                                      |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

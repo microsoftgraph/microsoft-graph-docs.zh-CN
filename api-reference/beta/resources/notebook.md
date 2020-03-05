@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 76d4d8daf17fa6c953ad7bf727c8b6481f7dc8b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b904928b03318a57f6ed4bd7bd7696b4a8805571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009592"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522559"
 ---
 # <a name="notebook-resource-type"></a>笔记本资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,10 +62,10 @@ OneNote 笔记本。
 |isShared|Boolean|指明笔记本是否为共享。 如果是，笔记本的内容可供所有者以外的用户查看。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改笔记本的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|links|[notebookLinks](notebooklinks.md)|用于打开笔记本的链接。 如果`oneNoteClientURL`安装了 OneNote 本机客户端, 则链接将在其中打开笔记本。 该`oneNoteWebURL`链接将在 web 上的 OneNote 中打开笔记本。|
+|links|[notebookLinks](notebooklinks.md)|用于打开笔记本的链接。 如果`oneNoteClientURL`安装了 OneNote 本机客户端，则链接将在其中打开笔记本。 该`oneNoteWebURL`链接将在 web 上的 OneNote 中打开笔记本。|
 |displayName|字符串|笔记本的名称。|
-|sectionGroupsUrl|String|`sectionGroups`导航属性的 URL, 该 URL 将返回笔记本中的所有分区组。 只读。|
-|sectionsUrl|String|`sections`导航属性的 URL, 该 URL 将返回笔记本中的所有分区。 只读。|
+|sectionGroupsUrl|String|`sectionGroups`导航属性的 URL，该 URL 将返回笔记本中的所有分区组。 只读。|
+|sectionsUrl|String|`sections`导航属性的 URL，该 URL 将返回笔记本中的所有分区。 只读。|
 |自学|String|终结点，您可在此处获取关于笔记本的详细信息。 只读。|
 |userRole|String|可能的值是：`Owner`、`Contributor`、`Reader`、`None`。 Owner 表示对笔记本的所有者级别访问。 参与者表示对笔记本的读/写访问权限。 读取器表示对笔记本的只读访问。 只读。|
 
@@ -77,9 +79,9 @@ OneNote 笔记本。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取笔记本](../api/notebook-get.md) | [笔记](notebook.md) |读取笔记本的属性和关系。|
+|[获取笔记本](../api/notebook-get.md) | [笔记本](notebook.md) |读取笔记本的属性和关系。|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md)集合 | 获取用户最近访问过的一组笔记本。 |
-|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [笔记](notebook.md) | 使用 URL 路径检索笔记本对象的属性和关系。 |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [笔记本](notebook.md) | 使用 URL 路径检索笔记本对象的属性和关系。 |
 |[创建分区组](../api/notebook-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| 通过发布到指定笔记本中的 sectionGroups 集合创建分区组。|
 |[列出分区组](../api/notebook-list-sectiongroups.md) |[sectionGroup](sectiongroup.md)集合| 获取指定笔记本中的分区组的集合。|
 |[创建分区](../api/notebook-post-sections.md) |[onenoteSection](onenotesection.md)| 通过发布到指定笔记本中的 section 集合来创建一个分区。|

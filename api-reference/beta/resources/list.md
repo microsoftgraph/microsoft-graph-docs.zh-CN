@@ -6,14 +6,16 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 634ac31e5fa5de3700c238b4a931e5b43455e801
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: a7e59cf2e81371428e3816acc6e89c4a102ca40e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331239"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522958"
 ---
 # <a name="list-resource"></a>List 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

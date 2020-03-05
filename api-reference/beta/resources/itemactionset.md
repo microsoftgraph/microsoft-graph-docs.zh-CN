@@ -6,14 +6,16 @@ title: ItemActionSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8053942fe96011b018e46681d69d308f65aa5d5f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3b803b719ad14fabf19574a55360009c3dda14e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967145"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523133"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ ms.locfileid: "35967145"
 以下是目前可用的操作。
 可能会在将来记录新操作，因此，请确保你的应用程序允许处理 **itemActionSet**，而无需执行任何应用程序理解的操作。
 
-| 属性名 | 类型              | 说明
+| 属性名称 | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | 向项目添加了注释。
 | create        | [createAction][]  | 创建了项目。

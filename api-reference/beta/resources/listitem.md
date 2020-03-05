@@ -6,14 +6,16 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03f3dae851cf9a23dbe300f834846046dce4de74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009977"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522944"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -84,7 +86,7 @@ ms.locfileid: "36009977"
 
 **listItem** 资源具有以下属性。
 
-| 属性名 | 类型                | 说明
+| 属性名称 | 类型                | 说明
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | 此列表项的内容类型
 

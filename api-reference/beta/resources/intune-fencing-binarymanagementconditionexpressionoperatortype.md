@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 11833fdc640182f628bcc2d08974d01cade4a4f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 58a58f8c4344ff7206389d89608fbeb6ba7d8e88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326700"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524530"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 支持的管理条件表达式的二元运算符。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|或|0|当且仅当一个或多个操作数为 true 时, 将一组操作数评估为 true。|
-|和|1|当且仅当其所有操作数均为 true 时, 将一组操作数评估为 true。|
+|或|0|当且仅当一个或多个操作数为 true 时，将一组操作数评估为 true。|
+|和|1 |当且仅当其所有操作数均为 true 时，将一组操作数评估为 true。|
 
 
 

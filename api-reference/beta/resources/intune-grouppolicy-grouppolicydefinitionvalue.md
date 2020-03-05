@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 406c7107418255c00e123a4a4c21b9ae446eea5d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b9ad80f427061da8813f3d63f0cfc1be424c27f2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524446"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 "定义值" 实体存储单个组策略定义的值。
 
@@ -34,7 +36,7 @@ ms.locfileid: "36331446"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |enabled|Boolean|启用或禁用关联的组策略定义。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置值。 这可以是策略, 也可以是首选项。 可能的值是：`policy`、`preference`。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置值。 这可以是策略，也可以是首选项。 可能的值是：`policy`、`preference`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

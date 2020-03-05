@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3eeeadf3ed27087051c7bf6945920466d60b9469
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8be2cf55c095a6d1737525e491f920213b04cff0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844991"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523189"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,18 +41,18 @@ ms.locfileid: "39844991"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
-|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必填。 电子邮件地址中不允许以下特殊字符：<br><ul><li>波形符（~）</li><li>感叹号（`!`）</li><li>At 符号（`@`）</li><li>数字记号（`#`）</li><li>美元符号（`$`）</li><li>百分比（`%`）</li><li>扬抑`^`符（）</li><li>与号 (`&`)</li><li>星号（`*`）</li><li>括号（`( )`）</li><li>连字符`-`（）</li><li>加号（`+`）</li><li>等号（`=`）</li><li>括号（`[ ]`）</li><li>大括号`{ }`（）</li><li>反斜杠`\`（）</li><li>斜杠标记（`/`）</li><li>管道（`|`）</li><li>分号（`;`）</li><li>冒号（`:`）</li><li>引号（`"`）</li><li>尖括号（`< >`）</li><li>问号（`?`）</li><li>逗号（`,`）</li></ul><br>但是，以下例外情况适用：<br><ul><li>除了名称的`.`开头或结尾之外，`-`用户名称中的任何位置都允许使用句点（）或连字符（）。</li><li>用户名中的`_`任何位置都允许有下划线（）。 这包括在名称的开头或结尾。</li></ul>|
+|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必需。 电子邮件地址中不允许使用以下特殊字符：<br><ul><li>波形符 (~)</li><li>感叹号 (`!`)</li><li>@ 符号 (`@`)</li><li>井号 (`#`)</li><li>美元符号 (`$`)</li><li>百分号 (`%`)</li><li>扬抑符 (`^`)</li><li>与号 (`&`)</li><li>星号 (`*`)</li><li>圆括号 (`( )`)</li><li>连字符 (`-`)</li><li>加号 (`+`)</li><li>等号 (`=`)</li><li>方括号 (`[ ]`)</li><li>大括号 (`{ }`)</li><li>反斜杠 (`\`)</li><li>斜杠符号 (`/`)</li><li>竖线 (`|`)</li><li>分号 (`;`)</li><li>冒号 (`:`)</li><li>引号 (`"`)</li><li>尖括号 (`< >`)</li><li>问号 (`?`)</li><li>逗号 (`,`)</li></ul><br>但是，存在下列例外情况：<br><ul><li>允许在用户名中的任何位置使用句点 (`.`) 或连字符 (`-`)，但名称的开头或结尾除外。</li><li>允许在用户名中的任何位置使用下划线 (`_`)。 这包括名称的开头或结尾。</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|status|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

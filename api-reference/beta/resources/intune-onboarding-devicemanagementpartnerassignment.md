@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07a1dd94be6f73da420ba0cd3424030652eab2c5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c5427be3bd28b46d18e4342e1731255c2675d910
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524116"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>deviceManagementPartnerAssignment 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "38088201"
 为设备管理合作伙伴设定目标的用户组
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|为要通过合作伙伴注册的设备设定的用户组。|
 

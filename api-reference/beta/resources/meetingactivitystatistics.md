@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 14d926a41680f1292b7599bd76b458705b426719
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 039d2be82a08057c9f9a5405d3591898304a8bcc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622535"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522748"
 ---
 # <a name="meetingactivitystatistics-resource-type"></a>meetingActivityStatistics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,17 +31,17 @@ ms.locfileid: "36622535"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 为其返回统计信息的会议活动。|
-|duration|持续时间|会议上花费的总小时数。 值以 ISO 8601 格式表示, 持续时间。|
-|endDate|Date|会议活动结束的日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-04", 它遵循 YYYY-MM-DD 格式。|
+|duration|持续时间|会议上花费的总小时数。 值以 ISO 8601 格式表示，持续时间。|
+|endDate|Date|会议活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 会议活动的只读 ID。|
-|startDate|日期|会议活动的开始日期。 对于日历日期, 该值以 ISO 8601 格式表示。 例如, 属性值可以是 "2019-07-03", 它遵循 YYYY-MM-DD 格式。|
-|timeZoneUsed|String|用户在 Outlook 日历中设置的 Outlook 时区用于计算。 例如, 属性值可以是 "太平洋标准时间"。|
-|afterHours|持续时间|在会议上花费的时间超出工作时间, 基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示, 持续时间。|
-|存在|持续时间|在冲突会议中花费的时间 (会议与接受人员的人以及将人员的状态设置为 "忙碌" 的其他会议重叠)。 值以 ISO 8601 格式表示, 持续时间。|
-|long|持续时间|长会议花费的时间 (持续时间超过一个小时)。 值以 ISO 8601 格式表示, 持续时间。|
-|多|持续时间|人员在会议中花费的时间, 在这种情况下, 用户进行了多任务处理 (读取/发送的电子邮件数量超过最少, 并/或发送的邮件数超过团队或 Skype for Business 中的最少邮件数)。 值以 ISO 8601 格式表示, 持续时间。|
-|有条不紊|持续时间|由用户组织的会议所用的时间。 值以 ISO 8601 格式表示, 持续时间。|
-|重复性|持续时间|对定期会议花费的时间。 值以 ISO 8601 格式表示, 持续时间。|
+|startDate|日期|会议活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
+|timeZoneUsed|String|用户在 Outlook 日历中设置的 Outlook 时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
+|afterHours|持续时间|在会议上花费的时间超出工作时间，基于用户的 Outlook 日历设置的工作时间。 值以 ISO 8601 格式表示，持续时间。|
+|存在|持续时间|在冲突会议中花费的时间（会议与接受人员的人以及将人员的状态设置为 "忙碌" 的其他会议重叠）。 值以 ISO 8601 格式表示，持续时间。|
+|long|持续时间|长会议花费的时间（持续时间超过一个小时）。 值以 ISO 8601 格式表示，持续时间。|
+|多|持续时间|人员在会议中花费的时间，在这种情况下，用户进行了多任务处理（读取/发送的电子邮件数量超过最少，并/或发送的邮件数超过团队或 Skype for Business 中的最少邮件数）。 值以 ISO 8601 格式表示，持续时间。|
+|有条不紊|持续时间|由用户组织的会议所用的时间。 值以 ISO 8601 格式表示，持续时间。|
+|重复性|持续时间|对定期会议花费的时间。 值以 ISO 8601 格式表示，持续时间。|
 
 ## <a name="relationships"></a>关系
 

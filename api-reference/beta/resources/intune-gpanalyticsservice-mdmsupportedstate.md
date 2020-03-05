@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 75a0fd7419126ad949631bc3f7b788e3df662c4d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9d5424eccf29e30ecff1cc9a216d82b28d3ce6ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955460"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524460"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>mdmSupportedState 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,9 +26,9 @@ Mdm 支持的设置状态。
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|Mdm 支持的设置状态未知。|
-|支持|1|设置受支持。|
-|支持|双面|设置不受支持。|
-|被|第三章|设置为 depcrecated。|
+|支持|1 |设置受支持。|
+|支持|2 |设置不受支持。|
+|被|3 |设置为 depcrecated。|
 
 
 

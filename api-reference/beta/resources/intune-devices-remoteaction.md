@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1de6311ca96a4c46e31f5a3fd0711bab20d10116
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5818a7e0ffcaaad948ccd19c11293794fff756bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196761"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524947"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 远程操作 Intune 支持。
 
@@ -24,24 +26,24 @@ ms.locfileid: "37196761"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|用户启动未知操作。|
-|factoryReset|1|用户启动一个操作以出厂重置设备。 |
-|removeCompanyData|双面|用户启动一个操作，以从设备中删除公司数据。 |
-|resetPasscode|第三章|用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
-|remoteLock|4|用户启动一个操作，以远程锁定设备。|
-|enableLostMode|5|用户启动一个操作，以在受监督的 iOS 设备上启用丢失模式。|
-|disableLostMode|型|用户启动一个操作，以在受监督的 iOS 设备上禁用丢失模式。|
-|locateDevice|步|用户启动操作以查找受监督的 iOS 设备。|
-|rebootNow|utf-8|用户启动操作以重新启动 Windows 设备。|
-|recoverPasscode|第|用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
+|factoryReset|1 |用户启动一个操作以出厂重置设备。 |
+|removeCompanyData|2 |用户启动一个操作，以从设备中删除公司数据。 |
+|resetPasscode|3 |用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
+|remoteLock|4 |用户启动一个操作，以远程锁定设备。|
+|enableLostMode|5 |用户启动一个操作，以在受监督的 iOS 设备上启用丢失模式。|
+|disableLostMode|6 |用户启动一个操作，以在受监督的 iOS 设备上禁用丢失模式。|
+|locateDevice|7 |用户启动操作以查找受监督的 iOS 设备。|
+|rebootNow|8 |用户启动操作以重新启动 Windows 设备。|
+|recoverPasscode|9 |用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
 |cleanWindowsDevice|10 |用户启动操作以清理 windows 设备。|
-|logoutSharedAppleDeviceActiveUser|11x17|用户启动一个操作以注销共享 apple 设备上的当前用户。|
-|quickScan|12|用户启动操作以在设备上运行快速扫描。|
-|fullScan|13|用户启动操作以在设备上运行完全扫描。|
-|windowsDefenderUpdateSignatures|日|用户启动操作以更新设备上的恶意软件签名。|
-|factoryResetKeepEnrollmentData|个|用户使用保留注册数据的远程擦除设备启动操作。|
-|updateDeviceAccount|位|用户启动操作以更新设备上的帐户。|
-|automaticRedeployment|×|用户启动操作以 automatice 重新部署设备|
-|关闭|18|用户启动一种关闭设备的操作。|
+|logoutSharedAppleDeviceActiveUser|11 |用户启动一个操作以注销共享 apple 设备上的当前用户。|
+|quickScan|12 |用户启动操作以在设备上运行快速扫描。|
+|fullScan|13 |用户启动操作以在设备上运行完全扫描。|
+|windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上的恶意软件签名。|
+|factoryResetKeepEnrollmentData|15 |用户使用保留注册数据的远程擦除设备启动操作。|
+|updateDeviceAccount|16 |用户启动操作以更新设备上的帐户。|
+|automaticRedeployment|17 |用户启动操作以 automatice 重新部署设备|
+|关闭|18 |用户启动一种关闭设备的操作。|
 |rotateBitLockerKeys|合|用户启动一个操作，以在设备上旋转 BitLockerKeys。|
 |rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
 |getFileVaultKey|不足|用户启动一个操作以在 mac 上获取 FileVaultKey。|

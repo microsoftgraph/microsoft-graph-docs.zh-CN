@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbe64a4c58d405c0ea43e6201f3207169f3c1268
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1f5a56f3717b3d03b4caf900005661e316fa3401
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370849"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525472"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于标识展台配置的多模式应用配置的类
 
@@ -27,10 +29,10 @@ ms.locfileid: "36370849"
 |属性|类型|说明|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)集合|这些是仅可从 "开始" 菜单启动的 Windows 应用商店应用程序。 此集合最多可包含128个元素。|
-|showTaskBar|Boolean|通过此设置, 管理员可以指定是否显示任务条形图。|
-|allowAccessToDownloadsFolder|Boolean|此设置允许访问文件资源管理器中的下载文件夹。|
-|disallowDesktopApps|Boolean|此设置指示允许桌面应用。 默认值为 true。|
-|startMenuLayoutXml|Binary|允许管理员覆盖默认的 "开始" 布局, 并阻止用户对其进行更改。通过基于布局修改架构指定 XML 文件来修改布局。 XML 必须采用二进制格式。|
+|showTaskBar|布尔|通过此设置，管理员可以指定是否显示任务条形图。|
+|allowAccessToDownloadsFolder|布尔|此设置允许访问文件资源管理器中的下载文件夹。|
+|disallowDesktopApps|布尔|此设置指示允许桌面应用。 默认值为 true。|
+|startMenuLayoutXml|Binary|允许管理员覆盖默认的 "开始" 布局，并阻止用户对其进行更改。通过基于布局修改架构指定 XML 文件来修改布局。 XML 必须采用二进制格式。|
 
 ## <a name="relationships"></a>关系
 无

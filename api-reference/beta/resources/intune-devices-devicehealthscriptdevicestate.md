@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9ae4ae7e6f014b52f4049d6663b732680d033d5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4a5e7aa1816c4b47765259e41acd70a8fbd74405
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539083"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525080"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>deviceHealthScriptDeviceState 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备运行状况脚本的设备运行状态的属性。
 
@@ -32,16 +34,16 @@ ms.locfileid: "37539083"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|应在何时执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|字符串|修正前的检测脚本输出|
-|preRemediationDetectionScriptError|字符串|修正前的检测脚本中的错误|
-|remediationScriptError|字符串|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|字符串|修正后的检测脚本输出|
-|postRemediationDetectionScriptError|字符串|更正后来自检测脚本的错误|
+|preRemediationDetectionScriptOutput|String|修正前的检测脚本输出|
+|preRemediationDetectionScriptError|String|修正前的检测脚本中的错误|
+|remediationScriptError|String|修正脚本的错误输出|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
+|postRemediationDetectionScriptError|String|更正后来自检测脚本的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|来自 lastest 设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 
 ## <a name="relationships"></a>关系

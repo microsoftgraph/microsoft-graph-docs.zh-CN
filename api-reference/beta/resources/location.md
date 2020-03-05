@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b96dfb725c6a4e82c61f4d2eac3ebb3602c5d738
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b590d011570981fd926a5e12a8c89e6059b3b41
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009949"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522916"
 ---
 # <a name="location-resource-type"></a>位置资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

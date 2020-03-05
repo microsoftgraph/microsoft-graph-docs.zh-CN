@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1780dbfd6d53cf25fdd18b3c78f0c84c39b5455d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d041023fe8e3ab3e52f3e5c3383bf66a7eecf6ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538789"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525045"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的运行摘要的属性。
 
@@ -29,7 +31,7 @@ ms.locfileid: "37538789"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本运行摘要实体的键。 此属性是只读的。|
+|id|String|设备管理脚本运行摘要实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|

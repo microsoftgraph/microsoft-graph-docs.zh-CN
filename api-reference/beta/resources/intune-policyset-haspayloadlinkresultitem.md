@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09e61f33151158c600e3a3ea783965f2f131fcce
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 219bf9b1a2058b06895ec90883849cc8bdf0b569
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199972"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524004"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 HasPayloadLinks 操作结果的类。
 
@@ -24,7 +26,7 @@ ms.locfileid: "37199972"
 |属性|类型|说明|
 |:---|:---|:---|
 |payloadId|String|有效负载的键，格式为 Guid。|
-|hasLink|Boolean|指示有效负载是否有任何链接。|
+|hasLink|布尔|指示有效负载是否有任何链接。|
 |error|String|异常信息指示是否成功检查此项。空字符串表示无错误。|
 |源|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)集合|链接来自的原因。|
 

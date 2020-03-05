@@ -5,21 +5,23 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 33339578f498460aacd24481f166ab717138f8fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78c21f33352e5f6357638de8dacc4b628b6ef93b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966564"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522482"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>office365ActivationsUserCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
 | 属性                 | 类型   | 说明                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | 日期   | 内容的最新日期。          |
-| productType              | String | 产品类型, 如 "Office 365 专业增强版"、"Project Client" 或 "Visio Pro for Office 365"。 |
+| productType              | String | 产品类型，如 "Office 365 专业增强版"、"Project Client" 或 "Visio Pro for Office 365"。 |
 | 赋予                 | Int64  | 已为产品许可证分配了用户数量。 |
 | 已                | Int64  | 激活产品的用户数。 |
 | sharedComputerActivation | Int64  | 在共享计算机上使用该产品的用户数。 |

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2ace395b336a0950c814a4eb65103de440f59305
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8fef15877b7ab99a1100ab1ac18055268354a33e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966692"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522608"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ ms.locfileid: "35966692"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 受支持的资源实例[: message](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、 [event](../resources/event.md)、 [calendar](../resources/calendar.md)、 [contact](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [outlook task](../resources/outlooktask.md)或[Outlook 任务文件夹](../resources/outlooktaskfolder.md)。 请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
-|[获取](../api/multivaluelegacyextendedproperty-get.md) |扩展[](../resources/mailfolder.md) [](../resources/event.md)[](../resources/message.md) [](../resources/contactfolder.md) [](../resources/post.md) [](../resources/calendar.md) [](../resources/contact.md) [](../resources/outlooktask.md) [](../resources/outlooktaskfolder.md)了受支持的资源实例 (message、mailFolder、event、calendar、contact、contactFolder、outlook task、outlook task 文件夹或 group post) [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)对象。 |使用 `$expand` 获取具有扩展属性的资源实例。|
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 受支持的资源实例[： message](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、 [event](../resources/event.md)、 [calendar](../resources/calendar.md)、 [contact](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [outlook task](../resources/outlooktask.md)或[Outlook 任务文件夹](../resources/outlooktaskfolder.md)。 请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
+|[获取](../api/multivaluelegacyextendedproperty-get.md) |使用[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)对象扩展的受支持的资源实例（[message](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、 [event](../resources/event.md)、 [calendar](../resources/calendar.md)、 [contact](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [outlook 任务](../resources/outlooktask.md)、 [outlook 任务文件夹](../resources/outlooktaskfolder.md)或组[帖子](../resources/post.md)）。 |使用 `$expand` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

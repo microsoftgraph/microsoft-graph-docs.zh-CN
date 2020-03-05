@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e916c0498a3a8fffd09dd4b86d7b7ec3ab4b9a08
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: a913c910183c1abeae57a3a9f00d7f0c92f9bb69
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913672"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522566"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "40913672"
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | 布尔 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

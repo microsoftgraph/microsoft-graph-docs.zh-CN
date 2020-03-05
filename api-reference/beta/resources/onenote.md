@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 215cf68cbf2efffacd6259aa64b0a00d5700b842
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98408034bb734ddd714b0959d2605a3f240c7777
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009382"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522363"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +65,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建笔记本](../api/onenote-post-notebooks.md) |[笔记](notebook.md)| 通过发布到笔记本集合创建笔记本。|
+|[创建笔记本](../api/onenote-post-notebooks.md) |[笔记本](notebook.md)| 通过发布到笔记本集合创建笔记本。|
 |[列出笔记本](../api/onenote-list-notebooks.md) |[notebook](notebook.md) 集合| 获取笔记本的集合。|
 |[创建页面](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | 通过发布到页面集合创建页面。|
 |[列出页面](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)集合| 获取页面的集合。|

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26f29427dfe863ed1b89eaef5025655dc07430fd
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ed769c1e6550584688324f4bfdf2db772feae19c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636593"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524186"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,11 +23,11 @@ ms.locfileid: "41636593"
 平台特定注册限制
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|platformBlocked|Boolean|阻止平台注册|
+|platformBlocked|布尔|阻止平台注册|
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
-|osMinimumVersion|字符串|支持的最小 OS 版本|
+|osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
 |blockedManufacturers|String 集合|被阻止的制造商的集合。|
 

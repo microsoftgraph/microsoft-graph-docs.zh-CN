@@ -1,24 +1,26 @@
 ---
 title: windowsInformationProtectionDeviceRegistration 资源类型
-description: 表示用于引入和拥有自己的设备 (BYOD) Windows 设备的设备注册记录。
+description: 表示用于引入和拥有自己的设备（BYOD） Windows 设备的设备注册记录。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e07d04d846431f9d302be572ed429cb20fcaa0c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a5b8b6275ea81830c3f4ebac66e12bf290484f5a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372921"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524256"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-表示用于引入和拥有自己的设备 (BYOD) Windows 设备的设备注册记录。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+表示用于引入和拥有自己的设备（BYOD） Windows 设备的设备注册记录。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -37,7 +39,7 @@ ms.locfileid: "36372921"
 |userId|String|与此设备注册记录相关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
-|deviceType|String|设备类型, 例如, Windows 便携式计算机 VS Windows phone。|
+|deviceType|String|设备类型，例如，Windows 便携式计算机 VS Windows phone。|
 |deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 

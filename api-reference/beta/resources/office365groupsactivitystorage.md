@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: a3168ad417f246017ba1018aca265ec0363c951e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba81621a819bb38f2d5d48e118729fc4476b5806
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009459"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522426"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>office365GroupsActivityStorage 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

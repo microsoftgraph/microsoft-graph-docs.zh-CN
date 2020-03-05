@@ -1,24 +1,26 @@
 ---
 title: windowsInformationProtectionWipeAction 资源类型
-description: 表示由租户管理员发出的用于引入并提供自己的设备 (BYOD) Windows 设备的擦除请求。
+description: 表示由租户管理员发出的用于引入并提供自己的设备（BYOD） Windows 设备的擦除请求。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aba3c4a2f1120b74d4182339fb3778c75f2ff7d3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c4e4016f36bc4f4eb1aabc4fdb77b9555e1a1de1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524221"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-表示由租户管理员发出的用于引入并提供自己的设备 (BYOD) Windows 设备的擦除请求。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+表示由租户管理员发出的用于引入并提供自己的设备（BYOD） Windows 设备的擦除请求。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4bbbbd1e579fe8dc5b262cf5e855941227ed940
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 60977b341516fcd7fb331a49d188a6842a44b0cf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523805"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>deviceManagementExportJob 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -35,10 +37,10 @@ ms.locfileid: "38088285"
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
 |filter|String|在报表上应用的筛选器|
-|select|String collection|从报告中选择的列|
+|select|String 集合|从报告中选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
 |snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出的报告的时间|
 |expirationDateTime|DateTimeOffset|导出的报表到期的时间|

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f71e4c6340b7dcf859e71cdf829b257794f443a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3d6142b47205640e64b8e422b1727fdf60ac8a2d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372634"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524912"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -24,7 +26,7 @@ ms.locfileid: "36372634"
 |属性|类型|说明|
 |:---|:---|:---|
 |userPrincipalName|String|用户名|
-|dataToSync|Boolean|要同步的数据|
+|dataToSync|布尔|要同步的数据|
 |dataQuota|Int64|数据配额|
 |dataUsed|Int64|数据配额|
 

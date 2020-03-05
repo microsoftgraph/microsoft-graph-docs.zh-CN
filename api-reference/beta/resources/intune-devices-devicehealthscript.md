@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9b375299db9fa52be494dca185ba9370627e3cb
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 0579008f0994aba06de3bc5869af998a80cab683
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159477"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525087"
 ---
 # <a name="devicehealthscript-resource-type"></a>deviceHealthScript 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -47,10 +49,10 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
-|runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
+|runAs32Bit|布尔|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|布尔|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
 |highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 ## <a name="relationships"></a>关系

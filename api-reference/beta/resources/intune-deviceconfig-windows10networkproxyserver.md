@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10f973747baa7137345cf73d249a81af4d9f3178
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: f2c8002423f394decbb2d52e9163581e4f254c92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748039"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525640"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -23,7 +25,7 @@ ms.locfileid: "38748039"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|address|String|代理服务器的地址。 在 "\>\[服务器：\<端口" \<格式中指定地址\>\]|
+|address|String|代理服务器的地址。 按照以下格式指定地址：<server>\[“:”<port>\]|
 |exceptions|String 集合|不应使用代理服务器的地址。 系统无法将代理服务器用于以本节点中指定的内容开头的地址。|
 |useForLocalAddresses|Boolean|指定是否应将代理服务器用于本地 (Intranet) 地址。|
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec7175ceccb2a5eeb247a5e746dc124c31dd8434
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 79c3fdc651a4d65cf1ed9c4a4c90259642fd87a9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163575"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524982"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -74,7 +76,7 @@ ms.locfileid: "42163575"
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。|
-|easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
+|easActivated|布尔|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
@@ -87,14 +89,14 @@ ms.locfileid: "42163575"
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 此属性是只读的。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |deviceCategoryDisplayName|String|设备类别显示名称。 此属性是只读的。|
-|isSupervised|Boolean|设备监督状态。 此属性是只读的。|
+|isSupervised|布尔|设备监督状态。 此属性是只读的。|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 此属性是只读的。|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 此属性是只读的。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 此属性是只读的。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。|
-|userPrincipalName|字符串|设备用户主体名称。 此属性是只读的。|
+|userPrincipalName|String|设备用户主体名称。 此属性是只读的。|
 |model|String|设备的模型。 此属性是只读的。|
 |manufacturer|String|设备的制造商。 此属性是只读的。|
 |imei|String|IMEI. 此属性是只读的。|
@@ -115,12 +117,12 @@ ms.locfileid: "42163575"
 |retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示设备的上次登录用户。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
-|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
+|autopilotEnrolled|布尔|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的注释|

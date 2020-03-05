@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0869a8e6608361f7ff4d45510ef9e48b34aab7d7
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8ff9f31293271f8e1f1894578e5dbf30130914cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088194"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523791"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -37,7 +39,7 @@ ms.locfileid: "38088194"
 |id|String|此实体的唯一标识符|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |cachedReportConfigurations|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)集合|表示缓存报告配置的实体|
 |exportJobs|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)集合|表示导出报告的作业的实体|

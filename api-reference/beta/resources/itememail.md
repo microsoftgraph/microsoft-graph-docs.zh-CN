@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: eed73f61b281463848c8520ebdcdbc75ac26d29d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523077"
 ---
 # <a name="itememail-resource-type"></a>itemEmail 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,16 +24,16 @@ ms.locfileid: "37939332"
 
 | 方法                                   | 返回类型               | 说明                                            |
 |:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get](../api/itememail-get.md) | [itemEmail](itememail.md) | 读取**itemEmail**对象的属性和关系。 |
-| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | 更新**itemEmail**对象。                               |
+| [获取](../api/itememail-get.md) | [itemEmail](itememail.md) | 读取**itemEmail**对象的属性和关系。 |
+| [更新](../api/itememail-update.md)     | [itemEmail](itememail.md) | 更新**itemEmail**对象。                               |
 | [删除](../api/itememail-delete.md)     | 无                      | 删除**itemEmail**对象。                               |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述                                                               |
+| 属性     | 类型        | 说明                                                               |
 |:-------------|:------------|:--------------------------------------------------------------------------|
 |address       |String       | 电子邮件地址本身。                                                 |
-|displayName   |字符串       | 用户与特定电子邮件地址相关联的名称或标签。  |
+|displayName   |String       | 用户与特定电子邮件地址相关联的名称或标签。  |
 |类型          |字符串       | 可取值为：`unknown`、`work`、`personal`、`main`、`other`。      |
 
 ## <a name="relationships"></a>关系

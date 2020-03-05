@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: c61db94678ed50e6cc93f123a506ce262616a1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 22702a392a76a21951c24667da0e8a1e61c8b36c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522391"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>oneDriveActivityUserDetail 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 
@@ -20,14 +22,14 @@ ms.locfileid: "35966480"
 | :------------------------ | :---------------- |
 | reportRefreshDate         | 日期              |
 | userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
+| isDeleted                 | 布尔           |
 | deletedDate               | 日期              |
 | lastActivityDate          | 日期              |
 | viewedOrEditedFileCount   | Int64             |
 | syncedFileCount           | Int64             |
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
-| assignedProducts          | String collection |
+| assignedProducts          | String 集合 |
 | reportPeriod              | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

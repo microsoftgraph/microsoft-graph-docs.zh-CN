@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdd9e308f332d446ad9032736e5f08e8e3545d9e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: cb6784fa929aa298579cc889b39cfa90b475a014
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955685"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525227"
 ---
 # <a name="devicemanagementsettingprofileconstraint-resource-type"></a>deviceManagementSettingProfileConstraint 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "39955685"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|source|字符串|实体的来源|
+|source|String|实体的来源|
 |types|String collection|此实体所携带的类型的集合|
 
 ## <a name="relationships"></a>关系

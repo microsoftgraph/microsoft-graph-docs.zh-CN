@@ -6,14 +6,16 @@ title: ItemAnalytics
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4035ff821927d520ed457c3040be01bd9368240c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967093"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523098"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "35967093"
 
 您还可以使用[getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
 
->**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

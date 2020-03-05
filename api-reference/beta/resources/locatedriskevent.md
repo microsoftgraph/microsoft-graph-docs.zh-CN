@@ -1,27 +1,29 @@
 ---
 title: locatedRiskEvent 资源类型
-description: '基于位置数据的 Azure Active Directory 标识保护检测到的风险事件。 找到的风险事件类型包括:'
+description: 基于位置数据的 Azure Active Directory 标识保护检测到的风险事件。 找到的风险事件类型包括：
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e024b5311d6385888e7ed8e53ba9e37e8b2d2ed5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7abb10417e7659e923eddf04990067c8b979ce9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966986"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522923"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-基于位置数据的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 找到的风险事件类型包括:
+基于位置数据的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 找到的风险事件类型包括：
 * [来自匿名 IP 地址的登录](anonymousipriskevent.md)
 * [来自受恶意软件感染的设备的登录](malwareriskevent.md)
 * [无法移动到非常规位置](impossibletravelriskevent.md)
 * [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法

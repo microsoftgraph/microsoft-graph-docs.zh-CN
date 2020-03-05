@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b891a9e6d0eb90a527c79528e9fd595c2f8ca5b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 0b425f035b77e7efed8de8fa39073822382e7593
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522741"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "40913623"
 
 | 属性                          | 类型    | 说明                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | 指示是否允许在会议中拨出匿名用户。 |
-| allowAnonymousUsersToStartMeeting | Boolean | 指示是否允许匿名用户启动会议。  |
+| allowAnonymousUsersToDialOut      | 布尔 | 指示是否允许在会议中拨出匿名用户。 |
+| allowAnonymousUsersToStartMeeting | 布尔 | 指示是否允许匿名用户启动会议。  |
 | autoAdmittedUsers                 | String  | 可取值为：`everyoneInCompany`、`everyone`。              |
 
 ## <a name="json-representation"></a>JSON 表示形式

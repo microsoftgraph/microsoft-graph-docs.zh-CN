@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5aa43500fc2adf9f44ba3bec00cb6c1315fab574
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4e671d20c0beb8087fcc057a8f115350e0602812
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199961"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523983"
 ---
 # <a name="policyset-resource-type"></a>policySet 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于 PolicySet 的属性的类。
 
@@ -40,9 +42,9 @@ ms.locfileid: "37199961"
 |displayName|String|PolicySet 的 DisplayName。|
 |说明|String|PolicySet 的说明。|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[错误](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导部署的标记|
-|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|String 集合|引导部署的标记|
+|roleScopeTags|String 集合|PolicySet 的 RoleScopeTags|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

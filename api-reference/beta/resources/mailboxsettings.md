@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6d966ecb599d98c92bf1e70eca1f61fb665e359d
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: f6dbb44810c9469eb6ddb4dc8fd3299bb2b71e71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652042"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522867"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "41652042"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |archiveFolder|string|用户存档文件夹的文件夹 ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。|

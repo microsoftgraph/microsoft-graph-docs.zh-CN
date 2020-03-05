@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f8883c08bbd1f351dc5de003988f36c727ef85d7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 97557ad6e233506e5e074c408ffb04f83297f0af
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523000"
 ---
 # <a name="labelingoptions-resource-type"></a>labelingOptions 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,9 +22,9 @@ ms.locfileid: "37939297"
 
 ## <a name="properties"></a>属性
 
-| 属性               | 类型                                                | 描述                                                                                                                   |
+| 属性               | 类型                                                | 说明                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| assignmentMethod       | 字符串                                              | 可取值为：`standard`、`privileged`、`auto`。                                                                        |
+| assignmentMethod       | String                                              | 可取值为：`standard`、`privileged`、`auto`。                                                                        |
 | downgradeJustification | [downgradeJustification](downgradejustification.md) | 降级理由对象，该对象指示降级是否已两端对齐，如果是，则指示原因。                          |
 | extendedProperties     | [keyValuePair](keyvaluepair.md) 集合          | 扩展属性将在作为标签信息一部分的标准 MIP 标记元数据格式中进行分析和返回。 |
 | labelId                | Guid                                                | 应应用于信息的标签的 GUID。                                                              |

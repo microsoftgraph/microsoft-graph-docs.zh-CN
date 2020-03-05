@@ -1,22 +1,24 @@
 ---
 title: oAuth2PermissionGrant 资源类型
-description: 表示已授予应用程序 (由服务主体表示) 作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域 (委派权限)。
+description: 表示已授予应用程序（由服务主体表示）作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域（委派权限）。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 25f012baca1a7dfa5aeb62b8885b00b151a657ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e43866c73b8ad92e56a6e907c5ef8c660ef56e22
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966613"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522531"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
+命名空间： microsoft. graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示已授予应用程序 (由服务主体表示) 作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域 (委派权限)。
+表示已授予应用程序（由服务主体表示）作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域（委派权限）。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,14 +48,14 @@ ms.locfileid: "35966613"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|clientId|字符串| 在访问资源 (由 resourceId 属性表示) 时, 授权模拟用户的服务主体的 id。 |
-|consentType|String| 指示许可是由管理员 (代表组织) 提供, 还是由个人授予。 可能的值为*AllPrincipals*或*Principal*。 |
-|expiryTime|DateTimeOffset| 目前, 到期时间值将被忽略。 |
+|clientId|字符串| 在访问资源（由 resourceId 属性表示）时，授权模拟用户的服务主体的 id。 |
+|consentType|String| 指示许可是由管理员（代表组织）提供，还是由个人授予。 可能的值为*AllPrincipals*或*Principal*。 |
+|expiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
 |id|String| 唯一标识符。 只读。|
-|principalId|String| 如果 consentType 为*AllPrincipals* , 则此值为 null, 并且同意适用于组织中的所有用户。 如果 consentType 为*Principal*, 则此属性指定授予同意的用户的 id, 并且仅适用于该用户。 |
+|principalId|String| 如果 consentType 为*AllPrincipals* ，则此值为 null，并且同意适用于组织中的所有用户。 如果 consentType 为*Principal*，则此属性指定授予同意的用户的 id，并且仅适用于该用户。 |
 |resourceId|String| 指定已向其授予访问权限的资源服务主体的 id。 |
-|scope|String| 指定在 OAuth 2.0 访问令牌中, 资源应用程序应预期的[范围](/graph/permissions-reference)声明的值。 例如, *User. Read* |
-|startTime|DateTimeOffset| 目前, 开始时间值将被忽略。 |
+|scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的[范围](/graph/permissions-reference)声明的值。 例如， *User. Read* |
+|startTime|DateTimeOffset| 目前，开始时间值将被忽略。 |
 
 ## <a name="relationships"></a>关系
 无

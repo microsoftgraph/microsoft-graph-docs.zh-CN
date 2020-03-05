@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369925"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525010"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 给定设备的硬件信息。
 
@@ -35,16 +37,16 @@ ms.locfileid: "36369925"
 |cellularTechnology|String|设备的手机网络技术|
 |wifiMac|String|设备的 WiFi MAC 地址|
 |operatingSystemLanguage|String|设备的操作系统语言|
-|isSupervised|Boolean|受监督的设备模式|
+|isSupervised|布尔|受监督的设备模式|
 |isEncrypted|Boolean|设备的加密状态|
-|isSharedDevice|Boolean|共享 iPad|
+|isSharedDevice|布尔|共享 iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享 Apple 设备上的所有用户|
 |tpmSpecificationVersion|String|指定规范版本的字符串。|
 |operatingSystemEdition|String|指定 OS 版本的字符串。|
-|deviceFullQualifiedDomainName|String|返回设备的完全限定的域名 (如果有)。 如果设备未加入域, 则返回一个空字符串。 |
+|deviceFullQualifiedDomainName|String|返回设备的完全限定的域名（如果有）。 如果设备未加入域，则返回一个空字符串。 |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构 (LSA) credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构（LSA） credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
 |osBuildNumber|String|Android 设备上的操作系统内部版本号|
 
 ## <a name="relationships"></a>关系

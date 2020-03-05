@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: bafc7ae26af6c94d61febb30c5a121f6f22ec7f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 759f231181da13cc2d115ff332e909e3a8387474
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009410"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522384"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>oneDriveUsageAccountCounts 资源类型
+
+命名空间： microsoft. graph
 
 ## <a name="properties"></a>属性
 

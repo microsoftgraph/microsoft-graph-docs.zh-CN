@@ -6,14 +6,16 @@ title: NumberColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c8abaca08682e4a68e8e5efbeb798a8810b20bfb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f6ed1c8aca8909b50f47f539e0569a4b68dad89
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966634"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522545"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

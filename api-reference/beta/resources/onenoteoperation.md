@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 3f6a8bdfc6cee8b71fb77fb7778171677acb5df9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 500a4c20583f6af9cc8bacf98dd4de60354f0ab2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966431"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522342"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,9 +53,9 @@ ms.locfileid: "35966431"
 |id|string|操作 id。只读。|
 |lastActionDateTime| DateTimeOffset |操作的上一操作的时间。|
 |resourceId|string|资源 id。|
-|resourceLocation|string|对象的资源 URI。 例如, 复制的页或节的资源 URI。 |
-|状态|string|操作的当前状态: `notstarted`、 `running`、、 `completed``failed` |
-|percentComplete|string|如果操作仍处于`running`状态, 则操作完成百分比为
+|resourceLocation|string|对象的资源 URI。 例如，复制的页或节的资源 URI。 |
+|状态|string|操作的当前状态： `notstarted`、 `running`、、 `completed``failed` |
+|percentComplete|string|如果操作仍处于`running`状态，则操作完成百分比为
 
 ## <a name="relationships"></a>关系
 无

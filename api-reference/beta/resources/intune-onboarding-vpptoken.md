@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8612279720fdb44e565207c5603f7df69477708a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a27f6d2e630d6e83d600cc555cf625590584a677
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524074"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
 
@@ -48,11 +50,11 @@ ms.locfileid: "36369379"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|Boolean|同意授予与 Apple Volume Purchase Program 的数据共享。|
+|dataSharingConsentGranted|布尔|同意授予与 Apple Volume Purchase Program 的数据共享。|
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String collection|分配给此实体的角色范围标记 Id。|
+|claimTokenManagementFromExternalMdm|布尔|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 Id。|
 
 ## <a name="relationships"></a>关系
 无

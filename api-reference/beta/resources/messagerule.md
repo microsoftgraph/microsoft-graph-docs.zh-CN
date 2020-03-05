@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdcdba51424f7f864acb454869522b0996ef254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec7225800c179ae5592c5d2ef040f8a009568ac7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009697"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522671"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,8 +34,8 @@ ms.locfileid: "36009697"
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | 规则的例外情况。 |
 | hasError | Boolean | 指示规则是否处于错误状态。 只读。 |
 | id |String|规则的唯一标识符。 只读。|
-| isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
-| isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
+| isEnabled | 布尔 | 指示是否启用规则以应用到邮件。 |
+| isReadOnly | 布尔 | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
 | Sequence | Int32 | 表示在其他规则中执行规则的顺序。 |
 
 

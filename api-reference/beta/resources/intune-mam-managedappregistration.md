@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2a971b4e03da4dfdac6dfcdf621715db3e3d1e1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2212281ddcf388c1719d317836d8863432591eb5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374034"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524306"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
@@ -39,8 +41,8 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceType|String|主机设备类型|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
-|managedDeviceId|String|主机设备的托管设备标识符。 即使在托管主机设备时, 值也可能为空。|
-|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory, 值也可能为空。|
+|managedDeviceId|String|主机设备的托管设备标识符。 即使在托管主机设备时，值也可能为空。|
+|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory，值也可能为空。|
 |deviceModel|String|当前应用程序注册的设备模型 |
 |deviceManufacturer|String|当前应用程序注册的设备制造商 |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8652a33de04d0a28a34c3738dd1706d6aff5e5b9
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 592bd308b3c28d36fedb405b0c7dd7f35cba3436
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938903"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522650"
 ---
 # <a name="metadataaction-resource-type"></a>metadataAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,10 +22,10 @@ ms.locfileid: "37938903"
 
 ## <a name="properties"></a>属性
 
-| 属性         | 类型                                       | 描述                                                                        |
+| 属性         | 类型                                       | 说明                                                                        |
 | :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
 | metadataToAdd    | [keyValuePair](keyvaluepair.md) 集合 | 应添加到文件中的键值对的集合。                  |
-| metadataToRemove | String collection                          | 字符串的集合，用于指示要从文件元数据中删除的键。 |
+| metadataToRemove | String 集合                          | 字符串的集合，用于指示要从文件元数据中删除的键。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

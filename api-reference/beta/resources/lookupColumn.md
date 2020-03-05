@@ -6,14 +6,16 @@ title: LookupColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8c92bce6b6d7ba401f6b9274f2ba0eee4439929e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 813b31b61e3f510107cdd27ed64ec44fba9d0550
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009907"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522888"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

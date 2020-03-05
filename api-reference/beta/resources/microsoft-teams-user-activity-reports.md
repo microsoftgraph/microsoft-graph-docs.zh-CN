@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: ca8d1f772744b33aa5fee60fc3b843bf60b0be9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5807af05bda74019ac8b28c53f902ecac6f8e2a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009634"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522629"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Microsoft Teams 用户活动报告
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

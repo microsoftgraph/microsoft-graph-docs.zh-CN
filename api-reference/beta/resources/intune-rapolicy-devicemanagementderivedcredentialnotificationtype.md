@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0d1e1f4922c022215d806cfa83d01d1735c704da
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1e32756e0d1e68397e0ca7bc843a956492ac46c3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163463"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523919"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>deviceManagementDerivedCredentialNotificationType 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,8 +26,8 @@ ms.locfileid: "42163463"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|None|
-|companyPortal|1|公司门户|
-|email|双面|电子邮件|
+|companyPortal|1 |公司门户|
+|email|2 |电子邮件|
 
 
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2113f8ddf34c87be6554bc29d7220881e8c634f6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: b2174e13cf80e39e1f63f7fb03da6e9b305add30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160888"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523441"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>iosAvailableUpdateVersion 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ iOS 可用的更新版本详细信息
 |productVersion|String|更新的版本。|
 |postingDateTime|DateTimeOffset|更新的过帐日期。|
 |expirationDateTime|DateTimeOffset|更新的到期日期。|
-|supportedDevices|String collection|更新支持的设备的列表。|
+|supportedDevices|String 集合|更新支持的设备的列表。|
 
 ## <a name="relationships"></a>关系
 无

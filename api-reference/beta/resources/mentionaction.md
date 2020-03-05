@@ -6,14 +6,16 @@ title: MentionAction
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 1b08233569fe655b5a8f0e878c4e14d178be279f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e2a430ed25dd6a64049fc6dc49c282bf6a47e00
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522692"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

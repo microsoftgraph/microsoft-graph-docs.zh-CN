@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 87195cf98406e37e0f4a419833fbc1d101b19563
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966875"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522825"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +61,7 @@ GET /me/mailFolders/drafts
 |[创建 MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| 通过发布到 childFolder 集合，在当前 mailFolder 下新建 mailFolder。|
 |[列出 childFolder](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md) 集合| 获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。|
 |[创建邮件](../api/mailfolder-post-messages.md) |[邮件](message.md)| 通过发布到邮件集合，在当前 mailFolder 中新建邮件。|
-|[列出邮件](../api/mailfolder-list-messages.md) |[邮件](message.md)集合| 获取已登录用户邮箱中的所有邮件或邮箱的指定文件夹中的邮件。|
+|[列出邮件](../api/mailfolder-list-messages.md) |[message](message.md) 集合| 获取已登录用户邮箱中的所有邮件或邮箱的指定文件夹中的邮件。|
 |[更新](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|更新指定的 mailFolder 对象。 |
 |[删除](../api/mailfolder-delete.md) | 无 |删除指定的 mailFolder 对象。 |
 |[复制](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|将 mailfolder 及其内容复制到其他 mailfolder。|
@@ -77,11 +79,11 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
-|id|String|MailFolder 的唯一标识符。|
+|id|字符串|MailFolder 的唯一标识符。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
-|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹, 此属性为**null**。|
+|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为**null**。|
 
 **有效的访问项计数**
 

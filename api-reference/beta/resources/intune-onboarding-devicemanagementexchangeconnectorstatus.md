@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 46b85508d2ee149414f5397194a00124a0d71f64
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0f4d4a140c1e734eb99287bba37cb5d34cd43989
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374153"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524151"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Exchange Connector 的当前状态。
 
@@ -24,9 +26,9 @@ Exchange Connector 的当前状态。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|不存在任何连接器。|
-|connectionPending|1|与 Exchange 环境的挂起连接。|
-|连|双面|已连接到 Exchange 环境|
-|被|第三章|断开与 Exchange 环境的连接|
+|connectionPending|1 |与 Exchange 环境的挂起连接。|
+|连|2 |已连接到 Exchange 环境|
+|被|3 |断开与 Exchange 环境的连接|
 
 
 

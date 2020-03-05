@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1310d91da9a7ea8e3a6274acd48e8ebc1359cafd
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: a7c202c404d9d1db16e328f9c7d4c220ddd481e9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636712"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525738"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>vpnServiceExceptionAction 枚举类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "41636712"
 要对特定服务执行的 VPN 操作。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |forceTrafficViaVPN|0|使来自该服务的所有流量都通过 VPN|
 |allowTrafficOutside|1 |允许 VPN 外部的服务|

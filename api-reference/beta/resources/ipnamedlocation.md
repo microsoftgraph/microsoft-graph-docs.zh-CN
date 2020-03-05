@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 10bdafb9894d822f345bb6fb23174fa7f7deee4c
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: e32d6c51ae09601bc752ed2a352dc50a4285f7c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523161"
 ---
 # <a name="ipnamedlocation-resource-type"></a>ipNamedLocation 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ ms.locfileid: "37653816"
 |displayName|String|位置的人可读名称。|
 |id|String|NamedLocation 对象的标识符。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 |ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表（例如，1.2.3.4/32）或来自 IETF RFC596 的任何允许的 IPv6 格式。|
-|isTrusted|Boolean|如此如果此位置是明确信任的。|
+|isTrusted|布尔|如此如果此位置是明确信任的。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示上次修改的位置使用 ISO 8601 格式的日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系

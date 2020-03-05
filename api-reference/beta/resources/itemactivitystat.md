@@ -6,14 +6,16 @@ title: ItemActivityStat
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 61c410d807869615ed35365743d1ae87b5b6e890
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 612acf6ef619f13b0c334dd2046041b25020f450
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967091"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523112"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ ms.locfileid: "35967091"
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | 指示此时间间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | Boolean                 | 指示项目是否为 "趋势"。 只读。
+| isTrending       | 布尔                 | 指示项目是否为 "趋势"。 只读。
 | startDateTime    | DateTimeOffset          | 时间间隔开始时。 只读。
 | endDateTime      | DateTimeOffset          | 时间间隔结束时。 只读。
 | create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
