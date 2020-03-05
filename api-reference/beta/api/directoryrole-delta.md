@@ -1,36 +1,38 @@
 ---
-title: 'directoryRole: delta'
-description: 获取新创建、更新或删除的目录角色, 而无需对整个资源集合执行完全读取。 有关详细信息, 请参阅 Using Delta Query。
+title: directoryRole： delta
+description: 获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅 Using Delta Query。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48c7811bd6c0ee59bca122a0bf8de88253553205
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: be1e8e96cae225680c439d580cf4dfc2437aa5b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42434502"
 ---
-# <a name="directoryrole-delta"></a><span data-ttu-id="9fac8-104">directoryRole: delta</span><span class="sxs-lookup"><span data-stu-id="9fac8-104">directoryRole: delta</span></span>
+# <a name="directoryrole-delta"></a><span data-ttu-id="f7c63-104">directoryRole： delta</span><span class="sxs-lookup"><span data-stu-id="f7c63-104">directoryRole: delta</span></span>
+
+<span data-ttu-id="f7c63-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f7c63-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9fac8-105">获取新创建、更新或删除的目录角色, 而无需对整个资源集合执行完全读取。</span><span class="sxs-lookup"><span data-stu-id="9fac8-105">Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="9fac8-106">有关详细信息, 请参阅[Using Delta Query](/graph/delta-query-overview) 。</span><span class="sxs-lookup"><span data-stu-id="9fac8-106">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
+<span data-ttu-id="f7c63-106">获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。</span><span class="sxs-lookup"><span data-stu-id="f7c63-106">Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="f7c63-107">有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。</span><span class="sxs-lookup"><span data-stu-id="f7c63-107">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9fac8-107">权限</span><span class="sxs-lookup"><span data-stu-id="9fac8-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7c63-108">权限</span><span class="sxs-lookup"><span data-stu-id="f7c63-108">Permissions</span></span>
 
-<span data-ttu-id="9fac8-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9fac8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f7c63-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f7c63-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9fac8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="9fac8-110">Permission type</span></span>      | <span data-ttu-id="9fac8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9fac8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f7c63-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f7c63-111">Permission type</span></span>      | <span data-ttu-id="f7c63-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f7c63-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9fac8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9fac8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9fac8-113">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="9fac8-113">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="9fac8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9fac8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9fac8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9fac8-115">Not supported.</span></span>    |
-|<span data-ttu-id="9fac8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="9fac8-116">Application</span></span> | <span data-ttu-id="9fac8-117">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="9fac8-117">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f7c63-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f7c63-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f7c63-114">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="f7c63-114">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f7c63-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f7c63-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7c63-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f7c63-116">Not supported.</span></span>    |
+|<span data-ttu-id="f7c63-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f7c63-117">Application</span></span> | <span data-ttu-id="f7c63-118">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="f7c63-118">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9fac8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9fac8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7c63-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f7c63-119">HTTP request</span></span>
 
-<span data-ttu-id="9fac8-119">若要开始跟踪更改, 请在 directoryRole 资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="9fac8-119">To begin tracking changes, you make a request including the delta function on the directoryRole resource.</span></span>
+<span data-ttu-id="f7c63-120">若要开始跟踪更改，请在 directoryRole 资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="f7c63-120">To begin tracking changes, you make a request including the delta function on the directoryRole resource.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,50 +41,50 @@ GET /directoryRoles/delta
 
 ```
 
-### <a name="query-parameters"></a><span data-ttu-id="9fac8-120">查询参数</span><span class="sxs-lookup"><span data-stu-id="9fac8-120">Query parameters</span></span>
+### <a name="query-parameters"></a><span data-ttu-id="f7c63-121">查询参数</span><span class="sxs-lookup"><span data-stu-id="f7c63-121">Query parameters</span></span>
 
-<span data-ttu-id="9fac8-121">跟踪更改会产生一个或多个**delta**函数调用的往返。</span><span class="sxs-lookup"><span data-stu-id="9fac8-121">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="9fac8-122">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="9fac8-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="9fac8-123">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="9fac8-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="9fac8-124">只需预先指定所需的任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="9fac8-124">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="9fac8-125">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。</span><span class="sxs-lookup"><span data-stu-id="9fac8-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
+<span data-ttu-id="f7c63-122">跟踪更改会产生一个或多个**delta**函数调用的往返。</span><span class="sxs-lookup"><span data-stu-id="f7c63-122">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="f7c63-123">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="f7c63-123">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="f7c63-124">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="f7c63-124">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="f7c63-125">只需预先指定所需的任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="f7c63-125">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="f7c63-126">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。</span><span class="sxs-lookup"><span data-stu-id="f7c63-126">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
 
-| <span data-ttu-id="9fac8-126">查询参数</span><span class="sxs-lookup"><span data-stu-id="9fac8-126">Query parameter</span></span>      | <span data-ttu-id="9fac8-127">类型</span><span class="sxs-lookup"><span data-stu-id="9fac8-127">Type</span></span>   |<span data-ttu-id="9fac8-128">说明</span><span class="sxs-lookup"><span data-stu-id="9fac8-128">Description</span></span>|
+| <span data-ttu-id="f7c63-127">查询参数</span><span class="sxs-lookup"><span data-stu-id="f7c63-127">Query parameter</span></span>      | <span data-ttu-id="f7c63-128">类型</span><span class="sxs-lookup"><span data-stu-id="f7c63-128">Type</span></span>   |<span data-ttu-id="f7c63-129">说明</span><span class="sxs-lookup"><span data-stu-id="f7c63-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9fac8-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="9fac8-129">$deltatoken</span></span> | <span data-ttu-id="9fac8-130">string</span><span class="sxs-lookup"><span data-stu-id="9fac8-130">string</span></span> | <span data-ttu-id="9fac8-131">为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示该往返一轮的更改。</span><span class="sxs-lookup"><span data-stu-id="9fac8-131">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="9fac8-132">在此集合的下`deltaLink`一轮变更跟踪请求中, 保存并应用整个 URL (包括此令牌)。</span><span class="sxs-lookup"><span data-stu-id="9fac8-132">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
-| <span data-ttu-id="9fac8-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="9fac8-133">$skiptoken</span></span> | <span data-ttu-id="9fac8-134">string</span><span class="sxs-lookup"><span data-stu-id="9fac8-134">string</span></span> | <span data-ttu-id="9fac8-135">在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示同一个资源集合中有进一步的更改需要跟踪。</span><span class="sxs-lookup"><span data-stu-id="9fac8-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
+| <span data-ttu-id="f7c63-130">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="f7c63-130">$deltatoken</span></span> | <span data-ttu-id="f7c63-131">string</span><span class="sxs-lookup"><span data-stu-id="f7c63-131">string</span></span> | <span data-ttu-id="f7c63-132">为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的更改。</span><span class="sxs-lookup"><span data-stu-id="f7c63-132">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="f7c63-133">将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="f7c63-133">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
+| <span data-ttu-id="f7c63-134">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="f7c63-134">$skiptoken</span></span> | <span data-ttu-id="f7c63-135">string</span><span class="sxs-lookup"><span data-stu-id="f7c63-135">string</span></span> | <span data-ttu-id="f7c63-136">在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个资源集合中有进一步的更改需要跟踪。</span><span class="sxs-lookup"><span data-stu-id="f7c63-136">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9fac8-136">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9fac8-136">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f7c63-137">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f7c63-137">Optional query parameters</span></span>
 
-<span data-ttu-id="9fac8-137">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9fac8-137">This method supports OData Query Parameters to help customize the response.</span></span>
+<span data-ttu-id="f7c63-138">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f7c63-138">This method supports OData Query Parameters to help customize the response.</span></span>
 
-- <span data-ttu-id="9fac8-p106">像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。</span><span class="sxs-lookup"><span data-stu-id="9fac8-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span> 
+- <span data-ttu-id="f7c63-p106">像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。</span><span class="sxs-lookup"><span data-stu-id="f7c63-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span> 
 
-- <span data-ttu-id="9fac8-140">提供对 `$filter` 的有限支持：</span><span class="sxs-lookup"><span data-stu-id="9fac8-140">There is limited support for `$filter`:</span></span>
-  * <span data-ttu-id="9fac8-141">唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改, 其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`: 或。</span><span class="sxs-lookup"><span data-stu-id="9fac8-141">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="9fac8-142">您可以指定的 id 数受最大 URL 长度的限制。</span><span class="sxs-lookup"><span data-stu-id="9fac8-142">The number of ids you can specify is limited by the maximum URL length.</span></span>
+- <span data-ttu-id="f7c63-141">提供对 `$filter` 的有限支持：</span><span class="sxs-lookup"><span data-stu-id="f7c63-141">There is limited support for `$filter`:</span></span>
+  * <span data-ttu-id="f7c63-142">唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改，其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`：或。</span><span class="sxs-lookup"><span data-stu-id="f7c63-142">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="f7c63-143">您可以指定的 id 数受最大 URL 长度的限制。</span><span class="sxs-lookup"><span data-stu-id="f7c63-143">The number of ids you can specify is limited by the maximum URL length.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="9fac8-143">请求标头</span><span class="sxs-lookup"><span data-stu-id="9fac8-143">Request headers</span></span>
-| <span data-ttu-id="9fac8-144">名称</span><span class="sxs-lookup"><span data-stu-id="9fac8-144">Name</span></span>       | <span data-ttu-id="9fac8-145">说明</span><span class="sxs-lookup"><span data-stu-id="9fac8-145">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f7c63-144">请求标头</span><span class="sxs-lookup"><span data-stu-id="f7c63-144">Request headers</span></span>
+| <span data-ttu-id="f7c63-145">名称</span><span class="sxs-lookup"><span data-stu-id="f7c63-145">Name</span></span>       | <span data-ttu-id="f7c63-146">说明</span><span class="sxs-lookup"><span data-stu-id="f7c63-146">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="9fac8-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="9fac8-146">Authorization</span></span>  | <span data-ttu-id="9fac8-147">持有者&lt;令牌&gt;</span><span class="sxs-lookup"><span data-stu-id="9fac8-147">Bearer &lt;token&gt;</span></span>|
-| <span data-ttu-id="9fac8-148">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9fac8-148">Content-Type</span></span>  | <span data-ttu-id="9fac8-149">application/json</span><span class="sxs-lookup"><span data-stu-id="9fac8-149">application/json</span></span> |
+| <span data-ttu-id="f7c63-147">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7c63-147">Authorization</span></span>  | <span data-ttu-id="f7c63-148">持有者&lt;令牌&gt;</span><span class="sxs-lookup"><span data-stu-id="f7c63-148">Bearer &lt;token&gt;</span></span>|
+| <span data-ttu-id="f7c63-149">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7c63-149">Content-Type</span></span>  | <span data-ttu-id="f7c63-150">application/json</span><span class="sxs-lookup"><span data-stu-id="f7c63-150">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9fac8-150">请求正文</span><span class="sxs-lookup"><span data-stu-id="9fac8-150">Request body</span></span>
-<span data-ttu-id="9fac8-151">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9fac8-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7c63-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="f7c63-151">Request body</span></span>
+<span data-ttu-id="f7c63-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f7c63-152">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="9fac8-152">响应</span><span class="sxs-lookup"><span data-stu-id="9fac8-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f7c63-153">响应</span><span class="sxs-lookup"><span data-stu-id="f7c63-153">Response</span></span>
 
-<span data-ttu-id="9fac8-153">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="9fac8-153">If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body.</span></span> <span data-ttu-id="9fac8-154">该响应还包括一个 nextLink URL 或 deltaLink URL。</span><span class="sxs-lookup"><span data-stu-id="9fac8-154">The response also includes a nextLink URL or a deltaLink URL.</span></span> 
+<span data-ttu-id="f7c63-154">如果成功，此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="f7c63-154">If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body.</span></span> <span data-ttu-id="f7c63-155">该响应还包括一个 nextLink URL 或 deltaLink URL。</span><span class="sxs-lookup"><span data-stu-id="f7c63-155">The response also includes a nextLink URL or a deltaLink URL.</span></span> 
 
-- <span data-ttu-id="9fac8-155">如果返回`nextLink` URL, 则会在会话中检索其他数据页。</span><span class="sxs-lookup"><span data-stu-id="9fac8-155">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="9fac8-156">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="9fac8-156">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
+- <span data-ttu-id="f7c63-156">如果返回`nextLink` URL，则会在会话中检索其他数据页。</span><span class="sxs-lookup"><span data-stu-id="f7c63-156">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="f7c63-157">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="f7c63-157">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
 
-- <span data-ttu-id="9fac8-157">如果返回`deltaLink` URL, 则没有有关要返回的资源的现有状态的更多数据。</span><span class="sxs-lookup"><span data-stu-id="9fac8-157">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="9fac8-158">保留并使用`deltaLink` URL 了解将来对资源所做的更改。</span><span class="sxs-lookup"><span data-stu-id="9fac8-158">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
+- <span data-ttu-id="f7c63-158">如果返回`deltaLink` URL，则没有有关要返回的资源的现有状态的更多数据。</span><span class="sxs-lookup"><span data-stu-id="f7c63-158">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="f7c63-159">保留并使用`deltaLink` URL 了解将来对资源所做的更改。</span><span class="sxs-lookup"><span data-stu-id="f7c63-159">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
 
-<span data-ttu-id="9fac8-159">请参阅：</span><span class="sxs-lookup"><span data-stu-id="9fac8-159">See:</span></span></br>
-- <span data-ttu-id="9fac8-160">[使用增量查询](/graph/delta-query-overview)了解更多详细信息</span><span class="sxs-lookup"><span data-stu-id="9fac8-160">[Using Delta Query](/graph/delta-query-overview) for more details</span></span></br>
-- <span data-ttu-id="9fac8-161">[获取用户的增量更改](/graph/delta-query-users)获取示例请求。</span><span class="sxs-lookup"><span data-stu-id="9fac8-161">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span></br>
+<span data-ttu-id="f7c63-160">请参阅：</span><span class="sxs-lookup"><span data-stu-id="f7c63-160">See:</span></span></br>
+- <span data-ttu-id="f7c63-161">[使用增量查询](/graph/delta-query-overview)了解更多详细信息</span><span class="sxs-lookup"><span data-stu-id="f7c63-161">[Using Delta Query](/graph/delta-query-overview) for more details</span></span></br>
+- <span data-ttu-id="f7c63-162">[获取用户的增量更改](/graph/delta-query-users)获取示例请求。</span><span class="sxs-lookup"><span data-stu-id="f7c63-162">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span></br>
 
-### <a name="example"></a><span data-ttu-id="9fac8-162">示例</span><span class="sxs-lookup"><span data-stu-id="9fac8-162">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9fac8-163">请求</span><span class="sxs-lookup"><span data-stu-id="9fac8-163">Request</span></span>
+### <a name="example"></a><span data-ttu-id="f7c63-163">示例</span><span class="sxs-lookup"><span data-stu-id="f7c63-163">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f7c63-164">请求</span><span class="sxs-lookup"><span data-stu-id="f7c63-164">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9fac8-164">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9fac8-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f7c63-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7c63-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryRole_delta"
@@ -90,23 +92,23 @@ GET /directoryRoles/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/delta
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9fac8-165">C#</span><span class="sxs-lookup"><span data-stu-id="9fac8-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f7c63-166">C#</span><span class="sxs-lookup"><span data-stu-id="f7c63-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryrole-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9fac8-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9fac8-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f7c63-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7c63-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryrole-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9fac8-167">目标-C</span><span class="sxs-lookup"><span data-stu-id="9fac8-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f7c63-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7c63-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryrole-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9fac8-168">响应</span><span class="sxs-lookup"><span data-stu-id="9fac8-168">Response</span></span>
-<span data-ttu-id="9fac8-p111">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9fac8-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f7c63-169">响应</span><span class="sxs-lookup"><span data-stu-id="f7c63-169">Response</span></span>
+<span data-ttu-id="f7c63-p111">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f7c63-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- { 
   "blockType": "response",
   "truncated": true,

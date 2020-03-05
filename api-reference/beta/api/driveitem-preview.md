@@ -1,40 +1,42 @@
 ---
-title: 'driveItem: preview'
-description: 此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
+title: driveItem： preview
+description: 此操作允许您获取项目的短生存期可嵌入 Url，以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: dc2feef9e80a04753efb6b371bffccf514f46233
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8edd4aa2280978cca21443dbd3c6d175d0a64bd5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956994"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432437"
 ---
-# <a name="driveitem-preview"></a><span data-ttu-id="e6ef8-103">driveItem: preview</span><span class="sxs-lookup"><span data-stu-id="e6ef8-103">driveItem: preview</span></span>
+# <a name="driveitem-preview"></a><span data-ttu-id="07bb6-103">driveItem： preview</span><span class="sxs-lookup"><span data-stu-id="07bb6-103">driveItem: preview</span></span>
+
+<span data-ttu-id="07bb6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="07bb6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e6ef8-104">此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-104">This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.</span></span>
+<span data-ttu-id="07bb6-105">此操作允许您获取项目的短生存期可嵌入 Url，以呈现临时预览。</span><span class="sxs-lookup"><span data-stu-id="07bb6-105">This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.</span></span>
 
-<span data-ttu-id="e6ef8-105">如果要获取持续生存期的可嵌入链接, 请改用[createLink][] API。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-105">If you want to obtain long-lived embeddable links, use the [createLink][] API instead.</span></span>
+<span data-ttu-id="07bb6-106">如果要获取持续生存期的可嵌入链接，请改用[createLink][] API。</span><span class="sxs-lookup"><span data-stu-id="07bb6-106">If you want to obtain long-lived embeddable links, use the [createLink][] API instead.</span></span>
 
-> <span data-ttu-id="e6ef8-106">**注意:\*\*\*\*预览**操作当前仅适用于 SharePoint 和 OneDrive for business。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-106">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
+> <span data-ttu-id="07bb6-107">**注意：\*\*\*\*预览**操作当前仅适用于 SharePoint 和 OneDrive for business。</span><span class="sxs-lookup"><span data-stu-id="07bb6-107">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [createLink]: driveitem-createlink.md
 
-## <a name="permissions"></a><span data-ttu-id="e6ef8-108">权限</span><span class="sxs-lookup"><span data-stu-id="e6ef8-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="07bb6-109">权限</span><span class="sxs-lookup"><span data-stu-id="07bb6-109">Permissions</span></span>
 
-<span data-ttu-id="e6ef8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="07bb6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="07bb6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e6ef8-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e6ef8-111">Permission type</span></span>                        | <span data-ttu-id="e6ef8-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e6ef8-112">Permissions (from least to most privileged)</span></span>
+| <span data-ttu-id="07bb6-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="07bb6-112">Permission type</span></span>                        | <span data-ttu-id="07bb6-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="07bb6-113">Permissions (from least to most privileged)</span></span>
 |:---------------------------------------|:-------------------------------------------
-| <span data-ttu-id="e6ef8-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e6ef8-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="e6ef8-114">文件. 读取、文件读写、全部、读写全部。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-114">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
-| <span data-ttu-id="e6ef8-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e6ef8-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6ef8-116">Read, 文件. ReadWrite, 全部文件。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-116">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
-| <span data-ttu-id="e6ef8-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e6ef8-117">Application</span></span>                            | <span data-ttu-id="e6ef8-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-118">Not supported.</span></span>
+| <span data-ttu-id="07bb6-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="07bb6-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="07bb6-115">文件. 读取、文件读写、全部、读写全部。</span><span class="sxs-lookup"><span data-stu-id="07bb6-115">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
+| <span data-ttu-id="07bb6-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="07bb6-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="07bb6-117">Read，文件. ReadWrite，全部文件。</span><span class="sxs-lookup"><span data-stu-id="07bb6-117">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
+| <span data-ttu-id="07bb6-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="07bb6-118">Application</span></span>                            | <span data-ttu-id="07bb6-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="07bb6-119">Not supported.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e6ef8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e6ef8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="07bb6-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="07bb6-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,20 +49,20 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a><span data-ttu-id="e6ef8-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="e6ef8-120">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="07bb6-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="07bb6-121">Request body</span></span>
 
-<span data-ttu-id="e6ef8-121">请求正文定义您的应用程序所请求的可嵌入 URL 的属性。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-121">The body of the request defines properties of the embeddable URL your application is requesting.</span></span>
-<span data-ttu-id="e6ef8-122">请求应为具有以下属性的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-122">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="07bb6-122">请求正文定义您的应用程序所请求的可嵌入 URL 的属性。</span><span class="sxs-lookup"><span data-stu-id="07bb6-122">The body of the request defines properties of the embeddable URL your application is requesting.</span></span>
+<span data-ttu-id="07bb6-123">请求应为具有以下属性的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="07bb6-123">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="e6ef8-123">名称</span><span class="sxs-lookup"><span data-stu-id="e6ef8-123">Name</span></span>      |  <span data-ttu-id="e6ef8-124">类型</span><span class="sxs-lookup"><span data-stu-id="e6ef8-124">Type</span></span>         | <span data-ttu-id="e6ef8-125">说明</span><span class="sxs-lookup"><span data-stu-id="e6ef8-125">Description</span></span>
+|   <span data-ttu-id="07bb6-124">名称</span><span class="sxs-lookup"><span data-stu-id="07bb6-124">Name</span></span>      |  <span data-ttu-id="07bb6-125">类型</span><span class="sxs-lookup"><span data-stu-id="07bb6-125">Type</span></span>         | <span data-ttu-id="07bb6-126">说明</span><span class="sxs-lookup"><span data-stu-id="07bb6-126">Description</span></span>
 |:------------|:--------------|:-----------------------------------------------
-| <span data-ttu-id="e6ef8-126">格式</span><span class="sxs-lookup"><span data-stu-id="e6ef8-126">viewer</span></span>      | <span data-ttu-id="e6ef8-127">字符串</span><span class="sxs-lookup"><span data-stu-id="e6ef8-127">string</span></span>        | <span data-ttu-id="e6ef8-128">可选。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-128">Optional.</span></span> <span data-ttu-id="e6ef8-129">要使用的预览应用。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-129">Preview app to use.</span></span> <span data-ttu-id="e6ef8-130">`onedrive` 或 `office`）。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-130">`onedrive` or `office`.</span></span> <span data-ttu-id="e6ef8-131">如果为 null, 则将自动选择合适的查看器。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-131">If null, a suitable viewer will be chosen automatically.</span></span>
-| <span data-ttu-id="e6ef8-132">chromeless</span><span class="sxs-lookup"><span data-stu-id="e6ef8-132">chromeless</span></span>  | <span data-ttu-id="e6ef8-133">布尔</span><span class="sxs-lookup"><span data-stu-id="e6ef8-133">boolean</span></span>       | <span data-ttu-id="e6ef8-134">可选。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-134">Optional.</span></span> <span data-ttu-id="e6ef8-135">如果`true`为 (默认值), 则嵌入的视图将不包含任何控件。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-135">If `true` (default), the embedded view will not include any controls.</span></span>
-| <span data-ttu-id="e6ef8-136">allowEdit</span><span class="sxs-lookup"><span data-stu-id="e6ef8-136">allowEdit</span></span>   | <span data-ttu-id="e6ef8-137">布尔</span><span class="sxs-lookup"><span data-stu-id="e6ef8-137">boolean</span></span>       | <span data-ttu-id="e6ef8-138">可选。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-138">Optional.</span></span> <span data-ttu-id="e6ef8-139">如果`true`是, 则可以从嵌入的 UI 编辑该文件。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-139">If `true`, the file can be edited from the embedded UI.</span></span>
-| <span data-ttu-id="e6ef8-140">page</span><span class="sxs-lookup"><span data-stu-id="e6ef8-140">page</span></span>        | <span data-ttu-id="e6ef8-141">string/number</span><span class="sxs-lookup"><span data-stu-id="e6ef8-141">string/number</span></span> | <span data-ttu-id="e6ef8-142">可选。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-142">Optional.</span></span> <span data-ttu-id="e6ef8-143">要从其开始的文档的页码 (如果适用)。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-143">Page number of document to start at, if applicable.</span></span> <span data-ttu-id="e6ef8-144">为在文件类型 (如 ZIP) 周围的将来用例指定为字符串。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-144">Specified as string for future use cases around file types such as ZIP.</span></span>
-| <span data-ttu-id="e6ef8-145">zoom</span><span class="sxs-lookup"><span data-stu-id="e6ef8-145">zoom</span></span>        | <span data-ttu-id="e6ef8-146">number</span><span class="sxs-lookup"><span data-stu-id="e6ef8-146">number</span></span>        | <span data-ttu-id="e6ef8-147">可选。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-147">Optional.</span></span> <span data-ttu-id="e6ef8-148">要从其开始的缩放级别 (如果适用)。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-148">Zoom level to start at, if applicable.</span></span>
+| <span data-ttu-id="07bb6-127">格式</span><span class="sxs-lookup"><span data-stu-id="07bb6-127">viewer</span></span>      | <span data-ttu-id="07bb6-128">string</span><span class="sxs-lookup"><span data-stu-id="07bb6-128">string</span></span>        | <span data-ttu-id="07bb6-129">可选。</span><span class="sxs-lookup"><span data-stu-id="07bb6-129">Optional.</span></span> <span data-ttu-id="07bb6-130">要使用的预览应用。</span><span class="sxs-lookup"><span data-stu-id="07bb6-130">Preview app to use.</span></span> <span data-ttu-id="07bb6-131">`onedrive` 或 `office`）。</span><span class="sxs-lookup"><span data-stu-id="07bb6-131">`onedrive` or `office`.</span></span> <span data-ttu-id="07bb6-132">如果为 null，则将自动选择合适的查看器。</span><span class="sxs-lookup"><span data-stu-id="07bb6-132">If null, a suitable viewer will be chosen automatically.</span></span>
+| <span data-ttu-id="07bb6-133">chromeless</span><span class="sxs-lookup"><span data-stu-id="07bb6-133">chromeless</span></span>  | <span data-ttu-id="07bb6-134">布尔</span><span class="sxs-lookup"><span data-stu-id="07bb6-134">boolean</span></span>       | <span data-ttu-id="07bb6-135">可选。</span><span class="sxs-lookup"><span data-stu-id="07bb6-135">Optional.</span></span> <span data-ttu-id="07bb6-136">如果`true`为（默认值），则嵌入的视图将不包含任何控件。</span><span class="sxs-lookup"><span data-stu-id="07bb6-136">If `true` (default), the embedded view will not include any controls.</span></span>
+| <span data-ttu-id="07bb6-137">allowEdit</span><span class="sxs-lookup"><span data-stu-id="07bb6-137">allowEdit</span></span>   | <span data-ttu-id="07bb6-138">布尔</span><span class="sxs-lookup"><span data-stu-id="07bb6-138">boolean</span></span>       | <span data-ttu-id="07bb6-139">可选。</span><span class="sxs-lookup"><span data-stu-id="07bb6-139">Optional.</span></span> <span data-ttu-id="07bb6-140">如果`true`是，则可以从嵌入的 UI 编辑该文件。</span><span class="sxs-lookup"><span data-stu-id="07bb6-140">If `true`, the file can be edited from the embedded UI.</span></span>
+| <span data-ttu-id="07bb6-141">page</span><span class="sxs-lookup"><span data-stu-id="07bb6-141">page</span></span>        | <span data-ttu-id="07bb6-142">string/number</span><span class="sxs-lookup"><span data-stu-id="07bb6-142">string/number</span></span> | <span data-ttu-id="07bb6-143">可选。</span><span class="sxs-lookup"><span data-stu-id="07bb6-143">Optional.</span></span> <span data-ttu-id="07bb6-144">要从其开始的文档的页码（如果适用）。</span><span class="sxs-lookup"><span data-stu-id="07bb6-144">Page number of document to start at, if applicable.</span></span> <span data-ttu-id="07bb6-145">为在文件类型（如 ZIP）周围的将来用例指定为字符串。</span><span class="sxs-lookup"><span data-stu-id="07bb6-145">Specified as string for future use cases around file types such as ZIP.</span></span>
+| <span data-ttu-id="07bb6-146">zoom</span><span class="sxs-lookup"><span data-stu-id="07bb6-146">zoom</span></span>        | <span data-ttu-id="07bb6-147">number</span><span class="sxs-lookup"><span data-stu-id="07bb6-147">number</span></span>        | <span data-ttu-id="07bb6-148">可选。</span><span class="sxs-lookup"><span data-stu-id="07bb6-148">Optional.</span></span> <span data-ttu-id="07bb6-149">要从其开始的缩放级别（如果适用）。</span><span class="sxs-lookup"><span data-stu-id="07bb6-149">Zoom level to start at, if applicable.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e6ef8-149">响应</span><span class="sxs-lookup"><span data-stu-id="e6ef8-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="07bb6-150">响应</span><span class="sxs-lookup"><span data-stu-id="07bb6-150">Response</span></span>
 
 ```json
 {
@@ -70,17 +72,17 @@ POST /shares/{shareId}/driveItem/preview
 }
 ```
 
-<span data-ttu-id="e6ef8-150">响应将是一个包含以下属性的 JSON 对象:</span><span class="sxs-lookup"><span data-stu-id="e6ef8-150">The response will be a JSON object containing the following properties:</span></span>
+<span data-ttu-id="07bb6-151">响应将是一个包含以下属性的 JSON 对象：</span><span class="sxs-lookup"><span data-stu-id="07bb6-151">The response will be a JSON object containing the following properties:</span></span>
 
-| <span data-ttu-id="e6ef8-151">名称</span><span class="sxs-lookup"><span data-stu-id="e6ef8-151">Name</span></span>           | <span data-ttu-id="e6ef8-152">类型</span><span class="sxs-lookup"><span data-stu-id="e6ef8-152">Type</span></span>   | <span data-ttu-id="e6ef8-153">说明</span><span class="sxs-lookup"><span data-stu-id="e6ef8-153">Description</span></span>
+| <span data-ttu-id="07bb6-152">名称</span><span class="sxs-lookup"><span data-stu-id="07bb6-152">Name</span></span>           | <span data-ttu-id="07bb6-153">类型</span><span class="sxs-lookup"><span data-stu-id="07bb6-153">Type</span></span>   | <span data-ttu-id="07bb6-154">说明</span><span class="sxs-lookup"><span data-stu-id="07bb6-154">Description</span></span>
 |:---------------|:-------|:---------------------------------------------------
-| <span data-ttu-id="e6ef8-154">getUrl</span><span class="sxs-lookup"><span data-stu-id="e6ef8-154">getUrl</span></span>         | <span data-ttu-id="e6ef8-155">string</span><span class="sxs-lookup"><span data-stu-id="e6ef8-155">string</span></span> | <span data-ttu-id="e6ef8-156">适合使用 HTTP GET (iframe 等) 进行嵌入的 URL</span><span class="sxs-lookup"><span data-stu-id="e6ef8-156">URL suitable for embedding using HTTP GET (iframes, etc.)</span></span>
-| <span data-ttu-id="e6ef8-157">postUrl</span><span class="sxs-lookup"><span data-stu-id="e6ef8-157">postUrl</span></span>        | <span data-ttu-id="e6ef8-158">string</span><span class="sxs-lookup"><span data-stu-id="e6ef8-158">string</span></span> | <span data-ttu-id="e6ef8-159">适合使用 HTTP POST (窗体 POST、JS 等) 嵌入的 URL</span><span class="sxs-lookup"><span data-stu-id="e6ef8-159">URL suitable for embedding using HTTP POST (form post, JS, etc.)</span></span>
-| <span data-ttu-id="e6ef8-160">postParameters</span><span class="sxs-lookup"><span data-stu-id="e6ef8-160">postParameters</span></span> | <span data-ttu-id="e6ef8-161">string</span><span class="sxs-lookup"><span data-stu-id="e6ef8-161">string</span></span> | <span data-ttu-id="e6ef8-162">如果使用 postUrl, 则发布要包括的参数</span><span class="sxs-lookup"><span data-stu-id="e6ef8-162">POST parameters to include if using postUrl</span></span>
+| <span data-ttu-id="07bb6-155">getUrl</span><span class="sxs-lookup"><span data-stu-id="07bb6-155">getUrl</span></span>         | <span data-ttu-id="07bb6-156">string</span><span class="sxs-lookup"><span data-stu-id="07bb6-156">string</span></span> | <span data-ttu-id="07bb6-157">适合使用 HTTP GET （iframe 等）进行嵌入的 URL</span><span class="sxs-lookup"><span data-stu-id="07bb6-157">URL suitable for embedding using HTTP GET (iframes, etc.)</span></span>
+| <span data-ttu-id="07bb6-158">postUrl</span><span class="sxs-lookup"><span data-stu-id="07bb6-158">postUrl</span></span>        | <span data-ttu-id="07bb6-159">string</span><span class="sxs-lookup"><span data-stu-id="07bb6-159">string</span></span> | <span data-ttu-id="07bb6-160">适合使用 HTTP POST （窗体 POST、JS 等）嵌入的 URL</span><span class="sxs-lookup"><span data-stu-id="07bb6-160">URL suitable for embedding using HTTP POST (form post, JS, etc.)</span></span>
+| <span data-ttu-id="07bb6-161">postParameters</span><span class="sxs-lookup"><span data-stu-id="07bb6-161">postParameters</span></span> | <span data-ttu-id="07bb6-162">string</span><span class="sxs-lookup"><span data-stu-id="07bb6-162">string</span></span> | <span data-ttu-id="07bb6-163">如果使用 postUrl，则发布要包括的参数</span><span class="sxs-lookup"><span data-stu-id="07bb6-163">POST parameters to include if using postUrl</span></span>
 
-<span data-ttu-id="e6ef8-163">根据指定选项的 embed 支持的当前状态, 可能会返回 getUrl、postUrl 或 both。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-163">Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.</span></span>
+<span data-ttu-id="07bb6-164">根据指定选项的 embed 支持的当前状态，可能会返回 getUrl、postUrl 或 both。</span><span class="sxs-lookup"><span data-stu-id="07bb6-164">Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.</span></span>
 
-<span data-ttu-id="e6ef8-164">postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 POSTURL 执行 POST, 应相应地设置内容类型。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-164">postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly.</span></span> <span data-ttu-id="e6ef8-165">例如：</span><span class="sxs-lookup"><span data-stu-id="e6ef8-165">For example:</span></span>
+<span data-ttu-id="07bb6-165">postParameters 是格式为`application/x-www-form-urlencoded`的字符串，如果向 POSTURL 执行 POST，应相应地设置内容类型。</span><span class="sxs-lookup"><span data-stu-id="07bb6-165">postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly.</span></span> <span data-ttu-id="07bb6-166">例如：</span><span class="sxs-lookup"><span data-stu-id="07bb6-166">For example:</span></span>
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -88,26 +90,26 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-### <a name="viewers"></a><span data-ttu-id="e6ef8-166">查看者</span><span class="sxs-lookup"><span data-stu-id="e6ef8-166">Viewers</span></span>
+### <a name="viewers"></a><span data-ttu-id="07bb6-167">查看者</span><span class="sxs-lookup"><span data-stu-id="07bb6-167">Viewers</span></span>
 
-<span data-ttu-id="e6ef8-167">**查看器**参数允许使用以下值。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-167">The following values are allowed for the **viewer** parameter.</span></span>
+<span data-ttu-id="07bb6-168">**查看器**参数允许使用以下值。</span><span class="sxs-lookup"><span data-stu-id="07bb6-168">The following values are allowed for the **viewer** parameter.</span></span>
 
-| <span data-ttu-id="e6ef8-168">类型值</span><span class="sxs-lookup"><span data-stu-id="e6ef8-168">Type value</span></span> | <span data-ttu-id="e6ef8-169">说明</span><span class="sxs-lookup"><span data-stu-id="e6ef8-169">Description</span></span>
+| <span data-ttu-id="07bb6-169">类型值</span><span class="sxs-lookup"><span data-stu-id="07bb6-169">Type value</span></span> | <span data-ttu-id="07bb6-170">说明</span><span class="sxs-lookup"><span data-stu-id="07bb6-170">Description</span></span>
 |:-----------|:----------------------------------------------------------------
-| <span data-ttu-id="e6ef8-170">不适</span><span class="sxs-lookup"><span data-stu-id="e6ef8-170">(null)</span></span>     | <span data-ttu-id="e6ef8-171">选择用于呈现文件的适当的应用程序。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-171">Chooses an appropriate app for rendering the file.</span></span> <span data-ttu-id="e6ef8-172">在大多数情况下, 这将`onedrive`使用预览器, 但可能因文件类型而异。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-172">In most cases this will use the `onedrive` previewer, but may vary by file type.</span></span>
-| `onedrive` | <span data-ttu-id="e6ef8-173">使用 OneDrive 预览器应用程序呈现文件。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-173">Use the OneDrive previewer app to render the file.</span></span>
-| `office`   | <span data-ttu-id="e6ef8-174">使用 Office 的 web 版本呈现文件。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-174">Use the web version of Office to render the file.</span></span> <span data-ttu-id="e6ef8-175">仅对 Office 文档有效。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-175">Only valid for Office documents.</span></span>
+| <span data-ttu-id="07bb6-171">不适</span><span class="sxs-lookup"><span data-stu-id="07bb6-171">(null)</span></span>     | <span data-ttu-id="07bb6-172">选择用于呈现文件的适当的应用程序。</span><span class="sxs-lookup"><span data-stu-id="07bb6-172">Chooses an appropriate app for rendering the file.</span></span> <span data-ttu-id="07bb6-173">在大多数情况下，这将`onedrive`使用预览器，但可能因文件类型而异。</span><span class="sxs-lookup"><span data-stu-id="07bb6-173">In most cases this will use the `onedrive` previewer, but may vary by file type.</span></span>
+| `onedrive` | <span data-ttu-id="07bb6-174">使用 OneDrive 预览器应用程序呈现文件。</span><span class="sxs-lookup"><span data-stu-id="07bb6-174">Use the OneDrive previewer app to render the file.</span></span>
+| `office`   | <span data-ttu-id="07bb6-175">使用 Office 的 web 版本呈现文件。</span><span class="sxs-lookup"><span data-stu-id="07bb6-175">Use the web version of Office to render the file.</span></span> <span data-ttu-id="07bb6-176">仅对 Office 文档有效。</span><span class="sxs-lookup"><span data-stu-id="07bb6-176">Only valid for Office documents.</span></span>
 
-### <a name="chrome-vs-chromeless"></a><span data-ttu-id="e6ef8-176">Chrome vs chromeless</span><span class="sxs-lookup"><span data-stu-id="e6ef8-176">Chrome vs chromeless</span></span>
+### <a name="chrome-vs-chromeless"></a><span data-ttu-id="07bb6-177">Chrome vs chromeless</span><span class="sxs-lookup"><span data-stu-id="07bb6-177">Chrome vs chromeless</span></span>
 
-<span data-ttu-id="e6ef8-177">如果`chromeless`为 true, 预览将是文件的简略呈现。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-177">If `chromeless` is true, the preview will be a bare rendering of the file.</span></span>
-<span data-ttu-id="e6ef8-178">否则, 可能会显示其他工具栏/按钮以与文档/视图进行交互。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-178">Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.</span></span>
+<span data-ttu-id="07bb6-178">如果`chromeless`为 true，预览将是文件的简略呈现。</span><span class="sxs-lookup"><span data-stu-id="07bb6-178">If `chromeless` is true, the preview will be a bare rendering of the file.</span></span>
+<span data-ttu-id="07bb6-179">否则，可能会显示其他工具栏/按钮以与文档/视图进行交互。</span><span class="sxs-lookup"><span data-stu-id="07bb6-179">Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.</span></span>
 
-### <a name="viewedit"></a><span data-ttu-id="e6ef8-179">查看/编辑</span><span class="sxs-lookup"><span data-stu-id="e6ef8-179">View/edit</span></span>
+### <a name="viewedit"></a><span data-ttu-id="07bb6-180">查看/编辑</span><span class="sxs-lookup"><span data-stu-id="07bb6-180">View/edit</span></span>
 
-<span data-ttu-id="e6ef8-180">如果`allowEdit`为 true, 则文档可以通过嵌入预览的用户交互进行修改。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-180">If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.</span></span>
-<span data-ttu-id="e6ef8-181">此功能可能不适用于所有预览版应用或文件类型。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-181">This capability may not be available for all preview apps or file types.</span></span>
+<span data-ttu-id="07bb6-181">如果`allowEdit`为 true，则文档可以通过嵌入预览的用户交互进行修改。</span><span class="sxs-lookup"><span data-stu-id="07bb6-181">If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.</span></span>
+<span data-ttu-id="07bb6-182">此功能可能不适用于所有预览版应用或文件类型。</span><span class="sxs-lookup"><span data-stu-id="07bb6-182">This capability may not be available for all preview apps or file types.</span></span>
 
-### <a name="pagezoom"></a><span data-ttu-id="e6ef8-182">页面/缩放</span><span class="sxs-lookup"><span data-stu-id="e6ef8-182">Page/zoom</span></span>
+### <a name="pagezoom"></a><span data-ttu-id="07bb6-183">页面/缩放</span><span class="sxs-lookup"><span data-stu-id="07bb6-183">Page/zoom</span></span>
 
-<span data-ttu-id="e6ef8-183">" `page` " `zoom`和 "" 选项可能不适用于所有预览版应用, 但如果预览应用支持它, 则将应用 "" 和 "" 选项。</span><span class="sxs-lookup"><span data-stu-id="e6ef8-183">The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.</span></span>
+<span data-ttu-id="07bb6-184">" `page` " `zoom`和 "" 选项可能不适用于所有预览版应用，但如果预览应用支持它，则将应用 "" 和 "" 选项。</span><span class="sxs-lookup"><span data-stu-id="07bb6-184">The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.</span></span>
