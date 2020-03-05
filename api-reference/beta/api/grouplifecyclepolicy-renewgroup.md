@@ -1,24 +1,26 @@
 ---
-title: 'groupLifecyclePolicy: renewGroup'
+title: groupLifecyclePolicy： renewGroup
 description: 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d1cb4b602b3272ff27f635b84cf4a19b12739b9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2c1328778c9b2feba197fd403e9821da2f64872d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446581"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy： renewGroup
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 
-> **注意:** 在1.0 版中,[使用组资源发出续订请求](/graph/api/group-renew?view=graph-rest-1.0)。
+> **注意：** 在1.0 版中，[使用组资源发出续订请求](/graph/api/group-renew?view=graph-rest-1.0)。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +63,7 @@ POST /groupLifecyclePolicies/renewGroup
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "grouplifecyclepolicy_renewgroup"
@@ -75,15 +77,15 @@ Content-length: 57
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-renewgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/grouplifecyclepolicy-renewgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/grouplifecyclepolicy-renewgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,15 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d0e30db53ec6e798bf62d5a64aa7d856ddc8f5e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a216de96ba97e079efc1cfc034b00ddd027c9b1d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033346"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446714"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
-RangeView 表示父范围的一组可见单元格。
+
+命名空间： RangeView 代表父范围的一组可见单元格。
 
 ## <a name="methods"></a>方法
 
@@ -35,7 +36,7 @@ RangeView 表示父范围的一组可见单元格。
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。只读。 |
 |rowCount|Int32|返回可见行数。只读。  |
 |text|Json|指定区域的文本值。文本值与单元格宽度无关。在 Excel UI 中替代 # 符号不会影响 API 返回的文本值。只读。    |
-|valueTypes|Json|表示每个单元格的数据类型。 只读。 可能的值包括: 未知、空、字符串、Integer、Double、Boolean、Error。 |
+|valueTypes|Json|表示每个单元格的数据类型。 只读。 可能的值包括：未知、空、字符串、Integer、Double、Boolean、Error。 |
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
 ## <a name="relationships"></a>关系

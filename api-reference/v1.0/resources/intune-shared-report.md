@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a05f05b132f87bd827d52b70d536e6b2bca76550
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 68939fa29a259d3f5a463d731c79a4a8ebff44d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447813"
 ---
 # <a name="report-resource-type"></a>report 资源类型
+
+命名空间： microsoft. graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d75bbf877fcd70203b71159b198f5bad5f1bc3f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e06afabfa01e7c63f103208bb0f290bcb58e4c56
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035187"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447106"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
+
+命名空间： microsoft. graph
 
 
 **PlannerPlanDetails**资源表示有关计划的其他信息。 每个[plan](plannerplan.md)对象都有一个详细信息对象。

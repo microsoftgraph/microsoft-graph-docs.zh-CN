@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6bdcc4331b14ad7a0e03404781014b66daf55b46
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e20932285f7009ee470ba66a6a9cd78c50d65ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447183"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
+
+命名空间： microsoft. graph
 
 表示电话号码。
 

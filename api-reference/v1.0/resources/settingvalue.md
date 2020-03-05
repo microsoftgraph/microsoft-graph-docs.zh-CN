@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f37a429fd9bb8e8d3cf65aef55d6af5033f4a598
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba9b6321ad443d9538d9c539435c62f50149b330
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446889"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
+
+命名空间： microsoft. graph
 
 由名称/值对表示的设置。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36034354"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|name|String| 设置的名称 (由[groupSettingTemplate](groupsettingtemplate.md)定义)。 |
+|name|String| 设置的名称（由[groupSettingTemplate](groupsettingtemplate.md)定义）。 |
 |value|String| 设置的值。 |
 
 ### <a name="json-representation"></a>JSON 表示形式

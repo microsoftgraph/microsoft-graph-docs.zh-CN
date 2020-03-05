@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 80ffc67fcba25fabb1da3ee1c21ee805c334fa3c
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 82b67b18be4c0c9ba63b86c2ddc5e0f670b20c26
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446798"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
+
+命名空间： microsoft. graph
 
 单个 DTMF 事件。
 

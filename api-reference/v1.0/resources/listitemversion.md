@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8523e77fd308ab4863a0c3d90ccacad73cc766cc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf6a7fae593fb651b2296f45249af4bc8d495698
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036447"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447554"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
+
+命名空间： microsoft. graph
 
 **listItemVersion** 资源表示先前版本的 [ListItem](listitem.md) 资源。
 

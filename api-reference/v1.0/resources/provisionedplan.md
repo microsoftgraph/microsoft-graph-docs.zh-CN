@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3560aab132448a0d13c4b4abe2590d4802cdf9f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c12ce39739bd6f922edacf11654b24d6f7b471dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034991"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447029"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
+
+命名空间： microsoft. graph
 
 **用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。
 

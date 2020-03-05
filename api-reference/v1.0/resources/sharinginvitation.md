@@ -7,14 +7,16 @@ localization_priority: Normal
 description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 011402b40b601642a048b91e3b3f66de0792aaf2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e1b5434f025c48f1eea08d31a00b4bc5fc9d39f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446875"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
+
+命名空间： microsoft. graph
 
 **SharingInvitation**资源将与邀请相关的数据项分组到一个单一结构中。
 
@@ -40,7 +42,7 @@ ms.locfileid: "36034242"
 
 ## <a name="properties"></a>属性
 
-| 属性名称  | 类型            | 说明
+| 属性名  | 类型            | 说明
 |:---------------|:----------------|:------------------------------------------
 | email          | String          | 为共享邀请的收件人提供的电子邮件地址。只读。
 | invitedBy      | [identitySet][] | 提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。

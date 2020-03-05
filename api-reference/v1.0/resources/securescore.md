@@ -5,16 +5,18 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 395c5ed0594d1f509bb664b5aee6ea18bb42af0a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fc789a967f8fbba33e113dd55e7bfae7803940e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446931"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
-表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下, 将保留90天的数据。 此数据按**createdDateTime**进行排序, 从最新到最早。 这将允许您使用 $top = n 对响应进行分页, 其中 n = 要检索的数据的天数。 
+命名空间： microsoft. graph
+
+表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下，将保留90天的数据。 此数据按**createdDateTime**进行排序，从最新到最早。 这将允许您使用 $top = n 对响应进行分页，其中 n = 要检索的数据的天数。 
 
 
 ## <a name="methods"></a>方法
@@ -35,12 +37,12 @@ ms.locfileid: "36034480"
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
 |   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
-|   enabledServices |   String collection   |   适用于租户的 Microsoft 提供的服务 (例如, Exchange online、Skype、Sharepoint)。   |
+|   enabledServices |   String 集合   |   适用于租户的 Microsoft 提供的服务（例如，Exchange online、Skype、Sharepoint）。   |
 |   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
 |   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |作用域内不同作用域 (例如, 按行业划分的平均分数、按座位的平均方式) 和控制类别 (标识、数据、设备、应用程序、基础结构)。 |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |作用域内不同作用域（例如，按行业划分的平均分数、按座位的平均方式）和控制类别（标识、数据、设备、应用程序、基础结构）。 |
 |   controlScores | [controlScore](controlscore.md)集合  |   包含一组控件的租户分数。   |
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = SecureScore)。 必需。|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型（例如，供应商 = Microsoft; provider = SecureScore）。 必填。|
 
 
 ## <a name="relationships"></a>关系

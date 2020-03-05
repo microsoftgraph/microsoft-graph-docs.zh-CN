@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e1903b192891befa4d9b1806d764a1faecbdbc0
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2682aa4a4c28564e0f4474c7d215f4f5df05177d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368314"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448079"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间： microsoft. graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此租户的合作伙伴状态。
 
@@ -22,11 +24,11 @@ ms.locfileid: "37368314"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
-|才|1|合作伙伴不可用。|
-|enabled|双面|启用合作伙伴。|
-|异常|第三章|合作伙伴连接已终止。|
-|拒绝|4|拒绝合作伙伴邮件。|
-|无|5|合作伙伴无响应。|
+|才|1 |合作伙伴不可用。|
+|enabled|2 |启用合作伙伴。|
+|异常|3 |合作伙伴连接已终止。|
+|拒绝|4 |拒绝合作伙伴邮件。|
+|无|5 |合作伙伴无响应。|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a4f7d2cd6887598ac0a60522dc5bee1101dff9c9
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: d4b2833910d22696ee95ed707469f6da2068453c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446721"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication 资源类型
+
+命名空间： microsoft. graph
 
 表示用于管理工作簿的 Excel 应用程序。
 

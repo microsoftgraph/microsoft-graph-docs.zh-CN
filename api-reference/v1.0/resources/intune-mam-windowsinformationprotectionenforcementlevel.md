@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e355a947957eefa0a8f21e9429cee3d0e0c20912
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ba8e8cded8ac4a245a556de78fc2ab99443eab3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448240"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间： microsoft. graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 WIP 保护强制级别的可能值
 
@@ -22,9 +24,9 @@ WIP 保护强制级别的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |noProtection|0|无保护强制实施|
-|encryptAndAuditOnly|1|仅加密和审核|
-|encryptAuditAndPrompt|双面|加密、审核和提示|
-|encryptAuditAndBlock|第三章|加密、审核和阻止|
+|encryptAndAuditOnly|1 |仅加密和审核|
+|encryptAuditAndPrompt|2 |加密、审核和提示|
+|encryptAuditAndBlock|3 |加密、审核和阻止|
 
 
 

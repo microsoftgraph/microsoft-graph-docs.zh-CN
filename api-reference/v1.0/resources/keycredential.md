@@ -5,19 +5,21 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 346ff30ad0479d2b25dc57d09a67cc4ddd5f83bc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 48ea2f837f62baeb8a8c7dc8f2204af8d8aa3113
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447610"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
+
+命名空间： microsoft. graph
 
 包含与应用程序关联的密钥凭据 <!--or a service principal-->. [应用程序](application.md)的**keyCredentials**属性 <!--and [servicePrincipal](serviceprincipal.md)--> 实体是**keyCredential**的集合。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary| 自定义密钥标识符 |
 | displayName | String | 密钥的友好名称。 可选。 |

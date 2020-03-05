@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f301947d6d277cd4fd51b7db035ef4f7134a5e65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24ed9ce0b7a4b7d9a013888fe7b43cbba5b4a264
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035505"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447176"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
+
+命名空间： microsoft. graph
 
 表示资源（例如联系人或事件）的街道地址。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36035505"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|String|城市。|
+|城市|String|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
 |postalCode|String|邮政编码。|
 |state|String|省/市/自治区。|

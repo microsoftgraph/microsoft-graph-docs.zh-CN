@@ -7,14 +7,16 @@ localization_priority: Normal
 description: SharingLink 资源将与链接相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 01d27971cd04ff91333d25240e4d1d517e05cec5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3195207588061840c4e1394e1460f74d3728510c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446861"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
+
+命名空间： microsoft. graph
 
 **SharingLink** 资源将与链接相关的数据项分组到一个单一结构。
 
@@ -48,7 +50,7 @@ ms.locfileid: "36034249"
 | type        | String        | 创建的链接类型。
 | scope       | 字符串        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| WebUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 
@@ -56,7 +58,7 @@ ms.locfileid: "36034249"
 
 此表定义了 **type** 属性的可能值：
 
-| 值   | 角色    | 说明
+| 值   | Role    | 说明
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | 可查看共享链接，允许只读访问。
 | `edit`  | `write` | 授予读写权限的编辑共享链接。
@@ -66,8 +68,8 @@ ms.locfileid: "36034249"
 
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。
-| `organization` | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
+| `anonymous`    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。
+| `organization` | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

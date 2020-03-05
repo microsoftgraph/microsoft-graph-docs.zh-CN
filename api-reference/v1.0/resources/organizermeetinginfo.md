@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e7750e282801a938fd42c01717cc7bbbedcf95a3
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 89f487b5edcf1b176a67d10b0ae45d8dd62c46d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913679"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447260"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
+
+命名空间： microsoft. graph
 
 包含有关会议组织者的详细信息。 
 
@@ -22,7 +24,7 @@ ms.locfileid: "40913679"
 
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer － 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
+| 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

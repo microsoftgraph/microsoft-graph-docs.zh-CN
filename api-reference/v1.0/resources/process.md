@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ccaf2e3048fc26573e9599a515aabf391dda6d58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db4980d8ca49e4091a338312a588716e494f258f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035082"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447064"
 ---
 # <a name="process-resource-type"></a>进程资源类型
+
+命名空间： microsoft. graph
 
 包含有关与警报相关的进程的状态信息。
 
@@ -20,18 +22,18 @@ ms.locfileid: "36035082"
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|帐户|String|用户帐户标识符 (进程在其下运行的用户帐户上下文) 例如, AccountName、SID 等。|
-|commandLine|String|完整的过程调用命令行, 包括所有参数。|
+|帐户|String|用户帐户标识符（进程在其下运行的用户帐户上下文）例如，AccountName、SID 等。|
+|commandLine|String|完整的过程调用命令行，包括所有参数。|
 |createdDateTime|DateTimeOffset|启动进程的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|fileHash|[fileHash](filehash.md)|包含文件哈希 (加密和位置敏感) 的复杂类型。|
+|fileHash|[fileHash](filehash.md)|包含文件哈希（加密和位置敏感）的复杂类型。|
 |integrityLevel|processIntegrityLevel|进程的完整性级别。 可取值为：`unknown`、`untrusted`、`low`、`medium`、`high`、`system`。|
-|isElevated|Boolean|如果进程已提升, 则为 True。|
+|isElevated|布尔|如果进程已提升，则为 True。|
 |name|String|进程的图像文件的名称。|
 |parentProcessCreatedDateTime|DateTimeOffset|父进程已启动的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|parentProcessId|Int32|父进程的进程 ID (PID)。|
+|parentProcessId|Int32|父进程的进程 ID （PID）。|
 |parentProcessName|String|父进程的图像文件的名称。|
-|路径|字符串|完整路径, 包括文件名。|
-|processId|Int32|进程的进程 ID (PID)。|
+|路径|字符串|完整路径，包括文件名。|
+|processId|Int32|进程的进程 ID （PID）。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

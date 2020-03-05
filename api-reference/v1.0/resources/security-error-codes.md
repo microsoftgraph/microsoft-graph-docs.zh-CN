@@ -5,14 +5,16 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 0c85fb6ffe9881960226ec4dc73a7487ce764d94
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: d1a65eb214fee21389b7d6c78c10a0d9b9d0e4ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263235"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446924"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全性 API 错误响应
+
+命名空间： microsoft. graph
 
 Microsoft Graph 安全性 API 中的错误使用标准的 HTTP 206 部分内容状态代码返回，并通过警告标头进行传递。
 
@@ -53,7 +55,7 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="constraints"></a>约束
 
-`$top` OData 查询参数限制为1000个警报。 我们建议您仅`$top`包括而不`$skip`是在第一个 GET 查询中。 您可以使用`@odata.nextLink`进行分页。 如果需要使用`$skip`，则限制为500警报。 例如，`/security/alerts?$top=10&$skip=500` 将返回 `200 OK` 响应代码，但 `/security/alerts?$top=10&$skip=501` 将返回 `400 Bad Request` 响应代码。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+`$top` OData 查询参数限制为1000个警报。 建议你在第一个 GET 查询中仅包括 `$top`，而不包括 `$skip`。 可使用 `@odata.nextLink` 进行分页。 如果需要使用 `$skip`，它具有 500 个警报的限制。 例如，`/security/alerts?$top=10&$skip=500` 将返回 `200 OK` 响应代码，但 `/security/alerts?$top=10&$skip=501` 将返回 `400 Bad Request` 响应代码。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 此限制的 workaaround 是将`$filter` OData 查询参数与 Microsoft GRAPH 安全 API `eventDateTime`中的 alert 实体结合使用， `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}`并将 dateTime 值替换为最后的（1500th）警报。 您还可以为设置区域`eventDateTime`;例如，*警报？ $filter = eventDateTime **gt** 2018-11-**11**T00：00： 00.000 z&eventDateTime **lt** 2018-11-**12**T00：00： 00.000 z*
 

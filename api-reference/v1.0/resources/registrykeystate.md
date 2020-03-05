@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ebd5beb4f81f85d4b696037c5ff5d4688b71d90a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0b014a0a2ce338524e6abf0e6bcaa532e2b5c1c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863804"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446994"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
+
+命名空间： microsoft. graph
 
 包含有关与警报相关的注册表项更改的信息，以及更改了注册表项的过程。
 

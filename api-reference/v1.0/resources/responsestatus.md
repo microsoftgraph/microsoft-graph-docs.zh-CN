@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 03deeabfd789fe3e8912d5a431af21bc2c8e5256
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 532cf48f59b94fefe8aa1c25546c066db0126e85
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034662"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446966"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
+
+命名空间： microsoft. graph
 
 会议请求的响应状态。
 

@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3bcce64ab900dae7c7f13d7da0c3d34d164fd35d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: dd00cbf5ce8395a819136ad9e655fa7670e5f3fa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913518"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447414"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
+
+命名空间： microsoft. graph
 
 会议中的参与者。
 
@@ -21,7 +23,7 @@ ms.locfileid: "40913518"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md)集合 |  |
-| organizer － 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

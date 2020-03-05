@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1fd2198113187ec5e4a1c507cf31d35457662d8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc07c6e8b787925e9ee72dbb949997c18ca70f87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034746"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446987"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
+
+命名空间： microsoft. graph
 
 用户[日历](calendar.md)中的[事件](event.md)提醒。
 

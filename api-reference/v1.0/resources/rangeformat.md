@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3e1b79c80c20197cc14a5097efdf9eb0513b43e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edf239d5e14ca65ee4ae15f846182e5678f89f46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034886"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447015"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
+
+命名空间： microsoft. graph
 
 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
 
@@ -32,7 +34,7 @@ ms.locfileid: "36034886"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnWidth|double|获取或设置区域内的所有列的宽度。如果列宽不统一，则返回 NULL。|
-|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为: `General`、 `Left`、 `Center` `Right` `Fill` `Justify` `CenterAcrossSelection`、、、、 `Distributed`。|
+|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为： `General`、 `Left`、 `Center` `Right` `Fill` `Justify` `CenterAcrossSelection`、、、、 `Distributed`。|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
 |verticalAlignment|string|表示指定对象的垂直对齐方式。 可能的值包括 `Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|

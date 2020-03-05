@@ -7,14 +7,16 @@ localization_priority: Normal
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f7d8f6d524b605b544785b0379a273d4c022c9c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c25b75dd422eb9d9fe515c425c9e71672bdecf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036524"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447617"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
+
+命名空间： microsoft. graph
 
 **ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。
 

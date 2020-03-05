@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: be8d9a7d08334bd716cfcbf565225add790b65e3
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: bdc022f82f2e0dc7a1277d2674f215b58d521679
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939367"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447211"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
+
+命名空间： microsoft. graph
 
 表示 OAuth 2.0 委派的权限范围。 调用资源应用程序时，客户端应用程序可能会请求指定的 OAuth 2.0 委派权限范围（通过[application](application.md)对象上的**requiredResourceAccess**集合）。 **Oauth2Permissions**属性 <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> [应用程序](application.md)实体是**permissionScope**的集合。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 描述 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |adminConsentDescription|String| 管理员同意和应用工作分配体验中显示的权限帮助文本。 |
 |adminConsentDisplayName|String| 管理员同意和应用工作分配体验中显示的权限的显示名称。 |

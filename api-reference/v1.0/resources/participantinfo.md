@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9b603d93b2be2fef6a999cf3c1d7663fc7405da9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 0316cb1bbe474f8265ed384774183759d29aca0f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913728"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447246"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
+
+命名空间： microsoft. graph
 
 包含有关参与者标识的其他属性
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbac4aa73d9310ed78e88a2149ea0c64ddf3c640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034410"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446910"
 ---
 # <a name="service-root"></a>服务根
+
+命名空间： microsoft. graph
 
 
 ## <a name="methods"></a>方法
@@ -27,7 +29,7 @@ ms.locfileid: "36034410"
 |[列出 directoryRole](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) 集合 |获取 directoryRole 对象集合。 |
 |[列出 directoryRoleTemplate](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |获取 directoryRoleTemplate 对象集合。 |
 |[列出驱动器](../api/drive-list.md) | [驱动器](drive.md) 集合 |获取 drive 对象集合。 |
-|[获取驱动器](../api/drive-get.md) | [驱动器](drive.md)  |获取 drive 对象的属性。 |
+|[获取驱动器](../api/drive-get.md) | [drive](drive.md)  |获取 drive 对象的属性。 |
 |[Create group](../api/group-post-groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
 |[列出组](../api/group-list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
 |[列出组织](../api/organization-get.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |

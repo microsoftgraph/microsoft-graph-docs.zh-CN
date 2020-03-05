@@ -7,14 +7,16 @@ localization_priority: Normal
 description: SearchResult 资源指示项是搜索查询的响应。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e6c0c458d9e6e3d31060cec49419b6b2438d5b00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3f3c9edceb864e8e1f895ccdfe4e5a4f8e6046a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034571"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446945"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult 资源类型
+
+命名空间： microsoft. graph
 
 **SearchResult** 资源指示项是搜索查询的响应。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 95c377ae8ee00c39196586822019e33ad97fcb8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163eab83bfcb5089ec21d449d90840384c12e4ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035965"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447344"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 活跃用户报表
+
+命名空间： microsoft. graph
 
 Office 365 活跃用户报表可用于确定组织中个人使用的产品许可证数，并向下钻取哪些用户使用什么产品的相关信息。 此类报表有助于管理员发现未充分利用的产品或可能需要获取额外培训或信息的用户。
 
@@ -21,6 +23,6 @@ Office 365 活跃用户报表可用于确定组织中个人使用的产品许可
 ## <a name="reports"></a>报表
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getoffice365activeuserdetail.md) | 流      | 获取 Office 365 活跃用户的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | 获取 Office 365 活跃用户的详细信息。 |
 | [获取用户数](../api/reportroot-getoffice365activeusercounts.md) | Stream      | 按产品获取报表周期内的每日活跃用户数。 |
 | [获取服务用户数](../api/reportroot-getoffice365servicesusercounts.md) | Stream      | 按活动类型和服务获取用户数。 |

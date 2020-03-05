@@ -5,14 +5,16 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 36310a469c5ed9289637f9701ce983db12b14fbf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b6dc5153fb12f44abad57d1977024675aa0bd45
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035488"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447190"
 ---
 # <a name="persontype-resource-type"></a>personType 资源类型
+
+命名空间： microsoft. graph
 
 表示人员类型。
 

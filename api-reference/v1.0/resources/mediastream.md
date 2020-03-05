@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ed564f4789a88092e34b8f8b4b0db8db63b48f2f
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6751d00a89bb4ca024f069a69213ebd2d76b7ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913651"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447428"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
+
+命名空间： microsoft. graph
 
 其中包含媒体通道的相关信息。
 
@@ -23,7 +25,7 @@ ms.locfileid: "40913651"
 | direction   | String  | 方向。 可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | 媒体流标签。                                                                                       |
 | 群组   | String  | 媒体类型。 可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。        |
-| serverMuted | Boolean | 如果服务器已将媒体设为静音。                                                                          |
+| serverMuted | 布尔 | 如果服务器已将媒体设为静音。                                                                          |
 | sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式

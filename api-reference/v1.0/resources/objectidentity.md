@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: dce1cf62530b1f129d6cf9e96ebb1867ba8954f4
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 5aada0b7802495571498fe3b3b6f6576c89e6579
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232120"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447351"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
+
+命名空间： microsoft. graph
 
 表示用于登录到用户帐户的标识。 标识可由 Microsoft、组织或由与用户帐户关联的社会身份提供商（如 Facebook、Google 或 Microsoft）提供。 这样一来，用户就可以使用任何相关标识登录到用户帐户。
 

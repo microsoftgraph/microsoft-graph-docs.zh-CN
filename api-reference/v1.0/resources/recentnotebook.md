@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: df61d1d676c204d63c0bbfc25236a4ed7bc4f75f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74050f5987b9a9085a6fbe0ab5f07c7e78744424
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034858"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447008"
 ---
 # <a name="recentnotebook-resource-type"></a>recentNotebook 资源类型
+
+命名空间： microsoft. graph
 
 最近访问过的 OneNote 笔记本。 **recentNotebook** 类似于 [notebook](notebook.md)，不同之处在于属性较少。
 

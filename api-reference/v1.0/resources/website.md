@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6a59022426392bbf3a94c6fb82b941131db3c1d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f6d630a2cde87415cb8229f7d320cb32bc6260d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033381"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446735"
 ---
 # <a name="website-resource-type"></a>网站资源类型
+
+命名空间： microsoft. graph
 
 表示一个网站。
 

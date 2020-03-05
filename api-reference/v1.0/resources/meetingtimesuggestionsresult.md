@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2c5e7461b27168150c21f8fedd5d697e2b8ec5e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6637676fcd8ba9f0dd097aa39fb1b87aefd06574
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447407"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult 资源类型
+
+命名空间： microsoft. graph
 
 一组会议时间建议（若有）；如果没有建议，则返回原因。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36036195"
 
 |**emptySuggestionsReason 值**|**原因**|
 |:-----|:-----|
-| attendeesUnavailable | 所有与会者的可用性都是已知的, 但没有足够的与会者可以达到[会议可信度](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)阈值, 默认情况下, 在任何时间段中, 默认为 50%。|
+| attendeesUnavailable | 所有与会者的可用性都是已知的，但没有足够的与会者可以达到[会议可信度](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)阈值，默认情况下，在任何时间段中，默认为50%。|
 | attendeesUnavailableOrUnknown | 部分或全部与会者的忙/闲状态未知，导致会议置信度下降至设定的阈值（默认为 50%）以下。如果与会者不是组织内部的，或获取忙/闲信息时出错了，与会者的忙/闲状态就会变成未知。|
 | locationsUnavailable | **locationConstraint** 参数的 [isRequired](locationconstraint.md) 属性被指定为必需，但在计算的时间段内尚无可用地点。 |
 | organizerUnavailable | **isOrganizerOptional** 参数为 false，但组织者在请求的时间范围内不空闲。 |
@@ -48,7 +50,7 @@ ms.locfileid: "36036195"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|未返回任何会议时间建议的原因。 可能的值为: `attendeesUnavailable`、 `attendeesUnavailableOrUnknown`、 `locationsUnavailable` `organizerUnavailable`、或`unknown`。 如果**meetingTimeSuggestions**属性包含任何会议建议, 则此属性为空字符串。|
+|emptySuggestionsReason|String|未返回任何会议时间建议的原因。 可能的值为： `attendeesUnavailable`、 `attendeesUnavailableOrUnknown`、 `locationsUnavailable` `organizerUnavailable`、或`unknown`。 如果**meetingTimeSuggestions**属性包含任何会议建议，则此属性为空字符串。|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) 集合|一组会议时间建议。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

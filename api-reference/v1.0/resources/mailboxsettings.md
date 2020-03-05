@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 12dc1a5992146c23ac6f2858fd7ee0b3508e455a
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 99097c026ef219e82a34a6c7b043cf70d36c965d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418298"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447505"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
+
+命名空间： microsoft. graph
 
 [用户](user.md)的主邮箱的设置。
 

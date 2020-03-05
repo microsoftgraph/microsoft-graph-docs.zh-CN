@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf87c803ec957b42cc55cf1523a708b145af117
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fb7fea89a7da3d98899a19614d7c40f76dcb6f8e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657486"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447645"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
+
+命名空间： microsoft. graph
 
 表示项目正文的属性，例如邮件、事件或组帖子。
 

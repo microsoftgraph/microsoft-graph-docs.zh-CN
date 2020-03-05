@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ad914bfcf3a0657a96b994241ad875aa3261e227
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 634a5531358a1be501c0b3b61f207c85394dba11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447456"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
+
+命名空间： microsoft. graph
 
 包含用于连接到呼叫的媒体配置的抽象基类。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6cfa08c15318fdaa58ac71e01a940b621b207f12
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1926d398a07bb38f27f46b8886ba7454321d5796
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035670"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447267"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates 资源类型
+
+命名空间： microsoft. graph
 
 地理坐标、海拔，以及它们物理位置的精确度。
 

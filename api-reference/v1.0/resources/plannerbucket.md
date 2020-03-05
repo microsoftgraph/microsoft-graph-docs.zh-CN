@@ -1,20 +1,22 @@
 ---
 title: plannerBucket 资源类型
-description: ) 用于 Office 365 中的计划中的任务。 它包含在 plannerPlan 中, 并且可以具有 plannerTasks 的集合。
+description: ）用于 Office 365 中的计划中的任务。 它包含在 plannerPlan 中，并且可以具有 plannerTasks 的集合。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b6810a62ecab5209ca1c17aa7f3ca9e4753a50a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40dc49363e4214c044c408760007a46b8f65ea46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035321"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447148"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 
-**PlannerBucket**资源表示 Office 365 中的计划中的任务的存储桶 (或 "自定义列")。 它包含在[plannerPlan](plannerplan.md)中, 并且可以具有[plannerTasks](plannertask.md)的集合。
+命名空间： microsoft. graph
+
+**PlannerBucket**资源表示 Office 365 中的计划中的任务的存储桶（或 "自定义列"）。 它包含在[plannerPlan](plannerplan.md)中，并且可以具有[plannerTasks](plannertask.md)的集合。
 
 
 
@@ -31,7 +33,7 @@ ms.locfileid: "36035321"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 存储桶的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|id|字符串| 只读。 存储桶的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
 |name|字符串|存储桶的名称。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |planId|String|存储桶所属的计划 ID。|
@@ -39,7 +41,7 @@ ms.locfileid: "36035321"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 存储桶中的任务的集合。|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 存储桶中的任务的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

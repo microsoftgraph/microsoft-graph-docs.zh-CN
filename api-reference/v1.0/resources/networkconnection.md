@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 25750b5484558c53ab03d3001bc2b8bafa307524
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86986178bc7104118dfb4db83ae43f7780307fe6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035992"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447365"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
+
+命名空间： microsoft. graph
 
 包含有关与警报相关的网络连接的状态信息。
 
@@ -20,24 +22,24 @@ ms.locfileid: "36035992"
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|applicationName|String|管理网络连接的应用程序的名称 (例如, Facebook、SMTP 等)。|
-|destinationAddress|String|目标 IP 地址 (的网络连接)。|
-|destinationDomain|String|目标 URL 的目标域部分。 (例如, "www.contoso.com")。|
-|destinationPort|String|目标端口 (网络连接)。|
-|destinationUrl|String|网络连接 URL/URI 字符串-不包括参数。 (例如, "www.contoso.com/products/default.html")|
+|applicationName|String|管理网络连接的应用程序的名称（例如，Facebook、SMTP 等）。|
+|destinationAddress|String|目标 IP 地址（的网络连接）。|
+|destinationDomain|String|目标 URL 的目标域部分。 （例如，"www.contoso.com"）。|
+|destinationPort|String|目标端口（网络连接）。|
+|destinationUrl|String|网络连接 URL/URI 字符串-不包括参数。 （例如，"www.contoso.com/products/default.html"）|
 |direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
-|domainRegisteredDateTime|DateTimeOffset|注册目标域的日期。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|localDnsName|String|在主机的本地 DNS 缓存中显示的本地 DNS 名称解析 (例如, 在 "主机" 文件被篡改的情况下)。|
+|domainRegisteredDateTime|DateTimeOffset|注册目标域的日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|localDnsName|String|在主机的本地 DNS 缓存中显示的本地 DNS 名称解析（例如，在 "主机" 文件被篡改的情况下）。|
 |natDestinationAddress|String|网络地址转换目标 IP 地址。|
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|协议|[securityNetworkProtocol](securitynetworkprotocol.md)|网络协议。 可能的值为`unknown`: `ip`、 `icmp`、 `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader`、、、、、、、、、、、、、、、、 `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
-|riskScore|String|提供程序生成/计算网络连接的风险分数。 建议的值范围为 0-1, 这相当于一个百分比。|
-|sourceAddress|String|源 (即, 网络连接的来源) 的 IP 地址。|
-|sourcePort|String|源 (即源) IP 端口 (的网络连接)。|
+|协议|[securityNetworkProtocol](securitynetworkprotocol.md)|网络协议。 可能的值为`unknown`： `ip`、 `icmp`、 `igmp` `ggp` `ipv4` `tcp` `spx` `spxII`、、、、、、、、、、、、、、、、、、、、。 `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx`|
+|riskScore|String|提供程序生成/计算网络连接的风险分数。 建议的值范围为0-1，这相当于一个百分比。|
+|sourceAddress|String|源（即，网络连接的来源）的 IP 地址。|
+|sourcePort|String|源（即源） IP 端口（的网络连接）。|
 |status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
-|urlParameters|String|目标 URL 的参数 (后缀)。|
+|urlParameters|String|目标 URL 的参数（后缀）。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

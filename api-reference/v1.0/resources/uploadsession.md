@@ -7,14 +7,16 @@ localization_priority: Normal
 description: UploadSession 资源提供了有关如何将大文件上传到 OneDrive、OneDrive for Business 或 SharePoint 文档库的信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 49453d730e1195c68b1c6245496e9c5530aba720
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3537a59da65499e67283d8a0640e5392c65edce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033542"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446784"
 ---
 # <a name="uploadsession-resource"></a>UploadSession 资源
+
+命名空间： microsoft. graph
 
 **UploadSession** 资源提供了有关如何将大文件上传到 OneDrive、OneDrive for Business 或 SharePoint 文档库的信息。
 

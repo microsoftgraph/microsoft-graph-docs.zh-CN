@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 469a1bebb02057017bd8444208c0a27102f45883
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5483054ce20ca5c9385e24920bff3c57f2706fb5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869509"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446413"
 ---
 # <a name="get-impossibletravelriskevent"></a>获取 impossibleTravelRiskEvent
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

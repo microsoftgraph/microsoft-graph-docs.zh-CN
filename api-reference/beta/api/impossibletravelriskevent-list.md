@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 4b91ccb4af5d81a5c64fed916fff9663d99dc57a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d58c273de9617a10fb498b285097b7fd072a2732
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869498"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446406"
 ---
 # <a name="list-impossibletravelriskevents"></a>列出 impossibleTravelRiskEvents
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

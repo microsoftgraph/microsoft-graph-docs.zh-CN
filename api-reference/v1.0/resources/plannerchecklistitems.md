@@ -5,20 +5,22 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: c17b0f0e4127c570514dad0498f3f5384e4a69ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 891e4c154faf053fd72578210b3d8602422279e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447127"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
+
+命名空间： microsoft. graph
 
 **PlannerChecklistItemCollection**资源表示任务上的检查表项的集合。 它是开放类型。 它是[任务详细信息](plannertaskdetails.md)对象的一部分。 属性-值对中的值是[checklistItem](plannerchecklistitem.md)对象。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 在这种情况下, 客户端应将**guid**作为属性提供, 并且它们的值必须是[checklistItem](plannerchecklistitem.md)对象。 示例如下所示。 若要删除检查表中的项目, 请将该属性的值`null`设置为。
+可由客户端定义打开类型的属性。 在这种情况下，客户端应将**guid**作为属性提供，并且它们的值必须是[checklistItem](plannerchecklistitem.md)对象。 示例如下所示。 若要删除检查表中的项目，请将该属性的值`null`设置为。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

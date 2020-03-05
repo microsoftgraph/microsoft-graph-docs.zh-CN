@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: insights
 description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
 doc_type: resourcePageType
-ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035516"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447197"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
+
+命名空间： microsoft. graph
 
 [columnDefinition](columndefinition.md) 资源上的 **personOrGroupColumn** 指示列值，该值表示从目录中选择的个人或组。
 

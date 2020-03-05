@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: SharePointIds 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: a7dfd936770ac85b458cb8b086ff05e328d2ea9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a61810792d4085c4ddd92c95b4f46ead54f57e67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034277"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446868"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
+
+命名空间： microsoft. graph
 
 **SharePointIds** 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 

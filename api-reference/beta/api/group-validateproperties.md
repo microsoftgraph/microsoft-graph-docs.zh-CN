@@ -1,26 +1,28 @@
 ---
-title: '组: validateProperties'
-description: 验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。 在尝试**更新**Office 365 组之前, 客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性, 请使用目录对象的 validateProperties 函数。
+title: 组： validateProperties
+description: 验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。 在尝试**更新**Office 365 组之前，客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性，请使用目录对象的 validateProperties 函数。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f58b8d0dde3f998e093450817be82a38c77594c6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cb0d6ca17a7c6bb9d48919235dfc8c3a9cec1059
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420523"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446672"
 ---
-# <a name="group-validateproperties"></a>组: validateProperties
+# <a name="group-validateproperties"></a>组： validateProperties
 
-验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。 在尝试**更新**Office 365 组之前, 客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性, 请使用目录对象的[validateProperties 函数](directoryobject-validateproperties.md)。
+命名空间： microsoft. graph
 
-将为显示名称和邮件昵称属性执行以下验证: 
+验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。 在尝试**更新**Office 365 组之前，客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性，请使用目录对象的[validateProperties 函数](directoryobject-validateproperties.md)。
+
+将为显示名称和邮件昵称属性执行以下验证： 
 1. 验证前缀和后缀命名策略
 2. 验证 "自定义禁止的词语" 策略
 
-此 API 在遇到第一次失败时返回。 如果一个或多个属性失败多次验证, 则仅返回第一个验证失败的属性。 但是, 如果仅验证前缀和后缀命名策略, 则可以验证邮件别名和显示名称, 并接收验证错误的集合。
+此 API 在遇到第一次失败时返回。 如果一个或多个属性失败多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。
 
 ## <a name="permissions"></a>权限
 
@@ -51,14 +53,14 @@ POST /groups/{id}/validateProperties
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是, 至少需要一个属性 (displayName 或 mailNickname)。 |
-|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是, 至少需要一个属性 (displayName 或 mailNickname)。 |
+|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性（displayName 或 mailNickname）。 |
+|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性（displayName 或 mailNickname）。 |
 |onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果针对的是 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
-如果成功且没有验证错误, 则该方法返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
 
-如果请求无效, 该方法将返回`400 Bad Request`响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
+如果请求无效，该方法将返回`400 Bad Request`响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
 
 如果存在验证错误。 此方法返回`422 Unprocessable Entity`响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
 
@@ -68,7 +70,7 @@ POST /groups/{id}/validateProperties
 
 ### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -84,15 +86,15 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

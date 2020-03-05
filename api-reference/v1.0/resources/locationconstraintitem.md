@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ee841112aa641069ec64d744120f460713e51c7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 404b0fd380c1161a827fe4610f744d0b9872c92b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036454"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447526"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
+
+命名空间： microsoft. graph
 
 客户端声明的会议地点条件。
 

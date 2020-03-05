@@ -1,31 +1,33 @@
 ---
 title: userIdentity 资源类型
-description: 在 Azure AD 审核日志的上下文中, 这表示已启动或受审核活动影响的用户信息。
+description: 在 Azure AD 审核日志的上下文中，这表示已启动或受审核活动影响的用户信息。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0e72f5338f7281188b7023aed342dd34ee57595e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 304d5a27714d7e6e02183b372814c8cb16c4e0b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033500"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446791"
 ---
 # <a name="useridentity-resource-type"></a>userIdentity 资源类型
 
-在 Azure AD 审核日志的上下文中, 这表示已启动或受审核活动影响的用户信息。
+命名空间： microsoft. graph
+
+在 Azure AD 审核日志的上下文中，这表示已启动或受审核活动影响的用户信息。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | 此身份的显示名称。 请注意, 这可能并不总是可用, 也不是最新的。    |
+| displayName | String | 此身份的显示名称。 请注意，这可能并不总是可用，也不是最新的。    |
 | id          | String | 身份的唯一标识符。  |
-| ipAddress   | String| 指示执行活动的用户使用的客户端 IP 地址 (仅限审核日志)。|
+| ipAddress   | String| 指示执行活动的用户使用的客户端 IP 地址（仅限审核日志）。|
 | userPrincipalName | 字符串  | 用户的 userPrincipalName 属性。 |
 
->**注意:** 在某些情况下, 唯一标识符可能不可用。 在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
+>**注意：** 在某些情况下，唯一标识符可能不可用。 在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

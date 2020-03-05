@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8c93dcb4a4ccd1289de8d19b8970cbf0b87e80cc
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: 77402ad1566bcfa6822a326270306f1ea604896f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446728"
 ---
 # <a name="workbookcommentreply-resource-type"></a>workbookCommentReply 资源类型
+
+命名空间： microsoft. graph
 
 表示对 Excel 注释的答复。
 

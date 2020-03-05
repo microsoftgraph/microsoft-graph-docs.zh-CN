@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 731e8597fba4347659a3cddea8fb2934258255c7
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 5adc385c5764371c1e2cab516bc33fd8504aecf5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913217"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447085"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
+
+命名空间： microsoft. graph
 
 用于获取 playPrompt 操作的结果的 playPrompt 操作。
 
@@ -23,7 +25,7 @@ ms.locfileid: "40913217"
 | 适用       | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                              |
 | id                  | 字符串                      | 只读。                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                |
-| 状态              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
+| status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系
 无

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fd5df6f723ad41f7e6c2074f278cd5f59a902bf6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 476e48f0b9729aebdefcb2e263b597b1e8e9fbdb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036314"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447484"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
+
+命名空间： microsoft. graph
 
 操作过程中发生的错误。
 
