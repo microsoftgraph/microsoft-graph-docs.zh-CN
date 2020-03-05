@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d2fbfe55aaa8cdb9628a6df27d3e53866719fd12
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 652070dccaf54928300891e68419077abe3de978
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717655"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994755"
 ---
 ```javascript
 
@@ -15,8 +15,29 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/shifts/{shiftId}')
+const shiftPreferences = {
+    id: "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
+    @odata.etag: "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa",
+    availability: [
+        {
+            recurrence: {
+                pattern: {
+                    type: "Weekly",
+                    daysOfWeek: ["Monday", "Wednesday", "Friday"],
+                    interval: 1
+                },
+                range: {
+                    type: "noEnd"
+                }
+            },
+            timeZone: "Pacific Standard Time",
+            timeSlots: null
+        }
+    ]
+};
+
+let res = await client.api('/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences')
     .version('beta')
-    .get();
+    .put(shiftPreferences);
 
 ```
