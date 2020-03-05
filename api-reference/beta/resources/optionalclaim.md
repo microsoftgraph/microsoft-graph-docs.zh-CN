@@ -5,29 +5,31 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a62176c1e662b1d292f6f359cb2021fae684f4ee
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2ddfde1c367d77c741b142fbce5ab2e053273e41
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522142"
 ---
 # <a name="optionalclaim-resource-type"></a>optionalClaim 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含与[应用程序](application.md)关联的可选声明 <!-- or a service principal -->. [OptionalClaims](optionalclaims.md)资源的**idToken**、 **AccessToken**和**saml2Token**属性是**optionalClaim**的集合。 如果特定声明支持，还可以使用`additionalProperties`属性修改 optionalClaim 的行为。 
 
-有关详细信息，请参阅向[AZURE AD 应用提供可选声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims)。
+有关详细信息，请参阅[向 Azure AD 应用提供可选声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims)。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|additionalProperties|String collection| 声明的其他属性。 如果某个属性存在于此集合中，它将修改在 name 属性中指定的可选声明的行为。 |
-|组成部分|Boolean| 如果值为 true，则客户端指定的声明是为确保最终用户请求的特定任务的平稳授权体验所必需的。 默认值为 false。|
-|name|字符串| 可选声明的名称。 |
-|source|字符串| 声明的源（目录对象）。 来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明是预定义的可选声明。 如果源值为 user，则 name 属性中的值是用户对象的扩展属性。 |
+|additionalProperties|String 集合| 声明的其他属性。 如果某个属性存在于此集合中，它将修改在 name 属性中指定的可选声明的行为。 |
+|组成部分|布尔| 如果值为 true，则客户端指定的声明是为确保最终用户请求的特定任务的平稳授权体验所必需的。 默认值为 false。|
+|name|String| 可选声明的名称。 |
+|source|String| 声明的源（目录对象）。 来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明是预定义的可选声明。 如果源值为 user，则 name 属性中的值是用户对象的扩展属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

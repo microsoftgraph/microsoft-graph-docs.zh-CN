@@ -6,14 +6,16 @@ description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3f74ecd71a9f411a336c7fb4b5720208ca0ffa42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f7e931ebec462de50f3ae5c61f033d2c10f92f4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966179"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521960"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35966179"
 共享权限具有许多不同的形式。
 **权限**资源通过资源上的 facet 表示这些不同的表单。
 
->**注意:** OneDrive for Business 和 SharePoint 文档库不返回**inheritedFrom**属性。
+>**注意：** OneDrive for Business 和 SharePoint 文档库不返回**inheritedFrom**属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,16 +66,16 @@ ms.locfileid: "35966179"
 
 | 属性            | 类型                        | 说明
 |:--------------------|:----------------------------|:-------------------------
-| id                  | String                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
+| id                  | 字符串                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | 集合 ([了解 identityset][]) | 对于链接类型权限, 为其授予权限的用户的详细信息。 只读。
-| 邀请          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
+| grantedToIdentities | Collection([IdentitySet][]) | 对于链接类型权限，被授予权限的用户的详细信息。 只读。
+| invitation          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom       | [ItemReference][]           | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
-| roles               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
-| shareId             | String                      | 可用于通过**[共享 API][]** 访问此共享项的唯一标记。 只读。
-| expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh: MM: ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
-| hasPassword         | Boolean                     | 这指示是否为此权限设置了密码, 它仅显示为 "响应"。 可选和只读, 仅适用于 OneDrive 个人版。
+| 角色               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
+| shareId             | String                      | 可用于通过 **[shares API][]** 访问此共享项的唯一令牌。 只读。
+| expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh： MM： ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
+| hasPassword         | 布尔                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
 
 ### <a name="roles-enumeration-values"></a>角色枚举值
 
@@ -84,26 +86,26 @@ ms.locfileid: "35966179"
 | `sp.owner`  | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 | `sp.member` | 对于 SharePoint 和 OneDrive for Business，这表示成员角色。      |
 
-permission 资源使用 _Facet_ 说明此资源表示的权限种类。
+权限资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 
-共享链接包含访问项目所需的唯一标记。
+共享链接包含访问该项所需的唯一令牌。
 
-具有 [**Invitation**][SharingInvitation] Facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。
+具有[**邀请**][SharingInvitation] facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。
 
 ## <a name="sharing-links"></a>共享链接
 
 具有[**链接**][SharingLink] facet 的权限表示在该项上创建的共享链接。
 这些是最常见的权限类型。
 共享链接提供可用于访问文件或文件夹的唯一 URL。
-可以将它们设置为以多种方式授予访问权限。
-例如, 您可以使用[createLink][] API 创建一个链接, 该链接适用于登录组织的任何人, 也可以创建可用于任何人的链接, 而无需登录。
-您可以使用[invite][] API 创建仅适用于特定人员的链接, 而不管它们是否在贵公司中。
+可将其设置为通过多种方式授予访问权限。
+例如，可使用 [createLink][] API 创建适用于已登录到组织的任何用户的链接，或创建可用于任何人且无需登录的链接。
+你可以使用 [invite][] API 创建仅适用于特定人员的链接（无论他们是否在你的公司中）。
 
-下面是共享链接的一些示例。
+下面是一些共享链接示例。
 
 ### <a name="view-link"></a>查看链接
 
-此视图链接提供对具有该链接的任何人的只读访问权限。
+此查看链接向具有相应链接的任何人提供只读访问权限。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -124,7 +126,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ### <a name="edit-link"></a>编辑链接
 
-此编辑链接提供对组织中具有链接的任何人的读取和写入访问权限。
+此编辑链接向组织中具有相应链接的任何人提供读写访问权限。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -164,7 +166,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ### <a name="specific-people-link"></a>特定人员链接
 
-此链接提供对`grantedToIdentities`集合中特定人员的读取和写入访问权限。
+此链接向 `grantedToIdentities` 集合中的特定人员提供读写访问权限。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -197,7 +199,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ## <a name="sharing-invitations"></a>共享邀请
 
-由[邀请][]或[授予][]API 发送的权限可以在[邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下, **grantedTo**属性可能不会设置, 直到该邀请链接被兑换 (当用户首次单击该链接并登录) 时才会发生此事件。
+由[邀请][]或[授予][]API 发送的权限可以在[邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下， **grantedTo**属性可能不会设置，直到该邀请链接被兑换（当用户首次单击该链接并登录）时才会发生此事件。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -244,7 +246,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 | [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [获取权限](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [创建链接][createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [邀请人员][邀请]                                  | `POST /drive/items/{item-id}/invite`
+| [邀请人员][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [更新](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
@@ -253,9 +255,9 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 [createLink]: ../api/driveitem-createlink.md
 [授]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
-[特]: ../api/driveitem-invite.md
+[invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
-[共享 API]: ../api/shares-get.md
+[shares API]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 

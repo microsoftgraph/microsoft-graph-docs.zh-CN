@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 73fbd77064f434b93b3dca91d3bc28d5b4101aba
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: ae3b31de8a8d4121c836126c09921ef7574301ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113900"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522205"
 ---
 # <a name="on-premises-publishing-profiles"></a>本地发布配置文件
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

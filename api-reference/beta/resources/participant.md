@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6326ad561f7589f85f59fe5d4729816d7f046949
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913588"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522037"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,8 +36,8 @@ ms.locfileid: "40913588"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | 参与者 ID。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
-| isInLobby            | Boolean                                  | `true`如果参与者处于会议厅中。                          |
-| isMuted              | Boolean                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |
+| isInLobby            | 布尔                                  | `true`如果参与者处于会议厅中。                          |
+| isMuted              | 布尔                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |
 | mediaStreams         | [mediaStream](mediastream.md)集合 | 媒体流的列表。                                   |
 | metadata             | String                                   | 名单中参与者提供的数据的 blob。     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否有录制功能的信息。 |

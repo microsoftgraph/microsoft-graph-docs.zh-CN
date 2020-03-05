@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ea78528cca15da42dfab3260c00d8399f0784bd1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27f4c45a9ea2747d5ca5748184b84e4fabb54f55
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009193"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522051"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ ms.locfileid: "36009193"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端, 则在其中打开页面。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开页面。|
 |oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的页面。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -6,14 +6,16 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1637ac3faa1d42cd47f49735a1b24fb60868a23d
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 7862d8da186448d08d6dfd5691ae83e29bd57a5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333393"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521974"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>pendingContentUpdate 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

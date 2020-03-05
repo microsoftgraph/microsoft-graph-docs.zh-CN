@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ea3f3daa4807fd56e39930a059d69221e141879c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 79f8d182361d8d793d98301b15b1102f11847c1c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522009"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35966227"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Boolean| 如果**为 true**, 则在下次登录时, 用户必须更改其密码。 更改密码后, 此属性将自动重置为 ***false**。 如未设置，默认值为 **false**。 |
+|forceChangePasswordNextSignIn|Boolean| 如果**为 true**，则在下次登录时，用户必须更改其密码。 更改密码后，此属性将自动重置为 ***false**。 如未设置，默认值为 **false**。 |
 |forceChangePasswordNextSignInWithMfa|Boolean| 如果为 **true**，则在下次登录时，用户必须先执行多重身份验证 (MFA)，然后才会被强制更改密码。 该行为与 **forceChangePasswordNextSignIn** 相同，除了在更改密码之前用户必须先执行多重身份验证。 密码更改后，此属性将自动重置为 **false**。 如未设置，默认值为 **false**。 |
 |密码|String|用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 

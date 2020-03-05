@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 53e777d3a545ed95c5a6010db7abc965d3b9cad5
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 684f08be52b453922d58919e589a7888007deefb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939339"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521951"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,16 +22,16 @@ ms.locfileid: "37939339"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 描述 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|adminConsentDescription|字符串| 管理员同意和应用工作分配体验中显示的权限帮助文本。 |
-|adminConsentDisplayName|字符串| 管理员同意和应用工作分配体验中显示的权限的显示名称。 |
+|adminConsentDescription|String| 管理员同意和应用工作分配体验中显示的权限帮助文本。 |
+|adminConsentDisplayName|String| 管理员同意和应用工作分配体验中显示的权限的显示名称。 |
 |id|Guid| Oauth2Permissions 集合中的唯一作用域权限标识符。 |
 |isEnabled|Boolean| 在创建或更新权限时，此属性必须设置为**true** （默认值）。 若要删除权限，必须首先将此属性设置为**false**。 此时，在后续调用中，可能会删除该权限。 |
-|格式|字符串| 供内部使用。 |
-|type|字符串| 指定此范围权限是否可由最终用户许可，或者是否为公司管理员必须同意的租户范围内的权限。 可能的值为*User*或*Admin*。 |
-|userConsentDescription|字符串| 最终用户同意体验中显示的权限帮助文本。 |
-|userConsentDisplayName|字符串| 显示在最终用户同意体验中的权限的显示名称。 |
+|格式|String| 供内部使用。 |
+|type|String| 指定此范围权限是否可由最终用户许可，或者是否为公司管理员必须同意的租户范围内的权限。 可能的值为*User*或*Admin*。 |
+|userConsentDescription|String| 最终用户同意体验中显示的权限帮助文本。 |
+|userConsentDisplayName|String| 显示在最终用户同意体验中的权限的显示名称。 |
 |value|String| 在 OAuth 2.0 访问令牌中，资源应用程序应期望的范围声明的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

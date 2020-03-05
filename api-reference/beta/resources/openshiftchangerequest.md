@@ -5,32 +5,34 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 69663b876e98bfe9f5c633890d02a6abd3b72f32
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: b4ca3b0904ffa0ec5bf06c36e710abdf3ba2a1dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951928"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522177"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>openShiftChangeRequest 资源类型
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示在[计划](../resources/schedule.md)中对[openshift](../resources/openshift.md)进行声明的班次请求的类型。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | 创建 openshiftchangerequest 对象的实例。 |
 | [List](../api/openshiftchangerequest-list.md) | [Openshiftchangerequest](openshiftchangerequest.md)的集合 | 列出团队中的**openShiftChangeRequest**对象的属性和关系。 |
-| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | 读取**openShiftChangeRequest**对象的属性和关系。 |
+| [获取](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | 读取**openShiftChangeRequest**对象的属性和关系。 |
 |[批准](../api/openshiftchangerequest-approve.md)|无|批准打开的班次更改请求。|
 |[拒绝](../api/openshiftchangerequest-decline.md)|无| 拒绝打开的班次更改请求。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |openShiftId|String| 打开的班次的 ID。|
 

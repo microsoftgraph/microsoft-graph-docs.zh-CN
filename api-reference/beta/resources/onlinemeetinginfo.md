@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52bfe4fd46443c826838153cc2a40ea57712182b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913154"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522247"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>onlineMeetingInfo 资源类型
+
+命名空间： microsoft. graph
 
 关于与会者如何加入联机会议的详细信息。
 
@@ -24,7 +26,7 @@ ms.locfileid: "40913154"
 |joinUrl|String| 启动联机会议的外部链接。 这是客户端将启动到浏览器并将重定向用户加入会议的 URL。|
 |phones|[phone](phone.md) collection| 与此会议关联的所有电话号码。|
 |quickDial|String| 此调用的预格式化的 quickdial。|
-|tollFreeNumbers|String collection| 可用于加入会议的免费电话号码。|
+|tollFreeNumbers|String 集合| 可用于加入会议的免费电话号码。|
 |tollNumber|String| 可用于加入会议的收费号码。|
 
 ## <a name="json-representation"></a>JSON 表示形式

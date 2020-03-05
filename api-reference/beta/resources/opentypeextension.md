@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 260ece8f5764250e4d728dd279d73ac94d77af5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77afcc7c2894e92c02d9383af6c1e3f634122b4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009319"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522163"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
+
+命名空间： microsoft. graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -84,7 +86,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(在现有资源实例中) 或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中）或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |
