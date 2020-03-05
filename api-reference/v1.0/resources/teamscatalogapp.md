@@ -5,13 +5,15 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e73c51c11c405ae272f3439100a571b27013ba6f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2dc3c0d6d5a77d354076e218e1bdcd4900bfe37
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033710"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446840"
 ---
-# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="e59f2-103">teamsCatalogApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="e59f2-103">teamsCatalogApp resource type</span></span>
+# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="c8e70-103">teamsCatalogApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="c8e70-103">teamsCatalogApp resource type</span></span>
 
-<span data-ttu-id="e59f2-104">请参阅[teamsApp](teamsapp.md)。</span><span class="sxs-lookup"><span data-stu-id="e59f2-104">see [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="c8e70-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c8e70-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="c8e70-105">请参阅[teamsApp](teamsapp.md)。</span><span class="sxs-lookup"><span data-stu-id="c8e70-105">see [teamsApp](teamsapp.md).</span></span>

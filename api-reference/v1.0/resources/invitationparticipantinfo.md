@@ -5,27 +5,29 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b42e89f89332e58fa2f7edcf39c774446c6b9d9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 4a4d34e94fc54cd47ed6773e91c2fb62f0b62ce4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913399"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447708"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="5d17c-103">invitationParticipantInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="5d17c-103">invitationParticipantInfo resource type</span></span>
+# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="00dee-103">invitationParticipantInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="00dee-103">invitationParticipantInfo resource type</span></span>
 
-<span data-ttu-id="5d17c-104">此资源用于表示受邀加入组呼叫的实体。</span><span class="sxs-lookup"><span data-stu-id="5d17c-104">This resource is used to represent the entity that is being invited to a group call.</span></span> 
+<span data-ttu-id="00dee-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="00dee-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5d17c-105">属性</span><span class="sxs-lookup"><span data-stu-id="5d17c-105">Properties</span></span>
+<span data-ttu-id="00dee-105">此资源用于表示受邀加入组呼叫的实体。</span><span class="sxs-lookup"><span data-stu-id="00dee-105">This resource is used to represent the entity that is being invited to a group call.</span></span> 
 
-| <span data-ttu-id="5d17c-106">属性</span><span class="sxs-lookup"><span data-stu-id="5d17c-106">Property</span></span>                           | <span data-ttu-id="5d17c-107">类型</span><span class="sxs-lookup"><span data-stu-id="5d17c-107">Type</span></span>                          | <span data-ttu-id="5d17c-108">说明</span><span class="sxs-lookup"><span data-stu-id="5d17c-108">Description</span></span>                                                                          |
+## <a name="properties"></a><span data-ttu-id="00dee-106">属性</span><span class="sxs-lookup"><span data-stu-id="00dee-106">Properties</span></span>
+
+| <span data-ttu-id="00dee-107">属性</span><span class="sxs-lookup"><span data-stu-id="00dee-107">Property</span></span>                           | <span data-ttu-id="00dee-108">类型</span><span class="sxs-lookup"><span data-stu-id="00dee-108">Type</span></span>                          | <span data-ttu-id="00dee-109">说明</span><span class="sxs-lookup"><span data-stu-id="00dee-109">Description</span></span>                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="5d17c-109">窃取</span><span class="sxs-lookup"><span data-stu-id="5d17c-109">identity</span></span>                           | [<span data-ttu-id="5d17c-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="5d17c-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="5d17c-111">与此邀请关联的[了解 identityset](identityset.md) 。</span><span class="sxs-lookup"><span data-stu-id="5d17c-111">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
-| <span data-ttu-id="5d17c-112">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="5d17c-112">replacesCallId</span></span>                     | <span data-ttu-id="5d17c-113">String</span><span class="sxs-lookup"><span data-stu-id="5d17c-113">String</span></span>                        | <span data-ttu-id="5d17c-114">可选。</span><span class="sxs-lookup"><span data-stu-id="5d17c-114">Optional.</span></span> <span data-ttu-id="5d17c-115">目标标识当前是其一部分的调用。</span><span class="sxs-lookup"><span data-stu-id="5d17c-115">The call which the target identity is currently a part of.</span></span> <span data-ttu-id="5d17c-116">添加参与者后，将删除此呼叫。</span><span class="sxs-lookup"><span data-stu-id="5d17c-116">This call will be dropped once the participant is added.</span></span> |
+| <span data-ttu-id="00dee-110">窃取</span><span class="sxs-lookup"><span data-stu-id="00dee-110">identity</span></span>                           | [<span data-ttu-id="00dee-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="00dee-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="00dee-112">与此邀请关联的[了解 identityset](identityset.md) 。</span><span class="sxs-lookup"><span data-stu-id="00dee-112">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
+| <span data-ttu-id="00dee-113">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="00dee-113">replacesCallId</span></span>                     | <span data-ttu-id="00dee-114">String</span><span class="sxs-lookup"><span data-stu-id="00dee-114">String</span></span>                        | <span data-ttu-id="00dee-115">可选。</span><span class="sxs-lookup"><span data-stu-id="00dee-115">Optional.</span></span> <span data-ttu-id="00dee-116">目标标识当前是其一部分的调用。</span><span class="sxs-lookup"><span data-stu-id="00dee-116">The call which the target identity is currently a part of.</span></span> <span data-ttu-id="00dee-117">添加参与者后，将删除此呼叫。</span><span class="sxs-lookup"><span data-stu-id="00dee-117">This call will be dropped once the participant is added.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="5d17c-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5d17c-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="00dee-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="00dee-118">JSON representation</span></span>
 
-<span data-ttu-id="5d17c-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5d17c-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="00dee-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="00dee-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

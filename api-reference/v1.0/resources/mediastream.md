@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ed564f4789a88092e34b8f8b4b0db8db63b48f2f
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6751d00a89bb4ca024f069a69213ebd2d76b7ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913651"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447428"
 ---
-# <a name="mediastream-resource-type"></a><span data-ttu-id="41201-103">mediaStream 资源类型</span><span class="sxs-lookup"><span data-stu-id="41201-103">mediaStream resource type</span></span>
+# <a name="mediastream-resource-type"></a><span data-ttu-id="57449-103">mediaStream 资源类型</span><span class="sxs-lookup"><span data-stu-id="57449-103">mediaStream resource type</span></span>
 
-<span data-ttu-id="41201-104">其中包含媒体通道的相关信息。</span><span class="sxs-lookup"><span data-stu-id="41201-104">This contains information about the media channel.</span></span>
+<span data-ttu-id="57449-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="57449-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="41201-105">属性</span><span class="sxs-lookup"><span data-stu-id="41201-105">Properties</span></span>
+<span data-ttu-id="57449-105">其中包含媒体通道的相关信息。</span><span class="sxs-lookup"><span data-stu-id="57449-105">This contains information about the media channel.</span></span>
 
-| <span data-ttu-id="41201-106">属性</span><span class="sxs-lookup"><span data-stu-id="41201-106">Property</span></span>    | <span data-ttu-id="41201-107">类型</span><span class="sxs-lookup"><span data-stu-id="41201-107">Type</span></span>    | <span data-ttu-id="41201-108">说明</span><span class="sxs-lookup"><span data-stu-id="41201-108">Description</span></span>                                                                                                   |
+## <a name="properties"></a><span data-ttu-id="57449-106">属性</span><span class="sxs-lookup"><span data-stu-id="57449-106">Properties</span></span>
+
+| <span data-ttu-id="57449-107">属性</span><span class="sxs-lookup"><span data-stu-id="57449-107">Property</span></span>    | <span data-ttu-id="57449-108">类型</span><span class="sxs-lookup"><span data-stu-id="57449-108">Type</span></span>    | <span data-ttu-id="57449-109">说明</span><span class="sxs-lookup"><span data-stu-id="57449-109">Description</span></span>                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| <span data-ttu-id="41201-109">direction</span><span class="sxs-lookup"><span data-stu-id="41201-109">direction</span></span>   | <span data-ttu-id="41201-110">String</span><span class="sxs-lookup"><span data-stu-id="41201-110">String</span></span>  | <span data-ttu-id="41201-111">方向。</span><span class="sxs-lookup"><span data-stu-id="41201-111">The direction.</span></span> <span data-ttu-id="41201-112">可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。</span><span class="sxs-lookup"><span data-stu-id="41201-112">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
-| <span data-ttu-id="41201-113">label</span><span class="sxs-lookup"><span data-stu-id="41201-113">label</span></span>       | <span data-ttu-id="41201-114">String</span><span class="sxs-lookup"><span data-stu-id="41201-114">String</span></span>  | <span data-ttu-id="41201-115">媒体流标签。</span><span class="sxs-lookup"><span data-stu-id="41201-115">The media stream label.</span></span>                                                                                       |
-| <span data-ttu-id="41201-116">群组</span><span class="sxs-lookup"><span data-stu-id="41201-116">mediaType</span></span>   | <span data-ttu-id="41201-117">String</span><span class="sxs-lookup"><span data-stu-id="41201-117">String</span></span>  | <span data-ttu-id="41201-118">媒体类型。</span><span class="sxs-lookup"><span data-stu-id="41201-118">The media type.</span></span> <span data-ttu-id="41201-119">可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。</span><span class="sxs-lookup"><span data-stu-id="41201-119">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
-| <span data-ttu-id="41201-120">serverMuted</span><span class="sxs-lookup"><span data-stu-id="41201-120">serverMuted</span></span> | <span data-ttu-id="41201-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="41201-121">Boolean</span></span> | <span data-ttu-id="41201-122">如果服务器已将媒体设为静音。</span><span class="sxs-lookup"><span data-stu-id="41201-122">If the media is muted by the server.</span></span>                                                                          |
-| <span data-ttu-id="41201-123">sourceId</span><span class="sxs-lookup"><span data-stu-id="41201-123">sourceId</span></span>    | <span data-ttu-id="41201-124">String</span><span class="sxs-lookup"><span data-stu-id="41201-124">String</span></span>  | <span data-ttu-id="41201-125">源 ID。</span><span class="sxs-lookup"><span data-stu-id="41201-125">The source ID.</span></span>                                                                                                |
+| <span data-ttu-id="57449-110">direction</span><span class="sxs-lookup"><span data-stu-id="57449-110">direction</span></span>   | <span data-ttu-id="57449-111">String</span><span class="sxs-lookup"><span data-stu-id="57449-111">String</span></span>  | <span data-ttu-id="57449-112">方向。</span><span class="sxs-lookup"><span data-stu-id="57449-112">The direction.</span></span> <span data-ttu-id="57449-113">可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。</span><span class="sxs-lookup"><span data-stu-id="57449-113">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
+| <span data-ttu-id="57449-114">label</span><span class="sxs-lookup"><span data-stu-id="57449-114">label</span></span>       | <span data-ttu-id="57449-115">String</span><span class="sxs-lookup"><span data-stu-id="57449-115">String</span></span>  | <span data-ttu-id="57449-116">媒体流标签。</span><span class="sxs-lookup"><span data-stu-id="57449-116">The media stream label.</span></span>                                                                                       |
+| <span data-ttu-id="57449-117">群组</span><span class="sxs-lookup"><span data-stu-id="57449-117">mediaType</span></span>   | <span data-ttu-id="57449-118">String</span><span class="sxs-lookup"><span data-stu-id="57449-118">String</span></span>  | <span data-ttu-id="57449-119">媒体类型。</span><span class="sxs-lookup"><span data-stu-id="57449-119">The media type.</span></span> <span data-ttu-id="57449-120">可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。</span><span class="sxs-lookup"><span data-stu-id="57449-120">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
+| <span data-ttu-id="57449-121">serverMuted</span><span class="sxs-lookup"><span data-stu-id="57449-121">serverMuted</span></span> | <span data-ttu-id="57449-122">布尔</span><span class="sxs-lookup"><span data-stu-id="57449-122">Boolean</span></span> | <span data-ttu-id="57449-123">如果服务器已将媒体设为静音。</span><span class="sxs-lookup"><span data-stu-id="57449-123">If the media is muted by the server.</span></span>                                                                          |
+| <span data-ttu-id="57449-124">sourceId</span><span class="sxs-lookup"><span data-stu-id="57449-124">sourceId</span></span>    | <span data-ttu-id="57449-125">String</span><span class="sxs-lookup"><span data-stu-id="57449-125">String</span></span>  | <span data-ttu-id="57449-126">源 ID。</span><span class="sxs-lookup"><span data-stu-id="57449-126">The source ID.</span></span>                                                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="41201-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="41201-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="57449-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="57449-127">JSON representation</span></span>
 
-<span data-ttu-id="41201-127">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="41201-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="57449-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="57449-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

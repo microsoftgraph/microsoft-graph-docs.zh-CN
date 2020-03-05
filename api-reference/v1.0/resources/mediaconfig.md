@@ -5,18 +5,20 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ad914bfcf3a0657a96b994241ad875aa3261e227
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 634a5531358a1be501c0b3b61f207c85394dba11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447456"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="affb9-103">mediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="affb9-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="eceab-103">mediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="eceab-103">mediaConfig resource type</span></span>
 
-<span data-ttu-id="affb9-104">包含用于连接到呼叫的媒体配置的抽象基类。</span><span class="sxs-lookup"><span data-stu-id="affb9-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
+<span data-ttu-id="eceab-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="eceab-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="affb9-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="affb9-105">JSON representation</span></span>
+<span data-ttu-id="eceab-105">包含用于连接到呼叫的媒体配置的抽象基类。</span><span class="sxs-lookup"><span data-stu-id="eceab-105">An abstract base class that contains the media configuration used to connect to a call.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="eceab-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="eceab-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",

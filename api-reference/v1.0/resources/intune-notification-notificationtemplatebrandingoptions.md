@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 96f6b40e563728da9bde6bddb62fd85faf816d1e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 807ef6ad5352174685971e4d1539f525a6c1938b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448170"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a><span data-ttu-id="7fe53-104">notificationTemplateBrandingOptions 枚举类型</span><span class="sxs-lookup"><span data-stu-id="7fe53-104">notificationTemplateBrandingOptions enum type</span></span>
+# <a name="notificationtemplatebrandingoptions-enum-type"></a><span data-ttu-id="0718b-104">notificationTemplateBrandingOptions 枚举类型</span><span class="sxs-lookup"><span data-stu-id="0718b-104">notificationTemplateBrandingOptions enum type</span></span>
 
-> <span data-ttu-id="7fe53-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7fe53-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="0718b-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="0718b-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7fe53-106">邮件模板的品牌选项。</span><span class="sxs-lookup"><span data-stu-id="7fe53-106">Branding Options for the Message Template.</span></span> <span data-ttu-id="7fe53-107">已在 Intune 管理员控制台中定义品牌。</span><span class="sxs-lookup"><span data-stu-id="7fe53-107">Branding is defined in the Intune Admin Console.</span></span>
+> <span data-ttu-id="0718b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0718b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="7fe53-108">成员</span><span class="sxs-lookup"><span data-stu-id="7fe53-108">Members</span></span>
-|<span data-ttu-id="7fe53-109">成员</span><span class="sxs-lookup"><span data-stu-id="7fe53-109">Member</span></span>|<span data-ttu-id="7fe53-110">值</span><span class="sxs-lookup"><span data-stu-id="7fe53-110">Value</span></span>|<span data-ttu-id="7fe53-111">说明</span><span class="sxs-lookup"><span data-stu-id="7fe53-111">Description</span></span>|
+<span data-ttu-id="0718b-107">邮件模板的品牌选项。</span><span class="sxs-lookup"><span data-stu-id="0718b-107">Branding Options for the Message Template.</span></span> <span data-ttu-id="0718b-108">已在 Intune 管理员控制台中定义品牌。</span><span class="sxs-lookup"><span data-stu-id="0718b-108">Branding is defined in the Intune Admin Console.</span></span>
+
+## <a name="members"></a><span data-ttu-id="0718b-109">成员</span><span class="sxs-lookup"><span data-stu-id="0718b-109">Members</span></span>
+|<span data-ttu-id="0718b-110">成员</span><span class="sxs-lookup"><span data-stu-id="0718b-110">Member</span></span>|<span data-ttu-id="0718b-111">值</span><span class="sxs-lookup"><span data-stu-id="0718b-111">Value</span></span>|<span data-ttu-id="0718b-112">说明</span><span class="sxs-lookup"><span data-stu-id="0718b-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7fe53-112">无</span><span class="sxs-lookup"><span data-stu-id="7fe53-112">none</span></span>|<span data-ttu-id="7fe53-113">0</span><span class="sxs-lookup"><span data-stu-id="7fe53-113">0</span></span>|<span data-ttu-id="7fe53-114">无品牌打造。</span><span class="sxs-lookup"><span data-stu-id="7fe53-114">No Branding.</span></span>|
-|<span data-ttu-id="7fe53-115">includeCompanyLogo</span><span class="sxs-lookup"><span data-stu-id="7fe53-115">includeCompanyLogo</span></span>|<span data-ttu-id="7fe53-116">1</span><span class="sxs-lookup"><span data-stu-id="7fe53-116">1</span></span>|<span data-ttu-id="7fe53-117">包括公司徽标。</span><span class="sxs-lookup"><span data-stu-id="7fe53-117">Include Company Logo.</span></span>|
-|<span data-ttu-id="7fe53-118">includeCompanyName</span><span class="sxs-lookup"><span data-stu-id="7fe53-118">includeCompanyName</span></span>|<span data-ttu-id="7fe53-119">双面</span><span class="sxs-lookup"><span data-stu-id="7fe53-119">2</span></span>|<span data-ttu-id="7fe53-120">包括公司名称。</span><span class="sxs-lookup"><span data-stu-id="7fe53-120">Include Company Name.</span></span>|
-|<span data-ttu-id="7fe53-121">includeContactInformation</span><span class="sxs-lookup"><span data-stu-id="7fe53-121">includeContactInformation</span></span>|<span data-ttu-id="7fe53-122">4</span><span class="sxs-lookup"><span data-stu-id="7fe53-122">4</span></span>|<span data-ttu-id="7fe53-123">包含联系人信息。</span><span class="sxs-lookup"><span data-stu-id="7fe53-123">Include Contact Info.</span></span>|
+|<span data-ttu-id="0718b-113">无</span><span class="sxs-lookup"><span data-stu-id="0718b-113">none</span></span>|<span data-ttu-id="0718b-114">0</span><span class="sxs-lookup"><span data-stu-id="0718b-114">0</span></span>|<span data-ttu-id="0718b-115">无品牌打造。</span><span class="sxs-lookup"><span data-stu-id="0718b-115">No Branding.</span></span>|
+|<span data-ttu-id="0718b-116">includeCompanyLogo</span><span class="sxs-lookup"><span data-stu-id="0718b-116">includeCompanyLogo</span></span>|<span data-ttu-id="0718b-117">1 </span><span class="sxs-lookup"><span data-stu-id="0718b-117">1</span></span>|<span data-ttu-id="0718b-118">包括公司徽标。</span><span class="sxs-lookup"><span data-stu-id="0718b-118">Include Company Logo.</span></span>|
+|<span data-ttu-id="0718b-119">includeCompanyName</span><span class="sxs-lookup"><span data-stu-id="0718b-119">includeCompanyName</span></span>|<span data-ttu-id="0718b-120">2 </span><span class="sxs-lookup"><span data-stu-id="0718b-120">2</span></span>|<span data-ttu-id="0718b-121">包括公司名称。</span><span class="sxs-lookup"><span data-stu-id="0718b-121">Include Company Name.</span></span>|
+|<span data-ttu-id="0718b-122">includeContactInformation</span><span class="sxs-lookup"><span data-stu-id="0718b-122">includeContactInformation</span></span>|<span data-ttu-id="0718b-123">4 </span><span class="sxs-lookup"><span data-stu-id="0718b-123">4</span></span>|<span data-ttu-id="0718b-124">包含联系人信息。</span><span class="sxs-lookup"><span data-stu-id="0718b-124">Include Contact Info.</span></span>|
 
 
 

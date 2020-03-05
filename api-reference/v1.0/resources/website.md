@@ -5,28 +5,30 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6a59022426392bbf3a94c6fb82b941131db3c1d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f6d630a2cde87415cb8229f7d320cb32bc6260d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033381"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446735"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="bc9b3-103">网站资源类型</span><span class="sxs-lookup"><span data-stu-id="bc9b3-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="5c650-103">网站资源类型</span><span class="sxs-lookup"><span data-stu-id="5c650-103">website resource type</span></span>
 
-<span data-ttu-id="bc9b3-104">表示一个网站。</span><span class="sxs-lookup"><span data-stu-id="bc9b3-104">Represents a website.</span></span>
+<span data-ttu-id="5c650-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5c650-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="5c650-105">表示一个网站。</span><span class="sxs-lookup"><span data-stu-id="5c650-105">Represents a website.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="bc9b3-105">属性</span><span class="sxs-lookup"><span data-stu-id="bc9b3-105">Properties</span></span>
-| <span data-ttu-id="bc9b3-106">属性</span><span class="sxs-lookup"><span data-stu-id="bc9b3-106">Property</span></span>     | <span data-ttu-id="bc9b3-107">类型</span><span class="sxs-lookup"><span data-stu-id="bc9b3-107">Type</span></span>   |<span data-ttu-id="bc9b3-108">说明</span><span class="sxs-lookup"><span data-stu-id="bc9b3-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5c650-106">属性</span><span class="sxs-lookup"><span data-stu-id="5c650-106">Properties</span></span>
+| <span data-ttu-id="5c650-107">属性</span><span class="sxs-lookup"><span data-stu-id="5c650-107">Property</span></span>     | <span data-ttu-id="5c650-108">类型</span><span class="sxs-lookup"><span data-stu-id="5c650-108">Type</span></span>   |<span data-ttu-id="5c650-109">说明</span><span class="sxs-lookup"><span data-stu-id="5c650-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bc9b3-109">类型</span><span class="sxs-lookup"><span data-stu-id="bc9b3-109">type</span></span>|<span data-ttu-id="bc9b3-110">websiteType</span><span class="sxs-lookup"><span data-stu-id="bc9b3-110">websiteType</span></span>| <span data-ttu-id="bc9b3-111">可能的值包括 `other`、`home`、`work`、`blog`、`profile`。</span><span class="sxs-lookup"><span data-stu-id="bc9b3-111">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="bc9b3-112">address</span><span class="sxs-lookup"><span data-stu-id="bc9b3-112">address</span></span>|<span data-ttu-id="bc9b3-113">string</span><span class="sxs-lookup"><span data-stu-id="bc9b3-113">string</span></span>|<span data-ttu-id="bc9b3-114">网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="bc9b3-114">The URL of the website.</span></span>|
-|<span data-ttu-id="bc9b3-115">displayName</span><span class="sxs-lookup"><span data-stu-id="bc9b3-115">displayName</span></span>|<span data-ttu-id="bc9b3-116">string</span><span class="sxs-lookup"><span data-stu-id="bc9b3-116">string</span></span>|<span data-ttu-id="bc9b3-117">网站的显示名称。</span><span class="sxs-lookup"><span data-stu-id="bc9b3-117">The display name of the web site.</span></span>|
+|<span data-ttu-id="5c650-110">类型</span><span class="sxs-lookup"><span data-stu-id="5c650-110">type</span></span>|<span data-ttu-id="5c650-111">websiteType</span><span class="sxs-lookup"><span data-stu-id="5c650-111">websiteType</span></span>| <span data-ttu-id="5c650-112">可能的值包括 `other`、`home`、`work`、`blog`、`profile`。</span><span class="sxs-lookup"><span data-stu-id="5c650-112">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="5c650-113">address</span><span class="sxs-lookup"><span data-stu-id="5c650-113">address</span></span>|<span data-ttu-id="5c650-114">string</span><span class="sxs-lookup"><span data-stu-id="5c650-114">string</span></span>|<span data-ttu-id="5c650-115">网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="5c650-115">The URL of the website.</span></span>|
+|<span data-ttu-id="5c650-116">displayName</span><span class="sxs-lookup"><span data-stu-id="5c650-116">displayName</span></span>|<span data-ttu-id="5c650-117">string</span><span class="sxs-lookup"><span data-stu-id="5c650-117">string</span></span>|<span data-ttu-id="5c650-118">网站的显示名称。</span><span class="sxs-lookup"><span data-stu-id="5c650-118">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bc9b3-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bc9b3-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5c650-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5c650-119">JSON representation</span></span>
 
-<span data-ttu-id="bc9b3-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bc9b3-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5c650-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5c650-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

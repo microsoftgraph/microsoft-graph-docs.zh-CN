@@ -1,36 +1,38 @@
 ---
-title: teamsTabConfiguration 资源类型 (开放式类型)
+title: teamsTabConfiguration 资源类型（开放式类型）
 description: 确定选项卡内容的设置。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2a3c16c69acefb8f746d11807a898e74de7620be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad6c3bcee979e10e308b307cec780c8ddc8950dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033682"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446833"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="ad246-103">teamsTabConfiguration 资源类型 (开放式类型)</span><span class="sxs-lookup"><span data-stu-id="ad246-103">teamsTabConfiguration resource type (Open Type)</span></span>
+# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="c8f20-103">teamsTabConfiguration 资源类型（开放式类型）</span><span class="sxs-lookup"><span data-stu-id="c8f20-103">teamsTabConfiguration resource type (Open Type)</span></span>
+
+<span data-ttu-id="c8f20-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c8f20-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="ad246-104">确定[选项卡](teamstab.md)内容的设置。以交互方式配置选项卡时, 选项卡提供程序应用程序将设置此信息。</span><span class="sxs-lookup"><span data-stu-id="ad246-104">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
-<span data-ttu-id="ad246-105">除了以下属性之外, 一些选项卡提供程序应用程序还指定其他自定义属性。</span><span class="sxs-lookup"><span data-stu-id="ad246-105">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
+<span data-ttu-id="c8f20-105">确定[选项卡](teamstab.md)内容的设置。以交互方式配置选项卡时，选项卡提供程序应用程序将设置此信息。</span><span class="sxs-lookup"><span data-stu-id="c8f20-105">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
+<span data-ttu-id="c8f20-106">除了以下属性之外，一些选项卡提供程序应用程序还指定其他自定义属性。</span><span class="sxs-lookup"><span data-stu-id="c8f20-106">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ad246-106">属性</span><span class="sxs-lookup"><span data-stu-id="ad246-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c8f20-107">属性</span><span class="sxs-lookup"><span data-stu-id="c8f20-107">Properties</span></span>
 
-|<span data-ttu-id="ad246-107">属性</span><span class="sxs-lookup"><span data-stu-id="ad246-107">Property</span></span>|<span data-ttu-id="ad246-108">类型</span><span class="sxs-lookup"><span data-stu-id="ad246-108">Type</span></span>|<span data-ttu-id="ad246-109">说明</span><span class="sxs-lookup"><span data-stu-id="ad246-109">Description</span></span>|
+|<span data-ttu-id="c8f20-108">属性</span><span class="sxs-lookup"><span data-stu-id="c8f20-108">Property</span></span>|<span data-ttu-id="c8f20-109">类型</span><span class="sxs-lookup"><span data-stu-id="c8f20-109">Type</span></span>|<span data-ttu-id="c8f20-110">说明</span><span class="sxs-lookup"><span data-stu-id="c8f20-110">Description</span></span>|
 |-|-|-|
-|  <span data-ttu-id="ad246-110">entityId</span><span class="sxs-lookup"><span data-stu-id="ad246-110">entityId</span></span>   |   <span data-ttu-id="ad246-111">string</span><span class="sxs-lookup"><span data-stu-id="ad246-111">string</span></span> |  <span data-ttu-id="ad246-112">由选项卡提供程序承载的实体的标识符。</span><span class="sxs-lookup"><span data-stu-id="ad246-112">Identifier for the entity hosted by the tab provider.</span></span>     |
-|  <span data-ttu-id="ad246-113">contentUrl</span><span class="sxs-lookup"><span data-stu-id="ad246-113">contentUrl</span></span> |   <span data-ttu-id="ad246-114">string</span><span class="sxs-lookup"><span data-stu-id="ad246-114">string</span></span> |  <span data-ttu-id="ad246-115">用于在团队中呈现选项卡内容的 Url。</span><span class="sxs-lookup"><span data-stu-id="ad246-115">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="ad246-116">必需。</span><span class="sxs-lookup"><span data-stu-id="ad246-116">Required.</span></span>    |
-|  <span data-ttu-id="ad246-117">removeUrl</span><span class="sxs-lookup"><span data-stu-id="ad246-117">removeUrl</span></span>  |   <span data-ttu-id="ad246-118">string</span><span class="sxs-lookup"><span data-stu-id="ad246-118">string</span></span> |  <span data-ttu-id="ad246-119">使用团队客户端删除选项卡时, 由团队客户端调用的 Url。</span><span class="sxs-lookup"><span data-stu-id="ad246-119">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
-|  <span data-ttu-id="ad246-120">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="ad246-120">websiteUrl</span></span> |   <span data-ttu-id="ad246-121">string</span><span class="sxs-lookup"><span data-stu-id="ad246-121">string</span></span> |  <span data-ttu-id="ad246-122">用于显示团队外部的选项卡内容的 Url。</span><span class="sxs-lookup"><span data-stu-id="ad246-122">Url for showing tab contents outside of Teams.</span></span>     |
+|  <span data-ttu-id="c8f20-111">entityId</span><span class="sxs-lookup"><span data-stu-id="c8f20-111">entityId</span></span>   |   <span data-ttu-id="c8f20-112">string</span><span class="sxs-lookup"><span data-stu-id="c8f20-112">string</span></span> |  <span data-ttu-id="c8f20-113">由选项卡提供程序承载的实体的标识符。</span><span class="sxs-lookup"><span data-stu-id="c8f20-113">Identifier for the entity hosted by the tab provider.</span></span>     |
+|  <span data-ttu-id="c8f20-114">contentUrl</span><span class="sxs-lookup"><span data-stu-id="c8f20-114">contentUrl</span></span> |   <span data-ttu-id="c8f20-115">string</span><span class="sxs-lookup"><span data-stu-id="c8f20-115">string</span></span> |  <span data-ttu-id="c8f20-116">用于在团队中呈现选项卡内容的 Url。</span><span class="sxs-lookup"><span data-stu-id="c8f20-116">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="c8f20-117">必填。</span><span class="sxs-lookup"><span data-stu-id="c8f20-117">Required.</span></span>    |
+|  <span data-ttu-id="c8f20-118">removeUrl</span><span class="sxs-lookup"><span data-stu-id="c8f20-118">removeUrl</span></span>  |   <span data-ttu-id="c8f20-119">string</span><span class="sxs-lookup"><span data-stu-id="c8f20-119">string</span></span> |  <span data-ttu-id="c8f20-120">使用团队客户端删除选项卡时，由团队客户端调用的 Url。</span><span class="sxs-lookup"><span data-stu-id="c8f20-120">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
+|  <span data-ttu-id="c8f20-121">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="c8f20-121">websiteUrl</span></span> |   <span data-ttu-id="c8f20-122">string</span><span class="sxs-lookup"><span data-stu-id="c8f20-122">string</span></span> |  <span data-ttu-id="c8f20-123">用于显示团队外部的选项卡内容的 Url。</span><span class="sxs-lookup"><span data-stu-id="c8f20-123">Url for showing tab contents outside of Teams.</span></span>     |
 
-## <a name="json-representation"></a><span data-ttu-id="ad246-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ad246-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c8f20-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c8f20-124">JSON representation</span></span>
 
-<span data-ttu-id="ad246-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ad246-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c8f20-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c8f20-125">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsTabConfiguration"

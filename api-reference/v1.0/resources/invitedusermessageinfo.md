@@ -5,27 +5,29 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fff33ce5ceda9ea3c60583338538a1bf502ae0f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 324ce713354fc8f27ef926ef1ee0bbf538ee4b0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447701"
 ---
-# <a name="configuring-the-invitation-message"></a><span data-ttu-id="1df1d-103">配置邀请邮件</span><span class="sxs-lookup"><span data-stu-id="1df1d-103">Configuring the invitation message</span></span>
+# <a name="configuring-the-invitation-message"></a><span data-ttu-id="3d07b-103">配置邀请邮件</span><span class="sxs-lookup"><span data-stu-id="3d07b-103">Configuring the invitation message</span></span>
 
-<span data-ttu-id="1df1d-104">使用 invitedusermessageinfo 对象允许您配置[邀请](invitation.md)邮件。</span><span class="sxs-lookup"><span data-stu-id="1df1d-104">The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.</span></span>
+<span data-ttu-id="3d07b-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="3d07b-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="3d07b-105">使用 invitedusermessageinfo 对象允许您配置[邀请](invitation.md)邮件。</span><span class="sxs-lookup"><span data-stu-id="3d07b-105">The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="1df1d-105">属性</span><span class="sxs-lookup"><span data-stu-id="1df1d-105">Properties</span></span>
-| <span data-ttu-id="1df1d-106">属性</span><span class="sxs-lookup"><span data-stu-id="1df1d-106">Property</span></span>     | <span data-ttu-id="1df1d-107">类型</span><span class="sxs-lookup"><span data-stu-id="1df1d-107">Type</span></span>   |<span data-ttu-id="1df1d-108">说明</span><span class="sxs-lookup"><span data-stu-id="1df1d-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3d07b-106">属性</span><span class="sxs-lookup"><span data-stu-id="3d07b-106">Properties</span></span>
+| <span data-ttu-id="3d07b-107">属性</span><span class="sxs-lookup"><span data-stu-id="3d07b-107">Property</span></span>     | <span data-ttu-id="3d07b-108">类型</span><span class="sxs-lookup"><span data-stu-id="3d07b-108">Type</span></span>   |<span data-ttu-id="3d07b-109">说明</span><span class="sxs-lookup"><span data-stu-id="3d07b-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1df1d-109">ccRecipients</span><span class="sxs-lookup"><span data-stu-id="1df1d-109">ccRecipients</span></span>|<span data-ttu-id="1df1d-110">[Recipient](recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="1df1d-110">[Recipient](recipient.md) collection</span></span>|<span data-ttu-id="1df1d-111">应将邀请邮件发送到的其他收件人。</span><span class="sxs-lookup"><span data-stu-id="1df1d-111">Additional recipients the invitation message should be sent to.</span></span> <span data-ttu-id="1df1d-112">目前仅支持1个额外的收件人。</span><span class="sxs-lookup"><span data-stu-id="1df1d-112">Currently only 1 additional recipient is supported.</span></span>|
-|<span data-ttu-id="1df1d-113">customizedMessageBody</span><span class="sxs-lookup"><span data-stu-id="1df1d-113">customizedMessageBody</span></span>|<span data-ttu-id="1df1d-114">String</span><span class="sxs-lookup"><span data-stu-id="1df1d-114">String</span></span>|<span data-ttu-id="1df1d-115">如果不需要默认邮件, 则为要发送的自定义邮件正文。</span><span class="sxs-lookup"><span data-stu-id="1df1d-115">Customized message body you want to send if you don't want the default message.</span></span>|
-|<span data-ttu-id="1df1d-116">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="1df1d-116">messageLanguage</span></span>|<span data-ttu-id="1df1d-117">String</span><span class="sxs-lookup"><span data-stu-id="1df1d-117">String</span></span>|<span data-ttu-id="1df1d-118">要在其中发送默认邮件的语言。</span><span class="sxs-lookup"><span data-stu-id="1df1d-118">The language you want to send the default message in.</span></span> <span data-ttu-id="1df1d-119">如果指定了 customizedMessageBody, 则忽略此属性, 并使用 customizedMessageBody 发送邮件。</span><span class="sxs-lookup"><span data-stu-id="1df1d-119">If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody.</span></span> <span data-ttu-id="1df1d-120">语言格式应为 ISO 639。</span><span class="sxs-lookup"><span data-stu-id="1df1d-120">The language format should be in ISO 639.</span></span> <span data-ttu-id="1df1d-121">默认值为 en-us。</span><span class="sxs-lookup"><span data-stu-id="1df1d-121">The default is en-US.</span></span>|
+|<span data-ttu-id="3d07b-110">ccRecipients</span><span class="sxs-lookup"><span data-stu-id="3d07b-110">ccRecipients</span></span>|<span data-ttu-id="3d07b-111">[Recipient](recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="3d07b-111">[Recipient](recipient.md) collection</span></span>|<span data-ttu-id="3d07b-112">应将邀请邮件发送到的其他收件人。</span><span class="sxs-lookup"><span data-stu-id="3d07b-112">Additional recipients the invitation message should be sent to.</span></span> <span data-ttu-id="3d07b-113">目前仅支持1个额外的收件人。</span><span class="sxs-lookup"><span data-stu-id="3d07b-113">Currently only 1 additional recipient is supported.</span></span>|
+|<span data-ttu-id="3d07b-114">customizedMessageBody</span><span class="sxs-lookup"><span data-stu-id="3d07b-114">customizedMessageBody</span></span>|<span data-ttu-id="3d07b-115">String</span><span class="sxs-lookup"><span data-stu-id="3d07b-115">String</span></span>|<span data-ttu-id="3d07b-116">如果不需要默认邮件，则为要发送的自定义邮件正文。</span><span class="sxs-lookup"><span data-stu-id="3d07b-116">Customized message body you want to send if you don't want the default message.</span></span>|
+|<span data-ttu-id="3d07b-117">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="3d07b-117">messageLanguage</span></span>|<span data-ttu-id="3d07b-118">String</span><span class="sxs-lookup"><span data-stu-id="3d07b-118">String</span></span>|<span data-ttu-id="3d07b-119">要在其中发送默认邮件的语言。</span><span class="sxs-lookup"><span data-stu-id="3d07b-119">The language you want to send the default message in.</span></span> <span data-ttu-id="3d07b-120">如果指定了 customizedMessageBody，则忽略此属性，并使用 customizedMessageBody 发送邮件。</span><span class="sxs-lookup"><span data-stu-id="3d07b-120">If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody.</span></span> <span data-ttu-id="3d07b-121">语言格式应为 ISO 639。</span><span class="sxs-lookup"><span data-stu-id="3d07b-121">The language format should be in ISO 639.</span></span> <span data-ttu-id="3d07b-122">默认值为 en-us。</span><span class="sxs-lookup"><span data-stu-id="3d07b-122">The default is en-US.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1df1d-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1df1d-122">JSON representation</span></span>
-<span data-ttu-id="1df1d-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1df1d-123">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d07b-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3d07b-123">JSON representation</span></span>
+<span data-ttu-id="3d07b-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d07b-124">Here is a JSON representation of the resource</span></span>
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json

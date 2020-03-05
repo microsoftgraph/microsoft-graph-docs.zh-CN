@@ -5,27 +5,29 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7a3008b328337e4dd4d816f4b0d7432b7e24c08d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adac348de690b3796399a4276ede4280f35713b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036489"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447603"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="6ad37-103">键值资源类型</span><span class="sxs-lookup"><span data-stu-id="6ad37-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="a1833-103">键值资源类型</span><span class="sxs-lookup"><span data-stu-id="a1833-103">keyValue resource type</span></span>
 
-<span data-ttu-id="6ad37-104">表示键/值对。</span><span class="sxs-lookup"><span data-stu-id="6ad37-104">Represents a key-value pair.</span></span>
+<span data-ttu-id="a1833-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="a1833-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6ad37-105">属性</span><span class="sxs-lookup"><span data-stu-id="6ad37-105">Properties</span></span>
+<span data-ttu-id="a1833-105">表示键/值对。</span><span class="sxs-lookup"><span data-stu-id="a1833-105">Represents a key-value pair.</span></span>
 
-| <span data-ttu-id="6ad37-106">属性</span><span class="sxs-lookup"><span data-stu-id="6ad37-106">Property</span></span>     | <span data-ttu-id="6ad37-107">类型</span><span class="sxs-lookup"><span data-stu-id="6ad37-107">Type</span></span>   |<span data-ttu-id="6ad37-108">说明</span><span class="sxs-lookup"><span data-stu-id="6ad37-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a1833-106">属性</span><span class="sxs-lookup"><span data-stu-id="a1833-106">Properties</span></span>
+
+| <span data-ttu-id="a1833-107">属性</span><span class="sxs-lookup"><span data-stu-id="a1833-107">Property</span></span>     | <span data-ttu-id="a1833-108">类型</span><span class="sxs-lookup"><span data-stu-id="a1833-108">Type</span></span>   |<span data-ttu-id="a1833-109">说明</span><span class="sxs-lookup"><span data-stu-id="a1833-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6ad37-109">Key</span><span class="sxs-lookup"><span data-stu-id="6ad37-109">key</span></span>|<span data-ttu-id="6ad37-110">string</span><span class="sxs-lookup"><span data-stu-id="6ad37-110">string</span></span>| <span data-ttu-id="6ad37-111">键/值对的键。</span><span class="sxs-lookup"><span data-stu-id="6ad37-111">Key for the key-value pair.</span></span> |
-|<span data-ttu-id="6ad37-112">value</span><span class="sxs-lookup"><span data-stu-id="6ad37-112">value</span></span>|<span data-ttu-id="6ad37-113">字符串</span><span class="sxs-lookup"><span data-stu-id="6ad37-113">string</span></span>| <span data-ttu-id="6ad37-114">键/值对的值。</span><span class="sxs-lookup"><span data-stu-id="6ad37-114">Value for the key-value pair.</span></span>|
+|<span data-ttu-id="a1833-110">Key</span><span class="sxs-lookup"><span data-stu-id="a1833-110">key</span></span>|<span data-ttu-id="a1833-111">string</span><span class="sxs-lookup"><span data-stu-id="a1833-111">string</span></span>| <span data-ttu-id="a1833-112">键/值对的键。</span><span class="sxs-lookup"><span data-stu-id="a1833-112">Key for the key-value pair.</span></span> |
+|<span data-ttu-id="a1833-113">value</span><span class="sxs-lookup"><span data-stu-id="a1833-113">value</span></span>|<span data-ttu-id="a1833-114">字符串</span><span class="sxs-lookup"><span data-stu-id="a1833-114">string</span></span>| <span data-ttu-id="a1833-115">键/值对的值。</span><span class="sxs-lookup"><span data-stu-id="a1833-115">Value for the key-value pair.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6ad37-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6ad37-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a1833-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a1833-116">JSON representation</span></span>
 
-<span data-ttu-id="6ad37-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6ad37-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a1833-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a1833-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

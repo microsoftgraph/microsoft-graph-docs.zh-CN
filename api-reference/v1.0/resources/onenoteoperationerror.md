@@ -5,20 +5,22 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 95eda3299b62a1ebe49b2520206265cc14c3ac57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bb434db18361c9c918189744a9197ae6a6df8e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035768"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447302"
 ---
-# <a name="onenoteoperationerror-resource-type"></a><span data-ttu-id="0c02f-103">onenoteOperationError 资源类型</span><span class="sxs-lookup"><span data-stu-id="0c02f-103">onenoteOperationError resource type</span></span>
+# <a name="onenoteoperationerror-resource-type"></a><span data-ttu-id="928e7-103">onenoteOperationError 资源类型</span><span class="sxs-lookup"><span data-stu-id="928e7-103">onenoteOperationError resource type</span></span>
 
-<span data-ttu-id="0c02f-104">失败的 OneNote 操作中的错误。</span><span class="sxs-lookup"><span data-stu-id="0c02f-104">An error from a failed OneNote operation.</span></span>
+<span data-ttu-id="928e7-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="928e7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0c02f-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0c02f-105">JSON representation</span></span>
+<span data-ttu-id="928e7-105">失败的 OneNote 操作中的错误。</span><span class="sxs-lookup"><span data-stu-id="928e7-105">An error from a failed OneNote operation.</span></span>
 
-<span data-ttu-id="0c02f-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0c02f-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="928e7-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="928e7-106">JSON representation</span></span>
+
+<span data-ttu-id="928e7-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="928e7-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,11 +37,11 @@ ms.locfileid: "36035768"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="0c02f-107">属性</span><span class="sxs-lookup"><span data-stu-id="0c02f-107">Properties</span></span>
-| <span data-ttu-id="0c02f-108">属性</span><span class="sxs-lookup"><span data-stu-id="0c02f-108">Property</span></span>     | <span data-ttu-id="0c02f-109">类型</span><span class="sxs-lookup"><span data-stu-id="0c02f-109">Type</span></span>   |<span data-ttu-id="0c02f-110">说明</span><span class="sxs-lookup"><span data-stu-id="0c02f-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="928e7-108">属性</span><span class="sxs-lookup"><span data-stu-id="928e7-108">Properties</span></span>
+| <span data-ttu-id="928e7-109">属性</span><span class="sxs-lookup"><span data-stu-id="928e7-109">Property</span></span>     | <span data-ttu-id="928e7-110">类型</span><span class="sxs-lookup"><span data-stu-id="928e7-110">Type</span></span>   |<span data-ttu-id="928e7-111">说明</span><span class="sxs-lookup"><span data-stu-id="928e7-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0c02f-111">code</span><span class="sxs-lookup"><span data-stu-id="0c02f-111">code</span></span>|<span data-ttu-id="0c02f-112">string</span><span class="sxs-lookup"><span data-stu-id="0c02f-112">string</span></span>|<span data-ttu-id="0c02f-113">错误代码。</span><span class="sxs-lookup"><span data-stu-id="0c02f-113">The error code.</span></span>|
-|<span data-ttu-id="0c02f-114">message</span><span class="sxs-lookup"><span data-stu-id="0c02f-114">message</span></span>|<span data-ttu-id="0c02f-115">字符串</span><span class="sxs-lookup"><span data-stu-id="0c02f-115">string</span></span>|<span data-ttu-id="0c02f-116">错误消息。</span><span class="sxs-lookup"><span data-stu-id="0c02f-116">The error message.</span></span>|
+|<span data-ttu-id="928e7-112">code</span><span class="sxs-lookup"><span data-stu-id="928e7-112">code</span></span>|<span data-ttu-id="928e7-113">string</span><span class="sxs-lookup"><span data-stu-id="928e7-113">string</span></span>|<span data-ttu-id="928e7-114">错误代码。</span><span class="sxs-lookup"><span data-stu-id="928e7-114">The error code.</span></span>|
+|<span data-ttu-id="928e7-115">message</span><span class="sxs-lookup"><span data-stu-id="928e7-115">message</span></span>|<span data-ttu-id="928e7-116">字符串</span><span class="sxs-lookup"><span data-stu-id="928e7-116">string</span></span>|<span data-ttu-id="928e7-117">错误消息。</span><span class="sxs-lookup"><span data-stu-id="928e7-117">The error message.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
