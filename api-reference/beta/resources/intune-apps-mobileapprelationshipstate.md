@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eef4e5788be1c725ce9bfe2bc6fb2bd298394450
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2b76572f56e219a08a7dc7452e184e31be121ae4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491342"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -23,9 +25,9 @@ ms.locfileid: "39955734"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|sourceIds|String collection|源移动应用程序 id 的集合。|
-|targetId|字符串|相关目标应用程序的 id。|
-|targetDisplayName|字符串|相关目标应用程序的显示名称。|
+|sourceIds|String 集合|源移动应用程序 id 的集合。|
+|targetId|String|相关目标应用程序的 id。|
+|targetDisplayName|String|相关目标应用程序的显示名称。|
 |deviceId|String|相应的设备 id。|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|目标应用的应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可取值为：`noAdditionalDetails`、`dependencyFailedToInstall`、`dependencyWithRequirementsNotMet`、`dependencyPendingReboot`、`dependencyWithAutoInstallDisabled`、`seeInstallErrorCode`、`autoInstallDisabled`、`seeUninstallErrorCode`、`pendingReboot`、`installingDependencies`、`contentDownloaded`、`powerShellScriptRequirementNotMet`、`registryRequirementNotMet`、`fileSystemRequirementNotMet`、`platformNotApplicable`、`minimumCpuSpeedNotMet`、`minimumLogicalProcessorCountNotMet`、`minimumPhysicalMemoryNotMet`、`minimumOsVersionNotMet`、`minimumDiskSpaceNotMet`、`processorArchitectureNotApplicable`。|

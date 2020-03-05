@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c866a4589505af9721d0fc97d16056e90939b19b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 88246bed788a0e8f9e9ed7b9aaa01e139bd169b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491223"
 ---
 # <a name="officesuiteapp-resource-type"></a>officeSuiteApp 资源类型
 
+命名空间： microsoft. graph
+
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Office365 套件应用程序的属性和继承的属性。
 
@@ -51,17 +53,17 @@ ms.locfileid: "37199109"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|Boolean|要在 enduser 的设备上自动接受 EULA 的值。|
+|autoAcceptEula|布尔|要在 enduser 的设备上自动接受 EULA 的值。|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md)集合|表示 Office365 套件 SKU 的产品 Id。|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|表示从所选 Office365 产品 Id 中排除的应用程序的属性。|
-|useSharedComputerActivation|Boolean|表示共享计算机激活是否不适用于 Office365 应用程序套件的属性。|
+|useSharedComputerActivation|布尔|表示共享计算机激活是否不适用于 Office365 应用程序套件的属性。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|用于表示 Office365 更新通道的属性。 可取值为：`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred`。|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|表示 Office365 应用程序套件版本的属性。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|localesToInstall|String collection|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|localesToInstall|String 集合|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|指定设备上安装进度设置 UI 的显示级别。 可取值为：`none`、`full`。|
-|shouldUninstallOlderVersionsOfOffice|Boolean|用于确定是否在将 Office365 应用套件部署到设备时是否卸载现有 Office MSI 的属性。|
+|shouldUninstallOlderVersionsOfOffice|布尔|用于确定是否在将 Office365 应用套件部署到设备时是否卸载现有 Office MSI 的属性。|
 |targetVersion|String|表示应在设备上保持部署的 Office365 应用程序套件的特定目标版本的属性。|
 |updateVersion|String|表示可用于 Office365 应用程序套件的特定目标版本的更新版本的属性。|
 |officeConfigurationXml|Binary|表示可为 Office 专业增强版应用程序指定的 XML 配置文件的属性。 优先于所有其他属性。 如果存在，将使用 XML 配置文件来创建应用程序。|

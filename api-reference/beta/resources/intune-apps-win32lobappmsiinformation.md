@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 958cc834a2044e623a8fa1cf7ed37bed1ec7b1f9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 92ff70c8b1bbf63ce6fd81321282a0f61f4accc3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490691"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Win32 应用程序的 MSI 应用程序属性。
 
@@ -26,7 +28,7 @@ ms.locfileid: "36335646"
 |productCode|String|MSI 产品代码。|
 |productVersion|String|MSI 产品版本。|
 |upgradeCode|String|MSI 升级代码。|
-|requiresReboot|Boolean|MSI 应用是否需要计算机重新启动以完成安装。|
+|requiresReboot|布尔|MSI 应用是否需要计算机重新启动以完成安装。|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI 包类型。 可取值为：`perMachine`、`perUser`、`dualPurpose`。|
 |productName|String|MSI 产品名称。|
 |发布者|String|MSI 发布者。|

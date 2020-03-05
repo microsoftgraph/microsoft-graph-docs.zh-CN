@@ -5,33 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92f0dcaca7cc924f0160ff5c2da485222ce87140
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ca5eebaad444cadbc494ea978d900a40f596b556
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335415"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42489956"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+命名空间： microsoft. graph
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 移动应用需要的最低操作系统。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|Boolean|Windows 版本 8.0 或更高版本。|
+|v8_0|布尔|Windows 版本 8.0 或更高版本。|
 |v8_1|布尔值|Windows 版本 8.1 或更高版本。|
 |v10_0|布尔值|Windows 版本 10.0 或更高版本。|
-|v10_1607|Boolean|Windows 10 1607 或更高版本。|
-|v10_1703|Boolean|Windows 10 1703 或更高版本。|
-|v10_1709|Boolean|Windows 10 1709 或更高版本。|
-|v10_1803|Boolean|Windows 10 1803 或更高版本。|
-|v10_1809|Boolean|Windows 10 1809 或更高版本。|
-|v10_1903|Boolean|Windows 10 1903 或更高版本。|
+|v10_1607|布尔|Windows 10 1607 或更高版本。|
+|v10_1703|布尔|Windows 10 1703 或更高版本。|
+|v10_1709|布尔|Windows 10 1709 或更高版本。|
+|v10_1803|布尔|Windows 10 1803 或更高版本。|
+|v10_1809|布尔|Windows 10 1809 或更高版本。|
+|v10_1903|布尔|Windows 10 1903 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无

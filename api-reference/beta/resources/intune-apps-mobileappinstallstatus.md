@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95d6d694da12fe4615ada0d0a2a19f5d7d992980
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 891ddaa41d03c18afd45eff8c7dbe05cb8e32b0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491695"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,25 +28,25 @@ ms.locfileid: "39955615"
 |[列出 mobileAppInstallStatuses](../api/intune-apps-mobileappinstallstatus-list.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|列出[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性和关系。|
 |[获取 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-get.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|读取[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性和关系。|
 |[创建 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-create.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|创建新的[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。|
-|[删除 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|None|删除[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)。|
+|[删除 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|无|删除[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)。|
 |[更新 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|更新[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceName|字符串|设备名称|
-|deviceId|字符串|设备 ID|
+|deviceName|String|设备名称|
+|deviceId|String|设备 ID|
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间|
 |将 mobileappinstallstatusvalue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可取值为：`noAdditionalDetails`、`dependencyFailedToInstall`、`dependencyWithRequirementsNotMet`、`dependencyPendingReboot`、`dependencyWithAutoInstallDisabled`、`seeInstallErrorCode`、`autoInstallDisabled`、`seeUninstallErrorCode`、`pendingReboot`、`installingDependencies`、`contentDownloaded`、`powerShellScriptRequirementNotMet`、`registryRequirementNotMet`、`fileSystemRequirementNotMet`、`platformNotApplicable`、`minimumCpuSpeedNotMet`、`minimumLogicalProcessorCountNotMet`、`minimumPhysicalMemoryNotMet`、`minimumOsVersionNotMet`、`minimumDiskSpaceNotMet`、`processorArchitectureNotApplicable`。|
 |errorCode|Int32|安装或卸载失败的错误代码。|
-|osVersion|字符串|OS 版本|
-|osDescription|字符串|OS 说明|
+|osVersion|String|OS 版本|
+|osDescription|String|OS 说明|
 |userName|String|设备用户名|
-|userPrincipalName|字符串|用户主体名称|
-|displayVersion|字符串|人工可读版本的应用程序|
+|userPrincipalName|String|用户主体名称|
+|displayVersion|String|人工可读版本的应用程序|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2aba128e4c781dab30f226e25f5240e1f95db17
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 40aa3d256da1d7a1c50fc898c6755a82185897ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078334"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42489487"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
+
+命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -21,7 +23,7 @@ ms.locfileid: "38078334"
 包含审核主角的属性的类。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |type|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
