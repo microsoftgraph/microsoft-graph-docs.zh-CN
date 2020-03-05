@@ -5,61 +5,63 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7de436ecdb24a7288cf515c71598b880ec4122dc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7a86276b42244b6fc1443d07d5170175f7166a92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440680"
 ---
-# <a name="call-updaterecordingstatus"></a><span data-ttu-id="1f431-103">调用： updateRecordingStatus</span><span class="sxs-lookup"><span data-stu-id="1f431-103">call: updateRecordingStatus</span></span>
+# <a name="call-updaterecordingstatus"></a><span data-ttu-id="a0cb1-103">调用： updateRecordingStatus</span><span class="sxs-lookup"><span data-stu-id="a0cb1-103">call: updateRecordingStatus</span></span>
+
+<span data-ttu-id="a0cb1-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="a0cb1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1f431-104">更新与呼叫关联的应用程序的录制状态。</span><span class="sxs-lookup"><span data-stu-id="1f431-104">Update the application's recording status associated with a call.</span></span>
+<span data-ttu-id="a0cb1-105">更新与呼叫关联的应用程序的录制状态。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-105">Update the application's recording status associated with a call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1f431-105">权限</span><span class="sxs-lookup"><span data-stu-id="1f431-105">Permissions</span></span>
-<span data-ttu-id="1f431-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1f431-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0cb1-106">权限</span><span class="sxs-lookup"><span data-stu-id="a0cb1-106">Permissions</span></span>
+<span data-ttu-id="a0cb1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1f431-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1f431-108">Permission type</span></span>                        | <span data-ttu-id="1f431-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1f431-109">Permissions (from least to most privileged)</span></span>      |
+| <span data-ttu-id="a0cb1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0cb1-109">Permission type</span></span>                        | <span data-ttu-id="a0cb1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a0cb1-110">Permissions (from least to most privileged)</span></span>      |
 |:---------------------------------------|:-------------------------------------------------|
-| <span data-ttu-id="1f431-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1f431-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1f431-111">不支持</span><span class="sxs-lookup"><span data-stu-id="1f431-111">Not Supported</span></span>                                    |
-| <span data-ttu-id="1f431-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1f431-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f431-113">不支持</span><span class="sxs-lookup"><span data-stu-id="1f431-113">Not Supported</span></span>                                    |
-| <span data-ttu-id="1f431-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="1f431-114">Application</span></span>                            | <span data-ttu-id="1f431-115">JoinGroupCalls、AccessMedia 和所有调用</span><span class="sxs-lookup"><span data-stu-id="1f431-115">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
+| <span data-ttu-id="a0cb1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0cb1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a0cb1-112">不支持</span><span class="sxs-lookup"><span data-stu-id="a0cb1-112">Not Supported</span></span>                                    |
+| <span data-ttu-id="a0cb1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0cb1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0cb1-114">不支持</span><span class="sxs-lookup"><span data-stu-id="a0cb1-114">Not Supported</span></span>                                    |
+| <span data-ttu-id="a0cb1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0cb1-115">Application</span></span>                            | <span data-ttu-id="a0cb1-116">JoinGroupCalls、AccessMedia 和所有调用</span><span class="sxs-lookup"><span data-stu-id="a0cb1-116">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="1f431-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1f431-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0cb1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0cb1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateRecordingStatus
 POST /communications/calls/{id}/updateRecordingStatus
 ```
-> <span data-ttu-id="1f431-117">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="1f431-117">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="1f431-118">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="1f431-118">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="a0cb1-118">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-118">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="a0cb1-119">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-119">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1f431-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="1f431-119">Request headers</span></span>
-| <span data-ttu-id="1f431-120">名称</span><span class="sxs-lookup"><span data-stu-id="1f431-120">Name</span></span>          | <span data-ttu-id="1f431-121">说明</span><span class="sxs-lookup"><span data-stu-id="1f431-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a0cb1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0cb1-120">Request headers</span></span>
+| <span data-ttu-id="a0cb1-121">名称</span><span class="sxs-lookup"><span data-stu-id="a0cb1-121">Name</span></span>          | <span data-ttu-id="a0cb1-122">说明</span><span class="sxs-lookup"><span data-stu-id="a0cb1-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="1f431-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f431-122">Authorization</span></span> | <span data-ttu-id="1f431-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1f431-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1f431-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="1f431-125">Content-type</span></span> | <span data-ttu-id="1f431-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="1f431-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="a0cb1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0cb1-123">Authorization</span></span> | <span data-ttu-id="a0cb1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0cb1-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="a0cb1-126">Content-type</span></span> | <span data-ttu-id="a0cb1-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a0cb1-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1f431-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="1f431-128">Request body</span></span>
-<span data-ttu-id="1f431-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="1f431-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0cb1-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0cb1-129">Request body</span></span>
+<span data-ttu-id="a0cb1-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1f431-130">参数</span><span class="sxs-lookup"><span data-stu-id="1f431-130">Parameter</span></span>       | <span data-ttu-id="1f431-131">类型</span><span class="sxs-lookup"><span data-stu-id="1f431-131">Type</span></span>    | <span data-ttu-id="1f431-132">说明</span><span class="sxs-lookup"><span data-stu-id="1f431-132">Description</span></span>                                                                           |
+| <span data-ttu-id="a0cb1-131">参数</span><span class="sxs-lookup"><span data-stu-id="a0cb1-131">Parameter</span></span>       | <span data-ttu-id="a0cb1-132">类型</span><span class="sxs-lookup"><span data-stu-id="a0cb1-132">Type</span></span>    | <span data-ttu-id="a0cb1-133">说明</span><span class="sxs-lookup"><span data-stu-id="a0cb1-133">Description</span></span>                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| <span data-ttu-id="1f431-133">适用</span><span class="sxs-lookup"><span data-stu-id="1f431-133">clientContext</span></span>   | <span data-ttu-id="1f431-134">String</span><span class="sxs-lookup"><span data-stu-id="1f431-134">String</span></span>  | <span data-ttu-id="1f431-135">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="1f431-135">Unique Client Context string.</span></span> <span data-ttu-id="1f431-136">最大限制为256个字符。</span><span class="sxs-lookup"><span data-stu-id="1f431-136">Max limit is 256 chars.</span></span>                                 |
-| <span data-ttu-id="1f431-137">状态</span><span class="sxs-lookup"><span data-stu-id="1f431-137">status</span></span>          | <span data-ttu-id="1f431-138">String</span><span class="sxs-lookup"><span data-stu-id="1f431-138">String</span></span>  | <span data-ttu-id="1f431-139">录制状态。</span><span class="sxs-lookup"><span data-stu-id="1f431-139">The recording status.</span></span> <span data-ttu-id="1f431-140">可能的值包括`notRecording`： `recording`、或`failed`。</span><span class="sxs-lookup"><span data-stu-id="1f431-140">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
+| <span data-ttu-id="a0cb1-134">适用</span><span class="sxs-lookup"><span data-stu-id="a0cb1-134">clientContext</span></span>   | <span data-ttu-id="a0cb1-135">String</span><span class="sxs-lookup"><span data-stu-id="a0cb1-135">String</span></span>  | <span data-ttu-id="a0cb1-136">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-136">Unique Client Context string.</span></span> <span data-ttu-id="a0cb1-137">最大限制为256个字符。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-137">Max limit is 256 chars.</span></span>                                 |
+| <span data-ttu-id="a0cb1-138">status</span><span class="sxs-lookup"><span data-stu-id="a0cb1-138">status</span></span>          | <span data-ttu-id="a0cb1-139">String</span><span class="sxs-lookup"><span data-stu-id="a0cb1-139">String</span></span>  | <span data-ttu-id="a0cb1-140">录制状态。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-140">The recording status.</span></span> <span data-ttu-id="a0cb1-141">可能的值包括`notRecording`： `recording`、或`failed`。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-141">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="1f431-141">响应</span><span class="sxs-lookup"><span data-stu-id="1f431-141">Response</span></span>
-<span data-ttu-id="1f431-142">此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[UPDATERECORDINGSTATUSOPERATION](../resources/updaterecordingstatusoperation.md)对象的 URI。</span><span class="sxs-lookup"><span data-stu-id="1f431-142">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="a0cb1-142">响应</span><span class="sxs-lookup"><span data-stu-id="a0cb1-142">Response</span></span>
+<span data-ttu-id="a0cb1-143">此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[UPDATERECORDINGSTATUSOPERATION](../resources/updaterecordingstatusoperation.md)对象的 URI。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-143">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f431-143">示例</span><span class="sxs-lookup"><span data-stu-id="1f431-143">Example</span></span>
-<span data-ttu-id="1f431-144">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="1f431-144">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="a0cb1-144">示例</span><span class="sxs-lookup"><span data-stu-id="a0cb1-144">Example</span></span>
+<span data-ttu-id="a0cb1-145">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-145">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="1f431-145">请求</span><span class="sxs-lookup"><span data-stu-id="1f431-145">Request</span></span>
-<span data-ttu-id="1f431-146">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="1f431-146">The following example shows the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a0cb1-146">请求</span><span class="sxs-lookup"><span data-stu-id="a0cb1-146">Request</span></span>
+<span data-ttu-id="a0cb1-147">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-147">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1f431-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="1f431-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a0cb1-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="a0cb1-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-updateRecordingStatus"
@@ -74,24 +76,24 @@ Content-Length: 79
   "status": "notRecording | recording | failed"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1f431-148">C#</span><span class="sxs-lookup"><span data-stu-id="1f431-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a0cb1-149">C#</span><span class="sxs-lookup"><span data-stu-id="a0cb1-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-updaterecordingstatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1f431-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1f431-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a0cb1-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0cb1-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-updaterecordingstatus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1f431-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1f431-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a0cb1-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a0cb1-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updaterecordingstatus-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1f431-151">响应</span><span class="sxs-lookup"><span data-stu-id="1f431-151">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a0cb1-152">响应</span><span class="sxs-lookup"><span data-stu-id="a0cb1-152">Response</span></span>
 
-> <span data-ttu-id="1f431-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1f431-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a0cb1-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a0cb1-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

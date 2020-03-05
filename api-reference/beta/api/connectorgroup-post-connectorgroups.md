@@ -5,48 +5,50 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2b99d52303547bd94deb8c3866e4e62745f5b2d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21cdb4ec3da098ed787c13a4b8c4c24244dd6c8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437306"
 ---
-# <a name="create-connectorgroup"></a><span data-ttu-id="8b19a-103">创建 connectorGroup</span><span class="sxs-lookup"><span data-stu-id="8b19a-103">Create connectorGroup</span></span>
+# <a name="create-connectorgroup"></a><span data-ttu-id="9c321-103">创建 connectorGroup</span><span class="sxs-lookup"><span data-stu-id="9c321-103">Create connectorGroup</span></span>
+
+<span data-ttu-id="9c321-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9c321-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b19a-104">使用此 API 创建新的 connectorGroup。</span><span class="sxs-lookup"><span data-stu-id="8b19a-104">Use this API to create a new connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8b19a-105">权限</span><span class="sxs-lookup"><span data-stu-id="8b19a-105">Permissions</span></span>
-<span data-ttu-id="8b19a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8b19a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9c321-105">使用此 API 创建新的 connectorGroup。</span><span class="sxs-lookup"><span data-stu-id="9c321-105">Use this API to create a new connectorGroup.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c321-106">权限</span><span class="sxs-lookup"><span data-stu-id="9c321-106">Permissions</span></span>
+<span data-ttu-id="9c321-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c321-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b19a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8b19a-108">Permission type</span></span>      | <span data-ttu-id="8b19a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8b19a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c321-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c321-109">Permission type</span></span>      | <span data-ttu-id="9c321-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c321-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b19a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8b19a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8b19a-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8b19a-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="8b19a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8b19a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b19a-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8b19a-113">Not supported.</span></span>    |
-|<span data-ttu-id="8b19a-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8b19a-114">Application</span></span> | <span data-ttu-id="8b19a-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b19a-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="9c321-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c321-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9c321-112">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9c321-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="9c321-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c321-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c321-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c321-114">Not supported.</span></span>    |
+|<span data-ttu-id="9c321-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c321-115">Application</span></span> | <span data-ttu-id="9c321-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c321-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8b19a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8b19a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c321-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c321-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectorGroups
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8b19a-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8b19a-117">Request headers</span></span>
-| <span data-ttu-id="8b19a-118">名称</span><span class="sxs-lookup"><span data-stu-id="8b19a-118">Name</span></span>       | <span data-ttu-id="8b19a-119">说明</span><span class="sxs-lookup"><span data-stu-id="8b19a-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9c321-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c321-118">Request headers</span></span>
+| <span data-ttu-id="9c321-119">名称</span><span class="sxs-lookup"><span data-stu-id="9c321-119">Name</span></span>       | <span data-ttu-id="9c321-120">说明</span><span class="sxs-lookup"><span data-stu-id="9c321-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8b19a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8b19a-120">Authorization</span></span>  | <span data-ttu-id="8b19a-121">负载.</span><span class="sxs-lookup"><span data-stu-id="8b19a-121">Bearer.</span></span> <span data-ttu-id="8b19a-122">Requried</span><span class="sxs-lookup"><span data-stu-id="8b19a-122">Requried</span></span>|
+| <span data-ttu-id="9c321-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c321-121">Authorization</span></span>  | <span data-ttu-id="9c321-122">负载.</span><span class="sxs-lookup"><span data-stu-id="9c321-122">Bearer.</span></span> <span data-ttu-id="9c321-123">Requried</span><span class="sxs-lookup"><span data-stu-id="9c321-123">Requried</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8b19a-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8b19a-123">Request body</span></span>
-<span data-ttu-id="8b19a-124">在请求正文中, 提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8b19a-124">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c321-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c321-124">Request body</span></span>
+<span data-ttu-id="9c321-125">在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9c321-125">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8b19a-125">响应</span><span class="sxs-lookup"><span data-stu-id="8b19a-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9c321-126">响应</span><span class="sxs-lookup"><span data-stu-id="9c321-126">Response</span></span>
 
-<span data-ttu-id="8b19a-126">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8b19a-126">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
+<span data-ttu-id="9c321-127">如果成功，此方法在`201 Created`响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9c321-127">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b19a-127">示例</span><span class="sxs-lookup"><span data-stu-id="8b19a-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8b19a-128">请求</span><span class="sxs-lookup"><span data-stu-id="8b19a-128">Request</span></span>
-<span data-ttu-id="8b19a-129">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8b19a-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9c321-128">示例</span><span class="sxs-lookup"><span data-stu-id="9c321-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9c321-129">请求</span><span class="sxs-lookup"><span data-stu-id="9c321-129">Request</span></span>
+<span data-ttu-id="9c321-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9c321-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_connectorgroup_from_connectorgroups"
@@ -62,9 +64,9 @@ Content-length: 99
   "isDefault": false
 }
 ```
-<span data-ttu-id="8b19a-130">在请求正文中, 提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8b19a-130">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="8b19a-131">响应</span><span class="sxs-lookup"><span data-stu-id="8b19a-131">Response</span></span>
-<span data-ttu-id="8b19a-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8b19a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="9c321-131">在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9c321-131">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="9c321-132">响应</span><span class="sxs-lookup"><span data-stu-id="9c321-132">Response</span></span>
+<span data-ttu-id="9c321-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9c321-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

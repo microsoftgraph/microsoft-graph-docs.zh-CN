@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a315709cff9b8e3a64a5f4cde5f98d5c06093ea2
-ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
+ms.openlocfilehash: 4e4f9c4d2a060c38d0aa74a8c7c66e1cd75587af
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36758305"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440526"
 ---
-# <a name="get-certificatebasedauthconfiguration"></a><span data-ttu-id="15360-103">获取 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="15360-103">Get certificateBasedAuthConfiguration</span></span>
+# <a name="get-certificatebasedauthconfiguration"></a><span data-ttu-id="512ba-103">获取 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="512ba-103">Get certificateBasedAuthConfiguration</span></span>
+
+<span data-ttu-id="512ba-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="512ba-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15360-104">获取[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="15360-104">Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.</span></span>
+<span data-ttu-id="512ba-105">获取[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="512ba-105">Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="15360-105">权限</span><span class="sxs-lookup"><span data-stu-id="15360-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="512ba-106">权限</span><span class="sxs-lookup"><span data-stu-id="512ba-106">Permissions</span></span>
 
-<span data-ttu-id="15360-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15360-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="512ba-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="512ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="15360-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="15360-108">Permission type</span></span>                        | <span data-ttu-id="15360-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="15360-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="512ba-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="512ba-109">Permission type</span></span>                        | <span data-ttu-id="512ba-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="512ba-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="15360-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15360-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="15360-111">全部, 全部组织。</span><span class="sxs-lookup"><span data-stu-id="15360-111">Organization.Read.All, Organization.ReadWrite.All</span></span> |
-| <span data-ttu-id="15360-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15360-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15360-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="15360-113">Not supported.</span></span> |
-| <span data-ttu-id="15360-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="15360-114">Application</span></span>    | <span data-ttu-id="15360-115">全部, 全部组织。</span><span class="sxs-lookup"><span data-stu-id="15360-115">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="512ba-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="512ba-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="512ba-112">全部，全部组织。</span><span class="sxs-lookup"><span data-stu-id="512ba-112">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="512ba-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="512ba-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="512ba-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="512ba-114">Not supported.</span></span> |
+| <span data-ttu-id="512ba-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="512ba-115">Application</span></span>    | <span data-ttu-id="512ba-116">全部，全部组织。</span><span class="sxs-lookup"><span data-stu-id="512ba-116">Organization.Read.All, Organization.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="15360-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15360-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="512ba-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="512ba-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,55 +38,55 @@ ms.locfileid: "36758305"
 GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="15360-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="15360-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="512ba-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="512ba-118">Request headers</span></span>
 
-| <span data-ttu-id="15360-118">名称</span><span class="sxs-lookup"><span data-stu-id="15360-118">Name</span></span>      |<span data-ttu-id="15360-119">说明</span><span class="sxs-lookup"><span data-stu-id="15360-119">Description</span></span>|
+| <span data-ttu-id="512ba-119">名称</span><span class="sxs-lookup"><span data-stu-id="512ba-119">Name</span></span>      |<span data-ttu-id="512ba-120">说明</span><span class="sxs-lookup"><span data-stu-id="512ba-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="15360-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="15360-120">Authorization</span></span> | <span data-ttu-id="15360-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="15360-121">Bearer {token}</span></span> |
+| <span data-ttu-id="512ba-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="512ba-121">Authorization</span></span> | <span data-ttu-id="512ba-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="512ba-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="15360-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="15360-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="512ba-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="512ba-123">Request body</span></span>
 
-<span data-ttu-id="15360-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="15360-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="512ba-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="512ba-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="15360-124">响应</span><span class="sxs-lookup"><span data-stu-id="15360-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="512ba-125">响应</span><span class="sxs-lookup"><span data-stu-id="512ba-125">Response</span></span>
 
-<span data-ttu-id="15360-125">如果成功, 此方法在响应`200 OK`正文中返回响应代码和请求的[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="15360-125">If successful, this method returns a `200 OK` response code and the requested [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="512ba-126">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="512ba-126">If successful, this method returns a `200 OK` response code and the requested [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="15360-126">示例</span><span class="sxs-lookup"><span data-stu-id="15360-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="512ba-127">示例</span><span class="sxs-lookup"><span data-stu-id="512ba-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="15360-127">请求</span><span class="sxs-lookup"><span data-stu-id="15360-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="512ba-128">请求</span><span class="sxs-lookup"><span data-stu-id="512ba-128">Request</span></span>
 
-<span data-ttu-id="15360-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="15360-128">The following is an example of the request.</span></span>
+<span data-ttu-id="512ba-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="512ba-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="15360-129">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="15360-129">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="512ba-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="512ba-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_certificatebasedauthconfiguration"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="15360-130">C#</span><span class="sxs-lookup"><span data-stu-id="15360-130">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="512ba-131">C#</span><span class="sxs-lookup"><span data-stu-id="512ba-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="15360-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15360-131">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="512ba-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="512ba-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-certificatebasedauthconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="15360-132">目标-C</span><span class="sxs-lookup"><span data-stu-id="15360-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="512ba-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="512ba-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-certificatebasedauthconfiguration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="15360-133">响应</span><span class="sxs-lookup"><span data-stu-id="15360-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="512ba-134">响应</span><span class="sxs-lookup"><span data-stu-id="512ba-134">Response</span></span>
 
-<span data-ttu-id="15360-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="15360-134">The following is an example of the response.</span></span>
+<span data-ttu-id="512ba-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="512ba-135">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="15360-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="15360-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="512ba-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="512ba-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
