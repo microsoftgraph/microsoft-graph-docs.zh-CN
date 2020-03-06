@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26eaa5ba0aa5e7a2e37f4e97a649973f2a874129
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: eb7d2555e6692244d2620fc674de2ba91c0cc4b6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37358513"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516206"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>更新 managedDeviceMobileAppConfigurationUserSummary
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37358513"
 PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |pendingCount|Int32|待定用户的数量|
 |notApplicableCount|Int32|不适用的用户数|
 |successCount|Int32|成功用户的数量|

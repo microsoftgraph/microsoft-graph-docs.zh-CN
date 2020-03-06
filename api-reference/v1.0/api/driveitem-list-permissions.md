@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: 668ec3bf50c54bfb922438eb5ceb042cf2f1c36f
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 8f3676aacc688a877a7d50b6078cb6652aa0609d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636831"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517718"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
+
+命名空间：microsoft.graph
 
 列出[driveItem](../resources/driveitem.md)的有效共享权限。
 
@@ -76,25 +78,25 @@ DriveItem 的有效共享权限可能有两个来源：
 
 本示例检索登录用户驱动器中某个项的权限集合。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

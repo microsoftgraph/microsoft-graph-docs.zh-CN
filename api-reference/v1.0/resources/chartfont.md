@@ -5,19 +5,21 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9241691296b93eb21e19e10b81f36e692fea0692
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1768e40edde1d02c109e77c7e7ca3c2dd0ffdafa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032995"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531854"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont 资源类型
+
+命名空间：microsoft.graph
 
 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -28,11 +30,11 @@ ms.locfileid: "36032995"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bold|boolean|表示字体的加粗状态。|
-|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。 可能的值为: `None`、 `Single`。|
+|underline|string|应用于字体的下划线类型。 可能的值为： `None`、 `Single`。|
 
 ## <a name="relationships"></a>关系
 无

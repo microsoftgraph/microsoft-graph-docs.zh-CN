@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 228c68883cb3ebf3e19df3146ff3839bcc19c9cb
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 04abdc0f9a3d38681ef2d47c1fe6b7794d153f1f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729313"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509897"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
+
+命名空间：microsoft.graph
 
 检索[sectionGroup](../resources/sectiongroup.md)对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -37,7 +39,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 
 默认查询将展开`parentNotebook`并选择其`id`、 `name`和`self`属性。 节`expand`组的有效值为`parentNotebook`和`parentSectionGroup`。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -53,7 +55,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sectiongroup"
@@ -61,19 +63,19 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-sectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-sectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-sectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

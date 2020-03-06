@@ -1,22 +1,24 @@
 ---
 title: groupSettingTemplate 资源类型
-description: 组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建组设置, 并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的组设置。 目前, 仅有的可用模板适用于 Office 365 组, 并包括一些设置, 例如, 用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
+description: 组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建组设置，并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置，也可以表示特定的组设置。 目前，仅有的可用模板适用于 Office 365 组，并包括一些设置，例如，用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3d0624be1511b542da08e76ed5f9c51e60fe58a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa392d6bf6dcd8ceaf15d97dfe695fbaaeabed4b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531359"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
-组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建[组设置](groupsetting.md), 并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的组设置。 目前, 仅有的可用模板适用于 Office 365 组, 并包括一些设置, 例如, 用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
+命名空间：microsoft.graph
 
-## <a name="methods"></a>方法
+组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建[组设置](groupsetting.md)，并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置，也可以表示特定的组设置。 目前，仅有的可用模板适用于 Office 365 组，并包括一些设置，例如，用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
+
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -30,7 +32,7 @@ ms.locfileid: "36029279"
 |说明|String| 模板的说明。 |
 |displayName|String| 模板的显示名称。 |
 |id|字符串| 模板的唯一标识符。 只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md)集合| Settemplatevalues 的集合, 该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
+|values|[settingTemplateValue](settingtemplatevalue.md)集合| Settemplatevalues 的集合，该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
 
 ## <a name="relationships"></a>关系
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e9c174216508679373c607dc9a2acd95df9096c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84326124202051073e00736a0d630c02bf95340c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533679"
 ---
 # <a name="sizerange-resource-type"></a>sizeRange 资源类型
+
+命名空间：microsoft.graph
 
 
 指定传入邮件必须具有的最大大小和最小大小（以千字节为单位），以便条件或例外情况适用。

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86ea7e0963cd33efd284a66c34d10d27d80932a9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 00cee8abcd16995d7b3397def235c16eff1fb42d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354803"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515691"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性。
 
@@ -37,7 +39,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceIn
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/{deviceInstallStateId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -50,14 +52,14 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|deviceName|String|设备名称。|
-|deviceId|String|设备 ID。|
+|id|字符串|实体的键。|
+|deviceName|字符串|设备名称。|
+|deviceId|字符串|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|String|安装失败的错误代码。|
-|osVersion|String|操作系统版本。|
-|osDescription|String|操作系统说明。|
+|errorCode|字符串|安装失败的错误代码。|
+|osVersion|字符串|操作系统版本。|
+|osDescription|字符串|操作系统说明。|
 |userName|String|设备用户名。|
 
 

@@ -5,17 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6fcc143dc9c55b3bdb23b72eb8b538bbae6659d9
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 5d593ff2ea0b98f126e0509316c203a03e996877
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023150"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517101"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
+
+命名空间：microsoft.graph
+
 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -35,10 +38,10 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 | 参数     | 类型   | 说明                                                                                                            |
 |:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
-| startDateTime | String | 时间范围的开始日期和时间以 ISO 8601 格式表示。 例如，"2019-11-08T19：00： 00-08： 00"。 |
-| endDateTime   | String | 时间范围的结束日期和时间以 ISO 8601 格式表示。 例如，"2019-11-08T20：00： 00-08： 00"。   |
+| startDateTime | String | 时间范围的开始日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T19:00:00-08:00”。 |
+| endDateTime   | String | 时间范围的结束日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T20:00:00-08:00”。   |
 
-`startDateTime`和的值使用`endDateTime`值中指定的时区偏移量进行解释，如果存在，则不受`Prefer: outlook.timezone`标头值的影响。 如果值中不包含任何时区偏移量，则它将被解释为 UTC。
+`startDateTime` 和 `endDateTime` 的值使用值中指定的时区偏移量进行解释，并且不受 `Prefer: outlook.timezone` 标头（若有）的值影响。 如果值中未包含时区偏移量，则将其解释为 UTC。
 
 此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
@@ -46,7 +49,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 > [事件](../resources/event.md)的 **createdDateTime** 和 **lastModifiedDateTime** 属性不支持 `$select`。 若要获取它们的值，只需在 **calendarView** 上进行查询，而不应用 `$select`。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | Description |
+| 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | 字符串 | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
@@ -62,7 +65,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 #### <a name="request"></a>请求
 下面的示例展示了如何请求采用文本格式返回事件主体。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
@@ -72,19 +75,19 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

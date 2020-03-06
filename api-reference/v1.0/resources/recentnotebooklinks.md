@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f112d8ff87329ca23a3a44fb33dafe4582072519
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4eefb69476af9769795198fc7e67b154fa30eb0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034830"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533899"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks 资源类型
+
+命名空间：microsoft.graph
 
 用于打开 OneNote 笔记本的链接。 此资源类型以 [recentNotebook](recentnotebook.md) 资源属性的形式存在。
 

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2bf3063a1011ad0f7e7fcdb5e5239ce3eecfa4db
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 55084173ee45d0fc181b4e5ed9ac20557d50df0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313020"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518068"
 ---
 # <a name="update-device"></a>更新设备
+
+命名空间：microsoft.graph
 
 更新已注册设备的属性。
 
@@ -34,7 +36,7 @@ PATCH /devices/{id}
 ```
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -45,8 +47,8 @@ PATCH /devices/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 |
-|operatingSystem|String|设备上的操作系统类型。|
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
+|operatingSystem|字符串|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
 |isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
@@ -60,7 +62,7 @@ PATCH /devices/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -74,19 +76,19 @@ Content-length: 31
   "accountEnabled": false
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

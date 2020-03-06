@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6ec8e2494e66b62b20be8ff432959d5dfa0a66a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 166a2fa0122384720845fa0f8bdb4e66826342b6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721409"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518222"
 ---
 # <a name="list-contracts"></a>列出合同
+
+命名空间：microsoft.graph
 
 检索与合作伙伴租户关联的[合同](../resources/contract.md)对象的列表。
 
@@ -40,7 +42,7 @@ GET /contracts
 
 > 对 customerId、defaultDomainName 和 displayName 支持筛选。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -52,13 +54,13 @@ GET /contracts
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_contract"
@@ -66,19 +68,19 @@ GET /contracts
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contract-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contract-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
