@@ -5,34 +5,36 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3f58e1f5207fc3b4aebe2fdfb780735c0c5d209d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 06167bbb0eb55da409e807aeabc9bfaf8287cc9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032478"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531420"
 ---
-# <a name="filter-resource-type"></a><span data-ttu-id="b7c34-103">筛选器资源类型</span><span class="sxs-lookup"><span data-stu-id="b7c34-103">Filter resource type</span></span>
+# <a name="filter-resource-type"></a><span data-ttu-id="73af3-103">筛选器资源类型</span><span class="sxs-lookup"><span data-stu-id="73af3-103">Filter resource type</span></span>
 
-<span data-ttu-id="b7c34-104">管理表格列的筛选。</span><span class="sxs-lookup"><span data-stu-id="b7c34-104">Manages the filtering of a table's column.</span></span>
+<span data-ttu-id="73af3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="73af3-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="73af3-105">管理表格列的筛选。</span><span class="sxs-lookup"><span data-stu-id="73af3-105">Manages the filtering of a table's column.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="b7c34-105">方法</span><span class="sxs-lookup"><span data-stu-id="b7c34-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="73af3-106">Methods</span><span class="sxs-lookup"><span data-stu-id="73af3-106">Methods</span></span>
 
-| <span data-ttu-id="b7c34-106">方法</span><span class="sxs-lookup"><span data-stu-id="b7c34-106">Method</span></span>           | <span data-ttu-id="b7c34-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="b7c34-107">Return Type</span></span>    |<span data-ttu-id="b7c34-108">说明</span><span class="sxs-lookup"><span data-stu-id="b7c34-108">Description</span></span>|
+| <span data-ttu-id="73af3-107">方法</span><span class="sxs-lookup"><span data-stu-id="73af3-107">Method</span></span>           | <span data-ttu-id="73af3-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="73af3-108">Return Type</span></span>    |<span data-ttu-id="73af3-109">说明</span><span class="sxs-lookup"><span data-stu-id="73af3-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="b7c34-109">应用</span><span class="sxs-lookup"><span data-stu-id="b7c34-109">Apply</span></span>](../api/filter-apply.md)|<span data-ttu-id="b7c34-110">无</span><span class="sxs-lookup"><span data-stu-id="b7c34-110">None</span></span>|<span data-ttu-id="b7c34-111">在给定列中应用给定的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="b7c34-111">Apply the given filter criteria on the given column.</span></span>|
-|[<span data-ttu-id="b7c34-112">清除</span><span class="sxs-lookup"><span data-stu-id="b7c34-112">Clear</span></span>](../api/filter-clear.md)|<span data-ttu-id="b7c34-113">None</span><span class="sxs-lookup"><span data-stu-id="b7c34-113">None</span></span>|<span data-ttu-id="b7c34-114">清除给定列上的筛选器。</span><span class="sxs-lookup"><span data-stu-id="b7c34-114">Clear the filter on the given column.</span></span>|
+|[<span data-ttu-id="73af3-110">应用</span><span class="sxs-lookup"><span data-stu-id="73af3-110">Apply</span></span>](../api/filter-apply.md)|<span data-ttu-id="73af3-111">无</span><span class="sxs-lookup"><span data-stu-id="73af3-111">None</span></span>|<span data-ttu-id="73af3-112">在给定列中应用给定的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="73af3-112">Apply the given filter criteria on the given column.</span></span>|
+|[<span data-ttu-id="73af3-113">清除</span><span class="sxs-lookup"><span data-stu-id="73af3-113">Clear</span></span>](../api/filter-clear.md)|<span data-ttu-id="73af3-114">None</span><span class="sxs-lookup"><span data-stu-id="73af3-114">None</span></span>|<span data-ttu-id="73af3-115">清除给定列上的筛选器。</span><span class="sxs-lookup"><span data-stu-id="73af3-115">Clear the filter on the given column.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="b7c34-115">属性</span><span class="sxs-lookup"><span data-stu-id="b7c34-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="73af3-116">属性</span><span class="sxs-lookup"><span data-stu-id="73af3-116">Properties</span></span>
 
-| <span data-ttu-id="b7c34-116">名称</span><span class="sxs-lookup"><span data-stu-id="b7c34-116">Name</span></span> | <span data-ttu-id="b7c34-117">类型</span><span class="sxs-lookup"><span data-stu-id="b7c34-117">Type</span></span>   |<span data-ttu-id="b7c34-118">说明</span><span class="sxs-lookup"><span data-stu-id="b7c34-118">Description</span></span>|
+| <span data-ttu-id="73af3-117">名称</span><span class="sxs-lookup"><span data-stu-id="73af3-117">Name</span></span> | <span data-ttu-id="73af3-118">类型</span><span class="sxs-lookup"><span data-stu-id="73af3-118">Type</span></span>   |<span data-ttu-id="73af3-119">说明</span><span class="sxs-lookup"><span data-stu-id="73af3-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b7c34-119">条件</span><span class="sxs-lookup"><span data-stu-id="b7c34-119">criteria</span></span>|[<span data-ttu-id="b7c34-120">WorkbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="b7c34-120">WorkbookFilterCriteria</span></span>](filtercriteria.md)|<span data-ttu-id="b7c34-121">给定列上当前应用的筛选器。</span><span class="sxs-lookup"><span data-stu-id="b7c34-121">The currently applied filter on the given column.</span></span> <span data-ttu-id="b7c34-122">只读。</span><span class="sxs-lookup"><span data-stu-id="b7c34-122">Read-only.</span></span>|
+|<span data-ttu-id="73af3-120">条件</span><span class="sxs-lookup"><span data-stu-id="73af3-120">criteria</span></span>|[<span data-ttu-id="73af3-121">WorkbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="73af3-121">WorkbookFilterCriteria</span></span>](filtercriteria.md)|<span data-ttu-id="73af3-122">给定列上当前应用的筛选器。</span><span class="sxs-lookup"><span data-stu-id="73af3-122">The currently applied filter on the given column.</span></span> <span data-ttu-id="73af3-123">只读。</span><span class="sxs-lookup"><span data-stu-id="73af3-123">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b7c34-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b7c34-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="73af3-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="73af3-124">JSON representation</span></span>
 
-<span data-ttu-id="b7c34-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b7c34-124">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="73af3-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="73af3-125">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -7,23 +7,25 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 95a5b9785285cd6286cf9ebefd8d62fa900c3d9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fa13c414d45561110d1fa1310cfc913efec6118
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035481"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534068"
 ---
-# <a name="permission-resource-type"></a><span data-ttu-id="9356e-103">Permission 资源类型</span><span class="sxs-lookup"><span data-stu-id="9356e-103">Permission resource type</span></span>
+# <a name="permission-resource-type"></a><span data-ttu-id="83c08-103">Permission 资源类型</span><span class="sxs-lookup"><span data-stu-id="83c08-103">Permission resource type</span></span>
 
-<span data-ttu-id="9356e-104">**Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。</span><span class="sxs-lookup"><span data-stu-id="9356e-104">The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="83c08-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="83c08-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9356e-105">共享权限具有许多不同的形式。</span><span class="sxs-lookup"><span data-stu-id="9356e-105">Sharing permissions have a number of different forms.</span></span>
-<span data-ttu-id="9356e-106">**Permission** 资源通过资源上的 facet 表示这些不同的形式。</span><span class="sxs-lookup"><span data-stu-id="9356e-106">The **Permission** resource represents these different forms through facets on the resource.</span></span>
+<span data-ttu-id="83c08-105">**Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。</span><span class="sxs-lookup"><span data-stu-id="83c08-105">The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9356e-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9356e-107">JSON representation</span></span>
+<span data-ttu-id="83c08-106">共享权限具有许多不同的形式。</span><span class="sxs-lookup"><span data-stu-id="83c08-106">Sharing permissions have a number of different forms.</span></span>
+<span data-ttu-id="83c08-107">**Permission** 资源通过资源上的 facet 表示这些不同的形式。</span><span class="sxs-lookup"><span data-stu-id="83c08-107">The **Permission** resource represents these different forms through facets on the resource.</span></span>
 
-<span data-ttu-id="9356e-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9356e-108">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="83c08-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="83c08-108">JSON representation</span></span>
+
+<span data-ttu-id="83c08-109">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="83c08-109">Here is a JSON representation of the resource</span></span>
 
 <!--{
   "blockType": "resource",
@@ -50,41 +52,41 @@ ms.locfileid: "36035481"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="9356e-109">属性</span><span class="sxs-lookup"><span data-stu-id="9356e-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="83c08-110">属性</span><span class="sxs-lookup"><span data-stu-id="83c08-110">Properties</span></span>
 
-| <span data-ttu-id="9356e-110">属性</span><span class="sxs-lookup"><span data-stu-id="9356e-110">Property</span></span>      | <span data-ttu-id="9356e-111">类型</span><span class="sxs-lookup"><span data-stu-id="9356e-111">Type</span></span>                                      | <span data-ttu-id="9356e-112">说明</span><span class="sxs-lookup"><span data-stu-id="9356e-112">Description</span></span>
+| <span data-ttu-id="83c08-111">属性</span><span class="sxs-lookup"><span data-stu-id="83c08-111">Property</span></span>      | <span data-ttu-id="83c08-112">类型</span><span class="sxs-lookup"><span data-stu-id="83c08-112">Type</span></span>                                      | <span data-ttu-id="83c08-113">说明</span><span class="sxs-lookup"><span data-stu-id="83c08-113">Description</span></span>
 |:--------------|:------------------------------------------|:-----------------
-| <span data-ttu-id="9356e-113">id</span><span class="sxs-lookup"><span data-stu-id="9356e-113">id</span></span>            | <span data-ttu-id="9356e-114">String</span><span class="sxs-lookup"><span data-stu-id="9356e-114">String</span></span>                                    | <span data-ttu-id="9356e-p102">在项目的所有权限中，某个权限的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
-| <span data-ttu-id="9356e-117">grantedTo</span><span class="sxs-lookup"><span data-stu-id="9356e-117">grantedTo</span></span>     | [<span data-ttu-id="9356e-118">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="9356e-118">IdentitySet</span></span>](identityset.md)             | <span data-ttu-id="9356e-p103">对于用户类型权限，此权限的用户和应用程序的详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
-| <span data-ttu-id="9356e-121">邀请</span><span class="sxs-lookup"><span data-stu-id="9356e-121">invitation</span></span>    | <span data-ttu-id="9356e-122">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="9356e-122">[SharingInvitation][]</span></span>                     | <span data-ttu-id="9356e-p104">此权限的全部关联共享邀请的详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p104">Details of any associated sharing invitation for this permission. Read-only.</span></span>
-| <span data-ttu-id="9356e-125">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="9356e-125">inheritedFrom</span></span> | [<span data-ttu-id="9356e-126">ItemReference</span><span class="sxs-lookup"><span data-stu-id="9356e-126">ItemReference</span></span>](itemreference.md)         | <span data-ttu-id="9356e-p105">如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p105">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
-| <span data-ttu-id="9356e-129">link</span><span class="sxs-lookup"><span data-stu-id="9356e-129">link</span></span>          | <span data-ttu-id="9356e-130">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="9356e-130">[SharingLink][]</span></span>                           | <span data-ttu-id="9356e-p106">如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p106">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
-| <span data-ttu-id="9356e-133">roles</span><span class="sxs-lookup"><span data-stu-id="9356e-133">roles</span></span>         | <span data-ttu-id="9356e-134">Collection of String</span><span class="sxs-lookup"><span data-stu-id="9356e-134">Collection of String</span></span>                      | <span data-ttu-id="9356e-p107">权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p107">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
-| <span data-ttu-id="9356e-138">shareId</span><span class="sxs-lookup"><span data-stu-id="9356e-138">shareId</span></span>       | <span data-ttu-id="9356e-139">String</span><span class="sxs-lookup"><span data-stu-id="9356e-139">String</span></span>                                    | <span data-ttu-id="9356e-p108">可通过 [**shares** API](../api/shares-get.md) 访问此共享项目的唯一令牌。只读。</span><span class="sxs-lookup"><span data-stu-id="9356e-p108">A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.</span></span>
+| <span data-ttu-id="83c08-114">id</span><span class="sxs-lookup"><span data-stu-id="83c08-114">id</span></span>            | <span data-ttu-id="83c08-115">String</span><span class="sxs-lookup"><span data-stu-id="83c08-115">String</span></span>                                    | <span data-ttu-id="83c08-p102">在项目的所有权限中，某个权限的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
+| <span data-ttu-id="83c08-118">grantedTo</span><span class="sxs-lookup"><span data-stu-id="83c08-118">grantedTo</span></span>     | [<span data-ttu-id="83c08-119">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="83c08-119">IdentitySet</span></span>](identityset.md)             | <span data-ttu-id="83c08-p103">对于用户类型权限，此权限的用户和应用程序的详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
+| <span data-ttu-id="83c08-122">邀请</span><span class="sxs-lookup"><span data-stu-id="83c08-122">invitation</span></span>    | <span data-ttu-id="83c08-123">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="83c08-123">[SharingInvitation][]</span></span>                     | <span data-ttu-id="83c08-p104">此权限的全部关联共享邀请的详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p104">Details of any associated sharing invitation for this permission. Read-only.</span></span>
+| <span data-ttu-id="83c08-126">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="83c08-126">inheritedFrom</span></span> | [<span data-ttu-id="83c08-127">ItemReference</span><span class="sxs-lookup"><span data-stu-id="83c08-127">ItemReference</span></span>](itemreference.md)         | <span data-ttu-id="83c08-p105">如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p105">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
+| <span data-ttu-id="83c08-130">link</span><span class="sxs-lookup"><span data-stu-id="83c08-130">link</span></span>          | <span data-ttu-id="83c08-131">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="83c08-131">[SharingLink][]</span></span>                           | <span data-ttu-id="83c08-p106">如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p106">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
+| <span data-ttu-id="83c08-134">roles</span><span class="sxs-lookup"><span data-stu-id="83c08-134">roles</span></span>         | <span data-ttu-id="83c08-135">Collection of String</span><span class="sxs-lookup"><span data-stu-id="83c08-135">Collection of String</span></span>                      | <span data-ttu-id="83c08-p107">权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p107">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
+| <span data-ttu-id="83c08-139">shareId</span><span class="sxs-lookup"><span data-stu-id="83c08-139">shareId</span></span>       | <span data-ttu-id="83c08-140">String</span><span class="sxs-lookup"><span data-stu-id="83c08-140">String</span></span>                                    | <span data-ttu-id="83c08-p108">可通过 [**shares** API](../api/shares-get.md) 访问此共享项目的唯一令牌。只读。</span><span class="sxs-lookup"><span data-stu-id="83c08-p108">A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.</span></span>
 
-<span data-ttu-id="9356e-142">permission 资源使用 _Facet_ 说明此资源表示的权限种类。</span><span class="sxs-lookup"><span data-stu-id="9356e-142">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
+<span data-ttu-id="83c08-143">permission 资源使用 _Facet_ 说明此资源表示的权限种类。</span><span class="sxs-lookup"><span data-stu-id="83c08-143">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
 
-<span data-ttu-id="9356e-p109">具有[**链接**] [SharingLink] facet 的权限表示在该项上创建的共享链接。共享链接包含一个唯一令牌，可以为具有上述链接的任何人提供对项目的访问权限。</span><span class="sxs-lookup"><span data-stu-id="9356e-p109">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. Sharing links contain a unique token that provides access to the item for anyone with the link.</span></span>
+<span data-ttu-id="83c08-p109">具有[**链接**] [SharingLink] facet 的权限表示在该项上创建的共享链接。共享链接包含一个唯一令牌，可以为具有上述链接的任何人提供对项目的访问权限。</span><span class="sxs-lookup"><span data-stu-id="83c08-p109">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. Sharing links contain a unique token that provides access to the item for anyone with the link.</span></span>
 
-<span data-ttu-id="9356e-145">具有 [**Invitation**][SharingInvitation] Facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。</span><span class="sxs-lookup"><span data-stu-id="9356e-145">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
+<span data-ttu-id="83c08-146">具有 [**Invitation**][SharingInvitation] Facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。</span><span class="sxs-lookup"><span data-stu-id="83c08-146">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 
-## <a name="roles-enumeration"></a><span data-ttu-id="9356e-148">角色枚举</span><span class="sxs-lookup"><span data-stu-id="9356e-148">Roles enumeration</span></span>
+## <a name="roles-enumeration"></a><span data-ttu-id="83c08-149">角色枚举</span><span class="sxs-lookup"><span data-stu-id="83c08-149">Roles enumeration</span></span>
 
-| <span data-ttu-id="9356e-149">角色</span><span class="sxs-lookup"><span data-stu-id="9356e-149">Role</span></span>        | <span data-ttu-id="9356e-150">详细信息</span><span class="sxs-lookup"><span data-stu-id="9356e-150">Details</span></span>                                                                        |
+| <span data-ttu-id="83c08-150">角色</span><span class="sxs-lookup"><span data-stu-id="83c08-150">Role</span></span>        | <span data-ttu-id="83c08-151">详细信息</span><span class="sxs-lookup"><span data-stu-id="83c08-151">Details</span></span>                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
-| `read`      | <span data-ttu-id="9356e-151">提供读取项的元数据和内容的功能。</span><span class="sxs-lookup"><span data-stu-id="9356e-151">Provides the ability to read the metadata and contents of the item.</span></span>            |
-| `write`     | <span data-ttu-id="9356e-152">提供读取并修改项的元数据和内容的功能。</span><span class="sxs-lookup"><span data-stu-id="9356e-152">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
-| `sp.owner`  | <span data-ttu-id="9356e-153">对于 SharePoint 和 OneDrive for Business，这表示所有者角色。</span><span class="sxs-lookup"><span data-stu-id="9356e-153">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
-| `sp.member` | <span data-ttu-id="9356e-154">对于 SharePoint 和 OneDrive for Business，这表示成员角色。</span><span class="sxs-lookup"><span data-stu-id="9356e-154">For SharePoint and OneDrive for Business this represents the member role.</span></span>      |
+| `read`      | <span data-ttu-id="83c08-152">提供读取项的元数据和内容的功能。</span><span class="sxs-lookup"><span data-stu-id="83c08-152">Provides the ability to read the metadata and contents of the item.</span></span>            |
+| `write`     | <span data-ttu-id="83c08-153">提供读取并修改项的元数据和内容的功能。</span><span class="sxs-lookup"><span data-stu-id="83c08-153">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
+| `sp.owner`  | <span data-ttu-id="83c08-154">对于 SharePoint 和 OneDrive for Business，这表示所有者角色。</span><span class="sxs-lookup"><span data-stu-id="83c08-154">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
+| `sp.member` | <span data-ttu-id="83c08-155">对于 SharePoint 和 OneDrive for Business，这表示成员角色。</span><span class="sxs-lookup"><span data-stu-id="83c08-155">For SharePoint and OneDrive for Business this represents the member role.</span></span>      |
 
-## <a name="sharing-links"></a><span data-ttu-id="9356e-155">共享链接</span><span class="sxs-lookup"><span data-stu-id="9356e-155">Sharing links</span></span>
-<span data-ttu-id="9356e-p110">最常见的权限类型是共享链接。 共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。</span><span class="sxs-lookup"><span data-stu-id="9356e-p110">The most common type of permissions are sharing links. Sharing links provide a unique URL that includes both the resource being shared and an authentication token that provides access to the resource. Users don't need to sign-in to access the content shared with a sharing link. Users can share a link that gives read-only access to the content or writable access to the content.</span></span>
+## <a name="sharing-links"></a><span data-ttu-id="83c08-156">共享链接</span><span class="sxs-lookup"><span data-stu-id="83c08-156">Sharing links</span></span>
+<span data-ttu-id="83c08-p110">最常见的权限类型是共享链接。 共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。</span><span class="sxs-lookup"><span data-stu-id="83c08-p110">The most common type of permissions are sharing links. Sharing links provide a unique URL that includes both the resource being shared and an authentication token that provides access to the resource. Users don't need to sign-in to access the content shared with a sharing link. Users can share a link that gives read-only access to the content or writable access to the content.</span></span>
 
-### <a name="view-link"></a><span data-ttu-id="9356e-160">查看链接</span><span class="sxs-lookup"><span data-stu-id="9356e-160">View Link</span></span>
-<span data-ttu-id="9356e-161">查看链接提供对项的只读权限。</span><span class="sxs-lookup"><span data-stu-id="9356e-161">A view link provides read-only access to an item.</span></span>
+### <a name="view-link"></a><span data-ttu-id="83c08-161">查看链接</span><span class="sxs-lookup"><span data-stu-id="83c08-161">View Link</span></span>
+<span data-ttu-id="83c08-162">查看链接提供对项的只读权限。</span><span class="sxs-lookup"><span data-stu-id="83c08-162">A view link provides read-only access to an item.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 ```json
@@ -100,8 +102,8 @@ ms.locfileid: "36035481"
 }
 ```
 
-### <a name="edit-link"></a><span data-ttu-id="9356e-162">编辑链接</span><span class="sxs-lookup"><span data-stu-id="9356e-162">Edit link</span></span>
-<span data-ttu-id="9356e-163">编辑链接提供对项的读取和写入权限。</span><span class="sxs-lookup"><span data-stu-id="9356e-163">An edit link provides read and write access to an item.</span></span>
+### <a name="edit-link"></a><span data-ttu-id="83c08-163">编辑链接</span><span class="sxs-lookup"><span data-stu-id="83c08-163">Edit link</span></span>
+<span data-ttu-id="83c08-164">编辑链接提供对项的读取和写入权限。</span><span class="sxs-lookup"><span data-stu-id="83c08-164">An edit link provides read and write access to an item.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 ```json
@@ -117,11 +119,11 @@ ms.locfileid: "36035481"
 }
 ```
 
-### <a name="sharing-invitation"></a><span data-ttu-id="9356e-164">共享邀请</span><span class="sxs-lookup"><span data-stu-id="9356e-164">Sharing Invitation</span></span>
-<span data-ttu-id="9356e-p111">除了创建共享链接之外，还可以通过电子邮件地址邀请用户。 在此方案中，权限创建的是发送到用户电子邮件地址的邀请。</span><span class="sxs-lookup"><span data-stu-id="9356e-p111">In addition to creating sharing links, a user can be invited by e-mail address. In this scenario the permission creates an invitation that is sent to the user's email.</span></span>
+### <a name="sharing-invitation"></a><span data-ttu-id="83c08-165">共享邀请</span><span class="sxs-lookup"><span data-stu-id="83c08-165">Sharing Invitation</span></span>
+<span data-ttu-id="83c08-p111">除了创建共享链接之外，还可以通过电子邮件地址邀请用户。 在此方案中，权限创建的是发送到用户电子邮件地址的邀请。</span><span class="sxs-lookup"><span data-stu-id="83c08-p111">In addition to creating sharing links, a user can be invited by e-mail address. In this scenario the permission creates an invitation that is sent to the user's email.</span></span>
 
-#### <a name="invitation-to-an-email-address"></a><span data-ttu-id="9356e-167">发送到电子邮件地址的邀请</span><span class="sxs-lookup"><span data-stu-id="9356e-167">Invitation to an email address</span></span>
-<span data-ttu-id="9356e-168">如果权限是通过电子邮件地址发送给没有匹配帐户的接收者，那么在用户首次单击链接并登录以兑换邀请前，可能无法设置 **grantedTo** 属性。</span><span class="sxs-lookup"><span data-stu-id="9356e-168">If the permission was sent via an email address to a recipient who does not have a matching account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time a user clicks the link and signs in.</span></span>
+#### <a name="invitation-to-an-email-address"></a><span data-ttu-id="83c08-168">发送到电子邮件地址的邀请</span><span class="sxs-lookup"><span data-stu-id="83c08-168">Invitation to an email address</span></span>
+<span data-ttu-id="83c08-169">如果权限是通过电子邮件地址发送给没有匹配帐户的接收者，那么在用户首次单击链接并登录以兑换邀请前，可能无法设置 **grantedTo** 属性。</span><span class="sxs-lookup"><span data-stu-id="83c08-169">If the permission was sent via an email address to a recipient who does not have a matching account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time a user clicks the link and signs in.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 ```json
@@ -136,7 +138,7 @@ ms.locfileid: "36035481"
 }
 ```
 
-<span data-ttu-id="9356e-169">在用户兑换共享邀请后，**grantedTo** 属性将包含兑换权限的帐户的相关信息：</span><span class="sxs-lookup"><span data-stu-id="9356e-169">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
+<span data-ttu-id="83c08-170">在用户兑换共享邀请后，**grantedTo** 属性将包含兑换权限的帐户的相关信息：</span><span class="sxs-lookup"><span data-stu-id="83c08-170">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 ```json
@@ -157,20 +159,20 @@ ms.locfileid: "36035481"
 }
 ```
 
-## <a name="methods"></a><span data-ttu-id="9356e-170">方法</span><span class="sxs-lookup"><span data-stu-id="9356e-170">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="83c08-171">方法</span><span class="sxs-lookup"><span data-stu-id="83c08-171">Methods</span></span>
 
-| <span data-ttu-id="9356e-171">方法</span><span class="sxs-lookup"><span data-stu-id="9356e-171">Method</span></span>                                                   | <span data-ttu-id="9356e-172">REST 路径</span><span class="sxs-lookup"><span data-stu-id="9356e-172">REST Path</span></span>
+| <span data-ttu-id="83c08-172">方法</span><span class="sxs-lookup"><span data-stu-id="83c08-172">Method</span></span>                                                   | <span data-ttu-id="83c08-173">REST 路径</span><span class="sxs-lookup"><span data-stu-id="83c08-173">REST Path</span></span>
 |:---------------------------------------------------------|:-----------------------
-| [<span data-ttu-id="9356e-173">列出权限</span><span class="sxs-lookup"><span data-stu-id="9356e-173">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [<span data-ttu-id="9356e-174">获取权限</span><span class="sxs-lookup"><span data-stu-id="9356e-174">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [<span data-ttu-id="9356e-175">添加</span><span class="sxs-lookup"><span data-stu-id="9356e-175">Add</span></span>](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [<span data-ttu-id="9356e-176">更新</span><span class="sxs-lookup"><span data-stu-id="9356e-176">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [<span data-ttu-id="9356e-177">删除</span><span class="sxs-lookup"><span data-stu-id="9356e-177">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="83c08-174">列出权限</span><span class="sxs-lookup"><span data-stu-id="83c08-174">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [<span data-ttu-id="83c08-175">获取权限</span><span class="sxs-lookup"><span data-stu-id="83c08-175">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="83c08-176">添加</span><span class="sxs-lookup"><span data-stu-id="83c08-176">Add</span></span>](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [<span data-ttu-id="83c08-177">更新</span><span class="sxs-lookup"><span data-stu-id="83c08-177">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="83c08-178">删除</span><span class="sxs-lookup"><span data-stu-id="83c08-178">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
-## <a name="remarks"></a><span data-ttu-id="9356e-178">注解</span><span class="sxs-lookup"><span data-stu-id="9356e-178">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="83c08-179">注解</span><span class="sxs-lookup"><span data-stu-id="83c08-179">Remarks</span></span>
 
-<span data-ttu-id="9356e-179">OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。</span><span class="sxs-lookup"><span data-stu-id="9356e-179">OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
+<span data-ttu-id="83c08-180">OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。</span><span class="sxs-lookup"><span data-stu-id="83c08-180">OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

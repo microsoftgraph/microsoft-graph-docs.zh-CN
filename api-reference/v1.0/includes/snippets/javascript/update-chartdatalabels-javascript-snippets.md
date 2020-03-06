@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 047f400c76f70666b44355abf20356dee758d4f1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2865322a7a1bd729244ba09c4d52a9e789614b6b
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737344"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636889"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const workbookChartDataLabels = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
-    .update({workbookChartDataLabels : workbookChartDataLabels});
+    .update(workbookChartDataLabels);
 
 ```

@@ -6,28 +6,30 @@ description: RestoreAction 对象提供有关还原项的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1395ee284fa2f3ca16371c8282124c07c9b4bd73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6b186e7e9fdc620fa59b7c5445d10296f80e4a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533829"
 ---
-# <a name="restoreaction-resource-type"></a><span data-ttu-id="cd7fe-103">restoreAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="cd7fe-103">restoreAction resource type</span></span>
+# <a name="restoreaction-resource-type"></a><span data-ttu-id="62391-103">restoreAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="62391-103">restoreAction resource type</span></span>
 
-<span data-ttu-id="cd7fe-104">[**ItemActivity**][activity]上的**restoreAction**资源是否存在指示活动已还原项目。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-104">The presence of the **restoreAction** resource on an [**itemActivity**][activity] indicates that the activity restored an item.</span></span>
+<span data-ttu-id="62391-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="62391-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cd7fe-105">**注意**: 此资源当前为空。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-105">**Note**: This resource is currently empty.</span></span> <span data-ttu-id="cd7fe-106">将来可能会使用其他属性填充它。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-106">In the future, it might be populated with additional properties.</span></span>
+<span data-ttu-id="62391-105">[**ItemActivity**][activity]上的**restoreAction**资源是否存在指示活动已还原项目。</span><span class="sxs-lookup"><span data-stu-id="62391-105">The presence of the **restoreAction** resource on an [**itemActivity**][activity] indicates that the activity restored an item.</span></span>
 
-><span data-ttu-id="cd7fe-107">**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-107">**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="62391-106">**注意**：此资源当前为空。</span><span class="sxs-lookup"><span data-stu-id="62391-106">**Note**: This resource is currently empty.</span></span> <span data-ttu-id="62391-107">将来可能会使用其他属性填充它。</span><span class="sxs-lookup"><span data-stu-id="62391-107">In the future, it might be populated with additional properties.</span></span>
+
+><span data-ttu-id="62391-108">**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="62391-108">**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="properties"></a><span data-ttu-id="cd7fe-108">属性</span><span class="sxs-lookup"><span data-stu-id="cd7fe-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="62391-109">属性</span><span class="sxs-lookup"><span data-stu-id="62391-109">Properties</span></span>
 
-<span data-ttu-id="cd7fe-109">无。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-109">None.</span></span> <span data-ttu-id="cd7fe-110">此 Facet 的值可以为 null，也可以不为 null，但不含任何属性。</span><span class="sxs-lookup"><span data-stu-id="cd7fe-110">This facet is a null or not-null value and contains no properties.</span></span>
+<span data-ttu-id="62391-110">无。</span><span class="sxs-lookup"><span data-stu-id="62391-110">None.</span></span> <span data-ttu-id="62391-111">此 Facet 的值可以为 null，也可以不为 null，但不含任何属性。</span><span class="sxs-lookup"><span data-stu-id="62391-111">This facet is a null or not-null value and contains no properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cd7fe-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cd7fe-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="62391-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="62391-112">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",

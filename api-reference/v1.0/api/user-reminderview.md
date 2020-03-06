@@ -5,59 +5,60 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23e34125fa654f8e088f9be60253f8345abdf69c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b02143e6317a10aea9b101e4f6d6c62eb3cc5a58
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727395"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508945"
 ---
-# <a name="user-reminderview"></a><span data-ttu-id="eca8e-103">user: reminderView</span><span class="sxs-lookup"><span data-stu-id="eca8e-103">user: reminderView</span></span>
-<span data-ttu-id="eca8e-104">在指定的开始时间和结束时间内, 返回用户日历中的事件提醒列表。</span><span class="sxs-lookup"><span data-stu-id="eca8e-104">Return a list of event reminders in a user calendar within the specified start and end times.</span></span> 
+# <a name="user-reminderview"></a><span data-ttu-id="855a4-103">user: reminderView</span><span class="sxs-lookup"><span data-stu-id="855a4-103">user: reminderView</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eca8e-105">权限</span><span class="sxs-lookup"><span data-stu-id="eca8e-105">Permissions</span></span>
-<span data-ttu-id="eca8e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="855a4-104">命名空间： microsoft. graph 返回指定开始时间和结束时间内的用户日历中的事件提醒列表。</span><span class="sxs-lookup"><span data-stu-id="855a4-104">Namespace: microsoft.graph Return a list of event reminders in a user calendar within the specified start and end times.</span></span> 
 
-|<span data-ttu-id="eca8e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="eca8e-108">Permission type</span></span>      | <span data-ttu-id="eca8e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="eca8e-109">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="855a4-105">权限</span><span class="sxs-lookup"><span data-stu-id="855a4-105">Permissions</span></span>
+<span data-ttu-id="855a4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="855a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="855a4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="855a4-108">Permission type</span></span>      | <span data-ttu-id="855a4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="855a4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eca8e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="eca8e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eca8e-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca8e-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="eca8e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="eca8e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eca8e-113">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca8e-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="eca8e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="eca8e-114">Application</span></span> | <span data-ttu-id="eca8e-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca8e-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="855a4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="855a4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="855a4-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="855a4-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="855a4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="855a4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="855a4-113">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="855a4-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="855a4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="855a4-114">Application</span></span> | <span data-ttu-id="855a4-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="855a4-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="eca8e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="eca8e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="855a4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="855a4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="eca8e-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="eca8e-117">Function parameters</span></span>
-<span data-ttu-id="eca8e-118">在请求 URL 中，提供以下包含值的函数参数。</span><span class="sxs-lookup"><span data-stu-id="eca8e-118">In the request URL, provide the following function parameters with values.</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="855a4-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="855a4-117">Function parameters</span></span>
+<span data-ttu-id="855a4-118">在请求 URL 中，提供以下包含值的函数参数。</span><span class="sxs-lookup"><span data-stu-id="855a4-118">In the request URL, provide the following function parameters with values.</span></span>
 
-| <span data-ttu-id="eca8e-119">参数</span><span class="sxs-lookup"><span data-stu-id="eca8e-119">Parameter</span></span>    | <span data-ttu-id="eca8e-120">类型</span><span class="sxs-lookup"><span data-stu-id="eca8e-120">Type</span></span>   |<span data-ttu-id="eca8e-121">说明</span><span class="sxs-lookup"><span data-stu-id="eca8e-121">Description</span></span>|
+| <span data-ttu-id="855a4-119">参数</span><span class="sxs-lookup"><span data-stu-id="855a4-119">Parameter</span></span>    | <span data-ttu-id="855a4-120">类型</span><span class="sxs-lookup"><span data-stu-id="855a4-120">Type</span></span>   |<span data-ttu-id="855a4-121">说明</span><span class="sxs-lookup"><span data-stu-id="855a4-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="eca8e-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="eca8e-122">startDateTime</span></span>|<span data-ttu-id="eca8e-123">String</span><span class="sxs-lookup"><span data-stu-id="eca8e-123">String</span></span>|<span data-ttu-id="eca8e-p102">事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p102">The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="eca8e-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="eca8e-126">endDateTime</span></span>|<span data-ttu-id="eca8e-127">String</span><span class="sxs-lookup"><span data-stu-id="eca8e-127">String</span></span>|<span data-ttu-id="eca8e-p103">事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p103">The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="855a4-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="855a4-122">startDateTime</span></span>|<span data-ttu-id="855a4-123">String</span><span class="sxs-lookup"><span data-stu-id="855a4-123">String</span></span>|<span data-ttu-id="855a4-p102">事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="855a4-p102">The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="855a4-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="855a4-126">endDateTime</span></span>|<span data-ttu-id="855a4-127">String</span><span class="sxs-lookup"><span data-stu-id="855a4-127">String</span></span>|<span data-ttu-id="855a4-p103">事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="855a4-p103">The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="eca8e-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="eca8e-130">Request headers</span></span>
-| <span data-ttu-id="eca8e-131">标头</span><span class="sxs-lookup"><span data-stu-id="eca8e-131">Header</span></span>       | <span data-ttu-id="eca8e-132">值</span><span class="sxs-lookup"><span data-stu-id="eca8e-132">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="855a4-130">请求头</span><span class="sxs-lookup"><span data-stu-id="855a4-130">Request headers</span></span>
+| <span data-ttu-id="855a4-131">标头</span><span class="sxs-lookup"><span data-stu-id="855a4-131">Header</span></span>       | <span data-ttu-id="855a4-132">值</span><span class="sxs-lookup"><span data-stu-id="855a4-132">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="eca8e-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="eca8e-133">Authorization</span></span>  | <span data-ttu-id="eca8e-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="eca8e-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="eca8e-136">Content-Type</span></span>   | <span data-ttu-id="eca8e-137">application/json</span><span class="sxs-lookup"><span data-stu-id="eca8e-137">application/json</span></span> |
-| <span data-ttu-id="eca8e-138">Prefer</span><span class="sxs-lookup"><span data-stu-id="eca8e-138">Prefer</span></span> | <span data-ttu-id="eca8e-p105">{Time-zone}。可选，如果缺省，则采用 UTC。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p105">{Time-zone}. Optional, UTC assumed if absent.</span></span>|
+| <span data-ttu-id="855a4-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="855a4-133">Authorization</span></span>  | <span data-ttu-id="855a4-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="855a4-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="855a4-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="855a4-136">Content-Type</span></span>   | <span data-ttu-id="855a4-137">application/json</span><span class="sxs-lookup"><span data-stu-id="855a4-137">application/json</span></span> |
+| <span data-ttu-id="855a4-138">Prefer</span><span class="sxs-lookup"><span data-stu-id="855a4-138">Prefer</span></span> | <span data-ttu-id="855a4-p105">{Time-zone}。可选，如果缺省，则采用 UTC。</span><span class="sxs-lookup"><span data-stu-id="855a4-p105">{Time-zone}. Optional, UTC assumed if absent.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="eca8e-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="eca8e-141">Request body</span></span>
-<span data-ttu-id="eca8e-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="eca8e-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="855a4-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="855a4-141">Request body</span></span>
+<span data-ttu-id="855a4-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="855a4-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eca8e-143">响应</span><span class="sxs-lookup"><span data-stu-id="eca8e-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="855a4-143">响应</span><span class="sxs-lookup"><span data-stu-id="855a4-143">Response</span></span>
 
-<span data-ttu-id="eca8e-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [reminder](../resources/reminder.md) 集合对象。</span><span class="sxs-lookup"><span data-stu-id="eca8e-144">If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.</span></span>
+<span data-ttu-id="855a4-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [reminder](../resources/reminder.md) 集合对象。</span><span class="sxs-lookup"><span data-stu-id="855a4-144">If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eca8e-145">示例</span><span class="sxs-lookup"><span data-stu-id="eca8e-145">Example</span></span>
-<span data-ttu-id="eca8e-146">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="eca8e-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="eca8e-147">请求</span><span class="sxs-lookup"><span data-stu-id="eca8e-147">Request</span></span>
-<span data-ttu-id="eca8e-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="eca8e-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="855a4-145">示例</span><span class="sxs-lookup"><span data-stu-id="855a4-145">Example</span></span>
+<span data-ttu-id="855a4-146">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="855a4-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="855a4-147">请求</span><span class="sxs-lookup"><span data-stu-id="855a4-147">Request</span></span>
+<span data-ttu-id="855a4-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="855a4-148">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="eca8e-149">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="eca8e-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="855a4-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="855a4-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reminderview"
@@ -65,27 +66,27 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="eca8e-150">C#</span><span class="sxs-lookup"><span data-stu-id="eca8e-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="855a4-150">C#</span><span class="sxs-lookup"><span data-stu-id="855a4-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reminderview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="eca8e-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eca8e-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="855a4-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="855a4-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reminderview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="eca8e-152">目标-C</span><span class="sxs-lookup"><span data-stu-id="eca8e-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="855a4-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="855a4-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reminderview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="eca8e-153">Java</span><span class="sxs-lookup"><span data-stu-id="eca8e-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="855a4-153">Java</span><span class="sxs-lookup"><span data-stu-id="855a4-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-reminderview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="eca8e-154">响应</span><span class="sxs-lookup"><span data-stu-id="eca8e-154">Response</span></span>
-<span data-ttu-id="eca8e-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="eca8e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="855a4-154">响应</span><span class="sxs-lookup"><span data-stu-id="855a4-154">Response</span></span>
+<span data-ttu-id="855a4-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="855a4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e27e08fee7545f956f4f4ba1575346a0eb4351
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 851977e182b748d80bea5b7a4c9e3b0ff186d54e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37365374"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514110"
 ---
-# <a name="list-windows10generalconfigurations"></a><span data-ttu-id="3319e-103">列出 windows10GeneralConfigurations</span><span class="sxs-lookup"><span data-stu-id="3319e-103">List windows10GeneralConfigurations</span></span>
+# <a name="list-windows10generalconfigurations"></a><span data-ttu-id="cbc78-103">列出 windows10GeneralConfigurations</span><span class="sxs-lookup"><span data-stu-id="cbc78-103">List windows10GeneralConfigurations</span></span>
 
-> <span data-ttu-id="3319e-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3319e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="cbc78-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbc78-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3319e-105">列出 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3319e-105">List properties and relationships of the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects.</span></span>
+> <span data-ttu-id="cbc78-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cbc78-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3319e-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="3319e-106">Prerequisites</span></span>
-<span data-ttu-id="3319e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3319e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbc78-106">列出 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="cbc78-106">List properties and relationships of the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects.</span></span>
 
-|<span data-ttu-id="3319e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3319e-109">Permission type</span></span>|<span data-ttu-id="3319e-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3319e-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="cbc78-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="cbc78-107">Prerequisites</span></span>
+<span data-ttu-id="cbc78-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cbc78-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="cbc78-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="cbc78-110">Permission type</span></span>|<span data-ttu-id="cbc78-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="cbc78-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3319e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3319e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3319e-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="3319e-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="3319e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3319e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3319e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3319e-114">Not supported.</span></span>|
-|<span data-ttu-id="3319e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3319e-115">Application</span></span>|<span data-ttu-id="3319e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3319e-116">Not supported.</span></span>|
+|<span data-ttu-id="cbc78-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cbc78-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cbc78-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="cbc78-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="cbc78-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cbc78-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cbc78-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cbc78-115">Not supported.</span></span>|
+|<span data-ttu-id="cbc78-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="cbc78-116">Application</span></span>|<span data-ttu-id="cbc78-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="cbc78-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3319e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3319e-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbc78-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cbc78-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,28 +38,28 @@ ms.locfileid: "37365374"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3319e-118">请求头</span><span class="sxs-lookup"><span data-stu-id="3319e-118">Request headers</span></span>
-|<span data-ttu-id="3319e-119">标头</span><span class="sxs-lookup"><span data-stu-id="3319e-119">Header</span></span>|<span data-ttu-id="3319e-120">值</span><span class="sxs-lookup"><span data-stu-id="3319e-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cbc78-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cbc78-119">Request headers</span></span>
+|<span data-ttu-id="cbc78-120">标头</span><span class="sxs-lookup"><span data-stu-id="cbc78-120">Header</span></span>|<span data-ttu-id="cbc78-121">值</span><span class="sxs-lookup"><span data-stu-id="cbc78-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3319e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3319e-121">Authorization</span></span>|<span data-ttu-id="3319e-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3319e-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3319e-123">接受</span><span class="sxs-lookup"><span data-stu-id="3319e-123">Accept</span></span>|<span data-ttu-id="3319e-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3319e-124">application/json</span></span>|
+|<span data-ttu-id="cbc78-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbc78-122">Authorization</span></span>|<span data-ttu-id="cbc78-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cbc78-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cbc78-124">接受</span><span class="sxs-lookup"><span data-stu-id="cbc78-124">Accept</span></span>|<span data-ttu-id="cbc78-125">application/json</span><span class="sxs-lookup"><span data-stu-id="cbc78-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3319e-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="3319e-125">Request body</span></span>
-<span data-ttu-id="3319e-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3319e-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbc78-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cbc78-126">Request body</span></span>
+<span data-ttu-id="cbc78-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cbc78-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3319e-127">响应</span><span class="sxs-lookup"><span data-stu-id="3319e-127">Response</span></span>
-<span data-ttu-id="3319e-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3319e-128">If successful, this method returns a `200 OK` response code and a collection of [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cbc78-128">响应</span><span class="sxs-lookup"><span data-stu-id="cbc78-128">Response</span></span>
+<span data-ttu-id="cbc78-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cbc78-129">If successful, this method returns a `200 OK` response code and a collection of [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3319e-129">示例</span><span class="sxs-lookup"><span data-stu-id="3319e-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cbc78-130">示例</span><span class="sxs-lookup"><span data-stu-id="cbc78-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3319e-130">请求</span><span class="sxs-lookup"><span data-stu-id="3319e-130">Request</span></span>
-<span data-ttu-id="3319e-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3319e-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cbc78-131">请求</span><span class="sxs-lookup"><span data-stu-id="cbc78-131">Request</span></span>
+<span data-ttu-id="cbc78-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cbc78-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="3319e-132">响应</span><span class="sxs-lookup"><span data-stu-id="3319e-132">Response</span></span>
-<span data-ttu-id="3319e-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3319e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cbc78-133">响应</span><span class="sxs-lookup"><span data-stu-id="cbc78-133">Response</span></span>
+<span data-ttu-id="cbc78-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cbc78-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

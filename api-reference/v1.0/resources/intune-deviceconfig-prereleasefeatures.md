@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa02678bcbed5111b8c9b67163e569a2f4b6fc1f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 92b2f8e438b0d0aea50f7268e4d19bfc0b6b0c82
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530549"
 ---
-# <a name="prereleasefeatures-enum-type"></a><span data-ttu-id="ae261-103">prereleaseFeatures 枚举类型</span><span class="sxs-lookup"><span data-stu-id="ae261-103">prereleaseFeatures enum type</span></span>
+# <a name="prereleasefeatures-enum-type"></a><span data-ttu-id="07630-103">prereleaseFeatures 枚举类型</span><span class="sxs-lookup"><span data-stu-id="07630-103">prereleaseFeatures enum type</span></span>
 
-> <span data-ttu-id="ae261-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ae261-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="07630-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="07630-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ae261-105">预发行版功能的可能值。</span><span class="sxs-lookup"><span data-stu-id="ae261-105">Possible values for pre-release features.</span></span>
+> <span data-ttu-id="07630-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="07630-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ae261-106">成员</span><span class="sxs-lookup"><span data-stu-id="ae261-106">Members</span></span>
-|<span data-ttu-id="ae261-107">成员</span><span class="sxs-lookup"><span data-stu-id="ae261-107">Member</span></span>|<span data-ttu-id="ae261-108">值</span><span class="sxs-lookup"><span data-stu-id="ae261-108">Value</span></span>|<span data-ttu-id="ae261-109">说明</span><span class="sxs-lookup"><span data-stu-id="ae261-109">Description</span></span>|
+<span data-ttu-id="07630-106">预发行版功能的可能值。</span><span class="sxs-lookup"><span data-stu-id="07630-106">Possible values for pre-release features.</span></span>
+
+## <a name="members"></a><span data-ttu-id="07630-107">成员</span><span class="sxs-lookup"><span data-stu-id="07630-107">Members</span></span>
+|<span data-ttu-id="07630-108">成员</span><span class="sxs-lookup"><span data-stu-id="07630-108">Member</span></span>|<span data-ttu-id="07630-109">值</span><span class="sxs-lookup"><span data-stu-id="07630-109">Value</span></span>|<span data-ttu-id="07630-110">说明</span><span class="sxs-lookup"><span data-stu-id="07630-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ae261-110">定制</span><span class="sxs-lookup"><span data-stu-id="ae261-110">userDefined</span></span>|<span data-ttu-id="ae261-111">0</span><span class="sxs-lookup"><span data-stu-id="ae261-111">0</span></span>|<span data-ttu-id="ae261-112">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="ae261-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="ae261-113">settingsOnly</span><span class="sxs-lookup"><span data-stu-id="ae261-113">settingsOnly</span></span>|<span data-ttu-id="ae261-114">1</span><span class="sxs-lookup"><span data-stu-id="ae261-114">1</span></span>|<span data-ttu-id="ae261-115">仅设置预发布功能。</span><span class="sxs-lookup"><span data-stu-id="ae261-115">Settings only pre-release features.</span></span>|
-|<span data-ttu-id="ae261-116">settingsAndExperimentations</span><span class="sxs-lookup"><span data-stu-id="ae261-116">settingsAndExperimentations</span></span>|<span data-ttu-id="ae261-117">双面</span><span class="sxs-lookup"><span data-stu-id="ae261-117">2</span></span>|<span data-ttu-id="ae261-118">设置和 experimentations 预发布功能。</span><span class="sxs-lookup"><span data-stu-id="ae261-118">Settings and experimentations pre-release features.</span></span>|
-|<span data-ttu-id="ae261-119">notAllowed</span><span class="sxs-lookup"><span data-stu-id="ae261-119">notAllowed</span></span>|<span data-ttu-id="ae261-120">第三章</span><span class="sxs-lookup"><span data-stu-id="ae261-120">3</span></span>|<span data-ttu-id="ae261-121">不允许使用预发布功能。</span><span class="sxs-lookup"><span data-stu-id="ae261-121">Pre-release features not allowed.</span></span>|
+|<span data-ttu-id="07630-111">定制</span><span class="sxs-lookup"><span data-stu-id="07630-111">userDefined</span></span>|<span data-ttu-id="07630-112">0</span><span class="sxs-lookup"><span data-stu-id="07630-112">0</span></span>|<span data-ttu-id="07630-113">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="07630-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="07630-114">settingsOnly</span><span class="sxs-lookup"><span data-stu-id="07630-114">settingsOnly</span></span>|<span data-ttu-id="07630-115">1 </span><span class="sxs-lookup"><span data-stu-id="07630-115">1</span></span>|<span data-ttu-id="07630-116">仅设置预发布功能。</span><span class="sxs-lookup"><span data-stu-id="07630-116">Settings only pre-release features.</span></span>|
+|<span data-ttu-id="07630-117">settingsAndExperimentations</span><span class="sxs-lookup"><span data-stu-id="07630-117">settingsAndExperimentations</span></span>|<span data-ttu-id="07630-118">2 </span><span class="sxs-lookup"><span data-stu-id="07630-118">2</span></span>|<span data-ttu-id="07630-119">设置和 experimentations 预发布功能。</span><span class="sxs-lookup"><span data-stu-id="07630-119">Settings and experimentations pre-release features.</span></span>|
+|<span data-ttu-id="07630-120">notAllowed</span><span class="sxs-lookup"><span data-stu-id="07630-120">notAllowed</span></span>|<span data-ttu-id="07630-121">3 </span><span class="sxs-lookup"><span data-stu-id="07630-121">3</span></span>|<span data-ttu-id="07630-122">不允许使用预发布功能。</span><span class="sxs-lookup"><span data-stu-id="07630-122">Pre-release features not allowed.</span></span>|
 
 
 

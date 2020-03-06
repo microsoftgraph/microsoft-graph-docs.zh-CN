@@ -5,33 +5,35 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b17eb84c3de5505a3dfea23ce3fef564dca9aa2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c71b7158b7ba3cef208fb6bf983d077c9474e77c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533103"
 ---
-# <a name="chartpointformat-resource-type"></a><span data-ttu-id="1525a-103">ChartPointFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="1525a-103">ChartPointFormat resource type</span></span>
+# <a name="chartpointformat-resource-type"></a><span data-ttu-id="41aa0-103">ChartPointFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="41aa0-103">ChartPointFormat resource type</span></span>
 
-<span data-ttu-id="1525a-104">表示图表点的格式化对象。</span><span class="sxs-lookup"><span data-stu-id="1525a-104">Represents formatting object for chart points.</span></span>
+<span data-ttu-id="41aa0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="41aa0-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="41aa0-105">表示图表点的格式化对象。</span><span class="sxs-lookup"><span data-stu-id="41aa0-105">Represents formatting object for chart points.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="1525a-105">方法</span><span class="sxs-lookup"><span data-stu-id="1525a-105">Methods</span></span>
-<span data-ttu-id="1525a-106">无</span><span class="sxs-lookup"><span data-stu-id="1525a-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="41aa0-106">Methods</span><span class="sxs-lookup"><span data-stu-id="41aa0-106">Methods</span></span>
+<span data-ttu-id="41aa0-107">无</span><span class="sxs-lookup"><span data-stu-id="41aa0-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1525a-107">属性</span><span class="sxs-lookup"><span data-stu-id="1525a-107">Properties</span></span>
-<span data-ttu-id="1525a-108">无</span><span class="sxs-lookup"><span data-stu-id="1525a-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="41aa0-108">属性</span><span class="sxs-lookup"><span data-stu-id="41aa0-108">Properties</span></span>
+<span data-ttu-id="41aa0-109">无</span><span class="sxs-lookup"><span data-stu-id="41aa0-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="1525a-109">关系</span><span class="sxs-lookup"><span data-stu-id="1525a-109">Relationships</span></span>
-| <span data-ttu-id="1525a-110">关系</span><span class="sxs-lookup"><span data-stu-id="1525a-110">Relationship</span></span> | <span data-ttu-id="1525a-111">类型</span><span class="sxs-lookup"><span data-stu-id="1525a-111">Type</span></span>   |<span data-ttu-id="1525a-112">说明</span><span class="sxs-lookup"><span data-stu-id="1525a-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="41aa0-110">关系</span><span class="sxs-lookup"><span data-stu-id="41aa0-110">Relationships</span></span>
+| <span data-ttu-id="41aa0-111">关系</span><span class="sxs-lookup"><span data-stu-id="41aa0-111">Relationship</span></span> | <span data-ttu-id="41aa0-112">类型</span><span class="sxs-lookup"><span data-stu-id="41aa0-112">Type</span></span>   |<span data-ttu-id="41aa0-113">说明</span><span class="sxs-lookup"><span data-stu-id="41aa0-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1525a-113">fill</span><span class="sxs-lookup"><span data-stu-id="1525a-113">fill</span></span>|[<span data-ttu-id="1525a-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="1525a-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="1525a-115">表示图表的填充格式，包括背景格式信息。</span><span class="sxs-lookup"><span data-stu-id="1525a-115">Represents the fill format of a chart, which includes background formating information.</span></span> <span data-ttu-id="1525a-116">只读。</span><span class="sxs-lookup"><span data-stu-id="1525a-116">Read-only.</span></span>|
+|<span data-ttu-id="41aa0-114">fill</span><span class="sxs-lookup"><span data-stu-id="41aa0-114">fill</span></span>|[<span data-ttu-id="41aa0-115">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="41aa0-115">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="41aa0-116">表示图表的填充格式，包括背景格式信息。</span><span class="sxs-lookup"><span data-stu-id="41aa0-116">Represents the fill format of a chart, which includes background formating information.</span></span> <span data-ttu-id="41aa0-117">只读。</span><span class="sxs-lookup"><span data-stu-id="41aa0-117">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="1525a-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1525a-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="41aa0-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="41aa0-118">JSON representation</span></span>
 
-<span data-ttu-id="1525a-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1525a-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="41aa0-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="41aa0-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
