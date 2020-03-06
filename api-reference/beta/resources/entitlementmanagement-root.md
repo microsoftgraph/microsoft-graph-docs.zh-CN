@@ -14,7 +14,7 @@ ms.locfileid: "42499342"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与与权限管理相关的资源进行交互的方法。
 

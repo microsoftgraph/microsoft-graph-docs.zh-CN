@@ -14,7 +14,7 @@ ms.locfileid: "42521923"
 ---
 # <a name="personanniversary-resource-type"></a>personAnniversary 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42521923"
 
 继承自[itemFacet](itemFacet.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                   | 返回类型                               | 说明                                                    |
 |:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|

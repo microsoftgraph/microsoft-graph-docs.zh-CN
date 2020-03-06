@@ -14,7 +14,7 @@ ms.locfileid: "42522685"
 ---
 # <a name="mentionspreview-resource-type"></a>mentionsPreview 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42522685"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| isMentioned | 布尔 | 如此如果在父资源实例中提到了登录用户。 只读。 支持筛选器。 |
+| isMentioned | Boolean | 如此如果在父资源实例中提到了登录用户。 只读。 支持筛选器。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

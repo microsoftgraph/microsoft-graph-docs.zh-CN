@@ -15,7 +15,7 @@ ms.locfileid: "42508036"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

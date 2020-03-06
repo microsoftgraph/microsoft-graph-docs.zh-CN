@@ -14,14 +14,14 @@ ms.locfileid: "42519111"
 ---
 # <a name="workbooktablesort-resource-type"></a>workbookTableSort 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 管理对 Table 对象的排序操作。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

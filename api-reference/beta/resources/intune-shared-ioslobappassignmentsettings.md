@@ -14,7 +14,7 @@ ms.locfileid: "42523665"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -30,7 +30,7 @@ ms.locfileid: "42523665"
 |:---|:---|:---|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
 |**应用**|
-|uninstallOnDeviceRemoval|布尔|从 Intune 中删除设备时是否卸载应用程序。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无

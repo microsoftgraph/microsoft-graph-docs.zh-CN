@@ -14,13 +14,13 @@ ms.locfileid: "42521290"
 ---
 # <a name="publishedresource-resource-type"></a>publishedResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示本地发布的资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。可以将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的已发布资源的请求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,8 +37,8 @@ ms.locfileid: "42521290"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|字符串| PublishedResource 的显示名称。|
-|id|String| PublishedResource 的对象 id。 只读。|
-|publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
+|id|字符串| PublishedResource 的对象 id。 只读。|
+|publishingType|字符串| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 |resourceName|String|PublishedResource 的名称。|
 
 ## <a name="relationships"></a>关系

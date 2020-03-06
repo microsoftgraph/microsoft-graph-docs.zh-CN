@@ -14,7 +14,7 @@ ms.locfileid: "42506440"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "42506440"
 
 5. 通过检索为域启用服务所需的记录列表来[配置](../api/domain-list-serviceconfigurationrecords.md)受支持的服务。 使用域注册机构或 DNS 服务器配置将配置记录详细信息添加到域的区域文件中。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|
 |[获取域](../api/domain-get.md) | [domain](domain.md) | 读取域对象的属性和关系。|
 |[创建域](../api/domain-post-domains.md) | [domain](domain.md) | 向租户添加域。 |
-|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) 集合| 使用对域的引用检索目录对象的列表。|
+|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| 使用对域的引用检索目录对象的列表。|
 |[列出 serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)集合|  检索域配置的域 DNS 记录列表。|
 |[列出 verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)集合|  检索域验证的域 DNS 记录列表。|
 |[更新域](../api/domain-update.md) | [domain](domain.md) |更新域。|
@@ -52,17 +52,17 @@ ms.locfileid: "42506440"
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| 指示为域配置的身份验证类型。 值为 "*托管*" 或 "*联合*"。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联合*指示身份验证通过使用标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active directory）进行联合。 此属性为只读，且不可为 null。 |
-|availabilityStatus|String| 除非使用了[verify](../api/domain-verify.md)操作，否则此属性始终为 null。 使用[验证](../api/domain-verify.md)操作时，会在响应中返回**域**实体。 响应中的**域**实体的**AvailabilityStatus**属性为*AvailableImmediately*或*EmailVerifiedDomainTakeoverScheduled*。|
-|id|String| 域的完全限定的名称。 键、不可变、不可为 null、唯一 |
-|isAdminManaged|布尔| 如果域的 DNS 记录管理已委派给 Office 365，则该属性的值为 false。 否则，该值为 true。 不可为 null |
-|isDefault|布尔| 如果这是用于创建用户的默认域，则为 True。 每个公司只有一个默认域。 不可为 null |
+|authenticationType|字符串| 指示为域配置的身份验证类型。 值为 "*托管*" 或 "*联合*"。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联合*指示身份验证通过使用标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active directory）进行联合。 此属性为只读，且不可为 null。 |
+|availabilityStatus|字符串| 除非使用了[verify](../api/domain-verify.md)操作，否则此属性始终为 null。 使用[验证](../api/domain-verify.md)操作时，会在响应中返回**域**实体。 响应中的**域**实体的**AvailabilityStatus**属性为*AvailableImmediately*或*EmailVerifiedDomainTakeoverScheduled*。|
+|id|字符串| 域的完全限定的名称。 键、不可变、不可为 null、唯一 |
+|isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派给 Office 365，则该属性的值为 false。 否则，该值为 true。 不可为 null |
+|isDefault|Boolean| 如果这是用于创建用户的默认域，则为 True。 每个公司只有一个默认域。 不可为 null |
 |isInitial|Boolean| 如果这是 Microsoft Online Services （companyname.onmicrosoft.com）创建的初始域，则为 True。 每个公司只有一个初始域。 不可为 null |
-|isRoot|布尔| 如果域是经过验证的根域，则为 True。 否则，如果域是子域或未验证，则为 false。 不可为 null |
-|isVerified|布尔| 如果域已完成域所有权验证，则为 True。 不可为 null |
+|isRoot|Boolean| 如果域是经过验证的根域，则为 True。 否则，如果域是子域或未验证，则为 false。 不可为 null |
+|isVerified|Boolean| 如果域已完成域所有权验证，则为 True。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码将到期的通知之前的天数。 如果未设置该属性，则将使用默认值14天。|
 |passwordValidityPeriodInDays|Int32| 指定密码在必须更改之前有效的时间长度。 如果未设置该属性，则将使用默认值90天。 |
-|supportedServices|String 集合| 分配给域的功能。<br><br>可以包含0个、1个或更多的以下值： *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*<br><br> 您可以使用 Graph API 添加/删除的值包括： *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>不可为 null|
+|supportedServices|String collection| 分配给域的功能。<br><br>可以包含0个、1个或更多的以下值： *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*<br><br> 您可以使用 Graph API 添加/删除的值包括： *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>不可为 null|
 |state|[domainState](domainstate.md)| 为域计划的异步操作的状态。 |
 
 ## <a name="relationships"></a>关系
@@ -71,7 +71,7 @@ ms.locfileid: "42506440"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) 集合| 只读、可以为 Null|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| 只读、可以为 Null|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md)集合| 在 Microsoft Online services 可以使用域之前，客户添加到域的 DNS 区域文件中的 DNS 记录。<br>只读、可以为 Null |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md)集合| 在客户可以使用 Azure AD 完成域所有权验证之前，客户添加到域的 DNS 区域文件中的 DNS 记录。<br>只读、可以为 Null|
 

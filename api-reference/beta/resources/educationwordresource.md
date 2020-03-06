@@ -14,7 +14,7 @@ ms.locfileid: "42499944"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42499944"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|String|文件在磁盘上的位置。|
+|fileUrl|字符串|文件在磁盘上的位置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -14,7 +14,7 @@ ms.locfileid: "42457018"
 ---
 # <a name="create-rule"></a>创建规则
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,9 +49,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 
 | 参数       | 类型|说明|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必填。|
+|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必填。|
+|displayName| String  | 规则的显示名称。 必需。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|

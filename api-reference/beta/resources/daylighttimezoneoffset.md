@@ -14,7 +14,7 @@ ms.locfileid: "42507287"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

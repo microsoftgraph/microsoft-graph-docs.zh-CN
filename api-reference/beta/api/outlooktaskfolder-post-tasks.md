@@ -14,7 +14,7 @@ ms.locfileid: "42456143"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

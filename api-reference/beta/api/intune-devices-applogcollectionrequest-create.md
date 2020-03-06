@@ -14,7 +14,7 @@ ms.locfileid: "42470012"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,10 +53,10 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|String|在上载过程中出现的错误消息|
-|customLogFolders|String 集合|日志文件夹的列表。 |
+|id|字符串|唯一标识符。 这是 userId_DeviceId_AppId id。|
+|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|errorMessage|字符串|在上载过程中出现的错误消息|
+|customLogFolders|String collection|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 

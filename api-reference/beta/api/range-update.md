@@ -14,7 +14,7 @@ ms.locfileid: "42454696"
 ---
 # <a name="update-range"></a>更新区域
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

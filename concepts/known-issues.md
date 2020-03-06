@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 4166056959d9ca01edd475878f8ed5444cea7cea
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637141"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418144"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -164,9 +164,8 @@ GET /me/calendars/{id}/events
 
 Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过**事件**的 **** 属性，可以访问 **joinUrl**。
 
-## <a name="cloud-communications-preview"></a>云通信（预览版）
+## <a name="cloud-communications"></a>云通信 
 
-> **注意**：云通信暂处于预览阶段，仅适用于 Microsoft Graph beta 终结点。
 对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
 
 ## <a name="contacts"></a>联系人
@@ -217,6 +216,9 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
 ## <a name="messages"></a>邮件
+
+### <a name="attaching-large-files-to-messages"></a>将大型文件附加到邮件
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) 才会成功。
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 

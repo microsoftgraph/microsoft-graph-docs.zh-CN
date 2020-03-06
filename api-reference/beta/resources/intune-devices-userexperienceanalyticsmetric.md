@@ -14,7 +14,7 @@ ms.locfileid: "42524870"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>userExperienceAnalyticsMetric 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -22,7 +22,7 @@ ms.locfileid: "42524870"
 
 User experience analytics 指标包含 user experience anlaytics 类别的分数和度量单位。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsMetrics](../api/intune-devices-userexperienceanalyticsmetric-list.md)|[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)集合|列出[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象的属性和关系。|
@@ -34,9 +34,9 @@ User experience analytics 指标包含 user experience anlaytics 类别的分数
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标的唯一标识符。|
+|id|字符串|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|String|User experience analytics 指标的单位。|
+|处理器|字符串|User experience analytics 指标的单位。|
 
 ## <a name="relationships"></a>关系
 无

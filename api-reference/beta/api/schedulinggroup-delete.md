@@ -14,7 +14,7 @@ ms.locfileid: "42453773"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

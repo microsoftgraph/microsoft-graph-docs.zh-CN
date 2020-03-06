@@ -14,7 +14,7 @@ ms.locfileid: "42454855"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ PUT /me/activities/{appActivityId}
 
 > **注意：** URL 中的 appActivityId 需要是 URL 安全的（除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式），但原始 appActivityId 不必是 URL 安全的。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 类型   | 说明               |
 |:--------------|:-------|:--------------------------|
@@ -112,7 +112,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 <!-- {
     "blockType": "ignored",

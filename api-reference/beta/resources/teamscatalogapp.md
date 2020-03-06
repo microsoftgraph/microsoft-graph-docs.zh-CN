@@ -14,6 +14,6 @@ ms.locfileid: "42519881"
 ---
 # <a name="teamscatalogapp-resource-type"></a>teamsCatalogApp 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 请参阅[teamsApp](teamsapp.md)。

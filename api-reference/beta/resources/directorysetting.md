@@ -14,7 +14,7 @@ ms.locfileid: "42506629"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42506629"
 
 > **注意**： directorySetting 资源类型的/beta 版本仅适用于组。 /V1.0 版本已重命名为 groupSetting。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -37,7 +37,7 @@ ms.locfileid: "42506629"
 |:---------------|:--------|:----------|
 |displayName|string|来自关联模板的此组设置的显示名称。 只读。|
 |id|string| 这些设置的唯一标识符。 只读。|
-|templateId|string| 用于创建此组设置的模板的唯一标识符。 只读。|
+|templateId|字符串| 用于创建此组设置的模板的唯一标识符。 只读。|
 |values|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。|
 
 ## <a name="relationships"></a>关系

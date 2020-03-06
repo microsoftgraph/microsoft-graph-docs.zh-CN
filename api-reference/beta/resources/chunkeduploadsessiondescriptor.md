@@ -14,13 +14,13 @@ ms.locfileid: "42507675"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>chunkedUploadSessionDescriptor 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|String||
+|name|字符串||
 
 ## <a name="json-representation"></a>JSON 表示形式
 

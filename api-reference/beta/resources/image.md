@@ -15,7 +15,7 @@ ms.locfileid: "42496535"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

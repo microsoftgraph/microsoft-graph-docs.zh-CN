@@ -14,13 +14,13 @@ ms.locfileid: "42455352"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的列表，这些对象对应于组织的所有角色分配。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。 
 

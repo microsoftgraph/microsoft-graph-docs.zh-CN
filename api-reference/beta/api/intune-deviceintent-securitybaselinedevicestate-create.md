@@ -14,7 +14,7 @@ ms.locfileid: "42470229"
 ---
 # <a name="create-securitybaselinedevicestate"></a>创建 securityBaselineDeviceState
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,9 +54,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符|
-|managedDeviceId|String|Intune 设备 id|
+|managedDeviceId|字符串|Intune 设备 id|
 |deviceDisplayName|String|设备的显示名称|
-|userPrincipalName|String|用户主体名称|
+|userPrincipalName|字符串|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间|
 

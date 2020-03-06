@@ -14,7 +14,7 @@ ms.locfileid: "42496479"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>implicitGrantSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ ms.locfileid: "42496479"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| 布尔 | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求 ID 令牌。|
-|enableAccessTokenIssuance| 布尔 | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求访问令牌。|
+|enableIdTokenIssuance| Boolean | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求 ID 令牌。|
+|enableAccessTokenIssuance| Boolean | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求访问令牌。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -14,7 +14,7 @@ ms.locfileid: "42523091"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "42523091"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|项|[OutlookItem](outlookitem.md)|附加的联系人、消息或事件。 导航属性。|
+|项|[OutlookItem](outlookitem.md)|附加的联系人、消息或事件。导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

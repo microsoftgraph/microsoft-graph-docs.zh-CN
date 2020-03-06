@@ -14,7 +14,7 @@ ms.locfileid: "42460162"
 ---
 # <a name="list-onpremencryptedpayloads"></a>列出 onPremEncryptedPayloads
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

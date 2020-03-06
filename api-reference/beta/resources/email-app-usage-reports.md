@@ -14,7 +14,7 @@ ms.locfileid: "42499713"
 ---
 # <a name="email-app-usage-reports"></a>电子邮件应用使用情况报表
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,5 +28,5 @@ ms.locfileid: "42499713"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [获取用户详细信息](../api/reportroot-getemailappusageuserdetail.md) | Stream          | [emailAppUsageUserDetail](../resources/emailappusageuserdetail.md) | 获取用户在不同电子邮件应用中执行的活动的详细信息。 |
 | [获取应用用户数](../api/reportroot-getemailappusageappsusercounts.md) | Stream          | [emailAppUsageAppsUserCounts](../resources/emailappusageappsusercounts.md) | 获取每个电子邮件应用的唯一用户数。 |
-| [获取用户数](../api/reportroot-getemailappusageusercounts.md) | Stream          | [emailAppUsageUserCounts](../resources/emailappusageusercounts.md) | 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。 |
+| [获取用户计数](../api/reportroot-getemailappusageusercounts.md) | Stream          | [emailAppUsageUserCounts](../resources/emailappusageusercounts.md) | 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。 |
 | [获取版本用户数](../api/reportroot-getemailappusageversionsusercounts.md) | Stream          | [emailAppUsageVersionsUserCounts](../resources/emailappusageversionsusercounts.md) | 按 Outlook 桌面版获取唯一用户数。 |

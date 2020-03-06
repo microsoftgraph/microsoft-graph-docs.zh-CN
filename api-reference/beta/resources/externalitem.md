@@ -14,7 +14,7 @@ ms.locfileid: "42498698"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42498698"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                        | 返回类型                     | 说明 |
 |:--------------------------------------------------------------|:--------------------------------|:--|
@@ -34,10 +34,10 @@ ms.locfileid: "42498698"
 
 | 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必填。 |
+| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
 | 内容    | String                   | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | String                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必填。 |
-| properties | Object                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必填。 |
+| id         | 字符串                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
+| properties | Object                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
 
 ## <a name="relationships"></a>关系
 

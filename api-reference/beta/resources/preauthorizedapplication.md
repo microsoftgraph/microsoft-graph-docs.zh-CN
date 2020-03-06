@@ -14,7 +14,7 @@ ms.locfileid: "42521577"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42521577"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|permissionIds|String 集合| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
+|permissionIds|String collection| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

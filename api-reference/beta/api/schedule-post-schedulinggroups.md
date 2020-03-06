@@ -14,7 +14,7 @@ ms.locfileid: "42453826"
 ---
 # <a name="create-schedulinggroup"></a>创建 schedulingGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

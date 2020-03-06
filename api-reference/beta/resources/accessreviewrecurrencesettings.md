@@ -14,7 +14,7 @@ ms.locfileid: "42508469"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>accessReviewRecurrenceSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +22,8 @@ ms.locfileid: "42508469"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| recurrenceType | string |  |
-| recurrenceEndType | string |  |
+| recurrenceType | 字符串 |  |
+| recurrenceEndType | 字符串 |  |
 | durationInDays | Int32 |  |
 | recurrenceCount | Int32 |  |
 

@@ -14,7 +14,7 @@ ms.locfileid: "42521304"
 ---
 # <a name="publicclientapplication-resource-type"></a>publicClientApplication 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521304"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|redirectUris|String 集合| 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
+|redirectUris|String collection| 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

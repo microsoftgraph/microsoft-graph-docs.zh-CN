@@ -4,18 +4,26 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0e4bba173c234201c3f3002e8917eaa74176a583
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 0be1d19f9968d5da7d4c3f7ff84a76397dfa2115
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448527"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
 Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你[注册应用](auth-register-app-v2.md)并[获取身份验证令牌以用于用户](auth-v2-user.md)或[服务](auth-v2-service.md)后，可以向 Microsoft Graph API 发送请求。
 
 > **重要说明：** 条件访问策略应用于 Microsoft Graph 的方式在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)。
+
+## <a name="odata-namespace"></a>OData 命名空间
+
+Microsoft Graph API 在 [Microsoft Graph 元数据](traverse-the-graph.md#microsoft-graph-api-metadata)的 OData 命名空间 `microsoft.graph` 中，定义它的大多数资源、方法和枚举。 少量的 API 集在其子命名空间中定义，例如[调用记录 API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) 定义诸如 `microsoft.graph.callRecords`中的 [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) 等资源。 
+
+除非在相应主题中明确指定，否则假定类型、方法和枚举是 `microsoft.graph` 命名空间的一部分。
+
+## <a name="call-a-rest-api-method"></a>调用 REST API 方法
 
 要在资源（如用户或电子邮件）中读取或写入资源，可以创建如下请求：
 
@@ -42,7 +50,6 @@ Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风�
 ## <a name="http-methods"></a>HTTP 方法
 
 Microsoft Graph 使用请求上的 HTTP 方法来确定请求正在执行的操作。API 支持以下方法。
-
 
 |**方法** |**说明**                             |
 | :----- | :------------------------------------------- |

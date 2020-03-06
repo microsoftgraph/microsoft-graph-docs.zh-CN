@@ -14,7 +14,7 @@ ms.locfileid: "42505558"
 ---
 # <a name="driveitemuploadableproperties-resource-type"></a>driveItemUploadableProperties 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

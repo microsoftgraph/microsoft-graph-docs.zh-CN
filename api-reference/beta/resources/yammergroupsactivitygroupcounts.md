@@ -14,7 +14,7 @@ ms.locfileid: "42518978"
 ---
 # <a name="yammergroupsactivitygroupcounts-resource-type"></a>yammerGroupsActivityGroupCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -24,7 +24,7 @@ ms.locfileid: "42518978"
 | total             | Int64  |             |
 | 工作            | Int64  |             |
 | reportDate        | 日期   |             |
-| reportPeriod      | String |             |
+| reportPeriod      | 字符串 |             |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

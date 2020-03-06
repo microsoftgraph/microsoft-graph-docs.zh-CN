@@ -14,7 +14,7 @@ ms.locfileid: "42493172"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +27,7 @@ ms.locfileid: "42493172"
 |:---|:---|:---|
 |bundleId|String|标识名称。|
 |buildNumber|String|MacOS 业务线（LoB）应用的内部版本号。|
-|versionNumber|String|MacOS 业务线（LoB）应用的版本号。|
+|versionNumber|字符串|MacOS 业务线（LoB）应用的版本号。|
 
 ## <a name="relationships"></a>关系
 无

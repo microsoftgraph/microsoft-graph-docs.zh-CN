@@ -15,7 +15,7 @@ ms.locfileid: "42453308"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 通过使用 **shareId** 或共享 URL 访问共享 [DriveItem](../resources/driveitem.md) 或共享项目集合。
 

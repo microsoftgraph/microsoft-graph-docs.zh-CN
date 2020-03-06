@@ -14,7 +14,7 @@ ms.locfileid: "42521178"
 ---
 # <a name="relatedperson-resource-type"></a>relatedPerson 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ ms.locfileid: "42521178"
 | 属性        | 类型        | 说明                                               |
 |:----------------|:------------|:----------------------------------------------------------|
 |displayName      |String       | 人员的姓名。                                        |
-|关系     |String       | 可取值为：`manager`、`colleague`、`directReport`、`dotLineReport`、`assistant`、`dotLineManager`、`alternateContact`、`friend`、`spouse`、`sibling`、`child`、`parent`、`sponsor`、`emergencyContact`、`other`、`unknownFutureValue`。|
-|userPrincipalName|String       | 组织内的人员的电子邮件地址或引用。 |
+|关系     |字符串       | 可取值为：`manager`、`colleague`、`directReport`、`dotLineReport`、`assistant`、`dotLineManager`、`alternateContact`、`friend`、`spouse`、`sibling`、`child`、`parent`、`sponsor`、`emergencyContact`、`other`、`unknownFutureValue`。|
+|userPrincipalName|字符串       | 组织内的人员的电子邮件地址或引用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

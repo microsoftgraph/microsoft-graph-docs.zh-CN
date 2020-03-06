@@ -14,7 +14,7 @@ ms.locfileid: "42456227"
 ---
 # <a name="create-memberof"></a>创建 memberOf
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

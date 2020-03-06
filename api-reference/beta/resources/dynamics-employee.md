@@ -16,13 +16,13 @@ ms.locfileid: "42504081"
 ---
 # <a name="employees-resource-type"></a>员工资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 Dynamics 365 Business Central 中的员工。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                              | 返回类型|说明               |
 |:----------------------------------------------------|:-----------|:-------------------------|
@@ -35,17 +35,17 @@ ms.locfileid: "42504081"
 | 属性           | 类型   |说明                                            |
 |:-------------------|:-------|:------------------------------------------------------|
 |id                  |GUID    |员工 ID。 不可编辑。                         |
-|number              |string  |员工编号。 只读。                        |
-|displayName         |string  |员工 givenName + 姓。 只读。           |
-|givenName           |string  |员工的名字。                        |
-|middleName          |string  |员工的中间名。                       |
-|surname             |string  |员工的姓氏                            |
-|jobTitle            |string  |员工的完整名称                          |
+|number              |字符串  |员工编号。 只读。                        |
+|displayName         |字符串  |员工 givenName + 姓。 只读。           |
+|givenName           |字符串  |员工的名字。                        |
+|middleName          |字符串  |员工的中间名。                       |
+|surname             |字符串  |员工的姓氏                            |
+|jobTitle            |字符串  |员工的完整名称                          |
 |address             |[翻.省略](../resources/dynamics-complextypes.md)|指定员工的地址。 此地址将显示在员工的所有资源文档中。|
-|phoneNumber         |string  |指定员工的电话号码。             |
-|mobilePhone         |string  |指定员工的移动电话号码。      |
+|phoneNumber         |字符串  |指定员工的电话号码。             |
+|mobilePhone         |字符串  |指定员工的移动电话号码。      |
 |email               |string  |指定员工的电子邮件地址。                |
-|personalEmail       |string  |指定员工的个人电子邮件地址。       |
+|personalEmail       |字符串  |指定员工的个人电子邮件地址。       |
 |employmentDate      |date    |指定员工开始为公司工作的日期。|
 |terminationDate     |date    |指定由于退休或开除而终止员工的日期。|
 |状态              |string  |指定员工的状态。 可能的值包括活动、非活动或已终止|

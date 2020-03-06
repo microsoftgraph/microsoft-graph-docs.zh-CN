@@ -14,7 +14,7 @@ ms.locfileid: "42508434"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>activityBasedTimeoutPolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42508434"
 
 继承自[stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,10 +37,10 @@ ms.locfileid: "42508434"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|displayName|String| 此策略的显示名称。 必需。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
 ### <a name="properties-of-an-activity-based-timeout-policy-definition"></a>基于活动的超时策略定义的属性
@@ -61,7 +61,7 @@ ms.locfileid: "42508434"
 
 | 属性     | 类型   |说明|
 |:-------------|:------|:---------|
-|版本|整数|策略版本。 将值设置为1。 必填。|
+|版本|整数|策略版本。 将值设置为1。 必需。|
 |ApplicationPolicies|JSON 对象|应用程序策略的集合。 应用程序策略是 ApplicationId 和 WebSessionIdleTimeout 的组合： <br> <ul><li>**ApplicationId**：允许的值：<ul><li> 默认：将策略应用于所有支持基于活动的超时功能但不具有特定于应用程序的替代的应用程序</li><li> c44b4083-3bb0-49c1-b47d-974e53cbdf3c：将策略应用于 Azure 门户</li></ul></li><li>**WebSessionIdleTimeout**：用户的 web 会话被认为已过期的用户非活动时段。 最小值为5分钟;最大值为1天。</li></ul> |
 
 

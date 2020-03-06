@@ -14,7 +14,7 @@ ms.locfileid: "42527094"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +26,7 @@ ms.locfileid: "42527094"
 |属性|类型|说明|
 |:---|:---|:---|
 |name|字符串|应用程序名称|
-|publisher|String|应用程序发布者|
+|publisher|字符串|应用程序发布者|
 |appStoreUrl|String|应用程序的应用商店 URL|
 |appId|String|应用程序或应用程序的捆绑标识符|
 

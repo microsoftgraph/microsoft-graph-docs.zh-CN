@@ -14,7 +14,7 @@ ms.locfileid: "42493599"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,12 +25,12 @@ ms.locfileid: "42493599"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|布尔|版本 8.0 或更高版本。|
-|v9_0|布尔|版本 9.0 或更高版本。|
-|v10_0|布尔|版本 10.0 或更高版本。|
+|v8_0|Boolean|版本 8.0 或更高版本。|
+|v9_0|Boolean|版本 9.0 或更高版本。|
+|v10_0|Boolean|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
-|v12_0|布尔|版本12.0 或更高版本。|
-|v13_0|布尔|版本13.0 或更高版本。|
+|v12_0|Boolean|版本12.0 或更高版本。|
+|v13_0|Boolean|版本13.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
