@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84f54697d5c6a05f03c28b70e7d6250fa5dd0e46
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2abc1018d6f9aa271e444560d53f6db6c566a7c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532449"
 ---
-# <a name="mediacontentratingcanada-resource-type"></a><span data-ttu-id="4d947-103">mediaContentRatingCanada 资源类型</span><span class="sxs-lookup"><span data-stu-id="4d947-103">mediaContentRatingCanada resource type</span></span>
+# <a name="mediacontentratingcanada-resource-type"></a><span data-ttu-id="ba11c-103">mediaContentRatingCanada 资源类型</span><span class="sxs-lookup"><span data-stu-id="ba11c-103">mediaContentRatingCanada resource type</span></span>
 
-> <span data-ttu-id="4d947-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4d947-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="ba11c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba11c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4d947-105">尚未记录</span><span class="sxs-lookup"><span data-stu-id="4d947-105">Not yet documented</span></span>
+> <span data-ttu-id="ba11c-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ba11c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4d947-106">属性</span><span class="sxs-lookup"><span data-stu-id="4d947-106">Properties</span></span>
-|<span data-ttu-id="4d947-107">属性</span><span class="sxs-lookup"><span data-stu-id="4d947-107">Property</span></span>|<span data-ttu-id="4d947-108">类型</span><span class="sxs-lookup"><span data-stu-id="4d947-108">Type</span></span>|<span data-ttu-id="4d947-109">说明</span><span class="sxs-lookup"><span data-stu-id="4d947-109">Description</span></span>|
+<span data-ttu-id="ba11c-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="ba11c-106">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ba11c-107">属性</span><span class="sxs-lookup"><span data-stu-id="ba11c-107">Properties</span></span>
+|<span data-ttu-id="ba11c-108">属性</span><span class="sxs-lookup"><span data-stu-id="ba11c-108">Property</span></span>|<span data-ttu-id="ba11c-109">类型</span><span class="sxs-lookup"><span data-stu-id="ba11c-109">Type</span></span>|<span data-ttu-id="ba11c-110">说明</span><span class="sxs-lookup"><span data-stu-id="ba11c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4d947-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="4d947-110">movieRating</span></span>|[<span data-ttu-id="4d947-111">ratingCanadaMoviesType</span><span class="sxs-lookup"><span data-stu-id="4d947-111">ratingCanadaMoviesType</span></span>](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|<span data-ttu-id="4d947-112">为加拿大选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="4d947-112">Movies rating selected for Canada.</span></span> <span data-ttu-id="4d947-113">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18` 或 `restricted`。</span><span class="sxs-lookup"><span data-stu-id="4d947-113">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span></span>|
-|<span data-ttu-id="4d947-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="4d947-114">tvRating</span></span>|[<span data-ttu-id="4d947-115">ratingCanadaTelevisionType</span><span class="sxs-lookup"><span data-stu-id="4d947-115">ratingCanadaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|<span data-ttu-id="4d947-116">为加拿大选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="4d947-116">TV rating selected for Canada.</span></span> <span data-ttu-id="4d947-117">可取值为：`allAllowed`、`allBlocked`、`children`、`childrenAbove8`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`。</span><span class="sxs-lookup"><span data-stu-id="4d947-117">Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="ba11c-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="ba11c-111">movieRating</span></span>|[<span data-ttu-id="ba11c-112">ratingCanadaMoviesType</span><span class="sxs-lookup"><span data-stu-id="ba11c-112">ratingCanadaMoviesType</span></span>](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|<span data-ttu-id="ba11c-113">为加拿大选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="ba11c-113">Movies rating selected for Canada.</span></span> <span data-ttu-id="ba11c-114">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18` 或 `restricted`。</span><span class="sxs-lookup"><span data-stu-id="ba11c-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span></span>|
+|<span data-ttu-id="ba11c-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="ba11c-115">tvRating</span></span>|[<span data-ttu-id="ba11c-116">ratingCanadaTelevisionType</span><span class="sxs-lookup"><span data-stu-id="ba11c-116">ratingCanadaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|<span data-ttu-id="ba11c-117">为加拿大选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="ba11c-117">TV rating selected for Canada.</span></span> <span data-ttu-id="ba11c-118">可取值为：`allAllowed`、`allBlocked`、`children`、`childrenAbove8`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`。</span><span class="sxs-lookup"><span data-stu-id="ba11c-118">Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4d947-118">关系</span><span class="sxs-lookup"><span data-stu-id="4d947-118">Relationships</span></span>
-<span data-ttu-id="4d947-119">无</span><span class="sxs-lookup"><span data-stu-id="4d947-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ba11c-119">关系</span><span class="sxs-lookup"><span data-stu-id="ba11c-119">Relationships</span></span>
+<span data-ttu-id="ba11c-120">无</span><span class="sxs-lookup"><span data-stu-id="ba11c-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4d947-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4d947-120">JSON Representation</span></span>
-<span data-ttu-id="4d947-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4d947-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ba11c-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ba11c-121">JSON Representation</span></span>
+<span data-ttu-id="ba11c-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ba11c-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingCanada"

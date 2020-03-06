@@ -5,57 +5,59 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0df8c2c586d4522a2287cbdedb909df5b3e4f24e
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 78ce1dd3dd78bd4e1ef79de83a3bd4eb5f0c4399
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510765"
 ---
-# <a name="post-reply"></a><span data-ttu-id="1c667-104">post: reply</span><span class="sxs-lookup"><span data-stu-id="1c667-104">post: reply</span></span>
+# <a name="post-reply"></a><span data-ttu-id="f1c84-104">post: reply</span><span class="sxs-lookup"><span data-stu-id="f1c84-104">post: reply</span></span>
 
-<span data-ttu-id="1c667-105">回复帖子，并向组对话中的指定线程添加新帖子。</span><span class="sxs-lookup"><span data-stu-id="1c667-105">Reply to a post and add a new post to the specified thread in a group conversation.</span></span> 
+<span data-ttu-id="f1c84-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f1c84-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1c667-106">可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。</span><span class="sxs-lookup"><span data-stu-id="1c667-106">You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span>
+<span data-ttu-id="f1c84-106">回复帖子，并向组对话中的指定线程添加新帖子。</span><span class="sxs-lookup"><span data-stu-id="f1c84-106">Reply to a post and add a new post to the specified thread in a group conversation.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="1c667-107">权限</span><span class="sxs-lookup"><span data-stu-id="1c667-107">Permissions</span></span>
-<span data-ttu-id="1c667-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1c667-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f1c84-107">可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。</span><span class="sxs-lookup"><span data-stu-id="f1c84-107">You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span>
 
-|<span data-ttu-id="1c667-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="1c667-110">Permission type</span></span>      | <span data-ttu-id="1c667-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1c667-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="f1c84-108">权限</span><span class="sxs-lookup"><span data-stu-id="f1c84-108">Permissions</span></span>
+<span data-ttu-id="f1c84-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1c84-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f1c84-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1c84-111">Permission type</span></span>      | <span data-ttu-id="f1c84-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1c84-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c667-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1c667-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1c667-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c667-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1c667-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1c667-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c667-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="1c667-115">Not supported.</span></span>    |
-|<span data-ttu-id="1c667-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="1c667-116">Application</span></span> | <span data-ttu-id="1c667-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c667-117">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="f1c84-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1c84-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f1c84-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1c84-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f1c84-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1c84-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1c84-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1c84-116">Not supported.</span></span>    |
+|<span data-ttu-id="f1c84-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1c84-117">Application</span></span> | <span data-ttu-id="f1c84-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1c84-118">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c667-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1c667-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f1c84-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1c84-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="1c667-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="1c667-119">Request headers</span></span>
-| <span data-ttu-id="1c667-120">标头</span><span class="sxs-lookup"><span data-stu-id="1c667-120">Header</span></span>       | <span data-ttu-id="1c667-121">值</span><span class="sxs-lookup"><span data-stu-id="1c667-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f1c84-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f1c84-120">Request headers</span></span>
+| <span data-ttu-id="f1c84-121">标头</span><span class="sxs-lookup"><span data-stu-id="f1c84-121">Header</span></span>       | <span data-ttu-id="f1c84-122">值</span><span class="sxs-lookup"><span data-stu-id="f1c84-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1c667-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c667-122">Authorization</span></span>  | <span data-ttu-id="1c667-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1c667-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f1c84-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1c84-123">Authorization</span></span>  | <span data-ttu-id="f1c84-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f1c84-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1c667-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="1c667-125">Request body</span></span>
-<span data-ttu-id="1c667-126">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="1c667-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f1c84-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f1c84-126">Request body</span></span>
+<span data-ttu-id="f1c84-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f1c84-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1c667-127">参数</span><span class="sxs-lookup"><span data-stu-id="1c667-127">Parameter</span></span>    | <span data-ttu-id="1c667-128">类型</span><span class="sxs-lookup"><span data-stu-id="1c667-128">Type</span></span>   |<span data-ttu-id="1c667-129">说明</span><span class="sxs-lookup"><span data-stu-id="1c667-129">Description</span></span>|
+| <span data-ttu-id="f1c84-128">参数</span><span class="sxs-lookup"><span data-stu-id="f1c84-128">Parameter</span></span>    | <span data-ttu-id="f1c84-129">类型</span><span class="sxs-lookup"><span data-stu-id="f1c84-129">Type</span></span>   |<span data-ttu-id="f1c84-130">说明</span><span class="sxs-lookup"><span data-stu-id="f1c84-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1c667-130">帖子</span><span class="sxs-lookup"><span data-stu-id="1c667-130">post</span></span>|[<span data-ttu-id="1c667-131">帖子</span><span class="sxs-lookup"><span data-stu-id="1c667-131">post</span></span>](../resources/post.md)|<span data-ttu-id="1c667-132">正在回复的新帖子。</span><span class="sxs-lookup"><span data-stu-id="1c667-132">The new post that is being replied with.</span></span>|
+|<span data-ttu-id="f1c84-131">帖子</span><span class="sxs-lookup"><span data-stu-id="f1c84-131">post</span></span>|[<span data-ttu-id="f1c84-132">帖子</span><span class="sxs-lookup"><span data-stu-id="f1c84-132">post</span></span>](../resources/post.md)|<span data-ttu-id="f1c84-133">正在回复的新帖子。</span><span class="sxs-lookup"><span data-stu-id="f1c84-133">The new post that is being replied with.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1c667-133">响应</span><span class="sxs-lookup"><span data-stu-id="1c667-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f1c84-134">响应</span><span class="sxs-lookup"><span data-stu-id="f1c84-134">Response</span></span>
 
-<span data-ttu-id="1c667-p104">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1c667-p104">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f1c84-p104">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f1c84-p104">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c667-136">示例</span><span class="sxs-lookup"><span data-stu-id="1c667-136">Example</span></span>
-<span data-ttu-id="1c667-137">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="1c667-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="1c667-138">请求</span><span class="sxs-lookup"><span data-stu-id="1c667-138">Request</span></span>
-<span data-ttu-id="1c667-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1c667-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f1c84-137">示例</span><span class="sxs-lookup"><span data-stu-id="f1c84-137">Example</span></span>
+<span data-ttu-id="f1c84-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f1c84-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f1c84-139">请求</span><span class="sxs-lookup"><span data-stu-id="f1c84-139">Request</span></span>
+<span data-ttu-id="f1c84-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f1c84-140">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1c667-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="1c667-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f1c84-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f1c84-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reply"
@@ -117,23 +119,23 @@ Content-length: 1131
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1c667-141">C#</span><span class="sxs-lookup"><span data-stu-id="1c667-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f1c84-142">C#</span><span class="sxs-lookup"><span data-stu-id="f1c84-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c667-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c667-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f1c84-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f1c84-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="1c667-143">Java</span><span class="sxs-lookup"><span data-stu-id="1c667-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f1c84-144">Java</span><span class="sxs-lookup"><span data-stu-id="f1c84-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1c667-144">响应</span><span class="sxs-lookup"><span data-stu-id="1c667-144">Response</span></span>
-<span data-ttu-id="1c667-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1c667-145">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f1c84-145">响应</span><span class="sxs-lookup"><span data-stu-id="f1c84-145">Response</span></span>
+<span data-ttu-id="f1c84-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f1c84-146">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
