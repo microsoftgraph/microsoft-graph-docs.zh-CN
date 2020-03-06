@@ -5,32 +5,34 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f931816bb198b7a82bf2ce34d0a871b45c3c41da
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8fda61440ce48beca62e47f4d0055fe8120fd066
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721969"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451838"
 ---
-# <a name="list-joinedteams"></a><span data-ttu-id="b9a24-103">列出 joinedTeams</span><span class="sxs-lookup"><span data-stu-id="b9a24-103">List joinedTeams</span></span>
+# <a name="list-joinedteams"></a><span data-ttu-id="abbad-103">列出 joinedTeams</span><span class="sxs-lookup"><span data-stu-id="abbad-103">List joinedTeams</span></span>
+
+<span data-ttu-id="abbad-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="abbad-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b9a24-104">获取用户不是其直接成员的 Microsoft Teams [团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="b9a24-104">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
+<span data-ttu-id="abbad-105">获取用户不是其直接成员的 Microsoft Teams [团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="abbad-105">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
  
-## <a name="permissions"></a><span data-ttu-id="b9a24-105">权限</span><span class="sxs-lookup"><span data-stu-id="b9a24-105">Permissions</span></span>
-<span data-ttu-id="b9a24-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9a24-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="abbad-106">权限</span><span class="sxs-lookup"><span data-stu-id="abbad-106">Permissions</span></span>
+<span data-ttu-id="abbad-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="abbad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9a24-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9a24-108">Permission type</span></span>      | <span data-ttu-id="b9a24-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9a24-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="abbad-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="abbad-109">Permission type</span></span>      | <span data-ttu-id="abbad-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="abbad-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b9a24-110">委托（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9a24-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b9a24-111">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9a24-111">User.Read.All, User.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b9a24-112">委托（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9a24-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9a24-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="b9a24-113">Not supported.</span></span>    |
-|<span data-ttu-id="b9a24-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9a24-114">Application</span></span> | <span data-ttu-id="b9a24-115">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9a24-115">User.Read.All, User.ReadWrite.All</span></span> |
+|<span data-ttu-id="abbad-111">委托（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="abbad-111">Delegated (work or school account)</span></span> | <span data-ttu-id="abbad-112">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abbad-112">User.Read.All, User.ReadWrite.All</span></span>    |
+|<span data-ttu-id="abbad-113">委托（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="abbad-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abbad-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="abbad-114">Not supported.</span></span>    |
+|<span data-ttu-id="abbad-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="abbad-115">Application</span></span> | <span data-ttu-id="abbad-116">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abbad-116">User.Read.All, User.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="b9a24-116">目前，使用用户委派的权限时，此操作仅适用于“me”用户。</span><span class="sxs-lookup"><span data-stu-id="b9a24-116">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
-> <span data-ttu-id="b9a24-117">使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名。）有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。</span><span class="sxs-lookup"><span data-stu-id="b9a24-117">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
+> <span data-ttu-id="abbad-117">目前，使用用户委派的权限时，此操作仅适用于“me”用户。</span><span class="sxs-lookup"><span data-stu-id="abbad-117">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
+> <span data-ttu-id="abbad-118">使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名。）有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。</span><span class="sxs-lookup"><span data-stu-id="abbad-118">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b9a24-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9a24-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="abbad-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="abbad-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
@@ -38,27 +40,27 @@ or
 GET /users/{id}/joinedTeams
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b9a24-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b9a24-119">Optional query parameters</span></span>
-<span data-ttu-id="b9a24-120">目前不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="b9a24-120">The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="abbad-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="abbad-120">Optional query parameters</span></span>
+<span data-ttu-id="abbad-121">目前不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="abbad-121">The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b9a24-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="b9a24-121">Request headers</span></span>
-| <span data-ttu-id="b9a24-122">标头</span><span class="sxs-lookup"><span data-stu-id="b9a24-122">Header</span></span>       | <span data-ttu-id="b9a24-123">值</span><span class="sxs-lookup"><span data-stu-id="b9a24-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="abbad-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="abbad-122">Request headers</span></span>
+| <span data-ttu-id="abbad-123">标头</span><span class="sxs-lookup"><span data-stu-id="abbad-123">Header</span></span>       | <span data-ttu-id="abbad-124">值</span><span class="sxs-lookup"><span data-stu-id="abbad-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b9a24-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9a24-124">Authorization</span></span>  | <span data-ttu-id="b9a24-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b9a24-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b9a24-127">接受</span><span class="sxs-lookup"><span data-stu-id="b9a24-127">Accept</span></span>  | <span data-ttu-id="b9a24-128">application/json</span><span class="sxs-lookup"><span data-stu-id="b9a24-128">application/json</span></span>|
+| <span data-ttu-id="abbad-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="abbad-125">Authorization</span></span>  | <span data-ttu-id="abbad-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="abbad-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="abbad-128">接受</span><span class="sxs-lookup"><span data-stu-id="abbad-128">Accept</span></span>  | <span data-ttu-id="abbad-129">application/json</span><span class="sxs-lookup"><span data-stu-id="abbad-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b9a24-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9a24-129">Request body</span></span>
-<span data-ttu-id="b9a24-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b9a24-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="abbad-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="abbad-130">Request body</span></span>
+<span data-ttu-id="abbad-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="abbad-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9a24-131">响应</span><span class="sxs-lookup"><span data-stu-id="b9a24-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="abbad-132">响应</span><span class="sxs-lookup"><span data-stu-id="abbad-132">Response</span></span>
 
-<span data-ttu-id="b9a24-132">如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="b9a24-132">If successful, this method returns a `200 OK` response code and collection of [group](../resources/team.md) objects in the response body.</span></span>
+<span data-ttu-id="abbad-133">如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="abbad-133">If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b9a24-133">示例</span><span class="sxs-lookup"><span data-stu-id="b9a24-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b9a24-134">请求</span><span class="sxs-lookup"><span data-stu-id="b9a24-134">Request</span></span>
-<span data-ttu-id="b9a24-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b9a24-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="abbad-134">示例</span><span class="sxs-lookup"><span data-stu-id="abbad-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="abbad-135">请求</span><span class="sxs-lookup"><span data-stu-id="abbad-135">Request</span></span>
+<span data-ttu-id="abbad-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="abbad-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b9a24-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9a24-136">--Http</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="abbad-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="abbad-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_joinedteams"
@@ -66,22 +68,22 @@ GET /users/{id}/joinedTeams
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/joinedTeams
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b9a24-137">C#</span><span class="sxs-lookup"><span data-stu-id="b9a24-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="abbad-138">C#</span><span class="sxs-lookup"><span data-stu-id="abbad-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b9a24-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9a24-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="abbad-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="abbad-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-joinedteams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b9a24-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9a24-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="abbad-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="abbad-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b9a24-140">响应</span><span class="sxs-lookup"><span data-stu-id="b9a24-140">Response</span></span>
-<span data-ttu-id="b9a24-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b9a24-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="abbad-141">响应</span><span class="sxs-lookup"><span data-stu-id="abbad-141">Response</span></span>
+<span data-ttu-id="abbad-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="abbad-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,8 +104,8 @@ Content-length: 55
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="b9a24-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b9a24-144">See also</span></span>
-[<span data-ttu-id="b9a24-145">列出所有团队</span><span class="sxs-lookup"><span data-stu-id="b9a24-145">List all teams</span></span>](/graph/teams-list-all-teams)
+## <a name="see-also"></a><span data-ttu-id="abbad-145">另请参阅</span><span class="sxs-lookup"><span data-stu-id="abbad-145">See also</span></span>
+[<span data-ttu-id="abbad-146">列出所有团队</span><span class="sxs-lookup"><span data-stu-id="abbad-146">List all teams</span></span>](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
