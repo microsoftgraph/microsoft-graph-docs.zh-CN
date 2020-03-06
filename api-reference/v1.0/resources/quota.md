@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ee93ddfe54e785ea8a8fa245ab3828c548928cc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53aad1392e66f610f85f30ae088dc6f8ca04df73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034956"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533934"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
+
+命名空间：microsoft.graph
 
 **配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
 

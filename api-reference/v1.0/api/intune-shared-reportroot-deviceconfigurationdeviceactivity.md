@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1523b2edead630a23d315ef915f24ea966a8a514
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a8bc229a510c48f769dcaeaaef9340fbf4fb31b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361404"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512046"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备配置设备活动报告的元数据
 
@@ -37,7 +39,7 @@ ms.locfileid: "37361404"
 GET /reports/deviceConfigurationDeviceActivity
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

@@ -5,18 +5,20 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3f9e861cc5427243b18ff920facab7544d6315ad
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: e6711a771d0c10112850f2d05943f4e8752ebbdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913735"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534084"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
+命名空间：microsoft.graph
+
 参与者类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                 | 返回类型                                                 | 说明                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
@@ -28,7 +30,7 @@ ms.locfileid: "40913735"
 
 | 属性             | 类型                                     | 说明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | 参与者 ID。                                          |
+| id                   | 字符串                                   | 参与者 ID。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
 | isInLobby            | Boolean                                  | `true`如果参与者处于会议厅中。                          |
 | isMuted              | Boolean                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |

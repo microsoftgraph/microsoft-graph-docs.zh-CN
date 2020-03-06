@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8f2aa1e4e8345b2d84831ebbc8ec1044ad99b3a9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f369cd8bb6a73f98e171b2d770ced7761aeacde1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865515"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511045"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
+
+命名空间：microsoft.graph
 
 返回特定 permission 资源的有效共享权限。
 
@@ -46,7 +48,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持 [$select 查询参数](/graph/query-parameters)塑造响应。
 
@@ -61,25 +63,25 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 下面是请求访问某个文件夹权限的示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

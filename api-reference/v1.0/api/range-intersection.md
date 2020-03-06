@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2eec5e11e22c6c9724ddb3935166b05ad8a1f38c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a05839eaa7c9c41392fcc2dbe91c415cb3d69600
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510632"
 ---
 # <a name="range-intersection"></a>Range:Intersection
+
+命名空间：microsoft.graph
 
 获取表示给定范围的矩形交集的 range 对象。
 ## <a name="permissions"></a>权限

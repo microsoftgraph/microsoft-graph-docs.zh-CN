@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6688abbafbe042b1ebc16103117e75dccd3c0cf
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ddb1183335adc6cb50c8133a2588146cbb8815d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512116"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37361544"
 PATCH /deviceAppManagement
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ PATCH /deviceAppManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |**载入**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|帐户是否已启用从适用于企业的 Microsoft Store 同步应用程序。|
 |microsoftStoreForBusinessLanguage|String|用于从适用于企业的 Microsoft Store 同步应用程序的区域设置信息。 特定于国家/地区的区域性。 这些区域性的名称遵循 RFC 4646（Windows Vista 和更高版本）。 格式为 <languagecode2>-<country/regioncode2>，其中 <languagecode2> 是从 ISO 639-1 派生的两个小写字母组成的代码，<country/regioncode2> 是从 ISO 3166 派生的两个大写字母组成的代码。 例如，“en-US”（“英语(美国)）是一个特定的区域性。|
@@ -69,7 +71,7 @@ Content-length: 2
 {}
 ```
 
-## <a name="example-response"></a>响应示例
+## <a name="example-response"></a>示例响应
 
 为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 

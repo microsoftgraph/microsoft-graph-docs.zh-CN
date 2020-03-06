@@ -5,17 +5,19 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 59c905496ffcafc3ccc89eac947d6a30765b1285
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6b06d9d998af2300d8114c98822ed7c76a6ec115
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518845"
 ---
 # <a name="update-application"></a>更新应用程序
 
+命名空间：microsoft.graph
+
 更新[application](../resources/application.md)对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -43,8 +45,8 @@ PATCH /applications/{id}
 |:---------------|:--------|:----------|
 | api | [apiApplication](../resources/apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appRoles | [appRole](../resources/approle.md) 集合 | 应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 null。 |
-| displayName | 字符串 | 应用程序的显示名称。 |
-| groupMembershipClaims | String | 配置在应用程序需要的用户或 OAuth 2.0 访问令牌中颁发的**组**声明。 要设置此属性，请使用以下有效字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：针对安全组和 Azure Active Directory （Azure AD）角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul> |
+| displayName | String | 应用程序的显示名称。 |
+| groupMembershipClaims | 字符串 | 配置在应用程序需要的用户或 OAuth 2.0 访问令牌中颁发的**组**声明。 要设置此属性，请使用以下有效字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：针对安全组和 Azure Active Directory （Azure AD）角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul> |
 | identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的 *any* 运算符。 不可为 NULL。 |
 | info | [informationalUrl](../resources/informationalurl.md) | 应用程序的基本配置文件信息，如应用程序的营销、支持、服务条款和隐私声明 Url。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[为已注册的 AZURE AD 应用添加服务条款和隐私声明](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值是`false`，这意味着回退应用程序类型是机密客户端，如 web app。 在某些情况下，Azure AD 无法确定客户端应用程序类型（例如，在未指定重定向 URI 的情况下配置它的[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流）。 在这些情况下，Azure AD 将根据此属性的值解释应用程序类型。|
@@ -57,7 +59,7 @@ PATCH /applications/{id}
 | requiredResourceAccess |[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 | tags |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
-| tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | web |[webApplication](../resources/webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="response"></a>响应
@@ -68,7 +70,7 @@ PATCH /applications/{id}
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -82,19 +84,19 @@ Content-length: 72
   "displayName": "New display name"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

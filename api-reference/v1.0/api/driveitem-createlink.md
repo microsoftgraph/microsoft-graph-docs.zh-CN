@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 可以使用 createLink 操作通过共享链接共享 DriveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 9f203a590b0ca24ee0980854edd1f08752c90193
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 29d29e476a3991fd725d1c1774ac90725436b8db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365011"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517781"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
+
+命名空间：microsoft.graph
 
 可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。
 
@@ -52,7 +54,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   名称    |  类型  |                                 说明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
+| **scope** | string | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
 
 
 ### <a name="link-types"></a>链接类型
@@ -72,8 +74,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。 管理员可能禁用了匿名链接支持。
-| `organization` | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
+| `anonymous`    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
+| `organization` | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
 
 
 ## <a name="response"></a>响应
@@ -90,7 +92,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-link"
@@ -105,19 +107,19 @@ Content-type: application/json
   "scope": "anonymous"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-link-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -156,7 +158,7 @@ OneDrive for Business 和 SharePoint 都支持公司可共享的链接。
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
@@ -168,19 +170,19 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-link-scoped-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -219,7 +221,7 @@ Content-Type: application/json
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
@@ -230,19 +232,19 @@ Content-Type: application/json
   "type": "embed"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-embedded-link-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

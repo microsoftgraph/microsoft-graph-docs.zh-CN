@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b12999c8269bd9f23c6b25b748a0ebfb81fe801e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2bbb9f2966d0c643c8b48a3582403127517f116b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37365682"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514204"
 ---
 # <a name="create-windows10compliancepolicy"></a>创建 windows10CompliancePolicy
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37365682"
 POST /deviceManagement/deviceCompliancePolicies
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -65,9 +67,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
 |requireHealthyDeviceReport|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
-|osMinimumVersion|String|最低 Windows 10 版本。|
-|osMaximumVersion|String|最高 Windows 10 版本。|
-|mobileOsMinimumVersion|String|最低 Windows Phone 版本。|
+|osMinimumVersion|字符串|最低 Windows 10 版本。|
+|osMaximumVersion|字符串|最高 Windows 10 版本。|
+|mobileOsMinimumVersion|字符串|最低 Windows Phone 版本。|
 |mobileOsMaximumVersion|String|最高 Windows Phone 版本。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
 |bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|

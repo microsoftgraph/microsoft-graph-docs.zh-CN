@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e75299e8eaf35b4c25b9da244422116f8227e088
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: dfc349b16fb8783156d1b83176fe6309cbc31bc7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119768"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508798"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
+
+命名空间：microsoft.graph
 
 创建新的[workbookCommentReply](../resources/workbookcommentreply.md)对象。
 
@@ -54,7 +56,7 @@ POST /workbook/comments/{id}/replies
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
@@ -69,19 +71,19 @@ Content-type: application/json
   "contentType": "plain"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workbookcommentreply-from-workbookcomment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workbookcommentreply-from-workbookcomment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workbookcommentreply-from-workbookcomment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-workbookcommentreply-from-workbookcomment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

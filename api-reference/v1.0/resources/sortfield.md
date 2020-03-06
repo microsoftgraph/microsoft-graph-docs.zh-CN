@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33c2d37f46d4fdfdaef4bc5b6d92557668bf9d70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c1d5a83323c28b8ec54543d4ee633861654991e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034053"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533641"
 ---
 # <a name="sortfield-resource-type"></a>SortField 资源类型
+
+命名空间：microsoft.graph
 
 表示排序操作中的条件。
 
@@ -21,7 +23,7 @@ ms.locfileid: "36034053"
 |:---------------|:--------|:----------|
 |ascending|boolean|表示是否以升序方式进行排序。|
 |color|字符串|表示按字体或单元格颜色进行排序时，条件的目标颜色。|
-|dataOption|string|表示此字段的其他排序选项。 可能的值为: `Normal`、 `TextAsNumber`。|
+|dataOption|字符串|表示此字段的其他排序选项。 可能的值为： `Normal`、 `TextAsNumber`。|
 |Key|int|表示条件所在的列（或行，具体取决于排序方向）。表示与第一列（或行）的偏移量。|
 |sortOn|string|表示此条件的排序类型。 可能的值包括 `Value`、`CellColor`、`FontColor`、`Icon`。|
 |图标|[WorkbookIcon](icon.md)|表示对单元格图标进行排序时，条件的目标图标。|

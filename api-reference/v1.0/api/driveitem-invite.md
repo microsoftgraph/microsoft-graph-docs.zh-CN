@@ -7,17 +7,19 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 发送 DriveItem 的共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: 47aa7e49875d4d07ebc8b80a0f86c5939aea13ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 16924f6bd09b0f6e1a5918e002456ce8201571cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375042"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517732"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
+命名空间：microsoft.graph
+
 发送 **DriveItem** 的共享邀请。
-共享邀请向收件人提供权限, 并根据需要向其发送带有[共享链接][]的电子邮件。
+共享邀请向收件人提供权限，并选择性地向其发送带[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -64,13 +66,13 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | 将获得访问权限和共享邀请的收件人的集合。
 | message          | String                         | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。
-| requireSignIn    | Boolean                        | 指定是否需要邀请收件人登录才能查看共享项目。
-| sendInvitation   | Boolean                        | 如果为 true, 则会向收件人发送[共享链接][]。 否则, 将直接授予权限, 而不发送通知。
-| roles            | 集合（字符串）             | 指定要向共享邀请的收件人授予的角色。
+| requireSignIn    | Boolean                        | 指定邀请的收件人是否需要登录才能查看共享项。
+| sendInvitation   | Boolean                        | 如果为 true，则向收件人发送[共享链接][]。 否则，直接授予权限，而不发送通知。
+| 角色            | 集合（字符串）             | 指定要授予共享邀请收件人的角色。
 
 ## <a name="example"></a>示例
 
-本示例向电子邮件地址为 "ryan@contoso.com" 的用户发送共享邀请, 并发送一封邮件, 其中包含有关正在合作的文件的消息。
+本示例向电子邮件地址为“ryan@contoso.com”的用户发送共享邀请，其中包含关于协作文件的讯息。
 此邀请授予 Ryan 对该文件的读写访问权限。
 
 ### <a name="http-request"></a>HTTP 请求
@@ -78,7 +80,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [permission](../resources/permission.md) 集合对象。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -97,19 +99,19 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -148,7 +150,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>备注
 
-* 具有 `personal` **driveType**（OneDrive 个人版）的[驱动器](../resources/drive.md)无法创建或修改根 DriveItem 上的权限。
+* **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
 * 如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration)。
 
 ## <a name="error-responses"></a>错误响应

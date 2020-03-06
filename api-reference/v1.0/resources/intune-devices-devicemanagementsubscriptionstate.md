@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3aef499e90222dc1e60feebce334e1797e5b299
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 36494fc309e1dc5bd7612117a924136e2f1b2bf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356924"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533275"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 租户移动设备管理订阅状态。
 
@@ -22,12 +24,12 @@ ms.locfileid: "37356924"
 |成员|值|说明|
 |:---|:---|:---|
 |决|0|Pending|
-|工作|1|可用|
-|警告|双面|警告|
-|禁用|第三章|已禁用|
-|deleted|4|Deleted|
-|堵塞|5|Blocked|
-|lockedOut|utf-8|LockedOut|
+|工作|1 |活动|
+|警告|2 |警告|
+|禁用|3 |Disabled|
+|deleted|4 |Deleted|
+|堵塞|5 |Blocked|
+|lockedOut|8 |LockedOut|
 
 
 

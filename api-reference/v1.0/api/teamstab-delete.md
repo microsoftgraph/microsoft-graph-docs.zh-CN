@@ -1,22 +1,24 @@
 ---
 title: 从频道中删除选项卡
-description: '从团队中的指定通道中删除 (unpins) 选项卡。 '
+description: '从团队中的指定通道中删除（unpins）选项卡。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dbba4b8996a86e8ff71d0dd115b0a00362e103f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 80d15470e172d9b068a02289bd416e1dd6fd41a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509270"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
+命名空间：microsoft.graph
 
 
-从[团队](../resources/team.md)中的指定[通道](../resources/channel.md)中删除 (unpins) 选项卡。 
+
+从[团队](../resources/team.md)中的指定[通道](../resources/channel.md)中删除（unpins）选项卡。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

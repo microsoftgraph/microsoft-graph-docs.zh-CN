@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 030e0fbe8fcae0408f51c20882d49e50d825cdb8
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 50555ff47d81d96def360fe55fe8684f6ff07994
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539293"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531948"
 ---
 # <a name="certificateauthority-resource-type"></a>certificateAuthority 资源类型
+
+命名空间：microsoft.graph
 
 表示证书颁发机构。
 

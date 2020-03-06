@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7a2040bbe357a7cc89dffed1ad4332bf89077204
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93069c2f9f2aa46c5d6d0f2f992762efab062064
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034760"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533860"
 ---
 # <a name="realtedcontact-resource-type"></a>realtedContact 资源类型
+
+命名空间：microsoft.graph
 
 与为监护人、工具、医生等提供信息的[educationUser](../resources/educationuser.md)相关的联系人记录。
 

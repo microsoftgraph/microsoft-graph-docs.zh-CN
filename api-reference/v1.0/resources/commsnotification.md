@@ -5,22 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7d94b7462c50ca5a9304a2c4c320f6e244815373
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533048"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
+
+命名空间：microsoft.graph
 
 通信服务器发布的用于通知更改的通信通知基类型。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
-| resourceUrl       | String  | 已更改的资源的 URI。                      |
+| changeType     | 字符串  | 可取值为：`created`、`updated`、`deleted`。      |
+| resourceUrl       | 字符串  | 已更改的资源的 URI。                      |
 
 > **注意：** `resourceData`可用作其他数据。 它可以是实体，也可以是实体集合，具体取决于通知中打包的更改数。
 

@@ -5,16 +5,18 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 346991b4cf4d545b3d7ccafb87cab9c9b698c940
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff33c63cd21be11a05f147c0821502dc9a2c9202
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533916"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 
-区域表示一个或多个相邻的单元格，例如单元格、行、列、单元格块等。
+命名空间：microsoft.graph
+
+区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
 
 
 ## <a name="methods"></a>方法

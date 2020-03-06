@@ -5,15 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b220de863e70c9540915ee6ba42480417576e96e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163d13fd4045442188aee76c39b5f2bfa6af893a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021534"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509960"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
-获取指定的[schemaExtension](../resources/schemaextension.md)定义的属性。
+
+命名空间： microsoft. graph 获取指定的[schemaExtension](../resources/schemaextension.md)定义的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +45,7 @@ GET /schemaExtensions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

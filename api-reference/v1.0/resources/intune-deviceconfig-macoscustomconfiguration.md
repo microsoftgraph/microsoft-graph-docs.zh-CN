@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5b85ff0e1be7f12f890fb6bb8a8806080277858
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 9224a51f6d29999d1cbbe66e07228adf599773a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360060"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532460"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 macOSCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List macOSCustomConfigurations](../api/intune-deviceconfig-macoscustomconfiguration-list.md)|[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 集合|列出 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 对象的属性和关系。|
@@ -39,7 +41,7 @@ ms.locfileid: "37360060"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|payloadName|String|向用户显示的名称。|
+|payloadName|字符串|向用户显示的名称。|
 |payloadFileName|String|有效负载文件名 (*.mobileconfig | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 

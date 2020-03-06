@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc2c48ebad59f70a77586a03ba924a6fd9ed7490
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: baa03f7c2442c4ce624a5f581c699bfa4af63611
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426417"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511514"
 ---
 # <a name="message-move"></a>message: move
+
+命名空间：microsoft.graph
 
 将邮件移动到指定用户的邮箱中的另一个文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 
@@ -64,7 +66,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 以下请求会将制定邮件移至“已删除邮件”文件夹，由其已知文件夹名称 `deleteditems` 标识。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -79,19 +81,19 @@ Content-type: application/json
   "destinationId": "deleteditems"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-move-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

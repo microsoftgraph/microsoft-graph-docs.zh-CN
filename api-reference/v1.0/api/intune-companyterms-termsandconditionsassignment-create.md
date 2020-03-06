@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6fef918c27167e5254624a495f3bb3fa46867124
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 8740a4c3522b66434de36a691cd8caa3f2779acf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357743"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515432"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37357743"
 POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。|
+|id|字符串|实体的唯一标识符。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 

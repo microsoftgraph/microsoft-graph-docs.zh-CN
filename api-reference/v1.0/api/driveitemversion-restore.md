@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0a528e3484e0cf6cd7c8a4ad8f1c85287f063106
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37f4928e6e3550cb7e022ed4b0ea1ab969a43ec3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370506"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517634"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
+
+命名空间：microsoft.graph
 
 将 DriveItem 的以前版本还原为当前版本。 这将使用以前版本的内容创建一个新版本，但保留该文件的所有现有版本。
 
@@ -47,25 +49,25 @@ POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 本示例还原由 `{item-id}` 和 `{version-id}` 标识的文件的一个版本。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: columnDefinition 资源上的 calculatedColumn 指出列数据基于站点中的其他列计算。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 19f11c7033f03dbf4a190acbd6df54bbdfe1fa24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77db50430d2d28eb8d23a7e45018b84734dcb77b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029972"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532002"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn 资源类型
+
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **calculatedColumn** 指出列数据基于站点中的其他列计算。
 
@@ -36,11 +38,11 @@ ms.locfileid: "36029972"
 | 属性名称  | 类型    | 说明
 |:---------------|:--------|:--------------------------------------------------
 | **format**     | string  | 对于`dateTime` 输出类型，值的格式。 必须为 `dateOnly` 或 `dateTime` 的其中一个。
-| **formula**    | string  | 用于计算此列的值的公式。
+| **formula**    | 字符串  | 用于计算此列的值的公式。
 | **outputType** | string  | 用于设置此列中值的格式的输出类型。 必须为 `boolean`、`currency`、`dateTime`、`number` 或 `text`.的其中一个。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息, 请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
+有关详细信息，请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 

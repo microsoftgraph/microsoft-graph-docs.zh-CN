@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 53705781c8e9465b06199ba3c7714d29a416ee47
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 06af31a4d0da95bd39fbc5f9c1fd435c9621c5a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864717"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516898"
 ---
 # <a name="group-validateproperties"></a>组： validateProperties
+
+命名空间：microsoft.graph
 
 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。  在尝试[更新](group-update.md)Office 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性，请使用[directoryobject： validateProperties](directoryobject-validateproperties.md)函数。
 
@@ -69,7 +71,7 @@ POST /groups/{id}/validateProperties
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -85,19 +87,19 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

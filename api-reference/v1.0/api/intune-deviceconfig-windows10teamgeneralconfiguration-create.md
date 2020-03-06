@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aa6588a3696c37202965e2cae84513f0a49e9d6
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 07bb288772d0213e578487821a3e22e324a4c4f4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37365199"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42513942"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>创建 windows10TeamGeneralConfiguration
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37365199"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -56,8 +58,8 @@ POST /deviceManagement/deviceConfigurations
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
-|azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
-|azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
+|azureOperationalInsightsWorkspaceId|字符串|Azure 操作见解工作区 ID。|
+|azureOperationalInsightsWorkspaceKey|字符串|Azure 操作见解工作区键。|
 |connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
 |maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|

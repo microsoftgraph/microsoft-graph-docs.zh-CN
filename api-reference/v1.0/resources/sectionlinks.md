@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 76a79c6f2fa148e492d5ded3295364efcb0d1a32
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4fecff18c2271da383a03002e38eed4bf42aa93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034536"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533779"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
+
+命名空间：microsoft.graph
 
 用于打开 OneNote 分区的链接。
 
@@ -38,7 +40,7 @@ ms.locfileid: "36034536"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端, 则打开该分区。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则打开该分区。|
 |oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的部分。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

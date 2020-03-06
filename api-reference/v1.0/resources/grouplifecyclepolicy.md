@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 11f42c07857f94e081d79c6555e4608283dd9381
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acd1e2b8b66d7cb643e483ee099a3c9909df5d9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532927"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
+命名空间：microsoft.graph
+
 表示 Office 365 组的生命周期策略。 使用组生命周期策略，管理员可以为组设置到期期限。 例如，组在 180 天后到期。 如果组到期，组的所有者必须在管理员定义的时间段内续订组。 续订后，组的有效期就会延长策略中定义的天数。 例如，续订后，组的新到期时间是在 180 天后。 如果不续订组，组就会到期并被删除。 可以在删除后的 30 天内还原组。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -31,7 +33,7 @@ ms.locfileid: "36030266"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
+|alternateNotificationEmails|字符串| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
 |id|Guid| 策略的唯一标识符。 只读。|
 |managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |

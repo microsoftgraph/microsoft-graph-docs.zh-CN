@@ -7,14 +7,16 @@ localization_priority: Normal
 description: columnDefinition 资源上的 booleanColumn 指示该列包含一个布尔值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: baa9b17088a025f25b68b6dd7eb78571b1013837
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aec08623e2ee51a17a83ba0ec139c0524258378c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029960"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531995"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
+
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **booleanColumn** 指示该列包含一个布尔值。
 

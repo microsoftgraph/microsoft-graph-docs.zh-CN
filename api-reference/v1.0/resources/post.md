@@ -5,15 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 43837b1403b7b213b1b8a30002aeb53b8fa297a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f03117cce8e21f82ada720477da5db24c2a8516
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035096"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533961"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
-表示 [conversationThread](conversationthread.md) 实体中的各个帖子项。
+
+命名空间： microsoft. graph 表示[conversationThread](conversationthread.md)实体中的单个张贴项。
 
 即使无法显式创建帖子，也可以执行以下任一操作来创建帖子：
 
@@ -57,7 +58,7 @@ ms.locfileid: "36035096"
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
 |receivedDateTime|DateTimeOffset|接收到帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
@@ -67,7 +68,7 @@ ms.locfileid: "36035096"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
-|extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
+|extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[帖子](post.md)| 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|

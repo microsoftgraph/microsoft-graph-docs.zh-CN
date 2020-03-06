@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efb70f7a7dfc0be9d0c1f1a0bf882b52d15fd4bd
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 33032ef87af753758a3c5224c8ae383d056a014e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37355321"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516277"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>更新 managedDeviceMobileAppConfigurationDeviceStatus
+
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,13 +52,13 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
-|userName|String|报告的用户名|
+|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
+|userName|字符串|报告的用户名|
 |deviceModel|String|报告的设备模型|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 
 

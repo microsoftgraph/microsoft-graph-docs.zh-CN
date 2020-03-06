@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 769185889ea21851ce3c740b1153b3d27322cd6f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1c50cc5e0f8901401c3533dca985f366ca17daef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530702"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含 iOS 的合规性设置。
 
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosCompliancePolicies](../api/intune-deviceconfig-ioscompliancepolicy-list.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 集合|列出 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象的属性和关系。|
@@ -47,7 +49,7 @@ ms.locfileid: "37359185"
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passcodeRequired|Boolean|指示是否需要密码。|
-|osMinimumVersion|String|最低 IOS 版本。|
+|osMinimumVersion|字符串|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
 |securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|

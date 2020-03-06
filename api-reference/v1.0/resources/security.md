@@ -5,18 +5,20 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 87bd321a3c5e66cdc5d4fdc7fcb1407d02fbca1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89db6a8efbf50042e5514758ee5a7ae3b7f88de6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034452"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533766"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
+命名空间：microsoft.graph
+
 安全资源是安全对象模型的入口点。 它返回单一实例安全资源。 它不包含任何可用属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
