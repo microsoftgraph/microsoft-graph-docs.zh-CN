@@ -5,28 +5,30 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0a528e3484e0cf6cd7c8a4ad8f1c85287f063106
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37f4928e6e3550cb7e022ed4b0ea1ab969a43ec3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370506"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517634"
 ---
-# <a name="restore-a-previous-version-of-a-driveitem"></a><span data-ttu-id="abae7-104">还原 DriveItem 的以前版本</span><span class="sxs-lookup"><span data-stu-id="abae7-104">Restore a previous version of a DriveItem</span></span>
+# <a name="restore-a-previous-version-of-a-driveitem"></a><span data-ttu-id="dad75-104">还原 DriveItem 的以前版本</span><span class="sxs-lookup"><span data-stu-id="dad75-104">Restore a previous version of a DriveItem</span></span>
 
-<span data-ttu-id="abae7-105">将 DriveItem 的以前版本还原为当前版本。</span><span class="sxs-lookup"><span data-stu-id="abae7-105">Restore a previous version of a DriveItem to be the current version.</span></span> <span data-ttu-id="abae7-106">这将使用以前版本的内容创建一个新版本，但保留该文件的所有现有版本。</span><span class="sxs-lookup"><span data-stu-id="abae7-106">This will create a new version with the contents of the previous version, but preserves all existing versions of the file.</span></span>
+<span data-ttu-id="dad75-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dad75-105">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="abae7-107">权限</span><span class="sxs-lookup"><span data-stu-id="abae7-107">Permissions</span></span>
+<span data-ttu-id="dad75-106">将 DriveItem 的以前版本还原为当前版本。</span><span class="sxs-lookup"><span data-stu-id="dad75-106">Restore a previous version of a DriveItem to be the current version.</span></span> <span data-ttu-id="dad75-107">这将使用以前版本的内容创建一个新版本，但保留该文件的所有现有版本。</span><span class="sxs-lookup"><span data-stu-id="dad75-107">This will create a new version with the contents of the previous version, but preserves all existing versions of the file.</span></span>
 
-<span data-ttu-id="abae7-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="abae7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dad75-108">权限</span><span class="sxs-lookup"><span data-stu-id="dad75-108">Permissions</span></span>
 
-|<span data-ttu-id="abae7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="abae7-110">Permission type</span></span>      | <span data-ttu-id="abae7-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="abae7-111">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="dad75-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dad75-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="dad75-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="dad75-111">Permission type</span></span>      | <span data-ttu-id="dad75-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dad75-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="abae7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="abae7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="abae7-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abae7-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="abae7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="abae7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abae7-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abae7-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="abae7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="abae7-116">Application</span></span> | <span data-ttu-id="abae7-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abae7-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dad75-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dad75-113">Delegated (work or school account)</span></span> | <span data-ttu-id="dad75-114">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dad75-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dad75-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dad75-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dad75-116">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dad75-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dad75-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="dad75-117">Application</span></span> | <span data-ttu-id="dad75-118">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dad75-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="abae7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="abae7-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dad75-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dad75-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,43 +40,43 @@ POST /sites/{siteId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 ```
 
-### <a name="request-body"></a><span data-ttu-id="abae7-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="abae7-119">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="dad75-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="dad75-120">Request body</span></span>
 
-<span data-ttu-id="abae7-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="abae7-120">No request body is required.</span></span>
+<span data-ttu-id="dad75-121">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="dad75-121">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="abae7-121">示例</span><span class="sxs-lookup"><span data-stu-id="abae7-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dad75-122">示例</span><span class="sxs-lookup"><span data-stu-id="dad75-122">Example</span></span>
 
-<span data-ttu-id="abae7-122">本示例还原由 `{item-id}` 和 `{version-id}` 标识的文件的一个版本。</span><span class="sxs-lookup"><span data-stu-id="abae7-122">This example restores a version of a file identified by `{item-id}` and `{version-id}`.</span></span>
+<span data-ttu-id="dad75-123">本示例还原由 `{item-id}` 和 `{version-id}` 标识的文件的一个版本。</span><span class="sxs-lookup"><span data-stu-id="dad75-123">This example restores a version of a file identified by `{item-id}` and `{version-id}`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="abae7-123">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="abae7-123">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dad75-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="dad75-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="abae7-124">C#</span><span class="sxs-lookup"><span data-stu-id="abae7-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dad75-125">C#</span><span class="sxs-lookup"><span data-stu-id="dad75-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="abae7-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="abae7-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dad75-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dad75-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="abae7-126">目标-C</span><span class="sxs-lookup"><span data-stu-id="abae7-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dad75-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dad75-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="abae7-127">Java</span><span class="sxs-lookup"><span data-stu-id="abae7-127">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="dad75-128">Java</span><span class="sxs-lookup"><span data-stu-id="dad75-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="abae7-128">响应</span><span class="sxs-lookup"><span data-stu-id="abae7-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dad75-129">响应</span><span class="sxs-lookup"><span data-stu-id="dad75-129">Response</span></span>
 
-<span data-ttu-id="abae7-129">如果成功，该 API 调用会返回 `204 No Content`。</span><span class="sxs-lookup"><span data-stu-id="abae7-129">If successful, the API call returns a `204 No Content`.</span></span>
+<span data-ttu-id="dad75-130">如果成功，该 API 调用会返回 `204 No Content`。</span><span class="sxs-lookup"><span data-stu-id="dad75-130">If successful, the API call returns a `204 No Content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 

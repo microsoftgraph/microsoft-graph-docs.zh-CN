@@ -5,36 +5,38 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 87bd321a3c5e66cdc5d4fdc7fcb1407d02fbca1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89db6a8efbf50042e5514758ee5a7ae3b7f88de6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034452"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533766"
 ---
-# <a name="security-resource-type"></a><span data-ttu-id="53425-105">安全资源类型</span><span class="sxs-lookup"><span data-stu-id="53425-105">security resource type</span></span>
+# <a name="security-resource-type"></a><span data-ttu-id="fcdd5-105">安全资源类型</span><span class="sxs-lookup"><span data-stu-id="fcdd5-105">security resource type</span></span>
 
-<span data-ttu-id="53425-106">安全资源是安全对象模型的入口点。</span><span class="sxs-lookup"><span data-stu-id="53425-106">The security resource is the entry point for the Security object model.</span></span> <span data-ttu-id="53425-107">它返回单一实例安全资源。</span><span class="sxs-lookup"><span data-stu-id="53425-107">It returns a singleton security resource.</span></span> <span data-ttu-id="53425-108">它不包含任何可用属性。</span><span class="sxs-lookup"><span data-stu-id="53425-108">It doesn't contain any usable properties.</span></span>
+<span data-ttu-id="fcdd5-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fcdd5-106">Namespace: microsoft.graph</span></span>
 
-## <a name="methods"></a><span data-ttu-id="53425-109">方法</span><span class="sxs-lookup"><span data-stu-id="53425-109">Methods</span></span>
+<span data-ttu-id="fcdd5-107">安全资源是安全对象模型的入口点。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-107">The security resource is the entry point for the Security object model.</span></span> <span data-ttu-id="fcdd5-108">它返回单一实例安全资源。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-108">It returns a singleton security resource.</span></span> <span data-ttu-id="fcdd5-109">它不包含任何可用属性。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-109">It doesn't contain any usable properties.</span></span>
 
-| <span data-ttu-id="53425-110">方法</span><span class="sxs-lookup"><span data-stu-id="53425-110">Method</span></span>       | <span data-ttu-id="53425-111">返回类型</span><span class="sxs-lookup"><span data-stu-id="53425-111">Return Type</span></span> | <span data-ttu-id="53425-112">说明</span><span class="sxs-lookup"><span data-stu-id="53425-112">Description</span></span> |
+## <a name="methods"></a><span data-ttu-id="fcdd5-110">Methods</span><span class="sxs-lookup"><span data-stu-id="fcdd5-110">Methods</span></span>
+
+| <span data-ttu-id="fcdd5-111">方法</span><span class="sxs-lookup"><span data-stu-id="fcdd5-111">Method</span></span>       | <span data-ttu-id="fcdd5-112">返回类型</span><span class="sxs-lookup"><span data-stu-id="fcdd5-112">Return Type</span></span> | <span data-ttu-id="fcdd5-113">说明</span><span class="sxs-lookup"><span data-stu-id="fcdd5-113">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="53425-113">列出警报</span><span class="sxs-lookup"><span data-stu-id="53425-113">List alerts</span></span>](../api/alert-list.md) | <span data-ttu-id="53425-114">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="53425-114">[alert](alert.md) collection</span></span> | <span data-ttu-id="53425-115">获取一个警报对象集合。</span><span class="sxs-lookup"><span data-stu-id="53425-115">Get a alert object collection.</span></span> |
-| [<span data-ttu-id="53425-116">获取通知</span><span class="sxs-lookup"><span data-stu-id="53425-116">get alerts</span></span>](../api/alert-get.md) | <span data-ttu-id="53425-117">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="53425-117">[alert](alert.md) collection</span></span> | <span data-ttu-id="53425-118">获取一个警报对象。</span><span class="sxs-lookup"><span data-stu-id="53425-118">Get a alert object.</span></span> |
-| [<span data-ttu-id="53425-119">更新警报</span><span class="sxs-lookup"><span data-stu-id="53425-119">Update alerts</span></span>](../api/alert-update.md) | <span data-ttu-id="53425-120">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="53425-120">[alert](alert.md) collection</span></span> | <span data-ttu-id="53425-121">获取一个警报对象。</span><span class="sxs-lookup"><span data-stu-id="53425-121">Get a alert object.</span></span> |
+| [<span data-ttu-id="fcdd5-114">列出警报</span><span class="sxs-lookup"><span data-stu-id="fcdd5-114">List alerts</span></span>](../api/alert-list.md) | <span data-ttu-id="fcdd5-115">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="fcdd5-115">[alert](alert.md) collection</span></span> | <span data-ttu-id="fcdd5-116">获取一个警报对象集合。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-116">Get a alert object collection.</span></span> |
+| [<span data-ttu-id="fcdd5-117">获取通知</span><span class="sxs-lookup"><span data-stu-id="fcdd5-117">get alerts</span></span>](../api/alert-get.md) | <span data-ttu-id="fcdd5-118">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="fcdd5-118">[alert](alert.md) collection</span></span> | <span data-ttu-id="fcdd5-119">获取一个警报对象。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-119">Get a alert object.</span></span> |
+| [<span data-ttu-id="fcdd5-120">更新警报</span><span class="sxs-lookup"><span data-stu-id="fcdd5-120">Update alerts</span></span>](../api/alert-update.md) | <span data-ttu-id="fcdd5-121">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="fcdd5-121">[alert](alert.md) collection</span></span> | <span data-ttu-id="fcdd5-122">获取一个警报对象。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-122">Get a alert object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="53425-122">属性</span><span class="sxs-lookup"><span data-stu-id="53425-122">Properties</span></span>
-<span data-ttu-id="53425-123">无</span><span class="sxs-lookup"><span data-stu-id="53425-123">None</span></span>
+## <a name="properties"></a><span data-ttu-id="fcdd5-123">属性</span><span class="sxs-lookup"><span data-stu-id="fcdd5-123">Properties</span></span>
+<span data-ttu-id="fcdd5-124">无</span><span class="sxs-lookup"><span data-stu-id="fcdd5-124">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="53425-124">关系</span><span class="sxs-lookup"><span data-stu-id="53425-124">Relationships</span></span>
-| <span data-ttu-id="53425-125">关系</span><span class="sxs-lookup"><span data-stu-id="53425-125">Relationship</span></span> | <span data-ttu-id="53425-126">类型</span><span class="sxs-lookup"><span data-stu-id="53425-126">Type</span></span>        | <span data-ttu-id="53425-127">说明</span><span class="sxs-lookup"><span data-stu-id="53425-127">Description</span></span> |
+## <a name="relationships"></a><span data-ttu-id="fcdd5-125">关系</span><span class="sxs-lookup"><span data-stu-id="fcdd5-125">Relationships</span></span>
+| <span data-ttu-id="fcdd5-126">关系</span><span class="sxs-lookup"><span data-stu-id="fcdd5-126">Relationship</span></span> | <span data-ttu-id="fcdd5-127">类型</span><span class="sxs-lookup"><span data-stu-id="fcdd5-127">Type</span></span>        | <span data-ttu-id="fcdd5-128">说明</span><span class="sxs-lookup"><span data-stu-id="fcdd5-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="53425-128">警报</span><span class="sxs-lookup"><span data-stu-id="53425-128">alerts</span></span>|<span data-ttu-id="53425-129">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="53425-129">[alert](alert.md) collection</span></span>| <span data-ttu-id="53425-p103">只读。可为空。</span><span class="sxs-lookup"><span data-stu-id="53425-p103">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="fcdd5-129">警报</span><span class="sxs-lookup"><span data-stu-id="fcdd5-129">alerts</span></span>|<span data-ttu-id="fcdd5-130">[警报](alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="fcdd5-130">[alert](alert.md) collection</span></span>| <span data-ttu-id="fcdd5-p103">只读。可为空。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-p103">Read-only. Nullable.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="53425-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="53425-132">JSON representation</span></span>
-<span data-ttu-id="53425-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="53425-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fcdd5-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fcdd5-133">JSON representation</span></span>
+<span data-ttu-id="fcdd5-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-134">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -47,9 +49,9 @@ ms.locfileid: "36034452"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="53425-134">示例</span><span class="sxs-lookup"><span data-stu-id="53425-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fcdd5-135">示例</span><span class="sxs-lookup"><span data-stu-id="fcdd5-135">Example</span></span>
 
-<span data-ttu-id="53425-135">**安全**资源在图形的根目录中可用。</span><span class="sxs-lookup"><span data-stu-id="53425-135">The **security** resource is available at the root of the graph.</span></span>
+<span data-ttu-id="fcdd5-136">**安全**资源在图形的根目录中可用。</span><span class="sxs-lookup"><span data-stu-id="fcdd5-136">The **security** resource is available at the root of the graph.</span></span>
 
 <!--{
   "blockType": "request"
