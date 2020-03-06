@@ -1,25 +1,27 @@
 ---
-title: '用户: revokeSignInSessions'
-description: 通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户的刷新令牌失效 (以及用户浏览器中的会话 cookie)。
+title: 用户： revokeSignInSessions
+description: 通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户的刷新令牌失效（以及用户浏览器中的会话 cookie）。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1e6f0d737d080314273271063cd970b241366dcc
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: d2c5104723e3dbe4a775f7905e04def52fe32283
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450632"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508931"
 ---
-# <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
+# <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
-通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间, 使向用户 (以及用户浏览器中的会话 cookie) 发出的所有刷新令牌失效。 通常, 如果用户有丢失或被盗的设备, 则执行此操作 (由用户或管理员执行)。 此操作通过要求用户再次登录到之前已同意的所有应用程序 (独立于设备) 来阻止对组织中的应用程序的数据的访问。
+命名空间：microsoft.graph
 
->如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌, 应用程序将收到错误。 如果发生这种情况, 应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌, 这将强制用户登录。
+通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间，使向用户（以及用户浏览器中的会话 cookie）发出的所有刷新令牌失效。 通常，如果用户有丢失或被盗的设备，则执行此操作（由用户或管理员执行）。 此操作通过要求用户再次登录到之前已同意的所有应用程序（独立于设备）来阻止对组织中的应用程序的数据的访问。
+
+>如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
 
 >[!NOTE]
->在调用**revokeSignInSessions**后, 可能会有几分钟的短暂延迟才会被吊销令牌。
+>在调用**revokeSignInSessions**后，可能会有几分钟的短暂延迟才会被吊销令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -52,14 +54,14 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 >[!NOTE]
->此 API 存在[已知问题](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code)。 它返回不同的 HTTP 响应代码。
+>此 API 存在一个[已知问题](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code)。 它返回不同的 HTTP 响应代码。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_revokesigninsessionss"
@@ -67,19 +69,19 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```http
 POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

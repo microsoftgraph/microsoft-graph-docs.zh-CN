@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5224702d22d111b54d29db15da3c20923ccf7317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dd6f5405f419561a2ec7587fab8f36245947f257
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035642"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534095"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
+
+命名空间：microsoft.graph
 
 用于打开 OneNote 页面的链接。
 
@@ -38,7 +40,7 @@ ms.locfileid: "36035642"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端, 则在其中打开页面。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开页面。|
 |oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的页面。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

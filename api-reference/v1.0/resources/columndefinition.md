@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 下面是 ColumnDefinition 资源的 JSON 表示形式。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3a02721c5289b1d49077e1b2d9fa1017f0c53021
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d178fce760def6ae74fa6fa6c520139e2f778dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032870"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533058"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
+
+命名空间：microsoft.graph
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,16 +59,16 @@ ms.locfileid: "36032870"
 
 **columnDefinition** 资源具有以下属性。
 
-| 属性名           | 类型    | 说明
+| 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **说明**         | string  | 面向用户的列描述。
+| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **说明**         | 字符串  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
 | **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
 | **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
 | **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **名称**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
 
@@ -74,7 +76,7 @@ ms.locfileid: "36032870"
 以下属性表示列存储的数据类型以及该数据的其他设置。
 这些属性是互相排斥的 - 列只能指定其中一个。
 
-| 属性名     | 类型                    | 说明
+| 属性名称     | 类型                    | 说明
 |:------------------|:------------------------|:-------------------------------
 | **boolean**       | [booleanColumn][]       | 此列存储布尔值。
 | **calculated**    | [calculatedColumn][]    | 根据其他列计算此列的数据。
@@ -88,7 +90,7 @@ ms.locfileid: "36032870"
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-虽然上面表示的是最常见的字段类型, 但此 API 仍缺少一些。
+虽然上面表示的是最常见的字段类型，但此 API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注

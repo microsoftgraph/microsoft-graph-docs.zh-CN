@@ -7,14 +7,16 @@ localization_priority: Normal
 description: FolderView 资源提供或设置关于文件夹的用户体验建议。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67ec2e079348cc45664804d39314e6c81f4548e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a614f0a14f6dc12df412692c01b8005e62665143
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532940"
 ---
 # <a name="folderview-resource-type"></a>FolderView 资源类型
+
+命名空间：microsoft.graph
 
 **FolderView** 资源提供或设置关于文件夹的用户体验建议。
 
@@ -36,8 +38,8 @@ ms.locfileid: "36032450"
 
 | 属性名称         | 类型   | 说明
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | 文件夹应采用的排序方法。
-| **sortOrder**         | string | 如果为 true，表明应按降序排列项。 否则，应按升序排列项。
+| **sortBy**            | 字符串 | 文件夹应采用的排序方法。
+| **sortOrder**         | 字符串 | 如果为 true，表明应按降序排列项。 否则，应按升序排列项。
 | **viewType**          | string | 应用于表示文件夹的视图类型。
 
 可以使用 _sortBy_ 属性控制遵循 **viewType** Facet 的应用中项的排序顺序。

@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc952ba931e1a0cb4302dac881f2d5ec015c591
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 3a23344a18979c7d1aa69b8e841007812797b238
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531303"
 ---
 # <a name="insightidentity"></a>insightIdentity
+
+命名空间：microsoft.graph
 
 包含[sharedInsight](insights-shared.md)项目的属性的复杂类型。 
 
@@ -38,5 +40,5 @@ ms.locfileid: "39844356"
 | 属性              | 类型          | 说明  |
 | -------------         |-----------    | -------------|
 | displayName       | 字符串          | 共享项目的用户的显示名称。 |
-| id              | String        | 共享项的用户的 id。     |
+| id              | 字符串        | 共享项的用户的 id。     |
 | address             | String      | 共享项目的用户的电子邮件地址。  |

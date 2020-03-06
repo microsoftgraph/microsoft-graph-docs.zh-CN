@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fadb8821c1009fedf629dc391e973d94f6ee8c76
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 21ff0cfc5e38802a7c5b130fb97ff6a9cda594d3
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733331"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636807"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const profilePhoto = {
 };
 
 let res = await client.api('/users/{id|userPrincipalName}/photo')
-    .update({profilePhoto : profilePhoto});
+    .update(profilePhoto);
 
 ```

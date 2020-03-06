@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34762caabd3cb4034f631c3449cfecc76371fbc7
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 88f9b778e2639b1b4b68618c59ea2ea0cd93f351
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354887"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515768"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [auditEvent](../resources/intune-auditing-auditevent.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37354887"
 POST /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -50,17 +52,17 @@ POST /deviceManagement/auditEvents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|事件显示名称。|
-|componentName|String|组件名称。|
+|displayName|字符串|事件显示名称。|
+|componentName|字符串|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|String|活动的友好名称。|
+|activity|字符串|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|String|执行的活动类型。|
-|activityOperationType|String|活动的 HTTP 操作类型。|
+|activityType|字符串|执行的活动类型。|
+|activityOperationType|字符串|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|String|审核类别。|
+|“类别”|字符串|审核类别。|
 
 
 

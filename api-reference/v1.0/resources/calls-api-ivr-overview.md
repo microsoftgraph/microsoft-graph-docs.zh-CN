@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 9cbf0b9640c13c45730aa5842e150c4ad58767c4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 1e056bcaf94b622c66cf0a1785c8de523fe8f38f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913455"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531968"
 ---
 # <a name="ivr-scenarios-in-calls"></a>调用中的 IVR 方案
+
+命名空间：microsoft.graph
 
 以下是 Microsoft Graph 中的调用 Api 支持的交互语音响应（IVR）方案：
 

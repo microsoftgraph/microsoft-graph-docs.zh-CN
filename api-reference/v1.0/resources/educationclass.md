@@ -5,19 +5,21 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d767f25fd5d383d297f3765498f3558a162f2716
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531540"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
+
+命名空间：microsoft.graph
 
 表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -29,7 +31,7 @@ ms.locfileid: "36029328"
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) 集合| 获取课程的教师列表。|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
-|[Get group](../api/educationclass-get-group.md) |[组](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[获取组](../api/educationclass-get-group.md) |[组](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
 |[删除](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
 
@@ -38,11 +40,11 @@ ms.locfileid: "36029328"
 |:---------------|:--------|:----------|
 |id| 字符串| 课程的唯一标识符。|
 |说明|String| 课程说明。|
-|displayName|String| 课程名称。|
+|displayName|字符串| 课程名称。|
 |mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
-|classCode|String| 学校用于标识课程的课程代码。|
-|externalId|String| 来自同步系统的课程 ID。 |
+|classCode|字符串| 学校用于标识课程的课程代码。|
+|externalId|字符串| 来自同步系统的课程 ID。 |
 |externalName|String|同步系统中的课程名称。|
 |externalSource|educationExternalSource| 此课程的创建方式。 可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
 |term|[educationTerm](educationterm.md)|此课程的学期。|
@@ -50,7 +52,7 @@ ms.locfileid: "36029328"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|成员|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 Null。|
+|成员|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为空。|
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
 |group|[组](../resources/group.md)| 与此类对应的目录组。|

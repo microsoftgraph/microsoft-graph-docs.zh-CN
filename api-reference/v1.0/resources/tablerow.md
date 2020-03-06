@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 44f9a60197c066115f704b45d7382ba88563aaeb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6b134cb91d0c59c8e89848bfb5397fc13f5b469
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033990"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533583"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
+
+命名空间：microsoft.graph
 
 表示表中的行。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

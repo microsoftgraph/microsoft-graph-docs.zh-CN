@@ -6,18 +6,20 @@ description: CommentAction 对象提供有关对项目所做的注释的信息�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 72502e466ff90ec0a299eb993346968c9038e2d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3720d84624fa728a168515beb28422ab355b335
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029678"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531807"
 ---
 # <a name="commentaction-resource-type"></a>commentAction 资源类型
 
+命名空间：microsoft.graph
+
 **CommentAction**资源提供有关对项目进行的注释[活动][]的信息。
 
->**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [活动]: itemactivity.md
 

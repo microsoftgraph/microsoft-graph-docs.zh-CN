@@ -5,20 +5,22 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c9b81852e58308fe1ec412853f519a65c2d09d4f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 481dbb4c1f67a1f705fc752e700b412779990e86
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517865"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
+命名空间：microsoft.graph
+
 检索[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
 
-在验证所有权之前, 不能使用 Azure AD 租户相关联的域。 若要验证域的所有权, 请检索域验证记录并将详细信息添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
+在验证所有权之前，不能使用 Azure AD 租户相关联的域。 若要验证域的所有权，请检索域验证记录并将详细信息添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
-根域需要验证。 例如, contoso.com 需要验证。 如果验证了根域, 则会自动验证根域的子域。 例如, 如果 contoso.com 已经过验证, 则会自动验证 subdomain.contoso.com。
+根域需要验证。 例如，contoso.com 需要验证。 如果验证了根域，则会自动验证根域的子域。 例如，如果 contoso.com 已经过验证，则会自动验证 subdomain.contoso.com。
 
 ## <a name="permissions"></a>权限
 
@@ -56,13 +58,13 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_verificationdnsrecords"
@@ -70,19 +72,19 @@ GET /domains/{id}/verificationDnsRecords
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-verificationdnsrecords-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-verificationdnsrecords-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-verificationdnsrecords-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-verificationdnsrecords-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

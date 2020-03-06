@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c69dd039ee62e422c069fa00ea260cbbfda72205
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7437986c3da827f0c36fdddfad59653d75fc7f1f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510695"
 ---
 # <a name="range-boundingrect"></a>Range:BoundingRect
+
+命名空间：microsoft.graph
 
 获取包含指定区域的最小 range 对象。例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E16”。
 ## <a name="permissions"></a>权限

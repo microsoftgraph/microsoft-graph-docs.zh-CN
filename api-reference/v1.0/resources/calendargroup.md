@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3931359b3b7eec65e2c675fbc5b6ef40176b13fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 230d6b0f90b8dec5ad223b7243fbc710dd720a30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033052"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531980"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
+命名空间：microsoft.graph
+
 一组用户日历。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                      | 返回类型                        | 说明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |

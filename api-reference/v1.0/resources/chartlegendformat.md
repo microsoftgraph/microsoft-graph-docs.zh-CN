@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2148b6b5baf8bb680f85954d000da097bcf8f0b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3d7d9a0a74a56a6e0ae99aa7431779dc7164265
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531849"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat 资源类型
+
+命名空间：microsoft.graph
 
 封装图表图例的格式属性。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性

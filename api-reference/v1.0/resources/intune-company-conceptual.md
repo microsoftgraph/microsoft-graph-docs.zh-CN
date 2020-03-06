@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f58a3b5bcdaa8c35bb0b9ea0f60261909705519e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a0d6e64e8423896c5a506886f7f4cdc3c70ded11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360417"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532696"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune 中的公司条款和条件
+
+命名空间：microsoft.graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 

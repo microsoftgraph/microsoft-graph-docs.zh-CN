@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4ecdc4c6f249b6783b023d0a69832a9415fc8549
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7d42633321c78eb03942072731b0636a8ca73b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032912"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531824"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
+
+命名空间：microsoft.graph
 
 代表图表上的系列。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

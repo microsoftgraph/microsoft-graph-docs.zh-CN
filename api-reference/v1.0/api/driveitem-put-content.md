@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: '通过简单上传 API，可以在一个 API 调用中提供新文件的内容或更新现有文件的内容。 '
 doc_type: apiPageType
-ms.openlocfilehash: f2918e1fddbd91fe843b4f2d02a470a90f798ec9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f525b5ea974ee133d57943b05079984a10c532cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373411"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517676"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
+
+命名空间：microsoft.graph
 
 通过简单的上载 API，你可以在单个 API 调用中提供新文件的内容，也可以更新现有文件的内容。此方法仅支持最大大小为 4 MB 的文件。
 
@@ -98,7 +100,7 @@ Content-Type: application/json
 此示例将文件的内容替换为已知 ID。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -107,11 +109,11 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

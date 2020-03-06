@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 按 ID 或路径更新 DriveItem 元数据。
 doc_type: apiPageType
-ms.openlocfilehash: fbeae35750f46d8f205e489b8d830d3ffa0885e0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 59fdd390e9e4b0bdb66837b1bd360add50e7903b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370548"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517655"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
+
+命名空间：microsoft.graph
 
 按 ID 或路径更新 [DriveItem](../resources/driveitem.md) 元数据。
 
@@ -64,7 +66,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 本示例将 DriveItem 资源重命名为“new-file-name.docx”。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
@@ -75,19 +77,19 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

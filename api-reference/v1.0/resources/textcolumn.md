@@ -7,14 +7,16 @@ localization_priority: Normal
 description: columnDefinition 资源上的 textColumn 指示该列的值为文本。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67e6b1f24155a8cfcecb2fb2443f3b1536ba48bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533470"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
+
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **textColumn** 指示该列的值为文本。
 

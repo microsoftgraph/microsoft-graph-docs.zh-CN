@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c7bf5eef63921f1cc3fab985f4832177767fe1fc
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: c2b7253217e6823d6d74a9114c2e9ce3998af103
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036072"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532101"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
+
+命名空间：microsoft.graph
 
 可以附件形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
 

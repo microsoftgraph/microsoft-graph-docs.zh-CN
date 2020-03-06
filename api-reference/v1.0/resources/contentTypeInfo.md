@@ -7,14 +7,16 @@ localization_priority: Normal
 description: contentTypeInfo 资源指示项的 SharePoint 内容类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e252ee53eb9cf6b45a1515c5a78319748d0e8210
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5343be1f210e44e5fe16764004c9cef2a7d32c6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533029"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
+
+命名空间：microsoft.graph
 
 **contentTypeInfo** 资源指示项的 SharePoint 内容类型。
 

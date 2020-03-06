@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd551085dac72b2f63e2cb67d9ada978746c0b5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d2c3311259b61790244fe42c0fc1d73e63ac058
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532105"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
+
+命名空间：microsoft.graph
 
 表示分配给用户的许可证。 [User](user.md)实体的**AssignedLicenses**属性是**assignedLicense**的集合。
 

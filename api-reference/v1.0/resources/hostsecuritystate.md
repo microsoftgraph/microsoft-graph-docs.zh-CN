@@ -1,34 +1,36 @@
 ---
 title: hostSecurityState 资源类型
-description: 包含有关主机的状态信息 (包括设备、计算机等)。
+description: 包含有关主机的状态信息（包括设备、计算机等）。
 localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8993e9ac301bc1cc0ae4da4ec66cc131a3e06c18
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029272"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531348"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
-包含有关主机的状态信息 (包括设备、计算机等)。
+命名空间：microsoft.graph
+
+包含有关主机的状态信息（包括设备、计算机等）。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|域名|String|主机 FQDN (完全限定的`machine.company.com`域名) (例如)。|
+|域名|字符串|主机 FQDN （完全限定的`machine.company.com`域名）（例如）。|
 |isAzureAadJoined|Boolean|如此如果主机已加入域到 Azure Active Directory 域服务。|
-|isAzureAadRegistered|Boolean|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备, 而不是由企业完全管理), 则该属性值为 True。|
+|isAzureAadRegistered|Boolean|如果主机注册到 Azure Active Directory 设备注册（BYOD 设备，而不是由企业完全管理），则该属性值为 True。|
 |isHybridAzureDomainJoined|Boolean|如此如果主机已加入域到本地 Active Directory 域。|
-|netBiosName|String|本地主机名, 不包含 DNS 域名。|
-|os|String|主机操作系统。 (例如, Windows10、MacOS、RHEL 等)。|
-|privateIpAddress|String|在出现警报时专用 (不可路由) IPv4 或 IPv6 地址 (请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918))。|
-|publicIpAddress|String|在警报时可公开路由的 IPv4 或 IPv6 地址 (请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918))。|
-|riskScore|String|主机的提供程序生成/计算的风险分数。  建议的值范围为 0-1, 这相当于一个百分比。|
+|netBiosName|字符串|本地主机名，不包含 DNS 域名。|
+|os|字符串|主机操作系统。 （例如，Windows10、MacOS、RHEL 等）。|
+|privateIpAddress|字符串|在出现警报时专用（不可路由） IPv4 或 IPv6 地址（请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918)）。|
+|publicIpAddress|字符串|在警报时可公开路由的 IPv4 或 IPv6 地址（请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918)）。|
+|riskScore|字符串|主机的提供程序生成/计算的风险分数。  建议的值范围为0-1，这相当于一个百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

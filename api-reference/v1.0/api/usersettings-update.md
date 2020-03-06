@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e490a990344d27a5672b72466815b2754c3cb1fc
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: dca26c0c8fcff8fb3ccbc92ef7f7560c50f4c44c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844353"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508889"
 ---
 # <a name="update-settings"></a>更新设置
+
+命名空间：microsoft.graph
 
 更新[userSettings](../resources/usersettings.md)对象的属性。 同一个组织中的用户可以根据自己的首选项或组织策略拥有不同的设置。 若要获取用户的当前设置，请参阅[当前用户设置](usersettings-get.md)。 
 
@@ -47,7 +49,7 @@ PATCH /me/settings
 PATCH /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值|
 |:-----------|:------|

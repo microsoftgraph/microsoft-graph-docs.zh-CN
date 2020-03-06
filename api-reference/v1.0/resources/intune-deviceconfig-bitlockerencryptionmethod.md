@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 594b1bab8fe1b98c9101a89bd2cbc40ac1c81403
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1b39428c82cb298a75bf6b87cf6dd894ef204712
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366676"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530917"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>bitLockerEncryptionMethod 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 BitLockerEncryptionMethod 类型
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|aesCbc128|第三章|AES-CBC 128 位。|
-|aesCbc256|4|AES-CBC 256 位。|
-|xtsAes128|型|XTS-AES 128 位。|
-|xtsAes256|步|XTS-AES 256 位。|
+|aesCbc128|3 |AES-CBC 128 位。|
+|aesCbc256|4 |AES-CBC 256 位。|
+|xtsAes128|6 |XTS-AES 128 位。|
+|xtsAes256|7 |XTS-AES 256 位。|
 
 
 

@@ -5,20 +5,22 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a4605242ca911e9634e79fa5b9761ae2bb8e0ab6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c15d5d32b6102a3651fec24a99c3f9c185f963d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511087"
 ---
 # <a name="get-page"></a>获取页面
+
+命名空间：microsoft.graph
 
 检索[page](../resources/page.md)对象的属性和关系。
 
 **获取页面信息**
 
-按页面标识符访问页面的元数据:
+按页面标识符访问页面的元数据：
 
 ```
 GET /me/onenote/pages/{id}
@@ -26,7 +28,7 @@ GET /me/onenote/pages/{id}
 
 **获取页面内容**
 
-您可以使用页面的`content`终结点获取页面的 HTML 内容:
+您可以使用页面的`content`终结点获取页面的 HTML 内容：
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
@@ -40,8 +42,8 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
+|委派（工作或学校帐户） | 请参阅 "注意，"、"注释"、"全部"、"全部"、"写"    |
+|委派（个人 Microsoft 帐户） | 注意： Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,7 +59,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 默认响应将展开`parentSection`并选择节的`id`、 `name`和`self`属性。 页面`expand`的`parentNotebook`有效值为和`parentSection`。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -68,7 +70,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[page](../resources/page.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[page](../resources/page.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -77,7 +79,7 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意: 为简洁起见, 此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

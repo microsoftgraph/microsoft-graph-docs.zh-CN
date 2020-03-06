@@ -2,19 +2,21 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Package
+title: 程序包
 localization_priority: Normal
 description: " 或应被视为集合而不是单个项目的项的集合。"
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d8eff13e0cfdc6b355cc289833e7b3050ded2641
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035663"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534102"
 ---
 # <a name="package-resource-type"></a>包资源类型
+
+命名空间：microsoft.graph
 
 **包** 资源指示 DriveItem 是项的“包”或集合中的顶级项，应视为集合而不是单独的项。
 
@@ -33,7 +35,7 @@ ms.locfileid: "36035663"
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明                                                                                                                                                                      |
+| 属性名 | 类型   | 说明                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 类型          | string | 一个指示包的类型的字符串。 虽然 `oneNote` 是当前唯一定义的值，但应该预见会返回其他包类型并进行相应处理。 |
 

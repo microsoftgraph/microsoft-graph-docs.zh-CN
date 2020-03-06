@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 362072f8727d82e4b5b5744922d8b819e0eae079
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a684d71aa25267c1b2f19f13d35d796825783544
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032534"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531451"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
+
+命名空间：microsoft.graph
 
 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 [schemaExtension](schemaextension.md) 定义的一部分。
 
@@ -21,7 +23,7 @@ ms.locfileid: "36032534"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|String| 被定义为架构扩展组成部分的强类型属性的名称。|
-|type|String| 被定义为架构扩展组成部分的属性的类型。允许的值为 *Binary、Boolean、DateTime、Integer* 或 *String*。请参阅下表获取更多详细信息。|
+|type|字符串| 被定义为架构扩展组成部分的属性的类型。允许的值为 *Binary、Boolean、DateTime、Integer* 或 *String*。请参阅下表获取更多详细信息。|
 
 #### <a name="supported-property-data-types"></a>受支持的属性数据类型 
 在架构扩展中定义属性时，支持以下数据类型：

@@ -1,20 +1,22 @@
 ---
 title: 更新 secureScoreControlProfile
-description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfile 对象, 以更改各种属性, 如 "分配给" 或 "tenantNote"。
+description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfile 对象，以更改各种属性，如 "分配给" 或 "tenantNote"。
 author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 18c320eddbbc9c982d8a3ddfa1b7a067272f34cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f8d0fd0237bbca4b13deb7fbc8efb3f064f92e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307957"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509848"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
-在任何集成的解决方案中更新可编辑的**secureScoreControlProfile**对象, 以更改各种属性, 如 "**分配给**" 或 " **tenantNote**"。
+命名空间：microsoft.graph
+
+在任何集成的解决方案中更新可编辑的**secureScoreControlProfile**对象，以更改各种属性，如 "**分配给**" 或 " **tenantNote**"。
 
 ## <a name="permissions"></a>权限
 
@@ -43,31 +45,31 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。 下表列出了可为**secureScoreControlProfile**更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。 下表列出了可为**secureScoreControlProfile**更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|注释|String|控件上的分析师注释 (针对客户控制管理)。|
+|注释|字符串|控件上的分析师注释（针对客户控制管理）。|
 |state| String|控件上的分析导向设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = SecureScore;)。 **提供程序和供应商字段是必需的。** |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型（例如，供应商 = Microsoft; provider = SecureScore;）。 **提供程序和供应商字段是必需的。** |
 
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头, 则该方法将在`200 OK`响应正文中返回响应代码和更新的[secureScoreControlProfiles](../resources/securescorecontrolprofile.md)对象。
+如果使用可选请求标头，则该方法将在`200 OK`响应正文中返回响应代码和更新的[secureScoreControlProfiles](../resources/securescorecontrolprofile.md)对象。
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-request-without-prefer-header"></a>示例 1: 不带首选标头的请求
+### <a name="example-1-request-without-prefer-header"></a>示例1：不带首选标头的请求
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_update"
@@ -90,19 +92,19 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -122,7 +124,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>示例 2: 具有首选标头的请求
+### <a name="example-2-request-with-prefer-header"></a>示例2：具有首选标头的请求
 
 #### <a name="request"></a>请求
 

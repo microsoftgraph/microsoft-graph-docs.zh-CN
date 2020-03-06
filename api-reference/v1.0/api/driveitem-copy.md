@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 以异步方式在新父项下或使用新名称创建一个 driveItem 副本（包括任何子项）。
 doc_type: apiPageType
-ms.openlocfilehash: 2ba0bfcd84f1511aa1cfb0788a576da380600966
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dd8036439a2808f6122f50de982219e243bc11c8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375133"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517788"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
+
+命名空间：microsoft.graph
 
 以异步方式在新父项下或使用新名称创建一个 [driveItem][item-resource] 副本（包括任何子项）。
 
@@ -58,7 +60,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 该文件的新副本将被命名为 `contoso plan (copy).txt`。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
@@ -73,19 +75,19 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

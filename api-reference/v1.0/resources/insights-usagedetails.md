@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 9d30f09195867635ec10b8aac5413c1d89a73b46
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 66ac63b17e97e5754779c5d5ccc786cd8ba4a265
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531269"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
+
+命名空间：microsoft.graph
 
 包含已[使用](insights-used.md)项的属性的复杂类型。 有关用户上次访问（查看）和修改（编辑）资源的时间的信息。
 

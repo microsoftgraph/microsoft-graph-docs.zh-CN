@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d86bd706eb2fc7702eef101797e7f1da326d4d16
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 453e542e14d4f4b62acb90ac51983ea7a6739e46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532717"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 安装状态的可能值。
 
@@ -22,11 +24,11 @@ ms.locfileid: "37355951"
 |成员|值|说明|
 |:---|:---|:---|
 |notApplicable|0|不适用。|
-|了|1|了.|
-|未能|双面|未能.|
-|notInstalled|第三章|未安装。|
-|uninstallFailed|4|卸载失败。|
-|unknown|5|陌生.|
+|了|1 |了.|
+|未能|2 |未能.|
+|notInstalled|3 |未安装。|
+|uninstallFailed|4 |卸载失败。|
+|unknown|5 |陌生.|
 
 
 

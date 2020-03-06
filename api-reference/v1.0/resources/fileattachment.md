@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4975e9b46a4b55429906fbcd9b7b23f8774a47e9
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ad8c1a9ffd4a4b5cc68554505464173a40aafd29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036198"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531436"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
+
+命名空间：microsoft.graph
 
 附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的文件（例如文本文件或 Word 文档）。**contentBytes** 属性包含文件的 base64 编码内容。  
 

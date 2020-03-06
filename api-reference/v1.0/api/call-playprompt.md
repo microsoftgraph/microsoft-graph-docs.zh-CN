@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6d41fd97ea52588d1d68c3439d39400acb95014
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 82026017e3d82b5daa792c0cbe73718751cc2efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518691"
 ---
 # <a name="call-playprompt"></a>调用： playPrompt
+
+命名空间：microsoft.graph
 
 在呼叫中播放提示。
 
@@ -48,7 +50,7 @@ POST /communications/calls/{id}/playPrompt
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[MediaPrompt](../resources/mediaprompt.md)集合| 要播放的提示。 支持的最大 MediaPrompt 集合大小为20。|
-|适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
+|适用|字符串|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
@@ -60,7 +62,7 @@ POST /communications/calls/{id}/playPrompt
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -84,7 +86,7 @@ Content-Length: 166
   ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

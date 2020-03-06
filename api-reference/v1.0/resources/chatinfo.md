@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: de48737299a940db545e46daabd129ee7443c60a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b69905a0e1d8937c582df3373a4e981f8d8405ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913252"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533079"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
+
+命名空间：microsoft.graph
 
 这包含与 Microsoft 团队会议相关的信息。
 
@@ -20,9 +22,9 @@ ms.locfileid: "40913252"
 
 | 属性            | 类型    | 说明|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | Microsoft 团队频道中的邮件的唯一标识符。 |
-| replyChainMessageId | String  | 答复邮件的 ID。 |
-| threadId            | String  | Microsoft 团队中的线程的唯一标识符。 |
+| messageId           | 字符串  | Microsoft 团队频道中的邮件的唯一标识符。 |
+| replyChainMessageId | 字符串  | 答复邮件的 ID。 |
+| threadId            | 字符串  | Microsoft 团队中的线程的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

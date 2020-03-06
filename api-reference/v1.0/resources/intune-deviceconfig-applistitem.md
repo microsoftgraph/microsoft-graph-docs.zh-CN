@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c43b559f1c1994d34ae0d4202b4970227d029df7
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: acb27cacd61685c36043789b25f70f015d1fe0b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366739"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530926"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示托管应用程序列表中的应用
 
@@ -22,7 +24,7 @@ ms.locfileid: "37366739"
 |属性|类型|说明|
 |:---|:---|:---|
 |name|字符串|应用程序名称|
-|publisher|String|应用程序发布者|
+|publisher|字符串|应用程序发布者|
 |appStoreUrl|String|应用程序的应用商店 URL|
 |appId|String|应用程序或应用程序的捆绑标识符|
 

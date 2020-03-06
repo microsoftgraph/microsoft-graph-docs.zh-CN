@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 已删除资源指示该项已被删除。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d1f5c07c60c8de4890a2a4ac334df04a59b7339c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c81c2623d49d40f1a4619c7f964ba9b7f0b94cf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029517"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531686"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
+
+命名空间：microsoft.graph
 
 **已删除的**资源指示该项已被删除。在这个 API 版本中，已删除资源值的状态（非 null）指示文件。Null（或缺少）值表示未删除该文件。
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1f6684e9c266a800f5a76a7085a8af22ea9518e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9864d982e58304c684b267c59ec1925aec8baeff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034333"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533728"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
+
+命名空间：microsoft.graph
 
 使用 [Shares](../api/shares-get.md) API 访问共享的 [driveItem](driveitem.md) 时，返回 **sharedDriveItem** 资源。
 
@@ -51,7 +53,7 @@ ms.locfileid: "36034333"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | String                        | 共享项的显示名称。                             |
+| name     | 字符串                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -59,7 +61,7 @@ ms.locfileid: "36034333"
 | 关系名称 | 类型                | 说明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
-| **list**          | [**簿**][list]        | 用于访问基础 **list**
+| **list**          | [**list**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
 | **site**          | [**网站**][site]        | 用于访问基础 **site**
 
@@ -75,7 +77,7 @@ ms.locfileid: "36034333"
 [listItem]: listitem.md
 [site]: site.md
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                  | REST 路径                |
 | :-------------------------------------- | :----------------------- |
