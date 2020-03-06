@@ -1,31 +1,33 @@
 ---
 title: fileHash 资源类型
-description: 包含有关文件哈希 (加密和位置敏感) 的状态信息。
+description: 包含有关文件哈希（加密和位置敏感）的状态信息。
 localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aabe56237ea44285c93f802268bd68688f16aa05
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c82632658e4936ecae812f6bdf1826ad6120d2d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030378"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532954"
 ---
-# <a name="filehash-resource-type"></a><span data-ttu-id="130a8-103">fileHash 资源类型</span><span class="sxs-lookup"><span data-stu-id="130a8-103">fileHash resource type</span></span>
+# <a name="filehash-resource-type"></a><span data-ttu-id="f3c6a-103">fileHash 资源类型</span><span class="sxs-lookup"><span data-stu-id="f3c6a-103">fileHash resource type</span></span>
 
-<span data-ttu-id="130a8-104">包含有关文件哈希 (加密和位置敏感) 的状态信息。</span><span class="sxs-lookup"><span data-stu-id="130a8-104">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
+<span data-ttu-id="f3c6a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3c6a-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="130a8-105">属性</span><span class="sxs-lookup"><span data-stu-id="130a8-105">Properties</span></span>
+<span data-ttu-id="f3c6a-105">包含有关文件哈希（加密和位置敏感）的状态信息。</span><span class="sxs-lookup"><span data-stu-id="f3c6a-105">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
 
-| <span data-ttu-id="130a8-106">属性</span><span class="sxs-lookup"><span data-stu-id="130a8-106">Property</span></span>     | <span data-ttu-id="130a8-107">类型</span><span class="sxs-lookup"><span data-stu-id="130a8-107">Type</span></span>        | <span data-ttu-id="130a8-108">说明</span><span class="sxs-lookup"><span data-stu-id="130a8-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="f3c6a-106">属性</span><span class="sxs-lookup"><span data-stu-id="f3c6a-106">Properties</span></span>
+
+| <span data-ttu-id="f3c6a-107">属性</span><span class="sxs-lookup"><span data-stu-id="f3c6a-107">Property</span></span>     | <span data-ttu-id="f3c6a-108">类型</span><span class="sxs-lookup"><span data-stu-id="f3c6a-108">Type</span></span>        | <span data-ttu-id="f3c6a-109">说明</span><span class="sxs-lookup"><span data-stu-id="f3c6a-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="130a8-109">hashType</span><span class="sxs-lookup"><span data-stu-id="130a8-109">hashType</span></span>|<span data-ttu-id="130a8-110">fileHashType</span><span class="sxs-lookup"><span data-stu-id="130a8-110">fileHashType</span></span>|<span data-ttu-id="130a8-111">文件哈希类型。</span><span class="sxs-lookup"><span data-stu-id="130a8-111">File hash type.</span></span> <span data-ttu-id="130a8-112">可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。</span><span class="sxs-lookup"><span data-stu-id="130a8-112">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
-|<span data-ttu-id="130a8-113">hashValue</span><span class="sxs-lookup"><span data-stu-id="130a8-113">hashValue</span></span>|<span data-ttu-id="130a8-114">String</span><span class="sxs-lookup"><span data-stu-id="130a8-114">String</span></span>|<span data-ttu-id="130a8-115">文件哈希值。</span><span class="sxs-lookup"><span data-stu-id="130a8-115">Value of the file hash.</span></span>|
+|<span data-ttu-id="f3c6a-110">hashType</span><span class="sxs-lookup"><span data-stu-id="f3c6a-110">hashType</span></span>|<span data-ttu-id="f3c6a-111">fileHashType</span><span class="sxs-lookup"><span data-stu-id="f3c6a-111">fileHashType</span></span>|<span data-ttu-id="f3c6a-112">文件哈希类型。</span><span class="sxs-lookup"><span data-stu-id="f3c6a-112">File hash type.</span></span> <span data-ttu-id="f3c6a-113">可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。</span><span class="sxs-lookup"><span data-stu-id="f3c6a-113">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
+|<span data-ttu-id="f3c6a-114">hashValue</span><span class="sxs-lookup"><span data-stu-id="f3c6a-114">hashValue</span></span>|<span data-ttu-id="f3c6a-115">字符串</span><span class="sxs-lookup"><span data-stu-id="f3c6a-115">String</span></span>|<span data-ttu-id="f3c6a-116">文件哈希值。</span><span class="sxs-lookup"><span data-stu-id="f3c6a-116">Value of the file hash.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="130a8-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="130a8-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3c6a-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f3c6a-117">JSON representation</span></span>
 
-<span data-ttu-id="130a8-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="130a8-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f3c6a-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3c6a-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -6,94 +6,96 @@ description: 返回 SharePoint 列表中某个项的元数据。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 33e277bde234ddc3f470c17d2519f43dc4f4803b
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0d581732ab7a1fea6e5519ef0db0c289cd276d8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728795"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511703"
 ---
-# <a name="get-listitem"></a><span data-ttu-id="453d6-103">获取 listItem</span><span class="sxs-lookup"><span data-stu-id="453d6-103">Get listItem</span></span>
+# <a name="get-listitem"></a><span data-ttu-id="59021-103">获取 listItem</span><span class="sxs-lookup"><span data-stu-id="59021-103">Get listItem</span></span>
 
-<span data-ttu-id="453d6-104">返回[列表][]中某个[项][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="453d6-104">Returns the metadata for an [item][] in a [list][].</span></span>
+<span data-ttu-id="59021-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59021-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="59021-105">返回[列表][]中某个[项][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="59021-105">Returns the metadata for an [item][] in a [list][].</span></span>
 
 [列表]: ../resources/list.md
 [list]: ../resources/list.md
 [项]: ../resources/listitem.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="453d6-107">权限</span><span class="sxs-lookup"><span data-stu-id="453d6-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="59021-108">权限</span><span class="sxs-lookup"><span data-stu-id="59021-108">Permissions</span></span>
 
-<span data-ttu-id="453d6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="453d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="59021-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="59021-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="453d6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="453d6-110">Permission type</span></span>      | <span data-ttu-id="453d6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="453d6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="59021-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="59021-111">Permission type</span></span>      | <span data-ttu-id="59021-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="59021-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="453d6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="453d6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="453d6-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="453d6-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="453d6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="453d6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="453d6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="453d6-115">Not supported.</span></span>    |
-|<span data-ttu-id="453d6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="453d6-116">Application</span></span> | <span data-ttu-id="453d6-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="453d6-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="59021-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="59021-113">Delegated (work or school account)</span></span> | <span data-ttu-id="59021-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59021-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="59021-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="59021-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59021-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="59021-116">Not supported.</span></span>    |
+|<span data-ttu-id="59021-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="59021-117">Application</span></span> | <span data-ttu-id="59021-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59021-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="453d6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="453d6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="59021-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="59021-119">HTTP request</span></span>
 
-<span data-ttu-id="453d6-119">获取 listItem</span><span class="sxs-lookup"><span data-stu-id="453d6-119">Get a listItem</span></span>
+<span data-ttu-id="59021-120">获取 listItem</span><span class="sxs-lookup"><span data-stu-id="59021-120">Get a listItem</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
-<span data-ttu-id="453d6-120">获取 listItem 上的列值</span><span class="sxs-lookup"><span data-stu-id="453d6-120">Get the column values of a listItem</span></span>
+<span data-ttu-id="59021-121">获取 listItem 上的列值</span><span class="sxs-lookup"><span data-stu-id="59021-121">Get the column values of a listItem</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
-<span data-ttu-id="453d6-121">获取 listItem 上的特定列值</span><span class="sxs-lookup"><span data-stu-id="453d6-121">Get specific column values of a listItem</span></span>
+<span data-ttu-id="59021-122">获取 listItem 上的特定列值</span><span class="sxs-lookup"><span data-stu-id="59021-122">Get specific column values of a listItem</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="453d6-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="453d6-122">Optional query parameters</span></span>
-<span data-ttu-id="453d6-123">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="453d6-123">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="59021-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="59021-123">Optional query parameters</span></span>
+<span data-ttu-id="59021-124">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="59021-124">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="453d6-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="453d6-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="59021-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="59021-125">Request headers</span></span>
 
-| <span data-ttu-id="453d6-125">名称</span><span class="sxs-lookup"><span data-stu-id="453d6-125">Name</span></span>      |<span data-ttu-id="453d6-126">说明</span><span class="sxs-lookup"><span data-stu-id="453d6-126">Description</span></span>|
+| <span data-ttu-id="59021-126">名称</span><span class="sxs-lookup"><span data-stu-id="59021-126">Name</span></span>      |<span data-ttu-id="59021-127">说明</span><span class="sxs-lookup"><span data-stu-id="59021-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="453d6-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="453d6-127">Authorization</span></span>  | <span data-ttu-id="453d6-128">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="453d6-128">Bearer {code}.</span></span> <span data-ttu-id="453d6-129">必需。</span><span class="sxs-lookup"><span data-stu-id="453d6-129">Required.</span></span>|
+| <span data-ttu-id="59021-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="59021-128">Authorization</span></span>  | <span data-ttu-id="59021-129">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="59021-129">Bearer {code}.</span></span> <span data-ttu-id="59021-130">必需。</span><span class="sxs-lookup"><span data-stu-id="59021-130">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="453d6-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="453d6-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="59021-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="59021-131">Request body</span></span>
 
-<span data-ttu-id="453d6-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="453d6-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="59021-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="59021-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="453d6-132">响应</span><span class="sxs-lookup"><span data-stu-id="453d6-132">Response</span></span> 
+## <a name="response"></a><span data-ttu-id="59021-133">响应</span><span class="sxs-lookup"><span data-stu-id="59021-133">Response</span></span> 
 
-<span data-ttu-id="453d6-133">如果成功，此方法在响应正文中返回`200 OK`响应代码和[项目][]。</span><span class="sxs-lookup"><span data-stu-id="453d6-133">If successful, this method returns a `200 OK` response code and an [item][] in the response body.</span></span>
+<span data-ttu-id="59021-134">如果成功，此方法在响应正文中返回`200 OK`响应代码和[项目][]。</span><span class="sxs-lookup"><span data-stu-id="59021-134">If successful, this method returns a `200 OK` response code and an [item][] in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="453d6-134">示例</span><span class="sxs-lookup"><span data-stu-id="453d6-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="59021-135">示例</span><span class="sxs-lookup"><span data-stu-id="59021-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="453d6-135">请求</span><span class="sxs-lookup"><span data-stu-id="453d6-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="59021-136">请求</span><span class="sxs-lookup"><span data-stu-id="59021-136">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="453d6-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="453d6-136">--Http</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59021-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="59021-137">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="453d6-137">C#</span><span class="sxs-lookup"><span data-stu-id="453d6-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59021-138">C#</span><span class="sxs-lookup"><span data-stu-id="59021-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="453d6-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="453d6-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59021-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59021-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="453d6-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="453d6-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59021-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59021-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="453d6-140">Java</span><span class="sxs-lookup"><span data-stu-id="453d6-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="59021-141">Java</span><span class="sxs-lookup"><span data-stu-id="59021-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="453d6-141">响应</span><span class="sxs-lookup"><span data-stu-id="453d6-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="59021-142">响应</span><span class="sxs-lookup"><span data-stu-id="59021-142">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

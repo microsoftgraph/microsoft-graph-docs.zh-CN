@@ -7,28 +7,30 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 下载 DriveItem 的主要流（文件）的内容。 只能下载具有 file 属性的 driveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 115e89350795f2287c869472888be3f63ea0b9a7
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ae32b916ef93fc56dfff67d2bf38152fd3b9ccde
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721136"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517746"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="f1ae6-104">下载 DriveItem 的内容</span><span class="sxs-lookup"><span data-stu-id="f1ae6-104">Download the contents of a DriveItem</span></span>
+# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="bf017-104">下载 DriveItem 的内容</span><span class="sxs-lookup"><span data-stu-id="bf017-104">Download the contents of a DriveItem</span></span>
 
-<span data-ttu-id="f1ae6-105">下载 DriveItem 的主要流（文件）的内容。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-105">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="f1ae6-106">只能下载具有 **file** 属性的 driveItem。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-106">Only driveItems with the **file** property can be downloaded.</span></span>
+<span data-ttu-id="bf017-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf017-105">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f1ae6-107">权限</span><span class="sxs-lookup"><span data-stu-id="f1ae6-107">Permissions</span></span>
+<span data-ttu-id="bf017-106">下载 DriveItem 的主要流（文件）的内容。</span><span class="sxs-lookup"><span data-stu-id="bf017-106">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="bf017-107">只能下载具有 **file** 属性的 driveItem。</span><span class="sxs-lookup"><span data-stu-id="bf017-107">Only driveItems with the **file** property can be downloaded.</span></span>
 
-<span data-ttu-id="f1ae6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf017-108">权限</span><span class="sxs-lookup"><span data-stu-id="bf017-108">Permissions</span></span>
 
-|<span data-ttu-id="f1ae6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1ae6-110">Permission type</span></span>      | <span data-ttu-id="f1ae6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1ae6-111">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="bf017-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bf017-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="bf017-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bf017-111">Permission type</span></span>      | <span data-ttu-id="bf017-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bf017-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f1ae6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1ae6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f1ae6-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1ae6-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f1ae6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1ae6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1ae6-115">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1ae6-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f1ae6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1ae6-116">Application</span></span> | <span data-ttu-id="f1ae6-117">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1ae6-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="bf017-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bf017-113">Delegated (work or school account)</span></span> | <span data-ttu-id="bf017-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf017-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf017-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bf017-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf017-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf017-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf017-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="bf017-117">Application</span></span> | <span data-ttu-id="bf017-118">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf017-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f1ae6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1ae6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf017-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bf017-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,51 +43,51 @@ GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="f1ae6-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="f1ae6-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="bf017-120">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="bf017-120">Optional request headers</span></span>
 
-| <span data-ttu-id="f1ae6-120">名称</span><span class="sxs-lookup"><span data-stu-id="f1ae6-120">Name</span></span>          | <span data-ttu-id="f1ae6-121">值</span><span class="sxs-lookup"><span data-stu-id="f1ae6-121">Value</span></span>  | <span data-ttu-id="f1ae6-122">说明</span><span class="sxs-lookup"><span data-stu-id="f1ae6-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="bf017-121">名称</span><span class="sxs-lookup"><span data-stu-id="bf017-121">Name</span></span>          | <span data-ttu-id="bf017-122">值</span><span class="sxs-lookup"><span data-stu-id="bf017-122">Value</span></span>  | <span data-ttu-id="bf017-123">说明</span><span class="sxs-lookup"><span data-stu-id="bf017-123">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f1ae6-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="f1ae6-123">if-none-match</span></span> | <span data-ttu-id="f1ae6-124">String</span><span class="sxs-lookup"><span data-stu-id="f1ae6-124">String</span></span> | <span data-ttu-id="f1ae6-125">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="bf017-124">if-none-match</span><span class="sxs-lookup"><span data-stu-id="bf017-124">if-none-match</span></span> | <span data-ttu-id="bf017-125">String</span><span class="sxs-lookup"><span data-stu-id="bf017-125">String</span></span> | <span data-ttu-id="bf017-126">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="bf017-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="f1ae6-126">示例</span><span class="sxs-lookup"><span data-stu-id="f1ae6-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bf017-127">示例</span><span class="sxs-lookup"><span data-stu-id="bf017-127">Example</span></span>
 
-<span data-ttu-id="f1ae6-127">下面是下载整个文件的示例。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-127">Here is an example to download a complete file.</span></span>
+<span data-ttu-id="bf017-128">下面是下载整个文件的示例。</span><span class="sxs-lookup"><span data-stu-id="bf017-128">Here is an example to download a complete file.</span></span>
 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f1ae6-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="f1ae6-128">--Http</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bf017-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf017-129">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f1ae6-129">C#</span><span class="sxs-lookup"><span data-stu-id="f1ae6-129">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bf017-130">C#</span><span class="sxs-lookup"><span data-stu-id="bf017-130">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f1ae6-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f1ae6-130">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bf017-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bf017-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f1ae6-131">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f1ae6-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bf017-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bf017-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f1ae6-132">Java</span><span class="sxs-lookup"><span data-stu-id="f1ae6-132">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bf017-133">Java</span><span class="sxs-lookup"><span data-stu-id="bf017-133">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/download-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f1ae6-133">响应</span><span class="sxs-lookup"><span data-stu-id="f1ae6-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="bf017-134">响应</span><span class="sxs-lookup"><span data-stu-id="bf017-134">Response</span></span>
 
-<span data-ttu-id="f1ae6-p104">返回 `302 Found` 响应，该响应重定向到文件的预先身份验证的下载 URL。这是可通过 DriveItem 上的 `@microsoft.graph.downloadUrl` 属性获得的同一个 URL。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-p104">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
+<span data-ttu-id="bf017-p104">返回 `302 Found` 响应，该响应重定向到文件的预先身份验证的下载 URL。这是可通过 DriveItem 上的 `@microsoft.graph.downloadUrl` 属性获得的同一个 URL。</span><span class="sxs-lookup"><span data-stu-id="bf017-p104">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
 
-<span data-ttu-id="f1ae6-136">应用必须遵循响应中的 `Location` 头，才能下载文件内容。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-136">To download the contents of the file your application will need to follow the `Location` header in the response.</span></span>
-<span data-ttu-id="f1ae6-137">许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-137">Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.</span></span>
+<span data-ttu-id="bf017-137">应用必须遵循响应中的 `Location` 头，才能下载文件内容。</span><span class="sxs-lookup"><span data-stu-id="bf017-137">To download the contents of the file your application will need to follow the `Location` header in the response.</span></span>
+<span data-ttu-id="bf017-138">许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。</span><span class="sxs-lookup"><span data-stu-id="bf017-138">Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.</span></span>
 
-<span data-ttu-id="f1ae6-138">预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-138">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
+<span data-ttu-id="bf017-139">预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。</span><span class="sxs-lookup"><span data-stu-id="bf017-139">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
@@ -94,9 +96,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-## <a name="partial-range-downloads"></a><span data-ttu-id="f1ae6-139">部分范围下载</span><span class="sxs-lookup"><span data-stu-id="f1ae6-139">Partial range downloads</span></span>
+## <a name="partial-range-downloads"></a><span data-ttu-id="bf017-140">部分范围下载</span><span class="sxs-lookup"><span data-stu-id="bf017-140">Partial range downloads</span></span>
 
-<span data-ttu-id="f1ae6-p106">若要从文件中下载部分范围的字节，应用程序可以使用 [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) 中指定的 `Range` 标头。请注意，必须将 `Range` 标头附加到实际 `@microsoft.graph.downloadUrl` URL，而不是 `/content` 的请求。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-p106">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
+<span data-ttu-id="bf017-p106">若要从文件中下载部分范围的字节，应用程序可以使用 [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) 中指定的 `Range` 标头。请注意，必须将 `Range` 标头附加到实际 `@microsoft.graph.downloadUrl` URL，而不是 `/content` 的请求。</span><span class="sxs-lookup"><span data-stu-id="bf017-p106">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
@@ -105,7 +107,7 @@ GET https://b0mpua-by3301.files.1drv.com/y23vmag
 Range: bytes=0-1023
 ```
 
-<span data-ttu-id="f1ae6-p107">此方法将返回 `HTTP 206 Partial Content` 响应和文件中字节的请求区域。如果无法生成此范围，可能会忽略 Range 标头，并会返回包含文件完整内容的 `HTTP 200` 响应。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-p107">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
+<span data-ttu-id="bf017-p107">此方法将返回 `HTTP 206 Partial Content` 响应和文件中字节的请求区域。如果无法生成此范围，可能会忽略 Range 标头，并会返回包含文件完整内容的 `HTTP 200` 响应。</span><span class="sxs-lookup"><span data-stu-id="bf017-p107">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
 
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
 
@@ -117,9 +119,9 @@ Content-Type: application/octet-stream
 <first 1024 bytes of file>
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="f1ae6-144">错误响应</span><span class="sxs-lookup"><span data-stu-id="f1ae6-144">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="bf017-145">错误响应</span><span class="sxs-lookup"><span data-stu-id="bf017-145">Error responses</span></span>
 
-<span data-ttu-id="f1ae6-145">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="f1ae6-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="bf017-146">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="bf017-146">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

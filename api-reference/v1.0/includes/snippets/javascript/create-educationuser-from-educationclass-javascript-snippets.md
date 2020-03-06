@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a46abe6071333cfafc15bdc21ae625cc5b965a31
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9ffba2550baaf37d56a0352e5650e81527c642be
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734975"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636863"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const educationUser = {
 };
 
 let res = await client.api('/education/classes/{class-id}/teachers/$ref')
-    .post({educationUser : educationUser});
+    .post(educationUser);
 
 ```

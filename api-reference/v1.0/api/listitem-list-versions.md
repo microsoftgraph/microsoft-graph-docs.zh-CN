@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: b4a29ce4850ba45f89e2de7cd3fc07a3f6360dd7
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e0121d7d56b17267b10d04d62b41426f2ace258e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730237"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511696"
 ---
-# <a name="listing-versions-of-a-listitem"></a><span data-ttu-id="c1e3a-103">列出列表的版本</span><span class="sxs-lookup"><span data-stu-id="c1e3a-103">Listing versions of a ListItem</span></span>
+# <a name="listing-versions-of-a-listitem"></a><span data-ttu-id="e69ef-103">列出列表的版本</span><span class="sxs-lookup"><span data-stu-id="e69ef-103">Listing versions of a ListItem</span></span>
 
-<span data-ttu-id="c1e3a-104">SharePoint 可以配置为保留列表项的历史记录。</span><span class="sxs-lookup"><span data-stu-id="c1e3a-104">SharePoint can be configured to retain the history for list items.</span></span>
+<span data-ttu-id="e69ef-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e69ef-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c1e3a-105">以前版本可能会保留有限的一段时间，具体取决于管理员设置，这对于每个用户或位置可能是唯一的。</span><span class="sxs-lookup"><span data-stu-id="c1e3a-105">Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="e69ef-105">SharePoint 可以配置为保留列表项的历史记录。</span><span class="sxs-lookup"><span data-stu-id="e69ef-105">SharePoint can be configured to retain the history for list items.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c1e3a-106">权限</span><span class="sxs-lookup"><span data-stu-id="c1e3a-106">Permissions</span></span>
+<span data-ttu-id="e69ef-106">以前版本可能会保留有限的一段时间，具体取决于管理员设置，这对于每个用户或位置可能是唯一的。</span><span class="sxs-lookup"><span data-stu-id="e69ef-106">Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-<span data-ttu-id="c1e3a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c1e3a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e69ef-107">权限</span><span class="sxs-lookup"><span data-stu-id="e69ef-107">Permissions</span></span>
 
-|            <span data-ttu-id="c1e3a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c1e3a-109">Permission type</span></span>             | <span data-ttu-id="c1e3a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c1e3a-110">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="e69ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e69ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|            <span data-ttu-id="e69ef-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e69ef-110">Permission type</span></span>             | <span data-ttu-id="e69ef-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e69ef-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="c1e3a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c1e3a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c1e3a-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1e3a-112">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
-| <span data-ttu-id="c1e3a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c1e3a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1e3a-114">无</span><span class="sxs-lookup"><span data-stu-id="c1e3a-114">n/a</span></span>                                         |
-| <span data-ttu-id="c1e3a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c1e3a-115">Application</span></span>                            | <span data-ttu-id="c1e3a-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1e3a-116">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="e69ef-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e69ef-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e69ef-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e69ef-113">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="e69ef-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e69ef-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e69ef-115">无</span><span class="sxs-lookup"><span data-stu-id="e69ef-115">n/a</span></span>                                         |
+| <span data-ttu-id="e69ef-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e69ef-116">Application</span></span>                            | <span data-ttu-id="e69ef-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e69ef-117">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
 
 
-## <a name="http-request"></a><span data-ttu-id="c1e3a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c1e3a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e69ef-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e69ef-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -38,46 +40,46 @@ GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="c1e3a-118">响应</span><span class="sxs-lookup"><span data-stu-id="c1e3a-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e69ef-119">响应</span><span class="sxs-lookup"><span data-stu-id="e69ef-119">Response</span></span>
 
-<span data-ttu-id="c1e3a-119">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ListItemVersion](../resources/listitemversion.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c1e3a-119">If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](../resources/listitemversion.md) objects in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="c1e3a-120">示例</span><span class="sxs-lookup"><span data-stu-id="c1e3a-120">Example</span></span>
-
-<span data-ttu-id="c1e3a-121">本示例检索 SharePoint 列表中的 listItem 的版本：</span><span class="sxs-lookup"><span data-stu-id="c1e3a-121">This example retrieves the versions of a listItem in a SharePoint list:</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="c1e3a-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c1e3a-122">HTTP request</span></span>
+<span data-ttu-id="e69ef-120">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ListItemVersion](../resources/listitemversion.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="e69ef-120">If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](../resources/listitemversion.md) objects in the response body.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c1e3a-123">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="c1e3a-123">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="e69ef-121">示例</span><span class="sxs-lookup"><span data-stu-id="e69ef-121">Example</span></span>
+
+<span data-ttu-id="e69ef-122">本示例检索 SharePoint 列表中的 listItem 的版本：</span><span class="sxs-lookup"><span data-stu-id="e69ef-122">This example retrieves the versions of a listItem in a SharePoint list:</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="e69ef-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e69ef-123">HTTP request</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="e69ef-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="e69ef-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c1e3a-124">C#</span><span class="sxs-lookup"><span data-stu-id="c1e3a-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e69ef-125">C#</span><span class="sxs-lookup"><span data-stu-id="e69ef-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c1e3a-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1e3a-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e69ef-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e69ef-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c1e3a-126">目标-C</span><span class="sxs-lookup"><span data-stu-id="c1e3a-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e69ef-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e69ef-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c1e3a-127">Java</span><span class="sxs-lookup"><span data-stu-id="c1e3a-127">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e69ef-128">Java</span><span class="sxs-lookup"><span data-stu-id="e69ef-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c1e3a-128">响应</span><span class="sxs-lookup"><span data-stu-id="c1e3a-128">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e69ef-129">响应</span><span class="sxs-lookup"><span data-stu-id="e69ef-129">Response</span></span>
 
-<span data-ttu-id="c1e3a-129">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="c1e3a-129">This returns a collection of versions:</span></span>
+<span data-ttu-id="e69ef-130">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="e69ef-130">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItemVersion)", "truncated": true } -->
 

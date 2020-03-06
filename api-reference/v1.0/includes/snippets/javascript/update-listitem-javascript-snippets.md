@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bc0cffd2dc6f8423995c127bdd0264d83867c7d5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 768ed125603803f3060e257beb8283f755e05a99
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731422"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636823"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const fieldValueSet = {
 };
 
 let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
-    .update({fieldValueSet : fieldValueSet});
+    .update(fieldValueSet);
 
 ```

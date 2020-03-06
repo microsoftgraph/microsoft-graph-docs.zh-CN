@@ -5,26 +5,28 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd551085dac72b2f63e2cb67d9ada978746c0b5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d2c3311259b61790244fe42c0fc1d73e63ac058
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532105"
 ---
-# <a name="assignedlicense-resource-type"></a><span data-ttu-id="347ee-104">assignedLicense 资源类型</span><span class="sxs-lookup"><span data-stu-id="347ee-104">assignedLicense resource type</span></span>
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="3e398-104">assignedLicense 资源类型</span><span class="sxs-lookup"><span data-stu-id="3e398-104">assignedLicense resource type</span></span>
 
-<span data-ttu-id="347ee-105">表示分配给用户的许可证。</span><span class="sxs-lookup"><span data-stu-id="347ee-105">Represents a license assigned to a user.</span></span> <span data-ttu-id="347ee-106">[User](user.md)实体的**AssignedLicenses**属性是**assignedLicense**的集合。</span><span class="sxs-lookup"><span data-stu-id="347ee-106">The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+<span data-ttu-id="3e398-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e398-105">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="347ee-107">属性</span><span class="sxs-lookup"><span data-stu-id="347ee-107">Properties</span></span>
-| <span data-ttu-id="347ee-108">属性</span><span class="sxs-lookup"><span data-stu-id="347ee-108">Property</span></span>     | <span data-ttu-id="347ee-109">类型</span><span class="sxs-lookup"><span data-stu-id="347ee-109">Type</span></span>   |<span data-ttu-id="347ee-110">说明</span><span class="sxs-lookup"><span data-stu-id="347ee-110">Description</span></span>|
+<span data-ttu-id="3e398-106">表示分配给用户的许可证。</span><span class="sxs-lookup"><span data-stu-id="3e398-106">Represents a license assigned to a user.</span></span> <span data-ttu-id="3e398-107">[User](user.md)实体的**AssignedLicenses**属性是**assignedLicense**的集合。</span><span class="sxs-lookup"><span data-stu-id="3e398-107">The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3e398-108">属性</span><span class="sxs-lookup"><span data-stu-id="3e398-108">Properties</span></span>
+| <span data-ttu-id="3e398-109">属性</span><span class="sxs-lookup"><span data-stu-id="3e398-109">Property</span></span>     | <span data-ttu-id="3e398-110">类型</span><span class="sxs-lookup"><span data-stu-id="3e398-110">Type</span></span>   |<span data-ttu-id="3e398-111">说明</span><span class="sxs-lookup"><span data-stu-id="3e398-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="347ee-111">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="347ee-111">disabledPlans</span></span>|<span data-ttu-id="347ee-112">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="347ee-112">Guid collection</span></span>|<span data-ttu-id="347ee-113">已禁用的计划的唯一标识符的集合。</span><span class="sxs-lookup"><span data-stu-id="347ee-113">A collection of the unique identifiers for plans that have been disabled.</span></span>|
-|<span data-ttu-id="347ee-114">skuId</span><span class="sxs-lookup"><span data-stu-id="347ee-114">skuId</span></span>|<span data-ttu-id="347ee-115">Guid</span><span class="sxs-lookup"><span data-stu-id="347ee-115">Guid</span></span>|<span data-ttu-id="347ee-116">此 SKU 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="347ee-116">The unique identifier for the SKU.</span></span>|
+|<span data-ttu-id="3e398-112">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="3e398-112">disabledPlans</span></span>|<span data-ttu-id="3e398-113">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="3e398-113">Guid collection</span></span>|<span data-ttu-id="3e398-114">已禁用的计划的唯一标识符的集合。</span><span class="sxs-lookup"><span data-stu-id="3e398-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="3e398-115">skuId</span><span class="sxs-lookup"><span data-stu-id="3e398-115">skuId</span></span>|<span data-ttu-id="3e398-116">Guid</span><span class="sxs-lookup"><span data-stu-id="3e398-116">Guid</span></span>|<span data-ttu-id="3e398-117">此 SKU 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="3e398-117">The unique identifier for the SKU.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="347ee-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="347ee-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3e398-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3e398-118">JSON representation</span></span>
 
-<span data-ttu-id="347ee-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="347ee-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3e398-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3e398-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
