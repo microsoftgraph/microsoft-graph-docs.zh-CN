@@ -14,7 +14,7 @@ ms.locfileid: "42520378"
 ---
 # <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a>skypeForBusinessParticipantActivityCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -25,8 +25,8 @@ ms.locfileid: "42520378"
 | appSharing        | Int64  |
 | web               | Int64  |
 | dialInOut3rdParty | Int64  |
-| reportRefreshDate | 日期   |
-| reportDate        | 日期   |
+| reportRefreshDate | Date   |
+| reportDate        | Date   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

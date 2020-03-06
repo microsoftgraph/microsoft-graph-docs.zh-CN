@@ -14,7 +14,7 @@ ms.locfileid: "42448436"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -14,7 +14,7 @@ ms.locfileid: "42457718"
 ---
 # <a name="get-devicemanagementautopilotevent"></a>获取 deviceManagementAutopilotEvent
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

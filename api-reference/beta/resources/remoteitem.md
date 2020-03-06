@@ -15,7 +15,7 @@ ms.locfileid: "42521164"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

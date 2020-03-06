@@ -14,7 +14,7 @@ ms.locfileid: "42457333"
 ---
 # <a name="create-invitation"></a>创建邀请
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

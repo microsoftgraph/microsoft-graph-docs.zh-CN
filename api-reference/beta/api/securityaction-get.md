@@ -14,7 +14,7 @@ ms.locfileid: "42453574"
 ---
 # <a name="get-securityaction"></a>获取 securityAction
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
