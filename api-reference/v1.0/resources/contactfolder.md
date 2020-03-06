@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 84ca2fff70adff1acdf63e62f19c64f18c7518c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a27176342c89d78468c0b766c094f537a4f7bda
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029650"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533024"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
+
+命名空间：microsoft.graph
 
 包含联系人的文件夹。
 

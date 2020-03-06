@@ -1,20 +1,22 @@
 ---
 title: 获取用户活动
-description: 获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+description: 获取给定用户的活动。 与**最近**的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
 localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1a3dad16f96f8b16618a1916bcccf6cf67eb95ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74ea4cf908e8d6aecf53bbc9f1011a51b23ac270
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510730"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
-获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+命名空间：microsoft.graph
+
+获取给定用户的活动。 与**最近**的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -36,13 +38,13 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数:
+此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
-- $top, 以限制跨页的最大项目数。
-- 在活动或**historyItems**的**lastModifiedDateTime**属性上 $filter (如果已展开)。
+- $top，以限制跨页的最大项目数。
+- 在活动或**historyItems**的**lastModifiedDateTime**属性上 $filter （如果已展开）。
 
-以下是使用 URL 编码支持的查询的一些示例:
+以下是使用 URL 编码支持的查询的一些示例：
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -52,7 +54,7 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -64,7 +66,7 @@ GET /me/activities
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将返回`200 OK`应用程序的用户活动的响应代码。
+如果成功，此方法将返回`200 OK`应用程序的用户活动的响应代码。
 
 ## <a name="example"></a>示例
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 292c4c3fa09c2b42b9ce9193bbf879ff961969e3
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 7a1f22865b695d50147d92b66d0b919a0a904f87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359724"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530875"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 提示用户提交示例的可能值。
 
@@ -22,10 +24,10 @@ ms.locfileid: "37359724"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|alwaysPrompt|1|始终提示。|
-|promptBeforeSendingPersonalData|双面|发送个人数据前提示。|
-|neverSendData|第三章|从不发送数据。|
-|sendAllDataWithoutPrompting|4|在不提示的情况下发送所有数据。|
+|alwaysPrompt|1 |始终提示。|
+|promptBeforeSendingPersonalData|2 |发送个人数据前提示。|
+|neverSendData|3 |从不发送数据。|
+|sendAllDataWithoutPrompting|4 |在不提示的情况下发送所有数据。|
 
 
 

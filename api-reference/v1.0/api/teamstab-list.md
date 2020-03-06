@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d70fc12e64d056cd484502d46bd25874951f79a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027186"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509256"
 ---
 # <a name="list-tabs-in-channel"></a>通道中的列表选项卡
+
+命名空间：microsoft.graph
 
 
 检索[团队](../resources/team.md)中指定[通道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
@@ -22,7 +24,7 @@ ms.locfileid: "36027186"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group. 全部, Group。 Read. All    |
+|委派（工作或学校帐户） | Group. 全部，Group。 Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
 
@@ -47,7 +49,7 @@ GET /teams/{id}/channels/{id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[选项卡](../resources/teamstab.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[选项卡](../resources/teamstab.md)对象集合。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

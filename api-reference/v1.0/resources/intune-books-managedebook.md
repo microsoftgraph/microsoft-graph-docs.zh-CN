@@ -5,20 +5,22 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3288b86ec735b4480577bb36a604107a51bb4f7f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360459"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531007"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管电子书基属性的抽象类。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedEBooks](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) 集合|列出 [managedEBook](../resources/intune-books-managedebook.md) 对象的属性和关系。|
@@ -37,7 +39,7 @@ ms.locfileid: "37360459"
 |createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。|
 |informationUrl|String|详细信息 Url。|
-|privacyInformationUrl|String|隐私声明 Url。|
+|privacyInformationUrl|字符串|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

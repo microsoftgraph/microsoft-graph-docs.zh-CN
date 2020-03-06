@@ -5,21 +5,23 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c62e65ffb6c6a0e3a8af92bda6a8b1e1c241ada7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6e32f7bf9c635423ca1aace92aea160f6cc2706
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032632"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531525"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
+
+命名空间：microsoft.graph
 
 用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String| 组织说明。|
+|说明|字符串| 组织说明。|
 |displayName|String| 组织显示名称。|
 |externalSource|educationExternalSource| 从中创建此组织的源。 可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
 

@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6d1e42d375dd53fcb71ae049622c59d2d31b3406
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: f29d385060d93b8de54ee27f9f948f83e3ad2711
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533614"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>SubscribeToToneOperation 资源类型
+
+命名空间：microsoft.graph
 
 描述用于接收 DTMF 声音的订阅的创建响应格式。
 
@@ -20,7 +22,7 @@ ms.locfileid: "40913539"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 客户端上下文。                                                                                                                               |
+| 适用                  | 字符串                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                             |
 | 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 948aad9e8f077c8255ec75540647814b748defa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc7d7c5c6a3560435c4e61a8953887f5b6b61324
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532041"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips 资源类型
+
+命名空间：microsoft.graph
 
 
 有关已在邮箱上设置的任何自动答复的[邮件](../resources/mailtips.md)提示。

@@ -5,19 +5,21 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe49cc3209164778bbeed625b3c24c7cc8ee3238
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d519d4a21af17dd10fa840e2e81bab9aef35c19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034900"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533911"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
+
+命名空间：microsoft.graph
 
 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -28,7 +30,7 @@ ms.locfileid: "36034900"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bold|boolean|表示字体的加粗状态。|
-|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|

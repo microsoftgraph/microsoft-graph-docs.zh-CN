@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae74b7353a0b4198b42a04fdd420eb3447d4c11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62522cee67684141911511de26731879936b4f2b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029846"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531883"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat 资源类型
+
+命名空间：microsoft.graph
 
 表示图表坐标轴标题格式。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性

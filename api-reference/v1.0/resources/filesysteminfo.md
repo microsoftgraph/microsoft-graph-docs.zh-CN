@@ -7,14 +7,16 @@ localization_priority: Normal
 description: FileSystemInfo 资源包含设备本地文件系统所报告的项目本地版本的属性。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 12f2c0ed0dd10b36adea919795c2ae55f586436a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532945"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
+
+命名空间：microsoft.graph
 
 **FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。
 

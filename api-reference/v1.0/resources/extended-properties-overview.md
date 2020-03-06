@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 05e2b6f67570e17c9b8dfba2db31f0fbe67e1043
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f534628c32fab68cfcc5816a775b30c6b48aaa23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531465"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
+
+命名空间：microsoft.graph
 
 扩展属性允许存储自定义数据，当 Outlook MAPI 属性_尚未在 Microsoft Graph API 元数据中公开_时，扩展属性专门用作应用访问这些属性的自定义数据的回退机制。可以使用扩展属性 REST API 在以下用户资源中存储或获取此类自定义数据：
 

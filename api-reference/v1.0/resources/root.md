@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 根 Facet 指示对象是它的层次结构中最顶层的对象。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6cbeb16ed6f5faa101770dff3d2339196facc5d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c6f0dff9c58661f5e661fdb61fd4e0be2c39fb4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034641"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533796"
 ---
 # <a name="root-resource-type"></a>根资源类型
+
+命名空间：microsoft.graph
 
 **根** Facet 指示对象是它的层次结构中最顶层的对象。
 若此 Facet 有值（非 null），表明对象是根。

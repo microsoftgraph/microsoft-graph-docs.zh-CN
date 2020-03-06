@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 58ec80676455c4804723771e5e71fbab30a9a2c1
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c80e8ae2c9fdfe4a11a02e9f71ada531a121b279
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163414"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511290"
 ---
 # <a name="create-page"></a>创建页面
+
+命名空间：microsoft.graph
 
 在默认笔记本的默认分区中创建新的 OneNote 页面。
 
@@ -22,7 +24,7 @@ ms.locfileid: "42163414"
 
 > **注意：** 对可以使用此 API 添加到分区的页面数有限制。 有关详细信息，请参阅使用此 API 创建所有限制的[OneNote 页面](/graph/onenote-create-page)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

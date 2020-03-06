@@ -5,14 +5,16 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d9b500e3f5a3768dd345d1e7e8df41c63b1aa54b
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 0b4ba56eafd3ff8ac0e8902019816cb4b752761f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450674"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531637"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
+
+命名空间：microsoft.graph
 
 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅 [在 Azure AD 中分配管理员角色](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色，请发送具有此目录角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) ID 的 POST 请求。 [列出目录角色模板](../api/directoryroletemplate-list.md)，以获取其他所有可用目录角色。 继承自 [directoryObject](directoryobject.md)。
 

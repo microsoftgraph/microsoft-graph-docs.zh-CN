@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7c5cc116567b0ee2db1b2dd5e28c4749d7c6772c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df97a37cf1f2dc086af8905f6ec168a7ac458b0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033864"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533542"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
+
+命名空间：microsoft.graph
 
 
 
@@ -21,8 +23,8 @@ ms.locfileid: "36033864"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|如果设置为 true, 则来宾可以添加和更新频道。|
-|allowDeleteChannels|Boolean|如果设置为 true, 则来宾可以删除频道。|
+|allowCreateUpdateChannels|Boolean|如果设置为 true，则来宾可以添加和更新频道。|
+|allowDeleteChannels|Boolean|如果设置为 true，则来宾可以删除频道。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

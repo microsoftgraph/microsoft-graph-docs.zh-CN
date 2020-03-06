@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: afd6f130f3d86344c4ac82d1692c6c659cf28536
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 65a1c3169defa77ffb9cbf32907137b7b4268006
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937586"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452591"
 ---
 # <a name="get-team-photo"></a>获取团队照片
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

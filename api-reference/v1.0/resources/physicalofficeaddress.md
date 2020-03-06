@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d79479136390627eeb82a269e79b286cebf9a2e
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c7b0280d8b9e7d62357985b88ead034b015aef1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622605"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534060"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
+
+命名空间：microsoft.graph
 
 表示资源（如组织联系人）的业务地址。
 
@@ -20,10 +22,10 @@ ms.locfileid: "37622605"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|String|城市。|
+|城市|字符串|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
-|officeLocation  | String | 组织联系人的办公地点，如建筑物和办公室号码。  |
-|postalCode|String|邮政编码。|
+|officeLocation  | 字符串 | 组织联系人的办公地点，如建筑物和办公室号码。  |
+|postalCode|字符串|邮政编码。|
 |state|String|省/市/自治区。|
 |street|String|街道。|
 

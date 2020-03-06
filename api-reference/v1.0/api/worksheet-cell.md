@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 39370dafce1d404f4412cbda6e907aaff115afb6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b447bed5bd6e77faa941a3c228f78b804d0204f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508693"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
+
+命名空间：microsoft.graph
 
 根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。
 ## <a name="permissions"></a>权限
@@ -32,14 +34,14 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 ```
 
 ## <a name="function-parameters"></a>函数参数
-在请求路径中, 提供以下参数。
+在请求路径中，提供以下参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |row|Int32|要检索的单元格的行号。从零开始编制索引。|
 |column|Int32|要检索的单元格的列号。 从零开始编制索引。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |

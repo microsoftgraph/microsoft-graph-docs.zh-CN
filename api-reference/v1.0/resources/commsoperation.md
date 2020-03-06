@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 91b56b93e6572d3b5a87b3f37dcbe9cdeee7e00a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 05dcb092c34db57660c149fef0665ec31bdaba74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533044"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
+
+命名空间：microsoft.graph
 
 表示某个长时间运行的操作的状态。
 
@@ -26,7 +28,7 @@ ms.locfileid: "40913231"
 
 | 属性           | 类型                        | 说明                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| 适用      | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                           |
+| 适用      | 字符串                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                           |
 | id                 | String                      | 操作 ID。 只读。                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。                                              |
 | 状态             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |

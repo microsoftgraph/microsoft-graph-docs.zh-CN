@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 03b18712e62a37e546fb8f9e3d031eeedace0208
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d74356e20bcc634f2ce9c5e943aa8a53e5f4242
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532011"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
+
+命名空间：microsoft.graph
 
 **baseItemVersion** 资源表示项或实体的以前版本。
 

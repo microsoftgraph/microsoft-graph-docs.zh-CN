@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: ba40d2ac0605a255b0b7df05db1e5bebb68c2e42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b3d7d2d82ab2a6539ace2fa143ceaad55722336
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531563"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
+
+命名空间：microsoft.graph
 
 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 

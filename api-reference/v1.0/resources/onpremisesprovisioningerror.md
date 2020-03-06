@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ccbb10bdf5dba14a01a572198dbdbbafb2534eb7
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 54f11058bc75d6e5e417813b8b257f3a7ff78e94
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621650"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534151"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
+
+命名空间：microsoft.graph
 
 表示将本地目录同步到 Azure Active Directory 时[用户](user.md)、[组](group.md)和[orgContact](orgcontact.md)资源的目录同步错误。
 
@@ -20,9 +22,9 @@ ms.locfileid: "37621650"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|“类别”|String| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
+|“类别”|字符串| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
 |occurredDateTime|DateTimeOffset| 发生错误的日期和时间。 |
-|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
+|propertyCausingError|字符串| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
 |value|String| 导致错误的属性的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d4cdfa609e5cc2daf484bf0f35b863285ee811dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d86d5f07a957abe45b898be08744c7c93853d78e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533155"
 ---
 # <a name="alternativesecurityid-resource-type"></a>alternativeSecurityId 资源类型
+
+命名空间：microsoft.graph
 
 仅供内部使用。 未来将弃用此复杂类型。
 
@@ -35,5 +37,5 @@ ms.locfileid: "36033241"
 | 属性         | 类型       | 说明
 |:-----------------|:-----------|:---------------------
 | 类型             | Int32      | 仅供内部使用
-| identityProvider | string     | 仅供内部使用
-| 注册表项              | Edm | 仅供内部使用
+| identityProvider | 字符串     | 仅供内部使用
+| 注册表项              | Edm.Binary | 仅供内部使用

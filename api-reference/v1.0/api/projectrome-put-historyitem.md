@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 851862a49a3a6852d70e597d70f5622833c7c087
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510702"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
+
+命名空间：microsoft.graph
 
 为现有用户活动创建新的或替换现有的历史记录项。
 
@@ -37,7 +39,7 @@ PUT /me/activities/{id}/historyItems/{id}
 
 Id 必须是 GUID。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -45,11 +47,11 @@ Id 必须是 GUID。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
+在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
+如果成功，此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
 
 ## <a name="example"></a>示例
 

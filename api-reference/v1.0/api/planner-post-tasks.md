@@ -5,14 +5,16 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9ec7ce96d0687ec3c84ba34c4783d2dc54fe34cc
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 8c3f3795c1f958cd61cf6eae793e1cc7afb2ca67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36361644"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510975"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
+
+命名空间：microsoft.graph
 
 使用此 API 新建 **plannerTask**。
 ## <a name="permissions"></a>权限
@@ -48,7 +50,7 @@ POST /planner/tasks
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
@@ -70,7 +72,7 @@ Content-length: 285
   },
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,20 +5,22 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 493f9fbb3c92f8986afa28ecf98ee1e9166a4f1e
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: af1226e5a8fbf9cd19c198a622e90f3a29873702
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229907"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517339"
 ---
 # <a name="add-attachment"></a>添加附件
+
+命名空间：microsoft.graph
 
 使用此 API 可将[附件](../resources/attachment.md)添加到现有[事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
 
 如果组织者将附件添加到会议事件中，则组织者随后可以[更新](event-update.md)事件以发送附件并为每个与会者同时更新事件。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,7 +64,7 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/at
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

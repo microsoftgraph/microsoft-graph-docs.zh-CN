@@ -5,19 +5,21 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d22c932989b9c0d21350842babd9b4bbf420124c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4dda174401ebf3435c7a190a3f92167ac6b47c0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035166"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533977"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
+
+命名空间：microsoft.graph
 
 **PlannerTaskDetails**资源表示有关任务的其他信息。 每个[任务](plannertask.md)对象都有一个详细信息对象。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

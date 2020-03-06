@@ -5,15 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a1821a65cce7d29683b3a34b8c1d7e89f7d62e51
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ad0053ffb0a5f09c72cd84d27b61b5a8ee5fa387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374609"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511416"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
-使用用户的公式区域设置，将新名称添加到给定范围的集合。
+
+命名空间： microsoft. graph 使用用户的公式区域设置将新名称添加到给定范围的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,11 +45,11 @@ POST /workbook/worksheets({id|name})/names/add
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
 |公式|string|名称将引用的公式或区域。|
-|comment|字符串|与此已命名项相关联的注释。|
+|comment|string|与此已命名项相关联的注释。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -57,7 +58,7 @@ POST /workbook/worksheets({id|name})/names/add
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
@@ -73,19 +74,19 @@ Content-length: 54
   "comment": "Comment for the named item"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditemcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditemcollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditemcollection-add-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/nameditemcollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

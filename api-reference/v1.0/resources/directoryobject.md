@@ -5,14 +5,16 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c1b462b001c9ccecfb792b705506a5b43f8b0254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 01548a3f1be4725fad1814f4a509a13a987858e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032737"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531651"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
+
+命名空间：microsoft.graph
 
 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
 

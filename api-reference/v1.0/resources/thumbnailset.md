@@ -7,14 +7,16 @@ localization_priority: Normal
 description: ThumbnailSet 资源是键控的 缩略图 资源集合。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbd9ec5698fd3a9aac21e2f1463ce4364946e69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533460"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
+
+命名空间：microsoft.graph
 
 **ThumbnailSet** 资源是键控的 [缩略图](thumbnail.md) 资源集合。它用来表示与 DriveItem 相关联的一组缩略图。
 
@@ -50,7 +52,7 @@ ms.locfileid: "36033626"
 
 | 属性 | 类型                      | 说明                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | 项目中的 id。只读。                                                |
+| id       | 字符串                    | 项目中的 id。只读。                                                |
 | 大    | [缩略图](thumbnail.md) | 1920 x 1920 缩放后的缩略图。                                                     |
 | 中等   | [缩略图](thumbnail.md) | 176x176 缩放后的缩略图。                                                       |
 | 小    | [缩略图](thumbnail.md) | 48x48 裁剪缩略图。                                                        |

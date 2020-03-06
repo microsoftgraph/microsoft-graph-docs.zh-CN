@@ -5,14 +5,16 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 058164d44ef6d9d6ba6667cf1cb7249bf57c2a83
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 7a7419942f0639d4b8416fc5118165bf5e8f16b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633508"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508581"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

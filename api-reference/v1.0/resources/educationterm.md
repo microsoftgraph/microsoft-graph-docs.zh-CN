@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531506"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
+
+命名空间：microsoft.graph
 
 一个学期。 它表示学年的指定部分。 在 [educationClass](educationclass.md) 中使用。
 

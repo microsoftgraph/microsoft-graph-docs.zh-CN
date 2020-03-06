@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 168667566f880ecc2b2aafea63d95179e8c5c6a4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6c114e41e113faa3a039a2039844a5fa0cd273f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869947"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518033"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
+
+命名空间：microsoft.graph
 
 检索指定用户拥有的最近删除的项目的列表。  
 

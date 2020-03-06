@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 429f9b7d273b83b78580650ee323ea35343cdfaf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cd60bf4416ae02b74d9c49fdb69c93ffa19c7c66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531715"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
+
+命名空间：microsoft.graph
 
 介绍某个时间点的日期、时间和时区。
 

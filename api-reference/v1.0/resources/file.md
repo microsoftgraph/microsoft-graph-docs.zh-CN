@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 51ec91a635db2ca259ba84cea29304e4e6ac7cbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c316e3b09f00ffebd7ebfab5e47b49c7df3980d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030371"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532958"
 ---
 # <a name="file-resource-type"></a>File 资源类型
+
+命名空间：microsoft.graph
 
 **文件**资源将与文件相关的数据项分组到一个单一结构。
 
@@ -41,7 +43,7 @@ ms.locfileid: "36030371"
 
 | 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 哈希   | [希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
+| 哈希   | [哈希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
 
 ## <a name="remarks"></a>注解 

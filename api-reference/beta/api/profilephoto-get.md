@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b5aec9f4cd1868948d750a8320da9d054ab29558
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cd899248a53eab2b652ada9287c5e2ca98f5af95
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455009"
 ---
 # <a name="get-photo"></a>获取照片
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

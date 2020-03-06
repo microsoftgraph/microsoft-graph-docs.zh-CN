@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a66f8f0fe7e8fc194c06cef65a0669bb2a45b617
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f9f9ad1143c1bd9f3eb4bfa1e9eee2de3b3846f7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35736266"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636870"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const domain = {
 };
 
 let res = await client.api('/domains/contoso.com')
-    .update({domain : domain});
+    .update(domain);
 
 ```
