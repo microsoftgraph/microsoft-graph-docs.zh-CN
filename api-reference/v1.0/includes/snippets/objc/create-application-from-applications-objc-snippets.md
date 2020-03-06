@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8dcfbdec1d7e0e0eebb17ba63b7b40f2feed2ef1
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "37997111"
 ---
-
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
@@ -19,9 +24,9 @@ NSData *applicationData = [application getSerializedDataWithError:&error];
 [urlRequest setHTTPBody:applicationData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		//Request Completed
+        //Request Completed
 
 }];
 
