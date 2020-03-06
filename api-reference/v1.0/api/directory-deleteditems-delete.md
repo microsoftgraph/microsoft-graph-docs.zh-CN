@@ -5,69 +5,71 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d18bd2a20920d17737e3d517ed09d2a06bd5432d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 130d4723043f9f49d9e218987c5ac0e6b25c698a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939808"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518061"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="acabf-103">永久删除项目</span><span class="sxs-lookup"><span data-stu-id="acabf-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="4eedd-103">永久删除项目</span><span class="sxs-lookup"><span data-stu-id="4eedd-103">Permanently delete item</span></span>
 
-<span data-ttu-id="acabf-104">永久删除[已删除的项目](../resources/directory.md)中的项目</span><span class="sxs-lookup"><span data-stu-id="acabf-104">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="4eedd-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4eedd-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="acabf-105">目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。</span><span class="sxs-lookup"><span data-stu-id="acabf-105">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="acabf-106">可以永久删除“已删除的项目”中的项目。</span><span class="sxs-lookup"><span data-stu-id="acabf-106">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="acabf-107">但当某个项目永久删除后，将**无法**还原。</span><span class="sxs-lookup"><span data-stu-id="acabf-107">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="4eedd-105">永久删除[已删除的项目](../resources/directory.md)中的项目</span><span class="sxs-lookup"><span data-stu-id="4eedd-105">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="acabf-108">权限</span><span class="sxs-lookup"><span data-stu-id="acabf-108">Permissions</span></span>
-<span data-ttu-id="acabf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="acabf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4eedd-106">目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。</span><span class="sxs-lookup"><span data-stu-id="4eedd-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="4eedd-107">可以永久删除“已删除的项目”中的项目。</span><span class="sxs-lookup"><span data-stu-id="4eedd-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="4eedd-108">但当某个项目永久删除后，将**无法**还原。</span><span class="sxs-lookup"><span data-stu-id="4eedd-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-<span data-ttu-id="acabf-111">对于应用程序：</span><span class="sxs-lookup"><span data-stu-id="acabf-111">For applications:</span></span>
+## <a name="permissions"></a><span data-ttu-id="4eedd-109">权限</span><span class="sxs-lookup"><span data-stu-id="4eedd-109">Permissions</span></span>
+<span data-ttu-id="4eedd-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4eedd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="acabf-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="acabf-112">Permission type</span></span>      | <span data-ttu-id="acabf-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acabf-113">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="4eedd-112">对于应用程序：</span><span class="sxs-lookup"><span data-stu-id="4eedd-112">For applications:</span></span>
+
+|<span data-ttu-id="4eedd-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="4eedd-113">Permission type</span></span>      | <span data-ttu-id="4eedd-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4eedd-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="acabf-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-114">Delegated (work or school account)</span></span> | <span data-ttu-id="acabf-115">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="acabf-115">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="acabf-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acabf-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="acabf-117">Not supported.</span></span>    |
-|<span data-ttu-id="acabf-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="acabf-118">Application</span></span> | <span data-ttu-id="acabf-119">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="acabf-119">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="4eedd-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-115">Delegated (work or school account)</span></span> | <span data-ttu-id="4eedd-116">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-116">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="4eedd-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4eedd-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="4eedd-118">Not supported.</span></span>    |
+|<span data-ttu-id="4eedd-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="4eedd-119">Application</span></span> | <span data-ttu-id="4eedd-120">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-<span data-ttu-id="acabf-120">对于用户：</span><span class="sxs-lookup"><span data-stu-id="acabf-120">For users:</span></span>
+<span data-ttu-id="4eedd-121">对于用户：</span><span class="sxs-lookup"><span data-stu-id="4eedd-121">For users:</span></span>
 
-|<span data-ttu-id="acabf-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="acabf-121">Permission type</span></span>      | <span data-ttu-id="acabf-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acabf-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4eedd-122">权限类型</span><span class="sxs-lookup"><span data-stu-id="4eedd-122">Permission type</span></span>      | <span data-ttu-id="4eedd-123">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4eedd-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="acabf-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-123">Delegated (work or school account)</span></span> | <span data-ttu-id="acabf-124">User.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="acabf-124">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="acabf-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acabf-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="acabf-126">Not supported.</span></span> |
-|<span data-ttu-id="acabf-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="acabf-127">Application</span></span> | <span data-ttu-id="acabf-128">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acabf-128">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="4eedd-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-124">Delegated (work or school account)</span></span> | <span data-ttu-id="4eedd-125">User.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="4eedd-126">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4eedd-127">不支持。</span><span class="sxs-lookup"><span data-stu-id="4eedd-127">Not supported.</span></span> |
+|<span data-ttu-id="4eedd-128">应用程序</span><span class="sxs-lookup"><span data-stu-id="4eedd-128">Application</span></span> | <span data-ttu-id="4eedd-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-129">User.ReadWrite.All</span></span> |
 
-<span data-ttu-id="acabf-129">对于组：</span><span class="sxs-lookup"><span data-stu-id="acabf-129">For groups:</span></span>
+<span data-ttu-id="4eedd-130">对于组：</span><span class="sxs-lookup"><span data-stu-id="4eedd-130">For groups:</span></span>
 
-|<span data-ttu-id="acabf-130">权限类型</span><span class="sxs-lookup"><span data-stu-id="acabf-130">Permission type</span></span>      | <span data-ttu-id="acabf-131">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acabf-131">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4eedd-131">权限类型</span><span class="sxs-lookup"><span data-stu-id="4eedd-131">Permission type</span></span>      | <span data-ttu-id="4eedd-132">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4eedd-132">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="acabf-132">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-132">Delegated (work or school account)</span></span> | <span data-ttu-id="acabf-133">Group.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="acabf-133">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="acabf-134">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acabf-134">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acabf-135">不支持。</span><span class="sxs-lookup"><span data-stu-id="acabf-135">Not supported.</span></span>    |
-|<span data-ttu-id="acabf-136">应用程序</span><span class="sxs-lookup"><span data-stu-id="acabf-136">Application</span></span> | <span data-ttu-id="acabf-137">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acabf-137">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="4eedd-133">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-133">Delegated (work or school account)</span></span> | <span data-ttu-id="4eedd-134">Group.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="4eedd-135">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4eedd-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4eedd-136">不支持。</span><span class="sxs-lookup"><span data-stu-id="4eedd-136">Not supported.</span></span>    |
+|<span data-ttu-id="4eedd-137">应用程序</span><span class="sxs-lookup"><span data-stu-id="4eedd-137">Application</span></span> | <span data-ttu-id="4eedd-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4eedd-138">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="acabf-138">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="acabf-138">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4eedd-139">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4eedd-139">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deletedItems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="acabf-139">请求标头</span><span class="sxs-lookup"><span data-stu-id="acabf-139">Request headers</span></span>
-| <span data-ttu-id="acabf-140">名称</span><span class="sxs-lookup"><span data-stu-id="acabf-140">Name</span></span>       | <span data-ttu-id="acabf-141">说明</span><span class="sxs-lookup"><span data-stu-id="acabf-141">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4eedd-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="4eedd-140">Request headers</span></span>
+| <span data-ttu-id="4eedd-141">名称</span><span class="sxs-lookup"><span data-stu-id="4eedd-141">Name</span></span>       | <span data-ttu-id="4eedd-142">说明</span><span class="sxs-lookup"><span data-stu-id="4eedd-142">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="acabf-142">Authorization</span><span class="sxs-lookup"><span data-stu-id="acabf-142">Authorization</span></span>  | <span data-ttu-id="acabf-143">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="acabf-143">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="acabf-144">接受</span><span class="sxs-lookup"><span data-stu-id="acabf-144">Accept</span></span>  | <span data-ttu-id="acabf-145">application/json</span><span class="sxs-lookup"><span data-stu-id="acabf-145">application/json</span></span> |
+| <span data-ttu-id="4eedd-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="4eedd-143">Authorization</span></span>  | <span data-ttu-id="4eedd-144">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="4eedd-144">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="4eedd-145">接受</span><span class="sxs-lookup"><span data-stu-id="4eedd-145">Accept</span></span>  | <span data-ttu-id="4eedd-146">application/json</span><span class="sxs-lookup"><span data-stu-id="4eedd-146">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="acabf-146">请求正文</span><span class="sxs-lookup"><span data-stu-id="acabf-146">Request body</span></span>
-<span data-ttu-id="acabf-147">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="acabf-147">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4eedd-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="4eedd-147">Request body</span></span>
+<span data-ttu-id="4eedd-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4eedd-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="acabf-148">响应</span><span class="sxs-lookup"><span data-stu-id="acabf-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4eedd-149">响应</span><span class="sxs-lookup"><span data-stu-id="4eedd-149">Response</span></span>
 
-<span data-ttu-id="acabf-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="acabf-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4eedd-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4eedd-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="acabf-151">示例</span><span class="sxs-lookup"><span data-stu-id="acabf-151">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="acabf-152">请求</span><span class="sxs-lookup"><span data-stu-id="acabf-152">Request</span></span>
+## <a name="example"></a><span data-ttu-id="4eedd-152">示例</span><span class="sxs-lookup"><span data-stu-id="4eedd-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4eedd-153">请求</span><span class="sxs-lookup"><span data-stu-id="4eedd-153">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="acabf-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="acabf-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4eedd-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="4eedd-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directory"
@@ -75,26 +77,26 @@ DELETE /directory/deletedItems/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="acabf-154">C#</span><span class="sxs-lookup"><span data-stu-id="acabf-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4eedd-155">C#</span><span class="sxs-lookup"><span data-stu-id="4eedd-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="acabf-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="acabf-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4eedd-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4eedd-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="acabf-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="acabf-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4eedd-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4eedd-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="acabf-157">Java</span><span class="sxs-lookup"><span data-stu-id="acabf-157">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4eedd-158">Java</span><span class="sxs-lookup"><span data-stu-id="4eedd-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="acabf-158">响应</span><span class="sxs-lookup"><span data-stu-id="acabf-158">Response</span></span>
-<span data-ttu-id="acabf-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="acabf-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4eedd-159">响应</span><span class="sxs-lookup"><span data-stu-id="4eedd-159">Response</span></span>
+<span data-ttu-id="4eedd-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4eedd-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

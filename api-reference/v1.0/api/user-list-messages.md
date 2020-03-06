@@ -5,40 +5,42 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 80b1db383e27d1b4a71eb2d45ba047026707fee3
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 67e201d14cdae4ada4ccca8160822ace5793c099
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702494"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509057"
 ---
-# <a name="list-messages"></a><span data-ttu-id="33cc4-103">列出邮件</span><span class="sxs-lookup"><span data-stu-id="33cc4-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="e75c8-103">列出邮件</span><span class="sxs-lookup"><span data-stu-id="e75c8-103">List messages</span></span>
 
-<span data-ttu-id="33cc4-104">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="33cc4-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
+<span data-ttu-id="e75c8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e75c8-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="33cc4-105">根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。</span><span class="sxs-lookup"><span data-stu-id="33cc4-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="33cc4-106">默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="33cc4-106">The default page size is 10 messages.</span></span> <span data-ttu-id="33cc4-107">若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。</span><span class="sxs-lookup"><span data-stu-id="33cc4-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="33cc4-108">此 URL 包括可能已在初始请求中指定的任何查询参数。</span><span class="sxs-lookup"><span data-stu-id="33cc4-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
+<span data-ttu-id="e75c8-105">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="e75c8-105">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
 
-<span data-ttu-id="33cc4-109">不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。</span><span class="sxs-lookup"><span data-stu-id="33cc4-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="33cc4-110">此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。</span><span class="sxs-lookup"><span data-stu-id="33cc4-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="33cc4-111">因此，甚至在初始响应中，`$skip` 值都会大于页面大小。</span><span class="sxs-lookup"><span data-stu-id="33cc4-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="33cc4-112">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="33cc4-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="e75c8-106">根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。</span><span class="sxs-lookup"><span data-stu-id="e75c8-106">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="e75c8-107">默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="e75c8-107">The default page size is 10 messages.</span></span> <span data-ttu-id="e75c8-108">若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。</span><span class="sxs-lookup"><span data-stu-id="e75c8-108">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="e75c8-109">此 URL 包括可能已在初始请求中指定的任何查询参数。</span><span class="sxs-lookup"><span data-stu-id="e75c8-109">This URL includes any query parameters you may have specified in the initial request.</span></span> 
 
-<span data-ttu-id="33cc4-113">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="33cc4-113">Currently, this operation returns message bodies in only HTML format.</span></span>
+<span data-ttu-id="e75c8-110">不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。</span><span class="sxs-lookup"><span data-stu-id="e75c8-110">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="e75c8-111">此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。</span><span class="sxs-lookup"><span data-stu-id="e75c8-111">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="e75c8-112">因此，甚至在初始响应中，`$skip` 值都会大于页面大小。</span><span class="sxs-lookup"><span data-stu-id="e75c8-112">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="e75c8-113">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="e75c8-113">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-<span data-ttu-id="33cc4-114">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="33cc4-114">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
+<span data-ttu-id="e75c8-114">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="e75c8-114">Currently, this operation returns message bodies in only HTML format.</span></span>
 
-* <span data-ttu-id="33cc4-115">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="33cc4-115">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="33cc4-116">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="33cc4-116">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="33cc4-117">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="33cc4-117">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+<span data-ttu-id="e75c8-115">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="e75c8-115">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="33cc4-118">权限</span><span class="sxs-lookup"><span data-stu-id="33cc4-118">Permissions</span></span>
-<span data-ttu-id="33cc4-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="33cc4-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+* <span data-ttu-id="e75c8-116">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="e75c8-116">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="e75c8-117">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="e75c8-117">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="e75c8-118">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="e75c8-118">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-|<span data-ttu-id="33cc4-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="33cc4-121">Permission type</span></span>      | <span data-ttu-id="33cc4-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="33cc4-122">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="e75c8-119">权限</span><span class="sxs-lookup"><span data-stu-id="e75c8-119">Permissions</span></span>
+<span data-ttu-id="e75c8-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e75c8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e75c8-122">权限类型</span><span class="sxs-lookup"><span data-stu-id="e75c8-122">Permission type</span></span>      | <span data-ttu-id="e75c8-123">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e75c8-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="33cc4-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="33cc4-123">Delegated (work or school account)</span></span> | <span data-ttu-id="33cc4-124">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="33cc4-124">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="33cc4-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="33cc4-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33cc4-126">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="33cc4-126">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="33cc4-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="33cc4-127">Application</span></span> | <span data-ttu-id="33cc4-128">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="33cc4-128">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="e75c8-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e75c8-124">Delegated (work or school account)</span></span> | <span data-ttu-id="e75c8-125">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e75c8-125">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e75c8-126">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e75c8-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e75c8-127">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e75c8-127">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e75c8-128">应用程序</span><span class="sxs-lookup"><span data-stu-id="e75c8-128">Application</span></span> | <span data-ttu-id="e75c8-129">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e75c8-129">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="33cc4-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="33cc4-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e75c8-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e75c8-130">HTTP request</span></span>
 
-<span data-ttu-id="33cc4-130">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="33cc4-130">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="e75c8-131">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="e75c8-131">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +48,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="33cc4-131">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="33cc4-131">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="e75c8-132">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="e75c8-132">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -54,40 +56,40 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="33cc4-132">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="33cc4-132">Optional query parameters</span></span>
-<span data-ttu-id="33cc4-133">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="33cc4-133">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e75c8-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e75c8-133">Optional query parameters</span></span>
+<span data-ttu-id="e75c8-134">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e75c8-134">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-### <a name="using-filter-and-orderby-in-the-same-query"></a><span data-ttu-id="33cc4-134">在同一查询中使用 filter 和 orderby</span><span class="sxs-lookup"><span data-stu-id="33cc4-134">Using filter and orderby in the same query</span></span>
-<span data-ttu-id="33cc4-135">在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：</span><span class="sxs-lookup"><span data-stu-id="33cc4-135">When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:</span></span>
+### <a name="using-filter-and-orderby-in-the-same-query"></a><span data-ttu-id="e75c8-135">在同一查询中使用 filter 和 orderby</span><span class="sxs-lookup"><span data-stu-id="e75c8-135">Using filter and orderby in the same query</span></span>
+<span data-ttu-id="e75c8-136">在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：</span><span class="sxs-lookup"><span data-stu-id="e75c8-136">When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:</span></span>
 
-1. <span data-ttu-id="33cc4-136">`$orderby` 中显示的属性也必须在 `$filter` 中显示。</span><span class="sxs-lookup"><span data-stu-id="33cc4-136">Properties that appear in `$orderby` must also appear in `$filter`.</span></span> 
-2. <span data-ttu-id="33cc4-137">`$orderby` 中显示的属性与 `$filter` 中属性的顺序相同。</span><span class="sxs-lookup"><span data-stu-id="33cc4-137">Properties that appear in `$orderby` are in the same order as in `$filter`.</span></span>
-3. <span data-ttu-id="33cc4-138">`$orderby` 中存在的属性显示在 `$filter` 中不存在的任意属性之前。</span><span class="sxs-lookup"><span data-stu-id="33cc4-138">Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.</span></span>
+1. <span data-ttu-id="e75c8-137">`$orderby` 中显示的属性也必须在 `$filter` 中显示。</span><span class="sxs-lookup"><span data-stu-id="e75c8-137">Properties that appear in `$orderby` must also appear in `$filter`.</span></span> 
+2. <span data-ttu-id="e75c8-138">`$orderby` 中显示的属性与 `$filter` 中属性的顺序相同。</span><span class="sxs-lookup"><span data-stu-id="e75c8-138">Properties that appear in `$orderby` are in the same order as in `$filter`.</span></span>
+3. <span data-ttu-id="e75c8-139">`$orderby` 中存在的属性显示在 `$filter` 中不存在的任意属性之前。</span><span class="sxs-lookup"><span data-stu-id="e75c8-139">Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.</span></span>
 
-<span data-ttu-id="33cc4-139">无法进行此项操作时会导致下列错误：</span><span class="sxs-lookup"><span data-stu-id="33cc4-139">Failing to do this results in the following error:</span></span>
+<span data-ttu-id="e75c8-140">无法进行此项操作时会导致下列错误：</span><span class="sxs-lookup"><span data-stu-id="e75c8-140">Failing to do this results in the following error:</span></span>
 
-- <span data-ttu-id="33cc4-140">错误代码：`InefficientFilter`</span><span class="sxs-lookup"><span data-stu-id="33cc4-140">Error code: `InefficientFilter`</span></span>
-- <span data-ttu-id="33cc4-141">错误消息：`The restriction or sort order is too complex for this operation.`</span><span class="sxs-lookup"><span data-stu-id="33cc4-141">Error message: `The restriction or sort order is too complex for this operation.`</span></span>
+- <span data-ttu-id="e75c8-141">错误代码：`InefficientFilter`</span><span class="sxs-lookup"><span data-stu-id="e75c8-141">Error code: `InefficientFilter`</span></span>
+- <span data-ttu-id="e75c8-142">错误消息：`The restriction or sort order is too complex for this operation.`</span><span class="sxs-lookup"><span data-stu-id="e75c8-142">Error message: `The restriction or sort order is too complex for this operation.`</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="33cc4-142">请求标头</span><span class="sxs-lookup"><span data-stu-id="33cc4-142">Request headers</span></span>
-| <span data-ttu-id="33cc4-143">名称</span><span class="sxs-lookup"><span data-stu-id="33cc4-143">Name</span></span>       | <span data-ttu-id="33cc4-144">类型</span><span class="sxs-lookup"><span data-stu-id="33cc4-144">Type</span></span> | <span data-ttu-id="33cc4-145">说明</span><span class="sxs-lookup"><span data-stu-id="33cc4-145">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e75c8-143">请求标头</span><span class="sxs-lookup"><span data-stu-id="e75c8-143">Request headers</span></span>
+| <span data-ttu-id="e75c8-144">名称</span><span class="sxs-lookup"><span data-stu-id="e75c8-144">Name</span></span>       | <span data-ttu-id="e75c8-145">类型</span><span class="sxs-lookup"><span data-stu-id="e75c8-145">Type</span></span> | <span data-ttu-id="e75c8-146">说明</span><span class="sxs-lookup"><span data-stu-id="e75c8-146">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="33cc4-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="33cc4-146">Authorization</span></span>  | <span data-ttu-id="33cc4-147">string</span><span class="sxs-lookup"><span data-stu-id="33cc4-147">string</span></span>  | <span data-ttu-id="33cc4-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="33cc4-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="33cc4-150">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="33cc4-150">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="33cc4-151">string</span><span class="sxs-lookup"><span data-stu-id="33cc4-151">string</span></span> | <span data-ttu-id="33cc4-152">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="33cc4-152">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="33cc4-153">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="33cc4-153">Values can be "text" or "html".</span></span> <span data-ttu-id="33cc4-154">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="33cc4-154">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="33cc4-155">可选。</span><span class="sxs-lookup"><span data-stu-id="33cc4-155">Optional.</span></span> |
+| <span data-ttu-id="e75c8-147">Authorization</span><span class="sxs-lookup"><span data-stu-id="e75c8-147">Authorization</span></span>  | <span data-ttu-id="e75c8-148">string</span><span class="sxs-lookup"><span data-stu-id="e75c8-148">string</span></span>  | <span data-ttu-id="e75c8-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e75c8-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e75c8-151">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="e75c8-151">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="e75c8-152">string</span><span class="sxs-lookup"><span data-stu-id="e75c8-152">string</span></span> | <span data-ttu-id="e75c8-153">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="e75c8-153">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="e75c8-154">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="e75c8-154">Values can be "text" or "html".</span></span> <span data-ttu-id="e75c8-155">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="e75c8-155">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="e75c8-156">可选。</span><span class="sxs-lookup"><span data-stu-id="e75c8-156">Optional.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="33cc4-156">请求正文</span><span class="sxs-lookup"><span data-stu-id="33cc4-156">Request body</span></span>
-<span data-ttu-id="33cc4-157">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="33cc4-157">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e75c8-157">请求正文</span><span class="sxs-lookup"><span data-stu-id="e75c8-157">Request body</span></span>
+<span data-ttu-id="e75c8-158">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e75c8-158">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="33cc4-158">响应</span><span class="sxs-lookup"><span data-stu-id="33cc4-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e75c8-159">响应</span><span class="sxs-lookup"><span data-stu-id="e75c8-159">Response</span></span>
 
-<span data-ttu-id="33cc4-159">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="33cc4-159">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="e75c8-160">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e75c8-160">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="33cc4-160">示例</span><span class="sxs-lookup"><span data-stu-id="33cc4-160">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="33cc4-161">请求</span><span class="sxs-lookup"><span data-stu-id="33cc4-161">Request</span></span>
-<span data-ttu-id="33cc4-162">此示例获取已登录用户的邮箱中的默认前 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="33cc4-162">This example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="33cc4-163">它使用 `$select` 在响应中返回每封邮件的属性的子集。</span><span class="sxs-lookup"><span data-stu-id="33cc4-163">It uses `$select` to return a subset of the properties of each message in the response.</span></span>
+## <a name="example"></a><span data-ttu-id="e75c8-161">示例</span><span class="sxs-lookup"><span data-stu-id="e75c8-161">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e75c8-162">请求</span><span class="sxs-lookup"><span data-stu-id="e75c8-162">Request</span></span>
+<span data-ttu-id="e75c8-163">此示例获取已登录用户的邮箱中的默认前 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="e75c8-163">This example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="e75c8-164">它使用 `$select` 在响应中返回每封邮件的属性的子集。</span><span class="sxs-lookup"><span data-stu-id="e75c8-164">It uses `$select` to return a subset of the properties of each message in the response.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="33cc4-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="33cc4-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e75c8-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="e75c8-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -95,26 +97,26 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="33cc4-165">C#</span><span class="sxs-lookup"><span data-stu-id="33cc4-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e75c8-166">C#</span><span class="sxs-lookup"><span data-stu-id="e75c8-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="33cc4-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="33cc4-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e75c8-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e75c8-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="33cc4-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="33cc4-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e75c8-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e75c8-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="33cc4-168">Java</span><span class="sxs-lookup"><span data-stu-id="33cc4-168">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e75c8-169">Java</span><span class="sxs-lookup"><span data-stu-id="e75c8-169">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="33cc4-169">响应</span><span class="sxs-lookup"><span data-stu-id="33cc4-169">Response</span></span>
-<span data-ttu-id="33cc4-170">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="33cc4-170">Here is an example of the response.</span></span> <span data-ttu-id="33cc4-171">若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="33cc4-171">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
+##### <a name="response"></a><span data-ttu-id="e75c8-170">响应</span><span class="sxs-lookup"><span data-stu-id="e75c8-170">Response</span></span>
+<span data-ttu-id="e75c8-171">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e75c8-171">Here is an example of the response.</span></span> <span data-ttu-id="e75c8-172">若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="e75c8-172">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
 
 <!-- {
   "blockType": "response",
