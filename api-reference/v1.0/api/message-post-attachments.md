@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d622b62e122381a2cc8ee3c9d74c1f772e0a050a
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 24beb6a0b636e39372993443e0dadb13b0c81941
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229707"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511500"
 ---
-# <a name="add-attachment"></a>Add attachment
+# <a name="add-attachment"></a>添加附件
+
+命名空间：microsoft.graph
 
 使用此 API 可将[附件](../resources/attachment.md)添加到邮件中。 
 
@@ -27,7 +29,7 @@ ms.locfileid: "42229707"
 通过发布到邮件附件集合，你可以把附件添加到现有邮件，也可以把附件添加到 [正在创建和发送的邮件](../api/user-sendmail.md)。
 
 此操作将限制可添加到 3 MB 以下的附件的大小。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -53,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

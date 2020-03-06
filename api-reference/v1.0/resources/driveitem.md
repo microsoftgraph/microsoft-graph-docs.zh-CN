@@ -6,14 +6,16 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7c36dabf1fe894dcf5ee7e97d00916bcce433aea
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 016c1e9efc290082a0ab6136496f0eeeeab9be4e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955860"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531550"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
+
+命名空间：microsoft.graph
 
 **driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。
 

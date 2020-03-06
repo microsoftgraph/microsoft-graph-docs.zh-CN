@@ -5,14 +5,16 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d68ceff79856b23f2d86b2c57a6278b7c6ad7e9d
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: f633f6ea214374aa7171bdd6ada24f4fadb4b507
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519489"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

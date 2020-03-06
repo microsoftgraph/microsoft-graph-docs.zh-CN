@@ -5,23 +5,25 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3365f5bba057c1bb46c7475b661de02ddc36cafe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f64388cd30ac4bbd4d96191c22eb42c9b1d45da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369134"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518782"
 ---
 # <a name="update-calendar"></a>更新日历
 
+命名空间：microsoft.graph
+
 更新 [calendar](../resources/calendar.md) 对象的属性。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
-根据事件所在的日历类型和请求的权限类型 (委派或应用程序), 需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
 
 | 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | 用户日历 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| 组 日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
+| 组日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
-|name|String|日历名称。|
+|name|字符串|日历名称。|
 
 ## <a name="response"></a>响应
 
@@ -66,7 +68,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ##### <a name="request"></a>请求
 下面的示例更新已登录用户的默认日历的名称。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -79,19 +81,19 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: e97e5f9a72084b7748551d60e795e43e80f353ed
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: f0853d4a215fcb554243a724b1d53d74f848a81d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844350"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516708"
 ---
 # <a name="list-trending"></a>列出趋势
+
+命名空间：microsoft.graph
 
 计算的洞察力，包括围绕用户的文档趋势的列表。
 
@@ -55,7 +57,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       |  值|
 |:-------------|:------|
 | Authorization  | Bearer {token}。必需。|

@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e1369ee83abb98d7d673fab4a8f37c2b4c13e317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e45e9160573c7297285ebb6613be0bf405b0086
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531866"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels 资源类型
+
+命名空间：microsoft.graph
 
 表示图表点上的所有数据标签的集合。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -27,7 +29,7 @@ ms.locfileid: "36029818"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为: `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
+|position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为： `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|

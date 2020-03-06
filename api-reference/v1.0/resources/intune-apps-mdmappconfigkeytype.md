@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e14ee4b93dc70f55f204ea56ae874d02d8bf5ffe
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 3862a502cba6ffae3a36e3a88f38fbc40201c141
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368174"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531140"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 应用配置密钥类型。
 
@@ -22,10 +24,10 @@ ms.locfileid: "37368174"
 |成员|值|说明|
 |:---|:---|:---|
 |stringType|0|尚未记录|
-|integerType|1|尚未记录|
-|realType|双面|尚未记录|
-|booleanType|第三章|尚未记录|
-|tokenType|4|尚未记录|
+|integerType|1 |尚未记录|
+|realType|2 |尚未记录|
+|booleanType|3 |尚未记录|
+|tokenType|4 |尚未记录|
 
 
 

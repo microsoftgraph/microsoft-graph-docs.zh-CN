@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c3632c381dcd29247696c50bc235b9662c8d6366
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da702a7718765af464525c3ae2fafc8376296d25
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533088"
 ---
 # <a name="charttitleformat-resource-type"></a>ChartTitleFormat 资源类型
+
+命名空间：microsoft.graph
 
 封装图表标题的格式属性。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性

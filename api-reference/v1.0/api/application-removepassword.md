@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c82910ec91f5b8efcd89c5bd6dcca5e29eeb5466
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fe5f330bc73c7ad10cceb074b299ed08e99ed476
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939675"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518852"
 ---
 # <a name="application-removepassword"></a>应用程序： removePassword
+
+命名空间：microsoft.graph
 
 删除[应用程序](../resources/application.md)中的密码。
 
@@ -43,7 +45,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="request-body"></a>请求正文
 
-| 属性  | 类型 | 描述|
+| 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。 必需。 |
 
@@ -58,6 +60,8 @@ POST /applications/{id}/removePassword
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_removepassword"
@@ -71,6 +75,24 @@ Content-type: application/json
     "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-removepassword-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-removepassword-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-removepassword-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-removepassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

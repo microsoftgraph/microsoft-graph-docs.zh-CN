@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 3136a82dd8d93c44adf96261092873380d47e9e6
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 880022b6686de89bff33a1717ce1d01ba4a32af1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360340"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532680"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
+
+命名空间：microsoft.graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 

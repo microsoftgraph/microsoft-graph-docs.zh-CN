@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f51a5fa2ba4570220696736ebbe80af0e7e7086c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 63699e3d6b6a4a2afcf2ad57fd04414e28d5c589
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705172"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636828"
 ---
 ```javascript
 
@@ -33,6 +33,6 @@ const list = {
 };
 
 let res = await client.api('/sites/{site-id}/lists')
-    .post({list : list});
+    .post(list);
 
 ```

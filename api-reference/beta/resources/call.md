@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 266611a9b4e89f2edec53a50efbd996da41ac372
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 9ea8f0d1c250c7b74e2b809c73fb0ce36dd1473a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839988"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507822"
 ---
 # <a name="call-resource-type"></a>call 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

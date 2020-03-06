@@ -5,20 +5,22 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa2655168ce9d0fdaa1d7842e904716fa6393ae
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: c3eba7d5addc48349a63d40effdcda638c0f684e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532762"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List mobileAppContentFiles](../api/intune-apps-mobileappcontentfile-list.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 集合|列出 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性和关系。|
@@ -36,7 +38,7 @@ ms.locfileid: "37366480"
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|String|文件名称。|
+|name|字符串|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|

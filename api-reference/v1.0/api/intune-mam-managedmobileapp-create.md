@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca5c8931a89982ec6cafe611bc6e9311187e8426
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 17611c7eb3c4052892ec23ab49751db2bfd9b66c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37363463"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42513054"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedMobileApp](../resources/intune-mam-managedmobileapp.md) 对象。
 
@@ -39,7 +41,7 @@ POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtect
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -53,7 +55,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 

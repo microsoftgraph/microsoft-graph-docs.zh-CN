@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc47940b8a9f249e66092ee016453a9eb5152ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef62f6df73c24f9e6b3884921865c28ea152a3dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533037"
 ---
 #  <a name="complianceinformation-resource-type"></a>complianceInformation 资源类型
+
+命名空间：microsoft.graph
 
 包含与安全得分控制相关联的合规性数据。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36032856"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|certificationName|String| 合规性认证名称 (例如, ISO 27018:2014、GDPR、FedRAMP、NIST 800-171) |
+|certificationName|字符串| 合规性认证名称（例如，ISO 27018:2014、GDPR、FedRAMP、NIST 800-171） |
 |certificationControls|[certificationControl](certificationcontrol.md)集合|与证书关联的证书控制的集合|
 
 ## <a name="json-representation"></a>JSON 表示形式

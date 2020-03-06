@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a2fd268bbc920b3c1a6ef3dc79f5295ff66c2eb1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0ff8d83748d8a285011b078abc028826d026125f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509085"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
+
+命名空间：microsoft.graph
 
 检索 licenseDetails 对象的列表。
 
@@ -21,7 +23,7 @@ ms.locfileid: "36727479"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User. read, User. all, All, all, Directory.accessasuser.all, all, all, all, all。 All    |
+|委派（工作或学校帐户） | User. read，User. all，All，all，Directory.accessasuser.all，all，all，all，all。 All    |
 |委派（个人 Microsoft 帐户） | User.Read    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -34,7 +36,7 @@ GET /users/{id}/licenseDetails
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法**不**支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | 持有&lt;者代码&gt;|
@@ -44,12 +46,12 @@ GET /users/{id}/licenseDetails
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[licenseDetails](../resources/licensedetails.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[licenseDetails](../resources/licensedetails.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_licensedetails"
@@ -57,19 +59,19 @@ GET /users/{id}/licenseDetails
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-licensedetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-licensedetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-licensedetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

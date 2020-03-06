@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bca00d9ac436e55507376aade84dd8c3d7e9a270
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4a77df1f6eb59a7e160c78164e46135a684c8e0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720718"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516834"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
+
+命名空间：microsoft.graph
 
 检索特定组设置对象的属性。
 
@@ -41,7 +43,7 @@ GET /groups/{id}/settings/{id}
 
 > 注意：不支持 $filter。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -52,12 +54,12 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsetting"
@@ -66,19 +68,19 @@ GET /groups/{id}/settings/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

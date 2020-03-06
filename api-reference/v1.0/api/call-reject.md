@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 04ec827cce247e6eef57a025ff81a49ae91353d8
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: baa44ba0eec9ef8a4bc9e4111a7c313a26dfa1de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913700"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518670"
 ---
 # <a name="call-reject"></a>呼叫：拒绝
+
+命名空间：microsoft.graph
 
 启用机器人以拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含**chatInfo**和**meetingInfo**参数。
 
@@ -46,8 +48,8 @@ POST /communications/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|reason|String|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
-|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
+|reason|字符串|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
+|callbackUri|字符串|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
@@ -58,7 +60,7 @@ POST /communications/calls/{id}/reject
 ### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>示例1：拒绝传入呼叫并使用 ' 占线 ' 原因
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject"
@@ -72,19 +74,19 @@ Content-Length: 24
   "reason": "busy"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-reject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -159,7 +161,7 @@ Content-Type: application/json
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject-none-reason"
@@ -173,19 +175,19 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-none-reason-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-none-reason-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-none-reason-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-reject-none-reason-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

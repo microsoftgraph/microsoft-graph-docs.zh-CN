@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1a3ec220c1c5ff0676b683c0255a81de9c4ecedf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 536e2b5f1672f2e7c75603b8fb2d70308e2c0bcb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021243"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509596"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
+
+命名空间：microsoft.graph
 
 从表中删除列。
 ## <a name="permissions"></a>权限

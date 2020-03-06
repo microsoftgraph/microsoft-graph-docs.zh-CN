@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2919ce12936e5d7387f857de4e5381196c9b5bb9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 58af4dd157691184dc7cf87c1942921d8716c348
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37365262"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42513977"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>创建 windows10SecureAssessmentConfiguration
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37365262"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -55,7 +57,7 @@ POST /deviceManagement/deviceConfigurations
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|launchUri|String|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
+|launchUri|字符串|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|用于配置 Windows 设备进行测试的帐户。 用户可以是域帐户（域\用户）、AAD 帐户 (username@tenant.com) 或本地帐户（用户名）。|
 |allowPrinting|Boolean|指示在测试期间是否允许应用打印。|
 |allowScreenCapture|Boolean|指示在测试期间是否允许屏幕捕获功能。|

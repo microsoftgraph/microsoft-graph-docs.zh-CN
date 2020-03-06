@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ee39e1fc58fe604ff24433dcb540b44e22bb3ee9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1a864dfb960a17ec4ea3d27dc114284d14f08789
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033003"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531918"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
+
+命名空间：microsoft.graph
 
 封装整个图表区域的格式属性。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性

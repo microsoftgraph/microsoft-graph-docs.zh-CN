@@ -1,18 +1,20 @@
 ---
-title: '笔记本: getNotebookFromWebUrl'
+title: 笔记本： getNotebookFromWebUrl
 description: 使用 URL 路径检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: dedaa2937e3f98333c3cae83652d0e448698492f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d29d43bcf34c2e54651f42f3c781fdb51fc3aaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374470"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511367"
 ---
-# <a name="notebook-getnotebookfromweburl"></a>笔记本: getNotebookFromWebUrl
+# <a name="notebook-getnotebookfromweburl"></a>笔记本： getNotebookFromWebUrl
+
+命名空间：microsoft.graph
 
 使用其 URL 路径检索[笔记本](../resources/notebook.md)对象的属性和关系。
 
@@ -40,20 +42,20 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供要检索的笔记本的完整 URL 路径的 JSON 表示形式。
+在请求正文中，提供要检索的笔记本的完整 URL 路径的 JSON 表示形式。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | 要检索的笔记本的 URL 路径。 它还可以包含 "onenote:" 前缀。|
+| `webUrl`     |`String`     | 要检索的笔记本的 URL 路径。 它还可以包含 "onenote：" 前缀。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[笔记本](../resources/notebook.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[笔记本](../resources/notebook.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "notebook_fromweburl"
@@ -64,19 +66,19 @@ Content-type: application/json
 
 {"webUrl":"webUrl value"}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-fromweburl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-fromweburl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/notebook-fromweburl-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-fromweburl-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

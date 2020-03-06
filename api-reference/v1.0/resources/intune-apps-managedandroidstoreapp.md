@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64d32bf24ae8f0e6d379f2d6b69d97d6cefb2b08
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 254ed7f1f2771765d904b817fe80ee1c0c381b71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360214"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531200"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含可以使用 Intune 应用保护策略管理的 Android 应用商店应用的属性和继承的属性。
 
 
 继承自 [managedApp](../resources/intune-apps-managedapp.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedAndroidStoreApps](../api/intune-apps-managedandroidstoreapp-list.md)|[managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) 集合|列出 [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) 对象的属性和关系。|
@@ -34,22 +36,22 @@ ms.locfileid: "37360214"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
-|packageId|String|应用的包 ID。|
+|packageId|字符串|应用的包 ID。|
 |appStoreUrl|String|Android AppStoreUrl。|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|最低受支持操作系统的值。|
 

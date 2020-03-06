@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1423491fcd22901099cf9064a423b1c33a73f428
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 28d8ff58b4808e44cbcd2278c7e4169f4c2ccb03
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37358226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515944"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37358226"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -53,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|String|文件名称。|
+|name|字符串|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|

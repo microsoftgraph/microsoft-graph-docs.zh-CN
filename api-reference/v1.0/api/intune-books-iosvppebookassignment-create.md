@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3924133a9df4a480198f94c8fbd9e155944d9824
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 0fdd070e495dca9af77f484542405a45e50fe652
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357925"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515628"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37357925"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
+|id|字符串|实体的键。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|电子图书的安装意图。 继承自[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 

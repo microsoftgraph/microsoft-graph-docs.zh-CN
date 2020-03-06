@@ -7,14 +7,16 @@ localization_priority: Normal
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ce3c5c24506e75a34a95ee1da52d5bebd15ebd3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533856"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
+
+命名空间：microsoft.graph
 
 **remoteItem** 资源指示 [**driveItem**](driveitem.md) 引用存在于其他驱动器中的项。
 该资源提供源驱动器和目标项的唯一 ID。
@@ -63,7 +65,7 @@ ms.locfileid: "36034725"
 | id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
-| name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
+| name                 | 字符串                              | 可选。远程项的 Filename。只读。                                                                                                                 |
 | 包              | [包](package.md)               | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。 |
 | parentReference      | [ItemReference](itemreference.md)   | 远程项的父级的属性。只读。                                                                                                           |
 | shared               | [shared](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |

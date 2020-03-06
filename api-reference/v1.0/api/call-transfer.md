@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d31a5223671915c0da9371538b9196a872d6c542
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: fd60a58628077e311e01f8124335235dae1ba8e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913637"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518656"
 ---
 # <a name="call-transfer"></a>呼叫：转移
+
+命名空间：microsoft.graph
 
 转移活动的对等呼叫。
 
@@ -47,7 +49,7 @@ POST /communications/calls/{id}/transfer
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -61,7 +63,7 @@ POST /communications/calls/{id}/transfer
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-transfer"
@@ -85,19 +87,19 @@ Content-Length: 430
   "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-transfer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

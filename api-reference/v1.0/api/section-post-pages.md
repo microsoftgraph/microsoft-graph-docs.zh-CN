@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 34d72be148975c7d8ef4fad83af228d5b0595be1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18b18f69ea2279c3291737f5cf563edd5bcd4184
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024747"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509904"
 ---
 # <a name="create-page"></a>创建页面
+
+命名空间：microsoft.graph
 
 在指定分区中新建[页面](../resources/page.md)。
 

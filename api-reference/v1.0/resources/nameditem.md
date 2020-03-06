@@ -5,19 +5,21 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b53b223a3f9d894f8ab140014528c0cd02c224dc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0aece739f4a65db35271e4fe6f2c87db3a2c56a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035999"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534208"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem 资源类型
+
+命名空间：microsoft.graph
 
 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -31,8 +33,8 @@ ms.locfileid: "36035999"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|对象的名称。只读。|
-|注释|string|表示与此名称相关联的注释。|
+|name|字符串|对象的名称。只读。|
+|comment|string|表示与此名称相关联的注释。|
 |scope|string|指明是否将 name 限定到工作簿或特定工作表。只读。|
 |类型|字符串|指示与名称相关的引用类型。 可能的值包括 `String`、`Integer`、`Double`、`Boolean`、`Range`。 只读。|
 |value|Json|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|

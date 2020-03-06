@@ -5,14 +5,16 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7248fb61f62c9b17d639a5e7e2c3d8b4b2e92719
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a6e6a0ca0f789183de5b32bed66ee03ec38dce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533167"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
+
+命名空间：microsoft.graph
 
 指 Microsoft 或其合作伙伴安全解决方案在客户的租户中识别的潜在安全问题。 使用警报统一并简化所有集成解决方案中的安全问题管理。 若要了解详细信息，请参阅 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的查询示例。
 

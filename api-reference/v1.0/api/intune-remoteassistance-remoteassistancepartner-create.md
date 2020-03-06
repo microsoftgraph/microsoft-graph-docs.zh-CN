@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3723a8b7043f37928d4fd72bd272e6934f2af408
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 74d36564b11704ac28e4c76a4d5a55f7e9a62b89
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361663"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512165"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37361663"
 POST /deviceManagement/remoteAssistancePartners
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ POST /deviceManagement/remoteAssistancePartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|合作伙伴的唯一标识符。|
+|id|字符串|合作伙伴的唯一标识符。|
 |displayName|字符串|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|待定. 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|

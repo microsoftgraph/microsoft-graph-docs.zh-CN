@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5adca2897a2582764bc435307e322edbd0af6c02
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b2764f9e8324e6e773c7803379fc6be4b6fdc2db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913273"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518698"
 ---
 # <a name="call-mute"></a>呼叫：静音
+
+命名空间：microsoft.graph
 
 允许应用程序将其本身设为静音。
 
@@ -48,7 +50,7 @@ POST /communications/calls/{id}/mute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
@@ -62,7 +64,7 @@ POST /communications/calls/{id}/mute
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { 
   "blockType": "request", 
   "name": "call-mute" 
@@ -76,19 +78,19 @@ Content-Type: application/json
 }
 ```
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-mute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

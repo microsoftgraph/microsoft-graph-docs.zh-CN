@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4d15c1ddc0c53d32648c67d8f5bdacc32072ea5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af4237cc0e95223bccdbe255fbbd3f9f3ad9cd6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030308"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531409"
 ---
 # <a name="filtercriteria-resource-type"></a>FilterCriteria 资源类型
+
+命名空间：microsoft.graph
 
 表示应用于列的筛选条件。
 

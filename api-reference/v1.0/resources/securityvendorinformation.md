@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d7af6e0903e3d178bacdd7c86b4a2cab04285171
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bb2b67892f5c1bffbc9844a7d30b9b16ea9cdf6e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536095"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533758"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
+
+命名空间：microsoft.graph
 
 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息（例如，供应商 = Microsoft; provider = Windows Defender ATP; subProvider = AppLocker）。
 

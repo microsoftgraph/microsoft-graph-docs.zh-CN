@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ac78388695817fc286cb99a53debbd99c930f12b
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 02ab3eb62d173897d3456e3f28144e0db48de609
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651944"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522678"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

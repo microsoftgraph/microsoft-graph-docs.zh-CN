@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4e693b70185d725f04f8318ed61f1649e24d663b
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: fafd8916e50353f2334b54ced2888425cc449d7d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652163"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531473"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
+
+命名空间：microsoft.graph
 
 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
 
@@ -31,10 +33,10 @@ ms.locfileid: "41652163"
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。 |
 |[删除](../api/message-delete.md) | None |更新 eventMessage 对象。 |
-|[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
-|[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
+|[copy](../api/message-copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
+|[createForward](../api/message-createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReply](../api/message-createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReplyAll](../api/message-createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[转发](../api/message-forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
 |[移动](../api/message-move.md)|[message](message.md)|将邮件移到文件夹。此操作会在目标文件夹中新建邮件副本。|
 |[回复](../api/message-reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
@@ -65,7 +67,7 @@ ms.locfileid: "41652163"
 |conversationIndex|Edm.Binary|指出消息在对话中的位置。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
-|发件人|[recipient](recipient.md)|要从其发送邮件的邮箱的所有者。 在大多数情况下，此值与**发件人**属性相同，但共享或委派方案除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
+|发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
 |id|字符串|事件消息的唯一标识符（请注意，如果移动或更改了邮件，此值可能会更改）|
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
@@ -81,7 +83,7 @@ ms.locfileid: "41652163"
 |parentFolderId|字符串|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)、[共享日历或代理](/graph/outlook-share-delegate-calendar.md)发送邮件时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件时，可以将此属性设置为其他值，[对于共享日历，或设置为代理人](/graph/outlook-share-delegate-calendar.md)。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|字符串|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bbc577fe998d64a182051815124d364e9d3a7872
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 6b28bb43ae8b37a7a7007b725bb6e788d052ed29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37633927"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511185"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
+
+命名空间：microsoft.graph
 
 返回此[组织联系人](../resources/orgcontact.md)所属的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 将不会返回任何目录角色。
 
@@ -54,7 +56,7 @@ POST /contacts/{id}/getMemberObjects
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_getmemberobjects"
@@ -68,19 +70,19 @@ Content-length: 33
   "securityEnabledOnly": false
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-getmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,8 +90,8 @@ Content-length: 33
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。
->**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
