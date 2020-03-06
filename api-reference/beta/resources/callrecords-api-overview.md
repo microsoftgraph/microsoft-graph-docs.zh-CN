@@ -5,20 +5,20 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 23fc6babd1b5fb8372e6471a6b1d0d22d36001f1
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 9b48b3d7f0265c44bc62c3ee2182353343692a10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394764"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507801"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
-
-命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通话记录提供了使用 Microsoft Teams 或 Skype for Business 时组织内发生的通话和联机会议的使用情况和诊断信息。 可使用通话记录 API 来订阅通话记录，并按 ID 查找通话记录。
+
+通话记录 API 在 OData 子命名空间中定，`microsoft.graph.callRecords`。
 
 ## <a name="key-resource-types"></a>重要资源类型
 
