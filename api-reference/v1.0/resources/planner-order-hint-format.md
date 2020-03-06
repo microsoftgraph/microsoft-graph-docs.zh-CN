@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cba8d9e69ba5d30700202ae811f7755f0234a40
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 585c8d34a90cf8f567014b763ebeeb9b296c7aae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534044"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
+
+命名空间：microsoft.graph
 
 规划器中的对象可根据排序提示识别排序顺序。 排序提示值均为字符串。 客户端可以根据其中的字符的序数值对字符串进行排序以识别项目的顺序。 从字符串开头比较字符，直到字符的序数值中出现差异，或一个字符串结束，在这种情况下，较短字符串将优先于较长字符串进行排序。 此类值可包括序数 32（空格）和 126（`~`）之间的任何字符
 

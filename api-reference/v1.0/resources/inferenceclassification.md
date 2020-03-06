@@ -5,21 +5,23 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ba2c32a7dcbe1574f2135cd098207eeb23716136
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032394"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531316"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
+
+命名空间：microsoft.graph
 
 用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 
 
 有关详细信息，请参阅 [管理重点收件箱](manage-focused-inbox.md)。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

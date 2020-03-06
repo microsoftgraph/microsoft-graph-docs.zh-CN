@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: siteCollection 资源提供有关网站集的详细信息。
 doc_type: resourcePageType
-ms.openlocfilehash: 27a534f2f9afe99a1a5abb1aee91b1b53b29566d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e34b4fdb63a825e87cea8eda6117232ee1da93d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034158"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533688"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
+
+命名空间：microsoft.graph
 
 **siteCollection** 资源提供有关网站集的详细信息。
 
@@ -43,7 +45,7 @@ ms.locfileid: "36034158"
 | 属性名称        | 类型     | 说明
 |:---------------------|:---------|:---------------------------------------------------
 | **主机名称**         | string   | 网站集的主机名称。只读。
-| **根**             | [根][] | 如果存在, 则表示这是 SharePoint 中的根网站集。 只读。
+| **根**             | [根][] | 如果存在，则表示这是 SharePoint 中的根网站集。 只读。
 
 [root]: root.md
 

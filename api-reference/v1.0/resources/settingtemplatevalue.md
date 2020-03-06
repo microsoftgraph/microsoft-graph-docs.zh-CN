@@ -1,29 +1,31 @@
 ---
 title: settingTemplateValue 资源类型
-description: 表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
+description: 表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
 localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f4ac39001e260d7f65b3a593d90976f94acd4693
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eea9f77b26ee0ce88e2c97c87e7cca50cbf48491
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034389"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533744"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
-表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
+命名空间：microsoft.graph
+
+表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
 
 ### <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|默认|String| 设置的默认值。 |
-|说明|String| 设置的说明。 |
+|默认|字符串| 设置的默认值。 |
+|说明|字符串| 设置的说明。 |
 |name|String| 设置的名称。 |
-|type|String| 设置的类型。 |
+|type|字符串| 设置的类型。 |
 
 ### <a name="json-representation"></a>JSON 表示形式
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035496"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534049"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
+
+命名空间：microsoft.graph
 
 **照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。
 
@@ -44,7 +46,7 @@ ms.locfileid: "36035496"
 | 属性                | 类型           | 说明
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
-| **cameraMake**          | String         | 相机制造商。只读。
+| **cameraMake**          | 字符串         | 相机制造商。只读。
 | **cameraModel**         | String         | 相机型号。只读。
 | **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
 | **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: e21e2fad07dca15c5be42b8de29aa5c791c50d69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c912a1ad9740148cd40429478a018c6af512fdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033899"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533577"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
+
+命名空间：microsoft.graph
 
 表示与审核活动相关联的目标资源类型。 
 
@@ -23,8 +25,8 @@ ms.locfileid: "36033899"
 |id|String|指示资源的唯一 ID。|
 |displayName|String|指示为资源定义的可见名称。 通常是在创建资源时指定的。|
 |type|String|描述资源类型。  示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。|
-|userPrincipalName|字符串|当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。|
-|groupType|String|当 "**类型**" 设置`Group`为时, 这表示组类型。|
+|userPrincipalName|字符串|当 "**类型**" 设置`User`为时，这包括启动操作的用户名;`null`对于其他类型。|
+|groupType|字符串|当 "**类型**" 设置`Group`为时，这表示组类型。|
 |ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|指示已更改的每个属性的名称、旧值和新值。 属性值取决于操作**类型**。|
 
 ## <a name="json-representation"></a>JSON 表示形式

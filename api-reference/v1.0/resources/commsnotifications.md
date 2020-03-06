@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b5cbd2e2e2875a3e2ab207925a11fa258ad117f2
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d9e77c95c4303e02be7ac6ef91caf02e9c2d3ce6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531800"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
+
+命名空间：microsoft.graph
 
 通信服务器用于在一个批处理中发送多个通知的通知列表。
 

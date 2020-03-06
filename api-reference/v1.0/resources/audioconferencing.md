@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f1c58fb5cbf65b73aed2978fd0b3be45d7d30aec
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 47724eaf62b02d5bf53792dc711b5d556364a6d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913476"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532054"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
+
+命名空间：microsoft.graph
 
 表示[onlineMeeting](onlinemeeting.md)的电话访问信息。
 
@@ -20,10 +22,10 @@ ms.locfileid: "40913476"
 
 | 属性            | 类型    | 说明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | 包含拨入信息的可从外部访问的网页的 URL。 |
-| ConferenceId        | String  | 联机会议的会议 id。      |
-| tollFreeNumber      | String  | 连接到音频会议提供商的免费电话号码。              |
-| tollNumber          | String  | 连接到音频会议提供商的收费号码。                   |
+| dialinUrl           | 字符串  | 包含拨入信息的可从外部访问的网页的 URL。 |
+| ConferenceId        | 字符串  | 联机会议的会议 id。      |
+| tollFreeNumber      | 字符串  | 连接到音频会议提供商的免费电话号码。              |
+| tollNumber          | 字符串  | 连接到音频会议提供商的收费号码。                   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

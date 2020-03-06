@@ -5,18 +5,20 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6db68d34a6e19c6889a6512fecd3734b3799a459
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 8544f5aa0d2385d46734514a25f75996eb728a5c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023136"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518950"
 ---
 # <a name="update-alert"></a>更新警报
 
+命名空间：microsoft.graph
+
 在任何集成的解决方案中更新可编辑的**alert**属性，以保持各个解决方案之间同步警报状态和分配。 此方法更新任何包含所引用警报 ID 的记录的解决方案。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -36,7 +38,7 @@ ms.locfileid: "41023136"
 PATCH /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明              |
 |:--------------|:-------------------------|
@@ -47,14 +49,14 @@ PATCH /security/alerts/{alert_id}
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效**** `provider`和`vendor`字段的 vendorInformation 属性。 下表列出了可以为警报更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性          | 类型                                                                   | Description |
+| 属性          | 类型                                                                   | 说明 |
 |:------------------|:-----------------------------------------------------------------------|:--|
 | assignedTo        | String                                                                 | 为会审、调查或修正分配了警报的分析师的名称。 |
 | closedDateTime    | DateTimeOffset                                                         | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
 | comments          | 字符串集合                                                      | 通知的分析师注释（针对客户通知管理）。 此方法仅可使用以下值更新 "注释" 字段： `Closed in IPC`、 `Closed in MCAS`。 |
 | 反馈          | alertFeedback                                                          | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
 | status            | alertStatus                                                            | 警报生命周期状态（阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| tags              | String 集合                                                      | 可应用于警报并可用作筛选条件的用户定义的标签（例如，"HVA"、"锯"）。 |
+| 标记              | String collection                                                      | 可应用于警报并可用作筛选条件的用户定义的标签（例如，"HVA"、"锯"）。 |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
@@ -71,7 +73,7 @@ PATCH /security/alerts/{alert_id}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -98,19 +100,19 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

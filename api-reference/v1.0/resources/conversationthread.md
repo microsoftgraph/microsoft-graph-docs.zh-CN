@@ -5,19 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 59e54733a0ece0c6fa4bef31282cf30939b676ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e49e8617125758f606c42c47de3d9d13495666f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032821"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531758"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
-conversationThread 是 [帖子](post.md) 集合。
+
+命名空间： conversationThread 是[帖子](post.md)的集合。
 
 最后一个帖子收件人集合聚合了整个线程的收件人。线程的收件人集合可以不断扩大。从线程中移除某个收件人时将创建一个新的线程。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -32,14 +33,14 @@ conversationThread 是 [帖子](post.md) 集合。
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |toRecipients|[recipient](recipient.md) collection|收件人：线程的收件人。|
 |ccRecipients|[recipient](recipient.md) collection|抄送：线程的收件人。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
 |hasAttachments|Boolean|指示此线程中的任意帖子是否至少具有一个附件。|
 |lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |uniqueSenders|String collection|向此线程发送邮件的所有用户。|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
+|preview|字符串|来自此对话中最新帖子的正文的简短摘要。|
 |Resource.islocked|Boolean|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>关系

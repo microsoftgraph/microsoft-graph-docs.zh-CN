@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1c9329e3eb23a347748e463947ab97b90e7c6c52
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5a7cae3ba43915f8dd024e3a9260876adb3ac2a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533509"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
+
+命名空间：microsoft.graph
 
 
 

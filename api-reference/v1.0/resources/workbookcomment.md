@@ -5,18 +5,20 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f2f081dd5bf3732b104ab20a28df0f61956b8490
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: 3a238ab9b033cd1906842f61d9f2d72b6d642335
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775753"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533389"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 
+命名空间：microsoft.graph
+
 代表工作簿中的注释。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

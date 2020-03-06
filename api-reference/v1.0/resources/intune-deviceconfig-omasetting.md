@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1b464d8947bfa0125ba7edc9991b7bc6f34296
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: cffa929a063c77010f005a4e0b3da8fd8b7363d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367383"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530603"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 OMA 设置定义。
 
@@ -22,7 +24,7 @@ OMA 设置定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。|
-|说明|String|说明。|
+|说明|字符串|说明。|
 |omaUri|String|OMA。|
 
 ## <a name="relationships"></a>关系

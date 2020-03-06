@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4518359a1a1a8478aaf2f0157cdc9e659ea6dd4a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 43cc6f690ce2c491b4e49de4c1d641964df7a07d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913490"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533164"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
+
+命名空间：microsoft.graph
 
 由应用程序托管的媒体堆栈。
 
@@ -20,7 +22,7 @@ ms.locfileid: "40913490"
 
 | 属性                          | 类型    | 说明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| 块                              | String  | 由智能媒体代理生成的媒体配置 blob。    |
+| 块                              | 字符串  | 由智能媒体代理生成的媒体配置 blob。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

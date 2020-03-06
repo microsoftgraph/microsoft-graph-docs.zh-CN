@@ -7,14 +7,16 @@ localization_priority: Normal
 description: IdentitySet 资源是 标识 资源的键控集合。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f1176f133f51432899a1fb6ddab964f04e658c69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a5d53769dc023e79ac9f50db2c085647775cab0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030217"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531335"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet 资源类型
+
+命名空间：microsoft.graph
 
 **IdentitySet** 资源是 [标识](identity.md) 资源的键控集合。它用来表示一组与项目的各种事件相关的标识，例如_创建者_或_上次修改人_。
 

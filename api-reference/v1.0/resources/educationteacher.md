@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2cfef452538b9b75500898bf9a809ee871d372
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 494fc0d3bed992a8df4921fe8601024e7eb01668
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030476"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533002"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher 资源类型
+
+命名空间：microsoft.graph
 
 添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36030476"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|externalId|String| 源系统中教师的 ID。|
+|externalId|字符串| 源系统中教师的 ID。|
 |teacherNumber|String|教师编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ab0236f92075398f2131b40f14c45bfe215b6ea0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 919e36c7a99d8daa50baf50feeb0853141079297
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531787"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
+
+命名空间：microsoft.graph
 
 联系人是 Outlook 中的一个项目，你可以在这里组织和保存有关你通信的人员和组织的信息。联系人包含在联系人文件夹中。
 

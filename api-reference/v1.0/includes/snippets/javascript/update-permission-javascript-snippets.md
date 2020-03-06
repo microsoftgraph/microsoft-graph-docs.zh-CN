@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f68c0a8ab982bc2de5b166bdbe6af6ada02a926d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fb7ffef7c9432f009d5e6ee9470f9f899b99bd19
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732806"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636808"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const permission = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}/permissions/{perm-id}')
-    .update({permission : permission});
+    .update(permission);
 
 ```

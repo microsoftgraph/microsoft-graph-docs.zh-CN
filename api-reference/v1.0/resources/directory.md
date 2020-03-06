@@ -5,20 +5,22 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f820e0b3111a73f0f88be5d01a37d7891e48ac42
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 17939db5752c114c5c9180d318725c2553b4f1d7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863905"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531666"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
+
+命名空间：microsoft.graph
 
 表示目录中已删除的项目。 删除某个项目后，它会被添加到已删除项目“容器”中。 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 
 目前，仅支持[应用程序](application.md)、[组](group.md)和[用户](user.md)资源的 "已删除邮件" 功能。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|

@@ -6,20 +6,22 @@ description: 获取有关在此资源下发生的视图的 itemAnalytics。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c71a86b2ee8fcaa12c17e5b7428480fe12dd203d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b6f1da3d02b1a11afc70ca3be51177fb4e193047
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511752"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
+命名空间：microsoft.graph
+
 获取有关在此资源下发生的视图的[itemAnalytics][] 。
 **ItemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
-对于自定义时间范围或时间间隔, 请使用[getActivitiesByInterval][] API。
+对于自定义时间范围或时间间隔，请使用[getActivitiesByInterval][] API。
 
->**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -46,7 +48,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -58,32 +60,32 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>响应 
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[itemAnalytics][]对象集合。 
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[itemAnalytics][]对象集合。 
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

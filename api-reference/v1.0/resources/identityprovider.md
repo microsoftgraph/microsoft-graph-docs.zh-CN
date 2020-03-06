@@ -5,14 +5,16 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb9789f9ec15c51c4ce02b6958ad1ec3886be92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29a0459e27f27f4563101d8100675046ca2731b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532899"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
+
+命名空间：microsoft.graph
 
 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon、领英或 Twitter。 下列标识提供程序处于预览版状态：微博、QQ、微信、GitHub 以及 OpenID Connect 支持的所有提供程序。 
 

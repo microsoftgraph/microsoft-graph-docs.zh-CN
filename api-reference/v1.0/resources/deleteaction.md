@@ -6,18 +6,20 @@ description: DeleteAction 对象提供有关删除项目的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d19b41d886c459822abc2ea1b04acebd94c7b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032730"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531689"
 ---
 # <a name="deleteaction-resource-type"></a>deleteAction 资源类型
 
+命名空间：microsoft.graph
+
 [**ItemActivity**][activity]上的**deleteAction**资源是否存在指示活动已删除项目。
 
->**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 
@@ -26,7 +28,7 @@ ms.locfileid: "36032730"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | 已删除的项的名称。
-| objectType    | string | `File`或`Folder`, 具体取决于已删除项目的类型。
+| objectType    | 字符串 | `File`或`Folder`，具体取决于已删除项目的类型。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

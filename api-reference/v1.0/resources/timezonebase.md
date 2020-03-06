@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4ddc8b01f494ee861d3ab50583dc12ea4c68c623
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc83a364a6002b7883003b194004e4ce69cda068
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033570"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533452"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
+
+命名空间：microsoft.graph
 
 时区的基本表示形式。
 

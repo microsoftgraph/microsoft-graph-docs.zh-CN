@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c048396d54383c84606cc0d903c17b76043ca5ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 99a736b6f8798ec21664c43bccfc172f19c2ac16
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016550"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517851"
 ---
 # <a name="create-domain"></a>创建域
+
+命名空间：microsoft.graph
 
 向租户添加域。
 

@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dac511c8ea132e3cba92bcead828d4003ae6d65f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4144b7aa4fb37d1c3016694eff2282e300fe2431
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730371"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533374"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
+
+命名空间：microsoft.graph
 
 代表表格中的一列。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

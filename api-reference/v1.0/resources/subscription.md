@@ -5,14 +5,16 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e036c357d65c7f01c1596095569f8dfe5b863007
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: a490257ccc1ba17e7e425c24126c24689c612a9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219669"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533605"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
+
+命名空间：microsoft.graph
 
 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 

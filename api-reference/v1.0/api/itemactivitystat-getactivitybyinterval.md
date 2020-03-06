@@ -6,18 +6,20 @@ description: 获取在指定时间间隔内发生在此资源上的活动的 ite
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 30f06f9bcdfb96f61f39b81152f0c9cd23872e49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9afe02bc6de9fa106970f1596ab33d7e520aaeef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025531"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511744"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
+命名空间：microsoft.graph
+
 获取在指定时间间隔内发生在此资源上的活动的[itemActivityStats][]资源的集合。
 
->**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 分析聚合可能不适用于所有操作类型。
 
@@ -45,14 +47,14 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | 参数      | 类型               | 说明
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | 字符串 (时间戳) | 聚合活动的开始时间。
-| endDateTime    | 字符串 (时间戳) | 聚合活动的结束时间。
-| interval       | string             | 聚合间隔。
+| startDateTime  | 字符串（时间戳） | 聚合活动的开始时间。
+| endDateTime    | 字符串（时间戳） | 聚合活动的结束时间。
+| interval       | 字符串             | 聚合间隔。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -64,7 +66,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="response"></a>响应 
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[itemActivityStats][]对象集合。 
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[itemActivityStats][]对象集合。 
 
 ## <a name="example"></a>示例
 

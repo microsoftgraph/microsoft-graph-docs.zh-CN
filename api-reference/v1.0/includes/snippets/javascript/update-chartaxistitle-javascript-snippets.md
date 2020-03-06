@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 57b14a4656a2e473cd19eb2a1159e3f7e7597a93
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 314d602266a2480f5757e1d5e8d8971ccce0ee75
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733200"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636891"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const workbookChartAxisTitle = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title')
-    .update({workbookChartAxisTitle : workbookChartAxisTitle});
+    .update(workbookChartAxisTitle);
 
 ```

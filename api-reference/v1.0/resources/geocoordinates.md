@@ -7,14 +7,16 @@ localization_priority: Normal
 description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 64b81bc2946658ffc8617662879bc6cb20e25047
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6fce88c0a85b23e799030e9190d7d82e884089d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029307"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532933"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
+
+命名空间：microsoft.graph
 
 **GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
 

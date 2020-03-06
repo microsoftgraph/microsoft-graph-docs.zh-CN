@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 993266d2a96946bf9f22b2c66c26db48e9915837
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 309bc8ce2211f4b2abfb1e72a01c857b9221ae4b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359934"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530657"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 说明通知设置的项。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bundleID|String|要向其应用这些通知设置的应用的捆绑 ID。|
+|bundleID|字符串|要向其应用这些通知设置的应用的捆绑 ID。|
 |appName|String|要与 bundleID 关联的应用程序名称。|
 |发布者|String|要与 bundleID 关联的发布者。|
 |enabled|Boolean|指示是否允许此应用使用通知。|

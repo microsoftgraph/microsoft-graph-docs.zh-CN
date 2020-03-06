@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0d679704cf884276718186c289ded0c8d5bb05df
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1cadb1ca6d2ab1168c3c7f9ff2b182b57112bfb0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532091"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
+
+命名空间：microsoft.graph
 
 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 
@@ -22,7 +24,7 @@ ms.locfileid: "36033101"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
-|type|String|与会者类型：`required`、`optional`、`resource`。|
+|type|字符串|与会者类型：`required`、`optional`、`resource`。|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 03cdf594b04c75cd14b31dfbaef5894e8aacd19d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 9424055d5669b9279dede18b6eb3773da47d9b19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913665"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533885"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
+
+命名空间：microsoft.graph
 
 此资源类型包含与音频录音相关的信息。
 
@@ -20,10 +22,10 @@ ms.locfileid: "40913665"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
+| 适用                  | 字符串                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
 | id                             | String                      | 服务器操作 id。只读。                                                                                              |
-| recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
-| recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
+| recordingAccessToken           | 字符串                      | 检索录制所需的访问令牌。                                                                                              |
+| recordingLocation              | 字符串                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
 | 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 

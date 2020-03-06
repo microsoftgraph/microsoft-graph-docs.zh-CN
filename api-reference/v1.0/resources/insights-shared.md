@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 07eeaaed610ed83f8e5e74037b2441962260da9c
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 9b7bb8c2a69ebab16171ff4a74283d0993aefc8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845012"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532873"
 ---
 # <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
+
+命名空间：microsoft.graph
 
 了解表示与用户共享的文件或由特定用户共享的文件。 支持以下共享文件：
 
@@ -21,7 +23,7 @@ ms.locfileid: "39845012"
 
 **注意**：我们目前正在努力使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -31,7 +33,7 @@ ms.locfileid: "39845012"
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | 关系的唯一标识符。 只读。        |
+| id                    | 字符串                    | 关系的唯一标识符。 只读。        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | 共享项目的详细信息。 只读。        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用共享文档的属性，例如文档的 url 和类型。 只读       |

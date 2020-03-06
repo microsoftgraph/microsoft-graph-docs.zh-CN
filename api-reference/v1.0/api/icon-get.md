@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6ad126aa04f1d977ad065a9baaa2ce2cc2a72065
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4a74630682277909a96eb76fc05b1be2cf98114
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516792"
 ---
 # <a name="get-icon"></a>获取图标
+
+命名空间：microsoft.graph
 
 检索 icon 对象的属性和关系。
 ## <a name="permissions"></a>权限
