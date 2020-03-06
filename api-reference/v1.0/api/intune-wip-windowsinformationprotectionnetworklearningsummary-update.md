@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cdbdb0532cc4c9e1992d8abcb993f0eaa9ae08e5
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 240e93ebe087a020c4bac272968c0a0621418164
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360886"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511766"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37360886"
 PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|id|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
 |url|String|网站 URL|
 |deviceCount|Int32|设备计数|
 

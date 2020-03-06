@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ce9a777936b25ed77b130dc2b2219eba0f72c183
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a44392eb718c157f6422228405f7bb2a4b411733
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533101"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat 资源类型
+
+命名空间：microsoft.graph
 
 封装图表系列的格式属性
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性

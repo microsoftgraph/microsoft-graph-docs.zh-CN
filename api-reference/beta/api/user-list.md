@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c56bb12953c756099d7c66d913658739e32ee71
-ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
+ms.openlocfilehash: 4a59b6e9a4c79b13c78350283961899e93412f6c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711722"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451747"
 ---
 # <a name="list-users"></a>列出用户
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ GET /users
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -69,15 +71,15 @@ GET /users
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,7 +134,7 @@ Content-length: 608
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
@@ -140,15 +142,15 @@ Content-length: 608
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -188,7 +190,7 @@ Content-length: 108
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
@@ -196,15 +198,15 @@ Content-length: 108
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName,signInActivity
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

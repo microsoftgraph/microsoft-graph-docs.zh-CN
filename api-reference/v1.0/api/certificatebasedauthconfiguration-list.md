@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 40c4d2f45c9496ffdf8ffc5f0c9fd66373f2db5e
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: f045eee24c9c4150419e69adc7279987206510d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37632542"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518628"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>列出 certificateBasedAuthConfigurations
+
+命名空间：microsoft.graph
 
 获取[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象的列表。
 
@@ -57,7 +59,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_certificatebasedauthconfigurations"
@@ -66,19 +68,19 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-certificatebasedauthconfigurations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-certificatebasedauthconfigurations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-certificatebasedauthconfigurations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

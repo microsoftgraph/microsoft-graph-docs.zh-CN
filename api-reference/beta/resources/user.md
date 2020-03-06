@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3319ba8186087688c7b5590be8d07913e41020aa
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 38c82eff5d079651f0fbdaebfa3cf0bd1fbc2328
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023115"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519559"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
+命名空间：microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD 用户帐户。 继承自 [directoryObject](directoryobject.md)。
 
 出于性能原因，默认情况下 [create](../api/user-post-users.md)、[get](../api/user-get.md) 和 [list](../api/user-list.md) 操作仅返回更常用属性的子集。 这些默认属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -166,6 +168,7 @@ ms.locfileid: "41023115"
 | hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | id | String | 用户的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 $select 上返回。 支持 $filter。 |
+| imAddresses | String collection | 用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 $select 上返回。 |
 | isResourceAccount | Boolean | 如果用户是资源帐户，则为 `true`，否则为 `false`。 Null 值应视为 `false`。 <br><br>仅在 $select 上返回。 |
 | jobTitle | String | 用户的职务。 <br><br>默认情况下返回。 支持 $filter。|

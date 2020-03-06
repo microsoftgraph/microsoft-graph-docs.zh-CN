@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d630bcaddd46aaf1428a49035c5502f43be0bfc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fe06936e71cf91a10e5e358f6bbc1fd19f891d8d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027200"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509263"
 ---
 # <a name="get-tab"></a>获取选项卡
+
+命名空间：microsoft.graph
 
 
 
@@ -38,7 +40,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -48,7 +50,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[tab](../resources/teamstab.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[tab](../resources/teamstab.md)对象。
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。

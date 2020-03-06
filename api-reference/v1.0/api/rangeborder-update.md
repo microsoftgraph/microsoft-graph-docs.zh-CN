@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e6601bc4c5ab65ec45146210fc8abac8c1eea7ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3cce44c14eb9253bc391014a555966e1f4c50a2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375542"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510548"
 ---
 # <a name="update-rangeborder"></a>更新 RangeBorder
+
+命名空间：microsoft.graph
 
 更新 rangeborder 对象的属性。
 ## <a name="permissions"></a>权限
@@ -43,17 +45,17 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideInd
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|字符串|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为: `None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、 `SlantDashDot`。|
+|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为： `None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、 `SlantDashDot`。|
 |weight|string|指定区域周围的边框的粗细。 可能的值包括 `Hairline`、`Thin`、`Medium`、`Thick`。|
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeBorder](../resources/rangeborder.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeBorder](../resources/rangeborder.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeborder"
@@ -70,19 +72,19 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeborder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeborder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-rangeborder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-rangeborder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

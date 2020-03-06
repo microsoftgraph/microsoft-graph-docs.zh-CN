@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 2b6596e7478632da773dc8839dafd722587e417d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bffdfd100ef1b9e8367ace26dff54d2cec20b5ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034088"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533651"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Skype for Business 参与者活动报表
+
+命名空间：microsoft.graph
 
 Skype for Business 参与者活动报表可用于获取整个组织中参与会议活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 
@@ -22,6 +24,6 @@ Skype for Business 参与者活动报表可用于获取整个组织中参与会�
 
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取活动数](../api/reportroot-getskypeforbusinessparticipantactivitycounts.md) | 流      | 获取使用情况趋势，即组织中用户参与的会议会话的次数和类型。 会议会话类型包括 IM、音频/视频、应用共享、Web 和第三方拨入/拨出。 |
-| [获取用户数](../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md) | Stream      | 获取使用情况趋势，即组织中用户参与的会议会话的唯一用户数和类型。 会议会话类型包括 IM、音频/视频、应用共享、Web 和第三方拨入/拨出。 |
+| [获取活动计数](../api/reportroot-getskypeforbusinessparticipantactivitycounts.md) | Stream      | 获取使用情况趋势，即组织中用户参与的会议会话的次数和类型。 会议会话类型包括 IM、音频/视频、应用共享、Web 和第三方拨入/拨出。 |
+| [获取用户计数](../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md) | Stream      | 获取使用情况趋势，即组织中用户参与的会议会话的唯一用户数和类型。 会议会话类型包括 IM、音频/视频、应用共享、Web 和第三方拨入/拨出。 |
 | [获取分钟数](../api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md) | Stream      | 获取使用情况趋势，即组织中用户参与的会议会话的时长（以分钟为单位）和类型。 会议会话类型包括音频/视频。 |

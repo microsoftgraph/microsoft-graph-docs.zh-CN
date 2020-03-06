@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e27e08fee7545f956f4f4ba1575346a0eb4351
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 851977e182b748d80bea5b7a4c9e3b0ff186d54e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37365374"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514110"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37365374"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

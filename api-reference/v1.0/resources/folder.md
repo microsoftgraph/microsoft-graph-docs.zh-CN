@@ -7,14 +7,16 @@ localization_priority: Normal
 description: '文件夹资源将与文件夹相关的数据项分组到一个单一结构。 '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f4b43c672b297ce50a5a6aa3dbb3f3d83a1d53be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ee34252671477a1efb83daf056330b499d94966
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030329"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531401"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
+
+命名空间：microsoft.graph
 
 **文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
 

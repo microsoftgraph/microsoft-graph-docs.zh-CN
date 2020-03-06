@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ec9ef32692d399131bb9e4b611c11789a4a47b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 9306f5450737b5d190e7180c1844c373616a7a8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515495"
 ---
 # <a name="delete-termsandconditions"></a>删除 termsAndConditions
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)。
 
@@ -37,7 +39,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}
 DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

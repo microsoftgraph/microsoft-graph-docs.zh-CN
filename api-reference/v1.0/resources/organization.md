@@ -5,14 +5,16 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e628e0a05810ae49ab02dc2ddb9b634a47056025
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bbb11149edd6263aaf65570a9068e4333c293ae6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534132"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
+
+命名空间：microsoft.graph
 
 表示用户或应用程序所登录的 Azure Active Directory 租户。 只支持在此资源上执行读取和更新操作；不支持创建和删除操作。 继承自 [directoryObject](directoryobject.md)。
 

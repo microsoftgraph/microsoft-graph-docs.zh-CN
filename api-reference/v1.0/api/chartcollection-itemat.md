@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4560091addfd10807e6d65c29ef8a9264100fcd7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bdcdf3e5a296c24d510ccc2dbb36514b189ff505
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331936"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518488"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
+
+命名空间：microsoft.graph
 
 根据其在集合中的位置获取图表。
 ## <a name="permissions"></a>权限
@@ -46,14 +48,14 @@ POST /workbook/worksheets/{id|name}/charts/itemAt
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookChart](../resources/chart.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookChart](../resources/chart.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -70,11 +72,11 @@ Content-length: 20
   "index": 8
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartcollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartcollection-itemat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

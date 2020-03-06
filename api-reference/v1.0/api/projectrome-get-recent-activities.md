@@ -1,20 +1,22 @@
 ---
 title: 获取最近的用户活动
-description: " #C1. 该服务将查询最近的 historyItems, 然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。"
+description: " #C1. 该服务将查询最近的 historyItems，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。"
 localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 5c11a69b73bda7e424b3bffb7403484364409f6a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 21d98f134ffc2e48a0ad339fdcf490e669088558
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728452"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510723"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为, 以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的[historyItems](../resources/projectrome-historyitem.md), 然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+命名空间：microsoft.graph
+
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的[historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -36,11 +38,11 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数:
+此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
-- $top, 以限制跨页的最大项目数。
-- 在**活动**或**historyItems**的**lastModifiedDateTime**属性上 $filter (如果已展开)。
+- $top，以限制跨页的最大项目数。
+- 在**活动**或**historyItems**的**lastModifiedDateTime**属性上 $filter （如果已展开）。
 
 以下是使用 URL 编码支持的查询的一些示例。
 
@@ -52,7 +54,7 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -64,7 +66,7 @@ GET /me/activities/recent
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将返回`200 OK`应用程序的用户最近活动的响应代码。
+如果成功，此方法将返回`200 OK`应用程序的用户最近活动的响应代码。
 
 ## <a name="example"></a>示例
 
@@ -73,7 +75,7 @@ GET /me/activities/recent
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_recent_activities"
@@ -82,19 +84,19 @@ GET /me/activities/recent
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recent-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recent-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recent-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-recent-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

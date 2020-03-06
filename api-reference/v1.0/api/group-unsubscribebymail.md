@@ -5,15 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a382c8d209835eb295899d2bdd789bf3665f50fb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cc0375efe70482c248fa5f9d3168e2562f9416a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364540"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516926"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
-调用此方法将阻止当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。 
+
+命名空间： microsoft. 调用此方法的图形将阻止当前用户接收该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +46,7 @@ POST /groups/{id}/unsubscribeByMail
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -53,19 +54,19 @@ POST /groups/{id}/unsubscribeByMail
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-unsubscribebymail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-unsubscribebymail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-unsubscribebymail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-unsubscribebymail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76a4f25ff30c232e8360cd0438dc97d11bef7297
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1349209cc4148a844c144528a350b8db868473e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530974"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 androidCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidCustomConfigurations](../api/intune-deviceconfig-androidcustomconfiguration-list.md)|[androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) 集合|列出 [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) 对象的属性和关系。|

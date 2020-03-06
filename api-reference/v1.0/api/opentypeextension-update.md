@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6465c6b342032ff1e14e43487b534e39f1443ea0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26289c7bbe11f2d91c7e226aa6a118a26a18476b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022633"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511241"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
+
+命名空间：microsoft.graph
 
 通过请求正文中的属性更新开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）：
 
@@ -23,7 +25,7 @@ ms.locfileid: "36022633"
 
 ## <a name="permissions"></a>权限
 
-根据在其中创建扩展的资源以及请求的权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在其中创建扩展的资源以及请求的权限类型（委派或应用程序），下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -64,7 +66,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|相应集合的实例的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |

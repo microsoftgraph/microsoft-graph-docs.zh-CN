@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7be2660259f885c6126ff6a6eac1d2913f241c48
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e8b2b9d8baeee27b42d89416bb28e83970a0d394
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357337"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532275"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 windows10TeamGeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10TeamGeneralConfigurations](../api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md)|[windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) 集合|列出 [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) 对象的属性和关系。|
@@ -40,8 +42,8 @@ ms.locfileid: "37357337"
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
-|azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
-|azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
+|azureOperationalInsightsWorkspaceId|字符串|Azure 操作见解工作区 ID。|
+|azureOperationalInsightsWorkspaceKey|字符串|Azure 操作见解工作区键。|
 |connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
 |maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|

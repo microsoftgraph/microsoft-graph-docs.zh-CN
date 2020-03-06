@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 5f655e8b80a2f07164a8560146e1f1e2d4c1f7ec
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b9b02ccb2d13d4db44ed235d8f2ac2463a6c6f64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356553"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533219"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
+
+命名空间：microsoft.graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 

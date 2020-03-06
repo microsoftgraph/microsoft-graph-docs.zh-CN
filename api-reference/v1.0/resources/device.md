@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8d460aa4c35fd99ab50f28f8ec7d6fd60fda1f81
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 45b1829337c93af45e6f3edc1dd72191fcc0d14c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756782"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531677"
 ---
 # <a name="device-resource-type"></a>设备资源类型
+
+命名空间：microsoft.graph
 
 表示在组织中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 [directoryObject](directoryobject.md)。
 
@@ -40,26 +42,26 @@ ms.locfileid: "38756782"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。必需。|
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。必需。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|deviceId|string| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
-|deviceMetadata|String| 仅供内部使用。 设置为 null。 |
+|deviceId|字符串| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
+|deviceMetadata|字符串| 仅供内部使用。 设置为 null。 |
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|字符串|设备显示名称。必需。 |
-|id|String|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|布尔|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|id|字符串|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |manufacturer|String| 设备的制造商。 只读。 |
-|mdmAppId|String|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
-|model|String| 设备的模型。 只读。 |
+|mdmAppId|字符串|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
+|model|字符串| 设备的模型。 只读。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|对象最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。 |
-|operatingSystem|String| 设备上操作系统的类型。必需。 |
-|operatingSystemVersion|String|设备上操作系统的版本。必需。 |
+|operatingSystem|字符串| 设备上操作系统的类型。必需。 |
+|operatingSystemVersion|字符串|设备上操作系统的版本。必需。 |
 |physicalIds|String 集合| 仅供内部使用。 不可为 null。 |
-|profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice** （默认）<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
+|profileType|字符串|设备的配置文件类型。 可能的值：<br />**RegisteredDevice** （默认）<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
 |systemLabels|String collection| 系统应用于设备的标签列表。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/azure/active-directory/device-management-introduction) |
 
@@ -69,7 +71,7 @@ ms.locfileid: "38756782"
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
-|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 NULL。 |
+|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为空。 |
 |registeredUsers|[directoryObject](directoryobject.md) 集合|设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

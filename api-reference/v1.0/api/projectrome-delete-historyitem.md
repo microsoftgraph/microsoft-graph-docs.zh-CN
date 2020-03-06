@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 39bb298d85d698de8548cbeeedf066c43122698c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc6ed6a6a2f01667c32b9f2497a93e05e0f275ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025412"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510737"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
+
+命名空间：microsoft.graph
 
 删除现有用户活动的现有历史记录项。
 
@@ -47,7 +49,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在历史`204 No Content`记录项被删除时返回响应代码。
+如果成功，此方法在历史`204 No Content`记录项被删除时返回响应代码。
 
 ## <a name="example"></a>示例
 
@@ -56,7 +58,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_historyItem"
@@ -65,7 +67,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 ```http
 PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 ```
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

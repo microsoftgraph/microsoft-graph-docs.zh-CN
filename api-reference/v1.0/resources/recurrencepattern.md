@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 51134e6e7ca92c1c80450dfa8b23dd327f40a468
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc9f0a2745faf2a14c6200db81a6995b0835162e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034809"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533873"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
+
+命名空间：microsoft.graph
 
 描述了定期[事件](event.md)的重复发生频率。 
 

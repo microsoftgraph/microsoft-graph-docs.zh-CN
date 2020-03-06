@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8088d704d5a075131d5ee1b2c3b9edf75785708b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7bf1daec731033bddab63ee0fa232fbf83fe3a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035726"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534141"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
+
+命名空间：microsoft.graph
 
 长时间运行的操作的状态。
 
@@ -40,7 +42,7 @@ ms.locfileid: "36035726"
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作的开始时间。|
 |lastActionDateTime| DateTimeOffset |操作的上一操作的时间。|
-|status|operationStatus|操作的当前状态: `notStarted`、 `running`、、 `completed``failed` |
+|状态|operationStatus|操作的当前状态： `notStarted`、 `running`、、 `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

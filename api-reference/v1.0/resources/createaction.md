@@ -6,20 +6,22 @@ description: CreateAction 对象提供有关项目创建的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 755cf1f7d58dc8b1404ff2b3f3a606380066bf6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13a0083a8047ef09126e19908765647d55932698
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029580"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533018"
 ---
 # <a name="createaction-resource-type"></a>createAction 资源类型
 
+命名空间：microsoft.graph
+
 [**ItemActivity**][activity]上的**createAction**资源存在指示活动创建了一个项目。
 
-**注意:** 此资源当前为空。 将来可能会使用其他属性填充它。
+**注意：** 此资源当前为空。 将来可能会使用其他属性填充它。
 
->**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 

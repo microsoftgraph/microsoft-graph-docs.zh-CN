@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a0b128bc0205c54191e4d2c862ef9631734f986
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d8ccdda286034a340ccc0f7f65d21f8ffb5a6101
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367635"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532317"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Web 浏览器 Cookie 设置。
 
@@ -22,10 +24,10 @@ Web 浏览器 Cookie 设置。
 |成员|值|说明|
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值，无意向。|
-|blockAlways|1|始终阻止 cookie。|
-|allowCurrentWebSite|双面|允许来自当前网站的 cookie。|
-|allowFromWebsitesVisited|第三章|允许访问的网站中的 Cookie。|
-|allowAlways|4|始终允许 cookie。|
+|blockAlways|1 |始终阻止 cookie。|
+|allowCurrentWebSite|2 |允许来自当前网站的 cookie。|
+|allowFromWebsitesVisited|3 |允许访问的网站中的 Cookie。|
+|allowAlways|4 |始终允许 cookie。|
 
 
 

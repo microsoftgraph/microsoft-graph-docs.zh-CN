@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a4eefc52f97b2d405f0f42b61d8e7163e8f812f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1334482b23be1a424d5a0a5d8d969747630bc18
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027228"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509277"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
+
+命名空间：microsoft.graph
 
 
 

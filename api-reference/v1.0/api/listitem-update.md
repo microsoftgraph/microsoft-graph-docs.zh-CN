@@ -6,14 +6,16 @@ description: 更新 **[listItem][]** 上的属性。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e74f0b875232dd51058447a8c9479f5130f8f03f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 859c0c819a9a18ae0490e7e5051f3990f2ddd8bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356604"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511682"
 ---
 # <a name="update-listitem"></a>更新 listItem
+
+命名空间：microsoft.graph
 
 更新 **[listItem][]** 上的属性。
 
@@ -61,7 +63,7 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 ### <a name="request"></a>请求 
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -73,19 +75,19 @@ Content-Type: application/json
     "Quantity": 934
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

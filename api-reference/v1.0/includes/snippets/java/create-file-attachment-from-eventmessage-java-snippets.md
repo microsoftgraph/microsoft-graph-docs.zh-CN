@@ -1,18 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ac872eeac24c606ec4b10d891e6c8c756f8cbfd7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a192d2f661abf51533c5a66f706d41a679a07fc9
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888274"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544210"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Attachment attachment = new Attachment();
-attachment.additionalDataManager().put("@odata.type", new JsonPrimitive("microsoft.graph.fileAttachment"));
+FileAttachment attachment = new FileAttachment();
 attachment.name = "name-value";
 attachment.contentType = "contentType-value";
 attachment.isInline = false;

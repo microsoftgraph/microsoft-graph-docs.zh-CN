@@ -5,21 +5,23 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e8e69f7f28fb66ecbe7181eb76645f89d5278148
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8c53ef8b8b7e431319b448f26a41ce5eba857033
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844935"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531268"
 ---
 # <a name="usedinsight-resource-type"></a>usedInsight 资源类型
+
+命名空间：microsoft.graph
 
 表示特定用户使用的文档的洞察力。 该见解将返回用户查看或访问的最相关的文档。 其中包括以下文档：
 
 - OneDrive for Business
 - SharePoint
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -29,7 +31,7 @@ ms.locfileid: "39844935"
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | 关系的唯一标识符。 只读。        |
+| id                    | 字符串                    | 关系的唯一标识符。 只读。        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | 有关用户上次查看和修改项目的时间的信息。 只读。     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 所用文档的引用属性，例如文档的 url 和类型。 只读     |

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7b8fb49ac74d7f1a603f5f0b74d47751242ae01a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f15edcbdc3b78b3565548a740058728c4996770
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029468"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531641"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
+
+命名空间：microsoft.graph
 
 表示对合作伙伴组织中的目录对象的引用。 继承自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)。
 
@@ -21,7 +23,7 @@ ms.locfileid: "36029468"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |说明|String| 返回的对象的说明。 只读。 |
-|displayName|字符串| 返回的目录对象的名称, 如 group 或 application。 只读。 |
+|displayName|字符串| 返回的目录对象的名称，如 group 或 application。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
 |id|字符串| 资源的唯一标识符。 继承自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)。 只读。 |
 |objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |

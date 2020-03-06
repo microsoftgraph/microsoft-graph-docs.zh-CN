@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 89985d1349a1f10811ce8fca7dbd393bad82f68e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 668716a35554b0891a0fa52fd879b60df7cfa352
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864507"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510436"
 ---
-# <a name="reportroot-getemailactivityuserdetail"></a>reportRoot：getEmailActivityUserDetail
+# <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
+
+命名空间：microsoft.graph
 
 获取用户执行的电子邮件活动的详细信息。
 
@@ -85,7 +87,7 @@ CSV 文件包含下面的列标题。
 下面展示了示例请求。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -95,19 +97,19 @@ CSV 文件包含下面的列标题。
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserDetail(period='D7')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getemailactivityuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getemailactivityuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailactivityuserdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailactivityuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

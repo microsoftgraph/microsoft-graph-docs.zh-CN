@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78636f3bb97525442fdf638c8efd46b95ecc923c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dca4aab41ccd5f82fd2c28de93b538448fbf719a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372006"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517381"
 ---
 # <a name="delete-event"></a>删除事件
+
+命名空间：microsoft.graph
 
 删除事件。
 ## <a name="permissions"></a>权限
@@ -60,7 +62,7 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -68,19 +70,19 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

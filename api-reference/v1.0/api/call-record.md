@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 530cab8a11344959df32f7acc41bb706162ccab1
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 987d0d691bef1b5e9aa2a1e1500a8be74c67d8e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913259"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518684"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
+
+命名空间：microsoft.graph
 
 录制来自呼叫方的简短音频回复。
 在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。
@@ -57,7 +59,7 @@ POST /communications/calls/{id}/recordResponse
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
 |stopTones|String collection|指定结束录音的停止音。|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。
@@ -71,7 +73,7 @@ POST /communications/calls/{id}/recordResponse
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-recordResponse"
@@ -100,7 +102,7 @@ Content-Length: 394
   "stopTones": [ "#", "1", "*" ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

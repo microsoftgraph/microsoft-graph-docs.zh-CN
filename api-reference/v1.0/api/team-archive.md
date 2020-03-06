@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb2a6ca3962804ae9fc4ae85d1b8db93ead9bac6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68037939f6c2abcda77efa6eb0aa606616baf695
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021163"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509448"
 ---
 # <a name="archive-team"></a>存档团队
+
+命名空间：microsoft.graph
 
 
 

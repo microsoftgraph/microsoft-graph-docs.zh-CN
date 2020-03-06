@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82a331c523dd7ec863e5897690027a3e63d34b5c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 59b70c830308c8feedb672b9606a0c0489c2d27f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518082"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
+
+命名空间：microsoft.graph
 
 将用户添加为设备的已注册所有者。
 ## <a name="permissions"></a>权限
@@ -47,7 +49,7 @@ POST /devices/{id}/registeredOwners/$ref
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_device"
@@ -62,7 +64,7 @@ Content-length: 30
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

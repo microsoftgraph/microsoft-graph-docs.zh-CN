@@ -5,14 +5,16 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 50eee822e8386ef7d9e0212f3552432c0f1674ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00d44ac4182653292e3cc9c95e3ac3e9f2c14c93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008864"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521535"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - Azure 资源
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

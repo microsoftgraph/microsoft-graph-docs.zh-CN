@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acb29cd24faa95e0874c9ff0aa92f915489f8041
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4a8eeb96efccbef994669dab4bd64d8c7ee74d26
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368335"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514611"
 ---
 # <a name="update-ioscompliancepolicy"></a>更新 iosCompliancePolicy
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37368335"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -63,7 +65,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passcodeRequired|Boolean|指示是否需要密码。|
-|osMinimumVersion|String|最低 IOS 版本。|
+|osMinimumVersion|字符串|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
 |securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|

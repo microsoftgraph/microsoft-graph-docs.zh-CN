@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4697490d62fd1e39b2e9297d1d2baa24f2d7b8c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23bebb766ad15743e18aa928a9040a0f74653061
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509694"
 ---
 # <a name="table-delete"></a>Table: delete
+
+命名空间：microsoft.graph
 
 删除表。
 ## <a name="permissions"></a>权限

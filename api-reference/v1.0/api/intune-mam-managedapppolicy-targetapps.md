@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7c0c8f43766aea04f91cfc6e73e73a86113d1c
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ac1a799a6b1e64764a42bb548cf5794b67d6c917
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37363610"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42513145"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -38,7 +40,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/app
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/targetApps
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

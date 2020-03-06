@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63dd8b810feba508addccc6e30a30993b1e1ccf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976598"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511430"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
+
+命名空间：microsoft.graph
 
 在新建或现有的资源实例中创建一个或多个多值扩展属性。 
 
@@ -34,11 +36,11 @@ ms.locfileid: "35976598"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要在其中创建扩展属性的资源以及所请求的权限类型 (委派或应用程序), 在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据您要在其中创建扩展属性的资源以及所请求的权限类型（委派或应用程序），在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -114,7 +116,7 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -127,10 +129,10 @@ PATCH /groups/{id}/events/{id}
 |属性|类型|说明|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 一个或多个多值扩展属性的数组。 |
-|id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|id|字符串|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在_新_资源实例中创建扩展属性时, 除了新的**multiValueExtendedProperties**集合之外, 还提供该资源实例的 JSON 表示形式 (即[邮件](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md)等)。
+在_新_资源实例中创建扩展属性时，除了新的**multiValueExtendedProperties**集合之外，还提供该资源实例的 JSON 表示形式（即[邮件](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md)等）。
 
 
 ## <a name="response"></a>响应

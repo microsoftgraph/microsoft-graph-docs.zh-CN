@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a5be834b02222155e1b470245976dc7c0b2cea7c
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: c1d3039eb7cb87d37a778764716517fc628f1f29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774378"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509722"
 ---
 # <a name="update-subscription"></a>更新订阅
+
+命名空间：microsoft.graph
 
 通过延长到期时间续订订阅。
 
@@ -69,7 +71,7 @@ PATCH /subscriptions/{id}
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -83,19 +85,19 @@ Content-type: application/json
    "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

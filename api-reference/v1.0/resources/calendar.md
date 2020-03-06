@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 19b4ee365a1c8520a87343de9920fded290e183a
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 713753dc10e7576d458b5c83c994aa757085b05f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216213"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531989"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
+
+命名空间：microsoft.graph
 
 日历即事件容器。 可以是[用户](user.md)的日历，也可以是 Office 365 [组](group.md)的默认日历。
 
@@ -49,7 +51,7 @@ ms.locfileid: "41216213"
 |canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 |
 |changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
-|id|String|日历的唯一标识符。 只读。|
+|id|String|日历的唯一标识符。只读。|
 |name|String|日历名称。|
 |owner |[emailAddress](emailaddress.md) | 如果设置，则表示创建或添加日历的用户。对于用户创建或添加的日历，将 **owner** 属性设置为用户。对于与用户共享的日历，将 **owner** 属性设置为与此用户共享该日历的人员。 |
 

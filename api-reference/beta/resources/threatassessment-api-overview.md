@@ -5,14 +5,16 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4ebb1c09e5e8b2dc8f079f3234d6a5fe17119b68
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5360633155347b752866615e7635c811f3f1f30c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871779"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519783"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>使用 Microsoft Graph 威胁评估 API
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

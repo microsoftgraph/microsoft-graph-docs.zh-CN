@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 77d688d71757cac9f6d58b9d1bc344d37550e3a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ae528e68aa3bf28457f2fee04beb6a8013e902d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033011"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531897"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
+
+命名空间：microsoft.graph
 
 代表图表中的单个坐标轴。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

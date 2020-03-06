@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba59d8df30789629e62ab195a74e75fef8c7059b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 35f9c4ed2166eb639c8af3ea198882b5ccbd1fee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37362307"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512466"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37362307"
 POST /deviceManagement/mobileThreatDefenseConnectors
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|

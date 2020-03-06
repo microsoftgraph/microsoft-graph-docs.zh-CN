@@ -1,23 +1,25 @@
 ---
 title: directoryRoleTemplate 资源类型
-description: 表示目录角色模板。 目录角色模板指定目录角色 (directoryRole) 的属性值。 每个可在租户中激活的目录角色都有一个关联的目录角色模板对象。
+description: 表示目录角色模板。 目录角色模板指定目录角色（directoryRole）的属性值。 每个可在租户中激活的目录角色都有一个关联的目录角色模板对象。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 286f1503e644e1d0c74250b2f1211bf9ae4d3555
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 886c8bf205d3ad8440d708527c12fbe7f565259d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531629"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
+
+命名空间：microsoft.graph
 
 表示目录角色模板。目录角色模板指定目录角色 ([directoryRole](directoryrole.md)) 的属性值。租户中每个已激活的目录角色都有一个相关的目录角色模板对象。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，仅激活公司管理员目录角色。要激活其他可用目录角色，发送 POST 请求到此目录角色模板 ID 的 `/directoryRoles` 端点，角色基于此模板，且此模板在请求的 **roleTemplateId** 参数中指定。在成功完成请求后，你可以开始读取，并将成员分配给目录角色。**注意**：目录角色模板针对用户目录角色公开。用户目录角色是隐式的，对目录客户端不可见。租户中的每个用户按基础结构分配到此角色。已激活该角色。请勿使用此模板。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|

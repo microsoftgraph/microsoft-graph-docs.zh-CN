@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7691e8200b1ac2bdc5f46219365f8e27251d5bf4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6ba2925118d443250c991e570bf7bd7efe8f4316
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913364"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518733"
 ---
 # <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
+
+命名空间：microsoft.graph
 
 允许应用程序与组呼叫的参与者共享屏幕内容。
 
@@ -44,7 +46,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|String|可能的值为： "查看器"、"共享资源"|
+|role|字符串|可能的值为： "查看器"、"共享资源"|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回`202 Accepted`响应代码，并且所有参与者都将收到名单更新。
@@ -55,7 +57,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 下面为请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-changeScreenSharingRole"
@@ -69,19 +71,19 @@ Content-Length: 24
   "role": "viewer"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-changescreensharingrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-changescreensharingrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

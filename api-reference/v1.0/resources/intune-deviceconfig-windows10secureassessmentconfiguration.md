@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a75733bf7e1d6a06e332239e891c6d1e2ce0079
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4a9daba720f2c5a2d77f0b73c5233257cff9f971
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367040"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530391"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>windows10SecureAssessmentConfiguration 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 secureAssessment 资源公开的已声明方法、属性和关系的说明。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10SecureAssessmentConfigurations](../api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md)|[windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md) 集合|列出 [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md) 对象的属性和关系。|
@@ -39,7 +41,7 @@ ms.locfileid: "37367040"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|launchUri|String|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
+|launchUri|字符串|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|用于配置 Windows 设备进行测试的帐户。 用户可以是域帐户（域\用户）、AAD 帐户 (username@tenant.com) 或本地帐户（用户名）。|
 |allowPrinting|Boolean|指示在测试期间是否允许应用打印。|
 |allowScreenCapture|Boolean|指示在测试期间是否允许屏幕捕获功能。|

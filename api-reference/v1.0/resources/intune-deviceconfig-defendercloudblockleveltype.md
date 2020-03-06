@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 658a484a29ebed8cb111ded81ef439a560c87ac0
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: bd121a61106ae029ccacf2e393bd28ef34415045
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530894"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 云块级别的可能值
 
@@ -22,9 +24,9 @@ ms.locfileid: "37366627"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|默认值是，使用默认的 Windows Defender 防病毒阻止级别，并提供强大的检测功能，而不会增加检测合法文件的风险|
-|高效|1|High 适用于强级别的检测。|
-|highPlus|双面|高级别 + 使用高级别，并应用附加保护措施|
-|zeroTolerance|第三章|零耐受性阻止所有未知可执行文件|
+|高效|1 |High 适用于强级别的检测。|
+|highPlus|2 |高级别 + 使用高级别，并应用附加保护措施|
+|zeroTolerance|3 |零耐受性阻止所有未知可执行文件|
 
 
 

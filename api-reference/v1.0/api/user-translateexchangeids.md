@@ -5,14 +5,16 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bad55dd3dc6904f1c329c5a41d54c001162801de
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 0e87ceb0b14ebdd41467e12dcef06e96667ad58c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268353"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508917"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
+
+命名空间：microsoft.graph
 
 对与 Outlook 相关的资源的标识符进行格式转换。
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: db660e457473e228d69e105ce85a03537f79df9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8cd6839991e16c5b8517d8ce3630fe81862cd1b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014408"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516785"
 ---
 # <a name="update-icon"></a>更新图标
+
+命名空间：microsoft.graph
 
 更新 icon 对象的属性。
 ## <a name="permissions"></a>权限
@@ -42,7 +44,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|表示给定集合中图标的索引。|
-|set|string|表示图标所属的集合。 可能的值为: `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating`、、、、、、、、、、、、、、、、 `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|表示图标所属的集合。 可能的值为： `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FiveBoxes`、、 `FourRedToBlack`、、、、、、、、、、、、、、、、。 `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles`|
 
 ## <a name="response"></a>响应
 

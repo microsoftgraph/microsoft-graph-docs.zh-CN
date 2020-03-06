@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b72ddab7d5e72ec11e1d7969df8e04f2d2205c9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 303a83bb65af1b3ae564118c6dd7c14f873bafed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511444"
 ---
 # <a name="update-rule"></a>更新规则
+
+命名空间：microsoft.graph
 
 
 为 [messageRule](../resources/messagerule.md) 对象更改可写属性并保存更改。
@@ -58,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ##### <a name="request"></a>请求
 下面的示例更改规则名称，并更改针对[获取规则](messagerule-get.md)[示例](messagerule-get.md#example)中的规则所采取的操作，从转发到一个地址到将其重要性标记为“高”。 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
@@ -75,19 +77,19 @@ Content-type: application/json
      }
 } 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-messagerule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-messagerule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-messagerule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-messagerule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

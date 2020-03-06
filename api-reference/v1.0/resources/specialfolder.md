@@ -7,14 +7,16 @@ localization_priority: Normal
 description: SpecialFolder 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e7b5878d091e766ffa5a591c3ea72e4abcad9461
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 767ac4c5ce8819290e9a47e3e3f4f4efd1a9d238
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034032"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533633"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
+
+命名空间：microsoft.graph
 
 **SpecialFolder** 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 
@@ -54,11 +56,11 @@ ms.locfileid: "36034032"
 
 | 名称        | 文件夹 ID    | 说明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| 应用根目录    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
+| App Root    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
 | 本机照片 | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
-| 文档   | `documents`  | 文档文件夹。                                                    |
+| Documents   | `documents`  | “文档”文件夹。                                                    |
 | 音乐       | `music`      | 音乐文件夹。不适用于 OneDrive for Business。                |
-| 照片      | `photos`     | 照片文件夹。                                                       |
+| Photos      | `photos`     | “照片”文件夹。                                                       |
 
 ## <a name="remarks"></a>注解 
 

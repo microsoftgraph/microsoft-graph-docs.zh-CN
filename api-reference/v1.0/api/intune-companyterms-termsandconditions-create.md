@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c655f712e9fbbf09342ac77f978de02b0ba5720
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: dc973ab4da5b504193cdf396c03810de46640933
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357841"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515502"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37357841"
 POST /deviceManagement/termsAndConditions
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -52,10 +54,10 @@ POST /deviceManagement/termsAndConditions
 |id|字符串|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|String|管理员提供的 T&C 策略名称。 |
+|displayName|字符串|管理员提供的 T&C 策略名称。 |
 |说明|字符串|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
-|bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
+|bodyText|字符串|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
 

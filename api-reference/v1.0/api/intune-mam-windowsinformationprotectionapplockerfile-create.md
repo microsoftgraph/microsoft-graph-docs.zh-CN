@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ac8cc5f45e260908def02286cfa59e7acadb8d
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 3d6ae46c5018fbcf52a9b604ba105a76fd5a8f15
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37363043"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512858"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>创建 windowsInformationProtectionAppLockerFile
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象。
 
@@ -39,7 +41,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -55,8 +57,8 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |displayName|字符串|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
-|id|String|实体的键。|
-|version|String|实体的版本。|
+|id|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 
 

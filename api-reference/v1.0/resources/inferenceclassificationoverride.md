@@ -5,19 +5,21 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c3d792d7f8687da1b65e969f1b42d61612532a22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a80283bd3f32c28b71d02acd2ae93e76cac1299
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029216"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531304"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
+
+命名空间：microsoft.graph
 
 表示来自特定发件人的传入邮件始终应如何分类的用户的替代。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -27,7 +29,7 @@ ms.locfileid: "36029216"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为: `focused`、 `other`。|
+|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused`、 `other`。|
 |id|string| 替代的唯一标识符。只读。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|为其创建替代的发件人的电子邮件地址信息。|
 

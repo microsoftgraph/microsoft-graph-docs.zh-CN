@@ -5,14 +5,16 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1f928252963c7796a396e1e342b413d135fb1764
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea9ef53ee472c9051be6baabe35dc2a0a03e620f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533989"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
+
+命名空间：microsoft.graph
 
 **plannerPlan** 资源表示 Office 365 中的计划。 计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。 其也可以有 [plannerBuckets](plannerbucket.md) 集合。 每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。 有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
 

@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0606528083a282338681f40373ecaccb146428f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6f11cad32e48b259f3754ed08e4bad769f9a4c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029888"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531926"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
+
+命名空间：microsoft.graph
 
 表示工作簿中的 chart 对象。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

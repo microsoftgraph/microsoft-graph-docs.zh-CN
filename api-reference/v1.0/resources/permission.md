@@ -7,14 +7,16 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 95a5b9785285cd6286cf9ebefd8d62fa900c3d9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fa13c414d45561110d1fa1310cfc913efec6118
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035481"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534068"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
+
+命名空间：microsoft.graph
 
 **Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c46f059721727e8752df6f7b0ad99a48c3104d64
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ead624878dafd1d2edd1aca27d689da5af57de8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532620"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 合规性应用程序列表的可能值。
 
@@ -22,8 +24,8 @@ ms.locfileid: "37366725"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值，无意向。|
-|appsInListCompliant|1|此列表表示将被视为合规性的应用程序（仅符合列表中的应用程序）。|
-|appsNotInListCompliant|双面|此列表表示将被视为不合规的应用程序（所有应用程序都符合列表中的应用程序）。|
+|appsInListCompliant|1 |此列表表示将被视为合规性的应用程序（仅符合列表中的应用程序）。|
+|appsNotInListCompliant|2 |此列表表示将被视为不合规的应用程序（所有应用程序都符合列表中的应用程序）。|
 
 
 

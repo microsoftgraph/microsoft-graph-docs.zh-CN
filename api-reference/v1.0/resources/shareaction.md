@@ -6,18 +6,20 @@ description: ShareAction 对象提供有关在共享操作中共享项目的对�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 73b847bbd9608a7647f3895e8d67fff9dbdc9a68
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f8b4870ec82a2f264d6f67cdd02cd22c9747e51e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034347"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533738"
 ---
 # <a name="shareaction-resource-type"></a>shareAction 资源类型
 
+命名空间：microsoft.graph
+
 **ShareAction**资源提供有关共享项的[活动][activity]的信息。
 
->**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 

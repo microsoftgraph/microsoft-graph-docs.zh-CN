@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ad7c07d269f9dc627de41db621e4d73f0d2c10b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb792c5ce3b462fa5d2febcd1fb5ed0509d3ef30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029902"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531940"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl 资源类型
+
+命名空间：microsoft.graph
 
 包含与安全得分控制相关联的合规性认证数据。
 
@@ -20,7 +22,7 @@ ms.locfileid: "36029902"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|name|String|证书控制名称 |
+|name|字符串|证书控制名称 |
 |url|String|Microsoft 服务信任门户的 URL |
 
 ## <a name="json-representation"></a>JSON 表示形式

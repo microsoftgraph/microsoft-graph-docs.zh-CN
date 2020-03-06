@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd13e0c1ed8a8c7a9890ae4a785ca6f92d882902
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e123cfd86170e600143adb2cebd7651c9d270e88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366424"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514576"
 ---
 # <a name="update-ioscustomconfiguration"></a>更新 iosCustomConfiguration
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37366424"
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -55,7 +57,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|payloadName|String|向用户显示的名称。|
+|payloadName|字符串|向用户显示的名称。|
 |payloadFileName|String|有效负载文件名 (*.mobileconfig | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 

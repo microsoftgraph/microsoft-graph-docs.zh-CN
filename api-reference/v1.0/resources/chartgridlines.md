@@ -5,19 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4c621739ea654b479825f293944a39db1c0b66e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029797"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533130"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
+
+命名空间：microsoft.graph
 
 代表图表坐标轴的主要或次要网格线。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

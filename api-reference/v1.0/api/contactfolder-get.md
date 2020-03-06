@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dc3a6e125dd300d97ba1152adb338752778617b7
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 08a241abf6a1b9128b104ec4dd8709ff9b468c2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727150"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518271"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
+命名空间：microsoft.graph
+
 通过使用联系人文件夹 ID 获取联系人文件夹。
 
-在以下两种情况下, 应用可以获取其他用户的联系人文件夹:
+在以下两种情况下，应用可以获取其他用户的联系人文件夹：
 
 * 如果该应用程序具有应用程序权限，或者
 * 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
@@ -54,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_contactfolder"
@@ -62,19 +64,19 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contactfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contactfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

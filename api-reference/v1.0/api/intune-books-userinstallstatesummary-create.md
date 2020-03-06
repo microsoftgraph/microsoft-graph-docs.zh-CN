@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23060cad3191e2df69614c3f9238bd9fbdf56ca2
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 25b806c36c4a8c559662690541912dc6ff5cece3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354649"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515537"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37354649"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |userName|String|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|

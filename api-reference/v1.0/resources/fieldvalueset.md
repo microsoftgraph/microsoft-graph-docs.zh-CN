@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 表示 listItem 资源中的列值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a1a308bfcda1bf913455ca6689dbaca308daecbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b647de480c9c125d0176993dfeccc85dc3cf0ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032520"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531438"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
+
+命名空间：microsoft.graph
 
 表示 [listItem](listitem.md) 资源中的列值。
 

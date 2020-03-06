@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f09821191c63eeab5f41506f35a6cc60acf50edd
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4425f93b66e5652179304690b113cc0ca198abd6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355643"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516649"
 ---
 # <a name="delete-androidstoreapp"></a>删除 androidStoreApp
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [androidStoreApp](../resources/intune-apps-androidstoreapp.md)
 
@@ -36,7 +38,7 @@ ms.locfileid: "37355643"
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

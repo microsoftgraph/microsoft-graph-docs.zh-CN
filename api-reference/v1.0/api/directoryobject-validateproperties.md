@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7fb7424d07ca82191705cb020a33e03fc69481f0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bcee27c646831f414fdba18c67176073a7b61d48
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864836"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517970"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
+
+命名空间：microsoft.graph
 
 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。  在尝试[创建](group-post-groups.md)Office 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用[group： validateProperties](group-validateproperties.md)函数。
 
@@ -50,7 +52,7 @@ POST /directoryObjects/validateProperties
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|entityType|String| Group 是唯一受支持的实体类型。 |
+|entityType|字符串| Group 是唯一受支持的实体类型。 |
 |displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
 |mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
 |onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的 ID。 验证结果针对的是**onBehalfOfUserId 的**属性和角色。 |
@@ -70,7 +72,7 @@ POST /directoryObjects/validateProperties
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_validateproperties"
@@ -87,19 +89,19 @@ Content-length: 164
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f2b391055dcb17af41f4bf5522b248a00caa9aa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 634450b1b33adc152c1012c7795e04105435678c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027165"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509249"
 ---
 # <a name="update-tab"></a>更新选项卡
+
+命名空间：microsoft.graph
 
 
 更新指定[选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
@@ -41,7 +43,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
+在请求正文中，提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

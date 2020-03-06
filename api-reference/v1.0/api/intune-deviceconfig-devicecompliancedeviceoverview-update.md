@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 405b515b3a36c39afa759c525dff0b4eaa43cafe
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: f0e8a2097b31d46120c7000c97459860c0cd303c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354348"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515131"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>更新 deviceComplianceDeviceOverview
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37354348"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatusOverview
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
 |successCount|Int32|成功设备的数量|

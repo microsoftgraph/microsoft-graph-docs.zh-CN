@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4fddb5eac07994fa9b1b837320e2e5891f8e38c1
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 41e079bbc33c85439a4290ca7420fd24ea7a1217
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539272"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508868"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
+
+命名空间：microsoft.graph
 
 检索[workbookComment](../resources/workbookcomment.md)对象的列表。
 
@@ -54,7 +56,7 @@ GET workbook/comments
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_comments"
@@ -63,19 +65,19 @@ GET workbook/comments
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-comments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-comments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-comments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-comments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

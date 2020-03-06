@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f97360875af2241df3d78108d9c7447bfa6b6975
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d903865d0977d93e2b8c0ca3cbaafc2d1607a632
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913469"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531973"
 ---
 # <a name="call-resource-type"></a>call 资源类型
+
+命名空间：microsoft.graph
 
 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 

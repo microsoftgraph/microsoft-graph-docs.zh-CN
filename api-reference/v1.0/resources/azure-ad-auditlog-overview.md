@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7c91aea96c93065a469b64bb3088540928e2e1d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0391d250d109731da43fc86f5b67c50dadc52373
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532021"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 审核日志 API 概述
+
+命名空间：microsoft.graph
 
 Azure Active Directory (Azure AD) 可跟踪用户活动和登录指标并创建审核日志报告，以帮助你了解用户如何访问和使用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告的基础数据，并根据组织的特定需求创建自定义解决方案。
 

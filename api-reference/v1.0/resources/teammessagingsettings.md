@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27ef5062e84f20dc1dbf6be11020f421871fbc09
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e742dd0e785a94b33a57e55b50a00aab0c207ab4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033836"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533521"
 ---
 # <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings 资源类型
+
+命名空间：microsoft.graph
 
 
 
@@ -21,11 +23,11 @@ ms.locfileid: "36033836"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolean|如果设置为 true, 则用户可以编辑其邮件。|
-|allowUserDeleteMessages|Boolean|如果设置为 true, 则用户可以删除其邮件。|
-|allowOwnerDeleteMessages|Boolean|如果设置为 true, 则所有者可以删除任何邮件。|
-|allowTeamMentions|Boolean|如果设置为 true, 则允许 @team 提及。|
-|allowChannelMentions|Boolean|如果设置为 true, 则允许 @channel 提及。|
+|allowUserEditMessages|Boolean|如果设置为 true，则用户可以编辑其邮件。|
+|allowUserDeleteMessages|Boolean|如果设置为 true，则用户可以删除其邮件。|
+|allowOwnerDeleteMessages|Boolean|如果设置为 true，则所有者可以删除任何邮件。|
+|allowTeamMentions|Boolean|如果设置为 true，则允许 @team 提及。|
+|allowChannelMentions|Boolean|如果设置为 true，则允许 @channel 提及。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

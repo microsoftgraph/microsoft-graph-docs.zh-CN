@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 06d144097eb7689b75f6ae0e7be941e254cc9592
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f03aeca5c15d26854954ecd4f459e5c0ab49cb4e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302313"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508819"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
+
+命名空间：microsoft.graph
 
 检索[workbookApplication](../resources/workbookapplication.md)对象的属性和关系。
 
@@ -48,7 +50,7 @@ GET /workbook/application
 下面是一个请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workbookApplication"
@@ -56,19 +58,19 @@ GET /workbook/application
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-workbookapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

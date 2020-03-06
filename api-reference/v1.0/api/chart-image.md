@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: edcd1fcf52cc020ce4b261aebc115cea302b05c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b354be83058d67dc99cd3ffd7c98798017733199
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003740"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518572"
 ---
 # <a name="chart-image"></a>图表：图像
+
+命名空间：microsoft.graph
 
 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
 ## <a name="permissions"></a>权限
@@ -45,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 |:---------------|:--------|:----------|
 |height|Int32|生成的图像的所需高度。 可选。|
 |width|Int32|生成的图像的所需宽度。 可选。|
-|fittingMode|string|用于将图表缩放到指定尺寸 (如果同时设置了高度和宽度) 的方法。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|用于将图表缩放到指定尺寸（如果同时设置了高度和宽度）的方法。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 

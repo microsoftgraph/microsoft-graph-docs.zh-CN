@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 9f4f494b21a1139ba9a9e0771dcbc41d363bab2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d32bcb2e480fe0589368ce06a995e3590f6b82e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520961"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

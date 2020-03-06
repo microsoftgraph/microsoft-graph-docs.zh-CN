@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6e94271e114554f01298364ffb47de200b4b2ce
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b8dd469afa4bc4b7650e299af0b141f8461b9cf5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37363134"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512893"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) 对象的属性和关系。
 
@@ -38,7 +40,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appl
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|

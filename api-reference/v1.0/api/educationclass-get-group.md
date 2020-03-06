@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50cfc3962c04ac525196bda8f3b502eac9255005
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 054e3a36e295903229f14aef58614fa68e17d8db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721059"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517662"
 ---
 # <a name="get-group"></a>获取组
+
+命名空间：microsoft.graph
 
 检索与此 **educationClass** 对应的 Office 365 **group**。
 
@@ -45,7 +47,7 @@ GET /education/classes/{id}/group
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationclass_get_group"
@@ -53,19 +55,19 @@ GET /education/classes/{id}/group
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationclass-get-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationclass-get-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationclass-get-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationclass-get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

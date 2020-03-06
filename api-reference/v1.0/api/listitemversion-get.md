@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4012b58864715741800276e0ca2e16f8ae765de5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4a7e10787b23ab422a64a30db7d0d921edfdfbcf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728781"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511675"
 ---
 # <a name="get-a-listitemversion-resource"></a>获取 ListItemVersion 资源
+
+命名空间：microsoft.graph
 
 检索 [ListItem](../resources/listitem.md) 的某个特定版本的元数据。
 
@@ -49,25 +51,25 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read sites.read.all", "tags": "service.graph service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-single-version-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-single-version-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

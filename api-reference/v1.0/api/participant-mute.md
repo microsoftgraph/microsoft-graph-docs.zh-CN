@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c65bf06524b883ca4632a6127e50a13e4355054
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 89909699fc460d67d739d58ebb5e9a5bcf80898c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511059"
 ---
 # <a name="participant-mute"></a>参与者：静音
+
+命名空间：microsoft.graph
 
 将呼叫中的特定参与者静音。
 
@@ -47,7 +49,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
@@ -60,7 +62,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 ##### <a name="request"></a>请求
 下面为请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -73,19 +75,19 @@ Content-Type: application/json
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

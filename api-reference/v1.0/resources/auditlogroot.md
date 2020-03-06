@@ -5,18 +5,20 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45a6ce64f2f5f8b37f1a555c2bf7a38a87a99acf
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7b0632271c2fd02fa6137df3065d413f0e35a046
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730363"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532086"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
+命名空间：microsoft.graph
+
 包含不同类型的审核日志。 此资源返回 singleton auditLog 资源。 它不包含任何可用属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -33,7 +35,7 @@ ms.locfileid: "36730363"
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|directoryAudits|[directoryAudit](directoryaudit.md)集合| 只读。 可为 Null。|
+|directoryAudits|[directoryAudit](directoryaudit.md)集合| 只读。 可为空。|
 |signIns|[登录](signin.md)集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -55,7 +57,7 @@ ms.locfileid: "36730363"
 ## <a name="example"></a>示例
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_auditLogs"
@@ -63,19 +65,19 @@ ms.locfileid: "36730363"
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-auditlogs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

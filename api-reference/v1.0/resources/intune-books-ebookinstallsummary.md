@@ -5,20 +5,22 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a68033930abb413ab7c2640381120b86c9873359
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 8338d2376540d8600d574e56ac38c95d0c6b9626
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531022"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含某个设备的书籍安装摘要的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|读取 [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) 对象的属性和关系。|
@@ -27,7 +29,7 @@ ms.locfileid: "37355958"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |installedDeviceCount|Int32|已成功安装此书籍的设备数量。|
 |failedDeviceCount|Int32|未能成功安装此书籍的设备数量。|
 |notInstalledDeviceCount|Int32|未安装此书籍的设备数量。|

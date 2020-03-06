@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 87340d09655ef682cfbc98bb8795ceaa4bdd33a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 110502c61a25ae046aa17fde72a5ffc64368b1eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531487"
 ---
 # <a name="email-activity-reports"></a>电子邮件活动报告
+
+命名空间：microsoft.graph
 
 电子邮件活动报表可用于大致了解组织中的电子邮件流量。 此外，还可以向下钻取“电子邮件活动”小组件，了解组织中每个用户的电子邮件活动的趋势和详细信息。
 

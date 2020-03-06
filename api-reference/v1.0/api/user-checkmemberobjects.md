@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 85710d819338944b20ce46e3d5f71277a3710dcf
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 3b79ce9c9b36213e7a289ab4e2e21fa6f3929b9e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268435"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509228"
 ---
 # <a name="user-checkmemberobjects"></a>用户： checkMemberObjects
+
+命名空间：microsoft.graph
 
 检查指定用户对象的组或目录角色列表中的成员资格。 此方法是可传递的。
 

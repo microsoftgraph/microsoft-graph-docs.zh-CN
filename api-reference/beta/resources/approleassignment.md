@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 34b9875efe231d734cd7ff3a8143d882ec3a87fb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5a0b9faeb68e11f465e8b5ddb177351e9a0f44d6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870384"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508238"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

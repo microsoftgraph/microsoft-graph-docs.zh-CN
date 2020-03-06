@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48b37b37ae691cb3c40c7ae32723ce1ed8796d61
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e62b040aa80469065631dfa45f8c4564ad906866
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37362125"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512403"
 ---
 # <a name="update-organization"></a>更新组织
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37362125"
 PATCH /organization/{organizationId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,7 +51,7 @@ PATCH /organization/{organizationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID。|
+|id|字符串|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
 

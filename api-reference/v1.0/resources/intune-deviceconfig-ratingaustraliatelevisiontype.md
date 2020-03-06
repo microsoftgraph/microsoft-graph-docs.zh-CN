@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fc71a7dc5b5eaba65612090224928073bde8ba2b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 7043dfe436fc13ba86a5173a60305b7303c3e5df
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532409"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 澳大利亚的电视内容评级标签
 
@@ -22,14 +24,14 @@ ms.locfileid: "37355762"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1|不允许任何电视显示内容|
-|preschoolers|双面|P 分类适用于 preschoolers|
-|children|第三章|C 分类适用于14下的儿童|
-|概要|4|G 分类适用于所有年龄段|
-|parentalGuidance|5|对于年轻人查看者，建议使用 PG 分类|
-|成熟|型|对于超过15的查看者，建议使用 M 分类|
-|agesAbove15|步|MA15 + 分类不适用于15岁以上的查看器|
-|agesAbove15AdultViolence|utf-8|AV15 + 分类不适用于15岁以上的观众，特别是成人|
+|allBlocked|1 |不允许任何电视显示内容|
+|preschoolers|2 |P 分类适用于 preschoolers|
+|children|3 |C 分类适用于14下的儿童|
+|概要|4 |G 分类适用于所有年龄段|
+|parentalGuidance|5 |对于年轻人查看者，建议使用 PG 分类|
+|成熟|6 |对于超过15的查看者，建议使用 M 分类|
+|agesAbove15|7 |MA15 + 分类不适用于15岁以上的查看器|
+|agesAbove15AdultViolence|8 |AV15 + 分类不适用于15岁以上的观众，特别是成人|
 
 
 
