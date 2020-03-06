@@ -6,20 +6,22 @@ description: EditAction 对象提供有关编辑项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9d53760827b324dc8ea9c6b16629dfc2948c5e01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53998155929289314ad8b222bb5eb790f0350add
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531517"
 ---
 # <a name="editaction-resource-type"></a>editAction 资源类型
 
+命名空间：microsoft.graph
+
 [**ItemActivity**][activity]上的**editAction**资源存在指示活动编辑了某个项目。
 
-**注意**: 此资源当前为空。 将来可能会使用其他属性填充它。
+**注意**：此资源当前为空。 将来可能会使用其他属性填充它。
 
->**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 

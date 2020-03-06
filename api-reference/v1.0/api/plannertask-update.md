@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c6c2ebca11668e022ee01a9f06bb57c8ff3ccf32
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e43c15b96cd19cc821491473d2459058c0c061ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375819"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510828"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
+
+命名空间：microsoft.graph
 
 更新 **plannertask** 对象的属性。
 ## <a name="permissions"></a>权限
@@ -41,7 +43,7 @@ PATCH /planner/tasks/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
-|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
+|assigneePriority|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
 |bucketId|String|任务所属的存储桶 id。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](../resources/planner-identifiers-disclaimer.md)在服务上完成。 |
 |conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
@@ -61,7 +63,7 @@ PATCH /planner/tasks/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertask"
@@ -85,7 +87,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
