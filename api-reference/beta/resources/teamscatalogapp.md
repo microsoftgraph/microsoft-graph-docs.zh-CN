@@ -12,8 +12,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42519881"
 ---
-# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="e70fe-103">teamsCatalogApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="e70fe-103">teamsCatalogApp resource type</span></span>
+# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="d211e-103">teamsCatalogApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="d211e-103">teamsCatalogApp resource type</span></span>
 
-<span data-ttu-id="e70fe-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e70fe-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d211e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d211e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e70fe-105">请参阅[teamsApp](teamsapp.md)。</span><span class="sxs-lookup"><span data-stu-id="e70fe-105">see [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="d211e-105">请参阅[teamsApp](teamsapp.md)。</span><span class="sxs-lookup"><span data-stu-id="d211e-105">see [teamsApp](teamsapp.md).</span></span>

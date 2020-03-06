@@ -12,29 +12,29 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42453826"
 ---
-# <a name="create-schedulinggroup"></a><span data-ttu-id="64002-103">创建 schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="64002-103">Create schedulingGroup</span></span>
+# <a name="create-schedulinggroup"></a><span data-ttu-id="43b4d-103">创建 schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="43b4d-103">Create schedulingGroup</span></span>
 
-<span data-ttu-id="64002-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="64002-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43b4d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43b4d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64002-105">创建新的[schedulingGroup](../resources/schedulinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="64002-105">Create a new [schedulingGroup](../resources/schedulinggroup.md).</span></span>
+<span data-ttu-id="43b4d-105">创建新的[schedulingGroup](../resources/schedulinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="43b4d-105">Create a new [schedulingGroup](../resources/schedulinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="64002-106">权限</span><span class="sxs-lookup"><span data-stu-id="64002-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="43b4d-106">权限</span><span class="sxs-lookup"><span data-stu-id="43b4d-106">Permissions</span></span>
 
-<span data-ttu-id="64002-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="64002-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43b4d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="43b4d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64002-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="64002-109">Permission type</span></span>      | <span data-ttu-id="64002-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="64002-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43b4d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="43b4d-109">Permission type</span></span>      | <span data-ttu-id="43b4d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="43b4d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64002-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="64002-111">Delegated (work or school account)</span></span> | <span data-ttu-id="64002-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64002-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64002-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="64002-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64002-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="64002-114">Not supported.</span></span>    |
-|<span data-ttu-id="64002-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="64002-115">Application</span></span> |<span data-ttu-id="64002-116">计划的所有写。 \*</span><span class="sxs-lookup"><span data-stu-id="64002-116">Schedule.ReadWrite.All\*</span></span> |
+|<span data-ttu-id="43b4d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="43b4d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="43b4d-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43b4d-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="43b4d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="43b4d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43b4d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="43b4d-114">Not supported.</span></span>    |
+|<span data-ttu-id="43b4d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="43b4d-115">Application</span></span> |<span data-ttu-id="43b4d-116">计划的所有写。 \*</span><span class="sxs-lookup"><span data-stu-id="43b4d-116">Schedule.ReadWrite.All\*</span></span> |
 
-><span data-ttu-id="64002-117">\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。</span><span class="sxs-lookup"><span data-stu-id="64002-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="43b4d-117">\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。</span><span class="sxs-lookup"><span data-stu-id="43b4d-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-> <span data-ttu-id="64002-118">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="64002-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="64002-119">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="64002-119">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="43b4d-118">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="43b4d-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="43b4d-119">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="43b4d-119">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="64002-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="64002-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43b4d-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="43b4d-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,24 +42,24 @@ ms.locfileid: "42453826"
 POST /teams/{teamId}/schedule/schedulingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="64002-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="64002-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="43b4d-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="43b4d-121">Request headers</span></span>
 
-| <span data-ttu-id="64002-122">标头</span><span class="sxs-lookup"><span data-stu-id="64002-122">Header</span></span>       | <span data-ttu-id="64002-123">值</span><span class="sxs-lookup"><span data-stu-id="64002-123">Value</span></span> |
+| <span data-ttu-id="43b4d-122">标头</span><span class="sxs-lookup"><span data-stu-id="43b4d-122">Header</span></span>       | <span data-ttu-id="43b4d-123">值</span><span class="sxs-lookup"><span data-stu-id="43b4d-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="64002-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="64002-124">Authorization</span></span>  | <span data-ttu-id="64002-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="64002-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="64002-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="64002-127">Content-Type</span></span>  | <span data-ttu-id="64002-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="64002-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="43b4d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="43b4d-124">Authorization</span></span>  | <span data-ttu-id="43b4d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="43b4d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="43b4d-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="43b4d-127">Content-Type</span></span>  | <span data-ttu-id="43b4d-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="43b4d-p104">application/json. Required.</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="64002-130">响应</span><span class="sxs-lookup"><span data-stu-id="64002-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="43b4d-130">响应</span><span class="sxs-lookup"><span data-stu-id="43b4d-130">Response</span></span>
 
-<span data-ttu-id="64002-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="64002-131">If successful, this method returns a `201 Created` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
+<span data-ttu-id="43b4d-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="43b4d-131">If successful, this method returns a `201 Created` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="64002-132">示例</span><span class="sxs-lookup"><span data-stu-id="64002-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43b4d-132">示例</span><span class="sxs-lookup"><span data-stu-id="43b4d-132">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="64002-133">请求</span><span class="sxs-lookup"><span data-stu-id="64002-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="43b4d-133">请求</span><span class="sxs-lookup"><span data-stu-id="43b4d-133">Request</span></span>
 
-<span data-ttu-id="64002-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="64002-134">The following is an example of the request.</span></span>
+<span data-ttu-id="43b4d-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="43b4d-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="64002-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="64002-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="43b4d-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="43b4d-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-post-schedulinggroups"
@@ -77,26 +77,26 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="64002-136">C#</span><span class="sxs-lookup"><span data-stu-id="64002-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="43b4d-136">C#</span><span class="sxs-lookup"><span data-stu-id="43b4d-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-post-schedulinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="64002-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64002-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="43b4d-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43b4d-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-post-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="64002-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="64002-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="43b4d-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43b4d-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-post-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="64002-139">响应</span><span class="sxs-lookup"><span data-stu-id="64002-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="43b4d-139">响应</span><span class="sxs-lookup"><span data-stu-id="43b4d-139">Response</span></span>
 
-<span data-ttu-id="64002-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="64002-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="43b4d-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="43b4d-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="64002-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="64002-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="43b4d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="43b4d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

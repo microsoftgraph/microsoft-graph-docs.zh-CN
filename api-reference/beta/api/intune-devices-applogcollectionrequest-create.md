@@ -12,26 +12,26 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42470012"
 ---
-# <a name="create-applogcollectionrequest"></a><span data-ttu-id="5ef52-103">创建 appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="5ef52-103">Create appLogCollectionRequest</span></span>
+# <a name="create-applogcollectionrequest"></a><span data-ttu-id="44fab-103">创建 appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="44fab-103">Create appLogCollectionRequest</span></span>
 
-<span data-ttu-id="5ef52-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5ef52-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="44fab-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="44fab-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5ef52-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5ef52-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="44fab-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="44fab-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5ef52-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5ef52-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="44fab-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="44fab-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5ef52-107">创建新的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5ef52-107">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
+<span data-ttu-id="44fab-107">创建新的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="44fab-107">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5ef52-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="5ef52-108">Prerequisites</span></span>
-<span data-ttu-id="5ef52-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ef52-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="44fab-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="44fab-108">Prerequisites</span></span>
+<span data-ttu-id="44fab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="44fab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ef52-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ef52-111">Permission type</span></span>|<span data-ttu-id="5ef52-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5ef52-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="44fab-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="44fab-111">Permission type</span></span>|<span data-ttu-id="44fab-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="44fab-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ef52-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ef52-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5ef52-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ef52-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="5ef52-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ef52-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5ef52-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ef52-116">Not supported.</span></span>|
-|<span data-ttu-id="5ef52-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ef52-117">Application</span></span>|<span data-ttu-id="5ef52-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ef52-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="44fab-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="44fab-113">Delegated (work or school account)</span></span>|<span data-ttu-id="44fab-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44fab-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="44fab-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="44fab-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="44fab-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="44fab-116">Not supported.</span></span>|
+|<span data-ttu-id="44fab-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="44fab-117">Application</span></span>|<span data-ttu-id="44fab-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44fab-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5ef52-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ef52-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44fab-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="44fab-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "42470012"
 POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5ef52-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ef52-120">Request headers</span></span>
-|<span data-ttu-id="5ef52-121">标头</span><span class="sxs-lookup"><span data-stu-id="5ef52-121">Header</span></span>|<span data-ttu-id="5ef52-122">值</span><span class="sxs-lookup"><span data-stu-id="5ef52-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="44fab-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="44fab-120">Request headers</span></span>
+|<span data-ttu-id="44fab-121">标头</span><span class="sxs-lookup"><span data-stu-id="44fab-121">Header</span></span>|<span data-ttu-id="44fab-122">值</span><span class="sxs-lookup"><span data-stu-id="44fab-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ef52-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ef52-123">Authorization</span></span>|<span data-ttu-id="5ef52-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5ef52-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5ef52-125">接受</span><span class="sxs-lookup"><span data-stu-id="5ef52-125">Accept</span></span>|<span data-ttu-id="5ef52-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5ef52-126">application/json</span></span>|
+|<span data-ttu-id="44fab-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="44fab-123">Authorization</span></span>|<span data-ttu-id="44fab-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="44fab-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="44fab-125">接受</span><span class="sxs-lookup"><span data-stu-id="44fab-125">Accept</span></span>|<span data-ttu-id="44fab-126">application/json</span><span class="sxs-lookup"><span data-stu-id="44fab-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5ef52-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ef52-127">Request body</span></span>
-<span data-ttu-id="5ef52-128">在请求正文中，提供 appLogCollectionRequest 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5ef52-128">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="44fab-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="44fab-127">Request body</span></span>
+<span data-ttu-id="44fab-128">在请求正文中，提供 appLogCollectionRequest 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="44fab-128">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
 
-<span data-ttu-id="5ef52-129">下表显示创建 appLogCollectionRequest 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="5ef52-129">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
+<span data-ttu-id="44fab-129">下表显示创建 appLogCollectionRequest 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="44fab-129">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
 
-|<span data-ttu-id="5ef52-130">属性</span><span class="sxs-lookup"><span data-stu-id="5ef52-130">Property</span></span>|<span data-ttu-id="5ef52-131">类型</span><span class="sxs-lookup"><span data-stu-id="5ef52-131">Type</span></span>|<span data-ttu-id="5ef52-132">说明</span><span class="sxs-lookup"><span data-stu-id="5ef52-132">Description</span></span>|
+|<span data-ttu-id="44fab-130">属性</span><span class="sxs-lookup"><span data-stu-id="44fab-130">Property</span></span>|<span data-ttu-id="44fab-131">类型</span><span class="sxs-lookup"><span data-stu-id="44fab-131">Type</span></span>|<span data-ttu-id="44fab-132">说明</span><span class="sxs-lookup"><span data-stu-id="44fab-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5ef52-133">id</span><span class="sxs-lookup"><span data-stu-id="5ef52-133">id</span></span>|<span data-ttu-id="5ef52-134">String</span><span class="sxs-lookup"><span data-stu-id="5ef52-134">String</span></span>|<span data-ttu-id="5ef52-135">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="5ef52-135">The unique Identifier.</span></span> <span data-ttu-id="5ef52-136">这是 userId_DeviceId_AppId id。</span><span class="sxs-lookup"><span data-stu-id="5ef52-136">This is userId_DeviceId_AppId id.</span></span>|
-|<span data-ttu-id="5ef52-137">status</span><span class="sxs-lookup"><span data-stu-id="5ef52-137">status</span></span>|[<span data-ttu-id="5ef52-138">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="5ef52-138">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="5ef52-139">日志上载状态。</span><span class="sxs-lookup"><span data-stu-id="5ef52-139">Log upload status.</span></span> <span data-ttu-id="5ef52-140">可取值为：`pending`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="5ef52-140">Possible values are: `pending`, `completed`, `failed`.</span></span>|
-|<span data-ttu-id="5ef52-141">errorMessage</span><span class="sxs-lookup"><span data-stu-id="5ef52-141">errorMessage</span></span>|<span data-ttu-id="5ef52-142">String</span><span class="sxs-lookup"><span data-stu-id="5ef52-142">String</span></span>|<span data-ttu-id="5ef52-143">在上载过程中出现的错误消息</span><span class="sxs-lookup"><span data-stu-id="5ef52-143">Error message if any during the upload process</span></span>|
-|<span data-ttu-id="5ef52-144">customLogFolders</span><span class="sxs-lookup"><span data-stu-id="5ef52-144">customLogFolders</span></span>|<span data-ttu-id="5ef52-145">String 集合</span><span class="sxs-lookup"><span data-stu-id="5ef52-145">String collection</span></span>|<span data-ttu-id="5ef52-146">日志文件夹的列表。</span><span class="sxs-lookup"><span data-stu-id="5ef52-146">List of log folders.</span></span> |
-|<span data-ttu-id="5ef52-147">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="5ef52-147">completedDateTime</span></span>|<span data-ttu-id="5ef52-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5ef52-148">DateTimeOffset</span></span>|<span data-ttu-id="5ef52-149">上传日志请求到达终端状态的时间</span><span class="sxs-lookup"><span data-stu-id="5ef52-149">Time at which the upload log request reached a terminal state</span></span>|
+|<span data-ttu-id="44fab-133">id</span><span class="sxs-lookup"><span data-stu-id="44fab-133">id</span></span>|<span data-ttu-id="44fab-134">字符串</span><span class="sxs-lookup"><span data-stu-id="44fab-134">String</span></span>|<span data-ttu-id="44fab-135">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="44fab-135">The unique Identifier.</span></span> <span data-ttu-id="44fab-136">这是 userId_DeviceId_AppId id。</span><span class="sxs-lookup"><span data-stu-id="44fab-136">This is userId_DeviceId_AppId id.</span></span>|
+|<span data-ttu-id="44fab-137">状态</span><span class="sxs-lookup"><span data-stu-id="44fab-137">status</span></span>|[<span data-ttu-id="44fab-138">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="44fab-138">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="44fab-139">日志上载状态。</span><span class="sxs-lookup"><span data-stu-id="44fab-139">Log upload status.</span></span> <span data-ttu-id="44fab-140">可取值为：`pending`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="44fab-140">Possible values are: `pending`, `completed`, `failed`.</span></span>|
+|<span data-ttu-id="44fab-141">errorMessage</span><span class="sxs-lookup"><span data-stu-id="44fab-141">errorMessage</span></span>|<span data-ttu-id="44fab-142">字符串</span><span class="sxs-lookup"><span data-stu-id="44fab-142">String</span></span>|<span data-ttu-id="44fab-143">在上载过程中出现的错误消息</span><span class="sxs-lookup"><span data-stu-id="44fab-143">Error message if any during the upload process</span></span>|
+|<span data-ttu-id="44fab-144">customLogFolders</span><span class="sxs-lookup"><span data-stu-id="44fab-144">customLogFolders</span></span>|<span data-ttu-id="44fab-145">String collection</span><span class="sxs-lookup"><span data-stu-id="44fab-145">String collection</span></span>|<span data-ttu-id="44fab-146">日志文件夹的列表。</span><span class="sxs-lookup"><span data-stu-id="44fab-146">List of log folders.</span></span> |
+|<span data-ttu-id="44fab-147">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="44fab-147">completedDateTime</span></span>|<span data-ttu-id="44fab-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44fab-148">DateTimeOffset</span></span>|<span data-ttu-id="44fab-149">上传日志请求到达终端状态的时间</span><span class="sxs-lookup"><span data-stu-id="44fab-149">Time at which the upload log request reached a terminal state</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5ef52-150">响应</span><span class="sxs-lookup"><span data-stu-id="5ef52-150">Response</span></span>
-<span data-ttu-id="5ef52-151">如果成功，此方法在响应`201 Created`正文中返回响应代码和[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5ef52-151">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="44fab-150">响应</span><span class="sxs-lookup"><span data-stu-id="44fab-150">Response</span></span>
+<span data-ttu-id="44fab-151">如果成功，此方法在响应`201 Created`正文中返回响应代码和[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="44fab-151">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5ef52-152">示例</span><span class="sxs-lookup"><span data-stu-id="5ef52-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44fab-152">示例</span><span class="sxs-lookup"><span data-stu-id="44fab-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5ef52-153">请求</span><span class="sxs-lookup"><span data-stu-id="5ef52-153">Request</span></span>
-<span data-ttu-id="5ef52-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ef52-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="44fab-153">请求</span><span class="sxs-lookup"><span data-stu-id="44fab-153">Request</span></span>
+<span data-ttu-id="44fab-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="44fab-154">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 257
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5ef52-155">响应</span><span class="sxs-lookup"><span data-stu-id="5ef52-155">Response</span></span>
-<span data-ttu-id="5ef52-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5ef52-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="44fab-155">响应</span><span class="sxs-lookup"><span data-stu-id="44fab-155">Response</span></span>
+<span data-ttu-id="44fab-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="44fab-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
