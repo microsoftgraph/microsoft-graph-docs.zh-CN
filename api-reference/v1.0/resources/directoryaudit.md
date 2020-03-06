@@ -5,18 +5,20 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54badc0fb411a79ac854c2a34f708cd7d29133a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a1dacd980fbe35563b2b6b3c210a98da9265b440
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029482"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531656"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
+命名空间：microsoft.graph
+
 表示目录审核项及其集合。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -28,9 +30,9 @@ ms.locfileid: "36029482"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|指示活动名称或操作名称 (示例: "创建用户" 和 "将成员添加到组")。 有关完整列表, 请参阅[AZURE AD 活动列表](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
+|activityDisplayName|String|指示活动名称或操作名称（示例： "创建用户" 和 "将成员添加到组"）。 有关完整列表，请参阅[AZURE AD 活动列表](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
 |additionalDetails|[keyValue](keyvalue.md) 集合|指示活动的其他详细信息。|
-|category|字符串|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
+|category|String|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
 |correlationId|GUID|指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|
 |id|String| 指示活动的唯一 ID。 这是 GUID。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|指示有关启动活动的用户或应用的信息。|

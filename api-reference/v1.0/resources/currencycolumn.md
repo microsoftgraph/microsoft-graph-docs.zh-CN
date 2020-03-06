@@ -7,14 +7,16 @@ localization_priority: Normal
 description: columnDefinition 资源上的 currencyColumn 指示该列的值代表货币。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d01ae79c8c271f1076d14e44f5f4cb5b147f4b79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1270900c11a65bf974ac78ffe6af37bf93c51af6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029566"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531742"
 ---
 # <a name="currencycolumn-resource-type"></a>CurrencyColumn 资源类型
+
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **currencyColumn** 指示该列的值代表货币。
 

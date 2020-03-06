@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a62c0351b3247300e47c8c9a91aecbc32092e015
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: f49f5651c6e4f7bea1eb4650e9252c397cc2a930
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367320"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533325"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 信息保护 DataRecoveryCertificate
 
@@ -22,7 +24,7 @@ Windows 信息保护 DataRecoveryCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |SubjectName|String|数据恢复证书主题名称|
-|说明|String|数据恢复证书说明|
+|说明|字符串|数据恢复证书说明|
 |expirationDateTime|DateTimeOffset|数据恢复证书过期日期/时间|
 |证书|Binary|数据恢复证书|
 

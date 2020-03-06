@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f00418ee7a8192345569a4bb0d7d3da0df170650
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ae1edb762e1b46c1f1a5a2810b0fe24921d95360
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888151"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544213"
 ---
 ```csharp
 
@@ -13,10 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var directoryObject = new DirectoryObject
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.id","https://graph.microsoft.com/v1.0/users/alexd@contoso.com"}
-    }
+    Id = "alexd@contoso.com"
 };
 
 await graphClient.Groups["{id}"].AcceptedSenders.References

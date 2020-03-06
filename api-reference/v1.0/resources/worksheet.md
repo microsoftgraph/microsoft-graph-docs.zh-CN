@@ -5,14 +5,16 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ded792f69573b4434e4157d7c665471683273169
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9edb4e0ad13f7caf94fd4308f606fccc14861aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033318"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533362"
 ---
 # <a name="worksheet-resource-type"></a>工作表资源类型
+
+命名空间：microsoft.graph
 
 Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。
 

@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ded187dbde188457284aa22c5671da863c523e65
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 862316ba98cab7ccbbaa1c6f7cc909924e400d59
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533419"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
+
+命名空间：microsoft.graph
 
 内容发现的当前用户设置。
 若要了解如何获取或更新用户设置，请参阅[获取设置](../api/usersettings-get.md)和[更新设置](../api/usersettings-update.md)。

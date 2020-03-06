@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 230783192e936d3fb3c2799e6cb98d39492589a3
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 42b636b09e8cfeb2ed41578e06fc57b5aa976fd5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913406"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533822"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
+
+命名空间：microsoft.graph
 
 这包含成功和失败的特定结果信息。 
 

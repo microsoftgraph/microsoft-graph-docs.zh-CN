@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9f3ded6cb3fff7ac29968085e228549c32c5e2d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be2243e4564b6b241654950c37da9ca567c1630d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534242"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
+
+命名空间：microsoft.graph
 
 
 适用于用户收件箱邮件的规则。
@@ -30,7 +32,7 @@ ms.locfileid: "36036118"
 | displayName | String | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | 规则的例外情况。 |
 | hasError | Boolean | 指示规则是否处于错误状态。 只读。 |
-| id |String|规则的唯一标识符。 只读。|
+| id |字符串|规则的唯一标识符。 只读。|
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
 | Sequence | Int32 | 表示在其他规则中执行规则的顺序。 |
@@ -62,7 +64,7 @@ ms.locfileid: "36036118"
 
 ```
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) 集合 |获取为用户收件箱定义的所有 **messageRule** 对象。|

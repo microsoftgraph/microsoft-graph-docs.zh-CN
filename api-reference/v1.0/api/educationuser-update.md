@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 35746d5945bc9b73491d67035c89139fd8d673e2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 61c6293840c544e397f6761149c9131c94d9f930
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327605"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517402"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
+
+命名空间：microsoft.graph
 
 更新 **educationuser** 对象的属性。
 ## <a name="permissions"></a>权限
@@ -41,19 +43,19 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| String| 显示用户名称|
-|givenName| String | 名字 |
+|displayName| 字符串| 显示用户名称|
+|givenName| 字符串 | 名字 |
 |middleName| String | 用户的中间名|
 |surname| 字符串 | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
-|externalSource|string| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
-|externalSource|string| 创建此用户的位置。  可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+|externalSource|字符串| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+|externalSource|字符串| 创建此用户的位置。  可能的值包括 `sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| 用户的邮件地址。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
 |primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值包括 `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色是教师, 此块将包含教师特定的数据。|
+|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色是教师，此块将包含教师特定的数据。|
 
 
 ## <a name="response"></a>响应
@@ -62,7 +64,7 @@ PATCH /education/users/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -79,19 +81,19 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

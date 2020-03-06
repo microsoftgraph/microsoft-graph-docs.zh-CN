@@ -5,14 +5,16 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: 342eb433f7acc5c8e37d37e7ebcf7cb59f768aa1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e0a402cd01cf9dc8effd16496d7230cc8e98d5d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521472"
 ---
 # <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>使用 Microsoft Graph 的个人资料 API 检索你自己或其他用户的相关信息 
+
+命名空间：microsoft.graph
 
 Microsoft Graph 应用程序可以使用个人资料 API 检索已登录用户或具有有效 Azure AD 或 Microsoft 帐户的其他用户的个人资料。 可以在应用程序中使用此信息，以便于将其他用户置于上下文中考虑，在应用程序内为此用户提供更加丰富的体验，或用作用于存储用户的扩展信息的机制（也可在 Microsoft 365 中使用它）。 
 

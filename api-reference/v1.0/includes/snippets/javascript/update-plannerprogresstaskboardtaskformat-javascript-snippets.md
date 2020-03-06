@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 69e039f9bb212373db571577c6f63cd9c6a8b129
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e0b060af7020095e156f1e5a9ac1a9f145f76d64
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734766"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636797"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const plannerProgressTaskBoardTaskFormat = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
-    .update({plannerProgressTaskBoardTaskFormat : plannerProgressTaskBoardTaskFormat});
+    .update(plannerProgressTaskBoardTaskFormat);
 
 ```

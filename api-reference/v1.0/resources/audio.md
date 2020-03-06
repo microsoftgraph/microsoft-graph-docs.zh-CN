@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 description: Audio 资源将与音频相关的属性分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: 1351ae9dcd363d156997fd5cc75e7e3387a0fb38
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 5487c7fb0505a1ab9a6b0e53278e235083cb83e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913483"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532063"
 ---
 # <a name="audio-facet"></a>Audio Facet
+
+命名空间：microsoft.graph
 
 **Audio** 资源将与音频相关的属性分组到一个单一结构。
 
@@ -47,16 +49,16 @@ ms.locfileid: "40913483"
 
 | 属性名称         | 类型    | 说明                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | string  | 此音频文件的专辑标题。                          |
-| **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
-| **artist**            | string  | 此音频文件的表演艺术家。                            |
+| **album**             | 字符串  | 此音频文件的专辑标题。                          |
+| **albumArtist**       | 字符串  | 此音频文件的专辑上的艺术家。                    |
+| **artist**            | 字符串  | 此音频文件的表演艺术家。                            |
 | **bitrate**           | Int64   | 比特率（以 kbps 为单位）。                                           |
-| **composers**         | string  | 此音频文件的作曲者姓名。                          |
-| **copyright**         | string  | 此音频文件的版权信息。                            |
+| **composers**         | 字符串  | 此音频文件的作曲者姓名。                          |
+| **copyright**         | 字符串  | 此音频文件的版权信息。                            |
 | **disc**              | Int16   | 此音频文件源自的光盘编号。                    |
 | **discCount**         | Int16   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
-| **genre**             | string  | 此音频文件的流派。                                        |
+| **genre**             | 字符串  | 此音频文件的流派。                                        |
 | **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
 | **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
 | **title**             | string  | 此音频文件的标题。                                         |

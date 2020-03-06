@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63f96acfa229360438434b08328d1799dc3819b2
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b7f702f5b9f4b7ab9de29e725c3ab1414753d180
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354103"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42514941"
 ---
 # <a name="create-devicecompliancesettingstate"></a>创建 deviceComplianceSettingState
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 对象。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37354103"
 POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -50,15 +52,15 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键|
-|setting|String|设置类名和属性名。|
-|settingName|String|报告的设置名称|
-|deviceId|String|报告的设备 ID|
-|deviceName|String|报告的设备名称|
+|setting|字符串|设置类名和属性名。|
+|settingName|字符串|报告的设置名称|
+|deviceId|字符串|报告的设备 ID|
+|deviceName|字符串|报告的设备名称|
 |userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
-|userName|String|报告的用户名|
+|userName|字符串|报告的用户名|
 |userPrincipalName|字符串|报告的用户主体名称|
-|deviceModel|String|报告的设备模型|
+|deviceModel|字符串|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 

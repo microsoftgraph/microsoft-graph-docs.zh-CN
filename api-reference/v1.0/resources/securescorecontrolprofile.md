@@ -1,23 +1,25 @@
 ---
 title: secureScoreControlProfile 资源类型
-description: 表示租户的每个控件数据的安全分数。 默认情况下, 它将返回租户的所有控件, 并可显式提取各个控件。
+description: 表示租户的每个控件数据的安全分数。 默认情况下，它将返回租户的所有控件，并可显式提取各个控件。
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 40bee951d3030772973911510ebba7cc90f412ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a643411ab75aa352e3c672f94f6e8259e931b6c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034487"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533774"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile 资源类型
 
-表示租户的每个控件数据的安全分数。 默认情况下, 它将返回租户的所有控件, 并可显式提取各个控件。
+命名空间：microsoft.graph
+
+表示租户的每个控件数据的安全分数。 默认情况下，它将返回租户的所有控件，并可显式提取各个控件。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
@@ -32,25 +34,25 @@ ms.locfileid: "36034487"
 |:--|:--|:--|
 |id|String|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
 |azureTenantId|字符串|租户 ID 的 GUID 字符串。|
-|actionType|String|控制操作类型 (Config、审阅、行为)。|
-|actionUrl|String|可将控件 actioned 到的位置的 URL。 |
-|controlCategory|String|控制措施类别 (标识、数据、设备、应用程序、基础结构)。|
+|actionType|String|控制操作类型（Config、审阅、行为）。|
+|actionUrl|字符串|可将控件 actioned 到的位置的 URL。 |
+|controlCategory|字符串|控制措施类别（标识、数据、设备、应用程序、基础结构）。|
 |title|String|控件的标题。|
 |被|Boolean|指示是否已对控件进行折旧的标志。|
-|implementationCost|String|Implemmentating 控件的资源成本 (low、适中、high)。|
+|implementationCost|字符串|Implemmentating 控件的资源成本（low、适中、high）。|
 |lastModifiedDateTime|DateTimeOffset|上次修改控件配置文件实体的时间。 时间戳类型表示日期和时间| 
 |maxScore|双精度|控件的最大实现得分。|
 |排名|Int32|Microsoft 的控制堆栈排名。|
-|纠正|String|对控件将有助于修正的内容的说明。|
-|remediationImpact|String|对修正用户影响的说明。|
-|service|String|拥有控件的服务 (Exchange、Sharepoint、Azure AD)。|
-|病毒|String collection|控制缓解的威胁列表 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、
-elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、欺骗)。|
-|单层|String|控制层 (Core, 纵深防御, 高级。)   |
-|userImpact|String|实施控制的用户影响 (低、中等、高)。   |
+|纠正|字符串|对控件将有助于修正的内容的说明。|
+|remediationImpact|字符串|对修正用户影响的说明。|
+|service|字符串|拥有控件的服务（Exchange、Sharepoint、Azure AD）。|
+|病毒|String collection|控制缓解的威胁列表（accountBreach、dataDeletion、dataExfiltration、dataSpillage、
+elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、欺骗）。|
+|单层|字符串|控制层（Core，纵深防御，高级。）   |
+|userImpact|字符串|实施控制的用户影响（低、中等、高）。   |
 |complianceInformation|[complianceInformation](complianceinformation.md)集合|与安全得分控制相关联的合规性信息的集合|
-|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md)集合|用于指示租户已标记控件的位置的标志 (忽略、thirdParty、已审阅) (支持[更新](../api/securescorecontrolprofile-update.md))。|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = SecureScore)。 必需。|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md)集合|用于指示租户已标记控件的位置的标志（忽略、thirdParty、已审阅）（支持[更新](../api/securescorecontrolprofile-update.md)）。|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型（例如，供应商 = Microsoft; provider = SecureScore）。 必需。|
 
 ## <a name="relationships"></a>关系
 

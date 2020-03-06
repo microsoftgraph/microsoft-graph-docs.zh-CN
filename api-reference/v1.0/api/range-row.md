@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 931161995bb84c5b98ed6c6f500df6cb47563999
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5086986780ad8ce7b69756458a3ac093dea22271
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025237"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510590"
 ---
 # <a name="range-row"></a>Range:Row
+
+命名空间：microsoft.graph
 
 获取范围中包含的行。
 ## <a name="permissions"></a>权限

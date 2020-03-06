@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5fee6ad877958b4861360e4e90fbdd688e0011
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4aa03f133206ef5e4f4fd9106b1389b0c6ce1299
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034802"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533893"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
+
+命名空间：microsoft.graph
 
 描述了定期[事件](event.md)在哪个日期范围内重复发生。 
 
