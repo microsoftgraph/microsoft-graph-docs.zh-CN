@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 17820bd67bdc9f93369d60b4018a51cdf74ededc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 105ade332a21566ff21c49fd5fe2bb604e7264c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966303"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522086"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

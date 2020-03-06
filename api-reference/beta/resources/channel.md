@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b9255dfc6b20f2fe2028c173a7704941249a15fb
-ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
+ms.openlocfilehash: 491352231980e841ebe215c9c0680dc1c672b36c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41559031"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507745"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

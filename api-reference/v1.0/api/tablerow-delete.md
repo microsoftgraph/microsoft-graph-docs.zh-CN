@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f8b9139ac4eed6c2acbd68063ddb2b10021196fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a26de5039cface9206a94cb4c46d15874ea1e35a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024355"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509532"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
+
+命名空间：microsoft.graph
 
 从表中删除行。
 ## <a name="permissions"></a>权限

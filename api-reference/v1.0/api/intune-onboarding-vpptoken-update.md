@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca7bd9b6a6ec7bf95c403834a9cb4e392ce3ad7c
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 6cd96412e948ff996e0809ad8df53f53a9f71b50
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37362048"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512361"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性。
 
@@ -36,7 +38,7 @@ ms.locfileid: "37362048"
 PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -49,10 +51,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
-|organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
+|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|organizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
-|appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
+|appleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次使用 Apple Volume purchase program 服务（apple Volume purchase program 令牌）完成应用程序同步的时间。|
 |token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|

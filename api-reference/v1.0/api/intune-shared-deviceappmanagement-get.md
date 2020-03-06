@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b563dd096417a57277362b3cd60e94d88b152319
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a3a09d207ff4976bfc78c033e0d6d711c6416656
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512130"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性和关系。
 
@@ -58,7 +60,7 @@ GET /deviceAppManagement
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
-## <a name="example-response"></a>响应示例
+## <a name="example-response"></a>示例响应
 为简洁起见，可能会截断此处显示的响应对象。 所有属性都将从实际调用返回。
 
 ``` http

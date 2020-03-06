@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e34076cb7bbeec338e71aab6dc7ca9dc4e6cca37
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89375d4856c5d2d93931c5e2d9c2e3b492c85273
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030392"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532967"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
+
+命名空间：microsoft.graph
 
 用以支持 OData v4 开放类型 [openTypeExtension](opentypeextension.md) 的抽象类型。
 
@@ -40,7 +42,7 @@ ms.locfileid: "36030392"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。|
+|id|字符串| 只读。|
 
 ## <a name="relationships"></a>关系
 无

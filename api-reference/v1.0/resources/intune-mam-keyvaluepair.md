@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2849e6adfc0b43b9091764cd2706d5c572826774
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: c0ced5c90f0e36906a534523836e7be3b99eb797
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356434"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533191"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于存储自定义设置的键值对
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|此键值对的名称|
+|name|字符串|此键值对的名称|
 |value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f5ce926bc5870ef8ed936fd3428e1b51a80d5ef6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d1b9777862a3f985ae3801a8b6320950f777ba6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370381"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516722"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
+
+命名空间：microsoft.graph
 
 按指定内容更改替代的 **ClassifyAs** 字段。 
 
@@ -49,7 +51,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为: `focused`、 `other`。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused`、 `other`。|
 
 ## <a name="response"></a>响应
 
@@ -59,7 +61,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 以下示例将 SMTP 地址 randiw@adatum.onmicrosoft.com 的替代从 `other` 更改为 `focused`。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_inferenceclassificationoverride"
@@ -72,19 +74,19 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

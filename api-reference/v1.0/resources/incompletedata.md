@@ -6,14 +6,16 @@ description: IncompleteData facet 指示资源是使用不完整的数据生成�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0ac77c5dc4daed9330c4fb71185e9505feee5048
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fdf78b0fdb0a34e87296619c477d9f868d0756e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029237"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531324"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
+
+命名空间：microsoft.graph
 
 **IncompleteData** facet 指示资源是使用不完整的数据生成的。
 中的属性可能提供有关数据不完整的原因的信息。

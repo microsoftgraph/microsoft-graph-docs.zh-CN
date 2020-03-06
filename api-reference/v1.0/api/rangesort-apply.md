@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 06d8b8840d642cb24c002e8d02f7b0f37bd1d47c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b95bc4c8aeda5463304c2fd8d5fd26d565eb7f16
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376072"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510464"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
+
+命名空间：microsoft.graph
 
 执行排序操作。
 ## <a name="permissions"></a>权限
@@ -46,8 +48,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 |域|WorkbookSortField 集合|要用作排序依据的条件列表。|
 |matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
-|orientation|字符串|可选。 该操作是对行还是列排序。  可能的值为: `Rows`、 `Columns`。|
-|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为: `PinYin`、 `StrokeCount`。|
+|orientation|字符串|可选。 该操作是对行还是列排序。  可能的值为： `Rows`、 `Columns`。|
+|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为： `PinYin`、 `StrokeCount`。|
 
 ## <a name="response"></a>响应
 
@@ -58,7 +60,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -88,19 +90,19 @@ Content-length: 358
   "method": "method-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/rangesort-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangesort-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rangesort-apply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/rangesort-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

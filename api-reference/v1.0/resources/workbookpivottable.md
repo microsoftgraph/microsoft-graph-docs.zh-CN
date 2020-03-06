@@ -5,18 +5,20 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c5b841495b19a81967ba056f702a88c4cbe74efc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3ec3c9237e246b2af10a867155bc7b6d360a67f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533376"
 ---
 # <a name="pivottable-resource-type"></a>pivotTable 资源类型
 
+命名空间：microsoft.graph
+
 表示 Excel 数据透视表。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -28,7 +30,7 @@ ms.locfileid: "36033360"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 数据透视表的 ID。 只读。|
-|name|String|数据透视表对象的名称。    |
+|name|字符串|数据透视表对象的名称。    |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

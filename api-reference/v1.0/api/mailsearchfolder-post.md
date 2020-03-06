@@ -5,18 +5,20 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3a4e24e41e4e8f8001d2350f0c0bf8959c5afabc
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 4e1717e546d81e77e5ce960045a0985d3c76bc31
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511584"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
+命名空间：microsoft.graph
+
 在指定用户的邮箱中创建新的[mailSearchFolder](../resources/mailsearchfolder.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 将查询 URL 中的父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头 | 值 |
 |:-------|:------|
@@ -53,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | @odata.type | 字符串 | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
 | includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -66,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 以下是请求的示例-它将创建包含主题中的字符串 "每周摘要" 的邮件的搜索文件夹。 搜索文件夹在应用指定的筛选器查询的同一文件夹下。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
@@ -86,19 +88,19 @@ Content-length: 159
   "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
