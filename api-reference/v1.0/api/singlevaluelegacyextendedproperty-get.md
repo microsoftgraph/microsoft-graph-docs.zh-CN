@@ -5,89 +5,91 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a8a702397358eeb07cdcd0b7d55175b47ed0c065
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 33a0d0462c0cf75c1e855e969b50521c337b3308
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727745"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509806"
 ---
-# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="4430c-103">获取 singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="4430c-103">Get singleValueLegacyExtendedProperty</span></span>
+# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="57785-103">获取 singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="57785-103">Get singleValueLegacyExtendedProperty</span></span>
 
-<span data-ttu-id="4430c-104">可以获取使用特定扩展属性扩展的单个资源实例，或包含与筛选器匹配的扩展属性的资源实例集合。</span><span class="sxs-lookup"><span data-stu-id="4430c-104">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
+<span data-ttu-id="57785-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57785-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4430c-105">使用查询参数 `$expand`，可以获取使用特定的扩展属性扩展的指定资源实例。</span><span class="sxs-lookup"><span data-stu-id="4430c-105">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="4430c-106">在 **id** 属性上使用 `$filter` 和 `eq` 运算符来指定扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-106">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="4430c-107">这是当前获取 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象（表示扩展属性）的唯一方式。</span><span class="sxs-lookup"><span data-stu-id="4430c-107">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
+<span data-ttu-id="57785-105">可以获取使用特定扩展属性扩展的单个资源实例，或包含与筛选器匹配的扩展属性的资源实例集合。</span><span class="sxs-lookup"><span data-stu-id="57785-105">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
 
-<span data-ttu-id="4430c-108">要获取具有某些扩展属性的资源实例，请使用 `$filter` 查询参数并在 **id** 属性上应用 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="4430c-108">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="4430c-109">另外，对于数字扩展属性，请在 **value** 属性上应用以下某个运算符：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。</span><span class="sxs-lookup"><span data-stu-id="4430c-109">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="4430c-110">对于字符串类型的扩展属性，请在 **value** 上应用 `contains`、`startswith`、`eq` 或 `ne` 运算符。</span><span class="sxs-lookup"><span data-stu-id="4430c-110">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
+<span data-ttu-id="57785-106">使用查询参数 `$expand`，可以获取使用特定的扩展属性扩展的指定资源实例。</span><span class="sxs-lookup"><span data-stu-id="57785-106">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="57785-107">在 **id** 属性上使用 `$filter` 和 `eq` 运算符来指定扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-107">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="57785-108">这是当前获取 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象（表示扩展属性）的唯一方式。</span><span class="sxs-lookup"><span data-stu-id="57785-108">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
 
-<span data-ttu-id="4430c-111">该筛选器应用于资源在已登录用户的邮箱中的所有实例。</span><span class="sxs-lookup"><span data-stu-id="4430c-111">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
+<span data-ttu-id="57785-109">要获取具有某些扩展属性的资源实例，请使用 `$filter` 查询参数并在 **id** 属性上应用 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="57785-109">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="57785-110">另外，对于数字扩展属性，请在 **value** 属性上应用以下某个运算符：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。</span><span class="sxs-lookup"><span data-stu-id="57785-110">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="57785-111">对于字符串类型的扩展属性，请在 **value** 上应用 `contains`、`startswith`、`eq` 或 `ne` 运算符。</span><span class="sxs-lookup"><span data-stu-id="57785-111">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
 
-<span data-ttu-id="4430c-112">在扩展属性的 **id** 中筛选字符串名称 (`Name`) 是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="4430c-112">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="4430c-113">筛选扩展属性的 **value** 属性是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="4430c-113">Filtering the **value** property of an extended property is case-insensitive.</span></span>
+<span data-ttu-id="57785-112">该筛选器应用于资源在已登录用户的邮箱中的所有实例。</span><span class="sxs-lookup"><span data-stu-id="57785-112">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
 
-<span data-ttu-id="4430c-114">支持以下用户资源：</span><span class="sxs-lookup"><span data-stu-id="4430c-114">The following user resources are supported:</span></span>
+<span data-ttu-id="57785-113">在扩展属性的 **id** 中筛选字符串名称 (`Name`) 是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="57785-113">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="57785-114">筛选扩展属性的 **value** 属性是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="57785-114">Filtering the **value** property of an extended property is case-insensitive.</span></span>
 
-- [<span data-ttu-id="4430c-115">日历</span><span class="sxs-lookup"><span data-stu-id="4430c-115">calendar</span></span>](../resources/calendar.md)
-- [<span data-ttu-id="4430c-116">联系人</span><span class="sxs-lookup"><span data-stu-id="4430c-116">contact</span></span>](../resources/contact.md)
-- [<span data-ttu-id="4430c-117">contactFolder</span><span class="sxs-lookup"><span data-stu-id="4430c-117">contactFolder</span></span>](../resources/contactfolder.md) 
-- [<span data-ttu-id="4430c-118">事件</span><span class="sxs-lookup"><span data-stu-id="4430c-118">event</span></span>](../resources/event.md)
-- [<span data-ttu-id="4430c-119">mailFolder</span><span class="sxs-lookup"><span data-stu-id="4430c-119">mailFolder</span></span>](../resources/mailfolder.md)
-- [<span data-ttu-id="4430c-120">邮件</span><span class="sxs-lookup"><span data-stu-id="4430c-120">message</span></span>](../resources/message.md) 
+<span data-ttu-id="57785-115">支持以下用户资源：</span><span class="sxs-lookup"><span data-stu-id="57785-115">The following user resources are supported:</span></span>
 
-<span data-ttu-id="4430c-121">以及以下组资源：</span><span class="sxs-lookup"><span data-stu-id="4430c-121">As well as the following group resources:</span></span>
+- [<span data-ttu-id="57785-116">日历</span><span class="sxs-lookup"><span data-stu-id="57785-116">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="57785-117">联系人</span><span class="sxs-lookup"><span data-stu-id="57785-117">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="57785-118">contactFolder</span><span class="sxs-lookup"><span data-stu-id="57785-118">contactFolder</span></span>](../resources/contactfolder.md) 
+- [<span data-ttu-id="57785-119">事件</span><span class="sxs-lookup"><span data-stu-id="57785-119">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="57785-120">mailFolder</span><span class="sxs-lookup"><span data-stu-id="57785-120">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="57785-121">邮件</span><span class="sxs-lookup"><span data-stu-id="57785-121">message</span></span>](../resources/message.md) 
 
-- <span data-ttu-id="4430c-122">组 [日历](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-122">group [calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="4430c-123">组 [事件](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-123">group [event](../resources/event.md)</span></span>
-- <span data-ttu-id="4430c-124">组[帖子](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-124">group [post](../resources/post.md)</span></span> 
+<span data-ttu-id="57785-122">以及以下组资源：</span><span class="sxs-lookup"><span data-stu-id="57785-122">As well as the following group resources:</span></span>
 
-<span data-ttu-id="4430c-125">有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="4430c-125">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+- <span data-ttu-id="57785-123">组 [日历](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="57785-123">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="57785-124">组 [事件](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="57785-124">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="57785-125">组[帖子](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="57785-125">group [post](../resources/post.md)</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="4430c-126">权限</span><span class="sxs-lookup"><span data-stu-id="4430c-126">Permissions</span></span>
-<span data-ttu-id="4430c-127">根据您要获取的扩展属性的资源以及所请求的权限类型 (委派或应用程序), 必须至少调用下表中指定的权限, 才能调用此 API。</span><span class="sxs-lookup"><span data-stu-id="4430c-127">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="4430c-128">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4430c-128">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="57785-126">有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="57785-126">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
 
-| <span data-ttu-id="4430c-129">支持的资源</span><span class="sxs-lookup"><span data-stu-id="4430c-129">Supported resource</span></span> | <span data-ttu-id="4430c-130">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4430c-130">Delegated (work or school account)</span></span> | <span data-ttu-id="4430c-131">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4430c-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4430c-132">应用程序</span><span class="sxs-lookup"><span data-stu-id="4430c-132">Application</span></span> |
+## <a name="permissions"></a><span data-ttu-id="57785-127">权限</span><span class="sxs-lookup"><span data-stu-id="57785-127">Permissions</span></span>
+<span data-ttu-id="57785-128">根据您要获取的扩展属性的资源以及所请求的权限类型（委派或应用程序），必须至少调用下表中指定的权限，才能调用此 API。</span><span class="sxs-lookup"><span data-stu-id="57785-128">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="57785-129">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="57785-129">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="57785-130">支持的资源</span><span class="sxs-lookup"><span data-stu-id="57785-130">Supported resource</span></span> | <span data-ttu-id="57785-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="57785-131">Delegated (work or school account)</span></span> | <span data-ttu-id="57785-132">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="57785-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57785-133">应用程序</span><span class="sxs-lookup"><span data-stu-id="57785-133">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="4430c-133">calendar</span><span class="sxs-lookup"><span data-stu-id="4430c-133">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="4430c-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-134">Calendars.Read</span></span> | <span data-ttu-id="4430c-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-135">Calendars.Read</span></span> | <span data-ttu-id="4430c-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-136">Calendars.Read</span></span> |
-| [<span data-ttu-id="4430c-137">联系人</span><span class="sxs-lookup"><span data-stu-id="4430c-137">contact</span></span>](../resources/contact.md) | <span data-ttu-id="4430c-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-138">Contacts.Read</span></span> | <span data-ttu-id="4430c-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-139">Contacts.Read</span></span> | <span data-ttu-id="4430c-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-140">Contacts.Read</span></span> |
-| [<span data-ttu-id="4430c-141">contactFolder</span><span class="sxs-lookup"><span data-stu-id="4430c-141">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="4430c-142">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-142">Contacts.Read</span></span> | <span data-ttu-id="4430c-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-143">Contacts.Read</span></span> | <span data-ttu-id="4430c-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-144">Contacts.Read</span></span> |
-| [<span data-ttu-id="4430c-145">事件</span><span class="sxs-lookup"><span data-stu-id="4430c-145">event</span></span>](../resources/event.md) | <span data-ttu-id="4430c-146">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-146">Calendars.Read</span></span> | <span data-ttu-id="4430c-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-147">Calendars.Read</span></span> |  <span data-ttu-id="4430c-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-148">Calendars.Read</span></span>|
-| <span data-ttu-id="4430c-149">组 [日历](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-149">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="4430c-150">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="4430c-150">Group.Read.All</span></span> | <span data-ttu-id="4430c-151">不支持</span><span class="sxs-lookup"><span data-stu-id="4430c-151">Not supported</span></span> | <span data-ttu-id="4430c-152">不支持</span><span class="sxs-lookup"><span data-stu-id="4430c-152">Not supported</span></span> |
-| <span data-ttu-id="4430c-153">组 [事件](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-153">group [event](../resources/event.md)</span></span> | <span data-ttu-id="4430c-154">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="4430c-154">Group.Read.All</span></span> | <span data-ttu-id="4430c-155">不支持</span><span class="sxs-lookup"><span data-stu-id="4430c-155">Not supported</span></span> | <span data-ttu-id="4430c-156">不支持</span><span class="sxs-lookup"><span data-stu-id="4430c-156">Not supported</span></span> |
-| <span data-ttu-id="4430c-157">组[帖子](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="4430c-157">group [post](../resources/post.md)</span></span> | <span data-ttu-id="4430c-158">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="4430c-158">Group.Read.All</span></span> | <span data-ttu-id="4430c-159">不支持</span><span class="sxs-lookup"><span data-stu-id="4430c-159">Not supported</span></span> | <span data-ttu-id="4430c-160">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="4430c-160">Group.Read.All</span></span> |
-| [<span data-ttu-id="4430c-161">mailFolder</span><span class="sxs-lookup"><span data-stu-id="4430c-161">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="4430c-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-162">Mail.Read</span></span> | <span data-ttu-id="4430c-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-163">Mail.Read</span></span> | <span data-ttu-id="4430c-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-164">Mail.Read</span></span> |
-| [<span data-ttu-id="4430c-165">邮件</span><span class="sxs-lookup"><span data-stu-id="4430c-165">message</span></span>](../resources/message.md) | <span data-ttu-id="4430c-166">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-166">Mail.Read</span></span> | <span data-ttu-id="4430c-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-167">Mail.Read</span></span> | <span data-ttu-id="4430c-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4430c-168">Mail.Read</span></span> |
+| [<span data-ttu-id="57785-134">日历</span><span class="sxs-lookup"><span data-stu-id="57785-134">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="57785-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-135">Calendars.Read</span></span> | <span data-ttu-id="57785-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-136">Calendars.Read</span></span> | <span data-ttu-id="57785-137">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-137">Calendars.Read</span></span> |
+| [<span data-ttu-id="57785-138">联系人</span><span class="sxs-lookup"><span data-stu-id="57785-138">contact</span></span>](../resources/contact.md) | <span data-ttu-id="57785-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-139">Contacts.Read</span></span> | <span data-ttu-id="57785-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-140">Contacts.Read</span></span> | <span data-ttu-id="57785-141">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-141">Contacts.Read</span></span> |
+| [<span data-ttu-id="57785-142">contactFolder</span><span class="sxs-lookup"><span data-stu-id="57785-142">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="57785-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-143">Contacts.Read</span></span> | <span data-ttu-id="57785-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-144">Contacts.Read</span></span> | <span data-ttu-id="57785-145">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="57785-145">Contacts.Read</span></span> |
+| [<span data-ttu-id="57785-146">事件</span><span class="sxs-lookup"><span data-stu-id="57785-146">event</span></span>](../resources/event.md) | <span data-ttu-id="57785-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-147">Calendars.Read</span></span> | <span data-ttu-id="57785-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-148">Calendars.Read</span></span> |  <span data-ttu-id="57785-149">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="57785-149">Calendars.Read</span></span>|
+| <span data-ttu-id="57785-150">组 [日历](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="57785-150">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="57785-151">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="57785-151">Group.Read.All</span></span> | <span data-ttu-id="57785-152">不支持</span><span class="sxs-lookup"><span data-stu-id="57785-152">Not supported</span></span> | <span data-ttu-id="57785-153">不支持</span><span class="sxs-lookup"><span data-stu-id="57785-153">Not supported</span></span> |
+| <span data-ttu-id="57785-154">组 [事件](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="57785-154">group [event](../resources/event.md)</span></span> | <span data-ttu-id="57785-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="57785-155">Group.Read.All</span></span> | <span data-ttu-id="57785-156">不支持</span><span class="sxs-lookup"><span data-stu-id="57785-156">Not supported</span></span> | <span data-ttu-id="57785-157">不支持</span><span class="sxs-lookup"><span data-stu-id="57785-157">Not supported</span></span> |
+| <span data-ttu-id="57785-158">组[帖子](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="57785-158">group [post](../resources/post.md)</span></span> | <span data-ttu-id="57785-159">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="57785-159">Group.Read.All</span></span> | <span data-ttu-id="57785-160">不支持</span><span class="sxs-lookup"><span data-stu-id="57785-160">Not supported</span></span> | <span data-ttu-id="57785-161">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="57785-161">Group.Read.All</span></span> |
+| [<span data-ttu-id="57785-162">mailFolder</span><span class="sxs-lookup"><span data-stu-id="57785-162">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="57785-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-163">Mail.Read</span></span> | <span data-ttu-id="57785-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-164">Mail.Read</span></span> | <span data-ttu-id="57785-165">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-165">Mail.Read</span></span> |
+| [<span data-ttu-id="57785-166">邮件</span><span class="sxs-lookup"><span data-stu-id="57785-166">message</span></span>](../resources/message.md) | <span data-ttu-id="57785-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-167">Mail.Read</span></span> | <span data-ttu-id="57785-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-168">Mail.Read</span></span> | <span data-ttu-id="57785-169">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="57785-169">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4430c-169">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4430c-169">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="57785-170">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="57785-170">HTTP request</span></span>
 
-#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="4430c-170">获取通过与筛选器匹配的扩展属性扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="4430c-170">GET a resource instance expanded with an extended property that matches a filter</span></span>
-<span data-ttu-id="4430c-p105">获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。</span><span class="sxs-lookup"><span data-stu-id="4430c-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="57785-171">获取通过与筛选器匹配的扩展属性扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="57785-171">GET a resource instance expanded with an extended property that matches a filter</span></span>
+<span data-ttu-id="57785-p105">获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。</span><span class="sxs-lookup"><span data-stu-id="57785-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
 
-<span data-ttu-id="4430c-173">获取**邮件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-173">Get a **message** instance:</span></span>
+<span data-ttu-id="57785-174">获取**邮件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-174">Get a **message** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="4430c-174">获取 **mailFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-174">Get a **mailFolder** instance:</span></span>
+<span data-ttu-id="57785-175">获取 **mailFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-175">Get a **mailFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="4430c-175">获取**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-175">Get an **event** instance:</span></span>
+<span data-ttu-id="57785-176">获取**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-176">Get an **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="4430c-176">获取**日历**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-176">Get a **calendar** instance:</span></span>
+<span data-ttu-id="57785-177">获取**日历**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-177">Get a **calendar** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="4430c-177">获取**联系人**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-177">Get a **contact** instance:</span></span>
+<span data-ttu-id="57785-178">获取**联系人**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-178">Get a **contact** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -95,58 +97,58 @@ GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedPrope
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="4430c-178">获取 **contactFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-178">Get a **contactFolder** instance:</span></span>
+<span data-ttu-id="57785-179">获取 **contactFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-179">Get a **contactFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="4430c-179">获取组**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-179">Get a group **event** instance:</span></span>
+<span data-ttu-id="57785-180">获取组**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-180">Get a group **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="4430c-180">获取组 **post** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-180">Get a group **post** instance:</span></span>
+<span data-ttu-id="57785-181">获取组 **post** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-181">Get a group **post** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="4430c-181">获取包括与筛选器匹配的数值扩展属性的资源实例</span><span class="sxs-lookup"><span data-stu-id="4430c-181">GET resource instances that include numeric extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="57785-182">获取包括与筛选器匹配的数值扩展属性的资源实例</span><span class="sxs-lookup"><span data-stu-id="57785-182">GET resource instances that include numeric extended properties matching a filter</span></span>
 
-<span data-ttu-id="4430c-182">获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-182">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="4430c-183">筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。</span><span class="sxs-lookup"><span data-stu-id="4430c-183">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="4430c-184">请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。</span><span class="sxs-lookup"><span data-stu-id="4430c-184">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="57785-183">获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-183">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="57785-184">筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。</span><span class="sxs-lookup"><span data-stu-id="57785-184">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="57785-185">请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。</span><span class="sxs-lookup"><span data-stu-id="57785-185">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
-<span data-ttu-id="4430c-185">以下语法行显示对 id 使用 `eq` 运算符的筛选器，对属性值使用另一个 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="4430c-185">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="4430c-186">可以使用适用于数值的其他运算符中的任何一个（`ne`、`ge`、`gt`、`le` 或 `lt`）替换 **value** 上的 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="4430c-186">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
+<span data-ttu-id="57785-186">以下语法行显示对 id 使用 `eq` 运算符的筛选器，对属性值使用另一个 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="57785-186">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="57785-187">可以使用适用于数值的其他运算符中的任何一个（`ne`、`ge`、`gt`、`le` 或 `lt`）替换 **value** 上的 `eq` 运算符。</span><span class="sxs-lookup"><span data-stu-id="57785-187">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
 
-<span data-ttu-id="4430c-187">获取**邮件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-187">Get **message** instances:</span></span>
+<span data-ttu-id="57785-188">获取**邮件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-188">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="4430c-188">获取 **mailFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-188">Get **mailFolder** instances:</span></span>
+<span data-ttu-id="57785-189">获取 **mailFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-189">Get **mailFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="4430c-189">获取**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-189">Get **event** instances:</span></span>
+<span data-ttu-id="57785-190">获取**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-190">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="4430c-190">获取**日历**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-190">Get **calendar** instances:</span></span>
+<span data-ttu-id="57785-191">获取**日历**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-191">Get **calendar** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="4430c-191">获取**联系人**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-191">Get **contact** instances:</span></span>
+<span data-ttu-id="57785-192">获取**联系人**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-192">Get **contact** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -154,31 +156,31 @@ GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="4430c-192">获取 **contactFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-192">Get **contactFolder** instances:</span></span>
+<span data-ttu-id="57785-193">获取 **contactFolder** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-193">Get **contactFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="4430c-193">获取组**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-193">Get group **event** instances:</span></span>
+<span data-ttu-id="57785-194">获取组**事件**实例：</span><span class="sxs-lookup"><span data-stu-id="57785-194">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="4430c-194">获取组 **post** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-194">Get group **post** instances:</span></span>
+<span data-ttu-id="57785-195">获取组 **post** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-195">Get group **post** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="4430c-195">获取资源实例，其中包括与筛选器匹配的字符串类型的扩展属性</span><span class="sxs-lookup"><span data-stu-id="4430c-195">GET resource instances with string-typed extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="57785-196">获取资源实例，其中包括与筛选器匹配的字符串类型的扩展属性</span><span class="sxs-lookup"><span data-stu-id="57785-196">GET resource instances with string-typed extended properties matching a filter</span></span>
 
-<span data-ttu-id="4430c-196">获取 **message** 或 **event** 资源的实例，其中包括与筛选器匹配的字符串类型的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-196">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="4430c-197">筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`contains`、`startswith`、`eq` 或 `ne`。</span><span class="sxs-lookup"><span data-stu-id="4430c-197">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="4430c-198">请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。</span><span class="sxs-lookup"><span data-stu-id="4430c-198">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="57785-197">获取 **message** 或 **event** 资源的实例，其中包括与筛选器匹配的字符串类型的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-197">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="57785-198">筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`contains`、`startswith`、`eq` 或 `ne`。</span><span class="sxs-lookup"><span data-stu-id="57785-198">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="57785-199">请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。</span><span class="sxs-lookup"><span data-stu-id="57785-199">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
 
-<span data-ttu-id="4430c-199">获取 **message** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-199">Get **message** instances:</span></span>
+<span data-ttu-id="57785-200">获取 **message** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-200">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -198,7 +200,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="4430c-200">获取 **event** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-200">Get **event** instances:</span></span>
+<span data-ttu-id="57785-201">获取 **event** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-201">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -214,7 +216,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="4430c-201">获取组 **event** 实例：</span><span class="sxs-lookup"><span data-stu-id="4430c-201">Get group **event** instances:</span></span>
+<span data-ttu-id="57785-202">获取组 **event** 实例：</span><span class="sxs-lookup"><span data-stu-id="57785-202">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -223,37 +225,37 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="4430c-202">路径参数</span><span class="sxs-lookup"><span data-stu-id="4430c-202">Path parameters</span></span>
-|<span data-ttu-id="4430c-203">参数</span><span class="sxs-lookup"><span data-stu-id="4430c-203">Parameter</span></span>|<span data-ttu-id="4430c-204">类型</span><span class="sxs-lookup"><span data-stu-id="4430c-204">Type</span></span>|<span data-ttu-id="4430c-205">说明</span><span class="sxs-lookup"><span data-stu-id="4430c-205">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="57785-203">路径参数</span><span class="sxs-lookup"><span data-stu-id="57785-203">Path parameters</span></span>
+|<span data-ttu-id="57785-204">参数</span><span class="sxs-lookup"><span data-stu-id="57785-204">Parameter</span></span>|<span data-ttu-id="57785-205">类型</span><span class="sxs-lookup"><span data-stu-id="57785-205">Type</span></span>|<span data-ttu-id="57785-206">说明</span><span class="sxs-lookup"><span data-stu-id="57785-206">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="4430c-206">id_value</span><span class="sxs-lookup"><span data-stu-id="4430c-206">id_value</span></span>|<span data-ttu-id="4430c-207">String</span><span class="sxs-lookup"><span data-stu-id="4430c-207">String</span></span>|<span data-ttu-id="4430c-p109">要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。</span><span class="sxs-lookup"><span data-stu-id="4430c-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
-|<span data-ttu-id="4430c-212">property_value</span><span class="sxs-lookup"><span data-stu-id="4430c-212">property_value</span></span> |<span data-ttu-id="4430c-213">String</span><span class="sxs-lookup"><span data-stu-id="4430c-213">String</span></span>|<span data-ttu-id="4430c-214">要匹配的扩展属性的值。</span><span class="sxs-lookup"><span data-stu-id="4430c-214">The value of the extended property to match.</span></span> <span data-ttu-id="4430c-215">如果在上面的 **HTTP 请求**部分中列出，则为必需参数。</span><span class="sxs-lookup"><span data-stu-id="4430c-215">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="4430c-216">如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。</span><span class="sxs-lookup"><span data-stu-id="4430c-216">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="4430c-217">有关示例，请参阅下面的[请求 4](#request-4)。</span><span class="sxs-lookup"><span data-stu-id="4430c-217">See [request 4](#request-4) below for examples.</span></span> |
+|<span data-ttu-id="57785-207">id_value</span><span class="sxs-lookup"><span data-stu-id="57785-207">id_value</span></span>|<span data-ttu-id="57785-208">字符串</span><span class="sxs-lookup"><span data-stu-id="57785-208">String</span></span>|<span data-ttu-id="57785-p109">要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。</span><span class="sxs-lookup"><span data-stu-id="57785-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="57785-213">property_value</span><span class="sxs-lookup"><span data-stu-id="57785-213">property_value</span></span> |<span data-ttu-id="57785-214">String</span><span class="sxs-lookup"><span data-stu-id="57785-214">String</span></span>|<span data-ttu-id="57785-215">要匹配的扩展属性的值。</span><span class="sxs-lookup"><span data-stu-id="57785-215">The value of the extended property to match.</span></span> <span data-ttu-id="57785-216">如果在上面的 **HTTP 请求**部分中列出，则为必需参数。</span><span class="sxs-lookup"><span data-stu-id="57785-216">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="57785-217">如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。</span><span class="sxs-lookup"><span data-stu-id="57785-217">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="57785-218">有关示例，请参阅下面的[请求 4](#request-4)。</span><span class="sxs-lookup"><span data-stu-id="57785-218">See [request 4](#request-4) below for examples.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="4430c-218">请求标头</span><span class="sxs-lookup"><span data-stu-id="4430c-218">Request headers</span></span>
-| <span data-ttu-id="4430c-219">名称</span><span class="sxs-lookup"><span data-stu-id="4430c-219">Name</span></span>      |<span data-ttu-id="4430c-220">说明</span><span class="sxs-lookup"><span data-stu-id="4430c-220">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="57785-219">请求头</span><span class="sxs-lookup"><span data-stu-id="57785-219">Request headers</span></span>
+| <span data-ttu-id="57785-220">名称</span><span class="sxs-lookup"><span data-stu-id="57785-220">Name</span></span>      |<span data-ttu-id="57785-221">说明</span><span class="sxs-lookup"><span data-stu-id="57785-221">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4430c-221">Authorization</span><span class="sxs-lookup"><span data-stu-id="4430c-221">Authorization</span></span>  | <span data-ttu-id="4430c-p111">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4430c-p111">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="57785-222">Authorization</span><span class="sxs-lookup"><span data-stu-id="57785-222">Authorization</span></span>  | <span data-ttu-id="57785-p111">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="57785-p111">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4430c-224">请求正文</span><span class="sxs-lookup"><span data-stu-id="4430c-224">Request body</span></span>
-<span data-ttu-id="4430c-225">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4430c-225">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="57785-225">请求正文</span><span class="sxs-lookup"><span data-stu-id="57785-225">Request body</span></span>
+<span data-ttu-id="57785-226">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="57785-226">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4430c-226">响应</span><span class="sxs-lookup"><span data-stu-id="4430c-226">Response</span></span>
+## <a name="response"></a><span data-ttu-id="57785-227">响应</span><span class="sxs-lookup"><span data-stu-id="57785-227">Response</span></span>
 
-<span data-ttu-id="4430c-227">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="4430c-227">If successful, this method returns a `200 OK` response code.</span></span>
+<span data-ttu-id="57785-228">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="57785-228">If successful, this method returns a `200 OK` response code.</span></span>
 
-#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="4430c-228">获取通过匹配的扩展属性扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="4430c-228">GET resource instance expanded with a matching extended property</span></span>
-<span data-ttu-id="4430c-229">响应正文包括通过匹配的 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象扩展的对象，此对象表示请求的资源实例。</span><span class="sxs-lookup"><span data-stu-id="4430c-229">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="57785-229">获取通过匹配的扩展属性扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="57785-229">GET resource instance expanded with a matching extended property</span></span>
+<span data-ttu-id="57785-230">响应正文包括通过匹配的 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象扩展的对象，此对象表示请求的资源实例。</span><span class="sxs-lookup"><span data-stu-id="57785-230">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
   
-#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="4430c-230">获取包含与筛选器匹配的扩展属性的资源实例</span><span class="sxs-lookup"><span data-stu-id="4430c-230">GET resource instances that contain an extended property matching a filter</span></span>
-<span data-ttu-id="4430c-231">响应主体包含一个或多个对象，它们表示包含匹配的扩展属性的资源实例。</span><span class="sxs-lookup"><span data-stu-id="4430c-231">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="4430c-232">响应正文不包含扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-232">The response body does not include the extended property.</span></span>
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="57785-231">获取包含与筛选器匹配的扩展属性的资源实例</span><span class="sxs-lookup"><span data-stu-id="57785-231">GET resource instances that contain an extended property matching a filter</span></span>
+<span data-ttu-id="57785-232">响应主体包含一个或多个对象，它们表示包含匹配的扩展属性的资源实例。</span><span class="sxs-lookup"><span data-stu-id="57785-232">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="57785-233">响应正文不包含扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-233">The response body does not include the extended property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4430c-233">示例</span><span class="sxs-lookup"><span data-stu-id="4430c-233">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="4430c-234">请求 1</span><span class="sxs-lookup"><span data-stu-id="4430c-234">Request 1</span></span>
+## <a name="example"></a><span data-ttu-id="57785-234">示例</span><span class="sxs-lookup"><span data-stu-id="57785-234">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="57785-235">请求 1</span><span class="sxs-lookup"><span data-stu-id="57785-235">Request 1</span></span>
 
-<span data-ttu-id="4430c-p113">第一个示例通过包含一个单值扩展属性获取并展开指定的邮件。此筛选器返回其 **id** 与 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 字符串（包含 URL 编码，此处为了便于阅读，已将其删除）匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+<span data-ttu-id="57785-p113">第一个示例通过包含一个单值扩展属性获取并展开指定的邮件。此筛选器返回其 **id** 与 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 字符串（包含 URL 编码，此处为了便于阅读，已将其删除）匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4430c-237">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="4430c-237">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="57785-238">HTTP</span><span class="sxs-lookup"><span data-stu-id="57785-238">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="],
@@ -262,28 +264,28 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4430c-238">C#</span><span class="sxs-lookup"><span data-stu-id="4430c-238">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="57785-239">C#</span><span class="sxs-lookup"><span data-stu-id="57785-239">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4430c-239">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4430c-239">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="57785-240">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57785-240">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4430c-240">目标-C</span><span class="sxs-lookup"><span data-stu-id="4430c-240">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="57785-241">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57785-241">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="4430c-241">Java</span><span class="sxs-lookup"><span data-stu-id="4430c-241">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="57785-242">Java</span><span class="sxs-lookup"><span data-stu-id="57785-242">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-singlevaluelegacyextendedproperty-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response-1"></a><span data-ttu-id="4430c-242">响应 1</span><span class="sxs-lookup"><span data-stu-id="4430c-242">Response 1</span></span>
-<span data-ttu-id="4430c-243">响应正文包括指定邮件的所有属性以及此筛选器返回的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-243">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="57785-243">响应 1</span><span class="sxs-lookup"><span data-stu-id="57785-243">Response 1</span></span>
+<span data-ttu-id="57785-244">响应正文包括指定邮件的所有属性以及此筛选器返回的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-244">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
 
-<span data-ttu-id="4430c-p114">注意：为了简单起见，会将此处所示的**邮件**对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="57785-p114">注意：为了简单起见，会将此处所示的**邮件**对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="57785-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -324,53 +326,53 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-2"></a><span data-ttu-id="4430c-246">请求 2</span><span class="sxs-lookup"><span data-stu-id="4430c-246">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="57785-247">请求 2</span><span class="sxs-lookup"><span data-stu-id="57785-247">Request 2</span></span>
 
-<span data-ttu-id="4430c-247">第二个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="4430c-247">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="4430c-248">此筛选器查找如下扩展属性：</span><span class="sxs-lookup"><span data-stu-id="4430c-248">The filter looks for the extended property that has:</span></span>
+<span data-ttu-id="57785-248">第二个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="57785-248">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="57785-249">此筛选器查找如下扩展属性：</span><span class="sxs-lookup"><span data-stu-id="57785-249">The filter looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="4430c-249">它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。</span><span class="sxs-lookup"><span data-stu-id="4430c-249">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+- <span data-ttu-id="57785-250">它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。</span><span class="sxs-lookup"><span data-stu-id="57785-250">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-- <span data-ttu-id="4430c-250">它的 **value** 等于字符串 `Green`。</span><span class="sxs-lookup"><span data-stu-id="4430c-250">Its **value** equal to the string `Green`.</span></span>
+- <span data-ttu-id="57785-251">它的 **value** 等于字符串 `Green`。</span><span class="sxs-lookup"><span data-stu-id="57785-251">Its **value** equal to the string `Green`.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="4430c-251">响应 2</span><span class="sxs-lookup"><span data-stu-id="4430c-251">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="57785-252">响应 2</span><span class="sxs-lookup"><span data-stu-id="57785-252">Response 2</span></span>
 
-<span data-ttu-id="4430c-p116">成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。响应正文是类似于[获取邮件集合](../api/user-list-messages.md)中的响应。该响应不包括匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
+<span data-ttu-id="57785-p116">成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。响应正文是类似于[获取邮件集合](../api/user-list-messages.md)中的响应。该响应不包括匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-3"></a><span data-ttu-id="4430c-255">请求 3</span><span class="sxs-lookup"><span data-stu-id="4430c-255">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="57785-256">请求 3</span><span class="sxs-lookup"><span data-stu-id="57785-256">Request 3</span></span>
 
-<span data-ttu-id="4430c-256">第三个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="4430c-256">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="4430c-257">此筛选器查找如下扩展属性：</span><span class="sxs-lookup"><span data-stu-id="4430c-257">The filter looks for the extended property that has:</span></span>
+<span data-ttu-id="57785-257">第三个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="57785-257">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="57785-258">此筛选器查找如下扩展属性：</span><span class="sxs-lookup"><span data-stu-id="57785-258">The filter looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="4430c-258">它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。</span><span class="sxs-lookup"><span data-stu-id="4430c-258">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+- <span data-ttu-id="57785-259">它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。</span><span class="sxs-lookup"><span data-stu-id="57785-259">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-- <span data-ttu-id="4430c-259">它的 **value** 包含字符串 `green`。</span><span class="sxs-lookup"><span data-stu-id="4430c-259">Its **value** containing the string `green`.</span></span> 
+- <span data-ttu-id="57785-260">它的 **value** 包含字符串 `green`。</span><span class="sxs-lookup"><span data-stu-id="57785-260">Its **value** containing the string `green`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
-#### <a name="response-3"></a><span data-ttu-id="4430c-260">响应 3</span><span class="sxs-lookup"><span data-stu-id="4430c-260">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="57785-261">响应 3</span><span class="sxs-lookup"><span data-stu-id="57785-261">Response 3</span></span>
 
-<span data-ttu-id="4430c-261">成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-261">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="4430c-262">例如，如果邮件包含 **id** 等于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 的单值扩展属性和 **value** `Light green`，则会与筛选器匹配并包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="4430c-262">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
+<span data-ttu-id="57785-262">成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。</span><span class="sxs-lookup"><span data-stu-id="57785-262">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="57785-263">例如，如果邮件包含 **id** 等于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 的单值扩展属性和 **value** `Light green`，则会与筛选器匹配并包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="57785-263">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
 
-<span data-ttu-id="4430c-263">响应正文类似于[获取邮件集合](../api/user-list-messages.md)中的响应。</span><span class="sxs-lookup"><span data-stu-id="4430c-263">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="4430c-264">响应中不包含匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-264">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="57785-264">响应正文类似于[获取邮件集合](../api/user-list-messages.md)中的响应。</span><span class="sxs-lookup"><span data-stu-id="57785-264">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="57785-265">响应中不包含匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-265">The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-4"></a><span data-ttu-id="4430c-265">请求 4</span><span class="sxs-lookup"><span data-stu-id="4430c-265">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="57785-266">请求 4</span><span class="sxs-lookup"><span data-stu-id="57785-266">Request 4</span></span>
 
-<span data-ttu-id="4430c-266">接下来的两个示例展示了如何获取具有非字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="4430c-266">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="4430c-267">为了方便阅读，从中删除了必要的 URL 编码。</span><span class="sxs-lookup"><span data-stu-id="4430c-267">For ease of reading, they do not include the necessary URL encoding.</span></span>
+<span data-ttu-id="57785-267">接下来的两个示例展示了如何获取具有非字符串类型单值扩展属性的邮件。</span><span class="sxs-lookup"><span data-stu-id="57785-267">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="57785-268">为了方便阅读，从中删除了必要的 URL 编码。</span><span class="sxs-lookup"><span data-stu-id="57785-268">For ease of reading, they do not include the necessary URL encoding.</span></span>
 
-<span data-ttu-id="4430c-268">下面的示例展示了查找以下扩展属性的筛选器：</span><span class="sxs-lookup"><span data-stu-id="4430c-268">The following example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="57785-269">下面的示例展示了查找以下扩展属性的筛选器：</span><span class="sxs-lookup"><span data-stu-id="57785-269">The following example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="4430c-269">它的 **id** 与字符串 `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid` 匹配。</span><span class="sxs-lookup"><span data-stu-id="4430c-269">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
+- <span data-ttu-id="57785-270">它的 **id** 与字符串 `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid` 匹配。</span><span class="sxs-lookup"><span data-stu-id="57785-270">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
 
-- <span data-ttu-id="4430c-270">它的 **value** 是 GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`。</span><span class="sxs-lookup"><span data-stu-id="4430c-270">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="4430c-271">若要将属性值与 GUID 比较，请将 `ep/value` 转换为 `Edm.Guid`。</span><span class="sxs-lookup"><span data-stu-id="4430c-271">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
+- <span data-ttu-id="57785-271">它的 **value** 是 GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`。</span><span class="sxs-lookup"><span data-stu-id="57785-271">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="57785-272">若要将属性值与 GUID 比较，请将 `ep/value` 转换为 `Edm.Guid`。</span><span class="sxs-lookup"><span data-stu-id="57785-272">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -378,11 +380,11 @@ GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProp
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
 ```
 
-<span data-ttu-id="4430c-272">接下来的示例展示了查找以下扩展属性的筛选器：</span><span class="sxs-lookup"><span data-stu-id="4430c-272">The next example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="57785-273">接下来的示例展示了查找以下扩展属性的筛选器：</span><span class="sxs-lookup"><span data-stu-id="57785-273">The next example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="4430c-273">它的 **id** 与字符串 `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete` 匹配。</span><span class="sxs-lookup"><span data-stu-id="4430c-273">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
+- <span data-ttu-id="57785-274">它的 **id** 与字符串 `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete` 匹配。</span><span class="sxs-lookup"><span data-stu-id="57785-274">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
 
-- <span data-ttu-id="4430c-274">它的 **value** 等于整数 12。</span><span class="sxs-lookup"><span data-stu-id="4430c-274">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="4430c-275">若要将属性值与整数比较，请将 `ep/value` 转换为 `Edm.Int32`。</span><span class="sxs-lookup"><span data-stu-id="4430c-275">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
+- <span data-ttu-id="57785-275">它的 **value** 等于整数 12。</span><span class="sxs-lookup"><span data-stu-id="57785-275">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="57785-276">若要将属性值与整数比较，请将 `ep/value` 转换为 `Edm.Int32`。</span><span class="sxs-lookup"><span data-stu-id="57785-276">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -391,9 +393,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-4"></a><span data-ttu-id="4430c-276">响应 4</span><span class="sxs-lookup"><span data-stu-id="4430c-276">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="57785-277">响应 4</span><span class="sxs-lookup"><span data-stu-id="57785-277">Response 4</span></span>
 
-<span data-ttu-id="4430c-277">对于前面两个示例中的任意一个，成功响应由 `HTTP 200 OK` 响应代码表示，响应正文包括扩展属性与相应筛选器匹配的邮件的所有属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-277">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="4430c-278">响应正文类似于[获取邮件集合](../api/user-list-messages.md)中的响应。</span><span class="sxs-lookup"><span data-stu-id="4430c-278">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="4430c-279">响应中不包含匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="4430c-279">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="57785-278">对于前面两个示例中的任意一个，成功响应由 `HTTP 200 OK` 响应代码表示，响应正文包括扩展属性与相应筛选器匹配的邮件的所有属性。</span><span class="sxs-lookup"><span data-stu-id="57785-278">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="57785-279">响应正文类似于[获取邮件集合](../api/user-list-messages.md)中的响应。</span><span class="sxs-lookup"><span data-stu-id="57785-279">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="57785-280">响应中不包含匹配的扩展属性。</span><span class="sxs-lookup"><span data-stu-id="57785-280">The response does not include the matching extended property.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

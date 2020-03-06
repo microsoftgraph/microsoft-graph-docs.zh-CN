@@ -7,28 +7,30 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在列表中创建新的 listItem。
 doc_type: apiPageType
-ms.openlocfilehash: 106d559aa2942cadc3fb23405ad8d6b1eb2fb96c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9cca55f26c7c80beac22aef93afa487c29940a9f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511717"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="e9b79-103">在列表中创建新项</span><span class="sxs-lookup"><span data-stu-id="e9b79-103">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="aff96-103">在列表中创建新项</span><span class="sxs-lookup"><span data-stu-id="aff96-103">Create a new item in a list</span></span>
 
-<span data-ttu-id="e9b79-104">在[列表][]中创建新的 [listItem][]。</span><span class="sxs-lookup"><span data-stu-id="e9b79-104">Create a new [listItem][] in a [list][].</span></span>
+<span data-ttu-id="aff96-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aff96-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e9b79-105">权限</span><span class="sxs-lookup"><span data-stu-id="e9b79-105">Permissions</span></span>
+<span data-ttu-id="aff96-105">在[列表][]中创建新的 [listItem][]。</span><span class="sxs-lookup"><span data-stu-id="aff96-105">Create a new [listItem][] in a [list][].</span></span>
 
-<span data-ttu-id="e9b79-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9b79-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aff96-106">权限</span><span class="sxs-lookup"><span data-stu-id="aff96-106">Permissions</span></span>
 
-|<span data-ttu-id="e9b79-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9b79-108">Permission type</span></span>      | <span data-ttu-id="e9b79-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e9b79-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="aff96-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aff96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="aff96-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="aff96-109">Permission type</span></span>      | <span data-ttu-id="aff96-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aff96-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e9b79-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9b79-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e9b79-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e9b79-111">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e9b79-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9b79-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9b79-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9b79-113">Not supported.</span></span>    |
-|<span data-ttu-id="e9b79-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e9b79-114">Application</span></span> | <span data-ttu-id="e9b79-115">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e9b79-115">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="aff96-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aff96-111">Delegated (work or school account)</span></span> | <span data-ttu-id="aff96-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aff96-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="aff96-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aff96-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aff96-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="aff96-114">Not supported.</span></span>    |
+|<span data-ttu-id="aff96-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="aff96-115">Application</span></span> | <span data-ttu-id="aff96-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aff96-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e9b79-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9b79-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aff96-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aff96-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,16 +38,16 @@ ms.locfileid: "36370655"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="e9b79-117">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9b79-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="aff96-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="aff96-118">Request body</span></span>
 
-<span data-ttu-id="e9b79-118">在请求正文中，提供要创建的 [listItem][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e9b79-118">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="aff96-119">在请求正文中，提供要创建的 [listItem][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aff96-119">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e9b79-119">示例</span><span class="sxs-lookup"><span data-stu-id="e9b79-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aff96-120">示例</span><span class="sxs-lookup"><span data-stu-id="aff96-120">Example</span></span>
 
-<span data-ttu-id="e9b79-120">下面的示例展示了如何创建新的泛型列表项。</span><span class="sxs-lookup"><span data-stu-id="e9b79-120">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="aff96-121">下面的示例展示了如何创建新的泛型列表项。</span><span class="sxs-lookup"><span data-stu-id="aff96-121">Here is an example of how to create a new generic list item.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e9b79-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9b79-121">--Http</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="aff96-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="aff96-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -60,28 +62,28 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e9b79-122">C#</span><span class="sxs-lookup"><span data-stu-id="e9b79-122">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="aff96-123">C#</span><span class="sxs-lookup"><span data-stu-id="aff96-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e9b79-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9b79-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="aff96-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aff96-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e9b79-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e9b79-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="aff96-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aff96-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e9b79-125">Java</span><span class="sxs-lookup"><span data-stu-id="e9b79-125">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="aff96-126">Java</span><span class="sxs-lookup"><span data-stu-id="aff96-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="e9b79-126">响应</span><span class="sxs-lookup"><span data-stu-id="e9b79-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aff96-127">响应</span><span class="sxs-lookup"><span data-stu-id="aff96-127">Response</span></span>
 
-<span data-ttu-id="e9b79-127">如果成功，此方法在已创建列表项的响应正文中返回 [listItem][]。</span><span class="sxs-lookup"><span data-stu-id="e9b79-127">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="aff96-128">如果成功，此方法在已创建列表项的响应正文中返回 [listItem][]。</span><span class="sxs-lookup"><span data-stu-id="aff96-128">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -108,7 +110,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="e9b79-128">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="e9b79-128">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="e9b79-129">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="e9b79-129">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="aff96-129">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="aff96-129">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="aff96-130">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="aff96-130">Default properties will be returned from the actual call.</span></span>
 
 [列表]: ../resources/list.md
 [list]: ../resources/list.md
