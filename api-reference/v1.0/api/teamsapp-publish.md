@@ -5,58 +5,60 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f5ce3867be2bc7109ae3069e7737ee6be2498
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 29cde581de207637fd0a296b2ba1b20d3e04ef44
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865172"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509319"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="7264e-103">将应用程序发布到你的组织的应用程序目录</span><span class="sxs-lookup"><span data-stu-id="7264e-103">Publish apps to your organization's app catalog</span></span>
+# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="741ef-103">将应用程序发布到你的组织的应用程序目录</span><span class="sxs-lookup"><span data-stu-id="741ef-103">Publish apps to your organization's app catalog</span></span>
+
+<span data-ttu-id="741ef-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="741ef-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="7264e-104">将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队应用程序目录。</span><span class="sxs-lookup"><span data-stu-id="7264e-104">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
-<span data-ttu-id="7264e-105">具体而言，此 API 会将应用程序发布到您的组织的目录（租户应用程序目录）;创建的资源将具有`distributionMethod`  =  `organization`。</span><span class="sxs-lookup"><span data-stu-id="7264e-105">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
+<span data-ttu-id="741ef-105">将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队应用程序目录。</span><span class="sxs-lookup"><span data-stu-id="741ef-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
+<span data-ttu-id="741ef-106">具体而言，此 API 会将应用程序发布到您的组织的目录（租户应用程序目录）;创建的资源将具有`distributionMethod`  =  `organization`。</span><span class="sxs-lookup"><span data-stu-id="741ef-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7264e-106">权限</span><span class="sxs-lookup"><span data-stu-id="7264e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="741ef-107">权限</span><span class="sxs-lookup"><span data-stu-id="741ef-107">Permissions</span></span>
 
-<span data-ttu-id="7264e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="7264e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="741ef-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="741ef-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-><span data-ttu-id="7264e-109">**注意：** 只有全局管理员才能调用此 API。</span><span class="sxs-lookup"><span data-stu-id="7264e-109">**Note:** Only global administrators can call this API.</span></span>
+><span data-ttu-id="741ef-110">**注意：** 只有全局管理员才能调用此 API。</span><span class="sxs-lookup"><span data-stu-id="741ef-110">**Note:** Only global administrators can call this API.</span></span>
 
-| <span data-ttu-id="7264e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7264e-110">Permission Type</span></span>                        | <span data-ttu-id="7264e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7264e-111">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="741ef-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="741ef-111">Permission Type</span></span>                        | <span data-ttu-id="741ef-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="741ef-112">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="7264e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7264e-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7264e-113">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7264e-113">AppCatalog.ReadWrite.All</span></span> |
-| <span data-ttu-id="7264e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7264e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7264e-115">不支持</span><span class="sxs-lookup"><span data-stu-id="7264e-115">Not supported</span></span>|
-| <span data-ttu-id="7264e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7264e-116">Application</span></span>                            | <span data-ttu-id="7264e-117">不支持</span><span class="sxs-lookup"><span data-stu-id="7264e-117">Not supported</span></span>|
+| <span data-ttu-id="741ef-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="741ef-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="741ef-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="741ef-114">AppCatalog.ReadWrite.All</span></span> |
+| <span data-ttu-id="741ef-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="741ef-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="741ef-116">不支持</span><span class="sxs-lookup"><span data-stu-id="741ef-116">Not supported</span></span>|
+| <span data-ttu-id="741ef-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="741ef-117">Application</span></span>                            | <span data-ttu-id="741ef-118">不支持</span><span class="sxs-lookup"><span data-stu-id="741ef-118">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7264e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7264e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="741ef-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="741ef-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /appCatalogs/teamsApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7264e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7264e-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="741ef-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="741ef-120">Request headers</span></span>
 
-| <span data-ttu-id="7264e-120">标头</span><span class="sxs-lookup"><span data-stu-id="7264e-120">Header</span></span>        | <span data-ttu-id="7264e-121">值</span><span class="sxs-lookup"><span data-stu-id="7264e-121">Value</span></span>           |
+| <span data-ttu-id="741ef-121">标头</span><span class="sxs-lookup"><span data-stu-id="741ef-121">Header</span></span>        | <span data-ttu-id="741ef-122">值</span><span class="sxs-lookup"><span data-stu-id="741ef-122">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="7264e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7264e-122">Authorization</span></span> | <span data-ttu-id="7264e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7264e-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7264e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7264e-125">Content-Type</span></span>  | <span data-ttu-id="7264e-126">application/zip</span><span class="sxs-lookup"><span data-stu-id="7264e-126">application/zip</span></span> |
+| <span data-ttu-id="741ef-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="741ef-123">Authorization</span></span> | <span data-ttu-id="741ef-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="741ef-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="741ef-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="741ef-126">Content-Type</span></span>  | <span data-ttu-id="741ef-127">application/zip</span><span class="sxs-lookup"><span data-stu-id="741ef-127">application/zip</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7264e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7264e-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="741ef-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="741ef-128">Request body</span></span>
 
-<span data-ttu-id="7264e-128">团队 Zip 清单有效负载。</span><span class="sxs-lookup"><span data-stu-id="7264e-128">Teams Zip Manifest Payload.</span></span>
-<span data-ttu-id="7264e-129">对于 "团队应用程序 zip 文件"，[请参阅创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。</span><span class="sxs-lookup"><span data-stu-id="7264e-129">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
-<span data-ttu-id="7264e-130">您不能为与该组织中的另一个应用程序具有相同清单 ID 的组织创建应用程序。</span><span class="sxs-lookup"><span data-stu-id="7264e-130">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
+<span data-ttu-id="741ef-129">团队 Zip 清单有效负载。</span><span class="sxs-lookup"><span data-stu-id="741ef-129">Teams Zip Manifest Payload.</span></span>
+<span data-ttu-id="741ef-130">对于 "团队应用程序 zip 文件"，[请参阅创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。</span><span class="sxs-lookup"><span data-stu-id="741ef-130">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="741ef-131">您不能为与该组织中的另一个应用程序具有相同清单 ID 的组织创建应用程序。</span><span class="sxs-lookup"><span data-stu-id="741ef-131">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7264e-131">响应</span><span class="sxs-lookup"><span data-stu-id="7264e-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="741ef-132">响应</span><span class="sxs-lookup"><span data-stu-id="741ef-132">Response</span></span>
 
-<span data-ttu-id="7264e-132">如果成功，此方法将`200 OK`返回响应代码和[teamsCatalogApp](../resources/teamsapp.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7264e-132">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
+<span data-ttu-id="741ef-133">如果成功，此方法将`200 OK`返回响应代码和[teamsCatalogApp](../resources/teamsapp.md)对象。</span><span class="sxs-lookup"><span data-stu-id="741ef-133">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7264e-133">示例</span><span class="sxs-lookup"><span data-stu-id="7264e-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="741ef-134">示例</span><span class="sxs-lookup"><span data-stu-id="741ef-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7264e-134">请求</span><span class="sxs-lookup"><span data-stu-id="7264e-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="741ef-135">请求</span><span class="sxs-lookup"><span data-stu-id="741ef-135">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
@@ -66,9 +68,9 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-<span data-ttu-id="7264e-135">有关如何创建 Microsoft 团队应用程序 zip 文件的信息，请参阅[创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。</span><span class="sxs-lookup"><span data-stu-id="7264e-135">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="741ef-136">有关如何创建 Microsoft 团队应用程序 zip 文件的信息，请参阅[创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。</span><span class="sxs-lookup"><span data-stu-id="741ef-136">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
 
-### <a name="response"></a><span data-ttu-id="7264e-136">响应</span><span class="sxs-lookup"><span data-stu-id="7264e-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="741ef-137">响应</span><span class="sxs-lookup"><span data-stu-id="741ef-137">Response</span></span>
 
 ```
 HTTP/1.1 201 Created

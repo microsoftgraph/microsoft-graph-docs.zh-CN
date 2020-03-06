@@ -7,30 +7,32 @@ localization_priority: Normal
 description: 通过修补 permission 资源更新共享权限的属性。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 261066450894c5cdfccbed85a9aaec0a59c976be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2d67cd965240620e6f40ec62f56c09ce51a7813
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365620"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511038"
 ---
-# <a name="update-sharing-permission"></a><span data-ttu-id="9cdce-103">更新共享权限</span><span class="sxs-lookup"><span data-stu-id="9cdce-103">Update sharing permission</span></span>
+# <a name="update-sharing-permission"></a><span data-ttu-id="92099-103">更新共享权限</span><span class="sxs-lookup"><span data-stu-id="92099-103">Update sharing permission</span></span>
 
-<span data-ttu-id="9cdce-104">通过修补 permission 资源更新共享权限的属性。</span><span class="sxs-lookup"><span data-stu-id="9cdce-104">Update the properties of a sharing permission by patching the permission resource.</span></span>
+<span data-ttu-id="92099-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92099-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9cdce-105">只有 **roles** 属性可以通过这种方式修改。</span><span class="sxs-lookup"><span data-stu-id="9cdce-105">Only the **roles** property can be modified this way.</span></span>
+<span data-ttu-id="92099-105">通过修补 permission 资源更新共享权限的属性。</span><span class="sxs-lookup"><span data-stu-id="92099-105">Update the properties of a sharing permission by patching the permission resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9cdce-106">权限</span><span class="sxs-lookup"><span data-stu-id="9cdce-106">Permissions</span></span>
+<span data-ttu-id="92099-106">只有 **roles** 属性可以通过这种方式修改。</span><span class="sxs-lookup"><span data-stu-id="92099-106">Only the **roles** property can be modified this way.</span></span>
 
-<span data-ttu-id="9cdce-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9cdce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="92099-107">权限</span><span class="sxs-lookup"><span data-stu-id="92099-107">Permissions</span></span>
 
-|<span data-ttu-id="9cdce-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9cdce-109">Permission type</span></span>      | <span data-ttu-id="9cdce-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9cdce-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="92099-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92099-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="92099-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="92099-110">Permission type</span></span>      | <span data-ttu-id="92099-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92099-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9cdce-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9cdce-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9cdce-112">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cdce-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9cdce-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9cdce-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cdce-114">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cdce-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9cdce-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9cdce-115">Application</span></span> | <span data-ttu-id="9cdce-116">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cdce-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="92099-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92099-112">Delegated (work or school account)</span></span> | <span data-ttu-id="92099-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92099-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="92099-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92099-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92099-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92099-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="92099-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="92099-116">Application</span></span> | <span data-ttu-id="92099-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92099-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9cdce-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9cdce-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92099-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92099-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,33 +44,33 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="9cdce-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="9cdce-118">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="92099-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="92099-119">Optional request headers</span></span>
 
-| <span data-ttu-id="9cdce-119">名称</span><span class="sxs-lookup"><span data-stu-id="9cdce-119">Name</span></span>          | <span data-ttu-id="9cdce-120">类型</span><span class="sxs-lookup"><span data-stu-id="9cdce-120">Type</span></span>   | <span data-ttu-id="9cdce-121">说明</span><span class="sxs-lookup"><span data-stu-id="9cdce-121">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="92099-120">名称</span><span class="sxs-lookup"><span data-stu-id="92099-120">Name</span></span>          | <span data-ttu-id="92099-121">类型</span><span class="sxs-lookup"><span data-stu-id="92099-121">Type</span></span>   | <span data-ttu-id="92099-122">说明</span><span class="sxs-lookup"><span data-stu-id="92099-122">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="9cdce-122">if-match</span><span class="sxs-lookup"><span data-stu-id="9cdce-122">if-match</span></span>      | <span data-ttu-id="9cdce-123">string</span><span class="sxs-lookup"><span data-stu-id="9cdce-123">string</span></span> | <span data-ttu-id="9cdce-124">如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。</span><span class="sxs-lookup"><span data-stu-id="9cdce-124">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="92099-123">if-match</span><span class="sxs-lookup"><span data-stu-id="92099-123">if-match</span></span>      | <span data-ttu-id="92099-124">string</span><span class="sxs-lookup"><span data-stu-id="92099-124">string</span></span> | <span data-ttu-id="92099-125">如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。</span><span class="sxs-lookup"><span data-stu-id="92099-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9cdce-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="9cdce-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="92099-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="92099-126">Request body</span></span>
 
-<span data-ttu-id="9cdce-126">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="9cdce-126">In the request body, supply the values for relevant fields that should be updated.</span></span>
+<span data-ttu-id="92099-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="92099-127">In the request body, supply the values for relevant fields that should be updated.</span></span>
 
-<span data-ttu-id="9cdce-127">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="9cdce-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
-<span data-ttu-id="9cdce-128">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="9cdce-128">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="92099-128">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="92099-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
+<span data-ttu-id="92099-129">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="92099-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="9cdce-129">属性</span><span class="sxs-lookup"><span data-stu-id="9cdce-129">Property</span></span> | <span data-ttu-id="9cdce-130">类型</span><span class="sxs-lookup"><span data-stu-id="9cdce-130">Type</span></span>              | <span data-ttu-id="9cdce-131">说明</span><span class="sxs-lookup"><span data-stu-id="9cdce-131">Description</span></span>                   |
+| <span data-ttu-id="92099-130">属性</span><span class="sxs-lookup"><span data-stu-id="92099-130">Property</span></span> | <span data-ttu-id="92099-131">类型</span><span class="sxs-lookup"><span data-stu-id="92099-131">Type</span></span>              | <span data-ttu-id="92099-132">说明</span><span class="sxs-lookup"><span data-stu-id="92099-132">Description</span></span>                   |
 |:---------|:------------------|:------------------------------|
-| <span data-ttu-id="9cdce-132">roles</span><span class="sxs-lookup"><span data-stu-id="9cdce-132">roles</span></span>    | <span data-ttu-id="9cdce-133">String collection</span><span class="sxs-lookup"><span data-stu-id="9cdce-133">String collection</span></span> | <span data-ttu-id="9cdce-134">权限类型的数组。</span><span class="sxs-lookup"><span data-stu-id="9cdce-134">An array of permission types.</span></span> |
+| <span data-ttu-id="92099-133">角色</span><span class="sxs-lookup"><span data-stu-id="92099-133">roles</span></span>    | <span data-ttu-id="92099-134">String collection</span><span class="sxs-lookup"><span data-stu-id="92099-134">String collection</span></span> | <span data-ttu-id="92099-135">权限类型的数组。</span><span class="sxs-lookup"><span data-stu-id="92099-135">An array of permission types.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="9cdce-135">响应</span><span class="sxs-lookup"><span data-stu-id="9cdce-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="92099-136">响应</span><span class="sxs-lookup"><span data-stu-id="92099-136">Response</span></span>
 
-<span data-ttu-id="9cdce-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [permission](../resources/permission.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9cdce-136">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="92099-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [permission](../resources/permission.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="92099-137">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9cdce-137">示例</span><span class="sxs-lookup"><span data-stu-id="9cdce-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92099-138">示例</span><span class="sxs-lookup"><span data-stu-id="92099-138">Example</span></span>
 
-<span data-ttu-id="9cdce-138">下面是请求将共享权限上的角色更改为只读的示例。</span><span class="sxs-lookup"><span data-stu-id="9cdce-138">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
+<span data-ttu-id="92099-139">下面是请求将共享权限上的角色更改为只读的示例。</span><span class="sxs-lookup"><span data-stu-id="92099-139">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9cdce-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9cdce-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="92099-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="92099-140">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -79,28 +81,28 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9cdce-140">C#</span><span class="sxs-lookup"><span data-stu-id="9cdce-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="92099-141">C#</span><span class="sxs-lookup"><span data-stu-id="92099-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9cdce-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cdce-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="92099-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="92099-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9cdce-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="9cdce-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="92099-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="92099-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9cdce-143">Java</span><span class="sxs-lookup"><span data-stu-id="9cdce-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="92099-144">Java</span><span class="sxs-lookup"><span data-stu-id="92099-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="9cdce-144">响应</span><span class="sxs-lookup"><span data-stu-id="9cdce-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="92099-145">响应</span><span class="sxs-lookup"><span data-stu-id="92099-145">Response</span></span>
 
-<span data-ttu-id="9cdce-145">如果成功，此方法将在响应正文中返回 [Permission](../resources/permission.md) 资源，表示请求获取的更新后权限状态。</span><span class="sxs-lookup"><span data-stu-id="9cdce-145">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
+<span data-ttu-id="92099-146">如果成功，此方法将在响应正文中返回 [Permission](../resources/permission.md) 资源，表示请求获取的更新后权限状态。</span><span class="sxs-lookup"><span data-stu-id="92099-146">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 
@@ -120,9 +122,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="9cdce-146">错误响应</span><span class="sxs-lookup"><span data-stu-id="9cdce-146">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="92099-147">错误响应</span><span class="sxs-lookup"><span data-stu-id="92099-147">Error responses</span></span>
 
-<span data-ttu-id="9cdce-147">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="9cdce-147">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="92099-148">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="92099-148">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

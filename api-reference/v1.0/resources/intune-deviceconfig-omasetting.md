@@ -5,31 +5,33 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1b464d8947bfa0125ba7edc9991b7bc6f34296
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: cffa929a063c77010f005a4e0b3da8fd8b7363d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367383"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530603"
 ---
-# <a name="omasetting-resource-type"></a><span data-ttu-id="5282a-103">omaSetting 资源类型</span><span class="sxs-lookup"><span data-stu-id="5282a-103">omaSetting resource type</span></span>
+# <a name="omasetting-resource-type"></a><span data-ttu-id="3a87f-103">omaSetting 资源类型</span><span class="sxs-lookup"><span data-stu-id="3a87f-103">omaSetting resource type</span></span>
 
-> <span data-ttu-id="5282a-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5282a-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="3a87f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a87f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5282a-105">OMA 设置定义。</span><span class="sxs-lookup"><span data-stu-id="5282a-105">OMA Settings definition.</span></span>
+> <span data-ttu-id="3a87f-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3a87f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5282a-106">属性</span><span class="sxs-lookup"><span data-stu-id="5282a-106">Properties</span></span>
-|<span data-ttu-id="5282a-107">属性</span><span class="sxs-lookup"><span data-stu-id="5282a-107">Property</span></span>|<span data-ttu-id="5282a-108">类型</span><span class="sxs-lookup"><span data-stu-id="5282a-108">Type</span></span>|<span data-ttu-id="5282a-109">说明</span><span class="sxs-lookup"><span data-stu-id="5282a-109">Description</span></span>|
+<span data-ttu-id="3a87f-106">OMA 设置定义。</span><span class="sxs-lookup"><span data-stu-id="3a87f-106">OMA Settings definition.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3a87f-107">属性</span><span class="sxs-lookup"><span data-stu-id="3a87f-107">Properties</span></span>
+|<span data-ttu-id="3a87f-108">属性</span><span class="sxs-lookup"><span data-stu-id="3a87f-108">Property</span></span>|<span data-ttu-id="3a87f-109">类型</span><span class="sxs-lookup"><span data-stu-id="3a87f-109">Type</span></span>|<span data-ttu-id="3a87f-110">说明</span><span class="sxs-lookup"><span data-stu-id="3a87f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5282a-110">displayName</span><span class="sxs-lookup"><span data-stu-id="5282a-110">displayName</span></span>|<span data-ttu-id="5282a-111">字符串</span><span class="sxs-lookup"><span data-stu-id="5282a-111">String</span></span>|<span data-ttu-id="5282a-112">显示名称。</span><span class="sxs-lookup"><span data-stu-id="5282a-112">Display Name.</span></span>|
-|<span data-ttu-id="5282a-113">说明</span><span class="sxs-lookup"><span data-stu-id="5282a-113">description</span></span>|<span data-ttu-id="5282a-114">String</span><span class="sxs-lookup"><span data-stu-id="5282a-114">String</span></span>|<span data-ttu-id="5282a-115">说明。</span><span class="sxs-lookup"><span data-stu-id="5282a-115">Description.</span></span>|
-|<span data-ttu-id="5282a-116">omaUri</span><span class="sxs-lookup"><span data-stu-id="5282a-116">omaUri</span></span>|<span data-ttu-id="5282a-117">String</span><span class="sxs-lookup"><span data-stu-id="5282a-117">String</span></span>|<span data-ttu-id="5282a-118">OMA。</span><span class="sxs-lookup"><span data-stu-id="5282a-118">OMA.</span></span>|
+|<span data-ttu-id="3a87f-111">displayName</span><span class="sxs-lookup"><span data-stu-id="3a87f-111">displayName</span></span>|<span data-ttu-id="3a87f-112">字符串</span><span class="sxs-lookup"><span data-stu-id="3a87f-112">String</span></span>|<span data-ttu-id="3a87f-113">显示名称。</span><span class="sxs-lookup"><span data-stu-id="3a87f-113">Display Name.</span></span>|
+|<span data-ttu-id="3a87f-114">说明</span><span class="sxs-lookup"><span data-stu-id="3a87f-114">description</span></span>|<span data-ttu-id="3a87f-115">字符串</span><span class="sxs-lookup"><span data-stu-id="3a87f-115">String</span></span>|<span data-ttu-id="3a87f-116">说明。</span><span class="sxs-lookup"><span data-stu-id="3a87f-116">Description.</span></span>|
+|<span data-ttu-id="3a87f-117">omaUri</span><span class="sxs-lookup"><span data-stu-id="3a87f-117">omaUri</span></span>|<span data-ttu-id="3a87f-118">String</span><span class="sxs-lookup"><span data-stu-id="3a87f-118">String</span></span>|<span data-ttu-id="3a87f-119">OMA。</span><span class="sxs-lookup"><span data-stu-id="3a87f-119">OMA.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="5282a-119">关系</span><span class="sxs-lookup"><span data-stu-id="5282a-119">Relationships</span></span>
-<span data-ttu-id="5282a-120">无</span><span class="sxs-lookup"><span data-stu-id="5282a-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3a87f-120">关系</span><span class="sxs-lookup"><span data-stu-id="3a87f-120">Relationships</span></span>
+<span data-ttu-id="3a87f-121">无</span><span class="sxs-lookup"><span data-stu-id="3a87f-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5282a-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5282a-121">JSON Representation</span></span>
-<span data-ttu-id="5282a-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5282a-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3a87f-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3a87f-122">JSON Representation</span></span>
+<span data-ttu-id="3a87f-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3a87f-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSetting"
