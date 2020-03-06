@@ -5,27 +5,29 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e9c174216508679373c607dc9a2acd95df9096c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84326124202051073e00736a0d630c02bf95340c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533679"
 ---
-# <a name="sizerange-resource-type"></a><span data-ttu-id="e7b3c-103">sizeRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="e7b3c-103">sizeRange resource type</span></span>
+# <a name="sizerange-resource-type"></a><span data-ttu-id="d3d34-103">sizeRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="d3d34-103">sizeRange resource type</span></span>
+
+<span data-ttu-id="d3d34-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3d34-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="e7b3c-104">指定传入邮件必须具有的最大大小和最小大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="e7b3c-104">Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span>
+<span data-ttu-id="d3d34-105">指定传入邮件必须具有的最大大小和最小大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="d3d34-105">Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e7b3c-105">属性</span><span class="sxs-lookup"><span data-stu-id="e7b3c-105">Properties</span></span>
-| <span data-ttu-id="e7b3c-106">属性</span><span class="sxs-lookup"><span data-stu-id="e7b3c-106">Property</span></span>     | <span data-ttu-id="e7b3c-107">类型</span><span class="sxs-lookup"><span data-stu-id="e7b3c-107">Type</span></span>   |<span data-ttu-id="e7b3c-108">说明</span><span class="sxs-lookup"><span data-stu-id="e7b3c-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d3d34-106">属性</span><span class="sxs-lookup"><span data-stu-id="d3d34-106">Properties</span></span>
+| <span data-ttu-id="d3d34-107">属性</span><span class="sxs-lookup"><span data-stu-id="d3d34-107">Property</span></span>     | <span data-ttu-id="d3d34-108">类型</span><span class="sxs-lookup"><span data-stu-id="d3d34-108">Type</span></span>   |<span data-ttu-id="d3d34-109">说明</span><span class="sxs-lookup"><span data-stu-id="d3d34-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e7b3c-109">maximumSize</span><span class="sxs-lookup"><span data-stu-id="e7b3c-109">maximumSize</span></span> | <span data-ttu-id="e7b3c-110">Int32</span><span class="sxs-lookup"><span data-stu-id="e7b3c-110">Int32</span></span> | <span data-ttu-id="e7b3c-111">传入邮件必须具有的最大大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="e7b3c-111">The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
-| <span data-ttu-id="e7b3c-112">minimumSize</span><span class="sxs-lookup"><span data-stu-id="e7b3c-112">minimumSize</span></span> | <span data-ttu-id="e7b3c-113">Int32</span><span class="sxs-lookup"><span data-stu-id="e7b3c-113">Int32</span></span> | <span data-ttu-id="e7b3c-114">传入邮件必须具有的最小大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="e7b3c-114">The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
+| <span data-ttu-id="d3d34-110">maximumSize</span><span class="sxs-lookup"><span data-stu-id="d3d34-110">maximumSize</span></span> | <span data-ttu-id="d3d34-111">Int32</span><span class="sxs-lookup"><span data-stu-id="d3d34-111">Int32</span></span> | <span data-ttu-id="d3d34-112">传入邮件必须具有的最大大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="d3d34-112">The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
+| <span data-ttu-id="d3d34-113">minimumSize</span><span class="sxs-lookup"><span data-stu-id="d3d34-113">minimumSize</span></span> | <span data-ttu-id="d3d34-114">Int32</span><span class="sxs-lookup"><span data-stu-id="d3d34-114">Int32</span></span> | <span data-ttu-id="d3d34-115">传入邮件必须具有的最小大小（以千字节为单位），以便条件或例外情况适用。</span><span class="sxs-lookup"><span data-stu-id="d3d34-115">The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="e7b3c-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e7b3c-115">JSON representation</span></span>
-<span data-ttu-id="e7b3c-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e7b3c-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3d34-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d3d34-116">JSON representation</span></span>
+<span data-ttu-id="d3d34-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d3d34-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
