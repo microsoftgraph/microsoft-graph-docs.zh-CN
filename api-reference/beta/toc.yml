@@ -924,7 +924,7 @@
                   href: api/presence-get.md
                 - name: 为多个用户获取状态
                   href: api/cloudcommunications-getpresencesbyuserid.md
-            - name: 呼叫记录（预览）
+            - name: 通话记录（预览版）
               items:
                 - name: 概述
                   href: resources/callrecords-api-overview.md
@@ -7618,7 +7618,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: 列表
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: Delete
+                    - name: 删除
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: 设备管理脚本
                   href: resources/intune-shared-devicemanagementscript.md
@@ -8013,6 +8013,8 @@
             - name: 类别
               href: resources/educationcategory.md
               items:
+                - name: 创建类别
+                  href: api/educationclass-post-category.md
                 - name: 获取类别
                   href: api/educationcategory-get.md
                 - name: 删除类别
@@ -8020,6 +8022,8 @@
             - name: Rubric
               href: resources/educationrubric.md
               items:
+                - name: 创建 rubric
+                  href: api/educationuser-post-rubrics.md
                 - name: 获取 rubric
                   href: api/educationrubric-get.md
                 - name: 更新 rubric
@@ -8858,7 +8862,7 @@
                     - name: 创建
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
-                  href: resources/accesspackageresourcerequest.md
+                  href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9090,7 +9094,7 @@
                   items:
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: Policy
+            - name: 策略
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -9800,7 +9804,7 @@
                       href: api/languageproficiency-update.md
                     - name: 删除
                       href: api/languageproficiency-delete.md
-                - name: Names
+                - name: 名称
                   href: resources/personname.md
                   items:
                     - name: 列表
@@ -10796,7 +10800,7 @@
                       href: api/openshift-get.md
                     - name: 更新
                       href: api/openshift-update.md
-                    - name: Delete
+                    - name: 删除
                       href: api/openshift-delete.md
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
@@ -10864,7 +10868,7 @@
                       href: api/timeoffrequest-get.md
                     - name: 更新
                       href: api/timeoffrequest-update.md
-                    - name: Delete
+                    - name: 删除
                       href: api/timeoffrequest-delete.md
                     - name: 批准
                       href: api/timeoffrequest-approve.md
@@ -10917,7 +10921,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -10936,7 +10940,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md
@@ -10953,7 +10957,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md
