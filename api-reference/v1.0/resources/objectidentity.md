@@ -14,7 +14,7 @@ ms.locfileid: "42447351"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示用于登录到用户帐户的标识。 标识可由 Microsoft、组织或由与用户帐户关联的社会身份提供商（如 Facebook、Google 或 Microsoft）提供。 这样一来，用户就可以使用任何相关标识登录到用户帐户。
 

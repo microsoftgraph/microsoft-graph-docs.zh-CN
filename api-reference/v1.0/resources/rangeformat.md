@@ -14,12 +14,12 @@ ms.locfileid: "42447015"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

@@ -7,14 +7,16 @@ title: Hashes 资源类型
 description: 哈希资源将可用哈希分组到项的单个结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6ed5cef48584aeb9d656ba0e088b535988f25a1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb852ad01394ac463cb3d23ed404a7956bbf1eea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532911"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
+
+命名空间：microsoft.graph
 
 **哈希**资源将可用哈希分组到项的单个结构中。
 
@@ -43,7 +45,7 @@ ms.locfileid: "36030231"
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **crc32Hash**    | String | 文件的 CRC32 值, 以小字节序 (如果可用) 为单位。 只读。            |
+| **crc32Hash**    | String | 文件的 CRC32 值，以小字节序（如果可用）为单位。 只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
 **注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。

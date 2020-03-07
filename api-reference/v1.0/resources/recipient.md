@@ -14,7 +14,7 @@ ms.locfileid: "42447001"
 ---
 # <a name="recipient-resource-type"></a>收件人资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示事件、邮件或组帖子发送或接收端的用户的相关信息。 
 
