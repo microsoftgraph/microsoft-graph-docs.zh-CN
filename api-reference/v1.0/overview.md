@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 0b21aab90fb1eabec82ab1ee783fcdc89fe397d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533181"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -49,6 +49,16 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 如需了解仍处于预览状态的新 API 或增强 API，请参阅 [Microsoft Graph beta 终结点参考](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta)。 请注意，预览状态的 API 可能会发生更改，并可能在无通知的情况下破坏现有应用场景。 不要对 beta 终结点的 API 产生依赖。
 
 请参阅[版本控制和支持](/graph/versioning-and-support)了解更多信息。
+
+## <a name="call-the-v10-endpoint"></a>调用 v1.0 终结点
+
+针对 v1.0 终结点的 Microsoft Graph API 请求使用以下模式：
+
+```
+    https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+```
+
+有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。
 
 ## <a name="connect-with-us"></a>与我们联系
 

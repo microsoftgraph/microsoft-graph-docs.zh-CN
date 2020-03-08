@@ -5,15 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9095ca1c8f26f9a5925b3d1ad9fc95533df0365e
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 3ba3f85193921fe7b77e6640200ec0a82b610997
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844949"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516975"
 ---
 # <a name="add-group-owner"></a>添加组所有者
-将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
+
+命名空间：microsoft.graph 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -47,7 +48,7 @@ POST /groups/{id}/owners/$ref
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_owner_from_group"
@@ -61,19 +62,19 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
