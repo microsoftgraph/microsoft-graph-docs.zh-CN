@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70c44f29e370e5b4dd22af6914602d30e552e7f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e10d7c6b53e794738f06e7a812c72946d4566a12
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446553"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562666"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>获取 homeRealmDiscoveryPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42446553"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.Read.All |
+| 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.Read.All |
+| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 

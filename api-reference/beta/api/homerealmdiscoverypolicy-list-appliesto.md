@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 369a852668e56794311bafb2c53b0e692ad3efd4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a687bff4095c94bc8785ba9bc0a04c2ebc1546d3
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446535"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562659"
 ---
 # <a name="list-appliesto"></a>列出 appliesTo
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42446535"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Read. all 和 Application. all、Directory。 All |
+| 委派（工作或学校帐户）     | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Read. all 和 Application. all、Directory。 All |
+| 应用程序                            | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
 
 ## <a name="http-request"></a>HTTP 请求
 

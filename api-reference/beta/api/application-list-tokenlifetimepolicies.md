@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1aab750ef0d2121634343ef9c371bae1645744e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af0140523462dbb74dc71425457f5a172c920f3a
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441499"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562638"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列表已分配 tokenLifetimePolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42441499"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 Application。所有读写。 |
+| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby，all 和应用程序的 Read. all |
+| 应用程序                            | Application.readwrite.ownedby 和 ApplicationConfiguration 和 Application.readwrite.ownedby、、ApplicationConfiguration 和中的所有应用程序的、、、、和中的应用程序的读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

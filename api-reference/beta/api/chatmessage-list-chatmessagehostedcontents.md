@@ -5,16 +5,16 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0be0b5668b4e583b855ae4e4e85fdb7bc4169705
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50459ee2ec043773480e40d9d3bf3f011f5528d1
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438370"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562694"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,12 +26,12 @@ ms.locfileid: "42438370"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
+|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
+|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
 > [!NOTE]
-> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 

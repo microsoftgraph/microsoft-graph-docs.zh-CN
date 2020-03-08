@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6eaceac529a3bdb078cac5728fafa792f516527a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63f6f714235c644af2fd2bb32552fdc358ca1465
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441478"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562631"
 ---
 # <a name="create-call"></a>创建调用
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -375,7 +375,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -445,7 +445,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -511,7 +511,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
