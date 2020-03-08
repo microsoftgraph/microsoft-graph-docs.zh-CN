@@ -5,32 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6043692060e235075bf84b7722c97078ef869c58
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e711d91d08d989fd3535c9a203a642b6a48e8d80
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452216"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562834"
 ---
-# <a name="list-appliesto"></a><span data-ttu-id="e9d6a-103">列出 appliesTo</span><span class="sxs-lookup"><span data-stu-id="e9d6a-103">List appliesTo</span></span>
+# <a name="list-appliesto"></a><span data-ttu-id="b7a63-103">列出 appliesTo</span><span class="sxs-lookup"><span data-stu-id="b7a63-103">List appliesTo</span></span>
 
-<span data-ttu-id="e9d6a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e9d6a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7a63-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7a63-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e9d6a-105">获取已应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object has been applied to.</span></span> <span data-ttu-id="e9d6a-106">TokenLifetimePolicy 只能应用于[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)资源。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-106">The tokenLifetimePolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
+<span data-ttu-id="b7a63-105">获取已应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="b7a63-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object has been applied to.</span></span> <span data-ttu-id="b7a63-106">TokenLifetimePolicy 只能应用于[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)资源。</span><span class="sxs-lookup"><span data-stu-id="b7a63-106">The tokenLifetimePolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e9d6a-107">权限</span><span class="sxs-lookup"><span data-stu-id="e9d6a-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7a63-107">权限</span><span class="sxs-lookup"><span data-stu-id="b7a63-107">Permissions</span></span>
 
-<span data-ttu-id="e9d6a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b7a63-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7a63-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e9d6a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9d6a-110">Permission type</span></span>                        | <span data-ttu-id="e9d6a-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e9d6a-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b7a63-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b7a63-110">Permission type</span></span>                        | <span data-ttu-id="b7a63-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b7a63-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e9d6a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9d6a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e9d6a-113">Read. all 和 Application. all、Directory。 All</span><span class="sxs-lookup"><span data-stu-id="e9d6a-113">Policy.Read.All and Application.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="e9d6a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9d6a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9d6a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-115">Not supported.</span></span> |
-| <span data-ttu-id="e9d6a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e9d6a-116">Application</span></span>                            | <span data-ttu-id="e9d6a-117">Read. all 和 Application. all、Directory。 All</span><span class="sxs-lookup"><span data-stu-id="e9d6a-117">Policy.Read.All and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="b7a63-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b7a63-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b7a63-113">Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All</span><span class="sxs-lookup"><span data-stu-id="b7a63-113">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="b7a63-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b7a63-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7a63-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b7a63-115">Not supported.</span></span> |
+| <span data-ttu-id="b7a63-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b7a63-116">Application</span></span>                            | <span data-ttu-id="b7a63-117">Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All</span><span class="sxs-lookup"><span data-stu-id="b7a63-117">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e9d6a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9d6a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7a63-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7a63-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +38,29 @@ ms.locfileid: "42452216"
 GET /policies/tokenLifetimePolicies/{id}/appliesTo
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e9d6a-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e9d6a-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7a63-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b7a63-119">Optional query parameters</span></span>
 
-<span data-ttu-id="e9d6a-120">此方法支持`$expand` `$select`和`$top` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-120">This method supports the `$expand`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="e9d6a-121">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="e9d6a-122">使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-122">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
+<span data-ttu-id="b7a63-120">此方法支持`$expand` `$select`和`$top` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b7a63-120">This method supports the `$expand`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="b7a63-121">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="b7a63-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="b7a63-122">使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。</span><span class="sxs-lookup"><span data-stu-id="b7a63-122">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e9d6a-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="e9d6a-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b7a63-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="b7a63-123">Request headers</span></span>
 
-| <span data-ttu-id="e9d6a-124">名称</span><span class="sxs-lookup"><span data-stu-id="e9d6a-124">Name</span></span>      |<span data-ttu-id="e9d6a-125">说明</span><span class="sxs-lookup"><span data-stu-id="e9d6a-125">Description</span></span>|
+| <span data-ttu-id="b7a63-124">名称</span><span class="sxs-lookup"><span data-stu-id="b7a63-124">Name</span></span>      |<span data-ttu-id="b7a63-125">说明</span><span class="sxs-lookup"><span data-stu-id="b7a63-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e9d6a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9d6a-126">Authorization</span></span> | <span data-ttu-id="e9d6a-127">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="e9d6a-127">Bearer {token}</span></span> |
+| <span data-ttu-id="b7a63-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7a63-126">Authorization</span></span> | <span data-ttu-id="b7a63-127">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="b7a63-127">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e9d6a-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9d6a-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7a63-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b7a63-128">Request body</span></span>
 
-<span data-ttu-id="e9d6a-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b7a63-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b7a63-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e9d6a-130">响应</span><span class="sxs-lookup"><span data-stu-id="e9d6a-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7a63-130">响应</span><span class="sxs-lookup"><span data-stu-id="b7a63-130">Response</span></span>
 
-<span data-ttu-id="e9d6a-131">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-131">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="b7a63-131">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b7a63-131">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e9d6a-132">示例</span><span class="sxs-lookup"><span data-stu-id="e9d6a-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7a63-132">示例</span><span class="sxs-lookup"><span data-stu-id="b7a63-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e9d6a-133">请求</span><span class="sxs-lookup"><span data-stu-id="e9d6a-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b7a63-133">请求</span><span class="sxs-lookup"><span data-stu-id="b7a63-133">Request</span></span>
 
-<span data-ttu-id="e9d6a-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-134">The following is an example of the request.</span></span>
+<span data-ttu-id="b7a63-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b7a63-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_appliesto"
@@ -70,11 +70,11 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/tokenLifetimePolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a><span data-ttu-id="e9d6a-135">响应</span><span class="sxs-lookup"><span data-stu-id="e9d6a-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b7a63-135">响应</span><span class="sxs-lookup"><span data-stu-id="b7a63-135">Response</span></span>
 
-<span data-ttu-id="e9d6a-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-136">The following is an example of the response.</span></span>
+<span data-ttu-id="b7a63-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b7a63-136">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e9d6a-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9d6a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b7a63-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b7a63-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
