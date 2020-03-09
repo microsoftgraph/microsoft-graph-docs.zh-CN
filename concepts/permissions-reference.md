@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 39b2ead5bc41866eb13ee045e507181157a4cb58
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 89c63ceda8d9e50ba49291c760a430a750bbb670
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394629"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562456"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1233,6 +1233,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
+| _Policy.ReadWrite.ApplicationConfiguration_ | 读写组织的应用程序配置策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
@@ -1242,6 +1243,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
+| _Policy.Read.ApplicationConfiguration_ | 阅读组织的应用程序配置策略 | 允许应用无需登录的用户即可读取你所在组织的所有应用配置策略。 | 是 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
 
@@ -1252,6 +1254,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.Read.All_读取你所在组织的策略 (`GET /policies`)
 * _Policy.Read.All_读取你所在组织的信任框架策略 (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_读取你所在组织的功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.ApplicationConfiguration：读写组织的应用程序配置策略 (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
