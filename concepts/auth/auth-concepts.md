@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
 ms.openlocfilehash: 3b680e906b6adacb0e737b34d50f69d2ad36675f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870910"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562393"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
