@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: c439cf8f53a6ce7a9be146e02888ba4a819101ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae1562c726e14cca28b2008f550c5f852168ca00
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521612"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572396"
 ---
 # <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,6 +28,7 @@ Azure Active Directory （Azure AD）使用策略控制组织中的 Azure AD 功
 |[claimsMappingPolicies](claimsMappingPolicy.md)| 表示对颁发给特定应用程序的令牌的 WS 馈送、SAML、OAuth 2.0 和 OpenID Connect 协议的声明映射策略。 | 创建和分配策略以省略颁发给服务主体的令牌中的基本声明。 |
 |[homeRealmDiscoveryPolicies](homeRealmDiscoveryPolicy.md)| 表示用于控制联盟用户的 Azure Active Directory 身份验证行为的策略，尤其适用于联合域中的自动加速和用户身份验证限制。| 将所有用户配置为跳过 "主页领域发现"，并将其直接路由到 ADFS 进行身份验证。 |
 |[tokenLifetimePolicies](tokenlifetimepolicy.md)|表示用于访问受保护的资源的访问令牌的生存期持续时间。| 配置一个具有短于默认令牌生存期的特别敏感的应用程序。|
+|[tokenIssuancePolicy](tokenIssuancePolicy.md)|表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。| 配置用于发出 SAML 令牌的签名算法或 SAML 令牌版本。
 
 ## <a name="next-steps"></a>后续步骤
 
