@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4621692b7d43b8e73d2b478d226bd12a34619535
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 837973e6d5a8505ae1288d47064d4ab89f69ebca
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41475425"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589943"
 ---
 ```objc
 
@@ -16,16 +16,16 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPolicy *policy = [[MSGraphPolicy alloc] init];
+MSGraphActivityBasedTimeoutPolicy *activityBasedTimeoutPolicy = [[MSGraphActivityBasedTimeoutPolicy alloc] init];
 NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [definitionList addObject: @"definition-value"];
-[policy setDefinition:definitionList];
-[policy setDisplayName:@"displayName-value"];
-[policy setIsOrganizationDefault: true];
+[activityBasedTimeoutPolicy setDefinition:definitionList];
+[activityBasedTimeoutPolicy setDisplayName:@"displayName-value"];
+[activityBasedTimeoutPolicy setIsOrganizationDefault: true];
 
 NSError *error;
-NSData *policyData = [policy getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:policyData];
+NSData *activityBasedTimeoutPolicyData = [activityBasedTimeoutPolicy getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:activityBasedTimeoutPolicyData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

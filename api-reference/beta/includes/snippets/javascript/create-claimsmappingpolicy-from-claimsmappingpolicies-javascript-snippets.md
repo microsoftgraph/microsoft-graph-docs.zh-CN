@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cfd3bf74239a0a5ef2806ee55d88617a4f941305
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 754553d925e325e0c34de415c07139ca6d111371
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41476335"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589771"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const policy = {
+const claimsMappingPolicy = {
   definition: [
     "definition-value"
   ],
@@ -25,6 +25,6 @@ const policy = {
 
 let res = await client.api('/policies/claimsMappingPolicies')
     .version('beta')
-    .post(policy);
+    .post(claimsMappingPolicy);
 
 ```

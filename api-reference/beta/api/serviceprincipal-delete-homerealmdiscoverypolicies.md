@@ -5,32 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b6e1a0c0568fbb72d26b7e51e731fa66301d6cec
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 3e167a5a913347be5514de2b2820943a3512a64c
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562729"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589006"
 ---
-# <a name="remove-homerealmdiscoverypolicy"></a><span data-ttu-id="0787c-103">删除 homeRealmDiscoveryPolicy</span><span class="sxs-lookup"><span data-stu-id="0787c-103">Remove homeRealmDiscoveryPolicy</span></span>
+# <a name="remove-homerealmdiscoverypolicy"></a><span data-ttu-id="bf9be-103">删除 homeRealmDiscoveryPolicy</span><span class="sxs-lookup"><span data-stu-id="bf9be-103">Remove homeRealmDiscoveryPolicy</span></span>
 
-<span data-ttu-id="0787c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0787c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bf9be-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf9be-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0787c-105">从[servicePrincipal](../resources/servicePrincipal.md)中删除[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 。</span><span class="sxs-lookup"><span data-stu-id="0787c-105">Remove a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) from a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
+<span data-ttu-id="bf9be-105">从[servicePrincipal](../resources/servicePrincipal.md)中删除[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 。</span><span class="sxs-lookup"><span data-stu-id="bf9be-105">Remove a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) from a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0787c-106">权限</span><span class="sxs-lookup"><span data-stu-id="0787c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf9be-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="bf9be-106">Permissions</span></span>
 
-<span data-ttu-id="0787c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0787c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf9be-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bf9be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0787c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="0787c-109">Permission type</span></span>                        | <span data-ttu-id="0787c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0787c-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="bf9be-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="bf9be-109">Permission type</span></span>                        | <span data-ttu-id="bf9be-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bf9be-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="0787c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0787c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="0787c-112">Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。</span><span class="sxs-lookup"><span data-stu-id="0787c-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
-| <span data-ttu-id="0787c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0787c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0787c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="0787c-114">Not supported.</span></span> |
-| <span data-ttu-id="0787c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="0787c-115">Application</span></span>                            | <span data-ttu-id="0787c-116">Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。</span><span class="sxs-lookup"><span data-stu-id="0787c-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="bf9be-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bf9be-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="bf9be-112">Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。</span><span class="sxs-lookup"><span data-stu-id="bf9be-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
+| <span data-ttu-id="bf9be-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bf9be-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf9be-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="bf9be-114">Not supported.</span></span> |
+| <span data-ttu-id="bf9be-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="bf9be-115">Application</span></span>                            | <span data-ttu-id="bf9be-116">Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。</span><span class="sxs-lookup"><span data-stu-id="bf9be-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0787c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0787c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf9be-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bf9be-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,25 +38,27 @@ ms.locfileid: "42562729"
 DELETE /servicePrincipals/{id}/homeRealmDiscoveryPolicies/{id}$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0787c-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="0787c-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bf9be-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="bf9be-118">Request headers</span></span>
 
-| <span data-ttu-id="0787c-119">名称</span><span class="sxs-lookup"><span data-stu-id="0787c-119">Name</span></span>          | <span data-ttu-id="0787c-120">说明</span><span class="sxs-lookup"><span data-stu-id="0787c-120">Description</span></span>   |
+| <span data-ttu-id="bf9be-119">名称</span><span class="sxs-lookup"><span data-stu-id="bf9be-119">Name</span></span>          | <span data-ttu-id="bf9be-120">说明</span><span class="sxs-lookup"><span data-stu-id="bf9be-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="0787c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="0787c-121">Authorization</span></span> | <span data-ttu-id="0787c-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="0787c-122">Bearer {token}</span></span> |
+| <span data-ttu-id="bf9be-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bf9be-121">Authorization</span></span> | <span data-ttu-id="bf9be-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="bf9be-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0787c-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="0787c-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bf9be-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="bf9be-123">Request body</span></span>
 
-<span data-ttu-id="0787c-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0787c-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="bf9be-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bf9be-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0787c-125">响应</span><span class="sxs-lookup"><span data-stu-id="0787c-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bf9be-125">响应</span><span class="sxs-lookup"><span data-stu-id="bf9be-125">Response</span></span>
 
-<span data-ttu-id="0787c-126">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="0787c-126">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="bf9be-126">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="bf9be-126">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0787c-127">示例</span><span class="sxs-lookup"><span data-stu-id="0787c-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="bf9be-127">示例</span><span class="sxs-lookup"><span data-stu-id="bf9be-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="0787c-128">请求</span><span class="sxs-lookup"><span data-stu-id="0787c-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="bf9be-128">请求</span><span class="sxs-lookup"><span data-stu-id="bf9be-128">Request</span></span>
 
-<span data-ttu-id="0787c-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="0787c-129">The following is an example of the request.</span></span>
+<span data-ttu-id="bf9be-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bf9be-129">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="bf9be-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf9be-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_homerealmdiscoverypolicy_from_serviceprincipal"
@@ -65,10 +67,24 @@ DELETE /servicePrincipals/{id}/homeRealmDiscoveryPolicies/{id}$ref
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPolicies/{id}/$ref
 ```
+# <a name="c"></a>[<span data-ttu-id="bf9be-131">C#</span><span class="sxs-lookup"><span data-stu-id="bf9be-131">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-homerealmdiscoverypolicy-from-serviceprincipal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="0787c-130">响应</span><span class="sxs-lookup"><span data-stu-id="0787c-130">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="bf9be-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bf9be-132">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-homerealmdiscoverypolicy-from-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="0787c-131">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="0787c-131">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="bf9be-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bf9be-133">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-homerealmdiscoverypolicy-from-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="bf9be-134">响应</span><span class="sxs-lookup"><span data-stu-id="bf9be-134">Response</span></span>
+
+<span data-ttu-id="bf9be-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bf9be-135">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

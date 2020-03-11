@@ -5,32 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6633fdf13818a2b9af5b8968a1e82e5a4315b83f
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 49483db94f77151364932869c4ae58861530ce2f
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562806"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590237"
 ---
-# <a name="assign-homerealmdiscoverypolicy"></a><span data-ttu-id="fa1db-103">分配 homeRealmDiscoveryPolicy</span><span class="sxs-lookup"><span data-stu-id="fa1db-103">Assign homeRealmDiscoveryPolicy</span></span>
+# <a name="assign-homerealmdiscoverypolicy"></a><span data-ttu-id="ff864-103">分配 homeRealmDiscoveryPolicy</span><span class="sxs-lookup"><span data-stu-id="ff864-103">Assign homeRealmDiscoveryPolicy</span></span>
 
-<span data-ttu-id="fa1db-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa1db-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ff864-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff864-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fa1db-105">将[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)分配给[servicePrincipal](../resources/servicePrincipal.md)。</span><span class="sxs-lookup"><span data-stu-id="fa1db-105">Assign a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
+<span data-ttu-id="ff864-105">将[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)分配给[servicePrincipal](../resources/servicePrincipal.md)。</span><span class="sxs-lookup"><span data-stu-id="ff864-105">Assign a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fa1db-106">权限</span><span class="sxs-lookup"><span data-stu-id="fa1db-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff864-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="ff864-106">Permissions</span></span>
 
-<span data-ttu-id="fa1db-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa1db-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ff864-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ff864-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fa1db-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa1db-109">Permission type</span></span>                        | <span data-ttu-id="fa1db-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fa1db-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ff864-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ff864-109">Permission type</span></span>                        | <span data-ttu-id="ff864-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ff864-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="fa1db-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa1db-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa1db-112">Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。</span><span class="sxs-lookup"><span data-stu-id="fa1db-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
-| <span data-ttu-id="fa1db-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa1db-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa1db-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa1db-114">Not supported.</span></span> |
-| <span data-ttu-id="fa1db-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa1db-115">Application</span></span>                            | <span data-ttu-id="fa1db-116">Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。</span><span class="sxs-lookup"><span data-stu-id="fa1db-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="ff864-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ff864-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ff864-112">Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。</span><span class="sxs-lookup"><span data-stu-id="ff864-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
+| <span data-ttu-id="ff864-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ff864-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff864-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ff864-114">Not supported.</span></span> |
+| <span data-ttu-id="ff864-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ff864-115">Application</span></span>                            | <span data-ttu-id="ff864-116">Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。</span><span class="sxs-lookup"><span data-stu-id="ff864-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fa1db-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa1db-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff864-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ff864-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,28 +38,28 @@ ms.locfileid: "42562806"
 POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fa1db-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa1db-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ff864-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="ff864-118">Request headers</span></span>
 
-| <span data-ttu-id="fa1db-119">名称</span><span class="sxs-lookup"><span data-stu-id="fa1db-119">Name</span></span>          | <span data-ttu-id="fa1db-120">说明</span><span class="sxs-lookup"><span data-stu-id="fa1db-120">Description</span></span>   |
+| <span data-ttu-id="ff864-119">名称</span><span class="sxs-lookup"><span data-stu-id="ff864-119">Name</span></span>          | <span data-ttu-id="ff864-120">说明</span><span class="sxs-lookup"><span data-stu-id="ff864-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="fa1db-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa1db-121">Authorization</span></span> | <span data-ttu-id="fa1db-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="fa1db-122">Bearer {token}</span></span> |
-| <span data-ttu-id="fa1db-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fa1db-123">Content-Type</span></span> | <span data-ttu-id="fa1db-124">application/json</span><span class="sxs-lookup"><span data-stu-id="fa1db-124">application/json</span></span> |
+| <span data-ttu-id="ff864-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff864-121">Authorization</span></span> | <span data-ttu-id="ff864-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="ff864-122">Bearer {token}</span></span> |
+| <span data-ttu-id="ff864-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ff864-123">Content-Type</span></span> | <span data-ttu-id="ff864-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ff864-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fa1db-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="fa1db-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ff864-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="ff864-125">Request body</span></span>
 
-<span data-ttu-id="fa1db-126">在请求正文中，提供应分配给服务主体的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的`@odata.id`标识符（使用属性）。</span><span class="sxs-lookup"><span data-stu-id="fa1db-126">In the request body, supply the identifier of the [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object (using an `@odata.id` property) that should be assigned to the service principal.</span></span>
+<span data-ttu-id="ff864-126">在请求正文中，提供应分配给服务主体的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的`@odata.id`标识符（使用属性）。</span><span class="sxs-lookup"><span data-stu-id="ff864-126">In the request body, supply the identifier of the [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object (using an `@odata.id` property) that should be assigned to the service principal.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fa1db-127">响应</span><span class="sxs-lookup"><span data-stu-id="fa1db-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ff864-127">响应</span><span class="sxs-lookup"><span data-stu-id="ff864-127">Response</span></span>
 
-<span data-ttu-id="fa1db-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="fa1db-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ff864-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ff864-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fa1db-130">示例</span><span class="sxs-lookup"><span data-stu-id="fa1db-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ff864-130">示例</span><span class="sxs-lookup"><span data-stu-id="ff864-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fa1db-131">请求</span><span class="sxs-lookup"><span data-stu-id="fa1db-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ff864-131">请求</span><span class="sxs-lookup"><span data-stu-id="ff864-131">Request</span></span>
 
-<span data-ttu-id="fa1db-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fa1db-132">The following is an example of the request.</span></span>
+<span data-ttu-id="ff864-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ff864-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fa1db-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="fa1db-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ff864-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff864-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_homerealmdiscoverypolicy_from_serviceprincipal"
@@ -73,16 +73,24 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="fa1db-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fa1db-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ff864-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff864-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-homerealmdiscoverypolicy-from-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[<span data-ttu-id="ff864-135">C#</span><span class="sxs-lookup"><span data-stu-id="ff864-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-homerealmdiscoverypolicy-from-serviceprincipal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="ff864-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff864-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-homerealmdiscoverypolicy-from-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fa1db-135">响应</span><span class="sxs-lookup"><span data-stu-id="fa1db-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ff864-137">响应</span><span class="sxs-lookup"><span data-stu-id="ff864-137">Response</span></span>
 
-<span data-ttu-id="fa1db-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fa1db-136">The following is an example of the response.</span></span>
+<span data-ttu-id="ff864-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ff864-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

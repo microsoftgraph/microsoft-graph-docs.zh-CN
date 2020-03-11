@@ -677,6 +677,8 @@
                   href: api/event-list-attachments.md
                 - name: 添加附件
                   href: api/event-post-attachments.md
+                - name: 创建会话以附加大型文件
+                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
@@ -725,6 +727,8 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
+                - name: 创建会话以附加大型文件
+                  href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
                 - name: 删除附件
@@ -1908,7 +1912,7 @@
                 - name: Office 套件应用
                   href: resources/intune-apps-officesuiteapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-officesuiteapp-list.md
                     - name: 获取
                       href: api/intune-apps-officesuiteapp-get.md
@@ -1936,7 +1940,7 @@
                 - name: 用户应用安装状态
                   href: resources/intune-apps-userappinstallstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-userappinstallstatus-list.md
                     - name: 获取
                       href: api/intune-apps-userappinstallstatus-get.md
@@ -2780,7 +2784,7 @@
                 - name: Android for Work 符合性策略
                   href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -2795,7 +2799,7 @@
                 - name: Android for Work 自定义配置
                   href: resources/intune-deviceconfig-androidforworkcustomconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
@@ -3853,7 +3857,7 @@
                 - name: 组策略演示文稿多文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -3866,7 +3870,7 @@
                 - name: 组策略演示文稿文本
                   href: resources/intune-grouppolicy-grouppolicypresentationtext.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
@@ -6406,7 +6410,7 @@
                 - name: 管理条件
                   href: resources/intune-fencing-managementcondition.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-fencing-managementcondition-list.md
                     - name: 获取
                       href: api/intune-fencing-managementcondition-get.md
@@ -6421,7 +6425,7 @@
                 - name: 管理条件语句
                   href: resources/intune-fencing-managementconditionstatement.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-fencing-managementconditionstatement-list.md
                     - name: 获取
                       href: api/intune-fencing-managementconditionstatement-get.md
@@ -7618,7 +7622,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: 列表
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: 删除
+                    - name: Delete
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: 设备管理脚本
                   href: resources/intune-shared-devicemanagementscript.md
@@ -9140,6 +9144,21 @@
                       href: api/homerealmdiscoverypolicy-delete.md
                     - name: 列出已应用到应用程序的策略
                       href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: 令牌颁发策略
+                  href: resources/tokenissuancepolicy.md
+                  items:
+                    - name: 创建
+                      href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                    - name: 列出
+                      href: api/tokenissuancepolicy-list.md
+                    - name: 获取
+                      href: api/tokenissuancepolicy-get.md
+                    - name: 更新
+                      href: api/tokenissuancepolicy-update.md
+                    - name: 删除
+                      href: api/tokenissuancepolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/tokenissuancepolicy-list-appliesto.md
                 - name: 令牌生存期策略
                   href: resources/tokenlifetimepolicy.md
                   items:
@@ -9437,7 +9456,7 @@
             - name: 用户流
               href: resources/identityuserflow.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/identityuserflow-list.md
                 - name: 创建
                   href: api/identityuserflow-post-userflows.md
@@ -9493,7 +9512,7 @@
                   href: api/message-list-attachments.md
                 - name: 添加附件
                   href: api/message-post-attachments.md
-                - name: 创建会话以附加大型文件（预览）
+                - name: 创建会话以附加大型文件
                   href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
@@ -9508,7 +9527,7 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
-                - name: 创建会话以附加大型文件（预览）
+                - name: 创建会话以附加大型文件
                   href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -9872,7 +9891,7 @@
                 - name: Web 帐户
                   href: resources/webaccount.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-webaccounts.md
                     - name: 创建
                       href: api/profile-post-webaccounts.md
@@ -10735,6 +10754,8 @@
                   href: api/event-list-attachments.md
                 - name: 添加附件
                   href: api/event-post-attachments.md
+                - name: 创建会话以附加大型文件
+                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
@@ -10800,7 +10821,7 @@
                       href: api/openshift-get.md
                     - name: 更新
                       href: api/openshift-update.md
-                    - name: 删除
+                    - name: Delete
                       href: api/openshift-delete.md
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
@@ -10868,7 +10889,7 @@
                       href: api/timeoffrequest-get.md
                     - name: 更新
                       href: api/timeoffrequest-update.md
-                    - name: 删除
+                    - name: Delete
                       href: api/timeoffrequest-delete.md
                     - name: 批准
                       href: api/timeoffrequest-approve.md
@@ -10921,7 +10942,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -10940,7 +10961,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 41bea0ae09b8a81a6a5b3ed70095f25486107f3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d952b1f0cbde3504b85df85b141a724fb012f48b
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448444"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589709"
 ---
 ```javascript
 
@@ -19,7 +19,6 @@ const accessPackageAssignmentPolicy = {
   accessPackageId: "56ff43fd-6b05-48df-9634-956a777fce6d",
   displayName: "direct",
   description: "direct assignments by administrator",
-  isDenyPolicy: false,
   accessReviewSettings: null,
   requestorSettings: {
     scopeType: "NoSubjects",

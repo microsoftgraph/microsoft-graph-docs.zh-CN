@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ba146b9dac61e602ea5209893f429d24f9d05268
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: c80aa59134f1db93ec1334632d7de7522b11fab9
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41475744"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590036"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const {id} = {
+const homeRealmDiscoveryPolicy = {
   definition: [
     "definition-value"
   ],
@@ -26,6 +26,6 @@ const {id} = {
 
 let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
     .version('beta')
-    .update({id});
+    .update(homeRealmDiscoveryPolicy);
 
 ```
