@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7558feb97f0d97500b7e9c0a9d1f3462efd7c57f
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: cd460244b2c1ae3ba39ed9f939f3aa05d70ca5b1
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41476363"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42593430"
 ---
 ```objc
 
@@ -18,7 +18,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphPolicy *policy = [[MSGraphPolicy alloc] initWithData:data error:&nserror];
+        NSError *jsonError = nil;
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphClaimsMappingPolicy *claimsMappingPolicy = [[MSGraphClaimsMappingPolicy alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
