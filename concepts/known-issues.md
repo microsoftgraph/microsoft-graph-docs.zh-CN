@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 2e829da3a7e99ff5991a94cb37c5c8282c065916
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562463"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590823"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -158,6 +158,9 @@ GET /me/calendars/{id}/events
 * [列出用户的日历](/graph/api/user-list-calendars?view=graph-rest-1.0)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar?view=graph-rest-1.0)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
 * 还可以[列出基于 ICS 的日历事件](/graph/api/calendar-list-events?view=graph-rest-1.0)。
 
+### <a name="attaching-large-files-to-events"></a>将大型文件附加到事件
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) 才会成功。
+
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Microsoft Teams 的 onlineMeetingUrl 属性支持
 
 目前，Skype 会议[事件](/graph/api/resources/event?view=graph-rest-1.0)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
@@ -218,7 +221,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ## <a name="messages"></a>邮件
 
 ### <a name="attaching-large-files-to-messages"></a>将大型文件附加到邮件
-尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) 才会成功。
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) 才会成功。
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 
