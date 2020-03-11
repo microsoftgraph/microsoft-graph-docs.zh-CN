@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 907327739d8b5f9d4ee89ed95312b90d322b9eb1
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: b76e01a6dd7fc421fbf853e16875a0c36a460171
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41475429"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589938"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const policy = {
+const activityBasedTimeoutPolicy = {
   definition: [
     "definition-value"
   ],
@@ -25,6 +25,6 @@ const policy = {
 
 let res = await client.api('/policies/activityBasedTimeoutPolicies')
     .version('beta')
-    .post(policy);
+    .post(activityBasedTimeoutPolicy);
 
 ```

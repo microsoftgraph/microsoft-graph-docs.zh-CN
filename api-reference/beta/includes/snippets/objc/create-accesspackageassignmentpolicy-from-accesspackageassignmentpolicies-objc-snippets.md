@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7b241ad1d748b4f6fc990119c583294b4032b323
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11440f4f795dc2ca69aa4ebd4fdc1bd2eb907cbb
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448446"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589711"
 ---
 ```objc
 
@@ -20,7 +20,6 @@ MSGraphAccessPackageAssignmentPolicy *accessPackageAssignmentPolicy = [[MSGraphA
 [accessPackageAssignmentPolicy setAccessPackageId:@"56ff43fd-6b05-48df-9634-956a777fce6d"];
 [accessPackageAssignmentPolicy setDisplayName:@"direct"];
 [accessPackageAssignmentPolicy setDescription:@"direct assignments by administrator"];
-[accessPackageAssignmentPolicy setIsDenyPolicy: false];
 [accessPackageAssignmentPolicy setAccessReviewSettings: null];
 MSGraphRequestorSettings *requestorSettings = [[MSGraphRequestorSettings alloc] init];
 [requestorSettings setScopeType:@"NoSubjects"];
