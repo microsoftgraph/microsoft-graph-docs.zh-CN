@@ -677,8 +677,6 @@
                   href: api/event-list-attachments.md
                 - name: 添加附件
                   href: api/event-post-attachments.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
@@ -727,8 +725,6 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
                 - name: 删除附件
@@ -1912,7 +1908,7 @@
                 - name: Office 套件应用
                   href: resources/intune-apps-officesuiteapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-officesuiteapp-list.md
                     - name: 获取
                       href: api/intune-apps-officesuiteapp-get.md
@@ -1940,7 +1936,7 @@
                 - name: 用户应用安装状态
                   href: resources/intune-apps-userappinstallstatus.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-userappinstallstatus-list.md
                     - name: 获取
                       href: api/intune-apps-userappinstallstatus-get.md
@@ -2784,7 +2780,7 @@
                 - name: Android for Work 符合性策略
                   href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -2799,7 +2795,7 @@
                 - name: Android for Work 自定义配置
                   href: resources/intune-deviceconfig-androidforworkcustomconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
@@ -3857,7 +3853,7 @@
                 - name: 组策略演示文稿多文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -3870,7 +3866,7 @@
                 - name: 组策略演示文稿文本
                   href: resources/intune-grouppolicy-grouppolicypresentationtext.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
@@ -6410,7 +6406,7 @@
                 - name: 管理条件
                   href: resources/intune-fencing-managementcondition.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-fencing-managementcondition-list.md
                     - name: 获取
                       href: api/intune-fencing-managementcondition-get.md
@@ -6425,7 +6421,7 @@
                 - name: 管理条件语句
                   href: resources/intune-fencing-managementconditionstatement.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-fencing-managementconditionstatement-list.md
                     - name: 获取
                       href: api/intune-fencing-managementconditionstatement-get.md
@@ -9512,7 +9508,7 @@
                   href: api/message-list-attachments.md
                 - name: 添加附件
                   href: api/message-post-attachments.md
-                - name: 创建会话以附加大型文件
+                - name: 创建会话以附加大型文件（预览）
                   href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
@@ -9527,7 +9523,7 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
-                - name: 创建会话以附加大型文件
+                - name: 创建会话以附加大型文件（预览）
                   href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -10754,8 +10750,6 @@
                   href: api/event-list-attachments.md
                 - name: 添加附件
                   href: api/event-post-attachments.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
