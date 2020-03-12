@@ -617,8 +617,6 @@
                   href: api/event-list-attachments.md
                 - name: 添加附件
                   href: api/event-post-attachments.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
@@ -667,8 +665,6 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
                 - name: 删除附件
@@ -1705,7 +1701,7 @@
                 - name: 设备配置用户状态
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -1734,7 +1730,7 @@
                 - name: 版本升级配置
                   href: resources/intune-deviceconfig-editionupgradeconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
@@ -2142,7 +2138,7 @@
                 - name: Windows 10 协同版常规配置
                   href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -2155,7 +2151,7 @@
                 - name: Windows 8.1 合规性策略
                   href: resources/intune-deviceconfig-windows81compliancepolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windows81compliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81compliancepolicy-get.md
@@ -3582,8 +3578,6 @@
                   href: api/message-list-attachments.md
                 - name: 添加附件
                   href: api/message-post-attachments.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 创建开放扩展
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
@@ -3597,8 +3591,6 @@
                   href: resources/itemattachment.md
                 - name: 引用附件类型
                   href: resources/referenceattachment.md
-                - name: 创建会话以附加大型文件
-                  href: api/attachment-createuploadsession.md
                 - name: 获取附件
                   href: api/attachment-get.md
                 - name: 删除附件
