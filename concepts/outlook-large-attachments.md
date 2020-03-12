@@ -1,46 +1,47 @@
 ---
-title: 将大文件附加到 Outlook 邮件
-description: 可选择两种方法中的一种来将文件附加到邮件，具体取决于文件的大小。
+title: 将大文件附加到 Outlook 邮件或事件
+description: 可选择两种方法中的一种来将文件附加到邮件或事件，具体取决于文件的大小。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5f6f54adf38c0f2827b587e6646df4cb3549a204
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30589b4aeeb6d6f8a17dfefd677abadeba3c76bd
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448569"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590912"
 ---
-# <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>将大文件作为附件附加到 Outlook 邮件（预览）
+# <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 
-可选择两种方法中的一种来将文件附加到[邮件](/graph/api/resources/message?view=graph-rest-beta)，具体取决于文件的大小：
+使用 Microsoft Graph API，可将最大 150 MB 的文件附加到 Outlook [邮件](/graph/api/resources/message?view=graph-rest-1.0)或 [事件](/graph/api/resources/event?view=graph-rest-1.0)项目。 根据文件大小，选择以下两种方法之一来附加文件：
+- 如果文件大小小于 3 MB，应该针对 Outlook 项的**附件**导航属性执行单个 POST；了解如何针对[邮件](/graph/api/message-post-attachments?view=graph-rest-1.0)或[事件](/graph/api/event-post-attachments?view=graph-rest-1.0)执行此操作。 成功的 `POST` 响应包括文件附件的 ID。
+- 如果文件大小介于 3MB 和 150MB 之间，则创建一个上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整的文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。
 
-- 如果文件大小小于 3 MB，则可以[针对邮件的附件导航属性执行单个 POST](/graph/api/message-post-attachments?view=graph-rest-beta)。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
-- 如果文件大小介于 3MB 和 150MB 之间，则创建一个上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整的文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。 
+若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加文件。
 
-若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加。
-
-本文使用一个示例来阐释第二种方法。 该示例创建并使用上传会话，将大文件附件（大小超过 3MB）添加到特定邮件。 成功上传整个文件时，它会获取一个 URL，其中包含文件附件的 ID，可用于执行其他操作，如获取文件附件元数据。
+本文逐步介绍了第二种方法，创建并使用上传会话来添加大型文件附件（大小超过 3 MB）至 Outlook 项。 各步显示相应的邮件或事件代码。 成功上传整个文件后，文章显示获取含有文件附件 ID 的响应标头，随后显示使用附件 ID 来获取原始附件内容或附件元数据。 
 
 > [!IMPORTANT] 
-> 如果要将大文件附加到共享或委派邮箱中的邮件，请注意一个[已知问题](known-issues.md#attaching-large-files-to-messages)。
+> 如果要将大文件附加到共享或委派邮箱中的邮件或事件，请注意一个[已知问题](known-issues.md#attaching-large-files-to-messages)。
 
 ## <a name="step-1-create-an-upload-session"></a>第 1 步：创建上传会话
 
-[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-beta)，将文件附加到邮件。 在输入参数 **AttachmentItem** 中指定文件。
+[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-1.0)，将文件附加到邮件或事件。 在输入参数 **AttachmentItem** 中指定文件。
 
-成功的操作返回 `HTTP 201 Created` 和新的 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) 实例，其中包含可在后续 `PUT` 操作中用于上传文件各部分的非跳转 URL。 **uploadSession** 提供一个临时存储位置，在此位置保存文件字节数，直到完整文件上传完毕。
+成功的操作返回 `HTTP 201 Created` 和新的 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) 实例，其中包含可在后续 `PUT` 操作中用于上传文件各部分的非跳转 URL。 **uploadSession** 提供一个临时存储位置，在此位置保存文件字节数，直到完整文件上传完毕。
 
-请务必请求 `Mail.ReadWrite` 权限以创建 **uploadSession**。 新的 **uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
+请务必请求 `Mail.ReadWrite` 权限，以为邮件创建 **uploadSession**，并为事件创建 `Calendars.ReadWrite`。 新的 **uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
 
 响应中的 **uploadSession** 对象还包含 **nextExpectedRanges** 属性，这指示初始上传开始位置应该为 0 字节。
 
-### <a name="example-request-create-an-upload-session"></a>示例请求：创建上传会话
+### <a name="example-create-an-upload-session-for-a-message"></a>示例：创建邮件的上传会话
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "sampleKeys": ["AAMkADI5MAAIT3drCAAA="]
 }-->
 ```http
@@ -70,10 +71,12 @@ Content-type: application/json
 ---
 
 
-### <a name="example-response-get-an-uploadsession-object"></a>示例响应：获取 uploadSession 对象
+#### <a name="response"></a>响应
+下列示例响应显示为邮件返回的 **uploadSession** 资源。
+
 <!-- {
   "blockType": "response",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.uploadSession"
 } -->
@@ -91,10 +94,56 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-create-an-upload-session-for-an-event"></a>示例：创建事件的上传会话
+#### <a name="request"></a>请求 
+
+<!-- {
+  "blockType": "request",
+  "name": "walkthrough_create_uploadsession_event",
+  "sampleKeys": ["AAMkADU5CCmSAAA="]
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events/AAMkADU5CCmSAAA=/attachments/createUploadSession
+Content-type: application/json
+
+{
+  "AttachmentItem": {
+    "attachmentType": "file",
+    "name": "flower",
+    "size": 3483322
+  }
+}
+```
+
+
+#### <a name="response"></a>响应
+下列示例响应显示为shi'jian事件返回的 **uploadSession** 资源。
+
+<!-- {
+  "blockType": "response",
+  "name": "walkthrough_create_uploadsession_event",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.uploadSession"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw",
+    "expirationDateTime": "2020-02-22T02:46:56.7410786Z",
+    "nextExpectedRanges": [
+        "0-"
+    ]
+}
+
+```
+
 
 ## <a name="step-2-use-the-upload-session-to-upload-a-range-of-bytes-of-the-file"></a>步骤 2：使用上传会话上传文件的字节范围
 
-要上传文件或文件的一部分，请向作为步骤 1 中 **uploadSession** 一部分返回的 **uploadUrl** 属性发出 `PUT` 请求。 可上传整个文件，或将文件拆分为多个字节范围。 为获得更好的性能，请保持每个字节范围小于 4 MB。
+如果要上传文件或文件的一部分，在 **uploadSession** 资源 **uploadUrl** 属性中，对第 1 步返回的 URL 进行 `PUT` 请求。 可上传整个文件，或将文件拆分为多个字节范围。 为获得更好的性能，请保持每个字节范围小于 4 MB。
 
 按如下所述指定请求标头和请求正文。
 
@@ -124,7 +173,8 @@ Content-type: application/json
 -->
 - **uploadUrl** 属性不会显式返回，因为上传会话的所有 `PUT` 操作使用创建会话时返回的同一 URL（步骤 1）。
 
-### <a name="example-request-first-upload"></a>示例请求：第一次上传
+### <a name="example-first-upload-to-the-message"></a>示例：首先上传至消息
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -139,7 +189,9 @@ Content-Range: bytes 0-2097151/3483322
 }
 ```
 
-### <a name="example-response-get-the-start-of-the-next-byte-range-that-the-server-expects"></a>示例响应：获取服务器需要的下一个字节范围的开头
+#### <a name="response"></a>响应
+
+下列示例响应在 **NextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
 <!-- {
   "blockType": "ignored"
 }-->
@@ -154,16 +206,50 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-first-upload-to-the-event"></a>示例：首先上传至事件
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+PUT https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw
+Content-Type: application/octet-stream
+Content-Length: 2097152
+Content-Range: bytes 0-2097151/3483322
+
+{
+  <bytes 0-2097151 of the file to be attached, in binary format>
+}
+```
+
+#### <a name="response"></a>响应
+
+下列示例响应在 **NextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://outlook.office.com/api/beta/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
+    "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
+    "NextExpectedRanges":["2097152"]
+}
+```
+
 
 ## <a name="step-3-continue-uploading-byte-ranges-until-the-entire-file-has-been-uploaded"></a>步骤 3：继续上传字节范围，直至完整文件上传完毕
 
 执行步骤 2 中的初始上传后，在会话的到期日期/时间前，使用步骤 2 中所述的 `PUT` 请求，继续上传文件中剩余的部分。 使用 **NextExpectedRanges** 集合确定要上传的下一个字节范围的开头。 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
-成功上传文件的最后一个字节后，最终 `PUT` 操作返回 `HTTP 201 Created` 以及指示 `https://outlook.office.com` 域中文件附件 URL 的 `Location` 标头。 可从 URL 获取附件 ID 并将其保存供以后使用。 可以使用该 ID [获取附件的元数据](/graph/api/attachment-get?view=graph-rest-beta)，或使用 Microsoft Graph 终结点[将附件从邮件中删除](/graph/api/attachment-delete?view=graph-rest-beta)，具体取决于你的场景。
+成功上传文件的最后一个字节后，最终 `PUT` 操作返回 `HTTP 201 Created` 以及指示 `https://outlook.office.com` 域中文件附件 URL 的 `Location` 标头。 可从 URL 获取附件 ID 并将其保存供以后使用。 可以使用该 ID [获取附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0)，或使用 Microsoft Graph 终结点[将附件从 Outlook 项中删除](/graph/api/attachment-delete?view=graph-rest-1.0)，具体取决于你的场景。
 
-以下示例显示上传文件的最后一个字节范围。
+下列示例显示在此处理步骤中上传最后的文件字节范围至邮件和事件。
 
-### <a name="example-request-final-upload"></a>示例请求：最后一次上传
+### <a name="example-final-upload-to-the-message"></a>示例：最后上传至消息
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -178,9 +264,8 @@ Content-Range: bytes 2097152-3483321/3483322
 }
 ```
 
-### <a name="example-response-get-the-location-response-header-to-save-the-attachment-id"></a>示例响应：获取位置响应标头以保存附件 ID
-
-通过 `Location` 响应标头指定的 URL，保存附件 ID (`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`) 以便日后使用。
+#### <a name="response"></a>响应
+下列示例显示可保存附件 ID（`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`）以供随后使用的 `Location` 响应标头。
 
 <!-- {
   "blockType": "ignored"
@@ -192,33 +277,93 @@ Location: https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-626
 Content-Length: 0
 ```
 
-## <a name="step-4-optional-get-the-file-attachment-from-the-message"></a>步骤 4（可选）：从邮件中获取文件附件
+### <a name="example-final-upload-to-the-event"></a>示例：最后上传至事件
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+PUT https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw
+Content-Type: application/octet-stream
+Content-Length: 1386170
+Content-Range: bytes 2097152-3483321/3483322
 
-和往常一样，从邮件中[获取附件](/graph/api/attachment-get?view=graph-rest-beta)在理论上并不受附件大小限制。
+{
+  <bytes 2097152-3483321 of the file to be attached, in binary format>
+}
+```
+
+#### <a name="response"></a>响应
+下列示例显示可保存附件 ID（`AAMkADU5CCmSAAANZAlYPeyQByv7Y=`）以供随后使用的 `Location` 响应标头。
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 201 Created
+
+Location: https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/Attachments('AAMkADU5CCmSAAANZAlYPeyQByv7Y=')
+Content-Length: 0
+```
+
+## <a name="step-4-optional-get-the-file-attachment-from-the-outlook-item"></a>步骤 4（可选）：从 Outlook 项中获取文件附件
+
+和往常一样，从 Outlook 项中[获取附件](/graph/api/attachment-get?view=graph-rest-1.0)在理论上并不受附件大小限制。
 
 但是，获取采用 base64 编码格式的大文件附件会影响 API 性能。 如果需要大型附件：
 
-- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message?view=graph-rest-1.0)。
-- 要[获取文件附件的元数据](/graph/api/attachment-get?view=graph-rest-beta#example-1-get-the-properties-of-a-file-attachment)，可以附加 `$select` 参数以仅包含所需的元数据属性，排除返回采用 base64 格式的文件附件的 **contentBytes** 属性。
+- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
+- 要[获取文件附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0#example-1-get-the-properties-of-a-file-attachment)，可以附加 `$select` 参数以仅包含所需的元数据属性，排除返回采用 base64 格式的文件附件的 **contentBytes** 属性。
 
-### <a name="example-request-get-the-file-attachment-metadata"></a>示例请求：获取文件附件元数据
+### <a name="example-get-the-raw-file-attached-to-the-event"></a>示例：获取附加到事件的原始文件
+按照事件示例和使用上一步 `Location` 标头中返回的附件 ID，下一示例请求显示使用 `$value` 参数获取附件的原始内容数据。
 
-下面的示例显示发件人使用 `$select` 参数获取邮件中文件附件的所有元数据，除了 **contentBytes**。
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "ignored",
+  "name": "walkthrough_get_attachment_raw",
+  "sampleKeys": ["d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32", "AAMkADU5CCmSAAA=", "AAMkADU5CCmSAAANZAlYPeyQByv7Y="]
+}-->
+```http
+GET https://graph.microsoft.com/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/Attachments('AAMkADU5CCmSAAANZAlYPeyQByv7Y=')/$value
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "ignored",
+  "name": "walkthrough_get_attachment_raw",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+content-length: 3483322
+Content-type: image/jpeg
+
+{Raw bytes of the file}
+```
+
+
+### <a name="example-get-the-metadata-of-the-file-attached-to-the-message"></a>示例：获取邮件附加的文件的元数据
+按照邮件示例，下一示例请求显示使用 `$select` 参数来获取有关邮件的文件附件的部分元数据，不包括 **contentBytes**。
+
+#### <a name="request"></a>请求
 
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_get_attachment",
+  "name": "walkthrough_get_attachment_metadata",
   "sampleKeys": ["a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47", "AAMkADI5MAAIT3drCAAA=", "AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0="]
 }-->
 ```http
 GET https://graph.microsoft.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')?$select=lastModifiedDateTime,name,contentType,size,isInline
 ```
 
-### <a name="example-response"></a>示例响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
-  "name": "walkthrough_get_attachment",
+  "name": "walkthrough_get_attachment_metadata",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -239,12 +384,14 @@ Content-type: application/json
 }
 ```
 
+
 ## <a name="alternative-cancel-the-upload-session"></a>替代方法：取消上传会话
 
 在上传会话到期之前的任何时间，如果必须取消上传，可使用同一初始非跳转 URL 来删除上传会话。 成功的操作将返回 `HTTP 204 No Content`。
 
-### <a name="example-request-cancel-an-upload-session"></a>示例请求：取消上传会话
+### <a name="example-cancel-the-upload-session-for-the-message"></a>示例：取消邮件的上传会话
 
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -252,7 +399,7 @@ Content-type: application/json
 DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0tAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI
 ```
 
-### <a name="example-response"></a>示例响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "ignored"
@@ -264,5 +411,5 @@ HTTP/1.1 204 No content
 
 ### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
 
-尝试[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-beta)以附加小于 3 MB 的文件时返回此错误。 如果文件大小小于 3 MB，则应该[针对邮件的附件导航属性执行单个 POST](/graph/api/message-post-attachments?view=graph-rest-beta)。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
+尝试[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-1.0)以附加小于 3 MB 的文件时返回此错误。 如果文件大小小于 3 MB，则应该针对[邮件](/graph/api/message-post-attachments?view=graph-rest-1.0)或[事件](/graph/api/event-post-attachments?view=graph-rest-1.0)的**附件**导航属性执行单个 POST。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
 
