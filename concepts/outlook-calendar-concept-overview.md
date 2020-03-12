@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 7b79fb25c3f498f284c9bfd582b31dc8ff01fcc0
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840002"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590905"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -113,6 +113,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
   - [使用 Outlook 组织或参加在线会议（预览）](outlook-calendar-online-meetings.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
   - [获取共享事件](outlook-get-shared-events-calendars.md)
+  - [将大文件附加到 Outlook 邮件或事件](outlook-large-attachments.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
 - 查看 Outlook [日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 参考。
 

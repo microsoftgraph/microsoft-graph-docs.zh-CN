@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 70538917e54ff24be9513bb0d1e912d1918c1a59
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 260aa688c3116222638bf91349a72acea0fa1493
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839939"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590968"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -76,9 +76,11 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
   - [创建和发送邮件](outlook-create-send-messages.md)
   - [邮件整理](outlook-organize-messages.md)方法
   - [获取邮件的 MIME 内容](outlook-get-mime-message.md)
+  - [将大文件附加到 Outlook 邮件或事件](outlook-large-attachments.md)
   - [获取共享邮件](outlook-share-messages-folders.md)
-  - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
   - 如何[从其他用户身份发送邮件](outlook-send-mail-from-other-user.md)
+  - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
+  
 
 - 详细了解如何使用 Microsoft Graph v1.0 中的[邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
 

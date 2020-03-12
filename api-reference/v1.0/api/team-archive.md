@@ -5,18 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68037939f6c2abcda77efa6eb0aa606616baf695
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d849f4166e0481accb991c6f318e486917e562e3
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509448"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572389"
 ---
 # <a name="archive-team"></a>存档团队
 
 命名空间：microsoft.graph
-
-
 
 存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
 仍可向团队进行成员身份更改。
@@ -56,6 +54,9 @@ POST /teams/{id}/archive
 }
 ```
 此可选参数定义了是否在与团队关联的 Sharepoint Online 网站上将团队成员的权限设置为“只读”。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
+
+>[!IMPORTANT]
+>应用程序上下文不支持 `shouldSetSpoSiteReadOnlyForMembers` 参数。
 
 ## <a name="response"></a>响应
 
