@@ -3,14 +3,14 @@ title: Microsoft Graph beta 终结点参考
 description: 此部分中的参考内容记录了 Microsoft Graph beta 终结点。 beta 终结点包含当前处于预览版且未正式发布的 API。 我们诚邀你来试用这些 API 并通过下列渠道提供反馈：
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: adfb0abf2feab3d6846d6636136f413d7986f375
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: non-product-specific
+author: angelgolfer-ms
+ms.openlocfilehash: 39366a6460523bd5549270982b581b6e93fa95d8
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974491"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618645"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点参考
 
@@ -26,7 +26,7 @@ ms.locfileid: "35974491"
 针对 beta 终结点的 Microsoft Graph API 请求使用以下模式：
 
 ```
-    https://graph.microsoft.com/beta/{resource}?[query_parameters]
+https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
 有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。
