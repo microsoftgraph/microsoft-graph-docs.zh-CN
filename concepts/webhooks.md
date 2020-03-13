@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: ea8e56a657e32a5de1057f8199d27d256ab44168
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 099a5af3dafe3d1f7531f88583236cb1ab381ab7
+ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394622"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42606846"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -140,6 +140,7 @@ Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属
 1. Microsoft Graph 将 POST 请求发送到通知 URL：
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
