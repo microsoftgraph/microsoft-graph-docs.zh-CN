@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 报告 API 访问的报告数据是敏感
 author: yixia
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 4fbdd9bec46db414cfd9f330b698c93ddcad9e27
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b62da7d042f4dc61c2ee4da648fd0b612f5caac8
+ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871589"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42606175"
 ---
 # <a name="authorization-for-apis-to-read-office-365-usage-reports"></a>授权 API 读取 Office 365 使用情况报告
 
@@ -18,7 +18,7 @@ ms.locfileid: "40871589"
 用于读取 Office 365 使用情况报告的 API 支持两种类型的授权：
 
 - **应用程序级别授权** - 允许应用在没有登录用户的情况下读取所有服务使用情况报告。 授权由授予给应用程序的权限决定。 
-- **用户委派的授权** - 允许应用代表已登录的用户读取所有服务使用情况报告。 除了向应用授予所需权限之外，用户必须是 Azure AD 受限管理员角色的成员。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。
+- **用户委派的授权** - 允许应用代表已登录的用户读取所有服务使用情况报告。 除了向应用授予所需权限之外，用户必须是 Azure AD 受限管理员角色的成员。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、Teams 服务管理员、Teams 通信管理员、全局读取者或报告读取者。
 
 如果从 Graph 浏览器调用 API：
 
