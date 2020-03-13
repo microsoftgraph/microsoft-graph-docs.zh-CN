@@ -22,7 +22,7 @@ ms.locfileid: "42562702"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项 | Beta | 添加了 ChannelMessage.Read.All 支持至 API，以读取频道中的 [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta)。 |
+| 添加项 | Beta | 添加对 ChannelMessage.Read.All 的支持至 API，以读取频道中的 [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta)。 |
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -96,7 +96,7 @@ ms.locfileid: "42562702"
 | 添加项 | Beta 和 v1.0 | 向 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 实体中添加了 **latestSupportedTlsVersion** 属性。 指定通知终结点支持的最新 TLS 版本。 允许订阅者在有限的时间段内使用过时的 TLS 版本。 有关详细信息，请参阅 [Microsoft Graph 订阅 - 弃用 TLS 1.0 和 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)。 |
 | 更改 | beta | 已使用请求程序、审批和审阅设置的附加属性更新了 [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)。|
 |添加项 | beta | 新增了“[错误](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta)”属性至**quarantineStatus** 资源类型。|
-| 添加项 | Beta 和 v1.0 | 添加了应用程序级和委派的 Policy.ReadWrite.ApplicationConfiguration 权限，以读写有关应用程序配置策略的操作。|
+| 添加项 | Beta 和 v1.0 | 添加了应用程序级和委派的 Policy.ReadWrite.ApplicationConfiguration 权限，以读取和写入有关应用程序配置策略的操作。|
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 

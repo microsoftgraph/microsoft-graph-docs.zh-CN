@@ -6,26 +6,26 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 2ac87c9e2ea9bd0778db7d96dfa79a0280c42ce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451635"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618931"
 ---
 # <a name="send-mail"></a>发送邮件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发送请求正文中指定的邮件。 默认情况下，邮件保存在“已发送邮件”文件夹中。
+发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
 
 在同一**sendMail**操作调用中，可以执行以下操作：
 
 - 包含[附件](../resources/attachment.md)
 - 在新邮件中使用[提及](../resources/mention.md)调用其他用户
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 6dd782e937e4709a899a22f9bbc49af0f0ed6548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440309"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618897"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,14 +22,14 @@ ms.locfileid: "42440309"
 
 此方法仅列出指定邮件的答复（如果有）。 若要获取邮件本身，只需调用[get 信道消息](channel-get-message.md)即可。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| ChannelMessage、Group、group、Group。 All|
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| ChannelMessage、Group、group、Group。 All|
+|应用程序| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All|
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

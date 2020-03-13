@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
 ms.openlocfilehash: 1faba5ca71fe9478963120ec43d9eb9da08d721a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520841"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618939"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全性 API 错误响应
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 Microsoft Graph 安全性 API 中的错误使用标准的 HTTP 206 部分内容状态代码返回，并通过警告标头进行传递。
 
