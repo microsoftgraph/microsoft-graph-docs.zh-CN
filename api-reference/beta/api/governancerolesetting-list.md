@@ -3,64 +3,64 @@ title: 列出 governanceRoleSettings
 description: 在资源上检索 governanceRoleSettings 的集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 3e700b5ceef33a50bd1521e8ff355c0f30460b9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: c3bfe4470fecfea94ac3a0d2f9b3d81040d07507
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420869"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639581"
 ---
-# <a name="list-governancerolesettings"></a><span data-ttu-id="9e508-103">列出 governanceRoleSettings</span><span class="sxs-lookup"><span data-stu-id="9e508-103">List governanceRoleSettings</span></span>
+# <a name="list-governancerolesettings"></a><span data-ttu-id="4edfb-103">列出 governanceRoleSettings</span><span class="sxs-lookup"><span data-stu-id="4edfb-103">List governanceRoleSettings</span></span>
 
-<span data-ttu-id="9e508-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9e508-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4edfb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4edfb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9e508-105">在资源上检索[governanceRoleSettings](../resources/governancerolesetting.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="9e508-105">Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.</span></span>
+<span data-ttu-id="4edfb-105">在资源上检索[governanceRoleSettings](../resources/governancerolesetting.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="4edfb-105">Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9e508-106">权限</span><span class="sxs-lookup"><span data-stu-id="9e508-106">Permissions</span></span>
-<span data-ttu-id="9e508-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e508-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4edfb-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="4edfb-106">Permissions</span></span>
+<span data-ttu-id="4edfb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4edfb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e508-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9e508-109">Permission type</span></span>      | <span data-ttu-id="9e508-110">权限</span><span class="sxs-lookup"><span data-stu-id="9e508-110">Permissions</span></span>              |
+|<span data-ttu-id="4edfb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4edfb-109">Permission type</span></span>      | <span data-ttu-id="4edfb-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="4edfb-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9e508-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9e508-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9e508-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="9e508-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="9e508-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9e508-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e508-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e508-114">Not supported.</span></span>    |
-|<span data-ttu-id="9e508-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9e508-115">Application</span></span> | <span data-ttu-id="9e508-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e508-116">Not supported.</span></span> |
+|<span data-ttu-id="4edfb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4edfb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4edfb-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="4edfb-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="4edfb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4edfb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4edfb-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4edfb-114">Not supported.</span></span>    |
+|<span data-ttu-id="4edfb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4edfb-115">Application</span></span> | <span data-ttu-id="4edfb-116">PrivilegedAccess。 AzureResources</span><span class="sxs-lookup"><span data-stu-id="4edfb-116">PrivilegedAccess.Read.AzureResources</span></span> |
 
-<span data-ttu-id="9e508-117">除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。</span><span class="sxs-lookup"><span data-stu-id="9e508-117">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
-## <a name="http-request"></a><span data-ttu-id="9e508-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9e508-118">HTTP request</span></span>
+<span data-ttu-id="4edfb-117">除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。</span><span class="sxs-lookup"><span data-stu-id="4edfb-117">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
+## <a name="http-request"></a><span data-ttu-id="4edfb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4edfb-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9e508-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9e508-119">Optional query parameters</span></span>
-<span data-ttu-id="9e508-120">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9e508-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4edfb-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4edfb-119">Optional query parameters</span></span>
+<span data-ttu-id="4edfb-120">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4edfb-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9e508-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="9e508-121">Request headers</span></span>
-| <span data-ttu-id="9e508-122">名称</span><span class="sxs-lookup"><span data-stu-id="9e508-122">Name</span></span>      |<span data-ttu-id="9e508-123">说明</span><span class="sxs-lookup"><span data-stu-id="9e508-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4edfb-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4edfb-121">Request headers</span></span>
+| <span data-ttu-id="4edfb-122">名称</span><span class="sxs-lookup"><span data-stu-id="4edfb-122">Name</span></span>      |<span data-ttu-id="4edfb-123">说明</span><span class="sxs-lookup"><span data-stu-id="4edfb-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9e508-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e508-124">Authorization</span></span>  | <span data-ttu-id="9e508-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9e508-125">Bearer {code}</span></span>|
+| <span data-ttu-id="4edfb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4edfb-124">Authorization</span></span>  | <span data-ttu-id="4edfb-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="4edfb-125">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9e508-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9e508-126">Request body</span></span>
-<span data-ttu-id="9e508-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9e508-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4edfb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4edfb-126">Request body</span></span>
+<span data-ttu-id="4edfb-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4edfb-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9e508-128">响应</span><span class="sxs-lookup"><span data-stu-id="9e508-128">Response</span></span>
-<span data-ttu-id="9e508-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleSetting](../resources/governancerolesetting.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="9e508-129">If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4edfb-128">响应</span><span class="sxs-lookup"><span data-stu-id="4edfb-128">Response</span></span>
+<span data-ttu-id="4edfb-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleSetting](../resources/governancerolesetting.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="4edfb-129">If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9e508-130">示例</span><span class="sxs-lookup"><span data-stu-id="9e508-130">Example</span></span>
-<span data-ttu-id="9e508-131">本示例显示管理员如何列出资源 Wingtip 玩具-生产的角色设置。</span><span class="sxs-lookup"><span data-stu-id="9e508-131">This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.</span></span> 
+## <a name="example"></a><span data-ttu-id="4edfb-130">示例</span><span class="sxs-lookup"><span data-stu-id="4edfb-130">Example</span></span>
+<span data-ttu-id="4edfb-131">本示例显示管理员如何列出资源 Wingtip 玩具-生产的角色设置。</span><span class="sxs-lookup"><span data-stu-id="4edfb-131">This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
 }-->
-##### <a name="request"></a><span data-ttu-id="9e508-132">请求</span><span class="sxs-lookup"><span data-stu-id="9e508-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="4edfb-132">请求</span><span class="sxs-lookup"><span data-stu-id="4edfb-132">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
-##### <a name="response"></a><span data-ttu-id="9e508-133">响应</span><span class="sxs-lookup"><span data-stu-id="9e508-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="4edfb-133">响应</span><span class="sxs-lookup"><span data-stu-id="4edfb-133">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
