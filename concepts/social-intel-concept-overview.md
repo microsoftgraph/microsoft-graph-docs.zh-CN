@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
 ms.openlocfilehash: 1c000496a49460269fbb386c9ba7225b4746f109
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562703"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618779"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 

@@ -6,11 +6,11 @@ author: ''
 ms.prod: ''
 doc_type: enumPageType
 ms.openlocfilehash: 575cb3aacbcc507fb2659a7097dfedce828603e3
-ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42606850"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618693"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -209,7 +209,7 @@ ms.locfileid: "42606850"
 
 | Member
 |:-------------------------
-|  默认值
+| 设置
 | conferenceRoom
 | homeAddress
 | businessAddress

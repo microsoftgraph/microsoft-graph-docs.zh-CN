@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
 ms.openlocfilehash: c2326aef5ba443cad8668669f189d97ca2da65ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035418"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618694"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 

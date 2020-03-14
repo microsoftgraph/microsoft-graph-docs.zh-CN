@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0202d8bc8c8ae23f98cb4add9f9d5ca96afea04d
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866873"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639952"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -18,12 +18,11 @@ ms.locfileid: "40866873"
 
 ## <a name="example"></a>示例
 
-[jsfiddle 示例](https://jsfiddle.net/metulev/0jkzfr42/)
+下面的示例显示使用组件的`mgt-person`人员。 您可以使用代码编辑器来查看[属性](#properties)如何更改组件的行为。
 
-### <a name="add-the-control-to-the-html-page"></a>将控件添加到 HTML 页面
-```html
-<mgt-person person-query=""></mgt-person>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## <a name="setting-the-person-details"></a>设置人员详细信息
 
@@ -47,7 +46,7 @@ ms.locfileid: "40866873"
 
   如果未提供图像，则将获取一个图像（如果可用）。
 
-## <a name="changing-how-the-component-looks"></a>更改组件的外观
+## <a name="properties"></a>属性
 
 您可以使用多个属性来自定义组件。
 
@@ -123,7 +122,7 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| 资源                                                                                                    | 权限     |
+| Resource                                                                                                    | 权限     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

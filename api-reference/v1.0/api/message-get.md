@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 448bb6531c39e0ea97a6f8c60a723e78317aa101
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511528"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618712"
 ---
 # <a name="get-message"></a>获取邮件
 

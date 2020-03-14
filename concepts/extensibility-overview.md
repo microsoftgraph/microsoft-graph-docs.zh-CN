@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
 ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562477"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42619101"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 

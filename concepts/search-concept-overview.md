@@ -6,11 +6,11 @@ ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
 ms.openlocfilehash: 48d54de1e9c758a21af1e179e83876b19c146840
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994969"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618770"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述（预览版）
 

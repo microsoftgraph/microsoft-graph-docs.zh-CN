@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "议程" 组件
 description: "\"管理中心议程\" web 组件用于表示用户或组日历中的事件。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0676c7ab66e899aa4af3dea0f623f301ce9b9f4e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 334da23db286c7243b9722cae443913219a97f7f
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866887"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639945"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "议程" 组件
 
@@ -16,13 +16,11 @@ ms.locfileid: "40866887"
 
 ## <a name="example"></a>示例
 
-[jsfiddle 示例](https://jsfiddle.net/metulev/ojt2c7vp/)
+以下示例显示使用`mgt-agenda`组件显示的已登录用户的日历事件。 您可以使用代码编辑器来查看[属性](#properties)如何更改组件的行为。
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![计划-议程](./images/mgt-agenda.png)
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -35,7 +33,7 @@ ms.locfileid: "40866887"
 | show-max | showMax | 一个数字，用于指示要显示的最大事件数。 未设置默认值（无最大值）。 |
 | 组 id | groupId | 要使用的组日历的字符串 ID，而不是当前登录的用户日历。 |
 | 事件查询 | eventQuery | 一个字符串，表示从 Microsoft Graph 提取事件时要使用的替代查询。 （可选）通过将委派作用域与`|` （`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`）分隔来将其添加到字符串的末尾。 |
-| 活动 | 活动 | 一个事件数组，用于获取或设置组件呈现的事件的列表-使用此属性可访问组件加载的事件。 将此值设置为加载您自己的事件-如果值是由开发人员`date`设置`days`的， `event-query`则、或属性不起作用。 |
+| events | events | 一个事件数组，用于获取或设置组件呈现的事件的列表-使用此属性可访问组件加载的事件。 将此值设置为加载您自己的事件-如果值是由开发人员`date`设置`days`的， `event-query`则、或属性不起作用。 |
 | 逐天分组 | groupByDay | 按天对事件分组的布尔值不按默认事件进行分组。 |
 
 下面的示例更改组件的行为，以获取特定日期的数据，最长为三天。

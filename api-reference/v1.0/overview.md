@@ -2,15 +2,15 @@
 title: Microsoft Graph REST API 1.0 版参考
 description: 欢迎使用 1.0 版终结点的 Microsoft Graph REST API 参考。
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 0b21aab90fb1eabec82ab1ee783fcdc89fe397d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2204197e169188e36466db783e513e2a1bc85317
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533181"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618657"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -55,7 +55,7 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 针对 v1.0 终结点的 Microsoft Graph API 请求使用以下模式：
 
 ```
-    https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。

@@ -3,12 +3,12 @@ title: 获取 Microsoft Graph 工具包中的组件
 description: 通过获取组件，可以在 HTML 中直接在 Microsoft Graph 中进行任何 GET 查询。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 77beb3940eb29a2c9158fba88d78084639e433ed
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7c9c3fcc804dd5ba8257a1140791fa2eb60ff4ce
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39921696"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639966"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>获取 Microsoft Graph 工具包中的组件
 
@@ -16,16 +16,11 @@ ms.locfileid: "39921696"
 
 ## <a name="example"></a>示例
 
-```html
-<mgt-get resource="/me/messages" version="beta" scopes="mail.read" max-pages="2">
-  <template>
-    emails: {{value.length}}
-  </template>
-  <template data-type="loading">
-    loading
-  </template>
-</mgt-get>
-```
+下面的示例演示如何使用`mgt-get`组件来显示用户的电子邮件。 您可以使用代码编辑器来查看[属性和属性](#properties-and-attributes)如何更改组件的行为。
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
+
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## <a name="properties-and-attributes"></a>属性和属性
 
@@ -40,7 +35,7 @@ ms.locfileid: "39921696"
 | 不适用 | 响应 | 如果请求成功，则为来自 Microsoft Graph 的只读响应。  |
 | 不适用 |error| 如果请求不成功，则为 Microsoft Graph 中的只读错误。 |
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 | 事件 | 详细信息 | 说明 |
 | --- | --- | --- |
 | dataChange | 详细信息包含`response`和`error`对象。 | 在响应或错误发生更改时激发。 |

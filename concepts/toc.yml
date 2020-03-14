@@ -49,6 +49,8 @@ items:
             href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -97,8 +99,6 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: 创建共享事件
             href: outlook-create-event-in-shared-delegated-calendar.md
-          - name: 附加大型文件
-            href: outlook-large-attachments.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
       - name: 云通信
@@ -182,7 +182,7 @@ items:
             href: outlook-organize-messages.md
           - name: 获取 MIME 内容
             href: outlook-get-mime-message.md
-          - name: 附加大型文件
+          - name: 附加大型文件（预览版）
             href: outlook-large-attachments.md
           - name: 获取共享邮件
             href: outlook-share-messages-folders.md
@@ -455,6 +455,8 @@ items:
         items:
           - name: 工具包概述
             href: toolkit/overview.md
+          - name: 入门
+            href: toolkit/get-started.md
           - name: 组件
             items:
               - name: 登录

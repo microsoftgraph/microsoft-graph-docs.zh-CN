@@ -3,24 +3,26 @@ title: Microsoft Graph 工具包中的个人卡片组件
 description: "\"个人卡片\" 组件是显示与某个人相关的详细信息的组件。"
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 336e6beabc227a2574e41cf6a658d38fdabfcdcf
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955867"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639924"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的个人卡片组件
 
 个人卡片组件是一个响应性组件，用于显示与人员相关的更多信息。 它通常用作`mgt-person`组件上的浮出控件。
 
 有关`mgt-person`组件的详细信息，请参阅 "[管理员文档](./person.md)"。
-  
+
 ## <a name="example"></a>示例
 
-```html
-<mgt-person-card person-details="{personObject}" person-image="imgUrl"></mgt-person-card>
-```
+下面的示例演示组件与组件的`mgt-person-card`配合`mgt-person`使用。 将鼠标悬停在人员上以查看人员卡片，并使用代码编辑器查看[属性](#properties)如何更改组件的行为。
+  
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
 ## <a name="properties"></a>属性
 

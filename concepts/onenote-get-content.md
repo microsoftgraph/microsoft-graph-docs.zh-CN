@@ -4,12 +4,12 @@ description: " Office 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418209"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618777"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -556,7 +556,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
  
 | 查询选项 | 示例和说明 |  
 |------|------|  
-| count | <p>`count=true`</p><p>集合中的实体计数。在响应的 **@odata.count** 属性中返回此值。</p> |  
+| count | <p>`count=true`</p><p>集合中的实体计数。在响应的 **\@odata.count** 属性中返回此值。</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中返回内联的导航属性。 **expand** 表达式支持以下属性：<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的**id**、**name** 和 **self** 属性。</p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符：**eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 逻辑运算符：**and**、**or**、**not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**：`filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>作为排序依据的[属性](#onenote-entity-properties)，具有可选的 **asc**（默认）或 **desc** 的排序顺序。您可以按请求集合中实体的任意属性进行排序。</p><p>笔记本、节组和节的默认排序顺序为 `name asc`，页面的默认排序顺序为 `lastModifiedTime desc`（最后修改的页面排第一）。</p><p>用逗号隔开多个属性，并按想要应用属性的顺序列出它们。 属性名区分大小写。</p> |  
@@ -660,7 +660,7 @@ not | `not contains(tolower(title),'school')` |
 |------|------|  
 | 成功代码 | 200 HTTP 状态代码。 |  
 | 响应正文 | JSON 格式、页面 HTML 或文件资源二进制数据中的实体或实体集的 OData 表示形式。  |  
-| 错误 | 如果请求失败，API 将在响应正文的 **@api.diagnostics** 对象中返回[错误](onenote-error-codes.md)。 |  
+| 错误 | 如果请求失败，API 将在响应正文的 **\@api.diagnostics** 对象中返回[错误](onenote-error-codes.md)。 |  
 | X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 
 

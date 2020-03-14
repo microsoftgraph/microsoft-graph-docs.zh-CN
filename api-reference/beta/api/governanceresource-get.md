@@ -3,31 +3,31 @@ title: 获取 governanceResource
 description: 检索 governanceResource 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: e471cd147c36414df7eb983b9824383af2dc502c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 235b4cdfffd5573af5a5470ee5687e4a17ec42c6
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421380"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639875"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[governanceResource](../resources/governanceresource.md)对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限              |
+|权限类型      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | PrivilegedAccess。 AzureResources |
 
 除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 

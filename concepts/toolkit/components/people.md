@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: 您可以使用`mgt-people` web 组件显示一组用户或联系人，方法是使用其照片或缩写。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 21a530abe227897941c59115a17522cf79d4b163
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 78dc1504d7f46756809abcf922dfcea431fd796c
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870902"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639959"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -18,13 +18,11 @@ ms.locfileid: "40870902"
 
 ## <a name="example"></a>示例
 
-[jsfiddle 示例](https://jsfiddle.net/metulev/az6pqy2r/)
+下面的示例展示了使用`mgt-people`组件显示的一组人员。 您可以使用代码编辑器来查看[属性](#properties)如何更改组件的行为。
 
-```html
-<mgt-people></mgt-people>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-![组织-人员](./images/mgt-people.png)
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -88,7 +86,7 @@ mgt-people {
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
-| 资源 | 权限 |
+| Resource | 权限 |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 

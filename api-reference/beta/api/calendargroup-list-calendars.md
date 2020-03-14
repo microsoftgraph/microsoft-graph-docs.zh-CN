@@ -5,22 +5,22 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ee6abef8a97b5e9bd806e77a274fdb6a0b6a498
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a943d707345873ccac2ca8a02e301cbf7d29ab0
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440932"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639567"
 ---
 # <a name="list-calendars"></a>列出日历
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -119,8 +119,9 @@ Content-length: 147
       "name": "name-value",
       "color": {
       },
+      "calendarGroupId":"calendarGroupId-value",
       "changeKey": "changeKey-value",
-      "id": "id-value"
+      "id": "id-value"      
     }
   ]
 }

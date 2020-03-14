@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dddbdcdb9631e54f012e3111fb4080c72926f767
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451717"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639892"
 ---
 # <a name="create-event"></a>创建事件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -145,7 +145,7 @@ Content-type: application/json
 在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
-注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -179,6 +179,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -338,7 +339,7 @@ Content-length: 1390
 
 #### <a name="response"></a>响应
 以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -372,6 +373,7 @@ Content-length: 2985
   "sensitivity":"normal",
   "isAllDay":false,
   "isCancelled":false,
+  "isDraft": false,
   "isOrganizer":true,
   "responseRequested":true,
   "seriesMasterId":null,
@@ -473,7 +475,7 @@ Content-length: 2985
 ### <a name="example-3-create-a-weekly-recurring-event"></a>示例3：创建每周定期事件
 
 #### <a name="request"></a>请求
-第三个示例演示如何创建每周一次发生一次的定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
+第三个示例展示了如何创建每周发生一次的定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -573,6 +575,7 @@ Content-type: application/json
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -659,7 +662,7 @@ Content-type: application/json
 ### <a name="example-4-create-a-daily-recurring-event"></a>示例4：创建每日定期事件
 
 #### <a name="request"></a>请求
-第四个示例演示如何创建每日定期事件。 该事件从12：00pm 到2：00pm，每天从2020年2月25日开始，共发生两次。
+第四个示例展示了如何创建每日定期事件。 该事件从12：00pm 到2：00pm，每天从2020年2月25日开始，共发生两次。
 
 <!-- {
   "blockType": "request",
@@ -744,6 +747,7 @@ Content-type: application/json
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -922,6 +926,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,

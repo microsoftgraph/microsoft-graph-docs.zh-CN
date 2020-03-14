@@ -3,14 +3,14 @@ title: 列出 governanceRoleDefinitions
 description: 获取资源的 governanceRoleDefinitions 集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 3b8d45a3d4f5f89ed35fd2defaf733d2d03af097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 93702d24229f0e3a86c5b999cdbd2074c6a357e8
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420890"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639672"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 
@@ -18,14 +18,14 @@ ms.locfileid: "42420890"
 
 获取资源的[governanceRoleDefinitions](../resources/governanceroledefinition.md)集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限              |
+|权限类型      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | PrivilegedAccess。 AzureResources |
 
 除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 

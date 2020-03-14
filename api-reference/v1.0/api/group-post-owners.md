@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3ba3f85193921fe7b77e6640200ec0a82b610997
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d141d6f6543f452c681d6d371a2548b12eabc58c
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516975"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639910"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
-命名空间：microsoft.graph 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
+命名空间：microsoft.graph
+
+将用户添加到组所有者。 所有者是一组具有 group 对象修改权限的非管理员用户。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 

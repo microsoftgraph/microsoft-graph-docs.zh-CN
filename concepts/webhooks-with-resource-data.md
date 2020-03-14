@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 4f0db665cd2fd61a677d8e9bd80900068154b8d7
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: a0db70d65b919033f6c371b8bf704ed7e2c77b5b
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229890"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618644"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
@@ -481,6 +481,19 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+```Java
+String storename = ""; //name/path of the jks store
+String storepass = ""; //password used to open the jks store
+String alias = ""; //alias of the certificate when store in the jks store, should be passed as encryptionCertificateId when subscribing and retrieved from the notification
+KeyStore ks = KeyStore.getInstance("JKS");
+ks.load(new FileInputStream(storename), storepass.toCharArray());
+Key asymmetricKey = ks.getKey(alias, storepass.toCharArray());
+byte[] encryptedSymetricKey = Base64.decodeBase64("<value from dataKey property>");
+Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");
+cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
+byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
 
 #### <a name="compare-data-signature-using-hmac-sha256"></a>使用 HMAC-SHA256 比较数据签名
 
@@ -495,6 +508,23 @@ using (HMACSHA256 hmac = new HMACSHA256(decryptedSymmetricKey))
     actualSignature = hmac.ComputeHash(encryptedPayload);
 }
 if (actualSignature.SequenceEqual(expectedSignature))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```Java
+byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
+byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
+Mac mac = Mac.getInstance("HMACSHA256");
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "HMACSHA256");
+mac.init(skey);
+byte[] hashedData = mac.doFinal(decodedEncryptedData);
+String encodedHashedData = new String(Base64.encodeBase64(hashedData));
+if (comparisonSignature.equals(encodedHashedData);)
 {
     // Continue with decryption of the encryptedPayload.
 }
@@ -537,6 +567,13 @@ using (var decryptor = aesProvider.CreateDecryptor())
 }
 
 // decryptedResourceData now contains a JSON string that represents the resource.
+```
+```Java
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
+IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
+Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
+String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
 ```
 
 ## <a name="see-also"></a>另请参阅

@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 07bf9d9069a89cef3bbf74526fc954a987d12f2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bed498d5e9c8db96f5fcf5fc053cb3589b9b0fbc
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451724"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639897"
 ---
 # <a name="create-calendar"></a>创建日历
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -99,6 +99,7 @@ Content-type: application/json
     "color":"auto",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",

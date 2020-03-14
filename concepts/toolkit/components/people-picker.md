@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 91b11006df02d563902b99c79c4b1ec09bb7e50a
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023122"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639938"
 ---
 # <a name="people-picker-component"></a>人员-选取器组件
 
@@ -18,13 +18,11 @@ ms.locfileid: "41023122"
 
 ## <a name="example"></a>示例
 
-[jsfiddle 示例](https://jsfiddle.net/metulev/jdv38fg0/)
+下面的示例演示了`mgt-people-picker`该组件。 开始搜索名称以查看结果呈现，并使用代码编辑器查看[属性](#properties)如何更改组件的行为。
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![组织-人员-选取器](./images/mgt-people-picker-image.png)
+[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -82,7 +80,7 @@ mgt-people-picker {
 
  `mgt-people-picker`支持多个模板，这些[模板](../templates.md)可用于替换组件的某些部分。 若要指定模板，请在`<template>`组件内添加一个元素，并`data-type`将值设置为下列值之一。
 
-| 数据类型 | 数据上下文 | Description |
+| 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
 | error | null：无数据| 用户搜索不返回用户时使用的模板。 |

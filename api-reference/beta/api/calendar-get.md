@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 974440eed1457fd5db8ec26cab47d9c74d95ca16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb323f06765a1a1bc432f1740fd1ce8ba3fb8125
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440995"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639630"
 ---
 # <a name="get-calendar"></a>获取日历
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -116,6 +116,7 @@ Content-type: application/json
     "color": "auto",
     "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",

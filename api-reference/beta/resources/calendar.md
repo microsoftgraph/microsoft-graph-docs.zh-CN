@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b3651bc4ea5153c5b3fc68d0106868c3857adca6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 974c6b69ccac03df2515e427267f84db07e2d492
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507843"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639539"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -49,6 +49,7 @@ ms.locfileid: "42507843"
 | 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
+|calendarGroupId|字符串|要在其中创建日历的 [calendarGroup](calendargroup.md)。 若用户从未显式设置日历的组，此属性为空。|
 |canEdit |Boolean |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
 |canShare |Boolean |如果用户有权共享日历则为 ture，否则为 false。 只有创建日历的用户才可以进行共享。 只读。|
 |canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 此属性通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源进行设定。 只读。|
