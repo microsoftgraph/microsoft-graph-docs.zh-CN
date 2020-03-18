@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementScriptUserStates
 description: 列出 deviceManagementScriptUserState 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 048b4374e1f03cf676a2397953db5735804469a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42b294c50d823c33d4f6f88fddba3e41f4581f87
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469214"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768322"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>列出 deviceManagementScriptUserStates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 282
   ]
 }
 ```
-
 
 
 

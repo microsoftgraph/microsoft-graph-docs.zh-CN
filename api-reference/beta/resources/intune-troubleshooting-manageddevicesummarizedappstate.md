@@ -1,20 +1,18 @@
 ---
 title: managedDeviceSummarizedAppState 资源类型
 description: 表示具有失败或挂起的应用程序的用户设备的事件。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: db00f874f6a2db1c4792955a3cbc2e5f32a81a0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e6439ad781ad83bcae5bd66bc83f7a566e3b2ea6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765151"
 ---
 # <a name="manageddevicesummarizedappstate-resource-type"></a>managedDeviceSummarizedAppState 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

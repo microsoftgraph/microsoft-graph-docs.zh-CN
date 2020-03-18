@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceShellScripts
 description: 列出 deviceShellScript 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ef820eb7b1f8239f3219f6df0b01d6df48cd071
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ca547f4502a0978da0cac524130715796a9472d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469109"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768021"
 ---
 # <a name="list-deviceshellscripts"></a>列出 deviceShellScripts
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 558
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 detectedApp
 description: 创建新的 detectedApp 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb1d4ce4ec8ae7a37b2fdbcccd6f8f7ff0de2d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7aa0701707ac61801d3975fec9c7eca94a92d9e4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469893"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769687"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +97,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

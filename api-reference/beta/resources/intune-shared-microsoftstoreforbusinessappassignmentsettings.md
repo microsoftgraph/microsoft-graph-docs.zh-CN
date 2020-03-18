@@ -1,20 +1,18 @@
 ---
 title: microsoftStoreForBusinessAppAssignmentSettings 资源类型
 description: 包含用于为组分配适用于企业的 Microsoft 应用商店移动应用的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb2dc1fda4fdc903bd64d053ce377f4f5f203aa7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62dab652d6b4f9b16d8f95d6820f3361835f4711
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523630"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768924"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementIntentAssignments
 description: 列出 deviceManagementIntentAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 211e218c97da722c235d2b21cc2138e14bc9e47e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 902b4a02b8ea4329a05d73b93da0b3999c045520
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767461"
 ---
 # <a name="list-devicemanagementintentassignments"></a>列出 deviceManagementIntentAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

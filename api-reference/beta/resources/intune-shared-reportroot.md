@@ -2,19 +2,17 @@
 title: reportRoot 资源类型
 description: 表示设备实例或故障排除报告的资源，具体取决于上下文。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 739cdc4bd9b10f9d472cebd77c88ae796593a1f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0e7fc15987c7d9e13ecc1f2cd44aa3869556b2f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523574"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767965"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

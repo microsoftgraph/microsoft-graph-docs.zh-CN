@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceShellScript
 description: 删除 deviceShellScript。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80e5800f4d2f637b33dd8fdf6eabfc147872a5e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e0a1a4fa0053e130353b59cece03b8285f067b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469130"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768042"
 ---
 # <a name="delete-deviceshellscript"></a>删除 deviceShellScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

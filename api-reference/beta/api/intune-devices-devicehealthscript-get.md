@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceHealthScript
 description: 读取 deviceHealthScript 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d03522ad94cbb0cc7b871a43a546448911e8f501
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15a8d01e4067e77f7d49876f7710b2a2d88e0974
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769435"
 ---
 # <a name="get-devicehealthscript"></a>获取 deviceHealthScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 802
   }
 }
 ```
-
 
 
 

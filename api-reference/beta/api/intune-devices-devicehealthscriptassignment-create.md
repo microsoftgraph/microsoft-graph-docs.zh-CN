@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceHealthScriptAssignment
 description: 创建新的 deviceHealthScriptAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abe35146756d70acb737334e7958f8f77cf9fe24
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54e365b3984bb313f5fa4dd5795f7534a38596d2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769134"
 ---
 # <a name="create-devicehealthscriptassignment"></a>创建 deviceHealthScriptAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +53,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|布尔|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|布尔值|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|
 
 
@@ -103,7 +101,6 @@ Content-Length: 326
   }
 }
 ```
-
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: 获取 deviceManagementIntentDeviceState
-description: 读取 deviceManagementIntentDeviceState 对象的属性和关系。
+title: getRemediationSummary 函数
+description: 尚未记录
 author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d95f9e4654153310f9018f802ba820363f183d1f
+ms.openlocfilehash: 4ea937ff0199fc4ed13df92a17c51c1b8d1ed195
 ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766705"
+ms.locfileid: "42769337"
 ---
-# <a name="get-devicemanagementintentdevicestate"></a>获取 deviceManagementIntentDeviceState
+# <a name="getremediationsummary-function"></a>getRemediationSummary 函数
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象的属性和关系。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,11 +35,8 @@ ms.locfileid: "42766705"
 }
 -->
 ``` http
-GET /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceManagementIntentDeviceStateId}
+GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -51,14 +48,14 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceMan
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象。
+如果成功，此函数会在`200 OK`响应正文中返回响应代码和[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md) 。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceManagementIntentDeviceStateId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
 
 ### <a name="response"></a>响应
@@ -66,18 +63,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementI
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 426
+Content-Length: 155
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementIntentDeviceState",
-    "id": "8db75881-5881-8db7-8158-b78d8158b78d",
-    "userPrincipalName": "User Principal Name value",
-    "userName": "User Name value",
-    "deviceDisplayName": "Device Display Name value",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
-    "state": "notApplicable",
-    "deviceId": "Device Id value"
+    "@odata.type": "microsoft.graph.deviceHealthScriptRemediationSummary",
+    "scriptCount": 11,
+    "remediatedDeviceCount": 5
   }
 }
 ```

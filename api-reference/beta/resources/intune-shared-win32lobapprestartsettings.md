@@ -1,20 +1,18 @@
 ---
 title: win32LobAppRestartSettings 资源类型
 description: 包含描述应用程序安装后重启协调的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: abf2935fea6023682f5aa045e1c241fefef7f05a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66e5bbfe925dfc6ee023e06d58b70aa4ed680ee4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523483"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766908"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>win32LobAppRestartSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

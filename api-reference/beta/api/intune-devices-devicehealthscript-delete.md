@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceHealthScript
 description: 删除 deviceHealthScript。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26ab428a34aff902760093c1b777386009624087
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d369a1aff875f9c93ee2f06af802ecb0a241b22
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769463"
 ---
 # <a name="delete-devicehealthscript"></a>删除 deviceHealthScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

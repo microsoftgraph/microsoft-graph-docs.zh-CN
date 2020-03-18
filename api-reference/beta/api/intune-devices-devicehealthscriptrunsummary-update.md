@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceHealthScriptRunSummary
 description: 更新 deviceHealthScriptRunSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a05cb7e2c8bb0df57fefedec6331d73e9846fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1f56c3f379db209ec1bef61a580e9d729ea5012
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469466"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768896"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -116,7 +114,6 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

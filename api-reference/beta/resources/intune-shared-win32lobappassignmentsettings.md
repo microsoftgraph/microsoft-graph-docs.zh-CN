@@ -1,20 +1,18 @@
 ---
 title: win32LobAppAssignmentSettings 资源类型
 description: 包含用于将 Win32 LOB 移动应用程序分配给组的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c56d236c48918592394dc143bc6f2c45fb80401
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 340dc21cce7b52ebc55c13488f7340c7b66f9e26
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523497"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767041"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,6 +29,7 @@ ms.locfileid: "42523497"
 |通知|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|此应用分配的通知状态。 可取值为：`showAll`、`showReboot`、`hideAll`。|
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|要应用于此应用程序分配的重新启动设置。|
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|要应用于此应用程序分配的安装时设置。|
+|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|此应用分配的传递优化优先级。 在国家/地区云环境中不支持此设置。 可取值为：`notConfigured`、`foreground`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -57,7 +56,8 @@ ms.locfileid: "42523497"
     "useLocalTime": true,
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
-  }
+  },
+  "deliveryOptimizationPriority": "String"
 }
 ```
 

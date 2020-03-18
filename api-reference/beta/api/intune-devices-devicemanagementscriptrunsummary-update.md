@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceManagementScriptRunSummary
 description: 更新 deviceManagementScriptRunSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 707f3dd56ea68de21116fd9558be0d260344ab04
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 403da5e776b6a249f6ca676cca684ec2f26e934e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768392"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "39944916"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本运行摘要实体的键。 此属性是只读的。|
+|id|String|设备管理脚本运行摘要实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|
@@ -97,7 +97,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
 
 
 

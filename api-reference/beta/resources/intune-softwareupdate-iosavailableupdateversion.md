@@ -1,20 +1,18 @@
 ---
 title: iosAvailableUpdateVersion 资源类型
 description: iOS 可用的更新版本详细信息
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2174e13cf80e39e1f63f7fb03da6e9b305add30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29cf7500bc7069af0b2a1184adb0fe28bb0ac891
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766362"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>iosAvailableUpdateVersion 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ iOS 可用的更新版本详细信息
 |productVersion|String|更新的版本。|
 |postingDateTime|DateTimeOffset|更新的过帐日期。|
 |expirationDateTime|DateTimeOffset|更新的到期日期。|
-|supportedDevices|String 集合|更新支持的设备的列表。|
+|supportedDevices|String collection|更新支持的设备的列表。|
 
 ## <a name="relationships"></a>关系
 无

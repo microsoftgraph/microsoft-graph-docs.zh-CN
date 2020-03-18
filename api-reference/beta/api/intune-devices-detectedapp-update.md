@@ -1,20 +1,18 @@
 ---
 title: 更新 detectedApp
 description: 更新 detectedApp 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bfaf7cacc04efbbdaee97cecf9f550a2cfe5f22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce58704200c38386f4ed4b12655d5888554e7d58
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469788"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769624"
 ---
 # <a name="update-detectedapp"></a>更新 detectedApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +97,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

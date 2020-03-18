@@ -1,20 +1,18 @@
 ---
 title: policyPlatformType 枚举类型
 description: Suppoorted 策略的平台类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c0ee815ba97dcc2ba8cea23cb6c0a922a2fb495
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa1301ee1a30b965bdff6f8ffec6b9c6c0f6d283
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768154"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Suppoorted 策略的平台类型。
 |成员|值|说明|
 |:---|:---|:---|
 |android|0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |iOS.|
-|macOS|3 |MacOS.|
+|androidForWork|1|AndroidForWork.|
+|iOS|双面|iOS.|
+|macOS|第三章|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1。|
 |windows81AndLater|5 |Windows 8.1 及更高版本|
 |windows10AndLater|6 |Windows 10 及更高版本。|

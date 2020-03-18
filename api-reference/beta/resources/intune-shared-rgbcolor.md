@@ -1,20 +1,18 @@
 ---
 title: rgbColor 资源类型
 description: 以 RGB 表示的颜色。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 250c4881fd21cfc3659032712a31cbad4c3ac094
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c7febc0aab64b19cfa7929af95466d9b10ecce2a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523560"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767902"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

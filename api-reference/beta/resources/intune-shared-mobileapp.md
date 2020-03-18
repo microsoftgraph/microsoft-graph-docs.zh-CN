@@ -1,20 +1,18 @@
 ---
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca889aadfe5ce3a2bdbb7c2409db0b2ddec451af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00c5208cc44709ca18ee98da4787eac20157c058
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523623"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768749"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +53,7 @@ ms.locfileid: "42523623"
 |uploadState|Int32|上载状态。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
 
 ## <a name="relationships"></a>关系
