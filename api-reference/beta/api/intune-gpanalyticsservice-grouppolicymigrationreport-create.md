@@ -1,37 +1,35 @@
 ---
 title: 创建 groupPolicyMigrationReport
 description: 创建新的 groupPolicyMigrationReport 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58b672e565aadb72f953fec37a25d134f3a02fb8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7c5844c1c1d21c87ff3957083038ef7aa5feffb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465518"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804637"
 ---
-# <a name="create-grouppolicymigrationreport"></a><span data-ttu-id="0bc45-103">创建 groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="0bc45-103">Create groupPolicyMigrationReport</span></span>
+# <a name="create-grouppolicymigrationreport"></a><span data-ttu-id="22980-103">创建 groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="22980-103">Create groupPolicyMigrationReport</span></span>
 
-<span data-ttu-id="0bc45-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="0bc45-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="22980-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="22980-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0bc45-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0bc45-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="22980-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="22980-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="0bc45-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0bc45-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="22980-106">创建新的[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象。</span><span class="sxs-lookup"><span data-stu-id="22980-106">Create a new [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.</span></span>
 
-<span data-ttu-id="0bc45-107">创建新的[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象。</span><span class="sxs-lookup"><span data-stu-id="0bc45-107">Create a new [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="22980-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="22980-107">Prerequisites</span></span>
+<span data-ttu-id="22980-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="22980-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0bc45-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0bc45-108">Prerequisites</span></span>
-<span data-ttu-id="0bc45-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0bc45-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="0bc45-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0bc45-111">Permission type</span></span>|<span data-ttu-id="0bc45-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0bc45-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="22980-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="22980-110">Permission type</span></span>|<span data-ttu-id="22980-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="22980-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0bc45-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0bc45-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0bc45-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bc45-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="0bc45-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0bc45-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0bc45-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0bc45-116">Not supported.</span></span>|
-|<span data-ttu-id="0bc45-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0bc45-117">Application</span></span>|<span data-ttu-id="0bc45-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bc45-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="22980-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="22980-112">Delegated (work or school account)</span></span>|<span data-ttu-id="22980-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22980-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="22980-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="22980-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22980-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="22980-115">Not supported.</span></span>|
+|<span data-ttu-id="22980-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="22980-116">Application</span></span>|<span data-ttu-id="22980-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22980-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0bc45-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0bc45-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22980-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="22980-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,42 +38,42 @@ ms.locfileid: "42465518"
 POST /deviceManagement/groupPolicyMigrationReports
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0bc45-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="0bc45-120">Request headers</span></span>
-|<span data-ttu-id="0bc45-121">标头</span><span class="sxs-lookup"><span data-stu-id="0bc45-121">Header</span></span>|<span data-ttu-id="0bc45-122">值</span><span class="sxs-lookup"><span data-stu-id="0bc45-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="22980-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="22980-119">Request headers</span></span>
+|<span data-ttu-id="22980-120">标头</span><span class="sxs-lookup"><span data-stu-id="22980-120">Header</span></span>|<span data-ttu-id="22980-121">值</span><span class="sxs-lookup"><span data-stu-id="22980-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0bc45-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0bc45-123">Authorization</span></span>|<span data-ttu-id="0bc45-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0bc45-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0bc45-125">接受</span><span class="sxs-lookup"><span data-stu-id="0bc45-125">Accept</span></span>|<span data-ttu-id="0bc45-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0bc45-126">application/json</span></span>|
+|<span data-ttu-id="22980-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="22980-122">Authorization</span></span>|<span data-ttu-id="22980-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="22980-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="22980-124">接受</span><span class="sxs-lookup"><span data-stu-id="22980-124">Accept</span></span>|<span data-ttu-id="22980-125">application/json</span><span class="sxs-lookup"><span data-stu-id="22980-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0bc45-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0bc45-127">Request body</span></span>
-<span data-ttu-id="0bc45-128">在请求正文中，提供 groupPolicyMigrationReport 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0bc45-128">In the request body, supply a JSON representation for the groupPolicyMigrationReport object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="22980-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="22980-126">Request body</span></span>
+<span data-ttu-id="22980-127">在请求正文中，提供 groupPolicyMigrationReport 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22980-127">In the request body, supply a JSON representation for the groupPolicyMigrationReport object.</span></span>
 
-<span data-ttu-id="0bc45-129">下表显示创建 groupPolicyMigrationReport 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0bc45-129">The following table shows the properties that are required when you create the groupPolicyMigrationReport.</span></span>
+<span data-ttu-id="22980-128">下表显示创建 groupPolicyMigrationReport 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="22980-128">The following table shows the properties that are required when you create the groupPolicyMigrationReport.</span></span>
 
-|<span data-ttu-id="0bc45-130">属性</span><span class="sxs-lookup"><span data-stu-id="0bc45-130">Property</span></span>|<span data-ttu-id="0bc45-131">类型</span><span class="sxs-lookup"><span data-stu-id="0bc45-131">Type</span></span>|<span data-ttu-id="0bc45-132">说明</span><span class="sxs-lookup"><span data-stu-id="0bc45-132">Description</span></span>|
+|<span data-ttu-id="22980-129">属性</span><span class="sxs-lookup"><span data-stu-id="22980-129">Property</span></span>|<span data-ttu-id="22980-130">类型</span><span class="sxs-lookup"><span data-stu-id="22980-130">Type</span></span>|<span data-ttu-id="22980-131">说明</span><span class="sxs-lookup"><span data-stu-id="22980-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0bc45-133">id</span><span class="sxs-lookup"><span data-stu-id="0bc45-133">id</span></span>|<span data-ttu-id="0bc45-134">String</span><span class="sxs-lookup"><span data-stu-id="0bc45-134">String</span></span>|<span data-ttu-id="0bc45-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0bc45-135">Not yet documented</span></span>|
-|<span data-ttu-id="0bc45-136">groupPolicyObjectId</span><span class="sxs-lookup"><span data-stu-id="0bc45-136">groupPolicyObjectId</span></span>|<span data-ttu-id="0bc45-137">Guid</span><span class="sxs-lookup"><span data-stu-id="0bc45-137">Guid</span></span>|<span data-ttu-id="0bc45-138">GPO Xml 内容中的组策略对象 GUID</span><span class="sxs-lookup"><span data-stu-id="0bc45-138">The Group Policy Object GUID from GPO Xml content</span></span>|
-|<span data-ttu-id="0bc45-139">displayName</span><span class="sxs-lookup"><span data-stu-id="0bc45-139">displayName</span></span>|<span data-ttu-id="0bc45-140">String</span><span class="sxs-lookup"><span data-stu-id="0bc45-140">String</span></span>|<span data-ttu-id="0bc45-141">来自 GPO Xml 内容的组策略对象的名称</span><span class="sxs-lookup"><span data-stu-id="0bc45-141">The name of Group Policy Object from the GPO Xml Content</span></span>|
-|<span data-ttu-id="0bc45-142">ouDistinguishedName</span><span class="sxs-lookup"><span data-stu-id="0bc45-142">ouDistinguishedName</span></span>|<span data-ttu-id="0bc45-143">String</span><span class="sxs-lookup"><span data-stu-id="0bc45-143">String</span></span>|<span data-ttu-id="0bc45-144">OU 的可分辨名称。</span><span class="sxs-lookup"><span data-stu-id="0bc45-144">The distinguished name of the OU.</span></span>|
-|<span data-ttu-id="0bc45-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="0bc45-145">createdDateTime</span></span>|<span data-ttu-id="0bc45-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0bc45-146">DateTimeOffset</span></span>|<span data-ttu-id="0bc45-147">GroupPolicyMigrationReport 的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0bc45-147">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
-|<span data-ttu-id="0bc45-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0bc45-148">lastModifiedDateTime</span></span>|<span data-ttu-id="0bc45-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0bc45-149">DateTimeOffset</span></span>|<span data-ttu-id="0bc45-150">上次修改 GroupPolicyMigrationReport 的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0bc45-150">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
-|<span data-ttu-id="0bc45-151">groupPolicyCreatedDateTime</span><span class="sxs-lookup"><span data-stu-id="0bc45-151">groupPolicyCreatedDateTime</span></span>|<span data-ttu-id="0bc45-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0bc45-152">DateTimeOffset</span></span>|<span data-ttu-id="0bc45-153">GroupPolicyMigrationReport 的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0bc45-153">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
-|<span data-ttu-id="0bc45-154">groupPolicyLastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0bc45-154">groupPolicyLastModifiedDateTime</span></span>|<span data-ttu-id="0bc45-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0bc45-155">DateTimeOffset</span></span>|<span data-ttu-id="0bc45-156">上次修改 GroupPolicyMigrationReport 的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0bc45-156">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
-|<span data-ttu-id="0bc45-157">migrationReadiness</span><span class="sxs-lookup"><span data-stu-id="0bc45-157">migrationReadiness</span></span>|[<span data-ttu-id="0bc45-158">groupPolicyMigrationReadiness</span><span class="sxs-lookup"><span data-stu-id="0bc45-158">groupPolicyMigrationReadiness</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|<span data-ttu-id="0bc45-159">相关联的组策略对象文件的 Intune 覆盖范围。</span><span class="sxs-lookup"><span data-stu-id="0bc45-159">The Intune coverage for the associated Group Policy Object file.</span></span> <span data-ttu-id="0bc45-160">可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。</span><span class="sxs-lookup"><span data-stu-id="0bc45-160">Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.</span></span>|
-|<span data-ttu-id="0bc45-161">targetedInActiveDirectory</span><span class="sxs-lookup"><span data-stu-id="0bc45-161">targetedInActiveDirectory</span></span>|<span data-ttu-id="0bc45-162">布尔</span><span class="sxs-lookup"><span data-stu-id="0bc45-162">Boolean</span></span>|<span data-ttu-id="0bc45-163">来自 GPO Xml 内容的 AD 属性中的目标</span><span class="sxs-lookup"><span data-stu-id="0bc45-163">The Targeted in AD property from GPO Xml Content</span></span>|
-|<span data-ttu-id="0bc45-164">totalSettingsCount</span><span class="sxs-lookup"><span data-stu-id="0bc45-164">totalSettingsCount</span></span>|<span data-ttu-id="0bc45-165">Int32</span><span class="sxs-lookup"><span data-stu-id="0bc45-165">Int32</span></span>|<span data-ttu-id="0bc45-166">GPO 文件中的组策略设置总数。</span><span class="sxs-lookup"><span data-stu-id="0bc45-166">The total number of Group Policy Settings from GPO file.</span></span>|
-|<span data-ttu-id="0bc45-167">supportedSettingsCount</span><span class="sxs-lookup"><span data-stu-id="0bc45-167">supportedSettingsCount</span></span>|<span data-ttu-id="0bc45-168">Int32</span><span class="sxs-lookup"><span data-stu-id="0bc45-168">Int32</span></span>|<span data-ttu-id="0bc45-169">Intune 支持的组策略设置的数量。</span><span class="sxs-lookup"><span data-stu-id="0bc45-169">The number of Group Policy Settings supported by Intune.</span></span>|
-|<span data-ttu-id="0bc45-170">supportedSettingsPercent</span><span class="sxs-lookup"><span data-stu-id="0bc45-170">supportedSettingsPercent</span></span>|<span data-ttu-id="0bc45-171">Int32</span><span class="sxs-lookup"><span data-stu-id="0bc45-171">Int32</span></span>|<span data-ttu-id="0bc45-172">Intune 支持的组策略设置的百分比。</span><span class="sxs-lookup"><span data-stu-id="0bc45-172">The Percentage of Group Policy Settings supported by Intune.</span></span>|
+|<span data-ttu-id="22980-132">id</span><span class="sxs-lookup"><span data-stu-id="22980-132">id</span></span>|<span data-ttu-id="22980-133">String</span><span class="sxs-lookup"><span data-stu-id="22980-133">String</span></span>|<span data-ttu-id="22980-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="22980-134">Not yet documented</span></span>|
+|<span data-ttu-id="22980-135">groupPolicyObjectId</span><span class="sxs-lookup"><span data-stu-id="22980-135">groupPolicyObjectId</span></span>|<span data-ttu-id="22980-136">Guid</span><span class="sxs-lookup"><span data-stu-id="22980-136">Guid</span></span>|<span data-ttu-id="22980-137">GPO Xml 内容中的组策略对象 GUID</span><span class="sxs-lookup"><span data-stu-id="22980-137">The Group Policy Object GUID from GPO Xml content</span></span>|
+|<span data-ttu-id="22980-138">displayName</span><span class="sxs-lookup"><span data-stu-id="22980-138">displayName</span></span>|<span data-ttu-id="22980-139">String</span><span class="sxs-lookup"><span data-stu-id="22980-139">String</span></span>|<span data-ttu-id="22980-140">来自 GPO Xml 内容的组策略对象的名称</span><span class="sxs-lookup"><span data-stu-id="22980-140">The name of Group Policy Object from the GPO Xml Content</span></span>|
+|<span data-ttu-id="22980-141">ouDistinguishedName</span><span class="sxs-lookup"><span data-stu-id="22980-141">ouDistinguishedName</span></span>|<span data-ttu-id="22980-142">String</span><span class="sxs-lookup"><span data-stu-id="22980-142">String</span></span>|<span data-ttu-id="22980-143">OU 的可分辨名称。</span><span class="sxs-lookup"><span data-stu-id="22980-143">The distinguished name of the OU.</span></span>|
+|<span data-ttu-id="22980-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="22980-144">createdDateTime</span></span>|<span data-ttu-id="22980-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="22980-145">DateTimeOffset</span></span>|<span data-ttu-id="22980-146">GroupPolicyMigrationReport 的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="22980-146">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
+|<span data-ttu-id="22980-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="22980-147">lastModifiedDateTime</span></span>|<span data-ttu-id="22980-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="22980-148">DateTimeOffset</span></span>|<span data-ttu-id="22980-149">上次修改 GroupPolicyMigrationReport 的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="22980-149">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
+|<span data-ttu-id="22980-150">groupPolicyCreatedDateTime</span><span class="sxs-lookup"><span data-stu-id="22980-150">groupPolicyCreatedDateTime</span></span>|<span data-ttu-id="22980-151">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="22980-151">DateTimeOffset</span></span>|<span data-ttu-id="22980-152">GroupPolicyMigrationReport 的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="22980-152">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
+|<span data-ttu-id="22980-153">groupPolicyLastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="22980-153">groupPolicyLastModifiedDateTime</span></span>|<span data-ttu-id="22980-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="22980-154">DateTimeOffset</span></span>|<span data-ttu-id="22980-155">上次修改 GroupPolicyMigrationReport 的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="22980-155">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
+|<span data-ttu-id="22980-156">migrationReadiness</span><span class="sxs-lookup"><span data-stu-id="22980-156">migrationReadiness</span></span>|[<span data-ttu-id="22980-157">groupPolicyMigrationReadiness</span><span class="sxs-lookup"><span data-stu-id="22980-157">groupPolicyMigrationReadiness</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|<span data-ttu-id="22980-158">相关联的组策略对象文件的 Intune 覆盖范围。</span><span class="sxs-lookup"><span data-stu-id="22980-158">The Intune coverage for the associated Group Policy Object file.</span></span> <span data-ttu-id="22980-159">可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。</span><span class="sxs-lookup"><span data-stu-id="22980-159">Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.</span></span>|
+|<span data-ttu-id="22980-160">targetedInActiveDirectory</span><span class="sxs-lookup"><span data-stu-id="22980-160">targetedInActiveDirectory</span></span>|<span data-ttu-id="22980-161">布尔值</span><span class="sxs-lookup"><span data-stu-id="22980-161">Boolean</span></span>|<span data-ttu-id="22980-162">来自 GPO Xml 内容的 AD 属性中的目标</span><span class="sxs-lookup"><span data-stu-id="22980-162">The Targeted in AD property from GPO Xml Content</span></span>|
+|<span data-ttu-id="22980-163">totalSettingsCount</span><span class="sxs-lookup"><span data-stu-id="22980-163">totalSettingsCount</span></span>|<span data-ttu-id="22980-164">Int32</span><span class="sxs-lookup"><span data-stu-id="22980-164">Int32</span></span>|<span data-ttu-id="22980-165">GPO 文件中的组策略设置总数。</span><span class="sxs-lookup"><span data-stu-id="22980-165">The total number of Group Policy Settings from GPO file.</span></span>|
+|<span data-ttu-id="22980-166">supportedSettingsCount</span><span class="sxs-lookup"><span data-stu-id="22980-166">supportedSettingsCount</span></span>|<span data-ttu-id="22980-167">Int32</span><span class="sxs-lookup"><span data-stu-id="22980-167">Int32</span></span>|<span data-ttu-id="22980-168">Intune 支持的组策略设置的数量。</span><span class="sxs-lookup"><span data-stu-id="22980-168">The number of Group Policy Settings supported by Intune.</span></span>|
+|<span data-ttu-id="22980-169">supportedSettingsPercent</span><span class="sxs-lookup"><span data-stu-id="22980-169">supportedSettingsPercent</span></span>|<span data-ttu-id="22980-170">Int32</span><span class="sxs-lookup"><span data-stu-id="22980-170">Int32</span></span>|<span data-ttu-id="22980-171">Intune 支持的组策略设置的百分比。</span><span class="sxs-lookup"><span data-stu-id="22980-171">The Percentage of Group Policy Settings supported by Intune.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0bc45-173">响应</span><span class="sxs-lookup"><span data-stu-id="0bc45-173">Response</span></span>
-<span data-ttu-id="0bc45-174">如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象。</span><span class="sxs-lookup"><span data-stu-id="0bc45-174">If successful, this method returns a `201 Created` response code and a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="22980-172">响应</span><span class="sxs-lookup"><span data-stu-id="22980-172">Response</span></span>
+<span data-ttu-id="22980-173">如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象。</span><span class="sxs-lookup"><span data-stu-id="22980-173">If successful, this method returns a `201 Created` response code and a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0bc45-175">示例</span><span class="sxs-lookup"><span data-stu-id="0bc45-175">Example</span></span>
+## <a name="example"></a><span data-ttu-id="22980-174">示例</span><span class="sxs-lookup"><span data-stu-id="22980-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0bc45-176">请求</span><span class="sxs-lookup"><span data-stu-id="0bc45-176">Request</span></span>
-<span data-ttu-id="0bc45-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0bc45-177">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="22980-175">请求</span><span class="sxs-lookup"><span data-stu-id="22980-175">Request</span></span>
+<span data-ttu-id="22980-176">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="22980-176">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports
 Content-type: application/json
@@ -96,8 +94,8 @@ Content-length: 544
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0bc45-178">响应</span><span class="sxs-lookup"><span data-stu-id="0bc45-178">Response</span></span>
-<span data-ttu-id="0bc45-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0bc45-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="22980-177">响应</span><span class="sxs-lookup"><span data-stu-id="22980-177">Response</span></span>
+<span data-ttu-id="22980-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="22980-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -120,7 +118,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 
