@@ -1,42 +1,40 @@
 ---
 title: updateWindowsDeviceAccountActionParameter 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5028aa1f103d04cbd65844a151588cf044ecaa86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62dba898be4763a8f77f24bf76d1615b5943a45d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528494"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783849"
 ---
-# <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a><span data-ttu-id="2ae6b-103">updateWindowsDeviceAccountActionParameter 资源类型</span><span class="sxs-lookup"><span data-stu-id="2ae6b-103">updateWindowsDeviceAccountActionParameter resource type</span></span>
+# <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a><span data-ttu-id="dd2d7-103">updateWindowsDeviceAccountActionParameter 资源类型</span><span class="sxs-lookup"><span data-stu-id="dd2d7-103">updateWindowsDeviceAccountActionParameter resource type</span></span>
 
-<span data-ttu-id="2ae6b-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="2ae6b-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="dd2d7-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dd2d7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2ae6b-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2ae6b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="dd2d7-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dd2d7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="2ae6b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2ae6b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="dd2d7-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-106">Not yet documented</span></span>
 
-<span data-ttu-id="2ae6b-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-107">Not yet documented</span></span>
-
-## <a name="properties"></a><span data-ttu-id="2ae6b-108">属性</span><span class="sxs-lookup"><span data-stu-id="2ae6b-108">Properties</span></span>
-|<span data-ttu-id="2ae6b-109">属性</span><span class="sxs-lookup"><span data-stu-id="2ae6b-109">Property</span></span>|<span data-ttu-id="2ae6b-110">类型</span><span class="sxs-lookup"><span data-stu-id="2ae6b-110">Type</span></span>|<span data-ttu-id="2ae6b-111">说明</span><span class="sxs-lookup"><span data-stu-id="2ae6b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dd2d7-107">属性</span><span class="sxs-lookup"><span data-stu-id="dd2d7-107">Properties</span></span>
+|<span data-ttu-id="dd2d7-108">属性</span><span class="sxs-lookup"><span data-stu-id="dd2d7-108">Property</span></span>|<span data-ttu-id="dd2d7-109">类型</span><span class="sxs-lookup"><span data-stu-id="dd2d7-109">Type</span></span>|<span data-ttu-id="dd2d7-110">说明</span><span class="sxs-lookup"><span data-stu-id="dd2d7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2ae6b-112">deviceAccount</span><span class="sxs-lookup"><span data-stu-id="2ae6b-112">deviceAccount</span></span>|[<span data-ttu-id="2ae6b-113">windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="2ae6b-113">windowsDeviceAccount</span></span>](../resources/intune-devices-windowsdeviceaccount.md)|<span data-ttu-id="2ae6b-114">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-114">Not yet documented</span></span>|
-|<span data-ttu-id="2ae6b-115">passwordRotationEnabled</span><span class="sxs-lookup"><span data-stu-id="2ae6b-115">passwordRotationEnabled</span></span>|<span data-ttu-id="2ae6b-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="2ae6b-116">Boolean</span></span>|<span data-ttu-id="2ae6b-117">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-117">Not yet documented</span></span>|
-|<span data-ttu-id="2ae6b-118">calendarSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="2ae6b-118">calendarSyncEnabled</span></span>|<span data-ttu-id="2ae6b-119">布尔值</span><span class="sxs-lookup"><span data-stu-id="2ae6b-119">Boolean</span></span>|<span data-ttu-id="2ae6b-120">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-120">Not yet documented</span></span>|
-|<span data-ttu-id="2ae6b-121">deviceAccountEmail</span><span class="sxs-lookup"><span data-stu-id="2ae6b-121">deviceAccountEmail</span></span>|<span data-ttu-id="2ae6b-122">String</span><span class="sxs-lookup"><span data-stu-id="2ae6b-122">String</span></span>|<span data-ttu-id="2ae6b-123">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-123">Not yet documented</span></span>|
-|<span data-ttu-id="2ae6b-124">exchangeServer</span><span class="sxs-lookup"><span data-stu-id="2ae6b-124">exchangeServer</span></span>|<span data-ttu-id="2ae6b-125">String</span><span class="sxs-lookup"><span data-stu-id="2ae6b-125">String</span></span>|<span data-ttu-id="2ae6b-126">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-126">Not yet documented</span></span>|
-|<span data-ttu-id="2ae6b-127">sessionInitiationProtocalAddress</span><span class="sxs-lookup"><span data-stu-id="2ae6b-127">sessionInitiationProtocalAddress</span></span>|<span data-ttu-id="2ae6b-128">String</span><span class="sxs-lookup"><span data-stu-id="2ae6b-128">String</span></span>|<span data-ttu-id="2ae6b-129">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2ae6b-129">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-111">deviceAccount</span><span class="sxs-lookup"><span data-stu-id="dd2d7-111">deviceAccount</span></span>|[<span data-ttu-id="dd2d7-112">windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="dd2d7-112">windowsDeviceAccount</span></span>](../resources/intune-devices-windowsdeviceaccount.md)|<span data-ttu-id="dd2d7-113">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-113">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-114">passwordRotationEnabled</span><span class="sxs-lookup"><span data-stu-id="dd2d7-114">passwordRotationEnabled</span></span>|<span data-ttu-id="dd2d7-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="dd2d7-115">Boolean</span></span>|<span data-ttu-id="dd2d7-116">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-116">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-117">calendarSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="dd2d7-117">calendarSyncEnabled</span></span>|<span data-ttu-id="dd2d7-118">布尔值</span><span class="sxs-lookup"><span data-stu-id="dd2d7-118">Boolean</span></span>|<span data-ttu-id="dd2d7-119">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-119">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-120">deviceAccountEmail</span><span class="sxs-lookup"><span data-stu-id="dd2d7-120">deviceAccountEmail</span></span>|<span data-ttu-id="dd2d7-121">String</span><span class="sxs-lookup"><span data-stu-id="dd2d7-121">String</span></span>|<span data-ttu-id="dd2d7-122">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-122">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-123">exchangeServer</span><span class="sxs-lookup"><span data-stu-id="dd2d7-123">exchangeServer</span></span>|<span data-ttu-id="dd2d7-124">String</span><span class="sxs-lookup"><span data-stu-id="dd2d7-124">String</span></span>|<span data-ttu-id="dd2d7-125">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-125">Not yet documented</span></span>|
+|<span data-ttu-id="dd2d7-126">sessionInitiationProtocalAddress</span><span class="sxs-lookup"><span data-stu-id="dd2d7-126">sessionInitiationProtocalAddress</span></span>|<span data-ttu-id="dd2d7-127">String</span><span class="sxs-lookup"><span data-stu-id="dd2d7-127">String</span></span>|<span data-ttu-id="dd2d7-128">尚未记录</span><span class="sxs-lookup"><span data-stu-id="dd2d7-128">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2ae6b-130">关系</span><span class="sxs-lookup"><span data-stu-id="2ae6b-130">Relationships</span></span>
-<span data-ttu-id="2ae6b-131">无</span><span class="sxs-lookup"><span data-stu-id="2ae6b-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="dd2d7-129">关系</span><span class="sxs-lookup"><span data-stu-id="dd2d7-129">Relationships</span></span>
+<span data-ttu-id="dd2d7-130">无</span><span class="sxs-lookup"><span data-stu-id="dd2d7-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2ae6b-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2ae6b-132">JSON Representation</span></span>
-<span data-ttu-id="2ae6b-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2ae6b-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dd2d7-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dd2d7-131">JSON Representation</span></span>
+<span data-ttu-id="dd2d7-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dd2d7-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.updateWindowsDeviceAccountActionParameter"
