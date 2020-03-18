@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementStringSettingInstance
 description: 创建新的 deviceManagementStringSettingInstance 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad8d8d333386e351dcd920cbb095c76d814827ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6d567de8a337de9fba3de32b5b8343ef383a314
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470572"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815049"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>创建 deviceManagementStringSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
 
 
 

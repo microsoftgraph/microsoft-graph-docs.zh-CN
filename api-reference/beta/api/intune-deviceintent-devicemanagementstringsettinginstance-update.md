@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementStringSettingInstance
 description: 更新 deviceManagementStringSettingInstance 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe7dea60183eaaa049a90ae79a883c350251aa1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0da45562223ce3bd5223b1712306bbc9313c6bc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470425"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815021"
 ---
 # <a name="update-devicemanagementstringsettinginstance"></a>更新 deviceManagementStringSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
 
 
 

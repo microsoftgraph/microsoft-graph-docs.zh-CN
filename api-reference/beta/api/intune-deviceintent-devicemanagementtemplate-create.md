@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementTemplate
 description: 创建新的 deviceManagementTemplate 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 829413729d1ed2abbe55e624034f0b8a243a390b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0873e16f719d27b5f8288ee2209aa61f282917b4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470432"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815007"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -58,7 +56,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |displayName|String|模板的显示名称|
 |说明|String|模板的说明|
 |versionInfo|String|模板的版本信息|
-|isDeprecated|布尔|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
+|isDeprecated|布尔值|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
@@ -111,7 +109,6 @@ Content-Length: 420
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

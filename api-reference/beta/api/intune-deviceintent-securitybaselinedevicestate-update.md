@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770611"
+ms.locfileid: "42814867"
 ---
 # <a name="update-securitybaselinedevicestate"></a>更新 securityBaselineDeviceState
 

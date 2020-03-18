@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementStringSettingInstance
 description: 读取 deviceManagementStringSettingInstance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8768981d2b72f5593f1bfbb6f051374dffdabc1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10acbfb8dc0077660cebc12575928d337ab0f404
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470544"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815035"
 ---
 # <a name="get-devicemanagementstringsettinginstance"></a>获取 deviceManagementStringSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 262
   }
 }
 ```
-
 
 
 
