@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsUpdateState
 description: 读取 windowsUpdateState 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 054bde1cc3f59d33898eada01ba3cd740beaa9c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa037ed30870e7d35b8f08a4909294b6ca57c791
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457914"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800429"
 ---
 # <a name="get-windowsupdatestate"></a>获取 windowsUpdateState
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 594
   }
 }
 ```
-
 
 
 

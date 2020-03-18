@@ -1,20 +1,18 @@
 ---
 title: win32LobAppDetection 资源类型
 description: 用于检测 Win32 应用程序的基类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 281de30e5b0225d08c9848cc3c19abbe4c16946d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18f851cb510b4e4497d8d26518492a0aefd54b76
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490964"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797666"
 ---
 # <a name="win32lobappdetection-resource-type"></a>win32LobAppDetection 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

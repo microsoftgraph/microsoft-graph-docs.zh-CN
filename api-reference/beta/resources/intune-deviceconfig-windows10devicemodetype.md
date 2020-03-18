@@ -1,20 +1,18 @@
 ---
 title: windows10DeviceModeType 枚举类型
 description: Windows 10 设备模式类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c5424d7830629e9f313b40a4646ce98b5fae174
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 638bb0575cad11776b4998afd2ce5272d8df2a7f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529211"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787170"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>windows10DeviceModeType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ Windows 10 设备模式类型。
 |成员|值|说明|
 |:---|:---|:---|
 |standardConfiguration|0|标准配置|
-|sModeConfiguration|1 |S 模式配置|
+|sModeConfiguration|1|S 模式配置|
 
 
 

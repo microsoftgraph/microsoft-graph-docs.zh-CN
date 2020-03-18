@@ -1,20 +1,18 @@
 ---
 title: androidWorkProfileVpnConnectionType 枚举类型
 description: Android 工作配置文件 VPN 连接类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f8fb857b2fc7950af30ddd8bb3f8f9f83e6400e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3272f1aebb06440b935e945895db410885a03b9b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527172"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796101"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Android 工作配置文件 VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1 |脉冲安全。|
-|f5EdgeClient|2 |F5 边缘客户端。|
-|dellSonicWallMobileConnect|3 |戴尔 SonicWALL 移动连接。|
+|pulseSecure|1|脉冲安全。|
+|f5EdgeClient|双面|F5 边缘客户端。|
+|dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |citrix|5 |Citrix|
 |paloAltoGlobalProtect|6 |Palo Alto 网络 GlobalProtect。|

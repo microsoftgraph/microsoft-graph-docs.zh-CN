@@ -1,20 +1,18 @@
 ---
 title: derivedCredentialProviderType 枚举类型
 description: 派生凭据的提供程序类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ab592c6e8e50def1b2064225d5e6bef108bed4c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54c8c90c000688e5de254a4192c17146055cf91d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526737"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793371"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526737"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置任何派生的凭据提供程序。|
-|entrustDataCard|1 |Entrust DataCard.|
-|purebred|2 |Purebred-防护信息系统代理。|
-|xTec|3 |Xtec - AuthentX.|
+|entrustDataCard|1|Entrust DataCard.|
+|purebred|双面|Purebred-防护信息系统代理。|
+|xTec|第三章|Xtec - AuthentX.|
 |intercede|4 |Intercede.|
 
 

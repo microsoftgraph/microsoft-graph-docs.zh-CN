@@ -1,20 +1,18 @@
 ---
 title: easServices 枚举类型
 description: Exchange Active Sync services。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 263cd5001c23218e6465aba9860eee363099db26
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85c1bf633fe300f3ddf2efb06345e077d60aa3fc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526530"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791924"
 ---
 # <a name="easservices-enum-type"></a>easServices 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ Exchange Active Sync services。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|calendars|1 |启用日历同步。|
-|contacts|2 |启用联系人的同步。|
+|calendars|1|启用日历同步。|
+|contacts|双面|启用联系人的同步。|
 |email|4 |启用电子邮件同步。|
 |注释|8 |启用备注同步。|
 |提醒|16 |启用提醒同步。|

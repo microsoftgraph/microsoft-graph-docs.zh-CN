@@ -1,20 +1,18 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 28b89119acb17ecbc94e081122f69c27e0357c45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bcf54beeb8155a865c2360018d29b40599b2918
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491765"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797830"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42491765"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|transientError|1 |尚未记录|
-|error|2 |尚未记录|
-|unknown|3 |尚未记录|
+|transientError|1|尚未记录|
+|error|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|

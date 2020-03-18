@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsFeatureUpdateProfile
 description: 读取 windowsFeatureUpdateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c00a66f5081bf55ba80cfe34134591cf4607b6b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da755aec3b857a2d0248e83db05502c552647721
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457858"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800387"
 ---
 # <a name="get-windowsfeatureupdateprofile"></a>获取 windowsFeatureUpdateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +80,6 @@ Content-Length: 412
   }
 }
 ```
-
 
 
 

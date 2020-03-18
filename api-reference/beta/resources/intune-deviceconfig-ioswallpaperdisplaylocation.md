@@ -1,20 +1,18 @@
 ---
 title: iosWallpaperDisplayLocation 枚举类型
 description: 壁纸显示位置说明符的枚举类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 37643df03ce04f28e41e8826b83b4d9c929cc67e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69ae4edb44914912e05746c8780f4a4bb9cc3cae
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529833"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790480"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529833"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|没有为壁纸显示指定位置。|
-|锁屏|1 |在锁屏屏幕上显示配置的壁纸图像。|
-|homeScreen|2 |已配置的壁纸图像显示在 "主页（图标列表）" 屏幕上。|
-|lockAndHomeScreens|3 |在锁屏屏幕和主屏幕上显示配置的壁纸图像。|
+|锁屏|1|在锁屏屏幕上显示配置的壁纸图像。|
+|homeScreen|双面|已配置的壁纸图像显示在 "主页（图标列表）" 屏幕上。|
+|lockAndHomeScreens|第三章|在锁屏屏幕和主屏幕上显示配置的壁纸图像。|
 
 
 

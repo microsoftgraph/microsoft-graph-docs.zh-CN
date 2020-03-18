@@ -1,20 +1,18 @@
 ---
 title: win32LobAppFileSystemRequirement 资源类型
 description: 包含用于检测 Win32 应用程序的文件或文件夹路径
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa42d12dca0c019febaa35ca70aebfb37d6c7597
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d95f33c850927d8d54e3423dc320d2101d309013
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490705"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797629"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>win32LobAppFileSystemRequirement 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -32,7 +30,7 @@ ms.locfileid: "42490705"
 |detectionValue|String|从[Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的检测值|
 |路径|String|用于检测 Win32 业务线（LoB）应用程序的文件或文件夹路径|
 |fileOrFolderName|String|要检测 Win32 业务线（LoB）应用程序的文件或文件夹名称|
-|check32BitOn64System|布尔|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
+|check32BitOn64System|布尔值|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|文件系统检测类型。 可取值为：`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`、`doesNotExist`。|
 
 ## <a name="relationships"></a>关系

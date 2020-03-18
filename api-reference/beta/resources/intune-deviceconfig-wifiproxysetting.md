@@ -1,20 +1,18 @@
 ---
 title: wiFiProxySetting 枚举类型
 description: Wi-fi 代理设置。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2349f8af8faaf91c1aabb7eebc8d78b3a41b9975
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0382075d68b3b9ca4ef6ffb72ed1e83ad0ac6aba
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529247"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787241"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ Wi-fi 代理设置。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无代理。|
-|手动|1 |通过地址和端口的手动代理设置。|
-|自动|2 |通过 URL 自动代理设置。|
+|手动|1|通过地址和端口的手动代理设置。|
+|自动|双面|通过 URL 自动代理设置。|
 
 
 

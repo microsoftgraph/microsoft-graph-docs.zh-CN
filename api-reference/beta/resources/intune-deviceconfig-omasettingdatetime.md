@@ -1,20 +1,18 @@
 ---
 title: omaSettingDateTime 资源类型
 description: OMA 设置日期时间定义。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98d71569d3a40c9332498891fd9facc6c9ab3247
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d4ade59cc6359f4cc9f5bd668882860cf49ff49
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529567"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788455"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

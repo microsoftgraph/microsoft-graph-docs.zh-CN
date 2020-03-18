@@ -1,20 +1,18 @@
 ---
 title: 更新 mobileAppIntentAndState
 description: 更新 mobileAppIntentAndState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09a777fe0d45ebba7e3fba04476a7ecdf841f914
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d79bee0d503c14dc6b62ba7ac2adcc5c780aec5d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457585"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800093"
 ---
 # <a name="update-mobileappintentandstate"></a>更新 mobileAppIntentAndState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +127,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

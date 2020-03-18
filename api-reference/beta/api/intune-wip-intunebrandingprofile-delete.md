@@ -1,20 +1,18 @@
 ---
 title: 删除 intuneBrandingProfile
 description: 删除 intuneBrandingProfile。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b56e4103677ebcda40a8d93c88b672bf7dc2f48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4c7f253f032b8189680b44c69473103547fb33f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457445"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799728"
 ---
 # <a name="delete-intunebrandingprofile"></a>删除 intuneBrandingProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

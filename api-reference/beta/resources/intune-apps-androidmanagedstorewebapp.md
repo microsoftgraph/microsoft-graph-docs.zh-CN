@@ -1,20 +1,18 @@
 ---
 title: androidManagedStoreWebApp 资源类型
 description: 包含配置为通过托管 Android 应用商店分发的 web 应用程序的属性和继承的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bfdb4339ced00f2f2e3a9335c114a213fa1c914a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a622f8982763d88e6a6e36a3905f03602d6d6a2e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799274"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>androidManagedStoreWebApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42494182"
 |[列出 androidManagedStoreWebApps](../api/intune-apps-androidmanagedstorewebapp-list.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)集合|列出[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性和关系。|
 |[获取 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-get.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|读取[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性和关系。|
 |[创建 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-create.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|创建新的[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象。|
-|[删除 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|无|删除[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)。|
+|[删除 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|None|删除[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)。|
 |[更新 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-update.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|更新[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -53,16 +51,16 @@ ms.locfileid: "42494182"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|包标识符。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|String|标识名称。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|VPP 许可证的总数。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isPrivate|布尔|指示应用程序是否仅适用于给定企业的用户。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|布尔|指示应用程序是否为预安装的系统应用程序。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|布尔|此应用是否支持 OEMConfig 策略。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

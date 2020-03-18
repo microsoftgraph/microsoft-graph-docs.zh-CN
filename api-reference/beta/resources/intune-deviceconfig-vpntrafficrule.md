@@ -1,20 +1,18 @@
 ---
 title: vpnTrafficRule 资源类型
 description: VPN 流量规则定义。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9eecec1ca70b897f88003b884ea3e5e3a024a7b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad75e1c4f226952ce75942b006d3a993fcd4274b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529280"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787297"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

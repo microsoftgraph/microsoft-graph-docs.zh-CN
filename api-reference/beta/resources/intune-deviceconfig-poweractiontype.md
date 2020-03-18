@@ -1,20 +1,18 @@
 ---
 title: powerActionType 枚举类型
 description: 电源操作类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9db6e404722c0de1f65f43d0ecfd5feff5852b60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6352809006b196ecafc05be817af81cffb47797e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529545"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788413"
 ---
 # <a name="poweractiontype-enum-type"></a>powerActionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529545"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|noAction|1 |无操作|
-|休眠|2 |将设备置于睡眠状态|
-|休眠|3 |将设备置于休眠状态|
+|noAction|1|无操作|
+|休眠|双面|将设备置于睡眠状态|
+|休眠|第三章|将设备置于休眠状态|
 |关闭|4 |关闭设备|
 
 

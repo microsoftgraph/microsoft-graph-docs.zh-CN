@@ -1,20 +1,18 @@
 ---
 title: windows10EditionType 枚举类型
 description: Windows 10 版本的类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0908a7a5ad9e5eb2bde70cd514fe8304b8ba0ce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1bc9f191211a2018eadd5fe19846bc9e63059e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529209"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786724"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Windows 10 版本的类型。
 |成员|值|说明|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 企业版|
-|windows10EnterpriseN|1 |Windows 10 EnterpriseN|
-|windows10Education|2 |Windows 10 教育版|
-|windows10EducationN|3 |Windows 10 EducationN|
+|windows10EnterpriseN|1|Windows 10 EnterpriseN|
+|windows10Education|双面|Windows 10 教育版|
+|windows10EducationN|第三章|Windows 10 EducationN|
 |windows10MobileEnterprise|4 |Windows 10 移动版企业版|
 |windows10HolographicEnterprise|5 |Windows 10 全息企业版|
 |windows10Professional|6 |Windows 10 专业版|
@@ -36,7 +34,7 @@ Windows 10 版本的类型。
 |windows10ProfessionalEducation|8 |Windows 10 专业教育版|
 |windows10ProfessionalEducationN|9 |Windows 10 专业版 EducationN|
 |windows10ProfessionalWorkstation|10 |适用于工作站的 Windows 10 专业版|
-|windows10ProfessionalWorkstationN|11 |适用于工作站的 Windows 10 专业版 N|
+|windows10ProfessionalWorkstationN|11x17|适用于工作站的 Windows 10 专业版 N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Windows 10 主页|
 |windows10HomeChina|14 |Windows 10 家庭版中国|

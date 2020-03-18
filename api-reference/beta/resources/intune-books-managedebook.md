@@ -1,20 +1,18 @@
 ---
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 040da9c471d42ff77423dc035cce8b255ab9299a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcec7c8dfaa0461e6b88d67a5a0f73373a1af7b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488724"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797365"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

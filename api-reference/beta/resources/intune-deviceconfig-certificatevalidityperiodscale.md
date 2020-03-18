@@ -1,20 +1,18 @@
 ---
 title: certificateValidityPeriodScale 枚举类型
 description: 证书有效期限选项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2468e5dc4bfb95bd226b26462f9c5bcf1333022e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e56c931da7a3c210ca5609bcab44dac42bf65378
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526966"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795678"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526966"
 |成员|值|说明|
 |:---|:---|:---|
 |之前|0|天数。|
-|月度|1 |月数。|
-|年内|2 |年。|
+|月度|1|月数。|
+|年内|双面|年。|
 
 
 

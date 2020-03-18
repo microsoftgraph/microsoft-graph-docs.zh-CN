@@ -1,20 +1,18 @@
 ---
 title: windowsAppX 资源类型
 description: 包含 Windows AppX 业务线应用的属性和继承的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2751098b375fb9a21f550dc870aa1eec3254c51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55be61872a8cf037d937effcd62e33701c18351c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490243"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797533"
 ---
 # <a name="windowsappx-resource-type"></a>windowsAppX 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42490243"
 |[列出 windowsAppXs](../api/intune-apps-windowsappx-list.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)集合|列出[windowsAppX](../resources/intune-apps-windowsappx.md)对象的属性和关系。|
 |[获取 windowsAppX](../api/intune-apps-windowsappx-get.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|读取[windowsAppX](../resources/intune-apps-windowsappx.md)对象的属性和关系。|
 |[创建 windowsAppX](../api/intune-apps-windowsappx-create.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|创建新的[windowsAppX](../resources/intune-apps-windowsappx.md)对象。|
-|[删除 windowsAppX](../api/intune-apps-windowsappx-delete.md)|无|删除[windowsAppX](../resources/intune-apps-windowsappx.md)。|
+|[删除 windowsAppX](../api/intune-apps-windowsappx-delete.md)|None|删除[windowsAppX](../resources/intune-apps-windowsappx.md)。|
 |[更新 windowsAppX](../api/intune-apps-windowsappx-update.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|更新[windowsAppX](../resources/intune-apps-windowsappx.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -53,7 +51,7 @@ ms.locfileid: "42490243"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|

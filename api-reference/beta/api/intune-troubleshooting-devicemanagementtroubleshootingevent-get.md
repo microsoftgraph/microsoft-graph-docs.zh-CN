@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementTroubleshootingEvent
 description: 读取 deviceManagementTroubleshootingEvent 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efac6a3810793585f8210da8eab926372734c89a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fce5da3a23413be7dae32838694e7f341ca9ec9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800177"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>获取 deviceManagementTroubleshootingEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 972
   }
 }
 ```
-
 
 
 

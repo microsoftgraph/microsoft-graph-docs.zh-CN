@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: 删除 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 758dba601bfb1d2a18c34771f922e17c3fcb1f29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c517b37c9742aa1579cc41917df1f15986964c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457501"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799785"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>删除 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPoli
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

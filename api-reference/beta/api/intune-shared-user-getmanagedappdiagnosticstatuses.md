@@ -1,20 +1,18 @@
 ---
 title: getManagedAppDiagnosticStatuses 函数
 description: 获取给定用户的诊断验证状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fcd745ea8a8c25e52ed7ff962c0caf294af8a345
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1cd9d5ccf9477b0db5aec803fbe1b18482f49c32
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458040"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800555"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -78,7 +76,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: androidWiFiSecurityType 枚举类型
 description: 适用于 Android 的 wlan 安全类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 773e53075f0a86d6c04b4d294e4604ff357260f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bbeec9421337b6af898f97f0f53e64cb0c45d7a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527254"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796683"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527254"
 |成员|值|说明|
 |:---|:---|:---|
 |open|0|打开（无身份验证）。|
-|wpaEnterprise|1 |WPA-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
-|wpa2Enterprise|2 |WPA2-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
+|wpaEnterprise|1|WPA-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
+|wpa2Enterprise|双面|WPA2-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
 
 
 

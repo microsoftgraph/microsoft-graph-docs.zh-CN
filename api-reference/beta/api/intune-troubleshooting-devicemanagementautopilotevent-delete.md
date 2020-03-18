@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceManagementAutopilotEvent
 description: 删除 deviceManagementAutopilotEvent。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b92fbeb95e044a4e2c345c9ae839a35e6dd46b04
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bfc494c8538426eceb4f5b4d5d3395847b643de0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800254"
 ---
 # <a name="delete-devicemanagementautopilotevent"></a>删除 deviceManagementAutopilotEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -4,16 +4,16 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2ba30f29a968c31b2f9083f51eb60eabc237e407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ecb082762fae148b2c947362a8099a9bc380e2f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494448"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799316"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -136,6 +136,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)
 - [Web 应用](intune-apps-webapp.md)
 - [Win32 LOB 应用](intune-apps-win32lobapp.md)
+- [Win32 LOB 应用传递优化优先级](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB 应用检测](intune-apps-win32lobappdetection.md)
 - [Win32 LOB 应用检测运算符](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB 应用文件系统检测](intune-apps-win32lobappfilesystemdetection.md)

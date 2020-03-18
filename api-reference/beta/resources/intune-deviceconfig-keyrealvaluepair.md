@@ -1,20 +1,18 @@
 ---
 title: keyRealValuePair 资源类型
 description: 带有字符串键和实际（浮点）值的键/值对。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 407ac4da833a75aa0a6708b6e392c9b1e08e9ba4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b90c7faa0bb3ffabe5b057d03503745801af8c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526260"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790424"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>keyRealValuePair 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

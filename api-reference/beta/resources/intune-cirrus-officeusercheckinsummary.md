@@ -2,19 +2,17 @@
 title: officeUserCheckinSummary 资源类型
 description: 描述租户签入统计信息的实体。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3daa7fd8691fe6c6894a2305e9f5c1533f597b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ef202194c8817e500d27a96ae3dbf4e5e1a8359
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488066"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797295"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

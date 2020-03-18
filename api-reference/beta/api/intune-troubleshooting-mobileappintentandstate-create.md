@@ -1,20 +1,18 @@
 ---
 title: 创建 mobileAppIntentAndState
 description: 创建新的 mobileAppIntentAndState 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fe4cce732d11733a2c1e0ce7aef34f0e111f378
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6b5132675f09da3b26ffca6e51893ab64afed43
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457627"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800121"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +127,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

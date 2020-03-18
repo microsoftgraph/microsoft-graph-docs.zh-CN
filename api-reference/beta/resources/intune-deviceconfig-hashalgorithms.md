@@ -1,20 +1,18 @@
 ---
 title: hashAlgorithms 枚举类型
 description: 哈希算法选项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a6065c43456e86d7c5a984d6709b4d66dd9794
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afc685afd353e65d402047922240f24afaaaa1ef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526428"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791728"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,8 +23,8 @@ ms.locfileid: "42526428"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|sha1|1 |SHA-1 哈希算法。|
-|sha2|2 |SHA-1 哈希算法。|
+|sha1|1|SHA-1 哈希算法。|
+|sha2|双面|SHA-1 哈希算法。|
 
 
 

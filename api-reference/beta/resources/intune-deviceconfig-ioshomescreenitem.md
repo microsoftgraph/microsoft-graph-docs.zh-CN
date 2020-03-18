@@ -1,20 +1,18 @@
 ---
 title: iosHomeScreenItem 资源类型
 description: 表示 iOS 主屏幕上的项
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c84c61128e9f8f81cf21c2908c4615f0fc7134e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85c022f1e72e990723070ecdaf86fdfadae6d825
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526351"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791567"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

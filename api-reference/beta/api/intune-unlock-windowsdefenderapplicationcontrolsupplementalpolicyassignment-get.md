@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: 读取 windowsDefenderApplicationControlSupplementalPolicyAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c56c4c40fa8a1ad3c69e790792be3839e1d12ee1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 524c330c0d66d5535b93fa70e146907f38e0d41b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457529"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799813"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>获取 windowsDefenderApplicationControlSupplementalPolicyAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 279
   }
 }
 ```
-
 
 
 

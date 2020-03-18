@@ -1,20 +1,18 @@
 ---
 title: keyUsages 枚举类型
 description: 密钥用法选项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 60fb80319d2012672bb22df98d553d02e36afe95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3fc6e48d2f1c6a2438f84e29a105bd0584b7110
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529775"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790389"
 ---
 # <a name="keyusages-enum-type"></a>keyUsages 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,8 +23,8 @@ ms.locfileid: "42529775"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|keyEncipherment|1 |密钥加密用法。|
-|digitalSignature|2 |数字签名使用情况。|
+|keyEncipherment|1|密钥加密用法。|
+|digitalSignature|双面|数字签名使用情况。|
 
 
 

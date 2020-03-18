@@ -1,20 +1,18 @@
 ---
 title: iosUpdatesInstallStatus 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 839ece354ff79bb1adfb564ab68dbf414dc8d01f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba9b17b10e9ecac48fbc8b39cc896d1e9d8f873
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790501"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526288"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|可用|1 |尚未记录|
-|待机|2 |尚未记录|
-|unknown|3 |尚未记录|
+|可用|1|尚未记录|
+|待机|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |下载|-2016330712|尚未记录|
 |downloadFailed|-2016330711|尚未记录|
 |downloadRequiresComputer|-2016330710|尚未记录|
@@ -42,6 +40,7 @@ ms.locfileid: "42526288"
 |installFailed|-2016330702|尚未记录|
 |notSupportedOperation|-2016330701|尚未记录|
 |sharedDeviceUserLoggedInError|-2016330699|尚未记录|
+|deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
 
 
 

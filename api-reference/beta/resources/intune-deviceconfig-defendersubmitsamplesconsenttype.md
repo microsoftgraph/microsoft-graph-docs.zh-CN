@@ -1,20 +1,18 @@
 ---
 title: defenderSubmitSamplesConsentType 枚举类型
 description: DefenderSubmitSamplesConsentType 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df739744ddb25d0351f49bb38a37ed6b59f47c35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fc146fb2bc65a44161a02b90e87ac805d1cb7f8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526838"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794415"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ DefenderSubmitSamplesConsentType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|0|自动发送安全示例|
-|alwaysPrompt|1 |始终提示|
-|neverSend|2 |从不发送|
-|sendAllSamplesAutomatically|3 |自动发送所有示例|
+|alwaysPrompt|1|始终提示|
+|neverSend|双面|从不发送|
+|sendAllSamplesAutomatically|第三章|自动发送所有示例|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: bitLockerSystemDrivePolicy 资源类型
 description: BitLocker 加密基本策略。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a09ae1045dfa7f7418205e3aa39948dc9e5b67b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 313def2a64fdb1a2af57461ba58860361e0de1f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527011"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795727"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,15 +24,15 @@ BitLocker 加密基本策略。
 |属性|类型|说明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择操作系统驱动器的加密方法。 可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`。|
-|startupAuthenticationRequired|布尔|启动时需要其他身份验证。|
-|startupAuthenticationBlockWithoutTpmChip|布尔|指示是否允许没有兼容的 TPM 的 BitLocker （在 USB 闪存驱动器上需要密码或启动密钥）。|
+|startupAuthenticationRequired|布尔值|启动时需要其他身份验证。|
+|startupAuthenticationBlockWithoutTpmChip|布尔值|指示是否允许没有兼容的 TPM 的 BitLocker （在 USB 闪存驱动器上需要密码或启动密钥）。|
 |startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许或不允许 TPM 启动。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许或不允许 TPM 启动 pin。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许或不允许 TPM 启动密钥。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/不允许使用 TPM 启动 pin 密钥和密钥。 可取值为：`blocked`、`required`、`allowed`。|
 |minimumPinLength|Int32|指示启动 pin 的最小长度。 有效值为4至20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|允许在缺少所需的启动密钥信息时恢复 BitLocker 加密的操作系统驱动器。 启用 BitLocker 时，将应用此策略设置。|
-|prebootRecoveryEnableMessageAndUrl|布尔|启用预引导恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则此值不起作用。|
+|prebootRecoveryEnableMessageAndUrl|布尔值|启用预引导恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则此值不起作用。|
 |prebootRecoveryMessage|String|定义自定义恢复消息。|
 |prebootRecoveryUrl|String|定义自定义恢复 URL。|
 

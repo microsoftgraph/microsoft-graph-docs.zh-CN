@@ -1,20 +1,18 @@
 ---
 title: getManagedAppPolicies 函数
 description: 获取给定用户的应用限制。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8b5b89c922d562520bac3ec152b9acab363d8a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b5064fc0abb621ae693c2c5c4fa2eccb36dac3b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458033"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800548"
 ---
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -92,7 +90,6 @@ Content-Length: 401
   ]
 }
 ```
-
 
 
 

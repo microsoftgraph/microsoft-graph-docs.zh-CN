@@ -1,20 +1,18 @@
 ---
 title: localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 653a0e7bef7355c432297613bfa88a82a467c863
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b54aa37d7bbe78f1d8a8b308e7377e50a46389f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529745"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790333"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |lockWorkstation|0|无操作|
-|noAction|1 |锁定工作站|
-|forceLogoff|2 |强制注销|
-|disconnectRemoteDesktopSession|3 |远程远程桌面服务会话时断开连接|
+|noAction|1|锁定工作站|
+|forceLogoff|双面|强制注销|
+|disconnectRemoteDesktopSession|第三章|远程远程桌面服务会话时断开连接|
 
 
 

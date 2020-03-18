@@ -1,20 +1,18 @@
 ---
 title: usernameSource 枚举类型
 description: 用户名源。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4379d16990b04cbdc6a47e288716e90558f1bc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f76ffeb23a32c670e0f9fed676a2ca508724444
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525801"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787430"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525801"
 |成员|值|说明|
 |:---|:---|:---|
 |userPrincipalName|0|用户主体名称。|
-|primarySmtpAddress|1 |主 SMTP 地址。|
-|samAccountName|2 |用户 sam 帐户名称。|
+|primarySmtpAddress|1|主 SMTP 地址。|
+|samAccountName|双面|用户 sam 帐户名称。|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: managedEBookCategory 资源类型
 description: 包含单个 Intune 电子书类别的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5c61deaf03667f3b6533149a0281a027154d737
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ec19e13da9df1a73a9526222b1e3b3aabb8936f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488619"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797351"
 ---
 # <a name="managedebookcategory-resource-type"></a>managedEBookCategory 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42488619"
 |[列出 managedEBookCategories](../api/intune-books-managedebookcategory-list.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|列出[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象的属性和关系。|
 |[获取 managedEBookCategory](../api/intune-books-managedebookcategory-get.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|读取[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象的属性和关系。|
 |[创建 managedEBookCategory](../api/intune-books-managedebookcategory-create.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|创建新的[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象。|
-|[删除 managedEBookCategory](../api/intune-books-managedebookcategory-delete.md)|无|删除[managedEBookCategory](../resources/intune-books-managedebookcategory.md)。|
+|[删除 managedEBookCategory](../api/intune-books-managedebookcategory-delete.md)|None|删除[managedEBookCategory](../resources/intune-books-managedebookcategory.md)。|
 |[更新 managedEBookCategory](../api/intune-books-managedebookcategory-update.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|更新[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象的属性。|
 
 ## <a name="properties"></a>属性

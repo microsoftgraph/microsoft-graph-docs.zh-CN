@@ -1,20 +1,18 @@
 ---
 title: 删除 mobileAppIntentAndState
 description: 删除 mobileAppIntentAndState。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c9856d9f5bf6c5749238a2ce4ff7463645bca5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1aadbd427ce8bfca0c72e97e24b03c53bbaea4e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800114"
 ---
 # <a name="delete-mobileappintentandstate"></a>删除 mobileAppIntentAndState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

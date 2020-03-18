@@ -1,20 +1,18 @@
 ---
 title: editionUpgradeLicenseType 枚举类型
 description: 版本升级许可证类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d1c6e63f3cd933442bbe56f7ff5e74e8eb859b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4329f20d5f109e8dfedb85a8e9ca3dd078ed3728
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791819"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42530029"
 |成员|值|说明|
 |:---|:---|:---|
 |productKey|0|产品密钥类型|
-|licenseFile|1 |许可证文件类型|
-|notConfigured|2 |NotConfigured|
+|licenseFile|1|许可证文件类型|
+|notConfigured|双面|NotConfigured|
 
 
 

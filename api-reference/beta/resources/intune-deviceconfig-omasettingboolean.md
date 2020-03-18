@@ -1,20 +1,18 @@
 ---
 title: omaSettingBoolean 资源类型
 description: OMA 设置布尔定义。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 346b08685b8a44b414bd6f19d601541dc964cf92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34cc6d42cc6a6914af67e8b986dd5230a389fdd2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525976"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788469"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

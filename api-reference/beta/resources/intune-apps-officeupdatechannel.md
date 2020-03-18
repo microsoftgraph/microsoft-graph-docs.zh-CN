@@ -1,20 +1,18 @@
 ---
 title: officeUpdateChannel 枚举类型
 description: 用于指定 Office365 更新频道的枚举。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 980cf0845a48c2e804001b4d4177f31ec00d2b44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52a92a83efd9f7807ac09b53b936a5c51671c93b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797722"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42491181"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|目前|1 |尚未记录|
-|关联表|2 |尚未记录|
-|firstReleaseCurrent|3 |尚未记录|
+|目前|1|尚未记录|
+|关联表|双面|尚未记录|
+|firstReleaseCurrent|第三章|尚未记录|
 |firstReleaseDeferred|4 |尚未记录|
 
 

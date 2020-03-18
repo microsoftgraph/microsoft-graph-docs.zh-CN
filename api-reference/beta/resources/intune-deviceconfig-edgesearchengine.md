@@ -1,20 +1,18 @@
 ---
 title: edgeSearchEngine 资源类型
 description: 允许 IT 管理员为 MDM 控制的设备设置预定义的默认搜索引擎。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9828d2540f1b386302c18cde67811fe06fd9e50f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9471c92dc88d49426a7f8c41f73708594b7cbf8c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791861"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

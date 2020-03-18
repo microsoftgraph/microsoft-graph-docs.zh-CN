@@ -1,20 +1,18 @@
 ---
 title: miracastChannel 枚举类型
 description: Miracast 通道的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d0c280f5c4c1db74d1323375006a839ea422397e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3cca2c5a91c88e7bf7890ab8f35c4948986faca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529601"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788532"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Miracast 通道的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|一个|1 |次.|
-|two|2 |以下.|
-|three|3 |条.|
+|一个|1|次.|
+|two|双面|以下.|
+|three|第三章|条.|
 |four|4 |条.|
 |five|5 |五百.|
 |位|6 |位.|
@@ -36,7 +34,7 @@ Miracast 通道的可能值。
 |无穷|8 |无穷.|
 |九点|9 |九点.|
 |个人|10 |个人.|
-|11|11 |11.|
+|11|11x17|11.|
 |thirtySix|36|36。|
 |40|40|40。|
 |fortyFour|44|44。|

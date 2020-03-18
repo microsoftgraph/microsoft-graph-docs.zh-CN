@@ -1,20 +1,18 @@
 ---
 title: certificateRevocationStatus 枚举类型
 description: 证书吊销状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 870cf8a59dc2f7a8ae26f3e7a76dd49249b0e008
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0e0342924faf166e6daf0a66149e841b88d6d0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526980"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795692"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526980"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未被吊销。|
-|决|1 |撤销挂起。|
-|io|2 |已发出吊销命令。|
-|未能|3 |吊销失败。|
+|决|1|撤销挂起。|
+|io|双面|已发出吊销命令。|
+|未能|第三章|吊销失败。|
 |吊销|4 |吊销.|
 
 

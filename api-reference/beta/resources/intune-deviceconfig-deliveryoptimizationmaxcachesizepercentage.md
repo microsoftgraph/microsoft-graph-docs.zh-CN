@@ -1,20 +1,18 @@
 ---
 title: deliveryOptimizationMaxCacheSizePercentage 资源类型
 description: 传递优化最大缓存大小百分比类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5ef7bef4f86f78207df37dcb684b714c93b8d5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f588344fadc5e5c0c64be72a12daad57568ed3d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526745"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793385"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

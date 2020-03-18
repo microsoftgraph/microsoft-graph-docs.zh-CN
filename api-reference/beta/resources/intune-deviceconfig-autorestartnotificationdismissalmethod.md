@@ -1,20 +1,18 @@
 ---
 title: autoRestartNotificationDismissalMethod 枚举类型
 description: Auto restart 必需的通知开除方法
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 27a94e59814588511f6eae6c8a6ecff3f64144b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69178d88d1a82686cba29f56dc8c22a24da58a78
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527064"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795896"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ Auto restart 必需的通知开除方法
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|自动|1 |自动开除|
-|user|2 |用户开除|
+|自动|1|自动开除|
+|user|双面|用户开除|
 
 
 

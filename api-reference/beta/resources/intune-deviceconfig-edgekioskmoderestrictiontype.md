@@ -1,20 +1,18 @@
 ---
 title: edgeKioskModeRestrictionType 枚举类型
 description: 根据展台模式指定 Microsoft Edge 设置的限制方式。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 929e74097d329f2d6932ae3aadaa001258dbd2fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 402feb76fbb95664f5b4fe8190dfb71504db0abf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530055"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791875"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42530055"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置（无限制）。|
-|digitalSignage|1 |单应用模式中的交互/数字告示。|
-|normalMode|2 |正常模式（Microsoft Edge 的完整版本）。|
-|publicBrowsingSingleApp|3 |单应用模式中的公共浏览。|
+|digitalSignage|1|单应用模式中的交互/数字告示。|
+|normalMode|双面|正常模式（Microsoft Edge 的完整版本）。|
+|publicBrowsingSingleApp|第三章|单应用模式中的公共浏览。|
 |publicBrowsingMultiApp|4 |多应用模式中的公共浏览（inPrivate）。|
 
 

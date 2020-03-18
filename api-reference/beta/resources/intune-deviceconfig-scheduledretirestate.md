@@ -1,20 +1,18 @@
 ---
 title: scheduledRetireState 枚举类型
 description: '取消或确认计划的停用 '
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c85a0bb02c330dfb2e53bd694bf9f71a642642d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 801b4e6343dc68cbe29c29f4ad38ebf9059e13d1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529432"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787584"
 ---
 # <a name="scheduledretirestate-enum-type"></a>scheduledRetireState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529432"
 |成员|值|说明|
 |:---|:---|:---|
 |cancelRetire|0|取消停用。|
-|comfirmRetire|1 |停用这些设备。|
+|comfirmRetire|1|停用这些设备。|
 
 
 

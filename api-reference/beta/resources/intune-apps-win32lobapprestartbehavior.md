@@ -1,22 +1,22 @@
 ---
 title: win32LobAppRestartBehavior 枚举类型
 description: 指示重新启动操作的类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6747b9b0b3f46e5c2fcf913725d915232a1559ed
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 16fda1d530614ea138ecc575930b4800b5f143c4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538544"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797554"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>win32LobAppRestartBehavior 枚举类型
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 指示重新启动操作的类型。
 

@@ -1,20 +1,18 @@
 ---
 title: vpnOnDemandRuleConnectionDomainAction 枚举类型
 description: VPN 按需规则连接域操作。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5aa538196a18cb45572340e7f6a5a0a3ffa2112f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf4aa54b83ab6d99d4a1f32c32e810c4b994a62d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525759"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787339"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ VPN 按需规则连接域操作。
 |成员|值|说明|
 |:---|:---|:---|
 |connectIfNeeded|0|如果需要，请进行连接。|
-|neverConnect|1 |从不连接。|
+|neverConnect|1|从不连接。|
 
 
 

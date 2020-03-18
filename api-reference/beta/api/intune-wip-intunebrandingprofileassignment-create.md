@@ -1,20 +1,18 @@
 ---
 title: 创建 intuneBrandingProfileAssignment
 description: 创建新的 intuneBrandingProfileAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10fb939fef6e8c88398ad627adcd0b33e0b49a2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cba3421c866d81ab3246a0efc5d0b73ed149c0cf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457417"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799700"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>创建 intuneBrandingProfileAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

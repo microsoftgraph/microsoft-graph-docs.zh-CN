@@ -1,20 +1,18 @@
 ---
 title: symantecCodeSigningCertificate 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ee7473a782df120a83d6d534a5f63de14885311
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fe681f00f3a14f7199416366cd5a28e6a0ff8d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797708"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -33,7 +31,7 @@ ms.locfileid: "42491027"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |content|Binary|原始数据格式的 Windows Symantec 代码签名证书。|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |密码|字符串|.Pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|

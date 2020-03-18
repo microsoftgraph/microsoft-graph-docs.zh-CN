@@ -1,20 +1,18 @@
 ---
 title: keySize 枚举类型
 description: "\"密钥大小\" 选项。"
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bb1171f3f062db0d0c54f1619efaf221717e9bda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 976e3cd7c27596d18ccb4061a8435f74e6bc37cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529786"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790417"
 ---
 # <a name="keysize-enum-type"></a>keySize 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529786"
 |成员|值|说明|
 |:---|:---|:---|
 |size1024|0|1024位。|
-|size2048|1 |2048位。|
+|size2048|1|2048位。|
 
 
 

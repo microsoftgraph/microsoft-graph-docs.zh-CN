@@ -1,20 +1,18 @@
 ---
 title: deviceInstallState 资源类型
 description: 包含某个设备的安装状态的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8ea6cdc326f4895a6b145b26376bfcf7d683112
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2b4191f4167b381edf265adc10e83afb990c93
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489242"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797400"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

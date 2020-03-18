@@ -1,20 +1,18 @@
 ---
 title: eapType 枚举类型
 description: 可扩展的身份验证协议（EAP）配置类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5d3aff411b572748cddaab980eefa60731c45d27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29fb01e6d9f0e5d8fd86fec2455442bc7f11ebfa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791945"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: ratingFranceMoviesType 枚举类型
 description: 法国的电影评级标签
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 41753ec45880e3b77aeef21ae365117d66272a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 681d432cedbe58150a56ba75ebea575836775609
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787724"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529511"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|agesAbove10|2 |10分类禁止将胶片屏蔽到小于10的未成年人|
-|agesAbove12|3 |12分类禁止将胶片屏蔽到12岁下面的未成年人|
+|allBlocked|1|不允许任何电影内容|
+|agesAbove10|双面|10分类禁止将胶片屏蔽到小于10的未成年人|
+|agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
 |agesAbove16|4 |16分类禁止将胶片屏蔽到16下的未成年人|
 |agesAbove18|5 |18分类禁止筛选到18岁以上的未成年人|
 

@@ -1,20 +1,18 @@
 ---
 title: ratingUnitedKingdomMoviesType 枚举类型
 description: 英国的电影评分标签
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 18393ecc279a581eb3fb9346dde673c81f8ce678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76c8cd2752c8dc6ffa85fee32138a329bcd89361
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529473"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787654"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529473"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|概要|2 |U 分类适用于所有年龄段|
-|universalChildren|3 |UC 分类适用于学校子女、旧评级标签|
+|allBlocked|1|不允许任何电影内容|
+|概要|双面|U 分类适用于所有年龄段|
+|universalChildren|第三章|UC 分类适用于学校子女、旧评级标签|
 |parentalGuidance|4 |PG 分类适用于成熟|
 |agesAbove12Video|5 |12，视频发布适用于12年以上|
 |agesAbove12Cinema|6 |12A，电影发布适用于12年以上|

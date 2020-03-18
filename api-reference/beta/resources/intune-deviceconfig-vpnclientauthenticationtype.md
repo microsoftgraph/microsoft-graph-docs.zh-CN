@@ -1,20 +1,18 @@
 ---
 title: vpnClientAuthenticationType 枚举类型
 description: VPN 客户端身份验证类型的类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ce19c67689e12889b91597066593572a13fc8313
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb9f0e306292b744204c066575d25e98e23a464d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529336"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787409"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>vpnClientAuthenticationType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ VPN 客户端身份验证类型的类型
 |成员|值|说明|
 |:---|:---|:---|
 |userAuthentication|0|用户身份验证|
-|deviceAuthentication|1 |设备身份验证|
+|deviceAuthentication|1|设备身份验证|
 
 
 

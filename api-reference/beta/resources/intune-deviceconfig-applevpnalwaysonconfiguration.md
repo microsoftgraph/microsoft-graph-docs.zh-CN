@@ -1,20 +1,18 @@
 ---
 title: appleVpnAlwaysOnConfiguration 资源类型
 description: Always On MacOS 和 iOS IKEv2 的 VPN 配置
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b963556254766cff951faeed707e5c6aceed05f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10facf24c8fd56786c2706e1fa8ee999f48e2ed7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527148"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796066"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>appleVpnAlwaysOnConfiguration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,15 +24,15 @@ Always On MacOS 和 iOS IKEv2 的 VPN 配置
 |属性|类型|说明|
 |:---|:---|:---|
 |tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|确定特定隧道配置应用于哪些连接。 可取值为：`wifiAndCellular`、`cellular`、`wifi`。|
-|userToggleEnabled|布尔|允许用户使用 UI 切换 VPN 配置|
+|userToggleEnabled|布尔值|允许用户使用 UI 切换 VPN 配置|
 |voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定是否将语音邮件服务从始终打开的 VPN 连接中排除。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
 |airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定 AirPrint 服务是否将从 always on VPN 连接免除。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
 |cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定是否将从 "始终打开" VPN 连接中排除手机网络服务。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
-|allowAllCaptiveNetworkPlugins|布尔|指定是否应允许在 vpn 外部使用来自所有固定网络插件的流量|
+|allowAllCaptiveNetworkPlugins|布尔值|指定是否应允许在 vpn 外部使用来自所有固定网络插件的流量|
 |allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|确定是否允许所有、部分或没有本地的固定网络应用|
-|allowCaptiveWebSheet|布尔|确定是否允许来自 Websheet 应用的流量在 VPN 之外|
+|allowCaptiveWebSheet|布尔值|确定是否允许来自 Websheet 应用的流量在 VPN 之外|
 |natKeepAliveIntervalInSeconds|Int32|指定通过 VPN 发送网络地址转换保活程序包的频率（以秒为单位）|
-|natKeepAliveOffloadEnable|布尔|设备处于睡眠状态时启用 NAT 保活信号的硬件卸载|
+|natKeepAliveOffloadEnable|布尔值|设备处于睡眠状态时启用 NAT 保活信号的硬件卸载|
 
 ## <a name="relationships"></a>关系
 无

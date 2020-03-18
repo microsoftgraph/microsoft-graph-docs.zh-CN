@@ -1,20 +1,18 @@
 ---
 title: prereleaseFeatures 枚举类型
 description: 预发行版功能的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aa60fe5a3b48edf1c8332e6aca299e7a54112ecc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 527b6e8625def282a184511495a5c43d3cc94e6b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529533"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788406"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529533"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|settingsOnly|1 |仅设置预发布功能。|
-|settingsAndExperimentations|2 |设置和 experimentations 预发布功能。|
-|notAllowed|3 |不允许使用预发布功能。|
+|settingsOnly|1|仅设置预发布功能。|
+|settingsAndExperimentations|双面|设置和 experimentations 预发布功能。|
+|notAllowed|第三章|不允许使用预发布功能。|
 
 
 

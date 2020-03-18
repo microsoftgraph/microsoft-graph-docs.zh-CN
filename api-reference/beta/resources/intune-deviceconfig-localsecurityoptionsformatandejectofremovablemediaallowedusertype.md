@@ -1,20 +1,18 @@
 ---
 title: localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 93aec1ff6a526f49afb6aa711a341a3c31ea274b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cf27aa3ca4816e1af2ba4eea1d7e20fbef3dc71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526239"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790361"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|管理员|1 |管理员|
-|administratorsAndPowerUsers|2 |管理员和高级用户|
-|administratorsAndInteractiveUsers|3 |管理员和交互用户 |
+|管理员|1|管理员|
+|administratorsAndPowerUsers|双面|管理员和高级用户|
+|administratorsAndInteractiveUsers|第三章|管理员和交互用户 |
 
 
 

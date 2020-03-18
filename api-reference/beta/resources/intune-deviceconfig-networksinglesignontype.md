@@ -1,20 +1,18 @@
 ---
 title: networkSingleSignOnType 枚举类型
 description: 针对类型设置的 wi-fi 网络单一登录。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 69f2542065aa7e11825fc02ed08279225632d546
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4095ec21477aea6a1a1ae37597725e58997486dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525997"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788511"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525997"
 |成员|值|说明|
 |:---|:---|:---|
 |禁用|0|Disabled|
-|prelogon|1 |预登录|
-|postlogon|2 |登录后|
+|prelogon|1|预登录|
+|postlogon|双面|登录后|
 
 
 

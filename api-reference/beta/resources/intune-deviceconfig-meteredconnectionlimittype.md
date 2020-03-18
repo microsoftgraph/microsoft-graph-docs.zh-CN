@@ -1,20 +1,18 @@
 ---
 title: meteredConnectionLimitType 枚举类型
 description: 按流量计费的连接限制设置。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae979859b9e6802e91602c96e42cafb1104f6eeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1bb6334a90f61d14ad4b58876ef4de545d30fd5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526011"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788539"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526011"
 |成员|值|说明|
 |:---|:---|:---|
 |unrestricted|0|L|
-|更正|1 |Fixed|
-|变量|2 |变量|
+|更正|1|Fixed|
+|变量|双面|变量|
 
 
 

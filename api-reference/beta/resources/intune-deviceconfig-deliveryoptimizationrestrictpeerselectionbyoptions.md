@@ -1,20 +1,18 @@
 ---
 title: deliveryOptimizationRestrictPeerSelectionByOptions 枚举类型
 description: 要限制对等方选择的值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b836765b4b89762e91a9d47c5133e8221912e9a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5eb1efe72e70051f84502df19957def98020b26f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793378"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>deliveryOptimizationRestrictPeerSelectionByOptions 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42526742"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|subnetMask|1 |子网掩码。|
+|subnetMask|1|子网掩码。|
 
 
 

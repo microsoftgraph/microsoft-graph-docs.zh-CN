@@ -1,20 +1,18 @@
 ---
 title: macOSKernelExtension 资源类型
 description: 表示特定的 macOS 内核扩展。 MacOS 内核扩展可以通过其团队标识符加上其捆绑包标识符进行描述。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 822d75c5b5f9a9bfd8f7869007c0b7757db401e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef061b7a04b48b83df031abf6997900032307000
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789211"
 ---
 # <a name="macoskernelextension-resource-type"></a>macOSKernelExtension 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

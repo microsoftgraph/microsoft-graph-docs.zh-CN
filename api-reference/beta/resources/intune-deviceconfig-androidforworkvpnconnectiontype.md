@@ -1,20 +1,18 @@
 ---
 title: androidForWorkVpnConnectionType 枚举类型
 description: 适用于 Android 的工作 VPN 连接类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 618fa6ddb53c114f4ee8f4078d80499cc8a97572
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5acac7a7966efb703337162bb736f48c55b9f756
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484104"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796781"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42484104"
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1 |脉冲安全。|
-|f5EdgeClient|2 |F5 边缘客户端。|
-|dellSonicWallMobileConnect|3 |戴尔 SonicWALL 移动连接。|
+|pulseSecure|1|脉冲安全。|
+|f5EdgeClient|双面|F5 边缘客户端。|
+|dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |citrix|5 |Citrix|
 

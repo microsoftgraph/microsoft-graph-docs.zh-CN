@@ -1,20 +1,18 @@
 ---
 title: resultantAppStateDetail 枚举类型
 description: 指示有关应用程序为何具有特定安装状态的其他详细信息的枚举。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ee7d1ec51d226d3d1808fd4afe4b5f011dc77446
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 818574c76be80b31c03164c9029aa6150c1f5fab
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491125"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797715"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42491125"
 |成员|值|说明|
 |:---|:---|:---|
 |noAdditionalDetails|0|没有可用的其他详细信息。|
-|dependencyFailedToInstall|1 |一个或多个应用程序的依存关系未能安装。|
-|dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
-|dependencyPendingReboot|3 |一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
+|dependencyFailedToInstall|1|一个或多个应用程序的依存关系未能安装。|
+|dependencyWithRequirementsNotMet|双面|一个或多个应用程序的依赖项具有未满足的要求。|
+|dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
 |dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
 |seeInstallErrorCode|2000|应用程序安装失败。 有关更多详细信息，请参阅错误代码属性。|
 |autoInstallDisabled|3000|将应用程序配置为不会自动安装。|

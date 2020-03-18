@@ -1,20 +1,18 @@
 ---
 title: managedDeviceMobileAppConfigurationSettingState 资源类型
 description: 给定设备的托管设备移动应用配置设置状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b044565f0ec87570bbf9584b37217c0f4881839
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 740d2fe591810829080ed6da78e9c6fcc68e7d52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529651"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788616"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

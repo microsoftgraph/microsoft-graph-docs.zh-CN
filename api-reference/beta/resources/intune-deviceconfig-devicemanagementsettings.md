@@ -1,20 +1,18 @@
 ---
 title: deviceManagementSettings 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3c6e3f718cb7b3915daecc700e55b733947530c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3e622c5231bd985a6834e9b6b1d908860385245
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526591"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42792008"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,13 +24,14 @@ ms.locfileid: "42526591"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
-|isScheduledActionEnabled|布尔|是否为规则的计划操作启用此功能。|
+|isScheduledActionEnabled|布尔值|是否为规则的计划操作启用此功能。|
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
-|enhancedJailBreak|布尔|功能是否已启用或不适用于增强的 jailbreak 检测。|
+|enhancedJailBreak|布尔值|功能是否已启用或不适用于增强的 jailbreak 检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入，则可能会删除公司数据，并且设备将不受管理。 有效值为30至270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
 |derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
-|androidDeviceAdministratorEnrollmentEnabled|布尔|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
+|androidDeviceAdministratorEnrollmentEnabled|布尔值|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
+|ignoreDevicesForUnsupportedSettingsEnabled|布尔值|用于确定是否忽略某些型号的设备上不受支持的合规性设置的属性。|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +53,8 @@ ms.locfileid: "42526591"
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
-  "androidDeviceAdministratorEnrollmentEnabled": true
+  "androidDeviceAdministratorEnrollmentEnabled": true,
+  "ignoreDevicesForUnsupportedSettingsEnabled": true
 }
 ```
 

@@ -1,20 +1,18 @@
 ---
 title: emailSyncDuration 枚举类型
 description: 电子邮件同步持续时间的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fe7cb78a1286d0ccdde27c7a25cb7a1233eab749
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a9e0befe5e34354be0bd7ea05181e08bbbc09a96
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530021"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791805"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailSyncDuration 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42530021"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|oneDay|1 |同步一天的电子邮件。|
-|threeDays|2 |同步三天的电子邮件。|
-|oneWeek|3 |同步一周电子邮件。|
+|oneDay|1|同步一天的电子邮件。|
+|threeDays|双面|同步三天的电子邮件。|
+|oneWeek|第三章|同步一周电子邮件。|
 |twoWeeks|4 |同步两周的电子邮件。|
 |oneMonth|5 |同步一个月的电子邮件。|
 |不限制|6 |同步无限制的电子邮件持续时间。|

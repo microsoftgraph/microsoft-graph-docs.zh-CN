@@ -1,20 +1,18 @@
 ---
 title: applicationGuardBlockClipboardSharingType 枚举类型
 description: ApplicationGuardBlockClipboardSharingType 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58c2a30a1dd1bf7e848cd6db702a002731bcaf7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 445d3fb20bcd159979694093eac0b03f6a876072
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796045"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ApplicationGuardBlockClipboardSharingType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|blockBoth|1 |阻止剪贴板将数据从主机共享到容器，并将容器从容器共享到主机|
-|blockHostToContainer|2 |阻止剪贴板将数据从主机共享到容器|
-|blockContainerToHost|3 |阻止剪贴板将数据从容器共享到主机|
+|blockBoth|1|阻止剪贴板将数据从主机共享到容器，并将容器从容器共享到主机|
+|blockHostToContainer|双面|阻止剪贴板将数据从主机共享到容器|
+|blockContainerToHost|第三章|阻止剪贴板将数据从容器共享到主机|
 |blockNone|4 |阻止剪贴板将数据从主机共享到容器，也不将其从容器共享到主机|
 
 

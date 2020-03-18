@@ -1,20 +1,18 @@
 ---
 title: 更新 windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: 更新 windowsDefenderApplicationControlSupplementalPolicyAssignment 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 801fe68368d3ee45772b5225af7216b558acd586
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 31191b31a0717896263192ba85ec778f3d5a94d7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799799"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>更新 windowsDefenderApplicationControlSupplementalPolicyAssignment
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +51,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 
 
@@ -93,7 +91,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

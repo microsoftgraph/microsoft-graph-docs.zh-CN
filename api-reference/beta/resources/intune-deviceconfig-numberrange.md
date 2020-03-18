@@ -1,20 +1,18 @@
 ---
 title: numberRange 资源类型
 description: 号码范围定义。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fee2fe4271b3ce070194a08e2ad7c3022cd42626
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e3073de15fc84f5a8cb755d6aad32caaf1ee29f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788490"
 ---
 # <a name="numberrange-resource-type"></a>numberRange 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

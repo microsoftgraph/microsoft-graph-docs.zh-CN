@@ -1,20 +1,18 @@
 ---
 title: intendedPurpose 枚举类型
 description: PFX 导入选项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b3b7734289c55a4763d307fdd587880dcebf4eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 952c4c3680dee489e7a556f4e0a8342932c4207e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526421"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791714"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +23,9 @@ PFX 导入选项。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|取消|1 |取消|
-|smimeEncryption|2 |SmimeEncryption|
-|smimeSigning|3 |SmimeSigning|
+|取消|1|取消|
+|smimeEncryption|双面|SmimeEncryption|
+|smimeSigning|第三章|SmimeSigning|
 |vpn|4 |VPN|
 |wifi|5 |Wifi|
 

@@ -1,20 +1,18 @@
 ---
 title: androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 description: Android 设备所有者设备的应用自动更新策略状态的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cd003c8213faf45453f1b6165931181250c861ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55092376dcf0d5e4ae72b5cb6f607cf984959c4d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487198"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797176"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Android 设备所有者设备的应用自动更新策略状态的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|userChoice|1 |用户可以控制自动更新。|
-|永不|2 |应用程序永远不会自动更新。|
-|wiFiOnly|3 |仅通过 Wi-fi 自动更新应用程序。|
+|userChoice|1|用户可以控制自动更新。|
+|永不|双面|应用程序永远不会自动更新。|
+|wiFiOnly|第三章|仅通过 Wi-fi 自动更新应用程序。|
 |都|4 |应用将在任何时候自动更新。 可能会收取数据费用。|
 
 

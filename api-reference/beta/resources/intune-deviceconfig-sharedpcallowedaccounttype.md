@@ -1,20 +1,18 @@
 ---
 title: sharedPCAllowedAccountType 枚举类型
 description: 允许共享电脑的帐户类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a511250567202fa40a81ef451f12be3bd75ce0ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a30a7ac093245e90ec0f05a6d2bc64cb2a5e229
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525857"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787528"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525857"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。 默认值。|
-|操作系统|1 |仅来宾帐户。|
-|domain|2 |仅加入域的帐户。|
+|操作系统|1|仅来宾帐户。|
+|domain|双面|仅加入域的帐户。|
 
 
 

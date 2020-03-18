@@ -1,20 +1,18 @@
 ---
 title: localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 description: LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d0d3cd598721ea9d08adfc8ee81c534018b78bf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 293637986f2c42753c2db4c7b7f4e8c3c037e938
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526211"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790326"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|automaticallyDenyElevationRequests|1 |自动拒绝提升请求|
-|promptForCredentialsOnTheSecureDesktop|2 |在安全桌面上提示凭据|
-|promptForCredentials|3 |提示输入凭据|
+|automaticallyDenyElevationRequests|1|自动拒绝提升请求|
+|promptForCredentialsOnTheSecureDesktop|双面|在安全桌面上提示凭据|
+|promptForCredentials|第三章|提示输入凭据|
 
 
 

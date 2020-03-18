@@ -1,20 +1,18 @@
 ---
 title: defenderSecurityCenterNotificationsFromAppType 枚举类型
 description: DefenderSecurityCenterNotificationsFromApp 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e5522e375e08605bf7e42d6853bc6775f5e41ab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4799ec2ad8fa9f0b4b3c629b87cf8e6b7240ef16
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526847"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794422"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ DefenderSecurityCenterNotificationsFromApp 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|blockNoncriticalNotifications|1 |阻止非关键通知|
-|blockAllNotifications|2 |阻止所有通知|
+|blockNoncriticalNotifications|1|阻止非关键通知|
+|blockAllNotifications|双面|阻止所有通知|
 
 
 

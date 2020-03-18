@@ -1,20 +1,18 @@
 ---
 title: androidForWorkAppConfigurationSchemaItem 资源类型
 description: Android for Work 应用程序的自定义配置架构内的单个配置项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08732e31372a59216894bcb70ffd6318a0fa2f1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e64edefe6da8b0c09b0eb90a6c772f34d908cf5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495093"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799415"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

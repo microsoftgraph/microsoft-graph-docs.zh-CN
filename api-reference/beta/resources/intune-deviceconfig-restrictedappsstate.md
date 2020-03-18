@@ -1,20 +1,18 @@
 ---
 title: restrictedAppsState 枚举类型
 description: 受限的应用状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4928f16d25da8a78d6c2c08641d32e3bc669ac7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9771903e2e519995223cd3db09b67eb30f22a5bd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529455"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787612"
 ---
 # <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529455"
 |成员|值|说明|
 |:---|:---|:---|
 |prohibitedApps|0|禁止的应用|
-|notApprovedApps|1 |未批准的应用程序|
+|notApprovedApps|1|未批准的应用程序|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: vpnTrafficRuleAppType 枚举类型
 description: 指示与 VPN 流量规则相关联的应用程序的类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ac56e0058d88256a9d1cc5c49fc2c44de09ef28e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef5aac9fad1dd47536db75e7adb36a2663ef658e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525731"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787290"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525731"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|流量规则不与应用关联。|
-|desktop|1 |流量规则与桌面应用程序相关联。|
-|普遍|2 |流量规则与通用应用程序相关联。|
+|desktop|1|流量规则与桌面应用程序相关联。|
+|普遍|双面|流量规则与通用应用程序相关联。|
 
 
 

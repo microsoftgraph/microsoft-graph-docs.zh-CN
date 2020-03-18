@@ -1,20 +1,18 @@
 ---
 title: androidDeviceOwnerBatteryPluggedMode 枚举类型
 description: Android 设备所有者设备的插入电源模式状态的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 791acdf31503d3475c9eeb10115be05c30f8c16d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d93048e1a7dbf280ea15ae89ff426dca734cf228
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797169"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Android 设备所有者设备的插入电源模式状态的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|ac|1 |电源源是一个交流充电器。|
-|盘|2 |电源源为 USB 端口。|
-|无线|3 |电力源为无线。|
+|ac|1|电源源是一个交流充电器。|
+|盘|双面|电源源为 USB 端口。|
+|无线|第三章|电力源为无线。|
 
 
 

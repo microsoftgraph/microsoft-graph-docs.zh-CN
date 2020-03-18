@@ -1,20 +1,18 @@
 ---
 title: windowsMicrosoftEdgeApp 资源类型
 description: 包含 Windows 上的 Microsoft Edge 应用的属性和继承属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20452e357d64cd79e919c4e3ad28c818ac57e4c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5308b9773aaad5cd6b0156417245730381fc1a5d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489977"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797512"
 ---
 # <a name="windowsmicrosoftedgeapp-resource-type"></a>windowsMicrosoftEdgeApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42489977"
 |[列出 windowsMicrosoftEdgeApps](../api/intune-apps-windowsmicrosoftedgeapp-list.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)集合|列出[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)对象的属性和关系。|
 |[获取 windowsMicrosoftEdgeApp](../api/intune-apps-windowsmicrosoftedgeapp-get.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|读取[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)对象的属性和关系。|
 |[创建 windowsMicrosoftEdgeApp](../api/intune-apps-windowsmicrosoftedgeapp-create.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|创建新的[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)对象。|
-|[删除 windowsMicrosoftEdgeApp](../api/intune-apps-windowsmicrosoftedgeapp-delete.md)|无|删除[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)。|
+|[删除 windowsMicrosoftEdgeApp](../api/intune-apps-windowsmicrosoftedgeapp-delete.md)|None|删除[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)。|
 |[更新 windowsMicrosoftEdgeApp](../api/intune-apps-windowsmicrosoftedgeapp-update.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|更新[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -53,7 +51,7 @@ ms.locfileid: "42489977"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |信道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
 |displayLanguageLocale|String|边缘应用向用户显示文本时要使用的语言区域设置。|

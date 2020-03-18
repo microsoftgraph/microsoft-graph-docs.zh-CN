@@ -1,20 +1,18 @@
 ---
 title: 列出 appleVppTokenTroubleshootingEvents
 description: 列出 appleVppTokenTroubleshootingEvent 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7115d5f85927a87f3436565e968a0b73a7747b10
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b052a9109b32299171194cf65e72f328183ec29b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457753"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800275"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>列出 appleVppTokenTroubleshootingEvents
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 1071
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: 创建新的 windowsDefenderApplicationControlSupplementalPolicyAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42c8c5f2b96b6c8c6a3eb9490f2623adb0bfecea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab1a89b3887d6a3abddb3e3e3b7ecf9bce64ba75
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457564"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800037"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>创建 windowsDefenderApplicationControlSupplementalPolicyAssignment
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

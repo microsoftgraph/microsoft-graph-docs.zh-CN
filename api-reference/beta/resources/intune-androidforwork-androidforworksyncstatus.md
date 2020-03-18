@@ -1,20 +1,18 @@
 ---
 title: androidForWorkSyncStatus 枚举类型
 description: 使用 Google EMM API 的租户的同步状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a7f8c33c720d7760ca228a56399346ad6ad9268c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb99cda1a32592f9f6fb2ed854004efdc28bef03
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494798"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799373"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>androidForWorkSyncStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42494798"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|credentialsNotValid|1 |尚未记录|
-|androidForWorkApiError|2 |尚未记录|
-|managementServiceError|3 |尚未记录|
+|credentialsNotValid|1|尚未记录|
+|androidForWorkApiError|双面|尚未记录|
+|managementServiceError|第三章|尚未记录|
 |unknownError|4 |尚未记录|
 |无|5 |尚未记录|
 

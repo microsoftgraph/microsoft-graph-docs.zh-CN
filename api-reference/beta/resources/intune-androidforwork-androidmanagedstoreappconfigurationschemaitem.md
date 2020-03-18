@@ -1,20 +1,18 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItem 资源类型
 description: Android 应用程序的自定义配置架构内的单个配置项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f3dc6d00c2d5b579b99a8fe17cca5d3e54482aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6db7a9958599cbc073fa17eef542559a65af2b8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799330"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

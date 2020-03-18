@@ -1,20 +1,18 @@
 ---
 title: defenderMonitorFileActivity 枚举类型
 description: 监视文件活动的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a5a3e6004b6fb618b002263818460ac360854b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc43905a4fa245a497d28c8bae97724534a6470f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794471"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526898"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|disable|1 |禁用监控文件活动。|
-|monitorAllFiles|2 |监视所有文件。|
-|monitorIncomingFilesOnly|3 | 仅监视传入的文件。|
+|disable|1|禁用监控文件活动。|
+|monitorAllFiles|双面|监视所有文件。|
+|monitorIncomingFilesOnly|第三章| 仅监视传入的文件。|
 |monitorOutgoingFilesOnly|4 |仅监视传出文件。|
 
 

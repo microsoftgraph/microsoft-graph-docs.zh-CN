@@ -1,20 +1,18 @@
 ---
 title: deliveryOptimizationBandwidthPercentage 资源类型
 description: 以百分比形式指定的带宽限制。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85053c5e02b9ac429a3251c1c302c786f6a8f6db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34e3a76bf7b7ef70f880d4de8c432f84d7eb3509
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526800"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794373"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

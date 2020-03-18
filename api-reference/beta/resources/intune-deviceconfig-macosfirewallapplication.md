@@ -1,20 +1,18 @@
 ---
 title: macOSFirewallApplication 资源类型
 description: 表示 macOS 防火墙应用程序列表中的应用程序
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 872c01facb5fe6d5caa613799b8c12c2f5a384c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2536d87af63f574d75428472dc338a2afc4288bf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529705"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789462"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529705"
 |属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|应用程序的 BundleId。|
-|allowsIncomingConnections|布尔|是否允许传入连接。|
+|allowsIncomingConnections|布尔值|是否允许传入连接。|
 
 ## <a name="relationships"></a>关系
 无

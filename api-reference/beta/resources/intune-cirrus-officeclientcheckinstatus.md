@@ -2,19 +2,17 @@
 title: officeClientCheckinStatus 资源类型
 description: 描述租户签入统计信息的实体。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5509fed7c7dba43a9070695982c120f007f097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66087cd47fa70352f8051fc220820ea355805f19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488542"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797337"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,11 +26,11 @@ ms.locfileid: "42488542"
 |deviceName|String|尝试签入的设备名称。|
 |devicePlatform|String|尝试签入的设备平台。|
 |devicePlatformVersion|String|尝试签入的设备平台版本。|
-|wasSuccessful|布尔|如果上一次签入成功。|
+|wasSuccessful|布尔值|如果上一次签入成功。|
 |userId|String|使用设备的用户标识符。|
 |checkinDateTime|DateTimeOffset|UTC 格式的上次设备签入时间。|
 |errorMessage|String|如果与上次签入相关联，则出现错误消息。|
-|appliedPolicies|String 集合|上次签入到设备的策略列表。|
+|appliedPolicies|String collection|上次签入到设备的策略列表。|
 
 ## <a name="relationships"></a>关系
 无

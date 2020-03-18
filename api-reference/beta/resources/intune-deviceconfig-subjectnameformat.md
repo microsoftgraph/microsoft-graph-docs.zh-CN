@@ -1,20 +1,18 @@
 ---
 title: subjectNameFormat 枚举类型
 description: 主题名称格式选项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 519558ff2e56b823ac5c889fb8d383f547a61daf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f785c9bbd3a4d84433e80d686269029e22105e1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529362"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787465"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529362"
 |成员|值|说明|
 |:---|:---|:---|
 |commonName|0|公用名。|
-|commonNameIncludingEmail|1 |公用名称，包括电子邮件。|
-|commonNameAsEmail|2 |电子邮件的常见名称。|
-|自|3 |自定义主题名称格式。|
+|commonNameIncludingEmail|1|公用名称，包括电子邮件。|
+|commonNameAsEmail|双面|电子邮件的常见名称。|
+|自|第三章|自定义主题名称格式。|
 |commonNameAsIMEI|5 |作为 IMEI 的常用名称。|
 |commonNameAsSerialNumber|6 |作为序列号的常用名称。|
 |commonNameAsAadDeviceId|7 |作为序列号的常用名称。|

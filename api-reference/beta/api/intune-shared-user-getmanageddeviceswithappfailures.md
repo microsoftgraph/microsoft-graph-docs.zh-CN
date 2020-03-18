@@ -1,20 +1,18 @@
 ---
 title: getManagedDevicesWithAppFailures 函数
 description: 检索具有失败的应用程序的设备的列表
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b56f1af0553255694c444d898ab85447846753
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0fd7b6a4e1a4dc87cc0af79a8447dc7436c266b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458026"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800541"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>getManagedDevicesWithAppFailures 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -73,7 +71,6 @@ Content-Length: 74
   ]
 }
 ```
-
 
 
 

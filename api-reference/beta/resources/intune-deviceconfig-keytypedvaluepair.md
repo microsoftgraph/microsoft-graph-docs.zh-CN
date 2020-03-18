@@ -1,20 +1,18 @@
 ---
 title: keyTypedValuePair 资源类型
 description: 具有字符串键和类型化值的键-值对。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c31286234cad1856b35f6acd7559dd878662c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f46ea5712c6ab96a4e3678d329e9e2f6cc283fc1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526246"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790396"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>keyTypedValuePair 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

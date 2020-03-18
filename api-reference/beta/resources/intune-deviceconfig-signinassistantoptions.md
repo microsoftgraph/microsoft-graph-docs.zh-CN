@@ -1,20 +1,18 @@
 ---
 title: signInAssistantOptions 枚举类型
 description: SignInAssistantSettings 的值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2761879846a71a7d12a13a3f03730c70ea52c7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c5d5b8fd93c0eb0dea24bda9d902b35f0320f9f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525843"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787514"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ SignInAssistantSettings 的值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置-wlidsvc 启动将设置为 SERVICE_DEMAND_START。|
-|禁用|1 |Disabled-wlidsvc Start 将设置为 SERVICE_DISABLED。|
+|禁用|1|Disabled-wlidsvc Start 将设置为 SERVICE_DISABLED。|
 
 
 

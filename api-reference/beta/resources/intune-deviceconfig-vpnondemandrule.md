@@ -1,20 +1,18 @@
 ---
 title: vpnOnDemandRule 资源类型
 description: VPN 按需规则定义。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c75a8b725c95449868767ce6a08a43876c16ab62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb1274dd966553ecde0514e0603619b6ed803c77
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525766"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787360"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,12 +23,12 @@ VPN 按需规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ssid|String 集合|网络服务集标识符（Ssid）。|
-|dnsSearchDomains|String 集合|DNS 搜索域。|
+|ssid|String collection|网络服务集标识符（Ssid）。|
+|dnsSearchDomains|String collection|DNS 搜索域。|
 |probeUrl|String|要探测的 URL。 如果此 URL 已成功获取（返回 200 HTTP 状态代码）而不进行重定向，则此规则匹配。|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|退货. 可取值为：`connect`、`evaluateConnection`、`ignore`、`disconnect`。|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|域操作（仅适用于操作评估连接时）。 可取值为：`connectIfNeeded`、`neverConnect`。|
-|域|String 集合|域（仅当操作为 "评估连接时" 时适用）。|
+|域|String collection|域（仅当操作为 "评估连接时" 时适用）。|
 |probeRequiredUrl|String|探测器必需 Url （仅在操作评估连接时适用，如果需要，DomainAction 将进行连接）。|
 
 ## <a name="relationships"></a>关系

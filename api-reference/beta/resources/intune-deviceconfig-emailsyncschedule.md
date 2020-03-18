@@ -1,20 +1,18 @@
 ---
 title: emailSyncSchedule 枚举类型
 description: 电子邮件同步计划的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c77a56b5dea371b4d91deb2258dad265b4d0433c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2d7d9d4918946b3683bce5f118fa9a04edf7afe
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791798"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526463"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|asMessagesArrive|1 |邮件到达时同步。|
-|手动|2 |手动同步。|
-|fifteenMinutes|3 |每十五分钟同步一次。|
+|asMessagesArrive|1|邮件到达时同步。|
+|手动|双面|手动同步。|
+|fifteenMinutes|第三章|每十五分钟同步一次。|
 |thirtyMinutes|4 |每三十分钟同步一次。|
 |sixtyMinutes|5 |每60分钟同步一次。|
 |basedOnMyUsage|6 |根据我的使用情况进行同步。|

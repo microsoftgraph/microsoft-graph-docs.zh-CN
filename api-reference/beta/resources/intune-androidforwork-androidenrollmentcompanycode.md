@@ -1,20 +1,18 @@
 ---
 title: androidEnrollmentCompanyCode 资源类型
 description: 用于保存用于通过 Google 的 Android 管理 API （如令牌、Url 和 QR 代码内容）进行注册的专业注册数据的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd37bcb9dba4e4fc6ce54e686a6a889ce73448d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00a76474f33a963af4e66efe8bc7a933e639fea2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495170"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799422"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

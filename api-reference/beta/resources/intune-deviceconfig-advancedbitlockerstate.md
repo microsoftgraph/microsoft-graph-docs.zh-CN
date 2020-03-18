@@ -1,20 +1,18 @@
 ---
 title: advancedBitLockerState 枚举类型
 description: 高级 BitLocker 状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ea303e306510eb0b0afc8960d16b2d9091148ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3de3ddc3e1b6f881c572a76ca99b45b89b8cdd71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487450"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797225"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42487450"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|高级 BitLocker 状态成功|
-|noUserConsent|1 |用户永远不同意加密|
-|osVolumeEncryptionMethodMismatch|2 |OS 卷的加密方法与策略设置的不同|
+|noUserConsent|1|用户永远不同意加密|
+|osVolumeEncryptionMethodMismatch|双面|OS 卷的加密方法与策略设置的不同|
 |osVolumeTpmRequired|4 |TPM 不用于保护 OS 卷，但策略是必需的|
 |osVolumeTpmOnlyRequired|8 |仅 TPM 保护未用于 OS 卷，但策略是必需的|
 |osVolumeTpmPinRequired|16 |TPM + PIN 保护不用于 OS 卷，但策略要求|

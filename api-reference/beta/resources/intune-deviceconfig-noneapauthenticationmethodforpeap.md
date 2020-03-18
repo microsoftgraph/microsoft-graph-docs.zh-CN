@@ -1,20 +1,18 @@
 ---
 title: nonEapAuthenticationMethodForPeap 枚举类型
 description: 当 PEAP 为所选的 EAP 类型时进行身份验证的非 EAP 方法。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b8474c224b8ddd36c023179f0aa8320dc7054f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d23178670c881f41d09427b039707319ef617566
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525990"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788497"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42525990"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无。|
-|microsoftChapVersionTwo|1 |Microsoft CHAP 版本2（毫秒-CHAP v2）。|
+|microsoftChapVersionTwo|1|Microsoft CHAP 版本2（毫秒-CHAP v2）。|
 
 
 

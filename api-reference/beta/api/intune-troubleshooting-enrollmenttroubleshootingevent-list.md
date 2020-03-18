@@ -1,20 +1,18 @@
 ---
 title: 列出 enrollmentTroubleshootingEvents
 description: 列出 enrollmentTroubleshootingEvent 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82d40704ddbaaef1be7bbe509f4463a971a84f39
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ce8a8f0c4c96b2f2117285f8ce5f23eeb99c99a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457641"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800135"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>列出 enrollmentTroubleshootingEvents
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -108,7 +106,6 @@ Content-Length: 1400
   ]
 }
 ```
-
 
 
 

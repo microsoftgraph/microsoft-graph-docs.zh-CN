@@ -1,20 +1,18 @@
 ---
 title: ratingNewZealandMoviesType 枚举类型
 description: 新西兰的电影评级标签
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ce24c84d32178378aaf4f4fc4256aa31c22cae3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c3d820e517c6705759b289c0bd981480eadbc1ab
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529477"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787668"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529477"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|概要|2 |适用于常规访问群体|
-|parentalGuidance|3 |PG 分类建议家长指南|
+|allBlocked|1|不允许任何电影内容|
+|概要|双面|适用于常规访问群体|
+|parentalGuidance|第三章|PG 分类建议家长指南|
 |成熟|4 |M 分类适用于成熟受众|
 |agesAbove13|5 |R13 分类限制为13年以上及以上的人员|
 |agesAbove15|6 |R15 分类限制为在15年和以上的人员|

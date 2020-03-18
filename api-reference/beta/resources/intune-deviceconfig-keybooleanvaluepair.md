@@ -1,20 +1,18 @@
 ---
 title: keyBooleanValuePair 资源类型
 description: 带有字符串键和布尔值的键-值对。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aabdb6e8eef4e41ec5c9aaf5d1a24fca97ae8c2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e06d58e1eca3c4f562ab83854dd721162941bc9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526267"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790438"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>keyBooleanValuePair 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

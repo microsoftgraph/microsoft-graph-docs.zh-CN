@@ -1,20 +1,18 @@
 ---
 title: macOSMdatpApp 资源类型
 description: 包含 macOS Microsoft Defender 高级威胁防护（MDATP）应用的属性和继承的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff3c61302bf9e0e509bcc66ac1303077c31e411e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8c38066a2d46d504f0f09101bc7e2e6f96da7cd3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798033"
 ---
 # <a name="macosmdatpapp-resource-type"></a>macOSMdatpApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42493158"
 |[列出 macOSMdatpApps](../api/intune-apps-macosmdatpapp-list.md)|[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)集合|列出[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)对象的属性和关系。|
 |[获取 macOSMdatpApp](../api/intune-apps-macosmdatpapp-get.md)|[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)|读取[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)对象的属性和关系。|
 |[创建 macOSMdatpApp](../api/intune-apps-macosmdatpapp-create.md)|[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)|创建新的[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)对象。|
-|[删除 macOSMdatpApp](../api/intune-apps-macosmdatpapp-delete.md)|无|删除[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)。|
+|[删除 macOSMdatpApp](../api/intune-apps-macosmdatpapp-delete.md)|None|删除[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)。|
 |[更新 macOSMdatpApp](../api/intune-apps-macosmdatpapp-update.md)|[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)|更新[macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -53,7 +51,7 @@ ms.locfileid: "42493158"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 
 ## <a name="relationships"></a>关系

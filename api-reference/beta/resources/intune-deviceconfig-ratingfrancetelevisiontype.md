@@ -1,20 +1,18 @@
 ---
 title: ratingFranceTelevisionType 枚举类型
 description: 法国的电视内容评级标签
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 84409a10186eff5c9ff8683011c23d86cc526cd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63d0f0ff522d6e3e7709ca50097d599f03f35c8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525934"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787717"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525934"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|agesAbove10|2 |对于10下的儿童，不建议使用-10 分类|
-|agesAbove12|3 |对于不在12的儿童，不建议使用-12 分类|
+|allBlocked|1|不允许任何电视显示内容|
+|agesAbove10|双面|对于10下的儿童，不建议使用-10 分类|
+|agesAbove12|第三章|对于不在12的儿童，不建议使用-12 分类|
 |agesAbove16|4 |对于16下的儿童，不建议使用-16 分类|
 |agesAbove18|5 |对于18岁以上的个人，不建议使用-18 分类|
 

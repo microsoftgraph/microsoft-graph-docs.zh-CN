@@ -1,20 +1,18 @@
 ---
 title: mobileAppDependency 资源类型
 description: 描述两个移动应用之间的依赖关系类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8140b430f8652b552c3dd2cdb85f22ba4a6190b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5440a7c9729ca0990021df9c0c89065b672b0ff2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491758"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797823"
 ---
 # <a name="mobileappdependency-resource-type"></a>mobileAppDependency 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42491758"
 |[列出 mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)集合|列出[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性和关系。|
 |[获取 mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|读取[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性和关系。|
 |[创建 mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|创建新的[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象。|
-|[删除 mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|无|删除[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)。|
+|[删除 mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|None|删除[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)。|
 |[更新 mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|更新[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性。|
 
 ## <a name="properties"></a>属性

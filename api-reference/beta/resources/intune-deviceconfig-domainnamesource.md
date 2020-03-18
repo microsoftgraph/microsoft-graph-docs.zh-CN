@@ -1,20 +1,18 @@
 ---
 title: domainNameSource 枚举类型
 description: Domainname 源。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c3ad51aa2c657cc4544f1fdef5d93297beca092
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 748c3b9a90b95233ed083ecb32ae86906800d799
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791959"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ Domainname 源。
 |成员|值|说明|
 |:---|:---|:---|
 |fullDomainName|0|完整的域名称。|
-|netBiosDomainName|1 |net bios 域名称。|
+|netBiosDomainName|1|net bios 域名称。|
 
 
 

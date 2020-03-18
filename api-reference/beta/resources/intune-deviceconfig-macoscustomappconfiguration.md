@@ -1,20 +1,18 @@
 ---
 title: macOSCustomAppConfiguration 资源类型
 description: 本主题提供由 macOSCustomAppConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69ea4c240c9f0e4db2cb11eaad3324d98db16ec5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a051045970a6d90630d6a98482f41fcd816453f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526197"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790291"
 ---
 # <a name="macoscustomappconfiguration-resource-type"></a>macOSCustomAppConfiguration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42526197"
 |[列出 macOSCustomAppConfigurations](../api/intune-deviceconfig-macoscustomappconfiguration-list.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)集合|列出[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性和关系。|
 |[获取 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-get.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|读取[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性和关系。|
 |[创建 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-create.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|创建新的[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象。|
-|[删除 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-delete.md)|无|删除[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)。|
+|[删除 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-delete.md)|None|删除[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)。|
 |[更新 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-update.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|更新[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -39,8 +37,8 @@ ms.locfileid: "42526197"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

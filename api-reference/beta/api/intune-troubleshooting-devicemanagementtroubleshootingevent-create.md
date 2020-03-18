@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementTroubleshootingEvent
 description: 创建新的 deviceManagementTroubleshootingEvent 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c843e66f2ceefc4c14b1780693f8a2111deca0d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c77fbb40b313bb72cc39abd92a58fd2cf5cde7c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457697"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800191"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -139,7 +137,6 @@ Content-Length: 901
   ]
 }
 ```
-
 
 
 

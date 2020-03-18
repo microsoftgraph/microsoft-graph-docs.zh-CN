@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementAutopilotEvent
 description: 读取 deviceManagementAutopilotEvent 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15ce8c8a46b81279d99d159552160d747800efe6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65555b4338ef3784be50ad2370d0b652da76743c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457718"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800247"
 ---
 # <a name="get-devicemanagementautopilotevent"></a>获取 deviceManagementAutopilotEvent
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -68,12 +66,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceMan
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1475
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
     "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
+    "deviceId": "Device Id value",
     "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
     "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
     "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -99,7 +98,6 @@ Content-Length: 1439
   }
 }
 ```
-
 
 
 

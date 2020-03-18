@@ -1,20 +1,18 @@
 ---
 title: operatingSystemVersionRange 资源类型
 description: 操作系统版本范围。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20a52b813de13b51fcf94a93fa440337e7123f02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1de8618d20151d079e3f2fdcbadf3658db2b73ef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788420"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

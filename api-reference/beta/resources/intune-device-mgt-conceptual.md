@@ -4,16 +4,16 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b75ea23fcde73349efb857df50e8df71bd34c2d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487464"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797239"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -39,6 +39,8 @@ ms.locfileid: "42487464"
 - [联合管理符合条件类型](intune-devices-comanagementeligibletype.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器操作](intune-devices-configurationmanageraction.md)
+- [配置管理器操作传递状态](intune-devices-configurationmanageractiondeliverystatus.md)
+- [配置管理器操作结果](intune-devices-configurationmanageractionresult.md)
 - [Configuration manager 操作类型](intune-devices-configurationmanageractiontype.md)
 - [配置管理器客户端已启用的功能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [配置管理器客户端运行状况](intune-devices-configurationmanagerclienthealthstate.md)
@@ -49,6 +51,7 @@ ms.locfileid: "42487464"
 - [从共享 Apple 设备删除用户操作结果](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [检测到的应用](intune-devices-detectedapp.md)
 - [设备操作结果](intune-devices-deviceactionresult.md)
+- [设备和应用程序管理分配筛选器类型](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
@@ -59,10 +62,14 @@ ms.locfileid: "42487464"
 - [设备运行状况脚本](intune-devices-devicehealthscript.md)
 - [设备运行状况脚本分配](intune-devices-devicehealthscriptassignment.md)
 - [设备运行状况脚本设备状态](intune-devices-devicehealthscriptdevicestate.md)
+- [设备运行状况脚本修正摘要](intune-devices-devicehealthscriptremediationsummary.md)
 - [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)
+- [设备管理 autopilot 策略合规性状态](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
+- [设备管理 autopilot 策略状态详细信息](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+- [设备管理 autopilot 策略类型](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
 - [设备管理布尔值设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [设备管理集合设置定义](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [设备管理集合设置实例](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -103,6 +110,7 @@ ms.locfileid: "42487464"
 - [设备管理设置配置文件约束](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [设备管理设置 regex 约束](intune-deviceintent-devicemanagementsettingregexconstraint.md)
 - [设备管理设置所需的约束](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
+- [设备管理设置 sddl 约束](intune-deviceintent-devicemanagementsettingsddlconstraint.md)
 - [设备管理设置字符串长度约束](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [设备管理设置 xml 约束](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [设备管理字符串设置实例](intune-deviceintent-devicemanagementstringsettinginstance.md)

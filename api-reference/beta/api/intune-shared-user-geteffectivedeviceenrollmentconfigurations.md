@@ -1,16 +1,16 @@
 ---
 title: getEffectiveDeviceEnrollmentConfigurations 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49b21a96334797a3055e97d865a2b68336c8fabf
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 64e3d53b2952e6f0ecb6242d13f41aaf9ae6fb70
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939478"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800569"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>getEffectiveDeviceEnrollmentConfigurations 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "39939478"
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -90,7 +90,6 @@ Content-Length: 422
   ]
 }
 ```
-
 
 
 

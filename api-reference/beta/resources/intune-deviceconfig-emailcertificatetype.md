@@ -1,20 +1,18 @@
 ---
 title: emailCertificateType 枚举类型
 description: 支持的电子邮件签名和加密的证书来源。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 266bc9e0b23009f34281c70095176ccd88b50907
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7dbf484473643eff30463cb8c4dc8217113ab713
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526470"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791812"
 ---
 # <a name="emailcertificatetype-enum-type"></a>emailCertificateType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526470"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|不要将证书用作源。|
-|证书|1 |对证书源使用证书。|
-|derivedCredential|2 |对证书源使用派生凭据。|
+|证书|1|对证书源使用证书。|
+|derivedCredential|双面|对证书源使用派生凭据。|
 
 
 

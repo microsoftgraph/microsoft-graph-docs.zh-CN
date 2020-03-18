@@ -1,20 +1,18 @@
 ---
 title: mobileAppAssignment 资源类型
 description: 包含用于移动应用的组分配的属性的类。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e1a1c95b006b33695c752df0f288f71815efb8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 19027d6820ddd34728e5c99fd2335102bd2deca3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491968"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797858"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

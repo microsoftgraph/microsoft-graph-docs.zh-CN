@@ -1,20 +1,18 @@
 ---
 title: deliveryOptimizationBandwidth 资源类型
 description: 带宽限制类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5c5372b257a39ed8e711fefbbe75990fc6bdb43
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48bb6520da12bc6f58b82e0c81d8daf3e26feb0d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526827"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794401"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>deliveryOptimizationBandwidth 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

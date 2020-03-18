@@ -1,20 +1,18 @@
 ---
 title: win32LobAppInstallExperience 资源类型
 description: 包含 Win32 应用程序的安装体验属性
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 893f473f7543d93572800776d5511371f7cfbf4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a8f6fcecd995857b337f6d91b09e2ce7361defb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797625"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>win32LobAppInstallExperience 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

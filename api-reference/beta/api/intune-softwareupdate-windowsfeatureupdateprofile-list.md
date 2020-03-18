@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsFeatureUpdateProfiles
 description: 列出 windowsFeatureUpdateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d15b02185ea5fdb4549b06b7476a47295aedbf15
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8413ed39595064762d113df98860937fcfae7a98
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800380"
 ---
 # <a name="list-windowsfeatureupdateprofiles"></a>列出 windowsFeatureUpdateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 440
   ]
 }
 ```
-
 
 
 

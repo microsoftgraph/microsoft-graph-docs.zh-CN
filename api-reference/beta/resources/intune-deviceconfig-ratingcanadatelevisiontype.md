@@ -1,20 +1,18 @@
 ---
 title: ratingCanadaTelevisionType 枚举类型
 description: 加拿大的电视内容评级标签
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5bf11f21cec3f75c1aa15c051e2bd1400ce5ac44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 763e274b4280a821bb924d473874a74b011a14d2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525941"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787731"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525941"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|children|2 |C 分类适用于2到7年的儿童年龄|
-|childrenAbove8|3 |C8 分类适用于仅有8岁以上的儿童|
+|allBlocked|1|不允许任何电视显示内容|
+|children|双面|C 分类适用于2到7年的儿童年龄|
+|childrenAbove8|第三章|C8 分类适用于仅有8岁以上的儿童|
 |概要|4 |G 分类适用于常规访问群体|
 |parentalGuidance|5 |PG、家长指导|
 |agesAbove14|6 |14 + 分类适用于14岁及更早的查看者|

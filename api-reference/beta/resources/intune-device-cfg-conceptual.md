@@ -4,16 +4,16 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ba5df73946b6d0c279be38b86e63f93623248c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487541"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797246"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -233,6 +233,7 @@ ms.locfileid: "42487541"
 - [防火墙数据包排入队列方法类型](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [防火墙预共享的密钥编码方法类型](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
 - [文件夹保护类型](intune-deviceconfig-folderprotectiontype.md)
+- [组策略类别](intune-grouppolicy-grouppolicycategory.md)
 - [组策略配置](intune-grouppolicy-grouppolicyconfiguration.md)
 - [组策略配置分配](intune-grouppolicy-grouppolicyconfigurationassignment.md)
 - [组策略配置类型](intune-grouppolicy-grouppolicyconfigurationtype.md)
@@ -259,6 +260,7 @@ ms.locfileid: "42487541"
 - [组策略演示文稿值多文本](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [组策略演示文稿值文本](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [组策略类型](intune-grouppolicy-grouppolicytype.md)
+- [组策略已上传类别](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [组策略已上传定义](intune-grouppolicy-grouppolicyuploadeddefinition.md)
 - [组策略上传的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [哈希算法](intune-deviceconfig-hashalgorithms.md)
@@ -266,6 +268,7 @@ ms.locfileid: "42487541"
 - [预期用途](intune-deviceconfig-intendedpurpose.md)
 - [Internet explorer 邮件设置](intune-deviceconfig-internetexplorermessagesetting.md)
 - [Internet 站点安全级别](intune-deviceconfig-internetsitesecuritylevel.md)
+- [iOS Azure ad 单一登录扩展](intune-deviceconfig-iosazureadsinglesignonextension.md)
 - [iOS 书签](intune-deviceconfig-iosbookmark.md)
 - [iOS 证书配置文件](intune-deviceconfig-ioscertificateprofile.md)
 - [iOS 证书配置文件基准](intune-deviceconfig-ioscertificateprofilebase.md)
@@ -327,6 +330,7 @@ ms.locfileid: "42487541"
 - [本地安全选项最低会话安全](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [本地安全选项智能卡删除行为类型](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [macOS 关联的域的键/值对](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
 - [macOS 凭据单一登录扩展](intune-deviceconfig-macoscredentialsinglesignonextension.md)

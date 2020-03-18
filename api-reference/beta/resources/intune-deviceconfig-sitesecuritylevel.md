@@ -1,20 +1,18 @@
 ---
 title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d6239f7f6e569e43c841fcdea3aa9b7ced2a7707
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf97b4ff81bade843d99bf55b3a22711d22b96f3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525836"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787500"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525836"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|降低|1 |低。|
-|mediumLow|2 |中-低。|
-|中等|3 |中。|
+|降低|1|低。|
+|mediumLow|双面|中-低。|
+|中等|第三章|中。|
 |mediumHigh|4 |中-高。|
 |高效|5 |高。|
 

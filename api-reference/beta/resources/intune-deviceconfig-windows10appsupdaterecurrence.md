@@ -1,20 +1,18 @@
 ---
 title: windows10AppsUpdateRecurrence 枚举类型
 description: Windows10 定期应用更新的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3aac973d2a24cc0c96b3d05a762ef0373eb995ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f52bc3935c791b4ab643a0518488349b89be796
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787219"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Windows10 定期应用更新的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值指定单个事件。|
-|每日|1 |每日.|
-|周历|2 |周历.|
-|还|3 |还.|
+|每日|1|每日.|
+|周历|双面|周历.|
+|还|第三章|还.|
 
 
 

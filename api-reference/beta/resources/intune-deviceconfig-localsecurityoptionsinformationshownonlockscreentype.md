@@ -1,20 +1,18 @@
 ---
 title: localSecurityOptionsInformationShownOnLockScreenType 枚举类型
 description: LocalSecurityOptionsInformationShownOnLockScreenType 的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d3af6756ec1ddbde2fdd8cc6603af17bca0184c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd9380313bb3201d86c53c4f14d66bbbe99c7de3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526225"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790347"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ LocalSecurityOptionsInformationShownOnLockScreenType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|userDisplayNameDomainUser|1 |用户显示名称、域名和用户名|
-|userDisplayNameOnly|2 |仅限用户显示名称|
-|doNotDisplayUser|3 |不显示用户信息|
+|userDisplayNameDomainUser|1|用户显示名称、域名和用户名|
+|userDisplayNameOnly|双面|仅限用户显示名称|
+|doNotDisplayUser|第三章|不显示用户信息|
 
 
 

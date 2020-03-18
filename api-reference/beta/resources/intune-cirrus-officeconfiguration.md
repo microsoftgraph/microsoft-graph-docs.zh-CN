@@ -2,19 +2,17 @@
 title: officeConfiguration 资源类型
 description: 充当所有设备管理功能的容器的单例实体。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6967972cbc94d28d6fde605ba72f3497b9b48e46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26d6023224048166d0d287ce893c07663638e1f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488241"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797316"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

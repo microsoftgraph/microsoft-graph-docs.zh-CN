@@ -1,20 +1,18 @@
 ---
 title: iosNotificationAlertType 枚举类型
 description: 通知设置警报类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 48199ce2dac2fffcae35f483ebba174677805a52
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa282710be26baef233f00d8714bcf5cce0abd13
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529882"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790578"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529882"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|分隔|1 |分隔.|
-|适合|2 |适合.|
-|无|3 |无。|
+|分隔|1|分隔.|
+|适合|双面|适合.|
+|无|第三章|无。|
 
 
 

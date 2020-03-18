@@ -1,20 +1,18 @@
 ---
 title: ndesConnector 资源类型
 description: 表示 OnPrem Ndes 连接器的实体。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1894e9e91f74fdfec2c1531a908b2237d382f8a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 513ec5d7daf9448fe425852d8a388f6806d6c22f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526004"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788525"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42526004"
 |[列出 ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)集合|列出[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性和关系。|
 |[获取 ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|读取[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性和关系。|
 |[创建 ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|创建新的[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象。|
-|[删除 ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|无|删除[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)。|
+|[删除 ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|None|删除[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)。|
 |[更新 ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|更新[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性。|
 
 ## <a name="properties"></a>属性

@@ -1,20 +1,18 @@
 ---
 title: userEmailSource 枚举类型
 description: 用户名源或电子邮件源的可能值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 984882a2e4edc20b8c7baafb05512a9052e0a881
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5cc2f678fc0baa97cb88f8fe5043fd2f4dcb063
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529350"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787437"
 ---
 # <a name="useremailsource-enum-type"></a>userEmailSource 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529350"
 |成员|值|说明|
 |:---|:---|:---|
 |userPrincipalName|0|用户主体名称。|
-|primarySmtpAddress|1 |主 SMTP 地址。|
+|primarySmtpAddress|1|主 SMTP 地址。|
 
 
 

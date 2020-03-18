@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementAutopilotEvent
 description: 更新 deviceManagementAutopilotEvent 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db30ad9e855ae7371b055e033e4b1d8c6036125d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea3703d23eb45e9c91dd40cbd3cb3031b7e2cd30
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457711"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800233"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>更新 deviceManagementAutopilotEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,6 +52,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
+|deviceId|String|与对象关联的设备 id|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |deviceRegisteredDateTime|DateTimeOffset|设备注册日期。|
 |enrollmentStartDateTime|DateTimeOffset|设备注册开始日期。|
@@ -89,10 +88,11 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 Content-type: application/json
-Content-length: 1323
+Content-length: 1357
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -123,11 +123,12 @@ Content-length: 1323
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1372
+Content-Length: 1406
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -152,7 +153,6 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 
