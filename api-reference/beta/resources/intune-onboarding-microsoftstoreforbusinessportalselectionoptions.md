@@ -1,20 +1,18 @@
 ---
 title: microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 description: 管理员同步使用 Microsoft Store for Business 应用的门户。 这在 Intune 管理控制台中可用。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b22035f3e7fa214f7c5fa19ffc54209c10bc59d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 060d97787428d05a16ea6316c52ee899aef485e2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527724"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778279"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527724"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|此选项对帐户不可用|
-|companyPortal|1 |仅限 Intune 公司门户。|
-|privateStore|2 |仅 MSFB 私人存储。|
+|companyPortal|1|仅限 Intune 公司门户。|
+|privateStore|双面|仅 MSFB 私人存储。|
 
 
 

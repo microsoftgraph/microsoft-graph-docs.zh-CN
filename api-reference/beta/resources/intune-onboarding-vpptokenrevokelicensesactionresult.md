@@ -1,20 +1,18 @@
 ---
 title: vppTokenRevokeLicensesActionResult 资源类型
 description: 在 Apple Volume Purchase Program 令牌上执行的吊销许可证操作的状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82a7374b610c880eae52cc1ecc7185156aa11aa4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2ec896504435c644767af1ff04a74f4eaf4aa17
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524067"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777500"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

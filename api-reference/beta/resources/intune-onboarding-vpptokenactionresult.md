@@ -1,20 +1,18 @@
 ---
 title: vppTokenActionResult 资源类型
 description: 使用 Apple Volume Purchase Program 令牌执行的操作的状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9146b98288a7ed5a7f6de944cc832ddc71f9179
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a0a722bf9314d03794fb3b1823afd4bc27cb94f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527695"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777754"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

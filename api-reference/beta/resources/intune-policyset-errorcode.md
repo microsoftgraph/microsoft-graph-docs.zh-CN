@@ -1,20 +1,18 @@
 ---
 title: errorCode 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36ac9226d012a7583f85652d517c22da33c1c403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc9eadcd34e40be407389d2df2a5c7d85bbf6c5f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527621"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42775939"
 ---
 # <a name="errorcode-enum-type"></a>errorCode 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527621"
 |成员|值|说明|
 |:---|:---|:---|
 |noError|0|默认值，指示无错误。|
-|受到|1 |由于缺少对资源的 RBAC 权限，当前用户没有访问权限。|
-|notFound|2 |由于资源上缺少 RBAC 范围标记，当前用户没有访问权限。|
-|deleted|3 |资源已被删除。|
+|受到|1|由于缺少对资源的 RBAC 权限，当前用户没有访问权限。|
+|notFound|双面|由于资源上缺少 RBAC 范围标记，当前用户没有访问权限。|
+|deleted|第三章|资源已被删除。|
 
 
 

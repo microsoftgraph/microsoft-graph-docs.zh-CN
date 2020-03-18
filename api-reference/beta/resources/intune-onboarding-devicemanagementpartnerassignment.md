@@ -1,20 +1,18 @@
 ---
 title: deviceManagementPartnerAssignment 资源类型
 description: 为设备管理合作伙伴设定目标的用户组
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5427be3bd28b46d18e4342e1731255c2675d910
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 306acfae948a81ca5c8933f455a21347bf27ee9e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778720"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>deviceManagementPartnerAssignment 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

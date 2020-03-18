@@ -1,20 +1,18 @@
 ---
 title: mobileThreatPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3576d3cc5641bcbdafb20d53791d4e4f75ecb500
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c13a7e3d12299b86c3112e10e09d7b4eb746ba61
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527717"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778167"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527717"
 |成员|值|说明|
 |:---|:---|:---|
 |才|0|合作伙伴不可用。|
-|可用|1 |合作伙伴可用。|
-|enabled|2 |启用合作伙伴。|
-|无|3 |合作伙伴无响应。|
+|可用|1|合作伙伴可用。|
+|enabled|双面|启用合作伙伴。|
+|无|第三章|合作伙伴无响应。|
 
 
 

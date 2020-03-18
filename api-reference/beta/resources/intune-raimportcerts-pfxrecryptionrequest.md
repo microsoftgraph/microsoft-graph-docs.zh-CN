@@ -1,20 +1,18 @@
 ---
 title: pfxRecryptionRequest 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfd38ab6cadb316f20afeffe12ef1973130ef974
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b4ed465767f74c1ed84210f8270d47bda87beac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774706"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>pfxRecryptionRequest 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42523940"
 |[列出 pfxRecryptionRequests](../api/intune-raimportcerts-pfxrecryptionrequest-list.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)集合|列出[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性和关系。|
 |[获取 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-get.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|读取[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性和关系。|
 |[创建 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-create.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|创建新的[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象。|
-|[删除 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|无|删除[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)。|
+|[删除 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|None|删除[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)。|
 |[更新 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-update.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|更新[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -40,7 +38,7 @@ ms.locfileid: "42523940"
 |profileId|Guid|尚未记录|
 |为|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|

@@ -1,20 +1,18 @@
 ---
 title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed769c1e6550584688324f4bfdf2db772feae19c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf67d9b39462a11286420a6cd6aa79f2e45fb246
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524186"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779623"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,11 +23,11 @@ ms.locfileid: "42524186"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|platformBlocked|布尔|阻止平台注册|
+|platformBlocked|布尔值|阻止平台注册|
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
 |osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
-|blockedManufacturers|String 集合|被阻止的制造商的集合。|
+|blockedManufacturers|String collection|被阻止的制造商的集合。|
 
 ## <a name="relationships"></a>关系
 无

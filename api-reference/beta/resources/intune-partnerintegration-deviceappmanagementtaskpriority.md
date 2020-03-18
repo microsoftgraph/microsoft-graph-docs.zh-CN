@@ -1,20 +1,18 @@
 ---
 title: deviceAppManagementTaskPriority 枚举类型
 description: 设备应用程序管理任务优先级。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36d71818d9318523c86097cb3d2019513ca8edf7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c17e33efb55f4652003cbad950563d4d5c9e105
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527654"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42776639"
 ---
 # <a name="deviceappmanagementtaskpriority-enum-type"></a>deviceAppManagementTaskPriority 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527654"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无优先级集。|
-|高效|1 |高优先级。|
-|降低|2 |低优先级。|
+|高效|1|高优先级。|
+|降低|双面|低优先级。|
 
 
 

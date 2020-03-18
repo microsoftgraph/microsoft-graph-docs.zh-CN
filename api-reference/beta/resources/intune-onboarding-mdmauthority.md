@@ -1,20 +1,18 @@
 ---
 title: mdmAuthority 枚举类型
 description: 移动设备管理机构。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dde97e1a0fad923bba0014cac314626c59556b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b844f35e3116c0aeca82bb31e9fbd799f58732cf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524102"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778314"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524102"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知|
-|intune|1 |Intune|
-|sccm|2 |SCCM|
-|office365|3 |Office365|
+|intune|1|Intune|
+|sccm|双面|SCCM|
+|office365|第三章|Office365|
 
 
 

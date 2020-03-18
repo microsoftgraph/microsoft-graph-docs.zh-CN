@@ -1,20 +1,18 @@
 ---
 title: deviceAppManagementTask 资源类型
 description: 设备应用程序管理任务。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed1aba4f94e01dfac333969f2a934a502380c38e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f51f72823e7f353018cd3edc97155c418a767b1b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42776765"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>deviceAppManagementTask 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,9 +26,9 @@ ms.locfileid: "42527662"
 |[列出 deviceAppManagementTasks](../api/intune-partnerintegration-deviceappmanagementtask-list.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)集合|列出[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象的属性和关系。|
 |[获取 deviceAppManagementTask](../api/intune-partnerintegration-deviceappmanagementtask-get.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|读取[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象的属性和关系。|
 |[创建 deviceAppManagementTask](../api/intune-partnerintegration-deviceappmanagementtask-create.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|创建新的[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象。|
-|[删除 deviceAppManagementTask](../api/intune-partnerintegration-deviceappmanagementtask-delete.md)|无|删除[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)。|
+|[删除 deviceAppManagementTask](../api/intune-partnerintegration-deviceappmanagementtask-delete.md)|None|删除[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)。|
 |[更新 deviceAppManagementTask](../api/intune-partnerintegration-deviceappmanagementtask-update.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|更新[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象的属性。|
-|[updateStatus 操作](../api/intune-partnerintegration-deviceappmanagementtask-updatestatus.md)|无|设置任务的状态并附加注释。|
+|[updateStatus 操作](../api/intune-partnerintegration-deviceappmanagementtask-updatestatus.md)|None|设置任务的状态并附加注释。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -45,7 +43,7 @@ ms.locfileid: "42527662"
 |创建|String|创建者的电子邮件地址。|
 |creatorNotes|String|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
+|状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
 ## <a name="relationships"></a>关系
 无

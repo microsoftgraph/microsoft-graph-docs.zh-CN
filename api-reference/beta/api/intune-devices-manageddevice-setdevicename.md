@@ -1,20 +1,18 @@
 ---
 title: setDeviceName 操作
 description: 设置设备的设备名称。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d32eaa38464599bce1a00100355af1f089571f43
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78c88d12fec16e7ef4e08750def7c8710483ba5f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774440"
 ---
 # <a name="setdevicename-action"></a>setDeviceName 操作
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +82,6 @@ Content-length: 41
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

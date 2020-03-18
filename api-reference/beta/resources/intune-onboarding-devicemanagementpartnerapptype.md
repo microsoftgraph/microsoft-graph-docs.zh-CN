@@ -1,20 +1,18 @@
 ---
 title: deviceManagementPartnerAppType 枚举类型
 description: 合作伙伴应用类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa071d5fe7ae7381b32196197e51688be52f683d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4fa69b5a624355f5d51d6ee9a15dba9b8ad9226
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524123"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778839"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42524123"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴应用类型未知。|
-|singleTenantApp|1 |合作伙伴应用程序是 AAD 中的单个租户。|
-|multiTenantApp|2 |AAD 中的合作伙伴应用程序是多租户。|
+|singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|
+|multiTenantApp|双面|AAD 中的合作伙伴应用程序是多租户。|
 
 
 

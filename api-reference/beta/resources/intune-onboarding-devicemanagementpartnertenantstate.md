@@ -1,20 +1,18 @@
 ---
 title: deviceManagementPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f1f71938388d42fe1321f5842b551ea56d153cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b3c2ee7c46e98a9fd834a4a3aba6011845cc5ef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527737"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778713"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527737"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
-|才|1 |合作伙伴不可用。|
-|enabled|2 |启用合作伙伴。|
-|异常|3 |合作伙伴连接已终止。|
+|才|1|合作伙伴不可用。|
+|enabled|双面|启用合作伙伴。|
+|异常|第三章|合作伙伴连接已终止。|
 |拒绝|4 |拒绝合作伙伴邮件。|
 |无|5 |合作伙伴无响应。|
 

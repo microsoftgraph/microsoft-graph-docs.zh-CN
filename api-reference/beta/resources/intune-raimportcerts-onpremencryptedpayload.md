@@ -1,20 +1,18 @@
 ---
 title: onPremEncryptedPayload 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08d5f3102bb2c748d24235290a8f75abe8408334
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be5152f0467ea3630d6aeb24534dd149fbc74447
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774783"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>onPremEncryptedPayload 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42527598"
 |[列出 onPremEncryptedPayloads](../api/intune-raimportcerts-onpremencryptedpayload-list.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)集合|列出[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象的属性和关系。|
 |[获取 onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-get.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|读取[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象的属性和关系。|
 |[创建 onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-create.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|创建新的[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象。|
-|[删除 onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-delete.md)|无|删除[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)。|
+|[删除 onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-delete.md)|None|删除[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)。|
 |[更新 onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-update.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|更新[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -45,7 +43,7 @@ ms.locfileid: "42527598"
 |plistTemplate|String|尚未记录|
 |encryptedBlob|Binary|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|

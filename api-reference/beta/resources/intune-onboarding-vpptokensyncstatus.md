@@ -1,20 +1,18 @@
 ---
 title: vppTokenSyncStatus 枚举类型
 description: 可能与 Apple Volume Purchase Program 令牌关联的同步状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a9955b825fffab7837cb2c77ffa443ad3f9c9fa1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b298fd52c390d9e926ca9be69e276aac3b6a6de0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524060"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777255"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524060"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认状态。|
-|inProgress|1 |上次同步进行中。|
-|后|2 |上次同步成功完成。|
-|未能|3 |上次同步失败。|
+|inProgress|1|上次同步进行中。|
+|后|双面|上次同步成功完成。|
+|未能|第三章|上次同步失败。|
 
 
 
