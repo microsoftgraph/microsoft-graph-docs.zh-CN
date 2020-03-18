@@ -1,20 +1,18 @@
 ---
 title: 获取 windows81VpnConfiguration
 description: 读取 windows81VpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 19848d2b56db627aceea0fb62f424c6ab7ef849d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76966f1c70cd2eaf20052629aa06c2f6e3ace0f7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476718"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42736480"
 ---
 # <a name="get-windows81vpnconfiguration"></a>获取 windows81VpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -131,7 +129,6 @@ Content-Length: 2087
   }
 }
 ```
-
 
 
 

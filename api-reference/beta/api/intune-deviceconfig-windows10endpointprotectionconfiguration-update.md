@@ -1,20 +1,18 @@
 ---
 title: 更新 windows10EndpointProtectionConfiguration
 description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 852130090080da70034df5642822da812d74d79d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2736eb870bdefcdd7c54b8844c19aaec96be9196
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480387"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740081"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,8 +55,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -97,72 +95,72 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定允许哪些用户从网络上的远程位置关闭计算机。 误用此用户权限可能会导致拒绝服务。 仅支持 NotConfigured 和允许的状态。|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定在还原备份的文件和目录时，哪些用户可以绕过文件、目录、注册表和其他持久对象权限，并确定哪些用户可以将任何有效的安全主体设置为对象的所有者。 仅支持 NotConfigured 和允许的状态。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户可以获得系统中任何安全对象的所有权，包括 Active Directory 对象、文件和文件夹、打印机、注册表项、进程和线程。 仅支持 NotConfigured 和允许的状态。|
-|xboxServicesEnableXboxGameSaveTask|布尔|此设置确定是否启用了 xbox 游戏保存（1）或禁用（0）。|
+|xboxServicesEnableXboxGameSaveTask|布尔值|此设置确定是否启用了 xbox 游戏保存（1）或禁用（0）。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定附件管理服务的启动类型是 "自动" （2）、"手动" （3）、"已禁用" （4）。 默认：手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定 Live Auth Manager 服务的启动类型是否为自动（2）、手动（3）、已禁用（4）。 默认：手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定实时游戏是否保存服务的启动类型为自动（2）、手动（3）、已禁用（4）。 默认：手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定网络服务的启动类型是否为自动（2）、手动（3）、已禁用（4）。 默认：手动。 可取值为：`manual`、`automatic`、`disabled`。|
-|localSecurityOptionsBlockMicrosoftAccounts|布尔|阻止用户向此计算机添加新的 Microsoft 帐户。|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|布尔|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
-|localSecurityOptionsDisableAdministratorAccount|布尔|确定是否启用或禁用本地管理员帐户。|
+|localSecurityOptionsBlockMicrosoftAccounts|布尔值|阻止用户向此计算机添加新的 Microsoft 帐户。|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|布尔值|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
+|localSecurityOptionsDisableAdministratorAccount|布尔值|确定是否启用或禁用本地管理员帐户。|
 |localSecurityOptionsAdministratorAccountName|String|定义要与帐户 "管理员" 的安全标识符（SID）相关联的不同帐户名称。|
-|localSecurityOptionsDisableGuestAccount|布尔|确定来宾帐户是否已启用或已禁用。|
+|localSecurityOptionsDisableGuestAccount|布尔值|确定来宾帐户是否已启用或已禁用。|
 |localSecurityOptionsGuestAccountName|String|定义要与帐户 "来宾" 的安全标识符（SID）相关联的不同帐户名称。|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|布尔|阻止便携式计算机在无需登录的情况下被移除。|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|布尔|仅在将打印机驱动程序连接到共享打印机时，才将其限制为仅供管理员安装。|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|布尔|如果启用此设置，则仅允许交互式登录用户访问 CD-ROM 媒体。|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|布尔值|阻止便携式计算机在无需登录的情况下被移除。|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|布尔值|仅在将打印机驱动程序连接到共享打印机时，才将其限制为仅供管理员安装。|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|布尔值|如果启用此设置，则仅允许交互式登录用户访问 CD-ROM 媒体。|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|定义允许格式化和弹出可移动 NTFS 媒体的权限。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
 |localSecurityOptionsMachineInactivityLimit|Int32|在屏幕保护程序运行之前，定义交互式桌面登录屏幕上不活动的最长分钟数。 有效值为0至9999|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|在屏幕保护程序运行之前，定义交互式桌面登录屏幕上不活动的最长分钟数。 有效值为0至9999|
-|localSecurityOptionsDoNotRequireCtrlAltDel|布尔|要求用户在登录前按 CTRL + ALT + DEL。|
-|localSecurityOptionsHideLastSignedInUser|布尔|不显示上次在此设备上登录的用户的用户名。|
-|localSecurityOptionsHideUsernameAtSignIn|布尔|在输入凭据后以及显示设备桌面之前，请勿显示登录此设备的人员的用户名。|
+|localSecurityOptionsDoNotRequireCtrlAltDel|布尔值|要求用户在登录前按 CTRL + ALT + DEL。|
+|localSecurityOptionsHideLastSignedInUser|布尔值|不显示上次在此设备上登录的用户的用户名。|
+|localSecurityOptionsHideUsernameAtSignIn|布尔值|在输入凭据后以及显示设备桌面之前，请勿显示登录此设备的人员的用户名。|
 |localSecurityOptionsLogOnMessageTitle|String|为尝试登录的用户设置消息标题。|
 |localSecurityOptionsLogOnMessageText|String|为尝试登录的用户设置消息文本。|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|布尔|阻止 PKU2U 对此设备的身份验证请求，以使用联机标识。|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|布尔|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|布尔值|阻止 PKU2U 对此设备的身份验证请求，以使用联机标识。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|布尔值|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定用于网络登录的质询/响应身份验证协议。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationDisableInsecureGuestLogons|布尔|如果启用，SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
-|localSecurityOptionsClearVirtualMemoryPageFile|布尔|此安全设置确定在关闭系统时是否清除虚拟内存页面文件。|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|布尔|此安全设置确定是否可以在不登录 Windows 的情况下关闭计算机。|
-|localSecurityOptionsAllowUIAccessApplicationElevation|布尔|允许 UIAccess 应用在不使用安全桌面的情况下提示提升。|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|布尔|将文件和注册表写入失败虚拟化到每个用户位置|
-|localSecurityOptionsOnlyElevateSignedExecutables|布尔|对给定的可执行文件强制执行 PKI 证书路径验证，然后再允许运行该文件。|
+|lanManagerWorkstationDisableInsecureGuestLogons|布尔值|如果启用，SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
+|localSecurityOptionsClearVirtualMemoryPageFile|布尔值|此安全设置确定在关闭系统时是否清除虚拟内存页面文件。|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|布尔值|此安全设置确定是否可以在不登录 Windows 的情况下关闭计算机。|
+|localSecurityOptionsAllowUIAccessApplicationElevation|布尔值|允许 UIAccess 应用在不使用安全桌面的情况下提示提升。|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|布尔值|将文件和注册表写入失败虚拟化到每个用户位置|
+|localSecurityOptionsOnlyElevateSignedExecutables|布尔值|对给定的可执行文件强制执行 PKI 证书路径验证，然后再允许运行该文件。|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|在管理员审批模式中定义管理员的提升提示行为。 可取值为：`notConfigured`、`elevateWithoutPrompting`、`promptForCredentialsOnTheSecureDesktop`、`promptForConsentOnTheSecureDesktop`、`promptForCredentials`、`promptForConsent` 或 `promptForConsentForNonWindowsBinaries`。|
 |localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|定义标准用户的提升提示行为。 可取值为：`notConfigured`、`automaticallyDenyElevationRequests`、`promptForCredentialsOnTheSecureDesktop`、`promptForCredentials`。|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|布尔|启用所有提升请求以转到交互式用户的桌面，而不是安全桌面。 使用管理员和标准用户的提示行为策略设置。|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|布尔|需要提升权限的应用程序安装将提示管理凭据。默认值为已启用|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|布尔|允许 UIAccess 应用在不使用安全桌面的情况下提示提升。默认值为已启用|
-|localSecurityOptionsUseAdminApprovalMode|布尔|定义内置管理员帐户是使用管理员审批模式，还是运行所有具有完全管理员权限的应用程序。默认值为已启用|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|布尔|定义是否启用管理员批准模式和所有 UAC 策略设置，默认为启用|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|布尔值|启用所有提升请求以转到交互式用户的桌面，而不是安全桌面。 使用管理员和标准用户的提示行为策略设置。|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|布尔值|需要提升权限的应用程序安装将提示管理凭据。默认值为已启用|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|布尔值|允许 UIAccess 应用在不使用安全桌面的情况下提示提升。默认值为已启用|
+|localSecurityOptionsUseAdminApprovalMode|布尔值|定义内置管理员帐户是使用管理员审批模式，还是运行所有具有完全管理员权限的应用程序。默认值为已启用|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|布尔值|定义是否启用管理员批准模式和所有 UAC 策略设置，默认为启用|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|配置在会话锁定时显示的用户信息。 如果未配置，则显示用户显示名称、域和用户名。 可取值为：`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser`。|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|配置在会话锁定时显示的用户信息。 如果未配置，则显示用户显示名称、域和用户名。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|布尔|此安全设置确定 SMB 客户端是否尝试协商 SMB 数据包签名。|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|布尔|此安全设置确定 SMB 客户端组件是否需要数据包签名。|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|布尔|如果启用此安全设置，则允许服务器消息块（SMB）重定向程序将纯文本密码发送到在身份验证过程中不支持密码加密的非 Microsoft SMB 服务器。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|布尔|此安全设置确定 SMB 服务器组件是否需要数据包签名。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|布尔|此安全设置确定 SMB 服务器是否将 SMB 数据包签名与请求的客户端协商。|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|布尔|默认情况下，此安全设置限制可匿名访问且可匿名访问的共享的命名管道设置对共享和管道的匿名访问权限|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|布尔|此安全设置确定将向计算机的匿名连接授予的其他权限。|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|布尔|此安全设置确定是否允许匿名用户执行某些活动，如枚举域帐户和网络共享的名称。|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|布尔|此安全设置确定在下一次更改密码时，是否存储新密码的 LAN Manager （LM）哈希值。 默认情况下不存储它。|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|布尔值|此安全设置确定 SMB 客户端是否尝试协商 SMB 数据包签名。|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|布尔值|此安全设置确定 SMB 客户端组件是否需要数据包签名。|
+|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|布尔值|如果启用此安全设置，则允许服务器消息块（SMB）重定向程序将纯文本密码发送到在身份验证过程中不支持密码加密的非 Microsoft SMB 服务器。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|布尔值|此安全设置确定 SMB 服务器组件是否需要数据包签名。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|布尔值|此安全设置确定 SMB 服务器是否将 SMB 数据包签名与请求的客户端协商。|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|布尔值|默认情况下，此安全设置限制可匿名访问且可匿名访问的共享的命名管道设置对共享和管道的匿名访问权限|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|布尔值|此安全设置确定将向计算机的匿名连接授予的其他权限。|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|布尔值|此安全设置确定是否允许匿名用户执行某些活动，如枚举域帐户和网络共享的名称。|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|布尔值|此安全设置确定在下一次更改密码时，是否存储新密码的 LAN Manager （LM）哈希值。 默认情况下不存储它。|
 |localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|此安全设置确定将已登录用户的智能卡从智能卡读卡器中删除时发生的情况。 可取值为：`lockWorkstation`、`noAction`、`forceLogoff`、`disconnectRemoteDesktopSession`。|
-|defenderSecurityCenterDisableAppBrowserUI|布尔|用于禁用应用程序和浏览器保护区域的显示。|
-|defenderSecurityCenterDisableFamilyUI|布尔|用于禁用 "家庭选项" 区域的显示。|
-|defenderSecurityCenterDisableHealthUI|布尔|用于禁用设备性能和运行状况区域的显示。|
-|defenderSecurityCenterDisableNetworkUI|布尔|用于禁用防火墙和网络防护区域的显示。|
-|defenderSecurityCenterDisableVirusUI|布尔|用于禁用病毒和威胁防护区域的显示。|
-|defenderSecurityCenterDisableAccountUI|布尔|用于禁用帐户保护区域的显示。|
-|defenderSecurityCenterDisableClearTpmUI|布尔|用于禁用 "清除 TPM" 按钮的显示。|
-|defenderSecurityCenterDisableHardwareUI|布尔|用于禁用硬件保护区域的显示。|
-|defenderSecurityCenterDisableNotificationAreaUI|布尔|用于禁用通知区域控件的显示。 用户需要注销并登录或重新启动计算机，此设置才会生效。|
-|defenderSecurityCenterDisableRansomwareUI|布尔|用于禁用勒索软件防护区域的显示。 |
-|defenderSecurityCenterDisableSecureBootUI|布尔|用于在 "设备安全性" 下禁用安全引导区域的显示。|
-|defenderSecurityCenterDisableTroubleshootingUI|布尔|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
-|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|布尔|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
+|defenderSecurityCenterDisableAppBrowserUI|布尔值|用于禁用应用程序和浏览器保护区域的显示。|
+|defenderSecurityCenterDisableFamilyUI|布尔值|用于禁用 "家庭选项" 区域的显示。|
+|defenderSecurityCenterDisableHealthUI|布尔值|用于禁用设备性能和运行状况区域的显示。|
+|defenderSecurityCenterDisableNetworkUI|布尔值|用于禁用防火墙和网络防护区域的显示。|
+|defenderSecurityCenterDisableVirusUI|布尔值|用于禁用病毒和威胁防护区域的显示。|
+|defenderSecurityCenterDisableAccountUI|布尔值|用于禁用帐户保护区域的显示。|
+|defenderSecurityCenterDisableClearTpmUI|布尔值|用于禁用 "清除 TPM" 按钮的显示。|
+|defenderSecurityCenterDisableHardwareUI|布尔值|用于禁用硬件保护区域的显示。|
+|defenderSecurityCenterDisableNotificationAreaUI|布尔值|用于禁用通知区域控件的显示。 用户需要注销并登录或重新启动计算机，此设置才会生效。|
+|defenderSecurityCenterDisableRansomwareUI|布尔值|用于禁用勒索软件防护区域的显示。 |
+|defenderSecurityCenterDisableSecureBootUI|布尔值|用于在 "设备安全性" 下禁用安全引导区域的显示。|
+|defenderSecurityCenterDisableTroubleshootingUI|布尔值|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|布尔值|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
 |defenderSecurityCenterOrganizationDisplayName|String|向用户显示的公司名称。|
 |defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
 |defenderSecurityCenterHelpPhone|String|向用户显示的电话号码或 Skype ID。|
@@ -170,13 +168,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|配置 windows defender TamperProtection 设置。 可取值为：`notConfigured`、`enable`、`disable`。|
-|firewallBlockStatefulFTP|布尔|阻止到设备的有状态 FTP 连接|
+|firewallBlockStatefulFTP|布尔值|阻止到设备的有状态 FTP 连接|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|配置安全关联的空闲超时（以秒为单位），值范围为 300 到 3600（包括这两个值）。 这是一个时间段，在此之后安全关联将过期并被删除。 有效值为 300 至 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|选择要使用的预共享密钥编码。 可取值为：`deviceDefault`、`none`、`utF8`。|
-|firewallIPSecExemptionsAllowNeighborDiscovery|布尔|配置 IPSec 免除项以允许邻居发现 IPv6 ICMP 类型代码|
-|firewallIPSecExemptionsAllowICMP|布尔|配置 IPSec 免除项以允许 ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|布尔|配置 IPSec 免除项以允许路由器发现 IPv6 ICMP 类型代码|
-|firewallIPSecExemptionsAllowDHCP|布尔|配置 IPSec 免除项以允许 IPv4 和 IPv6 DHCP 通信|
+|firewallIPSecExemptionsAllowNeighborDiscovery|布尔值|配置 IPSec 免除项以允许邻居发现 IPv6 ICMP 类型代码|
+|firewallIPSecExemptionsAllowICMP|布尔值|配置 IPSec 免除项以允许 ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|布尔值|配置 IPSec 免除项以允许路由器发现 IPv6 ICMP 类型代码|
+|firewallIPSecExemptionsAllowDHCP|布尔值|配置 IPSec 免除项以允许 IPv4 和 IPv6 DHCP 通信|
 |firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|指定如何强制执行证书吊销列表。 可取值为：`deviceDefault`、`none`、`attempt`、`require`。|
 |firewallMergeKeyingModuleSettings|Boolean|如果键控模块不完全支持身份验证集，请指示模块仅忽略不受支持的身份验证套件而不是整个集|
 |firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|配置如何在隧道网关应用场景中应用数据包排队。 可取值为：`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound`、`queueBoth`。|
@@ -209,64 +207,75 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|一个值，该值指示是否应从电子邮件（web 邮件/邮件客户端）中删除可执行内容（exe、dll、ps、js、vbs 等）的执行。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|指示使用针对 ransomeware 的高级防护的值。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值，该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification`。|
-|defenderGuardedFoldersAllowedAppPaths|String 集合|允许访问受保护文件夹的 exe 路径列表|
+|defenderGuardedFoldersAllowedAppPaths|String collection|允许访问受保护文件夹的 exe 路径列表|
 |defenderAdditionalGuardedFolders|String 集合|要添加到受保护文件夹列表的文件夹路径列表|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值，该值指示 NetworkProtection 的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderExploitProtectionXml|Binary|包含有关 Exploit Protection 详细信息的 xml 内容。|
 |defenderExploitProtectionXmlFileName|String|从中获取 DefenderExploitProtectionXml 的文件的名称。|
-|defenderSecurityCenterBlockExploitProtectionOverride|布尔|指示是否阻止用户覆盖 Exploit Protection 设置。|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|指示是否阻止用户覆盖 Exploit Protection 设置。|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|使管理员能够选择在设备上允许哪些类型的应用。 可取值为：`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker`、`auditComponentsStoreAppsAndSmartlocker`。|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|如果平台安全级别具有安全启动和基于虚拟化的安全性均已启用，则打开 Credential Guard。 可取值为：`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock`。|
-|deviceGuardEnableVirtualizationBasedSecurity|布尔|启用基于虚拟化的安全性（VBS）。|
-|deviceGuardEnableSecureBootWithDMA|布尔|此属性将在5月2019中被弃用，并将替换为属性 DeviceGuardSecureBootWithDMA。 指定是否在下次重新启动时启用平台安全级别。|
+|deviceGuardEnableVirtualizationBasedSecurity|布尔值|启用基于虚拟化的安全性（VBS）。|
+|deviceGuardEnableSecureBootWithDMA|布尔值|此属性将在5月2019中被弃用，并将替换为属性 DeviceGuardSecureBootWithDMA。 指定是否在下次重新启动时启用平台安全级别。|
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|指定是否在下次重新启动时启用平台安全级别。 可取值为：`notConfigured`、`withoutDMA`、`withDMA`。|
 |deviceGuardLaunchSystemGuard|[启用](../resources/intune-shared-enablement.md)|允许 IT 管理员配置启动 "系统防护"。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|smartScreenEnableInShell|布尔|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
-|smartScreenBlockOverrideForFiles|布尔|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
-|applicationGuardEnabled|布尔|启用 Windows Defender 应用程序防护|
+|smartScreenEnableInShell|布尔值|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
+|smartScreenBlockOverrideForFiles|布尔值|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
+|applicationGuardEnabled|布尔值|启用 Windows Defender 应用程序防护|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|为较新的 Windows 版本启用 Windows Defender 应用程序防护。 可取值为：`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice`。|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|阻止剪贴板传输图像文件、文本文件或二者都不。 可取值为：`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile`。|
-|applicationGuardBlockNonEnterpriseContent|布尔|阻止企业站点加载非企业内容，例如第三方插件|
-|applicationGuardAllowPersistence|布尔|允许 App Guard 容器（收藏夹、Cookie、Web 密码等）内的持久用户生成数据|
-|applicationGuardForceAuditing|布尔|强制审核将存留 Windows 日志和事件以满足安全/符合性条件（示例事件是用户登录注销、特权使用、软件安装、系统更改等）|
+|applicationGuardBlockNonEnterpriseContent|布尔值|阻止企业站点加载非企业内容，例如第三方插件|
+|applicationGuardAllowPersistence|布尔值|允许 App Guard 容器（收藏夹、Cookie、Web 密码等）内的持久用户生成数据|
+|applicationGuardForceAuditing|布尔值|强制审核将存留 Windows 日志和事件以满足安全/符合性条件（示例事件是用户登录注销、特权使用、软件安装、系统更改等）|
 |applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|阻止剪贴板将数据从主机共享到容器或从容器共享到主机，或阻止两种方式，或两种方式均不阻止。 可取值为：`notConfigured`、`blockBoth`、`blockHostToContainer`、`blockContainerToHost`、`blockNone`。|
-|applicationGuardAllowPrintToPDF|布尔|允许从容器打印为 PDF 格式|
-|applicationGuardAllowPrintToXPS|布尔|允许从容器打印为 XPS 格式|
-|applicationGuardAllowPrintToLocalPrinters|布尔|允许从容器打印到本地打印机|
-|applicationGuardAllowPrintToNetworkPrinters|布尔|允许从容器打印到网络打印机|
-|applicationGuardAllowVirtualGPU|布尔|允许应用程序防护使用虚拟 GPU|
-|applicationGuardAllowFileSaveOnHost|布尔|允许用户从应用程序防护容器中的边缘下载文件并将其保存在主机文件系统上|
-|bitLockerAllowStandardUserEncryption|布尔|允许管理员允许标准用户在 Azure AD 加入过程中启用 encrpytion。|
-|bitLockerDisableWarningForOtherDiskEncryption|布尔|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
+|applicationGuardAllowPrintToPDF|布尔值|允许从容器打印为 PDF 格式|
+|applicationGuardAllowPrintToXPS|布尔值|允许从容器打印为 XPS 格式|
+|applicationGuardAllowPrintToLocalPrinters|布尔值|允许从容器打印到本地打印机|
+|applicationGuardAllowPrintToNetworkPrinters|布尔值|允许从容器打印到网络打印机|
+|applicationGuardAllowVirtualGPU|布尔值|允许应用程序防护使用虚拟 GPU|
+|applicationGuardAllowFileSaveOnHost|布尔值|允许用户从应用程序防护容器中的边缘下载文件并将其保存在主机文件系统上|
+|bitLockerAllowStandardUserEncryption|布尔值|允许管理员允许标准用户在 Azure AD 加入过程中启用 encrpytion。|
+|bitLockerDisableWarningForOtherDiskEncryption|布尔值|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|允许管理员要求使用 BitLocker 开启加密功能。 此策略仅适用于移动 SKU。|
 |bitLockerEncryptDevice|Boolean|允许管理员要求使用 BitLocker 开启加密功能。|
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker 系统驱动器策略。|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker 固定驱动器策略。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker 可移动驱动器策略。|
 |bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|此设置在操作系统驱动器恢复后启动客户端驱动的恢复密码轮替（使用 bootmgr 或 WinRE）。 可取值为：`notConfigured`、`disabled`、`enabledForAzureAd`、`enabledForAzureAdAndHybrid`。|
-|defenderDisableScanArchiveFiles|布尔|允许或禁止扫描存档。|
-|defenderDisableBehaviorMonitoring|布尔|允许或禁止 Windows Defender 行为监控功能。|
-|defenderDisableCloudProtection|布尔|为最大限度地保护你的电脑，Windows Defender 将向 Microsoft 发送有关发现的任何问题的信息。 Microsoft 将分析该信息，详细了解影响您和其他客户的问题，并提供改进的解决方案。|
-|defenderEnableScanIncomingMail|布尔|允许或禁止扫描电子邮件。|
-|defenderEnableScanMappedNetworkDrivesDuringFullScan|布尔|允许或禁止对映射的网络驱动器进行完全扫描。|
-|defenderDisableScanRemovableDrivesDuringFullScan|布尔|允许或禁止对可移动驱动器进行完全扫描。 在快速扫描过程中，可能仍会扫描可移动驱动器。|
-|defenderDisableScanDownloads|布尔|允许或禁止 Windows Defender IOAVP 保护功能。|
-|defenderDisableIntrusionPreventionSystem|布尔|允许或禁止 Windows Defender 入侵防护功能。|
-|defenderDisableOnAccessProtection|布尔|允许或禁止 Windows Defender 访问保护功能。|
-|defenderDisableRealTimeMonitoring|布尔|允许或禁止 Windows Defender 实时监视功能。|
-|defenderDisableScanNetworkFiles|布尔|允许或禁止扫描网络文件。|
-|defenderDisableScanScriptsLoadedInInternetExplorer|布尔|允许或禁止 Windows Defender 脚本扫描功能。|
+|defenderDisableScanArchiveFiles|布尔值|允许或禁止扫描存档。|
+|defenderAllowScanArchiveFiles|布尔值|允许或禁止扫描存档。|
+|defenderDisableBehaviorMonitoring|布尔值|允许或禁止 Windows Defender 行为监控功能。|
+|defenderAllowBehaviorMonitoring|布尔值|允许或禁止 Windows Defender 行为监控功能。|
+|defenderDisableCloudProtection|布尔值|为最大限度地保护你的电脑，Windows Defender 将向 Microsoft 发送有关发现的任何问题的信息。 Microsoft 将分析该信息，详细了解影响您和其他客户的问题，并提供改进的解决方案。|
+|defenderAllowCloudProtection|布尔值|为最大限度地保护你的电脑，Windows Defender 将向 Microsoft 发送有关发现的任何问题的信息。 Microsoft 将分析该信息，详细了解影响您和其他客户的问题，并提供改进的解决方案。|
+|defenderEnableScanIncomingMail|布尔值|允许或禁止扫描电子邮件。|
+|defenderEnableScanMappedNetworkDrivesDuringFullScan|布尔值|允许或禁止对映射的网络驱动器进行完全扫描。|
+|defenderDisableScanRemovableDrivesDuringFullScan|布尔值|允许或禁止对可移动驱动器进行完全扫描。 在快速扫描过程中，可能仍会扫描可移动驱动器。|
+|defenderAllowScanRemovableDrivesDuringFullScan|布尔值|允许或禁止对可移动驱动器进行完全扫描。 在快速扫描过程中，可能仍会扫描可移动驱动器。|
+|defenderDisableScanDownloads|布尔值|允许或禁止 Windows Defender IOAVP 保护功能。|
+|defenderAllowScanDownloads|布尔值|允许或禁止 Windows Defender IOAVP 保护功能。|
+|defenderDisableIntrusionPreventionSystem|布尔值|允许或禁止 Windows Defender 入侵防护功能。|
+|defenderAllowIntrusionPreventionSystem|布尔值|允许或禁止 Windows Defender 入侵防护功能。|
+|defenderDisableOnAccessProtection|布尔值|允许或禁止 Windows Defender 访问保护功能。|
+|defenderAllowOnAccessProtection|布尔值|允许或禁止 Windows Defender 访问保护功能。|
+|defenderDisableRealTimeMonitoring|布尔值|允许或禁止 Windows Defender 实时监视功能。|
+|defenderAllowRealTimeMonitoring|布尔值|允许或禁止 Windows Defender 实时监视功能。|
+|defenderDisableScanNetworkFiles|布尔值|允许或禁止扫描网络文件。|
+|defenderAllowScanNetworkFiles|布尔值|允许或禁止扫描网络文件。|
+|defenderDisableScanScriptsLoadedInInternetExplorer|布尔值|允许或禁止 Windows Defender 脚本扫描功能。|
+|defenderAllowScanScriptsLoadedInInternetExplorer|布尔值|允许或禁止 Windows Defender 脚本扫描功能。|
 |defenderBlockEndUserAccess|Boolean|允许或禁止用户访问 Windows Defender UI。 如果不允许，将同时禁止显示所有 Windows Defender 通知。|
+|defenderAllowEndUserAccess|布尔值|允许或禁止用户访问 Windows Defender UI。 如果不允许，将同时禁止显示所有 Windows Defender 通知。|
 |defenderScanMaxCpuPercentage|Int32|表示 Windows Defender 扫描的平均 CPU 负载因子（以百分比为单位）。 默认值为 50。 有效值为 0 至 100|
-|defenderCheckForSignaturesBeforeRunningScan|布尔|通过此策略设置，您可以管理在运行扫描前是否检查新病毒和间谍软件定义。|
+|defenderCheckForSignaturesBeforeRunningScan|布尔值|通过此策略设置，您可以管理在运行扫描前是否检查新病毒和间谍软件定义。|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|在 Windows 10 版本1709中添加。 此策略设置确定 Windows Defender 防病毒在阻止和扫描可疑文件时的积极程度。 值类型为 integer。 此功能需要启用 "加入 Microsoft MAPS" 设置，才能正常运行。 可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
 |defenderCloudExtendedTimeoutInSeconds|Int32|在 Windows 10 版本1709中添加。 此功能允许 Windows Defender 防病毒阻止可疑文件长达60秒，并在云中对其进行扫描以确保其安全。 值类型为 integer，范围为 0-50。 此功能依赖于其他三个映射设置必须全部启用-"配置 ' 在首次看到时阻止 '" 功能; "加入 Microsoft MAPS ";"需要进一步分析时发送文件示例"。 有效值为 0 至 50|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|隔离项目将存储在系统上的时间段（以天为单位）。 有效值为 0 至 90|
-|defenderDisableCatchupFullScan|布尔|通过此策略设置，您可以配置计划完全扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
-|defenderDisableCatchupQuickScan|布尔|通过此策略设置，您可以配置计划快速扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
-|defenderEnableLowCpuPriority|布尔|通过此策略设置，您可以启用或禁用计划扫描的 CPU 低优先级。|
-|defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
-|defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
+|defenderDisableCatchupFullScan|布尔值|通过此策略设置，您可以配置计划完全扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
+|defenderDisableCatchupQuickScan|布尔值|通过此策略设置，您可以配置计划快速扫描的追赶扫描。 追赶扫描是由于错过了定期计划的扫描而启动的扫描。 通常情况下，这些计划扫描会因计算机在计划时间关闭而丢失。|
+|defenderEnableLowCpuPriority|布尔值|通过此策略设置，您可以启用或禁用计划扫描的 CPU 低优先级。|
+|defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
 |defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
 |defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|已添加到 Windows 10 版本 1607 中。 指定对可能有害的应用程序（PUAs）的检测级别。 Windows Defender 会在下载可能不需要的软件或尝试在你的计算机上安装自己时向你发出警告。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|控制应监视的文件集。 可取值为：`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
@@ -274,6 +283,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderScheduledQuickScanTime|TimeOfDay|选择 Windows Defender 快速扫描应在一天的哪一时间运行。 例如，值为 0 = 12：00AM，值为 60 = 1：00AM，值 120 = 2：00，等等，最高为 1380 = 11：00PM 的值。 默认值为120|
 |defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|选择 Windows Defender 扫描应运行的日期。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
 |defenderScheduledScanTime|TimeOfDay|选择 Windows Defender 扫描应在一天的哪一时间运行。|
+|defenderSignatureUpdateIntervalInHours|Int32|指定将用于检查签名的间隔（以小时为单位），因此，不使用 ScheduleDay 和 ScheduleTime。将根据间隔设置检查是否有新的签名。 有效值为 0 至 24|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查 Windows Defender 中的用户同意级别以发送数据。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|允许管理员指定任何有效的威胁严重级别和相应的默认操作 ID 进行。|
 
@@ -289,7 +299,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 30451
+Content-length: 31005
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -970,18 +980,29 @@ Content-length: 30451
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1005,6 +1026,7 @@ Content-length: 30451
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1021,7 +1043,7 @@ Content-length: 30451
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30623
+Content-Length: 31177
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1705,18 +1727,29 @@ Content-Length: 30623
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1740,6 +1773,7 @@ Content-Length: 30623
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1750,7 +1784,6 @@ Content-Length: 30623
   }
 }
 ```
-
 
 
 

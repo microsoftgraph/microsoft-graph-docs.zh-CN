@@ -1,20 +1,18 @@
 ---
 title: 更新 restrictedAppsViolation
 description: 更新 restrictedAppsViolation 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96e8bb3a7fc2b5f9f349f948f0f5d473f8288aff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5dd783a68ffe608265d0b65f9404678d244b705d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483656"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742391"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -123,7 +121,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

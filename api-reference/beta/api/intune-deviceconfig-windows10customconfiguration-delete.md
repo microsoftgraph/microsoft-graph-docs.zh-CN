@@ -1,20 +1,18 @@
 ---
 title: 删除 windows10CustomConfiguration
 description: 删除 windows10CustomConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2783732b81dd08b173b8c90414e4e02bd09bc81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 68e028295405c89507d91954e4005d4d3e91d783
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42481598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740977"
 ---
 # <a name="delete-windows10customconfiguration"></a>删除 windows10CustomConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除 windows10MobileCompliancePolicy
 description: 删除 windows10MobileCompliancePolicy。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dc80cf9073e4c8ee11f508e79bf19c27235da84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4ff5325743f5ad048a147aa3ebd168b5556bee4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479203"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739416"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>删除 windows10MobileCompliancePolicy
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

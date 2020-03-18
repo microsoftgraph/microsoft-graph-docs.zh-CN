@@ -1,20 +1,18 @@
 ---
 title: 创建 windowsPhone81VpnConfiguration
 description: 创建新的 windowsPhone81VpnConfiguration 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 177ebe905d4b3043f5f8cf06f2c1fac6d578ddac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f112bfba9948dbb5994ad81c031953038807a73
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474394"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733348"
 ---
 # <a name="create-windowsphone81vpnconfiguration"></a>创建 windowsPhone81VpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,8 +54,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -71,13 +69,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applyOnlyToWindows81|Boolean|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |connectionType|[windowsVpnConnectionType](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|连接类型。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)。 可取值为：`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`。|
 |loginGroupOrDomain|String|将连接类型设置为 Dell SonicWALL Mobile 连接时的登录组或域。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|enableSplitTunneling|布尔|为 VPN 启用拆分隧道。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|enableSplitTunneling|布尔值|为 VPN 启用拆分隧道。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |proxyServer|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|代理服务器。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|bypassVpnOnCompanyWifi|布尔|在公司 Wi-fi 上绕过 VPN。|
-|bypassVpnOnHomeWifi|布尔|绕过家庭 Wi-fi 上的 VPN。|
+|bypassVpnOnCompanyWifi|布尔值|在公司 Wi-fi 上绕过 VPN。|
+|bypassVpnOnHomeWifi|布尔值|绕过家庭 Wi-fi 上的 VPN。|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`sharedSecret`、`derivedCredential`。|
-|rememberUserCredentials|布尔|记住用户凭据。|
-|dnsSuffixSearchList|String 集合|DNS 后缀搜索列表。|
+|rememberUserCredentials|布尔值|记住用户凭据。|
+|dnsSuffixSearchList|String collection|DNS 后缀搜索列表。|
 
 
 
@@ -226,7 +224,6 @@ Content-Length: 2188
   ]
 }
 ```
-
 
 
 

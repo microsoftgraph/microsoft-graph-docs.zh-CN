@@ -1,20 +1,18 @@
 ---
 title: 获取 iosEasEmailProfileConfiguration
 description: 读取 iosEasEmailProfileConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad767d6d4f15f822d4e149db0a0a616deade319a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58dc812c3292397d7004ccc8b44867a3079522c2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442850"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751662"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>获取 iosEasEmailProfileConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -135,7 +133,6 @@ Content-Length: 2438
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 managedAllDeviceCertificateState
 description: 创建新的 managedAllDeviceCertificateState 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 534c748476b97d2a896058f4246589a1f2b18f48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 321615ae8be464906d5837deb1d0ecbb3c90ff7b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442129"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743644"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>创建 managedAllDeviceCertificateState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

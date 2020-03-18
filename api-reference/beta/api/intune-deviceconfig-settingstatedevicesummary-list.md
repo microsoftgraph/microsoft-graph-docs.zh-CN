@@ -1,20 +1,18 @@
 ---
 title: 列出 settingStateDeviceSummaries
 description: 列出 settingStateDeviceSummary 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ae6b9d01384d806db1bbeaad6c0ebd3942eb217
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f5d3ceb5d7fa22042f5f165ff3e86f536b47e09
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483432"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742216"
 ---
 # <a name="list-settingstatedevicesummaries"></a>列出 settingStateDeviceSummaries
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 486
   ]
 }
 ```
-
 
 
 

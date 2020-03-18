@@ -1,20 +1,18 @@
 ---
 title: 更新 windowsPrivacyDataAccessControlItem
 description: 更新 windowsPrivacyDataAccessControlItem 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3305b7337f84c3b38b0169770a020c30b5d828fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35c2fcc10a1c2924634e337585fbcec1973aeabf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473799"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732550"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>更新 windowsPrivacyDataAccessControlItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

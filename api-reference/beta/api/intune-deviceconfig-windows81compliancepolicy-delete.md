@@ -1,20 +1,18 @@
 ---
 title: 删除 windows81CompliancePolicy
 description: 删除 windows81CompliancePolicy。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2dc1caa82ab9c558fb0f6f2eafc513e5e59a24e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e39c6f1caa97f083b7dbdfe3b9a3c412df474760
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477446"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737440"
 ---
 # <a name="delete-windows81compliancepolicy"></a>删除 windows81CompliancePolicy
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除 macOSCustomConfiguration
 description: 删除 macOSCustomConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35ab32ecac2896982b0e0e991b1302eb33a87fd8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c95ff631d2ffbe00ef359bba9ff370f6d4e5091
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442416"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42747289"
 ---
 # <a name="delete-macoscustomconfiguration"></a>删除 macOSCustomConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

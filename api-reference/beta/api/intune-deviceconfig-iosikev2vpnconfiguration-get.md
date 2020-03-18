@@ -1,20 +1,18 @@
 ---
 title: 获取 iosikEv2VpnConfiguration
 description: 读取 iosikEv2VpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 123d22c3b0b4617103834df80433ca85657bf2a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: beac4ab203af9a8bf6368d048e3290bfaaeea101
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448884"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750437"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>获取 iosikEv2VpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -224,7 +222,6 @@ Content-Length: 5469
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 iosUpdateConfigurations
 description: 列出 iosUpdateConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97e58dccbdc12478716af5f3c63653b940b9da7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50324436878b2450d3119c0e79a1fc379f558207
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442619"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42749030"
 ---
 # <a name="list-iosupdateconfigurations"></a>列出 iosUpdateConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -126,7 +124,6 @@ Content-Length: 2005
   ]
 }
 ```
-
 
 
 

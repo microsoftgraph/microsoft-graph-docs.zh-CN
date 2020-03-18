@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementIntentAssignment
 description: 创建新的 deviceManagementIntentAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 096d949bbef788e4a17eebed0cb1052460c4cc37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f4363886e6c66b852cb2f45fcd7ad837c6846fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471118"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729162"
 ---
 # <a name="create-devicemanagementintentassignment"></a>创建 deviceManagementIntentAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

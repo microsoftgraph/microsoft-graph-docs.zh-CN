@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsPhone81CertificateProfileBases
 description: 列出 windowsPhone81CertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c19ac9e88dbdf5959969c06aae4c9cc75b2b8c96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e5f6bf95f858f986d3d1b885663075d82271437
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475521"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42734825"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>列出 windowsPhone81CertificateProfileBases
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +118,6 @@ Content-Length: 1887
   ]
 }
 ```
-
 
 
 

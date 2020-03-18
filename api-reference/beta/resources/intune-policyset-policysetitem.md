@@ -1,20 +1,18 @@
 ---
 title: policySetItem 资源类型
 description: 包含用于 PolicySet 项目的属性的类。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df5cdc970696db9785c19c0a6c5afb5ab2266f7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98000e00ad90938bc3835b9ba3becb047920fd0a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523976"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729106"
 ---
 # <a name="policysetitem-resource-type"></a>policySetItem 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -37,9 +35,9 @@ ms.locfileid: "42523976"
 |payloadId|String|PolicySetItem 的 PayloadId。|
 |itemType|String|PolicySetItem 的 policySetType。|
 |displayName|String|PolicySetItem 的 DisplayName。|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String 集合|引导部署的标记|
+|guidedDeploymentTags|String collection|引导部署的标记|
 
 ## <a name="relationships"></a>关系
 无

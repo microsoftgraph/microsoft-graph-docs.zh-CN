@@ -1,20 +1,18 @@
 ---
 title: 列出 vpnConfigurations
 description: 列出 vpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee4d94911a5445d705bad338cdca0f21948d3ce6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a31c127a4a8a3a70599d07feeaa069ca5a9bee0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482165"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741446"
 ---
 # <a name="list-vpnconfigurations"></a>列出 vpnConfigurations
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 1744
   ]
 }
 ```
-
 
 
 

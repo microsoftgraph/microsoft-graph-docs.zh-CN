@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSImportedPFXCertificateProfiles
 description: 列出 macOSImportedPFXCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36404447e35fde53ee12168422bcad29bb2e585b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 312a73f914e4c2e213bf1bdc0dce5f380b195aa0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442269"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745525"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>列出 macOSImportedPFXCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1654
   ]
 }
 ```
-
 
 
 

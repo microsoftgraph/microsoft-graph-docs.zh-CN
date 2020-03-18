@@ -1,20 +1,18 @@
 ---
 title: 删除 windows81GeneralConfiguration
 description: 删除 windows81GeneralConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aab790134171442c4538c51b486a421cc299f19c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac04cd6b14571c4004e3fa18c0e867c9eb79b491
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477236"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737313"
 ---
 # <a name="delete-windows81generalconfiguration"></a>删除 windows81GeneralConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

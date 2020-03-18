@@ -1,20 +1,18 @@
 ---
 title: 创建 macOSEndpointProtectionConfiguration
 description: 创建新的 macOSEndpointProtectionConfiguration 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfd96698582c247a34fdd602f74acbb71ce8708a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: add0da374dd4dcdd11f9a516f241604ad538f91b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746897"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>创建 macOSEndpointProtectionConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,8 +54,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -66,12 +64,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|确定可以从 macOS 设备上运行哪些下载位置应用程序的系统和隐私设置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
-|gatekeeperBlockOverride|布尔|如果设置为 true，将禁用网关的用户替代。|
-|firewallEnabled|布尔|是否应启用防火墙。|
-|firewallBlockAllIncoming|布尔|对应于 "阻止所有传入连接" 选项。|
-|firewallEnableStealthMode|布尔|对应于 "启用隐形模式"。|
+|gatekeeperBlockOverride|布尔值|如果设置为 true，将禁用网关的用户替代。|
+|firewallEnabled|布尔值|是否应启用防火墙。|
+|firewallBlockAllIncoming|布尔值|对应于 "阻止所有传入连接" 选项。|
+|firewallEnableStealthMode|布尔值|对应于 "启用隐形模式"。|
 |firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)集合|具有防火墙设置的应用程序列表。 不在此列表中的应用程序的防火墙设置由用户决定。 该集合最多可包含 500 个元素。|
-|fileVaultEnabled|布尔|是否应启用 FileVault。|
+|fileVaultEnabled|布尔值|是否应启用 FileVault。|
 |fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|如果启用了 FileVault，则需要确定要使用的恢复密钥的类型。 . 可取值为：`notConfigured`、`institutionalRecoveryKey`、`personalRecoveryKey`。|
 |fileVaultInstitutionalRecoveryKeyCertificate|Binary|如果所选恢复密钥类型包括 InstitutionalRecoveryKey，则为必需。 用于设置机构恢复密钥的 DER 编码证书文件。|
 |fileVaultInstitutionalRecoveryKeyCertificateFileName|String|要在 UI 中显示的机构恢复密钥证书的文件名。 （* der）。|
@@ -80,6 +78,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |fileVaultNumberOfTimesUserCanIgnore|Int32|可选。 使用 Defer 选项时，此值是用户可以在 FileVault 之前忽略启用 FileVault 的提示的最大次数，用户将需要这些用户才能登录。 如果设置为-1，则在启用 FileVault 之前，它将始终提示启用 FileVault，但它将允许用户绕过启用 FileVault。 将此设置为0将禁用该功能。|
 |fileVaultDisablePromptAtSignOut|Boolean|可选。 使用 Defer 选项时，如果设置为 true，则不提示用户在注销时启用 FileVault。|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|可选。 如果所选恢复密钥类型包括 PersonalRecoveryKey，则以月为单位旋转该密钥的频率。|
+|fileVaultHidePersonalRecoveryKey|Boolean|可选。 在 FileVault 加密过程中，隐藏的个人恢复密钥不会显示在用户的屏幕上，从而降低了在错误的手中出现的最终风险。|
+|advancedThreatProtectionRealTime|[启用](../resources/intune-shared-enablement.md)|确定是否在 macOS 上为 Microsoft Defender 高级威胁防护启用实时保护。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|advancedThreatProtectionCloudDelivered|[启用](../resources/intune-shared-enablement.md)|确定是否在 macOS 上为 Microsoft Defender 高级威胁防护启用云提供的保护。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|advancedThreatProtectionAutomaticSampleSubmission|[启用](../resources/intune-shared-enablement.md)|确定是否在 macOS 上为 Microsoft Defender 高级威胁防护启用自动文件示例提交。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|advancedThreatProtectionDiagnosticDataCollection|[启用](../resources/intune-shared-enablement.md)|确定是否在 macOS 上为 Microsoft Defender 高级威胁防护启用诊断和使用情况数据收集。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|advancedThreatProtectionExcludedFolders|String collection|要从 macOS 的 Microsoft Defender 高级威胁防护的防病毒扫描中排除的文件夹路径的列表。|
+|advancedThreatProtectionExcludedFiles|String collection|要从 macOS 中的 Microsoft Defender 高级威胁防护的防病毒扫描中排除的文件的路径列表。|
+|advancedThreatProtectionExcludedExtensions|String collection|要从 macOS 中的 Microsoft Defender 高级威胁防护的防病毒扫描中排除的文件扩展名的列表。|
+|advancedThreatProtectionExcludedProcesses|String collection|要从 macOS 中的 Microsoft Defender 高级威胁防护的防病毒扫描中排除的进程名称的列表。|
 
 
 
@@ -93,7 +100,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2052
+Content-length: 2786
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -145,7 +152,24 @@ Content-length: 2052
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
 
@@ -154,7 +178,7 @@ Content-length: 2052
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2224
+Content-Length: 2958
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -209,10 +233,26 @@ Content-Length: 2224
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
-
 
 
 

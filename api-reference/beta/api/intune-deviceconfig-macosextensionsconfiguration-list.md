@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSExtensionsConfigurations
 description: 列出 macOSExtensionsConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46bbf130f3567dbc0b4cdccf9e83c1da7630cda7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 018f670f31a32fb0f115f362354cd76226c6df5f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746064"
 ---
 # <a name="list-macosextensionsconfigurations"></a>列出 macOSExtensionsConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +116,6 @@ Content-Length: 1760
   ]
 }
 ```
-
 
 
 

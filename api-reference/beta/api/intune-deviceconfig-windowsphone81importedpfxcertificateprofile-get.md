@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsPhone81ImportedPFXCertificateProfile
 description: 读取 windowsPhone81ImportedPFXCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75a34a7391262469c5d2c09be5d704bf3c24e5f5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e9d0f370d4247628c80f3e6147b483ba386a6acd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733908"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>获取 windowsPhone81ImportedPFXCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -116,7 +114,6 @@ Content-Length: 1633
   }
 }
 ```
-
 
 
 

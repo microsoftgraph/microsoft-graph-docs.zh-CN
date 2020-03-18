@@ -1,20 +1,18 @@
 ---
 title: 获取 macOSCustomConfiguration
 description: 读取 macOSCustomConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c745a52e620ecf55889899a44751c64ceeb15ddf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ffc9b4eb2c5df9fd20c3f6837399b6642fba553d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442409"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42747226"
 ---
 # <a name="get-macoscustomconfiguration"></a>获取 macOSCustomConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -112,7 +110,6 @@ Content-Length: 1407
   }
 }
 ```
-
 
 
 

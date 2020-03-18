@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10PkcsCertificateProfiles
 description: 列出 windows10PkcsCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 953d5b91583dca6c5e8b438aac63bcce4391638e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2da63053e6995ef2f58f7d2f8b2ed7bfdd7c5098
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478174"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738597"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>列出 windows10PkcsCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -133,7 +131,6 @@ Content-Length: 2511
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 windows10MobileCompliancePolicy
 description: 读取 windows10MobileCompliancePolicy 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ac276c7c04d6ab403a8093c1bdcb59a7be93e5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 717a04d96ca9a3925fb78fe0306d0d0c95b51721
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739388"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>获取 windows10MobileCompliancePolicy
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 1419
   }
 }
 ```
-
 
 
 

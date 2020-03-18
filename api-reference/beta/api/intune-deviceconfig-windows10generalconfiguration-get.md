@@ -1,20 +1,18 @@
 ---
 title: 获取 windows10GeneralConfiguration
 description: 读取 windows10GeneralConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba626a9980b87c393f52d655a0e76bdce3c0f7ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7216edff838486c854c9bc88424daee34353144
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479903"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739836"
 ---
 # <a name="get-windows10generalconfiguration"></a>获取 windows10GeneralConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -70,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15785
+Content-Length: 15912
 
 {
   "value": {
@@ -160,6 +158,7 @@ Content-Length: 15785
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
     "searchBlockWebResults": true,
+    "findMyFiles": "enabled",
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -292,6 +291,7 @@ Content-Length: 15785
     "privacyBlockInputPersonalization": true,
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
+    "activateAppsWithVoice": "enabled",
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -426,11 +426,11 @@ Content-Length: 15785
     "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
       "App Management Package Family Names To Launch After Log On value"
     ],
-    "uninstallBuiltInApps": true
+    "uninstallBuiltInApps": true,
+    "configureTimeZone": "Configure Time Zone value"
   }
 }
 ```
-
 
 
 

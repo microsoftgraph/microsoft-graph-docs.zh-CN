@@ -1,20 +1,18 @@
 ---
 title: extendQualityUpdatesPause 操作
 description: 为 Windows Update for Business 振铃扩展质量更新暂停。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c11f29063a4823e4d4d698639ca00e79d86aeb3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80c6d631b1483d40aa7f13f60e25e2bc5c836edf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473694"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732480"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

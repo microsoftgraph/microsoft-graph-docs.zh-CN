@@ -1,20 +1,18 @@
 ---
 title: 获取 macOSExtensionsConfiguration
 description: 读取 macOSExtensionsConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2eda8b95931865690ec298f5135a0a84ff43ad5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da686d2efaa729bdce6d85546948424b3d4a441e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442304"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746141"
 ---
 # <a name="get-macosextensionsconfiguration"></a>获取 macOSExtensionsConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +118,6 @@ Content-Length: 1660
   }
 }
 ```
-
 
 
 

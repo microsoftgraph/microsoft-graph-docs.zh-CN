@@ -1,20 +1,18 @@
 ---
 title: 更新 managedAllDeviceCertificateState
 description: 更新 managedAllDeviceCertificateState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ae99c18b065e2b40259a84ae869bf0d1d6008f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 585a4880ea0c067619ac4d294fccbb2c43392b57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448625"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743455"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>更新 managedAllDeviceCertificateState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

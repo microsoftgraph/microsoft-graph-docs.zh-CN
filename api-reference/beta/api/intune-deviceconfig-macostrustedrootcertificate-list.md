@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSTrustedRootCertificates
 description: 列出 macOSTrustedRootCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8803d0af9e26e583346695e2d0b29ba850f5e25e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ba60a3a526911fcf92582363f390f2429c1b971
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448688"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42744554"
 ---
 # <a name="list-macostrustedrootcertificates"></a>列出 macOSTrustedRootCertificates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +107,6 @@ Content-Length: 1479
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementBooleanSettingInstance
 description: 更新 deviceManagementBooleanSettingInstance 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e19f2d339c82a73d0bf2f0d762673907f72f373
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a537af103b2cb90f408f9da11ce468901de902f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472651"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731024"
 ---
 # <a name="update-devicemanagementbooleansettinginstance"></a>更新 deviceManagementBooleanSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
 
 
 

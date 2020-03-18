@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10EnterpriseModernAppManagementConfigurations
 description: 列出 windows10EnterpriseModernAppManagementConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0b6eca9c29854d9fc431363faecc69ae74dde20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e4a56f86fff005d8a02bff66fee8d3520a4497d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739955"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>列出 windows10EnterpriseModernAppManagementConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -108,7 +106,6 @@ Content-Length: 1424
   ]
 }
 ```
-
 
 
 

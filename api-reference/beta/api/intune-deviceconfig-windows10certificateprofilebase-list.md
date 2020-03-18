@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10CertificateProfileBases
 description: 列出 windows10CertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 245020e462fa2f1d84bb310f826081206ae0f6d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79001a43156353ba81b4dc31aa46dcc7749cdd38
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482130"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741369"
 ---
 # <a name="list-windows10certificateprofilebases"></a>列出 windows10CertificateProfileBases
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1668
   ]
 }
 ```
-
 
 
 

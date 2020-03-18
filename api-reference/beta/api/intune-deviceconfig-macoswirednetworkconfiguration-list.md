@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSWiredNetworkConfigurations
 description: 列出 macOSWiredNetworkConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 69e6b2acb4fe4527a849dd5ad15c87345b824671
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b30f424efb99dc5805ae24a3f06bc16ebb992dde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442157"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743763"
 ---
 # <a name="list-macoswirednetworkconfigurations"></a>列出 macOSWiredNetworkConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -117,7 +115,6 @@ Content-Length: 1872
   ]
 }
 ```
-
 
 
 

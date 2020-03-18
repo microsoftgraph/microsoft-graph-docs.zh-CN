@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSWiFiConfigurations
 description: 列出 macOSWiFiConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8311f29578035bebea2885e199560b010c3e1aa8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7fb7d9b79c8b0438f5dbab8964186356659bc0f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42744099"
 ---
 # <a name="list-macoswificonfigurations"></a>列出 macOSWiFiConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -117,7 +115,6 @@ Content-Length: 1823
   ]
 }
 ```
-
 
 
 

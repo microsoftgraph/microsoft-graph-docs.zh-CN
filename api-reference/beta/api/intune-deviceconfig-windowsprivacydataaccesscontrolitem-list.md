@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsPrivacyDataAccessControlItems
 description: 列出 windowsPrivacyDataAccessControlItem 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 13954efbd0104b52f0fd2fe8c77ef91d342e2ae7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1941618fad1258e5b88f4dea2c47c06400b09884
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473876"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732564"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>列出 windowsPrivacyDataAccessControlItems
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 356
   ]
 }
 ```
-
 
 
 

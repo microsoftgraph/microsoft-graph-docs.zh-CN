@@ -1,20 +1,18 @@
 ---
 title: 列出 iosEduDeviceConfigurations
 description: 列出 iosEduDeviceConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b045f6776c5964c84ca171253fc40e5659217ae8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05bd2f596e570b4e199bd2cfc6c134a39d1a4a60
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442801"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751137"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>列出 iosEduDeviceConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -140,7 +138,6 @@ Content-Length: 3148
   ]
 }
 ```
-
 
 
 

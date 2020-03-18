@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10EndpointProtectionConfigurations
 description: 列出 windows10EndpointProtectionConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5075a6f3b2bcec7b8954f36fbdfec3577f65ca06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e03f0186a6d28a28a07bf2f60dca3c42d1dc616
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480457"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740214"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>列出 windows10EndpointProtectionConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 33552
+Content-Length: 34154
 
 {
   "value": [
@@ -752,18 +750,29 @@ Content-Length: 33552
       },
       "bitLockerRecoveryPasswordRotation": "disabled",
       "defenderDisableScanArchiveFiles": true,
+      "defenderAllowScanArchiveFiles": true,
       "defenderDisableBehaviorMonitoring": true,
+      "defenderAllowBehaviorMonitoring": true,
       "defenderDisableCloudProtection": true,
+      "defenderAllowCloudProtection": true,
       "defenderEnableScanIncomingMail": true,
       "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
       "defenderDisableScanRemovableDrivesDuringFullScan": true,
+      "defenderAllowScanRemovableDrivesDuringFullScan": true,
       "defenderDisableScanDownloads": true,
+      "defenderAllowScanDownloads": true,
       "defenderDisableIntrusionPreventionSystem": true,
+      "defenderAllowIntrusionPreventionSystem": true,
       "defenderDisableOnAccessProtection": true,
+      "defenderAllowOnAccessProtection": true,
       "defenderDisableRealTimeMonitoring": true,
+      "defenderAllowRealTimeMonitoring": true,
       "defenderDisableScanNetworkFiles": true,
+      "defenderAllowScanNetworkFiles": true,
       "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+      "defenderAllowScanScriptsLoadedInInternetExplorer": true,
       "defenderBlockEndUserAccess": true,
+      "defenderAllowEndUserAccess": true,
       "defenderScanMaxCpuPercentage": 12,
       "defenderCheckForSignaturesBeforeRunningScan": true,
       "defenderCloudBlockLevel": "high",
@@ -787,6 +796,7 @@ Content-Length: 33552
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
       "defenderScheduledScanDay": "everyday",
       "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderSignatureUpdateIntervalInHours": 6,
       "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "defenderDetectedMalwareActions": {
         "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -799,7 +809,6 @@ Content-Length: 33552
   ]
 }
 ```
-
 
 
 

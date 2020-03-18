@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsPrivacyDataAccessControlItem
 description: 读取 windowsPrivacyDataAccessControlItem 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bed7f164c01bf4a853d391519b99fffac70f661c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e0532cd79c6eb7c968fded01e0b1e78905bc2da
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473904"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732592"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>获取 windowsPrivacyDataAccessControlItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 330
   }
 }
 ```
-
 
 
 

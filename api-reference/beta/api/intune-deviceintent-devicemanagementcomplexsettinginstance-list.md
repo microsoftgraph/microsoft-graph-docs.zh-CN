@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementComplexSettingInstances
 description: 列出 deviceManagementComplexSettingInstance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec9224af76366d5d11685a9fb22221ed99e96d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf61f7e0ccc4bfa2810a5fa735ba48969c281fd6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471944"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730072"
 ---
 # <a name="list-devicemanagementcomplexsettinginstances"></a>列出 deviceManagementComplexSettingInstances
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 256
   ]
 }
 ```
-
 
 
 

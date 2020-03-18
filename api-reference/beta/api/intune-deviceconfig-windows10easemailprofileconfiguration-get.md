@@ -1,20 +1,18 @@
 ---
 title: 获取 windows10EasEmailProfileConfiguration
 description: 读取 windows10EasEmailProfileConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7486d24b81d1033e430915086735bcea9e32761
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2cc065e75d9906d7f43249483ee0e5baa6efb6b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480884"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740466"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>获取 windows10EasEmailProfileConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -122,7 +120,6 @@ Content-Length: 1807
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 windows81WifiImportConfigurations
 description: 列出 windows81WifiImportConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 114134974e3246ddd7597ebac38d67bc9936db7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebe279d21c7e0a1e9fd086c7344d43a3427c6dd0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42736256"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>列出 windows81WifiImportConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 1499
   ]
 }
 ```
-
 
 
 

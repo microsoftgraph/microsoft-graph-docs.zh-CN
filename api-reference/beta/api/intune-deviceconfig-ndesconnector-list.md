@@ -1,20 +1,18 @@
 ---
 title: 列出 ndesConnectors
 description: 列出 ndesConnector 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac49bbf813fe31479d8c14fb8676aee9b7caee57
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 90d87da8916bb9d357e11a058ac8e5b5d1a936d0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442032"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742741"
 ---
 # <a name="list-ndesconnectors"></a>列出 ndesConnectors
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 285
   ]
 }
 ```
-
 
 
 

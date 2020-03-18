@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10GeneralConfigurations
 description: 列出 windows10GeneralConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f44e0cb9fb759f168cf43a60bf7f343c4802af4f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c7478ccafc1f2e73bfcc894a9a852dbe001291c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479868"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739703"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 16505
+Content-Length: 16638
 
 {
   "value": [
@@ -157,6 +155,7 @@ Content-Length: 16505
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
       "searchBlockWebResults": true,
+      "findMyFiles": "enabled",
       "securityBlockAzureADJoinedDevicesAutoEncryption": true,
       "diagnosticsDataSubmissionMode": "none",
       "oneDriveDisableFileSync": true,
@@ -289,6 +288,7 @@ Content-Length: 16505
       "privacyBlockInputPersonalization": true,
       "privacyBlockPublishUserActivities": true,
       "privacyBlockActivityFeed": true,
+      "activateAppsWithVoice": "enabled",
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,
@@ -423,12 +423,12 @@ Content-Length: 16505
       "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
         "App Management Package Family Names To Launch After Log On value"
       ],
-      "uninstallBuiltInApps": true
+      "uninstallBuiltInApps": true,
+      "configureTimeZone": "Configure Time Zone value"
     }
   ]
 }
 ```
-
 
 
 

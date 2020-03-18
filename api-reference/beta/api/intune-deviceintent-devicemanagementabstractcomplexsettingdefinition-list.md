@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementAbstractComplexSettingDefinitions
 description: 列出 deviceManagementAbstractComplexSettingDefinition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efc1a9f06b951c5e5e70ab8ef10a89c80f38e2cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e72a616e76b1961a17aacacbf8439602f35910e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472994"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731549"
 ---
 # <a name="list-devicemanagementabstractcomplexsettingdefinitions"></a>列出 deviceManagementAbstractComplexSettingDefinitions
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1228
   ]
 }
 ```
-
 
 
 

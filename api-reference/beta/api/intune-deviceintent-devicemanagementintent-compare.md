@@ -1,20 +1,18 @@
 ---
 title: compare 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00f9dac88c6fa5d283857e188f0ce07367c184d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 997a8f6875d38a8d4c0ae0978b00ddab41b9d64c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471566"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729596"
 ---
 # <a name="compare-function"></a>compare 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 364
   ]
 }
 ```
-
 
 
 

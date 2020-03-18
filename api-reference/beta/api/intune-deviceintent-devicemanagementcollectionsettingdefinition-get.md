@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementCollectionSettingDefinition
 description: 读取 deviceManagementCollectionSettingDefinition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c01d0036915047b6659972373bf0e55c35869b1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a0af598c62286c244a80a1d74516f01134e1f9a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472476"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730688"
 ---
 # <a name="get-devicemanagementcollectionsettingdefinition"></a>获取 deviceManagementCollectionSettingDefinition
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -112,7 +110,6 @@ Content-Length: 1131
   }
 }
 ```
-
 
 
 

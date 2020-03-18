@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSScepCertificateProfiles
 description: 列出 macOSScepCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0de00f7d19dbea2e8aceee815ed007049edcdd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a02804a80ec9a0f02baa254c79c057fe154b900
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442227"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745028"
 ---
 # <a name="list-macosscepcertificateprofiles"></a>列出 macOSScepCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -135,7 +133,6 @@ Content-Length: 2407
   ]
 }
 ```
-
 
 
 

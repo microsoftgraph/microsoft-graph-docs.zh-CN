@@ -1,20 +1,18 @@
 ---
 title: 删除 macOSVpnConfiguration
 description: 删除 macOSVpnConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43cae5178ad4132dfb765e51d9a3e09adc7a43dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17720de216533df6f0610c2b900da0bf4a941b71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42744407"
 ---
 # <a name="delete-macosvpnconfiguration"></a>删除 macOSVpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

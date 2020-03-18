@@ -1,20 +1,18 @@
 ---
 title: 列出 windows81SCEPCertificateProfiles
 description: 列出 windows81SCEPCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80e6b504fec97c21f60950bcb701d5cd10705a68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c481e8fe834935136c0ff42d9d01062a49bdb3c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477082"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42736914"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>列出 windows81SCEPCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -136,7 +134,6 @@ Content-Length: 2473
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除 iosVpnConfiguration
 description: 删除 iosVpnConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68cc42eb6360cff7392f3a8aee1ed0b73b3e83ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bcbc0b2026072ea7a5d402a7cc704eadfc9d580
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442556"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42748497"
 ---
 # <a name="delete-iosvpnconfiguration"></a>删除 iosVpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

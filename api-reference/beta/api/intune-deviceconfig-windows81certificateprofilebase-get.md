@@ -1,20 +1,18 @@
 ---
 title: 获取 windows81CertificateProfileBase
 description: 读取 windows81CertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e9380514658e3c9ac510a2e8e8f84dc90d9f1c8c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 572d105423001d8c952eee330947c6e62c7bf902
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477551"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737777"
 ---
 # <a name="get-windows81certificateprofilebase"></a>获取 windows81CertificateProfileBase
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +127,6 @@ Content-Length: 1982
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 63f6f714235c644af2fd2bb32552fdc358ca1465
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: bc330896b68f404bb23855bc5726fad5a8473b7d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562631"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729176"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -132,6 +132,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
@@ -359,6 +360,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
@@ -619,6 +621,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",

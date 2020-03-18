@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsWifiConfiguration
 description: 删除 windowsWifiConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac13ac03566b5a9e731030f4d54142b439a2edc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15f64cb32e5eecdae274d4cc425288baaed666fa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473421"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732060"
 ---
 # <a name="delete-windowswificonfiguration"></a>删除 windowsWifiConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

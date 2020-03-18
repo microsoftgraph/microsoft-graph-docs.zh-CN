@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsPhone81VpnConfiguration
 description: 读取 windowsPhone81VpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 928e47824335f4d0fe0df2aa9aeea37e65543d64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee883137e3b2bfd84696ed7caf027d93c66f7aac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474212"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733026"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>获取 windowsPhone81VpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -138,7 +136,6 @@ Content-Length: 2329
   }
 }
 ```
-
 
 
 

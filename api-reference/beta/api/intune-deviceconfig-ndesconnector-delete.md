@@ -1,20 +1,18 @@
 ---
 title: 删除 ndesConnector
 description: 删除 ndesConnector。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d66066fdbcd25dfc96e9a6fe199f5ab845e2f0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89ae72e259e7e98c0b6e28ebc3977a936eb1d86b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448548"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742804"
 ---
 # <a name="delete-ndesconnector"></a>删除 ndesConnector
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesCon
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

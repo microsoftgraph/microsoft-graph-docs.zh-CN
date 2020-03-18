@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsPhone81VpnConfigurations
 description: 列出 windowsPhone81VpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0703db14f425f10a06fffc17b4ce90448d378464
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dfc9aa99f57ca6346d308ee41df99af2cce3ce04
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474205"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732984"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>列出 windowsPhone81VpnConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -136,7 +134,6 @@ Content-Length: 2465
   ]
 }
 ```
-
 
 
 

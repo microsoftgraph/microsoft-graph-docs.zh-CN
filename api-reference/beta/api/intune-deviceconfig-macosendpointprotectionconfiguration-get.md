@@ -1,20 +1,18 @@
 ---
 title: 获取 macOSEndpointProtectionConfiguration
 description: 读取 macOSEndpointProtectionConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dd1277d1ed7d1f4bbb4a4b4fa17c0b9878550d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc2efec4627acd350d27a2351ac8eb00b09cf8f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442353"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746757"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>获取 macOSEndpointProtectionConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -70,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2349
+Content-Length: 3117
 
 {
   "value": {
@@ -126,11 +124,27 @@ Content-Length: 2349
     "fileVaultAllowDeferralUntilSignOut": true,
     "fileVaultNumberOfTimesUserCanIgnore": 3,
     "fileVaultDisablePromptAtSignOut": true,
-    "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+    "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+    "fileVaultHidePersonalRecoveryKey": true,
+    "advancedThreatProtectionRealTime": "enabled",
+    "advancedThreatProtectionCloudDelivered": "enabled",
+    "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+    "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+    "advancedThreatProtectionExcludedFolders": [
+      "Advanced Threat Protection Excluded Folders value"
+    ],
+    "advancedThreatProtectionExcludedFiles": [
+      "Advanced Threat Protection Excluded Files value"
+    ],
+    "advancedThreatProtectionExcludedExtensions": [
+      "Advanced Threat Protection Excluded Extensions value"
+    ],
+    "advancedThreatProtectionExcludedProcesses": [
+      "Advanced Threat Protection Excluded Processes value"
+    ]
   }
 }
 ```
-
 
 
 

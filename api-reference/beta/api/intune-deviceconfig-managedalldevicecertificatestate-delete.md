@@ -1,20 +1,18 @@
 ---
 title: 删除 managedAllDeviceCertificateState
 description: 删除 managedAllDeviceCertificateState。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abc7effde9f978ac65e13f0a0f7f84494c55e415
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80dbb47ae7005ab40567fb83bd3d5e510889a830
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442136"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743637"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>删除 managedAllDeviceCertificateState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAll
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除 iosCustomConfiguration
 description: 删除 iosCustomConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0512e9b7e36a8d4e06d248480e8864004ba8f48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2930f5e8252fbdb96af85d598de97ebd8e75d72f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442892"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42752357"
 ---
 # <a name="delete-ioscustomconfiguration"></a>删除 iosCustomConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

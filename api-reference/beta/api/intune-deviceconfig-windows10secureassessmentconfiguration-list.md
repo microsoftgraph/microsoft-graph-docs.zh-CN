@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10SecureAssessmentConfigurations
 description: 列出 windows10SecureAssessmentConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d620f4d70ab7468cd053e5360e04ffb6f51463f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3338c80b0deb18509cf2123068b5c60f8b4275a8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477936"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738282"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>列出 windows10SecureAssessmentConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +113,6 @@ Content-Length: 1768
   ]
 }
 ```
-
 
 
 

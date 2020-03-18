@@ -1,20 +1,18 @@
 ---
 title: 列出 iosWiFiConfigurations
 description: 列出 iosWiFiConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 205908b5aee86f444ff7a6dd36f3eaed07ecc1d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1421e7273e76772f17e475e48cbf622e45156d94
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442507"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42748020"
 ---
 # <a name="list-ioswificonfigurations"></a>列出 iosWiFiConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -117,7 +115,6 @@ Content-Length: 1821
   ]
 }
 ```
-
 
 
 

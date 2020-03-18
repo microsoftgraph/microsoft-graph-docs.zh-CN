@@ -1,20 +1,18 @@
 ---
 title: 获取 iosDeviceFeaturesConfiguration
 description: 读取 iosDeviceFeaturesConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 716575fa1e5cc98ca2642e15cd8cd1912be93738
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb6f7ea17868dae3b063c9323670b07d81dff0fa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448982"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751851"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -281,7 +279,6 @@ Content-Length: 7315
   }
 }
 ```
-
 
 
 

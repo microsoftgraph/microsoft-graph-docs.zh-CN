@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10PFXImportCertificateProfiles
 description: 列出 windows10PFXImportCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d2954d593c8ec66e04f34488173914ef4b83fd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ada5f619fc1dec93bdf538a4d87795129b2d9cb8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478419"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738737"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>列出 windows10PFXImportCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -108,7 +106,6 @@ Content-Length: 1427
   ]
 }
 ```
-
 
 
 

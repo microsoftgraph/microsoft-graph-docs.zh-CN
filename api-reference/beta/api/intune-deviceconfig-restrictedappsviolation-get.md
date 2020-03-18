@@ -1,20 +1,18 @@
 ---
 title: 获取 restrictedAppsViolation
 description: 读取 restrictedAppsViolation 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05a4a5a098c992549c6840ce7dfff6174b4b7679
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f0f4b355909b9f8e7f56fd9c9acfe3038f6121b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742496"
 ---
 # <a name="get-restrictedappsviolation"></a>获取 restrictedAppsViolation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +89,6 @@ Content-Length: 664
   }
 }
 ```
-
 
 
 

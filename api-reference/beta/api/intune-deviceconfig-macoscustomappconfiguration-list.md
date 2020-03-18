@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSCustomAppConfigurations
 description: 列出 macOSCustomAppConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c44002e6a068477889c7f090bd6ad6eac20543
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a3c79e3c45b0357cf0ea314ca5c7a059e8c17c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42747537"
 ---
 # <a name="list-macoscustomappconfigurations"></a>列出 macOSCustomAppConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 1494
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsDeliveryOptimizationConfigurations
 description: 列出 windowsDeliveryOptimizationConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bbf72c115077bea5d6670021ef684663ea5be08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 104fc95bc643f021520b420a0a29f8eead7c4b5a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476179"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735635"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>列出 windowsDeliveryOptimizationConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -132,7 +130,6 @@ Content-Length: 2472
   ]
 }
 ```
-
 
 
 

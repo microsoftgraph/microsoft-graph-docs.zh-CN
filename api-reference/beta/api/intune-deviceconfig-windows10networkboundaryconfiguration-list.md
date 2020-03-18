@@ -1,16 +1,16 @@
 ---
 title: 列出 windows10NetworkBoundaryConfigurations
 description: 列出 windows10NetworkBoundaryConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d51529e636ba16ea7468a85b8522799ac066c7a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1c08106ae153b4d9dbc502a24d9f7acd3101979d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739038"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>列出 windows10NetworkBoundaryConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "39947321"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -136,7 +136,6 @@ Content-Length: 2474
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 managedAllDeviceCertificateStates
 description: 列出 managedAllDeviceCertificateState 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c90d7ce97c918736bd1e08fe107ffb1c25c53ab6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b13b63b41afa3f630acf1012be0089bcd21fe1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743490"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>列出 managedAllDeviceCertificateStates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 869
   ]
 }
 ```
-
 
 
 

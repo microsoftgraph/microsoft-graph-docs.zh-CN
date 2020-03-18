@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsPhone81CustomConfigurations
 description: 列出 windowsPhone81CustomConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12123fd55c9ed7aac69dbd5584ed2d70c43dd44e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4369c2b3bf9d86f6e3941d0ade701aa82baaca2d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475318"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42734398"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>列出 windowsPhone81CustomConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -117,7 +115,6 @@ Content-Length: 1674
   ]
 }
 ```
-
 
 
 

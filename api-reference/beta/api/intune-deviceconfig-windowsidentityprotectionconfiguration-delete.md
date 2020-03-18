@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsIdentityProtectionConfiguration
 description: 删除 windowsIdentityProtectionConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 276874ad8016b1cee6b47b16e6d37cdea16bd7c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70aff2a6d0727c4a112315e1b8821228defd8eae
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735224"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>删除 windowsIdentityProtectionConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

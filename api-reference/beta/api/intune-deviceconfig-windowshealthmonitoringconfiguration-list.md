@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsHealthMonitoringConfigurations
 description: 列出 windowsHealthMonitoringConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 792783d21d577c6cb678af43b28f2f9700f979e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8272154dae7b807c5f111097499e76bbb4117abf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476004"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735343"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>列出 windowsHealthMonitoringConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 1589
   ]
 }
 ```
-
 
 
 

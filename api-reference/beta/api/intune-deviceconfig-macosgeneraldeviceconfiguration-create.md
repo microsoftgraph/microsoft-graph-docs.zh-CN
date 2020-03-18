@@ -1,20 +1,18 @@
 ---
 title: 创建 macOSGeneralDeviceConfiguration
 description: 创建新的 macOSGeneralDeviceConfiguration 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 773e694fe3d4ce03fc599d9d7992aba1cdcda548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9364328db3b33ce436b53f0ce76062065a305420
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448772"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745882"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>创建 macOSGeneralDeviceConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,8 +54,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -76,42 +74,42 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|在屏幕超时之前需要不活动的分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|布尔|是否需要密码。|
-|keychainBlockCloudSync|布尔|指示是否阻止 iCloud 密钥链同步（macOS 10.12 及更高版本）。|
-|airPrintBlocked|布尔|指示是否阻止 AirPrint （macOS 10.12 及更高版本）。|
-|airPrintForceTrustedTLS|布尔|指示 TLS 打印通信是否需要受信任的证书（macOS 10.13 及更高版本）。|
-|airPrintBlockiBeaconDiscovery|布尔|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号（macOS 10.3 及更高版本）。|
-|safariBlockAutofill|布尔|指示在 Safari 中是否阻止用户使用自动填充。|
-|cameraBlocked|布尔|指示是否阻止用户访问设备的照相机。|
-|iTunesBlockMusicService|布尔|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
+|passwordRequired|布尔值|是否需要密码。|
+|keychainBlockCloudSync|布尔值|指示是否阻止 iCloud 密钥链同步（macOS 10.12 及更高版本）。|
+|airPrintBlocked|布尔值|指示是否阻止 AirPrint （macOS 10.12 及更高版本）。|
+|airPrintForceTrustedTLS|布尔值|指示 TLS 打印通信是否需要受信任的证书（macOS 10.13 及更高版本）。|
+|airPrintBlockiBeaconDiscovery|布尔值|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号（macOS 10.3 及更高版本）。|
+|safariBlockAutofill|布尔值|指示在 Safari 中是否阻止用户使用自动填充。|
+|cameraBlocked|布尔值|指示是否阻止用户访问设备的照相机。|
+|iTunesBlockMusicService|布尔值|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
 |spotlightBlockInternetResults|Boolean|指示是否阻止聚光灯从 Internet 搜索返回任何结果。|
-|keyboardBlockDictation|布尔|指示是否阻止用户使用听写输入。|
-|definitionLookupBlocked|布尔|指示是否阻止定义查找。|
-|appleWatchBlockAutoUnlock|布尔|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
-|iTunesBlockFileSharing|布尔|指示是否阻止使用 iTunes 传输文件。|
-|iCloudBlockDocumentSync|布尔|指示是否阻止 iCloud 文档同步。|
-|iCloudBlockMail|布尔|指示是否阻止 iCloud 同步邮件。|
-|iCloudBlockAddressBook|布尔|指示是否阻止 iCloud 同步联系人。|
-|iCloudBlockCalendar|布尔|指示是否阻止 iCloud 同步日历。|
-|iCloudBlockReminders|布尔|指示是否阻止 iCloud 同步提醒。|
-|iCloudBlockBookmarks|布尔|指示是否阻止 iCloud 同步书签。|
-|iCloudBlockNotes|布尔|指示是否阻止 iCloud 同步笔记。|
-|airDropBlocked|布尔|指示是否允许 AirDrop。|
-|passwordBlockModification|布尔|指示是否允许修改密码。|
-|passwordBlockFingerprintUnlock|布尔|指示是否阻止指纹解锁。|
-|passwordBlockAutoFill|布尔|指示是否阻止自动填充密码功能。|
-|passwordBlockProximityRequests|布尔|指示是否阻止来自附近设备的请求密码。|
-|passwordBlockAirDropSharing|布尔|指示是否阻止使用 AirDrop 密码功能的共享密码。|
+|keyboardBlockDictation|布尔值|指示是否阻止用户使用听写输入。|
+|definitionLookupBlocked|布尔值|指示是否阻止定义查找。|
+|appleWatchBlockAutoUnlock|布尔值|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
+|iTunesBlockFileSharing|布尔值|指示是否阻止使用 iTunes 传输文件。|
+|iCloudBlockDocumentSync|布尔值|指示是否阻止 iCloud 文档同步。|
+|iCloudBlockMail|布尔值|指示是否阻止 iCloud 同步邮件。|
+|iCloudBlockAddressBook|布尔值|指示是否阻止 iCloud 同步联系人。|
+|iCloudBlockCalendar|布尔值|指示是否阻止 iCloud 同步日历。|
+|iCloudBlockReminders|布尔值|指示是否阻止 iCloud 同步提醒。|
+|iCloudBlockBookmarks|布尔值|指示是否阻止 iCloud 同步书签。|
+|iCloudBlockNotes|布尔值|指示是否阻止 iCloud 同步笔记。|
+|airDropBlocked|布尔值|指示是否允许 AirDrop。|
+|passwordBlockModification|布尔值|指示是否允许修改密码。|
+|passwordBlockFingerprintUnlock|布尔值|指示是否阻止指纹解锁。|
+|passwordBlockAutoFill|布尔值|指示是否阻止自动填充密码功能。|
+|passwordBlockProximityRequests|布尔值|指示是否阻止来自附近设备的请求密码。|
+|passwordBlockAirDropSharing|布尔值|指示是否阻止使用 AirDrop 密码功能的共享密码。|
 |softwareUpdatesEnforcedDelayInDays|Int32|设置受监督的设备 delyed 软件更新的天数。 有效值为 0 至 90|
-|softwareUpdatesForceDelayed|布尔|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
-|contentCachingBlocked|布尔|指示是否允许内容缓存。|
-|iCloudBlockPhotoLibrary|布尔|指示是否阻止 iCloud 照片库。|
+|softwareUpdatesForceDelayed|布尔值|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
+|contentCachingBlocked|布尔值|指示是否允许内容缓存。|
+|iCloudBlockPhotoLibrary|布尔值|指示是否阻止 iCloud 照片库。|
 |screenCaptureBlocked|Boolean|指示是否阻止用户进行屏幕截图。|
-|classroomAppBlockRemoteScreenObservation|布尔|指示是否允许教室应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomAppForceUnpromptedScreenObservation|布尔|指示是否自动向教师授予对教室应用程序中的托管课程的权限，以便在不提示的情况下查看学生的屏幕。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceAutomaticallyJoinClasses|布尔|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceRequestPermissionToLeaveClasses|布尔|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceUnpromptedAppAndDeviceLock|布尔|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomAppBlockRemoteScreenObservation|布尔值|指示是否允许教室应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomAppForceUnpromptedScreenObservation|布尔值|指示是否自动向教师授予对教室应用程序中的托管课程的权限，以便在不提示的情况下查看学生的屏幕。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceAutomaticallyJoinClasses|布尔值|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceRequestPermissionToLeaveClasses|布尔值|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceUnpromptedAppAndDeviceLock|布尔值|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备（MacOS 10.15 或更高版本）上的 MacOS 设备上启动的工作。|
 
 
@@ -319,7 +317,6 @@ Content-Length: 3318
   "iCloudBlockActivityContinuation": true
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementIntegerSettingInstance
 description: 读取 deviceManagementIntegerSettingInstance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35fb3943930086ff48204402bb629a14a031b967
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cf5244647b6da9c03cd94445bc69c1c8edb2ef6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729687"
 ---
 # <a name="get-devicemanagementintegersettinginstance"></a>获取 deviceManagementIntegerSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 251
   }
 }
 ```
-
 
 
 

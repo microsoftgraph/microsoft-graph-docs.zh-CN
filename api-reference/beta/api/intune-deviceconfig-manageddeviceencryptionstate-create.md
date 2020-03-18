@@ -1,20 +1,18 @@
 ---
 title: 创建 managedDeviceEncryptionState
 description: 创建新的 managedDeviceEncryptionState 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff5908b41972dfb0d68f4b1e3eb1da68b2b82361
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72fb8170032070934a03ffc9db5fbc35da49603e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448604"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743168"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>创建 managedDeviceEncryptionState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -131,7 +129,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

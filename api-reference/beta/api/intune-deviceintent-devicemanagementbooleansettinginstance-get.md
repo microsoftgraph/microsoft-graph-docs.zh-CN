@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementBooleanSettingInstance
 description: 读取 deviceManagementBooleanSettingInstance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35a7126a8c50163e1b7bde70a236316c3365f94f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c1766b08bf652fc0294cddd4789bcf19bc61ceb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472672"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731073"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>获取 deviceManagementBooleanSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 254
   }
 }
 ```
-
 
 
 

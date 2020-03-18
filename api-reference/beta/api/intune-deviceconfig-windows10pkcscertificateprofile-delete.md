@@ -1,20 +1,18 @@
 ---
 title: 删除 windows10PkcsCertificateProfile
 description: 删除 windows10PkcsCertificateProfile。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5895e3b6f4fc957374290998011be7c12aa7e750
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f81d3d2f952280689666737bb9be83e9907490e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478258"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738639"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>删除 windows10PkcsCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

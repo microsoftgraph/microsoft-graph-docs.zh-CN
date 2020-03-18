@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsIdentityProtectionConfigurations
 description: 列出 windowsIdentityProtectionConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ddedbbc89ab10d4b01baa08b6ed6afe2ea05ced5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d16f05e0041c0525e84f5b735fc823a9047ff73d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475822"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735210"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>列出 windowsIdentityProtectionConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +119,6 @@ Content-Length: 1972
   ]
 }
 ```
-
 
 
 

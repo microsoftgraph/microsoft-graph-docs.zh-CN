@@ -1,20 +1,18 @@
 ---
 title: 列出 windows81CertificateProfileBases
 description: 列出 windows81CertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f5c3c180f1308b44f44121eeaf081be1ea58aaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab2771e82e3db49c91735310ffd0df3276f7664e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477544"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737763"
 ---
 # <a name="list-windows81certificateprofilebases"></a>列出 windows81CertificateProfileBases
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -127,7 +125,6 @@ Content-Length: 2100
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 softwareUpdateStatusSummary
 description: 更新 softwareUpdateStatusSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f85046f33067b8fb6d572f46d7d805d8f33368d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83ca1ad68913ecfe04824c16fb61701a353f0fca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482830"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741768"
 ---
 # <a name="update-softwareupdatestatussummary"></a>更新 softwareUpdateStatusSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -131,7 +129,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
 
 
 

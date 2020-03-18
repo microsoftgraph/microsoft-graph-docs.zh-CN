@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementComplexSettingInstance
 description: 创建新的 deviceManagementComplexSettingInstance 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c41d30d5f7146cb82402d21e3f5938b554329a4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be2c0cbcbdabf13a55645754875ff5c72278cecd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472021"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730100"
 ---
 # <a name="create-devicemanagementcomplexsettinginstance"></a>创建 deviceManagementComplexSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

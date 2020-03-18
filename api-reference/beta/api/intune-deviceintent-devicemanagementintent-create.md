@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceManagementIntent
 description: 创建新的 deviceManagementIntent 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea9dd1754d3482d8fc0eedcba49d5674e5f73ea5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 937fe05d91c59e6162bc1140d9a664fdc40f4f25
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471559"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729575"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +57,7 @@ POST /deviceManagement/intents
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|创建此目的的模板的 ID （如果有）|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -107,7 +105,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 
