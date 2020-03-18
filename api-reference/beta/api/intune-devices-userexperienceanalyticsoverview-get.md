@@ -1,20 +1,18 @@
 ---
 title: 获取 userExperienceAnalyticsOverview
 description: 读取 userExperienceAnalyticsOverview 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cdde999c6037f4d44f0203aeb4d3198224ea731f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06c2d583e211cd0e325b877eaf80f6cb30c8f32e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468178"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813808"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>获取 userExperienceAnalyticsOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +95,6 @@ Content-Length: 872
   }
 }
 ```
-
 
 
 

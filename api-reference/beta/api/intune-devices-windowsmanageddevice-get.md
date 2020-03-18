@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsManagedDevice
 description: 读取 windowsManagedDevice 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc4a218ca167896dc72c59b03dde00a9d272c708
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a814fca447605ec4fae4853559790159436f9d20
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813654"
 ---
 # <a name="get-windowsmanageddevice"></a>获取 windowsManagedDevice
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -72,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8057
+Content-Length: 8083
 
 {
   "value": {
@@ -245,7 +243,8 @@ Content-Length: 8057
     },
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-      "clientIdentifier": "Client Identifier value"
+      "clientIdentifier": "Client Identifier value",
+      "isBlocked": true
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
@@ -253,7 +252,6 @@ Content-Length: 8057
   }
 }
 ```
-
 
 
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762890"
+ms.locfileid: "42814363"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>获取 deviceManagementScriptUserState
 

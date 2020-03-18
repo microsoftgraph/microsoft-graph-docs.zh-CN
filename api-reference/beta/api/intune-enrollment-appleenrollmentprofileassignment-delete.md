@@ -1,20 +1,18 @@
 ---
 title: 删除 appleEnrollmentProfileAssignment
 description: 删除 appleEnrollmentProfileAssignment。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bee66d0262c6674d1d6e2b6b8673648721cee0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3bca0987d8b68b8bbb275dcdc1afb2385aa5c5a2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467478"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813521"
 ---
 # <a name="delete-appleenrollmentprofileassignment"></a>删除 appleEnrollmentProfileAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

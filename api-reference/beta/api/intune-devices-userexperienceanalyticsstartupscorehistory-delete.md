@@ -1,20 +1,18 @@
 ---
 title: 删除 userExperienceAnalyticsStartupScoreHistory
 description: 删除 userExperienceAnalyticsStartupScoreHistory。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b5e381d1be307229a0dca30175160aa2e79d54d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6dec0754789caa0dc767b79cff83af3c5b4e2f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468017"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813766"
 ---
 # <a name="delete-userexperienceanalyticsstartupscorehistory"></a>删除 userExperienceAnalyticsStartupScoreHistory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

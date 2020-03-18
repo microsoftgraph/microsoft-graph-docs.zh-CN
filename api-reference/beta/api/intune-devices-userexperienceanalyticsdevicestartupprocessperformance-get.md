@@ -1,20 +1,18 @@
 ---
 title: 获取 userExperienceAnalyticsDeviceStartupProcessPerformance
 description: 读取 userExperienceAnalyticsDeviceStartupProcessPerformance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c865b4326e65f63947a2cf5f2302abffe161178
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06c9bb315d5a79eb2bc8b8836ec4ae403f08fc3f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468227"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813864"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocessperformance"></a>获取 userExperienceAnalyticsDeviceStartupProcessPerformance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 369
   }
 }
 ```
-
 
 
 

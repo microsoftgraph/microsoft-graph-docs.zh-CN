@@ -1,20 +1,18 @@
 ---
 title: 创建 userExperienceAnalyticsDeviceStartupProcess
 description: 创建新的 userExperienceAnalyticsDeviceStartupProcess 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7df6088f0d8af5bdb1dbdbe4303cd7a634b7522b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e81e4066e280070e3b520ef08bd7728dcca020bd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468332"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813914"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>创建 userExperienceAnalyticsDeviceStartupProcess
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

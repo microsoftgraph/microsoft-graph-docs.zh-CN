@@ -1,20 +1,18 @@
 ---
 title: 更新 userExperienceAnalyticsMetric
 description: 更新 userExperienceAnalyticsMetric 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a52039aa25a681d07d0f6c13594e90e96896eec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 194cf15baf27033803eba0d4c32b2633d3954f36
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468171"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813815"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>更新 userExperienceAnalyticsMetric
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
-
 
 
 

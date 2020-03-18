@@ -1,20 +1,18 @@
 ---
 title: 获取 userExperienceAnalyticsCategory
 description: 读取 userExperienceAnalyticsCategory 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e12324cfeb773b11d31a1886baf833b0be35392c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ba275a616262aec18244377ee2e99a7df8ea5bc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42814005"
 ---
 # <a name="get-userexperienceanalyticscategory"></a>获取 userExperienceAnalyticsCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 676
   }
 }
 ```
-
 
 
 

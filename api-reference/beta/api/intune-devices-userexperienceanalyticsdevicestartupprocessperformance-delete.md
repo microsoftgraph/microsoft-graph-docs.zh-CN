@@ -1,20 +1,18 @@
 ---
 title: 删除 userExperienceAnalyticsDeviceStartupProcessPerformance
 description: 删除 userExperienceAnalyticsDeviceStartupProcessPerformance。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f671e741f63a20575c3f7c189494507ca1e83305
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a63e581a2e4780fd49d24918bc228e02d88b6c04
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813871"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartupprocessperformance"></a>删除 userExperienceAnalyticsDeviceStartupProcessPerformance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 userExperienceAnalyticsMetrics
 description: 列出 userExperienceAnalyticsMetric 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ec8bdea580c3c2cae731f28bb23fa1d417f3b75
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3aaa73fc9f7045c47f43c8efeda8ef92c884f909
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468216"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813822"
 ---
 # <a name="list-userexperienceanalyticsmetrics"></a>列出 userExperienceAnalyticsMetrics
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 245
   ]
 }
 ```
-
 
 
 

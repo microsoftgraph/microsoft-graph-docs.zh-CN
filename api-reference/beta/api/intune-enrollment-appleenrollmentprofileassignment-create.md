@@ -1,20 +1,18 @@
 ---
 title: 创建 appleEnrollmentProfileAssignment
 description: 创建新的 appleEnrollmentProfileAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cfce847bb36930b452d09bc4bf191d012c34ca23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7d28b49371f3616dd115d46756f1393425f4e96d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467513"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813528"
 ---
 # <a name="create-appleenrollmentprofileassignment"></a>创建 appleEnrollmentProfileAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

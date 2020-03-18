@@ -1,20 +1,18 @@
 ---
 title: 创建 userExperienceAnalyticsStartupScoreHistory
 description: 创建新的 userExperienceAnalyticsStartupScoreHistory 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd2dfad7eecfd373c6fa92c8b1023200b08a61d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83f83c797e7a2a1bf5852453572f1e94b84d6d93
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468045"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813773"
 ---
 # <a name="create-userexperienceanalyticsstartupscorehistory"></a>创建 userExperienceAnalyticsStartupScoreHistory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -58,6 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 |startupScore|Int32|用户体验分析设备启动分数。|
 |coreBootScore|Int32|用户体验分析设备核心启动分数。|
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。|
+|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。|
 
 
 
@@ -71,14 +70,15 @@ POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory
 Content-type: application/json
-Content-length: 216
+Content-length: 250
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
 
@@ -87,7 +87,7 @@ Content-length: 216
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 299
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
@@ -95,10 +95,10 @@ Content-Length: 265
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
-
 
 
 

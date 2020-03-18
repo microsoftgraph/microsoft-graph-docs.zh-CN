@@ -1,20 +1,18 @@
 ---
 title: 列出 userExperienceAnalyticsStartupScoreHistories
 description: 列出 userExperienceAnalyticsStartupScoreHistory 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80e1941edcd99d7c35f7d0a47c7a292f42f51a10
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7bba0d9f0c76ef2d4876fa6aa99d5916427f998d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467968"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813752"
 ---
 # <a name="list-userexperienceanalyticsstartupscorehistories"></a>列出 userExperienceAnalyticsStartupScoreHistories
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSta
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 322
+Content-Length: 360
 
 {
   "value": [
@@ -75,12 +73,12 @@ Content-Length: 322
       "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
       "startupScore": 12,
       "coreBootScore": 13,
-      "coreSigninScore": 15
+      "coreSigninScore": 15,
+      "recommendedSoftwareScore": 8
     }
   ]
 }
 ```
-
 
 
 
