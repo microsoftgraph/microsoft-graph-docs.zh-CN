@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763065"
+ms.locfileid: "42814559"
 ---
 # <a name="list-devicehealthscriptassignments"></a><span data-ttu-id="d8e6b-103">列出 deviceHealthScriptAssignments</span><span class="sxs-lookup"><span data-stu-id="d8e6b-103">List deviceHealthScriptAssignments</span></span>
 

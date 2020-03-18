@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763541"
+ms.locfileid: "42814657"
 ---
 # <a name="areglobalscriptsavailable-function"></a><span data-ttu-id="0060f-103">areGlobalScriptsAvailable 函数</span><span class="sxs-lookup"><span data-stu-id="0060f-103">areGlobalScriptsAvailable function</span></span>
 

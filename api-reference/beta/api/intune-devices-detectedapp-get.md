@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769617"
+ms.locfileid: "42814678"
 ---
 # <a name="get-detectedapp"></a><span data-ttu-id="cceca-103">获取 detectedApp</span><span class="sxs-lookup"><span data-stu-id="cceca-103">Get detectedApp</span></span>
 

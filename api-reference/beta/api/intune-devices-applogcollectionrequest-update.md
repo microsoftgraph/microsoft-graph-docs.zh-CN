@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763975"
+ms.locfileid: "42814741"
 ---
 # <a name="update-applogcollectionrequest"></a><span data-ttu-id="e16d6-103">更新 appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="e16d6-103">Update appLogCollectionRequest</span></span>
 

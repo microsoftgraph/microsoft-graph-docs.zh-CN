@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770898"
+ms.locfileid: "42814923"
 ---
 # <a name="delete-securitybaselinecategorystatesummary"></a><span data-ttu-id="28fe4-103">删除 securityBaselineCategoryStateSummary</span><span class="sxs-lookup"><span data-stu-id="28fe4-103">Delete securityBaselineCategoryStateSummary</span></span>
 

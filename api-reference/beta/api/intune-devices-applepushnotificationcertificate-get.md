@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770212"
+ms.locfileid: "42814790"
 ---
 # <a name="get-applepushnotificationcertificate"></a><span data-ttu-id="cf4c3-103">获取 applePushNotificationCertificate</span><span class="sxs-lookup"><span data-stu-id="cf4c3-103">Get applePushNotificationCertificate</span></span>
 

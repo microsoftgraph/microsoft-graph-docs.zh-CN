@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771283"
+ms.locfileid: "42815028"
 ---
 # <a name="list-devicemanagementstringsettinginstances"></a><span data-ttu-id="3d6f4-103">列出 deviceManagementStringSettingInstances</span><span class="sxs-lookup"><span data-stu-id="3d6f4-103">List deviceManagementStringSettingInstances</span></span>
 

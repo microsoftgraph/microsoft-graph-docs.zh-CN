@@ -1,37 +1,35 @@
 ---
 title: 更新 deviceManagementIntentUserState
 description: 更新 deviceManagementIntentUserState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c2feea4b634e3088fd980256d755c5c0a3da753
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6be0a985884131889465e18e2e3f0c80d0c53980
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470782"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815154"
 ---
-# <a name="update-devicemanagementintentuserstate"></a><span data-ttu-id="09b54-103">更新 deviceManagementIntentUserState</span><span class="sxs-lookup"><span data-stu-id="09b54-103">Update deviceManagementIntentUserState</span></span>
+# <a name="update-devicemanagementintentuserstate"></a><span data-ttu-id="ab122-103">更新 deviceManagementIntentUserState</span><span class="sxs-lookup"><span data-stu-id="ab122-103">Update deviceManagementIntentUserState</span></span>
 
-<span data-ttu-id="09b54-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="09b54-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="ab122-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ab122-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="09b54-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="09b54-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ab122-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ab122-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="09b54-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="09b54-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="ab122-106">更新[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ab122-106">Update the properties of a [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
 
-<span data-ttu-id="09b54-107">更新[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="09b54-107">Update the properties of a [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ab122-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="ab122-107">Prerequisites</span></span>
+<span data-ttu-id="ab122-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ab122-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="09b54-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="09b54-108">Prerequisites</span></span>
-<span data-ttu-id="09b54-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="09b54-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="09b54-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="09b54-111">Permission type</span></span>|<span data-ttu-id="09b54-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="09b54-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ab122-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ab122-110">Permission type</span></span>|<span data-ttu-id="ab122-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ab122-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="09b54-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="09b54-113">Delegated (work or school account)</span></span>|<span data-ttu-id="09b54-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09b54-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="09b54-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="09b54-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="09b54-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="09b54-116">Not supported.</span></span>|
-|<span data-ttu-id="09b54-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="09b54-117">Application</span></span>|<span data-ttu-id="09b54-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09b54-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ab122-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ab122-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ab122-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab122-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ab122-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ab122-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ab122-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ab122-115">Not supported.</span></span>|
+|<span data-ttu-id="ab122-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ab122-116">Application</span></span>|<span data-ttu-id="ab122-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab122-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="09b54-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="09b54-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab122-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ab122-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +38,35 @@ ms.locfileid: "42470782"
 PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceManagementIntentUserStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="09b54-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="09b54-120">Request headers</span></span>
-|<span data-ttu-id="09b54-121">标头</span><span class="sxs-lookup"><span data-stu-id="09b54-121">Header</span></span>|<span data-ttu-id="09b54-122">值</span><span class="sxs-lookup"><span data-stu-id="09b54-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ab122-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ab122-119">Request headers</span></span>
+|<span data-ttu-id="ab122-120">标头</span><span class="sxs-lookup"><span data-stu-id="ab122-120">Header</span></span>|<span data-ttu-id="ab122-121">值</span><span class="sxs-lookup"><span data-stu-id="ab122-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="09b54-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="09b54-123">Authorization</span></span>|<span data-ttu-id="09b54-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="09b54-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="09b54-125">接受</span><span class="sxs-lookup"><span data-stu-id="09b54-125">Accept</span></span>|<span data-ttu-id="09b54-126">application/json</span><span class="sxs-lookup"><span data-stu-id="09b54-126">application/json</span></span>|
+|<span data-ttu-id="ab122-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab122-122">Authorization</span></span>|<span data-ttu-id="ab122-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ab122-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ab122-124">接受</span><span class="sxs-lookup"><span data-stu-id="ab122-124">Accept</span></span>|<span data-ttu-id="ab122-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ab122-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="09b54-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="09b54-127">Request body</span></span>
-<span data-ttu-id="09b54-128">在请求正文中，提供[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="09b54-128">In the request body, supply a JSON representation for the [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab122-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ab122-126">Request body</span></span>
+<span data-ttu-id="ab122-127">在请求正文中，提供[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ab122-127">In the request body, supply a JSON representation for the [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
 
-<span data-ttu-id="09b54-129">下表显示创建[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="09b54-129">The following table shows the properties that are required when you create the [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md).</span></span>
+<span data-ttu-id="ab122-128">下表显示创建[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ab122-128">The following table shows the properties that are required when you create the [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md).</span></span>
 
-|<span data-ttu-id="09b54-130">属性</span><span class="sxs-lookup"><span data-stu-id="09b54-130">Property</span></span>|<span data-ttu-id="09b54-131">类型</span><span class="sxs-lookup"><span data-stu-id="09b54-131">Type</span></span>|<span data-ttu-id="09b54-132">说明</span><span class="sxs-lookup"><span data-stu-id="09b54-132">Description</span></span>|
+|<span data-ttu-id="ab122-129">属性</span><span class="sxs-lookup"><span data-stu-id="ab122-129">Property</span></span>|<span data-ttu-id="ab122-130">类型</span><span class="sxs-lookup"><span data-stu-id="ab122-130">Type</span></span>|<span data-ttu-id="ab122-131">说明</span><span class="sxs-lookup"><span data-stu-id="ab122-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="09b54-133">id</span><span class="sxs-lookup"><span data-stu-id="09b54-133">id</span></span>|<span data-ttu-id="09b54-134">String</span><span class="sxs-lookup"><span data-stu-id="09b54-134">String</span></span>|<span data-ttu-id="09b54-135">ID</span><span class="sxs-lookup"><span data-stu-id="09b54-135">The ID</span></span>|
-|<span data-ttu-id="09b54-136">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="09b54-136">userPrincipalName</span></span>|<span data-ttu-id="09b54-137">String</span><span class="sxs-lookup"><span data-stu-id="09b54-137">String</span></span>|<span data-ttu-id="09b54-138">在设备上报告的用户主体名称</span><span class="sxs-lookup"><span data-stu-id="09b54-138">The user principal name that is being reported on a device</span></span>|
-|<span data-ttu-id="09b54-139">userName</span><span class="sxs-lookup"><span data-stu-id="09b54-139">userName</span></span>|<span data-ttu-id="09b54-140">String</span><span class="sxs-lookup"><span data-stu-id="09b54-140">String</span></span>|<span data-ttu-id="09b54-141">在设备上报告的用户名</span><span class="sxs-lookup"><span data-stu-id="09b54-141">The user name that is being reported on a device</span></span>|
-|<span data-ttu-id="09b54-142">deviceCount</span><span class="sxs-lookup"><span data-stu-id="09b54-142">deviceCount</span></span>|<span data-ttu-id="09b54-143">Int32</span><span class="sxs-lookup"><span data-stu-id="09b54-143">Int32</span></span>|<span data-ttu-id="09b54-144">属于某个意图的用户的设备计数</span><span class="sxs-lookup"><span data-stu-id="09b54-144">Count of Devices that belongs to a user for an intent</span></span>|
-|<span data-ttu-id="09b54-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="09b54-145">lastReportedDateTime</span></span>|<span data-ttu-id="09b54-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="09b54-146">DateTimeOffset</span></span>|<span data-ttu-id="09b54-147">意向报表的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="09b54-147">Last modified date time of an intent report</span></span>|
-|<span data-ttu-id="09b54-148">state</span><span class="sxs-lookup"><span data-stu-id="09b54-148">state</span></span>|[<span data-ttu-id="09b54-149">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="09b54-149">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="09b54-150">意图的用户状态。</span><span class="sxs-lookup"><span data-stu-id="09b54-150">User state for an intent.</span></span> <span data-ttu-id="09b54-151">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="09b54-151">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="ab122-132">id</span><span class="sxs-lookup"><span data-stu-id="ab122-132">id</span></span>|<span data-ttu-id="ab122-133">String</span><span class="sxs-lookup"><span data-stu-id="ab122-133">String</span></span>|<span data-ttu-id="ab122-134">ID</span><span class="sxs-lookup"><span data-stu-id="ab122-134">The ID</span></span>|
+|<span data-ttu-id="ab122-135">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="ab122-135">userPrincipalName</span></span>|<span data-ttu-id="ab122-136">String</span><span class="sxs-lookup"><span data-stu-id="ab122-136">String</span></span>|<span data-ttu-id="ab122-137">在设备上报告的用户主体名称</span><span class="sxs-lookup"><span data-stu-id="ab122-137">The user principal name that is being reported on a device</span></span>|
+|<span data-ttu-id="ab122-138">userName</span><span class="sxs-lookup"><span data-stu-id="ab122-138">userName</span></span>|<span data-ttu-id="ab122-139">String</span><span class="sxs-lookup"><span data-stu-id="ab122-139">String</span></span>|<span data-ttu-id="ab122-140">在设备上报告的用户名</span><span class="sxs-lookup"><span data-stu-id="ab122-140">The user name that is being reported on a device</span></span>|
+|<span data-ttu-id="ab122-141">deviceCount</span><span class="sxs-lookup"><span data-stu-id="ab122-141">deviceCount</span></span>|<span data-ttu-id="ab122-142">Int32</span><span class="sxs-lookup"><span data-stu-id="ab122-142">Int32</span></span>|<span data-ttu-id="ab122-143">属于某个意图的用户的设备计数</span><span class="sxs-lookup"><span data-stu-id="ab122-143">Count of Devices that belongs to a user for an intent</span></span>|
+|<span data-ttu-id="ab122-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="ab122-144">lastReportedDateTime</span></span>|<span data-ttu-id="ab122-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ab122-145">DateTimeOffset</span></span>|<span data-ttu-id="ab122-146">意向报表的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="ab122-146">Last modified date time of an intent report</span></span>|
+|<span data-ttu-id="ab122-147">state</span><span class="sxs-lookup"><span data-stu-id="ab122-147">state</span></span>|[<span data-ttu-id="ab122-148">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="ab122-148">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="ab122-149">意图的用户状态。</span><span class="sxs-lookup"><span data-stu-id="ab122-149">User state for an intent.</span></span> <span data-ttu-id="ab122-150">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="ab122-150">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="09b54-152">响应</span><span class="sxs-lookup"><span data-stu-id="09b54-152">Response</span></span>
-<span data-ttu-id="09b54-153">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="09b54-153">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ab122-151">响应</span><span class="sxs-lookup"><span data-stu-id="ab122-151">Response</span></span>
+<span data-ttu-id="ab122-152">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ab122-152">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09b54-154">示例</span><span class="sxs-lookup"><span data-stu-id="09b54-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ab122-153">示例</span><span class="sxs-lookup"><span data-stu-id="ab122-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="09b54-155">请求</span><span class="sxs-lookup"><span data-stu-id="09b54-155">Request</span></span>
-<span data-ttu-id="09b54-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="09b54-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ab122-154">请求</span><span class="sxs-lookup"><span data-stu-id="ab122-154">Request</span></span>
+<span data-ttu-id="ab122-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ab122-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceManagementIntentUserStateId}
 Content-type: application/json
@@ -84,8 +82,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="09b54-157">响应</span><span class="sxs-lookup"><span data-stu-id="09b54-157">Response</span></span>
-<span data-ttu-id="09b54-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="09b54-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ab122-156">响应</span><span class="sxs-lookup"><span data-stu-id="ab122-156">Response</span></span>
+<span data-ttu-id="ab122-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ab122-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,7 +99,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

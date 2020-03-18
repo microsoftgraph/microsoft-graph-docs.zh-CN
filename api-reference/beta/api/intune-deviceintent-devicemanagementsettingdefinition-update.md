@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771486"
+ms.locfileid: "42815070"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a><span data-ttu-id="95e27-103">更新 deviceManagementSettingDefinition</span><span class="sxs-lookup"><span data-stu-id="95e27-103">Update deviceManagementSettingDefinition</span></span>
 

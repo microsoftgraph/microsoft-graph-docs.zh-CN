@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764192"
+ms.locfileid: "42814797"
 ---
 # <a name="generateapplepushnotificationcertificatesigningrequest-action"></a><span data-ttu-id="9354a-103">generateApplePushNotificationCertificateSigningRequest 操作</span><span class="sxs-lookup"><span data-stu-id="9354a-103">generateApplePushNotificationCertificateSigningRequest action</span></span>
 

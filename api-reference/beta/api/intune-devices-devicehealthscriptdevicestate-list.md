@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762981"
+ms.locfileid: "42814524"
 ---
 # <a name="list-devicehealthscriptdevicestates"></a><span data-ttu-id="9903b-103">列出 deviceHealthScriptDeviceStates</span><span class="sxs-lookup"><span data-stu-id="9903b-103">List deviceHealthScriptDeviceStates</span></span>
 

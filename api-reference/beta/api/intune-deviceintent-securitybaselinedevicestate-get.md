@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770758"
+ms.locfileid: "42814881"
 ---
 # <a name="get-securitybaselinedevicestate"></a><span data-ttu-id="47b06-103">获取 securityBaselineDeviceState</span><span class="sxs-lookup"><span data-stu-id="47b06-103">Get securityBaselineDeviceState</span></span>
 

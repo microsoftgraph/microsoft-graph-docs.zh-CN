@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771724"
+ms.locfileid: "42815105"
 ---
 # <a name="update-devicemanagementsettingcategory"></a><span data-ttu-id="2c04f-103">更新 deviceManagementSettingCategory</span><span class="sxs-lookup"><span data-stu-id="2c04f-103">Update deviceManagementSettingCategory</span></span>
 

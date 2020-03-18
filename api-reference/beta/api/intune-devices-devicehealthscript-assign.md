@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769610"
+ms.locfileid: "42814650"
 ---
 # <a name="assign-action"></a><span data-ttu-id="478ee-103">分配操作</span><span class="sxs-lookup"><span data-stu-id="478ee-103">assign action</span></span>
 

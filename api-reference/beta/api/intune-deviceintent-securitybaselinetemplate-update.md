@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764199"
+ms.locfileid: "42814811"
 ---
 # <a name="update-securitybaselinetemplate"></a><span data-ttu-id="a62fa-103">更新 securityBaselineTemplate</span><span class="sxs-lookup"><span data-stu-id="a62fa-103">Update securityBaselineTemplate</span></span>
 

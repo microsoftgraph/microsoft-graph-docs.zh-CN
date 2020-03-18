@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769190"
+ms.locfileid: "42814594"
 ---
 # <a name="update-devicehealthscript"></a><span data-ttu-id="ebc14-103">更新 deviceHealthScript</span><span class="sxs-lookup"><span data-stu-id="ebc14-103">Update deviceHealthScript</span></span>
 

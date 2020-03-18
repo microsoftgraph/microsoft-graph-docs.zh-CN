@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764353"
+ms.locfileid: "42814860"
 ---
 # <a name="get-securitybaselinestatesummary"></a><span data-ttu-id="c7673-103">获取 securityBaselineStateSummary</span><span class="sxs-lookup"><span data-stu-id="c7673-103">Get securityBaselineStateSummary</span></span>
 

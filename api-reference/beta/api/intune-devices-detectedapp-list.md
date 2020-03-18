@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763555"
+ms.locfileid: "42814671"
 ---
 # <a name="list-detectedapps"></a><span data-ttu-id="c66e9-103">列出 detectedApps</span><span class="sxs-lookup"><span data-stu-id="c66e9-103">List detectedApps</span></span>
 

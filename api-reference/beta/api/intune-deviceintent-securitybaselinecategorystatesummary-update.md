@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764654"
+ms.locfileid: "42814902"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a><span data-ttu-id="ac622-103">更新 securityBaselineCategoryStateSummary</span><span class="sxs-lookup"><span data-stu-id="ac622-103">Update securityBaselineCategoryStateSummary</span></span>
 

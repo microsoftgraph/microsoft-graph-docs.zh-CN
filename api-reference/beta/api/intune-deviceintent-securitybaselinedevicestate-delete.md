@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764570"
+ms.locfileid: "42814888"
 ---
 # <a name="delete-securitybaselinedevicestate"></a><span data-ttu-id="b76b4-103">删除 securityBaselineDeviceState</span><span class="sxs-lookup"><span data-stu-id="b76b4-103">Delete securityBaselineDeviceState</span></span>
 

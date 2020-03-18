@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764269"
+ms.locfileid: "42814839"
 ---
 # <a name="create-securitybaselinetemplate"></a><span data-ttu-id="e828d-103">创建 securityBaselineTemplate</span><span class="sxs-lookup"><span data-stu-id="e828d-103">Create securityBaselineTemplate</span></span>
 

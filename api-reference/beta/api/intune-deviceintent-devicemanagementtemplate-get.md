@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771129"
+ms.locfileid: "42814979"
 ---
 # <a name="get-devicemanagementtemplate"></a><span data-ttu-id="333d5-103">获取 deviceManagementTemplate</span><span class="sxs-lookup"><span data-stu-id="333d5-103">Get deviceManagementTemplate</span></span>
 

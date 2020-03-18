@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770835"
+ms.locfileid: "42814909"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a><span data-ttu-id="a6d80-103">列出 securityBaselineCategoryStateSummaries</span><span class="sxs-lookup"><span data-stu-id="a6d80-103">List securityBaselineCategoryStateSummaries</span></span>
 

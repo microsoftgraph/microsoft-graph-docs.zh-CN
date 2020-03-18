@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771136"
+ms.locfileid: "42815000"
 ---
 # <a name="createinstance-action"></a><span data-ttu-id="08885-103">createInstance 操作</span><span class="sxs-lookup"><span data-stu-id="08885-103">createInstance action</span></span>
 

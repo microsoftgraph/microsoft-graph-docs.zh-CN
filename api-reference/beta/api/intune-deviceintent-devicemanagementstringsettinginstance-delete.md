@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771304"
+ms.locfileid: "42815042"
 ---
 # <a name="delete-devicemanagementstringsettinginstance"></a><span data-ttu-id="55e35-103">删除 deviceManagementStringSettingInstance</span><span class="sxs-lookup"><span data-stu-id="55e35-103">Delete deviceManagementStringSettingInstance</span></span>
 

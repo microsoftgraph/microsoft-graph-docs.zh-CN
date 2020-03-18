@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763534"
+ms.locfileid: "42814643"
 ---
 # <a name="create-devicehealthscript"></a><span data-ttu-id="018f9-103">创建 deviceHealthScript</span><span class="sxs-lookup"><span data-stu-id="018f9-103">Create deviceHealthScript</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771164"
+ms.locfileid: "42815014"
 ---
 # <a name="compare-function"></a><span data-ttu-id="3a828-103">compare 函数</span><span class="sxs-lookup"><span data-stu-id="3a828-103">compare function</span></span>
 

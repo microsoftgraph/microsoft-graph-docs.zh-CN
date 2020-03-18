@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769953"
+ms.locfileid: "42814734"
 ---
 # <a name="consenttodatasharing-action"></a><span data-ttu-id="cd602-103">consentToDataSharing 操作</span><span class="sxs-lookup"><span data-stu-id="cd602-103">consentToDataSharing action</span></span>
 
