@@ -1,20 +1,18 @@
 ---
 title: deviceManagementDerivedCredentialIssuer 枚举类型
 description: 派生的凭据颁发者支持的值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ca735199fa281c1c901a2201187f6410bec7609
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e52a43e0df85acfe6c63f10c7459033553a32e8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527577"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774202"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>deviceManagementDerivedCredentialIssuer 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527577"
 |成员|值|说明|
 |:---|:---|:---|
 |intercede|0|Intercede|
-|entrustDatacard|1 |Entrust Datacard|
-|purebred|2 |Purebred|
-|xTec|3 |XTec|
+|entrustDatacard|1|Entrust Datacard|
+|purebred|双面|Purebred|
+|xTec|第三章|XTec|
 
 
 

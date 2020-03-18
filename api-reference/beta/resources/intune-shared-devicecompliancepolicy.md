@@ -1,20 +1,18 @@
 ---
 title: deviceCompliancePolicy 资源类型
 description: '这是符合性策略的基类。 符合性策略特定于平台，每个平台的符合性策略相互独立，且继承自此处。 '
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad5d7a521dfd9daa698af96d0b61921f09a4034a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d63870ea018261e044aa01129416bb55278d8963
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523728"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771339"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -38,7 +36,7 @@ ms.locfileid: "42523728"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|

@@ -1,20 +1,18 @@
 ---
 title: companyPortalBlockedAction 资源类型
 description: 按平台和设备所有权类型对公司门户的阻止的操作
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15460de0c53b1b7b383095b7bee50af0192b3462
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac1bebe15948c0088ee2d4d9355650fc435a1eb9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527482"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771668"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>companyPortalBlockedAction 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

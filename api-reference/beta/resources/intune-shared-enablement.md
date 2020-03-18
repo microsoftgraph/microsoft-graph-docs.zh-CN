@@ -1,20 +1,18 @@
 ---
 title: 启用的枚举类型
 description: 属性的可能值
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e9840d453ea3273859ac6e2d6409a83300e611fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 532dc96c1317c02bf15da9c0a6ced9208ff86d53
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523686"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770450"
 ---
 # <a name="enablement-enum-type"></a>启用的枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42523686"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，无意向。|
-|enabled|1 |启用设备上的设置。|
-|禁用|2 |禁用设备上的设置。|
+|enabled|1|启用设备上的设置。|
+|禁用|双面|禁用设备上的设置。|
 
 
 

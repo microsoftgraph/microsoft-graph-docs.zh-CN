@@ -1,20 +1,18 @@
 ---
 title: resourceAction 资源类型
 description: 资源的允许和不允许的操作的集合。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 837371f89d144026d97d1e122711a26784800b75
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48d687fd6878256c43e9c95e167432d3e7454695
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527557"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773733"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

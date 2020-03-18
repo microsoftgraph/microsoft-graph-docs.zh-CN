@@ -1,20 +1,18 @@
 ---
 title: deviceEnrollmentConfiguration 资源类型
 description: 设备注册配置的基类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd21f5dea3bab467abf1b19754ada88a4fbb531a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad0543a521d66ed6e515afe806b583e247a75a07
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771178"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

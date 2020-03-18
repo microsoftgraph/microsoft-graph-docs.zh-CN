@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceManagementTemplate
 description: 更新 deviceManagementTemplate 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82fe8dd7cb7bcb55ab099db791831fdbce9c9aaa
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: bc6056275394e6ef872b9856c5ad4c029cd0cf49
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635717"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771080"
 ---
 # <a name="update-devicemanagementtemplate"></a>更新 deviceManagementTemplate
 
@@ -50,13 +50,13 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 
 下表显示创建[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|模板 ID|
 |displayName|String|模板的显示名称|
 |说明|String|模板的说明|
-|versionInfo|字符串|模板的版本信息|
-|isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
+|versionInfo|String|模板的版本信息|
+|isDeprecated|布尔值|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
@@ -109,7 +109,6 @@ Content-Length: 420
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 userExperienceAnalyticsBaseline
 description: 更新 userExperienceAnalyticsBaseline 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14eaee6c9995f92a6396819560c02a5a8e64baee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99dee6b79626191aeca6ad1b91b4a9be2268ed64
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468500"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773117"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +95,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

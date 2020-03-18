@@ -1,20 +1,18 @@
 ---
 title: 删除 userExperienceAnalyticsDevicePerformance
 description: 删除 userExperienceAnalyticsDevicePerformance。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76389babd65c1b1b7a2b05605fa38be27e940c68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38f23febd9d585c68c85f637c0443ef2d92b260c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468430"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772774"
 ---
 # <a name="delete-userexperienceanalyticsdeviceperformance"></a>删除 userExperienceAnalyticsDevicePerformance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

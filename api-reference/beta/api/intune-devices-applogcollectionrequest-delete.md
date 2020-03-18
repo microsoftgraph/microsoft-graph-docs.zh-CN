@@ -1,20 +1,18 @@
 ---
 title: 删除 appLogCollectionRequest
 description: 删除 appLogCollectionRequest。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a9b7b90b439301c49c705227be991e0a0561d90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460e52b8423ff21caf79df0041378c81c0cf0938
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469991"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770205"
 ---
 # <a name="delete-applogcollectionrequest"></a>删除 appLogCollectionRequest
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

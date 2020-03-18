@@ -1,20 +1,18 @@
 ---
 title: 创建 remoteActionAudit
 description: 创建新的 remoteActionAudit 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb062127fc744f7612c0b81464f5de77436ceaeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8589be01843e032d695a359bfd2a51ecbf5e0df2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468633"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773803"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

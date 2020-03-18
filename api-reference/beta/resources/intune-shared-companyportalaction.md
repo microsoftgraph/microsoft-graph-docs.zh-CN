@@ -1,20 +1,18 @@
 ---
 title: companyPortalAction 枚举类型
 description: 可在公司门户中执行的设备上的操作
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c969e4638116edff08bd1412ec2824d950e8bb0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06b98895d5439675df07584b6716a18767738306
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523756"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771906"
 ---
 # <a name="companyportalaction-enum-type"></a>companyPortalAction 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42523756"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知设备操作|
-|删除|1 |从公司门户中删除设备|
-|重置|2 |重置公司门户中注册的设备|
+|删除|1|从公司门户中删除设备|
+|重置|双面|重置公司门户中注册的设备|
 
 
 

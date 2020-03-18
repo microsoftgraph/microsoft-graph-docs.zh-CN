@@ -4,16 +4,16 @@ description: 列出用于定义和管理租户组织的基于角色的访问控�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 86f0e3c08bf1180969085d49f715cc6c52d8aec4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e66eede1ad34c761e9ddb6e8d39ea9ca1543940
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774048"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

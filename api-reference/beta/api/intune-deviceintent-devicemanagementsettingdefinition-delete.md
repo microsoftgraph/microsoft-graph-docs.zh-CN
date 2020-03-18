@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceManagementSettingDefinition
 description: 删除 deviceManagementSettingDefinition。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9b1a1e40fdff8c0cc8a09d3dd9a2ce7aeeb74f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e771b6c18f958f1b6d0dd6c8fafb564948b8564
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771710"
 ---
 # <a name="delete-devicemanagementsettingdefinition"></a>删除 deviceManagementSettingDefinition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -68,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

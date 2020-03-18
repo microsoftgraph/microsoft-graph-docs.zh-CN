@@ -1,20 +1,18 @@
 ---
 title: rolePermission 资源类型
 description: 包含为每个角色确定允许和不允许的权限的一组 ResourceActions。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06790fb7fae9fd072280fd2bfe752285b290918e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4d5ea66fcae364044e05b2ffd176ddcf5f0c914
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523884"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773215"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,7 +23,7 @@ ms.locfileid: "42523884"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actions|String 集合|允许的操作-已弃用|
+|actions|String collection|允许的操作-已弃用|
 |resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) 集合|每个包含一组允许和不允许的权限的资源操作。|
 
 ## <a name="relationships"></a>关系

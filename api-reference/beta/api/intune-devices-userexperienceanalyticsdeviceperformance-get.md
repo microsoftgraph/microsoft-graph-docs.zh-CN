@@ -1,20 +1,18 @@
 ---
 title: 获取 userExperienceAnalyticsDevicePerformance
 description: 读取 userExperienceAnalyticsDevicePerformance 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e191614985945e29b3409749ef7957aecae77139
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9fa7fe377a46be82d22ce879825abc6fdde2f39c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468444"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772760"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>获取 userExperienceAnalyticsDevicePerformance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +89,6 @@ Content-Length: 629
   }
 }
 ```
-
 
 
 

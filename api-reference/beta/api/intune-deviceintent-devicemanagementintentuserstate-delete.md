@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceManagementIntentUserState
 description: 删除 deviceManagementIntentUserState。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b9b3033e0efd702b448c6011c75c7808d23be9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d86c49a88ec6806209d60966223e3bb015be69c2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470789"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772172"
 ---
 # <a name="delete-devicemanagementintentuserstate"></a>删除 deviceManagementIntentUserState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 managedDeviceOverview
 description: 更新 managedDeviceOverview 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78c748e038ca2c8b266ae61a5a2bc6645cd3b693
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50a3cb4a971a25dfa69236eb4a76b71c69bb4b90
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468640"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773824"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -162,7 +160,6 @@ Content-Length: 1227
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

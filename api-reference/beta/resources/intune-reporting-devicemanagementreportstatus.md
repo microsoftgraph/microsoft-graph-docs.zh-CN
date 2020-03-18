@@ -1,20 +1,18 @@
 ---
 title: deviceManagementReportStatus 枚举类型
 description: 与生成的报告相关联的可能状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e549e2ca96e272930c13aa07f0e35e2143e96c2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5578c11ae322fd1745cb5ed5d2f74091997be65
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527514"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772305"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>deviceManagementReportStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527514"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|报告生成状态未知|
-|notStarted|1 |尚未开始报告生成|
-|inProgress|2 |正在生成报告|
-|后|3 |报告生成已完成|
+|notStarted|1|尚未开始报告生成|
+|inProgress|双面|正在生成报告|
+|后|第三章|报告生成已完成|
 |未能|4 |报告生成失败|
 
 

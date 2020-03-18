@@ -1,20 +1,18 @@
 ---
 title: remoteAssistancePartner 资源类型
 description: RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数据和状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed8c9a2d8de2aa315e8b03f1ce6f9ef4b7586a97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b85cd11112045df5ff2babfee5f8b51dec57c0d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772809"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -30,7 +28,7 @@ RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数
 |[创建 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-create.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|创建新的 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。|
 |[删除 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-delete.md)|无|删除 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)。|
 |[更新 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-update.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|更新 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性。|
-|[beginOnboarding 操作](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|无|启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户信息结合使用|
+|[beginOnboarding 操作](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|None|启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户信息结合使用|
 |[断开连接操作](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|无|请求删除活动的 TeamViewer 连接器|
 
 ## <a name="properties"></a>属性

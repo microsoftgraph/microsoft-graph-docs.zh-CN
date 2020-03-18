@@ -1,20 +1,18 @@
 ---
 title: deviceAndAppManagementAssignmentSource 枚举类型
 description: 表示工作分配的源。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6bcd150975777b076fecdd0c97d7ea459c66e089
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb5af5333e98e0b95ae24f0ae16caa7f468a91ff
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771598"
 ---
 # <a name="deviceandappmanagementassignmentsource-enum-type"></a>deviceAndAppManagementAssignmentSource 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42523742"
 |成员|值|说明|
 |:---|:---|:---|
 |直射|0|Direct 表示直接分配。|
-|policySets|1 |PolicySets 指示工作分配是通过 PolicySet 分配进行的。|
+|policySets|1|PolicySets 指示工作分配是通过 PolicySet 分配进行的。|
 
 
 

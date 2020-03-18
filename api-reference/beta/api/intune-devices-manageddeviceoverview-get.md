@@ -1,20 +1,18 @@
 ---
 title: 获取 managedDeviceOverview
 description: 读取 managedDeviceOverview 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 042b15c28fa7f9167ec2245c7e0203a61a30b41b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6efbc640c14c31d3e9de308aa4b58d7d698d067d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468577"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773880"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -112,7 +110,6 @@ Content-Length: 1320
   }
 }
 ```
-
 
 
 

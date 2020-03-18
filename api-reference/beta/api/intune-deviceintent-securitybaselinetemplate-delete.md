@@ -1,20 +1,18 @@
 ---
 title: 删除 securityBaselineTemplate
 description: 删除 securityBaselineTemplate。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e162522935554d871d871d11fe59f3c98bb7033
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 47ed8447909d1a030bdaed4ddd1ddd1e066c08b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470082"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770331"
 ---
 # <a name="delete-securitybaselinetemplate"></a>删除 securityBaselineTemplate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 userExperienceAnalyticsDeviceStartupHistory
 description: 创建新的 userExperienceAnalyticsDeviceStartupHistory 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2fe97a2567bcde086f8cbc8febbedff3829658b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ca8232f2a013498dcc9dbcce5bfe2d9f1fd54a4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468360"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772382"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,8 +62,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
-|isFirstLogin|布尔|User experience analytics 设备第一次登录。|
-|isFeatureUpdate|布尔|User experience analytics 设备启动记录是一项功能更新。|
+|isFirstLogin|布尔值|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|布尔值|User experience analytics 设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
 
 
@@ -125,7 +123,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 userExperienceAnalyticsBaseline
 description: 创建新的 userExperienceAnalyticsBaseline 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14191e3b35ff1854eb8d7b14793991da1b31537c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75f0a9eb3179015bdd3f8d00fd8b899e02aad1e3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468584"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773341"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>创建 userExperienceAnalyticsBaseline
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +95,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

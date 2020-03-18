@@ -1,20 +1,18 @@
 ---
 title: roleScopeTag 资源类型
 description: 角色范围标记
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1269ae2c05a42286fc4f8a829d4e2a65219801b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d76ca4d2493b3d644c5b73c6b0645109573d3293
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527534"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773187"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42527534"
 |[列出 roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|列出[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性和关系。|
 |[获取 roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|读取[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性和关系。|
 |[创建 roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。|
-|[删除 roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|无|删除[roleScopeTag](../resources/intune-rbac-rolescopetag.md)。|
+|[删除 roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|删除[roleScopeTag](../resources/intune-rbac-rolescopetag.md)。|
 |[更新 roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|更新[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性。|
 |[分配操作](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)集合|尚未记录|
 |[getRoleScopeTagsById 操作](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|

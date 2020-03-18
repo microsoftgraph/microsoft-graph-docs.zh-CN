@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementIntentUserStates
 description: 列出 deviceManagementIntentUserState 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 808de58d8b5d51c1cb5015d78a03067640dd1f6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba953deeccea7b1491694b0e53d4b494e26b15ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470775"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772102"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>列出 deviceManagementIntentUserStates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

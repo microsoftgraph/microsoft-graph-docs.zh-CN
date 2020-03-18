@@ -1,20 +1,18 @@
 ---
 title: consentToDataSharing 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3c7ed2d6e7849fa87ef2a4384b90d60e0b0a0cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7e38ab21ebbe41d9c6269634032836f0c200835
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469914"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769953"
 ---
 # <a name="consenttodatasharing-action"></a>consentToDataSharing 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

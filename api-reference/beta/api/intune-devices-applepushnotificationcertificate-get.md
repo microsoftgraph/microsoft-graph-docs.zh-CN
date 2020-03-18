@@ -1,20 +1,18 @@
 ---
 title: 获取 applePushNotificationCertificate
 description: 读取 applePushNotificationCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a1149de72c7c3769525e80d3645d1924dd01f8d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 818759464e40cffc3ad101ae9bdf8bce152917f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470047"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770212"
 ---
 # <a name="get-applepushnotificationcertificate"></a>获取 applePushNotificationCertificate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,9 +25,9 @@ ms.locfileid: "42470047"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig、Devicemanagementmanageddevices.readwrite.all 和全部读。|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|应用程序|DeviceManagementServiceConfig、Devicemanagementmanageddevices.readwrite.all 和全部读。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -85,7 +83,6 @@ Content-Length: 633
   }
 }
 ```
-
 
 
 

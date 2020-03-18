@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementTemplate
 description: 读取 deviceManagementTemplate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1efd9128cbd3c4a821201fbcbd65d0ca5ef1b10f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7777895768f4409e42c1d46c9f57beb8e88d9d9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470446"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771129"
 ---
 # <a name="get-devicemanagementtemplate"></a>获取 deviceManagementTemplate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 459
   }
 }
 ```
-
 
 
 

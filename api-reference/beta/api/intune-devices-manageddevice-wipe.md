@@ -1,20 +1,18 @@
 ---
 title: wipe 操作
 description: 擦除设备
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72ef4d799227beca6d3c3f861bf83a9f9d986a64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e8bd9d7f002a5b6446043b8b458609883326deb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468654"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773971"
 ---
 # <a name="wipe-action"></a>擦除操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-length: 138
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

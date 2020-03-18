@@ -1,20 +1,18 @@
 ---
 title: 删除 securityBaselineCategoryStateSummary
 description: 删除 securityBaselineCategoryStateSummary。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 19b64b7376a34b8f6382a72d0ef82ea0cf4e597e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3de1b0aefdf57b40a670df7a5d30ba858be514d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470285"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770898"
 ---
 # <a name="delete-securitybaselinecategorystatesummary"></a>删除 securityBaselineCategoryStateSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

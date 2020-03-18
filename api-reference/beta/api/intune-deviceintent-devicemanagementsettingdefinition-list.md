@@ -1,16 +1,16 @@
 ---
 title: 列出 deviceManagementSettingDefinitions
 description: 列出 deviceManagementSettingDefinition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2ca002e7b2055bd1a0b5153b2b7162965e537a1
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 39b043d76afcd53a2c86059bcba57e0b6fa66f12
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635738"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771633"
 ---
 # <a name="list-devicemanagementsettingdefinitions"></a>列出 deviceManagementSettingDefinitions
 
@@ -108,7 +108,6 @@ Content-Length: 1142
   ]
 }
 ```
-
 
 
 

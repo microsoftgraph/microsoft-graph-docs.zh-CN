@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceManagementStringSettingInstance
 description: 删除 deviceManagementStringSettingInstance。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63965e942434816336482c88bc3d88a5aa1da420
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f04e98f5be1422b382437cffc4068814e8dcfde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470537"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771304"
 ---
 # <a name="delete-devicemanagementstringsettinginstance"></a>删除 deviceManagementStringSettingInstance
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -68,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

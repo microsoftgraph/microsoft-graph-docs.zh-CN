@@ -1,20 +1,18 @@
 ---
 title: deviceManagementExportJob 资源类型
 description: 表示导出报告的作业的实体
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60977b341516fcd7fb331a49d188a6842a44b0cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e44057e786126003802cada7320329167a3c97fe
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523805"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772550"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>deviceManagementExportJob 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42523805"
 |[列出 deviceManagementExportJobs](../api/intune-reporting-devicemanagementexportjob-list.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)集合|列出[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的属性和关系。|
 |[获取 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-get.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|读取[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的属性和关系。|
 |[创建 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-create.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|创建新的[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象。|
-|[删除 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|无|删除[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)。|
+|[删除 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|None|删除[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)。|
 |[更新 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-update.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|更新[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -37,10 +35,10 @@ ms.locfileid: "42523805"
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
 |filter|String|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
+|select|String collection|从报告中选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
 |snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出的报告的时间|
 |expirationDateTime|DateTimeOffset|导出的报表到期的时间|
