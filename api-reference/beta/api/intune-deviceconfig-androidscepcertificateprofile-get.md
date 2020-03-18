@@ -1,20 +1,18 @@
 ---
 title: 获取 androidScepCertificateProfile
 description: 读取 androidScepCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d59c39bd7aace097bcd23c043fd88259ea948a9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a20cc3e6d120f6694a302b65cd82280c9e991747
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443655"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758810"
 ---
 # <a name="get-androidscepcertificateprofile"></a>获取 androidScepCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +127,6 @@ Content-Length: 2042
   }
 }
 ```
-
 
 
 

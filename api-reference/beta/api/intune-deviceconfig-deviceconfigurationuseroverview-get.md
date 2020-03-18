@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceConfigurationUserOverview
 description: 读取 deviceConfigurationUserOverview 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12a34f8c0a4d1369f47b1006796217067a8faf7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 510a3217be430b579b5e81e1df776e258a3e7867
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442997"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753619"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>获取 deviceConfigurationUserOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +92,6 @@ Content-Length: 394
   }
 }
 ```
-
 
 
 

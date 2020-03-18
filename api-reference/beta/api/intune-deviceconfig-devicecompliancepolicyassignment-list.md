@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceCompliancePolicyAssignments
 description: 列出 deviceCompliancePolicyAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6a88d1bbad0da14374ee60aa238c1d7851ff3ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b001c89f9cb50f8ef0baf09cbd53cd3463ae8f5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449297"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42755719"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>列出 deviceCompliancePolicyAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 343
   ]
 }
 ```
-
 
 
 

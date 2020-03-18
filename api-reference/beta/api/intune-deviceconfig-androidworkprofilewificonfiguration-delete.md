@@ -1,20 +1,18 @@
 ---
 title: 删除 androidWorkProfileWiFiConfiguration
 description: 删除 androidWorkProfileWiFiConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a3de435e865e9164e265c7f63ae31b1d4204427
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9606d0c5565b8196c71c44ff3aac58913a94d833
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449409"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757414"
 ---
 # <a name="delete-androidworkprofilewificonfiguration"></a>删除 androidWorkProfileWiFiConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

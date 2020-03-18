@@ -1,16 +1,16 @@
 ---
 title: 获取 androidForWorkTrustedRootCertificate
 description: 读取 androidForWorkTrustedRootCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bea7be7c4217a907eb15ccc02580e2e23f1f5662
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: bf2a00ef7ce529ef9d80dfaae5cea922e91b9230
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954613"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759111"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>获取 androidForWorkTrustedRootCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "39954613"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -108,7 +108,6 @@ Content-Length: 1406
   }
 }
 ```
-
 
 
 

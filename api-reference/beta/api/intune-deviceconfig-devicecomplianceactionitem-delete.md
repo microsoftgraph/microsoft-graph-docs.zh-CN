@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceComplianceActionItem
 description: 删除 deviceComplianceActionItem。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5d4cfb27ac778546623e1b67c95ad525fddda3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34ed415e0ded9333d10cce8fc3d37c5f45f550ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449353"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756524"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>删除 deviceComplianceActionItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

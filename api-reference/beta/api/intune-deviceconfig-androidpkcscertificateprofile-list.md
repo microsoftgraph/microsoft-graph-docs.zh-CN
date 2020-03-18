@@ -1,20 +1,18 @@
 ---
 title: 列出 androidPkcsCertificateProfiles
 description: 列出 androidPkcsCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7eb5c09903e65b28114a2353c46dda1333c14c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be0c70e95c74143c77ce4a5828274f3a7168382e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443669"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758838"
 ---
 # <a name="list-androidpkcscertificateprofiles"></a>列出 androidPkcsCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -123,7 +121,6 @@ Content-Length: 2128
   ]
 }
 ```
-
 
 
 

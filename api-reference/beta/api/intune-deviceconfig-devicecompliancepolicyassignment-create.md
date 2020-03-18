@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceCompliancePolicyAssignment
 description: 创建新的 deviceCompliancePolicyAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95e24a6c30dd910de9e7d43e717f0a52bb42db7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c7670cac3bd996d4a928d5173d7bc341b7ece4d5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443235"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42755922"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>创建 deviceCompliancePolicyAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +97,6 @@ Content-Length: 282
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 androidEnterpriseWiFiConfigurations
 description: 列出 androidEnterpriseWiFiConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5800aa8795d2edb331803496d719930a7f31743
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3bb072468e7639e3f655beb03e3fde3d1576e3bf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759554"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>列出 androidEnterpriseWiFiConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +118,6 @@ Content-Length: 2084
   ]
 }
 ```
-
 
 
 

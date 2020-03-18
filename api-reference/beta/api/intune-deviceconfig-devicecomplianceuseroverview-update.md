@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceComplianceUserOverview
 description: 更新 deviceComplianceUserOverview 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ae3464dc7b546b9dfd53e506d1a1cfc970f5215
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76e6f83e2c2688f90e78f2c24d44a416706424fd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443130"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754872"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>更新 deviceComplianceUserOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
 
 
 

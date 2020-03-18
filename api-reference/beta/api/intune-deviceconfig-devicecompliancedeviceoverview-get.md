@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceComplianceDeviceOverview
 description: 读取 deviceComplianceDeviceOverview 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71b2a7b7a9d9732c290605fbdd875989e19282ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ca2389446d78d9a389a92ae75189047949aa06a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449339"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756321"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>获取 deviceComplianceDeviceOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 432
   }
 }
 ```
-
 
 
 

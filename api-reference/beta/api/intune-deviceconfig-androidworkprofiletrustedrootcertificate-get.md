@@ -1,20 +1,18 @@
 ---
 title: 获取 androidWorkProfileTrustedRootCertificate
 description: 读取 androidWorkProfileTrustedRootCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89110c5147cb7fe9cf5ac6f10f023d07ac7cfe5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e266f4e986cca5711d0f3bd054012543466b2e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757890"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>获取 androidWorkProfileTrustedRootCertificate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -111,7 +109,6 @@ Content-Length: 1410
   }
 }
 ```
-
 
 
 

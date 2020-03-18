@@ -1,20 +1,18 @@
 ---
 title: 删除 cartToClassAssociation
 description: 删除 cartToClassAssociation。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc92c31a336e015e80941aee05afacb6d7a1e3d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28c3a75567d19f9913b0383d89f0f3ce9bdfd1b1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449388"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756980"
 ---
 # <a name="delete-carttoclassassociation"></a>删除 cartToClassAssociation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

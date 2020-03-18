@@ -1,20 +1,18 @@
 ---
 title: 获取 appleDeviceFeaturesConfigurationBase
 description: 读取 appleDeviceFeaturesConfigurationBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 948e53f3582e224d15e06952f3f346853a97fe44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5dfec0f90f16782de70dba66fc7c346d8828b0e2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449395"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757148"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>获取 appleDeviceFeaturesConfigurationBase
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +116,6 @@ Content-Length: 1550
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 androidWorkProfileVpnConfiguration
 description: 读取 androidWorkProfileVpnConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a97ca389fb6ca6a34b4e2c8097b1aefd35d63da5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c911f248c657b79dc604d682dabe42b0379439d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757505"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>获取 androidWorkProfileVpnConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -137,7 +135,6 @@ Content-Length: 2073
   }
 }
 ```
-
 
 
 

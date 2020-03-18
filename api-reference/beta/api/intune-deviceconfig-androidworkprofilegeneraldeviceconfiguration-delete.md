@@ -1,20 +1,18 @@
 ---
 title: 删除 androidWorkProfileGeneralDeviceConfiguration
 description: 删除 androidWorkProfileGeneralDeviceConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8eb377b816a553f28142f8b65e8778f23a02c3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89a002f2c59ff93635e3f30ad60a0c5a8a40d7d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449542"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758479"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>删除 androidWorkProfileGeneralDeviceConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

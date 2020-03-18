@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkScepCertificateProfile
 description: 读取 androidForWorkScepCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37093b13c2d561eb7e324fff13f0c0f268d31d52
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0dd35d9fc9cc7d542aa5f7d93806ea27b951707
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449815"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759146"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>获取 androidForWorkScepCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -137,7 +135,6 @@ Content-Length: 2289
   }
 }
 ```
-
 
 
 

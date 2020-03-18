@@ -3,14 +3,31 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3d22924a867e55459b57c63e6563bd66e79f9c75
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 76c967e9674f9d3fbb0dd92db179aef4843e3f52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865856"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729036"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="january-2020-new-and-generally-available"></a>2020 年 1 月：新版本和正式版
+
+### <a name="security"></a>安全性
+作为客户警报管理的一部分，请使用 [update alert](/graph/api/alert-update?view=graph-rest-1.0) 方法并将“**注释**”字段更新为 `Closed in IPC` 或 `Closed in MCAS`。
+
+### <a name="teamwork"></a>团队合作
+使用“[团队](/graph/api/resources/team?view=graph-rest-1.0)”的 **primaryChannel** 导航属性来访问默认频道，“**常规**”。
+
+### <a name="users"></a>用户
+使用“**标识**”属性访问[用户](/graph/api/resources/user?view=graph-rest-1.0)可用于登录至 Azure AD 用户账户的一个或多个标识。 这些标识可由 Microsoft，组织或 Facebook、Google 或 Microsoft 等社交标识提供商提供。 此属性允许用户使用任一这些身份登录至用户账户。
+
+## <a name="january-2020-new-in-preview"></a>2020 年 1 月：预览版新增功能
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [1 月](changelog.md#january-2020)更新。
+
 
 ## <a name="december-2019-new-and-generally-available"></a>2019 年 12 月：新版本和正式版
 

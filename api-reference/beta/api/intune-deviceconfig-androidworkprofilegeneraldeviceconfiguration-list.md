@@ -1,20 +1,18 @@
 ---
 title: 列出 androidWorkProfileGeneralDeviceConfigurations
 description: 列出 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ebb8e15bf5ee68414493c05c7203b8a0e05cb11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7dbfa07fee15e2a36167038620f73eeec98f13e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449535"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758465"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列出 androidWorkProfileGeneralDeviceConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -145,7 +143,6 @@ Content-Length: 3402
   ]
 }
 ```
-
 
 
 

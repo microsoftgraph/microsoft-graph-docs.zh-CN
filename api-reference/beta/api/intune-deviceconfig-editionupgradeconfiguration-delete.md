@@ -1,20 +1,18 @@
 ---
 title: 删除 editionUpgradeConfiguration
 description: 删除 editionUpgradeConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cc1f2f7b1ddacdc27daae484890035e0c95cdea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b119d08f1430d3469d21246909d9ba0136edb7a5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449080"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42752980"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>删除 editionUpgradeConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

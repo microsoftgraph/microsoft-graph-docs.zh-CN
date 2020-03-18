@@ -1,20 +1,18 @@
 ---
 title: 列出 androidWorkProfileCertificateProfileBases
 description: 列出 androidWorkProfileCertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be2f2bd73dcaae9c23f2f3bfa4901199677142c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8d29d1445c3ef1e97bc8c04e681ac7fbd49afde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758612"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>列出 androidWorkProfileCertificateProfileBases
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 1836
   ]
 }
 ```
-
 
 
 

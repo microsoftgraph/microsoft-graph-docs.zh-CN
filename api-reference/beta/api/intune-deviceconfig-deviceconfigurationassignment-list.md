@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceConfigurationAssignments
 description: 列出 deviceConfigurationAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2907f5dc4da31e33e8b6e773032fe7d5c50ea544
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4defc4f2639ad319d8bbc4ed4e2590f5e4a8d67f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754536"
 ---
 # <a name="list-deviceconfigurationassignments"></a>列出 deviceConfigurationAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 340
   ]
 }
 ```
-
 
 
 

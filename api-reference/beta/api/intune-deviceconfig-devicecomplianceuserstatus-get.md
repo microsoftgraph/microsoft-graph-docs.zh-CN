@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceComplianceUserStatus
 description: 读取 deviceComplianceUserStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 135c280847614bd35cea497aa3139e7a657127e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1dfc47b23bb59bc28d469a0ffe1eeae3f0c9f412
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754767"
 ---
 # <a name="get-devicecomplianceuserstatus"></a>获取 deviceComplianceUserStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +80,6 @@ Content-Length: 369
   }
 }
 ```
-
 
 
 

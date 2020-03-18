@@ -1,20 +1,18 @@
 ---
 title: 获取 androidWiFiConfiguration
 description: 读取 androidWiFiConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1093712fef7d27142185bf8298f74213cab9dd3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: faba11faf41fab6d690aedeec89f213d6700fdd2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449612"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758643"
 ---
 # <a name="get-androidwificonfiguration"></a>获取 androidWiFiConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -114,7 +112,6 @@ Content-Length: 1473
   }
 }
 ```
-
 
 
 

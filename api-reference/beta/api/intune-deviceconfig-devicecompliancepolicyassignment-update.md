@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceCompliancePolicyAssignment
 description: 更新 deviceCompliancePolicyAssignment 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 820db9fe7c875c1261398fd441b62b77997c1d06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84bc1ad536037e9d0a99411c24fb50a897eba139
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443207"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42755698"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>更新 deviceCompliancePolicyAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +97,6 @@ Content-Length: 282
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceConfigurationUserOverview
 description: 更新 deviceConfigurationUserOverview 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf6303e2895955cba6dcf78e7508c659e6bb9fcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8174af63d46233b317ef12be81327143bb2bab61
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753563"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
-
 
 
 

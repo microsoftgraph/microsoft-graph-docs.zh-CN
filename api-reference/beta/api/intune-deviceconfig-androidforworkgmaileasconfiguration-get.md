@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkGmailEasConfiguration
 description: 读取 androidForWorkGmailEasConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed0887653c1319103bd15e393c2e5fb5fe99db4f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef74701657b07912b2a9e824e4143fd91bd7099f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759286"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>获取 androidForWorkGmailEasConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +113,6 @@ Content-Length: 1531
   }
 }
 ```
-
 
 
 

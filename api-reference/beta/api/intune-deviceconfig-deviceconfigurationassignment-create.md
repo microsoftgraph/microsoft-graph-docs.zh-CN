@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceConfigurationAssignment
 description: 创建新的 deviceConfigurationAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9816aea7734cdbbd42cc2946b91c9ffa0a0bc479
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53de7cf054d452d4807c2f9f1c239e6b6771acad
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443109"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754662"
 ---
 # <a name="create-deviceconfigurationassignment"></a>创建 deviceConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -108,7 +106,6 @@ Content-Length: 279
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

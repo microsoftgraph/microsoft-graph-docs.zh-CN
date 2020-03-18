@@ -1,20 +1,18 @@
 ---
 title: 获取 androidWorkProfileGeneralDeviceConfiguration
 description: 读取 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abda779acf342c4c6dc14a03e1a507df2e5a9326
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d7b701242cc63e6e540f1024400e7b01e0e157e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443494"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758472"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>获取 androidWorkProfileGeneralDeviceConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -147,7 +145,6 @@ Content-Length: 3248
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 cartToClassAssociation
 description: 读取 cartToClassAssociation 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 085be987fcf8ced8e33684dd79103097dc4e6147
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcfcb3012eff97adac59b28c336a37b5825440f0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443312"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756966"
 ---
 # <a name="get-carttoclassassociation"></a>获取 cartToClassAssociation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 488
   }
 }
 ```
-
 
 
 

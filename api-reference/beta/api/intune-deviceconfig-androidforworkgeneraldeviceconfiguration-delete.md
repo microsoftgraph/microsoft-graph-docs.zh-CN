@@ -1,20 +1,18 @@
 ---
 title: 删除 androidForWorkGeneralDeviceConfiguration
 description: 删除 androidForWorkGeneralDeviceConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65df7d6f38b0acd4f2e0fb94f741d0b9de84d645
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d182abd5bb8f3ed6430de6cbc8d22c8d72a04ba3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443886"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759328"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>删除 androidForWorkGeneralDeviceConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

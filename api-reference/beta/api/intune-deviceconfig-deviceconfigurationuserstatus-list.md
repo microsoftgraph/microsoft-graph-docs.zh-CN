@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceConfigurationUserStatuses
 description: 列出 deviceConfigurationUserStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e9759133512a51c0abd2e8bec24d39fa80dce5b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4020f889faa34562b275d039576a5dc54130373
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449101"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753262"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>列出 deviceConfigurationUserStatuses
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 400
   ]
 }
 ```
-
 
 
 

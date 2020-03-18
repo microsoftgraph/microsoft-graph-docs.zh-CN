@@ -1,20 +1,18 @@
 ---
 title: 获取 easEmailProfileConfigurationBase
 description: 读取 easEmailProfileConfigurationBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4248c8412db34c18608f441c60cfa4fea8b6763f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bd20f7a587d61228adeff7dd870bb709ca7f426
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442969"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753185"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>获取 easEmailProfileConfigurationBase
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1486
   }
 }
 ```
-
 
 
 

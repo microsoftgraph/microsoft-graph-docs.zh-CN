@@ -1,20 +1,18 @@
 ---
 title: 删除 androidWorkProfilePkcsCertificateProfile
 description: 删除 androidWorkProfilePkcsCertificateProfile。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7287ba6af70db34c9627b7b7f1d6d86f4c91cb09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 337750622015b9f7fc338bbd1d669decb00616e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449500"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758353"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>删除 androidWorkProfilePkcsCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

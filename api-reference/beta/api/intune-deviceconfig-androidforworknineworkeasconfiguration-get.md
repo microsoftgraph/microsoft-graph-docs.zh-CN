@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkNineWorkEasConfiguration
 description: 读取 androidForWorkNineWorkEasConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1603b24b1f724288de8a6a6fdd3c10cac689750
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2955b714b7d47e9dc62723ad0a825f5dbe8aadf7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449843"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759216"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>获取 androidForWorkNineWorkEasConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +116,6 @@ Content-Length: 1612
   }
 }
 ```
-
 
 
 

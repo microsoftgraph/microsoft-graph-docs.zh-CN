@@ -1,20 +1,18 @@
 ---
 title: 删除 androidForWorkCustomConfiguration
 description: 删除 androidForWorkCustomConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a51c009fa4333d3ecf2ee388d59209db3cc37bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4828d2c9b22f421762d70d8920884b5f7aa7776
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450011"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759412"
 ---
 # <a name="delete-androidforworkcustomconfiguration"></a>删除 androidForWorkCustomConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

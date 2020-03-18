@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceConfigurationConflictSummary
 description: 删除 deviceConfigurationConflictSummary。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e91ea100f02e79e64c5dc8be64f1b969d7ce06b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c602c33490ac210230cfb600a2ae9ba9bd81006
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443088"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754382"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>删除 deviceConfigurationConflictSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConf
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceCompliancePolicyAssignment
 description: 读取 deviceCompliancePolicyAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 808dc2b78e0254628a5e5ea937a1d03aa2ab626b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5b71651e3edde8099759612519ac79319af71ae
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443221"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42755796"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>获取 deviceCompliancePolicyAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +80,6 @@ Content-Length: 315
   }
 }
 ```
-
 
 
 

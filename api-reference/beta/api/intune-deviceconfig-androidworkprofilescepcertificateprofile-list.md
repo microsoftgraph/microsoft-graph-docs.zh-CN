@@ -1,20 +1,18 @@
 ---
 title: 列出 androidWorkProfileScepCertificateProfiles
 description: 列出 androidWorkProfileScepCertificateProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80cfc92b7c02edae2166cb664e69e5aa8e111406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: acd859e77224275b453a9ef2fe703571ef4332aa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443410"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757975"
 ---
 # <a name="list-androidworkprofilescepcertificateprofiles"></a>列出 androidWorkProfileScepCertificateProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -135,7 +133,6 @@ Content-Length: 2427
   ]
 }
 ```
-
 
 
 

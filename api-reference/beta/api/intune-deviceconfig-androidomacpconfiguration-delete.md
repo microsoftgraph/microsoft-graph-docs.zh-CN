@@ -1,20 +1,18 @@
 ---
 title: 删除 androidOmaCpConfiguration
 description: 删除 androidOmaCpConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e298f88fa61ac6fcd3e732d5d1466d275d504d16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e9bbd4d1906450ea4271d2b32beec2bfe70fc15
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758936"
 ---
 # <a name="delete-androidomacpconfiguration"></a>删除 androidOmaCpConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

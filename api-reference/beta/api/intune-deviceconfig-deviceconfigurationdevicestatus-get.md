@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceConfigurationDeviceStatus
 description: 读取 deviceConfigurationDeviceStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43d6910d14ab90eab4a79b905c6f8fd57b7b5d6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf53cbbb3af1b223ed32b547ad7f26d1d6302db4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443053"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753969"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>获取 deviceConfigurationDeviceStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +92,6 @@ Content-Length: 535
   }
 }
 ```
-
 
 
 

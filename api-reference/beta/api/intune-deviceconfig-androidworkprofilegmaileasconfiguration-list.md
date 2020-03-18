@@ -1,20 +1,18 @@
 ---
 title: 列出 androidWorkProfileGmailEasConfigurations
 description: 列出 androidWorkProfileGmailEasConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4a59b2cb97465047c1ead0b69557eb69cb49bc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66eabfc303cb8cdf8462148fecac4cc05fcdcc30
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443466"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758430"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>列出 androidWorkProfileGmailEasConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1625
   ]
 }
 ```
-
 
 
 

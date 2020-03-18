@@ -1,20 +1,18 @@
 ---
 title: 创建 cartToClassAssociation
 description: 创建新的 cartToClassAssociation 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2338e879df9f7e1920c90df61dda62a86d1bc2db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: abfd05152a968696e4f35879e7cd5a8bb957bc2f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443326"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756987"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,8 +57,8 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
 |说明|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
-|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 
@@ -113,7 +111,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 
