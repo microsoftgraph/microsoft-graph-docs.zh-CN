@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775301"
+ms.locfileid: "42814230"
 ---
 # <a name="playlostmodesound-action"></a><span data-ttu-id="f3d49-103">playLostModeSound 操作</span><span class="sxs-lookup"><span data-stu-id="f3d49-103">playLostModeSound action</span></span>
 

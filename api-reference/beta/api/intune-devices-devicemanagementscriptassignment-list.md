@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768833"
+ms.locfileid: "42814475"
 ---
 # <a name="list-devicemanagementscriptassignments"></a><span data-ttu-id="93b53-103">列出 deviceManagementScriptAssignments</span><span class="sxs-lookup"><span data-stu-id="93b53-103">List deviceManagementScriptAssignments</span></span>
 

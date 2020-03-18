@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774419"
+ms.locfileid: "42814146"
 ---
 # <a name="shutdown-action"></a><span data-ttu-id="5042e-103">shutDown 操作</span><span class="sxs-lookup"><span data-stu-id="5042e-103">shutDown action</span></span>
 

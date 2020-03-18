@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768322"
+ms.locfileid: "42814356"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a><span data-ttu-id="797c4-103">列出 deviceManagementScriptUserStates</span><span class="sxs-lookup"><span data-stu-id="797c4-103">List deviceManagementScriptUserStates</span></span>
 

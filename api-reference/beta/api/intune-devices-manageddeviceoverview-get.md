@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773880"
+ms.locfileid: "42814090"
 ---
 # <a name="get-manageddeviceoverview"></a><span data-ttu-id="d1d1d-103">获取 managedDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="d1d1d-103">Get managedDeviceOverview</span></span>
 

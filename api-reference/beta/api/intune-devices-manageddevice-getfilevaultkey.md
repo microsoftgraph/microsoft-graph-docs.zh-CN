@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775441"
+ms.locfileid: "42814251"
 ---
 # <a name="getfilevaultkey-function"></a><span data-ttu-id="c95e9-103">getFileVaultKey 函数</span><span class="sxs-lookup"><span data-stu-id="c95e9-103">getFileVaultKey function</span></span>
 

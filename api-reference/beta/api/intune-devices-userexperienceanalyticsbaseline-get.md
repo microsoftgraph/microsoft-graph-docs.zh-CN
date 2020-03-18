@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773257"
+ms.locfileid: "42814026"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a><span data-ttu-id="69400-103">获取 userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="69400-103">Get userExperienceAnalyticsBaseline</span></span>
 

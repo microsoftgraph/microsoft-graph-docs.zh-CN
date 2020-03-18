@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768021"
+ms.locfileid: "42814314"
 ---
 # <a name="list-deviceshellscripts"></a><span data-ttu-id="8d7cd-103">列出 deviceShellScripts</span><span class="sxs-lookup"><span data-stu-id="8d7cd-103">List deviceShellScripts</span></span>
 

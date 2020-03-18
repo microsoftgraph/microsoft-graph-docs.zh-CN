@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774713"
+ms.locfileid: "42814167"
 ---
 # <a name="rotatefilevaultkey-action"></a><span data-ttu-id="3b0d8-103">rotateFileVaultKey 操作</span><span class="sxs-lookup"><span data-stu-id="3b0d8-103">rotateFileVaultKey action</span></span>
 

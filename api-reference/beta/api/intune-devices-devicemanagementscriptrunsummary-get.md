@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762904"
+ms.locfileid: "42814391"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a><span data-ttu-id="ecc3b-103">获取 deviceManagementScriptRunSummary</span><span class="sxs-lookup"><span data-stu-id="ecc3b-103">Get deviceManagementScriptRunSummary</span></span>
 

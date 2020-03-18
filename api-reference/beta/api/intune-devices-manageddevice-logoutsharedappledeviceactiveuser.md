@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775308"
+ms.locfileid: "42814237"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a><span data-ttu-id="92cd1-103">logoutSharedAppleDeviceActiveUser 操作</span><span class="sxs-lookup"><span data-stu-id="92cd1-103">logoutSharedAppleDeviceActiveUser action</span></span>
 

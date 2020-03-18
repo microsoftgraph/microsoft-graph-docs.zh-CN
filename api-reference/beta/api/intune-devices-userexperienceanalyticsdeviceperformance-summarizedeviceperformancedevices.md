@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772683"
+ms.locfileid: "42813963"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a><span data-ttu-id="374dc-103">summarizeDevicePerformanceDevices 函数</span><span class="sxs-lookup"><span data-stu-id="374dc-103">summarizeDevicePerformanceDevices function</span></span>
 

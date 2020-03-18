@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762847"
+ms.locfileid: "42814279"
 ---
 # <a name="disablelostmode-action"></a><span data-ttu-id="b05be-103">disableLostMode 操作</span><span class="sxs-lookup"><span data-stu-id="b05be-103">disableLostMode action</span></span>
 

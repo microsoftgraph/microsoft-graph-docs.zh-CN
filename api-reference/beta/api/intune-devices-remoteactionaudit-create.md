@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773803"
+ms.locfileid: "42814075"
 ---
 # <a name="create-remoteactionaudit"></a><span data-ttu-id="d28be-103">创建 remoteActionAudit</span><span class="sxs-lookup"><span data-stu-id="d28be-103">Create remoteActionAudit</span></span>
 

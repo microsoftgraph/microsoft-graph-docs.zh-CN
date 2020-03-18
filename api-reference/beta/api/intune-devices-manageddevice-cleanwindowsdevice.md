@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762854"
+ms.locfileid: "42814293"
 ---
 # <a name="cleanwindowsdevice-action"></a><span data-ttu-id="bb1d2-103">cleanWindowsDevice 操作</span><span class="sxs-lookup"><span data-stu-id="bb1d2-103">cleanWindowsDevice action</span></span>
 

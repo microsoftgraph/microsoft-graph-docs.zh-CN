@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773320"
+ms.locfileid: "42814033"
 ---
 # <a name="delete-userexperienceanalyticsbaseline"></a><span data-ttu-id="dfaf9-103">删除 userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="dfaf9-103">Delete userExperienceAnalyticsBaseline</span></span>
 

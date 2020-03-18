@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772900"
+ms.locfileid: "42813998"
 ---
 # <a name="update-userexperienceanalyticscategory"></a><span data-ttu-id="a4331-103">更新 userExperienceAnalyticsCategory</span><span class="sxs-lookup"><span data-stu-id="a4331-103">Update userExperienceAnalyticsCategory</span></span>
 

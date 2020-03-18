@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762861"
+ms.locfileid: "42814307"
 ---
 # <a name="update-deviceshellscript"></a><span data-ttu-id="42b8b-103">更新 deviceShellScript</span><span class="sxs-lookup"><span data-stu-id="42b8b-103">Update deviceShellScript</span></span>
 

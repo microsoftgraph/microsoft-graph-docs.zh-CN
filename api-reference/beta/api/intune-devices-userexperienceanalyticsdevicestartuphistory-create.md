@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772382"
+ms.locfileid: "42813949"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a><span data-ttu-id="70578-103">创建 userExperienceAnalyticsDeviceStartupHistory</span><span class="sxs-lookup"><span data-stu-id="70578-103">Create userExperienceAnalyticsDeviceStartupHistory</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774902"
+ms.locfileid: "42814195"
 ---
 # <a name="resetpasscode-action"></a><span data-ttu-id="ec5e3-103">resetPasscode 操作</span><span class="sxs-lookup"><span data-stu-id="ec5e3-103">resetPasscode action</span></span>
 

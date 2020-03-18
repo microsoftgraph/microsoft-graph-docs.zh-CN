@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772697"
+ms.locfileid: "42813970"
 ---
 # <a name="list-userexperienceanalyticsdeviceperformances"></a><span data-ttu-id="43423-103">列出 userExperienceAnalyticsDevicePerformances</span><span class="sxs-lookup"><span data-stu-id="43423-103">List userExperienceAnalyticsDevicePerformances</span></span>
 

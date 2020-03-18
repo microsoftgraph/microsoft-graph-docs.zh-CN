@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773117"
+ms.locfileid: "42814012"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a><span data-ttu-id="7b6aa-103">更新 userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="7b6aa-103">Update userExperienceAnalyticsBaseline</span></span>
 

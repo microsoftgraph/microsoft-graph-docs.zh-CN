@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768392"
+ms.locfileid: "42814384"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a><span data-ttu-id="d232d-103">更新 deviceManagementScriptRunSummary</span><span class="sxs-lookup"><span data-stu-id="d232d-103">Update deviceManagementScriptRunSummary</span></span>
 
