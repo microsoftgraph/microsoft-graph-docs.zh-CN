@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementTemplateSettingCategories
 description: 列出 deviceManagementTemplateSettingCategory 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 596bdf5c7223f699ad1b05b8ddd823e6f722e5e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f575ee1ea68c2d6ab2d1ccf2c92fd251214483b6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470278"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764864"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>列出 deviceManagementTemplateSettingCategories
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +76,6 @@ Content-Length: 250
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: iosVppAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS APP 移动应用的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 987f020bbdae683a1ff8df9439af698c2102918b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a72f1876d0d0dcd181aee7a9b0322f372838377
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523651"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769568"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42523651"
 |useDeviceLicensing|布尔值|是否使用设备许可。|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
 |**应用**|
-|uninstallOnDeviceRemoval|布尔|从 Intune 中删除设备时是否卸载应用程序。|
+|uninstallOnDeviceRemoval|布尔值|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无

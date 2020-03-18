@@ -1,20 +1,18 @@
 ---
 title: ipRange 资源类型
 description: 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5256e928b916b082eb857fbe36128453d17293e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6353740dcdb537cbe72e340aa24b02dbb22deb4e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527408"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769288"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

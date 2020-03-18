@@ -1,20 +1,18 @@
 ---
 title: keyValuePair 资源类型
 description: 用于存储自定义设置的键值对
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b41f0b18b30945e12df21b780afd7fcf1cade73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd97b7cf0729ae9e1cad1c8440ec9727cc321a67
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527388"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769127"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
