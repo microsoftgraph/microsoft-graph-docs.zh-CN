@@ -1,20 +1,18 @@
 ---
 title: 更新 managedDeviceMobileAppConfigurationDeviceSummary
 description: 更新 managedDeviceMobileAppConfigurationDeviceSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4228b321fef3dbda9ba8be6addebeddb68e345c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b78b07b57b3bf8ec23573062115c6f79e405bda5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445139"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815479"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
-
 
 
 

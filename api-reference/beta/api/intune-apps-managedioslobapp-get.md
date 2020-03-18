@@ -1,20 +1,18 @@
 ---
 title: 获取 managedIOSLobApp
 description: 读取 managedIOSLobApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45885dec1095bae31a254ed21216a2b4478d33c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7728656137a5774cc15ea26946f22bc10e87b3a2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815406"
 ---
 # <a name="get-managedioslobapp"></a>获取 managedIOSLobApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -126,7 +124,6 @@ Content-Length: 1778
   }
 }
 ```
-
 
 
 
