@@ -1,37 +1,35 @@
 ---
 title: setScheduledRetireState 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b52797d7dc62f4f5b24d5a55fe8248d5b864adb2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cb0a0fed1e720734a86b114b1bccd2bdcec35a9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449311"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42755943"
 ---
-# <a name="setscheduledretirestate-action"></a><span data-ttu-id="fa4ac-103">setScheduledRetireState 操作</span><span class="sxs-lookup"><span data-stu-id="fa4ac-103">setScheduledRetireState action</span></span>
+# <a name="setscheduledretirestate-action"></a><span data-ttu-id="026f1-103">setScheduledRetireState 操作</span><span class="sxs-lookup"><span data-stu-id="026f1-103">setScheduledRetireState action</span></span>
 
-<span data-ttu-id="fa4ac-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="fa4ac-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="026f1-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="026f1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fa4ac-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="026f1-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="026f1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="fa4ac-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="026f1-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="026f1-106">Not yet documented</span></span>
 
-<span data-ttu-id="fa4ac-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa4ac-107">Not yet documented</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="026f1-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="026f1-107">Prerequisites</span></span>
+<span data-ttu-id="026f1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="026f1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fa4ac-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="fa4ac-108">Prerequisites</span></span>
-<span data-ttu-id="fa4ac-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="fa4ac-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa4ac-111">Permission type</span></span>|<span data-ttu-id="fa4ac-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="fa4ac-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="026f1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="026f1-110">Permission type</span></span>|<span data-ttu-id="026f1-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="026f1-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa4ac-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa4ac-113">Delegated (work or school account)</span></span>|<span data-ttu-id="fa4ac-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa4ac-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="fa4ac-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa4ac-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fa4ac-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-116">Not supported.</span></span>|
-|<span data-ttu-id="fa4ac-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa4ac-117">Application</span></span>|<span data-ttu-id="fa4ac-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa4ac-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="026f1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="026f1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="026f1-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="026f1-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="026f1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="026f1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="026f1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="026f1-115">Not supported.</span></span>|
+|<span data-ttu-id="026f1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="026f1-116">Application</span></span>|<span data-ttu-id="026f1-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="026f1-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fa4ac-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa4ac-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="026f1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="026f1-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +38,31 @@ ms.locfileid: "42449311"
 POST /deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fa4ac-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa4ac-120">Request headers</span></span>
-|<span data-ttu-id="fa4ac-121">标头</span><span class="sxs-lookup"><span data-stu-id="fa4ac-121">Header</span></span>|<span data-ttu-id="fa4ac-122">值</span><span class="sxs-lookup"><span data-stu-id="fa4ac-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="026f1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="026f1-119">Request headers</span></span>
+|<span data-ttu-id="026f1-120">标头</span><span class="sxs-lookup"><span data-stu-id="026f1-120">Header</span></span>|<span data-ttu-id="026f1-121">值</span><span class="sxs-lookup"><span data-stu-id="026f1-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa4ac-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa4ac-123">Authorization</span></span>|<span data-ttu-id="fa4ac-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fa4ac-125">接受</span><span class="sxs-lookup"><span data-stu-id="fa4ac-125">Accept</span></span>|<span data-ttu-id="fa4ac-126">application/json</span><span class="sxs-lookup"><span data-stu-id="fa4ac-126">application/json</span></span>|
+|<span data-ttu-id="026f1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="026f1-122">Authorization</span></span>|<span data-ttu-id="026f1-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="026f1-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="026f1-124">接受</span><span class="sxs-lookup"><span data-stu-id="026f1-124">Accept</span></span>|<span data-ttu-id="026f1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="026f1-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fa4ac-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="fa4ac-127">Request body</span></span>
-<span data-ttu-id="fa4ac-128">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="026f1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="026f1-126">Request body</span></span>
+<span data-ttu-id="026f1-127">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="026f1-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="fa4ac-129">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="026f1-128">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="026f1-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="fa4ac-130">属性</span><span class="sxs-lookup"><span data-stu-id="fa4ac-130">Property</span></span>|<span data-ttu-id="fa4ac-131">类型</span><span class="sxs-lookup"><span data-stu-id="fa4ac-131">Type</span></span>|<span data-ttu-id="fa4ac-132">说明</span><span class="sxs-lookup"><span data-stu-id="fa4ac-132">Description</span></span>|
+|<span data-ttu-id="026f1-129">属性</span><span class="sxs-lookup"><span data-stu-id="026f1-129">Property</span></span>|<span data-ttu-id="026f1-130">类型</span><span class="sxs-lookup"><span data-stu-id="026f1-130">Type</span></span>|<span data-ttu-id="026f1-131">说明</span><span class="sxs-lookup"><span data-stu-id="026f1-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fa4ac-133">state</span><span class="sxs-lookup"><span data-stu-id="fa4ac-133">state</span></span>|[<span data-ttu-id="fa4ac-134">scheduledRetireState</span><span class="sxs-lookup"><span data-stu-id="fa4ac-134">scheduledRetireState</span></span>](../resources/intune-deviceconfig-scheduledretirestate.md)|<span data-ttu-id="fa4ac-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa4ac-135">Not yet documented</span></span>|
-|<span data-ttu-id="fa4ac-136">managedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="fa4ac-136">managedDeviceIds</span></span>|<span data-ttu-id="fa4ac-137">String collection</span><span class="sxs-lookup"><span data-stu-id="fa4ac-137">String collection</span></span>|<span data-ttu-id="fa4ac-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa4ac-138">Not yet documented</span></span>|
+|<span data-ttu-id="026f1-132">state</span><span class="sxs-lookup"><span data-stu-id="026f1-132">state</span></span>|[<span data-ttu-id="026f1-133">scheduledRetireState</span><span class="sxs-lookup"><span data-stu-id="026f1-133">scheduledRetireState</span></span>](../resources/intune-deviceconfig-scheduledretirestate.md)|<span data-ttu-id="026f1-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="026f1-134">Not yet documented</span></span>|
+|<span data-ttu-id="026f1-135">managedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="026f1-135">managedDeviceIds</span></span>|<span data-ttu-id="026f1-136">String collection</span><span class="sxs-lookup"><span data-stu-id="026f1-136">String collection</span></span>|<span data-ttu-id="026f1-137">尚未记录</span><span class="sxs-lookup"><span data-stu-id="026f1-137">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="fa4ac-139">响应</span><span class="sxs-lookup"><span data-stu-id="fa4ac-139">Response</span></span>
-<span data-ttu-id="fa4ac-140">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-140">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="026f1-138">响应</span><span class="sxs-lookup"><span data-stu-id="026f1-138">Response</span></span>
+<span data-ttu-id="026f1-139">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="026f1-139">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa4ac-141">示例</span><span class="sxs-lookup"><span data-stu-id="fa4ac-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="026f1-140">示例</span><span class="sxs-lookup"><span data-stu-id="026f1-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fa4ac-142">请求</span><span class="sxs-lookup"><span data-stu-id="fa4ac-142">Request</span></span>
-<span data-ttu-id="fa4ac-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="026f1-141">请求</span><span class="sxs-lookup"><span data-stu-id="026f1-141">Request</span></span>
+<span data-ttu-id="026f1-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="026f1-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 
@@ -79,12 +77,11 @@ Content-length: 95
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="fa4ac-144">响应</span><span class="sxs-lookup"><span data-stu-id="fa4ac-144">Response</span></span>
-<span data-ttu-id="fa4ac-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa4ac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="026f1-143">响应</span><span class="sxs-lookup"><span data-stu-id="026f1-143">Response</span></span>
+<span data-ttu-id="026f1-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="026f1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
