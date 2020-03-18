@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationListBoxes
 description: 列出 groupPolicyPresentationListBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0b45f8bb00b3b17bea54730aa7a4f67c67d5083
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64f651735f52f4a29aa03b18261cb765ec73f226
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464685"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804196"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>列出 groupPolicyPresentationListBoxes
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 335
   ]
 }
 ```
-
 
 
 

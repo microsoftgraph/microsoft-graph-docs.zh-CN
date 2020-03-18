@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: 读取 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 363ceb1eca301cb774ef971b18ede26d300e1f03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3082b025d2ae979ed1e197b7a605da8829805fd4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462178"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802956"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>获取 deviceEnrollmentWindowsHelloForBusinessConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -96,7 +94,6 @@ Content-Length: 900
   }
 }
 ```
-
 
 
 

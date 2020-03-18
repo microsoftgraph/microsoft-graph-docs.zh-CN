@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyUploadedDefinitions
 description: 列出 groupPolicyUploadedDefinition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7549d04e728d7b9aeb15185909fe0d81fb32cdd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01fd83bbd4aace0e6663fe4379341336af004400
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463831"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803741"
 ---
 # <a name="list-grouppolicyuploadeddefinitions"></a>列出 groupPolicyUploadedDefinitions
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -38,6 +36,7 @@ ms.locfileid: "42463831"
 -->
 ``` http
 GET /deviceManagement/groupPolicyDefinitions
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitions
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/definitions
 ```
 
@@ -66,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 547
 
 {
   "value": [
@@ -78,13 +77,13 @@ Content-Length: 475
       "categoryPath": "Category Path value",
       "supportedOn": "Supported On value",
       "policyType": "admxIngested",
+      "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
       "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }
   ]
 }
 ```
-
 
 
 

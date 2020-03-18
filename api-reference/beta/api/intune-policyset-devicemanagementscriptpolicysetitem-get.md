@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementScriptPolicySetItem
 description: 读取 deviceManagementScriptPolicySetItem 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 875ad5ac4b04bcc24defdac4dacee25a65737198
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8b513003dfd8dafc7be2e85fe58352a49889a12
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461086"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802375"
 ---
 # <a name="get-devicemanagementscriptpolicysetitem"></a>获取 deviceManagementScriptPolicySetItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 532
   }
 }
 ```
-
 
 
 

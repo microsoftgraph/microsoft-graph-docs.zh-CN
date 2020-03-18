@@ -1,20 +1,18 @@
 ---
 title: 列出 mobileApps
 description: 列出 mobileApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 22d88ba5621e2f715ddcd9cbaa5bee4f6294c9aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3052bf2d59a6dfc0fcd8246fa73ddb3641ef02d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458271"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800765"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -103,7 +101,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

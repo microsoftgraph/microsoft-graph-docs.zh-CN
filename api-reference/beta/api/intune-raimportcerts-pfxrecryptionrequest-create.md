@@ -1,20 +1,18 @@
 ---
 title: 创建 pfxRecryptionRequest
 description: 创建新的 pfxRecryptionRequest 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da46e7525c2dcf2b8ab86eb1a71108fc4577424c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d03cdd29fec84457ad736623b1feb2d389acf3c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460134"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801913"
 ---
 # <a name="create-pfxrecryptionrequest"></a>创建 pfxRecryptionRequest
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +57,7 @@ POST /pfxRecryptionRequests
 |profileId|Guid|尚未记录|
 |为|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
@@ -120,7 +118,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

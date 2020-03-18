@@ -1,20 +1,18 @@
 ---
 title: revokeLicenses 操作
 description: 吊销与特定 appleVolumePurchaseProgramToken 相关联的许可证
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a6fd56a836ac9fc0bc8ae86021934dfc870edfd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ad4c51e85f04d8f8f1bdcd851fea831f0b8fc15
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461667"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802662"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsAutopilotDeploymentProfileAssignments
 description: 列出 windowsAutopilotDeploymentProfileAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dab59f4c477dc3d8bf2934bd3895d46a88aa497
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0989af8909199d1b4694f8af896f3555ccbfd10
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466393"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805057"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>列出 windowsAutopilotDeploymentProfileAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 354
   ]
 }
 ```
-
 
 
 

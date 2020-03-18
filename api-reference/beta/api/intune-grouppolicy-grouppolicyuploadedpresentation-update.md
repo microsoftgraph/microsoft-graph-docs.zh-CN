@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyUploadedPresentation
 description: 更新 groupPolicyUploadedPresentation 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1477903f2dea9179f4691fddf933b6f8491102de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 244cc9206679416cdfee4c7aee61d68b3de4de44
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463747"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803699"
 ---
 # <a name="update-grouppolicyuploadedpresentation"></a>更新 groupPolicyUploadedPresentation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 213
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

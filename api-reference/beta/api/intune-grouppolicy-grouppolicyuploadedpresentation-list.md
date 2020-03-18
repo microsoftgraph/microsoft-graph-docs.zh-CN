@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyUploadedPresentations
 description: 列出 groupPolicyUploadedPresentation 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc3b46313b24ffcfcc14b205b6b22d928111be92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d7c63bd187fc803b0f21879fbfa044cf348b607
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803706"
 ---
 # <a name="list-grouppolicyuploadedpresentations"></a>列出 groupPolicyUploadedPresentations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +76,6 @@ Content-Length: 262
   ]
 }
 ```
-
 
 
 

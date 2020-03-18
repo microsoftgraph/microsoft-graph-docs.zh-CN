@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationLongDecimalTextBoxes
 description: 列出 groupPolicyPresentationLongDecimalTextBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a9cdb841088726d109e16e31b505f450e2058b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1857880ebfc3e88ebbea04b60e074540dfbbe2dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464615"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804161"
 ---
 # <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>列出 groupPolicyPresentationLongDecimalTextBoxes
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +82,6 @@ Content-Length: 411
   ]
 }
 ```
-
 
 
 

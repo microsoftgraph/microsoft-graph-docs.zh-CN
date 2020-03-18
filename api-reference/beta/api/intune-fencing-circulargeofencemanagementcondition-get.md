@@ -1,20 +1,18 @@
 ---
 title: 获取 circularGeofenceManagementCondition
 description: 读取 circularGeofenceManagementCondition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20437615fccb34a82a232e82a6b90e1a1c2163cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 783e01bf6b0b5fa00fccc75741330d8710caf9d3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465952"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804826"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>获取 circularGeofenceManagementCondition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 659
   }
 }
 ```
-
 
 
 

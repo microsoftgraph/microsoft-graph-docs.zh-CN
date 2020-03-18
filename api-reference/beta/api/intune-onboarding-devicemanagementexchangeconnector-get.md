@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementExchangeConnector
 description: 读取 deviceManagementExchangeConnector 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7086c4202546c6fbd583ace2ca25d5cf9337017f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de23ac4186528f2b2ded18da26072a9057deff7f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462157"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802921"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>获取 deviceManagementExchangeConnector
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 580
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 networkIPv4ConfigurationManagementConditions
 description: 列出 networkIPv4ConfigurationManagementCondition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4359547c2c416c0b655bd605e2d6dbef93847a64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 573126777af11334fa9e5b3533ae2c30cb0777d8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804700"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>列出 networkIPv4ConfigurationManagementConditions
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 810
   ]
 }
 ```
-
 
 
 

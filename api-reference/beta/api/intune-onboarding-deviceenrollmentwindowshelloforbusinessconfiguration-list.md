@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: 列出 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 415f2acd4db5835105e8010c6588f27869057bf4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91ce1916c5b6275796a8c248def5a7b4e75e2d8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802949"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 956
   ]
 }
 ```
-
 
 
 

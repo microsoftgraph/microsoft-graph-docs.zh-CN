@@ -1,20 +1,18 @@
 ---
 title: 列出 managedAppProtections
 description: 列出 managedAppProtection 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b26a35635f9cba39ae7c6fa1c1528f5b88f664a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d16f47dadf7b184ac7f43acb56ebe9f343c0a4b9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463375"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803531"
 ---
 # <a name="list-managedappprotections"></a>列出 managedAppProtections
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -130,7 +128,6 @@ Content-Length: 2589
   ]
 }
 ```
-
 
 
 

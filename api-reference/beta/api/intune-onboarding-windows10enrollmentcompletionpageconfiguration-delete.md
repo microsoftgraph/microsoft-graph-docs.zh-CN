@@ -1,20 +1,18 @@
 ---
 title: 删除 windows10EnrollmentCompletionPageConfiguration
 description: 删除 windows10EnrollmentCompletionPageConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 278deda672bc9f1d2a527dade55ec9e1d39bb4a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed59f30c65c9b534fb40646581336ca43e70b784
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461642"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802634"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>删除 windows10EnrollmentCompletionPageConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

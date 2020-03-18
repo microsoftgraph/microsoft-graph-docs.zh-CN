@@ -1,20 +1,18 @@
 ---
 title: 列出 pfxUserCertificates
 description: 列出 pfxUserCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e3b16b9328b4cae2d795e3d623a7844060a45de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b73e4f65d128be1baf98af266234f9d33b8ddd3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460036"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801857"
 ---
 # <a name="list-pfxusercertificates"></a>列出 pfxUserCertificates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 894
   ]
 }
 ```
-
 
 
 

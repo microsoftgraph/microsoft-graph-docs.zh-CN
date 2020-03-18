@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyDefinitionFile
 description: 读取 groupPolicyDefinitionFile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f3c9cb16dcc28fa04924fa903080fdd6264d5dc3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: befb3d00be5e493461fdfb962abfead06cfec05c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465049"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804420"
 ---
 # <a name="get-grouppolicydefinitionfile"></a>获取 groupPolicyDefinitionFile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -39,6 +37,7 @@ ms.locfileid: "42465049"
 ``` http
 GET /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -88,7 +87,6 @@ Content-Length: 514
   }
 }
 ```
-
 
 
 

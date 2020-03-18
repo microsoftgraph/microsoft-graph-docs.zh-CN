@@ -1,20 +1,18 @@
 ---
 title: 创建 complianceManagementPartner
 description: 创建新的 complianceManagementPartner 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f449556df216643ff8d3e72797d105d39934e37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afedb4cb5b55aff57cd599364b2576e590fccd66
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462528"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803075"
 ---
 # <a name="create-compliancemanagementpartner"></a>创建 complianceManagementPartner
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,10 +55,10 @@ POST /deviceManagement/complianceManagementPartners
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|布尔|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|布尔|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|布尔|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|布尔|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔值|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|布尔值|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|布尔值|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|布尔值|适用于 ios 设备的合作伙伴载入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -175,7 +173,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

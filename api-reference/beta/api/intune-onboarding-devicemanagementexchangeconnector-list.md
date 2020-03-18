@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementExchangeConnectors
 description: 列出 deviceManagementExchangeConnector 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12ef6b7f63e31217f65de6fbb4525d7525119fef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b1e748503beabf9219899a9009f3f4cf94b02c4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462129"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802914"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>列出 deviceManagementExchangeConnectors
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +83,6 @@ Content-Length: 616
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyMigrationReport
 description: 读取 groupPolicyMigrationReport 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93eba94c40126f8e4e37394b626f38030c994db0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: caeae01c409be8d4bb84748a3a3b75056a806c90
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465469"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804623"
 ---
 # <a name="get-grouppolicymigrationreport"></a>获取 groupPolicyMigrationReport
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +87,6 @@ Content-Length: 763
   }
 }
 ```
-
 
 
 

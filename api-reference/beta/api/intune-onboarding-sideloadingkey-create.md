@@ -1,20 +1,18 @@
 ---
 title: 创建 sideLoadingKey
 description: 创建新的 sideLoadingKey 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3517b299f2a6d97bba08f49a88dbefa7c393c78f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 504f258c4960ede1ba537b07f937aba16f8345db
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461835"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802732"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

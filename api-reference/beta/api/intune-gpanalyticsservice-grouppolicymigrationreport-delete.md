@@ -1,20 +1,18 @@
 ---
 title: 删除 groupPolicyMigrationReport
 description: 删除 groupPolicyMigrationReport。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 38d432d5b0c0f847d5278b4dd3e18e0256090c6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1aef0652c5001a3562caaf9efb761fd5f8129a22
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804630"
 ---
 # <a name="delete-grouppolicymigrationreport"></a>删除 groupPolicyMigrationReport
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationRep
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

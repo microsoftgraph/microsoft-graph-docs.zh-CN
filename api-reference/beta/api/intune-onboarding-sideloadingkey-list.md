@@ -1,20 +1,18 @@
 ---
 title: 列出 sideLoadingKeies
 description: 列出 sideLoadingKey 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c145ffd90a03756bc05bdd508d36d14cc6107d4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a51e6a7cba8916d8dd939d54450d91da8a5c4ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461765"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802711"
 ---
 # <a name="list-sideloadingkeies"></a>列出 sideLoadingKeies
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 356
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyPresentationValueText
 description: 更新 groupPolicyPresentationValueText 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26a745460214b5253e5916634e22220fae73839d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35e0b53211128b74fd74165e178d9ca9bf68d25c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463880"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803804"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>更新 groupPolicyPresentationValueText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
-
 
 
 

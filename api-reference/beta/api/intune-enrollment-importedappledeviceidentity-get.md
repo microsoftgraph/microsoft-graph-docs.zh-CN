@@ -1,20 +1,18 @@
 ---
 title: 获取 importedAppleDeviceIdentity
 description: 读取 importedAppleDeviceIdentity 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cebca7811657a17a6e62bdb3dce5e63559991d99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 196505af6ad24278572dacf3843bc8ce81799409
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466792"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813118"
 ---
 # <a name="get-importedappledeviceidentity"></a>获取 importedAppleDeviceIdentity
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 672
   }
 }
 ```
-
 
 
 

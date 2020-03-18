@@ -1,20 +1,18 @@
 ---
 title: 获取 managementConditionStatement
 description: 读取 managementConditionStatement 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 16c35a750a390c908d6bb6bf1e870e925081280e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 311cd399f0d8fdf470af0324a63859a1c74fad0b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804756"
 ---
 # <a name="get-managementconditionstatement"></a>获取 managementConditionStatement
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +87,6 @@ Content-Length: 536
   }
 }
 ```
-
 
 
 

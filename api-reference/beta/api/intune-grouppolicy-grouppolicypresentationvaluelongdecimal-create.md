@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationValueLongDecimal
 description: 创建新的 groupPolicyPresentationValueLongDecimal 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dab6446eb34cd532da3319d680cc084ee33f763
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6ab2b368772bec77ee3a8601067e15f4cfe126b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464139"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803902"
 ---
 # <a name="create-grouppolicypresentationvaluelongdecimal"></a>创建 groupPolicyPresentationValueLongDecimal
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 268
   "value": 5
 }
 ```
-
 
 
 

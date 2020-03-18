@@ -1,20 +1,18 @@
 ---
 title: getAssignedRoleDetails 函数
 description: 检索当前已通过身份验证的用户分配的角色定义和角色分配。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b12d085d41a7e9d241fbd7c6d08160b466c1c36
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38b5d704621c0628accf400764a03ba4f422c6aa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801738"
 ---
 # <a name="getassignedroledetails-function"></a>getAssignedRoleDetails 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 245
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementDomainJoinConnectors
 description: 列出 deviceManagementDomainJoinConnector 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e0708c0931f8f1028afd7f96ff34b0d87dcec72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f2cd5a6c989b2088eb2b3b1a5f996e3bc9fdbde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462549"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803089"
 ---
 # <a name="list-devicemanagementdomainjoinconnectors"></a>列出 deviceManagementDomainJoinConnectors
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 341
   ]
 }
 ```
-
 
 
 

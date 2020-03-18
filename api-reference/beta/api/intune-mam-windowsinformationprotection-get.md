@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsInformationProtection
 description: 读取 windowsInformationProtection 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f8b2aad18a525d3b419055f32e2f8f9f812762a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea62afdd2781b64ba4061b93bd74554c60ba2bef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463025"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803349"
 ---
 # <a name="get-windowsinformationprotection"></a>获取 windowsInformationProtection
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -205,7 +203,6 @@ Content-Length: 4405
   }
 }
 ```
-
 
 
 

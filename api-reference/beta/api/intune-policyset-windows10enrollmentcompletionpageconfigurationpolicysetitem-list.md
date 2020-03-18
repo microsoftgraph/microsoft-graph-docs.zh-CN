@@ -1,20 +1,18 @@
 ---
 title: 列出 windows10EnrollmentCompletionPageConfigurationPolicySetItems
 description: 列出 windows10EnrollmentCompletionPageConfigurationPolicySetItem 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4de89ec469222bff994e9563d4b93302a975c2c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac6d499981a6b7235f4429f9ce22e115d49e2a1f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460316"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801997"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurationpolicysetitems"></a>列出 windows10EnrollmentCompletionPageConfigurationPolicySetItems
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 616
   ]
 }
 ```
-
 
 
 

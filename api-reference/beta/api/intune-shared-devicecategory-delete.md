@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceCategory
 description: 删除 deviceCategory。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cae68c48da494ead2f21213fce42a97382103aeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a54dd7e41e9c705f4a349168ca453d3e408c334a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458860"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801241"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -70,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

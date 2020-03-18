@@ -1,20 +1,18 @@
 ---
 title: 更新 embeddedSIMDeviceState
 description: 更新 embeddedSIMDeviceState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23722d12e64d1d6fdcd4bb2ed2942420ae677e69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5331552a43921b1fb0b1dc69784e69fbb96e61a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465910"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804847"
 ---
 # <a name="update-embeddedsimdevicestate"></a>更新 embeddedSIMDeviceState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -108,7 +106,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
 
 
 

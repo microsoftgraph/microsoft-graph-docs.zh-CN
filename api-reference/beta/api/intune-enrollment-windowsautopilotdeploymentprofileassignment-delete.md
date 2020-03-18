@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsAutopilotDeploymentProfileAssignment
 description: 删除 windowsAutopilotDeploymentProfileAssignment。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4aa76c4d7825217f3ee7597be7630340b35936c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cf950b2de93d5f87a79c9fa035f0499e368af99
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466408"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805071"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>删除 windowsAutopilotDeploymentProfileAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceI
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

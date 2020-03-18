@@ -1,20 +1,18 @@
 ---
 title: 创建 windowsInformationProtectionAppLockerFile
 description: 创建新的 windowsInformationProtectionAppLockerFile 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aca3b775053e8f240382274fc6bb62c6b602a113
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f535aebdb57828d1799c26af2c68a3af4c6c9aa4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462976"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803335"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>创建 windowsInformationProtectionAppLockerFile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
 
 
 

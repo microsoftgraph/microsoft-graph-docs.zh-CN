@@ -1,20 +1,18 @@
 ---
 title: 获取 userPFXCertificate
 description: 读取 userPFXCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82e102b0ebe5771d29eb93084b2f14bbefcb1e47
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a82bb8de3ce1c50d190348ec5d61830a73e2ae5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801829"
 ---
 # <a name="get-userpfxcertificate"></a>获取 userPFXCertificate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +87,6 @@ Content-Length: 742
   }
 }
 ```
-
 
 
 

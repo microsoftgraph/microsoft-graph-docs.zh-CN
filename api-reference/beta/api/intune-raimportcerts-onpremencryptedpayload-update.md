@@ -1,20 +1,18 @@
 ---
 title: 更新 onPremEncryptedPayload
 description: 更新 onPremEncryptedPayload 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5df26a27c1e866ceb726551489f8e1c3036c887f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c161734c9617a041ec87c6807e056665e1b49b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460155"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801920"
 ---
 # <a name="update-onpremencryptedpayload"></a>更新 onPremEncryptedPayload
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +62,7 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 |plistTemplate|String|尚未记录|
 |encryptedBlob|Binary|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|
@@ -132,7 +130,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

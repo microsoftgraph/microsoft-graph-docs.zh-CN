@@ -1,20 +1,18 @@
 ---
 title: 列出 roleScopeTagAutoAssignments
 description: 列出 roleScopeTagAutoAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fc567f51883e92a565f8d2880566cd32463a911
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c68b5f4298c892ed88818f2d8b810079891d4c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459363"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801535"
 ---
 # <a name="list-rolescopetagautoassignments"></a>列出 roleScopeTagAutoAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 268
   ]
 }
 ```
-
 
 
 

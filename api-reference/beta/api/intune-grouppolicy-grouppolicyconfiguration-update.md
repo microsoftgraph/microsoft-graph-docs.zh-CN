@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyConfiguration
 description: 更新 groupPolicyConfiguration 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 465829b268ead5ff2ab91e2af975cb4622e70808
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6265e7b9382322a138c39f05f57daa4579452a82
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465238"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804483"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,7 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String 集合|配置的作用域标记列表。|
+|roleScopeTagIds|String collection|配置的作用域标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -103,7 +101,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

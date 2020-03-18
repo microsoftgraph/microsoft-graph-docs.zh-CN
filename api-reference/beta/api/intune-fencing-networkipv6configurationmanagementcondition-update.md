@@ -1,20 +1,18 @@
 ---
 title: 更新 networkIPv6ConfigurationManagementCondition
 description: 更新 networkIPv6ConfigurationManagementCondition 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97600ef54c829dc7c5e82b661da644988121555e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6132452647d8937611996c6464cc1bd1215e1bdb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465588"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804658"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>更新 networkIPv6ConfigurationManagementCondition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,8 +62,8 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |ipV6Prefix|String|要连接到的 IPv6 子网。 例如2001： db8：：/32|
 |ipV6Gateway|String|IPv6 网关地址。 例如2001： db8：：1|
-|ipV6DNSServerList|String 集合|为适配器配置的 IPv6 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV6DNSServerList|String collection|为适配器配置的 IPv6 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 
@@ -130,7 +128,6 @@ Content-Length: 651
   ]
 }
 ```
-
 
 
 

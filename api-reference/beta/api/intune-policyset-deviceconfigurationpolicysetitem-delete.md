@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceConfigurationPolicySetItem
 description: 删除 deviceConfigurationPolicySetItem。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cdc6af03c0f422c1c47fa91a447d1d9bce44813e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dff6f9a5787390efb314c7aec68fe86ed1d71338
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461254"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802417"
 ---
 # <a name="delete-deviceconfigurationpolicysetitem"></a>删除 deviceConfigurationPolicySetItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

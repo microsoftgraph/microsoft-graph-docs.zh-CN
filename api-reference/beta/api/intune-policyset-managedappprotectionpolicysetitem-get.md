@@ -1,20 +1,18 @@
 ---
 title: 获取 managedAppProtectionPolicySetItem
 description: 读取 managedAppProtectionPolicySetItem 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1395c7f39f36b5f285dc3e2a3e4751bd5f5e4fdc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff57549170741b0ae8d5582592f713e44a27094d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460862"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802270"
 ---
 # <a name="get-managedappprotectionpolicysetitem"></a>获取 managedAppProtectionPolicySetItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 606
   }
 }
 ```
-
 
 
 

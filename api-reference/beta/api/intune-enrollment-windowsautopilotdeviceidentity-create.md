@@ -1,16 +1,16 @@
 ---
 title: 创建 windowsAutopilotDeviceIdentity
 description: 创建新的 windowsAutopilotDeviceIdentity 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0761094989125a9b5026fa4529eb3d5eb7f703b5
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6d24c0620eb80be5b3c8e6bd7fbeabd76fc8510e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160016"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805029"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -145,7 +145,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 reportRoot
 description: 更新 reportRoot 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1b58de10b42c1343fda22bf48e3fe02e3be4452
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb267cb28a057818863efbb4f06c96ac88fc0ee7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458145"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800660"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -86,7 +84,6 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
 
 
 

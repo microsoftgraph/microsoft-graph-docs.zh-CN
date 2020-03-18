@@ -1,20 +1,18 @@
 ---
 title: 列出 policySets
 description: 列出 policySet 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bef24dbdab3258c2c6ce16750b4cdc2b50700c20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaa46bd07957296b974828197fcd5963d3ec5859
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460596"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802116"
 ---
 # <a name="list-policysets"></a>列出 policySets
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 578
   ]
 }
 ```
-
 
 
 

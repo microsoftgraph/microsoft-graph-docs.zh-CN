@@ -1,20 +1,18 @@
 ---
 title: 获取 depEnrollmentProfile
 description: 读取 depEnrollmentProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26aa8f8458c2e9910e0b54fcc588534496e11e87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07c2e404ede76c71d06364b9580c6879eebe81e6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467268"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813388"
 ---
 # <a name="get-depenrollmentprofile"></a>获取 depEnrollmentProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +111,6 @@ Content-Length: 1498
   }
 }
 ```
-
 
 
 

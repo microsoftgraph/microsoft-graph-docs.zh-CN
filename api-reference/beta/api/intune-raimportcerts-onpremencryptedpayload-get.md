@@ -1,20 +1,18 @@
 ---
 title: 获取 onPremEncryptedPayload
 description: 读取 onPremEncryptedPayload 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b32c901f00f341191c306f0e6a9ee563a8ac10ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba6ad43f3c119d8eb2b9b7df7974661d91abbb5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801934"
 ---
 # <a name="get-onpremencryptedpayload"></a>获取 onPremEncryptedPayload
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 834
   }
 }
 ```
-
 
 
 

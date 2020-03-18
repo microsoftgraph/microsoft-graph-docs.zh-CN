@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementExportJobs
 description: 列出 deviceManagementExportJob 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 468d0846a3deb73bbe8cc86c40f1632ebe719def
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a374f841371c34190863e1d625b27722bb81ccf7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459139"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801416"
 ---
 # <a name="list-devicemanagementexportjobs"></a>列出 deviceManagementExportJobs
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 538
   ]
 }
 ```
-
 
 
 

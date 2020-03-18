@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementReports
 description: 更新 deviceManagementReports 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49043d957ca0f0e5e30b69abd9524b54a68d025c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e00e9a9f6e9e3ff2e0586f576a118608388cf27
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459104"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801353"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
-
 
 
 

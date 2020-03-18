@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationValueDecimals
 description: 列出 groupPolicyPresentationValueDecimal 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 61ecbace31e33fc2d795af6f99cd8c834a763f69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48948ea11d64a442edf459b3c3f31306ae558c62
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464258"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803951"
 ---
 # <a name="list-grouppolicypresentationvaluedecimals"></a>列出 groupPolicyPresentationValueDecimals
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 317
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: refreshDeviceComplianceReportSummarization 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aef20301d5a781f0e76421779d65711232fb90da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5beab4cfe976ab49e439e21c8e14113b5a2e3583
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801178"
 ---
 # <a name="refreshdevicecompliancereportsummarization-action"></a>refreshDeviceComplianceReportSummarization 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationValueList
 description: 创建新的 groupPolicyPresentationValueList 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d77f344d90ff691b7bf2a16cab2b75f59370f97d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34f320fc8f7a4d59c248fb534a2f008e85a3a48f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464230"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803937"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>创建 groupPolicyPresentationValueList
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -105,7 +103,6 @@ Content-Length: 394
   ]
 }
 ```
-
 
 
 

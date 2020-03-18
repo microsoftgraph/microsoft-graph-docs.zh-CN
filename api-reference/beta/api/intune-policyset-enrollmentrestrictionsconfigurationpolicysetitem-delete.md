@@ -1,20 +1,18 @@
 ---
 title: 删除 enrollmentRestrictionsConfigurationPolicySetItem
 description: 删除 enrollmentRestrictionsConfigurationPolicySetItem。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9040e75a0682159cbb4c8662c9751db540672fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 689cce84c5896bc0c44e66a27a810c4287cfdd11
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461058"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802347"
 ---
 # <a name="delete-enrollmentrestrictionsconfigurationpolicysetitem"></a>删除 enrollmentRestrictionsConfigurationPolicySetItem
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

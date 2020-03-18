@@ -1,20 +1,18 @@
 ---
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92e1026e18c00978da8a1ac115e5d524adde75e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28e27213375c19cf5162155122f151058112a7e6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801724"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -58,7 +56,7 @@ POST /deviceManagement/resourceOperations
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔|确定是否针对按角色分配定义的作用域验证权限。|
+|enabledForScopeValidation|布尔值|确定是否针对按角色分配定义的作用域验证权限。|
 
 
 
@@ -101,7 +99,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

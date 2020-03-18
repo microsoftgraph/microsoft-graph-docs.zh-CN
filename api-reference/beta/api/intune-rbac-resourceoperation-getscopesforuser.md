@@ -1,20 +1,18 @@
 ---
 title: getScopesForUser 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad3136187fa773348fa3e6da3753934a2bc1730f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aeb1ce22db3f60cb375609e74dc567708b422fc4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459791"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801703"
 ---
 # <a name="getscopesforuser-function"></a>getScopesForUser 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 56
   ]
 }
 ```
-
 
 
 

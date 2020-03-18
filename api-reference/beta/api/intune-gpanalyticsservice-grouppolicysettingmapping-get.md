@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicySettingMapping
 description: 读取 groupPolicySettingMapping 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c64818b973f959c5b6185747f476df8a0d4ee010
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d57a719a2bbefb0eb6df1196d4f9d62c7b1db5a0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465427"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804588"
 ---
 # <a name="get-grouppolicysettingmapping"></a>获取 groupPolicySettingMapping
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -68,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReport
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1003
+Content-Length: 1075
 
 {
   "value": {
@@ -95,11 +93,11 @@ Content-Length: 1003
     "settingScope": "device",
     "intuneSettingUriList": [
       "Intune Setting Uri List value"
-    ]
+    ],
+    "intuneSettingDefinitionId": "Intune Setting Definition Id value"
   }
 }
 ```
-
 
 
 

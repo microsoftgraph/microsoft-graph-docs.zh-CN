@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationText
 description: 读取 groupPolicyPresentationText 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31aa12783c6a45aed33c2fbaadf3b87bdcb72bbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ffe1c1d18798906a112307c9606890ff36c57133
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464475"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804098"
 ---
 # <a name="get-grouppolicypresentationtext"></a>获取 groupPolicyPresentationText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 236
   }
 }
 ```
-
 
 
 

@@ -2,19 +2,17 @@
 title: 获取 mobileAppTroubleshootingEvent
 description: 介绍了适用于 Intune 的 Microsoft Graph API Get mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b366103d7dd2c2caf0e2b449e1f61d728268451b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e940caa3da08c1879050a27af0872e03494b745f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800737"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>获取 mobileAppTroubleshootingEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -82,7 +80,6 @@ Content-Length: 143
   }
 }
 ```
-
 
 
 

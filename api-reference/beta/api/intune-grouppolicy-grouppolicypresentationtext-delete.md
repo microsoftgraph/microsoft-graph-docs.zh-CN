@@ -1,20 +1,18 @@
 ---
 title: 删除 groupPolicyPresentationText
 description: 删除 groupPolicyPresentationText。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a77532173f7336c202677ee2d2eb4c24d38121ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9532b8a1ae3b5139503f2ccc8fe7b78eae1e8ce7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464503"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804105"
 ---
 # <a name="delete-grouppolicypresentationtext"></a>删除 groupPolicyPresentationText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

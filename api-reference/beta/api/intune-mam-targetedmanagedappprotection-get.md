@@ -1,20 +1,18 @@
 ---
 title: 获取 targetedManagedAppProtection
 description: 读取 targetedManagedAppProtection 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84cb39615e8a7a271c23efd82618afe1f26465cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d95e79b0a77e5eef72ef5a9a721a7d727110cad8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463172"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803398"
 ---
 # <a name="get-targetedmanagedappprotection"></a>获取 targetedManagedAppProtection
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -133,7 +131,6 @@ Content-Length: 2549
   }
 }
 ```
-
 
 
 

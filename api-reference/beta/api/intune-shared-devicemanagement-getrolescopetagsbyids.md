@@ -1,20 +1,18 @@
 ---
 title: getRoleScopeTagsByIds 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b5c2f59ea04b6a3905c3542d9deb8ab157d9d99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 189ce03e837db02e40c131ad90de2bfc9cfe8d33
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458565"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801052"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -87,7 +85,6 @@ Content-Length: 231
   ]
 }
 ```
-
 
 
 

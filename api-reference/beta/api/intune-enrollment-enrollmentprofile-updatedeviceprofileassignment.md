@@ -1,20 +1,18 @@
 ---
 title: updateDeviceProfileAssignment 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a483922e0e9854a7df5aebdb896ec193c4eedebc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 31202b3e9f970a834fe80a3693fd47dc007478c3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466862"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813139"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +80,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

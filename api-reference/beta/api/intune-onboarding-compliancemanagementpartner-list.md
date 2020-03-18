@@ -1,20 +1,18 @@
 ---
 title: 列出 complianceManagementPartners
 description: 列出 complianceManagementPartner 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 152ec1bee04a25a3d63ff34f58b63a1447d42946
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d36686333ddcd1cb5cf357154a542a67e56718b7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462444"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803054"
 ---
 # <a name="list-compliancemanagementpartners"></a>列出 complianceManagementPartners
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +113,6 @@ Content-Length: 1490
   ]
 }
 ```
-
 
 
 

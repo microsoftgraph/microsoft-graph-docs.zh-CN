@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationValueMultiText
 description: 读取 groupPolicyPresentationValueMultiText 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf1b8fb29c565c36f8b676efca7535937fd41aaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b73cb73f9f66f4b911183456e75d1da8ea54700d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463992"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803853"
 ---
 # <a name="get-grouppolicypresentationvaluemultitext"></a>获取 groupPolicyPresentationValueMultiText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +80,6 @@ Content-Length: 325
   }
 }
 ```
-
 
 
 

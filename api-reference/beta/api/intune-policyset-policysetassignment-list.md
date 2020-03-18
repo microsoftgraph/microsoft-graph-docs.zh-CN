@@ -1,20 +1,18 @@
 ---
 title: 列出 policySetAssignments
 description: 列出 policySetAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a172d63d196c3451da07ace5a0aaa08870c1a1fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: efefdda3cd02d72f3c42e392bd8ec8634dc0f8eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460564"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802081"
 ---
 # <a name="list-policysetassignments"></a>列出 policySetAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 329
   ]
 }
 ```
-
 
 
 

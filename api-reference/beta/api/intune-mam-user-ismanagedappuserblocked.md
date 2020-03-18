@@ -1,20 +1,18 @@
 ---
 title: isManagedAppUserBlocked 函数
 description: 获取受管理的应用程序用户的阻止状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a752c498c5eeaa3ac8efa7eac6e598b66c6e5413
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53f3e49478c9146eb4be1700a21c073af465ae99
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463137"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803377"
 ---
 # <a name="ismanagedappuserblocked-function"></a>isManagedAppUserBlocked 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -71,7 +69,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

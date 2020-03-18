@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyUploadedDefinition
 description: 更新 groupPolicyUploadedDefinition 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d0f31fdb28089c2792d453b00524314128bfb42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4510c6070329a1b242da983327f27555463d59dc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803734"
 ---
 # <a name="update-grouppolicyuploadeddefinition"></a>更新 groupPolicyUploadedDefinition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -40,6 +38,7 @@ ms.locfileid: "42463852"
 PATCH /deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/definition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition
+PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/definitions/{groupPolicyDefinitionId}
 ```
 
@@ -61,7 +60,8 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |categoryPath|String|策略的本地化完整类别路径。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)。 可能的值是：`admxBacked`、`admxIngested`。|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)。 可取值为：`admxBacked`、`admxIngested`。|
+|groupPolicyCategoryId|Guid|继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)的父类别的类别 id|
 |id|String|实体的键。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
@@ -77,25 +77,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 293
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
-  "classType": "machine",
-  "displayName": "Display Name value",
-  "explainText": "Explain Text value",
-  "categoryPath": "Category Path value",
-  "supportedOn": "Supported On value",
-  "policyType": "admxIngested"
-}
-```
-
-### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 406
+Content-length: 361
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
@@ -105,11 +87,30 @@ Content-Length: 406
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d"
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 474
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
+  "classType": "machine",
+  "displayName": "Display Name value",
+  "explainText": "Explain Text value",
+  "categoryPath": "Category Path value",
+  "supportedOn": "Supported On value",
+  "policyType": "admxIngested",
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
   "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

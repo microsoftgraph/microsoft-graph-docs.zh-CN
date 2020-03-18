@@ -1,20 +1,18 @@
 ---
 title: 列出 azureADWindowsAutopilotDeploymentProfiles
 description: 列出 azureADWindowsAutopilotDeploymentProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 256ac3b7ce2d9a6627e11251af92372793c1b745
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7819d549214f0bb5130cfce1d91b2de15ef7830
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467289"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813430"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>列出 azureADWindowsAutopilotDeploymentProfiles
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -107,7 +105,6 @@ Content-Length: 1496
   ]
 }
 ```
-
 
 
 

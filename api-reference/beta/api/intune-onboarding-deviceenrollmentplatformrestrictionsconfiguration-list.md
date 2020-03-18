@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceEnrollmentPlatformRestrictionsConfigurations
 description: 列出 deviceEnrollmentPlatformRestrictionsConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27c1aea8a603bea38c61aa65f3a7d20db097487f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c20d86dc44d76fb3dc04c9ac0fa22cf765cb87a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802984"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>列出 deviceEnrollmentPlatformRestrictionsConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -152,7 +150,6 @@ Content-Length: 3280
   ]
 }
 ```
-
 
 
 

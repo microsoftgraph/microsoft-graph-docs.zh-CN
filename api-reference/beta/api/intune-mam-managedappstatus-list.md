@@ -1,20 +1,18 @@
 ---
 title: 列出 managedAppStatuses
 description: 列出 managedAppStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e5b67f979862acd1ee00e29269f4b4e4a5211ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cfc16c025796f32b2a5aee08a60678d64b5c7ab1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463361"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803489"
 ---
 # <a name="list-managedappstatuses"></a>列出 managedAppStatuses
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +76,6 @@ Content-Length: 227
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementReportSchedule
 description: 更新 deviceManagementReportSchedule 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 292094610627ee65d0a7f675aaae2eb578625dab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e05eb9befc0bbb5283f6e94b6b91f25e1a404d9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459075"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801318"
 ---
 # <a name="update-devicemanagementreportschedule"></a>更新 deviceManagementReportSchedule
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,15 +54,15 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |id|字符串|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
 |subject|String|已传递的计划报告的主题|
-|电子邮件|String 集合|计划报告传递到的电子邮件|
+|电子邮件|String collection|计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
 |reportName|String|报告的名称|
 |filter|String|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|By|String 集合|报表中的列的排序|
+|select|String collection|从报告中选择的列|
+|By|String collection|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
 
 
@@ -134,7 +132,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceAppManagementTask
 description: 读取 deviceAppManagementTask 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1024e66d376eb49e191f83840a7403cd2b851173
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6e372b1730547fb1e3325f89fadc144246bf4c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461317"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802487"
 ---
 # <a name="get-deviceappmanagementtask"></a>获取 deviceAppManagementTask
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 551
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 depMacOSEnrollmentProfile
 description: 读取 depMacOSEnrollmentProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 662ec2d80b8cf7cb3b095b70e2813b3146f79a27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73e931df51dbe15305518f9da65da4e1cb96012d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813318"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>获取 depMacOSEnrollmentProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +107,6 @@ Content-Length: 1396
   }
 }
 ```
-
 
 
 

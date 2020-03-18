@@ -1,20 +1,18 @@
 ---
 title: 列出 locationManagementConditions
 description: 列出 locationManagementCondition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47dd169f2be2caa6af70cd9500807220caece15d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36d8edc56481b7b700131bc9da58f7cab867fcb3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465903"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804798"
 ---
 # <a name="list-locationmanagementconditions"></a>列出 locationManagementConditions
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 512
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除 sideLoadingKey
 description: 删除 sideLoadingKey。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60aff7dd1d1811822c1629b2fff56db375dca5df
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8188ae051e59ec9992e8a7d45da742a45db8ab2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461800"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802725"
 ---
 # <a name="delete-sideloadingkey"></a>删除 sideLoadingKey
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sid
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

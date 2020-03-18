@@ -1,20 +1,18 @@
 ---
 title: 创建 onPremEncryptedPayload
 description: 创建新的 onPremEncryptedPayload 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c5a045a517fe5fc2b7d33ccf052be169114df89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14e18210dc4ea362a8fcf0e685a8f1d272ad1773
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460176"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801948"
 ---
 # <a name="create-onpremencryptedpayload"></a>创建 onPremEncryptedPayload
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +62,7 @@ POST /onPremEncryptedPayloads
 |plistTemplate|String|尚未记录|
 |encryptedBlob|Binary|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|
@@ -132,7 +130,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

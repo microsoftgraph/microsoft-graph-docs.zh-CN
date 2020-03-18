@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyConfigurationAssignment
 description: 更新 groupPolicyConfigurationAssignment 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a947cae7dd241d11a704ccc9aec10ad45e1c6f41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb986c1c91ccd7d5afcc200201d40eb9d6346a68
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465210"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804441"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>更新 groupPolicyConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +93,6 @@ Content-Length: 287
   }
 }
 ```
-
 
 
 

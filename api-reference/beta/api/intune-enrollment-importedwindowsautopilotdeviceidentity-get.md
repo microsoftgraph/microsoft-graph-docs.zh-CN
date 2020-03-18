@@ -1,20 +1,18 @@
 ---
 title: 获取 importedWindowsAutopilotDeviceIdentity
 description: 读取 importedWindowsAutopilotDeviceIdentity 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 938b7d0f61c4b2a19437d6e994529320b8c6a128
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88cbf4a2682e3f23ffc84b6d3f0c5a77a3e292af
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466540"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805106"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +89,6 @@ Content-Length: 779
   }
 }
 ```
-
 
 
 

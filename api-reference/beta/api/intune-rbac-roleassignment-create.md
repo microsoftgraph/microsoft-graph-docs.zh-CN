@@ -1,20 +1,18 @@
 ---
 title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68941fae28efa5f7f66adefa8245610213f5aa59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ecf81f0e976cfba9bb159d8234a6118dd129b24
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459651"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801682"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +107,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: managedDeviceEnrollmentAbandonmentDetails 函数
 description: 注册 abandonment 详细信息报告的元数据
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae34f9a85624d8e08d2529ec881338aef212aa39
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3652904e9b8b3bb1e2e46228a1b8ff5f7f5ca58b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458180"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800695"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -84,7 +82,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

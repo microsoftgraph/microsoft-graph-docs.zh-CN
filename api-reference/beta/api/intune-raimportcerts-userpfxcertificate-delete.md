@@ -1,20 +1,18 @@
 ---
 title: 删除 userPFXCertificate
 description: 删除 userPFXCertificate。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cafa414ce73bc9d00936d21b5df3f10ac2564ffa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 624d8d539e7965e0baa0b2efaa149c261c329dfa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801836"
 ---
 # <a name="delete-userpfxcertificate"></a>删除 userPFXCertificate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates/{us
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

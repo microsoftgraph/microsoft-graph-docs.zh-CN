@@ -1,20 +1,18 @@
 ---
 title: 删除 groupPolicyPresentationCheckBox
 description: 删除 groupPolicyPresentationCheckBox。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48667fc9014e556b8df8ab14db6a948648f77c49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b34bab811f656c3284e6c8358abbea73a357d315
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464965"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804350"
 ---
 # <a name="delete-grouppolicypresentationcheckbox"></a>删除 groupPolicyPresentationCheckBox
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

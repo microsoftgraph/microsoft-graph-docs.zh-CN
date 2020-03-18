@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationCheckBox
 description: 读取 groupPolicyPresentationCheckBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb848752a694d106ce43cbfdd6a724900be9323f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a8aab3706f9981ab115ad8f6e7b94ae239f6be5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464986"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804343"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>获取 groupPolicyPresentationCheckBox
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

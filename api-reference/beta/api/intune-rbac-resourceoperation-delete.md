@@ -1,20 +1,18 @@
 ---
 title: 删除 resourceOperation
 description: 删除 resourceOperation。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb2f9a20c24a0b053dce826b837d26d7e3e4f578
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3385304aa77700f94218442240ed052192358d93
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459770"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801717"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{res
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

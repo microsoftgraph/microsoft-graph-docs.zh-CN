@@ -1,20 +1,18 @@
 ---
 title: 更新 groupPolicyPresentationValueLongDecimal
 description: 更新 groupPolicyPresentationValueLongDecimal 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bdefa04510d41afd5ff065fbc01adc3da776745
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5141f907f3cee59d50535fcb6c9ff71549a65841
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464020"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803874"
 ---
 # <a name="update-grouppolicypresentationvaluelongdecimal"></a>更新 groupPolicyPresentationValueLongDecimal
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 268
   "value": 5
 }
 ```
-
 
 
 

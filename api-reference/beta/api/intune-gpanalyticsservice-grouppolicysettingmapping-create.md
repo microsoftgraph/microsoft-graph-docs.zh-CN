@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicySettingMapping
 description: 创建新的 groupPolicySettingMapping 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35c568fcaee401f249923e047d25d874a9dbc0eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cedc99c795c5aa647499bac49293464c3eeadece
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465448"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804602"
 ---
 # <a name="create-grouppolicysettingmapping"></a>创建 groupPolicySettingMapping
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +53,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |:---|:---|:---|
 |id|String|尚未记录|
 |parentId|String|组策略设置的父 Id。|
-|childIdList|String 集合|组策略设置的子 Id 列表。|
+|childIdList|String collection|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
 |settingValue|String|此组策略设置的值。|
 |settingValueType|String|此组策略设置的值类型。|
@@ -68,10 +66,11 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |mdmSettingUri|String|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
-|isMdmSupported|布尔|指示此设置是否由 Intune 支持|
+|isMdmSupported|布尔值|指示此设置是否由 Intune 支持|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingDefinitionId|String|Intune 设置定义 Id|
 
 
 
@@ -85,7 +84,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings
 Content-type: application/json
-Content-length: 887
+Content-length: 957
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -110,7 +109,8 @@ Content-length: 887
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
 
@@ -119,7 +119,7 @@ Content-length: 887
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 1006
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -145,10 +145,10 @@ Content-Length: 936
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
-
 
 
 

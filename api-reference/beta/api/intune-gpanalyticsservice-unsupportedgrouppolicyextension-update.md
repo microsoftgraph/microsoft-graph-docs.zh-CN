@@ -1,20 +1,18 @@
 ---
 title: 更新 unsupportedGroupPolicyExtension
 description: 更新 unsupportedGroupPolicyExtension 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd6843a1d899a2e65b95ada5eb6ee29f07f2f40d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b4e7d5656d78178a445d98c789d70246919ee07
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465308"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804539"
 ---
 # <a name="update-unsupportedgrouppolicyextension"></a>更新 unsupportedGroupPolicyExtension
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

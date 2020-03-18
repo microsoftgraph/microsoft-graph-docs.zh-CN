@@ -1,20 +1,18 @@
 ---
 title: 获取 onPremisesConditionalAccessSettings
 description: 读取 onPremisesConditionalAccessSettings 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84d1971a5c1e666b6c4f6a425a9090bd2b258888
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd048231a797ebcf4f791bfd735fcb3f0a44dd88
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461870"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802774"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>获取 onPremisesConditionalAccessSettings
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

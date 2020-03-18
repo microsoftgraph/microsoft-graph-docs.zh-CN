@@ -1,20 +1,18 @@
 ---
 title: 列出 vppTokens
 description: 列出 vppToken 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4abf542d692595e8de8b3b8757519693461144c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5839e6149ac3e4ad003f07d61e92854d7edacded
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461674"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802669"
 ---
 # <a name="list-vpptokens"></a>列出 vppTokens
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -103,7 +101,6 @@ Content-Length: 1264
   ]
 }
 ```
-
 
 
 

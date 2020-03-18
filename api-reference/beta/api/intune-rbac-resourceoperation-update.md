@@ -1,20 +1,18 @@
 ---
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 232fb06c4962a77429540b2a4f890ce912618146
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b12d4c66c84d5e18cd81c3cd2bd90809eef400fc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459722"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801689"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -58,7 +56,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔|确定是否针对按角色分配定义的作用域验证权限。|
+|enabledForScopeValidation|布尔值|确定是否针对按角色分配定义的作用域验证权限。|
 
 
 
@@ -101,7 +99,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

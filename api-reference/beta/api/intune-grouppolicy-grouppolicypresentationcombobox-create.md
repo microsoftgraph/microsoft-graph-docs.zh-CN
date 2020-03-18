@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationComboBox
 description: 创建新的 groupPolicyPresentationComboBox 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95e693ff7c4861659a33f363c10a7fc6887bfe44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c6259a0694a4d7468c3ce6b0bfaa9ba5595e1bd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464902"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804322"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>创建 groupPolicyPresentationComboBox
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,8 +55,8 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|组合框中显示的本地化默认字符串。 默认值为空白。|
-|推荐|String 集合|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|布尔|指定是否必须为参数指定值。 默认值为 false。|
+|推荐|String collection|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
+|必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为1023。|
 
 
@@ -107,7 +105,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

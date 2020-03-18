@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementScript
 description: 读取 deviceManagementScript 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb1b960b0153ca3201b816863b3de2a7ed8d96d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bbca2be20bcac217ac09d872afe7ceac2690af9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458488"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800961"
 ---
 # <a name="get-devicemanagementscript"></a>获取 deviceManagementScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -96,7 +94,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

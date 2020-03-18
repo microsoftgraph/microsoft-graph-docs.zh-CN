@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationDecimalTextBox
 description: 读取 groupPolicyPresentationDecimalTextBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e33f9f0c3e6ad9e75dea547658d22b75c2284e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66efd065b22ed448fbebb0ccbb94a094c3231e49
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464797"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804273"
 ---
 # <a name="get-grouppolicypresentationdecimaltextbox"></a>获取 groupPolicyPresentationDecimalTextBox
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 373
   }
 }
 ```
-
 
 
 

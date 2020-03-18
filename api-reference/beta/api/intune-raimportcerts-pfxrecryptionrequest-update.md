@@ -1,20 +1,18 @@
 ---
 title: 更新 pfxRecryptionRequest
 description: 更新 pfxRecryptionRequest 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1bd51caa6aa72fffc03da24265f5a11e9fa9550
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71ba546291d3e25847240ca11efb2db64929f74d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460141"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801885"
 ---
 # <a name="update-pfxrecryptionrequest"></a>更新 pfxRecryptionRequest
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +57,7 @@ PATCH /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 |profileId|Guid|尚未记录|
 |为|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
@@ -120,7 +118,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

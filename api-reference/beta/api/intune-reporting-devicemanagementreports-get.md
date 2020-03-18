@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementReports
 description: 读取 deviceManagementReports 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e439ce9c2a864b9901590dab70ffab309d9e50d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f6eb0f9c222f114c7c4ca8daaf316c3d745e81d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459174"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801402"
 ---
 # <a name="get-devicemanagementreports"></a>获取 deviceManagementReports
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +75,6 @@ Content-Length: 137
   }
 }
 ```
-
 
 
 

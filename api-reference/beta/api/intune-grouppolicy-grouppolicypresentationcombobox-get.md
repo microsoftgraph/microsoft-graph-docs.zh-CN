@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationComboBox
 description: 读取 groupPolicyPresentationComboBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ccd7029bdef05e71fa2e9678167712e6503ed4dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc34b26123646e2aab1430ff06f9944f36e31392
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804308"
 ---
 # <a name="get-grouppolicypresentationcombobox"></a>获取 groupPolicyPresentationComboBox
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

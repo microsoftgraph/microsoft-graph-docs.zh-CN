@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceAndAppManagementRoleDefinition
 description: 删除 deviceAndAppManagementRoleDefinition。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5e22506644b365b75ba1b464556a9eb31d6da34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d39ce91e2249cf829313531a6bad24c5b8c540d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801766"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>删除 deviceAndAppManagementRoleDefinition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

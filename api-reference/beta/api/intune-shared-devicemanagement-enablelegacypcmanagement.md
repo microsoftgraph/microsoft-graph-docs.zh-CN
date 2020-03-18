@@ -1,16 +1,16 @@
 ---
 title: enableLegacyPcManagement 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e54d6c24f78ea19943f66be5b2e4d00daa5f5b89
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 5b006bdb26e1144169afb561bac1a25c570cfd09
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940003"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801080"
 ---
 # <a name="enablelegacypcmanagement-action"></a>enableLegacyPcManagement 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "39940003"
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -42,7 +42,7 @@ POST /deviceManagement/enableLegacyPcManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableLegacyPcManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

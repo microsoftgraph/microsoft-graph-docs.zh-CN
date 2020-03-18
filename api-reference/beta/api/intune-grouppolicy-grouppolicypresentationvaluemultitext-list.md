@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationValueMultiTexts
 description: 列出 groupPolicyPresentationValueMultiText 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 409b6ae99bc6850c241e202264516642af8d9e3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eefae2940f61cb19f1ba4bc1d8798bd8bc377098
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463978"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803846"
 ---
 # <a name="list-grouppolicypresentationvaluemultitexts"></a>列出 groupPolicyPresentationValueMultiTexts
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 353
   ]
 }
 ```
-
 
 
 

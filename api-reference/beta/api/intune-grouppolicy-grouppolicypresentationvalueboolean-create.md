@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationValueBoolean
 description: 创建新的 groupPolicyPresentationValueBoolean 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50dc02436bf61ce9bd27dc23a97b032603f9974c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd4cf6ba8a7205aadd13e8b4b1d3824d0f812745
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464300"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804007"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>创建 groupPolicyPresentationValueBoolean
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 267
   "value": true
 }
 ```
-
 
 
 

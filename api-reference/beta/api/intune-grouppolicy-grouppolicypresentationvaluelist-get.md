@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyPresentationValueList
 description: 读取 groupPolicyPresentationValueList 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c7cd500bce4974f56c101caae416a5752075a26
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a45bfaa69db79fb7de47da07b8f0cd5afc6d48eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464237"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803923"
 ---
 # <a name="get-grouppolicypresentationvaluelist"></a>获取 groupPolicyPresentationValueList
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 435
   }
 }
 ```
-
 
 
 

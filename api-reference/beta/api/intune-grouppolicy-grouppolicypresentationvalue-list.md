@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationValues
 description: 列出 groupPolicyPresentationValue 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7691bb87c12ffa377351c5ca25d8284cda903b4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2756e8dbfbdb007a13040b823c0de51860a002ee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804021"
 ---
 # <a name="list-grouppolicypresentationvalues"></a>列出 groupPolicyPresentationValues
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +76,6 @@ Content-Length: 291
   ]
 }
 ```
-
 
 
 

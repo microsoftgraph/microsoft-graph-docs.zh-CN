@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsAutopilotDeviceIdentity
 description: 更新 windowsAutopilotDeviceIdentity 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62d9fe2db7a47780db956afda44e834154d0ce25
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 4d54568b2d45a4742f4dd36be5fdd700e7ea16f3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160009"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804987"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>更新 windowsAutopilotDeviceIdentity
 
@@ -145,7 +145,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 complianceManagementPartner
 description: 更新 complianceManagementPartner 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8746d85119b8d9da2e7e4994b16984ad5ffb5cd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 816b0c24c104432852ce81e2b4151fcfab694e26
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803047"
 ---
 # <a name="update-compliancemanagementpartner"></a>更新 complianceManagementPartner
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,10 +55,10 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|布尔|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|布尔|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|布尔|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|布尔|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔值|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|布尔值|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|布尔值|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|布尔值|适用于 ios 设备的合作伙伴载入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -175,7 +173,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

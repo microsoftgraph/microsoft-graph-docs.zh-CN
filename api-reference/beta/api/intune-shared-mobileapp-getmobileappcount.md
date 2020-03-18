@@ -1,20 +1,18 @@
 ---
 title: 了 getmobileappcount 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b00e12a0810ba89ca868e6a1f4d9146ca351997
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c0c0e78046ad9c9ff2833adf6b68c97ca8508d9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458299"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800793"
 ---
 # <a name="getmobileappcount-function"></a>了 getmobileappcount 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +52,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 
 |属性|类型|说明|
 |:---|:---|:---|
-|status|String|尚未记录|
+|状态|String|尚未记录|
 
 
 
@@ -80,7 +78,6 @@ Content-Length: 18
   "value": 1
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 managedMobileApp
 description: 创建新的 managedMobileApp 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1594c06e87aa89f8b599c27426769a28740a0300
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6363932442346dbbcfb7350a7ba020de384df53
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463291"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803468"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +97,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
 
 
 

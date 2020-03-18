@@ -1,20 +1,18 @@
 ---
 title: getTopMobileApps 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97391d1a8c7f9a14f67159f5065a9ba2a282fc95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd77e9ef52131844f46f4551e882f289ebcc345f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458285"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800779"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +52,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|status|String|尚未记录|
+|状态|String|尚未记录|
 |count|Int64|尚未记录|
 
 
@@ -109,7 +107,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

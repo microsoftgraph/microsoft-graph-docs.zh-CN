@@ -1,20 +1,18 @@
 ---
 title: deviceConfigurationDeviceActivity 函数
 description: 设备配置设备活动报告的元数据
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68ea1e7e8eeacf7b7582bedbb65ffd27515e1967
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f215748ff5b694e493a1bc01403e69e52951b642
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458215"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800716"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -74,7 +72,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

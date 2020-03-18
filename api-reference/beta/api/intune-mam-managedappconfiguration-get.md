@@ -1,20 +1,18 @@
 ---
 title: 获取 managedAppConfiguration
 description: 读取 managedAppConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c1d060ace777ba2a00598e2e0406cc06e34d07f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36144920571d012b3fc03a7ae983d1528cc8f832
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463627"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803622"
 ---
 # <a name="get-managedappconfiguration"></a>获取 managedAppConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +92,6 @@ Content-Length: 618
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 reportRoot
 description: 读取 reportRoot 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb399f31ab00ae0dd4fd6f229871248ec2ad1ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9cbc8a52895f64d4a05a1204a15f058e8a87701d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458201"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800702"
 ---
 # <a name="get-reportroot"></a>获取 reportRoot
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -78,7 +76,6 @@ Content-Length: 124
   }
 }
 ```
-
 
 
 

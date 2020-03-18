@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceAppManagementTask
 description: 更新 deviceAppManagementTask 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 814ac463d788ffe6749ac1c472ba945be4d58c2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b70cb306609e80165f8dbbb79726811616da9c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461243"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802473"
 ---
 # <a name="update-deviceappmanagementtask"></a>更新 deviceAppManagementTask
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +61,7 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 |创建|String|创建者的电子邮件地址。|
 |creatorNotes|String|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
+|状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
 
 
@@ -115,7 +113,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 networkIPv4ConfigurationManagementCondition
 description: 更新 networkIPv4ConfigurationManagementCondition 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a83846ef68cc38e28e7634209ccd9b7117ae9e56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d8edc9742608583aa8f7451030959fa3e7f8978
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465644"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804693"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>更新 networkIPv4ConfigurationManagementCondition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,8 +63,8 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |ipV4Prefix|String|要连接到的 IPv4 子网。 例如，10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
-|ipV4DNSServerList|String 集合|为适配器配置的 IPv4 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 
@@ -133,7 +131,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 groupPolicyConfigurationAssignment
 description: 读取 groupPolicyConfigurationAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67a2b296b980360d913e1671c3408b28a47d3d6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04bfd63b15fbd50d36dcab640130e5f8ba6ff625
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804455"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>获取 groupPolicyConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 318
   }
 }
 ```
-
 
 
 

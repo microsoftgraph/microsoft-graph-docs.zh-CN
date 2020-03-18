@@ -1,20 +1,18 @@
 ---
 title: 创建 managementConditionStatement
 description: 创建新的 managementConditionStatement 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 954218aa1493bac9a414142c2c9b8782499ccadc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c73bd08d3736b90803dd80c56f370e08f2fb5c3e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465805"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804770"
 ---
 # <a name="create-managementconditionstatement"></a>创建 managementConditionStatement
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +113,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 

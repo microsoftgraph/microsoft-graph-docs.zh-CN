@@ -1,20 +1,18 @@
 ---
 title: 列出 groupPolicyPresentationComboBoxes
 description: 列出 groupPolicyPresentationComboBox 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1679300e479b76225de596674045c852afdbdc76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a25cd50b3012a6ac8cff4d2dcb08e168bba48ea4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804301"
 ---
 # <a name="list-grouppolicypresentationcomboboxes"></a>列出 groupPolicyPresentationComboBoxes
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +82,6 @@ Content-Length: 419
   ]
 }
 ```
-
 
 
 

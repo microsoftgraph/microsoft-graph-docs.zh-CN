@@ -1,20 +1,18 @@
 ---
 title: 删除 complianceManagementPartner
 description: 删除 complianceManagementPartner。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8683c82ee203a16c822a288a171d32d717191a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c394591651179979e53c57876705d2943ee6ba81
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462516"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803068"
 ---
 # <a name="delete-compliancemanagementpartner"></a>删除 complianceManagementPartner
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

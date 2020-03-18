@@ -1,20 +1,18 @@
 ---
 title: 创建 windows10EnrollmentCompletionPageConfiguration
 description: 创建新的 windows10EnrollmentCompletionPageConfiguration 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3efa2a669ac11123bd4480b7a3092717528c932
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1491378ce10b53cba89573e2863cb897995072d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461632"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802641"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -60,16 +58,16 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
-|showInstallationProgress|布尔|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|布尔|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
+|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
-|trackInstallProgressForAutopilotOnly|布尔|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|布尔|仅显示第一个用户后期注册的安装进度|
+|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
+|trackInstallProgressForAutopilotOnly|布尔值|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|布尔值|仅显示第一个用户后期注册的安装进度|
 
 
 
@@ -136,7 +134,6 @@ Content-Length: 856
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: importDeviceIdentityList 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c41b74df62ab444b86ad3c8e2f009413d94aa94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f9a7128b4d49137cf722b5556c64049049c8d190
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466624"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805212"
 ---
 # <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +113,6 @@ Content-Length: 606
   ]
 }
 ```
-
 
 
 

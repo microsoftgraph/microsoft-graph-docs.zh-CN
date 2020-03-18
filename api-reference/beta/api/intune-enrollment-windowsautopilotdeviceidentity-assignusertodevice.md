@@ -1,16 +1,16 @@
 ---
 title: assignUserToDevice 操作
 description: 将用户分配给 Autopilot 设备。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebf637670b8ddf09774050d03c199fffffe98bc0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c974720ab6f1efca4daa6c3d8ec3b0ad25a40143
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943710"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805036"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "39943710"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -42,7 +42,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|字符串|尚未记录|
+|userPrincipalName|String|尚未记录|
 |addressableUserName|String|尚未记录|
 
 
@@ -81,7 +81,6 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

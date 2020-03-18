@@ -1,20 +1,18 @@
 ---
 title: sendCustomNotificationToCompanyPortal 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d86d826b79af77d1f18a677f93f9e488ca6a0050
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed98614436bf5cd6c9adea9b5c7d1059c34ec141
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458551"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801038"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -85,7 +83,6 @@ Content-length: 164
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

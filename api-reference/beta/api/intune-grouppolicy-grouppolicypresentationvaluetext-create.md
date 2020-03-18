@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationValueText
 description: 创建新的 groupPolicyPresentationValueText 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d55d0722bd2dea44c1c4f787a72d183b202d6535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40ca32d1e4bd4969a16831621d87a3014a9a8fa9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463957"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803832"
 ---
 # <a name="create-grouppolicypresentationvaluetext"></a>创建 groupPolicyPresentationValueText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
-
 
 
 

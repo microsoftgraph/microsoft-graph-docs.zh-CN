@@ -1,20 +1,18 @@
 ---
 title: 获取 vppToken
 description: 读取 vppToken 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a37b16f4a28cb5a6ffbef5a0920f95de6c9daf0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c06198bf3123adc1d30b0ecfcafe5b38be22c256
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461779"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802683"
 ---
 # <a name="get-vpptoken"></a>获取 vppToken
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -104,7 +102,6 @@ Content-Length: 1192
   }
 }
 ```
-
 
 
 

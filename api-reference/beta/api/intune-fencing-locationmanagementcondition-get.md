@@ -1,20 +1,18 @@
 ---
 title: 获取 locationManagementCondition
 description: 读取 locationManagementCondition 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29c969a09116055144469605105974c373d77062
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9820f7688f0b1cfffbfd0c62bf2d8efa64220cc7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465945"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804805"
 ---
 # <a name="get-locationmanagementcondition"></a>获取 locationManagementCondition
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 476
   }
 }
 ```
-
 
 
 

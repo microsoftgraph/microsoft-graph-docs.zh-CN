@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementPartner
 description: 更新 deviceManagementPartner 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 200897b4f4060b1e94f6a72c61c267202c609c19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b7c387b0cc3248caaf1b47a7933b4b7fd20ab3f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462045"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802851"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -133,7 +131,6 @@ Content-Length: 946
   ]
 }
 ```
-
 
 
 

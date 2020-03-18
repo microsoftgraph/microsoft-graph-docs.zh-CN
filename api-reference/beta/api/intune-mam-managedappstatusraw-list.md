@@ -1,20 +1,18 @@
 ---
 title: 列出 managedAppStatusRaws
 description: 列出 managedAppStatusRaw 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3be6c660d07e92655781d51318cbe77434ec80d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ed40045e1f9e823bba88b9b551470de0ed1fc13
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463277"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803475"
 ---
 # <a name="list-managedappstatusraws"></a>列出 managedAppStatusRaws
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 307
   ]
 }
 ```
-
 
 
 

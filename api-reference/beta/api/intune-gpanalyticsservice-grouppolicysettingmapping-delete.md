@@ -1,20 +1,18 @@
 ---
 title: 删除 groupPolicySettingMapping
 description: 删除 groupPolicySettingMapping。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32afcd7b761457c521b55bb8020f1668286dce1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23937b54f5c0c6f6853a65e69493ce969f3c3c3f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804595"
 ---
 # <a name="delete-grouppolicysettingmapping"></a>删除 groupPolicySettingMapping
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationRep
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

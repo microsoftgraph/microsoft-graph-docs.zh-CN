@@ -1,16 +1,16 @@
 ---
 title: 创建 deviceAppManagementTask
 description: 创建新的 deviceAppManagementTask 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0559c055e47079ff0054c48dc049a920d98f6de1
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b532fb65a66f0b40b05dc97de150bff6099ac8f4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941335"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802501"
 ---
 # <a name="create-deviceappmanagementtask"></a>创建 deviceAppManagementTask
 
@@ -27,7 +27,7 @@ ms.locfileid: "39941335"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceAppManagement/deviceAppManagementTasks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,8 +58,8 @@ POST /deviceAppManagement/deviceAppManagementTasks
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
-|创建|字符串|创建者的电子邮件地址。|
-|creatorNotes|字符串|来自创建者的注释。|
+|创建|String|创建者的电子邮件地址。|
+|creatorNotes|String|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
 |状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
@@ -113,7 +113,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

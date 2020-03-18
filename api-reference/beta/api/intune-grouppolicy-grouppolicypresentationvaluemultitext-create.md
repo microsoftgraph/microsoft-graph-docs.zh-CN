@@ -1,20 +1,18 @@
 ---
 title: 创建 groupPolicyPresentationValueMultiText
 description: 创建新的 groupPolicyPresentationValueMultiText 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc58ccd51909f70a0ebd9d9b92adbe72782aa2cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0488f378ebf4de78a693dc6f49cebc2de28f957
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803867"
 ---
 # <a name="create-grouppolicypresentationvaluemultitext"></a>创建 groupPolicyPresentationValueMultiText
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,7 +54,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|String 集合|关联演示文稿的非空字符串的集合。|
+|values|String collection|关联演示文稿的非空字符串的集合。|
 
 
 
@@ -97,7 +95,6 @@ Content-Length: 292
   ]
 }
 ```
-
 
 
 

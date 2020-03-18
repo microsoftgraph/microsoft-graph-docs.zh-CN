@@ -1,20 +1,18 @@
 ---
 title: 更新 mobileThreatDefenseConnector
 description: 更新 mobileThreatDefenseConnector 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b33f9b10d5d319e8f46f7a49f21281b8612b16b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6e55ef5a3fa57af06b1e1cb3b14ef394c27e3d8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461905"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802781"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,19 +54,19 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
-|androidMobileApplicationManagementEnabled|布尔|对于 Android，请设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
-|iosMobileApplicationManagementEnabled|布尔|对于 IOS，获取或设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
-|androidEnabled|布尔|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|iosEnabled|布尔|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|windowsEnabled|布尔|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
-|macEnabled|布尔|对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
-|androidDeviceBlockedOnMissingPartnerData|布尔|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|iosDeviceBlockedOnMissingPartnerData|布尔|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|windowsDeviceBlockedOnMissingPartnerData|布尔|对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据|
-|macDeviceBlockedOnMissingPartnerData|布尔|对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据|
+|androidMobileApplicationManagementEnabled|布尔值|对于 Android，请设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
+|iosMobileApplicationManagementEnabled|布尔值|对于 IOS，获取或设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
+|androidEnabled|布尔值|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|iosEnabled|布尔值|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|windowsEnabled|布尔值|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
+|macEnabled|布尔值|对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
+|androidDeviceBlockedOnMissingPartnerData|布尔值|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|iosDeviceBlockedOnMissingPartnerData|布尔值|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|windowsDeviceBlockedOnMissingPartnerData|布尔值|对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据|
+|macDeviceBlockedOnMissingPartnerData|布尔值|对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据|
 |partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
 |partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
-|allowPartnerToCollectIOSApplicationMetadata|布尔|对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据|
+|allowPartnerToCollectIOSApplicationMetadata|布尔值|对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据|
 
 
 
@@ -131,7 +129,6 @@ Content-Length: 775
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

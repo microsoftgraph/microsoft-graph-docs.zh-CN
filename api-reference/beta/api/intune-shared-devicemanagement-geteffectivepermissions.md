@@ -1,20 +1,18 @@
 ---
 title: getEffectivePermissions 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c979799f2cd76ee2e1bc676f6b43442648d9ff3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e480b90dba719f52d49c4afb8fc2646be7d4660
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458572"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801059"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -96,7 +94,6 @@ Content-Length: 471
   ]
 }
 ```
-
 
 
 

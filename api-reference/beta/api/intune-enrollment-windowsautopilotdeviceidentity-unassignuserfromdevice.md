@@ -1,20 +1,18 @@
 ---
 title: unassignUserFromDevice 操作
 description: 将用户从 Autopilot 设备取消分配。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca6bc6d305aa7bb4cf4bb8dc3d060e485cffef0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 254a312a0911e476507a9af16976f8aafe307ae7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466281"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804994"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: scopedForResource 函数
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d7737e4cecc258d03e07ab9c5b235f2ba0efe31
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21b683f56c39bcb7bdd62354a504992a197065af
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801731"
 ---
 # <a name="scopedforresource-function"></a>scopedForResource 函数
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +76,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

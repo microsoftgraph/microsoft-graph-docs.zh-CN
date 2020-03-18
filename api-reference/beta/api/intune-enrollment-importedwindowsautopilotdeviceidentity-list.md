@@ -1,20 +1,18 @@
 ---
 title: 列表 importedWindowsAutopilotDeviceIdentities
 description: 列表属性和importedWindowsAutopilotDeviceIdentity对象关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b5a654939f4cc42e94278fbd48f77f8e9967c61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d91093ce3ae8cc9e67aaeef65de039998ab715b8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466575"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805092"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 825
   ]
 }
 ```
-
 
 
 
