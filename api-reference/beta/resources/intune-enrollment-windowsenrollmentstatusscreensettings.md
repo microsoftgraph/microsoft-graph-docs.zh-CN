@@ -1,20 +1,18 @@
 ---
 title: windowsEnrollmentStatusScreenSettings 资源类型
 description: 注册状态屏幕设置
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3758dd850a5c98ea2c0ddad4d261fc9a7388ac3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5e167652c57ad7380b7185865dd1437819dbe68
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528230"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783338"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,13 +23,13 @@ ms.locfileid: "42528230"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hideInstallationProgress|布尔|显示或隐藏用户的安装进度|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔|在配置文件和应用安装完成之前允许或阻止用户使用设备|
-|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
-|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
+|hideInstallationProgress|布尔值|显示或隐藏用户的安装进度|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔值|在配置文件和应用安装完成之前允许或阻止用户使用设备|
+|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
+|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
 
 ## <a name="relationships"></a>关系
 无

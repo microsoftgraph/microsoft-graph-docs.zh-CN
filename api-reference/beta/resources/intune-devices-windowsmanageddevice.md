@@ -1,20 +1,18 @@
 ---
 title: windowsManagedDevice 资源类型
 description: 通过 Intune 管理或预注册的 Windows 设备
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd8602f43245f0a7270b4538fd680d0d11552ef2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 170579d94b5c28e2c77c404d18a408322f8d8c4f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528369"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783618"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42528369"
 |[列出 windowsManagedDevices](../api/intune-devices-windowsmanageddevice-list.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)集合|列出[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性和关系。|
 |[获取 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-get.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|读取[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性和关系。|
 |[创建 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-create.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|创建新的[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象。|
-|[删除 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-delete.md)|无|删除[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)。|
+|[删除 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-delete.md)|None|删除[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)。|
 |[更新 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|更新[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -54,7 +52,7 @@ ms.locfileid: "42528369"
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|easActivated|布尔|设备是否已激活 Exchange ActiveSync。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|easActivated|布尔值|设备是否已激活 Exchange ActiveSync。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -95,12 +93,12 @@ ms.locfileid: "42528369"
 |retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示设备的上次登录用户。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|布尔|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|布尔|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -297,7 +295,8 @@ ms.locfileid: "42528369"
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "String"
+    "clientIdentifier": "String",
+    "isBlocked": true
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,

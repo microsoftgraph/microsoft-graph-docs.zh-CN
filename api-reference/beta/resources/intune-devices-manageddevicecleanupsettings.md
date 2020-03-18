@@ -1,20 +1,18 @@
 ---
 title: managedDeviceCleanupSettings 资源类型
 description: 定义当管理员想要清理设备时的规则。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e1626e01d240caaeeef6689ed785dd1f262c361
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86003dfd0121b6d4056377e8cf340497f41ccbd9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524975"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783961"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>managedDeviceCleanupSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

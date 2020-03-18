@@ -1,20 +1,18 @@
 ---
 title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备 Exchange 访问状态原因。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: db63de7180ae6716263f958ef43a7cb2e3f299e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00f9c44237052b4f15917763c6452c1a909543fc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525066"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784921"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525066"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未发现来自 Exchange 的访问状态原因|
-|unknown|1 |未知访问状态原因|
-|exchangeGlobalRule|2 |由 Exchange 全局规则确定的访问状态|
-|exchangeIndividualRule|3 |由 Exchange 单个规则确定的访问状态|
+|unknown|1|未知访问状态原因|
+|exchangeGlobalRule|双面|由 Exchange 全局规则确定的访问状态|
+|exchangeIndividualRule|第三章|由 Exchange 单个规则确定的访问状态|
 |exchangeDeviceRule|4 |由 Exchange 设备规则确定的访问状态|
 |exchangeUpgrade|5 |Exchange 升级导致的访问状态|
 |exchangeMailboxPolicy|6 |由 Exchange 邮箱策略确定的访问状态|

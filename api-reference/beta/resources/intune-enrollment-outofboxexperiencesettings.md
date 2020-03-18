@@ -1,20 +1,18 @@
 ---
 title: outOfBoxExperienceSettings 资源类型
 description: "\"开箱即用体验\" 设置"
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65ea22f4a0684fb77b267d7793082ae066af5bd8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ff9a13168287cbbff1bbe34346f684d65a9609c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528264"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783408"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,12 +23,12 @@ ms.locfileid: "42528264"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hidePrivacySettings|布尔|向用户显示或隐藏隐私设置|
-|hideEULA|布尔|向用户显示或隐藏 EULA|
+|hidePrivacySettings|布尔值|向用户显示或隐藏隐私设置|
+|hideEULA|布尔值|向用户显示或隐藏 EULA|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|用户类型。 可取值为：`administrator`、`standard`。|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD 联接身份验证类型。 可取值为：`singleUser`、`shared`。|
-|skipKeyboardSelectionPage|布尔|如果设置了语言和区域，则选择 "设置"，然后跳过 "键盘选择" 页面|
-|hideEscapeLink|布尔|如果设置为 true，则用户无法在公司登录时使用不同帐户重新开始|
+|skipKeyboardSelectionPage|布尔值|如果设置了语言和区域，则选择 "设置"，然后跳过 "键盘选择" 页面|
+|hideEscapeLink|布尔值|如果设置为 true，则用户无法在公司登录时使用不同帐户重新开始|
 
 ## <a name="relationships"></a>关系
 无

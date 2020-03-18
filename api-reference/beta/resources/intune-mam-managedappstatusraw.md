@@ -1,20 +1,18 @@
 ---
 title: managedAppStatusRaw 资源类型
 description: 表示有关组织应用保护和配置的非类型化状态报告。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 879bd4f7c4db515f31bba413b92f3329b6656635
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 292cd8c17702705774b650c257c4ae9ce1ff0ff3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527873"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781416"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

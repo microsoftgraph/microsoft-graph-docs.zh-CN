@@ -1,20 +1,18 @@
 ---
 title: configurationManagerAction 资源类型
 description: Action triggerConfigurationManagerAction 的参数
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 867479fea3f795bc8fbe143a9db054847b79e0d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04d78d751f6cdd2978aa9cc65942acf312482202
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785096"
 ---
 # <a name="configurationmanageraction-resource-type"></a>configurationManagerAction 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

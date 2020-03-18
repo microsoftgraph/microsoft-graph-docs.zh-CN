@@ -1,20 +1,18 @@
 ---
 title: remoteAction 枚举类型
 description: 远程操作 Intune 支持。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5818a7e0ffcaaad948ccd19c11293794fff756bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 914d2b7717be151adeb43c9585af39ab3383482c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524947"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783905"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524947"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|用户启动未知操作。|
-|factoryReset|1 |用户启动一个操作以出厂重置设备。 |
-|removeCompanyData|2 |用户启动一个操作，以从设备中删除公司数据。 |
-|resetPasscode|3 |用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
+|factoryReset|1|用户启动一个操作以出厂重置设备。 |
+|removeCompanyData|双面|用户启动一个操作，以从设备中删除公司数据。 |
+|resetPasscode|第三章|用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
 |remoteLock|4 |用户启动一个操作，以远程锁定设备。|
 |enableLostMode|5 |用户启动一个操作，以在受监督的 iOS 设备上启用丢失模式。|
 |disableLostMode|6 |用户启动一个操作，以在受监督的 iOS 设备上禁用丢失模式。|
@@ -36,7 +34,7 @@ ms.locfileid: "42524947"
 |rebootNow|8 |用户启动操作以重新启动 Windows 设备。|
 |recoverPasscode|9 |用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
 |cleanWindowsDevice|10 |用户启动操作以清理 windows 设备。|
-|logoutSharedAppleDeviceActiveUser|11 |用户启动一个操作以注销共享 apple 设备上的当前用户。|
+|logoutSharedAppleDeviceActiveUser|11x17|用户启动一个操作以注销共享 apple 设备上的当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
 |fullScan|13 |用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上的恶意软件签名。|

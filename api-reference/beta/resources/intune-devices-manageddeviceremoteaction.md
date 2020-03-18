@@ -1,20 +1,18 @@
 ---
 title: managedDeviceRemoteAction 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77e7b0b9c10f80ce7e447295d73ebc6e52ed6de2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eafb9c017516620186b3ad10a44c19ad0ebf2ecf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524961"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783933"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524961"
 |成员|值|说明|
 |:---|:---|:---|
 |注销|0|尚未记录|
-|delete|1 |尚未记录|
-|fullScan|2 |尚未记录|
-|quickScan|3 |尚未记录|
+|delete|1|尚未记录|
+|fullScan|双面|尚未记录|
+|quickScan|第三章|尚未记录|
 |signatureUpdate|4 |尚未记录|
 |擦|5 |尚未记录|
 |customTextNotification|6 |尚未记录|

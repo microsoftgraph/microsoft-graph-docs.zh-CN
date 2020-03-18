@@ -1,20 +1,18 @@
 ---
 title: windowsDeviceAzureADAccount 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae8ffe84e6282a83c8301f8479cfaa287eec086
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86370451e07242d7c17b8ce23dacfa8fe3aacd30
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524842"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783716"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

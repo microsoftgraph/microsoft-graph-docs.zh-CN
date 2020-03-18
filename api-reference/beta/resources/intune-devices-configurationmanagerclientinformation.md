@@ -1,20 +1,18 @@
 ---
 title: configurationManagerClientInformation 资源类型
 description: 从 SCCM 同步的 Configuration Manager 客户端信息
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67c1a4b4a9ac570b4acd71a1ce819f9705fd32e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c9e9b88677c925fb33c998af571b23090dcff5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528672"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785054"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>configurationManagerClientInformation 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,6 +24,7 @@ ms.locfileid: "42528672"
 |属性|类型|说明|
 |:---|:---|:---|
 |clientIdentifier|String|SCCM 中的 Configuration Manager 客户端 Id|
+|isBlocked|布尔值|来自 SCCM 的 Configuration Manager 客户端阻止状态|
 
 ## <a name="relationships"></a>关系
 无
@@ -40,7 +39,8 @@ ms.locfileid: "42528672"
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientInformation",
-  "clientIdentifier": "String"
+  "clientIdentifier": "String",
+  "isBlocked": true
 }
 ```
 

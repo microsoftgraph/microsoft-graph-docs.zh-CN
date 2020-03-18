@@ -1,20 +1,18 @@
 ---
 title: deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 50d7706232cfc753cb50a706f72d7d8f9a7906f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0a09ea7b85ca3b40017b83886f5bef3e4cb04e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528641"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784984"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528641"
 |成员|值|说明|
 |:---|:---|:---|
 |meetHardwareRequirements|0|系统满足硬件配置要求|
-|secureBootRequired|1 |需要安全启动|
-|dmaProtectionRequired|2 |需要 DMA 保护|
+|secureBootRequired|1|需要安全启动|
+|dmaProtectionRequired|双面|需要 DMA 保护|
 |hyperVNotSupportedForGuestVM|4 |HyperV 不支持来宾 VM|
 |hyperVNotAvailable|8 |HyperV 功能不可用|
 

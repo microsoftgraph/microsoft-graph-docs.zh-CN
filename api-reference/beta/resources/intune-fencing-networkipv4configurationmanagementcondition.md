@@ -1,20 +1,18 @@
 ---
 title: networkIPv4ConfigurationManagementCondition 资源类型
 description: 可能会定义在设备检测到特定 IP 网络设置时触发的基于配置的 IPv4 管理条件。 只有在网络连接处于活动状态时，才会将 IP 配置管理条件视为 TRUE。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4b31229a5745d889271c886cf5d0b63f91e2627
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 936a846bff444c3d7c5392bf267de5cbd84d765e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528160"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783212"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42528160"
 |[列出 networkIPv4ConfigurationManagementConditions](../api/intune-fencing-networkipv4configurationmanagementcondition-list.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)集合|列出[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象的属性和关系。|
 |[获取 networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-get.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|读取[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象的属性和关系。|
 |[创建 networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-create.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|创建新的[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象。|
-|[删除 networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-delete.md)|无|删除[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)。|
+|[删除 networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-delete.md)|None|删除[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)。|
 |[更新 networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-update.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|更新[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -48,8 +46,8 @@ ms.locfileid: "42528160"
 |ipV4Prefix|String|要连接到的 IPv4 子网。 例如，10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
-|ipV4DNSServerList|String 集合|为适配器配置的 IPv4 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

@@ -1,20 +1,18 @@
 ---
 title: managedAppClipboardSharingLevel 枚举类型
 description: 表示可在应用程序之间共享设备的剪贴板的级别
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 97e5e74b9d8f039e75df61791ef8dea945e49818
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f6153eeb4b76af9d8974b715b7c6342c646ba6e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527958"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782242"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527958"
 |成员|值|说明|
 |:---|:---|:---|
 |allApps|0|允许在所有应用程序之间进行共享（托管或不允许）|
-|managedAppsWithPasteIn|1 |允许在启用了粘贴的所有托管应用之间进行共享|
-|managedApps|2 |允许在所有托管应用之间进行共享|
-|堵塞|3 |已禁用应用程序之间的共享|
+|managedAppsWithPasteIn|1|允许在启用了粘贴的所有托管应用之间进行共享|
+|managedApps|双面|允许在所有托管应用之间进行共享|
+|堵塞|第三章|已禁用应用程序之间的共享|
 
 
 

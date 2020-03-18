@@ -1,20 +1,18 @@
 ---
 title: deviceHealthAttestationState 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec4dc668fb4e2d132a5589b24855461690452f16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3df829f13e7df3fe517977f08c2e87c4e0a1e110
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528636"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784970"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

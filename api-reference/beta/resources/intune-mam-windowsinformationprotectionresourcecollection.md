@@ -1,20 +1,18 @@
 ---
 title: windowsInformationProtectionResourceCollection 资源类型
 description: Windows 信息保护资源集合
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f656f66c38c372d592bfcbfed4b01455584436c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7d6fad5c2367ace676b67ec6f44f7ca3b082d27
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524235"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780337"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

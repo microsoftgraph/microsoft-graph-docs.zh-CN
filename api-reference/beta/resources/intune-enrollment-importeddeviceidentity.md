@@ -1,20 +1,18 @@
 ---
 title: importedDeviceIdentity 资源类型
 description: ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3ff0c7a18c97c868f5f3a19132b5e844f313994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 093cc5057ecdb6a34398567378677e5a41aaa18e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524729"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783471"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
 |[列出 importedDeviceIdentities](../api/intune-enrollment-importeddeviceidentity-list.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|列出[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)对象的属性和关系。|
 |[获取 importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-get.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|读取[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)对象的属性和关系。|
 |[创建 importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-create.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|创建新的[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)对象。|
-|[删除 importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-delete.md)|无|删除[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。|
+|[删除 importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-delete.md)|None|删除[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。|
 |[更新 importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|更新[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)对象的属性。|
 |[importDeviceIdentityList 操作](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)集合|尚未记录|
 |[searchExistingIdentities 操作](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|尚未记录|

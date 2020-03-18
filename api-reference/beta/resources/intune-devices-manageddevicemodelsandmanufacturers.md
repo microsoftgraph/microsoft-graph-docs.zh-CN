@@ -1,20 +1,18 @@
 ---
 title: managedDeviceModelsAndManufacturers 资源类型
 description: 帐户中托管设备的模型和制造商 meatadata
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa241bd17ad8c42074ed74d2d2548777ea8bf3ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac83d2501eb42cc12044e8d566031e6a5dd6080c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528537"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783954"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,8 +23,8 @@ ms.locfileid: "42528537"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceModels|String 集合|帐户中托管设备的模型列表|
-|deviceManufacturers|String 集合|帐户中托管设备的制造商列表|
+|deviceModels|String collection|帐户中托管设备的模型列表|
+|deviceManufacturers|String collection|帐户中托管设备的制造商列表|
 
 ## <a name="relationships"></a>关系
 无

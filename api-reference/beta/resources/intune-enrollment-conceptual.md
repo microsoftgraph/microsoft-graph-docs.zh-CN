@@ -4,16 +4,16 @@ description: 列出为租户组织注册设备的适用于 Intune 终结点（RE
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 596e4deb8743cbb43f3d44c94165499408ee6b9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb0dd9d6b03330cc0f585fb36dfff64a2dfe1a34
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783548"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -60,4 +60,3 @@ ms.locfileid: "42528334"
 - [Windows 设备使用类型](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows 注册状态屏幕设置](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows 用户类型](intune-enrollment-windowsusertype.md)
-

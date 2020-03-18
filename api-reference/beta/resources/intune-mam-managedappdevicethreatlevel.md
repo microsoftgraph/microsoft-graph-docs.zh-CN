@@ -1,20 +1,18 @@
 ---
 title: managedAppDeviceThreatLevel 枚举类型
 description: 允许应用程序兼容的 maxium 威胁级别。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df62fd78a6cf26eec9c3850bde0389c5e48cc91d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63fa79d3ce378c64a870bb40f2491402fee34e99
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527933"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781948"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>managedAppDeviceThreatLevel 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527933"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置值|
-|加密|1 |设备需要无威胁|
-|降低|2 |设备需要较低的威胁。|
-|中等|3 |设备需要的威胁不超过中型威胁。|
+|加密|1|设备需要无威胁|
+|降低|双面|设备需要较低的威胁。|
+|中等|第三章|设备需要的威胁不超过中型威胁。|
 |高效|4 |设备需要的威胁不超过高|
 
 

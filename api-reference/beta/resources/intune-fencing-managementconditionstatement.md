@@ -1,20 +1,18 @@
 ---
 title: managementConditionStatement 资源类型
 description: 管理条件语句是一组管理条件，在满足所有包含的管理条件时启用/禁用设备/应用程序配置。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f03c5e1e07b2cd6dafb4c30e9e930de0be0e83ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec0966cf1b43f4e8614e848164911a6d5c8ddd4b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528166"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783219"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42528166"
 |[列出 managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|列出[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象的属性和关系。|
 |[获取 managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|读取[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象的属性和关系。|
 |[创建 managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|创建新的[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象。|
-|[删除 managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|无|删除[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)。|
+|[删除 managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|None|删除[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)。|
 |[更新 managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|更新[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象的属性。|
 |[getManagementConditionStatementExpressionString 函数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md)|尚未记录|
 |[getManagementConditionStatementsForPlatform 函数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|尚未记录|

@@ -1,20 +1,18 @@
 ---
 title: windowsInformationProtectionAppLockerFile 资源类型
 description: Windows 信息保护 AppLocker 文件
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa50f676ed559477218286740a1a2f02f7d17afc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be3ccb5775220ee6bdf491b4c4452649549aec20
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527850"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780939"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

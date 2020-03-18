@@ -1,20 +1,18 @@
 ---
 title: deviceManangementIntentValueType 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6732060f1cedd0a0bcda693a8a0573876aec7466
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ea9783a4487b850fb85eb1d6efa36531ce17ac1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525206"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785222"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>deviceManangementIntentValueType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525206"
 |成员|值|说明|
 |:---|:---|:---|
 |integer|0|设置值为整数|
-|boolean|1 |设置值是一个布尔值|
-|string|2 |设置值为字符串|
-|复杂|3 |设置值是一个复杂的对象|
+|boolean|1|设置值是一个布尔值|
+|string|双面|设置值为字符串|
+|复杂|第三章|设置值是一个复杂的对象|
 |操作|4 |设置值为集合|
 |abstractComplex|5 |设置值是一个抽象的复杂对象|
 

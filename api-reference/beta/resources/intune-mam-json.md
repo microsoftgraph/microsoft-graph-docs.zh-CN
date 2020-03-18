@@ -1,20 +1,18 @@
 ---
 title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b1c0d75542fc57fd60f90b73473afba297e5855
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3024777448a7ba2c72395c46fa173797e49487e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782270"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: targetedManagedAppPolicyAssignment 资源类型
 description: 组或应用的部署类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8013d2296f7f67b3fe3ee6a98de15e59b013cbce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f512955d5575c5b96c778cf34488e8cc1074575
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527860"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781191"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: windowsInformationProtectionDataRecoveryCertificate 资源类型
 description: Windows 信息保护 DataRecoveryCertificate
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d755ed3b8a1bfb34df3702168abb3ad589474c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a08a4194fe06cbfe612d1127b28fd34c877da715
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524263"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780869"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

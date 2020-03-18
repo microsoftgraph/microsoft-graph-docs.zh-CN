@@ -1,20 +1,18 @@
 ---
 title: importedAppleDeviceIdentity 资源类型
 description: ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea45d329e28fb87741c4b0e31746f9591f4afec8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1a96736679b2d71632f577975d3527abf2b10ac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524736"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783485"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 |[列出 importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)集合|列出[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)对象的属性和关系。|
 |[获取 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|读取[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)对象的属性和关系。|
 |[创建 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|创建新的[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)对象。|
-|[删除 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-delete.md)|无|删除[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。|
+|[删除 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-delete.md)|None|删除[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。|
 |[更新 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|更新[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)对象的属性。|
 |[importAppleDeviceIdentityList 操作](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)集合|尚未记录|
 
@@ -41,7 +39,7 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|已将时间注册配置文件分配给设备|
 |isSupervised|Boolean|指示 Apple 设备是否受到监督。 有关详细信息，请参阅：https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
-|isDeleted|布尔|指示设备是否已从 Apple Business Manager 中删除|
+|isDeleted|布尔值|指示设备是否已从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
 |说明|String|设备的说明|

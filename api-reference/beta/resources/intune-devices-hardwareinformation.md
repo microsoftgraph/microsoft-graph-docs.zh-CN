@@ -1,20 +1,18 @@
 ---
 title: hardwareInformation 资源类型
 description: 给定设备的硬件信息。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40edcecb7c581722b7c423e4d76f181689a6020d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525010"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784031"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -37,9 +35,9 @@ ms.locfileid: "42525010"
 |cellularTechnology|String|设备的手机网络技术|
 |wifiMac|String|设备的 WiFi MAC 地址|
 |operatingSystemLanguage|String|设备的操作系统语言|
-|isSupervised|布尔|受监督的设备模式|
+|isSupervised|布尔值|受监督的设备模式|
 |isEncrypted|Boolean|设备的加密状态|
-|isSharedDevice|布尔|共享 iPad|
+|isSharedDevice|布尔值|共享 iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享 Apple 设备上的所有用户|
 |tpmSpecificationVersion|String|指定规范版本的字符串。|
 |operatingSystemEdition|String|指定 OS 版本的字符串。|

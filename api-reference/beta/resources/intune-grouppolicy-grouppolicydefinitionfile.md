@@ -1,20 +1,18 @@
 ---
 title: groupPolicyDefinitionFile 资源类型
 description: 实体表示 ADMX （管理模板） XML 文件。 ADMX 文件包含组策略定义的集合及其在各类别路径中的位置。 组策略定义文件还包含由语言相关 ADML （管理模板）语言文件所确定的受支持的语言。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55c818668aa3633368886524755df3407ca6d384
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b91839ad7c9d4d5052a9249e37f3be7eb1fe5404
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528083"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783007"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -33,7 +31,7 @@ ms.locfileid: "42528083"
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
 |说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
+|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|

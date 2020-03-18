@@ -1,20 +1,18 @@
 ---
 title: hourlySchedule 资源类型
 description: 定期设备管理脚本的每小时运行计划。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f52366b076fe7c8b2183424f8c02b72573fc5119
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e798eed75cdb5499bb2ea0c3ca40ac4d7c0b9c54
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525003"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784017"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

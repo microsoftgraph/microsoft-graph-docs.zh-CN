@@ -1,20 +1,18 @@
 ---
 title: groupPolicyConfigurationType 枚举类型
 description: 组策略配置类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ac65432d389cc0f2fd7696cb7ec6753c3ff76ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38e0eaef1fb4f76584fc791d0b5847832f186dbf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528106"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783100"
 ---
 # <a name="grouppolicyconfigurationtype-enum-type"></a>groupPolicyConfigurationType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42528106"
 |成员|值|说明|
 |:---|:---|:---|
 |policy|0|策略类型不 tattoo 值，这意味着将删除值，允许使用原始配置值。 策略类型取代应用程序配置设置，以便应用程序始终知道该值。 策略类型可阻止用户通过应用程序的用户界面修改值。|
-|优先权|1 |首选项类型不 tattoo 值，这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值，并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
+|优先权|1|首选项类型不 tattoo 值，这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值，并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
 
 
 

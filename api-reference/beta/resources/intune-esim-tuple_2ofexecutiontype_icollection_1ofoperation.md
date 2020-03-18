@@ -1,16 +1,16 @@
 ---
 title: tuple_2OfExecutionType_ICollection_1OfOperation 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69231060a9107282eca98293dbb0220a5645b42c
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: a26bc1cb470031338176d9f47a4b70267cfa2476
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162398"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783282"
 ---
 # <a name="tuple_2ofexecutiontype_icollection_1ofoperation-resource-type"></a>tuple_2OfExecutionType_ICollection_1OfOperation 资源类型
 

@@ -1,20 +1,18 @@
 ---
 title: chassisType 枚举类型
 description: 底盘类型。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cfb4f436e147f2ddc2bc0a1e6112fa8348ab2210
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 149499046387db3fb0954c9038d09f48aa660fbf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525157"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785117"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525157"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|desktop|1 |Desktop.|
-|手提|2 |手提.|
-|worksWorkstation|3 |来说.|
+|desktop|1|Desktop.|
+|手提|双面|手提.|
+|worksWorkstation|第三章|来说.|
 |enterpriseServer|4 |企业服务器。|
 |phone|100|电话.|
 |版|101|移动平板电脑。|

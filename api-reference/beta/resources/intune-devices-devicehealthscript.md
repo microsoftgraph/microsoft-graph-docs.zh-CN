@@ -1,20 +1,18 @@
 ---
 title: deviceHealthScript 资源类型
 description: Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联接设备上运行其 Powershell 运行状况脚本（修正 + 检测）的功能。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0579008f0994aba06de3bc5869af998a80cab683
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80e1539cf941d2d1cfa04fefcb442493f984347c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525087"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784963"
 ---
 # <a name="devicehealthscript-resource-type"></a>deviceHealthScript 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,13 +26,14 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |[列出 deviceHealthScripts](../api/intune-devices-devicehealthscript-list.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)集合|列出[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性和关系。|
 |[获取 deviceHealthScript](../api/intune-devices-devicehealthscript-get.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|读取[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性和关系。|
 |[创建 deviceHealthScript](../api/intune-devices-devicehealthscript-create.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|创建新的[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象。|
-|[删除 deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|无|删除[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)。|
+|[删除 deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|None|删除[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)。|
 |[更新 deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|更新[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性。|
 |[分配操作](../api/intune-devices-devicehealthscript-assign.md)|无|尚未记录|
 |[updateGlobalScript 操作](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|更新专用设备运行状况脚本|
 |[getGlobalScriptHighestAvailableVersion 操作](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|更新专用设备运行状况脚本|
 |[enableGlobalScripts 操作](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|无|尚未记录|
 |[areGlobalScriptsAvailable 函数](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|尚未记录|
+|[getRemediationSummary 函数](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -49,10 +48,10 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
-|runAs32Bit|布尔|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|布尔|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
+|runAs32Bit|布尔值|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|布尔值|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
 |highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 ## <a name="relationships"></a>关系

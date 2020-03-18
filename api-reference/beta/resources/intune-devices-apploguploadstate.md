@@ -1,20 +1,18 @@
 ---
 title: appLogUploadState 枚举类型
 description: AppLogUploadStatus
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d692e352f177c7f882a33e49604934c4b1a22912
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 193344351f5654ea09c0246e06d1d3abf0d54039
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525164"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785131"
 ---
 # <a name="apploguploadstate-enum-type"></a>appLogUploadState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ AppLogUploadStatus
 |成员|值|说明|
 |:---|:---|:---|
 |决|0|请求正在等待处理或在处理|
-|后|1 |请求已完成，且文件已上载到 Azure blob 以供下载。|
-|未能|2 |请求已完成处理且处于错误状态。|
+|后|1|请求已完成，且文件已上载到 Azure blob 以供下载。|
+|未能|双面|请求已完成处理且处于错误状态。|
 
 
 

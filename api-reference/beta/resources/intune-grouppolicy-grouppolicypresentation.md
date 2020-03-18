@@ -1,20 +1,18 @@
 ---
 title: groupPolicyPresentation 资源类型
 description: 组策略定义中任何其他选项的显示演示文稿的基本实体。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a829f974a25412a88dcc44ef5e9b84a0c3f81a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72f19ee5690da4a5466fa1f1902fc71729a23f01
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528081"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782993"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>groupPolicyPresentation 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: depTokenType 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0cadc497b9d90885cc02d3eeecc77e63119f2c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93bda40e65cdf938495bcff08a4ac286722b856a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528314"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783513"
 ---
 # <a name="deptokentype-enum-type"></a>depTokenType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528314"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|令牌类型为无|
-|保护|1 |令牌类型为 Dep。|
-|appleSchoolManager|2 |令牌类型为 Apple 学校管理器|
+|保护|1|令牌类型为 Dep。|
+|appleSchoolManager|双面|令牌类型为 Apple 学校管理器|
 
 
 

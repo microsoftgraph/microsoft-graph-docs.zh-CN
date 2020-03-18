@@ -1,20 +1,18 @@
 ---
 title: windowsInformationProtectionStoreApp 资源类型
 description: 用于 Windows 信息保护的应用商店应用
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11a3c466fac209d65a6713ae7578e33fc375c62e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c389b9a8e529b549c537cba9c9f02b0f81879db6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527814"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780330"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

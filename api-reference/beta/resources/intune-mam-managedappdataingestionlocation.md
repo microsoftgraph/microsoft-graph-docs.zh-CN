@@ -1,20 +1,18 @@
 ---
 title: managedAppDataIngestionLocation 枚举类型
 description: 可用于将数据导入到组织文档中的位置
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 64b8adf3aa82575db53472f047f8f4145ce32535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7ec5f46055a3282dc0de46d4790df6fbfd53a10
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782095"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>managedAppDataIngestionLocation 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +23,9 @@ ms.locfileid: "42524334"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|oneDriveForBusiness|1 |OneDrive for Business|
-|sharePoint|2 |SharePoint Online|
-|拍照|3 |设备的照相机|
+|oneDriveForBusiness|1|OneDrive for Business|
+|sharePoint|双面|SharePoint Online|
+|拍照|第三章|设备的照相机|
 
 
 

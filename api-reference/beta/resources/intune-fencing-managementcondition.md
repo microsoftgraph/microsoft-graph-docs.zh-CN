@@ -1,20 +1,18 @@
 ---
 title: managementCondition 资源类型
 description: 管理条件是可以动态触发的事件，如地域时限、时限和网络时限。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e5cef389cd6349f11f5e5554146d220608a368a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d1adf4538cdfc4bfd819c1e9871c3d3a5a5a800
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528183"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783247"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

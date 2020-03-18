@@ -1,20 +1,18 @@
 ---
 title: locationManagementCondition 资源类型
 description: 包含用于定义位置管理条件（要监视的感兴趣的区域）的信息。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbbeec236d51d7e7a21321ba0386a473312a4b05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56e9c10d8d9d53a9e0009b6a70210da6d7873065
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524523"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783254"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>locationManagementCondition 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

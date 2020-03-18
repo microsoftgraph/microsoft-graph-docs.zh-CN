@@ -1,20 +1,18 @@
 ---
 title: deviceManagementSubscriptions 枚举类型
 description: 租户移动设备管理订阅。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: abeecbc1ef953e39fddf74510d5b8fdb1f10e4d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94d6c29a2c23d364681abaf4cd42f4330f5389f6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784267"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525038"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|None|
-|intune|1 |Microsoft Intune 订阅|
-|office365|2 |Office365 订阅|
+|intune|1|Microsoft Intune 订阅|
+|office365|双面|Office365 订阅|
 |intunePremium|4 |Microsoft Intune 高级订阅|
 |intune_EDU|8 |Microsoft Intune 教育版订阅|
 |intune_SMB|16 |适用于小型企业订阅的 Microsoft Intune|

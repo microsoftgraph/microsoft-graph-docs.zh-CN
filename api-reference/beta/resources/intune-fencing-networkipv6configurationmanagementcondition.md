@@ -1,20 +1,18 @@
 ---
 title: networkIPv6ConfigurationManagementCondition 资源类型
 description: 可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时，才会将 IP 配置管理条件视为 TRUE。 IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows （circa Redstone）不会将此信息暴露给自然身份验证服务。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf7fab6135a4d4fd11f62742e8435651a723523c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca8c907d09a742b237483144fa849da27e4f9ae8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524509"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783205"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -32,7 +30,7 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows （circa Redsto
 |[列出 networkIPv6ConfigurationManagementConditions](../api/intune-fencing-networkipv6configurationmanagementcondition-list.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)集合|列出[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)对象的属性和关系。|
 |[获取 networkIPv6ConfigurationManagementCondition](../api/intune-fencing-networkipv6configurationmanagementcondition-get.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)|读取[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)对象的属性和关系。|
 |[创建 networkIPv6ConfigurationManagementCondition](../api/intune-fencing-networkipv6configurationmanagementcondition-create.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)|创建新的[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)对象。|
-|[删除 networkIPv6ConfigurationManagementCondition](../api/intune-fencing-networkipv6configurationmanagementcondition-delete.md)|无|删除[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)。|
+|[删除 networkIPv6ConfigurationManagementCondition](../api/intune-fencing-networkipv6configurationmanagementcondition-delete.md)|None|删除[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)。|
 |[更新 networkIPv6ConfigurationManagementCondition](../api/intune-fencing-networkipv6configurationmanagementcondition-update.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)|更新[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -48,8 +46,8 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows （circa Redsto
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|String|要连接到的 IPv6 子网。 例如2001： db8：：/32|
 |ipV6Gateway|String|IPv6 网关地址。 例如2001： db8：：1|
-|ipV6DNSServerList|String 集合|为适配器配置的 IPv6 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV6DNSServerList|String collection|为适配器配置的 IPv6 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

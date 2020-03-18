@@ -1,20 +1,18 @@
 ---
 title: userExperienceAnalyticsInsight 资源类型
 description: 用户体验分析见解是改进用户体验分析分数的建议。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9e9e40916e92dd45726fb5bc04387f180bf8395
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c28df3bc40f02948198a67850de6fd573607a366
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528464"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783793"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>userExperienceAnalyticsInsight 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

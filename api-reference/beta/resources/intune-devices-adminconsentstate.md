@@ -1,20 +1,18 @@
 ---
 title: adminConsentState 枚举类型
 description: 管理员同意状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b7640cf2942d3f3ba9278effa8296585e4cd89f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9be3a8210d30bd0fad1c8685cbb813630884eae7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785166"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528714"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|管理员未配置项目|
-|granted|1 |管理员授予的项目|
-|notGranted|2 |管理员不授予项目|
+|granted|1|管理员授予的项目|
+|notGranted|双面|Admin deos 不授予项目|
 
 
 

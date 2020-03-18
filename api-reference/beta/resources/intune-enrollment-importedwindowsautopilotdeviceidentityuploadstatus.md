@@ -1,20 +1,18 @@
 ---
 title: importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6c6bba85fd0c24c9b434e134582f7adfc04b253f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8a7777bb681a51e683a879e2730fab1591ec860
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524708"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783429"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524708"
 |成员|值|说明|
 |:---|:---|:---|
 |noUpload|0|无上传状态。|
-|决|1 |挂起状态。|
-|complete|2 |完整状态。|
-|error|3 |错误状态。|
+|决|1|挂起状态。|
+|complete|双面|完整状态。|
+|error|第三章|错误状态。|
 
 
 

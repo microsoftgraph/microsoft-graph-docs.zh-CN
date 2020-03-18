@@ -1,20 +1,18 @@
 ---
 title: remoteLockActionResult 资源类型
 description: 锁定操作结果，包含用于解锁的 PIN
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bda264b7ad029988cf1a9ec0bbe7aa160f613da8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 232d7b0244da1afb396869512dc394b02a22b084
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783891"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

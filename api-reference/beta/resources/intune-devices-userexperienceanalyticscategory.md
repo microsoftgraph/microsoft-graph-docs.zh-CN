@@ -1,20 +1,18 @@
 ---
 title: userExperienceAnalyticsCategory 资源类型
 description: "\"用户体验分析类别\" 实体包含类别的各个指标的分数和见解。"
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81da542a14e20460f9b7b9f3dc81df390e344dd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ba9d56e1b20b66efe2b0653358dca4907ca0dc2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528489"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783835"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>userExperienceAnalyticsCategory 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

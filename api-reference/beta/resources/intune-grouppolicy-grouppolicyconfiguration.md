@@ -1,20 +1,18 @@
 ---
 title: groupPolicyConfiguration 资源类型
 description: 组策略配置实体包含一个或多个组策略定义的配置值。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5624f86622b49d8739de85a2c58067dd7263aace
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81c6937fca0c51b18d86ccf3b0dbedd58b71971b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783114"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>groupPolicyConfiguration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42528116"
 |[列出 groupPolicyConfigurations](../api/intune-grouppolicy-grouppolicyconfiguration-list.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)集合|列出[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性和关系。|
 |[获取 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-get.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|读取[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性和关系。|
 |[创建 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|创建新的[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象。|
-|[删除 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|无|删除[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)。|
+|[删除 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|None|删除[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)。|
 |[更新 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|更新[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性。|
 |[分配操作](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)集合|尚未记录|
 |[updateDefinitionValues 操作](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|无|尚未记录|
@@ -39,7 +37,7 @@ ms.locfileid: "42528116"
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String 集合|配置的作用域标记列表。|
+|roleScopeTagIds|String collection|配置的作用域标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

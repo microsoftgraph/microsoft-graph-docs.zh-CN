@@ -1,20 +1,18 @@
 ---
 title: securityBaselineDeviceState 资源类型
 description: 设备安全基准的安全基准合规性状态摘要。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d3fa75d79789d91efd22efc40637132bad4f80c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0db4b05fc804e58c2cee1ba030540bd948dcc479
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528740"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785194"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42528740"
 |[列出 securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)集合|列出[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象的属性和关系。|
 |[获取 securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|读取[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象的属性和关系。|
 |[创建 securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|创建新的[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象。|
-|[删除 securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|无|删除[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)。|
+|[删除 securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|None|删除[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)。|
 |[更新 securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|更新[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象的属性。|
 
 ## <a name="properties"></a>属性

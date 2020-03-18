@@ -1,20 +1,18 @@
 ---
 title: deviceHealthScriptRunSummary 资源类型
 description: 包含设备管理脚本的运行摘要的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 959b6722f1a72ff1f423f4288ebebdcd14aada11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1be7c470bb2776b16f74f352dc93e1f56163abf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528613"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784935"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

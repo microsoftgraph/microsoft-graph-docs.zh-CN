@@ -1,20 +1,18 @@
 ---
 title: sharedAppleDeviceUser 资源类型
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d6142b47205640e64b8e422b1727fdf60ac8a2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 550d8af3cab51f611feed7f87f1d2f56a850de4e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524912"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783856"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524912"
 |属性|类型|说明|
 |:---|:---|:---|
 |userPrincipalName|String|用户名|
-|dataToSync|布尔|要同步的数据|
+|dataToSync|布尔值|要同步的数据|
 |dataQuota|Int64|数据配额|
 |dataUsed|Int64|数据配额|
 

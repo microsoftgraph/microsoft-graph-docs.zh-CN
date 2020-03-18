@@ -1,20 +1,18 @@
 ---
 title: binaryManagementConditionExpressionOperatorType 枚举类型
 description: 支持的管理条件表达式的二元运算符。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58a58f8c4344ff7206389d89608fbeb6ba7d8e88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f45ab4c43f8836402142ccf1a848551be646713
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524530"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783268"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524530"
 |成员|值|说明|
 |:---|:---|:---|
 |或|0|当且仅当一个或多个操作数为 true 时，将一组操作数评估为 true。|
-|和|1 |当且仅当其所有操作数均为 true 时，将一组操作数评估为 true。|
+|和|1|当且仅当其所有操作数均为 true 时，将一组操作数评估为 true。|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: userExperienceAnalyticsStartupScoreHistory 资源类型
 description: User experience analytics 设备启动分数历史记录。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccf5de7e4a9b877b1466f632ba2e1821aaed6161
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a0be4c680485975bf1bbb338609b2cf0817ba0d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783751"
 ---
 # <a name="userexperienceanalyticsstartupscorehistory-resource-type"></a>userExperienceAnalyticsStartupScoreHistory 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ User experience analytics 设备启动分数历史记录。
 |[列出 userExperienceAnalyticsStartupScoreHistories](../api/intune-devices-userexperienceanalyticsstartupscorehistory-list.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)集合|列出[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)对象的属性和关系。|
 |[获取 userExperienceAnalyticsStartupScoreHistory](../api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|读取[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)对象的属性和关系。|
 |[创建 userExperienceAnalyticsStartupScoreHistory](../api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|创建新的[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)对象。|
-|[删除 userExperienceAnalyticsStartupScoreHistory](../api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md)|无|删除[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)。|
+|[删除 userExperienceAnalyticsStartupScoreHistory](../api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md)|None|删除[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)。|
 |[更新 userExperienceAnalyticsStartupScoreHistory](../api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|更新[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -39,6 +37,7 @@ User experience analytics 设备启动分数历史记录。
 |startupScore|Int32|用户体验分析设备启动分数。|
 |coreBootScore|Int32|用户体验分析设备核心启动分数。|
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。|
+|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +57,8 @@ User experience analytics 设备启动分数历史记录。
   "startupDateTime": "String (timestamp)",
   "startupScore": 1024,
   "coreBootScore": 1024,
-  "coreSigninScore": 1024
+  "coreSigninScore": 1024,
+  "recommendedSoftwareScore": 1024
 }
 ```
 

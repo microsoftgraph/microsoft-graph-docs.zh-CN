@@ -1,20 +1,18 @@
 ---
 title: iosManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 iOS 应用的同步详细信息。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddebe5a982a2490a9e465a16f9de1ae2004e4350
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3312cf491865befce39941e6aaeca4e407d0d618
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524355"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782375"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

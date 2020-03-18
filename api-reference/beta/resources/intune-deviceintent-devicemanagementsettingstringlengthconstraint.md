@@ -1,20 +1,18 @@
 ---
 title: deviceManagementSettingStringLengthConstraint 资源类型
 description: 强制实施给定字符串长度范围的约束
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f78206495b4694b19a7558df4ab790c24b8f658b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e77c60950bef96fc83c3af186598a37c2e58d2a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528771"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785272"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>deviceManagementSettingStringLengthConstraint 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

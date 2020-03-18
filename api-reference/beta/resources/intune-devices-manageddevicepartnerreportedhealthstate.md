@@ -1,20 +1,18 @@
 ---
 title: managedDevicePartnerReportedHealthState 枚举类型
 description: 设备运行状况 API 的可用运行状况状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 832e79d759b969dbd96dfd773bac732ec68460d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 430b4e5f75a30ca79445f01908ac3881795d2a6a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528525"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783940"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528525"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未报告设备运行状况状态|
-|已|1 |设备已由移动威胁防护合作伙伴激活，但尚未报告运行状况。|
-|失效|2 |设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
-|加密|3 |移动威胁防护合作伙伴认为设备受安全保护。|
+|已|1|设备已由移动威胁防护合作伙伴激活，但尚未报告运行状况。|
+|失效|双面|设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
+|加密|第三章|移动威胁防护合作伙伴认为设备受安全保护。|
 |lowSeverity|4 |移动威胁防护合作伙伴将设备视为低威胁。|
 |mediumSeverity|5 |移动威胁防护合作伙伴认为设备是中型威胁。|
 |highSeverity|6 |移动威胁防护合作伙伴将设备视为高威胁。|

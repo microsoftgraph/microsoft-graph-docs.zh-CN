@@ -1,20 +1,18 @@
 ---
 title: groupPolicySettingMapping 资源类型
 description: MDM/Intune 映射的组策略设置。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6d513f16debcec4c636101591e966eef58cd260
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83c3f827bcd7ed9bf5a0fa7fcf863c1d585e4342
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528136"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783156"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ MDM/Intune 映射的组策略设置。
 |[列出 groupPolicySettingMappings](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)集合|列出[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[获取 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-get.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|读取[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性和关系。|
 |[创建 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-create.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|创建新的[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象。|
-|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|无|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
+|[删除 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|None|删除[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)。|
 |[更新 groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-update.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|更新[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -36,7 +34,7 @@ MDM/Intune 映射的组策略设置。
 |:---|:---|:---|
 |id|String|尚未记录|
 |parentId|String|组策略设置的父 Id。|
-|childIdList|String 集合|组策略设置的子 Id 列表。|
+|childIdList|String collection|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
 |settingValue|String|此组策略设置的值。|
 |settingValueType|String|此组策略设置的值类型。|
@@ -49,10 +47,11 @@ MDM/Intune 映射的组策略设置。
 |mdmSettingUri|String|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型（安全性或 admx）。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
-|isMdmSupported|布尔|指示此设置是否由 Intune 支持|
+|isMdmSupported|布尔值|指示此设置是否由 Intune 支持|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingDefinitionId|String|Intune 设置定义 Id|
 
 ## <a name="relationships"></a>关系
 无
@@ -90,7 +89,8 @@ MDM/Intune 映射的组策略设置。
   "settingScope": "String",
   "intuneSettingUriList": [
     "String"
-  ]
+  ],
+  "intuneSettingDefinitionId": "String"
 }
 ```
 

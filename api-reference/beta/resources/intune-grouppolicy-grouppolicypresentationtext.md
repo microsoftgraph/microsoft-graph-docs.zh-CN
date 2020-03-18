@@ -1,20 +1,18 @@
 ---
 title: groupPolicyPresentationText 资源类型
 description: 表示 ADMX 文本元素。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 280341e21fb249997c27a89b3f774e536e71c34a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14680f7fd98e0e05c3aafdf8eaf1636a500f1c82
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524411"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782930"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>groupPolicyPresentationText 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42524411"
 |[列出 groupPolicyPresentationTexts](../api/intune-grouppolicy-grouppolicypresentationtext-list.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)集合|列出[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)对象的属性和关系。|
 |[获取 groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-get.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|读取[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)对象的属性和关系。|
 |[创建 groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-create.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|创建新的[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)对象。|
-|[删除 groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|无|删除[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)。|
+|[删除 groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|None|删除[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)。|
 |[更新 groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-update.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|更新[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)对象的属性。|
 
 ## <a name="properties"></a>属性

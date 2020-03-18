@@ -1,20 +1,18 @@
 ---
 title: managementConditionExpressionString 资源类型
 description: 管理条件表达式字符串是管理条件表达式的字符串表示形式。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4b77be0d5f59dc1cd681104efb0c0404746e574
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a89da3e4ea3557ed71cd50f2c42695c2d06b174
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528168"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783226"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

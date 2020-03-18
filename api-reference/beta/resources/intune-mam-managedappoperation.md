@@ -1,20 +1,18 @@
 ---
 title: managedAppOperation 资源类型
 description: 表示对应用注册应用的操作。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0deaa635fa30b7422c17ce7e55931f42034c22ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f601bff074aa741072da3aaa94a6e2d247f71bbd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524327"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781717"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

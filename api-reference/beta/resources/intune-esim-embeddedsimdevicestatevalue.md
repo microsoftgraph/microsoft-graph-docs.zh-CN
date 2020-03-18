@@ -1,20 +1,18 @@
 ---
 title: embeddedSIMDeviceStateValue 枚举类型
 description: 描述嵌入的 SIM 激活代码的各种状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fb2ab50e9c91f801cc38723a58bed2867c71b347
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 12e6b53230a46aaaade658de093312a518649345
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528208"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783289"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528208"
 |成员|值|说明|
 |:---|:---|:---|
 |notEvaluated|0|指明嵌入的 SIM 激活代码是免费的，可以分配给设备。|
-|未能|1 |指定 Intune 服务无法将此配置文件传递给设备。|
-|安装|2 |指定已将嵌入的 SIM 激活代码分配给设备，并且设备正在安装令牌。|
-|了|3 |指定已在目标设备上成功安装嵌入的 SIM 激活代码。|
+|未能|1|指定 Intune 服务无法将此配置文件传递给设备。|
+|安装|双面|指定已将嵌入的 SIM 激活代码分配给设备，并且设备正在安装令牌。|
+|了|第三章|指定已在目标设备上成功安装嵌入的 SIM 激活代码。|
 |删除|4 |指定 Intune 服务正在尝试从设备中删除配置文件。|
 |error|5 |指定此配置文件存在错误。|
 |deleted|6 |指定将配置文件从设备中删除。|

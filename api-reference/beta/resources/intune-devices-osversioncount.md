@@ -1,20 +1,18 @@
 ---
 title: osVersionCount 资源类型
 description: 包含每个 OS 版本的包含恶意软件的设备的计数
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4a75ac62e0744b621300fc5474cfefe0823cab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4654f49d6d58d07dbb349edf38d4336da82a4aeb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783919"
 ---
 # <a name="osversioncount-resource-type"></a>osVersionCount 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: managedAppPinCharacterSet 枚举类型
 description: 要用于用户的应用程序 PIN 的字符集
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1570907643fba8377fd703543a52f3867aa43cf3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e939e9dff25f48700527a34286a68b2947a7f76c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527901"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781787"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +24,7 @@ ms.locfileid: "42527901"
 |成员|值|说明|
 |:---|:---|:---|
 |位数|0|数字字符|
-|alphanumericAndSymbol|1 |字母数字和符号字符|
+|alphanumericAndSymbol|1|字母数字和符号字符|
 
 
 

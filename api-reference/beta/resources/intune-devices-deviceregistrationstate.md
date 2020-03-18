@@ -1,20 +1,18 @@
 ---
 title: deviceRegistrationState 枚举类型
 description: 设备注册状态。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f999e393caab410ea3f7565ade25d189193cfc40
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 908f38a2da8f5960eb9c5f1879b7b54374b806ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525024"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784131"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525024"
 |成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|设备未注册。|
-|注册|2 |设备已注册。|
-|吊销|3 |设备已被阻止、已擦除或已停用。|
+|注册|双面|设备已注册。|
+|吊销|第三章|设备已被阻止、已擦除或已停用。|
 |keyConflict|4 |设备有键冲突。|
 |approvalPending|5 |设备正在等待审批。|
 |certificateReset|6 |设备证书已重置。|
