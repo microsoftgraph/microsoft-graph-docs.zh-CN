@@ -1,42 +1,40 @@
 ---
 title: deviceConfigurationTargetedUserAndDevice 资源类型
 description: 一组设备配置策略的冲突摘要。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d202c50c22cb287f91c18ab6b779d48e971f672c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e373dfd4cae79fad4877195544091d054560873
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530150"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793231"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="dcead-103">deviceConfigurationTargetedUserAndDevice 资源类型</span><span class="sxs-lookup"><span data-stu-id="dcead-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="610ce-103">deviceConfigurationTargetedUserAndDevice 资源类型</span><span class="sxs-lookup"><span data-stu-id="610ce-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
 
-<span data-ttu-id="dcead-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="dcead-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="610ce-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="610ce-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dcead-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dcead-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="610ce-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="610ce-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="dcead-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dcead-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="610ce-106">一组设备配置策略的冲突摘要。</span><span class="sxs-lookup"><span data-stu-id="610ce-106">Conflict summary for a set of device configuration policies.</span></span>
 
-<span data-ttu-id="dcead-107">一组设备配置策略的冲突摘要。</span><span class="sxs-lookup"><span data-stu-id="dcead-107">Conflict summary for a set of device configuration policies.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="dcead-108">属性</span><span class="sxs-lookup"><span data-stu-id="dcead-108">Properties</span></span>
-|<span data-ttu-id="dcead-109">属性</span><span class="sxs-lookup"><span data-stu-id="dcead-109">Property</span></span>|<span data-ttu-id="dcead-110">类型</span><span class="sxs-lookup"><span data-stu-id="dcead-110">Type</span></span>|<span data-ttu-id="dcead-111">说明</span><span class="sxs-lookup"><span data-stu-id="dcead-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="610ce-107">属性</span><span class="sxs-lookup"><span data-stu-id="610ce-107">Properties</span></span>
+|<span data-ttu-id="610ce-108">属性</span><span class="sxs-lookup"><span data-stu-id="610ce-108">Property</span></span>|<span data-ttu-id="610ce-109">类型</span><span class="sxs-lookup"><span data-stu-id="610ce-109">Type</span></span>|<span data-ttu-id="610ce-110">说明</span><span class="sxs-lookup"><span data-stu-id="610ce-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dcead-112">deviceId</span><span class="sxs-lookup"><span data-stu-id="dcead-112">deviceId</span></span>|<span data-ttu-id="dcead-113">String</span><span class="sxs-lookup"><span data-stu-id="dcead-113">String</span></span>|<span data-ttu-id="dcead-114">签入中设备的 id。</span><span class="sxs-lookup"><span data-stu-id="dcead-114">The id of the device in the checkin.</span></span>|
-|<span data-ttu-id="dcead-115">deviceName</span><span class="sxs-lookup"><span data-stu-id="dcead-115">deviceName</span></span>|<span data-ttu-id="dcead-116">String</span><span class="sxs-lookup"><span data-stu-id="dcead-116">String</span></span>|<span data-ttu-id="dcead-117">签入中设备的名称。</span><span class="sxs-lookup"><span data-stu-id="dcead-117">The name of the device in the checkin.</span></span>|
-|<span data-ttu-id="dcead-118">userId</span><span class="sxs-lookup"><span data-stu-id="dcead-118">userId</span></span>|<span data-ttu-id="dcead-119">String</span><span class="sxs-lookup"><span data-stu-id="dcead-119">String</span></span>|<span data-ttu-id="dcead-120">签入中用户的 id。</span><span class="sxs-lookup"><span data-stu-id="dcead-120">The id of the user in the checkin.</span></span>|
-|<span data-ttu-id="dcead-121">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="dcead-121">userDisplayName</span></span>|<span data-ttu-id="dcead-122">String</span><span class="sxs-lookup"><span data-stu-id="dcead-122">String</span></span>|<span data-ttu-id="dcead-123">签入用户的显示名称</span><span class="sxs-lookup"><span data-stu-id="dcead-123">The display name of the user in the checkin</span></span>|
-|<span data-ttu-id="dcead-124">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="dcead-124">userPrincipalName</span></span>|<span data-ttu-id="dcead-125">字符串</span><span class="sxs-lookup"><span data-stu-id="dcead-125">String</span></span>|<span data-ttu-id="dcead-126">签入中的用户的 UPN。</span><span class="sxs-lookup"><span data-stu-id="dcead-126">The UPN of the user in the checkin.</span></span>|
-|<span data-ttu-id="dcead-127">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="dcead-127">lastCheckinDateTime</span></span>|<span data-ttu-id="dcead-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dcead-128">DateTimeOffset</span></span>|<span data-ttu-id="dcead-129">此用户/设备对的上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="dcead-129">Last checkin time for this user/device pair.</span></span>|
+|<span data-ttu-id="610ce-111">deviceId</span><span class="sxs-lookup"><span data-stu-id="610ce-111">deviceId</span></span>|<span data-ttu-id="610ce-112">String</span><span class="sxs-lookup"><span data-stu-id="610ce-112">String</span></span>|<span data-ttu-id="610ce-113">签入中设备的 id。</span><span class="sxs-lookup"><span data-stu-id="610ce-113">The id of the device in the checkin.</span></span>|
+|<span data-ttu-id="610ce-114">deviceName</span><span class="sxs-lookup"><span data-stu-id="610ce-114">deviceName</span></span>|<span data-ttu-id="610ce-115">String</span><span class="sxs-lookup"><span data-stu-id="610ce-115">String</span></span>|<span data-ttu-id="610ce-116">签入中设备的名称。</span><span class="sxs-lookup"><span data-stu-id="610ce-116">The name of the device in the checkin.</span></span>|
+|<span data-ttu-id="610ce-117">userId</span><span class="sxs-lookup"><span data-stu-id="610ce-117">userId</span></span>|<span data-ttu-id="610ce-118">String</span><span class="sxs-lookup"><span data-stu-id="610ce-118">String</span></span>|<span data-ttu-id="610ce-119">签入中用户的 id。</span><span class="sxs-lookup"><span data-stu-id="610ce-119">The id of the user in the checkin.</span></span>|
+|<span data-ttu-id="610ce-120">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="610ce-120">userDisplayName</span></span>|<span data-ttu-id="610ce-121">String</span><span class="sxs-lookup"><span data-stu-id="610ce-121">String</span></span>|<span data-ttu-id="610ce-122">签入用户的显示名称</span><span class="sxs-lookup"><span data-stu-id="610ce-122">The display name of the user in the checkin</span></span>|
+|<span data-ttu-id="610ce-123">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="610ce-123">userPrincipalName</span></span>|<span data-ttu-id="610ce-124">字符串</span><span class="sxs-lookup"><span data-stu-id="610ce-124">String</span></span>|<span data-ttu-id="610ce-125">签入中的用户的 UPN。</span><span class="sxs-lookup"><span data-stu-id="610ce-125">The UPN of the user in the checkin.</span></span>|
+|<span data-ttu-id="610ce-126">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="610ce-126">lastCheckinDateTime</span></span>|<span data-ttu-id="610ce-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="610ce-127">DateTimeOffset</span></span>|<span data-ttu-id="610ce-128">此用户/设备对的上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="610ce-128">Last checkin time for this user/device pair.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="dcead-130">关系</span><span class="sxs-lookup"><span data-stu-id="dcead-130">Relationships</span></span>
-<span data-ttu-id="dcead-131">无</span><span class="sxs-lookup"><span data-stu-id="dcead-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="610ce-129">关系</span><span class="sxs-lookup"><span data-stu-id="610ce-129">Relationships</span></span>
+<span data-ttu-id="610ce-130">无</span><span class="sxs-lookup"><span data-stu-id="610ce-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dcead-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dcead-132">JSON Representation</span></span>
-<span data-ttu-id="dcead-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dcead-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="610ce-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="610ce-131">JSON Representation</span></span>
+<span data-ttu-id="610ce-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="610ce-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationTargetedUserAndDevice"
