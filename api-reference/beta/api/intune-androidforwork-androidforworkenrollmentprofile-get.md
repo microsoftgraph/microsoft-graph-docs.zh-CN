@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkEnrollmentProfile
 description: 读取 androidForWorkEnrollmentProfile 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74d0222bdeaf1d000d4a7f800c085153a8a60caf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1d518ac3dfacae3c50286d348d141702909ba7d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446203"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815710"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>获取 androidForWorkEnrollmentProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +89,6 @@ Content-Length: 719
   }
 }
 ```
-
 
 
 

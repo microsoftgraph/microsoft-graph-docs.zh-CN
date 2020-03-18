@@ -1,20 +1,18 @@
 ---
 title: 更新 androidForWorkEnrollmentProfile
 description: 更新 androidForWorkEnrollmentProfile 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f669f53f0ecb7d58b928eb063e85419cc484257
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da6ccf5e0a7409d3302058135bbf003082397d2a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815682"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>更新 androidForWorkEnrollmentProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -122,7 +120,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

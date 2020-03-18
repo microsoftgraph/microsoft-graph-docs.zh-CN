@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkAppConfigurationSchema
 description: 读取 androidForWorkAppConfigurationSchema 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 944863ef0d892973a68c4de4f8917c853dd2fb06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9dd7fd5e52b21398a90f8c3a53989f2eb644608
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815752"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>获取 androidForWorkAppConfigurationSchema
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -100,7 +98,6 @@ Content-Length: 913
   }
 }
 ```
-
 
 
 

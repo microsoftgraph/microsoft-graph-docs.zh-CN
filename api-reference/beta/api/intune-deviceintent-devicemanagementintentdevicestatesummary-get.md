@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceManagementIntentDeviceStateSummary
 description: 读取 deviceManagementIntentDeviceStateSummary 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0eb685fe75cb9b833906b381d9a0512a4db3490
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 399b0fc48129597f6b954c61576536aab9811713
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815231"
 ---
 # <a name="get-devicemanagementintentdevicestatesummary"></a>获取 deviceManagementIntentDeviceStateSummary
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 321
   }
 }
 ```
-
 
 
 

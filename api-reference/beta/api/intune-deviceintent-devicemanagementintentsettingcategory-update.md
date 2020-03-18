@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementIntentSettingCategory
 description: 更新 deviceManagementIntentSettingCategory 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c71de6855714e8c196e60b28c185bd025460d49f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 237c8e695fe27464672929256b5d80f36e43e5aa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470768"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815189"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>更新 deviceManagementIntentSettingCategory
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,9 +51,9 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
+|id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
 |displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
-|hasRequiredSetting|Boolean|类别包含继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的顶级 "必需" 设置|
+|hasRequiredSetting|布尔值|类别包含继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的顶级 "必需" 设置|
 
 
 
@@ -92,7 +90,6 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

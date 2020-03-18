@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceManagementIntentDeviceState
 description: 更新 deviceManagementIntentDeviceState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cd84b7d9f1965c930e5c45652b78c63bb30971b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8da6cc8098211768b76a4dd264eb77c23758b434
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470936"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815238"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>更新 deviceManagementIntentDeviceState
-
-命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,12 +52,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ID|
-|userPrincipalName|字符串|在设备上报告的用户主体名称|
-|userName|字符串|在设备上报告的用户名|
+|userPrincipalName|String|在设备上报告的用户主体名称|
+|userName|String|在设备上报告的用户名|
 |deviceDisplayName|String|报告的设备名称|
 |lastReportedDateTime|DateTimeOffset|意向报表的上次修改日期时间|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|意图的设备状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
-|deviceId|字符串|报告的设备 id|
+|deviceId|String|报告的设备 id|
 
 
 
@@ -104,7 +102,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

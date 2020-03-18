@@ -1,20 +1,18 @@
 ---
 title: 删除 deviceManagementIntentSettingCategory
 description: 删除 deviceManagementIntentSettingCategory。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ac0eb1d3179651a5d6aa423a6d1efd21bf7495b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4c2e89b3b700ea56297bde909af265dff36b47c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815210"
 ---
 # <a name="delete-devicemanagementintentsettingcategory"></a>删除 deviceManagementIntentSettingCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

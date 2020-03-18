@@ -1,20 +1,18 @@
 ---
 title: 列出 managedDeviceMobileAppConfigurations
 description: 列出 managedDeviceMobileAppConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c43d094bdb59c0cbc3ba43c525d387dd057f01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e1e08322ec9427f76a8a762a80b79fa3c29ce06
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445167"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815563"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>列出 managedDeviceMobileAppConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 559
   ]
 }
 ```
-
 
 
 

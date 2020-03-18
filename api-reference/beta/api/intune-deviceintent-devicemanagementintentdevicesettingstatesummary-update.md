@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceManagementIntentDeviceSettingStateSummary
 description: 更新 deviceManagementIntentDeviceSettingStateSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0dd412038d51092a6c0536c0045040f74d0702e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 875fef3c6dcf6b14725896949f5b19a0a9e8698b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945765"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815273"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>更新 deviceManagementIntentDeviceSettingStateSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "39945765"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|ID|
+|id|String|ID|
 |settingName|String|设置的名称|
 |compliantCount|Int32|兼容设备的数量|
 |conflictCount|Int32|发生冲突的设备数|
@@ -105,7 +105,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

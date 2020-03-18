@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766761"
+ms.locfileid: "42815259"
 ---
 # <a name="delete-devicemanagementintentdevicestate"></a>删除 deviceManagementIntentDeviceState
 

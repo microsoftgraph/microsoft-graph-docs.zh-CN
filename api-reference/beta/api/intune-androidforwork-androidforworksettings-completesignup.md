@@ -1,20 +1,18 @@
 ---
 title: completeSignup 操作
 description: 尚未记录
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 69c1b3ad8631d891b59d0a74044c0f4b7195de65
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8c6e2399496922e671dc3306e6add9f730f907b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446161"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815689"
 ---
 # <a name="completesignup-action"></a>completeSignup 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

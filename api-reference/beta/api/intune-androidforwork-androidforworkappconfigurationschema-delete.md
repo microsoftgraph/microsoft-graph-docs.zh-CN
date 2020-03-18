@@ -1,20 +1,18 @@
 ---
 title: 删除 androidForWorkAppConfigurationSchema
 description: 删除 androidForWorkAppConfigurationSchema。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f62325c3aecfc796c831d68a969cf8c92e3bc791
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d92d1d1bcbbc891e31adf2c8826087e4177cc183
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815759"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>删除 androidForWorkAppConfigurationSchema
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfig
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

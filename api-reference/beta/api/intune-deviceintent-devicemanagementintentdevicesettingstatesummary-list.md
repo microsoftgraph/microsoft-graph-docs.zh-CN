@@ -1,20 +1,18 @@
 ---
 title: 列出 deviceManagementIntentDeviceSettingStateSummaries
 description: 列出 deviceManagementIntentDeviceSettingStateSummary 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d246aa45b7164f6fe8cc993d31d1468c2c3c8a78
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aedf8db1bf7c875e62eeb733ddb55b45a6ebebe2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470992"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815280"
 ---
 # <a name="list-devicemanagementintentdevicesettingstatesummaries"></a>列出 deviceManagementIntentDeviceSettingStateSummaries
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +81,6 @@ Content-Length: 398
   ]
 }
 ```
-
 
 
 
