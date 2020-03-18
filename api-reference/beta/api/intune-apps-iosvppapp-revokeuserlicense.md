@@ -1,20 +1,18 @@
 ---
 title: revokeUserLicense 操作
 description: 为给定应用撤销分配的 iOS VPP 用户许可证。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb5c74b311e829744ec61586a1c6e0d59422c53b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd216543ff651dbfe603e3ac7a981fcde3b1c0e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445573"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761935"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,7 +54,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|说明|
 |:---|:---|:---|
 |userId|String|要吊销的已分配应用程序许可证的用户 Id|
-|notifyManagedDevices|布尔|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|布尔值|指示是否应将吊销通知发送到设备的布尔值|
 
 
 
@@ -84,7 +82,6 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

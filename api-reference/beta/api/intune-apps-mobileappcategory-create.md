@@ -1,20 +1,18 @@
 ---
 title: 创建 mobileAppCategory
 description: 创建新的 mobileAppCategory 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 596751e44502b310bfee402ff0b1b809ed1fc4f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7dfb21e5f3f7fd1b0ce294bf9b92f40c8cbd666a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761389"
 ---
 # <a name="create-mobileappcategory"></a>创建 mobileAppCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

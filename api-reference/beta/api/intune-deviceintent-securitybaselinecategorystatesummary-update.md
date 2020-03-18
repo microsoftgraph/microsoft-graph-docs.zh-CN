@@ -1,20 +1,18 @@
 ---
 title: 更新 securityBaselineCategoryStateSummary
 description: 更新 securityBaselineCategoryStateSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07b87a57cc9b54f72c306289d82ceac5cf8ced72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da5058853bb846b11388c7522d48ea2f0cbaec92
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764654"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>更新 securityBaselineCategoryStateSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -107,7 +105,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

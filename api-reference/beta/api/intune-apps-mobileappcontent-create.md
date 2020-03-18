@@ -1,20 +1,18 @@
 ---
 title: 创建 mobileAppContent
 description: 创建新的 mobileAppContent 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e86c77e1c6e8359756c924c10d1626b565d00c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f51179978586ff309b3c7f42fca766a096ea451
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445020"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761354"
 ---
 # <a name="create-mobileappcontent"></a>创建 mobileAppContent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +86,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
 
 
 

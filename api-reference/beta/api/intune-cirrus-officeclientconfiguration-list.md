@@ -2,19 +2,17 @@
 title: 列出 officeClientConfigurations
 description: 获取所有策略。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f7738b748a2dcbccc39c13f97bb09c4bacaee97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 12f9734357a2198b30c2fa6142894aadf8e8d308
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760296"
 ---
 # <a name="list-officeclientconfigurations"></a>列出 officeClientConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +100,6 @@ Content-Length: 1207
   ]
 }
 ```
-
 
 
 

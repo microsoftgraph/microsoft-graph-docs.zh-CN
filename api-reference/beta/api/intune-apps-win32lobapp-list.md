@@ -1,20 +1,18 @@
 ---
 title: 列出 win32LobApps
 description: 列出 win32LobApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe8a716b132fad4cf4750a5f42c957105819d43a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6bca29494594c77d689767983db3e6afc0d87e8c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450585"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760968"
 ---
 # <a name="list-win32lobapps"></a>列出 win32LobApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -167,7 +165,6 @@ Content-Length: 3442
   ]
 }
 ```
-
 
 
 

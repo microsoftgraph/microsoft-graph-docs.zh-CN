@@ -1,16 +1,16 @@
 ---
 title: updateGlobalScript 操作
 description: 更新专用设备运行状况脚本
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 366fdcb5f19d6e50dfa5936c45c984cddbfb6d6d
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: f3ddb0f73c918af1d317ff91e38c1b33e38404e3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763128"
 ---
 # <a name="updateglobalscript-action"></a>updateGlobalScript 操作
 
@@ -84,7 +84,6 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
-
 
 
 

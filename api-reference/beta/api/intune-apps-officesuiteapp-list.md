@@ -1,20 +1,18 @@
 ---
 title: 列出 officeSuiteApps
 description: 列出 officeSuiteApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbed55882a75af4c731c8e7c5e4113dbb206e85d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 832d994ef574e328bae412629418d5c17931b60c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444901"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761087"
 ---
 # <a name="list-officesuiteapps"></a>列出 officeSuiteApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -131,7 +129,6 @@ Content-Length: 2032
   ]
 }
 ```
-
 
 
 

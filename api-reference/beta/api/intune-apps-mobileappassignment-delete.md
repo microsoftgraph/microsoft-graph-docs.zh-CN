@@ -1,20 +1,18 @@
 ---
 title: 删除 mobileAppAssignment
 description: 删除 mobileAppAssignment
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a66787016882a5a37e660fb71e8259f7d9c22492
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ce9396f0bb5b6e69cf9d662c1b85cb74599ee25
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450949"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761417"
 ---
 # <a name="delete-mobileappassignment"></a>删除 mobileAppAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

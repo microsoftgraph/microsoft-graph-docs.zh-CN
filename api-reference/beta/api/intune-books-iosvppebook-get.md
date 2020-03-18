@@ -1,20 +1,18 @@
 ---
 title: 获取 iosVppEBook
 description: 读取 iosVppEBook 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86a5be715bcd7f714cc1093acffca5a976c52fd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc47356c61f725522f293062b7a2ae1d4f2275b5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450347"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760492"
 ---
 # <a name="get-iosvppebook"></a>获取 iosVppEBook
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -103,7 +101,6 @@ Content-Length: 1101
   }
 }
 ```
-
 
 
 

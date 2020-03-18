@@ -1,20 +1,18 @@
 ---
 title: 列出 macOSLobApps
 description: 列出 macOSLobApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62f4b4b6ec05b24b3608ecc60707a78a1d508bd9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d23cc5226048a54e84824248803ff84a9184ad37
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445398"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761788"
 ---
 # <a name="list-macoslobapps"></a>列出 macOSLobApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -131,7 +129,6 @@ Content-Length: 2049
   ]
 }
 ```
-
 
 
 

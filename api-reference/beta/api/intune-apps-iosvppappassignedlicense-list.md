@@ -1,20 +1,18 @@
 ---
 title: 列出 iosVppAppAssignedLicenses
 description: 列出 iosVppAppAssignedLicense 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d5195b94e70c6222a2106503dd123a04d236b62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a3f20fb5a1854df9e912c43db687ffc19717a71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445469"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761861"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>列出 iosVppAppAssignedLicenses
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 340
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 securityBaselineTemplate
 description: 读取 securityBaselineTemplate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7976392dde9bb9599063a4ef4d8615f0a42b5cf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d407bd4c3884b60bf9b90b662f697c93bbc8af89
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764220"
 ---
 # <a name="get-securitybaselinetemplate"></a>获取 securityBaselineTemplate
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 459
   }
 }
 ```
-
 
 
 

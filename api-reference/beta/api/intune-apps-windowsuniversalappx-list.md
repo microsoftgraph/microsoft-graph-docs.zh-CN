@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsUniversalAppXs
 description: 列出 windowsUniversalAppX 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15e4a564285f658044a10d91a0e0b58f2387aaf5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c0d6800c55d20264ab2b3a7ceef987fa9cbfd92
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444656"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760653"
 ---
 # <a name="list-windowsuniversalappxs"></a>列出 windowsUniversalAppXs
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +119,6 @@ Content-Length: 1854
   ]
 }
 ```
-
 
 
 

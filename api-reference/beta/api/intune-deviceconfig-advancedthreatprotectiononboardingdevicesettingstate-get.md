@@ -1,20 +1,18 @@
 ---
 title: 获取 advancedThreatProtectionOnboardingDeviceSettingState
 description: 读取 advancedThreatProtectionOnboardingDeviceSettingState 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 156b436b7c2288ae62f402996089818d55325efd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 311bf610d652e09e290421070265bad4621556dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450165"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760023"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>获取 advancedThreatProtectionOnboardingDeviceSettingState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +87,6 @@ Content-Length: 669
   }
 }
 ```
-
 
 
 

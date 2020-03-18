@@ -1,20 +1,18 @@
 ---
 title: 删除 detectedApp
 description: 删除 detectedApp。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fca79bf918df2dd07e29f74a0d8bfdcb5975825
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2458c5390ca96751b9408de8f9ebb2510116cc8b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469858"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763583"
 ---
 # <a name="delete-detectedapp"></a>删除 detectedApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedA
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

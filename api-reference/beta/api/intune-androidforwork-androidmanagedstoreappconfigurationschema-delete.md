@@ -1,20 +1,18 @@
 ---
 title: 删除 androidManagedStoreAppConfigurationSchema
 description: 删除 androidManagedStoreAppConfigurationSchema。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b4f75188b580f74a11e56e7a4f7d0b4042962ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 579db39d397887a5146d7becfe6a797a0dd0cf28
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446056"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762425"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>删除 androidManagedStoreAppConfigurationSchema
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 列出 iosVppEBookAssignments
 description: 列出 iosVppEBookAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d33eedba2eb83bf3023d5e4505af2190615869c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edefa7b7b4624be182fb05cdb2ec7c266f492650
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450340"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760450"
 ---
 # <a name="list-iosvppebookassignments"></a>列出 iosVppEBookAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 299
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 mobileAppCategory
 description: 更新 mobileAppCategory 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cb12f17c8a34b288ae7f28cb510eb0dd29a30e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cca024981a0d72a0ef970dab99314f986631964a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450774"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761361"
 ---
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

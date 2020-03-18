@@ -1,20 +1,18 @@
 ---
 title: 列出 detectedApps
 description: 列出 detectedApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a204c1c0282951e293026369cf26c0bba51c2f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fec9de877751db2a1862e6d146d9e3b11f3f09fc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763555"
 ---
 # <a name="list-detectedapps"></a>列出 detectedApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 273
   ]
 }
 ```
-
 
 
 

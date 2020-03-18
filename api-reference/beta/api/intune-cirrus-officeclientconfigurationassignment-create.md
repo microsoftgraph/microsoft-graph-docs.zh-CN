@@ -2,19 +2,17 @@
 title: 创建 officeClientConfigurationAssignment
 description: 将目标组添加到现有策略中。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc883c98130495ede3148b1a468a5b5759417c12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b666bf28f29a3f03504f52c2507a4b4fb253acec
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444446"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760282"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>创建 officeClientConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

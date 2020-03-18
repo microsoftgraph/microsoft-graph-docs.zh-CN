@@ -1,20 +1,18 @@
 ---
 title: 获取 androidManagedStoreWebApp
 description: 读取 androidManagedStoreWebApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1117b66e9331945d014fbd164216c5af79c74117
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75c9599b42a69448bf81abef11c6923c230a6038
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445839"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762229"
 ---
 # <a name="get-androidmanagedstorewebapp"></a>获取 androidManagedStoreWebApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +108,6 @@ Content-Length: 1244
   }
 }
 ```
-
 
 
 

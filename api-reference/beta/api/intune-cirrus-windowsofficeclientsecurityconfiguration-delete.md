@@ -2,19 +2,17 @@
 title: 删除 windowsOfficeClientSecurityConfiguration
 description: 删除安全策略 windowsOfficeClientSecurityConfiguration。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 473b8dbe32dd5cce984d247c728400a61a634b81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e88196992001912e4d3f1a1b4917bf033696bc6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444397"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760205"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>删除 windowsOfficeClientSecurityConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

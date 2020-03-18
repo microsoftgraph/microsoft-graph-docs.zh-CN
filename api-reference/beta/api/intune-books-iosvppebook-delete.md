@@ -1,20 +1,18 @@
 ---
 title: 删除 iosVppEBook
 description: 删除 iosVppEBook。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25e34a2b2a8f2d6c3b7bafe465690ae0df25440a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04df5d256d6350866cc00175ff260af084275fea
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760499"
 ---
 # <a name="delete-iosvppebook"></a>删除 iosVppEBook
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

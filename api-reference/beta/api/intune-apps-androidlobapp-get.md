@@ -1,20 +1,18 @@
 ---
 title: 获取 androidLobApp
 description: 读取 androidLobApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00de09750cdce4f9cdba16eda7830e0d03fc42f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5574924649a1e99642058701e1c3253910e23f10
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445937"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762313"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -127,7 +125,6 @@ Content-Length: 1704
   }
 }
 ```
-
 
 
 

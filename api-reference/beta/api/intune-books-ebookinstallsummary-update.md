@@ -1,20 +1,18 @@
 ---
 title: 更新 eBookInstallSummary
 description: 更新 eBookInstallSummary 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d31bd389951a71c1fcca3cb26e5560b53a9195c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b101d6ca2fe41f3c6791fb391645117359ce9f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760513"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -104,7 +102,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
 
 
 

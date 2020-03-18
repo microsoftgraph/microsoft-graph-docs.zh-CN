@@ -1,20 +1,18 @@
 ---
 title: 获取 mobileAppAssignment
 description: 读取 mobileAppAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11ef06d7b2193dbad28e713b781bcdb2fdff1d28
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 035076726abedb1d1711bc70b2b93b60072f45f5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761410"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +84,6 @@ Content-Length: 424
   }
 }
 ```
-
 
 
 

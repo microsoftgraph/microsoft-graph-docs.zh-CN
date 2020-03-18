@@ -1,20 +1,18 @@
 ---
 title: 列出 webApps
 description: 列出 webApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e67ac12810cdbc02911b971da40f02c09e3f8acb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce9eaeb59b555fd936c17e71fff1b9da9682169f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450606"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761003"
 ---
 # <a name="list-webapps"></a>列出 webApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 1092
   ]
 }
 ```
-
 
 
 

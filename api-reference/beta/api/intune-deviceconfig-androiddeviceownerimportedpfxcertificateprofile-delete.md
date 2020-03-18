@@ -1,20 +1,18 @@
 ---
 title: 删除 androidDeviceOwnerImportedPFXCertificateProfile
 description: 删除 androidDeviceOwnerImportedPFXCertificateProfile。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2054699cc4b8dbb56b1ff9d2e49bf54d2db1922c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53cf309e0bd2e2532fb931fcfe43d590c831e45f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450046"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759778"
 ---
 # <a name="delete-androiddeviceownerimportedpfxcertificateprofile"></a>删除 androidDeviceOwnerImportedPFXCertificateProfile
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

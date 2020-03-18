@@ -1,20 +1,18 @@
 ---
 title: 列出 androidDeviceOwnerCertificateProfileBases
 description: 列出 androidDeviceOwnerCertificateProfileBase 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e576bc0e809d42c199f5d37887c4b3f849454747
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76d01e4ba339bbf58964de9986377dac8c13ae1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444215"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759897"
 ---
 # <a name="list-androiddeviceownercertificateprofilebases"></a>列出 androidDeviceOwnerCertificateProfileBases
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 1836
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 iosVppEBook
 description: 创建新的 iosVppEBook 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb641714a4ffbdb304ba3a95bb7078d9bc223696
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd7c521ed2cfd8587262d0056eccc00a5bee76ea
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450361"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760506"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -71,7 +69,7 @@ POST /deviceAppManagement/managedEBooks
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -154,7 +152,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

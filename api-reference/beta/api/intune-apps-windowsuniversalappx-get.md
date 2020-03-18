@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsUniversalAppX
 description: 读取 windowsUniversalAppX 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2470fc1e7a5d23b1d840b8cf64a06068bbfc4dce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc92b54f6b7be14afef19cc51ff83d6ca5a70d03
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444670"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760660"
 ---
 # <a name="get-windowsuniversalappx"></a>获取 windowsUniversalAppX
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -124,7 +122,6 @@ Content-Length: 1746
   }
 }
 ```
-
 
 
 

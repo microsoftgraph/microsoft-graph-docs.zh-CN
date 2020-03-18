@@ -1,20 +1,18 @@
 ---
 title: 删除了 windowsphone81appx
 description: 删除了 windowsphone81appx。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 532aaba2c446879575170f5fb5f0a12712b88185
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c5c0f805f61ca6466f3c68c26629b96410a225b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760842"
 ---
 # <a name="delete-windowsphone81appx"></a>删除了 windowsphone81appx
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

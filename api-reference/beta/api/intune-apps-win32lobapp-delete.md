@@ -1,20 +1,18 @@
 ---
 title: 删除 win32LobApp
 description: 删除 win32LobApp。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e009b74cb18afa522eecaf6a4ef51a197e345051
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8f8bcab8b5b22593e3fbb9b0729377bd6bf426d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444831"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760982"
 ---
 # <a name="delete-win32lobapp"></a>删除 win32LobApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 deviceShellScript
 description: 读取 deviceShellScript 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e8ff6ec549e7342600dac8d91756bf16e061887
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad870fbe0a4969f012a7c2b895d857e04071ba97
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762868"
 ---
 # <a name="get-deviceshellscript"></a>获取 deviceShellScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +85,6 @@ Content-Length: 520
   }
 }
 ```
-
 
 
 

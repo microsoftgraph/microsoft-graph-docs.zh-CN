@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsAppXs
 description: 列出 windowsAppX 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d5e570f399480c002531a552d0a38e54be67971
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcf426d758ccd0869cc0c3694d0dbd61401b59a1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444810"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760933"
 ---
 # <a name="list-windowsappxs"></a>列出 windowsAppXs
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +118,6 @@ Content-Length: 1802
   ]
 }
 ```
-
 
 
 

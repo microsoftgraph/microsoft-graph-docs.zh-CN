@@ -2,19 +2,17 @@
 title: assign 操作
 description: 替换策略的所有目标组。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c7433d2ad35f84e54702b84fe5f9742105b786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6268317cfc2df93ced328d2b8016276954fe6dac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444481"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760310"
 ---
 # <a name="assign-action"></a>分配操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +100,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

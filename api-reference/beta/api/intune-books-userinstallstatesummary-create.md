@@ -1,20 +1,18 @@
 ---
 title: 创建 userInstallStateSummary
 description: 创建新的 userInstallStateSummary 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b07bbf8c6625ed48e89662eba2e253870f60a90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edb1f0b5c4a4d147ebf1b982e17aa16cd43a13e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444502"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760345"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

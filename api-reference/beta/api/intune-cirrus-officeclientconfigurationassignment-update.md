@@ -2,19 +2,17 @@
 title: 更新 officeClientConfigurationAssignment
 description: 更新 officeClientConfigurationAssignment 对象的属性。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 66936612e5c8938e6824d8feb70933ab1e7e19c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e2701a5b7a3dbc51ec3a7efaa08493f4d6512d4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444418"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760254"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>更新 officeClientConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

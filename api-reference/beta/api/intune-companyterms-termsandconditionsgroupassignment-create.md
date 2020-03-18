@@ -1,20 +1,18 @@
 ---
 title: 创建 termsAndConditionsGroupAssignment
 description: 创建新的 termsAndConditionsGroupAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e57349fb95334fa204b4f5c33b4ae3a3e904b473
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebb289d651037d830bb9d4c58f21672154c5d257
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444313"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760072"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>创建 termsAndConditionsGroupAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +87,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

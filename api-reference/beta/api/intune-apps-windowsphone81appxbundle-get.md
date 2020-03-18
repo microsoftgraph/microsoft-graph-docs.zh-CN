@@ -1,20 +1,18 @@
 ---
 title: 获取了 windowsphone81appxbundle
 description: 读取了 windowsphone81appxbundle 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 422f22de84bb1eda3b9a90a02258b7f74bcc8876
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45ad80a8dded960ef1fb8e547f9059cf964d8c6c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450494"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760800"
 ---
 # <a name="get-windowsphone81appxbundle"></a>获取了 windowsphone81appxbundle
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -147,7 +145,6 @@ Content-Length: 2642
   }
 }
 ```
-
 
 
 

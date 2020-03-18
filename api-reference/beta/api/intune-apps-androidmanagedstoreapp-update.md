@@ -1,20 +1,18 @@
 ---
 title: 更新 androidManagedStoreApp
 description: 更新 androidManagedStoreApp 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a8cf1e898e64ec2b8d958d935372553f8ca91993
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14b7a857ada444f6f4fefdf6d1a147323c2357df
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445895"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762271"
 ---
 # <a name="update-androidmanagedstoreapp"></a>更新 androidManagedStoreApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -71,16 +69,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|包标识符。|
 |appIdentifier|String|标识名称。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。|
-|isPrivate|布尔|指示应用程序是否仅适用于给定企业的用户。|
-|isSystemApp|布尔|指示应用程序是否为预安装的系统应用程序。|
-|supportsOemConfig|布尔|此应用是否支持 OEMConfig 策略。|
+|isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。|
+|isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。|
+|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。|
 
 
 
@@ -173,7 +171,6 @@ Content-Length: 1156
   "supportsOemConfig": true
 }
 ```
-
 
 
 

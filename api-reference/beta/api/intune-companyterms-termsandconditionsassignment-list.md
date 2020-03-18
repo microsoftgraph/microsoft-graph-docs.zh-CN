@@ -1,20 +1,18 @@
 ---
 title: 列出 termsAndConditionsAssignments
 description: 列出 termsAndConditionsAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c40d97020ab9c3cbe6118b14a323f058b23498de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 628da6068c2d7169847b413f851cde1804235451
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450200"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760086"
 ---
 # <a name="list-termsandconditionsassignments"></a>列出 termsAndConditionsAssignments
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 270
   ]
 }
 ```
-
 
 
 

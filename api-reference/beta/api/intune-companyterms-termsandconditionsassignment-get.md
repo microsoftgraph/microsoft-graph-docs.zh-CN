@@ -1,20 +1,18 @@
 ---
 title: 获取 termsAndConditionsAssignment
 description: 读取 termsAndConditionsAssignment 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8368b4928f8e06f95e946df0b30bc480d0398cbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64d08c25b2bedd350b685f7a43249b7e01bb857e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450207"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760093"
 ---
 # <a name="get-termsandconditionsassignment"></a>获取 termsAndConditionsAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 246
   }
 }
 ```
-
 
 
 

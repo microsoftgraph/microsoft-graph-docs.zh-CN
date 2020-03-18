@@ -1,20 +1,18 @@
 ---
 title: 获取 androidDeviceOwnerEnterpriseWiFiConfiguration
 description: 读取 androidDeviceOwnerEnterpriseWiFiConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: de4d44d20fba90b241617fcf592f57a0636a7cc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e58c713aaded2a03749f27f6362176c3cd0ae13
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444173"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759841"
 ---
 # <a name="get-androiddeviceownerenterprisewificonfiguration"></a>获取 androidDeviceOwnerEnterpriseWiFiConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +119,6 @@ Content-Length: 1891
   }
 }
 ```
-
 
 
 

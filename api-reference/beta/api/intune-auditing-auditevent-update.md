@@ -1,20 +1,18 @@
 ---
 title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a4b4a0e2ef8355450f039608a7769a613296cc2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd711eb0813f27f40481c328ffec489daee90f33
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450389"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760562"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -187,7 +185,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
 
 
 

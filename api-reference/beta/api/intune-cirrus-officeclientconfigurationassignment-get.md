@@ -2,19 +2,17 @@
 title: 获取 officeClientConfigurationAssignment
 description: 读取 officeClientConfigurationAssignment 对象的属性和关系。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a77552daf69df542d963ed45c84385f23283a51d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d0fd8828bf68e86295ef034580fb7af4396f780
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444432"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760268"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>获取 officeClientConfigurationAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

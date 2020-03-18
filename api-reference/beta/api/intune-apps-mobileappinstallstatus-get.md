@@ -1,20 +1,18 @@
 ---
 title: 获取 mobileAppInstallStatus
 description: 读取 mobileAppInstallStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7fad19422e61dcc7ed46755c2a934231c8d6532
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 333f622821f44fcf5387eb243ada4f3287b01f53
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450704"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761221"
 ---
 # <a name="get-mobileappinstallstatus"></a>获取 mobileAppInstallStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 651
   }
 }
 ```
-
 
 
 

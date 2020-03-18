@@ -1,20 +1,18 @@
 ---
 title: 删除 auditEvent
 description: 删除 auditEvent
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78caf02f63a0d73b96e153a5a1e3c1e6cae396a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2023430cccb1de2b6e0d98860413aac537bf8bb3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760597"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEvent
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

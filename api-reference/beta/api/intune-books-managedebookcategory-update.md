@@ -1,20 +1,18 @@
 ---
 title: 更新 managedEBookCategory
 description: 更新 managedEBookCategory 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91dd753ec6a40539e1b85b1aa30635a2497014ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: adc3fc59b91575723b445fe9e3667dea4fd973c7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450277"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760352"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +90,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 删除了 windowsphone81appxbundle
 description: 删除了 windowsphone81appxbundle。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fceb17ac15ea525fae725497a56fe614e09976a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c88030bc83eafaae6bcc7321d65661e32f7d7eb3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760807"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>删除了 windowsphone81appxbundle
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

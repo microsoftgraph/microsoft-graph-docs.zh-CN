@@ -1,20 +1,18 @@
 ---
 title: 列出 iosVppApps
 description: 列出 iosVppApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01506464625944c30bbc1aaca3dbf32e345ab82a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e433ecd9e9665e2391746eb5056547cb2bbe3deb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445587"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761956"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -134,7 +132,6 @@ Content-Length: 2444
   ]
 }
 ```
-
 
 
 

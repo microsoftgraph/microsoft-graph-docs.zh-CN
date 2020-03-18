@@ -1,20 +1,18 @@
 ---
 title: 列出 androidManagedStoreAppConfigurations
 description: 列出 androidManagedStoreAppConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48cdae0713ae3a1a02f238a571d91d91ccfba6fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 239b69fa17a8f5daaf26bc5cd7caa36b3704c40d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762236"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>列出 androidManagedStoreAppConfigurations
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +95,6 @@ Content-Length: 889
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 dataSharingConsent
 description: 更新 dataSharingConsent 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a856ce266380796344e178279a0629ddac2488
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0e89b9acfd1211b46d356868e8ba5b1a2b4866a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469900"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763618"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,7 +54,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |id|String|数据共享同意 Id|
 |serviceDisplayName|String|服务工作流的显示名称|
 |termsUrl|String|数据共享同意的 TermsUrl|
-|granted|布尔|"数据共享同意" 的 "已授予" 状态|
+|granted|布尔值|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
 |grantedByUpn|String|授予此帐户同意的用户的 Upn|
 |grantedByUserId|String|授予此帐户同意的用户的用户 Id|
@@ -104,7 +102,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 更新 deviceInstallState
 description: 更新 deviceInstallState 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a1b786000ca5fecdebc2e31b82f2de19deaf3e61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dcf4b192bfca5af888cd22b563cb15fd80a9d546
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444593"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760527"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -111,7 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

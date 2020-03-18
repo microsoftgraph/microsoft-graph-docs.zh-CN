@@ -2,19 +2,17 @@
 title: 创建 windowsOfficeClientSecurityConfiguration
 description: 创建新的 windowsOfficeClientSecurityConfiguration 对象。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f73f14ddf05458faa6ab5a6aa72ea63537547f6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ac8658489fd27e48866f0d0fa72e222029caf59
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450249"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760212"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>创建 windowsOfficeClientSecurityConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -148,7 +146,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

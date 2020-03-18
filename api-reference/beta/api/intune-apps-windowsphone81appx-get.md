@@ -1,20 +1,18 @@
 ---
 title: 获取了 windowsphone81appx
 description: 读取了 windowsphone81appx 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3caa1fccdba763d8e867b5244bd21709ad7215b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f217ca556b1158490f85c86db2e19c21e1609cf0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444768"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760835"
 ---
 # <a name="get-windowsphone81appx"></a>获取了 windowsphone81appx
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -124,7 +122,6 @@ Content-Length: 1798
   }
 }
 ```
-
 
 
 

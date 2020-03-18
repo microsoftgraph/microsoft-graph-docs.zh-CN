@@ -1,20 +1,18 @@
 ---
 title: 列出 androidDeviceOwnerTrustedRootCertificates
 description: 列出 androidDeviceOwnerTrustedRootCertificate 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef91f18041eee0b017e801434a3193ce50a0f5ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a51ca3f70af83d05f668c97bd1ca6154bdd596b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444103"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759694"
 ---
 # <a name="list-androiddeviceownertrustedrootcertificates"></a>列出 androidDeviceOwnerTrustedRootCertificates
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +107,6 @@ Content-Length: 1492
   ]
 }
 ```
-
 
 
 

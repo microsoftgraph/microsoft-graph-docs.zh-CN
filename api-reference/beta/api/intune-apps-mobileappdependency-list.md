@@ -1,20 +1,18 @@
 ---
 title: 列出 mobileAppDependencies
 description: 列出 mobileAppDependency 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80ea3bc802d72ebc92fa2ee1f3999c3c6a3c2877
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a82523f6bfae49500e9d56ae09f815d72410d65
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450711"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761249"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 317
   ]
 }
 ```
-
 
 
 

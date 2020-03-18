@@ -1,20 +1,18 @@
 ---
 title: 删除 macOSMicrosoftEdgeApp
 description: 删除 macOSMicrosoftEdgeApp。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ba3d1107cdc0b1ec6510ef0a91e1af61dd3ab9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3590e07a88c10bf15a0df2a953f49e2effefec6b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761739"
 ---
 # <a name="delete-macosmicrosoftedgeapp"></a>删除 macOSMicrosoftEdgeApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

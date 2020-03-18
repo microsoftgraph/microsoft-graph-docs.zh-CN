@@ -1,20 +1,18 @@
 ---
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e85c349c8bbf64b75aa3924a3bdaaaad33710afd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5a3894b183d8edae03091f65c535d504d9f9932
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450837"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761424"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +107,6 @@ Content-Length: 383
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

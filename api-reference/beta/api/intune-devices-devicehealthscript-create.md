@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceHealthScript
 description: 创建新的 deviceHealthScript 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4a77b0a270870176b0ff6451323d7d255375db1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5638b7ac4452531e4da173dd3bab53a42ce7e339
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469746"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763534"
 ---
 # <a name="create-devicehealthscript"></a>创建 deviceHealthScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,10 +61,10 @@ POST /deviceManagement/deviceHealthScripts
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
-|runAs32Bit|布尔|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|布尔|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
+|runAs32Bit|布尔值|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|布尔值|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
 |highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 
@@ -130,7 +128,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

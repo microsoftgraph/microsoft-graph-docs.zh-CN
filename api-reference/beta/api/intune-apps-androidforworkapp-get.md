@@ -1,20 +1,18 @@
 ---
 title: 获取 androidForWorkApp
 description: 读取 androidForWorkApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 656dff35b2271a73eb6e5d52b0ffb4659d7f0cc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 135c0e2a12b556135f93f1aaac01450d3c5d21fe
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446021"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762383"
 ---
 # <a name="get-androidforworkapp"></a>获取 androidForWorkApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -107,7 +105,6 @@ Content-Length: 1154
   }
 }
 ```
-
 
 
 

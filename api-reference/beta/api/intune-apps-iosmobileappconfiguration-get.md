@@ -1,20 +1,18 @@
 ---
 title: 获取 iosMobileAppConfiguration
 description: 读取 iosMobileAppConfiguration 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd412cc0fb49789ba4b2dda5a957f6293e302cf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a404cce5a64e88bdabc5945a87a9aa374366310
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445671"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762033"
 ---
 # <a name="get-iosmobileappconfiguration"></a>获取 iosMobileAppConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +95,6 @@ Content-Length: 831
   }
 }
 ```
-
 
 
 

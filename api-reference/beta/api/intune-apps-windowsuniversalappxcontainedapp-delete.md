@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsUniversalAppXContainedApp
 description: 删除 windowsUniversalAppXContainedApp。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10838f99ca8ca05dc0c8eceaf544d0105d5a7347
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b27dedaa8ff813c5e7c09d120e044ffbdd143b4d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450431"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760632"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>删除 windowsUniversalAppXContainedApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

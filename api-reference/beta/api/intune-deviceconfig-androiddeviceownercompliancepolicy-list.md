@@ -1,20 +1,18 @@
 ---
 title: 列出 androidDeviceOwnerCompliancePolicies
 description: 列出 androidDeviceOwnerCompliancePolicy 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c6879838bbfba19e5ba424061c7332c398547af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9965df8b8da9d06cdab529f2b2a8db5e79a1d365
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444201"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759869"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>列出 androidDeviceOwnerCompliancePolicies
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -105,7 +103,6 @@ Content-Length: 1552
   ]
 }
 ```
-
 
 
 

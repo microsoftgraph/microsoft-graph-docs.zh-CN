@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceShellScript
 description: 创建新的 deviceShellScript 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 662d0be06b4a714a271e12b1e813aa09f5c76187
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64a6cece52e76e7ca5ae5f376913901a8a185e42
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762875"
 ---
 # <a name="create-deviceshellscript"></a>创建 deviceShellScript
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -61,7 +59,7 @@ POST /deviceManagement/deviceShellScripts
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 
 
@@ -112,7 +110,6 @@ Content-Length: 477
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 创建 mobileAppInstallStatus
 description: 创建新的 mobileAppInstallStatus 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 30ffe5c96f9e0b4829663558d0a97a604168b1ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48218f2a1f793f231d65aefe1f51e11171a85a1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450697"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761235"
 ---
 # <a name="create-mobileappinstallstatus"></a>创建 mobileAppInstallStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -123,7 +121,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

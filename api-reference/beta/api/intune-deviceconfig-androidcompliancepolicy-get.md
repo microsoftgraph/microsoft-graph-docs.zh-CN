@@ -1,20 +1,18 @@
 ---
 title: 获取 androidCompliancePolicy
 description: 读取 androidCompliancePolicy 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31b3c05b66e6e8bc607f097fdb2b388460a538bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c45752ef3d67d40a9769959e48a0f6d7572c45c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759960"
 ---
 # <a name="get-androidcompliancepolicy"></a>获取 androidCompliancePolicy
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +117,6 @@ Content-Length: 1989
   }
 }
 ```
-
 
 
 

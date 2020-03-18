@@ -1,20 +1,18 @@
 ---
 title: 更新 mobileAppDependency
 description: 更新 mobileAppDependency 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1179187b5071530ba76ffb293379714550cd96aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 026194d2bf4bf6de2b657acd386a813915adae95
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445062"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761242"
 ---
 # <a name="update-mobileappdependency"></a>更新 mobileAppDependency
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +96,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 

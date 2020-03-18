@@ -1,20 +1,18 @@
 ---
 title: 列出 userInstallStateSummaries
 description: 列出 userInstallStateSummary 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7cee0abbb0f4541ef6bf6eb9785d0a05c84f07b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9d08e63e63b6d40eaa3ca99211d56e8c73799402
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444488"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760324"
 ---
 # <a name="list-userinstallstatesummaries"></a>列出 userInstallStateSummaries
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 295
   ]
 }
 ```
-
 
 
 

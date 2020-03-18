@@ -1,20 +1,18 @@
 ---
 title: 获取 managedEBook
 description: 读取 managedEBook 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be898b5ba651d1fb3044a50977809549aa5f96e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 31741b511472fe1c3049b36e300a565f86e81a4c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444537"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760429"
 ---
 # <a name="get-managedebook"></a>获取 managedEBook
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +88,6 @@ Content-Length: 712
   }
 }
 ```
-
 
 
 

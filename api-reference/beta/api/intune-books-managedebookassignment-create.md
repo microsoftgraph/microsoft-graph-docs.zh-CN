@@ -1,20 +1,18 @@
 ---
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6ee0c8e3e7538c761754b94b3b2f38bc277c65f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 90d6d5ee75b0a300b1c57d206e29002725343929
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444523"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760415"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -96,7 +94,6 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
-
 
 
 

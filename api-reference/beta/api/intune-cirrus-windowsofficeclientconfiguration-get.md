@@ -2,19 +2,17 @@
 title: 获取 windowsOfficeClientConfiguration
 description: 获取特定的非安全策略 windowsOfficeClientConfiguration 对象。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e8c847d884b34a4077052210581b194edbf8511
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50963b799c717a170514e162bf9c29a6757f56f1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444404"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760233"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>获取 windowsOfficeClientConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -103,7 +101,6 @@ Content-Length: 1144
   }
 }
 ```
-
 
 
 

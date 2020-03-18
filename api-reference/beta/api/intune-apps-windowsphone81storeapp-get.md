@@ -1,20 +1,18 @@
 ---
 title: 获取 windowsPhone81StoreApp
 description: 读取 windowsPhone81StoreApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6d8dff913cd9c9aaf48f4cc409aa0c8401bef49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1cbfbd5a3f7536d1323743b3c2f8c7b367bb437d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444733"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760765"
 ---
 # <a name="get-windowsphone81storeapp"></a>获取 windowsPhone81StoreApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -103,7 +101,6 @@ Content-Length: 1018
   }
 }
 ```
-
 
 
 

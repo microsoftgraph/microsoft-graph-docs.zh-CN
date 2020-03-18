@@ -1,20 +1,18 @@
 ---
 title: 创建 deviceInstallState
 description: 创建新的 deviceInstallState 对象。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d26d61ca0c7a97466d16df3ba29d71ab5d1c735
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05737311591168f951c8f1e7b83b96f1b6564326
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444607"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760555"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -111,7 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

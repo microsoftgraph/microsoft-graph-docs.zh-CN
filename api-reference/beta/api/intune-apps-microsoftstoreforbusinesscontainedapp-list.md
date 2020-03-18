@@ -1,20 +1,18 @@
 ---
 title: 列出 microsoftStoreForBusinessContainedApps
 description: 列出 microsoftStoreForBusinessContainedApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d76f42b780b27893b3412c18c1973c50a8fe03e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 13555f5f021576b641d4c63ad834f3b3f343b01b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761438"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>列出 microsoftStoreForBusinessContainedApps
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +77,6 @@ Content-Length: 221
   ]
 }
 ```
-
 
 
 

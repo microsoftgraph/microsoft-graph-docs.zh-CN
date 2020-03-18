@@ -1,20 +1,18 @@
 ---
 title: 列出 windowsPhoneXAPs
 description: 列出 windowsPhoneXAP 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9da90c942c70f7102a839b0f03fa69824648f5ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f70a340c4409452aade86f803bfd6d1dd984095
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444712"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760723"
 ---
 # <a name="list-windowsphonexaps"></a>列出 windowsPhoneXAPs
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -116,7 +114,6 @@ Content-Length: 1610
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: 获取 macOSLobApp
 description: 读取 macOSLobApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 479b136bc244c66ceb808fef08151bea236cc101
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf37846966b39dc699a5ea3103b24e806ebeb51d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445406"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761795"
 ---
 # <a name="get-macoslobapp"></a>获取 macOSLobApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -134,7 +132,6 @@ Content-Length: 1921
   }
 }
 ```
-
 
 
 

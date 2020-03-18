@@ -1,20 +1,18 @@
 ---
 title: 更新 userAppInstallStatus
 description: 更新 userAppInstallStatus 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 811581ba5f644d1cddc203b202d55eb67f53db1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70592860aff6ce68b37af123208cc2ee18f605b3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444859"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761031"
 ---
 # <a name="update-userappinstallstatus"></a>更新 userAppInstallStatus
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +99,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

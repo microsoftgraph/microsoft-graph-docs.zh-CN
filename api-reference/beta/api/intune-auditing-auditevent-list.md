@@ -1,20 +1,18 @@
 ---
 title: 列出 auditEvents
 description: 列出 auditEvent 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef8670ef866839a30459d1478d710af93d3005cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b44490c51e3a48a233e729f01f70ff3af65ba2e9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444614"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760569"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +119,6 @@ Content-Length: 1873
   ]
 }
 ```
-
 
 
 

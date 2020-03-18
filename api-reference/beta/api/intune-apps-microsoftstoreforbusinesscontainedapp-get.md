@@ -1,20 +1,18 @@
 ---
 title: 获取 microsoftStoreForBusinessContainedApp
 description: 读取 microsoftStoreForBusinessContainedApp 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ecf0d70dbd00c86d630abcc0e668f756c633b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e19bd01922e2aa23a92759ff67ff2680d9ad05eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450858"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761445"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>获取 microsoftStoreForBusinessContainedApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +78,6 @@ Content-Length: 201
   }
 }
 ```
-
 
 
 

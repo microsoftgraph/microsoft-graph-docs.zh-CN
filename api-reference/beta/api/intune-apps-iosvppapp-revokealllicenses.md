@@ -1,20 +1,18 @@
 ---
 title: revokeAllLicenses 操作
 description: 为给定的应用程序吊销所有分配的 iOS VPP 许可证。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4358266f70f6c21462e037c870e948806b29bfac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d972ecba6e3c752bcd668e171fb249c5571ec8b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445594"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761949"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses 操作
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |属性|类型|说明|
 |:---|:---|:---|
-|notifyManagedDevices|布尔|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|布尔值|指示是否应将吊销通知发送到设备的布尔值|
 
 
 
@@ -82,7 +80,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

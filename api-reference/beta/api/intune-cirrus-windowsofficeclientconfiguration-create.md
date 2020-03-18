@@ -2,19 +2,17 @@
 title: 创建 windowsOfficeClientConfiguration
 description: 使用目标组创建新的非安全策略。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8d078927141f5796ac1f63987f23bc2c7b69e54
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0348d2b83b553004a9c40a3d95a6ad2ee8d38f46
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444411"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760247"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>创建 windowsOfficeClientConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -147,7 +145,6 @@ Content-Length: 1069
   ]
 }
 ```
-
 
 
 

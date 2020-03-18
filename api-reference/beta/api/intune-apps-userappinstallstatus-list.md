@@ -1,20 +1,18 @@
 ---
 title: 列出 userAppInstallStatuses
 description: 列出 userAppInstallStatus 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cd20a6f00366dfb87e4ec1b3b19b66aa7674571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6cff159efc534281d0ef415ea1103168d094ac6f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450613"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761038"
 ---
 # <a name="list-userappinstallstatuses"></a>列出 userAppInstallStatuses
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +79,6 @@ Content-Length: 349
   ]
 }
 ```
-
 
 
 

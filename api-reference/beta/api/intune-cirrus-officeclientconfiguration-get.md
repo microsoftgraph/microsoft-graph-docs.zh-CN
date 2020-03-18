@@ -2,19 +2,17 @@
 title: 获取 officeClientConfiguration
 description: 获取特定策略。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e35afea5c67683b23314a17728039c12c0f2fe1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a7e85b29a5f60b8a12bd5c26635d71aa4c397fe
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444467"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760303"
 ---
 # <a name="get-officeclientconfiguration"></a>获取 officeClientConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +100,6 @@ Content-Length: 1137
   }
 }
 ```
-
 
 
 

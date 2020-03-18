@@ -1,20 +1,18 @@
 ---
 title: mobileAppTroubleshootingAppTargetHistory 资源类型
 description: 移动应用故障排除事件中包含的历史记录项。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 074be97a5090b64afc8fee6dd61203285702d896
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da07e7873243c4c626d615ac91bda8f8e33b0b0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764451"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

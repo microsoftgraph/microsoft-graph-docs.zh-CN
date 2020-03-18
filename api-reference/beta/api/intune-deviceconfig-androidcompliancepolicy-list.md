@@ -1,20 +1,18 @@
 ---
 title: 列出 androidCompliancePolicies
 description: 列出 androidCompliancePolicy 对象的属性和关系。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77bdbde21a6baf723c2e691d4c2622104cc12201
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3163fab40dd9580b80020617cc8a659675508d0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450123"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759953"
 ---
 # <a name="list-androidcompliancepolicies"></a>列出 androidCompliancePolicies
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +116,6 @@ Content-Length: 2091
   ]
 }
 ```
-
 
 
 

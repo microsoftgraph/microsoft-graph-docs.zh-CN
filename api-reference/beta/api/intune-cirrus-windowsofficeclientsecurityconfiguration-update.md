@@ -2,19 +2,17 @@
 title: 更新 windowsOfficeClientSecurityConfiguration
 description: 更新 windowsOfficeClientSecurityConfiguration 对象的属性。
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee309d88eefe7aa60978077adab5fc6f8e17e1de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84c259e442d5d6941d613e75d3bac603452d939d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450242"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760184"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>更新 windowsOfficeClientSecurityConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -146,7 +144,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

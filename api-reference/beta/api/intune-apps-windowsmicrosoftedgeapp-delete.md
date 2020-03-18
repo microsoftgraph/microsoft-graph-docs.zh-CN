@@ -1,20 +1,18 @@
 ---
 title: 删除 windowsMicrosoftEdgeApp
 description: 删除 windowsMicrosoftEdgeApp。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 222e5d94dd5462f59caa31aa95ec6161e77e4f87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04c8af08114ff9787a12e7f3270b353efc9a624c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450550"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760912"
 ---
 # <a name="delete-windowsmicrosoftedgeapp"></a>删除 windowsMicrosoftEdgeApp
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

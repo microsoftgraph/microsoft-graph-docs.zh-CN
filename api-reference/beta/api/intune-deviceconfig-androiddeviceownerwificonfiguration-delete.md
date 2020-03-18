@@ -1,20 +1,18 @@
 ---
 title: 删除 androidDeviceOwnerWiFiConfiguration
 description: 删除 androidDeviceOwnerWiFiConfiguration。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b42d75bba8792f14fff4046c876b17459bf4d268
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c09e61d1c44aef0a72396dcf525072f54125fd56
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444033"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759638"
 ---
 # <a name="delete-androiddeviceownerwificonfiguration"></a>删除 androidDeviceOwnerWiFiConfiguration
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
