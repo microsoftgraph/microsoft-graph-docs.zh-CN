@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762833"
+ms.locfileid: "42815808"
 ---
 # <a name="createtoken-action"></a><span data-ttu-id="bf801-103">createToken 操作</span><span class="sxs-lookup"><span data-stu-id="bf801-103">createToken action</span></span>
 

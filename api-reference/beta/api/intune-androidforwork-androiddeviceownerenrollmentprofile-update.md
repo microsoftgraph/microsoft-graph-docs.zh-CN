@@ -1,37 +1,35 @@
 ---
 title: 更新 androidDeviceOwnerEnrollmentProfile
 description: 更新 androidDeviceOwnerEnrollmentProfile 对象的属性。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: edc74d3b23c290cd6fb3473ba2764a6418ac8df7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a387e4f0848afca4687cf6c71923cefa2d1b235e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446259"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815773"
 ---
-# <a name="update-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="04086-103">更新 androidDeviceOwnerEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="04086-103">Update androidDeviceOwnerEnrollmentProfile</span></span>
+# <a name="update-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="cf0ac-103">更新 androidDeviceOwnerEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="cf0ac-103">Update androidDeviceOwnerEnrollmentProfile</span></span>
 
-<span data-ttu-id="04086-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="04086-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="cf0ac-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="04086-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="04086-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cf0ac-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="04086-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="04086-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="cf0ac-106">更新[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-106">Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
 
-<span data-ttu-id="04086-107">更新[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="04086-107">Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cf0ac-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="cf0ac-107">Prerequisites</span></span>
+<span data-ttu-id="cf0ac-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="04086-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="04086-108">Prerequisites</span></span>
-<span data-ttu-id="04086-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="04086-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="04086-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="04086-111">Permission type</span></span>|<span data-ttu-id="04086-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="04086-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cf0ac-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="cf0ac-110">Permission type</span></span>|<span data-ttu-id="cf0ac-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="cf0ac-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="04086-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="04086-113">Delegated (work or school account)</span></span>|<span data-ttu-id="04086-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04086-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="04086-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="04086-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="04086-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="04086-116">Not supported.</span></span>|
-|<span data-ttu-id="04086-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="04086-117">Application</span></span>|<span data-ttu-id="04086-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04086-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="cf0ac-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cf0ac-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cf0ac-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf0ac-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="cf0ac-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cf0ac-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cf0ac-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-115">Not supported.</span></span>|
+|<span data-ttu-id="cf0ac-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="cf0ac-116">Application</span></span>|<span data-ttu-id="cf0ac-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf0ac-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="04086-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="04086-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cf0ac-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cf0ac-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,42 +38,42 @@ ms.locfileid: "42446259"
 PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="04086-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="04086-120">Request headers</span></span>
-|<span data-ttu-id="04086-121">标头</span><span class="sxs-lookup"><span data-stu-id="04086-121">Header</span></span>|<span data-ttu-id="04086-122">值</span><span class="sxs-lookup"><span data-stu-id="04086-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cf0ac-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cf0ac-119">Request headers</span></span>
+|<span data-ttu-id="cf0ac-120">标头</span><span class="sxs-lookup"><span data-stu-id="cf0ac-120">Header</span></span>|<span data-ttu-id="cf0ac-121">值</span><span class="sxs-lookup"><span data-stu-id="cf0ac-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="04086-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="04086-123">Authorization</span></span>|<span data-ttu-id="04086-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="04086-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="04086-125">接受</span><span class="sxs-lookup"><span data-stu-id="04086-125">Accept</span></span>|<span data-ttu-id="04086-126">application/json</span><span class="sxs-lookup"><span data-stu-id="04086-126">application/json</span></span>|
+|<span data-ttu-id="cf0ac-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf0ac-122">Authorization</span></span>|<span data-ttu-id="cf0ac-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cf0ac-124">接受</span><span class="sxs-lookup"><span data-stu-id="cf0ac-124">Accept</span></span>|<span data-ttu-id="cf0ac-125">application/json</span><span class="sxs-lookup"><span data-stu-id="cf0ac-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="04086-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="04086-127">Request body</span></span>
-<span data-ttu-id="04086-128">在请求正文中，提供[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="04086-128">In the request body, supply a JSON representation for the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cf0ac-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cf0ac-126">Request body</span></span>
+<span data-ttu-id="cf0ac-127">在请求正文中，提供[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-127">In the request body, supply a JSON representation for the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.</span></span>
 
-<span data-ttu-id="04086-129">下表显示创建[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="04086-129">The following table shows the properties that are required when you create the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).</span></span>
+<span data-ttu-id="cf0ac-128">下表显示创建[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-128">The following table shows the properties that are required when you create the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).</span></span>
 
-|<span data-ttu-id="04086-130">属性</span><span class="sxs-lookup"><span data-stu-id="04086-130">Property</span></span>|<span data-ttu-id="04086-131">类型</span><span class="sxs-lookup"><span data-stu-id="04086-131">Type</span></span>|<span data-ttu-id="04086-132">说明</span><span class="sxs-lookup"><span data-stu-id="04086-132">Description</span></span>|
+|<span data-ttu-id="cf0ac-129">属性</span><span class="sxs-lookup"><span data-stu-id="cf0ac-129">Property</span></span>|<span data-ttu-id="cf0ac-130">类型</span><span class="sxs-lookup"><span data-stu-id="cf0ac-130">Type</span></span>|<span data-ttu-id="cf0ac-131">说明</span><span class="sxs-lookup"><span data-stu-id="cf0ac-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="04086-133">accountId</span><span class="sxs-lookup"><span data-stu-id="04086-133">accountId</span></span>|<span data-ttu-id="04086-134">String</span><span class="sxs-lookup"><span data-stu-id="04086-134">String</span></span>|<span data-ttu-id="04086-135">注册配置文件隶属的租户 GUID。</span><span class="sxs-lookup"><span data-stu-id="04086-135">Tenant GUID the enrollment profile belongs to.</span></span>|
-|<span data-ttu-id="04086-136">id</span><span class="sxs-lookup"><span data-stu-id="04086-136">id</span></span>|<span data-ttu-id="04086-137">字符串</span><span class="sxs-lookup"><span data-stu-id="04086-137">String</span></span>|<span data-ttu-id="04086-138">注册配置文件的唯一 GUID。</span><span class="sxs-lookup"><span data-stu-id="04086-138">Unique GUID for the enrollment profile.</span></span>|
-|<span data-ttu-id="04086-139">displayName</span><span class="sxs-lookup"><span data-stu-id="04086-139">displayName</span></span>|<span data-ttu-id="04086-140">字符串</span><span class="sxs-lookup"><span data-stu-id="04086-140">String</span></span>|<span data-ttu-id="04086-141">注册配置文件的显示名称。</span><span class="sxs-lookup"><span data-stu-id="04086-141">Display name for the enrollment profile.</span></span>|
-|<span data-ttu-id="04086-142">说明</span><span class="sxs-lookup"><span data-stu-id="04086-142">description</span></span>|<span data-ttu-id="04086-143">String</span><span class="sxs-lookup"><span data-stu-id="04086-143">String</span></span>|<span data-ttu-id="04086-144">注册配置文件的说明。</span><span class="sxs-lookup"><span data-stu-id="04086-144">Description for the enrollment profile.</span></span>|
-|<span data-ttu-id="04086-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="04086-145">createdDateTime</span></span>|<span data-ttu-id="04086-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04086-146">DateTimeOffset</span></span>|<span data-ttu-id="04086-147">注册配置文件的创建日期/时间。</span><span class="sxs-lookup"><span data-stu-id="04086-147">Date time the enrollment profile was created.</span></span>|
-|<span data-ttu-id="04086-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="04086-148">lastModifiedDateTime</span></span>|<span data-ttu-id="04086-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04086-149">DateTimeOffset</span></span>|<span data-ttu-id="04086-150">上次修改注册配置文件的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="04086-150">Date time the enrollment profile was last modified.</span></span>|
-|<span data-ttu-id="04086-151">tokenValue</span><span class="sxs-lookup"><span data-stu-id="04086-151">tokenValue</span></span>|<span data-ttu-id="04086-152">String</span><span class="sxs-lookup"><span data-stu-id="04086-152">String</span></span>|<span data-ttu-id="04086-153">为此注册配置文件最新创建的令牌的值。</span><span class="sxs-lookup"><span data-stu-id="04086-153">Value of the most recently created token for this enrollment profile.</span></span>|
-|<span data-ttu-id="04086-154">tokenCreationDateTime</span><span class="sxs-lookup"><span data-stu-id="04086-154">tokenCreationDateTime</span></span>|<span data-ttu-id="04086-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04086-155">DateTimeOffset</span></span>|<span data-ttu-id="04086-156">创建最近创建的令牌的日期时间。</span><span class="sxs-lookup"><span data-stu-id="04086-156">Date time the most recently created token was created.</span></span>|
-|<span data-ttu-id="04086-157">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="04086-157">tokenExpirationDateTime</span></span>|<span data-ttu-id="04086-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04086-158">DateTimeOffset</span></span>|<span data-ttu-id="04086-159">最新创建的令牌的到期日期/时间。</span><span class="sxs-lookup"><span data-stu-id="04086-159">Date time the most recently created token will expire.</span></span>|
-|<span data-ttu-id="04086-160">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="04086-160">enrolledDeviceCount</span></span>|<span data-ttu-id="04086-161">Int32</span><span class="sxs-lookup"><span data-stu-id="04086-161">Int32</span></span>|<span data-ttu-id="04086-162">已使用此注册配置文件进行注册的 Android 设备总数。</span><span class="sxs-lookup"><span data-stu-id="04086-162">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
-|<span data-ttu-id="04086-163">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="04086-163">qrCodeContent</span></span>|<span data-ttu-id="04086-164">String</span><span class="sxs-lookup"><span data-stu-id="04086-164">String</span></span>|<span data-ttu-id="04086-165">用于生成此令牌的 QR 码的字符串。</span><span class="sxs-lookup"><span data-stu-id="04086-165">String used to generate a QR code for the token.</span></span>|
-|<span data-ttu-id="04086-166">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="04086-166">qrCodeImage</span></span>|[<span data-ttu-id="04086-167">mimeContent</span><span class="sxs-lookup"><span data-stu-id="04086-167">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="04086-168">用于生成此令牌的 QR 码的字符串。</span><span class="sxs-lookup"><span data-stu-id="04086-168">String used to generate a QR code for the token.</span></span>|
-|<span data-ttu-id="04086-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="04086-169">roleScopeTagIds</span></span>|<span data-ttu-id="04086-170">String 集合</span><span class="sxs-lookup"><span data-stu-id="04086-170">String collection</span></span>|<span data-ttu-id="04086-171">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="04086-171">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="cf0ac-132">accountId</span><span class="sxs-lookup"><span data-stu-id="cf0ac-132">accountId</span></span>|<span data-ttu-id="cf0ac-133">String</span><span class="sxs-lookup"><span data-stu-id="cf0ac-133">String</span></span>|<span data-ttu-id="cf0ac-134">注册配置文件隶属的租户 GUID。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-134">Tenant GUID the enrollment profile belongs to.</span></span>|
+|<span data-ttu-id="cf0ac-135">id</span><span class="sxs-lookup"><span data-stu-id="cf0ac-135">id</span></span>|<span data-ttu-id="cf0ac-136">字符串</span><span class="sxs-lookup"><span data-stu-id="cf0ac-136">String</span></span>|<span data-ttu-id="cf0ac-137">注册配置文件的唯一 GUID。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-137">Unique GUID for the enrollment profile.</span></span>|
+|<span data-ttu-id="cf0ac-138">displayName</span><span class="sxs-lookup"><span data-stu-id="cf0ac-138">displayName</span></span>|<span data-ttu-id="cf0ac-139">字符串</span><span class="sxs-lookup"><span data-stu-id="cf0ac-139">String</span></span>|<span data-ttu-id="cf0ac-140">注册配置文件的显示名称。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-140">Display name for the enrollment profile.</span></span>|
+|<span data-ttu-id="cf0ac-141">说明</span><span class="sxs-lookup"><span data-stu-id="cf0ac-141">description</span></span>|<span data-ttu-id="cf0ac-142">String</span><span class="sxs-lookup"><span data-stu-id="cf0ac-142">String</span></span>|<span data-ttu-id="cf0ac-143">注册配置文件的说明。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-143">Description for the enrollment profile.</span></span>|
+|<span data-ttu-id="cf0ac-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="cf0ac-144">createdDateTime</span></span>|<span data-ttu-id="cf0ac-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf0ac-145">DateTimeOffset</span></span>|<span data-ttu-id="cf0ac-146">注册配置文件的创建日期/时间。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-146">Date time the enrollment profile was created.</span></span>|
+|<span data-ttu-id="cf0ac-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="cf0ac-147">lastModifiedDateTime</span></span>|<span data-ttu-id="cf0ac-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf0ac-148">DateTimeOffset</span></span>|<span data-ttu-id="cf0ac-149">上次修改注册配置文件的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-149">Date time the enrollment profile was last modified.</span></span>|
+|<span data-ttu-id="cf0ac-150">tokenValue</span><span class="sxs-lookup"><span data-stu-id="cf0ac-150">tokenValue</span></span>|<span data-ttu-id="cf0ac-151">String</span><span class="sxs-lookup"><span data-stu-id="cf0ac-151">String</span></span>|<span data-ttu-id="cf0ac-152">为此注册配置文件最新创建的令牌的值。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-152">Value of the most recently created token for this enrollment profile.</span></span>|
+|<span data-ttu-id="cf0ac-153">tokenCreationDateTime</span><span class="sxs-lookup"><span data-stu-id="cf0ac-153">tokenCreationDateTime</span></span>|<span data-ttu-id="cf0ac-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf0ac-154">DateTimeOffset</span></span>|<span data-ttu-id="cf0ac-155">创建最近创建的令牌的日期时间。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-155">Date time the most recently created token was created.</span></span>|
+|<span data-ttu-id="cf0ac-156">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="cf0ac-156">tokenExpirationDateTime</span></span>|<span data-ttu-id="cf0ac-157">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf0ac-157">DateTimeOffset</span></span>|<span data-ttu-id="cf0ac-158">最新创建的令牌的到期日期/时间。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-158">Date time the most recently created token will expire.</span></span>|
+|<span data-ttu-id="cf0ac-159">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cf0ac-159">enrolledDeviceCount</span></span>|<span data-ttu-id="cf0ac-160">Int32</span><span class="sxs-lookup"><span data-stu-id="cf0ac-160">Int32</span></span>|<span data-ttu-id="cf0ac-161">已使用此注册配置文件进行注册的 Android 设备总数。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-161">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
+|<span data-ttu-id="cf0ac-162">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="cf0ac-162">qrCodeContent</span></span>|<span data-ttu-id="cf0ac-163">String</span><span class="sxs-lookup"><span data-stu-id="cf0ac-163">String</span></span>|<span data-ttu-id="cf0ac-164">用于生成此令牌的 QR 码的字符串。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-164">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="cf0ac-165">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="cf0ac-165">qrCodeImage</span></span>|[<span data-ttu-id="cf0ac-166">mimeContent</span><span class="sxs-lookup"><span data-stu-id="cf0ac-166">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="cf0ac-167">用于生成此令牌的 QR 码的字符串。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-167">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="cf0ac-168">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="cf0ac-168">roleScopeTagIds</span></span>|<span data-ttu-id="cf0ac-169">String collection</span><span class="sxs-lookup"><span data-stu-id="cf0ac-169">String collection</span></span>|<span data-ttu-id="cf0ac-170">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-170">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="04086-172">响应</span><span class="sxs-lookup"><span data-stu-id="04086-172">Response</span></span>
-<span data-ttu-id="04086-173">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="04086-173">If successful, this method returns a `200 OK` response code and an updated [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cf0ac-171">响应</span><span class="sxs-lookup"><span data-stu-id="cf0ac-171">Response</span></span>
+<span data-ttu-id="cf0ac-172">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-172">If successful, this method returns a `200 OK` response code and an updated [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="04086-174">示例</span><span class="sxs-lookup"><span data-stu-id="04086-174">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cf0ac-173">示例</span><span class="sxs-lookup"><span data-stu-id="cf0ac-173">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="04086-175">请求</span><span class="sxs-lookup"><span data-stu-id="04086-175">Request</span></span>
-<span data-ttu-id="04086-176">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="04086-176">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cf0ac-174">请求</span><span class="sxs-lookup"><span data-stu-id="cf0ac-174">Request</span></span>
+<span data-ttu-id="cf0ac-175">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-175">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
@@ -102,8 +100,8 @@ Content-length: 627
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="04086-177">响应</span><span class="sxs-lookup"><span data-stu-id="04086-177">Response</span></span>
-<span data-ttu-id="04086-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="04086-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cf0ac-176">响应</span><span class="sxs-lookup"><span data-stu-id="cf0ac-176">Response</span></span>
+<span data-ttu-id="cf0ac-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cf0ac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -132,7 +130,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

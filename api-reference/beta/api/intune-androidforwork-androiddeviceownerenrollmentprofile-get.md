@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762819"
+ms.locfileid: "42815794"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="eefc9-103">获取 androidDeviceOwnerEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="eefc9-103">Get androidDeviceOwnerEnrollmentProfile</span></span>
 

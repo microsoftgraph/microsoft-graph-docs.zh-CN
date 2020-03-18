@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762840"
+ms.locfileid: "42815815"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a><span data-ttu-id="bd459-103">创建 androidDeviceOwnerEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="bd459-103">Create androidDeviceOwnerEnrollmentProfile</span></span>
 

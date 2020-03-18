@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767720"
+ms.locfileid: "42815329"
 ---
 # <a name="delete-devicemanagementintentassignment"></a><span data-ttu-id="f965f-103">删除 deviceManagementIntentAssignment</span><span class="sxs-lookup"><span data-stu-id="f965f-103">Delete deviceManagementIntentAssignment</span></span>
 

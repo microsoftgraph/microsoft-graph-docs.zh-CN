@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767496"
+ms.locfileid: "42815322"
 ---
 # <a name="get-devicemanagementintentassignment"></a><span data-ttu-id="c9662-103">获取 deviceManagementIntentAssignment</span><span class="sxs-lookup"><span data-stu-id="c9662-103">Get deviceManagementIntentAssignment</span></span>
 
