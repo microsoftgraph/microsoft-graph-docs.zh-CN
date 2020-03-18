@@ -1,20 +1,18 @@
 ---
 title: windowsKioskLocalGroup 资源类型
 description: 用于标识展台配置的本地组的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52a7295a6a0c0d157ac8200c8de367cf67103bb6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8afbba5f158f7766255bb1252c06b6ed1c9024d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786381"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

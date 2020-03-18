@@ -1,20 +1,18 @@
 ---
 title: windowsKioskAppBase 资源类型
 description: 一类应用程序的基类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 712c23e008e6c0b1434143383e4e8cd924ace509
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3ba4a27f1107b35264d1671530b5314ea28026c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525528"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786444"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42525528"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|String|表示应用程序的友好名称|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔|允许在多应用展台模式下自动启动应用|
+|autoLaunch|布尔值|允许在多应用展台模式下自动启动应用|
 
 ## <a name="relationships"></a>关系
 无

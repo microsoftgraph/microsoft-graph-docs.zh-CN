@@ -1,20 +1,18 @@
 ---
 title: windowsKioskAutologon 资源类型
 description: 用于标识自动登录展台配置的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a97eeecaab39a572016729ba469043e2532b38f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7d417dacb5a45a1fb864daeb6f962bd816a4afa4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529052"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786423"
 ---
 # <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

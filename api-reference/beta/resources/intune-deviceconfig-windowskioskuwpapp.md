@@ -1,20 +1,18 @@
 ---
 title: windowsKioskUWPApp 资源类型
 description: 一类应用程序的基类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 840332c2873f1a42adc5a6f1ef501f411842aa32
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c778a4a1af7ae4e4818228faf7b91a0802e663f1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529020"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786339"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +29,7 @@ ms.locfileid: "42529020"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|字符串|表示从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔|允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
+|autoLaunch|布尔值|允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
 |appUserModelId|String|这是在展台模式下可启动使用的唯一应用程序用户模型 ID （AUMID）|
 |appId|String|这将引用将作为展台配置的目标的 Intune 应用|
 |containedAppId|String|这将从 Intune 应用程序中引用包含的应用程序|

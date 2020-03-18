@@ -1,20 +1,18 @@
 ---
 title: windowsKioskLocalUser 资源类型
 description: 用于标识展台配置的本地帐户的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e25c887c34008e0ffa001cfe713340ad9443f4dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a84b1d3ce0a6e0f9de0bf60de314c79c0a7b329
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525479"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786374"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>windowsKioskLocalUser 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

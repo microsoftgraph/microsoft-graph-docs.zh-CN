@@ -1,20 +1,18 @@
 ---
 title: windowsUpdateType 枚举类型
 description: 将从哪些分支设备接收其更新
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 94c82e45aae328f35b890f82755609945a9b58f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35fe62ada736a0cd5c3a073e49851b6cad9320ab
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528930"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786149"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528930"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
-|各种|1 |半年频道（定向）。 设备从半年频道（定向）获取所有适用的功能更新。|
-|businessReadyOnly|2 |半年频道。 设备从半年频道获取功能更新。|
-|windowsInsiderBuildFast|3 |Windows 预览体验成员内部版本-快速|
+|各种|1|半年频道（定向）。 设备从半年频道（定向）获取所有适用的功能更新。|
+|businessReadyOnly|双面|半年频道。 设备从半年频道获取功能更新。|
+|windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
 |windowsInsiderBuildSlow|4 |Windows 预览体验成员内部版本-慢|
 |windowsInsiderBuildRelease|5 |发布 Windows 预览体验成员内部版本|
 

@@ -1,20 +1,18 @@
 ---
 title: windowsKioskAzureADGroup 资源类型
 description: 用于标识展台配置的 AzureAD 组的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6569dc23786b9587ab7290859ff9a151a3e370c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a17c17a825b544093ebd8e8ecd858db65bd449b6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525507"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786416"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>windowsKioskAzureADGroup 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: deviceManagementIntent 资源类型
 description: 表示将设置应用于设备的意图的实体
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b83db92a410239df3101d56a9f3dabe3850349d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ab1b6cd07bfa922f82cbd11e4f03aa2ba0a3515
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785433"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +26,7 @@ ms.locfileid: "42528852"
 |[列出 deviceManagementIntents](../api/intune-deviceintent-devicemanagementintent-list.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)集合|列出[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象的属性和关系。|
 |[获取 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-get.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|读取[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象的属性和关系。|
 |[创建 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-create.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|创建新的[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象。|
-|[删除 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|无|删除[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)。|
+|[删除 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|None|删除[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)。|
 |[更新 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|更新[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象的属性。|
 |[updateSettings 操作](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|无|尚未记录|
 |[migrateToTemplate 操作](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|无|尚未记录|
@@ -44,12 +42,12 @@ ms.locfileid: "42528852"
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|创建此目的的模板的 ID （如果有）|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|要应用的所有设置的集合|
+|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|要应用的所有设置的集合|
 |categories|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)集合|在意向中设置类别的集合|
 |assignments|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)集合|工作分配集合|
 |deviceSettingStateSummaries|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)集合|设置及其状态和这些设备的计数，这些设备属于意向中所有设置的对应状态|

@@ -1,20 +1,18 @@
 ---
 title: windowsKioskAzureADUser 资源类型
 description: 用于为展台配置标识 AzureAD 用户帐户的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c98e2b1c9f22b319cdb1f56fc76e92caa6d830b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 950d1bfeaf73f2f3a37cbd7c154323baf603aebd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529042"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786409"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,18 @@
 ---
 title: windowsPhone81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 Mobile 的合规性设置。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3e1ac902387a15eb174fbb21ae8a21b613770fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec2f14b1f0f8bc0d6b6a3665cc5c3e4120dbd597
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529004"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786311"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -37,7 +35,7 @@ ms.locfileid: "42529004"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -51,7 +49,7 @@ ms.locfileid: "42529004"
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordRequired|布尔|是否需要密码。|
+|passwordRequired|布尔值|是否需要密码。|
 |osMinimumVersion|String|最低 Windows Phone 版本。|
 |osMaximumVersion|String|最高 Windows Phone 版本。|
 |storageRequireEncryption|Boolean|要求对 Windows Phone 设备加密。|

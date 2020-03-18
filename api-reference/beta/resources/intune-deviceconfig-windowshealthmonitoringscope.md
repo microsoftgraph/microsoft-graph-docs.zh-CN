@@ -1,20 +1,18 @@
 ---
 title: windowsHealthMonitoringScope 枚举类型
 description: 设备运行状况监视作用域
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: be45d71e3490a2680d7c4d38541488094a2b09c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ba94d9c583840a98ab31da06622b793a94aa1ee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529069"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786465"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>windowsHealthMonitoringScope 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529069"
 |成员|值|说明|
 |:---|:---|:---|
 |取消|0|Undefined|
-|healthMonitoring|1 |Windows 设备运行状况监视的基本事件|
-|bootPerformance|2 |启动性能事件|
+|healthMonitoring|1|Windows 设备运行状况监视的基本事件|
+|bootPerformance|双面|启动性能事件|
 |userExperienceAnalytics|4 |用户体验分析事件|
 
 

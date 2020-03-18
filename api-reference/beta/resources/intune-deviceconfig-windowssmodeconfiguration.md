@@ -1,20 +1,18 @@
 ---
 title: windowsSModeConfiguration 枚举类型
 description: 配置 S 模式解锁的可能选项
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bd9b4c696c7456e4cf926764bfadde3fbd591a6e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba926bf30084687adac731c0285b5fd2a2979072
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525402"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786233"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525402"
 |成员|值|说明|
 |:---|:---|:---|
 |noRestriction|0|此选项将删除对解锁 S 模式的所有限制-默认|
-|数据|1 |此选项将阻止用户从 S 模式解锁设备|
-|解锁|2 |此选项将从 S 模式解锁设备|
+|数据|1|此选项将阻止用户从 S 模式解锁设备|
+|解锁|双面|此选项将从 S 模式解锁设备|
 
 
 

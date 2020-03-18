@@ -1,20 +1,18 @@
 ---
 title: deviceManagementComparisonResult 枚举类型
 description: 设置比较结果类型
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcbec4eea2ab05ff6e8f1f304dfdd175926d3b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6a0221ec4ded26bddb06eb3672e67e7b466c973
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525332"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785957"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>deviceManagementComparisonResult 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525332"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知设置比较|
-|平等|1 |设置值相等|
-|notEqual|2 |设置的值不相等|
-|添加内容|3 |设置将添加|
+|平等|1|设置值相等|
+|notEqual|双面|设置的值不相等|
+|添加内容|第三章|设置将添加|
 |拆卸|4 |将删除设置|
 
 

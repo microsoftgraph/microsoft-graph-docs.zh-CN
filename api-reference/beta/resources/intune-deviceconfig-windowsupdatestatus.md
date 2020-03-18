@@ -1,20 +1,18 @@
 ---
 title: windowsUpdateStatus 枚举类型
 description: Windows update for business 配置设备状态
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 90fb42248dc0bc78e33c18150b59d88487a6a06b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac34352ff19bcb9273e638223e87e7f46aad6777
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786156"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,9 +24,9 @@ Windows update for business 配置设备状态
 |成员|值|说明|
 |:---|:---|:---|
 |upToDate|0|没有挂起的更新、没有挂起的重新启动更新和没有失败的更新。|
-|pendingInstallation|1 |存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重新启动更新，没有失败的更新。|
-|pendingReboot|2 |存在需要重新启动的更新。 没有失败的更新。|
-|未能|3 |无法在设备上安装更新。|
+|pendingInstallation|1|存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重新启动更新，没有失败的更新。|
+|pendingReboot|双面|存在需要重新启动的更新。 没有失败的更新。|
+|未能|第三章|无法在设备上安装更新。|
 
 
 

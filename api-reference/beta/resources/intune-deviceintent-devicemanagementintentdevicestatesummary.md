@@ -1,20 +1,18 @@
 ---
 title: deviceManagementIntentDeviceStateSummary 资源类型
 description: 表示意向的设备状态摘要的实体
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d68b3d8c7925c5c37587c30a8fc464c6d6786c21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f90ef59e668b8ae053cb4abf6a6a7174860a1297
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528839"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785412"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>deviceManagementIntentDeviceStateSummary 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

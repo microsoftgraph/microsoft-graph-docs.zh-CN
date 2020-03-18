@@ -1,20 +1,18 @@
 ---
 title: windowsKioskSingleUWPApp 资源类型
 description: 用于标识您的展台配置的 UWP 应用信息的类
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05042fe7d0285c593dfd325aa9b186808e85bc2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ae650af23985c26b00f99513ecfa4b3f691e14b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786353"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>windowsKioskSingleUWPApp 资源类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

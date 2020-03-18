@@ -1,20 +1,18 @@
 ---
 title: windowsFirewallRuleInterfaceTypes 枚举类型
 description: 表示防火墙规则接口类型的标志。
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff709a3c873c6942dd2dfbc9076bc0fd64382431
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e52cd82c2102d4799b118a0d38d3e4dedd7e90e9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529079"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786493"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 枚举类型
-
-命名空间： microsoft. graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529079"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未设置任何标志。|
-|远程|1 |远程访问接口类型。|
-|无线|2 |无线接口类型。|
+|远程|1|远程访问接口类型。|
+|无线|双面|无线接口类型。|
 |vlan|4 |LAN 接口类型。|
 
 
