@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f82c99054f3c78225fa582ae09ff16507fad98ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cfc204718a25bc8d5f0ac450469bd87c2d0e9b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42816158"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -63,6 +63,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |**公司条款和条件**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|与公司的设备管理关联的条款和条件。|
 |**设备配置**|
+|intuneAccountId|Guid|给定租户的 Intune 帐户 ID。|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) 集合|设备符合性策略。|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|此帐户的设备符合性状态摘要。|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) 集合|此帐户的符合性设置的摘要状态。|

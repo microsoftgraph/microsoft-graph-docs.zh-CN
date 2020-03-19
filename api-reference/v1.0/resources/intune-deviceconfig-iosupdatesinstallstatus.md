@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b03d47f3c28bd095d39fab5aae9b399d81dd4819
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14f90e168bcdaa10b1769b10096e6231a1173ad1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42816151"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "42532471"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|可用|1 |尚未记录|
-|待机|2 |尚未记录|
-|unknown|3 |尚未记录|
+|可用|1|尚未记录|
+|待机|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |下载|-2016330712|尚未记录|
 |downloadFailed|-2016330711|尚未记录|
 |downloadRequiresComputer|-2016330710|尚未记录|
@@ -40,6 +40,7 @@ ms.locfileid: "42532471"
 |installFailed|-2016330702|尚未记录|
 |notSupportedOperation|-2016330701|尚未记录|
 |sharedDeviceUserLoggedInError|-2016330699|尚未记录|
+|deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
 
 
 
