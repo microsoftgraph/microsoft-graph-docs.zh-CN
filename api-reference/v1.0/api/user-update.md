@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0aef89c30fc67132352d9d70f9b0fc56e3a9063e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91075356fab7906ce578c0e8a3bcbf5ce49d9c16
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508903"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815997"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -23,13 +23,16 @@ ms.locfileid: "42508903"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite、User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | User.ReadWrite    |
-|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All |
 
 >[!NOTE]
 > - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
 > - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
+
+>[!NOTE]
+>更新 **identities** 属性需要 User.ManageIdentities.All 权限。 此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **user** 对象，除非 **user** 对象已包含本地帐户标识。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
