@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a59b6e9a4c79b13c78350283961899e93412f6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4783b0b7788da04e0662dff07782e99505c626e
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451747"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892690"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -28,9 +28,9 @@ ms.locfileid: "42451747"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All、Auditlogs.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Auditlogs.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -244,6 +244,103 @@ Content-type: application/json
       "userPrincipalName": "AlexW@contoso.com",
       "signInActivity": {
         "lastSignInDateTime": "2017-07-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a>示例 4：列出具有特定显示名称的用户的上次登录时间
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_filter"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity",
+  "value": [
+    {
+      "displayName": "Eric Solomon",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a>示例 5：列出用户在特定时间范围内的上次登录时间
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_range"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-05-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-04-29T02:16:18Z",
         "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
       }
     }
