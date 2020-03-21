@@ -5,22 +5,22 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8b75e3753555e840b042e8876f91e27ed77b4a76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fb15ef50dfba8318691085f43a8967b155d9d3f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422052"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892547"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)。
+创建新的[externalItem](../resources/externalitem.md)。
 
-此 API 可用于创建自定义项或文件。 通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。 包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。
+此 API 可用于创建自定义项。 通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。 包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -47,7 +47,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | 开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
+| item-id       | string | ExternalItem 的开发人员`id`提供的属性[externalItem](../resources/externalitem.md)。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[externalItem](../resources/externalitem.md)或[EXTERNALFILE](../resources/externalfile.md)对象的 JSON 表示形式。 有效负载限制为 4 MB。
+在请求正文中，提供[externalItem](../resources/externalitem.md)对象的 JSON 表示形式。 有效负载限制为 4 MB。
 
 ### <a name="creating-an-externalitem"></a>创建 externalItem
 
@@ -88,17 +88,13 @@ PUT /external/connections/{connection-id}/items/{item-id}
     > [!IMPORTANT]
     > 如果包含类型`Collection(DateTime)`的属性，则必须使用类型说明符`Collection(DateTimeOffset)`。
 
-### <a name="creating-an-externalfile"></a>创建 externalFile
-
-在创建时`externalFile`，需要以下字段`@odata.type`：、 `acl` `name`、和。 `url`
-
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-custom-item"></a>示例1：创建自定义项
+### <a name="example-create-a-custom-item"></a>示例：创建自定义项
 
 #### <a name="request"></a>请求
 
@@ -142,76 +138,6 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>响应
-<!-- markdownlint-enable MD024 -->
-
-下面是一个响应示例。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-```
-
-### <a name="example-2-create-a-file"></a>示例2：创建文件
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a>请求
-<!-- markdownlint-enable MD024 -->
-
-下面展示了示例请求。
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalfile_from_connections"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/connections/contosofiles/items/myFile01
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.externalFile",
-  "acl": [
-    {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "grant",
-      "identitySource": "Azure Active Directory"
-    }
-  ],
-  "createdDateTime": "2019-01-31T03:44:19.0354159Z",
-  "modifiedDateTime": "2019-01-31T03:44:19.0354159Z",
-  "createdBy": "Pradeep Gupta",
-  "lastModifiedBy": "Adele Vance",
-  "title": "Enterprise Search Graph Ingestion API",
-  "url": "file://filesrv02.corp.contoso.com/data/project/Enterprise Search.docx",
-  "name": "Enterprise Search.docx",
-  "extension": "docx",
-  "size": 8676776,
-  "content": "The quick brown fox jumps over the lazy dog."
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalfile-from-connections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalfile-from-connections-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-externalfile-from-connections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3780c4b01fc6dc81418034931f37e84d1e295b41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70005abbe8eaf0e9680f106f59caf091aa2495d2
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522699"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892581"
 ---
 # <a name="mention-resource-type"></a>提及资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,7 +64,7 @@ ms.locfileid: "42522699"
 |createdDateTime  |DateTimeOffset |在客户端上创建提及的日期和时间。 |
 |deepLink | String | 指向资源实例中提及的上下文的深层 web 链接。 可选。 不会对**邮件**使用和默认为 null。 |
 |id | String| 资源实例中提及的唯一标识符。|
-|所 | [emailAddress](../resources/emailaddress.md) | 提到的人员的电子邮件信息。 必填。 |
+|所 | [emailAddress](../resources/emailaddress.md) | 提到的人员的电子邮件信息。 必需。 |
 |mentionText | String | 可选。 不会对**邮件**使用和默认为 null。 若要获取邮件中提及的内容，请改为查看邮件的**bodyPreview**属性。 |
 |serverCreatedDateTime | DateTimeOffset | 在服务器上创建提及的日期和时间。 可选。 不会对**邮件**使用和默认为 null。 |
 
@@ -78,8 +78,8 @@ ms.locfileid: "42522699"
 |:---------------|:--------|:----------|
 |[Post](../api/user-sendmail.md#request-2)和 send | 无 | 创建并将提及作为新邮件的一部分发送。|
 |[发布](../api/user-post-messages.md#request-2)到新草稿 | 包含一个或多个**提及**对象的[邮件](../resources/message.md)。 | 创建新邮件的草稿并包含一个或多个**提及**的对象。|
-|[获取](../api/user-list-messages.md#request-2)涉及我的邮件 | [message](../resources/message.md) 集合 | 获取已登录用户邮箱中的所有邮件，其中包含此用户的**提及**。|
-|[获取](../api/message-get.md#request-2)邮件及其提及内容 | [message](../resources/message.md) 集合 | 获取邮件并展开邮件中每个**提及**的详细信息。|
+|[获取](../api/user-list-messages.md#request-2)涉及我的邮件 | [邮件](../resources/message.md)集合 | 获取已登录用户邮箱中的所有邮件，其中包含此用户的**提及**。|
+|[获取](../api/message-get.md#example-2)邮件及其提及内容 | [邮件](../resources/message.md)集合 | 获取邮件并展开邮件中每个**提及**的详细信息。|
 |[删除](../api/message-delete.md#request-2)提及 | 无 |在已登录用户的邮箱中删除指定邮件中指定的提及项。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

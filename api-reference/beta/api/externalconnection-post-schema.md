@@ -5,22 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7fd9a9caa8c85df45fb292f822a7a1959175316b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422143"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892552"
 ---
 # <a name="create-schema"></a>创建架构
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 为 Microsoft Search[连接](../resources/externalconnection.md)创建架构。
-
-支持两种架构类型：自定义项和文件。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -44,10 +42,10 @@ POST /external/connections/{id}/schema
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称                  | 说明                                          |
-|:----------------------|:-----------------------------------------------------|
-| Authorization         | Bearer {token}。必需。                            |
-| Content-Type          | application/json. Required.                          |
+| 名称                  | 说明                                                        |
+|:----------------------|:-------------------------------------------------------------------|
+| Authorization         | Bearer {token}。必需。                                          |
+| Content-Type          | application/json. Required.                                        |
 | 首选：响应-async | 使用此来导致请求以异步方式执行。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -55,8 +53,6 @@ POST /external/connections/{id}/schema
 在请求正文中，提供[架构](../resources/schema.md)对象的 JSON 表示形式。
 
 注册自`schema`定义项目架构时，对象的`baseType`属性必须设置为`microsoft.graph.externalItem` ，并且必须包含`properties`属性。 该`properties`对象必须至少包含一个属性，最多为64。
-
-注册文件架构时， `schema`对象的`baseType`属性必须设置为。 `microsoft.graph.externalFile`
 
 ## <a name="response"></a>响应
 
@@ -69,7 +65,7 @@ POST /external/connections/{id}/schema
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-register-custom-schema-asynchronously"></a>示例1：异步注册自定义架构
+### <a name="example-register-custom-schema-asynchronously"></a>示例：异步注册自定义架构
 
 #### <a name="request"></a>请求
 
@@ -123,12 +119,11 @@ Prefer: respond-async
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>响应
 <!-- markdownlint-enable MD024 -->
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -138,63 +133,6 @@ Prefer: respond-async
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
-```
-
-### <a name="example-2-register-file-schema-synchronously"></a>示例2：同步注册文件架构
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a>请求
-<!-- markdownlint-enable MD024 -->
-
-下面展示了示例请求。
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_schema_from_connection"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/connections/contosofiles/schema
-Content-type: application/json
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>响应
-<!-- markdownlint-enable MD024 -->
-
-下面展示了示例响应。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schema"
-} -->
-
-```http
-HTTP/1.1 201 Created
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

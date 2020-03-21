@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8144a681f93df45827c8b304d507eea820adcca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a65b3fd02f3cc9b0f0e6049fcf99133292c8d6d2
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520595"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892602"
 ---
 # <a name="signinactivity-resource-type"></a>signInActivity 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供特定用户的上次登录日期。
+提供特定[用户](user.md)的上次登录日期。
 
 ## <a name="properties"></a>属性
 
