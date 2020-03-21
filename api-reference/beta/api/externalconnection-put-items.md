@@ -5,36 +5,36 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8b75e3753555e840b042e8876f91e27ed77b4a76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fb15ef50dfba8318691085f43a8967b155d9d3f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422052"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892547"
 ---
-# <a name="create-externalitem"></a><span data-ttu-id="6ef71-103">创建 externalItem</span><span class="sxs-lookup"><span data-stu-id="6ef71-103">Create externalItem</span></span>
+# <a name="create-externalitem"></a><span data-ttu-id="96fda-103">创建 externalItem</span><span class="sxs-lookup"><span data-stu-id="96fda-103">Create externalItem</span></span>
 
-<span data-ttu-id="6ef71-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="6ef71-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="96fda-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96fda-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ef71-105">创建新的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)。</span><span class="sxs-lookup"><span data-stu-id="6ef71-105">Create a new [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).</span></span>
+<span data-ttu-id="96fda-105">创建新的[externalItem](../resources/externalitem.md)。</span><span class="sxs-lookup"><span data-stu-id="96fda-105">Create a new [externalItem](../resources/externalitem.md).</span></span>
 
-<span data-ttu-id="6ef71-106">此 API 可用于创建自定义项或文件。</span><span class="sxs-lookup"><span data-stu-id="6ef71-106">This API can be used to create a custom item or a file.</span></span> <span data-ttu-id="6ef71-107">通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。</span><span class="sxs-lookup"><span data-stu-id="6ef71-107">Specify the type you are creating by including the `@odata.type` property in the JSON body.</span></span> <span data-ttu-id="6ef71-108">包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。</span><span class="sxs-lookup"><span data-stu-id="6ef71-108">The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.</span></span>
+<span data-ttu-id="96fda-106">此 API 可用于创建自定义项。</span><span class="sxs-lookup"><span data-stu-id="96fda-106">This API can be used to create a custom item.</span></span> <span data-ttu-id="96fda-107">通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。</span><span class="sxs-lookup"><span data-stu-id="96fda-107">Specify the type you are creating by including the `@odata.type` property in the JSON body.</span></span> <span data-ttu-id="96fda-108">包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。</span><span class="sxs-lookup"><span data-stu-id="96fda-108">The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a><span data-ttu-id="6ef71-109">权限</span><span class="sxs-lookup"><span data-stu-id="6ef71-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="96fda-109">权限</span><span class="sxs-lookup"><span data-stu-id="96fda-109">Permissions</span></span>
 
-<span data-ttu-id="6ef71-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6ef71-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="96fda-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="96fda-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6ef71-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="6ef71-112">Permission type</span></span>                        | <span data-ttu-id="6ef71-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6ef71-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="96fda-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="96fda-112">Permission type</span></span>                        | <span data-ttu-id="96fda-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="96fda-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="6ef71-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6ef71-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="6ef71-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6ef71-115">Not supported.</span></span> |
-| <span data-ttu-id="6ef71-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6ef71-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ef71-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="6ef71-117">Not supported.</span></span> |
-| <span data-ttu-id="6ef71-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="6ef71-118">Application</span></span>                            | <span data-ttu-id="6ef71-119">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ef71-119">ExternalItem.ReadWrite.All</span></span> |
+| <span data-ttu-id="96fda-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="96fda-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="96fda-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="96fda-115">Not supported.</span></span> |
+| <span data-ttu-id="96fda-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="96fda-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96fda-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="96fda-117">Not supported.</span></span> |
+| <span data-ttu-id="96fda-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="96fda-118">Application</span></span>                            | <span data-ttu-id="96fda-119">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96fda-119">ExternalItem.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6ef71-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6ef71-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96fda-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="96fda-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,40 +42,40 @@ ms.locfileid: "42422052"
 PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="6ef71-121">路径参数</span><span class="sxs-lookup"><span data-stu-id="6ef71-121">Path parameters</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="96fda-121">路径参数</span><span class="sxs-lookup"><span data-stu-id="96fda-121">Path parameters</span></span>
 
-| <span data-ttu-id="6ef71-122">参数</span><span class="sxs-lookup"><span data-stu-id="6ef71-122">Parameter</span></span>     | <span data-ttu-id="6ef71-123">类型</span><span class="sxs-lookup"><span data-stu-id="6ef71-123">Type</span></span>   | <span data-ttu-id="6ef71-124">说明</span><span class="sxs-lookup"><span data-stu-id="6ef71-124">Description</span></span>                                         |
+| <span data-ttu-id="96fda-122">参数</span><span class="sxs-lookup"><span data-stu-id="96fda-122">Parameter</span></span>     | <span data-ttu-id="96fda-123">类型</span><span class="sxs-lookup"><span data-stu-id="96fda-123">Type</span></span>   | <span data-ttu-id="96fda-124">说明</span><span class="sxs-lookup"><span data-stu-id="96fda-124">Description</span></span>                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| <span data-ttu-id="6ef71-125">connection-id</span><span class="sxs-lookup"><span data-stu-id="6ef71-125">connection-id</span></span> | <span data-ttu-id="6ef71-126">string</span><span class="sxs-lookup"><span data-stu-id="6ef71-126">string</span></span> | <span data-ttu-id="6ef71-127">包含`id` [externalConnection](../resources/externalconnection.md)的属性</span><span class="sxs-lookup"><span data-stu-id="6ef71-127">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
-| <span data-ttu-id="6ef71-128">item-id</span><span class="sxs-lookup"><span data-stu-id="6ef71-128">item-id</span></span>       | <span data-ttu-id="6ef71-129">string</span><span class="sxs-lookup"><span data-stu-id="6ef71-129">string</span></span> | <span data-ttu-id="6ef71-130">开发人员提供`id`的[externalItem](../resources/externalitem.md)或[externalFile](../resources/externalfile.md)属性。</span><span class="sxs-lookup"><span data-stu-id="6ef71-130">The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).</span></span> <span data-ttu-id="6ef71-131">如果不存在具有此`id`项的项目，则会创建一个新项目。</span><span class="sxs-lookup"><span data-stu-id="6ef71-131">If no item already exists with this `id`, a new item is created.</span></span> <span data-ttu-id="6ef71-132">如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。</span><span class="sxs-lookup"><span data-stu-id="6ef71-132">If an item already exists with this `id`, it is overwritten by the object sent in the body.</span></span> |
+| <span data-ttu-id="96fda-125">connection-id</span><span class="sxs-lookup"><span data-stu-id="96fda-125">connection-id</span></span> | <span data-ttu-id="96fda-126">string</span><span class="sxs-lookup"><span data-stu-id="96fda-126">string</span></span> | <span data-ttu-id="96fda-127">包含`id` [externalConnection](../resources/externalconnection.md)的属性</span><span class="sxs-lookup"><span data-stu-id="96fda-127">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
+| <span data-ttu-id="96fda-128">item-id</span><span class="sxs-lookup"><span data-stu-id="96fda-128">item-id</span></span>       | <span data-ttu-id="96fda-129">string</span><span class="sxs-lookup"><span data-stu-id="96fda-129">string</span></span> | <span data-ttu-id="96fda-130">ExternalItem 的开发人员`id`提供的属性[externalItem](../resources/externalitem.md)。</span><span class="sxs-lookup"><span data-stu-id="96fda-130">The developer-provided `id` property of the [externalItem](../resources/externalitem.md).</span></span> <span data-ttu-id="96fda-131">如果不存在具有此`id`项的项目，则会创建一个新项目。</span><span class="sxs-lookup"><span data-stu-id="96fda-131">If no item already exists with this `id`, a new item is created.</span></span> <span data-ttu-id="96fda-132">如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。</span><span class="sxs-lookup"><span data-stu-id="96fda-132">If an item already exists with this `id`, it is overwritten by the object sent in the body.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="6ef71-133">请求标头</span><span class="sxs-lookup"><span data-stu-id="6ef71-133">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="96fda-133">请求标头</span><span class="sxs-lookup"><span data-stu-id="96fda-133">Request headers</span></span>
 
-| <span data-ttu-id="6ef71-134">名称</span><span class="sxs-lookup"><span data-stu-id="6ef71-134">Name</span></span>          | <span data-ttu-id="6ef71-135">说明</span><span class="sxs-lookup"><span data-stu-id="6ef71-135">Description</span></span>                 |
+| <span data-ttu-id="96fda-134">名称</span><span class="sxs-lookup"><span data-stu-id="96fda-134">Name</span></span>          | <span data-ttu-id="96fda-135">说明</span><span class="sxs-lookup"><span data-stu-id="96fda-135">Description</span></span>                 |
 |:--------------|:----------------------------|
-| <span data-ttu-id="6ef71-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ef71-136">Authorization</span></span> | <span data-ttu-id="6ef71-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6ef71-p104">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="6ef71-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6ef71-139">Content-Type</span></span>  | <span data-ttu-id="6ef71-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6ef71-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="96fda-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="96fda-136">Authorization</span></span> | <span data-ttu-id="96fda-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="96fda-p104">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="96fda-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="96fda-139">Content-Type</span></span>  | <span data-ttu-id="96fda-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="96fda-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6ef71-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="6ef71-142">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="96fda-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="96fda-142">Request body</span></span>
 
-<span data-ttu-id="6ef71-143">在请求正文中，提供[externalItem](../resources/externalitem.md)或[EXTERNALFILE](../resources/externalfile.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6ef71-143">In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object.</span></span> <span data-ttu-id="6ef71-144">有效负载限制为 4 MB。</span><span class="sxs-lookup"><span data-stu-id="6ef71-144">The payload is limited to 4 MB.</span></span>
+<span data-ttu-id="96fda-143">在请求正文中，提供[externalItem](../resources/externalitem.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="96fda-143">In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) object.</span></span> <span data-ttu-id="96fda-144">有效负载限制为 4 MB。</span><span class="sxs-lookup"><span data-stu-id="96fda-144">The payload is limited to 4 MB.</span></span>
 
-### <a name="creating-an-externalitem"></a><span data-ttu-id="6ef71-145">创建 externalItem</span><span class="sxs-lookup"><span data-stu-id="6ef71-145">Creating an externalItem</span></span>
+### <a name="creating-an-externalitem"></a><span data-ttu-id="96fda-145">创建 externalItem</span><span class="sxs-lookup"><span data-stu-id="96fda-145">Creating an externalItem</span></span>
 
-<span data-ttu-id="6ef71-146">在创建时`externalItem`，需要以下字段： `@odata.type`、 `acl`和。 `properties`</span><span class="sxs-lookup"><span data-stu-id="6ef71-146">When creating an `externalItem`, the following fields are required: `@odata.type`, `acl`, and `properties`.</span></span> <span data-ttu-id="6ef71-147">该`properties`对象必须至少包含一个属性。</span><span class="sxs-lookup"><span data-stu-id="6ef71-147">The `properties` object must contain at least one property.</span></span>
+<span data-ttu-id="96fda-146">在创建时`externalItem`，需要以下字段： `@odata.type`、 `acl`和。 `properties`</span><span class="sxs-lookup"><span data-stu-id="96fda-146">When creating an `externalItem`, the following fields are required: `@odata.type`, `acl`, and `properties`.</span></span> <span data-ttu-id="96fda-147">该`properties`对象必须至少包含一个属性。</span><span class="sxs-lookup"><span data-stu-id="96fda-147">The `properties` object must contain at least one property.</span></span>
 
-<span data-ttu-id="6ef71-148">所有`DateTime`类型属性都必须采用 ISO 8601 格式。</span><span class="sxs-lookup"><span data-stu-id="6ef71-148">All `DateTime` type properties must be in ISO 8601 format.</span></span>
+<span data-ttu-id="96fda-148">所有`DateTime`类型属性都必须采用 ISO 8601 格式。</span><span class="sxs-lookup"><span data-stu-id="96fda-148">All `DateTime` type properties must be in ISO 8601 format.</span></span>
 
-<span data-ttu-id="6ef71-149">中的属性`externalItem`应在以下方案中使用有效负载中的类型说明符：</span><span class="sxs-lookup"><span data-stu-id="6ef71-149">Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:</span></span>
+<span data-ttu-id="96fda-149">中的属性`externalItem`应在以下方案中使用有效负载中的类型说明符：</span><span class="sxs-lookup"><span data-stu-id="96fda-149">Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:</span></span>
 
-- <span data-ttu-id="6ef71-150">对于`String` type 属性，如果该值包含非 ASCII 字符。</span><span class="sxs-lookup"><span data-stu-id="6ef71-150">For `String` type properties, if the value contains non-ASCII characters.</span></span>
+- <span data-ttu-id="96fda-150">对于`String` type 属性，如果该值包含非 ASCII 字符。</span><span class="sxs-lookup"><span data-stu-id="96fda-150">For `String` type properties, if the value contains non-ASCII characters.</span></span>
 
     ```json
     "description@odata.type": "String",
     "description": "Kandierte Äpfel"
     ```
 
-- <span data-ttu-id="6ef71-151">适用于所有集合类型。</span><span class="sxs-lookup"><span data-stu-id="6ef71-151">For all collection types.</span></span>
+- <span data-ttu-id="96fda-151">适用于所有集合类型。</span><span class="sxs-lookup"><span data-stu-id="96fda-151">For all collection types.</span></span>
 
     ```json
     "categories@odata.type": "Collection(String)"
@@ -86,25 +86,21 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > <span data-ttu-id="6ef71-152">如果包含类型`Collection(DateTime)`的属性，则必须使用类型说明符`Collection(DateTimeOffset)`。</span><span class="sxs-lookup"><span data-stu-id="6ef71-152">When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.</span></span>
+    > <span data-ttu-id="96fda-152">如果包含类型`Collection(DateTime)`的属性，则必须使用类型说明符`Collection(DateTimeOffset)`。</span><span class="sxs-lookup"><span data-stu-id="96fda-152">When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.</span></span>
 
-### <a name="creating-an-externalfile"></a><span data-ttu-id="6ef71-153">创建 externalFile</span><span class="sxs-lookup"><span data-stu-id="6ef71-153">Creating an externalFile</span></span>
+## <a name="response"></a><span data-ttu-id="96fda-153">响应</span><span class="sxs-lookup"><span data-stu-id="96fda-153">Response</span></span>
 
-<span data-ttu-id="6ef71-154">在创建时`externalFile`，需要以下字段`@odata.type`：、 `acl` `name`、和。 `url`</span><span class="sxs-lookup"><span data-stu-id="6ef71-154">When creating an `externalFile`, the following fields are required: `@odata.type`, `acl`, `name`, and `url`.</span></span>
+<span data-ttu-id="96fda-154">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="96fda-154">If successful, this method returns `200 OK` response code.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6ef71-155">响应</span><span class="sxs-lookup"><span data-stu-id="6ef71-155">Response</span></span>
+## <a name="examples"></a><span data-ttu-id="96fda-155">示例</span><span class="sxs-lookup"><span data-stu-id="96fda-155">Examples</span></span>
 
-<span data-ttu-id="6ef71-156">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="6ef71-156">If successful, this method returns `200 OK` response code.</span></span>
+### <a name="example-create-a-custom-item"></a><span data-ttu-id="96fda-156">示例：创建自定义项</span><span class="sxs-lookup"><span data-stu-id="96fda-156">Example: Create a custom item</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6ef71-157">示例</span><span class="sxs-lookup"><span data-stu-id="6ef71-157">Examples</span></span>
+#### <a name="request"></a><span data-ttu-id="96fda-157">请求</span><span class="sxs-lookup"><span data-stu-id="96fda-157">Request</span></span>
 
-### <a name="example-1-create-a-custom-item"></a><span data-ttu-id="6ef71-158">示例1：创建自定义项</span><span class="sxs-lookup"><span data-stu-id="6ef71-158">Example 1: Create a custom item</span></span>
+<span data-ttu-id="96fda-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="96fda-158">The following is an example of the request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6ef71-159">请求</span><span class="sxs-lookup"><span data-stu-id="6ef71-159">Request</span></span>
-
-<span data-ttu-id="6ef71-160">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6ef71-160">The following is an example of the request.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="6ef71-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ef71-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="96fda-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="96fda-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalitem_from_connections"
@@ -132,15 +128,15 @@ Content-type: application/json
   "content": "Textual content of the file"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="6ef71-162">C#</span><span class="sxs-lookup"><span data-stu-id="6ef71-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="96fda-160">C#</span><span class="sxs-lookup"><span data-stu-id="96fda-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalitem-from-connections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6ef71-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6ef71-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="96fda-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="96fda-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-externalitem-from-connections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6ef71-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6ef71-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="96fda-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="96fda-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -148,80 +144,10 @@ Content-type: application/json
 
 
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a><span data-ttu-id="6ef71-165">响应</span><span class="sxs-lookup"><span data-stu-id="6ef71-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="96fda-163">响应</span><span class="sxs-lookup"><span data-stu-id="96fda-163">Response</span></span>
 <!-- markdownlint-enable MD024 -->
 
-<span data-ttu-id="6ef71-166">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6ef71-166">The following is an example of the response.</span></span>
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-```
-
-### <a name="example-2-create-a-file"></a><span data-ttu-id="6ef71-167">示例2：创建文件</span><span class="sxs-lookup"><span data-stu-id="6ef71-167">Example 2: Create a file</span></span>
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a><span data-ttu-id="6ef71-168">请求</span><span class="sxs-lookup"><span data-stu-id="6ef71-168">Request</span></span>
-<!-- markdownlint-enable MD024 -->
-
-<span data-ttu-id="6ef71-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6ef71-169">The following is an example of the request.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="6ef71-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ef71-170">HTTP</span></span>](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalfile_from_connections"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/connections/contosofiles/items/myFile01
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.externalFile",
-  "acl": [
-    {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "grant",
-      "identitySource": "Azure Active Directory"
-    }
-  ],
-  "createdDateTime": "2019-01-31T03:44:19.0354159Z",
-  "modifiedDateTime": "2019-01-31T03:44:19.0354159Z",
-  "createdBy": "Pradeep Gupta",
-  "lastModifiedBy": "Adele Vance",
-  "title": "Enterprise Search Graph Ingestion API",
-  "url": "file://filesrv02.corp.contoso.com/data/project/Enterprise Search.docx",
-  "name": "Enterprise Search.docx",
-  "extension": "docx",
-  "size": 8676776,
-  "content": "The quick brown fox jumps over the lazy dog."
-}
-```
-# <a name="c"></a>[<span data-ttu-id="6ef71-171">C#</span><span class="sxs-lookup"><span data-stu-id="6ef71-171">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalfile-from-connections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[<span data-ttu-id="6ef71-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6ef71-172">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalfile-from-connections-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="6ef71-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6ef71-173">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-externalfile-from-connections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a><span data-ttu-id="6ef71-174">响应</span><span class="sxs-lookup"><span data-stu-id="6ef71-174">Response</span></span>
-<!-- markdownlint-enable MD024 -->
-
-<span data-ttu-id="6ef71-175">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6ef71-175">The following is an example of the response.</span></span>
+<span data-ttu-id="96fda-164">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="96fda-164">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
