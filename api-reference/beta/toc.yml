@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 备注
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -9229,6 +9229,13 @@
                       href: api/tokenlifetimepolicy-delete.md
                     - name: 列出已应用到应用程序的策略
                       href: api/tokenlifetimepolicy-list-appliesto.md
+                - name: 安全性默认策略
+                  href: resources/identitysecuritydefaultsenforcementpolicy.md
+                  items:
+                    - name: 获取
+                      href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                    - name: 更新
+                      href: api/identitysecuritydefaultsenforcementpolicy-update.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -10092,6 +10099,121 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: 获取多值属性
                       href: api/multivaluelegacyextendedproperty-get.md
+        - name: 通用打印
+          items:
+            - name: Print
+              href: resources/print.md
+            - name: 连接器
+              href: resources/printconnector.md
+              items:
+                - name: 列表
+                  href: api/print-list-connectors.md
+                - name: 获取
+                  href: api/printconnector-get.md
+                - name: 更新
+                  href: api/printconnector-update.md
+                - name: 删除
+                  href: api/printconnector-delete.md
+            - name: 打印作业
+              href: resources/printjob.md
+              items:
+                - name: 创建
+                  href: api/printer-post-jobs.md
+                - name: 获取
+                  href: api/printjob-get.md
+                - name: 开始
+                  href: api/printjob-startprintjob.md
+                - name: 取消
+                  href: api/printjob-cancelprintjob.md
+            - name: 打印机
+              href: resources/printer.md
+              items:
+                - name: 列表
+                  href: api/print-list-printers.md
+                - name: 获取
+                  href: api/printer-get.md
+                - name: 删除
+                  href: api/printer-delete.md
+                - name: 获取功能
+                  href: api/printer-getcapabilities.md
+                - name: 列出连接器
+                  href: api/printer-list-connectors.md
+                - name: 列出打印作业
+                  href: api/printer-list-jobs.md
+                - name: 创建打印作业
+                  href: api/printer-post-jobs.md
+                - name: 列出允许的用户
+                  href: api/printer-list-allowedusers.md
+                - name: 列出 allowedGroups
+                  href: api/printer-list-allowedgroups.md
+                - name: 添加允许的组
+                  href: api/printer-post-allowedgroups.md
+                - name: 添加允许的用户
+                  href: api/printer-post-allowedusers.md
+                - name: 删除允许的组
+                  href: api/printer-delete-allowedgroup.md
+                - name: 删除允许的用户
+                  href: api/printer-delete-alloweduser.md
+                - name: 重置默认值
+                  href: api/printer-resetdefaults.md
+            - name: 打印机共享
+              href: resources/printershare.md
+              items:
+                - name: 列表
+                  href: api/print-list-printershares.md
+                - name: 创建
+                  href: api/print-post-printershares.md
+                - name: 获取
+                  href: api/printershare-get.md
+                - name: 更新
+                  href: api/printershare-update.md
+                - name: 删除
+                  href: api/printershare-delete.md
+            - name: 报告
+              items:
+                - name: 按打印机组织
+                  items:
+                    - name: 获取
+                      href: api/printusagesummarybyprinter-get.md
+                    - name: 列出打印机的存档的打印作业
+                      href: api/reports-getprinterarchivedprintjobs.md
+                    - name: 按打印机列出每日报告
+                      href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                    - name: 按打印机列出每月报告
+                      href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                - name: 按用户或组组织
+                  items:
+                    - name: 获取
+                      href: api/printusagesummarybyuser-get.md
+                    - name: 列出用户的已存档的打印作业
+                      href: api/reports-getuserarchivedprintjobs.md
+                    - name: 列出组的存档的打印作业
+                      href: api/reports-getgrouparchivedprintjobs.md
+                    - name: 按用户列出每日报告
+                      href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                    - name: 按用户列出每月报告
+                      href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+            - name: 服务
+              href: resources/printservice.md
+              items:
+                - name: 列表
+                  href: api/print-list-services.md
+                - name: 获取
+                  href: api/printservice-get.md
+                - name: Endpoint
+                  href: resources/printserviceendpoint.md
+                  items:
+                    - name: Get endpoint
+                      href: api/printserviceendpoint-get.md
+                    - name: 列出服务的终结点
+                      href: api/printservice-list-endpoints.md
+            - name: 设置
+              href: resources/printsettings.md
+              items:
+                - name: 获取
+                  href: api/print-get-settings.md
+                - name: 更新
+                  href: api/print-update-settings.md
         - name: 报告
           items:
             - name: 标识和访问报告
@@ -10382,16 +10504,6 @@
                     - name: 更新外部项
                       href: api/externalitem-update.md
                     - name: 删除外部项
-                      href: api/externalitem-delete.md
-                - name: 外部文件
-                  items:
-                    - name: 外部文件
-                      href: resources/externalfile.md
-                    - name: 创建外部文件
-                      href: api/externalconnection-put-items.md
-                    - name: 更新外部文件
-                      href: api/externalitem-update.md
-                    - name: 删除外部文件
                       href: api/externalitem-delete.md
         - name: 安全性
           displayname: 'Security API, Microsoft Graph Security API'
@@ -10987,7 +11099,7 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-tasks.md
                 - name: 创建
                   href: api/outlookuser-post-tasks.md
@@ -11006,7 +11118,7 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-taskfolders.md
                 - name: 创建
                   href: api/outlookuser-post-taskfolders.md

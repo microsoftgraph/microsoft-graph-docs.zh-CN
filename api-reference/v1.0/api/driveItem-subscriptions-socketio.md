@@ -6,34 +6,34 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 允许您使用 socket.io 接收驱动器的近实时更改通知。
 doc_type: apiPageType
-ms.openlocfilehash: a1343cb1dcab4ea1fda9ffc13ba14f7402f3dca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca15c21ecd08b2a74700d2b729e23632e427a72f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517795"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892651"
 ---
-# <a name="get-websocket-endpoint"></a><span data-ttu-id="6509c-103">获取 websocket 终结点</span><span class="sxs-lookup"><span data-stu-id="6509c-103">Get websocket endpoint</span></span>
+# <a name="get-websocket-endpoint"></a><span data-ttu-id="166ee-103">获取 websocket 终结点</span><span class="sxs-lookup"><span data-stu-id="166ee-103">Get websocket endpoint</span></span>
 
-<span data-ttu-id="6509c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6509c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="166ee-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="166ee-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6509c-105">允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。</span><span class="sxs-lookup"><span data-stu-id="6509c-105">Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].</span></span>
-<span data-ttu-id="6509c-106">Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。</span><span class="sxs-lookup"><span data-stu-id="6509c-106">Socket.io is a popular notifications library for JavaScript that utilizes WebSockets.</span></span> <span data-ttu-id="6509c-107">若要了解详细信息，请参阅[socket.io](https://socket.io)。</span><span class="sxs-lookup"><span data-stu-id="6509c-107">To learn more, see [socket.io](https://socket.io).</span></span>
+<span data-ttu-id="166ee-105">允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。</span><span class="sxs-lookup"><span data-stu-id="166ee-105">Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].</span></span>
+<span data-ttu-id="166ee-106">Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。</span><span class="sxs-lookup"><span data-stu-id="166ee-106">Socket.io is a popular notifications library for JavaScript that utilizes WebSockets.</span></span> <span data-ttu-id="166ee-107">若要了解详细信息，请参阅[socket.io](https://socket.io)。</span><span class="sxs-lookup"><span data-stu-id="166ee-107">To learn more, see [socket.io](https://socket.io).</span></span>
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a><span data-ttu-id="6509c-110">权限</span><span class="sxs-lookup"><span data-stu-id="6509c-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="166ee-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="166ee-110">Permissions</span></span>
 
-<span data-ttu-id="6509c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6509c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="166ee-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="166ee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6509c-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="6509c-113">Permission type</span></span>                        | <span data-ttu-id="6509c-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6509c-114">Permissions (from least to most privileged)</span></span>
+| <span data-ttu-id="166ee-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="166ee-113">Permission type</span></span>                        | <span data-ttu-id="166ee-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="166ee-114">Permissions (from least to most privileged)</span></span>
 |:---------------------------------------|:-------------------------------------------
-| <span data-ttu-id="6509c-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6509c-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="6509c-116">文件. 读取、文件读写、全部、读写全部。</span><span class="sxs-lookup"><span data-stu-id="6509c-116">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
-| <span data-ttu-id="6509c-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6509c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6509c-118">Read，文件. ReadWrite，全部文件。</span><span class="sxs-lookup"><span data-stu-id="6509c-118">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
-| <span data-ttu-id="6509c-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="6509c-119">Application</span></span>                            | <span data-ttu-id="6509c-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="6509c-120">Not supported.</span></span>
+| <span data-ttu-id="166ee-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="166ee-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="166ee-116">文件. 读取、文件读写、全部、读写全部。</span><span class="sxs-lookup"><span data-stu-id="166ee-116">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
+| <span data-ttu-id="166ee-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="166ee-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="166ee-118">Read，文件. ReadWrite，全部文件。</span><span class="sxs-lookup"><span data-stu-id="166ee-118">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
+| <span data-ttu-id="166ee-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="166ee-119">Application</span></span>                            | <span data-ttu-id="166ee-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="166ee-120">Not supported.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6509c-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6509c-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="166ee-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="166ee-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,38 +44,38 @@ GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
 
-## <a name="example"></a><span data-ttu-id="6509c-122">示例</span><span class="sxs-lookup"><span data-stu-id="6509c-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="166ee-122">示例</span><span class="sxs-lookup"><span data-stu-id="166ee-122">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6509c-123">请求</span><span class="sxs-lookup"><span data-stu-id="6509c-123">Request</span></span>
+### <a name="request"></a><span data-ttu-id="166ee-123">请求</span><span class="sxs-lookup"><span data-stu-id="166ee-123">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="6509c-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="6509c-124">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="166ee-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="166ee-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
 ```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
-# <a name="c"></a>[<span data-ttu-id="6509c-125">C#</span><span class="sxs-lookup"><span data-stu-id="6509c-125">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="166ee-125">C#</span><span class="sxs-lookup"><span data-stu-id="166ee-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6509c-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6509c-126">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="166ee-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="166ee-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6509c-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6509c-127">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="166ee-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="166ee-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6509c-128">Java</span><span class="sxs-lookup"><span data-stu-id="6509c-128">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="166ee-128">Java</span><span class="sxs-lookup"><span data-stu-id="166ee-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="6509c-129">响应</span><span class="sxs-lookup"><span data-stu-id="6509c-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="166ee-129">响应</span><span class="sxs-lookup"><span data-stu-id="166ee-129">Response</span></span>
 
-<span data-ttu-id="6509c-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6509c-130">If successful, this method returns a `200 OK` response code and a [subscription](../resources/subscription.md) object in the response body.</span></span>
+<span data-ttu-id="166ee-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。</span><span class="sxs-lookup"><span data-stu-id="166ee-130">If successful, this method returns a `200 OK` response code and a [subscription](../resources/subscription.md) object in the response body.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -92,21 +92,16 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="6509c-131">`notificationUrl`返回的是 socket.io 终结点 URL。</span><span class="sxs-lookup"><span data-stu-id="6509c-131">The `notificationUrl` returned is a socket.io endpoint URL.</span></span>
-<span data-ttu-id="6509c-132">若要将它与 socket.io 客户端一起使用，请拆分`/callback?`令牌上的字符串。</span><span class="sxs-lookup"><span data-stu-id="6509c-132">To use it with a socket.io client, split the string on the `/callback?` token.</span></span>
-<span data-ttu-id="6509c-133">之前`/callback?`的字符串部分是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。</span><span class="sxs-lookup"><span data-stu-id="6509c-133">The part of the string before `/callback?` is the socket.io endpoint URL and the part of the string after is an opaque query string that must be given to the libary.</span></span>
+<span data-ttu-id="166ee-131">`notificationUrl`返回的是 socket.io 终结点 URL。</span><span class="sxs-lookup"><span data-stu-id="166ee-131">The `notificationUrl` returned is a socket.io endpoint URL.</span></span>
 
-<span data-ttu-id="6509c-134">下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。</span><span class="sxs-lookup"><span data-stu-id="6509c-134">The following example shows how to use the `notificationUrl` with socket.io in JavaScript.</span></span>
+<span data-ttu-id="166ee-132">下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。</span><span class="sxs-lookup"><span data-stu-id="166ee-132">The following example shows how to use the `notificationUrl` with socket.io in JavaScript.</span></span>
 
 ```javascript
 // this is the notificationUrl returned from this API
 var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
 
-// after the split, split[0] will be everything leading up to '/callback?' and split[1] will be everything after.
-var split = notificationUrl.split("/callback?");
-
 // 'io' comes from the socket.io client library
-var socket = io(split[0], { query: split[1] });
+var socket = io(notificationUrl);
 
 // these examples log to the console.
 // your app would provide its own callbacks
