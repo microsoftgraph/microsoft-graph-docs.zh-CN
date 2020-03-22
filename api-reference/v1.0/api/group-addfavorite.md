@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: abdd62d526392998421efe0e44f89e9d44ec47a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c19ee6dddd426d523838f7557c13ceaed8ee111f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517248"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892644"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
-命名空间： microsoft. graph 将组添加到当前用户的收藏夹组列表中。 仅支持 Office 365 组。
+命名空间：microsoft.graph
 
-## <a name="permissions"></a>权限
+将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

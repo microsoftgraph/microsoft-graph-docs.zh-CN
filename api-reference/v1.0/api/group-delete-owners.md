@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3584d432c2300f09c53ff7107c149e8651b24b4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87880e417af00695b3644fac87d47db5d91f8047
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517241"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892637"
 ---
 # <a name="remove-owner"></a>删除所有者
 
-命名空间： microsoft. graph 使用此 API 将所有者从 Office 365 组、安全组或启用邮件的安全组中删除（通过 owners 导航属性）。
+命名空间：microsoft.graph
 
-## <a name="permissions"></a>权限
+使用此 API 可以通过 owners 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除所有者。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

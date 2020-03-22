@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 允许您使用 socket.io 接收驱动器的近实时更改通知。
 doc_type: apiPageType
-ms.openlocfilehash: a1343cb1dcab4ea1fda9ffc13ba14f7402f3dca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca15c21ecd08b2a74700d2b729e23632e427a72f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517795"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892651"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -23,7 +23,7 @@ Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 �
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -93,8 +93,6 @@ Content-type: application/json
 ```
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
-若要将它与 socket.io 客户端一起使用，请拆分`/callback?`令牌上的字符串。
-之前`/callback?`的字符串部分是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。
 
 下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。
 
@@ -102,11 +100,8 @@ Content-type: application/json
 // this is the notificationUrl returned from this API
 var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
 
-// after the split, split[0] will be everything leading up to '/callback?' and split[1] will be everything after.
-var split = notificationUrl.split("/callback?");
-
 // 'io' comes from the socket.io client library
-var socket = io(split[0], { query: split[1] });
+var socket = io(notificationUrl);
 
 // these examples log to the console.
 // your app would provide its own callbacks
