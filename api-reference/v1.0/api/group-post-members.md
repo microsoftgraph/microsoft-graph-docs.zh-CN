@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6700d5fe6185e15fe016c4ca58219442c60c2a01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dba7d42ad8ab4e98061f23b4a56e32237dc2225c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516982"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815983"
 ---
 # <a name="add-member"></a>添加成员
 
-命名空间：microsoft.graph 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
+命名空间：microsoft.graph
+
+通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
 
 可以添加用户、组织联系人或其他组。 
 

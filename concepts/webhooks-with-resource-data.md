@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: a0db70d65b919033f6c371b8bf704ed7e2c77b5b
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 0056b1fced746f335a840e9b9473152718a30093
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618644"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42816165"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
@@ -351,6 +351,63 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
     {
     Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
     return false;
+    }
+}
+```
+```java
+private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
+    try {
+        JwkKeyResolver jwksResolver = new JwkKeyResolver();
+        Jws<Claims> token = Jwts.parserBuilder()
+        .setSigningKeyResolver(jwksResolver)
+        .build()
+        .parseClaimsJws(serializedToken);
+        Claims body = token.getBody();
+        String audience = body.getAudience();
+        boolean isAudienceValid = false;
+        for(String appId : appIds) {
+        isAudienceValid = isAudienceValid || appId.equals(audience);
+        }
+        boolean isTenantValid = body.getIssuer().endsWith(tenantId + "/");
+        return isAudienceValid  && isTenantValid; //nbf,exp and signature are already validated by library
+    } catch (Exception e) {
+        LOGGER.error("could not validate token");
+        LOGGER.error(e.getMessage());
+        return false;
+    }
+}
+```
+还必须实现 `JwkKeyResolver`，这样 Java 示例才能正常运行。  
+```java
+package com.example.restservice;
+
+import com.auth0.jwk.JwkProvider;
+import com.auth0.jwk.UrlJwkProvider;
+import com.auth0.jwk.Jwk;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwsHeader;
+import io.jsonwebtoken.SigningKeyResolverAdapter;
+import java.security.Key;
+import java.net.URI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class JwkKeyResolver extends SigningKeyResolverAdapter {
+    private JwkProvider keyStore;
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    public JwkKeyResolver() throws java.net.URISyntaxException, java.net.MalformedURLException {
+        this.keyStore = new UrlJwkProvider((new URI("https://login.microsoftonline.com/common/discovery/keys").toURL()));
+    }
+    @Override
+    public Key resolveSigningKey(JwsHeader jwsHeader, Claims claims) {
+        try {
+            String keyId = jwsHeader.getKeyId();
+            Jwk pub = keyStore.get(keyId);
+            return pub.getPublicKey();
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
     }
 }
 ```
