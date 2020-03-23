@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3b680e906b6adacb0e737b34d50f69d2ad36675f
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 81ebe8a7eadf86ee5bf7cf74fe337f446c13c376
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618806"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892679"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -31,10 +31,9 @@ EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uS
 要调用 Microsoft Graph，请将访问令牌作为 持有者令牌附加到 HTTP 请求的授权标头中。 例如，下述调用会返回已登录用户的个人资料信息（已缩短访问令牌以便于阅读）：
 
 ```http
-HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
 Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-Host: graph.microsoft.com`
-GET https://graph.microsoft.com/v1.0/me/
 ```
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用
