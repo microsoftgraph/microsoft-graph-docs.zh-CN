@@ -5,30 +5,33 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7716697d6dd5cdb852c0851c301dba00b28f3fe8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca9d0e6a6dd4d02b48c205f69e4f4985571b4914
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437957"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926748"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | ConditionalAccess 和应用程序的读取。 All |
+|委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
+
+> [!NOTE]
+> 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。
 
 ## <a name="http-request"></a>HTTP 请求
 

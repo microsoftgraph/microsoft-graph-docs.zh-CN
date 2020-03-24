@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 89c63ceda8d9e50ba49291c760a430a750bbb670
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: e556f3691ca5cc152d58678a12827a053964dc90
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562456"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815822"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -904,7 +904,7 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 必需
-| _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户的邮箱，但不读取 **body**、**bodyPreview**、**uniqueBody**、**attachments**、**extensions** 和任何扩展属性。 不包含邮件搜索权限。 | 否 | 是
+| _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户的邮箱，但不读取 **body**、**bodyPreview**、**uniqueBody**、**attachments**、**extensions** 和任何扩展属性。 不包含邮件搜索权限。 | 否 | 否
 | _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
 | _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
@@ -1233,7 +1233,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
-| _Policy.ReadWrite.ApplicationConfiguration_ | 读写组织的应用程序配置策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
+| _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用代表已登录用户读取和写入组织的配置策略。 | 是 | 否 |
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
@@ -1243,7 +1243,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
-| _Policy.Read.ApplicationConfiguration_ | 阅读组织的应用程序配置策略 | 允许应用无需登录的用户即可读取你所在组织的所有应用配置策略。 | 是 |
+| _Policy.Read.ApplicationConfiguration_ | 读取组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取组织的所有应用程序配置策略。 | 是 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
 
@@ -1254,7 +1254,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.Read.All_读取你所在组织的策略 (`GET /policies`)
 * _Policy.Read.All_读取你所在组织的信任框架策略 (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_读取你所在组织的功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.ApplicationConfiguration：读写组织的应用程序配置策略 (`POST /beta/policies/tokenLifetimePolicies`)
+* _Policy.ReadWrite.ApplicationConfiguration：读取和写入组织的应用程序配置策略 (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
@@ -1656,6 +1656,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 | 否 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 否 |
 | _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 是 | 否 |
+| _User.ManageIdentities.All_       |    管理用户标识 | 允许应用程序读取、更新和删除与登录用户有权访问的用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 | 是 | 否 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -1666,6 +1667,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 可访问 |
 | _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 是 |
+| _User.ManageIdentities.All_       |    管理所有用户标识 | 允许应用程序在没有登录用户的情况下读取、更新和删除与用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 |  是 |
 
 ### <a name="remarks"></a>说明
 
@@ -1715,6 +1717,8 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 若要读取用户的组成员资格 (`memberOf`)，则应用必须具有 [_Group.Read.All_](#group-permissions) 或 [_Group.ReadWrite.All_](#group-permissions)。但是，如果用户还具有 [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 或 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 中的成员资格，则应用还将需要有效权限来读取这些资源，否则 Microsoft Graph 将返回错误。这意味着应用还需要[目录权限](#directory-permissions)，而对于委派权限来说，已登录的用户还需要组织内的足够特权来访问目录角色和管理单元。
 
+使用 _User.ManageIdentities.All_ 委派权限或应用程序权限，可以更新用户标识 (`identities`)。 这包括具有基于电子邮件地址或姓名的登录名的联合标识（亦称为“社交标识”）或本地标识。
+
 ### <a name="example-usage"></a>用法示例
 
 #### <a name="delegated"></a>委派
@@ -1723,7 +1727,6 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 * _User.ReadWrite_：更新登录用户的照片 (`PUT /me/photo/$value`)。
 * _User.ReadBasic.All_：查找名称以“David”开头的所有用户 (`GET /users?$filter=startswith(displayName,'David')`)。
 * _User.Read.All_：读取用户的经理 (`GET /user/{id | userPrincipalName}/manager`)。
-
 
 #### <a name="application"></a>应用程序
 

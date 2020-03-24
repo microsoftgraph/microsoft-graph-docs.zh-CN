@@ -5,22 +5,22 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93e3f45cc52af1e6e4c72be0d22a5bfcef376c5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454883"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926790"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取在你的租户中发生的所有设置事件，例如，删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,6 +45,8 @@ GET /auditLogs/provisioning
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/provisioning?$top=20`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 您必须传递查询中的 top 筛选器来生成令牌。 您不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 有关一般信息，请参阅[OData 查询参数](/graph/query_parameters)。
 

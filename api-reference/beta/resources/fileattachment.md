@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498299"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926797"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件（如文本文件或 Word 文档）。 **ContentBytes**属性包含文件的 base64 编码内容。  
+附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件（如文本文件或 Word 文档）。 
 
 创建文件附件时，在请求正文中包括以下内容：
 
@@ -27,7 +27,10 @@ ms.locfileid: "42498299"
 
 派生自 [附件](attachment.md)。
 
-## <a name="methods"></a>方法
+> [!NOTE]
+> 在将文件内容分配给**contentBytes**之前，请务必在 base64 中对文件内容进行编码。
+
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -35,7 +38,7 @@ ms.locfileid: "42498299"
 |[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |contentBytes|Edm.Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|
