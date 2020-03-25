@@ -5,22 +5,22 @@ description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 33b72a0361776a991f0f29675fced77379e3e215
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0789511f579c6f286365f17f6813ee9048fd9f5d
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453266"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947292"
 ---
 # <a name="list-signins"></a>列出 signIn
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取[登录](../resources/signin.md)对象的列表。 此列表包含 Azure Active Directory 租户的用户登录。 登录，其中用户名和密码作为授权令牌的一部分进行传递，并且成功的联合登录当前包含在登录日志中。 最新的登录首先返回。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -59,6 +59,7 @@ GET auditLogs/signIns
 | userDisplayName | eq、startswith |
 | userPrincipalName | eq、startswith |
 | appDisplayName | eq、startswith |
+| authenticationRequirement |eq、startswith |
 | ipAddress | eq、startswith |
 | location/city | eq、startswith |
 | location/state | eq、startswith |
@@ -76,6 +77,7 @@ GET auditLogs/signIns
 | riskLevelAggregated | eq |
 | riskLevelDuringSignIn | eq |
 | riskEventTypes | eq |
+| riskEventTypes_v2 | eq、startswith |
 | riskState | eq |
 | originalRequestId | eq |
 | tokenIssuerName | eq |
@@ -133,7 +135,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -147,92 +149,108 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-  "value": [
-    {
-      "id":"b01b1726-0147-425e-a7f7-21f252050400",
-      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
-      "userDisplayName":"Jon Doe",
-      "userPrincipalName":"jdoe@www.contoso.com",
-      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
-      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
-      "appDisplayName":"Azure Portal",
-      "ipAddress":"207.254.19.10",
-      "clientAppUsed":"Browser",
-      "authenticationDetails": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "value": [
         {
-          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-          "authenticationMethod":"FIDO2",
-          "authenticationMethodDetail":"1G54395783",
-          "succeeded":true,
-          "authenticationStepResultDetail":"methodSucceeded",
-          "authenticationStepRequirement":"Primary authentication"
-        },
-        {
-          "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
-          "authenticationMethod":"Claim in access token",
-          "authenticationMethodDetail":null,
-          "succeeded":true,
-          "authenticationStepResultDetail":"methodSucceeded",
-          "authenticationStepRequirement":"MFA"
+            "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "userDisplayName": "Test contoso",
+            "userPrincipalName": "testaccount1@contoso.com",
+            "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
+            "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
+            "appDisplayName": "Graph explorer",
+            "authenticationRequirement": "multiFactorAuthentication",
+            "ipAddress": "131.107.159.37",
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
+            "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
+            "conditionalAccessStatus": "notApplied",
+            "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+            "isInteractive": true,
+            "tokenIssuerName": "",
+            "tokenIssuerType": "AzureAD",
+            "processingTimeInMilliseconds": 541,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes": [],
+            "riskEventTypes_v2": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "authenticationMethodsUsed": [],
+            "alternateSignInName": "testaccount2.contoso.com",
+            "servicePrincipalName": null,
+            "servicePrincipalId": "",
+            "mfaDetail": null,
+            "status": {
+                "errorCode": 0,
+                "failureReason": null,
+                "additionalDetails": null
+            },
+            "deviceDetail": {
+                "deviceId": "",
+                "displayName": null,
+                "operatingSystem": "Windows 10",
+                "browser": "Edge 80.0.361",
+                "isCompliant": null,
+                "isManaged": null,
+                "trustType": null
+            },
+            "location": {
+                "city": "Redmond",
+                "state": "Washington",
+                "countryOrRegion": "US",
+                "geoCoordinates": {
+                    "altitude": null,
+                    "latitude": 47.68050003051758,
+                    "longitude": -122.12094116210938
+                }
+            },
+            "appliedConditionalAccessPolicies": [
+                {
+                    "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
+                    "displayName": "SharePoint limited access for guest workers",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none"
+                },
+                {
+                    "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
+                    "displayName": "Medium signin risk block",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none"
+                },
+               
+            ],
+            "authenticationProcessingDetails": [],
+            "networkLocationDetails": [],
+            "authenticationDetails": [
+                    {
+              "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+              "authenticationMethod":"FIDO2",
+              "authenticationMethodDetail":"1G54395783",
+              "succeeded":true,
+              "authenticationStepResultDetail":"methodSucceeded",
+              "authenticationStepRequirement":"Primary authentication"
+            },
+            {
+              "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
+              "authenticationMethod":"Claim in access token",
+              "authenticationMethodDetail":null,
+              "succeeded":true,
+              "authenticationStepResultDetail":"methodSucceeded",
+              "authenticationStepRequirement":"MFA"
+            }
+            ],
+            "authenticationRequirementPolicies": []
         }
-      ],
-      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
-      "conditionalAccessStatus":"applied",
-      "isInteractive":true,
-      "tokenIssuerName":null,
-      "tokenIssuerType":"AzureAD",
-      "processingTimeInMilliseconds":100,
-      "riskDetail":"none",
-      "riskLevelAggregated":"none",
-      "riskLevelDuringsignIn":"none",
-      "riskState":"none",
-      "riskEventTypes":[],
-      "resourceDisplayName":"windows azure service management api",
-      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
-      "status":{},
-      "deviceDetail": {
-        "deviceId":null,
-        "displayName":null,
-        "operatingSystem":"Windows 7",
-        "browser":"Chrome 63.0.3239",
-        "isCompliant":null,
-        "isManaged":null,
-        "trustType":null
-      },
-      "location": {
-        "city":"Lithia Springs",
-        "state":"Georgia",
-        "countryOrRegion":"US",
-        "geoCoordinates": {
-          "altitude":null,
-          "latitude":33.7930908203125,
-          "longitude":-84.445358276367188
-        }
-      },
-      "appliedConditionalAccessPolicies": [
-        {
-          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
-          "displayName":"MFA policy",
-          "enforcedGrantControls": [
-            "Mfa",
-            "RequireCompliantDevice"
-          ],
-          "enforcedSessionControls":[],
-          "result":"applied"
-        },
-        {
-          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
-          "displayName":"PipelineTest4",
-          "enforcedGrantControls":[],
-          "enforcedSessionControls":[],
-          "result":"notEnabled"
-        }
-      ],
-      "authenticationProcessingDetails":[],
-      "networkLocationDetails":[]
-    }
-  ]
+    ]
 }
 ```
 ### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>示例2：用户仅使用主身份验证进行登录。 主要身份验证通过云密码。
@@ -287,10 +305,11 @@ Content-length: 211
       "id":"b01b1726-0147-425e-a7f7-21f252050400",
       "createdDateTime":"2018-11-06T18:48:33.8527147Z",
       "userDisplayName":"Jon Doe",
-      "userPrincipalName":"jdoe@www.contoso.com",
+      "userPrincipalName":"jdoe@contoso.com",
       "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
+       "authenticationRequirement": "singleFactorAuthentication",
       "ipAddress":"207.254.19.10",
       "clientAppUsed":"Browser",
       "authenticationDetails": [ 

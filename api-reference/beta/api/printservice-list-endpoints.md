@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e2dc5fce3688ce3626418649de533bf819702652
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 213e80aa3bea4f3eabb49720fce3b97da2972348
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895661"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947537"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -20,7 +20,7 @@ ms.locfileid: "42895661"
 
 检索由打印服务公开的终结点列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 不需要任何权限即可调用此 API，但用户的租户必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -50,13 +50,29 @@ GET /print/services/{id}/endpoints
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_endpoints"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
