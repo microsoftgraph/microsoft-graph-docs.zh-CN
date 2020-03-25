@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 88cb0ba1570cd0f90fe4cc199eee3ce550c17781
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ebe9baf44acb273513bb8047740880ec04c205e5
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729029"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892763"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -19,6 +19,9 @@ ms.locfileid: "42729029"
 
 ## <a name="march-2020-new-and-generally-available"></a>2020 年 3 月：新版本和正式版
 
+### <a name="identity-and-access"></a>标识和访问
+使用 `User.ManageIdentities.All` 委托的权限，可允许应用读取、更新或删除与登录用户有权访问的用户帐户关联的标识。 在没有登录用户的情况下，在应用程序级别使用此权限。 这样，应用可以[管理](/graph/api/user-update?view=graph-rest-1.0)用户能够使用哪些标识来登录。
+
 ### <a name="reports"></a>报告
 将 Teams 服务管理员和 Teams 通信管理员用作接受的用户角色，允许应用代表用户以[用户委派的授权的形式](reportroot-authorization.md)读取 Office 365 服务使用情况报告。 
 
@@ -28,8 +31,21 @@ ms.locfileid: "42729029"
 - 使用 **calendarGroupId** 属性可获取创建[日历](/graph/api/resources/calendar?view=graph-rest-beta)的[日历组](/graph/api/resources/calendargroup?view=graph-rest-beta)。
 - 使用 **isDraft** 属性可将[事件](/graph/api/resources/event?view=graph-rest-beta)标识为用户已在 Outlook 中更新但尚未发送给更新与会者的会议。
 
-### <a name="identity-and-access"></a>身份和访问
-使用 [Azure 资源的 Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) 的 `PrivilegedAccess.Read.AzureResources` 应用程序级别权限为管理组、订阅、资源组和资源级别的 Azure 基础结构角色设置实时访问工作流。
+### <a name="cloud-communications"></a>云通信
+- 第三方视频电话会议 (VTC) 设备合作伙伴可以通过云视频互操作 (CVI) 机器人和 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta) 函数，记录并提供视频电话会议设备的媒体质量数据。 媒体质量数据包括，[音频](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-beta)、[视频](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-beta)和[屏幕共享](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-beta)的开放类型数据。
+- 使用 **callChainId** 属性唯一标识会议或参与者到参与者[呼叫](/graph/api/resources/call?view=graph-rest-beta)中的参与者。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [3 月](changelog.md#march-2020)更新。
+
+### <a name="identity-and-access"></a>标识和访问
+- 使用 `Auditlogs.Read.All` 权限可列出[用户](/graph/api/resources/user?view=graph-rest-beta)的[登录活动](/graph/api/resources/signinactivity?view=graph-rest-beta)。
+- 使用 [Azure 资源的 Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) 的 `PrivilegedAccess.Read.AzureResources` 应用程序级别权限为管理组、订阅、资源组和资源级别的 Azure 基础结构角色设置实时访问工作流。
+
+### <a name="search"></a>搜索
+- 若要将文件中的数据添加到搜索结果中，只需将数据作为 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 编制索引即可。 **externalFile** 类型已遭弃用。
+- 现在，可以[更新](/graph/api/externalitem-update?view=graph-rest-beta)[索引中的项](/graph/api/resources/externalitem?view=graph-rest-beta)，具体方法为专门更新纯文本表示的项（用 **content** 属性表示），或项的属性包（用 **properties** 属性表示）。 由于更新属性包中的任何属性都会覆盖整个属性包，因此请务必在更新中显式添加项的所有属性。
+- 在调用 **externalItem** 的 [create](/graph/api/externalconnection-put-items?view=graph-rest-beta)、[update](/graph/api/externalitem-update?view=graph-rest-beta) 或 [delete](/graph/api/externalitem-delete?view=graph-rest-beta) 操作后，检查 `HTTP 429` 和 `Retry-After` 响应头。 使用 `Retry-After` 延迟来回退请求是从[限制](throttling.md#best-practices-to-handle-throttling)中恢复的最快方法。
 
 ### <a name="teamwork"></a>团队合作
 使用 `ChannelMessage.Read.All` 应用程序级别权限，在没有登录用户的情况下读取频道中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实例。

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 48d54de1e9c758a21af1e179e83876b19c146840
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 76cc0a1e9b8ccd7ec3eef1fb9ddf7e381b0fd19b
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618770"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892791"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述（预览版）
 
@@ -27,7 +27,7 @@ Microsoft 搜索 API 提供一个统一的搜索终结点，让你使用该终�
 
 ### <a name="include-custom-external-data-in-search-experience"></a>在搜索体验中包括自定义外部数据
 
-希望在其搜索体验中包括 Microsoft 云之外的数据的客户可以使用[连接器](/microsoftsearch/connectors-overview)连接到特定数据源（如组织的人力资源数据库或产品目录），并使用 Microsoft 索引 API 无缝[查询](/graph/api/search-query?view=graph-rest-beta)外部数据源。 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)列出了大量随时可用的连接器。 或者，客户可以[构建连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases)、索引外部自定义项目和文件以及查询特定外部数据源。
+希望在其搜索体验中包括 Microsoft 云之外的数据的客户可以使用[连接器](/microsoftsearch/connectors-overview)连接到特定数据源（如组织的人力资源数据库或产品目录），并使用 Microsoft 索引 API 无缝[查询](/graph/api/search-query?view=graph-rest-beta)外部数据源。 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)列出了大量随时可用的连接器。 或者，客户可以[生成连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases)、为外部自定义项编制索引，并能查询特定外部数据源。
 
 ### <a name="consistent-up-to-date-search-experience"></a>一致的最新搜索体验
 
@@ -40,10 +40,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 - Outlook [message](/graph/api/resources/message?view=graph-rest-beta) 和 [event](/graph/api/resources/event?view=graph-rest-beta) 对象
 - SharePoint 和 OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 文件对象
 
-此外，还可通过以下对象对外部内容编制索引和搜索：
-
-- 自定义类型的 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 对象
-- 熟知类型的 [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) 对象
+此外，还可以通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 对象为外部内容编制索引，并搜索外部内容。
 
 ## <a name="api-reference"></a>API 参考
 

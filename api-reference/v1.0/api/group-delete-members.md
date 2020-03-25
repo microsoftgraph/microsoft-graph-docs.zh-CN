@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 54066ba22f34481bd213806909dc0f826d6860d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a5071120969394c0f60ff8cbb9632581375c369
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517192"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892812"
 ---
 # <a name="remove-member"></a>删除成员
 
-命名空间：使用此 API 通过**成员**导航属性从组中删除成员。
+命名空间：microsoft.graph
+
+使用此 API 通过**成员**导航属性从组中删除成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

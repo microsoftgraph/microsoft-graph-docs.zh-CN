@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3128a3ffba635f8fec6d562c0d5586330cd70f4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0c1f468ab0ecc364e297e1abc83875c0c435a5f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517059"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892819"
 ---
 # <a name="list-owners"></a>列出所有者
 
-命名空间：microsoft.graph 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
+命名空间：microsoft.graph
+
+检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

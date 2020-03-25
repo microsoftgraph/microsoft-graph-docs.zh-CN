@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 67e201d14cdae4ada4ccca8160822ace5793c099
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc5664b2fc71ed6fad75ca94f01281bb15f69e5
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509057"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892630"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -28,6 +28,8 @@ ms.locfileid: "42509057"
 
 * 如果该应用具有应用程序权限，或者
 * 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+
+> **注意**：请注意[已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

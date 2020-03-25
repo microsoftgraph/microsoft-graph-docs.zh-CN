@@ -4,12 +4,12 @@ description: 使用 delta 查询，可通过一系列 delta 函数调用来查�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 0f91b33218ad07d140b910e061bdf3a76d676573
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394598"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892658"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -238,7 +238,7 @@ Content-type: application/json
 
 - `members@delta` 包含对成员身份的任何更改。
 
-  - 列表中的第一个用户已经从组中删除 - 要么删除成员身份，要么删除用户对象本身。 `@removed` 属性对此进行了说明。
+  - 列表中的第一个用户已经从组中删除 - 要么删除成员身份，要么删除用户对象本身。 `@removed` 属性对此进行了说明。 只有被永久删除的用户才会从组中删除。 临时删除的用户保留自己的组成员资格，除非被永久删除，否则不会显示在增量结果中。 有关详细信息，请参阅[目录（已删除的项）](/graph/api/resources/directory?view=graph-rest-1.0)。
 
   - 第二个用户已添加到组。
 

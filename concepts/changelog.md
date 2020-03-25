@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 626dd1072e1bd6035a099dabb0c489de2e5dfc7b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 880a9ac89dda073ac31b0f6ae12c1dbb3bef0e41
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815990"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892665"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,21 @@ ms.locfileid: "42815990"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="calendar"></a>日历
+
+| **更改类型** | **版本** | **说明**                          |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 向 [日历](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了 **calendarGroupId** 属性。 |
+| Addition | Beta | 已向 [事件](/graph/api/resources/event?view=graph-rest-beta) 实体中添加了 **isDraft** 属性。 |
+
+### <a name="cloud-communications"></a>云通信
+
+| **更改类型** | **版本** | **说明** |
+|:---|:---|:---|
+|添加项|beta|在 [call](/graph/api/resources/call) 集合上添加了 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) 函数。|
+|添加项|beta|向 [call](/graph/api/resources/call.md) 实体添加了 **callChainId** 属性。|
+|添加项|beta|新增了复杂类型：<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality)。|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -50,27 +65,14 @@ ms.locfileid: "42815990"
 |添加项|beta|向 [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta) 复杂类型添加了 **deliveryOptimizationPriority** 属性|
 |添加项|beta|向 [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) 枚举类型添加了 **deviceOsHigherThanDesiredOsVersion** 成员|
 
-### <a name="calendar"></a>日历
-
-| **更改类型** | **版本** | **说明**                          |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 向 [日历](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了 **calendarGroupId** 属性。 |
-| Addition | Beta | 已向 [事件](/graph/api/resources/event?view=graph-rest-beta) 实体中添加了 **isDraft** 属性。 |
-
-### <a name="cloud-communications"></a>云通信
-
-| **更改类型** | **版本** | **说明** |
-|:---|:---|:---|
-|添加项|beta|在 [call](/graph/api/resources/call) 集合上添加了 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) 函数。|
-|添加项|beta|向 [call](/graph/api/resources/call.md) 实体添加了 **callChainId** 属性。|
-|添加项|beta|新增了复杂类型：<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality)。|
-
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
 | 添加项 | v1.0 | 添加了新的用户权限 [User.ManageIdentities.All](/graph/permissions-reference#user-permissions)。|
 | 添加项 | beta | 向 [Privileged Identity Management - Azure 资源](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) 添加了 PrivilegedAccess.Read.AzureResources 应用程序权限。|
+| 添加项 | beta | 添加了 [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) 权限，用于列出用户的登录活动。|
+| 添加项 | beta | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta)，它表示 Azure Active Directory 安全默认值策略。|
 
 ### <a name="reports--office-365-usage-reports"></a>报告 | Office 365 使用率报告
 
@@ -78,11 +80,47 @@ ms.locfileid: "42815990"
 |:----------------|:------------|:-----------------------------------------|
 | 更改          | Beta 和 v1.0  | 为了使委派权限允许应用代表用户读取 Office 365 服务使用情况报告，已将 Teams 服务管理员和 Teams 通信管理员添加为接受的用户角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。|
 
+### <a name="search"></a>搜索
+
+| 更改类型 | 版本 | 说明                                                                                                                                               |
+|-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 更改      | beta    | [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) 资源已遭弃用。                                                  |
+| 更改      | beta    | [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) 资源现在支持更新 **content** 和 **properties** 属性。      |
+| 更改      | beta    | 现在，对 [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) 资源执行的操作在受到限制时返回 `Retry-After` 标头。 |
+
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项 | Beta | 添加对 ChannelMessage.Read.All 的支持至 API，以读取频道中的 [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta)。 |
+
+### <a name="universal-print"></a>通用打印
+
+新增了 API 和资源，用于使用通用打印服务来管理和执行打印机打印。
+
+| **更改类型** | **版本**   | **说明**                          |
+|:---|:---|:---|
+| 添加项 | beta | 添加了 [archivedPrintJob](/graph/api/resources/archivedprintjob) 实体。|
+| 添加项 | beta | 添加了 [deviceHealth](/graph/api/resources/devicehealth) 复杂类型。|
+| 添加项 | beta | 添加了 [integerRange](/graph/api/resources/integerrange) 复杂类型。|
+| 添加项 | beta | 添加了 [print](/graph/api/resources/print) 实体。|
+| 添加项 | beta | 添加了 [printConnector](/graph/api/resources/printconnector) 实体。|
+| 添加项 | beta | 添加了 [printDocument](/graph/api/resources/printdocument) 实体。|
+| 添加项 | beta | 添加了 [printer](/graph/api/resources/printer) 实体。|
+| 添加项 | beta | 添加了 [printerCapabilities](/graph/api/resources/printercapabilities) 复杂类型。|
+| 添加项 | beta | 添加了 [printerDefaults](/graph/api/resources/printerdefaults) 复杂类型。|
+| 添加项 | beta | 添加了 [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration) 复杂类型。|
+| 添加项 | beta | 添加了 [printerLocation](/graph/api/resources/printerlocation) 复杂类型。|
+| 添加项 | beta | 添加了 [printerShare](/graph/api/resources/printershare) 实体。|
+| 添加项 | beta | 添加了 [printerStatus](/graph/api/resources/printerstatus) 复杂类型。|
+| 添加项 | beta | 添加了 [printJob](/graph/api/resources/printJob) 实体。|
+| 添加项 | beta | 添加了 [printJobStatus](/graph/api/resources/printjobstatus) 复杂类型。|
+| 添加项 | beta | 添加了 [printPageRange](/graph/api/resources/printpagerange) 复杂类型。|
+| 添加项 | beta | 添加了 [printService](/graph/api/resources/printpagerange) 实体。|
+| 添加项 | beta | 添加了 [printServiceEndpoint](/graph/api/resources/printserviceendpoint) 实体。|
+| 添加项 | beta | 添加了 [printSettings](/graph/api/resources/printsettings) 复杂类型。|
+| 添加项 | beta | 添加了 [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) 实体。|
+| 添加项 | beta | 添加了 [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) 实体。|
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -146,7 +184,7 @@ ms.locfileid: "42815990"
 
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
-| 添加项 | Beta 和 v1.0 | 向 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 实体中添加了 **latestSupportedTlsVersion** 属性。 指定通知终结点支持的最新 TLS 版本。 允许订阅者在有限的时间段内使用过时的 TLS 版本。 有关详细信息，请参阅 [Microsoft Graph 订阅 - 弃用 TLS 1.0 和 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)。 
+| 添加项 | Beta 和 v1.0 | 向 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 实体中添加了 **latestSupportedTlsVersion** 属性。 指定通知终结点支持的最新 TLS 版本。 允许订阅者在有限的时间段内使用过时的 TLS 版本。 有关详细信息，请参阅 [Microsoft Graph 订阅 - 弃用 TLS 1.0 和 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)。
 | 更改 | beta |现有策略集将替换为[策略](/graph/api/resources/policy-overview?view=graph-rest-beta) URL 段。 键入的策略资源现在在“策略”段下分组，详见“[此博客文章](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/)”中的说明。 此更新添加 4 个类型的策略资源： <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) 和 </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
 | 添加项 | beta | 对于支持基于活动的超时功能的应用程序，添加的 [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) 资源类型控制着一段时间不活动后 Web 会话的自动注销。|
 | 添加项 | beta |添加了 [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) 资源类型，它控制用于 WS-AT、SAML、OAuth 2.0 和 OpenID Connect 协议的声明映射，适用于向特定应用程序发出的令牌。|
@@ -222,7 +260,7 @@ ms.locfileid: "42815990"
 | 更改 | Beta 和 v1.0 | [更新警报](/graph/api/alert-update?view=graph-rest-1.0&tabs=http)方法现仅使用以下值更新**批注**字段： <br/> `Closed in IPC`，`Closed in MCAS`。|
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
- 
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 | v1.0 | 向团队资源类型添加了 **primaryChannel** 导航属性。|
@@ -250,8 +288,8 @@ ms.locfileid: "42815990"
 |添加项|beta|添加[状态](/graph/api/resources/presence?view=graph-rest-beta)资源和关联的方法，并引入了 Presence.Read 和 Presence.Read.All 权限。|
 |添加项|v1.0|添加了以下 API：[创建呼叫](/graph/api/application-post-calls?view=graph-rest-1.0)、[呼叫应答](/graph/api/call-answer?view=graph-rest-1.0)、[呼叫拒接](/graph/api/call-reject?view=graph-rest-1.0)、[呼叫获取](/graph/api/call-get?view=graph-rest-1.0)、[呼叫删除](/graph/api/call-delete?view=graph-rest-1.0)、[呼叫静音](/graph/api/call-mute?view=graph-rest-1.0)、[呼叫取消静音](/graph/api/call-unmute?view=graph-rest-1.0)、[呼叫更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-1.0)、[呼叫转移](/graph/api/call-transfer?view=graph-rest-1.0)、[呼叫重定向](/graph/api/call-redirect?view=graph-rest-1.0)、[播放提示](/graph/api/call-playprompt?view=graph-rest-1.0)、[记录回复](/graph/api/call-recordresponse?view=graph-rest-1.0)、[订阅铃声](/graph/api/call-subscribetotone?view=graph-rest-1.0)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-1.0)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-1.0)、[获取参与者](/graph/api/participant-get?view=graph-rest-1.0)、[使参与者静音](/graph/api/participant-mute?view=graph-rest-1.0)、[创建联机会议](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0)、[获取联机会议](/graph/api/onlinemeeting-get?view=graph-rest-1.0)以及[呼叫保持活动](/graph/api/call-keepalive?view=graph-rest-1.0)。|
 |添加项|v1.0|添加了以下资源：[call](/graph/api/resouces/call?view=graph-rest-1.0)、[participant](/graph/api/resouces/participant?view=graph-rest-1.0) 和 [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0)。|
-| 更改        | Beta        | 已将 IVR API 记录重命名为 [recordResponse](/graph/api/call-record?view=graph-rest-beta)。 | 
-| 更改        | Beta        | 删除了 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 对象属性 **isCanceled**、**canceledDateTime** 和 **entryExitAnnouncement**。 已将属性 **joinUrl** 重命名为 **joinWebUrl**。 | 
+| 更改        | Beta        | 已将 IVR API 记录重命名为 [recordResponse](/graph/api/call-record?view=graph-rest-beta)。 |
+| 更改        | Beta        | 删除了 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 对象属性 **isCanceled**、**canceledDateTime** 和 **entryExitAnnouncement**。 已将属性 **joinUrl** 重命名为 **joinWebUrl**。 |
 | 添加项        | Beta 和 v1.0       | 添加了 [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) 操作。|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
@@ -347,7 +385,7 @@ ms.locfileid: "42815990"
 | 更改          | Beta 和 v1.0  | 若要获得委派权限以允许应用代表用户读取 Office 365 服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。|
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
- 
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 为新的和编辑过的频道消息和聊天消息添加了[通知](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。 |
@@ -591,9 +629,9 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 添加的新实体： <br/>[authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail?view=graph-rest-beta)|
+| 添加项 | Beta | 添加的新实体： <br/>[authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/resources/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/resources/networkLocationDetail?view=graph-rest-beta)|
 | 添加 | Beta | 向 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 资源添加了“alternateSignInName”****、“ServicePrincipalId”****、“ServicePrincipalName”**** 和“authenticationProcessingDetails”**** 属性。 |
-| 删除 | Beta | 已将 [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) 的引用从 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 移动到 [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)。 |
+| 删除 | Beta | 已将 [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) 的引用从 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 移动到 [authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta)。 |
 | 添加 | Beta | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 资源添加了“signInActivity”**** 属性。 |
 | 添加 | Beta | 添加了新实体类型：[Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | 添加项 | Beta | 添加了新实体类型：[Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
@@ -659,9 +697,9 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项      | Beta          |已添加[创建并发送通知](/graph/api/user-post-notifications?view=graph-rest-beta) API，以便无需管理代表令牌就可启用目标用户。 |
+| 添加项    | Beta      |已添加[创建并发送通知](/graph/api/user-post-notifications?view=graph-rest-beta) API，以便无需管理代表令牌就可启用目标用户。 |
 | 添加        | Beta          | 在 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源上引入了“targetPolicy”**** 属性，以允许通过 webpush 定位 Web 终结点。 |
-| 添加      | Beta          |  已在 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源上添加了 **fallbackPolicy** 属性，以便为高优先级通知启用 iOS 上的保证传递。 |
+| 添加    | Beta      |  已在 [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) 资源上添加了 **fallbackPolicy** 属性，以便为高优先级通知启用 iOS 上的保证传递。 |
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
@@ -2398,7 +2436,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ### <a name="identity-and-access--audit-logs"></a>标识和访问|审核日志
 
-|更改类型|版本|说明|
+|更改类型|版本|描述|
 |:---|:---|:---|
 |添加项|Beta|添加了 [directoryAudit](/graph/api/resources/directoryaudit?view=graph-rest-beta) 和 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 实体以支持新审核日志 API。 |
 |添加项|Beta|添加以下资源以支持审核日志 API：[appIndentity](/graph/api/resources/appidentity?view=graph-rest-beta)、[auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta)、[conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)、[deviceDetail](/graph/api/resources/devicedetail?view=graph-rest-beta)、[mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta)、[modifiedProperty](/graph/api/resources/modifiedproperty?view=graph-rest-beta)、[signinLocation](/graph/api/resources/signinlocation?view=graph-rest-beta)、[signinStatus](/graph/api/resources/signinstatus?view=graph-rest-beta)、[targetResource](/graph/api/resources/targetresource?view=graph-rest-beta)、[targetResourceApp](/graph/api/resources/targetresourceapp?view=graph-rest-beta)、[targetResourceDevice](/graph/api/resources/targetresourcedevice?view=graph-rest-beta)、[targetResourceDirectory](/graph/api/resources/targetresourcedirectory?view=graph-rest-beta)、[targetResourceGroup](/graph/api/resources/targetresourcegroup?view=graph-rest-beta)、[targetResourceOther](/graph/api/resources/targetresourceother?view=graph-rest-beta)、[targetResourcePolicy](/graph/api/resources/targetresourcepolicy?view=graph-rest-beta)、[targetResourceRole](/graph/api/resources/targetresourcerole?view=graph-rest-beta)、[targetResourceServicePrincipal](/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta)、[targetResourceUser](/graph/api/resources/targetresourceuser?view=graph-rest-beta)、[userIdentity](/graph/api/resources/useridentity?view=graph-rest-beta) |
