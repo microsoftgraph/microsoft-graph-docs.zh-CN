@@ -318,6 +318,10 @@ items:
             href: teams-protected-apis.md
           - name: 使用机器人发送主动邮件
             href: teams-proactive-messaging.md
+      - name: 通用打印
+        items:
+          - name: 概述
+            href: universal-print-concept-overview.md
       - name: 工作簿和图表
         displayName: Excel
         items:
