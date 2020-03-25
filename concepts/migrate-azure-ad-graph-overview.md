@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory （Azure AD） API 应用迁
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9a817e7fbc056994d98fa32ec945d8e9c2deda5
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234052"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926776"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>将 Azure AD Graph 应用迁移到 Microsoft Graph
 
@@ -43,4 +43,4 @@ Microsoft Graph 完全替换 Azure Active Directory （Azure AD）图形。 对�
 - 浏览[应用程序迁移清单](migrate-azure-ad-graph-planning-checklist.md)以帮助您规划移动。
 - 浏览[Microsoft Graph](/graph/overview)概念和实践。
 - 使用[Graph 浏览器](https://aka.ms/ge)试用 Microsoft Graph。
-- 若要了解有关进度更新和时间线的详细信息，请参阅 Office 开发人员中心中[的 Microsoft Graph 或 AZURE AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 。
+- 若要了解有关进度更新和时间线的详细信息，请参阅[Microsoft Graph 或 AZURE AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/)。

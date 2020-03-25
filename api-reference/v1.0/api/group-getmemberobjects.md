@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c24907c01b62c69043da335a98740bd28e722750
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab08cd3d4abcaef15b27db676fa5d4bc9d0495ed
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517115"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42927016"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
-命名空间： microsoft. graph 返回此组所属的所有组。 检查是可传递的。 注意：组不能是目录角色的成员，因此不会返回任何目录角色。
+命名空间：microsoft.graph
 
-## <a name="permissions"></a>权限
+返回此组所属的全部组。检查是可传递的。注意：组不能是目录角色的成员，因此不会返回任何目录角色。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
