@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 120cb02837ee30bc67ce315e158d4d4361a8be42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f3a129d8ed9d96393eae38e26860648f016323d
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517073"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926851"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
-命名空间：microsoft.graph 获取以相应组为其直接成员的组集合。 
+命名空间：microsoft.graph
+
+获取直接成员组构成的组集合。 
 
 此操作不可传递。与获取用户的 Office 365 组不同，该操作将返回所有类型的组，而不仅是 Office 365 组。
 
