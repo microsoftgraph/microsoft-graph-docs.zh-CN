@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0316cb1bbe474f8265ed384774183759d29aca0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 328ca6d751de2df04365d63d3715e02413c80b30
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447246"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962350"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含有关参与者标识的其他属性
 
@@ -22,6 +22,8 @@ ms.locfileid: "42447246"
 
 | 属性       | 类型                          | 说明                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| countryCode    | String                        | 呼叫开始时参与者最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
+| endpointType   | String                        | 参与者正在使用的终结点的类型。 可能的值包括`default`： `skypeForBusiness`、或`skypeForBusinessVoipPhone`。 只读。              |
 | 窃取       | [identitySet](identityset.md) | 与此参与者关联的[了解 identityset](identityset.md) 。 只读。                                                                             |
 | languageId     | String                        | 语言区域性字符串。 只读。                                                                                                                    |
 | 范围         | String                        | 参与者的家乡区域。 它可以是国家/地区、一个洲或更大的地理区域。 这不会根据参与者的当前物理位置而更改。 只读。 |
@@ -34,6 +36,8 @@ ms.locfileid: "42447246"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "countryCode",
+    "endpointType",
     "languageId",
     "region"
   ],
@@ -41,7 +45,9 @@ ms.locfileid: "42447246"
 }-->
 ```json
 {
+  "countryCode": "String",
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
+  "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
   "region": "String"
 }

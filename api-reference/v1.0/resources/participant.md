@@ -1,24 +1,24 @@
 ---
 title: 参与者资源类型
-description: 参与者类型。
+description: 代表参与者类型。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e6711a771d0c10112850f2d05943f4e8752ebbdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82a8cdd51cc7dd8c3be1e06c24ff61b19a9b86ac
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534084"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962336"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
 命名空间：microsoft.graph
 
-参与者类型。
+代表参与者类型。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                 | 返回类型                                                 | 说明                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
@@ -30,11 +30,12 @@ ms.locfileid: "42534084"
 
 | 属性             | 类型                                     | 说明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | 字符串                                   | 参与者 ID。                                          |
+| id                   | String                                   | 参与者 ID。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
-| isInLobby            | Boolean                                  | `true`如果参与者处于会议厅中。                          |
-| isMuted              | Boolean                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |
+| isInLobby            | 布尔                                  | `true`如果参与者处于会议厅中。                          |
+| isMuted              | 布尔                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |
 | mediaStreams         | [mediaStream](mediastream.md)集合 | 媒体流的列表。                                   |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否有录制功能的信息。 |
 
 ## <a name="relationships"></a>关系
 无。

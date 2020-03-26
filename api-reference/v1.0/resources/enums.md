@@ -2,16 +2,20 @@
 title: 枚举值
 description: Microsoft Graph 枚举值。
 localization_priority: Normal
-author: ''
-ms.prod: ''
+ms.prod: non-product-specific
+author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 575cb3aacbcc507fb2659a7097dfedce828603e3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618693"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948392"
 ---
+# <a name="enum-values"></a>枚举值
+
+命名空间：microsoft.graph
+
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
 |成员|值|说明|
@@ -274,7 +278,7 @@ ms.locfileid: "42618693"
 |:-------------------------
 | 替换
 | Append
-| Delete
+| 删除
 | Insert
 | 计算
 
@@ -631,6 +635,26 @@ ms.locfileid: "42618693"
 | investigationsThreatIntelligence
 | 泛型
 | 向 unknownfuturevalue
+
+### <a name="riskeventtype-values"></a>riskEventType 值
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|泛型|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|向 unknownfuturevalue|
 
 ### <a name="risklevel-values"></a>riskLevel 值
 

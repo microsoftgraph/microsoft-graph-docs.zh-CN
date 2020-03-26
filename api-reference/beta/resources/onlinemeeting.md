@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: b6e0848b88427cf0929030f07b163204842c3cd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 888b5d7d60a72ed95cb3e3f6cbb1b6e5407919ab
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522254"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962364"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,7 @@ ms.locfileid: "42522254"
 |:---------------|:--------|:----------|
 | [创建 onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
 | [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
+| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其 propertie。 |
 
 ## <a name="properties"></a>属性
 
@@ -41,8 +42,9 @@ ms.locfileid: "42522254"
 | joinWebUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | subject                   | String                                                 | 联机会议的主题。 |
-| capabilities              | String 集合                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
+| capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
 | videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
+| externalId                | String                                                 | 外部 ID。 自定义 ID。 可选。 |
 
 ### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
 | 值 | 说明  |
@@ -59,7 +61,7 @@ ms.locfileid: "42522254"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bbc0a7b22e9093e8f61e72d69b37c682406d00e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cba3af3374c16267201d7014b86919a26b80531c
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510814"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948413"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -87,7 +87,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
     "95e27074-6c4a-447a-aa24-9d718a0b86fa":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
       "title": "Update task details",
-      "ischecked": true
+      "isChecked": true
     },
     "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
