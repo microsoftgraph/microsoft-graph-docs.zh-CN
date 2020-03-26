@@ -385,7 +385,7 @@
                   href: api/planneruser-list-tasks.md
                 - name: 更新设置
                   href: api/planneruser-update.md
-            - name: 个人资料
+            - name: 配置文件
               href: resources/profile.md
               items:
                 - name: 获取用户的配置文件
@@ -919,6 +919,8 @@
                   href: api/onlinemeeting-get.md
                 - name: 删除
                   href: api/onlinemeeting-delete.md
+                - name: 创建或获取
+                  href: api/onlinemeeting-createorget.md
             - name: 状态
               href: resources/presence.md
               items:
@@ -3853,7 +3855,7 @@
                 - name: 组策略演示文稿长小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md
@@ -3866,7 +3868,7 @@
                 - name: 组策略演示文稿多文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -9875,7 +9877,7 @@
                 - name: 语言
                   href: resources/languageproficiency.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-languages.md
                     - name: 创建
                       href: api/profile-post-languages.md
