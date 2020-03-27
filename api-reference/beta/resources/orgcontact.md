@@ -5,30 +5,36 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 42a02cce980af57cf0bac7e1a97eb7cf77c91918
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c160c3e65c6905eec15bccccb10cabb086b57e39
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522114"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986108"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+表示一个组织联系人。 组织联系人由组织的管理员管理，不同于[个人联系人](contact.md)。 此外，组织联系人既可以从本地目录同步，也可以从 Exchange Online 同步，也可以是只读的。
+
+继承自 [directoryObject](directoryobject.md)。
+
+该资源支持通过提供 [delta](../api/orgcontact-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |读取 orgContact 对象的属性和关系。|
-|[获取管理器](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 获取联系人的经理。|
+|[获取经理](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 获取联系人的经理。|
 |[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| 列出联系人的直接下属。|
 |[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 获取 memberOf 对象集合。|
-|[删除](../api/orgcontact-delete.md) | 无 |删除 orgContact 对象。 |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String 集合| 检查组成员身份。 |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String 集合| 返回指定的联系人所属的所有组。 |
+|[删除](../api/orgcontact-delete.md) | None |删除 orgContact 对象。 |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| 检查组成员身份。 |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| 返回指定的联系人所属的所有组。 |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| 返回联系人所属的 directoryObjects 的列表。 |
 
 ## <a name="properties"></a>属性
@@ -48,7 +54,7 @@ ms.locfileid: "42522114"
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合       | 此组织联系人的任何同步设置错误列表。                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|布尔|如果此对象从本地目录同步，**则为 true** ; 否则为 false。**假**如果此对象最初是从本地目录同步，但不再同步，并且现在在 Exchange 中的 mastered;如果从未从本地目录同步此对象（默认），则**为 null** 。|
 | phones                       | [phone](phone.md) collection                            | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中仅有一种类型可以存在。                                                                                                                       |
-| proxyAddresses               | String 集合                                         | 例如： "SMTP： bob@contoso.com"、"SMTP： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持\$筛选器。                                                                                                                                                                               |
+| proxyAddresses               | String collection                                         | 例如： "SMTP： bob@contoso.com"、"SMTP： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持\$筛选器。                                                                                                                                                                               |
 | surname                      | String                                                     | 此组织联系人的姓氏。                          |
 
 ## <a name="relationships"></a>关系

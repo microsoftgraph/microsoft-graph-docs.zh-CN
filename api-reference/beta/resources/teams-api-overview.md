@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e07a4e658486d0075e34911cad4daaf17a07401
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866530"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962329"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -36,6 +36,15 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 |[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-timesoff?view=graph-rest-beta)、[列出](/graph/api/schedule-list-timesoff?view=graph-rest-beta)、[获取](/graph/api/timeoff-get?view=graph-rest-beta)、[替换](/graph/api/timeoff-put?view=graph-rest-beta)、[删除](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)、[列出](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta)、[获取](/graph/api/timeoffreason-get?view=graph-rest-beta)、[替换](/graph/api/timeoffreason-put?view=graph-rest-beta)、[删除](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
+## <a name="microsoft-teams-limits"></a>Microsoft Teams 限制
+
+Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams 限制和规范](/microsoftteams/limits-specifications-teams)中。
+无论是直接使用 Microsoft Teams 还是使用 Microsoft Graph API，这些限制均适用。
+由于每个团队都有一个对应的组，并且每个组都是一个目录对象，因此对[组数](/microsoft-365/admin/create-groups/office-365-groups#group-limits)和[目录对象数目（“资源”）](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) 的限制也可以发挥作用。 
+
+频道内的文件存储在 SharePoint 中；[SharePoint online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)适用。
+
+另请参阅 [Microsoft Teams 服务限制](/graph/throttling)。
 
 ## <a name="teams-and-groups"></a>用户和组
 
@@ -95,6 +104,16 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 
 > [!Note]
 > 租户来宾始终通过慢速路径进行处理。
+
+## <a name="polling-requirements"></a>轮询要求
+
+如果应用程序轮询查看是否更改了某资源，则此操作每天只能执行一次。 （[teamsAsyncOperation](teamsasyncoperation.md) 是一种例外情况，因为需要频繁对其进行轮询。）如果需要更频繁了解更改，应[创建指向该资源的订阅](../api/subscription-post-subscriptions.md)并接收更改通知 (webhooks)。 如果找不到对所需订阅类型的支持，建议通过 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626) 提供反馈。 
+
+轮询新邮件时，必须指定支持的日期范围。 有关详细信息，请参阅 [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta)。
+
+轮询是指对资源重复进行 GET 操作来了解资源是否变更。 只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。 例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
+
+未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
 
 ## <a name="see-also"></a>另请参阅
 

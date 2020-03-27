@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 50b187209d722252e11df6a5cfc20ea5b796b875
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: db87dfa7c855ba96b7cd7924b4f7829a6fd05a26
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892777"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962357"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -125,3 +125,25 @@ Outlook 服务提供以下资源。
 - [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
+
+#### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
+
+限制表示为每秒请求数 (rps)。
+
+| Teams 请求类型                                   | 每个租户每个应用限制        | 所有租户中的每个应用限制      |
+|------------------------------------------------------|---------------------------------|------------|
+| Microsoft Teams 的任何图形 API 调用              | 每 10 秒 15000 个请求 | 不适用 |
+| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
+| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| GET channel message  | 5 rps | 100 rps |
+| GET 1:1/group chat message  | 3 rps | 30 rps |
+| POST channel message | 2 rps | 20 rps |
+| POST 1:1/group chat message | 2 rps | 20 rps |
+
+对于给定团队或频道，每个应用最多可发布 4 个请求。
+
+另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。

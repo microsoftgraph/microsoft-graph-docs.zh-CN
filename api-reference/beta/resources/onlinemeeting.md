@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 888b5d7d60a72ed95cb3e3f6cbb1b6e5407919ab
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: c0a1bac4fa0a80435d381d62aaa4b90df3352c33
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962364"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986101"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -44,11 +44,12 @@ ms.locfileid: "42962364"
 | subject                   | String                                                 | 联机会议的主题。 |
 | capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
 | videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
+| joinInformation | [itemBody](itembody.md) | 在 "Accept-Language" 请求 HTTP 标头中指定的语言和区域设置变量形式的联接信息。 只读 |
 | externalId                | String                                                 | 外部 ID。 自定义 ID。 可选。 |
 
 ### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
 | 值 | 说明  |
-| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------ | :----------------------------------------------------- |
 | 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认  |
 | invitedUsersInCompany | 会议组织者和组织者邀请的同一家公司中的用户直接加入会议。  其他人在大厅等待，直到被许可。  |
 | everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。  联合匿名用户在大厅等待，直到被许可。  |

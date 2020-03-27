@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d903865d0977d93e2b8c0ca3cbaafc2d1607a632
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0764a7a4e5ca7845033f5f31a440ec183528da4d
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531973"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962315"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -55,12 +55,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在呼叫中将自己设为静音。                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | 在呼叫中将自己取消静音。                                                        |
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                        | 在呼叫中开始和停止共享屏幕。                                      |
+| **记录操作**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | 更新记录状态。                      |
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型                                                                                                   | 说明                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | 字符串                                                                                                 | 用于传递回调的回调 URL。 必须是 `https`。                                                                                                                               |
+| callRoutes         | [callRoute](callRoute.md) 集合                                                                                                 | 有关如何重定向呼叫的路由信息。 只读。                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 加入会议所需的信息。                                                                                                                              |
 | direction           | String                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
@@ -75,6 +78,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) 集合                                             | 呼叫的目标。 创建对等呼叫所需的信息。                                                                                                            |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。                                                                                                                                                                        |
+incomingContext            | [incomingContext](incomingContext.md)                                                                                | 与来电相关的呼叫上下文。                                                                                                                                                                       |
 
 ## <a name="relationships"></a>关系
 
