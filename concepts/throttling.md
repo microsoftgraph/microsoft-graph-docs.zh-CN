@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: db87dfa7c855ba96b7cd7924b4f7829a6fd05a26
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 3889f23353b46c852547501c59d8a94653c67b75
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962357"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986146"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -126,7 +126,7 @@ Outlook 服务提供以下资源。
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
-#### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
+### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
 限制表示为每秒请求数 (rps)。
 

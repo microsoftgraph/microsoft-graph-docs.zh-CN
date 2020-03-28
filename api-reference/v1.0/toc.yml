@@ -2140,7 +2140,7 @@
                 - name: Windows 10 协同版常规配置
                   href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -2153,7 +2153,7 @@
                 - name: Windows 8.1 合规性策略
                   href: resources/intune-deviceconfig-windows81compliancepolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows81compliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81compliancepolicy-get.md
@@ -3523,12 +3523,28 @@
                   href: api/orgcontact-list.md
                 - name: 获取组织联系人
                   href: api/orgcontact-get.md
-                - name: 列出直接下属
-                  href: api/orgcontact-list-directreports.md
-                - name: 列出 memberOf
-                  href: api/orgcontact-list-memberof.md
-                - name: 获取管理器
-                  href: api/orgcontact-get-manager.md
+                - name: 获取组织联系人 delta
+                  href: api/orgcontact-delta.md
+                - name: 组
+                  href: resources/group.md
+                  items:
+                    - name: 列出 memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: 获取成员组
+                      href: api/orgcontact-getmembergroups.md
+                    - name: 检查成员组
+                      href: api/orgcontact-checkmembergroups.md
+                - name: 组织层次结构
+                  href: resources/directoryobject.md
+                  items:
+                    - name: 列出直接下属
+                      href: api/orgcontact-list-directreports.md
+                    - name: 列出 memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: 获取管理器
+                      href: api/orgcontact-get-manager.md
+                    - name: 获取成员对象
+                      href: api/orgcontact-getmemberobjects.md
             - name: 订阅的 SKU
               href: resources/subscribedsku.md
               items:

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 019c9e20af4cea4ad88b0c9311f4a737618ac639
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 576c75e88bf882d8836a0731457fc37b337b0037
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639833"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034767"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -41,7 +41,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。|
 | Content-type  | application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,14 +52,14 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 
 ## <a name="error-codes"></a>错误代码
 此 API 遵循 HTTP 代码的标准。 此外，自定义错误代码如下所示。
-|错误代码     | 错误消息              | 详细信息 |
-|:--------------------| :---------------------|:--------------------|
-| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest 在系统中不存在。
-| 400 BadRequest | RequestCannotBeCancelled    | 仅`Granted`可以取消、 `PendingApproval` `PendingApprovalProvisioning`和和`PendingAdminDecision`的状态的请求。
+| 错误代码 | 错误消息 | 详细信息 |
+|:---------- |:------------- |:------- |
+| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest 在系统中不存在。 |
+| 400 BadRequest | RequestCannotBeCancelled | 仅`Granted`可以取消、 `PendingApproval` `PendingApprovalProvisioning`和和`PendingAdminDecision`的状态的请求。 |
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "truncated": false,

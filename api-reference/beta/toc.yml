@@ -3855,7 +3855,7 @@
                 - name: 组策略演示文稿长小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md
@@ -3868,7 +3868,7 @@
                 - name: 组策略演示文稿多文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -9125,18 +9125,17 @@
             - name: 组织联系人
               href: resources/orgcontact.md
               items:
-                - name: Contact
-                  href: resources/orgcontact.md
-                  items:
-                    - name: 列出组织联系人
-                      href: api/orgcontact-list.md
-                    - name: 获取组织联系人
-                      href: api/orgcontact-get.md
-                    - name: 更新组织联系人
-                      href: api/orgcontact-update.md
-                    - name: 删除组织联系人
-                      href: api/orgcontact-delete.md
-                - name: Groups
+                - name: 列出组织联系人
+                  href: api/orgcontact-list.md
+                - name: 获取组织联系人
+                  href: api/orgcontact-get.md
+                - name: 更新组织联系人
+                  href: api/orgcontact-update.md
+                - name: 删除组织联系人
+                  href: api/orgcontact-delete.md
+                - name: 获取组织联系人 delta
+                  href: api/orgcontact-delta.md
+                - name: 组
                   href: resources/group.md
                   items:
                     - name: 列出 memberOf
@@ -9150,9 +9149,10 @@
                   items:
                     - name: 列出直接下属
                       href: api/orgcontact-list-directreports.md
-                - name: 目录对象
-                  href: resources/directoryobject.md
-                  items:
+                    - name: 列出 memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: 获取管理器
+                      href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
             - name: 策略

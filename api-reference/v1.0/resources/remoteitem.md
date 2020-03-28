@@ -7,12 +7,12 @@ localization_priority: Normal
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8ce3c5c24506e75a34a95ee1da52d5bebd15ebd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 131336245f60d0f62da7bc7cc9922c32e3f545a3
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533856"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986087"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -39,6 +39,7 @@ ms.locfileid: "42533856"
   "file": { "@odata.type": "microsoft.graph.file" },
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image" : { "@odata.type": "microsoft.graph.image" },
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "name": "string",
@@ -48,6 +49,7 @@ ms.locfileid: "42533856"
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "size": 1024,
+  "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -63,16 +65,18 @@ ms.locfileid: "42533856"
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | 本地文件系统中的远程项的有关信息。只读。                                                                                          |
 | 文件夹               | [文件夹](folder.md)                 | 指示远程项是文件夹。只读。                                                                                                            |
 | id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
+| image                | [Image](image.md)                   | 图像元数据（如果此项是一个图像）。只读。                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
-| name                 | 字符串                              | 可选。远程项的 Filename。只读。                                                                                                                 |
+| name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
 | 包              | [包](package.md)               | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。 |
 | parentReference      | [ItemReference](itemreference.md)   | 远程项的父级的属性。只读。                                                                                                           |
 | shared               | [shared](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | 为 OneDrive for Business 和 SharePoint 中的项之间的互操作性提供了完整的项标识符集。只读。                                          |
 | size                 | Int64                               | 远程项的大小。只读。                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。                                                                     |
-| webDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
+| video                | [Video](video.md)                   | 视频元数据（如果此项是一个视频）。只读。                                                                                                    |
+| WebDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
 | WebUrl               | Url                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
 
 [specialFolder]: specialfolder.md
