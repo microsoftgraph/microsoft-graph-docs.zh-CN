@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 418c24dcb3779725cadb41e59c712c870d1bd74a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: def5f50f2e247ce8d66f798b8ba300a4732f51fc
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516989"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986112"
 ---
 # <a name="create-group"></a>创建组
 
-命名空间：microsoft.graph 创建请求正文中指定的新组。 你可以创建以下类型的组：
+命名空间：microsoft.graph
+
+创建请求正文中指定的新组。 你可以创建以下类型的组：
 
 * Office 365 组（统一组）
 * 安全组
