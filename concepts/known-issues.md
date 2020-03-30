@@ -3,98 +3,18 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: a76dc8ee7b7253a792d7722a9f8455f40581c023
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619102"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926671"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 [Microsoft Graph 更改日志](changelog.md)。
 
-## <a name="users"></a>用户
-
-### <a name="no-instant-access-after-creation"></a>创建后无法即时访问
-
-可通过在用户实体上使用 POST 来即时创建用户。必须先向用户分配 Office 365 许可证，然后用户才能访问 Office 365 服务。尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。在此期间，应用会收到一个 404 HTTP 错误响应。
-
-### <a name="photo-restrictions"></a>照片限制
-
-只有当用户有邮箱时，才能读取和更新用户的个人资料照片。另外，之前*可能*使用 **thumbnailPhoto** 属性（使用 Office 365 统一 API 预览或 Azure AD Graph，或通过 AD Connect 同步）存储的所有照片无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **照片**属性进行访问。在这种情况下，无法读取或更新照片会生成以下错误：
-
-```javascript
-    {
-      "error": {
-        "code": "ErrorNonExistentMailbox",
-        "message": "The SMTP address has no mailbox associated with it."
-      }
-    }
-```
-
-### <a name="using-delta-query"></a>使用 delta 查询
-
-有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
-
-### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
-
-[用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
-
-### <a name="incomplete-objects-when-using-getbyids-request"></a>使用 getByIds 请求时对象完整
-
-使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids?view=graph-rest-1.0)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
-
-## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和 POST /teams
-
-若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
-若要创建团队，请参阅[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
-
-### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
-
-[列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
-新团队会被列出。
-一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
-今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
-
-## <a name="groups"></a>组
-
-### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
-
-Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
-管理员必须同意授予这些权限。
-今后，我们计划新增用户可同意授予的组和团队权限。
-
-此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
-
-同时支持委派权限和仅限应用权限的组功能示例：
-
-* 创建和删除组
-* 获取和更新与组管理或管理相关的组属性
-* 组[目录设置](/graph/api/resources/directoryobject?view=graph-rest-1.0)、类型和同步
-* 组所有者和成员
-
-仅支持委派权限的组功能示例：
-
-* 组对话、事件和照片
-* 外部发件人、被接受或拒绝的发件人、组订阅
-* 用户收藏夹和未看计数
-
-### <a name="policy"></a>策略
-
-使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。
-
-### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
-
-目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
-
-### <a name="using-delta-query"></a>使用 delta 查询
-
-有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
-
-## <a name="bookings"></a>预订
+## <a name="bookings"></a>Bookings
 
 ### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>查询 bookingBusinesses 时出现 ErrorExceededFindCountLimit
 
@@ -115,8 +35,6 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 ```
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
-
-
 ## <a name="calendars"></a>日历
 
 ### <a name="accessing-a-shared-calendar"></a>访问共享日历
@@ -168,6 +86,36 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 
 对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
 
+## <a name="cloud-solution-provider-apps"></a>云解决方案提供商应用
+
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP 应用必须使用 Azure AD 终结点
+
+云解决方案提供商 (CSP) 应用必须从 Azure AD (v1) 终结点中获取令牌，才能在其合作伙伴托管的客户中成功调用 Microsoft Graph。目前，不支持通过较新的 Azure AD v2.0 终结点获取令牌。
+
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>对 CSP 应用的预授权不适用于一些客户租户
+
+在某些情况下，对 CSP 应用的预授权可能不适用于一些客户租户。
+
+- 对于使用委派权限的应用，首次将此应用用于新客户租户时，登录后可能会看到以下错误：`AADSTS50000: There was an error issuing a token`。
+- 对于使用应用权限的应用，应用可以获取令牌，但在调用 Microsoft Graph 时会意外看到“拒绝访问”消息。
+
+我们正在努力工作，以尽快解决此问题，让预授权适用于所有客户租户。
+
+同时，若要取消阻止开发和测试，可使用以下解决方法。
+
+>**注意：** 这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
+
+1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. 创建 Microsoft Graph 服务主体。
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 ## <a name="contacts"></a>联系人
 
 ### <a name="organization-contacts-available-in-only-beta"></a>仅 beta 版支持组织联系人。
@@ -214,70 +162,11 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-
-## <a name="messages"></a>邮件
-
-### <a name="attaching-large-files-to-messages"></a>将大型文件附加到邮件
-尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) 才会成功。
-
-### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
-
-用于创建答复或转发草稿的**注释**参数（[createReply](/graph/api/message-createreply?view=graph-rest-1.0)、[createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0)、[createForward](/graph/api/message-createforward?view=graph-rest-1.0)）不会成为最终的邮件草稿正文的一部分。
-
-### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
-
-在 v1 和 beta 终结点中，`GET /users/id/messages` 的响应包含出现在团队或通道范围外的用户的 Microsoft Teams 聊天。 这些聊天消息具有“即时信息”作为其主题。
-
-
-## <a name="drives-files-and-content-streaming"></a>驱动器、文件和内容流式传输
-
-* 在通过浏览器访问个人站点之前，用户首次通过 Microsoft Graph 访问个人驱动器会生成 401 响应。
-
-## <a name="query-parameter-limitations"></a>查询参数限制
-
-* 不支持多个命名空间。
-* 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行 GET 操作和投影。
-* `@odata.bind` 不受支持。这意味着开发人员将无法在组上适当设置 **acceptedSenders** 或 **rejectedSenders** 导航属性。
-* 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
-* `$expand`:
-  * 不支持 `nextLink`
-  * 不支持 1 级以上扩展
-  * 不支持其他参数（`$filter`、`$select`）
-* `$filter`:
-  * `/attachments` 终结点不支持筛选器。 如果存在，将忽略 `$filter` 参数。
-  * 不支持跨工作负载筛选。
-* `$search`:
-  * 全文搜索仅对实体子集（如邮件）可用。
-  * 不支持跨工作负载搜索。
-
 ## <a name="delta-query"></a>Delta 查询
 
 * 跟踪关系更改时，OData 上下文有时无法正确返回。
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
-* 客户端无法跟踪开放扩展或已注册架构扩展的变化。
-
-## <a name="application-and-serviceprincipal-api-changes"></a>应用程序和 servicePrincipal API 更改
-
-当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
-
-当前限制：
-
-* 只有在所有更改完成后，一些应用属性（如 appRoles 和 addIns）才可用。
-* 只能注册多租户应用。
-* 更新应用仅限于在首次 beta更新后注册的应用。
-* Azure Active Directory 用户可以注册应用并添加其他所有者。
-* 支持 OpenID Connect 和 OAuth 协议。
-* 无法向应用分配策略。
-* 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
-
-处于开发阶段的功能：
-
-* 可以注册单租户应用。
-* 更新 servicePrincipal。
-* 将现有 Azure AD 应用迁移到更新后的模型中。
-* 支持 appRoles、预授权客户端、可选声明、组成员身份声明和品牌塑造
-* Microsoft 帐户 (MSA) 用户可以注册应用。
-* 支持 SAML 和 WsFed 协议。
+* 客户端无法跟踪开放扩展或已注册的架构扩展的更改。
 
 ## <a name="extensions"></a>扩展
 
@@ -301,6 +190,74 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>并非所有实体类型都支持对架构扩展属性进行筛选
 
 Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人**、**事件**、**消息**或**帖子**。
+
+## <a name="files-onedrive"></a>文件 (OneDrive)
+
+* 在通过浏览器访问个人站点之前，用户首次通过 Microsoft Graph 访问个人驱动器会生成 401 响应。
+
+## <a name="groups"></a>组
+
+### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
+
+Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
+管理员必须同意授予这些权限。
+今后，我们计划新增用户可同意授予的组和团队权限。
+
+此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
+
+同时支持委派权限和仅限应用权限的组功能示例：
+
+* 创建和删除组
+* 获取和更新与组管理或管理相关的组属性
+* 组[目录设置](/graph/api/resources/directoryobject?view=graph-rest-1.0)、类型和同步
+* 组所有者和成员
+
+仅支持委派权限的组功能示例：
+
+* 组对话、事件和照片
+* 外部发件人、被接受或拒绝的发件人、组订阅
+* 用户收藏夹和未看计数
+
+### <a name="policy"></a>策略
+
+使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。
+
+### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
+
+目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
+
+### <a name="using-delta-query"></a>使用 delta 查询
+
+有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
+
+## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
+
+当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
+
+当前限制：
+
+* 只有在所有更改完成后，一些应用属性（如 appRoles 和 addIns）才可用。
+* 只能注册多租户应用。
+* 更新应用仅限于在首次 beta更新后注册的应用。
+* Azure Active Directory 用户可以注册应用并添加其他所有者。
+* 支持 OpenID Connect 和 OAuth 协议。
+* 无法向应用分配策略。
+* 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
+
+处于开发阶段的功能：
+
+* 可以注册单租户应用。
+* 更新 servicePrincipal。
+* 将现有 Azure AD 应用迁移到更新后的模型中。
+* 支持 appRoles、预授权客户端、可选声明、组成员身份声明和品牌塑造
+* Microsoft 帐户 (MSA) 用户可以注册应用。
+* 支持 SAML 和 WsFed 协议。
+
+## <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
+
+### <a name="permissions"></a>权限
+
+目前调用 POST 和 PATCH API 需要 Policy.Read.All 权限。 将来可以通过 Policy.ReadWrite.ConditionalAccess 权限读取目录中的策略。
 
 ## <a name="json-batching"></a>JSON 批处理
 
@@ -334,38 +291,82 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 随着 JSON 批处理技术日臻成熟，这些限制将会被取消。
 
-## <a name="cloud-solution-provider-apps"></a>云解决方案提供商应用
+## <a name="mail-outlook"></a>邮件 (Outlook)
 
-### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP 应用必须使用 Azure AD 终结点
+### <a name="attaching-large-files-to-messages"></a>将大型文件附加到邮件
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) 才会成功。
 
-云解决方案提供商 (CSP) 应用必须从 Azure AD (v1) 终结点中获取令牌，才能在其合作伙伴托管的客户中成功调用 Microsoft Graph。目前，不支持通过较新的 Azure AD v2.0 终结点获取令牌。
+### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 
-### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>对 CSP 应用的预授权不适用于一些客户租户
+用于创建答复或转发草稿的**注释**参数（[createReply](/graph/api/message-createreply?view=graph-rest-1.0)、[createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0)、[createForward](/graph/api/message-createforward?view=graph-rest-1.0)）不会成为最终的邮件草稿正文的一部分。
 
-在某些情况下，对 CSP 应用的预授权可能不适用于一些客户租户。
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
 
-- 对于使用委派权限的应用，首次将此应用用于新客户租户时，登录后可能会看到以下错误：`AADSTS50000: There was an error issuing a token`。
-- 对于使用应用权限的应用，应用可以获取令牌，但在调用 Microsoft Graph 时会意外看到“拒绝访问”消息。
+在 v1 和 beta 终结点中，`GET /users/id/messages` 的响应包含出现在团队或通道范围外的用户的 Microsoft Teams 聊天。 这些聊天消息具有“即时信息”作为其主题。
 
-我们正在努力工作，以尽快解决此问题，让预授权适用于所有客户租户。
+## <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
-同时，若要取消阻止开发和测试，可使用以下解决方法。
+### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和 POST /teams
 
->**注意：** 这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
+若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
+若要创建团队，请参阅[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
 
-1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
+### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
 
-    ```PowerShell
-    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
-    ```
+[列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
+新团队会被列出。
+一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
+今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
 
-2. 创建 Microsoft Graph 服务主体。
+## <a name="users"></a>用户
 
-    ```PowerShell
-    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
-    ```
+### <a name="no-instant-access-after-creation"></a>创建后无法即时访问
+
+可通过在用户实体上使用 POST 来即时创建用户。必须先向用户分配 Office 365 许可证，然后用户才能访问 Office 365 服务。尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。在此期间，应用会收到一个 404 HTTP 错误响应。
+
+### <a name="photo-restrictions"></a>照片限制
+
+只有当用户有邮箱时，才能读取和更新用户的个人资料照片。另外，之前*可能*使用 **thumbnailPhoto** 属性（使用 Office 365 统一 API 预览或 Azure AD Graph，或通过 AD Connect 同步）存储的所有照片无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **照片**属性进行访问。在这种情况下，无法读取或更新照片会生成以下错误：
+
+```javascript
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+```
+
+### <a name="using-delta-query"></a>使用 delta 查询
+
+有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
+
+[用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>使用 getByIds 请求时对象完整
+
+使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids?view=graph-rest-1.0)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
+
+## <a name="query-parameter-limitations"></a>查询参数限制
+
+* 不支持多个命名空间。
+* 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行 GET 操作和投影。
+* `@odata.bind` 不受支持。这意味着开发人员将无法在组上适当设置 **acceptedSenders** 或 **rejectedSenders** 导航属性。
+* 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
+* `$expand`:
+  * 不支持 `nextLink`
+  * 不支持 1 级以上扩展
+  * 不支持其他参数（`$filter`、`$select`）
+* `$filter`:
+  * `/attachments` 终结点不支持筛选器。 如果存在，将忽略 `$filter` 参数。
+  * 不支持跨工作负载筛选。
+* `$search`:
+  * 全文搜索仅对实体子集（如邮件）可用。
+  * 不支持跨工作负载搜索。
+
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
 
-某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://msdn.microsoft.com/office/office365/api/api-catalog)。有关 Azure Active Directory，请参考 [Microsoft Graph 或 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 博客文章，获取只能通过 Azure AD Graph API 提供的功能。
-
+某些功能尚未在 Microsoft Graph 中提供。 如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://docs.microsoft.com/previous-versions/office/office-365-api/)。 有关 Azure Active Directory 的信息，请参阅[将 Azure AD Graph 应用迁移到 Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview)。 

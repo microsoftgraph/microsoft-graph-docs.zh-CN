@@ -5,18 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ad8c1a9ffd4a4b5cc68554505464173a40aafd29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be0f4a15b42b869ae4f8c11f4e384220063dbe97
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531436"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926762"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
 命名空间：microsoft.graph
 
-附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的文件（例如文本文件或 Word 文档）。**contentBytes** 属性包含文件的 base64 编码内容。  
+用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)中附加的文件（例如文本文件或 Word 文档）。 
 
 创建文件附件时，在请求正文中包括以下内容：
 
@@ -24,6 +24,9 @@ ms.locfileid: "42531436"
 * 必要属性**名称**和 **contentBytes**。
 
 派生自 [附件](attachment.md)。
+
+> [!NOTE]
+> 确保先使用 base64 为文件内容编码，然后再将其分配到 **contentBytes**。
 
 ## <a name="methods"></a>方法
 

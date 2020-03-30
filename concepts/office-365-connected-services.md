@@ -4,12 +4,12 @@ description: 你可以使用 Visual Studio 中的连接服务配置应用，从�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7d47af5472a7c4bff8b8fae05c0cb87cc079cc29
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: a051b4011ab2efef7179680bb5bcbab1e717d8cc
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969529"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926664"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Office 365 服务
 
@@ -21,7 +21,7 @@ ms.locfileid: "37969529"
 
 - 如果未下载，请下载 [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/)。如果你使用的是 Visual Studio 的早期版本，你可以将 Visual Studio 2017 Preview 与你的当前版本并排使用。
 
-- 获取 Office 365 订阅。若要获取免费试用版，请加入 [Office 365 开发人员计划](https://dev.office.com/devprogram)。
+- 获取 Microsoft 365 订阅。若要获取免费试用版，请加入 [Microsoft 365 开发人员计划](https://developer.microsoft.com/microsoft-365/dev-program)。
 
 ## <a name="get-the-starter-project"></a>获取初学者项目
 
