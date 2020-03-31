@@ -368,7 +368,8 @@ items:
             href: paging.md
           - name: 使用查询参数
             href: query-parameters.md
-          - name: 批量请求
+          - name: 批处理
+            displayName: Batch requests
             href: json-batching.md
           - name: 限制
             href: throttling.md
@@ -383,8 +384,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: 与资源数据有关的通知（预览版）
                 href: webhooks-with-resource-data.md
-          - name: 跟踪更改
-            displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
+          - name: 更改跟踪
+            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
               - name: 概述
                 href: delta-query-overview.md
