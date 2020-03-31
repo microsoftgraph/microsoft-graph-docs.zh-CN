@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f1109cdaa02d5715335fd0948f64cff9bff8c4dd
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 9601c3a4589ba899d76b4ce55c1b0fdf8b3da355
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962524"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062579"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
@@ -18,7 +18,6 @@ ms.locfileid: "42962524"
 
 更新与呼叫关联的应用程序的录制状态。
 
-> [!NOTE]
 > **其他限制**：不能使用媒体访问 API 来记录或保留来自应用程序访问的呼叫或会议的媒体内容，或从该媒体内容派生的数据（"record" 或 "record"），而无需先调用**updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用**updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
 ## <a name="permissions"></a>权限

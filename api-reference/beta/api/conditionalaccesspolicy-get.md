@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 660ad2f45ba91173863ff7ab158b6478983fe349
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3f55bf81988d492d0dc065cd513f453cfdb08f1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437992"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062478"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42437992"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/policies/{id}
+GET /identity/conditionalAccess/policies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -69,7 +69,7 @@ GET /conditionalAccess/policies/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesspolicy-csharp-snippets.md)]

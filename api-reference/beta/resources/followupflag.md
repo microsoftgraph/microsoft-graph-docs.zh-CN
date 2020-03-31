@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9f69eca77fbeb7b9501c1f9186d0e00199a08658
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2b4b33fc17eb8dfb44e46ac18cb18aaeabe3d06c
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497830"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062600"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42497830"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|完成跟进的日期和时间。|
-|dueDateTime|**dateTimeTimeZone**|待完成的跟进的日期和时间。|
+|dueDateTime|**dateTimeTimeZone**|后续工作的结束日期和时间。 **注意**：若要设置截止日期，您还必须指定`startDateTime`;否则，你将收到`400 Bad Request`响应。|
 |flagStatus|String|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
 |startDateTime|**dateTimeTimeZone**|要开始的跟进的日期和时间。|
 

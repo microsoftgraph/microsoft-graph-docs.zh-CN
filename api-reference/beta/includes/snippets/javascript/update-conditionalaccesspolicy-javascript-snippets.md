@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1a4f179c61ab340d1b78067c674ce6b44479b6c0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: dffcc38748cab00ac0fb9c5d8c08cb01a9fcf40a
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936708"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062407"
 ---
 ```javascript
 
@@ -25,7 +25,7 @@ const conditionalAccessPolicy = {
     }
 };
 
-let res = await client.api('/conditionalAccess/policies/{id}')
+let res = await client.api('/identity/conditionalAccess/policies/{id}')
     .version('beta')
     .update(conditionalAccessPolicy);
 

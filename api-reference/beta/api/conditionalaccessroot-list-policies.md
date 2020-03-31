@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8687d16ad59829dc021fbb4313407d684aa89c0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa5b594930e3550fef89a3c25fd5fa434ca894f5
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437887"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062393"
 ---
 # <a name="list-policies"></a>列出策略
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42437887"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/policies
+GET /identity/conditionalAccess/policies
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -69,7 +69,7 @@ GET /conditionalAccess/policies
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-policies-csharp-snippets.md)]

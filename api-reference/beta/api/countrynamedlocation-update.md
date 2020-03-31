@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e76c84d7a8b9aa093f78ca8328a703ac9f0e969
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49ba8d1c9ce6f4217d0177141c76bbbbd8fbc27a
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436130"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061986"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42436130"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |countriesAndRegions|String 集合|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |displayName|String|位置的人可读名称。|
-|includeUnknownCountriesAndRegions|布尔|值是`true`如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|includeUnknownCountriesAndRegions|Boolean|值是`true`如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 
 ## <a name="response"></a>响应
 
@@ -72,7 +72,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 Content-type: application/json
 
 {

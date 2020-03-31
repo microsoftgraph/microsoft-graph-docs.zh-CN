@@ -5,20 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7a86276b42244b6fc1443d07d5170175f7166a92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e6312d862940aeff840e74094b4b1e75734634e
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440680"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062565"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新与呼叫关联的应用程序的录制状态。
+
+> **其他限制**：不能使用媒体访问 API 来记录或保留来自应用程序访问的呼叫或会议的媒体内容，或从该媒体内容派生的数据（"record" 或 "record"），而无需先调用**updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用**updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +51,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | 适用   | String  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| status          | String  | 录制状态。 可能的值包括`notRecording`： `recording`、或`failed`。  |
+| 状态          | String  | 录制状态。 可能的值包括`notRecording`： `recording`、或`failed`。  |
 
 ## <a name="response"></a>响应
 此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[UPDATERECORDINGSTATUSOPERATION](../resources/updaterecordingstatusoperation.md)对象的 URI。

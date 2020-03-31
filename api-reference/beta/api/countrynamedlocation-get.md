@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d26ce5ad8b4584a3f289d8d1fae6c24b17619349
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6924dfd6cf01a12d423f02d9276d73271fba342f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436151"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061931"
 ---
 # <a name="get-countrynamedlocation"></a>获取 countryNamedLocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42436151"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/namedLocations/{id}
+GET /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -69,7 +69,7 @@ GET /conditionalAccess/namedLocations/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-countrynamedlocation-csharp-snippets.md)]

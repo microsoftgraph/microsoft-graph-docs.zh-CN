@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 96b3597be4a9027d1aa787f76ee52e39aa5f1107
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2b6b5d1e3ee8d92627320c88e5589cface41350
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434973"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062012"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
+在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 

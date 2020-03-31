@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8a23bbd8eddd055cb7177f0b3f9c3348ab1054f2
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 7b4a9a0b74969877ca1336facda8e63462919b6b
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948115"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062124"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "42948115"
 
 更新**printConnector**对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -143,8 +143,7 @@ Content-length: 406
         "Red West"
     ],
     "stateOrProvince": "Washington"
-  },
-  "registeredBy": {}
+  }
 }
 ```
 

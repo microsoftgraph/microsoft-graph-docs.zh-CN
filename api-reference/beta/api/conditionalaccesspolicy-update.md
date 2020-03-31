@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca9d0e6a6dd4d02b48c205f69e4f4985571b4914
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 52d325f0a75bfdedf6ebf36d0a775efe9580739f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926748"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062406"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "42926748"
 
 更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "42926748"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/policies/{id}
+PATCH /identity/conditionalAccess/policies/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -71,7 +71,7 @@ PATCH /conditionalAccess/policies/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 Content-type: application/json
 
 {

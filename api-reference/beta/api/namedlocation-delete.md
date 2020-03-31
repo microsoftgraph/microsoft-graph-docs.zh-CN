@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 44c8144476dfec7dae9563bd77ae467dc549110c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c78cef3dd1eef303df2d8da9dd784a0782b5c82
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456780"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062226"
 ---
 # <a name="delete-namedlocation"></a>删除 namedLocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42456780"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /conditionalAccess/namedLocations/{id}
+DELETE /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ DELETE /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-namedlocation-csharp-snippets.md)]

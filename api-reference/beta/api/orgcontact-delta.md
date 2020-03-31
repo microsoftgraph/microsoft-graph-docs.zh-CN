@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9b30df74f4b479fac08d36a3983939d51d9c52bd
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 2e389f8cfdc6c39b9094764201b9487cddc85d66
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986302"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062169"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "42986302"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建、更新或删除的组织联系人，而无需对整个集合执行完全读取。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
+获取新创建、更新或删除的组织联系人，而无需对整个集合执行完全读取。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 

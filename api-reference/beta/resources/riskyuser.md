@@ -5,22 +5,22 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521059"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062635"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 
-有关风险事件的详细信息，请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
+有关风险事件的详细信息，请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
@@ -50,9 +50,8 @@ ms.locfileid: "42521059"
 |`userPrincipalName`|`string`|有风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
-|:---------------|:--------|:----------|
-|日志|[riskyUserHistoryItem](riskyuserhistoryitem.md)集合|表示 azure AD 用户的风险历史记录，由 Azure AD Identity Protection 确定。 |
+
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

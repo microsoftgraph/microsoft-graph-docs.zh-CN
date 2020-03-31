@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e72d4f262f4d11d97e136e6c95d061184c330a87
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: daff06b3e0d8ab35a3041eea4dc96f9c169ef561
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986268"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062544"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
 命名空间：microsoft.graph
 
-获取新创建、更新或删除的组织联系人，而无需对整个集合执行完全读取。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
+获取新创建、更新或删除的组织联系人，而无需对整个集合执行完全读取。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET /contacts/delta
 
 在后续请求中，复制并应用`nextLink`上`deltaLink`一个响应中的或 URL。 该 URL 已包含已编码的参数。
 
-| 查询参数      | 类型   |Description|
+| 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 对同一组织联系人集合的`deltaLink`前一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的完成。 在对该集合的`deltaLink`下一轮变更跟踪的第一个请求中，保存并应用整个 URL （包括此令牌）。|
 | $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组织联系人集合中有进一步的更改需要跟踪。 |

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e0c9e97904df35c5d8383d77a1b37441a96abb5
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948313"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062134"
 ---
 # <a name="list-printers"></a>列出打印机
 
@@ -20,7 +20,7 @@ ms.locfileid: "42948313"
 
 检索在租户中注册的**打印机**的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -102,7 +102,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],

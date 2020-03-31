@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02bf3e4fd86662d551f0d403322d9877c0ed5ad0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50ae9a0e1523a625b2deaf971e9031a1e2ea1bb1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457312"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062261"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42457312"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|位置的人可读名称。|
 |ipRanges|[ipRange](../resources/iprange.md) 集合|来自 IETF RFC5962 的 IPv4 CIDR 格式（1.2.3.4/32）或任何允许的 IPv6 格式的 IP 地址范围列表。|
-|isTrusted|布尔|如果此位置`true`是明确信任的，则该值为。|
+|isTrusted|Boolean|如果此位置`true`是明确信任的，则该值为。|
 
 ## <a name="response"></a>响应
 
@@ -72,7 +72,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 Content-type: application/json
 
 {

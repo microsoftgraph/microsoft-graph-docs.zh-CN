@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6aa1fb420eccdccfd25ad9fcc6b982e257f87d2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85b7afb4446303b9a009d5b4021ccd8215df37fd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452006"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062068"
 ---
 # <a name="user-delta"></a>user: delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。 有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。
+获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 

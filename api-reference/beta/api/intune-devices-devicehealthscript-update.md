@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6377d80f923de289c90cbf56762f78bc303e3e22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814594"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062061"
 ---
 # <a name="update-devicehealthscript"></a>更新 deviceHealthScript
 
@@ -53,19 +53,16 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
 |发布者|String|设备运行状况脚本发布者的名称|
-|version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
-|说明|String|设备运行状况脚本的说明|
+|description|String|设备运行状况脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |remediationScriptContent|Binary|修正 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|布尔值|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
-|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
 
 
 
@@ -84,7 +81,6 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
-  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -94,10 +90,8 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
-}
+  ]
+ }
 ```
 
 ### <a name="response"></a>响应

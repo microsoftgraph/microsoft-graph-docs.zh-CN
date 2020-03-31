@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0db12bb6caa1c63057f230151db2f66c180cac8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 948cecd3cc81cd5df5b1caf2948ac6872dccd08a
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437880"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062330"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42437880"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/namedLocations
+POST /identity/conditionalAccess/namedLocations
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -68,7 +68,7 @@ POST /conditionalAccess/namedLocations
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -145,7 +145,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {

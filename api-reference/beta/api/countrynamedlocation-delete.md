@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5d0cf923c867cf3b2338b72bd68f13e6f5a8d4eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ea99659b8257a6d93ddd28fdc45f8221e78fecd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436158"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061944"
 ---
 # <a name="delete-countrynamedlocation"></a>删除 countryNamedLocation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42436158"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /conditionalAccess/namedLocations/{id}
+DELETE /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ DELETE /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-countrynamedlocation-csharp-snippets.md)]

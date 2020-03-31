@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e6aba0c4d712febeee1273738a0c2cbd2bc2dff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517549"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062621"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -43,11 +43,13 @@ PATCH /education/classes/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|字符串| 课程说明。|
-|displayName|字符串| 课程名称。|
-|mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
-<!-- Please verify the revised description here. -->
-|classCode|String| 由学校使用的课程代码。| |externalId|String| 来自同步系统的课程 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可能的值为： `sis`、 `manual`、 `enum_sentinel`。 |
+|说明|String| 课程说明。|
+|displayName|String| 课程名称。|
+|mailNickname|字符串| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
+|classCode|String| 学校使用的类代码。|
+|externalId|String| 来自同步系统的课程 ID。 |
+|externalName|String|同步系统中的课程名称。|
+|externalSource|string| 此课程的创建方式。 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [educationClass](../resources/educationclass.md) 对象。
@@ -108,11 +110,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",

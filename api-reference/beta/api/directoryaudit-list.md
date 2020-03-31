@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 71b0740c433fdc44e63d684999f30dd9e560d804
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2205f35470a9c99f16719624e7d99538c92050c1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435148"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061977"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问权限、使用条款、身份保护、密码管理（SSPR 和管理员密码）重置）和自助服务组管理。
+获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问查看、使用条款、标识保护、密码管理（SSPR 和管理员密码重置）和自助服务组管理。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +60,7 @@ GET /auditLogs/directoryAudits
 |initiatedBy/user/displayName| eq|
 |initiatedBy/user/userPrincipalName| eq、startswith|
 |initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
+|initiatedBy/app/displayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq、startswith|
 
