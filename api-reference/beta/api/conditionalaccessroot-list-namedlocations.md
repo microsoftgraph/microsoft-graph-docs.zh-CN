@@ -5,94 +5,94 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a51aec675f0596eb5232f2f3d6160a22f03d0b7f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0d9ddb5ad1138fd160de63d9d9876b26d97e34b
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437943"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062410"
 ---
-# <a name="list-namedlocations"></a><span data-ttu-id="2b4be-103">列出 namedLocations</span><span class="sxs-lookup"><span data-stu-id="2b4be-103">List namedLocations</span></span>
+# <a name="list-namedlocations"></a><span data-ttu-id="1c4fc-103">列出 namedLocations</span><span class="sxs-lookup"><span data-stu-id="1c4fc-103">List namedLocations</span></span>
 
-<span data-ttu-id="2b4be-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="2b4be-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1c4fc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c4fc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2b4be-105">获取[namedLocation](../resources/namedlocation.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="2b4be-105">Get a list of [namedLocation](../resources/namedlocation.md) objects.</span></span>
+<span data-ttu-id="1c4fc-105">获取[namedLocation](../resources/namedlocation.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-105">Get a list of [namedLocation](../resources/namedlocation.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2b4be-106">权限</span><span class="sxs-lookup"><span data-stu-id="2b4be-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1c4fc-106">权限</span><span class="sxs-lookup"><span data-stu-id="1c4fc-106">Permissions</span></span>
 
-<span data-ttu-id="2b4be-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1c4fc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2b4be-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2b4be-109">Permission type</span></span>                        | <span data-ttu-id="2b4be-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2b4be-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="1c4fc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1c4fc-109">Permission type</span></span>                        | <span data-ttu-id="1c4fc-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1c4fc-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="2b4be-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2b4be-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2b4be-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="2b4be-112">Policy.Read.All</span></span> |
-| <span data-ttu-id="2b4be-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2b4be-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b4be-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2b4be-114">Not supported.</span></span> |
-| <span data-ttu-id="2b4be-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2b4be-115">Application</span></span>                            | <span data-ttu-id="2b4be-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="2b4be-116">Policy.Read.All</span></span> |
+| <span data-ttu-id="1c4fc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1c4fc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1c4fc-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="1c4fc-112">Policy.Read.All</span></span> |
+| <span data-ttu-id="1c4fc-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1c4fc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c4fc-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-114">Not supported.</span></span> |
+| <span data-ttu-id="1c4fc-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1c4fc-115">Application</span></span>                            | <span data-ttu-id="1c4fc-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="1c4fc-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2b4be-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2b4be-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1c4fc-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1c4fc-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/namedLocations
+GET /identity/conditionalAccess/namedLocations
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2b4be-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2b4be-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1c4fc-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1c4fc-118">Optional query parameters</span></span>
 
-<span data-ttu-id="2b4be-119">`$count`此方法支持、 `$filter`、 `$orderBy` `$select` `$skip`、、和`$top` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2b4be-119">This method supports the `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="2b4be-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="2b4be-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="1c4fc-119">`$count`此方法支持、 `$filter`、 `$orderBy` `$select` `$skip`、、和`$top` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-119">This method supports the `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="1c4fc-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2b4be-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2b4be-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1c4fc-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="1c4fc-121">Request headers</span></span>
 
-| <span data-ttu-id="2b4be-122">名称</span><span class="sxs-lookup"><span data-stu-id="2b4be-122">Name</span></span>      |<span data-ttu-id="2b4be-123">说明</span><span class="sxs-lookup"><span data-stu-id="2b4be-123">Description</span></span>|
+| <span data-ttu-id="1c4fc-122">名称</span><span class="sxs-lookup"><span data-stu-id="1c4fc-122">Name</span></span>      |<span data-ttu-id="1c4fc-123">说明</span><span class="sxs-lookup"><span data-stu-id="1c4fc-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2b4be-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2b4be-124">Authorization</span></span> | <span data-ttu-id="2b4be-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1c4fc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c4fc-124">Authorization</span></span> | <span data-ttu-id="1c4fc-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2b4be-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2b4be-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1c4fc-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1c4fc-127">Request body</span></span>
 
-<span data-ttu-id="2b4be-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2b4be-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1c4fc-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2b4be-129">响应</span><span class="sxs-lookup"><span data-stu-id="2b4be-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1c4fc-129">响应</span><span class="sxs-lookup"><span data-stu-id="1c4fc-129">Response</span></span>
 
-<span data-ttu-id="2b4be-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[namedLocation](../resources/namedlocation.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="2b4be-130">If successful, this method returns a `200 OK` response code and a collection of [namedLocation](../resources/namedlocation.md) objects in the response body.</span></span>
+<span data-ttu-id="1c4fc-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[namedLocation](../resources/namedlocation.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-130">If successful, this method returns a `200 OK` response code and a collection of [namedLocation](../resources/namedlocation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2b4be-131">示例</span><span class="sxs-lookup"><span data-stu-id="2b4be-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1c4fc-131">示例</span><span class="sxs-lookup"><span data-stu-id="1c4fc-131">Examples</span></span>
 
-### <a name="example-1-list-all-namedlocations"></a><span data-ttu-id="2b4be-132">示例1：列出所有 namedLocations</span><span class="sxs-lookup"><span data-stu-id="2b4be-132">Example 1: List all namedLocations</span></span>
+### <a name="example-1-list-all-namedlocations"></a><span data-ttu-id="1c4fc-132">示例1：列出所有 namedLocations</span><span class="sxs-lookup"><span data-stu-id="1c4fc-132">Example 1: List all namedLocations</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2b4be-133">请求</span><span class="sxs-lookup"><span data-stu-id="2b4be-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c4fc-133">请求</span><span class="sxs-lookup"><span data-stu-id="1c4fc-133">Request</span></span>
 
-<span data-ttu-id="2b4be-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2b4be-134">The following is an example of the request.</span></span>
+<span data-ttu-id="1c4fc-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2b4be-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b4be-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c4fc-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c4fc-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 ```
-# <a name="c"></a>[<span data-ttu-id="2b4be-136">C#</span><span class="sxs-lookup"><span data-stu-id="2b4be-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c4fc-136">C#</span><span class="sxs-lookup"><span data-stu-id="1c4fc-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2b4be-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b4be-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c4fc-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c4fc-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2b4be-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b4be-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c4fc-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c4fc-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2b4be-139">响应</span><span class="sxs-lookup"><span data-stu-id="2b4be-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c4fc-139">响应</span><span class="sxs-lookup"><span data-stu-id="1c4fc-139">Response</span></span>
 
-<span data-ttu-id="2b4be-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2b4be-140">The following is an example of the response.</span></span>
+<span data-ttu-id="1c4fc-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2b4be-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c4fc-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -160,41 +160,41 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a><span data-ttu-id="2b4be-143">示例2：列出所有 ipNamedLocations</span><span class="sxs-lookup"><span data-stu-id="2b4be-143">Example 2: List all ipNamedLocations</span></span>
+### <a name="example-2-list-all-ipnamedlocations"></a><span data-ttu-id="1c4fc-143">示例2：列出所有 ipNamedLocations</span><span class="sxs-lookup"><span data-stu-id="1c4fc-143">Example 2: List all ipNamedLocations</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2b4be-144">请求</span><span class="sxs-lookup"><span data-stu-id="2b4be-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c4fc-144">请求</span><span class="sxs-lookup"><span data-stu-id="1c4fc-144">Request</span></span>
 
-<span data-ttu-id="2b4be-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2b4be-145">The following is an example of the request.</span></span>
+<span data-ttu-id="1c4fc-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-145">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2b4be-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b4be-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c4fc-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c4fc-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
 ```
-# <a name="c"></a>[<span data-ttu-id="2b4be-147">C#</span><span class="sxs-lookup"><span data-stu-id="2b4be-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c4fc-147">C#</span><span class="sxs-lookup"><span data-stu-id="1c4fc-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2b4be-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b4be-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c4fc-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c4fc-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2b4be-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b4be-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c4fc-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c4fc-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2b4be-150">响应</span><span class="sxs-lookup"><span data-stu-id="2b4be-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c4fc-150">响应</span><span class="sxs-lookup"><span data-stu-id="1c4fc-150">Response</span></span>
 
-<span data-ttu-id="2b4be-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2b4be-151">The following is an example of the response.</span></span>
+<span data-ttu-id="1c4fc-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-151">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2b4be-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c4fc-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -250,41 +250,41 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a><span data-ttu-id="2b4be-154">示例3：列出在特定日期之后创建的所有 namedLocations</span><span class="sxs-lookup"><span data-stu-id="2b4be-154">Example 3: List all namedLocations created after a certain date</span></span>
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a><span data-ttu-id="1c4fc-154">示例3：列出在特定日期之后创建的所有 namedLocations</span><span class="sxs-lookup"><span data-stu-id="1c4fc-154">Example 3: List all namedLocations created after a certain date</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2b4be-155">请求</span><span class="sxs-lookup"><span data-stu-id="2b4be-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c4fc-155">请求</span><span class="sxs-lookup"><span data-stu-id="1c4fc-155">Request</span></span>
 
-<span data-ttu-id="2b4be-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2b4be-156">The following is an example of the request.</span></span>
+<span data-ttu-id="1c4fc-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-156">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2b4be-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b4be-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c4fc-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c4fc-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
 ```
-# <a name="c"></a>[<span data-ttu-id="2b4be-158">C#</span><span class="sxs-lookup"><span data-stu-id="2b4be-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c4fc-158">C#</span><span class="sxs-lookup"><span data-stu-id="1c4fc-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2b4be-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b4be-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c4fc-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c4fc-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2b4be-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b4be-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c4fc-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c4fc-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2b4be-161">响应</span><span class="sxs-lookup"><span data-stu-id="2b4be-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c4fc-161">响应</span><span class="sxs-lookup"><span data-stu-id="1c4fc-161">Response</span></span>
 
-<span data-ttu-id="2b4be-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2b4be-162">The following is an example of the response.</span></span>
+<span data-ttu-id="1c4fc-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-162">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2b4be-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c4fc-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -322,41 +322,41 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a><span data-ttu-id="2b4be-165">示例4：列出包含特定国家或地区的所有 countryNamedLocations</span><span class="sxs-lookup"><span data-stu-id="2b4be-165">Example 4: List all countryNamedLocations containing a certain country or region</span></span>
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a><span data-ttu-id="1c4fc-165">示例4：列出包含特定国家或地区的所有 countryNamedLocations</span><span class="sxs-lookup"><span data-stu-id="1c4fc-165">Example 4: List all countryNamedLocations containing a certain country or region</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2b4be-166">请求</span><span class="sxs-lookup"><span data-stu-id="2b4be-166">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c4fc-166">请求</span><span class="sxs-lookup"><span data-stu-id="1c4fc-166">Request</span></span>
 
-<span data-ttu-id="2b4be-167">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2b4be-167">The following is an example of the request.</span></span>
+<span data-ttu-id="1c4fc-167">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-167">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2b4be-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b4be-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c4fc-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c4fc-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
 ```
-# <a name="c"></a>[<span data-ttu-id="2b4be-169">C#</span><span class="sxs-lookup"><span data-stu-id="2b4be-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c4fc-169">C#</span><span class="sxs-lookup"><span data-stu-id="1c4fc-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2b4be-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b4be-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c4fc-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c4fc-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2b4be-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b4be-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c4fc-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c4fc-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2b4be-172">响应</span><span class="sxs-lookup"><span data-stu-id="2b4be-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c4fc-172">响应</span><span class="sxs-lookup"><span data-stu-id="1c4fc-172">Response</span></span>
 
-<span data-ttu-id="2b4be-173">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2b4be-173">The following is an example of the response.</span></span>
+<span data-ttu-id="1c4fc-173">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-173">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2b4be-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2b4be-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c4fc-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1c4fc-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

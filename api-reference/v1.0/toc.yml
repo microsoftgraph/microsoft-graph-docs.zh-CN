@@ -28,7 +28,8 @@
           href: /graph/paging?context=graph/api/1.0
         - name: 使用查询参数
           href: /graph/query-parameters?context=graph/api/1.0
-        - name: 批量请求
+        - name: 批处理
+          displayName: Batch requests
           href: /graph/json-batching?context=graph/api/1.0
         - name: 限制
           href: /graph/throttling?context=graph/api/1.0
@@ -41,8 +42,8 @@
               href: /graph/tutorials/change-notifications
             - name: 缺少 Outlook 通知（预览版）
               href: /graph/webhooks-outlook-authz?context=graph/api/1.0
-        - name: 跟踪更改
-          displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
+        - name: 修订
+          displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
           items:
             - name: 概述
               href: /graph/delta-query-overview?context=graph/api/1.0

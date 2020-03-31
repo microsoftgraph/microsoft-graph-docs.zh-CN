@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3da4ece9bbc0166553ac5503599131ffa81036ac
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2aed64cc4a8d9d071dc82a243caac74bfb3c9fc8
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938456"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062258"
 ---
 ```javascript
 
@@ -28,7 +28,7 @@ const namedLocation = {
     ]
 };
 
-let res = await client.api('/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2')
+let res = await client.api('/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2')
     .version('beta')
     .update(namedLocation);
 

@@ -5,57 +5,57 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e0c9e97904df35c5d8383d77a1b37441a96abb5
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948313"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062134"
 ---
-# <a name="list-printers"></a><span data-ttu-id="31af3-103">列出打印机</span><span class="sxs-lookup"><span data-stu-id="31af3-103">List printers</span></span>
+# <a name="list-printers"></a><span data-ttu-id="5188b-103">列出打印机</span><span class="sxs-lookup"><span data-stu-id="5188b-103">List printers</span></span>
 
-<span data-ttu-id="31af3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="31af3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5188b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5188b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31af3-105">检索在租户中注册的**打印机**的列表。</span><span class="sxs-lookup"><span data-stu-id="31af3-105">Retrieve the list of **printers** that are registered in the tenant.</span></span>
+<span data-ttu-id="5188b-105">检索在租户中注册的**打印机**的列表。</span><span class="sxs-lookup"><span data-stu-id="5188b-105">Retrieve the list of **printers** that are registered in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="31af3-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="31af3-106">Permissions</span></span>
-<span data-ttu-id="31af3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="31af3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5188b-106">权限</span><span class="sxs-lookup"><span data-stu-id="5188b-106">Permissions</span></span>
+<span data-ttu-id="5188b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5188b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="31af3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="31af3-109">Permission type</span></span> | <span data-ttu-id="31af3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="31af3-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="5188b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5188b-109">Permission type</span></span> | <span data-ttu-id="5188b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5188b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="31af3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="31af3-111">Delegated (work or school account)</span></span>| <span data-ttu-id="31af3-112">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="31af3-112">Users.Read.All</span></span> |
-|<span data-ttu-id="31af3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="31af3-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="31af3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="31af3-114">Not Supported.</span></span>|
-|<span data-ttu-id="31af3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="31af3-115">Application</span></span>|<span data-ttu-id="31af3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="31af3-116">Not Supported.</span></span>|
+|<span data-ttu-id="5188b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5188b-111">Delegated (work or school account)</span></span>| <span data-ttu-id="5188b-112">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="5188b-112">Users.Read.All</span></span> |
+|<span data-ttu-id="5188b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5188b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5188b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5188b-114">Not Supported.</span></span>|
+|<span data-ttu-id="5188b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5188b-115">Application</span></span>|<span data-ttu-id="5188b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5188b-116">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="31af3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="31af3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5188b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5188b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="31af3-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="31af3-118">Optional query parameters</span></span>
-<span data-ttu-id="31af3-119">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="31af3-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="31af3-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="31af3-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5188b-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5188b-118">Optional query parameters</span></span>
+<span data-ttu-id="5188b-119">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5188b-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="5188b-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="5188b-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="31af3-121">异常</span><span class="sxs-lookup"><span data-stu-id="31af3-121">Exceptions</span></span>
-* <span data-ttu-id="31af3-122">导航属性支持`$expand`和`select`运算符，但不支持。 `jobs` `share`</span><span class="sxs-lookup"><span data-stu-id="31af3-122">The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.</span></span>
-* <span data-ttu-id="31af3-123">`$count`运算符不受支持。</span><span class="sxs-lookup"><span data-stu-id="31af3-123">The `$count` operator is not supported.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="5188b-121">异常</span><span class="sxs-lookup"><span data-stu-id="5188b-121">Exceptions</span></span>
+* <span data-ttu-id="5188b-122">导航属性支持`$expand`和`select`运算符，但不支持。 `jobs` `share`</span><span class="sxs-lookup"><span data-stu-id="5188b-122">The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.</span></span>
+* <span data-ttu-id="5188b-123">`$count`运算符不受支持。</span><span class="sxs-lookup"><span data-stu-id="5188b-123">The `$count` operator is not supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="31af3-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="31af3-124">Request headers</span></span>
-| <span data-ttu-id="31af3-125">名称</span><span class="sxs-lookup"><span data-stu-id="31af3-125">Name</span></span>      |<span data-ttu-id="31af3-126">说明</span><span class="sxs-lookup"><span data-stu-id="31af3-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5188b-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="5188b-124">Request headers</span></span>
+| <span data-ttu-id="5188b-125">名称</span><span class="sxs-lookup"><span data-stu-id="5188b-125">Name</span></span>      |<span data-ttu-id="5188b-126">说明</span><span class="sxs-lookup"><span data-stu-id="5188b-126">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="31af3-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="31af3-127">Authorization</span></span> | <span data-ttu-id="31af3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="31af3-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5188b-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="5188b-127">Authorization</span></span> | <span data-ttu-id="5188b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5188b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="31af3-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="31af3-130">Request body</span></span>
-<span data-ttu-id="31af3-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="31af3-131">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="31af3-132">响应</span><span class="sxs-lookup"><span data-stu-id="31af3-132">Response</span></span>
-<span data-ttu-id="31af3-133">如果成功，此方法在响应`200 OK`正文中返回响应代码和[printer](../resources/printer.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="31af3-133">If successful, this method returns a `200 OK` response code and a collection of [printer](../resources/printer.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="31af3-134">示例</span><span class="sxs-lookup"><span data-stu-id="31af3-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="31af3-135">请求</span><span class="sxs-lookup"><span data-stu-id="31af3-135">Request</span></span>
-<span data-ttu-id="31af3-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="31af3-136">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5188b-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="5188b-130">Request body</span></span>
+<span data-ttu-id="5188b-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5188b-131">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="5188b-132">响应</span><span class="sxs-lookup"><span data-stu-id="5188b-132">Response</span></span>
+<span data-ttu-id="5188b-133">如果成功，此方法在响应`200 OK`正文中返回响应代码和[printer](../resources/printer.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="5188b-133">If successful, this method returns a `200 OK` response code and a collection of [printer](../resources/printer.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="5188b-134">示例</span><span class="sxs-lookup"><span data-stu-id="5188b-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5188b-135">请求</span><span class="sxs-lookup"><span data-stu-id="5188b-135">Request</span></span>
+<span data-ttu-id="5188b-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5188b-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="31af3-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="31af3-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5188b-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="5188b-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printers"
@@ -63,23 +63,23 @@ GET /print/printers
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers
 ```
-# <a name="c"></a>[<span data-ttu-id="31af3-138">C#</span><span class="sxs-lookup"><span data-stu-id="31af3-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5188b-138">C#</span><span class="sxs-lookup"><span data-stu-id="5188b-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="31af3-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="31af3-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5188b-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5188b-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-printers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="31af3-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="31af3-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5188b-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5188b-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="31af3-141">响应</span><span class="sxs-lookup"><span data-stu-id="31af3-141">Response</span></span>
-<span data-ttu-id="31af3-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="31af3-142">The following is an example of the response.</span></span>
-><span data-ttu-id="31af3-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="31af3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5188b-141">响应</span><span class="sxs-lookup"><span data-stu-id="5188b-141">Response</span></span>
+<span data-ttu-id="5188b-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5188b-142">The following is an example of the response.</span></span>
+><span data-ttu-id="5188b-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5188b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +102,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],
