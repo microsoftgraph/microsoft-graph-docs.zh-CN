@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ebe9baf44acb273513bb8047740880ec04c205e5
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 60849d6d00dfb390eee9e2122e007194a9a28468
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892763"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062606"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -19,7 +19,19 @@ ms.locfileid: "42892763"
 
 ## <a name="march-2020-new-and-generally-available"></a>2020 年 3 月：新版本和正式版
 
-### <a name="identity-and-access"></a>标识和访问
+### <a name="change-notifications"></a>更改通知
+[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-1.0)[跟踪更改](/graph/api/orgcontact-delta?view=graph-rest-1.0)。
+
+### <a name="cloud-communications"></a>云通信
+- 获取呼叫路由和[呼叫](/graph/api/resources/call?view=graph-rest-1.0)的传入上下文。
+- 应用可对呼叫进行[录制状态更新](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0)。
+- 可为[参与者](/graph/api/resources/participant?view=graph-rest-1.0)指定录制信息，包括录制的发起人和状态。
+- 可指定参与者的国家/地区代码和终结点类型（例如 Skype for Business 或 Skype for Business VOIP）作为 [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) 的组成部分。
+
+### <a name="files"></a>文件
+与用户共享、添加至用户 OneDrive、或作为搜索结果返回的[远程项](/graph/api/resources/remoteitem?view=graph-rest-1.0)，包含图像或视频的元数据。
+
+### <a name="identity-and-access"></a>身份和访问
 使用 `User.ManageIdentities.All` 委托的权限，可允许应用读取、更新或删除与登录用户有权访问的用户帐户关联的标识。 在没有登录用户的情况下，在应用程序级别使用此权限。 这样，应用可以[管理](/graph/api/user-update?view=graph-rest-1.0)用户能够使用哪些标识来登录。
 
 ### <a name="reports"></a>报告
@@ -34,6 +46,8 @@ ms.locfileid: "42892763"
 ### <a name="cloud-communications"></a>云通信
 - 第三方视频电话会议 (VTC) 设备合作伙伴可以通过云视频互操作 (CVI) 机器人和 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta) 函数，记录并提供视频电话会议设备的媒体质量数据。 媒体质量数据包括，[音频](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-beta)、[视频](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-beta)和[屏幕共享](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-beta)的开放类型数据。
 - 使用 **callChainId** 属性唯一标识会议或参与者到参与者[呼叫](/graph/api/resources/call?view=graph-rest-beta)中的参与者。
+- 使用 [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) 按自定义外部 ID 获取[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)实例，并在不存在此实例时创建一个实例。
+- 使用可选的 `Accept-Language`HTTP 请求标头[创建](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)或[获取](/graph/api/onlinemeeting-get?view=graph-rest-beta)联机会议实例，以在成功操作时，采用指定语言和区域设置显示 **joinInformation** 属性的内容。
 
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [3 月](changelog.md#march-2020)更新。
@@ -49,6 +63,11 @@ Intune [3 月](changelog.md#march-2020)更新。
 
 ### <a name="teamwork"></a>团队合作
 使用 `ChannelMessage.Read.All` 应用程序级别权限，在没有登录用户的情况下读取频道中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实例。
+
+### <a name="universal-print"></a>通用打印
+调试允许用户在 web 上或从应用程序上打印的[通用打印 API](universal-print-concept-overview.md)。 借助 API，IT 管理员能够在 Microsoft 365 云远程打印机中管理用户和组对打印机的访问权限，以保持可用性、监视打印机状态，报告存档的打印作业和使用情况。 
+
+注意：自 2020 年 3 月起，通用打印_服务_仅在个人预览版中提供。 参见[宣布推出通用打印：基于云的打印解决方案](https://aka.ms/announcinguniversalprint)，了解有关参与的详细信息。
 
 ## <a name="february-2020-new-and-generally-available"></a>2020 年 2 月：新版本和正式版
 

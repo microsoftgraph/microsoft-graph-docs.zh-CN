@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: def5f50f2e247ce8d66f798b8ba300a4732f51fc
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: c3bd3331a9dacf3d2b2959f961a2e7f744d78898
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986112"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061844"
 ---
 # <a name="create-group"></a>创建组
 
@@ -54,6 +54,7 @@ POST /groups
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
+| description | string | 组说明。 最大 长度：1024 个字符。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 必需。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Office 365 组），请设置为 **true**。 必需。 |
