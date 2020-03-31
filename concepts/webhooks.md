@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 099a5af3dafe3d1f7531f88583236cb1ab381ab7
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 4833bb30239e5ea30022617c2cf5adfa8b2d0544
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618775"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986155"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -153,6 +153,10 @@ Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属
     - 正文必须包括 Microsoft Graph 提供的验证令牌。
 
 在响应中提供验证令牌之后，客户端应放弃验证令牌。
+
+另外，可以使用 [Microsoft Graph Postman Collection](use-postman.md) 来确认终结点能否正确实现验证请求。 “杂项”**** 文件夹中的“订阅验证”**** 请求提供了单元测试，可验证终结点提供的响应。  
+
+![验证响应测试结果](images/change-notifications/validation-request-tests-results.png)
 
 ### <a name="renewing-a-subscription"></a>续订订阅
 

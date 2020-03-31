@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6b66d2b6028e0b625c47f301c7d7087e12dfd150
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: d1b72356e38404c300bd1380fb1047ae04ac37ca
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331204"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986011"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -115,6 +115,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                                                   |
 | 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数                                    |
 | 文件夹中的邮件                                           | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数                                             |
+| 组织联系人 | [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源的 [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) 函数 |
 | 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数                           |
 | 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数    
 | Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) 资源所有段的 [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) 函数（预览版）|                                         |
@@ -180,7 +181,7 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>令牌持续时间
 
-增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 对于标识对象（**directoryObject**、**directoryRole**、**group** 和 **user**），限制为 30 天。
+增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 对于标识对象（**directoryObject**、**directoryRole**、**group**、**orgContact** 和 **user**），限制为 30 天。
 
 ## <a name="prerequisites"></a>先决条件
 
