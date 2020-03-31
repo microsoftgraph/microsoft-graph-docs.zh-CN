@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e556f3691ca5cc152d58678a12827a053964dc90
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 36e3e84a0cb6d96545df9c97234c74305afbd6a1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815822"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061914"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1255,7 +1255,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.Read.All_读取你所在组织的信任框架策略 (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_读取你所在组织的功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration：读取和写入组织的应用程序配置策略 (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/conditionalAccess/policies`)
+* _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
 
