@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6b9fc09f21dca5b12c4e46101183eb28233d168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c79460c1098d6c4def65fcf53211e8583b868f6c
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517017"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082355"
 ---
 # <a name="list-groups"></a>列出组
 
-命名空间：microsoft.graph 列出组织中的所有组，包括但不限于 Office 365 组。 
+命名空间：microsoft.graph
+
+列出组织中的所有组，包括但不限于 Office 365 组。 
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 

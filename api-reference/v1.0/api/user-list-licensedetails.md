@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ff8d83748d8a285011b078abc028826d026125f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbcc01b729eed5127f963e7c79ae73004c5e7bd4
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509085"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082404"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
 命名空间：microsoft.graph
 
-检索 licenseDetails 对象的列表。
+为企业用户检索**licenseDetails**对象的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +36,7 @@ GET /users/{id}/licenseDetails
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法**不**支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | 持有&lt;者代码&gt;|
