@@ -4,12 +4,12 @@ description: 介绍了如何使用 Microsoft Graph 数据连接来选择用户�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0aab5ac3806eeda54364dff6ae0b6995098da953
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 0c5ec59fc42ed2e5a0b21631dd3c501ae9c4bfe1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969191"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062594"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持用户选择和筛选
 
@@ -24,7 +24,7 @@ ms.locfileid: "37969191"
 
 在 Azure 数据工厂复制活动的 SourceDataSet 中指定用户选择。 若要针对组列表运行，请在 **typeProperties** 下添加一个新字段 **allowedGroups**，并将此字段设置为最多 10 个组的列表，**对象 Id** 由逗号分隔。 如果默认情况下未指定组，则将为整个组织提取数据。 
 
-若要指定针对整个租户运行的谓词，请在 **typeProperties** 下添加一个新字段 **userScopeFilterUri**，并将此字段设置为该谓词。 谓词格式应与 Microsoft Graph API 的查询格式匹配。 例如，如果要仅选择在财务部门工作的用户，你可以使用 `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`。
+若要指定针对整个租户运行的谓词，请在 **typeProperties** 下添加一个新字段 **userScopeFilterUri**，并将此字段设置为该谓词。 谓词格式应与 Microsoft Graph API 的查询格式匹配。 例如，如果要仅选择在财务部门工作的用户，你可以使用 `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`。 如果要仅选择一个用户，可使用 `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`。
 
 查询将仅返回你所查询的 Office 365 组织内的用户。 将不会返回来宾用户和非用户邮箱。
 

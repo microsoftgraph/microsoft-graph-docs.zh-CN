@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e837ce40bf385232158564203dee050272f8c069
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: bdcd7f7b4b73b92eb41b44b08c301f401aaa814f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892805"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062628"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -84,6 +84,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 |设备和应用 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
+| 通用打印（预览版） | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [通用打印 API 概述](universal-print-concept-overview.md) |
 
 
 ## <a name="security"></a>安全性
@@ -127,12 +128,6 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 客户预订（预览） | Microsoft Bookings | 针对小型企业，使其客户可以直接在 Web 或 Facebook 上预定服务。 让业务运营商管理客户偏好、服务和定价、员工列表和日程安排，以及其他常见的业务信息。 | [Microsoft Bookings API 概述](booking-concept-overview.md) |
 | Financials（预览版） | Dynamics 365 Business Central | 利用一站式商业管理解决方案，实现财务数据管理、供应链自动化和保护、销售管理和改进客户服务、项目管理和运营优化。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
-
-## <a name="print-services"></a>打印服务
-
-|功能     |支持服务  |说明 |更多信息 |
-|:-----------|:--------------------|:-----------|:----------------|
-| 通用打印（预览版） | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员节省时间和精力。 | [通用打印 API 概述](universal-print-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>后续步骤
