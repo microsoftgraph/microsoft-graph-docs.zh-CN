@@ -1,16 +1,16 @@
 ---
 title: 调用： logTeleconferenceDeviceQuality
-description: 日志视频电话会议设备质量数据。
+description: 记录视频电话会议设备质量数据。
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 664c86f7aee5d5e720f428b0f5ca502b0445c605
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad5b5496d4d80428cace4617fd4295f48cb3932b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729982"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082320"
 ---
 # <a name="call-logteleconferencedevicequality"></a>调用： logTeleconferenceDeviceQuality
 
@@ -18,7 +18,7 @@ ms.locfileid: "42729982"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-日志视频电话会议设备质量数据。
+记录视频电话会议设备质量数据。
 
 云视频互操作（CVI） bot 代表视频电话会议（VTC）设备，可充当会议呼叫中的 VTC 设备的后端代理。 由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。 一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。 其他媒体腿位于 CVI bot 和 VTC 设备之间。 
 
@@ -74,7 +74,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/app/calls/logTeleconferenceDeviceQuality
+POST https://graph.microsoft.com/beta/communications/calls/logTeleconferenceDeviceQuality
 Content-type: application/json
 
 {
