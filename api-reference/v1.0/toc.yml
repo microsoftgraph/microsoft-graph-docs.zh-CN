@@ -42,7 +42,7 @@
               href: /graph/tutorials/change-notifications
             - name: 缺少 Outlook 通知（预览版）
               href: /graph/webhooks-outlook-authz?context=graph/api/1.0
-        - name: 修订
+        - name: 更改跟踪
           displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
           items:
             - name: 概述
@@ -803,6 +803,8 @@
                   href: api/call-mute.md
                 - name: 更新录制状态
                   href: api/call-updaterecordingstatus.md
+                - name: 记录电话会议设备质量数据
+                  href: api/call-logteleconferencedevicequality.md
             - name: 在线会议
               href: resources/onlinemeeting.md
               items:

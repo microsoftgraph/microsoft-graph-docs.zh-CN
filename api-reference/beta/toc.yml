@@ -44,7 +44,7 @@
               href: /graph/webhooks-outlook-authz?context=graph/api/beta
             - name: 与资源数据有关的通知（预览版）
               href: /graph/webhooks-with-resource-data?context=graph/api/beta
-        - name: 修订
+        - name: 更改跟踪
           displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
             - name: 概述
@@ -909,7 +909,7 @@
                       href: api/audioroutinggroup-update.md
                     - name: 删除
                       href: api/audioroutinggroup-delete.md
-                - name: 记录视频质量数据
+                - name: 记录电话会议设备质量数据
                   href: api/call-logteleconferencedevicequality.md
             - name: 在线会议
               href: resources/onlinemeeting.md
