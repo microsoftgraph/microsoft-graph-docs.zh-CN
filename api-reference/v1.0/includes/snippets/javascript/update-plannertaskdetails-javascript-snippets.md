@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 74611fc2379b6e3b68ba75a42381ef300feba56f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 5d5016539583083b7604ec143797592f2218a6c4
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636800"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43086040"
 ---
 ```javascript
 
@@ -34,7 +34,7 @@ const plannerTaskDetails = {
     95e27074-6c4a-447a-aa24-9d718a0b86fa:{
       @odata.type: "microsoft.graph.plannerChecklistItem",
       title: "Update task details",
-      ischecked: true
+      isChecked: true
     },
     d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff:{
       @odata.type: "microsoft.graph.plannerChecklistItem",
