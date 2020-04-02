@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0764a7a4e5ca7845033f5f31a440ec183528da4d
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 4f5878c85adc65b5ec2ff0b71d1ceda6e28fb7ca
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962315"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082110"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -57,12 +57,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | 无                                                        | 在呼叫中开始和停止共享屏幕。                                      |
 | **记录操作**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | 更新记录状态。                      |
+| **日志记录操作**                                           |                                                             |                                              |
+| [记录设备质量数据](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | 记录视频电话会议设备质量数据。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型                                                                                                   | 说明                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | 字符串                                                                                                 | 用于传递回调的回调 URL。 必须是 `https`。                                                                                                                               |
+| callChainId         | String                                                                                                 | 一个针对会议中所有参与者的通话的唯一标识符，或一个针对 P2P 通话中两位参与者的通话的唯一标识符。  需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
 | callRoutes         | [callRoute](callRoute.md) 集合                                                                                                 | 有关如何重定向呼叫的路由信息。 只读。                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 加入会议所需的信息。                                                                                                                              |
 | direction           | String                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
@@ -94,6 +97,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
@@ -115,6 +119,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
 ```json
 {
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
