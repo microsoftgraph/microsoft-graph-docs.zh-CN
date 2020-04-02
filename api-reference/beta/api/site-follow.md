@@ -5,30 +5,30 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5eaec23451dd7e2d47264b1214464c37dc10ff09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daa8d114459b4b76c35e1c384d42bcf696433a6
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453252"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108212"
 ---
-# <a name="follow-site"></a><span data-ttu-id="f5715-103">关注网站</span><span class="sxs-lookup"><span data-stu-id="f5715-103">Follow site</span></span> 
+# <a name="follow-site"></a><span data-ttu-id="622d7-103">关注网站</span><span class="sxs-lookup"><span data-stu-id="622d7-103">Follow site</span></span> 
 
-<span data-ttu-id="f5715-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f5715-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="622d7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="622d7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f5715-105">关注用户的[网站](../resources/site.md)或多个网站。</span><span class="sxs-lookup"><span data-stu-id="f5715-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="622d7-105">关注用户的[网站](../resources/site.md)或多个网站。</span><span class="sxs-lookup"><span data-stu-id="622d7-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f5715-106">权限</span><span class="sxs-lookup"><span data-stu-id="f5715-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="622d7-106">权限</span><span class="sxs-lookup"><span data-stu-id="622d7-106">Permissions</span></span>
 
-<span data-ttu-id="f5715-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f5715-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="622d7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="622d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="f5715-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f5715-109">Permission type</span></span>             | <span data-ttu-id="f5715-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f5715-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="622d7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="622d7-109">Permission type</span></span>             | <span data-ttu-id="622d7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="622d7-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="f5715-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f5715-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f5715-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5715-112">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="f5715-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f5715-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5715-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f5715-114">Not supported.</span></span>                              |
-| <span data-ttu-id="f5715-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f5715-115">Application</span></span>                            | <span data-ttu-id="f5715-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5715-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="622d7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="622d7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="622d7-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="622d7-112">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="622d7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="622d7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="622d7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="622d7-114">Not supported.</span></span>                              |
+| <span data-ttu-id="622d7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="622d7-115">Application</span></span>                            | <span data-ttu-id="622d7-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="622d7-116">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="f5715-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f5715-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="622d7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="622d7-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +36,29 @@ ms.locfileid: "42453252"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a><span data-ttu-id="f5715-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="f5715-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="622d7-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="622d7-118">Request body</span></span>
 
-<span data-ttu-id="f5715-119">在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。</span><span class="sxs-lookup"><span data-stu-id="f5715-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="622d7-119">在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。</span><span class="sxs-lookup"><span data-stu-id="622d7-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="f5715-120">Name</span><span class="sxs-lookup"><span data-stu-id="f5715-120">Name</span></span>                 | <span data-ttu-id="f5715-121">值</span><span class="sxs-lookup"><span data-stu-id="f5715-121">Value</span></span>  | <span data-ttu-id="f5715-122">说明</span><span class="sxs-lookup"><span data-stu-id="f5715-122">Description</span></span>                                                            |
+| <span data-ttu-id="622d7-120">名称</span><span class="sxs-lookup"><span data-stu-id="622d7-120">Name</span></span>                 | <span data-ttu-id="622d7-121">值</span><span class="sxs-lookup"><span data-stu-id="622d7-121">Value</span></span>  | <span data-ttu-id="622d7-122">说明</span><span class="sxs-lookup"><span data-stu-id="622d7-122">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="f5715-123">id</span><span class="sxs-lookup"><span data-stu-id="f5715-123">id</span></span>                 | <span data-ttu-id="f5715-124">string</span><span class="sxs-lookup"><span data-stu-id="f5715-124">string</span></span> | <span data-ttu-id="f5715-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="f5715-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="622d7-123">id</span><span class="sxs-lookup"><span data-stu-id="622d7-123">id</span></span>                 | <span data-ttu-id="622d7-124">string</span><span class="sxs-lookup"><span data-stu-id="622d7-124">string</span></span> | <span data-ttu-id="622d7-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="622d7-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="f5715-126">响应</span><span class="sxs-lookup"><span data-stu-id="f5715-126">Response</span></span> 
+## <a name="response"></a><span data-ttu-id="622d7-126">响应</span><span class="sxs-lookup"><span data-stu-id="622d7-126">Response</span></span> 
 
-* <span data-ttu-id="f5715-127">如果请求成功，此方法将返回已遵循的网站数组。</span><span class="sxs-lookup"><span data-stu-id="f5715-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
-* <span data-ttu-id="f5715-128">如果在执行任何指定的网站时出现错误，则此方法将返回`207`状态代码，并且响应正文将包含包含[Error](/graph/errors)对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。</span><span class="sxs-lookup"><span data-stu-id="f5715-128">If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
+* <span data-ttu-id="622d7-127">如果请求成功，此方法将返回已遵循的网站数组。</span><span class="sxs-lookup"><span data-stu-id="622d7-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
+* <span data-ttu-id="622d7-128">如果在执行任何指定的网站时出现错误，则此方法将返回`207`状态代码，并且响应正文将包含包含[Error](/graph/errors)对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。</span><span class="sxs-lookup"><span data-stu-id="622d7-128">If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5715-129">示例</span><span class="sxs-lookup"><span data-stu-id="f5715-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="622d7-129">示例</span><span class="sxs-lookup"><span data-stu-id="622d7-129">Example</span></span>
 
-<span data-ttu-id="f5715-130">下面的示例展示了如何跟踪多个网站。</span><span class="sxs-lookup"><span data-stu-id="f5715-130">The following example shows how to follow multiple sites.</span></span> 
+<span data-ttu-id="622d7-130">下面的示例展示了如何跟踪多个网站。</span><span class="sxs-lookup"><span data-stu-id="622d7-130">The following example shows how to follow multiple sites.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="f5715-131">请求</span><span class="sxs-lookup"><span data-stu-id="f5715-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="622d7-131">请求</span><span class="sxs-lookup"><span data-stu-id="622d7-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f5715-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5715-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="622d7-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="622d7-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -77,23 +77,23 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f5715-133">C#</span><span class="sxs-lookup"><span data-stu-id="f5715-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="622d7-133">C#</span><span class="sxs-lookup"><span data-stu-id="622d7-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f5715-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5715-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="622d7-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="622d7-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f5715-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5715-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="622d7-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="622d7-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="f5715-136">响应</span><span class="sxs-lookup"><span data-stu-id="f5715-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="622d7-136">响应</span><span class="sxs-lookup"><span data-stu-id="622d7-136">Response</span></span>
 
-<span data-ttu-id="f5715-137">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="f5715-137">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="622d7-137">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="622d7-137">If successful, it returns the following JSON response.</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -133,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="f5715-138">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="f5715-138">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="622d7-138">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="622d7-138">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

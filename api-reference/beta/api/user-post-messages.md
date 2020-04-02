@@ -2,39 +2,39 @@
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af201dadb3e00d04cfef18381c4ceca5defa0ad7
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3b11bf2dd17efa227f8c73bcd54de8ea99fa2c42
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107442"
 ---
-# <a name="create-message"></a><span data-ttu-id="bcada-105">创建邮件</span><span class="sxs-lookup"><span data-stu-id="bcada-105">Create Message</span></span>
+# <a name="create-message"></a><span data-ttu-id="b8a44-105">创建邮件</span><span class="sxs-lookup"><span data-stu-id="b8a44-105">Create Message</span></span>
 
-<span data-ttu-id="bcada-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bcada-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b8a44-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b8a44-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bcada-p102">使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。</span><span class="sxs-lookup"><span data-stu-id="bcada-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
+<span data-ttu-id="b8a44-p102">使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。</span><span class="sxs-lookup"><span data-stu-id="b8a44-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
 
-<span data-ttu-id="bcada-110">在同一个**POST**调用中创建草稿时，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="bcada-110">While creating the draft in the same **POST** call, you can:</span></span>
+<span data-ttu-id="b8a44-110">在同一个**POST**调用中创建草稿时，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b8a44-110">While creating the draft in the same **POST** call, you can:</span></span>
 
-- <span data-ttu-id="bcada-111">包含[附件](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="bcada-111">Include an [attachment](../resources/attachment.md)</span></span> 
-- <span data-ttu-id="bcada-112">在新邮件中使用[提及](../resources/mention.md)调用其他用户</span><span class="sxs-lookup"><span data-stu-id="bcada-112">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
+- <span data-ttu-id="b8a44-111">包含[附件](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="b8a44-111">Include an [attachment](../resources/attachment.md)</span></span> 
+- <span data-ttu-id="b8a44-112">在新邮件中使用[提及](../resources/mention.md)调用其他用户</span><span class="sxs-lookup"><span data-stu-id="b8a44-112">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bcada-113">Permissions</span><span class="sxs-lookup"><span data-stu-id="bcada-113">Permissions</span></span>
-<span data-ttu-id="bcada-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bcada-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b8a44-113">权限</span><span class="sxs-lookup"><span data-stu-id="b8a44-113">Permissions</span></span>
+<span data-ttu-id="b8a44-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b8a44-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bcada-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="bcada-116">Permission type</span></span>      | <span data-ttu-id="bcada-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bcada-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b8a44-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="b8a44-116">Permission type</span></span>      | <span data-ttu-id="b8a44-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b8a44-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bcada-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bcada-118">Delegated (work or school account)</span></span> | <span data-ttu-id="bcada-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcada-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="bcada-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bcada-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcada-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcada-121">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="bcada-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="bcada-122">Application</span></span> | <span data-ttu-id="bcada-123">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcada-123">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b8a44-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b8a44-118">Delegated (work or school account)</span></span> | <span data-ttu-id="b8a44-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8a44-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b8a44-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b8a44-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b8a44-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8a44-121">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b8a44-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="b8a44-122">Application</span></span> | <span data-ttu-id="b8a44-123">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8a44-123">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bcada-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bcada-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b8a44-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b8a44-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
@@ -42,31 +42,31 @@ POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
-## <a name="request-headers"></a><span data-ttu-id="bcada-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="bcada-125">Request headers</span></span>
-| <span data-ttu-id="bcada-126">标头</span><span class="sxs-lookup"><span data-stu-id="bcada-126">Header</span></span>       | <span data-ttu-id="bcada-127">值</span><span class="sxs-lookup"><span data-stu-id="bcada-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b8a44-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="b8a44-125">Request headers</span></span>
+| <span data-ttu-id="b8a44-126">标头</span><span class="sxs-lookup"><span data-stu-id="b8a44-126">Header</span></span>       | <span data-ttu-id="b8a44-127">值</span><span class="sxs-lookup"><span data-stu-id="b8a44-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="bcada-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="bcada-128">Authorization</span></span>  | <span data-ttu-id="bcada-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bcada-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="bcada-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bcada-131">Content-Type</span></span>  | <span data-ttu-id="bcada-132">application/json</span><span class="sxs-lookup"><span data-stu-id="bcada-132">application/json</span></span>  |
+| <span data-ttu-id="b8a44-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8a44-128">Authorization</span></span>  | <span data-ttu-id="b8a44-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b8a44-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b8a44-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b8a44-131">Content-Type</span></span>  | <span data-ttu-id="b8a44-132">application/json</span><span class="sxs-lookup"><span data-stu-id="b8a44-132">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="bcada-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="bcada-133">Request body</span></span>
-<span data-ttu-id="bcada-134">在请求正文中，提供[message](../resources/message.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcada-134">In the request body, supply a JSON representation of the [message](../resources/message.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b8a44-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="b8a44-133">Request body</span></span>
+<span data-ttu-id="b8a44-134">在请求正文中，提供[message](../resources/message.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b8a44-134">In the request body, supply a JSON representation of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="bcada-135">如果要使用**提及**在新邮件中呼叫其他用户，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="bcada-135">If you want to use **mention** to call out another user in the new message:</span></span>
+<span data-ttu-id="b8a44-135">如果要使用**提及**在新邮件中呼叫其他用户，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b8a44-135">If you want to use **mention** to call out another user in the new message:</span></span>
 
-- <span data-ttu-id="bcada-136">在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="bcada-136">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
-- <span data-ttu-id="bcada-137">对于**提及**属性中的每个提及，您必须指定**提到**的属性。</span><span class="sxs-lookup"><span data-stu-id="bcada-137">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
+- <span data-ttu-id="b8a44-136">在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="b8a44-136">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
+- <span data-ttu-id="b8a44-137">对于**提及**属性中的每个提及，您必须指定**提到**的属性。</span><span class="sxs-lookup"><span data-stu-id="b8a44-137">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
 
-<span data-ttu-id="bcada-138">由于**邮件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="bcada-138">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+<span data-ttu-id="b8a44-138">由于**邮件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="b8a44-138">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bcada-139">响应</span><span class="sxs-lookup"><span data-stu-id="bcada-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b8a44-139">响应</span><span class="sxs-lookup"><span data-stu-id="b8a44-139">Response</span></span>
 
-<span data-ttu-id="bcada-140">如果成功，此方法在响应`201 Created`正文中返回响应代码和[message](../resources/message.md)对象。</span><span class="sxs-lookup"><span data-stu-id="bcada-140">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="b8a44-140">如果成功，此方法在响应`201 Created`正文中返回响应代码和[message](../resources/message.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b8a44-140">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bcada-141">示例</span><span class="sxs-lookup"><span data-stu-id="bcada-141">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="bcada-142">请求 1</span><span class="sxs-lookup"><span data-stu-id="bcada-142">Request 1</span></span>
-<span data-ttu-id="bcada-143">下面的示例展示了创建新邮件草稿的请求。</span><span class="sxs-lookup"><span data-stu-id="bcada-143">Here is an example of the request to create a draft of a new message.</span></span>
+## <a name="example"></a><span data-ttu-id="b8a44-141">示例</span><span class="sxs-lookup"><span data-stu-id="b8a44-141">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="b8a44-142">请求 1</span><span class="sxs-lookup"><span data-stu-id="b8a44-142">Request 1</span></span>
+<span data-ttu-id="b8a44-143">下面的示例展示了创建新邮件草稿的请求。</span><span class="sxs-lookup"><span data-stu-id="b8a44-143">Here is an example of the request to create a draft of a new message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bcada-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="bcada-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b8a44-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="b8a44-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -91,23 +91,23 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bcada-145">C#</span><span class="sxs-lookup"><span data-stu-id="bcada-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b8a44-145">C#</span><span class="sxs-lookup"><span data-stu-id="b8a44-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bcada-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bcada-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b8a44-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8a44-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bcada-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bcada-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b8a44-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b8a44-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="bcada-148">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcada-148">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="bcada-149">响应 1</span><span class="sxs-lookup"><span data-stu-id="bcada-149">Response 1</span></span>
-<span data-ttu-id="bcada-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bcada-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b8a44-148">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b8a44-148">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="b8a44-149">响应 1</span><span class="sxs-lookup"><span data-stu-id="b8a44-149">Response 1</span></span>
+<span data-ttu-id="b8a44-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b8a44-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -176,12 +176,12 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="bcada-153">请求 2</span><span class="sxs-lookup"><span data-stu-id="bcada-153">Request 2</span></span>
-<span data-ttu-id="bcada-154">下一个示例显示了通过 Randi Welch 到 Samantha 展台的草稿电子邮件。</span><span class="sxs-lookup"><span data-stu-id="bcada-154">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="bcada-155">此外，该消息还包括其他用户 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="bcada-155">The message also includes a mention of another user, Dana Swope.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="b8a44-153">请求 2</span><span class="sxs-lookup"><span data-stu-id="b8a44-153">Request 2</span></span>
+<span data-ttu-id="b8a44-154">下一个示例显示了通过 Randi Welch 到 Samantha 展台的草稿电子邮件。</span><span class="sxs-lookup"><span data-stu-id="b8a44-154">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="b8a44-155">此外，该消息还包括其他用户 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="b8a44-155">The message also includes a mention of another user, Dana Swope.</span></span>
 
-<span data-ttu-id="bcada-156">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcada-156">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="b8a44-156">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b8a44-156">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bcada-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="bcada-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b8a44-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="b8a44-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_mentions_from_user"
@@ -210,15 +210,15 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bcada-158">C#</span><span class="sxs-lookup"><span data-stu-id="bcada-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b8a44-158">C#</span><span class="sxs-lookup"><span data-stu-id="b8a44-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-mentions-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bcada-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bcada-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b8a44-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8a44-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-mentions-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bcada-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bcada-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b8a44-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b8a44-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-mentions-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -226,8 +226,8 @@ Content-type: application/json
 
 
 
-##### <a name="response-2"></a><span data-ttu-id="bcada-161">响应 2</span><span class="sxs-lookup"><span data-stu-id="bcada-161">Response 2</span></span>
-<span data-ttu-id="bcada-p107">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bcada-p107">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="b8a44-161">响应 2</span><span class="sxs-lookup"><span data-stu-id="b8a44-161">Response 2</span></span>
+<span data-ttu-id="b8a44-p107">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b8a44-p107">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -286,10 +286,10 @@ Content-type: application/json
 
 ```
 
-##### <a name="request-3"></a><span data-ttu-id="bcada-165">请求 3</span><span class="sxs-lookup"><span data-stu-id="bcada-165">Request 3</span></span>
-<span data-ttu-id="bcada-166">下一个示例在创建邮件草稿时添加了几个客户 Internet 邮件头。</span><span class="sxs-lookup"><span data-stu-id="bcada-166">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="b8a44-165">请求 3</span><span class="sxs-lookup"><span data-stu-id="b8a44-165">Request 3</span></span>
+<span data-ttu-id="b8a44-166">下一个示例在创建邮件草稿时添加了几个客户 Internet 邮件头。</span><span class="sxs-lookup"><span data-stu-id="b8a44-166">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bcada-167">HTTP</span><span class="sxs-lookup"><span data-stu-id="bcada-167">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b8a44-167">HTTP</span><span class="sxs-lookup"><span data-stu-id="b8a44-167">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -323,23 +323,23 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bcada-168">C#</span><span class="sxs-lookup"><span data-stu-id="bcada-168">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b8a44-168">C#</span><span class="sxs-lookup"><span data-stu-id="b8a44-168">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bcada-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bcada-169">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b8a44-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8a44-169">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bcada-170">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bcada-170">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b8a44-170">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b8a44-170">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="bcada-171">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcada-171">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-3"></a><span data-ttu-id="bcada-172">响应 3</span><span class="sxs-lookup"><span data-stu-id="bcada-172">Response 3</span></span>
-<span data-ttu-id="bcada-173">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bcada-173">Here is an example of the response.</span></span> <span data-ttu-id="bcada-174">注意：默认情况下，POST 响应中不会返回 Internet 邮件标头。</span><span class="sxs-lookup"><span data-stu-id="bcada-174">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="bcada-175">为简洁起见，也可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bcada-175">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="bcada-176">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bcada-176">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b8a44-171">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b8a44-171">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="b8a44-172">响应 3</span><span class="sxs-lookup"><span data-stu-id="b8a44-172">Response 3</span></span>
+<span data-ttu-id="b8a44-173">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b8a44-173">Here is an example of the response.</span></span> <span data-ttu-id="b8a44-174">注意：默认情况下，POST 响应中不会返回 Internet 邮件标头。</span><span class="sxs-lookup"><span data-stu-id="b8a44-174">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="b8a44-175">为简洁起见，也可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b8a44-175">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="b8a44-176">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b8a44-176">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -407,11 +407,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bcada-177">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bcada-177">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8a44-177">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b8a44-177">See also</span></span>
 
-- [<span data-ttu-id="bcada-178">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="bcada-178">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="bcada-179">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="bcada-179">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="bcada-180">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="bcada-180">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="b8a44-178">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="b8a44-178">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="b8a44-179">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="b8a44-179">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="b8a44-180">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="b8a44-180">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
