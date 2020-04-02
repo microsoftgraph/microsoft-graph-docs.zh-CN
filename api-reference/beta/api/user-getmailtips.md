@@ -1,20 +1,20 @@
 ---
 title: 用户： getMailTips
 description: 获取一个或多个收件人对登录用户可用的邮件提示。
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f22dd0cca9a76c864e77b0643bfd9aade3b04578
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71d40cb33f960bf5f3cbcd2b1a35fc048924b72d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451937"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107841"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

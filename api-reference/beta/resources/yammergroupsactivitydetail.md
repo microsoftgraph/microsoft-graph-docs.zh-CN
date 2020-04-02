@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 9363bd711900cc6211e995c112581d3a91e08a04
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66e1817fa327444b51028292bcda59c8663bd683
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518985"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108415"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -22,15 +22,16 @@ ms.locfileid: "42518985"
 | :----------------- | :------ |
 | reportRefreshDate  | 日期    |
 | groupDisplayName   | String  |
-| isDeleted          | 布尔 |
+| isDeleted          | Boolean |
 | ownerPrincipalName | String  |
 | lastActivityDate   | 日期    |
 | groupType          | String  |
-| office365Connected | 布尔 |
+| office365Connected | Boolean |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
+| networkDisplayName | String  |
 | reportPeriod       | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,7 +55,8 @@ ms.locfileid: "42518985"
   "memberCount": 1024, 
   "postedCount": 1024, 
   "readCount": 1024, 
-  "likedCount": 1024, 
+  "likedCount": 1024,
+  "networkDisplayName": "String",
   "reportPeriod": "String"
 }
 ```

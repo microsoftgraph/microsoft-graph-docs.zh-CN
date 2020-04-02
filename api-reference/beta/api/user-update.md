@@ -1,16 +1,16 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 56276f47c3dc227cac0a53f82cb54e198d4d0c1e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 549758909c1a1dd6bce58fa964a17f1941dcdcb8
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799509"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107330"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -27,14 +27,14 @@ ms.locfileid: "42799509"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "ManageIdentities"、"全部"、"全部"、"全部"、"全部"、"全部"    |
 |委派（个人 Microsoft 帐户） | User.ReadWrite    |
-|应用程序 | ManageIdentities，all，all，All，All |
+|应用程序 | User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All |
 
 >[!NOTE]
 > - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
 > - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 
 >[!NOTE]
->更新**标识**属性需要用户 ManageIdentities 权限。 此外，不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有**user**对象，除非该**用户**对象已包含本地帐户标识。
+>更新 **identities** 属性需要 User.ManageIdentities.All 权限。 此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **user** 对象，除非 **user** 对象已包含本地帐户标识。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,19 +54,19 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones| 字符串集合 | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |城市|String|用户所在的城市。|
-|country|字符串|用户所在的国家/地区；例如，“美国”或“英国”。|
+|country|String|用户所在的国家/地区；例如，“美国”或“英国”。|
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对**标识**的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType**标识。|
-|interests|String collection|用户介绍自身兴趣的列表。|
+|interests|String 集合|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
@@ -79,7 +79,7 @@ PATCH /users/{id | userPrincipalName}
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
-|responsibilities|String collection|供用户枚举其职责的列表。|
+|responsibilities|String 集合|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |skills|String collection|供用户枚举其技能的列表。|
 |state|String|用户地址中的省/市/自治区或省。|

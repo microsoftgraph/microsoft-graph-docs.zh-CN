@@ -5,16 +5,16 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5eaec23451dd7e2d47264b1214464c37dc10ff09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daa8d114459b4b76c35e1c384d42bcf696433a6
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453252"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108212"
 ---
 # <a name="follow-site"></a>关注网站 
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 关注用户的[网站](../resources/site.md)或多个网站。
 
@@ -41,7 +41,7 @@ POST /users/{user-id}/followedSites/add
 在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。 
 
 
-| Name                 | 值  | 说明                                                            |
+| 名称                 | 值  | 说明                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | 项的[唯一标识符](../resources/site.md#id-property)。 |
 

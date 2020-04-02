@@ -1,16 +1,16 @@
 ---
 title: 发送邮件
 description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ac87c9e2ea9bd0778db7d96dfa79a0280c42ce3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3e722ea2ee069f5ea18f27c26e658847dfdfabdd
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618931"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107351"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -25,7 +25,7 @@ ms.locfileid: "42618931"
 - 包含[附件](../resources/attachment.md)
 - 在新邮件中使用[提及](../resources/mention.md)调用其他用户
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

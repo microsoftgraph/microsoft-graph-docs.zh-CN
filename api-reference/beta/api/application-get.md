@@ -1,16 +1,16 @@
 ---
 title: 获取应用程序
 description: 获取 application 对象的属性和关系。
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 90d75af59e9a7bdb37926befb83eb20a78031328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 682c2a29f410ddb68649f590b7a732035ca65a54
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441520"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107386"
 ---
 # <a name="get-application"></a>获取应用程序
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d1f8700c2ba2a25d336f89a2270e727751e9d853
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5e8ee19488f4c81ffff4b2c1495863f989c5458
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456802"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108240"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 
@@ -29,7 +29,7 @@ ms.locfileid: "42456802"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>请求标头

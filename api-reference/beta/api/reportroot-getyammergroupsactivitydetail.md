@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: af2af01363a18ef5158a3c178ee2a1c1a2f7f333
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 19d62a35688d25ed265cb3cb5c3284be2e5b9f2e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590317"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108205"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -22,7 +22,7 @@ ms.locfileid: "42590317"
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 在请求 URL 中，提供以下任一参数的有效值。
 
-| 参数 | 类型   | Description                              |
+| 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
 | date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
@@ -56,7 +56,7 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -83,6 +83,7 @@ CSV 文件包含下面的列标题。
 - 已发布数
 - 已阅读数
 - 已赞数
+- 网络显示名称
 - 报表周期
 
 ### <a name="json"></a>JSON
@@ -136,7 +137,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Network Display Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -189,7 +190,8 @@ Content-Length: 441
       "memberCount": 176, 
       "postedCount": 15, 
       "readCount": 24, 
-      "likedCount": 3, 
+      "likedCount": 3,
+      "networkDisplayName": "networkDisplayName-value",
       "reportPeriod": "7"
     }
   ]

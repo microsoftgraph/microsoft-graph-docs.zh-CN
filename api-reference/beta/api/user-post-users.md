@@ -1,20 +1,20 @@
 ---
 title: 创建用户
 description: 新建用户。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9f95d1b2264e6a09b8ab2a33345d09ba00e62604
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4329429d0927b2d97fb606891870d850b4807b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451670"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107407"
 ---
 # <a name="create-user"></a>创建用户
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |布尔 |如果帐户已启用，则为 True;否则为 false。|
+|accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|

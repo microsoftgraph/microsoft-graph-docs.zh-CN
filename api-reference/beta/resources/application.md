@@ -2,15 +2,15 @@
 title: 应用程序资源类型
 description: 表示应用程序。
 localization_priority: Priority
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 71be1098f562c68687c6480273a774c30e2bbd36
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65bcbc4fa74dc452efa34f90827dffd4a779af63
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508294"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108422"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 

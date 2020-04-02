@@ -1,16 +1,16 @@
 ---
 title: 列出 joinedTeams
 description: 获取用户不是其直接成员的 Microsoft Teams 团队。
-author: dkershaw10
+author: nkramer
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fda61440ce48beca62e47f4d0055fe8120fd066
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c5777de9f5d4218b6270ebe81a43504dce99574
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451838"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107673"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 

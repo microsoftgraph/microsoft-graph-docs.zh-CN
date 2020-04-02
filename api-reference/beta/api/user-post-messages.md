@@ -2,15 +2,15 @@
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af201dadb3e00d04cfef18381c4ceca5defa0ad7
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3b11bf2dd17efa227f8c73bcd54de8ea99fa2c42
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107442"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -25,7 +25,7 @@ ms.locfileid: "42618895"
 - 包含[附件](../resources/attachment.md) 
 - 在新邮件中使用[提及](../resources/mention.md)调用其他用户
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

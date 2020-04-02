@@ -2,15 +2,15 @@
 title: 分配 tokenLifetimePolicy
 description: 将 tokenLifetimePolicy 分配给应用程序或服务主体。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60fbcf43890ee8dd4b87bc9a19b2eaa842250421
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 93cef7b8bf48fc1a2c1b54a11745a3393cb365aa
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589889"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107057"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>分配 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "42589889"
 
 将[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)分配给[应用程序](../resources/application.md)或[servicePrincipal](../resources/servicePrincipal.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42589889"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby 和 ApplicationConfiguration 和 Application.readwrite.ownedby、、ApplicationConfiguration 和中的所有应用程序的、、、、和中的应用程序的读写。 |
+| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给应用[](../resources/tokenlifetimepolicy.md)程序或服务主体的`@odata.id` tokenLifetimePolicy 对象的标识符（使用属性）。
+在请求正文中，提供应分配给应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)程序或服务主体的`@odata.id` tokenLifetimePolicy 对象的标识符（使用属性）。
 
 ## <a name="response"></a>响应
 

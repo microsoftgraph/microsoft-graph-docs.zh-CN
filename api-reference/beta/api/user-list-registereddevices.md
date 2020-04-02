@@ -2,19 +2,19 @@
 title: List registeredDevices
 description: 获取用户的注册设备列表。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: db2bde09e221274ba38200496aa34264d1d45a33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78a91f804b2153ff142a5b75f6b8508c60734459
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451775"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107589"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

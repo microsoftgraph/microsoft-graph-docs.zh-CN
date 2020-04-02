@@ -2,19 +2,19 @@
 title: 列出联系人
 description: 获取用户邮箱中的联系人。
 localization_priority: Normal
-author: angelgolfer-ms
-ms.prod: microsoft-identity-platform
+author: kevinbellinger
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f613aa23b9344e7383c15b7543a789d796be1d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7329fb4e2005b339f3a7baa0f87ce8cc4318f714
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451868"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107729"
 ---
 # <a name="list-contacts"></a>列出联系人
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

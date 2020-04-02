@@ -2,19 +2,19 @@
 title: 列出用户可传递的 memberOf
 description: 获取用户所属的组、目录角色和管理单元。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c33210e42d3334feec8c1c06be162e673e3c3b94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd5e9fccf59a2e041dca9056ab7456b88a046d82
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451754"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107561"
 ---
 # <a name="list-user-transitive-memberof"></a>列出用户可传递的 memberOf
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

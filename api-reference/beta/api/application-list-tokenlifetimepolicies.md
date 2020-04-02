@@ -2,15 +2,15 @@
 title: 列表已分配 tokenLifetimePolicies
 description: 列出分配给应用程序或 servicePrincipal 的 tokenLifetimePolicies。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: af0140523462dbb74dc71425457f5a172c920f3a
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 7c0523d501dd6b77bc5808b0f936f6692b12951b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562638"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107232"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列表已分配 tokenLifetimePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "42562638"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby 和 ApplicationConfiguration 和 Application.readwrite.ownedby、、ApplicationConfiguration 和中的所有应用程序的、、、、和中的应用程序的读写。 |
+| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
 
 ## <a name="http-request"></a>HTTP 请求
 

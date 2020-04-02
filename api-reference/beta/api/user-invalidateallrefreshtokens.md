@@ -1,20 +1,20 @@
 ---
 title: 用户： invalidateAllRefreshTokens
-description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效（以及用户浏览器中的会话 cookie）。 通常，如果用户有丢失或被盗的设备，则执行此操作（由用户或管理员执行）。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据，而用户首次无需再次登录。 实际上，此操作会强制用户再次登录到他们之前同意的所有应用程序，而不依赖于设备。
+description: 使用户的浏览器中颁发给应用程序和会话 cookie 的用户的所有刷新令牌失效。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6f6eae0438acecf204b2b3076522548cf4035a43
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37b6ecb26a6141ff3ac9d49c67f2911e6c84c749
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451922"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107785"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>用户： invalidateAllRefreshTokens
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

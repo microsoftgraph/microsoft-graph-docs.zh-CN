@@ -1,20 +1,20 @@
 ---
 title: 更新设置
 description: '更新 settings 对象的属性。 '
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 504854d0b934fe1d102ca675f426c6f50759b743
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 893f5451c4da034e2ec46ea2b800fe4f99b238b9
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451544"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107288"
 ---
 # <a name="update-settings"></a>更新设置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -6,16 +6,16 @@ description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4f7e931ebec462de50f3ae5c61f033d2c10f92f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c35134e39618121f9aa7b29c490a6d8427b4a373
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521960"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108198"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,7 +75,7 @@ ms.locfileid: "42521960"
 | 角色               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId             | String                      | 可用于通过 **[shares API][]** 访问此共享项的唯一令牌。 只读。
 | expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh： MM： ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
-| hasPassword         | 布尔                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
+| hasPassword         | Boolean                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
 
 ### <a name="roles-enumeration-values"></a>角色枚举值
 
@@ -249,7 +249,7 @@ ms.locfileid: "42521960"
 | [邀请人员][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [更新](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-
+| [将用户添加到共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md

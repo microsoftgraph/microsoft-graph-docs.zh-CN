@@ -2,19 +2,19 @@
 title: 列出用户设备
 description: 获取支持 Project 罗马功能的用户设备列表。 这包括启动应用程序的功能，或向应用程序发送数据或向其发送数据的功能。 在对我/设备执行 GET 呼叫后，传入设备的 ID 以将命令发送到设备。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f98c50cd82bb3c79eca9d6172a0e5d3fc4074a0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: acd31b5d5b115646716199842d862bf6637ea504
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451845"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107701"
 ---
 # <a name="list-user-devices"></a>列出用户设备
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

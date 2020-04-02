@@ -2,19 +2,19 @@
 title: 'user: getMemberGroups'
 description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7f4acb6dddfc28778534d0aecffd6f06090fd77d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c205f5e3bc0b1252bb5d836e93d1e0cc9ef0785
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451938"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107827"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42451938"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.readbasic.all、GroupMember 和 GroupMember，all，user. all 和 group。 read. all、user. read 和 Group。 read. all、user. read. all 和 group。 Read. all、read. all 和 group。 Read. all、read. all 和 group。 Read. all，Directory. all，Directory.accessasuser.all 的所有子目录。 |
+| 委派（工作或学校帐户）     | User.readbasic.all 和 GroupMember。 Read. All、GroupMember、User.readbasic.all 和 GroupMember，all，user. all 和 group。 read. all、user. all 和 group。 Read. all、、all 和 group. all、all、all、all 和 Group. all，all， |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
 | 应用程序                            | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All            |
 

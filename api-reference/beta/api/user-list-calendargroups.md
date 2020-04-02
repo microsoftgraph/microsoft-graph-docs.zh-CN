@@ -2,19 +2,19 @@
 title: List calendarGroups
 description: 获取用户的日历组。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: harini84
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd26e79c3d4f0be65acd55e1e00f061a7182f252
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f53b92b5ee2c771910a6098374896b3b0808a3b9
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451906"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107772"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

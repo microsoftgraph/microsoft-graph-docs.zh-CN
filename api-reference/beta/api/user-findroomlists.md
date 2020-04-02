@@ -1,16 +1,16 @@
 ---
 title: 用户：findRoomLists
 description: 获取租户中定义的会议室列表。
-author: angelgolfer-ms
+author: vrod9429
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb30a259bb83470c087cf6492f57b149c118790b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b7fa355c1edf3c08557556e5d338823fd9b1fa4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451965"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107883"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 

@@ -1,20 +1,20 @@
 ---
 title: 更新应用程序
 description: 更新 application 对象的属性。
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4229d563e562cd5d8d33086f2fef04d1607ffea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3095cd731824d7a388ad2520291453b3fd91e845
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441429"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107001"
 ---
 # <a name="update-application"></a>更新应用程序
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

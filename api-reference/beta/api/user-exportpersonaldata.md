@@ -2,19 +2,19 @@
 title: 用户： exportPersonalData
 description: 提交数据策略操作请求，由公司管理员进行导出以导出组织用户的数据。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b453899973f9a296d333abb62e48093412f0b93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afd5ba023d78fa969936915bb28187bb5fd17f1f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451985"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107876"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
 

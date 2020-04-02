@@ -1,16 +1,16 @@
 ---
 title: 创建日历
 description: 此 API 可用于新建用户日历。
-author: dkershaw10
+author: harini84
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bed498d5e9c8db96f5fcf5fc053cb3589b9b0fbc
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 5352c6fdbe468a75c2db7f3831ef9349224c682b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639897"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107491"
 ---
 # <a name="create-calendar"></a>创建日历
 

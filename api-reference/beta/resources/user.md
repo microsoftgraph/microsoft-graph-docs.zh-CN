@@ -1,16 +1,16 @@
 ---
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 38c82eff5d079651f0fbdaebfa3cf0bd1fbc2328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd430b633629726ebb46e43aa0c0048a5f107b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519559"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108436"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42519559"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 用户帐户。 继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
 出于性能原因，默认情况下 [create](../api/user-post-users.md)、[get](../api/user-get.md) 和 [list](../api/user-list.md) 操作仅返回更常用属性的子集。 这些默认属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 

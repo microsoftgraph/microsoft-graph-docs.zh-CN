@@ -1,16 +1,16 @@
 ---
 title: List licenseDetails
 description: 检索 licenseDetails 对象的列表。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48c2a6ce218b5e71fc58d5529f9301ba18265797
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 967aff8006b5c40db059d8531cc943fd0458b7d2
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082411"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107652"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 

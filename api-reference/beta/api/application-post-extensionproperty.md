@@ -2,19 +2,19 @@
 title: 创建 extensionProperty
 description: 创建新的 extensionProperty。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 424ed26e4ba72100e65683b0526354d8b5febea2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53c80299f0cbc85eddf1eab6b1cce1f5b37a290e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441459"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107085"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

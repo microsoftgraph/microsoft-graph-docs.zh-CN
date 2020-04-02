@@ -1,20 +1,20 @@
 ---
 title: 删除所有者
 description: 从应用程序删除所有者。
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50d8f101dae0759881bc3bd96fe37b79ad218640
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db95b4245e40cb7fc7cf5bf33c46322b77238f67
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441560"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107211"
 ---
 # <a name="remove-owner"></a>删除所有者
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

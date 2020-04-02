@@ -2,19 +2,19 @@
 title: 用户： checkMemberObjects
 description: 检查指定用户对象的组、目录角色或管理单元对象的列表中的成员资格。
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 31f5d772002516a267bac68fa0f1f7434b6810e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89f16152ec57bbd9e29f25a6eb78aa26723ae5d1
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452010"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107911"
 ---
 # <a name="user-checkmemberobjects"></a>用户： checkMemberObjects
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

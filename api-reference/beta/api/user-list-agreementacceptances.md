@@ -2,19 +2,19 @@
 title: List agreementAcceptances
 description: 检索用户的 agreementAcceptance 对象列表。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bbb2ef26989159cb7ff163aa5d7c79b6aba8e42e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72fcdca1b3d696ce543645c8395e6d01982fad97
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451915"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107773"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

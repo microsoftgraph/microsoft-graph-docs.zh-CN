@@ -1,16 +1,16 @@
 ---
 title: 列出用户
 description: 检索用户对象列表。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8f518546ee4d336bda4e2a480bcb7e45b45bc9fc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 60220b01791add0cfba030fcb40f73e33ea6e2c2
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947169"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107519"
 ---
 # <a name="list-users"></a>列出用户
 

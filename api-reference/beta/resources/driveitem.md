@@ -6,16 +6,16 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: fb6f3c92972255dc459263da1bb161de22e3f5b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505565"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109052"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -196,6 +196,8 @@ ms.locfileid: "42505565"
 | [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [列出驱动器中的更改](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [关注项目](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [取消关注项目](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [列出缩略图](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [创建共享链接](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -222,7 +224,7 @@ ms.locfileid: "42505565"
 [folder]: folder.md
 [获取旧版本]: ../api/driveitem-list-versions.md
 [获取缩略图]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

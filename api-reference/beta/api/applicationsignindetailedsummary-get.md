@@ -2,19 +2,19 @@
 title: 获取 applicationSignInDetailedSummary
 description: 检索 applicationSignInDetailSummary 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0a086ba83b82fbfd0a0ae5c9f5d702abb0ef0aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a18a2742c49db6a57bf5a710c3f7d5563c329393
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441415"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107010"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

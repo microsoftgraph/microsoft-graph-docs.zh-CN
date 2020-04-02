@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f322031dafaa6b213450e601170597abd7f0a952
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9996d9974a0e98a86e3770228b2bd03495e30894
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456829"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108226"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "42456829"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>请求标头

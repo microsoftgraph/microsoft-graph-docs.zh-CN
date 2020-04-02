@@ -3,18 +3,18 @@ title: objectIdentity 资源类型
 description: 表示用于登录到用户帐户的标识。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 7eeb5278b2f1d1743177c8d90e496cc719556f94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: users
+author: krbain
+ms.openlocfilehash: 61d68865c0b1e77339b2e2ec2b0f27f095fc4e8f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522524"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109024"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42522524"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|signInType|string| 指定目录中的用户登录类型，如`emailAddress` `userName`或。 `federated` 此处， `federated`表示颁发者的用户的唯一标识符，该标识符可以采用颁发者选择的任何格式。 当登录类型设置为**** `emailAddress`或`userName`时，对 issuerAssignedId 强制执行其他验证。 此属性还可以设置为任何自定义字符串。|
+|signInType|string| 指定目录中的用户登录类型，如`emailAddress` `userName`或。 `federated` 此处， `federated`表示颁发者的用户的唯一标识符，该标识符可以采用颁发者选择的任何格式。 当登录类型设置为**issuerAssignedId** `emailAddress`或`userName`时，对 issuerAssignedId 强制执行其他验证。 此属性还可以设置为任何自定义字符串。|
 |常用|string|指定标识的颁发者，例如`facebook.com`。<br>对于本地帐户（其中**signInType**不`federated`是），此属性是本地 B2C 租户默认域名（例如`contoso.onmicrosoft.com`）。<br>对于来自其他 Azure AD 组织的外部用户，这将是联合组织的域，例如`contoso.com`。<br><br>支持`$filter`。 512字符限制。|
 |issuerAssignedId|string|指定由颁发者分配给用户的唯一标识符。 **颁发者**和**issuerAssignedId**的组合在组织中必须是唯一的。 表示用户的登录名，如果将**signInType**设置为`emailAddress`或`userName` （也称为 "本地帐户"）。<br>当**signInType**设置为时： <ul><li>`emailAddress`（或以`emailAddress` like `emailAddress1`开头） **issuerAssignedId**必须是有效的电子邮件地址</li><li>`userName`， **issuerAssignedId**必须是[电子邮件地址的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持`$filter`。 512字符限制。|
 
