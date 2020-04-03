@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bc9a61013df39eb22e47560b52633cf26b47a91e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 84226b8bdad311f91a6e84d5a2bc6e55c4c31237
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741186"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947067"
 ---
 ```csharp
 
@@ -13,79 +13,19 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupSetting = new GroupSetting
 {
-    DisplayName = "displayName-value",
-    TemplateId = "templateId-value",
+    DisplayName = "GroupSettings",
+    TemplateId = "08d542b9-071f-4e16-94b0-74abb372e3d9",
     Values = new List<SettingValue>()
     {
         new SettingValue
         {
-            Name = "CustomBlockedWordsList",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "EnableMSStandardBlockedWords",
-            Value = "False"
-        },
-        new SettingValue
-        {
-            Name = "ClassificationDescriptions",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "DefaultClassification",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "PrefixSuffixNamingRequirement",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "AllowGuestsToBeGroupOwner",
-            Value = "False"
-        },
-        new SettingValue
-        {
-            Name = "AllowGuestsToAccessGroups",
-            Value = "True"
-        },
-        new SettingValue
-        {
-            Name = "GuestUsageGuidelinesUrl",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "GroupCreationAllowedGroupId",
-            Value = "62e90394-69f5-4237-9190-012177145e10"
-        },
-        new SettingValue
-        {
             Name = "AllowToAddGuests",
-            Value = "True"
-        },
-        new SettingValue
-        {
-            Name = "UsageGuidelinesUrl",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "ClassificationList",
-            Value = ""
-        },
-        new SettingValue
-        {
-            Name = "EnableGroupCreation",
-            Value = "True"
+            Value = false
         }
     }
 };
 
-await graphClient.GroupSettings["{id}"]
+await graphClient.Groups["{id}"].Settings["{id}"]
     .Request()
     .UpdateAsync(groupSetting);
 

@@ -1,63 +1,63 @@
 ---
 title: 更新 groupLifecyclePolicy
 description: 更新 groupLifecyclePolicy 资源类型对象的属性。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 354accc1a976e7865ecb769a6f05d4c676adc394
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 603c2b5616a6eab4f2b5db39c859d3749b0ee18d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516848"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124642"
 ---
-# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="9f703-103">更新 groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="9f703-103">Update groupLifecyclePolicy</span></span>
+# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="107c6-103">更新 groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="107c6-103">Update groupLifecyclePolicy</span></span>
 
-<span data-ttu-id="9f703-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9f703-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="107c6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="107c6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9f703-105">更新 [groupLifecyclePolicy 资源类型](../resources/grouplifecyclepolicy.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9f703-105">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
+<span data-ttu-id="107c6-105">更新 [groupLifecyclePolicy 资源类型](../resources/grouplifecyclepolicy.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="107c6-105">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9f703-106">权限</span><span class="sxs-lookup"><span data-stu-id="9f703-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="107c6-106">权限</span><span class="sxs-lookup"><span data-stu-id="107c6-106">Permissions</span></span>
 
-<span data-ttu-id="9f703-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9f703-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="107c6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="107c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
-|<span data-ttu-id="9f703-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9f703-109">Permission type</span></span>      | <span data-ttu-id="9f703-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9f703-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="107c6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="107c6-109">Permission type</span></span>      | <span data-ttu-id="107c6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="107c6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9f703-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9f703-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9f703-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f703-112">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9f703-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9f703-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f703-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9f703-114">Not supported.</span></span>    |
-|<span data-ttu-id="9f703-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9f703-115">Application</span></span> | <span data-ttu-id="9f703-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f703-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="107c6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="107c6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="107c6-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="107c6-112">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="107c6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="107c6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="107c6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="107c6-114">Not supported.</span></span>    |
+|<span data-ttu-id="107c6-115">Application</span><span class="sxs-lookup"><span data-stu-id="107c6-115">Application</span></span> | <span data-ttu-id="107c6-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="107c6-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9f703-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9f703-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="107c6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="107c6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groupLifecyclePolicies/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="9f703-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="9f703-118">Optional request headers</span></span>
-| <span data-ttu-id="9f703-119">名称</span><span class="sxs-lookup"><span data-stu-id="9f703-119">Name</span></span> | <span data-ttu-id="9f703-120">说明</span><span class="sxs-lookup"><span data-stu-id="9f703-120">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="107c6-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="107c6-118">Optional request headers</span></span>
+| <span data-ttu-id="107c6-119">名称</span><span class="sxs-lookup"><span data-stu-id="107c6-119">Name</span></span> | <span data-ttu-id="107c6-120">说明</span><span class="sxs-lookup"><span data-stu-id="107c6-120">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="9f703-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9f703-121">Authorization</span></span> | <span data-ttu-id="9f703-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9f703-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9f703-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9f703-124">Content-Type</span></span>  | <span data-ttu-id="9f703-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9f703-125">application/json</span></span>  |
+| <span data-ttu-id="107c6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="107c6-121">Authorization</span></span> | <span data-ttu-id="107c6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="107c6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="107c6-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="107c6-124">Content-Type</span></span>  | <span data-ttu-id="107c6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="107c6-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9f703-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9f703-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="107c6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="107c6-126">Request body</span></span>
 
-<span data-ttu-id="9f703-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="9f703-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="9f703-128">未添加到请求正文的现有属性要么保留旧值，要么根据其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="9f703-128">Existing properties that are not included in the request body maintain their previous values or are recalculated based on changes to other property values.</span></span> <span data-ttu-id="9f703-129">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="9f703-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="107c6-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="107c6-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="107c6-128">未添加到请求正文的现有属性要么保留旧值，要么根据其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="107c6-128">Existing properties that are not included in the request body maintain their previous values or are recalculated based on changes to other property values.</span></span> <span data-ttu-id="107c6-129">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="107c6-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="9f703-130">属性</span><span class="sxs-lookup"><span data-stu-id="9f703-130">Property</span></span> | <span data-ttu-id="9f703-131">类型</span><span class="sxs-lookup"><span data-stu-id="9f703-131">Type</span></span> | <span data-ttu-id="9f703-132">说明</span><span class="sxs-lookup"><span data-stu-id="9f703-132">Description</span></span> |
+| <span data-ttu-id="107c6-130">属性</span><span class="sxs-lookup"><span data-stu-id="107c6-130">Property</span></span> | <span data-ttu-id="107c6-131">类型</span><span class="sxs-lookup"><span data-stu-id="107c6-131">Type</span></span> | <span data-ttu-id="107c6-132">说明</span><span class="sxs-lookup"><span data-stu-id="107c6-132">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9f703-133">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="9f703-133">alternateNotificationEmails</span></span>|<span data-ttu-id="9f703-134">字符串</span><span class="sxs-lookup"><span data-stu-id="9f703-134">String</span></span>| <span data-ttu-id="9f703-135">针对没有所有者的组向其发送通知的电子邮件地址列表。</span><span class="sxs-lookup"><span data-stu-id="9f703-135">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="9f703-136">可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="9f703-136">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
-|<span data-ttu-id="9f703-137">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="9f703-137">groupLifetimeInDays</span></span>|<span data-ttu-id="9f703-138">Int32</span><span class="sxs-lookup"><span data-stu-id="9f703-138">Int32</span></span>| <span data-ttu-id="9f703-139">还剩多少天组就到期且需要续订。</span><span class="sxs-lookup"><span data-stu-id="9f703-139">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="9f703-140">续订后，组的有效期就会延长定义的天数。</span><span class="sxs-lookup"><span data-stu-id="9f703-140">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
-|<span data-ttu-id="9f703-141">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="9f703-141">managedGroupTypes</span></span>|<span data-ttu-id="9f703-142">String</span><span class="sxs-lookup"><span data-stu-id="9f703-142">String</span></span>| <span data-ttu-id="9f703-143">到期策略适用的组类型。</span><span class="sxs-lookup"><span data-stu-id="9f703-143">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="9f703-144">可取值为 **All**、**Selected** 或 **None**。</span><span class="sxs-lookup"><span data-stu-id="9f703-144">Possible values are **All**, **Selected** or **None**.</span></span> |
+|<span data-ttu-id="107c6-133">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="107c6-133">alternateNotificationEmails</span></span>|<span data-ttu-id="107c6-134">String</span><span class="sxs-lookup"><span data-stu-id="107c6-134">String</span></span>| <span data-ttu-id="107c6-135">针对没有所有者的组向其发送通知的电子邮件地址列表。</span><span class="sxs-lookup"><span data-stu-id="107c6-135">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="107c6-136">可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="107c6-136">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
+|<span data-ttu-id="107c6-137">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="107c6-137">groupLifetimeInDays</span></span>|<span data-ttu-id="107c6-138">Int32</span><span class="sxs-lookup"><span data-stu-id="107c6-138">Int32</span></span>| <span data-ttu-id="107c6-139">还剩多少天组就到期且需要续订。</span><span class="sxs-lookup"><span data-stu-id="107c6-139">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="107c6-140">续订后，组的有效期就会延长定义的天数。</span><span class="sxs-lookup"><span data-stu-id="107c6-140">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
+|<span data-ttu-id="107c6-141">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="107c6-141">managedGroupTypes</span></span>|<span data-ttu-id="107c6-142">String</span><span class="sxs-lookup"><span data-stu-id="107c6-142">String</span></span>| <span data-ttu-id="107c6-143">到期策略适用的组类型。</span><span class="sxs-lookup"><span data-stu-id="107c6-143">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="107c6-144">可取值为 **All**、**Selected** 或 **None**。</span><span class="sxs-lookup"><span data-stu-id="107c6-144">Possible values are **All**, **Selected** or **None**.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="9f703-145">响应</span><span class="sxs-lookup"><span data-stu-id="9f703-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="107c6-145">响应</span><span class="sxs-lookup"><span data-stu-id="107c6-145">Response</span></span>
 
-<span data-ttu-id="9f703-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新后的 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9f703-146">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9f703-147">示例</span><span class="sxs-lookup"><span data-stu-id="9f703-147">Example</span></span>
+<span data-ttu-id="107c6-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新后的 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="107c6-146">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="107c6-147">示例</span><span class="sxs-lookup"><span data-stu-id="107c6-147">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9f703-148">请求</span><span class="sxs-lookup"><span data-stu-id="9f703-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="107c6-148">请求</span><span class="sxs-lookup"><span data-stu-id="107c6-148">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="9f703-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="9f703-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="107c6-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="107c6-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_grouplifecyclepolicy"
@@ -73,26 +73,26 @@ Content-length: 125
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9f703-150">C#</span><span class="sxs-lookup"><span data-stu-id="9f703-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="107c6-150">C#</span><span class="sxs-lookup"><span data-stu-id="107c6-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9f703-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9f703-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="107c6-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="107c6-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-grouplifecyclepolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9f703-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9f703-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="107c6-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="107c6-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-grouplifecyclepolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9f703-153">Java</span><span class="sxs-lookup"><span data-stu-id="9f703-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="107c6-153">Java</span><span class="sxs-lookup"><span data-stu-id="107c6-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="9f703-154">响应</span><span class="sxs-lookup"><span data-stu-id="9f703-154">Response</span></span>
-<span data-ttu-id="9f703-155">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9f703-155">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="107c6-154">响应</span><span class="sxs-lookup"><span data-stu-id="107c6-154">Response</span></span>
+<span data-ttu-id="107c6-155">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="107c6-155">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

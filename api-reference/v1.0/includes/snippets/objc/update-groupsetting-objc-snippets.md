@@ -1,76 +1,28 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fcda91aedc09076bff488587636200e13aec40ca
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3d5baeb4e4dec442fc0e262d6592678c39858971
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741187"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947074"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groupSettings/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/settings/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroupSetting *groupSetting = [[MSGraphGroupSetting alloc] init];
-[groupSetting setDisplayName:@"displayName-value"];
-[groupSetting setTemplateId:@"templateId-value"];
+[groupSetting setDisplayName:@"GroupSettings"];
+[groupSetting setTemplateId:@"08d542b9-071f-4e16-94b0-74abb372e3d9"];
 NSMutableArray *valuesList = [[NSMutableArray alloc] init];
 MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"CustomBlockedWordsList"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"EnableMSStandardBlockedWords"];
-[values setValue:@"False"];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"ClassificationDescriptions"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"DefaultClassification"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"PrefixSuffixNamingRequirement"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"AllowGuestsToBeGroupOwner"];
-[values setValue:@"False"];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"AllowGuestsToAccessGroups"];
-[values setValue:@"True"];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"GuestUsageGuidelinesUrl"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"GroupCreationAllowedGroupId"];
-[values setValue:@"62e90394-69f5-4237-9190-012177145e10"];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
 [values setName:@"AllowToAddGuests"];
-[values setValue:@"True"];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"UsageGuidelinesUrl"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"ClassificationList"];
-[values setValue:@""];
-[valuesList addObject: values];
-MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"EnableGroupCreation"];
-[values setValue:@"True"];
+[values setValue:@"false"];
 [valuesList addObject: values];
 [groupSetting setValues:valuesList];
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4518ad5686acd9ccd9c274a1003a53650471adc4
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 24b9581a911301bdba11931360bb350a685b2b29
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636836"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947078"
 ---
 ```javascript
 
@@ -16,65 +16,17 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: "displayName-value",
-  templateId: "templateId-value",
+  displayName: "GroupSettings",
+  templateId: "08d542b9-071f-4e16-94b0-74abb372e3d9",
   values: [
     {
-      name: "CustomBlockedWordsList",
-      value: ""
-    },
-    {
-      name: "EnableMSStandardBlockedWords",
-      value: "False"
-    },
-    {
-      name: "ClassificationDescriptions",
-      value: ""
-    },
-    {
-      name: "DefaultClassification",
-      value: ""
-    },
-    {
-      name: "PrefixSuffixNamingRequirement",
-      value: ""
-    },
-    {
-      name: "AllowGuestsToBeGroupOwner",
-      value: "False"
-    },
-    {
-      name: "AllowGuestsToAccessGroups",
-      value: "True"
-    },
-    {
-      name: "GuestUsageGuidelinesUrl",
-      value: ""
-    },
-    {
-      name: "GroupCreationAllowedGroupId",
-      value: "62e90394-69f5-4237-9190-012177145e10"
-    },
-    {
-      name: "AllowToAddGuests",
-      value: "True"
-    },
-    {
-      name: "UsageGuidelinesUrl",
-      value: ""
-    },
-    {
-      name: "ClassificationList",
-      value: ""
-    },
-    {
-      name: "EnableGroupCreation",
-      value: "True"
+            name: "AllowToAddGuests",
+            value: "false"
     }
   ]
 };
 
-let res = await client.api('/groupSettings/{id}')
+let res = await client.api('/groups/{id}/settings/{id}')
     .update(groupSetting);
 
 ```

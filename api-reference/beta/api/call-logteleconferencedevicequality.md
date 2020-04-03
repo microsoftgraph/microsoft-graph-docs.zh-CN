@@ -5,36 +5,36 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ad5b5496d4d80428cace4617fd4295f48cb3932b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 141efaf0f08c91b12517c2e378df00ccd3803d12
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082320"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123270"
 ---
-# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="a2008-103">调用： logTeleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="a2008-103">call: logTeleconferenceDeviceQuality</span></span>
+# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="cdd1c-103">调用： logTeleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="cdd1c-103">call: logTeleconferenceDeviceQuality</span></span>
 
-<span data-ttu-id="a2008-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2008-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cdd1c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdd1c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a2008-105">记录视频电话会议设备质量数据。</span><span class="sxs-lookup"><span data-stu-id="a2008-105">Log video teleconferencing device quality data.</span></span>
+<span data-ttu-id="cdd1c-105">记录视频电话会议设备质量数据。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-105">Log video teleconferencing device quality data.</span></span>
 
-<span data-ttu-id="a2008-106">云视频互操作（CVI） bot 代表视频电话会议（VTC）设备，可充当会议呼叫中的 VTC 设备的后端代理。</span><span class="sxs-lookup"><span data-stu-id="a2008-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="a2008-107">由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。</span><span class="sxs-lookup"><span data-stu-id="a2008-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="a2008-108">一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。</span><span class="sxs-lookup"><span data-stu-id="a2008-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="a2008-109">其他媒体腿位于 CVI bot 和 VTC 设备之间。</span><span class="sxs-lookup"><span data-stu-id="a2008-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
+<span data-ttu-id="cdd1c-106">云视频互操作（CVI） bot 代表视频电话会议（VTC）设备，可充当会议呼叫中的 VTC 设备的后端代理。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="cdd1c-107">由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="cdd1c-108">一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="cdd1c-109">其他媒体腿位于 CVI bot 和 VTC 设备之间。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
 
-<span data-ttu-id="a2008-110">第三方合作伙伴拥有 VTC 媒体腿，并且团队基础结构无法访问第三方呼叫线路的质量数据。</span><span class="sxs-lookup"><span data-stu-id="a2008-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="a2008-111">此方法仅供 CVI 合作伙伴提供其媒体质量数据。</span><span class="sxs-lookup"><span data-stu-id="a2008-111">This method is only for the CVI partners to provide their media quality data.</span></span>
+<span data-ttu-id="cdd1c-110">第三方合作伙伴拥有 VTC 媒体腿，并且团队基础结构无法访问第三方呼叫线路的质量数据。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="cdd1c-111">此方法仅供 CVI 合作伙伴提供其媒体质量数据。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-111">This method is only for the CVI partners to provide their media quality data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a2008-112">权限</span><span class="sxs-lookup"><span data-stu-id="a2008-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdd1c-112">权限</span><span class="sxs-lookup"><span data-stu-id="cdd1c-112">Permissions</span></span>
 
-<span data-ttu-id="a2008-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a2008-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cdd1c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a2008-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="a2008-115">Permission type</span></span>                        | <span data-ttu-id="a2008-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a2008-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cdd1c-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="cdd1c-115">Permission type</span></span>                        | <span data-ttu-id="cdd1c-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cdd1c-116">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a2008-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a2008-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="a2008-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2008-118">Not supported.</span></span> |
-| <span data-ttu-id="a2008-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a2008-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2008-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2008-120">Not supported.</span></span> |
-| <span data-ttu-id="a2008-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="a2008-121">Application</span></span>                            | <span data-ttu-id="a2008-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="a2008-122">Calls.AccessMedia.All</span></span> |
+| <span data-ttu-id="cdd1c-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cdd1c-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdd1c-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-118">Not supported.</span></span> |
+| <span data-ttu-id="cdd1c-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cdd1c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdd1c-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-120">Not supported.</span></span> |
+| <span data-ttu-id="cdd1c-121">Application</span><span class="sxs-lookup"><span data-stu-id="cdd1c-121">Application</span></span>                            | <span data-ttu-id="cdd1c-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="cdd1c-122">Calls.AccessMedia.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a2008-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a2008-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdd1c-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cdd1c-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,32 +42,34 @@ ms.locfileid: "43082320"
 POST /communications/calls/logTeleconferenceDeviceQuality
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a2008-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="a2008-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cdd1c-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="cdd1c-124">Request headers</span></span>
 
-| <span data-ttu-id="a2008-125">名称</span><span class="sxs-lookup"><span data-stu-id="a2008-125">Name</span></span>          | <span data-ttu-id="a2008-126">说明</span><span class="sxs-lookup"><span data-stu-id="a2008-126">Description</span></span>   |
+| <span data-ttu-id="cdd1c-125">名称</span><span class="sxs-lookup"><span data-stu-id="cdd1c-125">Name</span></span>          | <span data-ttu-id="cdd1c-126">说明</span><span class="sxs-lookup"><span data-stu-id="cdd1c-126">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="a2008-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2008-127">Authorization</span></span> | <span data-ttu-id="a2008-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a2008-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a2008-130">用户代理</span><span class="sxs-lookup"><span data-stu-id="a2008-130">User-Agent</span></span>    | <span data-ttu-id="a2008-131">描述调用应用程序的名称和版本。</span><span class="sxs-lookup"><span data-stu-id="a2008-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="a2008-132">详细信息将在 Azure 信息保护分析中显现。</span><span class="sxs-lookup"><span data-stu-id="a2008-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="a2008-133">建议的格式为 "ApplicationName/版本"。</span><span class="sxs-lookup"><span data-stu-id="a2008-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="a2008-134">必需。</span><span class="sxs-lookup"><span data-stu-id="a2008-134">Required.</span></span>|
+| <span data-ttu-id="cdd1c-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdd1c-127">Authorization</span></span> | <span data-ttu-id="cdd1c-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cdd1c-130">用户代理</span><span class="sxs-lookup"><span data-stu-id="cdd1c-130">User-Agent</span></span>    | <span data-ttu-id="cdd1c-131">描述调用应用程序的名称和版本。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="cdd1c-132">详细信息将在 Azure 信息保护分析中显现。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="cdd1c-133">建议的格式为 "ApplicationName/版本"。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="cdd1c-134">必需。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-134">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a2008-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="a2008-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdd1c-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="cdd1c-135">Request body</span></span>
 
-<span data-ttu-id="a2008-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a2008-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="cdd1c-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a2008-137">参数</span><span class="sxs-lookup"><span data-stu-id="a2008-137">Parameter</span></span>    | <span data-ttu-id="a2008-138">类型</span><span class="sxs-lookup"><span data-stu-id="a2008-138">Type</span></span>        | <span data-ttu-id="a2008-139">说明</span><span class="sxs-lookup"><span data-stu-id="a2008-139">Description</span></span> |
+| <span data-ttu-id="cdd1c-137">参数</span><span class="sxs-lookup"><span data-stu-id="cdd1c-137">Parameter</span></span>    | <span data-ttu-id="cdd1c-138">类型</span><span class="sxs-lookup"><span data-stu-id="cdd1c-138">Type</span></span>        | <span data-ttu-id="cdd1c-139">说明</span><span class="sxs-lookup"><span data-stu-id="cdd1c-139">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a2008-140">品质</span><span class="sxs-lookup"><span data-stu-id="a2008-140">quality</span></span>|[<span data-ttu-id="a2008-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="a2008-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="a2008-142">VTC 媒体腿的质量数据。</span><span class="sxs-lookup"><span data-stu-id="a2008-142">Quality data of VTC media leg.</span></span>|
+|<span data-ttu-id="cdd1c-140">品质</span><span class="sxs-lookup"><span data-stu-id="cdd1c-140">quality</span></span>|[<span data-ttu-id="cdd1c-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="cdd1c-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="cdd1c-142">VTC 媒体腿的质量数据。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-142">Quality data of VTC media leg.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a2008-143">响应</span><span class="sxs-lookup"><span data-stu-id="a2008-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cdd1c-143">响应</span><span class="sxs-lookup"><span data-stu-id="cdd1c-143">Response</span></span>
 
-<span data-ttu-id="a2008-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="a2008-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cdd1c-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a2008-146">示例</span><span class="sxs-lookup"><span data-stu-id="a2008-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cdd1c-146">示例</span><span class="sxs-lookup"><span data-stu-id="cdd1c-146">Examples</span></span>
 
-<span data-ttu-id="a2008-147">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a2008-147">The following example shows how to call this API.</span></span>
+<span data-ttu-id="cdd1c-147">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-147">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="a2008-148">请求</span><span class="sxs-lookup"><span data-stu-id="a2008-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cdd1c-148">请求</span><span class="sxs-lookup"><span data-stu-id="cdd1c-148">Request</span></span>
 
-<span data-ttu-id="a2008-149">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a2008-149">The following is an example of the request.</span></span>
+<span data-ttu-id="cdd1c-149">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-149">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="cdd1c-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdd1c-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call_logteleconferencedevicequality"
@@ -162,10 +164,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="cdd1c-151">C#</span><span class="sxs-lookup"><span data-stu-id="cdd1c-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-logteleconferencedevicequality-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="a2008-150">响应</span><span class="sxs-lookup"><span data-stu-id="a2008-150">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="cdd1c-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cdd1c-152">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-logteleconferencedevicequality-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a2008-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a2008-151">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="cdd1c-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cdd1c-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-logteleconferencedevicequality-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="cdd1c-154">响应</span><span class="sxs-lookup"><span data-stu-id="cdd1c-154">Response</span></span>
+
+<span data-ttu-id="cdd1c-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="cdd1c-155">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

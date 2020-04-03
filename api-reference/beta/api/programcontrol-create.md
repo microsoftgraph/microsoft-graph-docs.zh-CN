@@ -3,72 +3,72 @@ title: 创建 programControl
 description: 在 "Azure AD access 评论" 功能中，创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6f752a3fb9bfb302a0d3c63b3edec2ef93735510
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454981"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123088"
 ---
-# <a name="create-programcontrol"></a><span data-ttu-id="1cc57-104">创建 programControl</span><span class="sxs-lookup"><span data-stu-id="1cc57-104">Create programControl</span></span>
+# <a name="create-programcontrol"></a><span data-ttu-id="544ef-104">创建 programControl</span><span class="sxs-lookup"><span data-stu-id="544ef-104">Create programControl</span></span>
 
-<span data-ttu-id="1cc57-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="1cc57-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="544ef-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="544ef-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1cc57-106">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1cc57-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="1cc57-107">这会将访问审核链接到某个程序。</span><span class="sxs-lookup"><span data-stu-id="1cc57-107">This links an access review to a program.</span></span>
+<span data-ttu-id="544ef-106">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="544ef-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="544ef-107">这会将访问审核链接到某个程序。</span><span class="sxs-lookup"><span data-stu-id="544ef-107">This links an access review to a program.</span></span>
 
-<span data-ttu-id="1cc57-108">在发出此请求之前，呼叫者必须先</span><span class="sxs-lookup"><span data-stu-id="1cc57-108">Prior to making this request, the caller must have previously</span></span>
+<span data-ttu-id="544ef-108">在发出此请求之前，呼叫者必须先</span><span class="sxs-lookup"><span data-stu-id="544ef-108">Prior to making this request, the caller must have previously</span></span>
 
-- <span data-ttu-id="1cc57-109">[创建了一个程序](program-create.md)或[检索了一个程序](program-list.md)，以使`programId`其值包含在请求中，</span><span class="sxs-lookup"><span data-stu-id="1cc57-109">[created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,</span></span>
-- <span data-ttu-id="1cc57-110">[创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md)，以在请求中包含`controlId`的值，以及</span><span class="sxs-lookup"><span data-stu-id="1cc57-110">[created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and</span></span>
-- <span data-ttu-id="1cc57-111">[检索了程序控制类型的列表](programcontroltype-list.md)，以将值`controlTypeId`包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="1cc57-111">[retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.</span></span>
+- <span data-ttu-id="544ef-109">[创建了一个程序](program-create.md)或[检索了一个程序](program-list.md)，以使`programId`其值包含在请求中，</span><span class="sxs-lookup"><span data-stu-id="544ef-109">[created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,</span></span>
+- <span data-ttu-id="544ef-110">[创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md)，以在请求中包含`controlId`的值，以及</span><span class="sxs-lookup"><span data-stu-id="544ef-110">[created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and</span></span>
+- <span data-ttu-id="544ef-111">[检索了程序控制类型的列表](programcontroltype-list.md)，以将值`controlTypeId`包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="544ef-111">[retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="1cc57-112">权限</span><span class="sxs-lookup"><span data-stu-id="1cc57-112">Permissions</span></span>
-<span data-ttu-id="1cc57-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1cc57-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="544ef-112">权限</span><span class="sxs-lookup"><span data-stu-id="544ef-112">Permissions</span></span>
+<span data-ttu-id="544ef-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="544ef-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1cc57-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="1cc57-115">Permission type</span></span>                        | <span data-ttu-id="1cc57-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1cc57-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="544ef-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="544ef-115">Permission type</span></span>                        | <span data-ttu-id="544ef-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="544ef-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1cc57-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc57-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="1cc57-118">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cc57-118">ProgramControl.ReadWrite.All</span></span>  |
-|<span data-ttu-id="1cc57-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc57-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1cc57-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="1cc57-120">Not supported.</span></span> |
-|<span data-ttu-id="1cc57-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="1cc57-121">Application</span></span>                            |  <span data-ttu-id="1cc57-122">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cc57-122">ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="544ef-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="544ef-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="544ef-118">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="544ef-118">ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="544ef-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="544ef-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="544ef-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="544ef-120">Not supported.</span></span> |
+|<span data-ttu-id="544ef-121">Application</span><span class="sxs-lookup"><span data-stu-id="544ef-121">Application</span></span>                            |  <span data-ttu-id="544ef-122">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="544ef-122">ProgramControl.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="1cc57-123">登录用户还必须位于允许他们创建**programControl**的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="1cc57-123">The signed in user must also be in a directory role that permits them to create a **programControl**.</span></span> 
+<span data-ttu-id="544ef-123">登录用户还必须位于允许他们创建**programControl**的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="544ef-123">The signed in user must also be in a directory role that permits them to create a **programControl**.</span></span> 
 
-## <a name="http-request"></a><span data-ttu-id="1cc57-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1cc57-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="544ef-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="544ef-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /programControls
 ```
-## <a name="request-headers"></a><span data-ttu-id="1cc57-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="1cc57-125">Request headers</span></span>
-| <span data-ttu-id="1cc57-126">名称</span><span class="sxs-lookup"><span data-stu-id="1cc57-126">Name</span></span>         | <span data-ttu-id="1cc57-127">类型</span><span class="sxs-lookup"><span data-stu-id="1cc57-127">Type</span></span>        | <span data-ttu-id="1cc57-128">说明</span><span class="sxs-lookup"><span data-stu-id="1cc57-128">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="544ef-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="544ef-125">Request headers</span></span>
+| <span data-ttu-id="544ef-126">名称</span><span class="sxs-lookup"><span data-stu-id="544ef-126">Name</span></span>         | <span data-ttu-id="544ef-127">类型</span><span class="sxs-lookup"><span data-stu-id="544ef-127">Type</span></span>        | <span data-ttu-id="544ef-128">说明</span><span class="sxs-lookup"><span data-stu-id="544ef-128">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="1cc57-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="1cc57-129">Authorization</span></span> | <span data-ttu-id="1cc57-130">string</span><span class="sxs-lookup"><span data-stu-id="1cc57-130">string</span></span> | <span data-ttu-id="1cc57-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="1cc57-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="544ef-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="544ef-129">Authorization</span></span> | <span data-ttu-id="544ef-130">string</span><span class="sxs-lookup"><span data-stu-id="544ef-130">string</span></span> | <span data-ttu-id="544ef-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="544ef-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1cc57-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="1cc57-133">Request body</span></span>
-<span data-ttu-id="1cc57-134">在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1cc57-134">In the request body, supply a JSON representation of a [programControl](../resources/programcontrol.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="544ef-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="544ef-133">Request body</span></span>
+<span data-ttu-id="544ef-134">在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="544ef-134">In the request body, supply a JSON representation of a [programControl](../resources/programcontrol.md) object.</span></span>
 
-<span data-ttu-id="1cc57-135">下表显示创建程序控件时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="1cc57-135">The following table shows the properties that are required when you create a program control.</span></span>
+<span data-ttu-id="544ef-135">下表显示创建程序控件时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="544ef-135">The following table shows the properties that are required when you create a program control.</span></span>
 
-| <span data-ttu-id="1cc57-136">属性</span><span class="sxs-lookup"><span data-stu-id="1cc57-136">Property</span></span>     | <span data-ttu-id="1cc57-137">类型</span><span class="sxs-lookup"><span data-stu-id="1cc57-137">Type</span></span>        | <span data-ttu-id="1cc57-138">说明</span><span class="sxs-lookup"><span data-stu-id="1cc57-138">Description</span></span> |
+| <span data-ttu-id="544ef-136">属性</span><span class="sxs-lookup"><span data-stu-id="544ef-136">Property</span></span>     | <span data-ttu-id="544ef-137">类型</span><span class="sxs-lookup"><span data-stu-id="544ef-137">Type</span></span>        | <span data-ttu-id="544ef-138">说明</span><span class="sxs-lookup"><span data-stu-id="544ef-138">Description</span></span> |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | <span data-ttu-id="1cc57-139">此控件将要成为的程序的 programId。</span><span class="sxs-lookup"><span data-stu-id="1cc57-139">The programId of the program this control is going to become a part of.</span></span>                             |
-| `controlId`              |`String`                | <span data-ttu-id="1cc57-140">控件的 controlId，特别是 access 评审的标识符。</span><span class="sxs-lookup"><span data-stu-id="1cc57-140">The controlId of the control, in particular the identifier of an access review.</span></span>                                                |
-| `controlTypeId`          |`String`                | <span data-ttu-id="1cc57-141">ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。</span><span class="sxs-lookup"><span data-stu-id="1cc57-141">The programControlType identifies the type of program control - for example, a control linking to guest access reviews.</span></span> |
+| `programId`              |`String`                | <span data-ttu-id="544ef-139">此控件将要成为的程序的 programId。</span><span class="sxs-lookup"><span data-stu-id="544ef-139">The programId of the program this control is going to become a part of.</span></span>                             |
+| `controlId`              |`String`                | <span data-ttu-id="544ef-140">控件的 controlId，特别是 access 评审的标识符。</span><span class="sxs-lookup"><span data-stu-id="544ef-140">The controlId of the control, in particular the identifier of an access review.</span></span>                                                |
+| `controlTypeId`          |`String`                | <span data-ttu-id="544ef-141">ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。</span><span class="sxs-lookup"><span data-stu-id="544ef-141">The programControlType identifies the type of program control - for example, a control linking to guest access reviews.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1cc57-142">响应</span><span class="sxs-lookup"><span data-stu-id="1cc57-142">Response</span></span>
-<span data-ttu-id="1cc57-143">如果成功，此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1cc57-143">If successful, this method returns a `201, Created` response code and a [programControl](../resources/programcontrol.md) object in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="1cc57-144">示例</span><span class="sxs-lookup"><span data-stu-id="1cc57-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1cc57-145">请求</span><span class="sxs-lookup"><span data-stu-id="1cc57-145">Request</span></span>
-<span data-ttu-id="1cc57-146">在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1cc57-146">In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="544ef-142">响应</span><span class="sxs-lookup"><span data-stu-id="544ef-142">Response</span></span>
+<span data-ttu-id="544ef-143">如果成功，此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="544ef-143">If successful, this method returns a `201, Created` response code and a [programControl](../resources/programcontrol.md) object in the response body.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1cc57-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="1cc57-147">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="544ef-144">示例</span><span class="sxs-lookup"><span data-stu-id="544ef-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="544ef-145">请求</span><span class="sxs-lookup"><span data-stu-id="544ef-145">Request</span></span>
+<span data-ttu-id="544ef-146">在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="544ef-146">In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="544ef-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="544ef-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_programControl_from_programControls"
@@ -83,23 +83,23 @@ Content-type: application/json
     "programId": "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1cc57-148">C#</span><span class="sxs-lookup"><span data-stu-id="1cc57-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="544ef-148">C#</span><span class="sxs-lookup"><span data-stu-id="544ef-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-programcontrol-from-programcontrols-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1cc57-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1cc57-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="544ef-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="544ef-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-programcontrol-from-programcontrols-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1cc57-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1cc57-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="544ef-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="544ef-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-programcontrol-from-programcontrols-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1cc57-151">响应</span><span class="sxs-lookup"><span data-stu-id="1cc57-151">Response</span></span>
-><span data-ttu-id="1cc57-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1cc57-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="544ef-151">响应</span><span class="sxs-lookup"><span data-stu-id="544ef-151">Response</span></span>
+><span data-ttu-id="544ef-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="544ef-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,11 +120,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1cc57-154">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1cc57-154">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="544ef-154">另请参阅</span><span class="sxs-lookup"><span data-stu-id="544ef-154">See also</span></span>
 
-| <span data-ttu-id="1cc57-155">方法</span><span class="sxs-lookup"><span data-stu-id="1cc57-155">Method</span></span>           | <span data-ttu-id="1cc57-156">返回类型</span><span class="sxs-lookup"><span data-stu-id="1cc57-156">Return Type</span></span>    |<span data-ttu-id="1cc57-157">说明</span><span class="sxs-lookup"><span data-stu-id="1cc57-157">Description</span></span>|
+| <span data-ttu-id="544ef-155">方法</span><span class="sxs-lookup"><span data-stu-id="544ef-155">Method</span></span>           | <span data-ttu-id="544ef-156">返回类型</span><span class="sxs-lookup"><span data-stu-id="544ef-156">Return Type</span></span>    |<span data-ttu-id="544ef-157">说明</span><span class="sxs-lookup"><span data-stu-id="544ef-157">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="1cc57-158">列出 programControlTypes</span><span class="sxs-lookup"><span data-stu-id="1cc57-158">List programControlTypes</span></span>](../api/programcontroltype-list.md) | <span data-ttu-id="1cc57-159">[programControlType](../resources/programcontroltype.md)集合</span><span class="sxs-lookup"><span data-stu-id="1cc57-159">[programControlType](../resources/programcontroltype.md) collection</span></span>| <span data-ttu-id="1cc57-160">列出程序控制类型。</span><span class="sxs-lookup"><span data-stu-id="1cc57-160">List program control types.</span></span> |
+|[<span data-ttu-id="544ef-158">列出 programControlTypes</span><span class="sxs-lookup"><span data-stu-id="544ef-158">List programControlTypes</span></span>](../api/programcontroltype-list.md) | <span data-ttu-id="544ef-159">[programControlType](../resources/programcontroltype.md)集合</span><span class="sxs-lookup"><span data-stu-id="544ef-159">[programControlType](../resources/programcontroltype.md) collection</span></span>| <span data-ttu-id="544ef-160">列出程序控制类型。</span><span class="sxs-lookup"><span data-stu-id="544ef-160">List program control types.</span></span> |
 
 
 <!--
