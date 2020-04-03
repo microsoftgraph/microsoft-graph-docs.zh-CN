@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 773922204530e2859e0d00342c12531da6a38b2f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 2a87355ac5e1431d24d87a60826694f4032bf9ab
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302561"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43127106"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var driveItem = new DriveItem
     Name = "Just some files",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@name.conflictBehavior","rename"}
+        {"@microsoft.graph.conflictBehavior","rename"}
     },
     Bundle = new Bundle
     {
