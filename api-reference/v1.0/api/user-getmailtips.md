@@ -1,16 +1,16 @@
 ---
 title: 用户： getMailTips
 description: 获取一个或多个收件人对登录用户可用的邮件提示。
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 28f4dead5edab55f30c80b524d0f124473d2acd2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 809e1fb1dc23a1b6324d2a07c092dc83fbac8df7
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509179"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108331"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|字符串|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`： `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`： `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
 
 ## <a name="response"></a>响应
 

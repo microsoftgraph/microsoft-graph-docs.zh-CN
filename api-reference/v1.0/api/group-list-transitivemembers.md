@@ -1,16 +1,16 @@
 ---
 title: 列表组可传递成员
 description: 获取组成员的列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有嵌套成员的简单列表。
-author: anchanda
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f46c0fc41ffa41f3d03e1b7b0b5c3ed3040cc6c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99a4abafb5cb879f2f8b7f721a237495055bcde7
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517024"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125132"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -26,7 +26,7 @@ ms.locfileid: "42517024"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、用户、全部、用户、全部读取。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Read. All，User. All |
+|Application | Read. All，User. All |
 
 >**注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
 
@@ -44,7 +44,7 @@ GET /groups/{id}/transitiveMembers
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:-----------|:----------|

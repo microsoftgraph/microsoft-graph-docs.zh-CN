@@ -1,20 +1,20 @@
 ---
 title: 创建 administrativeUnit
 description: 使用此 API 创建新的 administrativeUnit。
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43d567ac0634b292401e124d26f5f3dc4447c319
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f550a42d7b7be7fc35db758eb57208b7f2a2c9a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441721"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123319"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441721"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -90,7 +90,7 @@ Content-length: 150
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 > 注意：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",

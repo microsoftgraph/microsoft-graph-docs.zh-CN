@@ -2,19 +2,19 @@
 title: dataPolicyOperation 资源类型
 description: 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c6f78a666d5e3785c6e02b9f5622f5d0529c61a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9057d46a3d01b525f2c430817e875e7ef7bf62d5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507308"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124796"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
 

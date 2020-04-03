@@ -2,15 +2,15 @@
 title: 用户： reprocessLicenseAssignment
 description: 重新处理用户的所有基于组的许可证分配。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c6b66a71f24799323eb2e85480856cd8d1fe8d1d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 68552674871fa1cf225866cfb9c241cb16675409
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508938"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108247"
 ---
 # <a name="user-reprocesslicenseassignment"></a>用户： reprocessLicenseAssignment
 

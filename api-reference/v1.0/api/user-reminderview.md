@@ -1,16 +1,16 @@
 ---
 title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
-author: dkershaw10
+author: harini84
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b02143e6317a10aea9b101e4f6d6c62eb3cc5a58
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5def572e5d3a76b6d919cf5b5c13edb72bb6d12d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508945"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108254"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 |startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |

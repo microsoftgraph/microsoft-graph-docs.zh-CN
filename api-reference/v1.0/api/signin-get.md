@@ -2,15 +2,15 @@
 title: 获取 signIn
 description: 介绍 Microsoft Graph API 中登录资源（实体）的 get 方法。
 localization_priority: Normal
-author: dhanyahk
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afb548196be5d4bb4b0b9b918825d3ddc039be18
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 99d9b152ae8b83f7e92b977fbc2fdc3b1e341f58
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948406"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124313"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -26,7 +26,7 @@ ms.locfileid: "42948406"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog 和所有目录。全部读取. 所有 |
+|Application | AuditLog 和所有目录。全部读取. 所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 

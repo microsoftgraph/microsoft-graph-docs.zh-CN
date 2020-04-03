@@ -1,20 +1,20 @@
 ---
 title: 列出 administrativeUnits
 description: 检索 administrativeUnit 对象的列表。
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 10bedf9c47e549576748aabfcd7612d7ddb452ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad6599e16dd9500f03b8f88b09482af4ef8d4b73
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441730"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123312"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441730"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
+|Application | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

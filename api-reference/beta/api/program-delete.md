@@ -3,18 +3,18 @@ title: 删除程序
 description: 在 "Azure AD access 评论" 功能中，删除一个程序对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: c7c6fd7ca637d977fe007dc1adc4ed31af08aa69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 205384fea42dd1b6b5bb77f82320082c4d14ae29
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454995"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123172"
 ---
 # <a name="delete-program"></a>删除程序
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42454995"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 登录用户还必须位于允许他们创建程序的目录角色中。
 

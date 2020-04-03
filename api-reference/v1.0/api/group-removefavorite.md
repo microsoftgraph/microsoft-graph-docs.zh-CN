@@ -2,15 +2,15 @@
 title: 'group: removeFavorite'
 description: 从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 87a57d1f97ba35146c4a3c787e50c09dc6979747
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce8f8494bde3c3e5bf791fc4711ee07bc7bfc98a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516954"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124138"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -23,7 +23,7 @@ ms.locfileid: "42516954"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -2,15 +2,15 @@
 title: signIn 资源类型
 doc_type: resourcePageType
 description: 提供有关目录中用户或应用程序登录活动的详细信息。
-author: davidmu1
+author: kholtz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dff6c9ad49a5e072c7bccb3903135e93beea0bf8
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 5aa7659c9ab53ac4879a7ab2f1a13f62c729df63
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948378"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125314"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 

@@ -2,15 +2,15 @@
 title: 创建 MailFolder
 description: 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 022c59f0715932b3a76a884cc467aa5b170af354
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b4879b8e21448df9184da9a4252946760283717
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508973"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108303"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 

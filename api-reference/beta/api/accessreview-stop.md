@@ -2,19 +2,19 @@
 title: 停止 accessReview
 description: 在 "Azure AD access 评论" 功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  （若要防止定期访问审核启动以后的实例，请更新它以更改计划的结束日期）。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 40f659154c932dee35923d0622160c1ba0269399
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c07cbb59d1c5411d6af27be919a18c15789acd97
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441840"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123368"
 ---
 # <a name="stop-accessreview"></a>停止 accessReview
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441840"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership  |
+|Application                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

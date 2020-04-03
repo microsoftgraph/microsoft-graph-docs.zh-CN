@@ -2,19 +2,19 @@
 title: 创建 accessReview
 description: 在 "Azure AD access 评论" 功能中，创建一个新的 accessReview 对象。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbda7226bcfb52370385d58598bc6fda14bd13d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441912"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123515"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42441912"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 调用方还应具有 ProgramControl 权限，以便在创建访问审核之后，调用方可以创建[ProgramControl](../resources/programcontrol.md)。
 此外，登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息，请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。

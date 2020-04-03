@@ -1,16 +1,16 @@
 ---
 title: 列出 rejectedSender
 description: '获取此组的“遭拒的发件人”列表中的用户或组列表。 '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 28a16c7468cbe1b0639446bd776683ab8ab257f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d982ecf52ac6bf8ed7d7cc7e6b7f535bfdba9370
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517045"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125174"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517045"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

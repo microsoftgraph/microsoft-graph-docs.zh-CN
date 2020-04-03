@@ -3,18 +3,18 @@ title: programControl 资源类型
 description: 在 Azure AD access 评论功能中，program control 对象表示一个控件，将访问权限链接到某个程序。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ee374108cdebca2e6ae06ee18a245f5c9eeebf74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 3cc26caaee20f1f274265061139671d00fa7cee0
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521444"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125307"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

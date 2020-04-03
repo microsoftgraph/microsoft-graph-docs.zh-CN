@@ -1,16 +1,16 @@
 ---
 title: signIn 资源类型
 description: 详细介绍租户（目录）的用户和应用程序登录活动。
-author: dhanyahk
+author: kholtz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9b19ee17a9f00d50a98e9a86f4c3ec8887a28d09
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: b9be21b34b291d4a4c7278242c56a3cf63c2c7ea
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948371"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124803"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 

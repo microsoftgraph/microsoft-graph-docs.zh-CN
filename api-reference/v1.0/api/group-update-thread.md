@@ -1,16 +1,16 @@
 ---
 title: 更新对话线程
 description: 更新 thread 对象。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1255bc9645a9852de6f682072cb265c23ecf7f9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44301d3181d8cff8d33b664e13b99e1f0d3ce1b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516912"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124936"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 
@@ -23,7 +23,7 @@ ms.locfileid: "42516912"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -3222,6 +3222,8 @@
                   href: api/drive-sharedwithme.md
                 - name: 获取特殊文件夹
                   href: api/drive-get-specialfolder.md
+                - name: 列出关注的项
+                  href: api/drive-list-following.md
             - name: 驱动器项目
               href: resources/driveitem.md
               items:
@@ -3255,6 +3257,10 @@
                   href: api/driveitem-delta.md
                 - name: 列出版本
                   href: api/driveitem-list-versions.md
+                - name: 关注项目
+                  href: api/driveitem-follow.md
+                - name: 取消关注项目
+                  href: api/driveitem-unfollow.md
                 - name: 预览项目
                   href: api/driveitem-preview.md
                 - name: 获取项分析
@@ -3266,6 +3272,8 @@
                   href: api/driveitem-createlink.md
                 - name: 使用共享链接
                   href: api/shares-get.md
+                - name: 将用户添加到共享链接
+                  href: api/permission-grant.md
                 - name: 列出权限
                   href: api/driveitem-list-permissions.md
                 - name: 添加权限
@@ -4160,6 +4168,10 @@
                   href: api/site-list-subsites.md
                 - name: 获取项分析
                   href: api/itemanalytics-get.md
+                - name: 关注网站
+                  href: api/site-follow.md
+                - name: 取消关注网站
+                  href: api/site-unfollow.md
             - name: 列表
               href: resources/list.md
               items:

@@ -1,16 +1,16 @@
 ---
 title: 创建对话线程
 description: '首先，通过创建线程来启动新的组对话。 '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c8d5c4d4025f8928acd5a8a40e0b8c6ca7a3fb18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c24668a6a33c41b32fed67462d57a984745d32b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516961"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124131"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 
@@ -27,7 +27,7 @@ ms.locfileid: "42516961"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

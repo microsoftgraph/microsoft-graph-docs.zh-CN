@@ -2,15 +2,15 @@
 title: 列出 signIn
 description: 介绍 Microsoft Graph API 中登录资源（实体）的列表方法。
 localization_priority: Normal
-author: dhanyahk
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d7e76a44d060db5648bf8cb7af85e6b1cdc1185f
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: a18aae68f1dbd94b7af551d6f1dc0b896535176a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948399"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124488"
 ---
 # <a name="list-signins"></a>列出 signIn
 

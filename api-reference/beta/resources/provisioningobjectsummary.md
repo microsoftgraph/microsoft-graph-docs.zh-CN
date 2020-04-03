@@ -2,19 +2,19 @@
 title: provisioningObjectSummary 资源类型
 description: 表示由 Azure AD 预配服务及其关联的属性执行的操作。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ed6b760af60900436d22da4ae1302f458d50c4c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbac0770c7093b4dbe5e8ecd84e191444ca61c77
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521339"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125027"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>provisioningObjectSummary 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42521339"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型 | 说明 |
+| 方法  | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [列出 provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | 获取租户中发生的所有设置事件的列表。 |
 

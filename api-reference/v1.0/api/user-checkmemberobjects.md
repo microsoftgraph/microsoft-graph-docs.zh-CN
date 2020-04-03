@@ -2,15 +2,15 @@
 title: 用户： checkMemberObjects
 description: 检查指定用户对象的组或目录角色列表中的成员资格。
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3b79ce9c9b36213e7a289ab4e2e21fa6f3929b9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a33da99187ba8d8bbc64ea119dd3c3a13491a92e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509228"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108408"
 ---
 # <a name="user-checkmemberobjects"></a>用户： checkMemberObjects
 
@@ -26,7 +26,7 @@ ms.locfileid: "42509228"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.readbasic.all、所有用户读写全部。 All<br><br>此外：<br><br><ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All<br>并<ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All |
+| Application                            | User.readbasic.all、所有用户读写全部。 All<br>并<ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

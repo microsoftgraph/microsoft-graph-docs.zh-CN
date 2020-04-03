@@ -2,19 +2,19 @@
 title: groupLifecyclePolicy： renewGroup
 description: 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2c1328778c9b2feba197fd403e9821da2f64872d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09776750c3c3bba64b81c75ee0f32af395a3f6b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446581"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123949"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy： renewGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42446581"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All 或 Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|应用程序 | Group.ReadWrite.All 或 Directory.ReadWrite.All |
+|Application | Group.ReadWrite.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

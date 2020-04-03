@@ -1,16 +1,16 @@
 ---
 title: 列出线程
 description: 获取某个组的所有线程。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1c9cb896efc4124de87f0142eb624881c99be798
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75074f6602ac3c7b633a734dcf0ff3dc5c68ab1d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517038"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125167"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517038"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

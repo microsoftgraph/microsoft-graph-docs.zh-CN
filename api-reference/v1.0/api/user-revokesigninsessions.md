@@ -2,15 +2,15 @@
 title: 用户： revokeSignInSessions
 description: 通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户的刷新令牌失效（以及用户浏览器中的会话 cookie）。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d2c5104723e3dbe4a775f7905e04def52fe32283
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59bd8e4ac5d8e848120646630c0c6b0a66f005e0
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508931"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108219"
 ---
 # <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
@@ -31,7 +31,7 @@ ms.locfileid: "42508931"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Directory.accessasuser.all 的所有用户的读写。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|Application                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

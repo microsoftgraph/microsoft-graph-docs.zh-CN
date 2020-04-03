@@ -1,16 +1,16 @@
 ---
 title: 列出所有者
 description: 检索应用程序的所有者列表（directoryObject 对象）。
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: af5ed0ea7360c5e40f6a472992af4ea08eecc6e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9160c42e2c042f5a0c6bb84f5069714aacc3048e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518901"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108674"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -35,7 +35,7 @@ GET /applications/{id}/owners
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |

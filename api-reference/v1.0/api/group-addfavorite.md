@@ -2,15 +2,15 @@
 title: 'group: addFavorite'
 description: 将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c19ee6dddd426d523838f7557c13ceaed8ee111f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: fa588470f0182a5000c721f361bafff8af5693dc
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892644"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125286"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -18,14 +18,14 @@ ms.locfileid: "42892644"
 
 将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

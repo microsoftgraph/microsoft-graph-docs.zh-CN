@@ -1,16 +1,16 @@
 ---
 title: 更新事件
 description: 更新 event 对象。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1dca4137782a5c3ad819021ac9583ddc36ced159
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 139139033e55efae8d7962ea8ff00b8fc9ea2ba7
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516919"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123977"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "42516919"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

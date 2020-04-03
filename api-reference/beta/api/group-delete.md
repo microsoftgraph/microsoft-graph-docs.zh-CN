@@ -1,20 +1,20 @@
 ---
 title: 删除组-Microsoft Graph API
 description: 介绍 Microsoft Graph API （REST）的组资源（实体）的 delete 方法。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0596b80444d3a37ee37c948d9b9ec69b6d1db3b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6eec50e07253bd380c6253f2aad7105f29ee7474
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420092"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123795"
 ---
 # <a name="delete-group"></a>删除组
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: 列出程序
 description: 在 "Azure AD access 评论" 功能中，列出所有程序对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9998fbc123d38e478a00d64d8e78f0f734914632
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: eab96053d43634cd4280e2e633b1de5da8ff5a17
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454988"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123060"
 ---
 # <a name="list-programs"></a>列出程序
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42454988"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl、ProgramControl 和所有  |
+|Application                            | ProgramControl、ProgramControl 和所有  |
 
  登录用户还必须位于允许他们读取程序的目录角色中。
 

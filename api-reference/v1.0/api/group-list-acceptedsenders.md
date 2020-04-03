@@ -1,16 +1,16 @@
 ---
 title: 列出 acceptedSender
 description: 获取此组的“接受的发件人”列表中的用户或组列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d1fecef3e02a706b167e6fd2e2b35aa85b769ce2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 036ab2cfe7f9b1fbe1e98e71e706f59c4a5d551b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517108"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125279"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517108"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

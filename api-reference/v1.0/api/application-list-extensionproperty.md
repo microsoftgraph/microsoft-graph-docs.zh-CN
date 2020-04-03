@@ -2,15 +2,15 @@
 title: 列出 extensionProperties
 description: 检索 extensionproperty 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0c2af0d25b65f2f89e38e66971349248357744d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cb9df5a746b451fb3e0dce31c9a2ad75859be48
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518908"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108387"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -40,7 +40,7 @@ GET /applications/{id}/extensionProperties
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:----------|

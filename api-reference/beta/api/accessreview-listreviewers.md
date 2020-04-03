@@ -2,19 +2,19 @@
 title: 列出 accessReview 审阅者
 description: 在 "Azure AD access 评论" 功能中，检索 accessReview 对象的审阅者。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 114a59e0d5e96983a30afcf31d8452c979f2f486
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 268744f1e742cdfbbbb3a5be7727ff6c1ddceaa5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441877"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123543"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441877"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview、AccessReview、成员身份  |
+|Application                            | AccessReview、AccessReview、成员身份  |
 
 
  登录用户还必须位于允许他们阅读访问审核的目录角色中。

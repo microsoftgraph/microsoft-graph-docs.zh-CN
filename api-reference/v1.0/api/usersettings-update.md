@@ -1,16 +1,16 @@
 ---
 title: 更新设置
 description: '更新 settings 对象的属性。 '
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dca26c0c8fcff8fb3ccbc92ef7f7560c50f4c44c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdc286437a231efdf234bd2881886f5bd436407a
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508889"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108345"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -49,7 +49,7 @@ PATCH /me/settings
 PATCH /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|

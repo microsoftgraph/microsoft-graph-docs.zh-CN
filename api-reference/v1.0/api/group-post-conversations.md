@@ -1,16 +1,16 @@
 ---
 title: 创建对话
 description: '通过包括线程和帖子创建新对话。 '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1760f5343649f813d45014cddcaa697bbe6ae0ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3612f3a33927af4980032543170c0872230f4f4d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517003"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125076"
 ---
 # <a name="create-conversation"></a>创建对话
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517003"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

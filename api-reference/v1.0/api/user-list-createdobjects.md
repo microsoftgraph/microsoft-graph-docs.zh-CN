@@ -1,16 +1,16 @@
 ---
 title: List createdObjects
 description: 获取由用户创建的 directory 对象列表。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c2122829c7df62b8a564b2d728ddec71a607d6a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a3cd9b64a944531edf92d8d4146939293a852ca
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509113"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108863"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 

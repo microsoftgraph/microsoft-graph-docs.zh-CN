@@ -2,19 +2,19 @@
 title: 列出 accessReview 决策
 description: 在 "Azure AD 访问评论" 功能中，检索 accessReview 对象的决策。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00bc58377b68f3654ebff10ed985cbbcf63e8ed8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7042210e9a3e3b6686e5c1bc4529a06d210a34d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441892"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123522"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42441892"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview、AccessReview、成员身份 |
+|Application                            | AccessReview、AccessReview、成员身份 |
 
  登录用户还必须位于允许他们阅读访问审核的目录角色中。
 

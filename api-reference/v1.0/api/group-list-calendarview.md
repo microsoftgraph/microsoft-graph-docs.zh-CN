@@ -2,15 +2,15 @@
 title: 列出 calendarView
 description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例，
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5d593ff2ea0b98f126e0509316c203a03e996877
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e7a8e5c435360a71b8ebd4227bebc7dc645cf99
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517101"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125272"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517101"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

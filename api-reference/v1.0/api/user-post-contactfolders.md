@@ -2,15 +2,15 @@
 title: 创建 ContactFolder
 description: 在用户的默认联系人文件夹下创建新的 contactFolder。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: kevinbellinger
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a0729bc61881606106340dffbc765040386d0e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7835f71ce1ae33cc2c70ef1389de7e048104d35e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508994"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109059"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 

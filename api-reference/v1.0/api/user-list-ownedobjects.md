@@ -1,16 +1,16 @@
 ---
 title: List ownedObjects
 description: 获取用户拥有的 directory 对象的列表。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c270a913fa86d426f06d06f04ee7f55fd94c1270
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86f946307ff6f2f9bca105a616feb3c76507f0c4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509043"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108730"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 

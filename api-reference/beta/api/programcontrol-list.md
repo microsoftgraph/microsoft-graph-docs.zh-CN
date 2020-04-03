@@ -3,18 +3,18 @@ title: 列出 programControls
 description: 在 Azure AD access 评论功能中，列出租户中的所有程序中的所有 programControl 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: e486e99fb3607d7cd093a269331ec75f5146d583
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 15c6b5bf9e0e861132ea5cb21d36ff1f75edd041
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454953"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123069"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42454953"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl、ProgramControl 和所有  |
+|Application                            | ProgramControl、ProgramControl 和所有  |
 
 登录用户还必须位于允许他们读取程序的目录角色中。
 

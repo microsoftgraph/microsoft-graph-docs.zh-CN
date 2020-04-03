@@ -2,15 +2,15 @@
 title: 分配管理器
 description: 分配用户的经理。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2bebf1943fb5c34f6718887f3449afb3ea5c94db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc9b4547e3b2e62a59f8827a88ba1e58a693aa10
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508966"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108296"
 ---
 # <a name="assign-manager"></a>分配管理器
 

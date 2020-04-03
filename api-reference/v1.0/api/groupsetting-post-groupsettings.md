@@ -1,16 +1,16 @@
 ---
 title: 创建组设置
-description: 根据 groupSettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是组级别。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
+description: 根据 groupSettingTemplates 中提供的模板创建新的设置。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06b63deba03bee7646c4d0e0f0323b3720d6073b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9379ade9de508affa2ade5ba23f325617b9b314b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516820"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124502"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 
@@ -29,7 +29,7 @@ ms.locfileid: "42516820"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

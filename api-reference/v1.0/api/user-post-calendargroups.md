@@ -1,16 +1,16 @@
 ---
 title: 创建 CalendarGroup
 description: 使用此 API 创建新的 CalendarGroup。
-author: dkershaw10
+author: harini84
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e925204ffece948da1fe73851353ef8669d372b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5eac9c9aa230b3a6a016437e2a7c1796ce0986c0
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509008"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109080"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
 

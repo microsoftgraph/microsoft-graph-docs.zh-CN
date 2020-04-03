@@ -3,18 +3,18 @@ title: 创建 programControl
 description: 在 "Azure AD access 评论" 功能中，创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6f752a3fb9bfb302a0d3c63b3edec2ef93735510
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454981"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123088"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "42454981"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            |  ProgramControl.ReadWrite.All  |
+|Application                            |  ProgramControl.ReadWrite.All  |
 
 登录用户还必须位于允许他们创建**programControl**的目录角色中。 
 

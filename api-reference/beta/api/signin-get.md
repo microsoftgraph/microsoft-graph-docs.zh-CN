@@ -3,14 +3,14 @@ title: 获取 signIn
 doc_type: apiPageType
 description: 获取一个登录对象，其中包含 Azure Active Directory 租户的所有登录。
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4265807cc72794f3611fdda64d405138931b7df3
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c5cc845408d5aa3077d5150dee5a1ed560065a25
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947312"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123093"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -20,7 +20,7 @@ ms.locfileid: "42947312"
 
 获取一个[登录](../resources/signin.md)对象，其中包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码以及会话令牌的登录。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42947312"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | AuditLog、目录、全部读取。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog、目录、全部读取。所有 | 
+| Application | AuditLog、目录、全部读取。所有 | 
 
 此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 

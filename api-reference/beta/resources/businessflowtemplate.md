@@ -3,18 +3,18 @@ title: businessFlowTemplate 资源类型
 description: 在 Azure AD access 评论功能中， `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符（如审阅组的来宾成员）是由呼叫者在创建访问评审时提供的。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 00075813d011f6c6e66e0c853bfad6545bbc8c97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8f2d7a876c389d86373f608187f310c515f9cd1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507857"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124425"
 ---
 # <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

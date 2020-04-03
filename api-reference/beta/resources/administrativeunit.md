@@ -1,20 +1,20 @@
 ---
 title: administrativeUnit 资源类型
-description: 管理单元为用户和组目录对象提供了一个概念性容器。 通过使用管理单元，公司管理员现在可以将管理责任委派给区域或部门管理员，以管理包含在管理单元或范围内的用户和组。
+description: 管理单元为用户和组目录对象提供了一个概念性容器。
 localization_priority: Normal
-author: davidmu1
+author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d279bcfd605df8d53331cc217d7b5fdb76510659
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c351ac7f06867cc7e8160352babb5e4fca5fe381
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508392"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124957"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "42508392"
 |[更新 adminstrativeUnit](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |更新 administrativeUnit 对象。 |
 |[删除 adminstrativeUnit](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员（用户或组）。|
-|[列出成员](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取（用户和组）成员的列表。|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取（用户和组）成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加作用域角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域角色成员。|
@@ -62,7 +62,7 @@ ms.locfileid: "42508392"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展的集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) 集合|作为此 Adminsitrative 单位的成员的用户和组。 HTTP 方法： GET （list members）、POST （添加成员）、删除（移除成员）。|
+|members|[directoryObject](directoryobject.md) collection|作为此 Adminsitrative 单位的成员的用户和组。 HTTP 方法： GET （list members）、POST （添加成员）、删除（移除成员）。|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法： GET （list scopedRoleMemberships）、POST （add scopedRoleMembership）、DELETE （remove scopedRoleMembership）。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

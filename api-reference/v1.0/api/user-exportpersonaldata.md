@@ -2,15 +2,15 @@
 title: 用户： exportPersonalData
 description: 提交数据策略操作请求，由公司管理员进行导出以导出组织用户的数据。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c47384ff4e78a6dd7cc79a0928c2444e0b24a9a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 826c0699f5d3e2b98cf056816dec7d7ce4b1c6b7
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509207"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109017"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "42509207"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | 将用户导出为 All、User、Read。 All |
+|Application | 将用户导出为 All、User、Read。 All |
 
 >**注意：** 只有在使用委派权限时，公司管理员才能执行导出。
 
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|字符串|这是 Azure 存储帐户的共享访问签名（SAS） URL，应导出数据的位置。|
+|storageLocation|String|这是 Azure 存储帐户的共享访问签名（SAS） URL，应导出数据的位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下响应头。

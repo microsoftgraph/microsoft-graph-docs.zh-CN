@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 93c17cfaad15e50d7eacfaf3f0c9f47825c8064f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0320518218c76a5cbb7201a53b10f23a93d55f96
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511423"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108506"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -25,13 +25,13 @@ ms.locfileid: "42511423"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite、Sites.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Sites.Read.All |
+|Application | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>请求标头

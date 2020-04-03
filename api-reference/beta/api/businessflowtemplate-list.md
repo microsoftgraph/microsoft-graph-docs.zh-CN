@@ -3,18 +3,18 @@ title: 列出 businessFlowTemplates
 description: 在 "Azure AD access 评论" 功能中，列出所有 businessFlowTemplate 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: e2e2f6c14b77b479b94add75643884ca44217870
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28950fe2f76e66307f483adbe75d2e1365c614d5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441009"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123669"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441009"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview、AccessReview、成员身份 |
+|Application                            | AccessReview、AccessReview、成员身份 |
 
 登录用户还必须位于允许他们阅读访问审核的目录角色中。
 

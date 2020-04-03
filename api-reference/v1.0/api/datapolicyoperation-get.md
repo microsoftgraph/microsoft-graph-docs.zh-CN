@@ -2,15 +2,15 @@
 title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 98107647f1eb1158a8a7a9251fc8c1366255cc65
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6979d9f17a7a67e93da32fcc97036304e1cc6dc
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518152"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124264"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -25,7 +25,7 @@ ms.locfileid: "42518152"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | 将用户导出为 All、User、Read。 All | 
+|Application | 将用户导出为 All、User、Read。 All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

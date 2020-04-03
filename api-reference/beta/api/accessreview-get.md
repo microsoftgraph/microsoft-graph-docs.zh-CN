@@ -2,19 +2,19 @@
 title: 获取 accessReview
 description: 在 "Azure AD 访问评论" 功能中，检索 accessReview 对象。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3025d17a421faea8c7aa939b18ab6980d2d333aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b363c2f3be60bd782e6b0524e99b846b2ace9752
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441905"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123536"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42441905"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview、AccessReview、成员身份  |
+|Application                            | AccessReview、AccessReview、成员身份  |
 
 若要调用此 API，登录用户还必须位于允许他们读取访问审核的目录角色中，或者可以将用户作为访问评审的审阅者进行分配。  有关更多详细信息，请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 

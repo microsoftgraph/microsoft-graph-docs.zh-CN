@@ -1,16 +1,16 @@
 ---
 title: List groupSettingTemplates
-description: 组设置模板表示一组模板，用于创建组设置并在租户内使用。此操作将检索可用 groupSettingTemplates 对象的列表。
-author: dkershaw10
+description: 检索可用的 groupSettingTemplates 对象的列表。
+author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d529d7d012a3bdf15c14fcd01482787ba5656636
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b787848edae3766e029918c4f14746f07ac30133
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516799"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124495"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -39,7 +39,7 @@ GET /groupSettingTemplates
 
 > **注意：** 不支持 $filter。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

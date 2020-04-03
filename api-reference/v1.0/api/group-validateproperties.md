@@ -2,15 +2,15 @@
 title: 组： validateProperties
 description: 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06af31a4d0da95bd39fbc5f9c1fd435c9621c5a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b245c242f0c34f2aaf89a3a4987700ae4eaa532
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516898"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124656"
 ---
 # <a name="group-validateproperties"></a>组： validateProperties
 
@@ -32,7 +32,7 @@ ms.locfileid: "42516898"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|Application | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

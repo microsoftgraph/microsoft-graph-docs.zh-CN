@@ -1,16 +1,16 @@
 ---
 title: List photos
 description: 检索 profilePhoto 对象列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31af445d49d1e6629fc615506c5bf2714efae3ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 869ea2c0cebcce8957abfc32374ee288cdcc4fc2
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517052"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125195"
 ---
 # <a name="list-photos"></a>List photos
 
@@ -23,7 +23,7 @@ ms.locfileid: "42517052"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
+|Application | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

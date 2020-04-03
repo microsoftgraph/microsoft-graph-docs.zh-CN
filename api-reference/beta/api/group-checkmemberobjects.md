@@ -2,19 +2,19 @@
 title: 组： checkMemberObjects
 description: 检查指定的组对象的组、目录角色或管理单位列表中的成员身份。
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 736c46ab52d9f8aff3ba014f5bcfae60f0d2ce09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38c362c8ef06ae230b1a4dfbf6a5d5436abf016d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420582"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123907"
 ---
 # <a name="group-checkmemberobjects"></a>组： checkMemberObjects
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42420582"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
+| Application                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

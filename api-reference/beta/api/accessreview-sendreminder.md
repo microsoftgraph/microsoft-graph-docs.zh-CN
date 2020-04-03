@@ -2,19 +2,19 @@
 title: SendReminder accessReview
 description: '在 "Azure AD access 评论" 功能中，向当前活动的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。 '
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 41d82fe28405c5068a10cd5780bd115b293e6e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59cea935a49a1886c4f92651db2b06a280139cea
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441849"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123480"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441849"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

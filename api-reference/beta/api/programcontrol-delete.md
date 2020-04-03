@@ -3,18 +3,18 @@ title: 删除 programControl
 description: 在 "Azure AD access 评论" 功能中，删除 programControl 对象。  这会断开某个程序的访问评审。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 793e4697d7d692f9cf982a9114d8dd54b0280f07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: eb49af67f2475bdaf88351edcbbaa36f67e3c3fe
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454960"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123070"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42454960"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl.ReadWrite.All  |
+|Application                            | ProgramControl.ReadWrite.All  |
 
 登录用户还必须位于允许他们删除的`programControl`目录角色中。
 

@@ -1,16 +1,16 @@
 ---
 title: 列表组设置
 description: 检索组设置对象的列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1fbb56a660c2f111d1e16de549430bde31eec6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb540d0e1b4819abe18d6fa374e1b553eb0297b7
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516827"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124509"
 ---
 # <a name="list-group-settings"></a>列表组设置
 
@@ -43,7 +43,7 @@ GET groups/{id}/settings
 
 >**注意：** 不支持 $filter。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

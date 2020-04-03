@@ -2,15 +2,15 @@
 title: 列出 provisioningObjectSummary
 description: 获取租户中发生的所有设置事件。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926790"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123095"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -20,11 +20,11 @@ ms.locfileid: "42926790"
 
 获取在你的租户中发生的所有设置事件，例如，删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
+|权限类型 | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
 |委派（个人 Microsoft 帐户） | 不支持   |

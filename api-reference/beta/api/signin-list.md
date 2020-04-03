@@ -3,14 +3,14 @@ title: 列出 signIn
 doc_type: apiPageType
 description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0789511f579c6f286365f17f6813ee9048fd9f5d
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: cf580035957a5605fdd013a1d045548fcae4f94f
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947292"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43122997"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -20,7 +20,7 @@ ms.locfileid: "42947292"
 
 获取[登录](../resources/signin.md)对象的列表。 此列表包含 Azure Active Directory 租户的用户登录。 登录，其中用户名和密码作为授权令牌的一部分进行传递，并且成功的联合登录当前包含在登录日志中。 最新的登录首先返回。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42947292"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | AuditLog、目录、全部读取。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog、目录、全部读取。所有 | 
+| Application | AuditLog、目录、全部读取。所有 | 
 
 此外，还必须将应用正确注册到 Azure Active Directory。
 

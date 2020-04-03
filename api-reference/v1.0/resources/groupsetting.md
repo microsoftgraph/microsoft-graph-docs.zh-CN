@@ -1,16 +1,16 @@
 ---
 title: groupSetting 资源类型
 description: 组设置控制诸如组显示名称阻止的单词列表的行为，或者是否允许来宾用户成为组所有者。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dabede2f21d7ed81bd32eee084e044c00382c447
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e8e890e03a3af81a7fcdbdf5c86e203ae702e81
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532920"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125006"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532920"
 
 可以基于可用的[groupSettingTemplates](groupsettingtemplate.md)创建组设置，并将其从预设默认值更改为。 这些设置管理租户级或特定组的组行为。 当同时在租户范围和特定组中定义相同设置时，组级别设置将覆盖租户范围内的设置。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但单个组设置可以覆盖，而不允许由组成员邀请来宾。 组设置仅控制 Office 365 组的行为。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -35,8 +35,8 @@ ms.locfileid: "42532920"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |displayName|String| 来自关联模板的此组设置的显示名称。 |
-|id|字符串| 这些设置的唯一标识符。 只读。 |
-|templateId|字符串| 用于创建此组设置的模板的唯一标识符。 只读。 |
+|id|String| 这些设置的唯一标识符。 只读。 |
+|templateId|String| 用于创建此组设置的模板的唯一标识符。 只读。 |
 |values|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。 |
 
 ## <a name="relationships"></a>关系

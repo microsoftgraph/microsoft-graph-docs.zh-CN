@@ -1,16 +1,16 @@
 ---
 title: 添加所有者
 description: 将所有者添加到应用程序中。
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2623453363ae26cce4d1912f8492b3d55b4479e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70d9e9dd6f72716017c7a562939e1fe7b6055823
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518859"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108590"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -25,7 +25,7 @@ ms.locfileid: "42518859"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。 |
+|Application | Application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

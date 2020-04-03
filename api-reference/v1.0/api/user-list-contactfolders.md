@@ -1,16 +1,16 @@
 ---
 title: List contactFolders
 description: 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。
-author: dkershaw10
+author: kevinbellinger
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c19a7ec29b1c85beb9ece6146588990726bd441
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d1033f9e7034a98631403759b29cc9339f6bfb0
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509127"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108849"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
