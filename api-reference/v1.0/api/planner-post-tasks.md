@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 8c3f3795c1f958cd61cf6eae793e1cc7afb2ca67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82dcc6a4e062e58bde2156d8a0eab278b604ed71
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510975"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124831"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -30,7 +30,6 @@ ms.locfileid: "42510975"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

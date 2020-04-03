@@ -2,15 +2,15 @@
 title: 组资源类型
 description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、Microsoft Teams 中的团队或安全组。
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 84706a54b9628ef142d75804b1950f531bc18282
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497145"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124908"
 ---
 # <a name="group-resource-type"></a>组资源类型
 

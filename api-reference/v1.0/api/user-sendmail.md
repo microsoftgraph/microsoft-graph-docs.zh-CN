@@ -1,16 +1,16 @@
 ---
 title: 发送邮件
 description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
-author: dkershaw10
+author: svpsiva
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 66de4ab4feeee32a7f836d3b575c6ddadd434f7c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 037e503c2b25fb9711ade29941679236d23a2204
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508924"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108233"
 ---
 # <a name="send-mail"></a>发送邮件
 

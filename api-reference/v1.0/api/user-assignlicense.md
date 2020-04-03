@@ -1,16 +1,16 @@
 ---
 title: assignLicense
 description: 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 591f187a04dee15f6bc2086ff11efea5fbaa61eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 389b89066da3cae3fef2d574800083f67e011263
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509242"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106980"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 

@@ -2,15 +2,15 @@
 title: 'user: getMemberGroups'
 description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a5f02e871dbda06df96caf7c9e66e7099673e034
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 141b19c27c5a88cd4366ebaa17200e259a4b105d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509162"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108324"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 

@@ -1,16 +1,16 @@
 ---
 title: 列出联系人
 description: 从已登录用户的默认联系人文件夹中获取联系人集合。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 99062d4f8e13ebc5ec4f429714fea9bd9815bc10
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52d8e36b0b6f00581eba0848c8ee386c1e1a0a23
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509120"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108856"
 ---
 # <a name="list-contacts"></a>列出联系人
 

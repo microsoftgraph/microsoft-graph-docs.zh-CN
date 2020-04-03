@@ -1,16 +1,16 @@
 ---
 title: 获取用户
 description: 检索用户对象的属性和关系。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 60baf9c66ffa77399694a8e9a0ef846fe3be1cd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5d85e1c085bd62a02899453bb805a63c5b91e8c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509186"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108352"
 ---
 # <a name="get-a-user"></a>获取用户
 

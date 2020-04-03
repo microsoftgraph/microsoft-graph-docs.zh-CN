@@ -2,15 +2,15 @@
 title: 'user: getMemberObjects'
 description: 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 482762e4e0b2b4e9a3583a0da5104fa79040e32a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de4158bf3c52fab13e971c5b81fcf93d9b27c127
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509155"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108317"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 

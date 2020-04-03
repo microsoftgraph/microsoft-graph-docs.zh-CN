@@ -1,16 +1,16 @@
 ---
 title: 获取组
 description: 获取组对象的属性和关系。
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 42598f2bfa5a301ce9c4f353e84dec8d7fcd80e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fce130155d653b5e3c749bc5a44627caa3f04941
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419913"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124292"
 ---
 # <a name="get-group"></a>获取组
 

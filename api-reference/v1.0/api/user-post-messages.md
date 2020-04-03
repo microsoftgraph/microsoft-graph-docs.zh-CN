@@ -2,15 +2,15 @@
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1746f6a824f530379d1d6636d3c3b9a93d06d20b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb97265376c0a61ccf7f31d4c0131111ae9accf4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508959"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108289"
 ---
 # <a name="create-message"></a>创建邮件
 

@@ -1,16 +1,16 @@
 ---
 title: 创建应用程序
 description: 创建新的应用程序。
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bf920a7fad3da86d8d44c772a4eda35580b64f71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43b837f2d9f85168b7e4c031f41eabcffe38c72a
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518887"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108667"
 ---
 # <a name="create-application"></a>创建应用程序
 

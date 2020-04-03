@@ -2,15 +2,15 @@
 title: 'user: delta'
 description: 获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eb1e24c2b020a44cf4aabc7e8e8c7c81edba9256
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 2f8ca68d132e59842103961ea4e5a99de3a34b34
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061851"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109031"
 ---
 # <a name="user-delta"></a>user: delta
 

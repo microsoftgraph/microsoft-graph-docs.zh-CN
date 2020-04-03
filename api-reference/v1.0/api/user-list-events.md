@@ -2,15 +2,15 @@
 title: 列出事件
 description: '获取用户邮箱中的 event 对象列表。 该列表中包含单个 '
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: harini84
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 77113931aa23c24984c5ae7d659de00e5b6bcb31
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46c7ce750e2508ee20920782c8c68b34cd9570c5
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509099"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108821"
 ---
 # <a name="list-events"></a>列出事件
 

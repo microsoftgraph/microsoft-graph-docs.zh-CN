@@ -1,16 +1,16 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 91075356fab7906ce578c0e8a3bcbf5ce49d9c16
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8740cd2011f3222b3a37129c66a0129d0b6f75e3
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815997"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108954"
 ---
 # <a name="update-user"></a>更新用户
 

@@ -1,16 +1,16 @@
 ---
 title: 更新组
 description: 更新 group 对象的属性。
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8c839ceddfd297be4f909f0ed522a901881869b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af213a6f2a13308947ee16a572914b1960626e1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516905"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124698"
 ---
 # <a name="update-group"></a>更新组
 

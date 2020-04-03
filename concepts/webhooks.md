@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4833bb30239e5ea30022617c2cf5adfa8b2d0544
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986155"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082348"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -73,6 +73,8 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 不支持 Azure AD B2C 租户。
 
 - 个人 Microsoft 帐户不支持用户实体的通知。
+
+- 用户订阅存在一个[已知问题](graph/concepts/known-issues#change-notifications)。
 
 ### <a name="outlook-resource-limitations"></a>Outlook 资源限制
 

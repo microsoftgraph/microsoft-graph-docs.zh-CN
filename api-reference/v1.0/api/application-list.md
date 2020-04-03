@@ -1,16 +1,16 @@
 ---
 title: 列出应用程序
 description: 获取该组织中应用程序的列表。
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e26393f6fe62bc30a7bc8a97789b153976f71398
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a12773de45e8f79fca57d17df1668ccd3a32c9d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518894"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108373"
 ---
 # <a name="list-applications"></a>列出应用程序
 

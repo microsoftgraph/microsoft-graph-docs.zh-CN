@@ -2,15 +2,15 @@
 title: 列出成员
 description: 获取组的直接成员列表。 组可将用户、组织联系人和其他组作为成员。
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c46a675ee8d7932b9e0621024645cfef67224134
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d441b7e1f3631cb871dfd4cdbec36abbe8ceaba
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517066"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125202"
 ---
 # <a name="list-members"></a>列出成员
 

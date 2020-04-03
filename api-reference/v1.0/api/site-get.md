@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: af50b2eae0287ad31e75c6373b6dedb4c67bd42b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d01ea89091bb718cf98680253f7b80c1c64ebb8c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509799"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108940"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 
@@ -20,18 +20,7 @@ ms.locfileid: "42509799"
 
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
 
-[网站]: ../resources/site.md
-
-**site** 可按唯一标识符进行寻址，此唯一标识符是下列值的复合 ID：
-
-* 网站集主机名称 (contoso.sharepoint.com)
-* 网站集的唯一 ID (GUID)
-* 网站的唯一 ID (GUID)
-
-还有一个保留的网站标识符，即 `root`。它经常用于引用给定目标的根网站，如下所示：
-
-* `/sites/root`：租户根网站。
-* `/groups/{group-id}/sites/root`：该组的团队网站。
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
