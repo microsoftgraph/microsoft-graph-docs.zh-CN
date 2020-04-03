@@ -2,35 +2,35 @@
 title: 'user: getMemberGroups'
 description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a5f02e871dbda06df96caf7c9e66e7099673e034
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 141b19c27c5a88cd4366ebaa17200e259a4b105d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509162"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108324"
 ---
-# <a name="user-getmembergroups"></a><span data-ttu-id="f7437-104">user: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="f7437-104">user: getMemberGroups</span></span>
+# <a name="user-getmembergroups"></a><span data-ttu-id="001ef-104">user: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="001ef-104">user: getMemberGroups</span></span>
 
-<span data-ttu-id="f7437-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7437-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="001ef-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="001ef-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f7437-p102">返回用户是其成员的所有组。检查是可传递的，这和读取 [memberOf](../api/user-list-memberof.md) 导航属性不同，后者仅返回用户是其直接成员的组。</span><span class="sxs-lookup"><span data-stu-id="f7437-p102">Return all the groups that the user is a member of. The check is transitive, unlike reading the [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.</span></span>
+<span data-ttu-id="001ef-p102">返回用户是其成员的所有组。检查是可传递的，这和读取 [memberOf](../api/user-list-memberof.md) 导航属性不同，后者仅返回用户是其直接成员的组。</span><span class="sxs-lookup"><span data-stu-id="001ef-p102">Return all the groups that the user is a member of. The check is transitive, unlike reading the [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.</span></span>
 
-<span data-ttu-id="f7437-p103">此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。</span><span class="sxs-lookup"><span data-stu-id="f7437-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
+<span data-ttu-id="001ef-p103">此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。</span><span class="sxs-lookup"><span data-stu-id="001ef-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f7437-112">权限</span><span class="sxs-lookup"><span data-stu-id="f7437-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="001ef-112">权限</span><span class="sxs-lookup"><span data-stu-id="001ef-112">Permissions</span></span>
 
-<span data-ttu-id="f7437-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f7437-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="001ef-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="001ef-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f7437-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="f7437-115">Permission type</span></span>                        | <span data-ttu-id="f7437-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f7437-116">Permissions (from least to most privileged)</span></span>                                                                                                          |
+| <span data-ttu-id="001ef-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="001ef-115">Permission type</span></span>                        | <span data-ttu-id="001ef-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="001ef-116">Permissions (from least to most privileged)</span></span>                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f7437-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f7437-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7437-118">User.ReadBasic.All 和 GroupMember.Read.All、User.Read 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f7437-118">User.ReadBasic.All and GroupMember.Read.All, User.Read and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read and Group.Read.All,  User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="f7437-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f7437-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7437-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="f7437-120">Not supported.</span></span>                                                                                                                                       |
-| <span data-ttu-id="f7437-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="f7437-121">Application</span></span>                            |  <span data-ttu-id="f7437-122">User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7437-122">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="001ef-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="001ef-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="001ef-118">User.ReadBasic.All 和 GroupMember.Read.All、User.Read 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="001ef-118">User.ReadBasic.All and GroupMember.Read.All, User.Read and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read and Group.Read.All,  User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="001ef-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="001ef-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="001ef-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="001ef-120">Not supported.</span></span>                                                                                                                                       |
+| <span data-ttu-id="001ef-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="001ef-121">Application</span></span>                            |  <span data-ttu-id="001ef-122">User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="001ef-122">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f7437-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f7437-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="001ef-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="001ef-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,35 +38,35 @@ ms.locfileid: "42509162"
 POST /users/{id | userPrincipalName}/getMemberGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f7437-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="f7437-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="001ef-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="001ef-124">Request headers</span></span>
 
-| <span data-ttu-id="f7437-125">标头</span><span class="sxs-lookup"><span data-stu-id="f7437-125">Header</span></span>        | <span data-ttu-id="f7437-126">值</span><span class="sxs-lookup"><span data-stu-id="f7437-126">Value</span></span>                     |
+| <span data-ttu-id="001ef-125">标头</span><span class="sxs-lookup"><span data-stu-id="001ef-125">Header</span></span>        | <span data-ttu-id="001ef-126">值</span><span class="sxs-lookup"><span data-stu-id="001ef-126">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="f7437-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7437-127">Authorization</span></span> | <span data-ttu-id="f7437-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f7437-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f7437-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7437-130">Content-Type</span></span>  | <span data-ttu-id="f7437-131">application/json</span><span class="sxs-lookup"><span data-stu-id="f7437-131">application/json</span></span>          |
+| <span data-ttu-id="001ef-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="001ef-127">Authorization</span></span> | <span data-ttu-id="001ef-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="001ef-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="001ef-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="001ef-130">Content-Type</span></span>  | <span data-ttu-id="001ef-131">application/json</span><span class="sxs-lookup"><span data-stu-id="001ef-131">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="f7437-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="f7437-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="001ef-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="001ef-132">Request body</span></span>
 
-<span data-ttu-id="f7437-133">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f7437-133">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="001ef-133">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="001ef-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f7437-134">参数</span><span class="sxs-lookup"><span data-stu-id="f7437-134">Parameter</span></span>           | <span data-ttu-id="f7437-135">类型</span><span class="sxs-lookup"><span data-stu-id="f7437-135">Type</span></span>    | <span data-ttu-id="f7437-136">说明</span><span class="sxs-lookup"><span data-stu-id="f7437-136">Description</span></span>                                                                                                                                                                                                                                                                         |
+| <span data-ttu-id="001ef-134">参数</span><span class="sxs-lookup"><span data-stu-id="001ef-134">Parameter</span></span>           | <span data-ttu-id="001ef-135">类型</span><span class="sxs-lookup"><span data-stu-id="001ef-135">Type</span></span>    | <span data-ttu-id="001ef-136">说明</span><span class="sxs-lookup"><span data-stu-id="001ef-136">Description</span></span>                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f7437-137">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="f7437-137">securityEnabledOnly</span></span> | <span data-ttu-id="f7437-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="f7437-138">Boolean</span></span> | <span data-ttu-id="f7437-p106">**true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="f7437-p106">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span> |
+| <span data-ttu-id="001ef-137">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="001ef-137">securityEnabledOnly</span></span> | <span data-ttu-id="001ef-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="001ef-138">Boolean</span></span> | <span data-ttu-id="001ef-p106">**true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="001ef-p106">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f7437-141">响应</span><span class="sxs-lookup"><span data-stu-id="f7437-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="001ef-141">响应</span><span class="sxs-lookup"><span data-stu-id="001ef-141">Response</span></span>
 
-<span data-ttu-id="f7437-142">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和字符串集合，响应正文中包括用户是其成员的组的 ID。</span><span class="sxs-lookup"><span data-stu-id="f7437-142">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.</span></span>
+<span data-ttu-id="001ef-142">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和字符串集合，响应正文中包括用户是其成员的组的 ID。</span><span class="sxs-lookup"><span data-stu-id="001ef-142">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f7437-143">示例</span><span class="sxs-lookup"><span data-stu-id="f7437-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="001ef-143">示例</span><span class="sxs-lookup"><span data-stu-id="001ef-143">Example</span></span>
 
-<span data-ttu-id="f7437-144">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f7437-144">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="001ef-144">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="001ef-144">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f7437-145">请求</span><span class="sxs-lookup"><span data-stu-id="f7437-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="001ef-145">请求</span><span class="sxs-lookup"><span data-stu-id="001ef-145">Request</span></span>
 
-<span data-ttu-id="f7437-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f7437-146">Here is an example of the request.</span></span>
+<span data-ttu-id="001ef-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="001ef-146">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f7437-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7437-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="001ef-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="001ef-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmembergroups"
@@ -81,28 +81,28 @@ Content-length: 33
   "securityEnabledOnly": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f7437-148">C#</span><span class="sxs-lookup"><span data-stu-id="f7437-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="001ef-148">C#</span><span class="sxs-lookup"><span data-stu-id="001ef-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f7437-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7437-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="001ef-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="001ef-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f7437-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7437-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="001ef-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="001ef-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f7437-151">Java</span><span class="sxs-lookup"><span data-stu-id="f7437-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="001ef-151">Java</span><span class="sxs-lookup"><span data-stu-id="001ef-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f7437-152">响应</span><span class="sxs-lookup"><span data-stu-id="f7437-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="001ef-152">响应</span><span class="sxs-lookup"><span data-stu-id="001ef-152">Response</span></span>
 
-<span data-ttu-id="f7437-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f7437-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="001ef-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="001ef-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
