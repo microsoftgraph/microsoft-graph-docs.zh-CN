@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 930a51cbbd7a72d6319fd3436e34f39d2feaa9b3
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: bb771961327dfc3c130898a1f62c444761313a4f
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932681"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43127114"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphDriveItem *driveItem = [[MSGraphDriveItem alloc] init];
 [driveItem setName:@"Just some files"];
-[driveItem set@name.conflictBehavior:@"rename"];
+[driveItem set@microsoft.graph.conflictBehavior:@"rename"];
 MSGraphBundle *bundle = [[MSGraphBundle alloc] init];
 [driveItem setBundle:bundle];
 NSMutableArray *childrenList = [[NSMutableArray alloc] init];

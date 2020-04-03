@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 88f694de3bed843d5064d4d86e583606a4f03689
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 49cc5bf90997fdcbead723ace9ef73a623d9f94e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636532"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43127222"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 const driveItem = {
   name: "My Day at the Beach",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   bundle: { album: {} },
   children: [
     { id: "1234asdf" }
