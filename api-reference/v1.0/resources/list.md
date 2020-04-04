@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a63f4bdbf3ef8290a9295bc0ecb9abdee5452b45
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447582"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108443"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -37,6 +37,7 @@ ms.locfileid: "42447582"
 | [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
+| [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [获取列表]: ../api/list-get.md
 [创建列表]: ../api/list-create.md
@@ -44,6 +45,7 @@ ms.locfileid: "42447582"
 [更新列表项]: ../api/listitem-update.md
 [删除列表项]: ../api/listitem-delete.md
 [创建列表项]: ../api/listitem-create.md
+[获取 WebSocket 频道]: ../api/subscriptions-socketio.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -73,6 +75,7 @@ ms.locfileid: "42447582"
     "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -125,6 +128,7 @@ ms.locfileid: "42447582"
 | **项目**         | Collection([listItem][])         | 列表中包含的所有项。
 | **columns**       | Collection([columnDefinition][]) | 此列表的字段定义集合。
 | **contentTypes**  | Collection([contentType][])      | 此列表中出现的内容类型的集合。
+| **订阅** | 集合（[订阅][]）     | 列表上的订阅集。
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -138,6 +142,7 @@ ms.locfileid: "42447582"
 [sharepointIds]: sharepointids.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[订阅]: subscription.md
 
 <!-- {
   "type": "#page.annotation",

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: 3b3d7d2d82ab2a6539ace2fa143ceaad55722336
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba048773d49c2fdea3896f3200a3c9112af0969e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531563"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108380"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 
@@ -57,6 +57,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
   "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "string (timestamp)",
@@ -97,6 +98,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
+| following    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
 | items        | [DriveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
 | root         | [DriveItem](driveitem.md)            | 驱动器的根文件夹。只读。
 | special      | [DriveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。 只读。 可为 Null。
@@ -110,6 +112,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | [获取用户默认驱动器的根文件夹][item-get]       | `GET /drive/root`           |
 | [列出驱动器下的子项][item-children]             | `GET /drive/root/children`  |
 | [列出驱动器中所有项的变更][item-changes]    | `GET /drive/root/delta`     |
+| [列出用户的关注 driveItems][drive-following]         | `Get /drive/followed`       |
 | [搜索驱动器中的项][item-search]               | `GET /drive/root/search`    |
 | [访问特殊文件夹](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
@@ -124,6 +127,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
+[drive-following]: ../api/drive-list-following.md
 
 
 <!-- {

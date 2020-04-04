@@ -6,12 +6,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1878b46f7738f440808960e43310b2d7606ee22f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ba96c6cc62bd6efbff8e0efb6062104d994090c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533696"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108548"
 ---
 # <a name="site-resource"></a>site 资源
 
@@ -30,6 +30,8 @@ ms.locfileid: "42533696"
 | [获取分析结果][]              | [itemAnalytics][] | 对此资源可获取分析。 
 | [按间隔获取活动][] | [itemActivityStat][] | 在指定的时间间隔内获取 **itemActivityStats** 的集合。
 | [搜索网站][]     | 网站集合 | 在 SharePoint 租户中搜索与所提供的关键字匹配的 网站。
+| [关注网站][]          | 网站集合 | 关注用户的网站或多个网站。
+| [取消关注网站][]        | 网站集合 | 关注用户的网站或多个网站。
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -39,6 +41,8 @@ ms.locfileid: "42533696"
 [按间隔获取活动]: ../api/itemactivitystat-getactivitybyinterval.md
 [搜索网站]: ../api/site-search.md
 [itemActivityStat]: itemactivitystat.md
+[关注网站]: ../api/site-follow.md
+[取消关注网站]: ../api/site-unfollow.md
 
 ## <a name="properties"></a>属性
 
@@ -56,6 +60,17 @@ ms.locfileid: "42533696"
 | **siteCollection**       | [siteCollection](sitecollection.md) | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。 |
 | **webUrl**               | string (url)                        | 在浏览器中显示此项目的 URL。只读。                                          |
 
+### <a name="id-property"></a>id 属性
+**site** 由一个唯一 ID 标识，此唯一 ID 由以下值组成：
+* 网站集主机名称 (contoso.sharepoint.com)
+* 网站集的唯一 ID (GUID)
+* 网站的唯一 ID (GUID)
+  
+`root` 标识符经常用于引用给定目标的根网站，如下所示：
+
+* `/sites/root`：租户根网站。
+* `/groups/{group-id}/sites/root`：该组的团队网站。
+  
 ## <a name="relationships"></a>关系
 
 | 关系      | 类型                             | 说明

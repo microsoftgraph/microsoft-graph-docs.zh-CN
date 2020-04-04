@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b825101cc3b32ea3ab562bd317c7dc511cc00079
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8f8c8450f568917e5211048c164e02ad503e869
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533401"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108191"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -30,8 +30,9 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Office 365 组[对话][] | 查看组的对话：<br>`groups/{id}/conversations` | 否 |
 | OneDrive（个人版）上的 [driveItem][] | 对_任何文件夹_的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
 | OneDrive for Business 上的 [driveItem][] | 对_根文件夹_的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
+| SharePoint [网站][]下的[列表][] | _列表_内的内容更改： <br>`/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | 对所有团队中所有频道聊天消息更改：<br>`/teams/allMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/allMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | 对所有团队中所有频道聊天消息更改：<br>`/teams/allMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/allMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 
@@ -41,9 +42,9 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
-| 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[事件][]、[邮件][]                                        |
-| 应用程序                            | [警报][]、[联系人][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
+| 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[列表][]、 [事件][]、[组][]、[邮件][]、[用户][]|
+| 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[邮件][]                                        |
+| 应用程序                            | [警报][]、[联系人][]、[列表][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
 
 
 ## <a name="see-also"></a>另请参阅
@@ -58,6 +59,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [联系人]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [事件]: ./event.md
 [组]: ./group.md
 [邮件]: ./message.md

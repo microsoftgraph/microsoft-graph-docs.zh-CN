@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2fa13c414d45561110d1fa1310cfc913efec6118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 789d049a836e5e2aaa879a3239e370e55d7951ce
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534068"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108464"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -119,6 +119,25 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 }
 ```
 
+### <a name="existing-access-link"></a>现有的访问链接
+
+此链接不会向用户授予任何其他特权。
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### <a name="sharing-invitation"></a>共享邀请
 除了创建共享链接之外，还可以通过电子邮件地址邀请用户。 在此方案中，权限创建的是发送到用户电子邮件地址的邀请。
 
@@ -168,9 +187,10 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 | [添加](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
 | [更新](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [添加用户至共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>说明
 
 OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。
 

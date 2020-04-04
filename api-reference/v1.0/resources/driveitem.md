@@ -6,12 +6,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 016c1e9efc290082a0ab6136496f0eeeeab9be4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15dfedfda092f2c4a742699f40359de51d9ffc0e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531550"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108562"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -194,6 +194,8 @@ ms.locfileid: "42531550"
 | [复制项目](../api/driveitem-copy.md)                    | 有关如何[监视复制操作进度](/graph/long-running-actions-overview)的详细信息。 | 创建 driveItem（包括任何子项）的副本。
 | [搜索项目](../api/driveitem-search.md)               | driveItem 集合 | 在项目层次结构中搜索与查询匹配的项目。
 | [列出驱动器中的更改](../api/driveitem-delta.md)     | 三角链接 | 列出驱动器中的任何更改。
+| [关注项目](../api/driveitem-follow.md)                | driveItem  | 关注 driveItem。
+| [取消关注项目](../api/driveitem-unfollow.md)            | 无内容 | 取消关注 driveItem。
 | [列出缩略图](../api/driveitem-list-thumbnails.md)   | driveItem 集合 | 使用缩略图列出 driveItems。 
 | [创建共享链接](../api/driveitem-createlink.md)    | 共享链接 | 创建共享 driveItem 的链接。
 | [添加权限](../api/driveitem-invite.md)            | [权限][]集合 | 向用户发送共享邀请。
@@ -216,7 +218,7 @@ ms.locfileid: "42531550"
 [folder]: folder.md
 [获取旧版本]: ../api/driveitem-list-versions.md
 [获取缩略图]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

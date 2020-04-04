@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a490257ccc1ba17e7e425c24126c24689c612a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ede2274abebbba1148762f5d3606cd61a4578a4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533605"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108429"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -21,6 +21,7 @@ ms.locfileid: "42533605"
 - Microsoft Graph 安全性 API 中的[警报][]
 - Office 365 组的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
+- SharePoint [网站][]下的[列表][] 
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
 - Azure Active Directory 中的[用户][]或[组][]
 
@@ -40,7 +41,7 @@ ms.locfileid: "42533605"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
+| changeType | string | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 必需。 将接收通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 |
 | resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
@@ -60,6 +61,7 @@ ms.locfileid: "42533605"
 | 联系人            | 4230 分钟（不到 3 天）    |
 | 组对话 | 4230 分钟（不到 3 天）    |
 | 驱动器根项    | 4230 分钟（不到 3 天）    |
+| SharePoint 列表     | 4230 分钟（不到 3 天）    |
 | 安全警报     | 43200分钟（不到 30 天）  |
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。
@@ -110,6 +112,8 @@ ms.locfileid: "42533605"
 [contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [事件]: ./event.md
 [组]: ./group.md
 [邮件]: ./message.md
