@@ -3,14 +3,14 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 91b11006df02d563902b99c79c4b1ec09bb7e50a
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 175370b3c00ebaef0db85912c032898e2dacb5e7
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639938"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144301"
 ---
-# <a name="people-picker-component"></a>人员-选取器组件
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的人员选取器组件
 
 您可以使用`mgt-people-picker` web 组件搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。 默认情况下，组件将搜索所有人员;您还可以定义组属性以进一步筛选结果。
 
@@ -82,10 +82,12 @@ mgt-people-picker {
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
+| 设置 | null：无数据 | 用于覆盖整个组件的呈现的模板。
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
-| error | null：无数据| 用户搜索不返回用户时使用的模板。 |
-| 选定的人员 |人员：人员详细信息对象| 呈现所选人员的模板。 |
-| 朋友 | 人员：人员详细信息对象| 用于在下拉列表中呈现人员的模板。 |
+| error | null：无数据 | 用户搜索不返回用户时使用的模板。 |
+| 无数据 | null：无数据 | 如果用户搜索不返回用户，则使用备用模板。 |
+| 选定的人员 | 人员：人员详细信息对象 | 呈现所选人员的模板。 |
+| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 下面的示例演示如何使用`error`模板。
 
@@ -110,3 +112,19 @@ mgt-people-picker {
 ## <a name="authentication"></a>身份验证
 
 该控件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。
+
+## <a name="extend-for-more-control"></a>扩展以实现更多控制
+
+对于更复杂的方案或真正的自定义 UX，此组件`protected render*`将公开几种用于在组件扩展中进行重写的方法。
+
+| 方法 | 说明 |
+| - | - |
+| renderInput | 呈现输入文本框。 |
+| renderSelectedPeople | 呈现所选人员标记。 |
+| renderSelectedPerson | 呈现单个人员标记。 |
+| renderFlyout | 呈现浮出控件的镶边。 |
+| renderFlyoutContent | 在 "结果" 浮出控件中呈现适当的状态。 |
+| renderLoading | 呈现加载状态。 |
+| renderNoData | 在未找到搜索查询的结果时呈现状态。 |
+| renderSearchResults | 呈现搜索结果的列表。 |
+| renderPersonResult | 呈现单个个人的搜索结果。 |

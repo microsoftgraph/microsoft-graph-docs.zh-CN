@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: 您可以使用`mgt-people` web 组件显示一组用户或联系人，方法是使用其照片或缩写。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 78dc1504d7f46756809abcf922dfcea431fd796c
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 34b7877b16d7f97d201e7bd96e1378c1e542bbcf
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639959"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144294"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -66,6 +66,7 @@ mgt-people {
 | `person` | `person`： person 对象 | 用于呈现每个人的模板。 |
 | `overflow` | `people`： person 对象列表 <br> `max`：显示的人员的数量 <br> `extra`：额外人员数 | 用于将数字呈现在人员列表右侧的最大值之后的模板。 |
 | `no-data` | 不传递数据上下文 | 没有可用数据时使用的模板。 |
+| `loading` | 不传递数据上下文 | 组件加载状态时使用的模板。
 
 下面的示例演示如何使用`person`模板。
 
@@ -86,10 +87,22 @@ mgt-people {
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
-| Resource | 权限 |
+| 资源 | 权限 |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
 ## <a name="authentication"></a>身份验证
 
 该控件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。
+
+## <a name="extend-for-more-control"></a>扩展以实现更多控制
+
+对于更复杂的方案或真正的自定义 UX，此组件`protected render*`将公开几种用于在组件扩展中进行重写的方法。
+
+| 方法 | 说明 |
+| - | - |
+| renderLoading | 呈现加载状态。 |
+| renderNoData | 呈现空数据状态。 |
+| renderPeople | 呈现最大`show-max`值的人员列表。 |
+| renderPerson | 呈现单个人员。 |
+| renderOverflow | 呈现除`show-max`值之外的剩余人员的表示形式。 |

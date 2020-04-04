@@ -5,18 +5,20 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 75074f6602ac3c7b633a734dcf0ff3dc5c68ab1d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 758e8ac28680a6d6625f3a5f0d14c70ee0f9596a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125167"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144133"
 ---
 # <a name="list-threads"></a>列出线程
 
-命名空间： microsoft. graph 获取组的所有线程。
+命名空间：microsoft.graph
 
->注意：还可以 [获取会话的所有线程](conversation-list-threads.md)。
+获取组的所有线程。
+
+>**注意：** 您还可以[获取会话的所有线程](conversation-list-threads.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +27,7 @@ ms.locfileid: "43125167"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

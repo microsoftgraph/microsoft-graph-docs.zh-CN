@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "议程" 组件
 description: "\"管理中心议程\" web 组件用于表示用户或组日历中的事件。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 334da23db286c7243b9722cae443913219a97f7f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: d8112a876c148ef9463f57d87a3a899194d3491a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639945"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144322"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "议程" 组件
 
@@ -120,7 +120,7 @@ mgt-agenda {
 
 若要了解详细信息，请参阅[模板](../templates.md)。
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
 从控件触发以下事件。
 
@@ -129,17 +129,33 @@ mgt-agenda {
 | eventClick | 用户单击或点击事件。|
 
 
-## <a name="graph-scopes"></a>图表范围
+## <a name="permissions"></a>权限
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
-| resource | 权限/范围 |
+| 资源 | 权限 |
 | - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
-组件允许您指定要调用的其他 Microsoft Graph 查询（例如`/groups/{id}/calendar/calendarView`）。 在这种情况下，将作用域追加到字符串的末尾，并将其分隔`|`
+组件允许您指定要调用的其他 Microsoft Graph 查询（例如`/groups/{id}/calendar/calendarView`）。 在这种情况下，将权限追加到字符串的末尾，并将`|`其作为分隔符。
 
 ## <a name="authentication"></a>身份验证
 
 登录控件利用[身份验证文档](./../providers.md)中所述的全局验证提供程序。
 
+## <a name="extend-for-more-control"></a>扩展以实现更多控制
+
+对于更复杂的方案或真正的自定义 UX，此组件`protected`在组件扩展中公开了几种用于覆盖的 render * 方法。
+
+| 方法 | 说明 |
+| - | - |
+| renderLoading | 在加载组件时呈现加载状态。 |
+| renderNoData | 呈现空数据状态。 |
+| renderGroups | 将事件数据分为组，并使用组标头进行呈现。 |
+| renderHeader | 呈现组标头。 |
+| renderEvents | 呈现事件对象的列表。 |
+| renderEvent | 呈现单数事件及其所有部件。
+| renderTitle | 呈现事件标题部分。 |
+| renderLocation | 呈现事件位置部分。 |
+| renderAttendees | 呈现事件的与会者部件。 |
+| renderOther | 呈现其他事件内容。 |

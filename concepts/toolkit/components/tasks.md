@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的任务组件
 description: 通过 "任务" 组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 或 Microsoft 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 80da5522b73051df4d5c264e5289845b9521058f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639917"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144273"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的任务组件
 
@@ -31,6 +31,7 @@ ms.locfileid: "42639917"
 | 数据源 = "todo/planner" | dataSource | 用于配置任务的数据源的枚举-Microsoft To Do 或 Microsoft Planner。 默认值为 `planner`。 |
 | 只读 | 只读 | 一个布尔值，用于将任务接口设置为只读（不添加或删除任务）。 默认值为 `false`。 |
 | 隐藏-页眉 | hideHeader | 一个 Boolean 类型的值，用于显示或隐藏组件的标题。 默认值为 `false`。 |
+| 隐藏-选项 | hideOptions | 一个 Boolean 类型的值，用于显示或隐藏任务中的选项。 默认值为 `false`。
 | 初始 id = "planner_id/folder_id" | initialId | 一个字符串 ID，用于将最初显示的 planner 或文件夹设置为所提供的 ID。 |
 | 初始存储桶-id = "bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶（仅 Planner 数据源）设置为提供的 ID。 |
 | 目标-id = "planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务界面锁定为提供的 planner 或文件夹 ID。 |
@@ -102,10 +103,23 @@ mgt-tasks {
 --task-complete-header-color
 --task-complete-detail-color
 --task-complete-detail-icon-color
+
+--task-icon-background-completed
+--task-icon-background
+
+--task-icon-border-completed
+--task-icon-border
+
+--task-icon-color
+--task-icon-color-completed
+
+--task-icon-border-radius
+
+--task-icon-alignment: flex-start (default) | center | flex-end
 }
 ````
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 | 事件 | 详细信息 | 说明 |
 | --- | --- | --- |
 | taskClick | 详细信息包含各自`task`的对象 | 当用户单击或点击某项任务时激发。 |
@@ -138,7 +152,7 @@ mgt-tasks {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| Resource | 权限 |
+| 资源 | 权限 |
 | - | - |
 | /me/planner/plans | Group.Read.All |
 | /planner/plans/$ {id} | Group.Read.All、Group.ReadWrite.All |

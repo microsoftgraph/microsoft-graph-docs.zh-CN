@@ -3,12 +3,12 @@ title: Microsoft Teams 提供程序
 description: 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 08fe1e2e33ddc31ee88ed32dc4d57fdefac0c8fc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 850d414557313a2a16b3cd5c1c4b854cc1b00081
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866866"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144266"
 ---
 # <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
@@ -35,7 +35,7 @@ ms.locfileid: "40866866"
 ```
 
 | 属性 | 说明 |
-| --- | --- | --- |
+| --- | --- |
 | 客户端 id   | 字符串客户端 ID （请参阅配置团队应用）。 必需。 |
 | auth-popup-url  | 将在弹出窗口中处理 auth 的页面的绝对或相对路径（请参阅 Create the popup page）。 必需。 |
 | scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。 |

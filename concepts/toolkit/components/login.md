@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的登录组件
 description: 登录组件是一个按钮和飞出控件，可促进 Microsoft 身份平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3b326cc97bf7a3463e43ffcf757cc34d5cc00975
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 5ef2856f6cd86e9fe35523d6cf8f6ac9174860a8
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639980"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144308"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的登录组件
 
@@ -70,7 +70,7 @@ mgt-login {
 
 若要了解详细信息，请参阅[样式组件](../style.md)。
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
 从控件触发以下事件。
 
@@ -89,3 +89,26 @@ mgt-login {
 ## <a name="authentication"></a>身份验证
 
 登录控件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。 
+
+## <a name="extend-for-more-control"></a>扩展以实现更多控制
+
+对于更复杂的方案或真正的自定义 UX，此组件`protected render*`将公开几种用于在组件扩展中进行重写的方法。
+
+| 方法 | 说明 |
+| - | - |
+| renderButton | 呈现按钮 chrome。 |
+| renderButtonContent | 呈现按钮内容。 |
+| renderFlyout | 呈现浮出控件的镶边。 |
+| renderFlyoutContent | 呈现浮出控件内容。 |
+
+### <a name="bring-your-own-flyout"></a>引入自己的浮出控件
+
+可以通过重写`renderFlyout()`方法并提供新的浮出控件，使用您自己的飞出组件来替换内置的飞入组件。
+
+在这种情况下，请重写`protected`浮出控件的显示方法以更新您的替代浮出控件的可见性，以确保登录组件继续按预期方式工作。
+
+| 方法 | 说明 |
+| - | - |
+| hideFlyout | 关闭浮出控件。 |
+| showFlyout | 显示浮出控件。 |
+| toggleFlyout | 切换浮出控件的状态。 |

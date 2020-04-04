@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0202d8bc8c8ae23f98cb4add9f9d5ca96afea04d
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 53cd4d8bb7a2bb23a3c54924ee07b4843e7fc503
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639952"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144280"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -82,9 +82,11 @@ mgt-person {
 
 组件支持多个[模板](../templates.md)，这些模板允许您替换组件的某些部分。 `mgt-person` 若要指定模板，请在`<template>`组件内添加一个元素，并`data-type`将值设置为下列值之一：
 
-| 数据类型     | 数据上下文              | 说明                                                       |
-| ---------     | ------------------------- | ----------------------------------------------------------------- |
-| 设置     | 人员：人员详细信息对象 <br> `personImage`：图像的 URL | 默认模板会将整个组件替换为您自己的组件。 |
+| 数据类型 | 数据上下文 | 说明 |
+| --------- | ------------ | ----------- |
+| 装载 | 无 | 要在组件处于 laoding 状态时呈现的模板。 |
+| 无数据 | 无 | 在没有人员图像或数据可用时要呈现的模板。 | 
+| 设置 | 人员：人员详细信息对象 <br> `personImage`：图像的 URL | 默认模板会将整个组件替换为您自己的组件。 |
 | 人员-卡片 | 人员：人员详细信息对象 <br> `personImage`：图像的 URL | 用于更新在悬停或单击时显示的 "管理员-卡片" 的模板。 |
 
 下面的示例定义了 "人员" 组件的模板。
@@ -113,7 +115,7 @@ mgt-person {
 
 | 属性    |  属性     | 说明                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| 人员-卡片 | personCard | 一个枚举，用于确定激活浮出式面板- `hover`或`click`的必需用户操作。 默认值为`none` |
+| 人员-卡片 | personCardInteraction | 一个枚举，用于确定激活浮出式面板- `hover`或`click`的必需用户操作。 默认值为`none` |
 
 
 有关模板化、样式和属性的详细信息，请参阅[人员卡片组件](./person-card.md)。
@@ -122,7 +124,7 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| Resource                                                                                                    | 权限     |
+| 资源                                                                                                    | 权限     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
@@ -135,3 +137,16 @@ mgt-person {
 ## <a name="authentication"></a>身份验证
 
 该控件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序提取所需的数据。
+
+## <a name="extend-for-more-control"></a>扩展以实现更多控制
+
+对于更复杂的方案或真正的自定义 UX，此组件`protected render*`将公开几种用于在组件扩展中进行重写的方法。
+
+| 方法 | 说明 |
+| - | - |
+| renderLoading | 呈现加载状态。 |
+| renderImage | 呈现图像部件。 |
+| renderNoData | 在没有图像或人员数据可用时呈现。 |
+| renderDetails | 呈现人员详细信息部分。 |
+| renderEmail | 呈现人员详细信息的电子邮件子部分。 |
+| renderName | 呈现人员详细信息的子部分的名称。 |

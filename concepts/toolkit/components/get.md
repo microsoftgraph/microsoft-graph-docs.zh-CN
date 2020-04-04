@@ -3,12 +3,12 @@ title: 获取 Microsoft Graph 工具包中的组件
 description: 通过获取组件，可以在 HTML 中直接在 Microsoft Graph 中进行任何 GET 查询。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7c9c3fcc804dd5ba8257a1140791fa2eb60ff4ce
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: b9dcbd5af4c9938dce821c30021a4cf3439fd1b2
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639966"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144315"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>获取 Microsoft Graph 工具包中的组件
 
@@ -32,10 +32,17 @@ ms.locfileid: "42639966"
 | scopes | scopes | 如果使用属性或以逗号分隔的范围（如果使用属性），则为可选的字符串数组。 组件将使用这些作用域（使用受支持的提供程序），以确保用户已同意正确的权限。 |
 | version | version | 在发出 GET 请求时要使用的可选 API 版本。 默认值为 `v1.0`。  |
 | 最大页数 | maxPages | 可选页数（针对支持分页的资源）。 默认值为3。 将此值设置为0将获取所有页面。  |
+| 轮询率 | pollingRate | 可选的 miliseconds 数量。 设置后，组件将按照定义的时间间隔轮询更新的请求 URI。 如果使用 delta 查询，轮询将始终查询 delta API。 模板仅在数据更改时才会刷新。 |
 | 不适用 | 响应 | 如果请求成功，则为来自 Microsoft Graph 的只读响应。  |
 | 不适用 |error| 如果请求不成功，则为 Microsoft Graph 中的只读错误。 |
 
-## <a name="events"></a>活动
+## <a name="methods"></a>方法
+| 方法 | 说明 |
+| --- | --- |
+| refresh （强制？：布尔值） | 调用方法以刷新数据。 默认情况下，UI 仅在数据发生更改时才会更新。 通过`true`传递以强制更新组件。  |
+
+
+## <a name="events"></a>事件
 | 事件 | 详细信息 | 说明 |
 | --- | --- | --- |
 | dataChange | 详细信息包含`response`和`error`对象。 | 在响应或错误发生更改时激发。 |
@@ -47,6 +54,7 @@ ms.locfileid: "42639966"
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 | 设置 | 来自 Microsoft Graph 的响应。 | 若要呈现来自 Microsoft Graph 的数据，则需要默认模板。 |
+| 值 | 返回`value`的数组中的数据项 | 在预期`value`来自图表的响应`default`以包含一组项目（如**邮件**、**文件**或**用户**）时，使用模板而不是模板。 该`value`模板将自动为资源返回的每个项目重复。 `value`模板还将在项目准备就绪后立即开始呈现项目（与默认模板不同）。|
 | error | Microsoft Graph 中的错误。 | 如果发出请求时出错，将使用此模板。 |
 | 装载 | 不适用 | 在发出请求时使用此模板。 |
 

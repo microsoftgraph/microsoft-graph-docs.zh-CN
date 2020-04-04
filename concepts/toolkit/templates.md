@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的模板
 description: 使用自定义模板修改组件的内容。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a69460b788a2e3ef7558ba8e0f0630557943d463
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 46a1f9b771f358de6099bf1266c10c4c1ebe0cb0
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953597"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144259"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的模板
 
@@ -122,47 +122,87 @@ ms.locfileid: "41953597"
 </template>
 ```
 
-## <a name="converters"></a>转换器
+## <a name="templatecontext"></a>TemplateContext
 
-在很多情况下，您可能需要在将数据呈现在模板中之前对数据进行转换。 例如，您可能希望在呈现日期之前正确设置日期格式。 在这些情况下，您可能需要使用模板转换器。
-
-若要使用模板转换器，首先需要定义将执行转换的函数。 例如，您可以定义一个函数来设置日期格式。
+Microsoft Graph 工具包中的每个组件都`templateContext`定义了属性，可使用该属性将其他数据传递到组件中的任何模板。 
 
 ```ts
-getTimeRange(event) {
-  // TODO: format a string from the event object as you wish
-  // timeRange = ...
+document.querySelector('mgt-agenda').templateContext = {
 
-  return timeRange;
+  someObject: {},
+  formatDate: (date: Date) => { /* format date and return */ },
+  someEventHandler: (e) => { /* handleEvent */  }
+
 }
 ```
 
-然后，在元素上定义新的转换器并将其命名为 "匹配"。
+此时，该`templateContext`对象中的属性将可用于模板中的绑定表达式。
+
+这在很多情况下都很有用，例如在绑定中转换数据或绑定到事件。 
+
+### <a name="converters"></a>转换器
+
+在很多情况下，您可能需要在将数据呈现在模板中之前对数据进行转换。 例如，您可能希望在呈现日期之前正确设置日期格式。 在这些情况下，您可能需要使用模板转换器。
+
+若要使用模板转换器，首先需要定义将执行转换的函数。 例如，您可以定义一个函数来将事件对象转换为格式化的时间范围。
 
 ```ts
-let agenda = document.querySelector('mgt-agenda');
-agenda.templateConverters["myConverter"] = getTimeRange;
+document.querySelector('mgt-agenda').templateContext = {
+
+  getTimeRange: (event) => {
+    // TODO: format a string from the event object as you wish
+    // timeRange = ...
+
+    return timeRange;
+  }
+
+}
 ```
 
-若要在模板中使用转换器，请使用三向花括号。
+若要在模板中使用转换器，请使用它，就像在代码隐藏中使用函数一样。
 
 ```html
 <template data-type="event">
-  <div>{{{ myConverter(event) }}}</div>
+  <div>{{ getTimeRange(event) }}</div>
 </template>
 ```
 
-您还可以使用内置函数，而无需定义模板转换器。
+### <a name="event-or-property-binding"></a>事件或属性绑定
+
+`data-props`属性允许您添加事件侦听器或直接在模板中设置属性值。 
 
 ```html
-<template data-type="event">
-  <div>{{{ event.subject.toUpperCase() }}}</div>
+<template>
+    <button data-props="{{@click: myEvent, myProp: value}}"></button>
 </template>
 ```
+
+对于您可能想要设置的每个属性或事件处理程序，数据属性接受以逗号分隔的字符串。 
+
+若要添加事件处理程序，请为事件的名称加`@`上前缀。 事件处理程序将需要在元素`templateContext`的中可用。
+
+```ts
+document.querySelector('mgt-agenda').templateContext = {
+
+  someEventHandler: (e, context, root) => { /* handleEvent */  }
+
+}
+```
+
+```html
+<template>
+    <button data-props="{{@click: someEventHandler}}"></button>
+</template>
+```
+
+将模板的事件参数、数据上下文和根元素作为参数传递给事件处理程序。
+
 
 ## <a name="template-rendered-event"></a>模板呈现事件
 
-在某些情况下，您可能需要获取对呈现的元素的引用。 这在向模板中的元素添加事件侦听器时非常有用。 在这种情况下，可以使用`templateRendered`事件。
+在某些情况下，您可能需要获取对呈现的元素的引用。 如果您希望自己处理内容的呈现，或者想要修改呈现的元素，这会非常有用。
+
+在这种情况下，您可以`templateRendered`使用事件，该事件将在呈现模板后触发。
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');
