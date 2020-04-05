@@ -6,16 +6,16 @@ description: 授予用户列表访问权限以使用指定的链接
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c7679c07be231e9127686a1abf15fe4d9a80482a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 901b5c7b7e67b0d45a0d4891b239fa950d864119
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455940"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146392"
 ---
-# <a name="grant-permission"></a>授予权限
+# <a name="permission-grant"></a>权限：授予
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -65,7 +65,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 | recipients         | 集合（[driveRecipient][]） | 将接收访问权限的收件人集合。
 | 角色              | 集合（字符串）             | 如果链接是 "现有访问" 链接，则指定要向用户授予的角色。 否则，必须与链接的角色相匹配。
 
-如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration-values)。
+有关可用角色的列表，请参阅[roles 属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="response"></a>响应
 

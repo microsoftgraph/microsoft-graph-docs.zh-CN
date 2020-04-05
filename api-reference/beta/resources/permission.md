@@ -6,12 +6,12 @@ description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c35134e39618121f9aa7b29c490a6d8427b4a373
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4a7eaa3b075e6a5c8a7b234e721c5d224bd489f9
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108198"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146371"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -75,9 +75,9 @@ ms.locfileid: "43108198"
 | 角色               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId             | String                      | 可用于通过 **[shares API][]** 访问此共享项的唯一令牌。 只读。
 | expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh： MM： ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
-| hasPassword         | Boolean                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
+| hasPassword         | 布尔                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
 
-### <a name="roles-enumeration-values"></a>角色枚举值
+### <a name="roles-property-values"></a>Roles 属性值
 
 | 值        | 详细信息                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -145,9 +145,9 @@ ms.locfileid: "43108198"
 }
 ```
 
-### <a name="existing-access-link"></a>现有访问链接
+### <a name="existing-access-link"></a>现有的访问链接
 
-此链接不向用户授予任何其他权限。
+此链接不会向用户授予任何其他特权。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
 
@@ -249,7 +249,7 @@ ms.locfileid: "43108198"
 | [邀请人员][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [更新](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [将用户添加到共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [添加用户至共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md
