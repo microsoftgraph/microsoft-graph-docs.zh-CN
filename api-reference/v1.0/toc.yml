@@ -3272,7 +3272,7 @@
                   href: api/driveitem-createlink.md
                 - name: 使用共享链接
                   href: api/shares-get.md
-                - name: 将用户添加到共享链接
+                - name: 授予对共享链接的访问权限
                   href: api/permission-grant.md
                 - name: 列出权限
                   href: api/driveitem-list-permissions.md
