@@ -3,14 +3,52 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 76c967e9674f9d3fbb0dd92db179aef4843e3f52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 57e96bb808a18531880ad1de3b194669441a8f3b
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729036"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146380"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="february-2020-new-and-generally-available"></a>2020 年 2 月：新版本和正式版
+
+### <a name="calendar"></a>日历
+浏览“[在共享或委派日历中创建事件](outlook-create-event-in-shared-delegated-calendar.md)”示例，或浏览可用于此流程期间的代理人、受邀者和日历所有者的操作与属性。
+
+### <a name="identity-and-access"></a>身份和访问
+- 为了提升在订阅“[更改用户通知](webhooks.md)”的安全性，强制在通知流程中使用的客户端和网站服务器上[强制执行传输层安全性（TLS）1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)或更高。 新要求自 2020 年 2 月 15 日起分阶段推出。 到 2020 年 5 月 15 日，所有通知端点必须符合新的 TLS 要求。 [找出推出阶段](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)，如有必要，请使用新的 **latestSupportedTlsVersion** 属性作为临时解决方法，以避免订阅失败，然后再完成 TLS 升级。
+- 使用相应类型的[威胁评估请求](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0)跟踪[邮件](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0)、[电子邮件文件](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0)（.EML 文件）、[电子邮件附件文件](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0)（文本、Word 或二进制文件）或 [URL](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0) 中的威胁。
+
+### <a name="users"></a>用户
+[重新处理](/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)[用户](/graph/api/resources/user?view=graph-rest-1.0)的所有基于组的许可证分配。
+
+
+## <a name="february-2020-new-in-preview-only"></a>2020 年 2 月：仅限预览版中的新增功能
+
+### <a name="calendar"></a>日历
+参看“[管理日历共享和委派的预览版 API 所支持的任务](outlook-share-or-delegate-calendar.md)”。
+
+### <a name="cloud-communications"></a>云通信
+
+- 使用新的[通话记录](/graph/api/resources/callrecord?view=graph-rest-beta)资源，在 Microsoft Teams 和 Skype for Business 上为组织获取通话和联机会议的元数据。
+- 对于会议中的参与者，请使用 **initiator** 属性获取[记录](/graph/api/resources/recordinginfo?view=graph-rest-beta)（如果有）的发起人的标识信息。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [2 月](changelog.md#february-2020)更新。
+
+### <a name="groups"></a>组
+使用 [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) 方法将产品（如 Office 365 或企业移动性 + 安全性）的许可证分配给组。 由于 Azure AD 可确保将许可证分配给组的成员，因此加入或离开组的成员不再需要单独级别的许可证管理。
+
+### <a name="identity-and-access"></a>身份和访问
+- 创建[访问包分配策略](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)时设置请求程序、审批和审阅设置。
+- 使用 `/policies` URL 段并指定策略类型，访问[组织的特定类型的策略](/graph/api/resources/policy-overview?view=graph-rest-beta)。 例如，组织可以强制实施 Web 会话在一段时间不活动后自动从该会话注销用户的策略；请参阅 [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta) 的实例的 CRUD 操作。 这是一项[重大更改](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/)，可以通过对 `/policies` 段下所有类型的策略进行分组，以便更易于发现所有策略。 采用类似的方法访问其他类型的策略：[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)、[homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta)、[tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) 和 [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-beta)。 
+- 使用应用程序级和委派的 `Policy.ReadWrite.ApplicationConfiguration` 权限，以读取和写入有关前一项中所述的应用程序配置[策略](/graph/api/resources/policy-overview?view=graph-rest-beta)的操作。
+
+### <a name="teamwork"></a>团队合作
+- 在组织中的所有频道消息或所有聊天消息中使用[更改通知](/graph/api/resources/webhooks?view=graph-rest-beta)。
+- [拒绝](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta)与[团队](/graph/api/resources/team?view=graph-rest-beta)中的其他用户[换班的请求](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta)。
 
 ## <a name="january-2020-new-and-generally-available"></a>2020 年 1 月：新版本和正式版
 
