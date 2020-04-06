@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3eb6871cbe4b68addf3924b3641cf5559a78374f
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 8eba391c859003d926424667f01e36a79d81ecb3
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144337"
+ms.locfileid: "43146364"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -18,11 +18,11 @@ ms.locfileid: "43144337"
 
 ## <a name="initial-team-creation"></a>初始团队创建
 
-所有团队都由 Office 365 组提供支持。 在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Office 365 组、所有的所有者和成员，然后将其转换为团队。
+所有团队都由 Office 365 组提供支持。 在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Office 365 组、所有者和成员，然后将其转换为团队。
 
-1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-beta)”操作来创建 [Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 如果你正在尝试建立课堂团队，请使用“[创建 educationClass](/graph/api/educationroot-post-classes?view=graph-rest-beta)”操作。 你可以指定所有者和成员。 确保新创建的团队拥有正确的所有者，如步骤 2 所述。
+1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-1.0)”操作来创建 [Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 你可以指定所有者和成员。 确保新创建的组拥有正确的所有者，如步骤 2 所述。
 
-    若要添加团队，必须设置以下属性值，如下所示：
+    为了为此组创建团队，需要设置以下属性值，如下所示：
 
     - **groupTypes** = { "Unified" } 
     - **mailEnabled** = true
@@ -65,11 +65,11 @@ ms.locfileid: "43144337"
     }
     ```
 
-2. 确保团队具有两个或多个所有者。 可通过“[添加所有者](/graph/api/group-post-owners?view=graph-rest-beta)”操作来实现这一点。 这些应为真实的用户帐户，而不是服务帐户。 拥有两个所有者有助于处理以下情况：一个所有者离开公司或无法执行团队管理操作。
+2. 确保组有两个或多个所有者。 可通过“[添加所有者](/graph/api/group-post-owners?view=graph-rest-1.0)”操作来实现这一点。 这些应为真实的用户帐户，而不是服务帐户。 拥有两个所有者有助于处理以下情况：一个所有者离开公司或无法执行团队管理操作。
 
-3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-beta)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。
+3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。
 
-4. 成功创建组（完成步骤 1 后最多需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-put-teams?view=graph-rest-beta)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。
+4. 成功创建组（完成步骤 1 后最多需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。
 
     ```http
     PUT /groups/{id}/team
@@ -102,7 +102,7 @@ ms.locfileid: "43144337"
 
 ## <a name="adding-or-managing-members"></a>添加或管理成员
 
-若要在创建团队后添加成员，请使用“[添加成员](/graph/api/group-post-members?view=graph-rest-beta)”操作。 请注意以下与成员身份更改有关的事项：
+若要在创建团队后添加成员，请使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作。 请注意以下与成员身份更改有关的事项：
 
 1. 对 Office 365 组进行的成员身份更改通过后台同步机制同步到 Teams，此过程通常需要 24 小时（在某些情况下需要更长时间）。
 
