@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8eba391c859003d926424667f01e36a79d81ecb3
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 80779619006da786652fa02f9d041975e4909e27
+ms.sourcegitcommit: fadf83089455674ee721c22d59f7d54758d21896
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146364"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43148257"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -69,11 +69,15 @@ ms.locfileid: "43146364"
 
 3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。
 
-4. 成功创建组（完成步骤 1 后最多需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。
+4. 成功创建组（完成步骤 1 后最多需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。 
 
     ```http
-    PUT /groups/{id}/team
-    { }
+    POST https://graph.microsoft.com/beta/teams
+    Content-Type: application/json
+    {
+      "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+      "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+    }
     ```
 
     以下示例显示了相应的响应。 
@@ -81,18 +85,11 @@ ms.locfileid: "43146364"
     >**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有属性都是从实际调用返回。
 
     ```http
-    HTTP/1.1 200 OK
-    Content-type: application/json
-    Content-length: xxx
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json
+    Location: /teams/{teamId}/operations/{operationId}
+    Content-Location: /teams/{teamId}
     {
-        "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
-        "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
-        "webUrl" : "https://example.com",
-        "isArchived" : null,
-        "memberSettings" : { },
-        "guestSettings" : { },
-        "messagingSettings" : { },
-        "funSettings" : {}
     }
     ```
 

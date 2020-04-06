@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 789d049a836e5e2aaa879a3239e370e55d7951ce
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 770a57c3e8a0fa5bd0579bbfeb6e4fab5089cca2
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108464"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146413"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -73,7 +73,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 
-## <a name="roles-enumeration"></a>角色枚举
+### <a name="roles-property-values"></a>角色属性值
 
 | 角色        | 详细信息                                                                        |
 |:------------|:-------------------------------------------------------------------------------|

@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 864a38bd5133d471ab0c56d220dc8c2e9fe51ffc
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 126fc15aafb1f6c24aefa5976800fbb1f1008bb6
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108996"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146350"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,20 +17,6 @@ ms.locfileid: "43108996"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="march-2020"></a>2020 年 3 月
-
-### <a name="reports-apis"></a>报表 API
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项        | Beta  | 向 [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta) 实体添加了 **networkDisplayName** 属性。|
-
-### <a name="cloud-communications"></a>云通信
-
-| **更改类型** | **版本** | **说明** |
-|:---|:---|:---|
-|添加项|v1.0|在 [call](/graph/api/resources/call) 集合上添加了 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) 函数。|
-|添加项|v1.0|向 [call](/graph/api/resources/call.md) 实体添加了 **callChainId** 属性。|
-|添加项|v1.0|新增了复杂类型：<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality)。|
 
 ### <a name="calendar"></a>日历
 
@@ -45,17 +31,6 @@ ms.locfileid: "43108996"
 |:----------------|:------------|:-----------------------------------------|
 | 添加项 | beta | 增加了 [orgContact delta 查询](/graph/api/orgcontact-delta?view=graph-rest-beta)支持。|
 | 添加项 | v1.0 | 增加了 [orgContact delta 查询](/graph/api/orgcontact-delta?view=graph-rest-1.0)支持。|
-
-### <a name="cloud-communications"></a>云通信
-
-| **更改类型** | **版本** | **说明** |
-|:---|:---|:---|
-|添加项|beta|在 [call](/graph/api/resources/call) 集合上添加了 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) 函数。|
-|添加项|beta|向 [call](/graph/api/resources/call?view=graph-rest-beta) 实体添加了 **callChainId** 属性。|
-|添加项|beta|新增了复杂类型：<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality)。|
-| 添加项 | beta | 新增了 [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) 方法。|
-| 添加项 | beta | 新增了 **externalId** 属性。 |
-|添加项|beta|为[联机会议](/graph/api/resources/onlinemeeting)`Accept-Language`增加了可选标题。
 
 ### <a name="cloud-communications--call"></a>云通信 | 呼叫
 
@@ -77,6 +52,17 @@ ms.locfileid: "43108996"
 |添加项|v1.0|已将新属性 **final** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 实体。
 |Addition|v1.0|已将新属性 **original** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 复杂类型。
 |添加项|v1.0|已将新属性 **routingType** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 复杂类型。
+|添加项|Beta 和 v1.0|在 [call](/graph/api/resources/call) 集合上添加了 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) 函数。|
+|添加项|Beta 和 v1.0|向 [call](/graph/api/resources/call) 实体添加了 **callChainId** 属性。|
+|添加项|Beta 和 v1.0|新增了复杂类型：<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality)。|
+
+### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
+
+| **更改类型** | **版本** | **说明** |
+|:---|:---|:---|
+| 添加项 | beta | 新增了 [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) 方法。|
+| 添加项 | beta | 向 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 添加了可选的 **externalId** 属性。 |
+|添加项|beta|为[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)`Accept-Language`增加了可选标题。
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -116,7 +102,7 @@ ms.locfileid: "43108996"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | Beta 和 v1.0 | 已将 **image** 和 **video** 属性添加至 [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0) 资源。 这些属性可在组合展开功能时，允许检索媒体类型缩略图。  |
-| Addition | v1.0 | 向 [permission](/graph/api/resources/permission?view=graph-rest-v1.0) 实体添加了 **grant** 操作。 |
+| Addition | v1.0 | 向 [permission](/graph/api/resources/permission?view=graph-rest-1.0) 实体添加了 **grant** 操作。 |
 | Addition        | v1.0        | 向 [drive](/graph/api/resources/drive?view=graph-rest-v1.0) 实体添加了 **following** 导航属性。 |
 | Addition        | v1.0        | 在 [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) 上添加了 [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) 操作。 |
 | Addition        | v1.0        | 在 [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) 上添加了 [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) 操作。 |
@@ -131,7 +117,7 @@ ms.locfileid: "43108996"
 | 添加项 | beta | 向 [Privileged Identity Management - Azure 资源](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) 添加了 PrivilegedAccess.Read.AzureResources 应用程序权限。|
 | 添加项 | beta | 添加了 [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) 权限，用于列出用户的登录活动。|
 | 添加项 | beta | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta)，它表示 Azure Active Directory 安全默认值策略。|
-| 添加项 | beta | 已将 `$top` 和 `$skiptoken` 过滤器支持添加至 [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list.md) 方法的支持分页上。 |
+| 添加项 | beta | 已将 `$top` 和 `$skiptoken` 过滤器支持添加至 [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) 方法的支持分页上。 |
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>身份和访问 (Azure AD) | 条件访问
 
@@ -144,6 +130,7 @@ ms.locfileid: "43108996"
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 更改          | Beta 和 v1.0  | 为了使委派权限允许应用代表用户读取 Office 365 服务使用情况报告，已将 Teams 服务管理员和 Teams 通信管理员添加为接受的用户角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。|
+| 添加项        | Beta  | 向 [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta) 实体添加了 **networkDisplayName** 属性。|
 
 ### <a name="search"></a>搜索
 
@@ -160,11 +147,7 @@ ms.locfileid: "43108996"
 | :-------------- | :---------- | :-------------------------------------- |
 | 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体集添加了 [followSite](/graph/api/follow-site?view=graph-rest-1.0) 导航属性。 |
 | Addition        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) 导航属性。 |
-
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
-| **更改类型** | **版本** | **说明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0       | 向 [list](/graph/api/resources/list?view=graph-rest-v1.0) 实体添加了 **subscriptions** 导航属性。 |
+| 添加项        | v1.0       | 向 [list](/graph/api/resources/list?view=graph-rest-1.0) 实体添加了 **subscriptions** 导航属性。 |
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
@@ -672,7 +655,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|beta|向 [mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-beta) 实体添加了 **androidMobileApplicationManagementEnabled** 和 **iosMobileApplicationManagementEnabled** 属性|
 |更改|beta|更改了 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体上的以下属性：<br/>将 **energySaverOnBatteryThresholdPercentage** 从必需属性更改为可选属性<br/>将 **energySaverPluggedInThresholdPercentage** 从必需属性更改为可选属性<br/>|
 |添加|beta|向 [windowsAutopilotDeploymentProfileAssignment](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofileassignment?view=graph-rest-beta) 实体添加了 **source** 和 **sourceId** 属性|
-|添加|beta|向 [channel](/graph/api/resources/channel?view=graph-rest-beta) 实体添加了 **filesFolder** 导航属性|
+|添加项|beta|向 [channel](/graph/api/resources/channel?view=graph-rest-beta) 实体添加了 **filesFolder** 导航属性|
 |添加|beta|向 [deviceAppManagement](/graph/api/resources/intune-unlock-deviceappmanagement?view=graph-rest-beta) 实体添加了 **wdacSupplementalPolicies** 导航属性|
 |添加|beta|向 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) 实体添加了 **assignments**、**runSummary** 和 **deviceRunStates** 导航属性|
 |添加|beta|向 [deviceManagement](/graph/api/resources/intune-devices-devicemanagement?view=graph-rest-beta) 实体添加了 **deviceHealthScripts**、**userExperienceAnalyticsDevicePerformance**、**userExperienceAnalyticsRegressionSummary**、**userExperienceAnalyticsDeviceStartupHistory**、**groupPolicyMigrationReports** 和 **reports** 导航属性|
@@ -2290,7 +2273,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [editionUpgradeLicenseType](/graph/api/resources/intune-deviceconfig-editionupgradelicensetype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员|
 |添加项|beta|向 [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) 枚举类型添加了 **unknown** 成员|
 |添加项|beta|向 [mobileAppActionType](/graph/api/resources/intune-troubleshooting-mobileappactiontype?view=graph-rest-beta) 枚举类型添加了 **userRequestedInstall** 成员|
-|添加|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员
+|添加项|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
@@ -2663,7 +2646,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 |更改类型|版本|说明|
 |:---|:---|:---|
-|Addition|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
+|添加项|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|新增了复杂类型：<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>publication</b> 属性 |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>versions</b> 导航属性 |
@@ -4123,7 +4106,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 添加了 shared 集合以允许按 shareId 或共享 URL 访问共享的 driveItem。 |
-| Addition        | Beta        | 向驱动器添加了 _search_ 函数，允许搜索驱动器根文件夹之外的更多项。 |
+| 添加项        | Beta        | 向驱动器添加了 _search_ 函数，允许搜索驱动器根文件夹之外的更多项。 |
 
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
