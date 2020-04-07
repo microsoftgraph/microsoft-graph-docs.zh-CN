@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8dd6ac12419af35e361b39c34017d18943315cee
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3df2bb5775da4042920474890a5c115fe2466de5
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986035"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144236"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "42986035"
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **注意：** 应用程序权限已弃用，并将于 2020 年 4 月删除。
+> \* **注意：** 应用程序权限已弃用，并将于 2020 年 7 月删除。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ POST /me/onlineMeetings
 #### <a name="request"></a>请求
 
 > [!Note]
-> 使用应用程序令牌创建联机会议已弃用，并将于 2020 年4 月删除支持。 今后，将 /me 路径与用户令牌结合使用来创建联机会议。
+> 使用应用程序令牌创建联机会议已弃用，并将于 2020 年 7 月删除支持。 今后，将 /me 路径与用户令牌结合使用来创建联机会议。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

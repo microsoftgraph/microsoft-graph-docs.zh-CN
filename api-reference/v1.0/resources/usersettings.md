@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 862316ba98cab7ccbbaa1c6f7cc909924e400d59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b05dfe80d4131a75f01a3c588ed1c2e33c3df833
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533419"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144091"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 
@@ -23,6 +23,9 @@ ms.locfileid: "42533419"
 
 - 检查用户及用户的组织是否对内容发现做贡献。
 - 为特定用户禁用或启用内容发现。 这也会禁用 Office Delve 中的文档。
+
+> [!NOTE]
+> 此终结点仅适用于用户。 无法将此终结点用于联系人。
 
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|

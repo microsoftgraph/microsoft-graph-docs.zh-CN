@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d9b347e03c55e4e575e69f663f83820fb7f28015
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 893c03041d8b601ed101d7e6e61775738c040058
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062558"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144231"
 ---
 # <a name="create-group"></a>创建组
 
@@ -55,13 +55,14 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
+| displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
 | description | string | 组说明。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 必需。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Office 365 组），请设置为 **true**。 必需。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
+|visibility|String|指定 Office 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 

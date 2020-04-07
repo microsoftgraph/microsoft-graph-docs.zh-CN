@@ -32,7 +32,7 @@ items:
       - name: 教程
         items:
           - name: 概述
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -165,12 +165,9 @@ items:
       - name: Financials（预览版）
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
-      - name: 身份和访问
+      - name: 身份和访问控制
         href: azuread-identity-access-management-concept-overview.md
         displaName: 'Azure AD, Microsoft identity platform'
-        items:
-          - name: 信息保护
-            href: information-protection-overview.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
@@ -295,6 +292,8 @@ items:
             href: security-authorization.md
           - name: 集成解决方案
             href: security-integration.md
+          - name: 信息保护
+            href: information-protection-overview.md
           - name: 合作伙伴机遇
             href: security-partner-overview.md
       - name: 网站和列表
@@ -466,20 +465,22 @@ items:
             items:
               - name: 登录
                 href: toolkit/components/login.md
+              - name: 获取
+                href: toolkit/components/get.md
               - name: 人员
                 href: toolkit/components/person.md
               - name: 人员
                 href: toolkit/components/people.md
+              - name: 个人卡片
+                href: toolkit/components/person-card.md
+              - name: 人员选取器
+                href: toolkit/components/people-picker.md
+              - name: Teams 频道选取器
+                href: toolkit/components/teams-channel-picker.md
               - name: 日程
                 href: toolkit/components/agenda.md
               - name: 任务
                 href: toolkit/components/tasks.md
-              - name: 人员选取器
-                href: toolkit/components/people-picker.md
-              - name: 个人卡片
-                href: toolkit/components/person-card.md
-              - name: 获取
-                href: toolkit/components/get.md
           - name: 提供程序
             items:
               - name: 使用提供程序

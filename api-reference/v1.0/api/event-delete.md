@@ -5,18 +5,21 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dca4aab41ccd5f82fd2c28de93b538448fbf719a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 172ce64c23c50cd91647dee3be5e28333cd9e6a2
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517381"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144217"
 ---
 # <a name="delete-event"></a>删除事件
 
 命名空间：microsoft.graph
 
-删除事件。
+从包含的日历中删除指定[事件](../resources/event.md)。 
+
+如果事件是会议，则在组织者的日历上删除事件会向与会者发送取消邮件。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
