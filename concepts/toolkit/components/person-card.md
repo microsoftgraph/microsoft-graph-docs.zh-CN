@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的个人卡片组件
 description: "\"个人卡片\" 组件是显示与某个人相关的详细信息的组件。"
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3d440f1340f9ee3f40c37538b1befcacd9867dc1
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 60989eddf28fd421a4cf35fcc6bd9f7433aa9852
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144287"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160308"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的个人卡片组件
 
@@ -41,13 +41,15 @@ TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 
 ## <a name="properties"></a>属性
 
-组件使用 Microsoft Graph 提供有关用户的其他详细信息。 若要定义用户，必须使用的`mgt-person`**人员查询**属性。
+默认情况下， `mgt-person`组件会将人员详细信息传递给`mgt-person-card`组件。 但是，在对`mgt-person`组件进行模板化或使用`mgt-person-card`组件作为独立组件时，可以使用这些属性来更改此属性。
 
 | 属性         | 类型                     | 说明                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | 人员-详细信息 | MicrosoftGraph <br> MicrosoftGraph <br> MicrosoftGraph。联系人 | 由 Microsoft Graph 定义的 Person 对象，包含与用户相关的详细信息。 |
 | 人员-图像   | png/jpg/svg                    | 与卡片中显示的人员相关的图像。                                   |
 | 继承-详细信息   | 无。                  | 允许人员卡片遍历父树 for `mgt-person` component 以使用相同`person-details`和`person-image`数据。                      |
+| 用户 id | string | 允许开发人员提供用户 id 以检索在人员卡片组件上显示的数据 |
+| 人员-查询 | string | 允许开发人员提供人员查询以检索在人员卡片组件上显示的数据 |
 
 
 ## <a name="templates"></a>模板
@@ -129,4 +131,3 @@ mgt-person {
 | renderExpandedDetails | 在展开的详细信息容器中呈现内容。 |
 | renderContactDetails | 呈现展开的详细信息的 "联系人详细信息" 部分。 |
 | renderAdditionalDetails | 呈现展开的详细信息的其他详细信息部分。 |
-

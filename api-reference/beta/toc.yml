@@ -9386,6 +9386,19 @@
                       href: api/unifiedroleassignment-get.md
                     - name: 删除角色分配
                       href: api/unifiedroleassignment-delete.md
+                - name: 角色分配多个
+                  href: resources/unifiedroleassignmentmultiple.md
+                  items:
+                    - name: 列表
+                      href: api/unifiedroleassignmentmultiple-list.md
+                    - name: 创建
+                      href: api/unifiedroleassignmentmultiple-post.md
+                    - name: 获取
+                      href: api/unifiedroleassignmentmultiple-get.md
+                    - name: 更新
+                      href: api/unifiedroleassignmentmultiple-delete.md
+                    - name: 删除
+                      href: api/unifiedroleassignmentmultiple-delete.md
             - name: 服务主体
               href: resources/serviceprincipal.md
               items:
@@ -9865,7 +9878,7 @@
                 - name: Interests
                   href: resources/personinterest.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-interests.md
                     - name: 创建
                       href: api/profile-post-interests.md

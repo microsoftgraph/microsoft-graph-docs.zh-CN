@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ecbb1314d79c79f2db4d92c5011a31994fcd91e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d5c161ed6144ebdc7300935702891e6aa244113
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454526"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160273"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +61,6 @@ GET /roleManagement/directory/roleDefinitions
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions"
@@ -70,20 +69,6 @@ GET /roleManagement/directory/roleDefinitions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -111,9 +96,6 @@ Content-type: application/json
             "displayName": "Helpdesk Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
-            "resourceScopes": [
-                "/"
-            ],
             "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
             "version": "1",
             "rolePermissions": [
@@ -138,9 +120,6 @@ Content-type: application/json
             "displayName": "Service Support Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
-            "resourceScopes": [
-                "/"
-            ],
             "templateId": "f023fd81-a637-4b56-95fd-791ac0226033",
             "version": "1",
             "rolePermissions": [
@@ -162,9 +141,6 @@ Content-type: application/json
             "displayName": "Billing Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
-            "resourceScopes": [
-                "/"
-            ],
             "templateId": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
             "version": "1",
             "rolePermissions": [
