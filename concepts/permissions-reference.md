@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 36e3e84a0cb6d96545df9c97234c74305afbd6a1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 002221d8520fb2e379588e71bb7eccfb43475708
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061914"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160301"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -700,6 +700,8 @@ Microsoft 个人帐户不支持组功能。
 应用程序权限对受支持的 API 有一些限制。有关详细信息，请参阅[已知问题](known-issues.md)。
 
 在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_ 权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta)。
+
+要设置 Office 365 组的 **preferredDataLocation** 属性，应用需要目录权限。 当多地理位置环境中的用户创建 Office 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定的 PDL 创建 Office 365 组](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
 
 组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。不支持 Microsoft 个人帐户。
 

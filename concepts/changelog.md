@@ -3,18 +3,26 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 126fc15aafb1f6c24aefa5976800fbb1f1008bb6
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: c66a1d38f9f63136c202a675608c58bf4b8ec57f
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146350"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160287"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph API 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="april-2020"></a>2020 年 4 月
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+
+| **更改类型** | **版本**   | **说明** |
+|:---|:---|:---|
+| 添加项 | Beta | 添加了 [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta)、[rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta) 和 [appScope](/graph/api/resources/appscope?view=graph-rest-beta) 以及以下操作：<br><li>[列出 unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[获取 unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[创建 unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[更新 unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[删除 unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>。 |
 
 ## <a name="march-2020"></a>2020 年 3 月
 
@@ -651,7 +659,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **filesNetworkDriveAccessBlocked**、**filesUsbDriveAccessBlocked** 和 **wifiPowerOnForced** 属性|
 |删除|beta|从 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体中删除了 **wiFiBlockPowerModification** 属性|
 |添加项|beta|向 [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) 实体添加了 **previousPinBlockCount**、**maximumAllowedDeviceThreatLevel** 和 **mobileThreatDefenseRemediationAction** 属性|
-|添加|beta|向 [mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta) 实体添加了 **source** 和 **sourceId** 属性|
+|添加项|beta|向 [mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta) 实体添加了 **source** 和 **sourceId** 属性|
 |添加|beta|向 [mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-beta) 实体添加了 **androidMobileApplicationManagementEnabled** 和 **iosMobileApplicationManagementEnabled** 属性|
 |更改|beta|更改了 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体上的以下属性：<br/>将 **energySaverOnBatteryThresholdPercentage** 从必需属性更改为可选属性<br/>将 **energySaverPluggedInThresholdPercentage** 从必需属性更改为可选属性<br/>|
 |添加|beta|向 [windowsAutopilotDeploymentProfileAssignment](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofileassignment?view=graph-rest-beta) 实体添加了 **source** 和 **sourceId** 属性|
@@ -2646,7 +2654,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加项|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
+|Addition|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|新增了复杂类型：<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>publication</b> 属性 |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>versions</b> 导航属性 |

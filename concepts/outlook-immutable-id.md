@@ -4,12 +4,12 @@ description: 借助不可变标识符，应用程序可为 Outlook 项获取在�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ba38d0aba0063b66c0a51e235c193a57741e9988
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: e5b92760e3de8d36190c83a57997f70b55b34ed1
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994955"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160294"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
@@ -34,7 +34,6 @@ Prefer: IdType="ImmutableId"
 
 - 用户将该项移到存档邮箱中。
 - 用户先将该项导出（到 PST 等，作为 MSG 文件），再将它重新导入邮箱。
-- 用户发送草稿邮件。 “已发送邮件”中副本的不可变 ID 与草稿邮件的不可变 ID 并不是同一 ID。
 
 ## <a name="items-that-support-immutable-id"></a>支持不可变 ID 的项
 
@@ -48,6 +47,17 @@ Prefer: IdType="ImmutableId"
 - [outlookTask 资源类型](/graph/api/resources/outlooktask)
 
 虽然容器类型（mailFolder、calendar 等）不支持不可变 ID，但其常规 ID 已是常量。
+
+## <a name="immutable-id-with-sending-mail"></a>使用发送邮件发送不可变 ID
+
+发送完邮件后，可以使用不可变 ID 在“已发送邮件”文件夹中查找邮件，方法如下：
+
+1. 使用 `Prefer: IdType="ImmutableId"` 标头[创建邮件草稿](/graph/api/user-post-messages)，并将邮件的 `id` 属性保存在响应中。
+1. 使用上一步中的 ID [发送邮件](/graph/api/message-send)。
+1. 使用第一步中的 ID [获取邮件](/graph/api/message-get)。 这是“已发送邮件”中的副本。
+
+> [!NOTE]
+> 发送邮件后，无法立即在“已发送邮件”中获取邮件。 在成功发送邮件之前，不会创建邮件的副本，这可能需要一些时间。
 
 ## <a name="immutable-id-with-change-notifications"></a>使用更改通知发送不可变 ID
 
