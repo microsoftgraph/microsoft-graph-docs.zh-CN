@@ -5,35 +5,35 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 44a8f786f4b492ae094c9b8ef12b9eff125d7218
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 4b3987f3f6ca012167717c49c0de032a9f672377
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591528"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42815861"
 ---
-# <a name="create-threatassessmentrequest"></a><span data-ttu-id="2cfc0-103">创建 threatAssessmentRequest</span><span class="sxs-lookup"><span data-stu-id="2cfc0-103">Create threatAssessmentRequest</span></span>
+# <a name="create-threatassessmentrequest"></a><span data-ttu-id="30406-103">创建 threatAssessmentRequest</span><span class="sxs-lookup"><span data-stu-id="30406-103">Create threatAssessmentRequest</span></span>
 
-<span data-ttu-id="2cfc0-104">创建新的威胁评估请求。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-104">Create a new threat assessment request.</span></span>
+<span data-ttu-id="30406-104">创建新的威胁评估请求。</span><span class="sxs-lookup"><span data-stu-id="30406-104">Create a new threat assessment request.</span></span>
 
-<span data-ttu-id="2cfc0-105">威胁评估请求可以是以下类型之一：</span><span class="sxs-lookup"><span data-stu-id="2cfc0-105">A threat assessment request can be one of the following types:</span></span>
+<span data-ttu-id="30406-105">威胁评估请求可以是以下类型之一：</span><span class="sxs-lookup"><span data-stu-id="30406-105">A threat assessment request can be one of the following types:</span></span>
 
-* [<span data-ttu-id="2cfc0-106">邮件</span><span class="sxs-lookup"><span data-stu-id="2cfc0-106">Mail</span></span>](../resources/mailAssessmentRequest.md)
-* [<span data-ttu-id="2cfc0-107">电子邮件文件</span><span class="sxs-lookup"><span data-stu-id="2cfc0-107">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
-* [<span data-ttu-id="2cfc0-108">文件</span><span class="sxs-lookup"><span data-stu-id="2cfc0-108">File</span></span>](../resources/fileAssessmentRequest.md)
-* [<span data-ttu-id="2cfc0-109">URL</span><span class="sxs-lookup"><span data-stu-id="2cfc0-109">URL</span></span>](../resources/urlAssessmentRequest.md)
+* [<span data-ttu-id="30406-106">邮件</span><span class="sxs-lookup"><span data-stu-id="30406-106">Mail</span></span>](../resources/mailAssessmentRequest.md)
+* [<span data-ttu-id="30406-107">电子邮件文件</span><span class="sxs-lookup"><span data-stu-id="30406-107">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
+* [<span data-ttu-id="30406-108">文件</span><span class="sxs-lookup"><span data-stu-id="30406-108">File</span></span>](../resources/fileAssessmentRequest.md)
+* [<span data-ttu-id="30406-109">URL</span><span class="sxs-lookup"><span data-stu-id="30406-109">URL</span></span>](../resources/urlAssessmentRequest.md)
 
-## <a name="permissions"></a><span data-ttu-id="2cfc0-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="2cfc0-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="30406-110">权限</span><span class="sxs-lookup"><span data-stu-id="30406-110">Permissions</span></span>
 
-<span data-ttu-id="2cfc0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="30406-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="30406-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2cfc0-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="2cfc0-113">Permission type</span></span>                        | <span data-ttu-id="2cfc0-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2cfc0-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="30406-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="30406-113">Permission type</span></span>                        | <span data-ttu-id="30406-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="30406-114">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="2cfc0-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2cfc0-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="2cfc0-116">ThreatAssessment。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-116">ThreatAssessment.ReadWrite.All.</span></span>             |
-| <span data-ttu-id="2cfc0-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2cfc0-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2cfc0-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-118">Not supported.</span></span>                              |
-| <span data-ttu-id="2cfc0-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="2cfc0-119">Application</span></span>                            | <span data-ttu-id="2cfc0-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-120">Not supported.</span></span>                              |
+| <span data-ttu-id="30406-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="30406-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="30406-116">ThreatAssessment。</span><span class="sxs-lookup"><span data-stu-id="30406-116">ThreatAssessment.ReadWrite.All.</span></span>             |
+| <span data-ttu-id="30406-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="30406-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30406-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="30406-118">Not supported.</span></span>                              |
+| <span data-ttu-id="30406-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="30406-119">Application</span></span>                            | <span data-ttu-id="30406-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="30406-120">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="2cfc0-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="30406-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="30406-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,28 +41,30 @@ ms.locfileid: "42591528"
 POST /informationProtection/threatAssessmentRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2cfc0-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="2cfc0-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="30406-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="30406-122">Request headers</span></span>
 
-| <span data-ttu-id="2cfc0-123">名称</span><span class="sxs-lookup"><span data-stu-id="2cfc0-123">Name</span></span>          | <span data-ttu-id="2cfc0-124">说明</span><span class="sxs-lookup"><span data-stu-id="2cfc0-124">Description</span></span>   |
+| <span data-ttu-id="30406-123">名称</span><span class="sxs-lookup"><span data-stu-id="30406-123">Name</span></span>          | <span data-ttu-id="30406-124">说明</span><span class="sxs-lookup"><span data-stu-id="30406-124">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="2cfc0-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2cfc0-125">Authorization</span></span> | <span data-ttu-id="2cfc0-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="30406-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="30406-125">Authorization</span></span> | <span data-ttu-id="30406-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="30406-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2cfc0-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="2cfc0-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="30406-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="30406-128">Request body</span></span>
 
-<span data-ttu-id="2cfc0-129">在请求正文中，提供[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-129">In the request body, supply a JSON representation of a [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.</span></span>
+<span data-ttu-id="30406-129">在请求正文中，提供[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="30406-129">In the request body, supply a JSON representation of a [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2cfc0-130">响应</span><span class="sxs-lookup"><span data-stu-id="2cfc0-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="30406-130">响应</span><span class="sxs-lookup"><span data-stu-id="30406-130">Response</span></span>
 
-<span data-ttu-id="2cfc0-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-131">If successful, this method returns a `201 Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.</span></span>
+<span data-ttu-id="30406-131">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="30406-131">If successful, this method returns a `201 Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2cfc0-132">示例</span><span class="sxs-lookup"><span data-stu-id="2cfc0-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="30406-132">示例</span><span class="sxs-lookup"><span data-stu-id="30406-132">Examples</span></span>
 
-### <a name="example-1-create-a-mail-assessment-request"></a><span data-ttu-id="2cfc0-133">示例1：创建邮件评估请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-133">Example 1: Create a mail assessment request</span></span>
+### <a name="example-1-create-a-mail-assessment-request"></a><span data-ttu-id="30406-133">示例1：创建邮件评估请求</span><span class="sxs-lookup"><span data-stu-id="30406-133">Example 1: Create a mail assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2cfc0-134">请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="30406-134">请求</span><span class="sxs-lookup"><span data-stu-id="30406-134">Request</span></span>
 
-<span data-ttu-id="2cfc0-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-135">The following is an example of the request.</span></span>
+<span data-ttu-id="30406-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="30406-135">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="30406-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="30406-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_mailassessmentrequest_from_informationprotection"
@@ -80,12 +82,30 @@ Content-type: application/json
   "messageUri": "https://graph.microsoft.com/v1.0/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="30406-137">C#</span><span class="sxs-lookup"><span data-stu-id="30406-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-mailassessmentrequest-from-informationprotection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="2cfc0-136">响应</span><span class="sxs-lookup"><span data-stu-id="2cfc0-136">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="30406-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30406-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-mailassessmentrequest-from-informationprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cfc0-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-137">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="30406-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30406-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-mailassessmentrequest-from-informationprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="2cfc0-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="30406-140">Java</span><span class="sxs-lookup"><span data-stu-id="30406-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-mailassessmentrequest-from-informationprotection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="30406-141">响应</span><span class="sxs-lookup"><span data-stu-id="30406-141">Response</span></span>
+
+<span data-ttu-id="30406-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="30406-142">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="30406-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="30406-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -119,12 +139,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a><span data-ttu-id="2cfc0-140">示例2：创建电子邮件评估请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-140">Example 2: Create an email assessment request</span></span>
+### <a name="example-2-create-an-email-assessment-request"></a><span data-ttu-id="30406-145">示例2：创建电子邮件评估请求</span><span class="sxs-lookup"><span data-stu-id="30406-145">Example 2: Create an email assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2cfc0-141">请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="30406-146">请求</span><span class="sxs-lookup"><span data-stu-id="30406-146">Request</span></span>
 
-<span data-ttu-id="2cfc0-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-142">The following is an example of the request.</span></span>
+<span data-ttu-id="30406-147">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="30406-147">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="30406-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="30406-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_emailfileassessmentrequest_from_informationprotection"
@@ -142,12 +164,30 @@ Content-type: application/json
   "contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="30406-149">C#</span><span class="sxs-lookup"><span data-stu-id="30406-149">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-emailfileassessmentrequest-from-informationprotection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="2cfc0-143">响应</span><span class="sxs-lookup"><span data-stu-id="2cfc0-143">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="30406-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30406-150">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-emailfileassessmentrequest-from-informationprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cfc0-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-144">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="30406-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30406-151">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-emailfileassessmentrequest-from-informationprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="2cfc0-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="30406-152">Java</span><span class="sxs-lookup"><span data-stu-id="30406-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-emailfileassessmentrequest-from-informationprotection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="30406-153">响应</span><span class="sxs-lookup"><span data-stu-id="30406-153">Response</span></span>
+
+<span data-ttu-id="30406-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="30406-154">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="30406-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="30406-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -181,12 +221,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a><span data-ttu-id="2cfc0-147">示例3：创建文件评估请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-147">Example 3: Create a file assessment request</span></span>
+### <a name="example-3-create-a-file-assessment-request"></a><span data-ttu-id="30406-157">示例3：创建文件评估请求</span><span class="sxs-lookup"><span data-stu-id="30406-157">Example 3: Create a file assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2cfc0-148">请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-148">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="30406-158">请求</span><span class="sxs-lookup"><span data-stu-id="30406-158">Request</span></span>
 
-<span data-ttu-id="2cfc0-149">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-149">The following is an example of the request.</span></span>
+<span data-ttu-id="30406-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="30406-159">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="30406-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="30406-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_fileassessmentrequest_from_informationprotection"
@@ -204,12 +246,30 @@ Content-type: application/json
   "contentData": "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="30406-161">C#</span><span class="sxs-lookup"><span data-stu-id="30406-161">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-fileassessmentrequest-from-informationprotection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="2cfc0-150">响应</span><span class="sxs-lookup"><span data-stu-id="2cfc0-150">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="30406-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30406-162">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-fileassessmentrequest-from-informationprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cfc0-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-151">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="30406-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30406-163">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-fileassessmentrequest-from-informationprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="2cfc0-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="30406-164">Java</span><span class="sxs-lookup"><span data-stu-id="30406-164">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-fileassessmentrequest-from-informationprotection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="30406-165">响应</span><span class="sxs-lookup"><span data-stu-id="30406-165">Response</span></span>
+
+<span data-ttu-id="30406-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="30406-166">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="30406-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="30406-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -242,12 +302,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a><span data-ttu-id="2cfc0-154">示例4：创建 url 评估请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-154">Example 4: Create an url assessment request</span></span>
+### <a name="example-4-create-an-url-assessment-request"></a><span data-ttu-id="30406-169">示例4：创建 url 评估请求</span><span class="sxs-lookup"><span data-stu-id="30406-169">Example 4: Create an url assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2cfc0-155">请求</span><span class="sxs-lookup"><span data-stu-id="2cfc0-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="30406-170">请求</span><span class="sxs-lookup"><span data-stu-id="30406-170">Request</span></span>
 
-<span data-ttu-id="2cfc0-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-156">The following is an example of the request.</span></span>
+<span data-ttu-id="30406-171">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="30406-171">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="30406-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="30406-172">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_urlassessmentrequest_from_informationprotection"
@@ -264,12 +326,30 @@ Content-type: application/json
   "category": "phishing"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="30406-173">C#</span><span class="sxs-lookup"><span data-stu-id="30406-173">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-urlassessmentrequest-from-informationprotection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="2cfc0-157">响应</span><span class="sxs-lookup"><span data-stu-id="2cfc0-157">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="30406-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30406-174">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-urlassessmentrequest-from-informationprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cfc0-158">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-158">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="30406-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30406-175">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-urlassessmentrequest-from-informationprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="2cfc0-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2cfc0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="30406-176">Java</span><span class="sxs-lookup"><span data-stu-id="30406-176">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-urlassessmentrequest-from-informationprotection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="30406-177">响应</span><span class="sxs-lookup"><span data-stu-id="30406-177">Response</span></span>
+
+<span data-ttu-id="30406-178">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="30406-178">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="30406-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="30406-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
