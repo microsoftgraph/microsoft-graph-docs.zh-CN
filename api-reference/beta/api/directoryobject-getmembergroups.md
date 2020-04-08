@@ -2,19 +2,19 @@
 title: 获取成员组
 description: 返回指定的用户、组、服务主体或目录对象所属的所有组。 此函数是可传递的。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 55c065ccaf468104405120ca30ee632e3c18c031
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a85e55d09671e8bb7447b837ba3e43daa7795452
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434677"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180928"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

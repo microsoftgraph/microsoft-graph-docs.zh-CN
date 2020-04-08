@@ -1,20 +1,20 @@
 ---
 title: 域：验证
 description: 验证域的所有权。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56d6835f2df7c25e21393054cccfed0fc8570824
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bccef382bd41aa4c9912ba81926be7913114f8a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433319"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179533"
 ---
 # <a name="domain-verify"></a>域：验证
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

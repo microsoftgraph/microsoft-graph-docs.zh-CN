@@ -2,19 +2,19 @@
 title: certificateBasedAuthConfiguration 资源类型
 description: 表示证书颁发机构的集合。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4eb11db10bb904be9dbe689aedc4a1f250754340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b834de13ccfeb59cd88fae093406a380c9aa5b58
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507766"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181790"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

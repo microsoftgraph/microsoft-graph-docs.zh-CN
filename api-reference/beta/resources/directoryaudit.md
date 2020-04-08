@@ -1,20 +1,20 @@
 ---
 title: directoryAudit 资源类型
 description: 介绍了 Microsoft Graph API （REST）的 directoryAudit 资源（实体），它可帮助审核目录（租户）活动（测试版）。
-author: davidmu1
+author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bffdf7e806d3f78cc07f4d0d04dfea84987dfb27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 723c9089ed19e6d69375bd815b4233594be286a2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507042"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181970"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

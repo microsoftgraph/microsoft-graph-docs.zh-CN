@@ -2,19 +2,19 @@
 title: 列出 featureRolloutPolicies
 description: 检索 featureRolloutPolicy 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e24f74abf158f42335f3b218167eb40e4f0930af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b192da93823667c57745d5aef45d23c12d0e91c6
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435274"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181005"
 ---
 # <a name="list-featurerolloutpolicies"></a>列出 featureRolloutPolicies
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

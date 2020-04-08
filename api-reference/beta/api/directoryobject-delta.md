@@ -2,15 +2,15 @@
 title: directoryObject： delta
 description: 在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：用户、组和组织联系人。 有关详细信息，请参阅“跟踪更改”。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f2b6b5d1e3ee8d92627320c88e5589cface41350
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: d2f90d11e8ec4b052a6f5f8ff03603acdff6fe29
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062012"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180956"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： delta
 

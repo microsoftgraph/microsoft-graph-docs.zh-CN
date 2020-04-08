@@ -3,18 +3,18 @@ title: 列出 identityRiskEvents
 description: 检索 identityriskevent 对象的列表。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8c4f013751b74defeb3e834f5dd93d2d3481b79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 105f1b2190d241c57b0c0ee6e7dd483eb0ead680
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446462"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181082"
 ---
 # <a name="list-identityriskevents"></a>列出 identityRiskEvents
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

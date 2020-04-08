@@ -2,19 +2,19 @@
 title: 列出 riskDetection
 description: 检索**riskDetection**对象的集合的属性。
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 821fb0fe790982ef83a48a4418af2d4c6a144ee4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0917c451777b7c98c11a25a21b5978cf199b93b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453910"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181208"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

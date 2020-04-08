@@ -1,20 +1,20 @@
 ---
 title: 获取目录设置
 description: 检索特定目录设置对象的属性。
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: df98499099bb26cc0d50564ecaf4a9aa556313f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3c75ac850c77c9980bb798d751a5ed342b612a4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433991"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180835"
 ---
 # <a name="get-a-directory-setting"></a>获取目录设置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

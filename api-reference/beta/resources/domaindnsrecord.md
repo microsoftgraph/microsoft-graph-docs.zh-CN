@@ -1,20 +1,20 @@
 ---
 title: domainDnsRecord 资源类型
-description: 对于租户中的每个域，您可能需要将 DNS 记录添加到域的 DNS 区域文件中，然后 Microsoft Online Services 才能使用域。 **DomainDnsRecord**实体用于提供此类 DNS 记录。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord 和 DomainDnsTxtRecord 实体的基本实体。
+description: DomainDnsRecord 实体用于显示 DNS 记录。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4eb36c4d57826dab8e2da83eeab2bfaf577008c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f985e131988e580daba8b67b708d25671ebc03d4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506293"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178953"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "42506293"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 分配给此实体的唯一标识符。 不可为 null，只读。|
-|isOptional|布尔| 如果为 false，则客户必须在 DNS 主机上配置此记录，才能使 Microsoft Online Services 在域中正常运行。 |
+|isOptional|布尔值| 如果为 false，则客户必须在 DNS 主机上配置此记录，才能使 Microsoft Online Services 在域中正常运行。 |
 |label|String| 在 DNS 主机上配置 DNS 记录名称时使用的值。 |
-|recordType|String| 指示此实体表示的 DNS 记录的类型。</br></br>此值可以是下列值之一： *CName*、 *Mx*、 *Srv*、 *Txt*</br></br>键 |
+|recordType|String| 指示此实体表示的 DNS 记录的类型。</br></br>此值可以是下列值之一： *CName*、 *Mx*、 *Srv*、 *Txt*</br></br>Key |
 |supportedService|String| 对此 DNS 记录具有依赖项的 Microsoft Online 服务或功能。</br></br>可以是下列值之一： **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*|
 |ttl|Int32| 配置 DNS 主机上的 DNS 记录的生存时间（ttl）属性时要使用的值。 不可为 null |
 

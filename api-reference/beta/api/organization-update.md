@@ -2,19 +2,19 @@
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456327"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181383"
 ---
 # <a name="update-organization"></a>更新组织
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

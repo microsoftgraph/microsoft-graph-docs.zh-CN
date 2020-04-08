@@ -3,18 +3,18 @@ title: 列出 impossibleTravelRiskEvents
 description: 检索 impossibletravelriskevent 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: d58c273de9617a10fb498b285097b7fd072a2732
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 450a6aaf065bf4216d3d4c2af1379a98305508c6
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446406"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181068"
 ---
 # <a name="list-impossibletravelriskevents"></a>列出 impossibleTravelRiskEvents
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

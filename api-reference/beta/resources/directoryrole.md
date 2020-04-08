@@ -2,19 +2,19 @@
 title: directoryRole 资源类型
 description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c7dc55553c67d717afbd1b6633c94eef514438d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b462f2f597f777befd643004d918e5b2044620
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506895"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181811"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

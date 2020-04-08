@@ -3,18 +3,18 @@ title: 列出 suspiciousIpRiskEvents
 description: 检索 suspiciousipriskevent 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: fa2db24eccf3885b064ebe9af4837c6144d0e15c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: a2693303195266f3396906e2bcd78b651ade759a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453057"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181299"
 ---
 # <a name="list-suspiciousipriskevents"></a>列出 suspiciousIpRiskEvents
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

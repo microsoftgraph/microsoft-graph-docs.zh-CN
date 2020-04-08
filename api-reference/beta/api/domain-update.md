@@ -1,20 +1,20 @@
 ---
 title: 更新域
 description: 更新域对象的属性。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 11639e4562e2e2b6a41e3f261d7ff2c320084c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c39f488b3d41c099d996023617d726be09a9cdf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433431"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179841"
 ---
 # <a name="update-domain"></a>更新域
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

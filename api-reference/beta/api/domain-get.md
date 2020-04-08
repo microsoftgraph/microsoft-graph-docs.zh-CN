@@ -1,20 +1,20 @@
 ---
 title: 获取域
 description: 检索 domain 对象的属性和关系。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60ac2d4d9ec95bf26bfef04476d46c47b493278d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76d87e3a25f85747c6e600ce2e5621b8e2c87543
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433620"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180072"
 ---
 # <a name="get-domain"></a>获取域
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

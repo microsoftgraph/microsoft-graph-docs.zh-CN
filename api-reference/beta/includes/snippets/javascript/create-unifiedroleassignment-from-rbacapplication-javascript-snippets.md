@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9b8f0aaf0cb6ee8c115d3ba725bd4eb3d3a71643
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 070b70b77ae9a7008e5afc4779e01ba7e389a72b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636638"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181153"
 ---
 ```javascript
 
@@ -16,9 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleAssignment = {
-    principalId:"a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-    roleDefinitionId:"b0f54661-2d74-4c50-afa3-1ec803f12efe",
-    resourceScope:"/"
+    @odata.type: "#microsoft.graph.unifiedRoleAssignment",
+    roleDefinitionId: "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    principalId: "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    directoryScopeId: "/"
 };
 
 let res = await client.api('/roleManagement/directory/roleAssignments')

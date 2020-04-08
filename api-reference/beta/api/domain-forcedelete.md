@@ -1,20 +1,20 @@
 ---
 title: 域： forceDelete
 description: 使用异步操作删除域。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 341e80864d6d0ac09f51c22a09cdec78fcea023f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daff04db42782a5d9b611d454a5cfb2c12953b1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433690"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180100"
 ---
 # <a name="domain-forcedelete"></a>域： forceDelete
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|布尔| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* （默认值）-在此操作中重命名的用户帐户将被禁用。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|布尔值| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* （默认值）-在此操作中重命名的用户帐户将被禁用。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 

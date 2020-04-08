@@ -1,20 +1,20 @@
 ---
 title: 更新目录设置
 description: 更新特定目录设置对象的属性。
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5f560771ca69f0ff2147806d66f677c41395f94a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2980a1be5dcea6ac0beffc4e4c575cff6534fe83
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433963"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180377"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

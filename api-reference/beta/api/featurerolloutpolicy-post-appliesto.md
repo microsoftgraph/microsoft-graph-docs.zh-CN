@@ -2,19 +2,19 @@
 title: 分配 appliesTo
 description: 将 directoryObject 分配给功能推出。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8a9e68ed790fa388ac19b4a8e8504c680042ae80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cd64b45d1a3a285eb4fd53908ff6e3d364bb502
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421723"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181103"
 ---
 # <a name="assign-appliesto"></a>分配 appliesTo
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

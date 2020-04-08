@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6dd782e937e4709a899a22f9bbc49af0f0ed6548
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 1d1fc22e939e15353a033b7bae2691fc2d375a50
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618897"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179008"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
@@ -22,7 +22,7 @@ ms.locfileid: "42618897"
 
 此方法仅列出指定邮件的答复（如果有）。 若要获取邮件本身，只需调用[get 信道消息](channel-get-message.md)即可。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/channel.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 在此示例中，指定的邮件有两个答复。 每个答复都有一个或多个[chatMessageMention](../resources/chatmessagemention.md)对象。

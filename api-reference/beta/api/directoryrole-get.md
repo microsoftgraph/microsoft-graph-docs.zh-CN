@@ -1,20 +1,20 @@
 ---
 title: 获取 directoryRole
 description: 检索 directoryRole 对象的属性。
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 87c781f0f7edefbebc525d4b461ec3422bc002c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcb10ffda65a81fdc572f8a1340218fbab4b535a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434495"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180900"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: 获取 directoryObject
 description: 检索 directoryobject 对象的属性和关系。
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22733582e46ffd64750e79c1635d59424b80a5f5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29fee99420ea038e5d0e7b096a2f3adbf7e5eea5
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434881"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180949"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

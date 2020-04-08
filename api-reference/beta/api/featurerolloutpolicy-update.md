@@ -2,19 +2,19 @@
 title: 更新 featureRolloutPolicy
 description: 更新 featurerolloutpolicy 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e93dbcbdc7d4a4d40b929a801dae4b673100a274
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1e454f08649b631a694194a585a623e9c819702
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421709"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181096"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ PATCH /directory/featureRolloutPolicies/{id}
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
 |displayName|String|此策略的显示名称。|
-|isAppliedToOrganization|布尔|指示是否应将此功能展示策略应用于整个组织。|
+|isAppliedToOrganization|布尔值|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
 ## <a name="response"></a>响应

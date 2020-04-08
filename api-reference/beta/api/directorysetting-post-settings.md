@@ -1,20 +1,20 @@
 ---
 title: 创建目录设置
-description: 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别（当前仅适用于组）。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
+description: 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b88e405d8850eef49fd73fff792a94cf727863a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ea31a19fecec509dcf47e96e3dadc8ab420e1f2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433970"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180614"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

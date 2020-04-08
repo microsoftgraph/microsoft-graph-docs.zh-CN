@@ -1,20 +1,20 @@
 ---
 title: riskDetection 资源类型
 description: 表示 AzureAD 租户中的所有风险检测。
-author: davidmu1
+author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e3c2144bebe042040384b70e8ae91a9a4770d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b5db0cd41bcd23ac07c226c8f5a6711d4e817f11
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521073"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178890"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ Azure AD 会根据各种信号和机器学习持续评估[用户风险](riskyuse
 |`id`|`string`|风险检测的唯一 ID。 |
 |`requestId`|`string`|与风险检测相关联的登录请求 ID。 如果风险检测未与登录相关联，则此属性为 null。|
 |`correlationId`|`string`|与风险检测相关联的登录的相关 ID。 如果风险检测未与登录相关联，则此属性为 null。 |
-|`riskType`|`riskEventType`|检测到的风险事件的类型。 可能的值是 unlikelyTravel、anonymizedIPAddress、maliciousIPAddress、unfamiliarFeatures、malwareInfectedIPAddress、suspiciousIPAddress、leakedCredentials、investigationsThreatIntelligence、genericadminConfirmedUserCompromised、mcasImpossibleTravel、mcasSuspiciousInboxManipulationRules、investigationsThreatIntelligenceSigninLinked、maliciousIPAddressValidCredentialsBlockedIP 和向 unknownfuturevalue。 |
+|`riskType`|`riskEventType`|检测到的风险事件的类型。 可能的值包括 unlikelyTravel、anonymizedIPAddress、maliciousIPAddress、unfamiliarFeatures、malwareInfectedIPAddress、suspiciousIPAddress、leakedCredentials、investigationsThreatIntelligence、genericadminConfirmedUserCompromised、mcasImpossibleTravel、mcasSuspiciousInboxManipulationRules、investigationsThreatIntelligenceSigninLinked、maliciousIPAddressValidCredentialsBlockedIP 和向 unknownfuturevalue。 |
 |`riskState`|`riskState`|检测到的有风险的用户或登录的状态。 可能的值为 none、confirmedSafe、已修正、已消除、atRisk、confirmedCompromised 和向 unknownfuturevalue。 |
 |`riskLevel`|`riskLevel`|检测到的风险的级别。 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回`hidden`P1 客户。|
 |`riskDetail`|`riskDetail`|检测到的风险的详细信息。 可能的值为 none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、向 unknownfuturevalue。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回`hidden`P1 客户。|

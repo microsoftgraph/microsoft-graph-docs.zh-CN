@@ -2,19 +2,19 @@
 title: 检查成员组
 description: 检查指定组列表中的成员身份，并从该列表返回这些组
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2650bfb80fdb4da4b65afbd13566d3bde2b8c367
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e5a86cca24b5c804a5a1ba61d7d6bc514f4a6ea
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435050"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180970"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

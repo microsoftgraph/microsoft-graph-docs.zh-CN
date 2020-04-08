@@ -3,18 +3,18 @@ title: 获取 unfamiliarLocationRiskEvent
 description: 检索 unfamiliarlocationriskevent 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 29f0d03d81fdce540480ad17f4acf02025d6ea5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 727bb16d43589019ce5272e3e9e8c6e04499ce44
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452093"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178924"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>获取 unfamiliarLocationRiskEvent
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

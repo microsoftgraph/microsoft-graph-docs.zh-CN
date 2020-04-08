@@ -1,24 +1,24 @@
 ---
 title: 获取目录设置模板
-description: 目录设置模板代表可在租户中创建设置的一种设置模板。 此操作允许检索 directorySettingTemplate 对象的属性，包括可用的设置及其默认值。
+description: 允许检索 directorySettingTemplate 对象的属性，包括可用的设置及其默认值。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c648064f182453c3ffeccad885b7cba44ebb6de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df5474d839d8cd1374d00710538025a9d03330da
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433837"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180163"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板代表可在租户中创建设置的一种设置模板。 此操作允许检索 directorySettingTemplate 对象的属性，包括可用的设置及其默认值。
+目录设置模板代表可在租户中创建设置的一种设置模板。 此操作允许检索**directorySettingTemplate**对象的属性，包括可用的设置及其默认值。
 
 > **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Get groupSettingTemplate*。
 
@@ -37,7 +37,7 @@ ms.locfileid: "42433837"
 GET /directorySettingTemplates/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

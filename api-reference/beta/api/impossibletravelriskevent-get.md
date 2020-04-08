@@ -3,18 +3,18 @@ title: 获取 impossibleTravelRiskEvent
 description: 检索 impossibletravelriskevent 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 5483054ce20ca5c9385e24920bff3c57f2706fb5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 408b8e1f9e8ddc639b9e1a5f53932d865bd2bc51
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446413"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181075"
 ---
 # <a name="get-impossibletravelriskevent"></a>获取 impossibleTravelRiskEvent
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

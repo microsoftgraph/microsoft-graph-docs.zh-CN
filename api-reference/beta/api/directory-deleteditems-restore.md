@@ -1,20 +1,20 @@
 ---
 title: 恢复已删除的项目
 description: '从已删除的项目中还原最近删除的项目。 '
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0c0a7a4e1e3087cf05eef023620eb273a62b9556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 911f5c661f8e7393fcbf0f0cf0d8365415779e6a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435316"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181012"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 必需&lt;的&gt; ** 持有者令牌|
+| Authorization  | 必需&lt;的&gt; *Required*持有者令牌|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文

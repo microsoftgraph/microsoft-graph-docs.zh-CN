@@ -1,20 +1,20 @@
 ---
 title: domainDnsSrvRecord 资源类型
-description: 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记录。 继承自 DomainDnsRecord 实体。
-author: davidmu1
+description: 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记录。
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9f3b4e9b1b65a473492b42322d81c2ef6f6e172c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dca3f890ec3fa741f43711deee9381ed1088b39f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505943"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181706"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,13 +27,13 @@ ms.locfileid: "42505943"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 分配给此实体的唯一标识符。 不可为 null，只读。|
-|isOptional|布尔| 如果为 false，则客户必须在 DNS 主机上配置 SRV 记录，才能使 Microsoft Online Services 在域中正常运行。 |
+|isOptional|布尔值| 如果为 false，则客户必须在 DNS 主机上配置 SRV 记录，才能使 Microsoft Online Services 在域中正常运行。 |
 |label|String| 配置 DNS 主机上的 SRV 记录的*name*属性时使用的值。 |
 |nameTarget|String| 配置 DNS 主机上的 SRV 记录的*目标*属性时要使用的值。 |
 |端口|Int32| 配置 DNS 主机上的 SRV 记录的*port*属性时要使用的值。 |
 |priority|Int32| 配置 DNS 主机上的 SRV 记录的*优先级*属性时要使用的值。 |
 |协议|String| 配置 DNS 主机上的 SRV 记录的*协议*属性时要使用的值。 |
-|recordType|String|  DNS 记录的类型。 该值始终为*Srv*。 键 |
+|recordType|String|  DNS 记录的类型。 该值始终为*Srv*。 Key |
 |service|String| 配置 DNS 主机上的 SRV 记录的*服务*属性时使用的值。 |
 |supportedService|String| 依赖于此 SRV 记录的 Microsoft Online 服务或功能。</br></br>可以是下列值之一： **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune* |
 |ttl|Int32| 配置 DNS 主机上的 SRV 记录的*生存时间（ttl）* 属性时要使用的值。 不可为 null |

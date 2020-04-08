@@ -2,19 +2,19 @@
 title: 获取 featureRolloutPolicy
 description: 检索 featurerolloutpolicy 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 155d9398a981c8d3a478f92ac61de04d97f873a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6fdf941383d8f64e690899b80044300c3d69d684
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421758"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181117"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

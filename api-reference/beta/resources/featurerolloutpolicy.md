@@ -2,19 +2,19 @@
 title: featureRolloutPolicy 资源类型
 description: 表示与目录对象相关联的功能展示策略。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498481"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181720"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,14 +63,14 @@ ms.locfileid: "42498481"
 |displayName|String|此功能展示策略的显示名称。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
 |id|字符串| 只读。|
-|isAppliedToOrganization|布尔|指示是否应将此功能展示策略应用于整个组织。|
+|isAppliedToOrganization|布尔值|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定为其启用功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) collection| 可为 Null。 指定为其启用功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,20 +1,20 @@
 ---
 title: 获取 ID 列表中的目录对象
 description: select` 查询选项不适用于此操作。
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 66dffe637de97e487f738c2b0d27f025d30425e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 093e39a6d70193c03d0b2ae9d91b61f6bdf5bbbb
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434818"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180942"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

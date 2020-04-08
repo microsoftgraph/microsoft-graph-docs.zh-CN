@@ -1,20 +1,20 @@
 ---
 title: 获取 directoryRoleTemplate
 description: 检索 directoryroletemplate 对象的属性和关系。
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eec2aa1fdfceded2c0944e88fe1025a1118d4053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac25dafd1209728de828f904a694f13c0b3990b2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434131"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180856"
 ---
 # <a name="get-directoryroletemplate"></a>获取 directoryRoleTemplate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

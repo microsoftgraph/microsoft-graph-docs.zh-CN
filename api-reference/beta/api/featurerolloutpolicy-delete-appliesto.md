@@ -2,19 +2,19 @@
 title: 删除 appliesTo
 description: 从功能推出中删除 directoryObject。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56738d8d2059b4324f287f34d08e9b7a11d5567f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b8d9044384923098f1d1c966e3cd8fe2dffe2cf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421772"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181124"
 ---
 # <a name="remove-appliesto"></a>删除 appliesTo
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

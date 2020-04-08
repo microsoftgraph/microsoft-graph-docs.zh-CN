@@ -2,19 +2,19 @@
 title: directoryRole： delta
 description: 获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅 Using Delta Query。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be1e8e96cae225680c439d580cf4dfc2437aa5b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e47f667d650becea402d75757d66cf2de553c2b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434502"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180907"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

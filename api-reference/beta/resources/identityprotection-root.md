@@ -3,18 +3,18 @@ title: 使用 Azure AD 标识保护 Api （预览）
 description: 您可以使用 Microsoft Graph 来查询标识保护 Api，以接收 Azure AD Identity Protection 检测到的风险的相关信息。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f2e1dbdd20645768a4cb3e14c2de9f9d9a98b7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43fbfb8f0645d4d7d9a58135f2cd6fe986c62643
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496759"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181734"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>使用 Azure AD 标识保护 API （预览）
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

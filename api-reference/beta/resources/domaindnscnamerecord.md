@@ -1,20 +1,20 @@
 ---
 title: domainDnsCnameRecord 资源类型
-description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。 继承自 DomainDnsRecord 实体。
-author: davidmu1
+description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9b3a957197821bfb010aed5de071ec1e89192828
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d8894e84113217263906275b13045d598c59429
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506363"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178951"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,9 +29,9 @@ ms.locfileid: "42506363"
 |:---------------|:--------|:----------|
 |canonicalName|String| CNAME 记录的规范名称。 用于配置 DNS 主机上的 CNAME 记录。 |
 |id|String| 分配给此实体的唯一标识符。 不可为 null 的只读|
-|isOptional|布尔| 如果为 false，则客户必须在 DNS 主机上配置 CNAME 记录，才能使 Microsoft Online Services 在域中正常运行。 不可为 null |
+|isOptional|布尔值| 如果为 false，则客户必须在 DNS 主机上配置 CNAME 记录，才能使 Microsoft Online Services 在域中正常运行。 不可为 null |
 |label|String| 配置 DNS 主机上的 CNAME 记录的*别名/主机/名称*时使用的值。 |
-|recordType|String| DNS 记录的类型。 值始终为*CName*。 键|
+|recordType|String| DNS 记录的类型。 值始终为*CName*。 Key|
 |supportedService|String| 对此 CNAME 记录具有依赖关系的 Microsoft Online 服务或功能。</br></br>可以是下列值之一： **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*|
 |ttl|Int32| 配置 DNS 主机上的 CNAME 记录的生存时间（ttl）属性时要使用的值。 不可为 null |
 

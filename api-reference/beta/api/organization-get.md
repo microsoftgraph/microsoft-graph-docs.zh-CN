@@ -2,19 +2,19 @@
 title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9348a216508cc22493a9b6ea5bbf49fbd15169c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57fb2588656e55c2f15d5e893fd91a6415d60219
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456326"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181285"
 ---
 # <a name="get-organization"></a>获取组织
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

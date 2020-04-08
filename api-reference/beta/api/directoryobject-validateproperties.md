@@ -1,22 +1,22 @@
 ---
 title: directoryObject： validateProperties
-description: 验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试**创建**Office 365 组之前，客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的 validateProperties 函数。
+description: 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a2b72e5c7978ae495f85d207a38801093811d2c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcdaa24b874b30db52e737ed048618b6cf6d4377
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434600"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180921"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试**创建**Office 365 组之前，客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的[validateProperties 函数](group-validateproperties.md)。
+验证 Office 365 组的显示名称或邮件别名是否符合命名策略。  在尝试**创建**Office 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的[validateProperties 函数](group-validateproperties.md)。
 
 将为显示名称和邮件昵称属性执行以下验证： 
 1. 验证前缀和后缀命名策略
@@ -44,8 +44,8 @@ POST /directoryObjects/validateProperties
 
 | 名称           | 说明      |
 |:---------------|:-----------------|
-| Authorization  | Bearer {code}    |
-| Content-Type   | application/json |
+| Authorization  | Bearer {code}。 必需。   |
+| Content-Type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。

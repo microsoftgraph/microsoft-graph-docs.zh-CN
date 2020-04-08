@@ -3,18 +3,18 @@ title: identityRiskEvent 资源类型
 description: Azure Active Directory 标识保护检测到的风险事件。 它是每个特定风险事件类型的基本类型：
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 079f02b37304a17d370bb3b93fe1cdbda1f4a42c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa8fef43c462559d5c4420637b635b5371ef90ab
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496612"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181727"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "42496612"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

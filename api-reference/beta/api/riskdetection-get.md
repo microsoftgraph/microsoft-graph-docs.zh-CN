@@ -2,19 +2,19 @@
 title: 获取 riskDetection
 description: 检索**riskdetection**对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c35a451e6510292bbffd72132e64c82d6ab7c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d3ada4c27c70888330fec0dc37c068f5a1f613e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453920"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181215"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

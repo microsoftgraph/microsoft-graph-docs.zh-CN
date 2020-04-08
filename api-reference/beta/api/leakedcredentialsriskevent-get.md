@@ -3,18 +3,18 @@ title: 获取 leakedCredentialsRiskEvent
 description: 检索 leakedcredentialsriskevent 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 17344fbe24c5e75b1d8347e788cb91f1d503f012
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5d1fb18016acad5218e6eaad2642d9caa11caa3
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457179"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181236"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>获取 leakedCredentialsRiskEvent
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: 创建 featureRolloutPolicy
 description: 创建新的 featureRolloutPolicy 对象。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc2ed04abef450415cc4ee9802cceed687dc324b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435197"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180991"
 ---
 # <a name="create-featurerolloutpolicy"></a>创建 featureRolloutPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
