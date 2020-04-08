@@ -6,15 +6,15 @@ author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: a87828e1700a8813caae64f01d1e970f8a1f7939
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42446383"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ GET /informationProtection/threatAssessmentRequests
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按其**createdDateTime**的值进行降序排序。                                                                          |

@@ -6,15 +6,15 @@ author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: ff1ab5527f58551bde3a3e3bcaada7e4a66e8692
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42452426"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$expand         |string   |在`$expand=results`查询中使用以检索威胁评估结果。                                                                                              |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
