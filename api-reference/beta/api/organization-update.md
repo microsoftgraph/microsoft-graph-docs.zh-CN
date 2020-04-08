@@ -2,35 +2,35 @@
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456327"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181383"
 ---
-# <a name="update-organization"></a><span data-ttu-id="e7065-103">更新组织</span><span class="sxs-lookup"><span data-stu-id="e7065-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="c3b65-103">更新组织</span><span class="sxs-lookup"><span data-stu-id="c3b65-103">Update organization</span></span>
 
-<span data-ttu-id="e7065-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e7065-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c3b65-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c3b65-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7065-105">更新当前经过身份验证的组织的属性。</span><span class="sxs-lookup"><span data-stu-id="e7065-105">Update the properties of the currently authenticated organization.</span></span> <span data-ttu-id="e7065-106">在这种情况`organization`下，将定义为恰好一个记录的集合，因此必须在请求中指定其**ID** 。</span><span class="sxs-lookup"><span data-stu-id="e7065-106">In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.</span></span>  <span data-ttu-id="e7065-107">该**ID**也称为组织的**tenantId** 。</span><span class="sxs-lookup"><span data-stu-id="e7065-107">The **ID** is also known as the **tenantId** of the organization.</span></span>
+<span data-ttu-id="c3b65-105">更新当前经过身份验证的组织的属性。</span><span class="sxs-lookup"><span data-stu-id="c3b65-105">Update the properties of the currently authenticated organization.</span></span> <span data-ttu-id="c3b65-106">在这种情况`organization`下，将定义为恰好一个记录的集合，因此必须在请求中指定其**ID** 。</span><span class="sxs-lookup"><span data-stu-id="c3b65-106">In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.</span></span>  <span data-ttu-id="c3b65-107">该**ID**也称为组织的**tenantId** 。</span><span class="sxs-lookup"><span data-stu-id="c3b65-107">The **ID** is also known as the **tenantId** of the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7065-108">权限</span><span class="sxs-lookup"><span data-stu-id="e7065-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c3b65-108">权限</span><span class="sxs-lookup"><span data-stu-id="c3b65-108">Permissions</span></span>
 
-<span data-ttu-id="e7065-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7065-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c3b65-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3b65-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7065-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7065-111">Permission type</span></span> | <span data-ttu-id="e7065-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e7065-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="c3b65-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3b65-111">Permission type</span></span> | <span data-ttu-id="c3b65-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c3b65-112">Permissions (from least to most privileged)</span></span> |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e7065-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7065-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e7065-114">Directory.accessasuser.all、All、All</span><span class="sxs-lookup"><span data-stu-id="e7065-114">Organization.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="e7065-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7065-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7065-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7065-116">Not supported.</span></span> |
-|<span data-ttu-id="e7065-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7065-117">Application</span></span> | <span data-ttu-id="e7065-118">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7065-118">Organization.ReadWrite.All</span></span> |
+|<span data-ttu-id="c3b65-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3b65-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c3b65-114">Directory.accessasuser.all、All、All</span><span class="sxs-lookup"><span data-stu-id="c3b65-114">Organization.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="c3b65-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3b65-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3b65-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3b65-116">Not supported.</span></span> |
+|<span data-ttu-id="c3b65-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c3b65-117">Application</span></span> | <span data-ttu-id="c3b65-118">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3b65-118">Organization.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e7065-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7065-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3b65-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3b65-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,37 +38,37 @@ ms.locfileid: "42456327"
 PATCH /organization/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7065-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7065-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c3b65-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c3b65-120">Request headers</span></span>
 
-| <span data-ttu-id="e7065-121">名称</span><span class="sxs-lookup"><span data-stu-id="e7065-121">Name</span></span>       | <span data-ttu-id="e7065-122">说明</span><span class="sxs-lookup"><span data-stu-id="e7065-122">Description</span></span>|
+| <span data-ttu-id="c3b65-121">名称</span><span class="sxs-lookup"><span data-stu-id="c3b65-121">Name</span></span>       | <span data-ttu-id="c3b65-122">说明</span><span class="sxs-lookup"><span data-stu-id="c3b65-122">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="e7065-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7065-123">Authorization</span></span>  | <span data-ttu-id="e7065-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e7065-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e7065-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e7065-126">Content-Type</span></span>   | <span data-ttu-id="e7065-127">application/json</span><span class="sxs-lookup"><span data-stu-id="e7065-127">application/json</span></span> |
+| <span data-ttu-id="c3b65-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3b65-123">Authorization</span></span>  | <span data-ttu-id="c3b65-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c3b65-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c3b65-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c3b65-126">Content-Type</span></span>   | <span data-ttu-id="c3b65-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c3b65-127">application/json</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="e7065-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7065-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c3b65-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c3b65-128">Request body</span></span>
 
-<span data-ttu-id="e7065-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e7065-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="c3b65-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="c3b65-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e7065-132">属性</span><span class="sxs-lookup"><span data-stu-id="e7065-132">Property</span></span>  | <span data-ttu-id="e7065-133">类型</span><span class="sxs-lookup"><span data-stu-id="e7065-133">Type</span></span> |<span data-ttu-id="e7065-134">说明</span><span class="sxs-lookup"><span data-stu-id="e7065-134">Description</span></span>|
+| <span data-ttu-id="c3b65-132">属性</span><span class="sxs-lookup"><span data-stu-id="c3b65-132">Property</span></span>  | <span data-ttu-id="c3b65-133">类型</span><span class="sxs-lookup"><span data-stu-id="c3b65-133">Type</span></span> |<span data-ttu-id="c3b65-134">说明</span><span class="sxs-lookup"><span data-stu-id="c3b65-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e7065-135">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="e7065-135">marketingNotificationEmails</span></span>|<span data-ttu-id="e7065-136">String 集合</span><span class="sxs-lookup"><span data-stu-id="e7065-136">String collection</span></span>|                                        <span data-ttu-id="e7065-137">**注意：** 不可为 null。</span><span class="sxs-lookup"><span data-stu-id="e7065-137">**Notes**: not nullable.</span></span>            |
-|<span data-ttu-id="e7065-138">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="e7065-138">privacyProfile</span></span>|[<span data-ttu-id="e7065-139">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="e7065-139">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="e7065-140">组织的隐私配置文件（设置 statementUrl 和 contactEmail）。</span><span class="sxs-lookup"><span data-stu-id="e7065-140">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
-|<span data-ttu-id="e7065-141">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="e7065-141">securityComplianceNotificationMails</span></span>|<span data-ttu-id="e7065-142">String collection</span><span class="sxs-lookup"><span data-stu-id="e7065-142">String collection</span></span>||
-|<span data-ttu-id="e7065-143">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="e7065-143">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="e7065-144">String 集合</span><span class="sxs-lookup"><span data-stu-id="e7065-144">String collection</span></span>||
-|<span data-ttu-id="e7065-145">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="e7065-145">technicalNotificationMails</span></span>|<span data-ttu-id="e7065-146">String collection</span><span class="sxs-lookup"><span data-stu-id="e7065-146">String collection</span></span>|                                        <span data-ttu-id="e7065-147">**注意：** 不可为 null。</span><span class="sxs-lookup"><span data-stu-id="e7065-147">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="c3b65-135">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="c3b65-135">marketingNotificationEmails</span></span>|<span data-ttu-id="c3b65-136">String 集合</span><span class="sxs-lookup"><span data-stu-id="c3b65-136">String collection</span></span>|                                        <span data-ttu-id="c3b65-137">**注意：** 不可为 null。</span><span class="sxs-lookup"><span data-stu-id="c3b65-137">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="c3b65-138">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="c3b65-138">privacyProfile</span></span>|[<span data-ttu-id="c3b65-139">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="c3b65-139">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="c3b65-140">组织的隐私配置文件（设置 statementUrl 和 contactEmail）。</span><span class="sxs-lookup"><span data-stu-id="c3b65-140">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
+|<span data-ttu-id="c3b65-141">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="c3b65-141">securityComplianceNotificationMails</span></span>|<span data-ttu-id="c3b65-142">String collection</span><span class="sxs-lookup"><span data-stu-id="c3b65-142">String collection</span></span>||
+|<span data-ttu-id="c3b65-143">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="c3b65-143">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="c3b65-144">String 集合</span><span class="sxs-lookup"><span data-stu-id="c3b65-144">String collection</span></span>||
+|<span data-ttu-id="c3b65-145">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="c3b65-145">technicalNotificationMails</span></span>|<span data-ttu-id="c3b65-146">String collection</span><span class="sxs-lookup"><span data-stu-id="c3b65-146">String collection</span></span>|                                        <span data-ttu-id="c3b65-147">**注意：** 不可为 null。</span><span class="sxs-lookup"><span data-stu-id="c3b65-147">**Notes**: not nullable.</span></span>            |
 
-<span data-ttu-id="e7065-148">由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。</span><span class="sxs-lookup"><span data-stu-id="e7065-148">Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.</span></span>
+<span data-ttu-id="c3b65-148">由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。</span><span class="sxs-lookup"><span data-stu-id="c3b65-148">Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7065-149">响应</span><span class="sxs-lookup"><span data-stu-id="e7065-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c3b65-149">响应</span><span class="sxs-lookup"><span data-stu-id="c3b65-149">Response</span></span>
 
-<span data-ttu-id="e7065-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e7065-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c3b65-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="c3b65-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e7065-152">示例</span><span class="sxs-lookup"><span data-stu-id="e7065-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e7065-153">请求</span><span class="sxs-lookup"><span data-stu-id="e7065-153">Request</span></span>
-<span data-ttu-id="e7065-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7065-154">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c3b65-152">示例</span><span class="sxs-lookup"><span data-stu-id="c3b65-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c3b65-153">请求</span><span class="sxs-lookup"><span data-stu-id="c3b65-153">Request</span></span>
+<span data-ttu-id="c3b65-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c3b65-154">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e7065-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="e7065-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c3b65-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="c3b65-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -91,24 +91,24 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e7065-156">C#</span><span class="sxs-lookup"><span data-stu-id="e7065-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c3b65-156">C#</span><span class="sxs-lookup"><span data-stu-id="c3b65-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e7065-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7065-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c3b65-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c3b65-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e7065-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e7065-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c3b65-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c3b65-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e7065-159">响应</span><span class="sxs-lookup"><span data-stu-id="e7065-159">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c3b65-159">响应</span><span class="sxs-lookup"><span data-stu-id="c3b65-159">Response</span></span>
 
-<span data-ttu-id="e7065-160">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e7065-160">Here is an example of the response.</span></span>
+<span data-ttu-id="c3b65-160">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c3b65-160">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,10 +119,10 @@ Content-length: 411
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e7065-161">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e7065-161">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c3b65-161">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c3b65-161">See also</span></span>
 
-- [<span data-ttu-id="e7065-162">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="e7065-162">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="e7065-163">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="e7065-163">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="c3b65-162">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="c3b65-162">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="c3b65-163">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="c3b65-163">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)

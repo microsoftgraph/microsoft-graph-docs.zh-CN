@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c1305207e121c2162108100ebd45c665682e6cd8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a8d56b2f3e338a303132ac4298fc1483c816f27f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461279"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181154"
 ---
 ```objc
 
@@ -17,9 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUnifiedRoleAssignment *unifiedRoleAssignment = [[MSGraphUnifiedRoleAssignment alloc] init];
-[unifiedRoleAssignment setPrincipalId:@"a98eb769-7bd4-4489-86f6-ad96e1d58b62"];
-[unifiedRoleAssignment setRoleDefinitionId:@"b0f54661-2d74-4c50-afa3-1ec803f12efe"];
-[unifiedRoleAssignment setResourceScope:@"/"];
+[unifiedRoleAssignment setRoleDefinitionId:@"c2cf284d-6c41-4e6b-afac-4b80928c9034"];
+[unifiedRoleAssignment setPrincipalId:@"f8ca5a85-489a-49a0-b555-0a6d81e56f0d"];
+[unifiedRoleAssignment setDirectoryScopeId:@"/"];
 
 NSError *error;
 NSData *unifiedRoleAssignmentData = [unifiedRoleAssignment getSerializedDataWithError:&error];

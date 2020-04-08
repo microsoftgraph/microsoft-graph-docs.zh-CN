@@ -2,59 +2,59 @@
 title: 获取 riskDetection
 description: 检索**riskdetection**对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c35a451e6510292bbffd72132e64c82d6ab7c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d3ada4c27c70888330fec0dc37c068f5a1f613e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453920"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181215"
 ---
-# <a name="get-riskdetection"></a><span data-ttu-id="622d6-103">获取 riskDetection</span><span class="sxs-lookup"><span data-stu-id="622d6-103">Get riskDetection</span></span>
+# <a name="get-riskdetection"></a><span data-ttu-id="dfe48-103">获取 riskDetection</span><span class="sxs-lookup"><span data-stu-id="dfe48-103">Get riskDetection</span></span>
 
-<span data-ttu-id="622d6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="622d6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dfe48-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dfe48-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="622d6-105">检索**riskDetection**对象的属性。</span><span class="sxs-lookup"><span data-stu-id="622d6-105">Retrieve the properties of a **riskDetection** object.</span></span>
+<span data-ttu-id="dfe48-105">检索**riskDetection**对象的属性。</span><span class="sxs-lookup"><span data-stu-id="dfe48-105">Retrieve the properties of a **riskDetection** object.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="622d6-106">您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。</span><span class="sxs-lookup"><span data-stu-id="622d6-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="dfe48-106">您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。</span><span class="sxs-lookup"><span data-stu-id="dfe48-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="622d6-107">权限</span><span class="sxs-lookup"><span data-stu-id="622d6-107">Permissions</span></span>
-<span data-ttu-id="622d6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="622d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dfe48-107">权限</span><span class="sxs-lookup"><span data-stu-id="dfe48-107">Permissions</span></span>
+<span data-ttu-id="dfe48-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dfe48-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="622d6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="622d6-110">Permission type</span></span>      | <span data-ttu-id="622d6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="622d6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dfe48-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="dfe48-110">Permission type</span></span>      | <span data-ttu-id="dfe48-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dfe48-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="622d6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="622d6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="622d6-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="622d6-113">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="622d6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="622d6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="622d6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="622d6-115">Not supported.</span></span>    |
-|<span data-ttu-id="622d6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="622d6-116">Application</span></span> | <span data-ttu-id="622d6-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="622d6-117">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="dfe48-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dfe48-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dfe48-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="dfe48-113">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="dfe48-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dfe48-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dfe48-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="dfe48-115">Not supported.</span></span>    |
+|<span data-ttu-id="dfe48-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="dfe48-116">Application</span></span> | <span data-ttu-id="dfe48-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="dfe48-117">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="622d6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="622d6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dfe48-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dfe48-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="622d6-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="622d6-119">Request headers</span></span>
-| <span data-ttu-id="622d6-120">名称</span><span class="sxs-lookup"><span data-stu-id="622d6-120">Name</span></span>      |<span data-ttu-id="622d6-121">说明</span><span class="sxs-lookup"><span data-stu-id="622d6-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dfe48-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="dfe48-119">Request headers</span></span>
+| <span data-ttu-id="dfe48-120">名称</span><span class="sxs-lookup"><span data-stu-id="dfe48-120">Name</span></span>      |<span data-ttu-id="dfe48-121">说明</span><span class="sxs-lookup"><span data-stu-id="dfe48-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="622d6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="622d6-122">Authorization</span></span>  | <span data-ttu-id="622d6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="622d6-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="622d6-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="622d6-125">Content-Type</span></span> | <span data-ttu-id="622d6-126">application/json</span><span class="sxs-lookup"><span data-stu-id="622d6-126">application/json</span></span> |
+| <span data-ttu-id="dfe48-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dfe48-122">Authorization</span></span>  | <span data-ttu-id="dfe48-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dfe48-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dfe48-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dfe48-125">Content-Type</span></span> | <span data-ttu-id="dfe48-126">application/json</span><span class="sxs-lookup"><span data-stu-id="dfe48-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="622d6-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="622d6-127">Request body</span></span>
-<span data-ttu-id="622d6-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="622d6-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dfe48-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="dfe48-127">Request body</span></span>
+<span data-ttu-id="dfe48-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dfe48-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="622d6-129">响应</span><span class="sxs-lookup"><span data-stu-id="622d6-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dfe48-129">响应</span><span class="sxs-lookup"><span data-stu-id="dfe48-129">Response</span></span>
 
-<span data-ttu-id="622d6-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象。</span><span class="sxs-lookup"><span data-stu-id="622d6-130">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="622d6-131">示例</span><span class="sxs-lookup"><span data-stu-id="622d6-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="622d6-132">请求</span><span class="sxs-lookup"><span data-stu-id="622d6-132">Request</span></span>
-<span data-ttu-id="622d6-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="622d6-133">Here is an example of the request.</span></span>
+<span data-ttu-id="dfe48-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dfe48-130">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="dfe48-131">示例</span><span class="sxs-lookup"><span data-stu-id="dfe48-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dfe48-132">请求</span><span class="sxs-lookup"><span data-stu-id="dfe48-132">Request</span></span>
+<span data-ttu-id="dfe48-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dfe48-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="622d6-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="622d6-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dfe48-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="dfe48-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_riskDetection",
@@ -63,22 +63,22 @@ GET /riskDetections/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
-# <a name="c"></a>[<span data-ttu-id="622d6-135">C#</span><span class="sxs-lookup"><span data-stu-id="622d6-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dfe48-135">C#</span><span class="sxs-lookup"><span data-stu-id="dfe48-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="622d6-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="622d6-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dfe48-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dfe48-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-riskdetection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="622d6-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="622d6-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dfe48-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dfe48-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="622d6-138">响应</span><span class="sxs-lookup"><span data-stu-id="622d6-138">Response</span></span>
-<span data-ttu-id="622d6-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="622d6-139">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="dfe48-138">响应</span><span class="sxs-lookup"><span data-stu-id="dfe48-138">Response</span></span>
+<span data-ttu-id="dfe48-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="dfe48-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

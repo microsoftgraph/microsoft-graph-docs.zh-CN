@@ -1,18 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8c0056c395e6ecb3c755df8d0cc8388e918d314b
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 73dccd9783a47824f37ac61d6294bffa9b4c62c3
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461672"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181463"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var unifiedRoleAssignment = await graphClient.RoleManagement.Directory.RoleAssignments["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+var unifiedRoleAssignmentMultiple = await graphClient.RoleManagement.DeviceManagement.RoleAssignments["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
     .Request()
+    .Expand("directoryScopes")
     .GetAsync();
 
 ```
