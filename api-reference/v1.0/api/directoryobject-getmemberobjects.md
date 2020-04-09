@@ -2,33 +2,33 @@
 title: 获取成员对象
 description: " 返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 "
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb16a8901d89240ca3b6edea0311075fbd0d07ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66a7ebebe219e52a0d1581b65a1aa937c49ba533
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517977"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181914"
 ---
-# <a name="get-member-objects"></a><span data-ttu-id="4f70a-104">获取成员对象</span><span class="sxs-lookup"><span data-stu-id="4f70a-104">Get member objects</span></span>
+# <a name="get-member-objects"></a><span data-ttu-id="a9873-104">获取成员对象</span><span class="sxs-lookup"><span data-stu-id="a9873-104">Get member objects</span></span>
 
-<span data-ttu-id="4f70a-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f70a-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a9873-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9873-105">Namespace: microsoft.graph</span></span>
 
- <span data-ttu-id="4f70a-p102">返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。</span><span class="sxs-lookup"><span data-stu-id="4f70a-p102">Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive.</span></span> 
- > <span data-ttu-id="4f70a-108">注意：只有用户可以是目录角色的成员。</span><span class="sxs-lookup"><span data-stu-id="4f70a-108">Note: Only users can be members of directory roles.</span></span>
+ <span data-ttu-id="a9873-p102">返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。</span><span class="sxs-lookup"><span data-stu-id="a9873-p102">Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive.</span></span> 
+ > <span data-ttu-id="a9873-108">注意：只有用户可以是目录角色的成员。</span><span class="sxs-lookup"><span data-stu-id="a9873-108">Note: Only users can be members of directory roles.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4f70a-109">权限</span><span class="sxs-lookup"><span data-stu-id="4f70a-109">Permissions</span></span>
-<span data-ttu-id="4f70a-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4f70a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9873-109">权限</span><span class="sxs-lookup"><span data-stu-id="a9873-109">Permissions</span></span>
+<span data-ttu-id="a9873-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a9873-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4f70a-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="4f70a-112">Permission type</span></span>      | <span data-ttu-id="4f70a-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4f70a-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a9873-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="a9873-112">Permission type</span></span>      | <span data-ttu-id="a9873-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a9873-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4f70a-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4f70a-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4f70a-115">User.Read.All 和 Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="4f70a-115">User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
-|<span data-ttu-id="4f70a-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4f70a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f70a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="4f70a-117">Not supported.</span></span>    |
-|<span data-ttu-id="4f70a-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="4f70a-118">Application</span></span> | <span data-ttu-id="4f70a-119">User.Read.All 和 Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="4f70a-119">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="a9873-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a9873-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a9873-115">User.Read.All 和 Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="a9873-115">User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="a9873-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a9873-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9873-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a9873-117">Not supported.</span></span>    |
+|<span data-ttu-id="a9873-118">Application</span><span class="sxs-lookup"><span data-stu-id="a9873-118">Application</span></span> | <span data-ttu-id="a9873-119">User.Read.All 和 Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="a9873-119">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4f70a-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4f70a-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9873-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a9873-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
@@ -37,28 +37,28 @@ POST /groups/{id}/getMemberGroups
 POST /directoryObjects/{id}/getMemberObjects
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4f70a-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4f70a-121">Request headers</span></span>
-| <span data-ttu-id="4f70a-122">名称</span><span class="sxs-lookup"><span data-stu-id="4f70a-122">Name</span></span>       | <span data-ttu-id="4f70a-123">类型</span><span class="sxs-lookup"><span data-stu-id="4f70a-123">Type</span></span> | <span data-ttu-id="4f70a-124">说明</span><span class="sxs-lookup"><span data-stu-id="4f70a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a9873-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="a9873-121">Request headers</span></span>
+| <span data-ttu-id="a9873-122">名称</span><span class="sxs-lookup"><span data-stu-id="a9873-122">Name</span></span>       | <span data-ttu-id="a9873-123">类型</span><span class="sxs-lookup"><span data-stu-id="a9873-123">Type</span></span> | <span data-ttu-id="a9873-124">说明</span><span class="sxs-lookup"><span data-stu-id="a9873-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4f70a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f70a-125">Authorization</span></span>  | <span data-ttu-id="4f70a-126">string</span><span class="sxs-lookup"><span data-stu-id="4f70a-126">string</span></span>  | <span data-ttu-id="4f70a-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4f70a-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4f70a-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4f70a-129">Content-Type</span></span>   | <span data-ttu-id="4f70a-130">string</span><span class="sxs-lookup"><span data-stu-id="4f70a-130">string</span></span>  | <span data-ttu-id="4f70a-131">application/json</span><span class="sxs-lookup"><span data-stu-id="4f70a-131">application/json</span></span>  |
+| <span data-ttu-id="a9873-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a9873-125">Authorization</span></span>  | <span data-ttu-id="a9873-126">string</span><span class="sxs-lookup"><span data-stu-id="a9873-126">string</span></span>  | <span data-ttu-id="a9873-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a9873-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a9873-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a9873-129">Content-Type</span></span>   | <span data-ttu-id="a9873-130">string</span><span class="sxs-lookup"><span data-stu-id="a9873-130">string</span></span>  | <span data-ttu-id="a9873-131">application/json</span><span class="sxs-lookup"><span data-stu-id="a9873-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4f70a-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="4f70a-132">Request body</span></span>
-<span data-ttu-id="4f70a-133">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4f70a-133">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9873-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="a9873-132">Request body</span></span>
+<span data-ttu-id="a9873-133">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a9873-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4f70a-134">参数</span><span class="sxs-lookup"><span data-stu-id="4f70a-134">Parameter</span></span>    | <span data-ttu-id="4f70a-135">类型</span><span class="sxs-lookup"><span data-stu-id="4f70a-135">Type</span></span>   |<span data-ttu-id="4f70a-136">说明</span><span class="sxs-lookup"><span data-stu-id="4f70a-136">Description</span></span>|
+| <span data-ttu-id="a9873-134">参数</span><span class="sxs-lookup"><span data-stu-id="a9873-134">Parameter</span></span>    | <span data-ttu-id="a9873-135">类型</span><span class="sxs-lookup"><span data-stu-id="a9873-135">Type</span></span>   |<span data-ttu-id="a9873-136">说明</span><span class="sxs-lookup"><span data-stu-id="a9873-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4f70a-137">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="4f70a-137">securityEnabledOnly</span></span>|<span data-ttu-id="4f70a-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="4f70a-138">Boolean</span></span>| <span data-ttu-id="4f70a-p105">**true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。</span><span class="sxs-lookup"><span data-stu-id="4f70a-p105">**true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**.</span></span> |
+|<span data-ttu-id="a9873-137">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="a9873-137">securityEnabledOnly</span></span>|<span data-ttu-id="a9873-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9873-138">Boolean</span></span>| <span data-ttu-id="a9873-p105">**true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。</span><span class="sxs-lookup"><span data-stu-id="a9873-p105">**true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="4f70a-141">响应</span><span class="sxs-lookup"><span data-stu-id="4f70a-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9873-141">响应</span><span class="sxs-lookup"><span data-stu-id="a9873-141">Response</span></span>
 
-<span data-ttu-id="4f70a-142">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 String 集合对象。</span><span class="sxs-lookup"><span data-stu-id="4f70a-142">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="a9873-142">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 String 集合对象。</span><span class="sxs-lookup"><span data-stu-id="a9873-142">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4f70a-143">示例</span><span class="sxs-lookup"><span data-stu-id="4f70a-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a9873-143">示例</span><span class="sxs-lookup"><span data-stu-id="a9873-143">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4f70a-144">请求</span><span class="sxs-lookup"><span data-stu-id="4f70a-144">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a9873-144">请求</span><span class="sxs-lookup"><span data-stu-id="a9873-144">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4f70a-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f70a-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a9873-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9873-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmemberobjects"
@@ -71,27 +71,27 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4f70a-146">C#</span><span class="sxs-lookup"><span data-stu-id="4f70a-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a9873-146">C#</span><span class="sxs-lookup"><span data-stu-id="a9873-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4f70a-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f70a-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a9873-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9873-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4f70a-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4f70a-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a9873-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9873-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4f70a-149">Java</span><span class="sxs-lookup"><span data-stu-id="4f70a-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a9873-149">Java</span><span class="sxs-lookup"><span data-stu-id="a9873-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4f70a-150">响应</span><span class="sxs-lookup"><span data-stu-id="4f70a-150">Response</span></span>
-<span data-ttu-id="4f70a-p106">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4f70a-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a9873-150">响应</span><span class="sxs-lookup"><span data-stu-id="a9873-150">Response</span></span>
+<span data-ttu-id="a9873-p106">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a9873-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
