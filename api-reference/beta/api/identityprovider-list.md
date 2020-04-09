@@ -3,18 +3,18 @@ title: 列出 identityProvider
 description: 检索目录中的所有 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cc4974de221c0b05992012d90215a0e721656dfe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2c6279a6d5c3511d6b6786f3d561d0632933e66
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446486"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199548"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

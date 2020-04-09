@@ -2,19 +2,19 @@
 title: onPremisesAgentGroup 资源类型
 description: onPremisesAgentGroup 资源类型。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 203d914098d6b7cb0b03715accac4958bcf53870
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a211fb4245e8f4e4ef23158c0f553876303ea9c9
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522233"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199716"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>onPremisesAgentGroup 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42522233"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|**OnPremisesAgentGroup**的显示名称。|
-|id|String| **OnPremisesAgentGroup**的对象 ID。 只读。|
+|id|字符串| **OnPremisesAgentGroup**的对象 ID。 只读。|
 |isDefault|Boolean|指示**onPremisesAgentGroup**是否为默认代理组。 只有一个代理组可以是默认的**onPremisesAgentGroup** ，并由系统进行设置。|
 |publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
@@ -43,7 +43,7 @@ ms.locfileid: "42522233"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agent|[onPremisesAgent](onpremisesagent.md)集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 NULL。|
+|agent|[onPremisesAgent](onpremisesagent.md)集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 Null。|
 |publishedResources|[publishedResource](publishedresource.md)集合| 分配给**onPremisesAgentGroup**的**publishedResource**的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -3,18 +3,18 @@ title: 创建 identityProvider
 description: 通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5263d67ec225aacfcee24ff22296cf8219241e09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 540af7a9ebb9ea56f6f3f61cff89ff6a4d3973d6
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446476"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199590"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,8 +52,8 @@ POST /identityProviders
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|String|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
-|clientSecret|String|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
+|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
 |type|字符串|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 

@@ -3,18 +3,18 @@ title: identityProvider 资源类型
 description: 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon 或 LinkedIn。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 30e9451d67a5438a8739879747e301d016e0520a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: Nickgmicrosoft
+ms.openlocfilehash: 91eb55c35a17393de623e2c9c5f99c7d3f43386a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496661"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199742"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "42496661"
 |clientSecret|字符串|是|No|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
 |id|字符串|否|否|标识提供程序的 ID。|
 |name|字符串|否|否|标识提供程序的显示名称。|
-|type|String|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
+|type|字符串|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

@@ -2,19 +2,19 @@
 title: onPremisesPublishingProfile 资源类型
 description: onPremisesPublishingProfile 资源类型。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 94d09955ad20af1117b156e433c95f2914df7348
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a4e1e40a5a8774be9498f6b89d235557ba2948e
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522198"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200024"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>onPremisesPublishingProfile 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,14 +33,14 @@ ms.locfileid: "42522198"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| 表示一个**hybridAgentUpdaterConfiguration**对象。|
-|id|String| 表示发布类型。 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
+|id|字符串| 表示发布类型。 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md)集合| 现有**onPremisesAgentGroup**对象的列表。 此为只读属性。 可为 NULL。|
-|agent|[onPremisesAgent](onpremisesagent.md)集合| 已存在的**onPremisesAgent**对象的列表。 此为只读属性。 可为 NULL。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md)集合| 现有**onPremisesAgentGroup**对象的列表。 此为只读属性。 可为 Null。|
+|agent|[onPremisesAgent](onpremisesagent.md)集合| 已存在的**onPremisesAgent**对象的列表。 此为只读属性。 可为 Null。|
 |publishedResources|[publishedResource](publishedresource.md)集合| 现有**publishedResource**对象的列表。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

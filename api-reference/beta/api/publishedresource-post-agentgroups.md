@@ -2,19 +2,19 @@
 title: 将 publishedResource 分配给 onPremisesAgentGroup
 description: 将**publishedResource**对象分配给**onPremisesAgentGroup**对象。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ba2c351ffb511ecb83d87d7b4d151da1528a2387
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 12a30d04b27b0ed098fd12c71fabed90fa321cf8
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454830"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199996"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>将 publishedResource 分配给 onPremisesAgentGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42454830"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

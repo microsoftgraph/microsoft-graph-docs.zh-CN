@@ -2,19 +2,19 @@
 title: onPremisesAgent 资源类型
 description: onPremisesAgent 资源类型。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff30f427c2aac754ba3cfda4082d590e95f5edd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdc6355b33539899ab51a4a6881a8109cb8d87a6
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522240"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199751"
 ---
 # <a name="onpremisesagent-resource-type"></a>onPremisesAgent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "42522240"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalIp|String|由代理计算机的服务检测到的外部 IP 地址。 只读|
+|externalIp|字符串|由代理计算机的服务检测到的外部 IP 地址。 只读|
 |id|String| OnPremisesAgent 的对象 id。 只读。|
-|machineName|String|运行 aggent 的计算机的名称。 只读|
+|machineName|字符串|运行 aggent 的计算机的名称。 只读|
 |状态|string| 可取值为：`active`、`inactive`。|
 |publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 

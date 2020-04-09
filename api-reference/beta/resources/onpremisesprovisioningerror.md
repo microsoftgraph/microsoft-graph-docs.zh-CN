@@ -3,18 +3,18 @@ title: onPremisesProvisioningError 资源类型
 description: 表示在将本地目录同步到 Azure Active Directory 时，用户、组或组织联系人实体的目录同步错误。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 81586df0fac9b40fc11005b54139f2409af9604c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: japere
+ms.openlocfilehash: 6765f23f6d3a5cc5b31363506f63ed6949810646
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522219"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200059"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +24,9 @@ ms.locfileid: "42522219"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|“类别”|String| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
+|“类别”|字符串| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
 |occurredDateTime|DateTimeOffset| 发生错误的日期和时间。 |
-|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
+|propertyCausingError|字符串| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
 |value|String| 导致错误的属性的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

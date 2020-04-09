@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a0d65971de615c788073938819cdfd0d0fb352d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62d7198eabebda2b7ed612c57754007130195a90
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457230"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200320"
 ---
 # <a name="update-itememail"></a>更新 itememail
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42457230"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/emails/{id} 
+PATCH /me/profile/emails/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,8 +51,8 @@ PATCH /me/profile/emails/{id}
 
 | 属性     | 类型        | 说明                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
-|address       |String       | 电子邮件地址本身。                                                | 
-|displayName   |String       | 用户与特定电子邮件地址相关联的名称或标签。 |
+|address       |String       | 电子邮件地址本身。                                                |
+|displayName   |字符串       | 用户与特定电子邮件地址相关联的名称或标签。 |
 |类型          |字符串       | 可取值为：`unknown`、`work`、`personal`、`main`、`other`。     |
 
 ## <a name="response"></a>响应
@@ -81,6 +81,7 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,7 +95,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 

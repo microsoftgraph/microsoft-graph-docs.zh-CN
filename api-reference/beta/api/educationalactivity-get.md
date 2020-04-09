@@ -1,20 +1,20 @@
 ---
 title: 获取 educationalActivity
-description: 检索 educationalactivity 对象的属性和关系。
+description: 检索 educationalActivity 对象的属性和关系。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e9b4784a2dc757e5a28371065ce0bc66916554c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35d927664013775c6bb470d5118427d3bc6c45ae
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427863"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199534"
 ---
 # <a name="get-educationalactivity"></a>获取 educationalActivity
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42427863"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /me/profile/educationalActivities/{id}
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用`$orderby`参数更改响应的顺序。|
@@ -52,9 +52,9 @@ GET /me/profile/educationalActivities/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称           |说明                  |
+|名称            |说明                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}。必需。   |
+|Authorization   |Bearer {token}。必需。    |
 
 ## <a name="request-body"></a>请求正文
 
@@ -71,6 +71,7 @@ GET /me/profile/educationalActivities/{id}
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationalactivity"
@@ -80,19 +81,21 @@ GET /me/profile/educationalActivities/{id}
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 
