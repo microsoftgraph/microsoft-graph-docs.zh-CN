@@ -2,15 +2,15 @@
 title: 更新 identityProvider
 description: 更新现有 identityProvider 中的属性
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a86823adfb201bfde725a915796d1667d6bd9206
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 023797466cc1574343a64776ecb0dcaf226be04c
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516750"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199876"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 

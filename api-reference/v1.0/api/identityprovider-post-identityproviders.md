@@ -2,15 +2,15 @@
 title: 创建 identityProvider
 description: 新建 identityProvider
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93fa2a438a3294ef52545bf241d93d39283f91a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6dec53d1a29ea4434169ccbc902c47691dc7b8b
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516757"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199863"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 

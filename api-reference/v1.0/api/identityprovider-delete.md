@@ -2,15 +2,15 @@
 title: 删除 identityProvider
 description: 删除现有的 identityProvider
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: deb255656748a43af87a219e3a094b7cc897273d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03936b6702b20440e672716dfcd73f50bba51984
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516778"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199888"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
