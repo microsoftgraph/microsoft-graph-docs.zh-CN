@@ -1,16 +1,16 @@
 ---
 title: 创建域
 description: 向租户添加域。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 99a736b6f8798ec21664c43bccfc172f19c2ac16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fe4f7ded79c0b4393657ed867534ea8ba4eb78b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517851"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179400"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -29,7 +29,7 @@ ms.locfileid: "42517851"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -2,15 +2,15 @@
 title: 获取 certificateBasedAuthConfiguration
 description: 获取 certificatebasedauthconfiguration 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 608d07e01146f5dddf1751b3a79a322667b4503c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 232dc629fdd4e6bec1914654d036c8d097d2bd17
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518635"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181257"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "42518635"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 全部，全部组织。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序    | 全部，全部组织。 |
+| Application    | 全部，全部组织。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

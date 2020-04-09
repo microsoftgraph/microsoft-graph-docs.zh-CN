@@ -1,16 +1,16 @@
 ---
 title: domainDnsCnameRecord 资源类型
-description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。 继承自 DomainDnsRecord 实体。
-author: davidmu1
+description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 938a11bc1cc7790e2e521c86a51b258882dfad86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9aa4b443d6361a9d83a20d1c3e2e6345e7ee5809
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531616"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181656"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531616"
 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅[域](domain.md)主题。
 
 ## <a name="properties"></a>属性

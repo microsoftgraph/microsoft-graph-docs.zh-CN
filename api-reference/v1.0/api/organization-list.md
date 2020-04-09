@@ -2,15 +2,15 @@
 title: 列出组织
 description: 检索组织对象列表。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4b6661da0b5a4d0430c498924fde81259b2bb3ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 888351fa3ef1b8d017f5895e3fa3ecce0dce06d4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511227"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181600"
 ---
 # <a name="list-organization"></a>列出组织
 

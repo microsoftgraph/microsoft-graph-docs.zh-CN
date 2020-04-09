@@ -2,15 +2,15 @@
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1252db4f457bd783fd52998187127a832839cc93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d429060cc000821394b20529ce3ef29fdfbbef0
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511220"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181593"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -26,7 +26,7 @@ ms.locfileid: "42511220"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.accessasuser.all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Organization.ReadWrite.All |
+|Application | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

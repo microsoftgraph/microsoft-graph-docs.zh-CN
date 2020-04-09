@@ -1,16 +1,16 @@
 ---
 title: 列出域
 description: 检索域对象的列表。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e336b3c30507bbf8bb4bdd3dc761ba8cdcfae04c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 834eb0259a54ed1d5ea984496e4c7150daebee5f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517858"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179421"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517858"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

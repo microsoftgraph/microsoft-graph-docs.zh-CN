@@ -1,16 +1,16 @@
 ---
 title: 列出 serviceConfigurationRecords
 description: 检索为域启用服务所需的 domainDnsRecord 对象的列表。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1511264ab304ae317686ea99fd8dbe8014f11132
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15dcda1621680325a8e93f1dfada3012ec45a6b0
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517872"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179435"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -29,7 +29,7 @@ ms.locfileid: "42517872"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

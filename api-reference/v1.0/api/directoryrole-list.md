@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryRoles
 description: 列出租户中激活的目录角色。
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c6f5233ae5563963974a7bc1d544a260fd78c99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517935"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181397"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -29,7 +29,7 @@ ms.locfileid: "42517935"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

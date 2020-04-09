@@ -1,16 +1,16 @@
 ---
 title: 检索最近删除的项的属性
 description: 检索已删除的项目中最近删除项目的属性。
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c02246e6dccea52e1a973312f2add6cb1232c0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 846775883d31d2dafe51489a4c7a17b1ea755fd8
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518054"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181900"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -21,7 +21,7 @@ ms.locfileid: "42518054"
 目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
 
@@ -29,7 +29,7 @@ ms.locfileid: "42518054"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
+|Application | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ### <a name="for-users"></a>对于用户：
 
@@ -37,7 +37,7 @@ ms.locfileid: "42518054"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|Application | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ### <a name="for-groups"></a>对于组：
 

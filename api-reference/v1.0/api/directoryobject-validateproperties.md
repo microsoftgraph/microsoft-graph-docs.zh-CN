@@ -2,15 +2,15 @@
 title: directoryObject： validateProperties
 description: 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bcee27c646831f414fdba18c67176073a7b61d48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38943c87509c99f2287729ea3d3f688731b46f24
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517970"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181907"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 

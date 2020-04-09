@@ -1,16 +1,16 @@
 ---
 title: 域资源类型
 description: 表示与租户关联的域。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0edbff969997f4dddfda837b85331d821c39c09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fea245c8e564c22a28d963c829c094535e540a6e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531625"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181663"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "42531625"
 
 5. 通过检索为域启用服务所需的记录列表来[配置](../api/domain-list-serviceconfigurationrecords.md)受支持的服务。 使用域注册机构或 DNS 服务器配置将配置记录详细信息添加到域的区域文件中。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|

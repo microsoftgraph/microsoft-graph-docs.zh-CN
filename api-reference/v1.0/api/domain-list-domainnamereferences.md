@@ -1,16 +1,16 @@
 ---
 title: 列出 domainNameReferences
-description: 使用对域的引用检索 directoryObject 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
-author: davidmu1
+description: 使用对域的引用检索 directoryObject 列表。
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 513c36432c828720e90ac015a2bc38a69aecbf0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db09904e99eb892a5ee09acd43dde1967ce3ea39
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517886"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179442"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -27,7 +27,7 @@ ms.locfileid: "42517886"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

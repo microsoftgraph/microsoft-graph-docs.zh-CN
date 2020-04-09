@@ -2,15 +2,15 @@
 title: 获取成员组
 description: 返回指定的 user、group 或 directory 对象所属的所有组。此函数是可传递的。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb3c58925aafe3b454863b2160b30db5be2a8242
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60d21aefcf1d2abac66e7797624984570bd132bf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517984"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181921"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517984"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
+|Application | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
 
 使用下面的方案指南可帮助确定要使用的权限类型：
 - 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。

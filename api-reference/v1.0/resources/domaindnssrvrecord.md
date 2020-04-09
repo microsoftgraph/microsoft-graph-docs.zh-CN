@@ -1,16 +1,16 @@
 ---
 title: domainDnsSrvRecord 资源类型
-description: 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记录。 继承自 DomainDnsRecord 实体。
-author: davidmu1
+description: 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记录。
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 32a9461cb28bc51489ddca6f3b569871bcc584d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a874285323f70a6592dd14e7e3dd3af97f6583e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531596"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181635"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531596"
 
 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记录。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅[域](domain.md)主题。
 
 ## <a name="properties"></a>属性

@@ -2,15 +2,15 @@
 title: 创建 certificateBasedAuthConfiguration
 description: 使用此 API 创建新的 certificateBasedAuthConfiguration。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc6cea4d88404e70267046c882cacf8471d1cd9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0101f7937b89df9d15b8b836dd241aa09d8e857
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518621"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181243"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "42518621"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序    | Organization.ReadWrite.All |
+| Application    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

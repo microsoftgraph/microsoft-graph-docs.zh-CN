@@ -2,15 +2,15 @@
 title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 17939db5752c114c5c9180d318725c2553b4f1d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 739fb380a6686bd6e68694be88c91df548972890
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531666"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181879"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -20,7 +20,7 @@ ms.locfileid: "42531666"
 
 目前，仅支持[应用程序](application.md)、[组](group.md)和[用户](user.md)资源的 "已删除邮件" 功能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|

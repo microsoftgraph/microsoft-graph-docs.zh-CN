@@ -2,15 +2,15 @@
 title: 列出 directoryAudits
 description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的列表方法。
 localization_priority: Normal
-author: dhanyahk
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8543663094d914069d2dfef7e34247d91dd2646f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 1bcbd266ba88e11e7c787cadb7753263b519b3ea
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062033"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181956"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 

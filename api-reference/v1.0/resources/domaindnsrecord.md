@@ -1,16 +1,16 @@
 ---
 title: domainDnsRecord 资源类型
-description: 对于租户中的每个域，您可能需要将 DNS 记录添加到域的 DNS 区域文件中，然后 Microsoft Online Services 才能使用域。 **DomainDnsRecord**实体用于提供此类 DNS 记录。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord 和 DomainDnsTxtRecord 实体的基本实体。
+description: DomainDnsRecord 实体用于显示 DNS 记录。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9402ec0785da87236fa94a9749f8b400f3164e1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e2b64a15f49e31384045adcfe85758af06e1e92
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531602"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181642"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531602"
 
 对于租户中的每个域，您可能需要将 DNS 记录添加到域的 DNS 区域文件中，然后 Microsoft Online Services 才能使用域。 **DomainDnsRecord**实体用于提供此类 DNS 记录。 [DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md)和[DomainDnsTxtRecord](domaindnstxtrecord.md)实体的基本实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅[域](domain.md)主题。
 
 ## <a name="properties"></a>属性

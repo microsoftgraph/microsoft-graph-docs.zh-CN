@@ -1,16 +1,16 @@
 ---
 title: domainState 资源类型
 description: 表示在域上计划的异步操作的状态。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 75515640ea164beb43f1f1f32d70f97f996abb38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0648019767c8161a7dfdfe02a360a3bcf37ddd2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531574"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181586"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 

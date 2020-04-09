@@ -1,16 +1,16 @@
 ---
 title: 更新域
 description: 更新域对象的属性。
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b00c418bcb7385a5380ace560fb83e18c8cbb058
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b22677f64057cfa0baf16afb76d58a0d6d456203
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517844"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179407"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -29,7 +29,7 @@ ms.locfileid: "42517844"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ PATCH /domains/{id}
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:-----------|

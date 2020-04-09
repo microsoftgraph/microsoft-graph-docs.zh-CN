@@ -2,21 +2,21 @@
 title: 获取 directoryAudit
 description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的 get 方法。
 localization_priority: Normal
-author: dhanyahk
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82a395224cd9230e3f5c6bdd1d13f087aec0d178
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bf36db27c6ba21bc8799977baa881bf1b8c6fee
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518026"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179456"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
 命名空间：microsoft.graph
 
-获取特定的 Azure Active Directory 审核日志项。 这包括由 Azure Active Directory 中的各种服务生成的审核日志项目，如用户、应用程序、设备和组管理、特权身份管理（PIM）、访问查看、使用条款、身份保护、密码管理（自助服务和管理员密码重置）、自助服务组管理等。
+获取特定的 Azure Active Directory 审核日志项。 这包括由 Azure Active Directory 中的各种服务生成的审核日志项目，如用户、应用程序、设备和组管理、特权身份管理（PIM）、访问查看、使用条款、标识保护、密码管理（自助服务和管理员密码重置）、自助服务组管理等等。
 
 ## <a name="permissions"></a>权限
 
