@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4d6c824ee497b060ac1c7eabe51335b84c1195db
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fe9bcc943fdcbc80ce6b006b2f11b687f0cd088e
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125013"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200206"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -169,8 +169,8 @@ ms.locfileid: "43125013"
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[Onenote](onenote.md)| 只读。|
-|owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
-|照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
+|owners|[directoryObject](directoryobject.md) collection|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 100 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
+|photo|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[plannerGroup](plannergroup.md)| 统一组可能存在的 Planner 资源入口点。|
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
