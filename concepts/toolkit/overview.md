@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包：由 Microsoft Graph 提供支持的 Web 组�
 description: Microsoft Graph 工具包是 resuable、框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 348e08212010f66fdde5ee3b752fe901699fbaa9
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 2ba11a66dcec1eaec276b3fe71427fcf356cbcde
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639548"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181614"
 ---
 # <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a>Microsoft Graph 工具包：由 Microsoft Graph 提供支持的 Web 组件
 
@@ -32,16 +32,17 @@ Microsoft Graph 工具包包含一系列 web 组件，用于 Microsoft Graph Api
 |[人员](./components/person.md)|按照片、姓名和/或电子邮件地址显示人员或联系人。|
 |[人员](./components/people.md)|按照片或缩写显示一组人或联系人。|
 |[日程](./components/agenda.md)|显示用户或组的日历中的事件。|
-|[Tasks](./components/tasks.md)|显示并允许添加、删除、完成或编辑 Microsoft Planner 或 Microsoft To Do 中的任务。|
+|[任务](./components/tasks.md)|显示并允许添加、删除、完成或编辑 Microsoft Planner 或 Microsoft To Do 中的任务。|
 |[人员选取器](./components/people-picker.md)|提供搜索人员并呈现结果列表的功能。|
 |[个人卡片](./components/person-card.md)|在 person 组件上使用的浮出控件，用于显示有关用户的更多配置文件信息。|
 |[获取](./components/get.md)|在 HTML 中直接向任何 Microsoft Graph API 发出 GET 查询。|
+|[频道选取器](./components/teams-channel-picker.md)|提供搜索 Microsoft 团队频道以从呈现的结果列表中选择频道的功能。|
 
 ### <a name="providers"></a>提供程序
 
 与[提供程序](/providers/providers.md)配合使用时，组件的工作效果最佳。 提供程序启用身份验证，并提供用于获取调用 Microsoft Graph Api 的访问令牌的实现。
 
-|提供程序|说明|
+|提供程序|Description|
 |---------|-----------|
 |[Msal](./providers/msal.md)|使用 MSAL 登录用户并获取令牌以用于 Microsoft Graph。|
 |[SharePoint](./providers/sharepoint.md)|对 SharePoint web 部件内的组件进行身份验证并提供 Microsoft Graph 访问权限。|

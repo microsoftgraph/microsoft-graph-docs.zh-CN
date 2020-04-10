@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: a897fedd643d95d54b4883e041b5d2c66e6b90ae
-  ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+  ms.openlocfilehash: c761e8a9438eac3b9034ed019b4baf46c0500cdc
+  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/04/2020
-  ms.locfileid: "43144382"
+  ms.lasthandoff: 04/09/2020
+  ms.locfileid: "43199975"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
@@ -66,6 +66,6 @@ landingContent:
     - text: 更改通知和 Delta 查询
       url: /learn/modules/msgraph-changenotifications-trackchanges
     - text: 使用查询参数优化数据使用情况
-      url: learn/modules/optimize-data-usage
+      url: /learn/modules/optimize-data-usage
     - text: 优化网络流量
-      url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
+      url: /learn/modules/optimize-network-traffic
