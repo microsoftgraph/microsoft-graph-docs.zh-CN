@@ -3,39 +3,39 @@ title: attributeMappingFunctionSchema 资源类型
 description: 介绍可在属性映射中用于在同步期间转换值的函数。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 195f8e11737d2f9ae48675cdb7a7046869090e19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16dae5dca65b3d238c2d12fddc2b474e7e03ac0d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520245"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219177"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="f0512-103">attributeMappingFunctionSchema 资源类型</span><span class="sxs-lookup"><span data-stu-id="f0512-103">attributeMappingFunctionSchema resource type</span></span>
+# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="dd1e8-103">attributeMappingFunctionSchema 资源类型</span><span class="sxs-lookup"><span data-stu-id="dd1e8-103">attributeMappingFunctionSchema resource type</span></span>
 
-<span data-ttu-id="f0512-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f0512-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dd1e8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dd1e8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0512-105">介绍可在[属性映射](synchronization-attributemapping.md)中用于在同步期间转换值的函数。</span><span class="sxs-lookup"><span data-stu-id="f0512-105">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
+<span data-ttu-id="dd1e8-105">介绍可在[属性映射](synchronization-attributemapping.md)中用于在同步期间转换值的函数。</span><span class="sxs-lookup"><span data-stu-id="dd1e8-105">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="f0512-106">方法</span><span class="sxs-lookup"><span data-stu-id="f0512-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="dd1e8-106">Methods</span><span class="sxs-lookup"><span data-stu-id="dd1e8-106">Methods</span></span>
 
-| <span data-ttu-id="f0512-107">方法</span><span class="sxs-lookup"><span data-stu-id="f0512-107">Method</span></span>           | <span data-ttu-id="f0512-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="f0512-108">Return Type</span></span>    |<span data-ttu-id="f0512-109">说明</span><span class="sxs-lookup"><span data-stu-id="f0512-109">Description</span></span>|
+| <span data-ttu-id="dd1e8-107">方法</span><span class="sxs-lookup"><span data-stu-id="dd1e8-107">Method</span></span>           | <span data-ttu-id="dd1e8-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="dd1e8-108">Return Type</span></span>    |<span data-ttu-id="dd1e8-109">说明</span><span class="sxs-lookup"><span data-stu-id="dd1e8-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="f0512-110">List</span><span class="sxs-lookup"><span data-stu-id="f0512-110">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="f0512-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="f0512-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="f0512-112">列出受支持的属性映射函数。</span><span class="sxs-lookup"><span data-stu-id="f0512-112">List supported attribute mapping functions.</span></span>|
+|[<span data-ttu-id="dd1e8-110">List</span><span class="sxs-lookup"><span data-stu-id="dd1e8-110">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="dd1e8-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="dd1e8-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="dd1e8-112">列出受支持的属性映射函数。</span><span class="sxs-lookup"><span data-stu-id="dd1e8-112">List supported attribute mapping functions.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="f0512-113">属性</span><span class="sxs-lookup"><span data-stu-id="f0512-113">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dd1e8-113">属性</span><span class="sxs-lookup"><span data-stu-id="dd1e8-113">Properties</span></span>
 
-| <span data-ttu-id="f0512-114">属性</span><span class="sxs-lookup"><span data-stu-id="f0512-114">Property</span></span>                   | <span data-ttu-id="f0512-115">类型</span><span class="sxs-lookup"><span data-stu-id="f0512-115">Type</span></span>                      | <span data-ttu-id="f0512-116">说明</span><span class="sxs-lookup"><span data-stu-id="f0512-116">Description</span></span>    |
+| <span data-ttu-id="dd1e8-114">属性</span><span class="sxs-lookup"><span data-stu-id="dd1e8-114">Property</span></span>                   | <span data-ttu-id="dd1e8-115">类型</span><span class="sxs-lookup"><span data-stu-id="dd1e8-115">Type</span></span>                      | <span data-ttu-id="dd1e8-116">说明</span><span class="sxs-lookup"><span data-stu-id="dd1e8-116">Description</span></span>    |
 |:---------------------------|:-------------------------|:---------------|
-|<span data-ttu-id="f0512-117">name</span><span class="sxs-lookup"><span data-stu-id="f0512-117">name</span></span>                        |<span data-ttu-id="f0512-118">String</span><span class="sxs-lookup"><span data-stu-id="f0512-118">String</span></span>                    |<span data-ttu-id="f0512-119">运算符名称。</span><span class="sxs-lookup"><span data-stu-id="f0512-119">Operator name.</span></span> |
-|<span data-ttu-id="f0512-120">parameters</span><span class="sxs-lookup"><span data-stu-id="f0512-120">parameters</span></span>                  |<span data-ttu-id="f0512-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="f0512-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="f0512-122">函数参数的集合。</span><span class="sxs-lookup"><span data-stu-id="f0512-122">Collection of function parameters.</span></span>|
+|<span data-ttu-id="dd1e8-117">name</span><span class="sxs-lookup"><span data-stu-id="dd1e8-117">name</span></span>                        |<span data-ttu-id="dd1e8-118">字符串</span><span class="sxs-lookup"><span data-stu-id="dd1e8-118">String</span></span>                    |<span data-ttu-id="dd1e8-119">运算符名称。</span><span class="sxs-lookup"><span data-stu-id="dd1e8-119">Operator name.</span></span> |
+|<span data-ttu-id="dd1e8-120">parameters</span><span class="sxs-lookup"><span data-stu-id="dd1e8-120">parameters</span></span>                  |<span data-ttu-id="dd1e8-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)集合</span><span class="sxs-lookup"><span data-stu-id="dd1e8-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="dd1e8-122">函数参数的集合。</span><span class="sxs-lookup"><span data-stu-id="dd1e8-122">Collection of function parameters.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f0512-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f0512-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dd1e8-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dd1e8-123">JSON representation</span></span>
 
-<span data-ttu-id="f0512-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0512-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dd1e8-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dd1e8-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

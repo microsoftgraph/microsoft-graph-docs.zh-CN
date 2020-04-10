@@ -2,35 +2,35 @@
 title: 更新 activitybasedtimeoutpolicy
 description: 更新 activityBasedTimeoutPolicy 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7e8e5bfb9d1e6ba1d462a28d8c31705ae346746a
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 5ae974032e609f9099fdd9d3a92e48837e0f9c92
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589786"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217930"
 ---
-# <a name="update-activitybasedtimeoutpolicy"></a><span data-ttu-id="08482-103">更新 activitybasedtimeoutpolicy</span><span class="sxs-lookup"><span data-stu-id="08482-103">Update activitybasedtimeoutpolicy</span></span>
+# <a name="update-activitybasedtimeoutpolicy"></a><span data-ttu-id="64076-103">更新 activitybasedtimeoutpolicy</span><span class="sxs-lookup"><span data-stu-id="64076-103">Update activitybasedtimeoutpolicy</span></span>
 
-<span data-ttu-id="08482-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08482-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="64076-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="64076-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08482-105">更新[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="08482-105">Update the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
+<span data-ttu-id="64076-105">更新[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="64076-105">Update the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="08482-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="08482-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="64076-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="64076-106">Permissions</span></span>
 
-<span data-ttu-id="08482-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="08482-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64076-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="64076-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="08482-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="08482-109">Permission type</span></span>                        | <span data-ttu-id="08482-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="08482-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="64076-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="64076-109">Permission type</span></span>                        | <span data-ttu-id="64076-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="64076-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="08482-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="08482-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="08482-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="08482-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="08482-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="08482-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08482-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="08482-114">Not supported.</span></span> |
-| <span data-ttu-id="08482-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="08482-115">Application</span></span>                            | <span data-ttu-id="08482-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="08482-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="64076-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="64076-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="64076-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="64076-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="64076-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="64076-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64076-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="64076-114">Not supported.</span></span> |
+| <span data-ttu-id="64076-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="64076-115">Application</span></span>                            | <span data-ttu-id="64076-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="64076-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="08482-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="08482-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64076-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="64076-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,35 +38,35 @@ ms.locfileid: "42589786"
 PATCH /policies/activityBasedTimeoutPolicies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="08482-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="08482-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="64076-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="64076-118">Request headers</span></span>
 
-| <span data-ttu-id="08482-119">名称</span><span class="sxs-lookup"><span data-stu-id="08482-119">Name</span></span>       | <span data-ttu-id="08482-120">说明</span><span class="sxs-lookup"><span data-stu-id="08482-120">Description</span></span>|
+| <span data-ttu-id="64076-119">名称</span><span class="sxs-lookup"><span data-stu-id="64076-119">Name</span></span>       | <span data-ttu-id="64076-120">说明</span><span class="sxs-lookup"><span data-stu-id="64076-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="08482-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="08482-121">Authorization</span></span> | <span data-ttu-id="08482-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="08482-122">Bearer {token}</span></span> |
-| <span data-ttu-id="08482-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="08482-123">Content-type</span></span> | <span data-ttu-id="08482-124">application/json</span><span class="sxs-lookup"><span data-stu-id="08482-124">application/json</span></span> |
+| <span data-ttu-id="64076-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="64076-121">Authorization</span></span> | <span data-ttu-id="64076-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="64076-122">Bearer {token}</span></span> |
+| <span data-ttu-id="64076-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="64076-123">Content-type</span></span> | <span data-ttu-id="64076-124">application/json</span><span class="sxs-lookup"><span data-stu-id="64076-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="08482-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="08482-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="64076-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="64076-125">Request body</span></span>
 
-<span data-ttu-id="08482-126">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="08482-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="08482-127">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="08482-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="08482-128">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="08482-128">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="64076-126">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="64076-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="64076-127">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="64076-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="64076-128">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="64076-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="08482-129">属性</span><span class="sxs-lookup"><span data-stu-id="08482-129">Property</span></span>     | <span data-ttu-id="08482-130">类型</span><span class="sxs-lookup"><span data-stu-id="08482-130">Type</span></span>        | <span data-ttu-id="08482-131">Description</span><span class="sxs-lookup"><span data-stu-id="08482-131">Description</span></span> |
+| <span data-ttu-id="64076-129">属性</span><span class="sxs-lookup"><span data-stu-id="64076-129">Property</span></span>     | <span data-ttu-id="64076-130">类型</span><span class="sxs-lookup"><span data-stu-id="64076-130">Type</span></span>        | <span data-ttu-id="64076-131">说明</span><span class="sxs-lookup"><span data-stu-id="64076-131">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="08482-132">定义</span><span class="sxs-lookup"><span data-stu-id="08482-132">definition</span></span>|<span data-ttu-id="08482-133">String collection</span><span class="sxs-lookup"><span data-stu-id="08482-133">String collection</span></span>| <span data-ttu-id="08482-134">一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。</span><span class="sxs-lookup"><span data-stu-id="08482-134">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="08482-135">必需。</span><span class="sxs-lookup"><span data-stu-id="08482-135">Required.</span></span>|
-|<span data-ttu-id="08482-136">description</span><span class="sxs-lookup"><span data-stu-id="08482-136">description</span></span>|<span data-ttu-id="08482-137">字符串</span><span class="sxs-lookup"><span data-stu-id="08482-137">String</span></span>| <span data-ttu-id="08482-138">此策略的说明。</span><span class="sxs-lookup"><span data-stu-id="08482-138">Description for this policy.</span></span>|
-|<span data-ttu-id="08482-139">displayName</span><span class="sxs-lookup"><span data-stu-id="08482-139">displayName</span></span>|<span data-ttu-id="08482-140">String</span><span class="sxs-lookup"><span data-stu-id="08482-140">String</span></span>| <span data-ttu-id="08482-141">此策略的显示名称。</span><span class="sxs-lookup"><span data-stu-id="08482-141">Display name for this policy.</span></span> <span data-ttu-id="08482-142">必需。</span><span class="sxs-lookup"><span data-stu-id="08482-142">Required.</span></span>|
-|<span data-ttu-id="08482-143">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="08482-143">isOrganizationDefault</span></span>|<span data-ttu-id="08482-144">Boolean</span><span class="sxs-lookup"><span data-stu-id="08482-144">Boolean</span></span>|<span data-ttu-id="08482-145">如果设置为 true，则激活此策略。</span><span class="sxs-lookup"><span data-stu-id="08482-145">If set to true, activates this policy.</span></span> <span data-ttu-id="08482-146">对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。</span><span class="sxs-lookup"><span data-stu-id="08482-146">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="08482-147">可选，默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="08482-147">Optional, default value is false.</span></span>|
+|<span data-ttu-id="64076-132">定义</span><span class="sxs-lookup"><span data-stu-id="64076-132">definition</span></span>|<span data-ttu-id="64076-133">String collection</span><span class="sxs-lookup"><span data-stu-id="64076-133">String collection</span></span>| <span data-ttu-id="64076-134">一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。</span><span class="sxs-lookup"><span data-stu-id="64076-134">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="64076-135">必需。</span><span class="sxs-lookup"><span data-stu-id="64076-135">Required.</span></span>|
+|<span data-ttu-id="64076-136">description</span><span class="sxs-lookup"><span data-stu-id="64076-136">description</span></span>|<span data-ttu-id="64076-137">字符串</span><span class="sxs-lookup"><span data-stu-id="64076-137">String</span></span>| <span data-ttu-id="64076-138">此策略的说明。</span><span class="sxs-lookup"><span data-stu-id="64076-138">Description for this policy.</span></span>|
+|<span data-ttu-id="64076-139">displayName</span><span class="sxs-lookup"><span data-stu-id="64076-139">displayName</span></span>|<span data-ttu-id="64076-140">String</span><span class="sxs-lookup"><span data-stu-id="64076-140">String</span></span>| <span data-ttu-id="64076-141">此策略的显示名称。</span><span class="sxs-lookup"><span data-stu-id="64076-141">Display name for this policy.</span></span> <span data-ttu-id="64076-142">必需。</span><span class="sxs-lookup"><span data-stu-id="64076-142">Required.</span></span>|
+|<span data-ttu-id="64076-143">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="64076-143">isOrganizationDefault</span></span>|<span data-ttu-id="64076-144">Boolean</span><span class="sxs-lookup"><span data-stu-id="64076-144">Boolean</span></span>|<span data-ttu-id="64076-145">如果设置为 true，则激活此策略。</span><span class="sxs-lookup"><span data-stu-id="64076-145">If set to true, activates this policy.</span></span> <span data-ttu-id="64076-146">对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。</span><span class="sxs-lookup"><span data-stu-id="64076-146">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="64076-147">可选，默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="64076-147">Optional, default value is false.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="08482-148">响应</span><span class="sxs-lookup"><span data-stu-id="08482-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="64076-148">响应</span><span class="sxs-lookup"><span data-stu-id="64076-148">Response</span></span>
 
-<span data-ttu-id="08482-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="08482-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="64076-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="64076-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="08482-151">示例</span><span class="sxs-lookup"><span data-stu-id="08482-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="64076-151">示例</span><span class="sxs-lookup"><span data-stu-id="64076-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="08482-152">请求</span><span class="sxs-lookup"><span data-stu-id="08482-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="64076-152">请求</span><span class="sxs-lookup"><span data-stu-id="64076-152">Request</span></span>
 
-<span data-ttu-id="08482-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="08482-153">The following is an example of the request.</span></span>
+<span data-ttu-id="64076-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="64076-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="08482-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="08482-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="64076-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="64076-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_activitybasedtimeoutpolicy"
@@ -85,26 +85,26 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="08482-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08482-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="64076-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64076-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-activitybasedtimeoutpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="08482-156">C#</span><span class="sxs-lookup"><span data-stu-id="08482-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="64076-156">C#</span><span class="sxs-lookup"><span data-stu-id="64076-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-activitybasedtimeoutpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="08482-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08482-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="64076-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="64076-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-activitybasedtimeoutpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="08482-158">响应</span><span class="sxs-lookup"><span data-stu-id="08482-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="64076-158">响应</span><span class="sxs-lookup"><span data-stu-id="64076-158">Response</span></span>
 
-<span data-ttu-id="08482-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="08482-159">The following is an example of the response.</span></span>
+<span data-ttu-id="64076-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="64076-159">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="08482-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="08482-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="64076-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="64076-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -3,73 +3,73 @@ title: 列出 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 7889d8bb829182f4ba8c16d139f6292c6a95464f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 914dfba11cbfa80483c6406e65962d2039c0d5ae
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639840"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218890"
 ---
-# <a name="list-governanceroleassignments"></a><span data-ttu-id="740ee-103">列出 governanceRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="740ee-103">List governanceRoleAssignments</span></span>
+# <a name="list-governanceroleassignments"></a><span data-ttu-id="37530-103">列出 governanceRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="37530-103">List governanceRoleAssignments</span></span>
 
-<span data-ttu-id="740ee-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="740ee-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="37530-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="37530-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="740ee-105">检索[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="740ee-105">Retrieve a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md).</span></span>
+<span data-ttu-id="37530-105">检索[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="37530-105">Retrieve a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="740ee-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="740ee-106">Permissions</span></span>
-<span data-ttu-id="740ee-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="740ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="37530-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="37530-106">Permissions</span></span>
+<span data-ttu-id="37530-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="37530-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="740ee-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="740ee-109">Permission type</span></span>      | <span data-ttu-id="740ee-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="740ee-110">Permissions</span></span>              |
+|<span data-ttu-id="37530-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="37530-109">Permission type</span></span>      | <span data-ttu-id="37530-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="37530-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="740ee-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="740ee-111">Delegated (work or school account)</span></span> | <span data-ttu-id="740ee-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="740ee-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="740ee-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="740ee-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="740ee-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="740ee-114">Not supported.</span></span>    |
-|<span data-ttu-id="740ee-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="740ee-115">Application</span></span> | <span data-ttu-id="740ee-116">PrivilegedAccess。 AzureResources</span><span class="sxs-lookup"><span data-stu-id="740ee-116">PrivilegedAccess.Read.AzureResources</span></span> |
+|<span data-ttu-id="37530-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="37530-111">Delegated (work or school account)</span></span> | <span data-ttu-id="37530-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="37530-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="37530-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="37530-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37530-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="37530-114">Not supported.</span></span>    |
+|<span data-ttu-id="37530-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="37530-115">Application</span></span> | <span data-ttu-id="37530-116">PrivilegedAccess。 AzureResources</span><span class="sxs-lookup"><span data-stu-id="37530-116">PrivilegedAccess.Read.AzureResources</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="740ee-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="740ee-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37530-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="37530-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="740ee-118">列出资源上的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="740ee-118">List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) on a resource.</span></span>
+<span data-ttu-id="37530-118">列出资源上的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="37530-118">List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) on a resource.</span></span>
 
-><span data-ttu-id="740ee-119">**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个角色分配。</span><span class="sxs-lookup"><span data-stu-id="740ee-119">**Note:** Besides the permission scope, this request requires the requestor to have at least one role assignment on the resource.</span></span> 
+><span data-ttu-id="37530-119">**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个角色分配。</span><span class="sxs-lookup"><span data-stu-id="37530-119">**Note:** Besides the permission scope, this request requires the requestor to have at least one role assignment on the resource.</span></span> 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-<span data-ttu-id="740ee-120">列出地雷的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="740ee-120">List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) of mine.</span></span>
+<span data-ttu-id="37530-120">列出地雷的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="37530-120">List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) of mine.</span></span>
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="740ee-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="740ee-121">Optional query parameters</span></span>
-<span data-ttu-id="740ee-122">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="740ee-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="37530-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="37530-121">Optional query parameters</span></span>
+<span data-ttu-id="37530-122">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="37530-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="740ee-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="740ee-123">Request headers</span></span>
-| <span data-ttu-id="740ee-124">名称</span><span class="sxs-lookup"><span data-stu-id="740ee-124">Name</span></span>      |<span data-ttu-id="740ee-125">说明</span><span class="sxs-lookup"><span data-stu-id="740ee-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="37530-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="37530-123">Request headers</span></span>
+| <span data-ttu-id="37530-124">名称</span><span class="sxs-lookup"><span data-stu-id="37530-124">Name</span></span>      |<span data-ttu-id="37530-125">说明</span><span class="sxs-lookup"><span data-stu-id="37530-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="740ee-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="740ee-126">Authorization</span></span>  | <span data-ttu-id="740ee-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="740ee-127">Bearer {code}</span></span>|
+| <span data-ttu-id="37530-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="37530-126">Authorization</span></span>  | <span data-ttu-id="37530-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="37530-127">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="740ee-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="740ee-128">Request body</span></span>
-<span data-ttu-id="740ee-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="740ee-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="37530-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="37530-128">Request body</span></span>
+<span data-ttu-id="37530-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="37530-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="740ee-130">响应</span><span class="sxs-lookup"><span data-stu-id="740ee-130">Response</span></span>
-<span data-ttu-id="740ee-131">如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="740ee-131">If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="740ee-132">示例</span><span class="sxs-lookup"><span data-stu-id="740ee-132">Example</span></span>
+## <a name="response"></a><span data-ttu-id="37530-130">响应</span><span class="sxs-lookup"><span data-stu-id="37530-130">Response</span></span>
+<span data-ttu-id="37530-131">如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="37530-131">If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="37530-132">示例</span><span class="sxs-lookup"><span data-stu-id="37530-132">Example</span></span>
 
-<span data-ttu-id="740ee-133">本示例演示如何在订阅 Wingtip 玩具-生产中获取我的角色分配。</span><span class="sxs-lookup"><span data-stu-id="740ee-133">This example shows how to get my role assignments on the subscription Wingtip Toys - Prod.</span></span>
+<span data-ttu-id="37530-133">本示例演示如何在订阅 Wingtip 玩具-生产中获取我的角色分配。</span><span class="sxs-lookup"><span data-stu-id="37530-133">This example shows how to get my role assignments on the subscription Wingtip Toys - Prod.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"
 }-->
-##### <a name="request"></a><span data-ttu-id="740ee-134">请求</span><span class="sxs-lookup"><span data-stu-id="740ee-134">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="37530-134">请求</span><span class="sxs-lookup"><span data-stu-id="37530-134">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
-##### <a name="response"></a><span data-ttu-id="740ee-135">响应</span><span class="sxs-lookup"><span data-stu-id="740ee-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="37530-135">响应</span><span class="sxs-lookup"><span data-stu-id="37530-135">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
