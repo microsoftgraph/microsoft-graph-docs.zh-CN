@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 977211f9e2e77250201fe2c346a04153cf3a0cdf
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082348"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200220"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -42,6 +42,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
 - 安全[警报][]
 - Teams [callRecord][]（预览版）
+- Teams [chatMessage][]（预览）
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
@@ -74,7 +75,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 - 个人 Microsoft 帐户不支持用户实体的通知。
 
-- 用户订阅存在一个[已知问题](graph/concepts/known-issues#change-notifications)。
+- 用户和租订阅存在一个[已知问题](known-issues.md#change-notifications)。
 
 ### <a name="outlook-resource-limitations"></a>Outlook 资源限制
 
@@ -267,9 +268,9 @@ notification 对象具有以下属性：
 可在 GitHub 上获取以下代码示例。
 
 - [Microsoft Graph 培训模块 - 在 Microsoft Graph 中使用变更通知和变更跟踪](https://github.com/microsoftgraph/msgraph-training-changenotifications)
-- [面向 Node.js 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-- [面向 ASP.NET 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-- [使用 WebJobs SDK 的 Microsoft Graph 用户 Webhooks 示例](https://github.com/microsoftgraph/webjobs-webhooks-sample)
+- [面向 Node.js 的 Microsoft Graph Webhooks 示例](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
+- [适用于 ASP.NET Core 的 Microsoft Graph Webhook 示例](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
+- [面向 Java Spring 的 Microsoft Graph Webhooks 示例](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
 ## <a name="see-also"></a>另请参阅
 
@@ -287,4 +288,5 @@ notification 对象具有以下属性：
 [邮件]: /graph/api/resources/message?view=graph-rest-1.0
 [用户]: /graph/api/resources/user?view=graph-rest-1.0
 [警报]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[chatMessage]: /graph/api/resources/chatmessage

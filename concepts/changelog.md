@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c66a1d38f9f63136c202a675608c58bf4b8ec57f
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 2da57e4779760cfb3dd0a9c124c2058327822de1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160287"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181685"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -45,7 +45,7 @@ ms.locfileid: "43160287"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项|v1.0|已将新属性 [initiator](/graph/api/resources/recordinginfo?view=graph-rest-1.0) 添加至 **recordingInfo** 复杂类型。
-|添加项|v1.0|新增了复杂类型：<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|添加项|v1.0|新增了复杂类型：<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
 |Addition|v1.0|已将新属性 **recordingInfo** 添加至 [participant](/graph/api/resources/participant?view=graph-rest-1.0) 实体。
 |添加项|v1.0|已将新属性 [recordingStatus](/graph/api/resources/recordinginfo?view=graph-rest-1.0) 添加至 **recordingInfo** 复杂类型。
 |添加项|v1.0|已将新操作 [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) 添加至 [call](/graph/api/resources/call?view=graph-rest-1.0) 实体。
@@ -56,7 +56,7 @@ ms.locfileid: "43160287"
 |添加项|v1.0|已将新属性 **observedParticipantId** 添加到 [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) 复杂类型。
 |Addition|v1.0|已将新属性 **onBehalfOf** 添加到 [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) 复杂类型。
 |添加项|v1.0|已将新属性 **transferor** 添加到 [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) 复杂类型。
-|Addition|v1.0|已将新属性 **callRoute** 添加到 [call](/graph/api/resources/call?view=graph-rest-1.0) 实体。
+|Addition|v1.0|已将新属性 **CallRoutes** 添加到 [call](/graph/api/resources/call?view=graph-rest-1.0) 实体。
 |添加项|v1.0|已将新属性 **final** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 实体。
 |Addition|v1.0|已将新属性 **original** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 复杂类型。
 |添加项|v1.0|已将新属性 **routingType** 添加到 [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) 复杂类型。
@@ -2941,7 +2941,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|Beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 新增了 [updateWindowsDeviceAccount](/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-beta) 操作 |
 |添加|Beta|对 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 新增了 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
 |添加|Beta|对 [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta) 集合新增了 [getDevicePasscode](/graph/api/intune-deviceconfig-devicecompliancepolicy-getdevicepasscode?view=graph-rest-beta) 函数 |
-|添加|Beta|对 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 新增了 [getEffectivePermissions](/graph/api/intune-rbac-devicemanagement-geteffectivepermissions?view=graph-rest-beta) 函数 |
+|添加|Beta|在 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 上添加了 [getEffectivePermissions](/graph/api/intune-rbac-devicemanagement-geteffectivepermissions?view=graph-rest-beta) 函数 |
 |删除|Beta|删除了以下实体：<br/>**windowsStoreForBusinessApp**<br/>|
 |删除|Beta|删除了以下复杂类型：<br/>**windowsStoreForBusinessAppAssignmentSettings**<br/>|
 |更改|Beta|向 [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **dateAndTimeBlockChanges** 属性|

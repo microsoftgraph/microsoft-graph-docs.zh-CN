@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 743245f7f64ce0a3b31ca2f3dfadfb4b22d629aa
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082331"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200304"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -87,6 +87,10 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 ### <a name="additional-notifications-for-users"></a>其他用户通知
 
 对于 **changeType** 设置为 **updated** 的**用户**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和删除用户时**已更新**。
+
+### <a name="additional-notifications-for-groups"></a>其他组通知
+
+对于 **changeType** 设置为 **updated** 的**组**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和删除组时**已更新**。
 
 ## <a name="cloud-communications"></a>云通信 
 

@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 80779619006da786652fa02f9d041975e4909e27
-ms.sourcegitcommit: fadf83089455674ee721c22d59f7d54758d21896
+ms.openlocfilehash: 6f23efe2146c52bf53ab54ea1600d0aa7b6aa0ae
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43148257"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181893"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -69,7 +69,7 @@ ms.locfileid: "43148257"
 
 3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。
 
-4. 成功创建组（完成步骤 1 后最多需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。 
+4. 成功创建组（完成步骤 1 后最长需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。 
 
     ```http
     POST https://graph.microsoft.com/beta/teams
