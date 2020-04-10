@@ -3,30 +3,30 @@ title: governanceResource： register
 description: 在 PIM 中注册 governanceResource 对象。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9edd34e7d8bd0fc2bd94f7d6afc0f038d8a250fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: d92b061dd726dcbcacf18213a303fac8f415c46e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421345"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218911"
 ---
 # <a name="governanceresource-register"></a>governanceResource： register
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在特权标识管理中注册[governanceResource](../resources/governanceresource.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 此 API 还要求请求者在资源上至少有一个活动角色分配。
 
-| 权限类型 | 权限 |
+| 权限类型 | Permissions |
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |

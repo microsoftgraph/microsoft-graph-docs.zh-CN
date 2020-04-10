@@ -2,25 +2,25 @@
 title: 更新 trustFrameworkKeySet
 description: 更新**trustFrameworkKeySet**对象的属性。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc82602e82b1c98fdde2398a576124b563b3c039
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452139"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219016"
 ---
 # <a name="update-trustframeworkkeyset"></a>更新 trustFrameworkKeySet
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)的属性。 此操作将替换现有键集的内容。 在请求负载中指定 ID 是可选的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

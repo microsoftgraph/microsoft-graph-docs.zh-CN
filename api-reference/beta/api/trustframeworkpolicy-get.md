@@ -2,25 +2,25 @@
 title: 获取 trustFrameworkPolicy
 description: 此操作将从 Azure AD B2C 租户检索现有的 trustFrameworkPolicy 内容。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b8a7c2a9d38d5da3ef38d2a724b3fa1b015a4efd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8d7354175c9f49d7c39c1e16115fdcbadb3ba98
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452066"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215859"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 检索现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的内容。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 

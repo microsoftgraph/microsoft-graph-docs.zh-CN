@@ -2,15 +2,15 @@
 title: 创建 tokenLifetimePolicy
 description: 创建新的 tokenLifetimePolicy。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0774e2fb497f94da56cd95130585cebfa86c9814
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 3d088529e65eb1bdc0a734fa25adff4533457972
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589286"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216069"
 ---
 # <a name="create-tokenlifetimepolicy"></a>创建 tokenLifetimePolicy
 

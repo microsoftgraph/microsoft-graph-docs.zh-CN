@@ -2,25 +2,25 @@
 title: 'trustFrameworkKeySet: uploadSecret'
 description: 将密码上载到键集。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0323e861e1ffa83eb3bedf2e850f8580f858d642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f05281b34adfbabe2e740cf1211c9c25de1c711
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452111"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215866"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将纯文本机密上载到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或任何其他标识提供程序中的应用程序机密。 他的方法返回[trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,10 +49,10 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | Description |
 |:-------------|:------------|:------------|
-|改用|String|与**trustFrameworkKey**的**use**属性类似。|
-|kb|String|类似于**trustFrameworkKey**的**k**属性。 这是用于发送密码的字段。|
+|改用|字符串|与**trustFrameworkKey**的**use**属性类似。|
+|kb|字符串|类似于**trustFrameworkKey**的**k**属性。 这是用于发送密码的字段。|
 |nbf|Int64|类似于**trustFrameworkKey**的**nbf**属性。|
 |exp|Int64|与**trustFrameworkKey**的**exp**属性类似。|
 

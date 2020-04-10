@@ -3,14 +3,14 @@ title: 列出 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 7889d8bb829182f4ba8c16d139f6292c6a95464f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 914dfba11cbfa80483c6406e65962d2039c0d5ae
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639840"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218890"
 ---
 # <a name="list-governanceroleassignments"></a>列出 governanceRoleAssignments
 

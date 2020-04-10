@@ -3,14 +3,14 @@ title: 获取 governanceRoleAssignment
 description: 检索 governanceRoleAssignment 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 038189ac8bda4b51588532cbddc022e83db9ffbf
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 74701c9e0567735dc4f34ec2f4044e8514a54d1d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639847"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218897"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 

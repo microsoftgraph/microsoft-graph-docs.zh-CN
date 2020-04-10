@@ -3,23 +3,23 @@ title: 获取 privilegedRoleSummary
 description: 检索 privilegedRoleSummary 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 56f7678231c4aacaf941667364facf0b863632e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 3a0bb4df38d4e0d56101a6254e3be472532e4b69
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455245"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218645"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedRoleSummary](../resources/privilegedrolesummary.md)对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

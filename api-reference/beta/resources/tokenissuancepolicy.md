@@ -2,15 +2,15 @@
 title: tokenIssuancePolicy 资源类型
 description: 表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d88680ffd24133b0c5ddb3c9ac3dd3408a46dc2
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9772e58a996c8800ea1822302df2f3a218f08a28
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591787"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219135"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "42591787"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
 |定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
@@ -61,7 +61,7 @@ ms.locfileid: "42591787"
 ```
 
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |TokenResponseSigningPolicy|字符串|表示 Azure AD 中可用的证书签名选项。 支持的值为`ResponseOnly`： `TokenOnly`、 `ResponseAndToken`、。  |
 |SamlTokenVersion|字符串|SAML 令牌的版本。 支持的值为`1.1`： `2.0`、。 |
@@ -71,7 +71,7 @@ ms.locfileid: "42591787"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
 

@@ -2,15 +2,15 @@
 title: 获取 unifiedRoleDefinition
 description: 检索 unifiedRoleDefinition 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c211c1e632538bb7e703baeb2eabd6398e5ae875
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 91b9097fffc8951c20c568fbe976e372655d671b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181138"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218946"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181138"
 
 检索[unifiedRoleDefinition](../resources/unifiedRoleDefinition.md)对象的属性和关系。 当前 "目录" 是唯一受支持的 RBAC 应用程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

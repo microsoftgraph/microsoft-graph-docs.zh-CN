@@ -2,15 +2,15 @@
 title: 分配 homeRealmDiscoveryPolicy
 description: 将 homeRealmDiscoveryPolicy 分配给服务主体。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49483db94f77151364932869c4ae58861530ce2f
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: cd6642ddce672302920338a2e1bad0c650f1c04b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590237"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218624"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>分配 homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "42590237"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。 |
+| 应用程序                            | Application.readwrite.ownedby、ApplicationConfiguration 和应用程序的 Application.readwrite.ownedby、、ApplicationConfiguration 和应用程序的、和。 all，all。和和应用程序的所有写读。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

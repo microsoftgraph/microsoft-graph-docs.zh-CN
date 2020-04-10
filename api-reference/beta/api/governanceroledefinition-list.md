@@ -3,14 +3,14 @@ title: 列出 governanceRoleDefinitions
 description: 获取资源的 governanceRoleDefinitions 集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 93702d24229f0e3a86c5b999cdbd2074c6a357e8
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 1a3acbf3e48166e01cac64fec6cdc09803981561
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639672"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218848"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 

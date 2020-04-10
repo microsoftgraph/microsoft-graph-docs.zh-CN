@@ -48,11 +48,11 @@ Prefer: IdType="ImmutableId"
 
 虽然容器类型（mailFolder、calendar 等）不支持不可变 ID，但其常规 ID 已是常量。
 
-## <a name="immutable-id-with-sending-mail"></a>使用发送邮件发送不可变 ID
+## <a name="immutable-id-with-sending-mail"></a>已发送邮件的不可变 ID
 
-发送完邮件后，可以使用不可变 ID 在“已发送邮件”文件夹中查找邮件，方法如下：
+发送邮件后，可以使用不可变 ID 在“已发送邮件”文件夹中查找邮件，步骤如下：
 
-1. 使用 `Prefer: IdType="ImmutableId"` 标头[创建邮件草稿](/graph/api/user-post-messages)，并将邮件的 `id` 属性保存在响应中。
+1. 使用 `Prefer: IdType="ImmutableId"` 标头[创建邮件草稿](/graph/api/user-post-messages)，并将邮件的 `id` 属性保存在回复中。
 1. 使用上一步中的 ID [发送邮件](/graph/api/message-send)。
 1. 使用第一步中的 ID [获取邮件](/graph/api/message-get)。 这是“已发送邮件”中的副本。
 

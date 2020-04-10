@@ -2,15 +2,15 @@
 title: 列出 tokenIssuancePolicy
 description: 获取 tokenIssuancePolicy 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f97e21d84a930f2a199600062532090153f241c3
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 0e1f743123afe283dca9824599ca5b29607a85ae
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591661"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216538"
 ---
 # <a name="list-tokenissuancepolicy"></a>列出 tokenIssuancePolicy
 
@@ -42,7 +42,7 @@ GET policies/tokenIssuancePolicies
 
 `$expand`此方法支持`$filter`、、 `$select`和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取展开的对象的权限。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|

@@ -1,20 +1,20 @@
 ---
 title: 筛选器资源类型
-description: 确定应将哪些对象设置为应用程序。 例如，您可能希望仅预配位于美国的用户。 当存在范围筛选器时，将在同步过程中跳过不满足筛选器的对象。
+description: 确定应将哪些对象设置为应用程序。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9e7e4cfc629cb8586c1fd1cf2e32474b0bc6b6cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82c52e1feac3dd837eb239279523a7a214f97e6b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520196"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218434"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,14 +3,14 @@ title: 获取 governanceRoleDefinition
 description: 检索 governanceRoleDefinition 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 89c1165431b87768fafa9553d688ca9331f9e470
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 55dbc8933c9adeda1bcd2d40c5ed9c54de7dd55a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639798"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218855"
 ---
 # <a name="get-governanceroledefinition"></a>获取 governanceRoleDefinition
 

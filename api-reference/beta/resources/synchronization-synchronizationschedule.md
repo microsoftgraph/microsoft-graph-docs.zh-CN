@@ -3,27 +3,27 @@ title: synchronizationSchedule 资源类型
 description: 定义用于运行 synchronizationJob 的计划。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc34a596af9b8f1270462b7c180e62ffde0cf0f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f72c292954c7a5e7ae0d4c9d68a5ae900942f4d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520042"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217337"
 ---
 # <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 定义用于运行[synchronizationJob](synchronization-synchronizationjob.md)的计划。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|时间|DateTimeOffset|此作业将到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|时间|DateTimeOffset|此作业将到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |interval|持续时间|同步迭代之间的时间间隔。|
 |state|String| 可取值为：`Active`、`Disabled`。|
 

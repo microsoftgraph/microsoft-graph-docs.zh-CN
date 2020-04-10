@@ -2,19 +2,19 @@
 title: trustFrameworkPolicy
 description: 在 Azure AD B2C 信任框架策略中称为 "自定义策略"。 这描述了适用于租户的 trustFrameworkPolicy 对象的操作。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2cda564b353675d54305db5c0e6eaaa64682a7ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 553463811f74a536cd3be5317718e00f91c95260
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519636"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218042"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustFrameworkPolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519636"
 
 有关详细信息，请参阅[Azure Active DIRECTORY B2C 中的自定义策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -41,7 +41,7 @@ ms.locfileid: "42519636"
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|策略的 ID。|
+|id|字符串|策略的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

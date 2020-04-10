@@ -1,20 +1,20 @@
 ---
 title: expressionInputObject 资源类型
-description: 表示当[synchronizationSchema： parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作执行表达式评估时用作输入测试数据的对象。
+description: 表示在 synchronizationSchema parseExpression 操作执行表达式评估时用作输入测试数据的对象。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 107dd80187f7b00439ec248be513d921bc64888e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0756e14f9a35e1ff1b5a63d563d4bca742be566d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520203"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218441"
 ---
 # <a name="expressioninputobject-resource-type"></a>expressionInputObject 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

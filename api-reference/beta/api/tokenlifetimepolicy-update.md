@@ -2,15 +2,15 @@
 title: 更新 tokenlifetimepolicy
 description: 更新 tokenLifetimePolicy 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 39c3db7c77b3fdaeb2a77ca135b1b8454fb611e5
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 949a2d0a1f06e25c4c5323f45164bbc915009cc0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589258"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216006"
 ---
 # <a name="update-tokenlifetimepolicy"></a>更新 tokenlifetimepolicy
 

@@ -3,14 +3,14 @@ title: 列出 governanceResources
 description: 检索请求者有权访问的 governanceResource 的集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 98c19e86b80a95d23e12508740f082370997f147
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 219250051cf4b7d27eed4f08a2e3d07f38f74a2a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639868"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218988"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 

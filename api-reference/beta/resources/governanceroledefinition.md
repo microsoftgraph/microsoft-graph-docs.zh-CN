@@ -3,18 +3,18 @@ title: governanceRoleDefinition 资源类型
 description: 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 985e674c0e8e79f7b929097dd5c61dfa15917a93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b6ff2edcfd1725b31051d1fc73c04539acf73e56
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497389"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217923"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42497389"
 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|
@@ -35,10 +35,10 @@ ms.locfileid: "42497389"
 | 属性  | 类型      |说明|
 |:----|:----------|:----------|:----------|
 |id         |字符串     |角色定义的 id。 |
-|resourceId |String     |必填。 与角色定义关联的资源的 id。 |
+|resourceId |String     |必需。 与角色定义关联的资源的 id。 |
 |externalId   |String     |角色定义的外部 id。|
 |displayName|字符串     |角色定义的显示名称。|
-|templateId | String | |
+|templateId | 字符串 | |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

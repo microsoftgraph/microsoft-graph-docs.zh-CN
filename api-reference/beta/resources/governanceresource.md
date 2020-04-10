@@ -3,25 +3,25 @@ title: governanceResource 资源类型
 description: 表示可由特权标识管理（PIM）管理的资源。 对于 Azure 资源，它可以是订阅、资源组和资源（如虚拟机、SQL 数据库等）。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 28af0f6ca55881bd0f0848cda27cfe56bd1d5eb5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: d2ce70da20a3a976acc567ee8138cc0b0dcaffb2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497613"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219247"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示可由特权标识管理（PIM）管理的资源。 对于 Azure 资源，它可以是订阅、资源组和资源（如虚拟机、SQL 数据库等）。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:----------|
@@ -36,11 +36,11 @@ ms.locfileid: "42497613"
 |:------------------|:----------|:----------|
 |id                 |String     |资源的 id。 它采用 GUID 格式。|
 |externalId           |String   |资源的外部 id，表示其在外部系统中的原始 id。 例如，订阅资源的外部 id 可以是 "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"。 |
-|type               |String     |必填。 资源类型。 例如，对于 Azure 资源，类型可以是 "订阅"、"ResourceGroup"、"Microsoft .Sql/服务器" 等。|
-|displayName        |String     |资源的显示名称。|
-|status             |String     |给定资源的状态。 例如，它可以表示资源是否已锁定（values： `Active` / `Locked`）。 注意：将来可能会扩展此属性以支持更多方案。|
+|type               |字符串     |必需。 资源类型。 例如，对于 Azure 资源，类型可以是 "订阅"、"ResourceGroup"、"Microsoft .Sql/服务器" 等。|
+|displayName        |字符串     |资源的显示名称。|
+|状态             |String     |给定资源的状态。 例如，它可以表示资源是否已锁定（values： `Active` / `Locked`）。 注意：将来可能会扩展此属性以支持更多方案。|
 |registeredDateTime|DateTimeOffset      |表示在 PIM 中注册资源的日期时间。|
-|registeredRoot|String      |在 PIM 中注册的资源的根作用域的 externalId。 根作用域可以是父级、祖父或更高的上级资源。|
+|registeredRoot|字符串      |在 PIM 中注册的资源的根作用域的 externalId。 根作用域可以是父级、祖父或更高的上级资源。|
 |roleAssignmentCount|Int32      |可选。 给定资源的角色分配数。 若要获取属性，请明确在`$select=roleAssignmentCount`查询中使用。|
 |roleDefinitionCount|Int32      |可选。 给定资源的角色定义的数量。 若要获取属性，请明确在`$select=roleDefinitionCount`查询中使用。|
 |permissions|[governancePermission](../resources/governancepermission.md)      |可选。 它表示请求者对资源的访问状态。若要获取属性，请明确在`$select=permissions`查询中使用。|

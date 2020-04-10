@@ -3,14 +3,14 @@ title: 列出 governanceRoleSettings
 description: 在资源上检索 governanceRoleSettings 的集合。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: c3bfe4470fecfea94ac3a0d2f9b3d81040d07507
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 93a0154c2e847b5130da0ab603b566037190ed3f
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639581"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215733"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 

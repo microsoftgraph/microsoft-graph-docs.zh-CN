@@ -2,15 +2,15 @@
 title: 更新 tokenIssuancePolicy
 description: 更新 tokenIssuancePolicy 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c93df515e3ac0038d5134e416b91175ef0846ff5
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 0cfb3cf1f7f24ad1431181f94248770a53d7f265
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591598"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216412"
 ---
 # <a name="update-tokenissuancepolicy"></a>更新 tokenIssuancePolicy
 

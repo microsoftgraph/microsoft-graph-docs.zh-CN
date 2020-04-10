@@ -3,14 +3,14 @@ title: 取消 governanceRoleAssignmentRequest
 description: 取消 governanceRoleAssignmentRequest。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 576c75e88bf882d8836a0731457fc37b337b0037
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 8179fa2d2bd1e8f52df9aa09bac5a965812e2122
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034767"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218883"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 

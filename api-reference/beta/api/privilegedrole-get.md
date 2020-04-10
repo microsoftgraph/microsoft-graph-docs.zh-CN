@@ -3,24 +3,24 @@ title: 获取 privilegedRole
 description: '检索 privilegedRole 对象的属性和关系。 '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 36d9fa5a4e5d85f6617f223523770fe1e25698b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: efaa5ae2fbf0f2a9089352a97285780f38c1b713
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455374"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218769"
 ---
 # <a name="get-privilegedrole"></a>获取 privilegedRole
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedRole](../resources/privilegedrole.md)对象的属性和关系。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。

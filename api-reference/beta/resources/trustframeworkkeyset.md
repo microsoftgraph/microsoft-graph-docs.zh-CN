@@ -2,25 +2,25 @@
 title: trustFrameworkKeySet 资源类型
 description: 表示信任框架密钥集/策略键。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2620a7aca90e8a8ae27880343914dfcbbabe27d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0784bffd1682f59e94d728c2311ffaaa01681c5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519643"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218049"
 ---
 # <a name="trustframeworkkeyset-resource-type"></a>trustFrameworkKeySet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示信任框架密钥集/策略键。 标识体验框架存储可在策略中使用的机密。 密码可以是密码、证书或其他文件。 在门户中，这些实体显示为`Policy keys`。 标识体验框架使用 keysets 的 JSON Web 密钥（JWK）标准。 此实体遵循[RFC 7517 第5部分](https://tools.ietf.org/html/rfc7517#section-5)中指定的格式。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -39,7 +39,7 @@ ms.locfileid: "42519643"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| Trustframework 键集的唯一标识符 |
+|id|字符串| Trustframework 键集的唯一标识符 |
 |标示|[trustFrameworkKey](trustframeworkkey.md)集合| 键的集合。 |
 
 ## <a name="relationships"></a>关系

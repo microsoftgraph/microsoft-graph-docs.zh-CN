@@ -2,15 +2,15 @@
 title: 创建 unifiedRoleDefinition
 description: 创建新的 unifiedRoleDefinition 对象。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67e3f59dbbd8f18d99cc58306cfa86a76c28e17d
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b05074aed0c8204645c96e8a5e2e8af1d00fec91
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181264"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216727"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181264"
 
 创建新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ POST /roleManagement/directory/roleDefinitions
 
 下表显示创建 roleDefinition 时所需的属性。
 
-| 参数 | 类型 | 说明|
+| 参数 | 类型 | Description|
 |:---------------|:--------|:----------|
 |displayName |string |角色定义的显示名称。|
 |isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。|

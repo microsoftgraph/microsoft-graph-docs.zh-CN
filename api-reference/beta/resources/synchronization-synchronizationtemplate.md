@@ -1,20 +1,20 @@
 ---
 title: synchronizationTemplate 资源类型
-description: " 任何人都可以检索模板以查看默认设置，包括同步架构。"
+description: 为特定应用程序提供预先配置的同步设置。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9952b06276efa712068091ecd8b7b5dc5e6769d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5067df26f0b1c1e6b77d1c3d87d4c73bb9e45208
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520014"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217001"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42520014"
 
 您可以为应用程序提供多个模板，并指定一个默认模板。 如果有多个模板可用于您感兴趣的应用程序，请查找特定于应用程序的指南，以确定哪一个模板最符合您的需求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
@@ -35,18 +35,18 @@ ms.locfileid: "42520014"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                      | 说明                  |
+| 属性      | 类型                      | Description                  |
 |:--------------|:--------------------------|:-----------------------------|
 |id             |字符串                     |唯一的模板标识符。|
 |applicationId  |String                     |此模板所属应用程序的标识符。|
-|设置        |布尔                    |`true`如果建议将此模板作为应用程序的默认模板。|
+|设置        |Boolean                    |`true`如果建议将此模板作为应用程序的默认模板。|
 |说明    |String                     |模板的说明。|
-|被   |String                     |`true`如果此模板应显示在可用于应用程序实例（服务主体）的模板集合中。|
-|factoryTag     |String                     |同步引擎支持的已知工厂标记之一。 **FactoryTag**告知同步引擎在处理基于此模板的作业时要使用的实现。|
+|被   |字符串                     |`true`如果此模板应显示在可用于应用程序实例（服务主体）的模板集合中。|
+|factoryTag     |字符串                     |同步引擎支持的已知工厂标记之一。 **FactoryTag**告知同步引擎在处理基于此模板的作业时要使用的实现。|
 |metadata       |metadataEntry 集合   |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
 
 ## <a name="relationships"></a>关系
-| 关系      | 类型      |说明|
+| 关系      | 类型      |Description|
 |:------------------|:----------|:----------|
 |架构             |[synchronizationSchema](synchronization-synchronizationschema.md)     |基于此模板的作业的默认同步架构。|
 

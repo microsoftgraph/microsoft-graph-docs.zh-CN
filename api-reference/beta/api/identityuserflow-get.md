@@ -2,25 +2,25 @@
 title: 获取 userFlow
 description: 检索 userflow 对象的属性和关系。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce54eb6ea71cf1396a8aedcde9478737f75d2c21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1883efae567f72beedd6603c88bc0b87fb78067d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446441"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218497"
 ---
 # <a name="get-userflow"></a>获取 userFlow
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[userFlow](../resources/identityuserflow.md)对象的属性和关联。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

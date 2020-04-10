@@ -2,15 +2,15 @@
 title: 列出 unifiedRoleDefinitions
 description: 获取 unifiedRoleDefinition 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9402d4543cecf51a1c689c6f47ee9f7358fd0800
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 779a8dfcc582b37118b975914141d0508860f9a5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181194"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216762"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181194"
 
 获取提供程序的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

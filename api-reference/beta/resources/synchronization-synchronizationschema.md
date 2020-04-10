@@ -1,20 +1,20 @@
 ---
 title: synchronizationSchema 资源类型
-description: 定义将同步的对象以及同步的对象。 同步架构包含特定同步作业的大部分安装信息。 通常情况下，您将自定义一些属性映射，或添加作用域筛选器以仅同步满足特定条件的对象。
+description: 定义将同步的对象以及同步的对象。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a50a53c7d76d281f4a42e976bacc0803377379d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f67a830f53fcfc7e55682b467e5ca373da240e8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520035"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217330"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,13 +28,13 @@ ms.locfileid: "42520035"
 
 ## <a name="synchronization-rules"></a>同步规则
 
-[同步规则](synchronization-synchronizationrule.md)是同步设置的核心。 它们定义同步引擎应如何执行同步，包括应同步的对象、源目录中的对象与目标目录中的对象的匹配方式以及属性应如何在将其从源目录同步到目标目录时进行转换。 
+[同步规则](synchronization-synchronizationrule.md)是同步设置的核心。 它们定义同步引擎应如何执行同步，包括应同步的对象、源目录中的对象与目标目录中的对象的匹配方式以及应如何在将属性从源同步到目标目录时转换属性。 
 
 ## <a name="object-mappings"></a>对象映射
 
-[对象映射](synchronization-objectmapping.md)是同步规则的主要部分。 每个对象映射定义应如何将给定对象从源同步到目标目录。 特别是，映射定义源目录中的对象应如何与目标目录中的对象匹配，应使用什么（如果有）作用域筛选器来决定是否设置对象，以及应如何转换对象属性将其从源目录同步到目标目录。
+[对象映射](synchronization-objectmapping.md)是同步规则的主要部分。 每个对象映射定义应如何将给定对象从源同步到目标目录。 特别是，映射定义源目录中的对象应如何与目标目录中的对象匹配，应使用什么（如果有）作用域筛选器来决定是否设置对象，以及如何在将对象属性从源同步到目标目录时转换对象属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
@@ -48,7 +48,7 @@ ms.locfileid: "42520035"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |目录名            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述作为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)一部分的目录和对象。 |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)配置的同步规则的集合。 |

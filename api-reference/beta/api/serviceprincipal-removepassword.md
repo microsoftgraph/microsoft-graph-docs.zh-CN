@@ -2,25 +2,25 @@
 title: servicePrincipal： removePassword
 description: 从 servicePrincipal 中删除密码
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57c7c225ba2b5475f141c23abdef39e8a08a542b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4c68e934fb6ea3085c5dd268371e9f5763519c9
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453343"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218610"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal： removePassword
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从[servicePrincipal](../resources/serviceprincipal.md)对象中删除密码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

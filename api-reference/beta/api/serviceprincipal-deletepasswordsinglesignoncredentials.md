@@ -2,25 +2,25 @@
 title: servicePrincipal： deletePasswordSingleSignOnCredentials
 description: 使用用户或组的密码删除单一登录凭据。
 localization_priority: Normal
-author: bharathramh92
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 72244f521644be4d71ea2aa6e457a2bf61c0742b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ec53db73ac413de9f2baf754c8b51c21e0d10b4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453476"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219296"
 ---
 # <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipal： deletePasswordSingleSignOnCredentials
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用用户或组的密码删除单一登录凭据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|此凭据集所属的用户或组的 ID。|
+|id|字符串|此凭据集所属的用户或组的 ID。|
 
 ## <a name="response"></a>响应
 

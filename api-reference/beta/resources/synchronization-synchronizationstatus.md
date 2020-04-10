@@ -3,18 +3,18 @@ title: synchronizationStatus 资源类型
 description: 表示 synchronizationJob 的当前状态。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 179eda96e62c124de5c64688352040b62dfc6c77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5c17e28c805fbfde1e59a383899da43b5966628
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520028"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217267"
 ---
 # <a name="synchronizationstatus-resource-type"></a>synchronizationStatus 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,20 +22,20 @@ ms.locfileid: "42520028"
 
 ## <a name="properties"></a>属性
 
-| 属性                              | 类型      | 说明    |
+| 属性                              | 类型      | Description    |
 |:--------------------------------------|:----------|:---------------|
-|code|String|同步作业的高级别状态代码。 可取值为：`NotConfigured`、`NotRun`、`Active`、`Paused`、`Quarantine`。|
+|code|字符串|同步作业的高级别状态代码。 可取值为：`NotConfigured`、`NotRun`、`Active`、`Paused`、`Quarantine`。|
 |countSuccessiveCompleteFailures|Int64|此作业连续失败的次数。|
-|escrowsPruned|布尔|`true`在初始同步过程中，如果作业的 escrows （对象级错误）被修剪。 在初始同步过程中，可以对 Escrows 进行修剪，从而达到通常会将作业放入隔离的错误阈值。 同步过程不会进入隔离，而是清除作业的错误并继续，直到初始同步完成。 初始同步完成后，作业将暂停，并等待客户清除错误。|
+|escrowsPruned|Boolean|`true`在初始同步过程中，如果作业的 escrows （对象级错误）被修剪。 在初始同步过程中，可以对 Escrows 进行修剪，从而达到通常会将作业放入隔离的错误阈值。 同步过程不会进入隔离，而是清除作业的错误并继续，直到初始同步完成。 初始同步完成后，作业将暂停，并等待客户清除错误。|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|上次执行作业的详细信息。|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|此作业的最后一次执行的详细信息，其中未包含任何错误。|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|上次执行作业的详细信息，该作业将对象导出到目标目录中。|
 |progress|[synchronizationProgress](synchronization-synchronizationprogress.md)集合|完成作业进度的详细信息。|
 |隔离|[synchronizationQuarantine](synchronization-quarantine.md)|如果作业在隔离中，则隔离详细信息。|
-|steadyStateFirstAchievedTime|DateTimeOffset|稳定状态（不再对进程所做的更改）第一次实现的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|steadyStateLastAchievedTime|DateTimeOffset|上次达到稳定状态（不再对进程所做的更改）的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|steadyStateFirstAchievedTime|DateTimeOffset|稳定状态（不再对进程所做的更改）第一次实现的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|steadyStateLastAchievedTime|DateTimeOffset|上次达到稳定状态（不再对进程所做的更改）的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)集合|按对象类型列出的已同步对象的计数。|
-|troubleshootingUrl|String|出现错误时，将包含问题的故障排除步骤的 URL。|
+|troubleshootingUrl|字符串|出现错误时，将包含问题的故障排除步骤的 URL。|
 
 ### <a name="synchronization-status-code-details"></a>同步状态代码详细信息
 

@@ -1,26 +1,26 @@
 ---
 title: synchronizationJob 资源类型
-description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分，您需要授予在目标目录中读取和写入对象的权限，并自定义作业的同步架构。
+description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cac54f10a3109be5596a62a84271a485a5f70449
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18c8076a55643289e8ef33fa4316cd224abfe02e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520070"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217540"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分，您需要授予在目标目录中读取和写入对象的权限，并自定义作业的同步架构。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
@@ -39,11 +39,11 @@ ms.locfileid: "42520070"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id             |String                     |唯一的同步作业标识符。 只读。|
+|id             |字符串                     |唯一的同步作业标识符。 只读。|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
-|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业的时间、当前作业状态和错误。|
+|状态         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业的时间、当前作业状态和错误。|
 |synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |与作业相关联的设置。 某些设置是从模板继承的。|
-|templateId     |String    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
+|templateId     |字符串    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

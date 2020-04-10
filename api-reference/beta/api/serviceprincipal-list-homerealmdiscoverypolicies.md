@@ -2,15 +2,15 @@
 title: 列表已分配 homeRealmDiscoveryPolicies
 description: 列出分配给 servicePrincipal 的 homeRealmDiscoveryPolicies。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 278cbd4d8c5b765eb20554640fa58870c8bede06
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 71d5e66f2e5e21457e8aaba3b70ee02a8540ffbd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562757"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219072"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>列表已分配 homeRealmDiscoveryPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "42562757"
 
 列出分配给[servicePrincipal](../resources/servicePrincipal.md)的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42562757"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、ApplicationConfiguration 和 Application.readwrite.ownedby、、、和 ApplicationConfiguration 中的所有、和 and and and and and and and and and应用程序的读写。 |
+| 应用程序                            | Application.readwrite.ownedby、ApplicationConfiguration 和应用程序的 Application.readwrite.ownedby、、ApplicationConfiguration 和应用程序的、和。 all，all。和和应用程序的所有写读。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

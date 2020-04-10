@@ -2,25 +2,25 @@
 title: servicePrincipal： updatePasswordSingleSignOnCredentials
 description: 使用用户或组的密码更新单一登录凭据。
 localization_priority: Normal
-author: bharathramh92
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b64d948a59fa52b193d787c850cdab86d34275b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab8a6d256c3f90dbaaa7197f87dec4fd230c73d0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453316"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218589"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal： updatePasswordSingleSignOnCredentials
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用用户或组的密码更新单一登录凭据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|此凭据集所属的用户或组的 ID。|
+|id|字符串|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md)集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应

@@ -2,15 +2,15 @@
 title: 列出 activityBasedTimeoutPolicies
 description: 获取 activityBasedTimeoutPolicy 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 840763c6aa425b04c2484849c2c2d89e9ba3abcb
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 81ea78bab6a1725711696aefb9d0a46656248212
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562379"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217944"
 ---
 # <a name="list-activitybasedtimeoutpolicies"></a>列出 activityBasedTimeoutPolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "42562379"
 
 获取[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

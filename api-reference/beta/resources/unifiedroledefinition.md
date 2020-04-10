@@ -2,15 +2,15 @@
 title: unifiedRoleDefinition 资源类型
 description: 统一角色定义是权限的集合
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 76b5becc6ad8cec4a7e917ec20bcc58271ab797a
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: fd26a0526327c4b630f52fd80d5a75b4df9430c7
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160224"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218021"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43160224"
 
 UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除）的权限的集合。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -41,7 +41,7 @@ UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除�
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 **请勿使用。即将弃用此建议。将作用域附加到角色分配** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|templateId|字符串| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="relationships"></a>关系

@@ -3,18 +3,18 @@ title: filterOperatorSchema 资源类型
 description: 介绍可在筛选器中使用的运算符。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 868ecf1e57deb624ab8b276d3f10cd39176efa5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e80b80a7f37af8b86dfd3925fe268dba89cea17
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520168"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217810"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "42520168"
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:--------------------------|:---------------|
-|源语言                       |String          |运算符的 Arity。 可取值为：`Binary`、`Unary`。 默认值为`Binary`。|
+|源语言                       |字符串          |运算符的 Arity。 可取值为：`Binary`、`Unary`。 默认值为`Binary`。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`表示所有值都必须满足条件。 `Any`表示必须至少有一个值满足条件。 默认值为`All`。|
-|name                        |String                     |运算符名称。 |
-|supportedAttributeTypes     |String 集合         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
+|name                        |字符串                     |运算符名称。 |
+|supportedAttributeTypes     |String collection         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

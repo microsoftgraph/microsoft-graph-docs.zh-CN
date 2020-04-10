@@ -2,15 +2,15 @@
 title: 获取 identitySecurityDefaultsEnforcementPolicy
 description: 检索 identitysecuritydefaultsenforcementpolicy 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ab081d6542d8d2c678ab2f8b176739000b668eb
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 8feba00ec3757a0c96d80047d8e61360b4c98f73
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947056"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218841"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>获取 identitySecurityDefaultsEnforcementPolicy
 

@@ -3,25 +3,25 @@ title: privilegedOperationEvent 资源类型
 description: 表示由角色操作的特权标识管理生成的审核事件，例如管理员管理特权角色、用户激活他的角色，以及用户停用他的角色。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 921fa2068d152652b41f36b8893859df7696b5a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 7c98b26d6c6b3458bddc8c5bf5f567f1002d082a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521521"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219198"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示由角色操作的特权标识管理生成的审核事件，例如管理员管理特权角色、用户激活他的角色，以及用户停用他的角色。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

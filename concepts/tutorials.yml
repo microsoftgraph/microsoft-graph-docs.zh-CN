@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: c761e8a9438eac3b9034ed019b4baf46c0500cdc
-  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+  ms.openlocfilehash: 2bd09f0711dc3c0f9017d46a4a0db6776de7781a
+  ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43199975"
+  ms.lasthandoff: 04/10/2020
+  ms.locfileid: "43215740"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
   - linkListType: get-started
     links:
     - text: .NET Core
-      url: /graph/tutorial/dotnet-core
+      url: /graph/tutorials/dotnet-core
     - text: Android
       url: /graph/tutorials/android
     - text: iOS Objective-C

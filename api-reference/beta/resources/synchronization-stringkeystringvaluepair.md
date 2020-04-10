@@ -3,18 +3,18 @@ title: stringKeyStringValuePair 资源类型
 description: 表示键值对，其中键是字符串，值是字符串。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67bd7d5ae3c4528589633a89376f5c8de0b5dd30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03bcea7786b5790ad9936d7068d5b89ef3214088
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520084"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217554"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42520084"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|String|键。|
+|Key|字符串|键。|
 |value|String|值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

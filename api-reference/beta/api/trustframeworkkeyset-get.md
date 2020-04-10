@@ -2,25 +2,25 @@
 title: 获取 trustFrameworkKeySet
 description: 检索 trustframeworkkeyset 对象的属性和关系。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6b9fd69b1de7ece70cd405b18c95c5cb3131d2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cca2be5e3cde48fd17df9fe9fe4eb72f76c43ac1
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452166"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219023"
 ---
 # <a name="get-trustframeworkkeyset"></a>获取 trustFrameworkKeySet
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[Trustframeworkkeyset](../resources/trustframeworkkeyset.md)的属性和关联。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

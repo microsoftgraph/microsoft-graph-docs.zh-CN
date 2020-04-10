@@ -2,25 +2,25 @@
 title: 创建 trustFrameworkKeySet
 description: 创建新的**trustFrameworkKeySet**对象。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1054fdfb13ff65f310c1c07fcb0f7d1bae2debf3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 934a3c7bbcd0e76bc41eac0294e0660ea9da3ccc
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452188"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215957"
 ---
 # <a name="create-trustframeworkkeyset"></a>创建 trustFrameworkKeySet
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 创建请求中应有**trustFrameworkKeySet**的 ID;但是，服务可以对其进行修改。 已修改的 ID 将出现在响应中和位置标头中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

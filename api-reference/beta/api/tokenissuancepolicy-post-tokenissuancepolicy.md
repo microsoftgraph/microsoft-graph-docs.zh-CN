@@ -2,15 +2,15 @@
 title: 创建 tokenIssuancePolicy
 description: 创建新的 tokenIssuancePolicy。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e02230ff52f7e9969d653f65f885de6b782c3f46
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: ca9d61aec1c24198b28f088f0b6aa1e054d89c25
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591626"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216426"
 ---
 # <a name="create-tokenissuancepolicy"></a>创建 tokenIssuancePolicy
 

@@ -2,25 +2,25 @@
 title: 'trustFrameworkKeySet: uploadCertificate'
 description: 将证书上传到键集。
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: febe9f7c6e742a2d48d2242b9a447a778efa3246
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0342565ca8c7e652118c525a3c51c4700840d718
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452125"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215901"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将证书上传到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是证书内容的以64为基础的编码值。 此方法返回[trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,9 +49,9 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | Description |
 |:-------------|:------------|:------------|
-|Key|String| 这是用于发送证书内容的字段。 该值应为实际证书内容的以64编码的版本。 |
+|Key|字符串| 这是用于发送证书内容的字段。 该值应为实际证书内容的以64编码的版本。 |
 
 ## <a name="response"></a>响应
 

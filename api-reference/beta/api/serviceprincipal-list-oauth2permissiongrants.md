@@ -3,24 +3,24 @@ title: servicePrincipal： List oAuth2Permissiongrants
 description: 检索 oAuth2Permissiongrant 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9391c0c8d311972a47b57e33d90b4592b275d407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 089357ff1ba739815a03460bae4a0cdcd78c296d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453393"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219058"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal： List oAuth2Permissiongrants
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 oAuth2Permissiongrant 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

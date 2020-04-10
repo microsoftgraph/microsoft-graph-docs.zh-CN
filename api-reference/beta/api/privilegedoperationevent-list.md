@@ -3,25 +3,25 @@ title: 列出 privilegedOperationEvents
 description: 筛选器 ' ' 表达式。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9314bf4f547b03db4c50dda0628aab7723dc7e72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: e0fc6347b273a046b202aecd803434d0f6fa0af8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455401"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218778"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的列表，这些对象表示由角色操作的特权标识管理生成的审核事件。 有关审核事件的详细信息，请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData ``$filter``表达式。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。

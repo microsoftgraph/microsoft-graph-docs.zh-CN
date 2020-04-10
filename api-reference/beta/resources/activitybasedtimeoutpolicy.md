@@ -2,15 +2,15 @@
 title: activityBasedTimeoutPolicy 资源类型
 description: 表示一个策略，该策略可控制支持基于活动的超时功能的应用程序的 web 会话的空闲超时。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c4255315c8eef4de0895cf7c01569a2ceeb8272e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5dea57ad86ff0c9209f3f88fc4a922daa13d257
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508434"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218490"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>activityBasedTimeoutPolicy 资源类型
 

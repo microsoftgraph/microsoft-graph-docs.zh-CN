@@ -3,14 +3,14 @@ title: 获取 governanceResource
 description: 检索 governanceResource 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 235b4cdfffd5573af5a5470ee5687e4a17ec42c6
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: cc9eb38838ce4dbbd06888cb4b5d004e7ee6e150
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639875"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218925"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 

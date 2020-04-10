@@ -3,14 +3,14 @@ title: 获取 privilegedRoleSettings
 description: 检索给定角色的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: eba7da6ce8d4345512257992c07abe5f13f84995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: e9ed04d61be01f98a6ec413637c65be449892baa
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455272"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218659"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
@@ -19,9 +19,9 @@ ms.locfileid: "42455272"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索给定角色的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。 
 

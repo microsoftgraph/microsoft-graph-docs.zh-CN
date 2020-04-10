@@ -3,27 +3,27 @@ title: synchronizationTaskExecution 资源类型
 description: 概述同步作业的运行结果。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 936201202a36d85f8b7a0caa5cfb1cebb002bbb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: befe67baa554cf80cd1e8f3788ca530baf5e9c5c
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520021"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217120"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 概述同步作业的运行结果。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |作业运行的标识符。|
+|activityIdentifier           |字符串 |作业运行的标识符。|
 |countEntitled                |Int64  |为此应用程序分配的已处理项的计数。|
 |countEntitledForProvisioning |Int64  |为设置分配的已处理项的计数。|
 |countEscrowed                |Int64  |Escrowed （错误）的项的计数。|
@@ -35,8 +35,8 @@ ms.locfileid: "42520021"
 |countImportedReferenceDeltas |Int64  |与引用更改相关的导入的 delta 更改的计数。|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，则包含包含详细信息的**synchronizationError**对象。|
 |state                        |String |对此运行的结果进行汇总的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
-|timeBegan                    |DateTimeOffset|开始运行此作业的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|timeBegan                    |DateTimeOffset|开始运行此作业的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

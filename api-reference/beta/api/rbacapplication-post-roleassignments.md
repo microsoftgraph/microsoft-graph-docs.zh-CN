@@ -2,15 +2,15 @@
 title: 创建 unifiedRoleAssignment
 description: 创建新的 unifiedRoleAssignment 对象。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02e794c15ab562d61adde8a6c662c0c7e4ae4e7a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7df79449d044963382b9a095b81c96e699f2ffdf
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181159"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216734"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181159"
 
 创建新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

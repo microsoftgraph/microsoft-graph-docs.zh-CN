@@ -2,15 +2,15 @@
 title: 创建 activityBasedTimeoutPolicy
 description: 创建新的 activityBasedTimeoutPolicy。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b71cb4ef50d8942aa002221ad7369c74c2417308
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: a862e485be19f432ee3a2abc8519639444e9f169
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589937"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217937"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 

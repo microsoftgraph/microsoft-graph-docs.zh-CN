@@ -3,25 +3,25 @@ title: privilegedApproval 资源类型
 description: 表示在用于获取角色的特权标识管理中请求的审批。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 1269e23b5cbb68c665aace8c2590150f687611cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: c4148e5740c9b31368be336a615524ced426a560
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521549"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219226"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示在用于获取角色的特权标识管理中请求的审批。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -36,19 +36,19 @@ ms.locfileid: "42521549"
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
-|approvalType|String||
-|approverReason|String||
+|approvalType|字符串||
+|approverReason|字符串||
 |endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|字符串| 只读。|
-|requestorReason|String||
-|roleId|String||
+|requestorReason|字符串||
+|roleId|字符串||
 |startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |userId|String||
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。|
 |申请|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此审批对象的角色分配请求|
 
 ## <a name="json-representation"></a>JSON 表示形式

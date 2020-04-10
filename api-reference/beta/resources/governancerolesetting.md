@@ -1,26 +1,26 @@
 ---
 title: governanceRoleSetting 资源类型
-description: " 规则等。"
+description: 表示在创建或修改角色分配时需要评估的每个角色定义上的一组配置。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9cf027969fb6ae988fd3e57da9d6c3002a4b4da9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 1f6bbd544e65bf5781b8ec77201980e5602bbf11
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497326"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217916"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示在创建或修改角色分配时需要评估的每个角色定义上的一组配置。 例如，角色设置可能包括 "最大分配持续时间" 规则、"激活时需要 MFA" 规则等。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|
@@ -32,8 +32,8 @@ ms.locfileid: "42497326"
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |字符串                                  |RoleSetting 的 id。|
-|resourceId           |String                                  |必填。 与角色设置相关联的资源的 id。|
-|roleDefinitionId     |String                                  |必填。 与角色设置相关联的角色定义的 id。|
+|resourceId           |String                                  |必需。 与角色设置相关联的资源的 id。|
+|roleDefinitionId     |字符串                                  |必需。 与角色设置相关联的角色定义的 id。|
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否为默认 roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |字符串                                  |只读。 上次更新 roleSetting 的管理员的显示名称。|

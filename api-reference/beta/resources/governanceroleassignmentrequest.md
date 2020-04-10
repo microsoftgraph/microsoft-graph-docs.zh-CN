@@ -3,18 +3,18 @@ title: governanceRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 33e6dcaff75edc705cac4696a0fe7a86d988abe9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 611622930d0ff79a2b65589a5029c9eff5e773af
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497494"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219233"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42497494"
 
 `governanceRoleAssignmentRequest`是用于管理角色分配生命周期的票据建模实体。 它表示用户和管理员的意向/决定，还提供了灵活性，可实现定期 schduling、审批门等实施，与直接`POST`公开、 `PUT`和`DELETE`操作相比。 `governanceRoleAssignment`
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          |返回类型  |说明|
 |:------------|:--------|:--------|
@@ -36,16 +36,16 @@ ms.locfileid: "42497494"
 | 属性                  | 类型          |说明|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |角色分配请求的 id。|
-|resourceId                 |String         |必填。 与角色分配请求关联的资源的 id。|
-|roleDefinitionId           |String         |必填。 与角色分配请求关联的角色定义的 id。|
-|subjectId                  |String         |必填。 与角色分配请求相关联的主题的 id。|
-|type                       |String         |必填。 表示角色分配上操作的类型。 值可以是 <ul><li>`AdminAdd`：管理员将用户/组分配给角色;</li><li>`UserAdd`：用户激活符合条件的工作分配;</li><li> `AdminUpdate`：管理员更改现有的角色分配</li><li>`AdminRemove`：管理员从角色中删除用户/组;<li>`UserRemove`：用户停用活动分配;<li>`UserExtend`：用户请求扩展即将过期的工作分配;</li><li>`AdminExtend`：管理员扩展了即将过期的工作分配。</li><li>`UserRenew`：用户请求续订其过期的工作分配;</li><li>`AdminRenew`：管理员扩展了即将过期的工作分配。</li></ul>|
-|assignmentState|String  |必填。 工作分配的状态。 值可以是 <ul><li> `Eligible`对于符合条件的工作分配</li><li> `Active`-如果由管理员直接分配`Active` ，或由用户在符合条件的工作分配上激活。</li></ul>|
+|resourceId                 |String         |必需。 与角色分配请求关联的资源的 id。|
+|roleDefinitionId           |字符串         |必需。 与角色分配请求关联的角色定义的 id。|
+|subjectId                  |字符串         |必需。 与角色分配请求相关联的主题的 id。|
+|type                       |字符串         |必需。 表示角色分配上操作的类型。 值可以是 <ul><li>`AdminAdd`：管理员将用户/组分配给角色;</li><li>`UserAdd`：用户激活符合条件的工作分配;</li><li> `AdminUpdate`：管理员更改现有的角色分配</li><li>`AdminRemove`：管理员从角色中删除用户/组;<li>`UserRemove`：用户停用活动分配;<li>`UserExtend`：用户请求扩展即将过期的工作分配;</li><li>`AdminExtend`：管理员扩展了即将过期的工作分配。</li><li>`UserRenew`：用户请求续订其过期的工作分配;</li><li>`AdminRenew`：管理员扩展了即将过期的工作分配。</li></ul>|
+|assignmentState|字符串  |必需。 工作分配的状态。 值可以是 <ul><li> `Eligible`对于符合条件的工作分配</li><li> `Active`-如果由管理员直接分配`Active` ，或由用户在符合条件的工作分配上激活。</li></ul>|
 |requestedDateTime          |DateTimeOffset |只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |schedule                   |[governanceSchedule](governanceschedule.md)|角色分配请求的 schedule 对象。|
-|reason                     |String         |用户和管理员在创建请求时，提供有关需要的原因的消息。|
-|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |角色分配请求的状态。|
-|linkedEligibleRoleAssignmentId|String        |如果这是角色激活请求，则它表示所引用的`eligible assignment` id;否则，值为`null`。 |
+|reason                     |字符串         |用户和管理员在创建请求时，提供有关需要的原因的消息。|
+|状态                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |角色分配请求的状态。|
+|linkedEligibleRoleAssignmentId|字符串        |如果这是角色激活请求，则它表示所引用的`eligible assignment` id;否则，值为`null`。 |
 
 
 

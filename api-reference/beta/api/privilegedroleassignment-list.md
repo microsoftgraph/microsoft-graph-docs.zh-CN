@@ -3,14 +3,14 @@ title: 列出 privilegedRoleAssignments
 description: 检索 privilegedRoleAssignment 对象的列表，这些对象对应于组织的所有角色分配。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 82bbe53abec4cfdf01893873ba09aef8af0e72bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 4baf83cd05010a179fe47c86e949f2bd6aa70f16
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455352"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218722"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -19,8 +19,8 @@ ms.locfileid: "42455352"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的列表，这些对象对应于组织的所有角色分配。
-## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。 
 

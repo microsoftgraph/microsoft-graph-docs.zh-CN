@@ -3,24 +3,24 @@ title: servicePrincipal： getMemberObjects
 description: 获取此服务主体所属的组和目录角色列表。  此检查是可传递的。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: afa2e48691ba421fad8ffc1c2f5ae630591295d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 689eb4514207d58cb69a2ea0a32cd89fea93d5b0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453455"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219282"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal： getMemberObjects
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取此服务主体所属的组和目录角色列表。  此检查是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

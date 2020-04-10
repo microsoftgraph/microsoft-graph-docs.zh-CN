@@ -3,25 +3,25 @@ title: privilegedRoleAssignment 资源类型
 description: '表示特定用户的特权角色分配。 '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 2781e601b82e33c260ead70c5d87c9e36c495569
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: aef2b3962601a20df30f27c19ccd1abf23b0c561
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521507"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217902"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示特定用户的特权角色分配。 
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -46,7 +46,7 @@ ms.locfileid: "42521507"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。 相关联的角色信息。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。 相关联的角色信息。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

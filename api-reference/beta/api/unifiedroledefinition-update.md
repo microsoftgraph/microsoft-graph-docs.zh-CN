@@ -2,15 +2,15 @@
 title: 更新 unifiedRoleDefinition
 description: 更新 unifiedRoleDefinition 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8b9c6ddb7910ed4f70695c7b585453cb22f4eb38
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fb1cd8a7e8cbef279c5007b3cd721193ff25e518
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181548"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218939"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181548"
 
 更新[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 **请勿使用。此属性将很快被弃用。将作用域附加到角色分配。**|
 |rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|templateId|字符串| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
 |version|String| 指示角色定义的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="response"></a>响应

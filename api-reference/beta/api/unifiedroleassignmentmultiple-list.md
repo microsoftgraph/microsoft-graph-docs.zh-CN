@@ -2,15 +2,15 @@
 title: 列出 unifiedRoleAssignmentMultiple
 description: 检索 unifiedRoleAssignmentMultiple 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7fc80e7246a706b3fce41d00f0f628444a9426ab
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 174c848da527fb0f32bd3102e01dfcff5baffa40
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160343"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218974"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>列出 unifiedRoleAssignmentMultiple
 
@@ -20,7 +20,7 @@ ms.locfileid: "43160343"
 
 获取[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象的列表。 使用此项可在 Microsoft Intune 中获取角色分配的列表。 对于其他 Micrsoft 365 应用程序（如 Azure AD），请使用[unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

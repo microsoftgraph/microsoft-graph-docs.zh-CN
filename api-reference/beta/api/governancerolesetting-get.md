@@ -3,14 +3,14 @@ title: 获取 governanceRoleSetting
 description: 检索 governanceRoleSetting 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: dbe1540541fb21d023fc644682d390652f5f5707
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 6c6aad1bb501f9b596f95f39ae8fd79124fe2e87
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639609"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215768"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 

@@ -3,14 +3,14 @@ title: 创建 governanceRoleAssignmentRequest
 description: 创建一个角色分配请求，以代表在角色分配上所需的操作。 下表列出了这些操作。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 2a55cddba5be097e36b85a81e7f451ae92a2a2a6
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b038ca74eb8046e4ae77a8a31715a473a3518ba1
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639819"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218869"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -63,11 +63,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | 资源的 ID。 必填。 |
-| roleDefinitionId | 字符串                                                   | 角色定义的 ID。 必填。 |
-| subjectId        | 字符串                                                   | 主题的 ID。 必填。 |
+| resourceId       | String                                                   | 资源的 ID。 必需。 |
+| roleDefinitionId | 字符串                                                   | 角色定义的 ID。 必需。 |
+| subjectId        | 字符串                                                   | 主题的 ID。 必需。 |
 | assignmentState  | 字符串                                                   | 工作分配的状态。 值可以是`Eligible`和`Active`。 此为必需属性。 |
-| type             | 字符串                                                   | 请求类型。 值可以是`AdminAdd` `UserAdd`、、 `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminRenew` `AdminExtend`、、、、和。 `UserRenew` 必填。 |
+| type             | 字符串                                                   | 请求类型。 值可以是`AdminAdd` `UserAdd`、、 `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminRenew` `AdminExtend`、、、、和。 `UserRenew` 必需。 |
 | reason           | 字符串                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型`UserAdd`， `AdminAdd` `AdminUpdate`、和`AdminExtend`，它是必需的。 |
 

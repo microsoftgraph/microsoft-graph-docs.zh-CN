@@ -2,15 +2,15 @@
 title: 更新 unifiedRoleAssignmentMultiple
 description: 更新新的 unifiedRoleAssignmentMultiple 对象。
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e6901065e07fc286ace312b1ad558ba4e7e6a882
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 5a30e9378cceb5c1dd533f62bc28be097660536f
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181316"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218960"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>更新 unifiedRoleAssignmentMultiple
 
@@ -20,7 +20,7 @@ ms.locfileid: "43181316"
 
 更新现有的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。 使用此项可在 Microsoft Intune 中更新角色分配。 请注意， [unifiedRoleAssignment](../resources/unifiedroleassignment.md)不支持 update。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -4,22 +4,22 @@ description: 更新给定角色设置的角色设置。 将返回一个 privileg
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: eb74999e48c3b2d524bf35d2d51390a526043a35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 8cb9900ce5565cc2da4507ede841dbfeacdcb95e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455261"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218652"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新给定角色设置的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,15 +51,15 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。 必需。|
 |id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的，**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必填。|
-|lastGlobalAdmin|布尔|仅供内部使用。|
-|maxElavationDuration|duration|已激活角色的最长持续时间。 必填。|
-|mfaOnElevation|布尔|如果需要 MFA 以激活角色，**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必填。|
-|minElevationDuration|duration|已激活角色的最小持续时间。 必填。|
-|notificationToUserOnElevation|布尔|如果激活角色时向最终用户发送通知，**则为 true** 。 **假**如果在角色激活时不发送通知。 必填。|
-|ticketingInfoOnElevation|布尔|如果激活角色时需要票证信息，**则为 true** 。 **假**如果激活角色时不需要票证信息。 必填。|
-|approvalOnElevation|布尔|如果激活角色时需要进行审批，**则为 true** 。 **假**如果激活该角色时不需要审批。 必填。|
-|approverIds|string 集合|审批 Id 的列表（如果激活需要审批）。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的，**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
+|lastGlobalAdmin|Boolean|仅供内部使用。|
+|maxElavationDuration|duration|已激活角色的最长持续时间。 必需。|
+|mfaOnElevation|Boolean|如果需要 MFA 以激活角色，**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必需。|
+|minElevationDuration|duration|已激活角色的最小持续时间。 必需。|
+|notificationToUserOnElevation|Boolean|如果激活角色时向最终用户发送通知，**则为 true** 。 **假**如果在角色激活时不发送通知。 必需。|
+|ticketingInfoOnElevation|Boolean|如果激活角色时需要票证信息，**则为 true** 。 **假**如果激活角色时不需要票证信息。 必需。|
+|approvalOnElevation|Boolean|如果激活角色时需要进行审批，**则为 true** 。 **假**如果激活该角色时不需要审批。 必需。|
+|approverIds|字符串集合|审批 Id 的列表（如果激活需要审批）。|
 
 ## <a name="response"></a>响应
 

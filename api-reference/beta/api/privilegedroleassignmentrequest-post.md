@@ -3,24 +3,24 @@ title: 创建 privilegedRoleAssignmentRequest
 description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b6729a0cff736c7a2f7975150efaa1343a1292e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: afc7251bafdb6570eca801abc41ff39216d7381b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455269"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218666"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -45,10 +45,10 @@ POST /privilegedRoleAssignmentRequests
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`： Administrators 将用户添加到角色;`UserAdd`：用户添加角色分配。 必填。|
-|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必填。|
-|reason|String|需要为角色分配请求提供审核和审阅目的的原因。|
+|roleId|字符串|角色的 ID。 此为必需属性。|
+|type|字符串|表示角色分配上的操作的类型。 值可以是`AdminAdd`： Administrators 将用户添加到角色;`UserAdd`：用户添加角色分配。 必需。|
+|assignmentState|字符串|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|reason|字符串|需要为角色分配请求提供审核和审阅目的的原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应

@@ -2,15 +2,15 @@
 title: 删除 tokenIssuancePolicy
 description: 删除 tokenIssuancePolicy。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a5a4cf4b4bb5138cf325a2fb6c5fd945ae86de2b
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 974c1e912d0934c03080af4d8c80fd7f388b575d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591724"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219268"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 

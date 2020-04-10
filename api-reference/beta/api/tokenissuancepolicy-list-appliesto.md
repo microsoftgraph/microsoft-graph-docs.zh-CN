@@ -2,15 +2,15 @@
 title: 列出 appliesTo
 description: 获取已应用 tokenIssuancePolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a9ae1a6b7dfe56dbc2331240d9003d8b68f068d
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 2cbf8a86ba113c1f1d36091a129c767e70c34984
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591689"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219254"
 ---
 # <a name="list-appliesto"></a>列出 appliesTo
 
@@ -42,7 +42,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 
 此方法支持`$expand`、 `$select`和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取展开的对象的权限。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|

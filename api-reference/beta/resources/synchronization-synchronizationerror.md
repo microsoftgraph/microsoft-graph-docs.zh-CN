@@ -3,18 +3,18 @@ title: synchronizationError 资源类型
 description: 表示同步过程中发生的错误。
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a754b03379d1e40ba7310283a0efdd94ff30631
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520077"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217547"
 ---
 # <a name="synchronizationerror-resource-type"></a>synchronizationError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42520077"
 <!-- Add descriptions for the properties. -->
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|code|String||
+|code|字符串||
 |message|String||
-|tenantActionable|布尔||
+|tenantActionable|Boolean||
 
 ## <a name="json-representation"></a>JSON 表示形式
 
