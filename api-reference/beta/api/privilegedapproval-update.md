@@ -3,23 +3,23 @@ title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ec30559cf24edc5ba8e35077cd8af868aacc42ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: d3871704a30dda2a9d07098b7b8307c987a64dc9
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455408"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218785"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 privilegedapproval 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -46,11 +46,11 @@ PATCH /privilegedApproval/{id}
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
-|approvalType|String||
-|approverReason|String||
+|approvalType|字符串||
+|approverReason|字符串||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|字符串||
+|roleId|字符串||
 |startDateTime|DateTimeOffset||
 |userId|String||
 

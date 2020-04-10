@@ -3,18 +3,18 @@ title: 'privilegedRole: selfActivate'
 description: 激活分配给请求者的角色。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: f9f7c351d0d5fd64c2c4b40870e5df1ed9194387
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 79891be7aa63269cb0d1f96393756f9d41d046d0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455376"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218750"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42455376"
 >**注意：** 12月2018日生效，此 API 将不再受支持且不应使用。 请改用[Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能调用```selfActivate```分配给他的角色。
