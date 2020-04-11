@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6662ab205e390ae72d283d5015aa346c4b6fc2b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c8b5a3711c7abdbbdd8ddba8f7a36c85978718b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520504"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228871"
 ---
 # <a name="skillproficiency-resource-type"></a>skillProficiency 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,20 +24,20 @@ ms.locfileid: "42520504"
 
 ## <a name="methods"></a>方法
  
-| 方法                                                 | 返回类型                             | 说明                                                   |
-|:-------------------------------------------------------|:----------------------------------------|:--------------------------------------------------------------|
-| [获取 skillProficiency](../api/skillproficiency-get.md) | [skillProficiency](skillproficiency.md) | 读取**skillProficiency**对象的属性和关系。 |
-| [更新 skillProficiency](../api/skillproficiency-update.md)            | [skillProficiency](skillproficiency.md) | 更新**skillProficiency**对象。                               |
-| [删除 skillProficiency](../api/skillproficiency-delete.md)            | 无                                    | 删除**skillProficiency**对象。                               |
+| 方法                                                         | 返回类型                             | 说明                                                             |
+|:---------------------------------------------------------------|:----------------------------------------|:------------------------------------------------------------------------|
+| [获取 skillProficiency](../api/skillproficiency-get.md)         | [skillProficiency](skillproficiency.md) | 读取**skillProficiency**对象的属性和关系。 |
+| [更新 skillProficiency](../api/skillproficiency-update.md)   | [skillProficiency](skillproficiency.md) | 更新**skillProficiency**对象。                                   |
+| [删除 skillProficiency](../api/skillproficiency-delete.md)   | 无                                    | 删除**skillProficiency**对象。                                   |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型             | 说明                                                                                                                        |
 |:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |String 集合 | 包含用户与技能相关联的类别（例如，个人、职业、爱好）。                                       |
-|displayName   |String            | 包含技能的友好名称。                                                                                            |      
+|categories    |String 集合 | 包含用户与技能相关联的类别（例如，个人、职业、爱好）。                             |
+|displayName   |String            | 包含技能的友好名称。                                                                                            |
 |水平   |string            | 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
-|webUrl        |String            | 包含指向有关技能的信息源的链接。                                                                          |
+|WebUrl        |String            | 包含指向有关技能的信息源的链接。                                                                          |
 
 ## <a name="relationships"></a>关系
 

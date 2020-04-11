@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: cdeb6a676304fe4ec69207f9df6331d0df503b56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85e04cb96453c4415e4120e463a5c233aadc4ca3
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519552"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229386"
 ---
 # <a name="useraccountinformation-resource-type"></a>userAccountInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,18 +24,18 @@ ms.locfileid: "42519552"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                             | 返回类型                                         | 说明                                                         |
-|:-------------------------------------------------------------------|:----------------------------------------------------|:--------------------------------------------------------------------|
+| 方法                                                             | 返回类型                                         | 说明                                                                   |
+|:-------------------------------------------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------------|
 | [获取 userAccountInformation](../api/useraccountinformation-get.md) | [userAccountInformation](useraccountinformation.md) | 读取**userAccountInformation**对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                       | 说明                                                                                                                              |
-|:--------------------|:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-|ageGroup             |String                      | 显示用户的年龄组。 允许的`null`值`minor`、 `notAdult`和`adult`由目录生成且不能更改。|
+| 属性            | 类型                       | 说明                                                                                                                               |
+|:--------------------|:---------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+|ageGroup             |String                      | 显示用户的年龄组。 允许的`null`值`minor`、 `notAdult`和`adult`由目录生成且不能更改。 |
 |countryCode          |String|                     | 包含与用户帐户关联的双字符国家/地区代码。                                                                |
-|preferredLanguageTag |[localeInfo](localeinfo.md) | 包含用户与帐户相关的首选语言。                                                              |
-|userPrincipalName    |String                      | 与帐户关联的用户的用户主体名称（UPN）。                                                                   |
+|preferredLanguageTag |[localeInfo](localeinfo.md) | 包含用户与帐户相关的首选语言。                                                               |
+|userPrincipalName    |String                      | 与帐户关联的用户的用户主体名称（UPN）。                                                                    |
 
 ## <a name="relationships"></a>关系
 

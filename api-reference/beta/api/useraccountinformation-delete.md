@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1cd1130b89104f1154425e94443a45e375012a61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 583184860730adbd64899bdc5091c40534677529
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451579"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228364"
 ---
 # <a name="delete-useraccountinformation"></a>删除 userAccountInformation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42451579"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | 不支持。                              |
+| Application                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ DELETE /user/profile/account{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称           |说明                 |
+| 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
 

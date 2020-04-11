@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaf58bd7e20caeb418946814daa7ca8f7bb9bfa3
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523077"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229414"
 ---
 # <a name="itememail-resource-type"></a>itemEmail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ ms.locfileid: "42523077"
 
 ## <a name="methods"></a>方法
 
-| 方法                                   | 返回类型               | 说明                                            |
-|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [获取](../api/itememail-get.md) | [itemEmail](itememail.md) | 读取**itemEmail**对象的属性和关系。 |
-| [更新](../api/itememail-update.md)     | [itemEmail](itememail.md) | 更新**itemEmail**对象。                               |
-| [删除](../api/itememail-delete.md)     | 无                      | 删除**itemEmail**对象。                               |
+| 方法                                   | 返回类型               | 说明                                                      |
+|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
+| [获取](../api/itememail-get.md)           | [itemEmail](itememail.md) | 读取**itemEmail**对象的属性和关系。    |
+| [更新](../api/itememail-update.md)     | [itemEmail](itememail.md) | 更新**itemEmail**对象。                                  |
+| [删除](../api/itememail-delete.md)     | 无                      | 删除**itemEmail**对象。                                  |
 
 ## <a name="properties"></a>属性
 

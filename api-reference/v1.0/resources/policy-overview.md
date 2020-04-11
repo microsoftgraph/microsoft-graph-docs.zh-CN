@@ -1,0 +1,35 @@
+---
+title: 策略 API 概述
+description: Azure Active Directory 使用策略控制组织中的 Azure AD 功能行为。
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: conceptualPageType
+ms.openlocfilehash: b64efc81caa10c249030e33cb893d90aec8a1afb
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229442"
+---
+# <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
+
+命名空间：microsoft.graph
+
+
+
+Azure Active Directory （Azure AD）使用策略控制组织中的 Azure AD 功能行为。 策略是您可以在应用程序、服务主体、组或其分配到的整个组织上实施的自定义规则。
+
+## <a name="what-policies-are-available"></a>有哪些策略可用？
+
+| 策略类型       | 说明 | 示例 |
+|:-------------|:------------|:------------|
+|[activityBasedTimeoutPolicies](activityBasedTimeoutPolicy.md)| 表示在一段时间不活动后控制 web 会话的自动注销的策略，适用于支持基于活动的超时功能的应用程序。| 将 Azure 门户配置为使非活动超时为15分钟。 |
+|[homeRealmDiscoveryPolicies](homeRealmDiscoveryPolicy.md)| 表示用于控制联盟用户的 Azure Active Directory 身份验证行为的策略，尤其适用于联合域中的自动加速和用户身份验证限制。| 将所有用户配置为跳过 "主页领域发现"，并将其直接路由到 ADFS 进行身份验证。 |
+|[tokenLifetimePolicies](tokenlifetimepolicy.md)|表示用于访问受保护的资源的访问令牌的生存期持续时间。| 配置一个具有短于默认令牌生存期的特别敏感的应用程序。|
+|[tokenIssuancePolicy](tokenIssuancePolicy.md)|表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。| 配置用于发出 SAML 令牌的签名算法或 SAML 令牌版本。
+
+## <a name="next-steps"></a>后续步骤
+
+* 查看上面列出的不同策略资源类型及其各种方法。
+* 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。

@@ -1,16 +1,16 @@
 ---
 title: 更新 itememail
-description: 更新用户的配置文件中的 itememail 对象的属性。
+description: 更新用户的配置文件中的 itemEmail 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 62d7198eabebda2b7ed612c57754007130195a90
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e304ce5e92a4ef0fa64b2b7e2044887d86477255
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200320"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229036"
 ---
 # <a name="update-itememail"></a>更新 itememail
 
@@ -52,7 +52,7 @@ PATCH /me/profile/emails/{id}
 | 属性     | 类型        | 说明                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
 |address       |String       | 电子邮件地址本身。                                                |
-|displayName   |字符串       | 用户与特定电子邮件地址相关联的名称或标签。 |
+|displayName   |String       | 用户与特定电子邮件地址相关联的名称或标签。 |
 |类型          |字符串       | 可取值为：`unknown`、`work`、`personal`、`main`、`other`。     |
 
 ## <a name="response"></a>响应

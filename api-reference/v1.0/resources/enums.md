@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: e78f4226b2b2a2a100c4e3dedfa096d1120c91b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948392"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229484"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -269,14 +269,14 @@ ms.locfileid: "42948392"
 | NotStarted
 | 正在运行
 | Completed
-| 已失败
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType 值
 
 | Member
 |:-------------------------
-| 替换
+| Replace
 | Append
 | 删除
 | Insert
@@ -432,7 +432,7 @@ ms.locfileid: "42948392"
 | preset10 | 10 
 | preset11 | 11x17
 | preset12 | 12 
-| preset13 | 13 
+| preset13 | 13
 | preset14 | 14 
 | preset15 | 15 
 | preset16 | 16 
@@ -689,6 +689,36 @@ ms.locfileid: "42948392"
 |restId|
 |restImmutableEntryId|
 
+### <a name="onlinemeetingprovidertype-values"></a>onlineMeetingProviderType 值
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a>delegateMeetingMessageDeliveryOptions 值
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### <a name="calendarroletype-values"></a>calendarRoleType 值
+
+|Member|
+|:---|
+|无|
+|freeBusyRead|
+|limitedRead|
+|自述|
+|销帐|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|自|
+
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
 
 | 成员 | 值 | 说明             |
@@ -753,6 +783,7 @@ ms.locfileid: "42948392"
 | autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
 | autoPurgeToDeleted    | 11x17    | TimeTravel 将邮件移动到 "已删除"。 |
 | 出站              | 12     | 出站邮件。                      |
-| notJunk               | 13     | 由于非垃圾邮件而启用。              |
+| notJunk               | 13    | 由于非垃圾邮件而启用。              |
 | 可疑                  | 14     | 由于垃圾邮件而被阻止。                |
 | 向 unknownfuturevalue    | 15     | 一个 sentinel 成员。                  |
+

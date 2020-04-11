@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 48c585a05043b4f17e5e7406eb44b9150b5e5bdc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bc101ca8cbfb063fa1bba3a2ebdb4e6afc2fd57
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523063"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229400"
 ---
 # <a name="itemphone-resource-type"></a>itemPhone 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,18 +22,18 @@ ms.locfileid: "42523063"
 
 ## <a name="methods"></a>方法
 
-| 方法                                     | 返回类型               | 说明                                            |
-|:-------------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [获取 itemPhone](../api/itemphone-get.md)   | [itemPhone](itemphone.md) | 读取**itemPhone**对象的属性和关系。 |
-| [更新 itemPhone](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | 更新**itemPhone**对象。                               |
-| [删除 itemPhone](../api/itemphone-delete.md)       | 无                      | 删除**itemPhone**对象。                               |
+| 方法                                               | 返回类型               | 说明                                                       |
+|:-----------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
+| [获取 itemPhone](../api/itemphone-get.md)             | [itemPhone](itemphone.md) | 读取**itemPhone**对象的属性和关系。 |
+| [更新 itemPhone](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | 更新**itemPhone**对象。                                   |
+| [删除 itemPhone](../api/itemphone-delete.md)       | 无                      | 删除**itemPhone**对象。                                   |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |String       | 包含电话号码的友好名称。                                                                                  |
-|number        |String       | 包含电话号码。                                                                                                       |
+|number        |String       | 包含电话号码。                                                                                                      |
 |类型          |字符串       | 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="relationships"></a>关系

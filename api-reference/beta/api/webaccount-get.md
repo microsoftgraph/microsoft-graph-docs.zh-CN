@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 215fcd14ad8684a793f1a5d493f76d399fbb85f5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30e5da3bd608254997e211139f619b59149310a9
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451531"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229064"
 ---
 # <a name="get-webaccount"></a>获取 webAccount
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42451531"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,13 +42,13 @@ GET /me/profile/webAccounts/{id}
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
+|名称            |值    |说明                                                                                                                                                                      |
+|:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                                  |
 |$orderby        |string   |默认情况下，响应中的对象按其在查询中的**createdDateTime**值进行排序。 您可以使用`$orderby`参数更改响应的顺序。|
-|$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
-|$top            |int      |要返回的结果数。                                                                                                                                           |
+|$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                             |
+|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                     |
+|$top            |int      |要返回的结果数。                                                                                                                                                |
 
 ## <a name="request-headers"></a>请求标头
 

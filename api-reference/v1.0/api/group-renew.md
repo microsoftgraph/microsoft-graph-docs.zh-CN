@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e1e9403acf31df4544c5e894895aa17a1e86e2a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: dc1b4d7b49871d8e178efe10201b8fcbb8e27023
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124124"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229372"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -38,7 +38,7 @@ POST /groups/{id}/renew
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 {token} |
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文

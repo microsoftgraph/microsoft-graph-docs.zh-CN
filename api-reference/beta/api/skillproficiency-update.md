@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1fd014c397575ce6977ee2a57c61a89ac7af59a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53d67c4248593b81d1091d6eb3610586a732f330
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453131"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228378"
 ---
 # <a name="update-skillproficiency"></a>更新 skillproficiency
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,9 +53,9 @@ PATCH /me/profile/skills/{id}
 | 属性     | 类型            | 说明                                                                                                                        |
 |:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 |categories    |String 集合| 包含用户与技能相关联的类别（例如：个人、职业、爱好）                                       |
-|displayName   |String           | 包含技能的友好名称。                                                                                            | 
+|displayName   |String           | 包含技能的友好名称。                                                                                            |
 |水平   |string           | 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
-|webUrl        |String           | 包含指向有关技能的信息源的链接。                                                                          |
+|WebUrl        |String           | 包含指向有关技能的信息源的链接。                                                                          |
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 888351fa3ef1b8d017f5895e3fa3ecce0dce06d4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: edb36548c743a75d84331e1622856d015d676480
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181600"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229428"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -58,7 +58,7 @@ GET /organization
   "name": "get_organization"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization
+GET https://graph.microsoft.com/v1.0/organization
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]

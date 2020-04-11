@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: 签入已签出的 DriveItem 资源，为其他人提供文档版本。
-ms.date: 09/10/2017
-title: 签入文件
+description: 签入已签出的 DriveItem 资源，使其他用户可以使用该文档的版本。
+title: driveItem：签入
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee6a711d1b065784a93a2a2363cfdc6ffbede1a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cc008e18bd70acfed0bb6b951d3694f3cc9593d
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433018"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227580"
 ---
-# <a name="check-in-changes-to-a-driveitem-resource"></a>签入对 DriveItem 资源的更改
+# <a name="driveitem-checkin"></a>driveItem：签入
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-签入已签出的 DriveItem 资源，为其他人提供文档版本。
+签入已签出的**driveItem**资源，使其他用户可以使用该文档的版本。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 |   名称    | 值  |                                                说明                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | 字符串 | 可选。 完成签入操作后文档的所需状态。 可以是 `published` 或未指定。 |
+| checkInAs | 字符串 | 可选。 签入操作完成后的文档状态。 可以是 `published` 或未指定。 |
 | comment   | string | 与此版本相关联的签入注释。                                                   |
 
 ## <a name="example"></a>示例

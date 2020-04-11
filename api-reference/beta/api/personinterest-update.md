@@ -1,20 +1,20 @@
 ---
 title: 更新 personInterest
-description: 更新 personinterest 对象的属性。
+description: 更新 personInterest 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 36d83b710e19c1bcfc92ebae4c61efd2c6fb434b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5692b973e3c50e67f99efea971d19ade6d2699b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455905"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228518"
 ---
 # <a name="update-personinterest"></a>更新 personinterest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ PATCH /me/profile/interests/{id}
 |categories    |String 集合 | 包含用户与兴趣相关联的类别（例如： personal、recipies）|
 |说明   |字符串            | 包含对利息的说明。                                             |
 |displayName   |String            | 包含利息的友好名称。                                          |
-|webUrl        |String            | 包含指向有关该兴趣的信息源的链接。                        |
+|WebUrl        |String            | 包含指向有关该兴趣的信息源的链接。                        |
 
 ## <a name="response"></a>响应
 

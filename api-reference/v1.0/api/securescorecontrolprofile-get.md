@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 06f9420ffc8a05825d14b5430f2601a75b436ed3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5425dc8a2f908f0f7b4e3cf7120968bf4b51f7a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509855"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229596"
 ---
 # <a name="get-securescorecontrolprofile"></a>获取 secureScoreControlProfile
 
@@ -63,7 +63,7 @@ GET /security/securescorecontrolprofiles/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
+GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescorecontrolprofile-csharp-snippets.md)]

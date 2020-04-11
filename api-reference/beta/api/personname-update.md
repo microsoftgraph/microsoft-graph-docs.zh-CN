@@ -1,20 +1,20 @@
 ---
 title: 更新 Contact.personname
-description: 更新 contact.personname 对象的属性。
+description: 更新 Contact.personname 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ef65c81830c219d988159753be3528d37609c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26989c4eb5b7af987ab9a50555d3abdf07e3a16a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455884"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228690"
 ---
 # <a name="update-personname"></a>更新 contact.personname
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ PATCH /me/profile/names/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型                                            | 说明                                                                             | 
+| 属性     | 类型                                            | 说明                                                                             |
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |String                                           | 提供名和姓的顺序呈现。                              |
 |前         |String                                           | 用户的名字。                                                                 |
@@ -105,7 +105,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 068d68ba20d81bfa7692d7901c3fb68ffbc9ccc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65b2bba9f6582b103475c50f6712f2bcb2317f0e
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455087"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229323"
 ---
 # <a name="create-languageproficiency"></a>创建 languageProficiency
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42455087"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
-| 应用程序                            | User.ReadWrite.All |
+| 委派（工作或学校帐户）     | 所有用户读写。          |
+| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,9 @@ POST /me/profile/languages
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
-|:----------|:----------|
-| Authorization  | Bearer {token}。必需。|
+| 名称           | 说明                 |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}。必需。   |
 | Content-Type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文

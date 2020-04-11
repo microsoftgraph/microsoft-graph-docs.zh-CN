@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 68fa883e7383c0f064aeece1d61a1788fed49ed6
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109052"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227741"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -196,8 +196,8 @@ ms.locfileid: "43109052"
 | [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [列出驱动器中的更改](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [关注项目](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [取消关注项目](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [关注项](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [取消追随项目](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [列出缩略图](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [创建共享链接](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -205,6 +205,8 @@ ms.locfileid: "43109052"
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [登记](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [退房](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md

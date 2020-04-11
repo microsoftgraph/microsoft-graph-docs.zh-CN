@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 507746674f17a7bf8255ccddc53ea14fe2ca5a26
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c440be4ad291857fad9540cccad2e43d3a0e7121
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521178"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227686"
 ---
 # <a name="relatedperson-resource-type"></a>relatedPerson 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "42521178"
 
 ## <a name="properties"></a>属性
 
-| 属性        | 类型        | 说明                                               |
-|:----------------|:------------|:----------------------------------------------------------|
-|displayName      |String       | 人员的姓名。                                        |
-|关系     |字符串       | 可取值为：`manager`、`colleague`、`directReport`、`dotLineReport`、`assistant`、`dotLineManager`、`alternateContact`、`friend`、`spouse`、`sibling`、`child`、`parent`、`sponsor`、`emergencyContact`、`other`、`unknownFutureValue`。|
-|userPrincipalName|字符串       | 组织内的人员的电子邮件地址或引用。 |
+| 属性        | 类型        | 说明                                                                                                                                                                                                                                     |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName      |String       | 人员的姓名。                                                                                                                                                                                                                             |
+|关系     |String       | 可取值为：`manager`、`colleague`、`directReport`、`dotLineReport`、`assistant`、`dotLineManager`、`alternateContact`、`friend`、`spouse`、`sibling`、`child`、`parent`、`sponsor`、`emergencyContact`、`other`、`unknownFutureValue`。|
+|userPrincipalName|String       | 组织内的人员的电子邮件地址或引用。                                                                                                                                                                                       |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

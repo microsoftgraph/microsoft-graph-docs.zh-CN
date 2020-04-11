@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7b121a1bd3369eebd752651fa412510daf943b76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: daca733578e5415fc777bc01a8ef1272cfdcc681
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520785"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228878"
 ---
 # <a name="serviceinformation-resource-type"></a>serviceInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,10 +22,10 @@ ms.locfileid: "42520785"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明                                            |
-|:-------------|:------------|:-------------------------------------------------------|
+| 属性     | 类型        | 说明                                                      |
+|:-------------|:------------|:-----------------------------------------------------------------|
 |name          | 字符串      | 云服务的名称（例如，Twitter、Instagram）。 |
-|webUrl        | String      | 包含要引用的服务的 URL。     |
+|WebUrl        | String      | 包含要引用的服务的 URL。               |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

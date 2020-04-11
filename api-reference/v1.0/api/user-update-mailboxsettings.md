@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 088b1f1d6f575cc96029f282ae6608cdeff6b3fb
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 20065f593312839d8f0fd05718b120817a1dbbc0
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618692"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229610"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -20,6 +20,7 @@ ms.locfileid: "42618692"
 
 - [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
 - dateFormat
+- delegateMeetingMessageDeliveryOptions
 - [区域设置](../resources/localeinfo.md)（语言和国家/地区）
 - timeFormat
 - 时区
@@ -32,7 +33,7 @@ ms.locfileid: "42618692"
 > [!TIP]
 > 您不能创建或删除任何邮箱设置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,6 +62,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
 |dateFormat|string|用户邮箱的日期格式。|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者，还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|

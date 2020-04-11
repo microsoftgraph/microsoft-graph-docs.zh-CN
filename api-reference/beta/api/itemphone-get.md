@@ -1,16 +1,16 @@
 ---
 title: 获取 itemPhone
-description: 检索 itemphone 对象的属性和关系。
+description: 检索 itemPhone 对象的属性和关系。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 94d474b5607ae91ac14d3aff806e0e67c69e710d
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: efd61f9c8654c43d6171dd02a1a76e0174a5233d
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200241"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229022"
 ---
 # <a name="get-itemphonenumber"></a>获取 itemPhoneNumber
 

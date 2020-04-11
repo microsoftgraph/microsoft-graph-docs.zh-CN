@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6212721774b9b7bc47a4e312d438f1b001a90bef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4927ba05443d4b54eaac3f54b7e0d3a8cd62159
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521902"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227688"
 ---
 # <a name="personname-resource-type"></a>Contact.personname 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,15 +32,15 @@ ms.locfileid: "42521902"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型                              | 说明 |
-|:-------------|:----------------------------------|:------------|
+| 属性     | 类型                              | 说明                                                                                                  |
+|:-------------|:----------------------------------|:-------------------------------------------------------------------------------------------------------------|
 |displayName   |String                             | 根据用户或其设备的区域设置，提供 firstName 和 lastName 的顺序呈现。 |
 |前         |String                             | 用户的名字。                                                                                      |
 |initials      |String                             | 用户的首字母缩写。                                                                                        |
 |languageTag   |String                             | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。                        |
 |末          |String                             | 用户的姓氏。                                                                                       |
 |maiden        |String                             | Maiden 用户的名称。                                                                                     |
-|中间        |String                             | Middlie 用户的名称。                                                                                    | 
+|中间        |String                             | Middlie 用户的名称。                                                                                    |
 |昵称      |String                             | 用户的昵称。                                                                                        |
 |拼音 |[yomiPersonName](yomipersonname.md)| 有关如何对用户名称进行发音的指南。                                                                 |
 |后缀        |String                             | Users 名称之后使用的指示符（例如：博士）。                                                             |

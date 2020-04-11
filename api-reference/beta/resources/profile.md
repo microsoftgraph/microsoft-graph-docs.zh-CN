@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: c5c7d7765d546dad5f6de39f72f092b3bf9daee6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b398ee8b0dbe14570f4ae59c71372502f3d0565
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521465"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227689"
 ---
 # <a name="profile-resource-type"></a>配置文件资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,36 +22,36 @@ ms.locfileid: "42521465"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                                     | 返回类型                                                    | 说明                                                                          |
-|:---------------------------------------------------------------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [获取个人资料](../api/profile-get.md)                                       | [profile](profile.md)                                          | 读取 profile 对象的属性和关系。                                 |
-| [删除个人资料](../api/profile-delete.md)                                         | 无                                                           | 删除**配置文件**对象。                                                               |
-| [列表帐户](../api/profile-list-account.md)                             | [userAccountInformation](useraccountinformation.md)集合 | 获取**userAccountInformation**对象集合。                                      |
-| [创建 personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | 通过发布到周年纪念集合创建新的**personAnniversary** 。           |
-| [列出周年纪念](../api/profile-list-anniversaries.md)                 | [personAnniversary](personanniversary.md)集合           | 获取**personAnniversary**对象集合。                                           |
+| 方法                                                                     | 返回类型                                                    | 说明                                                                                  |
+|:---------------------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| [获取个人资料](../api/profile-get.md)                                       | [profile](profile.md)                                          | 读取 profile 对象的属性和关系。                                         |
+| [删除个人资料](../api/profile-delete.md)                                 | 无                                                           | 删除**配置文件**对象。                                                                 |
+| [列表帐户](../api/profile-list-account.md)                             | [userAccountInformation](useraccountinformation.md)集合 | 获取**userAccountInformation**对象集合。                                          |
+| [创建 personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | 通过发布到周年纪念集合创建新的**personAnniversary** 。               |
+| [列出周年纪念](../api/profile-list-anniversaries.md)                 | [personAnniversary](personanniversary.md)集合           | 获取**personAnniversary**对象集合。                                               |
 | [创建 educationalActivity](../api/profile-post-educationalactivities.md) | [educationalActivity](educationalactivity.md)                  | 通过发布到**educationalActivities**集合创建新的**educationalActivity** 。 |
-| [列出 educationalActivities](../api/profile-list-educationalactivities.md) | [educationalActivity](educationalactivity.md)集合       | 获取**educationalActivity**对象集合。                                         |
-| [创建 itemEmail](../api/profile-post-emails.md)                          | [itemEmail](itememail.md)                                      | 通过发布到电子邮件集合创建新的**itemEmail** 。                          |
-| [列出电子邮件](../api/profile-list-emails.md)                               | [itemEmail](itememail.md)集合                           | 获取**itemEmail**对象集合。                                                   |
-| [创建 personInterest](../api/profile-post-interests.md)                  | [personInterest](personinterest.md)                            | 通过发布到 "兴趣" 集合创建新的**personInterest** 。                  |
-| [列出兴趣](../api/profile-list-interests.md)                         | [personInterest](personinterest.md)集合                 | 获取**personInterest**对象集合。                                              |
-| [创建 languageProficiency](../api/profile-post-languages.md)             | [languageProficiency](languageproficiency.md)                  | 通过发布到语言集合创建新的**languageProficiency** 。             |
-| [列出语言](../api/profile-list-languages.md)                         | [languageProficiency](languageproficiency.md)集合       | 获取**languageProficiency**对象集合。                                         |
-| [列出名称](../api/profile-list-names.md)                                 | [contact.personname](personname.md)集合                         | 获取**contact.personname**对象集合。                                                  |
-| [创建 Contact.personname](../api/profile-post-names.md)                          | [Contact.personname](personName.md)                                    | 通过发布到名称集合创建新的**contact.personname**对象。                   |
-| [列出网站](../api/profile-list-websites.md)                           | [personWebsite](personwebsite.md)集合                   | 获取**personWebsite**对象集合。                                               |
-| [创建 itemPhone](../api/profile-post-phones.md)                          | [itemPhone](itemphone.md)                                      | 通过发布到 "电话" 集合创建新的 itemPhone。                          |
-| [列出电话](../api/profile-list-phones.md)                               | [itemPhone](itemphone.md)集合                           | 获取**itemPhone**对象集合。                                                   |
-| [创建 workPosition](../api/profile-post-positions.md)                    | [workPosition](workposition.md)                                | 通过发布到 "职位" 集合创建新的 workPosition。                    |
-| [列表位置](../api/profile-list-positions.md)                         | [workPosition](workposition.md)集合                     | 获取**workPosition**对象集合。                                                |
-| [创建 projectParticipation](../api/profile-post-projects.md)             | [projectParticipation](projectparticipation.md)                | 通过发布到项目集合创建新的**projectParticipation** 。             |
-| [列出项目](../api/profile-list-projects.md)                           | [projectParticipation](projectparticipation.md)集合     | 获取**projectParticipation**对象集合。                                        |
-| [创建 skillProficiency](../api/profile-post-skills.md)                   | [skillProficiency](skillproficiency.md)                        | 通过发布到技能集合创建新的**skillProficiency** 。                   |
-| [列表技能](../api/profile-list-skills.md)                               | [skillProficiency](skillproficiency.md)集合             | 获取**skillProficiency**对象集合。                                            |
-| [创建 webAccount](../api/profile-post-webaccounts.md)                    | [webAccount](webaccount.md)                                    | 通过发布到 webAccounts 集合创建新的**webAccount** 。                    |
-| [列出 webAccounts](../api/profile-list-webaccounts.md)                     | [webAccount](webaccount.md)集合                         | 获取**webAccount**对象集合。                                                  |
-| [创建 personWebsite](../api/profile-post-websites.md)                    | [personWebsite](personwebsite.md)                              | 通过发布到网站集创建新的**personWebsite** 。                    |
-| [列出网站](../api/profile-list-websites.md)                           | [personWebsite](personwebsite.md)集合                   | 获取**personWebsite**对象集合。                                               |
+| [列出 educationalActivities](../api/profile-list-educationalactivities.md) | [educationalActivity](educationalactivity.md)集合       | 获取**educationalActivity**对象集合。                                            |
+| [创建 itemEmail](../api/profile-post-emails.md)                          | [itemEmail](itememail.md)                                      | 通过发布到电子邮件集合创建新的**itemEmail** 。                              |
+| [列出电子邮件](../api/profile-list-emails.md)                               | [itemEmail](itememail.md)集合                           | 获取**itemEmail**对象集合。                                                      |
+| [创建 personInterest](../api/profile-post-interests.md)                  | [personInterest](personinterest.md)                            | 通过发布到 "兴趣" 集合创建新的**personInterest** 。                      |
+| [列出兴趣](../api/profile-list-interests.md)                         | [personInterest](personinterest.md)集合                 | 获取**personInterest**对象集合。                                                  |
+| [创建 languageProficiency](../api/profile-post-languages.md)             | [languageProficiency](languageproficiency.md)                  | 通过发布到语言集合创建新的**languageProficiency** 。                 |
+| [列出语言](../api/profile-list-languages.md)                         | [languageProficiency](languageproficiency.md)集合       | 获取**languageProficiency**对象集合。                                             |
+| [列出名称](../api/profile-list-names.md)                                 | [contact.personname](personname.md)集合                         | 获取**contact.personname**对象集合。                                                      |
+| [创建 Contact.personname](../api/profile-post-names.md)                          | [Contact.personname](personName.md)                                    | 通过发布到名称集合创建新的**contact.personname**对象。                       |
+| [列出网站](../api/profile-list-websites.md)                           | [personWebsite](personwebsite.md)集合                   | 获取**personWebsite**对象集合。                                                   |
+| [创建 itemPhone](../api/profile-post-phones.md)                          | [itemPhone](itemphone.md)                                      | 通过发布到 "电话" 集合创建新的 itemPhone。                                  |
+| [列出电话](../api/profile-list-phones.md)                               | [itemPhone](itemphone.md)集合                           | 获取**itemPhone**对象集合。                                                       |
+| [创建 workPosition](../api/profile-post-positions.md)                    | [workPosition](workposition.md)                                | 通过发布到 "职位" 集合创建新的 workPosition。                            |
+| [列表位置](../api/profile-list-positions.md)                         | [workPosition](workposition.md)集合                     | 获取**workPosition**对象集合。                                                    |
+| [创建 projectParticipation](../api/profile-post-projects.md)             | [projectParticipation](projectparticipation.md)                | 通过发布到项目集合创建新的**projectParticipation** 。                 |
+| [列出项目](../api/profile-list-projects.md)                           | [projectParticipation](projectparticipation.md)集合     | 获取**projectParticipation**对象集合。                                            |
+| [创建 skillProficiency](../api/profile-post-skills.md)                   | [skillProficiency](skillproficiency.md)                        | 通过发布到技能集合创建新的**skillProficiency** 。                       |
+| [列表技能](../api/profile-list-skills.md)                               | [skillProficiency](skillproficiency.md)集合             | 获取**skillProficiency**对象集合。                                                |
+| [创建 webAccount](../api/profile-post-webaccounts.md)                    | [webAccount](webaccount.md)                                    | 通过发布到 webAccounts 集合创建新的**webAccount** 。                        |
+| [列出 webAccounts](../api/profile-list-webaccounts.md)                     | [webAccount](webaccount.md)集合                         | 获取**webAccount**对象集合。                                                      |
+| [创建 personWebsite](../api/profile-post-websites.md)                    | [personWebsite](personwebsite.md)                              | 通过发布到网站集创建新的**personWebsite** 。                        |
+| [列出网站](../api/profile-list-websites.md)                           | [personWebsite](personwebsite.md)集合                   | 获取**personWebsite**对象集合。                                                   |
 
 ## <a name="properties"></a>属性
 
@@ -61,20 +61,20 @@ ms.locfileid: "42521465"
 
 ## <a name="relationships"></a>关系
 
-| 关系          | 类型                                                         | 说明         |
-|:----------------------|:-------------------------------------------------------------|:--------------------|
-|上级                |[userAccountInformation](useraccountinformation.md)集合| 表示特定绑定到用户帐户的信息。 此为只读属性。 可为 NULL。|
-|周年          |[personAnniversary](personanniversary.md)集合          | 代表与人员关联的有意义的日期的详细信息。 此为只读属性。 可为 NULL。|
+| 关系          | 类型                                                         | 说明                                                                                                                                    |
+|:----------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+|上级                |[userAccountInformation](useraccountinformation.md)集合| 表示特定绑定到用户帐户的信息。 此为只读属性。 可为 NULL。                                                             |
+|周年          |[personAnniversary](personanniversary.md)集合          | 代表与人员关联的有意义的日期的详细信息。 此为只读属性。 可为 NULL。                                                      |
 |educationalActivities  |[educationalActivity](educationalactivity.md)集合      | 表示用户已提供与 undergraduate、毕业、postgraduate 或其他教学活动相关的数据。 此为只读属性。 可为 NULL。|
-|电子邮件                 |[itemEmail](itememail.md)集合                          | 表示有关与用户相关联的电子邮件地址的详细信息。 此为只读属性。 可为 NULL。|
-|interests              |[personInterest](personinterest.md)集合                | 提供有关用户在各种服务中与其自身关联的兴趣的详细信息。 此为只读属性。 可为 NULL。|
-|languages              |[languageProficiency](languageproficiency.md)集合      | 表示有关用户已添加到其配置文件中的语言的详细信息。 此为只读属性。 可为 NULL。|
-|phones                 |[itemPhone](itemphone.md)集合                          | 表示有关与各种服务中的用户关联的电话号码的详细信息。 此为只读属性。 可为 NULL。|
-|位置              |[workPosition](workposition.md)集合                    | 表示有关与用户配置文件相关联的工作职位的详细信息。 此为只读属性。 可为 NULL。|
-|projects               |[projectParticipation](projectparticipation.md)集合    | 表示有关与用户关联的项目的详细信息。 此为只读属性。 可为 NULL。|
-|skills                 |[skillProficiency](skillproficiency.md)集合            | 表示有关与各种服务中的用户相关的技能的详细信息。 此为只读属性。 可为 NULL。|
-|webAccounts            |[webAccount](webaccount.md)集合                        | 表示用户已将其添加到其用户配置文件中的 web 帐户。 此为只读属性。 可为 NULL。|
-|websites               |[personWebsite](personwebsite.md)集合                  | 表示有关与各种服务中的用户相关联的网站的详细信息。 此为只读属性。 可为 Null。|
+|电子邮件                 |[itemEmail](itememail.md)集合                          | 表示有关与用户相关联的电子邮件地址的详细信息。 此为只读属性。 可为 NULL。                                           |
+|interests              |[personInterest](personinterest.md)集合                | 提供有关用户在各种服务中与其自身关联的兴趣的详细信息。 此为只读属性。 可为 NULL。                |
+|languages              |[languageProficiency](languageproficiency.md)集合      | 表示有关用户已添加到其配置文件中的语言的详细信息。 此为只读属性。 可为 NULL。                                   |
+|phones                 |[itemPhone](itemphone.md)集合                          | 表示有关与各种服务中的用户关联的电话号码的详细信息。 此为只读属性。 可为 NULL。                           |
+|位置              |[workPosition](workposition.md)集合                    | 表示有关与用户配置文件相关联的工作职位的详细信息。 此为只读属性。 可为 NULL。                                    |
+|projects               |[projectParticipation](projectparticipation.md)集合    | 表示有关与用户关联的项目的详细信息。 此为只读属性。 可为 NULL。                                                    |
+|skills                 |[skillProficiency](skillproficiency.md)集合            | 表示有关与各种服务中的用户相关的技能的详细信息。 此为只读属性。 可为 NULL。                                  |
+|webAccounts            |[webAccount](webaccount.md)集合                        | 表示用户已将其添加到其用户配置文件中的 web 帐户。 此为只读属性。 可为 NULL。                               |
+|websites               |[personWebsite](personwebsite.md)集合                  | 表示有关与各种服务中的用户相关联的网站的详细信息。 此为只读属性。 可为 Null。                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

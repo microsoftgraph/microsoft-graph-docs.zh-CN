@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4c7674e656fa01fb858a0184c667720e99048dd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7424ce21138eed70a26e358d362dae3c75fcef0
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451532"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229071"
 ---
 # <a name="delete-webaccount"></a>删除 webAccount
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,9 +40,9 @@ DELETE /me/profile/webAccounts/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称           |说明                 |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}。必需。  | 
+| 名称           | 说明                 |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}。必需。   |
 
 ## <a name="request-body"></a>请求正文
 

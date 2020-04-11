@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5077d98d1cda1f40f3cd9c3886b607458c700ec3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ecdfca25da3f231e5b5603343c70409e97f805e8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618691"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229645"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -22,6 +22,7 @@ ms.locfileid: "42618691"
 
 - [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
 - 日期格式
+- delegateMeetingMessageDeliveryOptions
 - [区域设置](../resources/localeinfo.md)（语言和国家/地区）
 - 时间格式
 - 时区
@@ -59,6 +60,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 GET /me/mailboxSettings/dateFormat
 GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
 
+GET /me/mailboxSettings/delegateMeetingMessageDeliveryOptions
+GET /users/{id|userPrincipalName}/mailboxSettings/delegateMeetingMessageDeliveryOptions
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
 
@@ -88,6 +92,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
 - 字符串（适用于 **dateFormat**）
+- string （用于**delegateMeetingMessageDeliveryOptions**）
 - [localeInfo](../resources/localeinfo.md) 对象
 - 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）
@@ -156,7 +161,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 
@@ -231,7 +237,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
 #### <a name="response"></a>响应
 该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

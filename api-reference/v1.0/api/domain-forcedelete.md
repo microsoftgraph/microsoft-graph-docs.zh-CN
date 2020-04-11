@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b50957082fe4f2e1e0a87d24cf36a7a7fc6eed16
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a9219a6e49cc0c0ddc223ea1d9dd108903a21cd0
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181341"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228829"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
@@ -52,7 +52,7 @@ POST /domains/{id}/forceDelete
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---------------|:----------|
@@ -83,7 +83,7 @@ POST /domains/{id}/forceDelete
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/domains/{id}/forceDelete
+POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
 Content-length: 33
 

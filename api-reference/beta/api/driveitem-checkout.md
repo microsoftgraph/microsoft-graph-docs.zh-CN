@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: 签出 driveItem 资源以防止在签入文档前其他人编辑文档和看到所做的更改。
-ms.date: 09/10/2017
-title: 签出文件
+description: 签出 driveItem 资源，以防止其他人编辑该文档，并且在文档签入前，您所做的更改将一直可见。
+title: driveItem：签出
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4159882b29dc69429a7b99bb89d1e8051d6e9c03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69f01b949d38d76be24834151c10581589b75e2e
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432941"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227587"
 ---
-# <a name="check-out-a-driveitem-resource"></a>签出 DriveItem 资源
+# <a name="driveitem-checkout"></a>driveItem：签出
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-签出 driveItem 资源以防止在[签入](driveitem-checkin.md)文档前其他人编辑文档和看到所做的更改。
+签出**driveItem**资源，以防止其他人编辑该文档，并在[签](driveitem-checkin.md)入所记录的文档之前阻止您的更改可见。
 
 ## <a name="permissions"></a>权限
 
@@ -75,7 +74,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ## <a name="response"></a>响应
 
-如果成功，该 API 调用会返回 `204 No content`。
+如果成功，API 调用将返回`204 No content`。
 
 <!-- { "blockType": "response" } -->
 

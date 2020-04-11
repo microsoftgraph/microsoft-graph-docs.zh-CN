@@ -5,18 +5,18 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bc08a1b92ccb8404a20cd5013be74d37f7659a5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d49ddfcc0db9b55701f0b84a223efcec85aa8dfe
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508567"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228063"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包定义了资源角色的集合，以及一个或多个用户如何获取对这些资源的访问权限的策略。  
 每个访问包都由一个访问包目录引用，并从该目录中的资源链接到来自定义该程序包提供的访问权限的特定于资源的角色作用域。  访问包还链接到访问包分配策略，每个分配策略都定义了可以请求或分配访问包分配的成员。
