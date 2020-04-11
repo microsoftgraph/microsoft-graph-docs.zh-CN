@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 893c03041d8b601ed101d7e6e61775738c040058
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: ebdf299679daaef688078dd69038b1a568e30a26
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144231"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218582"
 ---
 # <a name="create-group"></a>创建组
 
@@ -184,7 +184,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>示例 2：创建包含所有者和成员的 Office 365 组
 
-以下示例将创建一个具有指定所有者和成员的 Office 365 组。
+以下示例将创建一个具有指定所有者和成员的 Office 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API 或 JSON 批处理来添加更多成员。
 
 #### <a name="request"></a>请求
 
