@@ -721,6 +721,15 @@
                   href: api/calendargroup-list-calendars.md
                 - name: 在日历组中创建日历
                   href: api/calendargroup-post-calendars.md
+            - name: 日历权限
+              href: resources/calendarpermission.md
+              items:
+                - name: 获取
+                  href: api/calendarpermission-get.md
+                - name: 更新
+                  href: api/calendarpermission-update.md
+                - name: 删除
+                  href: api/calendarpermission-delete.md
             - name: 类别
               href: resources/outlookcategory.md
               items:
@@ -851,7 +860,7 @@
                 - name: Android LOB 应用
                   href: resources/intune-apps-androidlobapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-androidlobapp-list.md
                     - name: 获取
                       href: api/intune-apps-androidlobapp-get.md
@@ -1270,7 +1279,7 @@
                 - name: Web 应用
                   href: resources/intune-apps-webapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-webapp-list.md
                     - name: 获取
                       href: api/intune-apps-webapp-get.md
@@ -1289,7 +1298,7 @@
                 - name: Windows Mobile MSI
                   href: resources/intune-apps-windowsmobilemsi.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-windowsmobilemsi-list.md
                     - name: 获取
                       href: api/intune-apps-windowsmobilemsi-get.md
@@ -2351,7 +2360,7 @@
                 - name: 注册疑难解答事件
                   href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: 获取
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -2364,7 +2373,7 @@
                 - name: 已本地化的通知邮件
                   href: resources/intune-notification-localizednotificationmessage.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-notification-localizednotificationmessage-list.md
                     - name: 获取
                       href: api/intune-notification-localizednotificationmessage-get.md
@@ -2775,7 +2784,7 @@
                 - name: Windows 信息保护策略
                   href: resources/intune-mam-windowsinformationprotectionpolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                     - name: 获取
                       href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -2798,7 +2807,7 @@
                 - name: 设备注册配置
                   href: resources/intune-onboarding-deviceenrollmentconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
                     - name: 获取
                       href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
@@ -2997,7 +3006,7 @@
                 - name: 资源操作
                   href: resources/intune-rbac-resourceoperation.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-rbac-resourceoperation-list.md
                     - name: 获取
                       href: api/intune-rbac-resourceoperation-get.md
@@ -3010,7 +3019,7 @@
                 - name: 角色分配
                   href: resources/intune-rbac-roleassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-rbac-roleassignment-list.md
                     - name: 获取
                       href: api/intune-rbac-roleassignment-get.md
@@ -3233,6 +3242,10 @@
                   href: api/driveitem-get.md
                 - name: 获取缩略图
                   href: api/driveitem-list-thumbnails.md
+                - name: 签入文件
+                  href: api/driveitem-checkin.md
+                - name: 签出文件
+                  href: api/driveitem-checkout.md
                 - name: 创建文件夹
                   href: api/driveitem-post-children.md
                 - name: 更新项目
@@ -3326,6 +3339,18 @@
                   href: api/application-post-owners.md
                 - name: 删除所有者
                   href: api/application-delete-owners.md
+                - name: 添加令牌颁发策略
+                  href: api/application-post-tokenissuancepolicies.md
+                - name: 列出令牌颁发策略
+                  href: api/application-list-tokenissuancepolicies.md
+                - name: 删除令牌颁发策略
+                  href: api/application-delete-tokenissuancepolicies.md
+                - name: 添加令牌生存期策略
+                  href: api/application-post-tokenlifetimepolicies.md
+                - name: 列表令牌生存期策略
+                  href: api/application-list-tokenlifetimepolicies.md
+                - name: 删除令牌生存期策略
+                  href: api/application-delete-tokenlifetimepolicies.md
             - name: 审核日志
               href: resources/azure-ad-auditlog-overview.md
               items:
@@ -3556,6 +3581,67 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
+            - name: 策略
+              href: resources/policy-overview.md
+              items:
+                - name: 基于活动的超时策略
+                  href: resources/activitybasedtimeoutpolicy.md
+                  items:
+                    - name: 列出
+                      href: api/activitybasedtimeoutpolicy-list.md
+                    - name: 创建
+                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                    - name: 获取
+                      href: api/activitybasedtimeoutpolicy-get.md
+                    - name: 更新
+                      href: api/activitybasedtimeoutpolicy-update.md
+                    - name: 删除
+                      href: api/activitybasedtimeoutpolicy-delete.md
+                - name: 主页领域发现策略
+                  href: resources/homerealmdiscoverypolicy.md
+                  items:
+                    - name: 列出
+                      href: api/homerealmdiscoverypolicy-list.md
+                    - name: 创建
+                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                    - name: 获取
+                      href: api/homerealmdiscoverypolicy-get.md
+                    - name: 更新
+                      href: api/homerealmdiscoverypolicy-update.md
+                    - name: 删除
+                      href: api/homerealmdiscoverypolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: 令牌颁发策略
+                  href: resources/tokenissuancepolicy.md
+                  items:
+                    - name: 列出
+                      href: api/tokenissuancepolicy-list.md
+                    - name: 创建
+                      href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                    - name: 获取
+                      href: api/tokenissuancepolicy-get.md
+                    - name: 更新
+                      href: api/tokenissuancepolicy-update.md
+                    - name: 删除
+                      href: api/tokenissuancepolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/tokenissuancepolicy-list-appliesto.md
+                - name: 令牌生存期策略
+                  href: resources/tokenlifetimepolicy.md
+                  items:
+                    - name: 列出
+                      href: api/tokenlifetimepolicy-list.md
+                    - name: 创建
+                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                    - name: 获取
+                      href: api/tokenlifetimepolicy-get.md
+                    - name: 更新
+                      href: api/tokenlifetimepolicy-update.md
+                    - name: 删除
+                      href: api/tokenlifetimepolicy-delete.md
+                    - name: 列出已应用到应用程序的策略
+                      href: api/tokenlifetimepolicy-list-appliesto.md
             - name: 订阅的 SKU
               href: resources/subscribedsku.md
               items:

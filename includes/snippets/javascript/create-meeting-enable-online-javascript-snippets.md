@@ -1,11 +1,16 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: bf01d8da45a264c6368779ada04e31df2872efa7
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636963"
 ---
-
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -42,7 +47,7 @@ const event = {
 };
 
 let res = await client.api('/me/events')
-	.version('beta')
-	.post(event);
+    .version('beta')
+    .post(event);
 
 ```

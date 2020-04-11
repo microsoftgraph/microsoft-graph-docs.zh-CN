@@ -901,7 +901,7 @@
                 - name: 音频路由组
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: 创建
+                    - name: Create
                       href: api/call-post-audioroutinggroups.md
                     - name: 获取
                       href: api/audioroutinggroup-get.md
@@ -914,7 +914,7 @@
             - name: 在线会议
               href: resources/onlinemeeting.md
               items:
-                - name: 创建
+                - name: Create
                   href: api/application-post-onlinemeetings.md
                 - name: 获取
                   href: api/onlinemeeting-get.md
@@ -981,7 +981,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: 获取
                   href: api/bookingbusiness-get.md
@@ -1022,7 +1022,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-customers.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-customers.md
                 - name: 获取
                   href: api/bookingcustomer-get.md
@@ -1035,7 +1035,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-services.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-services.md
                 - name: 获取
                   href: api/bookingservice-get.md
@@ -1048,7 +1048,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: 创建
+                - name: Create
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: 获取
                   href: api/bookingstaffmember-get.md
@@ -8191,6 +8191,10 @@
                   href: api/driveitem-get.md
                 - name: 获取缩略图
                   href: api/driveitem-list-thumbnails.md
+                - name: 签入文件
+                  href: api/driveitem-checkin.md
+                - name: 签出文件
+                  href: api/driveitem-checkout.md
                 - name: 创建文件夹
                   href: api/driveitem-post-children.md
                 - name: 更新项目
@@ -8679,7 +8683,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: 列表
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: 创建
+                    - name: Create
                       href: api/conditionalaccessroot-post-policies.md
                     - name: 获取
                       href: api/conditionalaccesspolicy-get.md
@@ -8705,7 +8709,7 @@
                           href: resources/countrynamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/countrynamedlocation-get.md
@@ -8719,7 +8723,7 @@
                           href: resources/ipnamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/ipnamedlocation-get.md
@@ -8921,14 +8925,14 @@
                   items:
                     - name: 列表
                       href: api/accesspackageresourcerequest-list.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
@@ -9047,7 +9051,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: 列表
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: 创建
+                    - name: Create
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: 获取
                       href: api/threatassessmentrequest-get.md
@@ -9349,7 +9353,7 @@
                     - name: 角色分配请求
                       href: resources/governanceroleassignmentrequest.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/governanceroleassignmentrequest-list.md
                         - name: 创建
                           href: api/governanceroleassignmentrequest-post.md
@@ -10479,7 +10483,7 @@
                   href: resources/search-api-overview.md
                 - name: 查询数据
                   href: api/search-query.md
-            - name: Index
+            - name: 索引
               items:
                 - name: 概述
                   href: resources/indexing-api-overview.md

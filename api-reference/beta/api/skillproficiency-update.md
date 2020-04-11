@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1fd014c397575ce6977ee2a57c61a89ac7af59a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53d67c4248593b81d1091d6eb3610586a732f330
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453131"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228378"
 ---
-# <a name="update-skillproficiency"></a><span data-ttu-id="77c27-103">更新 skillproficiency</span><span class="sxs-lookup"><span data-stu-id="77c27-103">Update skillproficiency</span></span>
+# <a name="update-skillproficiency"></a><span data-ttu-id="aaf37-103">更新 skillproficiency</span><span class="sxs-lookup"><span data-stu-id="aaf37-103">Update skillproficiency</span></span>
 
-<span data-ttu-id="77c27-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="77c27-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aaf37-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aaf37-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="77c27-105">更新用户的[配置文件](../resources/profile.md)中的[skillProficiency](../resources/skillproficiency.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="77c27-105">Update the properties of a [skillProficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="aaf37-105">更新用户的[配置文件](../resources/profile.md)中的[skillProficiency](../resources/skillproficiency.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="aaf37-105">Update the properties of a [skillProficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="77c27-106">权限</span><span class="sxs-lookup"><span data-stu-id="77c27-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="aaf37-106">权限</span><span class="sxs-lookup"><span data-stu-id="aaf37-106">Permissions</span></span>
 
-<span data-ttu-id="77c27-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="77c27-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aaf37-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aaf37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="77c27-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="77c27-109">Permission type</span></span>                        | <span data-ttu-id="77c27-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="77c27-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="aaf37-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="aaf37-109">Permission type</span></span>                        | <span data-ttu-id="aaf37-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aaf37-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="77c27-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="77c27-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="77c27-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="77c27-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="77c27-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="77c27-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77c27-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="77c27-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="77c27-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="77c27-115">Application</span></span>                            | <span data-ttu-id="77c27-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77c27-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="aaf37-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aaf37-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="aaf37-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="aaf37-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="aaf37-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aaf37-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aaf37-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="aaf37-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="aaf37-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="aaf37-115">Application</span></span>                            | <span data-ttu-id="aaf37-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aaf37-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="77c27-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="77c27-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aaf37-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aaf37-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +38,36 @@ ms.locfileid: "42453131"
 PATCH /me/profile/skills/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="77c27-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="77c27-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="aaf37-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="aaf37-118">Request headers</span></span>
 
-| <span data-ttu-id="77c27-119">名称</span><span class="sxs-lookup"><span data-stu-id="77c27-119">Name</span></span>           |<span data-ttu-id="77c27-120">说明</span><span class="sxs-lookup"><span data-stu-id="77c27-120">Description</span></span>                  |
+| <span data-ttu-id="aaf37-119">名称</span><span class="sxs-lookup"><span data-stu-id="aaf37-119">Name</span></span>           |<span data-ttu-id="aaf37-120">说明</span><span class="sxs-lookup"><span data-stu-id="aaf37-120">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="77c27-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="77c27-121">Authorization</span></span>  | <span data-ttu-id="77c27-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="77c27-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="77c27-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="77c27-124">Content-Type</span></span>   | <span data-ttu-id="77c27-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="77c27-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="aaf37-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="aaf37-121">Authorization</span></span>  | <span data-ttu-id="aaf37-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="aaf37-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="aaf37-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="aaf37-124">Content-Type</span></span>   | <span data-ttu-id="aaf37-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="aaf37-p103">application/json. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="77c27-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="77c27-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="aaf37-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="aaf37-127">Request body</span></span>
 
-<span data-ttu-id="77c27-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="77c27-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="77c27-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="77c27-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="77c27-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="77c27-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="aaf37-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="aaf37-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="aaf37-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="aaf37-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="aaf37-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="aaf37-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="77c27-131">属性</span><span class="sxs-lookup"><span data-stu-id="77c27-131">Property</span></span>     | <span data-ttu-id="77c27-132">类型</span><span class="sxs-lookup"><span data-stu-id="77c27-132">Type</span></span>            | <span data-ttu-id="77c27-133">说明</span><span class="sxs-lookup"><span data-stu-id="77c27-133">Description</span></span>                                                                                                                        |
+| <span data-ttu-id="aaf37-131">属性</span><span class="sxs-lookup"><span data-stu-id="aaf37-131">Property</span></span>     | <span data-ttu-id="aaf37-132">类型</span><span class="sxs-lookup"><span data-stu-id="aaf37-132">Type</span></span>            | <span data-ttu-id="aaf37-133">说明</span><span class="sxs-lookup"><span data-stu-id="aaf37-133">Description</span></span>                                                                                                                        |
 |:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="77c27-134">categories</span><span class="sxs-lookup"><span data-stu-id="77c27-134">categories</span></span>    |<span data-ttu-id="77c27-135">String 集合</span><span class="sxs-lookup"><span data-stu-id="77c27-135">String collection</span></span>| <span data-ttu-id="77c27-136">包含用户与技能相关联的类别（例如：个人、职业、爱好）</span><span class="sxs-lookup"><span data-stu-id="77c27-136">Contains categories a user has associated with the skill (eg: personal, professional, hobby)</span></span>                                       |
-|<span data-ttu-id="77c27-137">displayName</span><span class="sxs-lookup"><span data-stu-id="77c27-137">displayName</span></span>   |<span data-ttu-id="77c27-138">String</span><span class="sxs-lookup"><span data-stu-id="77c27-138">String</span></span>           | <span data-ttu-id="77c27-139">包含技能的友好名称。</span><span class="sxs-lookup"><span data-stu-id="77c27-139">Contains a friendly name for the skill.</span></span>                                                                                            | 
-|<span data-ttu-id="77c27-140">水平</span><span class="sxs-lookup"><span data-stu-id="77c27-140">proficiency</span></span>   |<span data-ttu-id="77c27-141">string</span><span class="sxs-lookup"><span data-stu-id="77c27-141">string</span></span>           | <span data-ttu-id="77c27-142">可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="77c27-142">Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="77c27-143">webUrl</span><span class="sxs-lookup"><span data-stu-id="77c27-143">webUrl</span></span>        |<span data-ttu-id="77c27-144">String</span><span class="sxs-lookup"><span data-stu-id="77c27-144">String</span></span>           | <span data-ttu-id="77c27-145">包含指向有关技能的信息源的链接。</span><span class="sxs-lookup"><span data-stu-id="77c27-145">Contains a link to an information source about the skill.</span></span>                                                                          |
+|<span data-ttu-id="aaf37-134">categories</span><span class="sxs-lookup"><span data-stu-id="aaf37-134">categories</span></span>    |<span data-ttu-id="aaf37-135">String 集合</span><span class="sxs-lookup"><span data-stu-id="aaf37-135">String collection</span></span>| <span data-ttu-id="aaf37-136">包含用户与技能相关联的类别（例如：个人、职业、爱好）</span><span class="sxs-lookup"><span data-stu-id="aaf37-136">Contains categories a user has associated with the skill (eg: personal, professional, hobby)</span></span>                                       |
+|<span data-ttu-id="aaf37-137">displayName</span><span class="sxs-lookup"><span data-stu-id="aaf37-137">displayName</span></span>   |<span data-ttu-id="aaf37-138">String</span><span class="sxs-lookup"><span data-stu-id="aaf37-138">String</span></span>           | <span data-ttu-id="aaf37-139">包含技能的友好名称。</span><span class="sxs-lookup"><span data-stu-id="aaf37-139">Contains a friendly name for the skill.</span></span>                                                                                            |
+|<span data-ttu-id="aaf37-140">水平</span><span class="sxs-lookup"><span data-stu-id="aaf37-140">proficiency</span></span>   |<span data-ttu-id="aaf37-141">string</span><span class="sxs-lookup"><span data-stu-id="aaf37-141">string</span></span>           | <span data-ttu-id="aaf37-142">可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="aaf37-142">Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="aaf37-143">WebUrl</span><span class="sxs-lookup"><span data-stu-id="aaf37-143">webUrl</span></span>        |<span data-ttu-id="aaf37-144">String</span><span class="sxs-lookup"><span data-stu-id="aaf37-144">String</span></span>           | <span data-ttu-id="aaf37-145">包含指向有关技能的信息源的链接。</span><span class="sxs-lookup"><span data-stu-id="aaf37-145">Contains a link to an information source about the skill.</span></span>                                                                          |
 
-## <a name="response"></a><span data-ttu-id="77c27-146">响应</span><span class="sxs-lookup"><span data-stu-id="77c27-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aaf37-146">响应</span><span class="sxs-lookup"><span data-stu-id="aaf37-146">Response</span></span>
 
-<span data-ttu-id="77c27-147">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[skillProficiency](../resources/skillproficiency.md)对象。</span><span class="sxs-lookup"><span data-stu-id="77c27-147">If successful, this method returns a `200 OK` response code and an updated [skillProficiency](../resources/skillproficiency.md) object in the response body.</span></span>
+<span data-ttu-id="aaf37-147">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[skillProficiency](../resources/skillproficiency.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aaf37-147">If successful, this method returns a `200 OK` response code and an updated [skillProficiency](../resources/skillproficiency.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="77c27-148">示例</span><span class="sxs-lookup"><span data-stu-id="77c27-148">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="aaf37-148">示例</span><span class="sxs-lookup"><span data-stu-id="aaf37-148">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="77c27-149">请求</span><span class="sxs-lookup"><span data-stu-id="77c27-149">Request</span></span>
+### <a name="request"></a><span data-ttu-id="aaf37-149">请求</span><span class="sxs-lookup"><span data-stu-id="aaf37-149">Request</span></span>
 
-<span data-ttu-id="77c27-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="77c27-150">The following is an example of the request.</span></span>
+<span data-ttu-id="aaf37-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="aaf37-150">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="77c27-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="77c27-151">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="aaf37-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="aaf37-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_skillproficiency"
@@ -86,26 +86,26 @@ Content-type: application/json
   "webUrl": "webUrl-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="77c27-152">C#</span><span class="sxs-lookup"><span data-stu-id="77c27-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="aaf37-152">C#</span><span class="sxs-lookup"><span data-stu-id="aaf37-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-skillproficiency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="77c27-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77c27-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="aaf37-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aaf37-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-skillproficiency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="77c27-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="77c27-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="aaf37-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aaf37-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-skillproficiency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="77c27-155">响应</span><span class="sxs-lookup"><span data-stu-id="77c27-155">Response</span></span>
+### <a name="response"></a><span data-ttu-id="aaf37-155">响应</span><span class="sxs-lookup"><span data-stu-id="aaf37-155">Response</span></span>
 
-<span data-ttu-id="77c27-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="77c27-156">The following is an example of the response.</span></span>
+<span data-ttu-id="aaf37-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="aaf37-156">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="77c27-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="77c27-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="aaf37-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="aaf37-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
