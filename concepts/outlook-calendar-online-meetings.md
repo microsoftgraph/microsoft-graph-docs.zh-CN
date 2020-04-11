@@ -4,16 +4,16 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b1d3a4d5d4f68e3ac28a695d7e832dfed6f1a4d7
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: 6243e7d8458a7497ea2f01ad16ee67a9fc094dcb
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621619"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229512"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online-preview"></a>使用 Outlook 组织或参加联机会议（预览版）
+# <a name="use-outlook-to-organize-or-attend-meetings-online"></a>使用 Outlook 组织或参加联机会议
 
-在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event?view=graph-rest-beta)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)****，包括用于加入会议的 URL。 
+在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)****，包括用于加入会议的 URL。 
 
 ## <a name="calendars-and-online-meeting-providers"></a>日历和联机会议提供程序
 
@@ -23,13 +23,13 @@ ms.locfileid: "39621619"
 - Skype
 - Skype for Business
 
-查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar?view=graph-rest-beta)是否支持任何联机会议提供程序。 下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。 
+查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar)是否支持任何联机会议提供程序。 下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。 
 
 ### <a name="example-find-whether-a-calendar-supports-any-online-meeting-provider"></a>示例：查找日历是否支持任何联机会议提供程序
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_support_for_online_meeting_providers"
@@ -38,15 +38,15 @@ ms.locfileid: "39621619"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-support-for-online-meeting-providers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-support-for-online-meeting-providers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_meeting_enable_online"
@@ -144,15 +144,15 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-meeting-enable-online-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-meeting-enable-online-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-meeting-enable-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -260,7 +260,7 @@ Content-type: application/json
 
 ## <a name="get-information-to-join-meeting-online"></a>获取有关加入联机会议的信息
 
-与会者和组织者可以使用 **isOnlineMeeting **" 属性验证是否已启用[事件](/graph/api/resources/event?view=graph-rest-beta)以进行联机参与。 他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。 
+与会者和组织者可以使用 **isOnlineMeeting **" 属性验证是否已启用[事件](/graph/api/resources/event)以进行联机参与。 他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。 
 
 > [!IMPORTANT]
 > 使用通过**事件**的 **onlineMeeting** 属性提供的 **joinUrl** 访问 URL 以加入会议。 不要使用**事件**的 **onlineMeetingUrl** 属性，因为 **onlineMeetingUrl** 即将过时。
@@ -269,7 +269,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_online_meeting_info"
@@ -278,15 +278,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-online-meeting-info-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-online-meeting-info-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -329,7 +329,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_meeting_online"
@@ -343,15 +343,15 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-meeting-online-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-meeting-online-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-meeting-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

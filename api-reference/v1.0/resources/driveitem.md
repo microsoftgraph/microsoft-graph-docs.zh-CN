@@ -6,12 +6,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 15dfedfda092f2c4a742699f40359de51d9ffc0e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 60ca96d7c29bd5c0a31412d8016cc2d17d6515b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108562"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229491"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -203,6 +203,8 @@ ms.locfileid: "43108562"
 | [删除权限](../api/permission-delete.md)         | 无内容 | 从 driveItem 中删除权限。
 | [获取 WebSocket 频道][getWebSocket]                    | [订阅][] | 使用 socket.io 接收驱动器的近实时更改通知。
 | [预览项目][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
+| [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1734f4b848ca3ba5a1f816649a2587d878f9e9c3
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 782e8835ae7532a0f9a2bbad1732b0e9fb002fdd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144112"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219121"
 ---
 # <a name="create-group"></a>创建组
 
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>示例 2：创建包含所有者和成员的组
 
-以下示例将创建一个具有指定所有者和成员的 Office 365 组。
+以下示例将创建一个具有指定所有者和成员的 Office 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](group-post-members.md) API 或 JSON 批处理来添加更多成员。
 
 #### <a name="request"></a>请求
 
