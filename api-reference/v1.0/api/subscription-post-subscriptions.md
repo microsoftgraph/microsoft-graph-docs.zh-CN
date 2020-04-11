@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a1a2f899ec8e52e342ffe86f163ca4514a1d85e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 488527475534faa92eb223be19e1bf247a9b11fd
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108471"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229589"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -144,7 +144,7 @@ Content-type: application/json
 Content-length: 252
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
