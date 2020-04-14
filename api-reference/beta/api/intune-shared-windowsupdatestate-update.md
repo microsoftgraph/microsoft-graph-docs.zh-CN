@@ -1,18 +1,20 @@
 ---
 title: 更新 windowsUpdateState
 description: 更新 windowsUpdateState 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6490807f9af605e575fdc10c7e833cf18cbd09c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ca2c24910480442948620bf44e9b45a25db739e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471277"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +117,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: iosEduDeviceConfiguration 资源类型
 description: iOS 教育设备配置
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8eb239d65170fb293967d9a35dbd5fdacde592b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 317cb719d6fd5949b4a2a527d4b0225a9914edaa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791609"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472063"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>iosEduDeviceConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ iOS 教育设备配置
 |[列出 iosEduDeviceConfigurations](../api/intune-deviceconfig-iosedudeviceconfiguration-list.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)集合|列出[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的属性和关系。|
 |[获取 iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-get.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|读取[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的属性和关系。|
 |[创建 iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-create.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|创建新的[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象。|
-|[删除 iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-delete.md)|None|删除[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)。|
+|[删除 iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-delete.md)|无|删除[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)。|
 |[更新 iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-update.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|更新[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -43,7 +45,7 @@ iOS 教育设备配置
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |teacherCertificateSettings|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md)|教师的受信任的根证书和 PFX 证书|

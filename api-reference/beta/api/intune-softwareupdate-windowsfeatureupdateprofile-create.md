@@ -1,18 +1,20 @@
 ---
 title: 创建 windowsFeatureUpdateProfile
 description: 创建新的 windowsFeatureUpdateProfile 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b300cb20e48a35986a8cd2f9ed87151999fc4f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4fd5beb23e4581be24f6e119dae26403a245638c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800401"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471263"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |:---|:---|:---|
 |id|字符串|实体的标识符。|
 |displayName|String|配置文件的显示名称。|
-|说明|String|用户指定的配置文件的说明。|
+|description|String|用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
@@ -97,7 +99,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

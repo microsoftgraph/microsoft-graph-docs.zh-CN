@@ -1,20 +1,20 @@
 ---
 title: calendarGroup 资源类型
 description: 一组用户日历。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 175b3b8372214851ef62cf0740779b19fd2d4ce1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a630d35f5527494ce4cf477219dfd1f22547c490
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471494"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

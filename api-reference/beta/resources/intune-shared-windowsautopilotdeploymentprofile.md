@@ -1,18 +1,20 @@
 ---
 title: windowsAutopilotDeploymentProfile 资源类型
 description: Windows Autopilot 部署配置文件
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 981cd4d9b1eb50982c56e59d146a876f4f52ce8f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ec2ca148b66078f7da8b60fff82a829eba8ce34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471957"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -33,7 +35,7 @@ Windows Autopilot 部署配置文件
 |:---|:---|:---|
 |id|字符串|配置文件键|
 |displayName|字符串|配置文件的名称|
-|说明|String|配置文件的说明|
+|description|String|配置文件的说明|
 |language|String|在设备上配置的语言|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|

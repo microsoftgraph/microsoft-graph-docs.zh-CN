@@ -1,18 +1,20 @@
 ---
 title: auditProperty 资源类型
 description: 包含审核属性的属性的类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f1f5cc213f99300811c627692a516ac8c0b6e89
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dd5a43f1837ed3acf8927af5bac4e46d864f3fec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797421"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472114"
 ---
 # <a name="auditproperty-resource-type"></a>auditProperty 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

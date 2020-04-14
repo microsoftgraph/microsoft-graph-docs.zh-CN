@@ -1,20 +1,20 @@
 ---
 title: 'message: copy'
 description: 将邮件复制到文件夹。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18e5802a4cd8c0845285d24e4ab8a66975c2510c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6794ac35f1fc0091fa1464e58c9854b881745c4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456964"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471501"
 ---
 # <a name="message-copy"></a>message: copy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
