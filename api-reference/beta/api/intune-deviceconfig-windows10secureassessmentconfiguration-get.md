@@ -1,18 +1,20 @@
 ---
 title: 获取 windows10SecureAssessmentConfiguration
 description: 读取 windows10SecureAssessmentConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d47f574766c9a90874b711f7817ddaf2c642df4d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 305ce144a2793ae3dde49e5819558a673ebc4645
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42738324"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43338706"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>获取 windows10SecureAssessmentConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +117,6 @@ Content-Length: 1674
   }
 }
 ```
-
 
 
 

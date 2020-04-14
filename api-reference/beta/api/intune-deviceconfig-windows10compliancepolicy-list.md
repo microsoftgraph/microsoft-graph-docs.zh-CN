@@ -1,18 +1,20 @@
 ---
 title: 列出 windows10CompliancePolicies
 description: 列出 windows10CompliancePolicy 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e4f6109e50c716f6cfb8e503fb1b6632fe802eb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 10bd0e8e761a52acd1bdfa4f61dc41142a951434
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42741243"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43340605"
 ---
 # <a name="list-windows10compliancepolicies"></a>列出 windows10CompliancePolicies
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +122,6 @@ Content-Length: 2087
   ]
 }
 ```
-
 
 
 
