@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797239"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471122"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -62,6 +62,8 @@ ms.locfileid: "42797239"
 - [设备运行状况脚本](intune-devices-devicehealthscript.md)
 - [设备运行状况脚本分配](intune-devices-devicehealthscriptassignment.md)
 - [设备运行状况脚本设备状态](intune-devices-devicehealthscriptdevicestate.md)
+- [设备运行状况脚本修正历史记录](intune-devices-devicehealthscriptremediationhistory.md)
+- [设备运行状况脚本修正历史记录数据](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [设备运行状况脚本修正摘要](intune-devices-devicehealthscriptremediationsummary.md)
 - [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
@@ -96,6 +98,7 @@ ms.locfileid: "42797239"
 - [设备管理脚本组分配](intune-devices-devicemanagementscriptgroupassignment.md)
 - [设备管理脚本运行摘要](intune-devices-devicemanagementscriptrunsummary.md)
 - [设备管理脚本用户状态](intune-devices-devicemanagementscriptuserstate.md)
+- [设备管理设置抽象实现约束](intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md)
 - [设备管理设置应用程序约束](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [设备管理设置布尔约束](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [设备管理设置类别](intune-deviceintent-devicemanagementsettingcategory.md)
@@ -179,8 +182,6 @@ ms.locfileid: "42797239"
 - [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
-- [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [远程协助合作伙伴](intune-remoteassistance-remoteassistancepartner.md)
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
@@ -210,7 +211,7 @@ ms.locfileid: "42797239"
 - [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [用户体验分析回归概况摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
-- [用户体验分析启动分数历史记录](intune-devices-userexperienceanalyticsstartupscorehistory.md)
+- [用户体验分析分数历史记录](intune-devices-userexperienceanalyticsscorehistory.md)
 - [用户体验分析汇总者](intune-devices-userexperienceanalyticssummarizedby.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)

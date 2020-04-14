@@ -3,16 +3,18 @@ title: 获取 synchronizationTemplate
 description: 按其标识符检索同步模板。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ef1c33422b36e8fd88fcc6646506905e2a091e1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e0f5ff93cc87bd5c4cca2ada9891ba8ce4d02ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991098"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471158"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ### <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
 
 ### <a name="example"></a>示例
 

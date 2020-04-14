@@ -3,18 +3,18 @@ title: 更新 synchronizationTemplate
 description: Update （override）与给定应用程序关联的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4327da9f4eb54c0e740370338806dc4078f2672c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afc5e0e557f89866f14507314f3673d92df76d7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452874"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471129"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

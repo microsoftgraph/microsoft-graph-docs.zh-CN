@@ -3,18 +3,18 @@ title: 列出现有同步模板
 description: 列出与给定应用程序或服务主体相关联的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa6cff80d76b12092801d9deea3d5c2d209c21d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 717acbd1f7b679095ad84e371891926bca139843
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471143"
 ---
 # <a name="list-existing-synchronization-templates"></a>列出现有同步模板
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

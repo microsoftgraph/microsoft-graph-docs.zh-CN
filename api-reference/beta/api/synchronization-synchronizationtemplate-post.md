@@ -3,18 +3,18 @@ title: 创建 synchronizationTemplate
 description: 为给定应用程序创建新的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f164e795feee5172827a8bec9e058b1f05a7f9a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b75d5e2f052983cab54fe1cdfd557e03b7778e6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452889"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471136"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
