@@ -1,18 +1,20 @@
 ---
 title: 列出 androidForWorkPkcsCertificateProfiles
 description: 列出 androidForWorkPkcsCertificateProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abb34c6f0d0cc2412a6129569073c563591d3643
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1baffef0a8e8d329ed1fe1977aa7428b8f6087df
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759174"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435799"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>列出 androidForWorkPkcsCertificateProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +123,6 @@ Content-Length: 2135
   ]
 }
 ```
-
 
 
 

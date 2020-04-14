@@ -1,18 +1,20 @@
 ---
 title: 获取 androidWorkProfileEnterpriseWiFiConfiguration
 description: 读取 androidWorkProfileEnterpriseWiFiConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11a2f87a8fc07f0f61caa12dbc466873cfd960f8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ea71d3cb642293aef607b0c6b9cb553b16db32b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758507"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435105"
 ---
 # <a name="get-androidworkprofileenterprisewificonfiguration"></a>获取 androidWorkProfileEnterpriseWiFiConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +121,6 @@ Content-Length: 1950
   }
 }
 ```
-
 
 
 

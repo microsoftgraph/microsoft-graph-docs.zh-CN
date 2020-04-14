@@ -2,17 +2,19 @@
 title: 列出 windowsOfficeClientConfigurations
 description: 列出 windowsOfficeClientConfiguration 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b59828b2605fffbfd6e8a0c7341a4d3c9de093a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 008cbf721379b30ede2ae29018267fc67c2c68e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436712"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>列出 windowsOfficeClientConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -100,7 +102,6 @@ Content-Length: 1214
   ]
 }
 ```
-
 
 
 

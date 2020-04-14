@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceComplianceSettingState
 description: 更新 deviceComplianceSettingState 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5790b676f8a9e67f5bcb8af1073127161a20b80
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f58f5c0635ae4cdba96fe19cf626c08be6021378
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755019"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433761"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +122,6 @@ Content-Length: 598
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

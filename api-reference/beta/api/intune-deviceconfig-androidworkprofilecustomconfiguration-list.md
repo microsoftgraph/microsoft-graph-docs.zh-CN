@@ -1,18 +1,20 @@
 ---
 title: 列出 androidWorkProfileCustomConfigurations
 description: 列出 androidWorkProfileCustomConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d1ba28b7451b994f35335760d94cdcad6239e03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 511b88ffd0db60317f3727f5299beaf3c4d98eeb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435203"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>列出 androidWorkProfileCustomConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +117,6 @@ Content-Length: 1678
   ]
 }
 ```
-
 
 
 

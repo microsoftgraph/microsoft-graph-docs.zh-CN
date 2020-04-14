@@ -2,17 +2,19 @@
 title: 获取 officeClientConfigurationAssignment
 description: 读取 officeClientConfigurationAssignment 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d0fd8828bf68e86295ef034580fb7af4396f780
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e515ba043846fead0b162329305c1c2f25915c90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436778"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>获取 officeClientConfigurationAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -78,7 +80,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

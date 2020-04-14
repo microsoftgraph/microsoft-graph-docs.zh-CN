@@ -1,18 +1,18 @@
 ---
-title: 获取 androidWorkProfileGeneralDeviceConfiguration
-description: 读取 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
+title: 获取 appleExpeditedCheckinConfigurationBase
+description: 读取 appleExpeditedCheckinConfigurationBase 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3ec2045350b4309290cda249430e4ec035da5e7
+ms.openlocfilehash: 327067eb698dd7728ea1ab4b843a70850810c884
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435046"
+ms.locfileid: "43434498"
 ---
-# <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>获取 androidWorkProfileGeneralDeviceConfiguration
+# <a name="get-appleexpeditedcheckinconfigurationbase"></a>获取 appleExpeditedCheckinConfigurationBase
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43435046"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象的属性和关系。
+读取[appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -70,12 +70,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3248
+Content-Length: 1333
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
-    "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
+    "@odata.type": "#microsoft.graph.appleExpeditedCheckinConfigurationBase",
+    "id": "5fdd79cd-79cd-5fdd-cd79-dd5fcd79dd5f",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -106,44 +106,7 @@ Content-Length: 3248
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "passwordBlockFingerprintUnlock": true,
-    "passwordBlockTrustAgents": true,
-    "passwordExpirationDays": 6,
-    "passwordMinimumLength": 5,
-    "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordSignInFailureCountBeforeFactoryReset": 12,
-    "passwordRequiredType": "lowSecurityBiometric",
-    "workProfileDataSharingType": "preventAny",
-    "workProfileBlockNotificationsWhileDeviceLocked": true,
-    "workProfileBlockAddingAccounts": true,
-    "workProfileBluetoothEnableContactSharing": true,
-    "workProfileBlockScreenCapture": true,
-    "workProfileBlockCrossProfileCallerId": true,
-    "workProfileBlockCamera": true,
-    "workProfileBlockCrossProfileContactsSearch": true,
-    "workProfileBlockCrossProfileCopyPaste": true,
-    "workProfileDefaultAppPermissionPolicy": "prompt",
-    "workProfilePasswordBlockFingerprintUnlock": true,
-    "workProfilePasswordBlockTrustAgents": true,
-    "workProfilePasswordExpirationDays": 1,
-    "workProfilePasswordMinimumLength": 0,
-    "workProfilePasswordMinNumericCharacters": 7,
-    "workProfilePasswordMinNonLetterCharacters": 9,
-    "workProfilePasswordMinLetterCharacters": 6,
-    "workProfilePasswordMinLowerCaseCharacters": 9,
-    "workProfilePasswordMinUpperCaseCharacters": 9,
-    "workProfilePasswordMinSymbolCharacters": 6,
-    "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
-    "workProfilePasswordPreviousPasswordBlockCount": 13,
-    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "lowSecurityBiometric",
-    "workProfileRequirePassword": true,
-    "securityRequireVerifyApps": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-    "vpnEnableAlwaysOnLockdownMode": true,
-    "workProfileAllowWidgets": true,
-    "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+    "enableExpeditedCheckin": true
   }
 }
 ```

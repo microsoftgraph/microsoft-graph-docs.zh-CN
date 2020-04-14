@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceConfigurationAssignment
 description: 读取 deviceConfigurationAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec3c941cf5bc8fc0d954449bcff6a7ac109ee586
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb78a1e0023a30782b10aeb2a0a3976162cca7c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42754578"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433620"
 ---
 # <a name="get-deviceconfigurationassignment"></a>获取 deviceConfigurationAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -89,7 +91,6 @@ Content-Length: 312
   }
 }
 ```
-
 
 
 

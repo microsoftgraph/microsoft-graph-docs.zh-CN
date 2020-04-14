@@ -1,18 +1,20 @@
 ---
 title: 获取 androidWorkProfileEasEmailProfileBase
 description: 读取 androidWorkProfileEasEmailProfileBase 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2686f069ad9597c2d47f050add31b6d6f3159e23
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8b7d344e5d0ecf82251398c076f0889ec16131f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435181"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>获取 androidWorkProfileEasEmailProfileBase
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +115,6 @@ Content-Length: 1533
   }
 }
 ```
-
 
 
 

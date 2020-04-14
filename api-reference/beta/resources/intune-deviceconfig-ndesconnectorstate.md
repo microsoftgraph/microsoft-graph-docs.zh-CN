@@ -1,18 +1,20 @@
 ---
 title: ndesConnectorState 枚举类型
 description: Ndes 连接器的当前状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5710045de53a8da1dcda81469f4cb5dc7eb2f737
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 603518adb55c92e74beccfb2bda754137287834c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788518"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437086"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>ndesConnectorState 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

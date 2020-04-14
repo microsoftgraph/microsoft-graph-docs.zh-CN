@@ -1,18 +1,20 @@
 ---
 title: 列出 defaultDeviceCompliancePolicies
 description: 列出 defaultDeviceCompliancePolicy 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fca634b8bbb6d5ea947b3ea1aab3b83a8602e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 350ecff1427c20f8b9d06aa40b65cf44e2d838c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434294"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>列出 defaultDeviceCompliancePolicies
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +84,6 @@ Content-Length: 474
   ]
 }
 ```
-
 
 
 

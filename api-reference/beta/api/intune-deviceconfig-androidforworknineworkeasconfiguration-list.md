@@ -1,18 +1,20 @@
 ---
 title: 列出 androidForWorkNineWorkEasConfigurations
 description: 列出 androidForWorkNineWorkEasConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d628344b2e20d930bab2f33e33028629234665e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bbf77d1977c2332799c6cd5f6b15d6b8f342bd2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759209"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435890"
 ---
 # <a name="list-androidforworknineworkeasconfigurations"></a>列出 androidForWorkNineWorkEasConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -114,7 +116,6 @@ Content-Length: 1708
   ]
 }
 ```
-
 
 
 

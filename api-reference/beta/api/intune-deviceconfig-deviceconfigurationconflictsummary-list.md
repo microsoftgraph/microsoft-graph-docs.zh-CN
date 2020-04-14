@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceConfigurationConflictSummaries
 description: 列出 deviceConfigurationConflictSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 59c93f1f9d233b0c8d58f232ea0ef9a9e038f018
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8bd58b6bb5f74c73f08948443ce9f2c042320a74
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42754326"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433554"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>列出 deviceConfigurationConflictSummaries
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +87,6 @@ Content-Length: 495
   ]
 }
 ```
-
 
 
 

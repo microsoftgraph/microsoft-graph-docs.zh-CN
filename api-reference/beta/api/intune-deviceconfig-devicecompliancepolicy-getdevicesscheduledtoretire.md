@@ -1,18 +1,20 @@
 ---
 title: getDevicesScheduledToRetire 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80aabcfb65611be5006cedca4a66ee8de1b093c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 006f71353658fcbc0d8deffc3283fe861877b9aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756048"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434122"
 ---
 # <a name="getdevicesscheduledtoretire-action"></a>getDevicesScheduledToRetire 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +85,6 @@ Content-Length: 596
   ]
 }
 ```
-
 
 
 

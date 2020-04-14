@@ -1,18 +1,20 @@
 ---
 title: androidManagedStoreApp 资源类型
 description: 包含 Android 托管存储应用的属性和继承的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a97bb1fcec1e1d4ba6b53a7d8c110299705365c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4f4628e60f62b6a36c72f543e2309c35b1c97b86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799288"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437427"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42799288"
 |[列出 androidManagedStoreApps](../api/intune-apps-androidmanagedstoreapp-list.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)集合|列出[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)对象的属性和关系。|
 |[获取 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|读取[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)对象的属性和关系。|
 |[创建 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|创建新的[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)对象。|
-|[删除 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|None|删除[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)。|
+|[删除 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|无|删除[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)。|
 |[更新 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|更新[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -37,7 +39,7 @@ ms.locfileid: "42799288"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -51,16 +53,17 @@ ms.locfileid: "42799288"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|包标识符。|
 |appIdentifier|String|标识名称。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。|
-|isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。|
-|isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。|
-|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。|
+|isPrivate|Boolean|指示应用程序是否仅适用于给定企业的用户。|
+|isSystemApp|Boolean|指示应用程序是否为预安装的系统应用程序。|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)集合|对此企业可见的曲目。|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -114,6 +117,13 @@ ms.locfileid: "42799288"
   "appStoreUrl": "String",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "String",
+      "trackAlias": "String"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```

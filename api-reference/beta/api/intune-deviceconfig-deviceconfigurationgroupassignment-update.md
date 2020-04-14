@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceConfigurationGroupAssignment
 description: 更新 deviceConfigurationGroupAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f349047b9039ce6db1fed0af93af5e967aac132c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f47a6db185cee16b4d75741a4a5adcda6de7a2a2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753633"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433313"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>更新 deviceConfigurationGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -62,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
 
 
 
@@ -99,7 +101,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 androidWorkProfileGmailEasConfiguration
 description: 删除 androidWorkProfileGmailEasConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 170a5cd582a536624539638bc116382873a57f09
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 28df8cc67fd717ea435e4eb5dbffa545072792e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434986"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>删除 androidWorkProfileGmailEasConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

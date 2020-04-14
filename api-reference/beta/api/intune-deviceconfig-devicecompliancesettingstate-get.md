@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceComplianceSettingState
 description: 读取 deviceComplianceSettingState 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2561443bd12b6e76e95f215ad2f9aa4032bbd0f1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 637ab3eaa377d2e9ca7b522d6d6c654b4df5b537
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755110"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433814"
 ---
 # <a name="get-devicecompliancesettingstate"></a>获取 deviceComplianceSettingState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +89,6 @@ Content-Length: 645
   }
 }
 ```
-
 
 
 

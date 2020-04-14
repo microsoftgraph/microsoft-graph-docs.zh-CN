@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceComplianceActionItem
 description: 读取 deviceComplianceActionItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffdf69447ad635de3b8cd81313ae5d651b873f97
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4271364c4f890ad8c95f8efa5d4d6ea894ac375d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756496"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434250"
 ---
 # <a name="get-devicecomplianceactionitem"></a>获取 deviceComplianceActionItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +83,6 @@ Content-Length: 355
   }
 }
 ```
-
 
 
 

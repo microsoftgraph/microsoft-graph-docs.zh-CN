@@ -1,18 +1,20 @@
 ---
 title: 列出 appleVpnConfigurations
 description: 列出 appleVpnConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f6117d5a96ada36b715754311eb1f9b8163d939
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fc1b3a41e2241e1d1bbee176c585be39b234bb45
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757001"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434421"
 ---
 # <a name="list-applevpnconfigurations"></a>列出 appleVpnConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -162,7 +164,6 @@ Content-Length: 3191
   ]
 }
 ```
-
 
 
 

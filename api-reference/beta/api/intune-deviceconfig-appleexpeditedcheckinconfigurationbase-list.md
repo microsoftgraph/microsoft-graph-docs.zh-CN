@@ -1,18 +1,18 @@
 ---
-title: 列出 androidWorkProfileTrustedRootCertificates
-description: 列出 androidWorkProfileTrustedRootCertificate 对象的属性和关系。
+title: 列出 appleExpeditedCheckinConfigurationBases
+description: 列出 appleExpeditedCheckinConfigurationBase 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6486574e9fd48ce35bb04e408f00bd89c164ac21
+ms.openlocfilehash: ea6fdbcdeb164fc488ce962dce8ef9ed1153a2ed
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434668"
+ms.locfileid: "43434491"
 ---
-# <a name="list-androidworkprofiletrustedrootcertificates"></a>列出 androidWorkProfileTrustedRootCertificates
+# <a name="list-appleexpeditedcheckinconfigurationbases"></a>列出 appleExpeditedCheckinConfigurationBases
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43434668"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[androidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md)对象的属性和关系。
+列出[appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -66,13 +66,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1492
+Content-Length: 1413
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidWorkProfileTrustedRootCertificate",
-      "id": "37cc7454-7454-37cc-5474-cc375474cc37",
+      "@odata.type": "#microsoft.graph.appleExpeditedCheckinConfigurationBase",
+      "id": "5fdd79cd-79cd-5fdd-cd79-dd5fcd79dd5f",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -103,8 +103,7 @@ Content-Length: 1492
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
-      "certFileName": "Cert File Name value"
+      "enableExpeditedCheckin": true
     }
   ]
 }

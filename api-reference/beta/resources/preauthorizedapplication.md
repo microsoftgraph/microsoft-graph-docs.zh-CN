@@ -4,13 +4,13 @@ description: 列出预授权的客户端应用程序
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b84e9a49d293978754a06bdae229806f529690ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 195659151fd512152dca267233c50bf1870c49b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521577"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436861"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "42521577"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|permissionIds|String collection| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
+|permissionIds|String 集合| 应用程序所需的[oauth2PermissionScopes](permissionscope.md)的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

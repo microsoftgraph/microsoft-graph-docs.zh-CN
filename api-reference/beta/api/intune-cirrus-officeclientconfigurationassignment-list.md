@@ -2,17 +2,19 @@
 title: 列出 officeClientConfigurationAssignments
 description: 列出 officeClientConfigurationAssignment 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7995dcc882c486ce8cafff38a98966edac39f80f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b93e6d431a41b67fe2eb75233c4dfb0e7982ad38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760261"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436755"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>列出 officeClientConfigurationAssignments
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

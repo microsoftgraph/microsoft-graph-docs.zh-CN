@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceComplianceActionItems
 description: 列出 deviceComplianceActionItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d52443917e2c0223a92d57a0ff369c0a9508bec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ed667e7860753c11b2b2119fb9cfa9e56ca01aa5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756391"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434243"
 ---
 # <a name="list-devicecomplianceactionitems"></a>列出 deviceComplianceActionItems
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +82,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceConfigurationGroupAssignment
 description: 删除 deviceConfigurationGroupAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00a21a251c006bd78d799c7dc1acb43442168e4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 55675b337e30ebf980ff4922c8f830399bdb598d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753766"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433390"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>删除 deviceConfigurationGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -72,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

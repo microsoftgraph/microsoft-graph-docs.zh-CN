@@ -1,18 +1,20 @@
 ---
 title: 获取 androidDeviceOwnerImportedPFXCertificateProfile
 description: 读取 androidDeviceOwnerImportedPFXCertificateProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00dcfe9d2aed7d50852174305718e55f4dacad86
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e0a6214e3c7c4c6ce1c7b71a5fd0e3f5944981e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759771"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436193"
 ---
 # <a name="get-androiddeviceownerimportedpfxcertificateprofile"></a>获取 androidDeviceOwnerImportedPFXCertificateProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +122,6 @@ Content-Length: 1784
   }
 }
 ```
-
 
 
 

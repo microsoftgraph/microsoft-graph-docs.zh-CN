@@ -1,18 +1,20 @@
 ---
 title: 列出 androidWorkProfileEasEmailProfileBases
 description: 列出 androidWorkProfileEasEmailProfileBase 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d3dc44324e8140238744308f0bc4df6d19b8374
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ad3f9c820a90ac882077edb0c0507c0167bb9ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758528"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435142"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>列出 androidWorkProfileEasEmailProfileBases
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -111,7 +113,6 @@ Content-Length: 1623
   ]
 }
 ```
-
 
 
 

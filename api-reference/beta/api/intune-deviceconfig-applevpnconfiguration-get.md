@@ -1,18 +1,20 @@
 ---
 title: 获取 appleVpnConfiguration
 description: 读取 appleVpnConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b462cac308567be4af76d62d8316cee16797240f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d993cc29642d6762dbf028847292b45f57521c4e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757022"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434476"
 ---
 # <a name="get-applevpnconfiguration"></a>获取 appleVpnConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -164,7 +166,6 @@ Content-Length: 2999
   }
 }
 ```
-
 
 
 

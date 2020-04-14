@@ -1,18 +1,20 @@
 ---
 title: 删除 termsAndConditionsGroupAssignment
 description: 删除 termsAndConditionsGroupAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff75848526d52d0be0c2b65dc990dd240ce13e6c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c1690709103580899f8b4bf1c622ca19522646e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436388"
 ---
 # <a name="delete-termsandconditionsgroupassignment"></a>删除 termsAndConditionsGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

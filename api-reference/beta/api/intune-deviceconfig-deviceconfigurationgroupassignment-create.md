@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceConfigurationGroupAssignment
 description: 创建新的 deviceConfigurationGroupAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f12463fe5c69669133285e2e04cad0be502295fa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66f0f1a2180e72ae2caad005157e4f75f5e4f81f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753850"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433405"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -62,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
 
 
 
@@ -99,7 +101,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 
