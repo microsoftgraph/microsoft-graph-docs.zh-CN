@@ -1,18 +1,20 @@
 ---
 title: 创建 androidForWorkEnrollmentProfile
 description: 创建新的 androidForWorkEnrollmentProfile 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aafa6b7eaf3f3d3e5d54d5102e56d62b4e15846
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0356f5fb7fd7adb32d4a4bf696375813331636cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815731"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418281"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>创建 androidForWorkEnrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +56,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|字符串|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|说明|String|注册配置文件的说明。|
+|description|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
@@ -120,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

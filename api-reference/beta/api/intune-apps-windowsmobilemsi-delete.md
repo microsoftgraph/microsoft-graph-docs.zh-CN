@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsMobileMSI
 description: 删除 windowsMobileMSI。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee1c5e2353a83e7d327b3b12b1dd1072526ef6ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c0b3556bfd93e16626cf7e0a33b985364f35bd42
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760877"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403705"
 ---
 # <a name="delete-windowsmobilemsi"></a>删除 windowsMobileMSI
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

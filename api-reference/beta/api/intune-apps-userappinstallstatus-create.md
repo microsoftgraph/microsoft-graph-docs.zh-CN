@@ -1,18 +1,20 @@
 ---
 title: 创建 userAppInstallStatus
 description: 创建新的 userAppInstallStatus 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 835329c8a73d8974ea13ff31456303d6b4cdffd7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 672cf1f7acd6e93ac129ef405953ccdd2ce8c863
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761059"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403960"
 ---
 # <a name="create-userappinstallstatus"></a>创建 userAppInstallStatus
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 |:---|:---|:---|
 |id|String|实体的键。|
 |userName|String|用户名。|
-|userPrincipalName|String|用户主体名称。|
+|userPrincipalName|字符串|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|未安装设备的计数。|
@@ -99,7 +101,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

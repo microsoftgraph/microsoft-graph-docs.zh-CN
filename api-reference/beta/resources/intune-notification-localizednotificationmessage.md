@@ -1,18 +1,20 @@
 ---
 title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f3d2fa181e2d8a0962559cdac18950a6f1282d5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 91d737c999baf0f0268ba60ae1fa6c71c4539d22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780092"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419182"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: 更新 symantecCodeSigningCertificate
 description: 更新 symantecCodeSigningCertificate 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 729842d62c178f8c09453b455460e6a1be53959a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 25cf39ebe551beb66f54491fef857531aece1b81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761066"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403967"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,8 +59,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |密码|字符串|.Pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|String|证书的颁发者名称。|
-|常用|String|证书的 Issuer 值。|
+|issuerName|字符串|证书的颁发者名称。|
+|常用|字符串|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|作为 Symantec 证书的 CodeSigning 证书的类型。|
 
@@ -111,7 +113,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

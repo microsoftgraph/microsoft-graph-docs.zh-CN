@@ -1,18 +1,20 @@
 ---
 title: androidDeviceOwnerRequiredPasswordType 枚举类型
 description: Android 设备所有者策略需要密码类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6d783f8bdf5faeed2d3e10a9286a897c8d85783
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f37ddeb108db777b23f55abd67963688b9a3d3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796984"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402802"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

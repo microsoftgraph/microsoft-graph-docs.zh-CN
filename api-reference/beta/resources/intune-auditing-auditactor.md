@@ -1,18 +1,20 @@
 ---
 title: auditActor 资源类型
 description: 包含审核主角的属性的类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d54d34081c931df442afa6d6d0e569de75fb652
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 173afc06c20e01406172cf2bc6b8c785aac55aa9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403201"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,10 +27,10 @@ ms.locfileid: "42797435"
 |:---|:---|:---|
 |type|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
-|applicationId|String|AAD 应用程序 ID。|
-|applicationDisplayName|String|应用程序的名称。|
+|applicationId|字符串|AAD 应用程序 ID。|
+|applicationDisplayName|字符串|应用程序的名称。|
 |userPrincipalName|字符串|用户主体名称 (UPN)。|
-|servicePrincipalName|String|服务主体名称 (SPN)。|
+|servicePrincipalName|字符串|服务主体名称 (SPN)。|
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 |userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)集合|执行审核时的用户范围标记列表。|

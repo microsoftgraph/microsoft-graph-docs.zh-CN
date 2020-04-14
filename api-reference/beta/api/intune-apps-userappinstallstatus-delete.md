@@ -1,18 +1,20 @@
 ---
 title: 删除 userAppInstallStatus
 description: 删除 userAppInstallStatus。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7e931c11d69064089094d24aa6889104ed44b58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 064cfdecb96793a9f693c01249328aa60bf4dca1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403945"
 ---
 # <a name="delete-userappinstallstatus"></a>删除 userAppInstallStatus
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

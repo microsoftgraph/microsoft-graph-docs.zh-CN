@@ -1,18 +1,20 @@
 ---
 title: 列出 managedEBookCategories
 description: 列出 managedEBookCategory 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 218a5a87c3e2291c1bf28be81482fa162e192f4c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: be41882b438f2533bd7b97ce3ce65e75d61ad72a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414148"
 ---
 # <a name="list-managedebookcategories"></a>列出 managedEBookCategories
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 264
   ]
 }
 ```
-
 
 
 

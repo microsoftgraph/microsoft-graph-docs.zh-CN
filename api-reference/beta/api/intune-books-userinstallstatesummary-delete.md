@@ -1,18 +1,20 @@
 ---
 title: 删除 userInstallStateSummary
 description: 删除 userInstallStateSummary。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c98a49fbbcbadaa2fb89802d3673dc733e27698c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5df964ba9919519076effefb010706c9a8b3c2a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414039"
 ---
 # <a name="delete-userinstallstatesummary"></a>删除 userInstallStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

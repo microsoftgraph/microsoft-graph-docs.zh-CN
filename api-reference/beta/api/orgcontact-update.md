@@ -2,19 +2,19 @@
 title: 更新 orgcontact
 description: 更新 orgcontact 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c56ab5562e9b242819d7110914329996e64596a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa9704c44dc8dc7068bf387b97669e2c42aecdd2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456232"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403222"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,22 +43,22 @@ PATCH /contacts/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|String||
+|city|字符串||
 |country|字符串||
-|department|String||
-|onPremisesSyncEnabled|布尔||
-|displayName|String||
-|givenName|String||
-|jobTitle|String||
+|department|字符串||
+|onPremisesSyncEnabled|Boolean||
+|displayName|字符串||
+|givenName|字符串||
+|jobTitle|字符串||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |mail|String||
-|mailNickname|String||
-|mobilePhone|String||
-|officeLocation|String||
-|postalCode|String||
+|mailNickname|字符串||
+|mobilePhone|字符串||
+|officeLocation|字符串||
+|postalCode|字符串||
 |proxyAddresses|String||
 |state|字符串||
-|streetAddress|String||
+|streetAddress|字符串||
 |surname|String||
 |businessPhones|String collection||
 

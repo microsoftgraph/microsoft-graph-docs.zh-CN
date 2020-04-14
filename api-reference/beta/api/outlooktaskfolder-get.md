@@ -1,20 +1,20 @@
 ---
 title: 获取 outlookTaskFolder
 description: 获取指定的 Outlook 任务文件夹的属性和关系。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19ce6ee84c272da4e3e80d31b89b8ac593f19608
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b34ea469df9f545dfaeaac02cd3077d23e4252e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456157"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413529"
 ---
 # <a name="get-outlooktaskfolder"></a>获取 outlookTaskFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

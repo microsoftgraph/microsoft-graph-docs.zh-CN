@@ -2,15 +2,15 @@
 title: 获取 outlookTask
 description: 获取用户邮箱中的 Outlook 任务的属性和关系。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c355803ef243fb5a23d18ff8fecfd66260e7a9b2
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 89b790ee480fc6c92aff5652fc2c165d6eb828e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618927"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413773"
 ---
 # <a name="get-outlooktask"></a>获取 outlookTask
 
@@ -22,7 +22,7 @@ ms.locfileid: "42618927"
 
 默认情况下，此操作（以及发布、修补和[完成](../api/outlooktask-complete.md)任务操作）返回 UTC 格式的与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

@@ -1,18 +1,20 @@
 ---
 title: appleUserInitiatedEnrollmentType 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5558ff739e64d521fcec9851019e5abe5f742685
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99ede7197605ceaac8c8f3578d7ef1a121a8f711
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783562"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419455"
 ---
 # <a name="appleuserinitiatedenrollmenttype-enum-type"></a>appleUserInitiatedEnrollmentType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

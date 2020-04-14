@@ -1,18 +1,20 @@
 ---
 title: 删除 managedDeviceMobileAppConfigurationDeviceStatus
 description: 删除 managedDeviceMobileAppConfigurationDeviceStatus。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 851af6cc97a954d64e6c15b9a72502c6213daf37
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6787081412c5f489930a26c78e50bc4c1cdac0cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815514"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405892"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>删除 managedDeviceMobileAppConfigurationDeviceStatus
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

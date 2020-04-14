@@ -1,18 +1,20 @@
 ---
 title: 获取 microsoftStoreForBusinessApp
 description: 读取 microsoftStoreForBusinessApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8020907709053ebdbe537542391fd6f31588575
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 24d5b4fb4f54f44db92f8831b7e7bf69e3f79cc4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761480"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405134"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>获取 microsoftStoreForBusinessApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -112,7 +114,6 @@ Content-Length: 1397
   }
 }
 ```
-
 
 
 

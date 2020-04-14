@@ -1,18 +1,20 @@
 ---
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5a3894b183d8edae03091f65c535d504d9f9932
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c71bb454f93c5228e0c0a99a6b18a43b11a5e0ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761424"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404710"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,12 +53,12 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|资源类型，它是工作分配的源。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。|
+|sourceId|字符串|工作分配的源的标识符。|
 
 
 
@@ -107,7 +109,6 @@ Content-Length: 383
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

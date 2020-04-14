@@ -2,19 +2,19 @@
 title: conditionalAccessGrantControls 资源类型
 description: 表示授予通过策略所需满足的控件。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b91afb44cc43c3c6ac4970afc36914abcb08c4c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9746bfb37dd3887def0f070256d90e46efecbdb6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507546"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413429"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>conditionalAccessGrantControls 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

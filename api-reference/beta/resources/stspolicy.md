@@ -2,19 +2,19 @@
 title: stsPolicy 资源类型
 description: 表示用于控制 Microsoft identity platform 行为的策略类型的抽象基类型。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b3206908e75e9d36638bc59ee2fdcba7006534ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7233c4f147b31a42102dd9c5dbf241d9899356a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411833"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,10 +31,10 @@ ms.locfileid: "42520301"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。 继承自[policyBase](policyBase.md)。|
-|说明|String| 此策略的说明。 继承自[policyBase](policyBase.md)。|
+|description|String| 此策略的说明。 继承自[policyBase](policyBase.md)。|
 |displayName|String| 此策略的显示名称。 继承自[policyBase](policyBase.md)。|
-|定义|String 集合| 一个字符串集合，其中包含定义策略的规则和设置的 JSON 字符串。 定义的语法因每个派生策略类型而异。 必填。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|定义|String 集合| 一个字符串集合，其中包含定义策略的规则和设置的 JSON 字符串。 定义的语法因每个派生策略类型而异。 必需。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 ## <a name="relationships"></a>关系
 

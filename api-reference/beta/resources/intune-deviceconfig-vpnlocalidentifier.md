@@ -1,18 +1,20 @@
 ---
 title: vpnLocalIdentifier 枚举类型
 description: VPN 本地标识符的类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f6854b2cfaf2e501ca5c19b32d0bff0dd7d82cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c2dac49087edb0d21e640896fab5d012f6ef86b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787367"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412152"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>vpnLocalIdentifier 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -2,19 +2,19 @@
 title: unifiedRolePermission 资源类型
 description: 目录角色权限是允许的资源操作和条件的集合。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d496273d844f1754e45b156422aad3e0927e0656
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f456927289a285a81eb088dd622b79f120df188f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519601"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401663"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>unifiedRolePermission 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42519601"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |allowedResourceActions|字符串集合| 可在资源上 perfomed 的一组任务。 |
-|表达式|String| 要使权限生效必须满足的可选约束。 |
+|表达式|字符串| 要使权限生效必须满足的可选约束。 |
 
 ### <a name="allowedresourceactions-property"></a>allowedResourceActions 属性
 

@@ -1,18 +1,20 @@
 ---
 title: vpnEncryptionAlgorithmType 枚举类型
 description: VPN 安全关联加密算法的类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 52897a810eaaec1f7860e89d84a717faf203fe26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: df8b0d5baaf0dd947af97a87e370aa76814d6fef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787381"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412206"
 ---
 # <a name="vpnencryptionalgorithmtype-enum-type"></a>vpnEncryptionAlgorithmType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

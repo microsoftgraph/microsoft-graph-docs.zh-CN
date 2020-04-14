@@ -1,18 +1,20 @@
 ---
 title: 列出 macOSOfficeSuiteApps
 description: 列出 macOSOfficeSuiteApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f899a6b1935a743b1a2a23c492f459e1516dd6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5cccedf381d2ce9e7512d13f120369a0f845f080
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761683"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406576"
 ---
 # <a name="list-macosofficesuiteapps"></a>列出 macOSOfficeSuiteApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -97,7 +99,6 @@ Content-Length: 1023
   ]
 }
 ```
-
 
 
 

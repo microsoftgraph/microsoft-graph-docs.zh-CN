@@ -1,18 +1,20 @@
 ---
 title: 列出 mobileAppAssignments
 description: 列出 mobileAppAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8631945b12b20a5600a5d54f13f6f780c865976a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1c8b9532aa4d950149b155cefd5e35da7ddf720a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761403"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404617"
 ---
 # <a name="list-mobileappassignments"></a>列出 mobileAppAssignments
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +85,6 @@ Content-Length: 460
   ]
 }
 ```
-
 
 
 

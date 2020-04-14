@@ -1,18 +1,20 @@
 ---
 title: 列出 windowsUniversalAppXContainedApps
 description: 列出 windowsUniversalAppXContainedApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f428ff1d57c82147d3b80af682576a99fd40947f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21aa69095185dd32e5da4920740639c13047349b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760625"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408834"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>列出 windowsUniversalAppXContainedApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 216
   ]
 }
 ```
-
 
 
 

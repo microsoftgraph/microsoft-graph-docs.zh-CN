@@ -1,18 +1,20 @@
 ---
 title: 获取 macOsVppAppAssignedLicense
 description: 读取 macOsVppAppAssignedLicense 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aaeda224f3d5fd1c027ec9a82910856828a4ec9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0a30a3a4305c9c7aba8797c92994fb6ec08aabde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406506"
 ---
 # <a name="get-macosvppappassignedlicense"></a>获取 macOsVppAppAssignedLicense
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 316
   }
 }
 ```
-
 
 
 

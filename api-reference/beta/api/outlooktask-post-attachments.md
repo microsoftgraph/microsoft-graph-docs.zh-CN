@@ -1,20 +1,20 @@
 ---
 title: 创建附件
 description: 使用此 API 可将附件添加到 outlookTask。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d81c0c9b3c59e41c1df42f2af446a61d7bb1a34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc6bf02fceef6467f7d32232c873517c797bd3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456178"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413615"
 ---
 # <a name="create-attachment"></a>创建附件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Content-Type | 一个字符串，表示实体的正文中的数据类型。 必填。 |
+| Content-Type | 一个字符串，表示实体的正文中的数据类型。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

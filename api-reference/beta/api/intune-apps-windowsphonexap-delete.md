@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsPhoneXAP
 description: 删除 windowsPhoneXAP。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba83046cd126925a3b0611588cbec81fcc17a336
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1af483fe89ccc36f118e98e8546e3da8ef0afdd4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760737"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409218"
 ---
 # <a name="delete-windowsphonexap"></a>删除 windowsPhoneXAP
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

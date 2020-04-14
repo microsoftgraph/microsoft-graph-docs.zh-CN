@@ -1,18 +1,20 @@
 ---
 title: appleOwnerTypeEnrollmentType 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb4cb2787389e632fef73132f701010d0353aa0c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b48d6cf07131b02193180bafafdca59529fd6c4b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783576"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419509"
 ---
 # <a name="appleownertypeenrollmenttype-resource-type"></a>appleOwnerTypeEnrollmentType 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

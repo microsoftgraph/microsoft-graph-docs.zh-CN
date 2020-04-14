@@ -1,18 +1,20 @@
 ---
 title: specifiedCaptiveNetworkPlugins 资源类型
 description: 指定在 IKEv2 AlwaysOn VPN 连接过程中允许的所有固定网络插件
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30acdd502e13d2cf4ad1e5167978d1e675e2664a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6752e045817e9a03eefae178d7df15d152f0ea58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787486"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412767"
 ---
 # <a name="specifiedcaptivenetworkplugins-resource-type"></a>specifiedCaptiveNetworkPlugins 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -23,7 +25,7 @@ ms.locfileid: "42787486"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedBundleIdentifiers|String collection|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
+|allowedBundleIdentifiers|String 集合|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
 
 ## <a name="relationships"></a>关系
 无

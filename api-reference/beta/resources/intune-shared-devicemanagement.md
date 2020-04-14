@@ -1,18 +1,20 @@
 ---
 title: deviceManagement 资源类型
-description: 'DeviceManagement 资源代表其内容因工作流而异的容器，包括：  '
+description: DeviceManagement 资源表示一个容器，其内容根据工作流而异。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a0ff2de2f35df0c49dbfc9b847034c75c2f49c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af184fd7716208ecd7c0ef1673fe6761c65f1977
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771101"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408008"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -76,6 +78,8 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值为：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
 |订阅|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|租户的订阅。 可取值为：`none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows 设备的恶意软件概述。|
+|**组策略分析**|
+|groupPolicyObjectFiles|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)集合|已上载的组策略对象文件的列表。|
 |**载入**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 |**Odj**|
@@ -130,15 +134,14 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)集合|租户中受影响的恶意软件的列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)集合|MobileAppTroubleshootingEvent 的集合属性。|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|用户体验分析概述|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)集合|用户体验分析基线|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)集合|用户体验分析类别|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)集合|User experience analytics 设备性能|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|用户体验分析回归概况摘要|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)集合|User experience analytics 设备启动历史记录|
-|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)集合|用户体验分析设备启动过程|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)集合|User experience analytics 设备启动过程性能|
-|userExperienceAnalyticsStartupScoreHistory|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)集合|用户体验分析设备启动分数历史记录|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|用户体验分析概述|
+|userExperienceAnalyticsBaselines|userExperienceAnalyticsBaseline 集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|userExperienceAnalyticsCategory 集合|用户体验分析类别|
+|userExperienceAnalyticsDevicePerformance|userExperienceAnalyticsDevicePerformance 集合|User experience analytics 设备性能|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|用户体验分析回归概况摘要|
+|userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory 集合|User experience analytics 设备启动历史记录|
+|userExperienceAnalyticsDeviceStartupProcesses|userExperienceAnalyticsDeviceStartupProcess 集合|用户体验分析设备启动过程|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|userExperienceAnalyticsDeviceStartupProcessPerformance 集合|User experience analytics 设备启动过程性能|
 |**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|导入的设备标识。|
@@ -174,8 +177,6 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)集合|与帐户关联的派生凭据设置的集合。|
 |**远程访问**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)集合|与用户关联的 PFX 证书的集合。|
-|**远程协助**|
-|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|远程帮助合作伙伴。|
 |**基于角色的访问控制（RBAC）**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|资源操作。|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 集合|角色分配。|

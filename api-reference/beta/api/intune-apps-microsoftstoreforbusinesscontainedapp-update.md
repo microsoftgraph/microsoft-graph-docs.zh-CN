@@ -1,18 +1,20 @@
 ---
 title: 更新 microsoftStoreForBusinessContainedApp
 description: 更新 microsoftStoreForBusinessContainedApp 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bedbf5f2de1930f5f5900b4822452bffd3a995ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ff8287c5ba4a7d743e21cdac07313bb5d85405b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404789"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>更新 microsoftStoreForBusinessContainedApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,8 +55,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
+|id|字符串|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|字符串|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
 
 
 
@@ -89,7 +91,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

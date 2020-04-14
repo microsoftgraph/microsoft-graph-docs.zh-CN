@@ -4,17 +4,17 @@ description: 指定 Web API 应用程序的设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: c93bf605754aa7a434db078a6e2925f303fc5529
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: bad5b54e85a97c209b2b6e65c5555b4c97fe6de8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508315"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408237"
 ---
 # <a name="apiapplication-resource-type"></a>apiApplication 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

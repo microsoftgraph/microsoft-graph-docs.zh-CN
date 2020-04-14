@@ -1,18 +1,20 @@
 ---
 title: 列出 windowsPhone81AppXs
 description: 列出了 windowsphone81appx 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f7ab84798a401d1df2855e30124ef43039d1ee6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 39ddc2b0ed573032b7fbfe4d91a938722ea30202
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409293"
 ---
 # <a name="list-windowsphone81appxs"></a>列出 windowsPhone81AppXs
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -119,7 +121,6 @@ Content-Length: 1906
   ]
 }
 ```
-
 
 
 

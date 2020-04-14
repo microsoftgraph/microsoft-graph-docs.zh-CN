@@ -1,18 +1,20 @@
 ---
 title: 获取 managedEBookCategory
 description: 读取 managedEBookCategory 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63465c55eaee970bc9085cded0b62284659286c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5e42cedacd15ed93ee0cecd05ec9b39a142945dc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760366"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414179"
 ---
 # <a name="get-managedebookcategory"></a>获取 managedEBookCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +80,6 @@ Content-Length: 242
   }
 }
 ```
-
 
 
 

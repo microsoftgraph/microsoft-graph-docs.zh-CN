@@ -1,18 +1,20 @@
 ---
 title: 删除 iosVppAppAssignedLicense
 description: 删除 iosVppAppAssignedLicense。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4aa816687856bc5712731f7d9dbd57de05cf7d4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fc7c4227ef7f51af60b6ae54432ae59914038e38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761862"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416668"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>删除 iosVppAppAssignedLicense
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

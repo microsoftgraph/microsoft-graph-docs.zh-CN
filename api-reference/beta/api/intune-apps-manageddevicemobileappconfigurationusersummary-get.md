@@ -1,18 +1,20 @@
 ---
 title: 获取 managedDeviceMobileAppConfigurationUserSummary
 description: 读取 managedDeviceMobileAppConfigurationUserSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0bb5f1b60d2525f61034b44228ad13831828508
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c0c7330985292278fe44988e8619169d7c5c5107
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415906"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>获取 managedDeviceMobileAppConfigurationUserSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -83,7 +85,6 @@ Content-Length: 409
   }
 }
 ```
-
 
 
 

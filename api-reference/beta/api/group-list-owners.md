@@ -1,20 +1,20 @@
 ---
 title: 列出所有者
-description: 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。
+description: 检索组的所有者列表。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98ab9bee1740d623dc962f7e0bf8df921e3ef407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7bb54eadf4ded1f7b775f3a80a49e6bdcb66e919
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419420"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396918"
 ---
 # <a name="list-owners"></a>列出所有者
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

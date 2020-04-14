@@ -3,18 +3,18 @@ title: 创建策略
 description: 通过指定显示名称、策略类型和策略说明来创建新的 policy 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 2e13ef2bdcf424d68d94d97412487708022386cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: dkershaw10
+ms.openlocfilehash: 04bc6134529b4d7192ed50a849fc487970f6b812
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408307"
 ---
 # <a name="create-policy"></a>创建策略
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

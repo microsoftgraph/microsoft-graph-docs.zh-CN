@@ -1,18 +1,20 @@
 ---
 title: 获取 mobileAppContentFile
 description: 读取 mobileAppContentFile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ddb335a035f11e0e6f8ce181babc7249a8d71d13
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 34fa7ffaa68ed394f380fb14fc9a34a1fdec8c26
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415572"
 ---
 # <a name="get-mobileappcontentfile"></a>获取 mobileAppContentFile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 548
   }
 }
 ```
-
 
 
 

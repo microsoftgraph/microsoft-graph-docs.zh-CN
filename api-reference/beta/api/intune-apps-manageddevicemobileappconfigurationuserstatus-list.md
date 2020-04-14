@@ -1,18 +1,20 @@
 ---
 title: 列出 managedDeviceMobileAppConfigurationUserStatuses
 description: 列出 managedDeviceMobileAppConfigurationUserStatus 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98f3769561f8b568c5c40bf78de6cd690ebdda82
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 89b41b898a96cf85dc323ae317d702640a6aa956
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815449"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415952"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>列出 managedDeviceMobileAppConfigurationUserStatuses
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +82,6 @@ Content-Length: 416
   ]
 }
 ```
-
 
 
 

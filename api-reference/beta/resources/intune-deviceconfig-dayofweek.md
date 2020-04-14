@@ -1,18 +1,20 @@
 ---
 title: dayOfWeek 枚举类型
 description: 工作日的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aceb2474f39c76c07166698dcfa4d4b29f8b97e7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a0ff084b9c5ec750f2abe071f08406f8739d5b76
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795636"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402143"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

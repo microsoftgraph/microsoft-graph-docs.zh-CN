@@ -1,20 +1,20 @@
 ---
 title: 列出 groupLifecyclePolicy
 description: 检索组所属的 groupLifecyclePolicy 对象的列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c4c63497b82c23bbefb2eee6bae5fc0ec30c4849
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb60f191fc00e7ffa699083605accdbceb26f606
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419462"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396961"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

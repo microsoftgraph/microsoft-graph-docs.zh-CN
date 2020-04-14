@@ -1,18 +1,20 @@
 ---
 title: 列出 mobileAppCategories
 description: 列出 mobileAppCategory 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65588e2bfc53fc3395bc08f293ed8d83082dabb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b9727fbcb4e9b4464f360753f1bd84fd4ebf8f19
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761368"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404446"
 ---
 # <a name="list-mobileappcategories"></a>列出 mobileAppCategories
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 261
   ]
 }
 ```
-
 
 
 

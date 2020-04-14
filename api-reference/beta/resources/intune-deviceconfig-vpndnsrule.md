@@ -1,18 +1,20 @@
 ---
 title: vpnDnsRule 资源类型
 description: VPN DNS 规则定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ffc8c01aadfe77bd3d92d9f7618a5846cf7c855
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac7b87442dc2fda2df5e342981def579457bae3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787388"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412229"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,10 +26,10 @@ VPN DNS 规则定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|别名.|
-|台|String collection|台.|
+|台|String 集合|台.|
 |proxyServerUri|String|代理服务器 Uri。|
-|autoTrigger|布尔值|当设备连接到此域时自动连接到 VPN：默认值为 False。|
-|保持|布尔值|将此规则保持为活动状态，即使未连接 VPN 也是如此：默认值为 False|
+|autoTrigger|Boolean|当设备连接到此域时自动连接到 VPN：默认值为 False。|
+|保持|Boolean|将此规则保持为活动状态，即使未连接 VPN 也是如此：默认值为 False|
 
 ## <a name="relationships"></a>关系
 无

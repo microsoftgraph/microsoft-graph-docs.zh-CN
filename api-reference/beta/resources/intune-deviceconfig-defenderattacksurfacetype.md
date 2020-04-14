@@ -1,18 +1,20 @@
 ---
 title: defenderAttackSurfaceType 枚举类型
 description: Defender 攻击面减少规则的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f160cdd8cbaa5abf7adf8180d8077d99e4a07d3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b410cfd7d51c072f2145c014aabc02380eb4ed1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413328"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

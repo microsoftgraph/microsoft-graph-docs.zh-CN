@@ -1,18 +1,20 @@
 ---
 title: iosLobAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS LOB 移动应用的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71dc0ff85b5b6c978a03099e863962321372f420
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fe57b72e2e656d3653cfb2c2d7b2f62361c29b5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407590"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +30,7 @@ ms.locfileid: "42770002"
 |:---|:---|:---|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
 |**应用**|
-|uninstallOnDeviceRemoval|布尔值|从 Intune 中删除设备时是否卸载应用程序。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无

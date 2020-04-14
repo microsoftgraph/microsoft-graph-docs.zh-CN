@@ -1,18 +1,20 @@
 ---
 title: defenderScanType 枚举类型
 description: 系统扫描类型的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a25d1397a10f4d599fa34b2b14ec5168384a3be
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b833840281653b5ff083eb97dae5313406dc1a8f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413064"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

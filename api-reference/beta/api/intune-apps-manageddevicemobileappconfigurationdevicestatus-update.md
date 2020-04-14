@@ -1,18 +1,20 @@
 ---
 title: 更新 managedDeviceMobileAppConfigurationDeviceStatus
 description: 更新 managedDeviceMobileAppConfigurationDeviceStatus 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45d978ef9fb1fd9ae1ef011acfbfebba44804f10
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8cd4174557e9eab934ba6e321c3d68a8b83b29c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815493"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405807"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>更新 managedDeviceMobileAppConfigurationDeviceStatus
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -109,7 +111,6 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -4,17 +4,17 @@ description: 包含与应用程序或服务主体相关联的密钥凭据。 App
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 507ea4283ae34e0148d84cd8f76036880a255e98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401710"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +28,8 @@ ms.locfileid: "42523028"
 |endDateTime|DateTimeOffset|凭据到期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |keyId|Guid|键的唯一标识符（GUID）。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|type|String|密钥凭据的类型;例如，"对称"。|
-|使用率|String|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
+|type|字符串|密钥凭据的类型;例如，"对称"。|
+|使用率|字符串|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
 |key|二进制| 密钥凭据的值。 应为 base 64 编码值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

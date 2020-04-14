@@ -1,18 +1,20 @@
 ---
 title: 获取 iosStoreApp
 description: 读取 iosStoreApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 411a8a12c8f012383653b47478c4a223646c9469
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83e18e01503cb08fe99bec81b03c5692cbc8e195
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761998"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416931"
 ---
 # <a name="get-iosstoreapp"></a>获取 iosStoreApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -116,7 +118,6 @@ Content-Length: 1433
   }
 }
 ```
-
 
 
 

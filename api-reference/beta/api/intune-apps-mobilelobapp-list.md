@@ -1,18 +1,20 @@
 ---
 title: 列出 mobileLobApps
 description: 列出 mobileLobApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08be22a0fb380890e6bcea038ebf20a561a3d9cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 922bbfa25539167d04c40df1014d13725b106951
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414430"
 ---
 # <a name="list-mobilelobapps"></a>列出 mobileLobApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -100,7 +102,6 @@ Content-Length: 1141
   ]
 }
 ```
-
 
 
 

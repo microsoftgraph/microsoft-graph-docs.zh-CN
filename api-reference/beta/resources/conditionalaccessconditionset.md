@@ -2,19 +2,19 @@
 title: conditionalAccessConditionSet 资源类型
 description: 表示在应用策略时控制的条件的类型。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dee80ebdacfda6c0b633f1aec1dd085d80eb22e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaec4b4cfcca6cc42ef7f4376982ef207ab1c767
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507560"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413507"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +24,11 @@ ms.locfileid: "42507560"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必填。 |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必填。 |
+|来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
 |clientAppTypes|String 集合| 策略中包含的客户端应用程序类型。 可取值为：`browser`、`modern`、`easSupported`、`easUnsupported`、`other`。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
-|位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
 |signInRiskLevels|String 集合| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
 

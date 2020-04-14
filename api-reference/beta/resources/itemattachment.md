@@ -4,13 +4,13 @@ description: 附加到另一个事件的联系人、事件或邮件，
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: 82f0e9fa1ab499d7adc305cd74fcf7cdf09fd796
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: cf8f539411f0825b372da803d07cc341e9babef2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523091"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401733"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 

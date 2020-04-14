@@ -1,18 +1,20 @@
 ---
 title: omaSettingBase64 资源类型
 description: OMA 设置 Base64 定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e95f17d0b9e4a8347c71042244100c96590a527
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1f5089c40e2c79d0a3a2e9a920de10d8e5eb4bc1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788476"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402003"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,9 +29,9 @@ OMA 设置 Base64 定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|字符串|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|与 Value 属性 (*.cer | * .crt | *. p7b | * bin）。|
+|fileName|字符串|与 Value 属性 (*.cer | * .crt | *. p7b | * bin）。|
 |value|String|值。 （Base64 编码字符串）|
 
 ## <a name="relationships"></a>关系

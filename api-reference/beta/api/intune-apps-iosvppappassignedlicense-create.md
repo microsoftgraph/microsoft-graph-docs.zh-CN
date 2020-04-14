@@ -1,18 +1,20 @@
 ---
 title: 创建 iosVppAppAssignedLicense
 description: 创建新的 iosVppAppAssignedLicense 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35aba9ad216f5f8e70352578daba8ccfbec5e65b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00df430528128938c0ff9c5838d903d975dab961
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761886"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416675"
 ---
 # <a name="create-iosvppappassignedlicense"></a>创建 iosVppAppAssignedLicense
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -96,7 +98,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

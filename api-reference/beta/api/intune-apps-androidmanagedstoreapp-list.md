@@ -1,18 +1,20 @@
 ---
 title: 列出 androidManagedStoreApps
 description: 列出 androidManagedStoreApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 609f4c98e2acd39f04d89f9a1e5a19ad99014f1e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f748d3318303911611a83f15ca292863d45ef116
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417654"
 ---
 # <a name="list-androidmanagedstoreapps"></a>列出 androidManagedStoreApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1321
+Content-Length: 1533
 
 {
   "value": [
@@ -100,12 +102,18 @@ Content-Length: 1321
       "appStoreUrl": "https://example.com/appStoreUrl/",
       "isPrivate": true,
       "isSystemApp": true,
+      "appTracks": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+          "trackId": "Track Id value",
+          "trackAlias": "Track Alias value"
+        }
+      ],
       "supportsOemConfig": true
     }
   ]
 }
 ```
-
 
 
 

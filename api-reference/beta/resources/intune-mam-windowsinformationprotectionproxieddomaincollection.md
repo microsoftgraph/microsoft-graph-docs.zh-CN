@@ -1,18 +1,20 @@
 ---
 title: windowsInformationProtectionProxiedDomainCollection 资源类型
 description: Windows 信息保护代理域集合
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35c4f00965aa6878368e922a0c193484c90c6aed
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a00cfc03ff6b98bb32b7c8fe7e9d747f15040d68
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780358"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419290"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

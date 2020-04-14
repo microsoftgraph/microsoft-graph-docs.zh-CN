@@ -1,20 +1,20 @@
 ---
 title: 列出对话
 description: 检索此组中的会话列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2c232393b6842819a11f6ce1643e9939fd9d6de5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71a3d67c938d57f093d22bec359e180c812b0eca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419826"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397062"
 ---
 # <a name="list-conversations"></a>列出对话
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

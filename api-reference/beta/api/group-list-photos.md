@@ -1,20 +1,20 @@
 ---
 title: List photos
 description: 检索 profilePhoto 对象列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dacef0feb1e97ad52502b0ad456bbf7cd2c92209
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c0bd09498d679cf1b2f042f7af6e3385cdd2cc6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419364"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410026"
 ---
 # <a name="list-photos"></a>List photos
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

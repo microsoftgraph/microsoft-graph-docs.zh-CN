@@ -1,18 +1,20 @@
 ---
 title: 获取 iosVppAppAssignedUserLicense
 description: 读取 iosVppAppAssignedUserLicense 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1235dbb30186ba741506d70dc48cebf83e0b96d3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1643e80de8bf570870045627cf4ae55ccec6df44
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761816"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416474"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>获取 iosVppAppAssignedUserLicense
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 318
   }
 }
 ```
-
 
 
 

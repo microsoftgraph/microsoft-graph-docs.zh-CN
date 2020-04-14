@@ -1,18 +1,20 @@
 ---
 title: 创建 mobileAppCategory
 description: 创建新的 mobileAppCategory 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dfb21e5f3f7fd1b0ce294bf9b92f40c8cbd666a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ed43265f316e7ec1ef804ba7a121067debf04572
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761389"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404579"
 ---
 # <a name="create-mobileappcategory"></a>创建 mobileAppCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,7 +54,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 
@@ -90,7 +92,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

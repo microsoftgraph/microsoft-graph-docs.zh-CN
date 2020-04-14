@@ -1,18 +1,20 @@
 ---
 title: 删除 mobileAppCategory
 description: 删除 mobileAppCategory。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6818c00c75ea70c1f66476ad7bbec83bad60aff4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6c73ad3af1068dfc3bc5c2323f188afd52fb569e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761382"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404572"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 删除 Outlook 类别
 description: 删除指定的 outlookCategory 对象。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 394d81154a5fde4ef2bb3e271772892ae0a8d90f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14338d1e1c467285e46d3577d8309d87316df9e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456248"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403215"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

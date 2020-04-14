@@ -1,18 +1,20 @@
 ---
 title: 创建 mobileAppProvisioningConfigGroupAssignment
 description: 创建新的 mobileAppProvisioningConfigGroupAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e70173ecc1e640c501e3715d738855b96c2b8c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af639bbaa5e07fc5b49f45b9829593cf855ab21a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761186"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414740"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>创建 mobileAppProvisioningConfigGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +89,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 

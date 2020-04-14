@@ -1,20 +1,20 @@
 ---
 title: 更新 outlooktask
 description: 更改 Outlook 任务的可写属性。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e11cbafef89333c48491f1e0143b6d8fb19393d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456171"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413592"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: statusDetails 资源类型
 description: 描述设置事件的状态和关联的错误。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f931d14a026a6809e70b4cc83e5b8e55e72e63a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520315"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411856"
 ---
 # <a name="statusdetails-resource-type"></a>statusDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42520315"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|status|String|可能的值是：`success`、`failure`、`skipped`、`unknownFutureValue`。 继承自 statusBase。|
+|状态|String|可能的值是：`success`、`failure`、`skipped`、`unknownFutureValue`。 继承自 statusBase。|
 |additionalDetails|String|发生错误时的其他详细信息。|
 |errorCategory|String|对错误代码进行分类。|
 |errorCode|String|出现的唯一错误代码。|

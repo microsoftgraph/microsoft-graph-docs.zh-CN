@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsMicrosoftEdgeApp
 description: 读取 windowsMicrosoftEdgeApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39e08c3fc54e8a33c405f8c7b3eb13d9fbea44b1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99c60d30f7f16af1701c98ce4d85264d916254cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760905"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403749"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>获取 windowsMicrosoftEdgeApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +104,6 @@ Content-Length: 1050
   }
 }
 ```
-
 
 
 

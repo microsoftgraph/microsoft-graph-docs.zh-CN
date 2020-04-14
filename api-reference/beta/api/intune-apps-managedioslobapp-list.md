@@ -1,18 +1,20 @@
 ---
 title: 列出 managedIOSLobApps
 description: 列出 managedIOSLobApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fe70b6c33a26f681f2910fde49b51e38ecc7fac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 93c3041829b81503f11b0c6259a1e6521eb6e0a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815399"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415639"
 ---
 # <a name="list-managedioslobapps"></a>列出 managedIOSLobApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -121,7 +123,6 @@ Content-Length: 1890
   ]
 }
 ```
-
 
 
 

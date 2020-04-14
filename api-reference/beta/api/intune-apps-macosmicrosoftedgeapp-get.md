@@ -1,18 +1,20 @@
 ---
 title: 获取 macOSMicrosoftEdgeApp
 description: 读取 macOSMicrosoftEdgeApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db88cec546b686871702420706cb0af8c2fd5bd2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a222dcd2e29c7c5d6db823bfbed24a5f7b2c879b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761726"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416310"
 ---
 # <a name="get-macosmicrosoftedgeapp"></a>获取 macOSMicrosoftEdgeApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +103,6 @@ Content-Length: 985
   }
 }
 ```
-
 
 
 

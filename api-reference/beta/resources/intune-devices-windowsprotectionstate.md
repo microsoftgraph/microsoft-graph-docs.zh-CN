@@ -1,18 +1,20 @@
 ---
 title: windowsProtectionState 资源类型
 description: 设备保护状态实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d42efcc04a060d9585c8d02d17d72449ae0a9c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f34c6b1a18d5de654409cedbb384f0390933ba9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783597"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419618"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -30,15 +32,15 @@ ms.locfileid: "42783597"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔值|已启用反恶意软件|
+|malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态（如清理或挂起完全扫描或等待重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔值|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
-|quickScanOverdue|布尔值|快速扫描是否过期？|
-|fullScanOverdue|布尔值|完全扫描逾期？|
-|signatureUpdateOverdue|布尔值|签名是否已过期？|
-|rebootRequired|布尔值|是否需要重新启动？|
-|fullScanRequired|布尔值|需要完全扫描吗？|
+|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描逾期？|
+|signatureUpdateOverdue|Boolean|签名是否已过期？|
+|rebootRequired|Boolean|是否需要重新启动？|
+|fullScanRequired|Boolean|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|

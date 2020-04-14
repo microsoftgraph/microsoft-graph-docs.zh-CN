@@ -1,18 +1,20 @@
 ---
 title: 获取 androidManagedStoreAccountEnterpriseSettings
 description: 读取 androidManagedStoreAccountEnterpriseSettings 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 173fdb387d1dfe99dae8eaf7e464511dca1e0bda
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99b49192b72bb13db93f8713f8009b4ffde67e3f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418008"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>获取 androidManagedStoreAccountEnterpriseSettings
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +101,6 @@ Content-Length: 1081
   }
 }
 ```
-
 
 
 

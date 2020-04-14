@@ -2,19 +2,19 @@
 title: 删除 outlookTask
 description: 删除用户邮箱中的指定 Outlook 任务。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 23893cdf745ad20ede30298f9febd06e2b23a886
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62eb192165968e2f5abc7d0589fb872f9dd911f6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456213"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413828"
 ---
 # <a name="delete-outlooktask"></a>删除 outlookTask
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

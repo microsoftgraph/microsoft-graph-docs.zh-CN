@@ -1,20 +1,20 @@
 ---
 title: 列出组成员
-description: 获取组的直接成员列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作不可传递。
+description: 获取组的直接成员列表。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25f2585647e81afdf4abb9a2257b9548f1847c37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: feae4be3a16254e15548f53bb19d55d186fa1ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419424"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396946"
 ---
 # <a name="list-group-members"></a>列出组成员
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

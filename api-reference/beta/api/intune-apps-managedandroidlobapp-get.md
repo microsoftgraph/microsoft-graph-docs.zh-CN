@@ -1,18 +1,20 @@
 ---
 title: 获取 managedAndroidLobApp
 description: 读取 managedAndroidLobApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b89d7e3aa738bfda27d62b6d87cbbc3a473c7095
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6484749f12c6f4224b6cd70dae196db07affffe2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761627"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409765"
 ---
 # <a name="get-managedandroidlobapp"></a>获取 managedAndroidLobApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -127,7 +129,6 @@ Content-Length: 1786
   }
 }
 ```
-
 
 
 

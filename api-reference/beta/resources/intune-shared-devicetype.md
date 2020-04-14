@@ -1,18 +1,20 @@
 ---
 title: deviceType 枚举类型
 description: 设备类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f06aef9e1e3efe2dc9ec528c52a2442c54dc183e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4690c0c67da9a78bcc9d111cc64712510179f789
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770583"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407863"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -36,7 +38,7 @@ ms.locfileid: "42770583"
 |iPod|10 |iPodTouch.|
 |android|11x17|Android.|
 |iSocConsumer|12 |iSocConsumer.|
-|unix|13 |Unix.|
+|unix|13|Unix.|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
 |holoLens|15 |表示别致的 Windows 10 goggles。|
 |surfaceHub|16 |Surface HUB 设备。|

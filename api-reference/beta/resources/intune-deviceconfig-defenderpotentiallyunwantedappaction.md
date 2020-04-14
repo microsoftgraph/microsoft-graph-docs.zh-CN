@@ -1,18 +1,20 @@
 ---
 title: defenderPotentiallyUnwantedAppAction 枚举类型
 description: 要对检测到的可能有害的应用程序（PUA）执行的 Defender 操作。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c99cf04b217239fb1a06b2a6c26dcacc6c61cf7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 11517fc4089913541fd40d48be188c81fb57bf4f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794464"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413124"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
