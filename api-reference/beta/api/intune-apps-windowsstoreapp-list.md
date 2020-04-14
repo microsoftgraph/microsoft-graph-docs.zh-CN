@@ -1,18 +1,20 @@
 ---
 title: 列出 windowsStoreApps
 description: 列出 windowsStoreApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ffa71894728749cd83cc0bb57cedd1fdccfef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 334e4a046db6b7332a496ce218ddfafa43070c52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760688"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393397"
 ---
 # <a name="list-windowsstoreapps"></a>列出 windowsStoreApps
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +100,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

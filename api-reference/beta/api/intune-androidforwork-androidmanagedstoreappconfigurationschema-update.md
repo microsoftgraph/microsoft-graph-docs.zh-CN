@@ -1,18 +1,20 @@
 ---
 title: 更新 androidManagedStoreAppConfigurationSchema
 description: 更新 androidManagedStoreAppConfigurationSchema 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95d4da95613f33682d56df2c91a5e3a149d39a08
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 399ebecdbed9942ebb5ca828c815aa6ad03befea
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762404"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395497"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>更新 androidManagedStoreAppConfigurationSchema
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|架构对应的应用程序的 Android 包名称的实体密钥|
+|id|字符串|架构对应的应用程序的 Android 包名称的实体密钥|
 |exampleJson|Binary|包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置|
 |schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
 |nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
@@ -185,7 +187,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 

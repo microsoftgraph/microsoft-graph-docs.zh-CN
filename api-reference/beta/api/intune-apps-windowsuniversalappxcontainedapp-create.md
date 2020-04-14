@@ -1,18 +1,20 @@
 ---
 title: 创建 windowsUniversalAppXContainedApp
 description: 创建新的 windowsUniversalAppXContainedApp 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e45f88ec15241bec5ee408563db26d02f4212233
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ba71535b9766414a9d89613623f8040b5ca39ef7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760639"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393092"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>创建 windowsUniversalAppXContainedApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,8 +55,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
+|id|字符串|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|字符串|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
 
 
 
@@ -89,7 +91,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

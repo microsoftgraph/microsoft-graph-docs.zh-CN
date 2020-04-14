@@ -1,20 +1,20 @@
 ---
 title: 组：subscribeByMail
-description: 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。
+description: 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bc87c2fbc7bab8ffd108abe54a89565e94c930f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b2c8f19f686fe4e33d28338bda8f543d41771e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418221"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396291"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

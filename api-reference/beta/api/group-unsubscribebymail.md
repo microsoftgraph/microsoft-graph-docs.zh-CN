@@ -1,20 +1,20 @@
 ---
 title: 组：unsubscribeByMail
-description: '调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。 仅支持 Office 365 组。 '
+description: 调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 252fd8fbcc878c7d77818e2215cd8a06ea4722b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01554b2cd8b07a75ad576b6d1533a33507e2315f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418229"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396284"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

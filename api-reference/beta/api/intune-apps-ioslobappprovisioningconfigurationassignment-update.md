@@ -1,18 +1,20 @@
 ---
 title: 更新 iosLobAppProvisioningConfigurationAssignment
 description: 更新 iosLobAppProvisioningConfigurationAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0076bbaf7dd895c3852a83b8766022b4fcac11c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8f0bdd5ac80c537f3908964b17f2c88ec0db6583
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762054"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394991"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>更新 iosLobAppProvisioningConfigurationAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 
 
@@ -91,7 +93,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

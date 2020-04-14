@@ -1,18 +1,20 @@
 ---
 title: 获取 androidForWorkSettings
 description: 读取 androidForWorkSettings 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c92e744790228dc3e9018b8b2d1c887ab5b7138
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f80d7cd0b0c56274018645872bd81e2e0bfb59e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815675"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395697"
 ---
 # <a name="get-androidforworksettings"></a>获取 androidForWorkSettings
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 613
   }
 }
 ```
-
 
 
 

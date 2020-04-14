@@ -1,20 +1,20 @@
 ---
 title: 创建 rejectedSender
 description: 将新用户或组添加到 acceptedSender 列表中。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7d4be6af54566a51fbf6844fa88c792a2facea23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ac6c8f6a75ff900630bbd27047d547566335318
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418769"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396422"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

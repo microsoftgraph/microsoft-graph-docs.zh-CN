@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 使用此 API 创建新事件。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3984acc6c256b6198c41aff5c4793b0510fd8ed5
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: c82fbe8d18d268abc4c8a1f5162bd8159d038275
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639602"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396626"
 ---
 # <a name="create-event"></a>创建事件
 

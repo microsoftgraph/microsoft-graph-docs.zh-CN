@@ -1,18 +1,20 @@
 ---
 title: 创建 androidForWorkMobileAppConfiguration
 description: 创建新的 androidForWorkMobileAppConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5361f039a7d4f05260d76ff5a49ae3767f51296e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1d302e113501855c9577629e793a0c17aedcb842
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762362"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395308"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>创建 androidForWorkMobileAppConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,15 +55,16 @@ POST /deviceAppManagement/mobileAppConfigurations
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|String 集合|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|说明|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|description|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|适用于工作的应用程序配置包 id 的 Android。|
-|payloadJson|String|适用于工作的应用程序配置 JSON 负载的 Android。|
+|payloadJson|字符串|适用于工作的应用程序配置 JSON 负载的 Android。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和相应权限操作的列表。|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android 企业配置文件适用性（AndroidWorkProfile、DeviceOwner 或 default （适用于两者））。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
 
 
 
@@ -75,7 +78,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 560
+Content-length: 609
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -96,7 +99,8 @@ Content-length: 560
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
@@ -105,7 +109,7 @@ Content-length: 560
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 732
+Content-Length: 781
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -129,10 +133,10 @@ Content-Length: 732
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

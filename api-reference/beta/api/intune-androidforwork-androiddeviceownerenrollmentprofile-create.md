@@ -1,18 +1,20 @@
 ---
 title: 创建 androidDeviceOwnerEnrollmentProfile
 description: 创建新的 androidDeviceOwnerEnrollmentProfile 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 636843deb4151c98aacf63853c975b75ac9bfd67
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c02d06ca269da451112293e833ca2460e95fd3b2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815815"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395993"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,19 +53,19 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|accountId|String|注册配置文件隶属的租户 GUID。|
+|accountId|字符串|注册配置文件隶属的租户 GUID。|
 |id|字符串|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|说明|String|注册配置文件的说明。|
+|description|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
-|tokenValue|String|为此注册配置文件最新创建的令牌的值。|
+|tokenValue|字符串|为此注册配置文件最新创建的令牌的值。|
 |tokenCreationDateTime|DateTimeOffset|创建最近创建的令牌的日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -130,7 +132,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

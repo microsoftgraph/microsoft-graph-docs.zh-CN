@@ -1,20 +1,20 @@
 ---
 title: 列表组可传递成员
-description: 获取组成员的列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作是可传递的，并且还将返回所有嵌套成员的简单列表。
+description: 获取组成员的列表。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 32c2820a0dc7f5ce690a3342da578d1fccb31bf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9116569521cb024cd6501e448f8dccad61f64260
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419099"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396815"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

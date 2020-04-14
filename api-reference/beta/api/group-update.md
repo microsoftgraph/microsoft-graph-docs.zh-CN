@@ -1,20 +1,20 @@
 ---
 title: 更新组
 description: 更新[组](../resources/group.md)对象的属性。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a2e5e9fa10ec8d37099f09cc294b36a429bb0642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446679"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396095"
 ---
 # <a name="update-group"></a>更新组
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,14 +50,14 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
-|description|字符串|可选的组说明。 |
+|description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
-|securityEnabled|Boolean|指定该组是否为安全组，包括 Office 365 组。 |
+|securityEnabled|布尔|指定该组是否为安全组，包括 Office 365 组。 |
 |visibility|String|指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
 
 由于**组**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
@@ -120,7 +120,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

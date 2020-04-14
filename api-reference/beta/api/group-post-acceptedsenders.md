@@ -1,20 +1,20 @@
 ---
 title: 删除 acceptedSender
 description: 向 acceptedSender 列表中添加新用户或组。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 56b874861469cdc5a47fa29b0a4af6ad4605e3e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef2722aaf20dc2271b82525aa680410b98a45297
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418937"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396720"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

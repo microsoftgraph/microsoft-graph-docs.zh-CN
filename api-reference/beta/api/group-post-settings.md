@@ -1,20 +1,20 @@
 ---
 title: 在组中创建目录设置
 description: 使用此 API 为组创建新的目录设置。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f4d7e70311d40b762bf5fc683ff9fd4c509ba82
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9548ccbc8185a4d2df135c5d2e41843bc9bde4b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418713"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396375"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>在组中创建目录设置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

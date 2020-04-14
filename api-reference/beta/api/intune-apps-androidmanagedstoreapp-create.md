@@ -1,18 +1,20 @@
 ---
 title: 创建 androidManagedStoreApp
 description: 创建新的 androidManagedStoreApp 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b33eae221380f75b80bd17def157e1f2a507830e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e6114585389d33197308dd7c2e973878dd67595
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762264"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395053"
 ---
 # <a name="create-androidmanagedstoreapp"></a>创建 androidManagedStoreApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,31 +54,32 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|packageId|String|包标识符。|
+|packageId|字符串|包标识符。|
 |appIdentifier|String|标识名称。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。|
-|isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。|
-|isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。|
-|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。|
+|isPrivate|Boolean|指示应用程序是否仅适用于给定企业的用户。|
+|isSystemApp|Boolean|指示应用程序是否为预安装的系统应用程序。|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)集合|对此企业可见的曲目。|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。|
 
 
 
@@ -90,7 +93,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 984
+Content-length: 1168
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -122,6 +125,13 @@ Content-length: 984
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -131,7 +141,7 @@ Content-length: 984
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1156
+Content-Length: 1340
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -166,10 +176,16 @@ Content-Length: 1156
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
 
 
 

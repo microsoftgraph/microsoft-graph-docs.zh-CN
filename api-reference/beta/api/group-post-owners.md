@@ -1,20 +1,20 @@
 ---
 title: 添加组所有者
-description: 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
+description: 将用户添加到组所有者。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06cd29f13bd5ed2a11f7f5f033da64e488f92ead
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f35ac4cd3058d89c5aa31eb460f866d9c4c665d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418776"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396485"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

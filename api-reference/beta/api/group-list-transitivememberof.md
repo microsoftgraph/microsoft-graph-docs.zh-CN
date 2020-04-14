@@ -1,20 +1,20 @@
 ---
 title: 列表组可传递的 memberOf
-description: 获取组所属的组和管理单元。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
+description: 获取组所属的组和管理单元。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a8fe1349787819f6a3c97f6e23fa349603bde0f3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d8907752b2350e018df879e825d38a944de3da8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396822"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

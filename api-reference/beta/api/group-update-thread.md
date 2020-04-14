@@ -1,20 +1,20 @@
 ---
 title: 更新对话线程
 description: 更新 thread 对象。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e7b70a44d42fa9d0832a8548ce4b7b3566e25e5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ed248f2431d3ab8804b1594fecacfc1946777d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418186"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396118"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

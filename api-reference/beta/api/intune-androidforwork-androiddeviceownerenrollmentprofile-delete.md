@@ -1,18 +1,20 @@
 ---
 title: 删除 androidDeviceOwnerEnrollmentProfile
 description: 删除 androidDeviceOwnerEnrollmentProfile。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99ddefa00dedcef8e174987fc4c180dcedc450d3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f73578b48b78493c62bd8fd955e05245368a808
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395955"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>删除 androidDeviceOwnerEnrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

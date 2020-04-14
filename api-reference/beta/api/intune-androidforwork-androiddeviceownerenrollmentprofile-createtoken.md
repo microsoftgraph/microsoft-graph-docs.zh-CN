@@ -1,18 +1,20 @@
 ---
 title: createToken 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1999589be42acf6767036a9f325bf7a702096f0b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 635aac97d2b0b171b3a2b16a690b6c012b4fd994
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395962"
 ---
 # <a name="createtoken-action"></a>createToken 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +80,6 @@ Content-length: 35
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

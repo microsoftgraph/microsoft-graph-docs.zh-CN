@@ -1,16 +1,16 @@
 ---
 title: 创建组
 description: 创建新的 Office 365 组或安全组。
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebdf299679daaef688078dd69038b1a568e30a26
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: e4fc80fc664404a0d17d535282e0d791b7e96cbb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396611"
 ---
 # <a name="create-group"></a>创建组
 

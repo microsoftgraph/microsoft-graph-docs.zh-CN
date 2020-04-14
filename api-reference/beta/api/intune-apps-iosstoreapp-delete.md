@@ -1,18 +1,20 @@
 ---
 title: 删除 iosStoreApp
 description: 删除 iosStoreApp。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48f62c1f0d0cd356b36496a7e3e7e404fcc35a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a1fb2d7d7d088e7076648dfb482a1fa0d7f7dc1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762005"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394654"
 ---
 # <a name="delete-iosstoreapp"></a>删除 iosStoreApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

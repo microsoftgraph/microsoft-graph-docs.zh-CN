@@ -1,18 +1,20 @@
 ---
 title: 更新 iosVppAppAssignedDeviceLicense
 description: 更新 iosVppAppAssignedDeviceLicense 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88d82be7a799e520093772eb7f449e659353fb55
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7c1f08f221bb6f3c97619bf25c64f32576910743
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761893"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394382"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>更新 iosVppAppAssignedDeviceLicense
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,12 +54,12 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|String|用户电子邮件地址。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|字符串|用户电子邮件地址。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|用户 ID。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|用户名。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|字符串|用户主体名称。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|managedDeviceId|String|托管设备 ID。|
-|deviceName|String|设备名称。|
+|managedDeviceId|字符串|托管设备 ID。|
+|deviceName|字符串|设备名称。|
 
 
 
@@ -102,7 +104,6 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
-
 
 
 

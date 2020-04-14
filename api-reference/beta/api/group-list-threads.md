@@ -1,20 +1,20 @@
 ---
 title: 列出线程
 description: 获取某个组的所有线程。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 443003a068fb347b5c59f6eaef0d0d4d79506579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b93adb5b5cb4a6342644c1236faf8171d4813da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419294"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396845"
 ---
 # <a name="list-threads"></a>列出线程
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

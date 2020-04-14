@@ -1,18 +1,20 @@
 ---
 title: 更新 androidForWorkSettings
 description: 更新 androidForWorkSettings 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f49d5e14c8d968f5f039f2c3512b8a2c454d9fa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3693cc86ddb38b16d195e599f7c4d09c9afc1da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762529"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395583"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,16 +53,16 @@ PATCH /deviceManagement/androidForWorkSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Android for Work 设置标识符|
+|id|字符串|Android for Work 设置标识符|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|String|创建了企业的所有者 UPN|
+|ownerUserPrincipalName|字符串|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|载入 Android for Work 时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔值|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
+|deviceOwnerManagementEnabled|Boolean|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 
 
 
@@ -114,7 +116,6 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 列出 androidForWorkMobileAppConfigurations
 description: 列出 androidForWorkMobileAppConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52c08ee474bc931a45a6eea0b4e6094abae6d91d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 083b3cb53b9d962e17766df5d663627e541d3eee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762341"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395278"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>列出 androidForWorkMobileAppConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 906
 
 {
   "value": [
@@ -89,12 +91,12 @@ Content-Length: 853
           "permission": "Permission value",
           "action": "autoGrant"
         }
-      ]
+      ],
+      "profileApplicability": "androidWorkProfile"
     }
   ]
 }
 ```
-
 
 
 

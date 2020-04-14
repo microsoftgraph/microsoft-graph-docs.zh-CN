@@ -1,18 +1,20 @@
 ---
 title: 获取 androidManagedStoreAppConfigurationSchema
 description: 读取 androidManagedStoreAppConfigurationSchema 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4faf105e2fd52aef7e05dd717f219437dd0cfbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e813b1fe5bef2f13db8867eb41baaff98009418b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762418"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395512"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>获取 androidManagedStoreAppConfigurationSchema
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -124,7 +126,6 @@ Content-Length: 1755
   }
 }
 ```
-
 
 
 
