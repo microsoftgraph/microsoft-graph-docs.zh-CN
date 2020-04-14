@@ -1,18 +1,20 @@
 ---
 title: 列出 enrollmentRestrictionsConfigurationPolicySetItems
 description: 列出 enrollmentRestrictionsConfigurationPolicySetItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2e03dfd367e7718c6ac9e49dbcf1b13e7bd19c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3705ca20e37ebe1420d62758e7772877805a44c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802333"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424128"
 ---
 # <a name="list-enrollmentrestrictionsconfigurationpolicysetitems"></a>列出 enrollmentRestrictionsConfigurationPolicySetItems
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 624
   ]
 }
 ```
-
 
 
 

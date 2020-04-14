@@ -1,18 +1,20 @@
 ---
 title: win32LobAppRequirement 资源类型
 description: 用于检测 Win32 应用程序的基类
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91c8a23170ba18e2c5c8ec3a3890e548a27df9cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b32be470753f62b725b0cd1f91177ab8f1826d66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797561"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422644"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

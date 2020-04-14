@@ -1,18 +1,20 @@
 ---
 title: 创建 iosVppEBook
 description: 创建新的 iosVppEBook 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd7c521ed2cfd8587262d0056eccc00a5bee76ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03e88512487a6ab4c5e948f1c240f47403b2583c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760506"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423172"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ POST /deviceAppManagement/managedEBooks
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|字符串|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -69,7 +71,7 @@ POST /deviceAppManagement/managedEBooks
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -152,7 +154,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

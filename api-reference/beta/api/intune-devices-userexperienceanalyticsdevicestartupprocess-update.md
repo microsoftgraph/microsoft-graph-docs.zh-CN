@@ -1,18 +1,20 @@
 ---
 title: 更新 userExperienceAnalyticsDeviceStartupProcess
 description: 更新 userExperienceAnalyticsDeviceStartupProcess 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64f52f9a08543ae0cef610bd32e6c58e81f5a45c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7efdaddcb73c2ffa8c3aa4013c63ecd04520130b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813885"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424915"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>更新 userExperienceAnalyticsDeviceStartupProcess
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +101,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

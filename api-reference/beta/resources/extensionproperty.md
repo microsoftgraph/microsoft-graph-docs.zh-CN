@@ -2,23 +2,23 @@
 title: extensionProperty 资源类型
 description: 表示目录扩展
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5c71eade005bc76b5e0ebe3c23d3482d63e3712f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d6f6e89ca6e54e1c74e43c6201766aa199f454d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498999"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423795"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示可用于将自定义属性添加到目录对象而不需要外部数据存储区的目录扩展。 例如，如果组织具有需要目录中每个用户的 Skype ID 的业务线（LOB）应用程序，则可以使用 Microsoft Graph 在目录的 User 对象上注册一个名为 skypeId 的新属性，然后向新属性中写入一个值特定用户的。
+表示可用于将自定义属性添加到目录对象而不需要外部数据存储区的目录扩展。 例如，如果组织具有需要目录中每个用户的 Skype ID 的业务线（LOB）应用程序，则可以使用 Microsoft Graph 在目录的 User 对象上注册一个名为 skypeId 的新属性，然后为特定用户的新属性写入一个值。
 
 可以将扩展添加到[用户](user.md)、[组](group.md)、[组织](organization.md)、[设备](device.md)、[应用程序](application.md)资源。
 
@@ -40,9 +40,9 @@ ms.locfileid: "42498999"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |appDisplayName|String| 在其上定义此扩展属性的 application 对象的显示名称。 只读。 |
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
-|isSyncedFromOnPremises|布尔| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
-|name|字符串| 扩展属性的名称。 不可为 null。 |
+|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary`-最多为256字节</li><li>`Boolean`</li><li>`DateTime`-必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer`-32-位值。</li><li>`LargeInteger`-64-位值。</li><li>`String`-最多为-256 个字符</li></ul>|
+|isSyncedFromOnPremises|Boolean| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
+|name|字符串| 扩展属性的名称。 不可为空。 |
 |targetObjects|String 集合| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>关系

@@ -1,18 +1,20 @@
 ---
 title: 列出 iosCertificateProfileBases
 description: 列出 iosCertificateProfileBase 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b02b7f9818fe4d94a6ffc702fc75ae39a7c1f42
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4824c208d4c0cfc7791d624672bec6645be9d76
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433150"
 ---
 # <a name="list-ioscertificateprofilebases"></a>列出 iosCertificateProfileBases
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -110,7 +112,6 @@ Content-Length: 1600
   ]
 }
 ```
-
 
 
 

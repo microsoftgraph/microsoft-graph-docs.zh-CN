@@ -1,18 +1,20 @@
 ---
 title: 列出 macOSVpnConfigurations
 description: 列出 macOSVpnConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67f39e61e298922955cafd8b015f067dc70768a7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b6a946d9f3e69ed24c71c44f46a8672b3902e2bf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42744260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432245"
 ---
 # <a name="list-macosvpnconfigurations"></a>列出 macOSVpnConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -162,7 +164,6 @@ Content-Length: 3191
   ]
 }
 ```
-
 
 
 

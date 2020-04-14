@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingXmlConstraint 资源类型
 description: 强制设置的约束是格式良好的 XML
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4c2114c0b8e7a602c8cb14ecee3c4ea92241f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 98c88ff875eea0ab31bbc16df73fb0fabdd399e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419982"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>deviceManagementSettingXmlConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: requestRemoteAssistance 操作
 description: 请求远程协助
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5213771fd13a01e8be54fbf1f857d35df56cd967
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a580f318d1e2cd54afc671f6bb959061bd41bd09
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814202"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425309"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +69,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

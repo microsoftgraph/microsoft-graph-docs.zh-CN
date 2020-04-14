@@ -1,18 +1,20 @@
 ---
 title: 列出 securityBaselineDeviceStates
 description: 列出 securityBaselineDeviceState 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a58e76054e5485b90ff963faedf93f63d50e383
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0a2bcb63c19e29484264bd69b253a898a8975bff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814874"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427347"
 ---
 # <a name="list-securitybaselinedevicestates"></a>列出 securityBaselineDeviceStates
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 420
   ]
 }
 ```
-
 
 
 

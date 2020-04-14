@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceManagementScriptAssignments
 description: 列出 deviceManagementScriptAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fc25cfd45e34e42c05bb9acd67f4d883c84808b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cc38d5c01946471b6e3b2ebae6fda880b92eb887
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814475"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426129"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>列出 deviceManagementScriptAssignments
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +80,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

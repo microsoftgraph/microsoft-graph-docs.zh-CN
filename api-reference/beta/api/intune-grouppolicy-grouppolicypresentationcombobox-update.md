@@ -1,18 +1,20 @@
 ---
 title: 更新 groupPolicyPresentationComboBox
 description: 更新 groupPolicyPresentationComboBox 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3d677e27de4b0eb30bcabf9a2cfeccd6da00669
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c68718732d7a332c857f36a4b2963603dd613c49
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804294"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424674"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>更新 groupPolicyPresentationComboBox
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +27,9 @@ ms.locfileid: "42804294"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,8 +58,8 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|组合框中显示的本地化默认字符串。 默认值为空白。|
-|推荐|String collection|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
+|推荐|String 集合|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
+|必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为1023。|
 
 
@@ -106,7 +108,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

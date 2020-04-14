@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsPhoneEASEmailProfileConfiguration
 description: 删除 windowsPhoneEASEmailProfileConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 294aa9d233740d0c5fd2d276cbef6c080f78c740
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5841aa9f2ed8e52562ffc18a2679a23210bfa351
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42732942"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428946"
 ---
 # <a name="delete-windowsphoneeasemailprofileconfiguration"></a>删除 windowsPhoneEASEmailProfileConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

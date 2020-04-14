@@ -1,18 +1,20 @@
 ---
 title: 获取 managedAllDeviceCertificateState
 description: 读取 managedAllDeviceCertificateState 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0fea5b352ce273423754202f55aa3497140bfb4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 36349494d8e3863dc40d544efb24b0a1faa65142
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743574"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432147"
 ---
 # <a name="get-managedalldevicecertificatestate"></a>获取 managedAllDeviceCertificateState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 829
   }
 }
 ```
-
 
 
 

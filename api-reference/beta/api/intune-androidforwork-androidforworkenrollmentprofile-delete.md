@@ -1,18 +1,20 @@
 ---
 title: 删除 androidForWorkEnrollmentProfile
 description: 删除 androidForWorkEnrollmentProfile。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: deb7c7d5e82bb710dd216d55ac87192740e3fc70
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c2d3cfb087f3808637ffe3e116c47e5a5a31bf5b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815717"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421946"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>删除 androidForWorkEnrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmen
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

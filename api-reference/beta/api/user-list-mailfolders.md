@@ -3,18 +3,18 @@ title: 列出 mailFolder
 description: 获取已登录用户的邮箱中的所有邮件文件夹。
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 34146d3fab0e4f13e2d9c41e738c57a7e8bdd1cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2e19f53021b9ec9a214b337f84e7fff8652091d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423872"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

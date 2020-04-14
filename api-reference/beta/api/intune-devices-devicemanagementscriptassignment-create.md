@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementScriptAssignment
 description: 创建新的 deviceManagementScriptAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 16c33eb719508da425afd8d0cdfbd52737ba5544
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1557b1eb4408ebfe9200d5cf83cb9e5fe55259e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814496"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426198"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -92,7 +94,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

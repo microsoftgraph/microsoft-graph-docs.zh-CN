@@ -1,20 +1,20 @@
 ---
 title: Logonip 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 包含有关用户帐户的状态信息。
 localization_priority: Normal
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67e5c7d2feb76346d754f582e34b5afe39af3d32
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3df36132011cc668950615b2229c76c85237094
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422390"
 ---
 # <a name="usersecuritystate-resource-type"></a>Logonip 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42519510"
 |帐户|String|用户帐户的帐户名（不包含 Active Directory 域或 DNS 域）-（也`mailNickName`称为）。|
 |domainName|String|用户帐户的 NetBIOS/Active Directory 域（即，域 \ 帐户格式）。|
 |emailRole|emailRole|对于与电子邮件相关的警报-用户帐户的电子邮件 "role"。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|布尔|指示用户是否通过 VPN 登录。|
+|isVpn|Boolean|指示用户是否通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |logonId|String|用户登录 ID。|
 |Usersecuritystate|String|发出登录请求的 IP 地址。|

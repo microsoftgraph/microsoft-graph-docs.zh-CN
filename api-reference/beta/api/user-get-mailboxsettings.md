@@ -2,15 +2,15 @@
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af9ae2a75e508dfe30d335c9081758b71ec33c7c
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: d59505f311e1a9e1fd72540a42044151198b5a07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423894"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -247,7 +247,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 #### <a name="response"></a>响应
-该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

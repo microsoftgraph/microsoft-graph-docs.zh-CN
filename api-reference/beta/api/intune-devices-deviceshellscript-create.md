@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceShellScript
 description: 创建新的 deviceShellScript 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f310a1b2b83effda2af1a2a73406325f78a06f3d
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 5be107a65a2f680cfe379108567cb972531da801
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425612"
 ---
 # <a name="create-deviceshellscript"></a>创建 deviceShellScript
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -49,11 +51,11 @@ POST /deviceManagement/deviceShellScripts
 
 下表显示创建 deviceShellScript 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，则脚本将运行一次。|
-|retryCount|Int32| 脚本失败时重试脚本的次数。 |
-|blockExecutionNotifications|Boolean|指示在执行脚本时是否通知用户。|
+|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
+|retryCount|Int32|脚本失败时将重试脚本的次数|
+|blockExecutionNotifications|Boolean|不通知用户正在执行的脚本|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |description|String|设备管理脚本的可选说明。|

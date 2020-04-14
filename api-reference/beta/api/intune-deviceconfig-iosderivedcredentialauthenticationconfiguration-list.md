@@ -1,18 +1,20 @@
 ---
 title: 列出 iosDerivedCredentialAuthenticationConfigurations
 description: 列出 iosDerivedCredentialAuthenticationConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a328df35d291b0b34d2125446d1c717b4773f634
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 68c24df41f48e7ab553f8a02bf78b00d1c4016ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752048"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432805"
 ---
 # <a name="list-iosderivedcredentialauthenticationconfigurations"></a>列出 iosDerivedCredentialAuthenticationConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -105,7 +107,6 @@ Content-Length: 1383
   ]
 }
 ```
-
 
 
 

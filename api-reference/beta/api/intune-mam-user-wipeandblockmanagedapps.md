@@ -1,18 +1,20 @@
 ---
 title: wipeAndBlockManagedApps 操作
 description: 阻止应用程序签入的托管应用程序用户。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e159a6298421ccb857a027127e4a48ec33ecc130
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f3f2b4adf5a66d3e3ed4311a0c291e81b97acfa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803363"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421604"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>wipeAndBlockManagedApps 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/wipeAndBlockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: getFileVaultKey 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ee58bc43d084e38a85a48d44039cf1a03d956f1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7ad9ab33c4c3566b99b6463f8c4b7db94e25d7a8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425528"
 ---
 # <a name="getfilevaultkey-function"></a>getFileVaultKey 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -73,7 +75,6 @@ Content-Length: 43
   "value": "Get File Vault Key value"
 }
 ```
-
 
 
 

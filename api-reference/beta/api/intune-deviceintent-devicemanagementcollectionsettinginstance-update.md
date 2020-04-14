@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementCollectionSettingInstance
 description: 更新 deviceManagementCollectionSettingInstance 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e0645eabf3d59e1b581c9e7753415be0802dffa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3f222cca299edf65e7a8419f6783f50ef0ae31b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42730541"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428325"
 ---
 # <a name="update-devicemanagementcollectionsettinginstance"></a>更新 deviceManagementCollectionSettingInstance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +95,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

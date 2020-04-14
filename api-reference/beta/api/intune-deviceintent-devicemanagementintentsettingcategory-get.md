@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceManagementIntentSettingCategory
 description: 读取 deviceManagementIntentSettingCategory 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f44192b03883ecdda75bfab1b0c25e14639290e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a31bb1578f792ff2e4e53fc08f8da278405eefbc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815203"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428047"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>获取 deviceManagementIntentSettingCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

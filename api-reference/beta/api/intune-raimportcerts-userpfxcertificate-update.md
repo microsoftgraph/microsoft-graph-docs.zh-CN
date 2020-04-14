@@ -1,18 +1,20 @@
 ---
 title: 更新 userPFXCertificate
 description: 更新 userPFXCertificate 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bba8e970f258ccbfab01209feb024314aa8a99d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aa08241b3a672914d01058a8e0b817d737403670
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801815"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421518"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

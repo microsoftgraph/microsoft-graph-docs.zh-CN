@@ -1,18 +1,20 @@
 ---
 title: 列出 windows10DeviceFirmwareConfigurationInterfaces
 description: 列出 windows10DeviceFirmwareConfigurationInterface 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a0ad701e4d7242c27613f31a59f11648b42c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b045c7a1f2d02f3e533452c7191367e002a0aa8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42740774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431627"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>列出 windows10DeviceFirmwareConfigurationInterfaces
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -112,7 +114,6 @@ Content-Length: 1670
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceManagementSettingCategory
 description: 读取 deviceManagementSettingCategory 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9875dd6fc680697f2081203857bdf32186b61830
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1fa6290900a0b6bdd7a7b41cd020410ade345d3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815119"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427859"
 ---
 # <a name="get-devicemanagementsettingcategory"></a>获取 deviceManagementSettingCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

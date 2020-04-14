@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementSettingCategory
 description: 更新 deviceManagementSettingCategory 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4e5711e8d9adf026e94b85c01c0d7e384ce677c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd4e412d8793e8fd2999a72643ab28aec1fc32b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815105"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427829"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>更新 deviceManagementSettingCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 |:---|:---|:---|
 |id|String|类别 ID|
 |displayName|String|类别名称|
-|hasRequiredSetting|布尔值|类别包含 "必需顶级" 设置|
+|hasRequiredSetting|Boolean|类别包含 "必需顶级" 设置|
 
 
 
@@ -90,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 enterpriseCodeSigningCertificate
 description: 删除 enterpriseCodeSigningCertificate。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37acd3940dbb6125fb3304c001af6cbbd7ef12c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b30ffa6f0b6d624574fec0ff7a5e54907a40da0a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421720"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>删除 enterpriseCodeSigningCertificate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSignin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

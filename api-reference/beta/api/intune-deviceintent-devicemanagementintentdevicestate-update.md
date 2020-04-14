@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementIntentDeviceState
 description: 更新 deviceManagementIntentDeviceState 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8da6cc8098211768b76a4dd264eb77c23758b434
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f70cc61942a9da6f173e8f61d0a87a8b8c5d4c7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815238"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428186"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>更新 deviceManagementIntentDeviceState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +104,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

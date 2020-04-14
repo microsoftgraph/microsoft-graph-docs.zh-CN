@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementSettingCategory
 description: 删除 deviceManagementSettingCategory。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a59526436b6e8ffe7e2dbee18f5e5a36a56a321
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 547b23b9f28044f353b26aee6a4156349a27fe19
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815126"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427922"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>删除 deviceManagementSettingCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/categories/{deviceManag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

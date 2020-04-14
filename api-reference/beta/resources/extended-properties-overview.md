@@ -2,19 +2,19 @@
 title: Outlook 扩展属性概述
 description: '扩展属性允许存储自定义数据，并专门用作应用程序访问的回退机制 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: d6e4cd91e8195530f6138bdd068907988b42c237
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2941d114fd4b33e6f76c2b93d0204f04047741ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499013"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423849"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

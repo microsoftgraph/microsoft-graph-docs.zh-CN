@@ -1,18 +1,20 @@
 ---
 title: 创建 appLogCollectionRequest
 description: 创建新的 appLogCollectionRequest 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33349e7b9e4fc6cec1a7a3e8b9b2916a00640644
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fda135fbd3acb66e37da9cf33eb469f92b07e24f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814776"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426944"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +56,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|在上载过程中出现的错误消息|
-|customLogFolders|String collection|日志文件夹的列表。 |
+|customLogFolders|String 集合|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 
@@ -100,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: updateGlobalScript 操作
 description: 更新专用设备运行状况脚本
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f3ddb0f73c918af1d317ff91e38c1b33e38404e3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 42cd16873e374dfbc301674c2a7c76527311581a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426346"
 ---
 # <a name="updateglobalscript-action"></a>updateGlobalScript 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +86,6 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
-
 
 
 

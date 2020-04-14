@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingSddlConstraint 资源类型
 description: 强制实施设置的约束是格式正确的 SDDL
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 869f7771223a6df167b174d7bf30ff37dc3fe489
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 56836ee15ef8b19407b56af231305e35f4361ba7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785279"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420052"
 ---
 # <a name="devicemanagementsettingsddlconstraint-resource-type"></a>deviceManagementSettingSddlConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

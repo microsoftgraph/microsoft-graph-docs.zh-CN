@@ -1,18 +1,20 @@
 ---
 title: generateApplePushNotificationCertificateSigningRequest 操作
 description: 下载 Apple 推送通知证书签名请求
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45dfdf38a17db91a8af1e11dee194f329177a018
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4b602e3819f799493a69619309580acb7cc6e77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814797"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427053"
 ---
 # <a name="generateapplepushnotificationcertificatesigningrequest-action"></a>generateApplePushNotificationCertificateSigningRequest 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -69,7 +71,6 @@ Content-Length: 85
   "value": "Generate Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

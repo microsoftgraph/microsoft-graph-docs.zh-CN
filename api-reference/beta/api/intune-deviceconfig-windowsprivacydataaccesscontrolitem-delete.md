@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsPrivacyDataAccessControlItem
 description: 删除 windowsPrivacyDataAccessControlItem。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce54c660252ac8e51893aa5514ff455f46b20d7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9dea0fce1173141b27f2721cacd618455e58781d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42732655"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428799"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>删除 windowsPrivacyDataAccessControlItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

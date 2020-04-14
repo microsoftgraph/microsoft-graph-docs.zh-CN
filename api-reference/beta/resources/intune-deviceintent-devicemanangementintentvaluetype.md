@@ -1,18 +1,20 @@
 ---
 title: deviceManangementIntentValueType 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ea9783a4487b850fb85eb1d6efa36531ce17ac1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c08d68ce1ee97a042e33bdf67271ab6a2f28f272
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785222"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419882"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>deviceManangementIntentValueType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

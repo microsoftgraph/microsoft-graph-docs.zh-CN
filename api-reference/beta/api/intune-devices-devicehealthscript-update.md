@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceHealthScript
 description: 更新 deviceHealthScript 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062061"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426385"
 ---
 # <a name="update-devicehealthscript"></a>更新 deviceHealthScript
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,6 +55,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
 |发布者|String|设备运行状况脚本发布者的名称|
+|version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
 |description|String|设备运行状况脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
@@ -63,6 +66,8 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
 |roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 
 
 
@@ -81,6 +86,7 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -90,8 +96,10 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
- }
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
+}
 ```
 
 ### <a name="response"></a>响应
@@ -122,7 +130,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

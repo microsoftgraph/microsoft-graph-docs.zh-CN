@@ -1,18 +1,20 @@
 ---
 title: win32LobAppRegistryDetectionType 枚举类型
 description: 包含所有受支持的注册表数据检测类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 44e3f0ebba23b899a4a31f2a8f982de08640411f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22a1ebc63101a7c11ceb19ba47179b6cab33a64d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422690"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

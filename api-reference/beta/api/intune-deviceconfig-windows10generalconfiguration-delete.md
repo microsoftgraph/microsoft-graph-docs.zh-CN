@@ -1,18 +1,20 @@
 ---
 title: 删除 windows10GeneralConfiguration
 description: 删除 windows10GeneralConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecbf4b948c3933a4dc7064f511154ae3caf2d713
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f26d4a5056ef691e14d618df48ed817f78f94b19
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739843"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431037"
 ---
 # <a name="delete-windows10generalconfiguration"></a>删除 windows10GeneralConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

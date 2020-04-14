@@ -3,18 +3,18 @@ title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 43ed2cf25b57ff3c2d5891c5b20ba19aa88075bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: keylimesoda
+ms.openlocfilehash: 9dc9a53e98c43992c09158bac79afb49abcfee2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423802"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

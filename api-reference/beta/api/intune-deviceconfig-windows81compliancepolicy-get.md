@@ -1,18 +1,20 @@
 ---
 title: 获取 windows81CompliancePolicy
 description: 读取 windows81CompliancePolicy 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f6af2a6dc097478f4d34e02ec73c08fe6456b51
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9dc853d6e1cb898cdfa9892034e8196529bbb56f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737433"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430553"
 ---
 # <a name="get-windows81compliancepolicy"></a>获取 windows81CompliancePolicy
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +96,6 @@ Content-Length: 897
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 删除 windowsDefenderAdvancedThreatProtectionConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec15e546313850eeee6c0e9ca4f8c0663e7167f0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40c20cb98292c89da95889485bad2e8c12ee2b6f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736039"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429941"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>删除 windowsDefenderAdvancedThreatProtectionConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingDependency 资源类型
 description: 设置的相关性信息
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9eba0346507c8cbde621b387ec91d8f5aff6d51d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9014b3618562717c2cc9522c388034ad81213a4c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420120"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>deviceManagementSettingDependency 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: win32LobAppPowerShellScriptDetection 资源类型
 description: 包含用于检测 Win32 应用程序的 PowerShell 脚本属性
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5efcfdc14c2c32b51db04a93da4aff5730106219
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d36591c566e93f9cf4d0c6a7e300224e74033a1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797610"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422917"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +28,8 @@ ms.locfileid: "42797610"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enforceSignatureCheck|布尔值|一个指示是否强制执行签名检查的值|
-|runAs32Bit|布尔值|一个指示此脚本是否应作为32位运行的值|
+|enforceSignatureCheck|Boolean|一个指示是否强制执行签名检查的值|
+|runAs32Bit|Boolean|一个指示此脚本是否应作为32位运行的值|
 |scriptContent|String|用于检测 Win32 业务线（LoB）应用程序的 base64 编码的脚本内容|
 
 ## <a name="relationships"></a>关系

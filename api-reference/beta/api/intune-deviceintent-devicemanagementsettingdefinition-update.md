@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementSettingDefinition
 description: 更新 deviceManagementSettingDefinition 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f1b0540aa1696459c70783b5c31788276e71558
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 652ef71b63b6b4abe8516be0bcf065f08772f01f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815070"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427689"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>更新 deviceManagementSettingDefinition
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,11 +59,11 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |id|字符串|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
-|isTopLevel|布尔值|如果设置是顶级的，则可以对其进行配置，而无需将其包装在集合或复杂设置中|
-|说明|String|设置的说明|
+|isTopLevel|Boolean|如果设置是顶级的，则可以对其进行配置，而无需将其包装在集合或复杂设置中|
+|description|String|设置的说明|
 |placeholderText|String|作为有效输入的示例的占位符文本|
 |documentationUrl|String|设置文档的 Url|
-|keywords|String collection|与设置相关联的关键字|
+|keywords|String 集合|与设置相关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)集合|设置值的约束集合|
 |依|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)集合|对其他设置的依赖项的集合|
 
@@ -158,7 +160,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

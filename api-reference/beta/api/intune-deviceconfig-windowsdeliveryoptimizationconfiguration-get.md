@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsDeliveryOptimizationConfiguration
 description: 读取 windowsDeliveryOptimizationConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e420d124c6946ffa6f3d90cc93c4d0162f38ad72
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18bc1c7f38e8362d036e32433db4b42e808ba84a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735642"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429699"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>获取 windowsDeliveryOptimizationConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -132,7 +134,6 @@ Content-Length: 2344
   }
 }
 ```
-
 
 
 

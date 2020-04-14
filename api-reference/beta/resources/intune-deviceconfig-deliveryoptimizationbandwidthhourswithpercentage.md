@@ -1,18 +1,20 @@
 ---
 title: deliveryOptimizationBandwidthHoursWithPercentage 资源类型
 description: 以工作时间表示的百分比的带宽限制。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d51f975c083c4033c01caf7363f94288cb3ddad
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85008f7aee3c2f06536ef838df04e56ede36ed46
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420579"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>deliveryOptimizationBandwidthHoursWithPercentage 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
