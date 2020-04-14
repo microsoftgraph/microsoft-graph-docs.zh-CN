@@ -1,18 +1,20 @@
 ---
 title: generateEncryptionPublicKey 操作
 description: 生成用于加密 Apple 设备注册计划令牌的公钥
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71c18534ba55bf01824fc17e667ef52193522253
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0bbabc3b3a6e0d8f150e7978c441a05381c9b41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444779"
 ---
 # <a name="generateencryptionpublickey-action"></a>generateEncryptionPublicKey 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -69,7 +71,6 @@ Content-Length: 55
   "value": "Generate Encryption Public Key value"
 }
 ```
-
 
 
 

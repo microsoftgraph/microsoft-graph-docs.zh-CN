@@ -1,18 +1,20 @@
 ---
 title: 获取 policySetAssignment
 description: 读取 policySetAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5d6a0b248e8bbe72a6a1c239688fe750f41c387
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b6186a881b04ff8ebe33524a486331c6fc3b7050
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445272"
 ---
 # <a name="get-policysetassignment"></a>获取 policySetAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 303
   }
 }
 ```
-
 
 
 

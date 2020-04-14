@@ -1,18 +1,20 @@
 ---
 title: 删除 roleScopeTagAutoAssignment
 description: 删除 roleScopeTagAutoAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32df30513e834243e9aea235cdec1119503df551
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab29adfaa1130c8e6e4b1a570662e8fe342674a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445242"
 ---
 # <a name="delete-rolescopetagautoassignment"></a>删除 roleScopeTagAutoAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: vppToken 资源类型
 description: 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4f2cdb7ff14984243c5e8b6317e4f0f3c05b12b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2a90f1521bcec3ecf637693e2f30c493f5e63d15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777845"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446858"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42777845"
 |[删除 vppToken](../api/intune-onboarding-vpptoken-delete.md)|无|删除 [vppToken](../resources/intune-onboarding-vpptoken.md)。|
 |[更新 vppToken](../api/intune-onboarding-vpptoken-update.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|更新 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性。|
 |[syncLicenses 操作](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|同步与特定 appleVolumePurchaseProgramToken 关联的许可证|
-|[revokeLicenses 操作](../api/intune-onboarding-vpptoken-revokelicenses.md)|None|吊销与特定 appleVolumePurchaseProgramToken 相关联的许可证|
+|[revokeLicenses 操作](../api/intune-onboarding-vpptoken-revokelicenses.md)|无|吊销与特定 appleVolumePurchaseProgramToken 相关联的许可证|
 |[getLicensesForApp 函数](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md)集合|尚未记录|
 
 ## <a name="properties"></a>属性
@@ -48,11 +50,11 @@ ms.locfileid: "42777845"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|布尔值|同意授予与 Apple Volume Purchase Program 的数据共享。|
+|dataSharingConsentGranted|Boolean|同意授予与 Apple Volume Purchase Program 的数据共享。|
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|布尔值|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String collection|分配给此实体的角色范围标记 Id。|
+|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 Id。|
 
 ## <a name="relationships"></a>关系
 无

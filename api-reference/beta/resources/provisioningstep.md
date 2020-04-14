@@ -2,19 +2,19 @@
 title: provisioningStep 资源类型
 description: '介绍执行操作所执行的步骤。 '
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0ae3d280d6d9dfc8877739b1003ae0c51f6acd6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446559"
 ---
 # <a name="provisioningstep-resource-type"></a>provisioningStep 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42521325"
 |详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的操作的详细信息。|
 |name|字符串|步骤的名称。|
 |provisioningStepType|String| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
-|status|String| 步骤的状态。 可取值为：`success`、`failure`、`skipped`、`unknownFutureValue`。|
+|状态|String| 步骤的状态。 可取值为：`success`、`failure`、`skipped`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

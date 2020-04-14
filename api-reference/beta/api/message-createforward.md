@@ -1,20 +1,20 @@
 ---
 title: 'message: createForward'
 description: '创建草稿转发邮件以包含注释或更新任何邮件属性  '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aed74a1c071b76ddec478abc4f665d00c1c26a35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4056b533f27b4cac890f26a386c5c4b0455670d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456962"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447242"
 ---
 # <a name="message-createforward"></a>message: createForward
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

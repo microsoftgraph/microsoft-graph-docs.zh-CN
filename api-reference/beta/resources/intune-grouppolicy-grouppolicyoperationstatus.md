@@ -1,18 +1,18 @@
 ---
-title: restrictedAppsState 枚举类型
-description: 受限的应用状态
+title: groupPolicyOperationStatus 枚举类型
+description: 组策略操作状态的类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4aeb8bd8c69550091dd73aa066f67e4a47e64dfe
+ms.openlocfilehash: ab7fc98244ead0b8a798cd97fd997bac7e4b6b9b
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444944"
+ms.locfileid: "43446939"
 ---
-# <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
+# <a name="grouppolicyoperationstatus-enum-type"></a>groupPolicyOperationStatus 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,15 @@ ms.locfileid: "43444944"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-受限的应用状态
+组策略操作状态的类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|prohibitedApps|0|禁止的应用|
-|notApprovedApps|1|未批准的应用程序|
+|unknown|0|组策略未知操作状态。|
+|inProgress|1|正在进行操作状态的组策略。|
+|success|双面|组策略成功操作状态。|
+|未能|第三章|组策略失败的操作状态。|
 
 
 

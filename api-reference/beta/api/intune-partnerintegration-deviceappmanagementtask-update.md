@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceAppManagementTask
 description: 更新 deviceAppManagementTask 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b70cb306609e80165f8dbbb79726811616da9c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9feb1a94f57baec477eef0f94f6baa14abebada7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802473"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445316"
 ---
 # <a name="update-deviceappmanagementtask"></a>更新 deviceAppManagementTask
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,7 +55,7 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 |:---|:---|:---|
 |id|字符串|实体键。|
 |displayName|String|名称。|
-|说明|字符串|说明。|
+|description|字符串|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
@@ -113,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

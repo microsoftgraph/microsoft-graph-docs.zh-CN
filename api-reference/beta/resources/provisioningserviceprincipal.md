@@ -2,19 +2,19 @@
 title: provisioningServicePrincipal 资源类型
 description: 表示用于设置的服务主体。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fde8f4d41c7e2788c306fe0e0591b9ddb8ba031d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e163be94269ee6a75f148b460f728a36e8945645
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521332"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446574"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>provisioningServicePrincipal 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

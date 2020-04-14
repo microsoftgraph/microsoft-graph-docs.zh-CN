@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementCachedReportConfiguration
 description: 创建新的 deviceManagementCachedReportConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f0447c2ec79d7755ac09c35984c4d68ecc4c275
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf67c0409dae250af6cabc24de186879f3b3cedf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445205"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>创建 deviceManagementCachedReportConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,8 +56,8 @@ POST /deviceManagement/reports/cachedReportConfigurations
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
 |filter|String|在创建报表时应用的筛选器。|
-|select|String collection|从报告中选择的列|
-|By|String collection|报表中的列的排序|
+|select|String 集合|从报告中选择的列|
+|By|String 集合|报表中的列的排序|
 |状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存的报告的时间|
 |expirationDateTime|DateTimeOffset|缓存的报表到期的时间|
@@ -113,7 +115,6 @@ Content-Length: 434
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

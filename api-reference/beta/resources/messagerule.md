@@ -1,20 +1,20 @@
 ---
 title: messageRule 资源类型
 description: 适用于用户收件箱邮件的规则。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ec7225800c179ae5592c5d2ef040f8a009568ac7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b8618540559a508671383a777d608ea21c35ea3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522671"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446597"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,8 +34,8 @@ ms.locfileid: "42522671"
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | 规则的例外情况。 |
 | hasError | Boolean | 指示规则是否处于错误状态。 只读。 |
 | id |String|规则的唯一标识符。 只读。|
-| isEnabled | 布尔 | 指示是否启用规则以应用到邮件。 |
-| isReadOnly | 布尔 | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
+| isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
+| isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
 | Sequence | Int32 | 表示在其他规则中执行规则的顺序。 |
 
 
