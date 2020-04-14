@@ -1,18 +1,20 @@
 ---
 title: 列出 sharedPCConfigurations
 description: 列出 sharedPCConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cd8422384bc2846773102becb59c9c37ba19d47
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4b716f91f45236fae05f1a92761e5284e34a27ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42741901"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43341963"
 ---
 # <a name="list-sharedpcconfigurations"></a>列出 sharedPCConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +131,6 @@ Content-Length: 2349
   ]
 }
 ```
-
 
 
 

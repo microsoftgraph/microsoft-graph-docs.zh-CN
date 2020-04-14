@@ -1,18 +1,20 @@
 ---
 title: 删除 androidDeviceOwnerCompliancePolicy
 description: 删除 androidDeviceOwnerCompliancePolicy。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a6e2378c8584202883dc2534e5102edb78c5bff
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a7373a5ff743f21bb3421d1c7c0d5c2b84e2c2c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759883"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43351815"
 ---
 # <a name="delete-androiddeviceownercompliancepolicy"></a>删除 androidDeviceOwnerCompliancePolicy
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

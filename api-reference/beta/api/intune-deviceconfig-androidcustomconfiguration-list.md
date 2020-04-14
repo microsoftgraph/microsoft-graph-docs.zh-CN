@@ -1,18 +1,20 @@
 ---
 title: 列出 androidCustomConfigurations
 description: 列出 androidCustomConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f3a856f60ee0e8a503a37a27043c6b193ac097
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e4ae714fc60c9a61addbf39af40afa72315b93c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43352318"
 ---
 # <a name="list-androidcustomconfigurations"></a>列出 androidCustomConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -115,7 +117,6 @@ Content-Length: 1667
   ]
 }
 ```
-
 
 
 

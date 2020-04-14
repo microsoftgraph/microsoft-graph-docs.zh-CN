@@ -1,18 +1,20 @@
 ---
 title: 列出 restrictedAppsViolations
 description: 列出 restrictedAppsViolation 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 28b72d2bd3188db8765e01d065d4d5f5738d2da3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7db1c1137903df80a28832a1862a4345fc2254ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43342510"
 ---
 # <a name="list-restrictedappsviolations"></a>列出 restrictedAppsViolations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +90,6 @@ Content-Length: 710
   ]
 }
 ```
-
 
 
 

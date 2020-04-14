@@ -1,18 +1,20 @@
 ---
 title: 删除 androidTrustedRootCertificate
 description: 删除 androidTrustedRootCertificate。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5867a2f24bb841c208f921c641f978dac7b7014a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cd5b7e21d055c4e592e722149ad26bee88e34810
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758782"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43344290"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>删除 androidTrustedRootCertificate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

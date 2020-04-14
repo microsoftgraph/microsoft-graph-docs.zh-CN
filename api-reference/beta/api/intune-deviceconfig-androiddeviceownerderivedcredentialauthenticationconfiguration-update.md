@@ -1,18 +1,18 @@
 ---
-title: 创建 androidDeviceOwnerTrustedRootCertificate
-description: 创建新的 androidDeviceOwnerTrustedRootCertificate 对象。
+title: 更新 androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
+description: 更新 androidDeviceOwnerDerivedCredentialAuthenticationConfiguration 对象的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e11f2df933261ddee14de44340f230f826a6680
+ms.openlocfilehash: 7113ea7a39c31701196b8ff272f70b4075f4122d
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43350516"
+ms.locfileid: "43351276"
 ---
-# <a name="create-androiddeviceownertrustedrootcertificate"></a>创建 androidDeviceOwnerTrustedRootCertificate
+# <a name="update-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>更新 androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43350516"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象。
+更新[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,8 +37,9 @@ ms.locfileid: "43350516"
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,9 +49,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 androidDeviceOwnerTrustedRootCertificate 对象的 JSON 表示形式。
+在请求正文中，提供[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)对象的 JSON 表示形式。
 
-下表显示创建 androidDeviceOwnerTrustedRootCertificate 时所需的属性。
+下表显示创建[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -65,25 +66,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|trustedRootCertificate|Binary|受信任的根证书|
-|certFileName|字符串|要在 UI 中显示的文件名。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1151
+Content-length: 1065
 
 {
-  "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -111,22 +110,20 @@ Content-length: 1151
   },
   "description": "Description value",
   "displayName": "Display Name value",
-  "version": 7,
-  "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
-  "certFileName": "Cert File Name value"
+  "version": 7
 }
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1323
+Content-Length: 1237
 
 {
-  "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
-  "id": "6efc1a55-1a55-6efc-551a-fc6e551afc6e",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
+  "id": "9815f155-f155-9815-55f1-159855f11598",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -156,9 +153,7 @@ Content-Length: 1323
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
-  "version": 7,
-  "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
-  "certFileName": "Cert File Name value"
+  "version": 7
 }
 ```
 

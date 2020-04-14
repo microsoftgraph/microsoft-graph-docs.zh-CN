@@ -1,18 +1,20 @@
 ---
 title: 获取 settingStateDeviceSummary
 description: 读取 settingStateDeviceSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc203d87b8308575db68fcc6bd96bfc39f7cb4ec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ef30ac18a185733e7a08e028bc13ba54990f0154
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43342247"
 ---
 # <a name="get-settingstatedevicesummary"></a>获取 settingStateDeviceSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +96,6 @@ Content-Length: 450
   }
 }
 ```
-
 
 
 

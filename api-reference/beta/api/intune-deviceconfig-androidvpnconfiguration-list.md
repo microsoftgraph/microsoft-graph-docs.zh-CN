@@ -1,18 +1,20 @@
 ---
 title: 列出 androidVpnConfigurations
 description: 列出 androidVpnConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f2bd2963e171d2dd2d9093941602baafccdc357
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5640e582befb850533bcbf3aeb8421d417546b9e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758671"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43343873"
 ---
 # <a name="list-androidvpnconfigurations"></a>列出 androidVpnConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -133,7 +135,6 @@ Content-Length: 2196
   ]
 }
 ```
-
 
 
 

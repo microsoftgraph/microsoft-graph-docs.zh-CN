@@ -1,18 +1,20 @@
 ---
 title: 创建 ndesConnector
 description: 创建新的 ndesConnector 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1090796b86e991f2581f185cbaaca3eba6e96ae
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: df9dce7a6157ae652cc99d5ac57df34db2c8cce6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742860"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43342933"
 ---
 # <a name="create-ndesconnector"></a>创建 ndesConnector
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /deviceManagement/ndesConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|NDES 连接器的键。|
+|id|字符串|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|String|Ndes 连接器的友好名称。|
@@ -93,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

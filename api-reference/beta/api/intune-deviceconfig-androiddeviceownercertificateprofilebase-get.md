@@ -1,18 +1,20 @@
 ---
 title: 获取 androidDeviceOwnerCertificateProfileBase
 description: 读取 androidDeviceOwnerCertificateProfileBase 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e648268f6d55e95159f8ce7e919fd9598c5a1671
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 912e7d04f9aa5255ac9571c3a206f7a88d9b1228
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759904"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43351930"
 ---
 # <a name="get-androiddeviceownercertificateprofilebase"></a>获取 androidDeviceOwnerCertificateProfileBase
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -118,7 +120,6 @@ Content-Length: 1734
   }
 }
 ```
-
 
 
 

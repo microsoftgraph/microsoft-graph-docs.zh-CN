@@ -1,18 +1,20 @@
 ---
 title: 删除 androidForWorkVpnConfiguration
 description: 删除 androidForWorkVpnConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aacf0d4bfab1317d2c0dcdd510735398d962bac3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6ff7da9d7a42b0e686e02cac003b93fbbac9355e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759076"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43345336"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>删除 androidForWorkVpnConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
