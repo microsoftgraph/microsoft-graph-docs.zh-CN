@@ -1,36 +1,36 @@
 ---
 title: 列出 childFolder
 description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me/MailFolders` 快捷方式来获取顶级 '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ec9b2e89dacf80c24c9036ed0d8d932856eac4d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a996c6ea9aeb972b8b3e1bb8b3eb6ce37c4a9b01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457129"
 ---
-# <a name="list-childfolders"></a><span data-ttu-id="5e35d-104">列出 childFolder</span><span class="sxs-lookup"><span data-stu-id="5e35d-104">List childFolders</span></span>
+# <a name="list-childfolders"></a><span data-ttu-id="a4258-104">列出 childFolder</span><span class="sxs-lookup"><span data-stu-id="a4258-104">List childFolders</span></span>
 
-<span data-ttu-id="5e35d-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5e35d-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a4258-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4258-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5e35d-p102">获取指定文件夹下的文件夹集合。你可以使用 `.../me/mailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。</span><span class="sxs-lookup"><span data-stu-id="5e35d-p102">Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level folder collection and navigate to another folder.</span></span>
+<span data-ttu-id="a4258-p102">获取指定文件夹下的文件夹集合。你可以使用 `.../me/mailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。</span><span class="sxs-lookup"><span data-stu-id="a4258-p102">Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level folder collection and navigate to another folder.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5e35d-108">权限</span><span class="sxs-lookup"><span data-stu-id="5e35d-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a4258-108">权限</span><span class="sxs-lookup"><span data-stu-id="a4258-108">Permissions</span></span>
 
-<span data-ttu-id="5e35d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5e35d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a4258-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a4258-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5e35d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="5e35d-111">Permission type</span></span>                        | <span data-ttu-id="5e35d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5e35d-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a4258-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a4258-111">Permission type</span></span>                        | <span data-ttu-id="a4258-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a4258-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="5e35d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5e35d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="5e35d-114">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5e35d-114">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
-| <span data-ttu-id="5e35d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5e35d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5e35d-116">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5e35d-116">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
-| <span data-ttu-id="5e35d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="5e35d-117">Application</span></span>                            | <span data-ttu-id="5e35d-118">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5e35d-118">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="a4258-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a4258-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="a4258-114">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a4258-114">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="a4258-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a4258-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4258-116">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a4258-116">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="a4258-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a4258-117">Application</span></span>                            | <span data-ttu-id="a4258-118">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a4258-118">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span>           |
 
-## <a name="http-request"></a><span data-ttu-id="5e35d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5e35d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4258-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a4258-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,34 +39,34 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5e35d-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5e35d-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a4258-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a4258-120">Optional query parameters</span></span>
 
-<span data-ttu-id="5e35d-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5e35d-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="a4258-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a4258-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5e35d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="5e35d-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a4258-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a4258-122">Request headers</span></span>
 
-| <span data-ttu-id="5e35d-123">名称</span><span class="sxs-lookup"><span data-stu-id="5e35d-123">Name</span></span>          | <span data-ttu-id="5e35d-124">类型</span><span class="sxs-lookup"><span data-stu-id="5e35d-124">Type</span></span>   | <span data-ttu-id="5e35d-125">说明</span><span class="sxs-lookup"><span data-stu-id="5e35d-125">Description</span></span>               |
+| <span data-ttu-id="a4258-123">名称</span><span class="sxs-lookup"><span data-stu-id="a4258-123">Name</span></span>          | <span data-ttu-id="a4258-124">类型</span><span class="sxs-lookup"><span data-stu-id="a4258-124">Type</span></span>   | <span data-ttu-id="a4258-125">说明</span><span class="sxs-lookup"><span data-stu-id="a4258-125">Description</span></span>               |
 |:--------------|:-------|:--------------------------|
-| <span data-ttu-id="5e35d-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5e35d-126">Authorization</span></span> | <span data-ttu-id="5e35d-127">string</span><span class="sxs-lookup"><span data-stu-id="5e35d-127">string</span></span> | <span data-ttu-id="5e35d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5e35d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a4258-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4258-126">Authorization</span></span> | <span data-ttu-id="a4258-127">string</span><span class="sxs-lookup"><span data-stu-id="a4258-127">string</span></span> | <span data-ttu-id="a4258-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a4258-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5e35d-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="5e35d-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4258-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="a4258-130">Request body</span></span>
 
-<span data-ttu-id="5e35d-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5e35d-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a4258-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a4258-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5e35d-132">响应</span><span class="sxs-lookup"><span data-stu-id="5e35d-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a4258-132">响应</span><span class="sxs-lookup"><span data-stu-id="a4258-132">Response</span></span>
 
-<span data-ttu-id="5e35d-133">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="5e35d-133">If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
+<span data-ttu-id="a4258-133">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a4258-133">If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5e35d-134">示例</span><span class="sxs-lookup"><span data-stu-id="5e35d-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a4258-134">示例</span><span class="sxs-lookup"><span data-stu-id="a4258-134">Examples</span></span>
 
-### <a name="example-1-list-mail-folders"></a><span data-ttu-id="5e35d-135">示例1：列出邮件文件夹</span><span class="sxs-lookup"><span data-stu-id="5e35d-135">Example 1: List mail folders</span></span>
+### <a name="example-1-list-mail-folders"></a><span data-ttu-id="a4258-135">示例1：列出邮件文件夹</span><span class="sxs-lookup"><span data-stu-id="a4258-135">Example 1: List mail folders</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5e35d-136">请求</span><span class="sxs-lookup"><span data-stu-id="5e35d-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a4258-136">请求</span><span class="sxs-lookup"><span data-stu-id="a4258-136">Request</span></span>
 
-<span data-ttu-id="5e35d-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5e35d-137">The following is an example of the request.</span></span>
+<span data-ttu-id="a4258-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a4258-137">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5e35d-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e35d-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a4258-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4258-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_childfolders"
@@ -75,15 +75,15 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
-# <a name="c"></a>[<span data-ttu-id="5e35d-139">C#</span><span class="sxs-lookup"><span data-stu-id="5e35d-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a4258-139">C#</span><span class="sxs-lookup"><span data-stu-id="a4258-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e35d-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e35d-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a4258-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4258-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e35d-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e35d-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a4258-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4258-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,11 +92,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="5e35d-142">响应</span><span class="sxs-lookup"><span data-stu-id="5e35d-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a4258-142">响应</span><span class="sxs-lookup"><span data-stu-id="a4258-142">Response</span></span>
 
-<span data-ttu-id="5e35d-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5e35d-143">The following is an example of the response.</span></span>
+<span data-ttu-id="a4258-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a4258-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5e35d-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5e35d-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e35d-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5e35d-145">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a4258-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a4258-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a4258-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a4258-145">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,14 +142,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a><span data-ttu-id="5e35d-146">示例2：列出邮件搜索文件夹</span><span class="sxs-lookup"><span data-stu-id="5e35d-146">Example 2: List mail search folders</span></span>
+### <a name="example-2-list-mail-search-folders"></a><span data-ttu-id="a4258-146">示例2：列出邮件搜索文件夹</span><span class="sxs-lookup"><span data-stu-id="a4258-146">Example 2: List mail search folders</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5e35d-147">请求</span><span class="sxs-lookup"><span data-stu-id="5e35d-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a4258-147">请求</span><span class="sxs-lookup"><span data-stu-id="a4258-147">Request</span></span>
 
-<span data-ttu-id="5e35d-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5e35d-148">The following is an example of the request.</span></span>
+<span data-ttu-id="a4258-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a4258-148">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5e35d-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e35d-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a4258-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4258-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
@@ -158,26 +158,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
-# <a name="c"></a>[<span data-ttu-id="5e35d-150">C#</span><span class="sxs-lookup"><span data-stu-id="5e35d-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a4258-150">C#</span><span class="sxs-lookup"><span data-stu-id="a4258-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-of-searchfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e35d-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e35d-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a4258-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4258-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-of-searchfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e35d-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e35d-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a4258-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4258-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-of-searchfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5e35d-153">响应</span><span class="sxs-lookup"><span data-stu-id="5e35d-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a4258-153">响应</span><span class="sxs-lookup"><span data-stu-id="a4258-153">Response</span></span>
 
-<span data-ttu-id="5e35d-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5e35d-154">The following is an example of the response.</span></span>
+<span data-ttu-id="a4258-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a4258-154">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5e35d-155">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5e35d-155">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e35d-156">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5e35d-156">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a4258-155">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a4258-155">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a4258-156">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a4258-156">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
