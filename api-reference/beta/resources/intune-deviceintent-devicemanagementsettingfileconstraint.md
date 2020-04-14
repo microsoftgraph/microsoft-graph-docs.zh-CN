@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingFileConstraint 资源类型
 description: 强制实施文件扩展名的约束可接受给定设置
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a9e5a3f4ce8cec54dbdd0f1a690b039b2da0524
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6864d70c31096147a51ff4b3e67a7053d93ed27b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785321"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443244"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>deviceManagementSettingFileConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42785321"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportedExtensions|String collection|为此设置上载可接受的文件扩展名|
+|supportedExtensions|String 集合|为此设置上载可接受的文件扩展名|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,20 +1,20 @@
 ---
 title: 设备资源类型
-description: 表示在目录中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
+description: 表示在目录中注册的设备。
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 293fb5c217b7b3433b1272d727029734b9314239
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ef0fa3befb3c0c71aa42a29a68d8d97e5c52a67
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442994"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,8 +31,8 @@ ms.locfileid: "42507252"
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员的组。 |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备所属的组。 此操作是可传递的。 |
-|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
+|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
 |**开放扩展**| | |
@@ -44,7 +44,7 @@ ms.locfileid: "42507252"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
@@ -53,7 +53,7 @@ ms.locfileid: "42507252"
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|字符串| 设备显示名称。必需。 |
 |id|String|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|布尔|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
@@ -77,10 +77,10 @@ ms.locfileid: "42507252"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 NULL。|
+|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 此为只读属性。 可为 Null。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 此为只读属性。 可为 NULL。|
-|extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
+|extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 Null。|
+|registeredOwners|[directoryObject](directoryobject.md) collection|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
 | 命令 | [命令](command.md)集合 | 发送到此设备的一组命令|
 

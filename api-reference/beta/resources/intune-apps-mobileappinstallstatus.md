@@ -1,18 +1,20 @@
 ---
 title: mobileAppInstallStatus 资源类型
 description: 包含设备的移动应用程序安装状态的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f62b21b583d72607582eadb9c3fadd3c5045f15
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dc5ffc7c5dcf1800736b3a2f336069233d29e6a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797809"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440372"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42797809"
 |[列出 mobileAppInstallStatuses](../api/intune-apps-mobileappinstallstatus-list.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|列出[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性和关系。|
 |[获取 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-get.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|读取[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性和关系。|
 |[创建 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-create.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|创建新的[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。|
-|[删除 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|None|删除[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)。|
+|[删除 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|无|删除[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)。|
 |[更新 mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|更新[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象的属性。|
 
 ## <a name="properties"></a>属性

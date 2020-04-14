@@ -1,18 +1,20 @@
 ---
 title: 列出 managementConditions
 description: 列出 managementCondition 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 064054e0ddfc0c60a63111e02416314788de61e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 656ce7a4f08e21d68f11dc38f7f50eba1f0c06bb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804777"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441450"
 ---
 # <a name="list-managementconditions"></a>列出 managementConditions
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +86,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

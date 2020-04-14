@@ -1,18 +1,20 @@
 ---
 title: deviceCategory 资源类型
 description: 然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5132299abde233f68bb2b47033008d2d40719fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0aa67ac9dbe7be255ff1b27013f7e2eeecb7d185
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771353"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443630"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -35,7 +37,7 @@ ms.locfileid: "42771353"
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|说明|String|设备类别的说明（可选）。|
+|description|String|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无

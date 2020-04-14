@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementAutopilotEvent
 description: 更新 deviceManagementAutopilotEvent 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea3703d23eb45e9c91dd40cbd3cb3031b7e2cd30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ed84a7c1bee3c1b6a6a06136392350a6883d870d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800233"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443453"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>更新 deviceManagementAutopilotEvent
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -153,7 +155,6 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

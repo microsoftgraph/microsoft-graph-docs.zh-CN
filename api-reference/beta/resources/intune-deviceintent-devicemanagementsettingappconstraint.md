@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingAppConstraint 资源类型
 description: 强制实施设置的约束仅包含 vaild 应用程序类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b80fa581686692a47051405cc68f4d6d0694b95
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 012f20e69f79018ffecbac0ff4558687ec407bdd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785377"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443318"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>deviceManagementSettingAppConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42785377"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportedTypes|String collection|允许此设置的可接受的应用程序类型|
+|supportedTypes|String 集合|允许此设置的可接受的应用程序类型|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,18 +1,20 @@
 ---
 title: 删除 iosPkcsCertificateProfile
 description: 删除 iosPkcsCertificateProfile。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01da385e706ee65eebcc2f059e9859fa4a63c3a4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 534f1b58d996d325909c0b98a028b6bf56cc526a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42749919"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438837"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>删除 iosPkcsCertificateProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

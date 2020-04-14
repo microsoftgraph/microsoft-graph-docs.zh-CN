@@ -1,18 +1,20 @@
 ---
 title: localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b54aa37d7bbe78f1d8a8b308e7377e50a46389f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 933d78b3b9e0de1c586391b1544fe1eefdd9640b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790333"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439809"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

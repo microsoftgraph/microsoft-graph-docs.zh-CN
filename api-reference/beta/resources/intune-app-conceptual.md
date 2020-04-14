@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ecb082762fae148b2c947362a8099a9bc380e2f9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f609132a455e605996facc5d0b26c3c0af75b28
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437479"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -43,14 +43,17 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Android 管理的存储帐户注册目标](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Android 管理的存储帐户企业设置](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Android 托管的应用商店应用](intune-apps-androidmanagedstoreapp.md)
+- [Android 托管存储应用分配设置](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Android 托管的应用商店应用配置](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Android 托管的应用商店应用配置架构](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android 托管的应用商店应用配置架构项](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android 托管的应用商店应用配置架构项数据类型](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android 托管存储应用程序跟踪](intune-apps-androidmanagedstoreapptrack.md)
 - [Android 托管存储 web 应用](intune-apps-androidmanagedstorewebapp.md)
 - [Android 最低操作系统版本](intune-apps-androidminimumoperatingsystem.md)
 - [Android 权限操作](intune-apps-androidpermissionaction.md)
 - [Android 权限操作类型](intune-apps-androidpermissionactiontype.md)
+- [Android 配置文件适用性](intune-apps-androidprofileapplicability.md)
 - [Android 应用商店应用](intune-apps-androidstoreapp.md)
 - [应用配置设置项](intune-apps-appconfigurationsettingitem.md)
 - [证书状态](intune-apps-certificatestatus.md)

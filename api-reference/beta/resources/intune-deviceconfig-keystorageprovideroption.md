@@ -1,18 +1,20 @@
 ---
 title: keyStorageProviderOption 枚举类型
 description: 密钥存储提供程序（KSP）导入选项。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a2612aeb2cded950023a14136b71a8c7a55555a9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1d3098daf1d2baf30788328e8cf5c5f665029ab0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790410"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439950"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

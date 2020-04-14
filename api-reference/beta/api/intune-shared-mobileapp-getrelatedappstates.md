@@ -1,18 +1,20 @@
 ---
 title: getRelatedAppStates 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e47d77235ca2ca146e6f87d8a619b418e9a6d68
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: db38d8afa5c6be74bcc558c8cbdd7c141161c91d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441309"
 ---
 # <a name="getrelatedappstates-function"></a>getRelatedAppStates 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +97,6 @@ Content-Length: 481
   ]
 }
 ```
-
 
 
 

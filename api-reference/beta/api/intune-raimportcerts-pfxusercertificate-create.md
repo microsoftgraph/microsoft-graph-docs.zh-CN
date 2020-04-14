@@ -1,18 +1,20 @@
 ---
 title: 创建 pfxUserCertificate
 description: 创建新的 pfxUserCertificate 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b320c1d7893fabc824ec3c5c6a456df3bc45b26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3c564f89cb711981708684da2d8be943e8531e10
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801878"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437694"
 ---
 # <a name="create-pfxusercertificate"></a>创建 pfxUserCertificate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -133,7 +135,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

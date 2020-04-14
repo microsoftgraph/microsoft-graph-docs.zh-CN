@@ -1,18 +1,20 @@
 ---
 title: iosNetworkUsageRule 资源类型
 description: 网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26e62ee0d470d178b15a849c16f4e1678cc0152e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 422600c9bffd6b1e7849cabc30229645cab486e7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440471"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,7 +26,7 @@ ms.locfileid: "42790585"
 |属性|类型|说明|
 |:---|:---|:---|
 |managedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要应用此规则的托管应用的相关信息。 该集合最多可包含 500 个元素。|
-|cellularDataBlockWhenRoaming|布尔值|如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。|
+|cellularDataBlockWhenRoaming|Boolean|如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。|
 |cellularDataBlocked|Boolean|如果设置为 true，则在任何时间均不允许相应的托管应用使用手机网络数据。|
 
 ## <a name="relationships"></a>关系

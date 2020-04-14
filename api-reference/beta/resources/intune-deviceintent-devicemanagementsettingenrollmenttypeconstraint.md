@@ -1,18 +1,20 @@
 ---
 title: deviceManagementSettingEnrollmentTypeConstraint 资源类型
 description: 强制实施应用于设置的注册类型的约束
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c5d34f381e7f4b52039551fb120e4691bc40026
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: afe72c82b80d6d3207ffd5298b313a02c63090b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443251"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>deviceManagementSettingEnrollmentTypeConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42785328"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enrollmentTypes|String collection|注册类型列表|
+|enrollmentTypes|String 集合|注册类型列表|
 
 ## <a name="relationships"></a>关系
 无

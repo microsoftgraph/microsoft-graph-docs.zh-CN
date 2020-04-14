@@ -2,19 +2,19 @@
 title: bookingAppointment 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3cd4be5fc83614fe81e0df4453623a7d4bd7d8b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f08b33cd223a140373f6130f19099ce0c941d8b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508015"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442190"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -49,7 +49,7 @@ ms.locfileid: "42508015"
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft 预订中发票的 URL。|
-|optOutOfCustomerEmail|布尔|如果为 True，则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
+|optOutOfCustomerEmail|Boolean|如果为 True，则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
 |postBuffer|持续时间|在约会结束后保留的时间长度，例如，进行清理。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
 |preBuffer|持续时间|在约会开始之前保留的时间量（以供准备）为例。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
 |特价|双精度|指定[bookingService](bookingservice.md)的约会的常规价格。|

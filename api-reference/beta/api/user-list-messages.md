@@ -3,14 +3,14 @@ title: List messages
 description: '获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 '
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: d7398b7013fdb6e2463db5dd94b147f45151fcea
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: e83eea71f205727b25f2e6a7dbdf0d8c4a651151
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892686"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440610"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -31,7 +31,7 @@ ms.locfileid: "42892686"
 * 如果该应用具有应用程序权限，或者
 * 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
-> **注释**请注意，此操作包含 Microsoft 团队在其响应中聊天消息的[已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)。
+> **注意**：请注意[已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
  
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

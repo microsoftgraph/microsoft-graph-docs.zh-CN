@@ -2,19 +2,19 @@
 title: mailFolder 资源类型
 description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522825"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443095"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -79,7 +79,7 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
-|id|字符串|MailFolder 的唯一标识符。|
+|id|String|MailFolder 的唯一标识符。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|

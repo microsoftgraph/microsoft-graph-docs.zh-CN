@@ -2,19 +2,19 @@
 title: hybridAgentUpdaterConfiguration 资源类型
 description: hybridAgentUpdaterConfiguration 资源类型。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c10173d099ac7c2ad9714b0240f306e783fdd6da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5054ab7c22cb35a846df29ea058e0d3c02c5e7e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440510"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>hybridAgentUpdaterConfiguration 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42496808"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|allowUpdateConfigurationOverride|布尔|指示是否将跳过更新配置，并且代理将在下一版本的代理可用时收到更新。|
+|allowUpdateConfigurationOverride|Boolean|指示是否将跳过更新配置，并且代理将在下一版本的代理可用时收到更新。|
 |deferUpdateDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |updateWindow|[updateWindow](updatewindow.md)||
 

@@ -3,18 +3,18 @@ title: synchronizationJob： pause
 description: 临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从开始调用时停止的位置继续。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1dd3b835242f40af98bdfa7e3ce732adb78f6a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b49d19273da7ef832e27d643c7133132c19190f9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453001"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437554"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob： pause
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

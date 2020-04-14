@@ -1,18 +1,20 @@
 ---
 title: windowsUpdateForBusinessUpdateWeeks 枚举类型
 description: 在每月的几周安排更新安装
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e2fd73e4bd9c1586c984b2c16b6b7d4aa65bf7c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b0e0149cc25757ebcb45b50c3d58ad3c7c54fd2b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441143"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

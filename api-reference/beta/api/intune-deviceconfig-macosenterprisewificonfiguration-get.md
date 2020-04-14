@@ -1,18 +1,20 @@
 ---
 title: 获取 macOSEnterpriseWiFiConfiguration
 description: 读取 macOSEnterpriseWiFiConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21c840ce54ddf6a30413560b60fbcc714f34d4df
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 98cadb3defce4e9152e6629d7e0d0f829f3f90ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42746449"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437993"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>获取 macOSEnterpriseWiFiConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -125,7 +127,6 @@ Content-Length: 2149
   }
 }
 ```
-
 
 
 

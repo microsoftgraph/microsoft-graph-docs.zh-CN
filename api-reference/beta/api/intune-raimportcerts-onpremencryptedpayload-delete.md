@@ -1,18 +1,20 @@
 ---
 title: 删除 onPremEncryptedPayload
 description: 删除 onPremEncryptedPayload。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd060a9ab9d9c0e7b6660bf4600321d1fe46f067
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 683fd1b859d0e3ecce86b9f9fd9ebe5488c05b77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437821"
 ---
 # <a name="delete-onpremencryptedpayload"></a>删除 onPremEncryptedPayload
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/onPremEncryptedPayloads/{onPremEncrypted
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: keyIntegerValuePair 资源类型
 description: 带有字符串键和整数值的键-值对。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f2a3f4201956db2cbca001f8d94f6ae6ecc90d7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 67a48f48f52c613c13552506d9cc76823bb042f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439978"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>keyIntegerValuePair 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

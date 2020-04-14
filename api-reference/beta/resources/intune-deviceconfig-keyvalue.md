@@ -1,18 +1,20 @@
 ---
 title: 键值资源类型
 description: 项值定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e875ba06ff704f01cc2fd7b7dd48c2b8cfcfba63
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 86a18d434722cff9b6737dd14a83e8aa38ed102c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790382"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439874"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

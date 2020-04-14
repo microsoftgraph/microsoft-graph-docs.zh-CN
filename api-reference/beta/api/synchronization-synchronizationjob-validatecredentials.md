@@ -3,18 +3,18 @@ title: 'synchronizationJob: validateCredentials'
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fbbace2c81ec55002743f978a5b2987db175779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437510"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|布尔|时`true`，将`credentials`忽略该参数，而改为验证以前保存的凭据（如果有）。 |
+|useSavedCredentials|Boolean|时`true`，将`credentials`忽略该参数，而改为验证以前保存的凭据（如果有）。 |
 |凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|要验证的凭据。 当`useSavedCredentials`参数为`true`时忽略。|
 
 ## <a name="response"></a>响应

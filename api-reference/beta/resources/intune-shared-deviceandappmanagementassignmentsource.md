@@ -1,18 +1,20 @@
 ---
 title: deviceAndAppManagementAssignmentSource 枚举类型
 description: 表示工作分配的源。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bb5af5333e98e0b95ae24f0ae16caa7f468a91ff
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d860fdf85173ce9c93b3061059a2a74aa36632ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771598"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443637"
 ---
 # <a name="deviceandappmanagementassignmentsource-enum-type"></a>deviceAndAppManagementAssignmentSource 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

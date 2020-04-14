@@ -3,18 +3,18 @@ title: 删除 synchronizationSchema
 description: 删除自定义架构并将架构重置为默认配置。 如果在模板的上下文中删除了架构，它会将架构重置为与模板关联的默认架构`factoryTag`。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: affb05ba026be7c0ed4fbc4c09c09d1af8715ebc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de8e8eaf2d8a5473a530c8497aca7e40739ed19c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452944"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443355"
 ---
 # <a name="delete-synchronizationschema"></a>删除 synchronizationSchema
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

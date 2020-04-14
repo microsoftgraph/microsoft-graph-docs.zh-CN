@@ -2,19 +2,19 @@
 title: emailAppUsageVersionsUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: edc9242a99f0a993b2fa21c95259582bdf31c3da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c7fec61c71b9a5343470eec87fa59d65f59020f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440531"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>emailAppUsageVersionsUserCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 

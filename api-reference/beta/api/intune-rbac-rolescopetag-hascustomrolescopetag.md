@@ -1,18 +1,20 @@
 ---
 title: hasCustomRoleScopeTag 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00d3425a8f34b6d1cd09384f7ed7062d31da978b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a34f986559f7ba81465f51b0858577ee92a5c6da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801577"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437607"
 ---
 # <a name="hascustomrolescopetag-function"></a>hasCustomRoleScopeTag 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -70,7 +72,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

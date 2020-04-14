@@ -1,18 +1,20 @@
 ---
 title: roleScopeTagInfo 资源类型
 description: 包含 Role Scope Tag 对象的属性的类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c932a1353f684771a1979ae970141d674f726142
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7240e06e34d003eceeece5c8b7fbb365ed20bf1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797407"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441211"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>roleScopeTagInfo 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

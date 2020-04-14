@@ -1,18 +1,20 @@
 ---
 title: 列出 macOSDeviceFeaturesConfigurations
 description: 列出 macOSDeviceFeaturesConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96b6bbdab3d459d296371b2e2d2534bf9433cb39
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e9dfac260f206adc4bd9d1ab6a67ca47dff46f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42746960"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438130"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>列出 macOSDeviceFeaturesConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -151,7 +153,6 @@ Content-Length: 2985
   ]
 }
 ```
-
 
 
 

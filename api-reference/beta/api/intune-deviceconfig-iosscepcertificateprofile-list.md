@@ -1,18 +1,20 @@
 ---
 title: 列出 iosScepCertificateProfiles
 description: 列出 iosScepCertificateProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f82c026ba15265fcd41819ad845ddc766f66b5c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d9014669c1f44d1c85e522a1bece11636c66507e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42749541"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438740"
 ---
 # <a name="list-iosscepcertificateprofiles"></a>列出 iosScepCertificateProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -132,7 +134,6 @@ Content-Length: 2373
   ]
 }
 ```
-
 
 
 

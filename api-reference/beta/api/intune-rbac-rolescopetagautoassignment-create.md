@@ -1,18 +1,20 @@
 ---
 title: 创建 roleScopeTagAutoAssignment
 description: 创建新的 roleScopeTagAutoAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46f6e41fb9cdd461ad5fcfe6cd55552618f004ed
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b18b5e5af1f3a65485c633145cd5288c4bf7c070
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437576"
 ---
 # <a name="create-rolescopetagautoassignment"></a>创建 roleScopeTagAutoAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +93,6 @@ Content-Length: 215
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 description: LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f018cb88e5cfe14d33e5783f6aab6cefd2a98dbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 39a432d79d5d2e374d186ba3e3d5f7f1fb954f95
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790354"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439830"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

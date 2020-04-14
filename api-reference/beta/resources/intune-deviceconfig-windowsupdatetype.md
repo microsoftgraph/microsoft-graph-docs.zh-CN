@@ -1,18 +1,20 @@
 ---
 title: windowsUpdateType 枚举类型
 description: 将从哪些分支设备接收其更新
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35fe62ada736a0cd5c3a073e49851b6cad9320ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77dc988570ebd089d273fd767987068313e03866
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786149"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441084"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

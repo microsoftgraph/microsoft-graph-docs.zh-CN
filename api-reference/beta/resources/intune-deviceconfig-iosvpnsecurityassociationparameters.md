@@ -1,18 +1,20 @@
 ---
 title: iosVpnSecurityAssociationParameters 资源类型
 description: VPN 安全关联参数
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3da905a68222b60bef7225f34afc2b4a0b39a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f52d4d05945a29a1eaa44823d13b41eb560f688a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790494"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440098"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>iosVpnSecurityAssociationParameters 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

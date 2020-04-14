@@ -1,18 +1,20 @@
 ---
 title: 列出 depIOSEnrollmentProfiles
 description: 列出 depIOSEnrollmentProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0de9564d80b3aa9b6cad8747ef3872f300b82ac1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 017d0053ba7ceb29d8040c49d60486a6e0762197
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813346"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443042"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -126,7 +128,6 @@ Content-Length: 2322
   ]
 }
 ```
-
 
 
 

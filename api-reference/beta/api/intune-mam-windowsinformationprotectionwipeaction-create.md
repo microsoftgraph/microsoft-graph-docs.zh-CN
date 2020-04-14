@@ -1,18 +1,20 @@
 ---
 title: 创建 windowsInformationProtectionWipeAction
 description: 创建新的 windowsInformationProtectionWipeAction 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 817983b08e2053278687175c6c2b1e8171d14d66
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18174f52cc5adec826ff497797f92ec7ce0516c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440792"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>创建 windowsInformationProtectionWipeAction
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -102,7 +104,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

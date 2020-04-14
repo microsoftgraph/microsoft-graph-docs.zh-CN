@@ -1,18 +1,20 @@
 ---
 title: 列出 iosImportedPFXCertificateProfiles
 description: 列出 iosImportedPFXCertificateProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04ad52cb992d29e0ec297c18f4eb943deb04044c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac6921b2d25bc8094ce43c4ee04f33d9c94501df
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42750031"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438874"
 ---
 # <a name="list-iosimportedpfxcertificateprofiles"></a>列出 iosImportedPFXCertificateProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -106,7 +108,6 @@ Content-Length: 1413
   ]
 }
 ```
-
 
 
 

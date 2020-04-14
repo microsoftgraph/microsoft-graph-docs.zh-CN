@@ -3,18 +3,18 @@ title: 位置资源类型
 description: 表示事件的位置信息。
 localization_priority: Normal
 doc_type: resourcePageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 9b590d011570981fd926a5e12a8c89e6059b3b41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 265dcc7626aaaee1a43997b8c51cea9feb4763c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442714"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

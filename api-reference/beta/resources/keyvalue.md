@@ -2,19 +2,19 @@
 title: 键值资源类型
 description: 提供有关登录请求的其他相关信息
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 46914cfd74eac45726bc17fc0661a861ad402534
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3f85936e94da0485d62478f54eed8918967396b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523021"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442721"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

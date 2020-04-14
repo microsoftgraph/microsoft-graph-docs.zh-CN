@@ -1,18 +1,20 @@
 ---
 title: iosSingleSignOnSettings 资源类型
 description: 单一登录的 iOS Kerberos 身份验证设置
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd959b3019a6bd4ce553b53a70042fffd5c9b277
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f43f5feea67f9f94a8aa5f9179add26deb84ee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790536"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440187"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,7 +26,7 @@ ms.locfileid: "42790536"
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|允许使用此登录名的应用程序标识符列表。 如果省略此字段，则登录将应用于设备上的所有应用程序。 该集合最多可包含 500 个元素。|
-|allowedUrls|String collection|必须匹配才能使用此登录的 HTTP Url 的列表。 对于 iOS 9.0 或更高版本，可以使用通配符。|
+|allowedUrls|String 集合|必须匹配才能使用此登录的 HTTP Url 的列表。 对于 iOS 9.0 或更高版本，可以使用通配符。|
 |displayName|String|在接收设备上显示的登录设置的显示名称。|
 |kerberosPrincipalName|String|Kerberos 主体名称。 如果未提供，则在配置文件安装过程中系统会提示用户一个。|
 |kerberosRealm|String|Kerberos 领域名称。 区分大小写。|

@@ -2,19 +2,19 @@
 title: 创建 outlookTask
 description: 在用户邮箱中的默认任务组（`My Tasks`）和默认任务文件夹（`Tasks`）中创建一个 Outlook 任务。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b2cf7b56f7721145e577a25759c8edff8c4c9ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 855497074695876a9ec05a24ef2320d0b12dc668
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440681"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

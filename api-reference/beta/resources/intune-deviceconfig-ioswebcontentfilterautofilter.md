@@ -1,18 +1,20 @@
 ---
 title: iosWebContentFilterAutoFilter 资源类型
 description: 表示 iOS Web 内容筛选器设置类型，该类型启用 iOS 自动筛选功能并允许其他 URL 访问控制。 在不使用属性值的情况下构建时，iOS 设备将启用自动筛选器（而不考虑）。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61054fa3e8d8894203a72b32cbb68ebb91e05aeb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01063b5709b0e10730e542f00149d6c6e3320d0a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790473"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440068"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +28,8 @@ ms.locfileid: "42790473"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedUrls|String collection|允许访问的其他 Url|
-|blockedUrls|String collection|为 access 阻止的其他 Url|
+|allowedUrls|String 集合|允许访问的其他 Url|
+|blockedUrls|String 集合|为 access 阻止的其他 Url|
 
 ## <a name="relationships"></a>关系
 无

@@ -2,19 +2,19 @@
 title: conditionalAccessSessionControl 资源类型
 description: 会话控制基类型。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3d463c6b3c9a57b40b202e8291890aca20afb909
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 856eaa294916bb47022307e3c2252400033c7461
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507518"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442175"
 ---
 # <a name="conditionalaccesssessioncontrol-resource-type"></a>conditionalAccessSessionControl 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: 获取 iosPkcsCertificateProfile
 description: 读取 iosPkcsCertificateProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 849f46d63fbe7c484511fb6a2d4bcedf0b05c463
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2e210ea83a29399f9b65c053aa2cf81bdf259954
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42749877"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438822"
 ---
 # <a name="get-iospkcscertificateprofile"></a>获取 iosPkcsCertificateProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -125,7 +127,6 @@ Content-Length: 2115
   }
 }
 ```
-
 
 
 
