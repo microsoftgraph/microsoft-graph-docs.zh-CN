@@ -1,33 +1,35 @@
 ---
 title: defenderMonitorFileActivity 枚举类型
 description: 监视文件活动的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dc43905a4fa245a497d28c8bae97724534a6470f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fd9fce6cd47ead0d68c57658fa34404f52f5d7b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413163"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="c2c38-103">defenderMonitorFileActivity 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c2c38-103">defenderMonitorFileActivity enum type</span></span>
+# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="e8339-103">defenderMonitorFileActivity 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e8339-103">defenderMonitorFileActivity enum type</span></span>
 
-> <span data-ttu-id="c2c38-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c2c38-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e8339-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e8339-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c2c38-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c2c38-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e8339-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e8339-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="c2c38-106">监视文件活动的可能值。</span><span class="sxs-lookup"><span data-stu-id="c2c38-106">Possible values for monitoring file activity.</span></span>
+> <span data-ttu-id="e8339-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e8339-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c2c38-107">成员</span><span class="sxs-lookup"><span data-stu-id="c2c38-107">Members</span></span>
-|<span data-ttu-id="c2c38-108">成员</span><span class="sxs-lookup"><span data-stu-id="c2c38-108">Member</span></span>|<span data-ttu-id="c2c38-109">值</span><span class="sxs-lookup"><span data-stu-id="c2c38-109">Value</span></span>|<span data-ttu-id="c2c38-110">说明</span><span class="sxs-lookup"><span data-stu-id="c2c38-110">Description</span></span>|
+<span data-ttu-id="e8339-107">监视文件活动的可能值。</span><span class="sxs-lookup"><span data-stu-id="e8339-107">Possible values for monitoring file activity.</span></span>
+
+## <a name="members"></a><span data-ttu-id="e8339-108">成员</span><span class="sxs-lookup"><span data-stu-id="e8339-108">Members</span></span>
+|<span data-ttu-id="e8339-109">成员</span><span class="sxs-lookup"><span data-stu-id="e8339-109">Member</span></span>|<span data-ttu-id="e8339-110">值</span><span class="sxs-lookup"><span data-stu-id="e8339-110">Value</span></span>|<span data-ttu-id="e8339-111">说明</span><span class="sxs-lookup"><span data-stu-id="e8339-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c2c38-111">定制</span><span class="sxs-lookup"><span data-stu-id="c2c38-111">userDefined</span></span>|<span data-ttu-id="c2c38-112">0</span><span class="sxs-lookup"><span data-stu-id="c2c38-112">0</span></span>|<span data-ttu-id="c2c38-113">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="c2c38-113">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="c2c38-114">disable</span><span class="sxs-lookup"><span data-stu-id="c2c38-114">disable</span></span>|<span data-ttu-id="c2c38-115">1</span><span class="sxs-lookup"><span data-stu-id="c2c38-115">1</span></span>|<span data-ttu-id="c2c38-116">禁用监控文件活动。</span><span class="sxs-lookup"><span data-stu-id="c2c38-116">Disable monitoring file activity.</span></span>|
-|<span data-ttu-id="c2c38-117">monitorAllFiles</span><span class="sxs-lookup"><span data-stu-id="c2c38-117">monitorAllFiles</span></span>|<span data-ttu-id="c2c38-118">双面</span><span class="sxs-lookup"><span data-stu-id="c2c38-118">2</span></span>|<span data-ttu-id="c2c38-119">监视所有文件。</span><span class="sxs-lookup"><span data-stu-id="c2c38-119">Monitor all files.</span></span>|
-|<span data-ttu-id="c2c38-120">monitorIncomingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="c2c38-120">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="c2c38-121">第三章</span><span class="sxs-lookup"><span data-stu-id="c2c38-121">3</span></span>| <span data-ttu-id="c2c38-122">仅监视传入的文件。</span><span class="sxs-lookup"><span data-stu-id="c2c38-122">Monitor incoming files only.</span></span>|
-|<span data-ttu-id="c2c38-123">monitorOutgoingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="c2c38-123">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="c2c38-124">4 </span><span class="sxs-lookup"><span data-stu-id="c2c38-124">4</span></span>|<span data-ttu-id="c2c38-125">仅监视传出文件。</span><span class="sxs-lookup"><span data-stu-id="c2c38-125">Monitor outgoing files only.</span></span>|
+|<span data-ttu-id="e8339-112">定制</span><span class="sxs-lookup"><span data-stu-id="e8339-112">userDefined</span></span>|<span data-ttu-id="e8339-113">0</span><span class="sxs-lookup"><span data-stu-id="e8339-113">0</span></span>|<span data-ttu-id="e8339-114">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="e8339-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="e8339-115">disable</span><span class="sxs-lookup"><span data-stu-id="e8339-115">disable</span></span>|<span data-ttu-id="e8339-116">1</span><span class="sxs-lookup"><span data-stu-id="e8339-116">1</span></span>|<span data-ttu-id="e8339-117">禁用监控文件活动。</span><span class="sxs-lookup"><span data-stu-id="e8339-117">Disable monitoring file activity.</span></span>|
+|<span data-ttu-id="e8339-118">monitorAllFiles</span><span class="sxs-lookup"><span data-stu-id="e8339-118">monitorAllFiles</span></span>|<span data-ttu-id="e8339-119">双面</span><span class="sxs-lookup"><span data-stu-id="e8339-119">2</span></span>|<span data-ttu-id="e8339-120">监视所有文件。</span><span class="sxs-lookup"><span data-stu-id="e8339-120">Monitor all files.</span></span>|
+|<span data-ttu-id="e8339-121">monitorIncomingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="e8339-121">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="e8339-122">第三章</span><span class="sxs-lookup"><span data-stu-id="e8339-122">3</span></span>| <span data-ttu-id="e8339-123">仅监视传入的文件。</span><span class="sxs-lookup"><span data-stu-id="e8339-123">Monitor incoming files only.</span></span>|
+|<span data-ttu-id="e8339-124">monitorOutgoingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="e8339-124">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="e8339-125">4 </span><span class="sxs-lookup"><span data-stu-id="e8339-125">4</span></span>|<span data-ttu-id="e8339-126">仅监视传出文件。</span><span class="sxs-lookup"><span data-stu-id="e8339-126">Monitor outgoing files only.</span></span>|
 
 
 

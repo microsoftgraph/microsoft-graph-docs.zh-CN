@@ -1,35 +1,37 @@
 ---
 title: 更新 androidManagedStoreAppConfiguration
 description: 更新 androidManagedStoreAppConfiguration 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b490c747168265367b0609585fc29d2f36bc03e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8dbcb5e73fbb672a80aef01e28978c8411f63831
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762208"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417419"
 ---
-# <a name="update-androidmanagedstoreappconfiguration"></a><span data-ttu-id="4428d-103">更新 androidManagedStoreAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="4428d-103">Update androidManagedStoreAppConfiguration</span></span>
+# <a name="update-androidmanagedstoreappconfiguration"></a><span data-ttu-id="85b2d-103">更新 androidManagedStoreAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="85b2d-103">Update androidManagedStoreAppConfiguration</span></span>
 
-> <span data-ttu-id="4428d-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4428d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="85b2d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85b2d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4428d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4428d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="85b2d-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="85b2d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="4428d-106">更新[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4428d-106">Update the properties of a [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.</span></span>
+> <span data-ttu-id="85b2d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="85b2d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4428d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4428d-107">Prerequisites</span></span>
-<span data-ttu-id="4428d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4428d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="85b2d-107">更新[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="85b2d-107">Update the properties of a [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.</span></span>
 
-|<span data-ttu-id="4428d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4428d-110">Permission type</span></span>|<span data-ttu-id="4428d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4428d-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="85b2d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="85b2d-108">Prerequisites</span></span>
+<span data-ttu-id="85b2d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="85b2d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="85b2d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="85b2d-111">Permission type</span></span>|<span data-ttu-id="85b2d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="85b2d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4428d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4428d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4428d-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4428d-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4428d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4428d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4428d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4428d-115">Not supported.</span></span>|
-|<span data-ttu-id="4428d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4428d-116">Application</span></span>|<span data-ttu-id="4428d-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4428d-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="85b2d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="85b2d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="85b2d-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85b2d-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="85b2d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="85b2d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="85b2d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="85b2d-116">Not supported.</span></span>|
+|<span data-ttu-id="85b2d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="85b2d-117">Application</span></span>|<span data-ttu-id="85b2d-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85b2d-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4428d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4428d-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85b2d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="85b2d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,45 +40,46 @@ ms.locfileid: "42762208"
 PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4428d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4428d-119">Request headers</span></span>
-|<span data-ttu-id="4428d-120">标头</span><span class="sxs-lookup"><span data-stu-id="4428d-120">Header</span></span>|<span data-ttu-id="4428d-121">值</span><span class="sxs-lookup"><span data-stu-id="4428d-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="85b2d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="85b2d-120">Request headers</span></span>
+|<span data-ttu-id="85b2d-121">标头</span><span class="sxs-lookup"><span data-stu-id="85b2d-121">Header</span></span>|<span data-ttu-id="85b2d-122">值</span><span class="sxs-lookup"><span data-stu-id="85b2d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4428d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4428d-122">Authorization</span></span>|<span data-ttu-id="4428d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4428d-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4428d-124">接受</span><span class="sxs-lookup"><span data-stu-id="4428d-124">Accept</span></span>|<span data-ttu-id="4428d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4428d-125">application/json</span></span>|
+|<span data-ttu-id="85b2d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="85b2d-123">Authorization</span></span>|<span data-ttu-id="85b2d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="85b2d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="85b2d-125">接受</span><span class="sxs-lookup"><span data-stu-id="85b2d-125">Accept</span></span>|<span data-ttu-id="85b2d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="85b2d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4428d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4428d-126">Request body</span></span>
-<span data-ttu-id="4428d-127">在请求正文中，提供[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4428d-127">In the request body, supply a JSON representation for the [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85b2d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="85b2d-127">Request body</span></span>
+<span data-ttu-id="85b2d-128">在请求正文中，提供[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="85b2d-128">In the request body, supply a JSON representation for the [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.</span></span>
 
-<span data-ttu-id="4428d-128">下表显示创建[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4428d-128">The following table shows the properties that are required when you create the [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).</span></span>
+<span data-ttu-id="85b2d-129">下表显示创建[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="85b2d-129">The following table shows the properties that are required when you create the [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).</span></span>
 
-|<span data-ttu-id="4428d-129">属性</span><span class="sxs-lookup"><span data-stu-id="4428d-129">Property</span></span>|<span data-ttu-id="4428d-130">类型</span><span class="sxs-lookup"><span data-stu-id="4428d-130">Type</span></span>|<span data-ttu-id="4428d-131">说明</span><span class="sxs-lookup"><span data-stu-id="4428d-131">Description</span></span>|
+|<span data-ttu-id="85b2d-130">属性</span><span class="sxs-lookup"><span data-stu-id="85b2d-130">Property</span></span>|<span data-ttu-id="85b2d-131">类型</span><span class="sxs-lookup"><span data-stu-id="85b2d-131">Type</span></span>|<span data-ttu-id="85b2d-132">说明</span><span class="sxs-lookup"><span data-stu-id="85b2d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4428d-132">id</span><span class="sxs-lookup"><span data-stu-id="4428d-132">id</span></span>|<span data-ttu-id="4428d-133">字符串</span><span class="sxs-lookup"><span data-stu-id="4428d-133">String</span></span>|<span data-ttu-id="4428d-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4428d-134">Key of the entity.</span></span> <span data-ttu-id="4428d-135">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-135">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-136">targetedMobileApps</span><span class="sxs-lookup"><span data-stu-id="4428d-136">targetedMobileApps</span></span>|<span data-ttu-id="4428d-137">String 集合</span><span class="sxs-lookup"><span data-stu-id="4428d-137">String collection</span></span>|<span data-ttu-id="4428d-138">关联的应用。</span><span class="sxs-lookup"><span data-stu-id="4428d-138">the associated app.</span></span> <span data-ttu-id="4428d-139">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-139">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="4428d-140">roleScopeTagIds</span></span>|<span data-ttu-id="4428d-141">String collection</span><span class="sxs-lookup"><span data-stu-id="4428d-141">String collection</span></span>|<span data-ttu-id="4428d-142">此应用配置实体的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="4428d-142">List of Scope Tags for this App configuration entity.</span></span> <span data-ttu-id="4428d-143">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-143">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4428d-144">createdDateTime</span></span>|<span data-ttu-id="4428d-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4428d-145">DateTimeOffset</span></span>|<span data-ttu-id="4428d-146">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="4428d-146">DateTime the object was created.</span></span> <span data-ttu-id="4428d-147">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-147">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-148">说明</span><span class="sxs-lookup"><span data-stu-id="4428d-148">description</span></span>|<span data-ttu-id="4428d-149">String</span><span class="sxs-lookup"><span data-stu-id="4428d-149">String</span></span>|<span data-ttu-id="4428d-150">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="4428d-150">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="4428d-151">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-151">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-152">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4428d-152">lastModifiedDateTime</span></span>|<span data-ttu-id="4428d-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4428d-153">DateTimeOffset</span></span>|<span data-ttu-id="4428d-154">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="4428d-154">DateTime the object was last modified.</span></span> <span data-ttu-id="4428d-155">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-155">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-156">displayName</span><span class="sxs-lookup"><span data-stu-id="4428d-156">displayName</span></span>|<span data-ttu-id="4428d-157">String</span><span class="sxs-lookup"><span data-stu-id="4428d-157">String</span></span>|<span data-ttu-id="4428d-158">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="4428d-158">Admin provided name of the device configuration.</span></span> <span data-ttu-id="4428d-159">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-159">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-160">version</span><span class="sxs-lookup"><span data-stu-id="4428d-160">version</span></span>|<span data-ttu-id="4428d-161">Int32</span><span class="sxs-lookup"><span data-stu-id="4428d-161">Int32</span></span>|<span data-ttu-id="4428d-162">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="4428d-162">Version of the device configuration.</span></span> <span data-ttu-id="4428d-163">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="4428d-163">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="4428d-164">packageId</span><span class="sxs-lookup"><span data-stu-id="4428d-164">packageId</span></span>|<span data-ttu-id="4428d-165">String</span><span class="sxs-lookup"><span data-stu-id="4428d-165">String</span></span>|<span data-ttu-id="4428d-166">Android 企业应用程序配置包 id。</span><span class="sxs-lookup"><span data-stu-id="4428d-166">Android Enterprise app configuration package id.</span></span>|
-|<span data-ttu-id="4428d-167">payloadJson</span><span class="sxs-lookup"><span data-stu-id="4428d-167">payloadJson</span></span>|<span data-ttu-id="4428d-168">String</span><span class="sxs-lookup"><span data-stu-id="4428d-168">String</span></span>|<span data-ttu-id="4428d-169">Android 企业应用配置 JSON 有效负载。</span><span class="sxs-lookup"><span data-stu-id="4428d-169">Android Enterprise app configuration JSON payload.</span></span>|
-|<span data-ttu-id="4428d-170">permissionActions</span><span class="sxs-lookup"><span data-stu-id="4428d-170">permissionActions</span></span>|<span data-ttu-id="4428d-171">[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合</span><span class="sxs-lookup"><span data-stu-id="4428d-171">[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection</span></span>|<span data-ttu-id="4428d-172">Android 应用程序权限和相应权限操作的列表。</span><span class="sxs-lookup"><span data-stu-id="4428d-172">List of Android app permissions and corresponding permission actions.</span></span>|
-|<span data-ttu-id="4428d-173">appSupportsOemConfig</span><span class="sxs-lookup"><span data-stu-id="4428d-173">appSupportsOemConfig</span></span>|<span data-ttu-id="4428d-174">布尔值</span><span class="sxs-lookup"><span data-stu-id="4428d-174">Boolean</span></span>|<span data-ttu-id="4428d-175">此 AppConfig 是否为 OEMConfig 策略。</span><span class="sxs-lookup"><span data-stu-id="4428d-175">Whether or not this AppConfig is an OEMConfig policy.</span></span>|
+|<span data-ttu-id="85b2d-133">id</span><span class="sxs-lookup"><span data-stu-id="85b2d-133">id</span></span>|<span data-ttu-id="85b2d-134">字符串</span><span class="sxs-lookup"><span data-stu-id="85b2d-134">String</span></span>|<span data-ttu-id="85b2d-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="85b2d-135">Key of the entity.</span></span> <span data-ttu-id="85b2d-136">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-136">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-137">targetedMobileApps</span><span class="sxs-lookup"><span data-stu-id="85b2d-137">targetedMobileApps</span></span>|<span data-ttu-id="85b2d-138">String 集合</span><span class="sxs-lookup"><span data-stu-id="85b2d-138">String collection</span></span>|<span data-ttu-id="85b2d-139">关联的应用。</span><span class="sxs-lookup"><span data-stu-id="85b2d-139">the associated app.</span></span> <span data-ttu-id="85b2d-140">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-140">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-141">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="85b2d-141">roleScopeTagIds</span></span>|<span data-ttu-id="85b2d-142">String 集合</span><span class="sxs-lookup"><span data-stu-id="85b2d-142">String collection</span></span>|<span data-ttu-id="85b2d-143">此应用配置实体的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="85b2d-143">List of Scope Tags for this App configuration entity.</span></span> <span data-ttu-id="85b2d-144">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-144">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="85b2d-145">createdDateTime</span></span>|<span data-ttu-id="85b2d-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85b2d-146">DateTimeOffset</span></span>|<span data-ttu-id="85b2d-147">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="85b2d-147">DateTime the object was created.</span></span> <span data-ttu-id="85b2d-148">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-148">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-149">description</span><span class="sxs-lookup"><span data-stu-id="85b2d-149">description</span></span>|<span data-ttu-id="85b2d-150">String</span><span class="sxs-lookup"><span data-stu-id="85b2d-150">String</span></span>|<span data-ttu-id="85b2d-151">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="85b2d-151">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="85b2d-152">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-152">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-153">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="85b2d-153">lastModifiedDateTime</span></span>|<span data-ttu-id="85b2d-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85b2d-154">DateTimeOffset</span></span>|<span data-ttu-id="85b2d-155">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="85b2d-155">DateTime the object was last modified.</span></span> <span data-ttu-id="85b2d-156">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-156">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-157">displayName</span><span class="sxs-lookup"><span data-stu-id="85b2d-157">displayName</span></span>|<span data-ttu-id="85b2d-158">String</span><span class="sxs-lookup"><span data-stu-id="85b2d-158">String</span></span>|<span data-ttu-id="85b2d-159">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="85b2d-159">Admin provided name of the device configuration.</span></span> <span data-ttu-id="85b2d-160">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-160">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-161">version</span><span class="sxs-lookup"><span data-stu-id="85b2d-161">version</span></span>|<span data-ttu-id="85b2d-162">Int32</span><span class="sxs-lookup"><span data-stu-id="85b2d-162">Int32</span></span>|<span data-ttu-id="85b2d-163">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="85b2d-163">Version of the device configuration.</span></span> <span data-ttu-id="85b2d-164">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85b2d-164">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="85b2d-165">packageId</span><span class="sxs-lookup"><span data-stu-id="85b2d-165">packageId</span></span>|<span data-ttu-id="85b2d-166">String</span><span class="sxs-lookup"><span data-stu-id="85b2d-166">String</span></span>|<span data-ttu-id="85b2d-167">Android 企业应用程序配置包 id。</span><span class="sxs-lookup"><span data-stu-id="85b2d-167">Android Enterprise app configuration package id.</span></span>|
+|<span data-ttu-id="85b2d-168">payloadJson</span><span class="sxs-lookup"><span data-stu-id="85b2d-168">payloadJson</span></span>|<span data-ttu-id="85b2d-169">String</span><span class="sxs-lookup"><span data-stu-id="85b2d-169">String</span></span>|<span data-ttu-id="85b2d-170">Android 企业应用配置 JSON 有效负载。</span><span class="sxs-lookup"><span data-stu-id="85b2d-170">Android Enterprise app configuration JSON payload.</span></span>|
+|<span data-ttu-id="85b2d-171">permissionActions</span><span class="sxs-lookup"><span data-stu-id="85b2d-171">permissionActions</span></span>|<span data-ttu-id="85b2d-172">[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合</span><span class="sxs-lookup"><span data-stu-id="85b2d-172">[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection</span></span>|<span data-ttu-id="85b2d-173">Android 应用程序权限和相应权限操作的列表。</span><span class="sxs-lookup"><span data-stu-id="85b2d-173">List of Android app permissions and corresponding permission actions.</span></span>|
+|<span data-ttu-id="85b2d-174">appSupportsOemConfig</span><span class="sxs-lookup"><span data-stu-id="85b2d-174">appSupportsOemConfig</span></span>|<span data-ttu-id="85b2d-175">Boolean</span><span class="sxs-lookup"><span data-stu-id="85b2d-175">Boolean</span></span>|<span data-ttu-id="85b2d-176">此 AppConfig 是否为 OEMConfig 策略。</span><span class="sxs-lookup"><span data-stu-id="85b2d-176">Whether or not this AppConfig is an OEMConfig policy.</span></span>|
+|<span data-ttu-id="85b2d-177">profileApplicability</span><span class="sxs-lookup"><span data-stu-id="85b2d-177">profileApplicability</span></span>|[<span data-ttu-id="85b2d-178">androidProfileApplicability</span><span class="sxs-lookup"><span data-stu-id="85b2d-178">androidProfileApplicability</span></span>](../resources/intune-apps-androidprofileapplicability.md)|<span data-ttu-id="85b2d-179">Android 企业配置文件适用性（AndroidWorkProfile、DeviceOwner 或 default （适用于两者））。</span><span class="sxs-lookup"><span data-stu-id="85b2d-179">Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)).</span></span> <span data-ttu-id="85b2d-180">可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。</span><span class="sxs-lookup"><span data-stu-id="85b2d-180">Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4428d-176">响应</span><span class="sxs-lookup"><span data-stu-id="4428d-176">Response</span></span>
-<span data-ttu-id="4428d-177">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4428d-177">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="85b2d-181">响应</span><span class="sxs-lookup"><span data-stu-id="85b2d-181">Response</span></span>
+<span data-ttu-id="85b2d-182">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="85b2d-182">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4428d-178">示例</span><span class="sxs-lookup"><span data-stu-id="4428d-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85b2d-183">示例</span><span class="sxs-lookup"><span data-stu-id="85b2d-183">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4428d-179">请求</span><span class="sxs-lookup"><span data-stu-id="4428d-179">Request</span></span>
-<span data-ttu-id="4428d-180">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4428d-180">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="85b2d-184">请求</span><span class="sxs-lookup"><span data-stu-id="85b2d-184">Request</span></span>
+<span data-ttu-id="85b2d-185">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="85b2d-185">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 592
+Content-length: 641
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -98,16 +101,17 @@ Content-length: 592
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4428d-181">响应</span><span class="sxs-lookup"><span data-stu-id="4428d-181">Response</span></span>
-<span data-ttu-id="4428d-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4428d-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="85b2d-186">响应</span><span class="sxs-lookup"><span data-stu-id="85b2d-186">Response</span></span>
+<span data-ttu-id="85b2d-p111">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="85b2d-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 813
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -132,10 +136,10 @@ Content-Length: 764
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

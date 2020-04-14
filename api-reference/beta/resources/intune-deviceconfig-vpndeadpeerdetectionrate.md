@@ -1,32 +1,34 @@
 ---
 title: vpnDeadPeerDetectionRate 枚举类型
 description: 确定检查等连接是否仍处于活动状态的频率
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 003cccc6c1a1f9a5745bc4add5edc2a3b71e32c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 047d4f51767a180d89ee8a4eeb121978981d9d22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787395"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412292"
 ---
-# <a name="vpndeadpeerdetectionrate-enum-type"></a><span data-ttu-id="e88fd-103">vpnDeadPeerDetectionRate 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e88fd-103">vpnDeadPeerDetectionRate enum type</span></span>
+# <a name="vpndeadpeerdetectionrate-enum-type"></a><span data-ttu-id="88b02-103">vpnDeadPeerDetectionRate 枚举类型</span><span class="sxs-lookup"><span data-stu-id="88b02-103">vpnDeadPeerDetectionRate enum type</span></span>
 
-> <span data-ttu-id="e88fd-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e88fd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="88b02-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88b02-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e88fd-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e88fd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="88b02-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="88b02-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="e88fd-106">确定检查等连接是否仍处于活动状态的频率</span><span class="sxs-lookup"><span data-stu-id="e88fd-106">Determines how often to check if a peer connection is still alive</span></span>
+> <span data-ttu-id="88b02-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="88b02-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e88fd-107">成员</span><span class="sxs-lookup"><span data-stu-id="e88fd-107">Members</span></span>
-|<span data-ttu-id="e88fd-108">成员</span><span class="sxs-lookup"><span data-stu-id="e88fd-108">Member</span></span>|<span data-ttu-id="e88fd-109">值</span><span class="sxs-lookup"><span data-stu-id="e88fd-109">Value</span></span>|<span data-ttu-id="e88fd-110">说明</span><span class="sxs-lookup"><span data-stu-id="e88fd-110">Description</span></span>|
+<span data-ttu-id="88b02-107">确定检查等连接是否仍处于活动状态的频率</span><span class="sxs-lookup"><span data-stu-id="88b02-107">Determines how often to check if a peer connection is still alive</span></span>
+
+## <a name="members"></a><span data-ttu-id="88b02-108">成员</span><span class="sxs-lookup"><span data-stu-id="88b02-108">Members</span></span>
+|<span data-ttu-id="88b02-109">成员</span><span class="sxs-lookup"><span data-stu-id="88b02-109">Member</span></span>|<span data-ttu-id="88b02-110">值</span><span class="sxs-lookup"><span data-stu-id="88b02-110">Value</span></span>|<span data-ttu-id="88b02-111">说明</span><span class="sxs-lookup"><span data-stu-id="88b02-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e88fd-111">中等</span><span class="sxs-lookup"><span data-stu-id="e88fd-111">medium</span></span>|<span data-ttu-id="e88fd-112">0</span><span class="sxs-lookup"><span data-stu-id="e88fd-112">0</span></span>|<span data-ttu-id="e88fd-113">中</span><span class="sxs-lookup"><span data-stu-id="e88fd-113">Medium</span></span>|
-|<span data-ttu-id="e88fd-114">无</span><span class="sxs-lookup"><span data-stu-id="e88fd-114">none</span></span>|<span data-ttu-id="e88fd-115">1</span><span class="sxs-lookup"><span data-stu-id="e88fd-115">1</span></span>|<span data-ttu-id="e88fd-116">None</span><span class="sxs-lookup"><span data-stu-id="e88fd-116">None</span></span>|
-|<span data-ttu-id="e88fd-117">降低</span><span class="sxs-lookup"><span data-stu-id="e88fd-117">low</span></span>|<span data-ttu-id="e88fd-118">双面</span><span class="sxs-lookup"><span data-stu-id="e88fd-118">2</span></span>|<span data-ttu-id="e88fd-119">低</span><span class="sxs-lookup"><span data-stu-id="e88fd-119">Low</span></span>|
-|<span data-ttu-id="e88fd-120">高效</span><span class="sxs-lookup"><span data-stu-id="e88fd-120">high</span></span>|<span data-ttu-id="e88fd-121">第三章</span><span class="sxs-lookup"><span data-stu-id="e88fd-121">3</span></span>|<span data-ttu-id="e88fd-122">高</span><span class="sxs-lookup"><span data-stu-id="e88fd-122">High</span></span>|
+|<span data-ttu-id="88b02-112">中等</span><span class="sxs-lookup"><span data-stu-id="88b02-112">medium</span></span>|<span data-ttu-id="88b02-113">0</span><span class="sxs-lookup"><span data-stu-id="88b02-113">0</span></span>|<span data-ttu-id="88b02-114">中</span><span class="sxs-lookup"><span data-stu-id="88b02-114">Medium</span></span>|
+|<span data-ttu-id="88b02-115">无</span><span class="sxs-lookup"><span data-stu-id="88b02-115">none</span></span>|<span data-ttu-id="88b02-116">1</span><span class="sxs-lookup"><span data-stu-id="88b02-116">1</span></span>|<span data-ttu-id="88b02-117">无</span><span class="sxs-lookup"><span data-stu-id="88b02-117">None</span></span>|
+|<span data-ttu-id="88b02-118">降低</span><span class="sxs-lookup"><span data-stu-id="88b02-118">low</span></span>|<span data-ttu-id="88b02-119">双面</span><span class="sxs-lookup"><span data-stu-id="88b02-119">2</span></span>|<span data-ttu-id="88b02-120">低</span><span class="sxs-lookup"><span data-stu-id="88b02-120">Low</span></span>|
+|<span data-ttu-id="88b02-121">高效</span><span class="sxs-lookup"><span data-stu-id="88b02-121">high</span></span>|<span data-ttu-id="88b02-122">第三章</span><span class="sxs-lookup"><span data-stu-id="88b02-122">3</span></span>|<span data-ttu-id="88b02-123">高</span><span class="sxs-lookup"><span data-stu-id="88b02-123">High</span></span>|
 
 
 

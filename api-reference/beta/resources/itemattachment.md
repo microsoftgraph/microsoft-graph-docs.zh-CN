@@ -4,49 +4,49 @@ description: 附加到另一个事件的联系人、事件或邮件，
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: 82f0e9fa1ab499d7adc305cd74fcf7cdf09fd796
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: cf8f539411f0825b372da803d07cc341e9babef2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523091"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401733"
 ---
-# <a name="itemattachment-resource-type"></a><span data-ttu-id="fd79d-103">itemAttachment 资源类型</span><span class="sxs-lookup"><span data-stu-id="fd79d-103">itemAttachment resource type</span></span>
+# <a name="itemattachment-resource-type"></a><span data-ttu-id="ae29c-103">itemAttachment 资源类型</span><span class="sxs-lookup"><span data-stu-id="ae29c-103">itemAttachment resource type</span></span>
 
-<span data-ttu-id="fd79d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fd79d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ae29c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae29c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd79d-105">附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的联系人、事件或邮件。</span><span class="sxs-lookup"><span data-stu-id="fd79d-105">A contact, event, or message that's attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>  
+<span data-ttu-id="ae29c-105">附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的联系人、事件或邮件。</span><span class="sxs-lookup"><span data-stu-id="ae29c-105">A contact, event, or message that's attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>  
 
-<span data-ttu-id="fd79d-106">派生自 [附件](attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="fd79d-106">Derived from [attachment](attachment.md).</span></span>
+<span data-ttu-id="ae29c-106">派生自 [附件](attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="ae29c-106">Derived from [attachment](attachment.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="fd79d-107">方法</span><span class="sxs-lookup"><span data-stu-id="fd79d-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="ae29c-107">方法</span><span class="sxs-lookup"><span data-stu-id="ae29c-107">Methods</span></span>
 
-| <span data-ttu-id="fd79d-108">方法</span><span class="sxs-lookup"><span data-stu-id="fd79d-108">Method</span></span>       | <span data-ttu-id="fd79d-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="fd79d-109">Return Type</span></span>  |<span data-ttu-id="fd79d-110">说明</span><span class="sxs-lookup"><span data-stu-id="fd79d-110">Description</span></span>|
+| <span data-ttu-id="ae29c-108">方法</span><span class="sxs-lookup"><span data-stu-id="ae29c-108">Method</span></span>       | <span data-ttu-id="ae29c-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="ae29c-109">Return Type</span></span>  |<span data-ttu-id="ae29c-110">说明</span><span class="sxs-lookup"><span data-stu-id="ae29c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="fd79d-111">Get</span><span class="sxs-lookup"><span data-stu-id="fd79d-111">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="fd79d-112">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="fd79d-112">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="fd79d-113">读取 itemAttachment 对象的属性、关系或原始内容。</span><span class="sxs-lookup"><span data-stu-id="fd79d-113">Read the properties, relationships, or raw contents of an itemAttachment object.</span></span>|
-|[<span data-ttu-id="fd79d-114">删除</span><span class="sxs-lookup"><span data-stu-id="fd79d-114">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="fd79d-115">无</span><span class="sxs-lookup"><span data-stu-id="fd79d-115">None</span></span> |<span data-ttu-id="fd79d-116">删除 itemAttachment 对象。</span><span class="sxs-lookup"><span data-stu-id="fd79d-116">Delete itemAttachment object.</span></span> |
+|[<span data-ttu-id="ae29c-111">Get</span><span class="sxs-lookup"><span data-stu-id="ae29c-111">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="ae29c-112">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="ae29c-112">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="ae29c-113">读取 itemAttachment 对象的属性、关系或原始内容。</span><span class="sxs-lookup"><span data-stu-id="ae29c-113">Read the properties, relationships, or raw contents of an itemAttachment object.</span></span>|
+|[<span data-ttu-id="ae29c-114">删除</span><span class="sxs-lookup"><span data-stu-id="ae29c-114">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="ae29c-115">无</span><span class="sxs-lookup"><span data-stu-id="ae29c-115">None</span></span> |<span data-ttu-id="ae29c-116">删除 itemAttachment 对象。</span><span class="sxs-lookup"><span data-stu-id="ae29c-116">Delete itemAttachment object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="fd79d-117">属性</span><span class="sxs-lookup"><span data-stu-id="fd79d-117">Properties</span></span>
-| <span data-ttu-id="fd79d-118">属性</span><span class="sxs-lookup"><span data-stu-id="fd79d-118">Property</span></span>     | <span data-ttu-id="fd79d-119">类型</span><span class="sxs-lookup"><span data-stu-id="fd79d-119">Type</span></span>   |<span data-ttu-id="fd79d-120">说明</span><span class="sxs-lookup"><span data-stu-id="fd79d-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ae29c-117">属性</span><span class="sxs-lookup"><span data-stu-id="ae29c-117">Properties</span></span>
+| <span data-ttu-id="ae29c-118">属性</span><span class="sxs-lookup"><span data-stu-id="ae29c-118">Property</span></span>     | <span data-ttu-id="ae29c-119">类型</span><span class="sxs-lookup"><span data-stu-id="ae29c-119">Type</span></span>   |<span data-ttu-id="ae29c-120">说明</span><span class="sxs-lookup"><span data-stu-id="ae29c-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fd79d-121">contentType</span><span class="sxs-lookup"><span data-stu-id="fd79d-121">contentType</span></span>|<span data-ttu-id="fd79d-122">String</span><span class="sxs-lookup"><span data-stu-id="fd79d-122">String</span></span>|<span data-ttu-id="fd79d-123">附件的内容类型。</span><span class="sxs-lookup"><span data-stu-id="fd79d-123">The content type of the attachment.</span></span>|
-|<span data-ttu-id="fd79d-124">id</span><span class="sxs-lookup"><span data-stu-id="fd79d-124">id</span></span>|<span data-ttu-id="fd79d-125">String</span><span class="sxs-lookup"><span data-stu-id="fd79d-125">String</span></span>| <span data-ttu-id="fd79d-126">附件 ID。</span><span class="sxs-lookup"><span data-stu-id="fd79d-126">The attachment ID.</span></span>|
-|<span data-ttu-id="fd79d-127">isInline</span><span class="sxs-lookup"><span data-stu-id="fd79d-127">isInline</span></span>|<span data-ttu-id="fd79d-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="fd79d-128">Boolean</span></span>|<span data-ttu-id="fd79d-129">如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。</span><span class="sxs-lookup"><span data-stu-id="fd79d-129">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
-|<span data-ttu-id="fd79d-130">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="fd79d-130">lastModifiedDateTime</span></span>|<span data-ttu-id="fd79d-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fd79d-131">DateTimeOffset</span></span>|<span data-ttu-id="fd79d-132">上次修改附件的时间和日期。</span><span class="sxs-lookup"><span data-stu-id="fd79d-132">The last time and date that the attachment was modified.</span></span>|
-|<span data-ttu-id="fd79d-133">name</span><span class="sxs-lookup"><span data-stu-id="fd79d-133">name</span></span>|<span data-ttu-id="fd79d-134">String</span><span class="sxs-lookup"><span data-stu-id="fd79d-134">String</span></span>|<span data-ttu-id="fd79d-135">附件的显示名称。</span><span class="sxs-lookup"><span data-stu-id="fd79d-135">The display name of the attachment.</span></span>|
-|<span data-ttu-id="fd79d-136">大小</span><span class="sxs-lookup"><span data-stu-id="fd79d-136">size</span></span>|<span data-ttu-id="fd79d-137">Int32</span><span class="sxs-lookup"><span data-stu-id="fd79d-137">Int32</span></span>|<span data-ttu-id="fd79d-138">附件大小，以字节为单位。</span><span class="sxs-lookup"><span data-stu-id="fd79d-138">The size in bytes of the attachment.</span></span>|
+|<span data-ttu-id="ae29c-121">contentType</span><span class="sxs-lookup"><span data-stu-id="ae29c-121">contentType</span></span>|<span data-ttu-id="ae29c-122">String</span><span class="sxs-lookup"><span data-stu-id="ae29c-122">String</span></span>|<span data-ttu-id="ae29c-123">附件的内容类型。</span><span class="sxs-lookup"><span data-stu-id="ae29c-123">The content type of the attachment.</span></span>|
+|<span data-ttu-id="ae29c-124">id</span><span class="sxs-lookup"><span data-stu-id="ae29c-124">id</span></span>|<span data-ttu-id="ae29c-125">String</span><span class="sxs-lookup"><span data-stu-id="ae29c-125">String</span></span>| <span data-ttu-id="ae29c-126">附件 ID。</span><span class="sxs-lookup"><span data-stu-id="ae29c-126">The attachment ID.</span></span>|
+|<span data-ttu-id="ae29c-127">isInline</span><span class="sxs-lookup"><span data-stu-id="ae29c-127">isInline</span></span>|<span data-ttu-id="ae29c-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="ae29c-128">Boolean</span></span>|<span data-ttu-id="ae29c-129">如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。</span><span class="sxs-lookup"><span data-stu-id="ae29c-129">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
+|<span data-ttu-id="ae29c-130">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ae29c-130">lastModifiedDateTime</span></span>|<span data-ttu-id="ae29c-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ae29c-131">DateTimeOffset</span></span>|<span data-ttu-id="ae29c-132">上次修改附件的时间和日期。</span><span class="sxs-lookup"><span data-stu-id="ae29c-132">The last time and date that the attachment was modified.</span></span>|
+|<span data-ttu-id="ae29c-133">name</span><span class="sxs-lookup"><span data-stu-id="ae29c-133">name</span></span>|<span data-ttu-id="ae29c-134">String</span><span class="sxs-lookup"><span data-stu-id="ae29c-134">String</span></span>|<span data-ttu-id="ae29c-135">附件的显示名称。</span><span class="sxs-lookup"><span data-stu-id="ae29c-135">The display name of the attachment.</span></span>|
+|<span data-ttu-id="ae29c-136">大小</span><span class="sxs-lookup"><span data-stu-id="ae29c-136">size</span></span>|<span data-ttu-id="ae29c-137">Int32</span><span class="sxs-lookup"><span data-stu-id="ae29c-137">Int32</span></span>|<span data-ttu-id="ae29c-138">附件大小，以字节为单位。</span><span class="sxs-lookup"><span data-stu-id="ae29c-138">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fd79d-139">关系</span><span class="sxs-lookup"><span data-stu-id="fd79d-139">Relationships</span></span>
-| <span data-ttu-id="fd79d-140">关系</span><span class="sxs-lookup"><span data-stu-id="fd79d-140">Relationship</span></span> | <span data-ttu-id="fd79d-141">类型</span><span class="sxs-lookup"><span data-stu-id="fd79d-141">Type</span></span>   |<span data-ttu-id="fd79d-142">说明</span><span class="sxs-lookup"><span data-stu-id="fd79d-142">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="ae29c-139">关系</span><span class="sxs-lookup"><span data-stu-id="ae29c-139">Relationships</span></span>
+| <span data-ttu-id="ae29c-140">关系</span><span class="sxs-lookup"><span data-stu-id="ae29c-140">Relationship</span></span> | <span data-ttu-id="ae29c-141">类型</span><span class="sxs-lookup"><span data-stu-id="ae29c-141">Type</span></span>   |<span data-ttu-id="ae29c-142">说明</span><span class="sxs-lookup"><span data-stu-id="ae29c-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fd79d-143">项</span><span class="sxs-lookup"><span data-stu-id="fd79d-143">item</span></span>|[<span data-ttu-id="fd79d-144">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="fd79d-144">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="fd79d-p101">附加的联系人、消息或事件。导航属性。</span><span class="sxs-lookup"><span data-stu-id="fd79d-p101">The attached contact, message or event. Navigation property.</span></span>|
+|<span data-ttu-id="ae29c-143">项</span><span class="sxs-lookup"><span data-stu-id="ae29c-143">item</span></span>|[<span data-ttu-id="ae29c-144">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="ae29c-144">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="ae29c-p101">附加的联系人、消息或事件。导航属性。</span><span class="sxs-lookup"><span data-stu-id="ae29c-p101">The attached contact, message or event. Navigation property.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fd79d-147">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fd79d-147">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ae29c-147">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ae29c-147">JSON representation</span></span>
 
-<span data-ttu-id="fd79d-148">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fd79d-148">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="ae29c-148">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ae29c-148">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
