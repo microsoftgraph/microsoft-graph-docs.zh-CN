@@ -2,60 +2,60 @@
 title: 'outlookUser: supportedLanguages'
 description: 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50560af4bb5982da34ae5ebf2356ab4a77c3602d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 47aceb842309ce7bed1c987262f5cda7ad398c67
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456024"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440666"
 ---
-# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="c6cd9-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="c6cd9-103">outlookUser: supportedLanguages</span></span>
+# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="2b30d-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="2b30d-103">outlookUser: supportedLanguages</span></span>
 
-<span data-ttu-id="c6cd9-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c6cd9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2b30d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2b30d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c6cd9-105">获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-105">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="2b30d-105">获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。</span><span class="sxs-lookup"><span data-stu-id="2b30d-105">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="c6cd9-106">在设置 Outlook 客户端时，用户从此受支持的列表中选择首选语言。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-106">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="c6cd9-107">随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选语言。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-107">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="2b30d-106">在设置 Outlook 客户端时，用户从此受支持的列表中选择首选语言。</span><span class="sxs-lookup"><span data-stu-id="2b30d-106">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="2b30d-107">随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选语言。</span><span class="sxs-lookup"><span data-stu-id="2b30d-107">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="c6cd9-108">权限</span><span class="sxs-lookup"><span data-stu-id="c6cd9-108">Permissions</span></span>
-<span data-ttu-id="c6cd9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2b30d-108">权限</span><span class="sxs-lookup"><span data-stu-id="2b30d-108">Permissions</span></span>
+<span data-ttu-id="2b30d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2b30d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6cd9-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c6cd9-111">Permission type</span></span>      | <span data-ttu-id="c6cd9-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c6cd9-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2b30d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2b30d-111">Permission type</span></span>      | <span data-ttu-id="2b30d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2b30d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6cd9-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c6cd9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c6cd9-114">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="c6cd9-114">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="c6cd9-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c6cd9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6cd9-116">User.Read</span><span class="sxs-lookup"><span data-stu-id="c6cd9-116">User.Read</span></span>    |
-|<span data-ttu-id="c6cd9-117">Application</span><span class="sxs-lookup"><span data-stu-id="c6cd9-117">Application</span></span> | <span data-ttu-id="c6cd9-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="c6cd9-118">User.Read.All</span></span> |
+|<span data-ttu-id="2b30d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2b30d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="2b30d-114">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="2b30d-114">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="2b30d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2b30d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b30d-116">User.Read</span><span class="sxs-lookup"><span data-stu-id="2b30d-116">User.Read</span></span>    |
+|<span data-ttu-id="2b30d-117">Application</span><span class="sxs-lookup"><span data-stu-id="2b30d-117">Application</span></span> | <span data-ttu-id="2b30d-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="2b30d-118">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c6cd9-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c6cd9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2b30d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2b30d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
-## <a name="request-headers"></a><span data-ttu-id="c6cd9-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c6cd9-120">Request headers</span></span>
-| <span data-ttu-id="c6cd9-121">名称</span><span class="sxs-lookup"><span data-stu-id="c6cd9-121">Name</span></span>       | <span data-ttu-id="c6cd9-122">类型</span><span class="sxs-lookup"><span data-stu-id="c6cd9-122">Type</span></span> | <span data-ttu-id="c6cd9-123">说明</span><span class="sxs-lookup"><span data-stu-id="c6cd9-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2b30d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="2b30d-120">Request headers</span></span>
+| <span data-ttu-id="2b30d-121">名称</span><span class="sxs-lookup"><span data-stu-id="2b30d-121">Name</span></span>       | <span data-ttu-id="2b30d-122">类型</span><span class="sxs-lookup"><span data-stu-id="2b30d-122">Type</span></span> | <span data-ttu-id="2b30d-123">说明</span><span class="sxs-lookup"><span data-stu-id="2b30d-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c6cd9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6cd9-124">Authorization</span></span>  | <span data-ttu-id="c6cd9-125">string</span><span class="sxs-lookup"><span data-stu-id="c6cd9-125">string</span></span>  | <span data-ttu-id="c6cd9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2b30d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2b30d-124">Authorization</span></span>  | <span data-ttu-id="2b30d-125">string</span><span class="sxs-lookup"><span data-stu-id="2b30d-125">string</span></span>  | <span data-ttu-id="2b30d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2b30d-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="c6cd9-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c6cd9-128">Request body</span></span>
-<span data-ttu-id="c6cd9-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2b30d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="2b30d-128">Request body</span></span>
+<span data-ttu-id="2b30d-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2b30d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6cd9-130">响应</span><span class="sxs-lookup"><span data-stu-id="c6cd9-130">Response</span></span>
-<span data-ttu-id="c6cd9-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [localeInfo](../resources/localeinfo.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-131">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2b30d-130">响应</span><span class="sxs-lookup"><span data-stu-id="2b30d-130">Response</span></span>
+<span data-ttu-id="2b30d-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [localeInfo](../resources/localeinfo.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="2b30d-131">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c6cd9-132">示例</span><span class="sxs-lookup"><span data-stu-id="c6cd9-132">Example</span></span>
-<span data-ttu-id="c6cd9-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c6cd9-134">请求</span><span class="sxs-lookup"><span data-stu-id="c6cd9-134">Request</span></span>
-<span data-ttu-id="c6cd9-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2b30d-132">示例</span><span class="sxs-lookup"><span data-stu-id="2b30d-132">Example</span></span>
+<span data-ttu-id="2b30d-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="2b30d-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2b30d-134">请求</span><span class="sxs-lookup"><span data-stu-id="2b30d-134">Request</span></span>
+<span data-ttu-id="2b30d-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2b30d-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c6cd9-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6cd9-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2b30d-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b30d-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
@@ -63,23 +63,23 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
-# <a name="c"></a>[<span data-ttu-id="c6cd9-137">C#</span><span class="sxs-lookup"><span data-stu-id="c6cd9-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2b30d-137">C#</span><span class="sxs-lookup"><span data-stu-id="2b30d-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedlanguages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c6cd9-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6cd9-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2b30d-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b30d-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedlanguages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c6cd9-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6cd9-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2b30d-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b30d-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-supportedlanguages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c6cd9-140">响应</span><span class="sxs-lookup"><span data-stu-id="c6cd9-140">Response</span></span>
-<span data-ttu-id="c6cd9-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c6cd9-141">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2b30d-140">响应</span><span class="sxs-lookup"><span data-stu-id="2b30d-140">Response</span></span>
+<span data-ttu-id="2b30d-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2b30d-141">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

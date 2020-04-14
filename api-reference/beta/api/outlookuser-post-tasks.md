@@ -2,59 +2,59 @@
 title: 创建 outlookTask
 description: 在用户邮箱中的默认任务组（`My Tasks`）和默认任务文件夹（`Tasks`）中创建一个 Outlook 任务。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b2cf7b56f7721145e577a25759c8edff8c4c9ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 855497074695876a9ec05a24ef2320d0b12dc668
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440681"
 ---
-# <a name="create-outlooktask"></a><span data-ttu-id="7c979-103">创建 outlookTask</span><span class="sxs-lookup"><span data-stu-id="7c979-103">Create outlookTask</span></span>
+# <a name="create-outlooktask"></a><span data-ttu-id="24249-103">创建 outlookTask</span><span class="sxs-lookup"><span data-stu-id="24249-103">Create outlookTask</span></span>
 
-<span data-ttu-id="7c979-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="7c979-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="24249-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24249-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7c979-105">在用户邮箱中的默认任务组（`My Tasks`）和默认任务文件夹（`Tasks`）中创建一个 Outlook 任务。</span><span class="sxs-lookup"><span data-stu-id="7c979-105">Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.</span></span>
+<span data-ttu-id="24249-105">在用户邮箱中的默认任务组（`My Tasks`）和默认任务文件夹（`Tasks`）中创建一个 Outlook 任务。</span><span class="sxs-lookup"><span data-stu-id="24249-105">Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.</span></span>
 
-<span data-ttu-id="7c979-106">POST 方法始终忽略请求正文中**startDateTime**和**dueDateTime**的时间部分，并假定指定时区中的时间始终为午夜。</span><span class="sxs-lookup"><span data-stu-id="7c979-106">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
+<span data-ttu-id="24249-106">POST 方法始终忽略请求正文中**startDateTime**和**dueDateTime**的时间部分，并假定指定时区中的时间始终为午夜。</span><span class="sxs-lookup"><span data-stu-id="24249-106">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
 
-<span data-ttu-id="7c979-107">默认情况下，此操作（以及获取、修补和[完成](../api/outlooktask-complete.md)任务操作）将返回 UTC 格式的与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="7c979-107">By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="7c979-108">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="7c979-108">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
+<span data-ttu-id="24249-107">默认情况下，此操作（以及获取、修补和[完成](../api/outlooktask-complete.md)任务操作）将返回 UTC 格式的与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="24249-107">By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="24249-108">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="24249-108">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7c979-109">权限</span><span class="sxs-lookup"><span data-stu-id="7c979-109">Permissions</span></span>
-<span data-ttu-id="7c979-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7c979-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="24249-109">权限</span><span class="sxs-lookup"><span data-stu-id="24249-109">Permissions</span></span>
+<span data-ttu-id="24249-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="24249-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7c979-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="7c979-112">Permission type</span></span>      | <span data-ttu-id="7c979-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7c979-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="24249-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="24249-112">Permission type</span></span>      | <span data-ttu-id="24249-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="24249-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c979-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7c979-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7c979-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7c979-115">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="7c979-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7c979-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c979-117">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7c979-117">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="7c979-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="7c979-118">Application</span></span> | <span data-ttu-id="7c979-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="7c979-119">Not supported.</span></span> |
+|<span data-ttu-id="24249-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="24249-114">Delegated (work or school account)</span></span> | <span data-ttu-id="24249-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="24249-115">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="24249-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="24249-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24249-117">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="24249-117">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="24249-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="24249-118">Application</span></span> | <span data-ttu-id="24249-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="24249-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c979-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7c979-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24249-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="24249-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/tasks
 POST /users/{id|userPrincipalName}/outlook/tasks
 ```
-## <a name="request-headers"></a><span data-ttu-id="7c979-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="7c979-121">Request headers</span></span>
-| <span data-ttu-id="7c979-122">名称</span><span class="sxs-lookup"><span data-stu-id="7c979-122">Name</span></span>       | <span data-ttu-id="7c979-123">说明</span><span class="sxs-lookup"><span data-stu-id="7c979-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="24249-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="24249-121">Request headers</span></span>
+| <span data-ttu-id="24249-122">名称</span><span class="sxs-lookup"><span data-stu-id="24249-122">Name</span></span>       | <span data-ttu-id="24249-123">说明</span><span class="sxs-lookup"><span data-stu-id="24249-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7c979-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7c979-124">Authorization</span></span>  | <span data-ttu-id="7c979-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7c979-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7c979-127">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="7c979-127">Prefer: outlook.timezone</span></span> | <span data-ttu-id="7c979-128">指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。</span><span class="sxs-lookup"><span data-stu-id="7c979-128">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="7c979-129">可选。</span><span class="sxs-lookup"><span data-stu-id="7c979-129">Optional.</span></span>|
+| <span data-ttu-id="24249-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="24249-124">Authorization</span></span>  | <span data-ttu-id="24249-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="24249-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="24249-127">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="24249-127">Prefer: outlook.timezone</span></span> | <span data-ttu-id="24249-128">指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。</span><span class="sxs-lookup"><span data-stu-id="24249-128">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="24249-129">可选。</span><span class="sxs-lookup"><span data-stu-id="24249-129">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7c979-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="7c979-130">Request body</span></span>
-<span data-ttu-id="7c979-131">在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7c979-131">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="24249-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="24249-130">Request body</span></span>
+<span data-ttu-id="24249-131">在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="24249-131">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7c979-132">响应</span><span class="sxs-lookup"><span data-stu-id="7c979-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="24249-132">响应</span><span class="sxs-lookup"><span data-stu-id="24249-132">Response</span></span>
 
-<span data-ttu-id="7c979-133">如果成功，此方法在`201 Created`响应正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7c979-133">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
+<span data-ttu-id="24249-133">如果成功，此方法在`201 Created`响应正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象。</span><span class="sxs-lookup"><span data-stu-id="24249-133">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7c979-134">示例</span><span class="sxs-lookup"><span data-stu-id="7c979-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7c979-135">请求</span><span class="sxs-lookup"><span data-stu-id="7c979-135">Request</span></span>
-<span data-ttu-id="7c979-136">下面的示例展示了`Prefer: outlook.timezone`标头的用法。</span><span class="sxs-lookup"><span data-stu-id="7c979-136">The following example shows the use of the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="7c979-137">它创建一个任务，表示**startDateTime**和**DueDateTime** （东部标准时间（EST）），并包含`Prefer`太平洋标准时间（PST）的标题。</span><span class="sxs-lookup"><span data-stu-id="7c979-137">It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).</span></span>
+## <a name="example"></a><span data-ttu-id="24249-134">示例</span><span class="sxs-lookup"><span data-stu-id="24249-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="24249-135">请求</span><span class="sxs-lookup"><span data-stu-id="24249-135">Request</span></span>
+<span data-ttu-id="24249-136">下面的示例展示了`Prefer: outlook.timezone`标头的用法。</span><span class="sxs-lookup"><span data-stu-id="24249-136">The following example shows the use of the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="24249-137">它创建一个任务，表示**startDateTime**和**DueDateTime** （东部标准时间（EST）），并包含`Prefer`太平洋标准时间（PST）的标题。</span><span class="sxs-lookup"><span data-stu-id="24249-137">It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -77,27 +77,27 @@ Content-length: 276
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7c979-138">C#</span><span class="sxs-lookup"><span data-stu-id="7c979-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="24249-138">C#</span><span class="sxs-lookup"><span data-stu-id="24249-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7c979-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7c979-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="24249-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="24249-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7c979-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7c979-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="24249-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24249-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlookuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="7c979-141">在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7c979-141">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="7c979-142">响应</span><span class="sxs-lookup"><span data-stu-id="7c979-142">Response</span></span>
-<span data-ttu-id="7c979-143">POST 方法忽略请求正文中**startDateTime**和**dueDateTime**的时间部分，并假定指定时区（EST）中的时间始终为午夜。</span><span class="sxs-lookup"><span data-stu-id="7c979-143">The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always midnight in the specified time zone (EST).</span></span>
+<span data-ttu-id="24249-141">在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="24249-141">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="24249-142">响应</span><span class="sxs-lookup"><span data-stu-id="24249-142">Response</span></span>
+<span data-ttu-id="24249-143">POST 方法忽略请求正文中**startDateTime**和**dueDateTime**的时间部分，并假定指定时区（EST）中的时间始终为午夜。</span><span class="sxs-lookup"><span data-stu-id="24249-143">The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always midnight in the specified time zone (EST).</span></span>
 
-<span data-ttu-id="7c979-144">由于`Prefer`标头指定了 pst，因此 POST 方法表示 pst 中的响应中所有与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="7c979-144">Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST.</span></span> <span data-ttu-id="7c979-145">特别是对于**startDateTime**和**DUEDATETIME**属性，POST 方法将 EST 中的午夜转换为 pst，并在响应中将其返回到 pst 中。</span><span class="sxs-lookup"><span data-stu-id="7c979-145">In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.</span></span>
+<span data-ttu-id="24249-144">由于`Prefer`标头指定了 pst，因此 POST 方法表示 pst 中的响应中所有与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="24249-144">Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST.</span></span> <span data-ttu-id="24249-145">特别是对于**startDateTime**和**DUEDATETIME**属性，POST 方法将 EST 中的午夜转换为 pst，并在响应中将其返回到 pst 中。</span><span class="sxs-lookup"><span data-stu-id="24249-145">In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.</span></span>
 
-<span data-ttu-id="7c979-p107">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7c979-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="24249-p107">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="24249-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

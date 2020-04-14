@@ -3,31 +3,33 @@ title: 'synchronizationSchema: filterOperators'
 description: 列出作用域筛选器支持的所有运算符。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f577d2ae96a221e283d78c72986215d9139bfbaa
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b80c14879cb04f615d4feafaece48166f56b1a7f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443012"
 ---
-# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="8eeb8-103">synchronizationSchema: filterOperators</span><span class="sxs-lookup"><span data-stu-id="8eeb8-103">synchronizationSchema: filterOperators</span></span>
+# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="209bb-103">synchronizationSchema: filterOperators</span><span class="sxs-lookup"><span data-stu-id="209bb-103">synchronizationSchema: filterOperators</span></span>
+
+<span data-ttu-id="209bb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="209bb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8eeb8-104">列出[作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-104">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
+<span data-ttu-id="209bb-105">列出[作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。</span><span class="sxs-lookup"><span data-stu-id="209bb-105">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8eeb8-105">权限</span><span class="sxs-lookup"><span data-stu-id="8eeb8-105">Permissions</span></span>
-<span data-ttu-id="8eeb8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="209bb-106">权限</span><span class="sxs-lookup"><span data-stu-id="209bb-106">Permissions</span></span>
+<span data-ttu-id="209bb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="209bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8eeb8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8eeb8-108">Permission type</span></span>                        | <span data-ttu-id="8eeb8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8eeb8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="209bb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="209bb-109">Permission type</span></span>                        | <span data-ttu-id="209bb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="209bb-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8eeb8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8eeb8-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="8eeb8-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8eeb8-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="8eeb8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8eeb8-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="8eeb8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-113">Not supported.</span></span>|
-|<span data-ttu-id="8eeb8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8eeb8-114">Application</span></span>                            |<span data-ttu-id="8eeb8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-115">Not supported.</span></span> | 
+|<span data-ttu-id="209bb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="209bb-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="209bb-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="209bb-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="209bb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="209bb-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="209bb-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="209bb-114">Not supported.</span></span>|
+|<span data-ttu-id="209bb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="209bb-115">Application</span></span>                            |<span data-ttu-id="209bb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="209bb-116">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="8eeb8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8eeb8-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="209bb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="209bb-117">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
@@ -35,26 +37,26 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/filter
 GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOperators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8eeb8-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8eeb8-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="209bb-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="209bb-118">Request headers</span></span>
 
-| <span data-ttu-id="8eeb8-118">名称</span><span class="sxs-lookup"><span data-stu-id="8eeb8-118">Name</span></span>           | <span data-ttu-id="8eeb8-119">类型</span><span class="sxs-lookup"><span data-stu-id="8eeb8-119">Type</span></span>    | <span data-ttu-id="8eeb8-120">说明</span><span class="sxs-lookup"><span data-stu-id="8eeb8-120">Description</span></span>|
+| <span data-ttu-id="209bb-119">名称</span><span class="sxs-lookup"><span data-stu-id="209bb-119">Name</span></span>           | <span data-ttu-id="209bb-120">类型</span><span class="sxs-lookup"><span data-stu-id="209bb-120">Type</span></span>    | <span data-ttu-id="209bb-121">说明</span><span class="sxs-lookup"><span data-stu-id="209bb-121">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="8eeb8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8eeb8-121">Authorization</span></span>  | <span data-ttu-id="8eeb8-122">string</span><span class="sxs-lookup"><span data-stu-id="8eeb8-122">string</span></span>  | <span data-ttu-id="8eeb8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="209bb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="209bb-122">Authorization</span></span>  | <span data-ttu-id="209bb-123">string</span><span class="sxs-lookup"><span data-stu-id="209bb-123">string</span></span>  | <span data-ttu-id="209bb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="209bb-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8eeb8-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="8eeb8-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="209bb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="209bb-126">Request body</span></span>
 
-<span data-ttu-id="8eeb8-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="209bb-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="209bb-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8eeb8-127">响应</span><span class="sxs-lookup"><span data-stu-id="8eeb8-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="209bb-128">响应</span><span class="sxs-lookup"><span data-stu-id="209bb-128">Response</span></span>
 
-<span data-ttu-id="8eeb8-128">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-128">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
+<span data-ttu-id="209bb-129">如果成功，此方法在响应`200, OK`正文中返回响应代码和[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="209bb-129">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8eeb8-129">示例</span><span class="sxs-lookup"><span data-stu-id="8eeb8-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="209bb-130">示例</span><span class="sxs-lookup"><span data-stu-id="209bb-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8eeb8-130">请求</span><span class="sxs-lookup"><span data-stu-id="8eeb8-130">Request</span></span>
-<span data-ttu-id="8eeb8-131">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="209bb-131">请求</span><span class="sxs-lookup"><span data-stu-id="209bb-131">Request</span></span>
+<span data-ttu-id="209bb-132">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="209bb-132">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8eeb8-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="8eeb8-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="209bb-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="209bb-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
@@ -62,25 +64,25 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8eeb8-133">C#</span><span class="sxs-lookup"><span data-stu-id="8eeb8-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="209bb-134">C#</span><span class="sxs-lookup"><span data-stu-id="209bb-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-filteroperators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8eeb8-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8eeb8-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="209bb-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="209bb-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-filteroperators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8eeb8-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="8eeb8-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="209bb-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="209bb-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-filteroperators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="8eeb8-136">响应</span><span class="sxs-lookup"><span data-stu-id="8eeb8-136">Response</span></span>
-<span data-ttu-id="8eeb8-137">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-137">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="209bb-137">响应</span><span class="sxs-lookup"><span data-stu-id="209bb-137">Response</span></span>
+<span data-ttu-id="209bb-138">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="209bb-138">The following is an example of a response.</span></span>
 
-><span data-ttu-id="8eeb8-138">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8eeb8-139">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="8eeb8-139">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="209bb-139">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="209bb-139">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="209bb-140">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="209bb-140">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

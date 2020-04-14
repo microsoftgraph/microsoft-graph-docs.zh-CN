@@ -1,62 +1,64 @@
 ---
 title: 重新启动 synchronizationJob
-description: 重新启动同步作业, 强制它重新处理目录中的所有对象。 (可选) 清除现有同步状态和以前的错误。
+description: 重新启动同步作业，强制它重新处理目录中的所有对象。 （可选）清除现有同步状态和以前的错误。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e4ca9ec43675ee0c3a0d90027a28d4ff4d46dc7d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9a87f7d0e2a265a6a27f661fde188909ef38310a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409749"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437524"
 ---
-# <a name="restart-synchronizationjob"></a><span data-ttu-id="7fccb-104">重新启动 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="7fccb-104">Restart synchronizationJob</span></span>
+# <a name="restart-synchronizationjob"></a><span data-ttu-id="504ba-104">重新启动 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="504ba-104">Restart synchronizationJob</span></span>
+
+<span data-ttu-id="504ba-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="504ba-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7fccb-105">重新启动同步作业, 强制它重新处理目录中的所有对象。</span><span class="sxs-lookup"><span data-stu-id="7fccb-105">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="7fccb-106">(可选) 清除现有同步状态和以前的错误。</span><span class="sxs-lookup"><span data-stu-id="7fccb-106">Optionally clears existing synchronization state and previous errors.</span></span>
+<span data-ttu-id="504ba-106">重新启动同步作业，强制它重新处理目录中的所有对象。</span><span class="sxs-lookup"><span data-stu-id="504ba-106">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="504ba-107">（可选）清除现有同步状态和以前的错误。</span><span class="sxs-lookup"><span data-stu-id="504ba-107">Optionally clears existing synchronization state and previous errors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7fccb-107">权限</span><span class="sxs-lookup"><span data-stu-id="7fccb-107">Permissions</span></span>
-<span data-ttu-id="7fccb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7fccb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="504ba-108">权限</span><span class="sxs-lookup"><span data-stu-id="504ba-108">Permissions</span></span>
+<span data-ttu-id="504ba-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="504ba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7fccb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7fccb-110">Permission type</span></span>                        | <span data-ttu-id="7fccb-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7fccb-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="504ba-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="504ba-111">Permission type</span></span>                        | <span data-ttu-id="504ba-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="504ba-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7fccb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7fccb-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="7fccb-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7fccb-113">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="7fccb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7fccb-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="7fccb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fccb-115">Not supported.</span></span> |
-|<span data-ttu-id="7fccb-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7fccb-116">Application</span></span>                            |<span data-ttu-id="7fccb-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fccb-117">Not supported.</span></span>  | 
+|<span data-ttu-id="504ba-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="504ba-113">Delegated (work or school account)</span></span>     |<span data-ttu-id="504ba-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="504ba-114">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="504ba-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="504ba-115">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="504ba-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="504ba-116">Not supported.</span></span> |
+|<span data-ttu-id="504ba-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="504ba-117">Application</span></span>                            |<span data-ttu-id="504ba-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="504ba-118">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="7fccb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7fccb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="504ba-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="504ba-119">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7fccb-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7fccb-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="504ba-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="504ba-120">Request headers</span></span>
 
-| <span data-ttu-id="7fccb-120">名称</span><span class="sxs-lookup"><span data-stu-id="7fccb-120">Name</span></span>           | <span data-ttu-id="7fccb-121">类型</span><span class="sxs-lookup"><span data-stu-id="7fccb-121">Type</span></span>    | <span data-ttu-id="7fccb-122">说明</span><span class="sxs-lookup"><span data-stu-id="7fccb-122">Description</span></span>|
+| <span data-ttu-id="504ba-121">名称</span><span class="sxs-lookup"><span data-stu-id="504ba-121">Name</span></span>           | <span data-ttu-id="504ba-122">类型</span><span class="sxs-lookup"><span data-stu-id="504ba-122">Type</span></span>    | <span data-ttu-id="504ba-123">说明</span><span class="sxs-lookup"><span data-stu-id="504ba-123">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="7fccb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7fccb-123">Authorization</span></span>  | <span data-ttu-id="7fccb-124">string</span><span class="sxs-lookup"><span data-stu-id="7fccb-124">string</span></span>  | <span data-ttu-id="7fccb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7fccb-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="504ba-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="504ba-124">Authorization</span></span>  | <span data-ttu-id="504ba-125">string</span><span class="sxs-lookup"><span data-stu-id="504ba-125">string</span></span>  | <span data-ttu-id="504ba-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="504ba-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7fccb-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7fccb-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="504ba-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="504ba-128">Request body</span></span>
 
-<span data-ttu-id="7fccb-128">在请求正文中, 提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="7fccb-128">In the request body, provide a JSON object with the following parameter.</span></span>
+<span data-ttu-id="504ba-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="504ba-129">In the request body, provide a JSON object with the following parameter.</span></span>
 
-| <span data-ttu-id="7fccb-129">参数</span><span class="sxs-lookup"><span data-stu-id="7fccb-129">Parameter</span></span>     | <span data-ttu-id="7fccb-130">类型</span><span class="sxs-lookup"><span data-stu-id="7fccb-130">Type</span></span>      | <span data-ttu-id="7fccb-131">说明</span><span class="sxs-lookup"><span data-stu-id="7fccb-131">Description</span></span>    |
+| <span data-ttu-id="504ba-130">参数</span><span class="sxs-lookup"><span data-stu-id="504ba-130">Parameter</span></span>     | <span data-ttu-id="504ba-131">类型</span><span class="sxs-lookup"><span data-stu-id="504ba-131">Type</span></span>      | <span data-ttu-id="504ba-132">说明</span><span class="sxs-lookup"><span data-stu-id="504ba-132">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="7fccb-132">条件</span><span class="sxs-lookup"><span data-stu-id="7fccb-132">criteria</span></span>       |[<span data-ttu-id="7fccb-133">synchronizationJobRestartCriteria</span><span class="sxs-lookup"><span data-stu-id="7fccb-133">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="7fccb-134">重新启动条件</span><span class="sxs-lookup"><span data-stu-id="7fccb-134">Restart criteria</span></span>|
+|<span data-ttu-id="504ba-133">条件</span><span class="sxs-lookup"><span data-stu-id="504ba-133">criteria</span></span>       |[<span data-ttu-id="504ba-134">synchronizationJobRestartCriteria</span><span class="sxs-lookup"><span data-stu-id="504ba-134">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="504ba-135">重新启动条件</span><span class="sxs-lookup"><span data-stu-id="504ba-135">Restart criteria</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7fccb-135">响应</span><span class="sxs-lookup"><span data-stu-id="7fccb-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="504ba-136">响应</span><span class="sxs-lookup"><span data-stu-id="504ba-136">Response</span></span>
 
-<span data-ttu-id="7fccb-136">如果成功, 则返回`204 No Content`响应。</span><span class="sxs-lookup"><span data-stu-id="7fccb-136">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="7fccb-137">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="7fccb-137">It does not return anything in the response body.</span></span>
+<span data-ttu-id="504ba-137">如果成功，则返回`204 No Content`响应。</span><span class="sxs-lookup"><span data-stu-id="504ba-137">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="504ba-138">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="504ba-138">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7fccb-138">示例</span><span class="sxs-lookup"><span data-stu-id="7fccb-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="504ba-139">示例</span><span class="sxs-lookup"><span data-stu-id="504ba-139">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7fccb-139">请求</span><span class="sxs-lookup"><span data-stu-id="7fccb-139">Request</span></span>
-<span data-ttu-id="7fccb-140">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="7fccb-140">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="504ba-140">请求</span><span class="sxs-lookup"><span data-stu-id="504ba-140">Request</span></span>
+<span data-ttu-id="504ba-141">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="504ba-141">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7fccb-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7fccb-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="504ba-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="504ba-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_restart"
@@ -72,23 +74,23 @@ Content-type: application/json
    }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7fccb-142">C#</span><span class="sxs-lookup"><span data-stu-id="7fccb-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="504ba-143">C#</span><span class="sxs-lookup"><span data-stu-id="504ba-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-restart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7fccb-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fccb-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="504ba-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="504ba-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-restart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7fccb-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="7fccb-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="504ba-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="504ba-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-restart-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7fccb-145">响应</span><span class="sxs-lookup"><span data-stu-id="7fccb-145">Response</span></span>
-<span data-ttu-id="7fccb-146">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="7fccb-146">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="504ba-146">响应</span><span class="sxs-lookup"><span data-stu-id="504ba-146">Response</span></span>
+<span data-ttu-id="504ba-147">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="504ba-147">The following is an example of a response.</span></span>
 
 <!-- {
   "blockType": "response",

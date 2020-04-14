@@ -3,60 +3,60 @@ title: 'synchronizationJob: validateCredentials'
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fbbace2c81ec55002743f978a5b2987db175779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437510"
 ---
-# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="1a9bb-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="1a9bb-103">synchronizationJob: validateCredentials</span></span>
+# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="4d4e9-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="4d4e9-103">synchronizationJob: validateCredentials</span></span>
 
-<span data-ttu-id="1a9bb-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="1a9bb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4d4e9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d4e9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a9bb-105">验证凭据在租户中是否有效。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-105">Validate that the credentials are valid in the tenant.</span></span>
+<span data-ttu-id="4d4e9-105">验证凭据在租户中是否有效。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-105">Validate that the credentials are valid in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a9bb-106">权限</span><span class="sxs-lookup"><span data-stu-id="1a9bb-106">Permissions</span></span>
-<span data-ttu-id="1a9bb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d4e9-106">权限</span><span class="sxs-lookup"><span data-stu-id="4d4e9-106">Permissions</span></span>
+<span data-ttu-id="4d4e9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a9bb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1a9bb-109">Permission type</span></span>                        | <span data-ttu-id="1a9bb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1a9bb-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4d4e9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d4e9-109">Permission type</span></span>                        | <span data-ttu-id="4d4e9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d4e9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a9bb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1a9bb-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="1a9bb-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a9bb-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="1a9bb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1a9bb-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="1a9bb-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-114">Not supported.</span></span> |
-|<span data-ttu-id="1a9bb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1a9bb-115">Application</span></span>                            |<span data-ttu-id="1a9bb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-116">Not supported.</span></span>| 
+|<span data-ttu-id="4d4e9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d4e9-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="4d4e9-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d4e9-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="4d4e9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d4e9-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="4d4e9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-114">Not supported.</span></span> |
+|<span data-ttu-id="4d4e9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d4e9-115">Application</span></span>                            |<span data-ttu-id="4d4e9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="1a9bb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1a9bb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d4e9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d4e9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="1a9bb-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="1a9bb-118">Request headers</span></span>
-| <span data-ttu-id="1a9bb-119">名称</span><span class="sxs-lookup"><span data-stu-id="1a9bb-119">Name</span></span>       | <span data-ttu-id="1a9bb-120">说明</span><span class="sxs-lookup"><span data-stu-id="1a9bb-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4d4e9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d4e9-118">Request headers</span></span>
+| <span data-ttu-id="4d4e9-119">名称</span><span class="sxs-lookup"><span data-stu-id="4d4e9-119">Name</span></span>       | <span data-ttu-id="4d4e9-120">说明</span><span class="sxs-lookup"><span data-stu-id="4d4e9-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1a9bb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a9bb-121">Authorization</span></span>  | <span data-ttu-id="1a9bb-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="1a9bb-122">Bearer {code}</span></span>|
+| <span data-ttu-id="4d4e9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d4e9-121">Authorization</span></span>  | <span data-ttu-id="4d4e9-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="4d4e9-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1a9bb-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="1a9bb-123">Request body</span></span>
-<span data-ttu-id="1a9bb-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d4e9-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d4e9-123">Request body</span></span>
+<span data-ttu-id="4d4e9-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1a9bb-125">参数</span><span class="sxs-lookup"><span data-stu-id="1a9bb-125">Parameter</span></span>    | <span data-ttu-id="1a9bb-126">类型</span><span class="sxs-lookup"><span data-stu-id="1a9bb-126">Type</span></span>   |<span data-ttu-id="1a9bb-127">说明</span><span class="sxs-lookup"><span data-stu-id="1a9bb-127">Description</span></span>|
+| <span data-ttu-id="4d4e9-125">参数</span><span class="sxs-lookup"><span data-stu-id="4d4e9-125">Parameter</span></span>    | <span data-ttu-id="4d4e9-126">类型</span><span class="sxs-lookup"><span data-stu-id="4d4e9-126">Type</span></span>   |<span data-ttu-id="4d4e9-127">说明</span><span class="sxs-lookup"><span data-stu-id="4d4e9-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1a9bb-128">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="1a9bb-128">useSavedCredentials</span></span>|<span data-ttu-id="1a9bb-129">布尔</span><span class="sxs-lookup"><span data-stu-id="1a9bb-129">Boolean</span></span>|<span data-ttu-id="1a9bb-130">时`true`，将`credentials`忽略该参数，而改为验证以前保存的凭据（如果有）。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-130">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
-|<span data-ttu-id="1a9bb-131">凭据</span><span class="sxs-lookup"><span data-stu-id="1a9bb-131">credentials</span></span>|<span data-ttu-id="1a9bb-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合</span><span class="sxs-lookup"><span data-stu-id="1a9bb-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="1a9bb-133">要验证的凭据。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-133">Credentials to validate.</span></span> <span data-ttu-id="1a9bb-134">当`useSavedCredentials`参数为`true`时忽略。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-134">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
+|<span data-ttu-id="4d4e9-128">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="4d4e9-128">useSavedCredentials</span></span>|<span data-ttu-id="4d4e9-129">Boolean</span><span class="sxs-lookup"><span data-stu-id="4d4e9-129">Boolean</span></span>|<span data-ttu-id="4d4e9-130">时`true`，将`credentials`忽略该参数，而改为验证以前保存的凭据（如果有）。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-130">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
+|<span data-ttu-id="4d4e9-131">凭据</span><span class="sxs-lookup"><span data-stu-id="4d4e9-131">credentials</span></span>|<span data-ttu-id="4d4e9-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合</span><span class="sxs-lookup"><span data-stu-id="4d4e9-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="4d4e9-133">要验证的凭据。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-133">Credentials to validate.</span></span> <span data-ttu-id="4d4e9-134">当`useSavedCredentials`参数为`true`时忽略。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-134">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1a9bb-135">响应</span><span class="sxs-lookup"><span data-stu-id="1a9bb-135">Response</span></span>
-<span data-ttu-id="1a9bb-136">如果验证成功，此方法将`204, No Content`返回响应代码。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-136">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="1a9bb-137">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-137">It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4d4e9-135">响应</span><span class="sxs-lookup"><span data-stu-id="4d4e9-135">Response</span></span>
+<span data-ttu-id="4d4e9-136">如果验证成功，此方法将`204, No Content`返回响应代码。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-136">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="4d4e9-137">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-137">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a9bb-138">示例</span><span class="sxs-lookup"><span data-stu-id="1a9bb-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4d4e9-138">示例</span><span class="sxs-lookup"><span data-stu-id="4d4e9-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1a9bb-139">请求</span><span class="sxs-lookup"><span data-stu-id="1a9bb-139">Request</span></span>
-<span data-ttu-id="1a9bb-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-140">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="4d4e9-139">请求</span><span class="sxs-lookup"><span data-stu-id="4d4e9-139">Request</span></span>
+<span data-ttu-id="4d4e9-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1a9bb-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a9bb-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4d4e9-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d4e9-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_validatecredentials"
@@ -73,23 +73,23 @@ Content-length: 218
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1a9bb-142">C#</span><span class="sxs-lookup"><span data-stu-id="1a9bb-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4d4e9-142">C#</span><span class="sxs-lookup"><span data-stu-id="4d4e9-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-validatecredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a9bb-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a9bb-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4d4e9-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d4e9-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-validatecredentials-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a9bb-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a9bb-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4d4e9-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d4e9-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-validatecredentials-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1a9bb-145">响应</span><span class="sxs-lookup"><span data-stu-id="1a9bb-145">Response</span></span>
-<span data-ttu-id="1a9bb-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1a9bb-146">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4d4e9-145">响应</span><span class="sxs-lookup"><span data-stu-id="4d4e9-145">Response</span></span>
+<span data-ttu-id="4d4e9-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4d4e9-146">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
