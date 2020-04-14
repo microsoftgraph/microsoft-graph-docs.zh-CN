@@ -2,17 +2,19 @@
 title: officeConfiguration 资源类型
 description: 充当所有设备管理功能的容器的单例实体。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26d6023224048166d0d287ce893c07663638e1f9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 203efb4eab301f64eedfaceeba0e007c1a0b0123
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362608"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42797316"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Office 配置的 Id。|
+|id|字符串|Office 配置的 Id。|
 |tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端签入状态的列表。|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|描述租户签入 statues 的实体|
 

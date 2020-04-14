@@ -1,18 +1,20 @@
 ---
 title: sideLoadingKey 资源类型
 description: 对于租户，Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1a5f0dbc305e7a9cd71cfb8a90046edf1e2cfb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 118fc4ad76e7e8b848e70f8dd2592ab319928a60
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777936"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371400"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42777936"
 |[列出 sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)集合|列出[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性和关系。|
 |[获取 sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|读取[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性和关系。|
 |[创建 sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|创建新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。|
-|[删除 sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|None|删除[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)。|
+|[删除 sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|无|删除[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)。|
 |[更新 sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|更新[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -35,9 +37,9 @@ ms.locfileid: "42777936"
 |id|字符串|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
-|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
+|description|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|字符串|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,18 +1,20 @@
 ---
 title: 创建 managementConditionStatement
 description: 创建新的 managementConditionStatement 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c73bd08d3736b90803dd80c56f370e08f2fb5c3e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 004d7b87b6c99e02c99165aae2f36aa670f1e71f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804770"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43363965"
 ---
 # <a name="create-managementconditionstatement"></a>创建 managementConditionStatement
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +56,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |:---|:---|:---|
 |id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|说明|字符串|管理员定义的管理条件语句的说明。|
+|description|字符串|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
@@ -113,7 +115,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 

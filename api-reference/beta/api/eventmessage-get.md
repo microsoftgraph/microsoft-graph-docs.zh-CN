@@ -2,23 +2,23 @@
 title: 获取 eventMessage
 description: 在**事件**上展开 "参数
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ecf480c0aa4158f1b5b91eaf8275976e1d2e43c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d81c4516cb6cc8f3e114a6f8f4b54fbce7714cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422591"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364442"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在事件`$expand`导航属性上**** 应用该参数，以在与会者的日历中获取关联的[事件](../resources/event.md)。
+获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在事件`$expand`导航属性上**event**应用该参数，以在与会者的日历中获取关联的[事件](../resources/event.md)。
 
 ### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件消息正文
 

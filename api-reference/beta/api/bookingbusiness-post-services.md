@@ -2,19 +2,19 @@
 title: 创建 bookingService
 description: 为指定的 bookingbusiness 创建新的 bookingService。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 00c8536746ea45ea44f3097a77751d099b541188
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3388d4ecd59b6b44fcd7cbd9f8dbfc73966c56e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366461"
 ---
 # <a name="create-bookingservice"></a>创建 bookingService
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

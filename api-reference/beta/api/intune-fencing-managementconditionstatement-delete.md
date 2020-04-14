@@ -1,18 +1,20 @@
 ---
 title: 删除 managementConditionStatement
 description: 删除 managementConditionStatement。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c01f30d568b15fad3d5700ac8026083e1d34572e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b07aa92bdb727f44c38f6c9bca3669ca3b0d6348
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804763"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43363930"
 ---
 # <a name="delete-managementconditionstatement"></a>删除 managementConditionStatement
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditionStat
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

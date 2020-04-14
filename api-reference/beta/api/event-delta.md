@@ -2,19 +2,19 @@
 title: 'event: delta'
 description: 获取 **calendarView**（事件范围）中已添加、删除或更新的事件集。
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 500ecfc1c3ace82ce601ab75e316a63bb5ba1eb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09203bd271973c7dea955366c3038e472a334e33
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423201"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365688"
 ---
 # <a name="event-delta"></a>event: delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +59,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | 字符串  | application/json. Required. |
+| Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 | Prefer | string | {Time zone}。可选，如果缺省，则采用 UTC。|
 

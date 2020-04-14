@@ -2,19 +2,19 @@
 title: 创建 bookingAppointment
 description: 为指定的 bookingbusiness 创建新的 bookingAppointment。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54e326c238a4e57564b019548be490c5f44a9053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc5eb648f581e7bb0dc88a413be44297df790c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441221"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366595"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: vpnTunnelConfigurationType 枚举类型
 description: 将向 VPN 客户端提供的用于配置的隧道的类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c54f54e07b6a6e94bdad35511f2aa9d50a37a49e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d60d8fdd812fe18a5010683ddc0d1ef6cd8fbf06
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787276"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358928"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>vpnTunnelConfigurationType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

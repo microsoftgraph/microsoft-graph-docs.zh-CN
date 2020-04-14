@@ -1,20 +1,20 @@
 ---
 title: Add attachment
 description: 使用此 API 新建附件。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9810edafe2657684e22c3672a8591a963c3c760d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2d389df4ffe2e1abc2b9e9749f4fc626f5ed654
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364161"
 ---
 # <a name="add-attachment"></a>添加附件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

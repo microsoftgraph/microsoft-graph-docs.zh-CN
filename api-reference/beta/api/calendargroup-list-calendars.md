@@ -1,16 +1,16 @@
 ---
 title: 列出日历
 description: 检索属于日历组的日历列表。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a943d707345873ccac2ca8a02e301cbf7d29ab0
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 9d62fb3b97f269298a4c9feb517c44d5917ec191
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43361413"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -20,7 +20,7 @@ ms.locfileid: "42639567"
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

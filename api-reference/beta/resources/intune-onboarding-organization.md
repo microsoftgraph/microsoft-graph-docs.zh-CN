@@ -1,18 +1,20 @@
 ---
 title: 组织资源类型
 description: 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd8481ddea83194c7e1b769c70518c9ddff3f894
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5f4fcca12b08b49533c583d38e089d0c3b5335c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778013"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371422"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,7 +33,7 @@ ms.locfileid: "42778013"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID。|
+|id|字符串|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|证书连接器设置。|
 

@@ -1,18 +1,20 @@
 ---
 title: 创建 roleScopeTag
 description: 创建新的 roleScopeTag 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffe84cd414f9347b57be0d4f439793f4a014189f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a705d41ce2e10a07dfb43e86dd662adbce3f837c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801605"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360630"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,7 +56,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色范围标记的显示名称或友好名称。|
-|说明|String|角色范围标记的说明。|
+|description|String|角色范围标记的说明。|
 |isBuiltIn|Boolean|角色范围标记的说明。|
 
 
@@ -94,7 +96,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

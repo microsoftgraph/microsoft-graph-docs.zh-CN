@@ -1,18 +1,20 @@
 ---
 title: 更新 sideLoadingKey
 description: 更新 sideLoadingKey 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6165a26a6c0212321403e6a5793b2e9452b4954
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 81e148cbfaaf07950981cf4841c6c1c553170efc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802704"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362997"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,9 +56,9 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |id|字符串|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
-|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
+|description|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|字符串|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 
 
@@ -99,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

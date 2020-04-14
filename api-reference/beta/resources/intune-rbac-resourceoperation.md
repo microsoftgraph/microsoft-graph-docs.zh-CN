@@ -1,18 +1,20 @@
 ---
 title: resourceOperation 资源类型
 description: 介绍 Microsoft Graph API （REST）的 resourceOperation 资源（实体），它支持与基于角色的访问控制（RBAC）相关的 Intune 工作流。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 460e189aa5c6ab698fdc8bcad65cb3bd3bb48f71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8fefba58bc26494e2dabbff24ab6ec9756c2f15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773334"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43357450"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -34,11 +36,11 @@ ms.locfileid: "42773334"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|资源操作的键。 只读，且自动生成。|
-|resource|String|此操作所属的资源类别。|
+|resource|字符串|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔值|确定是否针对按角色分配定义的作用域验证权限。|
+|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|enabledForScopeValidation|Boolean|确定是否针对按角色分配定义的作用域验证权限。|
 
 ## <a name="relationships"></a>关系
 无

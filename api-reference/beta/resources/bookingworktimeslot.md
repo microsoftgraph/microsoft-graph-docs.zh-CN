@@ -2,19 +2,19 @@
 title: bookingWorkTimeSlot 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 2c9caa1f5a9a2b78911e77df27b84079efd70ab2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76c5de4628c8b63a3babc05016a02111a20dd100
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507878"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360511"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>bookingWorkTimeSlot 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

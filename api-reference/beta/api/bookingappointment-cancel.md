@@ -2,19 +2,19 @@
 title: bookingAppointment：取消
 description: 在指定的 bookingbusiness 中取消指定的 bookingAppointment，并向相关的 customer 和教职员工成员发送一封邮件。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 91c9da27446d7588c806f3262b5060780071a78d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98633524d61093c6ddc4c9c85e5e98f205a508da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441317"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367704"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment：取消
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|向客户确认约会已被取消的消息。|
+|cancellationMessage|字符串|向客户确认约会已被取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。

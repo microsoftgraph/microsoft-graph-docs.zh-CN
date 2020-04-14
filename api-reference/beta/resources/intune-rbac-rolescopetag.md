@@ -1,18 +1,20 @@
 ---
 title: roleScopeTag 资源类型
 description: 角色范围标记
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d76ca4d2493b3d644c5b73c6b0645109573d3293
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b30b3944976b2d8d0ac13aeb658402849c0b2d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773187"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356815"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42773187"
 |[列出 roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|列出[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性和关系。|
 |[获取 roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|读取[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性和关系。|
 |[创建 roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。|
-|[删除 roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|删除[roleScopeTag](../resources/intune-rbac-rolescopetag.md)。|
+|[删除 roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|无|删除[roleScopeTag](../resources/intune-rbac-rolescopetag.md)。|
 |[更新 roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|更新[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性。|
 |[分配操作](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)集合|尚未记录|
 |[getRoleScopeTagsById 操作](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|
@@ -37,7 +39,7 @@ ms.locfileid: "42773187"
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色范围标记的显示名称或友好名称。|
-|说明|String|角色范围标记的说明。|
+|description|String|角色范围标记的说明。|
 |isBuiltIn|Boolean|角色范围标记的说明。|
 
 ## <a name="relationships"></a>关系

@@ -1,18 +1,20 @@
 ---
 title: deviceManagementApplicabilityRuleDeviceMode 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 099f6081366187e240bf8510fca30a548fea4fe3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 684dd5415d5ffa3c8884611efb1c9add8bdf0651
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792036"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359659"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>deviceManagementApplicabilityRuleDeviceMode 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,7 +26,7 @@ ms.locfileid: "42792036"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceMode|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|设备模式的适用性规则。 可取值为：`standardConfiguration`、`sModeConfiguration`。|
-|name|String|对象的名称。|
+|name|字符串|对象的名称。|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|适用性规则类型。 可取值为：`include`、`exclude`。|
 
 ## <a name="relationships"></a>关系

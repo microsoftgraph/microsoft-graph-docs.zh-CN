@@ -1,20 +1,20 @@
 ---
 title: 获取事件
 description: 获取指定的 event 对象的属性和关系。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a228e80c59a15763cde4bc378ce74aaf89d6acfc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f72f23d0521b6e78e4d776b0e5e0288ebba46a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422970"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365509"
 ---
 # <a name="get-event"></a>获取事件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
@@ -119,7 +119,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。由于未`Prefer: outlook.body-content-type`指定标头，因此**body**属性以默认的 HTML 格式返回。 
+下面是一个响应示例。 由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。 
 
 <!-- {
   "blockType": "response",

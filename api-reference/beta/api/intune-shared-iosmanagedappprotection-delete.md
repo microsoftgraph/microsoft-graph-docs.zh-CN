@@ -1,18 +1,20 @@
 ---
 title: 删除 iosManagedAppProtection
 description: 删除 iosManagedAppProtection。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 938730f4fbe9b0c95e7753333d1e9499c07b8b44
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 41c525159367196fb8c6cbef5e51f51eba494569
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800884"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362931"
 ---
 # <a name="delete-iosmanagedappprotection"></a>删除 iosManagedAppProtection
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

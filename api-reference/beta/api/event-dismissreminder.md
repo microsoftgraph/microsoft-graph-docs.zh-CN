@@ -1,20 +1,20 @@
 ---
 title: 'event: dismissReminder'
 description: 消除对用户日历中的事件触发的提醒。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d24657ac8657ceac891d645fc429d9bb34bfac0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db13f64b5df6ab3caa31775ba67757af954f4a3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423159"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365651"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

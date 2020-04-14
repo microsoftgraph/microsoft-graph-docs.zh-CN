@@ -1,20 +1,20 @@
 ---
 title: 'event: accept'
 description: 接受用户日历中的指定事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: be6fa8113e58c26a5b4253dd511d6ed3de9c94df
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73fb0b72aa9b7aabcd30aff678c69b8bb205ac5a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423418"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366416"
 ---
 # <a name="event-accept"></a>event: accept
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

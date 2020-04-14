@@ -2,19 +2,19 @@
 title: 列出约会
 description: 获取指定 bookingbusiness 的 bookingAppointment 对象的列表。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1cc6fcf3889ffca8bdf6f41f14533487f96db798
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1a1f1cb63d4f5feee4f8a6d399a91dfc4c35266
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367178"
 ---
 # <a name="list-appointments"></a>列出约会
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

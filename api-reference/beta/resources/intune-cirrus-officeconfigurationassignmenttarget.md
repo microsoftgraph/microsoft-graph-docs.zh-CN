@@ -2,17 +2,19 @@
 title: officeConfigurationAssignmentTarget 资源类型
 description: Office 客户端配置分配目标。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50540e7693679117b3320d4ba927eb77d858563f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3d34d1272c5815144b11ec2b8ca804d33ed6bde0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797309"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362519"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>officeConfigurationAssignmentTarget 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

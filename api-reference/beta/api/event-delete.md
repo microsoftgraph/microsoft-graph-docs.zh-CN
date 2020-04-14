@@ -1,16 +1,16 @@
 ---
 title: 删除事件
 description: 删除事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 04ec124393bb5925c4f1f8c4596c6320de3c1f7b
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 519ade0d94fa6830cd3b0d99e5c8f968f5df6b4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144224"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365709"
 ---
 # <a name="delete-event"></a>删除事件
 
@@ -18,9 +18,9 @@ ms.locfileid: "43144224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从包含的日历中删除指定的[事件](../resources/event.md)。 
+从包含的日历中删除指定[事件](../resources/event.md)。 
 
-如果事件是会议，则删除组织者日历上的事件会向会议与会者发送取消邮件。
+如果事件是会议，则在组织者的日历上删除事件会向与会者发送取消邮件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

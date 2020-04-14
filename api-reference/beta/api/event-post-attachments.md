@@ -1,20 +1,20 @@
 ---
 title: Add attachment
 description: 使用此 API 将 附件 添加到事件。 自此处起
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d28a966260f89a6c484209d9973b97dbf6de99c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1fb6c9bf074228c7cb30de2fa1f5ecd611f7f86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422815"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365059"
 ---
 # <a name="add-attachment"></a>添加附件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

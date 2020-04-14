@@ -1,20 +1,20 @@
 ---
 title: 'event: snoozeReminder'
 description: 将用户日历中的事件的提醒推迟到新时间。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6de413d937f87820f3fbad497198e0c1b74628da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9082ce27e232e06db7867385942e409dfbbe727d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365045"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

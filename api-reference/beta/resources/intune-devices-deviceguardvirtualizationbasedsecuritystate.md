@@ -1,18 +1,20 @@
 ---
 title: deviceGuardVirtualizationBasedSecurityState 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 67c24f09c76b6c2aa35dacfb4f78c2870715e393
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01b8c11e12e1a219db8d64dd9f1734b7227df6bd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784977"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362405"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

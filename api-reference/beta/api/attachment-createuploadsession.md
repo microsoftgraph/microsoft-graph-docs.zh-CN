@@ -2,15 +2,15 @@
 title: 附件： createUploadSession
 description: 创建上载会话以以迭代方式上载文件的范围，以便将文件附加到指定的邮件。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a068413b1849da27f3723bb9d006ab487b07a3a0
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 6bfdc379a8eb7857e4871ad13a6be47e87a2fe6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589913"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368016"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -18,29 +18,29 @@ ms.locfileid: "42589913"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将该文件附加到 Outlook 项目。 项目可以是[消息](../resources/message.md)或[事件](../resources/event.md)。
+创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的[邮件](../resources/message.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请在 Outlook 项目`POST`的 "**附件**" 导航属性上执行操作;请参阅如何[为邮件](message-post-attachments.md)或[事件](event-post-attachments.md)执行此操作。 
+当文件大小介于 3 MB 和 150 MB 之间时，使用此方法可将文件附加到**邮件**。 若要附加小于 3 MB 的文件，请[在 "附件" 导航属性上进行发布](message-post-attachments.md)。 
 
 作为响应的一部分，此操作将返回可在后续顺序`PUT`查询中使用的上载 URL。 每个`PUT`操作的请求标头允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
 
-以下是使用上载会话将文件附加到 Outlook 项目的步骤：
+以下是使用上传会话附加文件的步骤：
 
-1. 创建上传会话。
-2. 在该上传会话中，以迭代方式上载字节的范围（每次最长为 4 MB），直到上载了文件的所有字节，并将该文件附加到指定的项目。
-3. 保存附件的 ID 以供将来访问。
-4. 可选：删除上传会话。
+1. 创建上传会话
+2. 在该上传会话中，以迭代方式上载字节范围（每次最长 4 MB），直到上载了文件的所有字节，并将文件附加到指定的邮件
+3. 保存附件的 ID 以供将来访问
+4. 可选：删除上传会话 
 
-有关示例，请参阅[将大型文件附加到 Outlook 消息或事件](/graph/outlook-large-attachments)。
+有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 
 > [!TIP]
 > Exchange Online 允许管理员自定义 Office 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
-> 如果要将大型文件附加到共享或委派邮箱中的邮件或事件，请注意[已知问题](/graph/known-issues#attaching-large-files-to-messages)。
+> 如果要附加到共享或委派邮箱中的邮件，请注意[已知问题](/graph/known-issues#attaching-large-files-to-messages)。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,21 +52,13 @@ ms.locfileid: "42589913"
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建用于将文件附加到**事件**的上载会话： 
-
 <!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/attachments/createUploadSession
-```
 
-创建用于将文件附加到**邮件**的上载会话： 
-
-<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -77,7 +69,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | Description |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少指定附件类型（`file`）、名称和文件大小。|
 
@@ -96,7 +88,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何创建可在后续文件上载操作中用于指定邮件的上载会话。
+下面的示例演示如何创建可在后续文件上载操作中使用的上载会话。
 
 ### <a name="request"></a>请求
 

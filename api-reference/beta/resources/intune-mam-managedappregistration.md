@@ -1,18 +1,20 @@
 ---
 title: managedAppRegistration 资源类型
 description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b776c28f3249b53ad6d428ece7002b3eed8cb9f6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a909c50e6ac7f40c43f4d573f1966f9bb35a3fa6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781507"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371992"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -33,21 +35,21 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|创建日期和时间|
 |lastSyncDateTime|DateTimeOffset|上次应用与管理服务同步的日期和时间。|
-|applicationVersion|String|应用版本|
-|managementSdkVersion|String|应用管理 SDK 版本|
-|platformVersion|String|操作系统版本|
-|deviceType|String|主机设备类型|
+|applicationVersion|字符串|应用版本|
+|managementSdkVersion|字符串|应用管理 SDK 版本|
+|platformVersion|字符串|操作系统版本|
+|deviceType|字符串|主机设备类型|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
-|managedDeviceId|String|主机设备的托管设备标识符。 即使在托管主机设备时，值也可能为空。|
-|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory，值也可能为空。|
-|deviceModel|String|当前应用程序注册的设备模型 |
-|deviceManufacturer|String|当前应用程序注册的设备制造商 |
+|managedDeviceId|字符串|主机设备的托管设备标识符。 即使在托管主机设备时，值也可能为空。|
+|azureADDeviceId|字符串|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory，值也可能为空。|
+|deviceModel|字符串|当前应用程序注册的设备模型 |
+|deviceManufacturer|字符串|当前应用程序注册的设备制造商 |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
 |userId|String|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
 |id|字符串|实体的键。|
-|version|String|实体的版本。|
+|version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

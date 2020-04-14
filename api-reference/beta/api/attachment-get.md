@@ -3,18 +3,18 @@ title: 获取附件
 description: 读取附加到事件、邮件、Outlook 任务或帖子的附件的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: f9a6eb580d7a4873cf9e909308243f22ac2b935a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30c81b14782d0186a8dc5f94b9556b9a7ace2cb9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441345"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367718"
 ---
 # <a name="get-attachment"></a>获取附件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
