@@ -1,35 +1,37 @@
 ---
 title: defenderThreatAction 枚举类型
 description: 要对检测到的恶意软件威胁执行的 Defender 的默认操作。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6549b16e325fd8830d0b96de7fd234a315319b8a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd72afa1d49e39486454304ce27517e9433a137a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794408"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420799"
 ---
-# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="d3f6b-103">defenderThreatAction 枚举类型</span><span class="sxs-lookup"><span data-stu-id="d3f6b-103">defenderThreatAction enum type</span></span>
+# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="45d46-103">defenderThreatAction 枚举类型</span><span class="sxs-lookup"><span data-stu-id="45d46-103">defenderThreatAction enum type</span></span>
 
-> <span data-ttu-id="d3f6b-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="45d46-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="45d46-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d3f6b-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="45d46-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="45d46-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d3f6b-106">要对检测到的恶意软件威胁执行的 Defender 的默认操作。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-106">Defender’s default action to take on detected Malware threats.</span></span>
+> <span data-ttu-id="45d46-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="45d46-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d3f6b-107">成员</span><span class="sxs-lookup"><span data-stu-id="d3f6b-107">Members</span></span>
-|<span data-ttu-id="d3f6b-108">成员</span><span class="sxs-lookup"><span data-stu-id="d3f6b-108">Member</span></span>|<span data-ttu-id="d3f6b-109">值</span><span class="sxs-lookup"><span data-stu-id="d3f6b-109">Value</span></span>|<span data-ttu-id="d3f6b-110">说明</span><span class="sxs-lookup"><span data-stu-id="d3f6b-110">Description</span></span>|
+<span data-ttu-id="45d46-107">要对检测到的恶意软件威胁执行的 Defender 的默认操作。</span><span class="sxs-lookup"><span data-stu-id="45d46-107">Defender’s default action to take on detected Malware threats.</span></span>
+
+## <a name="members"></a><span data-ttu-id="45d46-108">成员</span><span class="sxs-lookup"><span data-stu-id="45d46-108">Members</span></span>
+|<span data-ttu-id="45d46-109">成员</span><span class="sxs-lookup"><span data-stu-id="45d46-109">Member</span></span>|<span data-ttu-id="45d46-110">值</span><span class="sxs-lookup"><span data-stu-id="45d46-110">Value</span></span>|<span data-ttu-id="45d46-111">说明</span><span class="sxs-lookup"><span data-stu-id="45d46-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d3f6b-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="d3f6b-111">deviceDefault</span></span>|<span data-ttu-id="d3f6b-112">0</span><span class="sxs-lookup"><span data-stu-id="d3f6b-112">0</span></span>|<span data-ttu-id="d3f6b-113">根据更新定义应用操作。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-113">Apply action based on the update definition.</span></span>|
-|<span data-ttu-id="d3f6b-114">清理</span><span class="sxs-lookup"><span data-stu-id="d3f6b-114">clean</span></span>|<span data-ttu-id="d3f6b-115">1</span><span class="sxs-lookup"><span data-stu-id="d3f6b-115">1</span></span>|<span data-ttu-id="d3f6b-116">清理检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-116">Clean the detected threat.</span></span>|
-|<span data-ttu-id="d3f6b-117">隔离</span><span class="sxs-lookup"><span data-stu-id="d3f6b-117">quarantine</span></span>|<span data-ttu-id="d3f6b-118">双面</span><span class="sxs-lookup"><span data-stu-id="d3f6b-118">2</span></span>|<span data-ttu-id="d3f6b-119">隔离检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-119">Quarantine the detected threat.</span></span>|
-|<span data-ttu-id="d3f6b-120">删除</span><span class="sxs-lookup"><span data-stu-id="d3f6b-120">remove</span></span>|<span data-ttu-id="d3f6b-121">第三章</span><span class="sxs-lookup"><span data-stu-id="d3f6b-121">3</span></span>|<span data-ttu-id="d3f6b-122">删除检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-122">Remove the detected threat.</span></span>|
-|<span data-ttu-id="d3f6b-123">允许</span><span class="sxs-lookup"><span data-stu-id="d3f6b-123">allow</span></span>|<span data-ttu-id="d3f6b-124">4 </span><span class="sxs-lookup"><span data-stu-id="d3f6b-124">4</span></span>|<span data-ttu-id="d3f6b-125">允许检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-125">Allow the detected threat.</span></span>|
-|<span data-ttu-id="d3f6b-126">定制</span><span class="sxs-lookup"><span data-stu-id="d3f6b-126">userDefined</span></span>|<span data-ttu-id="d3f6b-127">5 </span><span class="sxs-lookup"><span data-stu-id="d3f6b-127">5</span></span>|<span data-ttu-id="d3f6b-128">允许用户确定要对检测到的威胁采取的操作。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-128">Allow the user to determine the action to take with the detected threat.</span></span>|
-|<span data-ttu-id="d3f6b-129">数据</span><span class="sxs-lookup"><span data-stu-id="d3f6b-129">block</span></span>|<span data-ttu-id="d3f6b-130">6 </span><span class="sxs-lookup"><span data-stu-id="d3f6b-130">6</span></span>|<span data-ttu-id="d3f6b-131">阻止检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="d3f6b-131">Block the detected threat.</span></span>|
+|<span data-ttu-id="45d46-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="45d46-112">deviceDefault</span></span>|<span data-ttu-id="45d46-113">0</span><span class="sxs-lookup"><span data-stu-id="45d46-113">0</span></span>|<span data-ttu-id="45d46-114">根据更新定义应用操作。</span><span class="sxs-lookup"><span data-stu-id="45d46-114">Apply action based on the update definition.</span></span>|
+|<span data-ttu-id="45d46-115">清理</span><span class="sxs-lookup"><span data-stu-id="45d46-115">clean</span></span>|<span data-ttu-id="45d46-116">1</span><span class="sxs-lookup"><span data-stu-id="45d46-116">1</span></span>|<span data-ttu-id="45d46-117">清理检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="45d46-117">Clean the detected threat.</span></span>|
+|<span data-ttu-id="45d46-118">隔离</span><span class="sxs-lookup"><span data-stu-id="45d46-118">quarantine</span></span>|<span data-ttu-id="45d46-119">双面</span><span class="sxs-lookup"><span data-stu-id="45d46-119">2</span></span>|<span data-ttu-id="45d46-120">隔离检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="45d46-120">Quarantine the detected threat.</span></span>|
+|<span data-ttu-id="45d46-121">删除</span><span class="sxs-lookup"><span data-stu-id="45d46-121">remove</span></span>|<span data-ttu-id="45d46-122">第三章</span><span class="sxs-lookup"><span data-stu-id="45d46-122">3</span></span>|<span data-ttu-id="45d46-123">删除检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="45d46-123">Remove the detected threat.</span></span>|
+|<span data-ttu-id="45d46-124">允许</span><span class="sxs-lookup"><span data-stu-id="45d46-124">allow</span></span>|<span data-ttu-id="45d46-125">4 </span><span class="sxs-lookup"><span data-stu-id="45d46-125">4</span></span>|<span data-ttu-id="45d46-126">允许检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="45d46-126">Allow the detected threat.</span></span>|
+|<span data-ttu-id="45d46-127">定制</span><span class="sxs-lookup"><span data-stu-id="45d46-127">userDefined</span></span>|<span data-ttu-id="45d46-128">5 </span><span class="sxs-lookup"><span data-stu-id="45d46-128">5</span></span>|<span data-ttu-id="45d46-129">允许用户确定要对检测到的威胁采取的操作。</span><span class="sxs-lookup"><span data-stu-id="45d46-129">Allow the user to determine the action to take with the detected threat.</span></span>|
+|<span data-ttu-id="45d46-130">数据</span><span class="sxs-lookup"><span data-stu-id="45d46-130">block</span></span>|<span data-ttu-id="45d46-131">6 </span><span class="sxs-lookup"><span data-stu-id="45d46-131">6</span></span>|<span data-ttu-id="45d46-132">阻止检测到的威胁。</span><span class="sxs-lookup"><span data-stu-id="45d46-132">Block the detected threat.</span></span>|
 
 
 

@@ -3,26 +3,26 @@ title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 43ed2cf25b57ff3c2d5891c5b20ba19aa88075bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: keylimesoda
+ms.openlocfilehash: 9dc9a53e98c43992c09158bac79afb49abcfee2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423802"
 ---
-# <a name="extension-resource-type"></a><span data-ttu-id="62a50-103">扩展资源类型</span><span class="sxs-lookup"><span data-stu-id="62a50-103">extension resource type</span></span>
+# <a name="extension-resource-type"></a><span data-ttu-id="e4c87-103">扩展资源类型</span><span class="sxs-lookup"><span data-stu-id="e4c87-103">extension resource type</span></span>
 
-<span data-ttu-id="62a50-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="62a50-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e4c87-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4c87-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62a50-105">用以支持 OData v4 开放类型 [openTypeExtension](opentypeextension.md) 的抽象类型。</span><span class="sxs-lookup"><span data-stu-id="62a50-105">An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).</span></span>
+<span data-ttu-id="e4c87-105">用以支持 OData v4 开放类型 [openTypeExtension](opentypeextension.md) 的抽象类型。</span><span class="sxs-lookup"><span data-stu-id="e4c87-105">An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="62a50-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="62a50-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e4c87-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e4c87-106">JSON representation</span></span>
 
-<span data-ttu-id="62a50-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="62a50-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e4c87-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e4c87-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,18 +38,18 @@ ms.locfileid: "42499006"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="62a50-108">属性</span><span class="sxs-lookup"><span data-stu-id="62a50-108">Properties</span></span>
-| <span data-ttu-id="62a50-109">属性</span><span class="sxs-lookup"><span data-stu-id="62a50-109">Property</span></span>     | <span data-ttu-id="62a50-110">类型</span><span class="sxs-lookup"><span data-stu-id="62a50-110">Type</span></span>   |<span data-ttu-id="62a50-111">说明</span><span class="sxs-lookup"><span data-stu-id="62a50-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e4c87-108">属性</span><span class="sxs-lookup"><span data-stu-id="e4c87-108">Properties</span></span>
+| <span data-ttu-id="e4c87-109">属性</span><span class="sxs-lookup"><span data-stu-id="e4c87-109">Property</span></span>     | <span data-ttu-id="e4c87-110">类型</span><span class="sxs-lookup"><span data-stu-id="e4c87-110">Type</span></span>   |<span data-ttu-id="e4c87-111">说明</span><span class="sxs-lookup"><span data-stu-id="e4c87-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62a50-112">id</span><span class="sxs-lookup"><span data-stu-id="62a50-112">id</span></span>|<span data-ttu-id="62a50-113">String</span><span class="sxs-lookup"><span data-stu-id="62a50-113">String</span></span>| <span data-ttu-id="62a50-114">只读。</span><span class="sxs-lookup"><span data-stu-id="62a50-114">Read-only.</span></span>|
+|<span data-ttu-id="e4c87-112">id</span><span class="sxs-lookup"><span data-stu-id="e4c87-112">id</span></span>|<span data-ttu-id="e4c87-113">String</span><span class="sxs-lookup"><span data-stu-id="e4c87-113">String</span></span>| <span data-ttu-id="e4c87-114">只读。</span><span class="sxs-lookup"><span data-stu-id="e4c87-114">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="62a50-115">关系</span><span class="sxs-lookup"><span data-stu-id="62a50-115">Relationships</span></span>
-<span data-ttu-id="62a50-116">无</span><span class="sxs-lookup"><span data-stu-id="62a50-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e4c87-115">关系</span><span class="sxs-lookup"><span data-stu-id="e4c87-115">Relationships</span></span>
+<span data-ttu-id="e4c87-116">无</span><span class="sxs-lookup"><span data-stu-id="e4c87-116">None</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="62a50-117">方法</span><span class="sxs-lookup"><span data-stu-id="62a50-117">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e4c87-117">方法</span><span class="sxs-lookup"><span data-stu-id="e4c87-117">Methods</span></span>
 
-<span data-ttu-id="62a50-118">请参阅派生类型 [openTypeExtension](opentypeextension.md) 的方法以了解实际支持的方法。</span><span class="sxs-lookup"><span data-stu-id="62a50-118">See the methods of the derived type [openTypeExtension](opentypeextension.md) for actually supported methods.</span></span>
+<span data-ttu-id="e4c87-118">请参阅派生类型 [openTypeExtension](opentypeextension.md) 的方法以了解实际支持的方法。</span><span class="sxs-lookup"><span data-stu-id="e4c87-118">See the methods of the derived type [openTypeExtension](opentypeextension.md) for actually supported methods.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,36 +1,38 @@
 ---
 title: win32LobAppInstallExperience 资源类型
 description: 包含 Win32 应用程序的安装体验属性
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a8f6fcecd995857b337f6d91b09e2ce7361defb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2470aeac3b92052e801db12d4da7f76113a9c8d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797625"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422971"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="23f04-103">win32LobAppInstallExperience 资源类型</span><span class="sxs-lookup"><span data-stu-id="23f04-103">win32LobAppInstallExperience resource type</span></span>
+# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="d9feb-103">win32LobAppInstallExperience 资源类型</span><span class="sxs-lookup"><span data-stu-id="d9feb-103">win32LobAppInstallExperience resource type</span></span>
 
-> <span data-ttu-id="23f04-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="23f04-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d9feb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9feb-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="23f04-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="23f04-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d9feb-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d9feb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="23f04-106">包含 Win32 应用程序的安装体验属性</span><span class="sxs-lookup"><span data-stu-id="23f04-106">Contains installation experience properties for a Win32 App</span></span>
+> <span data-ttu-id="d9feb-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d9feb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="23f04-107">属性</span><span class="sxs-lookup"><span data-stu-id="23f04-107">Properties</span></span>
-|<span data-ttu-id="23f04-108">属性</span><span class="sxs-lookup"><span data-stu-id="23f04-108">Property</span></span>|<span data-ttu-id="23f04-109">类型</span><span class="sxs-lookup"><span data-stu-id="23f04-109">Type</span></span>|<span data-ttu-id="23f04-110">说明</span><span class="sxs-lookup"><span data-stu-id="23f04-110">Description</span></span>|
+<span data-ttu-id="d9feb-107">包含 Win32 应用程序的安装体验属性</span><span class="sxs-lookup"><span data-stu-id="d9feb-107">Contains installation experience properties for a Win32 App</span></span>
+
+## <a name="properties"></a><span data-ttu-id="d9feb-108">属性</span><span class="sxs-lookup"><span data-stu-id="d9feb-108">Properties</span></span>
+|<span data-ttu-id="d9feb-109">属性</span><span class="sxs-lookup"><span data-stu-id="d9feb-109">Property</span></span>|<span data-ttu-id="d9feb-110">类型</span><span class="sxs-lookup"><span data-stu-id="d9feb-110">Type</span></span>|<span data-ttu-id="d9feb-111">说明</span><span class="sxs-lookup"><span data-stu-id="d9feb-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="23f04-111">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="23f04-111">runAsAccount</span></span>|[<span data-ttu-id="23f04-112">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="23f04-112">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="23f04-113">指示应用程序在其中运行的执行上下文的类型。</span><span class="sxs-lookup"><span data-stu-id="23f04-113">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="23f04-114">可取值为：`system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="23f04-114">Possible values are: `system`, `user`.</span></span>|
-|<span data-ttu-id="23f04-115">deviceRestartBehavior</span><span class="sxs-lookup"><span data-stu-id="23f04-115">deviceRestartBehavior</span></span>|[<span data-ttu-id="23f04-116">win32LobAppRestartBehavior</span><span class="sxs-lookup"><span data-stu-id="23f04-116">win32LobAppRestartBehavior</span></span>](../resources/intune-apps-win32lobapprestartbehavior.md)|<span data-ttu-id="23f04-117">设备重启行为。</span><span class="sxs-lookup"><span data-stu-id="23f04-117">Device restart behavior.</span></span> <span data-ttu-id="23f04-118">可取值为：`basedOnReturnCode`、`allow`、`suppress`、`force`。</span><span class="sxs-lookup"><span data-stu-id="23f04-118">Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.</span></span>|
+|<span data-ttu-id="d9feb-112">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="d9feb-112">runAsAccount</span></span>|[<span data-ttu-id="d9feb-113">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="d9feb-113">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="d9feb-114">指示应用程序在其中运行的执行上下文的类型。</span><span class="sxs-lookup"><span data-stu-id="d9feb-114">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="d9feb-115">可取值为：`system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="d9feb-115">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="d9feb-116">deviceRestartBehavior</span><span class="sxs-lookup"><span data-stu-id="d9feb-116">deviceRestartBehavior</span></span>|[<span data-ttu-id="d9feb-117">win32LobAppRestartBehavior</span><span class="sxs-lookup"><span data-stu-id="d9feb-117">win32LobAppRestartBehavior</span></span>](../resources/intune-apps-win32lobapprestartbehavior.md)|<span data-ttu-id="d9feb-118">设备重启行为。</span><span class="sxs-lookup"><span data-stu-id="d9feb-118">Device restart behavior.</span></span> <span data-ttu-id="d9feb-119">可取值为：`basedOnReturnCode`、`allow`、`suppress`、`force`。</span><span class="sxs-lookup"><span data-stu-id="d9feb-119">Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="23f04-119">关系</span><span class="sxs-lookup"><span data-stu-id="23f04-119">Relationships</span></span>
-<span data-ttu-id="23f04-120">无</span><span class="sxs-lookup"><span data-stu-id="23f04-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d9feb-120">关系</span><span class="sxs-lookup"><span data-stu-id="d9feb-120">Relationships</span></span>
+<span data-ttu-id="d9feb-121">无</span><span class="sxs-lookup"><span data-stu-id="d9feb-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="23f04-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="23f04-121">JSON Representation</span></span>
-<span data-ttu-id="23f04-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23f04-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d9feb-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d9feb-122">JSON Representation</span></span>
+<span data-ttu-id="d9feb-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d9feb-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppInstallExperience"
