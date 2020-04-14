@@ -1,18 +1,20 @@
 ---
 title: mobileAppInstallSummary 资源类型
 description: 包含移动应用程序的安装摘要的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8f61fa7d4f23ddb86e7a02d7ad0233e6a34edd8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d6ee038510ce7891e2599dda2d101ed7d1aec6d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457007"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

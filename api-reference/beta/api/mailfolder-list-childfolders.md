@@ -1,20 +1,20 @@
 ---
 title: 列出 childFolder
 description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me/MailFolders` 快捷方式来获取顶级 '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ec9b2e89dacf80c24c9036ed0d8d932856eac4d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a996c6ea9aeb972b8b3e1bb8b3eb6ce37c4a9b01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457129"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

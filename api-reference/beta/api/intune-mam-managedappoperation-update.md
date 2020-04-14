@@ -1,18 +1,20 @@
 ---
 title: 更新 managedAppOperation
 description: 更新 managedAppOperation 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4848a970f92141b14629f3a073538657eaf3978
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66b951399428998c3881c67b3cf04b9462f0c909
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803580"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455863"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +97,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

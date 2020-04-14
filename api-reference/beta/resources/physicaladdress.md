@@ -2,19 +2,19 @@
 title: physicalAddress 资源类型
 description: 表示资源（例如联系人或事件）的街道地址。
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 53b1e18bd1e7b78e7afb479cac3c5f6cc7ecff88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36edf38d16ca5e27fe5995eb59ec9150c3d76d87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521874"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455551"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521874"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|String|城市。|
+|city|String|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
 |postalCode|String|邮政编码。|
 |postOfficeBox|String|邮局编号。|

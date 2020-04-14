@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceConfigurationPolicySetItem
 description: 更新 deviceConfigurationPolicySetItem 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1d95d0272429a7c58ebb6316d8d45597ac5eed4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: abe8ad517af723222530bf6db1bc5ee8ba5fb0fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802396"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455784"
 ---
 # <a name="update-deviceconfigurationpolicysetitem"></a>更新 deviceConfigurationPolicySetItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +61,7 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |displayName|String|PolicySetItem 的 DisplayName。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)|
 |状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
+|guidedDeploymentTags|String 集合|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
 
 
 
@@ -110,7 +112,6 @@ Content-Length: 486
   ]
 }
 ```
-
 
 
 

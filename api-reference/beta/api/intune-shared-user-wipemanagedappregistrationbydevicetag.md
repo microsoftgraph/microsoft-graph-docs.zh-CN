@@ -1,18 +1,20 @@
 ---
 title: wipeManagedAppRegistrationByDeviceTag 操作
 description: 对包含指定设备标记的应用注册发布擦除操作。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 053d1b290111216653c0cd3e4d71fa5d01fcf8ca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e65a82c3ae10f182b68bd3cac038682c42bc5dbf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800513"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447414"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>wipeManagedAppRegistrationByDeviceTag 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -86,7 +88,6 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

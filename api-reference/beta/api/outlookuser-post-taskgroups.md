@@ -2,19 +2,19 @@
 title: 创建 outlookTaskGroup
 description: 在用户的邮箱中创建一个 Outlook 任务组。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19a04ff22ff569dc0f277e3ff434143d3fce4ab2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed70266ccd093128fa3d3f48c8999f7b615a759c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456183"
 ---
 # <a name="create-outlooktaskgroup"></a>创建 outlookTaskGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

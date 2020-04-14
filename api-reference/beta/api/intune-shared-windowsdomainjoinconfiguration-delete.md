@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsDomainJoinConfiguration
 description: 删除 windowsDomainJoinConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cad2767c9181d06b65441b6674900b39c45f2ab0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 512b039660cfda0ebe8e4bfd243dbf0a2fc25b90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447340"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>删除 windowsDomainJoinConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

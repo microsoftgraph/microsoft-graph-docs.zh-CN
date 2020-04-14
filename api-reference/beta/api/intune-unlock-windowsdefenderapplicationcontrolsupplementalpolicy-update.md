@@ -1,18 +1,20 @@
 ---
 title: 更新 windowsDefenderApplicationControlSupplementalPolicy
 description: 更新 windowsDefenderApplicationControlSupplementalPolicy 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a5dc843e96e0fb45c2b4c9a442cb9415f6dcf98
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 09ba62bfe318908c34c533f3d299d3dfdbd6e1cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800044"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457256"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>更新 windowsDefenderApplicationControlSupplementalPolicy
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,13 +56,13 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |:---|:---|:---|
 |id|字符串|WindowsDefenderApplicationControl 补充策略的键。|
 |displayName|字符串|WindowsDefenderApplicationControl 补充策略的显示名称。|
-|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|description|String|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|Binary|WindowsDefenderApplicationControl 补充策略内容（以字节数组格式为单位）。|
 |contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
 |creationDateTime|DateTimeOffset|上传 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|
-|roleScopeTagIds|String collection|此 WindowsDefenderApplicationControl 补充策略实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 WindowsDefenderApplicationControl 补充策略实体的作用域标记列表。|
 
 
 
@@ -112,7 +114,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

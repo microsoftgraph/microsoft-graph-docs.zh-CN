@@ -1,18 +1,20 @@
 ---
 title: groupPolicyMigrationReport 资源类型
 description: 组策略迁移报告。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05729d8cd03b54de5a07ef2e9cfd79d391c5e9b9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6b6e6d399525e8784bc1bdbd190da0968d4bf3af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458609"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>groupPolicyMigrationReport 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,8 +28,9 @@ ms.locfileid: "42783163"
 |[列出 groupPolicyMigrationReports](../api/intune-gpanalyticsservice-grouppolicymigrationreport-list.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)集合|列出[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象的属性和关系。|
 |[获取 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-get.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|读取[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象的属性和关系。|
 |[创建 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-create.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|创建新的[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象。|
-|[删除 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-delete.md)|None|删除[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)。|
+|[删除 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-delete.md)|无|删除[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)。|
 |[更新 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-update.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|更新[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)对象的属性。|
+|[createMigrationReport 操作](../api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport.md)|String|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -41,7 +44,7 @@ ms.locfileid: "42783163"
 |groupPolicyCreatedDateTime|DateTimeOffset|GroupPolicyMigrationReport 的创建日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|相关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|布尔值|来自 GPO Xml 内容的 AD 属性中的目标|
+|targetedInActiveDirectory|Boolean|来自 GPO Xml 内容的 AD 属性中的目标|
 |totalSettingsCount|Int32|GPO 文件中的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组策略设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置的百分比。|

@@ -1,18 +1,20 @@
 ---
 title: unaryManagementConditionExpressionOperatorType 枚举类型
 description: 一元管理条件表达式支持的运算符
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b8983ed82dbe525088a4e5ee234bbc8c9a9829c5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 660d679265ce8739e882bf8ac066f8c7969e78c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783184"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458512"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: 列出 managedAppConfigurations
 description: 列出 managedAppConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9fb09dbd7d7535f3db4b5d43f39810cde211055
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3f44f7eab77a62ab0c33e3b75fa4816c496ee4b0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803615"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455962"
 ---
 # <a name="list-managedappconfigurations"></a>列出 managedAppConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +93,6 @@ Content-Length: 666
   ]
 }
 ```
-
 
 
 

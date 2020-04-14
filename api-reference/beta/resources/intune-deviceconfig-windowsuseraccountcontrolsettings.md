@@ -1,18 +1,20 @@
 ---
 title: windowsUserAccountControlSettings 枚举类型
 description: Windows 用户帐户控制设置的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c8ff424dbb41356bd732fc2e7b100073b6df2c52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e2523949829f858064c9dc7bceca2cd55cf9b2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456936"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

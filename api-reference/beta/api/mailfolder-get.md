@@ -1,20 +1,20 @@
 ---
 title: 获取 mailFolder
 description: 检索邮件文件夹对象的属性和关系。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9e64f82cf6a0e4d6578ca0faf7bc9186589f12b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af2f7c04e1a24c514098b7d5801bb04c07d89102
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457136"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: 列出邮件
 description: 列出登录用户的邮箱中的所有邮件，或邮箱或驱动器中指定文件夹中的邮件。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 994e5a8a6f1584847a2a5146a72d02c48fd5b661
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8d4a75ac60e4bdbbb2068768df8a6bb30ff5f40
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457115"
 ---
 # <a name="list-messages"></a>列出邮件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

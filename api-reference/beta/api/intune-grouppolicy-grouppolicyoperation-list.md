@@ -1,18 +1,18 @@
 ---
-title: 获取 groupPolicyPresentation
-description: 读取 groupPolicyPresentation 对象的属性和关系。
+title: 列出 groupPolicyOperations
+description: 列出 groupPolicyOperation 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fc1661d9022da48408d9dde93b0a4c9ea6d7844
+ms.openlocfilehash: e5ed24e75ecb01c2de2c36ff5510e269bc11462a
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457284"
+ms.locfileid: "43456572"
 ---
-# <a name="get-grouppolicypresentation"></a>获取 groupPolicyPresentation
+# <a name="list-grouppolicyoperations"></a>列出 groupPolicyOperations
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43457284"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象的属性和关系。
+列出[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,12 +37,8 @@ ms.locfileid: "43457284"
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations/{groupPolicyPresentationId}
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/microsoft.graph.groupPolicyUploadedDefinitionFile/groupPolicyOperations
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -54,14 +50,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
+GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/microsoft.graph.groupPolicyUploadedDefinitionFile/groupPolicyOperations
 ```
 
 ### <a name="response"></a>响应
@@ -69,15 +65,19 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 232
+Content-Length: 342
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.groupPolicyPresentation",
-    "label": "Label value",
-    "id": "a33caa6a-aa6a-a33c-6aaa-3ca36aaa3ca3",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.groupPolicyOperation",
+      "operationType": "upload",
+      "operationStatus": "inProgress",
+      "statusDetails": "Status Details value",
+      "id": "4d18865b-865b-4d18-5b86-184d5b86184d",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+    }
+  ]
 }
 ```
 

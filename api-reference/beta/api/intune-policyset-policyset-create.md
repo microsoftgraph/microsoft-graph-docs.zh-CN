@@ -1,18 +1,20 @@
 ---
 title: 创建 policySet
 description: 创建新的 policySet 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83791cf67af354a2a7a086633c9311028c8dda72
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802144"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456290"
 ---
 # <a name="create-policyset"></a>创建 policySet
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,11 +57,11 @@ POST /deviceAppManagement/policySets
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
 |displayName|String|PolicySet 的 DisplayName。|
-|说明|String|PolicySet 的说明。|
+|description|String|PolicySet 的说明。|
 |状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导部署的标记|
-|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
+|guidedDeploymentTags|String 集合|引导部署的标记|
+|roleScopeTags|String 集合|PolicySet 的 RoleScopeTags|
 
 
 
@@ -114,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

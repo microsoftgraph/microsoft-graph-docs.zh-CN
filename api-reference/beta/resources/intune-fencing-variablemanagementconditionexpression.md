@@ -1,18 +1,20 @@
 ---
 title: variableManagementConditionExpression 资源类型
 description: 将管理条件状态评估为布尔表达式。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 363f19e2f8b6860ba0228cd6a29a07dd82bd8277
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0195c897c125d7152c346155e63f7bf120883cd4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458481"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

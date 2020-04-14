@@ -1,18 +1,20 @@
 ---
 title: iosVppAppAssignedLicense 资源类型
 description: iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1f39c51ed187034655be1ac5797f734b78b4fe8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4db87866ac28541ebae2029614de15c5241fdfd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458960"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新
 |[列出 iosVppAppAssignedLicenses](../api/intune-apps-iosvppappassignedlicense-list.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)集合|列出[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)对象的属性和关系。|
 |[获取 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-get.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|读取[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)对象的属性和关系。|
 |[创建 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-create.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|创建新的[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)对象。|
-|[删除 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-delete.md)|None|删除[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)。|
+|[删除 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-delete.md)|无|删除[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)。|
 |[更新 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-update.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|更新[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)对象的属性。|
 
 ## <a name="properties"></a>属性

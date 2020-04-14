@@ -1,18 +1,20 @@
 ---
 title: iosVppAppRevokeLicensesActionResult 资源类型
 description: 定义适用于 iOS Vpp 应用程序的操作的结果，包含 ActionResult 的继承属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebb4af4c9cd6b9f58a3e0ee341b7e43192094d29
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16945bcb0043a07821803964b245319fb10b5c8a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798054"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458944"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

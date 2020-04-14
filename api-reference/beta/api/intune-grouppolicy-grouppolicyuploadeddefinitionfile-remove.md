@@ -1,36 +1,35 @@
 ---
-title: removeAllDevicesFromManagement 操作
-description: 停用该用户管理的所有设备
+title: 删除操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: intune
+ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33202d4916eab9046acbeec3bd92454269ea4046
+ms.openlocfilehash: 6b3450a218c2a935415f85638ec364b0fc391e7d
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447460"
+ms.locfileid: "43456318"
 ---
-# <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
+# <a name="remove-action"></a>删除操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-停用该用户管理的所有设备
+尚未记录
+
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -38,7 +37,7 @@ ms.locfileid: "43447460"
 }
 -->
 ``` http
-POST /users/{usersId}/removeAllDevicesFromManagement
+POST /deviceManagement/groupPolicyUploadedDefinitionFiles/{groupPolicyUploadedDefinitionFileId}/remove
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,10 +53,11 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 如果成功，此操作返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/removeAllDevicesFromManagement
+POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles/{groupPolicyUploadedDefinitionFileId}/remove
 ```
 
 ### <a name="response"></a>响应
@@ -65,14 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/removeAllDevicesFromManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
 
 
 

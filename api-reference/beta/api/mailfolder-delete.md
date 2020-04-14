@@ -1,20 +1,20 @@
 ---
 title: 删除 mailFolder
 description: 删除指定的 mailFolder 或 mailSearchFolder。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: beb64ef61e4b8e67b231faa8f6847b76004b0497
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b09329fd2e39ecd2e59e53b04aebfaaed5c13651
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457074"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457150"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

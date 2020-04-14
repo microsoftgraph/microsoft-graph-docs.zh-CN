@@ -1,18 +1,20 @@
 ---
 title: 更新 mobileAppPolicySetItem
 description: 更新 mobileAppPolicySetItem 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ac03bc2949b08a70b0413c372a8a522bda3975a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31445cfcedcf5365ceca2c597a3a0f98e8a7a71b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802151"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456297"
 ---
 # <a name="update-mobileapppolicysetitem"></a>更新 mobileAppPolicySetItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +61,7 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |displayName|String|PolicySetItem 的 DisplayName。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)|
 |状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
+|guidedDeploymentTags|String 集合|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|MobileAppPolicySetItem 的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|MobileAppPolicySetItem 的设置。|
 
@@ -120,7 +122,6 @@ Content-Length: 590
   }
 }
 ```
-
 
 
 

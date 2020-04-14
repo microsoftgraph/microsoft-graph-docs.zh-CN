@@ -1,18 +1,20 @@
 ---
 title: 列出用户
 description: 列出 user 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 243e7a61d4e260064b13d0763ea8df4db9f5d671
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9a06eff8418c16de11578a9a2da09dd7a0b5a873
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800534"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447467"
 ---
 # <a name="list-users"></a>列出用户
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -91,7 +93,6 @@ Content-Length: 136
   ]
 }
 ```
-
 
 
 

@@ -4,17 +4,17 @@ description: ''
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: ''
-ms.openlocfilehash: 21915811da771bd0eebdb5fb2c16df5cfbdea096
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: markwahl-msft
+ms.openlocfilehash: 978b8f80b6a357ffeb2efced005e395787fedabf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508455"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457093"
 ---
 # <a name="accessreviewsettings-resource-type"></a>accessReviewSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

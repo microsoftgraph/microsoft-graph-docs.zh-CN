@@ -1,18 +1,20 @@
 ---
 title: deliveryOptimizationGroupIdSource 资源类型
 description: GroupId 支持类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: adbb6aec59af4bcf3dc4a5c4f089bf1af249c4b0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a4edf256e7783ea572f73b5561dccc6c8d994e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793413"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456993"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>deliveryOptimizationGroupIdSource 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -2,19 +2,19 @@
 title: provisioningSystemDetails 资源类型
 description: 表示用户预配或来自的系统。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 286ae448cbbaee428820d274d11d8584a9150393
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 862933281a2fd1473893368e3500b192d301e462
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457305"
 ---
 # <a name="provisioningsystemdetails-resource-type"></a>provisioningSystemDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

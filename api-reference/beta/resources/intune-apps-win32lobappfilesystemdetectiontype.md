@@ -1,18 +1,20 @@
 ---
 title: win32LobAppFileSystemDetectionType 枚举类型
 description: 包含所有受支持的文件系统检测类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 090416526f516e46459fcd90beeaf39dccacddc1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1f5d177fd4dd1c514f16fdbefc3241dfc0ef3694
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797645"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456176"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

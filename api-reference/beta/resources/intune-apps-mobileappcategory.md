@@ -1,18 +1,20 @@
 ---
 title: mobileAppCategory 资源类型
 description: 包含单个 Intune 应用类别的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e085d2403c624c326da519245d1c8bf7499a4ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aeca0599e3793491763796cd210ebd3dcfd80f1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797851"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458588"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsDomainJoinConfiguration
 description: 读取 windowsDomainJoinConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41d91282e630877ecee3c22adb5acaa1ced4768f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 758e4dae0119893af3bc7a063c8f17cc71c4858d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800464"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447333"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>获取 windowsDomainJoinConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -109,7 +111,6 @@ Content-Length: 560
   }
 }
 ```
-
 
 
 
