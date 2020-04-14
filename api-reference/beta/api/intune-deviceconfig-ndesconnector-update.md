@@ -1,35 +1,37 @@
 ---
 title: 更新 ndesConnector
 description: 更新 ndesConnector 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 789afccb18c449379fa5d0b5d6aec7510f258ea9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5be8474e47f5bce4cb215566a63884fd4cef7ae1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742678"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43342817"
 ---
-# <a name="update-ndesconnector"></a><span data-ttu-id="855e3-103">更新 ndesConnector</span><span class="sxs-lookup"><span data-stu-id="855e3-103">Update ndesConnector</span></span>
+# <a name="update-ndesconnector"></a><span data-ttu-id="d98b1-103">更新 ndesConnector</span><span class="sxs-lookup"><span data-stu-id="d98b1-103">Update ndesConnector</span></span>
 
-> <span data-ttu-id="855e3-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="855e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d98b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d98b1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="855e3-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="855e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d98b1-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d98b1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="855e3-106">更新[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="855e3-106">Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
+> <span data-ttu-id="d98b1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d98b1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="855e3-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="855e3-107">Prerequisites</span></span>
-<span data-ttu-id="855e3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="855e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d98b1-107">更新[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d98b1-107">Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
 
-|<span data-ttu-id="855e3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="855e3-110">Permission type</span></span>|<span data-ttu-id="855e3-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="855e3-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="d98b1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="d98b1-108">Prerequisites</span></span>
+<span data-ttu-id="d98b1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d98b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="d98b1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="d98b1-111">Permission type</span></span>|<span data-ttu-id="d98b1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="d98b1-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="855e3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="855e3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="855e3-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="855e3-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="855e3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="855e3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="855e3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="855e3-115">Not supported.</span></span>|
-|<span data-ttu-id="855e3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="855e3-116">Application</span></span>|<span data-ttu-id="855e3-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="855e3-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d98b1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d98b1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d98b1-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d98b1-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d98b1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d98b1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d98b1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="d98b1-116">Not supported.</span></span>|
+|<span data-ttu-id="d98b1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="d98b1-117">Application</span></span>|<span data-ttu-id="d98b1-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d98b1-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="855e3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="855e3-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d98b1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d98b1-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +40,33 @@ ms.locfileid: "42742678"
 PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="855e3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="855e3-119">Request headers</span></span>
-|<span data-ttu-id="855e3-120">标头</span><span class="sxs-lookup"><span data-stu-id="855e3-120">Header</span></span>|<span data-ttu-id="855e3-121">值</span><span class="sxs-lookup"><span data-stu-id="855e3-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d98b1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="d98b1-120">Request headers</span></span>
+|<span data-ttu-id="d98b1-121">标头</span><span class="sxs-lookup"><span data-stu-id="d98b1-121">Header</span></span>|<span data-ttu-id="d98b1-122">值</span><span class="sxs-lookup"><span data-stu-id="d98b1-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="855e3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="855e3-122">Authorization</span></span>|<span data-ttu-id="855e3-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="855e3-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="855e3-124">接受</span><span class="sxs-lookup"><span data-stu-id="855e3-124">Accept</span></span>|<span data-ttu-id="855e3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="855e3-125">application/json</span></span>|
+|<span data-ttu-id="d98b1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d98b1-123">Authorization</span></span>|<span data-ttu-id="d98b1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="d98b1-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d98b1-125">接受</span><span class="sxs-lookup"><span data-stu-id="d98b1-125">Accept</span></span>|<span data-ttu-id="d98b1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d98b1-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="855e3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="855e3-126">Request body</span></span>
-<span data-ttu-id="855e3-127">在请求正文中，提供[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="855e3-127">In the request body, supply a JSON representation for the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d98b1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d98b1-127">Request body</span></span>
+<span data-ttu-id="d98b1-128">在请求正文中，提供[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d98b1-128">In the request body, supply a JSON representation for the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
 
-<span data-ttu-id="855e3-128">下表显示创建[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="855e3-128">The following table shows the properties that are required when you create the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).</span></span>
+<span data-ttu-id="d98b1-129">下表显示创建[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="d98b1-129">The following table shows the properties that are required when you create the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).</span></span>
 
-|<span data-ttu-id="855e3-129">属性</span><span class="sxs-lookup"><span data-stu-id="855e3-129">Property</span></span>|<span data-ttu-id="855e3-130">类型</span><span class="sxs-lookup"><span data-stu-id="855e3-130">Type</span></span>|<span data-ttu-id="855e3-131">说明</span><span class="sxs-lookup"><span data-stu-id="855e3-131">Description</span></span>|
+|<span data-ttu-id="d98b1-130">属性</span><span class="sxs-lookup"><span data-stu-id="d98b1-130">Property</span></span>|<span data-ttu-id="d98b1-131">类型</span><span class="sxs-lookup"><span data-stu-id="d98b1-131">Type</span></span>|<span data-ttu-id="d98b1-132">说明</span><span class="sxs-lookup"><span data-stu-id="d98b1-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="855e3-132">id</span><span class="sxs-lookup"><span data-stu-id="855e3-132">id</span></span>|<span data-ttu-id="855e3-133">String</span><span class="sxs-lookup"><span data-stu-id="855e3-133">String</span></span>|<span data-ttu-id="855e3-134">NDES 连接器的键。</span><span class="sxs-lookup"><span data-stu-id="855e3-134">The key of the NDES Connector.</span></span>|
-|<span data-ttu-id="855e3-135">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="855e3-135">lastConnectionDateTime</span></span>|<span data-ttu-id="855e3-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="855e3-136">DateTimeOffset</span></span>|<span data-ttu-id="855e3-137">Ndes 连接器的上次连接时间</span><span class="sxs-lookup"><span data-stu-id="855e3-137">Last connection time for the Ndes Connector</span></span>|
-|<span data-ttu-id="855e3-138">state</span><span class="sxs-lookup"><span data-stu-id="855e3-138">state</span></span>|[<span data-ttu-id="855e3-139">ndesConnectorState</span><span class="sxs-lookup"><span data-stu-id="855e3-139">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="855e3-140">Ndes 连接器状态。</span><span class="sxs-lookup"><span data-stu-id="855e3-140">Ndes Connector Status.</span></span> <span data-ttu-id="855e3-141">可取值为：`none`、`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="855e3-141">Possible values are: `none`, `active`, `inactive`.</span></span>|
-|<span data-ttu-id="855e3-142">displayName</span><span class="sxs-lookup"><span data-stu-id="855e3-142">displayName</span></span>|<span data-ttu-id="855e3-143">String</span><span class="sxs-lookup"><span data-stu-id="855e3-143">String</span></span>|<span data-ttu-id="855e3-144">Ndes 连接器的友好名称。</span><span class="sxs-lookup"><span data-stu-id="855e3-144">The friendly name of the Ndes Connector.</span></span>|
+|<span data-ttu-id="d98b1-133">id</span><span class="sxs-lookup"><span data-stu-id="d98b1-133">id</span></span>|<span data-ttu-id="d98b1-134">字符串</span><span class="sxs-lookup"><span data-stu-id="d98b1-134">String</span></span>|<span data-ttu-id="d98b1-135">NDES 连接器的键。</span><span class="sxs-lookup"><span data-stu-id="d98b1-135">The key of the NDES Connector.</span></span>|
+|<span data-ttu-id="d98b1-136">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="d98b1-136">lastConnectionDateTime</span></span>|<span data-ttu-id="d98b1-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d98b1-137">DateTimeOffset</span></span>|<span data-ttu-id="d98b1-138">Ndes 连接器的上次连接时间</span><span class="sxs-lookup"><span data-stu-id="d98b1-138">Last connection time for the Ndes Connector</span></span>|
+|<span data-ttu-id="d98b1-139">state</span><span class="sxs-lookup"><span data-stu-id="d98b1-139">state</span></span>|[<span data-ttu-id="d98b1-140">ndesConnectorState</span><span class="sxs-lookup"><span data-stu-id="d98b1-140">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="d98b1-141">Ndes 连接器状态。</span><span class="sxs-lookup"><span data-stu-id="d98b1-141">Ndes Connector Status.</span></span> <span data-ttu-id="d98b1-142">可取值为：`none`、`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="d98b1-142">Possible values are: `none`, `active`, `inactive`.</span></span>|
+|<span data-ttu-id="d98b1-143">displayName</span><span class="sxs-lookup"><span data-stu-id="d98b1-143">displayName</span></span>|<span data-ttu-id="d98b1-144">String</span><span class="sxs-lookup"><span data-stu-id="d98b1-144">String</span></span>|<span data-ttu-id="d98b1-145">Ndes 连接器的友好名称。</span><span class="sxs-lookup"><span data-stu-id="d98b1-145">The friendly name of the Ndes Connector.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="855e3-145">响应</span><span class="sxs-lookup"><span data-stu-id="855e3-145">Response</span></span>
-<span data-ttu-id="855e3-146">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象。</span><span class="sxs-lookup"><span data-stu-id="855e3-146">If successful, this method returns a `200 OK` response code and an updated [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d98b1-146">响应</span><span class="sxs-lookup"><span data-stu-id="d98b1-146">Response</span></span>
+<span data-ttu-id="d98b1-147">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d98b1-147">If successful, this method returns a `200 OK` response code and an updated [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="855e3-147">示例</span><span class="sxs-lookup"><span data-stu-id="855e3-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d98b1-148">示例</span><span class="sxs-lookup"><span data-stu-id="d98b1-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="855e3-148">请求</span><span class="sxs-lookup"><span data-stu-id="855e3-148">Request</span></span>
-<span data-ttu-id="855e3-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="855e3-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d98b1-149">请求</span><span class="sxs-lookup"><span data-stu-id="d98b1-149">Request</span></span>
+<span data-ttu-id="d98b1-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d98b1-150">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
 Content-type: application/json
@@ -78,8 +80,8 @@ Content-length: 183
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="855e3-150">响应</span><span class="sxs-lookup"><span data-stu-id="855e3-150">Response</span></span>
-<span data-ttu-id="855e3-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="855e3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d98b1-151">响应</span><span class="sxs-lookup"><span data-stu-id="d98b1-151">Response</span></span>
+<span data-ttu-id="d98b1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d98b1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -93,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 
