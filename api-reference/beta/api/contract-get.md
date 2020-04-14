@@ -2,19 +2,19 @@
 title: 获取合同
 description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 86665dae8edd12aaaee9bd5598fb5aabbfd39f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6807c2586ea133f13970b57f53c57f58faf0561f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436781"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360911"
 ---
 # <a name="get-contract"></a>获取合同
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

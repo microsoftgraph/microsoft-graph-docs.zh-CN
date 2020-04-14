@@ -1,18 +1,20 @@
 ---
 title: managementCondition 资源类型
 description: 管理条件是可以动态触发的事件，如地域时限、时限和网络时限。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d1adf4538cdfc4bfd819c1e9871c3d3a5a5a800
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 24aca3452d6dcb6dd43290c8ce2359551db65331
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783247"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382650"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,9 +33,9 @@ ms.locfileid: "42783247"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。|
-|uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。|
+|uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。|
 |displayName|String|管理条件的管理员定义名称。|
-|说明|字符串|管理条件的管理员定义的说明。|
+|description|字符串|管理条件的管理员定义的说明。|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。|
 |eTag|String|管理条件的 ETag。 更新了服务端。|

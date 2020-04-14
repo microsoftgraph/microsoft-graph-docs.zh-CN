@@ -1,18 +1,20 @@
 ---
 title: managementConditionExpressionModel 资源类型
 description: 管理条件表达式模型是管理条件表达式的模型表示形式。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6bdd75b0d37e41b4e4363869ea4dd6305836dce
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 25f71dcc7808d1aab2a01a5060a7205d94b4d7aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783233"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382612"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>managementConditionExpressionModel 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

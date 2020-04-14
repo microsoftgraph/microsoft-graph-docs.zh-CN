@@ -2,19 +2,19 @@
 title: bookingBusiness：发布
 description: 使此业务的日程安排页面对外部客户可用。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b8ee635da938a53dff4603bb50f4903f0a000253
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1f2a9bf6e7617cf991a37acada452c6c19b05d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382411"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness：发布
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

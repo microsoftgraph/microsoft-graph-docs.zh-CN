@@ -1,18 +1,20 @@
 ---
 title: windowsFirewallRuleNetworkProfileTypes 枚举类型
 description: 表示哪些网络配置文件类型适用于防火墙规则的标志。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d2a7a10936df83300c432ea9412790ba33ccc1c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4e0d1a24d1da6d34ae501e08e0460d98f1969d03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786486"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383241"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>windowsFirewallRuleNetworkProfileTypes 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

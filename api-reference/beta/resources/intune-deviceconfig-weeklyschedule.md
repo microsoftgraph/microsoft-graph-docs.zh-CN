@@ -1,18 +1,20 @@
 ---
 title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d26d8861ab7dd5fe6e6fb2b4111aa6c3458fe611
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ce3e6eb555171291763f0560cf980cad41455659
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383381"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

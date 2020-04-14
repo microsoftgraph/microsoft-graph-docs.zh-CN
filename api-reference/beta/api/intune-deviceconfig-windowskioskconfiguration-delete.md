@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsKioskConfiguration
 description: 删除 windowsKioskConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0d2d332d6fae186bc17de2c0196953f8a358df4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4cb3d7196ac715d76712af62446ae2110e08ebd8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43335183"
 ---
 # <a name="delete-windowskioskconfiguration"></a>删除 windowsKioskConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
