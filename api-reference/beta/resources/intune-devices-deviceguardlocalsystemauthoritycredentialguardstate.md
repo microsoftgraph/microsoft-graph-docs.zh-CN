@@ -1,33 +1,35 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 14c6841d3683bd9b101cfb89d1fb9cc92bd027b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4cb1811a636c25c8109c0e314c339e277aae9996
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784991"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362455"
 ---
-# <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a><span data-ttu-id="fd63e-103">deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="fd63e-103">deviceGuardLocalSystemAuthorityCredentialGuardState enum type</span></span>
+# <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a><span data-ttu-id="2a898-103">deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="2a898-103">deviceGuardLocalSystemAuthorityCredentialGuardState enum type</span></span>
 
-> <span data-ttu-id="fd63e-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fd63e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="2a898-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a898-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fd63e-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fd63e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2a898-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2a898-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fd63e-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fd63e-106">Not yet documented</span></span>
+> <span data-ttu-id="2a898-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2a898-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="fd63e-107">成员</span><span class="sxs-lookup"><span data-stu-id="fd63e-107">Members</span></span>
-|<span data-ttu-id="fd63e-108">成员</span><span class="sxs-lookup"><span data-stu-id="fd63e-108">Member</span></span>|<span data-ttu-id="fd63e-109">值</span><span class="sxs-lookup"><span data-stu-id="fd63e-109">Value</span></span>|<span data-ttu-id="fd63e-110">说明</span><span class="sxs-lookup"><span data-stu-id="fd63e-110">Description</span></span>|
+<span data-ttu-id="2a898-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2a898-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="2a898-108">成员</span><span class="sxs-lookup"><span data-stu-id="2a898-108">Members</span></span>
+|<span data-ttu-id="2a898-109">成员</span><span class="sxs-lookup"><span data-stu-id="2a898-109">Member</span></span>|<span data-ttu-id="2a898-110">值</span><span class="sxs-lookup"><span data-stu-id="2a898-110">Value</span></span>|<span data-ttu-id="2a898-111">说明</span><span class="sxs-lookup"><span data-stu-id="2a898-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fd63e-111">运行</span><span class="sxs-lookup"><span data-stu-id="fd63e-111">running</span></span>|<span data-ttu-id="fd63e-112">0</span><span class="sxs-lookup"><span data-stu-id="fd63e-112">0</span></span>|<span data-ttu-id="fd63e-113">正在运行</span><span class="sxs-lookup"><span data-stu-id="fd63e-113">Running</span></span>|
-|<span data-ttu-id="fd63e-114">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="fd63e-114">rebootRequired</span></span>|<span data-ttu-id="fd63e-115">1</span><span class="sxs-lookup"><span data-stu-id="fd63e-115">1</span></span>|<span data-ttu-id="fd63e-116">需要重新启动</span><span class="sxs-lookup"><span data-stu-id="fd63e-116">Reboot required</span></span>|
-|<span data-ttu-id="fd63e-117">notLicensed</span><span class="sxs-lookup"><span data-stu-id="fd63e-117">notLicensed</span></span>|<span data-ttu-id="fd63e-118">双面</span><span class="sxs-lookup"><span data-stu-id="fd63e-118">2</span></span>|<span data-ttu-id="fd63e-119">未获得凭据防护许可</span><span class="sxs-lookup"><span data-stu-id="fd63e-119">Not licensed for Credential Guard</span></span>|
-|<span data-ttu-id="fd63e-120">notConfigured</span><span class="sxs-lookup"><span data-stu-id="fd63e-120">notConfigured</span></span>|<span data-ttu-id="fd63e-121">第三章</span><span class="sxs-lookup"><span data-stu-id="fd63e-121">3</span></span>|<span data-ttu-id="fd63e-122">未配置</span><span class="sxs-lookup"><span data-stu-id="fd63e-122">Not configured</span></span>|
-|<span data-ttu-id="fd63e-123">virtualizationBasedSecurityNotRunning</span><span class="sxs-lookup"><span data-stu-id="fd63e-123">virtualizationBasedSecurityNotRunning</span></span>|<span data-ttu-id="fd63e-124">4 </span><span class="sxs-lookup"><span data-stu-id="fd63e-124">4</span></span>|<span data-ttu-id="fd63e-125">基于虚拟化的安全性未运行</span><span class="sxs-lookup"><span data-stu-id="fd63e-125">Virtualization Based security is not running</span></span>|
+|<span data-ttu-id="2a898-112">运行</span><span class="sxs-lookup"><span data-stu-id="2a898-112">running</span></span>|<span data-ttu-id="2a898-113">0</span><span class="sxs-lookup"><span data-stu-id="2a898-113">0</span></span>|<span data-ttu-id="2a898-114">正在运行</span><span class="sxs-lookup"><span data-stu-id="2a898-114">Running</span></span>|
+|<span data-ttu-id="2a898-115">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="2a898-115">rebootRequired</span></span>|<span data-ttu-id="2a898-116">1</span><span class="sxs-lookup"><span data-stu-id="2a898-116">1</span></span>|<span data-ttu-id="2a898-117">需要重新启动</span><span class="sxs-lookup"><span data-stu-id="2a898-117">Reboot required</span></span>|
+|<span data-ttu-id="2a898-118">notLicensed</span><span class="sxs-lookup"><span data-stu-id="2a898-118">notLicensed</span></span>|<span data-ttu-id="2a898-119">双面</span><span class="sxs-lookup"><span data-stu-id="2a898-119">2</span></span>|<span data-ttu-id="2a898-120">未获得凭据防护许可</span><span class="sxs-lookup"><span data-stu-id="2a898-120">Not licensed for Credential Guard</span></span>|
+|<span data-ttu-id="2a898-121">notConfigured</span><span class="sxs-lookup"><span data-stu-id="2a898-121">notConfigured</span></span>|<span data-ttu-id="2a898-122">第三章</span><span class="sxs-lookup"><span data-stu-id="2a898-122">3</span></span>|<span data-ttu-id="2a898-123">未配置</span><span class="sxs-lookup"><span data-stu-id="2a898-123">Not configured</span></span>|
+|<span data-ttu-id="2a898-124">virtualizationBasedSecurityNotRunning</span><span class="sxs-lookup"><span data-stu-id="2a898-124">virtualizationBasedSecurityNotRunning</span></span>|<span data-ttu-id="2a898-125">4 </span><span class="sxs-lookup"><span data-stu-id="2a898-125">4</span></span>|<span data-ttu-id="2a898-126">基于虚拟化的安全性未运行</span><span class="sxs-lookup"><span data-stu-id="2a898-126">Virtualization Based security is not running</span></span>|
 
 
 
