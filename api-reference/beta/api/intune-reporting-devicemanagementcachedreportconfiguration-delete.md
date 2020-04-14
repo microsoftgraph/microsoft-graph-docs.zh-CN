@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementCachedReportConfiguration
 description: 删除 deviceManagementCachedReportConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1df68bc15039a16705e2fd1452159d85eb2be094
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e726e9eb66c7af6480bf6077203ba096970c364e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801465"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472331"
 ---
 # <a name="delete-devicemanagementcachedreportconfiguration"></a>删除 deviceManagementCachedReportConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/cachedReportCon
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

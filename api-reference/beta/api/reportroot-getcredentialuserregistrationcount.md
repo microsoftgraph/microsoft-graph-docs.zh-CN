@@ -2,19 +2,19 @@
 title: reportRoot： getCredentialUserRegistrationCount
 description: 报告您的组织中的多少用户为自助密码重置和多重身份验证（MFA）功能注册的用户的当前状态。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 4b15f41298ae4c6e411d5a8de832f243b277d84e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6272cadb38aee568ed15f6ad6a0204137e00e26c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454494"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473900"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot： getCredentialUserRegistrationCount
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

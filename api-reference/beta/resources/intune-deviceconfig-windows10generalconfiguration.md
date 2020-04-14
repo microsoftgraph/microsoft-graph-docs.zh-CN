@@ -1,18 +1,20 @@
 ---
 title: windows10GeneralConfiguration 资源类型
 description: 本主题提供由 windows10GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f68a4fdf2ecfbcc3e2728e652f1da8fee4916c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 633ccadc873c47e84273429a2d0378f018b67075
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786703"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473729"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -43,7 +45,7 @@ ms.locfileid: "42786703"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|布尔值|指定非管理员是否可以使用任务管理器结束任务。|
@@ -257,8 +259,8 @@ ms.locfileid: "42786703"
 |networkProxyDisableAutoDetect|布尔值|禁用自动检测设置。 如果启用，系统将尝试查找代理自动配置 (PAC) 脚本的路径。|
 |networkProxyAutomaticConfigurationUrl|String|指向你要使用的代理自动配置 (PAC) 脚本的地址。|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|指定手动代理服务器设置。|
-|accountsBlockAddingNonMicrosoftAccountEmail|布尔值|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
-|antiTheftModeBlocked|Boolean|指示是否阻止用户选择 AntiTheft 模式首选项（仅限 Windows 10 移动版）。|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
+|antiTheftModeBlocked|布尔值|指示是否阻止用户选择 AntiTheft 模式首选项（仅限 Windows 10 移动版）。|
 |bluetoothBlocked|布尔值|是否阻止用户使用蓝牙。|
 |cameraBlocked|布尔值|是否阻止用户访问设备的照相机。|
 |connectedDevicesServiceBlocked|布尔值|是否阻止能够发现并连接到其他设备、远程消息、远程应用会话和其他跨设备体验的连接设备服务。|
@@ -290,7 +292,7 @@ ms.locfileid: "42786703"
 |settingsBlockChangeRegion|布尔值|指示是否阻止用户更改区域设置。|
 |settingsBlockChangeLanguage|布尔值|指示是否阻止用户更改语言设置。|
 |settingsBlockChangePowerSleep|Boolean|指示是否阻止用户更改电源和睡眠设置。|
-|locationServicesBlocked|Boolean|指示是否阻止用户使用位置服务。|
+|locationServicesBlocked|布尔值|指示是否阻止用户使用位置服务。|
 |microsoftAccountBlocked|布尔值|指示是否阻止 Microsoft 帐户。|
 |microsoftAccountBlockSettingsSync|布尔值|指示是否阻止 Microsoft 帐户设置同步。|
 |nfcBlocked|布尔值|指示是否阻止用户使用近场通信。|

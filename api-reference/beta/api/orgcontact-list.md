@@ -2,19 +2,19 @@
 title: 列出 orgContacts
 description: 检索此组织的组织联系人列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 134347a227ba33e1134890496710207c83983d79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87669fb0665a11d1f3bc6f1bf923cd55e1ee3af3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456255"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474728"
 ---
 # <a name="list-orgcontacts"></a>列出 orgContacts
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

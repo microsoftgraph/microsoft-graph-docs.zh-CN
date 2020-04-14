@@ -2,19 +2,19 @@
 title: mailboxUsageStorage 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 40cc5f9b9cab7f17e185619d7fccdec028ae6250
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 636417b5ec299bb11f82c406abecdebe72ee45de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522832"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473413"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>mailboxUsageStorage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 

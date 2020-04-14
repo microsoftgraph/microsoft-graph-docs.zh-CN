@@ -2,19 +2,19 @@
 title: reportRoot： getCredentialUsageSummary
 description: 报告贵组织中的用户数使用自助密码重置功能的当前状态。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 5d1488051a423d044c5cc203e8c8421d485ef232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79037b8c941989ddba273a34184d00607758fafb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473907"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot： getCredentialUsageSummary
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
