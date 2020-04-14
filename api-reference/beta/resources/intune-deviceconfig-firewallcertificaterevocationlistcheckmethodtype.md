@@ -1,18 +1,20 @@
 ---
 title: firewallCertificateRevocationListCheckMethodType 枚举类型
 description: FirewallCertificateRevocationListCheckMethod 的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ef4a78a7e61f18b52b322b4053ebfbfa7e54e05
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f220d5e592544ec3527c16c425d4b22fe0266d4c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791756"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444307"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

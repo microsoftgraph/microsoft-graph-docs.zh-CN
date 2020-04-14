@@ -1,18 +1,20 @@
 ---
 title: intendedPurpose 枚举类型
 description: PFX 导入选项。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 952c4c3680dee489e7a556f4e0a8342932c4207e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b72f48288ba4daaacc9f0b0e55d6ae3786ee234d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444265"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: getEncryptionPublicKey 函数
 description: 获取用于加密 Apple 设备注册计划令牌的公钥
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 495b24472bd36672710de8df765da78af61d7a0f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5f17a797e4ec6b19ef9e95fc1d1b51004ef74a0c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444749"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -69,7 +71,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
 
 
 

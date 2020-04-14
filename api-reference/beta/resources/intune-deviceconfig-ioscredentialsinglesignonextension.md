@@ -1,18 +1,20 @@
 ---
 title: iosCredentialSingleSignOnExtension 资源类型
 description: 表示 iOS 设备的凭据类型单一登录扩展配置文件。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf6f3202abb5fce499a842a03aae189fc1572141
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a8956fb879bf51bf33f3b682826279fd702f127
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791658"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444137"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>iosCredentialSingleSignOnExtension 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -28,7 +30,7 @@ ms.locfileid: "42791658"
 |:---|:---|:---|
 |extensionIdentifier|String|获取或设置对指定 Url 执行 SSO 的应用扩展的捆绑包 ID。|
 |teamIdentifier|String|获取或设置为指定的 Url 执行 SSO 的应用程序扩展的团队 ID。|
-|域|String collection|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
+|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
 |型|String|获取或设置此配置文件的区分大小写的领域名称。|
 |配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
 

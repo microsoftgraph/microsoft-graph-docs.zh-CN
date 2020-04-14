@@ -1,18 +1,20 @@
 ---
 title: androidForWorkRequiredPasswordType 枚举类型
 description: 适用于工作所需密码类型的 Android。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f07a89b0f7a753d15798edbe93799d2beba2f69a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 60cf442d821aabb4e9e6ca07e46d69cfc2f9b107
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796816"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444413"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

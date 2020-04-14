@@ -1,18 +1,20 @@
 ---
 title: androidDeviceOwnerWiFiSecurityType 枚举类型
 description: Android 设备所有者的 wi-fi 安全类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5ae168883e40b36997bcc39d1e3db93fab269a68
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9c07b581b06bd8eea1d866fd35886b7af6d9571
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796935"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444449"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: windowsKioskUser 资源类型
 description: 用于标识展台配置的帐户信息的用户基类
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea2ddf6d9f159c63a58a2abe6db07f0b1f59b99c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ce498febcef2bd4a1187c5cf2e0851ab0d44121c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786346"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444077"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: androidEnterpriseAlwaysOnVpnPackageType 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 696313766965836adc5567794716b631dbe962af
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 59a586513cb4a9740835ec9cc8ff32eb1913eb61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796914"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444435"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>androidEnterpriseAlwaysOnVpnPackageType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

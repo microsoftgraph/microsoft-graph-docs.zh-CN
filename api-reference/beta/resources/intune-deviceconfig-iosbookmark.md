@@ -1,18 +1,20 @@
 ---
 title: iosBookmark 资源类型
 description: iOS URL 书签
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 465aafff3910eb0d62990a14a42ce4cb79a16334
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3789d905d285561e56b7a21664214f777987524e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791686"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444197"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
