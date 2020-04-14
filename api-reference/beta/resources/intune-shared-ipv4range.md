@@ -1,39 +1,41 @@
 ---
 title: iPv4Range 资源类型
 description: IPv4 范围定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bed3b43af7203a6c1ee081156708679337e94e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3615c08c99d9d8f9220abd96f0ef5aff90b4a451
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769281"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463328"
 ---
-# <a name="ipv4range-resource-type"></a><span data-ttu-id="7e83a-103">iPv4Range 资源类型</span><span class="sxs-lookup"><span data-stu-id="7e83a-103">iPv4Range resource type</span></span>
+# <a name="ipv4range-resource-type"></a><span data-ttu-id="37d7c-103">iPv4Range 资源类型</span><span class="sxs-lookup"><span data-stu-id="37d7c-103">iPv4Range resource type</span></span>
 
-> <span data-ttu-id="7e83a-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7e83a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="37d7c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="37d7c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7e83a-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7e83a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="37d7c-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="37d7c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="7e83a-106">IPv4 范围定义。</span><span class="sxs-lookup"><span data-stu-id="7e83a-106">IPv4 Range definition.</span></span>
+> <span data-ttu-id="37d7c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="37d7c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="37d7c-107">IPv4 范围定义。</span><span class="sxs-lookup"><span data-stu-id="37d7c-107">IPv4 Range definition.</span></span>
 
 
-<span data-ttu-id="7e83a-107">继承自 [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="7e83a-107">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
+<span data-ttu-id="37d7c-108">继承自 [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="37d7c-108">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7e83a-108">属性</span><span class="sxs-lookup"><span data-stu-id="7e83a-108">Properties</span></span>
-|<span data-ttu-id="7e83a-109">属性</span><span class="sxs-lookup"><span data-stu-id="7e83a-109">Property</span></span>|<span data-ttu-id="7e83a-110">类型</span><span class="sxs-lookup"><span data-stu-id="7e83a-110">Type</span></span>|<span data-ttu-id="7e83a-111">说明</span><span class="sxs-lookup"><span data-stu-id="7e83a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="37d7c-109">属性</span><span class="sxs-lookup"><span data-stu-id="37d7c-109">Properties</span></span>
+|<span data-ttu-id="37d7c-110">属性</span><span class="sxs-lookup"><span data-stu-id="37d7c-110">Property</span></span>|<span data-ttu-id="37d7c-111">类型</span><span class="sxs-lookup"><span data-stu-id="37d7c-111">Type</span></span>|<span data-ttu-id="37d7c-112">说明</span><span class="sxs-lookup"><span data-stu-id="37d7c-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7e83a-112">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="7e83a-112">lowerAddress</span></span>|<span data-ttu-id="7e83a-113">String</span><span class="sxs-lookup"><span data-stu-id="7e83a-113">String</span></span>|<span data-ttu-id="7e83a-114">较低的地址。</span><span class="sxs-lookup"><span data-stu-id="7e83a-114">Lower address.</span></span>|
-|<span data-ttu-id="7e83a-115">upperAddress</span><span class="sxs-lookup"><span data-stu-id="7e83a-115">upperAddress</span></span>|<span data-ttu-id="7e83a-116">String</span><span class="sxs-lookup"><span data-stu-id="7e83a-116">String</span></span>|<span data-ttu-id="7e83a-117">地址上限。</span><span class="sxs-lookup"><span data-stu-id="7e83a-117">Upper address.</span></span>|
+|<span data-ttu-id="37d7c-113">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="37d7c-113">lowerAddress</span></span>|<span data-ttu-id="37d7c-114">String</span><span class="sxs-lookup"><span data-stu-id="37d7c-114">String</span></span>|<span data-ttu-id="37d7c-115">较低的地址。</span><span class="sxs-lookup"><span data-stu-id="37d7c-115">Lower address.</span></span>|
+|<span data-ttu-id="37d7c-116">upperAddress</span><span class="sxs-lookup"><span data-stu-id="37d7c-116">upperAddress</span></span>|<span data-ttu-id="37d7c-117">String</span><span class="sxs-lookup"><span data-stu-id="37d7c-117">String</span></span>|<span data-ttu-id="37d7c-118">地址上限。</span><span class="sxs-lookup"><span data-stu-id="37d7c-118">Upper address.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7e83a-118">关系</span><span class="sxs-lookup"><span data-stu-id="7e83a-118">Relationships</span></span>
-<span data-ttu-id="7e83a-119">无</span><span class="sxs-lookup"><span data-stu-id="7e83a-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="37d7c-119">关系</span><span class="sxs-lookup"><span data-stu-id="37d7c-119">Relationships</span></span>
+<span data-ttu-id="37d7c-120">无</span><span class="sxs-lookup"><span data-stu-id="37d7c-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7e83a-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7e83a-120">JSON Representation</span></span>
-<span data-ttu-id="7e83a-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e83a-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="37d7c-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="37d7c-121">JSON Representation</span></span>
+<span data-ttu-id="37d7c-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="37d7c-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iPv4Range"

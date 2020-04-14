@@ -1,38 +1,40 @@
 ---
 title: bulkManagedDeviceActionResult 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18f9c87e497edef167a69eff67a2dba3571e2d67
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b661577af3bcd1282a007555c25eb60b121ce539
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785124"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465186"
 ---
-# <a name="bulkmanageddeviceactionresult-resource-type"></a><span data-ttu-id="013a6-103">bulkManagedDeviceActionResult 资源类型</span><span class="sxs-lookup"><span data-stu-id="013a6-103">bulkManagedDeviceActionResult resource type</span></span>
+# <a name="bulkmanageddeviceactionresult-resource-type"></a><span data-ttu-id="0daa5-103">bulkManagedDeviceActionResult 资源类型</span><span class="sxs-lookup"><span data-stu-id="0daa5-103">bulkManagedDeviceActionResult resource type</span></span>
 
-> <span data-ttu-id="013a6-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="013a6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="0daa5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0daa5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="013a6-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="013a6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0daa5-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0daa5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="013a6-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="013a6-106">Not yet documented</span></span>
+> <span data-ttu-id="0daa5-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0daa5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="013a6-107">属性</span><span class="sxs-lookup"><span data-stu-id="013a6-107">Properties</span></span>
-|<span data-ttu-id="013a6-108">属性</span><span class="sxs-lookup"><span data-stu-id="013a6-108">Property</span></span>|<span data-ttu-id="013a6-109">类型</span><span class="sxs-lookup"><span data-stu-id="013a6-109">Type</span></span>|<span data-ttu-id="013a6-110">说明</span><span class="sxs-lookup"><span data-stu-id="013a6-110">Description</span></span>|
+<span data-ttu-id="0daa5-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0daa5-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="0daa5-108">属性</span><span class="sxs-lookup"><span data-stu-id="0daa5-108">Properties</span></span>
+|<span data-ttu-id="0daa5-109">属性</span><span class="sxs-lookup"><span data-stu-id="0daa5-109">Property</span></span>|<span data-ttu-id="0daa5-110">类型</span><span class="sxs-lookup"><span data-stu-id="0daa5-110">Type</span></span>|<span data-ttu-id="0daa5-111">说明</span><span class="sxs-lookup"><span data-stu-id="0daa5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="013a6-111">successfulDeviceIds</span><span class="sxs-lookup"><span data-stu-id="013a6-111">successfulDeviceIds</span></span>|<span data-ttu-id="013a6-112">String collection</span><span class="sxs-lookup"><span data-stu-id="013a6-112">String collection</span></span>|<span data-ttu-id="013a6-113">成功的设备</span><span class="sxs-lookup"><span data-stu-id="013a6-113">Successful devices</span></span>|
-|<span data-ttu-id="013a6-114">failedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="013a6-114">failedDeviceIds</span></span>|<span data-ttu-id="013a6-115">String collection</span><span class="sxs-lookup"><span data-stu-id="013a6-115">String collection</span></span>|<span data-ttu-id="013a6-116">故障设备</span><span class="sxs-lookup"><span data-stu-id="013a6-116">Failed devices</span></span>|
-|<span data-ttu-id="013a6-117">notFoundDeviceIds</span><span class="sxs-lookup"><span data-stu-id="013a6-117">notFoundDeviceIds</span></span>|<span data-ttu-id="013a6-118">String collection</span><span class="sxs-lookup"><span data-stu-id="013a6-118">String collection</span></span>|<span data-ttu-id="013a6-119">找不到设备</span><span class="sxs-lookup"><span data-stu-id="013a6-119">Not found devices</span></span>|
-|<span data-ttu-id="013a6-120">notSupportedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="013a6-120">notSupportedDeviceIds</span></span>|<span data-ttu-id="013a6-121">String collection</span><span class="sxs-lookup"><span data-stu-id="013a6-121">String collection</span></span>|<span data-ttu-id="013a6-122">不支持的设备</span><span class="sxs-lookup"><span data-stu-id="013a6-122">Not supported devices</span></span>|
+|<span data-ttu-id="0daa5-112">successfulDeviceIds</span><span class="sxs-lookup"><span data-stu-id="0daa5-112">successfulDeviceIds</span></span>|<span data-ttu-id="0daa5-113">String collection</span><span class="sxs-lookup"><span data-stu-id="0daa5-113">String collection</span></span>|<span data-ttu-id="0daa5-114">成功的设备</span><span class="sxs-lookup"><span data-stu-id="0daa5-114">Successful devices</span></span>|
+|<span data-ttu-id="0daa5-115">failedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="0daa5-115">failedDeviceIds</span></span>|<span data-ttu-id="0daa5-116">String collection</span><span class="sxs-lookup"><span data-stu-id="0daa5-116">String collection</span></span>|<span data-ttu-id="0daa5-117">故障设备</span><span class="sxs-lookup"><span data-stu-id="0daa5-117">Failed devices</span></span>|
+|<span data-ttu-id="0daa5-118">notFoundDeviceIds</span><span class="sxs-lookup"><span data-stu-id="0daa5-118">notFoundDeviceIds</span></span>|<span data-ttu-id="0daa5-119">String collection</span><span class="sxs-lookup"><span data-stu-id="0daa5-119">String collection</span></span>|<span data-ttu-id="0daa5-120">找不到设备</span><span class="sxs-lookup"><span data-stu-id="0daa5-120">Not found devices</span></span>|
+|<span data-ttu-id="0daa5-121">notSupportedDeviceIds</span><span class="sxs-lookup"><span data-stu-id="0daa5-121">notSupportedDeviceIds</span></span>|<span data-ttu-id="0daa5-122">String collection</span><span class="sxs-lookup"><span data-stu-id="0daa5-122">String collection</span></span>|<span data-ttu-id="0daa5-123">不支持的设备</span><span class="sxs-lookup"><span data-stu-id="0daa5-123">Not supported devices</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="013a6-123">关系</span><span class="sxs-lookup"><span data-stu-id="013a6-123">Relationships</span></span>
-<span data-ttu-id="013a6-124">无</span><span class="sxs-lookup"><span data-stu-id="013a6-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0daa5-124">关系</span><span class="sxs-lookup"><span data-stu-id="0daa5-124">Relationships</span></span>
+<span data-ttu-id="0daa5-125">无</span><span class="sxs-lookup"><span data-stu-id="0daa5-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="013a6-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="013a6-125">JSON Representation</span></span>
-<span data-ttu-id="013a6-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="013a6-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0daa5-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0daa5-126">JSON Representation</span></span>
+<span data-ttu-id="0daa5-127">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0daa5-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bulkManagedDeviceActionResult"

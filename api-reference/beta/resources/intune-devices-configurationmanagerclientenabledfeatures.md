@@ -1,42 +1,44 @@
 ---
 title: configurationManagerClientEnabledFeatures 资源类型
 description: Configuration Manager 客户端已启用的功能
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce366adec1bcab58df761a6a271a45fbd0510c03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 189751d12f7220dcfa4e3e6985c3913bb7ae0e32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465058"
 ---
-# <a name="configurationmanagerclientenabledfeatures-resource-type"></a><span data-ttu-id="d5a48-103">configurationManagerClientEnabledFeatures 资源类型</span><span class="sxs-lookup"><span data-stu-id="d5a48-103">configurationManagerClientEnabledFeatures resource type</span></span>
+# <a name="configurationmanagerclientenabledfeatures-resource-type"></a><span data-ttu-id="e3155-103">configurationManagerClientEnabledFeatures 资源类型</span><span class="sxs-lookup"><span data-stu-id="e3155-103">configurationManagerClientEnabledFeatures resource type</span></span>
 
-> <span data-ttu-id="d5a48-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d5a48-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e3155-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3155-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d5a48-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d5a48-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e3155-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e3155-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d5a48-106">Configuration Manager 客户端已启用的功能</span><span class="sxs-lookup"><span data-stu-id="d5a48-106">configuration Manager client enabled features</span></span>
+> <span data-ttu-id="e3155-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e3155-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d5a48-107">属性</span><span class="sxs-lookup"><span data-stu-id="d5a48-107">Properties</span></span>
-|<span data-ttu-id="d5a48-108">属性</span><span class="sxs-lookup"><span data-stu-id="d5a48-108">Property</span></span>|<span data-ttu-id="d5a48-109">类型</span><span class="sxs-lookup"><span data-stu-id="d5a48-109">Type</span></span>|<span data-ttu-id="d5a48-110">说明</span><span class="sxs-lookup"><span data-stu-id="d5a48-110">Description</span></span>|
+<span data-ttu-id="e3155-107">Configuration Manager 客户端已启用的功能</span><span class="sxs-lookup"><span data-stu-id="e3155-107">configuration Manager client enabled features</span></span>
+
+## <a name="properties"></a><span data-ttu-id="e3155-108">属性</span><span class="sxs-lookup"><span data-stu-id="e3155-108">Properties</span></span>
+|<span data-ttu-id="e3155-109">属性</span><span class="sxs-lookup"><span data-stu-id="e3155-109">Property</span></span>|<span data-ttu-id="e3155-110">类型</span><span class="sxs-lookup"><span data-stu-id="e3155-110">Type</span></span>|<span data-ttu-id="e3155-111">说明</span><span class="sxs-lookup"><span data-stu-id="e3155-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d5a48-111">inventory</span><span class="sxs-lookup"><span data-stu-id="d5a48-111">inventory</span></span>|<span data-ttu-id="d5a48-112">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-112">Boolean</span></span>|<span data-ttu-id="d5a48-113">目录是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-113">Whether inventory is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-114">modernApps</span><span class="sxs-lookup"><span data-stu-id="d5a48-114">modernApps</span></span>|<span data-ttu-id="d5a48-115">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-115">Boolean</span></span>|<span data-ttu-id="d5a48-116">现代应用程序是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-116">Whether modern application is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-117">resourceAccess</span><span class="sxs-lookup"><span data-stu-id="d5a48-117">resourceAccess</span></span>|<span data-ttu-id="d5a48-118">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-118">Boolean</span></span>|<span data-ttu-id="d5a48-119">资源访问权限是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-119">Whether resource access is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-120">deviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="d5a48-120">deviceConfiguration</span></span>|<span data-ttu-id="d5a48-121">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-121">Boolean</span></span>|<span data-ttu-id="d5a48-122">设备配置是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-122">Whether device configuration is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-123">compliancePolicy</span><span class="sxs-lookup"><span data-stu-id="d5a48-123">compliancePolicy</span></span>|<span data-ttu-id="d5a48-124">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-124">Boolean</span></span>|<span data-ttu-id="d5a48-125">符合性策略是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-125">Whether compliance policy is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-126">windowsUpdateForBusiness</span><span class="sxs-lookup"><span data-stu-id="d5a48-126">windowsUpdateForBusiness</span></span>|<span data-ttu-id="d5a48-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="d5a48-127">Boolean</span></span>|<span data-ttu-id="d5a48-128">适用于企业的 Windows 更新是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-128">Whether Windows Update for Business is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-129">endpointProtection</span><span class="sxs-lookup"><span data-stu-id="d5a48-129">endpointProtection</span></span>|<span data-ttu-id="d5a48-130">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-130">Boolean</span></span>|<span data-ttu-id="d5a48-131">Endpoint Protection 是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-131">Whether Endpoint Protection is managed by Intune</span></span>|
-|<span data-ttu-id="d5a48-132">Officeoffice</span><span class="sxs-lookup"><span data-stu-id="d5a48-132">officeApps</span></span>|<span data-ttu-id="d5a48-133">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5a48-133">Boolean</span></span>|<span data-ttu-id="d5a48-134">Office 应用程序是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d5a48-134">Whether Office application is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-112">inventory</span><span class="sxs-lookup"><span data-stu-id="e3155-112">inventory</span></span>|<span data-ttu-id="e3155-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-113">Boolean</span></span>|<span data-ttu-id="e3155-114">目录是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-114">Whether inventory is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-115">modernApps</span><span class="sxs-lookup"><span data-stu-id="e3155-115">modernApps</span></span>|<span data-ttu-id="e3155-116">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-116">Boolean</span></span>|<span data-ttu-id="e3155-117">现代应用程序是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-117">Whether modern application is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-118">resourceAccess</span><span class="sxs-lookup"><span data-stu-id="e3155-118">resourceAccess</span></span>|<span data-ttu-id="e3155-119">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-119">Boolean</span></span>|<span data-ttu-id="e3155-120">资源访问权限是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-120">Whether resource access is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-121">deviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="e3155-121">deviceConfiguration</span></span>|<span data-ttu-id="e3155-122">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-122">Boolean</span></span>|<span data-ttu-id="e3155-123">设备配置是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-123">Whether device configuration is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-124">compliancePolicy</span><span class="sxs-lookup"><span data-stu-id="e3155-124">compliancePolicy</span></span>|<span data-ttu-id="e3155-125">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-125">Boolean</span></span>|<span data-ttu-id="e3155-126">符合性策略是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-126">Whether compliance policy is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-127">windowsUpdateForBusiness</span><span class="sxs-lookup"><span data-stu-id="e3155-127">windowsUpdateForBusiness</span></span>|<span data-ttu-id="e3155-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="e3155-128">Boolean</span></span>|<span data-ttu-id="e3155-129">适用于企业的 Windows 更新是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-129">Whether Windows Update for Business is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-130">endpointProtection</span><span class="sxs-lookup"><span data-stu-id="e3155-130">endpointProtection</span></span>|<span data-ttu-id="e3155-131">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-131">Boolean</span></span>|<span data-ttu-id="e3155-132">Endpoint Protection 是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-132">Whether Endpoint Protection is managed by Intune</span></span>|
+|<span data-ttu-id="e3155-133">Officeoffice</span><span class="sxs-lookup"><span data-stu-id="e3155-133">officeApps</span></span>|<span data-ttu-id="e3155-134">布尔值</span><span class="sxs-lookup"><span data-stu-id="e3155-134">Boolean</span></span>|<span data-ttu-id="e3155-135">Office 应用程序是否由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="e3155-135">Whether Office application is managed by Intune</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d5a48-135">关系</span><span class="sxs-lookup"><span data-stu-id="d5a48-135">Relationships</span></span>
-<span data-ttu-id="d5a48-136">无</span><span class="sxs-lookup"><span data-stu-id="d5a48-136">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e3155-136">关系</span><span class="sxs-lookup"><span data-stu-id="e3155-136">Relationships</span></span>
+<span data-ttu-id="e3155-137">无</span><span class="sxs-lookup"><span data-stu-id="e3155-137">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d5a48-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d5a48-137">JSON Representation</span></span>
-<span data-ttu-id="d5a48-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d5a48-138">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e3155-138">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e3155-138">JSON Representation</span></span>
+<span data-ttu-id="e3155-139">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e3155-139">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
