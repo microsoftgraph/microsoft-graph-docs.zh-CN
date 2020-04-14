@@ -1,35 +1,37 @@
 ---
 title: 更新 windowsAutopilotDeploymentProfileAssignment
 description: 更新 windowsAutopilotDeploymentProfileAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cba545dd8493a2d4a00c6edfaf46eaba1fc332f9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bb2c3e61569d5d55be55f737ab505ba240c73a87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42805050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452459"
 ---
-# <a name="update-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="a9527-103">更新 windowsAutopilotDeploymentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="a9527-103">Update windowsAutopilotDeploymentProfileAssignment</span></span>
+# <a name="update-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="7f2db-103">更新 windowsAutopilotDeploymentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="7f2db-103">Update windowsAutopilotDeploymentProfileAssignment</span></span>
 
-> <span data-ttu-id="a9527-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a9527-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="7f2db-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7f2db-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a9527-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a9527-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7f2db-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7f2db-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a9527-106">更新[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a9527-106">Update the properties of a [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
+> <span data-ttu-id="7f2db-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7f2db-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a9527-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a9527-107">Prerequisites</span></span>
-<span data-ttu-id="a9527-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a9527-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f2db-107">更新[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7f2db-107">Update the properties of a [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
 
-|<span data-ttu-id="a9527-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a9527-110">Permission type</span></span>|<span data-ttu-id="a9527-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a9527-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="7f2db-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="7f2db-108">Prerequisites</span></span>
+<span data-ttu-id="7f2db-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7f2db-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7f2db-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="7f2db-111">Permission type</span></span>|<span data-ttu-id="7f2db-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7f2db-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a9527-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a9527-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a9527-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a9527-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="a9527-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a9527-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a9527-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a9527-115">Not supported.</span></span>|
-|<span data-ttu-id="a9527-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a9527-116">Application</span></span>|<span data-ttu-id="a9527-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a9527-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7f2db-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7f2db-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7f2db-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f2db-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7f2db-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7f2db-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7f2db-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7f2db-116">Not supported.</span></span>|
+|<span data-ttu-id="7f2db-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="7f2db-117">Application</span></span>|<span data-ttu-id="7f2db-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f2db-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a9527-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a9527-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f2db-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7f2db-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +40,33 @@ ms.locfileid: "42805050"
 PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a9527-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a9527-119">Request headers</span></span>
-|<span data-ttu-id="a9527-120">标头</span><span class="sxs-lookup"><span data-stu-id="a9527-120">Header</span></span>|<span data-ttu-id="a9527-121">值</span><span class="sxs-lookup"><span data-stu-id="a9527-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7f2db-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7f2db-120">Request headers</span></span>
+|<span data-ttu-id="7f2db-121">标头</span><span class="sxs-lookup"><span data-stu-id="7f2db-121">Header</span></span>|<span data-ttu-id="7f2db-122">值</span><span class="sxs-lookup"><span data-stu-id="7f2db-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a9527-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a9527-122">Authorization</span></span>|<span data-ttu-id="a9527-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a9527-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a9527-124">接受</span><span class="sxs-lookup"><span data-stu-id="a9527-124">Accept</span></span>|<span data-ttu-id="a9527-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a9527-125">application/json</span></span>|
+|<span data-ttu-id="7f2db-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f2db-123">Authorization</span></span>|<span data-ttu-id="7f2db-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7f2db-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7f2db-125">接受</span><span class="sxs-lookup"><span data-stu-id="7f2db-125">Accept</span></span>|<span data-ttu-id="7f2db-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7f2db-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a9527-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a9527-126">Request body</span></span>
-<span data-ttu-id="a9527-127">在请求正文中，提供[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a9527-127">In the request body, supply a JSON representation for the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7f2db-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7f2db-127">Request body</span></span>
+<span data-ttu-id="7f2db-128">在请求正文中，提供[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7f2db-128">In the request body, supply a JSON representation for the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
 
-<span data-ttu-id="a9527-128">下表显示创建[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a9527-128">The following table shows the properties that are required when you create the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span></span>
+<span data-ttu-id="7f2db-129">下表显示创建[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7f2db-129">The following table shows the properties that are required when you create the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span></span>
 
-|<span data-ttu-id="a9527-129">属性</span><span class="sxs-lookup"><span data-stu-id="a9527-129">Property</span></span>|<span data-ttu-id="a9527-130">类型</span><span class="sxs-lookup"><span data-stu-id="a9527-130">Type</span></span>|<span data-ttu-id="a9527-131">说明</span><span class="sxs-lookup"><span data-stu-id="a9527-131">Description</span></span>|
+|<span data-ttu-id="7f2db-130">属性</span><span class="sxs-lookup"><span data-stu-id="7f2db-130">Property</span></span>|<span data-ttu-id="7f2db-131">类型</span><span class="sxs-lookup"><span data-stu-id="7f2db-131">Type</span></span>|<span data-ttu-id="7f2db-132">说明</span><span class="sxs-lookup"><span data-stu-id="7f2db-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a9527-132">id</span><span class="sxs-lookup"><span data-stu-id="a9527-132">id</span></span>|<span data-ttu-id="a9527-133">String</span><span class="sxs-lookup"><span data-stu-id="a9527-133">String</span></span>|<span data-ttu-id="a9527-134">分配的键。</span><span class="sxs-lookup"><span data-stu-id="a9527-134">The key of the assignment.</span></span>|
-|<span data-ttu-id="a9527-135">target</span><span class="sxs-lookup"><span data-stu-id="a9527-135">target</span></span>|[<span data-ttu-id="a9527-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a9527-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="a9527-137">Windows Autopilot 部署配置文件的分配目标。</span><span class="sxs-lookup"><span data-stu-id="a9527-137">The assignment target for the Windows Autopilot deployment profile.</span></span>|
-|<span data-ttu-id="a9527-138">source</span><span class="sxs-lookup"><span data-stu-id="a9527-138">source</span></span>|[<span data-ttu-id="a9527-139">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="a9527-139">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="a9527-140">用于部署到组、direct 或包裹/policySet 的资源类型。</span><span class="sxs-lookup"><span data-stu-id="a9527-140">Type of resource used for deployment to a group, direct or parcel/policySet.</span></span> <span data-ttu-id="a9527-141">可取值为：`direct`、`policySets`。</span><span class="sxs-lookup"><span data-stu-id="a9527-141">Possible values are: `direct`, `policySets`.</span></span>|
-|<span data-ttu-id="a9527-142">sourceId</span><span class="sxs-lookup"><span data-stu-id="a9527-142">sourceId</span></span>|<span data-ttu-id="a9527-143">String</span><span class="sxs-lookup"><span data-stu-id="a9527-143">String</span></span>|<span data-ttu-id="a9527-144">用于部署到组的资源的标识符</span><span class="sxs-lookup"><span data-stu-id="a9527-144">Identifier for resource used for deployment to a group</span></span>|
+|<span data-ttu-id="7f2db-133">id</span><span class="sxs-lookup"><span data-stu-id="7f2db-133">id</span></span>|<span data-ttu-id="7f2db-134">String</span><span class="sxs-lookup"><span data-stu-id="7f2db-134">String</span></span>|<span data-ttu-id="7f2db-135">分配的键。</span><span class="sxs-lookup"><span data-stu-id="7f2db-135">The key of the assignment.</span></span>|
+|<span data-ttu-id="7f2db-136">target</span><span class="sxs-lookup"><span data-stu-id="7f2db-136">target</span></span>|[<span data-ttu-id="7f2db-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="7f2db-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="7f2db-138">Windows Autopilot 部署配置文件的分配目标。</span><span class="sxs-lookup"><span data-stu-id="7f2db-138">The assignment target for the Windows Autopilot deployment profile.</span></span>|
+|<span data-ttu-id="7f2db-139">source</span><span class="sxs-lookup"><span data-stu-id="7f2db-139">source</span></span>|[<span data-ttu-id="7f2db-140">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="7f2db-140">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="7f2db-141">用于部署到组、direct 或包裹/policySet 的资源类型。</span><span class="sxs-lookup"><span data-stu-id="7f2db-141">Type of resource used for deployment to a group, direct or parcel/policySet.</span></span> <span data-ttu-id="7f2db-142">可取值为：`direct`、`policySets`。</span><span class="sxs-lookup"><span data-stu-id="7f2db-142">Possible values are: `direct`, `policySets`.</span></span>|
+|<span data-ttu-id="7f2db-143">sourceId</span><span class="sxs-lookup"><span data-stu-id="7f2db-143">sourceId</span></span>|<span data-ttu-id="7f2db-144">String</span><span class="sxs-lookup"><span data-stu-id="7f2db-144">String</span></span>|<span data-ttu-id="7f2db-145">用于部署到组的资源的标识符</span><span class="sxs-lookup"><span data-stu-id="7f2db-145">Identifier for resource used for deployment to a group</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a9527-145">响应</span><span class="sxs-lookup"><span data-stu-id="a9527-145">Response</span></span>
-<span data-ttu-id="a9527-146">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a9527-146">If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7f2db-146">响应</span><span class="sxs-lookup"><span data-stu-id="7f2db-146">Response</span></span>
+<span data-ttu-id="7f2db-147">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7f2db-147">If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9527-147">示例</span><span class="sxs-lookup"><span data-stu-id="a9527-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7f2db-148">示例</span><span class="sxs-lookup"><span data-stu-id="7f2db-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a9527-148">请求</span><span class="sxs-lookup"><span data-stu-id="a9527-148">Request</span></span>
-<span data-ttu-id="a9527-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a9527-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7f2db-149">请求</span><span class="sxs-lookup"><span data-stu-id="7f2db-149">Request</span></span>
+<span data-ttu-id="7f2db-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7f2db-150">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 Content-type: application/json
@@ -80,8 +82,8 @@ Content-length: 244
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a9527-150">响应</span><span class="sxs-lookup"><span data-stu-id="a9527-150">Response</span></span>
-<span data-ttu-id="a9527-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a9527-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7f2db-151">响应</span><span class="sxs-lookup"><span data-stu-id="7f2db-151">Response</span></span>
+<span data-ttu-id="7f2db-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7f2db-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,7 +99,6 @@ Content-Length: 293
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

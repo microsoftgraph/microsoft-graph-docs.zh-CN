@@ -2,38 +2,40 @@
 title: 更新 mobileAppTroubleshootingEvent
 description: 介绍了适用于 Intune 的 Microsoft Graph API 的更新 mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3aeb708def2f01c1b43efc06540c26a6e26f30bd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9566f9857517566083b44876e293e7a7d6e416fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455423"
 ---
-# <a name="update-mobileapptroubleshootingevent"></a><span data-ttu-id="e12df-103">更新 mobileAppTroubleshootingEvent</span><span class="sxs-lookup"><span data-stu-id="e12df-103">Update mobileAppTroubleshootingEvent</span></span>
+# <a name="update-mobileapptroubleshootingevent"></a><span data-ttu-id="ad887-103">更新 mobileAppTroubleshootingEvent</span><span class="sxs-lookup"><span data-stu-id="ad887-103">Update mobileAppTroubleshootingEvent</span></span>
 
-> <span data-ttu-id="e12df-104">**重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e12df-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e12df-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e12df-105">Use of these APIs in production applications is not supported.</span></span>
+<span data-ttu-id="ad887-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ad887-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e12df-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e12df-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ad887-105">**重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ad887-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ad887-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ad887-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e12df-107">更新[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e12df-107">Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.</span></span>
+> <span data-ttu-id="ad887-107">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ad887-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e12df-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e12df-108">Prerequisites</span></span>
-<span data-ttu-id="e12df-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e12df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad887-108">更新[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ad887-108">Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.</span></span>
 
-|<span data-ttu-id="e12df-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e12df-111">Permission type</span></span>|<span data-ttu-id="e12df-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e12df-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="ad887-109">先决条件</span><span class="sxs-lookup"><span data-stu-id="ad887-109">Prerequisites</span></span>
+<span data-ttu-id="ad887-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ad887-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="ad887-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="ad887-112">Permission type</span></span>|<span data-ttu-id="ad887-113">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ad887-113">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e12df-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e12df-113">Delegated (work or school account)</span></span>||
-|<span data-ttu-id="e12df-114">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="e12df-114">&nbsp; &nbsp; **Device management**</span></span>|<span data-ttu-id="e12df-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e12df-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="e12df-116">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="e12df-116">&nbsp; &nbsp; **Troubleshooting**</span></span>|<span data-ttu-id="e12df-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e12df-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="e12df-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e12df-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e12df-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="e12df-119">Not supported.</span></span>|
-|<span data-ttu-id="e12df-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="e12df-120">Application</span></span>||
-|<span data-ttu-id="e12df-121">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="e12df-121">&nbsp; &nbsp; **Device management**</span></span>|<span data-ttu-id="e12df-122">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e12df-122">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="e12df-123">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="e12df-123">&nbsp; &nbsp; **Troubleshooting**</span></span>|<span data-ttu-id="e12df-124">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e12df-124">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad887-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ad887-114">Delegated (work or school account)</span></span>||
+|<span data-ttu-id="ad887-115">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="ad887-115">&nbsp; &nbsp; **Device management**</span></span>|<span data-ttu-id="ad887-116">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad887-116">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad887-117">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="ad887-117">&nbsp; &nbsp; **Troubleshooting**</span></span>|<span data-ttu-id="ad887-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad887-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad887-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ad887-119">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad887-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="ad887-120">Not supported.</span></span>|
+|<span data-ttu-id="ad887-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="ad887-121">Application</span></span>||
+|<span data-ttu-id="ad887-122">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="ad887-122">&nbsp; &nbsp; **Device management**</span></span>|<span data-ttu-id="ad887-123">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad887-123">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad887-124">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="ad887-124">&nbsp; &nbsp; **Troubleshooting**</span></span>|<span data-ttu-id="ad887-125">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad887-125">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e12df-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e12df-125">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad887-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ad887-126">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,38 +45,38 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e12df-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="e12df-126">Request headers</span></span>
-|<span data-ttu-id="e12df-127">标头</span><span class="sxs-lookup"><span data-stu-id="e12df-127">Header</span></span>|<span data-ttu-id="e12df-128">值</span><span class="sxs-lookup"><span data-stu-id="e12df-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad887-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="ad887-127">Request headers</span></span>
+|<span data-ttu-id="ad887-128">标头</span><span class="sxs-lookup"><span data-stu-id="ad887-128">Header</span></span>|<span data-ttu-id="ad887-129">值</span><span class="sxs-lookup"><span data-stu-id="ad887-129">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e12df-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="e12df-129">Authorization</span></span>|<span data-ttu-id="e12df-130">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e12df-130">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e12df-131">接受</span><span class="sxs-lookup"><span data-stu-id="e12df-131">Accept</span></span>|<span data-ttu-id="e12df-132">application/json</span><span class="sxs-lookup"><span data-stu-id="e12df-132">application/json</span></span>|
+|<span data-ttu-id="ad887-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad887-130">Authorization</span></span>|<span data-ttu-id="ad887-131">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ad887-131">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ad887-132">接受</span><span class="sxs-lookup"><span data-stu-id="ad887-132">Accept</span></span>|<span data-ttu-id="ad887-133">application/json</span><span class="sxs-lookup"><span data-stu-id="ad887-133">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e12df-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="e12df-133">Request body</span></span>
-<span data-ttu-id="e12df-134">在请求正文中，提供[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e12df-134">In the request body, supply a JSON representation for the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad887-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="ad887-134">Request body</span></span>
+<span data-ttu-id="ad887-135">在请求正文中，提供[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ad887-135">In the request body, supply a JSON representation for the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.</span></span>
 
-<span data-ttu-id="e12df-135">下表显示创建[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e12df-135">The following table shows the properties that are required when you create the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).</span></span>
+<span data-ttu-id="ad887-136">下表显示创建[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ad887-136">The following table shows the properties that are required when you create the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).</span></span>
 
-|<span data-ttu-id="e12df-136">属性</span><span class="sxs-lookup"><span data-stu-id="e12df-136">Property</span></span>|<span data-ttu-id="e12df-137">类型</span><span class="sxs-lookup"><span data-stu-id="e12df-137">Type</span></span>|<span data-ttu-id="e12df-138">说明</span><span class="sxs-lookup"><span data-stu-id="e12df-138">Description</span></span>|
+|<span data-ttu-id="ad887-137">属性</span><span class="sxs-lookup"><span data-stu-id="ad887-137">Property</span></span>|<span data-ttu-id="ad887-138">类型</span><span class="sxs-lookup"><span data-stu-id="ad887-138">Type</span></span>|<span data-ttu-id="ad887-139">说明</span><span class="sxs-lookup"><span data-stu-id="ad887-139">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e12df-139">id</span><span class="sxs-lookup"><span data-stu-id="e12df-139">id</span></span>|<span data-ttu-id="e12df-140">字符串</span><span class="sxs-lookup"><span data-stu-id="e12df-140">String</span></span>|<span data-ttu-id="e12df-141">对象的 GUID</span><span class="sxs-lookup"><span data-stu-id="e12df-141">The GUID for the object</span></span>|
-|<span data-ttu-id="e12df-142">**疑难解答**</span><span class="sxs-lookup"><span data-stu-id="e12df-142">**Troubleshooting**</span></span>|
-|<span data-ttu-id="e12df-143">additionalInformation</span><span class="sxs-lookup"><span data-stu-id="e12df-143">additionalInformation</span></span>|<span data-ttu-id="e12df-144">[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="e12df-144">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="e12df-145">一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。</span><span class="sxs-lookup"><span data-stu-id="e12df-145">A set of string key and string value pairs which provides additional information on the Troubleshooting event.</span></span>|
-|<span data-ttu-id="e12df-146">applicationId</span><span class="sxs-lookup"><span data-stu-id="e12df-146">applicationId</span></span>|<span data-ttu-id="e12df-147">String</span><span class="sxs-lookup"><span data-stu-id="e12df-147">String</span></span>|<span data-ttu-id="e12df-148">Intune 应用程序标识符。</span><span class="sxs-lookup"><span data-stu-id="e12df-148">Intune application identifier.</span></span>|
-|<span data-ttu-id="e12df-149">correlationId</span><span class="sxs-lookup"><span data-stu-id="e12df-149">correlationId</span></span>|<span data-ttu-id="e12df-150">String</span><span class="sxs-lookup"><span data-stu-id="e12df-150">String</span></span>|<span data-ttu-id="e12df-151">用于跟踪服务中的故障的 ID。</span><span class="sxs-lookup"><span data-stu-id="e12df-151">ID used for tracing the failure in the service.</span></span> |
-|<span data-ttu-id="e12df-152">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="e12df-152">eventDateTime</span></span>|<span data-ttu-id="e12df-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e12df-153">DateTimeOffset</span></span>|<span data-ttu-id="e12df-154">事件发生的时间。</span><span class="sxs-lookup"><span data-stu-id="e12df-154">Time when the event occurred.</span></span> |
-|<span data-ttu-id="e12df-155">名</span><span class="sxs-lookup"><span data-stu-id="e12df-155">eventName</span></span>|<span data-ttu-id="e12df-156">String</span><span class="sxs-lookup"><span data-stu-id="e12df-156">String</span></span>|<span data-ttu-id="e12df-157">与疑难解答事件对应的事件名称。</span><span class="sxs-lookup"><span data-stu-id="e12df-157">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="e12df-158">可选。</span><span class="sxs-lookup"><span data-stu-id="e12df-158">Optional.</span></span>|
-|<span data-ttu-id="e12df-159">日志</span><span class="sxs-lookup"><span data-stu-id="e12df-159">history</span></span>|<span data-ttu-id="e12df-160">[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="e12df-160">[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) collection</span></span>|<span data-ttu-id="e12df-161">Intune 移动应用程序故障排除历史记录项。</span><span class="sxs-lookup"><span data-stu-id="e12df-161">Intune Mobile Application Troubleshooting History Item.</span></span>|
-|<span data-ttu-id="e12df-162">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="e12df-162">managedDeviceIdentifier</span></span>|<span data-ttu-id="e12df-163">String</span><span class="sxs-lookup"><span data-stu-id="e12df-163">String</span></span>|<span data-ttu-id="e12df-164">Intune 创建或收集的设备标识符。</span><span class="sxs-lookup"><span data-stu-id="e12df-164">Device identifier created or collected by Intune.</span></span>|
-|<span data-ttu-id="e12df-165">troubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="e12df-165">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="e12df-166">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="e12df-166">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="e12df-167">包含有关错误及其修正的详细信息的对象。</span><span class="sxs-lookup"><span data-stu-id="e12df-167">Object containing detailed information about the error and its remediation.</span></span> |
-|<span data-ttu-id="e12df-168">userId</span><span class="sxs-lookup"><span data-stu-id="e12df-168">userId</span></span>|<span data-ttu-id="e12df-169">String</span><span class="sxs-lookup"><span data-stu-id="e12df-169">String</span></span>|<span data-ttu-id="e12df-170">尝试注册设备的用户的标识符。</span><span class="sxs-lookup"><span data-stu-id="e12df-170">Identifier for the user that tried to enroll the device.</span></span>|
+|<span data-ttu-id="ad887-140">id</span><span class="sxs-lookup"><span data-stu-id="ad887-140">id</span></span>|<span data-ttu-id="ad887-141">字符串</span><span class="sxs-lookup"><span data-stu-id="ad887-141">String</span></span>|<span data-ttu-id="ad887-142">对象的 GUID</span><span class="sxs-lookup"><span data-stu-id="ad887-142">The GUID for the object</span></span>|
+|<span data-ttu-id="ad887-143">**疑难解答**</span><span class="sxs-lookup"><span data-stu-id="ad887-143">**Troubleshooting**</span></span>|
+|<span data-ttu-id="ad887-144">additionalInformation</span><span class="sxs-lookup"><span data-stu-id="ad887-144">additionalInformation</span></span>|<span data-ttu-id="ad887-145">[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="ad887-145">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="ad887-146">一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。</span><span class="sxs-lookup"><span data-stu-id="ad887-146">A set of string key and string value pairs which provides additional information on the Troubleshooting event.</span></span>|
+|<span data-ttu-id="ad887-147">applicationId</span><span class="sxs-lookup"><span data-stu-id="ad887-147">applicationId</span></span>|<span data-ttu-id="ad887-148">String</span><span class="sxs-lookup"><span data-stu-id="ad887-148">String</span></span>|<span data-ttu-id="ad887-149">Intune 应用程序标识符。</span><span class="sxs-lookup"><span data-stu-id="ad887-149">Intune application identifier.</span></span>|
+|<span data-ttu-id="ad887-150">correlationId</span><span class="sxs-lookup"><span data-stu-id="ad887-150">correlationId</span></span>|<span data-ttu-id="ad887-151">String</span><span class="sxs-lookup"><span data-stu-id="ad887-151">String</span></span>|<span data-ttu-id="ad887-152">用于跟踪服务中的故障的 ID。</span><span class="sxs-lookup"><span data-stu-id="ad887-152">ID used for tracing the failure in the service.</span></span> |
+|<span data-ttu-id="ad887-153">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="ad887-153">eventDateTime</span></span>|<span data-ttu-id="ad887-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad887-154">DateTimeOffset</span></span>|<span data-ttu-id="ad887-155">事件发生的时间。</span><span class="sxs-lookup"><span data-stu-id="ad887-155">Time when the event occurred.</span></span> |
+|<span data-ttu-id="ad887-156">名</span><span class="sxs-lookup"><span data-stu-id="ad887-156">eventName</span></span>|<span data-ttu-id="ad887-157">String</span><span class="sxs-lookup"><span data-stu-id="ad887-157">String</span></span>|<span data-ttu-id="ad887-158">与疑难解答事件对应的事件名称。</span><span class="sxs-lookup"><span data-stu-id="ad887-158">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="ad887-159">可选。</span><span class="sxs-lookup"><span data-stu-id="ad887-159">Optional.</span></span>|
+|<span data-ttu-id="ad887-160">日志</span><span class="sxs-lookup"><span data-stu-id="ad887-160">history</span></span>|<span data-ttu-id="ad887-161">[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="ad887-161">[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) collection</span></span>|<span data-ttu-id="ad887-162">Intune 移动应用程序故障排除历史记录项。</span><span class="sxs-lookup"><span data-stu-id="ad887-162">Intune Mobile Application Troubleshooting History Item.</span></span>|
+|<span data-ttu-id="ad887-163">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="ad887-163">managedDeviceIdentifier</span></span>|<span data-ttu-id="ad887-164">String</span><span class="sxs-lookup"><span data-stu-id="ad887-164">String</span></span>|<span data-ttu-id="ad887-165">Intune 创建或收集的设备标识符。</span><span class="sxs-lookup"><span data-stu-id="ad887-165">Device identifier created or collected by Intune.</span></span>|
+|<span data-ttu-id="ad887-166">troubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="ad887-166">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="ad887-167">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="ad887-167">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="ad887-168">包含有关错误及其修正的详细信息的对象。</span><span class="sxs-lookup"><span data-stu-id="ad887-168">Object containing detailed information about the error and its remediation.</span></span> |
+|<span data-ttu-id="ad887-169">userId</span><span class="sxs-lookup"><span data-stu-id="ad887-169">userId</span></span>|<span data-ttu-id="ad887-170">String</span><span class="sxs-lookup"><span data-stu-id="ad887-170">String</span></span>|<span data-ttu-id="ad887-171">尝试注册设备的用户的标识符。</span><span class="sxs-lookup"><span data-stu-id="ad887-171">Identifier for the user that tried to enroll the device.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e12df-171">响应</span><span class="sxs-lookup"><span data-stu-id="e12df-171">Response</span></span>
-<span data-ttu-id="e12df-172">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e12df-172">If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ad887-172">响应</span><span class="sxs-lookup"><span data-stu-id="ad887-172">Response</span></span>
+<span data-ttu-id="ad887-173">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ad887-173">If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e12df-173">示例</span><span class="sxs-lookup"><span data-stu-id="e12df-173">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad887-174">示例</span><span class="sxs-lookup"><span data-stu-id="ad887-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e12df-174">请求</span><span class="sxs-lookup"><span data-stu-id="e12df-174">Request</span></span>
-<span data-ttu-id="e12df-175">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e12df-175">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ad887-175">请求</span><span class="sxs-lookup"><span data-stu-id="ad887-175">Request</span></span>
+<span data-ttu-id="ad887-176">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ad887-176">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 Content-type: application/json
@@ -85,8 +87,8 @@ Content-length: 71
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e12df-176">响应</span><span class="sxs-lookup"><span data-stu-id="e12df-176">Response</span></span>
-<span data-ttu-id="e12df-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e12df-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ad887-177">响应</span><span class="sxs-lookup"><span data-stu-id="ad887-177">Response</span></span>
+<span data-ttu-id="ad887-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ad887-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

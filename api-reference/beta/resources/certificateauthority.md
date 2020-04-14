@@ -2,38 +2,38 @@
 title: certificateAuthority 资源类型
 description: 表示证书颁发机构。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3f5f34664bd721564a8ee63248c65b66123aad98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25303f527a8ba440e9a1e413379bf8037e551168
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507773"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454351"
 ---
-# <a name="certificateauthority-resource-type"></a><span data-ttu-id="54571-103">certificateAuthority 资源类型</span><span class="sxs-lookup"><span data-stu-id="54571-103">certificateAuthority resource type</span></span>
+# <a name="certificateauthority-resource-type"></a><span data-ttu-id="cb781-103">certificateAuthority 资源类型</span><span class="sxs-lookup"><span data-stu-id="cb781-103">certificateAuthority resource type</span></span>
 
-<span data-ttu-id="54571-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="54571-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cb781-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb781-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="54571-105">表示证书颁发机构。</span><span class="sxs-lookup"><span data-stu-id="54571-105">Represents a certificate authority.</span></span>
+<span data-ttu-id="cb781-105">表示证书颁发机构。</span><span class="sxs-lookup"><span data-stu-id="cb781-105">Represents a certificate authority.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="54571-106">属性</span><span class="sxs-lookup"><span data-stu-id="54571-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="cb781-106">属性</span><span class="sxs-lookup"><span data-stu-id="cb781-106">Properties</span></span>
 
-| <span data-ttu-id="54571-107">属性</span><span class="sxs-lookup"><span data-stu-id="54571-107">Property</span></span>     | <span data-ttu-id="54571-108">类型</span><span class="sxs-lookup"><span data-stu-id="54571-108">Type</span></span>        | <span data-ttu-id="54571-109">说明</span><span class="sxs-lookup"><span data-stu-id="54571-109">Description</span></span> |
+| <span data-ttu-id="cb781-107">属性</span><span class="sxs-lookup"><span data-stu-id="cb781-107">Property</span></span>     | <span data-ttu-id="cb781-108">类型</span><span class="sxs-lookup"><span data-stu-id="cb781-108">Type</span></span>        | <span data-ttu-id="cb781-109">说明</span><span class="sxs-lookup"><span data-stu-id="cb781-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="54571-110">证书</span><span class="sxs-lookup"><span data-stu-id="54571-110">certificate</span></span>|<span data-ttu-id="54571-111">Binary</span><span class="sxs-lookup"><span data-stu-id="54571-111">Binary</span></span>|<span data-ttu-id="54571-112">必填。</span><span class="sxs-lookup"><span data-stu-id="54571-112">Required.</span></span> <span data-ttu-id="54571-113">表示公共证书的 base64 编码字符串。</span><span class="sxs-lookup"><span data-stu-id="54571-113">The base64 encoded string representing the public certificate.</span></span>|
-|<span data-ttu-id="54571-114">certificateRevocationListUrl</span><span class="sxs-lookup"><span data-stu-id="54571-114">certificateRevocationListUrl</span></span>|<span data-ttu-id="54571-115">String</span><span class="sxs-lookup"><span data-stu-id="54571-115">String</span></span>|<span data-ttu-id="54571-116">证书吊销列表的 URL。</span><span class="sxs-lookup"><span data-stu-id="54571-116">The URL of the certificate revocation list.</span></span>|
-|<span data-ttu-id="54571-117">deltaCertificateRevocationListUrl</span><span class="sxs-lookup"><span data-stu-id="54571-117">deltaCertificateRevocationListUrl</span></span>|<span data-ttu-id="54571-118">String</span><span class="sxs-lookup"><span data-stu-id="54571-118">String</span></span>|<span data-ttu-id="54571-119">该 URL 包含自上次创建完整证书 revocaton 列表以来的所有已吊销证书的列表。</span><span class="sxs-lookup"><span data-stu-id="54571-119">The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.</span></span>|
-|<span data-ttu-id="54571-120">isRootAuthority</span><span class="sxs-lookup"><span data-stu-id="54571-120">isRootAuthority</span></span>|<span data-ttu-id="54571-121">布尔</span><span class="sxs-lookup"><span data-stu-id="54571-121">Boolean</span></span>|<span data-ttu-id="54571-122">必填。</span><span class="sxs-lookup"><span data-stu-id="54571-122">Required.</span></span> <span data-ttu-id="54571-123">如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。</span><span class="sxs-lookup"><span data-stu-id="54571-123">**true** if the trusted certificate is a root authority, **false** if the trusted certificate is an intermediate authority.</span></span>|
-|<span data-ttu-id="54571-124">常用</span><span class="sxs-lookup"><span data-stu-id="54571-124">issuer</span></span>|<span data-ttu-id="54571-125">String</span><span class="sxs-lookup"><span data-stu-id="54571-125">String</span></span>|<span data-ttu-id="54571-126">证书的颁发者，根据**证书**值计算。</span><span class="sxs-lookup"><span data-stu-id="54571-126">The issuer of the certificate, calculated from the **certificate** value.</span></span> <span data-ttu-id="54571-127">只读。</span><span class="sxs-lookup"><span data-stu-id="54571-127">Read-only.</span></span> |
-|<span data-ttu-id="54571-128">issuerSki</span><span class="sxs-lookup"><span data-stu-id="54571-128">issuerSki</span></span>|<span data-ttu-id="54571-129">String</span><span class="sxs-lookup"><span data-stu-id="54571-129">String</span></span>|<span data-ttu-id="54571-130">证书的主题密钥标识符，由**证书**值计算得出。</span><span class="sxs-lookup"><span data-stu-id="54571-130">The subject key identifier of the certificate, calculated from the **certificate** value.</span></span> <span data-ttu-id="54571-131">只读。</span><span class="sxs-lookup"><span data-stu-id="54571-131">Read-only.</span></span>|
+|<span data-ttu-id="cb781-110">证书</span><span class="sxs-lookup"><span data-stu-id="cb781-110">certificate</span></span>|<span data-ttu-id="cb781-111">Binary</span><span class="sxs-lookup"><span data-stu-id="cb781-111">Binary</span></span>|<span data-ttu-id="cb781-112">必需。</span><span class="sxs-lookup"><span data-stu-id="cb781-112">Required.</span></span> <span data-ttu-id="cb781-113">表示公共证书的 base64 编码字符串。</span><span class="sxs-lookup"><span data-stu-id="cb781-113">The base64 encoded string representing the public certificate.</span></span>|
+|<span data-ttu-id="cb781-114">certificateRevocationListUrl</span><span class="sxs-lookup"><span data-stu-id="cb781-114">certificateRevocationListUrl</span></span>|<span data-ttu-id="cb781-115">String</span><span class="sxs-lookup"><span data-stu-id="cb781-115">String</span></span>|<span data-ttu-id="cb781-116">证书吊销列表的 URL。</span><span class="sxs-lookup"><span data-stu-id="cb781-116">The URL of the certificate revocation list.</span></span>|
+|<span data-ttu-id="cb781-117">deltaCertificateRevocationListUrl</span><span class="sxs-lookup"><span data-stu-id="cb781-117">deltaCertificateRevocationListUrl</span></span>|<span data-ttu-id="cb781-118">String</span><span class="sxs-lookup"><span data-stu-id="cb781-118">String</span></span>|<span data-ttu-id="cb781-119">该 URL 包含自上次创建完整证书 revocaton 列表以来的所有已吊销证书的列表。</span><span class="sxs-lookup"><span data-stu-id="cb781-119">The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.</span></span>|
+|<span data-ttu-id="cb781-120">isRootAuthority</span><span class="sxs-lookup"><span data-stu-id="cb781-120">isRootAuthority</span></span>|<span data-ttu-id="cb781-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="cb781-121">Boolean</span></span>|<span data-ttu-id="cb781-122">必需。</span><span class="sxs-lookup"><span data-stu-id="cb781-122">Required.</span></span> <span data-ttu-id="cb781-123">如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。</span><span class="sxs-lookup"><span data-stu-id="cb781-123">**true** if the trusted certificate is a root authority, **false** if the trusted certificate is an intermediate authority.</span></span>|
+|<span data-ttu-id="cb781-124">常用</span><span class="sxs-lookup"><span data-stu-id="cb781-124">issuer</span></span>|<span data-ttu-id="cb781-125">String</span><span class="sxs-lookup"><span data-stu-id="cb781-125">String</span></span>|<span data-ttu-id="cb781-126">证书的颁发者，根据**证书**值计算。</span><span class="sxs-lookup"><span data-stu-id="cb781-126">The issuer of the certificate, calculated from the **certificate** value.</span></span> <span data-ttu-id="cb781-127">只读。</span><span class="sxs-lookup"><span data-stu-id="cb781-127">Read-only.</span></span> |
+|<span data-ttu-id="cb781-128">issuerSki</span><span class="sxs-lookup"><span data-stu-id="cb781-128">issuerSki</span></span>|<span data-ttu-id="cb781-129">String</span><span class="sxs-lookup"><span data-stu-id="cb781-129">String</span></span>|<span data-ttu-id="cb781-130">证书的主题密钥标识符，由**证书**值计算得出。</span><span class="sxs-lookup"><span data-stu-id="cb781-130">The subject key identifier of the certificate, calculated from the **certificate** value.</span></span> <span data-ttu-id="cb781-131">只读。</span><span class="sxs-lookup"><span data-stu-id="cb781-131">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="54571-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="54571-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cb781-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cb781-132">JSON representation</span></span>
 
-<span data-ttu-id="54571-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="54571-133">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cb781-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cb781-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
