@@ -1,62 +1,62 @@
 ---
 title: 更新 contactfolder
 description: 更新 contactfolder 对象的属性。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4380fafe842af304b8dfd99b86cae3d499669b03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cc54c66b9c3df97c97b783f1ae3f8639e7bb71a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375901"
 ---
-# <a name="update-contactfolder"></a><span data-ttu-id="e5131-103">更新 contactfolder</span><span class="sxs-lookup"><span data-stu-id="e5131-103">Update contactfolder</span></span>
+# <a name="update-contactfolder"></a><span data-ttu-id="15328-103">更新 contactfolder</span><span class="sxs-lookup"><span data-stu-id="15328-103">Update contactfolder</span></span>
 
-<span data-ttu-id="e5131-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="e5131-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="15328-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15328-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5131-105">更新 contactfolder 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e5131-105">Update the properties of contactfolder object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e5131-106">权限</span><span class="sxs-lookup"><span data-stu-id="e5131-106">Permissions</span></span>
-<span data-ttu-id="e5131-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e5131-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15328-105">更新 contactfolder 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="15328-105">Update the properties of contactfolder object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="15328-106">权限</span><span class="sxs-lookup"><span data-stu-id="15328-106">Permissions</span></span>
+<span data-ttu-id="15328-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15328-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5131-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5131-109">Permission type</span></span>      | <span data-ttu-id="e5131-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e5131-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15328-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="15328-109">Permission type</span></span>      | <span data-ttu-id="15328-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="15328-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e5131-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5131-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e5131-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5131-112">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="e5131-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5131-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5131-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5131-114">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="e5131-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5131-115">Application</span></span> | <span data-ttu-id="e5131-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5131-116">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="15328-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15328-111">Delegated (work or school account)</span></span> | <span data-ttu-id="15328-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15328-112">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="15328-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15328-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15328-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15328-114">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="15328-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="15328-115">Application</span></span> | <span data-ttu-id="15328-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15328-116">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e5131-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5131-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15328-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15328-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/contactFolders/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="e5131-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e5131-118">Request headers</span></span>
-| <span data-ttu-id="e5131-119">标头</span><span class="sxs-lookup"><span data-stu-id="e5131-119">Header</span></span>       | <span data-ttu-id="e5131-120">值</span><span class="sxs-lookup"><span data-stu-id="e5131-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="15328-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="15328-118">Request headers</span></span>
+| <span data-ttu-id="15328-119">标头</span><span class="sxs-lookup"><span data-stu-id="15328-119">Header</span></span>       | <span data-ttu-id="15328-120">值</span><span class="sxs-lookup"><span data-stu-id="15328-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e5131-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5131-121">Authorization</span></span>  | <span data-ttu-id="e5131-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e5131-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e5131-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e5131-124">Content-Type</span></span>  | <span data-ttu-id="e5131-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="e5131-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="15328-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="15328-121">Authorization</span></span>  | <span data-ttu-id="15328-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="15328-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="15328-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15328-124">Content-Type</span></span>  | <span data-ttu-id="15328-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="15328-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e5131-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5131-127">Request body</span></span>
-<span data-ttu-id="e5131-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e5131-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15328-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="15328-127">Request body</span></span>
+<span data-ttu-id="15328-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="15328-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e5131-131">属性</span><span class="sxs-lookup"><span data-stu-id="e5131-131">Property</span></span>     | <span data-ttu-id="e5131-132">类型</span><span class="sxs-lookup"><span data-stu-id="e5131-132">Type</span></span>   |<span data-ttu-id="e5131-133">说明</span><span class="sxs-lookup"><span data-stu-id="e5131-133">Description</span></span>|
+| <span data-ttu-id="15328-131">属性</span><span class="sxs-lookup"><span data-stu-id="15328-131">Property</span></span>     | <span data-ttu-id="15328-132">类型</span><span class="sxs-lookup"><span data-stu-id="15328-132">Type</span></span>   |<span data-ttu-id="15328-133">说明</span><span class="sxs-lookup"><span data-stu-id="15328-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5131-134">displayName</span><span class="sxs-lookup"><span data-stu-id="e5131-134">displayName</span></span>|<span data-ttu-id="e5131-135">String</span><span class="sxs-lookup"><span data-stu-id="e5131-135">String</span></span>|<span data-ttu-id="e5131-136">文件夹的显示名称。</span><span class="sxs-lookup"><span data-stu-id="e5131-136">The folder's display name.</span></span>|
-|<span data-ttu-id="e5131-137">parentFolderId</span><span class="sxs-lookup"><span data-stu-id="e5131-137">parentFolderId</span></span>|<span data-ttu-id="e5131-138">String</span><span class="sxs-lookup"><span data-stu-id="e5131-138">String</span></span>|<span data-ttu-id="e5131-139">文件夹的父文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="e5131-139">The ID of the folder's parent folder.</span></span>|
-|<span data-ttu-id="e5131-140">wellKnownName</span><span class="sxs-lookup"><span data-stu-id="e5131-140">wellKnownName</span></span>|<span data-ttu-id="e5131-141">string</span><span class="sxs-lookup"><span data-stu-id="e5131-141">string</span></span>|<span data-ttu-id="e5131-142">文件夹的名称（如果文件夹是可识别的文件夹）。</span><span class="sxs-lookup"><span data-stu-id="e5131-142">The name of the folder if the folder is a recognized folder.</span></span> <span data-ttu-id="e5131-143">当前`contacts`是唯一可识别的 "联系人" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="e5131-143">Currently `contacts` is the only recognized contacts folder.</span></span>|
+|<span data-ttu-id="15328-134">displayName</span><span class="sxs-lookup"><span data-stu-id="15328-134">displayName</span></span>|<span data-ttu-id="15328-135">String</span><span class="sxs-lookup"><span data-stu-id="15328-135">String</span></span>|<span data-ttu-id="15328-136">文件夹的显示名称。</span><span class="sxs-lookup"><span data-stu-id="15328-136">The folder's display name.</span></span>|
+|<span data-ttu-id="15328-137">parentFolderId</span><span class="sxs-lookup"><span data-stu-id="15328-137">parentFolderId</span></span>|<span data-ttu-id="15328-138">String</span><span class="sxs-lookup"><span data-stu-id="15328-138">String</span></span>|<span data-ttu-id="15328-139">文件夹的父文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="15328-139">The ID of the folder's parent folder.</span></span>|
+|<span data-ttu-id="15328-140">wellKnownName</span><span class="sxs-lookup"><span data-stu-id="15328-140">wellKnownName</span></span>|<span data-ttu-id="15328-141">string</span><span class="sxs-lookup"><span data-stu-id="15328-141">string</span></span>|<span data-ttu-id="15328-142">文件夹的名称（如果文件夹是可识别的文件夹）。</span><span class="sxs-lookup"><span data-stu-id="15328-142">The name of the folder if the folder is a recognized folder.</span></span> <span data-ttu-id="15328-143">当前`contacts`是唯一可识别的 "联系人" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="15328-143">Currently `contacts` is the only recognized contacts folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e5131-144">响应</span><span class="sxs-lookup"><span data-stu-id="e5131-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15328-144">响应</span><span class="sxs-lookup"><span data-stu-id="15328-144">Response</span></span>
 
-<span data-ttu-id="e5131-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [contactFolder](../resources/contactfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e5131-145">If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e5131-146">示例</span><span class="sxs-lookup"><span data-stu-id="e5131-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e5131-147">请求</span><span class="sxs-lookup"><span data-stu-id="e5131-147">Request</span></span>
-<span data-ttu-id="e5131-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e5131-148">Here is an example of the request.</span></span>
+<span data-ttu-id="15328-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [contactFolder](../resources/contactfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="15328-145">If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="15328-146">示例</span><span class="sxs-lookup"><span data-stu-id="15328-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15328-147">请求</span><span class="sxs-lookup"><span data-stu-id="15328-147">Request</span></span>
+<span data-ttu-id="15328-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="15328-148">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e5131-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5131-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="15328-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="15328-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_contactfolder"
@@ -71,22 +71,22 @@ Content-length: 84
   "displayName": "displayName-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e5131-150">C#</span><span class="sxs-lookup"><span data-stu-id="e5131-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="15328-150">C#</span><span class="sxs-lookup"><span data-stu-id="15328-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5131-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5131-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="15328-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15328-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5131-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5131-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="15328-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15328-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contactfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="e5131-153">响应</span><span class="sxs-lookup"><span data-stu-id="e5131-153">Response</span></span>
-<span data-ttu-id="e5131-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e5131-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="15328-153">响应</span><span class="sxs-lookup"><span data-stu-id="15328-153">Response</span></span>
+<span data-ttu-id="15328-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="15328-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

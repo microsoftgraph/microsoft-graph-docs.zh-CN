@@ -2,35 +2,35 @@
 title: iPv4CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv4 范围。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6aa9202310ac2c0edcb70bac07fd49f5de668c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7ca41939f79544b0fbcc241a1cd37254f521254
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385218"
 ---
-# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="a319a-103">iPv4CidrRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="a319a-103">iPv4CidrRange resource type</span></span>
+# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="b7345-103">iPv4CidrRange 资源类型</span><span class="sxs-lookup"><span data-stu-id="b7345-103">iPv4CidrRange resource type</span></span>
 
-<span data-ttu-id="a319a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="a319a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7345-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7345-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a319a-105">表示使用 CIDR 表示法的 IPv4 范围。</span><span class="sxs-lookup"><span data-stu-id="a319a-105">Represents an IPv4 range using the CIDR notation.</span></span>
+<span data-ttu-id="b7345-105">表示使用 CIDR 表示法的 IPv4 范围。</span><span class="sxs-lookup"><span data-stu-id="b7345-105">Represents an IPv4 range using the CIDR notation.</span></span>
 
-<span data-ttu-id="a319a-106">继承自 [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="a319a-106">Inherits from [ipRange](../resources/iprange.md)</span></span>
+<span data-ttu-id="b7345-106">继承自 [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="b7345-106">Inherits from [ipRange](../resources/iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a319a-107">属性</span><span class="sxs-lookup"><span data-stu-id="a319a-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b7345-107">属性</span><span class="sxs-lookup"><span data-stu-id="b7345-107">Properties</span></span>
 
-| <span data-ttu-id="a319a-108">属性</span><span class="sxs-lookup"><span data-stu-id="a319a-108">Property</span></span>     | <span data-ttu-id="a319a-109">类型</span><span class="sxs-lookup"><span data-stu-id="a319a-109">Type</span></span>        | <span data-ttu-id="a319a-110">说明</span><span class="sxs-lookup"><span data-stu-id="a319a-110">Description</span></span> |
+| <span data-ttu-id="b7345-108">属性</span><span class="sxs-lookup"><span data-stu-id="b7345-108">Property</span></span>     | <span data-ttu-id="b7345-109">类型</span><span class="sxs-lookup"><span data-stu-id="b7345-109">Type</span></span>        | <span data-ttu-id="b7345-110">说明</span><span class="sxs-lookup"><span data-stu-id="b7345-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a319a-111">cidrAddress</span><span class="sxs-lookup"><span data-stu-id="a319a-111">cidrAddress</span></span>|<span data-ttu-id="a319a-112">String</span><span class="sxs-lookup"><span data-stu-id="a319a-112">String</span></span>|<span data-ttu-id="a319a-113">CIDR 表示法中的 IPv4 地址</span><span class="sxs-lookup"><span data-stu-id="a319a-113">IPv4 address in CIDR notation</span></span>|
+|<span data-ttu-id="b7345-111">cidrAddress</span><span class="sxs-lookup"><span data-stu-id="b7345-111">cidrAddress</span></span>|<span data-ttu-id="b7345-112">字符串</span><span class="sxs-lookup"><span data-stu-id="b7345-112">String</span></span>|<span data-ttu-id="b7345-113">CIDR 表示法中的 IPv4 地址</span><span class="sxs-lookup"><span data-stu-id="b7345-113">IPv4 address in CIDR notation</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a319a-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a319a-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b7345-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b7345-114">JSON representation</span></span>
 
-<span data-ttu-id="a319a-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a319a-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b7345-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b7345-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
