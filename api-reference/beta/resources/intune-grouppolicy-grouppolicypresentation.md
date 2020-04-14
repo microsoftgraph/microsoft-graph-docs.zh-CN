@@ -1,45 +1,47 @@
 ---
 title: groupPolicyPresentation 资源类型
 description: 组策略定义中任何其他选项的显示演示文稿的基本实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72f19ee5690da4a5466fa1f1902fc71729a23f01
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: db195263c806a2e48a72f9bd7c09d0d663be584d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782993"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446925"
 ---
-# <a name="grouppolicypresentation-resource-type"></a><span data-ttu-id="0bb89-103">groupPolicyPresentation 资源类型</span><span class="sxs-lookup"><span data-stu-id="0bb89-103">groupPolicyPresentation resource type</span></span>
+# <a name="grouppolicypresentation-resource-type"></a><span data-ttu-id="10362-103">groupPolicyPresentation 资源类型</span><span class="sxs-lookup"><span data-stu-id="10362-103">groupPolicyPresentation resource type</span></span>
 
-> <span data-ttu-id="0bb89-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0bb89-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="10362-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10362-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0bb89-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0bb89-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="10362-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="10362-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="0bb89-106">组策略定义中任何其他选项的显示演示文稿的基本实体。</span><span class="sxs-lookup"><span data-stu-id="0bb89-106">The base entity for the display presentation of any of the additional options in a group policy definition.</span></span>
+> <span data-ttu-id="10362-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="10362-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="0bb89-107">方法</span><span class="sxs-lookup"><span data-stu-id="0bb89-107">Methods</span></span>
-|<span data-ttu-id="0bb89-108">方法</span><span class="sxs-lookup"><span data-stu-id="0bb89-108">Method</span></span>|<span data-ttu-id="0bb89-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="0bb89-109">Return Type</span></span>|<span data-ttu-id="0bb89-110">说明</span><span class="sxs-lookup"><span data-stu-id="0bb89-110">Description</span></span>|
+<span data-ttu-id="10362-107">组策略定义中任何其他选项的显示演示文稿的基本实体。</span><span class="sxs-lookup"><span data-stu-id="10362-107">The base entity for the display presentation of any of the additional options in a group policy definition.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="10362-108">方法</span><span class="sxs-lookup"><span data-stu-id="10362-108">Methods</span></span>
+|<span data-ttu-id="10362-109">方法</span><span class="sxs-lookup"><span data-stu-id="10362-109">Method</span></span>|<span data-ttu-id="10362-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="10362-110">Return Type</span></span>|<span data-ttu-id="10362-111">说明</span><span class="sxs-lookup"><span data-stu-id="10362-111">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="0bb89-111">获取 groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="0bb89-111">Get groupPolicyPresentation</span></span>](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[<span data-ttu-id="0bb89-112">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="0bb89-112">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="0bb89-113">读取[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="0bb89-113">Read properties and relationships of the [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) object.</span></span>|
-|[<span data-ttu-id="0bb89-114">更新 groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="0bb89-114">Update groupPolicyPresentation</span></span>](../api/intune-grouppolicy-grouppolicypresentation-update.md)|[<span data-ttu-id="0bb89-115">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="0bb89-115">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="0bb89-116">更新[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="0bb89-116">Update the properties of a [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) object.</span></span>|
+|[<span data-ttu-id="10362-112">获取 groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="10362-112">Get groupPolicyPresentation</span></span>](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[<span data-ttu-id="10362-113">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="10362-113">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="10362-114">读取[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="10362-114">Read properties and relationships of the [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) object.</span></span>|
+|[<span data-ttu-id="10362-115">更新 groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="10362-115">Update groupPolicyPresentation</span></span>](../api/intune-grouppolicy-grouppolicypresentation-update.md)|[<span data-ttu-id="10362-116">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="10362-116">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="10362-117">更新[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="10362-117">Update the properties of a [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="0bb89-117">属性</span><span class="sxs-lookup"><span data-stu-id="0bb89-117">Properties</span></span>
-|<span data-ttu-id="0bb89-118">属性</span><span class="sxs-lookup"><span data-stu-id="0bb89-118">Property</span></span>|<span data-ttu-id="0bb89-119">类型</span><span class="sxs-lookup"><span data-stu-id="0bb89-119">Type</span></span>|<span data-ttu-id="0bb89-120">说明</span><span class="sxs-lookup"><span data-stu-id="0bb89-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="10362-118">属性</span><span class="sxs-lookup"><span data-stu-id="10362-118">Properties</span></span>
+|<span data-ttu-id="10362-119">属性</span><span class="sxs-lookup"><span data-stu-id="10362-119">Property</span></span>|<span data-ttu-id="10362-120">类型</span><span class="sxs-lookup"><span data-stu-id="10362-120">Type</span></span>|<span data-ttu-id="10362-121">说明</span><span class="sxs-lookup"><span data-stu-id="10362-121">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0bb89-121">label</span><span class="sxs-lookup"><span data-stu-id="0bb89-121">label</span></span>|<span data-ttu-id="0bb89-122">String</span><span class="sxs-lookup"><span data-stu-id="0bb89-122">String</span></span>|<span data-ttu-id="0bb89-123">任何演示文稿实体的本地化文本标签。</span><span class="sxs-lookup"><span data-stu-id="0bb89-123">Localized text label for any presentation entity.</span></span> <span data-ttu-id="0bb89-124">默认值为空白。</span><span class="sxs-lookup"><span data-stu-id="0bb89-124">The default value is empty.</span></span>|
-|<span data-ttu-id="0bb89-125">id</span><span class="sxs-lookup"><span data-stu-id="0bb89-125">id</span></span>|<span data-ttu-id="0bb89-126">String</span><span class="sxs-lookup"><span data-stu-id="0bb89-126">String</span></span>|<span data-ttu-id="0bb89-127">实体的键。</span><span class="sxs-lookup"><span data-stu-id="0bb89-127">Key of the entity.</span></span>|
-|<span data-ttu-id="0bb89-128">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0bb89-128">lastModifiedDateTime</span></span>|<span data-ttu-id="0bb89-129">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0bb89-129">DateTimeOffset</span></span>|<span data-ttu-id="0bb89-130">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0bb89-130">The date and time the entity was last modified.</span></span>|
+|<span data-ttu-id="10362-122">label</span><span class="sxs-lookup"><span data-stu-id="10362-122">label</span></span>|<span data-ttu-id="10362-123">String</span><span class="sxs-lookup"><span data-stu-id="10362-123">String</span></span>|<span data-ttu-id="10362-124">任何演示文稿实体的本地化文本标签。</span><span class="sxs-lookup"><span data-stu-id="10362-124">Localized text label for any presentation entity.</span></span> <span data-ttu-id="10362-125">默认值为空白。</span><span class="sxs-lookup"><span data-stu-id="10362-125">The default value is empty.</span></span>|
+|<span data-ttu-id="10362-126">id</span><span class="sxs-lookup"><span data-stu-id="10362-126">id</span></span>|<span data-ttu-id="10362-127">String</span><span class="sxs-lookup"><span data-stu-id="10362-127">String</span></span>|<span data-ttu-id="10362-128">实体的键。</span><span class="sxs-lookup"><span data-stu-id="10362-128">Key of the entity.</span></span>|
+|<span data-ttu-id="10362-129">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="10362-129">lastModifiedDateTime</span></span>|<span data-ttu-id="10362-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="10362-130">DateTimeOffset</span></span>|<span data-ttu-id="10362-131">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="10362-131">The date and time the entity was last modified.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0bb89-131">关系</span><span class="sxs-lookup"><span data-stu-id="0bb89-131">Relationships</span></span>
-|<span data-ttu-id="0bb89-132">关系</span><span class="sxs-lookup"><span data-stu-id="0bb89-132">Relationship</span></span>|<span data-ttu-id="0bb89-133">类型</span><span class="sxs-lookup"><span data-stu-id="0bb89-133">Type</span></span>|<span data-ttu-id="0bb89-134">说明</span><span class="sxs-lookup"><span data-stu-id="0bb89-134">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="10362-132">关系</span><span class="sxs-lookup"><span data-stu-id="10362-132">Relationships</span></span>
+|<span data-ttu-id="10362-133">关系</span><span class="sxs-lookup"><span data-stu-id="10362-133">Relationship</span></span>|<span data-ttu-id="10362-134">类型</span><span class="sxs-lookup"><span data-stu-id="10362-134">Type</span></span>|<span data-ttu-id="10362-135">说明</span><span class="sxs-lookup"><span data-stu-id="10362-135">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0bb89-135">定义</span><span class="sxs-lookup"><span data-stu-id="0bb89-135">definition</span></span>|[<span data-ttu-id="0bb89-136">groupPolicyDefinition</span><span class="sxs-lookup"><span data-stu-id="0bb89-136">groupPolicyDefinition</span></span>](../resources/intune-grouppolicy-grouppolicydefinition.md)|<span data-ttu-id="0bb89-137">与演示文稿相关联的组策略定义。</span><span class="sxs-lookup"><span data-stu-id="0bb89-137">The group policy definition associated with the presentation.</span></span>|
+|<span data-ttu-id="10362-136">定义</span><span class="sxs-lookup"><span data-stu-id="10362-136">definition</span></span>|[<span data-ttu-id="10362-137">groupPolicyDefinition</span><span class="sxs-lookup"><span data-stu-id="10362-137">groupPolicyDefinition</span></span>](../resources/intune-grouppolicy-grouppolicydefinition.md)|<span data-ttu-id="10362-138">与演示文稿相关联的组策略定义。</span><span class="sxs-lookup"><span data-stu-id="10362-138">The group policy definition associated with the presentation.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0bb89-138">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0bb89-138">JSON Representation</span></span>
-<span data-ttu-id="0bb89-139">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0bb89-139">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="10362-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="10362-139">JSON Representation</span></span>
+<span data-ttu-id="10362-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="10362-140">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
