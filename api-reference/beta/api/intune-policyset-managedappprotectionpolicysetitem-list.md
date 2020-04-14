@@ -1,18 +1,20 @@
 ---
 title: 列出 managedAppProtectionPolicySetItems
 description: 列出 managedAppProtectionPolicySetItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2385d83511e3bf7e4803064fb6688a450e1d8fb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ede2c55c0910a92ac61db1ebf042f1e04c530ffd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802263"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464251"
 ---
 # <a name="list-managedappprotectionpolicysetitems"></a>列出 managedAppProtectionPolicySetItems
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +87,6 @@ Content-Length: 646
   ]
 }
 ```
-
 
 
 

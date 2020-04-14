@@ -1,18 +1,20 @@
 ---
 title: remoteAction 枚举类型
 description: 远程操作 Intune 支持。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 914d2b7717be151adeb43c9585af39ab3383482c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 33978f4a8d073876621fcc4cb2c0f4e0bdc065e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783905"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466761"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -36,7 +38,7 @@ ms.locfileid: "42783905"
 |cleanWindowsDevice|10 |用户启动操作以清理 windows 设备。|
 |logoutSharedAppleDeviceActiveUser|11x17|用户启动一个操作以注销共享 apple 设备上的当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
-|fullScan|13 |用户启动操作以在设备上运行完全扫描。|
+|fullScan|13|用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上的恶意软件签名。|
 |factoryResetKeepEnrollmentData|15 |用户使用保留注册数据的远程擦除设备启动操作。|
 |updateDeviceAccount|16 |用户启动操作以更新设备上的帐户。|

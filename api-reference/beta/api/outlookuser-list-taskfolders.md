@@ -2,19 +2,19 @@
 title: 列出 taskFolders
 description: 获取用户邮箱中的所有 Outlook 任务文件夹。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c671ffccbf6631a03fe3867ccecc4e54e91f8a3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ef91997e37e356de5b6bad59226b6d316c95c87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456080"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467993"
 ---
 # <a name="list-taskfolders"></a>列出 taskFolders
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

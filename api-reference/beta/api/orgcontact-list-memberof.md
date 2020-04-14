@@ -2,19 +2,19 @@
 title: orgContact：列表 memberOf
 description: 检索联系人所属的组和管理单位的列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2f35e63b739fdab47f4f4b256eac78e1e474797c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 463b76add7ecdec9070e0a0f0fea43e8a6ff4b2c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466963"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact：列表 memberOf
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

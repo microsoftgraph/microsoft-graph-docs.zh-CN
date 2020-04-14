@@ -4,12 +4,12 @@ description: 列出用于定义和管理租户组织的基于角色的访问控�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 5e66eede1ad34c761e9ddb6e8d39ea9ca1543940
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d72dfbf7a4051a9b98951beb8f2b25300f26122f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774048"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467709"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
@@ -26,11 +26,13 @@ Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执�
 - [设备和应用管理分配的角色详情](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [设备和应用管理角色分配](intune-rbac-deviceandappmanagementroleassignment.md)
 - [设备和应用管理角色定义](intune-rbac-deviceandappmanagementroledefinition.md)
+- [Rbac 应用程序多个](intune-rbac-rbacapplicationmultiple.md)
 - [资源操作](intune-rbac-resourceaction.md)
 - [资源操作](intune-rbac-resourceoperation.md)
 - [角色分配](intune-rbac-roleassignment.md)
 - [角色分配范围类型](intune-rbac-roleassignmentscopetype.md)
 - [角色定义](intune-rbac-roledefinition.md)
+- [角色管理](intune-rbac-rolemanagement.md)
 - [角色权限](intune-rbac-rolepermission.md)
 - [角色范围标记](intune-rbac-rolescopetag.md)
 - [角色作用域标记自动分配](intune-rbac-rolescopetagautoassignment.md)

@@ -1,18 +1,20 @@
 ---
 title: deviceManagementApplicabilityRuleOsEdition 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6222c6f672ce8401790acdeebff1db45ae17c63
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 754d70f3f383bb90c7de83931b99a90902bf7ba2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792029"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469312"
 ---
 # <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>deviceManagementApplicabilityRuleOsEdition 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: diagnosticDataSubmissionMode 枚举类型
 description: 允许设备发送诊断和使用遥测数据，如 Watson。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5c1a9e22be20c06b92201dae2b29c43b48166ffe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 97fb396b301fc6e51a2fb4c262649c22e4e2b8e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791973"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469176"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

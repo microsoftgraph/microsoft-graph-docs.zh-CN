@@ -1,18 +1,20 @@
 ---
 title: managementAgentType 枚举类型
 description: 管理代理类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e6b10c92a2c09505d1e3c5031f1d9046cfa56cb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 34783f2c586e192d62cdeb0018b82e2df100c958
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769008"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466241"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: userExperienceAnalyticsOverview 资源类型
 description: User experience analytics 概述实体包含所有类别的总分数和每个指标的分数和见解。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 306c6c9e2ca1903c2bd16012dba3b78e1c906cd6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 56ab161a77f21d06c034322a4daa84c5880db0da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783765"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464984"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: iosEduCertificateSettings 资源类型
 description: 适用于 iOS EDU 的受信任的根和 PFX 证书。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f772ee8f484b2b8bc42a6ed48298dc5a17016afc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b7c3c545f65ffd019d4d3eefe672f9a665bbd41f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463016"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

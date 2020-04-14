@@ -1,18 +1,20 @@
 ---
 title: iosVppAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS APP 移动应用的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a72f1876d0d0dcd181aee7a9b0322f372838377
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a8393b4da0b4c31f2e0bfd455f6eeb6f1b51dea8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769568"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460592"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

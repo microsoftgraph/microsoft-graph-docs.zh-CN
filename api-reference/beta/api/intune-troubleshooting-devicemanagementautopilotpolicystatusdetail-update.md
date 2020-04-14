@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementAutopilotPolicyStatusDetail
 description: 更新 deviceManagementAutopilotPolicyStatusDetail 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c3c94dcde401fb4917171e97b18995bf2c6cf07
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d5b1d364bdfbbbdde7088cb8f7150665bb03392a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800198"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467119"
 ---
 # <a name="update-devicemanagementautopilotpolicystatusdetail"></a>更新 deviceManagementAutopilotPolicyStatusDetail
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +101,6 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

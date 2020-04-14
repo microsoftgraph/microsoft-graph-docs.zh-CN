@@ -1,18 +1,20 @@
 ---
 title: androidManagedStoreWebApp 资源类型
 description: 包含配置为通过托管 Android 应用商店分发的 web 应用程序的属性和继承的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a622f8982763d88e6a6e36a3905f03602d6d6a2e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 764cb331805b3e51eba16e00dbb0b0d2634b288f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462608"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>androidManagedStoreWebApp 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42799274"
 |[列出 androidManagedStoreWebApps](../api/intune-apps-androidmanagedstorewebapp-list.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)集合|列出[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性和关系。|
 |[获取 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-get.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|读取[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性和关系。|
 |[创建 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-create.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|创建新的[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象。|
-|[删除 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|None|删除[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)。|
+|[删除 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|无|删除[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)。|
 |[更新 androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-update.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|更新[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -37,7 +39,7 @@ ms.locfileid: "42799274"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -60,6 +62,7 @@ ms.locfileid: "42799274"
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)集合|对此企业可见的曲目。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 ## <a name="relationships"></a>关系
@@ -114,6 +117,13 @@ ms.locfileid: "42799274"
   "appStoreUrl": "String",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "String",
+      "trackAlias": "String"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```

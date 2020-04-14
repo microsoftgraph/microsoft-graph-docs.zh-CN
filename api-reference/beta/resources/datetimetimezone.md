@@ -3,14 +3,14 @@ title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Normal
 doc_type: resourcePageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 9ffbc319700fd871bd3f27af9eaaaf85cdaf1ffa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 592e8cecccdf8d1514515c4b67a9517352f5a643
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507294"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463058"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42507294"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|dateTime|String|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如，"2019-04-16T09：00： 00"。|
+|dateTime|字符串|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如，"2019-04-16T09：00： 00"。|
 |timeZone|String|表示时区，例如“太平洋标准时间”。 有关可能值，请参阅下文。|
 
 通常，**timeZone** 属性_可以_ 设置为 [Windows 当前支持的任意时区](/windows-hardware/manufacture/desktop/default-time-zones)，以及[日历 API 支持的其他时区](#additional-time-zones)。

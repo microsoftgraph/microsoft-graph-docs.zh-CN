@@ -2,19 +2,19 @@
 title: 更新 mailSearchFolder
 description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 08a4ad5a7a846689e70f2da4bdd50f8d16218f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f99c4125cd64f02421df01692b1dc19ee7c6605
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456990"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464244"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,8 +48,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | 布尔 | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索，而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | 布尔值 | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索，而不是`false`指应改为进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应

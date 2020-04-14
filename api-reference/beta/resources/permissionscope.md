@@ -4,17 +4,17 @@ description: 表示 OAuth 2.0 委派的权限范围。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 684f08be52b453922d58919e589a7888007deefb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 725fe0c65fd05752cd6f862291efcffbcf3d22c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521951"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469064"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

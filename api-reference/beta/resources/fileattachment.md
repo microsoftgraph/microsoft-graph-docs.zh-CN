@@ -4,13 +4,13 @@ description: 附加到事件的文件（如文本文件或 Word 文档）
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+author: svpsiva
+ms.openlocfilehash: 9eb0d5e3a40c27e4f7b7b6662d7ae0b8e3bcef93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926797"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460228"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "42926797"
 派生自 [附件](attachment.md)。
 
 > [!NOTE]
-> 在将文件内容分配给**contentBytes**之前，请务必在 base64 中对文件内容进行编码。
+> 确保先使用 base64 为文件内容编码，然后再将其分配到 **contentBytes**。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -38,7 +38,7 @@ ms.locfileid: "42926797"
 |[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentBytes|Edm.Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|

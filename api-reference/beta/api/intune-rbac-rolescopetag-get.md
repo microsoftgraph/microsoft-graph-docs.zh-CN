@@ -1,18 +1,20 @@
 ---
 title: 获取 roleScopeTag
 description: 读取 roleScopeTag 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6707b24b4bdc7d0e15ee705717974c41d7a2849e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f789f363811648a75743d1133ae09977d94d3540
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801591"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463605"
 ---
 # <a name="get-rolescopetag"></a>获取 roleScopeTag
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

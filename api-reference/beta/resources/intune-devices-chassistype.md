@@ -1,18 +1,20 @@
 ---
 title: chassisType 枚举类型
 description: 底盘类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 149499046387db3fb0954c9038d09f48aa660fbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fcc964a2b78fafc94fab3adcd081083cf4047152
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785117"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465171"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

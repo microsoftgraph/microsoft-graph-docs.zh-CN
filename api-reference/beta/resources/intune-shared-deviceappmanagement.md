@@ -1,18 +1,20 @@
 ---
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94d2e83f82fd4659d24b3f5047aac6e0aaac822c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a4aefd4db0b85b051a4528aedf68f2ffabe400c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771360"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463335"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

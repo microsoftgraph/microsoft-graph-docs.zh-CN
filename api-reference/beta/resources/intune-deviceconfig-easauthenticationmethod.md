@@ -1,18 +1,20 @@
 ---
 title: easAuthenticationMethod 枚举类型
 description: Exchange 主动同步身份验证方法。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e30e61f7283e0eb03ded48fceb151a2143afdb2b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4bdb64ddf0959353b5f9da12da9450460a78a37
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791938"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469116"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

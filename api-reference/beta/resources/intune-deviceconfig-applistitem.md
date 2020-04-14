@@ -1,18 +1,20 @@
 ---
 title: appListItem 资源类型
 description: 表示托管应用程序列表中的应用
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7cde9f58fd7deb66fb30f871d1ff7d0968835a40
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a34b8dcfbf3912d5b2a816ddfce6af49596b869
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795924"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469957"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42795924"
 |name|字符串|应用程序名称|
 |publisher|String|应用程序发布者|
 |appStoreUrl|String|应用程序的应用商店 URL|
-|appId|String|应用程序或应用程序的捆绑标识符|
+|appId|String|应用程序的捆绑包标识符|
 
 ## <a name="relationships"></a>关系
 无

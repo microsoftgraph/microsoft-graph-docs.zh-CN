@@ -1,18 +1,20 @@
 ---
 title: windowsKioskAppConfiguration 资源类型
 description: 用于标识展台配置的应用程序信息的应用程序基类
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cf983eaee29e9ff54a9cbe5b95b533604b6c8f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b92cfb6cd931e1a8ea8e829ee5e9fd96ae569dfb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786437"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466828"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: deviceCompliancePolicyAssignment 资源类型
 description: 设备符合性策略分配。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e1fd9bd3ed5ee2e1e86b3dffa2cf152dab60e60
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0732cd8314e6eeb4fb7afc30b7c7fe3d705d07e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793343"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469543"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

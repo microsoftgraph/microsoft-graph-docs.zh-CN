@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: 读取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e16456aabf353bbc819d9c0dc93b819d416dc49
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 006a9388c6c5b73bac553740b3ec68b516c5354d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799757"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463080"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>获取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 242
   }
 }
 ```
-
 
 
 

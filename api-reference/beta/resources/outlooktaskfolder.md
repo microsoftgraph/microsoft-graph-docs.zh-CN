@@ -1,20 +1,20 @@
 ---
 title: outlookTaskFolder 资源类型
 description: '包含 Outlook 任务的文件夹（outlookTask 对象的集合）。 '
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 094c8f9fc6489f081f93d5a6e1ece02857884910
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 426b1478a4b6cb4971d52f91dfeb8faea274c794
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522079"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463215"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42522079"
 |:---------------|:--------|:----------|
 |changeKey|String|任务文件夹的版本。|
 |id|String|任务文件夹的标识符，在用户的邮箱中是唯一的。 只读。|
-|isDefaultFolder|布尔|如此如果该文件夹是默认的任务文件夹。|
+|isDefaultFolder|布尔值|如此如果该文件夹是默认的任务文件夹。|
 |name|字符串|任务文件夹的名称。|
 |parentGroupKey|Guid|任务文件夹的父组的唯一 GUID 标识符。|
 
@@ -51,7 +51,7 @@ ms.locfileid: "42522079"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务文件夹定义的多值扩展属性的集合。 只读。 可为空。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|为任务文件夹定义的单值扩展属性的集合。 只读。 可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|为任务文件夹定义的单值扩展属性的集合。 只读。 可为 Null。|
 |任务|[outlookTask](outlooktask.md) 集合|此任务文件夹中的任务。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

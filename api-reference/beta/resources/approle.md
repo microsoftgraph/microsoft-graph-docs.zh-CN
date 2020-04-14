@@ -1,20 +1,20 @@
 ---
 title: appRole 资源类型
-description: 表示可能由调用其他应用程序的客户端应用程序请求的应用程序角色，或可用于向指定的应用程序角色中的用户或组分配应用程序的应用程序角色。 ServicePrincipal 实体和 application 实体的**appRoles**属性是**appRole**的集合。
+description: 表示应用程序角色。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 059eeafd16544befe4a51a749fd83f33f18b52bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 8ac192372264ac09192d831213115143d6274b08
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467971"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +23,8 @@ ms.locfileid: "42508245"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String 集合|指定是否可以通过设置为 "用户" 或将此应用程序角色定义分配给用户和组，或通过设置为 "应用程序" 或同时设置为 "应用程序" 来将此应用程序角色定义分配给用户和组。|
-|说明|String|在管理员应用分配和同意体验中显示的权限帮助文本。|
+|allowedMemberTypes|String collection|指定是否可以通过设置为 "用户" 或将此应用程序角色定义分配给用户和组，或通过设置为 "应用程序" 或同时设置为 "应用程序" 来将此应用程序角色定义分配给用户和组。|
+|description|String|在管理员应用分配和同意体验中显示的权限帮助文本。|
 |displayName|字符串|管理员同意和应用工作分配体验中显示的权限的显示名称。|
 |id|Guid|**AppRoles**集合中的唯一角色标识符。 创建新的应用程序角色时，必须提供新的 Guid 标识符。 |
 |isEnabled|Boolean|在创建或更新应用程序角色时，必须将其设置为**true** （默认值为）。 若要删除角色，必须首先将此设置为**false**。  此时，在后续调用中，可能会删除此角色。|

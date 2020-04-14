@@ -1,18 +1,20 @@
 ---
 title: windowsKioskUWPApp 资源类型
 description: 一类应用程序的基类
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c778a4a1af7ae4e4818228faf7b91a0802e663f1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bb4faa95d3b58ac52b5eda134e3c6f958557e8ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786339"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462487"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

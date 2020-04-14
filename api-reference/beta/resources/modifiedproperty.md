@@ -2,19 +2,19 @@
 title: modifiedProperty 资源类型
 description: 描述在目标系统中执行的更改。
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae34932d2c08d472f27167c02993b2ef916faae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78b2447c1bdeab986382ec2d7c5d20787c1f15e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522622"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459795"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

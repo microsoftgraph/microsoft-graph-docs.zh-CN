@@ -1,18 +1,20 @@
 ---
 title: macOSCredentialSingleSignOnExtension 资源类型
 description: 表示 macOS 设备的凭据类型单一登录扩展配置文件。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec152f59cba88c2bb3e02e5fc90aba2a8c6f94a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00466b80c1ab94f5984641b34a0a00f97e764773
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464184"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>macOSCredentialSingleSignOnExtension 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

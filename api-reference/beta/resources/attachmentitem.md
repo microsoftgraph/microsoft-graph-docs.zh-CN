@@ -2,19 +2,19 @@
 title: attachmentItem 资源类型
 description: 表示要附加的项的属性。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fa739af74f00142405ecb536346639d3a2ca9f60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7402a22665fec8716156395f4a783c804a42febb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461021"
 ---
 # <a name="attachmentitem-resource-type"></a>attachmentItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42508155"
 |attachmentType|String| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
 |contentType|String|附件中的数据的性质。 可选。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。 可选。|
-|name|String|附件的显示名称。 它可以是描述性字符串，不必是实际的文件名。 必填。|
+|name|String|附件的显示名称。 它可以是描述性字符串，不必是实际的文件名。 必需。|
 |size|Int64|附件大小，以字节为单位。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式

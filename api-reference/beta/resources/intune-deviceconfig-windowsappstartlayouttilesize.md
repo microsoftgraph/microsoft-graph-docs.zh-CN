@@ -1,18 +1,20 @@
 ---
 title: windowsAppStartLayoutTileSize 枚举类型
 description: "\"开始\" 布局中 Windows 应用的磁贴大小。"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ffe5a2f6fa59f90958365193a9ca01fff245f9bb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2a5918c251b03bbaf7b9b5d5cfcde5fd58df6309
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467723"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

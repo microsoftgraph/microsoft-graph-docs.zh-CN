@@ -1,20 +1,20 @@
 ---
 title: 创建 outlookTaskFolder
 description: 在指定的 outlookTaskGroup 下创建 Outlook 任务文件夹。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d2a502f8675d752152c036d020b6999a5de887b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05a0c3052114bcc1817a43f8476b4214da05ee67
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456101"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468097"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementExchangeOnPremisesPolicy
 description: 更新 deviceManagementExchangeOnPremisesPolicy 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e7d0fbeedf2cb8baf0e63a095a5c1a88c8d8ac7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 73fcc14278fa18b4f924abfb9025453c3465fda1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802886"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463662"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>更新 deviceManagementExchangeOnPremisesPolicy
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -129,7 +131,6 @@ Content-Length: 714
   ]
 }
 ```
-
 
 
 

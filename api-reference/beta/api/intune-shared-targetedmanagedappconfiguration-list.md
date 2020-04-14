@@ -1,18 +1,20 @@
 ---
 title: 列出 targetedManagedAppConfigurations
 description: 列出 targetedManagedAppConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f17e05692ee8933b21f044d8ecd1ea814a705467
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66962de7861d717ee73ba73c32acafa74fcfb753
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800618"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465306"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>列出 targetedManagedAppConfigurations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -95,7 +97,6 @@ Content-Length: 731
   ]
 }
 ```
-
 
 
 

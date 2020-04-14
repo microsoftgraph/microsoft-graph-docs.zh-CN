@@ -2,23 +2,23 @@
 title: persistentBrowserSessionControl 资源类型
 description: 用于定义是否保持 cookie 的会话控制。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d46ffa5cc3f0eee423b4800ee13f19677bf7c41f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 151259c98330c1319e71c8d9b9d44b1e9183f7b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521944"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469057"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于定义是否保持 cookie 的会话控制。 Inehrits 来自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于定义是否保持 cookie 的会话控制。 继承自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 

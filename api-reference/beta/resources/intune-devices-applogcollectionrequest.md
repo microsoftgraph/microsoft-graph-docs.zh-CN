@@ -1,18 +1,20 @@
 ---
 title: appLogCollectionRequest 资源类型
 description: AppLogCollectionRequest 实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29736e183237d284dfd7eddeff062607157fe212
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8b5acf4b7cc3a69e30d7b380c23e89d92ce9665
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465247"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ AppLogCollectionRequest 实体。
 |[列出 appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)集合|列出[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象的属性和关系。|
 |[获取 appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|读取[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象的属性和关系。|
 |[创建 appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|创建新的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。|
-|[删除 appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|None|删除[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)。|
+|[删除 appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|无|删除[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)。|
 |[更新 appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|更新[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象的属性。|
 |[createDownloadUrl 操作](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|尚未记录|
 

@@ -1,18 +1,20 @@
 ---
 title: macOSCustomAppConfiguration 资源类型
 description: 本主题提供由 macOSCustomAppConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a051045970a6d90630d6a98482f41fcd816453f2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 92be4ea9686f6cf615411a0c20c2f522cf88912f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790291"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464169"
 ---
 # <a name="macoscustomappconfiguration-resource-type"></a>macOSCustomAppConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42790291"
 |[列出 macOSCustomAppConfigurations](../api/intune-deviceconfig-macoscustomappconfiguration-list.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)集合|列出[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性和关系。|
 |[获取 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-get.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|读取[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性和关系。|
 |[创建 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-create.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|创建新的[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象。|
-|[删除 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-delete.md)|None|删除[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)。|
+|[删除 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-delete.md)|无|删除[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)。|
 |[更新 macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-update.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|更新[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -43,7 +45,7 @@ ms.locfileid: "42790291"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |bundleId|String|目标的捆绑包 id。|

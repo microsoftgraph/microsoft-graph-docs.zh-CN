@@ -1,18 +1,20 @@
 ---
 title: 创建 managedAppProtectionPolicySetItem
 description: 创建新的 managedAppProtectionPolicySetItem 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ccb1820961b41aceee695cf05fe98c004cd94adc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ebcb8db1aa2a12073cd2f2c508125dd84cf994a2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802284"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461756"
 ---
 # <a name="create-managedappprotectionpolicysetitem"></a>创建 managedAppProtectionPolicySetItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -113,7 +115,6 @@ Content-Length: 561
   "targetedAppManagementLevels": "Targeted App Management Levels value"
 }
 ```
-
 
 
 

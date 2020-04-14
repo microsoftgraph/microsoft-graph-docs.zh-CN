@@ -1,18 +1,20 @@
 ---
 title: configurationManagerActionResult 资源类型
 description: ConfigurationManager 操作的结果
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: de187585e7e8dd74f4495d7143030e30acf46c4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5c5450eb4178181d7bbf2c76bd978e91cbdf0cb2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785082"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465080"
 ---
 # <a name="configurationmanageractionresult-resource-type"></a>configurationManagerActionResult 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

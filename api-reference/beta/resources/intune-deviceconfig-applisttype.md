@@ -1,18 +1,20 @@
 ---
 title: appListType 枚举类型
 description: 合规性应用程序列表的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 172908882d6a9efd03d9645e8a562a70622fea12
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 61999950fbf9a54a2d93576fe77d950e30b8b561
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469950"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

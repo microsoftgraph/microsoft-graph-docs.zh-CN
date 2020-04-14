@@ -2,15 +2,15 @@
 title: rbacApplicationMultiple 资源类型
 description: 角色管理导航属性
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c89b9e12121fc5c3183629b6349d04d5dd434cab
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 6450852f63b08b6413681579e77850488106e3c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462225"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>rbacApplicationMultiple 资源类型
 

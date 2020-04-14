@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementDomainJoinConnector
 description: 删除 deviceManagementDomainJoinConnector。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dd8dd22f475c9dfe993450cda75def534a77314
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f84d0d38c7b52d3d9261468d87476b16c3596ba0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803103"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462636"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>删除 deviceManagementDomainJoinConnector
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

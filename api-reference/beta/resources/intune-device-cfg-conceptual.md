@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b97f69f16fef9b39213b30942049300450a8155
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797246"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463513"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -36,6 +36,7 @@ ms.locfileid: "42797246"
 - [Android 设备所有者证书配置文件库](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Android 设备所有者合规性策略](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Android 设备所有者派生的凭据身份验证配置](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Android 设备所有者企业版 Wi-fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android 设备所有者全局代理](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -107,7 +108,9 @@ ms.locfileid: "42797246"
 - [应用列表项](intune-deviceconfig-applistitem.md)
 - [应用列表类型](intune-deviceconfig-applisttype.md)
 - [应用保险箱应用程序控制类型](intune-deviceconfig-applockerapplicationcontroltype.md)
+- [Apple 应用程序列表项](intune-deviceconfig-appleapplistitem.md)
 - [Apple 设备功能配置基础](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
+- [Apple 加急签入配置库](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Apple 使用者名称格式](intune-deviceconfig-applesubjectnameformat.md)
 - [Apple VPN 始终启用配置](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Apple VPN 配置](intune-deviceconfig-applevpnconfiguration.md)
@@ -241,6 +244,9 @@ ms.locfileid: "42797246"
 - [组策略定义类类型](intune-grouppolicy-grouppolicydefinitionclasstype.md)
 - [组策略定义文件](intune-grouppolicy-grouppolicydefinitionfile.md)
 - [组策略定义值](intune-grouppolicy-grouppolicydefinitionvalue.md)
+- [组策略操作](intune-grouppolicy-grouppolicyoperation.md)
+- [组策略操作状态](intune-grouppolicy-grouppolicyoperationstatus.md)
+- [组策略操作类型](intune-grouppolicy-grouppolicyoperationtype.md)
 - [组策略演示文稿](intune-grouppolicy-grouppolicypresentation.md)
 - [组策略演示文稿复选框](intune-grouppolicy-grouppolicypresentationcheckbox.md)
 - [组策略演示文稿组合框](intune-grouppolicy-grouppolicypresentationcombobox.md)
@@ -262,6 +268,9 @@ ms.locfileid: "42797246"
 - [组策略类型](intune-grouppolicy-grouppolicytype.md)
 - [组策略已上传类别](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [组策略已上传定义](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [组策略已上载定义文件](intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
+- [组策略已上载定义文件状态](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
+- [组策略上传的语言文件](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [组策略上传的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [哈希算法](intune-deviceconfig-hashalgorithms.md)
 - [墨迹访问设置](intune-deviceconfig-inkaccesssetting.md)
@@ -282,6 +291,7 @@ ms.locfileid: "42797246"
 - [iOS EDU 设备配置](intune-deviceconfig-iosedudeviceconfiguration.md)
 - [iOS 教育版设备配置](intune-deviceconfig-ioseducationdeviceconfiguration.md)
 - [iOS 企业版 Wi-Fi 配置](intune-deviceconfig-iosenterprisewificonfiguration.md)
+- [iOS 加急签入配置](intune-deviceconfig-iosexpeditedcheckinconfiguration.md)
 - [iOS 常规设备配置](intune-deviceconfig-iosgeneraldeviceconfiguration.md)
 - [iOS 主屏幕应用](intune-deviceconfig-ioshomescreenapp.md)
 - [iOS 主屏幕文件夹](intune-deviceconfig-ioshomescreenfolder.md)

@@ -1,18 +1,20 @@
 ---
 title: managedDeviceEnrollmentFailureTrends 函数
 description: "\"注册失败趋势\" 报告的元数据"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20c9701f2d21414a37b4c778d87aa1d237f12d88
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 633ac84c7c37477ebb31d7b9465e9e91a83f6cdb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800674"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470302"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>managedDeviceEnrollmentFailureTrends 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -72,7 +74,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

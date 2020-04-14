@@ -1,18 +1,20 @@
 ---
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00c5208cc44709ca18ee98da4787eac20157c058
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7bdc0222f63a881ddf756b6fc436bbf5e49bd831
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768749"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466143"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -39,7 +41,7 @@ ms.locfileid: "42768749"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |displayName|String|管理员提供或导入的应用标题。|
-|说明|字符串|应用的说明。|
+|description|字符串|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|

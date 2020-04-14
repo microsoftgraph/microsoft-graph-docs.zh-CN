@@ -2,19 +2,19 @@
 title: authenticationDetail 资源类型
 description: 提供用户登录的身份验证详细信息，如多因素身份验证（MFA）信息和 PTA/PHS 详细信息。
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 97375635d86b1be8149035c94d183026a3d49a25
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb60959bf71713f6e90bd070d34808b46e3f83cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508085"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461004"
 ---
 # <a name="authenticationdetail-resource-type"></a>authenticationDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42508085"
 |authenticationStepDateTime|DateTimeOffset|表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
 |authenticationStepRequirement|String|满足此要求的身份验证步骤。 例如，主身份验证或多重身份验证。|
 |authenticationStepResultDetail|String|有关步骤成功或失败的原因的详细信息。 例如，阻止用户、输入欺诈代码、无电话输入超时、无法连接电话或令牌中的声明。|
-|完成|布尔|指示身份验证步骤的状态。|可能的值`succeeded`： `failed`、。|
+|完成|布尔值|指示身份验证步骤的状态。|可能的值`succeeded`： `failed`、。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -2,19 +2,19 @@
 title: orgContact：获取管理器
 description: 获取联系人的经理
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 785d204e9e2a542912bf3afcba29c52ad273cd2a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92c1077759b9e97641e1c48f6ad4e8b70af866f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456304"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467014"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

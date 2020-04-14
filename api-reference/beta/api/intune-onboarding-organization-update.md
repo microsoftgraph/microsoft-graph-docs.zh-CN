@@ -1,18 +1,20 @@
 ---
 title: 更新组织
 description: 更新 organization 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 850bb6b57e51eecfb7da9462dafea9354d1e3952
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99bafa9aa4098700376a6281af359dfb02c77de1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802739"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463143"
 ---
 # <a name="update-organization"></a>更新组织
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -106,7 +108,6 @@ Content-Length: 541
   }
 }
 ```
-
 
 
 

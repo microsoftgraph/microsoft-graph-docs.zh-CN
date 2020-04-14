@@ -1,18 +1,20 @@
 ---
 title: androidForWorkBindStatus 枚举类型
 description: 使用 Google EMM API 的租户的绑定状态
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7cbdd8813b7bf4a6594b43aaba101e5d4170c58a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b688452a5a6e0c8d47871f06279bc22344c6508a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799401"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459243"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

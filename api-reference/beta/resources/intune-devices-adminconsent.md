@@ -1,18 +1,20 @@
 ---
 title: adminConsent 资源类型
 description: 管理员同意信息。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0f60f39c676fb8c6aca5144b2aa3b561b7cbaf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d45249024e7d3766bfedb716c151a495a92daa75
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785173"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462458"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

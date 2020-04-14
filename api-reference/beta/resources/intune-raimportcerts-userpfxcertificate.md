@@ -1,18 +1,20 @@
 ---
 title: userPFXCertificate 资源类型
 description: 封装用户的 PFX 证书所需的所有信息的实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c0b893425844c85b3beaad2416d175e4497f6e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 43dc26333b6acf6275a719e7a79c051a134610f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462375"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42774258"
 |[列出 userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)集合|列出[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性和关系。|
 |[获取 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|读取[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性和关系。|
 |[创建 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。|
-|[删除 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|None|删除[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)。|
+|[删除 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|无|删除[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)。|
 |[更新 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。|
 
 ## <a name="properties"></a>属性

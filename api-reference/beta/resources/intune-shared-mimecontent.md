@@ -1,18 +1,20 @@
 ---
 title: mimeContent 资源类型
 description: 包含通用 MIME 内容的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fc230ab7644724ca971639c98394ebc256c1194
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 86537f6d93f2ff50c212105fce3f4fb91f137184
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466164"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

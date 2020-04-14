@@ -2,19 +2,19 @@
 title: 'message: createReplyAll'
 description: '创建 "全部答复" 邮件的草稿，以包含注释或更新任何邮件属性。 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc4e92aa39ba93bdba6de7412e5a3a94156b7a3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6280c3f8272ef3150f0f44836fafda8e560189ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466455"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

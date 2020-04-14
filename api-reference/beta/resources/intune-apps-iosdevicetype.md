@@ -1,18 +1,20 @@
 ---
 title: iosDeviceType 资源类型
 description: 包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c842d27d3113210d96479388d2395b24dea8f123
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cfe7f7e0340fbbe8c223694a172b1a77986863e6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798124"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459066"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

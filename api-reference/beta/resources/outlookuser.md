@@ -1,20 +1,20 @@
 ---
 title: outlookUser 资源类型
 description: 表示用户可用的 Outlook 服务。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: eadd5947a03fce69f790e2e9f0a4d738078002cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4b83144384eb265c08f3586a0b3a573375248c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463201"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,8 +44,8 @@ ms.locfileid: "42522065"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) 集合| 为用户定义的类别列表。 | 
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 用户的 Outlook 任务文件夹。 只读。 可为 NULL。|
-|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)集合| 用户的 Outlook 任务组。 只读。 可为 NULL。|
+|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 用户的 Outlook 任务文件夹。 只读。 可为 Null。|
+|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)集合| 用户的 Outlook 任务组。 只读。 可为 Null。|
 |任务|[outlookTask](outlooktask.md) 集合| 用户的 Outlook 任务。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

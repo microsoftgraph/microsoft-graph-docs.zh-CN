@@ -1,20 +1,20 @@
 ---
 title: 列出 taskFolders
 description: 获取特定 outlookTaskGroup 中的 Outlook 任务文件夹。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 454d73604a3b74b785ad9e5dcecc7379a2204748
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4c08947189c4f43b478dfab6426291973daf241
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456117"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468112"
 ---
 # <a name="list-taskfolders"></a>列出 taskFolders
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

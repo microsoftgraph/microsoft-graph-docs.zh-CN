@@ -2,19 +2,19 @@
 title: networkLocationDetail 资源类型
 description: 提供用户登录时所采用的网络的名称和类型。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6cc1aa8f25fa3f2cae4cad4a253f758ace0532b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88146920f769afbc833d53bb9455ee046f5961e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459781"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522587"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|networkNames|String 集合|提供登录时使用的网络的名称。|
+|networkNames|String collection|提供登录时使用的网络的名称。|
 |网络|网络| 提供登录时使用的网络类型。 可取值为：`intranet`、`extranet`、`namedNetwork`、`trusted`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

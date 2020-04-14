@@ -1,18 +1,20 @@
 ---
 title: iTunesPairingMode 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5d0700ab22ac0cf88ba3231494f0048dd2987a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8902edc633de5084c57ee0bb7389f0eb21838ee5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460727"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

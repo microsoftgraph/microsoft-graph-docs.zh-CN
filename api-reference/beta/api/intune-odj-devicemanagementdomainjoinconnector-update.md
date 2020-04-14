@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementDomainJoinConnector
 description: 更新 deviceManagementDomainJoinConnector 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bad7fad13a1780b185c6bac4b66bd08a5e6e92c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 28204a3f8fd81ffe526edbfb19a3e4af5851852f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803082"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461042"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>更新 deviceManagementDomainJoinConnector
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -96,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

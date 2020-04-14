@@ -2,19 +2,19 @@
 title: detailsInfo 资源类型
 description: 可以包含有关关联的标识或系统的任何信息的属性包。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 434cc659c66c94b3120431c233fe583e87bfbbbd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f62a773bb65f5d323ad6f906e53467366f7956d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507259"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463051"
 ---
 # <a name="detailsinfo-resource-type"></a>detailsInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

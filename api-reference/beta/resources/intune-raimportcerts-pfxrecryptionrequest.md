@@ -1,18 +1,20 @@
 ---
 title: pfxRecryptionRequest 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b4ed465767f74c1ed84210f8270d47bda87beac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b05aa91e1c265bdcf384163c9a2787eb39149cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774706"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462413"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>pfxRecryptionRequest 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42774706"
 |[列出 pfxRecryptionRequests](../api/intune-raimportcerts-pfxrecryptionrequest-list.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)集合|列出[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性和关系。|
 |[获取 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-get.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|读取[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性和关系。|
 |[创建 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-create.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|创建新的[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象。|
-|[删除 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|None|删除[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)。|
+|[删除 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|无|删除[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)。|
 |[更新 pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-update.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|更新[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)对象的属性。|
 
 ## <a name="properties"></a>属性

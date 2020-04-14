@@ -2,19 +2,19 @@
 title: 列出 taskGroups
 description: 获取用户邮箱中的所有 Outlook 任务组。
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 219c124c3a8932d97fe3809b88ce7f4866b91342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b53fc7c6e5dbbb4dd705bf41a2b6c4e4a8ceee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456087"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467986"
 ---
 # <a name="list-taskgroups"></a>列出 taskGroups
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

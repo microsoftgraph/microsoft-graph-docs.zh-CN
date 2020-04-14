@@ -1,20 +1,20 @@
 ---
 title: 删除 synchronizationJob
-description: 停止同步作业，并永久删除与之关联的所有状态。 同步帐户保留为。
+description: 停止同步作业，并永久删除与之关联的所有状态。
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c346b1020250cb1e46aa9f3c2b57f9fd5b1f1ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd732200b8ab02be3bffc443272a45f2da8a9a77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453021"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466432"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

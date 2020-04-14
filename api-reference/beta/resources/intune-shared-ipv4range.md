@@ -1,18 +1,20 @@
 ---
 title: iPv4Range 资源类型
 description: IPv4 范围定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bed3b43af7203a6c1ee081156708679337e94e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3615c08c99d9d8f9220abd96f0ef5aff90b4a451
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769281"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463328"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

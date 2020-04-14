@@ -1,18 +1,20 @@
 ---
 title: mobileAppRelationshipState 资源类型
 description: 介绍 UPN 和设备 id 上下文中的子应用程序的安装状态详细信息。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c1142609c388ba7a246fe716402729a9495400
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31c96fc196de529a15c5ce69f9587dcff21d0e99
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462573"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

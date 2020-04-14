@@ -1,16 +1,16 @@
 ---
 title: appScope 资源类型
-description: '角色分配的范围决定了主体已被授予访问权限的资源集。 应用程序范围是由特定应用程序定义和理解的范围。 另一种类型的作用域是目录作用域。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 '
+description: 应用程序范围是由特定应用程序定义和理解的范围。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a996b219df124ac0c287ed4ed32658584acb6ac
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 23a3d18a8a712ddff8470d91a677f3d0f18dabf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459333"
 ---
 # <a name="appscope-resource-type"></a>appScope 资源类型
 

@@ -1,18 +1,20 @@
 ---
 title: omaSettingInteger 资源类型
 description: OMA 设置整数定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 829f73ec2d5eb205e6cacdb46ee209760334cb3a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1b0dc774d5ab95733337719014f9db93bc393d71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788441"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462986"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ OMA 设置整数定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |值|Int32|值。|
 |isReadOnly|Boolean|通过将设置为 true，则在 OMA-URI 中指定的 CSP （配置服务提供程序）将执行 get，而不是设置|

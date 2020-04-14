@@ -1,18 +1,20 @@
 ---
 title: fileEncryptionInfo 资源类型
 description: 包含业务线应用内容版本文件加密信息的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c5586b3107e8b7039df7068d0ab6b00e81bf4b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e5eaa2e993fb56eeb56b7e147963a0b8df03cae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798131"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459095"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

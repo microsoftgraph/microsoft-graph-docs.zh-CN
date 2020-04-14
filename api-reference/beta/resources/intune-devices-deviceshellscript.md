@@ -1,18 +1,20 @@
 ---
 title: deviceShellScript 资源类型
 description: Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管理程序脚本的功能。 脚本可以运行一次，也可以定期运行。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6f1fd1f5a543a3caa3e0fcbf53272ea12d4c572
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: ca4e2e2312a1caf3b61306aed3901834d0d25e5c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034788"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470669"
 ---
 # <a name="deviceshellscript-resource-type"></a>deviceShellScript 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -20,7 +22,7 @@ ms.locfileid: "43034788"
 
 Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管理程序脚本的功能。 脚本可以运行一次，也可以定期运行。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceShellScripts](../api/intune-devices-deviceshellscript-list.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)集合|列出[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象的属性和关系。|
@@ -31,11 +33,11 @@ Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管�
 |[分配操作](../api/intune-devices-deviceshellscript-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次。|
-|retryCount|Int32|脚本失败时重试脚本的次数。|
-|blockExecutionNotifications|Boolean|指示在脚本运行时是否通知用户。|
+|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
+|retryCount|Int32|脚本失败时将重试脚本的次数|
+|blockExecutionNotifications|布尔值|不通知用户正在执行的脚本|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |description|String|设备管理脚本的可选说明。|
@@ -44,10 +46,10 @@ Intune 将向客户提供在已注册的 Mac OS 设备上运行其命令行管�
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)集合|设备管理脚本的组分配的列表。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)集合|设备管理脚本的组分配的列表。|

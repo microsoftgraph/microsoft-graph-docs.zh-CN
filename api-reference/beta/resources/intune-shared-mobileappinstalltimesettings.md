@@ -1,18 +1,20 @@
 ---
 title: mobileAppInstallTimeSettings 资源类型
 description: 包含用于确定何时向设备提供应用程序以及何时在设备上安装应用程序的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 413d37ef0f672289e68e7dd8d8e2d0b6bc7d17ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 904fc60d28ce8fcca52ea8b84c81d99031ed9ee7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768504"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466127"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>mobileAppInstallTimeSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

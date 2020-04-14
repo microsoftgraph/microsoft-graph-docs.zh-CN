@@ -2,19 +2,19 @@
 title: 发起程序资源类型
 description: 描述启动设置事件的目标或内容。
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 909849775e5bf35c9a29902efbbc3975177956d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d279ce00855cb8125085e48bddf63f1b8f0e5e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461725"
 ---
 # <a name="initiator-resource-type"></a>发起程序资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

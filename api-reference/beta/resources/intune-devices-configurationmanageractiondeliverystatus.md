@@ -1,18 +1,20 @@
 ---
 title: configurationManagerActionDeliveryStatus 枚举类型
 description: Configuration Manager 设备操作的传递状态
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58dca2b1ecb5419a3f56889a55c0816f492af430
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab437ff9a7945b4bdd61b4e3e3a103e72b780e04
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785089"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465119"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>configurationManagerActionDeliveryStatus 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

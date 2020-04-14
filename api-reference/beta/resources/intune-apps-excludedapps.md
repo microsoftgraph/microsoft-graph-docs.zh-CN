@@ -1,18 +1,20 @@
 ---
 title: excludedApps 资源类型
 description: 包含已排除的 Office365 应用程序的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24813edf732d73905a6b45b9e4fe584b6312a13c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e391c713324b69747e0528285580e3300e71868
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798138"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459102"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

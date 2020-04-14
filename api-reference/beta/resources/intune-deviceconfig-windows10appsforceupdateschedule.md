@@ -1,18 +1,20 @@
 ---
 title: windows10AppsForceUpdateSchedule 资源类型
 description: 应用程序的 Windows 10 强制更新计划
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 980503e9316e5ae1d0083f2226519004fa802afd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eb590d65a6ae60eeede42b3ce6b5d422f306b8c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466310"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

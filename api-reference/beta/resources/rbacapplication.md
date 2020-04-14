@@ -2,19 +2,19 @@
 title: rbacApplication 资源类型
 description: 角色管理导航属性
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3fd03ed6bb8f3e5e3548781c29d5d9fe16fcba23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1501eb32a16073990930ecf6004946b5026ea91
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521269"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462250"
 ---
 # <a name="rbacapplication-resource-type"></a>rbacApplication 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

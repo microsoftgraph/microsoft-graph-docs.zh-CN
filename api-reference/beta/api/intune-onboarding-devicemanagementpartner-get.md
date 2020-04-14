@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceManagementPartner
 description: 读取 deviceManagementPartner 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebd1379c546324a03a7eaafcb97c4ca6dd4867ee
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 57eafe24c0739e98903d28b01e276e0ca070d07f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463633"
 ---
 # <a name="get-devicemanagementpartner"></a>获取 deviceManagementPartner
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +95,6 @@ Content-Length: 1005
   }
 }
 ```
-
 
 
 

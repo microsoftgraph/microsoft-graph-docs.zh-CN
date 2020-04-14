@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsInformationProtectionAppLockerFile
 description: 读取 windowsInformationProtectionAppLockerFile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f52ecfa1be9a63d462bba07ebc0569974338b3fd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 942309fc03c4a7ee76ff9338eaa68a03893be05c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803321"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465545"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>获取 windowsInformationProtectionAppLockerFile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +84,6 @@ Content-Length: 291
   }
 }
 ```
-
 
 
 

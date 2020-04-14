@@ -1,18 +1,20 @@
 ---
 title: androidForWorkAppConfigurationSchema 资源类型
 description: 描述 Android for Work 应用程序的自定义配置的架构。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: de969bf4a5826bc7b5e70e37fab8284e077dc3dc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f7fb75a115b6a2eb3513f42e2bc5fde96c810e8c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799665"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459280"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>androidForWorkAppConfigurationSchema 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

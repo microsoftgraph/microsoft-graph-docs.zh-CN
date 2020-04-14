@@ -4,17 +4,17 @@ description: 应用程序的基本配置文件信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 88b3ae7af8604b6092ad87f2751791f48d273a68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: fdc10ec743034f595d05c2bc6c251b7d37a2c9ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496094"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466404"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: proxiedDomain 资源类型
 description: 代理域
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdfdf1fdbea81f415633c810bd21172164f3765f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b4b2dff399888ba51008f84b76decae8d211862e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768056"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466091"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

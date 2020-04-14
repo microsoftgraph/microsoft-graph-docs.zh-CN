@@ -1,18 +1,20 @@
 ---
 title: deviceThreatProtectionLevel 枚举类型
 description: 设备威胁防护 API 的设备威胁保护级别。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aa69e2e4d2122a8611a0db6a277dbfd5085561ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b78118e624898c90e3bd2e0e4c281bf0a0a4ca41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791987"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469222"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

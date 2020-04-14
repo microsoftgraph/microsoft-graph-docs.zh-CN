@@ -1,18 +1,20 @@
 ---
 title: certificateStatus 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0044141f3538002bb5c2983cb569639f6fa9b93d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7d5280a314d442cf08161e389cccd549fce108d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798152"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459118"
 ---
 # <a name="certificatestatus-enum-type"></a>certificateStatus 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

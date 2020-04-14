@@ -1,18 +1,20 @@
 ---
 title: insightValueDouble 资源类型
 description: 用户体验分析洞察力中的价值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9894883a023a56c0cfcffb18dc7d9bd091a322ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 73877980b57b3df245893fea9df4898241fe186d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470604"
 ---
 # <a name="insightvaluedouble-resource-type"></a>insightValueDouble 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
