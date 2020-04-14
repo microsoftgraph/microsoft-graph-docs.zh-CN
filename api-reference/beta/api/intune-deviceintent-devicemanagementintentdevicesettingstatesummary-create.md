@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementIntentDeviceSettingStateSummary
 description: 创建新的 deviceManagementIntentDeviceSettingStateSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c817cc0fd8a0d8f101a3ea911e1dc733370f5c99
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 187f194080922288d36f9cb5c4a91713e61bc5d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43326925"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |settingName|String|设置的名称|
 |compliantCount|Int32|兼容设备的数量|
 |conflictCount|Int32|发生冲突的设备数|
@@ -105,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

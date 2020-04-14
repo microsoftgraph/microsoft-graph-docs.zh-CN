@@ -2,19 +2,19 @@
 title: 获取 subscribedSku
 description: 检索组织已获取的特定商业订阅。
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b1e9b3c1885fbafe9cddeef3428fe7c381333880
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5283efcd46c9c78d1e500dafd45dc590d7399d85
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453119"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43318800"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

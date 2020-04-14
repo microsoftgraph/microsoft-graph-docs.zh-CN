@@ -1,18 +1,20 @@
 ---
 title: 更新 remoteActionAudit
 description: 更新 remoteActionAudit 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49855b77f7eb2ad0b25e16dbb5387ac95898139e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7f579d5f982daa1bc1ab045cfca464a8f3b6d5f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814047"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43323449"
 ---
 # <a name="update-remoteactionaudit"></a>更新 remoteActionAudit
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,16 +53,16 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|报告 Id。|
+|id|字符串|报告 Id。|
 |deviceDisplayName|String|Intune 设备名称。|
-|userName|String|\[弃用\]请改用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|String|启动设备操作的用户的格式为 UPN。|
+|userName|字符串|\[弃用\]请改用 InitiatedByUserPrincipalName。|
+|initiatedByUserPrincipalName|字符串|启动设备操作的用户的格式为 UPN。|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`： `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `getFileVaultKey` `setDeviceName`、、、、、、、、、、、、、、、、、、、、。 `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey`|
 |requestDateTime|DateTimeOffset|发出操作的时间，以 UTC 表示。|
-|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
-|deviceIMEI|String|设备的 IMEI。|
+|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
+|deviceIMEI|字符串|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|managedDeviceId|String|操作目标。|
+|managedDeviceId|字符串|操作目标。|
 
 
 
@@ -111,7 +113,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

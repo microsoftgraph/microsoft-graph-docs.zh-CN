@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsManagementApp
 description: 读取 windowsManagementApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7edc2e99d680ecf383e46249ee8e7bae48ea546f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5524ddba642db143b53e417b01f430a9c57d1ff8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813633"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321616"
 ---
 # <a name="get-windowsmanagementapp"></a>获取 windowsManagementApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -76,7 +78,6 @@ Content-Length: 186
   }
 }
 ```
-
 
 
 

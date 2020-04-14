@@ -1,18 +1,20 @@
 ---
 title: 列出 appleUserInitiatedEnrollmentProfiles
 description: 列出 appleUserInitiatedEnrollmentProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1158b53151ccf6a75500dd9f5c08775ff05665c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3be1238d9376438071b64cfaed9adc1c14e0fb0f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43320393"
 ---
 # <a name="list-appleuserinitiatedenrollmentprofiles"></a>列出 appleUserInitiatedEnrollmentProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -88,7 +90,6 @@ Content-Length: 708
   ]
 }
 ```
-
 
 
 

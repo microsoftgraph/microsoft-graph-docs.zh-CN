@@ -1,18 +1,20 @@
 ---
 title: 获取 appleEnrollmentProfileAssignment
 description: 读取 appleEnrollmentProfileAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e205d44600d05c59adc6413240706e40ad705489
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bec014a1b1e1c15f25976c21f94b7f8c736af198
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813514"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321309"
 ---
 # <a name="get-appleenrollmentprofileassignment"></a>获取 appleEnrollmentProfileAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +80,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

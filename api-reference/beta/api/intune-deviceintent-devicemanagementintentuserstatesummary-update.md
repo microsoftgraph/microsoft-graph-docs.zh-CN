@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementIntentUserStateSummary
 description: 更新 deviceManagementIntentUserStateSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88749a89e92ffa3069c929b4e754627049491725
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f43e8499b341b30b475ed3ccc9a1954056c6bb21
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815140"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43325608"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>更新 deviceManagementIntentUserStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |conflictCount|Int32|发生冲突的用户数|
 |errorCount|Int32|错误用户数|
 |failedCount|Int32|失败的用户数|
@@ -99,7 +101,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
 
 
 

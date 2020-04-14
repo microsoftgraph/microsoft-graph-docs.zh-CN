@@ -1,18 +1,20 @@
 ---
 title: 列出 windowsManagedDevices
 description: 列出 windowsManagedDevice 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0a46964a7553730405e84a913ba4c98a8d1549
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ca68256c5a9c187c33371fa2cb4301517bf328f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813647"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321746"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8447
+Content-Length: 8509
 
 {
   "value": [
@@ -244,12 +246,12 @@ Content-Length: 8447
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
-      "processorArchitecture": "x86"
+      "processorArchitecture": "x86",
+      "specificationVersion": "Specification Version value"
     }
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 更新 userExperienceAnalyticsBaseline
 description: 更新 userExperienceAnalyticsBaseline 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99dee6b79626191aeca6ad1b91b4a9be2268ed64
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f2de10d98ff3dccd875a53a6cb11e33690c442a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814012"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43322745"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 比较基准的唯一标识符。|
+|id|字符串|User experience analytics 比较基准的唯一标识符。|
 |displayName|String|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
 |isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
@@ -95,7 +97,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

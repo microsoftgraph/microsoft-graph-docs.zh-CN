@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementIntentDeviceSettingStateSummary
 description: 更新 deviceManagementIntentDeviceSettingStateSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 875fef3c6dcf6b14725896949f5b19a0a9e8698b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 11c98bfa60a1bdcc8fc24a63d3dfe48bfb797b0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815273"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43326555"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>更新 deviceManagementIntentDeviceSettingStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |settingName|String|设置的名称|
 |compliantCount|Int32|兼容设备的数量|
 |conflictCount|Int32|发生冲突的设备数|
@@ -105,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

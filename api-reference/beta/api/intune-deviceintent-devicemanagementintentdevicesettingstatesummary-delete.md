@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementIntentDeviceSettingStateSummary
 description: 删除 deviceManagementIntentDeviceSettingStateSummary。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 800fb1465e8a3724a16e17a2ff9f6404cbc0a078
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0bfa33ab7b6996b21ae0a717a1b1f7d02949e4b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815294"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43326865"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>删除 deviceManagementIntentDeviceSettingStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 获取 userExperienceAnalyticsBaseline
 description: 读取 userExperienceAnalyticsBaseline 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3463cdbf13fb758a344c372797f6e7990acb9b1b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8c6f6bb74e0a7e4e8e90e97b1ba4959bb3a965ca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814026"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43323039"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>获取 userExperienceAnalyticsBaseline
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

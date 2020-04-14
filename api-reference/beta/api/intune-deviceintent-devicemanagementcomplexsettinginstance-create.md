@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementComplexSettingInstance
 description: 创建新的 deviceManagementComplexSettingInstance 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be2c0cbcbdabf13a55645754875ff5c72278cecd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5f89761a0cea61733c3d7873047c6de862d84f44
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42730100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43329259"
 ---
 # <a name="create-devicemanagementcomplexsettinginstance"></a>创建 deviceManagementComplexSettingInstance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,9 +56,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
-|definitionId|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
-|valueJson|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
+|id|字符串|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
+|definitionId|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
+|valueJson|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
 
 
 
@@ -93,7 +95,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementIntent
 description: 更新 deviceManagementIntent 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a86550ad6719e81b9b84d56fceabfe8351f3a9de
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 30057c5ca95b305aa749b063b8601dc0ae120382
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729204"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43327817"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,11 +55,11 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |:---|:---|:---|
 |id|字符串|意向 ID|
 |displayName|String|用户给定的显示名称|
-|说明|String|用户提供的说明|
+|description|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
-|templateId|String|创建此目的的模板的 ID （如果有）|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|templateId|字符串|创建此目的的模板的 ID （如果有）|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -105,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

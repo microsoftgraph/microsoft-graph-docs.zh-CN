@@ -1,18 +1,20 @@
 ---
 title: 获取 managedDevice
 description: 读取 managedDevice 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2acc153aef821f32205a6cd04b1331dabd00353
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0eaf878a982f4cde9858f789322b10dd2eaf1d1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43324817"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8076
+Content-Length: 8136
 
 {
   "value": {
@@ -248,11 +250,11 @@ Content-Length: 8076
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
-    "processorArchitecture": "x86"
+    "processorArchitecture": "x86",
+    "specificationVersion": "Specification Version value"
   }
 }
 ```
-
 
 
 

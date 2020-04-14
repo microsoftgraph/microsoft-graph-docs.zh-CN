@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceManagementIntents
 description: 列出 deviceManagementIntent 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2f663ff24ffeb7f4112a8c1e1a7af915ea7cb7e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ab01690e3016681462ac275e246a788445831d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729218"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43327899"
 ---
 # <a name="list-devicemanagementintents"></a>列出 deviceManagementIntents
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +84,6 @@ Content-Length: 452
   ]
 }
 ```
-
 
 
 

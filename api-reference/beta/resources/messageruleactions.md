@@ -1,20 +1,20 @@
 ---
 title: messageRuleActions 资源类型
 description: 表示适用于规则的一组操作。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 945656aa89fd5786ce4f072fe85ec196d1e6ce48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdc4b7eb03d482660883a190e145058d41381f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522664"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317507"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,14 +24,14 @@ ms.locfileid: "42522664"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | assignCategories | String 集合 | 分配给邮件的类别列表。 |
-| copyToFolder | String | 将邮件复制到其中的文件夹的 ID。 |
-| delete | 布尔 | 指示邮件是否应移动到“已删除项目”文件夹。 |
+| copyToFolder | 字符串 | 将邮件复制到其中的文件夹的 ID。 |
+| delete | Boolean | 指示邮件是否应移动到“已删除项目”文件夹。 |
 | forwardAsAttachmentTo | [recipient](recipient.md) collection | 应以附件形式接收转发邮件的收件人的电子邮件地址。 |
 | forwardTo | [recipient](recipient.md) 集合 | 应接收转发邮件的收件人的电子邮件地址。 |
-| markAsRead | 布尔 | 指示是否应将邮件标记为已读。 |
-| markImportance | String | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
+| markAsRead | Boolean | 指示是否应将邮件标记为已读。 |
+| markImportance | 字符串 | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
 | moveToFolder |  String| 邮件将移至其中的文件夹的 ID。 |
-| permanentDelete | 布尔 | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
+| permanentDelete | Boolean | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
 | redirectTo | [recipient](recipient.md) | 邮件应重定向到的电子邮件地址。 |
 | stopProcessingRules | Boolean | 指示是否应对后续规则进行评估。 |
 

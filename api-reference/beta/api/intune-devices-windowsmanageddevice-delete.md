@@ -1,18 +1,20 @@
 ---
 title: 删除 windowsManagedDevice
 description: 删除 windowsManagedDevice。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83fed761ec1655efe3b28fd68a033f41db66e94e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 82e33fb3afda0275a2211c09428ce8048911e3a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321943"
 ---
 # <a name="delete-windowsmanageddevice"></a>删除 windowsManagedDevice
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

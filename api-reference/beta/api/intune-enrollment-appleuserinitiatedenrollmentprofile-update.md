@@ -1,18 +1,20 @@
 ---
 title: 更新 appleUserInitiatedEnrollmentProfile
 description: 更新 appleUserInitiatedEnrollmentProfile 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6518f3cd17c781c9ecb1ba41865ae31ce14af1a6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 961b4f863d2617b61b5f4276ccff80184979f42e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43320307"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>更新 appleUserInitiatedEnrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +57,7 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)集合|可用注册类型选项的列表|
 |id|字符串|对象的 GUID|
 |displayName|String|配置文件的名称|
-|说明|String|配置文件的说明|
+|description|String|配置文件的说明|
 |priority|Int32|优先级，0为最高|
 |platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|设备的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
@@ -118,7 +120,6 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

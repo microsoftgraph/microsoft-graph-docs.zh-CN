@@ -1,18 +1,20 @@
 ---
 title: 删除用户
 description: 删除 user。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42bf2372deed17528b610ca719213ff2e282b9ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cda9c66123578bfeb4c662606cd38bbac3634557
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800590"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43319078"
 ---
 # <a name="delete-user"></a>删除用户
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -78,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

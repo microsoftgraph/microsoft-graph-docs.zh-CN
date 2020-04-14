@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementBooleanSettingInstance
 description: 删除 deviceManagementBooleanSettingInstance。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7368a636246f9b45e4af05d6d201c52f388e1563
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 56ea682e609ad82e359a6609e61bc2ae2b952125
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42731080"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43330306"
 ---
 # <a name="delete-devicemanagementbooleansettinginstance"></a>删除 deviceManagementBooleanSettingInstance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

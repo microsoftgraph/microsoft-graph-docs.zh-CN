@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementIntegerSettingInstance
 description: 删除 deviceManagementIntegerSettingInstance。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea82ab8ad7381b73d45c28f8393fee0193bc52e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aa9fb2107a458b2e403a8a5016b8543d29631845
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729715"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43328739"
 ---
 # <a name="delete-devicemanagementintegersettinginstance"></a>删除 deviceManagementIntegerSettingInstance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -66,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

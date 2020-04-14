@@ -1,18 +1,20 @@
 ---
 title: revokeAppleVppLicenses 操作
 description: 吊销设备的所有 Apple Vpp 许可证
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b26e866484971dc4d0538bd84c450d7b345e1803
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 67ce187ceea63eeb2abbddb4313e644b59ec0a85
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814181"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43324648"
 ---
 # <a name="revokeapplevpplicenses-action"></a>revokeAppleVppLicenses 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -67,7 +69,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

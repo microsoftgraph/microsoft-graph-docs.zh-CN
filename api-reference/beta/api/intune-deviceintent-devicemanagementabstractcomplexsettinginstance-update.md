@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementAbstractComplexSettingInstance
 description: 更新 deviceManagementAbstractComplexSettingInstance 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a132f0b1097b22c9fa57f924d9deebd71e8ccf4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9fa9188e829931cf25d27e2ca972bd03e364e23
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42731143"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43330449"
 ---
 # <a name="update-devicemanagementabstractcomplexsettinginstance"></a>更新 deviceManagementAbstractComplexSettingInstance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,10 +56,10 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
-|definitionId|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
-|valueJson|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
-|implementationId|String|此复杂设置的所选实现的定义 ID|
+|id|字符串|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
+|definitionId|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
+|valueJson|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
+|implementationId|字符串|此复杂设置的所选实现的定义 ID|
 
 
 
@@ -96,7 +98,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
 
 
 

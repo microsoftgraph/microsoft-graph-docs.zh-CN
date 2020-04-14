@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementIntentUserState
 description: 更新 deviceManagementIntentUserState 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6be0a985884131889465e18e2e3f0c80d0c53980
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fa492e9b758e95c80fae589e70fea823b4ac98f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43325767"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>更新 deviceManagementIntentUserState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,7 +54,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ID|
-|userPrincipalName|String|在设备上报告的用户主体名称|
+|userPrincipalName|字符串|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceCount|Int32|属于某个意图的用户的设备计数|
 |lastReportedDateTime|DateTimeOffset|意向报表的上次修改日期时间|
@@ -99,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

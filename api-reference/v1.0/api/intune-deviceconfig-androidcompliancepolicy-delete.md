@@ -1,16 +1,16 @@
 ---
 title: 删除 androidCompliancePolicy
 description: 删除 androidCompliancePolicy。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b31dbf7d1b79335232f8259bff8c3fbf5bfd09fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e68781d3d2403ad7b56de4419ef7fc8e042b93a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515390"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316738"
 ---
 # <a name="delete-androidcompliancepolicy"></a>删除 androidCompliancePolicy
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

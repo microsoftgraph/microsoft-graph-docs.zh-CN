@@ -1,18 +1,20 @@
 ---
 title: 创建 windowsPhone81GeneralConfiguration
 description: 创建新的 windowsPhone81GeneralConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f28e854d113e205481529a212fa0e90e0056f15
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0722942abe17ff2789e7c4997c21ffaa71d8204c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42734349"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43333636"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>创建 windowsPhone81GeneralConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,27 +56,27 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|布尔值|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
-|appsBlockCopyPaste|布尔值|指示是否阻止复制粘贴。|
-|bluetoothBlocked|布尔值|指示是否阻止蓝牙。|
-|cameraBlocked|布尔值|指示是否阻止照相机。|
-|cellularBlockWifiTethering|布尔值|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
+|applyOnlyToWindowsPhone81|Boolean|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
+|appsBlockCopyPaste|Boolean|指示是否阻止复制粘贴。|
+|bluetoothBlocked|Boolean|指示是否阻止蓝牙。|
+|cameraBlocked|Boolean|指示是否阻止照相机。|
+|cellularBlockWifiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
-|diagnosticDataBlockSubmission|布尔值|指示是否阻止诊断数据提交。|
+|diagnosticDataBlockSubmission|Boolean|指示是否阻止诊断数据提交。|
 |emailBlockAddingAccounts|Boolean|指示是否阻止自定义电子邮件帐户。|
-|locationServicesBlocked|布尔值|指示是否阻止位置服务。|
-|microsoftAccountBlocked|布尔值|指示是否阻止使用 Microsoft 帐户。|
-|nfcBlocked|布尔值|指示是否阻止近场通信。|
+|locationServicesBlocked|Boolean|指示是否阻止位置服务。|
+|microsoftAccountBlocked|Boolean|指示是否阻止使用 Microsoft 帐户。|
+|nfcBlocked|Boolean|指示是否阻止近场通信。|
 |passwordBlockSimple|Boolean|指示是否阻止同步日历。|
 |passwordExpirationDays|Int32|密码过期前的天数。|
 |passwordMinimumLength|Int32|密码的最小长度。|
@@ -83,13 +85,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|布尔值|指示是否需要密码。|
-|screenCaptureBlocked|布尔值|指示是否阻止屏幕截图。|
-|storageBlockRemovableStorage|布尔值|指示是否阻止可移动存储。|
-|storageRequireEncryption|布尔值|指示是否需要加密。|
-|webBrowserBlocked|布尔值|指示是否阻止 Web 浏览器。|
-|wifiBlocked|布尔值|指示是否阻止 Wi-Fi。|
-|wifiBlockAutomaticConnectHotspots|布尔值|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
+|passwordRequired|Boolean|指示是否需要密码。|
+|screenCaptureBlocked|Boolean|指示是否阻止屏幕截图。|
+|storageBlockRemovableStorage|Boolean|指示是否阻止可移动存储。|
+|storageRequireEncryption|Boolean|指示是否需要加密。|
+|webBrowserBlocked|Boolean|指示是否阻止 Web 浏览器。|
+|wifiBlocked|Boolean|指示是否阻止 Wi-Fi。|
+|wifiBlockAutomaticConnectHotspots|Boolean|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
 |wifiBlockHotspotReporting|Boolean|指示是否阻止 Wi-Fi 热点报告。 如果 Wi-Fi 被阻止，没有任何影响。|
 |windowsStoreBlocked|Boolean|指示是否阻止 Windows 应用商店。|
 
@@ -256,7 +258,6 @@ Content-Length: 2498
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 
