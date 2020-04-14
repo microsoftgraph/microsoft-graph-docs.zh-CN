@@ -1,32 +1,34 @@
 ---
 title: internetExplorerMessageSetting 枚举类型
 description: 在切换到 Internet Explorer 之前，边缘会显示什么消息。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a7f1875e758ba815786a7941678367980f3db3d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a404f972985d0202037cbd1deae01cc03de497b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791707"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444258"
 ---
-# <a name="internetexplorermessagesetting-enum-type"></a><span data-ttu-id="824ce-103">internetExplorerMessageSetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="824ce-103">internetExplorerMessageSetting enum type</span></span>
+# <a name="internetexplorermessagesetting-enum-type"></a><span data-ttu-id="5b31f-103">internetExplorerMessageSetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="5b31f-103">internetExplorerMessageSetting enum type</span></span>
 
-> <span data-ttu-id="824ce-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="824ce-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="5b31f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b31f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="824ce-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="824ce-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5b31f-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5b31f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="824ce-106">在切换到 Internet Explorer 之前，边缘会显示什么消息。</span><span class="sxs-lookup"><span data-stu-id="824ce-106">What message will be displayed by Edge before switching to Internet Explorer.</span></span>
+> <span data-ttu-id="5b31f-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5b31f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="824ce-107">成员</span><span class="sxs-lookup"><span data-stu-id="824ce-107">Members</span></span>
-|<span data-ttu-id="824ce-108">成员</span><span class="sxs-lookup"><span data-stu-id="824ce-108">Member</span></span>|<span data-ttu-id="824ce-109">值</span><span class="sxs-lookup"><span data-stu-id="824ce-109">Value</span></span>|<span data-ttu-id="824ce-110">说明</span><span class="sxs-lookup"><span data-stu-id="824ce-110">Description</span></span>|
+<span data-ttu-id="5b31f-107">在切换到 Internet Explorer 之前，边缘会显示什么消息。</span><span class="sxs-lookup"><span data-stu-id="5b31f-107">What message will be displayed by Edge before switching to Internet Explorer.</span></span>
+
+## <a name="members"></a><span data-ttu-id="5b31f-108">成员</span><span class="sxs-lookup"><span data-stu-id="5b31f-108">Members</span></span>
+|<span data-ttu-id="5b31f-109">成员</span><span class="sxs-lookup"><span data-stu-id="5b31f-109">Member</span></span>|<span data-ttu-id="5b31f-110">值</span><span class="sxs-lookup"><span data-stu-id="5b31f-110">Value</span></span>|<span data-ttu-id="5b31f-111">说明</span><span class="sxs-lookup"><span data-stu-id="5b31f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="824ce-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="824ce-111">notConfigured</span></span>|<span data-ttu-id="824ce-112">0</span><span class="sxs-lookup"><span data-stu-id="824ce-112">0</span></span>|<span data-ttu-id="824ce-113">未配置。</span><span class="sxs-lookup"><span data-stu-id="824ce-113">Not configured.</span></span>|
-|<span data-ttu-id="824ce-114">禁用</span><span class="sxs-lookup"><span data-stu-id="824ce-114">disabled</span></span>|<span data-ttu-id="824ce-115">1</span><span class="sxs-lookup"><span data-stu-id="824ce-115">1</span></span>|<span data-ttu-id="824ce-116">禁用.</span><span class="sxs-lookup"><span data-stu-id="824ce-116">Disabled.</span></span>|
-|<span data-ttu-id="824ce-117">enabled</span><span class="sxs-lookup"><span data-stu-id="824ce-117">enabled</span></span>|<span data-ttu-id="824ce-118">双面</span><span class="sxs-lookup"><span data-stu-id="824ce-118">2</span></span>|<span data-ttu-id="824ce-119">了.</span><span class="sxs-lookup"><span data-stu-id="824ce-119">Enabled.</span></span>|
-|<span data-ttu-id="824ce-120">keepGoing</span><span class="sxs-lookup"><span data-stu-id="824ce-120">keepGoing</span></span>|<span data-ttu-id="824ce-121">第三章</span><span class="sxs-lookup"><span data-stu-id="824ce-121">3</span></span>|<span data-ttu-id="824ce-122">KeepGoing.</span><span class="sxs-lookup"><span data-stu-id="824ce-122">KeepGoing.</span></span>|
+|<span data-ttu-id="5b31f-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="5b31f-112">notConfigured</span></span>|<span data-ttu-id="5b31f-113">0</span><span class="sxs-lookup"><span data-stu-id="5b31f-113">0</span></span>|<span data-ttu-id="5b31f-114">未配置。</span><span class="sxs-lookup"><span data-stu-id="5b31f-114">Not configured.</span></span>|
+|<span data-ttu-id="5b31f-115">禁用</span><span class="sxs-lookup"><span data-stu-id="5b31f-115">disabled</span></span>|<span data-ttu-id="5b31f-116">1</span><span class="sxs-lookup"><span data-stu-id="5b31f-116">1</span></span>|<span data-ttu-id="5b31f-117">禁用.</span><span class="sxs-lookup"><span data-stu-id="5b31f-117">Disabled.</span></span>|
+|<span data-ttu-id="5b31f-118">enabled</span><span class="sxs-lookup"><span data-stu-id="5b31f-118">enabled</span></span>|<span data-ttu-id="5b31f-119">双面</span><span class="sxs-lookup"><span data-stu-id="5b31f-119">2</span></span>|<span data-ttu-id="5b31f-120">了.</span><span class="sxs-lookup"><span data-stu-id="5b31f-120">Enabled.</span></span>|
+|<span data-ttu-id="5b31f-121">keepGoing</span><span class="sxs-lookup"><span data-stu-id="5b31f-121">keepGoing</span></span>|<span data-ttu-id="5b31f-122">第三章</span><span class="sxs-lookup"><span data-stu-id="5b31f-122">3</span></span>|<span data-ttu-id="5b31f-123">KeepGoing.</span><span class="sxs-lookup"><span data-stu-id="5b31f-123">KeepGoing.</span></span>|
 
 
 
