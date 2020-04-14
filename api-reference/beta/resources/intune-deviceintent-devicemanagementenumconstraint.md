@@ -1,18 +1,20 @@
 ---
 title: deviceManagementEnumConstraint 资源类型
 description: 强制实施设置值的约束来自允许的一组字符串
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab333cc5b55e588ef01257da02f0832edbf02a30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a118fd250788ba00baf50495f346485572f750aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448328"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>deviceManagementEnumConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,20 +1,20 @@
 ---
 title: 邮件：取消订阅
 description: 代表已登录用户提交电子邮件请求，以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e3f3378f813bce61f5ecef5b6003fb10fc680d59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aed6dbda043fa00d5eb7f8f72686fb50087d5867
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448477"
 ---
 # <a name="message-unsubscribe"></a>邮件：取消订阅
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

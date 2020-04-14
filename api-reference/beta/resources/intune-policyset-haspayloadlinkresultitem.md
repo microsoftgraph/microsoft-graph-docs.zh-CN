@@ -1,18 +1,20 @@
 ---
 title: hasPayloadLinkResultItem 资源类型
 description: 包含 HasPayloadLinks 操作结果的类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46568e386c2896db307f78cc12205c115605a76e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3194dc0e7c1f154dcb61ab4f4731111a87fefe9d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775904"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458408"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,7 +26,7 @@ ms.locfileid: "42775904"
 |属性|类型|说明|
 |:---|:---|:---|
 |payloadId|String|有效负载的键，格式为 Guid。|
-|hasLink|布尔值|指示有效负载是否有任何链接。|
+|hasLink|Boolean|指示有效负载是否有任何链接。|
 |error|String|异常信息指示是否成功检查此项。空字符串表示无错误。|
 |源|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)集合|链接来自的原因。|
 

@@ -1,18 +1,20 @@
 ---
 title: 创建 groupPolicyPresentationListBox
 description: 创建新的 groupPolicyPresentationListBox 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1245e8154b94851b67d20660f9821dd3af402f23
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 23896229ffc6bd38dd955037a144e87a5ece9478
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804217"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457753"
 ---
 # <a name="create-grouppolicypresentationlistbox"></a>创建 groupPolicyPresentationListBox
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +27,9 @@ ms.locfileid: "42804217"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +56,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|explicitValue|布尔值|如果指定此选项，则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列，一个用于名称，一个用于数据。 默认值为 false。|
+|explicitValue|Boolean|如果指定此选项，则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列，一个用于名称，一个用于数据。 默认值为 false。|
 |valuePrefix|String|尚未记录|
 
 
@@ -95,7 +97,6 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
-
 
 
 

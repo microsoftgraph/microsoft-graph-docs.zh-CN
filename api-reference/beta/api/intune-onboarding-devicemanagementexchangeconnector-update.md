@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementExchangeConnector
 description: 更新 deviceManagementExchangeConnector 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe362dbb3e299fcd5a4525fce2025c20479f02d5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 191645d82e2a6102a4291ca1dc1dacd3372cd80d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802900"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450287"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -111,7 +113,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

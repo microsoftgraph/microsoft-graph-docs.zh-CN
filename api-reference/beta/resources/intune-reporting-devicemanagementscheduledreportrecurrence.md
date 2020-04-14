@@ -1,18 +1,20 @@
 ---
 title: deviceManagementScheduledReportRecurrence 枚举类型
 description: 计划报告定期事件的可能值
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b0ecdb4fc6616ab82d5a41f7d6ad7d1987cb59a9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 53a6082af2c2121249ee7d2ed014734cb3f0d5b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772263"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453185"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>deviceManagementScheduledReportRecurrence 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

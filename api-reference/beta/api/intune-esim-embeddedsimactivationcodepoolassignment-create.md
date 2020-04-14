@@ -1,18 +1,20 @@
 ---
 title: 创建 embeddedSIMActivationCodePoolAssignment
 description: 创建新的 embeddedSIMActivationCodePoolAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ece249ef0c23d02fdb0441d252ef8bfaae983cf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f70a4c820cc41ad43738bbc6e1fe8676342b2173
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804910"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452199"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>创建 embeddedSIMActivationCodePoolAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -91,7 +93,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

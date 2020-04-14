@@ -1,18 +1,20 @@
 ---
 title: assign 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f83ec3e1cddbc7a4ba5fc4f513656872f72f4ba5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0db9650decfd563415860a6a563a6cda66e869f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800807"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448665"
 ---
 # <a name="assign-action"></a>分配操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -94,7 +96,6 @@ Content-length: 406
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

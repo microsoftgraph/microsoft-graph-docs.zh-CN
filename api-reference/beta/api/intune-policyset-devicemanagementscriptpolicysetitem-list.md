@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceManagementScriptPolicySetItems
 description: 列出 deviceManagementScriptPolicySetItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5198f2f799ecb87684bd4f9bd1c6a2da10dc3896
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2afb9134e1a318f9b7fb40ce9aa012df514d1ea9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802368"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454408"
 ---
 # <a name="list-devicemanagementscriptpolicysetitems"></a>列出 deviceManagementScriptPolicySetItems
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +86,6 @@ Content-Length: 570
   ]
 }
 ```
-
 
 
 

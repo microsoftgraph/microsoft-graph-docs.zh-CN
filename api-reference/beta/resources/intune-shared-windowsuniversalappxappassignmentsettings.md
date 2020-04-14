@@ -1,18 +1,20 @@
 ---
 title: windowsUniversalAppXAppAssignmentSettings 资源类型
 description: 包含将 Windows 通用 AppX 移动应用程序分配给组时使用的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26a1876879955d6db404cb521e10f4e07c8db043
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dc945c303d49a97aeb45bf72e4fb8b5ffb7ab377
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766789"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447969"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>windowsUniversalAppXAppAssignmentSettings 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

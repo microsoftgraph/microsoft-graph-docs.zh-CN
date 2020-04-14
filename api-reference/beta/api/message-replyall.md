@@ -1,20 +1,20 @@
 ---
 title: 消息：replyAll
 description: '通过指定注释并修改任何可更新的属性来答复邮件的所有收件人 '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49065615cc34d6f6d09c863aac213344ef743968
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53d28496fbb0b82732d4d3aedecf6d9de62199ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456888"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448499"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

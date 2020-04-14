@@ -3,14 +3,14 @@ title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 82672ec05fbee9645af7a257d309d16d6ad5d519
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639892"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458125"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -245,7 +245,7 @@ Content-length: 2197
 ```
 
 
-### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>示例2：创建在多个位置发生的事件
+### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>示例 2：创建发生在多个位置的事件
 
 #### <a name="request"></a>请求
 下一个示例请求指定组织者和与会者可参加会议的 3 个地点。
@@ -339,7 +339,7 @@ Content-length: 1390
 
 #### <a name="response"></a>响应
 以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -832,7 +832,7 @@ Content-type: application/json
 ### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>示例5：创建和启用作为联机会议的事件
 
 #### <a name="request"></a>请求
-下面的示例展示了创建事件并使其成为联机会议的请求。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
+下面是创建事件并将其启用为联机会议的请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

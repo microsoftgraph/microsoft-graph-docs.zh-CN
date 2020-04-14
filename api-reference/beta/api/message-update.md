@@ -1,20 +1,20 @@
 ---
 title: 更新邮件
 description: 更新 message 对象的属性。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c087c9ecb423d305681567b68bfb8726dbe3e2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 283cc2af9a643ec1233e912466a1c615abdd4b79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456878"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448462"
 ---
 # <a name="update-message"></a>更新邮件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |flag|[followupFlag](../resources/followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|收件人|邮箱所有者和邮件发件人。 必须对应于使用的实际邮箱。 |
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|inferenceClassification | 字符串 | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
+|inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 仅当 isDraft = true 时可以更新。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|

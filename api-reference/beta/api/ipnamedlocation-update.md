@@ -2,15 +2,15 @@
 title: 更新 ipnamedlocation
 description: 更新 ipNamedLocation 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9a0e1523a625b2deaf971e9031a1e2ea1bb1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062261"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458140"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 

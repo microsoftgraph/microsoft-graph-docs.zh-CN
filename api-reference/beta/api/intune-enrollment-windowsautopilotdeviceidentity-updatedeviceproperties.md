@@ -1,18 +1,20 @@
 ---
 title: updateDeviceProperties 操作
 description: 更新 Autopilot 设备上的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29451664b2c6f9ba3bab146515c4a3e24fb99ac3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c6d18ef722cf664ca45e6feb718beb58921025e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804980"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452333"
 ---
 # <a name="updatedeviceproperties-action"></a>updateDeviceProperties 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +87,6 @@ Content-length: 187
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

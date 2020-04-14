@@ -1,18 +1,20 @@
 ---
 title: 更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: 更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d98bf402c1dc580d3490177fb20dd6bf5e990dd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e04b7598cad9e8e577575b581e0370fc99930f15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799750"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454358"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -90,7 +92,6 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
 
 
 

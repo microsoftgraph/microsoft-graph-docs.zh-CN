@@ -1,18 +1,20 @@
 ---
 title: 删除 enrollmentConfigurationAssignment
 description: 删除 enrollmentConfigurationAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dcdf06654386f33135696e0ff1ead96d9be19db6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6b0582b25e43db58a6032eec08bb7497adbe9509
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802837"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450233"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>删除 enrollmentConfigurationAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

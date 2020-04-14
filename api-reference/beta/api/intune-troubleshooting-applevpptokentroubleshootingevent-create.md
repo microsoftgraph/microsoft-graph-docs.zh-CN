@@ -1,18 +1,20 @@
 ---
 title: 创建 appleVppTokenTroubleshootingEvent
 description: 创建新的 appleVppTokenTroubleshootingEvent 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2370e90de77fe38779182f3082c3c142aff1c5c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a993f13b168d080719aaba07b3112b0ea9b0dff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800296"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457469"
 ---
 # <a name="create-applevpptokentroubleshootingevent"></a>创建 appleVppTokenTroubleshootingEvent
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -140,7 +142,6 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
 
 
 

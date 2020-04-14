@@ -1,20 +1,20 @@
 ---
 title: 'message: move'
 description: 将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 48364a38555740a4be8390fd8e224b377fd5ec5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02ee63c7e96d22a08cd0d56b23d941e2196ed828
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448560"
 ---
 # <a name="message-move"></a>message: move
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,8 +45,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| 授权 | `Bearer {token}`（）。 必需。 |
+| Content-Type | `application/json`（）。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

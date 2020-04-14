@@ -1,18 +1,20 @@
 ---
 title: windowsMinimumOperatingSystem 资源类型
 description: Windows 移动应用需要的最低操作系统。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e0e7f274be302e58692b6a6f18b43906de27fd3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8a148bc1ace18af3d4fd1206e7caf3849074244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797505"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450750"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -23,15 +25,15 @@ Windows 移动应用需要的最低操作系统。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|布尔值|Windows 版本 8.0 或更高版本。|
+|v8_0|Boolean|Windows 版本 8.0 或更高版本。|
 |v8_1|布尔值|Windows 版本 8.1 或更高版本。|
 |v10_0|布尔值|Windows 版本 10.0 或更高版本。|
-|v10_1607|布尔值|Windows 10 1607 或更高版本。|
-|v10_1703|布尔值|Windows 10 1703 或更高版本。|
-|v10_1709|布尔值|Windows 10 1709 或更高版本。|
-|v10_1803|布尔值|Windows 10 1803 或更高版本。|
-|v10_1809|布尔值|Windows 10 1809 或更高版本。|
-|v10_1903|布尔值|Windows 10 1903 或更高版本。|
+|v10_1607|Boolean|Windows 10 1607 或更高版本。|
+|v10_1703|Boolean|Windows 10 1703 或更高版本。|
+|v10_1709|Boolean|Windows 10 1709 或更高版本。|
+|v10_1803|Boolean|Windows 10 1803 或更高版本。|
+|v10_1809|Boolean|Windows 10 1809 或更高版本。|
+|v10_1903|Boolean|Windows 10 1903 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无

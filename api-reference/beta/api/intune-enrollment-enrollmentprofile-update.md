@@ -1,18 +1,20 @@
 ---
 title: 更新 enrollmentProfile
 description: 更新 enrollmentProfile 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f6a11b0261d0b1805c07e34e9f504242f61b02e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dc4bb4ca29ea3d63a9038b014aaffbcb7718b16b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813146"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450031"
 ---
 # <a name="update-enrollmentprofile"></a>更新 enrollmentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -53,11 +55,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |:---|:---|:---|
 |id|字符串|对象的 GUID|
 |displayName|String|配置文件的名称|
-|说明|String|配置文件的说明|
-|requiresUserAuthentication|布尔值|指示配置文件是否需要用户身份验证|
+|description|String|配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示在安装助理注册设备上需要公司门户|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在安装助理注册设备上需要公司门户|
 
 
 
@@ -102,7 +104,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: syncLicenses 操作
 description: 同步与特定 appleVolumePurchaseProgramToken 关联的许可证
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 476d632de98ff0bce1e9afa6bdc9f560e8aae018
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 392386fdd5ae8bcb88fd454c69a4ffedcbcd18cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802655"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447654"
 ---
 # <a name="synclicenses-action"></a>syncLicenses 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -99,7 +101,6 @@ Content-Length: 1192
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: exportMobileConfig 函数
 description: 导出移动配置
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f397b8df2df1ce4d25c17297133734c901c54e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8cf4e6615837eeb45942e8a7e0ab617477dc9135
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813181"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448253"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -69,7 +71,6 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
-
 
 
 

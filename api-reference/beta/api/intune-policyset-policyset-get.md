@@ -1,18 +1,20 @@
 ---
 title: 获取 policySet
 description: 读取 policySet 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d46294d1bab04f4f5af32d2a213f59d372936e5c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 78a690abf7d590b60340dba60ab5be71e562baa1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802130"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457746"
 ---
 # <a name="get-policyset"></a>获取 policySet
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -87,7 +89,6 @@ Content-Length: 536
   }
 }
 ```
-
 
 
 

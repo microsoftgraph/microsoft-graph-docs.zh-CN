@@ -2,19 +2,19 @@
 title: bookingPerson 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: e99b2fb844d8316a5e9d227961be1298c4c41d9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5ebbd7c4abaf34b31ac3f3d8e75defd6c939ec0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507970"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453660"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

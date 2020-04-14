@@ -4,17 +4,17 @@ description: 指定 OAuth 2.0 权限范围和应用程序角色的集合。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 3c2251f5a5b4655a73747490f5052661c3b4a6eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 84641cc49a518eb41095b80aa0501dce5acf3d35
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521108"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453101"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>requiredResourceAccess 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

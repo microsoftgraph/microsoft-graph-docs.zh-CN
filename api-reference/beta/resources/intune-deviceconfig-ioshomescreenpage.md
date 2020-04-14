@@ -1,18 +1,20 @@
 ---
 title: iosHomeScreenPage 资源类型
 description: 包含主屏幕上的应用和文件夹的页面
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2316f42356bb5b7cfe642bdcdf1712e4bcff61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7b0190b31f58ee5532fd1d0f3e3459e552bb00b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455139"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>iosHomeScreenPage 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

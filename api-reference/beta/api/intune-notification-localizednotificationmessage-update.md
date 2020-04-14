@@ -1,18 +1,20 @@
 ---
 title: 更新 localizedNotificationMessage
 description: 更新 localizedNotificationMessage 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aa5f527fe8e4f55d422722a8f409ba2d10e32f7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 09d4342973f15bdedd8ebc7ae11d9b4832383224
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803159"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449994"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +100,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: 邮件：转发
 description: '转发邮件、添加注释或修改任何可更新的属性  '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f30b10cefc0ca4ff8f4f59c2b25cb5e91637e453
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456906"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448582"
 ---
 # <a name="message-forward"></a>邮件：转发
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

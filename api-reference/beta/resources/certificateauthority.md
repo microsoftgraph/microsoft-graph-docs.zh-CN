@@ -2,19 +2,19 @@
 title: certificateAuthority 资源类型
 description: 表示证书颁发机构。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3f5f34664bd721564a8ee63248c65b66123aad98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25303f527a8ba440e9a1e413379bf8037e551168
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507773"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454351"
 ---
 # <a name="certificateauthority-resource-type"></a>certificateAuthority 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "42507773"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|证书|Binary|必填。 表示公共证书的 base64 编码字符串。|
+|证书|Binary|必需。 表示公共证书的 base64 编码字符串。|
 |certificateRevocationListUrl|String|证书吊销列表的 URL。|
 |deltaCertificateRevocationListUrl|String|该 URL 包含自上次创建完整证书 revocaton 列表以来的所有已吊销证书的列表。|
-|isRootAuthority|布尔|必填。 如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。|
+|isRootAuthority|Boolean|必需。 如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。|
 |常用|String|证书的颁发者，根据**证书**值计算。 只读。 |
 |issuerSki|String|证书的主题密钥标识符，由**证书**值计算得出。 只读。|
 

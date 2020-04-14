@@ -1,18 +1,20 @@
 ---
 title: omaSettingString 资源类型
 description: OMA 设置字符串定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d20a88e79a1383789a67883d03aae6b8e4463f4e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 87eb5776a2d613590a6e7ee1d82e5975aec82584
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788434"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450705"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ OMA 设置字符串定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|String|值。|
 

@@ -2,19 +2,19 @@
 title: ipRange 资源类型
 description: 用于表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d75450cb64404272ae1b53587a9f86e66d8a655
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b1a49265350e83d25748df1e00d5905de5ba8aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449520"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

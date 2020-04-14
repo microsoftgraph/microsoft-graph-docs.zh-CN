@@ -1,18 +1,20 @@
 ---
 title: 更新 windowsAutopilotSettings
 description: 更新 windowsAutopilotSettings 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e81e2b83e6969f9752bb2f6170df9210ea869039
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 29ec5af7b5b900bcd6ec8f976c665782d371c165
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452280"
 ---
 # <a name="update-windowsautopilotsettings"></a>更新 windowsAutopilotSettings
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +95,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

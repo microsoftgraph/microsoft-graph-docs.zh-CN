@@ -2,19 +2,19 @@
 title: 更新 Outlook 类别
 description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改**displayName**属性 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5726ed1195844fec871895a2821178de7eb22063
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae5ff61e8851aa614f856f1f85a9544c101ac54f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456206"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450906"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

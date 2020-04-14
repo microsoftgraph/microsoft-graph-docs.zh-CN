@@ -1,20 +1,20 @@
 ---
 title: contactFolder 资源类型
 description: 包含联系人的文件夹。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8ebca7ecd2ba49c3a14973bbc6060980c07927d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 328d742163d04b26d2e46f7a89309e0184ea6198
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507455"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458088"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

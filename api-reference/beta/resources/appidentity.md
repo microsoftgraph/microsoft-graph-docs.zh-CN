@@ -3,14 +3,14 @@ title: appIdentity 资源类型
 description: 指示执行了操作或已更改的应用程序的标识。 包括应用程序 Id、名称、服务主体 ID 和名称。 此资源由 directoryAudit API 调用
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 08cb797f56d26b4b421fb25210f7dad2715c70d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: d9d2c6ff3ceadd55404d32e57d1837c4023771f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450166"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity 资源类型
 

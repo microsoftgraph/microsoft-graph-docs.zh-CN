@@ -1,16 +1,16 @@
 ---
 title: 获取邮件
 description: 检索 message 对象的属性和关系。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d4326b2a846603065c211fab15d7dd0f17ac5e8a
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 5c3f126ce44bb71094f7b83f71727b1d82c8be2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618898"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448589"
 ---
 # <a name="get-message"></a>获取邮件
 

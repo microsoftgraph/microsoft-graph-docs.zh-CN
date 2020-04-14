@@ -1,18 +1,20 @@
 ---
 title: 获取 mobileApp
 description: 读取 mobileApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec0885c13e5a52851f7142514aa2fc388e813903
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2fe080267c2f2a231282e6ba8f35e324b887fa7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800800"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448650"
 ---
 # <a name="get-mobileapp"></a>获取 mobileApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -104,7 +106,6 @@ Content-Length: 949
   }
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: bookingBusiness 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 314228247131386363da89272d459eb68e022e6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba6da0291c0a2153908d14e74deeb83c6c138d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508008"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453767"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -51,7 +51,7 @@ ms.locfileid: "42508008"
 |displayName|字符串|业务的名称，与客户的接口。 此名称显示在 "业务计划" 页的顶部。|
 |email|String|企业的电子邮件地址。|
 |id|字符串|企业的唯一编程标识符。 只读。|
-|isPublished|布尔|计划页面已提供给外部客户。 使用 "**发布**" 和 "**取消发布**" 操作设置此属性。 只读。|
+|isPublished|Boolean|计划页面已提供给外部客户。 使用 "**发布**" 和 "**取消发布**" 操作设置此属性。 只读。|
 |phone|String|企业的电话号码。 **Phone**属性，以及**address**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
 |publicUrl|String|计划页面的 URL，在[发布](../api/bookingbusiness-publish.md)或[取消](../api/bookingbusiness-unpublish.md)发布页面之后设置。 只读。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
@@ -60,10 +60,10 @@ ms.locfileid: "42508008"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|appointments|[bookingAppointment](bookingappointment.md)集合| 此业务的所有约会。 只读。 可为 NULL。|
-|calendarView|[bookingAppointment](bookingappointment.md)集合| 在指定日期范围内此公司的一组约会。 只读。 可为 NULL。|
-|各地|[bookingCustomer](bookingcustomer.md)集合| 此业务的所有客户。 只读。 可为 NULL。|
-|服务行业|[bookingService](bookingservice.md)集合| 此业务提供的所有服务。 只读。 可为 NULL。|
+|appointments|[bookingAppointment](bookingappointment.md)集合| 此业务的所有约会。 只读。 可为 Null。|
+|calendarView|[bookingAppointment](bookingappointment.md)集合| 在指定日期范围内此公司的一组约会。 只读。 可为 Null。|
+|各地|[bookingCustomer](bookingcustomer.md)集合| 此业务的所有客户。 只读。 可为 Null。|
+|服务行业|[bookingService](bookingservice.md)集合| 此业务提供的所有服务。 只读。 可为 Null。|
 |staffMembers|[bookingStaffMember](bookingstaffmember.md)集合| 在此公司中提供服务的所有教职员工成员。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

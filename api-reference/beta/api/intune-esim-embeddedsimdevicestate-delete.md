@@ -1,18 +1,20 @@
 ---
 title: 删除 embeddedSIMDeviceState
 description: 删除 embeddedSIMDeviceState。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dcc64578dbb33b3f94e4576dd889dfda04260a56
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8ddc0582abe179276de37f647bd21ff06f7fb6b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452109"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>删除 embeddedSIMDeviceState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

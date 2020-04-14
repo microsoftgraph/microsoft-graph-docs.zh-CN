@@ -1,18 +1,20 @@
 ---
 title: 列出 resourceOperations
 description: 列出 resourceOperation 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 412d136feac92d2047f55df90f0e2f099a71249f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd783dbe77e0f5b0b81d5871ff97740eb792cdf8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801696"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455430"
 ---
 # <a name="list-resourceoperations"></a>列出 resourceOperations
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 359
   ]
 }
 ```
-
 
 
 

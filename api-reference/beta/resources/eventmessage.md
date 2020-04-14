@@ -2,19 +2,19 @@
 title: eventMessage 资源类型
 description: '表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b25a5a743fd4fd96e02b0a63deb255903f59927e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdf0f27bcd083142bf5f7ec14ceac32853aaf091
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499111"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454107"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,10 +118,10 @@ ms.locfileid: "42499111"
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
-|isDelegated|布尔|如果代理可访问此会议请求，则为 True，否则为 false。 默认为 false。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDelegated|Boolean|如果代理可访问此会议请求，则为 True，否则为 false。 默认为 false。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|布尔|指示此会议请求是否已由较新的请求发出。|
+|isOutOfDate|Boolean|指示此会议请求是否已由较新的请求发出。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
@@ -146,7 +146,7 @@ ms.locfileid: "42499111"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 NULL。|
+|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|

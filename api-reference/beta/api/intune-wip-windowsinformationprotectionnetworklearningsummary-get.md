@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsInformationProtectionNetworkLearningSummary
 description: 读取 windowsInformationProtectionNetworkLearningSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 721e5a027674aa10b5cc87c39edceebb9522b10b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16e52563e40a4cdf403a362e97bcf54fba44ff4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799602"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451902"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>获取 windowsInformationProtectionNetworkLearningSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -77,7 +79,6 @@ Content-Length: 213
   }
 }
 ```
-
 
 
 

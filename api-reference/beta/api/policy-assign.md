@@ -3,18 +3,18 @@ title: 分配策略
 description: 将策略分配给应用程序或服务主体。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 2f005973677ca3e430706a7fced22e5fbf51bcd0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: dkershaw10
+ms.openlocfilehash: 694b070b0186e8e76a0bb7180e538c0ac42188d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455532"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450891"
 ---
 # <a name="assign-policy"></a>分配策略
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

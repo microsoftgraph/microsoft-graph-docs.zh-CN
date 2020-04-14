@@ -1,18 +1,20 @@
 ---
 title: hasPayloadLinks 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 458024c0140927a24c646ccc61aabb709459a825
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b5afe25a3fddf7a5ae1faa96f2e8ff2fe23b7b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800967"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450936"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -98,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

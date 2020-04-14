@@ -1,18 +1,20 @@
 ---
 title: 更新 targetedManagedAppPolicyAssignment
 description: 更新 targetedManagedAppPolicyAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 525bf6c1b8d07adbb2a25f7ec3273b3d05c2994a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5fb591b2d1ccbc22260e21c0be73f52d62ae0b44
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448808"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -101,7 +103,6 @@ Content-Length: 284
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

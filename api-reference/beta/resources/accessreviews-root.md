@@ -2,19 +2,19 @@
 title: Azure AD 访问审查
 description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 536293390da403c4c8375d551bda8643f3ffb9dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cec4535474fcb4dcff9d9fd14986f9b541fc4f9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508462"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450847"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

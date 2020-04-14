@@ -2,15 +2,15 @@
 title: 删除 namedLocation
 description: 删除 namedLocation 对象。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c78cef3dd1eef303df2d8da9dd784a0782b5c82
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: a8f4fb240d2b2966f6f5fdb00fc43dc5683fb67c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448418"
 ---
 # <a name="delete-namedlocation"></a>删除 namedLocation
 

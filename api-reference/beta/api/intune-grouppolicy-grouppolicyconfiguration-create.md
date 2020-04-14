@@ -1,18 +1,20 @@
 ---
 title: 创建 groupPolicyConfiguration
 description: 创建新的 groupPolicyConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1a41f844c0a2773de968be985abbe8bf812c7a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 30392d0b4a280c8f36e0c076f25d5ba500ceb086
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804497"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454715"
 ---
 # <a name="create-grouppolicyconfiguration"></a>创建 groupPolicyConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +27,9 @@ ms.locfileid: "42804497"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,8 +55,8 @@ POST /deviceManagement/groupPolicyConfigurations
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
-|说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String collection|配置的作用域标记列表。|
+|description|String|用户提供的资源对象的说明。|
+|roleScopeTagIds|String 集合|配置的作用域标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -101,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

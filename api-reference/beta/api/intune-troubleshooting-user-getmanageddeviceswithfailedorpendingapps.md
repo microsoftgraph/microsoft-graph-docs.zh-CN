@@ -1,18 +1,20 @@
 ---
 title: getManagedDevicesWithFailedOrPendingApps 函数
 description: 检索具有失败或挂起的应用程序的设备的列表
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 397ea8ce7b0e5603b50a5d36b5d72905ea94cfd1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5758187ea0c28bb1fb53caf7dbecb37fb98f4202
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800086"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451997"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>getManagedDevicesWithFailedOrPendingApps 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -75,7 +77,6 @@ Content-Length: 187
   ]
 }
 ```
-
 
 
 

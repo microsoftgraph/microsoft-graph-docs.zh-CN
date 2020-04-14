@@ -2,19 +2,19 @@
 title: 约定资源类型
 description: 表示合作伙伴租户与客户租户之间的现有合作关系。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67e2a4f78e33748b7648dd57892831faf7e27c23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbf58924c8d8abec95346364a0c3723f8a44f8fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507420"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458062"
 ---
 # <a name="contract-resource-type"></a>约定资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

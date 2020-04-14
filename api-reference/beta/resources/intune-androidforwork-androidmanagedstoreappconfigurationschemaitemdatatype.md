@@ -1,18 +1,20 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 description: Android 应用程序的自定义配置架构中的配置项目的数据类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36780972fba710e626d1d025a7c4e782a2a3599d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 48bd0736043e425698bf02d19126b0f79f1ffa34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799323"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454288"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

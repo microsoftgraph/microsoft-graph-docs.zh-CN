@@ -2,19 +2,19 @@
 title: optionalClaim 资源类型
 description: 包含与应用程序关联的可选声明。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2ddfde1c367d77c741b142fbce5ab2e053273e41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 004af66e19c540421730c05ebeca27f90abf99db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455019"
 ---
 # <a name="optionalclaim-resource-type"></a>optionalClaim 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42522142"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |additionalProperties|String 集合| 声明的其他属性。 如果某个属性存在于此集合中，它将修改在 name 属性中指定的可选声明的行为。 |
-|组成部分|布尔| 如果值为 true，则客户端指定的声明是为确保最终用户请求的特定任务的平稳授权体验所必需的。 默认值为 false。|
+|组成部分|Boolean| 如果值为 true，则客户端指定的声明是为确保最终用户请求的特定任务的平稳授权体验所必需的。 默认值为 false。|
 |name|String| 可选声明的名称。 |
 |source|String| 声明的源（目录对象）。 来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明是预定义的可选声明。 如果源值为 user，则 name 属性中的值是用户对象的扩展属性。 |
 

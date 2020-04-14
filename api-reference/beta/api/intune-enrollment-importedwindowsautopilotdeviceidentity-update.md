@@ -1,18 +1,20 @@
 ---
 title: Update importedWindowsAutopilotDeviceIdentity
 description: 更新 importedWindowsAutopilotDeviceIdentity 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f077756ea4eb4007e9e51fb73f842eb7a0676d4f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 752ee4f5b423c52809127f7528b76d9dbafb92ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42805085"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452510"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Update importedWindowsAutopilotDeviceIdentity
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -120,7 +122,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

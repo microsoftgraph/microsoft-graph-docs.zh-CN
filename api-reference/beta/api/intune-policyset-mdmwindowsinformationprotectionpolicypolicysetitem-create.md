@@ -1,18 +1,20 @@
 ---
 title: 创建 mdmWindowsInformationProtectionPolicyPolicySetItem
 description: 创建新的 mdmWindowsInformationProtectionPolicyPolicySetItem 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4def311d452e84325e5459bd9a8b8f4e52797453
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 066fe33e0acbf3c7569165d50ee5aacdb83dc390
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802214"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449843"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicypolicysetitem"></a>创建 mdmWindowsInformationProtectionPolicyPolicySetItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -59,7 +61,7 @@ POST /deviceAppManagement/policySets/{policySetId}/items
 |displayName|String|PolicySetItem 的 DisplayName。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)|
 |状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
+|guidedDeploymentTags|String 集合|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
 
 
 
@@ -110,7 +112,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

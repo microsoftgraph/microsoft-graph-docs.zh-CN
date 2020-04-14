@@ -1,18 +1,20 @@
 ---
 title: 列出 importedAppleDeviceIdentityResults
 description: 列出 importedAppleDeviceIdentityResult 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2baf6c985f42169efe79ad6fcabd83bd4d92cbf3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 631708e7b85bcc6a3e75f00582fe5ec91a1afca9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813153"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451138"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>列出 importedAppleDeviceIdentityResults
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 741
   ]
 }
 ```
-
 
 
 

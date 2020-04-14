@@ -1,18 +1,20 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 description: Windows Hello 企业版设置允许用户使用笔势（如生物特征身份验证或 PIN）访问其设备。 为已注册的 Windows 10、Windows 10 移动版和更高版本配置设置。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50ba5c5a2df8455ce50b36ca276780339f495a86
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 906d68a7e11e94002a5b5f90b3a458c17c0cb1ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779406"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455055"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -37,7 +39,7 @@ Windows Hello 企业版设置允许用户使用笔势（如生物特征身份验
 |:---|:---|:---|
 |id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
 |displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|description|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
@@ -48,8 +50,8 @@ Windows Hello 企业版设置允许用户使用笔势（如生物特征身份验
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在 Windows Hello 企业版 PIN 中使用小写字母的功能。  允许使用小写字母，而必需的则可确保它们存在。 如果设置为 "不允许"，则不允许使用小写字母。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在 Windows Hello 企业版 PIN 中使用特殊字符的功能。  允许使用特殊字符，而必需的字符可确保它们存在。 如果设置为 "不允许"，则不允许使用特殊字符。 可取值为：`allowed`、`required`、`disallowed`。|
 |state|[启用](../resources/intune-shared-enablement.md)|控制是否允许为 Windows Hello 企业版配置设备。 如果设置为 "禁用"，则用户将无法预配 Windows Hello 企业版，除非在其他情况下有必要时在 Azure Active Directory 加入移动电话上。 如果设置为 "未配置"，Intune 将不会覆盖客户端默认设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityDeviceRequired|布尔值|控制是否需要用于设置 Windows Hello 企业版的受信任的平台模块（TPM）。 TPM 在其他设备上不能使用存储在其上的数据带来额外的安全性优势。 如果设置为 False，即使没有可用的 TPM，所有设备也可以预配 Windows Hello 企业版。|
-|unlockWithBiometricsEnabled|布尔值|控制使用生物特征手势（如面孔和指纹）作为 Windows Hello 企业版 PIN 的替代方法。  如果设置为 False，则不允许使用生物特征手势。 用户仍必须在发生故障时将 PIN 配置为备份。|
+|securityDeviceRequired|Boolean|控制是否需要用于设置 Windows Hello 企业版的受信任的平台模块（TPM）。 TPM 在其他设备上不能使用存储在其上的数据带来额外的安全性优势。 如果设置为 False，即使没有可用的 TPM，所有设备也可以预配 Windows Hello 企业版。|
+|unlockWithBiometricsEnabled|Boolean|控制使用生物特征手势（如面孔和指纹）作为 Windows Hello 企业版 PIN 的替代方法。  如果设置为 False，则不允许使用生物特征手势。 用户仍必须在发生故障时将 PIN 配置为备份。|
 |remotePassportEnabled|Boolean|控制远程 Windows Hello 企业版的使用。 远程 Windows Hello 企业版使便携式、注册设备可用作桌面身份验证的配套功能。 桌面必须已加入 Azure AD，且配套设备必须具有 Windows Hello 企业版 PIN。|
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值（包括这两个值），并且用户的当前 PIN 包含在该计数中。 如果设置为0，则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。|
 |pinExpirationInDays|Int32|控制在系统要求用户更改 PIN 之前可以使用 PIN 的时间段（以天为单位）。 必须在0和730之间设置此值（包括这两个值）。 如果设置为0，则用户的 PIN 永不过期|

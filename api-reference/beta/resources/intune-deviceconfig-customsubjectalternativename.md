@@ -1,18 +1,20 @@
 ---
 title: customSubjectAlternativeName 资源类型
 description: 自定义主题备用名称定义
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22f28942f891bc8ac72f6640091e0b8e1195f51f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0b88b5c6a393d994de5d393984ee339969b25ba6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795650"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453462"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: 列出 notificationMessageTemplates
 description: 列出 notificationMessageTemplate 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83e86aee76dc8dd04d9e2ce05f36a61a6360d515
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3fd0ed622f839379ddb45eab66700a13f4b0d147
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803131"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454446"
 ---
 # <a name="list-notificationmessagetemplates"></a>列出 notificationMessageTemplates
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +83,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

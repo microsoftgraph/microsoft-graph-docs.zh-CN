@@ -1,18 +1,20 @@
 ---
 title: certificateIssuanceStates 枚举类型
 description: 证书颁发状态选项。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c4307d8dadf1f3b74f4a7f92bf4b56d44f63ee7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03bc757288afd670c5329bf45c68f282b3cd5264
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795699"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453631"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -36,7 +38,7 @@ ms.locfileid: "42795699"
 |responseProcessingFailed|10 |尚未记录|
 |responsePending|11x17|尚未记录|
 |enrollmentSucceeded|12 |尚未记录|
-|enrollmentNotNeeded|13 |尚未记录|
+|enrollmentNotNeeded|13|尚未记录|
 |吊销|14 |尚未记录|
 |removedFromCollection|15 |尚未记录|
 |renewVerified|16 |尚未记录|

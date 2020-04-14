@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementScript
 description: 更新 deviceManagementScript 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3d27fdbaf7de530783c4751c7898dd972f45db2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ce2171f02608ac7e922f6a4a9580665134c83f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800947"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453944"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -57,16 +59,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |:---|:---|:---|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|description|String|设备管理脚本的可选说明。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
-|runAs32Bit|布尔值|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 
@@ -127,7 +129,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

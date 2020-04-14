@@ -1,18 +1,20 @@
 ---
 title: 列出 managedDeviceMobileAppConfigurationPolicySetItems
 description: 列出 managedDeviceMobileAppConfigurationPolicySetItem 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87318f7dd598be4a606f3ab3da1d60e9999a8108
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f48eb3d3f53b03c2a101e5baf8add81dec12b1d7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449905"
 ---
 # <a name="list-manageddevicemobileappconfigurationpolicysetitems"></a>列出 managedDeviceMobileAppConfigurationPolicySetItems
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -84,7 +86,6 @@ Content-Length: 583
   ]
 }
 ```
-
 
 
 

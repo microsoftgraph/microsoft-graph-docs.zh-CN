@@ -1,18 +1,20 @@
 ---
 title: 创建 notificationMessageTemplate
 description: 创建新的 notificationMessageTemplate 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be56c1a966fd4dcb2aaa192154492427bd3a5bdb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83210d0e025aee12f74200a48f9cdf09cdaa8fd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803152"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448746"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -56,7 +58,7 @@ POST /deviceManagement/notificationMessageTemplates
 |displayName|字符串|通知消息模板的显示名称。|
 |defaultLocale|String|请求的区域设置不可用时要回退到的默认区域设置。|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|消息模板品牌选项。 已在 Intune 管理员控制台中定义品牌。 可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -102,7 +104,6 @@ Content-Length: 372
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 embeddedSIMActivationCodePoolAssignment
 description: 删除 embeddedSIMActivationCodePoolAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d428450089ec4a97969df047a0f5bf1c4d6ed0e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 72039b294f8dbe9e6e082d79109c620845ec33d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804903"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452184"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>删除 embeddedSIMActivationCodePoolAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

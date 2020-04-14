@@ -2,19 +2,19 @@
 title: credentialUsageSummary 资源类型
 description: 表示组织中的多少用户使用自助密码重置功能的当前状态。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 17fc4535e5132b6bf6c2f6eab4a94b5a58ef9bb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507350"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458024"
 ---
 # <a name="credentialusagesummary-resource-type"></a>credentialUsageSummary 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

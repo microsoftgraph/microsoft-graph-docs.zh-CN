@@ -1,18 +1,20 @@
 ---
 title: policySetStatus 枚举类型
 description: 用于指定 PolicySet 状态的枚举。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a470e6c13bfd20ada920bbe2b471bfa96379092
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b4fc37dd889edaa5a5050db3c162ec147d2573cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448029"
 ---
 # <a name="policysetstatus-enum-type"></a>policySetStatus 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

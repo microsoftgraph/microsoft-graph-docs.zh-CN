@@ -1,18 +1,20 @@
 ---
 title: sync 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e754101ae2b128502d8f4a42b71706a244c9184b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7e69ed64af2fafa725ec0df4e93d3be8e5d863c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802907"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450302"
 ---
 # <a name="sync-action"></a>sync 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -78,7 +80,6 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: applicationSignInDetailedSummary 资源类型-Microsoft Graph API
 description: 表示应用程序登录的详细摘要。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 118d26e6d46e5b64861a041eec12d03bea533552
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 754a7f69b4f38fa101fe2fe5c349e089ae25c457
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508273"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455281"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,17 +4,17 @@ description: 获取分配了指定策略的应用程序和服务主体对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 7959f8b286f1068de454f6d0d36a182f190efafd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 07d7a8cd1029de5205b1b2332d70bae868e6d614
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455520"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450870"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列出分配了特定策略的应用程序和服务主体
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

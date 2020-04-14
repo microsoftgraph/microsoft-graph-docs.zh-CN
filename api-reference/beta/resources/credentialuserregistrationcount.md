@@ -2,19 +2,19 @@
 title: credentialUserRegistrationCount 资源类型
 description: 表示您的组织中的多少用户为自助密码重置和多重身份验证功能注册的用户的当前状态。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: cd08bbcd6a189c2f76c130d28ea749745a5f8fca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b291d871686b514474f754500d490be3ad331441
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507343"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458009"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>credentialUserRegistrationCount 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

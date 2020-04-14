@@ -1,18 +1,20 @@
 ---
 title: 列出 intuneBrandingProfiles
 description: 列出 intuneBrandingProfile 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 780dd91ffb173904a7872fb1539b704706f627c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fd024fa01ea8514b4dcba9fd0fd8297ec348f3bb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457434"
 ---
 # <a name="list-intunebrandingprofiles"></a>列出 intuneBrandingProfiles
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -128,7 +130,6 @@ Content-Length: 2221
   ]
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: countryNamedLocation 资源类型
 description: 表示由国家和地区定义的、名为 "位置" 的 Azure Active Directory。 "已命名位置" 是自定义规则，用于定义随后可在条件访问策略中使用的网络位置。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0adfe767c23a8f6fda5d44a2520ee307c0499bd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0683c967d56303cb092b7300e50312ab329ea4b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507371"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458031"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "42507371"
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的人可读名称。 继承自[namedLocation](../resources/namedLocation.md)。|
 |id|String|NamedLocation 对象的标识符。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|布尔|如此如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|includeUnknownCountriesAndRegions|Boolean|如此如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示上次修改的位置使用 ISO 8601 格式的日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系
