@@ -1,35 +1,37 @@
 ---
 title: 获取 windowsPhone81CertificateProfileBase
 description: 读取 windowsPhone81CertificateProfileBase 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6941e877003ef8560f66be7929d93c22d8ffd8f8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 38e032e545005cfea1af2da313e41ba9a8d51aa1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42734832"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43334888"
 ---
-# <a name="get-windowsphone81certificateprofilebase"></a><span data-ttu-id="3de87-103">获取 windowsPhone81CertificateProfileBase</span><span class="sxs-lookup"><span data-stu-id="3de87-103">Get windowsPhone81CertificateProfileBase</span></span>
+# <a name="get-windowsphone81certificateprofilebase"></a><span data-ttu-id="89773-103">获取 windowsPhone81CertificateProfileBase</span><span class="sxs-lookup"><span data-stu-id="89773-103">Get windowsPhone81CertificateProfileBase</span></span>
 
-> <span data-ttu-id="3de87-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3de87-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="89773-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89773-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3de87-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3de87-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="89773-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="89773-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="3de87-106">读取[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3de87-106">Read properties and relationships of the [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) object.</span></span>
+> <span data-ttu-id="89773-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="89773-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3de87-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="3de87-107">Prerequisites</span></span>
-<span data-ttu-id="3de87-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3de87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="89773-107">读取[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="89773-107">Read properties and relationships of the [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) object.</span></span>
 
-|<span data-ttu-id="3de87-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="3de87-110">Permission type</span></span>|<span data-ttu-id="3de87-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3de87-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="89773-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="89773-108">Prerequisites</span></span>
+<span data-ttu-id="89773-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="89773-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="89773-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="89773-111">Permission type</span></span>|<span data-ttu-id="89773-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="89773-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3de87-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3de87-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3de87-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="3de87-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="3de87-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3de87-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3de87-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3de87-115">Not supported.</span></span>|
-|<span data-ttu-id="3de87-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="3de87-116">Application</span></span>|<span data-ttu-id="3de87-117">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="3de87-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="89773-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="89773-113">Delegated (work or school account)</span></span>|<span data-ttu-id="89773-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="89773-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="89773-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="89773-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89773-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="89773-116">Not supported.</span></span>|
+|<span data-ttu-id="89773-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="89773-117">Application</span></span>|<span data-ttu-id="89773-118">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="89773-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3de87-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3de87-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="89773-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="89773-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +40,31 @@ ms.locfileid: "42734832"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3de87-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3de87-119">Optional query parameters</span></span>
-<span data-ttu-id="3de87-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3de87-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="89773-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="89773-120">Optional query parameters</span></span>
+<span data-ttu-id="89773-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="89773-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3de87-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="3de87-121">Request headers</span></span>
-|<span data-ttu-id="3de87-122">标头</span><span class="sxs-lookup"><span data-stu-id="3de87-122">Header</span></span>|<span data-ttu-id="3de87-123">值</span><span class="sxs-lookup"><span data-stu-id="3de87-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="89773-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="89773-122">Request headers</span></span>
+|<span data-ttu-id="89773-123">标头</span><span class="sxs-lookup"><span data-stu-id="89773-123">Header</span></span>|<span data-ttu-id="89773-124">值</span><span class="sxs-lookup"><span data-stu-id="89773-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3de87-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3de87-124">Authorization</span></span>|<span data-ttu-id="3de87-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3de87-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3de87-126">接受</span><span class="sxs-lookup"><span data-stu-id="3de87-126">Accept</span></span>|<span data-ttu-id="3de87-127">application/json</span><span class="sxs-lookup"><span data-stu-id="3de87-127">application/json</span></span>|
+|<span data-ttu-id="89773-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="89773-125">Authorization</span></span>|<span data-ttu-id="89773-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="89773-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="89773-127">接受</span><span class="sxs-lookup"><span data-stu-id="89773-127">Accept</span></span>|<span data-ttu-id="89773-128">application/json</span><span class="sxs-lookup"><span data-stu-id="89773-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3de87-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="3de87-128">Request body</span></span>
-<span data-ttu-id="3de87-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3de87-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89773-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="89773-129">Request body</span></span>
+<span data-ttu-id="89773-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="89773-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3de87-130">响应</span><span class="sxs-lookup"><span data-stu-id="3de87-130">Response</span></span>
-<span data-ttu-id="3de87-131">如果成功，此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)对象。</span><span class="sxs-lookup"><span data-stu-id="3de87-131">If successful, this method returns a `200 OK` response code and [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="89773-131">响应</span><span class="sxs-lookup"><span data-stu-id="89773-131">Response</span></span>
+<span data-ttu-id="89773-132">如果成功，此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)对象。</span><span class="sxs-lookup"><span data-stu-id="89773-132">If successful, this method returns a `200 OK` response code and [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3de87-132">示例</span><span class="sxs-lookup"><span data-stu-id="3de87-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="89773-133">示例</span><span class="sxs-lookup"><span data-stu-id="89773-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3de87-133">请求</span><span class="sxs-lookup"><span data-stu-id="3de87-133">Request</span></span>
-<span data-ttu-id="3de87-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3de87-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="89773-134">请求</span><span class="sxs-lookup"><span data-stu-id="89773-134">Request</span></span>
+<span data-ttu-id="89773-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="89773-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate
 ```
 
-### <a name="response"></a><span data-ttu-id="3de87-135">响应</span><span class="sxs-lookup"><span data-stu-id="3de87-135">Response</span></span>
-<span data-ttu-id="3de87-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3de87-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="89773-136">响应</span><span class="sxs-lookup"><span data-stu-id="89773-136">Response</span></span>
+<span data-ttu-id="89773-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="89773-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,7 +120,6 @@ Content-Length: 1783
   }
 }
 ```
-
 
 
 

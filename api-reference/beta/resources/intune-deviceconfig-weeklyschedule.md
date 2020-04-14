@@ -1,38 +1,40 @@
 ---
 title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d26d8861ab7dd5fe6e6fb2b4111aa6c3458fe611
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ce3e6eb555171291763f0560cf980cad41455659
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383381"
 ---
-# <a name="weeklyschedule-enum-type"></a><span data-ttu-id="25e3c-103">weeklySchedule 枚举类型</span><span class="sxs-lookup"><span data-stu-id="25e3c-103">weeklySchedule enum type</span></span>
+# <a name="weeklyschedule-enum-type"></a><span data-ttu-id="eca3b-103">weeklySchedule 枚举类型</span><span class="sxs-lookup"><span data-stu-id="eca3b-103">weeklySchedule enum type</span></span>
 
-> <span data-ttu-id="25e3c-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="25e3c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="eca3b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="eca3b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="25e3c-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="25e3c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="eca3b-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="eca3b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="25e3c-106">每周计划的可能值。</span><span class="sxs-lookup"><span data-stu-id="25e3c-106">Possible values for a weekly schedule.</span></span>
+> <span data-ttu-id="eca3b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="eca3b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="25e3c-107">成员</span><span class="sxs-lookup"><span data-stu-id="25e3c-107">Members</span></span>
-|<span data-ttu-id="25e3c-108">成员</span><span class="sxs-lookup"><span data-stu-id="25e3c-108">Member</span></span>|<span data-ttu-id="25e3c-109">值</span><span class="sxs-lookup"><span data-stu-id="25e3c-109">Value</span></span>|<span data-ttu-id="25e3c-110">说明</span><span class="sxs-lookup"><span data-stu-id="25e3c-110">Description</span></span>|
+<span data-ttu-id="eca3b-107">每周计划的可能值。</span><span class="sxs-lookup"><span data-stu-id="eca3b-107">Possible values for a weekly schedule.</span></span>
+
+## <a name="members"></a><span data-ttu-id="eca3b-108">成员</span><span class="sxs-lookup"><span data-stu-id="eca3b-108">Members</span></span>
+|<span data-ttu-id="eca3b-109">成员</span><span class="sxs-lookup"><span data-stu-id="eca3b-109">Member</span></span>|<span data-ttu-id="eca3b-110">值</span><span class="sxs-lookup"><span data-stu-id="eca3b-110">Value</span></span>|<span data-ttu-id="eca3b-111">说明</span><span class="sxs-lookup"><span data-stu-id="eca3b-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="25e3c-111">定制</span><span class="sxs-lookup"><span data-stu-id="25e3c-111">userDefined</span></span>|<span data-ttu-id="25e3c-112">0</span><span class="sxs-lookup"><span data-stu-id="25e3c-112">0</span></span>|<span data-ttu-id="25e3c-113">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="25e3c-113">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="25e3c-114">日常</span><span class="sxs-lookup"><span data-stu-id="25e3c-114">everyday</span></span>|<span data-ttu-id="25e3c-115">1</span><span class="sxs-lookup"><span data-stu-id="25e3c-115">1</span></span>|<span data-ttu-id="25e3c-116">日常.</span><span class="sxs-lookup"><span data-stu-id="25e3c-116">Everyday.</span></span>|
-|<span data-ttu-id="25e3c-117">日</span><span class="sxs-lookup"><span data-stu-id="25e3c-117">sunday</span></span>|<span data-ttu-id="25e3c-118">双面</span><span class="sxs-lookup"><span data-stu-id="25e3c-118">2</span></span>|<span data-ttu-id="25e3c-119">星期日。</span><span class="sxs-lookup"><span data-stu-id="25e3c-119">Sunday.</span></span>|
-|<span data-ttu-id="25e3c-120">星期一</span><span class="sxs-lookup"><span data-stu-id="25e3c-120">monday</span></span>|<span data-ttu-id="25e3c-121">第三章</span><span class="sxs-lookup"><span data-stu-id="25e3c-121">3</span></span>|<span data-ttu-id="25e3c-122">星期一。</span><span class="sxs-lookup"><span data-stu-id="25e3c-122">Monday.</span></span>|
-|<span data-ttu-id="25e3c-123">2001</span><span class="sxs-lookup"><span data-stu-id="25e3c-123">tuesday</span></span>|<span data-ttu-id="25e3c-124">4 </span><span class="sxs-lookup"><span data-stu-id="25e3c-124">4</span></span>|<span data-ttu-id="25e3c-125">星期二。</span><span class="sxs-lookup"><span data-stu-id="25e3c-125">Tuesday.</span></span>|
-|<span data-ttu-id="25e3c-126">星期三</span><span class="sxs-lookup"><span data-stu-id="25e3c-126">wednesday</span></span>|<span data-ttu-id="25e3c-127">5 </span><span class="sxs-lookup"><span data-stu-id="25e3c-127">5</span></span>|<span data-ttu-id="25e3c-128">星期三。</span><span class="sxs-lookup"><span data-stu-id="25e3c-128">Wednesday.</span></span>|
-|<span data-ttu-id="25e3c-129">星期三</span><span class="sxs-lookup"><span data-stu-id="25e3c-129">thursday</span></span>|<span data-ttu-id="25e3c-130">6 </span><span class="sxs-lookup"><span data-stu-id="25e3c-130">6</span></span>|<span data-ttu-id="25e3c-131">星期四。</span><span class="sxs-lookup"><span data-stu-id="25e3c-131">Thursday.</span></span>|
-|<span data-ttu-id="25e3c-132">之前</span><span class="sxs-lookup"><span data-stu-id="25e3c-132">friday</span></span>|<span data-ttu-id="25e3c-133">7 </span><span class="sxs-lookup"><span data-stu-id="25e3c-133">7</span></span>|<span data-ttu-id="25e3c-134">星期五。</span><span class="sxs-lookup"><span data-stu-id="25e3c-134">Friday.</span></span>|
-|<span data-ttu-id="25e3c-135">星期六</span><span class="sxs-lookup"><span data-stu-id="25e3c-135">saturday</span></span>|<span data-ttu-id="25e3c-136">8 </span><span class="sxs-lookup"><span data-stu-id="25e3c-136">8</span></span>|<span data-ttu-id="25e3c-137">星期六。</span><span class="sxs-lookup"><span data-stu-id="25e3c-137">Saturday.</span></span>|
-|<span data-ttu-id="25e3c-138">noScheduledScan</span><span class="sxs-lookup"><span data-stu-id="25e3c-138">noScheduledScan</span></span>|<span data-ttu-id="25e3c-139">9 </span><span class="sxs-lookup"><span data-stu-id="25e3c-139">9</span></span>|<span data-ttu-id="25e3c-140">无计划扫描</span><span class="sxs-lookup"><span data-stu-id="25e3c-140">No Scheduled Scan</span></span>|
+|<span data-ttu-id="eca3b-112">定制</span><span class="sxs-lookup"><span data-stu-id="eca3b-112">userDefined</span></span>|<span data-ttu-id="eca3b-113">0</span><span class="sxs-lookup"><span data-stu-id="eca3b-113">0</span></span>|<span data-ttu-id="eca3b-114">用户定义，默认值，无意向。</span><span class="sxs-lookup"><span data-stu-id="eca3b-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="eca3b-115">日常</span><span class="sxs-lookup"><span data-stu-id="eca3b-115">everyday</span></span>|<span data-ttu-id="eca3b-116">1</span><span class="sxs-lookup"><span data-stu-id="eca3b-116">1</span></span>|<span data-ttu-id="eca3b-117">日常.</span><span class="sxs-lookup"><span data-stu-id="eca3b-117">Everyday.</span></span>|
+|<span data-ttu-id="eca3b-118">日</span><span class="sxs-lookup"><span data-stu-id="eca3b-118">sunday</span></span>|<span data-ttu-id="eca3b-119">双面</span><span class="sxs-lookup"><span data-stu-id="eca3b-119">2</span></span>|<span data-ttu-id="eca3b-120">星期日。</span><span class="sxs-lookup"><span data-stu-id="eca3b-120">Sunday.</span></span>|
+|<span data-ttu-id="eca3b-121">星期一</span><span class="sxs-lookup"><span data-stu-id="eca3b-121">monday</span></span>|<span data-ttu-id="eca3b-122">第三章</span><span class="sxs-lookup"><span data-stu-id="eca3b-122">3</span></span>|<span data-ttu-id="eca3b-123">星期一。</span><span class="sxs-lookup"><span data-stu-id="eca3b-123">Monday.</span></span>|
+|<span data-ttu-id="eca3b-124">2001</span><span class="sxs-lookup"><span data-stu-id="eca3b-124">tuesday</span></span>|<span data-ttu-id="eca3b-125">4 </span><span class="sxs-lookup"><span data-stu-id="eca3b-125">4</span></span>|<span data-ttu-id="eca3b-126">星期二。</span><span class="sxs-lookup"><span data-stu-id="eca3b-126">Tuesday.</span></span>|
+|<span data-ttu-id="eca3b-127">星期三</span><span class="sxs-lookup"><span data-stu-id="eca3b-127">wednesday</span></span>|<span data-ttu-id="eca3b-128">5 </span><span class="sxs-lookup"><span data-stu-id="eca3b-128">5</span></span>|<span data-ttu-id="eca3b-129">星期三。</span><span class="sxs-lookup"><span data-stu-id="eca3b-129">Wednesday.</span></span>|
+|<span data-ttu-id="eca3b-130">星期三</span><span class="sxs-lookup"><span data-stu-id="eca3b-130">thursday</span></span>|<span data-ttu-id="eca3b-131">6 </span><span class="sxs-lookup"><span data-stu-id="eca3b-131">6</span></span>|<span data-ttu-id="eca3b-132">星期四。</span><span class="sxs-lookup"><span data-stu-id="eca3b-132">Thursday.</span></span>|
+|<span data-ttu-id="eca3b-133">之前</span><span class="sxs-lookup"><span data-stu-id="eca3b-133">friday</span></span>|<span data-ttu-id="eca3b-134">7 </span><span class="sxs-lookup"><span data-stu-id="eca3b-134">7</span></span>|<span data-ttu-id="eca3b-135">星期五。</span><span class="sxs-lookup"><span data-stu-id="eca3b-135">Friday.</span></span>|
+|<span data-ttu-id="eca3b-136">星期六</span><span class="sxs-lookup"><span data-stu-id="eca3b-136">saturday</span></span>|<span data-ttu-id="eca3b-137">8 </span><span class="sxs-lookup"><span data-stu-id="eca3b-137">8</span></span>|<span data-ttu-id="eca3b-138">星期六。</span><span class="sxs-lookup"><span data-stu-id="eca3b-138">Saturday.</span></span>|
+|<span data-ttu-id="eca3b-139">noScheduledScan</span><span class="sxs-lookup"><span data-stu-id="eca3b-139">noScheduledScan</span></span>|<span data-ttu-id="eca3b-140">9 </span><span class="sxs-lookup"><span data-stu-id="eca3b-140">9</span></span>|<span data-ttu-id="eca3b-141">无计划扫描</span><span class="sxs-lookup"><span data-stu-id="eca3b-141">No Scheduled Scan</span></span>|
 
 
 
