@@ -1,20 +1,20 @@
 ---
 title: 更新 outlooktaskfolder
 description: 更新 Outlook 任务文件夹的可写属性。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dc8c04137ef2a8b9acafe852b411617794fbf19d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2b8ec85c944ac1eea383e107d363525d44ed31
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456136"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389582"
 ---
 # <a name="update-outlooktaskfolder"></a>更新 outlooktaskfolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|String|任务文件夹的名称。|
+|name|字符串|任务文件夹的名称。|
 
 ## <a name="response"></a>响应
 

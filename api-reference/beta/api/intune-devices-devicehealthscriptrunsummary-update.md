@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceHealthScriptRunSummary
 description: 更新 deviceHealthScriptRunSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c1f56c3f379db209ec1bef61a580e9d729ea5012
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 269f70594fbc171bb789a781f5f40497ba915d11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814503"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380465"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
+|id|字符串|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
 |noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数|
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量|
@@ -114,7 +116,6 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

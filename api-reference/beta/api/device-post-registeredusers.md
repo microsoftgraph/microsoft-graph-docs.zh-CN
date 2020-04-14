@@ -1,20 +1,20 @@
 ---
 title: 创建 registeredUser
 description: 添加设备的已注册用户。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64552a42ffc557683c68a33cd060e4f8d73c208b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ab9c4a526faa5aa7d5f899bcc3655dae74033c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435561"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381741"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

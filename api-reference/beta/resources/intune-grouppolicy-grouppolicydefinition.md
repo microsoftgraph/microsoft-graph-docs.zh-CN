@@ -1,18 +1,20 @@
 ---
 title: groupPolicyDefinition 资源类型
 description: 实体描述有关单个组策略的所有信息。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e99b32687c0a93673cdbf8889b05e6423cc73c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 05021b93dfae495941d13b3f18cb01d7e7c0a706
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783021"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376993"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -31,12 +33,12 @@ ms.locfileid: "42783021"
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组的类型。 可取值为：`user`、`machine`。|
 |displayName|String|本地化策略名称。|
-|explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。|
-|categoryPath|String|策略的本地化完整类别路径。|
-|supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
+|explainText|字符串|与策略关联的本地化说明或帮助文本。 默认值为空白。|
+|categoryPath|字符串|策略的本地化完整类别路径。|
+|supportedOn|字符串|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
 |groupPolicyCategoryId|Guid|父类别的类别 id|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系

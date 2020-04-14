@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceInstallState
 description: 创建新的 deviceInstallState 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05737311591168f951c8f1e7b83b96f1b6564326
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f2d9ba02725310958f5ce52b6b0fb48a76e16a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760555"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392835"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,14 +54,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|deviceName|String|设备名称。|
-|deviceId|String|设备 ID。|
+|id|字符串|实体的键。|
+|deviceName|字符串|设备名称。|
+|deviceId|字符串|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|String|安装失败的错误代码。|
-|osVersion|String|操作系统版本。|
-|osDescription|String|操作系统说明。|
+|errorCode|字符串|安装失败的错误代码。|
+|osVersion|字符串|操作系统版本。|
+|osDescription|字符串|操作系统说明。|
 |userName|String|设备用户名。|
 
 
@@ -109,7 +111,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

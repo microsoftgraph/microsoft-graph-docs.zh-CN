@@ -1,18 +1,20 @@
 ---
 title: 获取 securityBaselineCategoryStateSummary
 description: 读取 securityBaselineCategoryStateSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e126abf5053e1bbdf1faf1f610a664cb760ee48
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 68147633f82236b3bf13ad798cba19146f430261
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381314"
 ---
 # <a name="get-securitybaselinecategorystatesummary"></a>获取 securityBaselineCategoryStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +84,6 @@ Content-Length: 347
   }
 }
 ```
-
 
 
 

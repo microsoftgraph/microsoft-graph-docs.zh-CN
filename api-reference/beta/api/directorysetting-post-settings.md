@@ -2,15 +2,15 @@
 title: 创建目录设置
 description: 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。
 localization_priority: Normal
-author: dkershaw10
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4ea31a19fecec509dcf47e96e3dadc8ab420e1f2
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c4bc56c34da07d5e8f1d367c4187c5709b130698
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180614"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375619"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 

@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceHealthScriptDeviceState
 description: 更新 deviceHealthScriptDeviceState 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fb1ce759be5b8482b29199095a4e3da32f614ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76bb9f37148233b34f6ad56896debed5872a2924
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814517"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380535"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>更新 deviceHealthScriptDeviceState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,16 +53,16 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
+|id|字符串|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|应在何时执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|String|修正前的检测脚本输出|
-|preRemediationDetectionScriptError|String|修正前的检测脚本中的错误|
-|remediationScriptError|String|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
-|postRemediationDetectionScriptError|String|更正后来自检测脚本的错误|
+|preRemediationDetectionScriptOutput|字符串|修正前的检测脚本输出|
+|preRemediationDetectionScriptError|字符串|修正前的检测脚本中的错误|
+|remediationScriptError|字符串|修正脚本的错误输出|
+|postRemediationDetectionScriptOutput|字符串|修正后的检测脚本输出|
+|postRemediationDetectionScriptError|字符串|更正后来自检测脚本的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|来自 lastest 设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 
 
@@ -114,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备 Exchange 访问状态原因。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00f9c44237052b4f15917763c6452c1a909543fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b00f25dd6936e4fd664106d2903ed3451a5ca496
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784921"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388336"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -35,7 +37,7 @@ ms.locfileid: "42784921"
 |notCompliant|9 |由合规性挑战吊销的访问状态|
 |notEnrolled|10 |由管理质询吊销的访问状态|
 |unknownLocation|12 |由于未知位置导致的访问状态|
-|mfaRequired|13 |由于 MFA 质询而导致的访问状态|
+|mfaRequired|13|由于 MFA 质询而导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |由 AAD 访问策略吊销的访问状态|
 |compromisedPassword|15 |通过密码被破解的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|16 |由托管应用程序质询吊销的访问状态|

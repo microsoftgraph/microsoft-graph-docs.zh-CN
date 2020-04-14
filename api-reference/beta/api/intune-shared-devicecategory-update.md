@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da1a4ea9d886b331fd0b2b0e2ccb0f6b9512a8b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 029a793172ef2ce7b9d9a279e1b3fcc746631d63
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390936"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -73,7 +75,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
-|说明|String|设备类别的可选说明。|
+|description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应
@@ -115,7 +117,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

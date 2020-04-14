@@ -2,17 +2,19 @@
 title: 获取 officeClientConfiguration
 description: 获取特定策略。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a7e85b29a5f60b8a12bd5c26635d71aa4c397fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 235e2b498b788d15268de197364442d8f7bb75e1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760303"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392167"
 ---
 # <a name="get-officeclientconfiguration"></a>获取 officeClientConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
@@ -100,7 +102,6 @@ Content-Length: 1137
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: deviceManagementExchangeAccessState 枚举类型
 description: 设备交换访问状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ddc44952bb69288f70fb368309eaf2ef1bfe8f49
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 309f3ead8ae67d3dda4c8c6f6d6a27a701f96d21
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784928"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388351"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

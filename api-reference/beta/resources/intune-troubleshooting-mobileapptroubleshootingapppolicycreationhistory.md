@@ -1,18 +1,20 @@
 ---
 title: mobileAppTroubleshootingAppPolicyCreationHistory 资源类型
 description: 移动应用故障排除事件中包含的历史记录项。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a322c09c5c9dc4acce593846238e95c49d0fde6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6a0f9e25145040347b8124442fa2639bbbcd0072
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385435"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

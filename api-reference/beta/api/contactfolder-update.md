@@ -1,20 +1,20 @@
 ---
 title: 更新 contactfolder
 description: 更新 contactfolder 对象的属性。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4380fafe842af304b8dfd99b86cae3d499669b03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cc54c66b9c3df97c97b783f1ae3f8639e7bb71a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375901"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

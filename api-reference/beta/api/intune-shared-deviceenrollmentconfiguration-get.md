@@ -1,18 +1,20 @@
 ---
 title: 获取 deviceEnrollmentConfiguration
 description: 读取 deviceEnrollmentConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0e90822aed702f7fa515846891f26d29f57fe46
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bfe7d8cb231222f6f83c1c01a069618c00cfc092
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801108"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390343"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>获取 deviceEnrollmentConfiguration
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +87,6 @@ Content-Length: 392
   }
 }
 ```
-
 
 
 

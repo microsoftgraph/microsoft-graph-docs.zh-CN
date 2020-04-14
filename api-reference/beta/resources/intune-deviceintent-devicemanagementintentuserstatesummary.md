@@ -1,18 +1,20 @@
 ---
 title: deviceManagementIntentUserStateSummary 资源类型
 description: 表示意向的用户状态摘要的实体
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99ce255d857466989b1382aa672d65b7e78acaac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77613d72f616fcaa3e179b56fcea1deed1053aef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785384"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389296"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>deviceManagementIntentUserStateSummary 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42785384"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |conflictCount|Int32|发生冲突的用户数|
 |errorCount|Int32|错误用户数|
 |failedCount|Int32|失败的用户数|

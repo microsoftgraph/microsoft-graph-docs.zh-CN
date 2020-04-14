@@ -2,15 +2,15 @@
 title: 获取日历
 description: '获取 calendar 对象的属性和关系。 相应日历可以是用户的日历， '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb323f06765a1a1bc432f1740fd1ce8ba3fb8125
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 6d1573ca89abf845f49a9ca817c4d82b2aa80090
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639630"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376094"
 ---
 # <a name="get-calendar"></a>获取日历
 

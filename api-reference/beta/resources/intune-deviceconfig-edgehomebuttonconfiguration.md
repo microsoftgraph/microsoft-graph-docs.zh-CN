@@ -1,18 +1,20 @@
 ---
 title: edgeHomeButtonConfiguration 资源类型
 description: 用于标识可用选项的 "主页" 按钮配置基类
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46e225cb83bd7ade2ae4b6907fefdc7e8f3074d2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 718d7180f4d474b0a08c87a98b5d22d6a9792b3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791910"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386397"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>edgeHomeButtonConfiguration 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceHealthScript
 description: 创建新的 deviceHealthScript 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5638b7ac4452531e4da173dd3bab53a42ce7e339
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6956bb460b3429cf919e9c2e84ccc751d090a7ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814643"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380916"
 ---
 # <a name="create-devicehealthscript"></a>创建 deviceHealthScript
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,20 +54,20 @@ POST /deviceManagement/deviceHealthScripts
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
-|发布者|String|设备运行状况脚本发布者的名称|
+|发布者|字符串|设备运行状况脚本发布者的名称|
 |version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
-|说明|String|设备运行状况脚本的说明|
+|description|String|设备运行状况脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |remediationScriptContent|Binary|修正 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|布尔值|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
-|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|highestAvailableVersion|字符串|Microsoft 专用脚本的最高可用版本|
 
 
 
@@ -128,7 +130,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

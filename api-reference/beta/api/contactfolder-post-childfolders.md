@@ -1,20 +1,20 @@
 ---
 title: 创建 ContactFolder
 description: '创建新的 contactFolder 作为指定文件夹的子文件夹。 '
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f782f32bd08532cad2efb10a101e3f96230bdbe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73360e3df950de638a265cbe7c759c2085adaced
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436872"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375908"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementExportJob
 description: 删除 deviceManagementExportJob。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8fa809f335a004bc16e89d84526e2e91b1e8b90
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 80292d4840aa8c1dda09277124783f5b3b7aecf1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801430"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377251"
 ---
 # <a name="delete-devicemanagementexportjob"></a>删除 deviceManagementExportJob
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 activeDirectoryWindowsAutopilotDeploymentProfile
 description: 删除 activeDirectoryWindowsAutopilotDeploymentProfile。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffe8d8170c84df28490f313e4a2274c31e125c0c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 69e407121223048c03060626051c452db888c927
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813563"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43378112"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>删除 activeDirectoryWindowsAutopilotDeploymentProfile
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

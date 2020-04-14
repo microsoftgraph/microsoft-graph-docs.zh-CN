@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementScriptGroupAssignment
 description: 创建新的 deviceManagementScriptGroupAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c6980fe83c3cb935139a5bac49f2a9883c5d4b8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d78dfba82625f21defc51fcbc0920e6509eef945
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814426"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380451"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,8 +54,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
-|targetGroupId|String|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
+|targetGroupId|字符串|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
 
@@ -88,7 +90,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

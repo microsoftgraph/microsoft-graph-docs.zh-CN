@@ -2,19 +2,19 @@
 title: 更新 bookingbusiness
 description: 更新 bookingBusiness 对象的属性。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b150db37b78bb4c09bbaa1f1b91f569db754b352
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b820d65a50b2a07bd1c3e95936bc6ee304f20d96
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376602"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,13 +45,13 @@ PATCH /bookingBusinesses/{id}
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务的运行时间。|
-|businessType|String|企业的类型。|
-|defaultCurrencyIso|String|业务在 Microsoft 预订中所运行的货币的代码。|
+|businessType|字符串|企业的类型。|
+|defaultCurrencyIso|字符串|业务在 Microsoft 预订中所运行的货币的代码。|
 |displayName|字符串|与客户进行交互的企业的名称。|
 |email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
-|webSiteUrl|String|业务网站的 URL。|
+|webSiteUrl|字符串|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。

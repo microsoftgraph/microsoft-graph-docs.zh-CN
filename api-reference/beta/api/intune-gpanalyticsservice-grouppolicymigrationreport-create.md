@@ -1,18 +1,20 @@
 ---
 title: 创建 groupPolicyMigrationReport
 description: 创建新的 groupPolicyMigrationReport 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7c5844c1c1d21c87ff3957083038ef7aa5feffb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0c0e52db29b0ce0545b42aa6951afdb4f887b511
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804637"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384134"
 ---
 # <a name="create-grouppolicymigrationreport"></a>创建 groupPolicyMigrationReport
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,16 +53,16 @@ POST /deviceManagement/groupPolicyMigrationReports
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |groupPolicyObjectId|Guid|GPO Xml 内容中的组策略对象 GUID|
 |displayName|String|来自 GPO Xml 内容的组策略对象的名称|
-|ouDistinguishedName|String|OU 的可分辨名称。|
+|ouDistinguishedName|字符串|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|GroupPolicyMigrationReport 的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |groupPolicyCreatedDateTime|DateTimeOffset|GroupPolicyMigrationReport 的创建日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|相关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|布尔值|来自 GPO Xml 内容的 AD 属性中的目标|
+|targetedInActiveDirectory|Boolean|来自 GPO Xml 内容的 AD 属性中的目标|
 |totalSettingsCount|Int32|GPO 文件中的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组策略设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置的百分比。|
@@ -118,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

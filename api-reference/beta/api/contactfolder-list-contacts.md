@@ -2,19 +2,19 @@
 title: 列出联系人
 description: 获取登录用户的邮箱中的所有联系人（../me/contacts），或从指定的联系人文件夹中获取。
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 052569c5c58f0e3cfb932724b549767d984b8ca7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d3013bef0b24e48c850af9b664d829d6ce792c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436893"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381921"
 ---
 # <a name="list-contacts"></a>列出联系人
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

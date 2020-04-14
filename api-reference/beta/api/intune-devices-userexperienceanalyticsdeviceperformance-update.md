@@ -1,18 +1,20 @@
 ---
 title: 更新 userExperienceAnalyticsDevicePerformance
 description: 更新 userExperienceAnalyticsDevicePerformance 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62beda431bf34efafadc73c1fff7db87ef67a33f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75719a81a38e70cfbfc487710358a9f75e866690
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813956"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379642"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>更新 userExperienceAnalyticsDevicePerformance
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,12 +53,12 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动性能设备的唯一标识符。|
-|deviceName|String|User experience analytics 设备名称。|
-|model|String|User experience analytics 设备模型。|
+|id|字符串|User experience analytics 设备启动性能设备的唯一标识符。|
+|deviceName|字符串|User experience analytics 设备名称。|
+|model|字符串|User experience analytics 设备模型。|
 |manufacturer|String|User experience analytics 设备制造商。|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|User experience analytics 设备磁盘类型。 可取值为：`unkown`、`hdd`、`ssd`。|
-|operatingSystemVersion|String|User experience analytics 设备操作系统版本。|
+|operatingSystemVersion|字符串|User experience analytics 设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动得分。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|User experience analytics device group policy boot time （以毫秒为单位）。|
@@ -126,7 +128,6 @@ Content-Length: 578
   "responsiveDesktopTimeInMs": 9
 }
 ```
-
 
 
 

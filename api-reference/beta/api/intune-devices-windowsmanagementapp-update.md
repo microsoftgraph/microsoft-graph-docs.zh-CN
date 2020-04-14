@@ -1,18 +1,20 @@
 ---
 title: 更新 windowsManagementApp
 description: 更新 windowsManagementApp 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3364080e38e36fa344d71d6a0b9d8fa0d48ffea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6d28de562a46828764d29ca0c0c453bf229d43d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813626"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43378374"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,8 +53,8 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用程序的唯一标识符|
-|availableVersion|String|Windows 管理应用程序的可用版本。|
+|id|字符串|Windows 管理应用程序的唯一标识符|
+|availableVersion|字符串|Windows 管理应用程序的可用版本。|
 
 
 
@@ -87,7 +89,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
 
 
 

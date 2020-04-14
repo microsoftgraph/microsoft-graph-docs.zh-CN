@@ -1,18 +1,20 @@
 ---
 title: summarizeDeviceRegressionPerformance 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50413f9d1a38d780d91b55a2c7908487fb70c32a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 06eb30966ee37a5583a2792340515aad45bea91e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379082"
 ---
 # <a name="summarizedeviceregressionperformance-function"></a>summarizeDeviceRegressionPerformance 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -79,7 +81,6 @@ Content-Length: 154
   }
 }
 ```
-
 
 
 

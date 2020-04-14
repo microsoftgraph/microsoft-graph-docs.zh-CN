@@ -1,18 +1,20 @@
 ---
 title: 创建 userExperienceAnalyticsDeviceStartupHistory
 description: 创建新的 userExperienceAnalyticsDeviceStartupHistory 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca8232f2a013498dcc9dbcce5bfe2d9f1fd54a4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3c386b01a328667ced4c40159fffab3b9dc3302
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813949"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379563"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -62,9 +64,9 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
-|isFirstLogin|布尔值|User experience analytics 设备第一次登录。|
-|isFeatureUpdate|布尔值|User experience analytics 设备启动记录是一项功能更新。|
-|operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
+|isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
+|operatingSystemVersion|字符串|User experience analytics 设备启动记录的操作系统版本。|
 
 
 
@@ -123,7 +125,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

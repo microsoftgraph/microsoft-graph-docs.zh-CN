@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementSettingCategory
 description: 创建新的 deviceManagementSettingCategory 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 331437082df79e302c3ab9a2b3603fbf5e8963ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 52fe09f9c5ebd74c6d665f990836d1e0006a3c7b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815133"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381615"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>创建 deviceManagementSettingCategory
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,9 +53,9 @@ POST /deviceManagement/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|类别 ID|
+|id|字符串|类别 ID|
 |displayName|String|类别名称|
-|hasRequiredSetting|布尔值|类别包含 "必需顶级" 设置|
+|hasRequiredSetting|Boolean|类别包含 "必需顶级" 设置|
 
 
 
@@ -90,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

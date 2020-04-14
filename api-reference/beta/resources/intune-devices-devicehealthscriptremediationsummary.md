@@ -1,18 +1,20 @@
 ---
 title: deviceHealthScriptRemediationSummary 资源类型
 description: 已部署的设备运行状况脚本数以及脚本修正的设备数。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b59f2d057f258e60a8182194c1ac930e95012b93
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ca477131c3051161b17ed3f3e90aaf172662dfc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784942"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388445"
 ---
 # <a name="devicehealthscriptremediationsummary-resource-type"></a>deviceHealthScriptRemediationSummary 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

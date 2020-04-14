@@ -2,19 +2,19 @@
 title: 创建 bookingStaffMember
 description: 在指定的 bookingbusiness 中创建新的教职员工成员。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: fc38c6bac1a775d2d3848cb6bf2938a0ac1c08c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 192450cfa493e54fbcf6287d3f1928865da7f1a1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441156"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376736"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

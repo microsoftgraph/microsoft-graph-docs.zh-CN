@@ -1,20 +1,20 @@
 ---
 title: 删除日历
 description: 删除默认日历以外的日历。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a42f3c8c4350f4c239a779cc27133a2201b5f3ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95c7327dba583546117bff0d2e29fbada4a423ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376189"
 ---
 # <a name="delete-calendar"></a>删除日历
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

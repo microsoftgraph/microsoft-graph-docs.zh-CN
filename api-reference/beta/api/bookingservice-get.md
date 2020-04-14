@@ -2,19 +2,19 @@
 title: 获取 bookingService
 description: 获取指定 bookingbusiness 中的 bookingService 对象的属性和关系。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f0bf4dc757a7d7b1a8206cbcc730e48ad23ed0e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53145c7b99cb0789ab7a1b1f2355981079b8b483
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441086"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376377"
 ---
 # <a name="get-bookingservice"></a>获取 bookingService
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

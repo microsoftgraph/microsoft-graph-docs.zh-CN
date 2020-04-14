@@ -2,19 +2,19 @@
 title: 设备： checkMemberObjects
 description: 检查指定的设备对象的组、目录角色或管理单位列表中的成员资格。
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5211ae45f2e6643023352b84508755f920c76dd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaed357620258430f2c84d35842612326368ca10
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387060"
 ---
 # <a name="device-checkmemberobjects"></a>设备： checkMemberObjects
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

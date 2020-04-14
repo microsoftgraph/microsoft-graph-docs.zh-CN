@@ -1,18 +1,20 @@
 ---
 title: deviceHealthScriptRunSummary 资源类型
 description: 包含设备管理脚本的运行摘要的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1be7c470bb2776b16f74f352dc93e1f56163abf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd5a96191780b113fea84ea6534e5a47ad8890c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784935"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388406"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42784935"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
+|id|字符串|设备运行状况脚本的键运行摘要实体。 此属性是只读的。|
 |noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数|
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量|

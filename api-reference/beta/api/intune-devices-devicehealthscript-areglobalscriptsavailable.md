@@ -1,18 +1,20 @@
 ---
 title: areGlobalScriptsAvailable 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c253f7b10c33c763083f5c50429f50998af38201
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: afd259cc97b72863ac78dfdb1ab46e9f73bd02af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814657"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380970"
 ---
 # <a name="areglobalscriptsavailable-function"></a>areGlobalScriptsAvailable 函数
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -69,7 +71,6 @@ Content-Length: 26
   "value": "pending"
 }
 ```
-
 
 
 

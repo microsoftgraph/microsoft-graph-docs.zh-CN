@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagement
 description: 更新 deviceManagement 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aecca341cef5b88794f20a9d037b340c33bf97b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75bca64ce38779e0e9c1f905525414e5b0308f81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801031"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390050"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
+
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -38,7 +40,7 @@ ms.locfileid: "42801031"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -60,7 +62,7 @@ ms.locfileid: "42801031"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -96,10 +98,10 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一标识符。|
+|id|字符串|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -189,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

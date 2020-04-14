@@ -1,20 +1,20 @@
 ---
 title: 列出任务
 description: 获取指定文件夹中的所有 Outlook 任务。
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5a61aa1792bebfdd26970b4d9a5b028e286d6bea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a16f9b509f912c3fef5ed8c16b53596f017cd22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389674"
 ---
 # <a name="list-tasks"></a>列出任务
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

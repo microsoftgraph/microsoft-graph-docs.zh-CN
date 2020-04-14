@@ -2,19 +2,19 @@
 title: iPv6CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv6 范围。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1b27b94762eeaa1c93d269ffaddf6e0ba1bc55d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46c4742a65ec8826f363187eaaba05a1bfb8f893
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523140"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384960"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>iPv6CidrRange 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42523140"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|cidrAddress|String|CIDR 表示法中的 IPv6 地址|
+|cidrAddress|字符串|CIDR 表示法中的 IPv6 地址|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

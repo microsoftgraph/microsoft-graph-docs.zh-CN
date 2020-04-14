@@ -2,19 +2,19 @@
 title: 创建 directReport
 description: 使用此 API 创建新的 directReport。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 380f36b0b100d6f78c74ab0b0244ebe51fac6cde
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c89a0114aa6295d72ff73745f90b325e91c0aaa8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456231"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388529"
 ---
 # <a name="create-directreport"></a>创建 directReport
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

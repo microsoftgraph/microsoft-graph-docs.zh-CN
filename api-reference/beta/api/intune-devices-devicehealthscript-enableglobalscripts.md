@@ -1,18 +1,20 @@
 ---
 title: enableGlobalScripts 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39c210a641f2062ee0a670e6286cf093e1dbf583
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a4a21d1c9881ed7876a1bf0601ae20da363bff8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814629"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380854"
 ---
 # <a name="enableglobalscripts-action"></a>enableGlobalScripts 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/enabl
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

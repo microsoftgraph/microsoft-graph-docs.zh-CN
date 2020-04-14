@@ -2,15 +2,15 @@
 title: 更新 countryNamedlocation
 description: 更新 countryNamedLocation 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49ba8d1c9ce6f4217d0177141c76bbbbd8fbc27a
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: a6d69e8610159955dac4a4f90c57c3f731fafcef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061986"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381857"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 

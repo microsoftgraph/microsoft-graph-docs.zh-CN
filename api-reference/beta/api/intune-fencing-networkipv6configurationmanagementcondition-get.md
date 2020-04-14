@@ -1,18 +1,20 @@
 ---
 title: 获取 networkIPv6ConfigurationManagementCondition
 description: 读取 networkIPv6ConfigurationManagementCondition 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 54b35255b1e7b23fef67dfd2173463b11bca88b6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2c84907bf398cb092837d829f9c9087287a717ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804672"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384235"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>获取 networkIPv6ConfigurationManagementCondition
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -93,7 +95,6 @@ Content-Length: 708
   }
 }
 ```
-
 
 
 

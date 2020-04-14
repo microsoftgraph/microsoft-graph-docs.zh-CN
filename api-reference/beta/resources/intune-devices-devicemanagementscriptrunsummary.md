@@ -1,18 +1,20 @@
 ---
 title: deviceManagementScriptRunSummary 资源类型
 description: 包含设备管理脚本的运行摘要的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce974f3d5e024a9559f454e8837fd04183e4de9d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e39890bfd728e94dbb48e6420931dbdd00cf9c01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784893"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374514"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -29,7 +31,7 @@ ms.locfileid: "42784893"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本运行摘要实体的键。 此属性是只读的。|
+|id|字符串|设备管理脚本运行摘要实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|

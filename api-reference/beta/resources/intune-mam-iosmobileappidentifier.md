@@ -1,18 +1,20 @@
 ---
 title: iosMobileAppIdentifier 资源类型
 description: iOS 应用的标识符。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10744d417738baf6f0d83a287a5e518fa6e55b60
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 88dd590887954334ce9a419f8140a41c8fdd5647
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782361"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374099"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

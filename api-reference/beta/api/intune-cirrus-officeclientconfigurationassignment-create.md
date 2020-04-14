@@ -2,17 +2,19 @@
 title: 创建 officeClientConfigurationAssignment
 description: 将目标组添加到现有策略中。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b666bf28f29a3f03504f52c2507a4b4fb253acec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e9517ee0937146a7e05b016d5f58a49236ca229
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760282"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392006"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>创建 officeClientConfigurationAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|OfficeConfigurationAssignment 的 Id。|
+|id|字符串|OfficeConfigurationAssignment 的 Id。|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|由管理员定义的目标分配。|
 
 
@@ -91,7 +93,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

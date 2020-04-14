@@ -1,18 +1,20 @@
 ---
 title: 更新 userExperienceAnalyticsRegressionSummary
 description: 更新 userExperienceAnalyticsRegressionSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fa85edbe35ec567557e82330d56cf042d258817
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2bf55cb371c4bf6b59dfd5b6143eeef8a16abc83
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379035"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>更新 userExperienceAnalyticsRegressionSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 回归摘要的唯一标识符。|
+|id|字符串|User experience analytics 回归摘要的唯一标识符。|
 
 
 
@@ -84,7 +86,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementScriptPolicySetItem
 description: 删除 deviceManagementScriptPolicySetItem。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e167838ef9362a27593e497955bbefd8e149ddcf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: da477446dad0dfd7f226d1fc5cbc4598177245d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802382"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377398"
 ---
 # <a name="delete-devicemanagementscriptpolicysetitem"></a>删除 deviceManagementScriptPolicySetItem
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

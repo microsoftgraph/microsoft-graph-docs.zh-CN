@@ -1,18 +1,20 @@
 ---
 title: 创建 securityBaselineCategoryStateSummary
 description: 创建新的 securityBaselineCategoryStateSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a61841aaa1f1902da7f32694583bf1653e5294fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99123c0dd864d4a876489b4da51ac3391a31af31
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381391"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>创建 securityBaselineCategoryStateSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。 继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
+|id|字符串|实体的唯一标识符。 继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |secureCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的安全设备的数量|
 |notSecureCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的不安全设备的数量|
 |unknownCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的未知设备的数量|
@@ -105,7 +107,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

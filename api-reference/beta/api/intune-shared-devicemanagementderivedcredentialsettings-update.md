@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementDerivedCredentialSettings
 description: 更新 deviceManagementDerivedCredentialSettings 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 534b388975f40e269f006414a6dd39885211f7aa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8acef91bdb015c7bd65a5eaa81145e58f9132701
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800996"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389823"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>更新 deviceManagementDerivedCredentialSettings
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -60,9 +62,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|派生凭据的唯一标识符|
+|id|字符串|派生凭据的唯一标识符|
 |**RA 策略**|
-|helpUrl|String|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
+|helpUrl|字符串|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
 |displayName|String|配置文件的显示名称。|
 |常用|deviceManagementDerivedCredentialIssuer|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
 |notificationType|deviceManagementDerivedCredentialNotificationType|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
@@ -97,7 +99,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

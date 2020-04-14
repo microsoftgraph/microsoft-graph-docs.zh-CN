@@ -1,16 +1,16 @@
 ---
 title: 删除目录设置
 description: 删除目录设置。
-author: dkershaw10
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 27eb77aebf0dac6eac352f370088d8729952ff96
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9bb979df437f9f3a18ad1fbc5351c39e041ae5b0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375784"
 ---
 # <a name="delete-a-directory-setting"></a>删除目录设置
 

@@ -2,19 +2,19 @@
 title: Update calendar
 description: '更新 calendar 对象的属性。 相应日历可以是用户的日历， '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 810e93dba4dcae60dce18366945382bd5ec8a2bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cb1f6cf1bc77d264d31007ec411b7b070151786
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440960"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376001"
 ---
 # <a name="update-calendar"></a>更新日历
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 |:---------------|:--------|:----------|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |isDefaultCalendar|Boolean|如果此日历是用户的默认日历，则值为 true，否则为 false。|
-|name|String|日历名称。|
+|name|字符串|日历名称。|
 
 ## <a name="response"></a>响应
 

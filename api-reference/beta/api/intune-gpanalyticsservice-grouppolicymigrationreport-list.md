@@ -1,18 +1,20 @@
 ---
 title: 列出 groupPolicyMigrationReports
 description: 列出 groupPolicyMigrationReport 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5211f12f0f7a8b55a2942236c522cc04c322c24c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf39d1a33fff366e19bc0953d23198a8c37c405c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383794"
 ---
 # <a name="list-grouppolicymigrationreports"></a>列出 groupPolicyMigrationReports
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -86,7 +88,6 @@ Content-Length: 805
   ]
 }
 ```
-
 
 
 

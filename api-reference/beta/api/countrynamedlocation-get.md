@@ -2,15 +2,15 @@
 title: 获取 countryNamedLocation
 description: 检索 countryNamedlocation 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6924dfd6cf01a12d423f02d9276d73271fba342f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: f4a5c55cf4130e9a02afd102416c93efcee441f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061931"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387067"
 ---
 # <a name="get-countrynamedlocation"></a>获取 countryNamedLocation
 

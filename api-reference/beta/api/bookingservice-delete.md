@@ -2,19 +2,19 @@
 title: 删除 bookingService
 description: 删除指定 bookingbusiness 中的 bookingService 对象。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a77f84c1f11257702ebd87103b4c88ba032d57b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72ba3311e1901dfef26459df04107a8a56331cba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441093"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376400"
 ---
 # <a name="delete-bookingservice"></a>删除 bookingService
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

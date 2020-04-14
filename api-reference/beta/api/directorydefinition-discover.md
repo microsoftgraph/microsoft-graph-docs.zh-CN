@@ -2,19 +2,19 @@
 title: directoryDefinition：发现
 description: '发现为应用程序预配的最新架构定义。 '
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 093622b9da3e59f7230547451eac8fc8aedd6bc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86ab651035693eb0477f0f6f6aa1275e5ed7c814
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435078"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386835"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition：发现
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

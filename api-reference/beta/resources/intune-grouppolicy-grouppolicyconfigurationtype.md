@@ -1,18 +1,20 @@
 ---
 title: groupPolicyConfigurationType 枚举类型
 description: 组策略配置类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 38e0eaef1fb4f76584fc791d0b5847832f186dbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77c8fb0663c4a10794472840c3709b3f006f8573
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377000"
 ---
 # <a name="grouppolicyconfigurationtype-enum-type"></a>groupPolicyConfigurationType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

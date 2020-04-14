@@ -1,18 +1,20 @@
 ---
 title: managedAppDiagnosticStatus 资源类型
 description: 表示诊断状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6020b6a8875b8e2aff2e92b007364fc3011da216
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c07342c22662998474ee9f703cefaca54094feab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43373032"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -23,7 +25,7 @@ ms.locfileid: "42781941"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|validationName|String|验证友好名称|
+|validationName|字符串|验证友好名称|
 |state|String|操作状态|
 |mitigationInstruction|String|有关如何降低失败验证的说明|
 

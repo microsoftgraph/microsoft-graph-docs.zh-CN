@@ -1,20 +1,20 @@
 ---
 title: 创建设备
 description: 创建新设备。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1383b7bd0b9406cd87e3beedd64609498330aa5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61570106a40d1635b036673d61e660cb64c2f40b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435645"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381803"
 ---
 # <a name="create-device"></a>创建设备
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

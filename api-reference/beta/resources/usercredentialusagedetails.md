@@ -2,19 +2,19 @@
 title: userCredentialUsageDetails 资源类型
 description: 表示给定租户的自助服务密码重置用法。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: cd71091293041d84f0f2c1d5436999fa5793037b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ff48554c7bab011171136181c7a1ab0ce8b01db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519531"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384975"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>userCredentialUsageDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,8 +34,8 @@ ms.locfileid: "42519531"
 | eventDateTime | DateTimeOffset | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
 | failureReason | String | 提供相应重置或注册工作流的失败原因。 |
 | 功能 | string | 可能的值为`registration` ： `reset`和。 |
-| id | String | 只读。 活动的唯一标识符。 只读。|
-| isSuccess | 布尔 | 指示工作流是成功还是失败。 |
+| id | 字符串 | 只读。 活动的唯一标识符。 只读。|
+| isSuccess | Boolean | 指示工作流是成功还是失败。 |
 | userDisplayName | String | 执行重置或注册工作流的用户的用户名。 |
 | userPrincipalName | 字符串 | 执行重置或注册工作流的用户的用户主体名称。 |
 

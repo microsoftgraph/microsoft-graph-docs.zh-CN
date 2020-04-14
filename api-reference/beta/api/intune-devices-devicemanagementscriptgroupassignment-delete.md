@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementScriptGroupAssignment
 description: 删除 deviceManagementScriptGroupAssignment。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 134dbeaabf84fc954b3ee149f30a4ff1d2c80382
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e279ce3a5a29f7e3a0f9763a1ab8be22d04f2fd4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814419"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380340"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>删除 deviceManagementScriptGroupAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

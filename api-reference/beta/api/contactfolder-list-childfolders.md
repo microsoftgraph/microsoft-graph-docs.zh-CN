@@ -1,20 +1,20 @@
 ---
 title: 列出 childFolder
 description: 获取指定联系人文件夹下的子文件夹的集合。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c1831a3dedf54fb9b2e5e7fcd9a0da9c6f88a815
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbeec13e6cf49b51b54180cce1f80d9a20141f57
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436970"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375923"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

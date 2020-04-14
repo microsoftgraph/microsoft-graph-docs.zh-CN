@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceManagementReportSchedule
 description: 删除 deviceManagementReportSchedule。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f58380e9e4472f6349b44fc3931264ec3d5b2fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 19b4dc185adeed0c71f131da53e04df881b7ddfe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801339"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391553"
 ---
 # <a name="delete-devicemanagementreportschedule"></a>删除 deviceManagementReportSchedule
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/reportSchedules
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

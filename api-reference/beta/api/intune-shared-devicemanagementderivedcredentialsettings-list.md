@@ -1,18 +1,20 @@
 ---
 title: 列出 deviceManagementDerivedCredentialSettingses
 description: 列出 deviceManagementDerivedCredentialSettings 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5a9af858fd5b1c2d19458abe4a733660d5f12a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a7dea6677d69695771674a18fa36d756441d5d1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801003"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389870"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>列出 deviceManagementDerivedCredentialSettingses
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -80,7 +82,6 @@ Content-Length: 347
   ]
 }
 ```
-
 
 
 

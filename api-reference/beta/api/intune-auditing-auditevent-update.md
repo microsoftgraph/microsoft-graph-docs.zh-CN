@@ -1,18 +1,20 @@
 ---
 title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd711eb0813f27f40481c328ffec489daee90f33
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dbd6ebfae64c34a79c09426e5784f06a4616040d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760562"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392858"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,17 +54,17 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|事件显示名称。|
-|componentName|String|组件名称。|
+|displayName|字符串|事件显示名称。|
+|componentName|字符串|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|String|活动的友好名称。|
+|activity|字符串|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|String|执行的活动类型。|
-|activityOperationType|String|活动的 HTTP 操作类型。|
+|activityType|字符串|执行的活动类型。|
+|activityOperationType|字符串|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|String|审核类别。|
+|“类别”|字符串|审核类别。|
 
 
 
@@ -185,7 +187,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
 
 
 

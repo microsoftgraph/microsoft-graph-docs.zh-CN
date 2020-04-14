@@ -1,20 +1,20 @@
 ---
 title: 列出 registeredUser
 description: 检索已注册为设备用户的用户列表。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bbd9049c30f761d9da4776c9390db7909eade042
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75410a900201110d04b52c9b1d2b65f5a9e0d4de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435813"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386849"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: managedAppDataIngestionLocation 枚举类型
 description: 可用于将数据导入到组织文档中的位置
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e7ec5f46055a3282dc0de46d4790df6fbfd53a10
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b13277e37234e0913b546257ad989491a69ece00
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782095"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43373197"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>managedAppDataIngestionLocation 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

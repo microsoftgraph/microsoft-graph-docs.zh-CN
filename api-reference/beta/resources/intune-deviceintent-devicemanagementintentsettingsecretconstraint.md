@@ -1,18 +1,20 @@
 ---
 title: deviceManagementIntentSettingSecretConstraint 资源类型
 description: 该约束指示此值是一个秘密且将被加密。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b247edd3326ddaf6e666d4bf798c2ba1a9d76606
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 195ac958cf6f5b617cceaff4706a3e7d156dbaf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785398"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385953"
 ---
 # <a name="devicemanagementintentsettingsecretconstraint-resource-type"></a>deviceManagementIntentSettingSecretConstraint 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

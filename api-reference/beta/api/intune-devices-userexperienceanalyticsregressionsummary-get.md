@@ -1,18 +1,20 @@
 ---
 title: 获取 userExperienceAnalyticsRegressionSummary
 description: 读取 userExperienceAnalyticsRegressionSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 824f9db671bf8244c1fab3635f8fa124421fb4fd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2498524508fbd4c388aa8894af109b8cd6513ca1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813794"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379121"
 ---
 # <a name="get-userexperienceanalyticsregressionsummary"></a>获取 userExperienceAnalyticsRegressionSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -75,7 +77,6 @@ Content-Length: 154
   }
 }
 ```
-
 
 
 

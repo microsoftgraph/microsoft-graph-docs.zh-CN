@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 使用此 API 在默认或指定的日历中创建新事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6838fa64501a8187ca0486598ac3c6e4d35ab268
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: c9dfdaaba6f9fb611a5ff5fe2db171b911bc344d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376040"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -65,7 +65,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-event-in-a-specific-calendar"></a>示例1：在特定日历中创建事件
+### <a name="example-1-create-an-event-in-a-specific-calendar"></a>示例 1：在特定日历中创建事件
 
 #### <a name="request"></a>请求
 下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的**transactionId**值。
@@ -224,7 +224,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>示例2：创建和启用作为联机会议的事件
+### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>示例 2：创建事件并启用为联机会议
 
 #### <a name="request"></a>请求
 下面的示例在已登录用户的指定日历中创建一个事件，并将其作为联机会议来启用。

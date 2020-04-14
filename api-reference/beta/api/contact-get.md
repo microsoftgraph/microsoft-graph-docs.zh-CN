@@ -1,20 +1,20 @@
 ---
 title: 获取联系人
 description: 检索 contact 对象的属性和关系。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d6b43844bb2b94be14a0567af0bb849b5e74551
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c94248438f52403e1563725b69c1eea9181b268
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382004"
 ---
 # <a name="get-contact"></a>获取联系人
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-|Name|值|说明|
+|名称|值|说明|
 |:---------------|:--------|:-------|
 |$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称，请参阅[contact](../resources/contact.md)对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|

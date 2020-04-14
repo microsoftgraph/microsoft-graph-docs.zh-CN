@@ -1,20 +1,20 @@
 ---
 title: userIdentity 类型
-description: '对于 Azure AD 访问审核，此类型表示访问审核的审阅者的 Azure AD 用户标识。  '
+description: 表示访问评审的审阅者的 Azure AD 用户标识。
 localization_priority: Normal
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 466b39a52f2bc2b9e20f313f3f80926855f492f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cb40f4d9815ed0c95f319fd5f112dfd5802f10a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519524"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384968"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

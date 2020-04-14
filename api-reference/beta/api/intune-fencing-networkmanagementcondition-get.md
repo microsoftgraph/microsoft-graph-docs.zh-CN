@@ -1,18 +1,20 @@
 ---
 title: 获取 networkManagementCondition
 description: 读取 networkManagementCondition 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dcfec633604d6b8e0136e1dd2fe05652140ef5f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a0e9adc6ad7826c7ed85c531d82b90988e9bd2ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384196"
 ---
 # <a name="get-networkmanagementcondition"></a>获取 networkManagementCondition
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -85,7 +87,6 @@ Content-Length: 475
   }
 }
 ```
-
 
 
 

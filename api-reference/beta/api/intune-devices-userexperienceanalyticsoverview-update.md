@@ -1,18 +1,20 @@
 ---
 title: 更新 userExperienceAnalyticsOverview
 description: 更新 userExperienceAnalyticsOverview 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4716110b418bbce07f99cfd7b2a7feef60d9d147
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ab0d189772159ceec940d4434611621cff7bcfb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379136"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 概述的唯一标识符。|
+|id|字符串|User experience analytics 概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总分。|
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
@@ -131,7 +133,6 @@ Content-Length: 809
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
 
 
 

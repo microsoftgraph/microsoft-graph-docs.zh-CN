@@ -1,18 +1,20 @@
 ---
 title: userExperienceAnalyticsInsightSeverity 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b466a9dc84ad5518cb76219d68507d89f379b9c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b787dfaa0abc81445c8c30769e464d3a3d791244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389178"
 ---
 # <a name="userexperienceanalyticsinsightseverity-enum-type"></a>userExperienceAnalyticsInsightSeverity 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 

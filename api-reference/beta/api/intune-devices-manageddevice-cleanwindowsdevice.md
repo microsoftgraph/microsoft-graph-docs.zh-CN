@@ -1,18 +1,20 @@
 ---
 title: cleanWindowsDevice 操作
 description: 清理 Windows 设备
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 532480a4f08a0edabdf6a3dc095070918aea5f44
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6ed1808f4b92b6245529e07bdbf739bd631727cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380061"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -82,7 +84,6 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

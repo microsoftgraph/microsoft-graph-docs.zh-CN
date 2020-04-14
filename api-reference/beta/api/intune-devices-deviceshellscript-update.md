@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceShellScript
 description: 更新 deviceShellScript 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9e3c2da2008b5e44f4b13449abd6b63251fe08f
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 29ae00d26baddc0efaa50f319a3b2759d6f02f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034746"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380092"
 ---
 # <a name="update-deviceshellscript"></a>更新 deviceShellScript
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -49,11 +51,11 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 
 下表显示创建[deviceShellScript](../resources/intune-devices-deviceshellscript.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，则脚本将运行一次。|
-|retryCount|Int32|脚本失败时重试脚本的次数。|
-|blockExecutionNotifications|Boolean|指示在脚本运行时是否通知用户。|
+|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
+|retryCount|Int32|脚本失败时将重试脚本的次数|
+|blockExecutionNotifications|Boolean|不通知用户正在执行的脚本|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |description|String|设备管理脚本的可选说明。|

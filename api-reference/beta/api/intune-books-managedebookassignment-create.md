@@ -1,18 +1,20 @@
 ---
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90d6d5ee75b0a300b1c57d206e29002725343929
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77c588ed8e5e6843e9ab0540c8dddc1e8dfa99fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392471"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,7 +53,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|电子图书的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
@@ -94,7 +96,6 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
-
 
 
 

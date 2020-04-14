@@ -1,18 +1,20 @@
 ---
 title: 删除 deviceInstallState
 description: 删除 deviceInstallState。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 745dedaf1cf18df76a3478120e4a09598c7f867e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 138db4f553c6ab80d10415c3418c695e2257976d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760548"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392788"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

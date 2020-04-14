@@ -1,18 +1,20 @@
 ---
 title: edgeHomeButtonOpensCustomURL 资源类型
 description: 显示 "主页" 按钮;单击 "主页" 按钮，将加载特定的 URL。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba83e4ee870a5e258a40c0c94d8d157f8564a91
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3be48340552a9e3ba5a0bc8143363846465fbf1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791889"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386328"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -26,7 +28,7 @@ ms.locfileid: "42791889"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|homeButtonCustomURL|String|要加载的特定 URL。|
+|homeButtonCustomURL|字符串|要加载的特定 URL。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,20 +1,20 @@
 ---
 title: 删除联系人
 description: 删除联系人。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0962ef5a2d690a01803dcde6f64f60449e05993e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 909e0d8e3b0e3e811035db29c071c476b562487a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437110"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382082"
 ---
 # <a name="delete-contact"></a>删除联系人
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

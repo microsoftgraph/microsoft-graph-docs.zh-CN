@@ -1,18 +1,20 @@
 ---
 title: 列出 securityBaselineCategoryStateSummaries
 description: 列出 securityBaselineCategoryStateSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41b9223f332d3870cdfad02d2036f56d734083fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f02e0e3abe7fb047d34f6e43737b67a43308a7e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381226"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a>列出 securityBaselineCategoryStateSummaries
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -81,7 +83,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

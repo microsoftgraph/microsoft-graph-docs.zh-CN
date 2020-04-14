@@ -1,18 +1,20 @@
 ---
 title: 更新 deviceManagementScriptRunSummary
 description: 更新 deviceManagementScriptRunSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 403da5e776b6a249f6ca676cca684ec2f26e934e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ecb6ebfda52ad87a7ac75af8915e3b6b8023442a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814384"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380122"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -52,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本运行摘要实体的键。 此属性是只读的。|
+|id|字符串|设备管理脚本运行摘要实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|
@@ -97,7 +99,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
 
 
 

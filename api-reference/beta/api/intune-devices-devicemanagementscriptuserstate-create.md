@@ -1,18 +1,20 @@
 ---
 title: 创建 deviceManagementScriptUserState
 description: 创建新的 deviceManagementScriptUserState 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c927b204aea200818f02920e342fbae2d50f9cbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e8c7e4eca3644b3f5d370c03b632fced527609c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814377"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380107"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -55,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|String|特定用户的用户主体名称。|
+|userPrincipalName|字符串|特定用户的用户主体名称。|
 
 
 
@@ -94,7 +96,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

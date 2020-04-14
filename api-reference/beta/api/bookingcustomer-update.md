@@ -2,19 +2,19 @@
 title: 更新 bookingcustomer
 description: 更新 bookingCustomer 对象的属性。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c1af0dc924c923b9a9c0c2fa6093120ccbfa3cf7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe570f63a9b1796d169cd2eda0e950d72395ceea
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376439"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

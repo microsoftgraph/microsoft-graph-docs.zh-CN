@@ -2,19 +2,19 @@
 title: 删除 bookingStaffMember
 description: 删除指定 bookingbusiness 中的教职员工成员。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 42086e0a8623adf717943d84ad92816ea13e917b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5665ef8f39cdf79fbec004c7a430076a04879a07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376323"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

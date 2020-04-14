@@ -1,18 +1,20 @@
 ---
 title: 创建 userExperienceAnalyticsDeviceStartupProcess
 description: 创建新的 userExperienceAnalyticsDeviceStartupProcess 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e81e4066e280070e3b520ef08bd7728dcca020bd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: acc938625a34c05f1f18a5434c5c682791421a50
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813914"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379504"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>创建 userExperienceAnalyticsDeviceStartupProcess
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -51,11 +53,11 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程的唯一标识符。|
-|managedDeviceId|String|User experience analytics 设备 id。|
-|processName|String|User experience analytics 设备启动过程名称。|
+|id|字符串|User experience analytics 设备启动过程的唯一标识符。|
+|managedDeviceId|字符串|User experience analytics 设备 id。|
+|processName|字符串|User experience analytics 设备启动过程名称。|
 |productName|String|User experience analytics 设备启动过程产品名称。|
-|发布者|String|User experience analytics 设备启动过程发布者。|
+|发布者|字符串|User experience analytics 设备启动过程发布者。|
 |startupImpactInMs|Int32|用户体验分析设备启动过程影响，以毫秒为单位。|
 
 
@@ -99,7 +101,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

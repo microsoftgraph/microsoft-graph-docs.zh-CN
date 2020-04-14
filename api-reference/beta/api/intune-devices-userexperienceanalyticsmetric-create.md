@@ -1,18 +1,20 @@
 ---
 title: 创建 userExperienceAnalyticsMetric
 description: 创建新的 userExperienceAnalyticsMetric 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6d7fe337c379555ce982d8c29c1913e48429f84
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ef1a4a8e27d3ef86bf86a8e3e060f01630698c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813843"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379418"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>创建 userExperienceAnalyticsMetric
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -54,9 +56,9 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标的唯一标识符。|
+|id|字符串|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|String|User experience analytics 指标的单位。|
+|处理器|字符串|User experience analytics 指标的单位。|
 
 
 
@@ -93,7 +95,6 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
-
 
 
 

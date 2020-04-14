@@ -2,19 +2,19 @@
 title: 删除 bookingCustomer
 description: 删除指定的 bookingCustomer 对象。
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 02cabc0154f654950bbe34eb568654a1321f1f4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e756fda2f750dda0fb75c30fd76f7bc8fbe04779
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441114"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376469"
 ---
 # <a name="delete-bookingcustomer"></a>删除 bookingCustomer
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
