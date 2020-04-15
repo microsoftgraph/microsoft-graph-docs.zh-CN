@@ -1,35 +1,35 @@
 ---
 title: 创建 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 创建新的 windowsDefenderAdvancedThreatProtectionConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72e3539e42dfc1ddc71252f1dea4ef09fadb1bfd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7aae33c52f16b8c3ed50ce1bf195e26d5944e1b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513834"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462071"
 ---
-# <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a><span data-ttu-id="60ee8-103">创建 windowsDefenderAdvancedThreatProtectionConfiguration</span><span class="sxs-lookup"><span data-stu-id="60ee8-103">Create windowsDefenderAdvancedThreatProtectionConfiguration</span></span>
+# <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a><span data-ttu-id="75ede-103">创建 windowsDefenderAdvancedThreatProtectionConfiguration</span><span class="sxs-lookup"><span data-stu-id="75ede-103">Create windowsDefenderAdvancedThreatProtectionConfiguration</span></span>
 
-<span data-ttu-id="60ee8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60ee8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75ede-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75ede-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="60ee8-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="60ee8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="75ede-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="75ede-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="60ee8-106">创建新的 [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="60ee8-106">Create a new [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) object.</span></span>
+<span data-ttu-id="75ede-106">创建新的 [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="75ede-106">Create a new [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="60ee8-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="60ee8-107">Prerequisites</span></span>
-<span data-ttu-id="60ee8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="60ee8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="75ede-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="75ede-107">Prerequisites</span></span>
+<span data-ttu-id="75ede-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="75ede-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="60ee8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="60ee8-110">Permission type</span></span>|<span data-ttu-id="60ee8-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="60ee8-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="75ede-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="75ede-110">Permission type</span></span>|<span data-ttu-id="75ede-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="75ede-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="60ee8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="60ee8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="60ee8-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60ee8-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="60ee8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="60ee8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="60ee8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="60ee8-115">Not supported.</span></span>|
-|<span data-ttu-id="60ee8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="60ee8-116">Application</span></span>|<span data-ttu-id="60ee8-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="60ee8-117">Not supported.</span></span>|
+|<span data-ttu-id="75ede-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75ede-112">Delegated (work or school account)</span></span>|<span data-ttu-id="75ede-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75ede-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="75ede-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75ede-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="75ede-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="75ede-115">Not supported.</span></span>|
+|<span data-ttu-id="75ede-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="75ede-116">Application</span></span>|<span data-ttu-id="75ede-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="75ede-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="60ee8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="60ee8-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75ede-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75ede-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,37 +38,37 @@ ms.locfileid: "42513834"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="60ee8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="60ee8-119">Request headers</span></span>
-|<span data-ttu-id="60ee8-120">标头</span><span class="sxs-lookup"><span data-stu-id="60ee8-120">Header</span></span>|<span data-ttu-id="60ee8-121">值</span><span class="sxs-lookup"><span data-stu-id="60ee8-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="75ede-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="75ede-119">Request headers</span></span>
+|<span data-ttu-id="75ede-120">标头</span><span class="sxs-lookup"><span data-stu-id="75ede-120">Header</span></span>|<span data-ttu-id="75ede-121">值</span><span class="sxs-lookup"><span data-stu-id="75ede-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="60ee8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="60ee8-122">Authorization</span></span>|<span data-ttu-id="60ee8-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="60ee8-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="60ee8-124">接受</span><span class="sxs-lookup"><span data-stu-id="60ee8-124">Accept</span></span>|<span data-ttu-id="60ee8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="60ee8-125">application/json</span></span>|
+|<span data-ttu-id="75ede-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="75ede-122">Authorization</span></span>|<span data-ttu-id="75ede-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="75ede-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="75ede-124">接受</span><span class="sxs-lookup"><span data-stu-id="75ede-124">Accept</span></span>|<span data-ttu-id="75ede-125">application/json</span><span class="sxs-lookup"><span data-stu-id="75ede-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="60ee8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="60ee8-126">Request body</span></span>
-<span data-ttu-id="60ee8-127">在请求正文中，提供 windowsDefenderAdvancedThreatProtectionConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60ee8-127">In the request body, supply a JSON representation for the windowsDefenderAdvancedThreatProtectionConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="75ede-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="75ede-126">Request body</span></span>
+<span data-ttu-id="75ede-127">在请求正文中，提供 windowsDefenderAdvancedThreatProtectionConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="75ede-127">In the request body, supply a JSON representation for the windowsDefenderAdvancedThreatProtectionConfiguration object.</span></span>
 
-<span data-ttu-id="60ee8-128">下表显示创建 windowsDefenderAdvancedThreatProtectionConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="60ee8-128">The following table shows the properties that are required when you create the windowsDefenderAdvancedThreatProtectionConfiguration.</span></span>
+<span data-ttu-id="75ede-128">下表显示创建 windowsDefenderAdvancedThreatProtectionConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="75ede-128">The following table shows the properties that are required when you create the windowsDefenderAdvancedThreatProtectionConfiguration.</span></span>
 
-|<span data-ttu-id="60ee8-129">属性</span><span class="sxs-lookup"><span data-stu-id="60ee8-129">Property</span></span>|<span data-ttu-id="60ee8-130">类型</span><span class="sxs-lookup"><span data-stu-id="60ee8-130">Type</span></span>|<span data-ttu-id="60ee8-131">说明</span><span class="sxs-lookup"><span data-stu-id="60ee8-131">Description</span></span>|
+|<span data-ttu-id="75ede-129">属性</span><span class="sxs-lookup"><span data-stu-id="75ede-129">Property</span></span>|<span data-ttu-id="75ede-130">类型</span><span class="sxs-lookup"><span data-stu-id="75ede-130">Type</span></span>|<span data-ttu-id="75ede-131">说明</span><span class="sxs-lookup"><span data-stu-id="75ede-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="60ee8-132">id</span><span class="sxs-lookup"><span data-stu-id="60ee8-132">id</span></span>|<span data-ttu-id="60ee8-133">字符串</span><span class="sxs-lookup"><span data-stu-id="60ee8-133">String</span></span>|<span data-ttu-id="60ee8-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="60ee8-134">Key of the entity.</span></span> <span data-ttu-id="60ee8-135">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="60ee8-136">lastModifiedDateTime</span></span>|<span data-ttu-id="60ee8-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="60ee8-137">DateTimeOffset</span></span>|<span data-ttu-id="60ee8-138">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="60ee8-138">DateTime the object was last modified.</span></span> <span data-ttu-id="60ee8-139">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="60ee8-140">createdDateTime</span></span>|<span data-ttu-id="60ee8-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="60ee8-141">DateTimeOffset</span></span>|<span data-ttu-id="60ee8-142">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="60ee8-142">DateTime the object was created.</span></span> <span data-ttu-id="60ee8-143">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-144">说明</span><span class="sxs-lookup"><span data-stu-id="60ee8-144">description</span></span>|<span data-ttu-id="60ee8-145">String</span><span class="sxs-lookup"><span data-stu-id="60ee8-145">String</span></span>|<span data-ttu-id="60ee8-146">管理员提供的设备配置的说明。</span><span class="sxs-lookup"><span data-stu-id="60ee8-146">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="60ee8-147">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-147">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-148">displayName</span><span class="sxs-lookup"><span data-stu-id="60ee8-148">displayName</span></span>|<span data-ttu-id="60ee8-149">String</span><span class="sxs-lookup"><span data-stu-id="60ee8-149">String</span></span>|<span data-ttu-id="60ee8-150">管理员提供的设备配置的名称。</span><span class="sxs-lookup"><span data-stu-id="60ee8-150">Admin provided name of the device configuration.</span></span> <span data-ttu-id="60ee8-151">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-151">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-152">version</span><span class="sxs-lookup"><span data-stu-id="60ee8-152">version</span></span>|<span data-ttu-id="60ee8-153">Int32</span><span class="sxs-lookup"><span data-stu-id="60ee8-153">Int32</span></span>|<span data-ttu-id="60ee8-154">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="60ee8-154">Version of the device configuration.</span></span> <span data-ttu-id="60ee8-155">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="60ee8-155">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="60ee8-156">allowSampleSharing</span><span class="sxs-lookup"><span data-stu-id="60ee8-156">allowSampleSharing</span></span>|<span data-ttu-id="60ee8-157">Boolean</span><span class="sxs-lookup"><span data-stu-id="60ee8-157">Boolean</span></span>|<span data-ttu-id="60ee8-158">Windows Defender 高级威胁防护“允许示例共享”规则</span><span class="sxs-lookup"><span data-stu-id="60ee8-158">Windows Defender AdvancedThreatProtection "Allow Sample Sharing" Rule</span></span>|
-|<span data-ttu-id="60ee8-159">enableExpeditedTelemetryReporting</span><span class="sxs-lookup"><span data-stu-id="60ee8-159">enableExpeditedTelemetryReporting</span></span>|<span data-ttu-id="60ee8-160">Boolean</span><span class="sxs-lookup"><span data-stu-id="60ee8-160">Boolean</span></span>|<span data-ttu-id="60ee8-161">加速 Windows Defender 高级威胁防护遥测报告的频率。</span><span class="sxs-lookup"><span data-stu-id="60ee8-161">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</span></span>|
+|<span data-ttu-id="75ede-132">id</span><span class="sxs-lookup"><span data-stu-id="75ede-132">id</span></span>|<span data-ttu-id="75ede-133">字符串</span><span class="sxs-lookup"><span data-stu-id="75ede-133">String</span></span>|<span data-ttu-id="75ede-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="75ede-134">Key of the entity.</span></span> <span data-ttu-id="75ede-135">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="75ede-136">lastModifiedDateTime</span></span>|<span data-ttu-id="75ede-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="75ede-137">DateTimeOffset</span></span>|<span data-ttu-id="75ede-138">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="75ede-138">DateTime the object was last modified.</span></span> <span data-ttu-id="75ede-139">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="75ede-140">createdDateTime</span></span>|<span data-ttu-id="75ede-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="75ede-141">DateTimeOffset</span></span>|<span data-ttu-id="75ede-142">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="75ede-142">DateTime the object was created.</span></span> <span data-ttu-id="75ede-143">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-144">description</span><span class="sxs-lookup"><span data-stu-id="75ede-144">description</span></span>|<span data-ttu-id="75ede-145">String</span><span class="sxs-lookup"><span data-stu-id="75ede-145">String</span></span>|<span data-ttu-id="75ede-146">管理员提供的设备配置的说明。</span><span class="sxs-lookup"><span data-stu-id="75ede-146">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="75ede-147">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-147">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-148">displayName</span><span class="sxs-lookup"><span data-stu-id="75ede-148">displayName</span></span>|<span data-ttu-id="75ede-149">String</span><span class="sxs-lookup"><span data-stu-id="75ede-149">String</span></span>|<span data-ttu-id="75ede-150">管理员提供的设备配置的名称。</span><span class="sxs-lookup"><span data-stu-id="75ede-150">Admin provided name of the device configuration.</span></span> <span data-ttu-id="75ede-151">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-151">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-152">version</span><span class="sxs-lookup"><span data-stu-id="75ede-152">version</span></span>|<span data-ttu-id="75ede-153">Int32</span><span class="sxs-lookup"><span data-stu-id="75ede-153">Int32</span></span>|<span data-ttu-id="75ede-154">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="75ede-154">Version of the device configuration.</span></span> <span data-ttu-id="75ede-155">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="75ede-155">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="75ede-156">allowSampleSharing</span><span class="sxs-lookup"><span data-stu-id="75ede-156">allowSampleSharing</span></span>|<span data-ttu-id="75ede-157">Boolean</span><span class="sxs-lookup"><span data-stu-id="75ede-157">Boolean</span></span>|<span data-ttu-id="75ede-158">Windows Defender 高级威胁防护“允许示例共享”规则</span><span class="sxs-lookup"><span data-stu-id="75ede-158">Windows Defender AdvancedThreatProtection "Allow Sample Sharing" Rule</span></span>|
+|<span data-ttu-id="75ede-159">enableExpeditedTelemetryReporting</span><span class="sxs-lookup"><span data-stu-id="75ede-159">enableExpeditedTelemetryReporting</span></span>|<span data-ttu-id="75ede-160">Boolean</span><span class="sxs-lookup"><span data-stu-id="75ede-160">Boolean</span></span>|<span data-ttu-id="75ede-161">加速 Windows Defender 高级威胁防护遥测报告的频率。</span><span class="sxs-lookup"><span data-stu-id="75ede-161">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="60ee8-162">响应</span><span class="sxs-lookup"><span data-stu-id="60ee8-162">Response</span></span>
-<span data-ttu-id="60ee8-163">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="60ee8-163">If successful, this method returns a `201 Created` response code and a [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="75ede-162">响应</span><span class="sxs-lookup"><span data-stu-id="75ede-162">Response</span></span>
+<span data-ttu-id="75ede-163">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="75ede-163">If successful, this method returns a `201 Created` response code and a [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="60ee8-164">示例</span><span class="sxs-lookup"><span data-stu-id="60ee8-164">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75ede-164">示例</span><span class="sxs-lookup"><span data-stu-id="75ede-164">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="60ee8-165">请求</span><span class="sxs-lookup"><span data-stu-id="60ee8-165">Request</span></span>
-<span data-ttu-id="60ee8-166">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="60ee8-166">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="75ede-165">请求</span><span class="sxs-lookup"><span data-stu-id="75ede-165">Request</span></span>
+<span data-ttu-id="75ede-166">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="75ede-166">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 267
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="60ee8-167">响应</span><span class="sxs-lookup"><span data-stu-id="60ee8-167">Response</span></span>
-<span data-ttu-id="60ee8-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="60ee8-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="75ede-167">响应</span><span class="sxs-lookup"><span data-stu-id="75ede-167">Response</span></span>
+<span data-ttu-id="75ede-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="75ede-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -103,6 +103,8 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+
 
 
 

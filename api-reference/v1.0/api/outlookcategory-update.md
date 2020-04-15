@@ -2,59 +2,59 @@
 title: 更新 Outlook 类别
 description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改**displayName**属性 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 623653f292ddc67c491537e7e60ceeaa900dd655
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48944d1149bca4b3c0a771192f2bfbd4349d0470
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511136"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461956"
 ---
-# <a name="update-outlook-category"></a><span data-ttu-id="f2fa9-104">更新 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="f2fa9-104">Update Outlook category</span></span>
+# <a name="update-outlook-category"></a><span data-ttu-id="6a7bb-104">更新 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="6a7bb-104">Update Outlook category</span></span>
 
-<span data-ttu-id="f2fa9-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2fa9-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6a7bb-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6a7bb-105">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="f2fa9-106">更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-106">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="f2fa9-107">创建类别后，不能修改 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-107">You cannot modify the **displayName** property once you have created the category.</span></span>
+<span data-ttu-id="6a7bb-106">更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-106">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="6a7bb-107">创建类别后，不能修改 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-107">You cannot modify the **displayName** property once you have created the category.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f2fa9-108">权限</span><span class="sxs-lookup"><span data-stu-id="f2fa9-108">Permissions</span></span>
-<span data-ttu-id="f2fa9-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6a7bb-108">权限</span><span class="sxs-lookup"><span data-stu-id="6a7bb-108">Permissions</span></span>
+<span data-ttu-id="6a7bb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2fa9-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2fa9-111">Permission type</span></span>      | <span data-ttu-id="f2fa9-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2fa9-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6a7bb-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6a7bb-111">Permission type</span></span>      | <span data-ttu-id="6a7bb-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6a7bb-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2fa9-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2fa9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f2fa9-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2fa9-114">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f2fa9-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2fa9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2fa9-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2fa9-116">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f2fa9-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f2fa9-117">Application</span></span> | <span data-ttu-id="f2fa9-118">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2fa9-118">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="6a7bb-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6a7bb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6a7bb-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6a7bb-114">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="6a7bb-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6a7bb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6a7bb-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6a7bb-116">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="6a7bb-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6a7bb-117">Application</span></span> | <span data-ttu-id="6a7bb-118">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6a7bb-118">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f2fa9-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2fa9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6a7bb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6a7bb-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f2fa9-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2fa9-120">Request headers</span></span>
-| <span data-ttu-id="f2fa9-121">名称</span><span class="sxs-lookup"><span data-stu-id="f2fa9-121">Name</span></span>      |<span data-ttu-id="f2fa9-122">说明</span><span class="sxs-lookup"><span data-stu-id="f2fa9-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6a7bb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6a7bb-120">Request headers</span></span>
+| <span data-ttu-id="6a7bb-121">名称</span><span class="sxs-lookup"><span data-stu-id="6a7bb-121">Name</span></span>      |<span data-ttu-id="6a7bb-122">说明</span><span class="sxs-lookup"><span data-stu-id="6a7bb-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f2fa9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2fa9-123">Authorization</span></span>  | <span data-ttu-id="f2fa9-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6a7bb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6a7bb-123">Authorization</span></span>  | <span data-ttu-id="6a7bb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f2fa9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f2fa9-126">Request body</span></span>
-<span data-ttu-id="f2fa9-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6a7bb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="6a7bb-126">Request body</span></span>
+<span data-ttu-id="6a7bb-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f2fa9-130">属性</span><span class="sxs-lookup"><span data-stu-id="f2fa9-130">Property</span></span>     | <span data-ttu-id="f2fa9-131">类型</span><span class="sxs-lookup"><span data-stu-id="f2fa9-131">Type</span></span>   |<span data-ttu-id="f2fa9-132">说明</span><span class="sxs-lookup"><span data-stu-id="f2fa9-132">Description</span></span>|
+| <span data-ttu-id="6a7bb-130">属性</span><span class="sxs-lookup"><span data-stu-id="6a7bb-130">Property</span></span>     | <span data-ttu-id="6a7bb-131">类型</span><span class="sxs-lookup"><span data-stu-id="6a7bb-131">Type</span></span>   |<span data-ttu-id="6a7bb-132">说明</span><span class="sxs-lookup"><span data-stu-id="6a7bb-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f2fa9-133">color</span><span class="sxs-lookup"><span data-stu-id="f2fa9-133">color</span></span>|<span data-ttu-id="f2fa9-134">String</span><span class="sxs-lookup"><span data-stu-id="f2fa9-134">String</span></span>|<span data-ttu-id="f2fa9-135">预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-135">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
+|<span data-ttu-id="6a7bb-133">color</span><span class="sxs-lookup"><span data-stu-id="6a7bb-133">color</span></span>|<span data-ttu-id="6a7bb-134">String</span><span class="sxs-lookup"><span data-stu-id="6a7bb-134">String</span></span>|<span data-ttu-id="6a7bb-135">预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-135">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f2fa9-136">响应</span><span class="sxs-lookup"><span data-stu-id="f2fa9-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6a7bb-136">响应</span><span class="sxs-lookup"><span data-stu-id="6a7bb-136">Response</span></span>
 
-<span data-ttu-id="f2fa9-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-137">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f2fa9-138">示例</span><span class="sxs-lookup"><span data-stu-id="f2fa9-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f2fa9-139">请求</span><span class="sxs-lookup"><span data-stu-id="f2fa9-139">Request</span></span>
-<span data-ttu-id="f2fa9-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-140">Here is an example of the request.</span></span>
+<span data-ttu-id="6a7bb-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-137">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6a7bb-138">示例</span><span class="sxs-lookup"><span data-stu-id="6a7bb-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6a7bb-139">请求</span><span class="sxs-lookup"><span data-stu-id="6a7bb-139">Request</span></span>
+<span data-ttu-id="6a7bb-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-140">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f2fa9-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2fa9-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6a7bb-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="6a7bb-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
@@ -69,26 +69,26 @@ Content-length: 30
   "color":"preset15"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f2fa9-142">C#</span><span class="sxs-lookup"><span data-stu-id="f2fa9-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6a7bb-142">C#</span><span class="sxs-lookup"><span data-stu-id="6a7bb-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-outlookcategory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f2fa9-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2fa9-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6a7bb-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6a7bb-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-outlookcategory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f2fa9-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2fa9-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6a7bb-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6a7bb-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlookcategory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f2fa9-145">Java</span><span class="sxs-lookup"><span data-stu-id="f2fa9-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6a7bb-145">Java</span><span class="sxs-lookup"><span data-stu-id="6a7bb-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f2fa9-146">响应</span><span class="sxs-lookup"><span data-stu-id="f2fa9-146">Response</span></span>
-<span data-ttu-id="f2fa9-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f2fa9-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6a7bb-146">响应</span><span class="sxs-lookup"><span data-stu-id="6a7bb-146">Response</span></span>
+<span data-ttu-id="6a7bb-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6a7bb-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

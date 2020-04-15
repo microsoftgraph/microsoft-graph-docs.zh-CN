@@ -1,35 +1,35 @@
 ---
 title: 更新 windowsInformationProtectionAppLearningSummary
 description: 更新 windowsInformationProtectionAppLearningSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff8e246a8c847dfb73f9edf31ae03d44daaa082d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99cbb3d9f1ad497039103c2ebb405ae94643376e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461178"
 ---
-# <a name="update-windowsinformationprotectionapplearningsummary"></a><span data-ttu-id="a7f59-103">更新 windowsInformationProtectionAppLearningSummary</span><span class="sxs-lookup"><span data-stu-id="a7f59-103">Update windowsInformationProtectionAppLearningSummary</span></span>
+# <a name="update-windowsinformationprotectionapplearningsummary"></a><span data-ttu-id="8552b-103">更新 windowsInformationProtectionAppLearningSummary</span><span class="sxs-lookup"><span data-stu-id="8552b-103">Update windowsInformationProtectionAppLearningSummary</span></span>
 
-<span data-ttu-id="a7f59-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7f59-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8552b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8552b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a7f59-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a7f59-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8552b-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8552b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a7f59-106">更新 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a7f59-106">Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
+<span data-ttu-id="8552b-106">更新 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8552b-106">Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a7f59-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a7f59-107">Prerequisites</span></span>
-<span data-ttu-id="a7f59-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a7f59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8552b-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8552b-107">Prerequisites</span></span>
+<span data-ttu-id="8552b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8552b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a7f59-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a7f59-110">Permission type</span></span>|<span data-ttu-id="a7f59-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a7f59-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8552b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8552b-110">Permission type</span></span>|<span data-ttu-id="8552b-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8552b-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a7f59-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a7f59-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a7f59-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7f59-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a7f59-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a7f59-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a7f59-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a7f59-115">Not supported.</span></span>|
-|<span data-ttu-id="a7f59-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a7f59-116">Application</span></span>|<span data-ttu-id="a7f59-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a7f59-117">Not supported.</span></span>|
+|<span data-ttu-id="8552b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8552b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8552b-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8552b-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8552b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8552b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8552b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8552b-115">Not supported.</span></span>|
+|<span data-ttu-id="8552b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8552b-116">Application</span></span>|<span data-ttu-id="8552b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8552b-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a7f59-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a7f59-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8552b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8552b-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +38,33 @@ ms.locfileid: "42511808"
 PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a7f59-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a7f59-119">Request headers</span></span>
-|<span data-ttu-id="a7f59-120">标头</span><span class="sxs-lookup"><span data-stu-id="a7f59-120">Header</span></span>|<span data-ttu-id="a7f59-121">值</span><span class="sxs-lookup"><span data-stu-id="a7f59-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8552b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8552b-119">Request headers</span></span>
+|<span data-ttu-id="8552b-120">标头</span><span class="sxs-lookup"><span data-stu-id="8552b-120">Header</span></span>|<span data-ttu-id="8552b-121">值</span><span class="sxs-lookup"><span data-stu-id="8552b-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a7f59-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a7f59-122">Authorization</span></span>|<span data-ttu-id="a7f59-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a7f59-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a7f59-124">接受</span><span class="sxs-lookup"><span data-stu-id="a7f59-124">Accept</span></span>|<span data-ttu-id="a7f59-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a7f59-125">application/json</span></span>|
+|<span data-ttu-id="8552b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8552b-122">Authorization</span></span>|<span data-ttu-id="8552b-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8552b-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8552b-124">接受</span><span class="sxs-lookup"><span data-stu-id="8552b-124">Accept</span></span>|<span data-ttu-id="8552b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8552b-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a7f59-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a7f59-126">Request body</span></span>
-<span data-ttu-id="a7f59-127">在请求正文中，提供 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a7f59-127">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8552b-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8552b-126">Request body</span></span>
+<span data-ttu-id="8552b-127">在请求正文中，提供 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8552b-127">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
 
-<span data-ttu-id="a7f59-128">下表显示创建 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a7f59-128">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span></span>
+<span data-ttu-id="8552b-128">下表显示创建 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8552b-128">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span></span>
 
-|<span data-ttu-id="a7f59-129">属性</span><span class="sxs-lookup"><span data-stu-id="a7f59-129">Property</span></span>|<span data-ttu-id="a7f59-130">类型</span><span class="sxs-lookup"><span data-stu-id="a7f59-130">Type</span></span>|<span data-ttu-id="a7f59-131">说明</span><span class="sxs-lookup"><span data-stu-id="a7f59-131">Description</span></span>|
+|<span data-ttu-id="8552b-129">属性</span><span class="sxs-lookup"><span data-stu-id="8552b-129">Property</span></span>|<span data-ttu-id="8552b-130">类型</span><span class="sxs-lookup"><span data-stu-id="8552b-130">Type</span></span>|<span data-ttu-id="8552b-131">说明</span><span class="sxs-lookup"><span data-stu-id="8552b-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a7f59-132">id</span><span class="sxs-lookup"><span data-stu-id="a7f59-132">id</span></span>|<span data-ttu-id="a7f59-133">字符串</span><span class="sxs-lookup"><span data-stu-id="a7f59-133">String</span></span>|<span data-ttu-id="a7f59-134">WindowsInformationProtectionAppLearningSummary 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="a7f59-134">Unique Identifier for the WindowsInformationProtectionAppLearningSummary.</span></span>|
-|<span data-ttu-id="a7f59-135">applicationName</span><span class="sxs-lookup"><span data-stu-id="a7f59-135">applicationName</span></span>|<span data-ttu-id="a7f59-136">String</span><span class="sxs-lookup"><span data-stu-id="a7f59-136">String</span></span>|<span data-ttu-id="a7f59-137">应用程序名称</span><span class="sxs-lookup"><span data-stu-id="a7f59-137">Application Name</span></span>|
-|<span data-ttu-id="a7f59-138">applicationType</span><span class="sxs-lookup"><span data-stu-id="a7f59-138">applicationType</span></span>|[<span data-ttu-id="a7f59-139">applicationType</span><span class="sxs-lookup"><span data-stu-id="a7f59-139">applicationType</span></span>](../resources/intune-wip-applicationtype.md)|<span data-ttu-id="a7f59-140">应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="a7f59-140">Application Type.</span></span> <span data-ttu-id="a7f59-141">可取值为：`universal`、`desktop`。</span><span class="sxs-lookup"><span data-stu-id="a7f59-141">Possible values are: `universal`, `desktop`.</span></span>|
-|<span data-ttu-id="a7f59-142">deviceCount</span><span class="sxs-lookup"><span data-stu-id="a7f59-142">deviceCount</span></span>|<span data-ttu-id="a7f59-143">Int32</span><span class="sxs-lookup"><span data-stu-id="a7f59-143">Int32</span></span>|<span data-ttu-id="a7f59-144">设备计数</span><span class="sxs-lookup"><span data-stu-id="a7f59-144">Device Count</span></span>|
+|<span data-ttu-id="8552b-132">id</span><span class="sxs-lookup"><span data-stu-id="8552b-132">id</span></span>|<span data-ttu-id="8552b-133">String</span><span class="sxs-lookup"><span data-stu-id="8552b-133">String</span></span>|<span data-ttu-id="8552b-134">WindowsInformationProtectionAppLearningSummary 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="8552b-134">Unique Identifier for the WindowsInformationProtectionAppLearningSummary.</span></span>|
+|<span data-ttu-id="8552b-135">applicationName</span><span class="sxs-lookup"><span data-stu-id="8552b-135">applicationName</span></span>|<span data-ttu-id="8552b-136">String</span><span class="sxs-lookup"><span data-stu-id="8552b-136">String</span></span>|<span data-ttu-id="8552b-137">应用程序名称</span><span class="sxs-lookup"><span data-stu-id="8552b-137">Application Name</span></span>|
+|<span data-ttu-id="8552b-138">applicationType</span><span class="sxs-lookup"><span data-stu-id="8552b-138">applicationType</span></span>|[<span data-ttu-id="8552b-139">applicationType</span><span class="sxs-lookup"><span data-stu-id="8552b-139">applicationType</span></span>](../resources/intune-wip-applicationtype.md)|<span data-ttu-id="8552b-140">应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="8552b-140">Application Type.</span></span> <span data-ttu-id="8552b-141">可取值为：`universal`、`desktop`。</span><span class="sxs-lookup"><span data-stu-id="8552b-141">Possible values are: `universal`, `desktop`.</span></span>|
+|<span data-ttu-id="8552b-142">deviceCount</span><span class="sxs-lookup"><span data-stu-id="8552b-142">deviceCount</span></span>|<span data-ttu-id="8552b-143">Int32</span><span class="sxs-lookup"><span data-stu-id="8552b-143">Int32</span></span>|<span data-ttu-id="8552b-144">设备计数</span><span class="sxs-lookup"><span data-stu-id="8552b-144">Device Count</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a7f59-145">响应</span><span class="sxs-lookup"><span data-stu-id="a7f59-145">Response</span></span>
-<span data-ttu-id="a7f59-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a7f59-146">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8552b-145">响应</span><span class="sxs-lookup"><span data-stu-id="8552b-145">Response</span></span>
+<span data-ttu-id="8552b-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8552b-146">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a7f59-147">示例</span><span class="sxs-lookup"><span data-stu-id="a7f59-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8552b-147">示例</span><span class="sxs-lookup"><span data-stu-id="8552b-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a7f59-148">请求</span><span class="sxs-lookup"><span data-stu-id="a7f59-148">Request</span></span>
-<span data-ttu-id="a7f59-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a7f59-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8552b-148">请求</span><span class="sxs-lookup"><span data-stu-id="8552b-148">Request</span></span>
+<span data-ttu-id="8552b-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8552b-149">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
@@ -78,8 +78,8 @@ Content-length: 191
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a7f59-150">响应</span><span class="sxs-lookup"><span data-stu-id="a7f59-150">Response</span></span>
-<span data-ttu-id="a7f59-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a7f59-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8552b-150">响应</span><span class="sxs-lookup"><span data-stu-id="8552b-150">Response</span></span>
+<span data-ttu-id="8552b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8552b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -93,6 +93,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 
