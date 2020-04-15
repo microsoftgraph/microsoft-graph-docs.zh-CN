@@ -1,16 +1,16 @@
 ---
 title: deviceCompliancePolicyDeviceStateSummary 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73609ae16400dbb36b14cedd6eb07646530c7a45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0326b33fa4fa421d327542cabf80c45c4e8ef648
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532604"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448867"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532604"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceCompliancePolicyDeviceStateSummary](../api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|读取 [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) 对象的属性和关系。|
@@ -31,7 +31,7 @@ ms.locfileid: "42532604"
 |:---|:---|:---|
 |inGracePeriodCount|Int32|宽限期内的设备数|
 |configManagerCount|Int32|由 System Center Configuration Manager 管理符合性的设备数|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
@@ -66,6 +66,9 @@ ms.locfileid: "42532604"
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

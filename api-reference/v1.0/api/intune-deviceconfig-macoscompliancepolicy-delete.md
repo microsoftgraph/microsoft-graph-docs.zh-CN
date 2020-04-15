@@ -1,16 +1,16 @@
 ---
 title: 删除 macOSCompliancePolicy
 description: 删除 macOSCompliancePolicy。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5728632488d1df11ccfedffbaa3df17c7565f09e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 258758a6ede2310758cdc99c9fdf996a0a7f6bf5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418710"
 ---
 # <a name="delete-macoscompliancepolicy"></a>删除 macOSCompliancePolicy
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

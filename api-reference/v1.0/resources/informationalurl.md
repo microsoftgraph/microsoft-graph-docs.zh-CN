@@ -4,13 +4,13 @@ description: 应用程序的基本配置文件信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: ebf2a79931936e8f45f93cba46b1fefdbf0163b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: d783a8c4ad833be0b6dabf9b9405256796b880b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532885"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397442"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "42532885"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|logoUrl|字符串|指向应用程序徽标的 CDN URL，只读。|
-|marketingUrl|字符串| 指向应用程序的市场营销页面的链接。 例如，https://www.contoso.com/app/marketing |
-|privacyStatementUrl|字符串| 指向应用程序的隐私声明的链接。 例如，https://www.contoso.com/app/privacy |
-|supportUrl|字符串| 指向应用程序的支持页的链接。 例如，https://www.contoso.com/app/support |
-|termsOfServiceUrl|字符串| 指向应用程序的服务条款声明的链接。 例如，https://www.contoso.com/app/termsofservice |
+|logoUrl|String|指向应用程序徽标的 CDN URL，只读。|
+|marketingUrl|String| 指向应用程序的市场营销页面的链接。 例如，https://www.contoso.com/app/marketing |
+|privacyStatementUrl|String| 指向应用程序的隐私声明的链接。 例如，https://www.contoso.com/app/privacy |
+|supportUrl|String| 指向应用程序的支持页的链接。 例如，https://www.contoso.com/app/support |
+|termsOfServiceUrl|String| 指向应用程序的服务条款声明的链接。 例如，https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

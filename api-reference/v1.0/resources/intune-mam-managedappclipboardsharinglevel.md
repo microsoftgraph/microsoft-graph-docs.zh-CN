@@ -1,16 +1,16 @@
 ---
 title: managedAppClipboardSharingLevel 枚举类型
 description: 表示可在应用程序之间共享设备的剪贴板的级别
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0457069a3da40b138abbff091fffd6ffca653937
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55a9608144e31d9e11f1a435e9220934ee3cb792
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532156"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445820"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
 
@@ -24,9 +24,12 @@ ms.locfileid: "42532156"
 |成员|值|说明|
 |:---|:---|:---|
 |allApps|0|允许在所有应用程序之间进行共享（托管或不允许）|
-|managedAppsWithPasteIn|1 |允许在启用了粘贴的所有托管应用之间进行共享|
-|managedApps|2 |允许在所有托管应用之间进行共享|
-|堵塞|3 |已禁用应用程序之间的共享|
+|managedAppsWithPasteIn|1|允许在启用了粘贴的所有托管应用之间进行共享|
+|managedApps|双面|允许在所有托管应用之间进行共享|
+|堵塞|第三章|已禁用应用程序之间的共享|
+
+
+
 
 
 

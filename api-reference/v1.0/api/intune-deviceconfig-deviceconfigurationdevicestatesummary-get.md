@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceConfigurationDeviceStateSummary
 description: 读取 deviceConfigurationDeviceStateSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd27a99b06e22190dd7a4a5131b311d5c3405ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d06bf07ba90baeb18292a7380b65c6f22a3f5d3b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370266"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>获取 deviceConfigurationDeviceStateSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -82,6 +82,8 @@ Content-Length: 376
   }
 }
 ```
+
+
 
 
 

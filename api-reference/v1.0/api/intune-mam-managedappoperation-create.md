@@ -1,16 +1,16 @@
 ---
 title: 创建 managedAppOperation
 description: 创建新的 managedAppOperation 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ebb7996a04755b9a183a24a584fa3fbc3beb56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58806fad1b3302543026d1508efd49e109e1548a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513194"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441809"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
@@ -95,6 +95,8 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
 
 
 

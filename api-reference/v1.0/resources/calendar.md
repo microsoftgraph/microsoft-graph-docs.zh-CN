@@ -2,15 +2,15 @@
 title: 日历资源类型
 description: 日历即事件容器。 可以是用户的日历，也可以是 Office 365 组的默认日历。
 localization_priority: Priority
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 67f2fef3c77a2ade4871bbe1da1c2baa95b1e234
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 9de471fb60286aa23c9459498033196662260eef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407156"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: deviceCompliancePolicyAssignment 资源类型
 description: 设备符合性策略分配。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 680fea1ccbe65405983baf37100b8ca7211852a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a83011ab27fde9890895ec86e499477d1fb04929
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448882"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42530824"
 
 设备符合性策略分配。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceCompliancePolicyAssignments](../api/intune-deviceconfig-devicecompliancepolicyassignment-list.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|列出 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "42530824"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|符合性策略分配目标。|
 
 ## <a name="relationships"></a>关系
@@ -55,6 +55,9 @@ ms.locfileid: "42530824"
   }
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: deviceComplianceSettingState 资源类型
 description: 给定设备的设备符合性设置状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96ac7526d8392a3c34a719c4a28b30e568bdd213
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78605a0f2f2749ba00e1aade7f20b2aaae0522b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530806"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446007"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42530806"
 
 给定设备的设备符合性设置状态。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 集合|列出 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 对象的属性和关系。|
@@ -33,15 +33,15 @@ ms.locfileid: "42530806"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键|
-|setting|字符串|设置类名和属性名。|
-|settingName|字符串|报告的设置名称|
-|deviceId|字符串|报告的设备 ID|
-|deviceName|字符串|报告的设备名称|
+|setting|String|设置类名和属性名。|
+|settingName|String|报告的设置名称|
+|deviceId|String|报告的设备 ID|
+|deviceName|String|报告的设备名称|
 |userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
-|userName|字符串|报告的用户名|
+|userName|String|报告的用户名|
 |userPrincipalName|字符串|报告的用户主体名称|
-|deviceModel|字符串|报告的设备模型|
+|deviceModel|String|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备合规性宽限期的到期日期/时间|
 
@@ -73,6 +73,9 @@ ms.locfileid: "42530806"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

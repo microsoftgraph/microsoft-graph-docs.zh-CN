@@ -1,16 +1,16 @@
 ---
 title: 'group: delta'
-description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 Using Delta Query。
+description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7b1b5fc2fcdab490119fdca15f2867269ff22f13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 906665d0fa0250a14ea916d8e0b9bf286e6cf2d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517157"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436854"
 ---
 # <a name="group-delta"></a>group: delta
 

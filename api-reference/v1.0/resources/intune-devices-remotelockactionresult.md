@@ -1,16 +1,16 @@
 ---
 title: remoteLockActionResult 资源类型
 description: 锁定操作结果，包含用于解锁的 PIN
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9205ba5ede57f87cfc56cdbebaea1d5d2ccaa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fcf663ad633f09a1198c901ffa1b82c2278b3ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532179"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406824"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "42532179"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|字符串|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|上次更新操作状态的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
@@ -52,6 +52,9 @@ ms.locfileid: "42532179"
   "unlockPin": "String"
 }
 ```
+
+
+
 
 
 

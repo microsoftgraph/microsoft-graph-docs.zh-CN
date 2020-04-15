@@ -1,16 +1,16 @@
 ---
 title: 列出 windowsInformationProtectionAppLearningSummaries
 description: 列出 windowsInformationProtectionAppLearningSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7680b698d8bd405ebbb75e83fab4a2e8d7a6b8ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd0d5ddfbce7c2cc94583d393f09ac4cb5848d7d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439678"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>列出 windowsInformationProtectionAppLearningSummaries
 
@@ -77,6 +77,8 @@ Content-Length: 293
   ]
 }
 ```
+
+
 
 
 

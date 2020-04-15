@@ -1,16 +1,16 @@
 ---
 title: 创建 settingStateDeviceSummary
 description: 创建新的 settingStateDeviceSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 723ad2be57443411eacbc762f6b97c12576e09ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4931536e501e72b3ba21470130815d2ff017a77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514289"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387762"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 
@@ -52,8 +52,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|settingName|字符串|设置的名称|
+|id|String|实体的键。|
+|settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
 |notApplicableDeviceCount|Int32|设置的设备不可用计数|
@@ -112,6 +112,8 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

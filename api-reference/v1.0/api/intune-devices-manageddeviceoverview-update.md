@@ -1,16 +1,16 @@
 ---
 title: 更新 managedDeviceOverview
 description: 更新 managedDeviceOverview 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20f9ed5acf91ac4debb850fd9822ed92956a1823
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45b164859bd5d53dc05e22c47aa1ca99335b18f3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513432"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388733"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|摘要的唯一标识符|
+|id|String|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -129,6 +129,8 @@ Content-Length: 734
   }
 }
 ```
+
+
 
 
 

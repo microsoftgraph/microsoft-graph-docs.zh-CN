@@ -2,15 +2,15 @@
 title: 更新 mailSearchFolder
 description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5a3e61cbd57643a291f7d481ed59812b744da043
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 050817afe7a2906e58dfc86e48c3d14fab4908d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511577"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355222"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -47,8 +47,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索，而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
-| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
+| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[mailFolder](../resources/mailfolder.md)对象。

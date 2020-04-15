@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceComplianceDeviceOverview
 description: 更新 deviceComplianceDeviceOverview 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0e8a2097b31d46120c7000c97459860c0cd303c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e95b95954237c8ae2ddc60b039cc3230576bdc47
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515131"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400452"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>更新 deviceComplianceDeviceOverview
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
 |successCount|Int32|成功设备的数量|
@@ -105,6 +105,8 @@ Content-Length: 330
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

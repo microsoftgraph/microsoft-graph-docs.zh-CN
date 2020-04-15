@@ -1,16 +1,16 @@
 ---
 title: 获取 androidManagedAppProtection
 description: 读取 androidManagedAppProtection 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4e36212cce242cad57df159835373c632df724a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c43f97564bc3f700297b0fec5fbcd37affdd58ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513334"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407304"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -115,6 +115,8 @@ Content-Length: 1967
   }
 }
 ```
+
+
 
 
 

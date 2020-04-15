@@ -1,16 +1,16 @@
 ---
 title: 列出 telecomExpenseManagementPartners
 description: 列出 telecomExpenseManagementPartner 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b295168ef2d128a284a63ad0513c9b281197805
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01b4089643e654f78063c71603cd8559239b1ae0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511913"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411015"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>列出 telecomExpenseManagementPartners
 
@@ -79,6 +79,8 @@ Content-Length: 358
   ]
 }
 ```
+
+
 
 
 

@@ -2,19 +2,19 @@
 title: Microsoft Intune 中的共享资源
 description: 这些终结点在多个 Microsoft Graph API for Intune 工作流中使用。  使用给定资源所需的意向、目的和权限因特定工作流和基础调用的上下文而异。  此外，特定工作流仅支持某些方法、属性和操作。
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 8bd4eedcb9af1391ffeaa3aaf2c815a20981fc5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04ecd6062dfbcba3ff885e9734a6802440866725
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447883"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448292"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -39,4 +39,7 @@ ms.locfileid: "42447883"
 - [URI](intune-shared-uri.md)
 - [用户](intune-shared-user.md)
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
+
+
+
 

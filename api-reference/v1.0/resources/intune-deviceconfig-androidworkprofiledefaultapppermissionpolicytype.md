@@ -1,16 +1,16 @@
 ---
 title: androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 description: Android 工作配置文件默认应用权限策略类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7bcd679b584df1d7aeac14cc10f730bc889d6bce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3bc69126287ed60ec56cc5632ff9c9d7bf363e57
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530952"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449258"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
@@ -24,9 +24,12 @@ Android 工作配置文件默认应用权限策略类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|提示|1 |行.|
-|autoGrant|2 |自动授予。|
-|autoDeny|3 |自动拒绝。|
+|提示|1|行.|
+|autoGrant|双面|自动授予。|
+|autoDeny|第三章|自动拒绝。|
+
+
+
 
 
 

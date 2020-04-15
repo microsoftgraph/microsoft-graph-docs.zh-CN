@@ -1,16 +1,16 @@
 ---
 title: androidRequiredPasswordType 枚举类型
 description: Android 必需的密码类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e1ac4e27243adc47b087aa6453ff316d9b2e2fa1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1baa25eeac9745b41a9b2fc356ff98f3991ad8f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530963"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449350"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
@@ -24,13 +24,16 @@ Android 必需的密码类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|字母|1 |要求字母密码。|
-|字母数字|2 |需要字母数字密码。|
-|alphanumericWithSymbols|3 |需要带符号的字母数字密码。|
+|字母|1|要求字母密码。|
+|字母数字|双面|需要字母数字密码。|
+|alphanumericWithSymbols|第三章|需要带符号的字母数字密码。|
 |lowSecurityBiometric|4 |要求低安全基于生物特征的密码。|
 |位数|5 |需要数字密码。|
 |numericComplex|6 |需要数字复杂密码。|
 |任意|7 |需要密码或模式，可以接受。|
+
+
+
 
 
 

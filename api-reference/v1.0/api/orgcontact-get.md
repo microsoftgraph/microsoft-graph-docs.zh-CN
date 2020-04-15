@@ -2,15 +2,15 @@
 title: 获取 orgContact
 description: 检索 orgContact 对象的属性。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 041898cb17c827835db016c1955135d312432a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 399fdbe0cacf0335e104e12a4e0d0c144acef81c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511199"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387332"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 
@@ -35,7 +35,7 @@ GET /contacts/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

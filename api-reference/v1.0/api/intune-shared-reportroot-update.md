@@ -1,16 +1,16 @@
 ---
 title: 更新 reportRoot
 description: 更新 reportRoot 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b08e6c4e81d877743157c51e0c578cd8e0adda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39ff21b113e3962058a349afb2eed477f9638587
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411539"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
@@ -53,7 +53,7 @@ PATCH /reports
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符。|
+|id|String|此实体的唯一标识符。|
 
 
 
@@ -83,6 +83,8 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
 
 
 

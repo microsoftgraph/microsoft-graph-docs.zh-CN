@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceConfigurationAssignment
 description: 更新 deviceConfigurationAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba85aeb2a9b06d25ceaad3e42bcd7dbb006912ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc8ce69735094496174dab83639a32f3a2c16df8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370496"
 ---
 # <a name="update-deviceconfigurationassignment"></a>更新 deviceConfigurationAssignment
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|分配的键。|
+|id|String|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 
 
@@ -91,6 +91,8 @@ Content-Length: 218
   }
 }
 ```
+
+
 
 
 

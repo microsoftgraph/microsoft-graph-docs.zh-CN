@@ -1,16 +1,16 @@
 ---
 title: bitLockerEncryptionMethod 枚举类型
 description: BitLockerEncryptionMethod 类型
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b39428c82cb298a75bf6b87cf6dd894ef204712
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f94f251455f52e35cf9aaaf640255525e2f5435b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449108"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>bitLockerEncryptionMethod 枚举类型
 
@@ -23,10 +23,13 @@ BitLockerEncryptionMethod 类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|aesCbc128|3 |AES-CBC 128 位。|
+|aesCbc128|第三章|AES-CBC 128 位。|
 |aesCbc256|4 |AES-CBC 256 位。|
 |xtsAes128|6 |XTS-AES 128 位。|
 |xtsAes256|7 |XTS-AES 256 位。|
+
+
+
 
 
 

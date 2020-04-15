@@ -1,16 +1,16 @@
 ---
 title: mobileAppContentFile 资源类型
 description: 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3eba7d5addc48349a63d40effdcda638c0f684e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18540fd8f3bc6579c528f9a7bafd586d19f23c8c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532762"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410874"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532762"
 
 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List mobileAppContentFiles](../api/intune-apps-mobileappcontentfile-list.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 集合|列出 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "42532762"
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|字符串|文件名称。|
+|name|String|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
@@ -71,6 +71,9 @@ ms.locfileid: "42532762"
   "uploadState": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7518d65e707badfd857e4508a6d055e22b4945a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ff722318d1cc4fff866cd309f08d8ef9c6f60df
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511955"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411234"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -55,7 +55,7 @@ PATCH /users/{usersId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户的唯一标识符。|
+|id|String|用户的唯一标识符。|
 |**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
@@ -88,6 +88,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

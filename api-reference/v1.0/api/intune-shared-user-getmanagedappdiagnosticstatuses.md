@@ -1,16 +1,16 @@
 ---
 title: getManagedAppDiagnosticStatuses 函数
 description: 获取给定用户的诊断验证状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d08785b8eff6d8233476132d21934336eadd076
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a6d816da11ce25041d02523eeb647eb4ebd4aec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511983"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411318"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
 
@@ -79,6 +79,8 @@ Content-Length: 249
   ]
 }
 ```
+
+
 
 
 

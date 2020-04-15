@@ -1,20 +1,20 @@
 ---
 title: roleAssignment 资源类型
 description: 角色分配资源。 角色分配将角色定义与成员和作用域绑定在一起。 每个角色可以具有一个或多个角色分配。 这适用于自定义和内置角色。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b398e008c7e3047754b67d55ac31c5235bb2d06d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b388c043a1903394b1525c10eda7e817f1f1fdf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447939"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441599"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "42447939"
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色分配的显示或友好名称。|
-|说明|String|角色分配的说明。|
+|description|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 ## <a name="relationships"></a>关系
@@ -61,6 +61,9 @@ ms.locfileid: "42447939"
   ]
 }
 ```
+
+
+
 
 
 

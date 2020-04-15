@@ -1,16 +1,16 @@
 ---
 title: 创建 telecomExpenseManagementPartner
 description: 创建新的 telecomExpenseManagementPartner 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af8df09b4b3f13cf5b5de714d044e91b2572aad2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49d299fbcd44dbb4fd9a7fb2f1a7263054a8394a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511927"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411148"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
 
@@ -51,7 +51,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|TEM 合作伙伴的唯一标识符。|
+|id|String|TEM 合作伙伴的唯一标识符。|
 |displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

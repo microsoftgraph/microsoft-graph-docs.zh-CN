@@ -1,16 +1,16 @@
 ---
 title: mobileAppContent 资源类型
 description: 包含特定应用版本的内容属性。 每个 mobileAppContent 都可以具有多个 mobileAppContentFile。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64e012c25d1674bf3d4ce365aa13ac6a5600b755
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e25318e22007e202586e1c629c2d932a30bbab1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531092"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410945"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42531092"
 
 包含特定应用版本的内容属性。 每个 mobileAppContent 都可以具有多个 mobileAppContentFile。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppContents](../api/intune-apps-mobileappcontent-list.md)|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) 集合|列出 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "42531092"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|应用内容版本。|
+|id|String|应用内容版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -53,6 +53,9 @@ ms.locfileid: "42531092"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: fileEncryptionInfo 资源类型
 description: 包含业务线应用内容版本文件加密信息的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0859447e06b7264f5018e575c047a283d02dc34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 945376e142a62efdc6b95b3150aa4425cb45f90d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532849"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397312"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "42532849"
 |initializationVector|Binary|用于加密算法的初始化向量。|
 |mac|Binary|加密文件内容和 IV 的哈希（内容哈希）。|
 |macKey|Binary|用于获取 mac 的密钥。|
-|profileIdentifier|字符串|配置文件标识符。|
+|profileIdentifier|String|配置文件标识符。|
 |fileDigest|Binary|加密前的文件摘要。|
 |fileDigestAlgorithm|String|文件摘要算法。|
 
@@ -53,6 +53,9 @@ ms.locfileid: "42532849"
   "fileDigestAlgorithm": "String"
 }
 ```
+
+
+
 
 
 

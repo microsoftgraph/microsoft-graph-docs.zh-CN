@@ -1,16 +1,16 @@
 ---
 title: 列出 iosManagedAppProtections
 description: 列出 iosManagedAppProtection 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ae09541bf060f1d6902cd45de154ceb01f9c657
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7692b514e9b5e0b22f9100c0e59674268b1fbf06
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513236"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399139"
 ---
 # <a name="list-iosmanagedappprotections"></a>列出 iosManagedAppProtections
 
@@ -112,6 +112,8 @@ Content-Length: 1933
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceComplianceActionItem
 description: 更新 deviceComplianceActionItem 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 112a9f77af4ea5daba53253002a239d93fc374b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 184a83935241a45d06ab825be47de3da0ee480ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400568"
 ---
 # <a name="update-devicecomplianceactionitem"></a>更新 deviceComplianceActionItem
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |gracePeriodHours|Int32|强制执行操作前要等待的小时数。 有效值为 0 至 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|要执行的操作。 可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles` 或 `pushNotification`。|
 |notificationTemplateId|String|要使用的通知消息模板|
@@ -100,6 +100,8 @@ Content-Length: 320
   ]
 }
 ```
+
+
 
 
 

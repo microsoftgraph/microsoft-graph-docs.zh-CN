@@ -1,16 +1,16 @@
 ---
 title: 更新 eBookInstallSummary
 description: 更新 eBookInstallSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25381593a17fcf9ac9c6a19b73d9b1c5961313e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0bc28ef68125b61c22687db60a1db98040bb8d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515677"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356031"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |installedDeviceCount|Int32|已成功安装此书籍的设备数量。|
 |failedDeviceCount|Int32|未能成功安装此书籍的设备数量。|
 |notInstalledDeviceCount|Int32|未安装此书籍的设备数量。|
@@ -102,6 +102,8 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: iosHomeScreenFolder 资源类型
 description: 包含主屏幕上的应用页面的文件夹
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f06d15dce4ce765111ba02a200b59576a614828e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59d4fe30fd274cd1051de50e225f449570de38ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530680"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410698"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>iosHomeScreenFolder 资源类型
 
@@ -58,6 +58,9 @@ ms.locfileid: "42530680"
   ]
 }
 ```
+
+
+
 
 
 

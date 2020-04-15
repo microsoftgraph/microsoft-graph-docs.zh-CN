@@ -1,16 +1,16 @@
 ---
 title: windowsMinimumOperatingSystem 资源类型
 description: Windows 移动应用需要的最低操作系统。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24ac15200fa293cc65a6207a91e5dc1132df1759
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd61874b0b7149c718ba790b2cdee23912a0a832
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439584"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
 
@@ -45,6 +45,9 @@ Windows 移动应用需要的最低操作系统。
   "v10_0": true
 }
 ```
+
+
+
 
 
 

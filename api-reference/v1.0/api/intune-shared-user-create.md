@@ -1,16 +1,16 @@
 ---
 title: 创建用户
 description: 新建用户对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47464435a2b38e5fb6a6649ab4b1f932bd970a89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 343614306136f4962f6ac1955dbe2b1ad906279d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512004"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411491"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -21,7 +21,7 @@ ms.locfileid: "42512004"
 创建新的 [user](../resources/intune-shared-user.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -55,7 +55,7 @@ POST /users
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户的唯一标识符。|
+|id|String|用户的唯一标识符。|
 |**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
@@ -92,6 +92,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

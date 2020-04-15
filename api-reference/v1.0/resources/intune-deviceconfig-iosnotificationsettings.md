@@ -1,16 +1,16 @@
 ---
 title: iosNotificationSettings 资源类型
 description: 说明通知设置的项。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 309bc8ce2211f4b2abfb1e72a01c857b9221ae4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ceffa61669b9601e85e354e856c80a85d025f8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530657"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410440"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42530657"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bundleID|字符串|要向其应用这些通知设置的应用的捆绑 ID。|
+|bundleID|String|要向其应用这些通知设置的应用的捆绑 ID。|
 |appName|String|要与 bundleID 关联的应用程序名称。|
 |发布者|String|要与 bundleID 关联的发布者。|
 |enabled|Boolean|指示是否允许此应用使用通知。|
@@ -57,6 +57,9 @@ ms.locfileid: "42530657"
   "soundsEnabled": true
 }
 ```
+
+
+
 
 
 

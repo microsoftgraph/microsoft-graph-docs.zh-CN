@@ -1,16 +1,16 @@
 ---
 title: deviceConfigurationUserOverview 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e3a5f04ebef0f918b6078a7d1135ccbf05b5c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a748253de74a077da2a71a41ae736b7da3a32f75
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532565"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447775"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532565"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceConfigurationUserOverview](../api/intune-deviceconfig-deviceconfigurationuseroverview-get.md)|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|读取 [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) 对象的属性和关系。|
@@ -29,7 +29,7 @@ ms.locfileid: "42532565"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
 |notApplicableCount|Int32|不适用的用户数|
 |successCount|Int32|成功用户的数量|
@@ -62,6 +62,9 @@ ms.locfileid: "42532565"
   "configurationVersion": 1024
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 deviceCompliancePolicySettingStateSummary
 description: 创建新的 deviceCompliancePolicySettingStateSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 947d2b5fe63e2056c8d2a5ea9626334119f71507
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c63c4a0f31c2db63db0d3ef65d3516f1cea3528
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515012"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399932"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
 
@@ -51,8 +51,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|setting|字符串|设置类名和属性名。|
+|id|String|实体的键。|
+|setting|String|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|设置平台。 可取值为：`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
@@ -114,6 +114,8 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: appListItem 资源类型
 description: 表示托管应用程序列表中的应用
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: acb27cacd61685c36043789b25f70f015d1fe0b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a018be94068c0edf478f78fc692b9abcd036a060
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530926"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449160"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "42530926"
 |属性|类型|说明|
 |:---|:---|:---|
 |name|字符串|应用程序名称|
-|publisher|字符串|应用程序发布者|
+|publisher|String|应用程序发布者|
 |appStoreUrl|String|应用程序的应用商店 URL|
 |appId|String|应用程序或应用程序的捆绑标识符|
 
@@ -47,6 +47,9 @@ ms.locfileid: "42530926"
   "appId": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d43e4db629b4a993e7bcc338e061148cb061ed36
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd0fefa3e4c5f2e0d53fb18abbd8badfdf0b15aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531084"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410867"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "42531084"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|transientError|1 |尚未记录|
-|error|2 |尚未记录|
-|unknown|3 |尚未记录|
+|transientError|1|尚未记录|
+|error|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|
@@ -39,6 +39,9 @@ ms.locfileid: "42531084"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
+
+
+
 
 
 

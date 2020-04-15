@@ -1,16 +1,16 @@
 ---
 title: 创建 termsAndConditionsAssignment
 description: 创建新的 termsAndConditionsAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8740a4c3522b66434de36a691cd8caa3f2779acf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3dbc0da01e896c333e714b172b23b76cdb0baad1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515432"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401524"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 
@@ -51,7 +51,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 
@@ -91,6 +91,8 @@ Content-Length: 217
   }
 }
 ```
+
+
 
 
 

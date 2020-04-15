@@ -1,16 +1,16 @@
 ---
 title: 更新 importedWindowsAutopilotDeviceIdentityUpload
 description: 更新 importedWindowsAutopilotDeviceIdentityUpload 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03ae9a969e003f67793be0739fe86c1858532cd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f16b753b4733e734c2b162470ae517cc6230381
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513355"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447850"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>更新 importedWindowsAutopilotDeviceIdentityUpload
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期/时间。|
 |状态|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
@@ -90,6 +90,8 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
+
 
 
 

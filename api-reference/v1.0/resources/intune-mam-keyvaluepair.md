@@ -1,16 +1,16 @@
 ---
 title: keyValuePair 资源类型
 description: 用于存储自定义设置的键值对
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0ced5c90f0e36906a534523836e7be3b99eb797
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6a2365223904f61b6c0b4aada6a26cf5888acf0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445827"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42533191"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|此键值对的名称|
+|name|String|此键值对的名称|
 |value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
@@ -43,6 +43,9 @@ ms.locfileid: "42533191"
   "value": "String"
 }
 ```
+
+
+
 
 
 

@@ -2,15 +2,15 @@
 title: 'message: createForward'
 description: 创建草稿以转发指定邮件。 然后，可以更新草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是发送草稿。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b6bfb95cf7378af473a4753a723e64e7cb9fc37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77e2e35d56e3aa4a6078b4deac543cb1079df9ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511563"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355186"
 ---
 # <a name="message-createforward"></a>message: createForward
 

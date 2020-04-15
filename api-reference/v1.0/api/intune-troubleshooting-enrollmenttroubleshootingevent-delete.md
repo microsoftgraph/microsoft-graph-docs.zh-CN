@@ -1,16 +1,16 @@
 ---
 title: 删除 enrollmentTroubleshootingEvent
 description: 删除 enrollmentTroubleshootingEvent。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee79c858b7c02115223297beb9965e6d16ac1eaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85216f304c3e3fbdd549db6d5a6cf8b1f96e3026
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511857"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368668"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>删除 enrollmentTroubleshootingEvent
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

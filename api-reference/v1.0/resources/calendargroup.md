@@ -1,16 +1,16 @@
 ---
 title: calendarGroup 资源类型
 description: 一组用户日历。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 230d6b0f90b8dec5ad223b7243fbc710dd720a30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 875bce80b4d4319439acf7c4d202a052770990a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531980"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407125"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531980"
 
 一组用户日历。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                      | 返回类型                        | 说明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
@@ -26,7 +26,7 @@ ms.locfileid: "42531980"
 | [创建日历组](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 创建新的日历组。                                  |
 | [创建日历组](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 读取 calendar 对象的属性和关系。 |
 | [更新](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | 更新 calendarGroup 对象。                                  |
-| [删除](../api/calendargroup-delete.md)                    | 无                               | 删除 calendarGroup 对象。                                  |
+| [Delete](../api/calendargroup-delete.md)                    | 无                               | 删除 calendarGroup 对象。                                  |
 | [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 列出日历组中的日历。                           |
 | [创建日历](../api/calendargroup-post-calendars.md)   | [日历](calendar.md)            | 在日历组中创建新日历。                    |
 

@@ -4,17 +4,17 @@ description: 指定应用程序的家长控制设置。 这些设置控制许可
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bec744a555cd7aa71d9dbf577f6006980501ac61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 8e54b8b437eb7a287102e67234a4f9b692136b79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447232"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353687"
 ---
 # <a name="parentalcontrolsettings-resource-type"></a>parentalControlSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 指定应用程序的家长控制设置。 这些设置控制许可体验。
 

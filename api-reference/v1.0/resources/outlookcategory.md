@@ -2,15 +2,15 @@
 title: outlookCategory 资源类型
 description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 用户定义主列表中的类别，并可应用用户定义的一个或多个
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: da65d6f2445a037ae4fcbbc8aaf05906bc0ae5c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc72d049d220ca7fd2cb3f6edeafabad41b09cb5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534117"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353957"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -81,14 +81,14 @@ ms.locfileid: "42534117"
 
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) 集合 |获取为用户定义的所有类别。|
 |[Get category](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |获取指定的 **outlookCategory** 对象的属性和关系。|
 |[Create](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |在用户主类别列表中创建 **outlookCategory** 对象。|
 |[Update](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |更新指定 **outlookCategory** 对象的可写属性 **color**。 |
-|[删除](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
+|[Delete](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,16 +1,16 @@
 ---
 title: scheduleActionsForRules 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5233823359068eb48e6de90933ce1a7c86cef443
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c4a127acc4a8a7b86091600e8e8de50b52e96ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400069"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 
@@ -84,6 +84,8 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

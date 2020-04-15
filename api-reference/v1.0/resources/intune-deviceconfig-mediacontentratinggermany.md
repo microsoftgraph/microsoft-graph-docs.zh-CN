@@ -1,16 +1,16 @@
 ---
 title: mediaContentRatingGermany 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a08891428edd5fec07308e2ff7e44da49eaea93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3adb081f2b18bbf38327cd56adf90f29333ec146
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530634"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439447"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany 资源类型
 
@@ -43,6 +43,9 @@ ms.locfileid: "42530634"
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

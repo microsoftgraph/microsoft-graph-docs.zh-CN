@@ -2,15 +2,15 @@
 title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
 localization_priority: Priority
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f5f630ddfa76dd3ce162857e92e18b00fa903090
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d580f97858fed757ec6fd40f7a9a0af3ce730f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509757"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442392"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 

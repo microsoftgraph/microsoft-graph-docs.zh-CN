@@ -1,16 +1,16 @@
 ---
 title: auditActor 资源类型
 description: 包含审核主角的属性的类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c10ac0a18f5bfcf68be56edc402c83d9882a8ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c6a51d99d712305292e17d19487d829bd2e09af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532737"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439530"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "42532737"
 |:---|:---|:---|
 |type|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
-|applicationId|字符串|AAD 应用程序 ID。|
-|applicationDisplayName|字符串|应用程序的名称。|
+|applicationId|String|AAD 应用程序 ID。|
+|applicationDisplayName|String|应用程序的名称。|
 |userPrincipalName|字符串|用户主体名称 (UPN)。|
-|servicePrincipalName|字符串|服务主体名称 (SPN)。|
+|servicePrincipalName|String|服务主体名称 (SPN)。|
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 
@@ -57,6 +57,9 @@ ms.locfileid: "42532737"
   "userId": "String"
 }
 ```
+
+
+
 
 
 

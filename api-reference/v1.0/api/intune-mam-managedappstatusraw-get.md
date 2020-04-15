@@ -1,16 +1,16 @@
 ---
 title: 获取 managedAppStatusRaw
 description: 读取 managedAppStatusRaw 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dfcba4465fe9d145e480ab0af87047e77e1293a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b25451f69bc2dcf67882a35976fbfb96a9c7ba1c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398598"
 ---
 # <a name="get-managedappstatusraw"></a>获取 managedAppStatusRaw
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -80,6 +80,8 @@ Content-Length: 279
   }
 }
 ```
+
+
 
 
 

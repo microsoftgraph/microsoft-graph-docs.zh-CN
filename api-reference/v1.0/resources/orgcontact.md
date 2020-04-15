@@ -2,15 +2,15 @@
 title: orgContact 资源类型
 description: 表示组织联系人
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 44fdd10d1e86405c9a24ed0dab97125e3cc52360
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: af8c6da3b7953618160aa19f79d976d5e8d248a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986073"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354080"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -28,17 +28,17 @@ ms.locfileid: "42986073"
 |:---------------|:--------|:----------|
 |[列出 organizationl 联系人](../api/orgcontact-list.md) | [orgContact](orgcontact.md) |列出组织联系人的属性。|
 |[获取 organizationl 联系人](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |读取组织联系人的属性和关系。|
-|[获取经理](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 获取组织联系人的经理。|
-|[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) 集合| 列出组织联系人的直接下属。|
-|[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 列出组织联系人所属的组。|
-|[列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出组织联系人所属的组，包括组织联系人所嵌套的组。|
+|[获取管理器](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 获取组织联系人的经理。|
+|[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| 列出组织联系人的直接下属。|
+|[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出组织联系人所属的组。|
+|[列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出组织联系人所属的组，包括组织联系人所嵌套的组。|
 |[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String 集合| 检查组成员身份。 |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String 集合| 返回指定的组织联系人所属的所有组。 |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| 返回组织联系人所属的 directoryObjects 的列表。 |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | 探讨                    | [physicalOfficeAddress](physicalofficeaddress.md)集合           | 此组织联系人的邮政地址。 目前，一个联系人只能有一个实际地址。 |
 | companyName                  | String                                                    | 此组织联系人所属的公司的名称。                                                                                                                                                                                                                                                                                                                 |
@@ -58,12 +58,12 @@ ms.locfileid: "42986073"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |directReports|[directoryObject](directoryobject.md) collection| 联系人的直接下属。 （其 "经理" 属性设置为 "联系人" 的用户和联系人。） 只读。 可为 Null。|
 |manager|[directoryObject](directoryobject.md)| 作为此联系人的经理的用户或联系人。 只读。|
-|memberOf|[directoryObject](directoryobject.md) 集合| 此联系人所属的组。 只读。 可为 NULL。|
-|transitiveMemberOf|[directoryObject](directoryobject.md) 集合| 此联系人所属的组，包括将联系人嵌套在其下的组。|. 只读。 可为 Null。|
+|memberOf|[directoryObject](directoryobject.md) collection| 此联系人所属的组。 只读。 可为 Null。|
+|transitiveMemberOf|[directoryObject](directoryobject.md) collection| 此联系人所属的组，包括将联系人嵌套在其下的组。|. 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,20 +1,20 @@
 ---
 title: Logonip 资源类型
 description: 包含有关用户帐户的状态信息。
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2c9de090d20f9fc6e1e383b285e31afb1c3d77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6192e5a549c646cc9b63117b111a0c5d167d75a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446777"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442332"
 ---
 # <a name="usersecuritystate-resource-type"></a>Logonip 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含有关用户帐户的状态信息。
 
@@ -26,7 +26,7 @@ ms.locfileid: "42446777"
 |帐户|String|用户帐户的帐户名（不包含 Active Directory 域或 DNS 域）-（也`mailNickName`称为）。|
 |domainName|String|用户帐户的 NetBIOS/Active Directory 域（即，域 \ 帐户格式）。|
 |emailRole|emailRole|对于与电子邮件相关的警报-用户帐户的电子邮件 "role"。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|布尔|指示用户是否通过 VPN 登录。|
+|isVpn|Boolean|指示用户是否通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |logonId|String|用户登录 ID。|
 |Usersecuritystate|String|发出登录请求的 IP 地址。|

@@ -1,20 +1,20 @@
 ---
 title: telecomExpenseManagementPartner 资源类型
 description: telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状态。 组织通过合作伙伴载入后，即可允许或禁止合作伙伴打开或关闭 TEM 功能。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5376896474e137f582df07439658f9545ea4ee63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a82cb01cf408d1e417bcd4e3d1284e11db9d85ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447764"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445558"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -61,6 +61,9 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

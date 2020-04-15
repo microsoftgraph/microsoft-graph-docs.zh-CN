@@ -1,20 +1,20 @@
 ---
 title: onPremisesConditionalAccessSettings 资源类型
 description: 表示租户的 Exchange 本地条件访问设置的单例实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2fda9b2c4e8dff366fc347ea145ba627e6c764ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44e0174ce6b7c8918e100c345189f79050038f9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448037"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441763"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,6 +60,9 @@ ms.locfileid: "42448037"
   "overrideDefaultRule": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: detectedApp 资源类型
 description: 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcf11e763ff826ddc0f3c20ff722b6f3d124af57
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dae22c8a2e939d7ab06a645726f139d5b02ac724
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407048"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42530302"
 
 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|列出 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "42530302"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
 |displayName|字符串|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
@@ -61,6 +61,9 @@ ms.locfileid: "42530302"
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: vppLicensingType 资源类型
 description: 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72fc5365ee41bd281d4dd59ac81305066919752a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7d130b1ee3354a0a82788ce58543b9eb6e7896
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532748"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439643"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
@@ -43,6 +43,9 @@ ms.locfileid: "42532748"
   "supportsDeviceLicensing": true
 }
 ```
+
+
+
 
 
 

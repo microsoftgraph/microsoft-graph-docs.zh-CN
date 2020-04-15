@@ -1,16 +1,16 @@
 ---
 title: 列出附件
 description: 检索附加到事件的 attachment 对象列表。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 950be842a6ae16a841c93484ae7bd01d16e12ee0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5b75ce4d3df43f0f24d35178777198173d6a97a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517353"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370948"
 ---
 # <a name="list-attachments"></a>列出附件
 

@@ -1,16 +1,16 @@
 ---
 title: windowsDefenderScanActionResult 资源类型
 description: Windows Defender 最后扫描结果
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fce56be7dcc0d1262bb65420d6ce3986cce1fe3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f0d0296442ebb9c67dea8dc87b1a42bd980c92c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406817"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 
@@ -26,7 +26,7 @@ Windows Defender 最后扫描结果
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|字符串|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
@@ -52,6 +52,9 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
+
+
+
 
 
 

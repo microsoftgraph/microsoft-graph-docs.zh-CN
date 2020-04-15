@@ -1,16 +1,16 @@
 ---
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 28d8ff58b4808e44cbcd2278c7e4169f4c2ccb03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04125b4abd1bf799181f05b727079a34f6bc4c9a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515944"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447887"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|字符串|文件名称。|
+|name|String|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
@@ -110,6 +110,8 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
 
 
 

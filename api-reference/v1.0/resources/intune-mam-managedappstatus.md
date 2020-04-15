@@ -1,20 +1,20 @@
 ---
 title: managedAppStatus 资源类型
 description: 表示组织的应用保护和配置状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: deaca18dd8a11c930bdd052a6e3c1f94f0de1a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca78f4dd9a191819e7f5e74ecea491ce7ceb7ec2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448324"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354287"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,6 +52,9 @@ ms.locfileid: "42448324"
   "version": "String"
 }
 ```
+
+
+
 
 
 

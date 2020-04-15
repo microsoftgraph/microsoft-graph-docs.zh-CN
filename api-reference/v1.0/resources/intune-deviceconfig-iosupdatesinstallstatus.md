@@ -1,16 +1,16 @@
 ---
 title: iosUpdatesInstallStatus 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 14f90e168bcdaa10b1769b10096e6231a1173ad1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 98cd3915dd34f4707e937d74d66ab5f7fe0973e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42816151"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410371"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -41,6 +41,9 @@ ms.locfileid: "42816151"
 |notSupportedOperation|-2016330701|尚未记录|
 |sharedDeviceUserLoggedInError|-2016330699|尚未记录|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
+
+
+
 
 
 

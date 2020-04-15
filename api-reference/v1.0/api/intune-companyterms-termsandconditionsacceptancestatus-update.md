@@ -1,16 +1,16 @@
 ---
 title: 更新 termsAndConditionsAcceptanceStatus
 description: 更新 termsAndConditionsAcceptanceStatus 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a73e29bb768bef36df50e734be6a4222190d6532
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04d036b311fb0ab091ca31c60f72a3f08f5792f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515439"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442130"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>更新 termsAndConditionsAcceptanceStatus
 
@@ -93,6 +93,8 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
+
 
 
 

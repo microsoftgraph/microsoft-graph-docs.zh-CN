@@ -2,15 +2,15 @@
 title: 获取管理器
 description: 获取此组织联系人的经理。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 92ef5138853502698e9d76858d81cacfeac59fbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4af7bb87f292ac309cb1837cff3772fcafddc767
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511206"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387347"
 ---
 # <a name="get-manager"></a>获取管理器
 
@@ -38,9 +38,9 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

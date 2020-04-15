@@ -1,16 +1,16 @@
 ---
 title: termsAndConditions 资源类型
 description: TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc2ea20788d7f137e44d7ef04fa5b4ce061709f1
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 9633e50735e5e1bcc11b2dedac19884b3ae62524
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144098"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449416"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -36,7 +36,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|说明|字符串|管理员提供的 T&C 策略描述。|
+|description|字符串|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
@@ -70,6 +70,9 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
+
+
+
 
 
 

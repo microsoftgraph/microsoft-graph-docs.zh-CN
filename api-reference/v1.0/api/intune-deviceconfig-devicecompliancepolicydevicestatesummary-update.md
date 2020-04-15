@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceCompliancePolicyDeviceStateSummary
 description: 更新 deviceCompliancePolicyDeviceStateSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a005d29d1da04763978163f8aca5f1d3373d235
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65193c1bfd77a947f707a19b976a62700a35d2f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515019"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399947"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>更新 deviceCompliancePolicyDeviceStateSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |:---|:---|:---|
 |inGracePeriodCount|Int32|宽限期内的设备数|
 |configManagerCount|Int32|由 System Center Configuration Manager 管理符合性的设备数|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
@@ -111,6 +111,8 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

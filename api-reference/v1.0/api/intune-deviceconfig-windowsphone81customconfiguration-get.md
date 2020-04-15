@@ -1,16 +1,16 @@
 ---
 title: 获取 windowsPhone81CustomConfiguration
 description: 读取 windowsPhone81CustomConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5126fcf212c476b8da43c95cb05987b6378b8acd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c376e6e6740527dc6b37e582815568a2b013e005
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513750"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422062"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>获取 windowsPhone81CustomConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -89,6 +89,8 @@ Content-Length: 632
   }
 }
 ```
+
+
 
 
 

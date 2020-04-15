@@ -1,16 +1,16 @@
 ---
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aafa0147bac2acfcaa1f77291be1451c907b2f72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b613ae365d0842079485171b41c7d37580a66b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530771"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445976"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -23,15 +23,15 @@ ms.locfileid: "42530771"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|setting|字符串|报告的设置|
-|settingName|字符串|报告的本地化/用户友好设置名称|
-|instanceDisplayName|字符串|报告的设置实例的名称。|
+|setting|String|报告的设置|
+|settingName|String|报告的本地化/用户友好设置名称|
+|instanceDisplayName|String|报告的设置实例的名称。|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
-|errorDescription|字符串|错误说明|
+|errorDescription|String|错误说明|
 |userId|String|UserId|
-|userName|字符串|UserName|
-|userEmail|字符串|UserEmail|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
 |userPrincipalName|字符串|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
@@ -69,6 +69,9 @@ ms.locfileid: "42530771"
   "currentValue": "String"
 }
 ```
+
+
+
 
 
 

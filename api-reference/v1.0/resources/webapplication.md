@@ -4,17 +4,17 @@ description: 指定 Web 应用程序的设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f75c6873aa6e3f540ee12930ba67e4b1ee9898b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: fc216874ae2b8e11a1a52443c8d255a936fc5223
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446749"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442286"
 ---
 # <a name="webapplication-resource-type"></a>webApplication 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 指定 Web 应用程序的设置。
 

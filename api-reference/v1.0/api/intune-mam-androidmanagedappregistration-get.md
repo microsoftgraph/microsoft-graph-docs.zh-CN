@@ -1,16 +1,16 @@
 ---
 title: 获取 androidManagedAppRegistration
 description: 读取 androidManagedAppRegistration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3790052e846baf0e2cd27b1b85e7d698ae8a0760
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2aa3b9352c3bd3bde82f7b0c7fc0dfcdb8821c2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513306"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446029"
 ---
 # <a name="get-androidmanagedappregistration"></a>获取 androidManagedAppRegistration
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -92,6 +92,8 @@ Content-Length: 810
   }
 }
 ```
+
+
 
 
 

@@ -4,13 +4,13 @@ description: 声明应用程序请求的可选声明。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 19f5233ddb4db55f625460a063a175fc4a3e5efc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 271fc7a054fce7649ff5b637a0a55d47a566332e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354103"
 ---
 # <a name="optionalclaims-resource-type"></a>optionalClaims 资源类型
 

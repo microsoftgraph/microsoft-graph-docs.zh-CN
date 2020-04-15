@@ -1,20 +1,20 @@
 ---
 title: outlookUser 资源类型
 description: 表示用户可用的 Outlook 服务。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 27d7e91223a763720cdb70d6b857f91c0955b5ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c18451c9d4c75f76cd8f2f544c1325c14b233f38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447253"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397235"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 表示用户可用的 Outlook 服务。

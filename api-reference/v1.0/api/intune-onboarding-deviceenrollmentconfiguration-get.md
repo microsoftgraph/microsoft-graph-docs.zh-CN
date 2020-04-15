@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceEnrollmentConfiguration
 description: 读取 deviceEnrollmentConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89d1a0361c8f31a1d335133a4d8810ffef89b44e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5707ad0fc0da024e5b8fbdcc6425de57ba5d2ba9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512711"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418616"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>获取 deviceEnrollmentConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -81,6 +81,8 @@ Content-Length: 392
   }
 }
 ```
+
+
 
 
 

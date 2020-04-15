@@ -1,16 +1,16 @@
 ---
 title: 列出 targetedManagedAppConfigurations
 description: 列出 targetedManagedAppConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5409b2baf264f52aae40d2ed46b81ca49114077
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63458ec3430ef252501460119dcd77a25a4f48a2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512956"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398133"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>列出 targetedManagedAppConfigurations
 
@@ -88,6 +88,8 @@ Content-Length: 657
   ]
 }
 ```
+
+
 
 
 

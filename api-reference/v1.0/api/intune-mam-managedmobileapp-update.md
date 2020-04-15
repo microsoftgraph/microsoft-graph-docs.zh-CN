@@ -1,16 +1,16 @@
 ---
 title: 更新 managedMobileApp
 description: 更新 managedMobileApp 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f3fd398dd9721096d6a52e914e516dfae1e16b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 129fe8819d01c700bc07bab0e2f78eadcf46d436
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513026"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398395"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -97,6 +97,8 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
+
 
 
 

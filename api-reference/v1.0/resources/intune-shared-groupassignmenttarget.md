@@ -1,20 +1,20 @@
 ---
 title: groupAssignmentTarget 资源类型
 description: 表示组的赋值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f103315cc0c0499545a7fe3adb8bc31f9d24880
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4467c312581307a6603f5c83e4aa2e4e7fa1fa8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447834"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445708"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -44,6 +44,9 @@ ms.locfileid: "42447834"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

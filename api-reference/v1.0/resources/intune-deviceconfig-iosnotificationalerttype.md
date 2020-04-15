@@ -1,16 +1,16 @@
 ---
 title: iosNotificationAlertType 枚举类型
 description: 通知设置警报类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4476e6778f345e1ac394d6b87ed13cff8f9d410
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95fa382ba23dec2f8cf981860a1b5f51210d6c8f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532485"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410543"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 
@@ -24,9 +24,12 @@ ms.locfileid: "42532485"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|分隔|1 |分隔.|
-|适合|2 |适合.|
-|无|3 |无。|
+|分隔|1|分隔.|
+|适合|双面|适合.|
+|无|第三章|无。|
+
+
+
 
 
 

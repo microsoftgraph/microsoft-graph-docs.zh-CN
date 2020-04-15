@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Intune 管理应用
 description: '以下 Graph 资源可用于在 Intune 中管理移动应用：  '
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e0891232c413bddeebb3228729b4e80302aa02fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 222b5dbd149e94ac7af857e57d16254864e5b9a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397435"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理应用
 
@@ -76,4 +76,7 @@ ms.locfileid: "42531252"
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
+
+
+
 

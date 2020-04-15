@@ -1,16 +1,16 @@
 ---
 title: 列出 deviceManagementPartners
 description: 列出 deviceManagementPartner 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 465ac4b2718fcc8e689c816dbb1cd4d8efa8654c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bfe7ae6868067bf3a0aeacad27e5ecfcf79c532
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512515"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43369054"
 ---
 # <a name="list-devicemanagementpartners"></a>列出 deviceManagementPartners
 
@@ -82,6 +82,8 @@ Content-Length: 624
   ]
 }
 ```
+
+
 
 
 

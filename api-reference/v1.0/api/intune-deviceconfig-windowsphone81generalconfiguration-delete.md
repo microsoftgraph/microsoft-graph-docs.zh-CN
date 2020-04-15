@@ -1,16 +1,16 @@
 ---
 title: 删除 windowsPhone81GeneralConfiguration
 description: 删除 windowsPhone81GeneralConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 260eb8a07b0f10003737a3a4de090a01177c9c69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00ae4e8169a2edefa8843a6b98dd2a77de195f3e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513722"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441854"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>删除 windowsPhone81GeneralConfiguration
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 删除 managedAndroidLobApp
 description: 删除 managedAndroidLobApp。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29a759a890c4146ab40c442e34cae9649a7fe278
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3dda903bf1f32bf1bd7670a0b2ee24a5c53a10a0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516438"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446493"
 ---
 # <a name="delete-managedandroidlobapp"></a>删除 managedAndroidLobApp
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 managedMobileApp
 description: 创建新的 managedMobileApp 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17611c7eb3c4052892ec23ab49751db2bfd9b66c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8f10c47fb867e77fd5e8287d6c8f43da8f090de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513054"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398576"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -97,6 +97,8 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
+
 
 
 

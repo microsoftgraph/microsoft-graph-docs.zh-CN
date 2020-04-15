@@ -1,20 +1,20 @@
 ---
 title: macOSCompliancePolicy 资源类型
 description: 此类包含 Mac OS 的合规性设置。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cad0be6e123acf1f9a14b0c413b06ede2e4deb4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0f380d129780b825e66757f267a215de90e3af6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418158"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410300"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -37,12 +37,12 @@ ms.locfileid: "42418158"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|布尔|是否需要密码。|
-|passwordBlockSimple|布尔|指示是否阻止简单密码。|
+|passwordRequired|Boolean|是否需要密码。|
+|passwordBlockSimple|Boolean|指示是否阻止简单密码。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
@@ -52,12 +52,12 @@ ms.locfileid: "42418158"
 |osMinimumVersion|String|最低 MacOS 版本。|
 |osMaximumVersion|String|最大 MacOS 版本。|
 |systemIntegrityProtectionEnabled|Boolean|要求设备已启用系统完整性保护。|
-|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
+|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|firewallEnabled|布尔|是否应启用防火墙。|
-|firewallBlockAllIncoming|布尔|对应于 "阻止所有传入连接" 选项。|
-|firewallEnableStealthMode|布尔|对应于 "启用隐形模式"。|
+|firewallEnabled|Boolean|是否应启用防火墙。|
+|firewallBlockAllIncoming|Boolean|对应于 "阻止所有传入连接" 选项。|
+|firewallEnableStealthMode|Boolean|对应于 "启用隐形模式"。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -106,6 +106,9 @@ ms.locfileid: "42418158"
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
 
 
 

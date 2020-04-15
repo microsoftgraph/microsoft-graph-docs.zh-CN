@@ -1,16 +1,16 @@
 ---
 title: 更新 telecomExpenseManagementPartner
 description: 更新 telecomExpenseManagementPartner 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a642e05ce730f1ebfb23a9b9c634555dd73b726f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 12c346ae550eb5af7a3dfdb8fdff515de64a9ee4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511906"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410960"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>更新 telecomExpenseManagementPartner
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|TEM 合作伙伴的唯一标识符。|
+|id|String|TEM 合作伙伴的唯一标识符。|
 |displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

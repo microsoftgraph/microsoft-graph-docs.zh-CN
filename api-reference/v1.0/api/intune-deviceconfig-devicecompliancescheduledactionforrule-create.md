@@ -1,16 +1,16 @@
 ---
 title: 创建 deviceComplianceScheduledActionForRule
 description: 创建新的 deviceComplianceScheduledActionForRule 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4afb64aedd695ccc9f787ffe761ecd9878fa78bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14ecd6ad49c2a51287fcf0b6de8cc75853ab4847
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399729"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>创建 deviceComplianceScheduledActionForRule
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |ruleName|String|此计划操作适用的规则名称。|
 
 
@@ -87,6 +87,8 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
 
 
 

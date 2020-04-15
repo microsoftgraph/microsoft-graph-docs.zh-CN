@@ -1,16 +1,16 @@
 ---
 title: outlookItem 资源类型
 description: 下面是资源的 JSON 表示形式。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aa5e4af03171029e8557e38d3a75062161435318
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 365bbb5bc60b97317fa43013e12861d4e3135b25
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534106"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353768"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "42534106"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|categories|String collection|与项目关联的类别|
+|类别|String 集合|与项目关联的类别|
 |changeKey|String|标识项目的版本。 每次更改项目时，changeKey 也会更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|字符串| 只读。|

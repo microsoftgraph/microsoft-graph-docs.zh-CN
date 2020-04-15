@@ -2,15 +2,15 @@
 title: physicalOfficeAddress 资源类型
 description: 表示某个资源（如联系人或事件）的业务地址。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c7b0280d8b9e7d62357985b88ead034b015aef1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46674ad9be3e86fd36f5a5beb52829959bbd340b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445544"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "42534060"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|字符串|城市。|
+|city|String|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
-|officeLocation  | 字符串 | 组织联系人的办公地点，如建筑物和办公室号码。  |
-|postalCode|字符串|邮政编码。|
+|officeLocation  | String | 组织联系人的办公地点，如建筑物和办公室号码。  |
+|postalCode|String|邮政编码。|
 |state|String|省/市/自治区。|
 |street|String|街道。|
 

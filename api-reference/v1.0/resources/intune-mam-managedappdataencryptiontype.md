@@ -1,16 +1,16 @@
 ---
 title: managedAppDataEncryptionType 枚举类型
 description: 表示为托管应用程序加密应用程序数据的级别
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c2a4c9b713d2b91645cf210df60ec8d3ba642a20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4540826254967be7ed16e3feeb08dd38db4e48e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445782"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -24,9 +24,12 @@ ms.locfileid: "42533344"
 |成员|值|说明|
 |:---|:---|:---|
 |useDeviceSettings|0|应用程序数据根据设备上的默认设置进行加密。|
-|afterDeviceRestart|1 |重新启动设备时对应用数据进行加密。|
-|whenDeviceLockedExceptOpenFiles|2 |设备锁定时，与此策略关联的应用数据将被加密，但打开的文件中的数据除外|
-|whenDeviceLocked|3 |设备锁定时，与此策略关联的应用数据将被加密|
+|afterDeviceRestart|1|重新启动设备时对应用数据进行加密。|
+|whenDeviceLockedExceptOpenFiles|双面|设备锁定时，与此策略关联的应用数据将被加密，但打开的文件中的数据除外|
+|whenDeviceLocked|第三章|设备锁定时，与此策略关联的应用数据将被加密|
+
+
+
 
 
 

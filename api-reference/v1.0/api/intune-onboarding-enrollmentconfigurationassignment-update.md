@@ -1,16 +1,16 @@
 ---
 title: 更新 enrollmentConfigurationAssignment
 description: 更新 enrollmentConfigurationAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0af3350dfaa963755b749b56b60ee57ea77d3f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f4a6d77ec5b4a68c0e074e686aece203aec0cd7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512473"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442378"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>更新 enrollmentConfigurationAssignment
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|尚未记录|
 
 
@@ -91,6 +91,8 @@ Content-Length: 222
   }
 }
 ```
+
+
 
 
 
