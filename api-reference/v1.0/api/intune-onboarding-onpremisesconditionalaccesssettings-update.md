@@ -1,35 +1,35 @@
 ---
 title: 更新 onPremisesConditionalAccessSettings
 description: 更新 onPremisesConditionalAccessSettings 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bb232dec161a9070c9608137cd45845c814ab4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9adda2b21e79cc55670643079e8655f57992055
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466575"
 ---
-# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="ccccc-103">更新 onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="ccccc-103">Update onPremisesConditionalAccessSettings</span></span>
+# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="28e57-103">更新 onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="28e57-103">Update onPremisesConditionalAccessSettings</span></span>
 
-<span data-ttu-id="ccccc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ccccc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="28e57-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28e57-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ccccc-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ccccc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="28e57-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="28e57-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ccccc-106">更新 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ccccc-106">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+<span data-ttu-id="28e57-106">更新 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="28e57-106">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ccccc-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="ccccc-107">Prerequisites</span></span>
-<span data-ttu-id="ccccc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ccccc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="28e57-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="28e57-107">Prerequisites</span></span>
+<span data-ttu-id="28e57-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="28e57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ccccc-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ccccc-110">Permission type</span></span>|<span data-ttu-id="ccccc-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ccccc-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="28e57-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="28e57-110">Permission type</span></span>|<span data-ttu-id="28e57-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="28e57-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ccccc-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ccccc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ccccc-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccccc-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="ccccc-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ccccc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ccccc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ccccc-115">Not supported.</span></span>|
-|<span data-ttu-id="ccccc-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ccccc-116">Application</span></span>|<span data-ttu-id="ccccc-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ccccc-117">Not supported.</span></span>|
+|<span data-ttu-id="28e57-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="28e57-112">Delegated (work or school account)</span></span>|<span data-ttu-id="28e57-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28e57-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="28e57-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="28e57-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28e57-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="28e57-115">Not supported.</span></span>|
+|<span data-ttu-id="28e57-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="28e57-116">Application</span></span>|<span data-ttu-id="28e57-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="28e57-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ccccc-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ccccc-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28e57-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="28e57-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +38,34 @@ ms.locfileid: "42512431"
 PATCH /deviceManagement/conditionalAccessSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ccccc-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ccccc-119">Request headers</span></span>
-|<span data-ttu-id="ccccc-120">标头</span><span class="sxs-lookup"><span data-stu-id="ccccc-120">Header</span></span>|<span data-ttu-id="ccccc-121">值</span><span class="sxs-lookup"><span data-stu-id="ccccc-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28e57-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="28e57-119">Request headers</span></span>
+|<span data-ttu-id="28e57-120">标头</span><span class="sxs-lookup"><span data-stu-id="28e57-120">Header</span></span>|<span data-ttu-id="28e57-121">值</span><span class="sxs-lookup"><span data-stu-id="28e57-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ccccc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ccccc-122">Authorization</span></span>|<span data-ttu-id="ccccc-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ccccc-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ccccc-124">接受</span><span class="sxs-lookup"><span data-stu-id="ccccc-124">Accept</span></span>|<span data-ttu-id="ccccc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ccccc-125">application/json</span></span>|
+|<span data-ttu-id="28e57-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="28e57-122">Authorization</span></span>|<span data-ttu-id="28e57-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="28e57-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="28e57-124">接受</span><span class="sxs-lookup"><span data-stu-id="28e57-124">Accept</span></span>|<span data-ttu-id="28e57-125">application/json</span><span class="sxs-lookup"><span data-stu-id="28e57-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ccccc-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ccccc-126">Request body</span></span>
-<span data-ttu-id="ccccc-127">在请求正文中，提供 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ccccc-127">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28e57-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="28e57-126">Request body</span></span>
+<span data-ttu-id="28e57-127">在请求正文中，提供 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="28e57-127">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-<span data-ttu-id="ccccc-128">下表显示创建 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ccccc-128">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
+<span data-ttu-id="28e57-128">下表显示创建 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="28e57-128">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
 
-|<span data-ttu-id="ccccc-129">属性</span><span class="sxs-lookup"><span data-stu-id="ccccc-129">Property</span></span>|<span data-ttu-id="ccccc-130">类型</span><span class="sxs-lookup"><span data-stu-id="ccccc-130">Type</span></span>|<span data-ttu-id="ccccc-131">说明</span><span class="sxs-lookup"><span data-stu-id="ccccc-131">Description</span></span>|
+|<span data-ttu-id="28e57-129">属性</span><span class="sxs-lookup"><span data-stu-id="28e57-129">Property</span></span>|<span data-ttu-id="28e57-130">类型</span><span class="sxs-lookup"><span data-stu-id="28e57-130">Type</span></span>|<span data-ttu-id="28e57-131">说明</span><span class="sxs-lookup"><span data-stu-id="28e57-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ccccc-132">id</span><span class="sxs-lookup"><span data-stu-id="ccccc-132">id</span></span>|<span data-ttu-id="ccccc-133">字符串</span><span class="sxs-lookup"><span data-stu-id="ccccc-133">String</span></span>|<span data-ttu-id="ccccc-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="ccccc-134">Not yet documented</span></span>|
-|<span data-ttu-id="ccccc-135">enabled</span><span class="sxs-lookup"><span data-stu-id="ccccc-135">enabled</span></span>|<span data-ttu-id="ccccc-136">布尔值</span><span class="sxs-lookup"><span data-stu-id="ccccc-136">Boolean</span></span>|<span data-ttu-id="ccccc-137">指示是否为该组织启用了本地条件访问</span><span class="sxs-lookup"><span data-stu-id="ccccc-137">Indicates if on premises conditional access is enabled for this organization</span></span>|
-|<span data-ttu-id="ccccc-138">includedGroups</span><span class="sxs-lookup"><span data-stu-id="ccccc-138">includedGroups</span></span>|<span data-ttu-id="ccccc-139">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="ccccc-139">Guid collection</span></span>|<span data-ttu-id="ccccc-140">本地条件访问将面向的用户组。</span><span class="sxs-lookup"><span data-stu-id="ccccc-140">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="ccccc-141">这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。</span><span class="sxs-lookup"><span data-stu-id="ccccc-141">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
-|<span data-ttu-id="ccccc-142">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="ccccc-142">excludedGroups</span></span>|<span data-ttu-id="ccccc-143">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="ccccc-143">Guid collection</span></span>|<span data-ttu-id="ccccc-144">将由本地条件访问豁免的用户组。</span><span class="sxs-lookup"><span data-stu-id="ccccc-144">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="ccccc-145">这些组中的所有用户都将从条件访问策略中豁免。</span><span class="sxs-lookup"><span data-stu-id="ccccc-145">All users in these groups will be exempt from the conditional access policy.</span></span>|
-|<span data-ttu-id="ccccc-146">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="ccccc-146">overrideDefaultRule</span></span>|<span data-ttu-id="ccccc-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="ccccc-147">Boolean</span></span>|<span data-ttu-id="ccccc-148">允许设备时重写默认访问规则以确保授予访问。</span><span class="sxs-lookup"><span data-stu-id="ccccc-148">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
+|<span data-ttu-id="28e57-132">id</span><span class="sxs-lookup"><span data-stu-id="28e57-132">id</span></span>|<span data-ttu-id="28e57-133">String</span><span class="sxs-lookup"><span data-stu-id="28e57-133">String</span></span>|<span data-ttu-id="28e57-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="28e57-134">Not yet documented</span></span>|
+|<span data-ttu-id="28e57-135">enabled</span><span class="sxs-lookup"><span data-stu-id="28e57-135">enabled</span></span>|<span data-ttu-id="28e57-136">布尔值</span><span class="sxs-lookup"><span data-stu-id="28e57-136">Boolean</span></span>|<span data-ttu-id="28e57-137">指示是否为该组织启用了本地条件访问</span><span class="sxs-lookup"><span data-stu-id="28e57-137">Indicates if on premises conditional access is enabled for this organization</span></span>|
+|<span data-ttu-id="28e57-138">includedGroups</span><span class="sxs-lookup"><span data-stu-id="28e57-138">includedGroups</span></span>|<span data-ttu-id="28e57-139">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="28e57-139">Guid collection</span></span>|<span data-ttu-id="28e57-140">本地条件访问将面向的用户组。</span><span class="sxs-lookup"><span data-stu-id="28e57-140">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="28e57-141">这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。</span><span class="sxs-lookup"><span data-stu-id="28e57-141">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
+|<span data-ttu-id="28e57-142">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="28e57-142">excludedGroups</span></span>|<span data-ttu-id="28e57-143">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="28e57-143">Guid collection</span></span>|<span data-ttu-id="28e57-144">将由本地条件访问豁免的用户组。</span><span class="sxs-lookup"><span data-stu-id="28e57-144">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="28e57-145">这些组中的所有用户都将从条件访问策略中豁免。</span><span class="sxs-lookup"><span data-stu-id="28e57-145">All users in these groups will be exempt from the conditional access policy.</span></span>|
+|<span data-ttu-id="28e57-146">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="28e57-146">overrideDefaultRule</span></span>|<span data-ttu-id="28e57-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="28e57-147">Boolean</span></span>|<span data-ttu-id="28e57-148">允许设备时重写默认访问规则以确保授予访问。</span><span class="sxs-lookup"><span data-stu-id="28e57-148">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ccccc-149">响应</span><span class="sxs-lookup"><span data-stu-id="ccccc-149">Response</span></span>
-<span data-ttu-id="ccccc-150">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ccccc-150">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="28e57-149">响应</span><span class="sxs-lookup"><span data-stu-id="28e57-149">Response</span></span>
+<span data-ttu-id="28e57-150">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="28e57-150">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ccccc-151">示例</span><span class="sxs-lookup"><span data-stu-id="ccccc-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="28e57-151">示例</span><span class="sxs-lookup"><span data-stu-id="28e57-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ccccc-152">请求</span><span class="sxs-lookup"><span data-stu-id="ccccc-152">Request</span></span>
-<span data-ttu-id="ccccc-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ccccc-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="28e57-152">请求</span><span class="sxs-lookup"><span data-stu-id="28e57-152">Request</span></span>
+<span data-ttu-id="28e57-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="28e57-153">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ccccc-154">响应</span><span class="sxs-lookup"><span data-stu-id="ccccc-154">Response</span></span>
-<span data-ttu-id="ccccc-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ccccc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="28e57-154">响应</span><span class="sxs-lookup"><span data-stu-id="28e57-154">Response</span></span>
+<span data-ttu-id="28e57-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="28e57-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -104,6 +104,8 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
+
+
 
 
 
