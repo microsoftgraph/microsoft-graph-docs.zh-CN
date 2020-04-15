@@ -1,16 +1,16 @@
 ---
 title: 更新设备
 description: 更新已注册设备的属性。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 55084173ee45d0fc181b4e5ed9ac20557d50df0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ad7775e813566b9ef29280e0a85b5f85a5d40ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466680"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -36,7 +36,7 @@ PATCH /devices/{id}
 ```
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -48,7 +48,7 @@ PATCH /devices/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
-|operatingSystem|字符串|设备上的操作系统类型。|
+|operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
 |isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |

@@ -1,16 +1,16 @@
 ---
 title: 更新 managedDeviceMobileAppConfigurationDeviceSummary
 description: 更新 managedDeviceMobileAppConfigurationDeviceSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98a38fd33d220943aaff32bea1cca963665bb186
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a29e7f3f3e76e8327073831d4e4deec5fafb8bf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516256"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471711"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
 |successCount|Int32|成功设备的数量|
@@ -105,6 +105,8 @@ Content-Length: 348
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

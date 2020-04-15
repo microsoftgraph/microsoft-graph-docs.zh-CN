@@ -2,15 +2,15 @@
 title: Update calendar
 description: '更新 calendar 对象的属性。 相应日历可以是用户的日历， '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8bfc8e33b2c4f81f6a047f27bed8297b122537f4
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 8fd34cb59d7a37a83c67c29ada6a1674665155a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228836"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471815"
 ---
 # <a name="update-calendar"></a>更新日历
 

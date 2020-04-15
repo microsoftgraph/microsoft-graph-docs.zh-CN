@@ -1,16 +1,16 @@
 ---
 title: 列出 editionUpgradeConfigurations
 description: 列出 editionUpgradeConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae918b00bca65329e905ee12af86ac98d2f13320
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44ada9d1289bfb1b57a3ad406b56a72f246624f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514667"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468869"
 ---
 # <a name="list-editionupgradeconfigurations"></a>列出 editionUpgradeConfigurations
 
@@ -83,6 +83,8 @@ Content-Length: 560
   ]
 }
 ```
+
+
 
 
 

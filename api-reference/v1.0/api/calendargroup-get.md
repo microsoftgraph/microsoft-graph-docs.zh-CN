@@ -1,16 +1,16 @@
 ---
 title: 获取 calendarGroup
 description: 检索 calendargroup 对象的属性和关系。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9ffd861b9641bb2f1a933420aaab74aa23a2b0e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c2c91944e8ea05c129a32bdbb2835fa06b753d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518768"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471801"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 

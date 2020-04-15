@@ -1,16 +1,16 @@
 ---
 title: ratingUnitedKingdomTelevisionType 枚举类型
 description: 英国的电视内容评级标签
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 68ba802c7dd902c1fe7c394da4f8f9d099a54cef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d661db713d8bbd33257dfc88b64e3366b285e63
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530484"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472726"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 枚举类型
 
@@ -24,8 +24,11 @@ ms.locfileid: "42530484"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|：|2 |允许电视内容带警告消息|
+|allBlocked|1|不允许任何电视显示内容|
+|：|双面|允许电视内容带警告消息|
+
+
+
 
 
 

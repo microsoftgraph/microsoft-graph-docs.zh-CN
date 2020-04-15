@@ -1,16 +1,16 @@
 ---
 title: 获取组织
 description: 读取 organization 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a77b19c75ab7e5740973fd7a1feff8de2abf894a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56865889448d8f5e2a2edf8fb3d6068eaa8d68c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512424"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467370"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -39,7 +39,7 @@ GET /organization/{organizationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -76,6 +76,8 @@ Content-Length: 176
   }
 }
 ```
+
+
 
 
 

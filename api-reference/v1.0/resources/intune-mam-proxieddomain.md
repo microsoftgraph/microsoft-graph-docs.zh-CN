@@ -1,20 +1,20 @@
 ---
 title: proxiedDomain 资源类型
 description: 代理域
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e437c6bf035d0f6099531fbe5ebf236d30be3a2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6079a2503004a1606e9db0e4b20dce8725f37ab9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474101"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -43,6 +43,9 @@ ms.locfileid: "42448275"
   "proxy": "String"
 }
 ```
+
+
+
 
 
 

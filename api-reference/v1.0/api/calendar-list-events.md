@@ -1,16 +1,16 @@
 ---
 title: 列出事件
 description: 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0b21a267c79fbde4c2a2f0099446206e9c5d2bd4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c88527e971d311ea7daaff8c3598e336031eb059
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518796"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471853"
 ---
 # <a name="list-events"></a>列出事件
 

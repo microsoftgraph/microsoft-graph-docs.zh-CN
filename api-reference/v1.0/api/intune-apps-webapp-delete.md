@@ -1,16 +1,16 @@
 ---
 title: 删除 webApp
 description: 删除 webApp。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4615921f2e12523765f790dbc6e2b9e15aa22a85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63cf72046438a756a19763728a828de6a7f8305e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515867"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464608"
 ---
 # <a name="delete-webapp"></a>删除 webApp
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 userInstallStateSummary
 description: 更新 userInstallStateSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fbfcf5d5e08117eb72d3931da922e6f3cdde02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b03442d0ebd4e0a0379003eba72b44023b7db7ec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468951"
 ---
 # <a name="update-userinstallstatesummary"></a>更新 userInstallStateSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
@@ -96,6 +96,8 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
 
 
 

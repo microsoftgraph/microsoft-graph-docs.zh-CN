@@ -1,16 +1,16 @@
 ---
 title: 创建联系人
 description: 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 终结点中。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f6edf7a86e3e2513d975127312514fa09e6f2886
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78d967862d586c064975c82872b8263a92c345e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518243"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467658"
 ---
 # <a name="create-contact"></a>创建联系人
 

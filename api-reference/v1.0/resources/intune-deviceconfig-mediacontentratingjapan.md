@@ -1,16 +1,16 @@
 ---
 title: mediaContentRatingJapan 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7b4efd96b766eef9104baaa694d166eb22df340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b31ca971ea15470853a4ec9d6e1cf89a76fa3b9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530618"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473151"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan 资源类型
 
@@ -43,6 +43,9 @@ ms.locfileid: "42530618"
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

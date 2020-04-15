@@ -1,16 +1,16 @@
 ---
 title: 创建设备
 description: 在组织中创建并注册一个新设备。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 97203f2367b03a48d6cbf89f7ffaeb4d9d529795
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 396d74e2ef423b8efd61877b1a2b1fd8fdeee371
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518089"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466709"
 ---
 # <a name="create-device"></a>创建设备
 

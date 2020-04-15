@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 使用此 API 在默认或指定的日历中创建新事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8dddbea7719b7f14dd63ccefd538a6ce2531e922
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 8b557f894743c1a6b07983c490cb25790f40d046
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228843"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471830"
 ---
 # <a name="create-event"></a>创建事件
 

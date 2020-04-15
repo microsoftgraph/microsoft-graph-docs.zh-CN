@@ -1,16 +1,16 @@
 ---
 title: 列出 iosVppEBookAssignments
 description: 列出 iosVppEBookAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac0378b79958ba5d840b1b958b4eb141e96ec489
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5edcc5cb1c6cd074ac26ca57793d34fe25292b58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515663"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467537"
 ---
 # <a name="list-iosvppebookassignments"></a>列出 iosVppEBookAssignments
 
@@ -78,6 +78,8 @@ Content-Length: 299
   ]
 }
 ```
+
+
 
 
 

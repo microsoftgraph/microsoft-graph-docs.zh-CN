@@ -1,16 +1,16 @@
 ---
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 377ccc56b1bf582324bea057463420622a891bb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: abf180686d36a29c9d6803f96bec483aa5046614
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530462"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472620"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42530462"
 
 设置状态的设备合规性策略和配置摘要
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 settingStateDeviceSummaries](../api/intune-deviceconfig-settingstatedevicesummary-list.md)|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|列出 [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 对象的属性和关系。|
@@ -32,8 +32,8 @@ ms.locfileid: "42530462"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|settingName|字符串|设置的名称|
+|id|String|实体的键。|
+|settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
 |notApplicableDeviceCount|Int32|设置的设备不可用计数|
@@ -69,6 +69,9 @@ ms.locfileid: "42530462"
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

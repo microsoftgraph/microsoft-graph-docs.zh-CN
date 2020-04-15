@@ -2,15 +2,15 @@
 title: 消息：答复
 description: '全部在一个 **reply** 调用中回复邮件的发件人、添加注释或修改任意可更新的属性。 '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 079571dc0e77d69353212130c04e69b113a1090d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65119240411d8643c73722a0781a28311edf8743
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511493"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467276"
 ---
 # <a name="message-reply"></a>消息：答复
 

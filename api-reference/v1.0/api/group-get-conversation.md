@@ -1,16 +1,16 @@
 ---
 title: 获取对话
 description: 获取 conversation 对象。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 150ea5376a805a2a558b7d2694f9dfdc15f25af6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7da6acb81817a2340e50021b6d87342d9e79043
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471733"
 ---
 # <a name="get-conversation"></a>获取对话
 

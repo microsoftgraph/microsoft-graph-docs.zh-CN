@@ -1,16 +1,16 @@
 ---
 title: iosVppAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS APP 移动应用的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4090212a0f3e31a07f843de20754fbff1ffec3eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f41ee393dea59b6773b822daa156a6a13bb9c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532809"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474264"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 
@@ -46,6 +46,9 @@ ms.locfileid: "42532809"
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
 
 
 

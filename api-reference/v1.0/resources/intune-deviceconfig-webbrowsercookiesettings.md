@@ -1,16 +1,16 @@
 ---
 title: webBrowserCookieSettings 枚举类型
 description: Web 浏览器 Cookie 设置。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d8ccdda286034a340ccc0f7f65d21f8ffb5a6101
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4223f036da7fbb205764f83021209d7b385cb650
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532317"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472517"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
@@ -24,10 +24,13 @@ Web 浏览器 Cookie 设置。
 |成员|值|说明|
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值，无意向。|
-|blockAlways|1 |始终阻止 cookie。|
-|allowCurrentWebSite|2 |允许来自当前网站的 cookie。|
-|allowFromWebsitesVisited|3 |允许访问的网站中的 Cookie。|
+|blockAlways|1|始终阻止 cookie。|
+|allowCurrentWebSite|双面|允许来自当前网站的 cookie。|
+|allowFromWebsitesVisited|第三章|允许访问的网站中的 Cookie。|
 |allowAlways|4 |始终允许 cookie。|
+
+
+
 
 
 

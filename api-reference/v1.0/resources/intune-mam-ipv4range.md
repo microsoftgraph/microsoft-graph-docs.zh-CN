@@ -1,16 +1,16 @@
 ---
 title: iPv4Range 资源类型
 description: IPv4 范围定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 545de5eb3a2d2bb53fe40f1c23c03014c2391562
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8b82955c7c600997468204c46783001bf171038
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533197"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468538"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 
@@ -26,7 +26,7 @@ IPv4 范围定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|lowerAddress|字符串|较低的地址。|
+|lowerAddress|String|较低的地址。|
 |upperAddress|String|地址上限。|
 
 ## <a name="relationships"></a>关系
@@ -46,6 +46,9 @@ IPv4 范围定义。
   "upperAddress": "String"
 }
 ```
+
+
+
 
 
 

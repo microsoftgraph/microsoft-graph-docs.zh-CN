@@ -1,16 +1,16 @@
 ---
 title: 删除 roleDefinition
 description: 删除 roleDefinition。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57cfb7c864520ac4e7ef1db16c2a7211bd1257bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d91697e89330bc026b57cae403f5a5ab1f019d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512207"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465941"
 ---
 # <a name="delete-roledefinition"></a>删除 roleDefinition
 
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

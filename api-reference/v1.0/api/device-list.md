@@ -1,16 +1,16 @@
 ---
 title: 列出设备
 description: 检索组织中注册的 device 对象的列表。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6229210b592d043744b8b88f44c7d5048c6c2be8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3309fb8b84750b0e7608c63e33f9eae2b75615fc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518096"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466716"
 ---
 # <a name="list-devices"></a>列出设备
 

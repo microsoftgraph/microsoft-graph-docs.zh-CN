@@ -1,16 +1,16 @@
 ---
 title: 列出设备组
 description: 获取此设备是其直接成员的组。 此操作不可传递。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e94db6ecaccac9f931384ab3f787d1a513f93e9a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0164345ca2d58ba5d097b6e872f08c1b4801aeb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518124"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464013"
 ---
 # <a name="list-device-groups"></a>列出设备组
 

@@ -2,15 +2,15 @@
 title: onPremisesProvisioningError 资源类型
 description: 表示将本地目录同步到 Azure Active Directory 时用户组和联系人资源的目录同步错误。
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54f11058bc75d6e5e417813b8b257f3a7ff78e94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e170fa0e86cfb6ebfcdf63b371c6a67bb8766b80
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534151"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468337"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "42534151"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|“类别”|字符串| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
+|“类别”|String| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
 |occurredDateTime|DateTimeOffset| 发生错误的日期和时间。 |
-|propertyCausingError|字符串| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
+|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
 |value|String| 导致错误的属性的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

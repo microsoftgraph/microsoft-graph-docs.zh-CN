@@ -1,16 +1,16 @@
 ---
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531007"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468665"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42531007"
 
 包含托管电子书基属性的抽象类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedEBooks](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) 集合|列出 [managedEBook](../resources/intune-books-managedebook.md) 对象的属性和关系。|
@@ -32,14 +32,14 @@ ms.locfileid: "42531007"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |displayName|字符串|电子书的名称。|
-|说明|String|说明。|
+|description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
 |createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。|
 |informationUrl|String|详细信息 Url。|
-|privacyInformationUrl|字符串|隐私声明 Url。|
+|privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -76,6 +76,9 @@ ms.locfileid: "42531007"
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
 
 
 

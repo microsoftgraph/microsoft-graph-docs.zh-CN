@@ -1,16 +1,16 @@
 ---
 title: edgeSearchEngineBase 资源类型
 description: 允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。 如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77e0e75e6be475140b4ef72f7289f9178f01bb89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 485177f1a2adc9b9670ab556ede6da61873e6492
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530741"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465657"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>edgeSearchEngineBase 资源类型
 
@@ -39,6 +39,9 @@ ms.locfileid: "42530741"
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
+
+
+
 
 
 

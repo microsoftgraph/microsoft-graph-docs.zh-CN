@@ -1,16 +1,16 @@
 ---
 title: 更新 mobileAppContent
 description: 更新 mobileAppContent 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c7d471a5b0665ce6dc78ce3d780d27075f7f6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05febed512ef2ecc8d0e03bab02c432d1f3d0fa5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515958"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464750"
 ---
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|应用内容版本。|
+|id|String|应用内容版本。|
 
 
 
@@ -86,6 +86,8 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
+
 
 
 

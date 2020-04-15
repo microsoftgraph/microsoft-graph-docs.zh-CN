@@ -2,15 +2,15 @@
 title: 获取附件
 description: '读取附加到事件的附件的属性和关系 '
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e9d07ab5259f740993bbbd748050fbd215545e83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81eca376937954a6d2411795a8b030ddbc89825a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518831"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471881"
 ---
 # <a name="get-attachment"></a>获取附件
 

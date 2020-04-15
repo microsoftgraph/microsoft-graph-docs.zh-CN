@@ -1,16 +1,16 @@
 ---
 title: 创建 userInstallStateSummary
 description: 创建新的 userInstallStateSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25b806c36c4a8c559662690541912dc6ff5cece3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 847a1f28aaceec734ace36dc038c7531acbf514e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515537"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468981"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
@@ -96,6 +96,8 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
 
 
 

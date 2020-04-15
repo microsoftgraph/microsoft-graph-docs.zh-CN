@@ -1,16 +1,16 @@
 ---
 title: 删除 calendarGroup
 description: 删除默认日历组以外的日历组。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1734d3a1a2b039bdff8239529daa51f57f10b49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 444ef815a2e84b56360f3d270eecd58a398fda03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518775"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471808"
 ---
 # <a name="delete-calendargroup"></a>删除 calendarGroup
 

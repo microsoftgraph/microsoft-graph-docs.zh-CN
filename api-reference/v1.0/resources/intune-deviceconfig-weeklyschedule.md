@@ -1,16 +1,16 @@
 ---
 title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 82b37629bfecd34a8cb8a8cbea288f22c6b68e6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10b7f842cc369534b3c0aaa6c9a7af6c1ad322b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530427"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472495"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
@@ -24,14 +24,17 @@ ms.locfileid: "42530427"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|日常|1 |日常.|
-|日|2 |星期日。|
-|星期一|3 |星期一。|
+|日常|1|日常.|
+|日|双面|星期日。|
+|星期一|第三章|星期一。|
 |2001|4 |星期二。|
 |星期三|5 |星期三。|
 |星期三|6 |星期四。|
 |之前|7 |星期五。|
 |星期六|8 |星期六。|
+
+
+
 
 
 

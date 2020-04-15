@@ -1,16 +1,16 @@
 ---
 title: 删除设备
 description: 删除已注册的设备。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c310af137d0fbdd33dd63293e063d9f89b304b63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 969afefaca69a563d166d084d2732f443ed39eb5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518138"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464033"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -35,7 +35,7 @@ DELETE /devices/{id}
 ```
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

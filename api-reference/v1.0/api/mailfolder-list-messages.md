@@ -2,15 +2,15 @@
 title: 列出邮件
 description: 获取已登录用户邮箱中的所有邮件或邮箱的指定文件夹中的邮件。
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c3aca6f718548155a5a13ff617dacfa61f54927
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96fbf541b7d1f0d686ec2be8bb6f61c56a415c5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511626"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467342"
 ---
 # <a name="list-messages"></a>列出邮件
 

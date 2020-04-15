@@ -1,16 +1,16 @@
 ---
 title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 93df0f597dbac6adeb364480a531833f35640e1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b903c1b6001e5f5fb423be4e5bc41a820ce3d526
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532330"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472577"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 
@@ -24,11 +24,14 @@ ms.locfileid: "42532330"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|降低|1 |低。|
-|mediumLow|2 |中-低。|
-|中等|3 |中。|
+|降低|1|低。|
+|mediumLow|双面|中-低。|
+|中等|第三章|中。|
 |mediumHigh|4 |中-高。|
 |高效|5 |高。|
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 roleDefinition
 description: 创建新的 roleDefinition 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c62ed7a933987d25e97a2c282526d3fde3c9d837
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e59dd2c0b66e9e30a2f90cd6e6d0a7b0b236a4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512214"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465948"
 ---
 # <a name="create-roledefinition"></a>创建 roleDefinition
 
@@ -53,7 +53,7 @@ POST /deviceManagement/roleDefinitions
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色定义的显示名称。|
-|说明|String|角色定义的说明。|
+|description|String|角色定义的说明。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
 
@@ -126,6 +126,8 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

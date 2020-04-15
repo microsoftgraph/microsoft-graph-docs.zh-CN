@@ -1,16 +1,16 @@
 ---
 title: 更新 calendarGroup
 description: 更新 calendargroup 对象的属性。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63c535eafdc2b976c545a2f7c205ee3a903356de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ddd1c931df1826f04db4ef25f397ccc18691174a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518740"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471748"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 
@@ -39,7 +39,7 @@ PATCH /me/calendarGroups/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                       |
 | :------------ | :-------------------------- |
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | 属性 | 类型   | 说明     |
 | :------- | :----- | :-------------- |
-| name     | 字符串 | 组名称。 |
+| name     | String | 组名称。 |
 
 ## <a name="response"></a>响应
 

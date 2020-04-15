@@ -1,16 +1,16 @@
 ---
 title: getAuditActivityTypes 函数
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1749bd523acd02cc39596906be9627604182f87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57f3af7dc556f05eeecd7dbb395152f923b41e11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515747"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464385"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 
@@ -50,7 +50,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 |属性|类型|说明|
 |:---|:---|:---|
-|“类别”|字符串|尚未记录|
+|“类别”|String|尚未记录|
 
 
 
@@ -78,6 +78,8 @@ Content-Length: 61
   ]
 }
 ```
+
+
 
 
 

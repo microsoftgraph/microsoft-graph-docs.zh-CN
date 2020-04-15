@@ -1,16 +1,16 @@
 ---
 title: deviceInstallState 资源类型
 description: 包含某个设备的安装状态的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 492f3a2786acd51b6ecf376dd1f1d0c0d4542af1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a7396adc2f6d39421b357a0fa409a52f6bc014c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532718"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468794"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532718"
 
 包含某个设备的安装状态的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceInstallStates](../api/intune-books-deviceinstallstate-list.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|列出 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性和关系。|
@@ -32,14 +32,14 @@ ms.locfileid: "42532718"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|deviceName|字符串|设备名称。|
-|deviceId|字符串|设备 ID。|
+|id|String|实体的键。|
+|deviceName|String|设备名称。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|字符串|安装失败的错误代码。|
-|osVersion|字符串|操作系统版本。|
-|osDescription|字符串|操作系统说明。|
+|errorCode|String|安装失败的错误代码。|
+|osVersion|String|操作系统版本。|
+|osDescription|String|操作系统说明。|
 |userName|String|设备用户名。|
 
 ## <a name="relationships"></a>关系
@@ -67,6 +67,9 @@ ms.locfileid: "42532718"
   "userName": "String"
 }
 ```
+
+
+
 
 
 

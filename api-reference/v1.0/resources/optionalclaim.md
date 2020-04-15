@@ -3,20 +3,20 @@ title: optionalClaim 资源类型
 description: 在此处提供说明
 localization_priority: Normal
 author: sureshja
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de97333a2a7580e9b6a9b58e042c0c5a8ff9bbe7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: def69ff8da77eedbaf4cd48669594994764cb2a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534130"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468322"
 ---
 # <a name="optionalclaim-resource-type"></a>optionalClaim 资源类型
 
 命名空间：microsoft.graph
 
-包含与[应用程序](application.md)关联的可选声明 <!-- or a service principal -->. OptionalClaims `idToken`资源`accessToken`的、 `saml2Token`和属性是[](optionalclaims.md) **optionalClaim**的集合。 如果特定声明支持，还可以使用`additionalProperties`属性修改 optionalClaim 的行为。
+包含与[应用程序](application.md)关联的可选声明 <!-- or a service principal -->. OptionalClaims `idToken`资源`accessToken`的、 `saml2Token`和属性是[optionalClaims](optionalclaims.md) **optionalClaim**的集合。 如果特定声明支持，还可以使用`additionalProperties`属性修改 optionalClaim 的行为。
 
 有关详细信息，请参阅[向 Azure AD 应用提供可选声明](/azure/active-directory/develop/active-directory-optional-claims)。
 
@@ -24,10 +24,10 @@ ms.locfileid: "42534130"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|additionalProperties|String collection| 声明的其他属性。 如果某个属性存在于此集合中，它将修改在 name 属性中指定的可选声明的行为。 |
+|additionalProperties|String 集合| 声明的其他属性。 如果某个属性存在于此集合中，它将修改在 name 属性中指定的可选声明的行为。 |
 |组成部分|Boolean| 如果值为 true，则客户端指定的声明是为确保最终用户请求的特定任务的平稳授权体验所必需的。 默认值为 false。|
-|name|字符串| 可选声明的名称。 |
-|source|字符串| 声明的源（目录对象）。 来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明是预定义的可选声明。 如果源值为 user，则 name 属性中的值是用户对象的扩展属性。 |
+|name|String| 可选声明的名称。 |
+|source|String| 声明的源（目录对象）。 来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明是预定义的可选声明。 如果源值为 user，则 name 属性中的值是用户对象的扩展属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

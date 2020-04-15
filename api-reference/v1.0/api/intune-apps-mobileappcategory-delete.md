@@ -1,16 +1,16 @@
 ---
 title: 删除 mobileAppCategory
 description: 删除 mobileAppCategory。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79f39102681f349d9d79b4c0ada6f5546a20cb9a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6da5c587bafbf054af5b97283c38f53614fec093
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464863"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

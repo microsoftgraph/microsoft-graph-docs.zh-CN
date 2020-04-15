@@ -1,16 +1,16 @@
 ---
 title: 获取设备
 description: 获取 device 对象的属性和关系。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b963d03d92752f75fbbf73fb3ce9174e1529b61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4065c0180c8d7e313c9773310884d26967bc9df6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518131"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464020"
 ---
 # <a name="get-device"></a>获取设备
 

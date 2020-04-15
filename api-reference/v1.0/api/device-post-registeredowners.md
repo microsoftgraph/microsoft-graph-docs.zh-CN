@@ -1,16 +1,16 @@
 ---
 title: 创建 registeredOwner
 description: 将用户添加为设备的已注册所有者。
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 59b70c830308c8feedb672b9606a0c0489c2d27f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 085e2ccf71f26b3a34a0eb2daceed1bcbb60ac22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518082"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466702"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 

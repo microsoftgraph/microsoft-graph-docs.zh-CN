@@ -1,16 +1,16 @@
 ---
 title: 删除 auditEvent
 description: 删除 auditEvent
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a353dac3cea1ec8fc48d1b533e8f774c8cff9fa1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c4400dfb06c99195995a66c526b3cbe16e22794
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515761"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464431"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEvent
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

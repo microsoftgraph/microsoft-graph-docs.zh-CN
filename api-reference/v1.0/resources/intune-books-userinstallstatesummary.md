@@ -1,16 +1,16 @@
 ---
 title: userInstallStateSummary 资源类型
 description: 包含某个用户的安装状态摘要的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e57f97aa4b15778cf5f57d172fb91811d62dce92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5efdd2b0b5c2188ed6a6b2ce4417e2fcce14852b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468643"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42531002"
 
 包含某个用户的安装状态摘要的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userInstallStateSummaries](../api/intune-books-userinstallstatesummary-list.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 集合|列出 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "42531002"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
@@ -61,6 +61,9 @@ ms.locfileid: "42531002"
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

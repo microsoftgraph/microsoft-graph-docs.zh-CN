@@ -1,20 +1,20 @@
 ---
 title: managedAppPolicy 资源类型
 description: ManagedAppPolicy 资源表示特定于平台的策略的基类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55045faa017c852b812c04b2565269773090ee2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f0e26ea51641bf2a291802d391bfaace18da31f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468516"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。|
-|说明|String|策略的说明。|
+|description|String|策略的说明。|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。|
 |id|字符串|实体的键。|
@@ -59,6 +59,9 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
   "version": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 importedWindowsAutopilotDeviceIdentityUpload
 description: 创建新的 importedWindowsAutopilotDeviceIdentityUpload 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f263379b2e94515b0c49f7c6cfdb7a3b9d525ff8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9cb9f9de78e70c45fa98e24607e06a087d0f61a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513383"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471360"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>创建 importedWindowsAutopilotDeviceIdentityUpload
 
@@ -51,7 +51,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期/时间。|
 |状态|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
@@ -90,6 +90,8 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
+
 
 
 

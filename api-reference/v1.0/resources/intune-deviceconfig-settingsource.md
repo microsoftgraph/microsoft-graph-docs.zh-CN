@@ -1,16 +1,16 @@
 ---
 title: settingSource 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2eae0a5fc9da19443b59bbfe598e93264cf408df
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00938219163ff73ed4bc9f1eaf6d92ec0937dc14
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472659"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42532347"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |displayName|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -43,6 +43,9 @@ ms.locfileid: "42532347"
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

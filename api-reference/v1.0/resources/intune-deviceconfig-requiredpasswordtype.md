@@ -1,16 +1,16 @@
 ---
 title: requiredPasswordType 枚举类型
 description: 所需密码的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 48635d8de3646908005ff3dedc7b09644e6f71ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbc454719d11df4e3c00cd62a35c940cacb61fbb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472681"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
@@ -24,8 +24,11 @@ ms.locfileid: "42532359"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|字母数字|1 |需要字母数字密码。|
-|位数|2 |需要数字密码。|
+|字母数字|1|需要字母数字密码。|
+|位数|双面|需要数字密码。|
+
+
+
 
 
 

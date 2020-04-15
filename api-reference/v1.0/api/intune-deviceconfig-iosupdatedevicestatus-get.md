@@ -1,16 +1,16 @@
 ---
 title: 获取 iosUpdateDeviceStatus
 description: 读取 iosUpdateDeviceStatus 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1ea3c6270ae2a67d13eca02e0b492cbf680219
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25d78794b680a9b64f31c2751887f992bad5b4c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514450"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470415"
 ---
 # <a name="get-iosupdatedevicestatus"></a>获取 iosUpdateDeviceStatus
 
@@ -39,7 +39,7 @@ GET /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -86,6 +86,8 @@ Content-Length: 646
   }
 }
 ```
+
+
 
 
 

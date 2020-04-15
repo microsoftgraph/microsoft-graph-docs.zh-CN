@@ -1,16 +1,16 @@
 ---
 title: 删除 editionUpgradeConfiguration
 description: 删除 editionUpgradeConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0daa346a9c6cba851a3027a0b84390c4ce2f9ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 90fc87c6dae42b90e530dd6966c30828c31734c2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514681"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468884"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>删除 editionUpgradeConfiguration
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 列出设备可传递组
-description: 获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
-author: anchanda
+description: 获取设备所属的组。
+author: spunukol
+ms.prod: microsoft-identity-platform
 localization_priority: Normal
-ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 65e1aa03d59b0a45844265d8d840e9b1c27724aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b396f2025a95ce9db861e7e8e4b630039e09d30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518103"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466723"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 

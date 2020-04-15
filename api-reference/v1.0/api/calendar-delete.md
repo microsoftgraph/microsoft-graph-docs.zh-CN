@@ -1,16 +1,16 @@
 ---
 title: 删除日历
 description: 删除默认日历以外的日历。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f39115551e5bd8890e95075245946f48c8a8bc23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fcb1f6a26ced9657a528aa27f8248fb008df08c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471874"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -41,7 +41,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称           |  类型    | 说明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {token}。必需。 |

@@ -1,16 +1,16 @@
 ---
 title: miracastChannel 枚举类型
 description: Miracast 通道的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 711dfd318eadebd3f4461c16ebbd22c071e7398d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c5c7e6208e912c04e88a3b2cf75e5897544f798
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530608"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473083"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -24,9 +24,9 @@ Miracast 通道的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|一个|1 |次.|
-|two|2 |以下.|
-|three|3 |条.|
+|一个|1|次.|
+|two|双面|以下.|
+|three|第三章|条.|
 |four|4 |条.|
 |five|5 |五百.|
 |位|6 |位.|
@@ -44,6 +44,9 @@ Miracast 通道的可能值。
 |oneHundredFiftySeven|157|OneHundredFifty-七。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-5。|
+
+
+
 
 
 

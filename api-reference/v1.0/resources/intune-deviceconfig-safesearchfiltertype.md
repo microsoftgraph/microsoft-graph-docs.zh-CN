@@ -1,16 +1,16 @@
 ---
 title: safeSearchFilterType 枚举类型
 description: 指定需要哪个级别的安全搜索（筛选成人内容）
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c8ef86709169448d58bde53507747377526c38ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b9beb5f96cfbbe900c7aa655150d62497629a3e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530466"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472672"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 枚举类型
 
@@ -24,8 +24,11 @@ ms.locfileid: "42530466"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|全|1 |对成人内容严格、最高的筛选。|
-|从中|2 |针对成人内容的中等筛选（将不会筛选有效的搜索结果）。|
+|全|1|对成人内容严格、最高的筛选。|
+|从中|双面|针对成人内容的中等筛选（将不会筛选有效的搜索结果）。|
+
+
+
 
 
 

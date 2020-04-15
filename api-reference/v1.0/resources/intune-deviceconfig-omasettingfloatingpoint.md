@@ -1,16 +1,16 @@
 ---
 title: omaSettingFloatingPoint 资源类型
 description: OMA 设置浮点定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ace6b422dc56aa8fbfc456775458e50e10a792a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b5db5b376bdce3d428b36c014c949087ab36185
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473024"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint 资源类型
 
@@ -27,7 +27,7 @@ OMA 设置浮点定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|说明|字符串|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|单个|值。|
 
@@ -50,6 +50,9 @@ OMA 设置浮点定义。
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
 
 
 

@@ -2,15 +2,15 @@
 title: 获取用户的邮箱设置
 description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置（在收到电子邮件时自动通知人员）、区域设置（语言和国家/地区）、时区和工作时间。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20065f593312839d8f0fd05718b120817a1dbbc0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: d85eb8c514cbe8d8841a359f5c27a1570ade9a62
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229610"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466538"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 

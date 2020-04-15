@@ -1,16 +1,16 @@
 ---
 title: omaSetting 资源类型
 description: OMA 设置定义。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cffa929a063c77010f005a4e0b3da8fd8b7363d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0172d3cb6955df6e154758750fdc87aef2789292
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530603"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473076"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -24,7 +24,7 @@ OMA 设置定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。|
-|说明|字符串|说明。|
+|description|String|说明。|
 |omaUri|String|OMA。|
 
 ## <a name="relationships"></a>关系
@@ -45,6 +45,9 @@ OMA 设置定义。
   "omaUri": "String"
 }
 ```
+
+
+
 
 
 
