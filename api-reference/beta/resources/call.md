@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fb0767e0dab914f63051524ba6ce2860ae577d6b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082341"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510644"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。 只读。                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。 会议情境所需的信息。                                                                                                              |
 | myParticipantId     | String                                                                                                 | 只读。                                                                                                                                                                        |
-| requestedModalities | String 集合                                                                                      | 请求模态的列表。 | 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
+| requestedModalities | String 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | 传出对等呼叫的以秒为单位的响铃超时。 此属性的最大值为 115 秒。                                                                                        |
 | routingPolicies     | String collection                                                                                      | 此属性仅适用于对等呼叫。 可取值为：`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`、`preferSkypeForBusiness`。                                                                                                   |
