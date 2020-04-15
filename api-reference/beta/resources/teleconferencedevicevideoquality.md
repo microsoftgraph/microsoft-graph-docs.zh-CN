@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 33b781a5b32285f30b4be1c5941fa75bf836fac3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ba68e9b6566cde9ede255d2f3a196558621aad7
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763226"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510985"
 ---
 # <a name="teleconferencedevicevideoquality-resource-type"></a>teleconferenceDeviceVideoQuality 资源类型
 
@@ -30,6 +30,12 @@ ms.locfileid: "42763226"
 |averageInboundFrameRate|双精度|每秒平均入站流视频帧速率。|
 |averageOutboundBitRate|双精度|每秒的平均出站流视频比特率。|
 |averageOutboundFrameRate|双精度|每秒的平均出站流视频帧速率。|
+
+### <a name="derived-types"></a>派生类型
+
+| 类型                                                 | 说明                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | 视频电话会议设备屏幕-共享质量数据。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

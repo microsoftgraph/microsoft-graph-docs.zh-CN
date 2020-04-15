@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab703760246fe08145924fd5d21ce4d02a5090b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6fa0bc09f2f6038dd49c8c804420ce042bd5ec93
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763298"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510581"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>teleconferenceDeviceMediaQuality 资源类型
 
@@ -45,6 +45,14 @@ ms.locfileid: "42763298"
 |outboundPackets|Int64|出站数据包的总数。|
 |remoteIPAddress|String|媒体会话的远程 IP 地址。|
 |remotePort|Int32|远程媒体端口。|
+
+### <a name="derived-types"></a>派生类型
+
+| 类型                                                 | 说明                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | 视频电话会议设备音频质量数据。                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | 视频电话会议设备视频质量数据。                          |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | 视频电话会议设备屏幕-共享质量数据。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
