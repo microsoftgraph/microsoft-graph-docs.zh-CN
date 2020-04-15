@@ -1,16 +1,16 @@
 ---
 title: 更新事件
 description: 更新 event 对象的属性。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 46733b71c66094fb6bb8de164f62078e52ae1b92
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 167984de2c5c9d9326da38a8c0d8b774d8b8cfe3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229379"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461582"
 ---
 # <a name="update-event"></a>更新事件
 

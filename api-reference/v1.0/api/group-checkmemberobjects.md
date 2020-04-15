@@ -2,15 +2,15 @@
 title: 组： checkMemberObjects
 description: 检查指定的组对象的组或目录角色列表中的成员资格。
 localization_priority: Normal
-author: davidmu1
+author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f4fe27b4e46bb185a2d154b9354244bdb1bcb3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: acaf5d6b129536e2e8f6acb7e9f19a721e0cc49f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461446"
 ---
 # <a name="group-checkmemberobjects"></a>组： checkMemberObjects
 

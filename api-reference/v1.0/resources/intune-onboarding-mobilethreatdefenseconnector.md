@@ -1,20 +1,20 @@
 ---
 title: mobileThreatDefenseConnector 资源类型
 description: 表示移动威胁防护合作伙伴连接的实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8e67761c3ad30b044d8f114060b4ac778f371f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 602d7bfca8bde4af25c5d0cb59e57db08ca60816
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459378"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,10 +35,10 @@ ms.locfileid: "42448051"
 |id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
-|androidEnabled|布尔|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|iosEnabled|布尔|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|androidDeviceBlockedOnMissingPartnerData|布尔|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|iosDeviceBlockedOnMissingPartnerData|布尔|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
 |partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
 |partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
 
@@ -67,6 +67,9 @@ ms.locfileid: "42448051"
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
+
 
 
 

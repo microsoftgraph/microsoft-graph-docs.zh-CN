@@ -1,16 +1,16 @@
 ---
 title: 'event: tentativelyAccept'
 description: 暂时接受用户日历中的指定事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 52acf0c7f39c3559e3c2d1eb220c760d79e77845
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2788977c465a44ac06f89ba84004fb2bcb1da4a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461592"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 

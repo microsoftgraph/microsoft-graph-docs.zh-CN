@@ -1,16 +1,16 @@
 ---
 title: 更新 windows10EnterpriseModernAppManagementConfiguration
 description: 更新 windows10EnterpriseModernAppManagementConfiguration 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7dbe55e435bd0c59aadaf4e513bb2779df4724f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d856f366573de0c7188c0557765a60c934d7f8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514054"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460458"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>更新 windows10EnterpriseModernAppManagementConfiguration
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |uninstallBuiltInApps|Boolean|指示是否卸载内置 Windows 应用的固定列表。|
@@ -100,6 +100,8 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
+
 
 
 

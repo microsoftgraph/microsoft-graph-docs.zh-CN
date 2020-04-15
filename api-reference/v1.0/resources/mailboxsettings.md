@@ -2,15 +2,15 @@
 title: mailboxSettings 资源类型
 description: 已登录用户的主邮箱的设置。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c2fb1cb6f45b91843b7c57aa66f6c136d24db2c2
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b8acb5e7b6fe3327121124d0a5f604a7690cb180
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461881"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 

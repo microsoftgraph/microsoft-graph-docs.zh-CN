@@ -1,16 +1,16 @@
 ---
 title: microsoftStoreForBusinessLicenseType 枚举类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ff1a2ddaf6c9ebbcc6ba87be89c4841c934e9ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b013f610cf2e400fbc40be7a158ab3bfa13769c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531120"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457881"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 枚举类型
 
@@ -24,7 +24,10 @@ ms.locfileid: "42531120"
 |成员|值|说明|
 |:---|:---|:---|
 |脱机|0|尚未记录|
-|隐私声明|1 |尚未记录|
+|隐私声明|1|尚未记录|
+
+
+
 
 
 

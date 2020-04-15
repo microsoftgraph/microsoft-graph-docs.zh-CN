@@ -2,15 +2,15 @@
 title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 688611650b7ae8ccd9f87a35fe958d5f0f17aa94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2cfe082fe0a493e6b78c2a74171cc02da852063
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518838"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462915"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -18,7 +18,7 @@ ms.locfileid: "42518838"
 
 从用户日历事件、邮件消息或组帖子中删除附件。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 * 如果访问邮件中的附件：邮件。
 * 如果访问事件中的附件：日历. 读写。
@@ -89,7 +89,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messag
 DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

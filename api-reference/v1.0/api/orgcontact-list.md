@@ -2,15 +2,15 @@
 title: 列出 orgContacts
 description: 检索此组织的组织联系人列表。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 24d0a809bf7cb5c8a32eec0d6cb81f17e7f799a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c6ce5caffdc24306b93e61fce70802a04a4267b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511157"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463745"
 ---
 # <a name="list-orgcontacts"></a>列出 orgContacts
 
@@ -35,7 +35,7 @@ GET /contacts
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持`$expand`、 `$filter`、 `$select`和`$top` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  |Bearer {token}。必需。 |

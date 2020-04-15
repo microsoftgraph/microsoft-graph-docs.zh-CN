@@ -1,16 +1,16 @@
 ---
 title: 创建 remoteAssistancePartner
 description: 创建新的 remoteAssistancePartner 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74d36564b11704ac28e4c76a4d5a55f7e9a62b89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45926ca2e99742d193234fecfd5936f7f497bfca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512165"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461245"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
@@ -51,7 +51,7 @@ POST /deviceManagement/remoteAssistancePartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|合作伙伴的唯一标识符。|
+|id|String|合作伙伴的唯一标识符。|
 |displayName|字符串|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|待定. 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
@@ -96,6 +96,8 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

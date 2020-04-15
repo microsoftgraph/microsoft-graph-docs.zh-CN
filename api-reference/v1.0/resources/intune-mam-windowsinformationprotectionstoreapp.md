@@ -1,20 +1,20 @@
 ---
 title: windowsInformationProtectionStoreApp 资源类型
 description: 用于 Windows 信息保护的应用商店应用
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dafad17c55ebd045dcb2c588c005cb94efb21edc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c15becc47164fd57bbe3d157e9732531a20ebaff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459677"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "42448177"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|应用显示名称。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
-|说明|字符串|应用的说明。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
+|description|字符串|应用的说明。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |publisherName|String|继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) 的发布者名称|
 |productName|String|产品名称。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
@@ -52,6 +52,9 @@ ms.locfileid: "42448177"
   "denied": true
 }
 ```
+
+
+
 
 
 

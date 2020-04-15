@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsInformationProtectionNetworkLearningSummary
 description: 更新 windowsInformationProtectionNetworkLearningSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 240e93ebe087a020c4bac272968c0a0621418164
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 587af243e22d6996d8e3776d7631e9ed46e99b21
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511766"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458274"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
 |url|String|网站 URL|
 |deviceCount|Int32|设备计数|
 
@@ -90,6 +90,8 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
 
 
 

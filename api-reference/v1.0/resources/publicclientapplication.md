@@ -4,13 +4,13 @@ description: 指定非 Web 应用程序或 Web Api 的设置。 （例如，移�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: fc920fe09a891248310e8acebafb4f2da4d36723
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: be86fd4601c31b7431a7a4994e7a2df081bbc363
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461814"
 ---
 # <a name="publicclientapplication-resource-type"></a>publicClientApplication 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42533941"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|redirectUris|String collection| 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
+|redirectUris|String 集合| 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

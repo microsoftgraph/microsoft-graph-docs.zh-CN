@@ -2,19 +2,19 @@
 title: 在 Intune 中注册设备以进行管理
 description: " （BYOD）注册允许用户注册其个人电话、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 171a58e82ea3e7ab76d919d1fef693f540b4f4db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1be08355983c6a99e86a4b0b8a95c7e492abff61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459587"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -47,4 +47,7 @@ ms.locfileid: "42448163"
 - [VPP 令牌状态](intune-onboarding-vpptokenstate.md)
 - [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
 - [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+
+
 

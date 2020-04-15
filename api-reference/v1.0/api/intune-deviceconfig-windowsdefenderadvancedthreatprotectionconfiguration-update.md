@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 更新 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf4f109085a20fb8ce8a88df2c72a3ce1d391d9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c19b3ed5d748d40f6b0784d23fa165e1b7e5492
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513806"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462031"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>更新 windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowSampleSharing|Boolean|Windows Defender 高级威胁防护“允许示例共享”规则|
@@ -103,6 +103,8 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+
 
 
 

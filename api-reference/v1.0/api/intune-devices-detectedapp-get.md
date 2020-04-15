@@ -1,16 +1,16 @@
 ---
 title: 获取 detectedApp
 description: 读取 detectedApp 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f361b6602635ec0fee266483314f75bd6b14b91f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aefefab9e5c82c0e40cb4b6bd37f446269218a61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513621"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456764"
 ---
 # <a name="get-detectedapp"></a>获取 detectedApp
 
@@ -39,7 +39,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -79,6 +79,8 @@ Content-Length: 247
   }
 }
 ```
+
+
 
 
 

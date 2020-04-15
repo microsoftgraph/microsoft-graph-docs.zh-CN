@@ -1,20 +1,20 @@
 ---
 title: deviceManagementPartner 资源类型
 description: 表示与设备管理合作伙伴的连接的实体。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2198b05be7d95bd6405d195b0a7ace1cfc4df125
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c6a69a93f54a3a61a5345112db19b9f54d3d7af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448093"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459467"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -67,6 +67,9 @@ ms.locfileid: "42448093"
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

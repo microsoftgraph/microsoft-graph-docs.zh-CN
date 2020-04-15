@@ -1,16 +1,16 @@
 ---
 title: 获取 windowsInformationProtectionNetworkLearningSummary
 description: 读取 windowsInformationProtectionNetworkLearningSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7865088493e19ceaf1ec4ce858e3ca9ffc65d9c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc5fbd9585c591b4171d7f26c92fca0660e36929
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461123"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>获取 windowsInformationProtectionNetworkLearningSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -77,6 +77,8 @@ Content-Length: 213
   }
 }
 ```
+
+
 
 
 

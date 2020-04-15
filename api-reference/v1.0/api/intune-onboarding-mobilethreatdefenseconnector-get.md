@@ -1,16 +1,16 @@
 ---
 title: 获取 mobileThreatDefenseConnector
 description: 读取 mobileThreatDefenseConnector 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b34bfd11d084dceff4793dc106963dbc639ccdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3a55eef5ee0e06adf8605f650d0f7af4280ea07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512536"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462814"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>获取 mobileThreatDefenseConnector
 
@@ -39,7 +39,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -83,6 +83,8 @@ Content-Length: 502
   }
 }
 ```
+
+
 
 
 

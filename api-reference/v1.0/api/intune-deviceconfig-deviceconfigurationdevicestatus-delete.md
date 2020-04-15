@@ -1,16 +1,16 @@
 ---
 title: 删除 deviceConfigurationDeviceStatus
 description: 删除 deviceConfigurationDeviceStatus。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e940bcac7b3aa790a8503ca3de2bfeb82f6f3b92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5597e4134b00e6b9745af907bd8d573e0ea1a106
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514765"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460527"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>删除 deviceConfigurationDeviceStatus
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 获取联系人
 description: 检索 contact 对象的属性和关系。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ffff6875ad3b874d9c15551c6c981ac7881f71d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2e2663bdaf056c8405143c02c756be348ef5ef7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518299"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462200"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |$expand|string|要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

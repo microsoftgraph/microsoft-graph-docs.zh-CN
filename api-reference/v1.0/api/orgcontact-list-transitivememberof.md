@@ -1,16 +1,16 @@
 ---
 title: 列出 transitiveMemberOf
 description: 获取 organziational 联系人所属的组。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
-author: anchanda
+author: dkershaw10
 localization_priority: Normal
-ms.prod: groups
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67c3984aa54b733596902a370326ed6ed7b6e232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afcda6aee90a6d50741c82b4b37869c97fbfb555
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511164"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463752"
 ---
 # <a name="list-transitivememberof"></a>列出 transitiveMemberOf
 
@@ -38,9 +38,9 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|

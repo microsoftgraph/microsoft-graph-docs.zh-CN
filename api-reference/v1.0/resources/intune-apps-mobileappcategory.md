@@ -1,16 +1,16 @@
 ---
 title: mobileAppCategory 资源类型
 description: 包含单个 Intune 应用类别的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44e69f0efe19fc7e4c071c8c43be9b71cfdc192e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1546fb4811d651906ee68936a63d7670bf7784b2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457853"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42532774"
 
 包含单个 Intune 应用类别的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppCategories](../api/intune-apps-mobileappcategory-list.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|列出 [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "42532774"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 
@@ -55,6 +55,9 @@ ms.locfileid: "42532774"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

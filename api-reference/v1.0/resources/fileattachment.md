@@ -2,15 +2,15 @@
 title: fileAttachment 资源类型
 description: '附加到事件、邮件或帖子的文件（如文本文件或 Word 文档）。**contentBytes** '
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: be0f4a15b42b869ae4f8c11f4e384220063dbe97
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 90fd8d838a15ab087cae5d2ea5e24835779385cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926762"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459712"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 

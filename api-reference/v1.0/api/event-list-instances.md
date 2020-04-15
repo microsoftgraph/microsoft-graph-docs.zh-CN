@@ -2,15 +2,15 @@
 title: 列出实例
 description: 获取指定的时间范围的事件的实例（发生次数）。
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c56079adfcb1047a2623083ead36aae16346809
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aafc3875277982e57413a924181680e172ba4d82
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517346"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461658"
 ---
 # <a name="list-instances"></a>列表实例
 

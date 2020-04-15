@@ -1,16 +1,16 @@
 ---
 title: cleanWindowsDevice 操作
 description: 清理 Windows 设备
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd9018088ef84c9d6cb160ba9a22d41756393344
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9882d83ffcec1f4c517c1bdd26bd3b4741e1a90e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513593"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456720"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
@@ -80,6 +80,8 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

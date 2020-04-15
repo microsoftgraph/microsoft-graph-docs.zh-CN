@@ -2,15 +2,15 @@
 title: 'contactFolder: delta'
 description: 获取用户邮箱中已添加、删除或移除的联系人文件夹集。
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3704b7a4a79641b1d3905f298c519247678ccb5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7065463c73f45c415f9ae64256952a4752669d52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462166"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -50,10 +50,10 @@ GET /users/{id}/contactFolders/delta
 
 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | 字符串  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 

@@ -1,16 +1,16 @@
 ---
 title: Add attachment
 description: 使用此 API 将 附件 添加到事件。 自此处起
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af1226e5a8fbf9cd19c198a622e90f3a29873702
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 750c86af5b7dab98e806abdba6b01e7dfe935aac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517339"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461635"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/at
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

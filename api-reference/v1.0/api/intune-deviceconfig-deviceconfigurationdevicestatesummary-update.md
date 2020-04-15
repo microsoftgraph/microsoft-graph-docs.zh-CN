@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceConfigurationDeviceStateSummary
 description: 更新 deviceConfigurationDeviceStateSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 85927189e6ade41d7592628f7088a0f4364be4fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0229b605a9aa7bbee3b2555c74823edf9ced43c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460690"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>更新 deviceConfigurationDeviceStateSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
@@ -105,6 +105,8 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

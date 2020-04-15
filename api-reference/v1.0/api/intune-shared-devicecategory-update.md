@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfd74da1d030b6a424662949d13180cda2a46b6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84dca5f142e526da4624ae62b5c8c229c8bd14da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512081"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463880"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|说明|String|设备类别的可选说明。|
+|description|String|设备类别的可选说明。|
 
 
 
@@ -93,6 +93,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

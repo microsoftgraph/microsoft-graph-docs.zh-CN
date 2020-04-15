@@ -1,20 +1,20 @@
 ---
 title: deviceManagementExchangeConnectorSyncType 枚举类型
 description: 请求的 Exchange Connector 同步的类型。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8468c4580c39a8680253a4bb083ac1015b241df2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3826680e05cc84054a874ae9357dfb0d50e88b57
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459481"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 枚举类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,7 +24,10 @@ ms.locfileid: "42448107"
 |成员|值|说明|
 |:---|:---|:---|
 |完全同步|0|发现 Exchange 中的所有设备。|
-|deltaSync|1 |仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
+|deltaSync|1|仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
+
+
+
 
 
 

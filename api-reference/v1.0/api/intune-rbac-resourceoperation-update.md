@@ -1,16 +1,16 @@
 ---
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49861746b2ba5ca8eda7a083fb0cab69a37b4807
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 332f8bdd76cde5d0f3bfe3065f7b30e692aba2ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512256"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461297"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |id|字符串|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 
 
 
@@ -93,6 +93,8 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
 
 
 

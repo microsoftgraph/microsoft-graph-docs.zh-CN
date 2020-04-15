@@ -1,16 +1,16 @@
 ---
 title: 创建 mobileThreatDefenseConnector
 description: 创建新的 mobileThreatDefenseConnector 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35f9c4ed2166eb639c8af3ea198882b5ccbd1fee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17717aef6ccc55b51c986f757c5112db436d1ca7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512466"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462887"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
@@ -51,7 +51,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
@@ -108,6 +108,8 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
 
 
 

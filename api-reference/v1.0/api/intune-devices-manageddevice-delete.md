@@ -1,16 +1,16 @@
 ---
 title: 删除 managedDevice
 description: 删除 managedDevice。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b28d2d092deec27743d09ba0603bfeb2b730525
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ddc58db897fb5f8f4165371e342e12ec59a3778
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513579"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456706"
 ---
 # <a name="delete-manageddevice"></a>删除 managedDevice
 
@@ -65,6 +65,8 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

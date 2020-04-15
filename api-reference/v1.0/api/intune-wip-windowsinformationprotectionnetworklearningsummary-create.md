@@ -1,16 +1,16 @@
 ---
 title: 创建 windowsInformationProtectionNetworkLearningSummary
 description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ad1c7ec3a50f8ebf1d2c85f4f92f6930a0f5c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0574a45f5be04a0fecc8068a4937f87d212dad40
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511794"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461137"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 
@@ -51,7 +51,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
 |url|String|网站 URL|
 |deviceCount|Int32|设备计数|
 
@@ -90,6 +90,8 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
 
 
 

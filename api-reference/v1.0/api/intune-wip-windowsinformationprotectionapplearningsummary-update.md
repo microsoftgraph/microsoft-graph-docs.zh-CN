@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsInformationProtectionAppLearningSummary
 description: 更新 windowsInformationProtectionAppLearningSummary 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff8e246a8c847dfb73f9edf31ae03d44daaa082d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99cbb3d9f1ad497039103c2ebb405ae94643376e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461178"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>更新 windowsInformationProtectionAppLearningSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|String|应用程序名称|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
@@ -93,6 +93,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 

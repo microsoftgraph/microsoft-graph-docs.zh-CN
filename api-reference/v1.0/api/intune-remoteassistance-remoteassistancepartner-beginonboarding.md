@@ -1,16 +1,16 @@
 ---
 title: beginOnboarding 操作
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c9875545292aa94a73b366ebf801f70d20bb80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7b246274a4bbf28db098f86c651288c6d659c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512179"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461252"
 ---
 # <a name="beginonboarding-action"></a>beginOnboarding 操作
 
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

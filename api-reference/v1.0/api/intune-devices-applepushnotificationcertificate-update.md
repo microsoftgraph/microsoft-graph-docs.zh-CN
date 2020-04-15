@@ -1,16 +1,16 @@
 ---
 title: 更新 applePushNotificationCertificate
 description: 更新 applePushNotificationCertificate 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7673193118fa1ec1aa7e82e94cfdd08d33911efa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34254267440a80701f27583a64df6dfae608655e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513642"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456825"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -51,8 +51,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
-|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
+|id|String|证书的唯一标识符|
+|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
@@ -98,6 +98,8 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
+
+
 
 
 

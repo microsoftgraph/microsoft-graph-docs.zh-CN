@@ -2,15 +2,15 @@
 title: 组： assignLicense
 description: 在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 69e799d7ca34a3882e0cd871787b579c41dc55fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d12d45fcc913f340b29b77b85643ed1a9c55f7e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517234"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461492"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 

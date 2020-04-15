@@ -1,16 +1,16 @@
 ---
 title: 获取 managedEBookAssignment
 description: 读取 managedEBookAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa952eb2cc3b4c1519c2d71a9b09131fa9d9c146
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e967252245934b5f022dbf7aec2dda24eec872b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515558"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457980"
 ---
 # <a name="get-managedebookassignment"></a>获取 managedEBookAssignment
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBoo
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -79,6 +79,8 @@ Content-Length: 274
   }
 }
 ```
+
+
 
 
 

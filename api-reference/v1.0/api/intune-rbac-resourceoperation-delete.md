@@ -1,16 +1,16 @@
 ---
 title: 删除 resourceOperation
 description: 删除 resourceOperation。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d53a2a6f10bbbe7cd53495f339cbd1bf771e628e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 797723fd28d3c544cd4ce4c3884cf8058c32b579
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461334"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{res
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

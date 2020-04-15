@@ -1,20 +1,20 @@
 ---
 title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8524263c2d0d3f3479ef83af8e90a41e700934f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 569491c92e51e1f7efa5adae54eac91e61646660
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448184"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459670"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "42448184"
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
-|subject|String|消息模板主题。|
+|主题|String|消息模板主题。|
 |messageTemplate|String|消息模板内容。|
 |isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
@@ -61,6 +61,9 @@ ms.locfileid: "42448184"
   "isDefault": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34aca92a1d278f39d236865c4ac3484f0b5f10d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6019357dcea7e020022eb5def2d449c9a5be47cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512242"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456586"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
 
@@ -53,7 +53,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色分配的显示或友好名称。|
-|说明|String|角色分配的说明。|
+|description|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 
@@ -97,6 +97,8 @@ Content-Length: 242
   ]
 }
 ```
+
+
 
 
 

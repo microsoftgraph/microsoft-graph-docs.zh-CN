@@ -1,16 +1,16 @@
 ---
 title: locateDevice 操作
 description: 查找设备
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 567aa1d07bf80696eda65f4a6de1f101fbc8b0c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 51f5305c385deb27fa336d5adc826b7a801aed0a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456615"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 
@@ -65,6 +65,8 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

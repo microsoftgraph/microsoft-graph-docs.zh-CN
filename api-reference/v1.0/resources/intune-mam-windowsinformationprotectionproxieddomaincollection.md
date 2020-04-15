@@ -1,20 +1,20 @@
 ---
 title: windowsInformationProtectionProxiedDomainCollection 资源类型
 description: Windows 信息保护代理域集合
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11aa9af0dc075e7c07c61923722810e131bf2250
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 500f662b0a610866ac3e637850f5fd6edeffaa5b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448205"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459691"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -49,6 +49,9 @@ Windows 信息保护代理域集合
   ]
 }
 ```
+
+
+
 
 
 

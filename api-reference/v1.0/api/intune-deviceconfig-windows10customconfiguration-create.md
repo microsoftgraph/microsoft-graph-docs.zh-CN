@@ -1,16 +1,16 @@
 ---
 title: 创建 windows10CustomConfiguration
 description: 创建新的 windows10CustomConfiguration 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 924cb383a93ad75b8f4759ba055d3941835f6175
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7ddc452ded14649e1b4d1f4cff070bfa78375b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514169"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456862"
 ---
 # <a name="create-windows10customconfiguration"></a>创建 windows10CustomConfiguration
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) 集合|OMA 设置。 该集合最多可包含 1000 个元素。|
@@ -116,6 +116,8 @@ Content-Length: 576
   ]
 }
 ```
+
+
 
 
 

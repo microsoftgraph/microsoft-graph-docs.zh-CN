@@ -2,15 +2,15 @@
 title: emailAddress 资源类型
 description: 联系人或邮件收件人的姓名和电子邮件地址。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5e22b568ba05808fc9a87257686afd540145b3ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fb557e35248dbc1521d1b494c831146b4e30da8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531483"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463738"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42531483"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|String|人员或实体的电子邮件地址。|
-|name|字符串|人员或实体的显示名称。|
+|name|String|人员或实体的显示名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: 事件资源类型
 description: 日历中的事件。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e38ab316864cb9cf9426a47766a4c8dbe7b062a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: dd71918c1086f4eb7ff1378fbb4bfee17ba1a23a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229477"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459766"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 

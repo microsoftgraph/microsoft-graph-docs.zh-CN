@@ -2,15 +2,15 @@
 title: 列出联系人
 description: 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2954e65ffcc389ae3687d2c764783809d498d82c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5447e2a145594f3db2d7077f07ba9b5b9deb2109
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518257"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460563"
 ---
 # <a name="list-contacts"></a>列出联系人
 

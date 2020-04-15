@@ -1,16 +1,16 @@
 ---
 title: 列出附件
 description: 检索 attachment 对象列表。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba7a74e9ba403f4eba5babdade105387a50a6900
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85f00cd7d0788237cc7dbe09fa153fe5f02874b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517297"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461537"
 ---
 # <a name="list-attachments"></a>列出附件
 

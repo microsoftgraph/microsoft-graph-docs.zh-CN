@@ -1,20 +1,20 @@
 ---
 title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df465172d02b701b8b9f9439a32644f5df541f45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 248127b41ca999ceba27f077391a7afa3f4bfbae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459556"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -23,7 +23,7 @@ ms.locfileid: "42448142"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|platformBlocked|布尔|阻止平台注册|
+|platformBlocked|Boolean|阻止平台注册|
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
 |osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
@@ -47,6 +47,9 @@ ms.locfileid: "42448142"
   "osMaximumVersion": "String"
 }
 ```
+
+
+
 
 
 
