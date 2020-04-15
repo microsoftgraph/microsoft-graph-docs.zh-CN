@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fc49663e6b4df0a707a1b283db2b1e8a01062775
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3614df88770173e20b2a33b66b4ee3c7d10d9d6e
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636656"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43512256"
 ---
 ```javascript
 
@@ -24,7 +24,7 @@ const plannerTask = {
       @odata.type: "#microsoft.graph.plannerAssignment",
       orderHint: " !"
     }
-  },
+  }
 };
 
 let res = await client.api('/planner/tasks')
