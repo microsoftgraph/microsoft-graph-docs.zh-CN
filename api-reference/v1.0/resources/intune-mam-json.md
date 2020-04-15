@@ -1,34 +1,34 @@
 ---
 title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b9518ec235fe26fb7e60cb1342dea7094dc8203
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b22fce375646883cf1f05c8be68b76ca8d2f142
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445834"
 ---
-# <a name="json-resource-type"></a><span data-ttu-id="8a69d-103">Json 资源类型</span><span class="sxs-lookup"><span data-stu-id="8a69d-103">Json resource type</span></span>
+# <a name="json-resource-type"></a><span data-ttu-id="c18f1-103">Json 资源类型</span><span class="sxs-lookup"><span data-stu-id="c18f1-103">Json resource type</span></span>
 
-<span data-ttu-id="8a69d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a69d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c18f1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c18f1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="8a69d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8a69d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c18f1-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c18f1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8a69d-106">表示以 JSON 格式返回的数据</span><span class="sxs-lookup"><span data-stu-id="8a69d-106">Represents data returned in JSON format</span></span>
+<span data-ttu-id="c18f1-106">表示以 JSON 格式返回的数据</span><span class="sxs-lookup"><span data-stu-id="c18f1-106">Represents data returned in JSON format</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8a69d-107">属性</span><span class="sxs-lookup"><span data-stu-id="8a69d-107">Properties</span></span>
-|<span data-ttu-id="8a69d-108">属性</span><span class="sxs-lookup"><span data-stu-id="8a69d-108">Property</span></span>|<span data-ttu-id="8a69d-109">类型</span><span class="sxs-lookup"><span data-stu-id="8a69d-109">Type</span></span>|<span data-ttu-id="8a69d-110">说明</span><span class="sxs-lookup"><span data-stu-id="8a69d-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c18f1-107">属性</span><span class="sxs-lookup"><span data-stu-id="c18f1-107">Properties</span></span>
+|<span data-ttu-id="c18f1-108">属性</span><span class="sxs-lookup"><span data-stu-id="c18f1-108">Property</span></span>|<span data-ttu-id="c18f1-109">类型</span><span class="sxs-lookup"><span data-stu-id="c18f1-109">Type</span></span>|<span data-ttu-id="c18f1-110">说明</span><span class="sxs-lookup"><span data-stu-id="c18f1-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="8a69d-111">关系</span><span class="sxs-lookup"><span data-stu-id="8a69d-111">Relationships</span></span>
-<span data-ttu-id="8a69d-112">无</span><span class="sxs-lookup"><span data-stu-id="8a69d-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c18f1-111">关系</span><span class="sxs-lookup"><span data-stu-id="c18f1-111">Relationships</span></span>
+<span data-ttu-id="c18f1-112">无</span><span class="sxs-lookup"><span data-stu-id="c18f1-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8a69d-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8a69d-113">JSON Representation</span></span>
-<span data-ttu-id="8a69d-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8a69d-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c18f1-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c18f1-113">JSON Representation</span></span>
+<span data-ttu-id="c18f1-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c18f1-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.Json"
@@ -50,6 +50,9 @@ ms.locfileid: "42532162"
 
 }
 -->
+
+
+
 
 
 

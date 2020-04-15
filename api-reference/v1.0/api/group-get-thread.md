@@ -1,57 +1,57 @@
 ---
 title: 获取对话线程
 description: 获取 thread 对象。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63131aa1edc9a6a76c148017cf2a555f8c8fefc5
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd639cf6fad46101c034b32350f7044c3e8515db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219128"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370926"
 ---
-# <a name="get-conversation-thread"></a><span data-ttu-id="c8f20-103">获取对话线程</span><span class="sxs-lookup"><span data-stu-id="c8f20-103">Get conversation thread</span></span>
+# <a name="get-conversation-thread"></a><span data-ttu-id="86ba3-103">获取对话线程</span><span class="sxs-lookup"><span data-stu-id="86ba3-103">Get conversation thread</span></span>
 
-<span data-ttu-id="c8f20-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8f20-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="86ba3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="86ba3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c8f20-105">获取 [thread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c8f20-105">Get a [thread](../resources/conversationthread.md) object.</span></span>
+<span data-ttu-id="86ba3-105">获取 [thread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="86ba3-105">Get a [thread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c8f20-106">权限</span><span class="sxs-lookup"><span data-stu-id="c8f20-106">Permissions</span></span>
-<span data-ttu-id="c8f20-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c8f20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="86ba3-106">权限</span><span class="sxs-lookup"><span data-stu-id="86ba3-106">Permissions</span></span>
+<span data-ttu-id="86ba3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86ba3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c8f20-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c8f20-109">Permission type</span></span>      | <span data-ttu-id="c8f20-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c8f20-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="86ba3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="86ba3-109">Permission type</span></span>      | <span data-ttu-id="86ba3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86ba3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c8f20-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c8f20-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c8f20-112">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c8f20-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c8f20-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c8f20-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8f20-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8f20-114">Not supported.</span></span>    |
-|<span data-ttu-id="c8f20-115">Application</span><span class="sxs-lookup"><span data-stu-id="c8f20-115">Application</span></span> | <span data-ttu-id="c8f20-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8f20-116">Not supported.</span></span> |
+|<span data-ttu-id="86ba3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86ba3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="86ba3-112">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86ba3-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="86ba3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86ba3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86ba3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="86ba3-114">Not supported.</span></span>    |
+|<span data-ttu-id="86ba3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="86ba3-115">Application</span></span> | <span data-ttu-id="86ba3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="86ba3-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c8f20-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c8f20-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86ba3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86ba3-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c8f20-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c8f20-118">Optional query parameters</span></span>
-<span data-ttu-id="c8f20-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c8f20-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="86ba3-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="86ba3-118">Optional query parameters</span></span>
+<span data-ttu-id="86ba3-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="86ba3-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c8f20-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c8f20-120">Request headers</span></span>
-| <span data-ttu-id="c8f20-121">标头</span><span class="sxs-lookup"><span data-stu-id="c8f20-121">Header</span></span>       | <span data-ttu-id="c8f20-122">值</span><span class="sxs-lookup"><span data-stu-id="c8f20-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="86ba3-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="86ba3-120">Request headers</span></span>
+| <span data-ttu-id="86ba3-121">标头</span><span class="sxs-lookup"><span data-stu-id="86ba3-121">Header</span></span>       | <span data-ttu-id="86ba3-122">值</span><span class="sxs-lookup"><span data-stu-id="86ba3-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c8f20-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c8f20-123">Authorization</span></span>  | <span data-ttu-id="c8f20-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c8f20-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="86ba3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="86ba3-123">Authorization</span></span>  | <span data-ttu-id="86ba3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="86ba3-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c8f20-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c8f20-126">Request body</span></span>
-<span data-ttu-id="c8f20-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c8f20-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="86ba3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="86ba3-126">Request body</span></span>
+<span data-ttu-id="86ba3-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="86ba3-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c8f20-128">响应</span><span class="sxs-lookup"><span data-stu-id="c8f20-128">Response</span></span>
-<span data-ttu-id="c8f20-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [thread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c8f20-129">If successful, this method returns a `200 OK` response code and a [thread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="86ba3-128">响应</span><span class="sxs-lookup"><span data-stu-id="86ba3-128">Response</span></span>
+<span data-ttu-id="86ba3-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [thread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="86ba3-129">If successful, this method returns a `200 OK` response code and a [thread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c8f20-130">示例</span><span class="sxs-lookup"><span data-stu-id="c8f20-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="c8f20-131">请求</span><span class="sxs-lookup"><span data-stu-id="c8f20-131">Request</span></span>
-<span data-ttu-id="c8f20-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c8f20-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="86ba3-130">示例</span><span class="sxs-lookup"><span data-stu-id="86ba3-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="86ba3-131">请求</span><span class="sxs-lookup"><span data-stu-id="86ba3-131">Request</span></span>
+<span data-ttu-id="86ba3-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="86ba3-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c8f20-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8f20-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="86ba3-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="86ba3-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
@@ -60,28 +60,28 @@ GET /groups/{id}/threads/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==
 ```
-# <a name="c"></a>[<span data-ttu-id="c8f20-134">C#</span><span class="sxs-lookup"><span data-stu-id="c8f20-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="86ba3-134">C#</span><span class="sxs-lookup"><span data-stu-id="86ba3-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-thread-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c8f20-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8f20-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="86ba3-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86ba3-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c8f20-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8f20-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="86ba3-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="86ba3-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-thread-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c8f20-137">Java</span><span class="sxs-lookup"><span data-stu-id="c8f20-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="86ba3-137">Java</span><span class="sxs-lookup"><span data-stu-id="86ba3-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-thread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c8f20-138">响应</span><span class="sxs-lookup"><span data-stu-id="c8f20-138">Response</span></span>
-<span data-ttu-id="c8f20-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c8f20-139">The following is an example of the response.</span></span>
-><span data-ttu-id="c8f20-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c8f20-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="86ba3-138">响应</span><span class="sxs-lookup"><span data-stu-id="86ba3-138">Response</span></span>
+<span data-ttu-id="86ba3-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="86ba3-139">The following is an example of the response.</span></span>
+><span data-ttu-id="86ba3-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="86ba3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
