@@ -1,16 +1,16 @@
 ---
 title: windows81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 的合规性设置。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 957525c146c5f59018253faefe15cdb1358882ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0d27d687925152a835ef462399dbf89313145f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530385"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451530"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42530385"
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows81CompliancePolicies](../api/intune-deviceconfig-windows81compliancepolicy-list.md)|[windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) 集合|列出 [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "42530385"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -49,7 +49,7 @@ ms.locfileid: "42530385"
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
-|osMinimumVersion|字符串|最低 Windows 8.1 版本。|
+|osMinimumVersion|String|最低 Windows 8.1 版本。|
 |osMaximumVersion|String|最高 Windows 8.1 版本。|
 |storageRequireEncryption|Boolean|指示是否要求对 Windows 8.1 设备加密。|
 
@@ -94,6 +94,9 @@ ms.locfileid: "42530385"
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

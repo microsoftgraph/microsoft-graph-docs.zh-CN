@@ -2,15 +2,15 @@
 title: List messages
 description: 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5cc5664b2fc71ed6fad75ca94f01281bb15f69e5
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: ef1581250b7da3d36260667a5b6b048f497f2729
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892630"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454117"
 ---
 # <a name="list-messages"></a>列出邮件
 

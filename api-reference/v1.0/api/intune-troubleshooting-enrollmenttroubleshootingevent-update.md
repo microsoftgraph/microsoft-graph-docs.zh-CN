@@ -1,16 +1,16 @@
 ---
 title: 更新 enrollmentTroubleshootingEvent
 description: 更新 enrollmentTroubleshootingEvent 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 981228381902bb2b0dfa1296285de6cfa271286c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b152b7db0888b6f98a3c76727f8e69f251625598
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511836"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451752"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |:---|:---|:---|
 |id|字符串|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|事件发生的时间。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|字符串|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|字符串|Intune 创建或收集的设备标识符。|
-|operatingSystem|字符串|操作系统。|
-|osVersion|字符串|操作系统版本。|
+|correlationId|String|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
+|operatingSystem|String|操作系统。|
+|osVersion|String|操作系统版本。|
 |userId|String|尝试注册设备的用户的标识符。|
-|deviceId|字符串|Azure AD 设备标识符。|
+|deviceId|String|Azure AD 设备标识符。|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Highlevel 失败类别。 可取值为：`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment`。|
 |failureReason|String|详细失败原因。|
@@ -114,6 +114,8 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
 
 
 

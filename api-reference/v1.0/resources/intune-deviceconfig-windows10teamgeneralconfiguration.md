@@ -1,16 +1,16 @@
 ---
 title: windows10TeamGeneralConfiguration 资源类型
 description: 本主题提供由 windows10TeamGeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8b2b9d8baeee27b42d89416bb28e83970a0d394
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 543cbda6bd4342aaa35b1ea68707c0c9303e3714
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451553"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42532275"
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10TeamGeneralConfigurations](../api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md)|[windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) 集合|列出 [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) 对象的属性和关系。|
@@ -38,12 +38,12 @@ ms.locfileid: "42532275"
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
-|azureOperationalInsightsWorkspaceId|字符串|Azure 操作见解工作区 ID。|
-|azureOperationalInsightsWorkspaceKey|字符串|Azure 操作见解工作区键。|
+|azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
+|azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
 |connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
 |maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
@@ -111,6 +111,9 @@ ms.locfileid: "42532275"
   "welcomeScreenMeetingInformation": "String"
 }
 ```
+
+
+
 
 
 

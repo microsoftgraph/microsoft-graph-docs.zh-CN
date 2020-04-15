@@ -1,16 +1,16 @@
 ---
 title: 删除 windowsInformationProtectionPolicy
 description: 删除 windowsInformationProtectionPolicy。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4187da6366935ba055be3f1d55ad29f25fea0a6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 74ac97c49c7ab6f9e52ab34bb35aea7f64ad9ce5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512823"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450061"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>删除 windowsInformationProtectionPolicy
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

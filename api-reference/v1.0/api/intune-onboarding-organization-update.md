@@ -1,16 +1,16 @@
 ---
 title: 更新组织
 description: 更新 organization 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e62b040aa80469065631dfa45f8c4564ad906866
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 286d793d75f66212f464a38fa07cb3dc6a764cab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512403"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452878"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -51,7 +51,7 @@ PATCH /organization/{organizationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID。|
+|id|String|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
 
@@ -87,6 +87,8 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
+
 
 
 

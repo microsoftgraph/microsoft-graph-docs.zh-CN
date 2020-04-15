@@ -1,16 +1,16 @@
 ---
 title: 获取 roleAssignment
 description: 读取 roleAssignment 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50c0acf16575880a99b07bf76f431c573b6f1b4f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc96986cb78f83e2b06de8a65205beebb63859a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512235"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455174"
 ---
 # <a name="get-roleassignment"></a>获取 roleAssignment
 
@@ -39,7 +39,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -80,6 +80,8 @@ Content-Length: 275
   }
 }
 ```
+
+
 
 
 

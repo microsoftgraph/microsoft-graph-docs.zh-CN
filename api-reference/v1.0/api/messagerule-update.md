@@ -1,16 +1,16 @@
 ---
 title: 更新规则
 description: 为 messageRule 对象更改可写属性并保存更改。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 303a83bb65af1b3ae564118c6dd7c14f873bafed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a2e633f4121d9b57b450764460d6d2b874c024d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451700"
 ---
 # <a name="update-rule"></a>更新规则
 

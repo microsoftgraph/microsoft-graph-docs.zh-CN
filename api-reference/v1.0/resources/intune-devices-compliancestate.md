@@ -1,16 +1,16 @@
 ---
 title: complianceState 枚举类型
 description: 合规性状态。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b0b20615dfdda489649182d0c0687e9a735b5f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c243145ee8511edb001ba2a55b3f72dde070297
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532225"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451284"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 
@@ -24,12 +24,15 @@ ms.locfileid: "42532225"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|合格|1 |合格.|
-|合规|2 |设备不合规，并将从公司资源中阻止。|
-|冲突|3 |与其他规则冲突。|
+|合格|1|合格.|
+|合规|双面|设备不合规，并将从公司资源中阻止。|
+|冲突|第三章|与其他规则冲突。|
 |error|4 |错误。|
 |inGracePeriod|254|Device 不合规，但仍有权访问公司资源|
 |configManager|255|由配置管理器管理|
+
+
+
 
 
 

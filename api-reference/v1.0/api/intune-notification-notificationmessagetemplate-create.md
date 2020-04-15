@@ -1,16 +1,16 @@
 ---
 title: 创建 notificationMessageTemplate
 description: 创建新的 notificationMessageTemplate 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bb8ae2079920b8ee7ce19065a3c857da063675c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b6ffe8bde57ff7e61d52e89287c74fd03fa6f80
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512760"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452997"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 
@@ -51,7 +51,7 @@ POST /deviceManagement/notificationMessageTemplates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|字符串|通知消息模板的显示名称。|
 |defaultLocale|String|请求的区域设置不可用时要回退到的默认区域设置。|
@@ -95,6 +95,8 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
+
 
 
 

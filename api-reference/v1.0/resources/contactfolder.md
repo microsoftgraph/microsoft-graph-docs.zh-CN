@@ -1,16 +1,16 @@
 ---
 title: contactFolder 资源类型
 description: 包含联系人的文件夹。
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6a27176342c89d78468c0b766c094f537a4f7bda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03bc6f2a2dfda74af701a14a5b59cbc8865420b8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533024"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449477"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "42533024"
 |:---------------|:--------|:----------|
 |[获取 contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |通过使用联系人文件夹 ID 获取联系人文件夹。|
 |[更新](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |更新 contactFolder 对象。 |
-|[删除](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
+|[Delete](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
 |[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) collection| 获取指定联系人文件夹下的子文件夹的集合。|
 |[创建子 ContactFolder](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
@@ -51,7 +51,7 @@ ms.locfileid: "42533024"
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
 |contacts|[Contact](contact.md) collection|文件夹中的联系人。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

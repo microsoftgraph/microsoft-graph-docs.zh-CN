@@ -1,16 +1,16 @@
 ---
 title: retire 操作
 description: 停用设备
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 118f51df3de37a8a3a78268fdc749c0244d0d40e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 289f39d275bd7052169c0f9fd28d5db70f7fc03b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513495"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450488"
 ---
 # <a name="retire-action"></a>retire 操作
 
@@ -65,6 +65,8 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cd96412e948ff996e0809ad8df53f53a9f71b50
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77c8e44b3f4ab04f40620c5b2286471d3334c627
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512361"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452772"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
-|organizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
-|appleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
+|appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次使用 Apple Volume purchase program 服务（apple Volume purchase program 令牌）完成应用程序同步的时间。|
 |token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
@@ -116,6 +116,8 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
 
 
 

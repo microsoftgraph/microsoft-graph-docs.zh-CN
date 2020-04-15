@@ -1,16 +1,16 @@
 ---
 title: 列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: 列出 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd8bbe9bd06e65af4ddb5faff0bf6d4291f91fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b4263e04cf4ae0384354089a5a6e69b25b92936
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512592"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451804"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -92,6 +92,8 @@ Content-Length: 914
   ]
 }
 ```
+
+
 
 
 

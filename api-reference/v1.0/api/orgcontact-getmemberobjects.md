@@ -2,15 +2,15 @@
 title: orgContact： getMemberObjects
 description: 返回此组织联系人所属的所有组。 检查是可传递的。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b28bb43ae8b37a7a7007b725bb6e788d052ed29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d3f283eaaaed217596c8cdaa200b3bc0a1c2f06
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511185"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451685"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
 

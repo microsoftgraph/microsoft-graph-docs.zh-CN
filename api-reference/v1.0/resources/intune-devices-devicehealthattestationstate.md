@@ -1,16 +1,16 @@
 ---
 title: deviceHealthAttestationState 资源类型
 description: 尚未记录
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d56cc2689a9987f99ac7abd7a132ff1526bf88c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41c9fd4f09749857c9aeb588086ef23ce5775d48
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532214"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454002"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
 
@@ -23,36 +23,36 @@ ms.locfileid: "42532214"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|lastUpdateDateTime|字符串|上次更新时间戳。|
-|contentNamespaceUrl|字符串|DHA 报告版本。 （命名空间版本）|
-|deviceHealthAttestationStatus|字符串|DHA 报告版本。 （命名空间版本）|
-|contentVersion|字符串|HealthAttestation 状态架构版本|
+|lastUpdateDateTime|String|上次更新时间戳。|
+|contentNamespaceUrl|String|DHA 报告版本。 （命名空间版本）|
+|deviceHealthAttestationStatus|String|DHA 报告版本。 （命名空间版本）|
+|contentVersion|String|HealthAttestation 状态架构版本|
 |issuedDateTime|DateTimeOffset|评估设备或颁发给 MDM 的日期/时间|
-|attestationIdentityKey|字符串|当设备上存在证明标识密钥 (AIK) 时，它表示设备具有认可密钥 (EK) 证书。|
+|attestationIdentityKey|String|当设备上存在证明标识密钥 (AIK) 时，它表示设备具有认可密钥 (EK) 证书。|
 |resetCount|Int64|电脑设备已休眠或恢复的次数|
 |restartCount|Int64|电脑设备已重新启动的次数|
-|dataExcutionPolicy|字符串|DEP 策略定义一组对内存执行额外检查的硬件和软件技术 |
-|bitLockerStatus|字符串|BitLocker 驱动器加密开启或关闭|
-|bootManagerVersion|字符串|引导管理器的版本|
-|codeIntegrityCheckVersion|字符串|引导管理器的版本|
-|secureBoot|字符串|启用安全启动后，核心组件必须具有正确的加密签名|
-|bootDebugging|字符串|启用 bootDebugging 后，该设备用于开发和测试|
-|operatingSystemKernelDebugging|字符串|启用 operatingSystemKernelDebugging 后，该设备用于开发和测试|
-|codeIntegrity|字符串| 启用代码完整性后，代码执行限于完整性已验证的代码|
-|testSigning|字符串|当允许测试签名时，设备不会在引导期间强制执行签名验证|
-|safeMode|字符串|安全模式是 Windows 的一种故障排除选项，用于在受限状态下启动计算机|
-|windowsPE|字符串|运行受限服务的操作系统，用于为 Windows 准备计算机|
-|earlyLaunchAntiMalwareDriverProtection|字符串|ELAM 为网络中的计算机启动时提供保护|
-|virtualSecureMode|字符串|VSM 是一个容器，可以保护高价值资产免受已损坏内核的威胁|
-|pcrHashAlgorithm|字符串|标识 TPM 使用的 HASH 算法的信息属性|
-|bootAppSecurityVersion|字符串|启动应用程序的安全版本号|
-|bootManagerSecurityVersion|字符串|启动应用程序的安全版本号|
-|tpmVersion|字符串|启动应用程序的安全版本号|
-|pcr0|字符串|在 PCR\[0\] 中捕获的度量|
-|secureBootConfigurationPolicyFingerPrint|字符串|自定义安全启动配置策略的指纹|
-|codeIntegrityPolicy|字符串|控制启动环境安全性的代码完整性策略|
-|bootRevisionListInfo|字符串|在已证明的设备上进行初始启动期间加载的启动修订列表|
-|operatingSystemRevListInfo|字符串|在已证明的设备上进行初始启动期间加载的操作系统修订列表|
+|dataExcutionPolicy|String|DEP 策略定义一组对内存执行额外检查的硬件和软件技术 |
+|bitLockerStatus|String|BitLocker 驱动器加密开启或关闭|
+|bootManagerVersion|String|引导管理器的版本|
+|codeIntegrityCheckVersion|String|引导管理器的版本|
+|secureBoot|String|启用安全启动后，核心组件必须具有正确的加密签名|
+|bootDebugging|String|启用 bootDebugging 后，该设备用于开发和测试|
+|operatingSystemKernelDebugging|String|启用 operatingSystemKernelDebugging 后，该设备用于开发和测试|
+|codeIntegrity|String| 启用代码完整性后，代码执行限于完整性已验证的代码|
+|testSigning|String|当允许测试签名时，设备不会在引导期间强制执行签名验证|
+|safeMode|String|安全模式是 Windows 的一种故障排除选项，用于在受限状态下启动计算机|
+|windowsPE|String|运行受限服务的操作系统，用于为 Windows 准备计算机|
+|earlyLaunchAntiMalwareDriverProtection|String|ELAM 为网络中的计算机启动时提供保护|
+|virtualSecureMode|String|VSM 是一个容器，可以保护高价值资产免受已损坏内核的威胁|
+|pcrHashAlgorithm|String|标识 TPM 使用的 HASH 算法的信息属性|
+|bootAppSecurityVersion|String|启动应用程序的安全版本号|
+|bootManagerSecurityVersion|String|启动应用程序的安全版本号|
+|tpmVersion|String|启动应用程序的安全版本号|
+|pcr0|String|在 PCR\[0\] 中捕获的度量|
+|secureBootConfigurationPolicyFingerPrint|String|自定义安全启动配置策略的指纹|
+|codeIntegrityPolicy|String|控制启动环境安全性的代码完整性策略|
+|bootRevisionListInfo|String|在已证明的设备上进行初始启动期间加载的启动修订列表|
+|operatingSystemRevListInfo|String|在已证明的设备上进行初始启动期间加载的操作系统修订列表|
 |healthStatusMismatchInfo|String|如果 DHA 服务检测到完整性问题，则此属性会出现|
 |healthAttestationSupportedStatus|String|此属性指示设备是否支持 DHA|
 
@@ -103,6 +103,9 @@ ms.locfileid: "42532214"
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
+
+
 
 
 

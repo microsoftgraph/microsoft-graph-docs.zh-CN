@@ -1,16 +1,16 @@
 ---
 title: 获取 localizedNotificationMessage
 description: 读取 localizedNotificationMessage 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39b8247982a38543056655784c4b9401c96ba33c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ad3b6b20932c91a6240fbcd2f13101a43fac884
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512795"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453042"
 ---
 # <a name="get-localizednotificationmessage"></a>获取 localizedNotificationMessage
 
@@ -39,7 +39,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -80,6 +80,8 @@ Content-Length: 346
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 列出 organizations
 description: 列出 organization 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 046786b82bc907a99abfb805bc30d5c9b68e0ac4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1e57bc9cc7151814f63fbba6f2c44359d5e7c2c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512417"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452900"
 ---
 # <a name="list-organizations"></a>列出 organizations
 
@@ -75,6 +75,8 @@ Content-Length: 196
   ]
 }
 ```
+
+
 
 
 

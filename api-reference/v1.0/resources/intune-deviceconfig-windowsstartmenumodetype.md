@@ -1,16 +1,16 @@
 ---
 title: windowsStartMenuModeType 枚举类型
 description: "\"开始\" 菜单的显示模式类型。"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 199248af4ff1947ade3a52bc68aa6e1806e2da87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b2b2a83c23f7b0b57ff90acfa6f20fd07068907
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451404"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 
@@ -24,8 +24,11 @@ ms.locfileid: "42532245"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义。 默认值。|
-|全屏|1 |全屏。|
-|nonFullScreen|2 |非全屏。|
+|全屏|1|全屏。|
+|nonFullScreen|双面|非全屏。|
+
+
+
 
 
 

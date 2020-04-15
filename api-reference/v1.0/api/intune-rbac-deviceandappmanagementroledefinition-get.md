@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceAndAppManagementRoleDefinition
 description: 读取 deviceAndAppManagementRoleDefinition 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a64d534ce2adf17c05ae6348baf0f0d654c87cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd246d1b45735c9334de0025dc82cf034e8e3b45
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452652"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>获取 deviceAndAppManagementRoleDefinition
 
@@ -40,7 +40,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -95,6 +95,8 @@ Content-Length: 712
   }
 }
 ```
+
+
 
 
 

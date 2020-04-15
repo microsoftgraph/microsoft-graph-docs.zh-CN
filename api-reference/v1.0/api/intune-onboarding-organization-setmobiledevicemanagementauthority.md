@@ -1,16 +1,16 @@
 ---
 title: setMobileDeviceManagementAuthority 操作
 description: 设置移动设备管理机构
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f8713d62ed082a368b915ca4e44706209f73ee7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 872a9b590aba6150a8d38789b9dea0a5a132281e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512410"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452885"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority 操作
 
@@ -69,6 +69,8 @@ Content-Length: 18
   "value": 2
 }
 ```
+
+
 
 
 

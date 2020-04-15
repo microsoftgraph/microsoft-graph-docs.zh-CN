@@ -1,16 +1,16 @@
 ---
 title: 更新 iosUpdateConfiguration
 description: 更新 iosUpdateConfiguration 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79de5c4171b59952c00489795de0631f659ee304
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b41eed80f91122865b49d0f6f1c091c524ec6658
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454232"
 ---
 # <a name="update-iosupdateconfiguration"></a>更新 iosUpdateConfiguration
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|使用时段开始时间（使用时段表示不应发生更新安装的时间范围）|
@@ -113,6 +113,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

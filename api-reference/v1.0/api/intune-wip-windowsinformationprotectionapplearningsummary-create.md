@@ -1,16 +1,16 @@
 ---
 title: 创建 windowsInformationProtectionAppLearningSummary
 description: 创建新的 windowsInformationProtectionAppLearningSummary 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74b9d1608aeb7dc4c65b9e9bea726e2e261d0be9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a31dc75af3b8ea00e41fade55f744acfedbd1fe8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451737"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>创建 windowsInformationProtectionAppLearningSummary
 
@@ -51,7 +51,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|String|应用程序名称|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
@@ -93,6 +93,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 

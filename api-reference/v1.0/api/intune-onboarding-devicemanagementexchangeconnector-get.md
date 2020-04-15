@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceManagementExchangeConnector
 description: 读取 deviceManagementExchangeConnector 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ea49b8452fae8ed0c379bb5ea9046990057587f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4facb2b96301de00e7d2cdeed327623fac57dc1e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512571"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451931"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>获取 deviceManagementExchangeConnector
 
@@ -39,7 +39,7 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -84,6 +84,8 @@ Content-Length: 580
   }
 }
 ```
+
+
 
 
 

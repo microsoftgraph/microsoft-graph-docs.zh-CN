@@ -2,15 +2,15 @@
 title: 列出 memberOf
 description: 列出此 organizaitonal 联系人所属的组。
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aa0b279824e12a71b41d5cf3418d33daa465458
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0620c4dec67377d7a08f1d3f02ac882d1d2e5951
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511171"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451662"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -35,9 +35,9 @@ ms.locfileid: "42511171"
 GET /contacts/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select`来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

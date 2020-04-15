@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceConfigurationUserOverview
 description: 读取 deviceConfigurationUserOverview 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ea37cc18c96bec2c79aafe70c17b62ea20d0bab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae85feb28a26521474f94cf3ffc00f2d38b4aa03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514737"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450661"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>获取 deviceConfigurationUserOverview
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOve
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -82,6 +82,8 @@ Content-Length: 368
   }
 }
 ```
+
+
 
 
 

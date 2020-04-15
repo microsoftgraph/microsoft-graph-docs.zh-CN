@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsInformationProtectionPolicy
 description: 更新 windowsInformationProtectionPolicy 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b4a18737ef5ee8352766af56b50b3e35673ff01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbdd28cec07d63adc3d25293a502fb594546b210
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453087"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>更新 windowsInformationProtectionPolicy
 
@@ -52,11 +52,11 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|version|字符串|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|WIP 强制等级。若要获取从[WindowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)继承的受支持值的枚举定义，请参阅。 可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
 |enterpriseDomain|String|主企业域。继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md) 集合|要保护的企业域列表。继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -391,6 +391,8 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
+
 
 
 

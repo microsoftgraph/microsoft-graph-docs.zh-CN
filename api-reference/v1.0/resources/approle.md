@@ -4,13 +4,13 @@ description: 表示可能由调用其他应用程序的客户端应用程序请�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 2bda5d65d71873c1427ae99ded550962ad135433
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: e94b1bce8f7888cf2bca4f316dfa8d6a6a96c244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533143"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451655"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "42533143"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|指定是否可以通过设置为 "用户" 或将此应用程序角色定义分配给用户和组，或通过设置为 "应用程序" 或同时设置为 "应用程序" 来将此应用程序角色定义分配给用户和组。|
-|说明|字符串|在管理员应用分配和同意体验中显示的权限帮助文本。|
+|allowedMemberTypes|String 集合|指定是否可以通过设置为 "用户" 或将此应用程序角色定义分配给用户和组，或通过设置为 "应用程序" 或同时设置为 "应用程序" 来将此应用程序角色定义分配给用户和组。|
+|description|String|在管理员应用分配和同意体验中显示的权限帮助文本。|
 |displayName|字符串|管理员同意和应用工作分配体验中显示的权限的显示名称。|
 |id|Guid|**AppRoles**集合中的唯一角色标识符。 创建新的应用程序角色时，必须提供新的 Guid 标识符。 |
 |isEnabled|Boolean|在创建或更新应用程序角色时，必须将其设置为**true** （默认值为）。 若要删除角色，必须首先将此设置为**false**。  此时，在后续调用中，可能会删除此角色。|
-|格式|字符串| 只读。 指定是否在 Application 对象上定义应用程序角色 <!-- or on the ServicePrincipal object -->. 不得_包含_在任何 POST 或 PATCH 请求中。 |
+|格式|String| 只读。 指定是否在 Application 对象上定义应用程序角色 <!-- or on the ServicePrincipal object -->. 不得_包含_在任何 POST 或 PATCH 请求中。 |
 |value|String|指定将包含在 authentication 和 access 令牌中`roles`的声明中的值。 长度不得超过120个字符。 允许的字符`:` `!` `#` `$` `%`包括`&` `'` `(` `a-z`，以及`0-9`范围中`A-Z`的字符和。 `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` 不允许使用任何其他字符，包括空格字符。  |
 
 ## <a name="json-representation"></a>JSON 表示形式

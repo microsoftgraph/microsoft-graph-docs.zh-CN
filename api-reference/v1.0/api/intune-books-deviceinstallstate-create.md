@@ -1,16 +1,16 @@
 ---
 title: 创建 deviceInstallState
 description: 创建新的 deviceInstallState 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5d57957517f78949ce166f70cbd083a6dafec07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d672672efd1bac5752b9b93b878b207a603fff2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515719"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455537"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
 
@@ -52,14 +52,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|deviceName|字符串|设备名称。|
-|deviceId|字符串|设备 ID。|
+|id|String|实体的键。|
+|deviceName|String|设备名称。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|字符串|安装失败的错误代码。|
-|osVersion|字符串|操作系统版本。|
-|osDescription|字符串|操作系统说明。|
+|errorCode|String|安装失败的错误代码。|
+|osVersion|String|操作系统版本。|
+|osDescription|String|操作系统说明。|
 |userName|String|设备用户名。|
 
 
@@ -109,6 +109,8 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
 
 
 

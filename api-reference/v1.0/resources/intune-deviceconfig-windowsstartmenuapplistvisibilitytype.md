@@ -1,16 +1,16 @@
 ---
 title: windowsStartMenuAppListVisibilityType 枚举类型
 description: "\"开始\" 菜单应用程序列表可见性的类型。"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 913b782289c821536a7bc92e2d3f4e2f68a87ef7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e96cbcb7ace8ee66563fd809cac3c2092a5c6e4b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451411"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 枚举类型
 
@@ -24,9 +24,12 @@ ms.locfileid: "42530344"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义。 默认值。|
-|折叠|1 |折叠 "开始" 菜单上的 "应用" 列表。|
-|删除|2 |从 "开始" 菜单中完全删除应用列表。|
+|折叠|1|折叠 "开始" 菜单上的 "应用" 列表。|
+|删除|双面|从 "开始" 菜单中完全删除应用列表。|
 |disableSettingsApp|4 |禁用 "设置" 应用中的相应切换（折叠或删除）。|
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: applePushNotificationCertificate 资源类型
 description: Apple 推送通知证书。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 220bfa75c896693e5c7ff841a5f5957aab9decf0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79c7bcd1bfe7a1eac1820cbe7163cac0b2b5311e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530313"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451314"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -20,18 +20,18 @@ ms.locfileid: "42530313"
 
 Apple 推送通知证书。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|读取 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性和关系。|
 |[更新 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。|
-|[downloadApplePushNotificationCertificateSigningRequest 函数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|字符串|下载 Apple 推送通知证书签名请求|
+|[downloadApplePushNotificationCertificateSigningRequest 函数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|String|下载 Apple 推送通知证书签名请求|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
-|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
+|id|String|证书的唯一标识符|
+|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
@@ -59,6 +59,9 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceAndAppManagementRoleAssignment
 description: 更新 deviceAndAppManagementRoleAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2c94afdd7ce01067c617326a0018e088d6dc300
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4e2c97a9217e011e357e87e6f1e45bbe0cefa2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512326"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452721"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>更新 deviceAndAppManagementRoleAssignment
 
@@ -53,8 +53,8 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |displayName|String|角色分配的显示或友好名称。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
-|说明|String|角色分配的说明。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
-|resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是来自 Azure Active Directory 的 ID。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
+|description|String|角色分配的说明。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
+|resourceScopes|String 集合|角色作用域成员安全组的 ID 列表。  这些是来自 Azure Active Directory 的 ID。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |members|String collection|角色成员安全组的 ID 列表。 这些是 Azure Active Directory 中的 ID。|
 
 
@@ -104,6 +104,8 @@ Content-Length: 307
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: resetPasscode 操作
 description: 重置密码
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dffcc2aba2b07beaafd2efdf9ebefe3bc951c2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25b003332ef7d5aceb5edaaf20f821be394a0190
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513502"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450527"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode 操作
 
@@ -65,6 +65,8 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

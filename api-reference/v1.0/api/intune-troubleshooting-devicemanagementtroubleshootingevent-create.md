@@ -1,16 +1,16 @@
 ---
 title: 创建 deviceManagementTroubleshootingEvent
 description: 创建新的 deviceManagementTroubleshootingEvent 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf2c339f69897b44512dc7317441aacf44f851d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c135b669428b763568306aea7187b718f88ac32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450451"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
 
@@ -90,6 +90,8 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
+
 
 
 
