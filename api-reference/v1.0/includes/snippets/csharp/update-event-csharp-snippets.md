@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d9cf20af90afbd8d9c31cad0f149e9bd923302be
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b2ae8025b1c98f16090af1c60ec1a63e7288fc2c
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845960"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43512313"
 ---
 ```csharp
 
@@ -23,6 +23,8 @@ var @event = new Event
     Recurrence = null,
     ICalUId = "iCalUId-value",
     ReminderMinutesBeforeStart = 99,
+    IsOnlineMeeting = true,
+    OnlineMeetingProvider = "teamsForBusiness",
     IsReminderOn = true
 };
 

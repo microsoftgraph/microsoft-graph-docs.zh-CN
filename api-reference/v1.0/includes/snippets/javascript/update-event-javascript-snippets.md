@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3ee8d7c8d1222d6223e952e90404813111fe1ca
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 0e45c99717818f21d3dca271777b8a3a87ad9d38
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636853"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43512279"
 ---
 ```javascript
 
@@ -25,6 +25,8 @@ const event = {
   recurrence: null,
   iCalUId: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
+  isOnlineMeeting: true,
+  onlineMeetingProvider: "teamsForBusiness",
   isReminderOn: true
 };
 
