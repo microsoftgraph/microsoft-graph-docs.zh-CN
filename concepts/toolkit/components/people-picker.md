@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 175370b3c00ebaef0db85912c032898e2dacb5e7
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: bdfb4951151876d79dede974654747d25a54c833
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144301"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510880"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的人员选取器组件
 
@@ -26,7 +26,7 @@ ms.locfileid: "43144301"
 
 ## <a name="properties"></a>属性
 
-默认情况下， `mgt-people-picker`组件从`/me/people`终结点提取事件。 使用以下属性来更改此行为。
+默认情况下， `mgt-people-picker`组件从`/me/people`终结点中提取人员。 使用以下属性来更改此行为。
 
 | 属性 | 属性 | 说明                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,6 +65,14 @@ ms.locfileid: "43144301"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
+## <a name="events"></a>活动
+
+将从组件中触发以下事件。
+
+| 事件 | 说明 |
+| --- | --- |
+| `selectionChanged` | 用户在所选/选取的人员列表中添加或删除了人员。|
+
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
 `mgt-people-picker`组件定义以下 CSS 自定义属性。
@@ -82,12 +90,12 @@ mgt-people-picker {
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| 设置 | null：无数据 | 用于覆盖整个组件的呈现的模板。
+|  默认值 | null：无数据 | 用于覆盖整个组件的呈现的模板。
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
 | error | null：无数据 | 用户搜索不返回用户时使用的模板。 |
 | 无数据 | null：无数据 | 如果用户搜索不返回用户，则使用备用模板。 |
 | 选定的人员 | 人员：人员详细信息对象 | 呈现所选人员的模板。 |
-| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
+| 朋友 | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 下面的示例演示如何使用`error`模板。
 

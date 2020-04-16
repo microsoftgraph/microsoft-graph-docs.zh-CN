@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: faf9c5c7aca7da0e54f9d7b50899a5340b142a1b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bd0603c220e0bd90f1f8ace2889efe5124175153
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082721"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511174"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>teleconferenceDeviceMediaQuality 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "43082721"
 |averageOutboundRoundTripDelay|持续时间|平均出站流网络往返延迟。|
 |channelIndex|Int32|媒体的通道索引。 索引从1开始。  如果媒体会话包含3个视频形式，通道索引将为1、2和3。|
 |inboundPackets|Int64|入站数据包的总数。|
-|localIPAddress|字符串|媒体会话的本地 IP 地址。|
+|localIPAddress|String|媒体会话的本地 IP 地址。|
 |localPort|Int32|本地媒体端口。|
 |maximumInboundJitter|持续时间|最大入站流网络抖动。|
 |maximumInboundPacketLossRateInPercentage|双精度|以百分比表示的最大入站流数据包丢失率（0-100）。 例如，0.01 表示0.01%。|
@@ -41,8 +41,16 @@ ms.locfileid: "43082721"
 |mediaDuration|持续时间|整个模态的持续时间。 如果启用和禁用媒体多次，则 MediaDuration 将的所有持续时间的总和。|
 |networkLinkSpeedInBytes|Int64|网络链接速度（以字节为单位）|
 |outboundPackets|Int64|出站数据包的总数。|
-|remoteIPAddress|字符串|媒体会话的远程 IP 地址。|
+|remoteIPAddress|String|媒体会话的远程 IP 地址。|
 |remotePort|Int32|远程媒体端口。|
+
+### <a name="derived-types"></a>派生类型
+
+| 类型                                                 | 说明                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | 视频电话会议设备音频质量数据。                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | 视频电话会议设备视频质量数据。                          |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | 视频电话会议设备屏幕-共享质量数据。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
