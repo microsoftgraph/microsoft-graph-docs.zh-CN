@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0be1d19f9968d5da7d4c3f7ff84a76397dfa2115
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448527"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510499"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -109,6 +109,33 @@ GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@con
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## <a name="tools-for-interacting-with-microsoft-graph"></a>用于与 Microsoft Graph 交互的工具
+
+### <a name="graph-explorer"></a>Graph 浏览器
+
+Graph 浏览器是一个基于 Web 的工具，可用于通过 Microsoft Graph API 构建和测试请求。 可在以下位置访问 Graph 浏览器：`https://developer.microsoft.com/graph/graph-explorer`。
+
+可在不登录的情况下访问演示数据，或者可登录自己的租户。 请按照以下步骤生成请求：
+
+1. 选择 HTTP 方法。
+2. 选择要使用的 API 版本。
+3. 在请求文本框中键入查询。
+4. 选择“**运行查询**”。 
+
+以下示例显示返回演示租户中的用户相关信息的请求：
+
+![Graph 浏览器屏幕截图，突出显示 GET 用户请求](./images/graph-explorer.png)
+
+Graph 浏览器中提供了示例查询，让你能够更快地运行常见请求。 若要查看可用示例，请选择“**显示更多示例**”。 对于要查看的示例集选择“**打开**”，然后在关闭选择窗口后，应会看到预定义的请求列表。
+
+发送请求后将显示状态代码和消息，并在“**响应预览**”选项卡中显示响应。
+
+### <a name="postman"></a>Postman
+
+Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：`https://www.getpostman.com/`。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
+
+有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta)。
+
 ## <a name="next-steps"></a>后续步骤
 
-你可以随时开始使用和运行 Microsoft Graph。若要了解详细信息，请转到 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)尝试发出某些请求、尝试[快速启动](https://developer.microsoft.com/graph/quick-start)，或使用 [SDK 和代码示例](https://developer.microsoft.com/graph/code-samples-and-sdks)之一开始使用。
+你可以随时开始使用和运行 Microsoft Graph。 请尝试“[快速入门](https://developer.microsoft.com/graph/quick-start)”或开始使用我们的其中一个 [SDK 和代码示例](https://developer.microsoft.com/graph/code-samples-and-sdks)。
