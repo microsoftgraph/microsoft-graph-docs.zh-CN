@@ -5,16 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2b01ed0193c5360b46aaa24da6fe257a6a86bb47
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb14da71db128d3180555d47405e0be0148118ab
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453091"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543343"
 ---
 # <a name="create-subscription"></a>创建订阅
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42453091"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[list](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
+|[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -138,7 +138,7 @@ Content-type: application/json
 |组|groups|
 |对话|groups('*{id}*')/conversations|
 |驱动器|me/drive/root|
-|列表|site/{site-id}/lists/{list-id}|
+|列表|sites/{site-id}/lists/{list-id}|
 |安全警报|security/alerts?$filter=status eq ‘New’|
 |通话记录|通信/callRecords|
 

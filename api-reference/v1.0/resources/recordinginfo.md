@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a41195705a46ac46bd085f3b4a655943b730ad3
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: b7044f13f16a9d1126a5b1c72cdc86c3527f6b37
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962539"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543266"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "42962539"
 }-->
 ```json
 {
-  "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "initiator": {"@odata.type": "#microsoft.graph.identitySet"},
   "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9a403ac53d50c31a41a65c47db7423439a5befd0
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: f00d9aa79e6a18e5dddf6881e251b3cbf00172e6
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200129"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543413"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
@@ -19,6 +19,33 @@ ms.locfileid: "43200129"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示已授予应用程序（由服务主体表示）作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域（委派权限）。
+
+该资源支持通过提供 [delta](../api/oauth2permissiongrant-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+
+## <a name="methods"></a>方法
+
+| 方法           | 返回类型    |说明|
+|:---------------|:--------|:----------|
+|[列出 oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) 集合 | 检索**oauth2PermissionGrant**对象的列表。 |
+|[获取 oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |读取**oAuth2PermissionGrant**对象的属性和关系。|
+|[更新 oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |更新**oAuth2PermissionGrant**对象。 |
+|[删除 oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | 无 |删除**oAuth2PermissionGrant**对象。 |
+|[获取增量](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|获取新创建、更新或删除的**oauth2permissiongrant**对象，而不执行整个资源集合的完全读取。|
+
+## <a name="properties"></a>属性
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|clientId|字符串| 在访问资源（由 resourceId 属性表示）时，授权模拟用户的服务主体的 id。 |
+|consentType|String| 指示许可是由管理员（代表组织）提供，还是由个人授予。 可能的值为*AllPrincipals*或*Principal*。 |
+|expiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
+|id|String| 唯一标识符。 只读。|
+|principalId|String| 如果 consentType 为*AllPrincipals* ，则此值为 null，并且同意适用于组织中的所有用户。 如果 consentType 为*Principal*，则此属性指定授予同意的用户的 id，并且仅适用于该用户。 |
+|resourceId|String| 指定已向其授予访问权限的资源服务主体的 id。 |
+|scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的[范围](/graph/permissions-reference)声明的值。 例如， *User. Read* |
+|startTime|DateTimeOffset| 目前，开始时间值将被忽略。 |
+
+## <a name="relationships"></a>关系
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,30 +72,6 @@ ms.locfileid: "43200129"
 }
 
 ```
-## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|clientId|字符串| 在访问资源（由 resourceId 属性表示）时，授权模拟用户的服务主体的 id。 |
-|consentType|字符串| 指示许可是由管理员（代表组织）提供，还是由个人授予。 可能的值为*AllPrincipals*或*Principal*。 |
-|expiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
-|id|String| 唯一标识符。 只读。|
-|principalId|字符串| 如果 consentType 为*AllPrincipals* ，则此值为 null，并且同意适用于组织中的所有用户。 如果 consentType 为*Principal*，则此属性指定授予同意的用户的 id，并且仅适用于该用户。 |
-|resourceId|String| 指定已向其授予访问权限的资源服务主体的 id。 |
-|scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的[范围](/graph/permissions-reference)声明的值。 例如， *User. Read* |
-|startTime|DateTimeOffset| 目前，开始时间值将被忽略。 |
-
-## <a name="relationships"></a>关系
-无
-
-
-## <a name="methods"></a>方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[获取 oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |读取 oAuth2PermissionGrant 对象的属性和关系。|
-|[列出 oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) 集合 | 检索 oauth2PermissionGrant 对象的列表。 |
-|[更新 oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |更新 oAuth2PermissionGrant 对象。 |
-|[删除 oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | 无 |删除 oAuth2PermissionGrant 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,16 +1,16 @@
 ---
 title: directoryAudit 资源类型
 description: 表示目录审核项及其集合。
-author: cloudhandler
+author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d2253924b261b6a3fc36ca749c9b209563c9dd4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e9f36828eba3b1f61a0f7ed44028c97abb74b4cb
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181872"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543420"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
