@@ -5,18 +5,18 @@ localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: ec78e7eb9a79130d233f12f6c68f36985a102873
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 96a30ee3a0bfe4a4b823625d024d54d4b98f4c31
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460997"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543378"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Microsoft Bookings 可让小型企业所有者以最少量的设置管理客户预订和信息。 企业所有者可以创建一个或多个企业，每个企业都提供一组服务。 所有者可以设置员工，并指定每名员工执行的服务。 客户可以通过在线或移动应用预约该企业中的特定服务。 Bookings 可确保为企业、员工和相关客户保持最新的约会时间。
+Microsoft Bookings 可让企业组织和小型企业所有者以最少量的设置管理客户预订和信息。 企业所有者可以创建一个或多个企业，每个企业都提供一组服务。 所有者可以设置员工，并指定每名员工执行的服务。 客户可以通过在线或移动应用预约该企业中的特定服务。 Bookings 可确保为企业、员工和相关客户保持最新的约会时间。
 
 就编程而言，Bookings API 中的 [bookingBusiness](bookingbusiness.md) 涉及以下对象：
  

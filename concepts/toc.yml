@@ -357,6 +357,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: 限制邮箱访问
             href: auth-limit-mailbox-access.md
+          - name: 解决授权错误
+            href: resolve-auth-errors.md
       - name: 使用 API
         items:
           - name: 概述

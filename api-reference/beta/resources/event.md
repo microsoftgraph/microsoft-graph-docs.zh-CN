@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8fd89046572615ca4dae85d64423e8f88fed5d49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f743bccb17b44ffd53b583532d5d503c2d5919c
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454101"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543371"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
