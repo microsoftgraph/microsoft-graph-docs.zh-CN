@@ -1,0 +1,130 @@
+---
+title: 列出 phoneMethods
+description: 检索电话身份验证方法对象的列表。
+localization_priority: Normal
+author: mmcla
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 3074a1bfd7510de930478ae201f4979f3990e93b
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557623"
+---
+# <a name="list-phonemethods"></a>列出 phoneMethods
+
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索[电话身份验证方法](../resources/phoneauthenticationmethod.md)对象的列表。 这将返回最大为三个对象，因为用户最高可使用三个电话进行身份验证。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+|:---------------------------------------|:-------------------------|:-----------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All | UserAuthenticationMethod、UserAuthenticationMethod 和所有 |
+| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
+| 应用程序                            | 不支持。 | 不支持。 |
+
+对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 全局管理员
+* 全局读取者
+* 特权身份验证管理员
+* 身份验证管理员（仅查看被屏蔽的电话号码）
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/authentication/phoneMethods
+GET /users/{id}/authentication/phoneMethods
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法不支持用于自定义响应的可选查询参数。
+
+## <a name="request-headers"></a>请求标头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization | 持有者 {token} |
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象集合。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "get_phonemethods"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
+```
+
+### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.phoneAuthenticationMethod",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "phoneNumber": "+1 2065555555",
+      "phoneType": "mobile",
+      "smsSignInState": "ready",
+      "id": "3179e48a-750b-4051-897c-87b9720928f7"
+    },
+    {
+      "phoneNumber": "+1 2065555556",
+      "phoneType": "alternateMobile",
+      "smsSignInState": "notSupported",
+      "id": "b6332ec1-7057-4abe-9331-3d72feddfe41"
+    },
+    {
+      "phoneNumber": "+1 2065555557",
+      "phoneType": "office",
+      "smsSignInState": "notSupported",
+      "id": "e37fc753-ff3b-4958-9484-eaa9425c82bc"
+    }
+  ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List phoneMethods",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
