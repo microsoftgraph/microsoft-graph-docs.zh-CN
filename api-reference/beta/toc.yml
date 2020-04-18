@@ -901,7 +901,7 @@
                 - name: 音频路由组
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: Create
+                    - name: 创建
                       href: api/call-post-audioroutinggroups.md
                     - name: 获取
                       href: api/audioroutinggroup-get.md
@@ -914,7 +914,7 @@
             - name: 在线会议
               href: resources/onlinemeeting.md
               items:
-                - name: Create
+                - name: 创建
                   href: api/application-post-onlinemeetings.md
                 - name: 获取
                   href: api/onlinemeeting-get.md
@@ -981,7 +981,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list.md
-                - name: Create
+                - name: 创建
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: 获取
                   href: api/bookingbusiness-get.md
@@ -1022,7 +1022,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-customers.md
-                - name: Create
+                - name: 创建
                   href: api/bookingbusiness-post-customers.md
                 - name: 获取
                   href: api/bookingcustomer-get.md
@@ -1035,7 +1035,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-services.md
-                - name: Create
+                - name: 创建
                   href: api/bookingbusiness-post-services.md
                 - name: 获取
                   href: api/bookingservice-get.md
@@ -1048,7 +1048,7 @@
               items:
                 - name: 列表
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: Create
+                - name: 创建
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: 获取
                   href: api/bookingstaffmember-get.md
@@ -3217,7 +3217,7 @@
                 - name: Android 工作配置文件受信任的根证书
                   href: resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-get.md
@@ -3230,7 +3230,7 @@
                 - name: Android 工作配置文件 VPN 配置
                   href: resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
@@ -5344,7 +5344,7 @@
                 - name: Windows 8.1 VPN 配置
                   href: resources/intune-deviceconfig-windows81vpnconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
@@ -5359,7 +5359,7 @@
                 - name: Windows 8.1 Wi-Fi 导入配置
                   href: resources/intune-deviceconfig-windows81wifiimportconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windows81wifiimportconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81wifiimportconfiguration-get.md
@@ -8649,7 +8649,7 @@
               items:
                 - name: 列表
                   href: api/administrativeunit-list.md
-                - name: Create
+                - name: 创建
                   href: api/administrativeunit-post-administrativeunits.md
                 - name: 获取
                   href: api/administrativeunit-get.md
@@ -8767,11 +8767,11 @@
               items:
                 - name: 策略
                   items:
-                    - name: 条件性访问策略
+                    - name: 条件访问策略
                       href: resources/conditionalaccesspolicy.md
                     - name: 列表
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Create
+                    - name: 创建
                       href: api/conditionalaccessroot-post-policies.md
                     - name: 获取
                       href: api/conditionalaccesspolicy-get.md
@@ -9013,14 +9013,14 @@
                   items:
                     - name: 列表
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Create
+                    - name: 创建
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Create
+                    - name: 创建
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
@@ -9151,12 +9151,16 @@
             - name: Oauth2 权限授予
               href: resources/oauth2permissiongrant.md
               items:
-                - name: 获取 oauth2 权限授予
+                - name: 列表
+                  href: api/oauth2permissiongrant-list.md
+                - name: 获取
                   href: api/oauth2permissiongrant-get.md
-                - name: 更新 oauth2 权限授予
+                - name: 更新
                   href: api/oauth2permissiongrant-update.md
-                - name: 删除 oauth2 权限授予
+                - name: 删除
                   href: api/oauth2permissiongrant-delete.md
+                - name: 获取 Delta
+                  href: api/oauth2permissiongrant-delta.md
             - name: 内部部署发布
               href: resources/onpremisespublishingprofile-root.md
               items:
@@ -10209,7 +10213,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: 通用打印
           items:
-            - name: Print
+            - name: 打印
               href: resources/print.md
             - name: 连接器
               href: resources/printconnector.md
@@ -10326,6 +10330,13 @@
           items:
             - name: 标识和访问报告
               items:
+                - name: AD FS 应用程序活动
+                  items:
+                    - name: 信赖方详细汇总
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: 列表
+                          href: api/relyingpartydetailedsummary-list.md
                 - name: 应用程序登录
                   items:
                     - name: 登录摘要
@@ -11171,7 +11182,7 @@
                 - name: 劳动力集成
                   href: resources/workforceintegration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/workforceintegration-list.md
                     - name: 创建
                       href: api/workforceintegration-post.md
