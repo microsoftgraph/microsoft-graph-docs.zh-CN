@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ce3e2f6fdadcd4d4e9cb991dc0d2f855913c93a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd159f8efd7cf0789be143034f5edce073d23398
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219317"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581663"
 ---
 # <a name="remove-claimsmappingpolicy"></a>删除 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219317"
 
 从[servicePrincipal](../resources/servicePrincipal.md)中删除[claimsMappingPolicy](../resources/claimsmappingpolicy.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "43219317"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
+DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
