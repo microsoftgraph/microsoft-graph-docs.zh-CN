@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 104e5c95b27f555e174c2f1669b758bf69fdda6d
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: de4b983592978ca05b2e2db8fe1eccd0697147fb
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892449"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43718617"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -30,7 +30,7 @@ ms.locfileid: "42892449"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,8 +61,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [acl](../resources/acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
-| 内容    | String                                | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 |
-| properties | Object                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
+| content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 |
+| properties | 对象                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
 
@@ -149,7 +149,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 
