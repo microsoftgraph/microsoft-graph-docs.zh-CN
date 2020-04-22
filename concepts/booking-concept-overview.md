@@ -1,20 +1,20 @@
 ---
 title: Microsoft Bookings API 概述（预览版）
-description: Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的小型企业（如汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业都可以使用 Microsoft Bookings。
-author: angelgolfer-ms
+description: Microsoft Bookings 提供了联机移动应用，可便于组织及他们的客户和用户轻松高效地安排约会。
+author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4eba867db964ae4fddf861e60866d1d97f7891e9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: bb1e6137a43b5a0a5ee5ec796bacb1315a395304
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581679"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 
-Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的小型企业（如汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业都可以使用 Microsoft Bookings。
+Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的组织（如大型企业、汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业组织和公司都可以使用 Microsoft Bookings。
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>为什么使用 Microsoft Graph 与 Microsoft Bookings 集成？
 

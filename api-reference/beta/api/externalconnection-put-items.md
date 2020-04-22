@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1fb15ef50dfba8318691085f43a8967b155d9d3f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7d6b7f1abf94aacd7732c7fb767a0220d6892abf
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892547"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43718603"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -32,7 +32,7 @@ ms.locfileid: "42892547"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -125,7 +125,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

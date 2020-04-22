@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4c1d56cde38b7dfd3acbff3c20d399c5b762f3da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7deae297b3f1f1b8f513af5906031549d446e6cd
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382287"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43720828"
 ---
 # <a name="list-policies"></a>列出策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "43382287"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy.Read.All |
+|Application                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -120,6 +120,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
@@ -160,6 +161,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f539a22f7e3841c2a6251cc83c2a1e1960f3fdfc
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581686"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -113,6 +113,7 @@ ms.locfileid: "43124908"
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
+|createdByAppId|字符串|用于创建组的应用 ID 对于部分组可能为 null。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些 Azure Active Directory 对象（用户、组、应用程序），如果该对象被删除，先逻辑删除，随后该属性随着对象删除的日期和时间更新。 否则此属性为空。 如果对象已还原，则此属性会更新为空。 |
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
@@ -236,6 +237,7 @@ ms.locfileid: "43124908"
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
