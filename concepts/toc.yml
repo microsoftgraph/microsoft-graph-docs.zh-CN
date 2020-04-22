@@ -40,7 +40,7 @@ items:
           - name: Angular
             href: /graph/tutorials/angular
           - name: ASP.NET
-            href: /graph/tutorials/aspnet
+            href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
@@ -151,8 +151,14 @@ items:
           - name: 提示
             href: data-connect-tips.md
       - name: 设备和应用
-        href: intune-concept-overview.md
-        displayName: Intune
+        expanded: true
+        items:
+          - name: 云打印（预览版）
+            href: universal-print-concept-overview.md
+            displayName: Universal Print
+          - name: 公司管理
+            href: intune-concept-overview.md
+            displayName: Intune
       - name: 教育
         items:
           - name: 概述
@@ -317,10 +323,6 @@ items:
             href: teams-protected-apis.md
           - name: 使用机器人发送主动邮件
             href: teams-proactive-messaging.md
-      - name: 通用打印
-        items:
-          - name: 概述
-            href: universal-print-concept-overview.md
       - name: 工作簿和图表
         displayName: Excel
         items:
