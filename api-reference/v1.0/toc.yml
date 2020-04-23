@@ -3315,6 +3315,8 @@
                   href: api/application-update.md
                 - name: 删除应用程序
                   href: api/application-delete.md
+                - name: 获取 Delta
+                  href: api/application-delta.md
                 - name: 列出已删除的应用程序
                   href: api/directory-deleteditems-list.md
                 - name: 获取已删除的应用程序

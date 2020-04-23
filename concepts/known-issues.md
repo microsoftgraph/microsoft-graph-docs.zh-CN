@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e673e03ea0750fbdbb6c289ceff114b4f5ea1a71
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200304"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543175"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -86,11 +86,11 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 
 ### <a name="additional-notifications-for-users"></a>其他用户通知
 
-对于 **changeType** 设置为 **updated** 的**用户**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和删除用户时**已更新**。
+对于 **changeType** 设置为 **updated** 的**用户**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和软删除用户时**已更新**。
 
 ### <a name="additional-notifications-for-groups"></a>其他组通知
 
-对于 **changeType** 设置为 **updated** 的**组**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和删除组时**已更新**。
+对于 **changeType** 设置为 **updated** 的**组**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和软删除组时**已更新**。
 
 ## <a name="cloud-communications"></a>云通信 
 
@@ -316,10 +316,12 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
-### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和 POST /teams
+### <a name="get-teams-is-not-supported"></a>不支持 GET /teams
 
-若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
-若要创建团队，请参阅[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
+若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
+
+### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅限试用版
+若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
 
 ### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
 

@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a82a3e9132ba01d9643fe8a6ec712a8cec1c4631
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: c56839b9df70c73104841702931d21331e4d43f7
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125265"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557855"
 ---
 # <a name="list-conversations"></a>列出对话
 
-命名空间： microsoft. graph 检索此组中的[对话](../resources/conversation.md)列表。
+命名空间：microsoft.graph
+
+检索此组中的[对话](../resources/conversation.md)列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +25,7 @@ ms.locfileid: "43125265"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

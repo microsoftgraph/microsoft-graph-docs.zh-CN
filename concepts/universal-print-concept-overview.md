@@ -1,18 +1,18 @@
 ---
-title: 通用打印 API 概述
+title: 通用打印云打印 API 概述
 description: 通用打印是一种新式打印解决方案，组织可以使用它通过 Microsoft 云服务来管理自己的打印基础设施。
 author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a35c68acc3fd5d3d4f1750b9c3f2d80c3ed1985
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 84a8a97315bb8ca62afb22f76db06fa67fb4e307
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061921"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557862"
 ---
-# <a name="universal-print-api-overview"></a>通用打印 API 概述
+# <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
 通用打印是一种新式打印解决方案，组织可以使用它通过 Microsoft 云服务来管理自己的打印基础设施。
 
