@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5aa8014d84af658b73974de3f2e2ca8f640b4ce4
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6049103f6e8ef0658c0a557db636ef1c6315ec74
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402802"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43770941"
 ---
 ```csharp
 
@@ -31,7 +31,7 @@ var roles = new List<String>()
 };
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .Invite(recipients,requireSignIn,roles,sendInvitation,message)
+    .Invite(recipients,requireSignIn,roles,sendInvitation,message,null,null)
     .Request()
     .PostAsync();
 

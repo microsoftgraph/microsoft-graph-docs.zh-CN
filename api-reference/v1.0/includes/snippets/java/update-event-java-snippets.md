@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6cb09248228596c81736feed44f61b01d5267cc6
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 664bafb14155b14997bb1f8b1db82ad2cf02860b
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43512248"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43770896"
 ---
 ```java
 
@@ -22,7 +22,7 @@ event.recurrence = null;
 event.iCalUId = "iCalUId-value";
 event.reminderMinutesBeforeStart = 99;
 event.isOnlineMeeting = true;
-event.onlineMeetingProvider = "teamsForBusiness";
+event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 event.isReminderOn = true;
 
 graphClient.me().events("{id}")
