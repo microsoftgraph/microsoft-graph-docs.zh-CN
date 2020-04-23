@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7272da8af392cc47851d86628f013abc2823a32e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7164e741fe04579be165fc7078b6ca06dfbc38c1
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881821"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43771008"
 ---
 ```java
 
@@ -16,7 +16,7 @@ String type = "view";
 String scope = "anonymous";
 
 graphClient.me().drive().items("{item-id}")
-    .createLink(type,scope)
+    .createLink(type,scope,null,null,null)
     .buildRequest()
     .post();
 
